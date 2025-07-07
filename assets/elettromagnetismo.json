@@ -1,0 +1,124 @@
+[
+  {
+    "id": "MAG_001",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Magnetismo",
+    "titolo": "Forza di Lorentz (su carica in movimento)",
+    "formula_latex": "\\vec{F} = q (\\vec{v} \\times \\vec{B}) \\quad \\text{o} \\quad F = |q| v B \\sin(\\theta)",
+    "descrizione": "La forza di Lorentz $\\vec{F}$ descrive la forza esercitata su una carica elettrica $q$ in movimento con velocità $\\vec{v}$ all'interno di un campo magnetico $\\vec{B}$. La forza è perpendicolare sia alla velocità che al campo magnetico. La sua intensità è data da $F = |q| v B \\sin(\\theta)$, dove $\\theta$ è l'angolo tra $\\vec{v}$ e $\\vec{B}$.",
+    "variabili": [
+      { "simbolo": "$F$", "descrizione": "Forza di Lorentz", "unita": "N" },
+      { "simbolo": "$q$", "descrizione": "Carica elettrica", "unita": "C" },
+      { "simbolo": "$v$", "descrizione": "Velocità della carica", "unita": "m/s" },
+      { "simbolo": "$B$", "descrizione": "Campo magnetico", "unita": "T" },
+      { "simbolo": "$\\theta$", "descrizione": "Angolo tra velocità e campo magnetico", "unita": "rad" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un elettrone ($q = 1.6 \\times 10^{-19} \\text{ C}$) si muove a $10^6 \\text{ m/s}$ perpendicolarmente a un campo magnetico di $0.5 \\text{ T}$. La forza è $F = (1.6 \\times 10^{-19}) \\cdot (10^6) \\cdot 0.5 \\cdot \\sin(90°) = 8 \\times 10^{-14} \\text{ N}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": [ "forza di Lorentz", "campo magnetico", "carica", "velocità", "tesla", "elettromagnetismo" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "MAG_002",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Magnetismo",
+    "titolo": "Forza magnetica su un filo percorso da corrente",
+    "formula_latex": "\\vec{F} = I (\\vec{L} \\times \\vec{B}) \\quad \\text{o} \\quad F = I L B \\sin(\\theta)",
+    "descrizione": "La forza magnetica $\\vec{F}$ è esercitata su un tratto di filo di lunghezza $\\vec{L}$ percorso da corrente $I$ immerso in un campo magnetico $\\vec{B}$. Anche qui, la forza è perpendicolare alla corrente e al campo magnetico. L'intensità della forza è data da $F = I L B \\sin(\\theta)$, dove $\\theta$ è l'angolo tra $\\vec{L}$ (o la direzione della corrente) e $\\vec{B}$.",
+    "variabili": [
+      { "simbolo": "$F$", "descrizione": "Forza magnetica", "unita": "N" },
+      { "simbolo": "$I$", "descrizione": "Corrente elettrica", "unita": "A" },
+      { "simbolo": "$L$", "descrizione": "Lunghezza del filo nel campo", "unita": "m" },
+      { "simbolo": "$B$", "descrizione": "Campo magnetico", "unita": "T" },
+      { "simbolo": "$\\theta$", "descrizione": "Angolo tra la direzione della corrente e il campo magnetico", "unita": "rad" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un filo di $0.2 \\text{ m}$ percorso da $5 \\text{ A}$ si trova in un campo magnetico di $0.1 \\text{ T}$, perpendicolarmente ($\\theta = 90°$). La forza è $F = 5 \\cdot 0.2 \\cdot 0.1 \\cdot \\sin(90°) = 0.1 \\text{ N}$."
+      }
+    ],
+    "link_correlati": [ "MAG_001" ],
+    "parole_chiave": [ "forza magnetica", "filo", "corrente", "campo magnetico", "elettromagnetismo" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "MAG_003",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Magnetismo",
+    "titolo": "Campo magnetico generato da un filo rettilineo infinito",
+    "formula_latex": "B = \\frac{\\mu_0 I}{2\\pi r}",
+    "descrizione": "Questa formula calcola l'intensità del campo magnetico $B$ generato da un filo conduttore rettilineo molto lungo percorso da corrente $I$, a una distanza $r$ dal filo. $\\mu_0$ è la permeabilità magnetica nel vuoto ($4\\pi \\times 10^{-7} \\text{ T} \\cdot \\text{m/A}$).",
+    "variabili": [
+      { "simbolo": "$B$", "descrizione": "Campo magnetico", "unita": "T" },
+      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica nel vuoto", "unita": "T·m/A" },
+      { "simbolo": "$I$", "descrizione": "Corrente elettrica nel filo", "unita": "A" },
+      { "simbolo": "$r$", "descrizione": "Distanza dal filo", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Calcola il campo magnetico a $0.01 \\text{ m}$ da un filo percorso da $10 \\text{ A}$. Usando $\\mu_0 = 4\\pi \\times 10^{-7} \\text{ T} \\cdot \\text{m/A}$, otteniamo $B = \\frac{(4\\pi \\times 10^{-7}) \\cdot 10}{2\\pi \\cdot 0.01} = 2 \\times 10^{-4} \\text{ T}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": [ "campo magnetico", "filo", "corrente", "Ampere", "Legge di Ampere", "elettromagnetismo" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "IND_001",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Induzione Elettromagnetica",
+    "titolo": "Legge di Faraday-Neumann-Lenz",
+    "formula_latex": "\\mathcal{E} = - N \\frac{\\Delta \\Phi_B}{\\Delta t}",
+    "descrizione": "La legge di Faraday-Neumann-Lenz descrive la forza elettromotrice (f.e.m.) indotta $\\mathcal{E}$ in un circuito chiuso quando il flusso del campo magnetico $\\Phi_B$ attraverso la superficie del circuito cambia nel tempo $\\Delta t$. Il segno meno (Legge di Lenz) indica che la f.e.m. indotta si oppone alla variazione di flusso. Per una bobina con $N$ spire, la formula è $\\mathcal{E} = - N \\frac{\\Delta \\Phi_B}{\\Delta t}$.",
+    "variabili": [
+      { "simbolo": "$\\mathcal{E}$", "descrizione": "Forza elettromotrice indotta (f.e.m.)", "unita": "V" },
+      { "simbolo": "$N$", "descrizione": "Numero di spire della bobina (se applicabile)", "unita": "" },
+      { "simbolo": "$\\Delta \\Phi_B$", "descrizione": "Variazione del flusso magnetico", "unita": "Wb" },
+      { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una bobina con $100$ spire sperimenta una variazione di flusso magnetico di $0.02 \\text{ Wb}$ in $0.1 \\text{ s}$. La f.e.m. indotta è $\\mathcal{E} = -100 \\cdot (0.02 / 0.1) = -20 \\text{ V}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": [ "Legge di Faraday", "Legge di Lenz", "induzione elettromagnetica", "f.e.m.", "flusso magnetico", "elettromagnetismo" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "IND_002",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Induzione Elettromagnetica",
+    "titolo": "Flusso Magnetico",
+    "formula_latex": "\\Phi_B = B A \\cos(\\theta)",
+    "descrizione": "Il flusso magnetico $\\Phi_B$ attraverso una superficie è una misura del numero di linee di campo magnetico che attraversano quella superficie. Dipende dall'intensità del campo magnetico $B$, dall'area della superficie $A$ e dall'angolo $\\theta$ tra il vettore normale alla superficie e il campo magnetico. La sua formula è $\\Phi_B = B A \\cos(\\theta)$.",
+    "variabili": [
+      { "simbolo": "$\\Phi_B$", "descrizione": "Flusso magnetico", "unita": "Wb" },
+      { "simbolo": "$B$", "descrizione": "Intensità del campo magnetico", "unita": "T" },
+      { "simbolo": "$A$", "descrizione": "Area della superficie", "unita": "m²" },
+      { "simbolo": "$\\theta$", "descrizione": "Angolo tra il campo magnetico e la normale all'area", "unita": "rad" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un campo magnetico di $0.3 \\text{ T}$ attraversa una spira di $0.01 \\text{ m}^2$ perpendicolarmente (cioè, l'angolo $\\theta = 0°$). Il flusso magnetico è $\\Phi_B = 0.3 \\cdot 0.01 \\cdot \\cos(0°) = 0.003 \\text{ Wb}$."
+      }
+    ],
+    "link_correlati": [ "IND_001" ],
+    "parole_chiave": [ "flusso magnetico", "campo magnetico", "area", "Weber", "induzione elettromagnetica" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  }
+]

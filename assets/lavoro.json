@@ -1,0 +1,96 @@
+[
+  {
+    "id": "ENE_001",
+    "categoria": "Lavoro ed Energia",
+    "sottocategoria": "Lavoro",
+    "titolo": "Lavoro di una forza costante",
+    "formula_latex": "W = F \\cdot d \\cdot \\cos(\\theta)",
+    "descrizione": "Il lavoro svolto da una forza costante $W$ è il prodotto dell'intensità della forza $F$, dello spostamento $d$ e del coseno dell'angolo $\\theta$ tra la direzione della forza e quella dello spostamento. Se forza e spostamento sono nella stessa direzione, $\\cos(\\theta)$ è $1$. Questa è una relazione fondamentale in fisica, spesso espressa come $$W = \\vec{F} \\cdot \\vec{d}$$.",
+    "variabili": [
+      { "simbolo": "$W$", "descrizione": "Lavoro, misurato in Joule", "unita": "J" },
+      { "simbolo": "$F$", "descrizione": "Intensità della forza, in Newton", "unita": "N" },
+      { "simbolo": "$d$", "descrizione": "Spostamento, in metri", "unita": "m" },
+      { "simbolo": "$\\theta$", "descrizione": "Angolo tra forza e spostamento, in radianti", "unita": "rad" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio di Calcolo",
+        "testo": "Una forza di $20 \\text{ N}$ spinge un oggetto per $5 \\text{ m}$ nella stessa direzione. Il lavoro è $W = 20 \\cdot 5 \\cdot \\cos(0°) = 100 \\text{ J}$. Si noti che $\\cos(0°) = 1$."
+      }
+    ],
+    "link_correlati": [ "DIN_001", "ENE_002" ],
+    "parole_chiave": [ "lavoro", "forza", "spostamento", "joule", "W = Fd" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "ENE_002",
+    "categoria": "Lavoro ed Energia",
+    "sottocategoria": "Energia Cinetica",
+    "titolo": "Energia Cinetica",
+    "formula_latex": "K = \\frac{1}{2} m v^2",
+    "descrizione": "L'energia cinetica $KE$ è l'energia che un corpo possiede grazie al suo movimento. Dipende dalla massa del corpo $m$ e dal quadrato della sua velocità $v$. La formula è data da $$KE = \\frac{1}{2} m v^2$$",
+    "variabili": [
+      { "simbolo": "$K$", "descrizione": "Energia Cinetica, misurata in Joule", "unita": "J" },
+      { "simbolo": "$m$", "descrizione": "Massa del corpo, in chilogrammi", "unita": "kg" },
+      { "simbolo": "$v$", "descrizione": "Velocità del corpo, in metri al secondo", "unita": "m/s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una palla da bowling di $6 \\text{ kg}$ si muove a $2 \\text{ m/s}$. L'energia cinetica è $K = 0.5 \\cdot 6 \\cdot (2)^2 = 12 \\text{ J}$."
+      }
+    ],
+    "link_correlati": [ "DIN_004", "ENE_001" ],
+    "parole_chiave": [ "energia cinetica", "movimento", "velocità", "massa", "K = 1/2mv^2" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "ENE_003",
+    "categoria": "Lavoro ed Energia",
+    "sottocategoria": "Energia Potenziale Gravitazionale",
+    "titolo": "Energia Potenziale Gravitazionale",
+    "formula_latex": "PE = m \\cdot g \\cdot h",
+    "descrizione": "L'energia potenziale gravitazionale $P$ è l'energia immagazzinata in un corpo a causa della sua posizione in un campo gravitazionale. Dipende dalla sua massa $m$, dall'accelerazione di gravità $g$ e dall'altezza $h$. La formula è $$PE_g = m \\cdot g \\cdot h$$",
+    "variabili": [
+      { "simbolo": "$P$", "descrizione": "Energia Potenziale Gravitazionale, misurata in Joule", "unita": "J" },
+      { "simbolo": "$m$", "descrizione": "Massa del corpo, in chilogrammi", "unita": "kg" },
+      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità, approssimativamente $9.81$", "unita": "m/s²" },
+      { "simbolo": "$h$", "descrizione": "Altezza rispetto a un livello di riferimento, in metri", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un oggetto di $10 \\text{ kg}$ è sollevato a $5 \\text{ m}$ di altezza. $PE_g = 10 \\cdot 9.81 \\cdot 5 = 490.5 \\text{ J}$."
+      }
+    ],
+    "link_correlati": [ "DIN_001", "ENE_004" ],
+    "parole_chiave": [ "energia potenziale", "gravità", "altezza", "massa", "P = mgh" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "ENE_004",
+    "categoria": "Lavoro ed Energia",
+    "sottocategoria": "Principi di Conservazione",
+    "titolo": "Energia Meccanica",
+    "formula_latex": "E = KE + PE_g",
+    "descrizione": "L'energia meccanica totale di un sistema $EM$ è la somma dell'energia cinetica $KE$ e dell'energia potenziale gravitazionale $PE_g$. In assenza di forze non conservative (come l'attrito), l'energia meccanica si conserva, ovvero $EM = \\text{costante}$.",
+    "variabili": [
+      { "simbolo": "$E$", "descrizione": "Energia Meccanica, misurata in Joule", "unita": "J" },
+      { "simbolo": "$K$", "descrizione": "Energia Cinetica, misurata in Joule", "unita": "J" },
+      { "simbolo": "$P$", "descrizione": "Energia Potenziale Gravitazionale, misurata in Joule", "unita": "J" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un oggetto ha $50 \\text{ J}$ di energia cinetica e $30 \\text{ J}$ di energia potenziale gravitazionale. L'energia meccanica totale è $EM = 50 + 30 = 80 \\text{ J}$."
+      }
+    ],
+    "link_correlati": [ "ENE_002", "ENE_003" ],
+    "parole_chiave": [ "energia meccanica", "conservazione energia", "energia totale", "E = K + P" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "id": "TER_001",
+    "categoria": "Termodinamica",
+    "sottocategoria": "Principi della Termodinamica",
+    "titolo": "Primo Principio della Termodinamica",
+    "formula_latex": "\\Delta U = Q - W",
+    "descrizione": "Il primo principio della termodinamica, o principio di conservazione dell'energia per i sistemi termodinamici, afferma che la variazione dell'energia interna di un sistema ($\\Delta U$) è uguale alla differenza tra il calore $Q$ fornito al sistema e il lavoro $W$ compiuto dal sistema.",
+    "variabili": [
+      { "simbolo": "$\\Delta U$", "descrizione": "Variazione di energia interna", "unita": "J" },
+      { "simbolo": "$Q$", "descrizione": "Calore scambiato con l'ambiente", "unita": "J" },
+      { "simbolo": "$W$", "descrizione": "Lavoro compiuto dal sistema", "unita": "J" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un sistema riceve $150 \\text{ J}$ di calore e compie un lavoro di $50 \\text{ J}$. La variazione di energia interna è $\\Delta U = 150 \\text{ J} - 50 \\text{ J} = 100 \\text{ J}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["energia interna", "calore", "lavoro", "primo principio", "conservazione energia"],
+    "data_creazione": "2025-06-02",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "TER_002",
+    "categoria": "Termodinamica",
+    "sottocategoria": "Gas Ideali",
+    "titolo": "Equazione di Stato dei Gas Ideali",
+    "formula_latex": "P \\cdot V = n \\cdot R \\cdot T",
+    "descrizione": "Relazione che descrive il comportamento di un gas ideale, dove $P$ è la pressione, $V$ il volume, $n$ il numero di moli, $R$ la costante dei gas ideali e $T$ la temperatura assoluta.",
+    "variabili": [
+      { "simbolo": "$P$", "descrizione": "Pressione del gas", "unita": "Pa" },
+      { "simbolo": "$V$", "descrizione": "Volume del gas", "unita": "m³" },
+      { "simbolo": "$n$", "descrizione": "Numero di moli", "unita": "mol" },
+      { "simbolo": "$R$", "descrizione": "Costante dei gas ideali ($8.314 \\text{ J/(mol\\cdot K)}$)", "unita": "J/(mol·K)" },
+      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Calcola la pressione di $2 \\text{ mol}$ di un gas ideale in un volume di $0.05 \\text{ m}^3$ a $300 \\text{ K}$. $P = (2 \\text{ mol} \\cdot 8.314 \\text{ J/(mol\\cdot K)} \\cdot 300 \\text{ K}) / 0.05 \\text{ m}^3 \\approx 99768 \\text{ Pa}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["gas ideali", "pressione", "volume", "temperatura", "moli", "costante gas"],
+    "data_creazione": "2025-06-02",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "TER_003",
+    "categoria": "Termodinamica",
+    "sottocategoria": "Calore",
+    "titolo": "Calore Specifico",
+    "formula_latex": "Q = m \\cdot c \\cdot \\Delta T",
+    "descrizione": "Calore $Q$ necessario per cambiare la temperatura di una sostanza, dove $m$ è la massa, $c$ il calore specifico e $\\Delta T$ la variazione di temperatura.",
+    "variabili": [
+      { "simbolo": "$Q$", "descrizione": "Calore scambiato", "unita": "J" },
+      { "simbolo": "$m$", "descrizione": "Massa della sostanza", "unita": "kg" },
+      { "simbolo": "$c$", "descrizione": "Calore specifico della sostanza", "unita": "J/(kg·K)" },
+      { "simbolo": "$\\Delta T$", "descrizione": "Variazione di temperatura", "unita": "K" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Quanta energia è necessaria per riscaldare $2 \\text{ kg}$ di acqua ($c = 4186 \\text{ J/(kg\\cdot K)}$) da $20\\text{°C}$ a $80\\text{°C}$? $\\Delta T = (80-20) \\text{ K} = 60 \\text{ K}$. $Q = 2 \\text{ kg} \\cdot 4186 \\text{ J/(kg\\cdot K)} \\cdot 60 \\text{ K} = 502320 \\text{ J}$."
+      }
+    ],
+    "link_correlati": ["TER_001"],
+    "parole_chiave": ["calore", "calore specifico", "temperatura", "massa", "energia termica"],
+    "data_creazione": "2025-06-02",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "TER_004",
+    "categoria": "Termodinamica",
+    "sottocategoria": "Entropia",
+    "titolo": "Variazione di Entropia",
+    "formula_latex": "\\Delta S = \\frac{Q}{T}",
+    "descrizione": "La variazione di entropia ($\\Delta S$) di un sistema reversibile è definita come il rapporto tra il calore $Q$ scambiato e la temperatura assoluta $T$ alla quale avviene lo scambio.",
+    "variabili": [
+      { "simbolo": "$\\Delta S$", "descrizione": "Variazione di entropia", "unita": "J/K" },
+      { "simbolo": "$Q$", "descrizione": "Calore scambiato reversibilmente", "unita": "J" },
+      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un sistema assorbe $100 \\text{ J}$ di calore in modo reversibile a una temperatura costante di $298 \\text{ K}$ ($25\\text{°C}$). La variazione di entropia è $\\Delta S = 100 \\text{ J} / 298 \\text{ K} \\approx 0.336 \\text{ J/K}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["entropia", "disordine", "calore", "temperatura", "secondo principio"],
+    "data_creazione": "2025-06-02",
+    "data_ultima_modifica": "2025-07-06"
+  }
+]

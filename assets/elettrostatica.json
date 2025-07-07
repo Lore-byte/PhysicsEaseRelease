@@ -1,0 +1,188 @@
+[
+  {
+    "id": "ELE_001",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Elettrostatica",
+    "titolo": "Legge di Coulomb",
+    "formula_latex": "F = k \\frac{|q_1 q_2|}{r^2}",
+    "descrizione": "La Legge di Coulomb descrive la forza di interazione $F$ tra due cariche elettriche puntiformi $q_1$ e $q_2$. La forza è direttamente proporzionale al prodotto delle cariche e inversamente proporzionale al quadrato della distanza $r$ tra esse. $k$ è la costante di Coulomb (circa $8.9875 \\times 10^9 \\text{ N} \\cdot \\text{m}^2/\\text{C}^2$).",
+    "variabili": [
+      { "simbolo": "$F$", "descrizione": "Forza elettrica", "unita": "N" },
+      { "simbolo": "$k$", "descrizione": "Costante di Coulomb", "unita": "N·m²/C²" },
+      { "simbolo": "$q_1$", "descrizione": "Prima carica elettrica", "unita": "C" },
+      { "simbolo": "$q_2$", "descrizione": "Seconda carica elettrica", "unita": "C" },
+      { "simbolo": "$r$", "descrizione": "Distanza tra le cariche", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due cariche di $1 \\text{ }\\mu\\text{C}$ e $2 \\text{ }\\mu\\text{C}$ sono distanti $0.1 \\text{ m}$. Usando $k \\approx 8.9875 \\times 10^9 \\text{ N} \\cdot \\text{m}^2/\\text{C}^2$, la forza è $F = (8.9875 \\times 10^9) \\cdot |(1\\times10^{-6}) \\cdot (2\\times10^{-6})| / (0.1)^2 \\approx 1.8 \\text{ N}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": [ "Coulomb", "forza elettrica", "carica", "distanza", "elettrostatica", "F = kq1q2/r^2" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "ELE_002",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Elettrostatica",
+    "titolo": "Campo Elettrico (da carica puntiforme)",
+    "formula_latex": "E = k \\frac{|q|}{r^2}",
+    "descrizione": "Il campo elettrico $E$ in un punto è la forza elettrica per unità di carica positiva di prova posta in quel punto. Per una carica puntiforme $q$, l'intensità del campo elettrico diminuisce con il quadrato della distanza $r$ dalla carica sorgente.",
+    "variabili": [
+      { "simbolo": "$E$", "descrizione": "Intensità del campo elettrico", "unita": "N/C" },
+      { "simbolo": "$k$", "descrizione": "Costante di Coulomb", "unita": "N·m²/C²" },
+      { "simbolo": "$q$", "descrizione": "Carica sorgente del campo", "unita": "C" },
+      { "simbolo": "$r$", "descrizione": "Distanza dalla carica sorgente", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Calcola il campo elettrico a $0.05 \\text{ m}$ da una carica di $5 \\text{ nC}$. Usando $k \\approx 8.9875 \\times 10^9 \\text{ N} \\cdot \\text{m}^2/\\text{C}^2$, si ha $E = (8.9875 \\times 10^9) \\cdot |5\\times10^{-9}| / (0.05)^2 \\approx 1.7975 \\times 10^4 \\text{ N/C}$."
+      }
+    ],
+    "link_correlati": [ "ELE_001" ],
+    "parole_chiave": [ "campo elettrico", "carica", "elettrostatica", "E = kq/r^2" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "ELE_003",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Circuiti Elettrici (Corrente Continua)",
+    "titolo": "Prima Legge di Ohm",
+    "formula_latex": "V = I \\cdot R",
+    "descrizione": "La Prima Legge di Ohm stabilisce che la differenza di potenziale (tensione) $V$ ai capi di un conduttore è direttamente proporzionale alla corrente $I$ che lo attraversa e alla resistenza $R$ del conduttore.",
+    "variabili": [
+      { "simbolo": "$V$", "descrizione": "Tensione (differenza di potenziale)", "unita": "V" },
+      { "simbolo": "$I$", "descrizione": "Corrente elettrica", "unita": "A" },
+      { "simbolo": "$R$", "descrizione": "Resistenza elettrica", "unita": "Ω" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una resistenza di $10 \\text{ }\\Omega$ è attraversata da una corrente di $2 \\text{ A}$. La tensione è $V = 2 \\cdot 10 = 20 \\text{ V}$."
+      }
+    ],
+    "link_correlati": [ "ELE_004", "ELE_005" ],
+    "parole_chiave": [ "Legge di Ohm", "tensione", "corrente", "resistenza", "circuito", "V = IR" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "ELE_004",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Circuiti Elettrici (Corrente Continua)",
+    "titolo": "Resistenze in Serie",
+    "formula_latex": "R_{eq} = R_1 + R_2 + ... + R_n",
+    "descrizione": "Quando le resistenze sono connesse in serie, la resistenza equivalente $R_{eq}$ del circuito è la somma delle singole resistenze.",
+    "variabili": [
+      { "simbolo": "$R_{eq}$", "descrizione": "Resistenza equivalente", "unita": "Ω" },
+      { "simbolo": "$R_n$", "descrizione": "N-esima resistenza", "unita": "Ω" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Tre resistenze di $5 \\text{ }\\Omega$, $10 \\text{ }\\Omega$ e $15 \\text{ }\\Omega$ sono collegate in serie. La resistenza equivalente è $R_{eq} = 5 + 10 + 15 = 30 \\text{ }\\Omega$."
+      }
+    ],
+    "link_correlati": [ "ELE_003", "ELE_005" ],
+    "parole_chiave": [ "resistenze in serie", "resistenza equivalente", "circuito", "elettricità" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "ELE_005",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Circuiti Elettrici (Corrente Continua)",
+    "titolo": "Resistenze in Parallelo",
+    "formula_latex": "\\frac{1}{R_{eq}} = \\frac{1}{R_1} + \\frac{1}{R_2} + ... + \\frac{1}{R_n}",
+    "descrizione": "Quando le resistenze sono connesse in parallelo, l'inverso della resistenza equivalente $R_{eq}$ è la somma degli inversi delle singole resistenze.",
+    "variabili": [
+      { "simbolo": "$R_{eq}$", "descrizione": "Resistenza equivalente", "unita": "Ω" },
+      { "simbolo": "$R_n$", "descrizione": "N-esima resistenza", "unita": "Ω" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due resistenze di $10 \\text{ }\\Omega$ e $20 \\text{ }\\Omega$ sono collegate in parallelo. Si ha $\\frac{1}{R_{eq}} = \\frac{1}{10} + \\frac{1}{20} = \\frac{3}{20} \\text{ }\\Omega^{-1} \\implies R_{eq} = \\frac{20}{3} \\approx 6.67 \\text{ }\\Omega$."
+      }
+    ],
+    "link_correlati": [ "ELE_003", "ELE_004" ],
+    "parole_chiave": [ "resistenze in parallelo", "resistenza equivalente", "circuito", "elettricità" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "ELE_006",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Circuiti Elettrici (Corrente Continua)",
+    "titolo": "Potenza Elettrica",
+    "formula_latex": "P = V \\cdot I",
+    "descrizione": "La potenza elettrica $P$ è la velocità con cui l'energia elettrica viene convertita in altre forme di energia (es. calore, luce). È il prodotto della tensione $V$ e della corrente $I$. Può essere espressa anche come $P = I^2 R$ o $P = V^2 / R$.",
+    "variabili": [
+      { "simbolo": "$P$", "descrizione": "Potenza elettrica", "unita": "W" },
+      { "simbolo": "$V$", "descrizione": "Tensione", "unita": "V" },
+      { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una lampadina con una tensione di $12 \\text{ V}$ assorbe una corrente di $0.5 \\text{ A}$. La potenza è $P = 12 \\cdot 0.5 = 6 \\text{ W}$."
+      }
+    ],
+    "link_correlati": [ "ELE_003" ],
+    "parole_chiave": [ "potenza", "energia elettrica", "watt", "P = VI", "P = I^2R", "P = V^2/R" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "ELE_007",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Elettrostatica",
+    "titolo": "Potenziale Elettrico",
+    "formula_latex": "V = k \\frac{q}{r}",
+    "descrizione": "Il potenziale elettrico $V$ in un punto è l'energia potenziale elettrica per unità di carica positiva di prova posta in quel punto. È una grandezza scalare (non vettoriale come il campo elettrico) e dipende dalla carica sorgente $q$ e dalla distanza $r$.",
+    "variabili": [
+      { "simbolo": "$V$", "descrizione": "Potenziale elettrico", "unita": "V" },
+      { "simbolo": "$k$", "descrizione": "Costante di Coulomb", "unita": "N·m²/C²" },
+      { "simbolo": "$q$", "descrizione": "Carica sorgente", "unita": "C" },
+      { "simbolo": "$r$", "descrizione": "Distanza dalla carica sorgente", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Calcola il potenziale elettrico a $0.1 \\text{ m}$ da una carica di $3 \\text{ nC}$. Usando $k \\approx 8.9875 \\times 10^9 \\text{ N} \\cdot \\text{m}^2/\\text{C}^2$, si ha $V = (8.9875 \\times 10^9) \\cdot (3\\times10^{-9}) / 0.1 = 269.625 \\text{ V}$."
+      }
+    ],
+    "link_correlati": [ "ELE_002" ],
+    "parole_chiave": [ "potenziale elettrico", "tensione", "voltaggio", "carica", "elettrostatica", "V = kq/r" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "ELE_008",
+    "categoria": "Elettromagnetismo",
+    "sottocategoria": "Elettrostatica",
+    "titolo": "Capacità di un Condensatore",
+    "formula_latex": "C = \\frac{Q}{V}",
+    "descrizione": "La capacità $C$ di un condensatore è la misura della sua capacità di immagazzinare carica elettrica $Q$. È il rapporto tra la carica immagazzinata e la differenza di potenziale $V$ ai suoi capi.",
+    "variabili": [
+      { "simbolo": "$C$", "descrizione": "Capacità", "unita": "F" },
+      { "simbolo": "$Q$", "descrizione": "Carica immagazzinata", "unita": "C" },
+      { "simbolo": "$V$", "descrizione": "Differenza di potenziale", "unita": "V" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un condensatore immagazzina $20 \\text{ }\\mu\\text{C}$ di carica quando la tensione è di $5 \\text{ V}$. La capacità è $C = (20\\times10^{-6}) / 5 = 4 \\times 10^{-6} \\text{ F}$ (o $4 \\text{ }\\mu\\text{F}$)."
+      }
+    ],
+    "link_correlati": [ "ELE_007" ],
+    "parole_chiave": [ "capacità", "condensatore", "carica", "tensione", "farad", "elettrostatica", "C = Q/V" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  }
+]

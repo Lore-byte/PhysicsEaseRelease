@@ -1,0 +1,94 @@
+[
+  {
+    "id": "DIN_001",
+    "categoria": "Dinamica",
+    "sottocategoria": "Leggi di Newton",
+    "titolo": "Seconda legge di Newton",
+    "formula_latex": "F = m \\cdot a",
+    "descrizione": "La seconda legge di Newton descrive come una forza risultante $F$ applicata a un corpo di massa $m$ genera un'accelerazione $a$. ",
+    "variabili": [
+      { "simbolo": "$F$", "descrizione": "Forza risultante", "unita": "N" },
+      { "simbolo": "$m$", "descrizione": "Massa del corpo", "unita": "kg" },
+      { "simbolo": "$a$", "descrizione": "Accelerazione del corpo", "unita": "m/s²" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un corpo di massa $5 \\text{ kg}$ viene sottoposto a una forza risultante che produce un'accelerazione di $3 \\text{ m/s}^2$. La forza è $F = 5 \\cdot 3 = 15 \\text{ N}$."
+      }
+    ],
+    "link_correlati": [ "CIN_004", "DIN_002" ],
+    "parole_chiave": [ "forza", "massa", "accelerazione", "legge di Newton", "F = ma" ],
+    "data_creazione": "2025-06-01",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "DIN_002",
+    "categoria": "Dinamica",
+    "sottocategoria": "Forze elastiche",
+    "titolo": "Legge di Hooke",
+    "formula_latex": "F = -k \\cdot x",
+    "descrizione": "La legge di Hooke definisce la forza $F$ esercitata da una molla, che è proporzionale alla sua deformazione $x$ (allungamento o compressione) e alla costante elastica $k$ della molla. Il segno negativo indica che la forza elastica è sempre opposta alla direzione della deformazione",
+    "variabili": [
+      { "simbolo": "$F$", "descrizione": "Forza elastica", "unita": "N" },
+      { "simbolo": "$k$", "descrizione": "Costante elastica della molla", "unita": "N/m" },
+      { "simbolo": "$x$", "descrizione": "Allungamento o compressione rispetto alla posizione di equilibrio", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una molla con costante elastica $k = 200 \\text{ N/m}$ è compressa di $0.05 \\text{ m}$. La forza elastica è $F = -200 \\cdot 0.05 = -10 \\text{ N}$."
+      }
+    ],
+    "link_correlati": [ "DIN_001", "DIN_003" ],
+    "parole_chiave": [ "forza elastica", "molla", "deformazione", "Hooke", "F = -kx" ],
+    "data_creazione": "2025-06-01",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "DIN_003",
+    "categoria": "Dinamica",
+    "sottocategoria": "Attrito",
+    "titolo": "Forza di attrito radente",
+    "formula_latex": "F_{a} = \\mu \\cdot N",
+    "descrizione": "La forza di attrito radente $F_a$ si oppone al movimento di un corpo su una superficie. Essa è proporzionale alla forza normale $N$ (la forza perpendicolare che la superficie esercita sul corpo) e al coefficiente di attrito $\\mu$, che dipende dai materiali delle superfici a contatto",
+    "variabili": [
+      { "simbolo": "$F_a$", "descrizione": "Forza di attrito radente", "unita": "N" },
+      { "simbolo": "$\\mu$", "descrizione": "Coefficiente di attrito (adimensionale)", "unita": "" },
+      { "simbolo": "$N$", "descrizione": "Forza normale", "unita": "N" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un corpo esercita una forza normale di $100 \\text{ N}$ su una superficie con coefficiente di attrito $\\mu = 0.3$. La forza di attrito è $F_a = 0.3 \\cdot 100 = 30 \\text{ N}$."
+      }
+    ],
+    "link_correlati": [ "DIN_001", "DIN_002" ],
+    "parole_chiave": [ "attrito", "coefficiente di attrito", "forza normale", "F = μN" ],
+    "data_creazione": "2025-06-01",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "DIN_004",
+    "categoria": "Dinamica",
+    "sottocategoria": "Quantità di moto",
+    "titolo": "Quantità di moto",
+    "formula_latex": "p = m \\cdot v",
+    "descrizione": "La quantità di moto $p$ di un corpo è una misura del suo 'contenuto di movimento'. È definita come il prodotto della sua massa $m$ per la sua velocità $v$. È una grandezza vettoriale, la cui direzione è la stessa della velocità.",
+    "variabili": [
+      { "simbolo": "$p$", "descrizione": "Quantità di moto", "unita": "kg·m/s" },
+      { "simbolo": "$m$", "descrizione": "Massa del corpo", "unita": "kg" },
+      { "simbolo": "$v$", "descrizione": "Velocità del corpo", "unita": "m/s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una palla da bowling di $6 \\text{ kg}$ si muove a $2 \\text{ m/s}$. La sua quantità di moto è $p = 6 \\cdot 2 = 12 \\text{ kg} \\cdot \\text{m/s}$."
+      }
+    ],
+    "link_correlati": [ "DIN_001", "CIN_003" ],
+    "parole_chiave": [ "quantità di moto", "impulso", "p = mv" ],
+    "data_creazione": "2025-06-01",
+    "data_ultima_modifica": "2025-07-06"
+  }
+]

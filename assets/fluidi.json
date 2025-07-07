@@ -1,0 +1,122 @@
+[
+  {
+    "id": "FLU_001",
+    "categoria": "Fluidi",
+    "sottocategoria": "Idrostatica",
+    "titolo": "Pressione",
+    "formula_latex": "P = \\frac{F}{A}",
+    "descrizione": "La pressione $P$ è definita come la forza $F$ perpendicolare applicata per unità di superficie $A$. È una grandezza scalare.",
+    "variabili": [
+      { "simbolo": "$P$", "descrizione": "Pressione", "unita": "Pa" },
+      { "simbolo": "$F$", "descrizione": "Forza perpendicolare alla superficie", "unita": "N" },
+      { "simbolo": "$A$", "descrizione": "Area della superficie", "unita": "m²" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una forza di $100 \\text{ N}$ viene applicata su una superficie di $0.1 \\text{ m}^2$. La pressione è $P = 100 / 0.1 = 1000 \\text{ Pa (Pascal)}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": [ "pressione", "forza", "area", "Pascal", "idrostatica", "P = F/A" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "FLU_002",
+    "categoria": "Fluidi",
+    "sottocategoria": "Idrostatica",
+    "titolo": "Pressione Idrostatica",
+    "formula_latex": "P = \\rho \\cdot g \\cdot h",
+    "descrizione": "La pressione idrostatica $P$ in un fluido a riposo dipende dalla densità del fluido $\\rho$, dall'accelerazione di gravità $g$ e dalla profondità $h$ sotto la superficie libera del fluido. Questa pressione è dovuta al peso della colonna di fluido soprastante.",
+    "variabili": [
+      { "simbolo": "$P$", "descrizione": "Pressione idrostatica", "unita": "Pa" },
+      { "simbolo": "$\\rho$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
+      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità", "unita": "m/s²" },
+      { "simbolo": "$h$", "descrizione": "Profondità (altezza della colonna di fluido)", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Calcola la pressione a $10 \\text{ m}$ di profondità nell'acqua (densità $\\approx 1000 \\text{ kg/m}^3$). La pressione è $P = 1000 \\cdot 9.81 \\cdot 10 = 98100 \\text{ Pa}$."
+      }
+    ],
+    "link_correlati": [ "FLU_001" ],
+    "parole_chiave": [ "pressione idrostatica", "densità", "profondità", "gravità", "fluido", "P = ρgh" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "FLU_003",
+    "categoria": "Fluidi",
+    "sottocategoria": "Idrostatica",
+    "titolo": "Principio di Archimede (Forza di spinta)",
+    "formula_latex": "F_B = \\rho_{fluido} \\cdot V_{immerso} \\cdot g",
+    "descrizione": "Il Principio di Archimede afferma che un corpo immerso in un fluido (totalmente o parzialmente) subisce una spinta verso l'alto $F_B$ pari al peso del volume di fluido spostato $V_{immerso}$ dal corpo, moltiplicato per la densità del fluido $\\rho_{fluido}$ e l'accelerazione di gravità $g$.",
+    "variabili": [
+      { "simbolo": "$F_B$", "descrizione": "Forza di spinta (galleggiamento)", "unita": "N" },
+      { "simbolo": "$\\rho_{fluido}$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
+      { "simbolo": "$V_{immerso}$", "descrizione": "Volume del corpo immerso nel fluido", "unita": "m³" },
+      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità", "unita": "m/s²" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un blocco di legno con un volume di $0.005 \\text{ m}^3$ è completamente immerso nell'acqua (densità $\\approx 1000 \\text{ kg/m}^3$). La forza di spinta è $F_B = 1000 \\cdot 0.005 \\cdot 9.81 = 49.05 \\text{ N}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": [ "Archimede", "spinta di Archimede", "galleggiamento", "densità", "volume", "fluido", "FB = ρVg" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "FLU_004",
+    "categoria": "Fluidi",
+    "sottocategoria": "Idrodinamica",
+    "titolo": "Equazione di Continuità",
+    "formula_latex": "A_1 v_1 = A_2 v_2",
+    "descrizione": "Per un fluido incomprimibile che scorre in un condotto, il prodotto dell'area della sezione trasversale $A$ e della velocità del fluido $v$ rimane costante lungo il condotto. Questo implica che dove l'area diminuisce, la velocità del fluido aumenta.",
+    "variabili": [
+      { "simbolo": "$A_1$", "descrizione": "Area della sezione 1", "unita": "m²" },
+      { "simbolo": "$v_1$", "descrizione": "Velocità del fluido nella sezione 1", "unita": "m/s" },
+      { "simbolo": "$A_2$", "descrizione": "Area della sezione 2", "unita": "m²" },
+      { "simbolo": "$v_2$", "descrizione": "Velocità del fluido nella sezione 2", "unita": "m/s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Acqua che scorre da un tubo con area di $0.01 \\text{ m}^2$ a $2 \\text{ m/s}$ entra in un tubo più stretto di $0.005 \\text{ m}^2$. Applicando l'equazione di continuità: $A_1 v_1 = A_2 v_2 \\implies (0.01 \\cdot 2) = (0.005 \\cdot v_2) \\implies v_2 = 4 \\text{ m/s}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": [ "equazione di continuità", "fluido incomprimibile", "flusso", "velocità del fluido", "area", "idrodinamica", "Av = costante" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "FLU_005",
+    "categoria": "Fluidi",
+    "sottocategoria": "Idrodinamica",
+    "titolo": "Equazione di Bernoulli",
+    "formula_latex": "P + \\frac{1}{2} \\rho v^2 + \\rho g h = \\text{costante}",
+    "descrizione": "L'Equazione di Bernoulli è una relazione fondamentale che descrive la conservazione dell'energia per un fluido ideale (incomprimibile, non viscoso) in flusso stazionario. Relaziona pressione $P$, velocità $v$ e altezza $h$ lungo una linea di flusso.",
+    "variabili": [
+      { "simbolo": "$P$", "descrizione": "Pressione statica", "unita": "Pa" },
+      { "simbolo": "$\\rho$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
+      { "simbolo": "$v$", "descrizione": "Velocità del fluido", "unita": "m/s" },
+      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità", "unita": "m/s²" },
+      { "simbolo": "$h$", "descrizione": "Altezza verticale sopra un punto di riferimento", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio (semplificato)",
+        "testo": "Se la velocità del fluido $v$ aumenta (ad esempio, in una strozzatura del tubo), la pressione statica $P$ deve diminuire per mantenere costante la somma secondo Bernoulli, supponendo che l'altezza $h$ rimanga costante."
+      }
+    ],
+    "link_correlati": [ "FLU_004" ],
+    "parole_chiave": [ "equazione di Bernoulli", "fluido ideale", "conservazione energia", "pressione dinamica", "pressione idrostatica", "idrodinamica" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  }
+]

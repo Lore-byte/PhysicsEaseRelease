@@ -1,0 +1,166 @@
+[
+  {
+    "id": "OND_001",
+    "categoria": "Onde e Ottica",
+    "sottocategoria": "Onde (generale)",
+    "titolo": "Velocità di un'onda",
+    "formula_latex": "v = \\lambda \\cdot f",
+    "descrizione": "La velocità di propagazione $v$ di un'onda è il prodotto della sua lunghezza d'onda $\\lambda$ e della sua frequenza $f$.",
+    "variabili": [
+      { "simbolo": "$v$", "descrizione": "Velocità dell'onda", "unita": "m/s" },
+      { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d'onda", "unita": "m" },
+      { "simbolo": "$f$", "descrizione": "Frequenza dell'onda", "unita": "Hz" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un'onda con una lunghezza d'onda di $0.5 \\text{ m}$ e una frequenza di $60 \\text{ Hz}$. $v = 0.5 \\cdot 60 = 30 \\text{ m/s}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": [ "onda", "velocità", "lunghezza d'onda", "frequenza", "periodo", "v = λf" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "OND_002",
+    "categoria": "Onde e Ottica",
+    "sottocategoria": "Onde (generale)",
+    "titolo": "Periodo di un'onda",
+    "formula_latex": "T = \\frac{1}{f}",
+    "descrizione": "Il periodo $T$ di un'onda è il tempo necessario per completare un'oscillazione completa, ed è l'inverso della sua frequenza $f$.",
+    "variabili": [
+      { "simbolo": "$T$", "descrizione": "Periodo dell'onda", "unita": "s" },
+      { "simbolo": "$f$", "descrizione": "Frequenza dell'onda", "unita": "Hz" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un'onda ha una frequenza di $10 \\text{ Hz}$. $T = 1 / 10 = 0.1 \\text{ s}$."
+      }
+    ],
+    "link_correlati": [ "OND_001" ],
+    "parole_chiave": [ "onda", "periodo", "frequenza", "T = 1/f" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "SON_001",
+    "categoria": "Onde e Ottica",
+    "sottocategoria": "Onde Sonore",
+    "titolo": "Velocità del suono nell'aria",
+    "formula_latex": "v_{\\text{suono}} \\approx 331.4 + 0.6 \\cdot T_c",
+    "descrizione": "La velocità del suono $v_{\\text{suono}}$ nell'aria dipende dalla temperatura. Questa formula empirica stima la velocità in m/s in base alla temperatura $T_c$ in gradi Celsius.",
+    "variabili": [
+      { "simbolo": "$v_{\\text{suono}}$", "descrizione": "Velocità del suono", "unita": "m/s" },
+      { "simbolo": "$T_c$", "descrizione": "Temperatura in gradi Celsius", "unita": "°C" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "A $20\\text{°C}$, la velocità del suono è circa: $v_{\\text{suono}} = 331.4 + 0.6 \\cdot 20 = 343.4 \\text{ m/s}$."
+      }
+    ],
+    "link_correlati": [ "OND_001" ],
+    "parole_chiave": [ "suono", "velocità del suono", "temperatura", "aria" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "SON_002",
+    "categoria": "Onde e Ottica",
+    "sottocategoria": "Onde Sonore",
+    "titolo": "Effetto Doppler (generale)",
+    "formula_latex": "f' = f \\left( \\frac{v \\pm v_o}{v \\mp v_s} \\right)",
+    "descrizione": "Descrive il cambiamento apparente della frequenza $f'$ di un'onda rispetto a un osservatore in movimento relativo rispetto alla sorgente dell'onda. I segni dipendono dalla direzione del movimento: '$+v_o$' se l'osservatore si avvicina, '$-v_o$' se si allontana; '$-v_s$' se la sorgente si avvicina, '$+v_s$' se si allontana.",
+    "variabili": [
+      { "simbolo": "$f'$", "descrizione": "Frequenza osservata", "unita": "Hz" },
+      { "simbolo": "$f$", "descrizione": "Frequenza della sorgente", "unita": "Hz" },
+      { "simbolo": "$v$", "descrizione": "Velocità dell'onda nel mezzo", "unita": "m/s" },
+      { "simbolo": "$v_o$", "descrizione": "Velocità dell'osservatore", "unita": "m/s" },
+      { "simbolo": "$v_s$", "descrizione": "Velocità della sorgente", "unita": "m/s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio (Sorgente in avvicinamento, Osservatore fermo)",
+        "testo": "Un'ambulanza (sorgente) emette un suono di $400 \\text{ Hz}$ ($f$) e si avvicina a $30 \\text{ m/s}$ ($v_s$) a un osservatore fermo ($v_o = 0$). Velocità del suono nell'aria $v = 343 \\text{ m/s}$. $f' = 400 \\cdot (343 / (343 - 30)) \\approx 438.8 \\text{ Hz}$."
+      }
+    ],
+    "link_correlati": [ "SON_001" ],
+    "parole_chiave": [ "effetto Doppler", "frequenza", "suono", "velocità", "sorgente", "osservatore" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "OTT_001",
+    "categoria": "Onde e Ottica",
+    "sottocategoria": "Ottica Geometrica",
+    "titolo": "Legge di Snell-Descartes",
+    "formula_latex": "n_1 \\sin(\\theta_1) = n_2 \\sin(\\theta_2)",
+    "descrizione": "Descrive la relazione tra gli angoli di incidenza $\\theta_1$ e rifrazione $\\theta_2$ di un raggio di luce quando passa attraverso l'interfaccia tra due mezzi ottici con diversi indici di rifrazione ($n_1$ e $n_2$).",
+    "variabili": [
+      { "simbolo": "$n_1$", "descrizione": "Indice di rifrazione del primo mezzo", "unita": "" },
+      { "simbolo": "$\\theta_1$", "descrizione": "Angolo di incidenza", "unita": "rad" },
+      { "simbolo": "$n_2$", "descrizione": "Indice di rifrazione del secondo mezzo", "unita": "" },
+      { "simbolo": "$\\theta_2$", "descrizione": "Angolo di rifrazione", "unita": "rad" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un raggio di luce passa dall'aria ($n_1 \\approx 1.00$) all'acqua ($n_2 \\approx 1.33$) con un angolo di incidenza di $30°$. $\\sin(\\theta_2) = (1.00 \\cdot \\sin(30°)) / 1.33 \\approx 0.376 \\implies \\theta_2 \\approx 22.1°$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": [ "Snell-Descartes", "rifrazione", "indice di rifrazione", "luce", "ottica" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "OTT_002",
+    "categoria": "Onde e Ottica",
+    "sottocategoria": "Ottica Geometrica",
+    "titolo": "Equazione dei punti coniugati (lenti sottili/specchi)",
+    "formula_latex": "\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i}",
+    "descrizione": "Relaziona la distanza focale $f$ di una lente sottile o di uno specchio sferico con la distanza dell'oggetto $d_o$ e la distanza dell'immagine $d_i$.",
+    "variabili": [
+      { "simbolo": "$f$", "descrizione": "Distanza focale", "unita": "m" },
+      { "simbolo": "$d_o$", "descrizione": "Distanza dell'oggetto dalla lente/specchio", "unita": "m" },
+      { "simbolo": "$d_i$", "descrizione": "Distanza dell'immagine dalla lente/specchio", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un oggetto è posto a $0.2 \\text{ m}$ da una lente con distanza focale di $0.1 \\text{ m}$. $1/d_i = 1/0.1 - 1/0.2 = 10 - 5 = 5 \\implies d_i = 1/5 = 0.2 \\text{ m}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": [ "lente", "specchio", "distanza focale", "oggetto", "immagine", "ottica", "1/f = 1/do + 1/di" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "OTT_003",
+    "categoria": "Onde e Ottica",
+    "sottocategoria": "Ottica Geometrica",
+    "titolo": "Ingrandimento lineare",
+    "formula_latex": "M = -\\frac{d_i}{d_o} = \\frac{h_i}{h_o}",
+    "descrizione": "L'ingrandimento lineare $M$ descrive quanto l'immagine è più grande o più piccola rispetto all'oggetto, e se è diritta o capovolta. $h_i$ è l'altezza dell'immagine, $h_o$ è l'altezza dell'oggetto. Il segno meno indica che le immagini reali sono capovolte.",
+    "variabili": [
+      { "simbolo": "$M$", "descrizione": "Ingrandimento lineare", "unita": "" },
+      { "simbolo": "$d_i$", "descrizione": "Distanza dell'immagine", "unita": "m" },
+      { "simbolo": "$d_o$", "descrizione": "Distanza dell'oggetto", "unita": "m" },
+      { "simbolo": "$h_i$", "descrizione": "Altezza dell'immagine", "unita": "m" },
+      { "simbolo": "$h_o$", "descrizione": "Altezza dell'oggetto", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un oggetto di $0.03 \\text{ m}$ è posto a $0.2 \\text{ m}$ da una lente che forma un'immagine a $0.4 \\text{ m}$. $M = -(0.4 / 0.2) = -2$. L'immagine è due volte più grande e capovolta."
+      }
+    ],
+    "link_correlati": [ "OTT_002" ],
+    "parole_chiave": [ "ingrandimento", "lente", "specchio", "altezza immagine", "altezza oggetto", "ottica" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-06"
+  }
+]

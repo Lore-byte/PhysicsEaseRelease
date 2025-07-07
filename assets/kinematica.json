@@ -1,0 +1,194 @@
+[
+  {
+    "id": "CIN_001",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto rettilineo uniforme",
+    "titolo": "Moto rettilineo uniforme",
+    "formula_latex": "x(t) = x_{0} + v \\cdot t",
+    "descrizione": "Descrive il moto di un punto materiale che si muove a velocità costante lungo una direzione retta. $x_0$ è la posizione iniziale, $v$ è la velocità costante e $t$ il tempo.",
+    "variabili": [
+      {
+        "simbolo": "$x(t)$",
+        "descrizione": "Posizione al tempo $t$",
+        "unita": "m"
+      },
+      {
+        "simbolo": "$x_0$",
+        "descrizione": "Posizione iniziale",
+        "unita": "m"
+      },
+      {
+        "simbolo": "$v$",
+        "descrizione": "Velocità costante",
+        "unita": "m/s"
+      },
+      {
+        "simbolo": "$t$",
+        "descrizione": "Tempo trascorso",
+        "unita": "s"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un'automobile parte dalla posizione $x_0 = 0 \\text{ m}$ con velocità $v = 20 \\text{ m/s}$. Dopo $t = 5 \\text{ s}$, la sua posizione è: $x(5) = 0 + 20 \\cdot 5 = 100 \\text{ m}$."
+      }
+    ],
+    "link_correlati": [
+      "CIN_002",
+      "CIN_003"
+    ],
+    "parole_chiave": [
+      "moto uniforme",
+      "velocità costante",
+      "legge oraria",
+      "x0 + v t"
+    ],
+    "data_creazione": "2025-05-31",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "CIN_002",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto uniformemente accelerato",
+    "titolo": "Moto uniformemente accelerato",
+    "formula_latex": "x(t) = x_{0} + v_{0} \\cdot t + \\tfrac{1}{2} a \\cdot t^{2}",
+    "descrizione": "Descrive un moto con accelerazione costante $a$. $x_0$ è la posizione iniziale, $v_0$ la velocità iniziale e $a$ l'accelerazione costante.",
+    "variabili": [
+      {
+        "simbolo": "$x(t)$",
+        "descrizione": "Posizione al tempo $t$",
+        "unita": "m"
+      },
+      {
+        "simbolo": "$x_0$",
+        "descrizione": "Posizione iniziale",
+        "unita": "m"
+      },
+      {
+        "simbolo": "$v_0$",
+        "descrizione": "Velocità iniziale",
+        "unita": "m/s"
+      },
+      {
+        "simbolo": "$a$",
+        "descrizione": "Accelerazione costante",
+        "unita": "m/s²"
+      },
+      {
+        "simbolo": "$t$",
+        "descrizione": "Tempo trascorso",
+        "unita": "s"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un corpo parte da fermo ($v_0 = 0 \\text{ m/s}$) da $x_0 = 0 \\text{ m}$ e accelera costantemente con $a = 2 \\text{ m/s}^2$. Dopo $t = 4 \\text{ s}$, la sua posizione diventa: $x(4) = 0 + 0 \\cdot 4 + 0.5 \\cdot 2 \\cdot 4^2 = 16 \\text{ m}$."
+      }
+    ],
+    "link_correlati": [
+      "CIN_001",
+      "CIN_003",
+      "CIN_004"
+    ],
+    "parole_chiave": [
+      "moto uniformemente accelerato",
+      "accelerazione costante",
+      "1/2 a t^2",
+      "v0 t"
+    ],
+    "data_creazione": "2025-05-31",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "CIN_003",
+    "categoria": "Cinematica",
+    "sottocategoria": "Velocità",
+    "titolo": "Velocità istantanea",
+    "formula_latex": "v(t) = \\dfrac{dx(t)}{dt}",
+    "descrizione": "Velocità istantanea del moto di un punto materiale in funzione del tempo, definita come derivata della posizione $x(t)$ rispetto al tempo $t$.",
+    "variabili": [
+      {
+        "simbolo": "$v(t)$",
+        "descrizione": "Velocità istantanea",
+        "unita": "m/s"
+      },
+      {
+        "simbolo": "$x(t)$",
+        "descrizione": "Posizione al tempo $t$",
+        "unita": "m"
+      },
+      {
+        "simbolo": "$t$",
+        "descrizione": "Tempo",
+        "unita": "s"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se la legge oraria è $x(t) = 5 t^2$, allora la velocità istantanea è: $v(t) = \\frac{d}{dt} (5 t^2) = 10 t \\text{ m/s}$."
+      }
+    ],
+    "link_correlati": [
+      "CIN_001",
+      "CIN_002",
+      "CIN_004"
+    ],
+    "parole_chiave": [
+      "velocità istantanea",
+      "derivata posizione",
+      "v = dx/dt"
+    ],
+    "data_creazione": "2025-05-31",
+    "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "CIN_004",
+    "categoria": "Cinematica",
+    "sottocategoria": "Accelerazione",
+    "titolo": "Accelerazione istantanea",
+    "formula_latex": "a(t) = \\dfrac{dv(t)}{dt} = \\dfrac{d^{2}x(t)}{dt^{2}}",
+    "descrizione": "Accelerazione istantanea $a(t)$ definita come derivata della velocità $v(t)$ rispetto al tempo $t$, o seconda derivata della posizione $x(t)$.",
+    "variabili": [
+      {
+        "simbolo": "$a(t)$",
+        "descrizione": "Accelerazione istantanea",
+        "unita": "m/s²"
+      },
+      {
+        "simbolo": "$v(t)$",
+        "descrizione": "Velocità al tempo $t$",
+        "unita": "m/s"
+      },
+      {
+        "simbolo": "$x(t)$",
+        "descrizione": "Posizione al tempo $t$",
+        "unita": "m"
+      },
+      {
+        "simbolo": "$t$",
+        "descrizione": "Tempo",
+        "unita": "s"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se la velocità istantanea è $v(t) = 10 t$, allora l'accelerazione istantanea è: $a(t) = \\frac{d}{dt} (10 t) = 10 \\text{ m/s}^2$."
+      }
+    ],
+    "link_correlati": [
+      "CIN_002",
+      "CIN_003"
+    ],
+    "parole_chiave": [
+      "accelerazione istantanea",
+      "derivata velocità",
+      "a = dv/dt"
+    ],
+    "data_creazione": "2025-05-31",
+    "data_ultima_modifica": "2025-07-06"
+  }
+]
