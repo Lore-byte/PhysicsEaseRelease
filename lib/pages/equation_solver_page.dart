@@ -10,10 +10,8 @@ class EquationSolverPage extends StatefulWidget {
 }
 
 class _EquationSolverPageState extends State<EquationSolverPage> {
-  // Enum per il tipo di equazione selezionata
   EquationType _selectedEquationType = EquationType.quadratic;
 
-  // Controller per i coefficienti
   final TextEditingController _coeffAController = TextEditingController();
   final TextEditingController _coeffBController = TextEditingController();
   final TextEditingController _coeffCController = TextEditingController();
@@ -39,9 +37,7 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
 
     double a, b, c, d;
 
-    // Parsing dei coefficienti
     try {
-      // Coefficiente A è sempre presente
       a = double.tryParse(_coeffAController.text.trim()) ?? 0.0;
       b = double.tryParse(_coeffBController.text.trim()) ?? 0.0;
       c = double.tryParse(_coeffCController.text.trim()) ?? 0.0;
@@ -49,7 +45,7 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
       if (_selectedEquationType == EquationType.cubic) {
         d = double.tryParse(_coeffDController.text.trim()) ?? 0.0;
       } else {
-        d = 0.0; // Non usato per quadratica, ma inizializzato
+        d = 0.0;
       }
     } catch (e) {
       setState(() {
@@ -58,7 +54,6 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
       return;
     }
 
-    // Validazione specifica per il tipo di equazione
     if (_selectedEquationType == EquationType.quadratic) {
       if (a == 0) {
         setState(() {
@@ -77,10 +72,9 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
       _result = _solveCubic(a, b, c, d);
     }
 
-    setState(() {}); // Aggiorna l'UI con il risultato
+    setState(() {});
   }
 
-  // Funzione per pulire tutti i campi di input e i risultati/errori
   void _clearAllFields() {
     setState(() {
       _coeffAController.clear();
@@ -91,8 +85,6 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
       _errorMessage = '';
     });
   }
-
-  // Solves a quadratic equation ax^2 + bx + c = 0
   String _solveQuadratic(double a, double b, double c) {
     final d = b * b - 4 * a * c; // Discriminant
     if (d < 0) {
@@ -113,10 +105,8 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
     }
   }
 
-  // Solves a cubic equation ax^3 + bx^2 + cx + d = 0 using Cardano's method
+  // Cardano's method
   String _solveCubic(double a, double b, double c, double d) {
-    // Normalizzazione dell'equazione ax^3 + bx^2 + cx + d = 0
-    // Trasformazione in forma depressa y^3 + py + q = 0
     final p = (3 * a * c - b * b) / (3 * a * a);
     final q = (2 * b * b * b - 9 * a * b * c + 27 * a * a * d) / (27 * a * a * a);
 
@@ -128,23 +118,21 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
       final y1 = u + v;
       final x1 = y1 - b / (3 * a);
 
-      if (discriminant.abs() < 1e-9) { // Casi con radici reali multiple
+      if (discriminant.abs() < 1e-9) {
         final y2 = -u / 2 - v / 2;
         final x2 = y2 - b / (3 * a);
         return 'x₁ = ${x1.toStringAsFixed(6)}\nx₂ = ${x2.toStringAsFixed(6)} (radice doppia)';
       } else {
-        // Una radice reale e due complesse coniugate
         final realPart = -(u + v) / 2;
         final imagPart = sqrt(3) / 2 * (u - v);
 
-        // Calcoliamo x2 e x3 basandoci sulla parte reale e immaginaria di y2 e y3
         final x2_real = realPart - b / (3 * a);
         final x2_imag = imagPart;
         final x3_real = realPart - b / (3 * a);
         final x3_imag = -imagPart;
 
         String result = 'x₁ = ${x1.toStringAsFixed(6)}';
-        if (x2_imag.abs() < 1e-9) { // Se la parte immaginaria è trascurabile, è una radice reale
+        if (x2_imag.abs() < 1e-9) {
           result += '\nx₂ = ${x2_real.toStringAsFixed(6)}';
           result += '\nx₃ = ${x3_real.toStringAsFixed(6)}';
         } else {
@@ -153,7 +141,7 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
         }
         return result;
       }
-    } else { // Tre radici reali distinte (caso irriducibile)
+    } else {
       final r = sqrt(-(p * p * p) / 27);
       final theta = acos(-q / (2 * r));
       final y1 = 2 * r * cos(theta / 3);
@@ -167,7 +155,6 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
     }
   }
 
-  // Custom cubic root function for handling negative numbers correctly
   double _cbrt(double x) => x >= 0 ? pow(x, 1 / 3).toDouble() : -pow(-x, 1 / 3).toDouble();
 
 
@@ -195,33 +182,32 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 16),
-            // Selezione del tipo di equazione
             Card(
               color: colorScheme.surfaceVariant,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
               child: Column(
                 children: [
                   RadioListTile<EquationType>(
-                    title: Text('Equazione di 2° grado (ax² + bx + c = 0)', style: TextStyle(color: colorScheme.onSurfaceVariant)),
+                    title: Text('Eqz. 2° grado (ax² + bx + c = 0)', style: TextStyle(color: colorScheme.onSurfaceVariant)),
                     value: EquationType.quadratic,
                     groupValue: _selectedEquationType,
                     onChanged: (EquationType? value) {
                       setState(() {
                         _selectedEquationType = value!;
-                        _result = ''; // Resetta risultato e errore al cambio tipo
+                        _result = '';
                         _errorMessage = '';
                       });
                     },
                     activeColor: colorScheme.primary,
                   ),
                   RadioListTile<EquationType>(
-                    title: Text('Equazione di 3° grado (ax³ + bx² + cx + d = 0)', style: TextStyle(color: colorScheme.onSurfaceVariant)),
+                    title: Text('Eqz. 3° grado (ax³ + bx² + cx + d = 0)', style: TextStyle(color: colorScheme.onSurfaceVariant)),
                     value: EquationType.cubic,
                     groupValue: _selectedEquationType,
                     onChanged: (EquationType? value) {
                       setState(() {
                         _selectedEquationType = value!;
-                        _result = ''; // Resetta risultato e errore al cambio tipo
+                        _result = '';
                         _errorMessage = '';
                       });
                     },
@@ -271,7 +257,6 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
 
             const SizedBox(height: 20),
 
-            // Pulsanti Azione (Risolvi ed il nuovo Pulisci Campi)
             Row(
               children: [
                 Expanded(
@@ -290,14 +275,14 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
                     ),
                   ),
                 ),
-                const SizedBox(width: 10), // Spazio tra i due pulsanti
+                const SizedBox(width: 10),
                 Expanded(
                   child: ElevatedButton.icon(
                     onPressed: _clearAllFields,
                     icon: const Icon(Icons.clear_all),
                     label: const Text('Pulisci Campi'),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: colorScheme.tertiary, // Un colore diverso per distinguere
+                      backgroundColor: colorScheme.tertiary,
                       foregroundColor: colorScheme.onTertiary,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
@@ -311,7 +296,6 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
             ),
             const SizedBox(height: 16),
 
-            // Visualizzazione errori e risultati
             if (_errorMessage.isNotEmpty)
               Card(
                 color: colorScheme.errorContainer,
@@ -355,7 +339,6 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
     );
   }
 
-  // Widget helper per i TextField dei coefficienti
   Widget _buildCoefficientTextField({
     required TextEditingController controller,
     required String label,
@@ -364,7 +347,7 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
   }) {
     return TextField(
       controller: controller,
-      keyboardType: TextInputType.numberWithOptions(decimal: true, signed: true), // Permette numeri decimali e negativi
+      keyboardType: TextInputType.numberWithOptions(decimal: true, signed: true),
       decoration: InputDecoration(
         labelText: label,
         hintText: hintText,
@@ -378,8 +361,7 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
   }
 }
 
-// Enum per definire i tipi di equazione
 enum EquationType {
-  quadratic, // 2° grado
-  cubic,     // 3° grado
+  quadratic,
+  cubic,
 }
