@@ -13,13 +13,13 @@ class SensorToolPage extends StatefulWidget {
 }
 
 class _SensorToolPageState extends State<SensorToolPage> {
-  // Variabili per i dati dei sensori in tempo reale
+
   UserAccelerometerEvent? _userAccelerometerEvent;
   AccelerometerEvent? _accelerometerEvent;
   GyroscopeEvent? _gyroscopeEvent;
   MagnetometerEvent? _magnetometerEvent;
 
-  // Liste per i dati storici dei grafici
+
   final List<FlSpot> _userAccelXSpots = [];
   final List<FlSpot> _userAccelYSpots = [];
   final List<FlSpot> _userAccelZSpots = [];
@@ -36,87 +36,82 @@ class _SensorToolPageState extends State<SensorToolPage> {
   final List<FlSpot> _magYSpots = [];
   final List<FlSpot> _magZSpots = [];
 
-  // Variabile per contare i punti dati sull'asse X dei grafici in modo globale
-  int _currentXIndex = 0;
-  // Timer per incrementare _currentXIndex uniformemente
-  Timer? _xIndexTimer;
-  // Limite massimo di punti da mantenere nel grafico per performance
-  static const int _maxDataPoints = 100; // 100 punti visibili sul grafico
 
-  // Lista delle sottoscrizioni agli stream dei sensori
+  int _currentXIndex = 0;
+
+  Timer? _xIndexTimer;
+
+  static const int _maxDataPoints = 100;
+
   final _streamSubscriptions = <StreamSubscription<dynamic>>[];
 
-  // Variabile per controllare la vista (Cards o Grafici)
   bool _showGraphs = false;
-  // Variabile per indicare se i sensori sono stati inizializzati con successo
+
   bool _sensorsInitialized = false;
 
   @override
   void initState() {
     super.initState();
-    // Inizializza l'ascolto dei sensori dopo aver richiesto i permessi
+
     _requestSensorPermissions();
   }
 
-  /// Richiede i permessi necessari per i sensori.
-  /// La permissione ACTIVITY_RECOGNITION è la più comune per i sensori di movimento.
+
   Future<void> _requestSensorPermissions() async {
-    // Controlla e richiede il permesso per il riconoscimento attività fisica
+
     var status = await Permission.activityRecognition.status;
 
     if (status.isDenied) {
-      // Se il permesso è negato, richiederlo all'utente
+
       status = await Permission.activityRecognition.request();
     }
 
-    if (status.isGranted || status.isLimited) { // isLimited è per iOS 14+
-      // Permesso concesso o limitato (sufficiente per procedere)
+    if (status.isGranted || status.isLimited) {
+
       _initSensorStreams();
     } else if (status.isPermanentlyDenied) {
-      // Permesso negato permanentemente, indirizza l'utente alle impostazioni dell'app
+
       _showErrorSnackBar(
           'Permesso di rilevamento attività fisica negato permanentemente. Abilitalo dalle impostazioni dell\'app.'
       );
-      // Offri all'utente di aprire le impostazioni dell'app
+
       if (await openAppSettings()) {
-        // App impostazioni aperte, l'utente potrebbe tornare e riprovare
+
         debugPrint('Impostazioni app aperte.');
       }
-      _initSensorStreams(); // Prova comunque a inizializzare, alcuni sensori potrebbero funzionare
+      _initSensorStreams();
     } else {
-      // Altri stati (ristretto, ecc.)
+
       _showErrorSnackBar(
           'Impossibile ottenere il permesso di rilevamento attività fisica. Verifica le impostazioni.'
       );
-      _initSensorStreams(); // Prova comunque a inizializzare
+      _initSensorStreams();
     }
   }
 
-  /// Inizializza l'ascolto dei dati dai sensori e popola le liste per i grafici.
-  /// Questa funzione viene chiamata DOPO la gestione dei permessi.
+
   void _initSensorStreams() {
-    if (_sensorsInitialized) return; // Evita di inizializzare più volte
+    if (_sensorsInitialized) return;
 
-    _sensorsInitialized = true; // Marca i sensori come inizializzati
+    _sensorsInitialized = true;
 
-    // Funzione helper per aggiungere un punto ai dati del grafico e gestire il limite
+
     void addSpot(List<FlSpot> spots, double value, int xIndex) {
       if (spots.length >= _maxDataPoints) {
-        spots.removeAt(0); // Rimuovi il punto più vecchio
+        spots.removeAt(0);
       }
       spots.add(FlSpot(xIndex.toDouble(), value));
     }
 
-    // Timer per incrementare l'indice X globalmente ogni 100ms
     _xIndexTimer = Timer.periodic(const Duration(milliseconds: 100), (timer) {
-      if (mounted) { // Assicurati che il widget sia montato prima di chiamare setState
+      if (mounted) {
         setState(() {
           _currentXIndex++;
         });
       }
     });
 
-    // Sottoscrizione all'accelerometro lineare (senza gravità)
+
     _streamSubscriptions.add(userAccelerometerEventStream(samplingPeriod: SensorInterval.uiInterval).listen(
           (UserAccelerometerEvent event) {
         setState(() {
@@ -133,7 +128,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
       cancelOnError: true,
     ));
 
-    // Sottoscrizione all'accelerometro (con gravità)
+
     _streamSubscriptions.add(accelerometerEventStream(samplingPeriod: SensorInterval.uiInterval).listen(
           (AccelerometerEvent event) {
         setState(() {
@@ -150,7 +145,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
       cancelOnError: true,
     ));
 
-    // Sottoscrizione al giroscopio
+
     _streamSubscriptions.add(gyroscopeEventStream(samplingPeriod: SensorInterval.uiInterval).listen(
           (GyroscopeEvent event) {
         setState(() {
@@ -167,7 +162,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
       cancelOnError: true,
     ));
 
-    // Sottoscrizione al magnetometro
+
     _streamSubscriptions.add(magnetometerEventStream(samplingPeriod: SensorInterval.uiInterval).listen(
           (MagnetometerEvent event) {
         setState(() {
@@ -185,9 +180,9 @@ class _SensorToolPageState extends State<SensorToolPage> {
     ));
   }
 
-  /// Mostra una Snackbar per gli errori.
+
   void _showErrorSnackBar(String message) {
-    if (mounted) { // Controlla se il widget è ancora montato prima di mostrare la Snackbar
+    if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(message)),
       );
@@ -196,11 +191,11 @@ class _SensorToolPageState extends State<SensorToolPage> {
 
   @override
   void dispose() {
-    // Annulla tutte le sottoscrizioni e il timer, poi resetta i dati quando il widget viene eliminato
+
     for (final subscription in _streamSubscriptions) {
       subscription.cancel();
     }
-    _xIndexTimer?.cancel(); // Annulla il timer
+    _xIndexTimer?.cancel();
     _userAccelXSpots.clear();
     _userAccelYSpots.clear();
     _userAccelZSpots.clear();
@@ -213,18 +208,18 @@ class _SensorToolPageState extends State<SensorToolPage> {
     _magXSpots.clear();
     _magYSpots.clear();
     _magZSpots.clear();
-    _currentXIndex = 0; // Resetta l'indice X
-    _sensorsInitialized = false; // Resetta lo stato di inizializzazione
+    _currentXIndex = 0;
+    _sensorsInitialized = false;
     super.dispose();
   }
 
-  /// Funzione di utilità per formattare i valori float in stringhe.
+
   String _formatValue(double? value) {
     if (value == null) return 'N/A';
-    return value.toStringAsFixed(3); // Formatta a 3 cifre decimali
+    return value.toStringAsFixed(3);
   }
 
-  /// Costruisce un widget Card per visualizzare i dati di un singolo sensore.
+
   Widget _buildSensorCard({
     required Color cardColor,
     required Color textColor,
@@ -261,7 +256,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
     );
   }
 
-  /// Costruisce una riga per un singolo valore di dato (es. "X: 1.234").
+
   Widget _buildDataRow(String label, String value, Color textColor) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4.0),
@@ -281,7 +276,6 @@ class _SensorToolPageState extends State<SensorToolPage> {
     );
   }
 
-  /// Costruisce un widget LineChart per un sensore specifico.
   Widget _buildLineChart({
     required String title,
     required List<FlSpot> xSpots,
@@ -294,7 +288,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
     required Color gridColor,
     String? unit,
   }) {
-    // Determina i valori min/max per l'asse Y (adattivo)
+
     double minY = 0, maxY = 0;
     if (xSpots.isNotEmpty || ySpots.isNotEmpty || zSpots.isNotEmpty) {
       final allValues = [
@@ -305,12 +299,10 @@ class _SensorToolPageState extends State<SensorToolPage> {
       minY = allValues.reduce((curr, next) => curr < next ? curr : next);
       maxY = allValues.reduce((curr, next) => curr > next ? curr : next);
 
-      // Aggiungi un piccolo padding ai limiti Y
       final padding = (maxY - minY).abs() * 0.1;
       minY -= padding;
       maxY += padding;
 
-      // Gestisci il caso in cui maxY e minY sono uguali (es. dati costanti a 0)
       if (maxY == minY) {
         maxY = minY + 1.0;
         minY = minY - 1.0;
@@ -320,20 +312,15 @@ class _SensorToolPageState extends State<SensorToolPage> {
       maxY = 1.0;
     }
 
-    // Calcolo dinamico di minX e maxX per la finestra scorrevole
-    // minX è il valore X del primo punto visibile nella lista
-    // maxX è il valore X dell'ultimo punto visibile nella lista, più un piccolo buffer
     double chartMinX = 0;
-    double chartMaxX = _maxDataPoints.toDouble(); // Default per i primi _maxDataPoints
+    double chartMaxX = _maxDataPoints.toDouble();
 
     if (xSpots.isNotEmpty) {
       chartMinX = xSpots.first.x;
-      chartMaxX = xSpots.last.x + 1.0; // Aggiungi un piccolo buffer per evitare che l'ultima linea sia tagliata
+      chartMaxX = xSpots.last.x + 1.0;
     }
 
-
-    // Calcola l'intervallo per i tick sull'asse X
-    double intervalX = (_maxDataPoints / 5).floorToDouble(); // Ad esempio, 5 tick principali
+    double intervalX = (_maxDataPoints / 5).floorToDouble();
 
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
@@ -354,7 +341,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
             ),
             const SizedBox(height: 15),
             AspectRatio(
-              aspectRatio: 1.7, // Proporzioni del grafico per mobile
+              aspectRatio: 1.7,
               child: LineChart(
                 LineChartData(
                   gridData: FlGridData(
@@ -381,7 +368,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
                       sideTitles: SideTitles(
                         showTitles: true,
                         reservedSize: 30,
-                        interval: intervalX, // Usa l'intervallo calcolato
+                        interval: intervalX,
                         getTitlesWidget: (value, meta) {
                           return SideTitleWidget(
                             axisSide: meta.axisSide,
@@ -407,8 +394,8 @@ class _SensorToolPageState extends State<SensorToolPage> {
                     show: true,
                     border: Border.all(color: gridColor.withOpacity(0.3), width: 1),
                   ),
-                  minX: chartMinX, // Usa il minX calcolato
-                  maxX: chartMaxX, // Usa il maxX calcolato
+                  minX: chartMinX,
+                  maxX: chartMaxX,
                   minY: minY,
                   maxY: maxY,
                   lineBarsData: [
@@ -444,7 +431,6 @@ class _SensorToolPageState extends State<SensorToolPage> {
               ),
             ),
             const SizedBox(height: 10),
-            // Legenda per i colori del grafico
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -459,7 +445,6 @@ class _SensorToolPageState extends State<SensorToolPage> {
     );
   }
 
-  /// Costruisce un elemento della legenda del grafico.
   Widget _buildLegendItem(String label, Color color) {
     return Row(
       children: [
@@ -494,7 +479,6 @@ class _SensorToolPageState extends State<SensorToolPage> {
         child: Column(
           children: [
             const SizedBox(height: 20),
-            // Se _showGraphs è true, mostra i grafici, altrimenti le card
             if (_showGraphs) ...[
               _buildLineChart(
                 title: 'Accelerometro Lineare',
@@ -545,7 +529,6 @@ class _SensorToolPageState extends State<SensorToolPage> {
                 unit: 'µT',
               ),
             ] else ...[
-              // Le card esistenti
               _buildSensorCard(
                 cardColor: colorScheme.tertiaryContainer,
                 textColor: colorScheme.onTertiaryContainer,
@@ -583,7 +566,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
-                'Nota: La disponibilità e la precisione dei sensori dipendono dal dispositivo. Potrebbe essere necessario concedere il permesso "Riconoscimento attività fisica" dalle impostazioni dell\'app se i dati non vengono visualizzati.',
+                'Nota: Potrebbe essere necessario concedere il permesso "Riconoscimento attività fisica" dalle impostazioni dell\'app se i dati non vengono visualizzati.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 14,
@@ -595,16 +578,15 @@ class _SensorToolPageState extends State<SensorToolPage> {
           ],
         ),
       ),
-      // Pulsante Floating Action per cambiare vista
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
-            _showGraphs = !_showGraphs; // Inverti lo stato della vista
+            _showGraphs = !_showGraphs;
           });
         },
         backgroundColor: colorScheme.tertiary,
         foregroundColor: colorScheme.onTertiary,
-        child: Icon(_showGraphs ? Icons.list : Icons.auto_graph), // Icona cambia in base alla vista
+        child: Icon(_showGraphs ? Icons.list : Icons.auto_graph),
       ),
     );
   }
