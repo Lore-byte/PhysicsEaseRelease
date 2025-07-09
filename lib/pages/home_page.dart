@@ -41,6 +41,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     'Elettromagnetismo': Icons.electric_bolt,
     'Onde e Ottica': Icons.waves,
     'Fluidi': Icons.water_drop,
+    'Gravitazione': Icons.public,
     'Personalizzate': Icons.person_add_alt_1,
   };
 

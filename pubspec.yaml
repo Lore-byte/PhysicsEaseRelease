@@ -72,6 +72,7 @@ flutter:
     - assets/elettromagnetismo.json
     - assets/ottica.json
     - assets/fluidi.json
+    - assets/gravitazione.json
     - assets/my_logo.png
 
   # The following line ensures that the Material Icons font is
