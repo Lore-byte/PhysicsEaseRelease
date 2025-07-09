@@ -16,6 +16,7 @@ class FormulaService {
         'assets/elettromagnetismo.json',
         'assets/ottica.json',
         'assets/fluidi.json',
+        'assets/gravitazione.json',
       ];
 
       var allLoadedFormulas = <Formula>[];

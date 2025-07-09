@@ -1,0 +1,76 @@
+[
+  {
+    "id": "GRA_001",
+    "categoria": "Gravitazione",
+    "sottocategoria": "Leggi della Gravitazione",
+    "titolo": "Legge di Gravitazione Universale",
+    "formula_latex": "F = G \\frac{m_1 m_2}{r^2}",
+    "descrizione": "La Legge di Gravitazione Universale di Newton afferma che due masse $m_1$ e $m_2$ si attraggono con una forza $F$ direttamente proporzionale al prodotto delle masse e inversamente proporzionale al quadrato della distanza $r$ tra esse. $G$ è la costante di gravitazione universale.",
+    "variabili": [
+      { "simbolo": "$F$", "descrizione": "Forza gravitazionale", "unita": "N" },
+      { "simbolo": "$G$", "descrizione": "Costante di gravitazione universale", "unita": "N·m²/kg²" },
+      { "simbolo": "$m_1$", "descrizione": "Prima massa", "unita": "kg" },
+      { "simbolo": "$m_2$", "descrizione": "Seconda massa", "unita": "kg" },
+      { "simbolo": "$r$", "descrizione": "Distanza tra i centri delle masse", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due masse di $10 \\text{ kg}$ e $20 \\text{ kg}$ sono distanti $2 \\text{ m}$. Usando $G \\approx 6.674 \\times 10^{-11} \\text{ N} \\cdot \\text{m}^2/\\text{kg}^2$, la forza è $F = (6.674 \\times 10^{-11}) \\cdot (10 \\cdot 20) / (2)^2 \\approx 3.34 \\times 10^{-9} \\text{ N}$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": [ "gravitazione", "forza", "massa", "distanza", "legge di Newton", "F = Gm1m2/r^2" ],
+    "data_creazione": "2025-07-09",
+    "data_ultima_modifica": "2025-07-09"
+  },
+  {
+    "id": "GRA_002",
+    "categoria": "Gravitazione",
+    "sottocategoria": "Campo Gravitazionale",
+    "titolo": "Campo Gravitazionale",
+    "formula_latex": "g = G \\frac{M}{r^2}",
+    "descrizione": "L'intensità del campo gravitazionale $g$ generato da una massa $M$ a distanza $r$ è direttamente proporzionale alla massa e inversamente proporzionale al quadrato della distanza. È la forza gravitazionale per unità di massa.",
+    "variabili": [
+      { "simbolo": "$g$", "descrizione": "Intensità del campo gravitazionale", "unita": "N/kg" },
+      { "simbolo": "$G$", "descrizione": "Costante di gravitazione universale", "unita": "N·m²/kg²" },
+      { "simbolo": "$M$", "descrizione": "Massa che genera il campo", "unita": "kg" },
+      { "simbolo": "$r$", "descrizione": "Distanza dal centro della massa", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Calcola il campo gravitazionale a $6.4 \\times 10^6 \\text{ m}$ dal centro della Terra (massa $5.97 \\times 10^{24} \\text{ kg}$). Si ha $g = (6.674 \\times 10^{-11}) \\cdot (5.97 \\times 10^{24}) / (6.4 \\times 10^6)^2 \\approx 9.8 \\text{ N/kg}$."
+      }
+    ],
+    "link_correlati": [ "GRA_001" ],
+    "parole_chiave": [ "campo gravitazionale", "g", "massa", "forza", "gravità", "G", "g = GM/r^2" ],
+    "data_creazione": "2025-07-09",
+    "data_ultima_modifica": "2025-07-09"
+  },
+  {
+    "id": "GRA_003",
+    "categoria": "Gravitazione",
+    "sottocategoria": "Energia Gravitazionale",
+    "titolo": "Energia Potenziale Gravitazionale",
+    "formula_latex": "U = -G \\frac{m M}{r}",
+    "descrizione": "L'energia potenziale gravitazionale $U$ tra due masse $m$ e $M$ a distanza $r$ è negativa (poiché la forza è attrattiva) e diminuisce all'aumentare della distanza. Dipende dal prodotto delle masse e dall'inverso della distanza.",
+    "variabili": [
+      { "simbolo": "$U$", "descrizione": "Energia potenziale gravitazionale", "unita": "J" },
+      { "simbolo": "$G$", "descrizione": "Costante di gravitazione universale", "unita": "N·m²/kg²" },
+      { "simbolo": "$m$", "descrizione": "Massa del corpo", "unita": "kg" },
+      { "simbolo": "$M$", "descrizione": "Massa che genera il campo", "unita": "kg" },
+      { "simbolo": "$r$", "descrizione": "Distanza tra i centri delle masse", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una massa di $1000 \\text{ kg}$ si trova a $6.4 \\times 10^6 \\text{ m}$ dal centro della Terra. Usando $M_T = 5.97 \\times 10^{24} \\text{ kg}$, si ha $U = - (6.674 \\times 10^{-11}) \\cdot (1000 \\cdot 5.97 \\times 10^{24}) / (6.4 \\times 10^6) \\approx -6.23 \\times 10^{10} \\text{ J}$."
+      }
+    ],
+    "link_correlati": [ "GRA_001", "GRA_002" ],
+    "parole_chiave": [ "energia potenziale", "gravità", "massa", "G", "campo gravitazionale", "U = -GmM/r" ],
+    "data_creazione": "2025-07-09",
+    "data_ultima_modifica": "2025-07-09"
+  }
+]
