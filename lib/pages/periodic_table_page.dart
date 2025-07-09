@@ -188,10 +188,10 @@ class PeriodicTablePage extends StatelessWidget {
                 if (element.yearDiscovered != 0)
                   _buildDetailRow(context, 'Anno Scoperta:', element.yearDiscovered.toString()),
                 const SizedBox(height: 10),
-                Text(
-                  element.description,
-                  style: TextStyle(color: colorScheme.onSurfaceVariant),
-                ),
+                //Text(
+                  //element.description,
+                  //style: TextStyle(color: colorScheme.onSurfaceVariant),
+                //),
               ],
             ),
           ),
