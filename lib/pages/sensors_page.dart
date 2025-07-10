@@ -38,15 +38,10 @@ class _SensorToolPageState extends State<SensorToolPage> {
 
 
   int _currentXIndex = 0;
-
   Timer? _xIndexTimer;
-
   static const int _maxDataPoints = 100;
-
   final _streamSubscriptions = <StreamSubscription<dynamic>>[];
-
   bool _showGraphs = false;
-
   bool _sensorsInitialized = false;
 
   @override
@@ -60,14 +55,11 @@ class _SensorToolPageState extends State<SensorToolPage> {
   Future<void> _requestSensorPermissions() async {
 
     var status = await Permission.activityRecognition.status;
-
     if (status.isDenied) {
-
       status = await Permission.activityRecognition.request();
     }
 
     if (status.isGranted || status.isLimited) {
-
       _initSensorStreams();
     } else if (status.isPermanentlyDenied) {
 
@@ -76,15 +68,14 @@ class _SensorToolPageState extends State<SensorToolPage> {
       );
 
       if (await openAppSettings()) {
-
         debugPrint('Impostazioni app aperte.');
       }
       _initSensorStreams();
     } else {
-
-      _showErrorSnackBar(
-          'Impossibile ottenere il permesso di rilevamento attività fisica. Verifica le impostazioni.'
-      );
+      //va ancora tolto, andorid manifest è già stato modificato
+      //_showErrorSnackBar(
+          //'Impossibile ottenere il permesso di rilevamento attività fisica. Verifica le impostazioni.'
+      //);
       _initSensorStreams();
     }
   }
@@ -92,7 +83,6 @@ class _SensorToolPageState extends State<SensorToolPage> {
 
   void _initSensorStreams() {
     if (_sensorsInitialized) return;
-
     _sensorsInitialized = true;
 
 
