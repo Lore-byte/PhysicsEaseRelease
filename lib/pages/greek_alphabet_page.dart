@@ -26,7 +26,7 @@ class GreekAlphabetPage extends StatelessWidget {
     },
     {
       'letter': 'Δ δ (Delta)',
-      'description': r'''Variazione, differenza (es. $\Delta t$ per variazione di tempo). Simbolo maiuscolo ($\Delta$) per differenze finite, Laplaciano.''', // Fixed
+      'description': r'''Variazione, differenza. Simbolo maiuscolo per differenze finite, Laplaciano.''',
       'formula': '',
       'formula_note': ''
     },
@@ -50,25 +50,25 @@ class GreekAlphabetPage extends StatelessWidget {
     },
     {
       'letter': 'Θ θ (Theta)',
-      'description': r'''Angolo, temperatura (in termodinamica, a volte come $\Theta$).''',
+      'description': r'''Angolo, temperatura (in termodinamica).''',
       'formula': r'\theta',
       'formula_note': '(angolo)'
     },
     {
       'letter': 'Λ λ (Lambda)',
-      'description': r'''Lunghezza d\'onda, densità lineare di carica, costante cosmologica.''',
+      'description': r'''Lunghezza d'onda, densità lineare di carica, costante cosmologica.''',
       'formula': r'\lambda = v/f',
       'formula_note': '(lunghezza d\'onda)'
     },
     {
       'letter': 'Μ μ (Mu)',
-      'description': r'''Coefficiente di attrito, permeabilità magnetica ($ \mu_0 $), momento di dipolo magnetico.''',
+      'description': r'''Coefficiente di attrito, permeabilità magnetica, momento di dipolo magnetico.''',
       'formula': r'F_{attrito} = \mu_s N',
       'formula_note': '(forza di attrito)'
     },
     {
       'letter': 'Ν ν (Nu)',
-      'description': r'''Frequenza (a volte al posto di $f$).''',
+      'description': r'''Frequenza (a volte al posto di f).''',
       'formula': r'E = h\nu',
       'formula_note': '(energia del fotone)'
     },
@@ -80,7 +80,7 @@ class GreekAlphabetPage extends StatelessWidget {
     },
     {
       'letter': 'Π π (Pi)',
-      'description': r'''Costante matematica (3.14...), impulso. Simbolo maiuscolo ($\Pi$) per prodotto matematico.''',
+      'description': r'''Costante matematica (3.14...), impulso. Simbolo maiuscolo per prodotto matematico.''',
       'formula': '',
       'formula_note': ''
     },
@@ -92,7 +92,7 @@ class GreekAlphabetPage extends StatelessWidget {
     },
     {
       'letter': 'Σ σ (Sigma)',
-      'description': r'''Tensione meccanica, conducibilità elettrica, sezione d\'urto, deviazione standard. Simbolo maiuscolo ($\Sigma$) per sommatoria matematica.''',
+      'description': r'''Tensione meccanica, conducibilità elettrica, sezione d'urto, deviazione standard. Simbolo maiuscolo per sommatoria matematica.''',
       'formula': '',
       'formula_note': ''
     },
@@ -104,13 +104,13 @@ class GreekAlphabetPage extends StatelessWidget {
     },
     {
       'letter': 'Υ υ (Ypsilon)',
-      'description': r'''Velocità (a volte, per distinguerla da $v$).''',
+      'description': r'''Velocità (a volte, per distinguerla da v).''',
       'formula': '',
       'formula_note': ''
     },
     {
       'letter': 'Φ φ (Phi)',
-      'description': r'''Flusso magnetico/elettrico, potenziale, angolo di fase. Simbolo maiuscolo ($\Phi$) per flusso totale.''',
+      'description': r'''Flusso magnetico/elettrico, potenziale, angolo di fase. Simbolo maiuscolo per flusso totale.''',
       'formula': '',
       'formula_note': ''
     },
@@ -128,7 +128,7 @@ class GreekAlphabetPage extends StatelessWidget {
     },
     {
       'letter': 'Ω ω (Omega)',
-      'description': r'''Velocità angolare, frequenza angolare, resistenza (Ohm, come $\Omega$).''',
+      'description': r'''Velocità angolare, frequenza angolare, resistenza (Ohm).''',
       'formula': r'\omega = \frac{\Delta \theta}{\Delta t}',
       'formula_note': '(velocità angolare)'
     },
@@ -141,7 +141,7 @@ class GreekAlphabetPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Alfabeto Greco in Fisica'),
+        title: const Text('Alfabeto Greco'),
         backgroundColor: colorScheme.primaryContainer,
         iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
       ),
