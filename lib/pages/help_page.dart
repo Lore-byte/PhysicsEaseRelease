@@ -1,6 +1,6 @@
 // lib/pages/help_page.dart
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart'; // Keep if you use url_launcher elsewhere, otherwise can be removed.
+import 'package:url_launcher/url_launcher.dart';
 
 class HelpPage extends StatelessWidget {
   final ThemeMode themeMode;
@@ -21,7 +21,7 @@ class HelpPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Aiuto'), // Changed title for clarity
+        title: const Text('Aiuto'),
         backgroundColor: colorScheme.primaryContainer,
         iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
         elevation: 0,
@@ -81,8 +81,6 @@ class HelpPage extends StatelessWidget {
               'Strumenti Utili (Tools)',
               'La sezione "Tools" mette a tua disposizione strumenti interattivi come la possibilità di aggiungere le tue formule personalizzate, un convertitore di unità e un potente risolutore di equazioni.',
             ),
-            // Removed "Contatta lo Sviluppatore" section
-            // Removed "Informazioni sull'App" section as it will be in InfoPage
 
             const SizedBox(height: 24),
             Center(

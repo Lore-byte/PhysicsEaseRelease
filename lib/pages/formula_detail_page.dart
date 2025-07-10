@@ -59,15 +59,15 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
     await widget.onToggleFavorite(widget.formula.id);
   }
 
-  // New function to parse mixed content (text and LaTeX)
+  // Nuovo parser
   List<InlineSpan> _parseMixedContent(String text, TextStyle? textStyle, Color? latexColor) {
     final List<InlineSpan> spans = [];
-    final RegExp latexRegex = RegExp(r'\$\$([^$]+?)\$\$|\$([^$]+?)\$'); // Matches $$...$$ and $...$
+    final RegExp latexRegex = RegExp(r'\$\$([^$]+?)\$\$|\$([^$]+?)\$');
 
     text.splitMapJoin(
       latexRegex,
       onMatch: (Match match) {
-        final latexContent = match.group(1) ?? match.group(2); // Get content from $$...$$ or $...$
+        final latexContent = match.group(1) ?? match.group(2);
         if (latexContent != null) {
           spans.add(
             WidgetSpan(
@@ -86,11 +86,11 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
             ),
           );
         }
-        return ''; // Return empty string to indicate match was handled
+        return '';
       },
       onNonMatch: (String nonMatch) {
         spans.add(TextSpan(text: nonMatch, style: textStyle));
-        return ''; // Return empty string to indicate non-match was handled
+        return '';
       },
     );
     return spans;

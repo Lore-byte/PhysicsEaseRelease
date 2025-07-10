@@ -32,17 +32,15 @@ class InfoPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 24),
-            // Logo dell'app - Sostituito il placeholder di rete con Image.asset
             Center(
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(20.0), // Optional: rounded corners for the logo
+                borderRadius: BorderRadius.circular(20.0),
                 child: Image.asset(
                   'assets/my_logo.png',
-                  width: 150, // Puoi regolare la larghezza
-                  height: 150, // Puoi regolare l'altezza
-                  fit: BoxFit.cover, // Adatta l'immagine alla dimensione del box
+                  width: 150,
+                  height: 150,
+                  fit: BoxFit.cover,
                   errorBuilder: (context, error, stackTrace) {
-                    // Fallback se l'immagine non viene caricata
                     return Icon(
                       Icons.image,
                       size: 150,
@@ -82,7 +80,6 @@ class InfoPage extends StatelessWidget {
                   if (await canLaunchUrl(emailLaunchUri)) {
                     await launchUrl(emailLaunchUri);
                   } else {
-                    // Using a SnackBar instead of alert() for user feedback
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(content: Text('Impossibile aprire l\'applicazione email. Copia l\'indirizzo: malatech.dev@gmail.com')),
                     );
