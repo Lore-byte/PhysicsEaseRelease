@@ -190,5 +190,340 @@
     ],
     "data_creazione": "2025-05-31",
     "data_ultima_modifica": "2025-07-06"
+  },
+  {
+    "id": "CIN_005",
+    "categoria": "Cinematica",
+    "sottocategoria": "Velocità",
+    "titolo": "Velocità media",
+    "formula_latex": "\\vec{v}_{m} = \\frac{\\Delta \\vec{s}}{\\Delta t}",
+    "descrizione": "La velocità media è il rapporto tra lo spostamento totale $\\Delta \\vec{s}$ di un corpo e l'intervallo di tempo $\\Delta t$ impiegato per compierlo. È una grandezza vettoriale.",
+    "variabili": [
+      {
+        "simbolo": "$\\vec{v}_{m}$",
+        "descrizione": "Velocità media",
+        "unita": "m/s"
+      },
+      {
+        "simbolo": "$\\Delta \\vec{s}$",
+        "descrizione": "Spostamento (variazione di posizione)",
+        "unita": "m"
+      },
+      {
+        "simbolo": "$\\Delta t$",
+        "descrizione": "Intervallo di tempo",
+        "unita": "s"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un'auto si sposta di $150 \\text{ m}$ in $10 \\text{ s}$. La sua velocità media è $v_m = 150 / 10 = 15 \\text{ m/s}$."
+      }
+    ],
+    "link_correlati": [
+      "CIN_001",
+      "CIN_003"
+    ],
+    "parole_chiave": [
+      "velocità media",
+      "spostamento",
+      "intervallo di tempo"
+    ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIN_006",
+    "categoria": "Cinematica",
+    "sottocategoria": "Accelerazione",
+    "titolo": "Accelerazione media",
+    "formula_latex": "\\vec{a}_{m} = \\frac{\\Delta \\vec{v}}{\\Delta t}",
+    "descrizione": "L'accelerazione media è il rapporto tra la variazione della velocità $\\Delta \\vec{v}$ di un corpo e l'intervallo di tempo $\\Delta t$ in cui tale variazione è avvenuta. È una grandezza vettoriale.",
+    "variabili": [
+      {
+        "simbolo": "$\\vec{a}_{m}$",
+        "descrizione": "Accelerazione media",
+        "unita": "m/s²"
+      },
+      {
+        "simbolo": "$\\Delta \\vec{v}$",
+        "descrizione": "Variazione di velocità",
+        "unita": "m/s"
+      },
+      {
+        "simbolo": "$\\Delta t$",
+        "descrizione": "Intervallo di tempo",
+        "unita": "s"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un'auto passa da $10 \\text{ m/s}$ a $20 \\text{ m/s}$ in $2 \\text{ s}$. L'accelerazione media è $a_m = (20 - 10) / 2 = 5 \\text{ m/s}^2$."
+      }
+    ],
+    "link_correlati": [
+      "CIN_002",
+      "CIN_004"
+    ],
+    "parole_chiave": [
+      "accelerazione media",
+      "variazione velocità",
+      "intervallo di tempo"
+    ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIN_007",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto Circolare Uniforme",
+    "titolo": "Velocità tangenziale ",
+    "formula_latex": "v = \\omega \\cdot r",
+    "descrizione": "Nel moto circolare uniforme, la velocità tangenziale $v$ è la velocità con cui un corpo si muove lungo la circonferenza. È costante in modulo ma varia continuamente in direzione. Dipende dalla velocità angolare $\\omega$ e dal raggio $r$ della traiettoria.",
+    "variabili": [
+      {
+        "simbolo": "$v$",
+        "descrizione": "Velocità tangenziale",
+        "unita": "m/s"
+      },
+      {
+        "simbolo": "$\\omega$",
+        "descrizione": "Velocità angolare",
+        "unita": "rad/s"
+      },
+      {
+        "simbolo": "$r$",
+        "descrizione": "Raggio della traiettoria",
+        "unita": "m"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un punto su un disco rotante con raggio $0.5 \\text{ m}$ e velocità angolare di $4 \\text{ rad/s}$ ha una velocità tangenziale di $v = 4 \\cdot 0.5 = 2 \\text{ m/s}$."
+      }
+    ],
+    "link_correlati": [
+      "CIN_008"
+    ],
+    "parole_chiave": [
+      "moto circolare",
+      "velocità tangenziale",
+      "velocità angolare",
+      "raggio"
+    ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIN_008",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto Circolare Uniforme",
+    "titolo": "Accelerazione centripeta ",
+    "formula_latex": "a_c = \\frac{v^2}{r} = \\omega^2 r",
+    "descrizione": "Nel moto circolare uniforme, l'accelerazione centripeta $a_c$ è l'accelerazione che causa la variazione continua della direzione della velocità tangenziale, mantenendo il corpo sulla traiettoria circolare. È sempre diretta verso il centro della circonferenza.",
+    "variabili": [
+      {
+        "simbolo": "$a_c$",
+        "descrizione": "Accelerazione centripeta",
+        "unita": "m/s²"
+      },
+      {
+        "simbolo": "$v$",
+        "descrizione": "Velocità tangenziale",
+        "unita": "m/s"
+      },
+      {
+        "simbolo": "$\\omega$",
+        "descrizione": "Velocità angolare",
+        "unita": "rad/s"
+      },
+      {
+        "simbolo": "$r$",
+        "descrizione": "Raggio della traiettoria",
+        "unita": "m"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un'auto percorre una curva con raggio $25 \\text{ m}$ a una velocità di $5 \\text{ m/s}$. L'accelerazione centripeta è $a_c = 5^2 / 25 = 1 \\text{ m/s}^2$."
+      }
+    ],
+    "link_correlati": [
+      "CIN_007"
+    ],
+    "parole_chiave": [
+      "moto circolare",
+      "accelerazione centripeta",
+      "velocità tangenziale",
+      "velocità angolare",
+      "raggio"
+    ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIN_009",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto dei Proiettili",
+    "titolo": "Gittata (Moto dei Proiettili)",
+    "formula_latex": "R = \\frac{v_0^2 \\sin(2\\theta)}{g}",
+    "descrizione": "La gittata $R$ di un proiettile è la distanza orizzontale massima percorsa dal proiettile prima di tornare alla quota di lancio (su terreno pianeggiante). Dipende dalla velocità iniziale $v_0$, dall'angolo di lancio $\\theta$ rispetto all'orizzontale e dall'accelerazione di gravità $g$.",
+    "variabili": [
+      {
+        "simbolo": "$R$",
+        "descrizione": "Gittata orizzontale",
+        "unita": "m"
+      },
+      {
+        "simbolo": "$v_0$",
+        "descrizione": "Velocità iniziale del proiettile",
+        "unita": "m/s"
+      },
+      {
+        "simbolo": "$\\theta$",
+        "descrizione": "Angolo di lancio rispetto all'orizzontale",
+        "unita": "rad"
+      },
+      {
+        "simbolo": "$g$",
+        "descrizione": "Accelerazione di gravità ($9.81 \\text{ m/s}^2$ sulla Terra)",
+        "unita": "m/s²"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un proiettile viene lanciato con una velocità iniziale di $20 \\text{ m/s}$ e un angolo di $45^\\circ$. La gittata sarà $R = (20^2 \\cdot \\sin(2 \\cdot 45^\\circ)) / 9.81 = 40.77 \\text{ m}$."
+      }
+    ],
+    "link_correlati": [
+      "CIN_002",
+      "CIN_010"
+    ],
+    "parole_chiave": [
+      "moto proiettili",
+      "gittata",
+      "angolo di lancio",
+      "gravità"
+    ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIN_010",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto dei Proiettili",
+    "titolo": "Altezza massima (Moto dei Proiettili)",
+    "formula_latex": "H = \\frac{v_0^2 \\sin^2(\\theta)}{2g}",
+    "descrizione": "L'altezza massima $H$ raggiunta da un proiettile è il punto più alto della sua traiettoria parabolica. Dipende dalla velocità iniziale $v_0$, dall'angolo di lancio $\\theta$ e dall'accelerazione di gravità $g$.",
+    "variabili": [
+      {
+        "simbolo": "$H$",
+        "descrizione": "Altezza massima",
+        "unita": "m"
+      },
+      {
+        "simbolo": "$v_0$",
+        "descrizione": "Velocità iniziale del proiettile",
+        "unita": "m/s"
+      },
+      {
+        "simbolo": "$\\theta$",
+        "descrizione": "Angolo di lancio rispetto all'orizzontale",
+        "unita": "rad"
+      },
+      {
+        "simbolo": "$g$",
+        "descrizione": "Accelerazione di gravità ($9.81 \\text{ m/s}^2$ sulla Terra)",
+        "unita": "m/s²"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un proiettile lanciato con velocità iniziale di $20 \\text{ m/s}$ e un angolo di $30^\\circ$. L'altezza massima sarà $H = (20^2 \\cdot \\sin^2(30^\\circ)) / (2 \\cdot 9.81) = 5.10 \\text{ m}$."
+      }
+    ],
+    "link_correlati": [
+      "CIN_002",
+      "CIN_009"
+    ],
+    "parole_chiave": [
+      "moto proiettili",
+      "altezza massima",
+      "angolo di lancio",
+      "gravità"
+    ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIN_011",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto Armonico Semplice (MAS)",
+    "titolo": "Moto Armonico Semplice",
+    "formula_latex": "\\begin{cases} x(t) = A \\cos(\\omega t + \\phi_0) \\\\ v(t) = -A \\omega \\sin(\\omega t + \\phi_0) \\\\ a(t) = -A \\omega^2 \\cos(\\omega t + \\phi_0) = -\\omega^2 x(t) \\end{cases}",
+    "descrizione": "Descrive il moto oscillatorio periodico di un oggetto senza attrito. Le equazioni mostrano la posizione $x(t)$, la velocità $v(t)$ e l'accelerazione $a(t)$ in funzione del tempo $t$. $A$ è l'ampiezza massima, $\\omega$ la pulsazione (o frequenza angolare) e $\\phi_0$ la fase iniziale.",
+    "variabili": [
+      {
+        "simbolo": "$x(t)$",
+        "descrizione": "Posizione al tempo $t$",
+        "unita": "m"
+      },
+      {
+        "simbolo": "$v(t)$",
+        "descrizione": "Velocità al tempo $t$",
+        "unita": "m/s"
+      },
+      {
+        "simbolo": "$a(t)$",
+        "descrizione": "Accelerazione al tempo $t$",
+        "unita": "m/s²"
+      },
+      {
+        "simbolo": "$A$",
+        "descrizione": "Ampiezza massima dell'oscillazione",
+        "unita": "m"
+      },
+      {
+        "simbolo": "$\\omega$",
+        "descrizione": "Pulsazione (o frequenza angolare)",
+        "unita": "rad/s"
+      },
+      {
+        "simbolo": "$t$",
+        "descrizione": "Tempo",
+        "unita": "s"
+      },
+      {
+        "simbolo": "$\\phi_0$",
+        "descrizione": "Fase iniziale",
+        "unita": "rad"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un oscillatore ha ampiezza $A = 0.1 \\text{ m}$, pulsazione $\\omega = 5 \\text{ rad/s}$ e fase iniziale $\\phi_0 = 0 \\text{ rad}$. Al tempo $t = 1 \\text{ s}$: Posizione $x(1) = 0.1 \\cos(5) \\approx 0.028 \\text{ m}$. Velocità $v(1) = -0.5 \\sin(5) \\approx 0.479 \\text{ m/s}$. Accelerazione $a(1) = -25 \\cdot 0.028 \\approx -0.7 \\text{ m/s}^2$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": [
+      "moto armonico semplice",
+      "MAS",
+      "oscillazione",
+      "posizione",
+      "velocità",
+      "accelerazione",
+      "ampiezza",
+      "pulsazione",
+      "fase"
+    ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
   }
 ]
