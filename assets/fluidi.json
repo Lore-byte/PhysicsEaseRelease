@@ -5,7 +5,7 @@
     "sottocategoria": "Idrostatica",
     "titolo": "Pressione",
     "formula_latex": "P = \\frac{F}{A}",
-    "descrizione": "La pressione $P$ è definita come la forza $F$ perpendicolare applicata per unità di superficie $A$. È una grandezza scalare.",
+    "descrizione": "La pressione $P$ è definita come la forza $F$ perpendicolare applicata per unità di superficie $A$. È una grandezza scalare fondamentale per lo studio dei fluidi.",
     "variabili": [
       { "simbolo": "$P$", "descrizione": "Pressione", "unita": "Pa" },
       { "simbolo": "$F$", "descrizione": "Forza perpendicolare alla superficie", "unita": "N" },
@@ -14,13 +14,13 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una forza di $100 \\text{ N}$ viene applicata su una superficie di $0.1 \\text{ m}^2$. La pressione è $P = 100 / 0.1 = 1000 \\text{ Pa (Pascal)}$."
+        "testo": "Se una forza di $150 \\text{ N}$ viene applicata uniformemente su una superficie di $0.05 \\text{ m}^2$, la pressione è $P = 150 \\text{ N} / 0.05 \\text{ m}^2 = 3000 \\text{ Pa}$."
       }
     ],
-    "link_correlati": [],
+    "link_correlati": [ "FLU_002" ],
     "parole_chiave": [ "pressione", "forza", "area", "Pascal", "idrostatica", "P = F/A" ],
     "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-11"
   },
   {
     "id": "FLU_002",
@@ -38,13 +38,13 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcola la pressione a $10 \\text{ m}$ di profondità nell'acqua (densità $\\approx 1000 \\text{ kg/m}^3$). La pressione è $P = 1000 \\cdot 9.81 \\cdot 10 = 98100 \\text{ Pa}$."
+        "testo": "Calcola la pressione a $20 \\text{ m}$ di profondità nell'acqua (densità $\\approx 1000 \\text{ kg/m}^3$). La pressione è $P = 1000 \\text{ kg/m}^3 \\cdot 9.81 \\text{ m/s}^2 \\cdot 20 \\text{ m} = 196200 \\text{ Pa}$."
       }
     ],
     "link_correlati": [ "FLU_001" ],
     "parole_chiave": [ "pressione idrostatica", "densità", "profondità", "gravità", "fluido", "P = ρgh" ],
     "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-11"
   },
   {
     "id": "FLU_003",
@@ -52,7 +52,7 @@
     "sottocategoria": "Idrostatica",
     "titolo": "Principio di Archimede (Forza di spinta)",
     "formula_latex": "F_B = \\rho_{fluido} \\cdot V_{immerso} \\cdot g",
-    "descrizione": "Il Principio di Archimede afferma che un corpo immerso in un fluido (totalmente o parzialmente) subisce una spinta verso l'alto $F_B$ pari al peso del volume di fluido spostato $V_{immerso}$ dal corpo, moltiplicato per la densità del fluido $\\rho_{fluido}$ e l'accelerazione di gravità $g$.",
+    "descrizione": "Il Principio di Archimede afferma che un corpo immerso in un fluido (totalmente o parzialmente) subisce una forza di spinta verso l'alto $F_B$ pari al peso del volume di fluido spostato dal corpo. Questa forza dipende dalla densità del fluido $\\rho_{fluido}$, dal volume immerso $V_{immerso}$ e dall'accelerazione di gravità $g$.",
     "variabili": [
       { "simbolo": "$F_B$", "descrizione": "Forza di spinta (galleggiamento)", "unita": "N" },
       { "simbolo": "$\\rho_{fluido}$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
@@ -62,40 +62,64 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un blocco di legno con un volume di $0.005 \\text{ m}^3$ è completamente immerso nell'acqua (densità $\\approx 1000 \\text{ kg/m}^3$). La forza di spinta è $F_B = 1000 \\cdot 0.005 \\cdot 9.81 = 49.05 \\text{ N}$."
+        "testo": "Un oggetto con un volume immerso di $0.002 \\text{ m}^3$ in olio (densità $\\approx 800 \\text{ kg/m}^3$). La forza di spinta è $F_B = 800 \\text{ kg/m}^3 \\cdot 0.002 \\text{ m}^3 \\cdot 9.81 \\text{ m/s}^2 = 15.70 \\text{ N}$."
       }
     ],
-    "link_correlati": [],
+    "link_correlati": [ "FLU_002" ],
     "parole_chiave": [ "Archimede", "spinta di Archimede", "galleggiamento", "densità", "volume", "fluido", "FB = ρVg" ],
     "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-11"
   },
   {
     "id": "FLU_004",
     "categoria": "Fluidi",
     "sottocategoria": "Idrodinamica",
-    "titolo": "Equazione di Continuità",
-    "formula_latex": "A_1 v_1 = A_2 v_2",
-    "descrizione": "Per un fluido incomprimibile che scorre in un condotto, il prodotto dell'area della sezione trasversale $A$ e della velocità del fluido $v$ rimane costante lungo il condotto. Questo implica che dove l'area diminuisce, la velocità del fluido aumenta.",
+    "titolo": "Portata (Flusso di Volume)",
+    "formula_latex": "Q = A \\cdot v",
+    "descrizione": "La portata $Q$ (o flusso di volume) rappresenta il volume di fluido che attraversa una sezione trasversale di un condotto per unità di tempo. È il prodotto dell'area della sezione $A$ e della velocità media del fluido $v$.",
     "variabili": [
-      { "simbolo": "$A_1$", "descrizione": "Area della sezione 1", "unita": "m²" },
-      { "simbolo": "$v_1$", "descrizione": "Velocità del fluido nella sezione 1", "unita": "m/s" },
-      { "simbolo": "$A_2$", "descrizione": "Area della sezione 2", "unita": "m²" },
-      { "simbolo": "$v_2$", "descrizione": "Velocità del fluido nella sezione 2", "unita": "m/s" }
+      { "simbolo": "$Q$", "descrizione": "Portata", "unita": "m³/s" },
+      { "simbolo": "$A$", "descrizione": "Area della sezione trasversale", "unita": "m²" },
+      { "simbolo": "$v$", "descrizione": "Velocità media del fluido", "unita": "m/s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Acqua che scorre da un tubo con area di $0.01 \\text{ m}^2$ a $2 \\text{ m/s}$ entra in un tubo più stretto di $0.005 \\text{ m}^2$. Applicando l'equazione di continuità: $A_1 v_1 = A_2 v_2 \\implies (0.01 \\cdot 2) = (0.005 \\cdot v_2) \\implies v_2 = 4 \\text{ m/s}$."
+        "testo": "Un tubo con un'area di $0.03 \\text{ m}^2$ trasporta acqua a una velocità di $0.8 \\text{ m/s}$. La portata è $Q = 0.03 \\text{ m}^2 \\cdot 0.8 \\text{ m/s} = 0.024 \\text{ m}^3/\\text{s}$."
       }
     ],
-    "link_correlati": [],
-    "parole_chiave": [ "equazione di continuità", "fluido incomprimibile", "flusso", "velocità del fluido", "area", "idrodinamica", "Av = costante" ],
-    "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "link_correlati": [ "FLU_005" ],
+    "parole_chiave": [ "portata", "flusso di volume", "area", "velocità", "fluido", "Q = Av" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
   },
   {
     "id": "FLU_005",
+    "categoria": "Fluidi",
+    "sottocategoria": "Idrodinamica",
+    "titolo": "Equazione di Continuità",
+    "formula_latex": "A_1 v_1 = A_2 v_2 = Q",
+    "descrizione": "Per un fluido incomprimibile che scorre in un condotto, il prodotto dell'area della sezione trasversale $A$ e della velocità del fluido $v$ rimane costante lungo il condotto. Questo implica che dove l'area diminuisce, la velocità del fluido aumenta, mantenendo costante la portata $Q$.",
+    "variabili": [
+      { "simbolo": "$A_1$", "descrizione": "Area della sezione 1", "unita": "m²" },
+      { "simbolo": "$v_1$", "descrizione": "Velocità del fluido nella sezione 1", "unita": "m/s" },
+      { "simbolo": "$A_2$", "descrizione": "Area della sezione 2", "unita": "m²" },
+      { "simbolo": "$v_2$", "descrizione": "Velocità del fluido nella sezione 2", "unita": "m/s" },
+      { "simbolo": "$Q$", "descrizione": "Portata", "unita": "m³/s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Acqua che scorre da un tubo con area $A_1 = 0.01 \\text{ m}^2$ a $v_1 = 2 \\text{ m/s}$ entra in un tubo più stretto di $A_2 = 0.005 \\text{ m}^2$. Usando $A_1 v_1 = A_2 v_2$, si ha $(0.01 \\cdot 2) = (0.005 \\cdot v_2)$, quindi $v_2 = (0.02) / 0.005 = 4 \\text{ m/s}$."
+      }
+    ],
+    "link_correlati": [ "FLU_004", "FLU_006" ],
+    "parole_chiave": [ "equazione di continuità", "fluido incomprimibile", "flusso", "velocità del fluido", "area", "idrodinamica", "Av = costante" ],
+    "data_creazione": "2025-06-03",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "FLU_006",
     "categoria": "Fluidi",
     "sottocategoria": "Idrodinamica",
     "titolo": "Equazione di Bernoulli",
@@ -110,13 +134,137 @@
     ],
     "esempi": [
       {
-        "titolo": "Esempio (semplificato)",
-        "testo": "Se la velocità del fluido $v$ aumenta (ad esempio, in una strozzatura del tubo), la pressione statica $P$ deve diminuire per mantenere costante la somma secondo Bernoulli, supponendo che l'altezza $h$ rimanga costante."
+        "titolo": "Esempio",
+        "testo": "Considera un tubo orizzontale ($\\Delta h = 0$) con due sezioni. Se la pressione nella prima sezione è $P_1 = 150000 \\text{ Pa}$ e la velocità $v_1 = 1 \\text{ m/s}$, e nella seconda sezione la velocità $v_2 = 2 \\text{ m/s}$ (per acqua, $\\rho = 1000 \\text{ kg/m}^3$). Allora $P_1 + \\frac{1}{2} \\rho v_1^2 = P_2 + \\frac{1}{2} \\rho v_2^2 \\implies P_2 = 148500 \\text{ Pa}$."
       }
     ],
-    "link_correlati": [ "FLU_004" ],
+    "link_correlati": [ "FLU_005", "FLU_007", "FLU_008" ],
     "parole_chiave": [ "equazione di Bernoulli", "fluido ideale", "conservazione energia", "pressione dinamica", "pressione idrostatica", "idrodinamica" ],
     "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "FLU_007",
+    "categoria": "Fluidi",
+    "sottocategoria": "Idrodinamica",
+    "titolo": "Legge di Torricelli",
+    "formula_latex": "v = \\sqrt{2gh}",
+    "descrizione": "La Legge di Torricelli descrive la velocità $v$ con cui un fluido ideale fuoriesce da un piccolo foro sul fondo o sulla parete di un recipiente, posto a una profondità $h$ rispetto alla superficie libera del fluido. È un caso speciale dell'Equazione di Bernoulli.",
+    "variabili": [
+      { "simbolo": "$v$", "descrizione": "Velocità di efflusso del fluido", "unita": "m/s" },
+      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità", "unita": "m/s²" },
+      { "simbolo": "$h$", "descrizione": "Altezza della colonna di fluido sopra il foro", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se l'acqua fuoriesce da un foro a $1.2 \\text{ m}$ sotto la superficie di un serbatoio, la velocità di efflusso è $v = \\sqrt{2 \\cdot 9.81 \\text{ m/s}^2 \\cdot 1.2 \\text{ m}} = \\sqrt{23.544} \\approx 4.85 \\text{ m/s}$."
+      }
+    ],
+    "link_correlati": [ "FLU_006" ],
+    "parole_chiave": [ "legge di Torricelli", "efflusso", "velocità", "foro", "idrodinamica", "v = sqrt(2gh)" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "FLU_008",
+    "categoria": "Fluidi",
+    "sottocategoria": "Idrodinamica",
+    "titolo": "Effetto Venturi",
+    "formula_latex": "P_1 + \\frac{1}{2} \\rho v_1^2 = P_2 + \\frac{1}{2} \\rho v_2^2",
+    "descrizione": "L'Effetto Venturi descrive la riduzione della pressione in un fluido in movimento quando questo attraversa una sezione ristretta di un condotto. È una conseguenza diretta del principio di Bernoulli e dell'equazione di continuità, assumendo un condotto orizzontale ($h$ costante).",
+    "variabili": [
+      { "simbolo": "$P_1$", "descrizione": "Pressione nella sezione più ampia", "unita": "Pa" },
+      { "simbolo": "$v_1$", "descrizione": "Velocità del fluido nella sezione più ampia", "unita": "m/s" },
+      { "simbolo": "$P_2$", "descrizione": "Pressione nella sezione ristretta", "unita": "Pa" },
+      { "simbolo": "$v_2$", "descrizione": "Velocità del fluido nella sezione ristretta", "unita": "m/s" },
+      { "simbolo": "$\\rho$", "descrizione": "Densità del fluido", "unita": "kg/m³" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "In un condotto orizzontale, l'acqua ($\\rho = 1000 \\text{ kg/m}^3$) passa da una sezione dove $P_1 = 200000 \\text{ Pa}$ e $v_1 = 0.5 \\text{ m/s}$ a una sezione ristretta dove $v_2 = 2 \\text{ m/s}$. La pressione nella sezione ristretta è $P_2 = P_1 + \\frac{1}{2} \\rho (v_1^2 - v_2^2) =vel 198125 \\text{ Pa}$."
+      }
+    ],
+    "link_correlati": [ "FLU_005", "FLU_006" ],
+    "parole_chiave": [ "effetto venturi", "strozzatura", "pressione dinamica", "idrodinamica", "flusso" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "FLU_009",
+    "categoria": "Fluidi",
+    "sottocategoria": "Viscosità e Resistenza",
+    "titolo": "Regime Laminare (Numero di Reynolds)",
+    "formula_latex": "Re = \\frac{\\rho v L}{\\mu}",
+    "descrizione": "Il numero di Reynolds $Re$ è un numero adimensionale che aiuta a prevedere se il flusso di un fluido sarà laminare (regolare e parallelo) o turbolento (irregolare e caotico). Per valori bassi di $Re$ (tipicamente $Re < 2000$), il flusso è laminare.",
+    "variabili": [
+      { "simbolo": "$Re$", "descrizione": "Numero di Reynolds (adimensionale)", "unita": "-" },
+      { "simbolo": "$\\rho$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
+      { "simbolo": "$v$", "descrizione": "Velocità caratteristica del flusso", "unita": "m/s" },
+      { "simbolo": "$L$", "descrizione": "Dimensione lineare caratteristica (es. diametro del tubo)", "unita": "m" },
+      { "simbolo": "$\\mu$", "descrizione": "Viscosità dinamica del fluido", "unita": "Pa·s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Calcola il numero di Reynolds per acqua ($\\rho = 1000 \\text{ kg/m}^3$, $\\mu = 0.001 \\text{ Pa}\\cdot\\text{s}$) che scorre in un tubo di $L = 0.02 \\text{ m}$ di diametro a una velocità $v = 0.1 \\text{ m/s}$. $Re = (1000 \\cdot 0.1 \\cdot 0.02) / 0.001 = 2000$. Questo indica un flusso che è al limite tra laminare e turbolento."
+      }
+    ],
+    "link_correlati": [ "FLU_010" ],
+    "parole_chiave": [ "regime laminare", "regime turbolento", "numero di Reynolds", "viscosità", "flusso", "idrodinamica" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "FLU_010",
+    "categoria": "Fluidi",
+    "sottocategoria": "Viscosità e Resistenza",
+    "titolo": "Legge di Stokes (Forza di Attrito Viscoso)",
+    "formula_latex": "F_d = 6 \\pi \\eta r v",
+    "descrizione": "La Legge di Stokes descrive la forza di attrito viscoso $F_d$ che agisce su una piccola sfera (raggio $r$) che si muove con velocità $v$ attraverso un fluido viscoso con viscosità dinamica $\\eta$. È valida per flussi laminari e a bassi numeri di Reynolds.",
+    "variabili": [
+      { "simbolo": "$F_d$", "descrizione": "Forza di attrito viscoso (forza di Stokes)", "unita": "N" },
+      { "simbolo": "$\\pi$", "descrizione": "Pi greco (costante matematica)", "unita": "-" },
+      { "simbolo": "$\\eta$", "descrizione": "Viscosità dinamica del fluido", "unita": "Pa·s" },
+      { "simbolo": "$r$", "descrizione": "Raggio della sfera", "unita": "m" },
+      { "simbolo": "$v$", "descrizione": "Velocità della sfera rispetto al fluido", "unita": "m/s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una sfera di raggio $r = 0.001 \\text{ m}$ si muove a $v = 0.05 \\text{ m/s}$ in glicerina ($\\eta = 1.5 \\text{ Pa}\\cdot\\text{s}$). La forza di attrito è $F_d = 6 \\cdot \\pi \\cdot 1.5 \\cdot 0.001 \\cdot 0.05 \\approx 0.00141 \\text{ N}$."
+      }
+    ],
+    "link_correlati": [ "FLU_009", "FLU_011" ],
+    "parole_chiave": [ "legge di Stokes", "attrito viscoso", "resistenza fluidodinamica", "viscosità", "sfera", "caduta" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "FLU_011",
+    "categoria": "Fluidi",
+    "sottocategoria": "Viscosità e Resistenza",
+    "titolo": "Velocità Limite (o Terminale)",
+    "formula_latex": "v_t = \\frac{2 r^2 g (\\rho_p - \\rho_f)}{9 \\eta}",
+    "descrizione": "La velocità limite $v_t$ (o velocità terminale) è la velocità costante che un oggetto raggiunge quando cade attraverso un fluido, e la forza di gravità è bilanciata dalla forza di attrito viscoso (Legge di Stokes) e dalla forza di spinta (Archimede). Questa formula si applica a sfere che cadono in un fluido viscoso.",
+    "variabili": [
+      { "simbolo": "$v_t$", "descrizione": "Velocità limite", "unita": "m/s" },
+      { "simbolo": "$r$", "descrizione": "Raggio della sfera", "unita": "m" },
+      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità", "unita": "m/s²" },
+      { "simbolo": "$\\rho_p$", "descrizione": "Densità dell'oggetto (particella)", "unita": "kg/m³" },
+      { "simbolo": "$\\rho_f$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
+      { "simbolo": "$\\eta$", "descrizione": "Viscosità dinamica del fluido", "unita": "Pa·s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Calcola la velocità limite di una sfera di piombo ($r = 0.001 \\text{ m}$, $\\rho_p = 11340 \\text{ kg/m}^3$) che cade in olio ($\\rho_f = 900 \\text{ kg/m}^3$, $\\eta = 0.1 \\text{ Pa}\\cdot\\text{s}$). $v_t = \\frac{0.2048}{0.9} \\approx 0.228 \\text{ m/s}$."
+      }
+    ],
+    "link_correlati": [ "FLU_003", "FLU_010" ],
+    "parole_chiave": [ "velocità limite", "velocità terminale", "Stokes", "Archimede", "caduta", "viscosità", "resistenza" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
   }
 ]

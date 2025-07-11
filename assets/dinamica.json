@@ -129,7 +129,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un'auto di $1200 \\text{ kg}$ percorre una curva con raggio di $50 \\text{ m}$ a una velocità di $10 \\text{ m/s}$. La forza centripeta richiesta è $F_c = 1200 \\cdot (10^2 / 50) = 1200 \\cdot (100 / 50) = 1200 \\cdot 2 = 2400 \\text{ N}$."
+        "testo": "Un'auto di $1200 \\text{ kg}$ percorre una curva con raggio di $50 \\text{ m}$ a una velocità di $10 \\text{ m/s}$. La forza centripeta richiesta è $F_c = 1200 \\cdot (10^2 / 50) = 2400 \\text{ N}$."
       }
     ],
     "link_correlati": [ "DIN_002", "DIN_007" ],
@@ -178,7 +178,7 @@
     ],
     "esempi": [
       {
-        "titolo": "Esempio: Posizione in un treno in movimento",
+        "titolo": "Esempio",
         "testo": "Se sei seduto su un treno che viaggia a $20 \\text{ m/s}$ (S') e ti trovi a $2 \\text{ m}$ dal finestrino (la tua $x'$), dopo $10 \\text{ s}$ per un osservatore a terra (S), la tua posizione $x$ sarà $x = x' + v_0 t = 2 + (20 \\cdot 10) = 2 + 200 = 202 \\text{ m}$. Se il treno si muovesse all'indietro, $v_0$ sarebbe negativa e la formula si adatterebbe di conseguenza."
       }
     ],
@@ -203,7 +203,7 @@
     ],
     "esempi": [
       {
-        "titolo": "Esempio: Lanciare una palla su un treno",
+        "titolo": "Esempio",
         "testo": "Se un treno si muove a $30 \\text{ m/s}$ ($\\vec{v}_0$) e un passeggero lancia una palla in avanti a $5 \\text{ m/s}$ ($\\vec{v}'$) rispetto al treno, per un osservatore a terra la palla avrà una velocità di $30 + 5 = 35 \\text{ m/s}$. Se la palla viene lanciata all'indietro a $5 \\text{ m/s}$, la sua velocità per l'osservatore a terra sarà $30 - 5 = 25 \\text{ m/s}$. Qualsiasi accelerazione sulla palla (es. dovuta alla gravità o al lancio) sarà la stessa per entrambi gli osservatori."
       }
     ],
