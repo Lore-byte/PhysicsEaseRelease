@@ -35,13 +35,18 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 
   final Map<String, IconData> _categoryIcons = {
     'Cinematica': Icons.directions_run,
-    'Dinamica': Icons.speed,
+    'Dinamica': Icons.fitness_center,
     'Termodinamica': Icons.thermostat,
     'Lavoro ed Energia': Icons.bolt,
-    'Elettromagnetismo': Icons.electric_bolt,
+    'Elettromagnetismo': Icons.electric_meter,
+    'Elettrostatica': Icons.electric_bolt,
     'Onde e Ottica': Icons.waves,
     'Fluidi': Icons.water_drop,
     'Gravitazione': Icons.public,
+    'Quantità di Moto': Icons.speed_outlined,
+    'Momento Angolare': Icons.rotate_left_sharp,
+    'Circuiti Elettrici': Icons.electrical_services_rounded,
+    'Magnetismo': Icons.explore,
     'Personalizzate': Icons.person_add_alt_1,
   };
 

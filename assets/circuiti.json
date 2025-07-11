@@ -1,0 +1,486 @@
+[
+  {
+    "id": "CIR_001",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Conduttori e Campo Elettrico",
+    "titolo": "Equilibrio Elettrostatico in un Conduttore",
+    "formula_latex": "\\vec{E}_{int} = 0",
+    "descrizione": "In un conduttore in equilibrio elettrostatico, il campo elettrico netto all'interno del conduttore è zero. Questo significa che le cariche si sono ridistribuite in modo tale da annullare qualsiasi campo interno.",
+    "variabili": [
+      { "simbolo": "$\\vec{E}_{int}$", "descrizione": "Campo elettrico interno", "unita": "N/C" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Quando un conduttore è posto in un campo elettrico esterno, le cariche libere al suo interno si muovono finché il campo elettrico risultante in ogni punto interno diventa $0$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["equilibrio elettrostatico", "conduttore", "campo elettrico"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_002",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Conduttori e Campo Elettrico",
+    "titolo": "Campo Elettrico alla Superficie di un Conduttore",
+    "formula_latex": "E = \\frac{\\sigma}{\\epsilon_0}",
+    "descrizione": "Il campo elettrico $E$ immediatamente esterno alla superficie di un conduttore in equilibrio elettrostatico è perpendicolare alla superficie e proporzionale alla densità superficiale di carica $\\sigma$ su quel punto della superficie.",
+    "variabili": [
+      { "simbolo": "$E$", "descrizione": "Campo elettrico alla superficie", "unita": "N/C" },
+      { "simbolo": "$\\sigma$", "descrizione": "Densità superficiale di carica", "unita": "C/m^2" },
+      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Su una superficie conduttrice con densità di carica di $2 \\times 10^{-6} C/m^2$, il campo elettrico esterno è $E = \\frac{2 \\times 10^{-6}}{8.85 \\times 10^{-12}} \\approx 2.26 \\times 10^5 N/C$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["campo elettrico", "superficie", "conduttore", "densità di carica"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_003",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Conduttori e Campo Elettrico",
+    "titolo": "Potenziale di un Conduttore in Equilibrio",
+    "formula_latex": "V = \\text{costante}",
+    "descrizione": "Un conduttore in equilibrio elettrostatico è una superficie equipotenziale. Il potenziale elettrico $V$ è costante in ogni punto all'interno e sulla superficie del conduttore.",
+    "variabili": [
+      { "simbolo": "$V$", "descrizione": "Potenziale elettrico", "unita": "V" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Indipendentemente dalla forma o dalla carica distribuita sulla superficie di un conduttore, il potenziale in ogni suo punto interno e superficiale è lo stesso."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["potenziale", "conduttore", "equilibrio elettrostatico", "equipotenziale"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_004",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Condensatori",
+    "titolo": "Capacità di un Condensatore",
+    "formula_latex": "C = \\frac{Q}{V}",
+    "descrizione": "La capacità $C$ di un condensatore è la misura della sua capacità di immagazzinare carica elettrica $Q$ per una data differenza di potenziale $V$ tra le sue armature.",
+    "variabili": [
+      { "simbolo": "$C$", "descrizione": "Capacità", "unita": "F (Farad)" },
+      { "simbolo": "$Q$", "descrizione": "Carica immagazzinata", "unita": "C" },
+      { "simbolo": "$V$", "descrizione": "Differenza di potenziale", "unita": "V" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un condensatore immagazzina $10 \\mu C$ di carica quando la differenza di potenziale è $5 V$. La sua capacità è $C = \\frac{10 \\times 10^{-6} C}{5 V} = 2 \\times 10^{-6} F = 2 \\mu F$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["capacità", "condensatore", "carica", "potenziale"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_005",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Condensatori",
+    "titolo": "Campo Elettrico in un Condensatore Piano",
+    "formula_latex": "E = \\frac{\\sigma}{\\epsilon_0} = \\frac{Q}{\\epsilon_0 A}",
+    "descrizione": "Il campo elettrico $E$ all'interno di un condensatore piano ideale (con armature molto grandi rispetto alla loro separazione) è uniforme e diretto da un'armatura all'altra. Dipende dalla densità superficiale di carica $\\sigma$ e dall'area delle armature $A$.",
+    "variabili": [
+      { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
+      { "simbolo": "$\\sigma$", "descrizione": "Densità superficiale di carica", "unita": "C/m^2" },
+      { "simbolo": "$Q$", "descrizione": "Carica su un'armatura", "unita": "C" },
+      { "simbolo": "$A$", "descrizione": "Area dell'armatura", "unita": "m^2" },
+      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un condensatore piano con armature di area $0.01 m^2$ e una carica di $5 \\times 10^{-8} C$ ha un campo elettrico $E = \\frac{5 \\times 10^{-8} C}{8.85 \\times 10^{-12} F/m \\cdot 0.01 m^2} \\approx 5.65 \\times 10^5 N/C$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["campo elettrico", "condensatore piano", "carica", "area"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_006",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Condensatori",
+    "titolo": "Condensatori in Serie",
+    "formula_latex": "\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2} + \\dots",
+    "descrizione": "Quando i condensatori sono collegati in serie, la carica su ciascuno è la stessa, e la capacità equivalente $C_{eq}$ del sistema è calcolata come il reciproco della somma dei reciproci delle singole capacità.",
+    "variabili": [
+      { "simbolo": "$C_{eq}$", "descrizione": "Capacità equivalente", "unita": "F" },
+      { "simbolo": "$C_1, C_2, \\dots$", "descrizione": "Singole capacità", "unita": "F" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due condensatori da $10 \\mu F$ e $20 \\mu F$ in serie hanno una capacità equivalente $\\frac{1}{C_{eq}} = \\frac{1}{10 \\mu F} + \\frac{1}{20 \\mu F} \\implies C_{eq} \\approx 6.67 \\mu F$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["condensatori", "serie", "capacità equivalente"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_007",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Condensatori",
+    "titolo": "Condensatori in Parallelo",
+    "formula_latex": "C_{eq} = C_1 + C_2 + \\dots",
+    "descrizione": "Quando i condensatori sono collegati in parallelo, la differenza di potenziale su ciascuno è la stessa, e la capacità equivalente $C_{eq}$ del sistema è la somma diretta delle singole capacità.",
+    "variabili": [
+      { "simbolo": "$C_{eq}$", "descrizione": "Capacità equivalente", "unita": "F" },
+      { "simbolo": "$C_1, C_2, \\dots$", "descrizione": "Singole capacità", "unita": "F" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due condensatori da $10 \\mu F$ e $20 \\mu F$ in parallelo hanno una capacità equivalente $C_{eq} = 10 \\mu F + 20 \\mu F = 30 \\mu F$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["condensatori", "parallelo", "capacità equivalente"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_008",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Condensatori",
+    "titolo": "Lavoro di Caricamento di un Condensatore",
+    "formula_latex": "W = \\frac{1}{2} Q V = \\frac{1}{2} C V^2 = \\frac{Q^2}{2C}",
+    "descrizione": "Il lavoro $W$ richiesto per caricare un condensatore è uguale all'energia potenziale elettrica immagazzinata al suo interno. Può essere espresso in funzione della carica $Q$, della differenza di potenziale $V$ e della capacità $C$.",
+    "variabili": [
+      { "simbolo": "$W$", "descrizione": "Lavoro o Energia immagazzinata", "unita": "J (Joule)" },
+      { "simbolo": "$Q$", "descrizione": "Carica immagazzinata", "unita": "C" },
+      { "simbolo": "$V$", "descrizione": "Differenza di potenziale", "unita": "V" },
+      { "simbolo": "$C$", "descrizione": "Capacità", "unita": "F" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un condensatore da $5 \\mu F$ caricato a $100 V$ immagazzina un'energia di $W = \\frac{1}{2} (5 \\times 10^{-6} F) (100 V)^2 = 0.025 J$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["lavoro", "energia", "condensatore", "carica", "potenziale"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_009",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Condensatori",
+    "titolo": "Densità Volumica di Energia Elettrica",
+    "formula_latex": "u_E = \\frac{1}{2} \\epsilon_0 E^2",
+    "descrizione": "La densità volumica di energia elettrica $u_E$ rappresenta l'energia immagazzinata per unità di volume in un campo elettrico $E$ nel vuoto o in un dielettrico con costante $\\epsilon_0$.",
+    "variabili": [
+      { "simbolo": "$u_E$", "descrizione": "Densità volumica di energia", "unita": "J/m^3" },
+      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
+      { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "In una regione con un campo elettrico di $1000 N/C$, la densità di energia è $u_E = \\frac{1}{2} (8.85 \\times 10^{-12} F/m) (1000 N/C)^2 \\approx 4.425 \\times 10^{-6} J/m^3$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["energia", "densità volumica", "campo elettrico"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_010",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente e Resistenza",
+    "titolo": "Intensità di Corrente Elettrica",
+    "formula_latex": "I = \\frac{\\Delta Q}{\\Delta t}",
+    "descrizione": "L'intensità di corrente elettrica $I$ è la quantità di carica $\\Delta Q$ che attraversa una sezione trasversale di un conduttore nell'unità di tempo $\\Delta t$.",
+    "variabili": [
+      { "simbolo": "$I$", "descrizione": "Intensità di corrente", "unita": "A (Ampere)" },
+      { "simbolo": "$\\Delta Q$", "descrizione": "Carica", "unita": "C" },
+      { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se $0.5 C$ di carica attraversano un filo in $2 s$, l'intensità di corrente è $I = \\frac{0.5 C}{2 s} = 0.25 A$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["corrente", "carica", "tempo", "intensità"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_011",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente e Resistenza",
+    "titolo": "Prima Legge di Ohm",
+    "formula_latex": "V = R I",
+    "descrizione": "La prima legge di Ohm afferma che la differenza di potenziale $V$ ai capi di un conduttore ohmico è direttamente proporzionale all'intensità di corrente $I$ che lo attraversa, con $R$ che è la resistenza elettrica del conduttore.",
+    "variabili": [
+      { "simbolo": "$V$", "descrizione": "Differenza di potenziale", "unita": "V" },
+      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "\\Omega (Ohm)" },
+      { "simbolo": "$I$", "descrizione": "Intensità di corrente", "unita": "A" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una resistenza di $10 \\Omega$ è attraversata da una corrente di $2 A$. La differenza di potenziale ai suoi capi è $V = 10 \\Omega \\cdot 2 A = 20 V$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["legge di Ohm", "resistenza", "corrente", "tensione"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_012",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente e Resistenza",
+    "titolo": "Resistenze in Serie",
+    "formula_latex": "R_{eq} = R_1 + R_2 + \\dots",
+    "descrizione": "Quando le resistenze sono collegate in serie, la corrente che le attraversa è la stessa, e la resistenza equivalente $R_{eq}$ del sistema è la somma diretta delle singole resistenze.",
+    "variabili": [
+      { "simbolo": "$R_{eq}$", "descrizione": "Resistenza equivalente", "unita": "\\Omega" },
+      { "simbolo": "$R_1, R_2, \\dots$", "descrizione": "Singole resistenze", "unita": "\\Omega" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due resistenze da $50 \\Omega$ e $100 \\Omega$ in serie hanno una resistenza equivalente $R_{eq} = 50 \\Omega + 100 \\Omega = 150 \\Omega$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["resistenze", "serie", "resistenza equivalente"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_013",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente e Resistenza",
+    "titolo": "Resistenze in Parallelo",
+    "formula_latex": "\\frac{1}{R_{eq}} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots",
+    "descrizione": "Quando le resistenze sono collegate in parallelo, la differenza di potenziale ai loro capi è la stessa, e la resistenza equivalente $R_{eq}$ del sistema è calcolata come il reciproco della somma dei reciproci delle singole resistenze.",
+    "variabili": [
+      { "simbolo": "$R_{eq}$", "descrizione": "Resistenza equivalente", "unita": "\\Omega" },
+      { "simbolo": "$R_1, R_2, \\dots$", "descrizione": "Singole resistenze", "unita": "\\Omega" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due resistenze da $50 \\Omega$ e $100 \\Omega$ in parallelo hanno una resistenza equivalente $\\frac{1}{R_{eq}} = \\frac{1}{50 \\Omega} + \\frac{1}{100 \\Omega} \\implies R_{eq} \\approx 33.33 \\Omega$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["resistenze", "parallelo", "resistenza equivalente"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_014",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente e Resistenza",
+    "titolo": "Seconda Legge di Ohm",
+    "formula_latex": "R = \\rho \\frac{L}{A}",
+    "descrizione": "La seconda legge di Ohm mette in relazione la resistenza $R$ di un conduttore con la sua resistività $\\rho$, la sua lunghezza $L$ e la sua area della sezione trasversale $A$.",
+    "variabili": [
+      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "\\Omega" },
+      { "simbolo": "$\\rho$", "descrizione": "Resistività del materiale", "unita": "\\Omega \\cdot m" },
+      { "simbolo": "$L$", "descrizione": "Lunghezza del conduttore", "unita": "m" },
+      { "simbolo": "$A$", "descrizione": "Area della sezione trasversale", "unita": "m^2" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un filo di rame con resistività di $1.68 \\times 10^{-8} \\Omega \\cdot m$, lungo $10 m$ e con area di $1 \\times 10^{-6} m^2$, ha una resistenza $R = (1.68 \\times 10^{-8} \\Omega \\cdot m) \\frac{10 m}{1 \\times 10^{-6} m^2} = 0.168 \\Omega$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["resistenza", "resistività", "lunghezza", "area"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_015",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Generatori e Leggi di Kirchhoff",
+    "titolo": "Forza Elettromotrice (f.e.m.)",
+    "formula_latex": "\\mathcal{E} = \\frac{W}{Q}",
+    "descrizione": "La forza elettromotrice (f.e.m.) $\\mathcal{E}$ di un generatore è il lavoro $W$ compiuto dal generatore per spostare una carica unitaria $Q$ dal polo negativo al polo positivo al suo interno, idealmente senza perdite.",
+    "variabili": [
+      { "simbolo": "$\\mathcal{E}$", "descrizione": "Forza elettromotrice", "unita": "V" },
+      { "simbolo": "$W$", "descrizione": "Lavoro", "unita": "J" },
+      { "simbolo": "$Q$", "descrizione": "Carica", "unita": "C" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una batteria che compie $12 J$ di lavoro per spostare $1 C$ di carica ha una f.e.m. di $\\mathcal{E} = \\frac{12 J}{1 C} = 12 V$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["f.e.m.", "forza elettromotrice", "lavoro", "carica", "generatore"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_016",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Generatori e Leggi di Kirchhoff",
+    "titolo": "Generatore Reale di Tensione",
+    "formula_latex": "V = \\mathcal{E} - I r",
+    "descrizione": "Un generatore reale di tensione ha una resistenza interna $r$ che causa una caduta di tensione. La tensione $V$ ai capi del generatore è la f.e.m. $\\mathcal{E}$ meno la caduta di tensione sulla resistenza interna quando una corrente $I$ lo attraversa.",
+    "variabili": [
+      { "simbolo": "$V$", "descrizione": "Tensione ai capi", "unita": "V" },
+      { "simbolo": "$\\mathcal{E}$", "descrizione": "Forza elettromotrice", "unita": "V" },
+      { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
+      { "simbolo": "$r$", "descrizione": "Resistenza interna", "unita": "\\Omega" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una batteria da $12 V$ con resistenza interna di $0.5 \\Omega$ che eroga una corrente di $2 A$ avrà una tensione ai capi di $V = 12 V - (2 A \\cdot 0.5 \\Omega) = 11 V$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["generatore reale", "tensione", "f.e.m.", "resistenza interna"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_017",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Potenza ed Effetto Joule",
+    "titolo": "Effetto Joule",
+    "formula_latex": "P = V I = I^2 R = \\frac{V^2}{R}",
+    "descrizione": "L'effetto Joule descrive la potenza $P$ dissipata sotto forma di calore in una resistenza $R$ quando essa è attraversata da una corrente $I$ o ha ai suoi capi una differenza di potenziale $V$.",
+    "variabili": [
+      { "simbolo": "$P$", "descrizione": "Potenza dissipata", "unita": "W (Watt)" },
+      { "simbolo": "$V$", "descrizione": "Differenza di potenziale", "unita": "V" },
+      { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
+      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "\\Omega" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una resistenza di $20 \\Omega$ attraversata da una corrente di $3 A$ dissipa una potenza di $P = (3 A)^2 \\cdot 20 \\Omega = 180 W$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["effetto Joule", "potenza", "calore", "resistenza", "corrente"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_018",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Generatori e Leggi di Kirchhoff",
+    "titolo": "Prima Legge di Kirchhoff (Legge dei Nodi)",
+    "formula_latex": "\\sum I_{in} = \\sum I_{out}",
+    "descrizione": "La prima legge di Kirchhoff (o legge dei nodi) afferma che la somma delle correnti che entrano in un nodo (un punto di giunzione in un circuito) è uguale alla somma delle correnti che escono da esso. Riflette il principio di conservazione della carica.",
+    "variabili": [
+      { "simbolo": "$I_{in}$", "descrizione": "Corrente in ingresso", "unita": "A" },
+      { "simbolo": "$I_{out}$", "descrizione": "Corrente in uscita", "unita": "A" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se in un nodo entrano $5 A$ e $3 A$, e ne escono $2 A$ e $X A$, allora $5 A + 3 A = 2 A + X A$, quindi $X = 6 A$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["legge di Kirchhoff", "legge dei nodi", "corrente", "conservazione della carica"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_019",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Generatori e Leggi di Kirchhoff",
+    "titolo": "Seconda Legge di Kirchhoff (Legge delle Maglie)",
+    "formula_latex": "\\sum \\Delta V = 0",
+    "descrizione": "La seconda legge di Kirchhoff (o legge delle maglie) afferma che la somma algebrica delle variazioni di potenziale (tensioni) lungo qualsiasi percorso chiuso (maglia) in un circuito è zero. Riflette il principio di conservazione dell'energia.",
+    "variabili": [
+      { "simbolo": "$\\Delta V$", "descrizione": "Variazione di potenziale", "unita": "V" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Percorrendo una maglia, se incontriamo una batteria da $9 V$ (aumento) e due resistenze che causano cadute di $3 V$ e $6 V$ (diminuzioni), la somma è $9 V - 3 V - 6 V = 0$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["legge di Kirchhoff", "legge delle maglie", "tensione", "conservazione dell'energia"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_020",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Circuiti RC",
+    "titolo": "Circuito RC: Carica del Condensatore",
+    "formula_latex": "q(t) = Q_{max} (1 - e^{-t/\\tau}) \\quad \\text{e} \\quad I(t) = I_{max} e^{-t/\\tau}",
+    "descrizione": "Durante la carica di un condensatore in un circuito RC (resistenza-condensatore), la carica $q(t)$ sul condensatore e la corrente $I(t)$ nel circuito variano esponenzialmente nel tempo. $\\tau = RC$ è la costante di tempo.",
+    "variabili": [
+      { "simbolo": "$q(t)$", "descrizione": "Carica in funzione del tempo", "unita": "C" },
+      { "simbolo": "$Q_{max}$", "descrizione": "Carica massima", "unita": "C" },
+      { "simbolo": "$I(t)$", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
+      { "simbolo": "$I_{max}$", "descrizione": "Corrente massima", "unita": "A" },
+      { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" },
+      { "simbolo": "$\\tau$", "descrizione": "Costante di tempo ($RC$)", "unita": "s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "In un circuito RC con $R = 100 \\Omega$ e $C = 10 \\mu F$, la costante di tempo è $\\tau = 100 \\Omega \\cdot 10 \\times 10^{-6} F = 0.001 s$. Dopo $0.001 s$, la carica sul condensatore sarà circa il $63.2\\%$ della carica massima."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["circuito RC", "carica", "condensatore", "costante di tempo"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_021",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Circuiti RC",
+    "titolo": "Circuito RC: Scarica del Condensatore",
+    "formula_latex": "q(t) = Q_{0} e^{-t/\\tau} \\quad \\text{e} \\quad I(t) = -I_{0} e^{-t/\\tau}",
+    "descrizione": "Durante la scarica di un condensatore in un circuito RC, la carica $q(t)$ sul condensatore e la corrente $I(t)$ nel circuito diminuiscono esponenzialmente nel tempo. $\\tau = RC$ è la costante di tempo.",
+    "variabili": [
+      { "simbolo": "$q(t)$", "descrizione": "Carica in funzione del tempo", "unita": "C" },
+      { "simbolo": "$Q_{0}$", "descrizione": "Carica iniziale", "unita": "C" },
+      { "simbolo": "$I(t)$", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
+      { "simbolo": "$I_{0}$", "descrizione": "Corrente iniziale", "unita": "A" },
+      { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" },
+      { "simbolo": "$\\tau$", "descrizione": "Costante di tempo ($RC$)", "unita": "s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un condensatore carico in un circuito RC con $\\tau = 0.001 s$ si scaricherà. Dopo $0.001 s$, la carica rimanente sul condensatore sarà circa il $36.8\\%$ della carica iniziale."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["circuito RC", "scarica", "condensatore", "costante di tempo"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  }
+]

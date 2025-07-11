@@ -17,6 +17,10 @@ class FormulaService {
         'assets/ottica.json',
         'assets/fluidi.json',
         'assets/gravitazione.json',
+        'assets/qmoto.json',
+        'assets/momentoangolare.json',
+        'assets/circuiti.json',
+        'assets/magnetismo.json',
       ];
 
       var allLoadedFormulas = <Formula>[];
