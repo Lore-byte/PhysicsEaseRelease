@@ -254,7 +254,7 @@
     ],
     "esempi": [
       {
-        "titolo": "Esempio (concettuale)",
+        "titolo": "Esempio",
         "testo": "Questa formula mostra come la pressione $P$ sia legata al numero di collisioni delle molecole con le pareti e alla loro energia cinetica."
       }
     ],
@@ -305,7 +305,7 @@
     ],
     "esempi": [
       {
-        "titolo": "Esempio (concettuale)",
+        "titolo": "Esempio",
         "testo": "L'equazione di van der Waals viene usata per descrivere i gas a pressioni elevate e basse temperature, dove i gas ideali non sono più accurati."
       }
     ],
@@ -353,7 +353,7 @@
     ],
     "esempi": [
       {
-        "titolo": "Esempio (concettuale)",
+        "titolo": "Esempio",
         "testo": "Questa legge è usata per calcolare la dispersione di calore $Q$ attraverso una parete in un edificio."
       }
     ],
@@ -472,7 +472,7 @@
     ],
     "esempi": [
       {
-        "titolo": "Esempio (concettuale)",
+        "titolo": "Esempio",
         "testo": "Il frigorifero non funziona senza energia, perché non può trasferire calore dal suo interno freddo all'ambiente caldo spontaneamente."
       }
     ],
@@ -612,7 +612,7 @@
     ],
     "esempi": [
       {
-        "titolo": "Esempio (concettuale)",
+        "titolo": "Esempio",
         "testo": "Questa disuguaglianza è la base per la definizione di entropia e per il secondo principio della termodinamica, indicando l'irreversibilità dei processi reali."
       }
     ],
