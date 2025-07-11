@@ -1,188 +1,450 @@
 [
   {
     "id": "ELE_001",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Elettrostatica",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Forza e Campo Elettrico",
     "titolo": "Legge di Coulomb",
-    "formula_latex": "F = k \\frac{|q_1 q_2|}{r^2}",
-    "descrizione": "La Legge di Coulomb descrive la forza di interazione $F$ tra due cariche elettriche puntiformi $q_1$ e $q_2$. La forza è direttamente proporzionale al prodotto delle cariche e inversamente proporzionale al quadrato della distanza $r$ tra esse. $k$ è la costante di Coulomb (circa $8.9875 \\times 10^9 \\text{ N} \\cdot \\text{m}^2/\\text{C}^2$).",
+    "formula_latex": "F = k_e \\frac{|q_1 q_2|}{r^2}",
+    "descrizione": "La legge di Coulomb descrive la forza $F$ tra due cariche puntiformi $q_1$ e $q_2$, separate da una distanza $r$. La costante $k_e$ è la costante di Coulomb.",
     "variabili": [
       { "simbolo": "$F$", "descrizione": "Forza elettrica", "unita": "N" },
-      { "simbolo": "$k$", "descrizione": "Costante di Coulomb", "unita": "N·m²/C²" },
-      { "simbolo": "$q_1$", "descrizione": "Prima carica elettrica", "unita": "C" },
-      { "simbolo": "$q_2$", "descrizione": "Seconda carica elettrica", "unita": "C" },
+      { "simbolo": "$q_1, q_2$", "descrizione": "Cariche elettriche", "unita": "C" },
+      { "simbolo": "$r$", "descrizione": "Distanza tra le cariche", "unita": "m" },
+      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "N \\cdot m^2/C^2" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due cariche di $1 \\mu C$ e $2 \\mu C$ sono poste a una distanza di $0.1 m$. La forza tra di esse è $F = (8.99 \\times 10^9) \\frac{|1 \\times 10^{-6} \\cdot 2 \\times 10^{-6}|}{(0.1)^2} \\approx 1.8 N$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["forza", "Coulomb", "carica", "distanza"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_002",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Forza e Campo Elettrico",
+    "titolo": "Costante Dielettrica Relativa",
+    "formula_latex": "\\epsilon_r = \\frac{\\epsilon}{\\epsilon_0}",
+    "descrizione": "La costante dielettrica relativa $\\epsilon_r$ indica di quanto la forza elettrica tra due cariche è ridotta in un mezzo rispetto al vuoto. $\\epsilon$ è la costante dielettrica del mezzo e $\\epsilon_0$ è la costante dielettrica del vuoto.",
+    "variabili": [
+      { "simbolo": "$\\epsilon_r$", "descrizione": "Costante dielettrica relativa", "unita": "" },
+      { "simbolo": "$\\epsilon$", "descrizione": "Costante dielettrica del mezzo", "unita": "F/m" },
+      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se la costante dielettrica dell'acqua è circa $7.1 \\times 10^{-10} F/m$ e quella del vuoto è $8.85 \\times 10^{-12} F/m$, la costante dielettrica relativa dell'acqua è $\\epsilon_r = \\frac{7.1 \\times 10^{-10}}{8.85 \\times 10^{-12}} \\approx 80$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["costante dielettrica", "mezzo", "vuoto"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_003",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Forza e Campo Elettrico",
+    "titolo": "Campo Elettrico",
+    "formula_latex": "\\vec{E} = \\frac{\\vec{F}}{q_0}",
+    "descrizione": "Il campo elettrico $\\vec{E}$ in un punto è definito come la forza $\\vec{F}$ che una carica di prova positiva $q_0$ subirebbe se posta in quel punto, divisa per la carica stessa.",
+    "variabili": [
+      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
+      { "simbolo": "$\\vec{F}$", "descrizione": "Forza elettrica", "unita": "N" },
+      { "simbolo": "$q_0$", "descrizione": "Carica di prova", "unita": "C" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se una carica di prova di $3 \\times 10^{-9} C$ subisce una forza di $6 \\times 10^{-5} N$ in una certa direzione, il campo elettrico in quel punto è $E = \\frac{6 \\times 10^{-5} N}{3 \\times 10^{-9} C} = 20000 N/C$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["campo elettrico", "forza", "carica di prova"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_004",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Forza e Campo Elettrico",
+    "titolo": "Campo Elettrico di una Carica Puntiforme",
+    "formula_latex": "\\vec{E} = k_e \\frac{q}{r^2} \\hat{r}",
+    "descrizione": "Il campo elettrico $\\vec{E}$ generato da una carica puntiforme $q$ a una distanza $r$ da essa. $\\hat{r}$ è il versore nella direzione radiale.",
+    "variabili": [
+      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
+      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "N \\cdot m^2/C^2" },
+      { "simbolo": "$q$", "descrizione": "Carica puntiforme", "unita": "C" },
+      { "simbolo": "$r$", "descrizione": "Distanza dalla carica", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Calcola il campo elettrico a $0.5 m$ da una carica puntiforme di $4 \\times 10^{-9} C$. $E = (8.99 \\times 10^9) \\frac{4 \\times 10^{-9}}{(0.5)^2} = 143.84 N/C$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["campo elettrico", "carica puntiforme", "distanza"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_005",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Flusso e Teorema di Gauss",
+    "titolo": "Flusso del Campo Elettrico",
+    "formula_latex": "\\Phi_E = \\int_S \\vec{E} \\cdot d\\vec{A}",
+    "descrizione": "Il flusso del campo elettrico $\\Phi_E$ attraverso una superficie $S$ è il prodotto scalare del campo elettrico $\\vec{E}$ e del vettore infinitesimo di area $d\\vec{A}$, integrato su tutta la superficie.",
+    "variabili": [
+      { "simbolo": "$\\Phi_E$", "descrizione": "Flusso del campo elettrico", "unita": "N \\cdot m^2/C" },
+      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
+      { "simbolo": "$d\\vec{A}$", "descrizione": "Vettore infinitesimo di area", "unita": "m^2" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un campo elettrico uniforme di $200 N/C$ attraversa perpendicolarmente una superficie piana di $0.5 m^2$. Il flusso è $\\Phi_E = 200 N/C \\cdot 0.5 m^2 = 100 N \\cdot m^2/C$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["flusso", "campo elettrico", "superficie", "integrale"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_006",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Flusso e Teorema di Gauss",
+    "titolo": "Teorema di Gauss",
+    "formula_latex": "\\oint_S \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{int}}{\\epsilon_0}",
+    "descrizione": "Il teorema di Gauss afferma che il flusso totale del campo elettrico attraverso una qualsiasi superficie chiusa $S$ (superficie gaussiana) è direttamente proporzionale alla carica totale $Q_{int}$ racchiusa all'interno di quella superficie, divisa per la costante dielettrica del vuoto $\\epsilon_0$.",
+    "variabili": [
+      { "simbolo": "$\\Phi_E$", "descrizione": "Flusso del campo elettrico", "unita": "N \\cdot m^2/C" },
+      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
+      { "simbolo": "$d\\vec{A}$", "descrizione": "Vettore infinitesimo di area", "unita": "m^2" },
+      { "simbolo": "$Q_{int}$", "descrizione": "Carica totale racchiusa", "unita": "C" },
+      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una carica di $2 \\mu C$ è racchiusa da una superficie sferica. Il flusso totale attraverso la superficie è $\\Phi_E = \\frac{2 \\times 10^{-6} C}{8.85 \\times 10^{-12} F/m} \\approx 2.26 \\times 10^5 N \\cdot m^2/C$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["Teorema di Gauss", "flusso", "carica racchiusa", "superficie chiusa"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_007",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Distribuzioni di Carica",
+    "titolo": "Densità Superficiale di Carica",
+    "formula_latex": "\\sigma = \\frac{Q}{A}",
+    "descrizione": "La densità superficiale di carica $\\sigma$ è la quantità di carica $Q$ distribuita uniformemente su una superficie di area $A$.",
+    "variabili": [
+      { "simbolo": "$\\sigma$", "descrizione": "Densità superficiale di carica", "unita": "C/m^2" },
+      { "simbolo": "$Q$", "descrizione": "Carica totale", "unita": "C" },
+      { "simbolo": "$A$", "descrizione": "Area della superficie", "unita": "m^2" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una piastra metallica di $0.2 m^2$ ha una carica di $1 \\mu C$. La densità superficiale di carica è $\\sigma = \\frac{1 \\times 10^{-6} C}{0.2 m^2} = 5 \\times 10^{-6} C/m^2$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["densità di carica", "superficiale", "carica", "area"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_008",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Campo Elettrico da Distribuzioni",
+    "titolo": "Campo Elettrico di un Piano Infinito Uniformemente Carico",
+    "formula_latex": "E = \\frac{\\sigma}{2\\epsilon_0}",
+    "descrizione": "Il campo elettrico $E$ generato da un piano infinito uniformemente carico con densità superficiale di carica $\\sigma$. Il campo è uniforme e perpendicolare al piano.",
+    "variabili": [
+      { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
+      { "simbolo": "$\\sigma$", "descrizione": "Densità superficiale di carica", "unita": "C/m^2" },
+      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un piano infinito ha una densità superficiale di carica di $3 \\times 10^{-6} C/m^2$. Il campo elettrico generato è $E = \\frac{3 \\times 10^{-6}}{2 \\cdot 8.85 \\times 10^{-12}} \\approx 1.69 \\times 10^5 N/C$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["campo elettrico", "piano infinito", "densità superficiale", "uniforme"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_009",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Distribuzioni di Carica",
+    "titolo": "Densità Lineare di Carica",
+    "formula_latex": "\\lambda = \\frac{Q}{L}",
+    "descrizione": "La densità lineare di carica $\\lambda$ è la quantità di carica $Q$ distribuita uniformemente su una linea di lunghezza $L$.",
+    "variabili": [
+      { "simbolo": "$\\lambda$", "descrizione": "Densità lineare di carica", "unita": "C/m" },
+      { "simbolo": "$Q$", "descrizione": "Carica totale", "unita": "C" },
+      { "simbolo": "$L$", "descrizione": "Lunghezza della linea", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un filo lungo $0.5 m$ ha una carica di $2 \\times 10^{-8} C$. La densità lineare di carica è $\\lambda = \\frac{2 \\times 10^{-8} C}{0.5 m} = 4 \\times 10^{-8} C/m$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["densità di carica", "lineare", "carica", "lunghezza"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_010",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Campo Elettrico da Distribuzioni",
+    "titolo": "Campo Elettrico di un Filo Infinito Uniformemente Carico",
+    "formula_latex": "E = \\frac{\\lambda}{2\\pi\\epsilon_0 r}",
+    "descrizione": "Il campo elettrico $E$ generato da un filo infinito uniformemente carico con densità lineare di carica $\\lambda$, a una distanza $r$ dal filo.",
+    "variabili": [
+      { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
+      { "simbolo": "$\\lambda$", "descrizione": "Densità lineare di carica", "unita": "C/m" },
+      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
+      { "simbolo": "$r$", "descrizione": "Distanza dal filo", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un filo infinito ha una densità lineare di carica di $5 \\times 10^{-9} C/m$. Il campo elettrico a $0.02 m$ dal filo è $E = \\frac{5 \\times 10^{-9}}{2\\pi \\cdot 8.85 \\times 10^{-12} \\cdot 0.02} \\approx 4.49 \\times 10^3 N/C$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["campo elettrico", "filo infinito", "densità lineare", "distanza"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_011",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Campo Elettrico da Distribuzioni",
+    "titolo": "Campo Elettrico Esterno ad una Sfera Uniformemente Carica",
+    "formula_latex": "E = k_e \\frac{Q}{r^2} \\quad (r > R)",
+    "descrizione": "Il campo elettrico $E$ generato da una sfera uniformemente carica (o conduttore carico) con carica totale $Q$, per punti esterni alla sfera (dove $r$ è la distanza dal centro e $R$ è il raggio della sfera). Si comporta come una carica puntiforme al centro.",
+    "variabili": [
+      { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
+      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "N \\cdot m^2/C^2" },
+      { "simbolo": "$Q$", "descrizione": "Carica totale della sfera", "unita": "C" },
+      { "simbolo": "$r$", "descrizione": "Distanza dal centro della sfera", "unita": "m" },
+      { "simbolo": "$R$", "descrizione": "Raggio della sfera", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una sfera con raggio $0.1 m$ ha una carica di $10 \\mu C$. Il campo elettrico a $0.2 m$ dal centro della sfera è $E = (8.99 \\times 10^9) \\frac{10 \\times 10^{-6}}{(0.2)^2} \\approx 2.25 \\times 10^6 N/C$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["campo elettrico", "sfera carica", "esterno", "carica puntiforme"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_012",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Campo Elettrico da Distribuzioni",
+    "titolo": "Campo Elettrico Interno ad una Sfera Uniformemente Carica (Isolante)",
+    "formula_latex": "E = k_e \\frac{Q r}{R^3} \\quad (r \\le R)",
+    "descrizione": "Il campo elettrico $E$ all'interno di una sfera isolante uniformemente carica con carica totale $Q$ e raggio $R$, a una distanza $r$ dal centro. Per una sfera conduttrice, il campo interno è zero.",
+    "variabili": [
+      { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
+      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "N \\cdot m^2/C^2" },
+      { "simbolo": "$Q$", "descrizione": "Carica totale della sfera", "unita": "C" },
+      { "simbolo": "$r$", "descrizione": "Distanza dal centro della sfera", "unita": "m" },
+      { "simbolo": "$R$", "descrizione": "Raggio della sfera", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una sfera isolante di raggio $0.1 m$ ha una carica totale di $5 \\mu C$ distribuita uniformemente. Il campo elettrico a $0.05 m$ dal centro è $E = (8.99 \\times 10^9) \\frac{5 \\times 10^{-6} \\cdot 0.05}{(0.1)^3} \\approx 2.25 \\times 10^6 N/C$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["campo elettrico", "sfera carica", "interno", "isolante", "conduttore"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_013",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Potenziale Elettrico ed Energia",
+    "titolo": "Potenziale Elettrico",
+    "formula_latex": "V = \\frac{U}{q_0}",
+    "descrizione": "Il potenziale elettrico $V$ in un punto è l'energia potenziale elettrica $U$ per unità di carica di prova $q_0$ posta in quel punto.",
+    "variabili": [
+      { "simbolo": "$V$", "descrizione": "Potenziale elettrico", "unita": "V (Volt)" },
+      { "simbolo": "$U$", "descrizione": "Energia potenziale elettrica", "unita": "J" },
+      { "simbolo": "$q_0$", "descrizione": "Carica di prova", "unita": "C" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se una carica di prova di $2 \\times 10^{-9} C$ ha un'energia potenziale di $10^{-7} J$ in un punto, il potenziale elettrico in quel punto è $V = \\frac{10^{-7} J}{2 \\times 10^{-9} C} = 50 V$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["potenziale elettrico", "energia potenziale", "carica"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_014",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Potenziale Elettrico ed Energia",
+    "titolo": "Potenziale in un Campo Elettrico Uniforme",
+    "formula_latex": "\\Delta V = - E d",
+    "descrizione": "La variazione di potenziale elettrico $\\Delta V$ tra due punti in un campo elettrico uniforme $E$, separati da una distanza $d$ lungo la direzione del campo. Il segno meno indica che il potenziale diminuisce nella direzione del campo.",
+    "variabili": [
+      { "simbolo": "$\\Delta V$", "descrizione": "Variazione di potenziale elettrico", "unita": "V" },
+      { "simbolo": "$E$", "descrizione": "Campo elettrico uniforme", "unita": "N/C" },
+      { "simbolo": "$d$", "descrizione": "Distanza lungo la direzione del campo", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "In un campo elettrico uniforme di $500 N/C$, la variazione di potenziale tra due punti separati di $0.1 m$ lungo la direzione del campo è $\\Delta V = - 500 N/C \\cdot 0.1 m = -50 V$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["potenziale elettrico", "campo uniforme", "variazione di potenziale"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_015",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Potenziale Elettrico ed Energia",
+    "titolo": "Energia Potenziale in un Campo Elettrico Uniforme",
+    "formula_latex": "U = -q E d",
+    "descrizione": "L'energia potenziale $U$ di una carica $q$ in un campo elettrico uniforme $E$, a una distanza $d$ dal punto di riferimento (spesso dove $U=0$).",
+    "variabili": [
+      { "simbolo": "$U$", "descrizione": "Energia potenziale elettrica", "unita": "J" },
+      { "simbolo": "$q$", "descrizione": "Carica", "unita": "C" },
+      { "simbolo": "$E$", "descrizione": "Campo elettrico uniforme", "unita": "N/C" },
+      { "simbolo": "$d$", "descrizione": "Distanza", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una carica di $1 \\mu C$ è posta in un campo elettrico uniforme di $300 N/C$. Se si sposta di $0.05 m$ nella direzione opposta al campo, l'energia potenziale aumenta di $U = - (1 \\times 10^{-6} C) \\cdot (300 N/C) \\cdot (-0.05 m) = 1.5 \\times 10^{-5} J$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["energia potenziale", "campo elettrico", "uniforme", "carica"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_016",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Potenziale Elettrico ed Energia",
+    "titolo": "Potenziale di una Carica Puntiforme",
+    "formula_latex": "V = k_e \\frac{q}{r}",
+    "descrizione": "Il potenziale elettrico $V$ generato da una carica puntiforme $q$ a una distanza $r$ da essa.",
+    "variabili": [
+      { "simbolo": "$V$", "descrizione": "Potenziale elettrico", "unita": "V" },
+      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "N \\cdot m^2/C^2" },
+      { "simbolo": "$q$", "descrizione": "Carica puntiforme", "unita": "C" },
+      { "simbolo": "$r$", "descrizione": "Distanza dalla carica", "unita": "m" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Calcola il potenziale elettrico a $0.2 m$ da una carica puntiforme di $5 \\times 10^{-9} C$. $V = (8.99 \\times 10^9) \\frac{5 \\times 10^{-9}}{0.2} = 224.75 V$."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["potenziale elettrico", "carica puntiforme", "distanza"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "ELE_017",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Potenziale Elettrico ed Energia",
+    "titolo": "Energia Potenziale di una Carica Puntiforme",
+    "formula_latex": "U = k_e \\frac{q_1 q_2}{r}",
+    "descrizione": "L'energia potenziale $U$ di un sistema di due cariche puntiformi $q_1$ e $q_2$ separate da una distanza $r$.",
+    "variabili": [
+      { "simbolo": "$U$", "descrizione": "Energia potenziale elettrica", "unita": "J" },
+      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "N \\cdot m^2/C^2" },
+      { "simbolo": "$q_1, q_2$", "descrizione": "Cariche elettriche", "unita": "C" },
       { "simbolo": "$r$", "descrizione": "Distanza tra le cariche", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Due cariche di $1 \\text{ }\\mu\\text{C}$ e $2 \\text{ }\\mu\\text{C}$ sono distanti $0.1 \\text{ m}$. Usando $k \\approx 8.9875 \\times 10^9 \\text{ N} \\cdot \\text{m}^2/\\text{C}^2$, la forza è $F = (8.9875 \\times 10^9) \\cdot |(1\\times10^{-6}) \\cdot (2\\times10^{-6})| / (0.1)^2 \\approx 1.8 \\text{ N}$."
+        "testo": "Due cariche di $3 \\mu C$ e $-2 \\mu C$ sono distanti $0.1 m$. L'energia potenziale del sistema è $U = (8.99 \\times 10^9) \\frac{(3 \\times 10^{-6}) \\cdot (-2 \\times 10^{-6})}{0.1} \\approx -0.54 J$."
       }
     ],
     "link_correlati": [],
-    "parole_chiave": [ "Coulomb", "forza elettrica", "carica", "distanza", "elettrostatica", "F = kq1q2/r^2" ],
-    "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "parole_chiave": ["energia potenziale", "cariche puntiformi", "distanza"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
   },
   {
-    "id": "ELE_002",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Elettrostatica",
-    "titolo": "Campo Elettrico (da carica puntiforme)",
-    "formula_latex": "E = k \\frac{|q|}{r^2}",
-    "descrizione": "Il campo elettrico $E$ in un punto è la forza elettrica per unità di carica positiva di prova posta in quel punto. Per una carica puntiforme $q$, l'intensità del campo elettrico diminuisce con il quadrato della distanza $r$ dalla carica sorgente.",
+    "id": "ELE_018",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Relazione Campo-Potenziale",
+    "titolo": "Calcolo del Campo Elettrico dal Potenziale",
+    "formula_latex": "\\vec{E} = -\\nabla V",
+    "descrizione": "Il campo elettrico $\\vec{E}$ può essere derivato dal potenziale elettrico $V$ prendendo il gradiente negativo del potenziale. In coordinate cartesiane: $E_x = -\\frac{\\partial V}{\\partial x}$, $E_y = -\\frac{\\partial V}{\\partial y}$, $E_z = -\\frac{\\partial V}{\\partial z}$.",
     "variabili": [
-      { "simbolo": "$E$", "descrizione": "Intensità del campo elettrico", "unita": "N/C" },
-      { "simbolo": "$k$", "descrizione": "Costante di Coulomb", "unita": "N·m²/C²" },
-      { "simbolo": "$q$", "descrizione": "Carica sorgente del campo", "unita": "C" },
-      { "simbolo": "$r$", "descrizione": "Distanza dalla carica sorgente", "unita": "m" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Calcola il campo elettrico a $0.05 \\text{ m}$ da una carica di $5 \\text{ nC}$. Usando $k \\approx 8.9875 \\times 10^9 \\text{ N} \\cdot \\text{m}^2/\\text{C}^2$, si ha $E = (8.9875 \\times 10^9) \\cdot |5\\times10^{-9}| / (0.05)^2 \\approx 1.7975 \\times 10^4 \\text{ N/C}$."
-      }
-    ],
-    "link_correlati": [ "ELE_001" ],
-    "parole_chiave": [ "campo elettrico", "carica", "elettrostatica", "E = kq/r^2" ],
-    "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
-  },
-  {
-    "id": "ELE_003",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Circuiti Elettrici (Corrente Continua)",
-    "titolo": "Prima Legge di Ohm",
-    "formula_latex": "V = I \\cdot R",
-    "descrizione": "La Prima Legge di Ohm stabilisce che la differenza di potenziale (tensione) $V$ ai capi di un conduttore è direttamente proporzionale alla corrente $I$ che lo attraversa e alla resistenza $R$ del conduttore.",
-    "variabili": [
-      { "simbolo": "$V$", "descrizione": "Tensione (differenza di potenziale)", "unita": "V" },
-      { "simbolo": "$I$", "descrizione": "Corrente elettrica", "unita": "A" },
-      { "simbolo": "$R$", "descrizione": "Resistenza elettrica", "unita": "Ω" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Una resistenza di $10 \\text{ }\\Omega$ è attraversata da una corrente di $2 \\text{ A}$. La tensione è $V = 2 \\cdot 10 = 20 \\text{ V}$."
-      }
-    ],
-    "link_correlati": [ "ELE_004", "ELE_005" ],
-    "parole_chiave": [ "Legge di Ohm", "tensione", "corrente", "resistenza", "circuito", "V = IR" ],
-    "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
-  },
-  {
-    "id": "ELE_004",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Circuiti Elettrici (Corrente Continua)",
-    "titolo": "Resistenze in Serie",
-    "formula_latex": "R_{eq} = R_1 + R_2 + ... + R_n",
-    "descrizione": "Quando le resistenze sono connesse in serie, la resistenza equivalente $R_{eq}$ del circuito è la somma delle singole resistenze.",
-    "variabili": [
-      { "simbolo": "$R_{eq}$", "descrizione": "Resistenza equivalente", "unita": "Ω" },
-      { "simbolo": "$R_n$", "descrizione": "N-esima resistenza", "unita": "Ω" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Tre resistenze di $5 \\text{ }\\Omega$, $10 \\text{ }\\Omega$ e $15 \\text{ }\\Omega$ sono collegate in serie. La resistenza equivalente è $R_{eq} = 5 + 10 + 15 = 30 \\text{ }\\Omega$."
-      }
-    ],
-    "link_correlati": [ "ELE_003", "ELE_005" ],
-    "parole_chiave": [ "resistenze in serie", "resistenza equivalente", "circuito", "elettricità" ],
-    "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
-  },
-  {
-    "id": "ELE_005",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Circuiti Elettrici (Corrente Continua)",
-    "titolo": "Resistenze in Parallelo",
-    "formula_latex": "\\frac{1}{R_{eq}} = \\frac{1}{R_1} + \\frac{1}{R_2} + ... + \\frac{1}{R_n}",
-    "descrizione": "Quando le resistenze sono connesse in parallelo, l'inverso della resistenza equivalente $R_{eq}$ è la somma degli inversi delle singole resistenze.",
-    "variabili": [
-      { "simbolo": "$R_{eq}$", "descrizione": "Resistenza equivalente", "unita": "Ω" },
-      { "simbolo": "$R_n$", "descrizione": "N-esima resistenza", "unita": "Ω" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Due resistenze di $10 \\text{ }\\Omega$ e $20 \\text{ }\\Omega$ sono collegate in parallelo. Si ha $\\frac{1}{R_{eq}} = \\frac{1}{10} + \\frac{1}{20} = \\frac{3}{20} \\text{ }\\Omega^{-1} \\implies R_{eq} = \\frac{20}{3} \\approx 6.67 \\text{ }\\Omega$."
-      }
-    ],
-    "link_correlati": [ "ELE_003", "ELE_004" ],
-    "parole_chiave": [ "resistenze in parallelo", "resistenza equivalente", "circuito", "elettricità" ],
-    "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
-  },
-  {
-    "id": "ELE_006",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Circuiti Elettrici (Corrente Continua)",
-    "titolo": "Potenza Elettrica",
-    "formula_latex": "P = V \\cdot I",
-    "descrizione": "La potenza elettrica $P$ è la velocità con cui l'energia elettrica viene convertita in altre forme di energia (es. calore, luce). È il prodotto della tensione $V$ e della corrente $I$. Può essere espressa anche come $P = I^2 R$ o $P = V^2 / R$.",
-    "variabili": [
-      { "simbolo": "$P$", "descrizione": "Potenza elettrica", "unita": "W" },
-      { "simbolo": "$V$", "descrizione": "Tensione", "unita": "V" },
-      { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Una lampadina con una tensione di $12 \\text{ V}$ assorbe una corrente di $0.5 \\text{ A}$. La potenza è $P = 12 \\cdot 0.5 = 6 \\text{ W}$."
-      }
-    ],
-    "link_correlati": [ "ELE_003" ],
-    "parole_chiave": [ "potenza", "energia elettrica", "watt", "P = VI", "P = I^2R", "P = V^2/R" ],
-    "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
-  },
-  {
-    "id": "ELE_007",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Elettrostatica",
-    "titolo": "Potenziale Elettrico",
-    "formula_latex": "V = k \\frac{q}{r}",
-    "descrizione": "Il potenziale elettrico $V$ in un punto è l'energia potenziale elettrica per unità di carica positiva di prova posta in quel punto. È una grandezza scalare (non vettoriale come il campo elettrico) e dipende dalla carica sorgente $q$ e dalla distanza $r$.",
-    "variabili": [
+      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C or V/m" },
       { "simbolo": "$V$", "descrizione": "Potenziale elettrico", "unita": "V" },
-      { "simbolo": "$k$", "descrizione": "Costante di Coulomb", "unita": "N·m²/C²" },
-      { "simbolo": "$q$", "descrizione": "Carica sorgente", "unita": "C" },
-      { "simbolo": "$r$", "descrizione": "Distanza dalla carica sorgente", "unita": "m" }
+      { "simbolo": "$\\nabla$", "descrizione": "Operatore gradiente", "unita": "" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcola il potenziale elettrico a $0.1 \\text{ m}$ da una carica di $3 \\text{ nC}$. Usando $k \\approx 8.9875 \\times 10^9 \\text{ N} \\cdot \\text{m}^2/\\text{C}^2$, si ha $V = (8.9875 \\times 10^9) \\cdot (3\\times10^{-9}) / 0.1 = 269.625 \\text{ V}$."
+        "testo": "Se il potenziale elettrico in una regione è dato da $V(x) = 5x^2 V$, il campo elettrico in direzione x è $E_x = -\\frac{d(5x^2)}{dx} = -10x V/m$."
       }
     ],
-    "link_correlati": [ "ELE_002" ],
-    "parole_chiave": [ "potenziale elettrico", "tensione", "voltaggio", "carica", "elettrostatica", "V = kq/r" ],
-    "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "link_correlati": [],
+    "parole_chiave": ["campo elettrico", "potenziale elettrico", "gradiente"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
   },
   {
-    "id": "ELE_008",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Elettrostatica",
-    "titolo": "Capacità di un Condensatore",
-    "formula_latex": "C = \\frac{Q}{V}",
-    "descrizione": "La capacità $C$ di un condensatore è la misura della sua capacità di immagazzinare carica elettrica $Q$. È il rapporto tra la carica immagazzinata e la differenza di potenziale $V$ ai suoi capi.",
+    "id": "ELE_019",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Relazione Campo-Potenziale",
+    "titolo": "Circuitazione del Campo Elettrico",
+    "formula_latex": "\\oint_L \\vec{E} \\cdot d\\vec{l} = 0",
+    "descrizione": "La circuitazione del campo elettrico elettrostatico lungo una qualsiasi linea chiusa $L$ è sempre zero. Questo riflette il fatto che il campo elettrostatico è conservativo.",
     "variabili": [
-      { "simbolo": "$C$", "descrizione": "Capacità", "unita": "F" },
-      { "simbolo": "$Q$", "descrizione": "Carica immagazzinata", "unita": "C" },
-      { "simbolo": "$V$", "descrizione": "Differenza di potenziale", "unita": "V" }
+      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
+      { "simbolo": "$d\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un condensatore immagazzina $20 \\text{ }\\mu\\text{C}$ di carica quando la tensione è di $5 \\text{ V}$. La capacità è $C = (20\\times10^{-6}) / 5 = 4 \\times 10^{-6} \\text{ F}$ (o $4 \\text{ }\\mu\\text{F}$)."
+        "testo": "Immagina di muovere una carica lungo un percorso chiuso in un campo elettrostatico. Il lavoro totale compiuto dal campo sulla carica sarà sempre zero, il che significa che la circuitazione del campo lungo quel percorso è zero."
       }
     ],
-    "link_correlati": [ "ELE_007" ],
-    "parole_chiave": [ "capacità", "condensatore", "carica", "tensione", "farad", "elettrostatica", "C = Q/V" ],
-    "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "link_correlati": [],
+    "parole_chiave": ["circuitazione", "campo elettrico", "conservativo", "linea chiusa"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
   }
 ]
