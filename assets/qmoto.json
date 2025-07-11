@@ -1,0 +1,241 @@
+[
+  {
+    "id": "QDM_001",
+    "categoria": "Quantità di Moto",
+    "sottocategoria": "Definizioni Fondamentali",
+    "titolo": "Quantità di Moto",
+    "formula_latex": "\\vec{p} = m \\vec{v}",
+    "descrizione": "La quantità di moto $\\vec{p}$ di un corpo è una grandezza vettoriale che descrive il 'quantitativo di movimento' del corpo. Dipende dalla sua massa $m$ e dalla sua velocità $\\vec{v}$. La direzione di $\\vec{p}$ è la stessa di $\\vec{v}$.",
+    "variabili": [
+      { "simbolo": "$\\vec{p}$", "descrizione": "Quantità di moto, misurata in kilogrammi per metro al secondo", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$m$", "descrizione": "Massa del corpo, in chilogrammi", "unita": "kg" },
+      { "simbolo": "$\\vec{v}$", "descrizione": "Velocità del corpo, in metri al secondo", "unita": "m/s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un'auto di $1200 \\text{ kg}$ si muove a $20 \\text{ m/s}$. La sua quantità di moto è $p = 1200 \\text{ kg} \\cdot 20 \\text{ m/s} = 24000 \\text{ kg}\\cdot m/s$."
+      }
+    ],
+    "link_correlati": [ "QDM_002", "QDM_003" ],
+    "parole_chiave": [ "quantità di moto", "momento lineare", "massa", "velocità", "p = mv" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "QDM_002",
+    "categoria": "Quantità di Moto",
+    "sottocategoria": "Definizioni Fondamentali",
+    "titolo": "Quantità di Moto Totale di un Sistema",
+    "formula_latex": "\\vec{P}_{tot} = \\sum_{i} m_i \\vec{v}_i",
+    "descrizione": "La quantità di moto totale $\\vec{P}_{tot}$ di un sistema di corpi è la somma vettoriale delle quantità di moto individuali di tutti i corpi che compongono il sistema. Questo concetto è fondamentale per la conservazione della quantità di moto.",
+    "variabili": [
+      { "simbolo": "$\\vec{P}_{tot}$", "descrizione": "Quantità di moto totale del sistema, in kg\\cdot m/s", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$m_i$", "descrizione": "Massa dell'i-esimo corpo, in chilogrammi", "unita": "kg" },
+      { "simbolo": "$\\vec{v}_i$", "descrizione": "Velocità dell'i-esimo corpo, in metri al secondo", "unita": "m/s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due corpi si muovono sulla stessa linea: il primo di $2 \\text{ kg}$ a $3 \\text{ m/s}$ e il secondo di $4 \\text{ kg}$ a $-1 \\text{ m/s}$. La quantità di moto totale è $P_{tot} = (2 \\cdot 3) + (4 \\cdot -1) = 6 - 4 = 2 \\text{ kg}\\cdot m/s$."
+      }
+    ],
+    "link_correlati": [ "QDM_001", "QDM_005", "QDM_009" ],
+    "parole_chiave": [ "quantità di moto totale", "sistema di corpi", "somma vettoriale", "momento lineare totale" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "QDM_003",
+    "categoria": "Quantità di Moto",
+    "sottocategoria": "Impulso",
+    "titolo": "Impulso di una Forza Costante",
+    "formula_latex": "\\vec{I} = \\vec{F} \\Delta t",
+    "descrizione": "L'impulso $\\vec{I}$ di una forza costante $\\vec{F}$ è una grandezza vettoriale che misura l'effetto complessivo della forza che agisce per un intervallo di tempo $\\Delta t$. Ha la stessa direzione della forza.",
+    "variabili": [
+      { "simbolo": "$\\vec{I}$", "descrizione": "Impulso, misurato in Newton per secondo", "unita": "N\\cdot s" },
+      { "simbolo": "$\\vec{F}$", "descrizione": "Forza costante applicata, in Newton", "unita": "N" },
+      { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo durante il quale la forza agisce, in secondi", "unita": "s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una forza di $50 \\text{ N}$ agisce su un oggetto per $2 \\text{ s}$. L'impulso è $I = 50 \\text{ N} \\cdot 2 \\text{ s} = 100 \\text{ N}\\cdot s$."
+      }
+    ],
+    "link_correlati": [ "QDM_004", "ENE_001" ],
+    "parole_chiave": [ "impulso", "forza", "tempo", "N·s" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "QDM_004",
+    "categoria": "Quantità di Moto",
+    "sottocategoria": "Teoremi",
+    "titolo": "Teorema dell'Impulso e della Quantità di Moto",
+    "formula_latex": "\\vec{I}_{tot} = \\Delta \\vec{p} \\quad , \\quad \\vec{F}_{tot} \\Delta t = \\vec{p}_f - \\vec{p}_i",
+    "descrizione": "Il teorema dell'impulso afferma che l'impulso totale $\\vec{I}_{tot}$ applicato a un corpo è uguale alla variazione della sua quantità di moto $\\Delta \\vec{p}$. Questo teorema lega la dinamica (forza e tempo) alla quantità di moto (massa e velocità).",
+    "variabili": [
+      { "simbolo": "$\\vec{I}_{tot}$", "descrizione": "Impulso totale, in N\\cdot s", "unita": "N\\cdot s" },
+      { "simbolo": "$\\Delta \\vec{p}$", "descrizione": "Variazione della quantità di moto, in kg\\cdot m/s", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{F}_{tot}$", "descrizione": "Forza totale risultante, in Newton", "unita": "N" },
+      { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo, in secondi", "unita": "s" },
+      { "simbolo": "$\\vec{p}_f$", "descrizione": "Quantità di moto finale", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{p}_i$", "descrizione": "Quantità di moto iniziale", "unita": "kg\\cdot m/s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un oggetto di $2 \\text{ kg}$ passa da una velocità di $1 \\text{ m/s}$ a $5 \\text{ m/s}$. La variazione della quantità di moto è $\\Delta p = 2 \\cdot 5 - 2 \\cdot 1 = 8 \\text{ kg}\\cdot m/s$. L'impulso applicato è quindi $8 \\text{ N}\\cdot s$."
+      }
+    ],
+    "link_correlati": [ "QDM_001", "QDM_003" ],
+    "parole_chiave": [ "teorema impulso", "variazione quantità di moto", "forza media", "impulso e quantità di moto" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "QDM_005",
+    "categoria": "Quantità di Moto",
+    "sottocategoria": "Principi di Conservazione",
+    "titolo": "Conservazione della Quantità di Moto",
+    "formula_latex": "\\vec{P}_{tot, i} = \\vec{P}_{tot, f} \\quad , \\quad \\sum_{j} m_j \\vec{v}_{j,i} = \\sum_{j} m_j \\vec{v}_{j,f}",
+    "descrizione": "In un sistema isolato (dove non agiscono forze esterne nette), la quantità di moto totale del sistema si conserva. Questo significa che la quantità di moto totale prima di un'interazione (come un urto) è uguale alla quantità di moto totale dopo l'interazione.",
+    "variabili": [
+      { "simbolo": "$\\vec{P}_{tot, i}$", "descrizione": "Quantità di moto totale iniziale del sistema", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{P}_{tot, f}$", "descrizione": "Quantità di moto totale finale del sistema", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$m_j$", "descrizione": "Massa del j-esimo corpo", "unita": "kg" },
+      { "simbolo": "$\\vec{v}_{j,i}$", "descrizione": "Velocità iniziale del j-esimo corpo", "unita": "m/s" },
+      { "simbolo": "$\\vec{v}_{j,f}$", "descrizione": "Velocità finale del j-esimo corpo", "unita": "m/s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due pattinatori su ghiaccio, inizialmente fermi, si spingono a vicenda. Poiché le forze esterne (attrito) sono trascurabili, la quantità di moto totale del sistema (pattinatori) rimane zero."
+      }
+    ],
+    "link_correlati": [ "QDM_002", "QDM_006", "QDM_007", "QDM_008" ],
+    "parole_chiave": [ "conservazione quantità di moto", "sistema isolato", "urti", "momento lineare conservato" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "QDM_006",
+    "categoria": "Quantità di Moto",
+    "sottocategoria": "Urti",
+    "titolo": "Urto Elastico",
+    "formula_latex": "\\vec{P}_{tot, i} = \\vec{P}_{tot, f} \\quad , \\quad K_{tot, i} = K_{tot, f}",
+    "descrizione": "Un urto elastico è un tipo di collisione in cui sia la quantità di moto totale che l'energia cinetica totale del sistema si conservano. I corpi coinvolti rimbalzano senza deformazioni permanenti o perdite di energia interna.",
+    "variabili": [
+      { "simbolo": "$\\vec{P}_{tot, i}$", "descrizione": "Quantità di moto totale iniziale", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{P}_{tot, f}$", "descrizione": "Quantità di moto totale finale", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$K_{tot, i}$", "descrizione": "Energia cinetica totale iniziale", "unita": "J" },
+      { "simbolo": "$K_{tot, f}$", "descrizione": "Energia cinetica totale finale", "unita": "J" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "L'urto tra due palle da biliardo è un esempio che si avvicina molto a un urto elastico, dove le palle rimbalzano conservando la loro energia cinetica complessiva."
+      }
+    ],
+    "link_correlati": [ "QDM_005", "QDM_007", "ENE_002" ],
+    "parole_chiave": [ "urto elastico", "conservazione energia cinetica", "conservazione quantità di moto", "collisione senza perdita energia" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "QDM_007",
+    "categoria": "Quantità di Moto",
+    "sottocategoria": "Urti",
+    "titolo": "Urto Anaelastico",
+    "formula_latex": "\\vec{P}_{tot, i} = \\vec{P}_{tot, f} \\quad , \\quad K_{tot, i} \\neq K_{tot, f}",
+    "descrizione": "Un urto anaelastico è un tipo di collisione in cui la quantità di moto totale del sistema si conserva, ma l'energia cinetica totale no. Parte dell'energia cinetica viene convertita in altre forme, come calore, suono o deformazione. Negli urti completamente anaelastici, i corpi si uniscono e si muovono come un unico corpo dopo l'impatto.",
+    "variabili": [
+      { "simbolo": "$\\vec{P}_{tot, i}$", "descrizione": "Quantità di moto totale iniziale", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{P}_{tot, f}$", "descrizione": "Quantità di moto totale finale", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$K_{tot, i}$", "descrizione": "Energia cinetica totale iniziale", "unita": "J" },
+      { "simbolo": "$K_{tot, f}$", "descrizione": "Energia cinetica totale finale", "unita": "J" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un proiettile che si conficca in un blocco di legno e lo trascina è un esempio classico di urto completamente anaelastico. L'energia cinetica non si conserva (si perde sotto forma di calore e deformazione), ma la quantità di moto totale sì."
+      }
+    ],
+    "link_correlati": [ "QDM_005", "QDM_006", "QDM_008", "ENE_002" ],
+    "parole_chiave": [ "urto anaelastico", "conservazione quantità di moto", "perdita energia cinetica", "collisione con deformazione" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "QDM_008",
+    "categoria": "Quantità di Moto",
+    "sottocategoria": "Urti",
+    "titolo": "Urto Bidimensionale (Obliquo)",
+    "formula_latex": "\\vec{P}_{tot, i} = \\vec{P}_{tot, f} \\quad \\text{ (conservazione vettoriale)}",
+    "descrizione": "Negli urti bidimensionali (o obliqui), la conservazione della quantità di moto deve essere applicata vettorialmente, cioè separatamente per le componenti $x$ e $y$ della quantità di moto. Questo è vero per tutti i tipi di urto (elastici o anaelastici) in un sistema isolato.",
+    "variabili": [
+      { "simbolo": "$\\vec{P}_{tot, i}$", "descrizione": "Quantità di moto totale iniziale", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{P}_{tot, f}$", "descrizione": "Quantità di moto totale finale", "unita": "kg\\cdot m/s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due biglie che si scontrano su un tavolo da biliardo e deviano le loro traiettorie, conservando la quantità di moto lungo gli assi $x$ e $y$."
+      }
+    ],
+    "link_correlati": [ "QDM_005", "QDM_006", "QDM_007" ],
+    "parole_chiave": [ "urto obliquo", "urto bidimensionale", "conservazione vettoriale", "componenti di quantità di moto" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "QDM_009",
+    "categoria": "Quantità di Moto",
+    "sottocategoria": "Centro di Massa",
+    "titolo": "Posizione del Centro di Massa",
+    "formula_latex": "\\vec{r}_{CM} = \\frac{\\sum_{i} m_i \\vec{r}_i}{\\sum_{i} m_i} \\quad , \\quad \\vec{r}_{CM} = \\frac{\\sum_{i} m_i \\vec{r}_i}{M_{tot}}",
+    "descrizione": "Il centro di massa (CM) di un sistema è un punto immaginario che rappresenta la media pesata della posizione di tutte le masse che compongono il sistema. È il punto in cui, in assenza di forze esterne, si può considerare concentrata tutta la massa del sistema per analizzarne il moto traslatorio.",
+    "variabili": [
+      { "simbolo": "$\\vec{r}_{CM}$", "descrizione": "Vettore posizione del centro di massa", "unita": "m" },
+      { "simbolo": "$m_i$", "descrizione": "Massa dell'i-esimo corpo", "unita": "kg" },
+      { "simbolo": "$\\vec{r}_i$", "descrizione": "Vettore posizione dell'i-esimo corpo", "unita": "m" },
+      { "simbolo": "$M_{tot}$", "descrizione": "Massa totale del sistema", "unita": "kg" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due masse, $m_1 = 1 \\text{ kg}$ a $x_1 = 0 \\text{ m}$ e $m_2 = 3 \\text{ kg}$ a $x_2 = 4 \\text{ m}$. Il centro di massa è $x_{CM} = (1 \\cdot 0 + 3 \\cdot 4) / (1 + 3) = 12 / 4 = 3 \\text{ m}$."
+      }
+    ],
+    "link_correlati": [ "QDM_010", "QDM_002" ],
+    "parole_chiave": [ "centro di massa", "baricentro", "posizione media", "sistema di particelle" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "QDM_010",
+    "categoria": "Quantità di Moto",
+    "sottocategoria": "Centro di Massa",
+    "titolo": "Velocità del Centro di Massa di un Sistema",
+    "formula_latex": "\\vec{v}_{CM} = \\frac{\\sum_{i} m_i \\vec{v}_i}{\\sum_{i} m_i} \\quad , \\quad \\vec{v}_{CM} = \\frac{\\vec{P}_{tot}}{M_{tot}}",
+    "descrizione": "La velocità del centro di massa $\\vec{v}_{CM}$ di un sistema è la velocità con cui si muove il punto del centro di massa. È anche definita come la quantità di moto totale del sistema divisa per la massa totale del sistema. In assenza di forze esterne, la velocità del centro di massa rimane costante.",
+    "variabili": [
+      { "simbolo": "$\\vec{v}_{CM}$", "descrizione": "Velocità del centro di massa, in m/s", "unita": "m/s" },
+      { "simbolo": "$m_i$", "descrizione": "Massa dell'i-esimo corpo", "unita": "kg" },
+      { "simbolo": "$\\vec{v}_i$", "descrizione": "Velocità dell'i-esimo corpo", "unita": "m/s" },
+      { "simbolo": "$\\vec{P}_{tot}$", "descrizione": "Quantità di moto totale del sistema", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$M_{tot}$", "descrizione": "Massa totale del sistema", "unita": "kg" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due corpi: $m_1 = 2 \\text{ kg}$ con $\\vec{v}_1 = 3 \\text{ m/s}$ (asse x) e $m_2 = 4 \\text{ kg}$ con $\\vec{v}_2 = -1 \\text{ m/s}$ (asse x). La velocità del centro di massa è $v_{CM} = ((2 \\cdot 3) + (4 \\cdot -1)) / (2 + 4) = 0.33 \\text{ m/s}$."
+      }
+    ],
+    "link_correlati": [ "QDM_002", "QDM_005", "QDM_009" ],
+    "parole_chiave": [ "velocità centro di massa", "moto del sistema", "quantità di moto totale", "massa totale" ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  }
+]
