@@ -12,6 +12,7 @@ import 'package:physics_ease_release/pages/tools_page.dart';
 import 'package:physics_ease_release/pages/data_page.dart';
 import 'package:physics_ease_release/pages/help_page.dart';
 import 'package:physics_ease_release/pages/info_page.dart';
+import 'package:physics_ease_release/pages/collaborate_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -194,7 +195,7 @@ class _MyAppState extends State<MyApp> {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
       _themeMode = (_themeMode == ThemeMode.light) ? ThemeMode.dark : ThemeMode.light;
-      // Salva la preferenza del tema
+
       prefs.setString('themeMode', _themeMode == ThemeMode.dark ? 'dark' : 'light');
       developer.log('Tema cambiato in: $_themeMode. Salvato in SharedPreferences.');
       _updateTabPages();
@@ -310,6 +311,19 @@ class _MyAppState extends State<MyApp> {
                     Navigator.of(builderContext, rootNavigator: true).push(
                       MaterialPageRoute(
                         builder: (innerContext) => HelpPage(themeMode: _themeMode),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.handshake, color: currentColorScheme.primary),
+                  title: const Text('Collabora'),
+                  onTap: () {
+                    FocusScope.of(builderContext).unfocus();
+                    Navigator.of(builderContext).pop();
+                    Navigator.of(builderContext, rootNavigator: true).push(
+                      MaterialPageRoute(
+                        builder: (innerContext) => CollaboratePage(themeMode: _themeMode),
                       ),
                     );
                   },
