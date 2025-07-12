@@ -67,21 +67,18 @@ class InfoPage extends StatelessWidget {
               child: ListTile(
                 leading: Icon(Icons.email, color: iconColor),
                 title: Text('Invia un\'Email', style: textTheme.titleMedium?.copyWith(color: textColor)),
-                subtitle: Text('malatech.dev@gmail.com', style: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurfaceVariant)),
+                subtitle: Text('lmala06.tech@gmail.com', style: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurfaceVariant)),
                 trailing: Icon(Icons.arrow_forward_ios, size: 16, color: colorScheme.onSurfaceVariant),
                 onTap: () async {
-                  final Uri emailLaunchUri = Uri(
-                    scheme: 'mailto',
-                    path: 'malatech.dev@gmail.com',
-                    queryParameters: {
-                      'subject': 'Supporto PhysicEase: [Il tuo Messaggio]',
-                    },
+                  final Uri emailLaunchUri = Uri.parse(
+                    'mailto:lmala06.tech@gmail.com?subject=Supporto PhysicEase: [Il tuo Messaggio]',
                   );
+
                   if (await canLaunchUrl(emailLaunchUri)) {
                     await launchUrl(emailLaunchUri);
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Impossibile aprire l\'applicazione email. Copia l\'indirizzo: malatech.dev@gmail.com')),
+                      const SnackBar(content: Text('Impossibile aprire l\'applicazione email. Copia l\'indirizzo: lmala06.tech@gmail.com')),
                     );
                   }
                 },

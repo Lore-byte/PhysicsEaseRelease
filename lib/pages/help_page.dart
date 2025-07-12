@@ -78,7 +78,7 @@ class HelpPage extends StatelessWidget {
               cardColor,
               iconColor,
               Icons.build,
-              'Strumenti Utili (Tools)',
+              'Strumenti Utili',
               'La sezione "Tools" mette a tua disposizione strumenti interattivi come la possibilità di aggiungere le tue formule personalizzate, un convertitore di unità e un potente risolutore di equazioni.',
             ),
 
