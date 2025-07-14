@@ -1,6 +1,6 @@
 [
   {
-    "id": "MAG_001",
+    "id": "ELT_001",
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Magnetismo",
     "titolo": "Forza di Lorentz (su carica in movimento)",
@@ -25,7 +25,7 @@
     "data_ultima_modifica": "2025-07-06"
   },
   {
-    "id": "MAG_002",
+    "id": "ELT_002",
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Magnetismo",
     "titolo": "Forza magnetica su un filo percorso da corrente",
@@ -46,30 +46,6 @@
     ],
     "link_correlati": [ "MAG_001" ],
     "parole_chiave": [ "forza magnetica", "filo", "corrente", "campo magnetico", "elettromagnetismo" ],
-    "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
-  },
-  {
-    "id": "MAG_003",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Magnetismo",
-    "titolo": "Campo magnetico generato da un filo rettilineo infinito",
-    "formula_latex": "B = \\frac{\\mu_0 I}{2\\pi r}",
-    "descrizione": "Questa formula calcola l'intensità del campo magnetico $B$ generato da un filo conduttore rettilineo molto lungo percorso da corrente $I$, a una distanza $r$ dal filo. $\\mu_0$ è la permeabilità magnetica nel vuoto ($4\\pi \\times 10^{-7} \\text{ T} \\cdot \\text{m/A}$).",
-    "variabili": [
-      { "simbolo": "$B$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica nel vuoto", "unita": "T·m/A" },
-      { "simbolo": "$I$", "descrizione": "Corrente elettrica nel filo", "unita": "A" },
-      { "simbolo": "$r$", "descrizione": "Distanza dal filo", "unita": "m" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Calcola il campo magnetico a $0.01 \\text{ m}$ da un filo percorso da $10 \\text{ A}$. Usando $\\mu_0 = 4\\pi \\times 10^{-7} \\text{ T} \\cdot \\text{m/A}$, otteniamo $B = \\frac{(4\\pi \\times 10^{-7}) \\cdot 10}{2\\pi \\cdot 0.01} = 2 \\times 10^{-4} \\text{ T}$."
-      }
-    ],
-    "link_correlati": [],
-    "parole_chiave": [ "campo magnetico", "filo", "corrente", "Ampere", "Legge di Ampere", "elettromagnetismo" ],
     "data_creazione": "2025-06-03",
     "data_ultima_modifica": "2025-07-06"
   },
