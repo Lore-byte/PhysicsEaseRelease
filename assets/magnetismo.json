@@ -7,10 +7,10 @@
     "formula_latex": "\\oint_L \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{inc}",
     "descrizione": "La legge di Ampère stabilisce che la circuitazione del campo magnetico $\\vec{B}$ lungo una linea chiusa $L$ è proporzionale alla corrente totale $I_{inc}$ concatenata con la linea. $\\mu_0$ è la permeabilità magnetica del vuoto.",
     "variabili": [
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T (Tesla)" },
+      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" },
       { "simbolo": "$d\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza", "unita": "m" },
       { "simbolo": "$I_{inc}$", "descrizione": "Corrente concatenata", "unita": "A" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" }
+      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" }
     ],
     "esempi": [
       {
@@ -32,14 +32,14 @@
     "descrizione": "Il modulo del campo magnetico $B$ generato da un filo rettilineo infinito percorso da corrente $I$, a una distanza $r$ dal filo. Il campo forma cerchi concentrici attorno al filo.",
     "variabili": [
       { "simbolo": "$B$", "descrizione": "Modulo del campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" },
+      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
       { "simbolo": "$I$", "descrizione": "Corrente nel filo", "unita": "A" },
       { "simbolo": "$r$", "descrizione": "Distanza dal filo", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un filo percorso da $5 A$ genera un campo magnetico a $0.01 m$ di distanza pari a $B = \\frac{(4\\pi \\times 10^{-7} N/A^2) \\cdot 5 A}{2\\pi \\cdot 0.01 m} = 10^{-4} T$."
+        "testo": "Un filo percorso da $5 \\text{ A}$ genera un campo magnetico a $0.01 \\text{ m}$ di distanza pari a $B = \\frac{(4\\pi \\times 10^{-7} \\text{ N/A}^2) \\cdot 5 \\text{ A}}{2\\pi \\cdot 0.01 \\text{ m}} = 10^{-4} \\text{ T}$."
       }
     ],
     "link_correlati": [],
@@ -56,7 +56,7 @@
     "descrizione": "La legge di Biot-Savart descrive il campo magnetico infinitesimo $d\\vec{B}$ generato da un tratto di filo infinitesimo $d\\vec{l}$ percorso da corrente $I$, a una distanza $r$ dal tratto. $\\hat{r}$ è il versore dalla sorgente al punto di osservazione.",
     "variabili": [
       { "simbolo": "$d\\vec{B}$", "descrizione": "Elemento infinitesimo di campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" },
+      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
       { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
       { "simbolo": "$d\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza del filo", "unita": "m" },
       { "simbolo": "$r$", "descrizione": "Distanza dal tratto di filo al punto", "unita": "m" },
@@ -82,14 +82,14 @@
     "descrizione": "Il modulo del campo magnetico $B$ al centro di una spira circolare di raggio $R$ percorsa da corrente $I$. Il campo è perpendicolare al piano della spira.",
     "variabili": [
       { "simbolo": "$B$", "descrizione": "Modulo del campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" },
+      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
       { "simbolo": "$I$", "descrizione": "Corrente nella spira", "unita": "A" },
       { "simbolo": "$R$", "descrizione": "Raggio della spira", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una spira con raggio $0.05 m$ percorsa da $2 A$ genera un campo al centro di $B = \\frac{(4\\pi \\times 10^{-7} N/A^2) \\cdot 2 A}{2 \\cdot 0.05 m} \\approx 2.51 \\times 10^{-5} T$."
+        "testo": "Una spira con raggio $0.05 \\text{ m}$ percorsa da $2 \\text{ A}$ genera un campo al centro di $B = \\frac{(4\\pi \\times 10^{-7} \\text{ N/A}^2) \\cdot 2 \\text{ A}}{2 \\cdot 0.05 \\text{ m}} \\approx 2.51 \\times 10^{-5} \\text{ T}$."
       }
     ],
     "link_correlati": [],
@@ -106,14 +106,14 @@
     "descrizione": "Il modulo del campo magnetico $B$ all'interno di un solenoide ideale (molto lungo e con spire molto vicine) è uniforme e diretto lungo l'asse del solenoide. $n$ è il numero di spire per unità di lunghezza e $I$ è la corrente.",
     "variabili": [
       { "simbolo": "$B$", "descrizione": "Modulo del campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" },
-      { "simbolo": "$n$", "descrizione": "Numero di spire per unità di lunghezza", "unita": "m^{-1}" },
+      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
+      { "simbolo": "$n$", "descrizione": "Numero di spire per unità di lunghezza", "unita": "m⁻¹" },
       { "simbolo": "$I$", "descrizione": "Corrente nel solenoide", "unita": "A" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un solenoide con $1000$ spire/m percorso da $0.5 A$ genera un campo di $B = (4\\pi \\times 10^{-7} N/A^2) \\cdot (1000 m^{-1}) \\cdot 0.5 A \\approx 6.28 \\times 10^{-4} T$."
+        "testo": "Un solenoide con $1000 \\text{ spire/m}$ percorso da $0.5 \\text{ A}$ genera un campo di $B = (4\\pi \\times 10^{-7} \\text{ N/A}^2) \\cdot (1000 \\text{ m}^{-1}) \\cdot 0.5 \\text{ A} \\approx 6.28 \\times 10^{-4} \\text{ T}$."
       }
     ],
     "link_correlati": [],
@@ -137,7 +137,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un filo di $0.1 m$ percorso da $2 A$ in un campo magnetico di $0.5 T$ perpendicolare al filo subisce una forza di $F = 2 A \\cdot 0.1 m \\cdot 0.5 T = 0.1 N$."
+        "testo": "Un filo di $0.1 \\text{ m}$ percorso da $2 \\text{ A}$ in un campo magnetico di $0.5 \\text{ T}$ perpendicolare al filo subisce una forza di $F = 2 \\text{ A} * 0.1 \\text{ m} * 0.5 \\text{ T} = 0.1 \\text{ N}$."
       }
     ],
     "link_correlati": [],
@@ -162,7 +162,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un protone ($q = 1.6 \\times 10^{-19} C$) che si muove a $10^6 m/s$ perpendicolarmente a un campo magnetico di $0.1 T$ subisce una forza di $F = (1.6 \\times 10^{-19} C) \\cdot (10^6 m/s) \\cdot (0.1 T) = 1.6 \\times 10^{-14} N$."
+        "testo": "Un protone ($q = 1.6 \\times 10^{-19} \\text{ C}$) che si muove a $10^6 \\text{ m/s}$ perpendicolarmente a un campo magnetico di $0.1 \\text{ T}$ subisce una forza di $F = (1.6 \\times 10^{-19} \\text{ C}) * (10^6 \\text{ m/s}) * (0.1 \\text{ T}) = 1.6 \\times 10^{-14} \\text{ N}$."
       }
     ],
     "link_correlati": [],
@@ -187,7 +187,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un elettrone ($m = 9.11 \\times 10^{-31} kg$, $|q| = 1.6 \\times 10^{-19} C$) con velocità di $10^7 m/s$ in un campo di $0.05 T$ si muove su un cerchio di raggio $r = \\frac{(9.11 \\times 10^{-31}) \\cdot 10^7}{(1.6 \\times 10^{-19}) \\cdot 0.05} \\approx 0.0114 m$."
+        "testo": "Un elettrone ($m = 9.11 \\times 10^{-31} \\text{ kg}$, $|q| = 1.6 \\times 10^{-19} \\text{ C}$) con velocità di $10^7 \\text{ m/s}$ in un campo di $0.05 \\text{ T}$ si muove su un cerchio di raggio $r = \\frac{(9.11 \\times 10^{-31}) \\cdot 10^7}{(1.6 \\times 10^{-19}) \\cdot 0.05} \\approx 0.0114 \\text{ m}$."
       }
     ],
     "link_correlati": [],
@@ -231,7 +231,7 @@
       { "simbolo": "$\\Delta V_H$", "descrizione": "Tensione di Hall", "unita": "V" },
       { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
       { "simbolo": "$B$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$n$", "descrizione": "Densità dei portatori di carica", "unita": "m^{-3}" },
+      { "simbolo": "$n$", "descrizione": "Densità dei portatori di carica", "unita": "m⁻³" },
       { "simbolo": "$e$", "descrizione": "Carica elementare", "unita": "C" },
       { "simbolo": "$d$", "descrizione": "Spessore del conduttore", "unita": "m" }
     ],
@@ -255,7 +255,7 @@
     "descrizione": "Il teorema di Gauss per il campo magnetico afferma che il flusso magnetico totale attraverso qualsiasi superficie chiusa $S$ è sempre zero. Questo implica che non esistono monopoli magnetici isolati (i poli nord e sud esistono sempre in coppia).",
     "variabili": [
       { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$d\\vec{A}$", "descrizione": "Vettore infinitesimo di area", "unita": "m^2" }
+      { "simbolo": "$d\\vec{A}$", "descrizione": "Vettore infinitesimo di area", "unita": "m²" }
     ],
     "esempi": [
       {
@@ -278,10 +278,10 @@
     "variabili": [
       { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" },
       { "simbolo": "$d\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza", "unita": "m" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" },
+      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
       { "simbolo": "$I_{inc}$", "descrizione": "Corrente di conduzione concatenata", "unita": "A" },
       { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
-      { "simbolo": "$\\frac{d\\Phi_E}{dt}$", "descrizione": "Tasso di variazione del flusso elettrico", "unita": "V \\cdot m" }
+      { "simbolo": "$\\frac{d\\Phi_E}{dt}$", "descrizione": "Tasso di variazione del flusso elettrico", "unita": "V * m/s" }
     ],
     "esempi": [
       {
@@ -302,10 +302,10 @@
     "formula_latex": "\\nabla \\times \\vec{B} = \\mu_0 \\vec{J}",
     "descrizione": "La forma differenziale del teorema di Ampère (senza corrente di spostamento) mette in relazione il rotore del campo magnetico $\\vec{B}$ con la densità di corrente $\\vec{J}$.",
     "variabili": [
-      { "simbolo": "$\\nabla \\times$", "descrizione": "Operatore rotore", "unita": "m^{-1}" },
+      { "simbolo": "$\\nabla \\times$", "descrizione": "Operatore rotore", "unita": "m⁻¹" },
       { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" },
-      { "simbolo": "$\\vec{J}$", "descrizione": "Densità di corrente", "unita": "A/m^2" }
+      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
+      { "simbolo": "$\\vec{J}$", "descrizione": "Densità di corrente", "unita": "A/m²" }
     ],
     "esempi": [
       {
@@ -326,8 +326,8 @@
     "formula_latex": "\\vec{\\tau} = \\vec{\\mu} \\times \\vec{B}",
     "descrizione": "Il momento della forza magnetica $\\vec{\\tau}$ che agisce su una spira di corrente con momento magnetico $\\vec{\\mu}$ immersa in un campo magnetico $\\vec{B}$. Questo momento tende ad allineare il momento magnetico della spira con il campo esterno.",
     "variabili": [
-      { "simbolo": "$\\vec{\\tau}$", "descrizione": "Momento della forza", "unita": "N \\cdot m" },
-      { "simbolo": "$\\vec{\\mu}$", "descrizione": "Momento magnetico della spira", "unita": "A \\cdot m^2" },
+      { "simbolo": "$\\vec{\\tau}$", "descrizione": "Momento della forza", "unita": "N * m" },
+      { "simbolo": "$\\vec{\\mu}$", "descrizione": "Momento magnetico della spira", "unita": "A * m²" },
       { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico esterno", "unita": "T" }
     ],
     "esempi": [
@@ -349,15 +349,15 @@
     "formula_latex": "\\vec{\\mu} = I A \\hat{n}",
     "descrizione": "Il momento magnetico $\\vec{\\mu}$ di una spira piana percorsa da corrente $I$ e con area $A$. La direzione del vettore $\\hat{n}$ è perpendicolare al piano della spira, con il verso dato dalla regola della mano destra rispetto al senso della corrente.",
     "variabili": [
-      { "simbolo": "$\\vec{\\mu}$", "descrizione": "Momento magnetico della spira", "unita": "A \\cdot m^2" },
+      { "simbolo": "$\\vec{\\mu}$", "descrizione": "Momento magnetico della spira", "unita": "A * m²" },
       { "simbolo": "$I$", "descrizione": "Corrente nella spira", "unita": "A" },
-      { "simbolo": "$A$", "descrizione": "Area della spira", "unita": "m^2" },
+      { "simbolo": "$A$", "descrizione": "Area della spira", "unita": "m²" },
       { "simbolo": "$\\hat{n}$", "descrizione": "Versore normale alla superficie della spira", "unita": "" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una spira di $0.01 m^2$ percorsa da $0.1 A$ ha un momento magnetico di $\\mu = 0.1 A \\cdot 0.01 m^2 = 0.001 A \\cdot m^2$."
+        "testo": "Una spira di $0.01 \\text{ m}^2$ percorsa da $0.1 \\text{ A}$ ha un momento magnetico di $\\mu = 0.1 \\text{ A} * 0.01 \\text{ m}^2 = 0.001 \\text{ A} * \\text{m}^2$."
       }
     ],
     "link_correlati": [],
@@ -374,8 +374,8 @@
     "descrizione": "La permeabilità magnetica relativa $\\mu_r$ di un materiale è il rapporto tra la permeabilità magnetica del materiale $\\mu$ e la permeabilità magnetica del vuoto $\\mu_0$. Indica quanto un materiale intensifica o attenua un campo magnetico.",
     "variabili": [
       { "simbolo": "$\\mu_r$", "descrizione": "Permeabilità magnetica relativa", "unita": "" },
-      { "simbolo": "$\\mu$", "descrizione": "Permeabilità magnetica del materiale", "unita": "N/A^2" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" }
+      { "simbolo": "$\\mu$", "descrizione": "Permeabilità magnetica del materiale", "unita": "N/A²" },
+      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" }
     ],
     "esempi": [
       {
