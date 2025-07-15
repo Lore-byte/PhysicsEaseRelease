@@ -22,7 +22,8 @@ class FormulaService {
         'assets/circuiti.json',
         'assets/magnetismo.json',
         'assets/relativita.json',
-        'assets/fisicaquantistica.json'
+        'assets/fisicaquantistica.json',
+        'assets/fisicanucleare.json'
       ];
 
       var allLoadedFormulas = <Formula>[];

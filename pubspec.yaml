@@ -79,6 +79,7 @@ flutter:
     - assets/magnetismo.json
     - assets/relativita.json
     - assets/fisicaquantistica.json
+    - assets/fisicanucleare.json
     - assets/my_logo.png
 
   # The following line ensures that the Material Icons font is
