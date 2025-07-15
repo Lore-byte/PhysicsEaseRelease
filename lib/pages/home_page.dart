@@ -48,6 +48,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     'Circuiti Elettrici': Icons.electrical_services_rounded,
     'Magnetismo': Icons.explore,
     'Relatività': Icons.access_time,
+    'Fisica Quantistica': Icons.blur_circular,
     'Personalizzate': Icons.person_add_alt_1,
   };
 

@@ -66,7 +66,7 @@
     "categoria": "Relatività",
     "sottocategoria": "Trasformazioni di Lorentz",
     "titolo": "Trasformazioni di Lorentz",
-    "formula_latex": "\\begin{aligned} \\left\\{ \\begin{aligned} x' &= \\gamma (x - vt) \\\\ y' &= y \\\\ z' &= z \\\\ t' &= \\gamma \\left(t - \\frac{vx}{c^2}\\right) \\end{aligned} \\right. \\\\ \\left\\{ \\begin{aligned} x &= \\gamma (x' + vt') \\\\ y &= y' \\\\ z &= z' \\\\ t &= \\gamma \\left(t' + \\frac{vx'}{c^2}\\right) \\end{aligned} \\right. \\end{aligned}",
+    "formula_latex": "\\begin{aligned} \\left\\{ \\begin{aligned} x' &= \\gamma (x - vt) \\\\ y' &= y \\\\ z' &= z \\\\ t' &= \\gamma \\left(t - \\frac{vx}{c^2}\\right) \\end{aligned} \\right. \\\\[1ex] \\left\\{ \\begin{aligned} x &= \\gamma (x' + vt') \\\\ y &= y' \\\\ z &= z' \\\\ t &= \\gamma \\left(t' + \\frac{vx'}{c^2}\\right) \\end{aligned} \\right. \\end{aligned}",
     "descrizione": "Le trasformazioni di Lorentz permettono di passare dalle coordinate spazio-temporali di un evento misurato in un sistema di riferimento inerziale S a quelle misurate in un altro sistema S' che si muove con velocità costante $v$ rispetto al primo. Queste trasformazioni preservano l’invarianza della velocità della luce.",
     "variabili": [
       { "simbolo": "$x, t$", "descrizione": "Coordinate in S", "unita": "m, s" },
@@ -141,7 +141,7 @@
     "categoria": "Relatività",
     "sottocategoria": "Effetti relativistici",
     "titolo": "Effetto Doppler Relativistico",
-    "formula_latex": "\\begin{aligned} f = f_0 \\sqrt{\\frac{1 - v/c}{1 + v/c}} \\\\ f = f_0 \\sqrt{\\frac{1 + v/c}{1 - v/c}} \\end{aligned}",
+    "formula_latex": "\\begin{aligned} f &= f_0 \\sqrt{\\frac{1 - v/c}{1 + v/c}} \\\\ f &= f_0 \\sqrt{\\frac{1 + v/c}{1 - v/c}} \\end{aligned}",
     "descrizione": "L'effetto Doppler relativistico descrive come varia la frequenza di un'onda (ad esempio luminosa) percepita da un osservatore quando la sorgente si muove rispetto a lui.\n\nSe la sorgente si **avvicina**, la frequenza osservata aumenta (spostamento verso il blu).\nSe la sorgente si **allontana**, la frequenza osservata diminuisce (spostamento verso il rosso, o **redshift**).\n\nIl redshift è un fenomeno osservato ad esempio nella luce proveniente da galassie lontane, che si allontanano da noi a causa dell'espansione dell’universo.",
     "variabili": [
       { "simbolo": "$f$", "descrizione": "Frequenza osservata", "unita": "Hz" },
@@ -259,7 +259,7 @@
     "categoria": "Relatività",
     "sottocategoria": "Trasformazioni",
     "titolo": "Trasformazioni per Energia e Quantità di Moto",
-    "formula_latex": "\\begin{aligned} E' &= \\gamma (E - vp_x) \\\\ p_x' &= \\gamma (p_x - \\frac{vE}{c^2}) \\\\ p_y' &= p_y \\\\ p_z' &= p_z \\end{aligned}",
+    "formula_latex": "\\begin{aligned} E' &= \\gamma (E - vp_x) \\\\ p'_x &= \\gamma \\left(p_x - \\frac{vE}{c^2}\\right) \\\\ p'_y &= p_y \\\\ p'_z &= p_z \\end{aligned}",
     "descrizione": "Queste equazioni permettono di trasformare l'energia e le componenti della quantità di moto tra due sistemi di riferimento inerziali in moto relativo lungo l'asse x.",
     "variabili": [
       { "simbolo": "$E, E'$", "descrizione": "Energia totale nei sistemi S e S'", "unita": "J" },
