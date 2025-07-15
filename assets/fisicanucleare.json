@@ -1,0 +1,254 @@
+[
+  {
+    "id": "NUC_001",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Nucleo Atomico",
+    "titolo": "Difetto di Massa",
+    "formula_latex": "\\Delta m = Z m_p + N m_n - m_{\\text{nucleo}}",
+    "descrizione": "La differenza tra la massa totale dei nucleoni separati (Z protoni e N neutroni) e la massa effettiva del nucleo.",
+    "variabili": [
+      { "simbolo": "$\\Delta m$", "descrizione": "Difetto di massa", "unita": "kg" },
+      { "simbolo": "$Z$", "descrizione": "Numero di protoni", "unita": "" },
+      { "simbolo": "$m_p$", "descrizione": "Massa del protone", "unita": "kg" },
+      { "simbolo": "$N$", "descrizione": "Numero di neutroni", "unita": "" },
+      { "simbolo": "$m_n$", "descrizione": "Massa del neutrone", "unita": "kg" },
+      { "simbolo": "$m_{\\text{nucleo}}$", "descrizione": "Massa del nucleo", "unita": "kg" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_002"],
+    "parole_chiave": ["difetto di massa","massa nucleare","legame nucleare"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  },
+  {
+    "id": "NUC_002",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Energia Nucleare",
+    "titolo": "Energia di Legame Nucleare",
+    "formula_latex": "E_b = \\Delta m \\; c^2",
+    "descrizione": "L’energia necessaria per separare completamente tutti i nucleoni del nucleo, pari alla massa mancante moltiplicata per c².",
+    "variabili": [
+      { "simbolo": "$E_b$", "descrizione": "Energia di legame", "unita": "J" },
+      { "simbolo": "$\\Delta m$", "descrizione": "Difetto di massa", "unita": "kg" },
+      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_001"],
+    "parole_chiave": ["energia di legame","difetto di massa","c²"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  },
+  {
+    "id": "NUC_003",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Decadimento Radioattivo",
+    "titolo": "Decadimento α (Alpha)",
+    "formula_latex":
+    "^{A}_{Z}X \\to ^{A-4}_{Z-2}Y + ^{4}_{2}\\mathrm{He} + Q",
+    "descrizione": "Emissione di una particella α (nucleo di elio-4) da un nucleo instabile, con rilascio di energia Q.",
+    "variabili": [
+      { "simbolo": "$^{A}_{Z}X$", "descrizione": "Nucleo padre", "unita": "" },
+      { "simbolo": "$^{A-4}_{Z-2}Y$", "descrizione": "Nucleo figlio", "unita": "" },
+      { "simbolo": "$^4_2\\mathrm{He}$", "descrizione": "Particella α", "unita": "" },
+      { "simbolo": "$Q$", "descrizione": "Energia rilasciata", "unita": "J" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_004","NUC_005","NUC_006"],
+    "parole_chiave": ["alpha","decadimento","radioattivo","He"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  },
+  {
+    "id": "NUC_004",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Decadimento Radioattivo",
+    "titolo": "Decadimento β⁻ (Beta Meno)",
+    "formula_latex":
+    "n \\to p + e^{-} + \\bar\\nu_e + Q",
+    "descrizione": "Un neutrone si trasforma in protone emettendo un elettrone e un antineutrino elettronico.",
+    "variabili": [
+      { "simbolo": "$n$", "descrizione": "Neutrone", "unita": "" },
+      { "simbolo": "$p$", "descrizione": "Protone", "unita": "" },
+      { "simbolo": "$e^{-}$", "descrizione": "Elettrone", "unita": "" },
+      { "simbolo": "$\\bar\\nu_e$", "descrizione": "Antineutrino elettronico", "unita": "" },
+      { "simbolo": "$Q$", "descrizione": "Energia di decadimento", "unita": "J" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_003","NUC_005","NUC_006"],
+    "parole_chiave": ["beta meno","elettrone","neutrino","decadimento"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  },
+  {
+    "id": "NUC_005",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Decadimento Radioattivo",
+    "titolo": "Decadimento β⁺ (Beta Più)",
+    "formula_latex":
+    "p \\to n + e^{+} + \\nu_e + Q",
+    "descrizione": "Un protone si trasforma in neutrone emettendo un positrone e un neutrino elettronico.",
+    "variabili": [
+      { "simbolo": "$p$", "descrizione": "Protone", "unita": "" },
+      { "simbolo": "$n$", "descrizione": "Neutrone", "unita": "" },
+      { "simbolo": "$e^{+}$", "descrizione": "Positrone", "unita": "" },
+      { "simbolo": "$\\nu_e$", "descrizione": "Neutrino elettronico", "unita": "" },
+      { "simbolo": "$Q$", "descrizione": "Energia di decadimento", "unita": "J" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_003","NUC_004","NUC_006"],
+    "parole_chiave": ["beta più","positrone","neutrino","decadimento"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  },
+  {
+    "id": "NUC_006",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Decadimento Radioattivo",
+    "titolo": "Emissione γ (Gamma)",
+    "formula_latex":
+    "^{A}_{Z}X^{*} \\to ^{A}_{Z}X + \\gamma + Q",
+    "descrizione": "Transizione di un nucleo da uno stato eccitato X* allo stato fondamentale X con emissione di fotone γ.",
+    "variabili": [
+      { "simbolo": "$^{A}_{Z}X^{*}$", "descrizione": "Nucleo eccitato", "unita": "" },
+      { "simbolo": "$^{A}_{Z}X$", "descrizione": "Nucleo a stato fondamentale", "unita": "" },
+      { "simbolo": "$\\gamma$", "descrizione": "Fotone gamma", "unita": "" },
+      { "simbolo": "$Q$", "descrizione": "Energia emessa", "unita": "J" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_003","NUC_004","NUC_005"],
+    "parole_chiave": ["gamma","fotone","decadimento","raggi γ"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  },
+  {
+    "id": "NUC_007",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Decadimento Radioattivo",
+    "titolo": "Legge del Decadimento Radioattivo",
+    "formula_latex": "N(t) = N_0 e^{-\\lambda t}",
+    "descrizione": "Descrive come il numero di nuclei radioattivi diminuisce esponenzialmente nel tempo con costante di decadimento λ.",
+    "variabili": [
+      { "simbolo": "$N(t)$", "descrizione": "Nuclei rimanenti a tempo t", "unita": "" },
+      { "simbolo": "$N_0$", "descrizione": "Nuclei iniziali a t=0", "unita": "" },
+      { "simbolo": "$\\lambda$", "descrizione": "Costante di decadimento", "unita": "s^{-1}" },
+      { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_008","NUC_009"],
+    "parole_chiave": ["decadimento","esponenziale","costante λ"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  },
+  {
+    "id": "NUC_008",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Decadimento Radioattivo",
+    "titolo": "Periodo di Dimezzamento",
+    "formula_latex": "t_{1/2} = \\frac{\\ln 2}{\\lambda}",
+    "descrizione": "Tempo necessario affinché la metà dei nuclei radioattivi di un campione decada.",
+    "variabili": [
+      { "simbolo": "$t_{1/2}$", "descrizione": "Periodo di dimezzamento", "unita": "s" },
+      { "simbolo": "$\\ln 2$", "descrizione": "Logaritmo naturale di 2", "unita": "" },
+      { "simbolo": "$\\lambda$", "descrizione": "Costante di decadimento", "unita": "s^{-1}" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_007","NUC_009"],
+    "parole_chiave": ["half-life","dimezzamento","λ"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  },
+  {
+    "id": "NUC_009",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Decadimento Radioattivo",
+    "titolo": "Attività di un Campione Radioattivo",
+    "formula_latex": "A = \\lambda N",
+    "descrizione": "Numero di decays al secondo, proporzionale al numero di nuclei residui N e alla costante λ.",
+    "variabili": [
+      { "simbolo": "$A$", "descrizione": "Attività", "unita": "Bq" },
+      { "simbolo": "$\\lambda$", "descrizione": "Costante di decadimento", "unita": "s^{-1}" },
+      { "simbolo": "$N$", "descrizione": "Nuclei rimanenti", "unita": "" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_007","NUC_008"],
+    "parole_chiave": ["attività","becquerel","decadimento"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  },
+  {
+    "id": "NUC_010",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Dosimetria",
+    "titolo": "Dose Assorbita",
+    "formula_latex": "D = \\frac{E_{\\text{assorbita}}}{m}",
+    "descrizione": "Energia assorbita per unità di massa di tessuto o materiale irradiato.",
+    "variabili": [
+      { "simbolo": "$D$", "descrizione": "Dose assorbita", "unita": "Gy" },
+      { "simbolo": "$E_{\\text{assorbita}}$", "descrizione": "Energia assorbita", "unita": "J" },
+      { "simbolo": "$m$", "descrizione": "Massa del bersaglio", "unita": "kg" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_011"],
+    "parole_chiave": ["dose","Gray","energia assorbita"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  },
+  {
+    "id": "NUC_011",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Dosimetria",
+    "titolo": "Dose Equivalente",
+    "formula_latex": "H = D \\times w_R",
+    "descrizione": "Dose assorbita corretta dal fattore di qualità w_R della radiazione, per valutare l’effetto biologico.",
+    "variabili": [
+      { "simbolo": "$H$", "descrizione": "Dose equivalente", "unita": "Sv" },
+      { "simbolo": "$D$", "descrizione": "Dose assorbita", "unita": "Gy" },
+      { "simbolo": "$w_R$", "descrizione": "Fattore di qualità della radiazione", "unita": "" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_010"],
+    "parole_chiave": ["sievert","qualità","dose biologica"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  },
+  {
+    "id": "NUC_012",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Reazioni Nucleari",
+    "titolo": "Fissione Nucleare",
+    "formula_latex": "{}^{A}_{Z}X + n \\to \\sum_i {}^{A_i}_{Z_i}Y_i + \\nu\\,n + Q",
+    "descrizione": "Scissione di un nucleo pesante in frammenti più leggeri con emissione di neutroni e rilascio di energia Q.",
+    "variabili": [
+      { "simbolo": "$^{A}_{Z}X$", "descrizione": "Nucleo fissile", "unita": "" },
+      { "simbolo": "$n$", "descrizione": "Neutrone incidente", "unita": "" },
+      { "simbolo": "$^{A_i}_{Z_i}Y_i$", "descrizione": "Frammenti di fissione", "unita": "" },
+      { "simbolo": "$\\nu$", "descrizione": "Numero di neutroni emessi", "unita": "" },
+      { "simbolo": "$Q$", "descrizione": "Energia rilasciata", "unita": "J" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_013"],
+    "parole_chiave": ["fissione","reaktore","energia nucleare"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  },
+  {
+    "id": "NUC_013",
+    "categoria": "Fisica Nucleare",
+    "sottocategoria": "Reazioni Nucleari",
+    "titolo": "Fusione Nucleare",
+    "formula_latex": "\\begin{aligned} A + B &\\to C + Q \\\\ Q &= (m_A + m_B - m_C)c^2 \\end{aligned}",
+    "descrizione": "Unione di due nuclei leggeri per formare un nucleo più pesante, con massa mancante convertita in energia Q.",
+    "variabili": [
+      { "simbolo": "$A,B$", "descrizione": "Nuclei reagenti", "unita": "" },
+      { "simbolo": "$C$", "descrizione": "Nucleo prodotto", "unita": "" },
+      { "simbolo": "$m_A,m_B,m_C$", "descrizione": "Masse dei nuclei", "unita": "kg" },
+      { "simbolo": "$Q$", "descrizione": "Energia di fusione", "unita": "J" },
+      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" }
+    ],
+    "esempi": [],
+    "link_correlati": ["NUC_012"],
+    "parole_chiave": ["fusione","energia solare","massi mancante"],
+    "data_creazione": "2025-07-15",
+    "data_ultima_modifica": "2025-07-15"
+  }
+]

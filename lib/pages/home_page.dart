@@ -49,6 +49,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     'Magnetismo': Icons.explore,
     'Relatività': Icons.access_time,
     'Fisica Quantistica': Icons.blur_circular,
+    'Fisica Nucleare': Icons.warning_amber,
     'Personalizzate': Icons.person_add_alt_1,
   };
 
