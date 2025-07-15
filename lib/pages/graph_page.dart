@@ -11,13 +11,16 @@ class GraphPage extends StatefulWidget {
 }
 
 class _GraphPageState extends State<GraphPage> {
-  final TextEditingController _functionController = TextEditingController(text: 'sin(x)');
-  String _currentFunction = 'sin(x)';
-  String _errorMessage = '';
+  final List<TextEditingController> _functionControllers = [];
+  final List<String> _currentFunctions = [];
+  final List<String> _errorMessages = [];
+  final List<Color> _functionColors = [];
+  final List<bool> _isPlaceholder = [];
+
+  TextEditingController? _focusedController;
 
   bool _showScientificKeys = false;
 
-  // Range del grafico
   final double xMin = -10.0;
   final double xMax = 10.0;
   final double yMin = -5.0;
@@ -38,42 +41,108 @@ class _GraphPageState extends State<GraphPage> {
   final List<String> _scientificKeypadKeys = [
     'sin', 'cos', 'tan', 'log',
     'ln', 'exp', 'sqrt', 'abs',
-    'asin', 'acos', 'atan',
+    '(', ')', '^', '/',
+    '*', '-', '+',
     'π', 'e', '!',
-    'Deg', 'Rad',
     'x', 'C', '⌫', 'Basic',
     'Plot',
   ];
 
+  final List<Color> _predefinedColors = [
+    Colors.red.shade700,
+    Colors.blue.shade700,
+    Colors.green.shade700,
+    Colors.purple.shade700,
+    Colors.orange.shade700,
+    Colors.teal.shade700,
+    Colors.pink.shade700,
+    Colors.brown.shade700,
+    Colors.indigo.shade700,
+  ];
+
+  final List<String> _exampleFunctions = [
+    'sin(x)',
+    'cos(x)',
+    'x^2',
+    'log10(x)',
+    'e^x',
+    'abs(x)',
+    'x^3 - 2*x',
+    'tan(x)',
+    'sqrt(x)',
+    'ln(x)',
+    '2*sin(x) + cos(2*x)',
+    '(x-1)^2 + 3',
+  ];
+  final Random _random = Random();
+
   @override
   void initState() {
     super.initState();
-    _functionController.addListener(_updateFunction);
+    _addFunctionField(initialText: _exampleFunctions[_random.nextInt(_exampleFunctions.length)], isPlaceholder: true);
     cm.bindVariable(Variable('x'), Number(0));
   }
 
-  void _updateFunction() {
+  void _addFunctionField({String initialText = '', bool isPlaceholder = false}) {
     setState(() {
-      _currentFunction = _functionController.text;
-      _errorMessage = '';
+      final newController = TextEditingController(text: initialText);
+      final int newIndex = _functionControllers.length;
+
+      newController.addListener(() => _updateFunction(newIndex));
+      _functionControllers.add(newController);
+      _currentFunctions.add(initialText);
+      _errorMessages.add('');
+      _functionColors.add(_predefinedColors[newIndex % _predefinedColors.length]);
+      _isPlaceholder.add(isPlaceholder);
+      _focusedController = newController;
+    });
+  }
+
+  void _removeFunctionField(int index) {
+    setState(() {
+      _functionControllers[index].dispose();
+      _functionControllers.removeAt(index);
+      _currentFunctions.removeAt(index);
+      _errorMessages.removeAt(index);
+      _functionColors.removeAt(index);
+      _isPlaceholder.removeAt(index);
+
+      if (_functionControllers.isEmpty) {
+        _addFunctionField(initialText: _exampleFunctions[_random.nextInt(_exampleFunctions.length)], isPlaceholder: true);
+      } else {
+        if (_focusedController == null || !_functionControllers.contains(_focusedController)) {
+          _focusedController = _functionControllers.first;
+        }
+      }
+      _plotGraph();
+    });
+  }
+
+  void _updateFunction(int index) {
+    setState(() {
+      if (_isPlaceholder[index] && _functionControllers[index].text != _currentFunctions[index]) {
+        _isPlaceholder[index] = false;
+      }
+      _currentFunctions[index] = _functionControllers[index].text;
+      _errorMessages[index] = '';
     });
   }
 
   String _preprocessFunction(String function) {
     String processedFunction = function
-        .replaceAll('log(', 'log10(')
         .replaceAll('exp(', 'e^(')
-        .replaceAll('pi', 'pi')
+        .replaceAll('pi', pi.toString())
+        .replaceAll('e', e.toString())
         .replaceAll('abs(', 'abs(')
         .replaceAll('!', '!');
 
+    processedFunction = processedFunction.replaceAllMapped(RegExp(r'log10\(([^)]*)\)'), (match) {
+      return 'ln(${match.group(1)})/ln(10)';
+    });
 
-    processedFunction = processedFunction.replaceAllMapped(RegExp(r'(\d)([a-zA-Z(])'), (match) => '${match.group(1)}*${match.group(2)}');
-
-    processedFunction = processedFunction.replaceAllMapped(RegExp(r'(\))([a-zA-Z(])'), (match) => '${match.group(1)}*${match.group(2)}');
-
-    processedFunction = processedFunction.replaceAllMapped(RegExp(r'(x)(sin|cos|tan|log10|ln|e\^|sqrt|abs|asin|acos|atan)'), (match) => '${match.group(1)}*${match.group(2)}');
-
+    processedFunction = processedFunction.replaceAllMapped(RegExp(r'(\d)([a-zA-Z(πe])'), (match) => '${match.group(1)}*${match.group(2)}');
+    processedFunction = processedFunction.replaceAllMapped(RegExp(r'(\))([a-zAZ(πe])'), (match) => '${match.group(1)}*${match.group(2)}');
+    processedFunction = processedFunction.replaceAllMapped(RegExp(r'([xπe])(sin|cos|tan|ln|exp|sqrt|abs|\()'), (match) => '${match.group(1)}*${match.group(2)}');
 
     return processedFunction;
   }
@@ -83,65 +152,69 @@ class _GraphPageState extends State<GraphPage> {
       return null;
     }
     try {
-
       cm.bindVariable(Variable('x'), Number(xValue));
-
       String processedFunction = _preprocessFunction(function);
-
-
-      processedFunction = processedFunction.replaceAll('π', pi.toString());
-      processedFunction = processedFunction.replaceAll('e', e.toString());
-
       Expression exp = p.parse(processedFunction);
-
       double result = exp.evaluate(EvaluationType.REAL, cm);
-
       if (result.isNaN || result.isInfinite) {
         return null;
       }
-
       return result;
     } catch (e) {
-
       return null;
     }
   }
 
   void _plotGraph() {
     setState(() {
-      _errorMessage = '';
-      if (_functionController.text.trim().isEmpty) {
-        _errorMessage = 'Inserisci una funzione da plottare.';
-        return;
-      }
-      try {
-        String processedFunction = _preprocessFunction(_functionController.text);
+      bool anyFunctionHasError = false;
+      for (int i = 0; i < _functionControllers.length; i++) {
+        _errorMessages[i] = '';
+        String functionText = _functionControllers[i].text.trim();
 
-        p.parse(processedFunction);
-      } catch (e) {
-        String error = e.toString().replaceAll('Exception: ', '').replaceAll('ParserException: ', '');
-        if (error.contains('Invalid syntax')) {
-          _errorMessage = 'Errore di sintassi: Controlla il formato. Usa * per la moltiplicazione esplicita tra termini non numerici (es. x*y, 2*x).';
-        } else if (error.contains('Undefined variable')) {
-          _errorMessage = 'Variabile non definita. Assicurati di usare solo \'x\'.';
-        } else if (error.contains('Undefined function')) {
-          _errorMessage = 'Funzione non definita o formato errato (es. log(x) o ln(x)).';
+        if (functionText.isEmpty) {
+          _errorMessages[i] = 'Inserisci una funzione.';
+          continue;
         }
-        else {
-          _errorMessage = 'Errore nel formato della funzione: $error. Controlla il formato.';
+
+        try {
+          String processedFunction = _preprocessFunction(functionText);
+          p.parse(processedFunction);
+        } catch (e) {
+          String error = e.toString().replaceAll('Exception: ', '').replaceAll('ParserException: ', '');
+          if (error.contains('Invalid syntax')) {
+            _errorMessages[i] = 'Errore di sintassi: Controlla il formato. Usa * per la moltiplicazione esplicita (es. 2*x, x*sin(x)).';
+          } else if (error.contains('Undefined variable')) {
+            _errorMessages[i] = 'Variabile non definita. Assicurati di usare solo \'x\'.';
+          } else if (error.contains('Undefined function')) {
+            _errorMessages[i] = 'Funzione non definita o formato errato (es. sin(x), ln(x), log10(x)).';
+          } else {
+            _errorMessages[i] = 'Errore nel formato della funzione: $error.';
+          }
+          anyFunctionHasError = true;
         }
-        return;
+      }
+      if (anyFunctionHasError) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Correggi gli errori nelle funzioni per visualizzare tutti i grafici.')),
+        );
       }
     });
   }
 
   void _onKeyPress(String key) {
-    final TextEditingController controller = _functionController;
+    if (_focusedController == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Seleziona una casella di testo per inserire la funzione.')),
+      );
+      return;
+    }
+
+    final TextEditingController controller = _focusedController!;
     final String currentText = controller.text;
     final TextSelection selection = controller.selection;
     int start = selection.start;
     int end = selection.end;
-
 
     if (start < 0) start = 0;
     if (end < 0) end = 0;
@@ -151,6 +224,15 @@ class _GraphPageState extends State<GraphPage> {
     setState(() {
       String newText = currentText;
       TextSelection newSelection = selection;
+
+      final int focusedIndex = _functionControllers.indexOf(controller);
+
+      if (focusedIndex != -1 && _isPlaceholder[focusedIndex]) {
+        controller.text = '';
+        _isPlaceholder[focusedIndex] = false;
+        start = 0;
+        end = 0;
+      }
 
       switch (key) {
         case 'C':
@@ -174,16 +256,9 @@ class _GraphPageState extends State<GraphPage> {
         case 'Sci':
           _showScientificKeys = true;
           break;
-        case 'Basic': // Torna ai tasti base
+        case 'Basic':
           _showScientificKeys = false;
           break;
-        case 'Deg':
-        case 'Rad':
-
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Le funzioni trigonometriche usano i radianti.')),
-          );
-          return;
         case 'log':
           newText = currentText.replaceRange(start, end, 'log10(');
           newSelection = TextSelection.collapsed(offset: start + 'log10('.length);
@@ -192,61 +267,69 @@ class _GraphPageState extends State<GraphPage> {
           newText = currentText.replaceRange(start, end, 'e^(');
           newSelection = TextSelection.collapsed(offset: start + 'e^('.length);
           break;
-
         case 'ln':
         case 'sqrt':
         case 'sin':
         case 'cos':
         case 'tan':
         case 'abs':
-        case 'asin':
-        case 'acos':
-        case 'atan':
           newText = currentText.replaceRange(start, end, '$key(');
           newSelection = TextSelection.collapsed(offset: start + '$key('.length);
           break;
-        default: // Inserisci altri tasti alla posizione del cursore
+        case 'π':
+          newText = currentText.replaceRange(start, end, 'pi');
+          newSelection = TextSelection.collapsed(offset: start + 'pi'.length);
+          break;
+        case 'e':
+          newText = currentText.replaceRange(start, end, 'e');
+          newSelection = TextSelection.collapsed(offset: start + 'e'.length);
+          break;
+        default:
           newText = currentText.replaceRange(start, end, key);
           newSelection = TextSelection.collapsed(offset: start + key.length);
           break;
       }
 
-
       controller.value = TextEditingValue(
         text: newText,
         selection: newSelection,
       );
+      if (focusedIndex != -1) {
+        _updateFunction(focusedIndex);
+      }
     });
   }
 
-
   @override
   void dispose() {
-    _functionController.removeListener(_updateFunction);
-    _functionController.dispose();
+    for (var controller in _functionControllers) {
+      controller.dispose();
+    }
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-
-
     final List<String> currentKeypadKeys = _showScientificKeys ? _scientificKeypadKeys : _basicKeypadKeys;
 
     Color getButtonColor(String key) {
       if (key == 'C' || key == '⌫') {
         return colorScheme.error;
       } else if (key == 'Plot') {
-        return colorScheme.primary; // Plot button
+        return colorScheme.primary;
       } else if (key == 'Sci' || key == 'Basic') {
         return colorScheme.tertiary;
       } else if (key == 'x') {
         return colorScheme.errorContainer;
       }
-      else if (['/', '*', '-', '+', '^', '(', ')', 'sin', 'cos', 'tan', 'log', 'ln', 'exp', 'sqrt', 'abs', 'asin', 'acos', 'atan', '!', 'π', 'e', 'Deg', 'Rad'].contains(key)) {
+      else if (['sin', 'cos', 'tan', 'log', 'ln', 'exp', 'sqrt', 'abs', '!', 'π', 'e'].contains(key) && _showScientificKeys) {
+        return colorScheme.surfaceTint;
+      }
+      else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
         return colorScheme.secondary;
-      } else {
+      }
+      else {
         return colorScheme.primaryContainer;
       }
     }
@@ -259,14 +342,27 @@ class _GraphPageState extends State<GraphPage> {
       } else if (key == 'Sci' || key == 'Basic') {
         return colorScheme.onTertiary;
       } else if (key == 'x') {
-        return colorScheme.onErrorContainer; // Highlight 'x'
+        return colorScheme.onErrorContainer;
       }
-      else if (['/', '*', '-', '+', '^', '(', ')', 'sin', 'cos', 'tan', 'log', 'ln', 'exp', 'sqrt', 'abs', 'asin', 'acos', 'atan', '!', 'π', 'e', 'Deg', 'Rad'].contains(key)) {
+      else if (['sin', 'cos', 'tan', 'log', 'ln', 'exp', 'sqrt', 'abs', '!', 'π', 'e'].contains(key) && _showScientificKeys) {
+        return colorScheme.onSecondaryContainer;
+      }
+      else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
         return colorScheme.onSecondary;
       } else {
         return colorScheme.onPrimaryContainer;
       }
     }
+
+    List<String> functionsToPlot = [];
+    List<Color> colorsToPlot = [];
+    for (int i = 0; i < _currentFunctions.length; i++) {
+      if (_currentFunctions[i].trim().isNotEmpty && _errorMessages[i].isEmpty) {
+        functionsToPlot.add(_currentFunctions[i]);
+        colorsToPlot.add(_functionColors[i]);
+      }
+    }
+
 
     return Scaffold(
       appBar: AppBar(
@@ -283,66 +379,103 @@ class _GraphPageState extends State<GraphPage> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const SizedBox(height: 16),
-                  TextField(
-                    controller: _functionController,
-                    readOnly: true,
-                    decoration: InputDecoration(
-                      labelText: 'Funzione f(x)',
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12),
+                  ..._functionControllers.asMap().entries.map((entry) {
+                    int idx = entry.key;
+                    TextEditingController controller = entry.value;
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 12.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          TextField(
+                            controller: controller,
+                            readOnly: true,
+                            onTap: () {
+                              setState(() {
+                                _focusedController = controller;
+                                if (_isPlaceholder[idx]) {
+                                  controller.clear();
+                                  _isPlaceholder[idx] = false;
+                                  _updateFunction(idx);
+                                }
+                              });
+                            },
+                            decoration: InputDecoration(
+                              labelText: 'f${idx + 1}(x)',
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(12),
+                                borderSide: BorderSide(
+                                  color: _focusedController == controller
+                                      ? colorScheme.primary
+                                      : colorScheme.outline,
+                                  width: 2.0,
+                                ),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(12),
+                                borderSide: BorderSide(color: colorScheme.primary, width: 2.0),
+                              ),
+                              prefixIcon: Icon(Icons.show_chart, color: _functionColors[idx]),
+                              suffixIcon: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  if (idx == _functionControllers.length - 1)
+                                    IconButton(
+                                      icon: Icon(Icons.add, color: colorScheme.primary),
+                                      onPressed: () => _addFunctionField(initialText: '', isPlaceholder: false),
+                                      tooltip: 'Aggiungi funzione',
+                                    ),
+                                  if (_functionControllers.length > 1)
+                                    IconButton(
+                                      icon: Icon(Icons.close, color: colorScheme.onSurfaceVariant),
+                                      onPressed: () => _removeFunctionField(idx),
+                                      tooltip: 'Rimuovi funzione',
+                                    ),
+                                ],
+                              ),
+                            ),
+                            style: TextStyle(color: colorScheme.onSurface, fontSize: 20),
+                            textAlign: TextAlign.end,
+                          ),
+                          if (_errorMessages[idx].isNotEmpty)
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Card(
+                                color: colorScheme.errorContainer,
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    _errorMessages[idx],
+                                    style: TextStyle(color: colorScheme.onErrorContainer, fontSize: 12),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                              ),
+                            ),
+                        ],
                       ),
-                      prefixIcon: Icon(Icons.auto_graph, color: colorScheme.primary),
-                      suffixIcon: _functionController.text.isNotEmpty
-                          ? IconButton(
-                        icon: Icon(Icons.close, color: colorScheme.onSurfaceVariant),
-                        onPressed: () {
-                          _functionController.clear();
-                          setState(() {
-                            _errorMessage = '';
-                            _currentFunction = '';
-                          });
-                        },
-                      )
-                          : null,
-                    ),
-                    style: TextStyle(color: colorScheme.onSurface, fontSize: 20),
-                    textAlign: TextAlign.end,
-                  ),
-                  const SizedBox(height: 12),
-                  if (_errorMessage.isNotEmpty)
-                    Card(
-                      color: colorScheme.errorContainer,
-                      margin: const EdgeInsets.symmetric(vertical: 8),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                      child: Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Text(
-                          _errorMessage,
-                          style: TextStyle(color: colorScheme.onErrorContainer, fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                    ),
+                    );
+                  }).toList(),
+
                   const SizedBox(height: 12),
                   GestureDetector(
                     onTap: () {
-                      if (_currentFunction.isNotEmpty && _errorMessage.isEmpty) {
+                      bool hasPlotableFunctions = functionsToPlot.isNotEmpty;
+                      if (hasPlotableFunctions) {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (ctx) => FullScreenGraphPage(
-                              functionString: _currentFunction,
+                              functionStrings: functionsToPlot,
+                              functionColors: colorsToPlot,
                               evaluateFunction: _evaluateFunction,
                               xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
                             ),
                           ),
                         );
-                      } else if (_errorMessage.isNotEmpty) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Correggi l\'errore nella funzione prima di visualizzare a schermo intero.')),
-                        );
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Inserisci una funzione per visualizzare il grafico a schermo intero.')),
+                          const SnackBar(content: Text('Inserisci almeno una funzione valida da visualizzare.')),
                         );
                       }
                     },
@@ -356,11 +489,11 @@ class _GraphPageState extends State<GraphPage> {
                         ),
                         child: CustomPaint(
                           painter: GraphPainter(
-                            functionString: _currentFunction,
+                            functionStrings: functionsToPlot,
                             evaluateFunction: _evaluateFunction,
                             xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
                             axisColor: colorScheme.onSurfaceVariant,
-                            lineColor: colorScheme.primary,
+                            lineColors: colorsToPlot,
                             gridColor: colorScheme.outlineVariant,
                             textColor: colorScheme.onSurface,
                           ),
@@ -372,7 +505,6 @@ class _GraphPageState extends State<GraphPage> {
               ),
             ),
           ),
-          // Tastierino
           Container(
             padding: const EdgeInsets.all(4),
             child: GridView.builder(
@@ -410,21 +542,23 @@ class _GraphPageState extends State<GraphPage> {
 }
 
 class GraphPainter extends CustomPainter {
-  final String functionString;
+  final List<String> functionStrings;
   final Function(String, double) evaluateFunction;
   final double xMin, xMax, yMin, yMax;
   final Color axisColor;
-  final Color lineColor;
+  final List<Color> lineColors;
   final Color gridColor;
   final Color textColor;
 
   GraphPainter({
-    required this.functionString,
+    required this.functionStrings,
     required this.evaluateFunction,
-    required this.xMin, required this.xMax,
-    required this.yMin, required this.yMax,
+    required this.xMin,
+    required this.xMax,
+    required this.yMin,
+    required this.yMax,
     required this.axisColor,
-    required this.lineColor,
+    required this.lineColors,
     required this.gridColor,
     required this.textColor,
   });
@@ -434,11 +568,6 @@ class GraphPainter extends CustomPainter {
     final Paint axisPaint = Paint()
       ..color = axisColor
       ..strokeWidth = 2.0;
-
-    final Paint linePaint = Paint()
-      ..color = lineColor
-      ..strokeWidth = 3.0
-      ..style = PaintingStyle.stroke;
 
     final Paint gridPaint = Paint()
       ..color = gridColor
@@ -458,10 +587,8 @@ class GraphPainter extends CustomPainter {
       }
     }
 
-
-    canvas.drawLine(Offset(toCanvasX(0), 0), Offset(toCanvasX(0), size.height), axisPaint); // Asse Y
-    canvas.drawLine(Offset(0, toCanvasY(0)), Offset(size.width, toCanvasY(0)), axisPaint); // Asse X
-
+    canvas.drawLine(Offset(toCanvasX(0), 0), Offset(toCanvasX(0), size.height), axisPaint);
+    canvas.drawLine(Offset(0, toCanvasY(0)), Offset(size.width, toCanvasY(0)), axisPaint);
 
     final textStyle = TextStyle(color: textColor, fontSize: 10);
     void drawText(Canvas canvas, String text, Offset offset) {
@@ -471,13 +598,11 @@ class GraphPainter extends CustomPainter {
       textPainter.paint(canvas, offset);
     }
 
-
     for (double i = xMin.ceilToDouble(); i <= xMax.floorToDouble(); i += 1) {
       if (i != 0) {
         drawText(canvas, i.toInt().toString(), Offset(toCanvasX(i) - 5, toCanvasY(0) + 5));
       }
     }
-
 
     for (double i = yMin.ceilToDouble(); i <= yMax.floorToDouble(); i += 1) {
       if (i != 0) {
@@ -485,55 +610,89 @@ class GraphPainter extends CustomPainter {
       }
     }
 
+    for (int i = 0; i < functionStrings.length; i++) {
+      final String funcString = functionStrings[i];
+      final Color lineColor = lineColors[i % lineColors.length];
 
-    final Path path = Path();
-    bool firstPoint = true;
-    for (double x = xMin; x <= xMax; x += (xMax - xMin) / size.width / 2) {
-      final y = evaluateFunction(functionString, x);
-      if (y != null && y >= yMin && y <= yMax) {
-        final px = toCanvasX(x);
-        final py = toCanvasY(y);
-        if (firstPoint) {
-          path.moveTo(px, py);
-          firstPoint = false;
+      final Paint linePaint = Paint()
+        ..color = lineColor
+        ..strokeWidth = 3.0
+        ..style = PaintingStyle.stroke;
+
+      final Path path = Path();
+      bool firstPoint = true;
+      for (double x = xMin; x <= xMax; x += (xMax - xMin) / size.width / 2) {
+        final y = evaluateFunction(funcString, x);
+        if (y != null && y >= yMin && y <= yMax) {
+          final px = toCanvasX(x);
+          final py = toCanvasY(y);
+          if (firstPoint) {
+            path.moveTo(px, py);
+            firstPoint = false;
+          } else {
+            path.lineTo(px, py);
+          }
         } else {
-          path.lineTo(px, py);
+          firstPoint = true;
         }
-      } else {
-        firstPoint = true;
       }
+      canvas.drawPath(path, linePaint);
     }
-    canvas.drawPath(path, linePaint);
   }
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return (oldDelegate as GraphPainter).functionString != functionString;
+    GraphPainter oldPainter = oldDelegate as GraphPainter;
+    if (oldPainter.functionStrings.length != functionStrings.length ||
+        oldPainter.lineColors.length != lineColors.length) {
+      return true;
+    }
+    for (int i = 0; i < functionStrings.length; i++) {
+      if (oldPainter.functionStrings[i] != functionStrings[i] ||
+          oldPainter.lineColors[i] != lineColors[i]) {
+        return true;
+      }
+    }
+    return false;
   }
 }
 
 class FullScreenGraphPage extends StatelessWidget {
-  final String functionString;
+  final List<String> functionStrings;
   final Function(String, double) evaluateFunction;
   final double xMin, xMax, yMin, yMax;
+  final List<Color> functionColors;
 
   const FullScreenGraphPage({
     super.key,
-    required this.functionString,
+    required this.functionStrings,
     required this.evaluateFunction,
     required this.xMin,
     required this.xMax,
     required this.yMin,
     required this.yMax,
+    required this.functionColors,
   });
 
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
 
+    String titleText = 'Grafici: ';
+    List<String> validFunctions = functionStrings.where((f) => f.trim().isNotEmpty).toList();
+    if (validFunctions.isNotEmpty) {
+      titleText += validFunctions.map((f) => 'f(x) = $f').join(', ');
+      if (titleText.length > 50) {
+        titleText = 'Grafici Multipli';
+      }
+    } else {
+      titleText = 'Grafico';
+    }
+
+
     return Scaffold(
       appBar: AppBar(
-        title: Text('Grafico: f(x) = $functionString'),
+        title: Text(titleText),
         backgroundColor: colorScheme.primaryContainer,
         iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
       ),
@@ -542,11 +701,11 @@ class FullScreenGraphPage extends StatelessWidget {
           color: colorScheme.surfaceVariant,
           child: CustomPaint(
             painter: GraphPainter(
-              functionString: functionString,
+              functionStrings: functionStrings,
               evaluateFunction: evaluateFunction,
               xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
               axisColor: colorScheme.onSurfaceVariant,
-              lineColor: colorScheme.primary,
+              lineColors: functionColors,
               gridColor: colorScheme.outlineVariant,
               textColor: colorScheme.onSurface,
             ),
