@@ -3,6 +3,10 @@ import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:physics_ease_release/models/formula.dart';
+import 'package:screenshot/screenshot.dart';
+import 'dart:typed_data';
+import 'package:path_provider/path_provider.dart';
+import 'dart:io';
 import 'dart:developer' as developer;
 
 
@@ -27,6 +31,7 @@ class FormulaDetailPage extends StatefulWidget {
 class _FormulaDetailPageState extends State<FormulaDetailPage> {
   late bool _isFavorite;
   final TextEditingController _chatInputController = TextEditingController();
+  final ScreenshotController _screenshotController = ScreenshotController();
 
   @override
   void initState() {
@@ -176,12 +181,53 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
           ),
           IconButton(
             icon: Icon(Icons.share, color: colorScheme.onPrimaryContainer),
-            onPressed: () {
-              final url = 'https://physicease.app/formula/${widget.formula.id}';
-              Share.share(
-                'Dai un\'occhiata a questa formula su PhysicEase:\n${widget.formula.titolo}: ${widget.formula.formulaLatex}\n$url',
-                subject: 'Formula di Fisica: ${widget.formula.titolo}',
+            onPressed: () async {
+              final Uint8List? imageBytes = await _screenshotController.captureFromWidget(
+                Card(
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                  elevation: 4,
+                  color: Theme.of(context).colorScheme.surfaceVariant,
+                  margin: const EdgeInsets.all(16),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: SizedBox(
+                      width: 800,
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Math.tex(
+                          widget.formula.formulaLatex,
+                          textStyle: TextStyle(
+                            fontSize: 60,
+                            color: Theme.of(context).colorScheme.onSurfaceVariant,
+                          ),
+                          onErrorFallback: (Object e) {
+                            developer.log('ERRORE RENDERING LATEX per screenshot: $e', error: e);
+                            return Text(
+                              '[Errore LaTeX]',
+                              style: TextStyle(color: Theme.of(context).colorScheme.error, fontSize: 20),
+                            );
+                          },
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                pixelRatio: 4.0,
               );
+
+              if (imageBytes != null) {
+                final directory = await getTemporaryDirectory();
+                final imagePath = await File('${directory.path}/formula_${widget.formula.id}.png').create();
+                await imagePath.writeAsBytes(imageBytes);
+                final String playStoreLink = 'https://play.google.com/store/apps';
+                Share.shareXFiles(
+                  [XFile(imagePath.path)],
+                  text: 'Dai un\'occhiata a questa formula su PhysicEase e scarica l\'app per scoprirne altre!\n$playStoreLink',
+                  subject: 'Formula di Fisica: ${widget.formula.titolo}',
+                );
+              } else {
+                developer.log('Errore durante la cattura dello screenshot della formula.');
+              }
             },
           ),
         ],
