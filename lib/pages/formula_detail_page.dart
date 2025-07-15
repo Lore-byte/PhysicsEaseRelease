@@ -102,7 +102,7 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
   //Nuovo parser
   List<InlineSpan> _parseMixedContent(String text, TextStyle? textStyle, Color? latexColor) {
     final List<InlineSpan> spans = [];
-    // Usa la nuova RegExp che riconosce sia LaTeX che grassetto
+    // Usa la nuova RegExp che riconosce sia LaTeX sia grassetto
     final RegExp contentRegex = RegExp(r'\$\$([^$]+?)\$\$|\$([^$]+?)\$|\*\*([^\*]+?)\*\*');
 
     text.splitMapJoin(
@@ -211,6 +211,7 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                     fit: BoxFit.scaleDown,
                     child: Math.tex(
                       widget.formula.formulaLatex,
+                      mathStyle: MathStyle.display, // usa stile centrato
                       textStyle: TextStyle(
                         fontSize: 36,
                         color: colorScheme.onSurfaceVariant,
