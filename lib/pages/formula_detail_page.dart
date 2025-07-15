@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:physics_ease_release/models/formula.dart';
 import 'dart:developer' as developer;
 
+
 class FormulaDetailPage extends StatefulWidget {
   final Formula formula;
   final ThemeMode themeMode;
@@ -59,7 +60,8 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
     await widget.onToggleFavorite(widget.formula.id);
   }
 
-  // Nuovo parser
+  // Vecchio parser
+  /*
   List<InlineSpan> _parseMixedContent(String text, TextStyle? textStyle, Color? latexColor) {
     final List<InlineSpan> spans = [];
     final RegExp latexRegex = RegExp(r'\$\$([^$]+?)\$\$|\$([^$]+?)\$');
@@ -89,6 +91,63 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
         return '';
       },
       onNonMatch: (String nonMatch) {
+        spans.add(TextSpan(text: nonMatch, style: textStyle));
+        return '';
+      },
+    );
+    return spans;
+  }
+  */
+
+  //Nuovo parser
+  List<InlineSpan> _parseMixedContent(String text, TextStyle? textStyle, Color? latexColor) {
+    final List<InlineSpan> spans = [];
+    // Usa la nuova RegExp che riconosce sia LaTeX che grassetto
+    final RegExp contentRegex = RegExp(r'\$\$([^$]+?)\$\$|\$([^$]+?)\$|\*\*([^\*]+?)\*\*');
+
+    text.splitMapJoin(
+      contentRegex,
+      onMatch: (Match match) {
+        // Prova a trovare una corrispondenza LaTeX
+        final latexContent = match.group(1) ?? match.group(2);
+        if (latexContent != null) {
+          spans.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: Math.tex(
+                latexContent,
+                textStyle: (textStyle ?? const TextStyle()).copyWith(color: latexColor),
+                onErrorFallback: (Object e) {
+                  developer.log('ERRORE RENDERING INLINE LATEX: $e', error: e);
+                  return Text(
+                    '[Errore LaTeX]',
+                    style: TextStyle(color: Theme.of(context).colorScheme.error, fontSize: (textStyle?.fontSize ?? 14) * 0.8),
+                  );
+                },
+              ),
+            ),
+          );
+          return '';
+        }
+
+        // Se non è LaTeX, prova a trovare una corrispondenza per il grassetto
+        final boldContent = match.group(3);
+        if (boldContent != null) {
+          spans.add(
+            TextSpan(
+              text: boldContent,
+              // Applica lo stile grassetto
+              style: textStyle?.copyWith(fontWeight: FontWeight.bold),
+            ),
+          );
+          return '';
+        }
+
+        // Fallback (non dovrebbe accadere con questa regex)
+        return '';
+      },
+      onNonMatch: (String nonMatch) {
+        // Il testo normale viene aggiunto come sempre
         spans.add(TextSpan(text: nonMatch, style: textStyle));
         return '';
       },

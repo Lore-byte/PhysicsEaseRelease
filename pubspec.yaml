@@ -77,6 +77,7 @@ flutter:
     - assets/momentoangolare.json
     - assets/circuiti.json
     - assets/magnetismo.json
+    - assets/relativita.json
     - assets/my_logo.png
 
   # The following line ensures that the Material Icons font is

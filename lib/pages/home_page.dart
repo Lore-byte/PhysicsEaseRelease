@@ -47,6 +47,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     'Momento Angolare': Icons.rotate_left_sharp,
     'Circuiti Elettrici': Icons.electrical_services_rounded,
     'Magnetismo': Icons.explore,
+    'Relatività': Icons.access_time,
     'Personalizzate': Icons.person_add_alt_1,
   };
 
