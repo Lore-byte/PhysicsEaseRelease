@@ -82,6 +82,8 @@ flutter:
     - assets/fisicaquantistica.json
     - assets/fisicanucleare.json
     - assets/my_logo.png
+    - assets/my_logo_dark.png
+    - assets/my_logo_light.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

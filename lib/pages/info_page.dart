@@ -19,6 +19,10 @@ class InfoPage extends StatelessWidget {
     final textColor = colorScheme.onSurface;
     final cardColor = colorScheme.surfaceContainer;
 
+    final String logoAssetPath = themeMode == ThemeMode.dark
+        ? 'assets/my_logo_dark.png'
+        : 'assets/my_logo_light.png';
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Informazioni sull\'App'),
@@ -36,7 +40,7 @@ class InfoPage extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20.0),
                 child: Image.asset(
-                  'assets/my_logo.png',
+                  logoAssetPath,
                   width: 150,
                   height: 150,
                   fit: BoxFit.cover,
