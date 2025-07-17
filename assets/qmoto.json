@@ -7,7 +7,7 @@
     "formula_latex": "\\vec{p} = m \\vec{v}",
     "descrizione": "La quantità di moto $\\vec{p}$ di un corpo è una grandezza vettoriale che descrive il 'quantitativo di movimento' del corpo. Dipende dalla sua massa $m$ e dalla sua velocità $\\vec{v}$. La direzione di $\\vec{p}$ è la stessa di $\\vec{v}$.",
     "variabili": [
-      { "simbolo": "$\\vec{p}$", "descrizione": "Quantità di moto, misurata in kilogrammi per metro al secondo", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{p}$", "descrizione": "Quantità di moto, misurata in kilogrammi per metro al secondo", "unita": "$kg\\cdot m/s$" },
       { "simbolo": "$m$", "descrizione": "Massa del corpo, in chilogrammi", "unita": "kg" },
       { "simbolo": "$\\vec{v}$", "descrizione": "Velocità del corpo, in metri al secondo", "unita": "m/s" }
     ],
@@ -28,9 +28,9 @@
     "sottocategoria": "Definizioni Fondamentali",
     "titolo": "Quantità di Moto Totale di un Sistema",
     "formula_latex": "\\vec{P}_{tot} = \\sum_{i} m_i \\vec{v}_i",
-    "descrizione": "La quantità di moto totale $\\vec{P}_{tot}$ di un sistema di corpi è la somma vettoriale delle quantità di moto individuali di tutti i corpi che compongono il sistema. Questo concetto è fondamentale per la conservazione della quantità di moto.",
+    "descrizione": "La quantità di moto totale $\\vec{P}_{tot}$ di un sistema di corpi è la **somma vettoriale** delle quantità di moto individuali di tutti i corpi che compongono il sistema. Questo concetto è fondamentale per la conservazione della quantità di moto.",
     "variabili": [
-      { "simbolo": "$\\vec{P}_{tot}$", "descrizione": "Quantità di moto totale del sistema, in kg\\cdot m/s", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{P}_{tot}$", "descrizione": "Quantità di moto totale del sistema", "unita": "$kg\\cdot m/s$" },
       { "simbolo": "$m_i$", "descrizione": "Massa dell'i-esimo corpo, in chilogrammi", "unita": "kg" },
       { "simbolo": "$\\vec{v}_i$", "descrizione": "Velocità dell'i-esimo corpo, in metri al secondo", "unita": "m/s" }
     ],
@@ -53,7 +53,7 @@
     "formula_latex": "\\vec{I} = \\vec{F} \\Delta t",
     "descrizione": "L'impulso $\\vec{I}$ di una forza costante $\\vec{F}$ è una grandezza vettoriale che misura l'effetto complessivo della forza che agisce per un intervallo di tempo $\\Delta t$. Ha la stessa direzione della forza.",
     "variabili": [
-      { "simbolo": "$\\vec{I}$", "descrizione": "Impulso, misurato in Newton per secondo", "unita": "N\\cdot s" },
+      { "simbolo": "$\\vec{I}$", "descrizione": "Impulso, misurato in Newton per secondo", "unita": "$N\\cdot s$" },
       { "simbolo": "$\\vec{F}$", "descrizione": "Forza costante applicata, in Newton", "unita": "N" },
       { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo durante il quale la forza agisce, in secondi", "unita": "s" }
     ],
@@ -76,12 +76,12 @@
     "formula_latex": "\\vec{I}_{tot} = \\Delta \\vec{p} \\quad , \\quad \\vec{F}_{tot} \\Delta t = \\vec{p}_f - \\vec{p}_i",
     "descrizione": "Il teorema dell'impulso afferma che l'impulso totale $\\vec{I}_{tot}$ applicato a un corpo è uguale alla variazione della sua quantità di moto $\\Delta \\vec{p}$. Questo teorema lega la dinamica (forza e tempo) alla quantità di moto (massa e velocità).",
     "variabili": [
-      { "simbolo": "$\\vec{I}_{tot}$", "descrizione": "Impulso totale, in N\\cdot s", "unita": "N\\cdot s" },
-      { "simbolo": "$\\Delta \\vec{p}$", "descrizione": "Variazione della quantità di moto, in kg\\cdot m/s", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{I}_{tot}$", "descrizione": "Impulso totale", "unita": "$N\\cdot s$" },
+      { "simbolo": "$\\Delta \\vec{p}$", "descrizione": "Variazione della quantità di moto, in kg\\cdot m/s", "unita": "$kg\\cdot m/s$" },
       { "simbolo": "$\\vec{F}_{tot}$", "descrizione": "Forza totale risultante, in Newton", "unita": "N" },
       { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo, in secondi", "unita": "s" },
-      { "simbolo": "$\\vec{p}_f$", "descrizione": "Quantità di moto finale", "unita": "kg\\cdot m/s" },
-      { "simbolo": "$\\vec{p}_i$", "descrizione": "Quantità di moto iniziale", "unita": "kg\\cdot m/s" }
+      { "simbolo": "$\\vec{p}_f$", "descrizione": "Quantità di moto finale", "unita": "$kg\\cdot m/s$" },
+      { "simbolo": "$\\vec{p}_i$", "descrizione": "Quantità di moto iniziale", "unita": "$kg\\cdot m/s$" }
     ],
     "esempi": [
       {
@@ -102,8 +102,8 @@
     "formula_latex": "\\vec{P}_{tot, i} = \\vec{P}_{tot, f} \\quad , \\quad \\sum_{j} m_j \\vec{v}_{j,i} = \\sum_{j} m_j \\vec{v}_{j,f}",
     "descrizione": "In un sistema isolato (dove non agiscono forze esterne nette), la quantità di moto totale del sistema si conserva. Questo significa che la quantità di moto totale prima di un'interazione (come un urto) è uguale alla quantità di moto totale dopo l'interazione.",
     "variabili": [
-      { "simbolo": "$\\vec{P}_{tot, i}$", "descrizione": "Quantità di moto totale iniziale del sistema", "unita": "kg\\cdot m/s" },
-      { "simbolo": "$\\vec{P}_{tot, f}$", "descrizione": "Quantità di moto totale finale del sistema", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{P}_{tot, i}$", "descrizione": "Quantità di moto totale iniziale del sistema", "unita": "$kg\\cdot m/s$" },
+      { "simbolo": "$\\vec{P}_{tot, f}$", "descrizione": "Quantità di moto totale finale del sistema", "unita": "$kg\\cdot m/s$" },
       { "simbolo": "$m_j$", "descrizione": "Massa del j-esimo corpo", "unita": "kg" },
       { "simbolo": "$\\vec{v}_{j,i}$", "descrizione": "Velocità iniziale del j-esimo corpo", "unita": "m/s" },
       { "simbolo": "$\\vec{v}_{j,f}$", "descrizione": "Velocità finale del j-esimo corpo", "unita": "m/s" }
@@ -127,8 +127,8 @@
     "formula_latex": "\\vec{P}_{tot, i} = \\vec{P}_{tot, f} \\quad , \\quad K_{tot, i} = K_{tot, f}",
     "descrizione": "Un urto elastico è un tipo di collisione in cui sia la quantità di moto totale che l'energia cinetica totale del sistema si conservano. I corpi coinvolti rimbalzano senza deformazioni permanenti o perdite di energia interna.",
     "variabili": [
-      { "simbolo": "$\\vec{P}_{tot, i}$", "descrizione": "Quantità di moto totale iniziale", "unita": "kg\\cdot m/s" },
-      { "simbolo": "$\\vec{P}_{tot, f}$", "descrizione": "Quantità di moto totale finale", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{P}_{tot, i}$", "descrizione": "Quantità di moto totale iniziale", "unita": "$kg\\cdot m/s$" },
+      { "simbolo": "$\\vec{P}_{tot, f}$", "descrizione": "Quantità di moto totale finale", "unita": "$kg\\cdot m/s$" },
       { "simbolo": "$K_{tot, i}$", "descrizione": "Energia cinetica totale iniziale", "unita": "J" },
       { "simbolo": "$K_{tot, f}$", "descrizione": "Energia cinetica totale finale", "unita": "J" }
     ],
@@ -151,8 +151,8 @@
     "formula_latex": "\\vec{P}_{tot, i} = \\vec{P}_{tot, f} \\quad , \\quad K_{tot, i} \\neq K_{tot, f}",
     "descrizione": "Un urto anaelastico è un tipo di collisione in cui la quantità di moto totale del sistema si conserva, ma l'energia cinetica totale no. Parte dell'energia cinetica viene convertita in altre forme, come calore, suono o deformazione. Negli urti completamente anaelastici, i corpi si uniscono e si muovono come un unico corpo dopo l'impatto.",
     "variabili": [
-      { "simbolo": "$\\vec{P}_{tot, i}$", "descrizione": "Quantità di moto totale iniziale", "unita": "kg\\cdot m/s" },
-      { "simbolo": "$\\vec{P}_{tot, f}$", "descrizione": "Quantità di moto totale finale", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{P}_{tot, i}$", "descrizione": "Quantità di moto totale iniziale", "unita": "$kg\\cdot m/s$" },
+      { "simbolo": "$\\vec{P}_{tot, f}$", "descrizione": "Quantità di moto totale finale", "unita": "$kg\\cdot m/s$" },
       { "simbolo": "$K_{tot, i}$", "descrizione": "Energia cinetica totale iniziale", "unita": "J" },
       { "simbolo": "$K_{tot, f}$", "descrizione": "Energia cinetica totale finale", "unita": "J" }
     ],
@@ -175,8 +175,8 @@
     "formula_latex": "\\vec{P}_{tot, i} = \\vec{P}_{tot, f} \\quad \\text{ (conservazione vettoriale)}",
     "descrizione": "Negli urti bidimensionali (o obliqui), la conservazione della quantità di moto deve essere applicata vettorialmente, cioè separatamente per le componenti $x$ e $y$ della quantità di moto. Questo è vero per tutti i tipi di urto (elastici o anaelastici) in un sistema isolato.",
     "variabili": [
-      { "simbolo": "$\\vec{P}_{tot, i}$", "descrizione": "Quantità di moto totale iniziale", "unita": "kg\\cdot m/s" },
-      { "simbolo": "$\\vec{P}_{tot, f}$", "descrizione": "Quantità di moto totale finale", "unita": "kg\\cdot m/s" }
+      { "simbolo": "$\\vec{P}_{tot, i}$", "descrizione": "Quantità di moto totale iniziale", "unita": "$kg\\cdot m/s$" },
+      { "simbolo": "$\\vec{P}_{tot, f}$", "descrizione": "Quantità di moto totale finale", "unita": "$kg\\cdot m/s$" }
     ],
     "esempi": [
       {
@@ -224,7 +224,7 @@
       { "simbolo": "$\\vec{v}_{CM}$", "descrizione": "Velocità del centro di massa, in m/s", "unita": "m/s" },
       { "simbolo": "$m_i$", "descrizione": "Massa dell'i-esimo corpo", "unita": "kg" },
       { "simbolo": "$\\vec{v}_i$", "descrizione": "Velocità dell'i-esimo corpo", "unita": "m/s" },
-      { "simbolo": "$\\vec{P}_{tot}$", "descrizione": "Quantità di moto totale del sistema", "unita": "kg\\cdot m/s" },
+      { "simbolo": "$\\vec{P}_{tot}$", "descrizione": "Quantità di moto totale del sistema", "unita": "$kg\\cdot m/s$" },
       { "simbolo": "$M_{tot}$", "descrizione": "Massa totale del sistema", "unita": "kg" }
     ],
     "esempi": [

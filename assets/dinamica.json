@@ -118,7 +118,7 @@
     "sottocategoria": "Moto Circolare",
     "titolo": "Forza centripeta",
     "formula_latex": "F_c = m \\frac{v^2}{r} = m \\omega^2 r",
-    "descrizione": "La forza centripeta $F_c$ è la forza necessaria per mantenere un corpo in moto su una traiettoria circolare. È sempre diretta verso il centro della traiettoria. Dipende dalla massa $m$ del corpo, dalla sua velocità tangenziale $v$ o velocità angolare $\\omega$, e dal raggio $r$ della traiettoria.",
+    "descrizione": "La forza centripeta $F_c$ è la forza necessaria per mantenere un corpo in moto su una traiettoria circolare. È sempre diretta verso il centro della traiettoria.",
     "variabili": [
       { "simbolo": "$F_c$", "descrizione": "Forza centripeta", "unita": "N" },
       { "simbolo": "$m$", "descrizione": "Massa del corpo", "unita": "kg" },
@@ -168,7 +168,7 @@
     "sottocategoria": "Principi di Relatività",
     "titolo": "Trasformazioni di Galileo",
     "formula_latex": "x' = x - v_0 t, \\quad y' = y, \\quad z' = z, \\quad t' = t",
-    "descrizione": "Le Trasformazioni di Galileo descrivono come le coordinate spaziali e temporali di un evento cambiano quando osservate da due sistemi di riferimento inerziali diversi. Se un sistema S' si muove con velocità costante $v_0$ rispetto a un sistema S (convenzionalmente lungo l'asse x), le coordinate di un punto $(x, y, z)$ nel tempo $t$ viste da S diventano $(x', y', z')$ e $t'$ nel sistema S'. Si assume che il tempo sia assoluto ($t' = t$). Il segno di $v_0$ dipende dalla direzione del moto relativo: se S' si muove nel verso positivo dell'asse x di S, $v_0$ è positiva; se si muove nel verso negativo, $v_0$ è negativa.",
+    "descrizione": "Le Trasformazioni di Galileo descrivono come le coordinate spaziali e temporali di un evento cambiano quando osservate da due **sistemi di riferimento inerziali** diversi. Se un sistema S' si muove con velocità costante $v_0$ rispetto a un sistema S (convenzionalmente lungo l'asse x), le coordinate di un punto $(x, y, z)$ nel tempo $t$ viste da S diventano $(x', y', z')$ e $t'$ nel sistema S'. Si assume che il tempo sia assoluto ($t' = t$). Il segno di $v_0$ dipende dalla direzione del moto relativo: se S' si muove nel verso positivo dell'asse x di S, $v_0$ è positiva; se si muove nel verso negativo, $v_0$ è negativa.",
     "variabili": [
       { "simbolo": "$x, y, z$", "descrizione": "Coordinate spaziali nel sistema S", "unita": "m" },
       { "simbolo": "$t$", "descrizione": "Tempo nel sistema S", "unita": "s" },
@@ -193,7 +193,7 @@
     "sottocategoria": "Principi di Relatività",
     "titolo": "Legge di Composizione della Velocità",
     "formula_latex": "\\vec{v} = \\vec{v}' + \\vec{v}_0 \\quad \\quad \\vec{a}' = \\vec{a}",
-    "descrizione": "La Legge di Composizione della Velocità, derivata dalle Trasformazioni di Galileo, stabilisce come le velocità si sommano vettorialmente tra due sistemi di riferimento inerziali. Se un oggetto ha una velocità $\\vec{v}'$ rispetto a un sistema S' che a sua volta si muove con velocità $\\vec{v}_0$ rispetto a un sistema S, allora la velocità dell'oggetto $\\vec{v}$ rispetto al sistema S è la somma vettoriale di $\\vec{v}'$ e $\\vec{v}_0$. \\underline{In termini più semplici, se i movimenti sono unidirezionali, si userà il segno $+$ se le velocità sono concordi e il segno $-$ se sono discordi (es. $v = v' \\pm v_0$).} L'accelerazione è invariante, cioè l'accelerazione di un corpo è la stessa in tutti i sistemi di riferimento inerziali ($\\vec{a}' = \\vec{a}$).",
+    "descrizione": "La Legge di Composizione della Velocità, derivata dalle Trasformazioni di Galileo, stabilisce come le velocità si sommano vettorialmente tra due sistemi di riferimento inerziali. Se un oggetto ha una velocità $\\vec{v}'$ rispetto a un sistema S' che a sua volta si muove con velocità $\\vec{v}_0$ rispetto a un sistema S, allora la velocità dell'oggetto $\\vec{v}$ rispetto al sistema S è la somma vettoriale di $\\vec{v}'$ e $\\vec{v}_0$. In termini più semplici, se i movimenti sono unidirezionali, si userà il segno $+$ se le velocità sono concordi e il segno $-$ se sono discordi (es. $v = v' \\pm v_0$). L'**accelerazione è invariante**, cioè l'accelerazione di un corpo è la stessa in tutti i sistemi di riferimento inerziali ($\\vec{a}' = \\vec{a}$).",
     "variabili": [
       { "simbolo": "$\\vec{v}$", "descrizione": "Velocità del corpo nel sistema S (fisso)", "unita": "m/s" },
       { "simbolo": "$\\vec{v}'$", "descrizione": "Velocità del corpo nel sistema S' (in movimento)", "unita": "m/s" },
