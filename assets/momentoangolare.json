@@ -218,7 +218,7 @@
     "sottocategoria": "Moto Complesso",
     "titolo": "Rotolamento Senza Slittamento",
     "formula_latex": "v_{CM} = R \\omega \\quad , \\quad a_{CM} = R \\alpha \\quad , \\quad K_{tot} = K_{trasl} + K_{rot}",
-    "descrizione": "Il rotolamento senza slittamento è un moto combinato di traslazione e rotazione dove il punto di contatto del corpo con la superficie è istantaneamente fermo. Questo implica relazioni specifiche tra la velocità del centro di massa $v_{CM}$ e la velocità angolare $\\omega$, e tra l'accelerazione del centro di massa $a_{CM}$ e l'accelerazione angolare $\\alpha$. L'energia cinetica totale è la somma dell'energia cinetica traslazionale e rotazionale.",
+    "descrizione": "Il rotolamento senza slittamento è un **moto combinato** di traslazione e rotazione dove il punto di contatto del corpo con la superficie è istantaneamente fermo. Questo implica relazioni specifiche tra la velocità del centro di massa $v_{CM}$ e la velocità angolare $\\omega$, e tra l'accelerazione del centro di massa $a_{CM}$ e l'accelerazione angolare $\\alpha$. L'energia cinetica totale è la somma dell'energia cinetica traslazionale e rotazionale.",
     "variabili": [
       { "simbolo": "$v_{CM}$", "descrizione": "Velocità del centro di massa", "unita": "m/s" },
       { "simbolo": "$R$", "descrizione": "Raggio del corpo rotolante", "unita": "m" },

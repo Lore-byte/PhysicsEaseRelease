@@ -24,7 +24,7 @@
     "sottocategoria": "Leggi di Keplero",
     "titolo": "Seconda Legge di Keplero (Legge delle Aree)",
     "formula_latex": "\\frac{dA}{dt} = costante",
-    "descrizione": "La Seconda Legge di Keplero (o Legge delle Aree) afferma che il raggio vettore che congiunge il Sole a un pianeta spazza aree uguali in tempi uguali. Ciò implica che un pianeta si muove più velocemente quando è più vicino al Sole (perielio) e più lentamente quando è più lontano (afelio).",
+    "descrizione": "La Seconda Legge di Keplero (o Legge delle Aree) afferma che il raggio vettore che congiunge il Sole a un pianeta **spazza aree uguali in tempi uguali**. Ciò implica che un pianeta si muove più velocemente quando è più vicino al Sole (perielio) e più lentamente quando è più lontano (afelio).",
     "variabili": [
       { "simbolo": "$dA$", "descrizione": "Area spazzata dal raggio vettore", "unita": "m²" },
       { "simbolo": "$dt$", "descrizione": "Intervallo di tempo", "unita": "s" }

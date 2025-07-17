@@ -52,7 +52,7 @@
     "sottocategoria": "Idrostatica",
     "titolo": "Principio di Archimede (Forza di spinta)",
     "formula_latex": "F_B = \\rho_{fluido} \\cdot V_{immerso} \\cdot g",
-    "descrizione": "Il Principio di Archimede afferma che un corpo immerso in un fluido (totalmente o parzialmente) subisce una forza di spinta verso l'alto $F_B$ pari al peso del volume di fluido spostato dal corpo. Questa forza dipende dalla densità del fluido $\\rho_{fluido}$, dal volume immerso $V_{immerso}$ e dall'accelerazione di gravità $g$.",
+    "descrizione": "Il Principio di Archimede afferma che un corpo immerso in un fluido (totalmente o parzialmente) subisce una forza di spinta verso l'alto $F_B$ pari al peso del volume di fluido spostato dal corpo.",
     "variabili": [
       { "simbolo": "$F_B$", "descrizione": "Forza di spinta (galleggiamento)", "unita": "N" },
       { "simbolo": "$\\rho_{fluido}$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
@@ -76,7 +76,7 @@
     "sottocategoria": "Idrodinamica",
     "titolo": "Portata (Flusso di Volume)",
     "formula_latex": "Q = A \\cdot v",
-    "descrizione": "La portata $Q$ (o flusso di volume) rappresenta il volume di fluido che attraversa una sezione trasversale di un condotto per unità di tempo. È il prodotto dell'area della sezione $A$ e della velocità media del fluido $v$.",
+    "descrizione": "La portata $Q$ (o flusso di volume) rappresenta il volume di fluido che attraversa una sezione trasversale di un condotto per unità di tempo.",
     "variabili": [
       { "simbolo": "$Q$", "descrizione": "Portata", "unita": "m³/s" },
       { "simbolo": "$A$", "descrizione": "Area della sezione trasversale", "unita": "m²" },
@@ -197,7 +197,7 @@
     "sottocategoria": "Viscosità e Resistenza",
     "titolo": "Regime Laminare (Numero di Reynolds)",
     "formula_latex": "Re = \\frac{\\rho v L}{\\mu}",
-    "descrizione": "Il numero di Reynolds $Re$ è un numero adimensionale che aiuta a prevedere se il flusso di un fluido sarà laminare (regolare e parallelo) o turbolento (irregolare e caotico). Per valori bassi di $Re$ (tipicamente $Re < 2000$), il flusso è laminare.",
+    "descrizione": "Il numero di Reynolds $Re$ è un numero **adimensionale** che aiuta a prevedere se il flusso di un fluido sarà laminare (regolare e parallelo) o turbolento (irregolare e caotico). Per valori bassi di $Re$ (tipicamente $Re < 2000$), il flusso è laminare.",
     "variabili": [
       { "simbolo": "$Re$", "descrizione": "Numero di Reynolds (adimensionale)", "unita": "-" },
       { "simbolo": "$\\rho$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
