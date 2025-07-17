@@ -13,8 +13,9 @@ class Unit {
 class UnitCategory {
   final String name;
   final List<Unit> units;
+  final IconData icon;
 
-  UnitCategory({required this.name, required this.units});
+  UnitCategory({required this.name, required this.units, required this.icon});
 }
 
 final List<UnitCategory> _unitCategories = [
@@ -25,30 +26,42 @@ final List<UnitCategory> _unitCategories = [
       Unit(name: 'Chilometro', symbol: 'km', conversionFactor: 1000.0),
       Unit(name: 'Centimetro', symbol: 'cm', conversionFactor: 0.01),
       Unit(name: 'Millimetro', symbol: 'mm', conversionFactor: 0.001),
+      Unit(name: 'Micrometro', symbol: 'µm', conversionFactor: 1e-6),
+      Unit(name: 'Nanometro', symbol: 'nm', conversionFactor: 1e-9),
       Unit(name: 'Miglio', symbol: 'mi', conversionFactor: 1609.34),
       Unit(name: 'Iarda', symbol: 'yd', conversionFactor: 0.9144),
       Unit(name: 'Piede', symbol: 'ft', conversionFactor: 0.3048),
       Unit(name: 'Pollice', symbol: 'in', conversionFactor: 0.0254),
+      Unit(name: 'Miglia nautiche', symbol: 'NM', conversionFactor: 1852.0),
     ],
+    icon: Icons.straighten,
   ),
   UnitCategory(
     name: 'Massa',
     units: [
       Unit(name: 'Chilogrammo', symbol: 'kg', conversionFactor: 1.0),
       Unit(name: 'Grammo', symbol: 'g', conversionFactor: 0.001),
+      Unit(name: 'Milligrammo', symbol: 'mg', conversionFactor: 1e-6),
+      Unit(name: 'Tonnellata metrica', symbol: 't', conversionFactor: 1000.0),
       Unit(name: 'Libbra', symbol: 'lb', conversionFactor: 0.453592),
       Unit(name: 'Oncia', symbol: 'oz', conversionFactor: 0.0283495),
+      Unit(name: 'Carato', symbol: 'ct', conversionFactor: 0.0002),
     ],
+    icon: Icons.scale,
   ),
   UnitCategory(
     name: 'Tempo',
     units: [
       Unit(name: 'Secondo', symbol: 's', conversionFactor: 1.0),
+      Unit(name: 'Millisecondo', symbol: 'ms', conversionFactor: 0.001),
+      Unit(name: 'Microsecondo', symbol: 'µs', conversionFactor: 1e-6),
       Unit(name: 'Minuto', symbol: 'min', conversionFactor: 60.0),
       Unit(name: 'Ora', symbol: 'hr', conversionFactor: 3600.0),
       Unit(name: 'Giorno', symbol: 'day', conversionFactor: 86400.0),
-      Unit(name: 'Anno', symbol: 'yr', conversionFactor: 31536000.0), // --> anno medio
+      Unit(name: 'Settimana', symbol: 'week', conversionFactor: 604800.0),
+      Unit(name: 'Anno', symbol: 'yr', conversionFactor: 31536000.0),
     ],
+    icon: Icons.access_time,
   ),
   UnitCategory(
     name: 'Temperatura',
@@ -57,16 +70,93 @@ final List<UnitCategory> _unitCategories = [
       Unit(name: 'Fahrenheit', symbol: '°F', conversionFactor: 0.0),
       Unit(name: 'Kelvin', symbol: 'K', conversionFactor: 0.0),
     ],
+    icon: Icons.thermostat,
+  ),
+  UnitCategory(
+    name: 'Volume',
+    units: [
+      Unit(name: 'Metro Cubo', symbol: 'm³', conversionFactor: 1.0),
+      Unit(name: 'Litro', symbol: 'L', conversionFactor: 0.001),
+      Unit(name: 'Millilitro', symbol: 'ml', conversionFactor: 1e-6),
+      Unit(name: 'Gallone (USA)', symbol: 'gal (US)', conversionFactor: 0.00378541),
+      Unit(name: 'Piede Cubo', symbol: 'ft³', conversionFactor: 0.0283168),
+      Unit(name: 'Pollice Cubo', symbol: 'in³', conversionFactor: 0.0000163871),
+    ],
+    icon: Icons.fitness_center,
+  ),
+  UnitCategory(
+    name: 'Area',
+    units: [
+      Unit(name: 'Metro Quadrato', symbol: 'm²', conversionFactor: 1.0),
+      Unit(name: 'Chilometro Quadrato', symbol: 'km²', conversionFactor: 1e6),
+      Unit(name: 'Centimetro Quadrato', symbol: 'cm²', conversionFactor: 1e-4),
+      Unit(name: 'Millimetro Quadrato', symbol: 'mm²', conversionFactor: 1e-6),
+      Unit(name: 'Ettaro', symbol: 'ha', conversionFactor: 10000.0),
+      Unit(name: 'Acri', symbol: 'ac', conversionFactor: 4046.86),
+      Unit(name: 'Piede Quadrato', symbol: 'ft²', conversionFactor: 0.092903),
+      Unit(name: 'Pollice Quadrato', symbol: 'in²', conversionFactor: 0.00064516),
+    ],
+    icon: Icons.square_foot,
+  ),
+  UnitCategory(
+    name: 'Velocità',
+    units: [
+      Unit(name: 'Metri al Secondo', symbol: 'm/s', conversionFactor: 1.0),
+      Unit(name: 'Chilometri all\'Ora', symbol: 'km/h', conversionFactor: 0.277778),
+      Unit(name: 'Miglia all\'Ora', symbol: 'mph', conversionFactor: 0.44704),
+      Unit(name: 'Nodi', symbol: 'kn', conversionFactor: 0.514444),
+    ],
+    icon: Icons.speed,
+  ),
+  UnitCategory(
+    name: 'Pressione',
+    units: [
+      Unit(name: 'Pascal', symbol: 'Pa', conversionFactor: 1.0),
+      Unit(name: 'Atmosfera', symbol: 'atm', conversionFactor: 101325.0),
+      Unit(name: 'Bar', symbol: 'bar', conversionFactor: 100000.0),
+      Unit(name: 'PSI', symbol: 'psi', conversionFactor: 6894.76),
+    ],
+    icon: Icons.compress,
+  ),
+  UnitCategory(
+    name: 'Energia',
+    units: [
+      Unit(name: 'Joule', symbol: 'J', conversionFactor: 1.0),
+      Unit(name: 'Chilojoule', symbol: 'kJ', conversionFactor: 1000.0),
+      Unit(name: 'Caloria', symbol: 'cal', conversionFactor: 4.184),
+      Unit(name: 'Chilocaloria', symbol: 'kcal', conversionFactor: 4184.0),
+      Unit(name: 'Elettronvolt', symbol: 'eV', conversionFactor: 1.60218e-19),
+    ],
+    icon: Icons.flash_on,
+  ),
+  UnitCategory(
+    name: 'Potenza',
+    units: [
+      Unit(name: 'Watt', symbol: 'W', conversionFactor: 1.0),
+      Unit(name: 'Chilowatt', symbol: 'kW', conversionFactor: 1000.0),
+      Unit(name: 'Cavallo Vapore (metrico)', symbol: 'CV', conversionFactor: 735.49875),
+      Unit(name: 'Horsepower (UK/US)', symbol: 'hp', conversionFactor: 745.7),
+    ],
+    icon: Icons.power,
+  ),
+  UnitCategory(
+    name: 'Frequenza',
+    units: [
+      Unit(name: 'Hertz', symbol: 'Hz', conversionFactor: 1.0),
+      Unit(name: 'Chilohertz', symbol: 'kHz', conversionFactor: 1000.0),
+      Unit(name: 'Megahertz', symbol: 'MHz', conversionFactor: 1e6),
+      Unit(name: 'Gigahertz', symbol: 'GHz', conversionFactor: 1e9),
+    ],
+    icon: Icons.ssid_chart,
   ),
 ];
 
 class UnitConverterPage extends StatefulWidget {
-
   @override
   State<UnitConverterPage> createState() => _UnitConverterPageState();
 }
 
-class _UnitConverterPageState extends State<UnitConverterPage> {
+class _UnitConverterPageState extends State<UnitConverterPage> with SingleTickerProviderStateMixin {
   final TextEditingController _inputController = TextEditingController();
   final TextEditingController _outputController = TextEditingController();
 
@@ -74,12 +164,12 @@ class _UnitConverterPageState extends State<UnitConverterPage> {
   late Unit _fromUnit;
   late Unit _toUnit;
 
+  late AnimationController _animationController;
+  late Animation<double> _animation;
+
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-    });
-
     _selectedCategory = _unitCategories.first;
     _fromUnit = _selectedCategory.units.first;
     _toUnit = _selectedCategory.units.length > 1
@@ -87,6 +177,12 @@ class _UnitConverterPageState extends State<UnitConverterPage> {
         : _selectedCategory.units.first;
 
     _inputController.addListener(_convert);
+
+    _animationController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 300),
+    );
+    _animation = Tween<double>(begin: 0.0, end: 1.0).animate(_animationController);
   }
 
   @override
@@ -94,8 +190,7 @@ class _UnitConverterPageState extends State<UnitConverterPage> {
     _inputController.removeListener(_convert);
     _inputController.dispose();
     _outputController.dispose();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-    });
+    _animationController.dispose();
     super.dispose();
   }
 
@@ -127,13 +222,9 @@ class _UnitConverterPageState extends State<UnitConverterPage> {
       if (result == result.roundToDouble()) {
         _outputController.text = result.toInt().toString();
       } else {
-        _outputController.text = result.toStringAsFixed(6);
-        if (_outputController.text.contains('.') && _outputController.text.endsWith('0')) {
-          _outputController.text = _outputController.text.replaceAll(RegExp(r'0*$'), '');
-          if (_outputController.text.endsWith('.')) {
-            _outputController.text = _outputController.text.substring(0, _outputController.text.length - 1);
-          }
-        }
+        String formattedResult = result.toStringAsFixed(10);
+        formattedResult = formattedResult.replaceAll(RegExp(r'\.?0+$'), '');
+        _outputController.text = formattedResult;
       }
     });
   }
@@ -172,7 +263,17 @@ class _UnitConverterPageState extends State<UnitConverterPage> {
       _inputController.text = _outputController.text;
       _outputController.text = tempInputValue;
     });
+
+    _animationController.forward(from: 0.0);
     _convert();
+  }
+
+  // Nuovo metodo per pulire i campi
+  void _clearFields() {
+    setState(() {
+      _inputController.clear();
+      _outputController.clear();
+    });
   }
 
   @override
@@ -183,7 +284,7 @@ class _UnitConverterPageState extends State<UnitConverterPage> {
       appBar: AppBar(
         title: const Text('Convertitore Unità'),
         backgroundColor: colorScheme.primaryContainer,
-        iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
+        foregroundColor: colorScheme.onPrimaryContainer,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -204,7 +305,6 @@ class _UnitConverterPageState extends State<UnitConverterPage> {
                       if (newValue != null) {
                         setState(() {
                           _selectedCategory = newValue;
-
                           _fromUnit = newValue.units.first;
                           _toUnit = newValue.units.length > 1 ? newValue.units[1] : newValue.units.first;
                           _convert();
@@ -214,15 +314,19 @@ class _UnitConverterPageState extends State<UnitConverterPage> {
                     items: _unitCategories.map<DropdownMenuItem<UnitCategory>>((UnitCategory category) {
                       return DropdownMenuItem<UnitCategory>(
                         value: category,
-                        child: Text(category.name, style: TextStyle(fontSize: 18, color: colorScheme.onSurface)),
+                        child: Row(
+                          children: [
+                            Icon(category.icon, color: colorScheme.secondary, size: 24),
+                            const SizedBox(width: 10),
+                            Text(category.name, style: TextStyle(fontSize: 18, color: colorScheme.onSurface)),
+                          ],
+                        ),
                       );
                     }).toList(),
                   ),
                 ),
               ),
             ),
-
-            // Campo di Input
             Card(
               margin: const EdgeInsets.only(bottom: 8.0),
               elevation: 2,
@@ -244,40 +348,48 @@ class _UnitConverterPageState extends State<UnitConverterPage> {
                         onChanged: (_) => _convert(),
                       ),
                     ),
-                    DropdownButtonHideUnderline(
-                      child: DropdownButton<Unit>(
-                        value: _fromUnit,
-                        icon: Icon(Icons.arrow_drop_down, color: colorScheme.primary),
-                        onChanged: (Unit? newValue) {
-                          if (newValue != null) {
-                            setState(() {
-                              _fromUnit = newValue;
-                            });
-                            _convert();
-                          }
-                        },
-                        items: _selectedCategory.units.map<DropdownMenuItem<Unit>>((Unit unit) {
-                          return DropdownMenuItem<Unit>(
-                            value: unit,
-                            child: Text(unit.symbol, style: TextStyle(fontSize: 18, color: colorScheme.onSurface)),
-                          );
-                        }).toList(),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8.0),
+                        border: Border.all(color: colorScheme.outline.withOpacity(0.3), width: 1.0),
+                      ),
+                      child: DropdownButtonHideUnderline(
+                        child: DropdownButton<Unit>(
+                          value: _fromUnit,
+                          icon: Icon(Icons.arrow_drop_down, color: colorScheme.primary),
+                          onChanged: (Unit? newValue) {
+                            if (newValue != null) {
+                              setState(() {
+                                _fromUnit = newValue;
+                              });
+                              _convert();
+                            }
+                          },
+                          items: _selectedCategory.units.map<DropdownMenuItem<Unit>>((Unit unit) {
+                            return DropdownMenuItem<Unit>(
+                              value: unit,
+                              child: Text(unit.symbol, style: TextStyle(fontSize: 18, color: colorScheme.onSurface)),
+                            );
+                          }).toList(),
+                        ),
                       ),
                     ),
                   ],
                 ),
               ),
             ),
-
             Align(
               alignment: Alignment.center,
-              child: IconButton(
-                icon: Icon(Icons.swap_vert, size: 36, color: colorScheme.secondary),
-                onPressed: _swapUnits,
-                tooltip: 'Scambia unità',
+              child: RotationTransition(
+                turns: _animation,
+                child: IconButton(
+                  icon: Icon(Icons.swap_vert, size: 36, color: colorScheme.secondary),
+                  onPressed: _swapUnits,
+                  tooltip: 'Scambia unità',
+                ),
               ),
             ),
-
             Card(
               margin: const EdgeInsets.only(top: 8.0),
               elevation: 2,
@@ -298,28 +410,49 @@ class _UnitConverterPageState extends State<UnitConverterPage> {
                         ),
                       ),
                     ),
-                    DropdownButtonHideUnderline(
-                      child: DropdownButton<Unit>(
-                        value: _toUnit,
-                        icon: Icon(Icons.arrow_drop_down, color: colorScheme.primary),
-                        onChanged: (Unit? newValue) {
-                          if (newValue != null) {
-                            setState(() {
-                              _toUnit = newValue;
-                            });
-                            _convert();
-                          }
-                        },
-                        items: _selectedCategory.units.map<DropdownMenuItem<Unit>>((Unit unit) {
-                          return DropdownMenuItem<Unit>(
-                            value: unit,
-                            child: Text(unit.symbol, style: TextStyle(fontSize: 18, color: colorScheme.onSurface)),
-                          );
-                        }).toList(),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8.0),
+                        border: Border.all(color: colorScheme.outline.withOpacity(0.3), width: 1.0),
+                      ),
+                      child: DropdownButtonHideUnderline(
+                        child: DropdownButton<Unit>(
+                          value: _toUnit,
+                          icon: Icon(Icons.arrow_drop_down, color: colorScheme.primary),
+                          onChanged: (Unit? newValue) {
+                            if (newValue != null) {
+                              setState(() {
+                                _toUnit = newValue;
+                              });
+                              _convert();
+                            }
+                          },
+                          items: _selectedCategory.units.map<DropdownMenuItem<Unit>>((Unit unit) {
+                            return DropdownMenuItem<Unit>(
+                              value: unit,
+                              child: Text(unit.symbol, style: TextStyle(fontSize: 18, color: colorScheme.onSurface)),
+                            );
+                          }).toList(),
+                        ),
                       ),
                     ),
                   ],
                 ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton.icon(
+              onPressed: _clearFields,
+              icon: Icon(Icons.clear_all, color: colorScheme.onPrimary),
+              label: Text(
+                'Cancella',
+                style: TextStyle(color: colorScheme.onPrimary),
+              ),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: colorScheme.primary,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
               ),
             ),
           ],
