@@ -5,7 +5,7 @@
     "sottocategoria": "Moto rettilineo uniforme",
     "titolo": "Moto rettilineo uniforme",
     "formula_latex": "x(t) = x_{0} + v \\cdot t",
-    "descrizione": "Descrive il moto di un punto materiale che si muove a velocità costante lungo una direzione retta. $x_0$ è la posizione iniziale, $v$ è la velocità costante e $t$ il tempo.",
+    "descrizione": "Descrive il moto di un punto materiale che si muove a velocità costante lungo una direzione retta.",
     "variabili": [
       {
         "simbolo": "$x(t)$",
@@ -53,7 +53,7 @@
     "sottocategoria": "Moto uniformemente accelerato",
     "titolo": "Moto uniformemente accelerato",
     "formula_latex": "x(t) = x_{0} + v_{0} \\cdot t + \\tfrac{1}{2} a \\cdot t^{2}",
-    "descrizione": "Descrive un moto con accelerazione costante $a$. $x_0$ è la posizione iniziale, $v_0$ la velocità iniziale e $a$ l'accelerazione costante.",
+    "descrizione": "Descrive un moto con accelerazione costante $a$.",
     "variabili": [
       {
         "simbolo": "$x(t)$",
@@ -107,7 +107,7 @@
     "sottocategoria": "Velocità",
     "titolo": "Velocità istantanea",
     "formula_latex": "v(t) = \\dfrac{dx(t)}{dt}",
-    "descrizione": "Velocità istantanea del moto di un punto materiale in funzione del tempo, definita come derivata della posizione $x(t)$ rispetto al tempo $t$.",
+    "descrizione": "La velocità istantanea del moto di un punto materiale in funzione del tempo, definita come derivata della posizione $x(t)$ rispetto al tempo $t$.",
     "variabili": [
       {
         "simbolo": "$v(t)$",
@@ -150,7 +150,7 @@
     "sottocategoria": "Accelerazione",
     "titolo": "Accelerazione istantanea",
     "formula_latex": "a(t) = \\dfrac{dv(t)}{dt} = \\dfrac{d^{2}x(t)}{dt^{2}}",
-    "descrizione": "Accelerazione istantanea $a(t)$ definita come derivata della velocità $v(t)$ rispetto al tempo $t$, o seconda derivata della posizione $x(t)$.",
+    "descrizione": "L'accelerazione istantanea $a(t)$ definita come derivata della velocità $v(t)$ rispetto al tempo $t$, o seconda derivata della posizione $x(t)$.",
     "variabili": [
       {
         "simbolo": "$a(t)$",
@@ -279,14 +279,14 @@
     "id": "CIN_007",
     "categoria": "Cinematica",
     "sottocategoria": "Moto Circolare Uniforme",
-    "titolo": "Velocità tangenziale ",
+    "titolo": "Velocità tangenziale",
     "formula_latex": "v = \\omega \\cdot r",
-    "descrizione": "Nel moto circolare uniforme, la velocità tangenziale $v$ è la velocità con cui un corpo si muove lungo la circonferenza. È costante in modulo ma varia continuamente in direzione. Dipende dalla velocità angolare $\\omega$ e dal raggio $r$ della traiettoria.",
+    "descrizione": "Nel moto circolare uniforme, la velocità tangenziale $v$ è la velocità con cui un corpo si muove lungo la circonferenza. ",
     "variabili": [
       {
         "simbolo": "$v$",
         "descrizione": "Velocità tangenziale",
-        "unita": "m/s"
+        "unita": "m"
       },
       {
         "simbolo": "$\\omega$",
@@ -321,7 +321,7 @@
     "id": "CIN_008",
     "categoria": "Cinematica",
     "sottocategoria": "Moto Circolare Uniforme",
-    "titolo": "Accelerazione centripeta ",
+    "titolo": "Accelerazione centripeta",
     "formula_latex": "a_c = \\frac{v^2}{r} = \\omega^2 r",
     "descrizione": "Nel moto circolare uniforme, l'accelerazione centripeta $a_c$ è l'accelerazione che causa la variazione continua della direzione della velocità tangenziale, mantenendo il corpo sulla traiettoria circolare. È sempre diretta verso il centro della circonferenza.",
     "variabili": [
@@ -371,7 +371,7 @@
     "sottocategoria": "Moto dei Proiettili",
     "titolo": "Gittata (Moto dei Proiettili)",
     "formula_latex": "R = \\frac{v_0^2 \\sin(2\\theta)}{g}",
-    "descrizione": "La gittata $R$ di un proiettile è la distanza orizzontale massima percorsa dal proiettile prima di tornare alla quota di lancio (su terreno pianeggiante). Dipende dalla velocità iniziale $v_0$, dall'angolo di lancio $\\theta$ rispetto all'orizzontale e dall'accelerazione di gravità $g$.",
+    "descrizione": "La gittata $R$ di un proiettile è la distanza orizzontale massima percorsa dal proiettile prima di tornare alla quota di lancio (su terreno pianeggiante).",
     "variabili": [
       {
         "simbolo": "$R$",
@@ -419,7 +419,7 @@
     "sottocategoria": "Moto dei Proiettili",
     "titolo": "Altezza massima (Moto dei Proiettili)",
     "formula_latex": "H = \\frac{v_0^2 \\sin^2(\\theta)}{2g}",
-    "descrizione": "L'altezza massima $H$ raggiunta da un proiettile è il punto più alto della sua traiettoria parabolica. Dipende dalla velocità iniziale $v_0$, dall'angolo di lancio $\\theta$ e dall'accelerazione di gravità $g$.",
+    "descrizione": "L'altezza massima $H$ raggiunta da un proiettile è il punto più alto della sua traiettoria parabolica. ",
     "variabili": [
       {
         "simbolo": "$H$",
@@ -467,7 +467,7 @@
     "sottocategoria": "Moto Armonico Semplice (MAS)",
     "titolo": "Moto Armonico Semplice",
     "formula_latex": "\\begin{cases} x(t) = A \\cos(\\omega t + \\phi_0) \\\\ v(t) = -A \\omega \\sin(\\omega t + \\phi_0) \\\\ a(t) = -A \\omega^2 \\cos(\\omega t + \\phi_0) = -\\omega^2 x(t) \\end{cases}",
-    "descrizione": "Descrive il moto oscillatorio periodico di un oggetto senza attrito. Le equazioni mostrano la posizione $x(t)$, la velocità $v(t)$ e l'accelerazione $a(t)$ in funzione del tempo $t$. $A$ è l'ampiezza massima, $\\omega$ la pulsazione (o frequenza angolare) e $\\phi_0$ la fase iniziale.",
+    "descrizione": "Descrive il moto oscillatorio periodico di un oggetto senza attrito. Le equazioni mostrano la posizione $x(t)$, la velocità $v(t)$ e l'accelerazione $a(t)$ in funzione del tempo $t$.",
     "variabili": [
       {
         "simbolo": "$x(t)$",
