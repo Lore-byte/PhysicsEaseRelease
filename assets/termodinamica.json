@@ -98,9 +98,9 @@
     "id": "TER_005",
     "categoria": "Termodinamica",
     "sottocategoria": "Gas Ideali",
-    "titolo": "Prima Legge di Gay-Lussac (Trasformazione Isobara)",
+    "titolo": "Prima Legge di Gay-Lussac",
     "formula_latex": "\\frac{V_1}{T_1} = \\frac{V_2}{T_2}",
-    "descrizione": "Per una massa fissa di gas a pressione costante (trasformazione isobara), il volume $V$ è direttamente proporzionale alla temperatura assoluta $T$.",
+    "descrizione": "Per una massa fissa di gas a pressione costante (**trasformazione isobara**), il volume $V$ è direttamente proporzionale alla temperatura assoluta $T$.",
     "variabili": [
       { "simbolo": "$V_1$", "descrizione": "Volume iniziale", "unita": "m³" },
       { "simbolo": "$T_1$", "descrizione": "Temperatura iniziale assoluta", "unita": "K" },
@@ -122,9 +122,9 @@
     "id": "TER_006",
     "categoria": "Termodinamica",
     "sottocategoria": "Gas Ideali",
-    "titolo": "Seconda Legge di Gay-Lussac (Trasformazione Isocora)",
+    "titolo": "Seconda Legge di Gay-Lussac",
     "formula_latex": "\\frac{P_1}{T_1} = \\frac{P_2}{T_2}",
-    "descrizione": "Per una massa fissa di gas a volume costante (trasformazione isocora), la pressione $P$ è direttamente proporzionale alla temperatura assoluta $T$.",
+    "descrizione": "Per una massa fissa di gas a volume costante (**trasformazione isocora**), la pressione $P$ è direttamente proporzionale alla temperatura assoluta $T$.",
     "variabili": [
       { "simbolo": "$P_1$", "descrizione": "Pressione iniziale", "unita": "Pa" },
       { "simbolo": "$T_1$", "descrizione": "Temperatura iniziale assoluta", "unita": "K" },
@@ -146,9 +146,9 @@
     "id": "TER_007",
     "categoria": "Termodinamica",
     "sottocategoria": "Gas Ideali",
-    "titolo": "Legge di Boyle (Trasformazione Isoterma)",
+    "titolo": "Legge di Boyle",
     "formula_latex": "P_1 \\cdot V_1 = P_2 \\cdot V_2",
-    "descrizione": "Per una massa fissa di gas a temperatura costante (trasformazione isoterma), pressione $P$ e volume $V$ sono inversamente proporzionali.",
+    "descrizione": "Per una massa fissa di gas a temperatura costante (**trasformazione isoterma**), pressione $P$ e volume $V$ sono inversamente proporzionali.",
     "variabili": [
       { "simbolo": "$P_1$", "descrizione": "Pressione iniziale", "unita": "Pa" },
       { "simbolo": "$V_1$", "descrizione": "Volume iniziale", "unita": "m³" },
@@ -559,7 +559,7 @@
     "formula_latex": "COP_{frigo} = \\frac{Q_C}{W_{in}} = \\frac{Q_C}{Q_H - Q_C}",
     "descrizione": "Il coefficiente di prestazione ($COP_{frigo}$) di un frigorifero indica quanto calore $Q_C$ viene rimosso dalla sorgente fredda per unità di lavoro $W_{in}$ fornito.",
     "variabili": [
-      { "simbolo": "$COP_{frigo}$", "descrizione": "Coefficiente di prestazione del frigorifero", "unita": "" },
+      { "simbolo": "$COP_{frigo}$", "descrizione": "Coefficiente di prestazione del frigorifero", "unita": "-" },
       { "simbolo": "$Q_C$", "descrizione": "Calore rimosso dalla sorgente fredda", "unita": "J" },
       { "simbolo": "$W_{in}$", "descrizione": "Lavoro in ingresso al sistema", "unita": "J" },
       { "simbolo": "$Q_H$", "descrizione": "Calore ceduto alla sorgente calda", "unita": "J" }
@@ -583,7 +583,7 @@
     "formula_latex": "COP_{pompa} = \\frac{Q_H}{W_{in}} = \\frac{Q_H}{Q_H - Q_C}",
     "descrizione": "Il coefficiente di prestazione ($COP_{pompa}$) di una pompa di calore indica quanto calore $Q_H$ viene fornito alla sorgente calda per unità di lavoro $W_{in}$ fornito.",
     "variabili": [
-      { "simbolo": "$COP_{pompa}$", "descrizione": "Coefficiente di prestazione della pompa di calore", "unita": "" },
+      { "simbolo": "$COP_{pompa}$", "descrizione": "Coefficiente di prestazione della pompa di calore", "unita": "-" },
       { "simbolo": "$Q_H$", "descrizione": "Calore fornito alla sorgente calda", "unita": "J" },
       { "simbolo": "$W_{in}$", "descrizione": "Lavoro in ingresso al sistema", "unita": "J" },
       { "simbolo": "$Q_C$", "descrizione": "Calore rimosso dalla sorgente fredda", "unita": "J" }
