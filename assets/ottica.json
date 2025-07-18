@@ -98,7 +98,7 @@
     "sottocategoria": "Onde su Corda",
     "titolo": "Modi Normali di Oscillazione di una Corda (Frequenze)",
     "formula_latex": "f_n = \\frac{n v}{2L}",
-    "descrizione": "Le frequenze $f_n$ dei modi normali (armoniche) di oscillazione di una corda fissa a entrambe le estremità, dove $n$ è un numero intero ($1, 2, 3, ...$) che indica l'armonica, $v$ è la velocità dell'onda sulla corda e $L$ è la lunghezza della corda.",
+    "descrizione": "Le frequenze $f_n$ dei modi normali (armoniche) di oscillazione di una corda fissa a entrambe le estremità.",
     "variabili": [
       { "simbolo": "$f_n$", "descrizione": "Frequenza dell'n-esima armonica", "unita": "Hz" },
       { "simbolo": "$n$", "descrizione": "Numero dell'armonica ($1$ per la fondamentale)", "unita": "" },
@@ -122,7 +122,7 @@
     "sottocategoria": "Onde Sonore",
     "titolo": "Velocità del suono nell'aria",
     "formula_latex": "v_{\\text{suono}} \\approx 331.4 + 0.6 \\cdot T_c",
-    "descrizione": "La velocità del suono $v_{\\text{suono}}$ nell'aria dipende dalla temperatura. Questa formula empirica stima la velocità in m/s in base alla temperatura $T_c$ in gradi Celsius.",
+    "descrizione": "La velocità del suono $v_{\\text{suono}}$ nell'aria dipende dalla temperatura. Questa formula **empirica** stima la velocità in m/s in base alla temperatura $T_c$ in gradi Celsius.",
     "variabili": [
       { "simbolo": "$v_{\\text{suono}}$", "descrizione": "Velocità del suono", "unita": "m/s" },
       { "simbolo": "$T_c$", "descrizione": "Temperatura in gradi Celsius", "unita": "°C" }
@@ -154,7 +154,7 @@
     ],
     "esempi": [
       {
-        "titolo": "Esempio (Sorgente in avvicinamento, Osservatore fermo)",
+        "titolo": "Esempio",
         "testo": "Un'ambulanza (sorgente) emette un suono di $400 \\text{ Hz}$ ($f$) e si avvicina a $30 \\text{ m/s}$ ($v_s$) a un osservatore fermo ($v_o = 0$). Velocità del suono nell'aria $v = 343 \\text{ m/s}$. $f' = 400 \\cdot (343 / (343 - 30)) \\approx 438.8 \\text{ Hz}$."
       }
     ],
@@ -335,7 +335,7 @@
     "formula_latex": "M = -\\frac{d_i}{d_o} = \\frac{h_i}{h_o}",
     "descrizione": "L'ingrandimento lineare $M$ descrive quanto l'immagine è più grande o più piccola rispetto all'oggetto, e se è diritta o capovolta. $h_i$ è l'altezza dell'immagine, $h_o$ è l'altezza dell'oggetto. Il segno meno indica che le immagini reali sono capovolte.",
     "variabili": [
-      { "simbolo": "$M$", "descrizione": "Ingrandimento lineare", "unita": "" },
+      { "simbolo": "$M$", "descrizione": "Ingrandimento lineare", "unita": "-" },
       { "simbolo": "$d_i$", "descrizione": "Distanza dell'immagine", "unita": "m" },
       { "simbolo": "$d_o$", "descrizione": "Distanza dell'oggetto", "unita": "m" },
       { "simbolo": "$h_i$", "descrizione": "Altezza dell'immagine", "unita": "m" },
@@ -432,11 +432,11 @@
       { "simbolo": "$\\Phi_v$", "descrizione": "Flusso luminoso", "unita": "lm" },
       { "simbolo": "$K_m$", "descrizione": "Massima efficacia luminosa ($683 \\text{ lm/W}$)", "unita": "lm/W" },
       { "simbolo": "$P_e(\\lambda)$", "descrizione": "Potenza radiante a una data lunghezza d'onda", "unita": "W/m" },
-      { "simbolo": "$V(\\lambda)$", "descrizione": "Funzione di efficienza luminosa", "unita": "" }
+      { "simbolo": "$V(\\lambda)$", "descrizione": "Funzione di efficienza luminosa", "unita": "-" }
     ],
     "esempi": [
       {
-        "titolo": "Esempio (concettuale)",
+        "titolo": "Esempio",
         "testo": "Questa formula calcola il flusso luminoso totale di una lampada, considerando lo spettro della luce emessa e come l'occhio umano la percepisce."
       }
     ],
@@ -478,12 +478,12 @@
     "variabili": [
       { "simbolo": "$d$", "descrizione": "Distanza tra le fessure", "unita": "m" },
       { "simbolo": "$\\theta$", "descrizione": "Angolo di deviazione del massimo", "unita": "rad" },
-      { "simbolo": "$m$", "descrizione": "Ordine del massimo (intero)", "unita": "" },
+      { "simbolo": "$m$", "descrizione": "Ordine del massimo (intero)", "unita": "-" },
       { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d'onda della luce", "unita": "m" }
     ],
     "esempi": [
       {
-        "titolo": "Esempio (concettuale)",
+        "titolo": "Esempio",
         "testo": "Questa formula è usata per trovare la posizione delle bande luminose in un esperimento di interferenza con doppia fessura."
       }
     ],
@@ -502,12 +502,12 @@
     "variabili": [
       { "simbolo": "$d$", "descrizione": "Distanza tra le fessure", "unita": "m" },
       { "simbolo": "$\\theta$", "descrizione": "Angolo di deviazione del minimo", "unita": "rad" },
-      { "simbolo": "$m$", "descrizione": "Ordine del minimo (intero)", "unita": "" },
+      { "simbolo": "$m$", "descrizione": "Ordine del minimo (intero)", "unita": "-" },
       { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d'onda della luce", "unita": "m" }
     ],
     "esempi": [
       {
-        "titolo": "Esempio (concettuale)",
+        "titolo": "Esempio",
         "testo": "Questa formula è usata per trovare la posizione delle bande scure in un esperimento di interferenza con doppia fessura."
       }
     ],
@@ -526,7 +526,7 @@
     "variabili": [
       { "simbolo": "$a$", "descrizione": "Larghezza della fessura", "unita": "m" },
       { "simbolo": "$\\theta$", "descrizione": "Angolo di deviazione del minimo", "unita": "rad" },
-      { "simbolo": "$m$", "descrizione": "Ordine del minimo (intero, non zero)", "unita": "" },
+      { "simbolo": "$m$", "descrizione": "Ordine del minimo (intero, non zero)", "unita": "-" },
       { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d'onda della luce", "unita": "m" }
     ],
     "esempi": [
