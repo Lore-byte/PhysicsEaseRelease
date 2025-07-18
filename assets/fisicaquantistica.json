@@ -98,7 +98,7 @@
     "sottocategoria": "Effetto Compton",
     "titolo": "Effetto Compton",
     "formula_latex": "\\Delta\\lambda = \\frac{h}{m_e c}(1 - \\cos\\theta)",
-    "descrizione": "Lo spostamento in lunghezza d’onda di un fotone diffuso da un elettrone libero dipende dall’angolo di scattering θ.",
+    "descrizione": "Lo spostamento in lunghezza d’onda di un fotone diffuso da un elettrone libero dipende dall’angolo di **scattering** θ.",
     "variabili": [
       { "simbolo": "$\\Delta\\lambda$", "descrizione": "Variazione lunghezza d’onda", "unita": "m" },
       { "simbolo": "$h$", "descrizione": "Costante di Planck", "unita": "J·s" },
@@ -122,7 +122,7 @@
     "variabili": [
       { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d’onda", "unita": "m" },
       { "simbolo": "$R$", "descrizione": "Costante di Rydberg", "unita": "m⁻¹" },
-      { "simbolo": "$n_1,n_2$", "descrizione": "Numeri quantici principali", "unita": "" }
+      { "simbolo": "$n_1,n_2$", "descrizione": "Numeri quantici principali", "unita": "-" }
     ],
     "esempi": [],
     "link_correlati": ["QNT_009","QNT_010"],
@@ -139,7 +139,7 @@
     "descrizione": "La fase dell’azione meccanica lungo un’orbita chiusa deve essere un multiplo intero di h.",
     "variabili": [
       { "simbolo": "$p$", "descrizione": "Quantità di moto", "unita": "kg·m/s" },
-      { "simbolo": "$n$", "descrizione": "Numero quantico", "unita": "" },
+      { "simbolo": "$n$", "descrizione": "Numero quantico", "unita": "-" },
       { "simbolo": "$h$", "descrizione": "Costante di Planck", "unita": "J·s" }
     ],
     "esempi": [],
@@ -154,11 +154,11 @@
     "sottocategoria": "Atomo di Bohr",
     "titolo": "Raggio dell’Orbita n-esima dell’Atomo di Idrogeno",
     "formula_latex": "\\begin{aligned} r_n &= a_0 n^2 \\\\ a_0 &= \\frac{4\\pi\\varepsilon_0\\hbar^2}{m_e e^2} \\end{aligned}",
-    "descrizione": "Secondo il modello di Bohr, l’elettrone percorre orbite circolari quantizzate di raggio r_n.",
+    "descrizione": "Secondo il modello di Bohr, l’elettrone percorre orbite circolari quantizzate di raggio $r_n$.",
     "variabili": [
       { "simbolo": "$r_n$", "descrizione": "Raggio dell’orbita n", "unita": "m" },
       { "simbolo": "$a_0$", "descrizione": "Raggio di Bohr", "unita": "m" },
-      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "" },
+      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "-" },
       { "simbolo": "$\\varepsilon_0$", "descrizione": "Permittività del vuoto", "unita": "F/m" },
       { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" },
       { "simbolo": "$m_e$", "descrizione": "Massa dell’elettrone", "unita": "kg" },
@@ -183,7 +183,7 @@
       { "simbolo": "$e$", "descrizione": "Carica dell’elettrone", "unita": "C" },
       { "simbolo": "$\\varepsilon_0$", "descrizione": "Permittività del vuoto", "unita": "F/m" },
       { "simbolo": "$h$", "descrizione": "Costante di Planck", "unita": "J·s" },
-      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "" }
+      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "-" }
     ],
     "esempi": [],
     "link_correlati": ["QNT_009","QNT_016"],
@@ -220,7 +220,7 @@
       { "simbolo": "$m_e$", "descrizione": "Massa dell’elettrone", "unita": "kg" },
       { "simbolo": "$v_n$", "descrizione": "Velocità nell’orbita n", "unita": "m/s" },
       { "simbolo": "$r_n$", "descrizione": "Raggio dell’orbita n", "unita": "m" },
-      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "" },
+      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "-" },
       { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" }
     ],
     "esempi": [],
@@ -237,7 +237,7 @@
     "formula_latex": "n\\lambda = 2d\\sin\\theta",
     "descrizione": "La diffrazione X da un reticolo cristallino avviene secondo questa relazione tra lunghezza d’onda, distanza interplanare d e angolo θ.",
     "variabili": [
-      { "simbolo": "$n$", "descrizione": "Ordine di diffrazione", "unita": "" },
+      { "simbolo": "$n$", "descrizione": "Ordine di diffrazione", "unita": "-" },
       { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d’onda", "unita": "m" },
       { "simbolo": "$d$", "descrizione": "Distanza interplanare", "unita": "m" },
       { "simbolo": "$\\theta$", "descrizione": "Angolo di diffrazione", "unita": "rad" }
@@ -256,10 +256,10 @@
     "formula_latex": "i\\hbar\\frac{\\partial}{\\partial t}\\Psi(\\mathbf{r},t) = \\hat H\\Psi(\\mathbf{r},t)",
     "descrizione": "La funzione d’onda Ψ evolve nel tempo secondo l’operatore Hamiltoniano ˆH.",
     "variabili": [
-      { "simbolo": "$\\Psi(\\mathbf{r},t)$", "descrizione": "Funzione d’onda", "unita": "" },
+      { "simbolo": "$\\Psi(\\mathbf{r},t)$", "descrizione": "Funzione d’onda", "unita": "-" },
       { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" },
-      { "simbolo": "$\\hat H$", "descrizione": "Operatore Hamiltoniano", "unita": "" },
-      { "simbolo": "$i$", "descrizione": "Unità immaginaria", "unita": "" }
+      { "simbolo": "$\\hat H$", "descrizione": "Operatore Hamiltoniano", "unita": "-" },
+      { "simbolo": "$i$", "descrizione": "Unità immaginaria", "unita": "-" }
     ],
     "esempi": [],
     "link_correlati": [],
@@ -297,7 +297,7 @@
       { "simbolo": "$e$", "descrizione": "Carica dell’elettrone", "unita": "C" },
       { "simbolo": "$\\varepsilon_0$", "descrizione": "Permittività del vuoto", "unita": "F/m" },
       { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" },
-      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "" }
+      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "-" }
     ],
     "esempi": [],
     "link_correlati": ["QNT_010","QNT_017"],
@@ -313,12 +313,12 @@
     "formula_latex": "E_n = -\\frac{Z^2\\mu e^4}{2(4\\pi\\varepsilon_0)^2\\hbar^2}\\frac{1}{n^2}",
     "descrizione": "Gli atomi idrogenoidi (un solo elettrone, carica nucleare Ze) hanno livelli energetici analogo all’idrogeno, proporzionali a Z².",
     "variabili": [
-      { "simbolo": "$Z$", "descrizione": "Numero atomico", "unita": "" },
+      { "simbolo": "$Z$", "descrizione": "Numero atomico", "unita": "-" },
       { "simbolo": "$\\mu$", "descrizione": "Massa ridotta", "unita": "kg" },
       { "simbolo": "$e$", "descrizione": "Carica dell’elettrone", "unita": "C" },
       { "simbolo": "$\\varepsilon_0$", "descrizione": "Permittività del vuoto", "unita": "F/m" },
       { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" },
-      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "" }
+      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "-" }
     ],
     "esempi": [],
     "link_correlati": ["QNT_016"],
@@ -335,7 +335,7 @@
     "descrizione": "Il modulo del momento angolare orbitale è quantizzato secondo il numero quantico azimutale l.",
     "variabili": [
       { "simbolo": "$L$", "descrizione": "Momento angolare orbitale", "unita": "J·s" },
-      { "simbolo": "$l$", "descrizione": "Numero quantico azimutale", "unita": "" },
+      { "simbolo": "$l$", "descrizione": "Numero quantico azimutale", "unita": "-" },
       { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" }
     ],
     "esempi": [],
@@ -350,7 +350,7 @@
     "sottocategoria": "Momento Magnetico",
     "titolo": "Momento Magnetico Orbitale di un Elettrone Atomico",
     "formula_latex": "\\mu_l = -\\frac{e}{2m_e}L",
-    "descrizione": "Il momento magnetico orbitale associato al momento angolare L vale μ_l.",
+    "descrizione": "Il momento magnetico orbitale associato al momento angolare L vale $μ_l$.",
     "variabili": [
       { "simbolo": "$\\mu_l$", "descrizione": "Momento magnetico orbitale", "unita": "J/T" },
       { "simbolo": "$e$", "descrizione": "Carica dell’elettrone", "unita": "C" },
@@ -369,11 +369,11 @@
     "sottocategoria": "Effetto Zeeman",
     "titolo": "Effetto di un Campo Magnetico sull’Energia dell’Atomo",
     "formula_latex": "\\Delta E = \\mu_B m_l B",
-    "descrizione": "In presenza di un campo magnetico B, i livelli di energia si sdoppiano in base al numero quantico magnetico m_l.",
+    "descrizione": "In presenza di un campo magnetico B, i livelli di energia si sdoppiano in base al numero quantico magnetico $m_l$.",
     "variabili": [
       { "simbolo": "$\\Delta E$", "descrizione": "Scostamento energetico", "unita": "J" },
       { "simbolo": "$\\mu_B$", "descrizione": "Magnetone di Bohr", "unita": "J/T" },
-      { "simbolo": "$m_l$", "descrizione": "Numero quantico magnetico", "unita": "" },
+      { "simbolo": "$m_l$", "descrizione": "Numero quantico magnetico", "unita": "-" },
       { "simbolo": "$B$", "descrizione": "Intensità del campo magnetico", "unita": "T" }
     ],
     "esempi": [],
@@ -391,7 +391,7 @@
     "descrizione": "Lo spin è il momento angolare intrinseco dell’elettrone, quantizzato con numero quantico s=½.",
     "variabili": [
       { "simbolo": "$S$", "descrizione": "Momento angolare intrinseco", "unita": "J·s" },
-      { "simbolo": "$s$", "descrizione": "Numero quantico di spin", "unita": "" },
+      { "simbolo": "$s$", "descrizione": "Numero quantico di spin", "unita": "-" },
       { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" }
     ],
     "esempi": [],
@@ -406,10 +406,10 @@
     "sottocategoria": "Momento Magnetico",
     "titolo": "Momento Magnetico Intrinseco dell’Elettrone",
     "formula_latex": "\\begin{aligned} \\mu_s &= -g_s\\frac{e}{2m_e}S \\\\ g_s &\\approx 2 \\end{aligned}",
-    "descrizione": "L’elettrone possiede un momento magnetico di spin proporzionale al suo momento angolare intrinseco S e al fattore giromagnetico g_s.",
+    "descrizione": "L’elettrone possiede un momento magnetico di spin proporzionale al suo momento angolare intrinseco S e al fattore giromagnetico $g_s$.",
     "variabili": [
       { "simbolo": "$\\mu_s$", "descrizione": "Momento magnetico di spin", "unita": "J/T" },
-      { "simbolo": "$g_s$", "descrizione": "Fattore giromagnetico di spin", "unita": "" },
+      { "simbolo": "$g_s$", "descrizione": "Fattore giromagnetico di spin", "unita": "-" },
       { "simbolo": "$e$", "descrizione": "Carica dell’elettrone", "unita": "C" },
       { "simbolo": "$m_e$", "descrizione": "Massa dell’elettrone", "unita": "kg" },
       { "simbolo": "$S$", "descrizione": "Momento angolare intrinseco", "unita": "J·s" }

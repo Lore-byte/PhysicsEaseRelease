@@ -5,12 +5,12 @@
     "sottocategoria": "Nucleo Atomico",
     "titolo": "Difetto di Massa",
     "formula_latex": "\\Delta m = Z m_p + N m_n - m_{\\text{nucleo}}",
-    "descrizione": "La differenza tra la massa totale dei nucleoni separati (Z protoni e N neutroni) e la massa effettiva del nucleo.",
+    "descrizione": "La differenza tra la massa totale dei **nucleoni** separati (Z protoni e N neutroni) e la massa effettiva del nucleo.",
     "variabili": [
       { "simbolo": "$\\Delta m$", "descrizione": "Difetto di massa", "unita": "kg" },
-      { "simbolo": "$Z$", "descrizione": "Numero di protoni", "unita": "" },
+      { "simbolo": "$Z$", "descrizione": "Numero di protoni", "unita": "-" },
       { "simbolo": "$m_p$", "descrizione": "Massa del protone", "unita": "kg" },
-      { "simbolo": "$N$", "descrizione": "Numero di neutroni", "unita": "" },
+      { "simbolo": "$N$", "descrizione": "Numero di neutroni", "unita": "-" },
       { "simbolo": "$m_n$", "descrizione": "Massa del neutrone", "unita": "kg" },
       { "simbolo": "$m_{\\text{nucleo}}$", "descrizione": "Massa del nucleo", "unita": "kg" }
     ],
@@ -47,9 +47,9 @@
     "^{A}_{Z}X \\to ^{A-4}_{Z-2}Y + ^{4}_{2}\\mathrm{He} + Q",
     "descrizione": "Emissione di una particella α (nucleo di elio-4) da un nucleo instabile, con rilascio di energia Q.",
     "variabili": [
-      { "simbolo": "$^{A}_{Z}X$", "descrizione": "Nucleo padre", "unita": "" },
-      { "simbolo": "$^{A-4}_{Z-2}Y$", "descrizione": "Nucleo figlio", "unita": "" },
-      { "simbolo": "$^4_2\\mathrm{He}$", "descrizione": "Particella α", "unita": "" },
+      { "simbolo": "$^{A}_{Z}X$", "descrizione": "Nucleo padre", "unita": "-" },
+      { "simbolo": "$^{A-4}_{Z-2}Y$", "descrizione": "Nucleo figlio", "unita": "-" },
+      { "simbolo": "$^4_2\\mathrm{He}$", "descrizione": "Particella α", "unita": "-" },
       { "simbolo": "$Q$", "descrizione": "Energia rilasciata", "unita": "J" }
     ],
     "esempi": [],
@@ -67,10 +67,10 @@
     "n \\to p + e^{-} + \\bar\\nu_e + Q",
     "descrizione": "Un neutrone si trasforma in protone emettendo un elettrone e un antineutrino elettronico.",
     "variabili": [
-      { "simbolo": "$n$", "descrizione": "Neutrone", "unita": "" },
-      { "simbolo": "$p$", "descrizione": "Protone", "unita": "" },
-      { "simbolo": "$e^{-}$", "descrizione": "Elettrone", "unita": "" },
-      { "simbolo": "$\\bar\\nu_e$", "descrizione": "Antineutrino elettronico", "unita": "" },
+      { "simbolo": "$n$", "descrizione": "Neutrone", "unita": "-" },
+      { "simbolo": "$p$", "descrizione": "Protone", "unita": "-" },
+      { "simbolo": "$e^{-}$", "descrizione": "Elettrone", "unita": "-" },
+      { "simbolo": "$\\bar\\nu_e$", "descrizione": "Antineutrino elettronico", "unita": "-" },
       { "simbolo": "$Q$", "descrizione": "Energia di decadimento", "unita": "J" }
     ],
     "esempi": [],
@@ -88,10 +88,10 @@
     "p \\to n + e^{+} + \\nu_e + Q",
     "descrizione": "Un protone si trasforma in neutrone emettendo un positrone e un neutrino elettronico.",
     "variabili": [
-      { "simbolo": "$p$", "descrizione": "Protone", "unita": "" },
-      { "simbolo": "$n$", "descrizione": "Neutrone", "unita": "" },
-      { "simbolo": "$e^{+}$", "descrizione": "Positrone", "unita": "" },
-      { "simbolo": "$\\nu_e$", "descrizione": "Neutrino elettronico", "unita": "" },
+      { "simbolo": "$p$", "descrizione": "Protone", "unita": "-" },
+      { "simbolo": "$n$", "descrizione": "Neutrone", "unita": "-" },
+      { "simbolo": "$e^{+}$", "descrizione": "Positrone", "unita": "-" },
+      { "simbolo": "$\\nu_e$", "descrizione": "Neutrino elettronico", "unita": "-" },
       { "simbolo": "$Q$", "descrizione": "Energia di decadimento", "unita": "J" }
     ],
     "esempi": [],
@@ -109,9 +109,9 @@
     "^{A}_{Z}X^{*} \\to ^{A}_{Z}X + \\gamma + Q",
     "descrizione": "Transizione di un nucleo da uno stato eccitato X* allo stato fondamentale X con emissione di fotone γ.",
     "variabili": [
-      { "simbolo": "$^{A}_{Z}X^{*}$", "descrizione": "Nucleo eccitato", "unita": "" },
-      { "simbolo": "$^{A}_{Z}X$", "descrizione": "Nucleo a stato fondamentale", "unita": "" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fotone gamma", "unita": "" },
+      { "simbolo": "$^{A}_{Z}X^{*}$", "descrizione": "Nucleo eccitato", "unita": "-" },
+      { "simbolo": "$^{A}_{Z}X$", "descrizione": "Nucleo a stato fondamentale", "unita": "-" },
+      { "simbolo": "$\\gamma$", "descrizione": "Fotone gamma", "unita": "-" },
       { "simbolo": "$Q$", "descrizione": "Energia emessa", "unita": "J" }
     ],
     "esempi": [],
@@ -128,8 +128,8 @@
     "formula_latex": "N(t) = N_0 e^{-\\lambda t}",
     "descrizione": "Descrive come il numero di nuclei radioattivi diminuisce esponenzialmente nel tempo con costante di decadimento λ.",
     "variabili": [
-      { "simbolo": "$N(t)$", "descrizione": "Nuclei rimanenti a tempo t", "unita": "" },
-      { "simbolo": "$N_0$", "descrizione": "Nuclei iniziali a t=0", "unita": "" },
+      { "simbolo": "$N(t)$", "descrizione": "Nuclei rimanenti a tempo t", "unita": "-" },
+      { "simbolo": "$N_0$", "descrizione": "Nuclei iniziali a t=0", "unita": "-" },
       { "simbolo": "$\\lambda$", "descrizione": "Costante di decadimento", "unita": "s^{-1}" },
       { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" }
     ],
@@ -148,7 +148,7 @@
     "descrizione": "Tempo necessario affinché la metà dei nuclei radioattivi di un campione decada.",
     "variabili": [
       { "simbolo": "$t_{1/2}$", "descrizione": "Periodo di dimezzamento", "unita": "s" },
-      { "simbolo": "$\\ln 2$", "descrizione": "Logaritmo naturale di 2", "unita": "" },
+      { "simbolo": "$\\ln 2$", "descrizione": "Logaritmo naturale di 2", "unita": "-" },
       { "simbolo": "$\\lambda$", "descrizione": "Costante di decadimento", "unita": "s^{-1}" }
     ],
     "esempi": [],
@@ -167,7 +167,7 @@
     "variabili": [
       { "simbolo": "$A$", "descrizione": "Attività", "unita": "Bq" },
       { "simbolo": "$\\lambda$", "descrizione": "Costante di decadimento", "unita": "s^{-1}" },
-      { "simbolo": "$N$", "descrizione": "Nuclei rimanenti", "unita": "" }
+      { "simbolo": "$N$", "descrizione": "Nuclei rimanenti", "unita": "-" }
     ],
     "esempi": [],
     "link_correlati": ["NUC_007","NUC_008"],
@@ -203,7 +203,7 @@
     "variabili": [
       { "simbolo": "$H$", "descrizione": "Dose equivalente", "unita": "Sv" },
       { "simbolo": "$D$", "descrizione": "Dose assorbita", "unita": "Gy" },
-      { "simbolo": "$w_R$", "descrizione": "Fattore di qualità della radiazione", "unita": "" }
+      { "simbolo": "$w_R$", "descrizione": "Fattore di qualità della radiazione", "unita": "-" }
     ],
     "esempi": [],
     "link_correlati": ["NUC_010"],
@@ -219,10 +219,10 @@
     "formula_latex": "{}^{A}_{Z}X + n \\to \\sum_i {}^{A_i}_{Z_i}Y_i + \\nu\\,n + Q",
     "descrizione": "Scissione di un nucleo pesante in frammenti più leggeri con emissione di neutroni e rilascio di energia Q.",
     "variabili": [
-      { "simbolo": "$^{A}_{Z}X$", "descrizione": "Nucleo fissile", "unita": "" },
-      { "simbolo": "$n$", "descrizione": "Neutrone incidente", "unita": "" },
-      { "simbolo": "$^{A_i}_{Z_i}Y_i$", "descrizione": "Frammenti di fissione", "unita": "" },
-      { "simbolo": "$\\nu$", "descrizione": "Numero di neutroni emessi", "unita": "" },
+      { "simbolo": "$^{A}_{Z}X$", "descrizione": "Nucleo fissile", "unita": "-" },
+      { "simbolo": "$n$", "descrizione": "Neutrone incidente", "unita": "-" },
+      { "simbolo": "$^{A_i}_{Z_i}Y_i$", "descrizione": "Frammenti di fissione", "unita": "-" },
+      { "simbolo": "$\\nu$", "descrizione": "Numero di neutroni emessi", "unita": "-" },
       { "simbolo": "$Q$", "descrizione": "Energia rilasciata", "unita": "J" }
     ],
     "esempi": [],
@@ -239,8 +239,8 @@
     "formula_latex": "\\begin{aligned} A + B &\\to C + Q \\\\ Q &= (m_A + m_B - m_C)c^2 \\end{aligned}",
     "descrizione": "Unione di due nuclei leggeri per formare un nucleo più pesante, con massa mancante convertita in energia Q.",
     "variabili": [
-      { "simbolo": "$A,B$", "descrizione": "Nuclei reagenti", "unita": "" },
-      { "simbolo": "$C$", "descrizione": "Nucleo prodotto", "unita": "" },
+      { "simbolo": "$A,B$", "descrizione": "Nuclei reagenti", "unita": "-" },
+      { "simbolo": "$C$", "descrizione": "Nucleo prodotto", "unita": "-" },
       { "simbolo": "$m_A,m_B,m_C$", "descrizione": "Masse dei nuclei", "unita": "kg" },
       { "simbolo": "$Q$", "descrizione": "Energia di fusione", "unita": "J" },
       { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" }

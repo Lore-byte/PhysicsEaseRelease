@@ -60,7 +60,7 @@
       { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
       { "simbolo": "$d\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza del filo", "unita": "m" },
       { "simbolo": "$r$", "descrizione": "Distanza dal tratto di filo al punto", "unita": "m" },
-      { "simbolo": "$\\hat{r}$", "descrizione": "Versore dalla sorgente al punto", "unita": "" }
+      { "simbolo": "$\\hat{r}$", "descrizione": "Versore dalla sorgente al punto", "unita": "-" }
     ],
     "esempi": [
       {
@@ -352,7 +352,7 @@
       { "simbolo": "$\\vec{\\mu}$", "descrizione": "Momento magnetico della spira", "unita": "A * m²" },
       { "simbolo": "$I$", "descrizione": "Corrente nella spira", "unita": "A" },
       { "simbolo": "$A$", "descrizione": "Area della spira", "unita": "m²" },
-      { "simbolo": "$\\hat{n}$", "descrizione": "Versore normale alla superficie della spira", "unita": "" }
+      { "simbolo": "$\\hat{n}$", "descrizione": "Versore normale alla superficie della spira", "unita": "-" }
     ],
     "esempi": [
       {
@@ -373,7 +373,7 @@
     "formula_latex": "\\mu_r = \\frac{\\mu}{\\mu_0}",
     "descrizione": "La permeabilità magnetica relativa $\\mu_r$ di un materiale è il rapporto tra la permeabilità magnetica del materiale $\\mu$ e la permeabilità magnetica del vuoto $\\mu_0$. Indica quanto un materiale intensifica o attenua un campo magnetico.",
     "variabili": [
-      { "simbolo": "$\\mu_r$", "descrizione": "Permeabilità magnetica relativa", "unita": "" },
+      { "simbolo": "$\\mu_r$", "descrizione": "Permeabilità magnetica relativa", "unita": "-" },
       { "simbolo": "$\\mu$", "descrizione": "Permeabilità magnetica del materiale", "unita": "N/A²" },
       { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" }
     ],
