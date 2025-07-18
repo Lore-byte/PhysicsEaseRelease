@@ -67,12 +67,12 @@
     "sottocategoria": "Trasformazioni di Lorentz",
     "titolo": "Trasformazioni di Lorentz",
     "formula_latex": "\\begin{aligned} \\left\\{ \\begin{aligned} x' &= \\gamma (x - vt) \\\\ y' &= y \\\\ z' &= z \\\\ t' &= \\gamma \\left(t - \\frac{vx}{c^2}\\right) \\end{aligned} \\right. \\\\[1ex] \\left\\{ \\begin{aligned} x &= \\gamma (x' + vt') \\\\ y &= y' \\\\ z &= z' \\\\ t &= \\gamma \\left(t' + \\frac{vx'}{c^2}\\right) \\end{aligned} \\right. \\end{aligned}",
-    "descrizione": "Le trasformazioni di Lorentz permettono di passare dalle coordinate spazio-temporali di un evento misurato in un sistema di riferimento inerziale S a quelle misurate in un altro sistema S' che si muove con velocità costante $v$ rispetto al primo. Queste trasformazioni preservano l’invarianza della velocità della luce.",
+    "descrizione": "Le trasformazioni di Lorentz permettono di passare dalle coordinate spazio-temporali di un evento misurato in un sistema di riferimento inerziale S a quelle misurate in un altro sistema S' che si muove con velocità costante $v$ rispetto al primo. Queste trasformazioni preservano l’**invarianza della velocità della luce**.",
     "variabili": [
       { "simbolo": "$x, t$", "descrizione": "Coordinate in S", "unita": "m, s" },
       { "simbolo": "$x', t'$", "descrizione": "Coordinate in S'", "unita": "m, s" },
       { "simbolo": "$v$", "descrizione": "Velocità relativa tra i sistemi", "unita": "m/s" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "" }
+      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "-" }
     ],
     "esempi": [],
     "link_correlati": ["REL_002", "REL_003"],
@@ -92,7 +92,7 @@
       { "simbolo": "$m_0$", "descrizione": "Massa a riposo", "unita": "kg" },
       { "simbolo": "$v$", "descrizione": "Velocità", "unita": "m/s" },
       { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "" }
+      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "-" }
     ],
     "esempi": [],
     "link_correlati": ["REL_006", "REL_007"],
@@ -128,7 +128,7 @@
       { "simbolo": "$a$", "descrizione": "Accelerazione", "unita": "m/s^2" },
       { "simbolo": "$F$", "descrizione": "Forza applicata", "unita": "N" },
       { "simbolo": "$m_0$", "descrizione": "Massa a riposo", "unita": "kg" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz", "unita": "" }
+      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz", "unita": "-" }
     ],
     "esempi": [],
     "link_correlati": ["REL_006"],
@@ -186,7 +186,7 @@
       { "simbolo": "$u_x, u_y, u_z$", "descrizione": "Componenti della velocità nel sistema S", "unita": "m/s" },
       { "simbolo": "$u'_x, u'_y, u'_z$", "descrizione": "Componenti della velocità nel sistema S'", "unita": "m/s" },
       { "simbolo": "$v$", "descrizione": "Velocità relativa tra S e S', lungo l'asse x", "unita": "m/s" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "" },
+      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "-" },
       { "simbolo": "$c$", "descrizione": "Velocità della luce nel vuoto", "unita": "m/s" }
     ],
     "esempi": [],
@@ -205,7 +205,7 @@
     "variabili": [
       { "simbolo": "$K$", "descrizione": "Energia cinetica", "unita": "J" },
       { "simbolo": "$m_0$", "descrizione": "Massa a riposo", "unita": "kg" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "" },
+      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "-" },
       { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" }
     ],
     "esempi": [],
@@ -225,7 +225,7 @@
       { "simbolo": "$\\vec{p}$", "descrizione": "Quantità di moto", "unita": "kg·m/s" },
       { "simbolo": "$m_0$", "descrizione": "Massa a riposo", "unita": "kg" },
       { "simbolo": "$\\vec{v}$", "descrizione": "Velocità", "unita": "m/s" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz", "unita": "" }
+      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz", "unita": "-" }
     ],
     "esempi": [],
     "link_correlati": ["REL_005", "REL_006"],
@@ -265,7 +265,7 @@
       { "simbolo": "$E, E'$", "descrizione": "Energia totale nei sistemi S e S'", "unita": "J" },
       { "simbolo": "$p_x, p_y, p_z$", "descrizione": "Componenti della quantità di moto in S", "unita": "kg·m/s" },
       { "simbolo": "$v$", "descrizione": "Velocità relativa", "unita": "m/s" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz", "unita": "" },
+      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz", "unita": "-" },
       { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" }
     ],
     "esempi": [],
