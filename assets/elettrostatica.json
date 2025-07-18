@@ -10,7 +10,7 @@
       { "simbolo": "$F$", "descrizione": "Forza elettrica", "unita": "N" },
       { "simbolo": "$q_1, q_2$", "descrizione": "Cariche elettriche", "unita": "C" },
       { "simbolo": "$r$", "descrizione": "Distanza tra le cariche", "unita": "m" },
-      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "N \\cdot m^2/C^2" }
+      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" }
     ],
     "esempi": [
       {
@@ -29,9 +29,9 @@
     "sottocategoria": "Forza e Campo Elettrico",
     "titolo": "Costante Dielettrica Relativa",
     "formula_latex": "\\epsilon_r = \\frac{\\epsilon}{\\epsilon_0}",
-    "descrizione": "La costante dielettrica relativa $\\epsilon_r$ indica di quanto la forza elettrica tra due cariche è ridotta in un mezzo rispetto al vuoto. $\\epsilon$ è la costante dielettrica del mezzo e $\\epsilon_0$ è la costante dielettrica del vuoto.",
+    "descrizione": "La costante dielettrica relativa $\\epsilon_r$ indica di quanto la forza elettrica tra due cariche è ridotta in un mezzo rispetto al vuoto.",
     "variabili": [
-      { "simbolo": "$\\epsilon_r$", "descrizione": "Costante dielettrica relativa", "unita": "" },
+      { "simbolo": "$\\epsilon_r$", "descrizione": "Costante dielettrica relativa", "unita": "-" },
       { "simbolo": "$\\epsilon$", "descrizione": "Costante dielettrica del mezzo", "unita": "F/m" },
       { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
     ],
@@ -78,7 +78,7 @@
     "descrizione": "Il campo elettrico $\\vec{E}$ generato da una carica puntiforme $q$ a una distanza $r$ da essa. $\\hat{r}$ è il versore nella direzione radiale.",
     "variabili": [
       { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "N \\cdot m^2/C^2" },
+      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" },
       { "simbolo": "$q$", "descrizione": "Carica puntiforme", "unita": "C" },
       { "simbolo": "$r$", "descrizione": "Distanza dalla carica", "unita": "m" }
     ],
@@ -101,7 +101,7 @@
     "formula_latex": "\\Phi_E = \\int_S \\vec{E} \\cdot d\\vec{A}",
     "descrizione": "Il flusso del campo elettrico $\\Phi_E$ attraverso una superficie $S$ è il prodotto scalare del campo elettrico $\\vec{E}$ e del vettore infinitesimo di area $d\\vec{A}$, integrato su tutta la superficie.",
     "variabili": [
-      { "simbolo": "$\\Phi_E$", "descrizione": "Flusso del campo elettrico", "unita": "N \\cdot m^2/C" },
+      { "simbolo": "$\\Phi_E$", "descrizione": "Flusso del campo elettrico", "unita": "$N \\cdot m^2/C$" },
       { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
       { "simbolo": "$d\\vec{A}$", "descrizione": "Vettore infinitesimo di area", "unita": "m^2" }
     ],
@@ -124,7 +124,7 @@
     "formula_latex": "\\oint_S \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{int}}{\\epsilon_0}",
     "descrizione": "Il teorema di Gauss afferma che il flusso totale del campo elettrico attraverso una qualsiasi superficie chiusa $S$ (superficie gaussiana) è direttamente proporzionale alla carica totale $Q_{int}$ racchiusa all'interno di quella superficie, divisa per la costante dielettrica del vuoto $\\epsilon_0$.",
     "variabili": [
-      { "simbolo": "$\\Phi_E$", "descrizione": "Flusso del campo elettrico", "unita": "N \\cdot m^2/C" },
+      { "simbolo": "$\\Phi_E$", "descrizione": "Flusso del campo elettrico", "unita": "$N \\cdot m^2/C$" },
       { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
       { "simbolo": "$d\\vec{A}$", "descrizione": "Vettore infinitesimo di area", "unita": "m^2" },
       { "simbolo": "$Q_{int}$", "descrizione": "Carica totale racchiusa", "unita": "C" },
@@ -243,7 +243,7 @@
     "descrizione": "Il campo elettrico $E$ generato da una sfera uniformemente carica (o conduttore carico) con carica totale $Q$, per punti esterni alla sfera (dove $r$ è la distanza dal centro e $R$ è il raggio della sfera). Si comporta come una carica puntiforme al centro.",
     "variabili": [
       { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "N \\cdot m^2/C^2" },
+      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" },
       { "simbolo": "$Q$", "descrizione": "Carica totale della sfera", "unita": "C" },
       { "simbolo": "$r$", "descrizione": "Distanza dal centro della sfera", "unita": "m" },
       { "simbolo": "$R$", "descrizione": "Raggio della sfera", "unita": "m" }
@@ -268,7 +268,7 @@
     "descrizione": "Il campo elettrico $E$ all'interno di una sfera isolante uniformemente carica con carica totale $Q$ e raggio $R$, a una distanza $r$ dal centro. Per una sfera conduttrice, il campo interno è zero.",
     "variabili": [
       { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "N \\cdot m^2/C^2" },
+      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" },
       { "simbolo": "$Q$", "descrizione": "Carica totale della sfera", "unita": "C" },
       { "simbolo": "$r$", "descrizione": "Distanza dal centro della sfera", "unita": "m" },
       { "simbolo": "$R$", "descrizione": "Raggio della sfera", "unita": "m" }
@@ -363,7 +363,7 @@
     "descrizione": "Il potenziale elettrico $V$ generato da una carica puntiforme $q$ a una distanza $r$ da essa.",
     "variabili": [
       { "simbolo": "$V$", "descrizione": "Potenziale elettrico", "unita": "V" },
-      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "N \\cdot m^2/C^2" },
+      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" },
       { "simbolo": "$q$", "descrizione": "Carica puntiforme", "unita": "C" },
       { "simbolo": "$r$", "descrizione": "Distanza dalla carica", "unita": "m" }
     ],
@@ -387,7 +387,7 @@
     "descrizione": "L'energia potenziale $U$ di un sistema di due cariche puntiformi $q_1$ e $q_2$ separate da una distanza $r$.",
     "variabili": [
       { "simbolo": "$U$", "descrizione": "Energia potenziale elettrica", "unita": "J" },
-      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "N \\cdot m^2/C^2" },
+      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" },
       { "simbolo": "$q_1, q_2$", "descrizione": "Cariche elettriche", "unita": "C" },
       { "simbolo": "$r$", "descrizione": "Distanza tra le cariche", "unita": "m" }
     ],
@@ -410,9 +410,9 @@
     "formula_latex": "\\vec{E} = -\\nabla V",
     "descrizione": "Il campo elettrico $\\vec{E}$ può essere derivato dal potenziale elettrico $V$ prendendo il gradiente negativo del potenziale. In coordinate cartesiane: $E_x = -\\frac{\\partial V}{\\partial x}$, $E_y = -\\frac{\\partial V}{\\partial y}$, $E_z = -\\frac{\\partial V}{\\partial z}$.",
     "variabili": [
-      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C or V/m" },
+      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C o V/m" },
       { "simbolo": "$V$", "descrizione": "Potenziale elettrico", "unita": "V" },
-      { "simbolo": "$\\nabla$", "descrizione": "Operatore gradiente", "unita": "" }
+      { "simbolo": "$\\nabla$", "descrizione": "Operatore gradiente", "unita": "-" }
     ],
     "esempi": [
       {

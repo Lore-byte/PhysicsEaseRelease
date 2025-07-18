@@ -235,7 +235,7 @@
     "descrizione": "La prima legge di Ohm afferma che la differenza di potenziale $V$ ai capi di un conduttore ohmico è direttamente proporzionale all'intensità di corrente $I$ che lo attraversa, con $R$ che è la resistenza elettrica del conduttore.",
     "variabili": [
       { "simbolo": "$V$", "descrizione": "Differenza di potenziale", "unita": "V" },
-      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "\\Omega (Ohm)" },
+      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "$\\Omega$ (Ohm)" },
       { "simbolo": "$I$", "descrizione": "Intensità di corrente", "unita": "A" }
     ],
     "esempi": [
@@ -257,8 +257,8 @@
     "formula_latex": "R_{eq} = R_1 + R_2 + \\dots",
     "descrizione": "Quando le resistenze sono collegate in serie, la corrente che le attraversa è la stessa, e la resistenza equivalente $R_{eq}$ del sistema è la somma diretta delle singole resistenze.",
     "variabili": [
-      { "simbolo": "$R_{eq}$", "descrizione": "Resistenza equivalente", "unita": "\\Omega" },
-      { "simbolo": "$R_1, R_2, \\dots$", "descrizione": "Singole resistenze", "unita": "\\Omega" }
+      { "simbolo": "$R_{eq}$", "descrizione": "Resistenza equivalente", "unita": "$\\Omega$" },
+      { "simbolo": "$R_1, R_2, \\dots$", "descrizione": "Singole resistenze", "unita": "$\\Omega$" }
     ],
     "esempi": [
       {
@@ -279,8 +279,8 @@
     "formula_latex": "\\frac{1}{R_{eq}} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots",
     "descrizione": "Quando le resistenze sono collegate in parallelo, la differenza di potenziale ai loro capi è la stessa, e la resistenza equivalente $R_{eq}$ del sistema è calcolata come il reciproco della somma dei reciproci delle singole resistenze.",
     "variabili": [
-      { "simbolo": "$R_{eq}$", "descrizione": "Resistenza equivalente", "unita": "\\Omega" },
-      { "simbolo": "$R_1, R_2, \\dots$", "descrizione": "Singole resistenze", "unita": "\\Omega" }
+      { "simbolo": "$R_{eq}$", "descrizione": "Resistenza equivalente", "unita": "$\\Omega$" },
+      { "simbolo": "$R_1, R_2, \\dots$", "descrizione": "Singole resistenze", "unita": "$\\Omega$" }
     ],
     "esempi": [
       {
@@ -301,8 +301,8 @@
     "formula_latex": "R = \\rho \\frac{L}{A}",
     "descrizione": "La seconda legge di Ohm mette in relazione la resistenza $R$ di un conduttore con la sua resistività $\\rho$, la sua lunghezza $L$ e la sua area della sezione trasversale $A$.",
     "variabili": [
-      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "\\Omega" },
-      { "simbolo": "$\\rho$", "descrizione": "Resistività del materiale", "unita": "\\Omega \\cdot m" },
+      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "$\\Omega$" },
+      { "simbolo": "$\\rho$", "descrizione": "Resistività del materiale", "unita": "$\\Omega \\cdot$ m" },
       { "simbolo": "$L$", "descrizione": "Lunghezza del conduttore", "unita": "m" },
       { "simbolo": "$A$", "descrizione": "Area della sezione trasversale", "unita": "m^2" }
     ],
@@ -351,7 +351,7 @@
       { "simbolo": "$V$", "descrizione": "Tensione ai capi", "unita": "V" },
       { "simbolo": "$\\mathcal{E}$", "descrizione": "Forza elettromotrice", "unita": "V" },
       { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
-      { "simbolo": "$r$", "descrizione": "Resistenza interna", "unita": "\\Omega" }
+      { "simbolo": "$r$", "descrizione": "Resistenza interna", "unita": "$\\Omega$" }
     ],
     "esempi": [
       {
@@ -375,7 +375,7 @@
       { "simbolo": "$P$", "descrizione": "Potenza dissipata", "unita": "W (Watt)" },
       { "simbolo": "$V$", "descrizione": "Differenza di potenziale", "unita": "V" },
       { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
-      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "\\Omega" }
+      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "$\\Omega$" }
     ],
     "esempi": [
       {

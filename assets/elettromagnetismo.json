@@ -5,7 +5,7 @@
     "sottocategoria": "Magnetismo",
     "titolo": "Forza di Lorentz (su carica in movimento)",
     "formula_latex": "\\vec{F} = q (\\vec{v} \\times \\vec{B}) \\quad \\text{o} \\quad F = |q| v B \\sin(\\theta)",
-    "descrizione": "La forza di Lorentz $\\vec{F}$ descrive la forza esercitata su una carica elettrica $q$ in movimento con velocità $\\vec{v}$ all'interno di un campo magnetico $\\vec{B}$. La forza è perpendicolare sia alla velocità che al campo magnetico. La sua intensità è data da $F = |q| v B \\sin(\\theta)$, dove $\\theta$ è l'angolo tra $\\vec{v}$ e $\\vec{B}$.",
+    "descrizione": "La forza di Lorentz $\\vec{F}$ descrive la forza esercitata su una carica elettrica $q$ in movimento con velocità $\\vec{v}$ all'interno di un campo magnetico $\\vec{B}$. La forza è perpendicolare sia alla velocità che al campo magnetico.",
     "variabili": [
       { "simbolo": "$F$", "descrizione": "Forza di Lorentz", "unita": "N" },
       { "simbolo": "$q$", "descrizione": "Carica elettrica", "unita": "C" },
@@ -30,7 +30,7 @@
     "sottocategoria": "Magnetismo",
     "titolo": "Forza magnetica su un filo percorso da corrente",
     "formula_latex": "\\vec{F} = I (\\vec{L} \\times \\vec{B}) \\quad \\text{o} \\quad F = I L B \\sin(\\theta)",
-    "descrizione": "La forza magnetica $\\vec{F}$ è esercitata su un tratto di filo di lunghezza $\\vec{L}$ percorso da corrente $I$ immerso in un campo magnetico $\\vec{B}$. Anche qui, la forza è perpendicolare alla corrente e al campo magnetico. L'intensità della forza è data da $F = I L B \\sin(\\theta)$, dove $\\theta$ è l'angolo tra $\\vec{L}$ (o la direzione della corrente) e $\\vec{B}$.",
+    "descrizione": "La forza magnetica $\\vec{F}$ è esercitata su un tratto di filo di lunghezza $\\vec{L}$ percorso da corrente $I$ immerso in un campo magnetico $\\vec{B}$. Anche qui, la forza è perpendicolare alla corrente e al campo magnetico.",
     "variabili": [
       { "simbolo": "$F$", "descrizione": "Forza magnetica", "unita": "N" },
       { "simbolo": "$I$", "descrizione": "Corrente elettrica", "unita": "A" },
@@ -55,7 +55,7 @@
     "sottocategoria": "Induzione Elettromagnetica",
     "titolo": "Legge di Faraday-Neumann-Lenz",
     "formula_latex": "\\mathcal{E} = - N \\frac{\\Delta \\Phi_B}{\\Delta t}",
-    "descrizione": "La legge di Faraday-Neumann-Lenz descrive la forza elettromotrice (f.e.m.) indotta $\\mathcal{E}$ in un circuito chiuso quando il flusso del campo magnetico $\\Phi_B$ attraverso la superficie del circuito cambia nel tempo $\\Delta t$. Il segno meno (Legge di Lenz) indica che la f.e.m. indotta si oppone alla variazione di flusso. Per una bobina con $N$ spire, la formula è $\\mathcal{E} = - N \\frac{\\Delta \\Phi_B}{\\Delta t}$.",
+    "descrizione": "La legge di Faraday-Neumann-Lenz descrive la **forza elettromotrice (f.e.m.) indotta** $\\mathcal{E}$ in un circuito chiuso quando il flusso del campo magnetico $\\Phi_B$ attraverso la superficie del circuito cambia nel tempo $\\Delta t$. Il segno meno (Legge di Lenz) indica che la f.e.m. indotta si oppone alla variazione di flusso.",
     "variabili": [
       { "simbolo": "$\\mathcal{E}$", "descrizione": "Forza elettromotrice indotta (f.e.m.)", "unita": "V" },
       { "simbolo": "$N$", "descrizione": "Numero di spire della bobina (se applicabile)", "unita": "" },
@@ -79,7 +79,7 @@
     "sottocategoria": "Induzione Elettromagnetica",
     "titolo": "Flusso Magnetico",
     "formula_latex": "\\Phi_B = B A \\cos(\\theta)",
-    "descrizione": "Il flusso magnetico $\\Phi_B$ attraverso una superficie è una misura del numero di linee di campo magnetico che attraversano quella superficie. Dipende dall'intensità del campo magnetico $B$, dall'area della superficie $A$ e dall'angolo $\\theta$ tra il vettore normale alla superficie e il campo magnetico. La sua formula è $\\Phi_B = B A \\cos(\\theta)$.",
+    "descrizione": "Il flusso magnetico $\\Phi_B$ attraverso una superficie è una misura del numero di linee di campo magnetico che attraversano quella superficie. Dipende dall'intensità del campo magnetico $B$, dall'area della superficie $A$ e dall'angolo $\\theta$ tra il vettore normale alla superficie e il campo magnetico.",
     "variabili": [
       { "simbolo": "$\\Phi_B$", "descrizione": "Flusso magnetico", "unita": "Wb" },
       { "simbolo": "$B$", "descrizione": "Intensità del campo magnetico", "unita": "T" },
@@ -244,7 +244,7 @@
     "sottocategoria": "Corrente Alternata (AC)",
     "titolo": "Tensione Alternata Sinusoidale",
     "formula_latex": "V(t) = V_{max} \\sin(\\omega t + \\phi)",
-    "descrizione": "Una tensione alternata $V(t)$ tipica varia sinusoidalmente nel tempo $t$. $V_{max}$ è l'ampiezza massima (picco) della tensione, $\\omega$ è la frequenza angolare, e $\\phi$ è la fase iniziale.",
+    "descrizione": "Una tensione alternata $V(t)$ tipica varia sinusoidalmente nel tempo $t$.",
     "variabili": [
       { "simbolo": "$V(t)$", "descrizione": "Tensione istantanea", "unita": "V" },
       { "simbolo": "$V_{max}$", "descrizione": "Tensione massima (ampiezza)", "unita": "V" },
@@ -293,7 +293,7 @@
     "sottocategoria": "Corrente Alternata (AC)",
     "titolo": "Potenza Media in un Circuito AC (Generale)",
     "formula_latex": "P_{avg} = V_{rms} I_{rms} \\cos(\\phi)",
-    "descrizione": "La potenza media $P_{avg}$ dissipata in un circuito a corrente alternata. Dipende dai valori efficaci di tensione $V_{rms}$ e corrente $I_{rms}$ e dal fattore di potenza $\\cos(\\phi)$, dove $\\phi$ è lo sfasamento tra tensione e corrente.",
+    "descrizione": "La potenza media $P_{avg}$ dissipata in un circuito a corrente alternata.",
     "variabili": [
       { "simbolo": "$P_{avg}$", "descrizione": "Potenza media", "unita": "W (Watt)" },
       { "simbolo": "$V_{rms}$", "descrizione": "Tensione efficace", "unita": "V" },
@@ -442,7 +442,7 @@
     "sottocategoria": "Circuiti LC",
     "titolo": "Frequenza di Oscillazione in un Circuito LC ideale",
     "formula_latex": "f_0 = \\frac{1}{2\\pi \\sqrt{LC}}",
-    "descrizione": "Un circuito LC ideale (senza resistenza) può oscillare indefinitamente, scambiando energia tra il campo elettrico nel condensatore e il campo magnetico nell'induttore. La frequenza di queste oscillazioni $f_0$ è determinata dalla capacità $C$ e dall'autoinduttanza $L$.",
+    "descrizione": "Un circuito LC ideale (senza resistenza) può oscillare indefinitamente, scambiando energia tra il campo elettrico nel condensatore e il campo magnetico nell'induttore.",
     "variabili": [
       { "simbolo": "$f_0$", "descrizione": "Frequenza di oscillazione", "unita": "Hz" },
       { "simbolo": "$L$", "descrizione": "Autoinduttanza", "unita": "H" },
@@ -731,7 +731,7 @@
     "sottocategoria": "Onde Elettromagnetiche",
     "titolo": "Pressione di Radiazione",
     "formula_latex": "P_{rad} = \\frac{I}{c} \\quad \\text{(assorbimento perfetto)} \\quad \\text{e} \\quad P_{rad} = \\frac{2I}{c} \\quad \\text{(riflessione perfetta)}",
-    "descrizione": "La pressione di radiazione $P_{rad}$ è la pressione esercitata da un'onda elettromagnetica su una superficie. Se l'onda è completamente assorbita, la pressione è $I/c$. Se è completamente riflessa, la pressione è doppia, $2I/c$. Dipende dall'irradiamento $I$ dell'onda e dalla velocità della luce $c$.",
+    "descrizione": "La pressione di radiazione $P_{rad}$ è la pressione esercitata da un'onda elettromagnetica su una superficie. Se l'onda è completamente assorbita, la pressione è $I/c$. Se è completamente riflessa, la pressione è doppia, $2I/c$.",
     "variabili": [
       { "simbolo": "$P_{rad}$", "descrizione": "Pressione di radiazione", "unita": "Pa (Pascal)" },
       { "simbolo": "$I$", "descrizione": "Irradiamento (intensità)", "unita": "W/m^2" },
