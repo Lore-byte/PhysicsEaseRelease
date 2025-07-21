@@ -38,7 +38,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcola la pressione a $20 \\text{ m}$ di profondità nell'acqua (densità $\\approx 1000 \\text{ kg/m}^3$). La pressione è $P = 1000 \\text{ kg/m}^3 \\cdot 9.81 \\text{ m/s}^2 \\cdot 20 \\text{ m} = 196200 \\text{ Pa}$."
+        "testo": "La pressione a $20 \\text{ m}$ di profondità nell'acqua (densità $\\approx 1000 \\text{ kg/m}^3$) è $P = 1000 \\text{ kg/m}^3 \\cdot 9.81 \\text{ m/s}^2 \\cdot 20 \\text{ m} = 196200 \\text{ Pa}$."
       }
     ],
     "link_correlati": [ "FLU_001" ],
@@ -51,10 +51,10 @@
     "categoria": "Fluidi",
     "sottocategoria": "Idrostatica",
     "titolo": "Principio di Archimede (Forza di spinta)",
-    "formula_latex": "F_B = \\rho_{fluido} \\cdot V_{immerso} \\cdot g",
-    "descrizione": "Il Principio di Archimede afferma che un corpo immerso in un fluido (totalmente o parzialmente) subisce una forza di spinta verso l'alto $F_B$ pari al peso del volume di fluido spostato dal corpo.",
+    "formula_latex": "F_A = \\rho_{fluido} \\cdot V_{immerso} \\cdot g",
+    "descrizione": "Il Principio di Archimede afferma che un corpo immerso in un fluido (totalmente o parzialmente) subisce una forza di spinta verso l'alto $F_A$ pari al peso del volume di fluido spostato dal corpo.",
     "variabili": [
-      { "simbolo": "$F_B$", "descrizione": "Forza di spinta (galleggiamento)", "unita": "N" },
+      { "simbolo": "$F_A$", "descrizione": "Forza di spinta (galleggiamento)", "unita": "N" },
       { "simbolo": "$\\rho_{fluido}$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
       { "simbolo": "$V_{immerso}$", "descrizione": "Volume del corpo immerso nel fluido", "unita": "m³" },
       { "simbolo": "$g$", "descrizione": "Accelerazione di gravità", "unita": "m/s²" }
@@ -62,7 +62,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un oggetto con un volume immerso di $0.002 \\text{ m}^3$ in olio (densità $\\approx 800 \\text{ kg/m}^3$). La forza di spinta è $F_B = 800 \\text{ kg/m}^3 \\cdot 0.002 \\text{ m}^3 \\cdot 9.81 \\text{ m/s}^2 = 15.70 \\text{ N}$."
+        "testo": "Per un oggetto con un volume immerso di $0.002 \\text{ m}^3$ in olio (densità $\\approx 800 \\text{ kg/m}^3$), la forza di spinta è $F_A = 800 \\text{ kg/m}^3 \\cdot 0.002 \\text{ m}^3 \\cdot 9.81 \\text{ m/s}^2 = 15.70 \\text{ N}$."
       }
     ],
     "link_correlati": [ "FLU_002" ],
@@ -110,7 +110,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Acqua che scorre da un tubo con area $A_1 = 0.01 \\text{ m}^2$ a $v_1 = 2 \\text{ m/s}$ entra in un tubo più stretto di $A_2 = 0.005 \\text{ m}^2$. Usando $A_1 v_1 = A_2 v_2$, si ha $(0.01 \\cdot 2) = (0.005 \\cdot v_2)$, quindi $v_2 = (0.02) / 0.005 = 4 \\text{ m/s}$."
+        "testo": "L'acqua che scorre da un tubo con area $A_1 = 0.01 \\text{ m}^2$ a $v_1 = 2 \\text{ m/s}$ entra in un tubo più stretto di $A_2 = 0.005 \\text{ m}^2$. Usando $A_1 v_1 = A_2 v_2$, si ha $(0.01 \\cdot 2) = (0.005 \\cdot v_2)$, quindi $v_2 = (0.02) / 0.005 = 4 \\text{ m/s}$."
       }
     ],
     "link_correlati": [ "FLU_004", "FLU_006" ],
@@ -183,7 +183,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "In un condotto orizzontale, l'acqua ($\\rho = 1000 \\text{ kg/m}^3$) passa da una sezione dove $P_1 = 200000 \\text{ Pa}$ e $v_1 = 0.5 \\text{ m/s}$ a una sezione ristretta dove $v_2 = 2 \\text{ m/s}$. La pressione nella sezione ristretta è $P_2 = P_1 + \\frac{1}{2} \\rho (v_1^2 - v_2^2) =vel 198125 \\text{ Pa}$."
+        "testo": "In un condotto orizzontale, l'acqua ($\\rho = 1000 \\text{ kg/m}^3$) passa da una sezione dove $P_1 = 200000 \\text{ Pa}$ e $v_1 = 0.5 \\text{ m/s}$ a una sezione ristretta dove $v_2 = 2 \\text{ m/s}$. La pressione nella sezione ristretta è $P_2 = P_1 + \\frac{1}{2} \\rho (v_1^2 - v_2^2) = 198125 \\text{ Pa}$."
       }
     ],
     "link_correlati": [ "FLU_005", "FLU_006" ],
@@ -199,7 +199,7 @@
     "formula_latex": "Re = \\frac{\\rho v L}{\\mu}",
     "descrizione": "Il numero di Reynolds $Re$ è un numero **adimensionale** che aiuta a prevedere se il flusso di un fluido sarà laminare (regolare e parallelo) o turbolento (irregolare e caotico). Per valori bassi di $Re$ (tipicamente $Re < 2000$), il flusso è laminare.",
     "variabili": [
-      { "simbolo": "$Re$", "descrizione": "Numero di Reynolds (adimensionale)", "unita": "-" },
+      { "simbolo": "$Re$", "descrizione": "Numero di Reynolds", "unita": "adimensionale" },
       { "simbolo": "$\\rho$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
       { "simbolo": "$v$", "descrizione": "Velocità caratteristica del flusso", "unita": "m/s" },
       { "simbolo": "$L$", "descrizione": "Dimensione lineare caratteristica (es. diametro del tubo)", "unita": "m" },
@@ -225,7 +225,7 @@
     "descrizione": "La Legge di Stokes descrive la forza di attrito viscoso $F_d$ che agisce su una piccola sfera (raggio $r$) che si muove con velocità $v$ attraverso un fluido viscoso con viscosità dinamica $\\eta$. È valida per flussi laminari e a bassi numeri di Reynolds.",
     "variabili": [
       { "simbolo": "$F_d$", "descrizione": "Forza di attrito viscoso (forza di Stokes)", "unita": "N" },
-      { "simbolo": "$\\pi$", "descrizione": "Pi greco (costante matematica)", "unita": "-" },
+      { "simbolo": "$\\pi$", "descrizione": "Pi greco", "unita": "costante matematica" },
       { "simbolo": "$\\eta$", "descrizione": "Viscosità dinamica del fluido", "unita": "Pa·s" },
       { "simbolo": "$r$", "descrizione": "Raggio della sfera", "unita": "m" },
       { "simbolo": "$v$", "descrizione": "Velocità della sfera rispetto al fluido", "unita": "m/s" }
@@ -247,7 +247,7 @@
     "sottocategoria": "Viscosità e Resistenza",
     "titolo": "Velocità Limite (o Terminale)",
     "formula_latex": "v_t = \\frac{2 r^2 g (\\rho_p - \\rho_f)}{9 \\eta}",
-    "descrizione": "La velocità limite $v_t$ (o velocità terminale) è la velocità costante che un oggetto raggiunge quando cade attraverso un fluido, e la forza di gravità è bilanciata dalla forza di attrito viscoso (Legge di Stokes) e dalla forza di spinta (Archimede). Questa formula si applica a sfere che cadono in un fluido viscoso.",
+    "descrizione": "La velocità limite $v_t$ (o velocità terminale) è la velocità costante che un oggetto raggiunge quando cade attraverso un fluido. La forza di gravità è bilanciata dalla forza di attrito viscoso (Legge di Stokes) e dalla forza di spinta (Archimede). Questa formula si applica a sfere che cadono in un fluido viscoso.",
     "variabili": [
       { "simbolo": "$v_t$", "descrizione": "Velocità limite", "unita": "m/s" },
       { "simbolo": "$r$", "descrizione": "Raggio della sfera", "unita": "m" },
@@ -259,7 +259,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcola la velocità limite di una sfera di piombo ($r = 0.001 \\text{ m}$, $\\rho_p = 11340 \\text{ kg/m}^3$) che cade in olio ($\\rho_f = 900 \\text{ kg/m}^3$, $\\eta = 0.1 \\text{ Pa}\\cdot\\text{s}$). $v_t = \\frac{0.2048}{0.9} \\approx 0.228 \\text{ m/s}$."
+        "testo": "La velocità limite di una sfera di piombo ($r = 0.001 \\text{ m}$, $\\rho_p = 11340 \\text{ kg/m}^3$) che cade in olio ($\\rho_f = 900 \\text{ kg/m}^3$, $\\eta = 0.1 \\text{ Pa}\\cdot\\text{s}$) è $v_t = \\frac{0.2048}{0.9} \\approx 0.228 \\text{ m/s}$."
       }
     ],
     "link_correlati": [ "FLU_003", "FLU_010" ],

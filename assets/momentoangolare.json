@@ -4,16 +4,12 @@
     "categoria": "Momento Angolare",
     "sottocategoria": "Definizioni Fondamentali",
     "titolo": "Momento Angolare",
-    "formula_latex": "\\vec{L} = \\vec{r} \\times \\vec{p} \\quad , \\quad L = r p \\sin(\\theta)",
-    "descrizione": "Il momento angolare $\\vec{L}$ di una singola particella è una grandezza vettoriale che descrive la quantità di moto rotazionale. È definito come il prodotto vettoriale del vettore posizione $\\vec{r}$ (dal polo all'oggetto) e del vettore quantità di moto $\\vec{p}$. Il suo modulo dipende anche dall'angolo $\\theta$ tra $\\vec{r}$ e $\\vec{p}$.",
+    "formula_latex": "\\vec{L} = \\vec{r} \\times \\vec{p}",
+    "descrizione": "Il momento angolare $\\vec{L}$ di un punto materiale è una grandezza vettoriale che descrive la quantità di moto rotazionale. È definito come il prodotto vettoriale del vettore posizione $\\vec{r}$ e del vettore quantità di moto $\\vec{p}$.",
     "variabili": [
       { "simbolo": "$\\vec{L}$", "descrizione": "Momento angolare", "unita": "J$\\cdot$s o kg$\\cdot$m$^2$/s" },
       { "simbolo": "$\\vec{r}$", "descrizione": "Vettore posizione (raggio)", "unita": "m" },
-      { "simbolo": "$\\vec{p}$", "descrizione": "Vettore quantità di moto", "unita": "kg$\\cdot$m/s" },
-      { "simbolo": "$L$", "descrizione": "Modulo del momento angolare", "unita": "J$\\cdot$s o kg$\\cdot$m$^2$/s" },
-      { "simbolo": "$r$", "descrizione": "Modulo del vettore posizione", "unita": "m" },
-      { "simbolo": "$p$", "descrizione": "Modulo della quantità di moto", "unita": "kg$\\cdot$m/s" },
-      { "simbolo": "$\\theta$", "descrizione": "Angolo tra $\\vec{r}$ e $\\vec{p}$", "unita": "rad" }
+      { "simbolo": "$\\vec{p}$", "descrizione": "Vettore quantità di moto", "unita": "kg$\\cdot$m/s" }
     ],
     "esempi": [
       {
@@ -31,7 +27,7 @@
     "categoria": "Momento Angolare",
     "sottocategoria": "Definizioni Fondamentali",
     "titolo": "Momento Angolare Totale di un Sistema",
-    "formula_latex": "\\vec{L}_{tot} = \\sum_{i} \\vec{L}_i \\quad , \\quad \\vec{L}_{tot} = \\sum_{i} m_i (\\vec{r}_i \\times \\vec{v}_i)",
+    "formula_latex": "\\vec{L}_{tot} = \\sum_{i} \\vec{L}_i \\Rightarrow \\vec{L}_{tot} = \\sum_{i} m_i (\\vec{r}_i \\times \\vec{v}_i)",
     "descrizione": "Il momento angolare totale $\\vec{L}_{tot}$ di un sistema di corpi è la somma vettoriale dei momenti angolari individuali di tutti i corpi del sistema. Per un corpo rigido in rotazione attorno a un asse fisso, spesso è espresso come $L = I \\omega$.",
     "variabili": [
       { "simbolo": "$\\vec{L}_{tot}$", "descrizione": "Momento angolare totale del sistema", "unita": "J$\\cdot$s" },
@@ -102,11 +98,11 @@
     "categoria": "Momento Angolare",
     "sottocategoria": "Variazione del Momento Angolare",
     "titolo": "Impulso Angolare",
-    "formula_latex": "\\Delta \\vec{L} = \\vec{\\tau}_{net} \\Delta t",
-    "descrizione": "L'impulso angolare è uguale alla variazione del momento angolare di un sistema. È dato dal prodotto del momento torcente netto (torque netto) $\\vec{\\tau}_{net}$ che agisce sul sistema e l'intervallo di tempo $\\Delta t$ durante il quale agisce. Questa è l'equivalente rotazionale del teorema dell'impulso lineare.",
+    "formula_latex": "\\Delta \\vec{L} = \\vec{M} \\Delta t",
+    "descrizione": "L'impulso angolare è uguale alla variazione del momento angolare di un sistema. È dato dal prodotto del momento torcente netto $\\vec{M}$ che agisce sul sistema e l'intervallo di tempo $\\Delta t$ durante il quale agisce. Questa è l'equivalente rotazionale del teorema dell'impulso lineare.",
     "variabili": [
       { "simbolo": "$\\Delta \\vec{L}$", "descrizione": "Variazione del momento angolare", "unita": "J$\\cdot$s" },
-      { "simbolo": "$\\vec{\\tau}_{net}$", "descrizione": "Momento torcente netto (torque)", "unita": "N$\\cdot$m" },
+      { "simbolo": "$\\vec{M}$", "descrizione": "Momento torcente netto", "unita": "N$\\cdot$m" },
       { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
     ],
     "esempi": [
@@ -124,11 +120,11 @@
     "id": "ROT_006",
     "categoria": "Momento Angolare",
     "sottocategoria": "Dinamica Rotazionale",
-    "titolo": "Seconda Legge di Newton per la Rotazione",
-    "formula_latex": "\\vec{\\tau}_{net} = I \\vec{\\alpha}",
-    "descrizione": "La seconda legge di Newton per la rotazione stabilisce che il momento torcente netto (torque netto) $\\vec{\\tau}_{net}$ che agisce su un corpo rigido è uguale al prodotto del suo momento di inerzia $I$ e della sua accelerazione angolare $\\vec{\\alpha}$. Questa è l'analogo rotazionale di $F=ma$.",
+    "titolo": "Legge fondamentale della Dinamica rotazionale",
+    "formula_latex": "\\vec{M} = I \\vec{\\alpha}",
+    "descrizione": "La legge fondamentale della Dinamica rotazionale stabilisce che il momento torcente netto $\\vec{M}$ che agisce su un corpo rigido è uguale al prodotto del suo momento di inerzia $I$ e della sua accelerazione angolare $\\vec{\\alpha}$. Questa è l'analogo rotazionale della seconda legge di Newton ($F=ma$).",
     "variabili": [
-      { "simbolo": "$\\vec{\\tau}_{net}$", "descrizione": "Momento torcente netto (torque)", "unita": "N$\\cdot$m" },
+      { "simbolo": "$\\vec{M}$", "descrizione": "Momento torcente netto", "unita": "N$\\cdot$m" },
       { "simbolo": "$I$", "descrizione": "Momento di inerzia", "unita": "kg$\\cdot$m$^2$" },
       { "simbolo": "$\\vec{\\alpha}$", "descrizione": "Accelerazione angolare", "unita": "rad/s$^2$" }
     ],
@@ -148,17 +144,17 @@
     "categoria": "Momento Angolare",
     "sottocategoria": "Energia e Lavoro Rotazionale",
     "titolo": "Energia Cinetica Rotazionale",
-    "formula_latex": "K_{rot} = \\frac{1}{2} I \\omega^2",
-    "descrizione": "L'energia cinetica rotazionale $K_{rot}$ è l'energia che un corpo possiede grazie al suo moto di rotazione. Dipende dal suo momento di inerzia $I$ e dal quadrato della sua velocità angolare $\\omega$. È l'analogo rotazionale dell'energia cinetica traslazionale ($K = 1/2 mv^2$).",
+    "formula_latex": "K = \\frac{1}{2} I \\omega^2",
+    "descrizione": "L'energia cinetica rotazionale $K$ è l'energia che un corpo possiede grazie al suo moto di rotazione. Dipende dal suo momento di inerzia $I$ e dal quadrato della sua velocità angolare $\\omega$. È l'analogo rotazionale dell'energia cinetica traslazionale ($K = 1/2 mv^2$).",
     "variabili": [
-      { "simbolo": "$K_{rot}$", "descrizione": "Energia cinetica rotazionale", "unita": "J" },
+      { "simbolo": "$K$", "descrizione": "Energia cinetica rotazionale", "unita": "J" },
       { "simbolo": "$I$", "descrizione": "Momento di inerzia", "unita": "kg$\\cdot$m$^2$" },
       { "simbolo": "$\\omega$", "descrizione": "Velocità angolare", "unita": "rad/s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un volano con $I = 0.1 \\text{ kg}\\cdot\\text{m}^2$ che ruota a $20 \\text{ rad/s}$ ha energia cinetica rotazionale $K_{rot} = 0.5 \\cdot 0.1 \\cdot (20)^2 = 20 \\text{ J}$."
+        "testo": "Un volano con $I = 0.1 \\text{ kg}\\cdot\\text{m}^2$ che ruota a $20 \\text{ rad/s}$ ha energia cinetica rotazionale $K = 0.5 \\cdot 0.1 \\cdot (20)^2 = 20 \\text{ J}$."
       }
     ],
     "link_correlati": [ "ROT_004", "ROT_009", "ENE_002" ],
@@ -171,17 +167,17 @@
     "categoria": "Momento Angolare",
     "sottocategoria": "Energia e Lavoro Rotazionale",
     "titolo": "Lavoro nel Moto Rotatorio",
-    "formula_latex": "W_{rot} = \\tau \\cdot \\Delta \\theta",
-    "descrizione": "Il lavoro $W_{rot}$ svolto da un momento torcente (torque) costante $\\tau$ che agisce su un corpo rigido in rotazione è il prodotto del momento torcente e dello spostamento angolare $\\Delta \\theta$. Questa è l'analogo rotazionale del lavoro lineare ($W = Fd$).",
+    "formula_latex": "W = M \\Delta \\theta",
+    "descrizione": "Il lavoro $W$ svolto da un momento torcente costante $M$ che agisce su un corpo rigido in rotazione è il prodotto del momento torcente e dello spostamento angolare $\\Delta \\theta$. Questa è l'analogo rotazionale del lavoro lineare ($W = Fd$).",
     "variabili": [
-      { "simbolo": "$W_{rot}$", "descrizione": "Lavoro rotazionale", "unita": "J" },
-      { "simbolo": "$\\tau$", "descrizione": "Momento torcente costante", "unita": "N$\\cdot$m" },
+      { "simbolo": "$W$", "descrizione": "Lavoro rotazionale", "unita": "J" },
+      { "simbolo": "$M$", "descrizione": "Momento torcente costante", "unita": "N$\\cdot$m" },
       { "simbolo": "$\\Delta \\theta$", "descrizione": "Spostamento angolare", "unita": "rad" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Per aprire una porta, si applica un momento torcente di $5 \\text{ N}\\cdot\\text{m}$ per un angolo di $90°$ ($ \\pi/2 \\text{ rad}$). Il lavoro svolto è $W_{rot} = 5 \\cdot (\\pi/2) \\approx 7.85 \\text{ J}$."
+        "testo": "Per aprire una porta, si applica un momento torcente di $5 \\text{ N}\\cdot\\text{m}$ per un angolo di $90°$ ($ \\pi/2 \\text{ rad}$). Il lavoro svolto è $W = 5 \\cdot (\\pi/2) \\approx 7.85 \\text{ J}$."
       }
     ],
     "link_correlati": [ "ROT_005", "ROT_009", "ENE_001" ],
@@ -194,17 +190,17 @@
     "categoria": "Momento Angolare",
     "sottocategoria": "Energia e Lavoro Rotazionale",
     "titolo": "Potenza nel Moto Rotatorio",
-    "formula_latex": "P_{rot} = \\tau \\cdot \\omega",
-    "descrizione": "La potenza $P_{rot}$ sviluppata da un momento torcente (torque) su un corpo in rotazione è il prodotto del momento torcente e della velocità angolare $\\omega$. È la rapidità con cui il lavoro rotazionale viene compiuto. Questa è l'analogo rotazionale della potenza lineare ($P = Fv$).",
+    "formula_latex": "P = M \\cdot \\omega",
+    "descrizione": "La potenza $P$ sviluppata da un momento torcente su un corpo in rotazione è il prodotto del momento torcente $M$ e della velocità angolare $\\omega$. È la rapidità con cui il lavoro rotazionale viene compiuto. Questa è l'analogo rotazionale della potenza lineare ($P = Fv$).",
     "variabili": [
-      { "simbolo": "$P_{rot}$", "descrizione": "Potenza rotazionale", "unita": "W" },
+      { "simbolo": "$P$", "descrizione": "Potenza rotazionale", "unita": "W" },
       { "simbolo": "$\\tau$", "descrizione": "Momento torcente", "unita": "N$\\cdot$m" },
       { "simbolo": "$\\omega$", "descrizione": "Velocità angolare", "unita": "rad/s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un motore eroga un momento torcente di $20 \\text{ N}\\cdot\\text{m}$ a una velocità angolare di $100 \\text{ rad/s}$. La potenza sviluppata è $P_{rot} = 20 \\cdot 100 = 2000 \\text{ W}$."
+        "testo": "Un motore eroga un momento torcente di $20 \\text{ N}\\cdot\\text{m}$ a una velocità angolare di $100 \\text{ rad/s}$. La potenza sviluppata è $P = 20 \\cdot 100 = 2000 \\text{ W}$."
       }
     ],
     "link_correlati": [ "ROT_005", "ROT_008", "ENE_010" ],
@@ -217,8 +213,8 @@
     "categoria": "Momento Angolare",
     "sottocategoria": "Moto Complesso",
     "titolo": "Rotolamento Senza Slittamento",
-    "formula_latex": "v_{CM} = R \\omega \\quad , \\quad a_{CM} = R \\alpha \\quad , \\quad K_{tot} = K_{trasl} + K_{rot}",
-    "descrizione": "Il rotolamento senza slittamento è un **moto combinato** di traslazione e rotazione dove il punto di contatto del corpo con la superficie è istantaneamente fermo. Questo implica relazioni specifiche tra la velocità del centro di massa $v_{CM}$ e la velocità angolare $\\omega$, e tra l'accelerazione del centro di massa $a_{CM}$ e l'accelerazione angolare $\\alpha$. L'energia cinetica totale è la somma dell'energia cinetica traslazionale e rotazionale.",
+    "formula_latex": "\\begin{aligned} v_{CM} &= R \\omega \\\\ a_{CM} &= R \\alpha \\\\ K_{tot} &= K_{trasl} + K_{rot} \\end{aligned}",
+    "descrizione": "Il rotolamento senza slittamento è un **moto combinato** di **traslazione** e **rotazione** dove il punto di contatto del corpo con la superficie è istantaneamente fermo. Questo implica relazioni specifiche tra la velocità del centro di massa $v_{CM}$ e la velocità angolare $\\omega$, e tra l'accelerazione del centro di massa $a_{CM}$ e l'accelerazione angolare $\\alpha$. L'energia cinetica totale è la somma dell'energia cinetica traslazionale e rotazionale.",
     "variabili": [
       { "simbolo": "$v_{CM}$", "descrizione": "Velocità del centro di massa", "unita": "m/s" },
       { "simbolo": "$R$", "descrizione": "Raggio del corpo rotolante", "unita": "m" },
@@ -232,7 +228,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una palla che rotola senza slittamento su un piano inclinato converte energia potenziale gravitazionale in energia cinetica sia traslazionale che rotazionale."
+        "testo": "Una palla che rotola senza slittamento su un piano inclinato converte energia potenziale gravitazionale in energia cinetica sia traslazionale sia rotazionale."
       }
     ],
     "link_correlati": [ "ROT_007", "ENE_002", "QDM_009" ],

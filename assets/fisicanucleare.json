@@ -176,42 +176,6 @@
     "data_ultima_modifica": "2025-07-15"
   },
   {
-    "id": "NUC_010",
-    "categoria": "Fisica Nucleare",
-    "sottocategoria": "Dosimetria",
-    "titolo": "Dose Assorbita",
-    "formula_latex": "D = \\frac{E_{\\text{assorbita}}}{m}",
-    "descrizione": "Energia assorbita per unità di massa di tessuto o materiale irradiato.",
-    "variabili": [
-      { "simbolo": "$D$", "descrizione": "Dose assorbita", "unita": "Gy" },
-      { "simbolo": "$E_{\\text{assorbita}}$", "descrizione": "Energia assorbita", "unita": "J" },
-      { "simbolo": "$m$", "descrizione": "Massa del bersaglio", "unita": "kg" }
-    ],
-    "esempi": [],
-    "link_correlati": ["NUC_011"],
-    "parole_chiave": ["dose","Gray","energia assorbita"],
-    "data_creazione": "2025-07-15",
-    "data_ultima_modifica": "2025-07-15"
-  },
-  {
-    "id": "NUC_011",
-    "categoria": "Fisica Nucleare",
-    "sottocategoria": "Dosimetria",
-    "titolo": "Dose Equivalente",
-    "formula_latex": "H = D \\times w_R",
-    "descrizione": "Dose assorbita corretta dal fattore di qualità w_R della radiazione, per valutare l’effetto biologico.",
-    "variabili": [
-      { "simbolo": "$H$", "descrizione": "Dose equivalente", "unita": "Sv" },
-      { "simbolo": "$D$", "descrizione": "Dose assorbita", "unita": "Gy" },
-      { "simbolo": "$w_R$", "descrizione": "Fattore di qualità della radiazione", "unita": "-" }
-    ],
-    "esempi": [],
-    "link_correlati": ["NUC_010"],
-    "parole_chiave": ["sievert","qualità","dose biologica"],
-    "data_creazione": "2025-07-15",
-    "data_ultima_modifica": "2025-07-15"
-  },
-  {
     "id": "NUC_012",
     "categoria": "Fisica Nucleare",
     "sottocategoria": "Reazioni Nucleari",

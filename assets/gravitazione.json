@@ -3,8 +3,8 @@
     "id": "GRA_001",
     "categoria": "Gravitazione",
     "sottocategoria": "Leggi di Keplero",
-    "titolo": "Prima Legge di Keplero (Legge delle Orbite)",
-    "formula_latex": "N/A",
+    "titolo": "Prima Legge di Keplero",
+    "formula_latex": "\\text{Legge delle Orbite}",
     "descrizione": "La Prima Legge di Keplero afferma che le orbite dei pianeti attorno al Sole sono ellissi, con il Sole che occupa uno dei due fuochi dell'ellisse. Questo significa che i pianeti non si muovono in cerchi perfetti.",
     "variabili": [],
     "esempi": [
@@ -45,7 +45,7 @@
     "categoria": "Gravitazione",
     "sottocategoria": "Leggi di Keplero",
     "titolo": "Terza Legge di Keplero (Legge dei Periodi)",
-    "formula_latex": "\\frac{T^2}{a^3} = k \\quad , \\quad \\frac{T^2}{a^3} = \\frac{4\\pi^2}{GM_{Sole}}",
+    "formula_latex": "\\frac{T^2}{a^3} = k \\Rightarrow \\frac{T^2}{a^3} = \\frac{4\\pi^2}{GM_{Sole}}",
     "descrizione": "La Terza Legge di Keplero (o Legge dei Periodi) afferma che il quadrato del periodo orbitale ($T$) di un pianeta è direttamente proporzionale al cubo del semiasse maggiore ($a$) della sua orbita ellittica. La costante $k$ è la stessa per tutti i corpi che orbitano attorno allo stesso corpo celeste (es. il Sole).",
     "variabili": [
       { "simbolo": "$T$", "descrizione": "Periodo orbitale", "unita": "s" },
@@ -57,7 +57,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Pianeti più lontani dal Sole (con un $a$ maggiore) hanno periodi orbitali ($T$) significativamente più lunghi. Ad esempio, Marte ha un periodo orbitale molto più lungo della Terra."
+        "testo": "Pianeti più lontani dal Sole (con un $a$ maggiore) hanno periodi orbitali ($T$) significativamente più lunghi. Ad esempio, Giove ha un periodo orbitale molto più lungo della Terra."
       }
     ],
     "link_correlati": [ "GRA_001", "GRA_002", "GRA_004" ],
@@ -69,9 +69,9 @@
     "id": "GRA_004",
     "categoria": "Gravitazione",
     "sottocategoria": "Forza Gravitazionale",
-    "titolo": "Legge di Gravitazione Universale (Forza)",
+    "titolo": "Legge di Gravitazione Universale",
     "formula_latex": "F = G \\frac{m_1 m_2}{r^2}",
-    "descrizione": "La Legge di Gravitazione Universale di Newton descrive la forza di attrazione tra due corpi con masse $m_1$ e $m_2$, separati da una distanza $r$. La forza è direttamente proporzionale al prodotto delle masse e inversamente proporzionale al quadrato della distanza. $G$ è la costante di gravitazione universale.",
+    "descrizione": "La Legge di Gravitazione Universale di Newton descrive la forza di attrazione tra due corpi con masse $m_1$ e $m_2$, separati da una distanza $r$. La forza è direttamente proporzionale al prodotto delle masse e inversamente proporzionale al quadrato della distanza. $G$ è la costante di gravitazione universale ($\\approx 6,67 \\cdot 10^{-11}$ N·m²/kg²).",
     "variabili": [
       { "simbolo": "$F$", "descrizione": "Forza gravitazionale", "unita": "N" },
       { "simbolo": "$G$", "descrizione": "Costante di gravitazione universale", "unita": "N·m²/kg²" },
@@ -94,7 +94,7 @@
     "id": "GRA_005",
     "categoria": "Gravitazione",
     "sottocategoria": "Forza Gravitazionale",
-    "titolo": "Forza Peso (Gravitazionale sulla Terra)",
+    "titolo": "Forza Peso",
     "formula_latex": "F_p = m g",
     "descrizione": "La forza peso è la forza gravitazionale che la Terra esercita su un oggetto di massa $m$ vicino alla sua superficie. $g$ è l'accelerazione di gravità (o intensità del campo gravitazionale) locale.",
     "variabili": [
@@ -117,7 +117,7 @@
     "id": "GRA_006",
     "categoria": "Gravitazione",
     "sottocategoria": "Campo Gravitazionale",
-    "titolo": "Campo Gravitazionale (Intensità)",
+    "titolo": "Campo Gravitazionale",
     "formula_latex": "g = G \\frac{M}{r^2}",
     "descrizione": "L'intensità del campo gravitazionale $g$ in un punto dello spazio generato da una massa $M$ è la forza gravitazionale per unità di massa che agirebbe su un corpo di prova posto in quel punto. Diminuisce con il quadrato della distanza $r$ dalla massa che lo genera.",
     "variabili": [
@@ -165,7 +165,7 @@
     "id": "GRA_008",
     "categoria": "Gravitazione",
     "sottocategoria": "Energia Gravitazionale",
-    "titolo": "Energia Potenziale Gravitazionale Universale",
+    "titolo": "Energia Potenziale Gravitazionale",
     "formula_latex": "U = -G \\frac{m M}{r}",
     "descrizione": "L'energia potenziale gravitazionale $U$ è l'energia immagazzinata nel campo gravitazionale a causa della posizione relativa di due masse $m$ e $M$. È definita negativa perché l'energia potenziale è zero a distanza infinita e diminuisce man mano che le masse si avvicinano.",
     "variabili": [

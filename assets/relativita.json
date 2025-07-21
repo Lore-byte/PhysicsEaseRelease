@@ -141,7 +141,7 @@
     "categoria": "Relatività",
     "sottocategoria": "Effetti relativistici",
     "titolo": "Effetto Doppler Relativistico",
-    "formula_latex": "\\begin{aligned} f &= f_0 \\sqrt{\\frac{1 - v/c}{1 + v/c}} \\\\ f &= f_0 \\sqrt{\\frac{1 + v/c}{1 - v/c}} \\end{aligned}",
+    "formula_latex": "f = f_0 \\sqrt{\\frac{1 \\pm v/c}{1 \\mp v/c}}",
     "descrizione": "L'effetto Doppler relativistico descrive come varia la frequenza di un'onda (ad esempio luminosa) percepita da un osservatore quando la sorgente si muove rispetto a lui.\n\nSe la sorgente si **avvicina**, la frequenza osservata aumenta (spostamento verso il blu).\nSe la sorgente si **allontana**, la frequenza osservata diminuisce (spostamento verso il rosso, o **redshift**).\n\nIl redshift è un fenomeno osservato ad esempio nella luce proveniente da galassie lontane, che si allontanano da noi a causa dell'espansione dell’universo.",
     "variabili": [
       { "simbolo": "$f$", "descrizione": "Frequenza osservata", "unita": "Hz" },

@@ -4,12 +4,12 @@
     "categoria": "Lavoro ed Energia",
     "sottocategoria": "Lavoro",
     "titolo": "Lavoro di una forza costante",
-    "formula_latex": "W = F \\cdot d \\cdot \\cos(\\theta)",
-    "descrizione": "Il lavoro svolto da una forza costante $W$ è il prodotto dell'intensità della forza $F$, dello spostamento $d$ e del coseno dell'angolo $\\theta$ tra la direzione della forza e quella dello spostamento. Se forza e spostamento sono nella stessa direzione, $\\cos(\\theta)$ è $1$. Questa è una relazione fondamentale in fisica, spesso espressa come $W = \\vec{F} \\cdot \\vec{d}$.",
+    "formula_latex": "W = \\vec{F} \\cdot \\Delta \\vec{s} \\cdot \\cos(\\theta)",
+    "descrizione": "Il lavoro $W$ svolto da una forza costante $\\vec{F}$ è il prodotto dell'intensità della forza $\\vec{F}$, dello spostamento $\\Delta \\vec{s}$ e del coseno dell'angolo $\\theta$ tra la direzione della forza e quella dello spostamento. \nSe forza e spostamento sono nella stessa direzione, $\\cos(\\theta)$ è $1$. Questa è una relazione fondamentale in fisica, spesso espressa come $W = \\vec{F} \\cdot \\Delta \\vec{s}$.",
     "variabili": [
       { "simbolo": "$W$", "descrizione": "Lavoro", "unita": "J" },
-      { "simbolo": "$F$", "descrizione": "Intensità della forza", "unita": "N" },
-      { "simbolo": "$d$", "descrizione": "Spostamento",
+      { "simbolo": "$\\vec{F}$", "descrizione": "Intensità della forza", "unita": "N" },
+      { "simbolo": "$\\Delta \\vec{s}$", "descrizione": "Spostamento",
         "unita": "m"
       },
       { "simbolo": "$\\theta$", "descrizione": "Angolo tra forza e spostamento", "unita": "rad" }
@@ -31,7 +31,7 @@
     "sottocategoria": "Energia Cinetica",
     "titolo": "Energia Cinetica",
     "formula_latex": "K = \\frac{1}{2} m v^2",
-    "descrizione": "L'energia cinetica K è l'energia che un corpo possiede grazie al suo movimento.",
+    "descrizione": "L'energia cinetica $K$ è l'energia che un corpo possiede in virtù del suo movimento. Dipende dalla massa del corpo e dalla velocità con cui si muove. È una forma di energia meccanica e aumenta con il quadrato della velocità.",
     "variabili": [
       { "simbolo": "$K$", "descrizione": "Energia Cinetica", "unita": "J" },
       { "simbolo": "$m$", "descrizione": "Massa del corpo", "unita": "kg" },
@@ -53,22 +53,22 @@
     "categoria": "Lavoro ed Energia",
     "sottocategoria": "Energia Potenziale Gravitazionale",
     "titolo": "Energia Potenziale Gravitazionale",
-    "formula_latex": "P_g = m \\cdot g \\cdot h",
-    "descrizione": "L'energia potenziale gravitazionale $P_g$ è l'energia immagazzinata in un corpo a causa della sua posizione in un campo gravitazionale.",
+    "formula_latex": "U_g = m \\cdot g \\cdot h",
+    "descrizione": "L'energia potenziale gravitazionale $U_g$ è una forma di energia meccanica che un corpo possiede in virtù della sua posizione in un campo gravitazionale. Dipende dalla massa del corpo, dalla gravità e dall'altezza rispetto a un punto di riferimento.",
     "variabili": [
-      { "simbolo": "$P_g$", "descrizione": "Energia Potenziale Gravitazionale", "unita": "J" },
+      { "simbolo": "$U_g$", "descrizione": "Energia Potenziale Gravitazionale", "unita": "J" },
       { "simbolo": "$m$", "descrizione": "Massa del corpo", "unita": "kg" },
-      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità, 9.81 ", "unita": "m/s²" },
+      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità, $\\approx 9.81$ ", "unita": "m/s²" },
       { "simbolo": "$h$", "descrizione": "Altezza rispetto a un livello di riferimento", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un oggetto di $10 \\text{ kg}$ è sollevato a $5 \\text{ m}$ di altezza. $P_g = 10 \\cdot 9.81 \\cdot 5 = 490.5 \\text{ J}$."
+        "testo": "Un oggetto di $10 \\text{ kg}$ è sollevato a $5 \\text{ m}$ di altezza. $U_g = 10 \\cdot 9.81 \\cdot 5 = 490.5 \\text{ J}$."
       }
     ],
     "link_correlati": [ "DIN_001", "ENE_004", "ENE_009" ],
-    "parole_chiave": [ "energia potenziale", "gravità", "altezza", "massa", "P = mgh" ],
+    "parole_chiave": [ "energia potenziale", "gravità", "altezza", "massa", "U = mgh" ],
     "data_creazione": "2025-06-03",
     "data_ultima_modifica": "2025-07-11"
   },
@@ -77,21 +77,21 @@
     "categoria": "Lavoro ed Energia",
     "sottocategoria": "Energia Potenziale Elastica",
     "titolo": "Energia Potenziale Elastica",
-    "formula_latex": "P_e = \\frac{1}{2} k x^2",
-    "descrizione": "L'energia potenziale elastica $P_e$ è l'energia immagazzinata in una molla (o corpo elastico) quando viene compressa o allungata. È proporzionale al quadrato dell'allungamento $x$ e alla costante elastica $k$ della molla.",
+    "formula_latex": "U_e = \\frac{1}{2} k x^2",
+    "descrizione": "L'energia potenziale elastica $U_e$ è l'energia immagazzinata in una molla (o corpo elastico) quando viene compressa o allungata. È proporzionale al quadrato dell'allungamento $x$ e alla costante elastica $k$ della molla.",
     "variabili": [
-      { "simbolo": "$P_e$", "descrizione": "Energia potenziale elastica", "unita": "J" },
+      { "simbolo": "$U_e$", "descrizione": "Energia potenziale elastica", "unita": "J" },
       { "simbolo": "$k$", "descrizione": "Costante elastica della molla", "unita": "N/m" },
       { "simbolo": "$x$", "descrizione": "Allungamento o compressione dalla posizione di equilibrio", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una molla con $k = 100 \\text{ N/m}$ viene compressa di $0.2 \\text{ m}$. $P_e = 0.5 \\cdot 100 \\cdot (0.2)^2 = 2 \\text{ J}$."
+        "testo": "Una molla con $k = 100 \\text{ N/m}$ viene compressa di $0.2 \\text{ m}$. $U_e = 0.5 \\cdot 100 \\cdot (0.2)^2 = 2 \\text{ J}$."
       }
     ],
     "link_correlati": [ "ENE_003", "ENE_004", "ENE_009" ],
-    "parole_chiave": [ "energia elastica", "molla", "x", "k", "PE = 1/2kx^2" ],
+    "parole_chiave": [ "energia elastica", "molla", "x", "k", "Ue = 1/2kx^2" ],
     "data_creazione": "2025-07-11",
     "data_ultima_modifica": "2025-07-11"
   },
@@ -100,22 +100,21 @@
     "categoria": "Lavoro ed Energia",
     "sottocategoria": "Principi di Conservazione",
     "titolo": "Energia Meccanica Totale",
-    "formula_latex": "E = K + P_g + P_e",
-    "descrizione": "L'energia meccanica totale E è la somma dell'energia cinetica K, dell'energia potenziale gravitazionale $P_g$ e, se presente, dell'energia potenziale elastica $P_e$. In assenza di forze non conservative, l'energia meccanica si conserva.",
+    "formula_latex": "E = K + U",
+    "descrizione": "L'energia meccanica totale $E$ è la somma dell'energia cinetica $K$ e dell'energia potenziale $U$. In assenza di forze non conservative, l'energia meccanica si conserva.",
     "variabili": [
       { "simbolo": "$E$", "descrizione": "Energia Meccanica totale", "unita": "J" },
       { "simbolo": "$K$", "descrizione": "Energia Cinetica", "unita": "J" },
-      { "simbolo": "$P_g$", "descrizione": "Energia Potenziale Gravitazionale", "unita": "J" },
-      { "simbolo": "$P_e$", "descrizione": "Energia Potenziale Elastica", "unita": "J" }
+      { "simbolo": "$U$", "descrizione": "Energia Potenziale", "unita": "J" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un corpo ha $30 \\text{ J}$ di energia cinetica, $20 \\text{ J}$ di energia potenziale gravitazionale e $10 \\text{ J}$ di energia elastica. Totale: $E = 30 + 20 + 10 = 60 \\text{ J}$."
+        "testo": "Un corpo ha $30 \\text{ J}$ di energia cinetica, $20 \\text{ J}$ di energia potenziale gravitazionale e $10 \\text{ J}$ di energia potenziale elastica. Totale: $E = 30 + 20 + 10 = 60 \\text{ J}$."
       }
     ],
     "link_correlati": [ "ENE_002", "ENE_003", "ENE_006", "ENE_008", "ENE_009" ],
-    "parole_chiave": [ "energia meccanica", "conservazione energia", "energia totale", "E = K + P + Pe" ],
+    "parole_chiave": [ "energia meccanica", "conservazione energia", "energia totale", "E = K + P + Pe", "E = K + U" ],
     "data_creazione": "2025-06-03",
     "data_ultima_modifica": "2025-07-11"
   },
@@ -124,22 +123,20 @@
     "categoria": "Lavoro ed Energia",
     "sottocategoria": "Principi di Conservazione",
     "titolo": "Conservazione dell'Energia Meccanica",
-    "formula_latex": "E_i = E_f \\quad , \\quad K_i + P_{g,i} + P_{e,i} = K_f + P_{g,f} + P_{e,f}",
-    "descrizione": "In un sistema isolato in cui agiscono solo **forze conservative**, l'energia meccanica totale si mantiene costante. Questo significa che l'energia può trasformarsi da una forma all'altra (cinetica, potenziale gravitazionale, potenziale elastica), ma la loro somma rimane invariata.",
+    "formula_latex": "E_i = E_f \\Rightarrow K_i + U_i = K_f + U_f",
+    "descrizione": "In un sistema **isolato** in cui agiscono solo **forze conservative**, l'energia meccanica totale si mantiene costante. Questo significa che l'energia può trasformarsi da una forma all'altra (cinetica, potenziale gravitazionale, potenziale elastica), ma la loro somma rimane invariata.",
     "variabili": [
       { "simbolo": "$E_i$", "descrizione": "Energia meccanica iniziale", "unita": "J" },
       { "simbolo": "$E_f$", "descrizione": "Energia meccanica finale", "unita": "J" },
       { "simbolo": "$K_i$", "descrizione": "Energia cinetica iniziale", "unita": "J" },
-      { "simbolo": "$P_{g,i}$", "descrizione": "Energia potenziale gravitazionale iniziale", "unita": "J" },
-      { "simbolo": "$P_{e,i}$", "descrizione": "Energia potenziale elastica iniziale", "unita": "J" },
+      { "simbolo": "$U_i$", "descrizione": "Energia potenziale iniziale", "unita": "J" },
       { "simbolo": "$K_f$", "descrizione": "Energia cinetica finale", "unita": "J" },
-      { "simbolo": "$P_{g,f}$", "descrizione": "Energia potenziale gravitazionale finale", "unita": "J" },
-      { "simbolo": "$P_{e,f}$", "descrizione": "Energia potenziale elastica finale", "unita": "J" }
+      { "simbolo": "$U_f$", "descrizione": "Energia potenziale finale", "unita": "J" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una palla di $2 \\text{ kg}$ cade da $10 \\text{ m}$ (parte da fermo, $K_i=0$). In alto, $E_i = P_{g,i} = 2 \\cdot 9.81 \\cdot 10 = 196.2 \\text{ J}$. Appena prima di toccare terra ($P_{g,f}=0$), per conservazione, $E_f = K_f = 196.2 \\text{ J}$. Quindi la sua velocità finale è $v_f = \\sqrt{2K_f/m} = \\sqrt{2 \\cdot 196.2 / 2} \\approx 14 \\text{ m/s}$."
+        "testo": "Una palla di $2 \\text{ kg}$ cade da $10 \\text{ m}$ (parte da fermo, $K_i=0$). In alto, $E_i = U_{g,i} = 2 \\cdot 9.81 \\cdot 10 = 196.2 \\text{ J}$. Appena prima di toccare terra ($U_{g,f}=0$), per conservazione, $E_f = K_f = 196.2 \\text{ J}$. Quindi la sua velocità finale è $v_f = \\sqrt{2K_f/m} = \\sqrt{2 \\cdot 196.2 / 2} \\approx 14 \\text{ m/s}$."
       }
     ],
     "link_correlati": [ "ENE_002", "ENE_003", "ENE_004", "ENE_006", "ENE_008" ],
@@ -200,12 +197,12 @@
     "categoria": "Lavoro ed Energia",
     "sottocategoria": "Potenza",
     "titolo": "Potenza Media",
-    "formula_latex": "P = \\frac{W}{t}",
-    "descrizione": "La potenza P rappresenta la rapidità con cui viene compiuto un lavoro $W$. Si definisce come lavoro svolto diviso per l'intervallo di tempo $t$. L'unità di misura è il Watt (W).",
+    "formula_latex": "P = \\frac{W}{\\Delta t}",
+    "descrizione": "La potenza P rappresenta la rapidità con cui viene compiuto un lavoro $W$. Si definisce come lavoro svolto diviso per l'intervallo di tempo $\\Delta t$. L'unità di misura è il Watt (W).",
     "variabili": [
       { "simbolo": "$P$", "descrizione": "Potenza media", "unita": "W" },
       { "simbolo": "$W$", "descrizione": "Lavoro svolto", "unita": "J" },
-      { "simbolo": "$t$", "descrizione": "Tempo impiegato", "unita": "s" }
+      { "simbolo": "\\Delta $t$", "descrizione": "Tempo impiegato", "unita": "s" }
     ],
     "esempi": [
       {
@@ -223,15 +220,14 @@
     "categoria": "Lavoro ed Energia",
     "sottocategoria": "Potenza",
     "titolo": "Potenza Istantanea",
-    "formula_latex": "P = \\vec{F} \\cdot \\vec{v} \\quad , \\quad P = F v \\cos(\\theta)",
-    "descrizione": "La potenza istantanea P è la rapidità con cui il lavoro viene compiuto da una forza in un dato istante. È il prodotto scalare della forza $\\vec{F}$ applicata e della velocità $\\vec{v}$ dell'oggetto su cui agisce la forza. Il $\\cos(\\theta)$ considera l'angolo tra forza e velocità.",
+    "formula_latex": "P = \\vec{F} \\cdot \\vec{v}",
+    "descrizione": "La potenza istantanea P è la rapidità con cui il lavoro viene compiuto da una forza in un dato istante. È il prodotto scalare della forza $\\vec{F}$ applicata e della velocità $\\vec{v}$ dell'oggetto su cui agisce la forza.",
     "variabili": [
       { "simbolo": "$P$", "descrizione": "Potenza istantanea", "unita": "W" },
       { "simbolo": "$\\vec{F}$", "descrizione": "Vettore forza", "unita": "N" },
       { "simbolo": "$\\vec{v}$", "descrizione": "Vettore velocità", "unita": "m/s" },
       { "simbolo": "$F$", "descrizione": "Intensità della forza", "unita": "N" },
-      { "simbolo": "$v$", "descrizione": "Modulo della velocità", "unita": "m/s" },
-      { "simbolo": "$\\theta$", "descrizione": "Angolo tra forza e velocità", "unita": "rad" }
+      { "simbolo": "$v$", "descrizione": "Modulo della velocità", "unita": "m/s" }
     ],
     "esempi": [
       {

@@ -52,8 +52,8 @@
     "categoria": "Cinematica",
     "sottocategoria": "Moto uniformemente accelerato",
     "titolo": "Moto uniformemente accelerato",
-    "formula_latex": "x(t) = x_{0} + v_{0} \\cdot t + \\tfrac{1}{2} a \\cdot t^{2}",
-    "descrizione": "Descrive un moto con accelerazione costante $a$.",
+    "formula_latex": "\\begin{aligned} \\left\\{ \\begin{aligned} v(t) &= v_0 + a \\cdot t \\\\ x(t) &= x_{0} + v_{0} \\cdot t + \\tfrac{1}{2} a \\cdot t^{2} \\end{aligned} \\right. \\end{aligned}",
+    "descrizione": "Descrive un moto con accelerazione costante $a$, specificando sia l'evoluzione della velocità nel tempo che della posizione.",
     "variabili": [
       {
         "simbolo": "$x(t)$",
@@ -64,6 +64,11 @@
         "simbolo": "$x_0$",
         "descrizione": "Posizione iniziale",
         "unita": "m"
+      },
+      {
+        "simbolo": "$v(t)$",
+        "descrizione": "Velocità al tempo $t$",
+        "unita": "m/s"
       },
       {
         "simbolo": "$v_0$",
@@ -84,7 +89,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un corpo parte da fermo ($v_0 = 0 \\text{ m/s}$) da $x_0 = 0 \\text{ m}$ e accelera costantemente con $a = 2 \\text{ m/s}^2$. Dopo $t = 4 \\text{ s}$, la sua posizione diventa: $x(4) = 0 + 0 \\cdot 4 + 0.5 \\cdot 2 \\cdot 4^2 = 16 \\text{ m}$."
+        "testo": "Un corpo parte da fermo ($v_0 = 0 \\text{ m/s}$) da $x_0 = 0 \\text{ m}$ e accelera costantemente con $a = 2 \\text{ m/s}^2$. Dopo $t = 4 \\text{ s}$, la velocità è $v = 0 + 2 \\cdot 4 = 8 \\text{ m/s}$ e la posizione diventa: $x(4) = 0 + 0 \\cdot 4 + 0.5 \\cdot 2 \\cdot 4^2 = 16 \\text{ m}$."
       }
     ],
     "link_correlati": [
@@ -96,10 +101,11 @@
       "moto uniformemente accelerato",
       "accelerazione costante",
       "1/2 a t^2",
-      "v0 t"
+      "v0 t",
+      "v = v0 + at"
     ],
     "data_creazione": "2025-05-31",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-19"
   },
   {
     "id": "CIN_003",
@@ -150,7 +156,7 @@
     "sottocategoria": "Accelerazione",
     "titolo": "Accelerazione istantanea",
     "formula_latex": "a(t) = \\dfrac{dv(t)}{dt} = \\dfrac{d^{2}x(t)}{dt^{2}}",
-    "descrizione": "L'accelerazione istantanea $a(t)$ definita come derivata della velocità $v(t)$ rispetto al tempo $t$, o seconda derivata della posizione $x(t)$.",
+    "descrizione": "L'accelerazione istantanea $a(t)$ definita come derivata della velocità $v(t)$ rispetto al tempo $t$, o derivata seconda della posizione $x(t)$.",
     "variabili": [
       {
         "simbolo": "$a(t)$",
@@ -371,7 +377,7 @@
     "sottocategoria": "Moto dei Proiettili",
     "titolo": "Gittata (Moto dei Proiettili)",
     "formula_latex": "R = \\frac{v_0^2 \\sin(2\\theta)}{g}",
-    "descrizione": "La gittata $R$ di un proiettile è la distanza orizzontale massima percorsa dal proiettile prima di tornare alla quota di lancio (su terreno pianeggiante).",
+    "descrizione": "La gittata $R$ di un proiettile è la distanza orizzontale percorsa dal proiettile prima di tornare alla quota di lancio. È massima quando l'angolo di lancio è di $45^\\circ$",
     "variabili": [
       {
         "simbolo": "$R$",
@@ -467,7 +473,7 @@
     "sottocategoria": "Moto Armonico Semplice (MAS)",
     "titolo": "Moto Armonico Semplice",
     "formula_latex": "\\begin{cases} x(t) = A \\cos(\\omega t + \\phi_0) \\\\ v(t) = -A \\omega \\sin(\\omega t + \\phi_0) \\\\ a(t) = -A \\omega^2 \\cos(\\omega t + \\phi_0) = -\\omega^2 x(t) \\end{cases}",
-    "descrizione": "Descrive il moto oscillatorio periodico di un oggetto senza attrito. Le equazioni mostrano la posizione $x(t)$, la velocità $v(t)$ e l'accelerazione $a(t)$ in funzione del tempo $t$.",
+    "descrizione": "Il moto armonico è definito come la proiezione di un moto circolare uniforme su un diametro della circonferenza. \nDescrive il moto oscillatorio periodico di un oggetto senza attrito. \nLe equazioni mostrano la posizione $x(t)$, la velocità $v(t)$ e l'accelerazione $a(t)$ in funzione del tempo $t$.",
     "variabili": [
       {
         "simbolo": "$x(t)$",
@@ -525,5 +531,91 @@
     ],
     "data_creazione": "2025-07-11",
     "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIN_012",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto Armonico Semplice (MAS)",
+    "titolo": "Periodo di una massa su molla",
+    "formula_latex": "T = 2\\pi \\sqrt{\\frac{m}{k}}",
+    "descrizione": "Il periodo $T$ di oscillazione di una massa $m$ attaccata a una molla con costante elastica $k$ è il tempo impiegato per compiere un'oscillazione completa. Dipende solo da $m$ e $k$, e non dall'ampiezza.",
+    "variabili": [
+      {
+        "simbolo": "$T$",
+        "descrizione": "Periodo di oscillazione",
+        "unita": "s"
+      },
+      {
+        "simbolo": "$m$",
+        "descrizione": "Massa attaccata alla molla",
+        "unita": "kg"
+      },
+      {
+        "simbolo": "$k$",
+        "descrizione": "Costante elastica della molla",
+        "unita": "N/m"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una massa di $0{,}5 \\text{ kg}$ è attaccata a una molla con costante elastica $k = 200 \\text{ N/m}$. Il periodo è: $T = 2\\pi \\sqrt{0{,}5 / 200} \\approx 0{,}314 \\text{ s}$."
+      }
+    ],
+    "link_correlati": [
+      "CIN_011"
+    ],
+    "parole_chiave": [
+      "molla",
+      "periodo oscillazione",
+      "massa",
+      "costante elastica",
+      "moto armonico"
+    ],
+    "data_creazione": "2025-07-20",
+    "data_ultima_modifica": "2025-07-20"
+  },
+  {
+    "id": "CIN_013",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto Armonico Semplice (MAS)",
+    "titolo": "Periodo del pendolo semplice",
+    "formula_latex": "T = 2\\pi \\sqrt{\\frac{l}{g}}",
+    "descrizione": "Il periodo $T$ del pendolo semplice è il tempo necessario per una completa oscillazione. Dipende dalla lunghezza $l$ del filo e dall'accelerazione di gravità $g$, ed è valido per piccole oscillazioni.",
+    "variabili": [
+      {
+        "simbolo": "$T$",
+        "descrizione": "Periodo di oscillazione",
+        "unita": "s"
+      },
+      {
+        "simbolo": "$l$",
+        "descrizione": "Lunghezza del filo del pendolo",
+        "unita": "m"
+      },
+      {
+        "simbolo": "$g$",
+        "descrizione": "Accelerazione di gravità",
+        "unita": "m/s²"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un pendolo lungo $1{,}0 \\text{ m}$ ha un periodo: $T = 2\\pi \\sqrt{1{,}0 / 9{,}81} \\approx 2{,}01 \\text{ s}$."
+      }
+    ],
+    "link_correlati": [
+      "CIN_011"
+    ],
+    "parole_chiave": [
+      "pendolo semplice",
+      "periodo",
+      "lunghezza",
+      "gravità",
+      "oscillazione"
+    ],
+    "data_creazione": "2025-07-20",
+    "data_ultima_modifica": "2025-07-20"
   }
 ]

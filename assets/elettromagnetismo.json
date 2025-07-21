@@ -1,71 +1,20 @@
 [
   {
-    "id": "ELT_001",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Magnetismo",
-    "titolo": "Forza di Lorentz (su carica in movimento)",
-    "formula_latex": "\\vec{F} = q (\\vec{v} \\times \\vec{B}) \\quad \\text{o} \\quad F = |q| v B \\sin(\\theta)",
-    "descrizione": "La forza di Lorentz $\\vec{F}$ descrive la forza esercitata su una carica elettrica $q$ in movimento con velocità $\\vec{v}$ all'interno di un campo magnetico $\\vec{B}$. La forza è perpendicolare sia alla velocità che al campo magnetico.",
-    "variabili": [
-      { "simbolo": "$F$", "descrizione": "Forza di Lorentz", "unita": "N" },
-      { "simbolo": "$q$", "descrizione": "Carica elettrica", "unita": "C" },
-      { "simbolo": "$v$", "descrizione": "Velocità della carica", "unita": "m/s" },
-      { "simbolo": "$B$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$\\theta$", "descrizione": "Angolo tra velocità e campo magnetico", "unita": "rad" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Un elettrone ($q = 1.6 \\times 10^{-19} \\text{ C}$) si muove a $10^6 \\text{ m/s}$ perpendicolarmente a un campo magnetico di $0.5 \\text{ T}$. La forza è $F = (1.6 \\times 10^{-19}) \\cdot (10^6) \\cdot 0.5 \\cdot \\sin(90°) = 8 \\times 10^{-14} \\text{ N}$."
-      }
-    ],
-    "link_correlati": [],
-    "parole_chiave": [ "forza di Lorentz", "campo magnetico", "carica", "velocità", "tesla", "elettromagnetismo" ],
-    "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
-  },
-  {
-    "id": "ELT_002",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Magnetismo",
-    "titolo": "Forza magnetica su un filo percorso da corrente",
-    "formula_latex": "\\vec{F} = I (\\vec{L} \\times \\vec{B}) \\quad \\text{o} \\quad F = I L B \\sin(\\theta)",
-    "descrizione": "La forza magnetica $\\vec{F}$ è esercitata su un tratto di filo di lunghezza $\\vec{L}$ percorso da corrente $I$ immerso in un campo magnetico $\\vec{B}$. Anche qui, la forza è perpendicolare alla corrente e al campo magnetico.",
-    "variabili": [
-      { "simbolo": "$F$", "descrizione": "Forza magnetica", "unita": "N" },
-      { "simbolo": "$I$", "descrizione": "Corrente elettrica", "unita": "A" },
-      { "simbolo": "$L$", "descrizione": "Lunghezza del filo nel campo", "unita": "m" },
-      { "simbolo": "$B$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$\\theta$", "descrizione": "Angolo tra la direzione della corrente e il campo magnetico", "unita": "rad" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Un filo di $0.2 \\text{ m}$ percorso da $5 \\text{ A}$ si trova in un campo magnetico di $0.1 \\text{ T}$, perpendicolarmente ($\\theta = 90°$). La forza è $F = 5 \\cdot 0.2 \\cdot 0.1 \\cdot \\sin(90°) = 0.1 \\text{ N}$."
-      }
-    ],
-    "link_correlati": [ "MAG_001" ],
-    "parole_chiave": [ "forza magnetica", "filo", "corrente", "campo magnetico", "elettromagnetismo" ],
-    "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
-  },
-  {
     "id": "IND_001",
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Induzione Elettromagnetica",
     "titolo": "Legge di Faraday-Neumann-Lenz",
-    "formula_latex": "\\mathcal{E} = - N \\frac{\\Delta \\Phi_B}{\\Delta t}",
-    "descrizione": "La legge di Faraday-Neumann-Lenz descrive la **forza elettromotrice (f.e.m.) indotta** $\\mathcal{E}$ in un circuito chiuso quando il flusso del campo magnetico $\\Phi_B$ attraverso la superficie del circuito cambia nel tempo $\\Delta t$. Il segno meno (Legge di Lenz) indica che la f.e.m. indotta si oppone alla variazione di flusso.",
+    "formula_latex": "\\mathcal{f}_em = - \\frac{\\Delta \\Phi_B}{\\Delta t}",
+    "descrizione": "La legge di Faraday-Neumann-Lenz descrive la **forza elettromotrice (f.e.m.) indotta** $\\mathcal{f}_em$ in un circuito chiuso quando il flusso del campo magnetico $\\Phi_B$ attraverso la superficie del circuito cambia nel tempo $\\Delta t$. Il segno meno (Legge di Lenz) indica che la f.e.m. indotta si oppone alla variazione di flusso.",
     "variabili": [
-      { "simbolo": "$\\mathcal{E}$", "descrizione": "Forza elettromotrice indotta (f.e.m.)", "unita": "V" },
-      { "simbolo": "$N$", "descrizione": "Numero di spire della bobina (se applicabile)", "unita": "" },
+      { "simbolo": "$\\mathcal{f}_em$", "descrizione": "Forza elettromotrice indotta (f.e.m.)", "unita": "V" },
       { "simbolo": "$\\Delta \\Phi_B$", "descrizione": "Variazione del flusso magnetico", "unita": "Wb" },
       { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una bobina con $100$ spire sperimenta una variazione di flusso magnetico di $0.02 \\text{ Wb}$ in $0.1 \\text{ s}$. La f.e.m. indotta è $\\mathcal{E} = -100 \\cdot (0.02 / 0.1) = -20 \\text{ V}$."
+        "testo": "Una bobina con $100$ spire sperimenta una variazione di flusso magnetico di $0.02 \\text{ Wb}$ in $0.1 \\text{ s}$. La f.e.m. indotta è $\\\\mathcal{f}_em = -100 \\cdot (0.02 / 0.1) = -20 \\text{ V}$."
       }
     ],
     "link_correlati": [],
@@ -125,10 +74,10 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Induzione Elettromagnetica",
     "titolo": "Forza Elettromotrice Autoindotta in un Induttore",
-    "formula_latex": "\\mathcal{E}_L = - L \\frac{\\Delta I}{\\Delta t}",
-    "descrizione": "La forza elettromotrice (f.e.m.) autoindotta $\\mathcal{E}_L$ in un induttore con autoinduttanza $L$ è proporzionale al tasso di variazione della corrente $\\Delta I / \\Delta t$ che lo attraversa. Il segno meno indica l'opposizione alla variazione di corrente (Legge di Lenz).",
+    "formula_latex": "\\mathcal{f}_em = - L \\frac{\\Delta I}{\\Delta t}",
+    "descrizione": "La forza elettromotrice (f.e.m.) autoindotta $\\mathcal{f}_em$ in un induttore con autoinduttanza $L$ è proporzionale al tasso di variazione della corrente $\\Delta I / \\Delta t$ che lo attraversa. Il segno meno indica l'opposizione alla variazione di corrente (Legge di Lenz).",
     "variabili": [
-      { "simbolo": "$\\mathcal{E}_L$", "descrizione": "Forza elettromotrice autoindotta", "unita": "V" },
+      { "simbolo": "$\\mathcal{f}_em$", "descrizione": "Forza elettromotrice autoindotta", "unita": "V" },
       { "simbolo": "$L$", "descrizione": "Autoinduttanza", "unita": "H" },
       { "simbolo": "$\\Delta I$", "descrizione": "Variazione di corrente", "unita": "A" },
       { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
@@ -136,7 +85,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un induttore di $0.1 \\text{ H}$ vede la corrente variare da $0 \\text{ A}$ a $2 \\text{ A}$ in $0.05 \\text{ s}$. La f.e.m. autoindotta è $\\mathcal{E}_L = -0.1 \\cdot (2 / 0.05) = -4 \\text{ V}$."
+        "testo": "Un induttore di $0.1 \\text{ H}$ vede la corrente variare da $0 \\text{ A}$ a $2 \\text{ A}$ in $0.05 \\text{ s}$. La f.e.m. autoindotta è $\\mathcal{f}_em = -0.1 \\cdot (2 / 0.05) = -4 \\text{ V}$."
       }
     ],
     "link_correlati": ["IND_003"],
@@ -173,10 +122,10 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Mutua Induzione",
     "titolo": "Mutua Induzione (f.e.m. indotta)",
-    "formula_latex": "\\mathcal{E}_2 = - M \\frac{\\Delta I_1}{\\Delta t}",
-    "descrizione": "La mutua induzione descrive la f.e.m. indotta $\\mathcal{E}_2$ in una bobina (secondaria) a causa della variazione di corrente $\\Delta I_1 / \\Delta t$ in una bobina adiacente (primaria). $M$ è il coefficiente di mutua induttanza, una misura dell'accoppiamento magnetico tra le due bobine.",
+    "formula_latex": "\\mathcal{f}_em2 = - M \\frac{\\Delta I_1}{\\Delta t}",
+    "descrizione": "La mutua induzione descrive la f.e.m. indotta $\\mathcal{f}_em2$ in una bobina (secondaria) a causa della variazione di corrente $\\Delta I_1 / \\Delta t$ in una bobina adiacente (primaria). $M$ è il coefficiente di mutua induttanza, una misura dell'accoppiamento magnetico tra le due bobine.",
     "variabili": [
-      { "simbolo": "$\\mathcal{E}_2$", "descrizione": "F.e.m. indotta nella bobina secondaria", "unita": "V" },
+      { "simbolo": "$\\mathcal{f}_em2$", "descrizione": "F.e.m. indotta nella bobina secondaria", "unita": "V" },
       { "simbolo": "$M$", "descrizione": "Coefficiente di mutua induttanza", "unita": "H" },
       { "simbolo": "$\\Delta I_1$", "descrizione": "Variazione di corrente nella bobina primaria", "unita": "A" },
       { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
@@ -197,17 +146,17 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Energia del Campo Magnetico",
     "titolo": "Energia Immagazzinata in un Induttore",
-    "formula_latex": "U_L = \\frac{1}{2} L I^2",
-    "descrizione": "L'energia $U_L$ immagazzinata nel campo magnetico di un induttore con autoinduttanza $L$ attraversato da una corrente $I$. Questa energia è disponibile per essere rilasciata quando la corrente diminuisce.",
+    "formula_latex": "W_L = \\frac{1}{2} L I^2",
+    "descrizione": "L'energia $W_L$ immagazzinata nel campo magnetico di un induttore con autoinduttanza $L$ attraversato da una corrente $I$. Questa energia è disponibile per essere rilasciata quando la corrente diminuisce.",
     "variabili": [
-      { "simbolo": "$U_L$", "descrizione": "Energia immagazzinata nell'induttore", "unita": "J (Joule)" },
+      { "simbolo": "$W_L$", "descrizione": "Energia immagazzinata nell'induttore", "unita": "J (Joule)" },
       { "simbolo": "$L$", "descrizione": "Autoinduttanza", "unita": "H" },
       { "simbolo": "$I$", "descrizione": "Corrente nell'induttore", "unita": "A" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un induttore di $0.2 \\text{ H}$ percorso da una corrente di $3 \\text{ A}$ immagazzina un'energia di $U_L = \\frac{1}{2} (0.2 \\text{ H}) (3 \\text{ A})^2 = 0.9 \\text{ J}$."
+        "testo": "Un induttore di $0.2 \\text{ H}$ percorso da una corrente di $3 \\text{ A}$ immagazzina un'energia di $W_L = \\frac{1}{2} (0.2 \\text{ H}) (3 \\text{ A})^2 = 0.9 \\text{ J}$."
       }
     ],
     "link_correlati": [],
@@ -220,17 +169,17 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Energia del Campo Magnetico",
     "titolo": "Densità Volumica di Energia Magnetica nel Vuoto",
-    "formula_latex": "u_B = \\frac{B^2}{2\\mu_0}",
-    "descrizione": "La densità volumica di energia magnetica $u_B$ rappresenta l'energia immagazzinata per unità di volume in un campo magnetico $B$ nel vuoto. È analoga alla densità di energia elettrica.",
+    "formula_latex": "w_B = \\frac{B^2}{2\\mu_0}",
+    "descrizione": "La densità volumica di energia magnetica $w_B$ rappresenta l'energia immagazzinata per unità di volume in un campo magnetico $B$ nel vuoto. È analoga alla densità di energia elettrica.",
     "variabili": [
-      { "simbolo": "$u_B$", "descrizione": "Densità volumica di energia magnetica", "unita": "J/m^3" },
+      { "simbolo": "$w_B$", "descrizione": "Densità volumica di energia magnetica", "unita": "J/m^3" },
       { "simbolo": "$B$", "descrizione": "Intensità del campo magnetico", "unita": "T" },
       { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "In una regione con un campo magnetico di $0.1 \\text{ T}$, la densità di energia è $u_B = \\frac{(0.1 \\text{ T})^2}{2 \\cdot (4\\pi \\times 10^{-7} \\text{ N/A}^2)} \\approx 3979 \\text{ J/m}^3$."
+        "testo": "In una regione con un campo magnetico di $0.1 \\text{ T}$, la densità di energia è $w_B = \\frac{(0.1 \\text{ T})^2}{2 \\cdot (4\\pi \\times 10^{-7} \\text{ N/A}^2)} \\approx 3979 \\text{ J/m}^3$."
       }
     ],
     "link_correlati": [],
@@ -267,8 +216,8 @@
     "id": "AC_002",
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Corrente Alternata (AC)",
-    "titolo": "Valore Efficace (RMS) di Tensione o Corrente Alternata",
-    "formula_latex": "V_{rms} = \\frac{V_{max}}{\\sqrt{2}} \\quad \\text{o} \\quad I_{rms} = \\frac{I_{max}}{\\sqrt{2}}",
+    "titolo": "Valore Efficace di Tensione o Corrente Alternata",
+    "formula_latex": "\\begin{aligned} V_{rms} &= \\frac{V_{max}}{\\sqrt{2}} \\\\ I_{rms} &= \\frac{I_{max}}{\\sqrt{2}} \\end{aligned}",
     "descrizione": "Il valore efficace (Root Mean Square, RMS) di una tensione o corrente alternata è il valore equivalente di una corrente o tensione continua che produrrebbe lo stesso effetto di riscaldamento in una resistenza. È spesso il valore riportato per le specifiche degli apparecchi elettrici.",
     "variabili": [
       { "simbolo": "$V_{rms}$", "descrizione": "Tensione efficace", "unita": "V" },
@@ -291,7 +240,7 @@
     "id": "AC_003",
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Corrente Alternata (AC)",
-    "titolo": "Potenza Media in un Circuito AC (Generale)",
+    "titolo": "Potenza Media in un Circuito AC",
     "formula_latex": "P_{avg} = V_{rms} I_{rms} \\cos(\\phi)",
     "descrizione": "La potenza media $P_{avg}$ dissipata in un circuito a corrente alternata.",
     "variabili": [
@@ -316,7 +265,7 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Corrente Alternata (AC)",
     "titolo": "Circuito Ohmico (Resistivo Puro) in AC",
-    "formula_latex": "V = I R \\quad \\text{e} \\quad \\phi = 0",
+    "formula_latex": "\\begin{aligned} V &= I R \\\\ \\varphi &= 0 \\end{aligned}",
     "descrizione": "In un circuito puramente ohmico (contenente solo resistenze), la Legge di Ohm si applica anche in AC, e la tensione e la corrente sono in fase (sfasamento $\\phi = 0$). L'impedenza è uguale alla resistenza.",
     "variabili": [
       { "simbolo": "$V$", "descrizione": "Tensione (picco o RMS)", "unita": "V" },
@@ -340,7 +289,7 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Corrente Alternata (AC)",
     "titolo": "Circuito Induttivo Puro in AC (Reattanza Induttiva)",
-    "formula_latex": "X_L = \\omega L \\quad \\text{e} \\quad V_L = I X_L \\quad \\text{e} \\quad \\phi = +\\frac{\\pi}{2}",
+    "formula_latex": "\\begin{aligned} X_L &= \\omega L \\\\ V_L &= I X_L \\\\ \\varphi &= +\\frac{\\pi}{2} \\end{aligned}",
     "descrizione": "In un circuito puramente induttivo, l'induttore oppone resistenza al flusso di corrente alternata tramite la reattanza induttiva $X_L$. La tensione $V_L$ sull'induttore anticipa la corrente $I$ di $90°$ ($\\pi/2$ radianti).",
     "variabili": [
       { "simbolo": "$X_L$", "descrizione": "Reattanza induttiva", "unita": "\\Omega" },
@@ -366,7 +315,7 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Corrente Alternata (AC)",
     "titolo": "Circuito Capacitivo Puro in AC (Reattanza Capacitiva)",
-    "formula_latex": "X_C = \\frac{1}{\\omega C} \\quad \\text{e} \\quad V_C = I X_C \\quad \\text{e} \\quad \\phi = -\\frac{\\pi}{2}",
+    "formula_latex": "\\begin{aligned} X_C &= \\frac{1}{\\omega C} \\\\ V_C &= I X_C \\\\ \\varphi &= -\\frac{\\pi}{2} \\end{aligned}",
     "descrizione": "In un circuito puramente capacitivo, il condensatore oppone resistenza al flusso di corrente alternata tramite la reattanza capacitiva $X_C$. La tensione $V_C$ sul condensatore è in ritardo rispetto alla corrente $I$ di $90°$ ($\\pi/2$ radianti).",
     "variabili": [
       { "simbolo": "$X_C$", "descrizione": "Reattanza capacitiva", "unita": "\\Omega" },
@@ -416,7 +365,7 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Corrente Alternata (AC)",
     "titolo": "Condizione di Risonanza in un Circuito RLC Serie",
-    "formula_latex": "X_L = X_C \\quad \\text{o} \\quad \\omega_0 = \\frac{1}{\\sqrt{LC}}",
+    "formula_latex": "\\begin{aligned} X_L &= X_C \\\\ \\omega_0 &= \\frac{1}{\\sqrt{LC}} \\end{aligned}",
     "descrizione": "La risonanza si verifica in un circuito RLC serie quando la reattanza induttiva $X_L$ e la reattanza capacitiva $X_C$ si annullano a vicenda ($X_L = X_C$). A questa frequenza angolare di risonanza $\\omega_0$, l'impedenza del circuito è minima e uguale alla sola resistenza $R$, e la corrente è massima.",
     "variabili": [
       { "simbolo": "$X_L$", "descrizione": "Reattanza induttiva", "unita": "\\Omega" },
@@ -490,13 +439,12 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Equazioni di Maxwell",
     "titolo": "Prima Equazione di Maxwell (Legge di Gauss per il Campo Elettrico)",
-    "formula_latex": "\\oint_S \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{int}}{\\epsilon_0}",
-    "descrizione": "La prima equazione di Maxwell, o Legge di Gauss per il Campo Elettrico, afferma che il flusso totale del campo elettrico $\\vec{E}$ attraverso una superficie chiusa $S$ è proporzionale alla carica elettrica totale $Q_{int}$ racchiusa all'interno di quella superficie.",
+    "formula_latex": "\\Phi_S(\\vec{E}) = \\frac{Q_{tot}}{\\varepsilon_0}",
+    "descrizione": "La prima equazione di Maxwell, o Legge di Gauss per il Campo Elettrico, afferma che il flusso totale del campo elettrico $\\vec{E}$ attraverso una superficie chiusa $S$ è proporzionale alla carica elettrica totale $Q_{tot}$ racchiusa all'interno di quella superficie.",
     "variabili": [
       { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$d\\vec{A}$", "descrizione": "Vettore infinitesimo di area", "unita": "m^2" },
-      { "simbolo": "$Q_{int}$", "descrizione": "Carica netta interna alla superficie", "unita": "C" },
-      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "$Q_{tot}$", "descrizione": "Carica netta interna alla superficie", "unita": "C" },
+      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
     ],
     "esempi": [
       {
@@ -514,11 +462,10 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Equazioni di Maxwell",
     "titolo": "Seconda Equazione di Maxwell (Legge di Gauss per il Campo Magnetico)",
-    "formula_latex": "\\oint_S \\vec{B} \\cdot d\\vec{A} = 0",
+    "formula_latex": "\\Phi_S(\\vec{B}) = 0",
     "descrizione": "La seconda equazione di Maxwell, o Legge di Gauss per il Campo Magnetico, afferma che il flusso totale del campo magnetico $\\vec{B}$ attraverso qualsiasi superficie chiusa $S$ è sempre zero. Ciò implica l'assenza di monopoli magnetici isolati; i poli nord e sud esistono sempre in coppia.",
     "variabili": [
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$d\\vec{A}$", "descrizione": "Vettore infinitesimo di area", "unita": "m^2" }
+      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" }
     ],
     "esempi": [
       {
@@ -536,11 +483,10 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Equazioni di Maxwell",
     "titolo": "Terza Equazione di Maxwell (Legge di Faraday-Neumann dell'Induzione)",
-    "formula_latex": "\\oint_L \\vec{E} \\cdot d\\vec{l} = - \\frac{d\\Phi_B}{dt}",
+    "formula_latex": "\\Gamma_{\\mathcal{L}}(\\vec{E}) = - \\frac{\\Delta \\Phi_S(\\vec{B})}{\\Delta t}",
     "descrizione": "La terza equazione di Maxwell, o Legge di Faraday-Neumann dell'induzione, stabilisce che la circuitazione del campo elettrico $\\vec{E}$ lungo un percorso chiuso $L$ è uguale all'opposto della variazione nel tempo del flusso magnetico $\\Phi_B$ attraverso la superficie delimitata da quel percorso. È alla base dei fenomeni di induzione elettromagnetica.",
     "variabili": [
       { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$d\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza", "unita": "m" },
       { "simbolo": "$\\Phi_B$", "descrizione": "Flusso magnetico", "unita": "Wb" },
       { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" }
     ],
@@ -560,15 +506,14 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Equazioni di Maxwell",
     "titolo": "Quarta Equazione di Maxwell (Legge di Ampère-Maxwell)",
-    "formula_latex": "\\oint_L \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{inc} + \\mu_0 \\epsilon_0 \\frac{d\\Phi_E}{dt}",
+    "formula_latex": "\\Gamma_{\\mathcal{L}}(\\vec{B}) = \\mu_0 \\left[ i_{\\text{tot}} + \\varepsilon_0 \\frac{\\Delta \\Phi_S(\\vec{E})}{\\Delta t} \\right]",
     "descrizione": "La quarta equazione di Maxwell, o Legge di Ampère-Maxwell, afferma che la circuitazione del campo magnetico $\\vec{B}$ lungo un percorso chiuso $L$ è dovuta non solo alla corrente di conduzione $I_{inc}$ (come in Ampère), ma anche alla variazione nel tempo del flusso elettrico $\\Phi_E$ (termine di corrente di spostamento). Questo termine è cruciale per l'esistenza delle onde elettromagnetiche.",
     "variabili": [
       { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$d\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza", "unita": "m" },
       { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" },
       { "simbolo": "$I_{inc}$", "descrizione": "Corrente di conduzione concatenata", "unita": "A" },
-      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
-      { "simbolo": "$\\Phi_E$", "descrizione": "Flusso elettrico", "unita": "V \\cdot m" },
+      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
+      { "simbolo": "$\\Phi_E$", "descrizione": "Flusso elettrico", "unita": "$V \\cdot m$" },
       { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" }
     ],
     "esempi": [
@@ -587,17 +532,17 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Onde Elettromagnetiche",
     "titolo": "Velocità della Luce nel Vuoto",
-    "formula_latex": "c = \\frac{1}{\\sqrt{\\mu_0 \\epsilon_0}}",
-    "descrizione": "La velocità della luce nel vuoto $c$ è una costante fondamentale derivata dalle costanti del vuoto dell'elettromagnetismo: la permeabilità magnetica del vuoto $\\mu_0$ e la costante dielettrica del vuoto $\\epsilon_0$. Questa relazione è una delle maggiori intuizioni di Maxwell, dimostrando che la luce è un'onda elettromagnetica.",
+    "formula_latex": "c = \\frac{1}{\\sqrt{\\mu_0 \\varepsilon_0}}",
+    "descrizione": "La velocità della luce nel vuoto $c$ è una costante fondamentale derivata dalle costanti del vuoto dell'elettromagnetismo: la permeabilità magnetica del vuoto $\\mu_0$ e la costante dielettrica del vuoto $\\varepsilon_0$. Questa relazione è una delle maggiori intuizioni di Maxwell, dimostrando che la luce è un'onda elettromagnetica.",
     "variabili": [
       { "simbolo": "$c$", "descrizione": "Velocità della luce nel vuoto", "unita": "m/s" },
       { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" },
-      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcolando con i valori approssimati di $\\mu_0 = 4\\pi \\times 10^{-7}$ e $\\epsilon_0 = 8.85 \\times 10^{-12}$, si ottiene $c \\approx 3 \\times 10^8 \\text{ m/s}$."
+        "testo": "Calcolando con i valori approssimati di $\\mu_0 = 4\\pi \\times 10^{-7}$ e $\\varepsilon_0 = 8.85 \\times 10^{-12}$, si ottiene $c \\approx 3 \\times 10^8 \\text{ m/s}$."
       }
     ],
     "link_correlati": ["MAX_001", "MAX_004"],
@@ -656,13 +601,13 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Onde Elettromagnetiche",
     "titolo": "Irradiamento (Intensità di un'Onda Elettromagnetica)",
-    "formula_latex": "I = \\frac{P}{A} = \\frac{1}{2} \\epsilon_0 c E_{max}^2 = \\frac{E_{max}^2}{2 \\mu_0 c}",
+    "formula_latex": "I = \\frac{P}{A} = \\frac{1}{2} \\varepsilon_0 c E_{max}^2 = \\frac{E_{max}^2}{2 \\mu_0 c}",
     "descrizione": "L'irradiamento $I$ (o intensità) di un'onda elettromagnetica è la potenza media $P$ trasportata dall'onda per unità di area $A$ perpendicolare alla direzione di propagazione. Dipende dall'ampiezza del campo elettrico $E_{max}$ (o magnetico $B_{max}$).",
     "variabili": [
       { "simbolo": "$I$", "descrizione": "Irradiamento (intensità)", "unita": "W/m^2" },
       { "simbolo": "$P$", "descrizione": "Potenza media", "unita": "W" },
       { "simbolo": "$A$", "descrizione": "Area", "unita": "m^2" },
-      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
+      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
       { "simbolo": "$c$", "descrizione": "Velocità della luce nel vuoto", "unita": "m/s" },
       { "simbolo": "$E_{max}$", "descrizione": "Ampiezza del campo elettrico", "unita": "V/m" },
       { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" }
@@ -730,7 +675,7 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Onde Elettromagnetiche",
     "titolo": "Pressione di Radiazione",
-    "formula_latex": "P_{rad} = \\frac{I}{c} \\quad \\text{(assorbimento perfetto)} \\quad \\text{e} \\quad P_{rad} = \\frac{2I}{c} \\quad \\text{(riflessione perfetta)}",
+    "formula_latex": "\\begin{aligned} P_{rad} &= \\frac{I}{c} \\quad \\text{(assorbimento perfetto)} \\\\ P_{rad} &= \\frac{2I}{c} \\quad \\text{(riflessione perfetta)} \\end{aligned}",
     "descrizione": "La pressione di radiazione $P_{rad}$ è la pressione esercitata da un'onda elettromagnetica su una superficie. Se l'onda è completamente assorbita, la pressione è $I/c$. Se è completamente riflessa, la pressione è doppia, $2I/c$.",
     "variabili": [
       { "simbolo": "$P_{rad}$", "descrizione": "Pressione di radiazione", "unita": "Pa (Pascal)" },

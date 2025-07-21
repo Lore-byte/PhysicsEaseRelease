@@ -25,12 +25,12 @@
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Conduttori e Campo Elettrico",
     "titolo": "Campo Elettrico alla Superficie di un Conduttore",
-    "formula_latex": "E = \\frac{\\sigma}{\\epsilon_0}",
+    "formula_latex": "E = \\frac{\\sigma}{\\varepsilon_0}",
     "descrizione": "Il campo elettrico $E$ immediatamente esterno alla superficie di un conduttore in equilibrio elettrostatico è perpendicolare alla superficie e proporzionale alla densità superficiale di carica $\\sigma$ su quel punto della superficie.",
     "variabili": [
       { "simbolo": "$E$", "descrizione": "Campo elettrico alla superficie", "unita": "N/C" },
       { "simbolo": "$\\sigma$", "descrizione": "Densità superficiale di carica", "unita": "C/m^2" },
-      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
     ],
     "esempi": [
       {
@@ -92,14 +92,14 @@
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Condensatori",
     "titolo": "Campo Elettrico in un Condensatore Piano",
-    "formula_latex": "E = \\frac{\\sigma}{\\epsilon_0} = \\frac{Q}{\\epsilon_0 A}",
+    "formula_latex": "E = \\frac{\\sigma}{\\varepsilon_0} = \\frac{Q}{\\varepsilon_0 A}",
     "descrizione": "Il campo elettrico $E$ all'interno di un condensatore piano ideale (con armature molto grandi rispetto alla loro separazione) è uniforme e diretto da un'armatura all'altra. Dipende dalla densità superficiale di carica $\\sigma$ e dall'area delle armature $A$.",
     "variabili": [
       { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
       { "simbolo": "$\\sigma$", "descrizione": "Densità superficiale di carica", "unita": "C/m^2" },
       { "simbolo": "$Q$", "descrizione": "Carica su un'armatura", "unita": "C" },
       { "simbolo": "$A$", "descrizione": "Area dell'armatura", "unita": "m^2" },
-      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
     ],
     "esempi": [
       {
@@ -185,17 +185,17 @@
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Condensatori",
     "titolo": "Densità Volumica di Energia Elettrica",
-    "formula_latex": "u_E = \\frac{1}{2} \\epsilon_0 E^2",
-    "descrizione": "La densità volumica di energia elettrica $u_E$ rappresenta l'energia immagazzinata per unità di volume in un campo elettrico $E$ nel vuoto o in un dielettrico con costante $\\epsilon_0$.",
+    "formula_latex": "w_E = \\frac{1}{2} \\varepsilon E^2",
+    "descrizione": "La densità volumica di energia elettrica $w_E$ rappresenta l'energia immagazzinata per unità di volume in un campo elettrico $E$ nel vuoto o in un dielettrico con costante $\\varepsilon$.",
     "variabili": [
-      { "simbolo": "$u_E$", "descrizione": "Densità volumica di energia", "unita": "J/m^3" },
-      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
+      { "simbolo": "$w_E$", "descrizione": "Densità volumica di energia", "unita": "J/m^3" },
+      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
       { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "In una regione con un campo elettrico di $1000 N/C$, la densità di energia è $u_E = \\frac{1}{2} (8.85 \\times 10^{-12} F/m) (1000 N/C)^2 \\approx 4.425 \\times 10^{-6} J/m^3$."
+        "testo": "In una regione con un campo elettrico di $1000$, la densità di energia è $w_E = \\frac{1}{2} (8.85 \\times 10^{-12}) (1000)^2 \\approx 4.425 \\times 10^{-6} J/m^3$."
       }
     ],
     "link_correlati": [],
@@ -321,18 +321,18 @@
     "id": "CIR_015",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Generatori e Leggi di Kirchhoff",
-    "titolo": "Forza Elettromotrice (f.e.m.)",
-    "formula_latex": "\\mathcal{E} = \\frac{W}{Q}",
-    "descrizione": "La forza elettromotrice (f.e.m.) $\\mathcal{E}$ di un generatore è il lavoro $W$ compiuto dal generatore per spostare una carica unitaria $Q$ dal polo negativo al polo positivo al suo interno, idealmente senza perdite.",
+    "titolo": "Forza Elettromotrice",
+    "formula_latex": "\\mathcal{f}_em = \\frac{W}{Q}",
+    "descrizione": "La forza elettromotrice (f.e.m.) $\\mathcal{f}_em$ di un generatore è il lavoro $W$ compiuto dal generatore per spostare una carica unitaria $Q$ dal polo negativo al polo positivo al suo interno, idealmente senza perdite.",
     "variabili": [
-      { "simbolo": "$\\mathcal{E}$", "descrizione": "Forza elettromotrice", "unita": "V" },
+      { "simbolo": "$\\mathcal{f}_em$", "descrizione": "Forza elettromotrice", "unita": "V" },
       { "simbolo": "$W$", "descrizione": "Lavoro", "unita": "J" },
       { "simbolo": "$Q$", "descrizione": "Carica", "unita": "C" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una batteria che compie $12 J$ di lavoro per spostare $1 C$ di carica ha una f.e.m. di $\\mathcal{E} = \\frac{12 J}{1 C} = 12 V$."
+        "testo": "Una batteria che compie $12 J$ di lavoro per spostare $1 C$ di carica ha una f.e.m. di $\\mathcal{f}_em = \\frac{12 J}{1 C} = 12 V$."
       }
     ],
     "link_correlati": [],
@@ -345,11 +345,11 @@
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Generatori e Leggi di Kirchhoff",
     "titolo": "Generatore Reale di Tensione",
-    "formula_latex": "V = \\mathcal{E} - I r",
-    "descrizione": "Un generatore reale di tensione ha una resistenza interna $r$ che causa una caduta di tensione. La tensione $V$ ai capi del generatore è la f.e.m. $\\mathcal{E}$ meno la caduta di tensione sulla resistenza interna quando una corrente $I$ lo attraversa.",
+    "formula_latex": "V = \\mathcal{f}_em - I r",
+    "descrizione": "Un generatore reale di tensione ha una resistenza interna $r$ che causa una caduta di tensione. La tensione $V$ ai capi del generatore è la f.e.m. $\\mathcal{f}_em$ meno la caduta di tensione sulla resistenza interna quando una corrente $I$ lo attraversa.",
     "variabili": [
       { "simbolo": "$V$", "descrizione": "Tensione ai capi", "unita": "V" },
-      { "simbolo": "$\\mathcal{E}$", "descrizione": "Forza elettromotrice", "unita": "V" },
+      { "simbolo": "$\\mathcal{f}_em$", "descrizione": "Forza elettromotrice", "unita": "V" },
       { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
       { "simbolo": "$r$", "descrizione": "Resistenza interna", "unita": "$\\Omega$" }
     ],
@@ -436,7 +436,7 @@
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Circuiti RC",
     "titolo": "Circuito RC: Carica del Condensatore",
-    "formula_latex": "q(t) = Q_{max} (1 - e^{-t/\\tau}) \\quad \\text{e} \\quad I(t) = I_{max} e^{-t/\\tau}",
+    "formula_latex": "\\begin{aligned} q(t) &= Q_{\\text{max}} (1 - e^{-t/\\tau}) \\\\ I(t) &= I_{\\text{max}} e^{-t/\\tau} \\end{aligned}",
     "descrizione": "Durante la carica di un condensatore in un circuito RC (resistenza-condensatore), la carica $q(t)$ sul condensatore e la corrente $I(t)$ nel circuito variano esponenzialmente nel tempo. $\\tau = RC$ è la costante di tempo.",
     "variabili": [
       { "simbolo": "$q(t)$", "descrizione": "Carica in funzione del tempo", "unita": "C" },
@@ -462,7 +462,7 @@
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Circuiti RC",
     "titolo": "Circuito RC: Scarica del Condensatore",
-    "formula_latex": "q(t) = Q_{0} e^{-t/\\tau} \\quad \\text{e} \\quad I(t) = -I_{0} e^{-t/\\tau}",
+    "formula_latex": "\\begin{aligned} q(t) &= Q_0 e^{-t/\\tau} \\\\ I(t) &= -I_0 e^{-t/\\tau} \\end{aligned}",
     "descrizione": "Durante la scarica di un condensatore in un circuito RC, la carica $q(t)$ sul condensatore e la corrente $I(t)$ nel circuito diminuiscono esponenzialmente nel tempo. $\\tau = RC$ è la costante di tempo.",
     "variabili": [
       { "simbolo": "$q(t)$", "descrizione": "Carica in funzione del tempo", "unita": "C" },

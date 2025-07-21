@@ -26,20 +26,22 @@
     "id": "TER_002",
     "categoria": "Termodinamica",
     "sottocategoria": "Gas Ideali",
-    "titolo": "Equazione di Stato dei Gas Ideali",
-    "formula_latex": "P \\cdot V = n \\cdot R \\cdot T",
-    "descrizione": "Relazione che descrive il comportamento di un gas ideale, dove $P$ è la pressione, $V$ il volume, $n$ il numero di moli, $R$ la costante dei gas ideali e $T$ la temperatura assoluta.",
+    "titolo": "Equazione di Stato del Gas Perfetto",
+    "formula_latex": "\\begin{aligned} P \\cdot V &= n \\cdot R \\cdot T \\\\ P \\cdot V &= N \\cdot k_B \\cdot T \\end{aligned}",
+    "descrizione": "Relazione che descrive il comportamento di un gas ideale, dove $P$ è la pressione, $V$ il volume, $n$ il numero di moli, $R$ la costante dei gas ideali e $T$ la temperatura assoluta. \nUn'altra forma dell'equazione di stato dei gas ideali, dove $N$ è il numero di molecole e $k_B$ è la costante di Boltzmann.",
     "variabili": [
       { "simbolo": "$P$", "descrizione": "Pressione del gas", "unita": "Pa" },
       { "simbolo": "$V$", "descrizione": "Volume del gas", "unita": "m³" },
       { "simbolo": "$n$", "descrizione": "Numero di moli", "unita": "mol" },
-      { "simbolo": "$R$", "descrizione": "Costante dei gas ideali ($8.314 \\text{ J/(mol}\\cdot\\text{K)}$)", "unita": "J/(mol·K)" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" }
+      { "simbolo": "$R$", "descrizione": "Costante dei gas ideali", "unita": "8.314 J/(mol·K)" },
+      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" },
+      { "simbolo": "$N$", "descrizione": "Numero di molecole", "unita": "" },
+      { "simbolo": "$k_B$", "descrizione": "Costante di Boltzmann ($1.38 \\cdot 10^{-23} \\text{ J/K}$)", "unita": "J/K" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcola la pressione di $2 \\text{ mol}$ di un gas ideale in un volume di $0.05 \\text{ m}^3$ a $300 \\text{ K}$. $P = (2 \\text{ mol} \\cdot 8.314 \\text{ J/(mol}\\cdot\\text{K)} \\cdot 300 \\text{ K}) / 0.05 \\text{ m}^3 \\approx 99768 \\text{ Pa}$."
+        "testo": "La pressione di $2 \\text{ mol}$ di un gas ideale in un volume di $0.05 \\text{ m}^3$ a $300 \\text{ K}$ è $P = (2 \\cdot 8.314 \\cdot 300) / 0.05 \\approx 99768 \\text{ Pa}$."
       }
     ],
     "link_correlati": [],
@@ -99,9 +101,13 @@
     "categoria": "Termodinamica",
     "sottocategoria": "Gas Ideali",
     "titolo": "Prima Legge di Gay-Lussac",
-    "formula_latex": "\\frac{V_1}{T_1} = \\frac{V_2}{T_2}",
+    "formula_latex": "\\begin{aligned} V = V_0 \\cdot (&1 + \\alpha \\cdot \\Delta T) \\\\ \\frac{V_1}{T_1} &= \\frac{V_2}{T_2} \\end{aligned}",
     "descrizione": "Per una massa fissa di gas a pressione costante (**trasformazione isobara**), il volume $V$ è direttamente proporzionale alla temperatura assoluta $T$.",
     "variabili": [
+      { "simbolo": "$V$", "descrizione": "Volume a temperatura $T$", "unita": "m³" },
+      { "simbolo": "$V_0$", "descrizione": "Volume a temperatura di riferimento (solitamente 0 °C)", "unita": "m³" },
+      { "simbolo": "$\\alpha$", "descrizione": "Coefficiente di dilatazione volumica del gas ideale", "unita": "K⁻¹" },
+      { "simbolo": "$\\Delta T$", "descrizione": "Variazione di temperatura rispetto alla temperatura di riferimento", "unita": "K" },
       { "simbolo": "$V_1$", "descrizione": "Volume iniziale", "unita": "m³" },
       { "simbolo": "$T_1$", "descrizione": "Temperatura iniziale assoluta", "unita": "K" },
       { "simbolo": "$V_2$", "descrizione": "Volume finale", "unita": "m³" },
@@ -110,22 +116,26 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un gas ha un volume di $10 \\text{ L}$ a $273 \\text{ K}$. Quale sarà il suo volume a $300 \\text{ K}$ se la pressione è costante? $V_2 = V_1 \\cdot \\frac{T_2}{T_1} = 10 \\text{ L} \\cdot \\frac{300 \\text{ K}}{273 \\text{ K}} \\approx 10.99 \\text{ L}$."
+        "testo": "Un gas ha un volume di $10 \\text{ L}$ a $273 \\text{ K}$. Quale sarà il suo volume a $300 \\text{ K}$ se la pressione è costante? \n\n$V_2 = V_1 \\cdot \\frac{T_2}{T_1} = 10 \\text{ L} \\cdot \\frac{300 \\text{ K}}{273 \\text{ K}} \\approx 10.99 \\text{ L}$."
       }
     ],
     "link_correlati": ["TER_002"],
     "parole_chiave": ["Gay-Lussac", "volume", "temperatura", "gas ideale", "isobara"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-21"
   },
   {
     "id": "TER_006",
     "categoria": "Termodinamica",
     "sottocategoria": "Gas Ideali",
     "titolo": "Seconda Legge di Gay-Lussac",
-    "formula_latex": "\\frac{P_1}{T_1} = \\frac{P_2}{T_2}",
+    "formula_latex": "\\begin{aligned} P = P_0 \\cdot (&1 + \\alpha \\cdot \\Delta T) \\\\ \\frac{P_1}{T_1} &= \\frac{P_2}{T_2} \\end{aligned}",
     "descrizione": "Per una massa fissa di gas a volume costante (**trasformazione isocora**), la pressione $P$ è direttamente proporzionale alla temperatura assoluta $T$.",
     "variabili": [
+      { "simbolo": "$P$", "descrizione": "Pressione a temperatura $T$", "unita": "Pa" },
+      { "simbolo": "$P_0$", "descrizione": "Pressione a temperatura di riferimento (solitamente 0 °C)", "unita": "Pa" },
+      { "simbolo": "$\\alpha$", "descrizione": "Coefficiente di dilatazione del gas ideale", "unita": "K⁻¹" },
+      { "simbolo": "$\\Delta T$", "descrizione": "Variazione di temperatura rispetto alla temperatura di riferimento", "unita": "K" },
       { "simbolo": "$P_1$", "descrizione": "Pressione iniziale", "unita": "Pa" },
       { "simbolo": "$T_1$", "descrizione": "Temperatura iniziale assoluta", "unita": "K" },
       { "simbolo": "$P_2$", "descrizione": "Pressione finale", "unita": "Pa" },
@@ -134,14 +144,15 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un gas ha una pressione di $10^5 \\text{ Pa}$ a $273 \\text{ K}$. Quale sarà la sua pressione a $350 \\text{ K}$ se il volume è costante? $P_2 = P_1 \\cdot \\frac{T_2}{T_1} = 10^5 \\text{ Pa} \\cdot \\frac{350 \\text{ K}}{273 \\text{ K}} \\approx 1.28 \\cdot 10^5 \\text{ Pa}$."
+        "testo": "Un gas ha una pressione di $10^5 \\text{ Pa}$ a $273 \\text{ K}$. Quale sarà la sua pressione a $350 \\text{ K}$ se il volume è costante?\n\n$P_2 = P_1 \\cdot \\frac{T_2}{T_1} = 10^5 \\text{ Pa} \\cdot \\frac{350 \\text{ K}}{273 \\text{ K}} \\approx 1.28 \\cdot 10^5 \\text{ Pa}$."
       }
     ],
     "link_correlati": ["TER_002"],
     "parole_chiave": ["Gay-Lussac", "pressione", "temperatura", "gas ideale", "isocora"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-21"
   },
+
   {
     "id": "TER_007",
     "categoria": "Termodinamica",
@@ -167,31 +178,6 @@
     "data_ultima_modifica": "2025-07-11"
   },
   {
-    "id": "TER_008",
-    "categoria": "Termodinamica",
-    "sottocategoria": "Gas Ideali",
-    "titolo": "Equazione di Stato del Gas Perfetto (Forma Estesa)",
-    "formula_latex": "P \\cdot V = N \\cdot k_B \\cdot T",
-    "descrizione": "Un'altra forma dell'equazione di stato dei gas ideali, dove $N$ è il numero di molecole e $k_B$ è la costante di Boltzmann.",
-    "variabili": [
-      { "simbolo": "$P$", "descrizione": "Pressione del gas", "unita": "Pa" },
-      { "simbolo": "$V$", "descrizione": "Volume del gas", "unita": "m³" },
-      { "simbolo": "$N$", "descrizione": "Numero di molecole", "unita": "" },
-      { "simbolo": "$k_B$", "descrizione": "Costante di Boltzmann ($1.38 \\cdot 10^{-23} \\text{ J/K}$)", "unita": "J/K" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Calcola la pressione di $10^{23}$ molecole di un gas perfetto in un volume di $0.01 \\text{ m}^3$ a $300 \\text{ K}$. $P = (10^{23} \\cdot 1.38 \\cdot 10^{-23} \\text{ J/K} \\cdot 300 \\text{ K}) / 0.01 \\text{ m}^3 \\approx 414000 \\text{ Pa}$."
-      }
-    ],
-    "link_correlati": ["TER_002"],
-    "parole_chiave": ["gas perfetto", "equazione di stato", "molecole", "Boltzmann"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
     "id": "TER_009",
     "categoria": "Termodinamica",
     "sottocategoria": "Teoria Cinetica dei Gas",
@@ -200,13 +186,13 @@
     "descrizione": "L'energia cinetica media di traslazione $E_k$ di una molecola di un gas ideale è direttamente proporzionale alla temperatura assoluta $T$ del gas.",
     "variabili": [
       { "simbolo": "$E_k$", "descrizione": "Energia cinetica media di traslazione", "unita": "J" },
-      { "simbolo": "$k_B$", "descrizione": "Costante di Boltzmann ($1.38 \\cdot 10^{-23} \\text{ J/K}$)", "unita": "J/K" },
+      { "simbolo": "$k_B$", "descrizione": "Costante di Boltzmann", "unita": "1.38 • 10⁻²³ J/K J/K" },
       { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcola l'energia cinetica media di traslazione di una molecola di gas a $300 \\text{ K}$. $E_k = \\frac{3}{2} \\cdot 1.38 \\cdot 10^{-23} \\text{ J/K} \\cdot 300 \\text{ K} \\approx 6.21 \\cdot 10^{-21} \\text{ J}$."
+        "testo": "L'energia cinetica media di traslazione di una molecola di gas a $300 \\text{ K}$ è $E_k = \\frac{3}{2} \\cdot 1.38 \\cdot 10^{-23} \\text{ J/K} \\cdot 300 \\text{ K} \\approx 6.21 \\cdot 10^{-21} \\text{ J}$."
       }
     ],
     "link_correlati": ["TER_008"],
@@ -218,11 +204,11 @@
     "id": "TER_010",
     "categoria": "Termodinamica",
     "sottocategoria": "Teoria Cinetica dei Gas",
-    "titolo": "Velocità Quadratica Media (RMS)",
-    "formula_latex": "v_{rms} = \\sqrt{\\frac{3 k_B T}{m}}",
-    "descrizione": "La velocità quadratica media $v_{rms}$ delle molecole di un gas, dove $m$ è la massa di una singola molecola.",
+    "titolo": "Velocità Quadratica Media",
+    "formula_latex": "\\left\\langle v \\right\\rangle = \\sqrt{ \\frac{3k_B T}{m} }",
+    "descrizione": "La velocità quadratica media $\\left\\langle v \\right\\rangle$ delle molecole di un gas, dove $m$ è la massa di una singola molecola.",
     "variabili": [
-      { "simbolo": "$v_{rms}$", "descrizione": "Velocità quadratica media", "unita": "m/s" },
+      { "simbolo": "$\\left\\langle v \\right\\rangle$", "descrizione": "Velocità quadratica media", "unita": "m/s" },
       { "simbolo": "$k_B$", "descrizione": "Costante di Boltzmann ($1.38 \\cdot 10^{-23} \\text{ J/K}$)", "unita": "J/K" },
       { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" },
       { "simbolo": "$m$", "descrizione": "Massa di una singola molecola", "unita": "kg" }
@@ -230,7 +216,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcola la velocità quadratica media delle molecole di ossigeno ($m = 5.31 \\cdot 10^{-26} \\text{ kg}$) a $300 \\text{ K}$. $v_{rms} = \\sqrt{\\frac{3 \\cdot 1.38 \\cdot 10^{-23} \\text{ J/K} \\cdot 300 \\text{ K}}{5.31 \\cdot 10^{-26} \\text{ kg}}} \\approx 483 \\text{ m/s}$."
+        "testo": "Calcola la velocità quadratica media delle molecole di ossigeno ($m = 5.31 \\cdot 10^{-26} \\text{ kg}$) a $300 \\text{ K}$. $\\left\\langle v \\right\\rangle = \\sqrt{\\frac{3 \\cdot 1.38 \\cdot 10^{-23} \\text{ J/K} \\cdot 300 \\text{ K}}{5.31 \\cdot 10^{-26} \\text{ kg}}} \\approx 483 \\text{ m/s}$."
       }
     ],
     "link_correlati": ["TER_009"],
@@ -243,19 +229,19 @@
     "categoria": "Termodinamica",
     "sottocategoria": "Teoria Cinetica dei Gas",
     "titolo": "Pressione di un Gas Perfetto (Teoria Cinetica)",
-    "formula_latex": "P = \\frac{1}{3} \\frac{N}{V} m \\overline{v^2}",
-    "descrizione": "Espressione della pressione $P$ di un gas perfetto derivata dalla teoria cinetica, dove $N$ è il numero di molecole, $V$ il volume, $m$ la massa di una molecola e $\\overline{v^2}$ il quadrato medio della velocità delle molecole.",
+    "formula_latex": "P = \\frac{1}{3} \\frac{N}{V} m \\left\\langle v \\right\\rangle ^2",
+    "descrizione": "Espressione della pressione $P$ di un gas perfetto derivata dalla teoria cinetica, dove $N$ è il numero di molecole, $V$ il volume, $m$ la massa di una molecola e $\\left\\langle v \\right\\rangle ^2$ il quadrato medio della velocità delle molecole. \nQuesta formula mostra come la pressione $P$ sia legata al numero di collisioni delle molecole con le pareti e alla loro energia cinetica.",
     "variabili": [
       { "simbolo": "$P$", "descrizione": "Pressione del gas", "unita": "Pa" },
       { "simbolo": "$N$", "descrizione": "Numero di molecole", "unita": "" },
       { "simbolo": "$V$", "descrizione": "Volume del gas", "unita": "m³" },
       { "simbolo": "$m$", "descrizione": "Massa di una singola molecola", "unita": "kg" },
-      { "simbolo": "$\\overline{v^2}$", "descrizione": "Quadrato medio della velocità delle molecole", "unita": "m²/s²" }
+      { "simbolo": "$\\left\\langle v \\right\\rangle ^2$", "descrizione": "Quadrato medio della velocità delle molecole", "unita": "m²/s²" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Questa formula mostra come la pressione $P$ sia legata al numero di collisioni delle molecole con le pareti e alla loro energia cinetica."
+        "testo": "Un gas contiene 1·10²⁵ molecole di massa 4·10⁻²⁶ kg in un volume di 1 m³. Se il quadrato medio della velocità è 3·10⁴ m²/s², la pressione è P = (1/3)·(1·10²⁵/1)·4·10⁻²⁶·3·10⁴ ≈ 4·10³ Pa."
       }
     ],
     "link_correlati": ["TER_008", "TER_010"],
@@ -293,7 +279,7 @@
     "sottocategoria": "Gas Reali",
     "titolo": "Equazione di van der Waals",
     "formula_latex": "\\left(P + \\frac{a n^2}{V^2}\\right)(V - nb) = nRT",
-    "descrizione": "Equazione di stato che descrive il comportamento dei gas reali, considerando le forze intermolecolari (parametro $a$) e il volume finito delle molecole (parametro $b$).",
+    "descrizione": "Equazione di stato che descrive il comportamento dei gas reali, considerando le forze intermolecolari (parametro $a$) e il volume finito delle molecole (parametro $b$). \nL'equazione di van der Waals viene usata per descrivere i gas a pressioni elevate e basse temperature, dove i gas ideali non sono più accurati.",
     "variabili": [
       { "simbolo": "$P$", "descrizione": "Pressione del gas", "unita": "Pa" },
       { "simbolo": "$V$", "descrizione": "Volume del gas", "unita": "m³" },
@@ -303,12 +289,7 @@
       { "simbolo": "$a$", "descrizione": "Parametro di attrazione intermolecolare", "unita": "Pa·m⁶/mol²" },
       { "simbolo": "$b$", "descrizione": "Parametro di volume escluso", "unita": "m³/mol" }
     ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "L'equazione di van der Waals viene usata per descrivere i gas a pressioni elevate e basse temperature, dove i gas ideali non sono più accurati."
-      }
-    ],
+    "esempi": [],
     "link_correlati": ["TER_002"],
     "parole_chiave": ["van der Waals", "gas reali", "equazione di stato", "forze intermolecolari"],
     "data_creazione": "2025-07-11",
@@ -342,19 +323,20 @@
     "categoria": "Termodinamica",
     "sottocategoria": "Trasferimento di Calore",
     "titolo": "Legge di Fourier (Conduzione del Calore)",
-    "formula_latex": "Q = -k A \\frac{\\Delta T}{\\Delta x}",
-    "descrizione": "La legge di Fourier descrive la velocità di trasferimento del calore $Q$ per conduzione attraverso un materiale, dove $k$ è la conduttività termica, $A$ l'area, $\\Delta T$ la differenza di temperatura e $\\Delta x$ lo spessore.",
+    "formula_latex": "Q = -k A \\frac{\\Delta T}{\\Delta x} \\Delta t",
+    "descrizione": "La legge di Fourier descrive la velocità di trasferimento del calore $Q$ per conduzione attraverso un materiale.",
     "variabili": [
       { "simbolo": "$Q$", "descrizione": "Flusso di calore", "unita": "W" },
       { "simbolo": "$k$", "descrizione": "Conduttività termica del materiale", "unita": "W/(m·K)" },
       { "simbolo": "$A$", "descrizione": "Area di trasferimento del calore", "unita": "m²" },
       { "simbolo": "$\\Delta T$", "descrizione": "Differenza di temperatura tra le superfici", "unita": "K" },
-      { "simbolo": "$\\Delta x$", "descrizione": "Spessore del materiale", "unita": "m" }
+      { "simbolo": "$\\Delta x$", "descrizione": "Spessore del materiale", "unita": "m" },
+      { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Questa legge è usata per calcolare la dispersione di calore $Q$ attraverso una parete in un edificio."
+        "testo": "Questa legge può essere usata per calcolare la dispersione di calore $Q$ attraverso una parete in un edificio."
       }
     ],
     "link_correlati": [],
@@ -367,10 +349,11 @@
     "categoria": "Termodinamica",
     "sottocategoria": "Trasferimento di Calore",
     "titolo": "Legge di Stefan-Boltzmann (Irraggiamento)",
-    "formula_latex": "P = \\sigma A T^4",
-    "descrizione": "La legge di Stefan-Boltzmann descrive la potenza totale $P$ irradiata da un corpo nero per unità di area, dove $\\sigma$ è la costante di Stefan-Boltzmann, $A$ l'area della superficie e $T$ la temperatura assoluta.",
+    "formula_latex": "P = \\varepsilon \\sigma A T^4",
+    "descrizione": "La legge di Stefan-Boltzmann descrive la potenza totale $P$ irradiata da un corpo per unità di area. Per un corpo nero $\\varepsilon = 1$",
     "variabili": [
       { "simbolo": "$P$", "descrizione": "Potenza irradiata", "unita": "W" },
+      { "simbolo": "$\\varepsilon$", "descrizione": "Emissività", "unita": "" },
       { "simbolo": "$\\sigma$", "descrizione": "Costante di Stefan-Boltzmann", "unita": "W/(m²·K⁴)" },
       { "simbolo": "$A$", "descrizione": "Area della superficie", "unita": "m²" },
       { "simbolo": "$T$", "descrizione": "Temperatura assoluta del corpo", "unita": "K" }
@@ -390,11 +373,12 @@
     "id": "TER_017",
     "categoria": "Termodinamica",
     "sottocategoria": "Gas Perfetti",
-    "titolo": "Energia Interna di un Gas Perfetto (Monoatomico)",
-    "formula_latex": "U = \\frac{3}{2} n R T",
-    "descrizione": "L'energia interna $U$ di un gas perfetto monoatomico, dove $n$ è il numero di moli, $R$ la costante dei gas ideali e $T$ la temperatura assoluta. Per gas poliatomici i coefficienti possono variare.",
+    "titolo": "Energia Interna di un Gas Perfetto",
+    "formula_latex": "U = \\frac{l}{2} n R T",
+    "descrizione": "Per una molecola monoatomica $l=3$, per una molecola biatomica $l=5$, ...",
     "variabili": [
       { "simbolo": "$U$", "descrizione": "Energia interna", "unita": "J" },
+      { "simbolo": "$l$", "descrizione": "Numero di gradi di libertà", "unita": "" },
       { "simbolo": "$n$", "descrizione": "Numero di moli", "unita": "mol" },
       { "simbolo": "$R$", "descrizione": "Costante dei gas ideali ($8.314 \\text{ J/(mol}\\cdot\\text{K)}$)", "unita": "J/(mol·K)" },
       { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" }
@@ -402,7 +386,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcola l'energia interna di $1 \\text{ mol}$ di un gas perfetto monoatomico a $300 \\text{ K}$. $U = \\frac{3}{2} \\cdot 1 \\text{ mol} \\cdot 8.314 \\text{ J/(mol}\\cdot\\text{K)} \\cdot 300 \\text{ K} \\approx 3741.3 \\text{ J}$."
+        "testo": "L'energia interna di $1 \\text{ mol}$ di un gas perfetto monoatomico a $300 \\text{ K}$ è $U = \\frac{3}{2} \\cdot 1 \\text{ mol} \\cdot 8.314 \\text{ J/(mol}\\cdot\\text{K)} \\cdot 300 \\text{ K} \\approx 3741.3 \\text{ J}$."
       }
     ],
     "link_correlati": ["TER_001", "TER_002", "TER_009"],
@@ -416,7 +400,7 @@
     "sottocategoria": "Lavoro Termodinamico",
     "titolo": "Lavoro in una Trasformazione Isobara Reversibile",
     "formula_latex": "W = P \\cdot \\Delta V",
-    "descrizione": "Il lavoro $W$ compiuto da un sistema o sul sistema durante una trasformazione isobara (a pressione costante) reversibile, dove $P$ è la pressione e $\\Delta V$ la variazione di volume.",
+    "descrizione": "",
     "variabili": [
       { "simbolo": "$W$", "descrizione": "Lavoro", "unita": "J" },
       { "simbolo": "$P$", "descrizione": "Pressione costante", "unita": "Pa" },
@@ -437,9 +421,9 @@
     "id": "TER_019",
     "categoria": "Termodinamica",
     "sottocategoria": "Lavoro Termodinamico",
-    "titolo": "Lavoro in una Trasformazione Isoterma Reversibile (Gas Ideale)",
+    "titolo": "Lavoro in una Trasformazione Isoterma Reversibile",
     "formula_latex": "W = n R T \\ln\\left(\\frac{V_2}{V_1}\\right)",
-    "descrizione": "Il lavoro $W$ compiuto da un gas ideale durante una trasformazione isoterma (a temperatura costante) reversibile, dove $n$ è il numero di moli, $R$ la costante dei gas ideali, $T$ la temperatura assoluta e $V_1$, $V_2$ i volumi iniziale e finale.",
+    "descrizione": "",
     "variabili": [
       { "simbolo": "$W$", "descrizione": "Lavoro", "unita": "J" },
       { "simbolo": "$n$", "descrizione": "Numero di moli", "unita": "mol" },
@@ -463,13 +447,10 @@
     "id": "TER_020",
     "categoria": "Termodinamica",
     "sottocategoria": "Principi della Termodinamica",
-    "titolo": "Secondo Principio della Termodinamica (Formulazione di Clausius)",
-    "formula_latex": "\\oint \\frac{\\delta Q}{T} \\le 0",
-    "descrizione": "Il secondo principio della termodinamica, nella formulazione di Clausius, afferma che è impossibile realizzare una trasformazione il cui unico risultato sia il trasferimento di calore da un corpo più freddo a un corpo più caldo. Matematicamente, l'integrale ciclico del rapporto tra calore infinitesimo $\\delta Q$ e temperatura $T$ è minore o uguale a zero.",
-    "variabili": [
-      { "simbolo": "$\\delta Q$", "descrizione": "Calore infinitesimo scambiato", "unita": "J" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" }
-    ],
+    "titolo": "Secondo Principio della Termodinamica",
+    "formula_latex": "\\begin{array}{l} \\text{Enunciato di Kelvin} \\\\ \\text{Enunciato di Clausius} \\end{array}",
+    "descrizione": "Il secondo principio della termodinamica: \nnella formulazione di Kelvin, afferma che è impossibile realizzare una trasformazione il cui unico risultato sia assorbire una determinata quantità di calore da una singola sorgente a temperatura uniforme e trasformarla integralmente in lavoro; \nnella formulazione di Clausius, afferma che è impossibile realizzare una trasformazione il cui unico risultato sia il trasferimento di calore da un corpo più freddo a un corpo più caldo.",
+    "variabili": [],
     "esempi": [
       {
         "titolo": "Esempio",
@@ -477,7 +458,7 @@
       }
     ],
     "link_correlati": ["TER_004"],
-    "parole_chiave": ["secondo principio", "Clausius", "calore", "temperatura", "entropia", "irreversibilità"],
+    "parole_chiave": ["secondo principio", "Kelvin", "Clausius", "calore", "temperatura", "entropia", "irreversibilità"],
     "data_creazione": "2025-07-11",
     "data_ultima_modifica": "2025-07-11"
   },
@@ -555,14 +536,16 @@
     "id": "TER_024",
     "categoria": "Termodinamica",
     "sottocategoria": "Frigoriferi e Pompe di Calore",
-    "titolo": "Coefficiente di Prestazione (COP) di un Frigorifero",
-    "formula_latex": "COP_{frigo} = \\frac{Q_C}{W_{in}} = \\frac{Q_C}{Q_H - Q_C}",
-    "descrizione": "Il coefficiente di prestazione ($COP_{frigo}$) di un frigorifero indica quanto calore $Q_C$ viene rimosso dalla sorgente fredda per unità di lavoro $W_{in}$ fornito.",
+    "titolo": "Coefficiente di Prestazione di un Frigorifero",
+    "formula_latex": "\\begin{aligned} COP_{frigo} &= \\frac{Q_C}{W_{in}} \\\\ COP_{rev} = &\\frac{T_C}{T_C - T_H} \\end{aligned}",
+    "descrizione": "Il coefficiente di prestazione ($COP_{frigo}$) di un frigorifero indica quanto calore $Q_C$ viene rimosso dalla sorgente fredda per unità di lavoro $W_{in}$ fornito. \nNel caso di una macchina di Carnot (ciclo reversibile), il COP è espresso con le temperature delle sorgenti $T_C$ $T_H$.",
     "variabili": [
-      { "simbolo": "$COP_{frigo}$", "descrizione": "Coefficiente di prestazione del frigorifero", "unita": "-" },
+      { "simbolo": "$COP_{frigo}$", "descrizione": "Coefficiente di prestazione del frigorifero", "unita": "" },
       { "simbolo": "$Q_C$", "descrizione": "Calore rimosso dalla sorgente fredda", "unita": "J" },
       { "simbolo": "$W_{in}$", "descrizione": "Lavoro in ingresso al sistema", "unita": "J" },
-      { "simbolo": "$Q_H$", "descrizione": "Calore ceduto alla sorgente calda", "unita": "J" }
+      { "simbolo": "$Q_H$", "descrizione": "Calore ceduto alla sorgente calda", "unita": "J" },
+      { "simbolo": "$T_C$", "descrizione": "Temperatura assoluta della sorgente fredda", "unita": "K" },
+      { "simbolo": "$T_H$", "descrizione": "Temperatura assoluta della sorgente calda", "unita": "K" }
     ],
     "esempi": [
       {
@@ -579,14 +562,16 @@
     "id": "TER_025",
     "categoria": "Termodinamica",
     "sottocategoria": "Frigoriferi e Pompe di Calore",
-    "titolo": "Coefficiente di Prestazione (COP) di una Pompa di Calore",
-    "formula_latex": "COP_{pompa} = \\frac{Q_H}{W_{in}} = \\frac{Q_H}{Q_H - Q_C}",
-    "descrizione": "Il coefficiente di prestazione ($COP_{pompa}$) di una pompa di calore indica quanto calore $Q_H$ viene fornito alla sorgente calda per unità di lavoro $W_{in}$ fornito.",
+    "titolo": "Coefficiente di Prestazione di una Pompa di Calore",
+    "formula_latex": "\\begin{aligned} COP_{pompa} &= \\frac{Q_H}{W_{in}} \\\\ COP_{rev} = &\\frac{T_H}{T_H - T_C} \\end{aligned}",
+    "descrizione": "Il coefficiente di prestazione ($COP_{pompa}$) di una pompa di calore indica quanto calore $Q_H$ viene fornito alla sorgente calda per unità di lavoro $W_{in}$ fornito. \nNel caso di una macchina di Carnot (ciclo reversibile), il COP è espresso con le temperature delle sorgenti $T_C$ $T_H$.",
     "variabili": [
-      { "simbolo": "$COP_{pompa}$", "descrizione": "Coefficiente di prestazione della pompa di calore", "unita": "-" },
+      { "simbolo": "$COP_{pompa}$", "descrizione": "Coefficiente di prestazione della pompa di calore", "unita": "" },
       { "simbolo": "$Q_H$", "descrizione": "Calore fornito alla sorgente calda", "unita": "J" },
       { "simbolo": "$W_{in}$", "descrizione": "Lavoro in ingresso al sistema", "unita": "J" },
-      { "simbolo": "$Q_C$", "descrizione": "Calore rimosso dalla sorgente fredda", "unita": "J" }
+      { "simbolo": "$Q_C$", "descrizione": "Calore rimosso dalla sorgente fredda", "unita": "J" },
+      { "simbolo": "$T_C$", "descrizione": "Temperatura assoluta della sorgente fredda", "unita": "K" },
+      { "simbolo": "$T_H$", "descrizione": "Temperatura assoluta della sorgente calda", "unita": "K" }
     ],
     "esempi": [
       {
@@ -602,23 +587,28 @@
   {
     "id": "TER_026",
     "categoria": "Termodinamica",
-    "sottocategoria": "Entropia",
-    "titolo": "Disuguaglianza di Clausius",
-    "formula_latex": "\\oint \\frac{\\delta Q}{T} \\le 0",
-    "descrizione": "La disuguaglianza di Clausius stabilisce che per qualsiasi ciclo termodinamico, l'integrale ciclico del rapporto tra il calore scambiato in modo infinitesimo $\\delta Q$ e la temperatura assoluta $T$ del serbatoio con cui avviene lo scambio è sempre minore o uguale a zero. Il segno di uguaglianza vale per cicli reversibili.",
+    "sottocategoria": "Trasformazioni Termodinamiche",
+    "titolo": "Le trasformazioni adiabatiche reversibili",
+    "formula_latex": "\\begin{aligned} T &= \\left( \\frac{V_i}{V} \\right)^{\\gamma - 1} T_i \\\\ p &= \\left( \\frac{V_i}{V} \\right)^\\gamma p_i \\\\ T &= \\left( \\frac{p}{p_i} \\right)^{\\frac{\\gamma - 1}{\\gamma}} T_i \\end{aligned}",
+    "descrizione": "Queste formule permettono di calcolare temperatura o pressione in una trasformazione adiabatica reversibile, a partire dalle condizioni iniziali e dalla variazione di volume o pressione. Sono derivate dalle leggi dell'adiabatica e usate comunemente per risolvere esercizi applicativi con gas perfetti.",
     "variabili": [
-      { "simbolo": "$\\delta Q$", "descrizione": "Calore infinitesimo scambiato", "unita": "J" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta del serbatoio", "unita": "K" }
+      { "simbolo": "$T$", "descrizione": "Temperatura finale", "unita": "K" },
+      { "simbolo": "$T_i$", "descrizione": "Temperatura iniziale", "unita": "K" },
+      { "simbolo": "$p$", "descrizione": "Pressione finale", "unita": "Pa" },
+      { "simbolo": "$p_i$", "descrizione": "Pressione iniziale", "unita": "Pa" },
+      { "simbolo": "$V$", "descrizione": "Volume finale", "unita": "m³" },
+      { "simbolo": "$V_i$", "descrizione": "Volume iniziale", "unita": "m³" },
+      { "simbolo": "$\\gamma$", "descrizione": "Indice adiabatico (rapporto $C_p/C_v$)", "unita": "" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Questa disuguaglianza è la base per la definizione di entropia e per il secondo principio della termodinamica, indicando l'irreversibilità dei processi reali."
+        "testo": "Un gas ideale passa da $V_i = 1{,}0\\ \\text{m}^3$ e $T_i = 300\\ \\text{K}$ a $V = 0{,}5\\ \\text{m}^3$. Con $\\gamma = 1{,}4$, la temperatura finale sarà: \\\\ $T = \\left( \\frac{1{,}0}{0{,}5} \\right)^{0{,}4} \\cdot 300 \\approx 396\\ \\text{K}$."
       }
     ],
-    "link_correlati": ["TER_004", "TER_020"],
-    "parole_chiave": ["Clausius", "disuguaglianza", "entropia", "secondo principio", "calore", "irreversibilità"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "link_correlati": ["TER_030", "TER_001", "TER_005"],
+    "parole_chiave": ["adiabatica", "trasformazione reversibile", "gamma", "gas perfetto", "calcolo temperatura", "calcolo pressione"],
+    "data_creazione": "2025-07-21",
+    "data_ultima_modifica": "2025-07-21"
   }
 ]
