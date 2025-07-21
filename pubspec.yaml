@@ -91,12 +91,12 @@ flutter:
   uses-material-design: true
 
 flutter_launcher_icons:
-  android: true                 # Genera icone per Android
-  ios: true                     # Genera icone per iOS
-  image_path: "assets/icon/app_icon.png" # Il percorso della tua icona sorgente
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
   min_sdk_android: 21           # La versione minima dell'SDK Android supportata
   # adaptive_icon_foreground: "assets/icon/foreground.png" # Opzionale per icone adattive Android
-  # adaptive_icon_background: "#FFFFFF" # Opzionale per icone adattive Android (può essere un colore o un percorso immagine)
+  adaptive_icon_background: "#FEFFFF" # Opzionale per icone adattive Android (può essere un colore o un percorso immagine)
   # ios_content_mode: "scaleAspectFit" # Opzionale: come l'icona si adatta
 
   # To add assets to your application, add an assets section, like this:
