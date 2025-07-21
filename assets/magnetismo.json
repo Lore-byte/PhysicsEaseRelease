@@ -1,27 +1,29 @@
 [
   {
-    "id": "MAG_001",
+    "id": "MAG_017",
     "categoria": "Magnetismo",
     "sottocategoria": "Campi Magnetici e Forze",
-    "titolo": "Legge di Ampère (Forma Integrale)",
-    "formula_latex": "\\oint_L \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{inc}",
-    "descrizione": "La legge di Ampère stabilisce che la circuitazione del campo magnetico $\\vec{B}$ lungo una linea chiusa $L$ è proporzionale alla corrente totale $I_{inc}$ concatenata con la linea. $\\mu_0$ è la permeabilità magnetica del vuoto.",
+    "titolo": "Forza tra Due Fili Paralleli (Legge di Ampère)",
+    "formula_latex": "F = \\frac{\\mu_0}{2\\pi} \\cdot \\frac{I_1 I_2}{d} \\cdot L",
+    "descrizione": "Questa formula esprime la forza per unità di lunghezza tra due fili rettilinei, paralleli e percorsi da correnti $I_1$ e $I_2$. La forza è attrattiva se le correnti hanno lo stesso verso, repulsiva se hanno versi opposti. $d$ è la distanza tra i fili, e $\\mu_0$ è la permeabilità magnetica del vuoto.",
     "variabili": [
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$d\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza", "unita": "m" },
-      { "simbolo": "$I_{inc}$", "descrizione": "Corrente concatenata", "unita": "A" },
+      { "simbolo": "$F$", "descrizione": "Forza magnetica tra i due fili", "unita": "N" },
+      { "simbolo": "$L$", "descrizione": "Lunghezza dei fili considerata", "unita": "m" },
+      { "simbolo": "$I_1$", "descrizione": "Intensità di corrente nel primo filo", "unita": "A" },
+      { "simbolo": "$I_2$", "descrizione": "Intensità di corrente nel secondo filo", "unita": "A" },
+      { "simbolo": "$d$", "descrizione": "Distanza tra i due fili", "unita": "m" },
       { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Per un filo rettilineo percorso da corrente, la circuitazione del campo magnetico lungo un percorso circolare attorno al filo è direttamente proporzionale alla corrente che scorre nel filo."
+        "testo": "Due fili lunghi, rettilinei e paralleli distano 5 cm e sono percorsi da correnti di 10 A nello stesso verso. La forza per unità di lunghezza che agisce tra i fili sarà attrattiva e calcolabile con la formula della forza tra fili paralleli."
       }
     ],
     "link_correlati": [],
-    "parole_chiave": ["legge di Ampere", "campo magnetico", "circuitazione", "corrente concatenata"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "parole_chiave": ["fili paralleli", "forza magnetica", "legge di Ampère", "interazione tra correnti"],
+    "data_creazione": "2025-07-21",
+    "data_ultima_modifica": "2025-07-21"
   },
   {
     "id": "MAG_002",
@@ -52,13 +54,13 @@
     "categoria": "Magnetismo",
     "sottocategoria": "Campi Magnetici e Forze",
     "titolo": "Campo Magnetico generato da un Tratto di Filo Infinitesimo (Legge di Biot-Savart)",
-    "formula_latex": "d\\vec{B} = \\frac{\\mu_0}{4\\pi} \\frac{I d\\vec{l} \\times \\hat{r}}{r^2}",
-    "descrizione": "La legge di Biot-Savart descrive il campo magnetico infinitesimo $d\\vec{B}$ generato da un tratto di filo infinitesimo $d\\vec{l}$ percorso da corrente $I$, a una distanza $r$ dal tratto. $\\hat{r}$ è il versore dalla sorgente al punto di osservazione.",
+    "formula_latex": "\\Delta\\vec{B} = \\frac{\\mu_0 I}{4\\pi} \\frac{\\Delta\\vec{l} \\times \\hat{r}}{r^2}",
+    "descrizione": "La legge di Biot-Savart descrive il campo magnetico infinitesimo $\\Delta\\vec{B}$ generato da un tratto di filo infinitesimo $\\Delta\\vec{l}$ percorso da corrente $I$, a una distanza $r$ dal tratto. $\\hat{r}$ è il versore dalla sorgente al punto di osservazione.",
     "variabili": [
-      { "simbolo": "$d\\vec{B}$", "descrizione": "Elemento infinitesimo di campo magnetico", "unita": "T" },
+      { "simbolo": "$\\Delta\\vec{B}$", "descrizione": "Elemento infinitesimo di campo magnetico", "unita": "T" },
       { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
       { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
-      { "simbolo": "$d\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza del filo", "unita": "m" },
+      { "simbolo": "$\\Delta\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza del filo", "unita": "m" },
       { "simbolo": "$r$", "descrizione": "Distanza dal tratto di filo al punto", "unita": "m" },
       { "simbolo": "$\\hat{r}$", "descrizione": "Versore dalla sorgente al punto", "unita": "-" }
     ],
@@ -113,7 +115,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un solenoide con $1000 \\text{ spire/m}$ percorso da $0.5 \\text{ A}$ genera un campo di $B = (4\\pi \\times 10^{-7} \\text{ N/A}^2) \\cdot (1000 \\text{ m}^{-1}) \\cdot 0.5 \\text{ A} \\approx 6.28 \\times 10^{-4} \\text{ T}$."
+        "testo": "Un solenoide con $1000 \\text{ spire/m}$ percorso da $0.5 \\text{ A}$ genera un campo di $B = (4\\pi \\times 10^{-7}) \\cdot (1000) \\cdot 0.5 \\text{ A} \\approx 6.28 \\times 10^{-4} \\text{ T}$."
       }
     ],
     "link_correlati": [],
@@ -150,19 +152,18 @@
     "categoria": "Magnetismo",
     "sottocategoria": "Campi Magnetici e Forze",
     "titolo": "Forza di Lorentz",
-    "formula_latex": "\\vec{F} = q (\\vec{E} + \\vec{v} \\times \\vec{B})",
-    "descrizione": "La forza di Lorentz $\\vec{F}$ è la forza totale che agisce su una particella di carica $q$ in presenza di un campo elettrico $\\vec{E}$ e un campo magnetico $\\vec{B}$. Il termine magnetico è $q(\\vec{v} \\times \\vec{B})$, dove $\\vec{v}$ è la velocità della particella.",
+    "formula_latex": "\\vec{F} = q\\vec{v} \\times \\vec{B}",
+    "descrizione": "La forza di Lorentz $\\vec{F}$ è la forza totale che agisce su una particella di carica $q$ in presenza di un campo elettrico $\\vec{E}$ e un campo magnetico $\\vec{B}$.",
     "variabili": [
       { "simbolo": "$\\vec{F}$", "descrizione": "Forza di Lorentz", "unita": "N" },
       { "simbolo": "$q$", "descrizione": "Carica della particella", "unita": "C" },
-      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
       { "simbolo": "$\\vec{v}$", "descrizione": "Velocità della particella", "unita": "m/s" },
       { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un protone ($q = 1.6 \\times 10^{-19} \\text{ C}$) che si muove a $10^6 \\text{ m/s}$ perpendicolarmente a un campo magnetico di $0.1 \\text{ T}$ subisce una forza di $F = (1.6 \\times 10^{-19} \\text{ C}) * (10^6 \\text{ m/s}) * (0.1 \\text{ T}) = 1.6 \\times 10^{-14} \\text{ N}$."
+        "testo": "Un protone ($q = 1.6 \\times 10^{-19} \\text{ C}$) che si muove a $10^6 \\text{ m/s}$ perpendicolarmente a un campo magnetico di $0.1 \\text{ T}$ subisce una forza di $F = (1.6 \\times 10^{-19} \\text{ C}) \\cdot (10^6 \\text{ m/s}) \\cdot (0.1 \\text{ T}) = 1.6 \\times 10^{-14} \\text{ N}$."
       }
     ],
     "link_correlati": [],
@@ -174,7 +175,7 @@
     "id": "MAG_008",
     "categoria": "Magnetismo",
     "sottocategoria": "Moto di Cariche",
-    "titolo": "Moto di una Particella Carica in un Campo Magnetico Uniforme (circolare)",
+    "titolo": "Moto Circolare di una Particella Carica in un Campo Magnetico Uniforme",
     "formula_latex": "r = \\frac{m v}{|q| B}",
     "descrizione": "Quando una particella carica $q$ di massa $m$ e velocità $v$ si muove perpendicolarmente a un campo magnetico uniforme $B$, essa segue una traiettoria circolare di raggio $r$.",
     "variabili": [
@@ -225,15 +226,13 @@
     "categoria": "Magnetismo",
     "sottocategoria": "Fenomeni di Campo",
     "titolo": "Effetto Hall",
-    "formula_latex": "\\Delta V_H = \\frac{IB}{n e d}",
-    "descrizione": "L'effetto Hall è la creazione di una differenza di potenziale $\\Delta V_H$ (tensione di Hall) attraverso un conduttore percorso da corrente $I$ e immerso in un campo magnetico $B$ perpendicolare alla corrente. Dipende dalla densità dei portatori di carica $n$, dalla carica elementare $e$ e dallo spessore del conduttore $d$ (perpendicolare a corrente e campo).",
+    "formula_latex": "\\Delta V_H = dvB",
+    "descrizione": "L'effetto Hall è la creazione di una differenza di potenziale $\\Delta V_H$ (tensione di Hall) attraverso un conduttore percorso da corrente e immerso in un campo magnetico $B$ perpendicolare alla corrente. Dipende dallo spessore del conduttore $d$ (perpendicolare a corrente e campo) e dalla velocità $v$ di deriva degli elettroni di conduzione.",
     "variabili": [
       { "simbolo": "$\\Delta V_H$", "descrizione": "Tensione di Hall", "unita": "V" },
-      { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
       { "simbolo": "$B$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$n$", "descrizione": "Densità dei portatori di carica", "unita": "m⁻³" },
-      { "simbolo": "$e$", "descrizione": "Carica elementare", "unita": "C" },
-      { "simbolo": "$d$", "descrizione": "Spessore del conduttore", "unita": "m" }
+      { "simbolo": "$d$", "descrizione": "Spessore del conduttore", "unita": "m" },
+      { "simbolo": "$v$", "descrizione": "Velocità di deriva degli elettroni di conduzione", "unita": "m/s" }
     ],
     "esempi": [
       {
@@ -251,11 +250,10 @@
     "categoria": "Magnetismo",
     "sottocategoria": "Leggi Fondamentali",
     "titolo": "Teorema di Gauss per il Campo Magnetico",
-    "formula_latex": "\\oint_S \\vec{B} \\cdot d\\vec{A} = 0",
+    "formula_latex": "\\Phi_S(\\vec{B}) = 0",
     "descrizione": "Il teorema di Gauss per il campo magnetico afferma che il flusso magnetico totale attraverso qualsiasi superficie chiusa $S$ è sempre zero. Questo implica che non esistono monopoli magnetici isolati (i poli nord e sud esistono sempre in coppia).",
     "variabili": [
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$d\\vec{A}$", "descrizione": "Vettore infinitesimo di area", "unita": "m²" }
+      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" }
     ],
     "esempi": [
       {
@@ -272,16 +270,13 @@
     "id": "MAG_012",
     "categoria": "Magnetismo",
     "sottocategoria": "Leggi Fondamentali",
-    "titolo": "Circuitazione del Campo Magnetico (Generale)",
-    "formula_latex": "\\oint_L \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{inc} + \\mu_0 \\epsilon_0 \\frac{d\\Phi_E}{dt}",
-    "descrizione": "La circuitazione del campo magnetico lungo una linea chiusa $L$ è data non solo dalla corrente di conduzione $I_{inc}$ (legge di Ampère), ma anche dalla variazione nel tempo del flusso elettrico $\\Phi_E$ (corrente di spostamento). Quest'ultimo termine fu aggiunto da Maxwell.",
+    "titolo": "Circuitazione del Campo Magnetico (Legge di Ampère)",
+    "formula_latex": "\\Gamma_L(\\vec{B}) = \\mu_0 I_{tot}",
+    "descrizione": "La legge di Ampère stabilisce che la circuitazione del campo magnetico $\\vec{B}$ lungo una linea chiusa $L$ è proporzionale alla corrente totale $I_{tot}$ concatenata con la linea.$",
     "variabili": [
       { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$d\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza", "unita": "m" },
       { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
-      { "simbolo": "$I_{inc}$", "descrizione": "Corrente di conduzione concatenata", "unita": "A" },
-      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
-      { "simbolo": "$\\frac{d\\Phi_E}{dt}$", "descrizione": "Tasso di variazione del flusso elettrico", "unita": "V * m/s" }
+      { "simbolo": "$I_{tot}$", "descrizione": "Corrente di conduzione concatenata", "unita": "A" }
     ],
     "esempi": [
       {
@@ -295,38 +290,14 @@
     "data_ultima_modifica": "2025-07-11"
   },
   {
-    "id": "MAG_013",
-    "categoria": "Magnetismo",
-    "sottocategoria": "Leggi Fondamentali",
-    "titolo": "Teorema di Ampère (Forma Differenziale)",
-    "formula_latex": "\\nabla \\times \\vec{B} = \\mu_0 \\vec{J}",
-    "descrizione": "La forma differenziale del teorema di Ampère (senza corrente di spostamento) mette in relazione il rotore del campo magnetico $\\vec{B}$ con la densità di corrente $\\vec{J}$.",
-    "variabili": [
-      { "simbolo": "$\\nabla \\times$", "descrizione": "Operatore rotore", "unita": "m⁻¹" },
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
-      { "simbolo": "$\\vec{J}$", "descrizione": "Densità di corrente", "unita": "A/m²" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Questo è utile per calcoli avanzati in cui si conosce la distribuzione locale delle correnti e si vuole trovare il campo magnetico corrispondente."
-      }
-    ],
-    "link_correlati": [],
-    "parole_chiave": ["teorema di Ampere", "rotore", "campo magnetico", "densità di corrente"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
     "id": "MAG_014",
     "categoria": "Magnetismo",
     "sottocategoria": "Momenti Magnetici",
     "titolo": "Momento della Forza Magnetica su una Spira",
-    "formula_latex": "\\vec{\\tau} = \\vec{\\mu} \\times \\vec{B}",
-    "descrizione": "Il momento della forza magnetica $\\vec{\\tau}$ che agisce su una spira di corrente con momento magnetico $\\vec{\\mu}$ immersa in un campo magnetico $\\vec{B}$. Questo momento tende ad allineare il momento magnetico della spira con il campo esterno.",
+    "formula_latex": "\\vec{M} = \\vec{\\mu} \\times \\vec{B}",
+    "descrizione": "Il momento della forza magnetica $\\vec{M}$ che agisce su una spira di corrente con momento magnetico $\\vec{\\mu}$ immersa in un campo magnetico $\\vec{B}$. Questo momento tende ad allineare il momento magnetico della spira con il campo esterno.",
     "variabili": [
-      { "simbolo": "$\\vec{\\tau}$", "descrizione": "Momento della forza", "unita": "N * m" },
+      { "simbolo": "$\\vec{M}$", "descrizione": "Momento della forza", "unita": "N * m" },
       { "simbolo": "$\\vec{\\mu}$", "descrizione": "Momento magnetico della spira", "unita": "A * m²" },
       { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico esterno", "unita": "T" }
     ],
@@ -346,13 +317,12 @@
     "categoria": "Magnetismo",
     "sottocategoria": "Momenti Magnetici",
     "titolo": "Momento Magnetico di una Spira",
-    "formula_latex": "\\vec{\\mu} = I A \\hat{n}",
-    "descrizione": "Il momento magnetico $\\vec{\\mu}$ di una spira piana percorsa da corrente $I$ e con area $A$. La direzione del vettore $\\hat{n}$ è perpendicolare al piano della spira, con il verso dato dalla regola della mano destra rispetto al senso della corrente.",
+    "formula_latex": "\\vec{\\mu}_m = I \\cdot \\vec{A}",
+    "descrizione": "Il momento magnetico $\\vec{\\mu}_m$ di una spira piana percorsa da corrente $I$ e con area $A$.",
     "variabili": [
-      { "simbolo": "$\\vec{\\mu}$", "descrizione": "Momento magnetico della spira", "unita": "A * m²" },
+      { "simbolo": "$\\vec{\\mu}_m$", "descrizione": "Momento magnetico della spira", "unita": "A * m²" },
       { "simbolo": "$I$", "descrizione": "Corrente nella spira", "unita": "A" },
-      { "simbolo": "$A$", "descrizione": "Area della spira", "unita": "m²" },
-      { "simbolo": "$\\hat{n}$", "descrizione": "Versore normale alla superficie della spira", "unita": "-" }
+      { "simbolo": "$A$", "descrizione": "Area della spira", "unita": "m²" }
     ],
     "esempi": [
       {

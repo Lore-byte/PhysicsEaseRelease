@@ -4,123 +4,123 @@
     "categoria": "Dinamica",
     "sottocategoria": "Leggi di Newton",
     "titolo": "Primo principio della dinamica",
-    "formula_latex": "\\sum F = 0 \\Rightarrow a = 0",
-    "descrizione": "Un corpo permane nel suo stato di quiete o di moto rettilineo uniforme finché non interviene una forza esterna a modificarne lo stato. Questo significa che se la somma vettoriale delle forze che agiscono su un corpo è nulla, la sua accelerazione sarà zero.",
+    "formula_latex": "\\sum \\vec{F} = 0 \\Rightarrow \\vec{a} = 0",
+    "descrizione": "Un corpo permane nel suo stato di quiete o di moto rettilineo uniforme finché non interviene una forza esterna a modificarne lo stato. Questo significa che se la somma vettoriale delle forze che agiscono su un corpo è nulla, la sua accelerazione sarà zero, quindi la sua velocità rimane costante.",
     "variabili": [
-      { "simbolo": "$\\sum F$", "descrizione": "Somma vettoriale delle forze", "unita": "N" },
-      { "simbolo": "$a$", "descrizione": "Accelerazione del corpo", "unita": "m/s²" }
+      { "simbolo": "$\\sum \\vec{F}$", "descrizione": "Somma vettoriale delle forze", "unita": "N" },
+      { "simbolo": "$\\vec{a}$", "descrizione": "Accelerazione del corpo", "unita": "m/s²" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un libro fermo su un tavolo rimane fermo perché la forza peso è bilanciata dalla forza normale del tavolo, risultando una forza netta nulla e quindi accelerazione zero."
+        "testo": "Un libro fermo su un tavolo rimane immobile perché la forza peso è bilanciata dalla forza normale del tavolo, risultando una forza netta nulla e quindi accelerazione nulla ($\\vec{a} = 0$)."
       }
     ],
     "link_correlati": [ "DIN_002", "DIN_003" ],
     "parole_chiave": [ "inerzia", "principio di inerzia", "prima legge di Newton", "forza netta", "equilibrio" ],
     "data_creazione": "2025-07-10",
-    "data_ultima_modifica": "2025-07-10"
+    "data_ultima_modifica": "2025-07-20"
   },
   {
     "id": "DIN_002",
     "categoria": "Dinamica",
     "sottocategoria": "Leggi di Newton",
     "titolo": "Secondo principio della dinamica",
-    "formula_latex": "F = m \\cdot a",
-    "descrizione": "Il secondo principio della dinamica stabilisce che l'accelerazione $a$ di un corpo è direttamente proporzionale alla forza risultante $F$ che agisce su di esso e inversamente proporzionale alla sua massa $m$. La direzione dell'accelerazione è la stessa della forza risultante.",
+    "formula_latex": "\\vec{F}_{tot} = m \\cdot \\vec{a}",
+    "descrizione": "L'accelerazione $\\vec{a}$ di un corpo è direttamente proporzionale alla forza risultante $\\vec{F}_{tot}$ che agisce su di esso e inversamente proporzionale alla sua massa $m$. La direzione dell'accelerazione è la stessa della forza risultante.",
     "variabili": [
-      { "simbolo": "$F$", "descrizione": "Forza risultante", "unita": "N" },
+      { "simbolo": "$\\vec{F}_{tot}$", "descrizione": "Forza risultante", "unita": "N" },
       { "simbolo": "$m$", "descrizione": "Massa del corpo", "unita": "kg" },
-      { "simbolo": "$a$", "descrizione": "Accelerazione del corpo", "unita": "m/s²" }
+      { "simbolo": "$\\vec{a}$", "descrizione": "Accelerazione del corpo", "unita": "m/s²" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un corpo di massa $5 \\text{ kg}$ viene sottoposto a una forza risultante di $15 \\text{ N}$. L'accelerazione prodotta è $a = 15 / 5 = 3 \\text{ m/s}^2$."
+        "testo": "Un corpo di massa $5 \\text{ kg}$ viene sottoposto a una forza risultante di $\\vec{F}_{tot} = 15 \\text{ N}$. L'accelerazione prodotta è $\\vec{a} = \\vec{F}_{tot} / m = 15 / 5 = 3 \\text{ m/s}^2$."
       }
     ],
     "link_correlati": [ "DIN_001", "DIN_003", "DIN_004" ],
     "parole_chiave": [ "forza", "massa", "accelerazione", "legge di Newton", "F = ma", "seconda legge" ],
     "data_creazione": "2025-06-01",
-    "data_ultima_modifica": "2025-07-10"
+    "data_ultima_modifica": "2025-07-20"
   },
   {
     "id": "DIN_003",
     "categoria": "Dinamica",
     "sottocategoria": "Leggi di Newton",
     "titolo": "Terzo principio della dinamica",
-    "formula_latex": "F_{AB} = -F_{BA}",
-    "descrizione": "Per ogni azione esiste una reazione uguale e contraria. Se un corpo A esercita una forza $F_{AB}$ su un corpo B, allora il corpo B esercita una forza $F_{BA}$ sul corpo A che ha la stessa intensità, la stessa direzione ma verso opposto. Le due forze agiscono su corpi diversi e non si annullano a vicenda.",
+    "formula_latex": "\\vec{F}_{AB} = -\\vec{F}_{BA}",
+    "descrizione": "Per ogni azione esiste una reazione uguale e contraria. Se un corpo A esercita una forza $\\vec{F}_{AB}$ su un corpo B, allora il corpo B esercita una forza $\\vec{F}_{BA}$ sul corpo A che ha la stessa intensità, la stessa direzione ma verso opposto.",
     "variabili": [
-      { "simbolo": "$F_{AB}$", "descrizione": "Forza esercitata dal corpo A sul corpo B", "unita": "N" },
-      { "simbolo": "$F_{BA}$", "descrizione": "Forza esercitata dal corpo B sul corpo A", "unita": "N" }
+      { "simbolo": "$\\vec{F}_{AB}$", "descrizione": "Forza esercitata dal corpo A sul corpo B", "unita": "N" },
+      { "simbolo": "$\\vec{F}_{BA}$", "descrizione": "Forza esercitata dal corpo B sul corpo A", "unita": "N" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Quando si salta, i piedi spingono il terreno verso il basso (azione) e il terreno spinge i piedi verso l'alto con una forza uguale e contraria (reazione), permettendo il salto."
+        "testo": "Quando si salta, i piedi spingono il terreno verso il basso (azione: $\\vec{F}_{PT}$) e il terreno spinge i piedi verso l'alto con una forza uguale e contraria (reazione: $\\vec{F}_{TP}$), permettendo il salto."
       }
     ],
     "link_correlati": [ "DIN_001", "DIN_002" ],
     "parole_chiave": [ "azione e reazione", "terza legge di Newton", "interazione" ],
     "data_creazione": "2025-07-10",
-    "data_ultima_modifica": "2025-07-10"
+    "data_ultima_modifica": "2025-07-20"
   },
   {
     "id": "DIN_004",
     "categoria": "Dinamica",
     "sottocategoria": "Forze elastiche",
-    "titolo": "Legge di Hooke",
-    "formula_latex": "F = -k \\cdot x",
-    "descrizione": "La legge di Hooke definisce la forza $F$ esercitata da una molla, che è proporzionale alla sua deformazione $x$ (allungamento o compressione) e alla costante elastica $k$ della molla. Il segno negativo indica che la forza elastica è sempre opposta alla direzione della deformazione.",
+    "titolo": "Legge di Hooke (Forza elastica)",
+    "formula_latex": "\\vec{F} = -k \\cdot \\vec{x}",
+    "descrizione": "La legge di Hooke definisce la forza $\\vec{F}$ esercitata da una molla, che è proporzionale alla sua deformazione $\\vec{x}$ (allungamento o compressione) e alla costante elastica $k$ della molla. Il segno negativo indica che la forza elastica è sempre opposta al verso della deformazione.",
     "variabili": [
-      { "simbolo": "$F$", "descrizione": "Forza elastica", "unita": "N" },
+      { "simbolo": "$\\vec{F}$", "descrizione": "Forza elastica", "unita": "N" },
       { "simbolo": "$k$", "descrizione": "Costante elastica della molla", "unita": "N/m" },
-      { "simbolo": "$x$", "descrizione": "Allungamento o compressione rispetto alla posizione di equilibrio", "unita": "m" }
+      { "simbolo": "$\\vec{x}$", "descrizione": "Allungamento o compressione rispetto alla posizione di equilibrio", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una molla con costante elastica $k = 200 \\text{ N/m}$ è compressa di $0.05 \\text{ m}$. La forza elastica è $F = -200 \\cdot 0.05 = -10 \\text{ N}$."
+        "testo": "Una molla con costante elastica $k = 200 \\text{ N/m}$ è compressa di $\\vec{x} = -0.05 \\text{ m}$. La forza elastica è $\\vec{F} = -200 \\cdot (-0.05) = 10 \\text{ N}$."
       }
     ],
     "link_correlati": [ "DIN_002", "DIN_005" ],
     "parole_chiave": [ "forza elastica", "molla", "deformazione", "Hooke", "F = -kx" ],
     "data_creazione": "2025-06-01",
-    "data_ultima_modifica": "2025-07-10"
+    "data_ultima_modifica": "2025-07-20"
   },
   {
     "id": "DIN_005",
     "categoria": "Dinamica",
     "sottocategoria": "Attrito",
     "titolo": "Forza di attrito radente",
-    "formula_latex": "F_{a} = \\mu \\cdot N",
-    "descrizione": "La forza di attrito radente $F_a$ si oppone al movimento di un corpo su una superficie. Essa è proporzionale alla forza normale $N$ (la forza perpendicolare che la superficie esercita sul corpo) e al coefficiente di attrito $\\mu$, che dipende dai materiali delle superfici a contatto.",
+    "formula_latex": "\\vec{F}_{a} = \\mu \\cdot \\vec{F}_{\\perp}",
+    "descrizione": "La forza di attrito radente $\\vec{F}_a$ si oppone al movimento di un corpo su una superficie scabra. Essa è proporzionale alla forza perpendicolare $\\vec{F}_{\\perp}$ (la componente perpendicolare alla superficie della risultante delle forze che agiscono sul corpo) e al coefficiente di attrito $\\mu$, che dipende dai materiali delle superfici a contatto. \n\nSi distingue in: \n**attrito dinamico**, che si oppone allo scorrimento di un corpo su una superficie; \n**attrito statico**, che si oppone al distacco di un corpo da una superficie.",
     "variabili": [
-      { "simbolo": "$F_a$", "descrizione": "Forza di attrito radente", "unita": "N" },
-      { "simbolo": "$\\mu$", "descrizione": "Coefficiente di attrito (adimensionale)", "unita": "" },
-      { "simbolo": "$N$", "descrizione": "Forza normale", "unita": "N" }
+      { "simbolo": "$\\vec{F}_a$", "descrizione": "Forza di attrito radente", "unita": "N" },
+      { "simbolo": "$\\mu$", "descrizione": "Coefficiente di attrito", "unita": "adimensionale" },
+      { "simbolo": "$\\vec{F}_{\\perp}$", "descrizione": "Forza perpendicolare alla superficie", "unita": "N" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un corpo esercita una forza normale di $100 \\text{ N}$ su una superficie con coefficiente di attrito $\\mu = 0.3$. La forza di attrito è $F_a = 0.3 \\cdot 100 = 30 \\text{ N}$."
+        "testo": "Un corpo esercita una forza perpendicolare di $\\vec{F}_{\\perp} = 100 \\text{ N}$ su una superficie con coefficiente di attrito $\\mu = 0.3$. La forza di attrito è $\\vec{F}_a = 0.3 \\cdot 100 = 30 \\text{ N}$."
       }
     ],
     "link_correlati": [ "DIN_002", "DIN_004" ],
     "parole_chiave": [ "attrito", "coefficiente di attrito", "forza normale", "F = μN" ],
     "data_creazione": "2025-06-01",
-    "data_ultima_modifica": "2025-07-10"
+    "data_ultima_modifica": "2025-07-20"
   },
   {
     "id": "DIN_006",
     "categoria": "Dinamica",
     "sottocategoria": "Moto Circolare",
     "titolo": "Forza centripeta",
-    "formula_latex": "F_c = m \\frac{v^2}{r} = m \\omega^2 r",
-    "descrizione": "La forza centripeta $F_c$ è la forza necessaria per mantenere un corpo in moto su una traiettoria circolare. È sempre diretta verso il centro della traiettoria.",
+    "formula_latex": "\\vec{F}_c = m \\frac{v^2}{r} = m \\omega^2 r",
+    "descrizione": "La forza centripeta $\\vec{F}_c$ è la forza necessaria per mantenere un corpo in moto su una traiettoria circolare. È sempre diretta verso il centro della traiettoria.",
     "variabili": [
-      { "simbolo": "$F_c$", "descrizione": "Forza centripeta", "unita": "N" },
+      { "simbolo": "$\\vec{F}_c$", "descrizione": "Forza centripeta", "unita": "N" },
       { "simbolo": "$m$", "descrizione": "Massa del corpo", "unita": "kg" },
       { "simbolo": "$v$", "descrizione": "Velocità tangenziale", "unita": "m/s" },
       { "simbolo": "$\\omega$", "descrizione": "Velocità angolare", "unita": "rad/s" },
@@ -129,23 +129,23 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un'auto di $1200 \\text{ kg}$ percorre una curva con raggio di $50 \\text{ m}$ a una velocità di $10 \\text{ m/s}$. La forza centripeta richiesta è $F_c = 1200 \\cdot (10^2 / 50) = 2400 \\text{ N}$."
+        "testo": "Un'auto di $1200 \\text{ kg}$ percorre una curva con raggio di $50 \\text{ m}$ a una velocità di $10 \\text{ m/s}$. La forza centripeta richiesta è $\\vec{F}_c = 1200 \\cdot (10^2 / 50) = 2400 \\text{ N}$."
       }
     ],
     "link_correlati": [ "DIN_002", "DIN_007" ],
     "parole_chiave": [ "forza centripeta", "moto circolare", "accelerazione centripeta", "Fc = mv^2/r" ],
     "data_creazione": "2025-07-10",
-    "data_ultima_modifica": "2025-07-10"
+    "data_ultima_modifica": "2025-07-20"
   },
   {
     "id": "DIN_007",
     "categoria": "Dinamica",
     "sottocategoria": "Moto Circolare",
     "titolo": "Forza centrifuga",
-    "formula_latex": "F_{cf} = m \\frac{v^2}{r} = m \\omega^2 r",
-    "descrizione": "La forza centrifuga $F_{cf}$ è una forza apparente che un osservatore in un sistema di riferimento non inerziale (che ruota) percepisce come una forza che 'spinge' i corpi lontano dal centro di rotazione. Ha la stessa intensità della forza centripeta ma verso opposto.",
+    "formula_latex": "\\vec{F}_{cf} = m \\frac{v^2}{r} = m \\omega^2 r",
+    "descrizione": "La forza centrifuga $\\vec{F}_{cf}$ è una forza apparente che un osservatore in un sistema di riferimento non inerziale (che ruota) percepisce come una forza che 'spinge' i corpi lontano dal centro di rotazione. Ha la stessa intensità della forza centripeta ma verso opposto.",
     "variabili": [
-      { "simbolo": "$F_{cf}$", "descrizione": "Forza centrifuga", "unita": "N" },
+      { "simbolo": "$\\vec{F}_{cf}$", "descrizione": "Forza centrifuga", "unita": "N" },
       { "simbolo": "$m$", "descrizione": "Massa del corpo", "unita": "kg" },
       { "simbolo": "$v$", "descrizione": "Velocità tangenziale", "unita": "m/s" },
       { "simbolo": "$\\omega$", "descrizione": "Velocità angolare", "unita": "rad/s" },
@@ -154,21 +154,21 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Quando un'auto curva, i passeggeri sentono una forza che li spinge verso l'esterno della curva. Questa è la forza centrifuga."
+        "testo": "Quando un'auto curva, i passeggeri sentono una forza che li spinge verso l'esterno della curva. Questa è la forza centrifuga ($\\vec{F}_{cf}$)."
       }
     ],
     "link_correlati": [ "DIN_006" ],
     "parole_chiave": [ "forza centrifuga", "forza apparente", "sistema non inerziale" ],
     "data_creazione": "2025-07-10",
-    "data_ultima_modifica": "2025-07-10"
+    "data_ultima_modifica": "2025-07-20"
   },
   {
     "id": "DIN_008",
     "categoria": "Dinamica",
     "sottocategoria": "Principi di Relatività",
     "titolo": "Trasformazioni di Galileo",
-    "formula_latex": "x' = x - v_0 t, \\quad y' = y, \\quad z' = z, \\quad t' = t",
-    "descrizione": "Le Trasformazioni di Galileo descrivono come le coordinate spaziali e temporali di un evento cambiano quando osservate da due **sistemi di riferimento inerziali** diversi. Se un sistema S' si muove con velocità costante $v_0$ rispetto a un sistema S (convenzionalmente lungo l'asse x), le coordinate di un punto $(x, y, z)$ nel tempo $t$ viste da S diventano $(x', y', z')$ e $t'$ nel sistema S'. Si assume che il tempo sia assoluto ($t' = t$). Il segno di $v_0$ dipende dalla direzione del moto relativo: se S' si muove nel verso positivo dell'asse x di S, $v_0$ è positiva; se si muove nel verso negativo, $v_0$ è negativa.",
+    "formula_latex": "\\begin{aligned} \\left\\{ \\begin{aligned} x' &= x - v_0 t \\\\ y' &= y \\\\ z' &= z \\\\ t' &= t \\end{aligned} \\right. \\end{aligned}",
+    "descrizione": "Le Trasformazioni di Galileo descrivono come le coordinate spaziali e temporali di un evento cambiano quando osservate da due **sistemi di riferimento inerziali** diversi. \nSe un sistema S' si muove con velocità costante $v_0$ rispetto a un sistema S (convenzionalmente lungo l'asse x), le coordinate di un punto $(x, y, z)$ nel tempo $t$ viste da S diventano $(x', y', z')$ e $t'$ nel sistema S'. \nSi assume che il tempo sia assoluto ($t' = t$). \nIl segno di $v_0$ dipende dalla direzione del moto relativo: se S' si muove nel verso positivo dell'asse x di S, $v_0$ è positiva; se si muove nel verso negativo, $v_0$ è negativa.",
     "variabili": [
       { "simbolo": "$x, y, z$", "descrizione": "Coordinate spaziali nel sistema S", "unita": "m" },
       { "simbolo": "$t$", "descrizione": "Tempo nel sistema S", "unita": "s" },
@@ -179,13 +179,13 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se sei seduto su un treno che viaggia a $20 \\text{ m/s}$ (S') e ti trovi a $2 \\text{ m}$ dal finestrino (la tua $x'$), dopo $10 \\text{ s}$ per un osservatore a terra (S), la tua posizione $x$ sarà $x = x' + v_0 t = 2 + (20 \\cdot 10) = 2 + 200 = 202 \\text{ m}$. Se il treno si muovesse all'indietro, $v_0$ sarebbe negativa e la formula si adatterebbe di conseguenza."
+        "testo": "Se sei seduto su un treno che viaggia a $20 \\text{ m/s}$ (S') e ti trovi a $2 \\text{ m}$ dal finestrino (la tua $x'$), dopo $10 \\text{ s}$ per un osservatore a terra (S), la tua posizione $x$ sarà $x = x' + v_0 t = 2 + (20 \\cdot 10) = 202 \\text{ m}$."
       }
     ],
     "link_correlati": [ "DIN_001", "DIN_009" ],
     "parole_chiave": [ "trasformazioni di galileo", "coordinate", "moto relativo", "sistema inerziale" ],
     "data_creazione": "2025-07-10",
-    "data_ultima_modifica": "2025-07-10"
+    "data_ultima_modifica": "2025-07-20"
   },
   {
     "id": "DIN_009",
@@ -193,7 +193,7 @@
     "sottocategoria": "Principi di Relatività",
     "titolo": "Legge di Composizione della Velocità",
     "formula_latex": "\\vec{v} = \\vec{v}' + \\vec{v}_0 \\quad \\quad \\vec{a}' = \\vec{a}",
-    "descrizione": "La Legge di Composizione della Velocità, derivata dalle Trasformazioni di Galileo, stabilisce come le velocità si sommano vettorialmente tra due sistemi di riferimento inerziali. Se un oggetto ha una velocità $\\vec{v}'$ rispetto a un sistema S' che a sua volta si muove con velocità $\\vec{v}_0$ rispetto a un sistema S, allora la velocità dell'oggetto $\\vec{v}$ rispetto al sistema S è la somma vettoriale di $\\vec{v}'$ e $\\vec{v}_0$. In termini più semplici, se i movimenti sono unidirezionali, si userà il segno $+$ se le velocità sono concordi e il segno $-$ se sono discordi (es. $v = v' \\pm v_0$). L'**accelerazione è invariante**, cioè l'accelerazione di un corpo è la stessa in tutti i sistemi di riferimento inerziali ($\\vec{a}' = \\vec{a}$).",
+    "descrizione": "La Legge di Composizione della Velocità, derivata dalle Trasformazioni di Galileo, stabilisce come le velocità si sommano vettorialmente tra due sistemi di riferimento inerziali. \nSe un oggetto ha una velocità $\\vec{v}'$ rispetto a un sistema S' che a sua volta si muove con velocità $\\vec{v}_0$ rispetto a un sistema S, allora la velocità dell'oggetto $\\vec{v}$ rispetto al sistema S è la somma vettoriale di $\\vec{v}'$ e $\\vec{v}_0$. In termini più semplici, se i movimenti sono unidirezionali, si userà il segno $+$ se le velocità sono concordi e il segno $-$ se sono discordi (es. $v = v' \\pm v_0$). \nL'**accelerazione è invariante**, cioè l'accelerazione di un corpo è la stessa in tutti i sistemi di riferimento inerziali ($\\vec{a}' = \\vec{a}$).",
     "variabili": [
       { "simbolo": "$\\vec{v}$", "descrizione": "Velocità del corpo nel sistema S (fisso)", "unita": "m/s" },
       { "simbolo": "$\\vec{v}'$", "descrizione": "Velocità del corpo nel sistema S' (in movimento)", "unita": "m/s" },
@@ -210,6 +210,6 @@
     "link_correlati": [ "DIN_001", "DIN_008" ],
     "parole_chiave": [ "composizione velocità", "velocità relativa", "galileiana", "invarianza accelerazione" ],
     "data_creazione": "2025-07-10",
-    "data_ultima_modifica": "2025-07-10"
+    "data_ultima_modifica": "2025-07-20"
   }
 ]

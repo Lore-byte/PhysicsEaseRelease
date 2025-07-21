@@ -4,10 +4,10 @@
     "categoria": "Elettrostatica",
     "sottocategoria": "Forza e Campo Elettrico",
     "titolo": "Legge di Coulomb",
-    "formula_latex": "F = k_e \\frac{|q_1 q_2|}{r^2}",
-    "descrizione": "La legge di Coulomb descrive la forza $F$ tra due cariche puntiformi $q_1$ e $q_2$, separate da una distanza $r$. La costante $k_e$ è la costante di Coulomb.",
+    "formula_latex": "\\vec{F} = k_e \\frac{|q_1 q_2|}{r^2}",
+    "descrizione": "La legge di Coulomb descrive la forza $\\vec{F}$ tra due cariche puntiformi $q_1$ e $q_2$, separate da una distanza $r$.",
     "variabili": [
-      { "simbolo": "$F$", "descrizione": "Forza elettrica", "unita": "N" },
+      { "simbolo": "$\\vec{F}$", "descrizione": "Forza elettrica", "unita": "N" },
       { "simbolo": "$q_1, q_2$", "descrizione": "Cariche elettriche", "unita": "C" },
       { "simbolo": "$r$", "descrizione": "Distanza tra le cariche", "unita": "m" },
       { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" }
@@ -28,17 +28,17 @@
     "categoria": "Elettrostatica",
     "sottocategoria": "Forza e Campo Elettrico",
     "titolo": "Costante Dielettrica Relativa",
-    "formula_latex": "\\epsilon_r = \\frac{\\epsilon}{\\epsilon_0}",
-    "descrizione": "La costante dielettrica relativa $\\epsilon_r$ indica di quanto la forza elettrica tra due cariche è ridotta in un mezzo rispetto al vuoto.",
+    "formula_latex": "\\varepsilon_r = \\frac{\\varepsilon}{\\varepsilon_0}",
+    "descrizione": "La costante dielettrica relativa $\\varepsilon_r$ indica di quanto la forza elettrica tra due cariche è ridotta in un mezzo rispetto al vuoto.",
     "variabili": [
-      { "simbolo": "$\\epsilon_r$", "descrizione": "Costante dielettrica relativa", "unita": "-" },
-      { "simbolo": "$\\epsilon$", "descrizione": "Costante dielettrica del mezzo", "unita": "F/m" },
-      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "$\\varepsilon_r$", "descrizione": "Costante dielettrica relativa", "unita": "-" },
+      { "simbolo": "$\\varepsilon$", "descrizione": "Costante dielettrica del mezzo", "unita": "F/m" },
+      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se la costante dielettrica dell'acqua è circa $7.1 \\times 10^{-10} F/m$ e quella del vuoto è $8.85 \\times 10^{-12} F/m$, la costante dielettrica relativa dell'acqua è $\\epsilon_r = \\frac{7.1 \\times 10^{-10}}{8.85 \\times 10^{-12}} \\approx 80$."
+        "testo": "Se la costante dielettrica dell'acqua è circa $7.1 \\times 10^{-10} F/m$ e quella del vuoto è $8.85 \\times 10^{-12} F/m$, la costante dielettrica relativa dell'acqua è $\\varepsilon_r = \\frac{7.1 \\times 10^{-10}}{8.85 \\times 10^{-12}} \\approx 80$."
       }
     ],
     "link_correlati": [],
@@ -74,8 +74,8 @@
     "categoria": "Elettrostatica",
     "sottocategoria": "Forza e Campo Elettrico",
     "titolo": "Campo Elettrico di una Carica Puntiforme",
-    "formula_latex": "\\vec{E} = k_e \\frac{q}{r^2} \\hat{r}",
-    "descrizione": "Il campo elettrico $\\vec{E}$ generato da una carica puntiforme $q$ a una distanza $r$ da essa. $\\hat{r}$ è il versore nella direzione radiale.",
+    "formula_latex": "\\vec{E} = k_e \\frac{q}{r^2}",
+    "descrizione": "Il campo elettrico $\\vec{E}$ generato da una carica puntiforme $q$ a una distanza $r$ da essa.",
     "variabili": [
       { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
       { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" },
@@ -98,17 +98,17 @@
     "categoria": "Elettrostatica",
     "sottocategoria": "Flusso e Teorema di Gauss",
     "titolo": "Flusso del Campo Elettrico",
-    "formula_latex": "\\Phi_E = \\int_S \\vec{E} \\cdot d\\vec{A}",
-    "descrizione": "Il flusso del campo elettrico $\\Phi_E$ attraverso una superficie $S$ è il prodotto scalare del campo elettrico $\\vec{E}$ e del vettore infinitesimo di area $d\\vec{A}$, integrato su tutta la superficie.",
+    "formula_latex": "\\Phi_S(\\vec{E}) = \\vec{E} \\cdot \\vec{S}",
+    "descrizione": "Il flusso del campo elettrico $\\Phi_S(\\vec{E})$ attraverso una superficie $S$ è il prodotto scalare del campo elettrico $\\vec{E}$ e del vettore superficie $\\vec{S}$",
     "variabili": [
-      { "simbolo": "$\\Phi_E$", "descrizione": "Flusso del campo elettrico", "unita": "$N \\cdot m^2/C$" },
+      { "simbolo": "$\\Phi_S(\\vec{E})$", "descrizione": "Flusso del campo elettrico", "unita": "$N \\cdot m^2/C$" },
       { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$d\\vec{A}$", "descrizione": "Vettore infinitesimo di area", "unita": "m^2" }
+      { "simbolo": "$\\vec{A}$", "descrizione": "Vettore superficie", "unita": "m^2" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un campo elettrico uniforme di $200 N/C$ attraversa perpendicolarmente una superficie piana di $0.5 m^2$. Il flusso è $\\Phi_E = 200 N/C \\cdot 0.5 m^2 = 100 N \\cdot m^2/C$."
+        "testo": "Un campo elettrico uniforme di $200 N/C$ attraversa perpendicolarmente una superficie piana di $0.5 m^2$. Il flusso è $\\Phi_S(\\vec{E}) = 200 N/C \\cdot 0.5 m^2 = 100 N \\cdot m^2/C$."
       }
     ],
     "link_correlati": [],
@@ -121,19 +121,18 @@
     "categoria": "Elettrostatica",
     "sottocategoria": "Flusso e Teorema di Gauss",
     "titolo": "Teorema di Gauss",
-    "formula_latex": "\\oint_S \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{int}}{\\epsilon_0}",
-    "descrizione": "Il teorema di Gauss afferma che il flusso totale del campo elettrico attraverso una qualsiasi superficie chiusa $S$ (superficie gaussiana) è direttamente proporzionale alla carica totale $Q_{int}$ racchiusa all'interno di quella superficie, divisa per la costante dielettrica del vuoto $\\epsilon_0$.",
+    "formula_latex": "\\Phi_S(\\vec{E}) = \\frac{Q_{tot}}{\\varepsilon_0}",
+    "descrizione": "Il teorema di Gauss afferma che il flusso totale del campo elettrico attraverso una qualsiasi superficie chiusa $S$ (superficie gaussiana) è direttamente proporzionale alla carica totale $Q_{tot}$ racchiusa all'interno di quella superficie, divisa per la costante dielettrica del vuoto $\\varepsilon_0$.",
     "variabili": [
-      { "simbolo": "$\\Phi_E$", "descrizione": "Flusso del campo elettrico", "unita": "$N \\cdot m^2/C$" },
+      { "simbolo": "$\\Phi_S(\\vec{E})$", "descrizione": "Flusso del campo elettrico", "unita": "$N \\cdot m^2/C$" },
       { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$d\\vec{A}$", "descrizione": "Vettore infinitesimo di area", "unita": "m^2" },
-      { "simbolo": "$Q_{int}$", "descrizione": "Carica totale racchiusa", "unita": "C" },
-      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "$Q_{tot}$", "descrizione": "Carica totale racchiusa", "unita": "C" },
+      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una carica di $2 \\mu C$ è racchiusa da una superficie sferica. Il flusso totale attraverso la superficie è $\\Phi_E = \\frac{2 \\times 10^{-6} C}{8.85 \\times 10^{-12} F/m} \\approx 2.26 \\times 10^5 N \\cdot m^2/C$."
+        "testo": "Una carica di $2 \\mu C$ è racchiusa da una superficie sferica. Il flusso totale attraverso la superficie è $\\Phi_S(\\vec{E}) = \\frac{2 \\times 10^{-6} C}{8.85 \\times 10^{-12} F/m} \\approx 2.26 \\times 10^5 N \\cdot m^2/C$."
       }
     ],
     "link_correlati": [],
@@ -151,7 +150,7 @@
     "variabili": [
       { "simbolo": "$\\sigma$", "descrizione": "Densità superficiale di carica", "unita": "C/m^2" },
       { "simbolo": "$Q$", "descrizione": "Carica totale", "unita": "C" },
-      { "simbolo": "$A$", "descrizione": "Area della superficie", "unita": "m^2" }
+      { "simbolo": "$A$", "descrizione": "Area della superficie", "unita": "$m^2$" }
     ],
     "esempi": [
       {
@@ -169,12 +168,12 @@
     "categoria": "Elettrostatica",
     "sottocategoria": "Campo Elettrico da Distribuzioni",
     "titolo": "Campo Elettrico di un Piano Infinito Uniformemente Carico",
-    "formula_latex": "E = \\frac{\\sigma}{2\\epsilon_0}",
+    "formula_latex": "E = \\frac{\\sigma}{2\\varepsilon_0}",
     "descrizione": "Il campo elettrico $E$ generato da un piano infinito uniformemente carico con densità superficiale di carica $\\sigma$. Il campo è uniforme e perpendicolare al piano.",
     "variabili": [
       { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
       { "simbolo": "$\\sigma$", "descrizione": "Densità superficiale di carica", "unita": "C/m^2" },
-      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
     ],
     "esempi": [
       {
@@ -215,12 +214,12 @@
     "categoria": "Elettrostatica",
     "sottocategoria": "Campo Elettrico da Distribuzioni",
     "titolo": "Campo Elettrico di un Filo Infinito Uniformemente Carico",
-    "formula_latex": "E = \\frac{\\lambda}{2\\pi\\epsilon_0 r}",
+    "formula_latex": "E = \\frac{\\lambda}{2\\pi\\varepsilon_0 r}",
     "descrizione": "Il campo elettrico $E$ generato da un filo infinito uniformemente carico con densità lineare di carica $\\lambda$, a una distanza $r$ dal filo.",
     "variabili": [
       { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
       { "simbolo": "$\\lambda$", "descrizione": "Densità lineare di carica", "unita": "C/m" },
-      { "simbolo": "$\\epsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
+      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
       { "simbolo": "$r$", "descrizione": "Distanza dal filo", "unita": "m" }
     ],
     "esempi": [
@@ -412,7 +411,7 @@
     "variabili": [
       { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C o V/m" },
       { "simbolo": "$V$", "descrizione": "Potenziale elettrico", "unita": "V" },
-      { "simbolo": "$\\nabla$", "descrizione": "Operatore gradiente", "unita": "-" }
+      { "simbolo": "$\\nabla$", "descrizione": "Operatore gradiente", "unita": "" }
     ],
     "esempi": [
       {
@@ -429,12 +428,11 @@
     "id": "ELE_019",
     "categoria": "Elettrostatica",
     "sottocategoria": "Relazione Campo-Potenziale",
-    "titolo": "Circuitazione del Campo Elettrico",
-    "formula_latex": "\\oint_L \\vec{E} \\cdot d\\vec{l} = 0",
+    "titolo": "Circuitazione del Campo Elettrico lungo una Linea Chiusa",
+    "formula_latex": "\\Gamma_L(\\vec{E}) = 0",
     "descrizione": "La circuitazione del campo elettrico elettrostatico lungo una qualsiasi linea chiusa $L$ è sempre zero. Questo riflette il fatto che il campo elettrostatico è conservativo.",
     "variabili": [
-      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$d\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza", "unita": "m" }
+      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" }
     ],
     "esempi": [
       {

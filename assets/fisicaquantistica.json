@@ -25,7 +25,7 @@
     "categoria": "Fisica Quantistica",
     "sottocategoria": "Corpo Nero",
     "titolo": "Legge di Spostamento di Wien",
-    "formula_latex": "\\lambda_{\\max} T = b",
+    "formula_latex": "\\lambda_{\\max} = \\frac{b}{T}",
     "descrizione": "La lunghezza d’onda alla quale l’emissione del corpo nero è massima è inversamente proporzionale alla temperatura T, con costante di proporzionalità b.",
     "variabili": [
       { "simbolo": "$\\lambda_{\\max}$", "descrizione": "Lunghezza d’onda di picco", "unita": "m" },
@@ -127,24 +127,6 @@
     "esempi": [],
     "link_correlati": ["QNT_009","QNT_010"],
     "parole_chiave": ["spettro","Rydberg","emissione","atomo"],
-    "data_creazione": "2025-07-15",
-    "data_ultima_modifica": "2025-07-15"
-  },
-  {
-    "id": "QNT_008",
-    "categoria": "Fisica Quantistica",
-    "sottocategoria": "Condizione di Quantizzazione",
-    "titolo": "Condizione di Quantizzazione di Bohr–Sommerfeld",
-    "formula_latex": "\\oint p\\,dx = n h",
-    "descrizione": "La fase dell’azione meccanica lungo un’orbita chiusa deve essere un multiplo intero di h.",
-    "variabili": [
-      { "simbolo": "$p$", "descrizione": "Quantità di moto", "unita": "kg·m/s" },
-      { "simbolo": "$n$", "descrizione": "Numero quantico", "unita": "-" },
-      { "simbolo": "$h$", "descrizione": "Costante di Planck", "unita": "J·s" }
-    ],
-    "esempi": [],
-    "link_correlati": ["QNT_012"],
-    "parole_chiave": ["quantizzazione","azione","Bohr–Sommerfeld"],
     "data_creazione": "2025-07-15",
     "data_ultima_modifica": "2025-07-15"
   },

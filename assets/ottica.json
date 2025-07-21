@@ -49,11 +49,11 @@
     "categoria": "Onde e Ottica",
     "sottocategoria": "Onde (generale)",
     "titolo": "Onda Armonica (Funzione d'onda)",
-    "formula_latex": "y(x,t) = A \\sin(kx - \\omega t + \\phi)",
-    "descrizione": "Descrive lo spostamento $y$ di un'onda armonica progressiva nel tempo $t$ e nello spazio $x$. $A$ è l'ampiezza, $k$ il numero d'onda, $\\omega$ la frequenza angolare e $\\phi$ la fase iniziale. Altre forme comuni includono $\\cos$ o combinazioni di segni per la propagazione in direzioni diverse.",
+    "formula_latex": "y(x,t) = a \\sin(kx - \\omega t + \\phi)",
+    "descrizione": "Descrive lo spostamento $y$ di un'onda armonica progressiva nel tempo $t$ e nello spazio $x$. Altre forme comuni includono $\\cos$ o combinazioni di segni per la propagazione in direzioni diverse.",
     "variabili": [
       { "simbolo": "$y(x,t)$", "descrizione": "Spostamento dell'onda", "unita": "m" },
-      { "simbolo": "$A$", "descrizione": "Ampiezza dell'onda", "unita": "m" },
+      { "simbolo": "$a$", "descrizione": "Ampiezza dell'onda", "unita": "m" },
       { "simbolo": "$k$", "descrizione": "Numero d'onda ($2\\pi / \\lambda$)", "unita": "rad/m" },
       { "simbolo": "$\\omega$", "descrizione": "Frequenza angolare ($2\\pi f$)", "unita": "rad/s" },
       { "simbolo": "$\\phi$", "descrizione": "Fase iniziale", "unita": "rad" }
@@ -61,7 +61,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un'onda armonica è descritta da $y(x,t) = 0.02 \\sin(4x - 8t)$. Qui, $A=0.02 \\text{ m}$, $k=4 \\text{ rad/m}$, $\\omega=8 \\text{ rad/s}$."
+        "testo": "Un'onda armonica è descritta da $y(x,t) = 0.02 \\sin(4x - 8t)$. Qui, $a=0.02 \\text{ m}$, $k=4 \\text{ rad/m}$, $\\omega=8 \\text{ rad/s}$."
       }
     ],
     "link_correlati": ["OND_001", "OND_002"],
@@ -142,7 +142,7 @@
     "id": "SON_002",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Onde Sonore",
-    "titolo": "Effetto Doppler (generale)",
+    "titolo": "Effetto Doppler",
     "formula_latex": "f' = f \\left( \\frac{v \\pm v_o}{v \\mp v_s} \\right)",
     "descrizione": "Descrive il cambiamento apparente della frequenza $f'$ di un'onda rispetto a un osservatore in movimento relativo rispetto alla sorgente dell'onda. I segni dipendono dalla direzione del movimento: '$+v_o$' se l'osservatore si avvicina, '$-v_o$' se si allontana; '$-v_s$' se la sorgente si avvicina, '$+v_s$' se si allontana.",
     "variabili": [
@@ -191,17 +191,17 @@
     "categoria": "Onde e Ottica",
     "sottocategoria": "Onde Sonore",
     "titolo": "Livello di Intensità Sonora (Decibel)",
-    "formula_latex": "\\beta = 10 \\log_{10}\\left(\\frac{I}{I_0}\\right)",
-    "descrizione": "Il livello di intensità sonora $\\beta$ è una misura logaritmica dell'intensità $I$ di un suono rispetto a un'intensità di riferimento $I_0$ ($10^{-12} \\text{ W/m}^2$), che corrisponde alla soglia dell'udito umano. Viene espresso in decibel (dB).",
+    "formula_latex": "L_s = 10 \\log_{10}\\left(\\frac{I}{I_0}\\right)",
+    "descrizione": "Il livello di intensità sonora $L_s$ è una misura logaritmica dell'intensità $I$ di un suono rispetto a un'intensità di riferimento $I_0$ ($10^{-12} \\text{ W/m}^2$), che corrisponde alla soglia dell'udito umano. Viene espresso in decibel (dB).",
     "variabili": [
-      { "simbolo": "$\\beta$", "descrizione": "Livello di intensità sonora", "unita": "dB" },
+      { "simbolo": "$L_s$", "descrizione": "Livello di intensità sonora", "unita": "dB" },
       { "simbolo": "$I$", "descrizione": "Intensità dell'onda sonora", "unita": "W/m²" },
       { "simbolo": "$I_0$", "descrizione": "Intensità di riferimento ($10^{-12} \\text{ W/m}^2$)", "unita": "W/m²" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un suono ha un'intensità di $10^{-6} \\text{ W/m}^2$. Il suo livello di intensità è $\\beta = 10 \\log_{10}(10^{-6} / 10^{-12}) = 10 \\log_{10}(10^6) = 10 \\cdot 6 = 60 \\text{ dB}$."
+        "testo": "Un suono ha un'intensità di $10^{-6} \\text{ W/m}^2$. Il suo livello di intensità è $L_s = 10 \\log_{10}(10^{-6} / 10^{-12}) = 10 \\log_{10}(10^6) = 10 \\cdot 6 = 60 \\text{ dB}$."
       }
     ],
     "link_correlati": ["SON_003"],
@@ -261,7 +261,7 @@
     "categoria": "Onde e Ottica",
     "sottocategoria": "Onde Sonore",
     "titolo": "Modi Normali di Oscillazione dell'Aria in un Tubo (Aperto-Chiuso)",
-    "formula_latex": "f_n = \\frac{n v}{4L}",
+    "formula_latex": "f_n = (2n-1)\\frac{v}{4L}",
     "descrizione": "Le frequenze $f_n$ dei modi normali di oscillazione dell'aria in un tubo aperto a un'estremità e chiuso all'altra, dove $n$ è un numero intero dispari ($1, 3, 5, ...$) che indica l'armonica (solo armoniche dispari), $v$ è la velocità del suono nell'aria e $L$ è la lunghezza del tubo.",
     "variabili": [
       { "simbolo": "$f_n$", "descrizione": "Frequenza dell'n-esima armonica", "unita": "Hz" },
@@ -335,7 +335,7 @@
     "formula_latex": "M = -\\frac{d_i}{d_o} = \\frac{h_i}{h_o}",
     "descrizione": "L'ingrandimento lineare $M$ descrive quanto l'immagine è più grande o più piccola rispetto all'oggetto, e se è diritta o capovolta. $h_i$ è l'altezza dell'immagine, $h_o$ è l'altezza dell'oggetto. Il segno meno indica che le immagini reali sono capovolte.",
     "variabili": [
-      { "simbolo": "$M$", "descrizione": "Ingrandimento lineare", "unita": "-" },
+      { "simbolo": "$M$", "descrizione": "Ingrandimento lineare", "unita": "" },
       { "simbolo": "$d_i$", "descrizione": "Distanza dell'immagine", "unita": "m" },
       { "simbolo": "$d_o$", "descrizione": "Distanza dell'oggetto", "unita": "m" },
       { "simbolo": "$h_i$", "descrizione": "Altezza dell'immagine", "unita": "m" },
@@ -403,17 +403,17 @@
     "categoria": "Onde e Ottica",
     "sottocategoria": "Fotometria",
     "titolo": "Intensità Luminosa (Intensità di Radiazione)",
-    "formula_latex": "I_v = \\frac{\\Phi_v}{\\Omega}",
-    "descrizione": "L'intensità luminosa $I_v$ è il flusso luminoso $\\Phi_v$ emesso per unità di angolo solido $\\Omega$ in una particolare direzione. È una misura della potenza luminosa per angolo solido, percepita dall'occhio umano. L'unità di misura è la candela (cd).",
+    "formula_latex": "I_R = \\frac{\\Phi_v}{\\Omega}",
+    "descrizione": "L'intensità luminosa $I_R$ è il flusso luminoso $\\Phi_v$ emesso per unità di angolo solido $\\Omega$ in una particolare direzione. È una misura della potenza luminosa per angolo solido, percepita dall'occhio umano. L'unità di misura è la candela (cd).",
     "variabili": [
-      { "simbolo": "$I_v$", "descrizione": "Intensità luminosa", "unita": "cd" },
+      { "simbolo": "$I_R$", "descrizione": "Intensità luminosa", "unita": "cd" },
       { "simbolo": "$\\Phi_v$", "descrizione": "Flusso luminoso", "unita": "lm" },
       { "simbolo": "$\\Omega$", "descrizione": "Angolo solido", "unita": "sr" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una sorgente emette un flusso luminoso di $100 \\text{ lm}$ in un angolo solido di $4 \\text{ sr}$. L'intensità luminosa è $I_v = 100 \\text{ lm} / 4 \\text{ sr} = 25 \\text{ cd}$."
+        "testo": "Una sorgente emette un flusso luminoso di $100 \\text{ lm}$ in un angolo solido di $4 \\text{ sr}$. L'intensità luminosa è $I_R = 100 \\text{ lm} / 4 \\text{ sr} = 25 \\text{ cd}$."
       }
     ],
     "link_correlati": ["OTT_005", "OTT_007"],
@@ -426,10 +426,10 @@
     "categoria": "Onde e Ottica",
     "sottocategoria": "Fotometria",
     "titolo": "Flusso Luminoso",
-    "formula_latex": "\\Phi_v = K_m \\int P_e(\\lambda) V(\\lambda) d\\lambda",
-    "descrizione": "Il flusso luminoso $\\Phi_v$ è la misura della potenza percepita della luce. È ottenuto integrando la potenza radiante $P_e(\\lambda)$ (in W) su tutte le lunghezze d'onda $\\lambda$, ponderata dalla funzione di efficienza luminosa $V(\\lambda)$ (la sensibilità dell'occhio umano). $K_m$ è la massima efficacia luminosa (683 lm/W per luce a 555 nm). L'unità è il lumen (lm).",
+    "formula_latex": "\\Phi_L = K_m \\int P_e(\\lambda) V(\\lambda) d\\lambda",
+    "descrizione": "Il flusso luminoso $\\Phi_L$ è la misura della potenza percepita della luce. È ottenuto integrando la potenza radiante $P_e(\\lambda)$ (in W) su tutte le lunghezze d'onda $\\lambda$, ponderata dalla funzione di efficienza luminosa $V(\\lambda)$ (la sensibilità dell'occhio umano). $K_m$ è la massima efficacia luminosa (683 lm/W per luce a 555 nm). L'unità è il lumen (lm).",
     "variabili": [
-      { "simbolo": "$\\Phi_v$", "descrizione": "Flusso luminoso", "unita": "lm" },
+      { "simbolo": "$\\Phi_L$", "descrizione": "Flusso luminoso", "unita": "lm" },
       { "simbolo": "$K_m$", "descrizione": "Massima efficacia luminosa ($683 \\text{ lm/W}$)", "unita": "lm/W" },
       { "simbolo": "$P_e(\\lambda)$", "descrizione": "Potenza radiante a una data lunghezza d'onda", "unita": "W/m" },
       { "simbolo": "$V(\\lambda)$", "descrizione": "Funzione di efficienza luminosa", "unita": "-" }
@@ -450,17 +450,17 @@
     "categoria": "Onde e Ottica",
     "sottocategoria": "Fotometria",
     "titolo": "Illuminamento",
-    "formula_latex": "E = \\frac{\\Phi_v}{A}",
-    "descrizione": "L'illuminamento $E$ è la quantità di flusso luminoso $\\Phi_v$ che incide su una data superficie per unità di area $A$. È una misura di quanta luce visibile illumina una superficie. L'unità è il lux (lx), che è equivalente a lumen per metro quadrato (lm/m²).",
+    "formula_latex": "E_L = \\frac{\\Phi_L}{A}",
+    "descrizione": "L'illuminamento $E_L$ è la quantità di flusso luminoso $\\Phi_L$ che incide su una data superficie per unità di area $A$. È una misura di quanta luce visibile illumina una superficie. L'unità è il lux (lx), che è equivalente a lumen per metro quadrato (lm/m²).",
     "variabili": [
-      { "simbolo": "$E$", "descrizione": "Illuminamento", "unita": "lx" },
-      { "simbolo": "$\\Phi_v$", "descrizione": "Flusso luminoso incidente", "unita": "lm" },
+      { "simbolo": "$E_L$", "descrizione": "Illuminamento", "unita": "lx" },
+      { "simbolo": "$\\Phi_L$", "descrizione": "Flusso luminoso incidente", "unita": "lm" },
       { "simbolo": "$A$", "descrizione": "Area della superficie illuminata", "unita": "m²" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una lampada produce un flusso luminoso di $1000 \\text{ lm}$ e illumina un tavolo di $2 \\text{ m}^2$. L'illuminamento sul tavolo è $E = 1000 \\text{ lm} / 2 \\text{ m}^2 = 500 \\text{ lx}$."
+        "testo": "Una lampada produce un flusso luminoso di $1000 \\text{ lm}$ e illumina un tavolo di $2 \\text{ m}^2$. L'illuminamento sul tavolo è $E_L = 1000 \\text{ lm} / 2 \\text{ m}^2 = 500 \\text{ lx}$."
       }
     ],
     "link_correlati": ["OTT_007"],
