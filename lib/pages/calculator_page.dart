@@ -31,14 +31,14 @@ class _CalculatorPageState extends State<CalculatorPage> {
   ];
 
   final List<String> _scientificButtons = [
-    'AC', 'DL', 'RAD/DEG', 'Sci',
+    'AC', 'DL', 'RAD/DEG_TOGGLE', 'Sci',
     'sin', 'cos', 'tan', 'π',
     'log', 'ln', '√', 'e',
     '!', 'e^x', '(', ')',
     '=',
   ];
 
-  Widget _buildButton(String text, Color buttonColor, Color textColor, {double fontSize = 24.0}) {
+  Widget _buildButton(String displayedText, String actionText, Color buttonColor, Color textColor, {double fontSize = 24.0}) {
     return Padding(
       padding: const EdgeInsets.all(6.0),
       child: ElevatedButton(
@@ -52,8 +52,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
           padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 8),
           textStyle: TextStyle(fontSize: fontSize, fontWeight: FontWeight.bold),
         ),
-        onPressed: () => _onButtonPressed(text),
-        child: Text(text),
+        onPressed: () => _onButtonPressed(actionText),
+        child: Text(displayedText),
       ),
     );
   }
@@ -121,7 +121,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
           if (!_isRadians) {
             finalExpression = finalExpression.replaceAllMapped(
-              RegExp(r'(sin|cos|tan)\((\d+(\.\d*)?)\)'),
+              RegExp(r'(sin|cos|tan)\((-?\d+(\.\d*)?)\)'),
                   (match) {
                 String func = match.group(1)!;
                 double angle = double.parse(match.group(2)!);
@@ -165,7 +165,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
           _result = 'Errore';
           print('Errore di calcolo: $e');
         }
-      } else if (buttonText == 'RAD/DEG') {
+      } else if (buttonText == 'RAD/DEG_TOGGLE') {
         _isRadians = !_isRadians;
       } else if (buttonText == 'Sci') {
         _showScientificButtons = !_showScientificButtons;
@@ -205,7 +205,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
   bool _isOperator(String text) {
     return text == '+' || text == '-' || text == '×' || text == '÷' || text == '^' || text == '%' ||
-        text == 's' || text == 'c' || text == 't';
+        text == 's' || text == 'c' || text == 't' || text == 'g' || text == 'n' || text == 'q' || text == '!';
   }
 
   @override
@@ -305,40 +305,51 @@ class _CalculatorPageState extends State<CalculatorPage> {
                 ),
                 itemCount: _showScientificButtons ? _scientificButtons.length : _buttons.length,
                 itemBuilder: (context, index) {
-                  final String buttonText = _showScientificButtons ? _scientificButtons[index] : _buttons[index];
+                  String currentButtonTextRaw = _showScientificButtons ? _scientificButtons[index] : _buttons[index];
+                  String displayedButtonText;
+                  String actionButtonText = currentButtonTextRaw;
+
+                  if (currentButtonTextRaw == 'RAD/DEG_TOGGLE') {
+                    displayedButtonText = _isRadians ? 'DEG' : 'RAD';
+                  } else {
+                    displayedButtonText = currentButtonTextRaw;
+                  }
+
                   Color buttonColor = colorScheme.surfaceContainerHighest;
                   Color textColor = colorScheme.onSurface;
-                  double fontSize = 24.0;
+                  double currentFontSize = 24.0;
 
-                  if (buttonText == 'AC') {
+                  if (currentButtonTextRaw == 'AC') {
                     buttonColor = colorScheme.error;
                     textColor = colorScheme.onError;
-                  } else if (buttonText == 'DL') {
+                  } else if (currentButtonTextRaw == 'DL') {
                     buttonColor = colorScheme.errorContainer;
                     textColor = colorScheme.onErrorContainer;
-                  } else if (['÷', '×', '-', '+'].contains(buttonText)) {
+                  } else if (['÷', '×', '-', '+'].contains(currentButtonTextRaw)) {
                     buttonColor = colorScheme.primary;
                     textColor = colorScheme.onPrimary;
-                  } else if (buttonText == '=') {
+                  } else if (currentButtonTextRaw == '=') {
                     buttonColor = colorScheme.tertiary;
                     textColor = colorScheme.onTertiary;
-                  } else if (['%', '^', '(', ')'].contains(buttonText) ||
-                      _showScientificButtons && ['sin', 'cos', 'tan', 'π', 'log', 'ln', '√', 'e', '!', 'e^x'].contains(buttonText)) {
+                  } else if (['%', '^', '(', ')'].contains(currentButtonTextRaw) ||
+                      _showScientificButtons && ['sin', 'cos', 'tan', 'π', 'log', 'ln', '√', 'e', '!', 'e^x'].contains(currentButtonTextRaw)) {
                     buttonColor = colorScheme.secondaryContainer;
                     textColor = colorScheme.onSecondaryContainer;
-                  } else if (buttonText == 'Sci' || buttonText == 'RAD/DEG') {
-                    buttonColor = colorScheme.tertiary;
-                    textColor = colorScheme.onTertiary;
-                    fontSize = 18.0;
                   }
 
-                  if (!_showScientificButtons && (buttonText == '0' || buttonText == '=')) {
+                  if (currentButtonTextRaw == 'RAD/DEG_TOGGLE' || currentButtonTextRaw == 'Sci') {
+                    currentFontSize = 18.0;
+                    buttonColor = colorScheme.tertiary;
+                    textColor = colorScheme.onTertiary;
+                  }
+
+                  if (!_showScientificButtons && (currentButtonTextRaw == '0' || currentButtonTextRaw == '=')) {
                     return AspectRatio(
                       aspectRatio: 2.0,
-                      child: _buildButton(buttonText, buttonColor, textColor, fontSize: fontSize),
+                      child: _buildButton(displayedButtonText, actionButtonText, buttonColor, textColor, fontSize: currentFontSize),
                     );
                   }
-                  return _buildButton(buttonText, buttonColor, textColor, fontSize: fontSize);
+                  return _buildButton(displayedButtonText, actionButtonText, buttonColor, textColor, fontSize: currentFontSize);
                 },
               ),
             ),
