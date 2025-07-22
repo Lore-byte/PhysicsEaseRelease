@@ -1,4 +1,3 @@
-// lib/pages/unit_converter_page.dart
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
@@ -268,7 +267,6 @@ class _UnitConverterPageState extends State<UnitConverterPage> with SingleTicker
     _convert();
   }
 
-  // Nuovo metodo per pulire i campi
   void _clearFields() {
     setState(() {
       _inputController.clear();
@@ -455,7 +453,179 @@ class _UnitConverterPageState extends State<UnitConverterPage> with SingleTicker
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
               ),
             ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.only(top: 20.0),
+                child: ConversionTable(
+                  selectedCategory: _selectedCategory,
+                  fromUnit: _fromUnit,
+                  toUnit: _toUnit,
+                ),
+              ),
+            ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class ConversionTable extends StatelessWidget {
+  final UnitCategory selectedCategory;
+  final Unit fromUnit;
+  final Unit toUnit;
+
+  ConversionTable({
+    required this.selectedCategory,
+    required this.fromUnit,
+    required this.toUnit,
+  });
+
+  String _convertValueForTable(double value, Unit from, Unit to) {
+    if (selectedCategory.name == 'Temperatura') {
+      double celsiusValue;
+      if (from.symbol == '°C') {
+        celsiusValue = value;
+      } else if (from.symbol == '°F') {
+        celsiusValue = (value - 32) * 5 / 9;
+      } else if (from.symbol == 'K') {
+        celsiusValue = value - 273.15;
+      } else {
+        return 'N/A';
+      }
+
+      if (to.symbol == '°C') {
+        return _formatResult(celsiusValue);
+      } else if (to.symbol == '°F') {
+        return _formatResult((celsiusValue * 9 / 5) + 32);
+      } else if (to.symbol == 'K') {
+        return _formatResult(celsiusValue + 273.15);
+      } else {
+        return 'N/A';
+      }
+    } else {
+      double valueInBaseUnit = value * from.conversionFactor;
+      double result = valueInBaseUnit / to.conversionFactor;
+      return _formatResult(result);
+    }
+  }
+
+  String _getConversionFactorText() {
+    if (selectedCategory.name == 'Temperatura') {
+      return 'Le conversioni di temperatura seguono formule specifiche.';
+    } else {
+      double factor = fromUnit.conversionFactor / toUnit.conversionFactor;
+      String formattedFactor = _formatResult(factor);
+      return '1 ${fromUnit.symbol} = $formattedFactor ${toUnit.symbol}';
+    }
+  }
+
+
+  String _formatResult(double result) {
+    if (result == 0.0) {
+      return '0';
+    }
+
+    if (result.abs() < 0.0001 || result.abs() >= 1000000) {
+      return result.toStringAsExponential(5);
+    } else {
+      String formattedResult = result.toStringAsPrecision(7);
+
+      if (formattedResult.contains('.')) {
+        formattedResult = formattedResult.replaceAll(RegExp(r'\.?0+$'), '');
+      }
+      return formattedResult;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+    final List<double> exampleValues = [1, 10, 100, 1000];
+
+    return Center(
+      child: Card(
+        elevation: 4,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        margin: EdgeInsets.zero,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                selectedCategory.name,
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: colorScheme.onSurface,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                _getConversionFactorText(),
+                style: TextStyle(
+                  fontSize: 14,
+                  fontStyle: FontStyle.italic,
+                  color: colorScheme.onSurface.withOpacity(0.7),
+                ),
+              ),
+              const SizedBox(height: 10),
+              Expanded(
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: DataTable(
+                      columnSpacing: 20,
+                      dataRowColor: MaterialStateProperty.resolveWith<Color?>(
+                            (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.selected)) {
+                            return colorScheme.primary.withOpacity(0.08);
+                          }
+                          return null;
+                        },
+                      ),
+                      headingRowColor: MaterialStateProperty.resolveWith<Color?>(
+                            (Set<MaterialState> states) {
+                          return colorScheme.primaryContainer.withOpacity(0.5);
+                        },
+                      ),
+                      columns: [
+                        DataColumn(
+                          label: Text(
+                            fromUnit.symbol,
+                            style: TextStyle(fontStyle: FontStyle.italic, color: colorScheme.onSurface),
+                          ),
+                        ),
+                        DataColumn(
+                          label: Text(
+                            toUnit.symbol,
+                            style: TextStyle(fontStyle: FontStyle.italic, color: colorScheme.onSurface),
+                          ),
+                        ),
+                      ],
+                      rows: exampleValues.map((value) {
+                        return DataRow(
+                          cells: [
+                            DataCell(Text(
+                              _formatResult(value),
+                              style: TextStyle(color: colorScheme.onSurface),
+                            )),
+                            DataCell(Text(
+                              _convertValueForTable(value, fromUnit, toUnit),
+                              style: TextStyle(color: colorScheme.onSurface),
+                            )),
+                          ],
+                        );
+                      }).toList(),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
