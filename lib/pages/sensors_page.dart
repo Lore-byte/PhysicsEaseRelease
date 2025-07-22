@@ -461,7 +461,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Strumento Sensori'),
+        title: const Text('Sensori'),
         backgroundColor: colorScheme.primaryContainer,
         iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
       ),
@@ -556,7 +556,8 @@ class _SensorToolPageState extends State<SensorToolPage> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
-                'Nota: Potrebbe essere necessario concedere il permesso "Riconoscimento attività fisica" dalle impostazioni dell\'app se i dati non vengono visualizzati.',
+                //'Nota: Potrebbe essere necessario concedere il permesso "Riconoscimento attività fisica" dalle impostazioni dell\'app se i dati non vengono visualizzati.',
+                'Nota: La disponibilità e la precisione dei sensori dipende dal dispositivo',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 14,

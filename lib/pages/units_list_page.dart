@@ -150,7 +150,7 @@ class _UnitsListPageState extends State<UnitsListPage> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Lista Unità di Misura'),
+          title: const Text('Unità di Misura'),
           backgroundColor: colorScheme.primaryContainer,
           iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
           actions: [

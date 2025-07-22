@@ -222,7 +222,7 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                 final String playStoreLink = 'https://play.google.com/store/apps';
                 Share.shareXFiles(
                   [XFile(imagePath.path)],
-                  text: 'Dai un\'occhiata a questa formula su PhysicEase e scarica l\'app per scoprirne altre!\n$playStoreLink',
+                  text: 'Dai un\'occhiata a questa formula su PhysicsEase e scarica l\'app per scoprirne altre!\n$playStoreLink',
                   subject: 'Formula di Fisica: ${widget.formula.titolo}',
                 );
               } else {

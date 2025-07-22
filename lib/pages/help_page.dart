@@ -85,7 +85,7 @@ class HelpPage extends StatelessWidget {
             const SizedBox(height: 24),
             Center(
               child: Text(
-                '© 2025 MalaTech Software Solutions. Tutti i diritti riservati.',
+                '© 2025 PhysicsEase. Tutti i diritti riservati.',
                 style: textTheme.bodySmall?.copyWith(color: colorScheme.onSurfaceVariant),
               ),
             ),

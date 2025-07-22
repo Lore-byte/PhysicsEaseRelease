@@ -29,7 +29,6 @@ class PeriodicTablePage extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
 
     if (element == null) {
-      // Cella vuota per spaziatura nella tavola
       return SizedBox(
         width: cellSize,
         height: cellSize,
@@ -45,7 +44,7 @@ class PeriodicTablePage extends StatelessWidget {
       child: Container(
         width: cellSize,
         height: cellSize,
-        margin: const EdgeInsets.all(1), // Piccolo margine tra le celle
+        margin: const EdgeInsets.all(1),
         decoration: BoxDecoration(
           color: element.displayColor,
           borderRadius: BorderRadius.circular(4),
@@ -81,7 +80,7 @@ class PeriodicTablePage extends StatelessWidget {
                 child: Text(
                   element.symbol,
                   style: TextStyle(
-                    fontSize: 24, // Grande per il simbolo
+                    fontSize: 24,
                     fontWeight: FontWeight.bold,
                     color: element.displayColor.computeLuminance() > 0.5
                         ? Colors.black
@@ -97,7 +96,7 @@ class PeriodicTablePage extends StatelessWidget {
                 child: Text(
                   element.atomicMass > 0
                       ? element.atomicMass.toStringAsFixed(1)
-                      : '', // Mostra massa atomica abbreviata
+                      : '',
                   style: TextStyle(
                     fontSize: 8,
                     color: element.displayColor.computeLuminance() > 0.5
@@ -288,7 +287,7 @@ class PeriodicTablePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tavola Periodica Interattiva'),
+        title: const Text('Tavola Periodica'),
         backgroundColor: colorScheme.primaryContainer,
         iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
       ),
