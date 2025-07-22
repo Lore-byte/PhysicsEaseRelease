@@ -13,6 +13,7 @@ import 'package:physics_ease_release/pages/data_page.dart';
 import 'package:physics_ease_release/pages/help_page.dart';
 import 'package:physics_ease_release/pages/info_page.dart';
 import 'package:physics_ease_release/pages/collaborate_page.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -344,16 +345,23 @@ class _MyAppState extends State<MyApp> {
               ],
             ),
           ),
-          body: WillPopScope(
-            onWillPop: () async {
-              FocusScope.of(context).unfocus();
-
-              final NavigatorState currentNavigator = _navigatorKeys[_selectedIndex].currentState!;
-              if (currentNavigator.canPop()) {
-                currentNavigator.pop();
-                return false;
+          body: PopScope( //WillPopScope dava problem con gli allert e non era più supportato con le ultime versioni di android (predict del pop)
+            canPop: false,
+            onPopInvokedWithResult: (bool didPop, dynamic result) async {
+              if (didPop) {
+                return;
               }
-              return true;
+              FocusScope.of(context).unfocus();
+              final NavigatorState currentNavigator = _navigatorKeys[_selectedIndex].currentState!;
+              print('onPopInvoked chiamato per indice: $_selectedIndex');
+              print('currentNavigator.canPop(): ${currentNavigator.canPop()}');
+              if (currentNavigator.canPop()) {
+                print('Eseguo pop su currentNavigator (torno indietro nella tab)');
+                currentNavigator.pop();
+              } else {
+                print('currentNavigator NON può poppare. Richiesta di chiusura dell\'app.');
+                SystemNavigator.pop();
+              }
             },
             child: IndexedStack(
               index: _selectedIndex,
