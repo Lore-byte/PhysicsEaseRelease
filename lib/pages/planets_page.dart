@@ -155,7 +155,7 @@ class PlanetsPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Corpi Celesti del Sistema Solare'),
+        title: const Text('Pianeti del Sistema Solare'),
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,
         iconTheme: IconThemeData(color: Theme.of(context).colorScheme.onPrimaryContainer),
       ),

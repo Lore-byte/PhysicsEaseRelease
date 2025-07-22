@@ -77,7 +77,7 @@ class _DataPageState extends State<DataPage> {
         children: [
           _buildToolCard(
             context: context,
-            title: 'Lista Costanti Fisiche',
+            title: 'Costanti Fisiche',
             subtitle: 'Consulta le costanti fondamentali della fisica',
             icon: Icons.science,
             onTap: () {
@@ -90,7 +90,7 @@ class _DataPageState extends State<DataPage> {
           ),
           _buildToolCard(
             context: context,
-            title: 'Lista Unità di Misura',
+            title: 'Unità di Misura',
             subtitle: 'Esplora le unità di misura più comuni in fisica',
             icon: Icons.straighten,
             onTap: () {

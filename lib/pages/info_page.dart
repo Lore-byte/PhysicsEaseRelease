@@ -57,7 +57,7 @@ class InfoPage extends StatelessWidget {
             const SizedBox(height: 32),
 
             Text(
-              'Contatta lo Sviluppatore',
+              'Contatta gli  Sviluppatori',
               style: textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: textColor,
@@ -76,6 +76,30 @@ class InfoPage extends StatelessWidget {
                 onTap: () async {
                   final Uri emailLaunchUri = Uri.parse(
                     'mailto:lmala06.tech@gmail.com?subject=Supporto PhysicEase: [Il tuo Messaggio]',
+                  );
+
+                  if (await canLaunchUrl(emailLaunchUri)) {
+                    await launchUrl(emailLaunchUri);
+                  } else {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('Impossibile aprire l\'applicazione email. Copia l\'indirizzo: lmala06.tech@gmail.com')),
+                    );
+                  }
+                },
+              ),
+            ),
+            Card(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              elevation: 4,
+              color: cardColor,
+              child: ListTile(
+                leading: Icon(Icons.email, color: iconColor),
+                title: Text('Invia un\'Email', style: textTheme.titleMedium?.copyWith(color: textColor)),
+                subtitle: Text('beldimanedo@gmail.com', style: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurfaceVariant)),
+                trailing: Icon(Icons.arrow_forward_ios, size: 16, color: colorScheme.onSurfaceVariant),
+                onTap: () async {
+                  final Uri emailLaunchUri = Uri.parse(
+                    'mailto:beldimanedo@gmail.com?subject=Supporto PhysicEase: [Il tuo Messaggio]',
                   );
 
                   if (await canLaunchUrl(emailLaunchUri)) {
@@ -108,14 +132,14 @@ class InfoPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Questa applicazione è stata sviluppata da MalaTech Software Solutions. '
-                          'Il nostro obiettivo è trasformare lo studio della fisica in un\'esperienza coinvolgente e intuitiva per tutti.',
+                      'Questa applicazione è stata sviluppata da Lorenzo Malanotte e Edoardo Beldiman. '
+                          'Il nostro obiettivo è rendere lo studio della fisica un\'esperienza coinvolgente e intuitiva per tutti.',
                       style: textTheme.bodyLarge?.copyWith(color: textColor),
                       textAlign: TextAlign.justify,
                     ),
                     const SizedBox(height: 12),
                     Text(
-                      'Speriamo sinceramente che PhysicEase ti sia un valido supporto nel tuo percorso di apprendimento, rendendo ogni concetto più chiaro e accessibile.',
+                      'Speriamo sinceramente che PhysicsEase ti sia un valido supporto nel tuo percorso di apprendimento, rendendo ogni concetto più chiaro e accessibile.',
                       style: textTheme.bodyLarge?.copyWith(color: textColor),
                       textAlign: TextAlign.justify,
                     ),
@@ -131,7 +155,7 @@ class InfoPage extends StatelessWidget {
             const SizedBox(height: 24),
             Center(
               child: Text(
-                '© 2025 MalaTech Software Solutions. Tutti i diritti riservati.',
+                '© 2025 PhysicsEase. Tutti i diritti riservati.',
                 style: textTheme.bodySmall?.copyWith(color: colorScheme.onSurfaceVariant),
               ),
             ),
