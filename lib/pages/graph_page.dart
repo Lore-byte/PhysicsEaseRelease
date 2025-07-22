@@ -98,24 +98,46 @@ class _GraphPageState extends State<GraphPage> {
     });
   }
 
-  void _removeFunctionField(int index) {
-    setState(() {
-      _functionControllers[index].dispose();
-      _functionControllers.removeAt(index);
-      _currentFunctions.removeAt(index);
-      _errorMessages.removeAt(index);
-      _functionColors.removeAt(index);
-      _isPlaceholder.removeAt(index);
+  void _removeFunctionField(int index) async {
+    final bool? confirm = await showDialog<bool>(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Conferma Eliminazione'),
+          content: const Text('Sei sicuro di voler eliminare questa funzione?'),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(false),
+              child: const Text('Annulla'),
+            ),
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(true),
+              child: const Text('Elimina'),
+            ),
+          ],
+        );
+      },
+    );
 
-      if (_functionControllers.isEmpty) {
-        _addFunctionField(initialText: _exampleFunctions[_random.nextInt(_exampleFunctions.length)], isPlaceholder: true);
-      } else {
-        if (_focusedController == null || !_functionControllers.contains(_focusedController)) {
-          _focusedController = _functionControllers.first;
+    if (confirm == true) {
+      setState(() {
+        _functionControllers[index].dispose();
+        _functionControllers.removeAt(index);
+        _currentFunctions.removeAt(index);
+        _errorMessages.removeAt(index);
+        _functionColors.removeAt(index);
+        _isPlaceholder.removeAt(index);
+
+        if (_functionControllers.isEmpty) {
+          _addFunctionField(initialText: _exampleFunctions[_random.nextInt(_exampleFunctions.length)], isPlaceholder: true);
+        } else {
+          if (_focusedController == null || !_functionControllers.contains(_focusedController)) {
+            _focusedController = _functionControllers.first;
+          }
         }
-      }
-      _plotGraph();
-    });
+        _plotGraph();
+      });
+    }
   }
 
   void _updateFunction(int index) {
