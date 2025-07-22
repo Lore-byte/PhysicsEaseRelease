@@ -1,91 +1,150 @@
 // lib/pages/units_list_page.dart
 import 'package:flutter/material.dart';
 
-class UnitsListPage extends StatelessWidget {
+class UnitsListPage extends StatefulWidget {
+  const UnitsListPage({super.key});
 
-  const UnitsListPage({
-    super.key,
-  });
+  @override
+  State<UnitsListPage> createState() => _UnitsListPageState();
+}
+
+class _UnitsListPageState extends State<UnitsListPage> {
+  bool _showFundamentalOnly = false;
+
+  final Map<String, List<Map<String, String>>> units = {
+    'Lunghezza': [
+      {'name': 'Metro', 'symbol': 'm', 'description': 'Unità SI fondamentale', 'isFundamental': 'true'},
+      {'name': 'Chilometro', 'symbol': 'km', 'description': '1000 metri', 'isFundamental': 'false'},
+      {'name': 'Centimetro', 'symbol': 'cm', 'description': '0.01 metri', 'isFundamental': 'false'},
+      {'name': 'Millimetro', 'symbol': 'mm', 'description': '0.001 metri', 'isFundamental': 'false'},
+      {'name': 'Pollice', 'symbol': 'in', 'description': '2.54 cm', 'isFundamental': 'false'},
+      {'name': 'Piede', 'symbol': 'ft', 'description': '12 pollici', 'isFundamental': 'false'},
+    ],
+    'Massa': [
+      {'name': 'Chilogrammo', 'symbol': 'kg', 'description': 'Unità SI fondamentale', 'isFundamental': 'true'},
+      {'name': 'Grammo', 'symbol': 'g', 'description': '0.001 chilogrammi', 'isFundamental': 'false'},
+      {'name': 'Tonnellata', 'symbol': 't', 'description': '1000 chilogrammi', 'isFundamental': 'false'},
+      {'name': 'Libbra', 'symbol': 'lb', 'description': '0.453592 kg', 'isFundamental': 'false'},
+    ],
+    'Tempo': [
+      {'name': 'Secondo', 'symbol': 's', 'description': 'Unità SI fondamentale', 'isFundamental': 'true'},
+      {'name': 'Minuto', 'symbol': 'min', 'description': '60 secondi', 'isFundamental': 'false'},
+      {'name': 'Ora', 'symbol': 'h', 'description': '3600 secondi', 'isFundamental': 'false'},
+      {'name': 'Giorno', 'symbol': 'd', 'description': '24 ore', 'isFundamental': 'false'},
+    ],
+    'Temperatura': [
+      {'name': 'Kelvin', 'symbol': 'K', 'description': 'Unità SI fondamentale', 'isFundamental': 'true'},
+      {'name': 'Celsius', 'symbol': '°C', 'description': 'K - 273.15', 'isFundamental': 'false'},
+      {'name': 'Fahrenheit', 'symbol': '°F', 'description': '(°C × 9/5) + 32', 'isFundamental': 'false'},
+    ],
+    'Elettricità': [
+      {'name': 'Ampere', 'symbol': 'A', 'description': 'Unità SI fondamentale per la corrente elettrica', 'isFundamental': 'true'},
+      {'name': 'Milliampere', 'symbol': 'mA', 'description': '0.001 Ampere', 'isFundamental': 'false'},
+      {'name': 'Volt', 'symbol': 'V', 'description': 'Unità SI per la tensione elettrica (J/C)', 'isFundamental': 'false'},
+      {'name': 'Ohm', 'symbol': 'Ω', 'description': 'Unità SI per la resistenza elettrica (V/A)', 'isFundamental': 'false'},
+      {'name': 'Farad', 'symbol': 'F', 'description': 'Unità SI per la capacità elettrica (C/V)', 'isFundamental': 'false'},
+    ],
+    'Intensità Luminosa': [
+      {'name': 'Candela', 'symbol': 'cd', 'description': 'Unità SI fondamentale', 'isFundamental': 'true'},
+    ],
+    'Quantità di Sostanza': [
+      {'name': 'Mole', 'symbol': 'mol', 'description': 'Unità SI fondamentale', 'isFundamental': 'true'},
+    ],
+    'Velocità': [
+      {'name': 'Metro al secondo', 'symbol': 'm/s', 'description': 'Unità SI derivata', 'isFundamental': 'false'},
+      {'name': 'Chilometro orario', 'symbol': 'km/h', 'description': 'Unità comune', 'isFundamental': 'false'},
+    ],
+    'Forza': [
+      {'name': 'Newton', 'symbol': 'N', 'description': 'kg·m/s²', 'isFundamental': 'false'},
+    ],
+    'Energia': [
+      {'name': 'Joule', 'symbol': 'J', 'description': 'N·m', 'isFundamental': 'false'},
+      {'name': 'Caloria', 'symbol': 'cal', 'description': '4.184 Joule', 'isFundamental': 'false'},
+      {'name': 'Elettronvolt', 'symbol': 'eV', 'description': '1.602×10⁻¹⁹ J', 'isFundamental': 'false'},
+    ],
+    'Potenza': [
+      {'name': 'Watt', 'symbol': 'W', 'description': 'J/s', 'isFundamental': 'false'},
+    ],
+    'Pressione': [
+      {'name': 'Pascal', 'symbol': 'Pa', 'description': 'N/m²', 'isFundamental': 'false'},
+      {'name': 'Bar', 'symbol': 'bar', 'description': '10⁵ Pa', 'isFundamental': 'false'},
+    ],
+    'Frequenza': [
+      {'name': 'Hertz', 'symbol': 'Hz', 'description': 'Cicli al secondo', 'isFundamental': 'false'},
+    ],
+  };
+
+  void _showFilterOptions(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      builder: (BuildContext bc) {
+        final colorScheme = Theme.of(context).colorScheme;
+        return StatefulBuilder(
+          builder: (BuildContext context, StateSetter setStateModal) {
+            return Container(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    'Opzioni di Filtro',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: colorScheme.primary,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Mostra solo Unità SI Fondamentali',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: colorScheme.onSurface,
+                        ),
+                      ),
+                      Switch(
+                        value: _showFundamentalOnly,
+                        onChanged: (bool value) {
+                          setStateModal(() {
+                            _showFundamentalOnly = value;
+                          });
+                          setState(() {});
+                        },
+                        activeColor: colorScheme.secondary,
+                        inactiveThumbColor: colorScheme.onSurface.withOpacity(0.5),
+                        inactiveTrackColor: colorScheme.onSurface.withOpacity(0.2),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-    });
-
     final colorScheme = Theme.of(context).colorScheme;
 
-    final Map<String, List<Map<String, String>>> units = {
-      'Lunghezza': [
-        {'name': 'Metro', 'symbol': 'm', 'description': 'Unità SI fondamentale'},
-        {'name': 'Chilometro', 'symbol': 'km', 'description': '1000 metri'},
-        {'name': 'Centimetro', 'symbol': 'cm', 'description': '0.01 metri'},
-        {'name': 'Millimetro', 'symbol': 'mm', 'description': '0.001 metri'},
-        {'name': 'Pollice', 'symbol': 'in', 'description': '2.54 cm'},
-        {'name': 'Piede', 'symbol': 'ft', 'description': '12 pollici'},
-      ],
-      'Massa': [
-        {'name': 'Chilogrammo', 'symbol': 'kg', 'description': 'Unità SI fondamentale'},
-        {'name': 'Grammo', 'symbol': 'g', 'description': '0.001 chilogrammi'},
-        {'name': 'Tonnellata', 'symbol': 't', 'description': '1000 chilogrammi'},
-        {'name': 'Libbra', 'symbol': 'lb', 'description': '0.453592 kg'},
-      ],
-      'Tempo': [
-        {'name': 'Secondo', 'symbol': 's', 'description': 'Unità SI fondamentale'},
-        {'name': 'Minuto', 'symbol': 'min', 'description': '60 secondi'},
-        {'name': 'Ora', 'symbol': 'h', 'description': '3600 secondi'},
-        {'name': 'Giorno', 'symbol': 'd', 'description': '24 ore'},
-      ],
-      'Temperatura': [
-        {'name': 'Kelvin', 'symbol': 'K', 'description': 'Unità SI fondamentale'},
-        {'name': 'Celsius', 'symbol': '°C', 'description': 'K - 273.15'},
-        {'name': 'Fahrenheit', 'symbol': '°F', 'description': '(°C × 9/5) + 32'},
-      ],
-      'Corrente Elettrica': [
-        {'name': 'Ampere', 'symbol': 'A', 'description': 'Unità SI fondamentale'},
-        {'name': 'Milliampere', 'symbol': 'mA', 'description': '0.001 Ampere'},
-      ],
-      'Intensità Luminosa': [
-        {'name': 'Candela', 'symbol': 'cd', 'description': 'Unità SI fondamentale'},
-      ],
-      'Quantità di Sostanza': [
-        {'name': 'Mole', 'symbol': 'mol', 'description': 'Unità SI fondamentale'},
-      ],
-      'Velocità': [
-        {'name': 'Metro al secondo', 'symbol': 'm/s', 'description': 'Unità SI derivata'},
-        {'name': 'Chilometro orario', 'symbol': 'km/h', 'description': 'Unità comune'},
-      ],
-      'Forza': [
-        {'name': 'Newton', 'symbol': 'N', 'description': 'kg·m/s²'},
-      ],
-      'Energia': [
-        {'name': 'Joule', 'symbol': 'J', 'description': 'N·m'},
-        {'name': 'Caloria', 'symbol': 'cal', 'description': '4.184 Joule'},
-        {'name': 'Elettronvolt', 'symbol': 'eV', 'description': '1.602×10⁻¹⁹ J'},
-      ],
-      'Potenza': [
-        {'name': 'Watt', 'symbol': 'W', 'description': 'J/s'},
-      ],
-      'Pressione': [
-        {'name': 'Pascal', 'symbol': 'Pa', 'description': 'N/m²'},
-        {'name': 'Bar', 'symbol': 'bar', 'description': '10⁵ Pa'},
-      ],
-      'Frequenza': [
-        {'name': 'Hertz', 'symbol': 'Hz', 'description': 'Cicli al secondo'},
-      ],
-      'Tensione Elettrica': [
-        {'name': 'Volt', 'symbol': 'V', 'description': 'J/C'},
-      ],
-      'Resistenza Elettrica': [
-        {'name': 'Ohm', 'symbol': 'Ω', 'description': 'V/A'},
-      ],
-      'Capacità Elettrica': [
-        {'name': 'Farad', 'symbol': 'F', 'description': 'C/V'},
-      ],
-    };
+    final Map<String, List<Map<String, String>>> filteredUnits = _showFundamentalOnly
+        ? Map.fromEntries(units.entries.map((entry) {
+      final fundamentalUnitsInCategory = entry.value
+          .where((unit) => unit['isFundamental'] == 'true')
+          .toList();
+      return MapEntry(entry.key, fundamentalUnitsInCategory);
+    }).where((entry) => entry.value.isNotEmpty))
+        : units;
 
     return PopScope(
       canPop: true,
-      onPopInvoked: (didPop) {
+      onPopInvokedWithResult: (bool didPop, dynamic result) async {
         if (didPop) {
         }
       },
@@ -94,20 +153,33 @@ class UnitsListPage extends StatelessWidget {
           title: const Text('Lista Unità di Misura'),
           backgroundColor: colorScheme.primaryContainer,
           iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
+          actions: [
+            IconButton(
+              icon: Icon(
+                _showFundamentalOnly ? Icons.filter_alt_off : Icons.filter_alt,
+                color: colorScheme.onPrimaryContainer,
+              ),
+              onPressed: () => _showFilterOptions(context),
+            ),
+          ],
         ),
         body: ListView.builder(
           padding: const EdgeInsets.all(16.0),
-          itemCount: units.keys.length,
+          itemCount: filteredUnits.keys.length,
           itemBuilder: (context, categoryIndex) {
-            final categoryName = units.keys.elementAt(categoryIndex);
-            final unitList = units[categoryName]!;
+            final categoryName = filteredUnits.keys.elementAt(categoryIndex);
+            final unitList = filteredUnits[categoryName]!;
+
+            if (unitList.isEmpty) {
+              return const SizedBox.shrink();
+            }
 
             return Card(
               margin: const EdgeInsets.only(bottom: 16.0),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
               elevation: 2,
               child: ExpansionTile(
-                initiallyExpanded: true,
+                initiallyExpanded: false,
                 title: Text(
                   categoryName,
                   style: TextStyle(
@@ -117,6 +189,7 @@ class UnitsListPage extends StatelessWidget {
                   ),
                 ),
                 children: unitList.map((unit) {
+                  final isFundamental = unit['isFundamental'] == 'true';
                   return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                     child: Column(
@@ -130,8 +203,8 @@ class UnitsListPage extends StatelessWidget {
                               unit['name']!,
                               style: TextStyle(
                                 fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                                color: colorScheme.onSurface,
+                                fontWeight: isFundamental ? FontWeight.w900 : FontWeight.w600,
+                                color: isFundamental ? colorScheme.secondary : colorScheme.onSurface,
                               ),
                             ),
                             const SizedBox(width: 8),
@@ -140,7 +213,7 @@ class UnitsListPage extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 14,
                                 fontStyle: FontStyle.italic,
-                                color: colorScheme.onSurfaceVariant,
+                                color: isFundamental ? colorScheme.secondary : colorScheme.onSurfaceVariant,
                               ),
                             ),
                           ],
@@ -150,7 +223,7 @@ class UnitsListPage extends StatelessWidget {
                           unit['description']!,
                           style: TextStyle(
                             fontSize: 14,
-                            color: colorScheme.onSurfaceVariant,
+                            color: isFundamental ? colorScheme.secondary.withOpacity(0.9) : colorScheme.onSurfaceVariant,
                           ),
                         ),
                         if (unitList.last != unit)
