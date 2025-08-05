@@ -3,7 +3,7 @@
     "id": "REL_001",
     "categoria": "Relatività",
     "sottocategoria": "Postulati della Relatività Ristretta",
-    "titolo": "Postulati della Relatività Ristretta",
+    "titolo": "Postulati della relatività ristretta",
     "formula_latex": "\\begin{alignedat}{1} &\\text{Relatività ristretta} \\\\ &\\text{Invarianza della velocità della luce} \\end{alignedat}",
     "descrizione": "La teoria della relatività ristretta di Einstein si basa su due postulati fondamentali:\n\n1. Le leggi della fisica sono le stesse in tutti i sistemi di riferimento inerziali (**Principio di relatività ristretta**).\n\n2. La velocità della luce nel vuoto è costante per tutti gli osservatori inerziali, indipendentemente dal moto della sorgente o dell'osservatore (**Principio di invarianza della velocità della luce**). \n\nUn **sistema di riferimento inerziale** è un sistema in cui un oggetto non soggetto a forze si muove a velocità costante (oppure resta fermo).",
     "variabili": [],
@@ -11,20 +11,20 @@
     "link_correlati": ["REL_002", "REL_003", "REL_004"],
     "parole_chiave": ["postulati", "Einstein", "relatività ristretta", "sistema inerziale", "velocità della luce"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_002",
     "categoria": "Relatività",
     "sottocategoria": "Dilatazione Temporale",
-    "titolo": "Dilatazione dei Tempi",
+    "titolo": "Dilatazione dei tempi",
     "formula_latex": "\\Delta t = \\frac{\\Delta t_0}{\\sqrt{1 - \\frac{v^2}{c^2}}} = \\gamma \\Delta t_0",
-    "descrizione": "Un intervallo di tempo $t_0$ misurato in un sistema in quiete risulta più breve rispetto al tempo $t$ misurato da un osservatore che vede l'orologio muoversi con velocità $v$. Questo effetto è noto come dilatazione del tempo.",
+    "descrizione": "La dilatazione dei tempi indica che il tempo misurato da un osservatore che vede un fenomeno in movimento (velocità relativa $v$) è più lungo rispetto al tempo proprio, quello registrato dal sistema solidale con il fenomeno. Il fattore $\\gamma$ (maggiore di 1) quantifica quanto il tempo rallenta in funzione della velocità relativa.\n\nSe qualcosa si muove molto velocemente rispetto a un osservatore, essa 'vive' meno tempo: agli occhi dell’osservatore, il suo orologio scorre più lentamente. La differenza diventa significativa solo a velocità prossime a quella della luce.",
     "variabili": [
-      { "simbolo": "$t$", "descrizione": "Tempo dilatato (osservatore in moto)", "unita": "s" },
-      { "simbolo": "$t_0$", "descrizione": "Tempo proprio (sistema in quiete)", "unita": "s" },
-      { "simbolo": "$v$", "descrizione": "Velocità relativa", "unita": "m/s" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" }
+      { "simbolo": "t", "descrizione": "Tempo dilatato (osservatore in moto)", "unita": "s" },
+      { "simbolo": "t_0", "descrizione": "Tempo proprio (sistema in quiete)", "unita": "s" },
+      { "simbolo": "v", "descrizione": "Velocità relativa", "unita": "\\frac{m}{s}" },
+      { "simbolo": "c", "descrizione": "Velocità della luce", "unita": "\\frac{m}{s}" }
     ],
     "esempi": [
       {
@@ -35,20 +35,20 @@
     "link_correlati": ["REL_003", "REL_004"],
     "parole_chiave": ["dilatazione", "tempo", "relatività ristretta", "effetti relativistici", "c"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_003",
     "categoria": "Relatività",
     "sottocategoria": "Contrazione delle Lunghezze",
-    "titolo": "Contrazione delle Lunghezze",
+    "titolo": "Contrazione delle lunghezze",
     "formula_latex": "\\Delta x = \\Delta x_0 \\sqrt{1 - \\frac{v^2}{c^2}} = \\frac{\\Delta x_0}{\\gamma}",
-    "descrizione": "La lunghezza $Delta x$ di un oggetto in movimento rispetto a un osservatore risulta contratta rispetto alla lunghezza propria $Delta x_0$, misurata nel sistema dove l'oggetto è fermo.",
+    "descrizione": "La contrazione delle lunghezze è un fenomeno relativistico per cui un oggetto in moto uniforme rispetto a un osservatore appare più corto lungo la direzione del moto rispetto alla sua lunghezza misurata a riposo.\n\nQuando un oggetto si muove a velocità prossime a quella della luce, la sua lunghezza lungo la direzione del moto sembra ridursi per un osservatore fermo. Questo effetto non è percepibile a velocità ordinarie, ma diventa significativo solo con velocità molto elevate.",
     "variabili": [
-      { "simbolo": "$Delta x$", "descrizione": "Lunghezza contratta (osservata)", "unita": "m" },
-      { "simbolo": "$Delta x_0$", "descrizione": "Lunghezza propria (a riposo)", "unita": "m" },
-      { "simbolo": "$v$", "descrizione": "Velocità relativa", "unita": "m/s" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" }
+      { "simbolo": "Delta x", "descrizione": "Lunghezza contratta (osservata)", "unita": "m" },
+      { "simbolo": "Delta x_0", "descrizione": "Lunghezza propria (a riposo)", "unita": "m" },
+      { "simbolo": "v", "descrizione": "Velocità relativa", "unita": "\\frac{m}{s}" },
+      { "simbolo": "c", "descrizione": "Velocità della luce", "unita": "\\frac{m}{s}" }
     ],
     "esempi": [
       {
@@ -59,7 +59,7 @@
     "link_correlati": ["REL_002", "REL_004"],
     "parole_chiave": ["contrazione", "lunghezza", "relatività", "oggetti in movimento"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_004",
@@ -69,68 +69,83 @@
     "formula_latex": "\\begin{aligned} \\left\\{ \\begin{aligned} x' &= \\gamma (x - vt) \\\\ y' &= y \\\\ z' &= z \\\\ t' &= \\gamma \\left(t - \\frac{vx}{c^2}\\right) \\end{aligned} \\right. \\\\[1ex] \\left\\{ \\begin{aligned} x &= \\gamma (x' + vt') \\\\ y &= y' \\\\ z &= z' \\\\ t &= \\gamma \\left(t' + \\frac{vx'}{c^2}\\right) \\end{aligned} \\right. \\end{aligned}",
     "descrizione": "Le trasformazioni di Lorentz permettono di passare dalle coordinate spazio-temporali di un evento misurato in un sistema di riferimento inerziale S a quelle misurate in un altro sistema S' che si muove con velocità costante $v$ rispetto al primo. Queste trasformazioni preservano l’**invarianza della velocità della luce**.",
     "variabili": [
-      { "simbolo": "$x, t$", "descrizione": "Coordinate in S", "unita": "m, s" },
-      { "simbolo": "$x', t'$", "descrizione": "Coordinate in S'", "unita": "m, s" },
-      { "simbolo": "$v$", "descrizione": "Velocità relativa tra i sistemi", "unita": "m/s" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "-" }
+      { "simbolo": "x, t", "descrizione": "Coordinate in S", "unita": "m, s" },
+      { "simbolo": "x', t'", "descrizione": "Coordinate in S'", "unita": "m, s" },
+      { "simbolo": "v", "descrizione": "Velocità relativa tra i sistemi", "unita": "\\frac{m}{s}" },
+      { "simbolo": "\\gamma", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "\\text{adimensionale}" }
     ],
     "esempi": [],
     "link_correlati": ["REL_002", "REL_003"],
     "parole_chiave": ["Lorentz", "trasformazioni", "relatività", "cambi di riferimento"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_005",
     "categoria": "Relatività",
     "sottocategoria": "Energia",
-    "titolo": "Energia Relativistica",
+    "titolo": "Energia relativistica",
     "formula_latex": "E = \\frac{m_0 c^2}{\\sqrt{1 - \\frac{v^2}{c^2}}} = \\gamma m_0 c^2",
-    "descrizione": "L’energia totale di un corpo in moto secondo la relatività ristretta è data da $E = \\gamma m_0 c^2$, dove $\\gamma$ è il fattore di Lorentz. Questa formula generalizza la famosa equazione $E = mc^2$, che si ottiene nel caso particolare in cui il corpo è fermo. L’energia relativistica include sia l’energia cinetica sia l’energia a riposo.",
+    "descrizione": "L’energia relativistica esprime l’energia totale di una particella in moto, includendo sia l’energia a riposo sia quella dovuta al movimento. Aumentando la velocità, cresce in modo non lineare, diverge quando si avvicina alla velocità della luce.\n\nUn corpo in movimento possiede più energia rispetto a quando è fermo, e questa differenza non può essere spiegata dalla sola energia cinetica classica. La relatività mostra che la massa a riposo è solo una parte dell’energia totale, che cresce enormemente a velocità molto alte.",
     "variabili": [
-      { "simbolo": "$E$", "descrizione": "Energia totale relativistica", "unita": "J" },
-      { "simbolo": "$m_0$", "descrizione": "Massa a riposo", "unita": "kg" },
-      { "simbolo": "$v$", "descrizione": "Velocità", "unita": "m/s" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "-" }
+      { "simbolo": "E", "descrizione": "Energia totale relativistica", "unita": "J" },
+      { "simbolo": "m_0", "descrizione": "Massa a riposo", "unita": "kg" },
+      { "simbolo": "v", "descrizione": "Velocità", "unita": "\\frac{m}{s}" },
+      { "simbolo": "c", "descrizione": "Velocità della luce", "unita": "\\frac{m}{s}" },
+      { "simbolo": "\\gamma", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "\\text{adimensionale}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un elettrone accelerato in un acceleratore di particelle raggiunge velocità prossime a $c$: la sua energia diventa migliaia di volte superiore a quella che avrebbe se fosse fermo. Questo concetto è fondamentale per comprendere la fisica delle alte energie."
+      }
+    ],
     "link_correlati": ["REL_006", "REL_007"],
     "parole_chiave": ["energia relativistica", "E = γmc²", "Einstein", "massa e energia"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_006",
     "categoria": "Relatività",
     "sottocategoria": "Dinamica Relativistica",
-    "titolo": "Forza Relativistica",
+    "titolo": "Forza relativistica",
     "formula_latex": "\\vec{F} = \\frac{d\\vec{p}}{dt}",
-    "descrizione": "Nella relatività ristretta, la forza è definita come la derivata temporale della quantità di moto relativistica. La relazione tra forza e accelerazione dipende dalla direzione della forza rispetto alla velocità.",
+    "descrizione": "La forza relativistica è definita come la variazione temporale della quantità di moto relativistica. In ambito relativistico, la quantità di moto $\\vec{p}$ include la dipendenza dalla velocità tramite il fattore $\\gamma$, quindi la relazione tra forza e accelerazione non è più lineare come nella seconda legge di Newton classica.\n\nQuando un oggetto si muove a velocità molto elevate, applicare una forza produce effetti diversi rispetto alla fisica classica: l’aumento della velocità rallenta man mano, perché cresce anche la massa inerziale apparente.",
     "variabili": [
-      { "simbolo": "$\\vec{F}$", "descrizione": "Forza", "unita": "N" },
-      { "simbolo": "$\\vec{p}$", "descrizione": "Quantità di moto relativistica", "unita": "kg·m/s" }
+      { "simbolo": "\\vec{F}", "descrizione": "Forza", "unita": "N" },
+      { "simbolo": "\\vec{p}", "descrizione": "Quantità di moto relativistica", "unita": "kg \\cdot m/s" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "In un acceleratore di particelle, per aumentare ancora la velocità di una particella già molto veloce serve una forza sempre maggiore, anche se l’accelerazione ottenuta è sempre più piccola. La legge classica $F = ma$ non vale più direttamente: si deve usare la definizione relativistica."
+      }
+    ],
     "link_correlati": ["REL_005"],
     "parole_chiave": ["forza relativistica", "dinamica relativistica", "F = dp/dt"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_007",
     "categoria": "Relatività",
     "sottocategoria": "Dinamica Relativistica",
-    "titolo": "Accelerazione Relativistica",
+    "titolo": "Accelerazione relativistica",
     "formula_latex": "a = \\frac{F}{\\gamma^3 m_0}",
     "descrizione": "Nella relatività, la relazione tra forza e accelerazione dipende dalla direzione. Se la forza è parallela alla velocità, l'accelerazione è ridotta dal fattore $\\gamma^3$.",
     "variabili": [
-      { "simbolo": "$a$", "descrizione": "Accelerazione", "unita": "m/s^2" },
-      { "simbolo": "$F$", "descrizione": "Forza applicata", "unita": "N" },
-      { "simbolo": "$m_0$", "descrizione": "Massa a riposo", "unita": "kg" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz", "unita": "-" }
+      { "simbolo": "a", "descrizione": "Accelerazione", "unita": "\\frac{m}{s^2}" },
+      { "simbolo": "F", "descrizione": "Forza applicata", "unita": "N" },
+      { "simbolo": "m_0", "descrizione": "Massa a riposo", "unita": "kg" },
+      { "simbolo": "\\gamma", "descrizione": "Fattore di Lorentz", "unita": "\\text{adimensionale}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "In un acceleratore di particelle, per aumentare ancora la velocità di una particella già molto veloce serve una forza sempre maggiore, anche se l’accelerazione ottenuta è sempre più piccola. La legge classica $F = ma$ non vale più direttamente: si deve usare la definizione relativistica."
+      }
+    ],
     "link_correlati": ["REL_006"],
     "parole_chiave": ["accelerazione", "relatività", "dinamica"],
     "data_creazione": "2025-07-14",
@@ -140,158 +155,183 @@
     "id": "REL_008",
     "categoria": "Relatività",
     "sottocategoria": "Effetti relativistici",
-    "titolo": "Effetto Doppler Relativistico",
+    "titolo": "Effetto doppler relativistico",
     "formula_latex": "f = f_0 \\sqrt{\\frac{1 \\pm v/c}{1 \\mp v/c}}",
     "descrizione": "L'effetto Doppler relativistico descrive come varia la frequenza di un'onda (ad esempio luminosa) percepita da un osservatore quando la sorgente si muove rispetto a lui.\n\nSe la sorgente si **avvicina**, la frequenza osservata aumenta (spostamento verso il blu).\nSe la sorgente si **allontana**, la frequenza osservata diminuisce (spostamento verso il rosso, o **redshift**).\n\nIl redshift è un fenomeno osservato ad esempio nella luce proveniente da galassie lontane, che si allontanano da noi a causa dell'espansione dell’universo.",
     "variabili": [
-      { "simbolo": "$f$", "descrizione": "Frequenza osservata", "unita": "Hz" },
-      { "simbolo": "$f_0$", "descrizione": "Frequenza emessa", "unita": "Hz" },
-      { "simbolo": "$v$", "descrizione": "Velocità relativa", "unita": "m/s" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" }
+      { "simbolo": "f", "descrizione": "Frequenza osservata", "unita": "Hz" },
+      { "simbolo": "f_0", "descrizione": "Frequenza emessa", "unita": "Hz" },
+      { "simbolo": "v", "descrizione": "Velocità relativa", "unita": "\\frac{m}{s}" },
+      { "simbolo": "c", "descrizione": "Velocità della luce", "unita": "\\frac{m}{s}" }
     ],
     "esempi": [],
     "link_correlati": ["REL_002"],
     "parole_chiave": ["doppler", "frequenza", "spostamento verso il rosso", "relatività"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_009",
     "categoria": "Relatività",
     "sottocategoria": "Spaziotempo",
-    "titolo": "Intervallo Invariante",
+    "titolo": "Intervallo invariante",
     "formula_latex": "\\sigma^2 = c^2 \\Delta t^2 - \\Delta x^2 - \\Delta y^2 - \\Delta z^2 = c^2 \\Delta t^2 - (\\Delta s)^2",
-    "descrizione": "L'intervallo spaziotemporale $s^2$ tra due eventi è una quantità invariante nelle trasformazioni di Lorentz. È analogo alla distanza tra due punti nello spazio euclideo, ma con segno diverso per il termine temporale.",
+    "descrizione": "L’intervallo invariante è una grandezza fondamentale nella relatività ristretta: rappresenta una combinazione tra distanza spaziale e intervallo temporale tra due eventi che rimane costante per tutti gli osservatori inerziali, indipendentemente dal sistema di riferimento.\n\nAnche se spazio e tempo cambiano per osservatori in moto relativo, il valore dell’intervallo invariante tra due eventi resta lo stesso per tutti. Questo vincolo riflette la struttura geometrica dello spaziotempo.",
     "variabili": [
-    { "simbolo": "$\\sigma$", "descrizione": "Intervallo invariante spaziotemporale", "unita": "m" },
-    { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo tra gli eventi", "unita": "s" },
-    { "simbolo": "$\\Delta x, \\Delta y, \\Delta z$", "descrizione": "Differenze spaziali tra gli eventi", "unita": "m" },
-    { "simbolo": "$\\Delta s$", "descrizione": "Distanza spaziale totale ($\\Delta s^2 = \\Delta x^2 + \\Delta y^2 + \\Delta z^2$)", "unita": "m" },
-    { "simbolo": "$c$", "descrizione": "Velocità della luce nel vuoto", "unita": "m/s" }
-  ],
-    "esempi": [],
+      { "simbolo": "\\sigma", "descrizione": "Intervallo invariante spaziotemporale", "unita": "m" },
+      { "simbolo": "\\Delta t", "descrizione": "Intervallo di tempo tra gli eventi", "unita": "s" },
+      { "simbolo": "\\Delta x, \\Delta y, \\Delta z", "descrizione": "Differenze spaziali tra gli eventi", "unita": "m" },
+      { "simbolo": "\\Delta s", "descrizione": "Distanza spaziale totale ($\\Delta s^2 = \\Delta x^2 + \\Delta y^2 + \\Delta z^2$)", "unita": "m" },
+      { "simbolo": "c", "descrizione": "Velocità della luce nel vuoto", "unita": "\\frac{m}{s}" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due lampi osservati da persone in movimento e a riposo possono sembrare avvenuti in luoghi e tempi diversi, ma l’intervallo invariante tra essi resta identico: ciò garantisce coerenza nelle leggi fisiche da ogni punto di vista."
+      }
+    ],
     "link_correlati": ["REL_004"],
     "parole_chiave": ["intervallo", "spaziotempo", "invarianza", "relatività"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_010",
     "categoria": "Relatività",
-    "sottocategoria": "Cinematica Relativistica",
-    "titolo": "Leggi di Composizione delle Velocità",
+    "sottocategoria": "Cinematica relativistica",
+    "titolo": "Leggi di composizione delle velocità",
     "formula_latex": "\\begin{aligned} u'_x &= \\frac{u_x - v}{1 - \\frac{u_x v}{c^2}} \\\\ u'_y &= \\frac{u_y}{\\gamma \\left(1 - \\frac{u_x v}{c^2}\\right)} \\\\ u'_z &= \\frac{u_z}{\\gamma \\left(1 - \\frac{u_x v}{c^2}\\right)} \\end{aligned}",
-    "descrizione": "La velocità relativa tra due oggetti non si somma semplicemente come nella meccanica classica. Questa formula permette di comporre le velocità lungo una stessa direzione nella relatività ristretta.",
+    "descrizione": "Le leggi di composizione relativistica delle velocità descrivono come le componenti della velocità di un oggetto si trasformano da un sistema di riferimento all’altro in moto relativo. Rispetto alla composizione classica, tengono conto dei limiti imposti dalla velocità della luce.\n\nQuando si sommano velocità in relatività, non basta aggiungerle direttamente: serve una correzione per garantire che il risultato non superi la velocità della luce. Le trasformazioni dipendono dalla direzione del moto e diventano rilevanti solo a velocità molto elevate.",
     "variabili": [
-      { "simbolo": "$u_x, u_y, u_z$", "descrizione": "Componenti della velocità nel sistema S", "unita": "m/s" },
-      { "simbolo": "$u'_x, u'_y, u'_z$", "descrizione": "Componenti della velocità nel sistema S'", "unita": "m/s" },
-      { "simbolo": "$v$", "descrizione": "Velocità relativa tra S e S', lungo l'asse x", "unita": "m/s" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "-" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce nel vuoto", "unita": "m/s" }
+      { "simbolo": "u_x, u_y, u_z", "descrizione": "Componenti della velocità nel sistema S", "unita": "\\frac{m}{s}" },
+      { "simbolo": "u'_x, u'_y, u'_z", "descrizione": "Componenti della velocità nel sistema S'", "unita": "\\frac{m}{s}" },
+      { "simbolo": "v", "descrizione": "Velocità relativa tra S e S', lungo l'asse x", "unita": "\\frac{m}{s}" },
+      { "simbolo": "\\gamma", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "\\text{adimensionale}" },
+      { "simbolo": "c", "descrizione": "Velocità della luce nel vuoto", "unita": "\\frac{m}{s}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se una navicella si muove a $0{,}9c$ e spara un proiettile a $0{,}3c$ rispetto ad essa, un osservatore esterno non lo vedrà muoversi a $1{,}2c$, ma a una velocità inferiore, calcolata secondo queste leggi: il risultato sarà sempre minore di $c$, rispettando i principi della relatività."
+      }
+    ],
     "link_correlati": ["REL_004"],
     "parole_chiave": ["composizione velocità", "cinematica relativistica", "trasformazione velocità"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_011",
     "categoria": "Relatività",
     "sottocategoria": "Energia",
-    "titolo": "Energia Cinetica Relativistica",
+    "titolo": "Energia cinetica relativistica",
     "formula_latex": "K = (\\gamma - 1) m_0 c^2",
-    "descrizione": "L'energia cinetica relativistica è la differenza tra l’energia totale $E = \\gamma m_0 c^2$ e l’energia a riposo $m_0 c^2$. A basse velocità si riduce alla formula classica $\\frac{1}{2}mv^2$.",
+    "descrizione": "L’energia cinetica relativistica rappresenta la differenza tra l’energia totale di un corpo in movimento e la sua energia a riposo. A differenza della formula classica, include gli effetti relativistici che diventano significativi a velocità vicine a quella della luce.\n\nQuando un corpo si muove molto velocemente, la sua energia cinetica cresce in modo molto più rapido rispetto a quanto previsto dalla meccanica classica. Serve una quantità sempre maggiore di energia per aumentare anche di poco la velocità.",
     "variabili": [
-      { "simbolo": "$K$", "descrizione": "Energia cinetica", "unita": "J" },
-      { "simbolo": "$m_0$", "descrizione": "Massa a riposo", "unita": "kg" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "-" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" }
+      { "simbolo": "K", "descrizione": "Energia cinetica", "unita": "J" },
+      { "simbolo": "m_0", "descrizione": "Massa a riposo", "unita": "kg" },
+      { "simbolo": "\\gamma", "descrizione": "Fattore di Lorentz ($\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$)", "unita": "\\text{adimensionale}" },
+      { "simbolo": "c", "descrizione": "Velocità della luce", "unita": "\\frac{m}{s}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un protone accelerato fino a $0{,}99c$ ha un’energia cinetica circa pari a $6{,}5$ volte la sua energia a riposo, nonostante non abbia ancora raggiunto la velocità della luce. Questo è uno dei motivi per cui negli acceleratori è necessario fornire enormi quantità di energia per raggiungere alte velocità."
+      }
+    ],
     "link_correlati": ["REL_005"],
     "parole_chiave": ["energia cinetica", "relatività", "Lorentz", "E = γmc²"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_012",
     "categoria": "Relatività",
     "sottocategoria": "Dinamica Relativistica",
-    "titolo": "Quantità di Moto Relativistica",
+    "titolo": "Quantità di moto relativistica",
     "formula_latex": "\\vec{p} = \\gamma m_0 \\vec{v}",
-    "descrizione": "Nella relatività ristretta, la quantità di moto dipende dal fattore di Lorentz. Aumenta molto rapidamente per velocità prossime a quella della luce.",
+    "descrizione": "La quantità di moto relativistica estende il concetto classico includendo un fattore correttivo che cresce con la velocità. Questo garantisce la conservazione della quantità di moto anche a velocità prossime a quella della luce.\n\nA velocità basse, questa espressione coincide con quella classica. Ma quando la velocità aumenta, la quantità di moto cresce più rapidamente, perché la massa inerziale sembra aumentare. Ciò impedisce a qualsiasi oggetto con massa a riposo di raggiungere la velocità della luce.",
     "variabili": [
-      { "simbolo": "$\\vec{p}$", "descrizione": "Quantità di moto", "unita": "kg·m/s" },
-      { "simbolo": "$m_0$", "descrizione": "Massa a riposo", "unita": "kg" },
-      { "simbolo": "$\\vec{v}$", "descrizione": "Velocità", "unita": "m/s" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz", "unita": "-" }
+      { "simbolo": "\\vec{p}", "descrizione": "Quantità di moto", "unita": "kg \\cdot m/s" },
+      { "simbolo": "m_0", "descrizione": "Massa a riposo", "unita": "kg" },
+      { "simbolo": "\\vec{v}", "descrizione": "Velocità", "unita": "\\frac{m}{s}" },
+      { "simbolo": "\\gamma", "descrizione": "Fattore di Lorentz", "unita": "\\text{adimensionale}" }
     ],
     "esempi": [],
     "link_correlati": ["REL_005", "REL_006"],
     "parole_chiave": ["quantità di moto", "relativistica", "p = γmv"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_013",
     "categoria": "Relatività",
     "sottocategoria": "Quadrivettori",
-    "titolo": "Quadrivettore Energia-Quantità di Moto",
+    "titolo": "Quadrivettore energia-quantità di moto",
     "formula_latex": "E^2 = m_0^2 c^4 + p^2 c^2",
-    "descrizione": "Il quadrivettore energia-quantità di moto è un'entità a quattro componenti che combina energia e quantità di moto in un’unica grandezza relativisticamente invariante.",
+    "descrizione": "L’equazione esprime la relazione fondamentale tra energia totale, quantità di moto e massa a riposo di una particella. È una formulazione compatta che unisce energia e quantità di moto in un’unica espressione relativistica.\n\nQuesta relazione mostra che anche una particella ferma ha energia (energia a riposo), mentre l’energia totale aumenta con la quantità di moto. È la base per comprendere fenomeni come la produzione di particelle e la loro dinamica a velocità elevate.",
     "variabili": [
-      { "simbolo": "$\\vec{P}$", "descrizione": "Quadrivettore energia-momento: $\\left( \\frac{E}{c}, \\vec{p} \\right)$", "unita": "kg·m/s" },
-      { "simbolo": "$E$", "descrizione": "Energia totale relativistica", "unita": "J" },
-      { "simbolo": "$\\vec{p}$", "descrizione": "Quantità di moto relativistica", "unita": "kg·m/s" },
-      { "simbolo": "$p$", "descrizione": "Modulo della quantità di moto", "unita": "kg·m/s" },
-      { "simbolo": "$m_0$", "descrizione": "Massa a riposo", "unita": "kg" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce nel vuoto", "unita": "m/s" }
+      { "simbolo": "\\vec{P}", "descrizione": "Quadrivettore energia-momento: $\\left( \\frac{E}{c}, \\vec{p} \\right)$", "unita": "kg \\cdot m/s" },
+      { "simbolo": "E", "descrizione": "Energia totale relativistica", "unita": "J" },
+      { "simbolo": "\\vec{p}", "descrizione": "Quantità di moto relativistica", "unita": "kg \\cdot m/s" },
+      { "simbolo": "p", "descrizione": "Modulo della quantità di moto", "unita": "kg \\cdot m/s" },
+      { "simbolo": "m_0", "descrizione": "Massa a riposo", "unita": "kg" },
+      { "simbolo": "c", "descrizione": "Velocità della luce nel vuoto", "unita": "\\frac{m}{s}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Per un fotone, che ha massa a riposo nulla ($m_0 = 0$), la formula si riduce a $E = pc$, confermando che tutta l’energia è dovuta alla quantità di moto. Invece per un elettrone in movimento, sia la massa a riposo che la quantità di moto contribuiscono all’energia totale."
+      }
+    ],
     "link_correlati": ["REL_005", "REL_011"],
     "parole_chiave": ["quadrivettore", "energia", "momento", "relatività"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_014",
     "categoria": "Relatività",
     "sottocategoria": "Trasformazioni",
-    "titolo": "Trasformazioni per Energia e Quantità di Moto",
+    "titolo": "Trasformazioni per energia e quantità di moto",
     "formula_latex": "\\begin{aligned} E' &= \\gamma (E - vp_x) \\\\ p'_x &= \\gamma \\left(p_x - \\frac{vE}{c^2}\\right) \\\\ p'_y &= p_y \\\\ p'_z &= p_z \\end{aligned}",
-    "descrizione": "Queste equazioni permettono di trasformare l'energia e le componenti della quantità di moto tra due sistemi di riferimento inerziali in moto relativo lungo l'asse x.",
+    "descrizione": "Le trasformazioni mostrano come energia e quantità di moto di una particella si modificano passando da un sistema di riferimento a un altro in moto relativo. Sono l’equivalente relativistico delle trasformazioni di coordinate e mantengono la coerenza delle leggi fisiche.\n\nPoiché energia e quantità di moto sono legate fra loro nel quadrivettore relativistico, muovendosi con velocità diverse si osservano valori differenti. Queste formule permettono di calcolare i nuovi valori in modo da rispettare i principi di conservazione e la struttura dello spaziotempo.",
     "variabili": [
-      { "simbolo": "$E, E'$", "descrizione": "Energia totale nei sistemi S e S'", "unita": "J" },
-      { "simbolo": "$p_x, p_y, p_z$", "descrizione": "Componenti della quantità di moto in S", "unita": "kg·m/s" },
-      { "simbolo": "$v$", "descrizione": "Velocità relativa", "unita": "m/s" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz", "unita": "-" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" }
+      { "simbolo": "E, E'", "descrizione": "Energia totale nei sistemi S e S'", "unita": "J" },
+      { "simbolo": "p_x, p_y, p_z", "descrizione": "Componenti della quantità di moto in S", "unita": "kg \\cdot m/s" },
+      { "simbolo": "v", "descrizione": "Velocità relativa", "unita": "\\frac{m}{s}" },
+      { "simbolo": "\\gamma", "descrizione": "Fattore di Lorentz", "unita": "\\text{adimensionale}" },
+      { "simbolo": "c", "descrizione": "Velocità della luce", "unita": "\\frac{m}{s}" }
     ],
     "esempi": [],
     "link_correlati": ["REL_012"],
     "parole_chiave": ["trasformazioni", "energia", "momento", "relatività"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "REL_015",
     "categoria": "Relatività",
     "sottocategoria": "Elettromagnetismo e Relatività",
-    "titolo": "Trasformazioni del Campo Elettromagnetico",
+    "titolo": "Trasformazioni del campo elettromagnetico",
     "formula_latex": "\\begin{aligned} E'_x &= E_x \\\\ E'_y &= \\gamma (E_y - vB_z) \\\\ E'_z &= \\gamma (E_z + vB_y) \\\\ B'_x &= B_x \\\\ B'_y &= \\gamma \\left(B_y + \\frac{vE_z}{c^2}\\right) \\\\ B'_z &= \\gamma \\left(B_z - \\frac{vE_y}{c^2}\\right) \\end{aligned}",
-    "descrizione": "Le componenti del campo elettrico e magnetico si trasformano tra sistemi in moto relativo secondo le equazioni di Lorentz. Questo mostra l’unificazione tra elettricità e magnetismo.",
+    "descrizione": "Le trasformazioni mostrano come i campi elettrico e magnetico osservati cambiano passando da un sistema di riferimento a un altro in moto relativo. Esse riflettono la natura unificata del campo elettromagnetico in relatività.\n\nA causa del moto relativo, un campo puramente elettrico o magnetico in un sistema può apparire come una combinazione di entrambi in un altro sistema. Queste relazioni tengono conto della velocità relativa e permettono di tradurre correttamente le misure di campo tra osservatori diversi.",
     "variabili": [
-      { "simbolo": "$E_x, E_y, E_z$", "descrizione": "Componenti del campo elettrico in S", "unita": "V/m" },
-      { "simbolo": "$B_x, B_y, B_z$", "descrizione": "Componenti del campo magnetico in S", "unita": "T" },
-      { "simbolo": "$v$", "descrizione": "Velocità relativa", "unita": "m/s" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fattore di Lorentz", "unita": "" }
+      { "simbolo": "E_x, E_y, E_z", "descrizione": "Componenti del campo elettrico in S", "unita": "\\frac{V}{m}" },
+      { "simbolo": "B_x, B_y, B_z", "descrizione": "Componenti del campo magnetico in S", "unita": "T" },
+      { "simbolo": "v", "descrizione": "Velocità relativa", "unita": "\\frac{m}{s}" },
+      { "simbolo": "c", "descrizione": "Velocità della luce", "unita": "\\frac{m}{s}" },
+      { "simbolo": "\\gamma", "descrizione": "Fattore di Lorentz", "unita": "\\text{adimensionale}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un elettrone in un campo magnetico stazionario percepirà, da un sistema in moto rispetto a lui, anche un campo elettrico generato dalle trasformazioni, influenzando il suo moto in modo diverso a seconda del sistema di riferimento scelto"
+      }
+    ],
     "link_correlati": [],
     "parole_chiave": ["campo elettrico", "campo magnetico", "trasformazioni", "elettromagnetismo"],
     "data_creazione": "2025-07-14",
-    "data_ultima_modifica": "2025-07-14"
+    "data_ultima_modifica": "2025-07-30"
   }
 ]

@@ -4,17 +4,17 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Induzione Elettromagnetica",
     "titolo": "Legge di Faraday-Neumann-Lenz",
-    "formula_latex": "\\mathcal{f}_em = - \\frac{\\Delta \\Phi_B}{\\Delta t}",
-    "descrizione": "La legge di Faraday-Neumann-Lenz descrive la **forza elettromotrice (f.e.m.) indotta** $\\mathcal{f}_em$ in un circuito chiuso quando il flusso del campo magnetico $\\Phi_B$ attraverso la superficie del circuito cambia nel tempo $\\Delta t$. Il segno meno (Legge di Lenz) indica che la f.e.m. indotta si oppone alla variazione di flusso.",
+    "formula_latex": "\\mathcal{f}_{\\text{em}} = - \\frac{\\Delta \\Phi_B}{\\Delta t}",
+    "descrizione": "La forza elettromotrice indotta è proporzionale alla rapidità con cui varia il flusso del campo magnetico concatenato con un circuito, con segno opposto alla variazione.\n\nQuando il campo magnetico attraverso una spira cambia nel tempo, si genera una tensione che si oppone a questo cambiamento: è il principio di funzionamento di generatori e trasformatori.",
     "variabili": [
-      { "simbolo": "$\\mathcal{f}_em$", "descrizione": "Forza elettromotrice indotta (f.e.m.)", "unita": "V" },
-      { "simbolo": "$\\Delta \\Phi_B$", "descrizione": "Variazione del flusso magnetico", "unita": "Wb" },
-      { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
+      { "simbolo": "\\mathcal{f}_{\\text{em}}", "descrizione": "Forza elettromotrice indotta (f.e.m.)", "unita": "V" },
+      { "simbolo": "\\Delta \\Phi_B", "descrizione": "Variazione del flusso magnetico", "unita": "Wb" },
+      { "simbolo": "\\Delta t", "descrizione": "Intervallo di tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una bobina con $100$ spire sperimenta una variazione di flusso magnetico di $0.02 \\text{ Wb}$ in $0.1 \\text{ s}$. La f.e.m. indotta è $\\\\mathcal{f}_em = -100 \\cdot (0.02 / 0.1) = -20 \\text{ V}$."
+        "testo": "Se avvicini rapidamente una calamita a una bobina collegata a un amperometro, l'ago si muove: la variazione del campo magnetico induce una corrente, anche senza pile."
       }
     ],
     "link_correlati": [],
@@ -28,17 +28,17 @@
     "sottocategoria": "Induzione Elettromagnetica",
     "titolo": "Flusso Magnetico",
     "formula_latex": "\\Phi_B = B A \\cos(\\theta)",
-    "descrizione": "Il flusso magnetico $\\Phi_B$ attraverso una superficie è una misura del numero di linee di campo magnetico che attraversano quella superficie. Dipende dall'intensità del campo magnetico $B$, dall'area della superficie $A$ e dall'angolo $\\theta$ tra il vettore normale alla superficie e il campo magnetico.",
+    "descrizione": "Il flusso magnetico misura quante linee di campo magnetico attraversano una superficie, tenendo conto dell'orientamento rispetto al campo.\n\nPiù la superficie è 'inclinata' rispetto al campo, meno flusso la attraversa: il massimo si ha quando la superficie è perpendicolare alle linee di campo.",
     "variabili": [
-      { "simbolo": "$\\Phi_B$", "descrizione": "Flusso magnetico", "unita": "Wb" },
-      { "simbolo": "$B$", "descrizione": "Intensità del campo magnetico", "unita": "T" },
-      { "simbolo": "$A$", "descrizione": "Area della superficie", "unita": "m²" },
-      { "simbolo": "$\\theta$", "descrizione": "Angolo tra il campo magnetico e la normale all'area", "unita": "rad" }
+      { "simbolo": "\\Phi_B", "descrizione": "Flusso magnetico", "unita": "Wb" },
+      { "simbolo": "B", "descrizione": "Intensità del campo magnetico", "unita": "T" },
+      { "simbolo": "A", "descrizione": "Area della superficie", "unita": "m^2" },
+      { "simbolo": "\\theta", "descrizione": "Angolo tra il campo magnetico e la normale all'area", "unita": "rad" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un campo magnetico di $0.3 \\text{ T}$ attraversa una spira di $0.01 \\text{ m}^2$ perpendicolarmente (cioè, l'angolo $\\theta = 0°$). Il flusso magnetico è $\\Phi_B = 0.3 \\cdot 0.01 \\cdot \\cos(0°) = 0.003 \\text{ Wb}$."
+        "testo": "Se ruoti una spira in un campo magnetico, il flusso cambia: è il principio dei generatori elettrici, dove la rotazione produce una variazione di flusso e quindi una corrente."
       }
     ],
     "link_correlati": [ "IND_001" ],
@@ -52,16 +52,16 @@
     "sottocategoria": "Induzione Elettromagnetica",
     "titolo": "Autoinduttanza",
     "formula_latex": "L = \\frac{\\Phi_B}{I}",
-    "descrizione": "L'autoinduttanza $L$ di un induttore (o di un circuito) è una misura della sua capacità di generare una forza elettromotrice indotta al suo interno quando la corrente $I$ che lo attraversa varia. È definita come il rapporto tra il flusso magnetico $\\Phi_B$ autoindotto e la corrente che lo genera.",
+    "descrizione": "L'autoinduttanza rappresenta la capacità di una bobina di generare flusso magnetico proporzionale alla corrente che la attraversa.\n\nPiù alta è l'autoinduttanza, più la bobina si oppone alle variazioni di corrente, accumulando energia nel suo campo magnetico.",
     "variabili": [
-      { "simbolo": "$L$", "descrizione": "Autoinduttanza", "unita": "H (Henry)" },
-      { "simbolo": "$\\Phi_B$", "descrizione": "Flusso magnetico autoindotto", "unita": "Wb" },
-      { "simbolo": "$I$", "descrizione": "Corrente nel circuito", "unita": "A" }
+      { "simbolo": "L", "descrizione": "Autoinduttanza", "unita": "H" },
+      { "simbolo": "\\Phi_B", "descrizione": "Flusso magnetico autoindotto", "unita": "Wb" },
+      { "simbolo": "I", "descrizione": "Corrente nel circuito", "unita": "A" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se una bobina produce un flusso di $0.05 \\text{ Wb}$ quando percorsa da una corrente di $2 \\text{ A}$, la sua autoinduttanza è $L = 0.05 / 2 = 0.025 \\text{ H}$."
+        "testo": "Quando spegni improvvisamente un circuito con una bobina, la corrente non si annulla subito: l'autoinduttanza 'prolunga' il passaggio di corrente, come se la bobina 'resistesse' al cambiamento."
       }
     ],
     "link_correlati": [],
@@ -74,18 +74,18 @@
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Induzione Elettromagnetica",
     "titolo": "Forza Elettromotrice Autoindotta in un Induttore",
-    "formula_latex": "\\mathcal{f}_em = - L \\frac{\\Delta I}{\\Delta t}",
-    "descrizione": "La forza elettromotrice (f.e.m.) autoindotta $\\mathcal{f}_em$ in un induttore con autoinduttanza $L$ è proporzionale al tasso di variazione della corrente $\\Delta I / \\Delta t$ che lo attraversa. Il segno meno indica l'opposizione alla variazione di corrente (Legge di Lenz).",
+    "formula_latex": "\\mathcal{f}_{\\text{em}} = - L \\frac{\\Delta I}{\\Delta t}",
+    "descrizione": "La forza elettromotrice autoindotta in una bobina è proporzionale alla rapidità con cui cambia la corrente che la attraversa, con segno opposto alla variazione.\n\nQuando la corrente in una bobina aumenta o diminuisce, si genera una tensione che si oppone a questa variazione: è il motivo per cui le lampadine a incandescenza collegate a un induttore si spengono lentamente.",
     "variabili": [
-      { "simbolo": "$\\mathcal{f}_em$", "descrizione": "Forza elettromotrice autoindotta", "unita": "V" },
-      { "simbolo": "$L$", "descrizione": "Autoinduttanza", "unita": "H" },
-      { "simbolo": "$\\Delta I$", "descrizione": "Variazione di corrente", "unita": "A" },
-      { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
+      { "simbolo": "\\mathcal{f}_{\\text{em}}", "descrizione": "Forza elettromotrice autoindotta", "unita": "V" },
+      { "simbolo": "L", "descrizione": "Autoinduttanza", "unita": "H" },
+      { "simbolo": "\\Delta I", "descrizione": "Variazione di corrente", "unita": "A" },
+      { "simbolo": "\\Delta t", "descrizione": "Intervallo di tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un induttore di $0.1 \\text{ H}$ vede la corrente variare da $0 \\text{ A}$ a $2 \\text{ A}$ in $0.05 \\text{ s}$. La f.e.m. autoindotta è $\\mathcal{f}_em = -0.1 \\cdot (2 / 0.05) = -4 \\text{ V}$."
+        "testo": "Quando si apre un interruttore in un circuito con una bobina, può scoccare una scintilla: la bobina cerca di mantenere la corrente costante, generando una tensione elevata per un breve istante."
       }
     ],
     "link_correlati": ["IND_003"],
@@ -94,46 +94,22 @@
     "data_ultima_modifica": "2025-07-11"
   },
   {
-    "id": "IND_005",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Circuiti RL",
-    "titolo": "Corrente in un Circuito RL (Carica)",
-    "formula_latex": "I(t) = I_{max} (1 - e^{-t/\\tau})",
-    "descrizione": "In un circuito RL (resistenza-induttore) in fase di carica, la corrente $I(t)$ aumenta esponenzialmente nel tempo $t$ fino a raggiungere un valore massimo $I_{max}$. $\\tau = L/R$ è la costante di tempo induttiva, che determina la velocità di crescita della corrente.",
-    "variabili": [
-      { "simbolo": "$I(t)$", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
-      { "simbolo": "$I_{max}$", "descrizione": "Corrente massima a regime ($\\mathcal{E}/R$)", "unita": "A" },
-      { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" },
-      { "simbolo": "$\\tau$", "descrizione": "Costante di tempo induttiva ($L/R$)", "unita": "s" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Un circuito RL con $R = 10 \\Omega$ e $L = 0.5 \\text{ H}$ ha una costante di tempo $\\tau = 0.5 / 10 = 0.05 \\text{ s}$. La corrente raggiungerà circa il $63.2\\%$ del suo valore massimo dopo $0.05 \\text{ s}$."
-      }
-    ],
-    "link_correlati": [],
-    "parole_chiave": ["circuito RL", "carica", "corrente", "costante di tempo", "induttore", "resistenza"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
     "id": "IND_006",
     "categoria": "Elettromagnetismo",
     "sottocategoria": "Mutua Induzione",
     "titolo": "Mutua Induzione (f.e.m. indotta)",
-    "formula_latex": "\\mathcal{f}_em2 = - M \\frac{\\Delta I_1}{\\Delta t}",
-    "descrizione": "La mutua induzione descrive la f.e.m. indotta $\\mathcal{f}_em2$ in una bobina (secondaria) a causa della variazione di corrente $\\Delta I_1 / \\Delta t$ in una bobina adiacente (primaria). $M$ è il coefficiente di mutua induttanza, una misura dell'accoppiamento magnetico tra le due bobine.",
+    "formula_latex": "\\mathcal{f}_{\\text{em,2}} = - M \\frac{\\Delta I_1}{\\Delta t}",
+    "descrizione": "La mutua induzione descrive la tensione indotta in una bobina quando la corrente in una seconda bobina vicina varia nel tempo.\n\nQuesto fenomeno permette il funzionamento dei trasformatori: una variazione di corrente nel primario induce una tensione nel secondario, senza contatto elettrico diretto.",
     "variabili": [
-      { "simbolo": "$\\mathcal{f}_em2$", "descrizione": "F.e.m. indotta nella bobina secondaria", "unita": "V" },
-      { "simbolo": "$M$", "descrizione": "Coefficiente di mutua induttanza", "unita": "H" },
-      { "simbolo": "$\\Delta I_1$", "descrizione": "Variazione di corrente nella bobina primaria", "unita": "A" },
-      { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
+      { "simbolo": "\\mathcal{f}_{\\text{em,2}}", "descrizione": "F.e.m. indotta nella bobina secondaria", "unita": "V" },
+      { "simbolo": "M", "descrizione": "Coefficiente di mutua induttanza", "unita": "H" },
+      { "simbolo": "\\Delta I_1", "descrizione": "Variazione di corrente nella bobina primaria", "unita": "A" },
+      { "simbolo": "\\Delta t", "descrizione": "Intervallo di tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un trasformatore si basa sulla mutua induzione: la variazione di corrente nel primario induce una f.e.m. nel secondario, permettendo di modificare i livelli di tensione."
+        "testo": "Se avvicini due bobine e fai passare una corrente variabile nella prima, nella seconda si accende una lampadina: la corrente nella prima genera un campo magnetico variabile che induce una tensione nella seconda."
       }
     ],
     "link_correlati": ["IND_003"],
@@ -147,16 +123,16 @@
     "sottocategoria": "Energia del Campo Magnetico",
     "titolo": "Energia Immagazzinata in un Induttore",
     "formula_latex": "W_L = \\frac{1}{2} L I^2",
-    "descrizione": "L'energia $W_L$ immagazzinata nel campo magnetico di un induttore con autoinduttanza $L$ attraversato da una corrente $I$. Questa energia è disponibile per essere rilasciata quando la corrente diminuisce.",
+    "descrizione": "L'energia accumulata in un induttore è proporzionale all'autoinduttanza e al quadrato della corrente che lo attraversa.\n\nUn induttore può restituire questa energia quando la corrente diminuisce: è il principio di funzionamento di molti alimentatori e circuiti elettronici.",
     "variabili": [
-      { "simbolo": "$W_L$", "descrizione": "Energia immagazzinata nell'induttore", "unita": "J (Joule)" },
-      { "simbolo": "$L$", "descrizione": "Autoinduttanza", "unita": "H" },
-      { "simbolo": "$I$", "descrizione": "Corrente nell'induttore", "unita": "A" }
+      { "simbolo": "W_L", "descrizione": "Energia immagazzinata nell'induttore", "unita": "J" },
+      { "simbolo": "L", "descrizione": "Autoinduttanza", "unita": "H" },
+      { "simbolo": "I", "descrizione": "Corrente nell'induttore", "unita": "A" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un induttore di $0.2 \\text{ H}$ percorso da una corrente di $3 \\text{ A}$ immagazzina un'energia di $W_L = \\frac{1}{2} (0.2 \\text{ H}) (3 \\text{ A})^2 = 0.9 \\text{ J}$."
+        "testo": "In un flash fotografico, l'energia viene accumulata in un induttore e poi rilasciata tutta insieme per produrre un lampo di luce intenso e brevissimo."
       }
     ],
     "link_correlati": [],
@@ -170,16 +146,16 @@
     "sottocategoria": "Energia del Campo Magnetico",
     "titolo": "Densità Volumica di Energia Magnetica nel Vuoto",
     "formula_latex": "w_B = \\frac{B^2}{2\\mu_0}",
-    "descrizione": "La densità volumica di energia magnetica $w_B$ rappresenta l'energia immagazzinata per unità di volume in un campo magnetico $B$ nel vuoto. È analoga alla densità di energia elettrica.",
+    "descrizione": "La densità di energia magnetica indica quanta energia è contenuta in ogni metro cubo di spazio dove è presente un campo magnetico nel vuoto.\n\nPiù intenso è il campo magnetico, maggiore è l'energia immagazzinata nello spazio circostante: questo è importante per capire i limiti di sicurezza nei laboratori con campi magnetici forti.",
     "variabili": [
-      { "simbolo": "$w_B$", "descrizione": "Densità volumica di energia magnetica", "unita": "J/m^3" },
-      { "simbolo": "$B$", "descrizione": "Intensità del campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" }
+      { "simbolo": "w_B", "descrizione": "Densità volumica di energia magnetica", "unita": "\\frac{J}{m^3}" },
+      { "simbolo": "B", "descrizione": "Intensità del campo magnetico", "unita": "T" },
+      { "simbolo": "\\mu_0", "descrizione": "Permeabilità magnetica del vuoto", "unita": "\\frac{N}{A^2}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "In una regione con un campo magnetico di $0.1 \\text{ T}$, la densità di energia è $w_B = \\frac{(0.1 \\text{ T})^2}{2 \\cdot (4\\pi \\times 10^{-7} \\text{ N/A}^2)} \\approx 3979 \\text{ J/m}^3$."
+        "testo": "Nei laboratori di risonanza magnetica, la densità di energia magnetica può essere molto elevata: per questo si usano schermature e precauzioni particolari."
       }
     ],
     "link_correlati": [],
@@ -193,218 +169,22 @@
     "sottocategoria": "Corrente Alternata (AC)",
     "titolo": "Tensione Alternata Sinusoidale",
     "formula_latex": "V(t) = V_{max} \\sin(\\omega t + \\phi)",
-    "descrizione": "Una tensione alternata $V(t)$ tipica varia sinusoidalmente nel tempo $t$.",
+    "descrizione": "La tensione alternata sinusoidale varia periodicamente nel tempo, raggiungendo valori massimi e minimi secondo una legge matematica precisa.\n\nQuesto tipo di tensione è usato nelle reti elettriche domestiche perché permette di trasportare energia su lunghe distanze in modo efficiente.",
     "variabili": [
-      { "simbolo": "$V(t)$", "descrizione": "Tensione istantanea", "unita": "V" },
-      { "simbolo": "$V_{max}$", "descrizione": "Tensione massima (ampiezza)", "unita": "V" },
-      { "simbolo": "$\\omega$", "descrizione": "Frequenza angolare ($2\\pi f$)", "unita": "rad/s" },
-      { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" },
-      { "simbolo": "$\\phi$", "descrizione": "Fase iniziale", "unita": "rad" }
+      { "simbolo": "V(t)", "descrizione": "Tensione istantanea", "unita": "V" },
+      { "simbolo": "V_{max}", "descrizione": "Tensione massima (ampiezza)", "unita": "V" },
+      { "simbolo": "\\omega", "descrizione": "Frequenza angolare ($2\\pi f$)", "unita": "\\frac{rad}{s}" },
+      { "simbolo": "t", "descrizione": "Tempo", "unita": "s" },
+      { "simbolo": "\\phi", "descrizione": "Fase iniziale", "unita": "rad" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "La tensione di rete domestica in Europa è $V(t) = 325 \\sin(100\\pi t)$, con $V_{max} = 325 \\text{ V}$ e frequenza $f = 50 \\text{ Hz}$ ($\\omega = 100\\pi \\text{ rad/s}$)."
+        "testo": "Le prese di casa forniscono una tensione che cambia segno 100 volte al secondo (in Italia): per questo le lampadine a incandescenza sembrano accendersi in modo continuo, anche se la corrente oscilla."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["tensione alternata", "AC", "sinusoidale", "frequenza", "ampiezza"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "AC_002",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Corrente Alternata (AC)",
-    "titolo": "Valore Efficace di Tensione o Corrente Alternata",
-    "formula_latex": "\\begin{aligned} V_{rms} &= \\frac{V_{max}}{\\sqrt{2}} \\\\ I_{rms} &= \\frac{I_{max}}{\\sqrt{2}} \\end{aligned}",
-    "descrizione": "Il valore efficace (Root Mean Square, RMS) di una tensione o corrente alternata è il valore equivalente di una corrente o tensione continua che produrrebbe lo stesso effetto di riscaldamento in una resistenza. È spesso il valore riportato per le specifiche degli apparecchi elettrici.",
-    "variabili": [
-      { "simbolo": "$V_{rms}$", "descrizione": "Tensione efficace", "unita": "V" },
-      { "simbolo": "$I_{rms}$", "descrizione": "Corrente efficace", "unita": "A" },
-      { "simbolo": "$V_{max}$", "descrizione": "Tensione massima (picco)", "unita": "V" },
-      { "simbolo": "$I_{max}$", "descrizione": "Corrente massima (picco)", "unita": "A" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "La tensione di rete domestica di $230 \\text{ V}$ (RMS) ha una tensione massima di $V_{max} = 230 \\cdot \\sqrt{2} \\approx 325 \\text{ V}$."
-      }
-    ],
-    "link_correlati": ["AC_001"],
-    "parole_chiave": ["valore efficace", "RMS", "tensione AC", "corrente AC", "potenza"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "AC_003",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Corrente Alternata (AC)",
-    "titolo": "Potenza Media in un Circuito AC",
-    "formula_latex": "P_{avg} = V_{rms} I_{rms} \\cos(\\phi)",
-    "descrizione": "La potenza media $P_{avg}$ dissipata in un circuito a corrente alternata.",
-    "variabili": [
-      { "simbolo": "$P_{avg}$", "descrizione": "Potenza media", "unita": "W (Watt)" },
-      { "simbolo": "$V_{rms}$", "descrizione": "Tensione efficace", "unita": "V" },
-      { "simbolo": "$I_{rms}$", "descrizione": "Corrente efficace", "unita": "A" },
-      { "simbolo": "$\\phi$", "descrizione": "Sfasamento tra tensione e corrente", "unita": "rad" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Un carico assorbe $5 \\text{ A}$ (RMS) a $230 \\text{ V}$ (RMS) con un fattore di potenza di $0.8$. La potenza media è $P_{avg} = 230 \\cdot 5 \\cdot 0.8 = 920 \\text{ W}$."
-      }
-    ],
-    "link_correlati": ["AC_002"],
-    "parole_chiave": ["potenza media", "AC", "fattore di potenza", "sfasamento", "Watt"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "AC_004",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Corrente Alternata (AC)",
-    "titolo": "Circuito Ohmico (Resistivo Puro) in AC",
-    "formula_latex": "\\begin{aligned} V &= I R \\\\ \\varphi &= 0 \\end{aligned}",
-    "descrizione": "In un circuito puramente ohmico (contenente solo resistenze), la Legge di Ohm si applica anche in AC, e la tensione e la corrente sono in fase (sfasamento $\\phi = 0$). L'impedenza è uguale alla resistenza.",
-    "variabili": [
-      { "simbolo": "$V$", "descrizione": "Tensione (picco o RMS)", "unita": "V" },
-      { "simbolo": "$I$", "descrizione": "Corrente (picco o RMS)", "unita": "A" },
-      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "\\Omega" },
-      { "simbolo": "$\\phi$", "descrizione": "Sfasamento", "unita": "rad" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Un riscaldatore elettrico è un carico puramente resistivo. La corrente e la tensione ai suoi capi oscillano in perfetta sincronia."
-      }
-    ],
-    "link_correlati": ["AC_003"],
-    "parole_chiave": ["circuito ohmico", "resistivo", "AC", "sfasamento", "Legge di Ohm"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "AC_005",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Corrente Alternata (AC)",
-    "titolo": "Circuito Induttivo Puro in AC (Reattanza Induttiva)",
-    "formula_latex": "\\begin{aligned} X_L &= \\omega L \\\\ V_L &= I X_L \\\\ \\varphi &= +\\frac{\\pi}{2} \\end{aligned}",
-    "descrizione": "In un circuito puramente induttivo, l'induttore oppone resistenza al flusso di corrente alternata tramite la reattanza induttiva $X_L$. La tensione $V_L$ sull'induttore anticipa la corrente $I$ di $90°$ ($\\pi/2$ radianti).",
-    "variabili": [
-      { "simbolo": "$X_L$", "descrizione": "Reattanza induttiva", "unita": "\\Omega" },
-      { "simbolo": "$\\omega$", "descrizione": "Frequenza angolare", "unita": "rad/s" },
-      { "simbolo": "$L$", "descrizione": "Autoinduttanza", "unita": "H" },
-      { "simbolo": "$V_L$", "descrizione": "Tensione ai capi dell'induttore", "unita": "V" },
-      { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
-      { "simbolo": "$\\phi$", "descrizione": "Sfasamento", "unita": "rad" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Un induttore di $0.1 \\text{ H}$ in un circuito a $50 \\text{ Hz}$ ($\\omega = 100\\pi \\text{ rad/s}$) ha una reattanza $X_L = (100\\pi) \\cdot 0.1 \\approx 31.4 \\Omega$. La tensione sull'induttore sarà in anticipo di $90°$ rispetto alla corrente."
-      }
-    ],
-    "link_correlati": ["AC_001"],
-    "parole_chiave": ["circuito induttivo", "reattanza induttiva", "AC", "induttore", "sfasamento"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "AC_006",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Corrente Alternata (AC)",
-    "titolo": "Circuito Capacitivo Puro in AC (Reattanza Capacitiva)",
-    "formula_latex": "\\begin{aligned} X_C &= \\frac{1}{\\omega C} \\\\ V_C &= I X_C \\\\ \\varphi &= -\\frac{\\pi}{2} \\end{aligned}",
-    "descrizione": "In un circuito puramente capacitivo, il condensatore oppone resistenza al flusso di corrente alternata tramite la reattanza capacitiva $X_C$. La tensione $V_C$ sul condensatore è in ritardo rispetto alla corrente $I$ di $90°$ ($\\pi/2$ radianti).",
-    "variabili": [
-      { "simbolo": "$X_C$", "descrizione": "Reattanza capacitiva", "unita": "\\Omega" },
-      { "simbolo": "$\\omega$", "descrizione": "Frequenza angolare", "unita": "rad/s" },
-      { "simbolo": "$C$", "descrizione": "Capacità", "unita": "F" },
-      { "simbolo": "$V_C$", "descrizione": "Tensione ai capi del condensatore", "unita": "V" },
-      { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
-      { "simbolo": "$\\phi$", "descrizione": "Sfasamento", "unita": "rad" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Un condensatore di $10 \\mu F$ in un circuito a $50 \\text{ Hz}$ ($\\omega = 100\\pi \\text{ rad/s}$) ha una reattanza $X_C = \\frac{1}{(100\\pi) \\cdot (10 \\times 10^{-6})} \\approx 318.3 \\Omega$. La tensione sul condensatore sarà in ritardo di $90°$ rispetto alla corrente."
-      }
-    ],
-    "link_correlati": ["AC_001"],
-    "parole_chiave": ["circuito capacitivo", "reattanza capacitiva", "AC", "condensatore", "sfasamento"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "AC_007",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Corrente Alternata (AC)",
-    "titolo": "Impedenza di un Circuito RLC Serie",
-    "formula_latex": "Z = \\sqrt{R^2 + (X_L - X_C)^2}",
-    "descrizione": "L'impedenza $Z$ è la resistenza totale che un circuito RLC (resistenza, induttore, condensatore) offre al flusso di corrente alternata. È la combinazione vettoriale della resistenza $R$ e della reattanza netta ($X_L - X_C$).",
-    "variabili": [
-      { "simbolo": "$Z$", "descrizione": "Impedenza", "unita": "\\Omega" },
-      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "\\Omega" },
-      { "simbolo": "$X_L$", "descrizione": "Reattanza induttiva", "unita": "\\Omega" },
-      { "simbolo": "$X_C$", "descrizione": "Reattanza capacitiva", "unita": "\\Omega" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Un circuito RLC serie con $R = 10 \\Omega$, $X_L = 20 \\Omega$ e $X_C = 15 \\Omega$ ha un'impedenza $Z = \\sqrt{10^2 + (20 - 15)^2} = \\sqrt{100 + 25} \\approx 11.18 \\Omega$."
-      }
-    ],
-    "link_correlati": ["AC_004", "AC_005", "AC_006"],
-    "parole_chiave": ["impedenza", "circuito RLC", "resistenza", "reattanza", "AC"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "AC_008",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Corrente Alternata (AC)",
-    "titolo": "Condizione di Risonanza in un Circuito RLC Serie",
-    "formula_latex": "\\begin{aligned} X_L &= X_C \\\\ \\omega_0 &= \\frac{1}{\\sqrt{LC}} \\end{aligned}",
-    "descrizione": "La risonanza si verifica in un circuito RLC serie quando la reattanza induttiva $X_L$ e la reattanza capacitiva $X_C$ si annullano a vicenda ($X_L = X_C$). A questa frequenza angolare di risonanza $\\omega_0$, l'impedenza del circuito è minima e uguale alla sola resistenza $R$, e la corrente è massima.",
-    "variabili": [
-      { "simbolo": "$X_L$", "descrizione": "Reattanza induttiva", "unita": "\\Omega" },
-      { "simbolo": "$X_C$", "descrizione": "Reattanza capacitiva", "unita": "\\Omega" },
-      { "simbolo": "$\\omega_0$", "descrizione": "Frequenza angolare di risonanza", "unita": "rad/s" },
-      { "simbolo": "$L$", "descrizione": "Autoinduttanza", "unita": "H" },
-      { "simbolo": "$C$", "descrizione": "Capacità", "unita": "F" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Un circuito RLC con $L = 0.1 \\text{ H}$ e $C = 1 \\mu F$ avrà una frequenza di risonanza $f_0 = \\frac{1}{2\\pi\\sqrt{0.1 \\cdot 1 \\times 10^{-6}}} \\approx 503 \\text{ Hz}$."
-      }
-    ],
-    "link_correlati": ["AC_007"],
-    "parole_chiave": ["risonanza", "circuito RLC", "frequenza di risonanza", "impedenza minima", "AC"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "AC_009",
-    "categoria": "Elettromagnetismo",
-    "sottocategoria": "Circuiti LC",
-    "titolo": "Frequenza di Oscillazione in un Circuito LC ideale",
-    "formula_latex": "f_0 = \\frac{1}{2\\pi \\sqrt{LC}}",
-    "descrizione": "Un circuito LC ideale (senza resistenza) può oscillare indefinitamente, scambiando energia tra il campo elettrico nel condensatore e il campo magnetico nell'induttore.",
-    "variabili": [
-      { "simbolo": "$f_0$", "descrizione": "Frequenza di oscillazione", "unita": "Hz" },
-      { "simbolo": "$L$", "descrizione": "Autoinduttanza", "unita": "H" },
-      { "simbolo": "$C$", "descrizione": "Capacità", "unita": "F" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Un circuito LC con $L = 1 \\text{ mH}$ e $C = 10 \\text{ nF}$ ha una frequenza di oscillazione $f_0 = \\frac{1}{2\\pi \\sqrt{1 \\times 10^{-3} \\cdot 10 \\times 10^{-9}}} \\approx 50.3 \\text{ kHz}$."
-      }
-    ],
-    "link_correlati": [],
-    "parole_chiave": ["circuito LC", "oscillazione", "frequenza", "induttore", "condensatore"],
     "data_creazione": "2025-07-11",
     "data_ultima_modifica": "2025-07-11"
   },
@@ -414,19 +194,19 @@
     "sottocategoria": "Trasformatori",
     "titolo": "Rapporto di Trasformazione (Trasformatore Ideale)",
     "formula_latex": "\\frac{V_1}{V_2} = \\frac{N_1}{N_2} = \\frac{I_2}{I_1}",
-    "descrizione": "In un trasformatore ideale, il rapporto tra le tensioni ($V_1/V_2$) è uguale al rapporto tra il numero di spire ($N_1/N_2$) e inversamente proporzionale al rapporto delle correnti ($I_2/I_1$). Questo permette di elevare o abbassare le tensioni alternate mantenendo la potenza.",
+    "descrizione": "Il rapporto di trasformazione collega le tensioni e le correnti tra primario e secondario di un trasformatore ideale, in funzione del numero di spire.\n\nUn trasformatore può aumentare o diminuire la tensione alternata mantenendo costante la potenza: più spire al secondario significano tensione più alta, ma corrente più bassa.",
     "variabili": [
-      { "simbolo": "$V_1$", "descrizione": "Tensione sul primario", "unita": "V" },
-      { "simbolo": "$V_2$", "descrizione": "Tensione sul secondario", "unita": "V" },
-      { "simbolo": "$N_1$", "descrizione": "Numero di spire del primario", "unita": "" },
-      { "simbolo": "$N_2$", "descrizione": "Numero di spire del secondario", "unita": "" },
-      { "simbolo": "$I_1$", "descrizione": "Corrente nel primario", "unita": "A" },
-      { "simbolo": "$I_2$", "descrizione": "Corrente nel secondario", "unita": "A" }
+      { "simbolo": "V_1", "descrizione": "Tensione sul primario", "unita": "V" },
+      { "simbolo": "V_2", "descrizione": "Tensione sul secondario", "unita": "V" },
+      { "simbolo": "N_1", "descrizione": "Numero di spire del primario", "unita": "\\text{adimensionale}" },
+      { "simbolo": "N_2", "descrizione": "Numero di spire del secondario", "unita": "\\text{adimensionale}" },
+      { "simbolo": "I_1", "descrizione": "Corrente nel primario", "unita": "A" },
+      { "simbolo": "I_2", "descrizione": "Corrente nel secondario", "unita": "A" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un trasformatore con $100$ spire sul primario e $1000$ spire sul secondario applica $120 \\text{ V}$ al primario. La tensione sul secondario sarà $V_2 = 120 \\cdot (1000/100) = 1200 \\text{ V}$."
+        "testo": "I caricabatterie dei telefoni abbassano la tensione della rete (220 V) a pochi volt usando un trasformatore: il numero di spire nel secondario è molto minore rispetto al primario."
       }
     ],
     "link_correlati": ["IND_006"],
@@ -440,16 +220,16 @@
     "sottocategoria": "Equazioni di Maxwell",
     "titolo": "Prima Equazione di Maxwell (Legge di Gauss per il Campo Elettrico)",
     "formula_latex": "\\Phi_S(\\vec{E}) = \\frac{Q_{tot}}{\\varepsilon_0}",
-    "descrizione": "La prima equazione di Maxwell, o Legge di Gauss per il Campo Elettrico, afferma che il flusso totale del campo elettrico $\\vec{E}$ attraverso una superficie chiusa $S$ è proporzionale alla carica elettrica totale $Q_{tot}$ racchiusa all'interno di quella superficie.",
+    "descrizione": "La legge di Gauss per il campo elettrico afferma che il flusso totale del campo elettrico attraverso una superficie chiusa dipende solo dalla carica totale racchiusa.\n\nSe dentro una superficie chiusa c'è una carica, il campo elettrico 'esce' o 'entra' dalla superficie: è il principio che permette di calcolare facilmente il campo di oggetti simmetrici.",
     "variabili": [
-      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$Q_{tot}$", "descrizione": "Carica netta interna alla superficie", "unita": "C" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "\\vec{E}", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" },
+      { "simbolo": "Q_{tot}", "descrizione": "Carica netta interna alla superficie", "unita": "C" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Costante dielettrica del vuoto", "unita": "\\frac{F}{m}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Questa legge è fondamentale per comprendere come le cariche elettriche siano sorgenti (o pozzi) del campo elettrico. Per esempio, il campo di una carica puntiforme diminuisce con il quadrato della distanza."
+        "testo": "Per calcolare il campo elettrico fuori da una sfera carica, basta sapere la carica totale: la distribuzione interna non conta, grazie alla simmetria e alla legge di Gauss."
       }
     ],
     "link_correlati": [],
@@ -463,14 +243,14 @@
     "sottocategoria": "Equazioni di Maxwell",
     "titolo": "Seconda Equazione di Maxwell (Legge di Gauss per il Campo Magnetico)",
     "formula_latex": "\\Phi_S(\\vec{B}) = 0",
-    "descrizione": "La seconda equazione di Maxwell, o Legge di Gauss per il Campo Magnetico, afferma che il flusso totale del campo magnetico $\\vec{B}$ attraverso qualsiasi superficie chiusa $S$ è sempre zero. Ciò implica l'assenza di monopoli magnetici isolati; i poli nord e sud esistono sempre in coppia.",
+    "descrizione": "La legge di Gauss per il campo magnetico afferma che il flusso totale del campo magnetico attraverso una superficie chiusa è sempre nullo.\n\nNon esistono monopoli magnetici isolati: le linee di campo magnetico sono sempre chiuse su sé stesse, come in una calamita spezzata che dà sempre due poli.",
     "variabili": [
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" }
+      { "simbolo": "\\vec{B}", "descrizione": "Campo magnetico", "unita": "T" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Anche se si spezza una calamita a metà, si ottengono due nuove calamite, ognuna con un polo nord e un polo sud, perché le linee di campo magnetico sono sempre chiuse."
+        "testo": "Se avvolgi una superficie chiusa attorno a una calamita, il numero di linee di campo che 'entrano' è sempre uguale a quello che 'esce': il flusso totale è zero."
       }
     ],
     "link_correlati": [],
@@ -484,16 +264,16 @@
     "sottocategoria": "Equazioni di Maxwell",
     "titolo": "Terza Equazione di Maxwell (Legge di Faraday-Neumann dell'Induzione)",
     "formula_latex": "\\Gamma_{\\mathcal{L}}(\\vec{E}) = - \\frac{\\Delta \\Phi_S(\\vec{B})}{\\Delta t}",
-    "descrizione": "La terza equazione di Maxwell, o Legge di Faraday-Neumann dell'induzione, stabilisce che la circuitazione del campo elettrico $\\vec{E}$ lungo un percorso chiuso $L$ è uguale all'opposto della variazione nel tempo del flusso magnetico $\\Phi_B$ attraverso la superficie delimitata da quel percorso. È alla base dei fenomeni di induzione elettromagnetica.",
+    "descrizione": "La circuitazione del campo elettrico lungo un percorso chiuso è legata alla variazione nel tempo del flusso magnetico attraverso la superficie racchiusa.\n\nQuando il campo magnetico cambia nel tempo, si genera un campo elettrico 'vorticoso' che può mettere in moto le cariche: è il principio dei generatori elettrici.",
     "variabili": [
-      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$\\Phi_B$", "descrizione": "Flusso magnetico", "unita": "Wb" },
-      { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" }
+      { "simbolo": "\\vec{E}", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" },
+      { "simbolo": "\\Phi_B", "descrizione": "Flusso magnetico", "unita": "Wb" },
+      { "simbolo": "t", "descrizione": "Tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Il funzionamento di un generatore elettrico si basa su questa legge: un rotore che cambia il flusso magnetico attraverso una bobina induce una corrente elettrica."
+        "testo": "Se muovi una calamita dentro una bobina, il campo magnetico cambia e si genera una corrente: il campo elettrico indotto non è conservativo, ma 'circola' lungo la bobina."
       }
     ],
     "link_correlati": ["IND_001"],
@@ -507,19 +287,19 @@
     "sottocategoria": "Equazioni di Maxwell",
     "titolo": "Quarta Equazione di Maxwell (Legge di Ampère-Maxwell)",
     "formula_latex": "\\Gamma_{\\mathcal{L}}(\\vec{B}) = \\mu_0 \\left[ i_{\\text{tot}} + \\varepsilon_0 \\frac{\\Delta \\Phi_S(\\vec{E})}{\\Delta t} \\right]",
-    "descrizione": "La quarta equazione di Maxwell, o Legge di Ampère-Maxwell, afferma che la circuitazione del campo magnetico $\\vec{B}$ lungo un percorso chiuso $L$ è dovuta non solo alla corrente di conduzione $I_{inc}$ (come in Ampère), ma anche alla variazione nel tempo del flusso elettrico $\\Phi_E$ (termine di corrente di spostamento). Questo termine è cruciale per l'esistenza delle onde elettromagnetiche.",
+    "descrizione": "La circuitazione del campo magnetico lungo un percorso chiuso dipende sia dalla corrente che attraversa la superficie sia dalla variazione del flusso elettrico nel tempo.\n\nQuesta legge spiega perché le onde elettromagnetiche possono propagarsi anche nel vuoto: un campo elettrico variabile genera un campo magnetico e viceversa.",
     "variabili": [
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" },
-      { "simbolo": "$I_{inc}$", "descrizione": "Corrente di conduzione concatenata", "unita": "A" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
-      { "simbolo": "$\\Phi_E$", "descrizione": "Flusso elettrico", "unita": "$V \\cdot m$" },
-      { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" }
+      { "simbolo": "\\vec{B}", "descrizione": "Campo magnetico", "unita": "T" },
+      { "simbolo": "\\mu_0", "descrizione": "Permeabilità magnetica del vuoto", "unita": "\\frac{N}{A^2}" },
+      { "simbolo": "i_{\\text{tot}}", "descrizione": "Corrente di conduzione concatenata", "unita": "A" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Costante dielettrica del vuoto", "unita": "\\frac{F}{m}" },
+      { "simbolo": "\\Phi_S(\\vec{E})", "descrizione": "Flusso elettrico", "unita": "V \\cdot m" },
+      { "simbolo": "\\Delta t", "descrizione": "Tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Durante la carica di un condensatore, la corrente di spostamento tra le armature, anche senza conduzione di elettroni, genera un campo magnetico, essenziale per la propagazione delle onde elettromagnetiche."
+        "testo": "Durante la carica di un condensatore, anche tra le armature dove non passa corrente, si genera un campo magnetico grazie alla variazione del campo elettrico: è la 'corrente di spostamento' di Maxwell."
       }
     ],
     "link_correlati": [],
@@ -533,16 +313,16 @@
     "sottocategoria": "Onde Elettromagnetiche",
     "titolo": "Velocità della Luce nel Vuoto",
     "formula_latex": "c = \\frac{1}{\\sqrt{\\mu_0 \\varepsilon_0}}",
-    "descrizione": "La velocità della luce nel vuoto $c$ è una costante fondamentale derivata dalle costanti del vuoto dell'elettromagnetismo: la permeabilità magnetica del vuoto $\\mu_0$ e la costante dielettrica del vuoto $\\varepsilon_0$. Questa relazione è una delle maggiori intuizioni di Maxwell, dimostrando che la luce è un'onda elettromagnetica.",
+    "descrizione": "La velocità della luce nel vuoto dipende solo da due costanti fondamentali dell'elettromagnetismo: la permeabilità magnetica e la costante dielettrica del vuoto.\n\nQuesto legame mostra che la luce è un fenomeno elettromagnetico: la sua velocità non dipende dalla sorgente o dall'osservatore, ma solo dalle proprietà del vuoto.",
     "variabili": [
-      { "simbolo": "$c$", "descrizione": "Velocità della luce nel vuoto", "unita": "m/s" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "c", "descrizione": "Velocità della luce nel vuoto", "unita": "\\frac{m}{s}" },
+      { "simbolo": "\\mu_0", "descrizione": "Permeabilità magnetica del vuoto", "unita": "\\frac{N}{A^2}" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Costante dielettrica del vuoto", "unita": "\\frac{F}{m}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcolando con i valori approssimati di $\\mu_0 = 4\\pi \\times 10^{-7}$ e $\\varepsilon_0 = 8.85 \\times 10^{-12}$, si ottiene $c \\approx 3 \\times 10^8 \\text{ m/s}$."
+        "testo": "La velocità della luce è la stessa per tutti: è il limite massimo di trasmissione di segnali e informazioni nell'universo, come dimostrato anche dagli esperimenti con i satelliti GPS."
       }
     ],
     "link_correlati": ["MAX_001", "MAX_004"],
@@ -556,16 +336,16 @@
     "sottocategoria": "Onde Elettromagnetiche",
     "titolo": "Indice di Rifrazione",
     "formula_latex": "n = \\frac{c}{v}",
-    "descrizione": "L'indice di rifrazione $n$ di un mezzo è il rapporto tra la velocità della luce nel vuoto $c$ e la velocità della luce $v$ nel mezzo stesso. Indica di quanto la velocità della luce è ridotta quando attraversa il materiale.",
+    "descrizione": "L'indice di rifrazione indica di quanto la velocità della luce si riduce quando attraversa un materiale rispetto al vuoto.\n\nUn valore di indice maggiore di 1 significa che la luce rallenta: questo spiega fenomeni come la rifrazione e la dispersione nei prismi.",
     "variabili": [
-      { "simbolo": "$n$", "descrizione": "Indice di rifrazione", "unita": "" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce nel vuoto", "unita": "m/s" },
-      { "simbolo": "$v$", "descrizione": "Velocità della luce nel mezzo", "unita": "m/s" }
+      { "simbolo": "n", "descrizione": "Indice di rifrazione", "unita": "\\text{adimensionale}" },
+      { "simbolo": "c", "descrizione": "Velocità della luce nel vuoto", "unita": "\\frac{m}{s}" },
+      { "simbolo": "v", "descrizione": "Velocità della luce nel mezzo", "unita": "\\frac{m}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "L'acqua ha un indice di rifrazione di circa $1.33$, il che significa che la luce viaggia nell'acqua a una velocità pari a $c/1.33$."
+        "testo": "Quando immergi una cannuccia in un bicchiere d'acqua, sembra spezzata: la luce rallenta e cambia direzione passando dall'aria all'acqua, proprio a causa dell'indice di rifrazione."
       }
     ],
     "link_correlati": ["OEM_001"],
@@ -579,16 +359,16 @@
     "sottocategoria": "Onde Elettromagnetiche",
     "titolo": "Relazione tra Campo Elettrico e Campo Magnetico in un'Onda Elettromagnetica nel Vuoto",
     "formula_latex": "E = c B",
-    "descrizione": "In un'onda elettromagnetica che si propaga nel vuoto, l'ampiezza del campo elettrico $E$ e l'ampiezza del campo magnetico $B$ sono direttamente proporzionali, con la costante di proporzionalità data dalla velocità della luce $c$. I campi $E$ e $B$ sono perpendicolari tra loro e perpendicolari alla direzione di propagazione dell'onda.",
+    "descrizione": "Nelle onde elettromagnetiche nel vuoto, l'ampiezza del campo elettrico è sempre proporzionale a quella del campo magnetico tramite la velocità della luce.\n\nQuesto legame permette di calcolare una delle due grandezze conoscendo l'altra: è fondamentale per descrivere la propagazione della luce e delle onde radio.",
     "variabili": [
-      { "simbolo": "$E$", "descrizione": "Ampiezza del campo elettrico", "unita": "V/m" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce nel vuoto", "unita": "m/s" },
-      { "simbolo": "$B$", "descrizione": "Ampiezza del campo magnetico", "unita": "T" }
+      { "simbolo": "E", "descrizione": "Ampiezza del campo elettrico", "unita": "\\frac{V}{m}" },
+      { "simbolo": "c", "descrizione": "Velocità della luce nel vuoto", "unita": "\\frac{m}{s}" },
+      { "simbolo": "B", "descrizione": "Ampiezza del campo magnetico", "unita": "T" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se l'ampiezza del campo elettrico di un'onda luminosa è $100 \\text{ V/m}$, l'ampiezza del campo magnetico sarà $B = 100 / (3 \\times 10^8) \\approx 3.33 \\times 10^{-7} \\text{ T}$."
+        "testo": "Le antenne trasmittenti generano sia un campo elettrico che uno magnetico: la loro intensità è sempre legata da questa relazione, indipendentemente dalla frequenza dell'onda."
       }
     ],
     "link_correlati": ["OEM_001"],
@@ -602,20 +382,20 @@
     "sottocategoria": "Onde Elettromagnetiche",
     "titolo": "Irradiamento (Intensità di un'Onda Elettromagnetica)",
     "formula_latex": "I = \\frac{P}{A} = \\frac{1}{2} \\varepsilon_0 c E_{max}^2 = \\frac{E_{max}^2}{2 \\mu_0 c}",
-    "descrizione": "L'irradiamento $I$ (o intensità) di un'onda elettromagnetica è la potenza media $P$ trasportata dall'onda per unità di area $A$ perpendicolare alla direzione di propagazione. Dipende dall'ampiezza del campo elettrico $E_{max}$ (o magnetico $B_{max}$).",
+    "descrizione": "L'irradiamento misura la potenza media trasportata da un'onda elettromagnetica per unità di area perpendicolare alla direzione di propagazione.\n\nPiù grande è il campo elettrico dell'onda, maggiore è l'energia che trasporta: questo concetto è fondamentale per capire la potenza della luce solare o delle microonde.",
     "variabili": [
-      { "simbolo": "$I$", "descrizione": "Irradiamento (intensità)", "unita": "W/m^2" },
-      { "simbolo": "$P$", "descrizione": "Potenza media", "unita": "W" },
-      { "simbolo": "$A$", "descrizione": "Area", "unita": "m^2" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce nel vuoto", "unita": "m/s" },
-      { "simbolo": "$E_{max}$", "descrizione": "Ampiezza del campo elettrico", "unita": "V/m" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" }
+      { "simbolo": "I", "descrizione": "Irradiamento (intensità)", "unita": "\\frac{W}{m^2}" },
+      { "simbolo": "P", "descrizione": "Potenza media", "unita": "W" },
+      { "simbolo": "A", "descrizione": "Area", "unita": "m^2" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Costante dielettrica del vuoto", "unita": "\\frac{F}{m}" },
+      { "simbolo": "c", "descrizione": "Velocità della luce nel vuoto", "unita": "\\frac{m}{s}" },
+      { "simbolo": "E_{max}", "descrizione": "Ampiezza del campo elettrico", "unita": "\\frac{V}{m}" },
+      { "simbolo": "\\mu_0", "descrizione": "Permeabilità magnetica del vuoto", "unita": "\\frac{N}{A^2}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "La luce solare che raggiunge la Terra ha un irradiamento medio di circa $1361 \\text{ W/m}^2$ (costante solare)."
+        "testo": "I pannelli solari funzionano perché la luce del Sole trasporta energia: l'irradiamento sulla superficie terrestre determina quanta energia può essere convertita in elettricità."
       }
     ],
     "link_correlati": ["OEM_003"],
@@ -629,17 +409,17 @@
     "sottocategoria": "Onde Elettromagnetiche",
     "titolo": "Vettore di Poynting",
     "formula_latex": "\\vec{S} = \\frac{1}{\\mu_0} (\\vec{E} \\times \\vec{B})",
-    "descrizione": "Il vettore di Poynting $\\vec{S}$ descrive la direzione e il modulo del flusso di energia (potenza per unità di area) di un'onda elettromagnetica. La sua direzione è la direzione di propagazione dell'onda, e il suo modulo istantaneo è l'irradiamento.",
+    "descrizione": "Il vettore di Poynting indica la direzione e l'intensità del flusso di energia trasportato da un'onda elettromagnetica.\n\nLa direzione del vettore mostra dove si muove l'energia, mentre il suo modulo indica quanta energia passa attraverso una superficie in un secondo.",
     "variabili": [
-      { "simbolo": "$\\vec{S}$", "descrizione": "Vettore di Poynting", "unita": "W/m^2" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A^2" },
-      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "V/m" },
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" }
+      { "simbolo": "\\vec{S}", "descrizione": "Vettore di Poynting", "unita": "\\frac{W}{m^2}" },
+      { "simbolo": "\\mu_0", "descrizione": "Permeabilità magnetica del vuoto", "unita": "\\frac{N}{A^2}" },
+      { "simbolo": "\\vec{E}", "descrizione": "Campo elettrico", "unita": "\\frac{V}{m}" },
+      { "simbolo": "\\vec{B}", "descrizione": "Campo magnetico", "unita": "T" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Il vettore di Poynting è essenziale per analizzare il trasferimento di energia nelle onde radio, microonde e luce visibile."
+        "testo": "Quando una lampadina è accesa, il vettore di Poynting punta dal filamento verso l'esterno: rappresenta il flusso di energia luminosa che si propaga nello spazio."
       }
     ],
     "link_correlati": ["OEM_004"],
@@ -653,16 +433,16 @@
     "sottocategoria": "Onde Elettromagnetiche",
     "titolo": "Quantità di Moto delle Onde Elettromagnetiche",
     "formula_latex": "p = \\frac{U}{c}",
-    "descrizione": "Un'onda elettromagnetica che trasporta energia $U$ possiede anche una quantità di moto $p$. Questa relazione implica che la luce, pur non avendo massa a riposo, trasporta quantità di moto e può esercitare pressione.",
+    "descrizione": "Le onde elettromagnetiche trasportano quantità di moto proporzionale all'energia trasportata e inversamente proporzionale alla velocità della luce.\n\nAnche la luce, pur non avendo massa, può esercitare una pressione e trasferire quantità di moto quando viene assorbita o riflessa da una superficie.",
     "variabili": [
-      { "simbolo": "$p$", "descrizione": "Quantità di moto", "unita": "kg \\cdot m/s" },
-      { "simbolo": "$U$", "descrizione": "Energia dell'onda", "unita": "J" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce nel vuoto", "unita": "m/s" }
+      { "simbolo": "p", "descrizione": "Quantità di moto", "unita": "kg \\cdot \\frac{m}{s}" },
+      { "simbolo": "U", "descrizione": "Energia dell'onda", "unita": "J" },
+      { "simbolo": "c", "descrizione": "Velocità della luce nel vuoto", "unita": "\\frac{m}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un laser potente che emette $1 \\text{ J}$ di energia in un breve impulso trasporta una quantità di moto $p = 1 / (3 \\times 10^8) \\approx 3.33 \\times 10^{-9} \\text{ kg} \\cdot \\text{m/s}$."
+        "testo": "Le vele solari sfruttano la quantità di moto della luce solare per spingere sonde spaziali: anche se la spinta è piccola, nello spazio può accelerare oggetti per lunghi periodi."
       }
     ],
     "link_correlati": ["OEM_001"],
@@ -676,16 +456,16 @@
     "sottocategoria": "Onde Elettromagnetiche",
     "titolo": "Pressione di Radiazione",
     "formula_latex": "\\begin{aligned} P_{rad} &= \\frac{I}{c} \\quad \\text{(assorbimento perfetto)} \\\\ P_{rad} &= \\frac{2I}{c} \\quad \\text{(riflessione perfetta)} \\end{aligned}",
-    "descrizione": "La pressione di radiazione $P_{rad}$ è la pressione esercitata da un'onda elettromagnetica su una superficie. Se l'onda è completamente assorbita, la pressione è $I/c$. Se è completamente riflessa, la pressione è doppia, $2I/c$.",
+    "descrizione": "La pressione di radiazione è la forza esercitata da un'onda elettromagnetica su una superficie, proporzionale all'intensità dell'onda e inversamente proporzionale alla velocità della luce.\n\nSe la superficie assorbe tutta la luce, la pressione è minore rispetto al caso in cui la riflette completamente: questo effetto è sfruttato nelle vele solari e negli esperimenti di laboratorio.",
     "variabili": [
-      { "simbolo": "$P_{rad}$", "descrizione": "Pressione di radiazione", "unita": "Pa (Pascal)" },
-      { "simbolo": "$I$", "descrizione": "Irradiamento (intensità)", "unita": "W/m^2" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce nel vuoto", "unita": "m/s" }
+      { "simbolo": "P_{rad}", "descrizione": "Pressione di radiazione", "unita": "Pa" },
+      { "simbolo": "I", "descrizione": "Irradiamento (intensità)", "unita": "\\frac{W}{m^2}" },
+      { "simbolo": "c", "descrizione": "Velocità della luce nel vuoto", "unita": "\\frac{m}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Le vele solari proposte per la propulsione spaziale sfruttano la pressione di radiazione della luce solare per generare una piccola spinta continua."
+        "testo": "In laboratorio si possono sospendere piccoli dischi riflettenti con un raggio laser: la pressione di radiazione li fa muovere, anche se la forza è molto piccola."
       }
     ],
     "link_correlati": ["OEM_004", "OEM_006"],
@@ -699,16 +479,16 @@
     "sottocategoria": "Ottica (Polarizzazione)",
     "titolo": "Polarizzatore Lineare Ideale",
     "formula_latex": "I = I_0 \\cos^2(\\theta)",
-    "descrizione": "Questa non è una formula di polarizzatore lineare ideale, ma la Legge di Malus, che descrive l'intensità $I$ della luce polarizzata che emerge da un polarizzatore quando un'onda polarizzata linearmente con intensità iniziale $I_0$ incide su di esso. $\\theta$ è l'angolo tra la direzione di polarizzazione dell'onda incidente e l'asse di trasmissione del polarizzatore.",
+    "descrizione": "La legge di Malus descrive come l'intensità della luce polarizzata che attraversa un polarizzatore dipende dall'angolo tra la direzione di polarizzazione e l'asse del polarizzatore.\n\nQuando la luce è già polarizzata e incontra un secondo polarizzatore ruotato, solo una parte dell'intensità passa: il massimo si ha se i due assi sono allineati, il minimo se sono perpendicolari.",
     "variabili": [
-      { "simbolo": "$I$", "descrizione": "Intensità della luce trasmessa", "unita": "W/m^2" },
-      { "simbolo": "$I_0$", "descrizione": "Intensità della luce incidente polarizzata", "unita": "W/m^2" },
-      { "simbolo": "$\\theta$", "descrizione": "Angolo tra la direzione di polarizzazione incidente e l'asse del polarizzatore", "unita": "rad" }
+      { "simbolo": "I", "descrizione": "Intensità della luce trasmessa", "unita": "\\frac{W}{m^2}" },
+      { "simbolo": "I_0", "descrizione": "Intensità della luce incidente polarizzata", "unita": "\\frac{W}{m^2}" },
+      { "simbolo": "\\theta", "descrizione": "Angolo tra la direzione di polarizzazione incidente e l'asse del polarizzatore", "unita": "rad" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se la luce polarizzata incide su un polarizzatore con un angolo di $45°$ rispetto al suo asse, l'intensità trasmessa sarà $I = I_0 \\cos^2(45°) = I_0 \\cdot (1/\\sqrt{2})^2 = I_0/2$."
+        "testo": "Gli occhiali da sole polarizzati bloccano la luce riflessa da superfici come l'acqua o l'asfalto: ruotando gli occhiali, l'intensità della luce che arriva agli occhi cambia secondo questa legge."
       }
     ],
     "link_correlati": [],

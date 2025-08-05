@@ -5,16 +5,16 @@
     "sottocategoria": "Definizioni Fondamentali",
     "titolo": "Momento Angolare",
     "formula_latex": "\\vec{L} = \\vec{r} \\times \\vec{p}",
-    "descrizione": "Il momento angolare $\\vec{L}$ di un punto materiale è una grandezza vettoriale che descrive la quantità di moto rotazionale. È definito come il prodotto vettoriale del vettore posizione $\\vec{r}$ e del vettore quantità di moto $\\vec{p}$.",
+    "descrizione": "Il momento angolare di un punto materiale è il prodotto vettoriale tra il vettore posizione rispetto a un punto fisso e la quantità di moto.\n\nMisura quanto un corpo tende a ruotare attorno a un punto: più lontano e veloce si muove rispetto all'origine, maggiore è il momento angolare.",
     "variabili": [
-      { "simbolo": "$\\vec{L}$", "descrizione": "Momento angolare", "unita": "J$\\cdot$s o kg$\\cdot$m$^2$/s" },
-      { "simbolo": "$\\vec{r}$", "descrizione": "Vettore posizione (raggio)", "unita": "m" },
-      { "simbolo": "$\\vec{p}$", "descrizione": "Vettore quantità di moto", "unita": "kg$\\cdot$m/s" }
+      { "simbolo": "\\vec{L}", "descrizione": "Momento angolare", "unita": "\\frac{kg \\cdot m^2}{s}" },
+      { "simbolo": "\\vec{r}", "descrizione": "Vettore posizione (raggio)", "unita": "m" },
+      { "simbolo": "\\vec{p}", "descrizione": "Vettore quantità di moto", "unita": "kg \\cdot \\frac{m}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una massa di $2 \\text{ kg}$ si muove tangenzialmente con velocità di $5 \\text{ m/s}$ su una traiettoria circolare con raggio di $3 \\text{ m}$. Il momento angolare è $L = r \\cdot m \\cdot v = 3 \\cdot 2 \\cdot 5 = 30 \\text{ J}\\cdot\\text{s}$."
+        "testo": "Un pattinatore che si allontana dal centro della pista aumenta il suo momento angolare anche se la velocità resta costante, perché la distanza dall'origine conta quanto la velocità."
       }
     ],
     "link_correlati": [ "ROT_002", "ROT_003", "QDM_001" ],
@@ -28,18 +28,18 @@
     "sottocategoria": "Definizioni Fondamentali",
     "titolo": "Momento Angolare Totale di un Sistema",
     "formula_latex": "\\vec{L}_{tot} = \\sum_{i} \\vec{L}_i \\Rightarrow \\vec{L}_{tot} = \\sum_{i} m_i (\\vec{r}_i \\times \\vec{v}_i)",
-    "descrizione": "Il momento angolare totale $\\vec{L}_{tot}$ di un sistema di corpi è la somma vettoriale dei momenti angolari individuali di tutti i corpi del sistema. Per un corpo rigido in rotazione attorno a un asse fisso, spesso è espresso come $L = I \\omega$.",
+    "descrizione": "Il momento angolare totale di un sistema è la somma vettoriale dei momenti angolari di tutte le sue parti.\n\nServe per descrivere la rotazione complessiva di sistemi composti, come pianeti in orbita o molecole, e si conserva se non ci sono forze esterne che esercitano momenti torcenti.",
     "variabili": [
-      { "simbolo": "$\\vec{L}_{tot}$", "descrizione": "Momento angolare totale del sistema", "unita": "J$\\cdot$s" },
-      { "simbolo": "$\\vec{L}_i$", "descrizione": "Momento angolare dell'i-esimo corpo", "unita": "J$\\cdot$s" },
-      { "simbolo": "$m_i$", "descrizione": "Massa dell'i-esimo corpo", "unita": "kg" },
-      { "simbolo": "$\\vec{r}_i$", "descrizione": "Vettore posizione dell'i-esimo corpo", "unita": "m" },
-      { "simbolo": "$\\vec{v}_i$", "descrizione": "Velocità dell'i-esimo corpo", "unita": "m/s" }
+      { "simbolo": "\\vec{L}_{tot}", "descrizione": "Momento angolare totale del sistema", "unita": "\\frac{kg \\cdot m^2}{s}" },
+      { "simbolo": "\\vec{L}_i", "descrizione": "Momento angolare dell'i-esimo corpo", "unita": "\\frac{kg \\cdot m^2}{s}" },
+      { "simbolo": "m_i", "descrizione": "Massa dell'i-esimo corpo", "unita": "kg" },
+      { "simbolo": "\\vec{r}_i", "descrizione": "Vettore posizione dell'i-esimo corpo", "unita": "m" },
+      { "simbolo": "\\vec{v}_i", "descrizione": "Velocità dell'i-esimo corpo", "unita": "\\frac{m}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un disco di massa $M$ e raggio $R$ che ruota con velocità angolare $\\omega$ ha momento angolare $L = I \\omega = (1/2 M R^2) \\omega$ (assumendo rotazione attorno al centro)."
+        "testo": "Nel sistema solare, il momento angolare totale tiene conto sia della rotazione dei pianeti su se stessi sia della loro rivoluzione attorno al Sole: la somma di tutti questi contributi descrive la rotazione globale del sistema."
       }
     ],
     "link_correlati": [ "ROT_001", "ROT_003", "ROT_005", "ROT_009" ],
@@ -53,16 +53,16 @@
     "sottocategoria": "Definizioni Fondamentali",
     "titolo": "Momento Angolare nel Moto Circolare",
     "formula_latex": "L = I \\omega",
-    "descrizione": "Per un corpo che ruota attorno a un asse fisso, il modulo del momento angolare $L$ è il prodotto del suo momento di inerzia $I$ rispetto a quell'asse e della sua velocità angolare $\\omega$. Questa formula è l'analogo rotazionale di $p = mv$.",
+    "descrizione": "Il momento angolare di un corpo che ruota attorno a un asse fisso è dato dal prodotto tra il momento di inerzia e la velocità angolare.\n\nPiù un oggetto è difficile da mettere in rotazione (maggiore inerzia) o più velocemente ruota, maggiore è il suo momento angolare.",
     "variabili": [
-      { "simbolo": "$L$", "descrizione": "Momento angolare", "unita": "J$\\cdot$s" },
-      { "simbolo": "$I$", "descrizione": "Momento di inerzia", "unita": "kg$\\cdot$m$^2$" },
-      { "simbolo": "$\\omega$", "descrizione": "Velocità angolare", "unita": "rad/s" }
+      { "simbolo": "L", "descrizione": "Momento angolare", "unita": "\\frac{kg \\cdot m^2}{s}" },
+      { "simbolo": "I", "descrizione": "Momento di inerzia", "unita": "kg \\cdot m^2" },
+      { "simbolo": "\\omega", "descrizione": "Velocità angolare", "unita": "\\frac{rad}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un cilindro di $0.5 \\text{ kg}$ e raggio $0.1 \\text{ m}$ ruota a $10 \\text{ rad/s}$. Il suo momento di inerzia è $I = 0.5 \\cdot 0.5 \\cdot (0.1)^2 = 0.0025 \\text{ kg}\\cdot\\text{m}^2$. Il momento angolare è $L = 0.0025 \\cdot 10 = 0.025 \\text{ J}\\cdot\\text{s}$."
+        "testo": "Un pattinatore che avvicina le braccia al corpo riduce il suo momento di inerzia e, per conservazione del momento angolare, aumenta la velocità di rotazione."
       }
     ],
     "link_correlati": [ "ROT_001", "ROT_002", "ROT_004" ],
@@ -76,16 +76,16 @@
     "sottocategoria": "Momento di Inerzia",
     "titolo": "Momento di Inerzia (Massa Puntiforme)",
     "formula_latex": "I = m r^2",
-    "descrizione": "Il momento di inerzia $I$ è la misura della resistenza di un corpo ai cambiamenti nel suo stato di moto rotazionale. Per una singola massa puntiforme $m$ che ruota a distanza $r$ da un asse, il momento di inerzia è dato da $m r^2$. Per corpi estesi, è la somma o l'integrale di tutti gli $mr^2$ differenziali.",
+    "descrizione": "Il momento di inerzia di una massa puntiforme rispetto a un asse di rotazione è dato dal prodotto tra la massa e il quadrato della distanza dall'asse.\n\nIndica quanto una massa, posta più lontano dall'asse, rende più difficile avviare o fermare la rotazione: la posizione conta quanto la massa.",
     "variabili": [
-      { "simbolo": "$I$", "descrizione": "Momento di inerzia", "unita": "kg$\\cdot$m$^2$" },
-      { "simbolo": "$m$", "descrizione": "Massa del corpo", "unita": "kg" },
-      { "simbolo": "$r$", "descrizione": "Distanza della massa dall'asse di rotazione", "unita": "m" }
+      { "simbolo": "I", "descrizione": "Momento di inerzia", "unita": "kg \\cdot m^2" },
+      { "simbolo": "m", "descrizione": "Massa del corpo", "unita": "kg" },
+      { "simbolo": "r", "descrizione": "Distanza della massa dall'asse di rotazione", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se un pattinatore artistico ritrae le braccia, riduce il suo momento di inerzia, aumentando la sua velocità angolare per conservare il momento angolare."
+        "testo": "Un martello ruota più facilmente se lo si impugna vicino alla testa: spostando la massa più vicino all'asse si riduce il momento di inerzia e la rotazione diventa più semplice."
       }
     ],
     "link_correlati": [ "ROT_002", "ROT_003", "ROT_005", "ROT_006", "ROT_007", "ROT_008" ],
@@ -99,16 +99,16 @@
     "sottocategoria": "Variazione del Momento Angolare",
     "titolo": "Impulso Angolare",
     "formula_latex": "\\Delta \\vec{L} = \\vec{M} \\Delta t",
-    "descrizione": "L'impulso angolare è uguale alla variazione del momento angolare di un sistema. È dato dal prodotto del momento torcente netto $\\vec{M}$ che agisce sul sistema e l'intervallo di tempo $\\Delta t$ durante il quale agisce. Questa è l'equivalente rotazionale del teorema dell'impulso lineare.",
+    "descrizione": "L'impulso angolare è la variazione del momento angolare dovuta all'azione di un momento torcente per un certo intervallo di tempo.\n\nSe si applica una forza che fa ruotare un oggetto per un certo tempo, il suo momento angolare cambia: più a lungo o più forte si agisce, maggiore è la variazione.",
     "variabili": [
-      { "simbolo": "$\\Delta \\vec{L}$", "descrizione": "Variazione del momento angolare", "unita": "J$\\cdot$s" },
-      { "simbolo": "$\\vec{M}$", "descrizione": "Momento torcente netto", "unita": "N$\\cdot$m" },
-      { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
+      { "simbolo": "\\Delta \\vec{L}", "descrizione": "Variazione del momento angolare", "unita": "\\frac{kg \\cdot m^2}{s}" },
+      { "simbolo": "\\vec{M}", "descrizione": "Momento torcente netto", "unita": "N \\cdot m" },
+      { "simbolo": "\\Delta t", "descrizione": "Intervallo di tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un momento torcente di $10 \\text{ N}\\cdot\\text{m}$ applicato per $2 \\text{ s}$ a una ruota ferma produce una variazione del momento angolare di $20 \\text{ J}\\cdot\\text{s}$."
+        "testo": "Per avviare la rotazione di una giostra, serve spingerla con forza per qualche secondo: l'impulso angolare ricevuto determina quanto velocemente inizierà a ruotare."
       }
     ],
     "link_correlati": [ "ROT_001", "ROT_002", "ROT_006", "QDM_004" ],
@@ -122,16 +122,16 @@
     "sottocategoria": "Dinamica Rotazionale",
     "titolo": "Legge fondamentale della Dinamica rotazionale",
     "formula_latex": "\\vec{M} = I \\vec{\\alpha}",
-    "descrizione": "La legge fondamentale della Dinamica rotazionale stabilisce che il momento torcente netto $\\vec{M}$ che agisce su un corpo rigido è uguale al prodotto del suo momento di inerzia $I$ e della sua accelerazione angolare $\\vec{\\alpha}$. Questa è l'analogo rotazionale della seconda legge di Newton ($F=ma$).",
+    "descrizione": "Il momento torcente applicato a un corpo rigido è uguale al prodotto tra il momento di inerzia e l'accelerazione angolare.\n\nPer far ruotare più rapidamente un oggetto serve più momento torcente se l'oggetto è più 'pesante' dal punto di vista rotazionale (maggiore inerzia).",
     "variabili": [
-      { "simbolo": "$\\vec{M}$", "descrizione": "Momento torcente netto", "unita": "N$\\cdot$m" },
-      { "simbolo": "$I$", "descrizione": "Momento di inerzia", "unita": "kg$\\cdot$m$^2$" },
-      { "simbolo": "$\\vec{\\alpha}$", "descrizione": "Accelerazione angolare", "unita": "rad/s$^2$" }
+      { "simbolo": "\\vec{M}", "descrizione": "Momento torcente netto", "unita": "N \\cdot m" },
+      { "simbolo": "I", "descrizione": "Momento di inerzia", "unita": "kg \\cdot m^2" },
+      { "simbolo": "\\vec{\\alpha}", "descrizione": "Accelerazione angolare", "unita": "\\frac{rad}{s^2}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una puleggia con momento di inerzia $0.2 \\text{ kg}\\cdot\\text{m}^2$ subisce un momento torcente netto di $1 \\text{ N}\\cdot\\text{m}$. L'accelerazione angolare è $\\alpha = 1 / 0.2 = 5 \\text{ rad/s}^2$."
+        "testo": "Per far partire velocemente una porta pesante serve applicare una forza maggiore rispetto a una porta leggera: la differenza sta nel momento di inerzia."
       }
     ],
     "link_correlati": [ "ROT_004", "ROT_005", "ROT_009" ],
@@ -145,16 +145,16 @@
     "sottocategoria": "Energia e Lavoro Rotazionale",
     "titolo": "Energia Cinetica Rotazionale",
     "formula_latex": "K = \\frac{1}{2} I \\omega^2",
-    "descrizione": "L'energia cinetica rotazionale $K$ è l'energia che un corpo possiede grazie al suo moto di rotazione. Dipende dal suo momento di inerzia $I$ e dal quadrato della sua velocità angolare $\\omega$. È l'analogo rotazionale dell'energia cinetica traslazionale ($K = 1/2 mv^2$).",
+    "descrizione": "L'energia cinetica rotazionale è proporzionale al momento di inerzia e al quadrato della velocità angolare.\n\nUn oggetto che ruota possiede energia per il solo fatto di ruotare: più è difficile da ruotare o più velocemente gira, più energia contiene.",
     "variabili": [
-      { "simbolo": "$K$", "descrizione": "Energia cinetica rotazionale", "unita": "J" },
-      { "simbolo": "$I$", "descrizione": "Momento di inerzia", "unita": "kg$\\cdot$m$^2$" },
-      { "simbolo": "$\\omega$", "descrizione": "Velocità angolare", "unita": "rad/s" }
+      { "simbolo": "K", "descrizione": "Energia cinetica rotazionale", "unita": "J" },
+      { "simbolo": "I", "descrizione": "Momento di inerzia", "unita": "kg \\cdot m^2" },
+      { "simbolo": "\\omega", "descrizione": "Velocità angolare", "unita": "\\frac{rad}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un volano con $I = 0.1 \\text{ kg}\\cdot\\text{m}^2$ che ruota a $20 \\text{ rad/s}$ ha energia cinetica rotazionale $K = 0.5 \\cdot 0.1 \\cdot (20)^2 = 20 \\text{ J}$."
+        "testo": "Un volano pesante che ruota velocemente può accumulare molta energia: viene usato nei motori per mantenere costante la velocità anche quando la forza del motore varia."
       }
     ],
     "link_correlati": [ "ROT_004", "ROT_009", "ENE_002" ],
@@ -168,16 +168,16 @@
     "sottocategoria": "Energia e Lavoro Rotazionale",
     "titolo": "Lavoro nel Moto Rotatorio",
     "formula_latex": "W = M \\Delta \\theta",
-    "descrizione": "Il lavoro $W$ svolto da un momento torcente costante $M$ che agisce su un corpo rigido in rotazione è il prodotto del momento torcente e dello spostamento angolare $\\Delta \\theta$. Questa è l'analogo rotazionale del lavoro lineare ($W = Fd$).",
+    "descrizione": "Il lavoro compiuto da un momento torcente costante è dato dal prodotto tra il momento torcente e lo spostamento angolare.\n\nQuando si applica una forza per far ruotare un oggetto, il lavoro dipende sia da quanto si spinge sia da quanto l'oggetto ruota.",
     "variabili": [
-      { "simbolo": "$W$", "descrizione": "Lavoro rotazionale", "unita": "J" },
-      { "simbolo": "$M$", "descrizione": "Momento torcente costante", "unita": "N$\\cdot$m" },
-      { "simbolo": "$\\Delta \\theta$", "descrizione": "Spostamento angolare", "unita": "rad" }
+      { "simbolo": "W", "descrizione": "Lavoro rotazionale", "unita": "J" },
+      { "simbolo": "M", "descrizione": "Momento torcente costante", "unita": "N \\cdot m" },
+      { "simbolo": "\\Delta \\theta", "descrizione": "Spostamento angolare", "unita": "rad" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Per aprire una porta, si applica un momento torcente di $5 \\text{ N}\\cdot\\text{m}$ per un angolo di $90°$ ($ \\pi/2 \\text{ rad}$). Il lavoro svolto è $W = 5 \\cdot (\\pi/2) \\approx 7.85 \\text{ J}$."
+        "testo": "Per avvitare una vite, bisogna applicare una forza per farla ruotare: il lavoro fatto dipende sia dalla forza esercitata sia da quanti giri si compiono."
       }
     ],
     "link_correlati": [ "ROT_005", "ROT_009", "ENE_001" ],
@@ -191,16 +191,16 @@
     "sottocategoria": "Energia e Lavoro Rotazionale",
     "titolo": "Potenza nel Moto Rotatorio",
     "formula_latex": "P = M \\cdot \\omega",
-    "descrizione": "La potenza $P$ sviluppata da un momento torcente su un corpo in rotazione è il prodotto del momento torcente $M$ e della velocità angolare $\\omega$. È la rapidità con cui il lavoro rotazionale viene compiuto. Questa è l'analogo rotazionale della potenza lineare ($P = Fv$).",
+    "descrizione": "La potenza sviluppata da un momento torcente su un corpo in rotazione è il prodotto tra il momento torcente e la velocità angolare.\n\nIndica quanto velocemente si compie lavoro durante la rotazione: più velocemente si ruota o più forte si spinge, maggiore è la potenza.",
     "variabili": [
-      { "simbolo": "$P$", "descrizione": "Potenza rotazionale", "unita": "W" },
-      { "simbolo": "$\\tau$", "descrizione": "Momento torcente", "unita": "N$\\cdot$m" },
-      { "simbolo": "$\\omega$", "descrizione": "Velocità angolare", "unita": "rad/s" }
+      { "simbolo": "P", "descrizione": "Potenza rotazionale", "unita": "W" },
+      { "simbolo": "\\tau", "descrizione": "Momento torcente", "unita": "N \\cdot m" },
+      { "simbolo": "\\omega", "descrizione": "Velocità angolare", "unita": "\\frac{rad}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un motore eroga un momento torcente di $20 \\text{ N}\\cdot\\text{m}$ a una velocità angolare di $100 \\text{ rad/s}$. La potenza sviluppata è $P = 20 \\cdot 100 = 2000 \\text{ W}$."
+        "testo": "Un trapano che gira più velocemente o con più forza sviluppa più potenza: serve più energia per forare materiali duri o per aumentare la velocità di rotazione."
       }
     ],
     "link_correlati": [ "ROT_005", "ROT_008", "ENE_010" ],
@@ -214,21 +214,21 @@
     "sottocategoria": "Moto Complesso",
     "titolo": "Rotolamento Senza Slittamento",
     "formula_latex": "\\begin{aligned} v_{CM} &= R \\omega \\\\ a_{CM} &= R \\alpha \\\\ K_{tot} &= K_{trasl} + K_{rot} \\end{aligned}",
-    "descrizione": "Il rotolamento senza slittamento è un **moto combinato** di **traslazione** e **rotazione** dove il punto di contatto del corpo con la superficie è istantaneamente fermo. Questo implica relazioni specifiche tra la velocità del centro di massa $v_{CM}$ e la velocità angolare $\\omega$, e tra l'accelerazione del centro di massa $a_{CM}$ e l'accelerazione angolare $\\alpha$. L'energia cinetica totale è la somma dell'energia cinetica traslazionale e rotazionale.",
+    "descrizione": "Nel rotolamento senza slittamento, la velocità e l'accelerazione del centro di massa sono legate alla velocità e accelerazione angolare, e l'energia cinetica totale è la somma di quella traslazionale e rotazionale.\n\nUn corpo che rotola senza scivolare combina traslazione e rotazione: ogni punto di contatto con il suolo è istantaneamente fermo rispetto alla superficie.",
     "variabili": [
-      { "simbolo": "$v_{CM}$", "descrizione": "Velocità del centro di massa", "unita": "m/s" },
-      { "simbolo": "$R$", "descrizione": "Raggio del corpo rotolante", "unita": "m" },
-      { "simbolo": "$\\omega$", "descrizione": "Velocità angolare", "unita": "rad/s" },
-      { "simbolo": "$a_{CM}$", "descrizione": "Accelerazione del centro di massa", "unita": "m/s$^2$" },
-      { "simbolo": "$\\alpha$", "descrizione": "Accelerazione angolare", "unita": "rad/s$^2$" },
-      { "simbolo": "$K_{tot}$", "descrizione": "Energia cinetica totale", "unita": "J" },
-      { "simbolo": "$K_{trasl}$", "descrizione": "Energia cinetica traslazionale ($1/2 M v_{CM}^2$)", "unita": "J" },
-      { "simbolo": "$K_{rot}$", "descrizione": "Energia cinetica rotazionale ($1/2 I \\omega^2$)", "unita": "J" }
+      { "simbolo": "v_{CM}", "descrizione": "Velocità del centro di massa", "unita": "\\frac{m}{s}" },
+      { "simbolo": "R", "descrizione": "Raggio del corpo rotolante", "unita": "m" },
+      { "simbolo": "\\omega", "descrizione": "Velocità angolare", "unita": "\\frac{rad}{s}" },
+      { "simbolo": "a_{CM}", "descrizione": "Accelerazione del centro di massa", "unita": "\\frac{m}{s^2}" },
+      { "simbolo": "\\alpha", "descrizione": "Accelerazione angolare", "unita": "\\frac{rad}{s^2}" },
+      { "simbolo": "K_{tot}", "descrizione": "Energia cinetica totale", "unita": "J" },
+      { "simbolo": "K_{trasl}", "descrizione": "Energia cinetica traslazionale (1/2 M v_{CM}^2)", "unita": "J" },
+      { "simbolo": "K_{rot}", "descrizione": "Energia cinetica rotazionale (1/2 I \\omega^2)", "unita": "J" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una palla che rotola senza slittamento su un piano inclinato converte energia potenziale gravitazionale in energia cinetica sia traslazionale sia rotazionale."
+        "testo": "Una bicicletta che avanza senza slittare sulle ruote sfrutta il rotolamento senza slittamento: la velocità del centro della ruota è proporzionale alla velocità angolare, e l'energia si distribuisce tra moto rettilineo e rotazione."
       }
     ],
     "link_correlati": [ "ROT_007", "ENE_002", "QDM_009" ],

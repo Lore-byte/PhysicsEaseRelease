@@ -4,26 +4,26 @@
     "categoria": "Cinematica",
     "sottocategoria": "Moto rettilineo uniforme",
     "titolo": "Moto rettilineo uniforme",
-    "formula_latex": "x(t) = x_{0} + v \\cdot t",
-    "descrizione": "Descrive il moto di un punto materiale che si muove a velocità costante lungo una direzione retta.",
+    "formula_latex": "x(t) = x_0 + vt",
+    "descrizione": "La legge oraria del moto rettilineo uniforme descrive la posizione di un corpo che si muove lungo una **traiettoria rettilinea** con **velocità costante** nel tempo. \n\nLa formula mostra che la posizione del corpo cresce linearmente con il tempo, partendo da una posizione iniziale $x_0$. Il termine $vt$ rappresenta lo spazio percorso a velocità costante. In assenza di accelerazione, ogni intervallo di tempo corrisponde sempre allo stesso spostamento.",
     "variabili": [
       {
-        "simbolo": "$x(t)$",
+        "simbolo": "x(t)",
         "descrizione": "Posizione al tempo $t$",
         "unita": "m"
       },
       {
-        "simbolo": "$x_0$",
+        "simbolo": "x_0",
         "descrizione": "Posizione iniziale",
         "unita": "m"
       },
       {
-        "simbolo": "$v$",
+        "simbolo": "v",
         "descrizione": "Velocità costante",
-        "unita": "m/s"
+        "unita": "\\frac{m}{s}"
       },
       {
-        "simbolo": "$t$",
+        "simbolo": "t",
         "descrizione": "Tempo trascorso",
         "unita": "s"
       }
@@ -31,7 +31,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un'automobile parte dalla posizione $x_0 = 0 \\text{ m}$ con velocità $v = 20 \\text{ m/s}$. Dopo $t = 5 \\text{ s}$, la sua posizione è: $x(5) = 0 + 20 \\cdot 5 = 100 \\text{ m}$."
+        "testo": "Un'automobile viaggia in autostrada a velocità costante: ogni minuto percorre la stessa distanza. Sapendo dove si trovava all’inizio, è possibile determinare in ogni istante la sua posizione futura con precisione."
       }
     ],
     "link_correlati": [
@@ -40,48 +40,49 @@
     ],
     "parole_chiave": [
       "moto uniforme",
+      "moto rettilineo",
       "velocità costante",
       "legge oraria",
-      "x0 + v t"
+      "x0 + vt"
     ],
     "data_creazione": "2025-05-31",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-23"
   },
   {
     "id": "CIN_002",
     "categoria": "Cinematica",
     "sottocategoria": "Moto uniformemente accelerato",
     "titolo": "Moto uniformemente accelerato",
-    "formula_latex": "\\begin{aligned} \\left\\{ \\begin{aligned} v(t) &= v_0 + a \\cdot t \\\\ x(t) &= x_{0} + v_{0} \\cdot t + \\tfrac{1}{2} a \\cdot t^{2} \\end{aligned} \\right. \\end{aligned}",
-    "descrizione": "Descrive un moto con accelerazione costante $a$, specificando sia l'evoluzione della velocità nel tempo che della posizione.",
+    "formula_latex": "\\begin{aligned} \\left\\{ \\begin{aligned} v(t) &= v_0 + at \\\\ x(t) &= x_0 + v_0t + \\tfrac{1}{2}at^2 \\end{aligned} \\right. \\end{aligned}",
+    "descrizione": "Le leggi del moto uniformemente accelerato descrivono l'evoluzione della velocità e della posizione di un corpo che si muove lungo una **traiettoria rettilinea** con **accelerazione costante**. \n\nLa prima equazione mostra che la velocità $v(t)$ cambia in modo lineare nel tempo, a partire da un valore iniziale $v_0$, con una variazione dovuta all’accelerazione $a$. \nLa seconda equazione esprime la posizione $x(t)$ come somma di tre termini: la posizione iniziale $x_0$, lo spostamento dovuto alla velocità iniziale, e un contributo crescente con il quadrato del tempo dovuto all’accelerazione. \nInsieme, descrivono un moto che può essere in accelerazione o decelerazione, ma sempre con variazione costante della velocità.",
     "variabili": [
       {
-        "simbolo": "$x(t)$",
+        "simbolo": "x(t)",
         "descrizione": "Posizione al tempo $t$",
         "unita": "m"
       },
       {
-        "simbolo": "$x_0$",
+        "simbolo": "x_0",
         "descrizione": "Posizione iniziale",
         "unita": "m"
       },
       {
-        "simbolo": "$v(t)$",
+        "simbolo": "v(t)",
         "descrizione": "Velocità al tempo $t$",
-        "unita": "m/s"
+        "unita": "\\frac{m}{s}"
       },
       {
-        "simbolo": "$v_0$",
+        "simbolo": "v_0",
         "descrizione": "Velocità iniziale",
-        "unita": "m/s"
+        "unita": "\\frac{m}{s}"
       },
       {
-        "simbolo": "$a$",
+        "simbolo": "a",
         "descrizione": "Accelerazione costante",
-        "unita": "m/s²"
+        "unita": "\\frac{m}{s^2}"
       },
       {
-        "simbolo": "$t$",
+        "simbolo": "t",
         "descrizione": "Tempo trascorso",
         "unita": "s"
       }
@@ -89,7 +90,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un corpo parte da fermo ($v_0 = 0 \\text{ m/s}$) da $x_0 = 0 \\text{ m}$ e accelera costantemente con $a = 2 \\text{ m/s}^2$. Dopo $t = 4 \\text{ s}$, la velocità è $v = 0 + 2 \\cdot 4 = 8 \\text{ m/s}$ e la posizione diventa: $x(4) = 0 + 0 \\cdot 4 + 0.5 \\cdot 2 \\cdot 4^2 = 16 \\text{ m}$."
+        "testo": "Una palla lanciata verso l’alto rallenta a causa della gravità: la sua velocità diminuisce linearmente fino ad annullarsi, mentre la posizione segue una curva crescente che poi si appiattisce. Le due formule permettono di prevedere istante per istante sia la velocità che l’altezza della palla."
       }
     ],
     "link_correlati": [
@@ -100,33 +101,117 @@
     "parole_chiave": [
       "moto uniformemente accelerato",
       "accelerazione costante",
-      "1/2 a t^2",
-      "v0 t",
+      "1/2at^2",
+      "v0t",
       "v = v0 + at"
     ],
     "data_creazione": "2025-05-31",
-    "data_ultima_modifica": "2025-07-19"
+    "data_ultima_modifica": "2025-07-23"
   },
   {
     "id": "CIN_003",
     "categoria": "Cinematica",
     "sottocategoria": "Velocità",
-    "titolo": "Velocità istantanea",
-    "formula_latex": "v(t) = \\dfrac{dx(t)}{dt}",
-    "descrizione": "La velocità istantanea del moto di un punto materiale in funzione del tempo, definita come derivata della posizione $x(t)$ rispetto al tempo $t$.",
+    "titolo": "Velocità media",
+    "formula_latex": "\\vec{v}_m = \\frac{\\Delta \\vec{s}}{\\Delta t}",
+    "descrizione": "La velocità media è definita come il rapporto tra lo spostamento vettoriale $\\Delta \\vec{s}$ e l’intervallo di tempo $\\Delta t$ in cui esso avviene. \n\nQuesta espressione misura quanto rapidamente e in quale direzione cambia la posizione di un corpo in un certo intervallo di tempo. Non tiene conto dei dettagli del percorso, ma considera solo lo spostamento complessivo (inizio → fine) diviso per il tempo impiegato. È quindi una **grandezza vettoriale**, con modulo, direzione e verso.",
     "variabili": [
       {
-        "simbolo": "$v(t)$",
-        "descrizione": "Velocità istantanea",
-        "unita": "m/s"
+        "simbolo": "\\vec{v}_m",
+        "descrizione": "Velocità media",
+        "unita": "\\frac{m}{s}"
       },
       {
-        "simbolo": "$x(t)$",
+        "simbolo": "\\Delta \\vec{s}",
+        "descrizione": "Spostamento",
+        "unita": "m"
+      },
+      {
+        "simbolo": "\\Delta t",
+        "descrizione": "Intervallo di tempo",
+        "unita": "s"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se una persona cammina 100 $m$ verso nord in 50 $s$, poi torna indietro nello stesso tempo, la sua velocità media sull’intero tragitto è zero: lo spostamento totale è nullo, anche se ha percorso 200 $m$. Questo chiarisce che la velocità media tiene conto solo della variazione netta di posizione."
+      }
+    ],
+    "link_correlati": [
+      "CIN_001",
+      "CIN_003"
+    ],
+    "parole_chiave": [
+      "velocità media",
+      "spostamento",
+      "intervallo di tempo"
+    ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-23"
+  },
+  {
+    "id": "CIN_004",
+    "categoria": "Cinematica",
+    "sottocategoria": "Accelerazione",
+    "titolo": "Accelerazione media",
+    "formula_latex": "\\vec{a}_m = \\frac{\\Delta \\vec{v}}{\\Delta t}",
+    "descrizione": "L'accelerazione media è definita come il rapporto tra la variazione della velocità $\\Delta \\vec{v}$ e l’intervallo di tempo $\\Delta t$ in cui tale variazione avviene. \n\nQuesta formula indica quanto e in quale direzione cambia la velocità di un corpo nell’unità di tempo. Essendo basata sulla variazione vettoriale della velocità, tiene conto sia del cambiamento di intensità (modulo) che di direzione. Non descrive l’andamento istantaneo del moto, ma fornisce una misura complessiva della variazione di velocità tra due istanti.",
+    "variabili": [
+      {
+        "simbolo": "\\vec{a}_m",
+        "descrizione": "Accelerazione media",
+        "unita": "\\frac{m}{s^2}"
+      },
+      {
+        "simbolo": "\\Delta \\vec{v}",
+        "descrizione": "Variazione di velocità",
+        "unita": "\\frac{m}{s}"
+      },
+      {
+        "simbolo": "\\Delta t",
+        "descrizione": "Intervallo di tempo",
+        "unita": "s"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un’auto che curva a velocità costante sta cambiando direzione, quindi la sua velocità varia anche se il modulo resta invariato: ha accelerazione media diversa da zero. Questo evidenzia che l’accelerazione media considera anche i cambiamenti di direzione, non solo di velocità."
+      }
+    ],
+    "link_correlati": [
+      "CIN_002",
+      "CIN_004"
+    ],
+    "parole_chiave": [
+      "accelerazione media",
+      "variazione velocità",
+      "intervallo di tempo"
+    ],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-23"
+  },
+  {
+    "id": "CIN_005",
+    "categoria": "Cinematica",
+    "sottocategoria": "Velocità",
+    "titolo": "Velocità istantanea",
+    "formula_latex": "v(t) = \\dfrac{dx(t)}{dt}",
+    "descrizione": "La velocità istantanea è definita come la derivata della posizione rispetto al tempo. Indica la velocità di un corpo in un preciso istante. \n\nQuesta formula rappresenta il limite della velocità media su intervalli di tempo sempre più piccoli. Esprime il tasso di variazione della posizione $x(t)$ al tempo $t$: se la posizione cambia rapidamente, la velocità è alta; se varia poco, la velocità è bassa. Può anche essere negativa o cambiare nel tempo.",
+    "variabili": [
+      {
+        "simbolo": "v(t)",
+        "descrizione": "Velocità istantanea",
+        "unita": "\\frac{m}{s}"
+      },
+      {
+        "simbolo": "x(t)",
         "descrizione": "Posizione al tempo $t$",
         "unita": "m"
       },
       {
-        "simbolo": "$t$",
+        "simbolo": "t",
         "descrizione": "Tempo",
         "unita": "s"
       }
@@ -134,7 +219,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se la legge oraria è $x(t) = 5 t^2$, allora la velocità istantanea è: $v(t) = \\frac{d}{dt} (5 t^2) = 10 t \\text{ m/s}$."
+        "testo": "Durante una frenata, l’auto rallenta: la sua velocità istantanea diminuisce ogni secondo. Anche se percorre molti metri all’inizio, in un dato istante la velocità potrebbe essere quasi nulla: è proprio quel valore che la formula restituisce."
       }
     ],
     "link_correlati": [
@@ -148,33 +233,33 @@
       "v = dx/dt"
     ],
     "data_creazione": "2025-05-31",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-23"
   },
   {
-    "id": "CIN_004",
+    "id": "CIN_006",
     "categoria": "Cinematica",
     "sottocategoria": "Accelerazione",
     "titolo": "Accelerazione istantanea",
     "formula_latex": "a(t) = \\dfrac{dv(t)}{dt} = \\dfrac{d^{2}x(t)}{dt^{2}}",
-    "descrizione": "L'accelerazione istantanea $a(t)$ definita come derivata della velocità $v(t)$ rispetto al tempo $t$, o derivata seconda della posizione $x(t)$.",
+    "descrizione": "L'accelerazione istantanea è la derivata della velocità rispetto al tempo, ovvero la seconda derivata della posizione. Descrive come varia la velocità in un determinato istante. \n\nQuesta formula misura quanto rapidamente cambia la velocità di un corpo in un certo istante. Se la velocità aumenta, l’accelerazione è positiva; se diminuisce, è negativa. Essendo la seconda derivata di $x(t)$, fornisce informazioni sulla curvatura del grafico della posizione: un grafico più 'piegato' indica maggiore accelerazione.",
     "variabili": [
       {
-        "simbolo": "$a(t)$",
+        "simbolo": "a(t)",
         "descrizione": "Accelerazione istantanea",
-        "unita": "m/s²"
+        "unita": "\\frac{m}{s^2}"
       },
       {
-        "simbolo": "$v(t)$",
+        "simbolo": "v(t)",
         "descrizione": "Velocità al tempo $t$",
-        "unita": "m/s"
+        "unita": "\\frac{m}{s}"
       },
       {
-        "simbolo": "$x(t)$",
+        "simbolo": "x(t)",
         "descrizione": "Posizione al tempo $t$",
         "unita": "m"
       },
       {
-        "simbolo": "$t$",
+        "simbolo": "t",
         "descrizione": "Tempo",
         "unita": "s"
       }
@@ -182,7 +267,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se la velocità istantanea è $v(t) = 10 t$, allora l'accelerazione istantanea è: $a(t) = \\frac{d}{dt} (10 t) = 10 \\text{ m/s}^2$."
+        "testo": "Quando premi bruscamente sull’acceleratore, senti un 'colpo' in avanti: in quel momento l’accelerazione istantanea è elevata. Serve per capire non solo se un oggetto va più veloce, ma quanto rapidamente sta cambiando il suo modo di muoversi."
       }
     ],
     "link_correlati": [
@@ -195,120 +280,120 @@
       "a = dv/dt"
     ],
     "data_creazione": "2025-05-31",
-    "data_ultima_modifica": "2025-07-06"
-  },
-  {
-    "id": "CIN_005",
-    "categoria": "Cinematica",
-    "sottocategoria": "Velocità",
-    "titolo": "Velocità media",
-    "formula_latex": "\\vec{v}_{m} = \\frac{\\Delta \\vec{s}}{\\Delta t}",
-    "descrizione": "La velocità media è il rapporto tra lo spostamento totale $\\Delta \\vec{s}$ di un corpo e l'intervallo di tempo $\\Delta t$ impiegato per compierlo. È una grandezza vettoriale.",
-    "variabili": [
-      {
-        "simbolo": "$\\vec{v}_{m}$",
-        "descrizione": "Velocità media",
-        "unita": "m/s"
-      },
-      {
-        "simbolo": "$\\Delta \\vec{s}$",
-        "descrizione": "Spostamento (variazione di posizione)",
-        "unita": "m"
-      },
-      {
-        "simbolo": "$\\Delta t$",
-        "descrizione": "Intervallo di tempo",
-        "unita": "s"
-      }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Un'auto si sposta di $150 \\text{ m}$ in $10 \\text{ s}$. La sua velocità media è $v_m = 150 / 10 = 15 \\text{ m/s}$."
-      }
-    ],
-    "link_correlati": [
-      "CIN_001",
-      "CIN_003"
-    ],
-    "parole_chiave": [
-      "velocità media",
-      "spostamento",
-      "intervallo di tempo"
-    ],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "CIN_006",
-    "categoria": "Cinematica",
-    "sottocategoria": "Accelerazione",
-    "titolo": "Accelerazione media",
-    "formula_latex": "\\vec{a}_{m} = \\frac{\\Delta \\vec{v}}{\\Delta t}",
-    "descrizione": "L'accelerazione media è il rapporto tra la variazione della velocità $\\Delta \\vec{v}$ di un corpo e l'intervallo di tempo $\\Delta t$ in cui tale variazione è avvenuta. È una grandezza vettoriale.",
-    "variabili": [
-      {
-        "simbolo": "$\\vec{a}_{m}$",
-        "descrizione": "Accelerazione media",
-        "unita": "m/s²"
-      },
-      {
-        "simbolo": "$\\Delta \\vec{v}$",
-        "descrizione": "Variazione di velocità",
-        "unita": "m/s"
-      },
-      {
-        "simbolo": "$\\Delta t$",
-        "descrizione": "Intervallo di tempo",
-        "unita": "s"
-      }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Un'auto passa da $10 \\text{ m/s}$ a $20 \\text{ m/s}$ in $2 \\text{ s}$. L'accelerazione media è $a_m = (20 - 10) / 2 = 5 \\text{ m/s}^2$."
-      }
-    ],
-    "link_correlati": [
-      "CIN_002",
-      "CIN_004"
-    ],
-    "parole_chiave": [
-      "accelerazione media",
-      "variazione velocità",
-      "intervallo di tempo"
-    ],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-23"
   },
   {
     "id": "CIN_007",
     "categoria": "Cinematica",
     "sottocategoria": "Moto Circolare Uniforme",
-    "titolo": "Velocità tangenziale",
-    "formula_latex": "v = \\omega \\cdot r",
-    "descrizione": "Nel moto circolare uniforme, la velocità tangenziale $v$ è la velocità con cui un corpo si muove lungo la circonferenza. ",
+    "titolo": "Velocità angolare media",
+    "formula_latex": "\\omega_m = \\frac{\\Delta \\phi}{\\Delta t}",
+    "descrizione": "La velocità angolare media è definita come il rapporto tra la variazione dell’angolo $\\Delta \\phi$ e l’intervallo di tempo $\\Delta t$ in cui essa avviene. Si applica al **moto rotatorio**. \n\nQuesta formula misura quanto velocemente un corpo ruota, in media, in un certo intervallo di tempo. L’angolo $\\Delta \\phi$ è espresso in radianti e rappresenta quanto il corpo ha ruotato complessivamente. È un concetto analogo alla velocità media nel moto rettilineo, ma riferito alla rotazione.",
     "variabili": [
       {
-        "simbolo": "$v$",
+        "simbolo": "\\omega_m",
+        "descrizione": "Velocità angolare media",
+        "unita": "\\frac{rad}{s}"
+      },
+      {
+        "simbolo": "\\Delta \\phi",
+        "descrizione": "Spostamento angolare",
+        "unita": "rad"
+      },
+      {
+        "simbolo": "\\Delta t",
+        "descrizione": "Intervallo di tempo",
+        "unita": "s"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una ruota che compie mezzo giro in 2 secondi ha una velocità angolare media di $\\pi$ radianti al secondo. Questo aiuta a capire quanto velocemente ruota, indipendentemente dalla lunghezza del percorso circolare."
+      }
+    ],
+    "link_correlati": [
+      "CIN_008"
+    ],
+    "parole_chiave": [
+      "moto circolare",
+      "velocità angolare media",
+      "velocità angolare",
+      "radianti"
+    ],
+    "data_creazione": "2025-07-23",
+    "data_ultima_modifica": "2025-07-23"
+  },
+  {
+    "id": "CIN_008",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto Circolare Uniforme",
+    "titolo": "Accelerazione angolare media",
+    "formula_latex": "\\alpha_m = \\frac{\\Delta \\omega}{\\Delta t}",
+    "descrizione": "L'accelerazione angolare media è definita come il rapporto tra la variazione della velocità angolare $\\Delta \\omega$ e l’intervallo di tempo $\\Delta t$ in cui tale variazione avviene. \n\nQuesta formula indica quanto rapidamente cambia, in media, la velocità con cui un corpo ruota. Se $\\omega$ aumenta o diminuisce nel tempo, l’accelerazione angolare media quantifica questa variazione complessiva, senza descrivere i dettagli istantanei del moto.",
+    "variabili": [
+      {
+        "simbolo": "\\alpha_m",
+        "descrizione": "Accelerazione angolare media",
+        "unita": "\\frac{rad}{s^2}"
+      },
+      {
+        "simbolo": "\\Delta \\omega",
+        "descrizione": "Variazione della velocità angolare",
+        "unita": "\\frac{rad}{s}"
+      },
+      {
+        "simbolo": "\\Delta t",
+        "descrizione": "Intervallo di tempo",
+        "unita": "s"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Quando accendi un ventilatore, le pale iniziano a ruotare sempre più velocemente: in pochi secondi passano da velocità nulla a una certa $\\omega$. L’accelerazione angolare media indica quanto rapidamente si è raggiunta quella velocità di rotazione."
+      }
+    ],
+    "link_correlati": [
+      "CIN_008"
+    ],
+    "parole_chiave": [
+      "moto circolare",
+      "accelerazione angolare media",
+      "velocità angolare",
+      "radianti"
+    ],
+    "data_creazione": "2025-07-23",
+    "data_ultima_modifica": "2025-07-23"
+  },
+  {
+    "id": "CIN_009",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto Circolare Uniforme",
+    "titolo": "Velocità tangenziale",
+    "formula_latex": "v = \\omega r",
+    "descrizione": "La velocità tangenziale è data dal prodotto tra la velocità angolare $\\omega$ e il raggio $r$ della traiettoria circolare. Esprime la velocità lineare di un punto in moto circolare. \n\nUn punto che ruota lungo una circonferenza si muove con una velocità lineare $v$ diretta tangenzialmente alla traiettoria. Questa velocità dipende da quanto rapidamente ruota il corpo ($\\omega$) e da quanto è distante dal centro ($r$). Più il punto è lontano, maggiore è la sua velocità tangenziale, anche se $\\omega$ è la stessa.",
+    "variabili": [
+      {
+        "simbolo": "v",
         "descrizione": "Velocità tangenziale",
         "unita": "m"
       },
       {
-        "simbolo": "$\\omega$",
+        "simbolo": "\\omega",
         "descrizione": "Velocità angolare",
-        "unita": "rad/s"
+        "unita": "\\frac{rad}{s}"
       },
       {
-        "simbolo": "$r$",
-        "descrizione": "Raggio della traiettoria",
+        "simbolo": "r",
+        "descrizione": "Raggio",
         "unita": "m"
       }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un punto su un disco rotante con raggio $0.5 \\text{ m}$ e velocità angolare di $4 \\text{ rad/s}$ ha una velocità tangenziale di $v = 4 \\cdot 0.5 = 2 \\text{ m/s}$."
+        "testo": "Le estremità delle pale di un’elica girano più velocemente (in termini di metri al secondo) rispetto ai punti vicino al centro, anche se l’intera elica ha la stessa velocità angolare: questo perché il raggio $r$ è maggiore."
       }
     ],
     "link_correlati": [
@@ -321,41 +406,120 @@
       "raggio"
     ],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-23"
   },
   {
-    "id": "CIN_008",
+    "id": "CIN_010",
     "categoria": "Cinematica",
     "sottocategoria": "Moto Circolare Uniforme",
-    "titolo": "Accelerazione centripeta",
-    "formula_latex": "a_c = \\frac{v^2}{r} = \\omega^2 r",
-    "descrizione": "Nel moto circolare uniforme, l'accelerazione centripeta $a_c$ è l'accelerazione che causa la variazione continua della direzione della velocità tangenziale, mantenendo il corpo sulla traiettoria circolare. È sempre diretta verso il centro della circonferenza.",
+    "titolo": "Accelerazione tangenziale",
+    "formula_latex": "a_t = \\alpha r",
+    "descrizione": "L'accelerazione tangenziale è data dal prodotto tra l’accelerazione angolare $\\alpha$ e il raggio $r$ della traiettoria circolare. Indica la variazione della velocità tangenziale nel tempo. \n\nQuando un corpo in moto circolare accelera o rallenta, cambia la sua velocità tangenziale. Questa variazione è legata all’accelerazione angolare $\\alpha$, ma si manifesta come un’accelerazione lungo la direzione tangente alla traiettoria. Il raggio $r$ amplifica l’effetto: più il punto è lontano dal centro, maggiore sarà la sua accelerazione tangenziale per lo stesso $\\alpha$.",
     "variabili": [
       {
-        "simbolo": "$a_c$",
-        "descrizione": "Accelerazione centripeta",
-        "unita": "m/s²"
+        "simbolo": "a_t",
+        "descrizione": "Accelerazione tangenziale",
+        "unita": "\\frac{m}{s^2}"
       },
       {
-        "simbolo": "$v$",
-        "descrizione": "Velocità tangenziale",
-        "unita": "m/s"
+        "simbolo": "\\alpha",
+        "descrizione": "Accelerazione angolare",
+        "unita": "\\frac{rad}{s^2}"
       },
       {
-        "simbolo": "$\\omega$",
-        "descrizione": "Velocità angolare",
-        "unita": "rad/s"
-      },
-      {
-        "simbolo": "$r$",
-        "descrizione": "Raggio della traiettoria",
+        "simbolo": "r",
+        "descrizione": "Raggio",
         "unita": "m"
       }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un'auto percorre una curva con raggio $25 \\text{ m}$ a una velocità di $5 \\text{ m/s}$. L'accelerazione centripeta è $a_c = 5^2 / 25 = 1 \\text{ m/s}^2$."
+        "testo": "In una giostra che comincia a girare sempre più velocemente, i bambini seduti più lontani dal centro percepiscono un’accelerazione maggiore lungo la direzione del movimento: stanno subendo una maggiore accelerazione tangenziale."
+      }
+    ],
+    "link_correlati": [
+      "CIN_008"
+    ],
+    "parole_chiave": [
+      "moto circolare",
+      "accelerazione tangenziale",
+      "accelerazione angolare",
+      "raggio"
+    ],
+    "data_creazione": "2025-07-23",
+    "data_ultima_modifica": "2025-07-23"
+  },
+  {
+    "id": "CIN_011",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto Circolare Uniforme",
+    "titolo": "Velocità angolare (Moto circolare uniforme)",
+    "formula_latex": "\\omega = \\frac{2 \\pi}{T}",
+    "descrizione": "Nel **moto circolare uniforme**, la velocità angolare $\\omega$ è pari a $2\\pi$ radianti diviso il periodo $T$, ovvero il tempo impiegato per compiere un giro completo. \n\nUn corpo che compie una rotazione completa percorre un angolo di $2\\pi$ radianti. Se impiega un tempo $T$ per farlo, la velocità angolare rappresenta la quantità di angolo percorso per ogni secondo. Poiché il moto è uniforme, $\\omega$ resta **costante**.",
+    "variabili": [
+      {
+        "simbolo": "\\omega",
+        "descrizione": "Velocità angolare",
+        "unita": "\\frac{rad}{s}"
+      },
+      {
+        "simbolo": "T",
+        "descrizione": "Periodo",
+        "unita": "s"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "La lancetta dei secondi di un orologio compie un giro completo in 60 secondi: la sua velocità angolare è $\\frac{2\\pi}{60}$ radianti al secondo. Questo mostra come $\\omega$ colleghi la frequenza della rotazione all’angolo percorso nel tempo."
+      }
+    ],
+    "link_correlati": [
+      "CIN_008"
+    ],
+    "parole_chiave": [
+      "moto circolare",
+      "periodo",
+      "velocità angolare",
+      "moto circolare uniforme"
+    ],
+    "data_creazione": "2025-07-23",
+    "data_ultima_modifica": "2025-07-23"
+  },
+  {
+    "id": "CIN_012",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto Circolare Uniforme",
+    "titolo": "Accelerazione centripeta",
+    "formula_latex": "a_c = \\frac{v^2}{r} = \\omega^2 r",
+    "descrizione": "L'accelerazione centripeta è l’accelerazione **diretta verso il centro** della traiettoria circolare, necessaria a mantenere un corpo in moto circolare. Può essere espressa in funzione della velocità tangenziale $v$ o della velocità angolare $\\omega$. \n\nAnche se un corpo in moto circolare uniforme mantiene costante la sua velocità in modulo, la direzione cambia continuamente: questa variazione richiede un’accelerazione verso il centro, detta centripeta. Essa è maggiore se il corpo va più veloce ($v$ grande) o se la traiettoria è più stretta ($r$ piccolo). L’alternativa $\\omega^2 r$ lega l’accelerazione alla frequenza di rotazione.",
+    "variabili": [
+      {
+        "simbolo": "a_c",
+        "descrizione": "Accelerazione centripeta",
+        "unita": "\\frac{m}{s^2}"
+      },
+      {
+        "simbolo": "v",
+        "descrizione": "Velocità tangenziale",
+        "unita": "\\frac{m}{s}"
+      },
+      {
+        "simbolo": "\\omega",
+        "descrizione": "Velocità angolare",
+        "unita": "\\frac{rad}{s}"
+      },
+      {
+        "simbolo": "r",
+        "descrizione": "Raggio",
+        "unita": "m"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Quando prendi una curva stretta in macchina, senti una “spinta” verso l’esterno: in realtà è il tuo corpo che tende a proseguire diritto, mentre l’auto lo costringe a curvare applicando una accelerazione centripeta verso l’interno della curva."
       }
     ],
     "link_correlati": [
@@ -369,41 +533,98 @@
       "raggio"
     ],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-23"
   },
   {
-    "id": "CIN_009",
+    "id": "CIN_013",
     "categoria": "Cinematica",
-    "sottocategoria": "Moto dei Proiettili",
-    "titolo": "Gittata (Moto dei Proiettili)",
-    "formula_latex": "R = \\frac{v_0^2 \\sin(2\\theta)}{g}",
-    "descrizione": "La gittata $R$ di un proiettile è la distanza orizzontale percorsa dal proiettile prima di tornare alla quota di lancio. È massima quando l'angolo di lancio è di $45^\\circ$",
+    "sottocategoria": "Moto circolare uniformemente accelerato",
+    "titolo": "Moto circolare uniformemente accelerato",
+    "formula_latex": "\\begin{aligned} \\left\\{ \\begin{aligned} \\omega &= \\omega_0 + \\alpha t \\\\ \\phi &= \\phi_0 + \\omega_0 t + \\tfrac{1}{2}\\alpha t^2 \\end{aligned} \\right. \\end{aligned}",
+    "descrizione": "Le leggi del moto circolare uniformemente accelerato descrivono l’evoluzione della velocità angolare $\\omega$ e della posizione angolare $\\phi$ di un corpo che ruota con **accelerazione angolare costante** $\\alpha$. \n\nLa prima formula mostra che la velocità angolare cambia in modo lineare nel tempo, a partire da un valore iniziale $\\omega_0$. \nLa seconda formula descrive la posizione angolare $\\phi$ come somma di tre termini: l’angolo iniziale $\\phi_0$, l’incremento dovuto alla rotazione iniziale, e l’effetto dell’accelerazione angolare. \nSono l’equivalente, nel moto circolare, delle leggi del moto rettilineo uniformemente accelerato.",
     "variabili": [
       {
-        "simbolo": "$R$",
-        "descrizione": "Gittata orizzontale",
-        "unita": "m"
+        "simbolo": "\\omega",
+        "descrizione": "Velocità angolare al tempo $t$",
+        "unita": "frac{rad}{s}"
       },
       {
-        "simbolo": "$v_0$",
-        "descrizione": "Velocità iniziale del proiettile",
-        "unita": "m/s"
+        "simbolo": "\\omega_0",
+        "descrizione": "Velocità angolare iniziale",
+        "unita": "frac{rad}{s}"
       },
       {
-        "simbolo": "$\\theta$",
-        "descrizione": "Angolo di lancio rispetto all'orizzontale",
+        "simbolo": "\\alpha",
+        "descrizione": "Accelerazione angolare costante",
+        "unita": "\\frac{rad}{s^2}"
+      },
+      {
+        "simbolo": "t",
+        "descrizione": "Tempo trascorso",
+        "unita": "s"
+      },
+      {
+        "simbolo": "\\phi",
+        "descrizione": "Spostamento angolare",
         "unita": "rad"
       },
       {
-        "simbolo": "$g$",
-        "descrizione": "Accelerazione di gravità ($9.81 \\text{ m/s}^2$ sulla Terra)",
-        "unita": "m/s²"
+        "simbolo": "\\phi_0",
+        "descrizione": "Angolo iniziale",
+        "unita": "rad"
       }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un proiettile viene lanciato con una velocità iniziale di $20 \\text{ m/s}$ e un angolo di $45^\\circ$. La gittata sarà $R = (20^2 \\cdot \\sin(2 \\cdot 45^\\circ)) / 9.81 = 40.77 \\text{ m}$."
+        "testo": "Immagina un disco che parte da fermo e accelera a velocità costante: all’inizio ruota lentamente, poi sempre più velocemente. Queste formule permettono di calcolare quanto ha ruotato e con quale velocità sta ruotando in ogni istante."
+      }
+    ],
+    "link_correlati": [
+      "CIN_001",
+      "CIN_003",
+      "CIN_004"
+    ],
+    "parole_chiave": [
+      "moto circolare uniformemente accelerato",
+      "accelerazione costante"
+    ],
+    "data_creazione": "2025-07-23",
+    "data_ultima_modifica": "2025-07-23"
+  },
+  {
+    "id": "CIN_014",
+    "categoria": "Cinematica",
+    "sottocategoria": "Moto Parabolico",
+    "titolo": "Gittata (Moto parabolico)",
+    "formula_latex": "G = \\frac{2 v_{0x} v_{0y}}{g}",
+    "descrizione": "La gittata è la distanza orizzontale totale percorsa da un corpo lanciato obliquamente quando ritorna alla quota iniziale, in funzione delle componenti iniziali della velocità e dell’accelerazione di gravità. \n\nLa gittata dipende dalla velocità iniziale scomposta nei due assi: $v_{0x}$ è la componente orizzontale, che resta costante; $v_{0y}$ è quella verticale, che determina la durata del volo. Il prodotto $v_{0x} v_{0y}$ tiene conto sia di quanto velocemente il corpo si muove in orizzontale, sia di quanto tempo resta in aria. Il fattore $g$ rappresenta la decelerazione dovuta alla gravità. \nLa gittata è **massima** quando le componenti $v_{0x}$ e $v_{0y}$ sono uguali, cioè quando l’angolo di lancio è di $45^\\circ$. In questo caso, il corpo ha il miglior compromesso tra durata del volo e velocità orizzontale.",
+    "variabili": [
+      {
+        "simbolo": "G",
+        "descrizione": "Gittata",
+        "unita": "m"
+      },
+      {
+        "simbolo": "v_{0x}",
+        "descrizione": "Componente $x$ della velocità iniziale",
+        "unita": "\\frac{m}{s}"
+      },
+      {
+        "simbolo": "v_{0y}",
+        "descrizione": "Componente $y$ della velocità iniziale",
+        "unita": "\\frac{m}{s}"
+      },
+      {
+        "simbolo": "g",
+        "descrizione": "Accelerazione di gravità",
+        "unita": "\\approx 9.81 \\frac{m}{s^2} \\text{ (sulla Terra)}"
+      }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un pallone calciato con un certo angolo rimane in volo per un certo tempo, durante il quale si sposta in avanti. Se lo lanci troppo in alto (angolo troppo grande), resta in aria ma avanza poco; se lo lanci troppo basso, va veloce ma cade subito. A $45^\\circ$, ottieni la distanza massima possibile."
       }
     ],
     "link_correlati": [
@@ -412,46 +633,42 @@
     ],
     "parole_chiave": [
       "moto proiettili",
+      "moto parabolico",
       "gittata",
       "angolo di lancio",
       "gravità"
     ],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-23"
   },
   {
-    "id": "CIN_010",
+    "id": "CIN_015",
     "categoria": "Cinematica",
-    "sottocategoria": "Moto dei Proiettili",
-    "titolo": "Altezza massima (Moto dei Proiettili)",
-    "formula_latex": "H = \\frac{v_0^2 \\sin^2(\\theta)}{2g}",
-    "descrizione": "L'altezza massima $H$ raggiunta da un proiettile è il punto più alto della sua traiettoria parabolica. ",
+    "sottocategoria": "Moto Parabolico",
+    "titolo": "Altezza massima (Moto parabolico)",
+    "formula_latex": "H = \\frac{v_{0y}^2}{2g}",
+    "descrizione": "L’altezza massima $H$ raggiunta da un corpo lanciato obliquamente verso l’alto è calcolata in funzione della componente verticale iniziale della velocità e dell’accelerazione di gravità. \n\nL’altezza massima si raggiunge nel punto in cui la velocità verticale si annulla temporaneamente, prima che il corpo inizi a cadere. La formula mostra che $H$ dipende solo da $v_{0y}$, cioè da quanto 'in alto' viene lanciato il corpo, e non dalla componente orizzontale. La gravità $g$ frena progressivamente il moto verso l’alto, fino a fermarlo.",
     "variabili": [
       {
-        "simbolo": "$H$",
+        "simbolo": "H",
         "descrizione": "Altezza massima",
         "unita": "m"
       },
       {
-        "simbolo": "$v_0$",
-        "descrizione": "Velocità iniziale del proiettile",
-        "unita": "m/s"
+        "simbolo": "v_{0y}",
+        "descrizione": "Componente $y$ della velocità iniziale",
+        "unita": "\\frac{m}{s}"
       },
       {
-        "simbolo": "$\\theta$",
-        "descrizione": "Angolo di lancio rispetto all'orizzontale",
-        "unita": "rad"
-      },
-      {
-        "simbolo": "$g$",
-        "descrizione": "Accelerazione di gravità ($9.81 \\text{ m/s}^2$ sulla Terra)",
-        "unita": "m/s²"
+        "simbolo": "g",
+        "descrizione": "Accelerazione di gravità",
+        "unita": "\\approx 9.81 \\frac{m}{s^2} \\text{ (sulla Terra)}"
       }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un proiettile lanciato con velocità iniziale di $20 \\text{ m/s}$ e un angolo di $30^\\circ$. L'altezza massima sarà $H = (20^2 \\cdot \\sin^2(30^\\circ)) / (2 \\cdot 9.81) = 5.10 \\text{ m}$."
+        "testo": "Se due palline vengono lanciate con la stessa velocità verticale ma una con un angolo maggiore (più verso l’alto) e una più orizzontale, raggiungeranno la stessa altezza massima, perché è determinata solo da $v_{0y}$. Cambierà invece la gittata."
       }
     ],
     "link_correlati": [
@@ -460,53 +677,54 @@
     ],
     "parole_chiave": [
       "moto proiettili",
+      "moto parabolico",
       "altezza massima",
       "angolo di lancio",
       "gravità"
     ],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-23"
   },
   {
-    "id": "CIN_011",
+    "id": "CIN_016",
     "categoria": "Cinematica",
     "sottocategoria": "Moto Armonico Semplice (MAS)",
-    "titolo": "Moto Armonico Semplice",
+    "titolo": "Moto armonico semplice",
     "formula_latex": "\\begin{cases} x(t) = A \\cos(\\omega t + \\phi_0) \\\\ v(t) = -A \\omega \\sin(\\omega t + \\phi_0) \\\\ a(t) = -A \\omega^2 \\cos(\\omega t + \\phi_0) = -\\omega^2 x(t) \\end{cases}",
-    "descrizione": "Il moto armonico è definito come la proiezione di un moto circolare uniforme su un diametro della circonferenza. \nDescrive il moto oscillatorio periodico di un oggetto senza attrito. \nLe equazioni mostrano la posizione $x(t)$, la velocità $v(t)$ e l'accelerazione $a(t)$ in funzione del tempo $t$.",
+    "descrizione": "Queste equazioni descrivono rispettivamente la posizione, la velocità e l’accelerazione di un corpo che oscilla con moto armonico semplice, cioè un moto periodico in cui l’accelerazione è proporzionale e opposta allo spostamento. \n\nIl corpo si muove avanti e indietro attorno a una posizione di equilibrio, con una traiettoria descritta da una funzione coseno. L’ampiezza $A$ indica lo spostamento massimo, $\\omega$ la rapidità dell’oscillazione (velocità angolare), e $\\phi_0$ la fase iniziale, che determina la posizione al tempo $t = 0$. La velocità e l’accelerazione variano periodicamente: la velocità è massima nel punto medio, nulla agli estremi; l’accelerazione è massima agli estremi e sempre diretta verso il centro.",
     "variabili": [
       {
-        "simbolo": "$x(t)$",
+        "simbolo": "x(t)",
         "descrizione": "Posizione al tempo $t$",
         "unita": "m"
       },
       {
-        "simbolo": "$v(t)$",
+        "simbolo": "v(t)",
         "descrizione": "Velocità al tempo $t$",
-        "unita": "m/s"
+        "unita": "\\frac{m}{s}"
       },
       {
-        "simbolo": "$a(t)$",
+        "simbolo": "a(t)",
         "descrizione": "Accelerazione al tempo $t$",
-        "unita": "m/s²"
+        "unita": "\\frac{m}{s^2}"
       },
       {
-        "simbolo": "$A$",
+        "simbolo": "A",
         "descrizione": "Ampiezza massima dell'oscillazione",
         "unita": "m"
       },
       {
-        "simbolo": "$\\omega$",
-        "descrizione": "Pulsazione (o frequenza angolare)",
-        "unita": "rad/s"
+        "simbolo": "\\omega",
+        "descrizione": "Pulsazione",
+        "unita": "\\frac{rad}{s}"
       },
       {
-        "simbolo": "$t$",
+        "simbolo": "t",
         "descrizione": "Tempo",
         "unita": "s"
       },
       {
-        "simbolo": "$\\phi_0$",
+        "simbolo": "\\phi_0",
         "descrizione": "Fase iniziale",
         "unita": "rad"
       }
@@ -514,7 +732,7 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un oscillatore ha ampiezza $A = 0.1 \\text{ m}$, pulsazione $\\omega = 5 \\text{ rad/s}$ e fase iniziale $\\phi_0 = 0 \\text{ rad}$. Al tempo $t = 1 \\text{ s}$: Posizione $x(1) = 0.1 \\cos(5) \\approx 0.028 \\text{ m}$. Velocità $v(1) = -0.5 \\sin(5) \\approx 0.479 \\text{ m/s}$. Accelerazione $a(1) = -25 \\cdot 0.028 \\approx -0.7 \\text{ m/s}^2$."
+        "testo": "Un pendolo o una molla ideale compiono un moto armonico: quando il corpo è all’estremo, l’accelerazione è massima (spinge verso il centro), ma la velocità è nulla. Quando passa per il centro, l’accelerazione è zero, ma la velocità è massima. Tutto il moto è determinato da una forza che tende sempre a riportare il corpo verso l’equilibrio."
       }
     ],
     "link_correlati": [],
@@ -530,36 +748,36 @@
       "fase"
     ],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-23"
   },
   {
-    "id": "CIN_012",
+    "id": "CIN_017",
     "categoria": "Cinematica",
     "sottocategoria": "Moto Armonico Semplice (MAS)",
     "titolo": "Periodo di una massa su molla",
     "formula_latex": "T = 2\\pi \\sqrt{\\frac{m}{k}}",
-    "descrizione": "Il periodo $T$ di oscillazione di una massa $m$ attaccata a una molla con costante elastica $k$ è il tempo impiegato per compiere un'oscillazione completa. Dipende solo da $m$ e $k$, e non dall'ampiezza.",
+    "descrizione": "Il periodo $T$ del moto armonico di una massa $m$ attaccata a una molla di costante elastica $k$ indica il tempo necessario per completare un’oscillazione completa. \n\nIl periodo dipende solo dalla massa e dalla rigidità della molla. Una massa maggiore rende il moto più lento (periodo più lungo), mentre una molla più rigida (valore alto di $k$) lo rende più rapido. Il periodo non dipende né dall’ampiezza dell’oscillazione, né dalla forza iniziale: è una caratteristica del sistema massa-molla",
     "variabili": [
       {
-        "simbolo": "$T$",
+        "simbolo": "T",
         "descrizione": "Periodo di oscillazione",
         "unita": "s"
       },
       {
-        "simbolo": "$m$",
+        "simbolo": "m",
         "descrizione": "Massa attaccata alla molla",
         "unita": "kg"
       },
       {
-        "simbolo": "$k$",
+        "simbolo": "k",
         "descrizione": "Costante elastica della molla",
-        "unita": "N/m"
+        "unita": "\\frac{N}{m}"
       }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una massa di $0{,}5 \\text{ kg}$ è attaccata a una molla con costante elastica $k = 200 \\text{ N/m}$. Il periodo è: $T = 2\\pi \\sqrt{0{,}5 / 200} \\approx 0{,}314 \\text{ s}$."
+        "testo": "Due molle identiche, ma con masse diverse appese: quella più pesante oscilla più lentamente. Anche se la sposti poco o molto (cambiando la posizione iniziale), il tempo di andata e ritorno resta sempre lo stesso, se il sistema è ideale."
       }
     ],
     "link_correlati": [
@@ -573,36 +791,36 @@
       "moto armonico"
     ],
     "data_creazione": "2025-07-20",
-    "data_ultima_modifica": "2025-07-20"
+    "data_ultima_modifica": "2025-07-23"
   },
   {
-    "id": "CIN_013",
+    "id": "CIN_018",
     "categoria": "Cinematica",
     "sottocategoria": "Moto Armonico Semplice (MAS)",
     "titolo": "Periodo del pendolo semplice",
     "formula_latex": "T = 2\\pi \\sqrt{\\frac{l}{g}}",
-    "descrizione": "Il periodo $T$ del pendolo semplice è il tempo necessario per una completa oscillazione. Dipende dalla lunghezza $l$ del filo e dall'accelerazione di gravità $g$, ed è valido per piccole oscillazioni.",
+    "descrizione": "Il periodo $T$ di un pendolo semplice esprime il tempo necessario per completare un’oscillazione completa, in funzione della lunghezza del filo $l$ e dell’accelerazione di gravità $g$. \n\nIl periodo dipende solo dalla lunghezza del pendolo e dal valore di $g$. Più il pendolo è lungo, più lentamente oscilla; più intensa è la gravità, più velocemente si muove. La formula vale solo per **piccole oscillazioni** (con ampiezza molto piccola), dove il moto può essere approssimato come armonico semplice. Non dipende né dalla massa, né dall’ampiezza (se piccola).",
     "variabili": [
       {
-        "simbolo": "$T$",
+        "simbolo": "T",
         "descrizione": "Periodo di oscillazione",
         "unita": "s"
       },
       {
-        "simbolo": "$l$",
+        "simbolo": "l",
         "descrizione": "Lunghezza del filo del pendolo",
         "unita": "m"
       },
       {
-        "simbolo": "$g$",
+        "simbolo": "g",
         "descrizione": "Accelerazione di gravità",
-        "unita": "m/s²"
+        "unita": "\\approx 9.81 \\frac{m}{s^2} \\text{ (sulla Terra)}"
       }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un pendolo lungo $1{,}0 \\text{ m}$ ha un periodo: $T = 2\\pi \\sqrt{1{,}0 / 9{,}81} \\approx 2{,}01 \\text{ s}$."
+        "testo": "Un pendolo da soffitto oscilla più lentamente se allunghi il filo. Se lo sposti di poco o di tanto (cambiando l'angolo di partenza, entro certi limiti), il tempo di ogni oscillazione resta quasi invariato, perché il periodo dipende solo da $l$ e da $g$."
       }
     ],
     "link_correlati": [
@@ -616,6 +834,6 @@
       "oscillazione"
     ],
     "data_creazione": "2025-07-20",
-    "data_ultima_modifica": "2025-07-20"
+    "data_ultima_modifica": "2025-07-23"
   }
 ]
