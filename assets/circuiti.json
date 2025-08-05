@@ -1,486 +1,715 @@
 [
   {
     "id": "CIR_001",
-    "categoria": "Circuiti Elettrici",
-    "sottocategoria": "Conduttori e Campo Elettrico",
-    "titolo": "Equilibrio Elettrostatico in un Conduttore",
-    "formula_latex": "\\vec{E}_{int} = 0",
-    "descrizione": "In un conduttore in equilibrio elettrostatico, il campo elettrico netto all'interno del conduttore è zero. Questo significa che le cariche si sono ridistribuite in modo tale da annullare qualsiasi campo interno.",
-    "variabili": [
-      { "simbolo": "$\\vec{E}_{int}$", "descrizione": "Campo elettrico interno", "unita": "N/C" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Quando un conduttore è posto in un campo elettrico esterno, le cariche libere al suo interno si muovono finché il campo elettrico risultante in ogni punto interno diventa $0$."
-      }
-    ],
-    "link_correlati": [],
-    "parole_chiave": ["equilibrio elettrostatico", "conduttore", "campo elettrico"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "CIR_002",
-    "categoria": "Circuiti Elettrici",
-    "sottocategoria": "Conduttori e Campo Elettrico",
-    "titolo": "Campo Elettrico alla Superficie di un Conduttore",
-    "formula_latex": "E = \\frac{\\sigma}{\\varepsilon_0}",
-    "descrizione": "Il campo elettrico $E$ immediatamente esterno alla superficie di un conduttore in equilibrio elettrostatico è perpendicolare alla superficie e proporzionale alla densità superficiale di carica $\\sigma$ su quel punto della superficie.",
-    "variabili": [
-      { "simbolo": "$E$", "descrizione": "Campo elettrico alla superficie", "unita": "N/C" },
-      { "simbolo": "$\\sigma$", "descrizione": "Densità superficiale di carica", "unita": "C/m^2" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Su una superficie conduttrice con densità di carica di $2 \\times 10^{-6} C/m^2$, il campo elettrico esterno è $E = \\frac{2 \\times 10^{-6}}{8.85 \\times 10^{-12}} \\approx 2.26 \\times 10^5 N/C$."
-      }
-    ],
-    "link_correlati": [],
-    "parole_chiave": ["campo elettrico", "superficie", "conduttore", "densità di carica"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "CIR_003",
-    "categoria": "Circuiti Elettrici",
-    "sottocategoria": "Conduttori e Campo Elettrico",
-    "titolo": "Potenziale di un Conduttore in Equilibrio",
-    "formula_latex": "V = \\text{costante}",
-    "descrizione": "Un conduttore in equilibrio elettrostatico è una superficie equipotenziale. Il potenziale elettrico $V$ è costante in ogni punto all'interno e sulla superficie del conduttore.",
-    "variabili": [
-      { "simbolo": "$V$", "descrizione": "Potenziale elettrico", "unita": "V" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Indipendentemente dalla forma o dalla carica distribuita sulla superficie di un conduttore, il potenziale in ogni suo punto interno e superficiale è lo stesso."
-      }
-    ],
-    "link_correlati": [],
-    "parole_chiave": ["potenziale", "conduttore", "equilibrio elettrostatico", "equipotenziale"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "CIR_004",
+
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Condensatori",
-    "titolo": "Capacità di un Condensatore",
+    "titolo": "Capacità di un condensatore",
     "formula_latex": "C = \\frac{Q}{V}",
-    "descrizione": "La capacità $C$ di un condensatore è la misura della sua capacità di immagazzinare carica elettrica $Q$ per una data differenza di potenziale $V$ tra le sue armature.",
+    "descrizione": "La capacità $C$ di un condensatore è definita come il rapporto tra la carica $Q$ accumulata e la differenza di potenziale $V$ ai capi del condensatore. \n\nQuesta formula esprime la proprietà di un condensatore di **immagazzinare carica elettrica**. A parità di tensione, un condensatore con capacità maggiore può accumulare più carica. La capacità dipende solo dalle caratteristiche fisiche del condensatore (forma, dimensioni, materiale dielettrico), non dalla carica o dalla tensione applicata.",
     "variabili": [
-      { "simbolo": "$C$", "descrizione": "Capacità", "unita": "F (Farad)" },
-      { "simbolo": "$Q$", "descrizione": "Carica immagazzinata", "unita": "C" },
-      { "simbolo": "$V$", "descrizione": "Differenza di potenziale", "unita": "V" }
+      { "simbolo": "C", "descrizione": "Capacità", "unita": "F" },
+      { "simbolo": "Q", "descrizione": "Carica immagazzinata", "unita": "C" },
+      { "simbolo": "V", "descrizione": "Differenza di potenziale", "unita": "V" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un condensatore immagazzina $10 \\mu C$ di carica quando la differenza di potenziale è $5 V$. La sua capacità è $C = \\frac{10 \\times 10^{-6} C}{5 V} = 2 \\times 10^{-6} F = 2 \\mu F$."
+        "testo": "Un condensatore da 1 farad collegato a una batteria da 1 volt accumula 1 coulomb di carica. Se la capacità fosse maggiore, a parità di tensione accumulerebbe più carica, come un serbatoio più grande che può contenere più acqua alla stessa altezza."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["capacità", "condensatore", "carica", "potenziale"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_005",
+    "id": "CIR_002",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Condensatori",
-    "titolo": "Campo Elettrico in un Condensatore Piano",
+    "titolo": "Campo elettrico in un condensatore piano",
     "formula_latex": "E = \\frac{\\sigma}{\\varepsilon_0} = \\frac{Q}{\\varepsilon_0 A}",
-    "descrizione": "Il campo elettrico $E$ all'interno di un condensatore piano ideale (con armature molto grandi rispetto alla loro separazione) è uniforme e diretto da un'armatura all'altra. Dipende dalla densità superficiale di carica $\\sigma$ e dall'area delle armature $A$.",
+    "descrizione": "Il campo elettrico $E$ generato tra le armature di un condensatore piano ideale, è espresso in funzione della densità di carica $\\sigma$ o della carica totale $Q$ distribuita su una superficie $A$ \nNel caso ideale di piastre molto estese, il campo è uniforme. \n\nIl campo elettrico cresce se aumenta la carica sulle piastre e diminuisce se questa carica viene distribuita su una superficie maggiore. La relazione è valida solo nel caso di condensatori piani e sufficientemente grandi, in cui gli effetti ai bordi possono essere trascurati.",
     "variabili": [
-      { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$\\sigma$", "descrizione": "Densità superficiale di carica", "unita": "C/m^2" },
-      { "simbolo": "$Q$", "descrizione": "Carica su un'armatura", "unita": "C" },
-      { "simbolo": "$A$", "descrizione": "Area dell'armatura", "unita": "m^2" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "E", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" },
+      { "simbolo": "\\sigma", "descrizione": "Densità superficiale di carica", "unita": "\\frac{C}{m^2}" },
+      { "simbolo": "Q", "descrizione": "Carica su un'armatura", "unita": "C" },
+      { "simbolo": "A", "descrizione": "Area dell'armatura", "unita": "m^2" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Costante dielettrica del vuoto", "unita": "\\frac{C^2}{N \\cdot m^2}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un condensatore piano con armature di area $0.01 m^2$ e una carica di $5 \\times 10^{-8} C$ ha un campo elettrico $E = \\frac{5 \\times 10^{-8} C}{8.85 \\times 10^{-12} F/m \\cdot 0.01 m^2} \\approx 5.65 \\times 10^5 N/C$."
+        "testo": "Due grandi piastre caricate con cariche opposte generano tra di loro un campo elettrico uniforme, simile a un campo gravitazionale costante. Aumentando la carica mantenendo fissa l’area, il campo tra le piastre cresce, rendendo più intensa l’interazione elettrica."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["campo elettrico", "condensatore piano", "carica", "area"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_006",
+    "id": "CIR_003",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Condensatori",
-    "titolo": "Condensatori in Serie",
+    "titolo": "Condensatori in serie",
     "formula_latex": "\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2} + \\dots",
-    "descrizione": "Quando i condensatori sono collegati in serie, la carica su ciascuno è la stessa, e la capacità equivalente $C_{eq}$ del sistema è calcolata come il reciproco della somma dei reciproci delle singole capacità.",
+    "descrizione": "La capacità equivalente $C_{eq}$ di più condensatori collegati in serie è data dal reciproco della somma dei reciproci delle singole capacità. \n\nCollegando i condensatori in serie, si ottiene un sistema che immagazzina meno carica rispetto ai singoli componenti. La capacità totale risulta sempre minore di quella di ciascun condensatore. Questo avviene perché la stessa carica attraversa tutti i condensatori, ma la differenza di potenziale totale si suddivide tra essi.",
     "variabili": [
-      { "simbolo": "$C_{eq}$", "descrizione": "Capacità equivalente", "unita": "F" },
-      { "simbolo": "$C_1, C_2, \\dots$", "descrizione": "Singole capacità", "unita": "F" }
+      { "simbolo": "C_{eq}", "descrizione": "Capacità equivalente", "unita": "F" },
+      { "simbolo": "C_1, C_2, \\dots", "descrizione": "Singole capacità", "unita": "F" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Due condensatori da $10 \\mu F$ e $20 \\mu F$ in serie hanno una capacità equivalente $\\frac{1}{C_{eq}} = \\frac{1}{10 \\mu F} + \\frac{1}{20 \\mu F} \\implies C_{eq} \\approx 6.67 \\mu F$."
+        "testo": "Due condensatori identici da 4 μF collegati in serie danno una capacità equivalente di 2 μF. Il sistema si comporta come un unico condensatore più “debole” in termini di accumulo di carica."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["condensatori", "serie", "capacità equivalente"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_007",
+    "id": "CIR_004",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Condensatori",
-    "titolo": "Condensatori in Parallelo",
+    "titolo": "Condensatori in parallelo",
     "formula_latex": "C_{eq} = C_1 + C_2 + \\dots",
-    "descrizione": "Quando i condensatori sono collegati in parallelo, la differenza di potenziale su ciascuno è la stessa, e la capacità equivalente $C_{eq}$ del sistema è la somma diretta delle singole capacità.",
+    "descrizione": "La capacità equivalente $C_{eq}$ di più condensatori collegati in parallelo è data dalla somma diretta delle singole capacità. \n\nNel collegamento in parallelo, ogni condensatore è sottoposto alla stessa differenza di potenziale, ma ciascuno contribuisce ad accumulare carica. La capacità totale aumenta, perché è come se si aumentasse la superficie complessiva delle armature.",
     "variabili": [
-      { "simbolo": "$C_{eq}$", "descrizione": "Capacità equivalente", "unita": "F" },
-      { "simbolo": "$C_1, C_2, \\dots$", "descrizione": "Singole capacità", "unita": "F" }
+      { "simbolo": "C_{eq}", "descrizione": "Capacità equivalente", "unita": "F" },
+      { "simbolo": "C_1, C_2, \\dots", "descrizione": "Singole capacità", "unita": "F" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Due condensatori da $10 \\mu F$ e $20 \\mu F$ in parallelo hanno una capacità equivalente $C_{eq} = 10 \\mu F + 20 \\mu F = 30 \\mu F$."
+        "testo": "Due condensatori da 4 μF in parallelo si comportano come un unico condensatore da 8 μF: la carica totale accumulabile raddoppia, mentre la tensione rimane invariata."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["condensatori", "parallelo", "capacità equivalente"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_008",
+    "id": "CIR_005",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Condensatori",
-    "titolo": "Lavoro di Caricamento di un Condensatore",
+    "titolo": "Lavoro di caricamento di un condensatore",
     "formula_latex": "W = \\frac{1}{2} Q V = \\frac{1}{2} C V^2 = \\frac{Q^2}{2C}",
-    "descrizione": "Il lavoro $W$ richiesto per caricare un condensatore è uguale all'energia potenziale elettrica immagazzinata al suo interno. Può essere espresso in funzione della carica $Q$, della differenza di potenziale $V$ e della capacità $C$.",
+    "descrizione": "Il lavoro $W$ necessario per caricare un condensatore rappresenta l’energia accumulata nel campo elettrico tra le armature. \n\nDurante la carica, la tensione tra le armature cresce man mano che aumenta la carica, quindi l’energia richiesta non è semplicemente $QV$, ma la metà. Le tre espressioni sono equivalenti e si usano a seconda delle grandezze note: carica, capacità o tensione.",
     "variabili": [
-      { "simbolo": "$W$", "descrizione": "Lavoro o Energia immagazzinata", "unita": "J (Joule)" },
-      { "simbolo": "$Q$", "descrizione": "Carica immagazzinata", "unita": "C" },
-      { "simbolo": "$V$", "descrizione": "Differenza di potenziale", "unita": "V" },
-      { "simbolo": "$C$", "descrizione": "Capacità", "unita": "F" }
+      { "simbolo": "W", "descrizione": "Lavoro o Energia immagazzinata", "unita": "J" },
+      { "simbolo": "Q", "descrizione": "Carica immagazzinata", "unita": "C" },
+      { "simbolo": "V", "descrizione": "Differenza di potenziale", "unita": "V" },
+      { "simbolo": "C", "descrizione": "Capacità", "unita": "F" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un condensatore da $5 \\mu F$ caricato a $100 V$ immagazzina un'energia di $W = \\frac{1}{2} (5 \\times 10^{-6} F) (100 V)^2 = 0.025 J$."
+        "testo": "Un condensatore da 10 μF caricato a 12 V immagazzina $0.72$ mJ. Quest’energia è quella che il generatore ha dovuto fornire per accumulare la carica."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["lavoro", "energia", "condensatore", "carica", "potenziale"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_009",
+    "id": "CIR_006",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Condensatori",
-    "titolo": "Densità Volumica di Energia Elettrica",
+    "titolo": "Densità volumica di energia elettrica di un condensatore",
     "formula_latex": "w_E = \\frac{1}{2} \\varepsilon E^2",
-    "descrizione": "La densità volumica di energia elettrica $w_E$ rappresenta l'energia immagazzinata per unità di volume in un campo elettrico $E$ nel vuoto o in un dielettrico con costante $\\varepsilon$.",
+    "descrizione": "La densità volumica di energia elettrica $w_E$ esprime quanta energia è immagazzinata per unità di volume nel campo elettrico generato all'interno di un condensatore. \n\nL’energia accumulata in un condensatore non è concentrata in un punto, ma distribuita nel campo elettrico tra le armature. Questa formula permette di calcolare quanta energia è presente in ogni metro cubo di spazio dove c’è il campo. Il valore dipende dall’intensità del campo elettrico $E$ e dal materiale isolante (attraverso $\\varepsilon$).",
     "variabili": [
-      { "simbolo": "$w_E$", "descrizione": "Densità volumica di energia", "unita": "J/m^3" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
-      { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" }
+      { "simbolo": "w_E", "descrizione": "Densità volumica di energia", "unita": "\\frac{J}{m^3}" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Costante dielettrica del mezzo", "unita": "\\frac{C^2}{N \\cdot m^2}" },
+      { "simbolo": "E", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "In una regione con un campo elettrico di $1000$, la densità di energia è $w_E = \\frac{1}{2} (8.85 \\times 10^{-12}) (1000)^2 \\approx 4.425 \\times 10^{-6} J/m^3$."
+        "testo": "In un condensatore con campo elettrico di $10^5$ V/m e vuoto tra le armature, la densità di energia è circa $0{,}044$ J/m³. È utile per stimare l’energia in dispositivi miniaturizzati o campi uniformi."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["energia", "densità volumica", "campo elettrico"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_010",
+    "id": "CIR_007",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Corrente e Resistenza",
-    "titolo": "Intensità di Corrente Elettrica",
+    "titolo": "Intensità di corrente elettrica",
     "formula_latex": "I = \\frac{\\Delta Q}{\\Delta t}",
-    "descrizione": "L'intensità di corrente elettrica $I$ è la quantità di carica $\\Delta Q$ che attraversa una sezione trasversale di un conduttore nell'unità di tempo $\\Delta t$.",
+    "descrizione": "L’intensità di corrente elettrica $I$ è definita come la quantità di carica elettrica $\\Delta Q$ che attraversa una sezione di un conduttore nell’intervallo di tempo $\\Delta t$. \n\nLa corrente misura la rapidità con cui le cariche elettriche si muovono lungo un circuito. Una corrente più intensa corrisponde a un maggior flusso di carica in un dato tempo. È una grandezza fondamentale per descrivere i fenomeni elettrici nei circuiti.",
     "variabili": [
-      { "simbolo": "$I$", "descrizione": "Intensità di corrente", "unita": "A (Ampere)" },
-      { "simbolo": "$\\Delta Q$", "descrizione": "Carica", "unita": "C" },
-      { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
+      { "simbolo": "I", "descrizione": "Intensità di corrente", "unita": "A" },
+      { "simbolo": "\\Delta Q", "descrizione": "Carica", "unita": "C" },
+      { "simbolo": "\\Delta t", "descrizione": "Intervallo di tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se $0.5 C$ di carica attraversano un filo in $2 s$, l'intensità di corrente è $I = \\frac{0.5 C}{2 s} = 0.25 A$."
+        "testo": "Se una lampadina è attraversata da 2 C di carica ogni secondo, la corrente che la attraversa è di 2 A. Questo aiuta a comprendere quanta 'attività elettrica' sta avvenendo nel circuito."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["corrente", "carica", "tempo", "intensità"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_011",
+    "id": "CIR_008",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Corrente e Resistenza",
-    "titolo": "Prima Legge di Ohm",
+    "titolo": "Prima legge di Ohm",
     "formula_latex": "V = R I",
-    "descrizione": "La prima legge di Ohm afferma che la differenza di potenziale $V$ ai capi di un conduttore ohmico è direttamente proporzionale all'intensità di corrente $I$ che lo attraversa, con $R$ che è la resistenza elettrica del conduttore.",
+    "descrizione": "La differenza di potenziale $V$ applicata ai capi di un conduttore è direttamente proporzionale all’intensità di corrente $I$ che lo attraversa, con costante di proporzionalità la resistenza elettrica $R$. \n\nLa legge esprime come un conduttore si oppone al passaggio della corrente: maggiore è la resistenza, maggiore è la tensione necessaria per far fluire la stessa corrente. È alla base del comportamento dei materiali ohmici, in cui la relazione tra $V$ e $I$ è lineare.",
     "variabili": [
-      { "simbolo": "$V$", "descrizione": "Differenza di potenziale", "unita": "V" },
-      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "$\\Omega$ (Ohm)" },
-      { "simbolo": "$I$", "descrizione": "Intensità di corrente", "unita": "A" }
+      { "simbolo": "V", "descrizione": "Differenza di potenziale", "unita": "V" },
+      { "simbolo": "R", "descrizione": "Resistenza", "unita": "\\Omega" },
+      { "simbolo": "I", "descrizione": "Intensità di corrente", "unita": "A" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una resistenza di $10 \\Omega$ è attraversata da una corrente di $2 A$. La differenza di potenziale ai suoi capi è $V = 10 \\Omega \\cdot 2 A = 20 V$."
+        "testo": "Una resistenza di 10 Ω attraversata da una corrente di 2 A richiede una tensione di 20 V: la legge consente di calcolare la tensione necessaria per far funzionare un componente elettrico."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["legge di Ohm", "resistenza", "corrente", "tensione"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_012",
+    "id": "CIR_009",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Corrente e Resistenza",
-    "titolo": "Resistenze in Serie",
-    "formula_latex": "R_{eq} = R_1 + R_2 + \\dots",
-    "descrizione": "Quando le resistenze sono collegate in serie, la corrente che le attraversa è la stessa, e la resistenza equivalente $R_{eq}$ del sistema è la somma diretta delle singole resistenze.",
-    "variabili": [
-      { "simbolo": "$R_{eq}$", "descrizione": "Resistenza equivalente", "unita": "$\\Omega$" },
-      { "simbolo": "$R_1, R_2, \\dots$", "descrizione": "Singole resistenze", "unita": "$\\Omega$" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Due resistenze da $50 \\Omega$ e $100 \\Omega$ in serie hanno una resistenza equivalente $R_{eq} = 50 \\Omega + 100 \\Omega = 150 \\Omega$."
-      }
-    ],
-    "link_correlati": [],
-    "parole_chiave": ["resistenze", "serie", "resistenza equivalente"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "CIR_013",
-    "categoria": "Circuiti Elettrici",
-    "sottocategoria": "Corrente e Resistenza",
-    "titolo": "Resistenze in Parallelo",
-    "formula_latex": "\\frac{1}{R_{eq}} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots",
-    "descrizione": "Quando le resistenze sono collegate in parallelo, la differenza di potenziale ai loro capi è la stessa, e la resistenza equivalente $R_{eq}$ del sistema è calcolata come il reciproco della somma dei reciproci delle singole resistenze.",
-    "variabili": [
-      { "simbolo": "$R_{eq}$", "descrizione": "Resistenza equivalente", "unita": "$\\Omega$" },
-      { "simbolo": "$R_1, R_2, \\dots$", "descrizione": "Singole resistenze", "unita": "$\\Omega$" }
-    ],
-    "esempi": [
-      {
-        "titolo": "Esempio",
-        "testo": "Due resistenze da $50 \\Omega$ e $100 \\Omega$ in parallelo hanno una resistenza equivalente $\\frac{1}{R_{eq}} = \\frac{1}{50 \\Omega} + \\frac{1}{100 \\Omega} \\implies R_{eq} \\approx 33.33 \\Omega$."
-      }
-    ],
-    "link_correlati": [],
-    "parole_chiave": ["resistenze", "parallelo", "resistenza equivalente"],
-    "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
-  },
-  {
-    "id": "CIR_014",
-    "categoria": "Circuiti Elettrici",
-    "sottocategoria": "Corrente e Resistenza",
-    "titolo": "Seconda Legge di Ohm",
+    "titolo": "Seconda legge di Ohm",
     "formula_latex": "R = \\rho \\frac{L}{A}",
-    "descrizione": "La seconda legge di Ohm mette in relazione la resistenza $R$ di un conduttore con la sua resistività $\\rho$, la sua lunghezza $L$ e la sua area della sezione trasversale $A$.",
+    "descrizione": "La resistenza elettrica $R$ di un conduttore è direttamente proporzionale alla sua lunghezza $L$ e inversamente proporzionale alla sua sezione $A$, con costante di proporzionalità la resistività del materiale $\\rho$. \n\nQuesta legge spiega da cosa dipende la resistenza di un filo conduttore: materiali più resistivi (alto $\\rho$), fili più lunghi o con sezione più piccola oppongono più resistenza al passaggio della corrente. Serve a progettare cavi elettrici in base al materiale e alle dimensioni.",
     "variabili": [
-      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "$\\Omega$" },
-      { "simbolo": "$\\rho$", "descrizione": "Resistività del materiale", "unita": "$\\Omega \\cdot$ m" },
-      { "simbolo": "$L$", "descrizione": "Lunghezza del conduttore", "unita": "m" },
-      { "simbolo": "$A$", "descrizione": "Area della sezione trasversale", "unita": "m^2" }
+      { "simbolo": "R", "descrizione": "Resistenza", "unita": "\\Omega" },
+      { "simbolo": "\\rho", "descrizione": "Resistività del materiale", "unita": "\\Omega \\cdot m" },
+      { "simbolo": "L", "descrizione": "Lunghezza del conduttore", "unita": "m" },
+      { "simbolo": "A", "descrizione": "Area della sezione trasversale", "unita": "m^2" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un filo di rame con resistività di $1.68 \\times 10^{-8} \\Omega \\cdot m$, lungo $10 m$ e con area di $1 \\times 10^{-6} m^2$, ha una resistenza $R = (1.68 \\times 10^{-8} \\Omega \\cdot m) \\frac{10 m}{1 \\times 10^{-6} m^2} = 0.168 \\Omega$."
+        "testo": "Un filo di rame lungo 2 m e con sezione di 1 mm² ha una resistenza maggiore di uno stesso filo lungo solo 1 m: accorciarlo o aumentare la sezione riduce le perdite di energia nel trasporto elettrico."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["resistenza", "resistività", "lunghezza", "area"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_015",
+    "id": "CIR_010",
     "categoria": "Circuiti Elettrici",
-    "sottocategoria": "Generatori e Leggi di Kirchhoff",
-    "titolo": "Forza Elettromotrice",
-    "formula_latex": "\\mathcal{f}_em = \\frac{W}{Q}",
-    "descrizione": "La forza elettromotrice (f.e.m.) $\\mathcal{f}_em$ di un generatore è il lavoro $W$ compiuto dal generatore per spostare una carica unitaria $Q$ dal polo negativo al polo positivo al suo interno, idealmente senza perdite.",
+    "sottocategoria": "Corrente e Resistenza",
+    "titolo": "Resistenze in serie",
+    "formula_latex": "R_{eq} = R_1 + R_2 + \\dots",
+    "descrizione": "La resistenza equivalente $R_{eq}$ di più resistori collegati in serie è pari alla somma algebrica delle singole resistenze. \n\nQuando le resistenze sono collegate in serie, la corrente che le attraversa è la stessa, ma ciascuna oppone una parte del totale ostacolo al passaggio della corrente. Per questo motivo, le resistenze si sommano: il circuito si comporta come un’unica resistenza più grande.",
     "variabili": [
-      { "simbolo": "$\\mathcal{f}_em$", "descrizione": "Forza elettromotrice", "unita": "V" },
-      { "simbolo": "$W$", "descrizione": "Lavoro", "unita": "J" },
-      { "simbolo": "$Q$", "descrizione": "Carica", "unita": "C" }
+      { "simbolo": "R_{eq}", "descrizione": "Resistenza equivalente", "unita": "\\Omega" },
+      { "simbolo": "R_1, R_2, \\dots", "descrizione": "Singole resistenze", "unita": "\\Omega" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una batteria che compie $12 J$ di lavoro per spostare $1 C$ di carica ha una f.e.m. di $\\mathcal{f}_em = \\frac{12 J}{1 C} = 12 V$."
+        "testo": "Se colleghi in fila una lampadina da 2 Ω e una da 3 Ω, il circuito offre una resistenza totale di 5 Ω: ogni elemento rallenta il passaggio della corrente in modo cumulativo."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["resistenze", "serie", "resistenza equivalente"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-27"
+  },
+  {
+    "id": "CIR_011",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente e Resistenza",
+    "titolo": "Resistenze in parallelo",
+    "formula_latex": "\\frac{1}{R_{eq}} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\dots",
+    "descrizione": "La resistenza equivalente $R_{eq}$ di più resistori collegati in parallelo è pari al reciproco della somma dei reciproci delle singole resistenze. \n\nIn un collegamento in parallelo, ogni resistenza offre un proprio percorso alla corrente. Questo riduce l’opposizione totale, perché la corrente può 'dividersi' tra più strade. Il circuito si comporta quindi come una resistenza complessiva più bassa.",
+    "variabili": [
+      { "simbolo": "R_{eq}", "descrizione": "Resistenza equivalente", "unita": "\\Omega" },
+      { "simbolo": "R_1, R_2, \\dots", "descrizione": "Singole resistenze", "unita": "\\Omega" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Due resistenze da 4 Ω in parallelo danno un $R_{eq}$ di 2 Ω: la corrente ha più 'corsie' per fluire, quindi incontra meno resistenza complessiva."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["resistenze", "parallelo", "resistenza equivalente"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-27"
+  },
+  {
+    "id": "CIR_012",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Generatori e Leggi di Kirchhoff",
+    "titolo": "Forza elettromotrice",
+    "formula_latex": "\\mathcal{f}_{em} = \\frac{W}{Q}",
+    "descrizione": "La forza elettromotrice $\\mathcal{f}_{em}$ è definita come il lavoro $W$ compiuto da un generatore per trasferire una certa quantità di carica $Q$ all’interno del circuito. \n\nLa forza elettromotrice rappresenta la capacità di un generatore (come una pila o una batteria) di fornire energia elettrica. Indica quanta energia viene fornita per ogni coulomb di carica che attraversa il generatore, ed è misurata in volt.",
+    "variabili": [
+      { "simbolo": "\\mathcal{f}_{em}", "descrizione": "Forza elettromotrice", "unita": "V" },
+      { "simbolo": "W", "descrizione": "Lavoro", "unita": "J" },
+      { "simbolo": "Q", "descrizione": "Carica", "unita": "C" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una batteria che compie 3 J di lavoro per spostare 1 C di carica ha una f.e.m. di 3 V: significa che ogni coulomb riceve 3 joule di energia elettrica."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["f.e.m.", "forza elettromotrice", "lavoro", "carica", "generatore"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_016",
+    "id": "CIR_013",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Generatori e Leggi di Kirchhoff",
-    "titolo": "Generatore Reale di Tensione",
-    "formula_latex": "V = \\mathcal{f}_em - I r",
-    "descrizione": "Un generatore reale di tensione ha una resistenza interna $r$ che causa una caduta di tensione. La tensione $V$ ai capi del generatore è la f.e.m. $\\mathcal{f}_em$ meno la caduta di tensione sulla resistenza interna quando una corrente $I$ lo attraversa.",
+    "titolo": "Generatore reale di tensione",
+    "formula_latex": "V = \\frac{R}{R+r} \\mathcal{f}_{em}",
+    "descrizione": "La tensione $V$ ai capi del carico esterno collegato a un generatore reale dipende dalla forza elettromotrice $\\mathcal{f}_{em}$ e dal rapporto tra la resistenza del carico $R$ e la somma di $R$ con la **resistenza interna** del generatore $r$. \n\nUn generatore reale non è ideale: al suo interno è presente una resistenza interna $r$ che provoca una caduta di tensione. Di conseguenza, non tutta la forza elettromotrice si trasferisce al circuito esterno. La tensione disponibile ai capi del carico risulta quindi inferiore a $\\mathcal{f}_{em}$ e dipende da quanto grande è la resistenza interna rispetto a quella esterna.",
     "variabili": [
-      { "simbolo": "$V$", "descrizione": "Tensione ai capi", "unita": "V" },
-      { "simbolo": "$\\mathcal{f}_em$", "descrizione": "Forza elettromotrice", "unita": "V" },
-      { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
-      { "simbolo": "$r$", "descrizione": "Resistenza interna", "unita": "$\\Omega$" }
+      { "simbolo": "V", "descrizione": "Tensione ai capi del circuito", "unita": "V" },
+      { "simbolo": "\\mathcal{f}_{em}", "descrizione": "Forza elettromotrice", "unita": "V" },
+      { "simbolo": "R", "descrizione": "Resistenza del carico", "unita": "\\Omega" },
+      { "simbolo": "r", "descrizione": "Resistenza interna", "unita": "\\Omega" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una batteria da $12 V$ con resistenza interna di $0.5 \\Omega$ che eroga una corrente di $2 A$ avrà una tensione ai capi di $V = 12 V - (2 A \\cdot 0.5 \\Omega) = 11 V$."
+        "testo": "Se $R = r$, metà della forza elettromotrice si perde all’interno del generatore. Solo aumentando $R$ rispetto a $r$ si può recuperare una frazione maggiore della f.e.m."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["generatore reale", "tensione", "f.e.m.", "resistenza interna"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_017",
+    "id": "CIR_014",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Potenza ed Effetto Joule",
     "titolo": "Effetto Joule",
     "formula_latex": "P = V I = I^2 R = \\frac{V^2}{R}",
-    "descrizione": "L'effetto Joule descrive la potenza $P$ dissipata sotto forma di calore in una resistenza $R$ quando essa è attraversata da una corrente $I$ o ha ai suoi capi una differenza di potenziale $V$.",
+    "descrizione": "La **potenza dissipata** sotto forma di **calore** in un conduttore attraversato da corrente elettrica è proporzionale alla tensione $V$ e all’intensità di corrente $I$, oppure al quadrato della corrente moltiplicata per la resistenza $R$, o ancora al quadrato della tensione diviso per la resistenza. \n\nQuando una corrente elettrica attraversa un conduttore, parte dell’energia elettrica viene trasformata in calore a causa della resistenza che si oppone al passaggio degli elettroni. Questa dissipazione è nota come effetto Joule. Le tre espressioni equivalenti permettono di calcolare la potenza termica sviluppata a seconda dei dati noti: tensione e corrente, corrente e resistenza, oppure tensione e resistenza.",
     "variabili": [
-      { "simbolo": "$P$", "descrizione": "Potenza dissipata", "unita": "W (Watt)" },
-      { "simbolo": "$V$", "descrizione": "Differenza di potenziale", "unita": "V" },
-      { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
-      { "simbolo": "$R$", "descrizione": "Resistenza", "unita": "$\\Omega$" }
+      { "simbolo": "P", "descrizione": "Potenza dissipata", "unita": "W" },
+      { "simbolo": "V", "descrizione": "Differenza di potenziale", "unita": "V" },
+      { "simbolo": "I", "descrizione": "Corrente", "unita": "A" },
+      { "simbolo": "R", "descrizione": "Resistenza", "unita": "\\Omega" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una resistenza di $20 \\Omega$ attraversata da una corrente di $3 A$ dissipa una potenza di $P = (3 A)^2 \\cdot 20 \\Omega = 180 W$."
+        "testo": "In una stufetta elettrica, una resistenza da $20,\\Omega$ alimentata a $230,\\mathrm{V}$ dissipa circa $2.6,\\mathrm{kW}$ di potenza: è così che genera calore per riscaldare l’ambiente."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["effetto Joule", "potenza", "calore", "resistenza", "corrente"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_018",
+    "id": "CIR_015",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Generatori e Leggi di Kirchhoff",
-    "titolo": "Prima Legge di Kirchhoff (Legge dei Nodi)",
+    "titolo": "Prima legge di Kirchhoff (Legge dei nodi)",
     "formula_latex": "\\sum I_{in} = \\sum I_{out}",
-    "descrizione": "La prima legge di Kirchhoff (o legge dei nodi) afferma che la somma delle correnti che entrano in un nodo (un punto di giunzione in un circuito) è uguale alla somma delle correnti che escono da esso. Riflette il principio di conservazione della carica.",
+    "descrizione": "La Prima Legge di Kirchhoff afferma che in ogni nodo di un circuito la somma delle correnti entranti è uguale alla somma delle correnti uscenti. \n\nIl principio deriva dalla conservazione della carica: in un punto di giunzione (nodo), la quantità di carica che entra deve uscire, perché non può accumularsi. Scelte le correnti entranti con segno positivo e le uscenti con segno negativo, la somma algebrica totale è zero.",
     "variabili": [
-      { "simbolo": "$I_{in}$", "descrizione": "Corrente in ingresso", "unita": "A" },
-      { "simbolo": "$I_{out}$", "descrizione": "Corrente in uscita", "unita": "A" }
+      { "simbolo": "I_{in}", "descrizione": "Corrente in ingresso", "unita": "A" },
+      { "simbolo": "I_{out}", "descrizione": "Corrente in uscita", "unita": "A" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se in un nodo entrano $5 A$ e $3 A$, e ne escono $2 A$ e $X A$, allora $5 A + 3 A = 2 A + X A$, quindi $X = 6 A$."
+        "testo": "In un nodo confluiscono tre correnti: due entranti di 3 A e 2 A e una uscente. Secondo la legge, la corrente uscente deve essere di 5 A affinché l’entrata uguali all’uscita. In questo modo il nodo resta in equilibrio senza accumulo netti di carica."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["legge di Kirchhoff", "legge dei nodi", "corrente", "conservazione della carica"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_019",
+    "id": "CIR_016",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Generatori e Leggi di Kirchhoff",
-    "titolo": "Seconda Legge di Kirchhoff (Legge delle Maglie)",
+    "titolo": "Seconda legge di Kirchhoff (Legge delle maglie)",
     "formula_latex": "\\sum \\Delta V = 0",
-    "descrizione": "La seconda legge di Kirchhoff (o legge delle maglie) afferma che la somma algebrica delle variazioni di potenziale (tensioni) lungo qualsiasi percorso chiuso (maglia) in un circuito è zero. Riflette il principio di conservazione dell'energia.",
+    "descrizione": "La Seconda Legge di Kirchhoff afferma che, in una qualsiasi maglia chiusa di un circuito elettrico, la somma algebrica delle variazioni di potenziale elettrico (tensioni) è sempre nulla. \n\nPercorrendo una maglia chiusa, le differenze di potenziale associate ai generatori e ai resistori (o ad altri elementi passivi) si compensano. Questo riflette la conservazione dell’energia: l’energia fornita da un generatore viene interamente spesa nei vari componenti del circuito.",
     "variabili": [
       { "simbolo": "$\\Delta V$", "descrizione": "Variazione di potenziale", "unita": "V" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Percorrendo una maglia, se incontriamo una batteria da $9 V$ (aumento) e due resistenze che causano cadute di $3 V$ e $6 V$ (diminuzioni), la somma è $9 V - 3 V - 6 V = 0$."
+        "testo": "In una maglia formata da un generatore da 12 V e due resistenze da 4 Ω e 2 Ω in serie, le cadute di tensione saranno rispettivamente di 8V e 4V (se la corrente è 2A). Sommando la legge è verificata."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["legge di Kirchhoff", "legge delle maglie", "tensione", "conservazione dell'energia"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
-    "id": "CIR_020",
+    "id": "CIR_017",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Circuiti RC",
-    "titolo": "Circuito RC: Carica del Condensatore",
+    "titolo": "Circuito RC: carica del condensatore",
     "formula_latex": "\\begin{aligned} q(t) &= Q_{\\text{max}} (1 - e^{-t/\\tau}) \\\\ I(t) &= I_{\\text{max}} e^{-t/\\tau} \\end{aligned}",
-    "descrizione": "Durante la carica di un condensatore in un circuito RC (resistenza-condensatore), la carica $q(t)$ sul condensatore e la corrente $I(t)$ nel circuito variano esponenzialmente nel tempo. $\\tau = RC$ è la costante di tempo.",
+    "descrizione": "Nel processo di carica di un condensatore in un circuito RC, la carica accumulata nel tempo segue un andamento esponenziale crescente, mentre la corrente decresce esponenzialmente. \n\n $\\tau = RC$ è la costante di tempo del circuito e determina quanto rapidamente il condensatore si carica. Dopo un tempo pari a $\\tau$, il condensatore ha accumulato circa il 63% della carica massima. Dopo circa $5\\tau$, il processo di carica è praticamente completo.",
     "variabili": [
-      { "simbolo": "$q(t)$", "descrizione": "Carica in funzione del tempo", "unita": "C" },
-      { "simbolo": "$Q_{max}$", "descrizione": "Carica massima", "unita": "C" },
-      { "simbolo": "$I(t)$", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
-      { "simbolo": "$I_{max}$", "descrizione": "Corrente massima", "unita": "A" },
-      { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" },
-      { "simbolo": "$\\tau$", "descrizione": "Costante di tempo ($RC$)", "unita": "s" }
+      { "simbolo": "q(t)", "descrizione": "Carica in funzione del tempo", "unita": "C" },
+      { "simbolo": "Q_{max}", "descrizione": "Carica massima", "unita": "C" },
+      { "simbolo": "I(t)", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
+      { "simbolo": "I_{max}", "descrizione": "Corrente massima", "unita": "A" },
+      { "simbolo": "t", "descrizione": "Tempo", "unita": "s" },
+      { "simbolo": "\\tau", "descrizione": "Costante di tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "In un circuito RC con $R = 100 \\Omega$ e $C = 10 \\mu F$, la costante di tempo è $\\tau = 100 \\Omega \\cdot 10 \\times 10^{-6} F = 0.001 s$. Dopo $0.001 s$, la carica sul condensatore sarà circa il $63.2\\%$ della carica massima."
+        "testo": "In un circuito con $R = 1,\\Omega$ e $C = 1,\\text{F}$, la costante di tempo è $\\tau = 1,\\text{s}$. Dopo 1 secondo, il condensatore ha accumulato circa il 63% della carica massima, e la corrente è scesa al 37% del valore iniziale."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["circuito RC", "carica", "condensatore", "costante di tempo"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
   },
   {
     "id": "CIR_021",
     "categoria": "Circuiti Elettrici",
     "sottocategoria": "Circuiti RC",
-    "titolo": "Circuito RC: Scarica del Condensatore",
-    "formula_latex": "\\begin{aligned} q(t) &= Q_0 e^{-t/\\tau} \\\\ I(t) &= -I_0 e^{-t/\\tau} \\end{aligned}",
-    "descrizione": "Durante la scarica di un condensatore in un circuito RC, la carica $q(t)$ sul condensatore e la corrente $I(t)$ nel circuito diminuiscono esponenzialmente nel tempo. $\\tau = RC$ è la costante di tempo.",
+    "titolo": "Circuito RC: scarica del condensatore",
+    "formula_latex": "\\begin{aligned} q(t) &= Q_{\\text{max}} e^{-t/\\tau} \\\\ I(t) &= -I_{\\text{max}} e^{-t/\\tau} \\end{aligned}",
+    "descrizione": "Nel processo di scarica di un condensatore attraverso una resistenza, la carica e la corrente decrescono esponenzialmente nel tempo. \n\n $\\tau = RC$ è la costante di tempo del circuito. Dopo un tempo pari a $\\tau$, la carica si riduce a circa il 37% del valore iniziale. Dopo circa $5\\tau$, il condensatore è praticamente scarico.",
     "variabili": [
-      { "simbolo": "$q(t)$", "descrizione": "Carica in funzione del tempo", "unita": "C" },
-      { "simbolo": "$Q_{0}$", "descrizione": "Carica iniziale", "unita": "C" },
-      { "simbolo": "$I(t)$", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
-      { "simbolo": "$I_{0}$", "descrizione": "Corrente iniziale", "unita": "A" },
-      { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" },
-      { "simbolo": "$\\tau$", "descrizione": "Costante di tempo ($RC$)", "unita": "s" }
+      { "simbolo": "q(t)", "descrizione": "Carica in funzione del tempo", "unita": "C" },
+      { "simbolo": "Q_{\\text{max}}", "descrizione": "Carica iniziale massima", "unita": "C" },
+      { "simbolo": "I(t)", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
+      { "simbolo": "I_{\\text{max}}", "descrizione": "Corrente iniziale massima", "unita": "A" },
+      { "simbolo": "t", "descrizione": "Tempo", "unita": "s" },
+      { "simbolo": "\\tau", "descrizione": "Costante di tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un condensatore carico in un circuito RC con $\\tau = 0.001 s$ si scaricherà. Dopo $0.001 s$, la carica rimanente sul condensatore sarà circa il $36.8\\%$ della carica iniziale."
+        "testo": "In un circuito con $R = 10,\\Omega$ e $C = 100,\\mu\\text{F}$, la costante di tempo è $\\tau = 1,\\text{s}$. Dopo 1 secondo, rimane circa il 37% della carica iniziale sul condensatore e la corrente è scesa anch’essa al 37% del valore iniziale (in modulo)."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["circuito RC", "scarica", "condensatore", "costante di tempo"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-27"
+  },
+  {
+    "id": "CIR_022",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Circuiti RL",
+    "titolo": "Induttanza di un solenoide",
+    "formula_latex": "L = \\mu n^2 l A",
+    "descrizione": "L’induttanza misura la capacità di un solenoide di generare un campo magnetico che si **oppone** alle **variazioni di corrente**. Dipende dalle proprietà geometriche del solenoide e dal materiale in cui è immerso, attraverso la permeabilità magnetica. \n\nUn solenoide più lungo, con più spire e una sezione più ampia crea un campo magnetico interno più intenso e stabile. Questo rende più difficile variare la corrente nel tempo: è come se il solenoide 'resistesse' ai cambiamenti, accumulando energia nel campo magnetico.",
+    "variabili": [
+      { "simbolo": "L", "descrizione": "Induttanza di un solenoide", "unita": "H" },
+      { "simbolo": "\\mu", "descrizione": "Permeabilità magnetica del mezzo", "unita": "\\frac{N}{A^2}" },
+      { "simbolo": "n", "descrizione": "Numero di spire per unità di lunghezza", "unita": "m^{-1}" },
+      { "simbolo": "l", "descrizione": "Lunghezza", "unita": "m" },
+      { "simbolo": "A", "descrizione": "Area trasversale", "unita": "m^2" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "In un circuito elettronico sensibile alle fluttuazioni di corrente, come un amplificatore audio, si può inserire un solenoide con alta induttanza per stabilizzare la corrente e ridurre i disturbi."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["circuito RL", "induttanza", "corrente", "solenoide", "induttore", "spire"],
+    "data_creazione": "2025-07-28",
+    "data_ultima_modifica": "2025-07-28"
+  },
+  {
+    "id": "CIR_023",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Energia del Campo Magnetico",
+    "titolo": "Energia immagazzinata in un induttore",
+    "formula_latex": "W_L = \\frac{1}{2} L I^2",
+    "descrizione": "L'energia accumulata in un induttore attraversato da corrente è proporzionale all'induttanza e al quadrato dell'intensità della corrente. Viene immagazzinata sotto forma di campo magnetico. \n\nQuando la corrente aumenta, l'induttore accumula energia nel suo campo magnetico. Più la corrente è intensa, più energia viene trattenuta: l'induttore agisce come un 'serbatoio' che si carica e si scarica in risposta alle variazioni del circuito.",
+    "variabili": [
+      { "simbolo": "W_L", "descrizione": "Energia immagazzinata nell'induttore", "unita": "J" },
+      { "simbolo": "L", "descrizione": "Induttanza", "unita": "H" },
+      { "simbolo": "I", "descrizione": "Corrente nell'induttore", "unita": "A" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "In un alimentatore switching, durante la fase di carica l'induttore accumula energia che viene poi rilasciata per mantenere la tensione costante anche quando la corrente in ingresso oscilla: è una sorta di 'ammortizzatore' energetico."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["energia magnetica", "induttore", "autoinduttanza", "corrente", "Joule"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-28"
+  },
+  {
+    "id": "CIR_024",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Circuiti RL",
+    "titolo": "Circuito RL",
+    "formula_latex": "\\begin{aligned} I(t) &= I_{\\text{max}} (1 - e^{-t/\\tau}) \\\\ I(t) &= I_{\\text{max}} e^{-t/\\tau} \\end{aligned}",
+    "descrizione": "La corrente in un circuito RL cresce o decresce nel tempo seguendo una legge esponenziale, a causa dell’**induttanza** che si **oppone** alle variazioni rapide di corrente. \n\n$\\tau = \\dfrac{L}{R}$ è la costante di tempo del circuito (con $L$ induttanza, $R$ resistenza). Durante l’accensione, l’induttanza si oppone all’aumento della corrente. Dopo circa $5\\tau$, la corrente è praticamente a regime. Durante lo spegnimento (quando si apre il circuito), la corrente decresce con la stessa legge esponenziale.",
+    "variabili": [
+      { "simbolo": "I(t)", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
+      { "simbolo": "I_{\\text{max}}", "descrizione": "Corrente massima a regime", "unita": "A" },
+      { "simbolo": "t", "descrizione": "Tempo", "unita": "s" },
+      { "simbolo": "\\tau", "descrizione": "Costante di tempo induttiva", "unita": "s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Nel circuito di un relè, l’induttanza ritarda l’accensione della corrente: questo effetto può essere sfruttato per introdurre un ritardo temporale tra l'attivazione di diversi dispositivi, oppure per evitare sovracorrenti istantanee all'accensione."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["circuito RL", "carica", "corrente", "costante di tempo", "induttore", "resistenza"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-28"
+  },
+  {
+    "id": "CIR_025",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente Alternata (AC)",
+    "titolo": "Valore efficace di tensione o corrente alternata",
+    "formula_latex": "\\begin{aligned} V_{\\text{eff}} &= \\frac{V_{\\text{max}}}{\\sqrt{2}} \\\\ I_{\\text{eff}} &= \\frac{I_{\\text{max}}}{\\sqrt{2}} \\end{aligned}",
+    "descrizione": "Il valore efficace rappresenta la tensione o corrente continua che produrrebbe la stessa potenza media di una grandezza alternata sinusoidale. \n\nAnche se la tensione alternata varia continuamente, il valore efficace permette di confrontarla con una tensione continua in termini di effetto energetico. È il valore 'utile' che si considera nei calcoli di potenza e nelle specifiche tecniche.",
+    "variabili": [
+      { "simbolo": "V_{\\text{eff}}", "descrizione": "Tensione efficace", "unita": "V" },
+      { "simbolo": "I_{\\text{eff}}", "descrizione": "Corrente efficace", "unita": "A" },
+      { "simbolo": "V_{\\text{max}}", "descrizione": "Tensione massima (picco)", "unita": "V" },
+      { "simbolo": "I_{\\text{max}}", "descrizione": "Corrente massima (picco)", "unita": "A" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una presa di casa fornisce una tensione efficace di 230 V, ma la tensione massima è più alta, circa 325 V. L’impianto è però progettato per rispondere all’effetto energetico della componente efficace, non ai picchi."
+      }
+    ],
+    "link_correlati": ["AC_001"],
+    "parole_chiave": ["valore efficace", "RMS", "tensione AC", "corrente AC", "potenza"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-29"
+  },
+  {
+    "id": "CIR_026",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente Alternata (AC)",
+    "titolo": "Potenza media in un circuito AC",
+    "formula_latex": "P = V_{\\text{eff}} I_{\\text{eff}} \\cos(\\phi)",
+    "descrizione": "La potenza media assorbita da un carico in corrente alternata è data dal prodotto tra tensione efficace, corrente efficace e il coseno dello sfasamento tra le due grandezze. \n\nNei circuiti in AC, tensione e corrente possono non essere sincronizzate. Solo la parte 'in fase' della corrente contribuisce realmente al trasferimento di energia: il fattore $\\cos(\\phi)$ rappresenta proprio questa componente attiva.",
+    "variabili": [
+      { "simbolo": "P", "descrizione": "Potenza media", "unita": "W" },
+      { "simbolo": "V_{\\text{eff}}", "descrizione": "Tensione efficace", "unita": "V" },
+      { "simbolo": "I_{\\text{eff}}", "descrizione": "Corrente efficace", "unita": "A" },
+      { "simbolo": "\\phi", "descrizione": "Sfasamento tra tensione e corrente", "unita": "rad" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un motore elettrico alimentato in AC può assorbire una corrente significativa, ma se è molto induttivo lo sfasamento tra tensione e corrente riduce la potenza media effettivamente usata per compiere lavoro: non tutta l'energia fornita viene convertita in potenza utile."
+      }
+    ],
+    "link_correlati": ["AC_002"],
+    "parole_chiave": ["potenza media", "AC", "fattore di potenza", "sfasamento", "Watt"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-29"
+  },
+  {
+    "id": "CIR_027",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente Alternata (AC)",
+    "titolo": "Circuito Ohmico in AC",
+    "formula_latex": "I(t) = \\frac{\\mathcal{f}_0}{R} \\sin(\\omega t)",
+    "descrizione": "In un circuito puramente resistivo alimentato in corrente alternata, la corrente ha la stessa forma d'onda e la **stessa fase** della tensione: varia nel tempo in modo sinusoidale senza sfasamenti. \n\nIn un resistore, la corrente segue perfettamente la tensione: quando la tensione cambia segno o cresce, la corrente fa lo stesso istantaneamente. Non c'è accumulo di energia nel circuito, tutta l’energia fornita viene dissipata come calore.",
+    "variabili": [
+      { "simbolo": "I(t)", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
+      { "simbolo": "\\mathcal{f}_0", "descrizione": "Tensione massima", "unita": "V" },
+      { "simbolo": "R", "descrizione": "Resistenza", "unita": "\\Omega" },
+      { "simbolo": "\\omega", "descrizione": "Pulsazione angolare", "unita": "\\frac{rad}{s}" },
+      { "simbolo": "t", "descrizione": "Tempo", "unita": "s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un forno elettrico alimentato in AC è un esempio pratico di carico quasi puramente resistivo: la corrente varia in sincronia con la tensione, senza ritardi o anticipo, e tutta la potenza elettrica viene trasformata in calore."
+      }
+    ],
+    "link_correlati": ["AC_003"],
+    "parole_chiave": ["circuito ohmico", "resistivo", "AC", "sfasamento", "Legge di Ohm"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-29"
+  },
+  {
+    "id": "CIR_028",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente Alternata (AC)",
+    "titolo": "Circuito Induttivo in AC",
+    "formula_latex": "I(t) = \\frac{\\mathcal{f}_0}{\\omega L} \\sin(\\omega t - \\frac{\\pi}{2})",
+    "descrizione": "In un circuito puramente induttivo, la corrente è sfasata rispetto alla tensione di un quarto di periodo: raggiunge il valore massimo un quarto di ciclo dopo la tensione. \n\nL’induttore si oppone alle variazioni di corrente: per questo la corrente 'insegue' la tensione, con un ritardo costante. L’energia fornita dal generatore non viene subito dissipata, ma prima accumulata nel campo magnetico e poi restituita.",
+    "variabili": [
+      { "simbolo": "I(t)", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
+      { "simbolo": "\\mathcal{f}_0", "descrizione": "Tensione massima", "unita": "V" },
+      { "simbolo": "L", "descrizione": "Induttanza", "unita": "H" },
+      { "simbolo": "\\omega", "descrizione": "Pulsazione angolare", "unita": "\\frac{rad}{s}" },
+      { "simbolo": "t", "descrizione": "Tempo", "unita": "s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un trasformatore scollegato dal carico rappresenta quasi un circuito puramente induttivo: la corrente che scorre nella bobina primaria è in ritardo rispetto alla tensione, segno che sta solo alimentando il campo magnetico interno, senza produrre lavoro utile."
+      }
+    ],
+    "link_correlati": ["AC_001"],
+    "parole_chiave": ["circuito induttivo", "reattanza induttiva", "AC", "induttore", "sfasamento"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-29"
+  },
+  {
+    "id": "CIR_029",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente Alternata (AC)",
+    "titolo": "Circuito Capacitivo in AC",
+    "formula_latex": "I(t) = \\omega C \\mathcal{f}_0 \\sin(\\omega t + \\frac{\\pi}{2})",
+    "descrizione": "In un circuito puramente capacitivo, la corrente è in anticipo rispetto alla tensione di un quarto di periodo. L'ampiezza della corrente dipende dalla frequenza, dalla capacità del condensatore e dal valore massimo della tensione. \n\nUn condensatore si carica e si scarica continuamente in AC. La corrente raggiunge il picco quando la tensione varia più rapidamente, non quando è massima: per questo la corrente 'precede' la tensione, come se rispondesse in anticipo al cambiamento.",
+    "variabili": [
+      { "simbolo": "I(t)", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
+      { "simbolo": "\\mathcal{f}_0", "descrizione": "Tensione massima", "unita": "V" },
+      { "simbolo": "C", "descrizione": "Capacità", "unita": "F" },
+      { "simbolo": "\\omega", "descrizione": "Pulsazione angolare", "unita": "\\frac{rad}{s}" },
+      { "simbolo": "t", "descrizione": "Tempo", "unita": "s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un condensatore collegato direttamente a una sorgente sinusoidale senza carico rappresenta un circuito capacitivo ideale: la corrente anticipa la tensione e nessuna energia viene dissipata, ma solo continuamente accumulata e restituita"
+      }
+    ],
+    "link_correlati": ["AC_001"],
+    "parole_chiave": ["circuito capacitivo", "reattanza capacitiva", "AC", "condensatore", "sfasamento"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-29"
+  },
+  {
+    "id": "CIR_030",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente Alternata (AC)",
+    "titolo": "Circuito RLC in AC",
+    "formula_latex": "I(t) = \\frac{\\mathcal{f}_0}{Z} \\sin(\\omega t - \\Phi)",
+    "descrizione": "In un circuito RLC in regime sinusoidale, la corrente dipende dal valore massimo della forza elettromotrice $\\mathcal{f}_0$, dall’impedenza totale $Z$ e dallo sfasamento $\\Phi$ tra tensione e corrente, determinato dal bilancio tra effetto induttivo e capacitivo. \n\nLa presenza combinata di resistenza, induttanza e capacità genera uno sfasamento tra tensione e corrente e un’opposizione complessiva alla corrente diversa dalla sola resistenza. Il circuito può comportarsi da resistivo, induttivo o capacitivo a seconda della frequenza.",
+    "variabili": [
+      { "simbolo": "I(t)", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
+      { "simbolo": "\\mathcal{f}_0", "descrizione": "Tensione massima", "unita": "V" },
+      { "simbolo": "Z", "descrizione": "Impedenza", "unita": "\\Omega" },
+      { "simbolo": "\\omega", "descrizione": "Pulsazione angolare", "unita": "\\frac{rad}{s}" },
+      { "simbolo": "t", "descrizione": "Tempo", "unita": "s" },
+      { "simbolo": "\\Phi", "descrizione": "Angolo di sfasamento", "unita": "rad" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Nei circuiti audio, un filtro passa-banda RLC seleziona solo certe frequenze del segnale. A risonanza, impedenza e sfasamento si riducono e la corrente raggiunge il massimo: il circuito lascia passare proprio quella frequenza, bloccando le altre."
+      }
+    ],
+    "link_correlati": ["AC_001"],
+    "parole_chiave": ["circuito induttivo", "reattanza induttiva", "AC", "induttore", "sfasamento"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-29"
+  },
+  {
+    "id": "CIR_031",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente Alternata (AC)",
+    "titolo": "Impedenza di un circuito RLC",
+    "formula_latex": "Z = \\sqrt{R^2 + (\\omega L - \\frac{1}{\\omega C})^2}",
+    "descrizione": "L’impedenza $Z$ rappresenta l’opposizione complessiva di un circuito RLC al passaggio della corrente alternata. È composta dalla resistenza reale $R$ e dalla parte reattiva, dovuta all’induttanza $L$ e alla capacità $C$, che varia con la frequenza. Il termine $\\omega L$ è detto **reattanza induttiva** e il temine $\\frac{1}{\\omega C}$ è detto **reattanza capacitiva** \n\nLa corrente alternata incontra un'opposizione che non è solo resistiva: l’induttore 'resiste' di più all’aumentare della frequenza, mentre il condensatore si oppone meno. L’impedenza tiene conto di questo equilibrio dinamico, che cambia al variare della frequenza.",
+    "variabili": [
+      { "simbolo": "Z", "descrizione": "Impedenza", "unita": "\\Omega" },
+      { "simbolo": "R", "descrizione": "Resistenza", "unita": "\\Omega" },
+      { "simbolo": "\\omega", "descrizione": "Pulsazione angolare", "unita": "\\frac{rad}{s}" },
+      { "simbolo": "L", "descrizione": "Induttanza", "unita": "H" },
+      { "simbolo": "C", "descrizione": "Capacità", "unita": "F" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "In un circuito sintonizzatore radio, variando la capacità si modifica l’impedenza del circuito: si può così selezionare la frequenza per cui il circuito entra in risonanza, cioè quella per cui l’opposizione reattiva si annulla e la corrente è massima."
+      }
+    ],
+    "link_correlati": ["AC_004", "AC_005", "AC_006"],
+    "parole_chiave": ["impedenza", "circuito RLC", "resistenza", "reattanza", "AC"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-29"
+  },
+  {
+    "id": "CIR_032",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Corrente Alternata (AC)",
+    "titolo": "Condizione di risonanza in un circuito RLC",
+    "formula_latex": "\\omega = \\frac{1}{\\sqrt{LC}}",
+    "descrizione": "La risonanza si verifica quando la pulsazione $\\omega$ del generatore corrisponde a quella naturale del circuito. In questo caso le reattanze induttiva e capacitiva si annullano, e l’impedenza si riduce al solo valore resistivo. \n\nAlla risonanza il circuito si comporta come se non ci fosse né induttanza né capacità: la corrente è massima, perché non ci sono effetti che la ostacolano oltre alla resistenza. Il circuito 'risuona' alla frequenza giusta, amplificando quella componente.",
+    "variabili": [
+      { "simbolo": "\\omega", "descrizione": "Pulsazione angolare di risonanza", "unita": "\\frac{rad}{s}" },
+      { "simbolo": "L", "descrizione": "Induttanza", "unita": "H" },
+      { "simbolo": "C", "descrizione": "Capacità", "unita": "F" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "In una radio, per sintonizzarsi su una stazione specifica si regola la capacità del circuito fino a raggiungere la risonanza con la frequenza del segnale desiderato. Solo quel segnale passa con intensità, mentre gli altri vengono attenuati."
+      }
+    ],
+    "link_correlati": ["AC_007"],
+    "parole_chiave": ["risonanza", "circuito RLC", "frequenza di risonanza", "impedenza minima", "AC"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-29"
+  },
+  {
+    "id": "CIR_033",
+    "categoria": "Circuiti Elettrici",
+    "sottocategoria": "Circuiti LC",
+    "titolo": "Circuito LC",
+    "formula_latex": "I(t) = \\omega Q \\sin(\\omega t)",
+    "descrizione": "In un circuito LC ideale, corrente e tensione oscillano periodicamente in assenza di resistenza. L’intensità di corrente varia nel tempo con un’ampiezza proporzionale alla carica massima $Q$ inizialmente presente nel condensatore e alla pulsazione $\\omega$. \n\nIl condensatore scarica la sua energia nell’induttore, che la restituisce al condensatore ciclicamente. La corrente oscilla continuamente: il circuito si comporta come un 'pendolo elettrico', con energia che passa da campo elettrico a magnetico e viceversa.",
+    "variabili": [
+      { "simbolo": "I(t)", "descrizione": "Corrente in funzione del tempo", "unita": "A" },
+      { "simbolo": "\\omega", "descrizione": "Pulsazione angolare", "unita": "\\frac{rad}{s}" },
+      { "simbolo": "Q", "descrizione": "Corrente massima", "unita": "C" },
+      { "simbolo": "t", "descrizione": "Tempo", "unita": "s" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un oscillatore LC in un circuito elettronico può generare un segnale a una frequenza precisa, utile ad esempio nei quarzi degli orologi digitali o nei trasmettitori radio, dove è necessario un segnale periodico stabile e continuo."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["circuito LC", "oscillazione", "frequenza", "induttore", "condensatore"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-29"
   }
 ]

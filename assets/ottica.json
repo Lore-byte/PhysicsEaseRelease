@@ -5,22 +5,22 @@
     "sottocategoria": "Onde (generale)",
     "titolo": "Velocità di un'onda",
     "formula_latex": "v = \\lambda \\cdot f",
-    "descrizione": "La velocità di propagazione $v$ di un'onda è il prodotto della sua lunghezza d'onda $\\lambda$ e della sua frequenza $f$.",
+    "descrizione": "La velocità di propagazione di un'onda è data dal prodotto tra la sua lunghezza d’onda e la sua frequenza.\n\nOgni secondo, un’onda percorre una distanza pari alla lunghezza d’onda moltiplicata per quante volte si ripete (frequenza). Più è fitta (alta frequenza) o lunga (lunghezza d’onda maggiore), più velocemente si muove.",
     "variabili": [
-      { "simbolo": "$v$", "descrizione": "Velocità dell'onda", "unita": "m/s" },
-      { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d'onda", "unita": "m" },
-      { "simbolo": "$f$", "descrizione": "Frequenza dell'onda", "unita": "Hz" }
+      { "simbolo": "v", "descrizione": "Velocità dell'onda", "unita": "\\frac{m}{s}" },
+      { "simbolo": "\\lambda", "descrizione": "Lunghezza d'onda", "unita": "m" },
+      { "simbolo": "f", "descrizione": "Frequenza dell'onda", "unita": "Hz" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un'onda con una lunghezza d'onda di $0.5 \\text{ m}$ e una frequenza di $60 \\text{ Hz}$. $v = 0.5 \\cdot 60 = 30 \\text{ m/s}$."
+        "testo": "Se getti un sasso in uno stagno e osservi le onde concentriche, noterai che onde più ravvicinate (più frequenti) o con creste più distanziate (lunghezza maggiore) si muovono a diverse velocità. Se $\\lambda = 0{,}5,\\text{m}$ e $f = 2,\\text{Hz}$, allora $v = 1,\\text{m/s}$: l’onda avanza di 1 metro ogni secondo."
       }
     ],
     "link_correlati": [],
     "parole_chiave": [ "onda", "velocità", "lunghezza d'onda", "frequenza", "periodo", "v = λf" ],
     "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OND_002",
@@ -28,46 +28,46 @@
     "sottocategoria": "Onde (generale)",
     "titolo": "Periodo di un'onda",
     "formula_latex": "T = \\frac{1}{f}",
-    "descrizione": "Il periodo $T$ di un'onda è il tempo necessario per completare un'oscillazione completa, ed è l'inverso della sua frequenza $f$.",
+    "descrizione": "Il periodo di un'onda è l’intervallo di tempo necessario per completare un’oscillazione, ed è l’inverso della frequenza.\n\nPiù spesso un’onda si ripete (alta frequenza), meno tempo impiega a completare ogni ciclo. Quindi, se un’onda vibra rapidamente, ogni singolo ciclo dura meno tempo.",
     "variabili": [
-      { "simbolo": "$T$", "descrizione": "Periodo dell'onda", "unita": "s" },
-      { "simbolo": "$f$", "descrizione": "Frequenza dell'onda", "unita": "Hz" }
+      { "simbolo": "T", "descrizione": "Periodo dell'onda", "unita": "s" },
+      { "simbolo": "f", "descrizione": "Frequenza dell'onda", "unita": "Hz" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un'onda ha una frequenza di $10 \\text{ Hz}$. $T = 1 / 10 = 0.1 \\text{ s}$."
+        "testo": "Nel caso di un altoparlante che emette un suono a $f = 440,\\text{Hz}$ (nota La), il periodo è $T = \\frac{1}{440} \\approx 0{,}0023,\\text{s}$. Ogni vibrazione dura meno di 3 millesimi di secondo, ma il nostro orecchio percepisce solo la frequenza, non i singoli cicli."
       }
     ],
     "link_correlati": [ "OND_001" ],
     "parole_chiave": [ "onda", "periodo", "frequenza", "T = 1/f" ],
     "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OND_003",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Onde (generale)",
-    "titolo": "Onda Armonica (Funzione d'onda)",
+    "titolo": "Onda Armonica (funzione d'onda)",
     "formula_latex": "y(x,t) = a \\sin(kx - \\omega t + \\phi)",
-    "descrizione": "Descrive lo spostamento $y$ di un'onda armonica progressiva nel tempo $t$ e nello spazio $x$. Altre forme comuni includono $\\cos$ o combinazioni di segni per la propagazione in direzioni diverse.",
+    "descrizione": "L’onda armonica descrive l’oscillazione di un punto in un mezzo in funzione dello spazio e del tempo, ed è rappresentata da una sinusoide.\n\nQuesta formula indica come un’onda si propaga: ogni punto del mezzo oscilla nel tempo mentre l’onda avanza nello spazio. L’oscillazione ha forma sinusoidale e dipende da quanto ci si trova lontani dall’origine e da quanto tempo è passato.",
     "variabili": [
-      { "simbolo": "$y(x,t)$", "descrizione": "Spostamento dell'onda", "unita": "m" },
-      { "simbolo": "$a$", "descrizione": "Ampiezza dell'onda", "unita": "m" },
-      { "simbolo": "$k$", "descrizione": "Numero d'onda ($2\\pi / \\lambda$)", "unita": "rad/m" },
-      { "simbolo": "$\\omega$", "descrizione": "Frequenza angolare ($2\\pi f$)", "unita": "rad/s" },
-      { "simbolo": "$\\phi$", "descrizione": "Fase iniziale", "unita": "rad" }
+      { "simbolo": "y(x,t)", "descrizione": "Spostamento dell'onda", "unita": "m" },
+      { "simbolo": "a", "descrizione": "Ampiezza dell'onda", "unita": "m" },
+      { "simbolo": "k", "descrizione": "Numero d'onda ($2\\pi / \\lambda$)", "unita": "\\frac{rad}{m}" },
+      { "simbolo": "\\omega", "descrizione": "Frequenza angolare ($2\\pi f$)", "unita": "\\frac{rad}{s}" },
+      { "simbolo": "\\phi", "descrizione": "Fase iniziale", "unita": "rad" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un'onda armonica è descritta da $y(x,t) = 0.02 \\sin(4x - 8t)$. Qui, $a=0.02 \\text{ m}$, $k=4 \\text{ rad/m}$, $\\omega=8 \\text{ rad/s}$."
+        "testo": "Immagina una corda tesa che vibra: se si fissa un'estremità e si muove l'altra regolarmente su e giù, ogni punto della corda inizia a oscillare con ritardo rispetto al precedente, seguendo proprio un andamento sinusoidale nel tempo e nello spazio. La funzione $y(x,t)$ descrive il profilo istantaneo della corda."
       }
     ],
     "link_correlati": ["OND_001", "OND_002"],
     "parole_chiave": ["onda armonica", "funzione d'onda", "ampiezza", "frequenza angolare", "numero d'onda", "fase"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OND_004",
@@ -75,46 +75,46 @@
     "sottocategoria": "Onde su Corda",
     "titolo": "Velocità di un'onda lungo una corda",
     "formula_latex": "v = \\sqrt{\\frac{T}{\\mu}}",
-    "descrizione": "La velocità $v$ di un'onda trasversale che si propaga lungo una corda dipende dalla tensione $T$ della corda e dalla sua densità lineare di massa $\\mu$ (massa per unità di lunghezza).",
+    "descrizione": "La velocità di propagazione di un’onda su una corda tesa dipende dalla tensione della corda e dalla sua densità lineare di massa.\n\nUn’onda si muove più velocemente se la corda è più tesa (maggiore $T$) e più lentamente se la corda è più pesante per unità di lunghezza (maggiore $\\mu$). È il risultato dell’equilibrio tra l’inerzia della corda e la forza che la tira.",
     "variabili": [
-      { "simbolo": "$v$", "descrizione": "Velocità dell'onda", "unita": "m/s" },
-      { "simbolo": "$T$", "descrizione": "Tensione della corda", "unita": "N" },
-      { "simbolo": "$\\mu$", "descrizione": "Densità lineare di massa della corda", "unita": "kg/m" }
+      { "simbolo": "v", "descrizione": "Velocità dell'onda", "unita": "\\frac{m}{s}" },
+      { "simbolo": "T", "descrizione": "Tensione della corda", "unita": "N" },
+      { "simbolo": "\\mu", "descrizione": "Densità lineare di massa della corda", "unita": "\\frac{kg}{m}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una corda con tensione di $100 \\text{ N}$ e densità lineare di massa di $0.01 \\text{ kg/m}$. $v = \\sqrt{100 / 0.01} = \\sqrt{10000} = 100 \\text{ m/s}$."
+        "testo": "In una chitarra, a parità di lunghezza, la corda del Mi basso (più spessa, quindi maggiore $\\mu$) produce onde più lente rispetto al Mi cantino (più sottile). Aumentando la tensione con le chiavi, si aumenta la velocità dell’onda e quindi anche la frequenza del suono prodotto."
       }
     ],
     "link_correlati": ["OND_001"],
     "parole_chiave": ["onda su corda", "velocità onda", "tensione", "densità lineare", "corda vibrante"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OND_005",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Onde su Corda",
-    "titolo": "Modi Normali di Oscillazione di una Corda (Frequenze)",
+    "titolo": "Modi normali di oscillazione di una corda",
     "formula_latex": "f_n = \\frac{n v}{2L}",
-    "descrizione": "Le frequenze $f_n$ dei modi normali (armoniche) di oscillazione di una corda fissa a entrambe le estremità.",
+    "descrizione": "I modi normali di oscillazione di una corda tesa sono le frequenze alle quali la corda può vibrare formando onde stazionarie, con nodi fissi alle estremità.\n\nUna corda tesa può vibrare solo in certe configurazioni stabili, in cui la lunghezza della corda contiene un numero intero di mezze lunghezze d’onda. Ogni valore di $n$ corrisponde a un modo di vibrazione, detto armonico.",
     "variabili": [
-      { "simbolo": "$f_n$", "descrizione": "Frequenza dell'n-esima armonica", "unita": "Hz" },
-      { "simbolo": "$n$", "descrizione": "Numero dell'armonica ($1$ per la fondamentale)", "unita": "" },
-      { "simbolo": "$v$", "descrizione": "Velocità dell'onda sulla corda", "unita": "m/s" },
-      { "simbolo": "$L$", "descrizione": "Lunghezza della corda", "unita": "m" }
+      { "simbolo": "f_n", "descrizione": "Frequenza dell'n-esima armonica", "unita": "Hz" },
+      { "simbolo": "n", "descrizione": "Numero dell'armonica ($1$ per la fondamentale)", "unita": "\\text{adimensionale}" },
+      { "simbolo": "v", "descrizione": "Velocità dell'onda sulla corda", "unita": "\\frac{m}{s}" },
+      { "simbolo": "L", "descrizione": "Lunghezza della corda", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una corda lunga $1 \\text{ m}$ con velocità dell'onda di $200 \\text{ m/s}$. La frequenza fondamentale ($n=1$) è $f_1 = (1 \\cdot 200) / (2 \\cdot 1) = 100 \\text{ Hz}$."
+        "testo": "In una corda di chitarra di lunghezza $L$, il modo fondamentale ($n=1$) è la vibrazione più bassa e semplice, mentre $n=2$, $3$, ecc. sono i suoi armonici superiori. Se $v = 100,\\text{m/s}$ e $L = 0{,}5,\\text{m}$, allora la frequenza fondamentale è $f_1 = \\frac{1 \\cdot 100}{2 \\cdot 0{,}5} = 100,\\text{Hz}$."
       }
     ],
     "link_correlati": ["OND_001", "OND_004"],
     "parole_chiave": ["modi normali", "corda vibrante", "armoniche", "frequenza fondamentale", "onde stazionarie"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "SON_001",
@@ -122,10 +122,10 @@
     "sottocategoria": "Onde Sonore",
     "titolo": "Velocità del suono nell'aria",
     "formula_latex": "v_{\\text{suono}} \\approx 331.4 + 0.6 \\cdot T_c",
-    "descrizione": "La velocità del suono $v_{\\text{suono}}$ nell'aria dipende dalla temperatura. Questa formula **empirica** stima la velocità in m/s in base alla temperatura $T_c$ in gradi Celsius.",
+    "descrizione": "La velocità del suono nell’aria aumenta linearmente con la temperatura in gradi Celsius, partendo da circa 331,4 m/s a 0 °C.\n\nAll’aumentare della temperatura, le molecole dell’aria si muovono più rapidamente e trasmettono le vibrazioni sonore più velocemente. Il suono quindi viaggia più veloce in aria calda rispetto all’aria fredda.",
     "variabili": [
-      { "simbolo": "$v_{\\text{suono}}$", "descrizione": "Velocità del suono", "unita": "m/s" },
-      { "simbolo": "$T_c$", "descrizione": "Temperatura in gradi Celsius", "unita": "°C" }
+      { "simbolo": "$v_{\\text{suono}}$", "descrizione": "Velocità del suono", "unita": "\\frac{m}{s}" },
+      { "simbolo": "$T_c$", "descrizione": "Temperatura in gradi Celsius", "unita": "^{\\circ}C" }
     ],
     "esempi": [
       {
@@ -136,32 +136,32 @@
     "link_correlati": [ "OND_001" ],
     "parole_chiave": [ "suono", "velocità del suono", "temperatura", "aria" ],
     "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "SON_002",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Onde Sonore",
-    "titolo": "Effetto Doppler",
+    "titolo": "Effetto doppler",
     "formula_latex": "f' = f \\left( \\frac{v \\pm v_o}{v \\mp v_s} \\right)",
-    "descrizione": "Descrive il cambiamento apparente della frequenza $f'$ di un'onda rispetto a un osservatore in movimento relativo rispetto alla sorgente dell'onda. I segni dipendono dalla direzione del movimento: '$+v_o$' se l'osservatore si avvicina, '$-v_o$' se si allontana; '$-v_s$' se la sorgente si avvicina, '$+v_s$' se si allontana.",
+    "descrizione": "L'effetto Doppler descrive la variazione apparente della frequenza di un’onda percepita da un osservatore in movimento rispetto alla sorgente.\n\nSe l’osservatore o la sorgente si avvicinano, la frequenza percepita aumenta; se si allontanano, diminuisce. Il cambiamento è dovuto al fatto che le onde si 'comprimono' o si 'dilatano' per effetto del moto relativo.",
     "variabili": [
-      { "simbolo": "$f'$", "descrizione": "Frequenza osservata", "unita": "Hz" },
-      { "simbolo": "$f$", "descrizione": "Frequenza della sorgente", "unita": "Hz" },
-      { "simbolo": "$v$", "descrizione": "Velocità dell'onda nel mezzo", "unita": "m/s" },
-      { "simbolo": "$v_o$", "descrizione": "Velocità dell'osservatore", "unita": "m/s" },
-      { "simbolo": "$v_s$", "descrizione": "Velocità della sorgente", "unita": "m/s" }
+      { "simbolo": "f'", "descrizione": "Frequenza osservata", "unita": "Hz" },
+      { "simbolo": "f", "descrizione": "Frequenza della sorgente", "unita": "Hz" },
+      { "simbolo": "v", "descrizione": "Velocità dell'onda nel mezzo", "unita": "\\frac{m}{s}" },
+      { "simbolo": "v_o", "descrizione": "Velocità dell'osservatore", "unita": "\\frac{m}{s}" },
+      { "simbolo": "v_s", "descrizione": "Velocità della sorgente", "unita": "\\frac{m}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un'ambulanza (sorgente) emette un suono di $400 \\text{ Hz}$ ($f$) e si avvicina a $30 \\text{ m/s}$ ($v_s$) a un osservatore fermo ($v_o = 0$). Velocità del suono nell'aria $v = 343 \\text{ m/s}$. $f' = 400 \\cdot (343 / (343 - 30)) \\approx 438.8 \\text{ Hz}$."
+        "testo": "Quando un'ambulanza si avvicina con la sirena accesa, il suono sembra più acuto. Una volta che passa e si allontana, il suono diventa più grave. Questo perché, mentre si avvicina, le onde sonore raggiungono l’orecchio dell’osservatore più frequentemente ($f'$ maggiore), e il contrario accade quando si allontana."
       }
     ],
     "link_correlati": [ "SON_001" ],
     "parole_chiave": [ "effetto Doppler", "frequenza", "suono", "velocità", "sorgente", "osservatore" ],
     "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "SON_003",
@@ -169,11 +169,11 @@
     "sottocategoria": "Onde Sonore",
     "titolo": "Intensità di un'onda sonora",
     "formula_latex": "I = \\frac{P}{A}",
-    "descrizione": "L'intensità $I$ di un'onda sonora è la potenza $P$ trasportata dall'onda per unità di area $A$ perpendicolare alla direzione di propagazione. Per onde sferiche, $A = 4\\pi r^2$.",
+    "descrizione": "L’intensità di un’onda sonora è definita come la potenza trasportata dall’onda divisa per l’area attraverso cui essa si propaga.\n\nPiù potenza è concentrata in una superficie piccola, più intensa sarà l’onda e quindi più forte sarà il suono percepito. L’intensità misura quanto ‘energia sonora’ arriva in un certo punto ogni secondo.",
     "variabili": [
-      { "simbolo": "$I$", "descrizione": "Intensità dell'onda sonora", "unita": "W/m²" },
-      { "simbolo": "$P$", "descrizione": "Potenza della sorgente sonora", "unita": "W" },
-      { "simbolo": "$A$", "descrizione": "Area attraverso cui si propaga l'onda", "unita": "m²" }
+      { "simbolo": "I", "descrizione": "Intensità dell'onda sonora", "unita": "\\frac{W}{m^2}" },
+      { "simbolo": "P", "descrizione": "Potenza della sorgente sonora", "unita": "W" },
+      { "simbolo": "A", "descrizione": "Area attraverso cui si propaga l'onda", "unita": "m^2" }
     ],
     "esempi": [
       {
@@ -184,38 +184,38 @@
     "link_correlati": [],
     "parole_chiave": ["intensità sonora", "potenza acustica", "onda sonora", "propagazione"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "SON_004",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Onde Sonore",
-    "titolo": "Livello di Intensità Sonora (Decibel)",
+    "titolo": "Livello di intensità sonora ",
     "formula_latex": "L_s = 10 \\log_{10}\\left(\\frac{I}{I_0}\\right)",
-    "descrizione": "Il livello di intensità sonora $L_s$ è una misura logaritmica dell'intensità $I$ di un suono rispetto a un'intensità di riferimento $I_0$ ($10^{-12} \\text{ W/m}^2$), che corrisponde alla soglia dell'udito umano. Viene espresso in decibel (dB).",
+    "descrizione": "Il livello di intensità sonora $L_s$ misura in decibel quanto un suono è intenso rispetto a una soglia di riferimento. È una scala logaritmica che confronta l’intensità di un suono con l’intensità minima percepibile dall’orecchio umano, detta soglia uditiva.\n\nServe per esprimere l’intensità di un suono su una scala che rispecchia meglio la percezione umana: ogni incremento di 10 decibel corrisponde a un suono percepito come circa due volte più forte. La scala logaritmica consente di gestire facilmente variazioni anche molto grandi di intensità.",
     "variabili": [
-      { "simbolo": "$L_s$", "descrizione": "Livello di intensità sonora", "unita": "dB" },
-      { "simbolo": "$I$", "descrizione": "Intensità dell'onda sonora", "unita": "W/m²" },
-      { "simbolo": "$I_0$", "descrizione": "Intensità di riferimento ($10^{-12} \\text{ W/m}^2$)", "unita": "W/m²" }
+      { "simbolo": "L_s", "descrizione": "Livello di intensità sonora", "unita": "dB" },
+      { "simbolo": "I", "descrizione": "Intensità dell'onda sonora", "unita": "\\frac{W}{m^2}" },
+      { "simbolo": "I_0", "descrizione": "Intensità di riferimento ($10^{-12} \\text{ W/m}^2$)", "unita": "\\frac{W}{m^2}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un suono ha un'intensità di $10^{-6} \\text{ W/m}^2$. Il suo livello di intensità è $L_s = 10 \\log_{10}(10^{-6} / 10^{-12}) = 10 \\log_{10}(10^6) = 10 \\cdot 6 = 60 \\text{ dB}$."
+        "testo": "Immagina di essere in una stanza molto silenziosa, quasi completamente priva di suoni. Ora pensa a una persona che sussurra accanto a te: quel sussurro ha un’intensità sonora molto più alta del silenzio assoluto, ma non è comunque molto forte. Se invece una persona inizia a parlare a voce alta, l’intensità sonora aumenta molto, ma non in modo lineare: l’orecchio percepisce il salto da un sussurro a una voce alta come un cambiamento significativo, anche se l’energia sonora reale è aumentata di molto più rispetto al semplice confronto diretto. Il livello di intensità sonora serve proprio a descrivere questa percezione, mettendo in relazione i suoni in modo che rifletta come li sentiamo realmente."
       }
     ],
     "link_correlati": ["SON_003"],
     "parole_chiave": ["livello sonoro", "decibel", "intensità sonora", "soglia udito", "logaritmo"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "SON_005",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Onde Sonore",
-    "titolo": "Frequenza dei Battimenti",
+    "titolo": "Frequenza dei battimenti",
     "formula_latex": "f_{batt} = |f_1 - f_2|",
-    "descrizione": "La frequenza dei battimenti $f_{batt}$ è la frequenza con cui l'ampiezza di un suono combinato varia quando due onde sonore con frequenze leggermente diverse ($f_1$ e $f_2$) interferiscono. Si percepisce come un'oscillazione nell'intensità del suono.",
+    "descrizione": "La frequenza dei battimenti misura la velocità con cui l'intensità di un suono risultante dall’interferenza di due onde vicine cambia nel tempo. È data dalla differenza assoluta tra le due frequenze coinvolte.\n\nQuando due onde sonore con frequenze simili si sovrappongono, si crea una variazione periodica dell’ampiezza del suono percepito, cioè il volume oscilla tra più forte e più debole. La frequenza dei battimenti indica quanto rapidamente questa variazione si verifica, permettendo di riconoscere quando due suoni sono molto vicini tra loro in frequenza.",
     "variabili": [
       { "simbolo": "$f_{batt}$", "descrizione": "Frequenza dei battimenti", "unita": "Hz" },
       { "simbolo": "$f_1$", "descrizione": "Frequenza della prima onda", "unita": "Hz" },
@@ -224,61 +224,61 @@
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Due diapason vibrano a $440 \\text{ Hz}$ e $442 \\text{ Hz}$. La frequenza dei battimenti è $f_{batt} = |440 - 442| = 2 \\text{ Hz}$."
+        "testo": "Due diapason emettono suoni con frequenze leggermente diverse: 440 Hz e 442 Hz. La frequenza dei battimenti sarà 2 Hz, cioè si percepiranno due pulsazioni al secondo. Questo aiuta a capire quando gli strumenti musicali sono accordati correttamente, poiché una volta che i battimenti scompaiono, le frequenze coincidono esattamente."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["battimenti", "interferenza", "frequenza", "onda sonora", "ampiezza"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "SON_006",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Onde Sonore",
-    "titolo": "Modi Normali di Oscillazione dell'Aria in un Tubo (Aperto-Aperto o Chiuso-Chiuso)",
+    "titolo": "Modi normali di oscillazione dell'aria in un tubo (aperto-aperto o chiuso-chiuso)",
     "formula_latex": "f_n = \\frac{n v}{2L}",
-    "descrizione": "Le frequenze $f_n$ dei modi normali di oscillazione dell'aria in un tubo aperto a entrambe le estremità (o chiuso a entrambe le estremità), dove $n$ è un numero intero ($1, 2, 3, ...$) che indica l'armonica, $v$ è la velocità del suono nell'aria e $L$ è la lunghezza del tubo.",
+    "descrizione": "I modi normali rappresentano le frequenze alle quali l’aria in un tubo chiuso o aperto vibra in modo stazionario. Ogni modo corrisponde a un’onda sonora con un numero intero di semilunghezze d’onda all’interno del tubo.\n\nLe frequenze sono proporzionali al numero del modo e alla velocità del suono, ma inversamente proporzionali alla lunghezza del tubo. Questo significa che tubi più lunghi producono suoni più bassi, e la frequenza aumenta in multipli discreti.",
     "variabili": [
-      { "simbolo": "$f_n$", "descrizione": "Frequenza dell'n-esima armonica", "unita": "Hz" },
-      { "simbolo": "$n$", "descrizione": "Numero dell'armonica ($1$ per la fondamentale)", "unita": "" },
-      { "simbolo": "$v$", "descrizione": "Velocità del suono nell'aria", "unita": "m/s" },
-      { "simbolo": "$L$", "descrizione": "Lunghezza del tubo", "unita": "m" }
+      { "simbolo": "f_n", "descrizione": "Frequenza dell'n-esima armonica", "unita": "Hz" },
+      { "simbolo": "n", "descrizione": "Numero dell'armonica ($1$ per la fondamentale)", "unita": "\\text{adimensionale}" },
+      { "simbolo": "v", "descrizione": "Velocità del suono nell'aria", "unita": "\\frac{m}{s}" },
+      { "simbolo": "L", "descrizione": "Lunghezza del tubo", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un tubo aperto lungo $0.5 \\text{ m}$ con velocità del suono di $343 \\text{ m/s}$. La frequenza fondamentale ($n=1$) è $f_1 = (1 \\cdot 343) / (2 \\cdot 0.5) = 343 \\text{ Hz}$."
+        "testo": "Un organo a canne utilizza questa relazione: canne più lunghe producono suoni gravi perché ospitano onde con lunghezze maggiori, mentre canne corte generano suoni acuti. La stessa logica spiega perché, tappando una parte di un tubo con le dita, la nota che si ottiene diventa più alta."
       }
     ],
     "link_correlati": ["SON_001"],
     "parole_chiave": ["tubo sonoro", "modi normali", "armoniche", "frequenza fondamentale", "onde stazionarie"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "SON_007",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Onde Sonore",
-    "titolo": "Modi Normali di Oscillazione dell'Aria in un Tubo (Aperto-Chiuso)",
+    "titolo": "Modi normali di oscillazione dell'aria in un tubo (aperto-chiuso)",
     "formula_latex": "f_n = (2n-1)\\frac{v}{4L}",
-    "descrizione": "Le frequenze $f_n$ dei modi normali di oscillazione dell'aria in un tubo aperto a un'estremità e chiuso all'altra, dove $n$ è un numero intero dispari ($1, 3, 5, ...$) che indica l'armonica (solo armoniche dispari), $v$ è la velocità del suono nell'aria e $L$ è la lunghezza del tubo.",
+    "descrizione": "I modi normali in un tubo aperto da un lato e chiuso dall’altro si manifestano solo a frequenze dispari, perché un’estremità fissa un nodo e l’altra un antinodo. Questo impone una condizione di risonanza differente rispetto ai tubi aperti da entrambe le estremità.\n\nLe frequenze sono proporzionali alla velocità del suono e inversamente proporzionali alla lunghezza del tubo, ma solo i multipli dispari del primo modo sono possibili. Questo fa sì che il suono prodotto abbia un carattere distinto, ad esempio nei clarinetti o organi a canne aperto-chiuse.",
     "variabili": [
-      { "simbolo": "$f_n$", "descrizione": "Frequenza dell'n-esima armonica", "unita": "Hz" },
-      { "simbolo": "$n$", "descrizione": "Numero dell'armonica (dispari: $1, 3, 5, ...$)", "unita": "" },
-      { "simbolo": "$v$", "descrizione": "Velocità del suono nell'aria", "unita": "m/s" },
-      { "simbolo": "$L$", "descrizione": "Lunghezza del tubo", "unita": "m" }
+      { "simbolo": "f_n", "descrizione": "Frequenza dell'n-esima armonica", "unita": "Hz" },
+      { "simbolo": "n", "descrizione": "Numero dell'armonica (dispari: $1, 3, 5, ...$)", "unita": "\\text{adimensionale}" },
+      { "simbolo": "v", "descrizione": "Velocità del suono nell'aria", "unita": "\\frac{m}{s}" },
+      { "simbolo": "L", "descrizione": "Lunghezza del tubo", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un tubo chiuso a un'estremità lungo $0.5 \\text{ m}$ con velocità del suono di $343 \\text{ m/s}$. La frequenza fondamentale ($n=1$) è $f_1 = (1 \\cdot 343) / (4 \\cdot 0.5) = 171.5 \\text{ Hz}$."
+        "testo": "Un tubo aperto-chiuso produce solo frequenze corrispondenti ai modi dispari: ciò significa che, a differenza di un tubo aperto-aper­to, non si sentiranno tutte le armoniche, ma solo quelle dispari. Questo influisce sul timbro dello strumento, rendendolo più «nasale» o «ricco» di certe frequenze."
       }
     ],
     "link_correlati": ["SON_001"],
     "parole_chiave": ["tubo sonoro", "modi normali", "armoniche dispari", "frequenza fondamentale", "onde stazionarie"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OTT_001",
@@ -286,23 +286,23 @@
     "sottocategoria": "Ottica Geometrica",
     "titolo": "Legge di Snell-Descartes",
     "formula_latex": "n_1 \\sin(\\theta_1) = n_2 \\sin(\\theta_2)",
-    "descrizione": "Descrive la relazione tra gli angoli di incidenza $\\theta_1$ e rifrazione $\\theta_2$ di un raggio di luce quando passa attraverso l'interfaccia tra due mezzi ottici con diversi indici di rifrazione ($n_1$ e $n_2$).",
+    "descrizione": "La legge descrive come cambia la direzione di un raggio luminoso quando passa da un mezzo a un altro con diverso indice di rifrazione.\n\nIl rapporto tra gli angoli di incidenza e rifrazione dipende dagli indici di rifrazione dei due mezzi. Questo significa che la luce si piega verso la normale se passa in un mezzo più denso otticamente, o si allontana se entra in uno meno denso.",
     "variabili": [
-      { "simbolo": "$n_1$", "descrizione": "Indice di rifrazione del primo mezzo", "unita": "" },
-      { "simbolo": "$\\theta_1$", "descrizione": "Angolo di incidenza", "unita": "rad" },
-      { "simbolo": "$n_2$", "descrizione": "Indice di rifrazione del secondo mezzo", "unita": "" },
-      { "simbolo": "$\\theta_2$", "descrizione": "Angolo di rifrazione", "unita": "rad" }
+      { "simbolo": "n_1", "descrizione": "Indice di rifrazione del primo mezzo", "unita": "\\text{adimensionale}" },
+      { "simbolo": "θ_1", "descrizione": "Angolo di incidenza", "unita": "rad" },
+      { "simbolo": "n_2", "descrizione": "Indice di rifrazione del secondo mezzo", "unita": "\\text{adimensionale}" },
+      { "simbolo": "θ_2", "descrizione": "Angolo di rifrazione", "unita": "rad" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un raggio di luce passa dall'aria ($n_1 \\approx 1.00$) all'acqua ($n_2 \\approx 1.33$) con un angolo di incidenza di $30°$. $\\sin(\\theta_2) = (1.00 \\cdot \\sin(30°)) / 1.33 \\approx 0.376 \\implies \\theta_2 \\approx 22.1°$."
+        "testo": "Quando un raggio di luce passa dall’aria all’acqua, rallenta e si piega verso la normale. Questo fenomeno è ciò che causa l’apparente 'spostamento' di un oggetto immerso nell’acqua rispetto alla sua posizione reale."
       }
     ],
     "link_correlati": [],
     "parole_chiave": [ "Snell-Descartes", "rifrazione", "indice di rifrazione", "luce", "ottica" ],
     "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OTT_002",
@@ -310,22 +310,22 @@
     "sottocategoria": "Ottica Geometrica",
     "titolo": "Equazione dei punti coniugati (lenti sottili/specchi)",
     "formula_latex": "\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i}",
-    "descrizione": "Relaziona la distanza focale $f$ di una lente sottile o di uno specchio sferico con la distanza dell'oggetto $d_o$ e la distanza dell'immagine $d_i$.",
+    "descrizione": "L’equazione lega la distanza dell’oggetto e quella dell’immagine rispetto alla lente o allo specchio, con la sua distanza focale.\n\nQuesta relazione determina la posizione dell’immagine formata da una lente sottile o da uno specchio, permettendo di capire dove si formerà l’immagine reale o virtuale a seconda di dove si trovi l’oggetto.",
     "variabili": [
-      { "simbolo": "$f$", "descrizione": "Distanza focale", "unita": "m" },
-      { "simbolo": "$d_o$", "descrizione": "Distanza dell'oggetto dalla lente/specchio", "unita": "m" },
-      { "simbolo": "$d_i$", "descrizione": "Distanza dell'immagine dalla lente/specchio", "unita": "m" }
+      { "simbolo": "f", "descrizione": "Distanza focale", "unita": "m" },
+      { "simbolo": "d_o", "descrizione": "Distanza dell'oggetto dalla lente/specchio", "unita": "m" },
+      { "simbolo": "d_i", "descrizione": "Distanza dell'immagine dalla lente/specchio", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un oggetto è posto a $0.2 \\text{ m}$ da una lente con distanza focale di $0.1 \\text{ m}$. $1/d_i = 1/0.1 - 1/0.2 = 10 - 5 = 5 \\implies d_i = 1/5 = 0.2 \\text{ m}$."
+        "testo": "Se un oggetto si avvicina a una lente con distanza focale fissata, la distanza dell’immagine cambia in modo non lineare per mantenere l’equazione bilanciata. Questo è fondamentale per la progettazione di occhiali o microscopi, dove la nitidezza dipende da questa relazione."
       }
     ],
     "link_correlati": [],
     "parole_chiave": [ "lente", "specchio", "distanza focale", "oggetto", "immagine", "ottica", "1/f = 1/do + 1/di" ],
     "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OTT_003",
@@ -333,117 +333,117 @@
     "sottocategoria": "Ottica Geometrica",
     "titolo": "Ingrandimento lineare",
     "formula_latex": "M = -\\frac{d_i}{d_o} = \\frac{h_i}{h_o}",
-    "descrizione": "L'ingrandimento lineare $M$ descrive quanto l'immagine è più grande o più piccola rispetto all'oggetto, e se è diritta o capovolta. $h_i$ è l'altezza dell'immagine, $h_o$ è l'altezza dell'oggetto. Il segno meno indica che le immagini reali sono capovolte.",
+    "descrizione": "L’ingrandimento lineare indica quanto l’immagine di un oggetto è più grande o più piccola rispetto all’oggetto stesso.\n\nIl rapporto tra le dimensioni dell’immagine e quelle dell’oggetto è proporzionale al rapporto tra le loro distanze dalla lente o dallo specchio, con il segno che indica l’orientamento dell’immagine (diritta o capovolta).",
     "variabili": [
-      { "simbolo": "$M$", "descrizione": "Ingrandimento lineare", "unita": "" },
-      { "simbolo": "$d_i$", "descrizione": "Distanza dell'immagine", "unita": "m" },
-      { "simbolo": "$d_o$", "descrizione": "Distanza dell'oggetto", "unita": "m" },
-      { "simbolo": "$h_i$", "descrizione": "Altezza dell'immagine", "unita": "m" },
-      { "simbolo": "$h_o$", "descrizione": "Altezza dell'oggetto", "unita": "m" }
+      { "simbolo": "M", "descrizione": "Ingrandimento lineare", "unita": "\\text{adimensionale}" },
+      { "simbolo": "d_i", "descrizione": "Distanza dell'immagine", "unita": "m" },
+      { "simbolo": "d_o", "descrizione": "Distanza dell'oggetto", "unita": "m" },
+      { "simbolo": "h_i", "descrizione": "Altezza dell'immagine", "unita": "m" },
+      { "simbolo": "h_o", "descrizione": "Altezza dell'oggetto", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un oggetto di $0.03 \\text{ m}$ è posto a $0.2 \\text{ m}$ da una lente che forma un'immagine a $0.4 \\text{ m}$. $M = -(0.4 / 0.2) = -2$. L'immagine è due volte più grande e capovolta."
+        "testo": "Se un’immagine è formata a una distanza doppia rispetto all’oggetto, l’ingrandimento sarà circa $-2$, cioè l’immagine è capovolta e grande il doppio dell’oggetto reale. Questo è utile per capire come funziona un microscopio o un telescopio in termini di dimensioni apparenti."
       }
     ],
     "link_correlati": [ "OTT_002" ],
     "parole_chiave": [ "ingrandimento", "lente", "specchio", "altezza immagine", "altezza oggetto", "ottica" ],
     "data_creazione": "2025-06-03",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OTT_004",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Ottica Fisica",
-    "titolo": "Irradiamento (Intensità di Irradiazione)",
+    "titolo": "Irradiamento",
     "formula_latex": "I = \\frac{P}{A}",
-    "descrizione": "L'irradiamento (o intensità di irradiazione) $I$ è la potenza $P$ della radiazione elettromagnetica incidente su una superficie per unità di area $A$ di quella superficie. Spesso usato per la luce.",
+    "descrizione": "L’irradiamento misura quanta potenza viene distribuita su una certa superficie. Serve a descrivere quanto ‘concentrata’ è l’energia che arriva su un’area: più piccola è la superficie a parità di potenza, più grande sarà l’irradiamento.\n\nIndica l’intensità del flusso di energia: vicino a una sorgente luminosa o sonora l’irradiamento è alto, mentre allontanandosi diminuisce perché la stessa potenza si distribuisce su un’area maggiore.",
     "variabili": [
-      { "simbolo": "$I$", "descrizione": "Irradiamento", "unita": "W/m²" },
-      { "simbolo": "$P$", "descrizione": "Potenza della sorgente", "unita": "W" },
-      { "simbolo": "$A$", "descrizione": "Area della superficie", "unita": "m²" }
+      { "simbolo": "I", "descrizione": "Irradiamento", "unita": "\\frac{W}{m^2}" },
+      { "simbolo": "P", "descrizione": "Potenza della sorgente", "unita": "W" },
+      { "simbolo": "A", "descrizione": "Area della superficie", "unita": "m^2" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una lampada da $100 \\text{ W}$ illumina un'area di $0.5 \\text{ m}^2$. L'irradiamento sulla superficie è $I = 100 \\text{ W} / 0.5 \\text{ m}^2 = 200 \\text{ W/m}^2$."
+        "testo": "Un pannello solare funziona meglio se la luce è concentrata su di esso: al mezzogiorno d’estate l’irradiamento del Sole è massimo perché l’energia si distribuisce su un’area minima, mentre al tramonto cala perché la stessa energia si ‘spalma’ su una superficie più grande."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["irradiamento", "intensità", "potenza", "radiazione elettromagnetica", "luce"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OTT_005",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Fotometria",
-    "titolo": "Angolo Solido",
+    "titolo": "Angolo solido",
     "formula_latex": "\\Omega = \\frac{A}{r^2}",
-    "descrizione": "L'angolo solido $\\Omega$ è una misura dell'ampiezza apparente di un oggetto tridimensionale visto da un punto. È definito come il rapporto tra l'area $A$ della proiezione di una superficie su una sfera e il quadrato del raggio $r$ della sfera. L'unità di misura è lo steradiante (sr).",
+    "descrizione": "L’angolo solido misura quanto “spazio” occupa una superficie vista da un punto, rapportando l’area osservata alla distanza dal punto.\n\nIndica la porzione di campo visivo occupata da una superficie, tenendo conto di quanto questa si allontana: più la superficie è distante, più piccolo è l’angolo solido corrispondente.",
     "variabili": [
-      { "simbolo": "$\\Omega$", "descrizione": "Angolo solido", "unita": "sr" },
-      { "simbolo": "$A$", "descrizione": "Area della superficie proiettata", "unita": "m²" },
-      { "simbolo": "$r$", "descrizione": "Raggio della sfera", "unita": "m" }
+      { "simbolo": "\\Omega", "descrizione": "Angolo solido", "unita": "sr" },
+      { "simbolo": "A", "descrizione": "Area della superficie proiettata", "unita": "m^2" },
+      { "simbolo": "r", "descrizione": "Raggio della sfera", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un'area di $0.1 \\text{ m}^2$ su una sfera di raggio $1 \\text{ m}$ sottende un angolo solido di $\\Omega = 0.1 \\text{ m}^2 / (1 \\text{ m})^2 = 0.1 \\text{ sr}$."
+        "testo": "Guardando una finestra da vicino, occupa un grande angolo solido, ma allontanandosi la finestra appare più piccola e l’angolo solido diminuisce. Questo concetto è fondamentale in ottica e radiometria per capire la distribuzione della luce o di altre radiazioni nello spazio."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["angolo solido", "steradiante", "fotometria", "geometria"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OTT_006",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Fotometria",
-    "titolo": "Intensità Luminosa (Intensità di Radiazione)",
+    "titolo": "Intensità luminosa (intensità di radiazione)",
     "formula_latex": "I_R = \\frac{\\Phi_v}{\\Omega}",
-    "descrizione": "L'intensità luminosa $I_R$ è il flusso luminoso $\\Phi_v$ emesso per unità di angolo solido $\\Omega$ in una particolare direzione. È una misura della potenza luminosa per angolo solido, percepita dall'occhio umano. L'unità di misura è la candela (cd).",
+    "descrizione": "L’intensità luminosa rappresenta la quantità di flusso luminoso emesso in una certa direzione, per unità di angolo solido.\n\nDescrive quanto “potente” appare una sorgente luminosa in una direzione specifica, distribuendo il flusso luminoso su una porzione dello spazio definita dall’angolo solido.",
     "variabili": [
-      { "simbolo": "$I_R$", "descrizione": "Intensità luminosa", "unita": "cd" },
-      { "simbolo": "$\\Phi_v$", "descrizione": "Flusso luminoso", "unita": "lm" },
-      { "simbolo": "$\\Omega$", "descrizione": "Angolo solido", "unita": "sr" }
+      { "simbolo": "I_R", "descrizione": "Intensità luminosa", "unita": "cd" },
+      { "simbolo": "\\Phi_v", "descrizione": "Flusso luminoso", "unita": "lm" },
+      { "simbolo": "\\Omega", "descrizione": "Angolo solido", "unita": "sr" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una sorgente emette un flusso luminoso di $100 \\text{ lm}$ in un angolo solido di $4 \\text{ sr}$. L'intensità luminosa è $I_R = 100 \\text{ lm} / 4 \\text{ sr} = 25 \\text{ cd}$."
+        "testo": "Una lampadina a LED può emettere la stessa quantità di luce totale, ma con diverse intensità luminose a seconda della direzione: una torcia concentra il flusso in un piccolo angolo solido, aumentando l’intensità luminosa in quella direzione rispetto a una lampada che diffonde la luce uniformemente."
       }
     ],
     "link_correlati": ["OTT_005", "OTT_007"],
     "parole_chiave": ["intensità luminosa", "candela", "flusso luminoso", "angolo solido", "fotometria"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OTT_007",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Fotometria",
-    "titolo": "Flusso Luminoso",
+    "titolo": "Flusso luminoso",
     "formula_latex": "\\Phi_L = K_m \\int P_e(\\lambda) V(\\lambda) d\\lambda",
-    "descrizione": "Il flusso luminoso $\\Phi_L$ è la misura della potenza percepita della luce. È ottenuto integrando la potenza radiante $P_e(\\lambda)$ (in W) su tutte le lunghezze d'onda $\\lambda$, ponderata dalla funzione di efficienza luminosa $V(\\lambda)$ (la sensibilità dell'occhio umano). $K_m$ è la massima efficacia luminosa (683 lm/W per luce a 555 nm). L'unità è il lumen (lm).",
+    "descrizione": "Il flusso luminoso rappresenta la quantità totale di luce percepita dall’occhio umano emessa da una sorgente, considerando la sensibilità dell’occhio alle diverse lunghezze d’onda.\n\nSi ottiene sommando la potenza emessa a ogni lunghezza d’onda, pesata dalla risposta visiva umana, permettendo di valutare quanto una sorgente è effettivamente ‘luminosa’ per l’occhio, non solo energetica.",
     "variabili": [
-      { "simbolo": "$\\Phi_L$", "descrizione": "Flusso luminoso", "unita": "lm" },
-      { "simbolo": "$K_m$", "descrizione": "Massima efficacia luminosa ($683 \\text{ lm/W}$)", "unita": "lm/W" },
-      { "simbolo": "$P_e(\\lambda)$", "descrizione": "Potenza radiante a una data lunghezza d'onda", "unita": "W/m" },
-      { "simbolo": "$V(\\lambda)$", "descrizione": "Funzione di efficienza luminosa", "unita": "-" }
+      { "simbolo": "\\Phi_L", "descrizione": "Flusso luminoso", "unita": "lm" },
+      { "simbolo": "K_m", "descrizione": "Massima efficacia luminosa ($683 \\text{ lm/W}$)", "unita": "\\frac{lm}{W}" },
+      { "simbolo": "P_e(\\lambda)", "descrizione": "Potenza radiante a una data lunghezza d'onda", "unita": "\\frac{W}{m}" },
+      { "simbolo": "V(\\lambda)", "descrizione": "Funzione di efficienza luminosa", "unita": "\\text{adimensionale}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Questa formula calcola il flusso luminoso totale di una lampada, considerando lo spettro della luce emessa e come l'occhio umano la percepisce."
+        "testo": "Due lampade possono emettere la stessa potenza totale, ma quella con maggior emissione nella luce verde (dove l’occhio è più sensibile) avrà un flusso luminoso maggiore, risultando più luminosa a parità di potenza emessa."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["flusso luminoso", "lumen", "fotometria", "spettro luminoso", "efficienza luminosa"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OTT_008",
@@ -451,93 +451,93 @@
     "sottocategoria": "Fotometria",
     "titolo": "Illuminamento",
     "formula_latex": "E_L = \\frac{\\Phi_L}{A}",
-    "descrizione": "L'illuminamento $E_L$ è la quantità di flusso luminoso $\\Phi_L$ che incide su una data superficie per unità di area $A$. È una misura di quanta luce visibile illumina una superficie. L'unità è il lux (lx), che è equivalente a lumen per metro quadrato (lm/m²).",
+    "descrizione": "L’illuminamento misura la quantità di flusso luminoso che colpisce una superficie per unità di area.\n\nIndica quanto ‘illuminata’ è una superficie, ovvero quanta luce arriva su ogni metro quadrato, ed è fondamentale per valutare l’efficacia dell’illuminazione in ambienti o su oggetti.",
     "variabili": [
-      { "simbolo": "$E_L$", "descrizione": "Illuminamento", "unita": "lx" },
-      { "simbolo": "$\\Phi_L$", "descrizione": "Flusso luminoso incidente", "unita": "lm" },
-      { "simbolo": "$A$", "descrizione": "Area della superficie illuminata", "unita": "m²" }
+      { "simbolo": "E_L", "descrizione": "Illuminamento", "unita": "lx" },
+      { "simbolo": "\\Phi_L", "descrizione": "Flusso luminoso incidente", "unita": "lm" },
+      { "simbolo": "A", "descrizione": "Area della superficie illuminata", "unita": "m^2" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una lampada produce un flusso luminoso di $1000 \\text{ lm}$ e illumina un tavolo di $2 \\text{ m}^2$. L'illuminamento sul tavolo è $E_L = 1000 \\text{ lm} / 2 \\text{ m}^2 = 500 \\text{ lx}$."
+        "testo": "Un lampione illumina una strada: l’illuminamento consente di capire se la luce è sufficiente per vedere bene, confrontando la luce distribuita su diverse aree della carreggiata."
       }
     ],
     "link_correlati": ["OTT_007"],
     "parole_chiave": ["illuminamento", "lux", "flusso luminoso", "area", "fotometria"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OTT_009",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Ottica Fisica",
-    "titolo": "Interferenza della Luce (Fessure di Young - Massimi)",
+    "titolo": "Interferenza della luce (fessure di Young - massimi)",
     "formula_latex": "d \\sin(\\theta) = m \\lambda",
-    "descrizione": "Per l'interferenza costruttiva (massimi) da una doppia fessura (esperimento di Young), dove $d$ è la distanza tra le fessure, $\\theta$ è l'angolo di deviazione del massimo, $m$ è l'ordine del massimo (0 per il centrale, $\\pm 1, \\pm 2, ...$) e $\\lambda$ è la lunghezza d'onda della luce. Questo è valido per piccoli angoli.",
+    "descrizione": "La condizione per cui si osservano i massimi di interferenza luminosa prodotti da due fenditure è data da questa relazione che lega la distanza tra le fenditure, l’angolo di osservazione e la lunghezza d’onda.\n\nQuando la differenza di percorso tra le onde che passano per le due fenditure è un multiplo intero della lunghezza d’onda, le onde si sommano in modo costruttivo, creando i massimi luminosi visibili come frange brillanti.",
     "variabili": [
-      { "simbolo": "$d$", "descrizione": "Distanza tra le fessure", "unita": "m" },
-      { "simbolo": "$\\theta$", "descrizione": "Angolo di deviazione del massimo", "unita": "rad" },
-      { "simbolo": "$m$", "descrizione": "Ordine del massimo (intero)", "unita": "-" },
-      { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d'onda della luce", "unita": "m" }
+      { "simbolo": "d", "descrizione": "Distanza tra le fessure", "unita": "m" },
+      { "simbolo": "\\theta", "descrizione": "Angolo di deviazione del massimo", "unita": "rad" },
+      { "simbolo": "m", "descrizione": "Ordine del massimo (intero)", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\lambda", "descrizione": "Lunghezza d'onda della luce", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Questa formula è usata per trovare la posizione delle bande luminose in un esperimento di interferenza con doppia fessura."
+        "testo": "Nel famoso esperimento di Young, modificando la distanza tra le fenditure o cambiando la lunghezza d’onda della luce (colori diversi), si osservano variazioni nello schema di frange luminose, evidenziando la natura ondulatoria della luce."
       }
     ],
     "link_correlati": ["OND_001"],
     "parole_chiave": ["interferenza", "fessure di Young", "luce", "massimi", "diffrazione", "ottica fisica"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OTT_010",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Ottica Fisica",
-    "titolo": "Interferenza della Luce (Fessure di Young - Minimi)",
+    "titolo": "Interferenza della luce (fessure di Young - minimi)",
     "formula_latex": "d \\sin(\\theta) = \\left(m + \\frac{1}{2}\\right) \\lambda",
-    "descrizione": "Per l'interferenza distruttiva (minimi) da una doppia fessura (esperimento di Young), dove $d$ è la distanza tra le fessure, $\\theta$ è l'angle di deviazione del minimo, $m$ è l'ordine del minimo (0 per il primo, $\\pm 1, \\pm 2, ...$) e $\\lambda$ è la lunghezza d'onda della luce. Valido per piccoli angoli.",
+    "descrizione": "La condizione che determina i punti di interferenza distruttiva, cioè i minimi di intensità luminosa, nello schema delle due fessure.\n\nQuando la differenza di cammino tra le onde è un multiplo intero più mezzo della lunghezza d’onda, le onde si cancellano parzialmente o totalmente, generando zone scure sullo schermo.",
     "variabili": [
-      { "simbolo": "$d$", "descrizione": "Distanza tra le fessure", "unita": "m" },
-      { "simbolo": "$\\theta$", "descrizione": "Angolo di deviazione del minimo", "unita": "rad" },
-      { "simbolo": "$m$", "descrizione": "Ordine del minimo (intero)", "unita": "-" },
-      { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d'onda della luce", "unita": "m" }
+      { "simbolo": "d", "descrizione": "Distanza tra le fessure", "unita": "m" },
+      { "simbolo": "\\theta", "descrizione": "Angolo di deviazione del minimo", "unita": "rad" },
+      { "simbolo": "m", "descrizione": "Ordine del minimo (intero)", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\lambda", "descrizione": "Lunghezza d'onda della luce", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Questa formula è usata per trovare la posizione delle bande scure in un esperimento di interferenza con doppia fessura."
+        "testo": "Nel famoso esperimento di Young, i minimi di interferenza corrispondono alle strisce scure tra i massimi luminosi, evidenziando la natura ondulatoria della luce e permettendo di calcolare parametri come la distanza tra le fessure o la lunghezza d’onda della luce utilizzata."
       }
     ],
     "link_correlati": ["OTT_009"],
     "parole_chiave": ["interferenza", "fessure di Young", "luce", "minimi", "diffrazione", "ottica fisica"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   },
   {
     "id": "OTT_011",
     "categoria": "Onde e Ottica",
     "sottocategoria": "Ottica Fisica",
-    "titolo": "Diffrazione della Luce (Singola Fessura - Minimi)",
+    "titolo": "Diffrazione della luce (singola fessura - minimi)",
     "formula_latex": "a \\sin(\\theta) = m \\lambda",
-    "descrizione": "Descrive la posizione dei minimi (frange scure) nel pattern di diffrazione da una singola fessura, dove $a$ è la larghezza della fessura, $\\theta$ è l'angolo di deviazione, $m$ è l'ordine del minimo ($\\pm 1, \\pm 2, ...$, non c'è $m=0$ minimo centrale) e $\\lambda$ è la lunghezza d'onda della luce.",
+    "descrizione": "La condizione che determina i minimi di intensità nel pattern di diffrazione prodotto da una singola fessura.\n\nQuando la differenza di cammino tra le onde diffratte ai bordi della fessura causa interferenza distruttiva, si formano angoli specifici dove la luce si annulla, generando zone scure nel motivo osservato.",
     "variabili": [
-      { "simbolo": "$a$", "descrizione": "Larghezza della fessura", "unita": "m" },
-      { "simbolo": "$\\theta$", "descrizione": "Angolo di deviazione del minimo", "unita": "rad" },
-      { "simbolo": "$m$", "descrizione": "Ordine del minimo (intero, non zero)", "unita": "-" },
-      { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d'onda della luce", "unita": "m" }
+      { "simbolo": "a", "descrizione": "Larghezza della fessura", "unita": "m" },
+      { "simbolo": "\\theta", "descrizione": "Angolo di deviazione del minimo", "unita": "rad" },
+      { "simbolo": "m", "descrizione": "Ordine del minimo (intero, non zero)", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\lambda", "descrizione": "Lunghezza d'onda della luce", "unita": "m" }
     ],
     "esempi": [
       {
-        "titolo": "Esempio (concettuale)",
-        "testo": "Questa formula permette di prevedere dove appariranno le zone di buio nel pattern di diffrazione generato da una singola fessura."
+        "titolo": "Esempio",
+        "testo": "Illuminando una fessura stretta con luce laser, si osserva sullo schermo una serie di bande chiare e scure; i minimi indicano le direzioni in cui la luce è annullata, e la loro posizione aiuta a determinare la larghezza della fessura o la lunghezza d’onda della luce."
       }
     ],
     "link_correlati": ["OTT_009", "OTT_010"],
     "parole_chiave": ["diffrazione", "singola fessura", "luce", "minimi", "pattern di diffrazione", "ottica fisica"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-31"
   }
 ]

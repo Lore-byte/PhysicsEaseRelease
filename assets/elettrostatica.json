@@ -5,17 +5,17 @@
     "sottocategoria": "Forza e Campo Elettrico",
     "titolo": "Legge di Coulomb",
     "formula_latex": "\\vec{F} = k_e \\frac{|q_1 q_2|}{r^2}",
-    "descrizione": "La legge di Coulomb descrive la forza $\\vec{F}$ tra due cariche puntiformi $q_1$ e $q_2$, separate da una distanza $r$.",
+    "descrizione": "La forza elettrica tra due cariche puntiformi è direttamente proporzionale al prodotto dei valori assoluti delle cariche e inversamente proporzionale al quadrato della loro distanza.\n\nLa legge di Coulomb descrive come due cariche si attraggono o si respingono a seconda del segno, e quanto questa forza diminuisce rapidamente all'aumentare della distanza.",
     "variabili": [
-      { "simbolo": "$\\vec{F}$", "descrizione": "Forza elettrica", "unita": "N" },
-      { "simbolo": "$q_1, q_2$", "descrizione": "Cariche elettriche", "unita": "C" },
-      { "simbolo": "$r$", "descrizione": "Distanza tra le cariche", "unita": "m" },
-      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" }
+      { "simbolo": "\\vec{F}", "descrizione": "Forza elettrica", "unita": "N" },
+      { "simbolo": "q_1, q_2", "descrizione": "Cariche elettriche", "unita": "C" },
+      { "simbolo": "r", "descrizione": "Distanza tra le cariche", "unita": "m" },
+      { "simbolo": "k_e", "descrizione": "Costante di Coulomb", "unita": "\\frac{N \\cdot m^2}{C^2}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Due cariche di $1 \\mu C$ e $2 \\mu C$ sono poste a una distanza di $0.1 m$. La forza tra di esse è $F = (8.99 \\times 10^9) \\frac{|1 \\times 10^{-6} \\cdot 2 \\times 10^{-6}|}{(0.1)^2} \\approx 1.8 N$."
+        "testo": "Due cariche dello stesso segno si respingono, mentre di segno opposto si attraggono. Se si raddoppia la distanza tra le cariche, la forza si riduce a un quarto: è come se la loro 'influenza' si disperdesse nello spazio."
       }
     ],
     "link_correlati": [],
@@ -29,16 +29,16 @@
     "sottocategoria": "Forza e Campo Elettrico",
     "titolo": "Costante Dielettrica Relativa",
     "formula_latex": "\\varepsilon_r = \\frac{\\varepsilon}{\\varepsilon_0}",
-    "descrizione": "La costante dielettrica relativa $\\varepsilon_r$ indica di quanto la forza elettrica tra due cariche è ridotta in un mezzo rispetto al vuoto.",
+    "descrizione": "La costante dielettrica relativa misura quanto un materiale riduce la forza elettrica tra due cariche rispetto al vuoto.\n\nPiù è alta la costante dielettrica relativa, più il materiale 'schermisce' le interazioni tra cariche, rendendo più debole la forza rispetto a quella che si avrebbe nel vuoto.",
     "variabili": [
-      { "simbolo": "$\\varepsilon_r$", "descrizione": "Costante dielettrica relativa", "unita": "-" },
-      { "simbolo": "$\\varepsilon$", "descrizione": "Costante dielettrica del mezzo", "unita": "F/m" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "\\varepsilon_r", "descrizione": "Costante dielettrica relativa", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\varepsilon", "descrizione": "Costante dielettrica del mezzo", "unita": "\\frac{F}{m}" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Costante dielettrica del vuoto", "unita": "\\frac{F}{m}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se la costante dielettrica dell'acqua è circa $7.1 \\times 10^{-10} F/m$ e quella del vuoto è $8.85 \\times 10^{-12} F/m$, la costante dielettrica relativa dell'acqua è $\\varepsilon_r = \\frac{7.1 \\times 10^{-10}}{8.85 \\times 10^{-12}} \\approx 80$."
+        "testo": "L'acqua ha una costante dielettrica relativa molto alta: per questo le cariche elettriche in acqua si attraggono o si respingono molto meno che nell'aria o nel vuoto."
       }
     ],
     "link_correlati": [],
@@ -52,16 +52,16 @@
     "sottocategoria": "Forza e Campo Elettrico",
     "titolo": "Campo Elettrico",
     "formula_latex": "\\vec{E} = \\frac{\\vec{F}}{q_0}",
-    "descrizione": "Il campo elettrico $\\vec{E}$ in un punto è definito come la forza $\\vec{F}$ che una carica di prova positiva $q_0$ subirebbe se posta in quel punto, divisa per la carica stessa.",
+    "descrizione": "Il campo elettrico in un punto è definito come il rapporto tra la forza che agisce su una carica di prova positiva e il valore di quella carica.\n\nIl campo elettrico rappresenta la 'forza per unità di carica' che si avrebbe in un certo punto dello spazio, indipendentemente dalla carica di prova usata per misurarlo.",
     "variabili": [
-      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$\\vec{F}$", "descrizione": "Forza elettrica", "unita": "N" },
-      { "simbolo": "$q_0$", "descrizione": "Carica di prova", "unita": "C" }
+      { "simbolo": "\\vec{E}", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" },
+      { "simbolo": "\\vec{F}", "descrizione": "Forza elettrica", "unita": "N" },
+      { "simbolo": "q_0", "descrizione": "Carica di prova", "unita": "C" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se una carica di prova di $3 \\times 10^{-9} C$ subisce una forza di $6 \\times 10^{-5} N$ in una certa direzione, il campo elettrico in quel punto è $E = \\frac{6 \\times 10^{-5} N}{3 \\times 10^{-9} C} = 20000 N/C$."
+        "testo": "Se in un punto una carica di prova piccolissima sente una forza, il campo elettrico in quel punto indica quanto sarebbe intensa la forza su ogni coulomb di carica posta lì."
       }
     ],
     "link_correlati": [],
@@ -75,17 +75,17 @@
     "sottocategoria": "Forza e Campo Elettrico",
     "titolo": "Campo Elettrico di una Carica Puntiforme",
     "formula_latex": "\\vec{E} = k_e \\frac{q}{r^2}",
-    "descrizione": "Il campo elettrico $\\vec{E}$ generato da una carica puntiforme $q$ a una distanza $r$ da essa.",
+    "descrizione": "Il campo elettrico generato da una carica puntiforme diminuisce con il quadrato della distanza dalla carica stessa.\n\nPiù ci si allontana dalla carica, più il campo elettrico si indebolisce rapidamente: la sua 'influenza' si distribuisce su superfici sempre più grandi.",
     "variabili": [
-      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" },
-      { "simbolo": "$q$", "descrizione": "Carica puntiforme", "unita": "C" },
-      { "simbolo": "$r$", "descrizione": "Distanza dalla carica", "unita": "m" }
+      { "simbolo": "\\vec{E}", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" },
+      { "simbolo": "k_e", "descrizione": "Costante di Coulomb", "unita": "\\frac{N \\cdot m^2}{C^2}" },
+      { "simbolo": "q", "descrizione": "Carica puntiforme", "unita": "C" },
+      { "simbolo": "r", "descrizione": "Distanza dalla carica", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcola il campo elettrico a $0.5 m$ da una carica puntiforme di $4 \\times 10^{-9} C$. $E = (8.99 \\times 10^9) \\frac{4 \\times 10^{-9}}{(0.5)^2} = 143.84 N/C$."
+        "testo": "Se ti avvicini a una carica, il campo elettrico cresce molto velocemente. Allontanandoti, il campo si riduce drasticamente: a distanza doppia, il campo è quattro volte più debole."
       }
     ],
     "link_correlati": [],
@@ -99,16 +99,16 @@
     "sottocategoria": "Flusso e Teorema di Gauss",
     "titolo": "Flusso del Campo Elettrico",
     "formula_latex": "\\Phi_S(\\vec{E}) = \\vec{E} \\cdot \\vec{S}",
-    "descrizione": "Il flusso del campo elettrico $\\Phi_S(\\vec{E})$ attraverso una superficie $S$ è il prodotto scalare del campo elettrico $\\vec{E}$ e del vettore superficie $\\vec{S}$",
+    "descrizione": "Il flusso del campo elettrico attraverso una superficie è il prodotto scalare tra il campo e il vettore superficie.\n\nIl flusso misura quanto 'campo elettrico' attraversa una certa area: è massimo se il campo è perpendicolare alla superficie, nullo se è parallelo.",
     "variabili": [
-      { "simbolo": "$\\Phi_S(\\vec{E})$", "descrizione": "Flusso del campo elettrico", "unita": "$N \\cdot m^2/C$" },
-      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$\\vec{A}$", "descrizione": "Vettore superficie", "unita": "m^2" }
+      { "simbolo": "\\Phi_S(\\vec{E})", "descrizione": "Flusso del campo elettrico", "unita": "\\frac{N \\cdot m^2}{C}" },
+      { "simbolo": "\\vec{E}", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" },
+      { "simbolo": "\\vec{A}", "descrizione": "Vettore superficie", "unita": "m^2" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un campo elettrico uniforme di $200 N/C$ attraversa perpendicolarmente una superficie piana di $0.5 m^2$. Il flusso è $\\Phi_S(\\vec{E}) = 200 N/C \\cdot 0.5 m^2 = 100 N \\cdot m^2/C$."
+        "testo": "Immagina il campo elettrico come vento che attraversa una finestra: se la finestra è rivolta verso il vento, il flusso è massimo; se è parallela, il vento non passa e il flusso è zero."
       }
     ],
     "link_correlati": [],
@@ -122,17 +122,17 @@
     "sottocategoria": "Flusso e Teorema di Gauss",
     "titolo": "Teorema di Gauss",
     "formula_latex": "\\Phi_S(\\vec{E}) = \\frac{Q_{tot}}{\\varepsilon_0}",
-    "descrizione": "Il teorema di Gauss afferma che il flusso totale del campo elettrico attraverso una qualsiasi superficie chiusa $S$ (superficie gaussiana) è direttamente proporzionale alla carica totale $Q_{tot}$ racchiusa all'interno di quella superficie, divisa per la costante dielettrica del vuoto $\\varepsilon_0$.",
+    "descrizione": "Il flusso totale del campo elettrico attraverso una superficie chiusa è uguale alla carica totale racchiusa divisa per la costante dielettrica del vuoto.\n\nIl teorema di Gauss permette di calcolare facilmente il campo elettrico generato da distribuzioni simmetriche di carica, collegando la quantità di carica interna a una superficie con il flusso del campo che la attraversa.",
     "variabili": [
-      { "simbolo": "$\\Phi_S(\\vec{E})$", "descrizione": "Flusso del campo elettrico", "unita": "$N \\cdot m^2/C$" },
-      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$Q_{tot}$", "descrizione": "Carica totale racchiusa", "unita": "C" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "\\Phi_S(\\vec{E})", "descrizione": "Flusso del campo elettrico", "unita": "\\frac{N \\cdot m^2}{C}" },
+      { "simbolo": "\\vec{E}", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" },
+      { "simbolo": "Q_{tot}", "descrizione": "Carica totale racchiusa", "unita": "C" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Costante dielettrica del vuoto", "unita": "\\frac{F}{m}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una carica di $2 \\mu C$ è racchiusa da una superficie sferica. Il flusso totale attraverso la superficie è $\\Phi_S(\\vec{E}) = \\frac{2 \\times 10^{-6} C}{8.85 \\times 10^{-12} F/m} \\approx 2.26 \\times 10^5 N \\cdot m^2/C$."
+        "testo": "Se racchiudi una carica in una sfera immaginaria, il flusso del campo elettrico attraverso la superficie dipende solo dalla carica interna, non dalla posizione o dalla forma della superficie."
       }
     ],
     "link_correlati": [],
@@ -146,16 +146,16 @@
     "sottocategoria": "Distribuzioni di Carica",
     "titolo": "Densità Superficiale di Carica",
     "formula_latex": "\\sigma = \\frac{Q}{A}",
-    "descrizione": "La densità superficiale di carica $\\sigma$ è la quantità di carica $Q$ distribuita uniformemente su una superficie di area $A$.",
+    "descrizione": "La densità superficiale di carica indica quanta carica è distribuita uniformemente su una certa area.\n\nPiù carica viene concentrata su una superficie piccola, maggiore è la densità superficiale: questa grandezza è fondamentale per capire il comportamento di superfici cariche come piastre o conduttori.",
     "variabili": [
-      { "simbolo": "$\\sigma$", "descrizione": "Densità superficiale di carica", "unita": "C/m^2" },
-      { "simbolo": "$Q$", "descrizione": "Carica totale", "unita": "C" },
-      { "simbolo": "$A$", "descrizione": "Area della superficie", "unita": "$m^2$" }
+      { "simbolo": "\\sigma", "descrizione": "Densità superficiale di carica", "unita": "\\frac{C}{m^2}" },
+      { "simbolo": "Q", "descrizione": "Carica totale", "unita": "C" },
+      { "simbolo": "A", "descrizione": "Area della superficie", "unita": "m^2" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una piastra metallica di $0.2 m^2$ ha una carica di $1 \\mu C$. La densità superficiale di carica è $\\sigma = \\frac{1 \\times 10^{-6} C}{0.2 m^2} = 5 \\times 10^{-6} C/m^2$."
+        "testo": "Se la stessa quantità di carica viene distribuita su una superficie più grande, la densità superficiale diminuisce: è come spalmare una crema su una zona più ampia, lo strato diventa più sottile."
       }
     ],
     "link_correlati": [],
@@ -169,16 +169,16 @@
     "sottocategoria": "Campo Elettrico da Distribuzioni",
     "titolo": "Campo Elettrico di un Piano Infinito Uniformemente Carico",
     "formula_latex": "E = \\frac{\\sigma}{2\\varepsilon_0}",
-    "descrizione": "Il campo elettrico $E$ generato da un piano infinito uniformemente carico con densità superficiale di carica $\\sigma$. Il campo è uniforme e perpendicolare al piano.",
+    "descrizione": "Il campo elettrico generato da un piano infinito uniformemente carico è costante e dipende solo dalla densità superficiale di carica.\n\nUn piano molto esteso crea un campo elettrico uniforme, che non dipende dalla distanza dal piano: è un modello ideale utile per capire il comportamento di superfici cariche molto grandi rispetto alla zona di interesse.",
     "variabili": [
-      { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$\\sigma$", "descrizione": "Densità superficiale di carica", "unita": "C/m^2" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" }
+      { "simbolo": "E", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" },
+      { "simbolo": "\\sigma", "descrizione": "Densità superficiale di carica", "unita": "\\frac{C}{m^2}" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Costante dielettrica del vuoto", "unita": "\\frac{F}{m}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un piano infinito ha una densità superficiale di carica di $3 \\times 10^{-6} C/m^2$. Il campo elettrico generato è $E = \\frac{3 \\times 10^{-6}}{2 \\cdot 8.85 \\times 10^{-12}} \\approx 1.69 \\times 10^5 N/C$."
+        "testo": "Vicino a una grande piastra carica, il campo elettrico è praticamente lo stesso in ogni punto: non importa quanto ti allontani, finché resti vicino rispetto alle dimensioni della piastra."
       }
     ],
     "link_correlati": [],
@@ -192,16 +192,16 @@
     "sottocategoria": "Distribuzioni di Carica",
     "titolo": "Densità Lineare di Carica",
     "formula_latex": "\\lambda = \\frac{Q}{L}",
-    "descrizione": "La densità lineare di carica $\\lambda$ è la quantità di carica $Q$ distribuita uniformemente su una linea di lunghezza $L$.",
+    "descrizione": "La densità lineare di carica esprime quanta carica è distribuita uniformemente lungo una linea di una certa lunghezza.\n\nSe la stessa carica viene distribuita su un filo più lungo, la densità diminuisce: questa grandezza è importante per descrivere fili o aste cariche.",
     "variabili": [
-      { "simbolo": "$\\lambda$", "descrizione": "Densità lineare di carica", "unita": "C/m" },
-      { "simbolo": "$Q$", "descrizione": "Carica totale", "unita": "C" },
-      { "simbolo": "$L$", "descrizione": "Lunghezza della linea", "unita": "m" }
+      { "simbolo": "\\lambda", "descrizione": "Densità lineare di carica", "unita": "\\frac{C}{m}" },
+      { "simbolo": "Q", "descrizione": "Carica totale", "unita": "C" },
+      { "simbolo": "L", "descrizione": "Lunghezza della linea", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un filo lungo $0.5 m$ ha una carica di $2 \\times 10^{-8} C$. La densità lineare di carica è $\\lambda = \\frac{2 \\times 10^{-8} C}{0.5 m} = 4 \\times 10^{-8} C/m$."
+        "testo": "Se un filo viene allungato mantenendo la stessa carica, la densità lineare diminuisce: è come distribuire le persone su una fila più lunga, diventano più distanti tra loro."
       }
     ],
     "link_correlati": [],
@@ -215,17 +215,17 @@
     "sottocategoria": "Campo Elettrico da Distribuzioni",
     "titolo": "Campo Elettrico di un Filo Infinito Uniformemente Carico",
     "formula_latex": "E = \\frac{\\lambda}{2\\pi\\varepsilon_0 r}",
-    "descrizione": "Il campo elettrico $E$ generato da un filo infinito uniformemente carico con densità lineare di carica $\\lambda$, a una distanza $r$ dal filo.",
+    "descrizione": "Il campo elettrico generato da un filo infinito carico diminuisce all'aumentare della distanza dal filo, in modo inversamente proporzionale.\n\nUn filo molto lungo e carico crea un campo che si indebolisce più lentamente rispetto a una carica puntiforme: il campo è più intenso vicino al filo e diminuisce spostandosi verso l'esterno.",
     "variabili": [
-      { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$\\lambda$", "descrizione": "Densità lineare di carica", "unita": "C/m" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Costante dielettrica del vuoto", "unita": "F/m" },
-      { "simbolo": "$r$", "descrizione": "Distanza dal filo", "unita": "m" }
+      { "simbolo": "E", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" },
+      { "simbolo": "\\lambda", "descrizione": "Densità lineare di carica", "unita": "\\frac{C}{m}" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Costante dielettrica del vuoto", "unita": "\\frac{F}{m}" },
+      { "simbolo": "r", "descrizione": "Distanza dal filo", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un filo infinito ha una densità lineare di carica di $5 \\times 10^{-9} C/m$. Il campo elettrico a $0.02 m$ dal filo è $E = \\frac{5 \\times 10^{-9}}{2\\pi \\cdot 8.85 \\times 10^{-12} \\cdot 0.02} \\approx 4.49 \\times 10^3 N/C$."
+        "testo": "Intorno a un cavo elettrico molto lungo, il campo elettrico è più forte vicino al filo e si riduce gradualmente allontanandosi, ma meno rapidamente rispetto a una carica puntiforme."
       }
     ],
     "link_correlati": [],
@@ -239,18 +239,18 @@
     "sottocategoria": "Campo Elettrico da Distribuzioni",
     "titolo": "Campo Elettrico Esterno ad una Sfera Uniformemente Carica",
     "formula_latex": "E = k_e \\frac{Q}{r^2} \\quad (r > R)",
-    "descrizione": "Il campo elettrico $E$ generato da una sfera uniformemente carica (o conduttore carico) con carica totale $Q$, per punti esterni alla sfera (dove $r$ è la distanza dal centro e $R$ è il raggio della sfera). Si comporta come una carica puntiforme al centro.",
+    "descrizione": "All'esterno di una sfera uniformemente carica, il campo elettrico si comporta come se tutta la carica fosse concentrata nel centro della sfera.\n\nPer punti esterni, una sfera carica genera lo stesso campo di una carica puntiforme posta al suo centro: la distanza da considerare è quella dal centro della sfera.",
     "variabili": [
-      { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" },
-      { "simbolo": "$Q$", "descrizione": "Carica totale della sfera", "unita": "C" },
-      { "simbolo": "$r$", "descrizione": "Distanza dal centro della sfera", "unita": "m" },
-      { "simbolo": "$R$", "descrizione": "Raggio della sfera", "unita": "m" }
+      { "simbolo": "E", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" },
+      { "simbolo": "k_e", "descrizione": "Costante di Coulomb", "unita": "\\frac{N \\cdot m^2}{C^2}" },
+      { "simbolo": "Q", "descrizione": "Carica totale della sfera", "unita": "C" },
+      { "simbolo": "r", "descrizione": "Distanza dal centro della sfera", "unita": "m" },
+      { "simbolo": "R", "descrizione": "Raggio della sfera", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una sfera con raggio $0.1 m$ ha una carica di $10 \\mu C$. Il campo elettrico a $0.2 m$ dal centro della sfera è $E = (8.99 \\times 10^9) \\frac{10 \\times 10^{-6}}{(0.2)^2} \\approx 2.25 \\times 10^6 N/C$."
+        "testo": "Se ti trovi fuori da una sfera carica, il campo elettrico che senti è identico a quello che avresti se tutta la carica fosse concentrata in un punto al centro della sfera."
       }
     ],
     "link_correlati": [],
@@ -264,22 +264,66 @@
     "sottocategoria": "Campo Elettrico da Distribuzioni",
     "titolo": "Campo Elettrico Interno ad una Sfera Uniformemente Carica (Isolante)",
     "formula_latex": "E = k_e \\frac{Q r}{R^3} \\quad (r \\le R)",
-    "descrizione": "Il campo elettrico $E$ all'interno di una sfera isolante uniformemente carica con carica totale $Q$ e raggio $R$, a una distanza $r$ dal centro. Per una sfera conduttrice, il campo interno è zero.",
+    "descrizione": "All'interno di una sfera isolante uniformemente carica, il campo elettrico cresce in modo proporzionale alla distanza dal centro.\n\nPiù ci si avvicina al bordo della sfera, più il campo aumenta; al centro il campo è nullo. Questo vale solo per sfere isolanti, non conduttrici.",
     "variabili": [
-      { "simbolo": "$E$", "descrizione": "Campo elettrico", "unita": "N/C" },
-      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" },
-      { "simbolo": "$Q$", "descrizione": "Carica totale della sfera", "unita": "C" },
-      { "simbolo": "$r$", "descrizione": "Distanza dal centro della sfera", "unita": "m" },
-      { "simbolo": "$R$", "descrizione": "Raggio della sfera", "unita": "m" }
+      { "simbolo": "E", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" },
+      { "simbolo": "k_e", "descrizione": "Costante di Coulomb", "unita": "\\frac{N \\cdot m^2}{C^2}" },
+      { "simbolo": "Q", "descrizione": "Carica totale della sfera", "unita": "C" },
+      { "simbolo": "r", "descrizione": "Distanza dal centro della sfera", "unita": "m" },
+      { "simbolo": "R", "descrizione": "Raggio della sfera", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una sfera isolante di raggio $0.1 m$ ha una carica totale di $5 \\mu C$ distribuita uniformemente. Il campo elettrico a $0.05 m$ dal centro è $E = (8.99 \\times 10^9) \\frac{5 \\times 10^{-6} \\cdot 0.05}{(0.1)^3} \\approx 2.25 \\times 10^6 N/C$."
+        "testo": "All'interno di una sfera isolante carica, il campo elettrico è zero al centro e aumenta man mano che ci si avvicina alla superficie, raggiungendo il massimo proprio sul bordo."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["campo elettrico", "sfera carica", "interno", "isolante", "conduttore"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_001",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Conduttori e Campo Elettrico",
+    "titolo": "Equilibrio Elettrostatico in un Conduttore",
+    "formula_latex": "\\vec{E}_{int} = 0",
+    "descrizione": "In un conduttore in equilibrio elettrostatico, il campo elettrico all'interno è sempre nullo.\n\nLe cariche libere si distribuiscono sulla superficie del conduttore in modo da annullare qualsiasi campo interno: per questo l'interno di un conduttore è sempre 'protetto' dal campo elettrico.",
+    "variabili": [
+      { "simbolo": "\\vec{E}_{\\text{int}}", "descrizione": "Campo elettrico interno", "unita": "\\frac{N}{C}" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "All'interno di una gabbia metallica (come la 'gabbia di Faraday'), non si avverte alcun campo elettrico, anche se fuori c'è un forte campo: è il principio che protegge le persone all'interno di un'auto durante un temporale."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["equilibrio elettrostatico", "conduttore", "campo elettrico"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_002",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Conduttori e Campo Elettrico",
+    "titolo": "Campo Elettrico alla Superficie di un Conduttore",
+    "formula_latex": "E = \\frac{\\sigma}{\\varepsilon_0}",
+    "descrizione": "Il campo elettrico appena fuori dalla superficie di un conduttore in equilibrio è proporzionale alla densità superficiale di carica.\n\nPiù carica si accumula in un punto della superficie, più intenso sarà il campo elettrico proprio all'esterno di quel punto.",
+    "variabili": [
+      { "simbolo": "E", "descrizione": "Campo elettrico alla superficie", "unita": "\\frac{N}{C}" },
+      { "simbolo": "\\sigma", "descrizione": "Densità superficiale di carica", "unita": "\\frac{C}{m^2}" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Costante dielettrica del vuoto", "unita": "\\frac{F}{m}" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Sulle punte di un parafulmine la densità di carica è molto alta, quindi il campo elettrico è fortissimo: per questo le scariche elettriche tendono a partire proprio dalle punte."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["campo elettrico", "superficie", "conduttore", "densità di carica"],
     "data_creazione": "2025-07-11",
     "data_ultima_modifica": "2025-07-11"
   },
@@ -289,16 +333,16 @@
     "sottocategoria": "Potenziale Elettrico ed Energia",
     "titolo": "Potenziale Elettrico",
     "formula_latex": "V = \\frac{U}{q_0}",
-    "descrizione": "Il potenziale elettrico $V$ in un punto è l'energia potenziale elettrica $U$ per unità di carica di prova $q_0$ posta in quel punto.",
+    "descrizione": "Il potenziale elettrico in un punto è l'energia potenziale per unità di carica di prova posta in quel punto.\n\nIl potenziale indica quanto 'lavoro' sarebbe necessario per portare una carica unitaria da un punto di riferimento (di solito l'infinito) fino a quel punto.",
     "variabili": [
-      { "simbolo": "$V$", "descrizione": "Potenziale elettrico", "unita": "V (Volt)" },
-      { "simbolo": "$U$", "descrizione": "Energia potenziale elettrica", "unita": "J" },
-      { "simbolo": "$q_0$", "descrizione": "Carica di prova", "unita": "C" }
+      { "simbolo": "V", "descrizione": "Potenziale elettrico", "unita": "V" },
+      { "simbolo": "U", "descrizione": "Energia potenziale elettrica", "unita": "J" },
+      { "simbolo": "q_0", "descrizione": "Carica di prova", "unita": "C" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se una carica di prova di $2 \\times 10^{-9} C$ ha un'energia potenziale di $10^{-7} J$ in un punto, il potenziale elettrico in quel punto è $V = \\frac{10^{-7} J}{2 \\times 10^{-9} C} = 50 V$."
+        "testo": "Il potenziale elettrico è come l'altezza in una mappa: indica quanto 'in alto' si trova un punto rispetto a un livello di riferimento, ma per le cariche elettriche invece che per l'acqua."
       }
     ],
     "link_correlati": [],
@@ -312,16 +356,16 @@
     "sottocategoria": "Potenziale Elettrico ed Energia",
     "titolo": "Potenziale in un Campo Elettrico Uniforme",
     "formula_latex": "\\Delta V = - E d",
-    "descrizione": "La variazione di potenziale elettrico $\\Delta V$ tra due punti in un campo elettrico uniforme $E$, separati da una distanza $d$ lungo la direzione del campo. Il segno meno indica che il potenziale diminuisce nella direzione del campo.",
+    "descrizione": "La variazione di potenziale elettrico tra due punti in un campo elettrico uniforme è uguale al prodotto tra il campo e la distanza, con segno negativo se ci si sposta nella direzione del campo.\n\nIl potenziale diminuisce spostandosi nella direzione del campo elettrico: è come scendere una collina, dove il campo rappresenta la pendenza.",
     "variabili": [
-      { "simbolo": "$\\Delta V$", "descrizione": "Variazione di potenziale elettrico", "unita": "V" },
-      { "simbolo": "$E$", "descrizione": "Campo elettrico uniforme", "unita": "N/C" },
-      { "simbolo": "$d$", "descrizione": "Distanza lungo la direzione del campo", "unita": "m" }
+      { "simbolo": "\\Delta V", "descrizione": "Variazione di potenziale elettrico", "unita": "V" },
+      { "simbolo": "E", "descrizione": "Campo elettrico uniforme", "unita": "\\frac{N}{C}" },
+      { "simbolo": "d", "descrizione": "Distanza lungo la direzione del campo", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "In un campo elettrico uniforme di $500 N/C$, la variazione di potenziale tra due punti separati di $0.1 m$ lungo la direzione del campo è $\\Delta V = - 500 N/C \\cdot 0.1 m = -50 V$."
+        "testo": "In un condensatore piano, il potenziale tra le piastre varia linearmente: più ci si avvicina alla piastra negativa, più il potenziale diminuisce."
       }
     ],
     "link_correlati": [],
@@ -335,17 +379,17 @@
     "sottocategoria": "Potenziale Elettrico ed Energia",
     "titolo": "Energia Potenziale in un Campo Elettrico Uniforme",
     "formula_latex": "U = -q E d",
-    "descrizione": "L'energia potenziale $U$ di una carica $q$ in un campo elettrico uniforme $E$, a una distanza $d$ dal punto di riferimento (spesso dove $U=0$).",
+    "descrizione": "L'energia potenziale di una carica in un campo elettrico uniforme dipende dal prodotto tra la carica, il campo e la distanza dal punto di riferimento.\n\nSe una carica si muove nella direzione del campo, la sua energia potenziale diminuisce; se si muove in senso opposto, aumenta: è analogo a sollevare o abbassare un oggetto in un campo gravitazionale.",
     "variabili": [
-      { "simbolo": "$U$", "descrizione": "Energia potenziale elettrica", "unita": "J" },
-      { "simbolo": "$q$", "descrizione": "Carica", "unita": "C" },
-      { "simbolo": "$E$", "descrizione": "Campo elettrico uniforme", "unita": "N/C" },
-      { "simbolo": "$d$", "descrizione": "Distanza", "unita": "m" }
+      { "simbolo": "U", "descrizione": "Energia potenziale elettrica", "unita": "J" },
+      { "simbolo": "q", "descrizione": "Carica", "unita": "C" },
+      { "simbolo": "E", "descrizione": "Campo elettrico uniforme", "unita": "\\frac{N}{C}" },
+      { "simbolo": "d", "descrizione": "Distanza", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una carica di $1 \\mu C$ è posta in un campo elettrico uniforme di $300 N/C$. Se si sposta di $0.05 m$ nella direzione opposta al campo, l'energia potenziale aumenta di $U = - (1 \\times 10^{-6} C) \\cdot (300 N/C) \\cdot (-0.05 m) = 1.5 \\times 10^{-5} J$."
+        "testo": "In un campo elettrico tra due piastre, una carica positiva perde energia potenziale se si muove verso la piastra negativa, proprio come una palla che rotola giù da una collina."
       }
     ],
     "link_correlati": [],
@@ -359,21 +403,42 @@
     "sottocategoria": "Potenziale Elettrico ed Energia",
     "titolo": "Potenziale di una Carica Puntiforme",
     "formula_latex": "V = k_e \\frac{q}{r}",
-    "descrizione": "Il potenziale elettrico $V$ generato da una carica puntiforme $q$ a una distanza $r$ da essa.",
+    "descrizione": "Il potenziale elettrico generato da una carica puntiforme diminuisce all'aumentare della distanza dalla carica.\n\nPiù ci si allontana dalla carica, più il potenziale si avvicina a zero: il potenziale rappresenta il 'livello di energia' disponibile per una carica di prova posta in quel punto.",
     "variabili": [
-      { "simbolo": "$V$", "descrizione": "Potenziale elettrico", "unita": "V" },
-      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" },
-      { "simbolo": "$q$", "descrizione": "Carica puntiforme", "unita": "C" },
-      { "simbolo": "$r$", "descrizione": "Distanza dalla carica", "unita": "m" }
+      { "simbolo": "V", "descrizione": "Potenziale elettrico", "unita": "V" },
+      { "simbolo": "k_e", "descrizione": "Costante di Coulomb", "unita": "\\frac{N \\cdot m^2}{C^2}" },
+      { "simbolo": "q", "descrizione": "Carica puntiforme", "unita": "C" },
+      { "simbolo": "r", "descrizione": "Distanza dalla carica", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcola il potenziale elettrico a $0.2 m$ da una carica puntiforme di $5 \\times 10^{-9} C$. $V = (8.99 \\times 10^9) \\frac{5 \\times 10^{-9}}{0.2} = 224.75 V$."
+        "testo": "Il potenziale vicino a una carica positiva è alto e diminuisce allontanandosi: è come essere su una collina che si abbassa man mano che ci si allontana dalla cima."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["potenziale elettrico", "carica puntiforme", "distanza"],
+    "data_creazione": "2025-07-11",
+    "data_ultima_modifica": "2025-07-11"
+  },
+  {
+    "id": "CIR_003",
+    "categoria": "Elettrostatica",
+    "sottocategoria": "Conduttori e Campo Elettrico",
+    "titolo": "Potenziale di un Conduttore in Equilibrio",
+    "formula_latex": "V = \\text{costante}",
+    "descrizione": "Il potenziale elettrico è costante in ogni punto all'interno e sulla superficie di un conduttore in equilibrio elettrostatico.\n\nNon esistono differenze di potenziale all'interno di un conduttore: tutte le cariche si dispongono in modo da annullare ogni campo elettrico interno.",
+    "variabili": [
+      { "simbolo": "V", "descrizione": "Potenziale elettrico", "unita": "V" }
+    ],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "All'interno di un filo metallico collegato a una batteria, il potenziale è lo stesso in ogni punto della superficie: è come trovarsi su una piattaforma perfettamente orizzontale."
+      }
+    ],
+    "link_correlati": [],
+    "parole_chiave": ["potenziale", "conduttore", "equilibrio elettrostatico", "equipotenziale"],
     "data_creazione": "2025-07-11",
     "data_ultima_modifica": "2025-07-11"
   },
@@ -383,17 +448,17 @@
     "sottocategoria": "Potenziale Elettrico ed Energia",
     "titolo": "Energia Potenziale di una Carica Puntiforme",
     "formula_latex": "U = k_e \\frac{q_1 q_2}{r}",
-    "descrizione": "L'energia potenziale $U$ di un sistema di due cariche puntiformi $q_1$ e $q_2$ separate da una distanza $r$.",
+    "descrizione": "L'energia potenziale elettrica di due cariche puntiformi dipende dal prodotto delle cariche e dall'inverso della loro distanza.\n\nSe le cariche sono dello stesso segno, l'energia potenziale è positiva e tende a separarle; se sono di segno opposto, è negativa e tende ad avvicinarle.",
     "variabili": [
-      { "simbolo": "$U$", "descrizione": "Energia potenziale elettrica", "unita": "J" },
-      { "simbolo": "$k_e$", "descrizione": "Costante di Coulomb", "unita": "$N \\cdot m^2/C^2$" },
-      { "simbolo": "$q_1, q_2$", "descrizione": "Cariche elettriche", "unita": "C" },
-      { "simbolo": "$r$", "descrizione": "Distanza tra le cariche", "unita": "m" }
+      { "simbolo": "U", "descrizione": "Energia potenziale elettrica", "unita": "J" },
+      { "simbolo": "k_e", "descrizione": "Costante di Coulomb", "unita": "\\frac{N \\cdot m^2}{C^2}" },
+      { "simbolo": "q_1, q_2", "descrizione": "Cariche elettriche", "unita": "C" },
+      { "simbolo": "r", "descrizione": "Distanza tra le cariche", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Due cariche di $3 \\mu C$ e $-2 \\mu C$ sono distanti $0.1 m$. L'energia potenziale del sistema è $U = (8.99 \\times 10^9) \\frac{(3 \\times 10^{-6}) \\cdot (-2 \\times 10^{-6})}{0.1} \\approx -0.54 J$."
+        "testo": "Due cariche opposte hanno energia potenziale negativa: se vengono lasciate libere, si avvicinano spontaneamente, liberando energia come quando una palla rotola giù da una collina."
       }
     ],
     "link_correlati": [],
@@ -407,16 +472,16 @@
     "sottocategoria": "Relazione Campo-Potenziale",
     "titolo": "Calcolo del Campo Elettrico dal Potenziale",
     "formula_latex": "\\vec{E} = -\\nabla V",
-    "descrizione": "Il campo elettrico $\\vec{E}$ può essere derivato dal potenziale elettrico $V$ prendendo il gradiente negativo del potenziale. In coordinate cartesiane: $E_x = -\\frac{\\partial V}{\\partial x}$, $E_y = -\\frac{\\partial V}{\\partial y}$, $E_z = -\\frac{\\partial V}{\\partial z}$.",
+    "descrizione": "Il campo elettrico è dato dal gradiente negativo del potenziale elettrico: indica la direzione e l'intensità della variazione più rapida del potenziale.\n\nIl campo elettrico punta sempre verso i valori di potenziale più bassi, come l'acqua che scorre dalla cima di una collina verso il basso.",
     "variabili": [
-      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C o V/m" },
-      { "simbolo": "$V$", "descrizione": "Potenziale elettrico", "unita": "V" },
-      { "simbolo": "$\\nabla$", "descrizione": "Operatore gradiente", "unita": "" }
+      { "simbolo": "\\vec{E}", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" },
+      { "simbolo": "V", "descrizione": "Potenziale elettrico", "unita": "V" },
+      { "simbolo": "\\nabla", "descrizione": "Operatore gradiente", "unita": "\\text{adimensionale}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se il potenziale elettrico in una regione è dato da $V(x) = 5x^2 V$, il campo elettrico in direzione x è $E_x = -\\frac{d(5x^2)}{dx} = -10x V/m$."
+        "testo": "Se il potenziale varia rapidamente in una certa direzione, il campo elettrico sarà intenso e orientato proprio in quella direzione: è come una pendenza ripida che fa accelerare una pallina."
       }
     ],
     "link_correlati": [],
@@ -430,14 +495,14 @@
     "sottocategoria": "Relazione Campo-Potenziale",
     "titolo": "Circuitazione del Campo Elettrico lungo una Linea Chiusa",
     "formula_latex": "\\Gamma_L(\\vec{E}) = 0",
-    "descrizione": "La circuitazione del campo elettrico elettrostatico lungo una qualsiasi linea chiusa $L$ è sempre zero. Questo riflette il fatto che il campo elettrostatico è conservativo.",
+    "descrizione": "La circuitazione del campo elettrico lungo una linea chiusa è sempre nulla nei campi elettrostatici.\n\nQuesto significa che il lavoro compiuto dal campo elettrico su una carica che percorre un giro completo torna sempre a zero: il campo elettrostatico è conservativo.",
     "variabili": [
-      { "simbolo": "$\\vec{E}$", "descrizione": "Campo elettrico", "unita": "N/C" }
+      { "simbolo": "\\vec{E}", "descrizione": "Campo elettrico", "unita": "\\frac{N}{C}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Immagina di muovere una carica lungo un percorso chiuso in un campo elettrostatico. Il lavoro totale compiuto dal campo sulla carica sarà sempre zero, il che significa che la circuitazione del campo lungo quel percorso è zero."
+        "testo": "Se sposti una carica lungo un percorso chiuso in un campo elettrostatico, tutta l'energia che spendi per andare avanti la recuperi tornando indietro: non c'è perdita o guadagno netto di energia."
       }
     ],
     "link_correlati": [],

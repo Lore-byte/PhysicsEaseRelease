@@ -5,16 +5,21 @@
     "sottocategoria": "Corpo Nero",
     "titolo": "Spettro del Corpo Nero",
     "formula_latex": "B(\\nu,T)=\\frac{2h\\nu^3}{c^2}\\frac{1}{e^{h\\nu/(kT)}-1}",
-    "descrizione": "La distribuzione spettrale di un corpo nero descrive l’intensità per unità di frequenza emessa da un corpo ideale in equilibrio termico alla temperatura T.",
+    "descrizione": "Lo spettro del corpo nero descrive come varia l'intensità della radiazione emessa a ogni frequenza da un corpo ideale in equilibrio termico.\n\nAumentando la temperatura, il massimo dell'emissione si sposta verso frequenze più alte e l'intensità totale cresce rapidamente.",
     "variabili": [
-      { "simbolo": "$B(\\nu,T)$", "descrizione": "Intensità spettrale", "unita": "W·sr⁻¹·m⁻²·Hz⁻¹" },
-      { "simbolo": "$h$", "descrizione": "Costante di Planck", "unita": "J·s" },
-      { "simbolo": "$\\nu$", "descrizione": "Frequenza", "unita": "Hz" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" },
-      { "simbolo": "$k$", "descrizione": "Costante di Boltzmann", "unita": "J/K" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" }
+      { "simbolo": "B(\\nu,T)", "descrizione": "Intensità spettrale", "unita": "\\frac{W}{sr \\cdot m^2 \\cdot Hz}" },
+      { "simbolo": "h", "descrizione": "Costante di Planck", "unita": "J \\cdot s" },
+      { "simbolo": "\\nu", "descrizione": "Frequenza", "unita": "Hz" },
+      { "simbolo": "c", "descrizione": "Velocità della luce", "unita": "\\frac{m}{s}" },
+      { "simbolo": "k", "descrizione": "Costante di Boltzmann", "unita": "\\frac{J}{K}" },
+      { "simbolo": "T", "descrizione": "Temperatura assoluta", "unita": "K" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Il Sole emette luce con uno spettro simile a quello di un corpo nero: aumentando la temperatura di una stufa, la luce emessa passa dal rosso all'arancione fino al bianco."
+      }
+    ],
     "link_correlati": ["QNT_002","QNT_003"],
     "parole_chiave": ["corpo nero","spettro","Planck","distribuzione"],
     "data_creazione": "2025-07-15",
@@ -26,13 +31,18 @@
     "sottocategoria": "Corpo Nero",
     "titolo": "Legge di Spostamento di Wien",
     "formula_latex": "\\lambda_{\\max} = \\frac{b}{T}",
-    "descrizione": "La lunghezza d’onda alla quale l’emissione del corpo nero è massima è inversamente proporzionale alla temperatura T, con costante di proporzionalità b.",
+    "descrizione": "La lunghezza d'onda alla quale l'emissione di un corpo nero è massima è inversamente proporzionale alla temperatura.\n\nCorpi più caldi emettono radiazione con picco a lunghezze d'onda più corte: per questo il colore di una stella indica la sua temperatura.",
     "variabili": [
-      { "simbolo": "$\\lambda_{\\max}$", "descrizione": "Lunghezza d’onda di picco", "unita": "m" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" },
-      { "simbolo": "$b$", "descrizione": "Costante di Wien (circa 2.897·10⁻³ m·K)", "unita": "m·K" }
+      { "simbolo": "\\lambda_{\\max}", "descrizione": "Lunghezza d’onda di picco", "unita": "m" },
+      { "simbolo": "T", "descrizione": "Temperatura assoluta", "unita": "K" },
+      { "simbolo": "b", "descrizione": "Costante di Wien", "unita": "m \\cdot K" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Una stella blu è più calda di una stella rossa perché il suo picco di emissione è a lunghezze d'onda più corte."
+      }
+    ],
     "link_correlati": ["QNT_001"],
     "parole_chiave": ["Wien","spostamento","corpo nero"],
     "data_creazione": "2025-07-15",
@@ -44,13 +54,19 @@
     "sottocategoria": "Ipotesi Quantistiche",
     "titolo": "Ipotesi dei Quanti di Planck",
     "formula_latex": "E = h \\nu",
-    "descrizione": "Planck propose che l’energia emessa o assorbita da un oscillatore è quantizzata in multipli di hν.",
+    "descrizione": "L'energia scambiata da un oscillatore è quantizzata e può assumere solo valori multipli di $$h\\nu$$.\n\nL'ipotesi dei quanti spiega perché la radiazione di corpo nero non diverge alle alte frequenze: l'energia non può essere suddivisa in quantità arbitrarie.",
     "variabili": [
-      { "simbolo": "$E$", "descrizione": "Energia del quanto", "unita": "J" },
-      { "simbolo": "$h$", "descrizione": "Costante di Planck", "unita": "J·s" },
-      { "simbolo": "$\\nu$", "descrizione": "Frequenza", "unita": "Hz" }
+      { "simbolo": "E", "descrizione": "Energia del quanto", "unita": "J" },
+      { "simbolo": "h", "descrizione": "Costante di Planck", "unita": "J \\cdot s" },
+      { "simbolo": "\\nu", "descrizione": "Frequenza", "unita": "Hz" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un atomo può assorbire o emettere solo pacchetti di energia ben definiti: non può emettere 'mezzo quanto'.",
+        "link": "https://it.wikipedia.org/wiki/Ipotesi_dei_quanti_di_Planck"
+      }
+    ],
     "link_correlati": ["QNT_001","QNT_004"],
     "parole_chiave": ["Planck","quanto","energia"],
     "data_creazione": "2025-07-15",
@@ -62,13 +78,18 @@
     "sottocategoria": "Effetto Fotoelettrico",
     "titolo": "Equazione dell’Effetto Fotoelettrico",
     "formula_latex": "K_{\\max} = h\\nu - \\phi",
-    "descrizione": "L’energia cinetica massima degli elettroni emessi è data dalla differenza tra l’energia del quanto incidente e la funzione lavoro del materiale.",
+    "descrizione": "L'energia cinetica massima degli elettroni emessi da un metallo illuminato dipende dalla differenza tra l'energia del fotone incidente e la funzione lavoro del materiale.\n\nSolo la luce con frequenza superiore a una certa soglia può estrarre elettroni: aumentando l'intensità si aumenta il numero di elettroni, non la loro energia.",
     "variabili": [
-      { "simbolo": "$K_{\\max}$", "descrizione": "Energia cinetica massima", "unita": "J" },
-      { "simbolo": "$h\\nu$", "descrizione": "Energia del fotone incidente", "unita": "J" },
-      { "simbolo": "$\\phi$", "descrizione": "Funzione lavoro del metallo", "unita": "J" }
+      { "simbolo": "K_{\\max}", "descrizione": "Energia cinetica massima", "unita": "J" },
+      { "simbolo": "h\\nu", "descrizione": "Energia del fotone incidente", "unita": "J" },
+      { "simbolo": "\\phi", "descrizione": "Funzione lavoro del metallo", "unita": "J" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se illumini una superficie metallica con luce rossa non si liberano elettroni, ma con luce ultravioletta sì: conta la frequenza, non l'intensità."
+      }
+    ],
     "link_correlati": ["QNT_003","QNT_005"],
     "parole_chiave": ["fotoelettrico","fotoni","lavoro","Kmax"],
     "data_creazione": "2025-07-15",
@@ -80,13 +101,18 @@
     "sottocategoria": "Ipotesi Quantistiche",
     "titolo": "Ipotesi dei Fotoni di Einstein",
     "formula_latex": "E_{\\text{fotone}} = h\\nu",
-    "descrizione": "Einstein interpretò la luce come composta da particelle quantizzate (fotoni), ciascuna con energia hν.",
+    "descrizione": "La luce è composta da particelle chiamate fotoni, ognuna con energia $$h\\nu$$.\n\nL'ipotesi dei fotoni spiega fenomeni come l'effetto fotoelettrico e mostra che la luce può comportarsi come un flusso di particelle.",
     "variabili": [
-      { "simbolo": "$E_{\\text{fotone}}$", "descrizione": "Energia del fotone", "unita": "J" },
-      { "simbolo": "$h$", "descrizione": "Costante di Planck", "unita": "J·s" },
-      { "simbolo": "$\\nu$", "descrizione": "Frequenza", "unita": "Hz" }
+      { "simbolo": "E_{\\text{fotone}}", "descrizione": "Energia del fotone", "unita": "J" },
+      { "simbolo": "h", "descrizione": "Costante di Planck", "unita": "J \\cdot s" },
+      { "simbolo": "\\nu", "descrizione": "Frequenza", "unita": "Hz" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un laser emette milioni di fotoni tutti con la stessa energia: ogni fotone può trasferire la sua energia a un elettrone."
+      }
+    ],
     "link_correlati": ["QNT_003","QNT_004"],
     "parole_chiave": ["Einstein","fotone","luce","quantizzazione"],
     "data_creazione": "2025-07-15",
@@ -98,15 +124,20 @@
     "sottocategoria": "Effetto Compton",
     "titolo": "Effetto Compton",
     "formula_latex": "\\Delta\\lambda = \\frac{h}{m_e c}(1 - \\cos\\theta)",
-    "descrizione": "Lo spostamento in lunghezza d’onda di un fotone diffuso da un elettrone libero dipende dall’angolo di **scattering** θ.",
+    "descrizione": "La variazione della lunghezza d'onda di un fotone dopo l'urto con un elettrone libero dipende dall'angolo di diffusione.\n\nL'effetto Compton dimostra che la luce si comporta come una particella con quantità di moto: la lunghezza d'onda aumenta dopo l'urto.",
     "variabili": [
-      { "simbolo": "$\\Delta\\lambda$", "descrizione": "Variazione lunghezza d’onda", "unita": "m" },
-      { "simbolo": "$h$", "descrizione": "Costante di Planck", "unita": "J·s" },
-      { "simbolo": "$m_e$", "descrizione": "Massa dell’elettrone", "unita": "kg" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" },
-      { "simbolo": "$\\theta$", "descrizione": "Angolo di scattering", "unita": "rad" }
+      { "simbolo": "\\Delta\\lambda", "descrizione": "Variazione lunghezza d’onda", "unita": "m" },
+      { "simbolo": "h", "descrizione": "Costante di Planck", "unita": "J \\cdot s" },
+      { "simbolo": "m_e", "descrizione": "Massa dell’elettrone", "unita": "kg" },
+      { "simbolo": "c", "descrizione": "Velocità della luce", "unita": "\\frac{m}{s}" },
+      { "simbolo": "\\theta", "descrizione": "Angolo di scattering", "unita": "rad" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "I raggi X che colpiscono un bersaglio cambiano lunghezza d'onda in base all'angolo con cui vengono diffusi: questo effetto non si spiega con la sola teoria ondulatoria."
+      }
+    ],
     "link_correlati": [],
     "parole_chiave": ["Compton","scattering","fotone","elettrone"],
     "data_creazione": "2025-07-15",
@@ -118,13 +149,18 @@
     "sottocategoria": "Spettri Atomici",
     "titolo": "Spettri di Emissione degli Atomi",
     "formula_latex": "\\frac{1}{\\lambda} = R\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right)",
-    "descrizione": "La serie di righe spettrali di un atomo è descritta dalla formula di Rydberg, dove R è la costante di Rydberg.",
+    "descrizione": "Le lunghezze d'onda delle righe spettrali emesse dagli atomi sono descritte dalla formula di Rydberg.\n\nOgni elemento ha uno spettro caratteristico: le righe corrispondono a salti di energia tra livelli quantizzati.",
     "variabili": [
-      { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d’onda", "unita": "m" },
-      { "simbolo": "$R$", "descrizione": "Costante di Rydberg", "unita": "m⁻¹" },
-      { "simbolo": "$n_1,n_2$", "descrizione": "Numeri quantici principali", "unita": "-" }
+      { "simbolo": "\\lambda", "descrizione": "Lunghezza d’onda", "unita": "m" },
+      { "simbolo": "R", "descrizione": "Costante di Rydberg", "unita": "\\frac{1}{m}" },
+      { "simbolo": "n_1,n_2", "descrizione": "Numeri quantici principali", "unita": "\\text{adimensionale}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Le righe dell'idrogeno osservate nei laboratori e nelle stelle seguono esattamente questa relazione: ogni salto di livello produce una riga precisa."
+      }
+    ],
     "link_correlati": ["QNT_009","QNT_010"],
     "parole_chiave": ["spettro","Rydberg","emissione","atomo"],
     "data_creazione": "2025-07-15",
@@ -136,17 +172,22 @@
     "sottocategoria": "Atomo di Bohr",
     "titolo": "Raggio dell’Orbita n-esima dell’Atomo di Idrogeno",
     "formula_latex": "\\begin{aligned} r_n &= a_0 n^2 \\\\ a_0 &= \\frac{4\\pi\\varepsilon_0\\hbar^2}{m_e e^2} \\end{aligned}",
-    "descrizione": "Secondo il modello di Bohr, l’elettrone percorre orbite circolari quantizzate di raggio $r_n$.",
+    "descrizione": "Il raggio delle orbite permesse all'elettrone nell'atomo di idrogeno cresce con il quadrato del numero quantico principale.\n\nOgni orbita è ben definita e più ci si allontana dal nucleo, più le orbite sono distanti tra loro.",
     "variabili": [
-      { "simbolo": "$r_n$", "descrizione": "Raggio dell’orbita n", "unita": "m" },
-      { "simbolo": "$a_0$", "descrizione": "Raggio di Bohr", "unita": "m" },
-      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "-" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Permittività del vuoto", "unita": "F/m" },
-      { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" },
-      { "simbolo": "$m_e$", "descrizione": "Massa dell’elettrone", "unita": "kg" },
-      { "simbolo": "$e$", "descrizione": "Carica dell’elettrone", "unita": "C" }
+      { "simbolo": "r_n", "descrizione": "Raggio dell’orbita n", "unita": "m" },
+      { "simbolo": "a_0", "descrizione": "Raggio di Bohr", "unita": "m" },
+      { "simbolo": "n", "descrizione": "Numero quantico principale", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Permittività del vuoto", "unita": "\\frac{F}{m}" },
+      { "simbolo": "\\hbar", "descrizione": "Costante di Planck ridotta", "unita": "J \\cdot s" },
+      { "simbolo": "m_e", "descrizione": "Massa dell’elettrone", "unita": "kg" },
+      { "simbolo": "e", "descrizione": "Carica dell’elettrone", "unita": "C" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "L'orbita fondamentale dell'idrogeno ha raggio circa $$5{,}3 \\times 10^{-11}$$ m; la seconda orbita ha raggio quattro volte maggiore."
+      }
+    ],
     "link_correlati": ["QNT_010","QNT_012"],
     "parole_chiave": ["Bohr","raggio","idrogeno","orbita"],
     "data_creazione": "2025-07-15",
@@ -158,16 +199,21 @@
     "sottocategoria": "Atomo di Bohr",
     "titolo": "Livello Energetico n-esimo dell’Atomo di Idrogeno",
     "formula_latex": "E_n = -\\frac{m_e e^4}{8\\varepsilon_0^2 h^2}\\frac{1}{n^2} = -\\frac{13.6\\,\\mathrm{eV}}{n^2}",
-    "descrizione": "L’energia degli stati stazionari dell’atomo di idrogeno è quantizzata e inversamente proporzionale al quadrato di n.",
+    "descrizione": "L'energia degli stati stazionari dell'atomo di idrogeno è quantizzata e decresce con il quadrato del numero quantico principale.\n\nPiù alto è il livello, meno energia serve per liberare l'elettrone: i salti tra livelli spiegano le righe spettrali.",
     "variabili": [
-      { "simbolo": "$E_n$", "descrizione": "Energia del livello n", "unita": "J (o eV)" },
-      { "simbolo": "$m_e$", "descrizione": "Massa dell’elettrone", "unita": "kg" },
-      { "simbolo": "$e$", "descrizione": "Carica dell’elettrone", "unita": "C" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Permittività del vuoto", "unita": "F/m" },
-      { "simbolo": "$h$", "descrizione": "Costante di Planck", "unita": "J·s" },
-      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "-" }
+      { "simbolo": "E_n", "descrizione": "Energia del livello n", "unita": "J" },
+      { "simbolo": "m_e", "descrizione": "Massa dell’elettrone", "unita": "kg" },
+      { "simbolo": "e", "descrizione": "Carica dell’elettrone", "unita": "C" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Permittività del vuoto", "unita": "\\frac{F}{m}" },
+      { "simbolo": "h", "descrizione": "Costante di Planck", "unita": "J \\cdot s" },
+      { "simbolo": "n", "descrizione": "Numero quantico principale", "unita": "\\text{adimensionale}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Per portare l'elettrone dall'orbita fondamentale all'infinito servono $$13{,}6$$ eV: questa è l'energia di ionizzazione dell'idrogeno."
+      }
+    ],
     "link_correlati": ["QNT_009","QNT_016"],
     "parole_chiave": ["energia","idrogeno","Bohr","quantizzato"],
     "data_creazione": "2025-07-15",
@@ -179,13 +225,18 @@
     "sottocategoria": "Dualismo",
     "titolo": "Dualismo Onda-Particella",
     "formula_latex": "\\lambda = \\frac{h}{p}",
-    "descrizione": "Ogni particella dotata di quantità di moto p è associata a un’onda di lunghezza d’onda λ, secondo de Broglie.",
+    "descrizione": "A ogni particella dotata di quantità di moto è associata un'onda di lunghezza d'onda inversamente proporzionale alla quantità di moto.\n\nIl dualismo onda-particella spiega fenomeni come la diffrazione degli elettroni: anche la materia mostra proprietà ondulatorie.",
     "variabili": [
-      { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d’onda", "unita": "m" },
-      { "simbolo": "$h$", "descrizione": "Costante di Planck", "unita": "J·s" },
-      { "simbolo": "$p$", "descrizione": "Quantità di moto", "unita": "kg·m/s" }
+      { "simbolo": "\\lambda", "descrizione": "Lunghezza d’onda", "unita": "m" },
+      { "simbolo": "h", "descrizione": "Costante di Planck", "unita": "J \\cdot s" },
+      { "simbolo": "p", "descrizione": "Quantità di moto", "unita": "kg \\cdot m / s" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un fascio di elettroni può produrre figure di interferenza come la luce: la loro lunghezza d'onda è calcolata con la formula di de Broglie."
+      }
+    ],
     "link_correlati": [],
     "parole_chiave": ["de Broglie","onda","particella","lambda"],
     "data_creazione": "2025-07-15",
@@ -197,15 +248,20 @@
     "sottocategoria": "Atomo di Bohr",
     "titolo": "Quantizzazione delle Orbite di Bohr",
     "formula_latex": "m_e v_n r_n = n\\hbar",
-    "descrizione": "Bohr impose che il momento angolare orbitale sia un multiplo intero di ħ.",
+    "descrizione": "Il momento angolare dell'elettrone nell'atomo di idrogeno può assumere solo valori multipli interi di $$\\hbar$$.\n\nQuesta condizione seleziona solo alcune orbite possibili: non tutte le traiettorie sono permesse.",
     "variabili": [
-      { "simbolo": "$m_e$", "descrizione": "Massa dell’elettrone", "unita": "kg" },
-      { "simbolo": "$v_n$", "descrizione": "Velocità nell’orbita n", "unita": "m/s" },
-      { "simbolo": "$r_n$", "descrizione": "Raggio dell’orbita n", "unita": "m" },
-      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "-" },
-      { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" }
+      { "simbolo": "m_e", "descrizione": "Massa dell’elettrone", "unita": "kg" },
+      { "simbolo": "v_n", "descrizione": "Velocità nell’orbita n", "unita": "\\frac{m}{s}" },
+      { "simbolo": "r_n", "descrizione": "Raggio dell’orbita n", "unita": "m" },
+      { "simbolo": "n", "descrizione": "Numero quantico principale", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\hbar", "descrizione": "Costante di Planck ridotta", "unita": "J \\cdot s" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "L'elettrone non può ruotare a qualsiasi distanza dal nucleo: solo certe orbite sono permesse, come i gradini di una scala."
+      }
+    ],
     "link_correlati": ["QNT_008","QNT_009"],
     "parole_chiave": ["Bohr","quantizzazione","momento angolare"],
     "data_creazione": "2025-07-15",
@@ -217,14 +273,19 @@
     "sottocategoria": "Diffrazione",
     "titolo": "Legge di Bragg",
     "formula_latex": "n\\lambda = 2d\\sin\\theta",
-    "descrizione": "La diffrazione X da un reticolo cristallino avviene secondo questa relazione tra lunghezza d’onda, distanza interplanare d e angolo θ.",
+    "descrizione": "La diffrazione dei raggi X da un reticolo cristallino avviene solo per certi angoli che soddisfano questa relazione.\n\nLa legge di Bragg permette di determinare la struttura dei cristalli studiando le posizioni delle frange di diffrazione.",
     "variabili": [
-      { "simbolo": "$n$", "descrizione": "Ordine di diffrazione", "unita": "-" },
-      { "simbolo": "$\\lambda$", "descrizione": "Lunghezza d’onda", "unita": "m" },
-      { "simbolo": "$d$", "descrizione": "Distanza interplanare", "unita": "m" },
-      { "simbolo": "$\\theta$", "descrizione": "Angolo di diffrazione", "unita": "rad" }
+      { "simbolo": "n", "descrizione": "Ordine di diffrazione", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\lambda", "descrizione": "Lunghezza d’onda", "unita": "m" },
+      { "simbolo": "d", "descrizione": "Distanza interplanare", "unita": "m" },
+      { "simbolo": "\\theta", "descrizione": "Angolo di diffrazione", "unita": "rad" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "I raggi X riflessi da un cristallo producono massimi di intensità solo per certi angoli: misurandoli si può ricostruire la disposizione degli atomi."
+      }
+    ],
     "link_correlati": [],
     "parole_chiave": ["Bragg","diffrazione","cristallo"],
     "data_creazione": "2025-07-15",
@@ -236,14 +297,19 @@
     "sottocategoria": "Funzione d’Onda",
     "titolo": "Equazione di Schrödinger Dipendente dal Tempo",
     "formula_latex": "i\\hbar\\frac{\\partial}{\\partial t}\\Psi(\\mathbf{r},t) = \\hat H\\Psi(\\mathbf{r},t)",
-    "descrizione": "La funzione d’onda Ψ evolve nel tempo secondo l’operatore Hamiltoniano ˆH.",
+    "descrizione": "L'evoluzione temporale della funzione d'onda $$\\Psi$$ è determinata dall'operatore hamiltoniano $$\\hat H$$.\n\nL'equazione di Schrödinger permette di prevedere come cambia nel tempo la probabilità di trovare una particella in una certa posizione.",
     "variabili": [
-      { "simbolo": "$\\Psi(\\mathbf{r},t)$", "descrizione": "Funzione d’onda", "unita": "-" },
-      { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" },
-      { "simbolo": "$\\hat H$", "descrizione": "Operatore Hamiltoniano", "unita": "-" },
-      { "simbolo": "$i$", "descrizione": "Unità immaginaria", "unita": "-" }
+      { "simbolo": "\\Psi(\\mathbf{r},t)", "descrizione": "Funzione d’onda", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\hbar", "descrizione": "Costante di Planck ridotta", "unita": "J \\cdot s" },
+      { "simbolo": "\\hat H", "descrizione": "Operatore Hamiltoniano", "unita": "\\text{adimensionale}" },
+      { "simbolo": "i", "descrizione": "Unità immaginaria", "unita": "\\text{adimensionale}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "La funzione d'onda di un elettrone in una buca di potenziale evolve nel tempo oscillando tra diverse configurazioni di probabilità."
+      }
+    ],
     "link_correlati": [],
     "parole_chiave": ["Schrödinger","onda","quantistica","Hamiltoniano"],
     "data_creazione": "2025-07-15",
@@ -255,13 +321,18 @@
     "sottocategoria": "Principio di Indeterminazione",
     "titolo": "Principio di Indeterminazione di Heisenberg",
     "formula_latex": "\\Delta x\\,\\Delta p \\ge \\frac{\\hbar}{2}",
-    "descrizione": "Non è possibile misurare simultaneamente con precisione arbitraria la posizione x e la quantità di moto p di una particella.",
+    "descrizione": "L'incertezza sulla posizione e sulla quantità di moto di una particella non può essere ridotta a zero contemporaneamente.\n\nPiù si conosce la posizione di una particella, meno si può conoscere la sua quantità di moto, e viceversa: è un limite fondamentale della natura.",
     "variabili": [
-      { "simbolo": "$\\Delta x$", "descrizione": "Incertezza posizione", "unita": "m" },
-      { "simbolo": "$\\Delta p$", "descrizione": "Incertezza quantità di moto", "unita": "kg·m/s" },
-      { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" }
+      { "simbolo": "\\Delta x", "descrizione": "Incertezza posizione", "unita": "m" },
+      { "simbolo": "\\Delta p", "descrizione": "Incertezza quantità di moto", "unita": "kg \\cdot m / s" },
+      { "simbolo": "\\hbar", "descrizione": "Costante di Planck ridotta", "unita": "J \\cdot s" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se si cerca di localizzare un elettrone in uno spazio molto piccolo, la sua velocità diventa estremamente incerta: non si può mai conoscere tutto con precisione assoluta."
+      }
+    ],
     "link_correlati": [],
     "parole_chiave": ["Heisenberg","indeterminazione","x","p"],
     "data_creazione": "2025-07-15",
@@ -273,15 +344,20 @@
     "sottocategoria": "Atomo di Schrödinger",
     "titolo": "Livelli di Energia dell’Atomo di Idrogeno",
     "formula_latex": "E_n = -\\frac{\\mu e^4}{2(4\\pi\\varepsilon_0)^2\\hbar^2}\\frac{1}{n^2}",
-    "descrizione": "Dal trattamento quantistico tramite Schrödinger, i livelli energetici dell’idrogeno sono quantizzati secondo questa formula, con μ la massa ridotta.",
+    "descrizione": "I livelli energetici dell'atomo di idrogeno, calcolati con l'equazione di Schrödinger, sono quantizzati e dipendono dal numero quantico principale.\n\nOgni salto tra livelli corrisponde all'emissione o assorbimento di un fotone di energia ben precisa.",
     "variabili": [
-      { "simbolo": "$\\mu$", "descrizione": "Massa ridotta", "unita": "kg" },
-      { "simbolo": "$e$", "descrizione": "Carica dell’elettrone", "unita": "C" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Permittività del vuoto", "unita": "F/m" },
-      { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" },
-      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "-" }
+      { "simbolo": "\\mu", "descrizione": "Massa ridotta", "unita": "kg" },
+      { "simbolo": "e", "descrizione": "Carica dell’elettrone", "unita": "C" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Permittività del vuoto", "unita": "\\frac{F}{m}" },
+      { "simbolo": "\\hbar", "descrizione": "Costante di Planck ridotta", "unita": "J \\cdot s" },
+      { "simbolo": "n", "descrizione": "Numero quantico principale", "unita": "\\text{adimensionale}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Le righe spettrali dell'idrogeno osservate nelle stelle corrispondono esattamente alle differenze di energia tra questi livelli."
+      }
+    ],
     "link_correlati": ["QNT_010","QNT_017"],
     "parole_chiave": ["Schrödinger","idrogeno","livelli","quantistico"],
     "data_creazione": "2025-07-15",
@@ -293,16 +369,21 @@
     "sottocategoria": "Atomi Idrogenoidi",
     "titolo": "Livelli di Energia degli Atomi Idrogenoidi",
     "formula_latex": "E_n = -\\frac{Z^2\\mu e^4}{2(4\\pi\\varepsilon_0)^2\\hbar^2}\\frac{1}{n^2}",
-    "descrizione": "Gli atomi idrogenoidi (un solo elettrone, carica nucleare Ze) hanno livelli energetici analogo all’idrogeno, proporzionali a Z².",
+    "descrizione": "Gli atomi idrogenoidi, cioè con un solo elettrone, hanno livelli energetici simili a quelli dell'idrogeno ma scalati per $$Z^2$$.\n\nPiù alta è la carica nucleare, più i livelli sono profondi: l'elettrone è legato più fortemente al nucleo.",
     "variabili": [
-      { "simbolo": "$Z$", "descrizione": "Numero atomico", "unita": "-" },
-      { "simbolo": "$\\mu$", "descrizione": "Massa ridotta", "unita": "kg" },
-      { "simbolo": "$e$", "descrizione": "Carica dell’elettrone", "unita": "C" },
-      { "simbolo": "$\\varepsilon_0$", "descrizione": "Permittività del vuoto", "unita": "F/m" },
-      { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" },
-      { "simbolo": "$n$", "descrizione": "Numero quantico principale", "unita": "-" }
+      { "simbolo": "Z", "descrizione": "Numero atomico", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\mu", "descrizione": "Massa ridotta", "unita": "kg" },
+      { "simbolo": "e", "descrizione": "Carica dell’elettrone", "unita": "C" },
+      { "simbolo": "\\varepsilon_0", "descrizione": "Permittività del vuoto", "unita": "\\frac{F}{m}" },
+      { "simbolo": "\\hbar", "descrizione": "Costante di Planck ridotta", "unita": "J \\cdot s" },
+      { "simbolo": "n", "descrizione": "Numero quantico principale", "unita": "\\text{adimensionale}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Lo ione He$^+$ ha livelli energetici quattro volte più profondi di quelli dell'idrogeno: serve più energia per ionizzarlo."
+      }
+    ],
     "link_correlati": ["QNT_016"],
     "parole_chiave": ["atomi idrogenoidi","energia","Z²","quantizzato"],
     "data_creazione": "2025-07-15",
@@ -314,13 +395,18 @@
     "sottocategoria": "Momento Angolare",
     "titolo": "Momento Angolare Orbitale di un Elettrone Atomico",
     "formula_latex": "L = \\sqrt{l(l+1)}\\,\\hbar",
-    "descrizione": "Il modulo del momento angolare orbitale è quantizzato secondo il numero quantico azimutale l.",
+    "descrizione": "Il modulo del momento angolare orbitale di un elettrone è quantizzato e dipende dal numero quantico azimutale $$l$$.\n\nSolo alcuni valori di momento angolare sono permessi: ogni orbitale ha una sua 'quantità di rotazione' caratteristica.",
     "variabili": [
-      { "simbolo": "$L$", "descrizione": "Momento angolare orbitale", "unita": "J·s" },
-      { "simbolo": "$l$", "descrizione": "Numero quantico azimutale", "unita": "-" },
-      { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" }
+      { "simbolo": "L", "descrizione": "Momento angolare orbitale", "unita": "J \\cdot s" },
+      { "simbolo": "l", "descrizione": "Numero quantico azimutale", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\hbar", "descrizione": "Costante di Planck ridotta", "unita": "J \\cdot s" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un elettrone in un orbitale s ha $$l=0$$ e momento angolare nullo; in un orbitale p ha $$l=1$$ e momento angolare maggiore."
+      }
+    ],
     "link_correlati": ["QNT_019","QNT_020"],
     "parole_chiave": ["momento angolare","orbitale","quantizzato","l"],
     "data_creazione": "2025-07-15",
@@ -332,14 +418,19 @@
     "sottocategoria": "Momento Magnetico",
     "titolo": "Momento Magnetico Orbitale di un Elettrone Atomico",
     "formula_latex": "\\mu_l = -\\frac{e}{2m_e}L",
-    "descrizione": "Il momento magnetico orbitale associato al momento angolare L vale $μ_l$.",
+    "descrizione": "Il momento magnetico orbitale di un elettrone è proporzionale al suo momento angolare orbitale.\n\nUn elettrone che ruota intorno al nucleo genera un campo magnetico: il segno negativo indica che il momento magnetico è opposto al momento angolare.",
     "variabili": [
-      { "simbolo": "$\\mu_l$", "descrizione": "Momento magnetico orbitale", "unita": "J/T" },
-      { "simbolo": "$e$", "descrizione": "Carica dell’elettrone", "unita": "C" },
-      { "simbolo": "$m_e$", "descrizione": "Massa dell’elettrone", "unita": "kg" },
-      { "simbolo": "$L$", "descrizione": "Momento angolare orbitale", "unita": "J·s" }
+      { "simbolo": "\\mu_l", "descrizione": "Momento magnetico orbitale", "unita": "\\frac{J}{T}" },
+      { "simbolo": "e", "descrizione": "Carica dell’elettrone", "unita": "C" },
+      { "simbolo": "m_e", "descrizione": "Massa dell’elettrone", "unita": "kg" },
+      { "simbolo": "L", "descrizione": "Momento angolare orbitale", "unita": "J \\cdot s" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Il momento magnetico degli elettroni è responsabile delle proprietà magnetiche dei materiali come il ferro."
+      }
+    ],
     "link_correlati": ["QNT_018","QNT_020"],
     "parole_chiave": ["momento magnetico","orbitale","elettrone"],
     "data_creazione": "2025-07-15",
@@ -351,14 +442,19 @@
     "sottocategoria": "Effetto Zeeman",
     "titolo": "Effetto di un Campo Magnetico sull’Energia dell’Atomo",
     "formula_latex": "\\Delta E = \\mu_B m_l B",
-    "descrizione": "In presenza di un campo magnetico B, i livelli di energia si sdoppiano in base al numero quantico magnetico $m_l$.",
+    "descrizione": "In presenza di un campo magnetico, i livelli energetici degli elettroni si sdoppiano in base al numero quantico magnetico $$m_l$$.\n\nQuesto fenomeno, chiamato effetto Zeeman, spiega la suddivisione delle righe spettrali in presenza di un campo magnetico.",
     "variabili": [
-      { "simbolo": "$\\Delta E$", "descrizione": "Scostamento energetico", "unita": "J" },
-      { "simbolo": "$\\mu_B$", "descrizione": "Magnetone di Bohr", "unita": "J/T" },
-      { "simbolo": "$m_l$", "descrizione": "Numero quantico magnetico", "unita": "-" },
-      { "simbolo": "$B$", "descrizione": "Intensità del campo magnetico", "unita": "T" }
+      { "simbolo": "\\Delta E", "descrizione": "Scostamento energetico", "unita": "J" },
+      { "simbolo": "\\mu_B", "descrizione": "Magnetone di Bohr", "unita": "\\frac{J}{T}" },
+      { "simbolo": "m_l", "descrizione": "Numero quantico magnetico", "unita": "\\text{adimensionale}" },
+      { "simbolo": "B", "descrizione": "Intensità del campo magnetico", "unita": "T" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Le righe spettrali di una lampada a vapori di sodio si sdoppiano se la lampada è posta in un forte campo magnetico."
+      }
+    ],
     "link_correlati": ["QNT_018","QNT_019"],
     "parole_chiave": ["Zeeman","campo magnetico","sdoppiamento"],
     "data_creazione": "2025-07-15",
@@ -370,13 +466,18 @@
     "sottocategoria": "Spin Elettronico",
     "titolo": "Momento Angolare Intrinseco dell’Elettrone",
     "formula_latex": "\\begin{aligned} S &= \\sqrt{s(s+1)}\\,\\hbar \\\\ s &= \\tfrac{1}{2} \\end{aligned}",
-    "descrizione": "Lo spin è il momento angolare intrinseco dell’elettrone, quantizzato con numero quantico s=½.",
+    "descrizione": "Lo spin è il momento angolare intrinseco dell'elettrone, quantizzato con numero quantico $$s=\\frac{1}{2}$$.\n\nLo spin non è dovuto a un moto reale nello spazio, ma è una proprietà fondamentale di tutte le particelle elementari.",
     "variabili": [
-      { "simbolo": "$S$", "descrizione": "Momento angolare intrinseco", "unita": "J·s" },
-      { "simbolo": "$s$", "descrizione": "Numero quantico di spin", "unita": "-" },
-      { "simbolo": "$\\hbar$", "descrizione": "Costante di Planck ridotta", "unita": "J·s" }
+      { "simbolo": "S", "descrizione": "Momento angolare intrinseco", "unita": "J \\cdot s" },
+      { "simbolo": "s", "descrizione": "Numero quantico di spin", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\hbar", "descrizione": "Costante di Planck ridotta", "unita": "J \\cdot s" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "L'esistenza dello spin spiega la struttura fine degli spettri atomici e il comportamento degli elettroni nei campi magnetici."
+      }
+    ],
     "link_correlati": ["QNT_022"],
     "parole_chiave": ["spin","intrinseco","elettrone"],
     "data_creazione": "2025-07-15",
@@ -388,15 +489,20 @@
     "sottocategoria": "Momento Magnetico",
     "titolo": "Momento Magnetico Intrinseco dell’Elettrone",
     "formula_latex": "\\begin{aligned} \\mu_s &= -g_s\\frac{e}{2m_e}S \\\\ g_s &\\approx 2 \\end{aligned}",
-    "descrizione": "L’elettrone possiede un momento magnetico di spin proporzionale al suo momento angolare intrinseco S e al fattore giromagnetico $g_s$.",
+    "descrizione": "Il momento magnetico di spin dell'elettrone è proporzionale al suo momento angolare intrinseco e al fattore giromagnetico $$g_s$$.\n\nQuesto momento magnetico è responsabile di molti fenomeni magnetici nei materiali e negli atomi.",
     "variabili": [
-      { "simbolo": "$\\mu_s$", "descrizione": "Momento magnetico di spin", "unita": "J/T" },
-      { "simbolo": "$g_s$", "descrizione": "Fattore giromagnetico di spin", "unita": "-" },
-      { "simbolo": "$e$", "descrizione": "Carica dell’elettrone", "unita": "C" },
-      { "simbolo": "$m_e$", "descrizione": "Massa dell’elettrone", "unita": "kg" },
-      { "simbolo": "$S$", "descrizione": "Momento angolare intrinseco", "unita": "J·s" }
+      { "simbolo": "\\mu_s", "descrizione": "Momento magnetico di spin", "unita": "\\frac{J}{T}" },
+      { "simbolo": "g_s", "descrizione": "Fattore giromagnetico di spin", "unita": "\\text{adimensionale}" },
+      { "simbolo": "e", "descrizione": "Carica dell’elettrone", "unita": "C" },
+      { "simbolo": "m_e", "descrizione": "Massa dell’elettrone", "unita": "kg" },
+      { "simbolo": "S", "descrizione": "Momento angolare intrinseco", "unita": "J \\cdot s" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Il comportamento degli elettroni nei materiali ferromagnetici dipende proprio dall'allineamento dei loro momenti magnetici di spin."
+      }
+    ],
     "link_correlati": ["QNT_021"],
     "parole_chiave": ["spin","momento magnetico","g-factor"],
     "data_creazione": "2025-07-15",

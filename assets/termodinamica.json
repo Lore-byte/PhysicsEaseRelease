@@ -2,155 +2,155 @@
   {
     "id": "TER_001",
     "categoria": "Termodinamica",
-    "sottocategoria": "Principi della Termodinamica",
+    "sottocategoria": "Principi della termodinamica",
     "titolo": "Primo Principio della Termodinamica",
     "formula_latex": "\\Delta U = Q - W",
-    "descrizione": "Il primo principio della termodinamica, o principio di conservazione dell'energia per i sistemi termodinamici, afferma che la variazione dell'energia interna di un sistema ($\\Delta U$) è uguale alla differenza tra il calore $Q$ fornito al sistema e il lavoro $W$ compiuto dal sistema.",
+    "descrizione": "La variazione di energia interna di un sistema equivale al calore scambiato con l’ambiente meno il lavoro compiuto dal sistema stesso.\n\nSignifica che l’energia del sistema può cambiare solo trasferendo calore o compiendo lavoro: se assorbe calore aumenta la sua energia, se compie lavoro la sua energia diminuisce.",
     "variabili": [
-      { "simbolo": "$\\Delta U$", "descrizione": "Variazione di energia interna", "unita": "J" },
-      { "simbolo": "$Q$", "descrizione": "Calore scambiato con l'ambiente", "unita": "J" },
-      { "simbolo": "$W$", "descrizione": "Lavoro compiuto dal sistema", "unita": "J" }
+      { "simbolo": "\\Delta U", "descrizione": "Variazione di energia interna", "unita": "J" },
+      { "simbolo": "\\Delta Q", "descrizione": "Calore scambiato con l'ambiente", "unita": "J" },
+      { "simbolo": "\\Delta W", "descrizione": "Lavoro compiuto dal sistema", "unita": "J" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un sistema riceve $150 \\text{ J}$ di calore e compie un lavoro di $50 \\text{ J}$. La variazione di energia interna è $\\Delta U = 150 \\text{ J} - 50 \\text{ J} = 100 \\text{ J}$."
+        "testo": "In un motore a pistoni, il combustibile brucia fornendo calore; parte di quell’energia aumenta la temperatura del gas e parte viene usata per spingere il pistone, trasformandosi in lavoro meccanico."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["energia interna", "calore", "lavoro", "primo principio", "conservazione energia"],
     "data_creazione": "2025-06-02",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_002",
     "categoria": "Termodinamica",
     "sottocategoria": "Gas Ideali",
-    "titolo": "Equazione di Stato del Gas Perfetto",
+    "titolo": "Equazione di stato del gas perfetto",
     "formula_latex": "\\begin{aligned} P \\cdot V &= n \\cdot R \\cdot T \\\\ P \\cdot V &= N \\cdot k_B \\cdot T \\end{aligned}",
-    "descrizione": "Relazione che descrive il comportamento di un gas ideale, dove $P$ è la pressione, $V$ il volume, $n$ il numero di moli, $R$ la costante dei gas ideali e $T$ la temperatura assoluta. \nUn'altra forma dell'equazione di stato dei gas ideali, dove $N$ è il numero di molecole e $k_B$ è la costante di Boltzmann.",
+    "descrizione": "L’equazione di stato del gas perfetto collega pressione, volume e temperatura di un gas ideale, mettendo in relazione le grandezze macroscopiche con quelle microscopiche. La prima forma considera la quantità di sostanza in moli, la seconda il numero totale di particelle.\n\nUn gas perfetto occupa più spazio o esercita più pressione se viene riscaldato, e meno se raffreddato, in modo proporzionale. La legge descrive come il comportamento collettivo delle particelle di un gas dipenda da quanto esse si muovono (cioè dalla temperatura).",
     "variabili": [
-      { "simbolo": "$P$", "descrizione": "Pressione del gas", "unita": "Pa" },
-      { "simbolo": "$V$", "descrizione": "Volume del gas", "unita": "m³" },
-      { "simbolo": "$n$", "descrizione": "Numero di moli", "unita": "mol" },
-      { "simbolo": "$R$", "descrizione": "Costante dei gas ideali", "unita": "8.314 J/(mol·K)" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" },
-      { "simbolo": "$N$", "descrizione": "Numero di molecole", "unita": "" },
-      { "simbolo": "$k_B$", "descrizione": "Costante di Boltzmann ($1.38 \\cdot 10^{-23} \\text{ J/K}$)", "unita": "J/K" }
+      { "simbolo": "P", "descrizione": "Pressione del gas", "unita": "Pa" },
+      { "simbolo": "V", "descrizione": "Volume del gas", "unita": "m³" },
+      { "simbolo": "n", "descrizione": "Numero di moli", "unita": "mol" },
+      { "simbolo": "R", "descrizione": "Costante dei gas ideali", "unita": "8.314\\ \\frac{J}{mol\\cdot K}" },
+      { "simbolo": "T", "descrizione": "Temperatura assoluta", "unita": "K" },
+      { "simbolo": "N", "descrizione": "Numero di molecole", "unita": "\\text{adimensionale}" },
+      { "simbolo": "k_B", "descrizione": "Costante di Boltzmann ($1.38 \\cdot 10^{-23} \\text{ J/K}$)", "unita": "\\frac{J}{K}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "La pressione di $2 \\text{ mol}$ di un gas ideale in un volume di $0.05 \\text{ m}^3$ a $300 \\text{ K}$ è $P = (2 \\cdot 8.314 \\cdot 300) / 0.05 \\approx 99768 \\text{ Pa}$."
+        "testo": "Immagina un palloncino sigillato: se lo metti al sole, il gas al suo interno si scalda, quindi aumenta la pressione o il volume. Se invece lo raffreddi nel freezer, il palloncino si sgonfia. Questo avviene perché varia la temperatura e il gas 'risponde' per mantenere l'equilibrio tra le grandezze secondo l’equazione."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["gas ideali", "pressione", "volume", "temperatura", "moli", "costante gas"],
     "data_creazione": "2025-06-02",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_003",
     "categoria": "Termodinamica",
     "sottocategoria": "Calore",
-    "titolo": "Calore Specifico",
+    "titolo": "Calore specifico",
     "formula_latex": "Q = m \\cdot c \\cdot \\Delta T",
-    "descrizione": "Calore $Q$ necessario per cambiare la temperatura di una sostanza, dove $m$ è la massa, $c$ il calore specifico e $\\Delta T$ la variazione di temperatura.",
+    "descrizione": "Il calore specifico quantifica l’energia necessaria per cambiare la temperatura di una certa massa di sostanza senza cambiamenti di stato. La formula lega l’energia termica trasferita con la variazione di temperatura e la capacità della sostanza di assorbire calore.\n\nPiù è alto il calore specifico, più energia serve per riscaldare una sostanza. Alcuni materiali si scaldano subito (come i metalli), altri molto più lentamente (come l’acqua), anche ricevendo la stessa quantità di calore.",
     "variabili": [
-      { "simbolo": "$Q$", "descrizione": "Calore scambiato", "unita": "J" },
-      { "simbolo": "$m$", "descrizione": "Massa della sostanza", "unita": "kg" },
-      { "simbolo": "$c$", "descrizione": "Calore specifico della sostanza", "unita": "J/(kg·K)" },
-      { "simbolo": "$\\Delta T$", "descrizione": "Variazione di temperatura", "unita": "K" }
+      { "simbolo": "Q", "descrizione": "Calore scambiato", "unita": "J" },
+      { "simbolo": "m", "descrizione": "Massa della sostanza", "unita": "kg" },
+      { "simbolo": "c", "descrizione": "Calore specifico della sostanza", "unita": "\\frac{J}{kg\\cdot K}" },
+      { "simbolo": "\\Delta T", "descrizione": "Variazione di temperatura", "unita": "K" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Quanta energia è necessaria per riscaldare $2 \\text{ kg}$ di acqua ($c = 4186 \\text{ J/(kg}\\cdot\\text{K)}$) da $20\\text{°C}$ a $80\\text{°C}$? $\\Delta T = (80-20) \\text{ K} = 60 \\text{ K}$. $Q = 2 \\text{ kg} \\cdot 4186 \\text{ J/(kg}\\cdot\\text{K)} \\cdot 60 \\text{ K} = 502320 \\text{ J}$."
+        "testo": "Versando acqua e olio in due pentolini identici e riscaldandoli con la stessa fiamma, l’olio raggiunge prima l’ebollizione. Questo perché ha un calore specifico minore: serve meno energia per aumentare la sua temperatura."
       }
     ],
     "link_correlati": ["TER_001"],
     "parole_chiave": ["calore", "calore specifico", "temperatura", "massa", "energia termica"],
     "data_creazione": "2025-06-02",
-    "data_ultima_modifica": "2025-07-06"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_004",
     "categoria": "Termodinamica",
     "sottocategoria": "Entropia",
-    "titolo": "Variazione di Entropia (Reversibile)",
+    "titolo": "Variazione di entropia",
     "formula_latex": "\\Delta S = \\frac{Q_{rev}}{T}",
-    "descrizione": "La variazione di entropia ($\\Delta S$) di un sistema per un processo reversibile è definita come il rapporto tra il calore $Q_{rev}$ scambiato reversibilmente e la temperatura assoluta $T$ alla quale avviene lo scambio.",
+    "descrizione": "La variazione di entropia in un processo reversibile è data dal rapporto tra il calore assorbito o ceduto reversibilmente e la temperatura alla quale avviene lo scambio. L'entropia misura il grado di disordine o la distribuzione dell’energia in un sistema.\n\nSe un sistema assorbe calore in modo ordinato (reversibile), aumenta la sua entropia. A temperature più basse, lo stesso calore ha un effetto maggiore sul disordine, perché il sistema è più ‘sensibile’ a variazioni energetiche.",
     "variabili": [
-      { "simbolo": "$\\Delta S$", "descrizione": "Variazione di entropia", "unita": "J/K" },
-      { "simbolo": "$Q_{rev}$", "descrizione": "Calore scambiato reversibilmente", "unita": "J" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" }
+      { "simbolo": "\\Delta S", "descrizione": "Variazione di entropia", "unita": "\\frac{J}{K}" },
+      { "simbolo": "Q_{rev}", "descrizione": "Calore scambiato reversibilmente", "unita": "J" },
+      { "simbolo": "T", "descrizione": "Temperatura assoluta", "unita": "K" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un sistema assorbe $100 \\text{ J}$ di calore in modo reversibile a una temperatura costante di $298 \\text{ K}$ ($25\\text{°C}$). La variazione di entropia è $\\Delta S = 100 \\text{ J} / 298 \\text{ K} \\approx 0.336 \\text{ J/K}$."
+        "testo": "Sciogliere un cubetto di ghiaccio lentamente in un bicchiere d'acqua a temperatura ambiente è un processo quasi reversibile: il calore fornito fa fondere il ghiaccio, aumentando l’entropia del sistema, perché le molecole diventano più disordinate nel passaggio da solido a liquido."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["entropia", "disordine", "calore", "temperatura", "secondo principio", "reversibile"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_005",
     "categoria": "Termodinamica",
     "sottocategoria": "Gas Ideali",
-    "titolo": "Prima Legge di Gay-Lussac",
+    "titolo": "Prima legge di Gay-Lussac",
     "formula_latex": "\\begin{aligned} V = V_0 \\cdot (&1 + \\alpha \\cdot \\Delta T) \\\\ \\frac{V_1}{T_1} &= \\frac{V_2}{T_2} \\end{aligned}",
-    "descrizione": "Per una massa fissa di gas a pressione costante (**trasformazione isobara**), il volume $V$ è direttamente proporzionale alla temperatura assoluta $T$.",
+    "descrizione": "La prima legge di Gay-Lussac descrive la **dilatazione termica** di un gas mantenuto a pressione costante: il volume varia linearmente con la temperatura assoluta. Le due forme della legge rappresentano rispettivamente la variazione rispetto a una condizione iniziale e il confronto tra due stati diversi.\n\nUn gas si espande se si scalda e si contrae se si raffredda, a pressione costante. L’aumento di temperatura accelera le particelle, che spingono di più sulle pareti e quindi il gas occupa più spazio.",
     "variabili": [
-      { "simbolo": "$V$", "descrizione": "Volume a temperatura $T$", "unita": "m³" },
-      { "simbolo": "$V_0$", "descrizione": "Volume a temperatura di riferimento (solitamente 0 °C)", "unita": "m³" },
-      { "simbolo": "$\\alpha$", "descrizione": "Coefficiente di dilatazione volumica del gas ideale", "unita": "K⁻¹" },
-      { "simbolo": "$\\Delta T$", "descrizione": "Variazione di temperatura rispetto alla temperatura di riferimento", "unita": "K" },
-      { "simbolo": "$V_1$", "descrizione": "Volume iniziale", "unita": "m³" },
-      { "simbolo": "$T_1$", "descrizione": "Temperatura iniziale assoluta", "unita": "K" },
-      { "simbolo": "$V_2$", "descrizione": "Volume finale", "unita": "m³" },
-      { "simbolo": "$T_2$", "descrizione": "Temperatura finale assoluta", "unita": "K" }
+      { "simbolo": "V", "descrizione": "Volume a temperatura $T$", "unita": "m³" },
+      { "simbolo": "V_0", "descrizione": "Volume a temperatura di riferimento (solitamente 0 °C)", "unita": "m³" },
+      { "simbolo": "\\alpha", "descrizione": "Coefficiente di dilatazione volumica del gas ideale", "unita": "K^{-1}" },
+      { "simbolo": "\\Delta T", "descrizione": "Variazione di temperatura rispetto alla temperatura di riferimento", "unita": "K" },
+      { "simbolo": "V_1", "descrizione": "Volume iniziale", "unita": "m³" },
+      { "simbolo": "T_1", "descrizione": "Temperatura iniziale assoluta", "unita": "K" },
+      { "simbolo": "V_2", "descrizione": "Volume finale", "unita": "m³" },
+      { "simbolo": "T_2", "descrizione": "Temperatura finale assoluta", "unita": "K" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un gas ha un volume di $10 \\text{ L}$ a $273 \\text{ K}$. Quale sarà il suo volume a $300 \\text{ K}$ se la pressione è costante? \n\n$V_2 = V_1 \\cdot \\frac{T_2}{T_1} = 10 \\text{ L} \\cdot \\frac{300 \\text{ K}}{273 \\text{ K}} \\approx 10.99 \\text{ L}$."
+        "testo": "Un palloncino lasciato in macchina d’estate si gonfia anche se non viene aggiunto gas. L’aumento di temperatura fa aumentare il volume del gas al suo interno, perché la pressione esterna resta costante e il gas si espande secondo la legge."
       }
     ],
     "link_correlati": ["TER_002"],
     "parole_chiave": ["Gay-Lussac", "volume", "temperatura", "gas ideale", "isobara"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-21"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_006",
     "categoria": "Termodinamica",
     "sottocategoria": "Gas Ideali",
-    "titolo": "Seconda Legge di Gay-Lussac",
+    "titolo": "Seconda legge di Gay-Lussac",
     "formula_latex": "\\begin{aligned} P = P_0 \\cdot (&1 + \\alpha \\cdot \\Delta T) \\\\ \\frac{P_1}{T_1} &= \\frac{P_2}{T_2} \\end{aligned}",
-    "descrizione": "Per una massa fissa di gas a volume costante (**trasformazione isocora**), la pressione $P$ è direttamente proporzionale alla temperatura assoluta $T$.",
+    "descrizione": "La seconda legge di Gay-Lussac stabilisce che, a volume costante, la pressione di un gas è direttamente proporzionale alla temperatura assoluta. Le due forme indicano la variazione della pressione rispetto a una condizione iniziale o tra due stati diversi.\n\nSe il gas viene riscaldato senza possibilità di espandersi, la pressione aumenta perché le particelle si muovono più velocemente e urtano più intensamente contro le pareti.",
     "variabili": [
-      { "simbolo": "$P$", "descrizione": "Pressione a temperatura $T$", "unita": "Pa" },
-      { "simbolo": "$P_0$", "descrizione": "Pressione a temperatura di riferimento (solitamente 0 °C)", "unita": "Pa" },
-      { "simbolo": "$\\alpha$", "descrizione": "Coefficiente di dilatazione del gas ideale", "unita": "K⁻¹" },
-      { "simbolo": "$\\Delta T$", "descrizione": "Variazione di temperatura rispetto alla temperatura di riferimento", "unita": "K" },
-      { "simbolo": "$P_1$", "descrizione": "Pressione iniziale", "unita": "Pa" },
-      { "simbolo": "$T_1$", "descrizione": "Temperatura iniziale assoluta", "unita": "K" },
-      { "simbolo": "$P_2$", "descrizione": "Pressione finale", "unita": "Pa" },
-      { "simbolo": "$T_2$", "descrizione": "Temperatura finale assoluta", "unita": "K" }
+      { "simbolo": "P", "descrizione": "Pressione a temperatura $T$", "unita": "Pa" },
+      { "simbolo": "P_0", "descrizione": "Pressione a temperatura di riferimento (solitamente 0 °C)", "unita": "Pa" },
+      { "simbolo": "\\alpha", "descrizione": "Coefficiente di dilatazione del gas ideale", "unita": "K^{-1}" },
+      { "simbolo": "\\Delta T", "descrizione": "Variazione di temperatura rispetto alla temperatura di riferimento", "unita": "K" },
+      { "simbolo": "P_1", "descrizione": "Pressione iniziale", "unita": "Pa" },
+      { "simbolo": "T_1", "descrizione": "Temperatura iniziale assoluta", "unita": "K" },
+      { "simbolo": "P_2", "descrizione": "Pressione finale", "unita": "Pa" },
+      { "simbolo": "T_2", "descrizione": "Temperatura finale assoluta", "unita": "K" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un gas ha una pressione di $10^5 \\text{ Pa}$ a $273 \\text{ K}$. Quale sarà la sua pressione a $350 \\text{ K}$ se il volume è costante?\n\n$P_2 = P_1 \\cdot \\frac{T_2}{T_1} = 10^5 \\text{ Pa} \\cdot \\frac{350 \\text{ K}}{273 \\text{ K}} \\approx 1.28 \\cdot 10^5 \\text{ Pa}$."
+        "testo": "Una bomboletta spray lasciata al sole può diventare pericolosa: la temperatura crescente aumenta la pressione all’interno, pur senza variazione di volume, e se supera un certo limite può causare la rottura del contenitore."
       }
     ],
     "link_correlati": ["TER_002"],
     "parole_chiave": ["Gay-Lussac", "pressione", "temperatura", "gas ideale", "isocora"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-21"
+    "data_ultima_modifica": "2025-07-30"
   },
 
   {
@@ -159,119 +159,119 @@
     "sottocategoria": "Gas Ideali",
     "titolo": "Legge di Boyle",
     "formula_latex": "P_1 \\cdot V_1 = P_2 \\cdot V_2",
-    "descrizione": "Per una massa fissa di gas a temperatura costante (**trasformazione isoterma**), pressione $P$ e volume $V$ sono inversamente proporzionali.",
+    "descrizione": "La legge di Boyle afferma che, a temperatura costante, la pressione di un gas è inversamente proporzionale al suo volume. Se uno aumenta, l’altro diminuisce in modo che il prodotto tra pressione e volume resti costante.\n\nComprimere un gas riduce il suo volume e aumenta la pressione, perché le particelle hanno meno spazio e urtano più spesso contro le pareti.",
     "variabili": [
-      { "simbolo": "$P_1$", "descrizione": "Pressione iniziale", "unita": "Pa" },
-      { "simbolo": "$V_1$", "descrizione": "Volume iniziale", "unita": "m³" },
-      { "simbolo": "$P_2$", "descrizione": "Pressione finale", "unita": "Pa" },
-      { "simbolo": "$V_2$", "descrizione": "Volume finale", "unita": "m³" }
+      { "simbolo": "P_1", "descrizione": "Pressione iniziale", "unita": "Pa" },
+      { "simbolo": "V_1", "descrizione": "Volume iniziale", "unita": "m³" },
+      { "simbolo": "P_2", "descrizione": "Pressione finale", "unita": "Pa" },
+      { "simbolo": "V_2", "descrizione": "Volume finale", "unita": "m³" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un gas ha una pressione di $2 \\cdot 10^5 \\text{ Pa}$ e un volume di $0.5 \\text{ m}^3$. Se la pressione viene ridotta a $10^5 \\text{ Pa}$ a temperatura costante, qual è il nuovo volume? $V_2 = P_1 \\cdot V_1 / P_2 = (2 \\cdot 10^5 \\text{ Pa} \\cdot 0.5 \\text{ m}^3) / 10^5 \\text{ Pa} = 1 \\text{ m}^3$."
+        "testo": "Quando si preme uno stantuffo in una siringa tappata, si riduce il volume interno: la resistenza che si sente è l’aumento di pressione del gas che si oppone alla compressione, proprio come descritto dalla legge."
       }
     ],
     "link_correlati": ["TER_002"],
     "parole_chiave": ["Boyle", "pressione", "volume", "gas ideale", "isoterma"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_009",
     "categoria": "Termodinamica",
     "sottocategoria": "Teoria Cinetica dei Gas",
-    "titolo": "Energia Cinetica Media di Traslazione di una Molecola",
+    "titolo": "Energia cinetica media di traslazione",
     "formula_latex": "E_k = \\frac{3}{2} k_B T",
-    "descrizione": "L'energia cinetica media di traslazione $E_k$ di una molecola di un gas ideale è direttamente proporzionale alla temperatura assoluta $T$ del gas.",
+    "descrizione": "L’energia cinetica media di traslazione di una particella in un gas ideale dipende solo dalla temperatura assoluta. La formula mostra che a temperatura più alta corrisponde un maggiore movimento delle particelle.\n\nScaldare un gas significa far muovere più velocemente le sue particelle: la temperatura è, in pratica, una misura dell’energia cinetica media delle particelle che lo compongono.",
     "variabili": [
-      { "simbolo": "$E_k$", "descrizione": "Energia cinetica media di traslazione", "unita": "J" },
-      { "simbolo": "$k_B$", "descrizione": "Costante di Boltzmann", "unita": "1.38 • 10⁻²³ J/K J/K" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" }
+      { "simbolo": "E_k", "descrizione": "Energia cinetica media di traslazione", "unita": "J" },
+      { "simbolo": "k_B", "descrizione": "Costante di Boltzmann", "unita": "\\frac{J}{K}" },
+      { "simbolo": "T", "descrizione": "Temperatura assoluta", "unita": "K" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "L'energia cinetica media di traslazione di una molecola di gas a $300 \\text{ K}$ è $E_k = \\frac{3}{2} \\cdot 1.38 \\cdot 10^{-23} \\text{ J/K} \\cdot 300 \\text{ K} \\approx 6.21 \\cdot 10^{-21} \\text{ J}$."
+        "testo": "In una giornata calda, le molecole dell’aria si muovono più rapidamente rispetto a una giornata fredda. Questo maggior movimento si traduce in più urti contro le pareti e quindi in effetti visibili come l’aumento della pressione in una gomma d’auto."
       }
     ],
     "link_correlati": ["TER_008"],
     "parole_chiave": ["energia cinetica", "molecola", "temperatura", "gas ideale", "traslazione"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_010",
     "categoria": "Termodinamica",
     "sottocategoria": "Teoria Cinetica dei Gas",
-    "titolo": "Velocità Quadratica Media",
+    "titolo": "Velocità quadratica media",
     "formula_latex": "\\left\\langle v \\right\\rangle = \\sqrt{ \\frac{3k_B T}{m} }",
-    "descrizione": "La velocità quadratica media $\\left\\langle v \\right\\rangle$ delle molecole di un gas, dove $m$ è la massa di una singola molecola.",
+    "descrizione": "La velocità quadratica media rappresenta il valore medio delle velocità molecolari in un gas ideale, considerando l’energia cinetica media. Dipende dalla temperatura e dalla massa delle singole molecole: a parità di temperatura, le molecole più leggere si muovono più velocemente.\n\nUn gas caldo ha molecole più veloci. Inoltre, a parità di temperatura, un gas formato da molecole leggere (come l’idrogeno) ha velocità maggiori rispetto a uno con molecole pesanti (come l’ossigeno).",
     "variabili": [
-      { "simbolo": "$\\left\\langle v \\right\\rangle$", "descrizione": "Velocità quadratica media", "unita": "m/s" },
-      { "simbolo": "$k_B$", "descrizione": "Costante di Boltzmann ($1.38 \\cdot 10^{-23} \\text{ J/K}$)", "unita": "J/K" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" },
-      { "simbolo": "$m$", "descrizione": "Massa di una singola molecola", "unita": "kg" }
+      { "simbolo": "\\left\\langle v \\right\\rangle", "descrizione": "Velocità quadratica media", "unita": "\\frac{m}{s}" },
+      { "simbolo": "k_B", "descrizione": "Costante di Boltzmann ($1.38 \\cdot 10^{-23} \\text{ J/K}$)", "unita": "\\frac{J}{K}" },
+      { "simbolo": "T", "descrizione": "Temperatura assoluta", "unita": "K" },
+      { "simbolo": "m", "descrizione": "Massa di una singola molecola", "unita": "kg" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcola la velocità quadratica media delle molecole di ossigeno ($m = 5.31 \\cdot 10^{-26} \\text{ kg}$) a $300 \\text{ K}$. $\\left\\langle v \\right\\rangle = \\sqrt{\\frac{3 \\cdot 1.38 \\cdot 10^{-23} \\text{ J/K} \\cdot 300 \\text{ K}}{5.31 \\cdot 10^{-26} \\text{ kg}}} \\approx 483 \\text{ m/s}$."
+        "testo": "L’elio fuoriesce dai palloncini più rapidamente dell’aria: le sue molecole, essendo più leggere, si muovono più velocemente e attraversano più facilmente i pori del materiale, anche se la temperatura è la stessa."
       }
     ],
     "link_correlati": ["TER_009"],
     "parole_chiave": ["velocità", "molecole", "temperatura", "gas", "RMS"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_011",
     "categoria": "Termodinamica",
     "sottocategoria": "Teoria Cinetica dei Gas",
-    "titolo": "Pressione di un Gas Perfetto (Teoria Cinetica)",
+    "titolo": "Pressione di un gas perfetto",
     "formula_latex": "P = \\frac{1}{3} \\frac{N}{V} m \\left\\langle v \\right\\rangle ^2",
-    "descrizione": "Espressione della pressione $P$ di un gas perfetto derivata dalla teoria cinetica, dove $N$ è il numero di molecole, $V$ il volume, $m$ la massa di una molecola e $\\left\\langle v \\right\\rangle ^2$ il quadrato medio della velocità delle molecole. \nQuesta formula mostra come la pressione $P$ sia legata al numero di collisioni delle molecole con le pareti e alla loro energia cinetica.",
+    "descrizione": "La pressione esercitata da un gas perfetto su una parete è proporzionale all’energia cinetica media delle particelle e alla loro densità numerica. Deriva dal modello microscopico che descrive gli urti delle particelle contro le pareti del contenitore.\n\nPiù particelle ci sono in un certo volume, e più velocemente si muovono, maggiore sarà la pressione esercitata: la pressione nasce dagli urti continui e caotici delle particelle contro le pareti del recipiente.",
     "variabili": [
-      { "simbolo": "$P$", "descrizione": "Pressione del gas", "unita": "Pa" },
-      { "simbolo": "$N$", "descrizione": "Numero di molecole", "unita": "" },
-      { "simbolo": "$V$", "descrizione": "Volume del gas", "unita": "m³" },
-      { "simbolo": "$m$", "descrizione": "Massa di una singola molecola", "unita": "kg" },
-      { "simbolo": "$\\left\\langle v \\right\\rangle ^2$", "descrizione": "Quadrato medio della velocità delle molecole", "unita": "m²/s²" }
+      { "simbolo": "P", "descrizione": "Pressione del gas", "unita": "Pa" },
+      { "simbolo": "N", "descrizione": "Numero di molecole", "unita": "\\text{adimensionale}" },
+      { "simbolo": "V", "descrizione": "Volume del gas", "unita": "m³" },
+      { "simbolo": "m", "descrizione": "Massa di una singola molecola", "unita": "kg" },
+      { "simbolo": "\\left\\langle v \\right\\rangle ^2", "descrizione": "Quadrato medio della velocità delle molecole", "unita": "\\frac{m^2}{s^2}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un gas contiene 1·10²⁵ molecole di massa 4·10⁻²⁶ kg in un volume di 1 m³. Se il quadrato medio della velocità è 3·10⁴ m²/s², la pressione è P = (1/3)·(1·10²⁵/1)·4·10⁻²⁶·3·10⁴ ≈ 4·10³ Pa."
+        "testo": "Se si comprime un gas in un volume più piccolo senza cambiarne l’energia (cioè senza riscaldarlo), le particelle urtano le pareti più spesso perché sono più concentrate, e la pressione aumenta anche se la velocità resta invariata."
       }
     ],
     "link_correlati": ["TER_008", "TER_010"],
     "parole_chiave": ["pressione", "gas perfetto", "teoria cinetica", "molecole", "velocità"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_012",
     "categoria": "Termodinamica",
     "sottocategoria": "Proprietà dei Materiali",
-    "titolo": "Volume Specifico",
+    "titolo": "Volume specifico",
     "formula_latex": "v = \\frac{V}{m} = \\frac{1}{\\rho}",
-    "descrizione": "Il volume specifico $v$ è il rapporto tra il volume $V$ e la massa $m$ di una sostanza, ed è l'inverso della densità $\\rho$.",
+    "descrizione": "Il volume specifico rappresenta lo spazio occupato da una singola unità di massa di una sostanza. È il reciproco della densità e permette di descrivere le proprietà dei materiali in modo indipendente dalla loro quantità complessiva.\n\nPiù densa è una sostanza, meno volume occupa per ogni chilo. In altre parole, il volume specifico dice quanto spazio ‘occupa’ un’unità di massa: utile per confrontare materiali diversi o per calcoli termodinamici.",
     "variabili": [
-      { "simbolo": "$v$", "descrizione": "Volume specifico", "unita": "m³/kg" },
-      { "simbolo": "$V$", "descrizione": "Volume della sostanza", "unita": "m³" },
-      { "simbolo": "$m$", "descrizione": "Massa della sostanza", "unita": "kg" },
-      { "simbolo": "$\\rho$", "descrizione": "Densità della sostanza", "unita": "kg/m³" }
+      { "simbolo": "v", "descrizione": "Volume specifico", "unita": "\\frac{m^3}{kg}" },
+      { "simbolo": "V", "descrizione": "Volume della sostanza", "unita": "m³" },
+      { "simbolo": "m", "descrizione": "Massa della sostanza", "unita": "kg" },
+      { "simbolo": "\\rho", "descrizione": "Densità della sostanza", "unita": "\\frac{kg}{m^3}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se $2 \\text{ kg}$ di una sostanza occupano un volume di $0.002 \\text{ m}^3$, il suo volume specifico è $v = 0.002 \\text{ m}^3 / 2 \\text{ kg} = 0.001 \\text{ m}^3/\\text{kg}$."
+        "testo": "L’aria ha un volume specifico molto maggiore dell’acqua: a parità di massa, occupa molto più spazio. Per questo un pallone pieno d’aria è molto più grande di un bicchiere d’acqua pur contenendo meno massa."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["volume specifico", "densità", "volume", "massa"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_013",
@@ -279,177 +279,182 @@
     "sottocategoria": "Gas Reali",
     "titolo": "Equazione di van der Waals",
     "formula_latex": "\\left(P + \\frac{a n^2}{V^2}\\right)(V - nb) = nRT",
-    "descrizione": "Equazione di stato che descrive il comportamento dei gas reali, considerando le forze intermolecolari (parametro $a$) e il volume finito delle molecole (parametro $b$). \nL'equazione di van der Waals viene usata per descrivere i gas a pressioni elevate e basse temperature, dove i gas ideali non sono più accurati.",
+    "descrizione": "L’equazione di van der Waals corregge l’equazione dei gas perfetti tenendo conto del volume effettivo occupato dalle molecole e delle forze attrattive tra di esse. È una descrizione più realistica del comportamento dei gas reali, soprattutto ad alte pressioni o basse temperature.\n\nNei gas reali, le particelle occupano spazio e si attraggono tra loro: queste due caratteristiche fanno sì che la pressione effettiva sia minore e il volume disponibile sia ridotto rispetto a quanto previsto dal modello ideale.",
     "variabili": [
-      { "simbolo": "$P$", "descrizione": "Pressione del gas", "unita": "Pa" },
-      { "simbolo": "$V$", "descrizione": "Volume del gas", "unita": "m³" },
-      { "simbolo": "$n$", "descrizione": "Numero di moli", "unita": "mol" },
-      { "simbolo": "$R$", "descrizione": "Costante dei gas ideali", "unita": "J/(mol·K)" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" },
-      { "simbolo": "$a$", "descrizione": "Parametro di attrazione intermolecolare", "unita": "Pa·m⁶/mol²" },
-      { "simbolo": "$b$", "descrizione": "Parametro di volume escluso", "unita": "m³/mol" }
+      { "simbolo": "P", "descrizione": "Pressione del gas", "unita": "Pa" },
+      { "simbolo": "V", "descrizione": "Volume del gas", "unita": "m³" },
+      { "simbolo": "n", "descrizione": "Numero di moli", "unita": "mol" },
+      { "simbolo": "R", "descrizione": "Costante dei gas ideali", "unita": "\\frac{J}{mol\\cdot K}" },
+      { "simbolo": "T", "descrizione": "Temperatura assoluta", "unita": "K" },
+      { "simbolo": "a", "descrizione": "Parametro di attrazione intermolecolare", "unita": "\\frac{Pa\\cdot m^6}{mol^2}" },
+      { "simbolo": "b", "descrizione": "Parametro di volume escluso", "unita": "\\frac{m^3}{mol}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Supponiamo 1 mole di gas a temperatura ambiente ($T = 300,\\mathrm{K}$), con $a = 0{,}9,\\mathrm{atm \\cdot L^2/mol^2}$ e $b = 0{,}1,\\mathrm{L/mol}$. In un volume di $1,\\mathrm{L}$, la pressione calcolata con van der Waals risulta sensibilmente diversa rispetto a quella ottenuta con $PV = nRT$, proprio per effetto delle forze e del volume molecolare, evidenziando come la correzione diventi importante quando il gas è compresso."
+      }
+    ],
     "link_correlati": ["TER_002"],
     "parole_chiave": ["van der Waals", "gas reali", "equazione di stato", "forze intermolecolari"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_014",
     "categoria": "Termodinamica",
     "sottocategoria": "Umidità",
-    "titolo": "Umidità Relativa dell'Aria",
-    "formula_latex": "UR = \\frac{P_v}{P_{sat}} \\times 100\\%",
-    "descrizione": "L'umidità relativa (UR) è il rapporto tra la pressione parziale del vapore acqueo $P_v$ nell'aria e la pressione di saturazione del vapore $P_{sat}$ alla stessa temperatura, espressa in percentuale.",
+    "titolo": "Umidità relativa dell'aria",
+    "formula_latex": "H_r = \\frac{p_{H_2O}}{p_{vs}}",
+    "descrizione": "L’umidità relativa esprime in percentuale il rapporto tra la pressione parziale del vapore acqueo presente nell’aria e la pressione di saturazione a quella temperatura. Indica quanto l’aria è vicina al punto in cui il vapore inizia a condensare.\n\nSe l’umidità relativa è bassa, l’aria può ancora assorbire vapore acqueo; se è vicina al 100%, è satura e il vapore può iniziare a condensare, come accade nella formazione della nebbia o della rugiada.",
     "variabili": [
-      { "simbolo": "$UR$", "descrizione": "Umidità relativa", "unita": "%" },
-      { "simbolo": "$P_v$", "descrizione": "Pressione parziale del vapore acqueo", "unita": "Pa" },
-      { "simbolo": "$P_{sat}$", "descrizione": "Pressione di saturazione del vapore acqueo", "unita": "Pa" }
+      { "simbolo": "H_r", "descrizione": "Umidità relativa", "unita": "\\%" },
+      { "simbolo": "p_{H_2O}", "descrizione": "Pressione del vapore acqueo", "unita": "Pa" },
+      { "simbolo": "p_{vs}", "descrizione": "Pressione di saturazione del vapore acqueo", "unita": "Pa" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se la pressione parziale del vapore acqueo è $1000 \\text{ Pa}$ e la pressione di saturazione a quella temperatura è $2000 \\text{ Pa}$, l'umidità relativa è $UR = (1000 \\text{ Pa} / 2000 \\text{ Pa}) \\times 100\\%$."
+        "testo": "Quando l’umidità relativa è alta, il sudore evapora più lentamente perché l’aria è quasi satura di vapore. Per questo le giornate afose sembrano più calde: il corpo non riesce a raffreddarsi in modo efficace."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["umidità relativa", "vapore acqueo", "pressione di saturazione", "aria"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_015",
     "categoria": "Termodinamica",
-    "sottocategoria": "Trasferimento di Calore",
-    "titolo": "Legge di Fourier (Conduzione del Calore)",
+    "sottocategoria": "Trasferimento di calore",
+    "titolo": "Legge di fourier",
     "formula_latex": "Q = -k A \\frac{\\Delta T}{\\Delta x} \\Delta t",
-    "descrizione": "La legge di Fourier descrive la velocità di trasferimento del calore $Q$ per conduzione attraverso un materiale.",
+    "descrizione": "La legge di Fourier descrive il trasferimento di calore per conduzione: il calore fluisce attraverso un materiale da una zona a temperatura più alta verso una a temperatura più bassa, in modo proporzionale alla superficie, alla differenza di temperatura e al tempo.\n\nIl calore si muove spontaneamente dalle zone calde a quelle fredde. La velocità con cui questo avviene dipende da quanto è buona la conduzione del materiale e da quanto è ripida la variazione di temperatura nello spazio.",
     "variabili": [
-      { "simbolo": "$Q$", "descrizione": "Flusso di calore", "unita": "W" },
-      { "simbolo": "$k$", "descrizione": "Conduttività termica del materiale", "unita": "W/(m·K)" },
-      { "simbolo": "$A$", "descrizione": "Area di trasferimento del calore", "unita": "m²" },
-      { "simbolo": "$\\Delta T$", "descrizione": "Differenza di temperatura tra le superfici", "unita": "K" },
-      { "simbolo": "$\\Delta x$", "descrizione": "Spessore del materiale", "unita": "m" },
-      { "simbolo": "$\\Delta t$", "descrizione": "Intervallo di tempo", "unita": "s" }
+      { "simbolo": "Q", "descrizione": "Flusso di calore", "unita": "W" },
+      { "simbolo": "k", "descrizione": "Conduttività termica del materiale", "unita": "\\frac{W}{m\\cdot K}" },
+      { "simbolo": "A", "descrizione": "Area di trasferimento del calore", "unita": "m^2" },
+      { "simbolo": "\\Delta T", "descrizione": "Differenza di temperatura tra le superfici", "unita": "K" },
+      { "simbolo": "\\Delta x", "descrizione": "Spessore del materiale", "unita": "m" },
+      { "simbolo": "\\Delta t", "descrizione": "Intervallo di tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Questa legge può essere usata per calcolare la dispersione di calore $Q$ attraverso una parete in un edificio."
+        "testo": "Un cucchiaio di metallo lasciato in una tazza di tè caldo si scalda anche all’estremità che sporge fuori: il calore si è trasmesso per conduzione lungo il cucchiaio secondo la legge di Fourier, più velocemente che in un cucchiaio di legno."
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["conduzione", "calore", "Fourier", "conduttività termica", "trasferimento di calore"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_016",
     "categoria": "Termodinamica",
-    "sottocategoria": "Trasferimento di Calore",
-    "titolo": "Legge di Stefan-Boltzmann (Irraggiamento)",
+    "sottocategoria": "Trasferimento di calore",
+    "titolo": "Legge di Stefan-Boltzmann",
     "formula_latex": "P = \\varepsilon \\sigma A T^4",
-    "descrizione": "La legge di Stefan-Boltzmann descrive la potenza totale $P$ irradiata da un corpo per unità di area. Per un corpo nero $\\varepsilon = 1$",
+    "descrizione": "La legge di Stefan-Boltzmann quantifica la potenza irradiata da un corpo caldo sotto forma di radiazione elettromagnetica. L’energia emessa aumenta rapidamente con la temperatura e dipende dalla superficie e dalla capacità del corpo di emettere radiazione.\n\nUn corpo più caldo emette molto più calore rispetto a uno solo leggermente meno caldo. Anche piccole variazioni di temperatura producono grandi variazioni nella potenza irradiata.",
     "variabili": [
-      { "simbolo": "$P$", "descrizione": "Potenza irradiata", "unita": "W" },
-      { "simbolo": "$\\varepsilon$", "descrizione": "Emissività", "unita": "" },
-      { "simbolo": "$\\sigma$", "descrizione": "Costante di Stefan-Boltzmann", "unita": "W/(m²·K⁴)" },
-      { "simbolo": "$A$", "descrizione": "Area della superficie", "unita": "m²" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta del corpo", "unita": "K" }
+      { "simbolo": "P", "descrizione": "Potenza irradiata", "unita": "W" },
+      { "simbolo": "\\varepsilon", "descrizione": "Emissività", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\sigma", "descrizione": "Costante di Stefan-Boltzmann", "unita": "\\frac{W}{m^2\\cdot K^4}" },
+      { "simbolo": "A", "descrizione": "Area della superficie", "unita": "m^2" },
+      { "simbolo": "T", "descrizione": "Temperatura assoluta del corpo", "unita": "K" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Più un oggetto è caldo, molta più energia irradia. Non è un rapporto semplice, diretto, ma è un rapporto molto potente. Se raddoppi la temperatura di un oggetto, la sua potenza irradiata non raddoppia, ma aumenta di ben sedici volte"
+        "testo": "Un pezzo di metallo incandescente emette molta più energia di uno appena arrossato, pur sembrando solo un po’ più caldo. Questo spiega perché le stelle, a temperature altissime, brillano con intensità enormi anche se sono molto lontane"
       }
     ],
     "link_correlati": [],
     "parole_chiave": ["Stefan-Boltzmann", "irraggiamento", "calore", "corpo nero", "temperatura"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_017",
     "categoria": "Termodinamica",
     "sottocategoria": "Gas Perfetti",
-    "titolo": "Energia Interna di un Gas Perfetto",
+    "titolo": "Energia interna di un gas perfetto",
     "formula_latex": "U = \\frac{l}{2} n R T",
-    "descrizione": "Per una molecola monoatomica $l=3$, per una molecola biatomica $l=5$, ...",
+    "descrizione": "L’energia interna di un gas perfetto dipende solo dalla temperatura assoluta e dal numero di gradi di libertà $l$ delle molecole. Nei gas ideali, tutta l’energia interna è energia cinetica microscopica dovuta al movimento delle particelle.\n\nAumentare la temperatura di un gas significa far aumentare l’energia del suo moto molecolare. L’energia interna cresce linearmente con la temperatura e cambia anche in base al tipo di particelle (monoatomiche, biatomiche, ecc.).",
     "variabili": [
-      { "simbolo": "$U$", "descrizione": "Energia interna", "unita": "J" },
-      { "simbolo": "$l$", "descrizione": "Numero di gradi di libertà", "unita": "" },
-      { "simbolo": "$n$", "descrizione": "Numero di moli", "unita": "mol" },
-      { "simbolo": "$R$", "descrizione": "Costante dei gas ideali ($8.314 \\text{ J/(mol}\\cdot\\text{K)}$)", "unita": "J/(mol·K)" },
-      { "simbolo": "$T$", "descrizione": "Temperatura assoluta", "unita": "K" }
+      { "simbolo": "U", "descrizione": "Energia interna", "unita": "J" },
+      { "simbolo": "l", "descrizione": "Numero di gradi di libertà", "unita": "\\text{adimensionale}" },
+      { "simbolo": "n", "descrizione": "Numero di moli", "unita": "mol" },
+      { "simbolo": "R", "descrizione": "Costante dei gas ideali ($8.314 \\text{ J/(mol}\\cdot\\text{K)}$)", "unita": "\\frac{J}{mol\\cdot K}" },
+      { "simbolo": "T", "descrizione": "Temperatura assoluta", "unita": "K" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "L'energia interna di $1 \\text{ mol}$ di un gas perfetto monoatomico a $300 \\text{ K}$ è $U = \\frac{3}{2} \\cdot 1 \\text{ mol} \\cdot 8.314 \\text{ J/(mol}\\cdot\\text{K)} \\cdot 300 \\text{ K} \\approx 3741.3 \\text{ J}$."
+        "testo": "Un gas monoatomico ($l = 3$) contiene meno energia interna, a parità di temperatura, di un gas biatomico ($l = 5$) perché ha meno modi per immagazzinare energia. Questo spiega perché servono più joule per scaldare un gas biatomico della stessa quantità di un gas monoatomico."
       }
     ],
     "link_correlati": ["TER_001", "TER_002", "TER_009"],
     "parole_chiave": ["energia interna", "gas perfetto", "monoatomico", "temperatura"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_018",
     "categoria": "Termodinamica",
     "sottocategoria": "Lavoro Termodinamico",
-    "titolo": "Lavoro in una Trasformazione Isobara Reversibile",
+    "titolo": "Lavoro in una trasformazione isobara reversibile",
     "formula_latex": "W = P \\cdot \\Delta V",
-    "descrizione": "",
+    "descrizione": "In una trasformazione isobara reversibile, il lavoro svolto da o su un gas è proporzionale alla variazione di volume, mantenendo costante la pressione. Il segno del lavoro dipende dal fatto che il gas si espanda o venga compresso.\n\nSe il gas si espande, compie lavoro contro l’esterno. Se viene compresso, riceve lavoro dall’esterno. Il lavoro è maggiore se il volume cambia molto o se la pressione è alta.",
     "variabili": [
-      { "simbolo": "$W$", "descrizione": "Lavoro", "unita": "J" },
-      { "simbolo": "$P$", "descrizione": "Pressione costante", "unita": "Pa" },
-      { "simbolo": "$\\Delta V$", "descrizione": "Variazione di volume ($V_{finale} - V_{iniziale}$)", "unita": "m³" }
+      { "simbolo": "W", "descrizione": "Lavoro", "unita": "J" },
+      { "simbolo": "P", "descrizione": "Pressione costante", "unita": "Pa" },
+      { "simbolo": "\\Delta V", "descrizione": "Variazione di volume ($V_{finale} - V_{iniziale}$)", "unita": "m³" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un gas si espande da $0.01 \\text{ m}^3$ a $0.03 \\text{ m}^3$ a una pressione costante di $2 \\cdot 10^5 \\text{ Pa}$. Il lavoro compiuto è $W = 2 \\cdot 10^5 \\text{ Pa} \\cdot (0.03 - 0.01) \\text{ m}^3 = 4000 \\text{ J}$."
+        "testo": "In una siringa con stantuffo mobile, riscaldare il gas al suo interno fa aumentare il volume, spingendo lo stantuffo verso l’alto. Se la pressione resta costante, il lavoro fatto dal gas è proporzionale a quanto si solleva lo stantuffo."
       }
     ],
     "link_correlati": ["TER_001"],
     "parole_chiave": ["lavoro", "isobara", "trasformazione", "pressione", "volume"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_019",
     "categoria": "Termodinamica",
     "sottocategoria": "Lavoro Termodinamico",
-    "titolo": "Lavoro in una Trasformazione Isoterma Reversibile",
+    "titolo": "Lavoro in una trasformazione isoterma reversibile",
     "formula_latex": "W = n R T \\ln\\left(\\frac{V_2}{V_1}\\right)",
-    "descrizione": "",
+    "descrizione": "In una trasformazione isoterma reversibile di un gas perfetto, il lavoro compiuto dipende dalla variazione del volume e dalla temperatura costante del sistema. L’andamento logaritmico riflette il fatto che il lavoro cambia in modo non lineare con il volume.\n\nQuando un gas si espande lentamente mantenendo temperatura costante, assorbe calore e compie lavoro. Più l’espansione è ampia, maggiore è il lavoro. Se invece viene compresso, riceve lavoro dall’esterno.",
     "variabili": [
-      { "simbolo": "$W$", "descrizione": "Lavoro", "unita": "J" },
-      { "simbolo": "$n$", "descrizione": "Numero di moli", "unita": "mol" },
-      { "simbolo": "$R$", "descrizione": "Costante dei gas ideali ($8.314 \\text{ J/(mol}\\cdot\\text{K)}$)", "unita": "J/(mol·K)" },
-      { "simbolo": "$T$", "descrizione": "Temperatura costante assoluta", "unita": "K" },
-      { "simbolo": "$V_1$", "descrizione": "Volume iniziale", "unita": "m³" },
-      { "simbolo": "$V_2$", "descrizione": "Volume finale", "unita": "m³" }
+      { "simbolo": "W", "descrizione": "Lavoro", "unita": "J" },
+      { "simbolo": "n", "descrizione": "Numero di moli", "unita": "mol" },
+      { "simbolo": "R", "descrizione": "Costante dei gas ideali ($8.314 \\text{ J/(mol}\\cdot\\text{K)}$)", "unita": "\\frac{J}{mol\\cdot K}" },
+      { "simbolo": "T", "descrizione": "Temperatura costante assoluta", "unita": "K" },
+      { "simbolo": "V_1", "descrizione": "Volume iniziale", "unita": "m³" },
+      { "simbolo": "V_2", "descrizione": "Volume finale", "unita": "m³" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un gas ideale di $1 \\text{ mol}$ si espande da $1 \\text{ L}$ a $2 \\text{ L}$ a $300 \\text{ K}$. Il lavoro compiuto è $W = 1 \\text{ mol} \\cdot 8.314 \\text{ J/(mol}\\cdot\\text{K)} \\cdot 300 \\text{ K} \\cdot \\ln(2/1) \\approx 1730 \\text{ J}$."
+        "testo": "In un pistone termicamente isolato dal punto di vista meccanico ma a contatto con una sorgente termica, si può far espandere il gas lentamente mantenendo la temperatura costante. Il lavoro fatto sarà maggiore se il volume finale è molto più grande di quello iniziale, come mostra il logaritmo nella formula."
       }
     ],
     "link_correlati": ["TER_001", "TER_007"],
     "parole_chiave": ["lavoro", "isoterma", "trasformazione", "gas ideale", "logaritmo naturale"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_020",
     "categoria": "Termodinamica",
     "sottocategoria": "Principi della Termodinamica",
-    "titolo": "Secondo Principio della Termodinamica",
+    "titolo": "Secondo principio della termodinamica",
     "formula_latex": "\\begin{array}{l} \\text{Enunciato di Kelvin} \\\\ \\text{Enunciato di Clausius} \\end{array}",
-    "descrizione": "Il secondo principio della termodinamica: \nnella formulazione di Kelvin, afferma che è impossibile realizzare una trasformazione il cui unico risultato sia assorbire una determinata quantità di calore da una singola sorgente a temperatura uniforme e trasformarla integralmente in lavoro; \nnella formulazione di Clausius, afferma che è impossibile realizzare una trasformazione il cui unico risultato sia il trasferimento di calore da un corpo più freddo a un corpo più caldo.",
+    "descrizione": "Il secondo principio della termodinamica nella formulazione di Kelvin, afferma che è impossibile realizzare una trasformazione il cui unico risultato sia assorbire una determinata quantità di calore da una singola sorgente a temperatura uniforme e trasformarla integralmente in lavoro; \nnella formulazione di Clausius, afferma che è impossibile realizzare una trasformazione il cui unico risultato sia il trasferimento di calore da un corpo più freddo a un corpo più caldo.",
     "variabili": [],
     "esempi": [
       {
@@ -460,129 +465,129 @@
     "link_correlati": ["TER_004"],
     "parole_chiave": ["secondo principio", "Kelvin", "Clausius", "calore", "temperatura", "entropia", "irreversibilità"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_021",
     "categoria": "Termodinamica",
     "sottocategoria": "Macchine Termiche",
-    "titolo": "Lavoro Netto di una Macchina Termica",
+    "titolo": "Lavoro netto di una macchina termica",
     "formula_latex": "W_{net} = Q_H - Q_C",
-    "descrizione": "Il lavoro netto $W_{net}$ prodotto da una macchina termica è la differenza tra il calore $Q_H$ assorbito dalla sorgente calda e il calore $Q_C$ ceduto alla sorgente fredda.",
+    "descrizione": "Il lavoro netto prodotto da una macchina termica in un ciclo completo è pari alla differenza tra il calore assorbito dalla sorgente calda e quello ceduto alla sorgente fredda. Descrive l'efficienza fondamentale del funzionamento ciclico di questi dispositivi.\n\nUna macchina termica non trasforma tutto il calore in lavoro: una parte viene inevitabilmente dispersa. Il lavoro utile è ciò che rimane dopo aver sottratto la 'perdita' verso la sorgente fredda.",
     "variabili": [
-      { "simbolo": "$W_{net}$", "descrizione": "Lavoro netto prodotto", "unita": "J" },
-      { "simbolo": "$Q_H$", "descrizione": "Calore assorbito dalla sorgente calda", "unita": "J" },
-      { "simbolo": "$Q_C$", "descrizione": "Calore ceduto alla sorgente fredda", "unita": "J" }
+      { "simbolo": "W_{net}", "descrizione": "Lavoro netto prodotto", "unita": "J" },
+      { "simbolo": "Q_H", "descrizione": "Calore assorbito dalla sorgente calda", "unita": "J" },
+      { "simbolo": "Q_C", "descrizione": "Calore ceduto alla sorgente fredda", "unita": "J" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una macchina termica assorbe $1000 \\text{ J}$ di calore da una sorgente calda e cede $600 \\text{ J}$ a una sorgente fredda. Il lavoro netto prodotto è $W_{net} = 1000 \\text{ J} - 600 \\text{ J} = 400 \\text{ J}$."
+        "testo": "In una centrale termoelettrica, una parte del calore ottenuto dalla combustione viene trasformata in elettricità (cioè lavoro), mentre il resto viene smaltito nell’ambiente tramite torri di raffreddamento: la formula esprime il bilancio tra ciò che entra e ciò che si può effettivamente sfruttare."
       }
     ],
     "link_correlati": ["TER_001"],
     "parole_chiave": ["lavoro", "macchina termica", "calore", "rendimento"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_022",
     "categoria": "Termodinamica",
     "sottocategoria": "Macchine Termiche",
-    "titolo": "Rendimento di una Macchina Termica",
+    "titolo": "Rendimento di una macchina termica",
     "formula_latex": "\\eta = \\frac{W_{net}}{Q_H} = 1 - \\frac{Q_C}{Q_H}",
-    "descrizione": "Il rendimento $\\eta$ di una macchina termica è il rapporto tra il lavoro netto $W_{net}$ prodotto e il calore $Q_H$ assorbito dalla sorgente calda. Può anche essere espresso in termini di calori $Q_C$ e $Q_H$ scambiati.",
+    "descrizione": "Il rendimento misura la frazione di calore assorbito dalla sorgente calda che viene effettivamente convertita in lavoro utile. Indica quanto efficacemente una macchina termica trasforma energia termica in energia meccanica.\n\nUna macchina perfetta convertirebbe tutto il calore in lavoro, ma nella realtà una parte è sempre dispersa come calore verso l’ambiente freddo. Il rendimento mostra la differenza tra ciò che entra e ciò che si perde.",
     "variabili": [
-      { "simbolo": "$\\eta$", "descrizione": "Rendimento", "unita": "" },
-      { "simbolo": "$W_{net}$", "descrizione": "Lavoro netto prodotto", "unita": "J" },
-      { "simbolo": "$Q_H$", "descrizione": "Calore assorbito dalla sorgente calda", "unita": "J" },
-      { "simbolo": "$Q_C$", "descrizione": "Calore ceduto alla sorgente fredda", "unita": "J" }
+      { "simbolo": "\\eta", "descrizione": "Rendimento", "unita": "\\text{adimensionale}" },
+      { "simbolo": "W_{net}", "descrizione": "Lavoro netto prodotto", "unita": "J" },
+      { "simbolo": "Q_H", "descrizione": "Calore assorbito dalla sorgente calda", "unita": "J" },
+      { "simbolo": "Q_C", "descrizione": "Calore ceduto alla sorgente fredda", "unita": "J" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una macchina termica produce $400 \\text{ J}$ di lavoro assorbendo $1000 \\text{ J}$ di calore. Il suo rendimento è $\\eta = 400 \\text{ J} / 1000 \\text{ J} = 0.4$ (o $40\\%$)."
+        "testo": "Un motore con rendimento del $40%$ trasforma $1000J$ di calore in $400J$ di lavoro, mentre i restanti $600J$ vengono dissipati. Migliorare il rendimento significa ridurre queste perdite."
       }
     ],
     "link_correlati": ["TER_021"],
     "parole_chiave": ["rendimento", "macchina termica", "efficienza", "calore", "lavoro"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30 "
   },
   {
     "id": "TER_023",
     "categoria": "Termodinamica",
     "sottocategoria": "Ciclo di Carnot",
-    "titolo": "Rendimento della Macchina di Carnot (Teorema di Carnot)",
+    "titolo": "Teorema di Carnot",
     "formula_latex": "\\eta_{Carnot} = 1 - \\frac{T_C}{T_H}",
-    "descrizione": "Il rendimento massimo teorico $\\eta_{Carnot}$ di una macchina termica operante tra due temperature $T_C$ (sorgente fredda) e $T_H$ (sorgente calda), entrambe espresse in Kelvin. Nessuna macchina reale può superare questo rendimento.",
+    "descrizione": "Il teorema di Carnot definisce il rendimento massimo teorico che una macchina termica può raggiungere operando tra due sorgenti a temperature diverse. Nessuna macchina reale può superare questo limite.\n\nl rendimento dipende solo dalle temperature assolute delle sorgenti calda e fredda: più è alta la differenza, più lavoro si può ottenere. È un limite fondamentale imposto dalla seconda legge della termodinamica.",
     "variabili": [
-      { "simbolo": "$\\eta_{Carnot}$", "descrizione": "Rendimento di Carnot", "unita": "" },
-      { "simbolo": "$T_C$", "descrizione": "Temperatura assoluta della sorgente fredda", "unita": "K" },
-      { "simbolo": "$T_H$", "descrizione": "Temperatura assoluta della sorgente calda", "unita": "K" }
+      { "simbolo": "\\eta_{Carnot}", "descrizione": "Rendimento di Carnot", "unita": "\\text{adimensionale}" },
+      { "simbolo": "T_C", "descrizione": "Temperatura assoluta della sorgente fredda", "unita": "K" },
+      { "simbolo": "T_H", "descrizione": "Temperatura assoluta della sorgente calda", "unita": "K" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una macchina di Carnot opera tra $T_H = 500 \\text{ K}$ e $T_C = 300 \\text{ K}$. Il suo rendimento massimo è $\\eta_{Carnot} = 1 - (300 \\text{ K} / 500 \\text{ K}) = 1 - 0.6 = 0.4$ (o $40\\%$)."
+        "testo": "Se una macchina lavora con una sorgente calda a $$600\\,K$$ e una fredda a $$300\\,K$$, il rendimento massimo possibile è $$\\eta_{Carnot} = 1 - \\frac{300}{600} = 0{,}5 = 50\\%$$. Nonostante i progressi tecnologici, nessun motore potrà mai superare questo valore."
       }
     ],
     "link_correlati": ["TER_022"],
     "parole_chiave": ["Carnot", "rendimento", "macchina termica", "temperatura", "ciclo termodinamico"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_024",
     "categoria": "Termodinamica",
     "sottocategoria": "Frigoriferi e Pompe di Calore",
-    "titolo": "Coefficiente di Prestazione di un Frigorifero",
+    "titolo": "Coefficiente di prestazione di un frigorifero",
     "formula_latex": "\\begin{aligned} COP_{frigo} &= \\frac{Q_C}{W_{in}} \\\\ COP_{rev} = &\\frac{T_C}{T_C - T_H} \\end{aligned}",
-    "descrizione": "Il coefficiente di prestazione ($COP_{frigo}$) di un frigorifero indica quanto calore $Q_C$ viene rimosso dalla sorgente fredda per unità di lavoro $W_{in}$ fornito. \nNel caso di una macchina di Carnot (ciclo reversibile), il COP è espresso con le temperature delle sorgenti $T_C$ $T_H$.",
+    "descrizione": "Il coefficiente di prestazione misura l’efficienza di un frigorifero confrontando il calore estratto dall’ambiente freddo con il lavoro fornito per farlo funzionare. Il valore ideale massimo è dato dal rapporto delle temperature assolute della sorgente fredda e della differenza tra sorgente calda e fredda.\n\nUn frigorifero più efficiente riesce a togliere più calore dall’interno rispetto al lavoro che deve compiere. Il limite ideale mostra che aumentando la differenza di temperatura tra interno ed esterno, l’efficienza diminuisce.",
     "variabili": [
-      { "simbolo": "$COP_{frigo}$", "descrizione": "Coefficiente di prestazione del frigorifero", "unita": "" },
-      { "simbolo": "$Q_C$", "descrizione": "Calore rimosso dalla sorgente fredda", "unita": "J" },
-      { "simbolo": "$W_{in}$", "descrizione": "Lavoro in ingresso al sistema", "unita": "J" },
-      { "simbolo": "$Q_H$", "descrizione": "Calore ceduto alla sorgente calda", "unita": "J" },
-      { "simbolo": "$T_C$", "descrizione": "Temperatura assoluta della sorgente fredda", "unita": "K" },
-      { "simbolo": "$T_H$", "descrizione": "Temperatura assoluta della sorgente calda", "unita": "K" }
+      { "simbolo": "COP_{frigo}", "descrizione": "Coefficiente di prestazione del frigorifero", "unita": "\\text{adimensionale}" },
+      { "simbolo": "Q_C", "descrizione": "Calore rimosso dalla sorgente fredda", "unita": "J" },
+      { "simbolo": "W_{in}", "descrizione": "Lavoro in ingresso al sistema", "unita": "J" },
+      { "simbolo": "Q_H", "descrizione": "Calore ceduto alla sorgente calda", "unita": "J" },
+      { "simbolo": "T_C", "descrizione": "Temperatura assoluta della sorgente fredda", "unita": "K" },
+      { "simbolo": "T_H", "descrizione": "Temperatura assoluta della sorgente calda", "unita": "K" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un frigorifero rimuove $200 \\text{ J}$ di calore dal suo interno con un lavoro di $50 \\text{ J}$. Il suo COP è $COP_{frigo} = 200 \\text{ J} / 50 \\text{ J} = 4$."
+        "testo": "Un frigorifero che estrae 100 J di calore dal vano interno usando 50 J di energia elettrica ha un $COP_{frigo} = \\frac{100}{50} = 2$. Il coefficiente reale è sempre inferiore a quello ideale, che dipende dalle temperature operative."
       }
     ],
     "link_correlati": ["TER_021"],
     "parole_chiave": ["COP", "frigorifero", "pompa di calore", "efficienza", "calore", "lavoro"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_025",
     "categoria": "Termodinamica",
     "sottocategoria": "Frigoriferi e Pompe di Calore",
-    "titolo": "Coefficiente di Prestazione di una Pompa di Calore",
+    "titolo": "Coefficiente di prestazione di una pompa di calore",
     "formula_latex": "\\begin{aligned} COP_{pompa} &= \\frac{Q_H}{W_{in}} \\\\ COP_{rev} = &\\frac{T_H}{T_H - T_C} \\end{aligned}",
-    "descrizione": "Il coefficiente di prestazione ($COP_{pompa}$) di una pompa di calore indica quanto calore $Q_H$ viene fornito alla sorgente calda per unità di lavoro $W_{in}$ fornito. \nNel caso di una macchina di Carnot (ciclo reversibile), il COP è espresso con le temperature delle sorgenti $T_C$ $T_H$.",
+    "descrizione": "Il coefficiente di prestazione di una pompa di calore indica quanto calore viene trasferito all’ambiente caldo per ogni unità di lavoro fornita. Il valore ideale massimo dipende dalle temperature assolute delle sorgenti calda e fredda.\n\nUna pompa di calore efficiente trasferisce molto calore all’ambiente riscaldato rispetto all’energia spesa per il suo funzionamento. Il limite teorico mostra che un piccolo salto termico permette un’efficienza più alta.",
     "variabili": [
-      { "simbolo": "$COP_{pompa}$", "descrizione": "Coefficiente di prestazione della pompa di calore", "unita": "" },
-      { "simbolo": "$Q_H$", "descrizione": "Calore fornito alla sorgente calda", "unita": "J" },
-      { "simbolo": "$W_{in}$", "descrizione": "Lavoro in ingresso al sistema", "unita": "J" },
-      { "simbolo": "$Q_C$", "descrizione": "Calore rimosso dalla sorgente fredda", "unita": "J" },
-      { "simbolo": "$T_C$", "descrizione": "Temperatura assoluta della sorgente fredda", "unita": "K" },
-      { "simbolo": "$T_H$", "descrizione": "Temperatura assoluta della sorgente calda", "unita": "K" }
+      { "simbolo": "COP_{pompa}", "descrizione": "Coefficiente di prestazione della pompa di calore", "unita": "\\text{adimensionale}" },
+      { "simbolo": "Q_H", "descrizione": "Calore fornito alla sorgente calda", "unita": "J" },
+      { "simbolo": "W_{in}", "descrizione": "Lavoro in ingresso al sistema", "unita": "J" },
+      { "simbolo": "Q_C", "descrizione": "Calore rimosso dalla sorgente fredda", "unita": "J" },
+      { "simbolo": "T_C", "descrizione": "Temperatura assoluta della sorgente fredda", "unita": "K" },
+      { "simbolo": "T_H", "descrizione": "Temperatura assoluta della sorgente calda", "unita": "K" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una pompa di calore fornisce $250 \\text{ J}$ di calore a un ambiente caldo con un lavoro di $50 \\text{ J}$. Il suo COP è $COP_{pompa} = 250 \\text{ J} / 50 \\text{ J} = 5$."
+        "testo": "Se una pompa di calore trasferisce 300 J di calore nell’ambiente caldo utilizzando 100 J di lavoro, il suo $COP_{pompa} = \\frac{300}{100} = 3$. Questo valore è sempre minore o uguale al limite ideale, calcolato dalle temperature operative."
       }
     ],
     "link_correlati": ["TER_021"],
     "parole_chiave": ["COP", "pompa di calore", "frigorifero", "efficienza", "calore", "lavoro"],
     "data_creazione": "2025-07-11",
-    "data_ultima_modifica": "2025-07-11"
+    "data_ultima_modifica": "2025-07-30"
   },
   {
     "id": "TER_026",
@@ -590,25 +595,25 @@
     "sottocategoria": "Trasformazioni Termodinamiche",
     "titolo": "Le trasformazioni adiabatiche reversibili",
     "formula_latex": "\\begin{aligned} T &= \\left( \\frac{V_i}{V} \\right)^{\\gamma - 1} T_i \\\\ p &= \\left( \\frac{V_i}{V} \\right)^\\gamma p_i \\\\ T &= \\left( \\frac{p}{p_i} \\right)^{\\frac{\\gamma - 1}{\\gamma}} T_i \\end{aligned}",
-    "descrizione": "Queste formule permettono di calcolare temperatura o pressione in una trasformazione adiabatica reversibile, a partire dalle condizioni iniziali e dalla variazione di volume o pressione. Sono derivate dalle leggi dell'adiabatica e usate comunemente per risolvere esercizi applicativi con gas perfetti.",
+    "descrizione": "Le trasformazioni adiabatiche reversibili avvengono senza scambio di calore con l’ambiente. Durante queste trasformazioni, temperatura, pressione e volume sono legati da relazioni precise che dipendono dal rapporto $\\gamma$ tra calori specifici del gas.\n\nQuando un gas si espande o si comprime senza scambiare calore, la sua temperatura e pressione variano in modo che l’energia interna cambi solo per il lavoro fatto o subito. Il parametro $\\gamma$ indica quanto il gas si oppone a questi cambiamenti termodinamici.",
     "variabili": [
-      { "simbolo": "$T$", "descrizione": "Temperatura finale", "unita": "K" },
-      { "simbolo": "$T_i$", "descrizione": "Temperatura iniziale", "unita": "K" },
-      { "simbolo": "$p$", "descrizione": "Pressione finale", "unita": "Pa" },
-      { "simbolo": "$p_i$", "descrizione": "Pressione iniziale", "unita": "Pa" },
-      { "simbolo": "$V$", "descrizione": "Volume finale", "unita": "m³" },
-      { "simbolo": "$V_i$", "descrizione": "Volume iniziale", "unita": "m³" },
-      { "simbolo": "$\\gamma$", "descrizione": "Indice adiabatico (rapporto $C_p/C_v$)", "unita": "" }
+      { "simbolo": "T", "descrizione": "Temperatura finale", "unita": "K" },
+      { "simbolo": "T_i", "descrizione": "Temperatura iniziale", "unita": "K" },
+      { "simbolo": "p", "descrizione": "Pressione finale", "unita": "Pa" },
+      { "simbolo": "p_i", "descrizione": "Pressione iniziale", "unita": "Pa" },
+      { "simbolo": "V", "descrizione": "Volume finale", "unita": "m³" },
+      { "simbolo": "V_i", "descrizione": "Volume iniziale", "unita": "m³" },
+      { "simbolo": "\\gamma", "descrizione": "Indice adiabatico (rapporto $C_p/C_v$)", "unita": "\\text{adimensionale}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un gas ideale passa da $V_i = 1{,}0\\ \\text{m}^3$ e $T_i = 300\\ \\text{K}$ a $V = 0{,}5\\ \\text{m}^3$. Con $\\gamma = 1{,}4$, la temperatura finale sarà: \\\\ $T = \\left( \\frac{1{,}0}{0{,}5} \\right)^{0{,}4} \\cdot 300 \\approx 396\\ \\text{K}$."
+        "testo": "Nel ciclo di un motore a combustione interna, la compressione del gas avviene quasi adiabaticamente: la temperatura aumenta molto senza che il calore venga ceduto, aumentando la pressione secondo queste leggi, essenziali per capire l’efficienza del ciclo."
       }
     ],
     "link_correlati": ["TER_030", "TER_001", "TER_005"],
     "parole_chiave": ["adiabatica", "trasformazione reversibile", "gamma", "gas perfetto", "calcolo temperatura", "calcolo pressione"],
     "data_creazione": "2025-07-21",
-    "data_ultima_modifica": "2025-07-21"
+    "data_ultima_modifica": "2025-07-30"
   }
 ]

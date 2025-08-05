@@ -5,19 +5,19 @@
     "sottocategoria": "Campi Magnetici e Forze",
     "titolo": "Forza tra Due Fili Paralleli (Legge di Ampère)",
     "formula_latex": "F = \\frac{\\mu_0}{2\\pi} \\cdot \\frac{I_1 I_2}{d} \\cdot L",
-    "descrizione": "Questa formula esprime la forza per unità di lunghezza tra due fili rettilinei, paralleli e percorsi da correnti $I_1$ e $I_2$. La forza è attrattiva se le correnti hanno lo stesso verso, repulsiva se hanno versi opposti. $d$ è la distanza tra i fili, e $\\mu_0$ è la permeabilità magnetica del vuoto.",
+    "descrizione": "La forza magnetica tra due fili rettilinei paralleli percorsi da corrente è proporzionale al prodotto delle correnti e inversamente proporzionale alla distanza tra i fili.\n\nSe le correnti hanno lo stesso verso i fili si attraggono, se sono opposte si respingono: questa interazione è alla base della definizione dell'ampere.",
     "variabili": [
-      { "simbolo": "$F$", "descrizione": "Forza magnetica tra i due fili", "unita": "N" },
-      { "simbolo": "$L$", "descrizione": "Lunghezza dei fili considerata", "unita": "m" },
-      { "simbolo": "$I_1$", "descrizione": "Intensità di corrente nel primo filo", "unita": "A" },
-      { "simbolo": "$I_2$", "descrizione": "Intensità di corrente nel secondo filo", "unita": "A" },
-      { "simbolo": "$d$", "descrizione": "Distanza tra i due fili", "unita": "m" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" }
+      { "simbolo": "F", "descrizione": "Forza magnetica tra i due fili", "unita": "N" },
+      { "simbolo": "L", "descrizione": "Lunghezza dei fili considerata", "unita": "m" },
+      { "simbolo": "I_1", "descrizione": "Intensità di corrente nel primo filo", "unita": "A" },
+      { "simbolo": "I_2", "descrizione": "Intensità di corrente nel secondo filo", "unita": "A" },
+      { "simbolo": "d", "descrizione": "Distanza tra i due fili", "unita": "m" },
+      { "simbolo": "\\mu_0", "descrizione": "Permeabilità magnetica del vuoto", "unita": "\\frac{N}{A^2}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Due fili lunghi, rettilinei e paralleli distano 5 cm e sono percorsi da correnti di 10 A nello stesso verso. La forza per unità di lunghezza che agisce tra i fili sarà attrattiva e calcolabile con la formula della forza tra fili paralleli."
+        "testo": "Due fili paralleli in laboratorio, percorsi da correnti nello stesso verso, si attraggono visibilmente se posti abbastanza vicini: questo effetto è sfruttato per misurare la corrente elettrica."
       }
     ],
     "link_correlati": [],
@@ -31,17 +31,17 @@
     "sottocategoria": "Campi Magnetici e Forze",
     "titolo": "Modulo del Campo Magnetico di un Filo Rettilineo Infinito",
     "formula_latex": "B = \\frac{\\mu_0 I}{2\\pi r}",
-    "descrizione": "Il modulo del campo magnetico $B$ generato da un filo rettilineo infinito percorso da corrente $I$, a una distanza $r$ dal filo. Il campo forma cerchi concentrici attorno al filo.",
+    "descrizione": "Il campo magnetico generato da un filo rettilineo infinito percorso da corrente diminuisce all'aumentare della distanza dal filo e dipende direttamente dall'intensità della corrente.\n\nIl campo forma cerchi concentrici attorno al filo: più ci si allontana, più il campo si indebolisce.",
     "variabili": [
-      { "simbolo": "$B$", "descrizione": "Modulo del campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
-      { "simbolo": "$I$", "descrizione": "Corrente nel filo", "unita": "A" },
-      { "simbolo": "$r$", "descrizione": "Distanza dal filo", "unita": "m" }
+      { "simbolo": "B", "descrizione": "Modulo del campo magnetico", "unita": "T" },
+      { "simbolo": "\\mu_0", "descrizione": "Permeabilità magnetica del vuoto", "unita": "\\frac{N}{A^2}" },
+      { "simbolo": "I", "descrizione": "Corrente nel filo", "unita": "A" },
+      { "simbolo": "r", "descrizione": "Distanza dal filo", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un filo percorso da $5 \\text{ A}$ genera un campo magnetico a $0.01 \\text{ m}$ di distanza pari a $B = \\frac{(4\\pi \\times 10^{-7} \\text{ N/A}^2) \\cdot 5 \\text{ A}}{2\\pi \\cdot 0.01 \\text{ m}} = 10^{-4} \\text{ T}$."
+        "testo": "Avvicinando una bussola a un filo percorso da corrente, l'ago si orienta lungo le linee di campo magnetico circolari generate dal filo."
       }
     ],
     "link_correlati": [],
@@ -55,19 +55,19 @@
     "sottocategoria": "Campi Magnetici e Forze",
     "titolo": "Campo Magnetico generato da un Tratto di Filo Infinitesimo (Legge di Biot-Savart)",
     "formula_latex": "\\Delta\\vec{B} = \\frac{\\mu_0 I}{4\\pi} \\frac{\\Delta\\vec{l} \\times \\hat{r}}{r^2}",
-    "descrizione": "La legge di Biot-Savart descrive il campo magnetico infinitesimo $\\Delta\\vec{B}$ generato da un tratto di filo infinitesimo $\\Delta\\vec{l}$ percorso da corrente $I$, a una distanza $r$ dal tratto. $\\hat{r}$ è il versore dalla sorgente al punto di osservazione.",
+    "descrizione": "La legge di Biot-Savart permette di calcolare il contributo infinitesimo al campo magnetico generato da un piccolo tratto di filo percorso da corrente.\n\nSommando (integrando) tutti i contributi dei vari tratti di filo, si ottiene il campo magnetico totale prodotto da conduttori di qualsiasi forma.",
     "variabili": [
-      { "simbolo": "$\\Delta\\vec{B}$", "descrizione": "Elemento infinitesimo di campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
-      { "simbolo": "$I$", "descrizione": "Corrente", "unita": "A" },
-      { "simbolo": "$\\Delta\\vec{l}$", "descrizione": "Elemento infinitesimo di lunghezza del filo", "unita": "m" },
-      { "simbolo": "$r$", "descrizione": "Distanza dal tratto di filo al punto", "unita": "m" },
-      { "simbolo": "$\\hat{r}$", "descrizione": "Versore dalla sorgente al punto", "unita": "-" }
+      { "simbolo": "\\Delta\\vec{B}", "descrizione": "Elemento infinitesimo di campo magnetico", "unita": "T" },
+      { "simbolo": "\\mu_0", "descrizione": "Permeabilità magnetica del vuoto", "unita": "\\frac{N}{A^2}" },
+      { "simbolo": "I", "descrizione": "Corrente", "unita": "A" },
+      { "simbolo": "\\Delta\\vec{l}", "descrizione": "Elemento infinitesimo di lunghezza del filo", "unita": "m" },
+      { "simbolo": "r", "descrizione": "Distanza dal tratto di filo al punto", "unita": "m" },
+      { "simbolo": "\\hat{r}", "descrizione": "Versore dalla sorgente al punto", "unita": "\\text{adimensionale}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Questo è il principio fondamentale per calcolare il campo magnetico di geometrie complesse integrando il contributo di ogni piccolo segmento di corrente."
+        "testo": "Per calcolare il campo magnetico al centro di una spira circolare, si somma il contributo di ogni piccolo tratto di filo usando la legge di Biot-Savart."
       }
     ],
     "link_correlati": [],
@@ -81,17 +81,17 @@
     "sottocategoria": "Campi Magnetici e Forze",
     "titolo": "Campo Magnetico al Centro di una Spira Circolare",
     "formula_latex": "B = \\frac{\\mu_0 I}{2R}",
-    "descrizione": "Il modulo del campo magnetico $B$ al centro di una spira circolare di raggio $R$ percorsa da corrente $I$. Il campo è perpendicolare al piano della spira.",
+    "descrizione": "Il campo magnetico al centro di una spira circolare è direttamente proporzionale alla corrente e inversamente proporzionale al raggio della spira.\n\nIl campo è massimo al centro e diminuisce allontanandosi: questa configurazione è usata per generare campi magnetici uniformi in laboratorio.",
     "variabili": [
-      { "simbolo": "$B$", "descrizione": "Modulo del campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
-      { "simbolo": "$I$", "descrizione": "Corrente nella spira", "unita": "A" },
-      { "simbolo": "$R$", "descrizione": "Raggio della spira", "unita": "m" }
+      { "simbolo": "B", "descrizione": "Modulo del campo magnetico", "unita": "T" },
+      { "simbolo": "\\mu_0", "descrizione": "Permeabilità magnetica del vuoto", "unita": "\\frac{N}{A^2}" },
+      { "simbolo": "I", "descrizione": "Corrente nella spira", "unita": "A" },
+      { "simbolo": "R", "descrizione": "Raggio della spira", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una spira con raggio $0.05 \\text{ m}$ percorsa da $2 \\text{ A}$ genera un campo al centro di $B = \\frac{(4\\pi \\times 10^{-7} \\text{ N/A}^2) \\cdot 2 \\text{ A}}{2 \\cdot 0.05 \\text{ m}} \\approx 2.51 \\times 10^{-5} \\text{ T}$."
+        "testo": "Le bobine circolari sono usate negli strumenti di misura per produrre campi magnetici noti e controllati al loro centro."
       }
     ],
     "link_correlati": [],
@@ -105,17 +105,17 @@
     "sottocategoria": "Campi Magnetici e Forze",
     "titolo": "Campo Magnetico di un Solenoide Ideale",
     "formula_latex": "B = \\mu_0 n I",
-    "descrizione": "Il modulo del campo magnetico $B$ all'interno di un solenoide ideale (molto lungo e con spire molto vicine) è uniforme e diretto lungo l'asse del solenoide. $n$ è il numero di spire per unità di lunghezza e $I$ è la corrente.",
+    "descrizione": "All'interno di un solenoide ideale, il campo magnetico è uniforme, parallelo all'asse e proporzionale al numero di spire per unità di lunghezza e alla corrente.\n\nI solenoidi sono usati per creare campi magnetici intensi e controllati, come negli elettromagneti.",
     "variabili": [
-      { "simbolo": "$B$", "descrizione": "Modulo del campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
-      { "simbolo": "$n$", "descrizione": "Numero di spire per unità di lunghezza", "unita": "m⁻¹" },
-      { "simbolo": "$I$", "descrizione": "Corrente nel solenoide", "unita": "A" }
+      { "simbolo": "B", "descrizione": "Modulo del campo magnetico", "unita": "T" },
+      { "simbolo": "\\mu_0", "descrizione": "Permeabilità magnetica del vuoto", "unita": "\\frac{N}{A^2}" },
+      { "simbolo": "n", "descrizione": "Numero di spire per unità di lunghezza", "unita": "\\frac{1}{m}" },
+      { "simbolo": "I", "descrizione": "Corrente nel solenoide", "unita": "A" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un solenoide con $1000 \\text{ spire/m}$ percorso da $0.5 \\text{ A}$ genera un campo di $B = (4\\pi \\times 10^{-7}) \\cdot (1000) \\cdot 0.5 \\text{ A} \\approx 6.28 \\times 10^{-4} \\text{ T}$."
+        "testo": "Gli elettromagneti nei relè e nei motori elettrici sfruttano solenoidi per generare campi magnetici intensi e localizzati."
       }
     ],
     "link_correlati": [],
@@ -129,17 +129,17 @@
     "sottocategoria": "Campi Magnetici e Forze",
     "titolo": "Forza Magnetica su un Tratto Rettilineo di Filo Percorso da Corrente",
     "formula_latex": "\\vec{F} = I \\vec{L} \\times \\vec{B}",
-    "descrizione": "La forza magnetica $\\vec{F}$ che agisce su un tratto rettilineo di filo di lunghezza $L$ percorso da corrente $I$ e immerso in un campo magnetico $\\vec{B}$. La direzione della forza è data dalla regola della mano destra.",
+    "descrizione": "Un filo percorso da corrente immerso in un campo magnetico subisce una forza perpendicolare sia al filo che al campo, calcolata tramite il prodotto vettoriale.\n\nLa direzione della forza si determina con la regola della mano destra: questo principio è alla base del funzionamento dei motori elettrici.",
     "variabili": [
-      { "simbolo": "$\\vec{F}$", "descrizione": "Forza magnetica", "unita": "N" },
-      { "simbolo": "$I$", "descrizione": "Corrente nel filo", "unita": "A" },
-      { "simbolo": "$\\vec{L}$", "descrizione": "Vettore lunghezza del filo (nella direzione della corrente)", "unita": "m" },
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" }
+      { "simbolo": "\\vec{F}", "descrizione": "Forza magnetica", "unita": "N" },
+      { "simbolo": "I", "descrizione": "Corrente nel filo", "unita": "A" },
+      { "simbolo": "\\vec{L}", "descrizione": "Vettore lunghezza del filo (nella direzione della corrente)", "unita": "m" },
+      { "simbolo": "\\vec{B}", "descrizione": "Campo magnetico", "unita": "T" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un filo di $0.1 \\text{ m}$ percorso da $2 \\text{ A}$ in un campo magnetico di $0.5 \\text{ T}$ perpendicolare al filo subisce una forza di $F = 2 \\text{ A} * 0.1 \\text{ m} * 0.5 \\text{ T} = 0.1 \\text{ N}$."
+        "testo": "Un filo sospeso tra i poli di un magnete si muove quando vi passa corrente: è il principio di base del motore elettrico."
       }
     ],
     "link_correlati": [],
@@ -153,17 +153,17 @@
     "sottocategoria": "Campi Magnetici e Forze",
     "titolo": "Forza di Lorentz",
     "formula_latex": "\\vec{F} = q\\vec{v} \\times \\vec{B}",
-    "descrizione": "La forza di Lorentz $\\vec{F}$ è la forza totale che agisce su una particella di carica $q$ in presenza di un campo elettrico $\\vec{E}$ e un campo magnetico $\\vec{B}$.",
+    "descrizione": "La forza di Lorentz agisce su una particella carica che si muove in un campo magnetico, risultando perpendicolare sia alla velocità che al campo.\n\nQuesta forza fa deviare le particelle cariche: il suo effetto è fondamentale nei tubi catodici, negli acceleratori e nelle aurore polari.",
     "variabili": [
-      { "simbolo": "$\\vec{F}$", "descrizione": "Forza di Lorentz", "unita": "N" },
-      { "simbolo": "$q$", "descrizione": "Carica della particella", "unita": "C" },
-      { "simbolo": "$\\vec{v}$", "descrizione": "Velocità della particella", "unita": "m/s" },
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" }
+      { "simbolo": "\\vec{F}", "descrizione": "Forza di Lorentz", "unita": "N" },
+      { "simbolo": "q", "descrizione": "Carica della particella", "unita": "C" },
+      { "simbolo": "\\vec{v}", "descrizione": "Velocità della particella", "unita": "\\frac{m}{s}" },
+      { "simbolo": "\\vec{B}", "descrizione": "Campo magnetico", "unita": "T" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un protone ($q = 1.6 \\times 10^{-19} \\text{ C}$) che si muove a $10^6 \\text{ m/s}$ perpendicolarmente a un campo magnetico di $0.1 \\text{ T}$ subisce una forza di $F = (1.6 \\times 10^{-19} \\text{ C}) \\cdot (10^6 \\text{ m/s}) \\cdot (0.1 \\text{ T}) = 1.6 \\times 10^{-14} \\text{ N}$."
+        "testo": "Le particelle cariche nei raggi cosmici vengono deviate dal campo magnetico terrestre, proteggendo la Terra dalle radiazioni."
       }
     ],
     "link_correlati": [],
@@ -177,18 +177,18 @@
     "sottocategoria": "Moto di Cariche",
     "titolo": "Moto Circolare di una Particella Carica in un Campo Magnetico Uniforme",
     "formula_latex": "r = \\frac{m v}{|q| B}",
-    "descrizione": "Quando una particella carica $q$ di massa $m$ e velocità $v$ si muove perpendicolarmente a un campo magnetico uniforme $B$, essa segue una traiettoria circolare di raggio $r$.",
+    "descrizione": "Una particella carica che si muove perpendicolarmente a un campo magnetico uniforme descrive una traiettoria circolare di raggio proporzionale alla sua massa e velocità e inversamente proporzionale alla carica e al campo.\n\nQuesto principio è sfruttato nei ciclotroni e negli spettrometri di massa per separare particelle di massa o carica diversa.",
     "variabili": [
-      { "simbolo": "$r$", "descrizione": "Raggio della traiettoria circolare", "unita": "m" },
-      { "simbolo": "$m$", "descrizione": "Massa della particella", "unita": "kg" },
-      { "simbolo": "$v$", "descrizione": "Velocità della particella (perpendicolare a B)", "unita": "m/s" },
-      { "simbolo": "$|q|$", "descrizione": "Modulo della carica della particella", "unita": "C" },
-      { "simbolo": "$B$", "descrizione": "Modulo del campo magnetico", "unita": "T" }
+      { "simbolo": "r", "descrizione": "Raggio della traiettoria circolare", "unita": "m" },
+      { "simbolo": "m", "descrizione": "Massa della particella", "unita": "kg" },
+      { "simbolo": "v", "descrizione": "Velocità della particella (perpendicolare a B)", "unita": "\\frac{m}{s}" },
+      { "simbolo": "|q|", "descrizione": "Modulo della carica della particella", "unita": "C" },
+      { "simbolo": "B", "descrizione": "Modulo del campo magnetico", "unita": "T" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un elettrone ($m = 9.11 \\times 10^{-31} \\text{ kg}$, $|q| = 1.6 \\times 10^{-19} \\text{ C}$) con velocità di $10^7 \\text{ m/s}$ in un campo di $0.05 \\text{ T}$ si muove su un cerchio di raggio $r = \\frac{(9.11 \\times 10^{-31}) \\cdot 10^7}{(1.6 \\times 10^{-19}) \\cdot 0.05} \\approx 0.0114 \\text{ m}$."
+        "testo": "Negli acceleratori di particelle, il raggio della traiettoria dipende dalla massa e dalla carica: particelle diverse descrivono cerchi di raggio diverso nello stesso campo."
       }
     ],
     "link_correlati": [],
@@ -202,18 +202,18 @@
     "sottocategoria": "Moto di Cariche",
     "titolo": "Moto Elicoidale di una Particella Carica in un Campo Magnetico",
     "formula_latex": "p = \\frac{2\\pi m v_{\\parallel}}{|q| B}",
-    "descrizione": "Se una particella carica $q$ di massa $m$ ha una componente di velocità $v_{\\parallel}$ parallela al campo magnetico $B$ e una componente $v_{\\perp}$ perpendicolare, il suo moto sarà elicoidale. $p$ è il passo dell'elica, la distanza percorsa lungo la direzione del campo in un ciclo.",
+    "descrizione": "Se una particella carica entra in un campo magnetico con una velocità non perpendicolare, la sua traiettoria diventa elicoidale: il passo dell'elica dipende dalla componente di velocità parallela al campo.\n\nQuesto tipo di moto spiega il comportamento delle particelle nello spazio e nei tubi a raggi catodici.",
     "variabili": [
-      { "simbolo": "$p$", "descrizione": "Passo dell'elica", "unita": "m" },
-      { "simbolo": "$m$", "descrizione": "Massa della particella", "unita": "kg" },
-      { "simbolo": "$v_{\\parallel}$", "descrizione": "Componente di velocità parallela a B", "unita": "m/s" },
-      { "simbolo": "$|q|$", "descrizione": "Modulo della carica della particella", "unita": "C" },
-      { "simbolo": "$B$", "descrizione": "Modulo del campo magnetico", "unita": "T" }
+      { "simbolo": "p", "descrizione": "Passo dell'elica", "unita": "m" },
+      { "simbolo": "m", "descrizione": "Massa della particella", "unita": "kg" },
+      { "simbolo": "v_{\\parallel}", "descrizione": "Componente di velocità parallela a B", "unita": "\\frac{m}{s}" },
+      { "simbolo": "|q|", "descrizione": "Modulo della carica della particella", "unita": "C" },
+      { "simbolo": "B", "descrizione": "Modulo del campo magnetico", "unita": "T" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Immagina un elettrone che entra in un campo magnetico con una velocità che ha sia una componente lungo il campo che una perpendicolare. Il moto risultante sarà una spirale lungo la direzione del campo, simile al moto delle particelle nelle aurore polari."
+        "testo": "Le particelle cariche che entrano nell'atmosfera terrestre seguono traiettorie elicoidali lungo le linee del campo magnetico, dando origine alle aurore polari."
       }
     ],
     "link_correlati": [],
@@ -227,17 +227,17 @@
     "sottocategoria": "Fenomeni di Campo",
     "titolo": "Effetto Hall",
     "formula_latex": "\\Delta V_H = dvB",
-    "descrizione": "L'effetto Hall è la creazione di una differenza di potenziale $\\Delta V_H$ (tensione di Hall) attraverso un conduttore percorso da corrente e immerso in un campo magnetico $B$ perpendicolare alla corrente. Dipende dallo spessore del conduttore $d$ (perpendicolare a corrente e campo) e dalla velocità $v$ di deriva degli elettroni di conduzione.",
+    "descrizione": "L'effetto Hall consiste nella comparsa di una differenza di potenziale ai capi di un conduttore percorso da corrente e immerso in un campo magnetico perpendicolare.\n\nQuesto fenomeno permette di misurare il campo magnetico o di identificare il tipo di portatori di carica in un materiale.",
     "variabili": [
-      { "simbolo": "$\\Delta V_H$", "descrizione": "Tensione di Hall", "unita": "V" },
-      { "simbolo": "$B$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$d$", "descrizione": "Spessore del conduttore", "unita": "m" },
-      { "simbolo": "$v$", "descrizione": "Velocità di deriva degli elettroni di conduzione", "unita": "m/s" }
+      { "simbolo": "\\Delta V_H", "descrizione": "Tensione di Hall", "unita": "V" },
+      { "simbolo": "B", "descrizione": "Campo magnetico", "unita": "T" },
+      { "simbolo": "d", "descrizione": "Spessore del conduttore", "unita": "m" },
+      { "simbolo": "v", "descrizione": "Velocità di deriva degli elettroni di conduzione", "unita": "\\frac{m}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "L'effetto Hall è utilizzato per misurare campi magnetici o per determinare il tipo di portatori di carica (elettroni o lacune) in un semiconduttore."
+        "testo": "I sensori di effetto Hall sono usati nei tachimetri delle biciclette e nei dispositivi per misurare la velocità di rotazione delle ruote."
       }
     ],
     "link_correlati": [],
@@ -251,14 +251,14 @@
     "sottocategoria": "Leggi Fondamentali",
     "titolo": "Teorema di Gauss per il Campo Magnetico",
     "formula_latex": "\\Phi_S(\\vec{B}) = 0",
-    "descrizione": "Il teorema di Gauss per il campo magnetico afferma che il flusso magnetico totale attraverso qualsiasi superficie chiusa $S$ è sempre zero. Questo implica che non esistono monopoli magnetici isolati (i poli nord e sud esistono sempre in coppia).",
+    "descrizione": "Il teorema di Gauss per il magnetismo afferma che il flusso totale del campo magnetico attraverso una superficie chiusa è sempre nullo.\n\nNon esistono poli magnetici isolati: ogni volta che si divide una calamita si ottengono sempre un polo nord e uno sud.",
     "variabili": [
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" }
+      { "simbolo": "\\vec{B}", "descrizione": "Campo magnetico", "unita": "T" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Anche se si taglia una calamita a metà, si ottengono due nuove calamite, ognuna con un polo nord e un polo sud, confermando che le linee di campo magnetico sono sempre chiuse e non hanno sorgenti o pozzi."
+        "testo": "Tagliando una calamita a metà, si ottengono due nuove calamite, ciascuna con polo nord e sud: le linee di campo magnetico sono sempre chiuse."
       }
     ],
     "link_correlati": [],
@@ -272,16 +272,16 @@
     "sottocategoria": "Leggi Fondamentali",
     "titolo": "Circuitazione del Campo Magnetico (Legge di Ampère)",
     "formula_latex": "\\Gamma_L(\\vec{B}) = \\mu_0 I_{tot}",
-    "descrizione": "La legge di Ampère stabilisce che la circuitazione del campo magnetico $\\vec{B}$ lungo una linea chiusa $L$ è proporzionale alla corrente totale $I_{tot}$ concatenata con la linea.$",
+    "descrizione": "La circuitazione del campo magnetico lungo una linea chiusa è proporzionale alla corrente totale che attraversa la superficie delimitata dalla linea.\n\nQuesta legge permette di calcolare facilmente il campo magnetico generato da conduttori con simmetria semplice, come fili rettilinei o solenoidi.",
     "variabili": [
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico", "unita": "T" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" },
-      { "simbolo": "$I_{tot}$", "descrizione": "Corrente di conduzione concatenata", "unita": "A" }
+      { "simbolo": "\\vec{B}", "descrizione": "Campo magnetico", "unita": "T" },
+      { "simbolo": "\\mu_0", "descrizione": "Permeabilità magnetica del vuoto", "unita": "\\frac{N}{A^2}" },
+      { "simbolo": "I_{tot}", "descrizione": "Corrente di conduzione concatenata", "unita": "A" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Questo è il termine completo della circuitazione, che include il contributo della corrente di spostamento, fondamentale per la teoria delle onde elettromagnetiche."
+        "testo": "La legge di Ampère permette di calcolare il campo magnetico all'interno di un solenoide semplicemente moltiplicando la corrente totale per la permeabilità e il numero di spire."
       }
     ],
     "link_correlati": [],
@@ -295,16 +295,16 @@
     "sottocategoria": "Momenti Magnetici",
     "titolo": "Momento della Forza Magnetica su una Spira",
     "formula_latex": "\\vec{M} = \\vec{\\mu} \\times \\vec{B}",
-    "descrizione": "Il momento della forza magnetica $\\vec{M}$ che agisce su una spira di corrente con momento magnetico $\\vec{\\mu}$ immersa in un campo magnetico $\\vec{B}$. Questo momento tende ad allineare il momento magnetico della spira con il campo esterno.",
+    "descrizione": "Una spira percorsa da corrente immersa in un campo magnetico subisce un momento che tende ad allineare il suo momento magnetico con il campo.\n\nQuesto effetto è sfruttato nei motori elettrici e negli strumenti di misura a bobina mobile.",
     "variabili": [
-      { "simbolo": "$\\vec{M}$", "descrizione": "Momento della forza", "unita": "N * m" },
-      { "simbolo": "$\\vec{\\mu}$", "descrizione": "Momento magnetico della spira", "unita": "A * m²" },
-      { "simbolo": "$\\vec{B}$", "descrizione": "Campo magnetico esterno", "unita": "T" }
+      { "simbolo": "\\vec{M}", "descrizione": "Momento della forza", "unita": "N * m" },
+      { "simbolo": "\\vec{\\mu}", "descrizione": "Momento magnetico della spira", "unita": "A * m^2" },
+      { "simbolo": "\\vec{B}", "descrizione": "Campo magnetico esterno", "unita": "T" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un motore elettrico funziona grazie al momento della forza che agisce sulle spire di corrente immerse in un campo magnetico, causando la rotazione dell'albero motore."
+        "testo": "L'ago di una bussola si orienta lungo il campo magnetico terrestre proprio grazie al momento che agisce sulla spira di corrente all'interno."
       }
     ],
     "link_correlati": [],
@@ -318,16 +318,16 @@
     "sottocategoria": "Momenti Magnetici",
     "titolo": "Momento Magnetico di una Spira",
     "formula_latex": "\\vec{\\mu}_m = I \\cdot \\vec{A}",
-    "descrizione": "Il momento magnetico $\\vec{\\mu}_m$ di una spira piana percorsa da corrente $I$ e con area $A$.",
+    "descrizione": "Il momento magnetico di una spira piana è dato dal prodotto tra la corrente che la percorre e il vettore area della spira.\n\nMaggiore è la corrente o l'area, più intenso è il momento magnetico: questo determina la forza con cui la spira interagisce con i campi magnetici esterni.",
     "variabili": [
-      { "simbolo": "$\\vec{\\mu}_m$", "descrizione": "Momento magnetico della spira", "unita": "A * m²" },
-      { "simbolo": "$I$", "descrizione": "Corrente nella spira", "unita": "A" },
-      { "simbolo": "$A$", "descrizione": "Area della spira", "unita": "m²" }
+      { "simbolo": "\\vec{\\mu}_m", "descrizione": "Momento magnetico della spira", "unita": "A * m^2" },
+      { "simbolo": "I", "descrizione": "Corrente nella spira", "unita": "A" },
+      { "simbolo": "A", "descrizione": "Area della spira", "unita": "m^2" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una spira di $0.01 \\text{ m}^2$ percorsa da $0.1 \\text{ A}$ ha un momento magnetico di $\\mu = 0.1 \\text{ A} * 0.01 \\text{ m}^2 = 0.001 \\text{ A} * \\text{m}^2$."
+        "testo": "Aumentando il numero di spire in una bobina si aumenta il momento magnetico totale, rendendo la bobina più sensibile ai campi esterni."
       }
     ],
     "link_correlati": [],
@@ -341,16 +341,16 @@
     "sottocategoria": "Materiali Magnetici",
     "titolo": "Permeabilità Magnetica Relativa",
     "formula_latex": "\\mu_r = \\frac{\\mu}{\\mu_0}",
-    "descrizione": "La permeabilità magnetica relativa $\\mu_r$ di un materiale è il rapporto tra la permeabilità magnetica del materiale $\\mu$ e la permeabilità magnetica del vuoto $\\mu_0$. Indica quanto un materiale intensifica o attenua un campo magnetico.",
+    "descrizione": "La permeabilità magnetica relativa indica quanto un materiale amplifica o attenua il campo magnetico rispetto al vuoto.\n\nMateriali con permeabilità relativa molto maggiore di uno, come il ferro, sono detti ferromagnetici e vengono usati per concentrare i campi magnetici.",
     "variabili": [
-      { "simbolo": "$\\mu_r$", "descrizione": "Permeabilità magnetica relativa", "unita": "-" },
-      { "simbolo": "$\\mu$", "descrizione": "Permeabilità magnetica del materiale", "unita": "N/A²" },
-      { "simbolo": "$\\mu_0$", "descrizione": "Permeabilità magnetica del vuoto", "unita": "N/A²" }
+      { "simbolo": "\\mu_r", "descrizione": "Permeabilità magnetica relativa", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\mu", "descrizione": "Permeabilità magnetica del materiale", "unita": "\\frac{N}{A^2}" },
+      { "simbolo": "\\mu_0", "descrizione": "Permeabilità magnetica del vuoto", "unita": "\\frac{N}{A^2}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Il ferro ha una permeabilità magnetica relativa molto alta (migliaia), il che lo rende un materiale ferromagnetico, ottimo per i nuclei dei trasformatori."
+        "testo": "I nuclei dei trasformatori sono fatti di materiali con alta permeabilità relativa per aumentare l'efficienza del trasferimento di energia magnetica."
       }
     ],
     "link_correlati": [],

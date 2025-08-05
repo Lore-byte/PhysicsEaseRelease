@@ -5,12 +5,12 @@
     "sottocategoria": "Leggi di Keplero",
     "titolo": "Prima Legge di Keplero",
     "formula_latex": "\\text{Legge delle Orbite}",
-    "descrizione": "La Prima Legge di Keplero afferma che le orbite dei pianeti attorno al Sole sono ellissi, con il Sole che occupa uno dei due fuochi dell'ellisse. Questo significa che i pianeti non si muovono in cerchi perfetti.",
+    "descrizione": "La Prima Legge di Keplero stabilisce che i pianeti si muovono attorno al Sole seguendo orbite ellittiche, con il Sole in uno dei due fuochi dell'ellisse.\n\nLe orbite planetarie non sono cerchi perfetti: la distanza tra un pianeta e il Sole cambia durante il moto, spiegando perché la Terra è più vicina o più lontana dal Sole in diversi momenti dell'anno.",
     "variabili": [],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "L'orbita della Terra attorno al Sole è un'ellisse, con il Sole non esattamente al centro, ma in uno dei fuochi. Questo spiega la variazione della distanza Terra-Sole durante l'anno."
+        "testo": "L'orbita della Terra è leggermente ellittica: durante l'anno la distanza dal Sole varia, causando piccole differenze nella durata delle stagioni e nell'intensità della radiazione solare ricevuta."
       }
     ],
     "link_correlati": [ "GRA_002", "GRA_003" ],
@@ -24,15 +24,15 @@
     "sottocategoria": "Leggi di Keplero",
     "titolo": "Seconda Legge di Keplero (Legge delle Aree)",
     "formula_latex": "\\frac{dA}{dt} = costante",
-    "descrizione": "La Seconda Legge di Keplero (o Legge delle Aree) afferma che il raggio vettore che congiunge il Sole a un pianeta **spazza aree uguali in tempi uguali**. Ciò implica che un pianeta si muove più velocemente quando è più vicino al Sole (perielio) e più lentamente quando è più lontano (afelio).",
+    "descrizione": "La Seconda Legge di Keplero afferma che il raggio vettore che unisce un pianeta al Sole spazza aree uguali in tempi uguali.\n\nUn pianeta si muove più velocemente quando è vicino al Sole e più lentamente quando è lontano, così da coprire la stessa area nello stesso intervallo di tempo: il moto non è uniforme lungo l'orbita.",
     "variabili": [
-      { "simbolo": "$dA$", "descrizione": "Area spazzata dal raggio vettore", "unita": "m²" },
-      { "simbolo": "$dt$", "descrizione": "Intervallo di tempo", "unita": "s" }
+      { "simbolo": "dA", "descrizione": "Area spazzata dal raggio vettore", "unita": "m^2" },
+      { "simbolo": "dt", "descrizione": "Intervallo di tempo", "unita": "s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Quando un pianeta si avvicina al Sole, la sua velocità orbitale aumenta in modo che l'area spazzata dal raggio vettore sia la stessa di quando si trova più lontano e si muove più lentamente."
+        "testo": "Quando la Terra è al perielio (più vicina al Sole), si muove più rapidamente rispetto all'afelio (più lontana), ma in entrambi i casi il raggio vettore copre la stessa area in un mese."
       }
     ],
     "link_correlati": [ "GRA_001", "GRA_003" ],
@@ -46,18 +46,18 @@
     "sottocategoria": "Leggi di Keplero",
     "titolo": "Terza Legge di Keplero (Legge dei Periodi)",
     "formula_latex": "\\frac{T^2}{a^3} = k \\Rightarrow \\frac{T^2}{a^3} = \\frac{4\\pi^2}{GM_{Sole}}",
-    "descrizione": "La Terza Legge di Keplero (o Legge dei Periodi) afferma che il quadrato del periodo orbitale ($T$) di un pianeta è direttamente proporzionale al cubo del semiasse maggiore ($a$) della sua orbita ellittica. La costante $k$ è la stessa per tutti i corpi che orbitano attorno allo stesso corpo celeste (es. il Sole).",
+    "descrizione": "La Terza Legge di Keplero mette in relazione il quadrato del periodo orbitale di un pianeta con il cubo del semiasse maggiore della sua orbita: il loro rapporto è costante per tutti i pianeti che orbitano attorno allo stesso corpo centrale.\n\nPiù un pianeta è lontano dal Sole, più tempo impiega a compiere un'orbita completa: la legge permette di confrontare i periodi di rivoluzione dei diversi pianeti del Sistema Solare.",
     "variabili": [
-      { "simbolo": "$T$", "descrizione": "Periodo orbitale", "unita": "s" },
-      { "simbolo": "$a$", "descrizione": "Semi-asse maggiore dell'orbita", "unita": "m" },
-      { "simbolo": "$k$", "descrizione": "Costante di proporzionalità", "unita": "s²/m³" },
-      { "simbolo": "$G$", "descrizione": "Costante di gravitazione universale", "unita": "N·m²/kg²" },
-      { "simbolo": "$M_{Sole}$", "descrizione": "Massa del corpo centrale (es. il Sole)", "unita": "kg" }
+      { "simbolo": "T", "descrizione": "Periodo orbitale", "unita": "s" },
+      { "simbolo": "a", "descrizione": "Semi-asse maggiore dell'orbita", "unita": "m" },
+      { "simbolo": "k", "descrizione": "Costante di proporzionalità", "unita": "\\frac{s^2}{m^3}" },
+      { "simbolo": "G", "descrizione": "Costante di gravitazione universale", "unita": "\\frac{N \\cdot m^2}{kg^2}" },
+      { "simbolo": "M_{Sole}", "descrizione": "Massa del corpo centrale (es. il Sole)", "unita": "kg" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Pianeti più lontani dal Sole (con un $a$ maggiore) hanno periodi orbitali ($T$) significativamente più lunghi. Ad esempio, Giove ha un periodo orbitale molto più lungo della Terra."
+        "testo": "Giove, che si trova molto più lontano dal Sole rispetto alla Terra, impiega quasi 12 anni per completare un'orbita, mentre la Terra impiega solo 1 anno."
       }
     ],
     "link_correlati": [ "GRA_001", "GRA_002", "GRA_004" ],
@@ -71,18 +71,18 @@
     "sottocategoria": "Forza Gravitazionale",
     "titolo": "Legge di Gravitazione Universale",
     "formula_latex": "F = G \\frac{m_1 m_2}{r^2}",
-    "descrizione": "La Legge di Gravitazione Universale di Newton descrive la forza di attrazione tra due corpi con masse $m_1$ e $m_2$, separati da una distanza $r$. La forza è direttamente proporzionale al prodotto delle masse e inversamente proporzionale al quadrato della distanza. $G$ è la costante di gravitazione universale ($\\approx 6,67 \\cdot 10^{-11}$ N·m²/kg²).",
+    "descrizione": "La Legge di Gravitazione Universale di Newton esprime la forza di attrazione tra due masse, proporzionale al prodotto delle masse e inversamente proporzionale al quadrato della loro distanza.\n\nLa gravità agisce tra tutti i corpi dotati di massa, ma diventa significativa solo quando almeno uno dei due corpi è molto massiccio, come la Terra o il Sole.",
     "variabili": [
-      { "simbolo": "$F$", "descrizione": "Forza gravitazionale", "unita": "N" },
-      { "simbolo": "$G$", "descrizione": "Costante di gravitazione universale", "unita": "N·m²/kg²" },
-      { "simbolo": "$m_1$", "descrizione": "Massa del primo corpo", "unita": "kg" },
-      { "simbolo": "$m_2$", "descrizione": "Massa del secondo corpo", "unita": "kg" },
-      { "simbolo": "$r$", "descrizione": "Distanza tra i centri delle masse", "unita": "m" }
+      { "simbolo": "F", "descrizione": "Forza gravitazionale", "unita": "N" },
+      { "simbolo": "G", "descrizione": "Costante di gravitazione universale", "unita": "\\frac{N \\cdot m^2}{kg^2}" },
+      { "simbolo": "m_1", "descrizione": "Massa del primo corpo", "unita": "kg" },
+      { "simbolo": "m_2", "descrizione": "Massa del secondo corpo", "unita": "kg" },
+      { "simbolo": "r", "descrizione": "Distanza tra i centri delle masse", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "La forza gravitazionale tra due persone è estremamente piccola, evidenziando come la gravità sia significativa solo per corpi con masse molto grandi, come i pianeti."
+        "testo": "Due libri posti su un tavolo si attraggono con una forza gravitazionale, ma questa è così piccola che non può essere percepita senza strumenti molto sensibili."
       }
     ],
     "link_correlati": [ "GRA_005", "GRA_006" ],
@@ -96,16 +96,16 @@
     "sottocategoria": "Forza Gravitazionale",
     "titolo": "Forza Peso",
     "formula_latex": "F_p = m g",
-    "descrizione": "La forza peso è la forza gravitazionale che la Terra esercita su un oggetto di massa $m$ vicino alla sua superficie. $g$ è l'accelerazione di gravità (o intensità del campo gravitazionale) locale.",
+    "descrizione": "La forza peso è la forza con cui la Terra attira un corpo verso il suo centro, calcolata come il prodotto tra la massa del corpo e l'accelerazione di gravità locale.\n\nIl peso di un oggetto cambia se ci si sposta su pianeti diversi o a quote molto elevate, perché varia il valore di $g$, mentre la massa resta invariata.",
     "variabili": [
-      { "simbolo": "$F_p$", "descrizione": "Forza peso", "unita": "N" },
-      { "simbolo": "$m$", "descrizione": "Massa del corpo", "unita": "kg" },
-      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità (circa $9.81 \\text{ m/s}^2$ sulla superficie terrestre)", "unita": "m/s²" }
+      { "simbolo": "F_p", "descrizione": "Forza peso", "unita": "N" },
+      { "simbolo": "m", "descrizione": "Massa del corpo", "unita": "kg" },
+      { "simbolo": "g", "descrizione": "Accelerazione di gravità", "unita": "\\frac{m}{s^2}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un oggetto di $5 \\text{ kg}$ sulla superficie terrestre ha un peso di $F_p = 5 \\text{ kg} \\cdot 9.81 \\text{ m/s}^2 = 49.05 \\text{ N}$."
+        "testo": "Un astronauta sulla Luna pesa meno che sulla Terra perché la gravità lunare è circa un sesto di quella terrestre, anche se la sua massa non cambia."
       }
     ],
     "link_correlati": [ "GRA_004", "GRA_006" ],
@@ -119,17 +119,17 @@
     "sottocategoria": "Campo Gravitazionale",
     "titolo": "Campo Gravitazionale",
     "formula_latex": "g = G \\frac{M}{r^2}",
-    "descrizione": "L'intensità del campo gravitazionale $g$ in un punto dello spazio generato da una massa $M$ è la forza gravitazionale per unità di massa che agirebbe su un corpo di prova posto in quel punto. Diminuisce con il quadrato della distanza $r$ dalla massa che lo genera.",
+    "descrizione": "L'intensità del campo gravitazionale in un punto è la forza che agirebbe su un corpo di massa unitaria posto in quel punto, generata da una massa $M$ distante $r$.\n\nIl campo gravitazionale diminuisce rapidamente allontanandosi dalla massa che lo genera: sulla superficie terrestre è circa $9.8$ $\\text{m/s}^2$, ma nello spazio è molto più debole.",
     "variabili": [
-      { "simbolo": "$g$", "descrizione": "Intensità del campo gravitazionale", "unita": "N/kg" },
-      { "simbolo": "$G$", "descrizione": "Costante di gravitazione universale", "unita": "N·m²/kg²" },
-      { "simbolo": "$M$", "descrizione": "Massa che genera il campo", "unita": "kg" },
-      { "simbolo": "$r$", "descrizione": "Distanza dal centro della massa che genera il campo", "unita": "m" }
+      { "simbolo": "g", "descrizione": "Intensità del campo gravitazionale", "unita": "\\frac{N}{kg}" },
+      { "simbolo": "G", "descrizione": "Costante di gravitazione universale", "unita": "\\frac{N \\cdot m^2}{kg^2}" },
+      { "simbolo": "M", "descrizione": "Massa che genera il campo", "unita": "kg" },
+      { "simbolo": "r", "descrizione": "Distanza dal centro della massa che genera il campo", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Il campo gravitazionale sulla superficie lunare è inferiore a quello terrestre a causa della minore massa e raggio della Luna, risultando in un $g$ minore."
+        "testo": "Il campo gravitazionale sulla superficie di Marte è circa un terzo di quello terrestre, perciò un oggetto cade più lentamente rispetto alla Terra."
       }
     ],
     "link_correlati": [ "GRA_004", "GRA_005" ],
@@ -143,17 +143,17 @@
     "sottocategoria": "Orbitali e Velocità",
     "titolo": "Velocità Satellite in Orbita Circolare",
     "formula_latex": "v = \\sqrt{\\frac{GM}{r}}",
-    "descrizione": "La velocità $v$ necessaria per mantenere un satellite in un'orbita circolare stabile attorno a un corpo celeste di massa $M$ a una distanza $r$ dal suo centro. Questa velocità bilancia la forza gravitazionale con la forza centripeta richiesta per l'orbita.",
+    "descrizione": "La velocità orbitale è la velocità che un satellite deve avere per restare in orbita circolare stabile attorno a un corpo di massa $M$ a distanza $r$ dal suo centro.\n\nSe la velocità è troppo bassa il satellite cade verso il pianeta, se è troppo alta sfugge nello spazio: solo una velocità precisa permette di mantenere l'orbita.",
     "variabili": [
-      { "simbolo": "$v$", "descrizione": "Velocità orbitale del satellite", "unita": "m/s" },
-      { "simbolo": "$G$", "descrizione": "Costante di gravitazione universale", "unita": "N·m²/kg²" },
-      { "simbolo": "$M$", "descrizione": "Massa del corpo centrale (es. pianeta)", "unita": "kg" },
-      { "simbolo": "$r$", "descrizione": "Raggio dell'orbita (distanza dal centro del corpo centrale)", "unita": "m" }
+      { "simbolo": "v", "descrizione": "Velocità orbitale del satellite", "unita": "\\frac{m}{s}" },
+      { "simbolo": "G", "descrizione": "Costante di gravitazione universale", "unita": "\\frac{N \\cdot m^2}{kg^2}" },
+      { "simbolo": "M", "descrizione": "Massa del corpo centrale", "unita": "kg" },
+      { "simbolo": "r", "descrizione": "Raggio dell'orbita", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "La ISS orbita a circa $400 \\text{ km}$ sopra la Terra con una velocità di circa $7.6 \\text{ km/s}$ per rimanere in orbita stabile."
+        "testo": "Un satellite che orbita a circa $36000$ km dalla Terra (orbita geostazionaria) deve mantenere una velocità di circa $3.1$ km/s per restare sempre sopra lo stesso punto dell'equatore."
       }
     ],
     "link_correlati": [ "GRA_004", "GRA_006" ],
@@ -167,18 +167,18 @@
     "sottocategoria": "Energia Gravitazionale",
     "titolo": "Energia Potenziale Gravitazionale",
     "formula_latex": "U = -G \\frac{m M}{r}",
-    "descrizione": "L'energia potenziale gravitazionale $U$ è l'energia immagazzinata nel campo gravitazionale a causa della posizione relativa di due masse $m$ e $M$. È definita negativa perché l'energia potenziale è zero a distanza infinita e diminuisce man mano che le masse si avvicinano.",
+    "descrizione": "L'energia potenziale gravitazionale rappresenta l'energia associata alla posizione reciproca di due masse: è negativa perché occorre fornire energia per separarle all'infinito.\n\nUn corpo vicino a un pianeta ha energia potenziale minore rispetto a quando è lontano: più le masse sono vicine, più sono 'legate' gravitazionalmente.",
     "variabili": [
-      { "simbolo": "$U$", "descrizione": "Energia potenziale gravitazionale", "unita": "J" },
-      { "simbolo": "$G$", "descrizione": "Costante di gravitazione universale", "unita": "N·m²/kg²" },
-      { "simbolo": "$m$", "descrizione": "Massa del primo corpo", "unita": "kg" },
-      { "simbolo": "$M$", "descrizione": "Massa del corpo centrale", "unita": "kg" },
-      { "simbolo": "$r$", "descrizione": "Distanza tra i centri delle masse", "unita": "m" }
+      { "simbolo": "U", "descrizione": "Energia potenziale gravitazionale", "unita": "J" },
+      { "simbolo": "G", "descrizione": "Costante di gravitazione universale", "unita": "\\frac{N \\cdot m^2}{kg^2}" },
+      { "simbolo": "m", "descrizione": "Massa del primo corpo", "unita": "kg" },
+      { "simbolo": "M", "descrizione": "Massa del corpo centrale", "unita": "kg" },
+      { "simbolo": "r", "descrizione": "Distanza tra i centri delle masse", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un satellite in orbita terrestre ha un'energia potenziale gravitazionale negativa, indicando che è 'legato' gravitazionalmente alla Terra."
+        "testo": "Un satellite in orbita bassa ha energia potenziale più negativa rispetto a uno in orbita alta: per portarlo più lontano dalla Terra serve fornire energia."
       }
     ],
     "link_correlati": [ "GRA_004", "GRA_009" ],
@@ -192,17 +192,17 @@
     "sottocategoria": "Orbitali e Velocità",
     "titolo": "Velocità di Fuga",
     "formula_latex": "v_e = \\sqrt{\\frac{2GM}{R}}",
-    "descrizione": "La velocità di fuga $v_e$ è la velocità minima che un oggetto deve avere per sfuggire all'attrazione gravitazionale di un corpo celeste (massa $M$, raggio $R$) e allontanarsi all'infinito senza ricadere. Non dipende dalla massa dell'oggetto che sfugge.",
+    "descrizione": "La velocità di fuga è la velocità minima che un corpo deve raggiungere per allontanarsi definitivamente da un pianeta o da una stella, vincendo l'attrazione gravitazionale.\n\nNon importa quanto sia pesante il corpo: la velocità di fuga dipende solo dalla massa e dal raggio del corpo da cui si vuole sfuggire.",
     "variabili": [
-      { "simbolo": "$v_e$", "descrizione": "Velocità di fuga", "unita": "m/s" },
-      { "simbolo": "$G$", "descrizione": "Costante di gravitazione universale", "unita": "N·m²/kg²" },
-      { "simbolo": "$M$", "descrizione": "Massa del corpo da cui si vuole sfuggire", "unita": "kg" },
-      { "simbolo": "$R$", "descrizione": "Distanza dal centro del corpo (tipicamente il suo raggio)", "unita": "m" }
+      { "simbolo": "v_e", "descrizione": "Velocità di fuga", "unita": "\\frac{m}{s}" },
+      { "simbolo": "G", "descrizione": "Costante di gravitazione universale", "unita": "\\frac{N \\cdot m^2}{kg^2}" },
+      { "simbolo": "M", "descrizione": "Massa del corpo da cui si vuole sfuggire", "unita": "kg" },
+      { "simbolo": "R", "descrizione": "Distanza dal centro del corpo", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "La velocità di fuga dalla superficie terrestre è di circa $11.2 \\text{ km/s}$. Questo è il motivo per cui i razzi devono raggiungere velocità così elevate per lasciare l'atmosfera."
+        "testo": "Per lasciare la Terra, una sonda deve raggiungere almeno $11.2$ km/s: se parte più lentamente, la gravità la farà ricadere indietro."
       }
     ],
     "link_correlati": [ "GRA_006", "GRA_008" ],

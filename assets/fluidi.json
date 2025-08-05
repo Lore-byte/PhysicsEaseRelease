@@ -5,16 +5,16 @@
     "sottocategoria": "Idrostatica",
     "titolo": "Pressione",
     "formula_latex": "P = \\frac{F}{A}",
-    "descrizione": "La pressione $P$ è definita come la forza $F$ perpendicolare applicata per unità di superficie $A$. È una grandezza scalare fondamentale per lo studio dei fluidi.",
+    "descrizione": "La pressione è il rapporto tra la forza applicata perpendicolarmente a una superficie e l'area su cui agisce.\n\nMisura quanto una forza è 'concentrata' su una certa area: più piccola è la superficie, maggiore è la pressione esercitata dalla stessa forza.",
     "variabili": [
-      { "simbolo": "$P$", "descrizione": "Pressione", "unita": "Pa" },
-      { "simbolo": "$F$", "descrizione": "Forza perpendicolare alla superficie", "unita": "N" },
-      { "simbolo": "$A$", "descrizione": "Area della superficie", "unita": "m²" }
+      { "simbolo": "P", "descrizione": "Pressione", "unita": "Pa" },
+      { "simbolo": "F", "descrizione": "Forza perpendicolare alla superficie", "unita": "N" },
+      { "simbolo": "A", "descrizione": "Area della superficie", "unita": "m^2" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se una forza di $150 \\text{ N}$ viene applicata uniformemente su una superficie di $0.05 \\text{ m}^2$, la pressione è $P = 150 \\text{ N} / 0.05 \\text{ m}^2 = 3000 \\text{ Pa}$."
+        "testo": "Premere con la punta di una matita su un foglio esercita molta più pressione che premere con la gomma: la stessa forza distribuita su un'area minore produce un effetto più marcato, come il foro lasciato dalla punta."
       }
     ],
     "link_correlati": [ "FLU_002" ],
@@ -28,17 +28,17 @@
     "sottocategoria": "Idrostatica",
     "titolo": "Pressione Idrostatica",
     "formula_latex": "P = \\rho \\cdot g \\cdot h",
-    "descrizione": "La pressione idrostatica $P$ in un fluido a riposo dipende dalla densità del fluido $\\rho$, dall'accelerazione di gravità $g$ e dalla profondità $h$ sotto la superficie libera del fluido. Questa pressione è dovuta al peso della colonna di fluido soprastante.",
+    "descrizione": "La pressione idrostatica in un fluido a riposo dipende dalla densità del fluido, dall'accelerazione di gravità e dalla profondità.\n\nPiù si scende in profondità in un liquido, maggiore è la pressione dovuta al peso della colonna di fluido sovrastante: è per questo che sott'acqua si sente una pressione crescente sulle orecchie.",
     "variabili": [
-      { "simbolo": "$P$", "descrizione": "Pressione idrostatica", "unita": "Pa" },
-      { "simbolo": "$\\rho$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
-      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità", "unita": "m/s²" },
-      { "simbolo": "$h$", "descrizione": "Profondità (altezza della colonna di fluido)", "unita": "m" }
+      { "simbolo": "P", "descrizione": "Pressione idrostatica", "unita": "Pa" },
+      { "simbolo": "\\rho", "descrizione": "Densità del fluido", "unita": "\\frac{kg}{m^3}" },
+      { "simbolo": "g", "descrizione": "Accelerazione di gravità", "unita": "\\frac{m}{s^2}" },
+      { "simbolo": "h", "descrizione": "Profondità (altezza della colonna di fluido)", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "La pressione a $20 \\text{ m}$ di profondità nell'acqua (densità $\\approx 1000 \\text{ kg/m}^3$) è $P = 1000 \\text{ kg/m}^3 \\cdot 9.81 \\text{ m/s}^2 \\cdot 20 \\text{ m} = 196200 \\text{ Pa}$."
+        "testo": "Immergersi in piscina: a 1 metro di profondità la pressione dell'acqua è già notevolmente superiore rispetto alla superficie, e aumenta ancora scendendo più in basso, indipendentemente dalla forma della piscina."
       }
     ],
     "link_correlati": [ "FLU_001" ],
@@ -52,17 +52,17 @@
     "sottocategoria": "Idrostatica",
     "titolo": "Principio di Archimede (Forza di spinta)",
     "formula_latex": "F_A = \\rho_{fluido} \\cdot V_{immerso} \\cdot g",
-    "descrizione": "Il Principio di Archimede afferma che un corpo immerso in un fluido (totalmente o parzialmente) subisce una forza di spinta verso l'alto $F_A$ pari al peso del volume di fluido spostato dal corpo.",
+    "descrizione": "La forza di Archimede è la spinta verso l'alto che un fluido esercita su un corpo immerso, pari al peso del fluido spostato.\n\nUn oggetto immerso in un liquido riceve una spinta che lo alleggerisce: se questa spinta è maggiore del suo peso, galleggia; se è minore, affonda.",
     "variabili": [
-      { "simbolo": "$F_A$", "descrizione": "Forza di spinta (galleggiamento)", "unita": "N" },
-      { "simbolo": "$\\rho_{fluido}$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
-      { "simbolo": "$V_{immerso}$", "descrizione": "Volume del corpo immerso nel fluido", "unita": "m³" },
-      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità", "unita": "m/s²" }
+      { "simbolo": "F_A", "descrizione": "Forza di spinta (galleggiamento)", "unita": "N" },
+      { "simbolo": "\\rho_{fluido}", "descrizione": "Densità del fluido", "unita": "\\frac{kg}{m^3}" },
+      { "simbolo": "V_{immerso}", "descrizione": "Volume del corpo immerso nel fluido", "unita": "m^3" },
+      { "simbolo": "g", "descrizione": "Accelerazione di gravità", "unita": "\\frac{m}{s^2}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Per un oggetto con un volume immerso di $0.002 \\text{ m}^3$ in olio (densità $\\approx 800 \\text{ kg/m}^3$), la forza di spinta è $F_A = 800 \\text{ kg/m}^3 \\cdot 0.002 \\text{ m}^3 \\cdot 9.81 \\text{ m/s}^2 = 15.70 \\text{ N}$."
+        "testo": "Una nave di acciaio galleggia perché, pur essendo fatta di materiale denso, sposta un grande volume d'acqua: la spinta di Archimede che riceve è sufficiente a sostenerla."
       }
     ],
     "link_correlati": [ "FLU_002" ],
@@ -76,16 +76,16 @@
     "sottocategoria": "Idrodinamica",
     "titolo": "Portata (Flusso di Volume)",
     "formula_latex": "Q = A \\cdot v",
-    "descrizione": "La portata $Q$ (o flusso di volume) rappresenta il volume di fluido che attraversa una sezione trasversale di un condotto per unità di tempo.",
+    "descrizione": "La portata volumica indica quanto fluido attraversa una sezione in un secondo, ed è data dal prodotto tra area della sezione e velocità del fluido.\n\nServe a capire quanta acqua (o altro fluido) passa in un tubo o in un fiume: aumentando la velocità o la larghezza, aumenta anche la quantità trasportata.",
     "variabili": [
-      { "simbolo": "$Q$", "descrizione": "Portata", "unita": "m³/s" },
-      { "simbolo": "$A$", "descrizione": "Area della sezione trasversale", "unita": "m²" },
-      { "simbolo": "$v$", "descrizione": "Velocità media del fluido", "unita": "m/s" }
+      { "simbolo": "Q", "descrizione": "Portata", "unita": "\\frac{m^3}{s}" },
+      { "simbolo": "A", "descrizione": "Area della sezione trasversale", "unita": "m^2" },
+      { "simbolo": "v", "descrizione": "Velocità media del fluido", "unita": "\\frac{m}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Un tubo con un'area di $0.03 \\text{ m}^2$ trasporta acqua a una velocità di $0.8 \\text{ m/s}$. La portata è $Q = 0.03 \\text{ m}^2 \\cdot 0.8 \\text{ m/s} = 0.024 \\text{ m}^3/\\text{s}$."
+        "testo": "Un rubinetto aperto poco lascia uscire meno acqua al secondo rispetto a uno aperto al massimo: la portata cresce sia aumentando la velocità del getto sia allargando l'apertura."
       }
     ],
     "link_correlati": [ "FLU_005" ],
@@ -99,18 +99,18 @@
     "sottocategoria": "Idrodinamica",
     "titolo": "Equazione di Continuità",
     "formula_latex": "A_1 v_1 = A_2 v_2 = Q",
-    "descrizione": "Per un fluido incomprimibile che scorre in un condotto, il prodotto dell'area della sezione trasversale $A$ e della velocità del fluido $v$ rimane costante lungo il condotto. Questo implica che dove l'area diminuisce, la velocità del fluido aumenta, mantenendo costante la portata $Q$.",
+    "descrizione": "Per un fluido incomprimibile, il prodotto tra area della sezione e velocità resta costante lungo il condotto.\n\nSe il tubo si restringe, il fluido deve scorrere più velocemente per mantenere la stessa quantità che passa ogni secondo: è il principio che spiega perché l'acqua accelera nei tratti stretti di un fiume.",
     "variabili": [
-      { "simbolo": "$A_1$", "descrizione": "Area della sezione 1", "unita": "m²" },
-      { "simbolo": "$v_1$", "descrizione": "Velocità del fluido nella sezione 1", "unita": "m/s" },
-      { "simbolo": "$A_2$", "descrizione": "Area della sezione 2", "unita": "m²" },
-      { "simbolo": "$v_2$", "descrizione": "Velocità del fluido nella sezione 2", "unita": "m/s" },
-      { "simbolo": "$Q$", "descrizione": "Portata", "unita": "m³/s" }
+      { "simbolo": "A_1", "descrizione": "Area della sezione 1", "unita": "m^2" },
+      { "simbolo": "v_1", "descrizione": "Velocità del fluido nella sezione 1", "unita": "\\frac{m}{s}" },
+      { "simbolo": "A_2", "descrizione": "Area della sezione 2", "unita": "m^2" },
+      { "simbolo": "v_2", "descrizione": "Velocità del fluido nella sezione 2", "unita": "\\frac{m}{s}" },
+      { "simbolo": "Q", "descrizione": "Portata", "unita": "\\frac{m^3}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "L'acqua che scorre da un tubo con area $A_1 = 0.01 \\text{ m}^2$ a $v_1 = 2 \\text{ m/s}$ entra in un tubo più stretto di $A_2 = 0.005 \\text{ m}^2$. Usando $A_1 v_1 = A_2 v_2$, si ha $(0.01 \\cdot 2) = (0.005 \\cdot v_2)$, quindi $v_2 = (0.02) / 0.005 = 4 \\text{ m/s}$."
+        "testo": "Stringendo con il pollice l'uscita di una canna dell'acqua, il getto diventa più sottile ma esce più veloce: la stessa quantità d'acqua deve passare in meno spazio, quindi aumenta la velocità."
       }
     ],
     "link_correlati": [ "FLU_004", "FLU_006" ],
@@ -124,18 +124,18 @@
     "sottocategoria": "Idrodinamica",
     "titolo": "Equazione di Bernoulli",
     "formula_latex": "P + \\frac{1}{2} \\rho v^2 + \\rho g h = \\text{costante}",
-    "descrizione": "L'Equazione di Bernoulli è una relazione fondamentale che descrive la conservazione dell'energia per un fluido ideale (incomprimibile, non viscoso) in flusso stazionario. Relaziona pressione $P$, velocità $v$ e altezza $h$ lungo una linea di flusso.",
+    "descrizione": "L'equazione di Bernoulli esprime la conservazione dell'energia per un fluido ideale in movimento: la somma tra pressione, energia cinetica e energia potenziale rimane costante lungo una linea di flusso.\n\nQuando la velocità di un fluido aumenta, la sua pressione diminuisce, e viceversa: è il principio che spiega il sollevamento delle ali negli aerei e il funzionamento di molti strumenti idraulici.",
     "variabili": [
-      { "simbolo": "$P$", "descrizione": "Pressione statica", "unita": "Pa" },
-      { "simbolo": "$\\rho$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
-      { "simbolo": "$v$", "descrizione": "Velocità del fluido", "unita": "m/s" },
-      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità", "unita": "m/s²" },
-      { "simbolo": "$h$", "descrizione": "Altezza verticale sopra un punto di riferimento", "unita": "m" }
+      { "simbolo": "P", "descrizione": "Pressione statica", "unita": "Pa" },
+      { "simbolo": "\\rho", "descrizione": "Densità del fluido", "unita": "\\frac{kg}{m^3}" },
+      { "simbolo": "v", "descrizione": "Velocità del fluido", "unita": "\\frac{m}{s}" },
+      { "simbolo": "g", "descrizione": "Accelerazione di gravità", "unita": "\\frac{m}{s^2}" },
+      { "simbolo": "h", "descrizione": "Altezza verticale sopra un punto di riferimento", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Considera un tubo orizzontale ($\\Delta h = 0$) con due sezioni. Se la pressione nella prima sezione è $P_1 = 150000 \\text{ Pa}$ e la velocità $v_1 = 1 \\text{ m/s}$, e nella seconda sezione la velocità $v_2 = 2 \\text{ m/s}$ (per acqua, $\\rho = 1000 \\text{ kg/m}^3$). Allora $P_1 + \\frac{1}{2} \\rho v_1^2 = P_2 + \\frac{1}{2} \\rho v_2^2 \\implies P_2 = 148500 \\text{ Pa}$."
+        "testo": "Soffiando sopra un foglio di carta, questo si solleva: l'aria che scorre più veloce sopra il foglio crea una pressione minore rispetto a sotto, e la differenza di pressione lo spinge verso l'alto."
       }
     ],
     "link_correlati": [ "FLU_005", "FLU_007", "FLU_008" ],
@@ -149,16 +149,16 @@
     "sottocategoria": "Idrodinamica",
     "titolo": "Legge di Torricelli",
     "formula_latex": "v = \\sqrt{2gh}",
-    "descrizione": "La Legge di Torricelli descrive la velocità $v$ con cui un fluido ideale fuoriesce da un piccolo foro sul fondo o sulla parete di un recipiente, posto a una profondità $h$ rispetto alla superficie libera del fluido. È un caso speciale dell'Equazione di Bernoulli.",
+    "descrizione": "La velocità di efflusso di un liquido da un foro dipende solo dall'altezza della colonna di liquido sopra il foro, come se il liquido cadesse liberamente da quella altezza.\n\nPiù alto è il livello del liquido, più velocemente esce dal foro: è il motivo per cui una tanica piena si svuota più rapidamente all'inizio e più lentamente quando resta poca acqua.",
     "variabili": [
-      { "simbolo": "$v$", "descrizione": "Velocità di efflusso del fluido", "unita": "m/s" },
-      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità", "unita": "m/s²" },
-      { "simbolo": "$h$", "descrizione": "Altezza della colonna di fluido sopra il foro", "unita": "m" }
+      { "simbolo": "v", "descrizione": "Velocità di efflusso del fluido", "unita": "\\frac{m}{s}" },
+      { "simbolo": "g", "descrizione": "Accelerazione di gravità", "unita": "\\frac{m}{s^2}" },
+      { "simbolo": "h", "descrizione": "Altezza della colonna di fluido sopra il foro", "unita": "m" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Se l'acqua fuoriesce da un foro a $1.2 \\text{ m}$ sotto la superficie di un serbatoio, la velocità di efflusso è $v = \\sqrt{2 \\cdot 9.81 \\text{ m/s}^2 \\cdot 1.2 \\text{ m}} = \\sqrt{23.544} \\approx 4.85 \\text{ m/s}$."
+        "testo": "Forando una bottiglia piena d'acqua vicino al fondo, il getto iniziale è forte e arriva lontano; man mano che il livello scende, il getto si indebolisce e cade più vicino."
       }
     ],
     "link_correlati": [ "FLU_006" ],
@@ -172,18 +172,18 @@
     "sottocategoria": "Idrodinamica",
     "titolo": "Effetto Venturi",
     "formula_latex": "P_1 + \\frac{1}{2} \\rho v_1^2 = P_2 + \\frac{1}{2} \\rho v_2^2",
-    "descrizione": "L'Effetto Venturi descrive la riduzione della pressione in un fluido in movimento quando questo attraversa una sezione ristretta di un condotto. È una conseguenza diretta del principio di Bernoulli e dell'equazione di continuità, assumendo un condotto orizzontale ($h$ costante).",
+    "descrizione": "L'effetto Venturi descrive come la pressione di un fluido diminuisce quando la sua velocità aumenta passando attraverso una strozzatura in un condotto orizzontale.\n\nQuesto principio è alla base di strumenti come il carburatore o il misuratore di portata: il restringimento accelera il fluido e abbassa la pressione, permettendo di aspirare altri fluidi o misurare la velocità.",
     "variabili": [
-      { "simbolo": "$P_1$", "descrizione": "Pressione nella sezione più ampia", "unita": "Pa" },
-      { "simbolo": "$v_1$", "descrizione": "Velocità del fluido nella sezione più ampia", "unita": "m/s" },
-      { "simbolo": "$P_2$", "descrizione": "Pressione nella sezione ristretta", "unita": "Pa" },
-      { "simbolo": "$v_2$", "descrizione": "Velocità del fluido nella sezione ristretta", "unita": "m/s" },
-      { "simbolo": "$\\rho$", "descrizione": "Densità del fluido", "unita": "kg/m³" }
+      { "simbolo": "P_1", "descrizione": "Pressione nella sezione più ampia", "unita": "Pa" },
+      { "simbolo": "v_1", "descrizione": "Velocità del fluido nella sezione più ampia", "unita": "\\frac{m}{s}" },
+      { "simbolo": "P_2", "descrizione": "Pressione nella sezione ristretta", "unita": "Pa" },
+      { "simbolo": "v_2", "descrizione": "Velocità del fluido nella sezione ristretta", "unita": "\\frac{m}{s}" },
+      { "simbolo": "\\rho", "descrizione": "Densità del fluido", "unita": "\\frac{kg}{m^3}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "In un condotto orizzontale, l'acqua ($\\rho = 1000 \\text{ kg/m}^3$) passa da una sezione dove $P_1 = 200000 \\text{ Pa}$ e $v_1 = 0.5 \\text{ m/s}$ a una sezione ristretta dove $v_2 = 2 \\text{ m/s}$. La pressione nella sezione ristretta è $P_2 = P_1 + \\frac{1}{2} \\rho (v_1^2 - v_2^2) = 198125 \\text{ Pa}$."
+        "testo": "Nei nebulizzatori, l'aria che passa veloce in un condotto stretto crea una depressione che aspira il liquido e lo trasforma in goccioline: è l'effetto Venturi sfruttato nella vita quotidiana."
       }
     ],
     "link_correlati": [ "FLU_005", "FLU_006" ],
@@ -197,18 +197,18 @@
     "sottocategoria": "Viscosità e Resistenza",
     "titolo": "Regime Laminare (Numero di Reynolds)",
     "formula_latex": "Re = \\frac{\\rho v L}{\\mu}",
-    "descrizione": "Il numero di Reynolds $Re$ è un numero **adimensionale** che aiuta a prevedere se il flusso di un fluido sarà laminare (regolare e parallelo) o turbolento (irregolare e caotico). Per valori bassi di $Re$ (tipicamente $Re < 2000$), il flusso è laminare.",
+    "descrizione": "Il numero di Reynolds è un parametro adimensionale che permette di prevedere se il flusso di un fluido sarà ordinato (laminare) o caotico (turbolento).\n\nValori bassi indicano un flusso regolare, come l'acqua che scorre lentamente in un tubo; valori alti segnalano vortici e mescolamenti, come nei fiumi in piena o nell'acqua che esce velocemente da un rubinetto.",
     "variabili": [
-      { "simbolo": "$Re$", "descrizione": "Numero di Reynolds", "unita": "adimensionale" },
-      { "simbolo": "$\\rho$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
-      { "simbolo": "$v$", "descrizione": "Velocità caratteristica del flusso", "unita": "m/s" },
-      { "simbolo": "$L$", "descrizione": "Dimensione lineare caratteristica (es. diametro del tubo)", "unita": "m" },
-      { "simbolo": "$\\mu$", "descrizione": "Viscosità dinamica del fluido", "unita": "Pa·s" }
+      { "simbolo": "Re", "descrizione": "Numero di Reynolds", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\rho", "descrizione": "Densità del fluido", "unita": "\\frac{kg}{m^3}" },
+      { "simbolo": "v", "descrizione": "Velocità caratteristica del flusso", "unita": "\\frac{m}{s}" },
+      { "simbolo": "L", "descrizione": "Dimensione lineare caratteristica (es. diametro del tubo)", "unita": "m" },
+      { "simbolo": "\\mu", "descrizione": "Viscosità dinamica del fluido", "unita": "Pa \\cdot s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Calcola il numero di Reynolds per acqua ($\\rho = 1000 \\text{ kg/m}^3$, $\\mu = 0.001 \\text{ Pa}\\cdot\\text{s}$) che scorre in un tubo di $L = 0.02 \\text{ m}$ di diametro a una velocità $v = 0.1 \\text{ m/s}$. $Re = (1000 \\cdot 0.1 \\cdot 0.02) / 0.001 = 2000$. Questo indica un flusso che è al limite tra laminare e turbolento."
+        "testo": "Versando miele lentamente su una fetta di pane, il flusso resta regolare e parallelo (regime laminare); se si versa acqua velocemente in un bicchiere, si formano vortici e schizzi (regime turbolento)."
       }
     ],
     "link_correlati": [ "FLU_010" ],
@@ -222,18 +222,18 @@
     "sottocategoria": "Viscosità e Resistenza",
     "titolo": "Legge di Stokes (Forza di Attrito Viscoso)",
     "formula_latex": "F_d = 6 \\pi \\eta r v",
-    "descrizione": "La Legge di Stokes descrive la forza di attrito viscoso $F_d$ che agisce su una piccola sfera (raggio $r$) che si muove con velocità $v$ attraverso un fluido viscoso con viscosità dinamica $\\eta$. È valida per flussi laminari e a bassi numeri di Reynolds.",
+    "descrizione": "La forza di attrito viscoso che agisce su una piccola sfera che si muove in un fluido è proporzionale alla viscosità del fluido, al raggio della sfera e alla sua velocità.\n\nPiù il fluido è denso o la sfera è grande e veloce, maggiore è la resistenza che incontra: è il motivo per cui una pallina cade lentamente nell'olio rispetto all'acqua.",
     "variabili": [
-      { "simbolo": "$F_d$", "descrizione": "Forza di attrito viscoso (forza di Stokes)", "unita": "N" },
-      { "simbolo": "$\\pi$", "descrizione": "Pi greco", "unita": "costante matematica" },
-      { "simbolo": "$\\eta$", "descrizione": "Viscosità dinamica del fluido", "unita": "Pa·s" },
-      { "simbolo": "$r$", "descrizione": "Raggio della sfera", "unita": "m" },
-      { "simbolo": "$v$", "descrizione": "Velocità della sfera rispetto al fluido", "unita": "m/s" }
+      { "simbolo": "F_d", "descrizione": "Forza di attrito viscoso (forza di Stokes)", "unita": "N" },
+      { "simbolo": "\\pi", "descrizione": "Pi greco", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\eta", "descrizione": "Viscosità dinamica del fluido", "unita": "Pa \\cdot s" },
+      { "simbolo": "r", "descrizione": "Raggio della sfera", "unita": "m" },
+      { "simbolo": "v", "descrizione": "Velocità della sfera rispetto al fluido", "unita": "\\frac{m}{s}" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "Una sfera di raggio $r = 0.001 \\text{ m}$ si muove a $v = 0.05 \\text{ m/s}$ in glicerina ($\\eta = 1.5 \\text{ Pa}\\cdot\\text{s}$). La forza di attrito è $F_d = 6 \\cdot \\pi \\cdot 1.5 \\cdot 0.001 \\cdot 0.05 \\approx 0.00141 \\text{ N}$."
+        "testo": "Agitando una pallina in un bicchiere di miele, si nota che si muove molto lentamente: la forza di attrito viscoso è così grande da rallentare notevolmente il suo moto rispetto a quando si trova in acqua."
       }
     ],
     "link_correlati": [ "FLU_009", "FLU_011" ],
@@ -247,19 +247,19 @@
     "sottocategoria": "Viscosità e Resistenza",
     "titolo": "Velocità Limite (o Terminale)",
     "formula_latex": "v_t = \\frac{2 r^2 g (\\rho_p - \\rho_f)}{9 \\eta}",
-    "descrizione": "La velocità limite $v_t$ (o velocità terminale) è la velocità costante che un oggetto raggiunge quando cade attraverso un fluido. La forza di gravità è bilanciata dalla forza di attrito viscoso (Legge di Stokes) e dalla forza di spinta (Archimede). Questa formula si applica a sfere che cadono in un fluido viscoso.",
+    "descrizione": "La velocità limite è la velocità costante raggiunta da una sfera che cade in un fluido quando la forza di gravità è bilanciata dalla resistenza viscosa e dalla spinta di Archimede.\n\nOggetti piccoli che cadono in liquidi viscosi smettono presto di accelerare e scendono a velocità costante: è il caso delle gocce di pioggia o delle particelle di polvere nell'aria.",
     "variabili": [
-      { "simbolo": "$v_t$", "descrizione": "Velocità limite", "unita": "m/s" },
-      { "simbolo": "$r$", "descrizione": "Raggio della sfera", "unita": "m" },
-      { "simbolo": "$g$", "descrizione": "Accelerazione di gravità", "unita": "m/s²" },
-      { "simbolo": "$\\rho_p$", "descrizione": "Densità dell'oggetto (particella)", "unita": "kg/m³" },
-      { "simbolo": "$\\rho_f$", "descrizione": "Densità del fluido", "unita": "kg/m³" },
-      { "simbolo": "$\\eta$", "descrizione": "Viscosità dinamica del fluido", "unita": "Pa·s" }
+      { "simbolo": "v_t", "descrizione": "Velocità limite", "unita": "\\frac{m}{s}" },
+      { "simbolo": "r", "descrizione": "Raggio della sfera", "unita": "m" },
+      { "simbolo": "g", "descrizione": "Accelerazione di gravità", "unita": "\\frac{m}{s^2}" },
+      { "simbolo": "\\rho_p", "descrizione": "Densità dell'oggetto (particella)", "unita": "\\frac{kg}{m^3}" },
+      { "simbolo": "\\rho_f", "descrizione": "Densità del fluido", "unita": "\\frac{kg}{m^3}" },
+      { "simbolo": "\\eta", "descrizione": "Viscosità dinamica del fluido", "unita": "Pa \\cdot s" }
     ],
     "esempi": [
       {
         "titolo": "Esempio",
-        "testo": "La velocità limite di una sfera di piombo ($r = 0.001 \\text{ m}$, $\\rho_p = 11340 \\text{ kg/m}^3$) che cade in olio ($\\rho_f = 900 \\text{ kg/m}^3$, $\\eta = 0.1 \\text{ Pa}\\cdot\\text{s}$) è $v_t = \\frac{0.2048}{0.9} \\approx 0.228 \\text{ m/s}$."
+        "testo": "Le gocce di pioggia non accelerano all'infinito mentre cadono: raggiungono una velocità massima perché l'aria esercita una resistenza crescente che alla fine bilancia il loro peso."
       }
     ],
     "link_correlati": [ "FLU_003", "FLU_010" ],

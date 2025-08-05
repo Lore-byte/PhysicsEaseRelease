@@ -297,6 +297,9 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                 ),
               ),
             ),
+
+            //Variabili OLD
+            /*
             if (widget.formula.variabili.isNotEmpty)
               _buildSectionCard(
                 title: 'Variabili',
@@ -318,7 +321,67 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                       .toList(),
                 ),
               ),
-            if (widget.formula.esempi.isNotEmpty)
+              */
+
+            //Variabili NEW con render LaTeX per 'simbolo' e 'unita' senza parser
+            if (widget.formula.variabili.isNotEmpty)
+              _buildSectionCard(
+                title: 'Variabili',
+                content: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: widget.formula.variabili.map((v) {
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 4.0),
+                      child: RichText(
+                        text: TextSpan(
+                          children: [
+                            WidgetSpan(
+                              alignment: PlaceholderAlignment.middle,
+                              child: Math.tex(
+                                v.simbolo,
+                                textStyle: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurface),
+                                onErrorFallback: (e) => Text(
+                                  '[Errore LaTeX simbolo]',
+                                  style: TextStyle(color: colorScheme.error, fontSize: 12),
+                                ),
+                              ),
+                            ),
+                            TextSpan(
+                              text: ': ',
+                              style: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurface),
+                            ),
+                            ..._parseMixedContent(
+                              v.descrizione,
+                              textTheme.bodyMedium,
+                              colorScheme.onSurface,
+                            ),
+                            TextSpan(
+                              text: ' (',
+                              style: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurface),
+                            ),
+                            WidgetSpan(
+                              alignment: PlaceholderAlignment.middle,
+                              child: Math.tex(
+                                v.unita,
+                                textStyle: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurface),
+                                onErrorFallback: (e) => Text(
+                                  '[Errore LaTeX unità]',
+                                  style: TextStyle(color: colorScheme.error, fontSize: 12),
+                                ),
+                              ),
+                            ),
+                            TextSpan(
+                              text: ')',
+                              style: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurface),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  }).toList(),
+                ),
+              ),
+    if (widget.formula.esempi.isNotEmpty)
               ...widget.formula.esempi.map(
                     (e) => _buildSectionCard(
                   title: e.titolo,

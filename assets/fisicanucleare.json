@@ -5,16 +5,21 @@
     "sottocategoria": "Nucleo Atomico",
     "titolo": "Difetto di Massa",
     "formula_latex": "\\Delta m = Z m_p + N m_n - m_{\\text{nucleo}}",
-    "descrizione": "La differenza tra la massa totale dei **nucleoni** separati (Z protoni e N neutroni) e la massa effettiva del nucleo.",
+    "descrizione": "Il difetto di massa è la differenza tra la somma delle masse dei nucleoni separati e la massa reale del nucleo.\n\nQuesta differenza mostra che una parte della massa si trasforma in energia di legame che tiene unito il nucleo: il nucleo pesa meno della somma dei suoi componenti.",
     "variabili": [
-      { "simbolo": "$\\Delta m$", "descrizione": "Difetto di massa", "unita": "kg" },
-      { "simbolo": "$Z$", "descrizione": "Numero di protoni", "unita": "-" },
-      { "simbolo": "$m_p$", "descrizione": "Massa del protone", "unita": "kg" },
-      { "simbolo": "$N$", "descrizione": "Numero di neutroni", "unita": "-" },
-      { "simbolo": "$m_n$", "descrizione": "Massa del neutrone", "unita": "kg" },
-      { "simbolo": "$m_{\\text{nucleo}}$", "descrizione": "Massa del nucleo", "unita": "kg" }
+      { "simbolo": "\\Delta m", "descrizione": "Difetto di massa", "unita": "kg" },
+      { "simbolo": "Z", "descrizione": "Numero di protoni", "unita": "\\text{adimensionale}" },
+      { "simbolo": "m_p", "descrizione": "Massa del protone", "unita": "kg" },
+      { "simbolo": "N", "descrizione": "Numero di neutroni", "unita": "\\text{adimensionale}" },
+      { "simbolo": "m_n", "descrizione": "Massa del neutrone", "unita": "kg" },
+      { "simbolo": "m_{\\text{nucleo}}", "descrizione": "Massa del nucleo", "unita": "kg" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se si sommano le masse di $$2$$ protoni e $$2$$ neutroni e si confronta con la massa del nucleo di elio, si scopre che il nucleo pesa meno: la differenza è il difetto di massa."
+      }
+    ],
     "link_correlati": ["NUC_002"],
     "parole_chiave": ["difetto di massa","massa nucleare","legame nucleare"],
     "data_creazione": "2025-07-15",
@@ -26,13 +31,18 @@
     "sottocategoria": "Energia Nucleare",
     "titolo": "Energia di Legame Nucleare",
     "formula_latex": "E_b = \\Delta m \\; c^2",
-    "descrizione": "L’energia necessaria per separare completamente tutti i nucleoni del nucleo, pari alla massa mancante moltiplicata per c².",
+    "descrizione": "L'energia di legame nucleare è l'energia necessaria per separare completamente tutti i nucleoni di un nucleo.\n\nQuesta energia corrisponde alla massa mancante (difetto di massa) trasformata in energia secondo la relazione di Einstein: più è grande, più il nucleo è stabile.",
     "variabili": [
-      { "simbolo": "$E_b$", "descrizione": "Energia di legame", "unita": "J" },
-      { "simbolo": "$\\Delta m$", "descrizione": "Difetto di massa", "unita": "kg" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" }
+      { "simbolo": "E_b", "descrizione": "Energia di legame", "unita": "J" },
+      { "simbolo": "\\Delta m", "descrizione": "Difetto di massa", "unita": "kg" },
+      { "simbolo": "c", "descrizione": "Velocità della luce", "unita": "\\frac{m}{s}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Per separare i nucleoni di un nucleo di elio serve molta energia: questa energia è proprio quella che tiene unito il nucleo e deriva dalla massa mancante rispetto ai nucleoni separati."
+      }
+    ],
     "link_correlati": ["NUC_001"],
     "parole_chiave": ["energia di legame","difetto di massa","c²"],
     "data_creazione": "2025-07-15",
@@ -43,16 +53,20 @@
     "categoria": "Fisica Nucleare",
     "sottocategoria": "Decadimento Radioattivo",
     "titolo": "Decadimento α (Alpha)",
-    "formula_latex":
-    "^{A}_{Z}X \\to ^{A-4}_{Z-2}Y + ^{4}_{2}\\mathrm{He} + Q",
-    "descrizione": "Emissione di una particella α (nucleo di elio-4) da un nucleo instabile, con rilascio di energia Q.",
+    "formula_latex": "^{A}_{Z}X \\to ^{A-4}_{Z-2}Y + ^{4}_{2}\\mathrm{He} + Q",
+    "descrizione": "Nel decadimento alfa, un nucleo instabile emette una particella $$\\alpha$$ (nucleo di elio-4) e si trasforma in un nucleo figlio più leggero.\n\nQuesto processo riduce sia il numero di protoni che di neutroni del nucleo originale e libera energia sotto forma di $$Q$$.",
     "variabili": [
-      { "simbolo": "$^{A}_{Z}X$", "descrizione": "Nucleo padre", "unita": "-" },
-      { "simbolo": "$^{A-4}_{Z-2}Y$", "descrizione": "Nucleo figlio", "unita": "-" },
-      { "simbolo": "$^4_2\\mathrm{He}$", "descrizione": "Particella α", "unita": "-" },
-      { "simbolo": "$Q$", "descrizione": "Energia rilasciata", "unita": "J" }
+      { "simbolo": "^{A}_{Z}X", "descrizione": "Nucleo padre", "unita": "\\text{adimensionale}" },
+      { "simbolo": "^{A-4}_{Z-2}Y", "descrizione": "Nucleo figlio", "unita": "\\text{adimensionale}" },
+      { "simbolo": "^4_2\\mathrm{He}", "descrizione": "Particella α", "unita": "\\text{adimensionale}" },
+      { "simbolo": "Q", "descrizione": "Energia rilasciata", "unita": "J" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Il radio $$^{226}_{88}Ra$$ decade emettendo una particella $$\\alpha$$ e si trasforma in radon $$^{222}_{86}Rn$$: la massa e la carica diminuiscono entrambe."
+      }
+    ],
     "link_correlati": ["NUC_004","NUC_005","NUC_006"],
     "parole_chiave": ["alpha","decadimento","radioattivo","He"],
     "data_creazione": "2025-07-15",
@@ -63,17 +77,21 @@
     "categoria": "Fisica Nucleare",
     "sottocategoria": "Decadimento Radioattivo",
     "titolo": "Decadimento β⁻ (Beta Meno)",
-    "formula_latex":
-    "n \\to p + e^{-} + \\bar\\nu_e + Q",
-    "descrizione": "Un neutrone si trasforma in protone emettendo un elettrone e un antineutrino elettronico.",
+    "formula_latex": "n \\to p + e^{-} + \\bar\\nu_e + Q",
+    "descrizione": "Nel decadimento beta meno, un neutrone si trasforma in un protone emettendo un elettrone e un antineutrino elettronico.\n\nQuesto processo aumenta il numero di protoni nel nucleo e libera energia $$Q$$: il nucleo si sposta verso un elemento con numero atomico maggiore.",
     "variabili": [
-      { "simbolo": "$n$", "descrizione": "Neutrone", "unita": "-" },
-      { "simbolo": "$p$", "descrizione": "Protone", "unita": "-" },
-      { "simbolo": "$e^{-}$", "descrizione": "Elettrone", "unita": "-" },
-      { "simbolo": "$\\bar\\nu_e$", "descrizione": "Antineutrino elettronico", "unita": "-" },
-      { "simbolo": "$Q$", "descrizione": "Energia di decadimento", "unita": "J" }
+      { "simbolo": "n", "descrizione": "Neutrone", "unita": "\\text{adimensionale}" },
+      { "simbolo": "p", "descrizione": "Protone", "unita": "\\text{adimensionale}" },
+      { "simbolo": "e^{-}", "descrizione": "Elettrone", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\bar\\nu_e", "descrizione": "Antineutrino elettronico", "unita": "\\text{adimensionale}" },
+      { "simbolo": "Q", "descrizione": "Energia di decadimento", "unita": "J" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Il carbonio-14 ($$^{14}C$$) decade in azoto-14 ($$^{14}N$$) tramite emissione beta meno: il nucleo guadagna un protone e perde un neutrone."
+      }
+    ],
     "link_correlati": ["NUC_003","NUC_005","NUC_006"],
     "parole_chiave": ["beta meno","elettrone","neutrino","decadimento"],
     "data_creazione": "2025-07-15",
@@ -84,17 +102,21 @@
     "categoria": "Fisica Nucleare",
     "sottocategoria": "Decadimento Radioattivo",
     "titolo": "Decadimento β⁺ (Beta Più)",
-    "formula_latex":
-    "p \\to n + e^{+} + \\nu_e + Q",
-    "descrizione": "Un protone si trasforma in neutrone emettendo un positrone e un neutrino elettronico.",
+    "formula_latex": "p \\to n + e^{+} + \\nu_e + Q",
+    "descrizione": "Nel decadimento beta più, un protone si trasforma in un neutrone emettendo un positrone e un neutrino elettronico.\n\nIl nucleo perde un protone e acquista un neutrone, spostandosi verso un elemento con numero atomico minore e liberando energia $$Q$$.",
     "variabili": [
-      { "simbolo": "$p$", "descrizione": "Protone", "unita": "-" },
-      { "simbolo": "$n$", "descrizione": "Neutrone", "unita": "-" },
-      { "simbolo": "$e^{+}$", "descrizione": "Positrone", "unita": "-" },
-      { "simbolo": "$\\nu_e$", "descrizione": "Neutrino elettronico", "unita": "-" },
-      { "simbolo": "$Q$", "descrizione": "Energia di decadimento", "unita": "J" }
+      { "simbolo": "p", "descrizione": "Protone", "unita": "\\text{adimensionale}" },
+      { "simbolo": "n", "descrizione": "Neutrone", "unita": "\\text{adimensionale}" },
+      { "simbolo": "e^{+}", "descrizione": "Positrone", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\nu_e", "descrizione": "Neutrino elettronico", "unita": "\\text{adimensionale}" },
+      { "simbolo": "Q", "descrizione": "Energia di decadimento", "unita": "J" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Il sodio-22 ($$^{22}Na$$) decade in neon-22 ($$^{22}Ne$$) tramite emissione beta più: il nucleo perde un protone e si trasforma in un elemento con numero atomico più basso."
+      }
+    ],
     "link_correlati": ["NUC_003","NUC_004","NUC_006"],
     "parole_chiave": ["beta più","positrone","neutrino","decadimento"],
     "data_creazione": "2025-07-15",
@@ -105,16 +127,20 @@
     "categoria": "Fisica Nucleare",
     "sottocategoria": "Decadimento Radioattivo",
     "titolo": "Emissione γ (Gamma)",
-    "formula_latex":
-    "^{A}_{Z}X^{*} \\to ^{A}_{Z}X + \\gamma + Q",
-    "descrizione": "Transizione di un nucleo da uno stato eccitato X* allo stato fondamentale X con emissione di fotone γ.",
+    "formula_latex": "^{A}_{Z}X^{*} \\to ^{A}_{Z}X + \\gamma + Q",
+    "descrizione": "Nell'emissione gamma, un nucleo passa da uno stato eccitato a uno stato fondamentale emettendo un fotone $$\\gamma$$.\n\nNon cambia la composizione del nucleo, ma viene liberata energia sotto forma di radiazione elettromagnetica molto penetrante.",
     "variabili": [
-      { "simbolo": "$^{A}_{Z}X^{*}$", "descrizione": "Nucleo eccitato", "unita": "-" },
-      { "simbolo": "$^{A}_{Z}X$", "descrizione": "Nucleo a stato fondamentale", "unita": "-" },
-      { "simbolo": "$\\gamma$", "descrizione": "Fotone gamma", "unita": "-" },
-      { "simbolo": "$Q$", "descrizione": "Energia emessa", "unita": "J" }
+      { "simbolo": "^{A}_{Z}X^{*}", "descrizione": "Nucleo eccitato", "unita": "\\text{adimensionale}" },
+      { "simbolo": "^{A}_{Z}X", "descrizione": "Nucleo a stato fondamentale", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\gamma", "descrizione": "Fotone gamma", "unita": "\\text{adimensionale}" },
+      { "simbolo": "Q", "descrizione": "Energia emessa", "unita": "J" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Dopo un decadimento alfa o beta, il nucleo figlio può essere ancora eccitato: tornando allo stato fondamentale emette un fotone gamma, senza cambiare la sua natura chimica."
+      }
+    ],
     "link_correlati": ["NUC_003","NUC_004","NUC_005"],
     "parole_chiave": ["gamma","fotone","decadimento","raggi γ"],
     "data_creazione": "2025-07-15",
@@ -126,14 +152,19 @@
     "sottocategoria": "Decadimento Radioattivo",
     "titolo": "Legge del Decadimento Radioattivo",
     "formula_latex": "N(t) = N_0 e^{-\\lambda t}",
-    "descrizione": "Descrive come il numero di nuclei radioattivi diminuisce esponenzialmente nel tempo con costante di decadimento λ.",
+    "descrizione": "La legge del decadimento radioattivo descrive come il numero di nuclei radioattivi diminuisce esponenzialmente nel tempo.\n\nLa quantità di nuclei si dimezza a intervalli regolari: più grande è $$\\lambda$$, più rapidamente avviene il decadimento.",
     "variabili": [
-      { "simbolo": "$N(t)$", "descrizione": "Nuclei rimanenti a tempo t", "unita": "-" },
-      { "simbolo": "$N_0$", "descrizione": "Nuclei iniziali a t=0", "unita": "-" },
-      { "simbolo": "$\\lambda$", "descrizione": "Costante di decadimento", "unita": "s^{-1}" },
-      { "simbolo": "$t$", "descrizione": "Tempo", "unita": "s" }
+      { "simbolo": "N(t)", "descrizione": "Nuclei rimanenti a tempo t", "unita": "\\text{adimensionale}" },
+      { "simbolo": "N_0", "descrizione": "Nuclei iniziali a t=0", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\lambda", "descrizione": "Costante di decadimento", "unita": "\\text{s}^{-1}" },
+      { "simbolo": "t", "descrizione": "Tempo", "unita": "s" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Se si parte con $$1000$$ nuclei radioattivi e il tempo di dimezzamento è $$1$$ ora, dopo $$1$$ ora ne restano $$500$$, dopo $$2$$ ore $$250$$, e così via."
+      }
+    ],
     "link_correlati": ["NUC_008","NUC_009"],
     "parole_chiave": ["decadimento","esponenziale","costante λ"],
     "data_creazione": "2025-07-15",
@@ -145,13 +176,18 @@
     "sottocategoria": "Decadimento Radioattivo",
     "titolo": "Periodo di Dimezzamento",
     "formula_latex": "t_{1/2} = \\frac{\\ln 2}{\\lambda}",
-    "descrizione": "Tempo necessario affinché la metà dei nuclei radioattivi di un campione decada.",
+    "descrizione": "Il periodo di dimezzamento è il tempo necessario affinché la metà dei nuclei radioattivi presenti in un campione decada.\n\nOgni intervallo di tempo pari a $$t_{1/2}$$ la quantità di nuclei si riduce della metà, indipendentemente dal numero iniziale.",
     "variabili": [
-      { "simbolo": "$t_{1/2}$", "descrizione": "Periodo di dimezzamento", "unita": "s" },
-      { "simbolo": "$\\ln 2$", "descrizione": "Logaritmo naturale di 2", "unita": "-" },
-      { "simbolo": "$\\lambda$", "descrizione": "Costante di decadimento", "unita": "s^{-1}" }
+      { "simbolo": "t_{1/2}", "descrizione": "Periodo di dimezzamento", "unita": "s" },
+      { "simbolo": "\\ln 2", "descrizione": "Logaritmo naturale di 2", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\lambda", "descrizione": "Costante di decadimento", "unita": "\\text{s}^{-1}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Il carbonio-14 ha un periodo di dimezzamento di circa $$5730$$ anni: dopo questo tempo, metà degli atomi iniziali sono decaduti."
+      }
+    ],
     "link_correlati": ["NUC_007","NUC_009"],
     "parole_chiave": ["half-life","dimezzamento","λ"],
     "data_creazione": "2025-07-15",
@@ -163,13 +199,18 @@
     "sottocategoria": "Decadimento Radioattivo",
     "titolo": "Attività di un Campione Radioattivo",
     "formula_latex": "A = \\lambda N",
-    "descrizione": "Numero di decays al secondo, proporzionale al numero di nuclei residui N e alla costante λ.",
+    "descrizione": "L'attività di un campione radioattivo indica il numero di decadimenti che avvengono ogni secondo.\n\nPiù nuclei radioattivi sono presenti e più è alta la costante $$\\lambda$$, maggiore sarà l'attività: si misura in becquerel (Bq).",
     "variabili": [
-      { "simbolo": "$A$", "descrizione": "Attività", "unita": "Bq" },
-      { "simbolo": "$\\lambda$", "descrizione": "Costante di decadimento", "unita": "s^{-1}" },
-      { "simbolo": "$N$", "descrizione": "Nuclei rimanenti", "unita": "-" }
+      { "simbolo": "A", "descrizione": "Attività", "unita": "Bq" },
+      { "simbolo": "\\lambda", "descrizione": "Costante di decadimento", "unita": "\\text{s}^{-1}" },
+      { "simbolo": "N", "descrizione": "Nuclei rimanenti", "unita": "\\text{adimensionale}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Un campione con $$10^6$$ nuclei radioattivi e $$\\lambda = 0{,}01\\ \\text{s}^{-1}$$ ha un'attività di $$10^4$$ Bq: avvengono $$10^4$$ decadimenti ogni secondo."
+      }
+    ],
     "link_correlati": ["NUC_007","NUC_008"],
     "parole_chiave": ["attività","becquerel","decadimento"],
     "data_creazione": "2025-07-15",
@@ -181,15 +222,20 @@
     "sottocategoria": "Reazioni Nucleari",
     "titolo": "Fissione Nucleare",
     "formula_latex": "{}^{A}_{Z}X + n \\to \\sum_i {}^{A_i}_{Z_i}Y_i + \\nu\\,n + Q",
-    "descrizione": "Scissione di un nucleo pesante in frammenti più leggeri con emissione di neutroni e rilascio di energia Q.",
+    "descrizione": "La fissione nucleare è la scissione di un nucleo pesante in due o più frammenti più leggeri, con emissione di neutroni e rilascio di energia $$Q$$.\n\nQuesto processo può innescare una reazione a catena, come avviene nei reattori nucleari e nelle bombe atomiche.",
     "variabili": [
-      { "simbolo": "$^{A}_{Z}X$", "descrizione": "Nucleo fissile", "unita": "-" },
-      { "simbolo": "$n$", "descrizione": "Neutrone incidente", "unita": "-" },
-      { "simbolo": "$^{A_i}_{Z_i}Y_i$", "descrizione": "Frammenti di fissione", "unita": "-" },
-      { "simbolo": "$\\nu$", "descrizione": "Numero di neutroni emessi", "unita": "-" },
-      { "simbolo": "$Q$", "descrizione": "Energia rilasciata", "unita": "J" }
+      { "simbolo": "^{A}_{Z}X", "descrizione": "Nucleo fissile", "unita": "\\text{adimensionale}" },
+      { "simbolo": "n", "descrizione": "Neutrone incidente", "unita": "\\text{adimensionale}" },
+      { "simbolo": "^{A_i}_{Z_i}Y_i", "descrizione": "Frammenti di fissione", "unita": "\\text{adimensionale}" },
+      { "simbolo": "\\nu", "descrizione": "Numero di neutroni emessi", "unita": "\\text{adimensionale}" },
+      { "simbolo": "Q", "descrizione": "Energia rilasciata", "unita": "J" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Quando un neutrone colpisce un nucleo di uranio-235, il nucleo si divide in due frammenti più piccoli, emette altri neutroni e libera una grande quantità di energia."
+      }
+    ],
     "link_correlati": ["NUC_013"],
     "parole_chiave": ["fissione","reaktore","energia nucleare"],
     "data_creazione": "2025-07-15",
@@ -201,15 +247,20 @@
     "sottocategoria": "Reazioni Nucleari",
     "titolo": "Fusione Nucleare",
     "formula_latex": "\\begin{aligned} A + B &\\to C + Q \\\\ Q &= (m_A + m_B - m_C)c^2 \\end{aligned}",
-    "descrizione": "Unione di due nuclei leggeri per formare un nucleo più pesante, con massa mancante convertita in energia Q.",
+    "descrizione": "La fusione nucleare è l'unione di due nuclei leggeri per formare un nucleo più pesante, con liberazione di energia $$Q$$.\n\nLa massa dei prodotti è minore della somma delle masse iniziali: la differenza si trasforma in energia, come avviene nelle stelle.",
     "variabili": [
-      { "simbolo": "$A,B$", "descrizione": "Nuclei reagenti", "unita": "-" },
-      { "simbolo": "$C$", "descrizione": "Nucleo prodotto", "unita": "-" },
-      { "simbolo": "$m_A,m_B,m_C$", "descrizione": "Masse dei nuclei", "unita": "kg" },
-      { "simbolo": "$Q$", "descrizione": "Energia di fusione", "unita": "J" },
-      { "simbolo": "$c$", "descrizione": "Velocità della luce", "unita": "m/s" }
+      { "simbolo": "A,B", "descrizione": "Nuclei reagenti", "unita": "\\text{adimensionale}" },
+      { "simbolo": "C", "descrizione": "Nucleo prodotto", "unita": "\\text{adimensionale}" },
+      { "simbolo": "m_A,m_B,m_C", "descrizione": "Masse dei nuclei", "unita": "kg" },
+      { "simbolo": "Q", "descrizione": "Energia di fusione", "unita": "J" },
+      { "simbolo": "c", "descrizione": "Velocità della luce", "unita": "\\frac{m}{s}" }
     ],
-    "esempi": [],
+    "esempi": [
+      {
+        "titolo": "Esempio",
+        "testo": "Nel Sole, nuclei di idrogeno si fondono per formare elio: la massa mancante si trasforma in energia che alimenta la luce e il calore che riceviamo sulla Terra."
+      }
+    ],
     "link_correlati": ["NUC_012"],
     "parole_chiave": ["fusione","energia solare","massi mancante"],
     "data_creazione": "2025-07-15",
