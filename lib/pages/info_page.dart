@@ -82,7 +82,7 @@ class InfoPage extends StatelessWidget {
                     await launchUrl(emailLaunchUri);
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Impossibile aprire l\'applicazione email. Copia l\'indirizzo: lmala06.tech@gmail.com')),
+                      const SnackBar(content: Text('Impossibile aprire l\'applicazione email. Copia l\'indirizzo: physicsease.app@gmail.com')),
                     );
                   }
                 },
