@@ -29,7 +29,7 @@ class CollaboratePage extends StatelessWidget {
           children: [
             const SizedBox(height: 24),
             Text(
-              'Unisciti al Progetto PhysicsEase!',
+              'Unisciti al progetto PhysicsEase!',
               style: textTheme.headlineMedium?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: textColor,
@@ -44,7 +44,7 @@ class CollaboratePage extends StatelessWidget {
             const SizedBox(height: 32),
 
             Text(
-              'Codice Sorgente',
+              'Codice sorgente',
               style: textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: textColor,
@@ -75,7 +75,7 @@ class CollaboratePage extends StatelessWidget {
             const SizedBox(height: 32),
 
             Text(
-              'Sviluppo in Flutter',
+              'Sviluppo in flutter',
               style: textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: textColor,
@@ -108,7 +108,7 @@ class CollaboratePage extends StatelessWidget {
             const SizedBox(height: 32),
 
             Text(
-              'Aggiornamenti dei Contenuti',
+              'Aggiornamenti dei contenuti',
               style: textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: textColor,
@@ -131,7 +131,7 @@ class CollaboratePage extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'I database delle formule sono semplici file JSON e CSV facilmente accessibili nella cartella `assets` della repository GitHub. Crea una "Pull Request" con le tue modifiche, e dopo una revisione, verranno integrate nell\'app!',
+                      'I database delle formule sono semplici file JSON facilmente accessibili nella cartella `assets` della repository GitHub. Crea una "Pull Request" con le tue modifiche, e dopo una revisione, verranno integrate nell\'app!',
                       style: textTheme.bodyLarge?.copyWith(color: textColor),
                       textAlign: TextAlign.justify,
                     ),
@@ -147,7 +147,7 @@ class CollaboratePage extends StatelessWidget {
             const SizedBox(height: 32),
 
             Text(
-              'Come Puoi Contribuire Ancora?',
+              'Come puoi contribuire ancora?',
               style: textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: textColor,

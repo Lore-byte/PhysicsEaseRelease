@@ -34,7 +34,7 @@ class HelpPage extends StatelessWidget {
             const SizedBox(height: 24),
 
             Text(
-              'Come Usare l\'App',
+              'Come usare l\'app',
               style: textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: textColor,
@@ -46,7 +46,7 @@ class HelpPage extends StatelessWidget {
               cardColor,
               iconColor,
               Icons.search,
-              'Cerca Formule',
+              'Cerca formule',
               'Usa la barra di ricerca nella schermata Home per trovare rapidamente formule per titolo, descrizione o parole chiave. Puoi anche filtrare per categorie specifiche.',
             ),
             _buildInfoCard(
@@ -54,7 +54,7 @@ class HelpPage extends StatelessWidget {
               cardColor,
               iconColor,
               Icons.star,
-              'I Tuoi Preferiti',
+              'I tuoi preferiti',
               'Tocca l\'icona a stella su qualsiasi formula per aggiungerla o rimuoverla dai tuoi preferiti. Troverai tutte le formule salvate nella sezione "Preferiti" per un accesso rapido.',
             ),
             _buildInfoCard(
@@ -62,7 +62,7 @@ class HelpPage extends StatelessWidget {
               cardColor,
               iconColor,
               Icons.calculate,
-              'Calcolatrice Integrata',
+              'Calcolatrice integrata',
               'La sezione "Calcolatrice" offre uno strumento utile per i tuoi calcoli rapidi. Puoi inserire espressioni matematiche complesse e ottenere risultati istantanei.',
             ),
             _buildInfoCard(
@@ -70,7 +70,7 @@ class HelpPage extends StatelessWidget {
               cardColor,
               iconColor,
               Icons.storage,
-              'Informazioni e Dati',
+              'Informazioni e dati',
               'Nella sezione "Dati" troverai raccolte di informazioni utili come liste di costanti fisiche, unità di misura, dati sui pianeti e la tavola periodica. Ideale per la consultazione rapida.',
             ),
             _buildInfoCard(
@@ -78,7 +78,7 @@ class HelpPage extends StatelessWidget {
               cardColor,
               iconColor,
               Icons.build,
-              'Strumenti Utili',
+              'Strumenti utili',
               'La sezione "Tools" mette a tua disposizione strumenti interattivi come la possibilità di aggiungere le tue formule personalizzate, un convertitore di unità e un potente risolutore di equazioni.',
             ),
 

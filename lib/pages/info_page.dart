@@ -57,7 +57,7 @@ class InfoPage extends StatelessWidget {
             const SizedBox(height: 32),
 
             Text(
-              'Contatta gli  Sviluppatori',
+              'Contatta gli  sviluppatori',
               style: textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: textColor,
@@ -71,35 +71,11 @@ class InfoPage extends StatelessWidget {
               child: ListTile(
                 leading: Icon(Icons.email, color: iconColor),
                 title: Text('Invia un\'Email', style: textTheme.titleMedium?.copyWith(color: textColor)),
-                subtitle: Text('lmala06.tech@gmail.com', style: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurfaceVariant)),
+                subtitle: Text('physicsease.app@gmail.com', style: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurfaceVariant)),
                 trailing: Icon(Icons.arrow_forward_ios, size: 16, color: colorScheme.onSurfaceVariant),
                 onTap: () async {
                   final Uri emailLaunchUri = Uri.parse(
-                    'mailto:lmala06.tech@gmail.com?subject=Supporto PhysicEase: [Il tuo Messaggio]',
-                  );
-
-                  if (await canLaunchUrl(emailLaunchUri)) {
-                    await launchUrl(emailLaunchUri);
-                  } else {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Impossibile aprire l\'applicazione email. Copia l\'indirizzo: lmala06.tech@gmail.com')),
-                    );
-                  }
-                },
-              ),
-            ),
-            Card(
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-              elevation: 4,
-              color: cardColor,
-              child: ListTile(
-                leading: Icon(Icons.email, color: iconColor),
-                title: Text('Invia un\'Email', style: textTheme.titleMedium?.copyWith(color: textColor)),
-                subtitle: Text('beldimanedo@gmail.com', style: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurfaceVariant)),
-                trailing: Icon(Icons.arrow_forward_ios, size: 16, color: colorScheme.onSurfaceVariant),
-                onTap: () async {
-                  final Uri emailLaunchUri = Uri.parse(
-                    'mailto:beldimanedo@gmail.com?subject=Supporto PhysicEase: [Il tuo Messaggio]',
+                    'mailto:physicsease.app@gmail.com?subject=Supporto PhysicEase: [Il tuo Messaggio]',
                   );
 
                   if (await canLaunchUrl(emailLaunchUri)) {
