@@ -36,7 +36,7 @@ class CelestialBody {
 
   String get distanceFromSunDisplay {
     if (type == 'Stella') return 'N/A (Centro del Sistema)';
-    if (type == 'Satellite Naturale') return '${(distanceFromSunKm / 1000).toStringAsFixed(0)} km dalla Terra';
+    if (type == 'Satellite Naturale') return '${(distanceFromSunKm).toStringAsFixed(0)} km dalla Terra';
     return "${(distanceFromSunKm / 149.6e6).toStringAsFixed(2)} UA";
   }
 

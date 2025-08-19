@@ -174,9 +174,9 @@ class PeriodicTablePage extends StatelessWidget {
               children: [
                 _buildDetailRow(context, 'Massa Atomica:', element.formattedAtomicMass),
                 _buildDetailRow(context, 'Categoria:', element.category),
-                _buildDetailRow(context, 'Configurazione Elettronica:', element.electronicConfiguration),
-                _buildDetailRow(context, 'Punto di Fusione:', element.formattedMeltingPoint),
-                _buildDetailRow(context, 'Punto di Ebollizione:', element.formattedBoilingPoint),
+                _buildDetailRow(context, 'Conf. Elet:', element.electronicConfiguration),
+                _buildDetailRow(context, 'P. Fus:', element.formattedMeltingPoint),
+                _buildDetailRow(context, 'P. Eboll:', element.formattedBoilingPoint),
                 _buildDetailRow(context, 'Densità:', element.formattedDensity),
                 if (element.shell != null && element.shell!.isNotEmpty)
                   _buildDetailRow(context, 'Periodo:', element.shell!),
