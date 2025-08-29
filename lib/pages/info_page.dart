@@ -1,4 +1,3 @@
-// lib/pages/info_page.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -82,7 +81,13 @@ class InfoPage extends StatelessWidget {
                     await launchUrl(emailLaunchUri);
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Impossibile aprire l\'applicazione email. Copia l\'indirizzo: physicsease.app@gmail.com')),
+                      SnackBar(
+                        content: Text(
+                          'Impossibile aprire l\'applicazione email. Copia l\'indirizzo: physicsease.app@gmail.com',
+                          style: TextStyle(color: colorScheme.onError),
+                        ),
+                        backgroundColor: colorScheme.error,
+                      ),
                     );
                   }
                 },
@@ -108,14 +113,13 @@ class InfoPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Questa applicazione è stata sviluppata da Lorenzo Malanotte e Edoardo Beldiman. '
-                          'Il nostro obiettivo è rendere lo studio della fisica un\'esperienza coinvolgente e intuitiva per tutti.',
+                      'Questa applicazione è stata sviluppata da Lorenzo Malanotte e Edoardo Beldiman. Il nostro obiettivo è rendere lo studio della fisica un\'esperienza coinvolgente e intuitiva per tutti.',
                       style: textTheme.bodyLarge?.copyWith(color: textColor),
                       textAlign: TextAlign.justify,
                     ),
                     const SizedBox(height: 12),
                     Text(
-                      'Speriamo sinceramente che PhysicsEase ti sia un valido supporto nel tuo percorso di apprendimento, rendendo ogni concetto più chiaro e accessibile.',
+                      'Ci auguriamo che PhysicsEase sia un valido supporto nel tuo percorso di apprendimento, rendendo ogni concetto più chiaro e accessibile.',
                       style: textTheme.bodyLarge?.copyWith(color: textColor),
                       textAlign: TextAlign.justify,
                     ),
