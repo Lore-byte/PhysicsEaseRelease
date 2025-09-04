@@ -30,7 +30,14 @@ class CelestialBody {
 
   double get radiusMeters => radiusKm * 1000;
 
-  String get massScientific => "${massKg.toStringAsExponential(2)} kg";
+  String get massScientific {
+    if (massKg == 0) return "0 kg";
+    final expString = massKg.toStringAsExponential(2);
+    final parts = expString.split('e');
+    final mantissa = parts[0];
+    final exponent = int.parse(parts[1]);
+    return "$mantissa × 10^$exponent kg";
+  }
 
   String get surfaceGravityString => "${surfaceGravityMetersPerSecondSquared.toStringAsFixed(2)} m/s²";
 
@@ -42,7 +49,17 @@ class CelestialBody {
 
   String get orbitalPeriodDisplay {
     if (type == 'Stella') return 'N/A';
-    if (type == 'Satellite Naturale') return '${orbitalPeriodDays.toStringAsFixed(1)} giorni (della Terra)';
-    return '${orbitalPeriodDays.toStringAsFixed(1)} giorni terrestri';
+    if (type == 'Satellite Naturale') {
+      return '${_formatOrbitalPeriod(orbitalPeriodDays)} giorni (della Terra)';
+    }
+    return '${_formatOrbitalPeriod(orbitalPeriodDays)} giorni terrestri';
+  }
+
+  String _formatOrbitalPeriod(double days) {
+    if (days % 1 == 0) {
+      return days.toStringAsFixed(0);
+    } else {
+      return days.toStringAsFixed(1);
+    }
   }
 }

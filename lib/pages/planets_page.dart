@@ -1,11 +1,11 @@
 // lib/pages/planets_page.dart
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/models/celestial_body.dart';
-
-//VANNO ANCORA INSERITE LE IMMAGINI QUANDO SARANNO DISPONIBILI
+import 'dart:math';
 
 class PlanetsPage extends StatelessWidget {
   const PlanetsPage({super.key});
+
 
   static final List<CelestialBody> celestialBodies = [
     CelestialBody(
@@ -13,38 +13,25 @@ class PlanetsPage extends StatelessWidget {
       name: 'Sole',
       type: 'Stella',
       description: 'Il Sole è la stella al centro del nostro Sistema Solare. È una gigantesca sfera di gas incandescenti che produce energia attraverso la fusione nucleare.',
-      massKg: 1.989e30,
-      radiusKm: 696340.0,
+      massKg: 1.989 * 1e30,
+      radiusKm: 696340,
       orbitalPeriodDays: 0.0,
       distanceFromSunKm: 0.0,
       surfaceGravityMetersPerSecondSquared: 274.0,
-      imagePath: 'assets/images/sun.png',
+      imagePath: 'assets/planet/sun.png',
       color: Colors.yellow[700]!,
-    ),
-    CelestialBody(
-      id: 'moon',
-      name: 'Luna',
-      type: 'Satellite Naturale',
-      description: 'La Luna è l\'unico satellite naturale della Terra. Influisce sulle maree oceaniche e stabilizza l\'asse di rotazione terrestre.',
-      massKg: 7.342e22,
-      radiusKm: 1737.4,
-      orbitalPeriodDays: 27.32,
-      distanceFromSunKm: 384400.0,
-      surfaceGravityMetersPerSecondSquared: 1.62,
-      imagePath: 'assets/images/moon.png',
-      color: Colors.blueGrey[300]!,
     ),
     CelestialBody(
       id: 'mercury',
       name: 'Mercurio',
       type: 'Pianeta',
       description: 'Il pianeta più piccolo e più vicino al Sole.',
-      massKg: 3.3011e23,
+      massKg: 3.3011 * 1e23,
       radiusKm: 2439.7,
       orbitalPeriodDays: 87.97,
       distanceFromSunKm: 57.91e6,
       surfaceGravityMetersPerSecondSquared: 3.70,
-      imagePath: 'assets/images/mercury.png',
+      imagePath: 'assets/planet/mercury.png',
       color: Colors.grey[700]!,
     ),
     CelestialBody(
@@ -52,12 +39,12 @@ class PlanetsPage extends StatelessWidget {
       name: 'Venere',
       type: 'Pianeta',
       description: 'Conosciuto come la "stella del mattino" o della "sera".',
-      massKg: 4.8675e24,
+      massKg: 4.8675 * 1e24,
       radiusKm: 6051.8,
       orbitalPeriodDays: 224.70,
       distanceFromSunKm: 108.2e6,
       surfaceGravityMetersPerSecondSquared: 8.87,
-      imagePath: 'assets/images/venus.png',
+      imagePath: 'assets/planet/venus.png',
       color: Colors.orange[800]!,
     ),
     CelestialBody(
@@ -65,25 +52,38 @@ class PlanetsPage extends StatelessWidget {
       name: 'Terra',
       type: 'Pianeta',
       description: 'Il nostro pianeta, unico noto per ospitare la vita.',
-      massKg: 5.972e24,
-      radiusKm: 6371.0,
+      massKg: 5.972 * 1e24,
+      radiusKm: 6371,
       orbitalPeriodDays: 365.25,
       distanceFromSunKm: 149.6e6,
       surfaceGravityMetersPerSecondSquared: 9.81,
-      imagePath: 'assets/images/earth.png',
+      imagePath: 'assets/planet/earth.png',
       color: Colors.blue[600]!,
+    ),
+    CelestialBody(
+      id: 'moon',
+      name: 'Luna',
+      type: 'Satellite Naturale',
+      description: 'La Luna è l\'unico satellite naturale della Terra. Influisce sulle maree oceaniche e stabilizza l\'asse di rotazione terrestre.',
+      massKg: 7.342 * 1e22,
+      radiusKm: 1737.4,
+      orbitalPeriodDays: 27.32,
+      distanceFromSunKm: 384400,
+      surfaceGravityMetersPerSecondSquared: 1.63,
+      imagePath: 'assets/planet/moon.png',
+      color: Colors.blueGrey[300]!,
     ),
     CelestialBody(
       id: 'mars',
       name: 'Marte',
       type: 'Pianeta',
       description: 'Il pianeta rosso, oggetto di grande interesse scientifico.',
-      massKg: 6.4171e23,
+      massKg: 6.4171 * 1e23,
       radiusKm: 3389.5,
       orbitalPeriodDays: 686.97,
       distanceFromSunKm: 227.9e6,
       surfaceGravityMetersPerSecondSquared: 3.71,
-      imagePath: 'assets/images/mars.png',
+      imagePath: 'assets/planet/mars.png',
       color: Colors.red[800]!,
     ),
     CelestialBody(
@@ -91,12 +91,12 @@ class PlanetsPage extends StatelessWidget {
       name: 'Giove',
       type: 'Pianeta',
       description: 'Il gigante gassoso del sistema solare.',
-      massKg: 1.8982e27,
-      radiusKm: 69911.0,
+      massKg: 1.8982 * 1e27,
+      radiusKm: 69911,
       orbitalPeriodDays: 4332.59,
       distanceFromSunKm: 778.5e6,
       surfaceGravityMetersPerSecondSquared: 24.79,
-      imagePath: 'assets/images/jupiter.png',
+      imagePath: 'assets/planet/jupiter.png',
       color: Colors.orange[400]!,
     ),
     CelestialBody(
@@ -104,12 +104,12 @@ class PlanetsPage extends StatelessWidget {
       name: 'Saturno',
       type: 'Pianeta',
       description: 'Famoso per i suoi anelli spettacolari.',
-      massKg: 5.6834e26,
-      radiusKm: 58232.0,
+      massKg: 5.6834 * 1e26,
+      radiusKm: 58232,
       orbitalPeriodDays: 10759.22,
-      distanceFromSunKm: 1.434e9,
+      distanceFromSunKm: 1.433e9,
       surfaceGravityMetersPerSecondSquared: 10.44,
-      imagePath: 'assets/images/saturn.png',
+      imagePath: 'assets/planet/saturn.png',
       color: Colors.yellow[700]!,
     ),
     CelestialBody(
@@ -117,12 +117,12 @@ class PlanetsPage extends StatelessWidget {
       name: 'Urano',
       type: 'Pianeta',
       description: 'Un gigante di ghiaccio con un\'orbita peculiare.',
-      massKg: 8.6810e25,
-      radiusKm: 25362.0,
-      orbitalPeriodDays: 30687.15,
-      distanceFromSunKm: 2.871e9,
-      surfaceGravityMetersPerSecondSquared: 8.87,
-      imagePath: 'assets/images/uranus.png',
+      massKg: 8.6810 * 1e25,
+      radiusKm: 25362,
+      orbitalPeriodDays: 30688.46,
+      distanceFromSunKm: 2.874e9,
+      surfaceGravityMetersPerSecondSquared: 8.69,
+      imagePath: 'assets/planet/uranus.png',
       color: Colors.blueAccent[100]!,
     ),
     CelestialBody(
@@ -130,13 +130,26 @@ class PlanetsPage extends StatelessWidget {
       name: 'Nettuno',
       type: 'Pianeta',
       description: 'Il pianeta più lontano dal Sole, un gigante di ghiaccio.',
-      massKg: 1.02413e26,
+      massKg: 1.02413 * 1e26,
       radiusKm: 24622.0,
-      orbitalPeriodDays: 60190.0,
-      distanceFromSunKm: 4.495e9,
+      orbitalPeriodDays: 60182,
+      distanceFromSunKm: 4.504e9,
       surfaceGravityMetersPerSecondSquared: 11.15,
-      imagePath: 'assets/images/neptune.png',
+      imagePath: 'assets/planet/neptune.png',
       color: Colors.indigo[800]!,
+    ),
+    CelestialBody(
+      id: 'pluto',
+      name: 'Plutone',
+      type: 'Pianeta nano',
+      description: 'Un pianeta nano della fascia di Kuiper, un tempo considerato il nono pianeta del Sistema Solare.',
+      massKg: 1.303 * 1e22,
+      radiusKm: 1188.3,
+      orbitalPeriodDays: 90560,
+      distanceFromSunKm: 5.906e9,
+      surfaceGravityMetersPerSecondSquared: 0.62,
+      imagePath: 'assets/planet/pluto.png',
+      color: Colors.brown[400]!,
     ),
   ];
 
@@ -155,7 +168,7 @@ class PlanetsPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pianeti del Sistema Solare'),
+        title: const Text('Sistema Solare'),
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,
         iconTheme: IconThemeData(color: Theme.of(context).colorScheme.onPrimaryContainer),
       ),
@@ -212,7 +225,7 @@ class PlanetsPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
+              /*Container(
                 width: circleSize,
                 height: circleSize,
                 decoration: BoxDecoration(
@@ -238,6 +251,14 @@ class PlanetsPage extends StatelessWidget {
                       ),
                     ),
                   ),
+                ),
+              ),*/
+              ClipOval(
+                child: Image.asset(
+                  body.imagePath,
+                  width: circleSize,
+                  height: circleSize,
+                  fit: BoxFit.cover,
                 ),
               ),
               const SizedBox(height: 12),
@@ -294,7 +315,7 @@ class PlanetsPage extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Center(
-                  child: Container(
+                  child: /*Container(
                     width: 100,
                     height: 100,
                     decoration: BoxDecoration(
@@ -317,6 +338,14 @@ class PlanetsPage extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                    ),
+                  ),*/
+                  ClipOval(
+                    child: Image.asset(
+                      body.imagePath,
+                      width: 100,
+                      height: 100,
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
