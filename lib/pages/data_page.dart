@@ -103,7 +103,7 @@ class _DataPageState extends State<DataPage> {
           ),
           _buildToolCard(
             context: context,
-            title: 'Pianeti del Sistema Solare',
+            title: 'Sistema Solare',
             subtitle: 'Scopri dati e proprietà fisiche dei pianeti',
             icon: Icons.public,
             onTap: () {
