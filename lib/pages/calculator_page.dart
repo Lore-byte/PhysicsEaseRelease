@@ -16,6 +16,34 @@ class _CalculatorPageState extends State<CalculatorPage> {
   bool _isRadians = true;
   bool _showScientificButtons = false;
 
+  late TextEditingController _expressionController;
+  late ScrollController _scrollController;
+  late FocusNode _focusNode;
+
+  double _expressionFontSize = 52;
+  final double _minFontSize = 24;
+  final double _maxFontSize = 52;
+
+  @override
+  void initState() {
+    super.initState();
+    _expressionController = TextEditingController(text: _expression);
+    _scrollController = ScrollController();
+    _focusNode = FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _focusNode.requestFocus();
+    });
+  }
+
+  @override
+  void dispose() {
+    _expressionController.dispose();
+    _scrollController.dispose();
+    _focusNode.dispose();
+    super.dispose();
+  }
+
   final Map<String, String> _operatorMap = {
     '÷': '/',
     '×': '*',
@@ -75,7 +103,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
   String _formatDecimal(double value) {
     String formatted = value.toStringAsPrecision(12);
-
     if (formatted.contains('.')) {
       formatted = formatted.replaceAll(RegExp(r'0+$'), '');
       if (formatted.endsWith('.')) {
@@ -85,22 +112,80 @@ class _CalculatorPageState extends State<CalculatorPage> {
     return formatted;
   }
 
+  void _adjustFontSize() {
+    final text = _expressionController.text;
+    if (text.isEmpty) {
+      _expressionFontSize = _maxFontSize;
+      return;
+    }
+
+    final tp = TextPainter(
+      text: TextSpan(text: text, style: TextStyle(fontSize: _expressionFontSize)),
+      maxLines: 1,
+      textDirection: TextDirection.ltr,
+    );
+    tp.layout();
+
+    double maxWidth = MediaQuery.of(context).size.width - 32;
+    if (tp.width > maxWidth && _expressionFontSize > _minFontSize) {
+      setState(() {
+        _expressionFontSize = (_expressionFontSize - 2).clamp(_minFontSize, _maxFontSize);
+      });
+    } else if (tp.width < maxWidth && _expressionFontSize < _maxFontSize) {
+      setState(() {
+        _expressionFontSize = (_expressionFontSize + 2).clamp(_minFontSize, _maxFontSize);
+      });
+    }
+  }
+
   void _onButtonPressed(String buttonText) {
     setState(() {
+      final text = _expressionController.text;
+      final selection = _expressionController.selection;
+
+      void insertTextAtCursor(String insertText) {
+        final newText = text.replaceRange(selection.start, selection.end, insertText);
+        _expressionController.text = newText;
+        _expression = newText;
+
+        final newCursorPosition = selection.start + insertText.length;
+        _expressionController.selection = TextSelection.collapsed(offset: newCursorPosition);
+
+        _adjustFontSize();
+
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (_scrollController.hasClients && _expressionFontSize <= _minFontSize) {
+            final cursorOffset = _scrollController.position.maxScrollExtent *
+                (newCursorPosition / _expressionController.text.length);
+            _scrollController.jumpTo(cursorOffset.clamp(
+              _scrollController.position.minScrollExtent,
+              _scrollController.position.maxScrollExtent,
+            ));
+          }
+        });
+      }
+
       if (buttonText == 'AC') {
         _expression = '';
+        _expressionController.text = '';
         _result = '0';
+        _expressionFontSize = _maxFontSize;
+        _focusNode.requestFocus();
       } else if (buttonText == 'DL') {
-        if (_expression.isNotEmpty) {
-          _expression = _expression.substring(0, _expression.length - 1);
+        if (selection.start > 0) {
+          final newText = text.replaceRange(selection.start - 1, selection.start, '');
+          _expressionController.text = newText;
+          _expression = newText;
+          _expressionController.selection =
+              TextSelection.collapsed(offset: selection.start - 1);
         }
-        if (_expression.isEmpty) {
+        if (_expressionController.text.isEmpty) {
           _result = '0';
+          _expressionFontSize = _maxFontSize;
         }
       } else if (buttonText == '=') {
         try {
-          String finalExpression = _expression;
-
+          String finalExpression = _expressionController.text;
           _operatorMap.forEach((key, value) {
             finalExpression = finalExpression.replaceAll(key, value);
           });
@@ -136,7 +221,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
           Parser p = Parser();
           Expression exp = p.parse(finalExpression);
           ContextModel cm = ContextModel();
-
           cm.bindVariable(Variable('E'), Number(math.e));
           cm.bindVariable(Variable('pi'), Number(math.pi));
 
@@ -150,11 +234,15 @@ class _CalculatorPageState extends State<CalculatorPage> {
           const double smallNumberThreshold = 1e-10;
           const int displayPrecision = 12;
 
-          if (absNumericResult >= largeNumberThreshold || (absNumericResult > 0 && absNumericResult < smallNumberThreshold)) {
+          if (absNumericResult >= largeNumberThreshold ||
+              (absNumericResult > 0 && absNumericResult < smallNumberThreshold)) {
             formattedResult = numericResultDouble.toStringAsExponential(displayPrecision - 1);
             formattedResult = formattedResult.replaceAll(RegExp(r'0+(?=e[+-]\d+$)'), '');
-            if (formattedResult.contains('.') && formattedResult.contains('e') && formattedResult.split('e')[0].endsWith('.')) {
-              formattedResult = formattedResult.replaceAllMapped(RegExp(r'\.(?=e[+-]\d+$)'), (match) => '');
+            if (formattedResult.contains('.') &&
+                formattedResult.contains('e') &&
+                formattedResult.split('e')[0].endsWith('.')) {
+              formattedResult = formattedResult.replaceAllMapped(
+                  RegExp(r'\.(?=e[+-]\d+$)'), (match) => '');
             }
           } else if (numericResultDouble == numericResultDouble.roundToDouble()) {
             formattedResult = numericResultDouble.toInt().toString();
@@ -162,7 +250,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
             formattedResult = _formatDecimal(numericResultDouble);
           }
           _result = formattedResult;
-
         } catch (e) {
           _result = 'Errore';
           print('Errore di calcolo: $e');
@@ -171,36 +258,41 @@ class _CalculatorPageState extends State<CalculatorPage> {
         _isRadians = !_isRadians;
       } else if (buttonText == 'Sci') {
         _showScientificButtons = !_showScientificButtons;
-      }
-      else if (['sin', 'cos', 'tan', 'sqrt'].contains(buttonText)) {
-        _expression += '$buttonText(';
-      } else if (buttonText == 'log') {
-        _expression += 'log(10,';
-      } else if (buttonText == 'ln') {
-        _expression += 'ln(';
-      } else if (buttonText == '√') {
-        _expression += 'sqrt(';
-      } else if (buttonText == 'e^x') {
-        _expression += 'E^';
-      } else if (buttonText == 'π') {
-        _expression += 'pi';
-      } else if (buttonText == 'e') {
-        _expression += 'E';
-      } else if (buttonText == '!') {
-        if (_expression.isNotEmpty && RegExp(r'\d$').hasMatch(_expression[_expression.length - 1])) {
-          _expression += buttonText;
+      } else if (['sin', 'cos', 'tan', '√', 'log', 'ln', 'π', 'e', 'e^x', '!'].contains(buttonText)) {
+        String insertText;
+        switch (buttonText) {
+          case 'sin':
+          case 'cos':
+          case 'tan':
+            insertText = '$buttonText(';
+            break;
+          case '√':
+            insertText = 'sqrt(';
+            break;
+          case 'log':
+            insertText = 'log(10,';
+            break;
+          case 'ln':
+            insertText = 'ln(';
+            break;
+          case 'e^x':
+            insertText = 'E^(';
+            break;
+          case 'π':
+            insertText = 'pi';
+            break;
+          case 'e':
+            insertText = 'E';
+            break;
+          case '!':
+            insertText = '!';
+            break;
+          default:
+            insertText = buttonText;
         }
-      }
-      else {
-        if (_expression.isEmpty && (_isOperator(buttonText) && buttonText != '-' )) {
-          return;
-        }
-
-        if (_expression.isNotEmpty && _isOperator(_expression[_expression.length - 1]) && _isOperator(buttonText)) {
-          _expression = _expression.substring(0, _expression.length - 1) + buttonText;
-        } else {
-          _expression += buttonText;
-        }
+        insertTextAtCursor(insertText);
+      } else {
+        insertTextAtCursor(buttonText);
       }
     });
   }
@@ -213,8 +305,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    const double maxExpressionFontSize = 52.0;
-    const double minExpressionFontSize = 24.0;
     final List<List<String>> buttonsLayout = _showScientificButtons ? _scientificButtonsLayout : _buttonsLayout;
 
     return Scaffold(
@@ -246,26 +336,29 @@ class _CalculatorPageState extends State<CalculatorPage> {
                     ),
                   ),
                   const SizedBox(height: 8),
-
-                  // Espressione
                   Flexible(
-                    child: FittedBox(
-                      fit: BoxFit.scaleDown,
-                      alignment: Alignment.bottomRight,
-                      child: Text(
-                        _expression.isEmpty ? '0' : _expression,
-                        style: TextStyle(
-                          fontSize: 52,
-                          color: colorScheme.onSurface,
-                          fontWeight: FontWeight.w300,
-                        ),
-                        textAlign: TextAlign.right,
+                    child: TextField(
+                      controller: _expressionController,
+                      focusNode: _focusNode,
+                      autofocus: true,
+                      readOnly: true,
+                      textAlign: TextAlign.right,
+                      style: TextStyle(
+                        fontSize: _expressionFontSize,
+                        color: colorScheme.onSurface,
+                        fontWeight: FontWeight.w300,
                       ),
+                      decoration: const InputDecoration(
+                        border: InputBorder.none,
+                        isDense: true,
+                      ),
+                      maxLines: 1,
+                      showCursor: true,
+                      cursorColor: colorScheme.primary,
+                      scrollController: _scrollController,
                     ),
                   ),
                   const SizedBox(height: 10),
-
-                  // Risultato
                   Flexible(
                     child: FittedBox(
                       fit: BoxFit.scaleDown,
@@ -348,7 +441,9 @@ class _CalculatorPageState extends State<CalculatorPage> {
 }
 
 
+
 /*
+calcolatrice non dinamica
 // lib/pages/calculator_page.dart
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
