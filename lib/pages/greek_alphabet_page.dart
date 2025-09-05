@@ -81,8 +81,8 @@ class GreekAlphabetPage extends StatelessWidget {
     {
       'letter': 'Ν ν (Nu)',
       'description': 'Frequenza (a volte al posto di f), coefficiente di Poisson, numero di moli.',
-      'formula': r'E = h\nu',
-      'formula_note': '(energia del fotone)'
+      'formula': r'\nu = - \frac{\varepsilon_{trasversale}}{\varepsilon_{longitudinale}}',
+      'formula_note': '(coefficiente di Poisson)'
     },
     {
       'letter': 'Ξ ξ (Xi)',

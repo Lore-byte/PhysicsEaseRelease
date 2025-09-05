@@ -17,17 +17,22 @@ class _UnitsListPageState extends State<UnitsListPage> {
       {'name': 'Chilometro', 'symbol': 'km', 'description': '1000 metri', 'isFundamental': 'false'},
       {'name': 'Centimetro', 'symbol': 'cm', 'description': '0.01 metri', 'isFundamental': 'false'},
       {'name': 'Millimetro', 'symbol': 'mm', 'description': '0.001 metri', 'isFundamental': 'false'},
+      {'name': 'Micrometro', 'symbol': 'µm', 'description': '10⁻⁶ metri', 'isFundamental': 'false'},
+      {'name': 'Nanometro', 'symbol': 'nm', 'description': '10⁻⁹ metri', 'isFundamental': 'false'},
       {'name': 'Pollice', 'symbol': 'in', 'description': '2.54 cm', 'isFundamental': 'false'},
       {'name': 'Piede', 'symbol': 'ft', 'description': '12 pollici', 'isFundamental': 'false'},
     ],
     'Massa': [
       {'name': 'Chilogrammo', 'symbol': 'kg', 'description': 'Unità SI fondamentale', 'isFundamental': 'true'},
       {'name': 'Grammo', 'symbol': 'g', 'description': '0.001 chilogrammi', 'isFundamental': 'false'},
+      {'name': 'Milligrammo', 'symbol': 'mg', 'description': '10⁻³ grammi', 'isFundamental': 'false'},
       {'name': 'Tonnellata', 'symbol': 't', 'description': '1000 chilogrammi', 'isFundamental': 'false'},
       {'name': 'Libbra', 'symbol': 'lb', 'description': '0.453592 kg', 'isFundamental': 'false'},
+      {'name': 'Oncia', 'symbol': 'oz', 'description': '1/16 di libbra ≈ 28.35 g', 'isFundamental': 'false'},
     ],
     'Tempo': [
       {'name': 'Secondo', 'symbol': 's', 'description': 'Unità SI fondamentale', 'isFundamental': 'true'},
+      {'name': 'Millisecondo', 'symbol': 'ms', 'description': '10⁻³ secondi', 'isFundamental': 'false'},
       {'name': 'Minuto', 'symbol': 'min', 'description': '60 secondi', 'isFundamental': 'false'},
       {'name': 'Ora', 'symbol': 'h', 'description': '3600 secondi', 'isFundamental': 'false'},
       {'name': 'Giorno', 'symbol': 'd', 'description': '24 ore', 'isFundamental': 'false'},
@@ -43,9 +48,12 @@ class _UnitsListPageState extends State<UnitsListPage> {
       {'name': 'Volt', 'symbol': 'V', 'description': 'Unità SI per la tensione elettrica (J/C)', 'isFundamental': 'false'},
       {'name': 'Ohm', 'symbol': 'Ω', 'description': 'Unità SI per la resistenza elettrica (V/A)', 'isFundamental': 'false'},
       {'name': 'Farad', 'symbol': 'F', 'description': 'Unità SI per la capacità elettrica (C/V)', 'isFundamental': 'false'},
+      {'name': 'Wattora', 'symbol': 'Wh', 'description': 'Unità comune di energia elettrica', 'isFundamental': 'false'},
     ],
     'Intensità Luminosa': [
       {'name': 'Candela', 'symbol': 'cd', 'description': 'Unità SI fondamentale', 'isFundamental': 'true'},
+      {'name': 'Lumen', 'symbol': 'lm', 'description': 'Unità SI per il flusso luminoso', 'isFundamental': 'false'},
+      {'name': 'Lux', 'symbol': 'lx', 'description': 'lm/m²', 'isFundamental': 'false'},
     ],
     'Quantità di Sostanza': [
       {'name': 'Mole', 'symbol': 'mol', 'description': 'Unità SI fondamentale', 'isFundamental': 'true'},
@@ -53,21 +61,29 @@ class _UnitsListPageState extends State<UnitsListPage> {
     'Velocità': [
       {'name': 'Metro al secondo', 'symbol': 'm/s', 'description': 'Unità SI derivata', 'isFundamental': 'false'},
       {'name': 'Chilometro orario', 'symbol': 'km/h', 'description': 'Unità comune', 'isFundamental': 'false'},
+      {'name': 'Nodo', 'symbol': 'kn', 'description': '1.852 km/h', 'isFundamental': 'false'},
+      {'name': 'Mach', 'symbol': 'Ma', 'description': 'Velocità del suono', 'isFundamental': 'false'},
     ],
     'Forza': [
       {'name': 'Newton', 'symbol': 'N', 'description': 'kg·m/s²', 'isFundamental': 'false'},
+      {'name': 'Kilogrammo forza', 'symbol': 'kgf', 'description': '9.80665 N', 'isFundamental': 'false'},
     ],
     'Energia': [
       {'name': 'Joule', 'symbol': 'J', 'description': 'N·m', 'isFundamental': 'false'},
       {'name': 'Caloria', 'symbol': 'cal', 'description': '4.184 Joule', 'isFundamental': 'false'},
       {'name': 'Elettronvolt', 'symbol': 'eV', 'description': '1.602×10⁻¹⁹ J', 'isFundamental': 'false'},
+      {'name': 'Kilowattora', 'symbol': 'kWh', 'description': '3.6×10⁶ J', 'isFundamental': 'false'},
     ],
     'Potenza': [
       {'name': 'Watt', 'symbol': 'W', 'description': 'J/s', 'isFundamental': 'false'},
+      {'name': 'Cavallo vapore', 'symbol': 'CV', 'description': '≈ 735.5 W', 'isFundamental': 'false'},
     ],
     'Pressione': [
       {'name': 'Pascal', 'symbol': 'Pa', 'description': 'N/m²', 'isFundamental': 'false'},
       {'name': 'Bar', 'symbol': 'bar', 'description': '10⁵ Pa', 'isFundamental': 'false'},
+      {'name': 'Millimetro di mercurio', 'symbol': 'mmHg', 'description': '133.322 Pa', 'isFundamental': 'false'},
+      {'name': 'PSI', 'symbol': 'psi', 'description': 'Pound per square inch ≈ 6894.76 Pa', 'isFundamental': 'false'},
+      {'name': 'Atmosfera', 'symbol': 'atm', 'description': '101325 Pa', 'isFundamental': 'false'},
     ],
     'Frequenza': [
       {'name': 'Hertz', 'symbol': 'Hz', 'description': 'Cicli al secondo', 'isFundamental': 'false'},
