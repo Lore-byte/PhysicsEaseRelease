@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.1+2
+version: 1.0.1+4
 
 environment:
   sdk: ^3.8.1
@@ -84,6 +84,17 @@ flutter:
     - assets/my_logo.png
     - assets/my_logo_dark.png
     - assets/my_logo_light.png
+    - assets/planet/sun.png
+    - assets/planet/earth.png
+    - assets/planet/moon.png
+    - assets/planet/jupiter.png
+    - assets/planet/mars.png
+    - assets/planet/neptune.png
+    - assets/planet/venus.png
+    - assets/planet/uranus.png
+    - assets/planet/saturn.png
+    - assets/planet/mercury.png
+    - assets/planet/pluto.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

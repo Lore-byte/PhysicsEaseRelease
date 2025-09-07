@@ -1,4 +1,3 @@
-// lib/pages/graph_page.dart
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:math_expressions/math_expressions.dart';
@@ -346,7 +345,7 @@ class _GraphPageState extends State<GraphPage> {
         return colorScheme.errorContainer;
       }
       else if (['sin', 'cos', 'tan', 'log', 'ln', 'exp', 'sqrt', 'abs', '!', 'π', 'e'].contains(key) && _showScientificKeys) {
-        return colorScheme.surfaceTint;
+        return colorScheme.tertiaryContainer;
       }
       else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
         return colorScheme.secondary;
@@ -367,7 +366,7 @@ class _GraphPageState extends State<GraphPage> {
         return colorScheme.onErrorContainer;
       }
       else if (['sin', 'cos', 'tan', 'log', 'ln', 'exp', 'sqrt', 'abs', '!', 'π', 'e'].contains(key) && _showScientificKeys) {
-        return colorScheme.onSecondaryContainer;
+        return colorScheme.onTertiaryContainer;
       }
       else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
         return colorScheme.onSecondary;
@@ -481,47 +480,68 @@ class _GraphPageState extends State<GraphPage> {
                   }).toList(),
 
                   const SizedBox(height: 12),
-                  GestureDetector(
-                    onTap: () {
-                      bool hasPlotableFunctions = functionsToPlot.isNotEmpty;
-                      if (hasPlotableFunctions) {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (ctx) => FullScreenGraphPage(
-                              functionStrings: functionsToPlot,
-                              functionColors: colorsToPlot,
-                              evaluateFunction: _evaluateFunction,
-                              xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
+                  Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          bool hasPlotableFunctions = functionsToPlot.isNotEmpty;
+                          if (hasPlotableFunctions) {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (ctx) => FullScreenGraphPage(
+                                  functionStrings: functionsToPlot,
+                                  functionColors: colorsToPlot,
+                                  evaluateFunction: _evaluateFunction,
+                                  xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
+                                ),
+                              ),
+                            );
+                          } else {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(content: Text('Inserisci almeno una funzione valida da visualizzare.')),
+                            );
+                          }
+                        },
+                        child: AspectRatio(
+                          aspectRatio: 1.5,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: colorScheme.surfaceVariant,
+                              borderRadius: BorderRadius.circular(12),
+                              border: Border.all(color: colorScheme.outline, width: 1),
                             ),
-                          ),
-                        );
-                      } else {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(content: Text('Inserisci almeno una funzione valida da visualizzare.')),
-                        );
-                      }
-                    },
-                    child: AspectRatio(
-                      aspectRatio: 1.5,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: colorScheme.surfaceVariant,
-                          borderRadius: BorderRadius.circular(12),
-                          border: Border.all(color: colorScheme.outline, width: 1),
-                        ),
-                        child: CustomPaint(
-                          painter: GraphPainter(
-                            functionStrings: functionsToPlot,
-                            evaluateFunction: _evaluateFunction,
-                            xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
-                            axisColor: colorScheme.onSurfaceVariant,
-                            lineColors: colorsToPlot,
-                            gridColor: colorScheme.outlineVariant,
-                            textColor: colorScheme.onSurface,
+                            child: CustomPaint(
+                              painter: GraphPainter(
+                                functionStrings: functionsToPlot,
+                                evaluateFunction: _evaluateFunction,
+                                xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
+                                axisColor: colorScheme.onSurfaceVariant,
+                                lineColors: colorsToPlot,
+                                gridColor: Theme.of(context).brightness == Brightness.dark
+                                    ? Colors.white.withOpacity(0.15)
+                                    : Colors.black.withOpacity(0.15),
+                                textColor: colorScheme.onSurface,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
+                      Positioned(
+                        bottom: 8,
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                          decoration: BoxDecoration(
+                            color: Colors.black.withOpacity(0.5),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: const Text(
+                            'Tocca il grafico per ingrandirlo',
+                            style: TextStyle(color: Colors.white, fontSize: 12),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -555,6 +575,204 @@ class _GraphPageState extends State<GraphPage> {
                   child: Text(k),
                 );
               },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class FullScreenGraphPage extends StatefulWidget {
+  final List<String> functionStrings;
+  final Function(String, double) evaluateFunction;
+  final double xMin, xMax, yMin, yMax;
+  final List<Color> functionColors;
+
+  const FullScreenGraphPage({
+    super.key,
+    required this.functionStrings,
+    required this.evaluateFunction,
+    required this.xMin,
+    required this.xMax,
+    required this.yMin,
+    required this.yMax,
+    required this.functionColors,
+  });
+
+  @override
+  State<FullScreenGraphPage> createState() => _FullScreenGraphPageState();
+}
+
+class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
+  late double _xMin, _xMax, _yMin, _yMax;
+  final double _initialXMin = -10.0;
+  final double _initialXMax = 10.0;
+  final double _initialYMin = -5.0;
+  final double _initialYMax = 5.0;
+
+  @override
+  void initState() {
+    super.initState();
+    _xMin = widget.xMin;
+    _xMax = widget.xMax;
+    _yMin = widget.yMin;
+    _yMax = widget.yMax;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        _setProportionalYRange();
+      }
+    });
+  }
+
+  void _setProportionalYRange() {
+    if (!mounted) return;
+    final Size screenSize = context.size!;
+    final double aspectRatio = screenSize.height / screenSize.width;
+    final double xRange = _xMax - _xMin;
+    final double yRange = xRange * aspectRatio;
+
+    final double yCenter = (_yMin + _yMax) / 2;
+    setState(() {
+      _yMin = yCenter - yRange / 2;
+      _yMax = yCenter + yRange / 2;
+    });
+  }
+
+  void _onPanUpdate(DragUpdateDetails details) {
+    setState(() {
+      final double xRange = _xMax - _xMin;
+      final double yRange = _yMax - _yMin;
+      final panX = details.delta.dx / context.size!.width * xRange;
+      final panY = details.delta.dy / context.size!.height * yRange;
+      _xMin -= panX;
+      _xMax -= panX;
+      _yMin += panY;
+      _yMax += panY;
+    });
+  }
+
+  void _zoomIn() {
+    setState(() {
+      final currentWidth = _xMax - _xMin;
+      final currentHeight = _yMax - _yMin;
+      const zoomFactor = 0.8;
+
+      final newWidth = currentWidth * zoomFactor;
+      final newHeight = currentHeight * zoomFactor;
+      final deltaX = (currentWidth - newWidth) / 2;
+      final deltaY = (currentHeight - newHeight) / 2;
+
+      _xMin += deltaX;
+      _xMax -= deltaX;
+      _yMin += deltaY;
+      _yMax -= deltaY;
+    });
+  }
+
+  void _zoomOut() {
+    setState(() {
+      final currentWidth = _xMax - _xMin;
+      final currentHeight = _yMax - _yMin;
+      const zoomFactor = 1.2;
+
+      final newWidth = currentWidth * zoomFactor;
+      final newHeight = currentHeight * zoomFactor;
+      final deltaX = (newWidth - currentWidth) / 2;
+      final deltaY = (newHeight - currentHeight) / 2;
+
+      _xMin -= deltaX;
+      _xMax += deltaX;
+      _yMin -= deltaY;
+      _yMax += deltaY;
+    });
+  }
+
+  void _centerGraph() {
+    setState(() {
+      _xMin = _initialXMin;
+      _xMax = _initialXMax;
+      _yMin = _initialYMin;
+      _yMax = _initialYMax;
+      _setProportionalYRange();
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+
+    String titleText = 'Grafici: ';
+    List<String> validFunctions = widget.functionStrings.where((f) => f.trim().isNotEmpty).toList();
+    if (validFunctions.isNotEmpty) {
+      titleText += validFunctions.map((f) => 'f(x) = $f').join(', ');
+      if (titleText.length > 50) {
+        titleText = 'Grafici Multipli';
+      }
+    } else {
+      titleText = 'Grafico';
+    }
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(titleText),
+        backgroundColor: colorScheme.primaryContainer,
+        iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
+      ),
+      body: Stack(
+        children: [
+          SizedBox.expand(
+            child: Container(
+              color: colorScheme.surfaceVariant,
+              child: GestureDetector(
+                onPanUpdate: _onPanUpdate,
+                child: CustomPaint(
+                  painter: GraphPainter(
+                    functionStrings: widget.functionStrings,
+                    evaluateFunction: widget.evaluateFunction,
+                    xMin: _xMin,
+                    xMax: _xMax,
+                    yMin: _yMin,
+                    yMax: _yMax,
+                    axisColor: colorScheme.onSurfaceVariant,
+                    lineColors: widget.functionColors,
+                    gridColor: Theme.of(context).brightness == Brightness.dark
+                        ? Colors.white.withOpacity(0.15)
+                        : Colors.black.withOpacity(0.15),
+                    textColor: colorScheme.onSurface,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 16,
+            right: 16,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                FloatingActionButton(
+                  heroTag: 'center_graph_button',
+                  onPressed: _centerGraph,
+                  backgroundColor: colorScheme.primary,
+                  child: Icon(Icons.center_focus_strong, color: colorScheme.onPrimary),
+                ),
+                const SizedBox(height: 12),
+                FloatingActionButton(
+                  heroTag: 'zoom_in_button',
+                  onPressed: _zoomIn,
+                  backgroundColor: colorScheme.primary,
+                  child: Icon(Icons.zoom_in, color: colorScheme.onPrimary),
+                ),
+                const SizedBox(height: 12),
+                FloatingActionButton(
+                  heroTag: 'zoom_out_button',
+                  onPressed: _zoomOut,
+                  backgroundColor: colorScheme.primary,
+                  child: Icon(Icons.zoom_out, color: colorScheme.onPrimary),
+                ),
+              ],
             ),
           ),
         ],
@@ -598,6 +816,14 @@ class GraphPainter extends CustomPainter {
     double toCanvasX(double x) => (x - xMin) * size.width / (xMax - xMin);
     double toCanvasY(double y) => size.height - ((y - yMin) * size.height / (yMax - yMin));
 
+    final double xAxisRange = xMax - xMin;
+    final double xAxisScale = size.width / xAxisRange;
+    final bool drawNumbersX = xAxisScale > 15;
+
+    final double yAxisRange = yMax - yMin;
+    final double yAxisScale = size.height / yAxisRange;
+    final bool drawNumbersY = yAxisScale > 15;
+
     for (double i = xMin.ceilToDouble(); i <= xMax.floorToDouble(); i++) {
       if (i != 0) {
         canvas.drawLine(Offset(toCanvasX(i), 0), Offset(toCanvasX(i), size.height), gridPaint);
@@ -620,15 +846,19 @@ class GraphPainter extends CustomPainter {
       textPainter.paint(canvas, offset);
     }
 
-    for (double i = xMin.ceilToDouble(); i <= xMax.floorToDouble(); i += 1) {
-      if (i != 0) {
-        drawText(canvas, i.toInt().toString(), Offset(toCanvasX(i) - 5, toCanvasY(0) + 5));
+    if (drawNumbersX) {
+      for (double i = xMin.ceilToDouble(); i <= xMax.floorToDouble(); i += 1) {
+        if (i != 0) {
+          drawText(canvas, i.toInt().toString(), Offset(toCanvasX(i) - 5, toCanvasY(0) + 5));
+        }
       }
     }
 
-    for (double i = yMin.ceilToDouble(); i <= yMax.floorToDouble(); i += 1) {
-      if (i != 0) {
-        drawText(canvas, i.toInt().toString(), Offset(toCanvasX(0) + 5, toCanvasY(i) - 5));
+    if (drawNumbersY) {
+      for (double i = yMin.ceilToDouble(); i <= yMax.floorToDouble(); i += 1) {
+        if (i != 0) {
+          drawText(canvas, i.toInt().toString(), Offset(toCanvasX(0) + 5, toCanvasY(i) - 5));
+        }
       }
     }
 
@@ -665,75 +895,11 @@ class GraphPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
     GraphPainter oldPainter = oldDelegate as GraphPainter;
-    if (oldPainter.functionStrings.length != functionStrings.length ||
-        oldPainter.lineColors.length != lineColors.length) {
-      return true;
-    }
-    for (int i = 0; i < functionStrings.length; i++) {
-      if (oldPainter.functionStrings[i] != functionStrings[i] ||
-          oldPainter.lineColors[i] != lineColors[i]) {
-        return true;
-      }
-    }
-    return false;
-  }
-}
-
-class FullScreenGraphPage extends StatelessWidget {
-  final List<String> functionStrings;
-  final Function(String, double) evaluateFunction;
-  final double xMin, xMax, yMin, yMax;
-  final List<Color> functionColors;
-
-  const FullScreenGraphPage({
-    super.key,
-    required this.functionStrings,
-    required this.evaluateFunction,
-    required this.xMin,
-    required this.xMax,
-    required this.yMin,
-    required this.yMax,
-    required this.functionColors,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-
-    String titleText = 'Grafici: ';
-    List<String> validFunctions = functionStrings.where((f) => f.trim().isNotEmpty).toList();
-    if (validFunctions.isNotEmpty) {
-      titleText += validFunctions.map((f) => 'f(x) = $f').join(', ');
-      if (titleText.length > 50) {
-        titleText = 'Grafici Multipli';
-      }
-    } else {
-      titleText = 'Grafico';
-    }
-
-
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(titleText),
-        backgroundColor: colorScheme.primaryContainer,
-        iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
-      ),
-      body: SizedBox.expand(
-        child: Container(
-          color: colorScheme.surfaceVariant,
-          child: CustomPaint(
-            painter: GraphPainter(
-              functionStrings: functionStrings,
-              evaluateFunction: evaluateFunction,
-              xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
-              axisColor: colorScheme.onSurfaceVariant,
-              lineColors: functionColors,
-              gridColor: colorScheme.outlineVariant,
-              textColor: colorScheme.onSurface,
-            ),
-          ),
-        ),
-      ),
-    );
+    return oldPainter.xMin != xMin ||
+        oldPainter.xMax != xMax ||
+        oldPainter.yMin != yMin ||
+        oldPainter.yMax != yMax ||
+        oldPainter.functionStrings.length != functionStrings.length ||
+        oldPainter.lineColors.length != lineColors.length;
   }
 }
