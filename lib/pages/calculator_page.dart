@@ -1,4 +1,3 @@
-// lib/pages/calculator_page.dart
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
 import 'dart:math' as math;
@@ -55,7 +54,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
     ['7', '8', '9', '×', '('],
     ['4', '5', '6', '-', ')'],
     ['1', '2', '3', '+', '^'],
-    ['0', '.', '='],
+    ['0', '.', '=',], // The last row is now defined with just three buttons
   ];
 
   final List<List<String>> _scientificButtonsLayout = [
@@ -66,8 +65,9 @@ class _CalculatorPageState extends State<CalculatorPage> {
     ['='],
   ];
 
-  Widget _buildButton(String displayedText, String actionText, Color buttonColor, Color textColor, {double fontSize = 24.0}) {
+  Widget _buildButton(String displayedText, String actionText, Color buttonColor, Color textColor, {double fontSize = 24.0, int flex = 1}) {
     return Expanded(
+      flex: flex,
       child: Padding(
         padding: const EdgeInsets.all(4.0),
         child: ElevatedButton(
@@ -81,7 +81,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
             padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 8),
             textStyle: TextStyle(fontSize: fontSize, fontWeight: FontWeight.bold),
           ),
-          onPressed: () => _onButtonPressed(actionText),
+          onPressed: actionText.isEmpty ? null : () => _onButtonPressed(actionText),
           child: FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(displayedText),
@@ -391,6 +391,12 @@ class _CalculatorPageState extends State<CalculatorPage> {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: row.map((buttonText) {
+                        int flex = 1;
+                        // Special case for the '0' button only in the regular calculator layout
+                        if (!_showScientificButtons && buttonText == '0') {
+                          flex = 2;
+                        }
+
                         String displayedButtonText = buttonText;
                         if (buttonText == 'RAD/DEG_TOGGLE') {
                           displayedButtonText = _isRadians ? 'DEG' : 'RAD';
@@ -420,13 +426,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           buttonColor = colorScheme.tertiary;
                           textColor = colorScheme.onTertiary;
                         }
-                        if (!_showScientificButtons && (buttonText == '0')) {
-                          return Expanded(
-                            flex: 2,
-                            child: _buildButton(displayedButtonText, buttonText, buttonColor, textColor, fontSize: currentFontSize),
-                          );
-                        }
-                        return _buildButton(displayedButtonText, buttonText, buttonColor, textColor, fontSize: currentFontSize);
+
+                        return _buildButton(displayedButtonText, buttonText, buttonColor, textColor, fontSize: currentFontSize, flex: flex);
                       }).toList(),
                     ),
                   );
