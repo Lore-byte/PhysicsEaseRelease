@@ -1,5 +1,6 @@
 // lib/pages/help_page.dart
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/pages/onboarding_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HelpPage extends StatelessWidget {
@@ -80,6 +81,50 @@ class HelpPage extends StatelessWidget {
               Icons.build,
               'Strumenti utili',
               'La sezione "Tools" mette a tua disposizione strumenti interattivi come la possibilità di aggiungere le tue formule personalizzate, un convertitore di unità e un potente risolutore di equazioni.',
+            ),
+
+            const SizedBox(height: 24),
+
+            Card(
+              color: colorScheme.primary,
+              margin: const EdgeInsets.symmetric(horizontal: 16),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: InkWell(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => OnboardingPage(
+                        onFinished: () {
+                          Navigator.of(context).pop();
+                        },
+                      ),
+                    ),
+                  );
+                },
+                borderRadius: BorderRadius.circular(20),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.slideshow, size: 30, color: colorScheme.onPrimary),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          "Riguarda l'Onboarding",
+                          textAlign: TextAlign.center,
+                          style: textTheme.titleMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                            color: colorScheme.onPrimary,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
 
             const SizedBox(height: 24),
