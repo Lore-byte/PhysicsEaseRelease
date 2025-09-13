@@ -5,6 +5,7 @@ import 'package:physics_ease_release/pages/unit_converter_page.dart';
 import 'package:physics_ease_release/pages/equation_solver_page.dart';
 import 'package:physics_ease_release/pages/graph_page.dart';
 import 'package:physics_ease_release/pages/sensors_page.dart';
+import 'package:physics_ease_release/pages/vector_calculator_page.dart';
 
 class ToolsPage extends StatefulWidget {
   final Future<void> Function(Formula) onAddFormula;
@@ -130,6 +131,19 @@ class _ToolsPageState extends State<ToolsPage> {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (ctx) => const GraphPage(),
+                ),
+              );
+            },
+          ),
+          _buildToolCard(
+            context: context,
+            title: 'Calcolatore Vettoriale',
+            subtitle: 'Esegui operazioni su vettori',
+            icon: Icons.alt_route,
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) => const VectorCalculatorPage(),
                 ),
               );
             },
