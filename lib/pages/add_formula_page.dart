@@ -127,8 +127,14 @@ class _AddFormulaPageState extends State<AddFormulaPage> {
         paroleChiave: keywords,
       );
 
-
       widget.onAddFormula(newFormula).then((_) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Formula salvata con successo nella sezione "Personalizzate"!'),
+            duration: Duration(seconds: 3),
+          ),
+        );
+
         Navigator.of(context).pop();
       });
     }
