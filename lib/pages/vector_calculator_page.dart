@@ -18,6 +18,16 @@ class VectorCalculatorApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.blue,
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.blue,
+          brightness: Brightness.dark,
+        ),
+      ),
+      themeMode: ThemeMode.system,
       home: const VectorCalculatorPage(),
     );
   }
@@ -33,16 +43,30 @@ class VectorCalculatorPage extends StatefulWidget {
 class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
   final TextEditingController _x1Controller = TextEditingController();
   final TextEditingController _y1Controller = TextEditingController();
+  final TextEditingController _z1Controller = TextEditingController();
   final TextEditingController _x2Controller = TextEditingController();
   final TextEditingController _y2Controller = TextEditingController();
+  final TextEditingController _z2Controller = TextEditingController();
+
   String _risultato = "";
-  Offset? _v1;
-  Offset? _v2;
-  Offset? _resultVector;
+  dynamic _v1;
+  dynamic _v2;
+  dynamic _resultVector;
   String? _selectedOperation;
   final TransformationController _transformationController = TransformationController();
+  bool _is3D = false;
 
-  final List<String> _operations = [
+  final List<String> _operations2D = [
+    'Somma',
+    'Differenza',
+    'Prodotto scalare',
+    'Prodotto vettoriale',
+    'Modulo V1',
+    'Modulo V2',
+    'Angolo tra V1 e V2',
+  ];
+
+  final List<String> _operations3D = [
     'Somma',
     'Differenza',
     'Prodotto scalare',
@@ -55,34 +79,48 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
   @override
   void initState() {
     super.initState();
-    _x1Controller.text = "";
-    _y1Controller.text = "";
-    _x2Controller.text = "";
-    _y2Controller.text = "";
+    _clearFields();
     _updateVectors();
   }
 
   @override
   void dispose() {
-    _x1Controller.clear();
-    _y1Controller.clear();
-    _x2Controller.clear();
-    _y2Controller.clear();
+    _x1Controller.dispose();
+    _y1Controller.dispose();
+    _z1Controller.dispose();
+    _x2Controller.dispose();
+    _y2Controller.dispose();
+    _z2Controller.dispose();
     super.dispose();
   }
 
   void _updateVectors() {
     setState(() {
-      _v1 = _parseVector(_x1Controller.text, _y1Controller.text);
-      _v2 = _parseVector(_x2Controller.text, _y2Controller.text);
+      if (_is3D) {
+        _v1 = _parseVector3(_x1Controller.text, _y1Controller.text, _z1Controller.text);
+        _v2 = _parseVector3(_x2Controller.text, _y2Controller.text, _z2Controller.text);
+      } else {
+        _v1 = _parseVector2(_x1Controller.text, _y1Controller.text);
+        _v2 = _parseVector2(_x2Controller.text, _y2Controller.text);
+      }
     });
   }
 
-  Offset? _parseVector(String x, String y) {
+  Offset? _parseVector2(String x, String y) {
     final double? dx = double.tryParse(x);
     final double? dy = double.tryParse(y);
     if (dx != null && dy != null) {
       return Offset(dx, dy);
+    }
+    return null;
+  }
+
+  Vector3? _parseVector3(String x, String y, String z) {
+    final double? dx = double.tryParse(x);
+    final double? dy = double.tryParse(y);
+    final double? dz = double.tryParse(z);
+    if (dx != null && dy != null && dz != null) {
+      return Vector3(dx, dy, dz);
     }
     return null;
   }
@@ -94,115 +132,127 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
       _selectedOperation = operation;
     });
 
+    if (_is3D) {
+      _calcola3D(operation);
+    } else {
+      _calcola2D(operation);
+    }
+  }
+
+  void _calcola2D(String operation) {
+    if (_v1 == null || _v2 == null) {
+      _resetResult();
+      return;
+    }
+
+    final v1 = _v1 as Offset;
+    final v2 = _v2 as Offset;
+
     switch (operation) {
       case 'Somma':
-        _calcolaSomma();
+        _resultVector = v1 + v2;
+        final resultMagnitude = _resultVector!.distance.toStringAsFixed(2);
+        _risultato = "Vettore risultante: (${_resultVector!.dx.toStringAsFixed(2)}, ${_resultVector!.dy.toStringAsFixed(2)})\nModulo: $resultMagnitude";
         break;
       case 'Differenza':
-        _calcolaDifferenza();
+        _resultVector = v1 - v2;
+        final resultMagnitude = _resultVector!.distance.toStringAsFixed(2);
+        _risultato = "Vettore risultante: (${_resultVector!.dx.toStringAsFixed(2)}, ${_resultVector!.dy.toStringAsFixed(2)})\nModulo: $resultMagnitude";
         break;
       case 'Prodotto scalare':
-        _calcolaProdottoScalare();
-        break;
-      case 'Prodotto vettoriale':
-        _calcolaProdottoVettoriale();
-        break;
-      case 'Modulo V1':
-        _calcolaModulo(1);
-        break;
-      case 'Modulo V2':
-        _calcolaModulo(2);
-        break;
-      case 'Angolo tra V1 e V2':
-        _calcolaAngolo();
-        break;
-      default:
-        _resetResult();
-    }
-  }
-
-  void _calcolaSomma() {
-    if (_v1 != null && _v2 != null) {
-      final x = _v1!.dx + _v2!.dx;
-      final y = _v1!.dy + _v2!.dy;
-      setState(() {
-        _resultVector = Offset(x, y);
-        _risultato = "Vettore risultante: (${x.toStringAsFixed(2)}, ${y.toStringAsFixed(2)})";
-      });
-    } else {
-      _resetResult();
-    }
-  }
-
-  void _calcolaDifferenza() {
-    if (_v1 != null && _v2 != null) {
-      final x = _v1!.dx - _v2!.dx;
-      final y = _v1!.dy - _v2!.dy;
-      setState(() {
-        _resultVector = Offset(x, y);
-        _risultato = "Vettore risultante: (${x.toStringAsFixed(2)}, ${y.toStringAsFixed(2)})";
-      });
-    } else {
-      _resetResult();
-    }
-  }
-
-  void _calcolaProdottoScalare() {
-    if (_v1 != null && _v2 != null) {
-      final result = _v1!.dx * _v2!.dx + _v1!.dy * _v2!.dy;
-      setState(() {
+        final result = v1.dx * v2.dx + v1.dy * v2.dy;
         _resultVector = null;
         _risultato = "Prodotto scalare: ${result.toStringAsFixed(2)}";
-      });
-    } else {
-      _resetResult();
-    }
-  }
-
-  void _calcolaProdottoVettoriale() {
-    if (_v1 != null && _v2 != null) {
-      final result = _v1!.dx * _v2!.dy - _v1!.dy * _v2!.dx;
-      setState(() {
+        break;
+      case 'Prodotto vettoriale':
+        final result = v1.dx * v2.dy - v1.dy * v2.dx;
         _resultVector = null;
         _risultato = "Prodotto vettoriale (componente z): ${result.toStringAsFixed(2)}";
-      });
-    } else {
-      _resetResult();
-    }
-  }
-
-  void _calcolaModulo(int vectorIndex) {
-    Offset? v = (vectorIndex == 1) ? _v1 : _v2;
-    if (v != null) {
-      final result = sqrt(pow(v.dx, 2) + pow(v.dy, 2));
-      setState(() {
+        break;
+      case 'Modulo V1':
+        final result = v1.distance;
         _resultVector = null;
-        _risultato = "Modulo V$vectorIndex: ${result.toStringAsFixed(2)}";
-      });
-    } else {
-      _resetResult();
-    }
-  }
-
-  void _calcolaAngolo() {
-    if (_v1 != null && _v2 != null) {
-      final dotProduct = _v1!.dx * _v2!.dx + _v1!.dy * _v2!.dy;
-      final magnitude1 = sqrt(pow(_v1!.dx, 2) + pow(_v1!.dy, 2));
-      final magnitude2 = sqrt(pow(_v2!.dx, 2) + pow(_v2!.dy, 2));
-      if (magnitude1 != 0 && magnitude2 != 0) {
-        final cosTheta = dotProduct / (magnitude1 * magnitude2);
-        final angleRad = acos(cosTheta.clamp(-1.0, 1.0));
-        final angleDeg = angleRad * 180 / pi;
-        setState(() {
+        _risultato = "Modulo V1: ${result.toStringAsFixed(2)}";
+        break;
+      case 'Modulo V2':
+        final result = v2.distance;
+        _resultVector = null;
+        _risultato = "Modulo V2: ${result.toStringAsFixed(2)}";
+        break;
+      case 'Angolo tra V1 e V2':
+        final dotProduct = v1.dx * v2.dx + v1.dy * v2.dy;
+        final magnitude1 = v1.distance;
+        final magnitude2 = v2.distance;
+        if (magnitude1 != 0 && magnitude2 != 0) {
+          final cosTheta = dotProduct / (magnitude1 * magnitude2);
+          final angleRad = acos(cosTheta.clamp(-1.0, 1.0));
+          final angleDeg = angleRad * 180 / pi;
           _resultVector = null;
           _risultato = "Angolo tra i vettori: ${angleDeg.toStringAsFixed(2)}°";
-        });
-      } else {
-        _resetResult();
-      }
-    } else {
-      _resetResult();
+        } else {
+          _resetResult();
+        }
+        break;
     }
+    setState(() {});
+  }
+
+  void _calcola3D(String operation) {
+    if (_v1 == null || _v2 == null) {
+      _resetResult();
+      return;
+    }
+
+    final v1 = _v1 as Vector3;
+    final v2 = _v2 as Vector3;
+
+    switch (operation) {
+      case 'Somma':
+        _resultVector = v1 + v2;
+        final resultMagnitude = _resultVector!.length.toStringAsFixed(2);
+        _risultato = "Vettore risultante: (${_resultVector!.x.toStringAsFixed(2)}, ${_resultVector!.y.toStringAsFixed(2)}, ${_resultVector!.z.toStringAsFixed(2)})\nModulo: $resultMagnitude";
+        break;
+      case 'Differenza':
+        _resultVector = v1 - v2;
+        final resultMagnitude = _resultVector!.length.toStringAsFixed(2);
+        _risultato = "Vettore risultante: (${_resultVector!.x.toStringAsFixed(2)}, ${_resultVector!.y.toStringAsFixed(2)}, ${_resultVector!.z.toStringAsFixed(2)})\nModulo: $resultMagnitude";
+        break;
+      case 'Prodotto scalare':
+        final result = v1.dot(v2);
+        _resultVector = null;
+        _risultato = "Prodotto scalare: ${result.toStringAsFixed(2)}";
+        break;
+      case 'Prodotto vettoriale':
+        _resultVector = v1.cross(v2);
+        final resultMagnitude = _resultVector!.length.toStringAsFixed(2);
+        _risultato = "Prodotto vettoriale: (${_resultVector!.x.toStringAsFixed(2)}, ${_resultVector!.y.toStringAsFixed(2)}, ${_resultVector!.z.toStringAsFixed(2)})\nModulo: $resultMagnitude";
+        break;
+      case 'Modulo V1':
+        final result = v1.length;
+        _resultVector = null;
+        _risultato = "Modulo V1: ${result.toStringAsFixed(2)}";
+        break;
+      case 'Modulo V2':
+        final result = v2.length;
+        _resultVector = null;
+        _risultato = "Modulo V2: ${result.toStringAsFixed(2)}";
+        break;
+      case 'Angolo tra V1 e V2':
+        final dotProduct = v1.dot(v2);
+        final magnitude1 = v1.length;
+        final magnitude2 = v2.length;
+        if (magnitude1 != 0 && magnitude2 != 0) {
+          final cosTheta = dotProduct / (magnitude1 * magnitude2);
+          final angleRad = acos(cosTheta.clamp(-1.0, 1.0));
+          final angleDeg = angleRad * 180 / pi;
+          _resultVector = null;
+          _risultato = "Angolo tra i vettori: ${angleDeg.toStringAsFixed(2)}°";
+        } else {
+          _resetResult();
+        }
+        break;
+    }
+    setState(() {});
   }
 
   void _resetResult() {
@@ -213,19 +263,19 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
   }
 
   void _clearFields() {
-    setState(() {
-      _x1Controller.clear();
-      _y1Controller.clear();
-      _x2Controller.clear();
-      _y2Controller.clear();
-      _v1 = null;
-      _v2 = null;
-      _resultVector = null;
-      _risultato = "";
-      _selectedOperation = null;
-    });
+    _x1Controller.clear();
+    _y1Controller.clear();
+    _z1Controller.clear();
+    _x2Controller.clear();
+    _y2Controller.clear();
+    _z2Controller.clear();
+    _v1 = null;
+    _v2 = null;
+    _resultVector = null;
+    _risultato = "";
+    _selectedOperation = null;
+    _updateVectors();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -240,10 +290,13 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            _buildModeSwitch(),
             _buildVectorInput(
               'Vettore 1',
               _x1Controller,
               _y1Controller,
+              _z1Controller,
+              _is3D,
               _updateVectors,
             ),
             const SizedBox(height: 16.0),
@@ -251,10 +304,11 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
               'Vettore 2',
               _x2Controller,
               _y2Controller,
+              _z2Controller,
+              _is3D,
               _updateVectors,
             ),
-
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             Row(
               children: [
                 Expanded(
@@ -266,20 +320,34 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
                 ),
               ],
             ),
-
             const SizedBox(height: 16.0),
             _buildOperationDropdown(),
             const SizedBox(height: 16.0),
             _buildResultDisplay(),
             const SizedBox(height: 24.0),
-            _buildGraphSection(),
+            if (!_is3D) _buildGraphSection(),
           ],
         ),
       ),
     );
   }
 
-  Widget _buildVectorInput(String title, TextEditingController xController, TextEditingController yController, VoidCallback onChanged) {
+  Widget _buildModeSwitch() {
+    return SwitchListTile(
+      title: const Text('Modalità 3D'),
+      secondary: const Icon(Icons.threed_rotation),
+      value: _is3D,
+      onChanged: (bool value) {
+        setState(() {
+          _is3D = value;
+          _clearFields();
+          _selectedOperation = null;
+        });
+      },
+    );
+  }
+
+  Widget _buildVectorInput(String title, TextEditingController xController, TextEditingController yController, TextEditingController zController, bool is3D, VoidCallback onChanged) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -313,6 +381,20 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
                 onChanged: (_) => onChanged(),
               ),
             ),
+            if (is3D) ...[
+              const SizedBox(width: 8.0),
+              Expanded(
+                child: TextField(
+                  controller: zController,
+                  keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                  decoration: const InputDecoration(
+                    labelText: 'Componente Z',
+                    border: OutlineInputBorder(),
+                  ),
+                  onChanged: (_) => onChanged(),
+                ),
+              ),
+            ],
           ],
         ),
       ],
@@ -320,13 +402,14 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
   }
 
   Widget _buildOperationDropdown() {
+    final operations = _is3D ? _operations3D : _operations2D;
     return DropdownButtonFormField<String>(
       decoration: const InputDecoration(
         labelText: 'Seleziona operazione',
         border: OutlineInputBorder(),
       ),
       value: _selectedOperation,
-      items: _operations.map((String value) {
+      items: operations.map((String value) {
         return DropdownMenuItem<String>(
           value: value,
           child: Text(value),
@@ -337,12 +420,13 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
   }
 
   Widget _buildResultDisplay() {
+    final colorScheme = Theme.of(context).colorScheme;
     return Container(
       padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
-        color: Theme.of(context).primaryColor.withOpacity(0.1),
+        color: colorScheme.primaryContainer,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Theme.of(context).primaryColor),
+        border: Border.all(color: colorScheme.primary),
       ),
       child: Center(
         child: Text(
@@ -350,7 +434,7 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
-            color: Theme.of(context).primaryColor,
+            color: colorScheme.onPrimaryContainer,
           ),
           textAlign: TextAlign.center,
         ),
@@ -416,6 +500,7 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
                   v2: _v2,
                   resultVector: _resultVector,
                   lastOperation: _selectedOperation ?? '',
+                  context: context,
                 ),
               ),
             ),
@@ -443,20 +528,25 @@ class VectorPainter extends CustomPainter {
   final Offset? v2;
   final Offset? resultVector;
   final String lastOperation;
+  final BuildContext context;
 
   VectorPainter({
     this.v1,
     this.v2,
     this.resultVector,
     required this.lastOperation,
+    required this.context,
   });
 
   @override
   void paint(Canvas canvas, Size size) {
     final double gridStep = 40.0;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final axisColor = isDark ? Colors.white : Colors.black;
+    final gridColor = isDark ? Colors.white.withOpacity(0.2) : Colors.grey.withOpacity(0.3);
 
     final Paint gridPaint = Paint()
-      ..color = Colors.grey.withOpacity(0.3)
+      ..color = gridColor
       ..strokeWidth = 1.0;
 
     for (double i = -2000; i <= 2000; i += gridStep) {
@@ -465,7 +555,7 @@ class VectorPainter extends CustomPainter {
     }
 
     final Paint axisPaint = Paint()
-      ..color = Colors.black
+      ..color = axisColor
       ..strokeWidth = 2.0;
 
     canvas.drawLine(const Offset(-2000, 0), const Offset(2000, 0), axisPaint);
@@ -474,19 +564,24 @@ class VectorPainter extends CustomPainter {
     _drawArrowHead(canvas, const Offset(1950, 0), const Offset(2000, 0), axisPaint);
     _drawArrowHead(canvas, const Offset(0, -1950), const Offset(0, -2000), axisPaint);
 
+    final textStyle = TextStyle(
+      color: axisColor,
+      fontWeight: FontWeight.bold,
+    );
+
     final textPainterX = TextPainter(
-      text: const TextSpan(
+      text: TextSpan(
         text: 'X',
-        style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        style: textStyle,
       ),
       textDirection: TextDirection.ltr,
     )..layout();
     textPainterX.paint(canvas, const Offset(1960, 10));
 
     final textPainterY = TextPainter(
-      text: const TextSpan(
+      text: TextSpan(
         text: 'Y',
-        style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        style: textStyle,
       ),
       textDirection: TextDirection.ltr,
     )..layout();
@@ -514,17 +609,19 @@ class VectorPainter extends CustomPainter {
 
     _drawArrowHead(canvas, Offset.zero, end, vectorPaint);
 
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     final textPainter = TextPainter(
       text: TextSpan(
         text: '$label\n(${vector.dx.toStringAsFixed(1)}, ${vector.dy.toStringAsFixed(1)})',
         style: TextStyle(
-          color: color,
+          color: isDark ? Colors.white : color,
           fontWeight: FontWeight.bold,
           fontSize: 12,
           shadows: [
             Shadow(
               blurRadius: 2.0,
-              color: Colors.black.withOpacity(0.5),
+              color: isDark ? Colors.black.withOpacity(0.5) : Colors.black.withOpacity(0.5),
               offset: const Offset(1, 1),
             )
           ],
@@ -560,7 +657,7 @@ class VectorPainter extends CustomPainter {
     return oldDelegate.v1 != v1 ||
         oldDelegate.v2 != v2 ||
         oldDelegate.resultVector != resultVector ||
-        oldDelegate.lastOperation != lastOperation;
+        oldDelegate.lastOperation != lastOperation ||
+        oldDelegate.context != context;
   }
 }
-
