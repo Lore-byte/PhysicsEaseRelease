@@ -14,6 +14,7 @@ import 'package:physics_ease_release/pages/help_page.dart';
 import 'package:physics_ease_release/pages/info_page.dart';
 import 'package:physics_ease_release/pages/collaborate_page.dart';
 import 'package:physics_ease_release/pages/privacy_policy_page.dart';
+import 'package:physics_ease_release/pages/licence_page.dart';
 import 'package:physics_ease_release/pages/onboarding_page.dart';
 import 'package:flutter/services.dart';
 
@@ -344,7 +345,7 @@ class _MyAppState extends State<MyApp> {
                 ),
                 ListTile(
                   leading: Icon(
-                    _themeMode == ThemeMode.light ? Icons.dark_mode : Icons.light_mode,
+                    _themeMode == ThemeMode.light ? Icons.light_mode : Icons.dark_mode,
                     color: currentColorScheme.primary,
                   ),
                   title: const Text('Tema'),
@@ -401,6 +402,19 @@ class _MyAppState extends State<MyApp> {
                     Navigator.of(builderContext, rootNavigator: true).push(
                       MaterialPageRoute(
                         builder: (innerContext) => PrivacyPolicyPage(themeMode: _themeMode),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.copyright, color: currentColorScheme.primary),
+                  title: const Text('Licenza'),
+                  onTap: () {
+                    FocusScope.of(builderContext).unfocus();
+                    Navigator.of(builderContext).pop();
+                    Navigator.of(builderContext, rootNavigator: true).push(
+                      MaterialPageRoute(
+                        builder: (innerContext) => LicencePage(themeMode: _themeMode),
                       ),
                     );
                   },
