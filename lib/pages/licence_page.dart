@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class PrivacyPolicyPage extends StatelessWidget {
+class LicencePage extends StatelessWidget {
   final ThemeMode themeMode;
 
-  const PrivacyPolicyPage({super.key, required this.themeMode});
+  const LicencePage({super.key, required this.themeMode});
 
   @override
   Widget build(BuildContext context) {
     final currentColorScheme = Theme.of(context).colorScheme;
 
     final Uri _url = Uri.parse(
-        'https://sites.google.com/view/physicsease-privacy-policy/home');
+        'https://sites.google.com/view/physicsease-license/home');
 
     final String logoAssetPath = themeMode == ThemeMode.dark
         ? 'assets/my_logo_dark.png'
@@ -19,7 +19,7 @@ class PrivacyPolicyPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Privacy Policy'),
+        title: const Text('Licenza'),
         backgroundColor: currentColorScheme.primaryContainer,
       ),
       body: SingleChildScrollView(
@@ -46,14 +46,14 @@ class PrivacyPolicyPage extends StatelessWidget {
             const SizedBox(height: 20),
 
             Icon(
-              Icons.privacy_tip_outlined,
+              Icons.balance,
               size: 80,
               color: currentColorScheme.primary,
             ),
             const SizedBox(height: 24),
 
             Text(
-              'La nostra priorità è la tua privacy.',
+              'Per un uso sicuro e consapevole.',
               style: TextStyle(
                 fontSize: 26,
                 fontWeight: FontWeight.bold,
@@ -64,7 +64,7 @@ class PrivacyPolicyPage extends StatelessWidget {
             const SizedBox(height: 12),
 
             Text(
-              'Per garantire la massima trasparenza puoi consultare la nostra politica sulla privacy completa.',
+              'Puoi trovare nella licenza completa tutte le informazioni sui termini e le condizioni d’uso dell’app.',
               style: TextStyle(
                 fontSize: 16,
                 color: currentColorScheme.onSurfaceVariant,
@@ -90,7 +90,7 @@ class PrivacyPolicyPage extends StatelessWidget {
                     }
                   },
                   icon: const Icon(Icons.open_in_new, size: 32),
-                  label: const Text('Apri la Privacy Policy'),
+                  label: const Text('Apri la Licenza'),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: currentColorScheme.primary,
                     foregroundColor: currentColorScheme.onPrimary,
