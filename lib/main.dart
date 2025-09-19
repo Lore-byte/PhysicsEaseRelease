@@ -447,7 +447,7 @@ class _MyAppState extends State<MyApp> {
               BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Preferiti'),
               BottomNavigationBarItem(icon: Icon(Icons.calculate), label: 'Calcolatrice'),
               BottomNavigationBarItem(icon: Icon(Icons.storage), label: 'Dati'),
-              BottomNavigationBarItem(icon: Icon(Icons.build), label: 'Tools'),
+              BottomNavigationBarItem(icon: Icon(Icons.build), label: 'Strumenti'),
             ],
             currentIndex: _selectedIndex,
             selectedItemColor: currentColorScheme.primary,

@@ -28,7 +28,7 @@ class OnboardingPage extends StatelessWidget {
           title: "Sempre con te",
           body:
           "PhysicsEase funziona anche offline. Questo significa che puoi studiare e consultare tutto ciò di cui hai bisogno ovunque tu sia, senza preoccuparti della connessione internet.",
-          image: Icon(Icons.signal_cellular_connected_no_internet_4_bar_outlined, size: 150, color: primaryColor),
+          image: Icon(Icons.wifi_off, size: 150, color: primaryColor),
           decoration: PageDecoration(
             bodyTextStyle: const TextStyle(fontSize: 18),
             titleTextStyle: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
