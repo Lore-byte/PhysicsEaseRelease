@@ -88,6 +88,17 @@ class OnboardingPage extends StatelessWidget {
       onDone: onFinished,
       onSkip: onFinished,
       showSkipButton: true,
+
+      skipOrBackFlex: 0,
+      nextFlex: 0,
+      dotsFlex: 2,
+
+      baseBtnStyle: TextButton.styleFrom(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        minimumSize: const Size(0, 40),
+        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+      ),
+
       skip: Text("Salta", style: TextStyle(color: primaryColor)),
       next: Icon(Icons.arrow_forward, color: primaryColor),
       done: Text("Inizia", style: TextStyle(fontWeight: FontWeight.bold, color: primaryColor)),
