@@ -285,7 +285,7 @@ class _UnitConverterPageState extends State<UnitConverterPage> with SingleTicker
         foregroundColor: colorScheme.onPrimaryContainer,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 8.0),
         child: Column(
           children: [
             Card(

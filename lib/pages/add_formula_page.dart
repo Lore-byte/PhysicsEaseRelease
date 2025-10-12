@@ -130,7 +130,7 @@ class _AddFormulaPageState extends State<AddFormulaPage> {
       widget.onAddFormula(newFormula).then((_) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
-            content: Text('Formula salvata con successo nella sezione "Personalizzate"!'),
+            content: Text('Formula salvata con successo nella sezione "Personalizzate" (Home)'),
             duration: Duration(seconds: 3),
           ),
         );
@@ -153,7 +153,7 @@ class _AddFormulaPageState extends State<AddFormulaPage> {
       body: Form(
         key: _formKey,
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(16.0),
+          padding: EdgeInsets.only(bottom: 140, left: 16, right: 16, top: 16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [

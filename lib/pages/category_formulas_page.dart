@@ -78,7 +78,7 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
         child: Text('Nessuna formula trovata per questa categoria.'),
       )
           : ListView.builder(
-        padding: const EdgeInsets.all(8.0),
+        padding: EdgeInsets.only(bottom: 120, left: 8.0, right: 8.0),
         itemCount: _filteredFormulas.length,
         itemBuilder: (context, index) {
           final formula = _filteredFormulas[index];

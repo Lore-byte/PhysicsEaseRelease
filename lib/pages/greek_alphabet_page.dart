@@ -164,7 +164,7 @@ class GreekAlphabetPage extends StatelessWidget {
         iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
       ),
       body: ListView.builder(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 8.0),
         itemCount: _greekLetters.length,
         itemBuilder: (context, index) {
           final letter = _greekLetters[index];

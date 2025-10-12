@@ -73,7 +73,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
     }
 
     return ListView.builder(
-      padding: const EdgeInsets.all(8.0),
+      padding: EdgeInsets.only(bottom: 120, left: 8.0, right: 8.0),
       itemCount: _favoriteFormulas.length,
       itemBuilder: (context, index) {
         final formula = _favoriteFormulas[index];

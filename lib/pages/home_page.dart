@@ -216,7 +216,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
             behavior: HitTestBehavior.translucent,
             child: _searchQuery.isEmpty
                 ? ListView.builder(
-              padding: const EdgeInsets.symmetric(vertical: 8.0),
+              padding: EdgeInsets.only(bottom: 120),
               itemCount: temi.length,
               itemBuilder: (context, index) {
                 final tema = temi[index];
@@ -245,8 +245,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
               },
             )
                 : ListView.builder(
-              padding: const EdgeInsets.symmetric(
-                  horizontal: 16.0, vertical: 4.0),
+              padding: EdgeInsets.only(bottom: 120),
               itemCount: _filteredFormulas.length,
               itemBuilder: (context, index) {
                 final formula = _filteredFormulas[index];

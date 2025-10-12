@@ -554,7 +554,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
             ],
             const SizedBox(height: 20),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: EdgeInsets.only(bottom: 220, left: 16, right: 16, top: 8.0),
               child: Text(
                 //'Nota: Potrebbe essere necessario concedere il permesso "Riconoscimento attività fisica" dalle impostazioni dell\'app se i dati non vengono visualizzati.',
                 'Nota: La disponibilità e la precisione dei sensori dipende dal dispositivo',
@@ -569,16 +569,20 @@ class _SensorToolPageState extends State<SensorToolPage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            _showGraphs = !_showGraphs;
-          });
-        },
-        backgroundColor: colorScheme.tertiary,
-        foregroundColor: colorScheme.onTertiary,
-        child: Icon(_showGraphs ? Icons.list : Icons.auto_graph),
+      floatingActionButton: Padding(
+        padding: EdgeInsets.only(bottom: 80),
+        child: FloatingActionButton(
+          onPressed: () {
+            setState(() {
+              _showGraphs = !_showGraphs;
+            });
+          },
+          backgroundColor: colorScheme.tertiary,
+          foregroundColor: colorScheme.onTertiary,
+          child: Icon(_showGraphs ? Icons.list : Icons.auto_graph),
+        ),
       ),
+
     );
   }
 }

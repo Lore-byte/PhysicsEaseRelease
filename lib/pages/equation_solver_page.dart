@@ -169,7 +169,7 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
         iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [

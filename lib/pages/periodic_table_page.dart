@@ -292,7 +292,7 @@ class PeriodicTablePage extends StatelessWidget {
         iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.only(bottom: 140, left: 16, right: 16, top: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

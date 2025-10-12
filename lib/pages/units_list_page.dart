@@ -98,7 +98,7 @@ class _UnitsListPageState extends State<UnitsListPage> {
         return StatefulBuilder(
           builder: (BuildContext context, StateSetter setStateModal) {
             return Container(
-              padding: const EdgeInsets.all(20.0),
+              padding: EdgeInsets.only(top:20, left:20, right:20, bottom: 150),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -180,7 +180,7 @@ class _UnitsListPageState extends State<UnitsListPage> {
           ],
         ),
         body: ListView.builder(
-          padding: const EdgeInsets.all(16.0),
+          padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 8.0),
           itemCount: filteredUnits.keys.length,
           itemBuilder: (context, categoryIndex) {
             final categoryName = filteredUnits.keys.elementAt(categoryIndex);

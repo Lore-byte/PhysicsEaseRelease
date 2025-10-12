@@ -261,7 +261,7 @@ class _ConstantsListPageState extends State<ConstantsListPage> {
               ),
             )
                 : ListView.separated(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+              padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 8.0),
               itemCount: _filteredConstants.length,
               separatorBuilder: (context, index) => const SizedBox(height: 8.0),
               itemBuilder: (context, index) {
@@ -305,13 +305,16 @@ class _ConstantsListPageState extends State<ConstantsListPage> {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _toggleSearchVisibility,
-        backgroundColor: colorScheme.primary,
-        foregroundColor: colorScheme.onPrimary,
-        tooltip: _isSearchVisible ? 'Nascondi ricerca' : 'Mostra ricerca',
-        child: Icon(_isSearchVisible ? Icons.close : Icons.search),
-      ),
+      floatingActionButton: Padding(
+        padding: EdgeInsets.only(bottom: 80),
+        child: FloatingActionButton(
+          onPressed: _toggleSearchVisibility,
+          backgroundColor: colorScheme.primary,
+          foregroundColor: colorScheme.onPrimary,
+          tooltip: _isSearchVisible ? 'Nascondi ricerca' : 'Mostra ricerca',
+          child: Icon(_isSearchVisible ? Icons.close : Icons.search),
+        ),
+      )
     );
   }
 

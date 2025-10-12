@@ -383,7 +383,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
             flex: 4,
             child: Container(
               color: colorScheme.surface,
-              padding: const EdgeInsets.all(6.0),
+              padding: EdgeInsets.only(bottom: 120, left: 6.0, right: 6.0, top: 6.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: buttonsLayout.map((row) {
