@@ -78,7 +78,7 @@ class _ToolsPageState extends State<ToolsPage> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      padding: EdgeInsets.only(bottom: 120),
       child: Column(
         children: [
           _buildToolCard(

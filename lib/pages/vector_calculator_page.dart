@@ -287,7 +287,7 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
         foregroundColor: colorScheme.onPrimaryContainer,
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 8.0),
         child: Column(
           children: [
             _buildModeSwitch(),
@@ -505,11 +505,16 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
               ),
             ),
           ),
-          floatingActionButton: FloatingActionButton(
-            onPressed: _centerGraph,
-            child: const Icon(Icons.center_focus_strong),
-            backgroundColor: Theme.of(context).primaryColor,
+          floatingActionButton: Padding(
+            padding: EdgeInsets.only(bottom: 80),
+            child: FloatingActionButton(
+              onPressed: _centerGraph,
+              backgroundColor: colorScheme.primary,
+              foregroundColor: colorScheme.onPrimary,
+              child: const Icon(Icons.center_focus_strong),
+            ),
           ),
+
         );
       },
     ));

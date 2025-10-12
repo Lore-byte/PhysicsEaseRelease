@@ -548,7 +548,7 @@ class _GraphPageState extends State<GraphPage> {
             ),
           ),
           Container(
-            padding: const EdgeInsets.all(4),
+            padding: EdgeInsets.only(bottom: 100, left: 16, right: 16, top: 4.0),
             child: GridView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
@@ -746,7 +746,7 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
             ),
           ),
           Positioned(
-            bottom: 16,
+            bottom: 120,
             right: 16,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,

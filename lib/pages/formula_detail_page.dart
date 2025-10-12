@@ -234,7 +234,7 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
         elevation: 0,
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+        padding: EdgeInsets.only(bottom: 120, left: 16.0, right: 16.0, top: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
