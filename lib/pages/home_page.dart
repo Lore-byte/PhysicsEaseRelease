@@ -5,14 +5,33 @@ import 'package:physics_ease_release/models/formula.dart';
 import 'package:physics_ease_release/pages/category_formulas_page.dart';
 import 'package:physics_ease_release/pages/formula_detail_page.dart';
 
+// HomePage is a StatefulWidget that represents the main screen of the app
 class HomePage extends StatefulWidget {
+  // Callback to toggle between light and dark mode
   final VoidCallback onToggleTheme;
+
+  // The current theme mode (light/dark/system)
   final ThemeMode themeMode;
+
+  // List of all formulas available in the app
   final List<Formula> allFormulas;
+
+  // Set of favorite formula IDs
   final Set<String> favoriteIds;
+
+  // Async function to toggle a formula as favorite
   final Future<void> Function(String) onToggleFavorite;
+
+  // Function to control visibility of the global app bar
   final void Function(bool) setGlobalAppBarVisibility;
 
+  // Notifier to control whether the search bar is visible or not
+  final ValueNotifier<bool> searchBarVisible;
+
+  // The color scheme currently used in the app
+  final ColorScheme colorScheme;
+
+  // Constructor for HomePage with all required parameters
   const HomePage({
     super.key,
     required this.onToggleTheme,
@@ -21,18 +40,29 @@ class HomePage extends StatefulWidget {
     required this.favoriteIds,
     required this.onToggleFavorite,
     required this.setGlobalAppBarVisibility,
+    required this.searchBarVisible,
+    required this.colorScheme,
   });
 
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
+// State class for HomePage
 class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
+  // Current text inside the search bar
   String _searchQuery = '';
+
+  // Filtered list of formulas based on search query
   List<Formula> _filteredFormulas = [];
+
+  // Focus node to control search bar focus state
   late FocusNode _searchFocusNode;
+
+  // Controller to manage search bar text input
   late TextEditingController _searchController;
 
+  // Map that associates each physics category with an icon
   final Map<String, IconData> _categoryIcons = {
     'Cinematica': Icons.directions_run,
     'Dinamica': Icons.fitness_center,
@@ -56,15 +86,21 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
+    // Initialize the focus node and text controller
     _searchFocusNode = FocusNode();
     _searchController = TextEditingController();
+
+    // Initially populate filtered formulas (empty search)
     _filterFormulas();
+
+    // Register this widget as a lifecycle observer
     WidgetsBinding.instance.addObserver(this);
   }
 
   @override
   void didUpdateWidget(covariant HomePage oldWidget) {
     super.didUpdateWidget(oldWidget);
+    // If formulas or favorites change, re-filter them
     if (widget.allFormulas != oldWidget.allFormulas ||
         widget.favoriteIds != oldWidget.favoriteIds) {
       _filterFormulas();
@@ -74,8 +110,10 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+    // When dependencies change, check if the current route is active
     final currentRoute = ModalRoute.of(context);
     if (currentRoute != null && currentRoute.isCurrent) {
+      // If user navigates back and search was open, reset it
       if (_searchController.text.isNotEmpty || _searchFocusNode.hasFocus) {
         _resetSearchAndFocus();
       }
@@ -84,12 +122,16 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 
   @override
   void dispose() {
+    // Clean up focus node and controller when the widget is disposed
     _searchFocusNode.dispose();
     _searchController.dispose();
+
+    // Remove lifecycle observer
     WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
 
+  // Called every time user types something in the search bar
   void _onSearchChanged(String query) {
     setState(() {
       _searchQuery = query;
@@ -97,6 +139,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     });
   }
 
+  // Resets the search query and removes focus from the field
   void _resetSearchAndFocus() {
     setState(() {
       _searchQuery = '';
@@ -106,12 +149,15 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     });
   }
 
+  // Filters formulas based on the current search query
   void _filterFormulas() {
     setState(() {
       if (_searchQuery.isEmpty) {
+        // If search is empty, show nothing (or could show all)
         _filteredFormulas = [];
       } else {
         final queryLower = _searchQuery.toLowerCase();
+        // Check if title, description, or keywords contain the query
         _filteredFormulas = widget.allFormulas.where((formula) {
           return formula.titolo.toLowerCase().contains(queryLower) ||
               formula.descrizione.toLowerCase().contains(queryLower) ||
@@ -122,13 +168,14 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     });
   }
 
+  // Builds a single card for a physics category
   Widget _buildCategoryCard({
     required BuildContext context,
     required String title,
     required IconData icon,
     required VoidCallback onTap,
   }) {
-    final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = widget.colorScheme;
 
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
@@ -136,7 +183,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       elevation: 4,
       child: InkWell(
         borderRadius: BorderRadius.circular(16),
-        onTap: onTap,
+        onTap: onTap, // Opens the category page when tapped
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Row(
@@ -153,6 +200,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                   ),
                 ),
               ),
+              // Arrow icon to indicate navigation
               Icon(Icons.chevron_right, color: colorScheme.onSurfaceVariant),
             ],
           ),
@@ -163,9 +211,11 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
+    // Extract unique categories from the formulas list
     final Set<String> categories =
-    widget.allFormulas.map((f) => f.categoria).toSet();
+        widget.allFormulas.map((f) => f.categoria).toSet();
 
+    // Sort categories alphabetically, except "Personalizzate" which goes last
     List<String> temi = categories.where((cat) => cat != 'Personalizzate').toList();
     temi.sort();
 
@@ -173,141 +223,189 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       temi.add('Personalizzate');
     }
 
-
+    // Build the page layout
     return Column(
       children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
-          child: TextField(
-            controller: _searchController,
-            focusNode: _searchFocusNode,
-            decoration: InputDecoration(
-              hintText: 'Cerca formule o parole chiave...',
-              prefixIcon: Icon(
-                Icons.search,
-                color: Theme.of(context).colorScheme.onSurfaceVariant,
+        // Search bar visibility controlled by ValueListenableBuilder
+        ValueListenableBuilder<bool>(
+          valueListenable: widget.searchBarVisible,
+          builder: (context, visible, _) {
+            if (!visible) {
+              // When search bar closes, clear query and focus
+              if (_searchQuery.isNotEmpty || _searchFocusNode.hasFocus) {
+                WidgetsBinding.instance.addPostFrameCallback((_) => _resetSearchAndFocus());
+              }
+              return const SizedBox.shrink(); // Return empty space
+            }
+            // When it opens, focus the search bar
+            WidgetsBinding.instance.addPostFrameCallback((_) {
+              if (!_searchFocusNode.hasFocus) {
+                FocusScope.of(context).requestFocus(_searchFocusNode);
+              }
+            });
+            return Padding(
+              padding: EdgeInsets.only(
+                top: MediaQuery.of(context).viewPadding.top + 70,
+                left: 16,
+                right: 16,
+                bottom: 16,
               ),
-              suffixIcon: _searchQuery.isNotEmpty
-                  ? IconButton(
-                icon: Icon(Icons.clear, color: Theme.of(context).colorScheme.onSurfaceVariant),
-                onPressed: () {
-                  _resetSearchAndFocus();
-                },
-              )
-                  : null,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(
-                  color: Theme.of(context).colorScheme.outline,
+              child: TextField(
+                controller: _searchController,
+                focusNode: _searchFocusNode,
+                decoration: InputDecoration(
+                  hintText: 'Cerca formule o parole chiave...',
+                  prefixIcon: Icon(
+                    Icons.search,
+                    color: Theme.of(context).colorScheme.onSurfaceVariant,
+                  ),
+                  suffixIcon: _searchQuery.isNotEmpty
+                      ? IconButton(
+                          icon: Icon(Icons.backspace_outlined, color: Theme.of(context).colorScheme.onSurfaceVariant),
+                          onPressed: () {
+                            _resetSearchAndFocus();
+                          },
+                        )
+                      : null,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide(
+                      color: Theme.of(context).colorScheme.outline,
+                    ),
+                  ),
+                  filled: true,
+                  fillColor: Theme.of(context).colorScheme.surfaceContainerHighest,
                 ),
+                onChanged: _onSearchChanged, // Triggers search filtering
               ),
-              filled: true,
-              fillColor: Theme.of(context).colorScheme.surfaceVariant,
-            ),
-            onChanged: _onSearchChanged,
-          ),
+            );
+          },
         ),
 
-        Expanded(
-          child: GestureDetector(
-            onTap: () {
-              _searchFocusNode.unfocus();
-            },
-            behavior: HitTestBehavior.translucent,
-            child: _searchQuery.isEmpty
-                ? ListView.builder(
-              padding: EdgeInsets.only(bottom: 120),
-              itemCount: temi.length,
-              itemBuilder: (context, index) {
-                final tema = temi[index];
-                return _buildCategoryCard(
-                  context: context,
-                  title: tema,
-                  icon: _categoryIcons[tema] ?? Icons.category,
-                  onTap: () async {
-                    _searchFocusNode.unfocus();
-                    await Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (_) => CategoryFormulasPage(
-                          category: tema,
-                          allFormulas: widget.allFormulas,
-                          favoriteIds: widget.favoriteIds,
-                          onToggleFavorite: widget.onToggleFavorite,
-                          themeMode: widget.themeMode,
-                          setGlobalAppBarVisibility:
-                          widget.setGlobalAppBarVisibility,
+        // Main content list (categories or filtered formulas)
+        ValueListenableBuilder<bool>(
+          valueListenable: widget.searchBarVisible,
+          builder: (context, searchVisible, _) {
+            final topListPadding = searchVisible
+                ? 0.0
+                : MediaQuery.of(context).viewPadding.top + 70;
+
+            return Expanded(
+              child: GestureDetector(
+                // Tap outside search bar to dismiss keyboard
+                onTap: () => _searchFocusNode.unfocus(),
+                behavior: HitTestBehavior.translucent,
+                child: _searchQuery.isEmpty
+                    // If search is empty, show category list
+                    ? ListView.builder(
+                        padding: EdgeInsets.only(
+                          top: topListPadding,
+                          bottom: MediaQuery.of(context).viewPadding.bottom + 98,
                         ),
-                      ),
-                    );
-                    widget.setGlobalAppBarVisibility(true);
-                  },
-                );
-              },
-            )
-                : ListView.builder(
-              padding: EdgeInsets.only(bottom: 120),
-              itemCount: _filteredFormulas.length,
-              itemBuilder: (context, index) {
-                final formula = _filteredFormulas[index];
-                return Card(
-                  margin: const EdgeInsets.symmetric(vertical: 6.0),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  elevation: 2,
-                  child: ListTile(
-                    title: Text(
-                      formula.titolo,
-                      style: const TextStyle(fontWeight: FontWeight.w500),
-                    ),
-                    subtitle: formula.formulaLatex.isNotEmpty
-                        ? Math.tex(
-                      formula.formulaLatex,
-                      textStyle: TextStyle(
-                        fontSize: 16,
-                        color: Theme.of(context)
-                            .colorScheme
-                            .onSurfaceVariant,
-                      ),
-                      onErrorFallback: (Object e) {
-                        return Text(
-                          'Errore LaTeX',
-                          style: TextStyle(
-                            color: Theme.of(context).colorScheme.error,
-                            fontSize: 12,
-                          ),
-                        );
-                      },
-                    )
-                        : Text(
-                      'Formula non disponibile',
-                      style: TextStyle(
-                        fontStyle: FontStyle.italic,
-                        color:
-                        Theme.of(context).colorScheme.error,
-                      ),
-                    ),
-                    trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                    onTap: () async {
-                      _searchFocusNode.unfocus();
-                      await Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => FormulaDetailPage(
-                            formula: formula,
-                            themeMode: widget.themeMode,
-                            isFavorite:
-                            widget.favoriteIds.contains(formula.id),
-                            onToggleFavorite: widget.onToggleFavorite,
-                          ),
+                        itemCount: temi.length,
+                        itemBuilder: (context, index) {
+                          final tema = temi[index];
+                          return _buildCategoryCard(
+                            context: context,
+                            title: tema,
+                            icon: _categoryIcons[tema] ?? Icons.category,
+                            onTap: () async {
+                              // When category tapped, hide search bar and navigate to category page
+                              widget.searchBarVisible.value = false;
+                              _searchFocusNode.unfocus();
+                              await Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (_) => CategoryFormulasPage(
+                                    category: tema,
+                                    allFormulas: widget.allFormulas,
+                                    favoriteIds: widget.favoriteIds,
+                                    onToggleFavorite: widget.onToggleFavorite,
+                                    themeMode: widget.themeMode,
+                                    setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
+                                  ),
+                                ),
+                              );
+                              // Restore app bar visibility after returning
+                              widget.setGlobalAppBarVisibility(true);
+                            },
+                          );
+                        },
+                      )
+                    // Otherwise show filtered formulas
+                    : ListView.builder(
+                        padding: EdgeInsets.only(
+                          top: 0, // Explicitly zero when filtered
+                          bottom: MediaQuery.of(context).viewPadding.bottom + 98,
                         ),
-                      );
-                      widget.setGlobalAppBarVisibility(true);
-                    },
-                  ),
-                );
-              },
-            ),
-          ),
+                        itemCount: _filteredFormulas.length,
+                        itemBuilder: (context, index) {
+                          final formula = _filteredFormulas[index];
+                          return Card(
+                            margin: const EdgeInsets.symmetric(vertical: 6.0),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            elevation: 2,
+                            child: ListTile(
+                              title: Text(
+                                formula.titolo,
+                                style: const TextStyle(fontWeight: FontWeight.w500),
+                              ),
+                              // If LaTeX formula available, render it
+                              subtitle: formula.formulaLatex.isNotEmpty
+                                  ? Math.tex(
+                                      formula.formulaLatex,
+                                      textStyle: TextStyle(
+                                        fontSize: 16,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .onSurfaceVariant,
+                                      ),
+                                      onErrorFallback: (Object e) {
+                                        // If LaTeX fails, show error text
+                                        return Text(
+                                          'Errore LaTeX',
+                                          style: TextStyle(
+                                            color: Theme.of(context).colorScheme.error,
+                                            fontSize: 12,
+                                          ),
+                                        );
+                                      },
+                                    )
+                                  // Fallback text if formula missing
+                                  : Text(
+                                      'Formula non disponibile',
+                                      style: TextStyle(
+                                        fontStyle: FontStyle.italic,
+                                        color: Theme.of(context).colorScheme.error,
+                                      ),
+                                    ),
+                              trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                              onTap: () async {
+                                // When formula tapped, open detail page
+                                widget.searchBarVisible.value = false;
+                                _searchFocusNode.unfocus();
+                                await Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (_) => FormulaDetailPage(
+                                      formula: formula,
+                                      themeMode: widget.themeMode,
+                                      setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
+                                      isFavorite: widget.favoriteIds.contains(formula.id),
+                                      onToggleFavorite: widget.onToggleFavorite,
+                                    ),
+                                  ),
+                                );
+                                // Restore app bar visibility after returning
+                                widget.setGlobalAppBarVisibility(true);
+                              },
+                            ),
+                          );
+                        },
+                      ),
+              ),
+            );
+          },
         ),
       ],
     );

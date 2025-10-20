@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/models/element.dart' as MyElement;
 import 'package:physics_ease_release/data/elements_data.dart';
+import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class PeriodicTablePage extends StatelessWidget {
   const PeriodicTablePage({super.key});
@@ -286,70 +287,80 @@ class PeriodicTablePage extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Tavola Periodica'),
-        backgroundColor: colorScheme.primaryContainer,
-        iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
-      ),
-      body: SingleChildScrollView(
-        padding: EdgeInsets.only(bottom: 140, left: 16, right: 16, top: 16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Tocca un elemento per vedere i suoi dettagli fisici e chimici. Scorri orizzontalmente per vedere tutti gli elementi.',
-              style: Theme.of(context).textTheme.titleMedium,
-            ),
-            _buildCategoryLegend(context),
-            const SizedBox(height: 20),
-            // Scorrevolezza orizzontale
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  for (int y = 1; y <= 7; y++)
-                    Row(
-                      children: [
-                        for (int x = 1; x <= maxColumns; x++)
-                          _buildElementCell(context, elementsByPosition['$y-$x']),
-                      ],
-                    ),
-                  const SizedBox(height: 20),
-                  Text(
-                    'Lantanidi',
-                    style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
-                  ),
-                  Row(
+      appBar: null,
+      body: Stack(
+        children: [
+          SingleChildScrollView(
+            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, left: 16, right: 16, top: MediaQuery.of(context).viewPadding.top + 70),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Tocca un elemento per vedere i suoi dettagli fisici e chimici. Scorri orizzontalmente per vedere tutti gli elementi.',
+                  style: Theme.of(context).textTheme.titleMedium,
+                ),
+                _buildCategoryLegend(context),
+                const SizedBox(height: 20),
+                // Scorrevolezza orizzontale
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(width: cellSize * 3),
-                      for (int x = 4; x <= 17; x++)
-                        _buildElementCell(context, elementsByPosition['9-$x']),
+                      for (int y = 1; y <= 7; y++)
+                        Row(
+                          children: [
+                            for (int x = 1; x <= maxColumns; x++)
+                              _buildElementCell(context, elementsByPosition['$y-$x']),
+                          ],
+                        ),
+                      const SizedBox(height: 20),
+                      Text(
+                        'Lantanidi',
+                        style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
+                      ),
+                      Row(
+                        children: [
+                          SizedBox(width: cellSize * 3),
+                          for (int x = 4; x <= 17; x++)
+                            _buildElementCell(context, elementsByPosition['9-$x']),
+                        ],
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        'Attinidi',
+                        style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
+                      ),
+                      Row(
+                        children: [
+                          SizedBox(width: cellSize * 3),
+                          for (int x = 4; x <= 17; x++)
+                            _buildElementCell(context, elementsByPosition['10-$x']),
+                        ],
+                      ),
                     ],
                   ),
-                  const SizedBox(height: 10),
-                  Text(
-                    'Attinidi',
-                    style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
-                  ),
-                  Row(
-                    children: [
-                      SizedBox(width: cellSize * 3),
-                      for (int x = 4; x <= 17; x++)
-                        _buildElementCell(context, elementsByPosition['10-$x']),
-                    ],
-                  ),
-                ],
-              ),
+                ),
+                const SizedBox(height: 20),
+                Text(
+                  'I dati degli elementi sono basati su informazioni standard sulla tavola periodica (es. IUPAC). Alcuni valori di punti di fusione/ebollizione e densità potrebbero essere N/D (Non Disponibile) per elementi sintetici o non completamente caratterizzati.',
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+                ),
+              ],
             ),
-            const SizedBox(height: 20),
-            Text(
-              'I dati degli elementi sono basati su informazioni standard sulla tavola periodica (es. IUPAC). Alcuni valori di punti di fusione/ebollizione e densità potrebbero essere N/D (Non Disponibile) per elementi sintetici o non completamente caratterizzati.',
-              style: Theme.of(context).textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+          ),
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: 'Tavola Periodica',
+              leading: FloatingTopBarLeading.back,
+              onBackPressed: () => Navigator.of(context).maybePop(),
             ),
-          ],
-        ),
-      ),
+          ),
+        ],
+      )
     );
   }
 }

@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/pages/onboarding_page.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class HelpPage extends StatelessWidget {
   final ThemeMode themeMode;
@@ -21,122 +22,131 @@ class HelpPage extends StatelessWidget {
     final cardColor = colorScheme.surfaceContainer;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Aiuto'),
-        backgroundColor: colorScheme.primaryContainer,
-        iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
-        elevation: 0,
-      ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(height: 24),
+      appBar: null,
+      body: Stack(
+        children: [
+          SingleChildScrollView(
+            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 16, left: 16.0, right: 16.0, top: MediaQuery.of(context).viewPadding.top + 60),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(height: 24),
 
-            Text(
-              'Come usare l\'app',
-              style: textTheme.headlineSmall?.copyWith(
-                fontWeight: FontWeight.bold,
-                color: textColor,
-              ),
-            ),
-            const SizedBox(height: 16),
-            _buildInfoCard(
-              context,
-              cardColor,
-              iconColor,
-              Icons.search,
-              'Cerca formule',
-              'Usa la barra di ricerca nella schermata Home per trovare rapidamente formule per titolo, descrizione o parole chiave. Puoi anche filtrare per categorie specifiche.',
-            ),
-            _buildInfoCard(
-              context,
-              cardColor,
-              iconColor,
-              Icons.star,
-              'I tuoi preferiti',
-              'Tocca l\'icona a stella su qualsiasi formula per aggiungerla o rimuoverla dai tuoi preferiti. Troverai tutte le formule salvate nella sezione "Preferiti" per un accesso rapido.',
-            ),
-            _buildInfoCard(
-              context,
-              cardColor,
-              iconColor,
-              Icons.calculate,
-              'Calcolatrice integrata',
-              'La sezione "Calcolatrice" offre uno strumento utile per i tuoi calcoli rapidi. Puoi inserire espressioni matematiche complesse e ottenere risultati istantanei.',
-            ),
-            _buildInfoCard(
-              context,
-              cardColor,
-              iconColor,
-              Icons.storage,
-              'Informazioni e dati',
-              'Nella sezione "Dati" troverai raccolte di informazioni utili come liste di costanti fisiche, unità di misura, dati sui pianeti e la tavola periodica. Ideale per la consultazione rapida.',
-            ),
-            _buildInfoCard(
-              context,
-              cardColor,
-              iconColor,
-              Icons.build,
-              'Strumenti utili',
-              'La sezione "Tools" mette a tua disposizione strumenti interattivi come la possibilità di aggiungere le tue formule personalizzate, un convertitore di unità e un potente risolutore di equazioni.',
-            ),
-
-            const SizedBox(height: 24),
-
-            Card(
-              color: colorScheme.primary,
-              margin: const EdgeInsets.symmetric(horizontal: 16),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: InkWell(
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => OnboardingPage(
-                        onFinished: () {
-                          Navigator.of(context).pop();
-                        },
-                      ),
-                    ),
-                  );
-                },
-                borderRadius: BorderRadius.circular(20),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.slideshow, size: 30, color: colorScheme.onPrimary),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Text(
-                          "Riguarda l'Onboarding",
-                          textAlign: TextAlign.center,
-                          style: textTheme.titleMedium?.copyWith(
-                            fontWeight: FontWeight.bold,
-                            color: colorScheme.onPrimary,
-                          ),
-                        ),
-                      ),
-                    ],
+                Text(
+                  'Come usare l\'app',
+                  style: textTheme.headlineSmall?.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: textColor,
                   ),
                 ),
-              ),
-            ),
+                const SizedBox(height: 16),
+                _buildInfoCard(
+                  context,
+                  cardColor,
+                  iconColor,
+                  Icons.search,
+                  'Cerca formule',
+                  'Usa la barra di ricerca nella schermata Home per trovare rapidamente formule per titolo, descrizione o parole chiave. Puoi anche filtrare per categorie specifiche.',
+                ),
+                _buildInfoCard(
+                  context,
+                  cardColor,
+                  iconColor,
+                  Icons.star,
+                  'I tuoi preferiti',
+                  'Tocca l\'icona a stella su qualsiasi formula per aggiungerla o rimuoverla dai tuoi preferiti. Troverai tutte le formule salvate nella sezione "Preferiti" per un accesso rapido.',
+                ),
+                _buildInfoCard(
+                  context,
+                  cardColor,
+                  iconColor,
+                  Icons.calculate,
+                  'Calcolatrice integrata',
+                  'La sezione "Calcolatrice" offre uno strumento utile per i tuoi calcoli rapidi. Puoi inserire espressioni matematiche complesse e ottenere risultati istantanei.',
+                ),
+                _buildInfoCard(
+                  context,
+                  cardColor,
+                  iconColor,
+                  Icons.storage,
+                  'Informazioni e dati',
+                  'Nella sezione "Dati" troverai raccolte di informazioni utili come liste di costanti fisiche, unità di misura, dati sui pianeti e la tavola periodica. Ideale per la consultazione rapida.',
+                ),
+                _buildInfoCard(
+                  context,
+                  cardColor,
+                  iconColor,
+                  Icons.build,
+                  'Strumenti utili',
+                  'La sezione "Tools" mette a tua disposizione strumenti interattivi come la possibilità di aggiungere le tue formule personalizzate, un convertitore di unità e un potente risolutore di equazioni.',
+                ),
 
-            const SizedBox(height: 24),
-            Center(
-              child: Text(
-                '© 2025 PhysicsEase. Tutti i diritti riservati.',
-                style: textTheme.bodySmall?.copyWith(color: colorScheme.onSurfaceVariant),
-              ),
+                const SizedBox(height: 24),
+
+                Card(
+                  color: colorScheme.primary,
+                  margin: const EdgeInsets.symmetric(horizontal: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => OnboardingPage(
+                            onFinished: () {
+                              Navigator.of(context).pop();
+                            },
+                          ),
+                        ),
+                      );
+                    },
+                    borderRadius: BorderRadius.circular(20),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.slideshow, size: 30, color: colorScheme.onPrimary),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Text(
+                              "Riguarda l'Onboarding",
+                              textAlign: TextAlign.center,
+                              style: textTheme.titleMedium?.copyWith(
+                                fontWeight: FontWeight.bold,
+                                color: colorScheme.onPrimary,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+
+                const SizedBox(height: 24),
+                Center(
+                  child: Text(
+                    '© 2025 PhysicsEase. Tutti i diritti riservati.',
+                    style: textTheme.bodySmall?.copyWith(color: colorScheme.onSurfaceVariant),
+                  ),
+                ),
+              ],
             ),
-          ],
-        ),
-      ),
+          ),
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: 'Aiuto',
+              leading: FloatingTopBarLeading.back,
+              onBackPressed: () => Navigator.of(context).maybePop(),
+            ),
+          ),
+        ],
+      )
     );
   }
 

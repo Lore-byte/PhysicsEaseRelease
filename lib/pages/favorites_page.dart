@@ -9,7 +9,7 @@ class FavoritesPage extends StatefulWidget {
   final Set<String> favoriteIds;
   final Future<void> Function(String) onToggleFavorite;
   final ThemeMode themeMode;
-  // final void Function(bool) setGlobalAppBarVisibility;
+  final void Function(bool) setGlobalAppBarVisibility;
 
   const FavoritesPage({
     super.key,
@@ -17,7 +17,7 @@ class FavoritesPage extends StatefulWidget {
     required this.favoriteIds,
     required this.onToggleFavorite,
     required this.themeMode,
-    // required this.setGlobalAppBarVisibility,
+    required this.setGlobalAppBarVisibility,
   });
 
   @override
@@ -73,7 +73,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
     }
 
     return ListView.builder(
-      padding: EdgeInsets.only(bottom: 120, left: 8.0, right: 8.0),
+      padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, left: 8.0, right: 8.0, top: MediaQuery.of(context).viewPadding.top + 70),
       itemCount: _favoriteFormulas.length,
       itemBuilder: (context, index) {
         final formula = _favoriteFormulas[index];
@@ -99,17 +99,20 @@ class _FavoritesPageState extends State<FavoritesPage> {
               )
                   : Text('Formula non disponibile', style: TextStyle(fontStyle: FontStyle.italic, color: Theme.of(context).colorScheme.error)),
               trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-              onTap: () {
-                Navigator.of(context).push(
+              onTap: () async {
+                widget.setGlobalAppBarVisibility(false); // NASCONDI PRIMA DI APRIRE
+                await Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (_) => FormulaDetailPage(
                       formula: formula,
                       themeMode: widget.themeMode,
                       isFavorite: widget.favoriteIds.contains(formula.id),
                       onToggleFavorite: widget.onToggleFavorite,
+                      setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
                     ),
                   ),
                 );
+                widget.setGlobalAppBarVisibility(true); // RIPRISTINA DOPO IL POP
               },
             ),
           ),

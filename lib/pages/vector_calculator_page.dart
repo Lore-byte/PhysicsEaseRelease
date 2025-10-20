@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vector_math/vector_math_64.dart' show Vector3;
 import 'dart:math';
+import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 void main() {
   runApp(const VectorCalculatorApp());
@@ -12,7 +13,7 @@ class VectorCalculatorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Calcolatore Vettoriale',
+      title: 'Calcolo Vettoriale',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         useMaterial3: true,
@@ -281,54 +282,65 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Calcolatore Vettoriale'),
-        backgroundColor: colorScheme.primaryContainer,
-        foregroundColor: colorScheme.onPrimaryContainer,
-      ),
-      body: SingleChildScrollView(
-        padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 8.0),
-        child: Column(
-          children: [
-            _buildModeSwitch(),
-            _buildVectorInput(
-              'Vettore 1',
-              _x1Controller,
-              _y1Controller,
-              _z1Controller,
-              _is3D,
-              _updateVectors,
-            ),
-            const SizedBox(height: 16.0),
-            _buildVectorInput(
-              'Vettore 2',
-              _x2Controller,
-              _y2Controller,
-              _z2Controller,
-              _is3D,
-              _updateVectors,
-            ),
-            const SizedBox(height: 16.0),
-            Row(
+      appBar: null,
+      body: Stack(
+        children: [
+          SingleChildScrollView(
+            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, left: 16.0, right: 16.0, top: MediaQuery.of(context).viewPadding.top + 70),
+            child: Column(
               children: [
-                Expanded(
-                  child: FilledButton.icon(
-                    onPressed: _clearFields,
-                    icon: const Icon(Icons.clear),
-                    label: const Text("Pulisci campi"),
-                  ),
+                _buildModeSwitch(),
+                _buildVectorInput(
+                  'Vettore 1',
+                  _x1Controller,
+                  _y1Controller,
+                  _z1Controller,
+                  _is3D,
+                  _updateVectors,
                 ),
+                const SizedBox(height: 16.0),
+                _buildVectorInput(
+                  'Vettore 2',
+                  _x2Controller,
+                  _y2Controller,
+                  _z2Controller,
+                  _is3D,
+                  _updateVectors,
+                ),
+                const SizedBox(height: 16.0),
+                Row(
+                  children: [
+                    Expanded(
+                      child: FilledButton.icon(
+                        onPressed: _clearFields,
+                        icon: const Icon(Icons.clear),
+                        label: const Text("Pulisci campi"),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 16.0),
+                _buildOperationDropdown(),
+                const SizedBox(height: 16.0),
+                _buildResultDisplay(),
+                const SizedBox(height: 24.0),
+                if (!_is3D) _buildGraphSection(),
               ],
             ),
-            const SizedBox(height: 16.0),
-            _buildOperationDropdown(),
-            const SizedBox(height: 16.0),
-            _buildResultDisplay(),
-            const SizedBox(height: 24.0),
-            if (!_is3D) _buildGraphSection(),
-          ],
-        ),
-      ),
+          ),
+
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: 'Calcolo Vettoriale',
+              leading: FloatingTopBarLeading.back,
+              onBackPressed: () => Navigator.of(context).maybePop(),
+            ),
+          )
+        ],
+      )
     );
   }
 
@@ -409,6 +421,7 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
         border: OutlineInputBorder(),
       ),
       value: _selectedOperation,
+      menuMaxHeight: 350,
       items: operations.map((String value) {
         return DropdownMenuItem<String>(
           value: value,
@@ -480,30 +493,41 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
       builder: (BuildContext context) {
         final colorScheme = Theme.of(context).colorScheme;
         return Scaffold(
-          appBar: AppBar(
-            title: const Text('Grafico'),
-            backgroundColor: colorScheme.primaryContainer,
-            foregroundColor: colorScheme.onPrimaryContainer,
-          ),
-          body: InteractiveViewer(
-            transformationController: _transformationController,
-            minScale: 0.1,
-            maxScale: 4.0,
-            constrained: false,
-            boundaryMargin: const EdgeInsets.all(double.infinity),
-            child: SizedBox(
-              width: 4000,
-              height: 4000,
-              child: CustomPaint(
-                painter: VectorPainter(
-                  v1: _v1,
-                  v2: _v2,
-                  resultVector: _resultVector,
-                  lastOperation: _selectedOperation ?? '',
-                  context: context,
+          appBar: null,
+          body: Stack(
+            children: [
+              InteractiveViewer(
+                transformationController: _transformationController,
+                minScale: 0.1,
+                maxScale: 4.0,
+                constrained: false,
+                boundaryMargin: const EdgeInsets.all(double.infinity),
+                child: SizedBox(
+                  width: 4000,
+                  height: 4000,
+                  child: CustomPaint(
+                    painter: VectorPainter(
+                      v1: _v1,
+                      v2: _v2,
+                      resultVector: _resultVector,
+                      lastOperation: _selectedOperation ?? '',
+                      context: context,
+                    ),
+                  ),
                 ),
               ),
-            ),
+
+              Positioned(
+                top: MediaQuery.of(context).viewPadding.top,
+                left: 16,
+                right: 16,
+                child: FloatingTopBar(
+                  title: 'Grafico',
+                  leading: FloatingTopBarLeading.back,
+                  onBackPressed: () => Navigator.of(context).maybePop(),
+                ),
+              )
+            ],
           ),
           floatingActionButton: Padding(
             padding: EdgeInsets.only(bottom: 80),

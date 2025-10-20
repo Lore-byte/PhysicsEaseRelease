@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
+import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class Unit {
   final String name;
@@ -279,193 +280,203 @@ class _UnitConverterPageState extends State<UnitConverterPage> with SingleTicker
     final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Convertitore Unità'),
-        backgroundColor: colorScheme.primaryContainer,
-        foregroundColor: colorScheme.onPrimaryContainer,
-      ),
-      body: Padding(
-        padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 8.0),
-        child: Column(
-          children: [
-            Card(
-              margin: const EdgeInsets.only(bottom: 16.0),
-              elevation: 4,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-                child: DropdownButtonHideUnderline(
-                  child: DropdownButton<UnitCategory>(
-                    value: _selectedCategory,
-                    isExpanded: true,
-                    icon: Icon(Icons.arrow_drop_down, color: colorScheme.primary),
-                    onChanged: (UnitCategory? newValue) {
-                      if (newValue != null) {
-                        setState(() {
-                          _selectedCategory = newValue;
-                          _fromUnit = newValue.units.first;
-                          _toUnit = newValue.units.length > 1 ? newValue.units[1] : newValue.units.first;
-                          _convert();
-                        });
-                      }
-                    },
-                    items: _unitCategories.map<DropdownMenuItem<UnitCategory>>((UnitCategory category) {
-                      return DropdownMenuItem<UnitCategory>(
-                        value: category,
-                        child: Row(
-                          children: [
-                            Icon(category.icon, color: colorScheme.secondary, size: 24),
-                            const SizedBox(width: 10),
-                            Text(category.name, style: TextStyle(fontSize: 18, color: colorScheme.onSurface)),
-                          ],
-                        ),
-                      );
-                    }).toList(),
+      appBar: null,
+      body: Stack(
+        children: [
+          Padding(
+            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, left: 16, right: 16, top: MediaQuery.of(context).viewPadding.top + 70),
+            child: Column(
+              children: [
+                Card(
+                  margin: const EdgeInsets.only(bottom: 16.0),
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                    child: DropdownButtonHideUnderline(
+                      child: DropdownButton<UnitCategory>(
+                        value: _selectedCategory,
+                        isExpanded: true,
+                        icon: Icon(Icons.arrow_drop_down, color: colorScheme.primary),
+                        onChanged: (UnitCategory? newValue) {
+                          if (newValue != null) {
+                            setState(() {
+                              _selectedCategory = newValue;
+                              _fromUnit = newValue.units.first;
+                              _toUnit = newValue.units.length > 1 ? newValue.units[1] : newValue.units.first;
+                              _convert();
+                            });
+                          }
+                        },
+                        items: _unitCategories.map<DropdownMenuItem<UnitCategory>>((UnitCategory category) {
+                          return DropdownMenuItem<UnitCategory>(
+                            value: category,
+                            child: Row(
+                              children: [
+                                Icon(category.icon, color: colorScheme.secondary, size: 24),
+                                const SizedBox(width: 10),
+                                Text(category.name, style: TextStyle(fontSize: 18, color: colorScheme.onSurface)),
+                              ],
+                            ),
+                          );
+                        }).toList(),
+                      ),
+                    ),
                   ),
                 ),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.only(bottom: 8.0),
-              elevation: 2,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: TextField(
-                        controller: _inputController,
-                        keyboardType: TextInputType.number,
-                        style: TextStyle(fontSize: 24, color: colorScheme.onSurface),
-                        decoration: InputDecoration(
-                          hintText: 'Inserisci valore',
-                          border: InputBorder.none,
-                          hintStyle: TextStyle(color: colorScheme.onSurface.withOpacity(0.5)),
+                Card(
+                  margin: const EdgeInsets.only(bottom: 8.0),
+                  elevation: 2,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: TextField(
+                            controller: _inputController,
+                            keyboardType: TextInputType.number,
+                            style: TextStyle(fontSize: 24, color: colorScheme.onSurface),
+                            decoration: InputDecoration(
+                              hintText: 'Inserisci valore',
+                              border: InputBorder.none,
+                              hintStyle: TextStyle(color: colorScheme.onSurface.withOpacity(0.5)),
+                            ),
+                            onChanged: (_) => _convert(),
+                          ),
                         ),
-                        onChanged: (_) => _convert(),
-                      ),
-                    ),
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 12.0),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8.0),
-                        border: Border.all(color: colorScheme.outline.withOpacity(0.3), width: 1.0),
-                      ),
-                      child: DropdownButtonHideUnderline(
-                        child: DropdownButton<Unit>(
-                          value: _fromUnit,
-                          icon: Icon(Icons.arrow_drop_down, color: colorScheme.primary),
-                          onChanged: (Unit? newValue) {
-                            if (newValue != null) {
-                              setState(() {
-                                _fromUnit = newValue;
-                              });
-                              _convert();
-                            }
-                          },
-                          items: _selectedCategory.units.map<DropdownMenuItem<Unit>>((Unit unit) {
-                            return DropdownMenuItem<Unit>(
-                              value: unit,
-                              child: Text(unit.symbol, style: TextStyle(fontSize: 18, color: colorScheme.onSurface)),
-                            );
-                          }).toList(),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8.0),
+                            border: Border.all(color: colorScheme.outline.withOpacity(0.3), width: 1.0),
+                          ),
+                          child: DropdownButtonHideUnderline(
+                            child: DropdownButton<Unit>(
+                              value: _fromUnit,
+                              icon: Icon(Icons.arrow_drop_down, color: colorScheme.primary),
+                              onChanged: (Unit? newValue) {
+                                if (newValue != null) {
+                                  setState(() {
+                                    _fromUnit = newValue;
+                                  });
+                                  _convert();
+                                }
+                              },
+                              items: _selectedCategory.units.map<DropdownMenuItem<Unit>>((Unit unit) {
+                                return DropdownMenuItem<Unit>(
+                                  value: unit,
+                                  child: Text(unit.symbol, style: TextStyle(fontSize: 18, color: colorScheme.onSurface)),
+                                );
+                              }).toList(),
+                            ),
+                          ),
                         ),
-                      ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
-              ),
-            ),
-            Align(
-              alignment: Alignment.center,
-              child: RotationTransition(
-                turns: _animation,
-                child: IconButton(
-                  icon: Icon(Icons.swap_vert, size: 36, color: colorScheme.secondary),
-                  onPressed: _swapUnits,
-                  tooltip: 'Scambia unità',
+                Align(
+                  alignment: Alignment.center,
+                  child: RotationTransition(
+                    turns: _animation,
+                    child: IconButton(
+                      icon: Icon(Icons.swap_vert, size: 36, color: colorScheme.secondary),
+                      onPressed: _swapUnits,
+                      tooltip: 'Scambia unità',
+                    ),
+                  ),
                 ),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.only(top: 8.0),
-              elevation: 2,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: TextField(
-                        controller: _outputController,
-                        readOnly: true,
-                        style: TextStyle(fontSize: 24, color: colorScheme.onSurface),
-                        decoration: InputDecoration(
-                          hintText: 'Risultato',
-                          border: InputBorder.none,
-                          hintStyle: TextStyle(color: colorScheme.onSurface.withOpacity(0.5)),
+                Card(
+                  margin: const EdgeInsets.only(top: 8.0),
+                  elevation: 2,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: TextField(
+                            controller: _outputController,
+                            readOnly: true,
+                            style: TextStyle(fontSize: 24, color: colorScheme.onSurface),
+                            decoration: InputDecoration(
+                              hintText: 'Risultato',
+                              border: InputBorder.none,
+                              hintStyle: TextStyle(color: colorScheme.onSurface.withOpacity(0.5)),
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 12.0),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8.0),
-                        border: Border.all(color: colorScheme.outline.withOpacity(0.3), width: 1.0),
-                      ),
-                      child: DropdownButtonHideUnderline(
-                        child: DropdownButton<Unit>(
-                          value: _toUnit,
-                          icon: Icon(Icons.arrow_drop_down, color: colorScheme.primary),
-                          onChanged: (Unit? newValue) {
-                            if (newValue != null) {
-                              setState(() {
-                                _toUnit = newValue;
-                              });
-                              _convert();
-                            }
-                          },
-                          items: _selectedCategory.units.map<DropdownMenuItem<Unit>>((Unit unit) {
-                            return DropdownMenuItem<Unit>(
-                              value: unit,
-                              child: Text(unit.symbol, style: TextStyle(fontSize: 18, color: colorScheme.onSurface)),
-                            );
-                          }).toList(),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8.0),
+                            border: Border.all(color: colorScheme.outline.withOpacity(0.3), width: 1.0),
+                          ),
+                          child: DropdownButtonHideUnderline(
+                            child: DropdownButton<Unit>(
+                              value: _toUnit,
+                              icon: Icon(Icons.arrow_drop_down, color: colorScheme.primary),
+                              onChanged: (Unit? newValue) {
+                                if (newValue != null) {
+                                  setState(() {
+                                    _toUnit = newValue;
+                                  });
+                                  _convert();
+                                }
+                              },
+                              items: _selectedCategory.units.map<DropdownMenuItem<Unit>>((Unit unit) {
+                                return DropdownMenuItem<Unit>(
+                                  value: unit,
+                                  child: Text(unit.symbol, style: TextStyle(fontSize: 18, color: colorScheme.onSurface)),
+                                );
+                              }).toList(),
+                            ),
+                          ),
                         ),
-                      ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
-              ),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton.icon(
-              onPressed: _clearFields,
-              icon: Icon(Icons.clear_all, color: colorScheme.onPrimary),
-              label: Text(
-                'Cancella',
-                style: TextStyle(color: colorScheme.onPrimary),
-              ),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: colorScheme.primary,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-              ),
-            ),
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.only(top: 20.0),
-                child: ConversionTable(
-                  selectedCategory: _selectedCategory,
-                  fromUnit: _fromUnit,
-                  toUnit: _toUnit,
+                const SizedBox(height: 20),
+                ElevatedButton.icon(
+                  onPressed: _clearFields,
+                  icon: Icon(Icons.clear_all, color: colorScheme.onPrimary),
+                  label: Text(
+                    'Cancella',
+                    style: TextStyle(color: colorScheme.onPrimary),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: colorScheme.primary,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                  ),
                 ),
-              ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20.0),
+                    child: ConversionTable(
+                      selectedCategory: _selectedCategory,
+                      fromUnit: _fromUnit,
+                      toUnit: _toUnit,
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ],
-        ),
-      ),
+          ),
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: 'Convertitore Unità',
+              leading: FloatingTopBarLeading.back,
+              onBackPressed: () => Navigator.of(context).maybePop(),
+            ),
+          ),
+        ],
+      )
     );
   }
 }

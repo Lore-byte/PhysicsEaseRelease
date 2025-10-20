@@ -7,7 +7,8 @@ import 'package:physics_ease_release/pages/periodic_table_page.dart';
 import 'package:physics_ease_release/pages/greek_alphabet_page.dart';
 
 class DataPage extends StatefulWidget {
-  const DataPage({super.key});
+  const DataPage({super.key, required this.setGlobalAppBarVisibility});
+  final void Function(bool) setGlobalAppBarVisibility;
 
   @override
   State<DataPage> createState() => _DataPageState();
@@ -72,7 +73,7 @@ class _DataPageState extends State<DataPage> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: EdgeInsets.only(bottom: 120),
+      padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, top: MediaQuery.of(context).viewPadding.top + 70),
       child: Column(
         children: [
           _buildToolCard(
@@ -80,12 +81,12 @@ class _DataPageState extends State<DataPage> {
             title: 'Costanti Fisiche',
             subtitle: 'Consulta le costanti fondamentali della fisica',
             icon: Icons.science,
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (ctx) => ConstantsListPage(),
-                ),
+            onTap: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.of(context).push(
+                MaterialPageRoute(builder: (ctx) => ConstantsListPage()),
               );
+              widget.setGlobalAppBarVisibility(true);
             },
           ),
           _buildToolCard(
@@ -93,12 +94,12 @@ class _DataPageState extends State<DataPage> {
             title: 'Unità di Misura',
             subtitle: 'Esplora le unità di misura più comuni in fisica',
             icon: Icons.straighten,
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (ctx) => UnitsListPage(),
-                ),
+            onTap: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.of(context).push(
+                MaterialPageRoute(builder: (ctx) => UnitsListPage()),
               );
+              widget.setGlobalAppBarVisibility(true);
             },
           ),
           _buildToolCard(
@@ -106,12 +107,12 @@ class _DataPageState extends State<DataPage> {
             title: 'Sistema Solare',
             subtitle: 'Scopri dati e proprietà fisiche dei pianeti',
             icon: Icons.public,
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (ctx) => const PlanetsPage(),
-                ),
+            onTap: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.of(context).push(
+                MaterialPageRoute(builder: (ctx) => PlanetsPage()),
               );
+              widget.setGlobalAppBarVisibility(true);
             },
           ),
           _buildToolCard(
@@ -119,12 +120,12 @@ class _DataPageState extends State<DataPage> {
             title: 'Tavola Periodica',
             subtitle: 'Esplora gli elementi chimici e le loro proprietà',
             icon: Icons.grid_on,
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (ctx) => const PeriodicTablePage(),
-                ),
+            onTap: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.of(context).push(
+                MaterialPageRoute(builder: (ctx) => PeriodicTablePage()),
               );
+              widget.setGlobalAppBarVisibility(true);
             },
           ),
           _buildToolCard(
@@ -132,12 +133,12 @@ class _DataPageState extends State<DataPage> {
             title: 'Alfabeto Greco',
             subtitle: 'Scopri le lettere greche e il loro utilizzo in fisica',
             icon: Icons.sort_by_alpha,
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (ctx) => const GreekAlphabetPage(),
-                ),
+            onTap: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.of(context).push(
+                MaterialPageRoute(builder: (ctx) => GreekAlphabetPage()),
               );
+              widget.setGlobalAppBarVisibility(true);
             },
           ),
         ],

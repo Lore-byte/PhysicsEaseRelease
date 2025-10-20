@@ -12,8 +12,10 @@ class ToolsPage extends StatefulWidget {
 
   const ToolsPage({
     super.key,
+    required this.setGlobalAppBarVisibility,
     required this.onAddFormula,
   });
+  final void Function(bool) setGlobalAppBarVisibility;
 
   @override
   State<ToolsPage> createState() => _ToolsPageState();
@@ -78,7 +80,7 @@ class _ToolsPageState extends State<ToolsPage> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: EdgeInsets.only(bottom: 120),
+      padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, top: MediaQuery.of(context).viewPadding.top + 70),
       child: Column(
         children: [
           _buildToolCard(
@@ -86,14 +88,16 @@ class _ToolsPageState extends State<ToolsPage> {
             title: 'Aggiungi Nuova Formula',
             subtitle: 'Inserisci le tue formule personalizzate',
             icon: Icons.add_box,
-            onTap: () {
-              Navigator.of(context).push(
+            onTap: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (ctx) => AddFormulaPage(
                     onAddFormula: widget.onAddFormula,
                   ),
                 ),
               );
+              widget.setGlobalAppBarVisibility(true);
             },
           ),
           _buildToolCard(
@@ -101,12 +105,14 @@ class _ToolsPageState extends State<ToolsPage> {
             title: 'Convertitore Unità',
             subtitle: 'Converti tra diverse unità di misura',
             icon: Icons.square_foot,
-            onTap: () {
-              Navigator.of(context).push(
+            onTap: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (ctx) => UnitConverterPage(),
                 ),
               );
+              widget.setGlobalAppBarVisibility(true);
             },
           ),
           _buildToolCard(
@@ -114,12 +120,14 @@ class _ToolsPageState extends State<ToolsPage> {
             title: 'Risolutore Equazioni',
             subtitle: 'Risolvi equazioni algebriche e fisiche',
             icon: Icons.functions,
-            onTap: () {
-              Navigator.of(context).push(
+            onTap: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (ctx) => const EquationSolverPage(),
+                  builder: (ctx) => EquationSolverPage(),
                 ),
               );
+              widget.setGlobalAppBarVisibility(true);
             },
           ),
           _buildToolCard(
@@ -127,12 +135,14 @@ class _ToolsPageState extends State<ToolsPage> {
             title: 'Visualizzatore Grafici',
             subtitle: 'Visualizza funzioni matematiche su un grafico',
             icon: Icons.auto_graph,
-            onTap: () {
-              Navigator.of(context).push(
+            onTap: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (ctx) => const GraphPage(),
+                  builder: (ctx) => GraphPage(),
                 ),
               );
+              widget.setGlobalAppBarVisibility(true);
             },
           ),
           _buildToolCard(
@@ -140,12 +150,14 @@ class _ToolsPageState extends State<ToolsPage> {
             title: 'Calcolatore Vettoriale',
             subtitle: 'Esegui operazioni su vettori',
             icon: Icons.alt_route,
-            onTap: () {
-              Navigator.of(context).push(
+            onTap: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (ctx) => const VectorCalculatorPage(),
+                  builder: (ctx) => VectorCalculatorPage(),
                 ),
               );
+              widget.setGlobalAppBarVisibility(true);
             },
           ),
           _buildToolCard(
@@ -153,12 +165,14 @@ class _ToolsPageState extends State<ToolsPage> {
             title: 'Sensori', //spostati sulla versione pro
             subtitle: 'Visualizza dati da accelerometro, giroscopio e magnetometro',
             icon: Icons.sensors,
-            onTap: () {
-              Navigator.of(context).push(
+            onTap: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (ctx) => const SensorToolPage(),
+                  builder: (ctx) => SensorToolPage(),
                 ),
               );
+              widget.setGlobalAppBarVisibility(true);
             },
           ),
         ],

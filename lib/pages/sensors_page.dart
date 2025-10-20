@@ -4,6 +4,7 @@ import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:async';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class SensorToolPage extends StatefulWidget {
   const SensorToolPage({super.key});
@@ -460,127 +461,130 @@ class _SensorToolPageState extends State<SensorToolPage> {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Sensori'),
-        backgroundColor: colorScheme.primaryContainer,
-        iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(height: 20),
-            if (_showGraphs) ...[
-              _buildLineChart(
-                title: 'Accelerometro Lineare',
-                xSpots: _userAccelXSpots,
-                ySpots: _userAccelYSpots,
-                zSpots: _userAccelZSpots,
-                lineColorX: Colors.redAccent,
-                lineColorY: Colors.greenAccent,
-                lineColorZ: Colors.blueAccent,
-                textColor: colorScheme.onSurface,
-                gridColor: colorScheme.onSurface,
-                unit: 'm/s²',
-              ),
-              _buildLineChart(
-                title: 'Accelerometro (con gravità)',
-                xSpots: _accelXSpots,
-                ySpots: _accelYSpots,
-                zSpots: _accelZSpots,
-                lineColorX: Colors.red,
-                lineColorY: Colors.green,
-                lineColorZ: Colors.blue,
-                textColor: colorScheme.onSurface,
-                gridColor: colorScheme.onSurface,
-                unit: 'm/s²',
-              ),
-              _buildLineChart(
-                title: 'Giroscopio',
-                xSpots: _gyroXSpots,
-                ySpots: _gyroYSpots,
-                zSpots: _gyroZSpots,
-                lineColorX: Colors.purpleAccent,
-                lineColorY: Colors.orangeAccent,
-                lineColorZ: Colors.cyanAccent,
-                textColor: colorScheme.onSurface,
-                gridColor: colorScheme.onSurface,
-                unit: 'rad/s',
-              ),
-              _buildLineChart(
-                title: 'Magnetometro',
-                xSpots: _magXSpots,
-                ySpots: _magYSpots,
-                zSpots: _magZSpots,
-                lineColorX: Colors.teal,
-                lineColorY: Colors.amber,
-                lineColorZ: Colors.indigo,
-                textColor: colorScheme.onSurface,
-                gridColor: colorScheme.onSurface,
-                unit: 'µT',
-              ),
-            ] else ...[
-              _buildSensorCard(
-                cardColor: colorScheme.tertiaryContainer,
-                textColor: colorScheme.onTertiaryContainer,
-                title: 'Accelerometro Lineare',
-                xValue: _formatValue(_userAccelerometerEvent?.x),
-                yValue: _formatValue(_userAccelerometerEvent?.y),
-                zValue: _formatValue(_userAccelerometerEvent?.z),
-              ),
-              _buildSensorCard(
-                cardColor: colorScheme.primaryContainer,
-                textColor: colorScheme.onPrimaryContainer,
-                title: 'Accelerometro (con gravità)',
-                xValue: _formatValue(_accelerometerEvent?.x),
-                yValue: _formatValue(_accelerometerEvent?.y),
-                zValue: _formatValue(_accelerometerEvent?.z),
-              ),
-              _buildSensorCard(
-                cardColor: colorScheme.secondaryContainer,
-                textColor: colorScheme.onSecondaryContainer,
-                title: 'Giroscopio (rad/s)',
-                xValue: _formatValue(_gyroscopeEvent?.x),
-                yValue: _formatValue(_gyroscopeEvent?.y),
-                zValue: _formatValue(_gyroscopeEvent?.z),
-              ),
-              _buildSensorCard(
-                cardColor: colorScheme.errorContainer,
-                textColor: colorScheme.onErrorContainer,
-                title: 'Magnetometro (µT)',
-                xValue: _formatValue(_magnetometerEvent?.x),
-                yValue: _formatValue(_magnetometerEvent?.y),
-                zValue: _formatValue(_magnetometerEvent?.z),
-              ),
-            ],
-            const SizedBox(height: 20),
-            Padding(
-              padding: EdgeInsets.only(bottom: 220, left: 16, right: 16, top: 8.0),
-              child: Text(
-                //'Nota: Potrebbe essere necessario concedere il permesso "Riconoscimento attività fisica" dalle impostazioni dell\'app se i dati non vengono visualizzati.',
-                'Nota: La disponibilità e la precisione dei sensori dipende dal dispositivo',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 14,
-                  fontStyle: FontStyle.italic,
-                  color: colorScheme.onSurfaceVariant,
+      appBar: null,
+      body: Stack(
+        children: [
+          SingleChildScrollView(
+            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, top: MediaQuery.of(context).viewPadding.top + 50),
+            child: Column(
+              children: [
+                const SizedBox(height: 20),
+                if (_showGraphs) ...[
+                  _buildLineChart(
+                    title: 'Accelerometro Lineare',
+                    xSpots: _userAccelXSpots,
+                    ySpots: _userAccelYSpots,
+                    zSpots: _userAccelZSpots,
+                    lineColorX: Colors.redAccent,
+                    lineColorY: Colors.greenAccent,
+                    lineColorZ: Colors.blueAccent,
+                    textColor: colorScheme.onSurface,
+                    gridColor: colorScheme.onSurface,
+                    unit: 'm/s²',
+                  ),
+                  _buildLineChart(
+                    title: 'Accelerometro (con gravità)',
+                    xSpots: _accelXSpots,
+                    ySpots: _accelYSpots,
+                    zSpots: _accelZSpots,
+                    lineColorX: Colors.red,
+                    lineColorY: Colors.green,
+                    lineColorZ: Colors.blue,
+                    textColor: colorScheme.onSurface,
+                    gridColor: colorScheme.onSurface,
+                    unit: 'm/s²',
+                  ),
+                  _buildLineChart(
+                    title: 'Giroscopio',
+                    xSpots: _gyroXSpots,
+                    ySpots: _gyroYSpots,
+                    zSpots: _gyroZSpots,
+                    lineColorX: Colors.purpleAccent,
+                    lineColorY: Colors.orangeAccent,
+                    lineColorZ: Colors.cyanAccent,
+                    textColor: colorScheme.onSurface,
+                    gridColor: colorScheme.onSurface,
+                    unit: 'rad/s',
+                  ),
+                  _buildLineChart(
+                    title: 'Magnetometro',
+                    xSpots: _magXSpots,
+                    ySpots: _magYSpots,
+                    zSpots: _magZSpots,
+                    lineColorX: Colors.teal,
+                    lineColorY: Colors.amber,
+                    lineColorZ: Colors.indigo,
+                    textColor: colorScheme.onSurface,
+                    gridColor: colorScheme.onSurface,
+                    unit: 'µT',
+                  ),
+                ] else ...[
+                  _buildSensorCard(
+                    cardColor: colorScheme.tertiaryContainer,
+                    textColor: colorScheme.onTertiaryContainer,
+                    title: 'Accelerometro Lineare',
+                    xValue: _formatValue(_userAccelerometerEvent?.x),
+                    yValue: _formatValue(_userAccelerometerEvent?.y),
+                    zValue: _formatValue(_userAccelerometerEvent?.z),
+                  ),
+                  _buildSensorCard(
+                    cardColor: colorScheme.primaryContainer,
+                    textColor: colorScheme.onPrimaryContainer,
+                    title: 'Accelerometro (con gravità)',
+                    xValue: _formatValue(_accelerometerEvent?.x),
+                    yValue: _formatValue(_accelerometerEvent?.y),
+                    zValue: _formatValue(_accelerometerEvent?.z),
+                  ),
+                  _buildSensorCard(
+                    cardColor: colorScheme.secondaryContainer,
+                    textColor: colorScheme.onSecondaryContainer,
+                    title: 'Giroscopio (rad/s)',
+                    xValue: _formatValue(_gyroscopeEvent?.x),
+                    yValue: _formatValue(_gyroscopeEvent?.y),
+                    zValue: _formatValue(_gyroscopeEvent?.z),
+                  ),
+                  _buildSensorCard(
+                    cardColor: colorScheme.errorContainer,
+                    textColor: colorScheme.onErrorContainer,
+                    title: 'Magnetometro (µT)',
+                    xValue: _formatValue(_magnetometerEvent?.x),
+                    yValue: _formatValue(_magnetometerEvent?.y),
+                    zValue: _formatValue(_magnetometerEvent?.z),
+                  ),
+                ],
+                const SizedBox(height: 20),
+
+                Text(
+                  //'Nota: Potrebbe essere necessario concedere il permesso "Riconoscimento attività fisica" dalle impostazioni dell\'app se i dati non vengono visualizzati.',
+                  'Nota: La disponibilità e la precisione dei sensori dipende dal dispositivo',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontStyle: FontStyle.italic,
+                    color: colorScheme.onSurfaceVariant,
+                  ),
                 ),
-              ),
+              ],
             ),
-          ],
-        ),
-      ),
-      floatingActionButton: Padding(
-        padding: EdgeInsets.only(bottom: 80),
-        child: FloatingActionButton(
-          onPressed: () {
-            setState(() {
-              _showGraphs = !_showGraphs;
-            });
-          },
-          backgroundColor: colorScheme.tertiary,
-          foregroundColor: colorScheme.onTertiary,
-          child: Icon(_showGraphs ? Icons.list : Icons.auto_graph),
-        ),
+          ),
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: 'Sensori',
+              leading: FloatingTopBarLeading.back,
+              onBackPressed: () => Navigator.of(context).maybePop(),
+              showCharts: true,
+              isChartsVisible: _showGraphs,
+              onChartsPressed: () {
+                setState(() {
+                  _showGraphs = !_showGraphs;
+                });
+              },
+            ),
+          ),
+        ],
       ),
 
     );

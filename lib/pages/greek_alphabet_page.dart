@@ -1,6 +1,7 @@
 // lib/pages/greek_alphabet_page.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
+import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class GreekAlphabetPage extends StatelessWidget {
   const GreekAlphabetPage({super.key});
@@ -158,75 +159,85 @@ class GreekAlphabetPage extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Alfabeto Greco'),
-        backgroundColor: colorScheme.primaryContainer,
-        iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
-      ),
-      body: ListView.builder(
-        padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 8.0),
-        itemCount: _greekLetters.length,
-        itemBuilder: (context, index) {
-          final letter = _greekLetters[index];
-          return Card(
-            margin: const EdgeInsets.only(bottom: 12.0),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-            elevation: 4,
-            color: colorScheme.surfaceContainer,
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    letter['letter']!,
-                    style: textTheme.headlineSmall?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: colorScheme.primary,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    letter['description']!,
-                    style: textTheme.bodyLarge?.copyWith(
-                      color: colorScheme.onSurfaceVariant,
-                    ),
-                  ),
-                  if (letter['formula']!.isNotEmpty)
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const SizedBox(height: 8),
-                        Math.tex(
-                          letter['formula']!,
-                          textStyle: textTheme.bodyLarge?.copyWith(
-                            color: colorScheme.onSurface,
-                            fontSize: 18,
-                          ),
-                          mathStyle: MathStyle.display,
-                          onErrorFallback: (flutterMathException) {
-                            return Text(
-                              'Errore nel rendering LaTeX: ${flutterMathException.message}',
-                              style: TextStyle(color: colorScheme.error),
-                            );
-                          },
+      appBar: null,
+      body: Stack(
+        children: [
+          ListView.builder(
+            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, left: 16, right: 16, top: MediaQuery.of(context).viewPadding.top + 70),
+            itemCount: _greekLetters.length,
+            itemBuilder: (context, index) {
+              final letter = _greekLetters[index];
+              return Card(
+                margin: const EdgeInsets.only(bottom: 12.0),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                elevation: 4,
+                color: colorScheme.surfaceContainer,
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        letter['letter']!,
+                        style: textTheme.headlineSmall?.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: colorScheme.primary,
                         ),
-                        if (letter['formula_note']!.isNotEmpty)
-                          Text(
-                            letter['formula_note']!,
-                            style: textTheme.bodySmall?.copyWith(
-                              color: colorScheme.onSurfaceVariant.withOpacity(0.7),
-                              fontStyle: FontStyle.italic,
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        letter['description']!,
+                        style: textTheme.bodyLarge?.copyWith(
+                          color: colorScheme.onSurfaceVariant,
+                        ),
+                      ),
+                      if (letter['formula']!.isNotEmpty)
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const SizedBox(height: 8),
+                            Math.tex(
+                              letter['formula']!,
+                              textStyle: textTheme.bodyLarge?.copyWith(
+                                color: colorScheme.onSurface,
+                                fontSize: 18,
+                              ),
+                              mathStyle: MathStyle.display,
+                              onErrorFallback: (flutterMathException) {
+                                return Text(
+                                  'Errore nel rendering LaTeX: ${flutterMathException.message}',
+                                  style: TextStyle(color: colorScheme.error),
+                                );
+                              },
                             ),
-                          ),
-                      ],
-                    ),
-                ],
-              ),
+                            if (letter['formula_note']!.isNotEmpty)
+                              Text(
+                                letter['formula_note']!,
+                                style: textTheme.bodySmall?.copyWith(
+                                  color: colorScheme.onSurfaceVariant.withOpacity(0.7),
+                                  fontStyle: FontStyle.italic,
+                                ),
+                              ),
+                          ],
+                        ),
+                    ],
+                  ),
+                ),
+              );
+            },
+          ),
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: 'Alfabeto Greco',
+              leading: FloatingTopBarLeading.back,
+              onBackPressed: () => Navigator.of(context).maybePop(),
             ),
-          );
-        },
-      ),
+          ),
+        ],
+      )
     );
   }
 }

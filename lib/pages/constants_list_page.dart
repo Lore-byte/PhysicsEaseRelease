@@ -1,5 +1,6 @@
 // lib/pages/constants_list_page.dart
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class ConstantsListPage extends StatefulWidget {
   @override
@@ -147,19 +148,24 @@ class _ConstantsListPageState extends State<ConstantsListPage> {
 
   List<Map<String, String>> _filteredConstants = [];
   final TextEditingController _searchController = TextEditingController();
-  bool _isSearchVisible = false;
+
+  final ValueNotifier<bool> _searchBarVisible = ValueNotifier<bool>(false);
+  late final FocusNode _searchFocusNode;
 
   @override
   void initState() {
     super.initState();
     _filteredConstants = _allConstants;
     _searchController.addListener(_filterConstants);
+    _searchFocusNode = FocusNode();
   }
 
   @override
   void dispose() {
     _searchController.removeListener(_filterConstants);
     _searchController.dispose();
+    _searchBarVisible.dispose();
+    _searchFocusNode.dispose();
     super.dispose();
   }
 
@@ -172,149 +178,176 @@ class _ConstantsListPageState extends State<ConstantsListPage> {
     });
   }
 
-  void _toggleSearchVisibility() {
-    setState(() {
-      _isSearchVisible = !_isSearchVisible;
-      if (!_isSearchVisible) {
-        _searchController.clear();
-        _filterConstants();
-        FocusScope.of(context).unfocus();
-      } else {
-        Future.delayed(Duration(milliseconds: 100), () {
-          FocusScope.of(context).requestFocus();
-        });
-      }
-    });
+  void _resetSearchAndFocus() {
+    _searchController.clear();
+    _filterConstants(); // con query vuota torna alla lista completa
+    _searchFocusNode.unfocus();
   }
+
 
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Costanti Fisiche'),
-        backgroundColor: colorScheme.primaryContainer,
-        foregroundColor: colorScheme.onPrimaryContainer,
-      ),
-      body: Column(
+      appBar: null,
+      body: Stack(
         children: [
-          AnimatedSwitcher(
-            duration: const Duration(milliseconds: 300),
-            transitionBuilder: (Widget child, Animation<double> animation) {
-              return SizeTransition(
-                sizeFactor: animation,
-                axisAlignment: -1.0,
-                child: child,
-              );
-            },
-            child: _isSearchVisible
-                ? Padding(
-              key: const ValueKey('searchBar'),
-              padding: const EdgeInsets.all(16.0),
-              child: TextField(
-                controller: _searchController,
-                decoration: InputDecoration(
-                  hintText: 'Cerca costante...',
-                  prefixIcon: Icon(Icons.search, color: colorScheme.onSurfaceVariant),
-                  suffixIcon: _searchController.text.isNotEmpty
-                      ? IconButton(
-                    icon: Icon(Icons.clear, color: colorScheme.onSurfaceVariant),
-                    onPressed: () {
-                      _searchController.clear();
-                      _filterConstants();
-                    },
-                  )
-                      : null,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12.0),
-                    borderSide: BorderSide(color: colorScheme.outline),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12.0),
-                    borderSide: BorderSide(color: colorScheme.primary, width: 2.0),
-                  ),
-                  contentPadding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 16.0),
-                ),
-                style: TextStyle(color: colorScheme.onSurface),
-                cursorColor: colorScheme.primary,
-              ),
-            )
-                : const SizedBox.shrink(),
-          ),
-          Expanded(
-            child: _filteredConstants.isEmpty
-                ? Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(Icons.search_off, size: 60, color: colorScheme.onSurfaceVariant.withOpacity(0.6)),
-                  const SizedBox(height: 16),
-                  Text(
-                    'Nessuna costante trovata.',
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: colorScheme.onSurfaceVariant.withOpacity(0.8),
+          // Contenuto: search bar a scomparsa + lista
+          Column(
+            children: [
+              // Barra di ricerca a scomparsa come in Home
+              ValueListenableBuilder<bool>(
+                valueListenable: _searchBarVisible,
+                builder: (context, visible, _) {
+                  if (!visible) {
+                    if (_searchController.text.isNotEmpty || _searchFocusNode.hasFocus) {
+                      WidgetsBinding.instance.addPostFrameCallback((_) => _resetSearchAndFocus());
+                    }
+                    return const SizedBox.shrink();
+                  }
+
+                  // Quando si apre: forza il focus al TextField
+                  WidgetsBinding.instance.addPostFrameCallback((_) {
+                    if (!_searchFocusNode.hasFocus) {
+                      FocusScope.of(context).requestFocus(_searchFocusNode);
+                    }
+                  });
+                  return Padding(
+                    padding: EdgeInsets.only(
+                      top: MediaQuery.of(context).viewPadding.top + 70,
+                      left: 16,
+                      right: 16,
+                      bottom: 16,
                     ),
-                  ),
-                ],
+                    child: TextField(
+                      controller: _searchController,
+                      focusNode: _searchFocusNode,
+                      decoration: InputDecoration(
+                        hintText: 'Cerca costante...',
+                        prefixIcon: Icon(
+                          Icons.search,
+                          color: Theme.of(context).colorScheme.onSurfaceVariant,
+                        ),
+                        suffixIcon: _searchController.text.isNotEmpty
+                            ? IconButton(
+                          icon: Icon(
+                            Icons.backspace_outlined,
+                            color: Theme.of(context).colorScheme.onSurfaceVariant,
+                          ),
+                          onPressed: _resetSearchAndFocus,
+                        )
+                            : null,
+
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide(
+                            color: Theme.of(context).colorScheme.outline,
+                          ),
+                        ),
+                        filled: true,
+                        fillColor: Theme.of(context).colorScheme.surfaceContainerHighest,
+                      ),
+                    ),
+                  );
+                },
               ),
-            )
-                : ListView.separated(
-              padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 8.0),
-              itemCount: _filteredConstants.length,
-              separatorBuilder: (context, index) => const SizedBox(height: 8.0),
-              itemBuilder: (context, index) {
-                final constant = _filteredConstants[index];
-                return Card(
-                  elevation: 4,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(12),
-                    onTap: () {
-                      _showConstantDetails(context, constant);
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
+
+              // Lista con padding top dinamico, come in Home
+              ValueListenableBuilder<bool>(
+                valueListenable: _searchBarVisible,
+                builder: (context, searchVisible, _) {
+                  final topListPadding = searchVisible
+                      ? 0.0
+                      : MediaQuery.of(context).viewPadding.top + 70;
+
+                  final colorScheme = Theme.of(context).colorScheme;
+
+                  return Expanded(
+                    child: _filteredConstants.isEmpty
+                        ? Center(
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
+                          Icon(Icons.search_off, size: 60, color: colorScheme.onSurfaceVariant.withOpacity(0.6)),
+                          const SizedBox(height: 16),
                           Text(
-                            constant['name']!,
+                            'Nessuna costante trovata.',
                             style: TextStyle(
                               fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: colorScheme.primary,
-                            ),
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            constant['value']!,
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: colorScheme.onSurface,
+                              color: colorScheme.onSurfaceVariant.withOpacity(0.8),
                             ),
                           ),
                         ],
                       ),
+                    )
+                        : ListView.separated(
+                      padding: EdgeInsets.only(
+                        top: topListPadding,
+                        bottom: MediaQuery.of(context).viewPadding.bottom + 98,
+                        left: 16,
+                        right: 16,
+                      ),
+                      itemCount: _filteredConstants.length,
+                      separatorBuilder: (context, index) => const SizedBox(height: 8.0),
+                      itemBuilder: (context, index) {
+                        final constant = _filteredConstants[index];
+                        return Card(
+                          elevation: 4,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                          child: InkWell(
+                            borderRadius: BorderRadius.circular(12),
+                            onTap: () {
+                              _showConstantDetails(context, constant);
+                            },
+                            child: Padding(
+                              padding: const EdgeInsets.all(16.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    constant['name']!,
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: colorScheme.primary,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 8),
+                                  Text(
+                                    constant['value']!,
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      color: colorScheme.onSurface,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        );
+                      },
                     ),
-                  ),
-                );
-              },
-            ),
+                  );
+                },
+              ),
+            ],
           ),
+
+          // FloatingTopBar sovrapposta
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: 'Costanti Fisiche',
+              leading: FloatingTopBarLeading.back,
+              showSearch: true,
+              searchVisible: _searchBarVisible,
+            ),
+            ),
         ],
       ),
-      floatingActionButton: Padding(
-        padding: EdgeInsets.only(bottom: 80),
-        child: FloatingActionButton(
-          onPressed: _toggleSearchVisibility,
-          backgroundColor: colorScheme.primary,
-          foregroundColor: colorScheme.onPrimary,
-          tooltip: _isSearchVisible ? 'Nascondi ricerca' : 'Mostra ricerca',
-          child: Icon(_isSearchVisible ? Icons.close : Icons.search),
-        ),
-      )
     );
   }
 

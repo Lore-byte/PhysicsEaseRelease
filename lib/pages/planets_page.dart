@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/models/celestial_body.dart';
 import 'dart:math';
+import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class PlanetsPage extends StatelessWidget {
   const PlanetsPage({super.key});
@@ -167,46 +168,55 @@ class PlanetsPage extends StatelessWidget {
 
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Sistema Solare'),
-        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
-        iconTheme: IconThemeData(color: Theme.of(context).colorScheme.onPrimaryContainer),
-      ),
-      body: SingleChildScrollView(
-        padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(height: 20),
-            GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                crossAxisSpacing: 16.0,
-                mainAxisSpacing: 16.0,
-                childAspectRatio: dynamicChildAspectRatio,
-              ),
-              itemCount: celestialBodies.length,
-              itemBuilder: (context, index) {
-                final body = celestialBodies[index];
-                double circleSize;
+      appBar: null,
+      body: Stack(
+        children: [
+          SingleChildScrollView(
+            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 80, left: 16, right: 16, top: MediaQuery.of(context).viewPadding.top + 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                GridView.builder(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    crossAxisSpacing: 16.0,
+                    mainAxisSpacing: 16.0,
+                    childAspectRatio: dynamicChildAspectRatio,
+                  ),
+                  itemCount: celestialBodies.length,
+                  itemBuilder: (context, index) {
+                    final body = celestialBodies[index];
+                    double circleSize;
 
-                if (body.type == 'Stella') {
-                  circleSize = maxCircleSize;
-                } else if (body.type == 'Satellite Naturale') {
-                  circleSize = minCircleSize * 0.8;
-                } else {
-                  final double normalizedRadius = (body.radiusKm - minPlanetRadius) / (maxPlanetRadius - minPlanetRadius);
-                  circleSize = minCircleSize + (normalizedRadius * (maxCircleSize - minCircleSize));
-                }
+                    if (body.type == 'Stella') {
+                      circleSize = maxCircleSize;
+                    } else if (body.type == 'Satellite Naturale') {
+                      circleSize = minCircleSize * 0.8;
+                    } else {
+                      final double normalizedRadius = (body.radiusKm - minPlanetRadius) / (maxPlanetRadius - minPlanetRadius);
+                      circleSize = minCircleSize + (normalizedRadius * (maxCircleSize - minCircleSize));
+                    }
 
-                return _buildCelestialBodyCard(context, body, circleSize);
-              },
+                    return _buildCelestialBodyCard(context, body, circleSize);
+                  },
+                ),
+              ],
             ),
-          ],
-        ),
-      ),
+          ),
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: 'Sistema Solare',
+              leading: FloatingTopBarLeading.back,
+              onBackPressed: () => Navigator.of(context).maybePop(),
+            ),
+          ),
+        ],
+      )
     );
   }
 
@@ -225,34 +235,6 @@ class PlanetsPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              /*Container(
-                width: circleSize,
-                height: circleSize,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: body.color,
-                  boxShadow: [
-                    BoxShadow(
-                      color: body.color.withOpacity(0.5),
-                      blurRadius: 8,
-                      spreadRadius: 2,
-                    ),
-                  ],
-                ),
-                child: Center(
-                  child: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      body.name[0],
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: circleSize * 0.5,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-              ),*/
               ClipOval(
                 child: Image.asset(
                   body.imagePath,
@@ -315,31 +297,7 @@ class PlanetsPage extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Center(
-                  child: /*Container(
-                    width: 100,
-                    height: 100,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: body.color,
-                      boxShadow: [
-                        BoxShadow(
-                          color: body.color.withOpacity(0.5),
-                          blurRadius: 10,
-                          spreadRadius: 3,
-                        ),
-                      ],
-                    ),
-                    child: Center(
-                      child: Text(
-                        body.name[0],
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 50,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),*/
+                  child:
                   ClipOval(
                     child: Image.asset(
                       body.imagePath,
