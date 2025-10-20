@@ -1,5 +1,6 @@
 // lib/pages/units_list_page.dart
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class UnitsListPage extends StatefulWidget {
   const UnitsListPage({super.key});
@@ -98,7 +99,7 @@ class _UnitsListPageState extends State<UnitsListPage> {
         return StatefulBuilder(
           builder: (BuildContext context, StateSetter setStateModal) {
             return Container(
-              padding: EdgeInsets.only(top:20, left:20, right:20, bottom: 150),
+              padding: EdgeInsets.only(top:20, left:20, right:20, bottom: MediaQuery.of(context).viewPadding.bottom + 150),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -165,93 +166,97 @@ class _UnitsListPageState extends State<UnitsListPage> {
         }
       },
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Unità di Misura'),
-          backgroundColor: colorScheme.primaryContainer,
-          iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
-          actions: [
-            IconButton(
-              icon: Icon(
-                _showFundamentalOnly ? Icons.filter_alt_off : Icons.filter_alt,
-                color: colorScheme.onPrimaryContainer,
-              ),
-              onPressed: () => _showFilterOptions(context),
-            ),
-          ],
-        ),
-        body: ListView.builder(
-          padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 8.0),
-          itemCount: filteredUnits.keys.length,
-          itemBuilder: (context, categoryIndex) {
-            final categoryName = filteredUnits.keys.elementAt(categoryIndex);
-            final unitList = filteredUnits[categoryName]!;
+        appBar: null,
+        body: Stack(
+          children: [
+            ListView.builder(
+              padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, left: 16, right: 16, top: MediaQuery.of(context).viewPadding.top + 70),
+              itemCount: filteredUnits.keys.length,
+              itemBuilder: (context, categoryIndex) {
+                final categoryName = filteredUnits.keys.elementAt(categoryIndex);
+                final unitList = filteredUnits[categoryName]!;
 
-            if (unitList.isEmpty) {
-              return const SizedBox.shrink();
-            }
+                if (unitList.isEmpty) {
+                  return const SizedBox.shrink();
+                }
 
-            return Card(
-              margin: const EdgeInsets.only(bottom: 16.0),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-              elevation: 2,
-              child: ExpansionTile(
-                initiallyExpanded: false,
-                title: Text(
-                  categoryName,
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: colorScheme.primary,
-                  ),
-                ),
-                children: unitList.map((unit) {
-                  final isFundamental = unit['isFundamental'] == 'true';
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.baseline,
-                          textBaseline: TextBaseline.alphabetic,
+                return Card(
+                  margin: const EdgeInsets.only(bottom: 16.0),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                  elevation: 2,
+                  child: ExpansionTile(
+                    initiallyExpanded: false,
+                    title: Text(
+                      categoryName,
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: colorScheme.primary,
+                      ),
+                    ),
+                    children: unitList.map((unit) {
+                      final isFundamental = unit['isFundamental'] == 'true';
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              unit['name']!,
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: isFundamental ? FontWeight.w900 : FontWeight.w600,
-                                color: isFundamental ? colorScheme.secondary : colorScheme.onSurface,
-                              ),
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.baseline,
+                              textBaseline: TextBaseline.alphabetic,
+                              children: [
+                                Text(
+                                  unit['name']!,
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: isFundamental ? FontWeight.w900 : FontWeight.w600,
+                                    color: isFundamental ? colorScheme.secondary : colorScheme.onSurface,
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                Text(
+                                  '(${unit['symbol']!})',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontStyle: FontStyle.italic,
+                                    color: isFundamental ? colorScheme.secondary : colorScheme.onSurfaceVariant,
+                                  ),
+                                ),
+                              ],
                             ),
-                            const SizedBox(width: 8),
+                            const SizedBox(height: 4),
                             Text(
-                              '(${unit['symbol']!})',
+                              unit['description']!,
                               style: TextStyle(
                                 fontSize: 14,
-                                fontStyle: FontStyle.italic,
-                                color: isFundamental ? colorScheme.secondary : colorScheme.onSurfaceVariant,
+                                color: isFundamental ? colorScheme.secondary.withOpacity(0.9) : colorScheme.onSurfaceVariant,
                               ),
                             ),
+                            if (unitList.last != unit)
+                              Divider(color: colorScheme.outlineVariant.withOpacity(0.5), height: 16),
                           ],
                         ),
-                        const SizedBox(height: 4),
-                        Text(
-                          unit['description']!,
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: isFundamental ? colorScheme.secondary.withOpacity(0.9) : colorScheme.onSurfaceVariant,
-                          ),
-                        ),
-                        if (unitList.last != unit)
-                          Divider(color: colorScheme.outlineVariant.withOpacity(0.5), height: 16),
-                      ],
-                    ),
-                  );
-                }).toList(),
+                      );
+                    }).toList(),
+                  ),
+                );
+              },
+            ),
+            Positioned(
+              top: MediaQuery.of(context).viewPadding.top,
+              left: 16,
+              right: 16,
+              child: FloatingTopBar(
+                title: 'Unità di Misura',
+                leading: FloatingTopBarLeading.back,
+                onBackPressed: () => Navigator.of(context).maybePop(),
+                showFilter: true,
+                isFilterActive: _showFundamentalOnly,
+                onFilterPressed: () => _showFilterOptions(context),
               ),
-            );
-          },
-        ),
+            ),
+          ],
+        )
       ),
     );
   }

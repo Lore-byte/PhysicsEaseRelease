@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:math_expressions/math_expressions.dart';
+import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class GraphPage extends StatefulWidget {
   const GraphPage({super.key});
@@ -386,169 +387,172 @@ class _GraphPageState extends State<GraphPage> {
 
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Visualizzatore Grafici'),
-        backgroundColor: colorScheme.primaryContainer,
-        iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
-      ),
-      body: Column(
+      appBar: null,
+      body: Stack(
         children: [
-          Expanded(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const SizedBox(height: 16),
-                  ..._functionControllers.asMap().entries.map((entry) {
-                    int idx = entry.key;
-                    TextEditingController controller = entry.value;
-                    return Padding(
-                      padding: const EdgeInsets.only(bottom: 12.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          TextField(
-                            controller: controller,
-                            readOnly: true,
-                            onTap: () {
-                              setState(() {
-                                _focusedController = controller;
-                                if (_isPlaceholder[idx]) {
-                                  controller.clear();
-                                  _isPlaceholder[idx] = false;
-                                  _updateFunction(idx);
-                                }
-                              });
-                            },
-                            decoration: InputDecoration(
-                              labelText: 'f${idx + 1}(x)',
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(12),
-                                borderSide: BorderSide(
-                                  color: _focusedController == controller
-                                      ? colorScheme.primary
-                                      : colorScheme.outline,
-                                  width: 2.0,
+          Column(
+            children: [
+              Expanded(
+                child: SingleChildScrollView(
+                  padding: EdgeInsets.only(left: 16.0, right: 16.0, top: MediaQuery.of(context).viewPadding.top + 70),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      const SizedBox(height: 16),
+                      ..._functionControllers.asMap().entries.map((entry) {
+                        int idx = entry.key;
+                        TextEditingController controller = entry.value;
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 12.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              TextField(
+                                controller: controller,
+                                readOnly: true,
+                                onTap: () {
+                                  setState(() {
+                                    _focusedController = controller;
+                                    if (_isPlaceholder[idx]) {
+                                      controller.clear();
+                                      _isPlaceholder[idx] = false;
+                                      _updateFunction(idx);
+                                    }
+                                  });
+                                },
+                                decoration: InputDecoration(
+                                  labelText: 'f${idx + 1}(x)',
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(12),
+                                    borderSide: BorderSide(
+                                      color: _focusedController == controller
+                                          ? colorScheme.primary
+                                          : colorScheme.outline,
+                                      width: 2.0,
+                                    ),
+                                  ),
+                                  focusedBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(12),
+                                    borderSide: BorderSide(color: colorScheme.primary, width: 2.0),
+                                  ),
+                                  prefixIcon: Icon(Icons.show_chart, color: _functionColors[idx]),
+                                  suffixIcon: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      if (idx == _functionControllers.length - 1)
+                                        IconButton(
+                                          icon: Icon(Icons.add, color: colorScheme.primary),
+                                          onPressed: () => _addFunctionField(initialText: '', isPlaceholder: false),
+                                          tooltip: 'Aggiungi funzione',
+                                        ),
+                                      if (_functionControllers.length > 1)
+                                        IconButton(
+                                          icon: Icon(Icons.close, color: colorScheme.onSurfaceVariant),
+                                          onPressed: () => _removeFunctionField(idx),
+                                          tooltip: 'Rimuovi funzione',
+                                        ),
+                                    ],
+                                  ),
                                 ),
+                                style: TextStyle(color: colorScheme.onSurface, fontSize: 20),
+                                textAlign: TextAlign.end,
                               ),
-                              focusedBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(12),
-                                borderSide: BorderSide(color: colorScheme.primary, width: 2.0),
-                              ),
-                              prefixIcon: Icon(Icons.show_chart, color: _functionColors[idx]),
-                              suffixIcon: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  if (idx == _functionControllers.length - 1)
-                                    IconButton(
-                                      icon: Icon(Icons.add, color: colorScheme.primary),
-                                      onPressed: () => _addFunctionField(initialText: '', isPlaceholder: false),
-                                      tooltip: 'Aggiungi funzione',
+                              if (_errorMessages[idx].isNotEmpty)
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 8.0),
+                                  child: Card(
+                                    color: colorScheme.errorContainer,
+                                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text(
+                                        _errorMessages[idx],
+                                        style: TextStyle(color: colorScheme.onErrorContainer, fontSize: 12),
+                                        textAlign: TextAlign.center,
+                                      ),
                                     ),
-                                  if (_functionControllers.length > 1)
-                                    IconButton(
-                                      icon: Icon(Icons.close, color: colorScheme.onSurfaceVariant),
-                                      onPressed: () => _removeFunctionField(idx),
-                                      tooltip: 'Rimuovi funzione',
-                                    ),
-                                ],
-                              ),
-                            ),
-                            style: TextStyle(color: colorScheme.onSurface, fontSize: 20),
-                            textAlign: TextAlign.end,
+                                  ),
+                                ),
+                            ],
                           ),
-                          if (_errorMessages[idx].isNotEmpty)
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8.0),
-                              child: Card(
-                                color: colorScheme.errorContainer,
-                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text(
-                                    _errorMessages[idx],
-                                    style: TextStyle(color: colorScheme.onErrorContainer, fontSize: 12),
-                                    textAlign: TextAlign.center,
+                        );
+                      }).toList(),
+
+                      const SizedBox(height: 12),
+                      Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              bool hasPlotableFunctions = functionsToPlot.isNotEmpty;
+                              if (hasPlotableFunctions) {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (ctx) => FullScreenGraphPage(
+                                      functionStrings: functionsToPlot,
+                                      functionColors: colorsToPlot,
+                                      evaluateFunction: _evaluateFunction,
+                                      xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
+                                    ),
+                                  ),
+                                );
+                              } else {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  const SnackBar(content: Text('Inserisci almeno una funzione valida da visualizzare.')),
+                                );
+                              }
+                            },
+                            child: AspectRatio(
+                              aspectRatio: 1.5,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: colorScheme.surfaceVariant,
+                                  borderRadius: BorderRadius.circular(12),
+                                  border: Border.all(color: colorScheme.outline, width: 1),
+                                ),
+                                child: CustomPaint(
+                                  painter: GraphPainter(
+                                    functionStrings: functionsToPlot,
+                                    evaluateFunction: _evaluateFunction,
+                                    xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
+                                    axisColor: colorScheme.onSurfaceVariant,
+                                    lineColors: colorsToPlot,
+                                    gridColor: Theme.of(context).brightness == Brightness.dark
+                                        ? Colors.white.withOpacity(0.15)
+                                        : Colors.black.withOpacity(0.15),
+                                    textColor: colorScheme.onSurface,
                                   ),
                                 ),
                               ),
                             ),
+                          ),
+                          Positioned(
+                            bottom: 8,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: Colors.black.withOpacity(0.5),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: const Text(
+                                'Tocca il grafico per ingrandirlo',
+                                style: TextStyle(color: Colors.white, fontSize: 12),
+                              ),
+                            ),
+                          ),
                         ],
-                      ),
-                    );
-                  }).toList(),
-
-                  const SizedBox(height: 12),
-                  Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      GestureDetector(
-                        onTap: () {
-                          bool hasPlotableFunctions = functionsToPlot.isNotEmpty;
-                          if (hasPlotableFunctions) {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) => FullScreenGraphPage(
-                                  functionStrings: functionsToPlot,
-                                  functionColors: colorsToPlot,
-                                  evaluateFunction: _evaluateFunction,
-                                  xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
-                                ),
-                              ),
-                            );
-                          } else {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(content: Text('Inserisci almeno una funzione valida da visualizzare.')),
-                            );
-                          }
-                        },
-                        child: AspectRatio(
-                          aspectRatio: 1.5,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: colorScheme.surfaceVariant,
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(color: colorScheme.outline, width: 1),
-                            ),
-                            child: CustomPaint(
-                              painter: GraphPainter(
-                                functionStrings: functionsToPlot,
-                                evaluateFunction: _evaluateFunction,
-                                xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
-                                axisColor: colorScheme.onSurfaceVariant,
-                                lineColors: colorsToPlot,
-                                gridColor: Theme.of(context).brightness == Brightness.dark
-                                    ? Colors.white.withOpacity(0.15)
-                                    : Colors.black.withOpacity(0.15),
-                                textColor: colorScheme.onSurface,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        bottom: 8,
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                          decoration: BoxDecoration(
-                            color: Colors.black.withOpacity(0.5),
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: const Text(
-                            'Tocca il grafico per ingrandirlo',
-                            style: TextStyle(color: Colors.white, fontSize: 12),
-                          ),
-                        ),
                       ),
                     ],
                   ),
-                ],
+                ),
               ),
-            ),
+              SizedBox(height: MediaQuery.of(context).viewPadding.bottom + 403),
+            ],
           ),
-          Container(
-            padding: EdgeInsets.only(bottom: 100, left: 16, right: 16, top: 4.0),
+          Positioned(
+            left: 16,
+            right: 16,
+            bottom: MediaQuery.of(context).viewPadding.bottom + 98,
             child: GridView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
@@ -577,8 +581,19 @@ class _GraphPageState extends State<GraphPage> {
               },
             ),
           ),
+
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: 'Visualizzatore Grafici',
+              leading: FloatingTopBarLeading.back,
+              onBackPressed: () => Navigator.of(context).maybePop(),
+            ),
+          )
         ],
-      ),
+      )
     );
   }
 }
@@ -714,11 +729,7 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
     }
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(titleText),
-        backgroundColor: colorScheme.primaryContainer,
-        iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
-      ),
+      appBar: null,
       body: Stack(
         children: [
           SizedBox.expand(
@@ -773,6 +784,16 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
                   child: Icon(Icons.zoom_out, color: colorScheme.onPrimary),
                 ),
               ],
+            ),
+          ),
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: titleText, // già calcolato sopra
+              leading: FloatingTopBarLeading.back,
+              onBackPressed: () => Navigator.of(context).maybePop(),
             ),
           ),
         ],

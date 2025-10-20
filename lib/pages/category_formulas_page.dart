@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:physics_ease_release/models/formula.dart';
 import 'package:physics_ease_release/pages/formula_detail_page.dart';
+import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class CategoryFormulasPage extends StatefulWidget {
   final String category;
@@ -68,59 +69,78 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.category),
-        backgroundColor: colorScheme.primaryContainer,
-        iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
-      ),
-      body: _filteredFormulas.isEmpty
-          ? const Center(
-        child: Text('Nessuna formula trovata per questa categoria.'),
-      )
-          : ListView.builder(
-        padding: EdgeInsets.only(bottom: 120, left: 8.0, right: 8.0),
-        itemCount: _filteredFormulas.length,
-        itemBuilder: (context, index) {
-          final formula = _filteredFormulas[index];
+      appBar: null, // RIMOSSA AppBar nativa
+      body: Stack(
+        children: [
 
-          return Padding(
-            padding:
-            const EdgeInsets.symmetric(vertical: 4.0, horizontal: 8.0),
-            child: Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
+          // Contenuto sotto la barra
+            _filteredFormulas.isEmpty
+                ? const Center(
+              child: Text('Nessuna formula trovata per questa categoria.'),
+            )
+                : ListView.builder(
+              padding: EdgeInsets.only(
+                top: MediaQuery.of(context).viewPadding.top + 70,
+                left: 8.0,
+                right: 8.0,
+                bottom: MediaQuery.of(context).viewPadding.bottom + 98,
               ),
-              elevation: 2,
-              child: ListTile(
-                title: Text(formula.titolo),
-                subtitle: Math.tex(
-                  formula.formulaLatex,
-                  textStyle: TextStyle(
-                    fontSize: 16,
-                    color: Theme.of(context)
-                        .colorScheme
-                        .onSurfaceVariant,
-                  ),
-                ),
-                trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                onTap: () async {
-                  await Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => FormulaDetailPage(
-                        formula: formula,
-                        themeMode: widget.themeMode,
-                        isFavorite:
-                        widget.favoriteIds.contains(formula.id),
-                        onToggleFavorite: widget.onToggleFavorite,
-                        // setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
-                      ),
+              itemCount: _filteredFormulas.length,
+              itemBuilder: (context, index) {
+                final formula = _filteredFormulas[index];
+
+                return Padding(
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 4.0, horizontal: 8.0),
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
                     ),
-                  );
-                },
-              ),
+                    elevation: 2,
+                    child: ListTile(
+                      title: Text(formula.titolo),
+                      subtitle: Math.tex(
+                        formula.formulaLatex,
+                        textStyle: TextStyle(
+                          fontSize: 16,
+                          color: Theme.of(context)
+                              .colorScheme
+                              .onSurfaceVariant,
+                        ),
+                      ),
+                      trailing:
+                      const Icon(Icons.arrow_forward_ios, size: 16),
+                      onTap: () async {
+                        await Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => FormulaDetailPage(
+                              formula: formula,
+                              themeMode: widget.themeMode,
+                              isFavorite: widget.favoriteIds
+                                  .contains(formula.id),
+                              onToggleFavorite: widget.onToggleFavorite,
+                              setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                );
+              },
             ),
-          );
-        },
+          // Barra flottante in alto con back e senza cerca
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: widget.category,
+              leading: FloatingTopBarLeading.back,
+              showSearch: false,
+            ),
+          ),
+        ],
       ),
     );
   }

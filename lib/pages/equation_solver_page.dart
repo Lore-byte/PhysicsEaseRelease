@@ -1,6 +1,7 @@
 // lib/pages/equation_solver_page.dart
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class EquationSolverPage extends StatefulWidget {
   const EquationSolverPage({super.key});
@@ -163,179 +164,189 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Risolutore Equazioni'),
-        backgroundColor: colorScheme.primaryContainer,
-        iconTheme: IconThemeData(color: colorScheme.onPrimaryContainer),
-      ),
-      body: SingleChildScrollView(
-        padding: EdgeInsets.only(bottom: 120, left: 16, right: 16, top: 16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              'Seleziona il tipo di equazione e inserisci i coefficienti.',
-              style: TextStyle(
-                fontSize: 16,
-                color: colorScheme.onSurfaceVariant,
-              ),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 16),
-            Card(
-              color: colorScheme.surfaceVariant,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-              child: Column(
-                children: [
-                  RadioListTile<EquationType>(
-                    title: Text('Eqz. 2° grado (ax² + bx + c = 0)', style: TextStyle(color: colorScheme.onSurfaceVariant)),
-                    value: EquationType.quadratic,
-                    groupValue: _selectedEquationType,
-                    onChanged: (EquationType? value) {
-                      setState(() {
-                        _selectedEquationType = value!;
-                        _result = '';
-                        _errorMessage = '';
-                      });
-                    },
-                    activeColor: colorScheme.primary,
-                  ),
-                  RadioListTile<EquationType>(
-                    title: Text('Eqz. 3° grado (ax³ + bx² + cx + d = 0)', style: TextStyle(color: colorScheme.onSurfaceVariant)),
-                    value: EquationType.cubic,
-                    groupValue: _selectedEquationType,
-                    onChanged: (EquationType? value) {
-                      setState(() {
-                        _selectedEquationType = value!;
-                        _result = '';
-                        _errorMessage = '';
-                      });
-                    },
-                    activeColor: colorScheme.primary,
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 20),
-
-            // Input Coefficienti
-            Text(
-              'Inserisci i coefficienti:',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: colorScheme.onSurface),
-            ),
-            const SizedBox(height: 10),
-
-            _buildCoefficientTextField(
-              controller: _coeffAController,
-              label: 'Coefficiente a',
-              hintText: _selectedEquationType == EquationType.quadratic ? 'es. per ax²' : 'es. per ax³',
-              colorScheme: colorScheme,
-            ),
-            const SizedBox(height: 10),
-            _buildCoefficientTextField(
-              controller: _coeffBController,
-              label: 'Coefficiente b',
-              hintText: _selectedEquationType == EquationType.quadratic ? 'es. per bx' : 'es. per bx²',
-              colorScheme: colorScheme,
-            ),
-            const SizedBox(height: 10),
-            _buildCoefficientTextField(
-              controller: _coeffCController,
-              label: 'Coefficiente c',
-              hintText: _selectedEquationType == EquationType.quadratic ? 'es. per c (costante)' : 'es. per cx',
-              colorScheme: colorScheme,
-            ),
-            if (_selectedEquationType == EquationType.cubic) ...[
-              const SizedBox(height: 10),
-              _buildCoefficientTextField(
-                controller: _coeffDController,
-                label: 'Coefficiente d',
-                hintText: 'es. per d (costante)',
-                colorScheme: colorScheme,
-              ),
-            ],
-
-            const SizedBox(height: 20),
-
-            Row(
+      appBar: null,
+      body: Stack(
+        children: [
+          SingleChildScrollView(
+            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, left: 16, right: 16, top: MediaQuery.of(context).viewPadding.top + 70),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Expanded(
-                  child: ElevatedButton.icon(
-                    onPressed: _solveEquation,
-                    icon: const Icon(Icons.check),
-                    label: const Text('Risolvi Equazione'),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: colorScheme.primary,
-                      foregroundColor: colorScheme.onPrimary,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                      padding: const EdgeInsets.symmetric(vertical: 18),
-                      textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                    ),
+                Text(
+                  'Seleziona il tipo di equazione e inserisci i coefficienti.',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: colorScheme.onSurfaceVariant,
                   ),
+                  textAlign: TextAlign.center,
                 ),
-                const SizedBox(width: 10),
-                Expanded(
-                  child: ElevatedButton.icon(
-                    onPressed: _clearAllFields,
-                    icon: const Icon(Icons.clear_all),
-                    label: const Text('Pulisci Campi'),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: colorScheme.tertiary,
-                      foregroundColor: colorScheme.onTertiary,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                      padding: const EdgeInsets.symmetric(vertical: 18),
-                      textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 16),
-
-            if (_errorMessage.isNotEmpty)
-              Card(
-                color: colorScheme.errorContainer,
-                margin: const EdgeInsets.symmetric(vertical: 8),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Text(
-                    _errorMessage,
-                    style: TextStyle(color: colorScheme.onErrorContainer, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              ),
-            if (_result.isNotEmpty)
-              Card(
-                color: colorScheme.secondaryContainer,
-                margin: const EdgeInsets.symmetric(vertical: 8),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
+                const SizedBox(height: 16),
+                Card(
+                  color: colorScheme.surfaceVariant,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Risultato:',
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: colorScheme.onSecondaryContainer),
+                      RadioListTile<EquationType>(
+                        title: Text('Eqz. 2° grado (ax² + bx + c = 0)', style: TextStyle(color: colorScheme.onSurfaceVariant)),
+                        value: EquationType.quadratic,
+                        groupValue: _selectedEquationType,
+                        onChanged: (EquationType? value) {
+                          setState(() {
+                            _selectedEquationType = value!;
+                            _result = '';
+                            _errorMessage = '';
+                          });
+                        },
+                        activeColor: colorScheme.primary,
                       ),
-                      const SizedBox(height: 8),
-                      SelectableText(
-                        _result,
-                        style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: colorScheme.onSecondaryContainer),
+                      RadioListTile<EquationType>(
+                        title: Text('Eqz. 3° grado (ax³ + bx² + cx + d = 0)', style: TextStyle(color: colorScheme.onSurfaceVariant)),
+                        value: EquationType.cubic,
+                        groupValue: _selectedEquationType,
+                        onChanged: (EquationType? value) {
+                          setState(() {
+                            _selectedEquationType = value!;
+                            _result = '';
+                            _errorMessage = '';
+                          });
+                        },
+                        activeColor: colorScheme.primary,
                       ),
                     ],
                   ),
                 ),
-              ),
-          ],
-        ),
-      ),
+                const SizedBox(height: 20),
+
+                // Input Coefficienti
+                Text(
+                  'Inserisci i coefficienti:',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: colorScheme.onSurface),
+                ),
+                const SizedBox(height: 10),
+
+                _buildCoefficientTextField(
+                  controller: _coeffAController,
+                  label: 'Coefficiente a',
+                  hintText: _selectedEquationType == EquationType.quadratic ? 'es. per ax²' : 'es. per ax³',
+                  colorScheme: colorScheme,
+                ),
+                const SizedBox(height: 10),
+                _buildCoefficientTextField(
+                  controller: _coeffBController,
+                  label: 'Coefficiente b',
+                  hintText: _selectedEquationType == EquationType.quadratic ? 'es. per bx' : 'es. per bx²',
+                  colorScheme: colorScheme,
+                ),
+                const SizedBox(height: 10),
+                _buildCoefficientTextField(
+                  controller: _coeffCController,
+                  label: 'Coefficiente c',
+                  hintText: _selectedEquationType == EquationType.quadratic ? 'es. per c (costante)' : 'es. per cx',
+                  colorScheme: colorScheme,
+                ),
+                if (_selectedEquationType == EquationType.cubic) ...[
+                  const SizedBox(height: 10),
+                  _buildCoefficientTextField(
+                    controller: _coeffDController,
+                    label: 'Coefficiente d',
+                    hintText: 'es. per d (costante)',
+                    colorScheme: colorScheme,
+                  ),
+                ],
+
+                const SizedBox(height: 20),
+
+                Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton.icon(
+                        onPressed: _solveEquation,
+                        icon: const Icon(Icons.check),
+                        label: const Text('Risolvi Equazione'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: colorScheme.primary,
+                          foregroundColor: colorScheme.onPrimary,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          padding: const EdgeInsets.symmetric(vertical: 18),
+                          textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: ElevatedButton.icon(
+                        onPressed: _clearAllFields,
+                        icon: const Icon(Icons.clear_all),
+                        label: const Text('Pulisci Campi'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: colorScheme.tertiary,
+                          foregroundColor: colorScheme.onTertiary,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          padding: const EdgeInsets.symmetric(vertical: 18),
+                          textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 16),
+
+                if (_errorMessage.isNotEmpty)
+                  Card(
+                    color: colorScheme.errorContainer,
+                    margin: const EdgeInsets.symmetric(vertical: 8),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
+                        _errorMessage,
+                        style: TextStyle(color: colorScheme.onErrorContainer, fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                if (_result.isNotEmpty)
+                  Card(
+                    color: colorScheme.secondaryContainer,
+                    margin: const EdgeInsets.symmetric(vertical: 8),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Risultato:',
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: colorScheme.onSecondaryContainer),
+                          ),
+                          const SizedBox(height: 8),
+                          SelectableText(
+                            _result,
+                            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: colorScheme.onSecondaryContainer),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          ),
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: 'Risolutore Equazioni',
+              leading: FloatingTopBarLeading.back,
+              onBackPressed: () => Navigator.of(context).maybePop(),
+            ),
+          ),
+        ],
+      )
     );
   }
 
