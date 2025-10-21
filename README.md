@@ -32,7 +32,7 @@ PhysicsEase è l'app definitiva per chiunque studi o lavori nel mondo della fisi
 
 ## 📲 Disponibilità
 
-PhysicsEase è disponibile per **Android** sul PlayStore.
+PhysicsEase è disponibile per **Android** sul Google Play e per **iOS** sull'App Store.
 
 ## 🛠️ Open Source & Collaborazioni
 
