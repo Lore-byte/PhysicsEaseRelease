@@ -27,6 +27,8 @@ import 'package:physics_ease_release/pages/collaborate_page.dart';
 import 'package:physics_ease_release/pages/privacy_policy_page.dart';
 import 'package:physics_ease_release/pages/licence_page.dart';
 import 'package:physics_ease_release/pages/onboarding_page.dart';
+import 'package:physics_ease_release/pages/donation_page.dart';
+
 
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
@@ -517,6 +519,19 @@ class _MyAppState extends State<MyApp> {
                   },
                 ),
 
+                ListTile(
+                  leading: Icon(Icons.favorite, color: currentColorScheme.primary),
+                  title: const Text('Dona ora'),
+                  onTap: () {
+                    FocusScope.of(builderContext).unfocus();
+                    Navigator.of(builderContext).pop();
+                    Navigator.of(builderContext, rootNavigator: true).push(
+                      MaterialPageRoute(
+                        builder: (innerContext) => DonationPage(themeMode: _themeMode),
+                      ),
+                    );
+                  },
+                ),
                 // Collaborate page link
                 ListTile(
                   leading: Icon(Icons.handshake, color: currentColorScheme.primary),
