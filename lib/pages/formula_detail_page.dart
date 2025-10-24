@@ -109,10 +109,10 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
       final directory = await getTemporaryDirectory();
       final imagePath = await File('${directory.path}/formula_${widget.formula.id}.png').create();
       await imagePath.writeAsBytes(imageBytes);
-      final String playStoreLink = 'https://play.google.com/store/apps/details?id=mala.tech.physics_ease_release';
+      final String link = 'https://sites.google.com/view/physicsease-app';
       Share.shareXFiles(
         [XFile(imagePath.path)],
-        text: 'Dai un\'occhiata a questa formula su PhysicsEase e scarica l\'app per scoprirne altre!\n$playStoreLink',
+        text: 'Dai un\'occhiata a questa formula su PhysicsEase e scarica l\'app per scoprirne altre!\n$link',
         subject: 'Formula di Fisica: ${widget.formula.titolo}',
       );
     } else {
