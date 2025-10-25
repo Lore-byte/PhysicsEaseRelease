@@ -409,6 +409,7 @@ class _GraphPageState extends State<GraphPage> {
                             children: [
                               TextField(
                                 controller: controller,
+                                readOnly: true,
                                 onTap: () {
                                   setState(() {
                                     _focusedController = controller;
