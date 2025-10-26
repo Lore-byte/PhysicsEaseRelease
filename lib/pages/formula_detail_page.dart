@@ -71,70 +71,54 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
     await widget.onToggleFavorite(widget.formula.id);
   }
 
-  Future<void> shareFormula() async {
-    // 1) Crea il widget da catturare con tema e sfondo
-    final widgetToCapture = InheritedTheme.captureAll(
-      context,
-      Material(
-        color: Colors.transparent,
-        child: Card(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          elevation: 4,
-          color: Theme.of(context).colorScheme.surfaceVariant,
-          margin: const EdgeInsets.all(16),
-          child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Container( // sfondo pieno per evitare trasparenze
-              color: Theme.of(context).colorScheme.surface,
-              child: SizedBox(
-                width: 800,
-                child: FittedBox(
-                  fit: BoxFit.scaleDown,
-                  child: Math.tex(
-                    widget.formula.formulaLatex,
-                    textStyle: TextStyle(
-                      fontSize: 60,
-                      color: Theme.of(context).colorScheme.onSurfaceVariant,
-                    ),
-                  ),
+  Future<void> _shareFormula() async {
+    final Uint8List? imageBytes = await _screenshotController.captureFromWidget(
+      Card(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        elevation: 4,
+        color: Theme.of(context).colorScheme.surfaceVariant,
+        margin: const EdgeInsets.all(16),
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: SizedBox(
+            width: 800,
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Math.tex(
+                widget.formula.formulaLatex,
+                textStyle: TextStyle(
+                  fontSize: 60,
+                  color: Theme.of(context).colorScheme.onSurfaceVariant,
                 ),
+                onErrorFallback: (Object e) {
+                  developer.log('ERRORE RENDERING LATEX per screenshot: $e', error: e);
+                  return Text(
+                    '[Errore LaTeX]',
+                    style: TextStyle(color: Theme.of(context).colorScheme.error, fontSize: 20),
+                  );
+                },
               ),
             ),
           ),
         ),
       ),
-    );
-
-    // 2) Cattura
-    final imageBytes = await _screenshotController.captureFromWidget(
-      widgetToCapture,
       pixelRatio: 4.0,
     );
 
-    if (imageBytes == null || imageBytes.isEmpty) {
-      // fallback o messaggio errore
-      return;
+    if (imageBytes != null) {
+      final directory = await getTemporaryDirectory();
+      final imagePath = await File('${directory.path}/formula_${widget.formula.id}.png').create();
+      await imagePath.writeAsBytes(imageBytes);
+      final String playStoreLink = 'https://play.google.com/store/apps/details?id=mala.tech.physics_ease_release';
+      Share.shareXFiles(
+        [XFile(imagePath.path)],
+        text: 'Dai un\'occhiata a questa formula su PhysicsEase e scarica l\'app per scoprirne altre!\n$playStoreLink',
+        subject: 'Formula di Fisica: ${widget.formula.titolo}',
+      );
+    } else {
+      developer.log('Errore durante la cattura dello screenshot della formula.');
     }
-
-    // 3) Salva PNG temporaneo
-    final directory = await getTemporaryDirectory();
-    final file = File('${directory.path}/formula_${widget.formula.id}.png');
-    await file.writeAsBytes(imageBytes, flush: true);
-
-
-    final size = MediaQuery.of(context).size;
-    final origin = Rect.fromLTWH(0, 0, size.width, size.height / 2);
-
-    final String link = 'https://sites.google.com/view/physicsease-app';
-
-    await Share.shareXFiles(
-      [XFile(file.path, mimeType: 'image/png')], // mimeType utile con alcune app
-      text: 'Dai un\'occhiata a questa formula su PhysicsEase e scarica l\'app per scoprirne altre!\n$link',
-      subject: 'Formula di Fisica: ${widget.formula.titolo}',
-      sharePositionOrigin: origin,
-    );
   }
-
 
 
   //Nuovo parser
@@ -375,7 +359,7 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
               isFavorite: _isFavorite,
               onFavoritePressed: _toggleLocalFavorite,
               showShare: true,
-              onSharePressed: shareFormula,
+              onSharePressed: _shareFormula,
             ),
           ),
         ],
