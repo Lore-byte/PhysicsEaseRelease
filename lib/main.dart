@@ -27,8 +27,6 @@ import 'package:physics_ease_release/pages/collaborate_page.dart';
 import 'package:physics_ease_release/pages/privacy_policy_page.dart';
 import 'package:physics_ease_release/pages/licence_page.dart';
 import 'package:physics_ease_release/pages/onboarding_page.dart';
-import 'package:physics_ease_release/pages/donation_page.dart';
-
 
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
@@ -138,7 +136,9 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       _userFormulas = loadedUserFormulas;
       _allFormulas = [...loadedPredefinedFormulas, ..._userFormulas];
-      developer.log('Loaded ${loadedPredefinedFormulas.length} predefined formulas.');
+      developer.log(
+        'Loaded ${loadedPredefinedFormulas.length} predefined formulas.',
+      );
       developer.log('Loaded ${_userFormulas.length} user formulas.');
       _updateTabPages();
     });
@@ -189,8 +189,9 @@ class _MyAppState extends State<MyApp> {
       seedColor: Colors.blue[600]!,
       brightness: Brightness.light,
     );
-    final currentColorScheme =
-        _themeMode == ThemeMode.dark ? darkColorScheme : lightColorScheme;
+    final currentColorScheme = _themeMode == ThemeMode.dark
+        ? darkColorScheme
+        : lightColorScheme;
 
     developer.log('Building pages with favorites: $_favoriteIds');
     return [
@@ -212,9 +213,7 @@ class _MyAppState extends State<MyApp> {
         setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
       ),
       const CalculatorPage(),
-      DataPage(
-        setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
-      ),
+      DataPage(setGlobalAppBarVisibility: _setGlobalAppBarVisibility),
       ToolsPage(
         onAddFormula: _addFormulaAndSave,
         setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
@@ -241,8 +240,9 @@ class _MyAppState extends State<MyApp> {
       seedColor: Colors.blue[600]!,
       brightness: Brightness.light,
     );
-    final currentColorScheme =
-        _themeMode == ThemeMode.dark ? darkColorScheme : lightColorScheme;
+    final currentColorScheme = _themeMode == ThemeMode.dark
+        ? darkColorScheme
+        : lightColorScheme;
 
     setState(() {
       _pages[0] = HomePage(
@@ -307,10 +307,13 @@ class _MyAppState extends State<MyApp> {
   void _toggleTheme() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
-      _themeMode =
-          (_themeMode == ThemeMode.light) ? ThemeMode.dark : ThemeMode.light;
-      prefs.setString('themeMode',
-          _themeMode == ThemeMode.dark ? 'dark' : 'light');
+      _themeMode = (_themeMode == ThemeMode.light)
+          ? ThemeMode.dark
+          : ThemeMode.light;
+      prefs.setString(
+        'themeMode',
+        _themeMode == ThemeMode.dark ? 'dark' : 'light',
+      );
       developer.log('Theme changed to: $_themeMode');
       _updateTabPages();
     });
@@ -385,10 +388,22 @@ class _MyAppState extends State<MyApp> {
             child: BottomNavigationBar(
               items: const [
                 BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-                BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Preferiti'),
-                BottomNavigationBarItem(icon: Icon(Icons.calculate), label: 'Calcolatrice'),
-                BottomNavigationBarItem(icon: Icon(Icons.storage), label: 'Dati'),
-                BottomNavigationBarItem(icon: Icon(Icons.build), label: 'Strumenti'),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.star),
+                  label: 'Preferiti',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.calculate),
+                  label: 'Calcolatrice',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.storage),
+                  label: 'Dati',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.build),
+                  label: 'Strumenti',
+                ),
               ],
               currentIndex: _selectedIndex,
               selectedItemColor: colorScheme.primary,
@@ -412,9 +427,7 @@ class _MyAppState extends State<MyApp> {
     // If still loading, show progress indicator
     if (_loading) {
       return const MaterialApp(
-        home: Scaffold(
-          body: Center(child: CircularProgressIndicator()),
-        ),
+        home: Scaffold(body: Center(child: CircularProgressIndicator())),
       );
     }
 
@@ -427,21 +440,16 @@ class _MyAppState extends State<MyApp> {
       seedColor: Colors.blue[600]!,
       brightness: Brightness.light,
     );
-    final currentColorScheme =
-        _themeMode == ThemeMode.dark ? darkColorScheme : lightColorScheme;
+    final currentColorScheme = _themeMode == ThemeMode.dark
+        ? darkColorScheme
+        : lightColorScheme;
 
     // Show onboarding page if user hasn't completed it
     if (_showOnboarding) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          colorScheme: lightColorScheme,
-          useMaterial3: true,
-        ),
-        darkTheme: ThemeData(
-          colorScheme: darkColorScheme,
-          useMaterial3: true,
-        ),
+        theme: ThemeData(colorScheme: lightColorScheme, useMaterial3: true),
+        darkTheme: ThemeData(colorScheme: darkColorScheme, useMaterial3: true),
         themeMode: _themeMode,
         home: OnboardingPage(onFinished: _completeOnboarding),
       );
@@ -451,14 +459,8 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'PhysicsEase',
       themeMode: _themeMode,
-      theme: ThemeData(
-        colorScheme: lightColorScheme,
-        useMaterial3: true,
-      ),
-      darkTheme: ThemeData(
-        colorScheme: darkColorScheme,
-        useMaterial3: true,
-      ),
+      theme: ThemeData(colorScheme: lightColorScheme, useMaterial3: true),
+      darkTheme: ThemeData(colorScheme: darkColorScheme, useMaterial3: true),
       home: Builder(
         builder: (builderContext) => Scaffold(
           key: _scaffoldKey,
@@ -469,7 +471,9 @@ class _MyAppState extends State<MyApp> {
               children: [
                 // Drawer header with app title
                 DrawerHeader(
-                  decoration: BoxDecoration(color: currentColorScheme.primaryContainer.withAlpha(200)),
+                  decoration: BoxDecoration(
+                    color: currentColorScheme.primaryContainer.withAlpha(200),
+                  ),
                   child: Center(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
@@ -494,7 +498,9 @@ class _MyAppState extends State<MyApp> {
                 // Theme toggle option
                 ListTile(
                   leading: Icon(
-                    _themeMode == ThemeMode.light ? Icons.light_mode : Icons.dark_mode,
+                    _themeMode == ThemeMode.light
+                        ? Icons.light_mode
+                        : Icons.dark_mode,
                     color: currentColorScheme.primary,
                   ),
                   title: const Text('Tema'),
@@ -513,35 +519,27 @@ class _MyAppState extends State<MyApp> {
                     Navigator.of(builderContext).pop();
                     Navigator.of(builderContext, rootNavigator: true).push(
                       MaterialPageRoute(
-                        builder: (innerContext) => HelpPage(themeMode: _themeMode),
+                        builder: (innerContext) =>
+                            HelpPage(themeMode: _themeMode),
                       ),
                     );
                   },
                 ),
 
-                ListTile(
-                  leading: Icon(Icons.favorite, color: currentColorScheme.primary),
-                  title: const Text('Dona ora'),
-                  onTap: () {
-                    FocusScope.of(builderContext).unfocus();
-                    Navigator.of(builderContext).pop();
-                    Navigator.of(builderContext, rootNavigator: true).push(
-                      MaterialPageRoute(
-                        builder: (innerContext) => DonationPage(themeMode: _themeMode),
-                      ),
-                    );
-                  },
-                ),
                 // Collaborate page link
                 ListTile(
-                  leading: Icon(Icons.handshake, color: currentColorScheme.primary),
+                  leading: Icon(
+                    Icons.handshake,
+                    color: currentColorScheme.primary,
+                  ),
                   title: const Text('Collabora'),
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
                     Navigator.of(builderContext, rootNavigator: true).push(
                       MaterialPageRoute(
-                        builder: (innerContext) => CollaboratePage(themeMode: _themeMode),
+                        builder: (innerContext) =>
+                            CollaboratePage(themeMode: _themeMode),
                       ),
                     );
                   },
@@ -556,7 +554,8 @@ class _MyAppState extends State<MyApp> {
                     Navigator.of(builderContext).pop();
                     Navigator.of(builderContext, rootNavigator: true).push(
                       MaterialPageRoute(
-                        builder: (innerContext) => InfoPage(themeMode: _themeMode),
+                        builder: (innerContext) =>
+                            InfoPage(themeMode: _themeMode),
                       ),
                     );
                   },
@@ -564,14 +563,18 @@ class _MyAppState extends State<MyApp> {
 
                 // Privacy policy page link
                 ListTile(
-                  leading: Icon(Icons.policy, color: currentColorScheme.primary),
+                  leading: Icon(
+                    Icons.policy,
+                    color: currentColorScheme.primary,
+                  ),
                   title: const Text('Privacy Policy'),
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
                     Navigator.of(builderContext, rootNavigator: true).push(
                       MaterialPageRoute(
-                        builder: (innerContext) => PrivacyPolicyPage(themeMode: _themeMode),
+                        builder: (innerContext) =>
+                            PrivacyPolicyPage(themeMode: _themeMode),
                       ),
                     );
                   },
@@ -579,14 +582,18 @@ class _MyAppState extends State<MyApp> {
 
                 // License page link
                 ListTile(
-                  leading: Icon(Icons.copyright, color: currentColorScheme.primary),
+                  leading: Icon(
+                    Icons.copyright,
+                    color: currentColorScheme.primary,
+                  ),
                   title: const Text('Licenza'),
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
                     Navigator.of(builderContext, rootNavigator: true).push(
                       MaterialPageRoute(
-                        builder: (innerContext) => LicencePage(themeMode: _themeMode),
+                        builder: (innerContext) =>
+                            LicencePage(themeMode: _themeMode),
                       ),
                     );
                   },
