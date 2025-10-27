@@ -30,21 +30,54 @@ class _GraphPageState extends State<GraphPage> {
   ContextModel cm = ContextModel();
 
   final List<String> _basicKeypadKeys = [
-    '7', '8', '9', '/',
-    '4', '5', '6', '*',
-    '1', '2', '3', '-',
-    '0', '.', '^', '+',
-    '(', ')', 'x', 'C',
-    '⌫', 'Sci', 'Plot',
+    '7',
+    '8',
+    '9',
+    '/',
+    '4',
+    '5',
+    '6',
+    '*',
+    '1',
+    '2',
+    '3',
+    '-',
+    '0',
+    '.',
+    '^',
+    '+',
+    '(',
+    ')',
+    'x',
+    'C',
+    '⌫',
+    'Sci',
+    'Plot',
   ];
 
   final List<String> _scientificKeypadKeys = [
-    'sin', 'cos', 'tan', 'log',
-    'ln', 'exp', 'sqrt', 'abs',
-    '(', ')', '^', '/',
-    '*', '-', '+',
-    'π', 'e', '!',
-    'x', 'C', '⌫', 'Basic',
+    'sin',
+    'cos',
+    'tan',
+    'log',
+    'ln',
+    'exp',
+    'sqrt',
+    'abs',
+    '(',
+    ')',
+    '^',
+    '/',
+    '*',
+    '-',
+    '+',
+    'π',
+    'e',
+    '!',
+    'x',
+    'C',
+    '⌫',
+    'Basic',
     'Plot',
   ];
 
@@ -76,14 +109,35 @@ class _GraphPageState extends State<GraphPage> {
   ];
   final Random _random = Random();
 
+  static const double _graphPreviewHeight = 320.0;
+
+  double _previewHorizontalMargin(double width) {
+    const double minMargin = 4.0;
+    const double maxMargin = 56.0;
+    const double minWidth = 320.0;
+    const double maxWidth = 1440.0;
+
+    if (width <= minWidth) return minMargin;
+    if (width >= maxWidth) return maxMargin;
+
+    final double t = (width - minWidth) / (maxWidth - minWidth);
+    return minMargin + (maxMargin - minMargin) * t;
+  }
+
   @override
   void initState() {
     super.initState();
-    _addFunctionField(initialText: _exampleFunctions[_random.nextInt(_exampleFunctions.length)], isPlaceholder: true);
+    _addFunctionField(
+      initialText: _exampleFunctions[_random.nextInt(_exampleFunctions.length)],
+      isPlaceholder: true,
+    );
     cm.bindVariable(Variable('x'), Number(0));
   }
 
-  void _addFunctionField({String initialText = '', bool isPlaceholder = false}) {
+  void _addFunctionField({
+    String initialText = '',
+    bool isPlaceholder = false,
+  }) {
     setState(() {
       final newController = TextEditingController(text: initialText);
       final int newIndex = _functionControllers.length;
@@ -92,7 +146,9 @@ class _GraphPageState extends State<GraphPage> {
       _functionControllers.add(newController);
       _currentFunctions.add(initialText);
       _errorMessages.add('');
-      _functionColors.add(_predefinedColors[newIndex % _predefinedColors.length]);
+      _functionColors.add(
+        _predefinedColors[newIndex % _predefinedColors.length],
+      );
       _isPlaceholder.add(isPlaceholder);
       _focusedController = newController;
     });
@@ -129,9 +185,14 @@ class _GraphPageState extends State<GraphPage> {
         _isPlaceholder.removeAt(index);
 
         if (_functionControllers.isEmpty) {
-          _addFunctionField(initialText: _exampleFunctions[_random.nextInt(_exampleFunctions.length)], isPlaceholder: true);
+          _addFunctionField(
+            initialText:
+                _exampleFunctions[_random.nextInt(_exampleFunctions.length)],
+            isPlaceholder: true,
+          );
         } else {
-          if (_focusedController == null || !_functionControllers.contains(_focusedController)) {
+          if (_focusedController == null ||
+              !_functionControllers.contains(_focusedController)) {
             _focusedController = _functionControllers.first;
           }
         }
@@ -142,7 +203,8 @@ class _GraphPageState extends State<GraphPage> {
 
   void _updateFunction(int index) {
     setState(() {
-      if (_isPlaceholder[index] && _functionControllers[index].text != _currentFunctions[index]) {
+      if (_isPlaceholder[index] &&
+          _functionControllers[index].text != _currentFunctions[index]) {
         _isPlaceholder[index] = false;
       }
       _currentFunctions[index] = _functionControllers[index].text;
@@ -158,13 +220,25 @@ class _GraphPageState extends State<GraphPage> {
         .replaceAll('abs(', 'abs(')
         .replaceAll('!', '!');
 
-    processedFunction = processedFunction.replaceAllMapped(RegExp(r'log10\(([^)]*)\)'), (match) {
-      return 'ln(${match.group(1)})/ln(10)';
-    });
+    processedFunction = processedFunction.replaceAllMapped(
+      RegExp(r'log10\(([^)]*)\)'),
+      (match) {
+        return 'ln(${match.group(1)})/ln(10)';
+      },
+    );
 
-    processedFunction = processedFunction.replaceAllMapped(RegExp(r'(\d)([a-zA-Z(πe])'), (match) => '${match.group(1)}*${match.group(2)}');
-    processedFunction = processedFunction.replaceAllMapped(RegExp(r'(\))([a-zAZ(πe])'), (match) => '${match.group(1)}*${match.group(2)}');
-    processedFunction = processedFunction.replaceAllMapped(RegExp(r'([xπe])(sin|cos|tan|ln|exp|sqrt|abs|\()'), (match) => '${match.group(1)}*${match.group(2)}');
+    processedFunction = processedFunction.replaceAllMapped(
+      RegExp(r'(\d)([a-zA-Z(πe])'),
+      (match) => '${match.group(1)}*${match.group(2)}',
+    );
+    processedFunction = processedFunction.replaceAllMapped(
+      RegExp(r'(\))([a-zAZ(πe])'),
+      (match) => '${match.group(1)}*${match.group(2)}',
+    );
+    processedFunction = processedFunction.replaceAllMapped(
+      RegExp(r'([xπe])(sin|cos|tan|ln|exp|sqrt|abs|\()'),
+      (match) => '${match.group(1)}*${match.group(2)}',
+    );
 
     return processedFunction;
   }
@@ -203,13 +277,19 @@ class _GraphPageState extends State<GraphPage> {
           String processedFunction = _preprocessFunction(functionText);
           p.parse(processedFunction);
         } catch (e) {
-          String error = e.toString().replaceAll('Exception: ', '').replaceAll('ParserException: ', '');
+          String error = e
+              .toString()
+              .replaceAll('Exception: ', '')
+              .replaceAll('ParserException: ', '');
           if (error.contains('Invalid syntax')) {
-            _errorMessages[i] = 'Errore di sintassi: Controlla il formato. Usa * per la moltiplicazione esplicita (es. 2*x, x*sin(x)).';
+            _errorMessages[i] =
+                'Errore di sintassi: Controlla il formato. Usa * per la moltiplicazione esplicita (es. 2*x, x*sin(x)).';
           } else if (error.contains('Undefined variable')) {
-            _errorMessages[i] = 'Variabile non definita. Assicurati di usare solo \'x\'.';
+            _errorMessages[i] =
+                'Variabile non definita. Assicurati di usare solo \'x\'.';
           } else if (error.contains('Undefined function')) {
-            _errorMessages[i] = 'Funzione non definita o formato errato (es. sin(x), ln(x), log10(x)).';
+            _errorMessages[i] =
+                'Funzione non definita o formato errato (es. sin(x), ln(x), log10(x)).';
           } else {
             _errorMessages[i] = 'Errore nel formato della funzione: $error.';
           }
@@ -218,7 +298,11 @@ class _GraphPageState extends State<GraphPage> {
       }
       if (anyFunctionHasError) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Correggi gli errori nelle funzioni per visualizzare tutti i grafici.')),
+          const SnackBar(
+            content: Text(
+              'Correggi gli errori nelle funzioni per visualizzare tutti i grafici.',
+            ),
+          ),
         );
       }
     });
@@ -227,7 +311,11 @@ class _GraphPageState extends State<GraphPage> {
   void _onKeyPress(String key) {
     if (_focusedController == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Seleziona una casella di testo per inserire la funzione.')),
+        const SnackBar(
+          content: Text(
+            'Seleziona una casella di testo per inserire la funzione.',
+          ),
+        ),
       );
       return;
     }
@@ -283,7 +371,9 @@ class _GraphPageState extends State<GraphPage> {
           break;
         case 'log':
           newText = currentText.replaceRange(start, end, 'log10(');
-          newSelection = TextSelection.collapsed(offset: start + 'log10('.length);
+          newSelection = TextSelection.collapsed(
+            offset: start + 'log10('.length,
+          );
           break;
         case 'exp':
           newText = currentText.replaceRange(start, end, 'e^(');
@@ -296,7 +386,9 @@ class _GraphPageState extends State<GraphPage> {
         case 'tan':
         case 'abs':
           newText = currentText.replaceRange(start, end, '$key(');
-          newSelection = TextSelection.collapsed(offset: start + '$key('.length);
+          newSelection = TextSelection.collapsed(
+            offset: start + '$key('.length,
+          );
           break;
         case 'π':
           newText = currentText.replaceRange(start, end, 'pi');
@@ -322,6 +414,29 @@ class _GraphPageState extends State<GraphPage> {
     });
   }
 
+  Widget _buildKeypadButton(
+    String key,
+    Color backgroundColor,
+    Color textColor,
+  ) {
+    return Padding(
+      padding: const EdgeInsets.all(3.0),
+      child: ElevatedButton(
+        onPressed: () => _onKeyPress(key),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: backgroundColor,
+          foregroundColor: textColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          elevation: 3,
+          textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        ),
+        child: FittedBox(fit: BoxFit.scaleDown, child: Text(key)),
+      ),
+    );
+  }
+
   @override
   void dispose() {
     for (var controller in _functionControllers) {
@@ -333,7 +448,11 @@ class _GraphPageState extends State<GraphPage> {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    final List<String> currentKeypadKeys = _showScientificKeys ? _scientificKeypadKeys : _basicKeypadKeys;
+    final List<String> currentKeypadKeys = _showScientificKeys
+        ? _scientificKeypadKeys
+        : _basicKeypadKeys;
+    final screenWidth = MediaQuery.of(context).size.width;
+    final previewMargin = _previewHorizontalMargin(screenWidth);
 
     Color getButtonColor(String key) {
       if (key == 'C' || key == '⌫') {
@@ -344,14 +463,24 @@ class _GraphPageState extends State<GraphPage> {
         return colorScheme.tertiary;
       } else if (key == 'x') {
         return colorScheme.errorContainer;
-      }
-      else if (['sin', 'cos', 'tan', 'log', 'ln', 'exp', 'sqrt', 'abs', '!', 'π', 'e'].contains(key) && _showScientificKeys) {
+      } else if ([
+            'sin',
+            'cos',
+            'tan',
+            'log',
+            'ln',
+            'exp',
+            'sqrt',
+            'abs',
+            '!',
+            'π',
+            'e',
+          ].contains(key) &&
+          _showScientificKeys) {
         return colorScheme.tertiaryContainer;
-      }
-      else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
+      } else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
         return colorScheme.secondary;
-      }
-      else {
+      } else {
         return colorScheme.primaryContainer;
       }
     }
@@ -365,11 +494,22 @@ class _GraphPageState extends State<GraphPage> {
         return colorScheme.onTertiary;
       } else if (key == 'x') {
         return colorScheme.onErrorContainer;
-      }
-      else if (['sin', 'cos', 'tan', 'log', 'ln', 'exp', 'sqrt', 'abs', '!', 'π', 'e'].contains(key) && _showScientificKeys) {
+      } else if ([
+            'sin',
+            'cos',
+            'tan',
+            'log',
+            'ln',
+            'exp',
+            'sqrt',
+            'abs',
+            '!',
+            'π',
+            'e',
+          ].contains(key) &&
+          _showScientificKeys) {
         return colorScheme.onTertiaryContainer;
-      }
-      else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
+      } else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
         return colorScheme.onSecondary;
       } else {
         return colorScheme.onPrimaryContainer;
@@ -385,16 +525,29 @@ class _GraphPageState extends State<GraphPage> {
       }
     }
 
+    final List<List<String>> keypadRows = [];
+    for (int i = 0; i < currentKeypadKeys.length; i += 4) {
+      keypadRows.add(
+        currentKeypadKeys.sublist(i, min(i + 4, currentKeypadKeys.length)),
+      );
+    }
 
     return Scaffold(
       appBar: null,
       body: Stack(
+        fit: StackFit.expand,
         children: [
           Column(
             children: [
               Expanded(
+                flex: 5,
                 child: SingleChildScrollView(
-                  padding: EdgeInsets.only(left: 16.0, right: 16.0, top: MediaQuery.of(context).viewPadding.top + 70),
+                  padding: EdgeInsets.only(
+                    left: 0,
+                    right: 0,
+                    top: MediaQuery.of(context).viewPadding.top + 70,
+                    bottom: 16,
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
@@ -433,28 +586,48 @@ class _GraphPageState extends State<GraphPage> {
                                   ),
                                   focusedBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(12),
-                                    borderSide: BorderSide(color: colorScheme.primary, width: 2.0),
+                                    borderSide: BorderSide(
+                                      color: colorScheme.primary,
+                                      width: 2.0,
+                                    ),
                                   ),
-                                  prefixIcon: Icon(Icons.show_chart, color: _functionColors[idx]),
+                                  prefixIcon: Icon(
+                                    Icons.show_chart,
+                                    color: _functionColors[idx],
+                                  ),
                                   suffixIcon: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      if (idx == _functionControllers.length - 1)
+                                      if (idx ==
+                                          _functionControllers.length - 1)
                                         IconButton(
-                                          icon: Icon(Icons.add, color: colorScheme.primary),
-                                          onPressed: () => _addFunctionField(initialText: '', isPlaceholder: false),
+                                          icon: Icon(
+                                            Icons.add,
+                                            color: colorScheme.primary,
+                                          ),
+                                          onPressed: () => _addFunctionField(
+                                            initialText: '',
+                                            isPlaceholder: false,
+                                          ),
                                           tooltip: 'Aggiungi funzione',
                                         ),
                                       if (_functionControllers.length > 1)
                                         IconButton(
-                                          icon: Icon(Icons.close, color: colorScheme.onSurfaceVariant),
-                                          onPressed: () => _removeFunctionField(idx),
+                                          icon: Icon(
+                                            Icons.close,
+                                            color: colorScheme.onSurfaceVariant,
+                                          ),
+                                          onPressed: () =>
+                                              _removeFunctionField(idx),
                                           tooltip: 'Rimuovi funzione',
                                         ),
                                     ],
                                   ),
                                 ),
-                                style: TextStyle(color: colorScheme.onSurface, fontSize: 20),
+                                style: TextStyle(
+                                  color: colorScheme.onSurface,
+                                  fontSize: 20,
+                                ),
                                 textAlign: TextAlign.end,
                               ),
                               if (_errorMessages[idx].isNotEmpty)
@@ -462,12 +635,17 @@ class _GraphPageState extends State<GraphPage> {
                                   padding: const EdgeInsets.only(top: 8.0),
                                   child: Card(
                                     color: colorScheme.errorContainer,
-                                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
                                     child: Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Text(
                                         _errorMessages[idx],
-                                        style: TextStyle(color: colorScheme.onErrorContainer, fontSize: 12),
+                                        style: TextStyle(
+                                          color: colorScheme.onErrorContainer,
+                                          fontSize: 12,
+                                        ),
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -479,109 +657,144 @@ class _GraphPageState extends State<GraphPage> {
                       }).toList(),
 
                       const SizedBox(height: 12),
-                      Stack(
-                        alignment: Alignment.center,
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              bool hasPlotableFunctions = functionsToPlot.isNotEmpty;
-                              if (hasPlotableFunctions) {
-                                Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                    builder: (ctx) => FullScreenGraphPage(
-                                      functionStrings: functionsToPlot,
-                                      functionColors: colorsToPlot,
-                                      evaluateFunction: _evaluateFunction,
-                                      xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: previewMargin,
+                        ),
+                        child: SizedBox(
+                          height: _graphPreviewHeight,
+                          child: Stack(
+                            alignment: Alignment.center,
+                            children: [
+                              Positioned.fill(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    bool hasPlotableFunctions =
+                                        functionsToPlot.isNotEmpty;
+                                    if (hasPlotableFunctions) {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute(
+                                          builder: (ctx) => FullScreenGraphPage(
+                                            functionStrings: functionsToPlot,
+                                            functionColors: colorsToPlot,
+                                            evaluateFunction: _evaluateFunction,
+                                            xMin: xMin,
+                                            xMax: xMax,
+                                            yMin: yMin,
+                                            yMax: yMax,
+                                          ),
+                                        ),
+                                      );
+                                    } else {
+                                      ScaffoldMessenger.of(
+                                        context,
+                                      ).showSnackBar(
+                                        const SnackBar(
+                                          content: Text(
+                                            'Inserisci almeno una funzione valida da visualizzare.',
+                                          ),
+                                        ),
+                                      );
+                                    }
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: colorScheme.surfaceVariant,
+                                      borderRadius: BorderRadius.circular(12),
+                                      border: Border.all(
+                                        color: colorScheme.outline,
+                                        width: 1,
+                                      ),
+                                    ),
+                                    child: CustomPaint(
+                                      painter: GraphPainter(
+                                        functionStrings: functionsToPlot,
+                                        evaluateFunction: _evaluateFunction,
+                                        xMin: xMin,
+                                        xMax: xMax,
+                                        yMin: yMin,
+                                        yMax: yMax,
+                                        axisColor: colorScheme.onSurfaceVariant,
+                                        lineColors: colorsToPlot,
+                                        gridColor:
+                                            Theme.of(context).brightness ==
+                                                Brightness.dark
+                                            ? Colors.white.withOpacity(0.15)
+                                            : Colors.black.withOpacity(0.15),
+                                        textColor: colorScheme.onSurface,
+                                      ),
                                     ),
                                   ),
-                                );
-                              } else {
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  const SnackBar(content: Text('Inserisci almeno una funzione valida da visualizzare.')),
-                                );
-                              }
-                            },
-                            child: AspectRatio(
-                              aspectRatio: 1.5,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: colorScheme.surfaceVariant,
-                                  borderRadius: BorderRadius.circular(12),
-                                  border: Border.all(color: colorScheme.outline, width: 1),
                                 ),
-                                child: CustomPaint(
-                                  painter: GraphPainter(
-                                    functionStrings: functionsToPlot,
-                                    evaluateFunction: _evaluateFunction,
-                                    xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
-                                    axisColor: colorScheme.onSurfaceVariant,
-                                    lineColors: colorsToPlot,
-                                    gridColor: Theme.of(context).brightness == Brightness.dark
-                                        ? Colors.white.withOpacity(0.15)
-                                        : Colors.black.withOpacity(0.15),
-                                    textColor: colorScheme.onSurface,
+                              ),
+                              Positioned(
+                                bottom: 8,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 12,
+                                    vertical: 6,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: Colors.black.withOpacity(0.5),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                  child: const Text(
+                                    'Tocca il grafico per ingrandirlo',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
+                            ],
                           ),
-                          Positioned(
-                            bottom: 8,
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                              decoration: BoxDecoration(
-                                color: Colors.black.withOpacity(0.5),
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              child: const Text(
-                                'Tocca il grafico per ingrandirlo',
-                                style: TextStyle(color: Colors.white, fontSize: 12),
-                              ),
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
-              SizedBox(height: MediaQuery.of(context).viewPadding.bottom + 403),
+              Divider(height: 1, color: colorScheme.outline.withOpacity(0.5)),
+              Expanded(
+                flex: 5,
+                child: Container(
+                  color: colorScheme.surface,
+                  padding: EdgeInsets.only(
+                    bottom: MediaQuery.of(context).viewPadding.bottom + 98,
+                    left: 8.0,
+                    right: 8.0,
+                    top: 8.0,
+                  ),
+                  child: Column(
+                    children: keypadRows.map((row) {
+                      return Expanded(
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            ...row.map(
+                              (key) => Expanded(
+                                child: _buildKeypadButton(
+                                  key,
+                                  getButtonColor(key),
+                                  getButtonTextColor(key),
+                                ),
+                              ),
+                            ),
+                            if (row.length < 4)
+                              ...List.generate(
+                                4 - row.length,
+                                (_) => const Expanded(child: SizedBox.shrink()),
+                              ),
+                          ],
+                        ),
+                      );
+                    }).toList(),
+                  ),
+                ),
+              ),
             ],
           ),
-          Positioned(
-            left: 16,
-            right: 16,
-            bottom: MediaQuery.of(context).viewPadding.bottom + 98,
-            child: GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 4,
-                childAspectRatio: 2.2,
-                crossAxisSpacing: 8,
-                mainAxisSpacing: 4,
-              ),
-              itemCount: currentKeypadKeys.length,
-              itemBuilder: (context, index) {
-                final k = currentKeypadKeys[index];
-                return ElevatedButton(
-                  onPressed: () => _onKeyPress(k),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: getButtonColor(k),
-                    foregroundColor: getButtonTextColor(k),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    elevation: 3,
-                    textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                  ),
-                  child: Text(k),
-                );
-              },
-            ),
-          ),
-
           Positioned(
             top: MediaQuery.of(context).viewPadding.top,
             left: 16,
@@ -591,9 +804,9 @@ class _GraphPageState extends State<GraphPage> {
               leading: FloatingTopBarLeading.back,
               onBackPressed: () => Navigator.of(context).maybePop(),
             ),
-          )
+          ),
         ],
-      )
+      ),
     );
   }
 }
@@ -718,7 +931,9 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
     final colorScheme = Theme.of(context).colorScheme;
 
     String titleText = 'Grafici: ';
-    List<String> validFunctions = widget.functionStrings.where((f) => f.trim().isNotEmpty).toList();
+    List<String> validFunctions = widget.functionStrings
+        .where((f) => f.trim().isNotEmpty)
+        .toList();
     if (validFunctions.isNotEmpty) {
       titleText += validFunctions.map((f) => 'f(x) = $f').join(', ');
       if (titleText.length > 50) {
@@ -767,7 +982,10 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
                   heroTag: 'center_graph_button',
                   onPressed: _centerGraph,
                   backgroundColor: colorScheme.primary,
-                  child: Icon(Icons.center_focus_strong, color: colorScheme.onPrimary),
+                  child: Icon(
+                    Icons.center_focus_strong,
+                    color: colorScheme.onPrimary,
+                  ),
                 ),
                 const SizedBox(height: 12),
                 FloatingActionButton(
@@ -835,7 +1053,8 @@ class GraphPainter extends CustomPainter {
       ..strokeWidth = 0.5;
 
     double toCanvasX(double x) => (x - xMin) * size.width / (xMax - xMin);
-    double toCanvasY(double y) => size.height - ((y - yMin) * size.height / (yMax - yMin));
+    double toCanvasY(double y) =>
+        size.height - ((y - yMin) * size.height / (yMax - yMin));
 
     final double xAxisRange = xMax - xMin;
     final double xAxisScale = size.width / xAxisRange;
@@ -847,22 +1066,41 @@ class GraphPainter extends CustomPainter {
 
     for (double i = xMin.ceilToDouble(); i <= xMax.floorToDouble(); i++) {
       if (i != 0) {
-        canvas.drawLine(Offset(toCanvasX(i), 0), Offset(toCanvasX(i), size.height), gridPaint);
+        canvas.drawLine(
+          Offset(toCanvasX(i), 0),
+          Offset(toCanvasX(i), size.height),
+          gridPaint,
+        );
       }
     }
     for (double i = yMin.ceilToDouble(); i <= yMax.floorToDouble(); i++) {
       if (i != 0) {
-        canvas.drawLine(Offset(0, toCanvasY(i)), Offset(size.width, toCanvasY(i)), gridPaint);
+        canvas.drawLine(
+          Offset(0, toCanvasY(i)),
+          Offset(size.width, toCanvasY(i)),
+          gridPaint,
+        );
       }
     }
 
-    canvas.drawLine(Offset(toCanvasX(0), 0), Offset(toCanvasX(0), size.height), axisPaint);
-    canvas.drawLine(Offset(0, toCanvasY(0)), Offset(size.width, toCanvasY(0)), axisPaint);
+    canvas.drawLine(
+      Offset(toCanvasX(0), 0),
+      Offset(toCanvasX(0), size.height),
+      axisPaint,
+    );
+    canvas.drawLine(
+      Offset(0, toCanvasY(0)),
+      Offset(size.width, toCanvasY(0)),
+      axisPaint,
+    );
 
     final textStyle = TextStyle(color: textColor, fontSize: 10);
     void drawText(Canvas canvas, String text, Offset offset) {
       final textSpan = TextSpan(text: text, style: textStyle);
-      final textPainter = TextPainter(text: textSpan, textDirection: TextDirection.ltr);
+      final textPainter = TextPainter(
+        text: textSpan,
+        textDirection: TextDirection.ltr,
+      );
       textPainter.layout();
       textPainter.paint(canvas, offset);
     }
@@ -870,7 +1108,11 @@ class GraphPainter extends CustomPainter {
     if (drawNumbersX) {
       for (double i = xMin.ceilToDouble(); i <= xMax.floorToDouble(); i += 1) {
         if (i != 0) {
-          drawText(canvas, i.toInt().toString(), Offset(toCanvasX(i) - 5, toCanvasY(0) + 5));
+          drawText(
+            canvas,
+            i.toInt().toString(),
+            Offset(toCanvasX(i) - 5, toCanvasY(0) + 5),
+          );
         }
       }
     }
@@ -878,7 +1120,11 @@ class GraphPainter extends CustomPainter {
     if (drawNumbersY) {
       for (double i = yMin.ceilToDouble(); i <= yMax.floorToDouble(); i += 1) {
         if (i != 0) {
-          drawText(canvas, i.toInt().toString(), Offset(toCanvasX(0) + 5, toCanvasY(i) - 5));
+          drawText(
+            canvas,
+            i.toInt().toString(),
+            Offset(toCanvasX(0) + 5, toCanvasY(i) - 5),
+          );
         }
       }
     }
