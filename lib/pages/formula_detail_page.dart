@@ -12,7 +12,6 @@ import 'dart:io';
 import 'dart:developer' as developer;
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
-
 class FormulaDetailPage extends StatefulWidget {
   final Formula formula;
   final ThemeMode themeMode;
@@ -71,61 +70,86 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
     await widget.onToggleFavorite(widget.formula.id);
   }
 
-  Future<void> _shareFormula() async {
-    final Uint8List? imageBytes = await _screenshotController.captureFromWidget(
-      Card(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        elevation: 4,
-        color: Theme.of(context).colorScheme.surfaceVariant,
-        margin: const EdgeInsets.all(16),
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: SizedBox(
-            width: 800,
-            child: FittedBox(
-              fit: BoxFit.scaleDown,
-              child: Math.tex(
-                widget.formula.formulaLatex,
-                textStyle: TextStyle(
-                  fontSize: 60,
-                  color: Theme.of(context).colorScheme.onSurfaceVariant,
+  Future<void> shareFormula() async {
+    // 1) Crea il widget da catturare con tema e sfondo
+    final widgetToCapture = InheritedTheme.captureAll(
+      context,
+      Material(
+        color: Colors.transparent,
+        child: Card(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          elevation: 4,
+          color: Theme.of(context).colorScheme.surfaceVariant,
+          margin: const EdgeInsets.all(16),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Container(
+              // sfondo pieno per evitare trasparenze
+              color: Theme.of(context).colorScheme.surface,
+              child: SizedBox(
+                width: 800,
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Math.tex(
+                    widget.formula.formulaLatex,
+                    textStyle: TextStyle(
+                      fontSize: 60,
+                      color: Theme.of(context).colorScheme.onSurfaceVariant,
+                    ),
+                  ),
                 ),
-                onErrorFallback: (Object e) {
-                  developer.log('ERRORE RENDERING LATEX per screenshot: $e', error: e);
-                  return Text(
-                    '[Errore LaTeX]',
-                    style: TextStyle(color: Theme.of(context).colorScheme.error, fontSize: 20),
-                  );
-                },
               ),
             ),
           ),
         ),
       ),
+    );
+
+    // 2) Cattura
+    final imageBytes = await _screenshotController.captureFromWidget(
+      widgetToCapture,
       pixelRatio: 4.0,
     );
 
-    if (imageBytes != null) {
-      final directory = await getTemporaryDirectory();
-      final imagePath = await File('${directory.path}/formula_${widget.formula.id}.png').create();
-      await imagePath.writeAsBytes(imageBytes);
-      final String playStoreLink = 'https://play.google.com/store/apps/details?id=mala.tech.physics_ease_release';
-      Share.shareXFiles(
-        [XFile(imagePath.path)],
-        text: 'Dai un\'occhiata a questa formula su PhysicsEase e scarica l\'app per scoprirne altre!\n$playStoreLink',
-        subject: 'Formula di Fisica: ${widget.formula.titolo}',
-      );
-    } else {
-      developer.log('Errore durante la cattura dello screenshot della formula.');
+    if (imageBytes == null || imageBytes.isEmpty) {
+      // fallback o messaggio errore
+      return;
     }
+
+    // 3) Salva PNG temporaneo
+    final directory = await getTemporaryDirectory();
+    final file = File('${directory.path}/formula_${widget.formula.id}.png');
+    await file.writeAsBytes(imageBytes, flush: true);
+
+    final size = MediaQuery.of(context).size;
+    final origin = Rect.fromLTWH(0, 0, size.width, size.height / 2);
+
+    final String link = 'https://sites.google.com/view/physicsease-app';
+
+    await Share.shareXFiles(
+      [
+        XFile(file.path, mimeType: 'image/png'),
+      ], // mimeType utile con alcune app
+      text:
+          'Dai un\'occhiata a questa formula su PhysicsEase e scarica l\'app per scoprirne altre!\n$link',
+      subject: 'Formula di Fisica: ${widget.formula.titolo}',
+      sharePositionOrigin: origin,
+    );
   }
 
-
   //Nuovo parser
-  List<InlineSpan> _parseMixedContent(String text, TextStyle? textStyle, Color? latexColor) {
+  List<InlineSpan> _parseMixedContent(
+    String text,
+    TextStyle? textStyle,
+    Color? latexColor,
+  ) {
     final List<InlineSpan> spans = [];
     // Usa la nuova RegExp che riconosce sia LaTeX sia grassetto
-    final RegExp contentRegex = RegExp(r'\$\$([^$]+?)\$\$|\$([^$]+?)\$|\*\*([^\*]+?)\*\*');
+    final RegExp contentRegex = RegExp(
+      r'\$\$([^$]+?)\$\$|\$([^$]+?)\$|\*\*([^\*]+?)\*\*',
+    );
 
     text.splitMapJoin(
       contentRegex,
@@ -138,12 +162,17 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
               alignment: PlaceholderAlignment.middle,
               child: Math.tex(
                 latexContent,
-                textStyle: (textStyle ?? const TextStyle()).copyWith(color: latexColor),
+                textStyle: (textStyle ?? const TextStyle()).copyWith(
+                  color: latexColor,
+                ),
                 onErrorFallback: (Object e) {
                   developer.log('ERRORE RENDERING INLINE LATEX: $e', error: e);
                   return Text(
                     '[Errore LaTeX]',
-                    style: TextStyle(color: Theme.of(context).colorScheme.error, fontSize: (textStyle?.fontSize ?? 14) * 0.8),
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.error,
+                      fontSize: (textStyle?.fontSize ?? 14) * 0.8,
+                    ),
                   );
                 },
               ),
@@ -182,25 +211,36 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
     final colorScheme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
 
-    developer.log('FormulaDetailPage: Rendering formula "${widget.formula.titolo}". LaTeX string: "${widget.formula.formulaLatex}"');
+    developer.log(
+      'FormulaDetailPage: Rendering formula "${widget.formula.titolo}". LaTeX string: "${widget.formula.formulaLatex}"',
+    );
 
     return Scaffold(
       appBar: null,
       body: Stack(
         children: [
           SingleChildScrollView(
-            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, left: 16.0, right: 16.0, top: MediaQuery.of(context).viewPadding.top + 70),
+            padding: EdgeInsets.only(
+              bottom: MediaQuery.of(context).viewPadding.bottom + 98,
+              left: 16.0,
+              right: 16.0,
+              top: MediaQuery.of(context).viewPadding.top + 70,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
                   widget.formula.titolo,
                   textAlign: TextAlign.center,
-                  style: textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
+                  style: textTheme.headlineSmall?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 const SizedBox(height: 24),
                 Card(
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
                   elevation: 4,
                   color: colorScheme.surfaceVariant,
                   margin: const EdgeInsets.symmetric(vertical: 8),
@@ -209,33 +249,44 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                     child: Center(
                       child: widget.formula.formulaLatex.isNotEmpty
                           ? FittedBox(
-                        fit: BoxFit.scaleDown,
-                        child: Math.tex(
-                          widget.formula.formulaLatex,
-                          mathStyle: MathStyle.display, // usa stile centrato
-                          textStyle: TextStyle(
-                            fontSize: 36,
-                            color: colorScheme.onSurfaceVariant,
-                          ),
-                          onErrorFallback: (Object e) {
-                            String errorMessage = 'Errore di rendering LaTeX sconosciuto.';
-                            if (e is FlutterMathException) {
-                              errorMessage = e.message;
-                            } else {
-                              errorMessage = e.toString();
-                            }
-                            developer.log('ERRORE RENDERING LATEX per "${widget.formula.titolo}": $errorMessage', error: e);
-                            return Text(
-                              'Errore LaTeX: $errorMessage',
-                              style: TextStyle(color: colorScheme.error, fontSize: 14),
-                            );
-                          },
-                        ),
-                      )
+                              fit: BoxFit.scaleDown,
+                              child: Math.tex(
+                                widget.formula.formulaLatex,
+                                mathStyle:
+                                    MathStyle.display, // usa stile centrato
+                                textStyle: TextStyle(
+                                  fontSize: 36,
+                                  color: colorScheme.onSurfaceVariant,
+                                ),
+                                onErrorFallback: (Object e) {
+                                  String errorMessage =
+                                      'Errore di rendering LaTeX sconosciuto.';
+                                  if (e is FlutterMathException) {
+                                    errorMessage = e.message;
+                                  } else {
+                                    errorMessage = e.toString();
+                                  }
+                                  developer.log(
+                                    'ERRORE RENDERING LATEX per "${widget.formula.titolo}": $errorMessage',
+                                    error: e,
+                                  );
+                                  return Text(
+                                    'Errore LaTeX: $errorMessage',
+                                    style: TextStyle(
+                                      color: colorScheme.error,
+                                      fontSize: 14,
+                                    ),
+                                  );
+                                },
+                              ),
+                            )
                           : Text(
-                        'Formula LaTeX non disponibile per "${widget.formula.titolo}". Controlla il JSON.',
-                        style: TextStyle(fontStyle: FontStyle.italic, color: colorScheme.error),
-                      ),
+                              'Formula LaTeX non disponibile per "${widget.formula.titolo}". Controlla il JSON.',
+                              style: TextStyle(
+                                fontStyle: FontStyle.italic,
+                                color: colorScheme.error,
+                              ),
+                            ),
                     ),
                   ),
                 ),
@@ -253,7 +304,6 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                   ),
                 ),
 
-
                 //Variabili NEW con render LaTeX per 'simbolo' e 'unita' senza parser
                 if (widget.formula.variabili.isNotEmpty)
                   _buildSectionCard(
@@ -270,16 +320,23 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                                   alignment: PlaceholderAlignment.middle,
                                   child: Math.tex(
                                     v.simbolo,
-                                    textStyle: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurface),
+                                    textStyle: textTheme.bodyMedium?.copyWith(
+                                      color: colorScheme.onSurface,
+                                    ),
                                     onErrorFallback: (e) => Text(
                                       '[Errore LaTeX simbolo]',
-                                      style: TextStyle(color: colorScheme.error, fontSize: 12),
+                                      style: TextStyle(
+                                        color: colorScheme.error,
+                                        fontSize: 12,
+                                      ),
                                     ),
                                   ),
                                 ),
                                 TextSpan(
                                   text: ': ',
-                                  style: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurface),
+                                  style: textTheme.bodyMedium?.copyWith(
+                                    color: colorScheme.onSurface,
+                                  ),
                                 ),
                                 ..._parseMixedContent(
                                   v.descrizione,
@@ -288,22 +345,31 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                                 ),
                                 TextSpan(
                                   text: ' (',
-                                  style: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurface),
+                                  style: textTheme.bodyMedium?.copyWith(
+                                    color: colorScheme.onSurface,
+                                  ),
                                 ),
                                 WidgetSpan(
                                   alignment: PlaceholderAlignment.middle,
                                   child: Math.tex(
                                     v.unita,
-                                    textStyle: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurface),
+                                    textStyle: textTheme.bodyMedium?.copyWith(
+                                      color: colorScheme.onSurface,
+                                    ),
                                     onErrorFallback: (e) => Text(
                                       '[Errore LaTeX unità]',
-                                      style: TextStyle(color: colorScheme.error, fontSize: 12),
+                                      style: TextStyle(
+                                        color: colorScheme.error,
+                                        fontSize: 12,
+                                      ),
                                     ),
                                   ),
                                 ),
                                 TextSpan(
                                   text: ')',
-                                  style: textTheme.bodyMedium?.copyWith(color: colorScheme.onSurface),
+                                  style: textTheme.bodyMedium?.copyWith(
+                                    color: colorScheme.onSurface,
+                                  ),
                                 ),
                               ],
                             ),
@@ -314,14 +380,15 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                   ),
                 if (widget.formula.esempi.isNotEmpty)
                   ...widget.formula.esempi.map(
-                        (e) => _buildSectionCard(
+                    (e) => _buildSectionCard(
                       title: e.titolo,
                       content: RichText(
                         text: TextSpan(
                           children: _parseMixedContent(
                             e.testo,
                             textTheme.bodyMedium,
-                            colorScheme.onSurface, // Color for LaTeX in examples
+                            colorScheme
+                                .onSurface, // Color for LaTeX in examples
                           ),
                         ),
                       ),
@@ -334,13 +401,15 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                       spacing: 8,
                       runSpacing: 6,
                       children: widget.formula.paroleChiave
-                          .map((kw) => Chip(
-                        label: Text(kw),
-                        backgroundColor: colorScheme.primaryContainer,
-                        labelStyle: textTheme.bodySmall?.copyWith(
-                          color: colorScheme.onPrimaryContainer,
-                        ),
-                      ))
+                          .map(
+                            (kw) => Chip(
+                              label: Text(kw),
+                              backgroundColor: colorScheme.primaryContainer,
+                              labelStyle: textTheme.bodySmall?.copyWith(
+                                color: colorScheme.onPrimaryContainer,
+                              ),
+                            ),
+                          )
                           .toList(),
                     ),
                   ),
@@ -359,11 +428,11 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
               isFavorite: _isFavorite,
               onFavoritePressed: _toggleLocalFavorite,
               showShare: true,
-              onSharePressed: _shareFormula,
+              onSharePressed: shareFormula,
             ),
           ),
         ],
-      )
+      ),
     );
   }
 
@@ -381,7 +450,12 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(title, style: textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w600)),
+            Text(
+              title,
+              style: textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.w600,
+              ),
+            ),
             const SizedBox(height: 8),
             content,
           ],
