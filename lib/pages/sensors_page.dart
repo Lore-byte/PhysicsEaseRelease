@@ -14,12 +14,10 @@ class SensorToolPage extends StatefulWidget {
 }
 
 class _SensorToolPageState extends State<SensorToolPage> {
-
   UserAccelerometerEvent? _userAccelerometerEvent;
   AccelerometerEvent? _accelerometerEvent;
   GyroscopeEvent? _gyroscopeEvent;
   MagnetometerEvent? _magnetometerEvent;
-
 
   final List<FlSpot> _userAccelXSpots = [];
   final List<FlSpot> _userAccelYSpots = [];
@@ -37,7 +35,6 @@ class _SensorToolPageState extends State<SensorToolPage> {
   final List<FlSpot> _magYSpots = [];
   final List<FlSpot> _magZSpots = [];
 
-
   int _currentXIndex = 0;
   Timer? _xIndexTimer;
   static const int _maxDataPoints = 100;
@@ -52,9 +49,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
     _requestSensorPermissions();
   }
 
-
   Future<void> _requestSensorPermissions() async {
-
     var status = await Permission.activityRecognition.status;
     if (status.isDenied) {
       status = await Permission.activityRecognition.request();
@@ -62,30 +57,28 @@ class _SensorToolPageState extends State<SensorToolPage> {
 
     if (status.isGranted || status.isLimited) {
       _initSensorStreams();
-    } else if (status.isPermanentlyDenied) {
+    } /*else if (status.isPermanentlyDenied) {
 
-      _showErrorSnackBar(
+      /*_showErrorSnackBar(
           'Permesso di rilevamento attività fisica negato permanentemente. Abilitalo dalle impostazioni dell\'app.'
-      );
+      );*/
 
-      if (await openAppSettings()) {
+      /*if (await openAppSettings()) {
         debugPrint('Impostazioni app aperte.');
       }
-      _initSensorStreams();
-    } else {
+      _initSensorStreams();*/
+    }*/ else {
       //va ancora tolto, andorid manifest è già stato modificato
       //_showErrorSnackBar(
-          //'Impossibile ottenere il permesso di rilevamento attività fisica. Verifica le impostazioni.'
+      //'Impossibile ottenere il permesso di rilevamento attività fisica. Verifica le impostazioni.'
       //);
       _initSensorStreams();
     }
   }
 
-
   void _initSensorStreams() {
     if (_sensorsInitialized) return;
     _sensorsInitialized = true;
-
 
     void addSpot(List<FlSpot> spots, double value, int xIndex) {
       if (spots.length >= _maxDataPoints) {
@@ -102,87 +95,93 @@ class _SensorToolPageState extends State<SensorToolPage> {
       }
     });
 
+    _streamSubscriptions.add(
+      userAccelerometerEventStream(
+        samplingPeriod: SensorInterval.uiInterval,
+      ).listen(
+        (UserAccelerometerEvent event) {
+          setState(() {
+            _userAccelerometerEvent = event;
+            addSpot(_userAccelXSpots, event.x, _currentXIndex);
+            addSpot(_userAccelYSpots, event.y, _currentXIndex);
+            addSpot(_userAccelZSpots, event.z, _currentXIndex);
+          });
+        },
+        onError: (e) {
+          debugPrint('Errore Accelerometro Utente: $e');
+          _showErrorSnackBar('Accelerometro utente non disponibile o errore.');
+        },
+        cancelOnError: true,
+      ),
+    );
 
-    _streamSubscriptions.add(userAccelerometerEventStream(samplingPeriod: SensorInterval.uiInterval).listen(
-          (UserAccelerometerEvent event) {
-        setState(() {
-          _userAccelerometerEvent = event;
-          addSpot(_userAccelXSpots, event.x, _currentXIndex);
-          addSpot(_userAccelYSpots, event.y, _currentXIndex);
-          addSpot(_userAccelZSpots, event.z, _currentXIndex);
-        });
-      },
-      onError: (e) {
-        debugPrint('Errore Accelerometro Utente: $e');
-        _showErrorSnackBar('Accelerometro utente non disponibile o errore.');
-      },
-      cancelOnError: true,
-    ));
+    _streamSubscriptions.add(
+      accelerometerEventStream(
+        samplingPeriod: SensorInterval.uiInterval,
+      ).listen(
+        (AccelerometerEvent event) {
+          setState(() {
+            _accelerometerEvent = event;
+            addSpot(_accelXSpots, event.x, _currentXIndex);
+            addSpot(_accelYSpots, event.y, _currentXIndex);
+            addSpot(_accelZSpots, event.z, _currentXIndex);
+          });
+        },
+        onError: (e) {
+          debugPrint('Errore Accelerometro: $e');
+          _showErrorSnackBar('Accelerometro non disponibile o errore.');
+        },
+        cancelOnError: true,
+      ),
+    );
 
+    _streamSubscriptions.add(
+      gyroscopeEventStream(samplingPeriod: SensorInterval.uiInterval).listen(
+        (GyroscopeEvent event) {
+          setState(() {
+            _gyroscopeEvent = event;
+            addSpot(_gyroXSpots, event.x, _currentXIndex);
+            addSpot(_gyroYSpots, event.y, _currentXIndex);
+            addSpot(_gyroZSpots, event.z, _currentXIndex);
+          });
+        },
+        onError: (e) {
+          debugPrint('Errore Giroscopio: $e');
+          _showErrorSnackBar('Giroscopio non disponibile o errore.');
+        },
+        cancelOnError: true,
+      ),
+    );
 
-    _streamSubscriptions.add(accelerometerEventStream(samplingPeriod: SensorInterval.uiInterval).listen(
-          (AccelerometerEvent event) {
-        setState(() {
-          _accelerometerEvent = event;
-          addSpot(_accelXSpots, event.x, _currentXIndex);
-          addSpot(_accelYSpots, event.y, _currentXIndex);
-          addSpot(_accelZSpots, event.z, _currentXIndex);
-        });
-      },
-      onError: (e) {
-        debugPrint('Errore Accelerometro: $e');
-        _showErrorSnackBar('Accelerometro non disponibile o errore.');
-      },
-      cancelOnError: true,
-    ));
-
-
-    _streamSubscriptions.add(gyroscopeEventStream(samplingPeriod: SensorInterval.uiInterval).listen(
-          (GyroscopeEvent event) {
-        setState(() {
-          _gyroscopeEvent = event;
-          addSpot(_gyroXSpots, event.x, _currentXIndex);
-          addSpot(_gyroYSpots, event.y, _currentXIndex);
-          addSpot(_gyroZSpots, event.z, _currentXIndex);
-        });
-      },
-      onError: (e) {
-        debugPrint('Errore Giroscopio: $e');
-        _showErrorSnackBar('Giroscopio non disponibile o errore.');
-      },
-      cancelOnError: true,
-    ));
-
-
-    _streamSubscriptions.add(magnetometerEventStream(samplingPeriod: SensorInterval.uiInterval).listen(
-          (MagnetometerEvent event) {
-        setState(() {
-          _magnetometerEvent = event;
-          addSpot(_magXSpots, event.x, _currentXIndex);
-          addSpot(_magYSpots, event.y, _currentXIndex);
-          addSpot(_magZSpots, event.z, _currentXIndex);
-        });
-      },
-      onError: (e) {
-        debugPrint('Errore Magnetometro: $e');
-        _showErrorSnackBar('Magnetometro non disponibile o errore.');
-      },
-      cancelOnError: true,
-    ));
+    _streamSubscriptions.add(
+      magnetometerEventStream(samplingPeriod: SensorInterval.uiInterval).listen(
+        (MagnetometerEvent event) {
+          setState(() {
+            _magnetometerEvent = event;
+            addSpot(_magXSpots, event.x, _currentXIndex);
+            addSpot(_magYSpots, event.y, _currentXIndex);
+            addSpot(_magZSpots, event.z, _currentXIndex);
+          });
+        },
+        onError: (e) {
+          debugPrint('Errore Magnetometro: $e');
+          _showErrorSnackBar('Magnetometro non disponibile o errore.');
+        },
+        cancelOnError: true,
+      ),
+    );
   }
-
 
   void _showErrorSnackBar(String message) {
     if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(message)),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(message)));
     }
   }
 
   @override
   void dispose() {
-
     for (final subscription in _streamSubscriptions) {
       subscription.cancel();
     }
@@ -204,12 +203,10 @@ class _SensorToolPageState extends State<SensorToolPage> {
     super.dispose();
   }
 
-
   String _formatValue(double? value) {
     if (value == null) return 'N/A';
     return value.toStringAsFixed(3);
   }
-
 
   Widget _buildSensorCard({
     required Color cardColor,
@@ -247,7 +244,6 @@ class _SensorToolPageState extends State<SensorToolPage> {
     );
   }
 
-
   Widget _buildDataRow(String label, String value, Color textColor) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4.0),
@@ -260,7 +256,11 @@ class _SensorToolPageState extends State<SensorToolPage> {
           ),
           Text(
             value,
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: textColor),
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w600,
+              color: textColor,
+            ),
           ),
         ],
       ),
@@ -279,7 +279,6 @@ class _SensorToolPageState extends State<SensorToolPage> {
     required Color gridColor,
     String? unit,
   }) {
-
     double minY = 0, maxY = 0;
     if (xSpots.isNotEmpty || ySpots.isNotEmpty || zSpots.isNotEmpty) {
       final allValues = [
@@ -363,7 +362,13 @@ class _SensorToolPageState extends State<SensorToolPage> {
                         getTitlesWidget: (value, meta) {
                           return SideTitleWidget(
                             axisSide: meta.axisSide,
-                            child: Text(value.toInt().toString(), style: TextStyle(color: textColor.withOpacity(0.7), fontSize: 12)),
+                            child: Text(
+                              value.toInt().toString(),
+                              style: TextStyle(
+                                color: textColor.withOpacity(0.7),
+                                fontSize: 12,
+                              ),
+                            ),
                           );
                         },
                       ),
@@ -375,7 +380,13 @@ class _SensorToolPageState extends State<SensorToolPage> {
                         getTitlesWidget: (value, meta) {
                           return SideTitleWidget(
                             axisSide: meta.axisSide,
-                            child: Text(value.toStringAsFixed(1), style: TextStyle(color: textColor.withOpacity(0.7), fontSize: 12)),
+                            child: Text(
+                              value.toStringAsFixed(1),
+                              style: TextStyle(
+                                color: textColor.withOpacity(0.7),
+                                fontSize: 12,
+                              ),
+                            ),
                           );
                         },
                       ),
@@ -383,7 +394,10 @@ class _SensorToolPageState extends State<SensorToolPage> {
                   ),
                   borderData: FlBorderData(
                     show: true,
-                    border: Border.all(color: gridColor.withOpacity(0.3), width: 1),
+                    border: Border.all(
+                      color: gridColor.withOpacity(0.3),
+                      width: 1,
+                    ),
                   ),
                   minX: chartMinX,
                   maxX: chartMaxX,
@@ -450,7 +464,10 @@ class _SensorToolPageState extends State<SensorToolPage> {
         const SizedBox(width: 6),
         Text(
           label,
-          style: TextStyle(color: Theme.of(context).colorScheme.onSurface, fontSize: 14),
+          style: TextStyle(
+            color: Theme.of(context).colorScheme.onSurface,
+            fontSize: 14,
+          ),
         ),
       ],
     );
@@ -465,7 +482,10 @@ class _SensorToolPageState extends State<SensorToolPage> {
       body: Stack(
         children: [
           SingleChildScrollView(
-            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, top: MediaQuery.of(context).viewPadding.top + 50),
+            padding: EdgeInsets.only(
+              bottom: MediaQuery.of(context).viewPadding.bottom + 98,
+              top: MediaQuery.of(context).viewPadding.top + 50,
+            ),
             child: Column(
               children: [
                 const SizedBox(height: 20),
@@ -586,7 +606,6 @@ class _SensorToolPageState extends State<SensorToolPage> {
           ),
         ],
       ),
-
     );
   }
 }

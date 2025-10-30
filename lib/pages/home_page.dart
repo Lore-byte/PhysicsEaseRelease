@@ -237,12 +237,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
               }
               return const SizedBox.shrink(); // Return empty space
             }
-            // When it opens, focus the search bar
-            WidgetsBinding.instance.addPostFrameCallback((_) {
-              if (!_searchFocusNode.hasFocus) {
-                FocusScope.of(context).requestFocus(_searchFocusNode);
-              }
-            });
+
             return Padding(
               padding: EdgeInsets.only(
                 top: MediaQuery.of(context).viewPadding.top + 70,
@@ -253,6 +248,12 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
               child: TextField(
                 controller: _searchController,
                 focusNode: _searchFocusNode,
+                autofocus: true,                         // focalizza solo all'apertura
+                textInputAction: TextInputAction.search, // tasto Invio/Cerca
+                onSubmitted: (_) {
+                  FocusScope.of(context).unfocus();      // chiude tastiera in modo stabile
+                  // opzionale: widget.searchBarVisible.value = false; // per chiudere anche la barra
+                },
                 decoration: InputDecoration(
                   hintText: 'Cerca formule o parole chiave...',
                   prefixIcon: Icon(
@@ -261,11 +262,11 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                   ),
                   suffixIcon: _searchQuery.isNotEmpty
                       ? IconButton(
-                          icon: Icon(Icons.backspace_outlined, color: Theme.of(context).colorScheme.onSurfaceVariant),
-                          onPressed: () {
-                            _resetSearchAndFocus();
-                          },
-                        )
+                    icon: Icon(Icons.backspace_outlined, color: Theme.of(context).colorScheme.onSurfaceVariant),
+                    onPressed: () {
+                      _resetSearchAndFocus();
+                    },
+                  )
                       : null,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
@@ -276,9 +277,10 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                   filled: true,
                   fillColor: Theme.of(context).colorScheme.surfaceContainerHighest,
                 ),
-                onChanged: _onSearchChanged, // Triggers search filtering
+                onChanged: _onSearchChanged,
               ),
             );
+
           },
         ),
 
@@ -300,7 +302,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                     ? ListView.builder(
                         padding: EdgeInsets.only(
                           top: topListPadding,
-                          bottom: MediaQuery.of(context).viewPadding.bottom + 98,
+                          bottom: MediaQuery.of(context).viewPadding.bottom + 98 + MediaQuery.of(context).viewInsets.bottom,
                         ),
                         itemCount: temi.length,
                         itemBuilder: (context, index) {
@@ -335,7 +337,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                     : ListView.builder(
                         padding: EdgeInsets.only(
                           top: 0, // Explicitly zero when filtered
-                          bottom: MediaQuery.of(context).viewPadding.bottom + 98,
+                          bottom: MediaQuery.of(context).viewPadding.bottom + 98 + MediaQuery.of(context).viewInsets.bottom,
+                          left: 16,
+                          right: 16,
                         ),
                         itemCount: _filteredFormulas.length,
                         itemBuilder: (context, index) {
