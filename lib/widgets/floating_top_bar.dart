@@ -61,8 +61,8 @@ class FloatingTopBar extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final shadowColor = isDark
-        ? Colors.black.withValues(alpha: 0.8)
-        : Colors.white.withValues(alpha: 0.8);
+        ? Colors.black.withValues(alpha: 0.9)
+        : Colors.white.withValues(alpha: 0.9);
 
     return Container(
       decoration: BoxDecoration(
@@ -71,7 +71,7 @@ class FloatingTopBar extends StatelessWidget {
           BoxShadow(
             color: shadowColor,
             blurRadius: 30,
-            offset: const Offset(0, -50),
+            offset: const Offset(0, -40),
             spreadRadius: 40,
           ),
         ],
