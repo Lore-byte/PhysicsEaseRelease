@@ -207,12 +207,7 @@ class _ConstantsListPageState extends State<ConstantsListPage> {
                     return const SizedBox.shrink();
                   }
 
-                  // Quando si apre: forza il focus al TextField
-                  WidgetsBinding.instance.addPostFrameCallback((_) {
-                    if (!_searchFocusNode.hasFocus) {
-                      FocusScope.of(context).requestFocus(_searchFocusNode);
-                    }
-                  });
+                  // visible == true
                   return Padding(
                     padding: EdgeInsets.only(
                       top: MediaQuery.of(context).viewPadding.top + 70,
@@ -223,6 +218,12 @@ class _ConstantsListPageState extends State<ConstantsListPage> {
                     child: TextField(
                       controller: _searchController,
                       focusNode: _searchFocusNode,
+                      autofocus: true,                         //focus solo all’apertura
+                      textInputAction: TextInputAction.search, //tasto Invio/Cerca
+                      onSubmitted: (_) {
+                        FocusScope.of(context).unfocus();      //chiude la tastiera
+                        // opzionale: _searchBarVisible.value = false; // per chiudere anche la barra
+                      },
                       decoration: InputDecoration(
                         hintText: 'Cerca costante...',
                         prefixIcon: Icon(
@@ -238,7 +239,6 @@ class _ConstantsListPageState extends State<ConstantsListPage> {
                           onPressed: _resetSearchAndFocus,
                         )
                             : null,
-
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                           borderSide: BorderSide(

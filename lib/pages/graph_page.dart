@@ -109,7 +109,7 @@ class _GraphPageState extends State<GraphPage> {
   ];
   final Random _random = Random();
 
-  static const double _graphPreviewHeight = 320.0;
+  //static const double _graphPreviewHeight = 220.0;
 
   double _previewHorizontalMargin(double width) {
     const double minMargin = 4.0;
@@ -541,136 +541,148 @@ class _GraphPageState extends State<GraphPage> {
             children: [
               Expanded(
                 flex: 5,
-                child: SingleChildScrollView(
-                  padding: EdgeInsets.only(
-                    left: 0,
-                    right: 0,
-                    top: MediaQuery.of(context).viewPadding.top + 70,
-                    bottom: 16,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      const SizedBox(height: 16),
-                      ..._functionControllers.asMap().entries.map((entry) {
-                        int idx = entry.key;
-                        TextEditingController controller = entry.value;
-                        return Padding(
-                          padding: const EdgeInsets.only(bottom: 12.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              TextField(
-                                controller: controller,
-                                readOnly: true,
-                                onTap: () {
-                                  setState(() {
-                                    _focusedController = controller;
-                                    if (_isPlaceholder[idx]) {
-                                      controller.clear();
-                                      _isPlaceholder[idx] = false;
-                                      _updateFunction(idx);
-                                    }
-                                  });
-                                },
-                                decoration: InputDecoration(
-                                  labelText: 'f${idx + 1}(x)',
-                                  border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(12),
-                                    borderSide: BorderSide(
-                                      color: _focusedController == controller
-                                          ? colorScheme.primary
-                                          : colorScheme.outline,
-                                      width: 2.0,
-                                    ),
-                                  ),
-                                  focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(12),
-                                    borderSide: BorderSide(
-                                      color: colorScheme.primary,
-                                      width: 2.0,
-                                    ),
-                                  ),
-                                  prefixIcon: Icon(
-                                    Icons.show_chart,
-                                    color: _functionColors[idx],
-                                  ),
-                                  suffixIcon: Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      if (idx ==
-                                          _functionControllers.length - 1)
-                                        IconButton(
-                                          icon: Icon(
-                                            Icons.add,
-                                            color: colorScheme.primary,
-                                          ),
-                                          onPressed: () => _addFunctionField(
-                                            initialText: '',
-                                            isPlaceholder: false,
-                                          ),
-                                          tooltip: 'Aggiungi funzione',
-                                        ),
-                                      if (_functionControllers.length > 1)
-                                        IconButton(
-                                          icon: Icon(
-                                            Icons.close,
-                                            color: colorScheme.onSurfaceVariant,
-                                          ),
-                                          onPressed: () =>
-                                              _removeFunctionField(idx),
-                                          tooltip: 'Rimuovi funzione',
-                                        ),
-                                    ],
-                                  ),
-                                ),
-                                style: TextStyle(
-                                  color: colorScheme.onSurface,
-                                  fontSize: 20,
-                                ),
-                                textAlign: TextAlign.end,
-                              ),
-                              if (_errorMessages[idx].isNotEmpty)
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 8.0),
-                                  child: Card(
-                                    color: colorScheme.errorContainer,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8),
-                                    ),
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Text(
-                                        _errorMessages[idx],
-                                        style: TextStyle(
-                                          color: colorScheme.onErrorContainer,
-                                          fontSize: 12,
-                                        ),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                            ],
-                          ),
-                        );
-                      }).toList(),
-
-                      const SizedBox(height: 12),
-                      Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: previewMargin,
+                child: CustomScrollView(
+                  slivers: [
+                    SliverToBoxAdapter(
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: 16,
+                          right: 16,
+                          top: MediaQuery.of(context).viewPadding.top + 70,
+                          bottom: 12, // un po' di spazio prima della preview
                         ),
-                        child: SizedBox(
-                          height: _graphPreviewHeight,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            const SizedBox(height: 16),
+                            ..._functionControllers.asMap().entries.map((entry) {
+                              int idx = entry.key;
+                              TextEditingController controller = entry.value;
+                              return Padding(
+                                padding: const EdgeInsets.only(bottom: 12.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                                  children: [
+                                    TextField(
+                                      controller: controller,
+                                      readOnly: true,
+                                      onTap: () {
+                                        setState(() {
+                                          _focusedController = controller;
+                                          if (_isPlaceholder[idx]) {
+                                            controller.clear();
+                                            _isPlaceholder[idx] = false;
+                                            _updateFunction(idx);
+                                          }
+                                        });
+                                      },
+                                      decoration: InputDecoration(
+                                        labelText: 'f${idx + 1}(x)',
+                                        border: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(12),
+                                          borderSide: BorderSide(
+                                            color: _focusedController == controller
+                                                ? colorScheme.primary
+                                                : colorScheme.outline,
+                                            width: 2.0,
+                                          ),
+                                        ),
+                                        focusedBorder: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(12),
+                                          borderSide: BorderSide(
+                                            color: colorScheme.primary,
+                                            width: 2.0,
+                                          ),
+                                        ),
+                                        prefixIcon: Icon(
+                                          Icons.show_chart,
+                                          color: _functionColors[idx],
+                                        ),
+                                        suffixIcon: Row(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [
+                                            if (idx == _functionControllers.length - 1)
+                                              IconButton(
+                                                icon: Icon(
+                                                  Icons.add,
+                                                  color: colorScheme.primary,
+                                                ),
+                                                onPressed: () => _addFunctionField(
+                                                  initialText: '',
+                                                  isPlaceholder: false,
+                                                ),
+                                                tooltip: 'Aggiungi funzione',
+                                              ),
+                                            if (_functionControllers.length > 1)
+                                              IconButton(
+                                                icon: Icon(
+                                                  Icons.close,
+                                                  color: colorScheme.onSurfaceVariant,
+                                                ),
+                                                onPressed: () => _removeFunctionField(idx),
+                                                tooltip: 'Rimuovi funzione',
+                                              ),
+                                          ],
+                                        ),
+                                      ),
+                                      style: TextStyle(
+                                        color: colorScheme.onSurface,
+                                        fontSize: 20,
+                                      ),
+                                      textAlign: TextAlign.end,
+                                    ),
+                                    if (_errorMessages[idx].isNotEmpty)
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 8.0),
+                                        child: Card(
+                                          color: colorScheme.errorContainer,
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.circular(8),
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text(
+                                              _errorMessages[idx],
+                                              style: TextStyle(
+                                                color: colorScheme.onErrorContainer,
+                                                fontSize: 12,
+                                              ),
+                                              textAlign: TextAlign.center,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                  ],
+                                ),
+                              );
+                            }).toList(),
+                          ],
+                        ),
+                      ),
+                    ),
+
+                    // 2) La preview del grafico si espande fino al bordo superiore del tastierino
+                    SliverFillRemaining(
+                      hasScrollBody: false,
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: previewMargin).copyWith(bottom: 16),
+                        child: Container(
+                          constraints: const BoxConstraints(minHeight: 120), // fallback minimo
+                          decoration: BoxDecoration(
+                            color: colorScheme.surfaceVariant,
+                            borderRadius: BorderRadius.circular(12),
+                            border: Border.all(
+                              color: colorScheme.outline,
+                              width: 1,
+                            ),
+                          ),
                           child: Stack(
                             alignment: Alignment.center,
                             children: [
                               Positioned.fill(
                                 child: GestureDetector(
                                   onTap: () {
-                                    bool hasPlotableFunctions =
-                                        functionsToPlot.isNotEmpty;
+                                    bool hasPlotableFunctions = functionsToPlot.isNotEmpty;
                                     if (hasPlotableFunctions) {
                                       Navigator.of(context).push(
                                         MaterialPageRoute(
@@ -686,9 +698,7 @@ class _GraphPageState extends State<GraphPage> {
                                         ),
                                       );
                                     } else {
-                                      ScaffoldMessenger.of(
-                                        context,
-                                      ).showSnackBar(
+                                      ScaffoldMessenger.of(context).showSnackBar(
                                         const SnackBar(
                                           content: Text(
                                             'Inserisci almeno una funzione valida da visualizzare.',
@@ -697,32 +707,20 @@ class _GraphPageState extends State<GraphPage> {
                                       );
                                     }
                                   },
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: colorScheme.surfaceVariant,
-                                      borderRadius: BorderRadius.circular(12),
-                                      border: Border.all(
-                                        color: colorScheme.outline,
-                                        width: 1,
-                                      ),
-                                    ),
-                                    child: CustomPaint(
-                                      painter: GraphPainter(
-                                        functionStrings: functionsToPlot,
-                                        evaluateFunction: _evaluateFunction,
-                                        xMin: xMin,
-                                        xMax: xMax,
-                                        yMin: yMin,
-                                        yMax: yMax,
-                                        axisColor: colorScheme.onSurfaceVariant,
-                                        lineColors: colorsToPlot,
-                                        gridColor:
-                                            Theme.of(context).brightness ==
-                                                Brightness.dark
-                                            ? Colors.white.withOpacity(0.15)
-                                            : Colors.black.withOpacity(0.15),
-                                        textColor: colorScheme.onSurface,
-                                      ),
+                                  child: CustomPaint(
+                                    painter: GraphPainter(
+                                      functionStrings: functionsToPlot,
+                                      evaluateFunction: _evaluateFunction,
+                                      xMin: xMin,
+                                      xMax: xMax,
+                                      yMin: yMin,
+                                      yMax: yMax,
+                                      axisColor: colorScheme.onSurfaceVariant,
+                                      lineColors: colorsToPlot,
+                                      gridColor: Theme.of(context).brightness == Brightness.dark
+                                          ? Colors.white.withOpacity(0.15)
+                                          : Colors.black.withOpacity(0.15),
+                                      textColor: colorScheme.onSurface,
                                     ),
                                   ),
                                 ),
@@ -730,10 +728,7 @@ class _GraphPageState extends State<GraphPage> {
                               Positioned(
                                 bottom: 8,
                                 child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 12,
-                                    vertical: 6,
-                                  ),
+                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                                   decoration: BoxDecoration(
                                     color: Colors.black.withOpacity(0.5),
                                     borderRadius: BorderRadius.circular(10),
@@ -751,8 +746,8 @@ class _GraphPageState extends State<GraphPage> {
                           ),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
               Divider(height: 1, color: colorScheme.outline.withOpacity(0.5)),
