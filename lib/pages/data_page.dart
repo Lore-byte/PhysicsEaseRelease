@@ -5,6 +5,7 @@ import 'package:physics_ease_release/pages/units_list_page.dart';
 import 'package:physics_ease_release/pages/planets_page.dart';
 import 'package:physics_ease_release/pages/periodic_table_page.dart';
 import 'package:physics_ease_release/pages/greek_alphabet_page.dart';
+import 'package:physics_ease_release/pages/famous_physicists_page.dart';
 
 class DataPage extends StatefulWidget {
   const DataPage({super.key, required this.setGlobalAppBarVisibility});
@@ -137,6 +138,19 @@ class _DataPageState extends State<DataPage> {
               widget.setGlobalAppBarVisibility(false);
               await Navigator.of(context).push(
                 MaterialPageRoute(builder: (ctx) => GreekAlphabetPage()),
+              );
+              widget.setGlobalAppBarVisibility(true);
+            },
+          ),
+          _buildToolCard(
+            context: context,
+            title: 'Fisici',
+            subtitle: 'Scopri la vita e le scoperte dei grandi della fisica',
+            icon: Icons.school,
+            onTap: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.of(context).push(
+                MaterialPageRoute(builder: (ctx) => const FamousPhysicistsPage()),
               );
               widget.setGlobalAppBarVisibility(true);
             },
