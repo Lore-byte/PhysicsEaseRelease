@@ -97,6 +97,7 @@ flutter:
     - assets/planet/saturn.png
     - assets/planet/mercury.png
     - assets/planet/pluto.png
+    - assets/fisici/robert_hooke.jpg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
