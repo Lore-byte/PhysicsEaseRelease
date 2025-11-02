@@ -22,16 +22,20 @@ class FloatingTopBar extends StatelessWidget {
   final bool showShare;
   final VoidCallback? onSharePressed;
 
-  //Filtra
+  // Filtra
   final bool showFilter;
   final bool isFilterActive;
   final VoidCallback? onFilterPressed;
+
+  // Ordinamento
+  final bool showOrdinamento;
+  final IconData? ordinamentoIcon;
+  final VoidCallback? onOrdinamentoPressed;
 
   // Grafici
   final bool showCharts;
   final bool isChartsVisible;
   final VoidCallback? onChartsPressed;
-
 
   const FloatingTopBar({
     super.key,
@@ -44,6 +48,9 @@ class FloatingTopBar extends StatelessWidget {
     this.showFilter = false,
     this.isFilterActive = false,
     this.onFilterPressed,
+    this.showOrdinamento = false,
+    this.ordinamentoIcon,
+    this.onOrdinamentoPressed,
     this.showCharts = false,
     this.isChartsVisible = false,
     this.onChartsPressed,
@@ -150,6 +157,21 @@ class FloatingTopBar extends StatelessWidget {
       );
     }
 
+    // Ordinamento
+    if (showOrdinamento) {
+      right.add(
+        IconButton.filledTonal(
+          style: IconButton.styleFrom(
+            shape: const CircleBorder(),
+          ),
+          icon: Icon(
+            ordinamentoIcon ?? Icons.arrow_upward,
+          ),
+          onPressed: onOrdinamentoPressed,
+        ),
+      );
+    }
+
     // Preferiti
     if (showFavorite) {
       right.add(
@@ -172,7 +194,7 @@ class FloatingTopBar extends StatelessWidget {
       );
     }
 
-    //Filtra
+    // Filtra
     if (showFilter) {
       right.add(
         IconButton.filledTonal(
