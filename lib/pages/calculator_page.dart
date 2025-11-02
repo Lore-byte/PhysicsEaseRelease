@@ -30,6 +30,9 @@ class _CalculatorPageState extends State<CalculatorPage> {
     _scrollController = ScrollController();
     _focusNode = FocusNode();
 
+    _expressionController.selection =
+        TextSelection.collapsed(offset: _expressionController.text.length);
+
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _focusNode.requestFocus();
     });
@@ -141,7 +144,15 @@ class _CalculatorPageState extends State<CalculatorPage> {
   void _onButtonPressed(String buttonText) {
     setState(() {
       final text = _expressionController.text;
-      final selection = _expressionController.selection;
+      TextSelection selection = _expressionController.selection;
+      if (!selection.isValid ||
+          selection.start < 0 ||
+          selection.end < 0 ||
+          selection.start > text.length ||
+          selection.end > text.length) {
+        selection = TextSelection.collapsed(offset: text.length);
+        _expressionController.selection = selection;
+      }
 
       void insertTextAtCursor(String insertText) {
         final newText = text.replaceRange(selection.start, selection.end, insertText);
@@ -170,6 +181,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
         _expressionController.text = '';
         _result = '0';
         _expressionFontSize = _maxFontSize;
+        _expressionController.selection = const TextSelection.collapsed(offset: 0);
         _focusNode.requestFocus();
       } else if (buttonText == 'DL') {
         if (selection.start > 0) {
