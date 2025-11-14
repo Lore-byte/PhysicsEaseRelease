@@ -14,6 +14,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
   String _result = '0';
   bool _isRadians = true;
   bool _showScientificButtons = false;
+  bool _showResult = false;
+  bool _showExpression = true;
 
   late TextEditingController _expressionController;
   late ScrollController _scrollController;
@@ -22,6 +24,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
   double _expressionFontSize = 52;
   final double _minFontSize = 24;
   final double _maxFontSize = 52;
+  bool _forcedMin = false;
+  final double _restoreMargin = 24.0;
 
   @override
   void initState() {
@@ -57,7 +61,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
     ['7', '8', '9', '×', '('],
     ['4', '5', '6', '-', ')'],
     ['1', '2', '3', '+', '^'],
-    ['0', '.', '=',], // The last row is now defined with just three buttons
+    ['0', '.', '='], // The last row is now defined with just three buttons
   ];
 
   final List<List<String>> _scientificButtonsLayout = [
@@ -115,13 +119,21 @@ class _CalculatorPageState extends State<CalculatorPage> {
     return formatted;
   }
 
+  // LOGICA AGGIORNATA: Riduzione graduale, poi scorrimento.
   void _adjustFontSize() {
     final text = _expressionController.text;
     if (text.isEmpty) {
-      _expressionFontSize = _maxFontSize;
+      // Caso base: ripristina dimensione massima e resetta il flag
+      if (_expressionFontSize != _maxFontSize || _forcedMin) {
+        setState(() {
+          _expressionFontSize = _maxFontSize;
+          _forcedMin = false;
+        });
+      }
       return;
     }
 
+    // 1. Misura il testo alla dimensione attuale del font
     final tp = TextPainter(
       text: TextSpan(text: text, style: TextStyle(fontSize: _expressionFontSize)),
       maxLines: 1,
@@ -130,15 +142,51 @@ class _CalculatorPageState extends State<CalculatorPage> {
     tp.layout();
 
     double maxWidth = MediaQuery.of(context).size.width - 32;
-    if (tp.width > maxWidth && _expressionFontSize > _minFontSize) {
-      setState(() {
-        _expressionFontSize = (_expressionFontSize - 2).clamp(_minFontSize, _maxFontSize);
+
+    // 2. Logica di Riduzione Graduale - DA AGGIUSTARE
+    if (tp.width >= maxWidth-20) {
+      _forcedMin = true; // Segnala che abbiamo raggiunto il minimo
+      _expressionFontSize = _minFontSize;
+      /*if (_expressionFontSize > _minFontSize) {
+        // Rimpicciolisce gradualmente (di 1 punto)
+        setState(() {
+          _expressionFontSize = (_expressionFontSize - 28).clamp(_minFontSize, _maxFontSize);
+          if (_expressionFontSize == _minFontSize) {
+            _forcedMin = true; // Segnala che abbiamo raggiunto il minimo
+          }
+        });
+      }*/
+
+      // 3. Forzamento Scorrimento (Quando il testo continua ad allungarsi o ha raggiunto il minimo)
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (_scrollController.hasClients) {
+          try {
+            _scrollController.jumpTo(_scrollController.position.maxScrollExtent);
+          } catch (_) {}
+        }
       });
-    } else if (tp.width < maxWidth && _expressionFontSize < _maxFontSize) {
-      setState(() {
-        _expressionFontSize = (_expressionFontSize + 2).clamp(_minFontSize, _maxFontSize);
-      });
+      return;
     }
+
+    // 4. Logica di Ripristino Graduale (Quando il testo si accorcia e c'è spazio)
+    // Se c'è spazio libero E il font non è al massimo, o se siamo in modalità forzata
+    if (tp.width < maxWidth && _expressionFontSize < _maxFontSize) {
+
+      // Controlla se c'è spazio sufficiente per ripristinare il font
+      if (!_forcedMin || tp.width < maxWidth - _restoreMargin) {
+        setState(() {
+          _expressionFontSize = (_expressionFontSize + 1).clamp(_minFontSize, _maxFontSize);
+          // Se abbiamo raggiunto il massimo, disattiviamo il flag forzato
+          if (_expressionFontSize == _maxFontSize) {
+            _forcedMin = false;
+          }
+        });
+      }
+    }
+  }
+
+  bool _isSmallScreen() {
+    return MediaQuery.of(context).size.width < 400;
   }
 
   void _onButtonPressed(String buttonText) {
@@ -164,23 +212,23 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
         _adjustFontSize();
 
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          if (_scrollController.hasClients && _expressionFontSize <= _minFontSize) {
-            final cursorOffset = _scrollController.position.maxScrollExtent *
-                (newCursorPosition / _expressionController.text.length);
-            _scrollController.jumpTo(cursorOffset.clamp(
-              _scrollController.position.minScrollExtent,
-              _scrollController.position.maxScrollExtent,
-            ));
-          }
-        });
+        if (_isSmallScreen()) {
+          _showResult = false;
+          _showExpression = true;
+        } else {
+          _showResult = true;
+          _showExpression = true;
+        }
       }
 
       if (buttonText == 'AC') {
         _expression = '';
         _expressionController.text = '';
         _result = '0';
+        _showResult = false;
+        _showExpression = true;
         _expressionFontSize = _maxFontSize;
+        _forcedMin = false; // Reset the flag
         _expressionController.selection = const TextSelection.collapsed(offset: 0);
         _focusNode.requestFocus();
       } else if (buttonText == 'DL') {
@@ -193,7 +241,15 @@ class _CalculatorPageState extends State<CalculatorPage> {
         }
         if (_expressionController.text.isEmpty) {
           _result = '0';
-          _expressionFontSize = _maxFontSize;
+        }
+        _adjustFontSize();
+
+        if (_isSmallScreen()) {
+          _showResult = false;
+          _showExpression = true;
+        } else {
+          _showResult = true;
+          _showExpression = true;
         }
       } else if (buttonText == '=') {
         try {
@@ -262,6 +318,15 @@ class _CalculatorPageState extends State<CalculatorPage> {
             formattedResult = _formatDecimal(numericResultDouble);
           }
           _result = formattedResult;
+
+          // On small screens after =, show only result
+          if (_isSmallScreen()) {
+            _showExpression = false;
+            _showResult = true;
+          } else {
+            _showExpression = true;
+            _showResult = true;
+          }
         } catch (e) {
           _result = 'Errore';
           print('Errore di calcolo: $e');
@@ -348,43 +413,62 @@ class _CalculatorPageState extends State<CalculatorPage> {
                     ),
                   ),
                   const SizedBox(height: 8),
-                  Flexible(
-                    child: TextField(
-                      controller: _expressionController,
-                      focusNode: _focusNode,
-                      autofocus: true,
-                      readOnly: true,
-                      textAlign: TextAlign.right,
-                      style: TextStyle(
-                        fontSize: _expressionFontSize,
-                        color: colorScheme.onSurface,
-                        fontWeight: FontWeight.w300,
-                      ),
-                      decoration: const InputDecoration(
-                        border: InputBorder.none,
-                        isDense: true,
-                      ),
-                      maxLines: 1,
-                      showCursor: true,
-                      cursorColor: colorScheme.primary,
-                      scrollController: _scrollController,
+                  // Expression - expands when result is hidden on small screens
+                  Expanded(
+                    child: AnimatedSwitcher(
+                      duration: const Duration(milliseconds: 150),
+                      transitionBuilder: (child, animation) => FadeTransition(opacity: animation, child: child),
+                      child: _showExpression
+                          ? Align(
+                        key: const ValueKey('expr'),
+                        alignment: Alignment.bottomRight,
+                        child: TextField(
+                          controller: _expressionController,
+                          focusNode: _focusNode,
+                          autofocus: true,
+                          readOnly: true,
+                          textAlign: TextAlign.right,
+                          style: TextStyle(
+                            fontSize: _expressionFontSize,
+                            color: colorScheme.onSurface,
+                            fontWeight: FontWeight.w300,
+                          ),
+                          decoration: const InputDecoration(
+                            border: InputBorder.none,
+                            isDense: true,
+                          ),
+                          maxLines: 1, // Essenziale per attivare lo scorrimento orizzontale
+                          showCursor: true,
+                          cursorColor: colorScheme.primary,
+                          scrollController: _scrollController,
+                        ),
+                      )
+                          : SizedBox(key: const ValueKey('no_expr'), height: _maxFontSize + 12),
                     ),
                   ),
-                  const SizedBox(height: 10),
-                  Flexible(
-                    child: FittedBox(
-                      fit: BoxFit.scaleDown,
-                      alignment: Alignment.bottomRight,
-                      child: Text(
-                        _result,
-                        style: TextStyle(
-                          fontSize: 38,
-                          color: colorScheme.primary,
-                          fontWeight: FontWeight.w300,
+                  // Result - shown only after = on small screens or while typing on large screens
+                  AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 150),
+                    transitionBuilder: (child, animation) => FadeTransition(opacity: animation, child: child),
+                    child: _showResult
+                        ? Padding(
+                      key: const ValueKey('result'),
+                      padding: const EdgeInsets.only(top: 8),
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.bottomRight,
+                        child: Text(
+                          _result,
+                          style: TextStyle(
+                            fontSize: 38,
+                            color: colorScheme.primary,
+                            fontWeight: FontWeight.w300,
+                          ),
+                          textAlign: TextAlign.right,
                         ),
-                        textAlign: TextAlign.right,
                       ),
-                    ),
+                    )
+                        : const SizedBox.shrink(key: ValueKey('no_result')),
                   ),
                 ],
               ),
