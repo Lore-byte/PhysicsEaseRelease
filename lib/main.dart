@@ -39,19 +39,18 @@ void main() async {
 
   // Calcola la shortestSide logica del display principale (senza MediaQuery)
   final view = WidgetsBinding.instance.platformDispatcher.views.first;
-  final shortestLogicalSide = view.physicalSize.shortestSide / view.devicePixelRatio;
+  final shortestLogicalSide =
+      view.physicalSize.shortestSide / view.devicePixelRatio;
   final isTablet = shortestLogicalSide >= 600; // soglia consigliata per tablet
 
   await SystemChrome.setPreferredOrientations(
     isTablet
         ? <DeviceOrientation>[
-      DeviceOrientation.portraitUp,
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.landscapeRight,
-    ]
-        : <DeviceOrientation>[
-      DeviceOrientation.portraitUp,
-    ],
+            DeviceOrientation.portraitUp,
+            DeviceOrientation.landscapeLeft,
+            DeviceOrientation.landscapeRight,
+          ]
+        : <DeviceOrientation>[DeviceOrientation.portraitUp],
   );
 
   runApp(const MyApp());
@@ -101,6 +100,8 @@ class _MyAppState extends State<MyApp> {
     GlobalKey<NavigatorState>(),
   ];
 
+  late final List<bool> _tabAppBarVisibility;
+
   // List of main pages
   late final List<Widget> _pages;
 
@@ -118,6 +119,8 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
+    _tabAppBarVisibility = List<bool>.filled(_navItems.length, true);
+
     // Load all app data and preferences when app starts
     _loadAllFormulasAndUserFormulas();
     _loadFavorites();
@@ -249,11 +252,16 @@ class _MyAppState extends State<MyApp> {
 
   // Controls whether to show/hide global AppBar
   void _setGlobalAppBarVisibility(bool visible) {
-    if (_showGlobalAppBar != visible) {
-      setState(() {
-        _showGlobalAppBar = visible;
-      });
+    final currentIndex = _selectedIndex;
+    if (_tabAppBarVisibility[currentIndex] == visible &&
+        _showGlobalAppBar == visible) {
+      return;
     }
+
+    setState(() {
+      _tabAppBarVisibility[currentIndex] = visible;
+      _showGlobalAppBar = visible;
+    });
   }
 
   // Updates pages when data or theme changes
@@ -347,24 +355,23 @@ class _MyAppState extends State<MyApp> {
 
   // Handles navigation bar taps
   void _onItemTapped(int index) {
-    setState(() {
-      FocusScope.of(context).unfocus(); // Hide keyboard
-      if (_selectedIndex == index) {
-        // If already on the same tab, return to root
-        _navigatorKeys[index].currentState?.popUntil((route) => route.isFirst);
-        _setGlobalAppBarVisibility(true);
-      } else {
-        // Reset navigation stacks of all other tabs
-        for (int i = 0; i < _navigatorKeys.length; i++) {
-          if (i != index) {
-            _navigatorKeys[i].currentState?.popUntil((route) => route.isFirst);
-          }
-        }
-        _setGlobalAppBarVisibility(true);
-        _selectedIndex = index;
+    FocusScope.of(context).unfocus();
+
+    if (_selectedIndex == index) {
+      _navigatorKeys[index].currentState?.popUntil((route) => route.isFirst);
+
+      if (!_tabAppBarVisibility[index] || !_showGlobalAppBar) {
+        setState(() {
+          _tabAppBarVisibility[index] = true;
+          _showGlobalAppBar = true;
+        });
       }
-      _searchBarVisible.value = false; // Hide search bar when changing tab
-    });
+    } else {
+      setState(() {
+        _selectedIndex = index;
+        _showGlobalAppBar = _tabAppBarVisibility[index];
+      });
+    }
   }
 
   // Returns the AppBar title based on the current tab index
@@ -419,10 +426,7 @@ class _MyAppState extends State<MyApp> {
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 220),
               curve: Curves.easeOutCubic,
-              margin: EdgeInsets.only(
-                right: 4,
-                left: 4,
-              ),
+              margin: EdgeInsets.only(right: 4, left: 4),
               decoration: BoxDecoration(
                 color: isSelected ? colorScheme.primary : Colors.transparent,
                 borderRadius: BorderRadius.circular(22),
