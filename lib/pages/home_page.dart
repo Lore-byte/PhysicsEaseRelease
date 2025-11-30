@@ -100,23 +100,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   @override
   void didUpdateWidget(covariant HomePage oldWidget) {
     super.didUpdateWidget(oldWidget);
-    // If formulas or favorites change, re-filter them
     if (widget.allFormulas != oldWidget.allFormulas ||
         widget.favoriteIds != oldWidget.favoriteIds) {
       _filterFormulas();
-    }
-  }
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    // When dependencies change, check if the current route is active
-    final currentRoute = ModalRoute.of(context);
-    if (currentRoute != null && currentRoute.isCurrent) {
-      // If user navigates back and search was open, reset it
-      if (_searchController.text.isNotEmpty || _searchFocusNode.hasFocus) {
-        _resetSearchAndFocus();
-      }
     }
   }
 

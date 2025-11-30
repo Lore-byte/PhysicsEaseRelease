@@ -34,8 +34,25 @@ import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 import 'package:flutter/services.dart';
 
 // Entry point of the app
-void main() {
-  // Runs the main widget of the app
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Calcola la shortestSide logica del display principale (senza MediaQuery)
+  final view = WidgetsBinding.instance.platformDispatcher.views.first;
+  final shortestLogicalSide =
+      view.physicalSize.shortestSide / view.devicePixelRatio;
+  final isTablet = shortestLogicalSide >= 600; // soglia consigliata per tablet
+
+  await SystemChrome.setPreferredOrientations(
+    isTablet
+        ? <DeviceOrientation>[
+            DeviceOrientation.portraitUp,
+            DeviceOrientation.landscapeLeft,
+            DeviceOrientation.landscapeRight,
+          ]
+        : <DeviceOrientation>[DeviceOrientation.portraitUp],
+  );
+
   runApp(const MyApp());
 }
 
@@ -83,15 +100,27 @@ class _MyAppState extends State<MyApp> {
     GlobalKey<NavigatorState>(),
   ];
 
+  late final List<bool> _tabAppBarVisibility;
+
   // List of main pages
   late final List<Widget> _pages;
 
   // Determines whether to show the global AppBar
   bool _showGlobalAppBar = true;
 
+  static const List<_BottomNavItemData> _navItems = [
+    _BottomNavItemData(icon: Icons.home, label: 'Home'),
+    _BottomNavItemData(icon: Icons.star, label: 'Preferiti'),
+    _BottomNavItemData(icon: Icons.calculate, label: 'Calcolatrice'),
+    _BottomNavItemData(icon: Icons.storage, label: 'Dati'),
+    _BottomNavItemData(icon: Icons.build, label: 'Strumenti'),
+  ];
+
   @override
   void initState() {
     super.initState();
+    _tabAppBarVisibility = List<bool>.filled(_navItems.length, true);
+
     // Load all app data and preferences when app starts
     _loadAllFormulasAndUserFormulas();
     _loadFavorites();
@@ -223,11 +252,16 @@ class _MyAppState extends State<MyApp> {
 
   // Controls whether to show/hide global AppBar
   void _setGlobalAppBarVisibility(bool visible) {
-    if (_showGlobalAppBar != visible) {
-      setState(() {
-        _showGlobalAppBar = visible;
-      });
+    final currentIndex = _selectedIndex;
+    if (_tabAppBarVisibility[currentIndex] == visible &&
+        _showGlobalAppBar == visible) {
+      return;
     }
+
+    setState(() {
+      _tabAppBarVisibility[currentIndex] = visible;
+      _showGlobalAppBar = visible;
+    });
   }
 
   // Updates pages when data or theme changes
@@ -321,24 +355,23 @@ class _MyAppState extends State<MyApp> {
 
   // Handles navigation bar taps
   void _onItemTapped(int index) {
-    setState(() {
-      FocusScope.of(context).unfocus(); // Hide keyboard
-      if (_selectedIndex == index) {
-        // If already on the same tab, return to root
-        _navigatorKeys[index].currentState?.popUntil((route) => route.isFirst);
-        _setGlobalAppBarVisibility(true);
-      } else {
-        // Reset navigation stacks of all other tabs
-        for (int i = 0; i < _navigatorKeys.length; i++) {
-          if (i != index) {
-            _navigatorKeys[i].currentState?.popUntil((route) => route.isFirst);
-          }
-        }
-        _setGlobalAppBarVisibility(true);
-        _selectedIndex = index;
+    FocusScope.of(context).unfocus();
+
+    if (_selectedIndex == index) {
+      _navigatorKeys[index].currentState?.popUntil((route) => route.isFirst);
+
+      if (!_tabAppBarVisibility[index] || !_showGlobalAppBar) {
+        setState(() {
+          _tabAppBarVisibility[index] = true;
+          _showGlobalAppBar = true;
+        });
       }
-      _searchBarVisible.value = false; // Hide search bar when changing tab
-    });
+    } else {
+      setState(() {
+        _selectedIndex = index;
+        _showGlobalAppBar = _tabAppBarVisibility[index];
+      });
+    }
   }
 
   // Returns the AppBar title based on the current tab index
@@ -378,45 +411,72 @@ class _MyAppState extends State<MyApp> {
           ),
         ],
       ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(35),
-        child: MediaQuery.removePadding(
-          context: context,
-          removeBottom: true,
-          child: SizedBox(
-            height: 70,
-            child: BottomNavigationBar(
-              items: const [
-                BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.star),
-                  label: 'Preferiti',
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      child: Row(
+        children: List.generate(_navItems.length, (index) {
+          final navItem = _navItems[index];
+          final bool isSelected = _selectedIndex == index;
+          final Color foregroundColor = isSelected
+              ? colorScheme.onPrimary
+              : colorScheme.onSurfaceVariant;
+          final int flex = isSelected ? 11 : 4;
+
+          return Flexible(
+            flex: flex,
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 220),
+              curve: Curves.easeOutCubic,
+              margin: EdgeInsets.only(right: 4, left: 4),
+              decoration: BoxDecoration(
+                color: isSelected ? colorScheme.primary : Colors.transparent,
+                borderRadius: BorderRadius.circular(22),
+              ),
+              child: Material(
+                color: Colors.transparent,
+                borderRadius: BorderRadius.circular(22),
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(22),
+                  splashColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  onTap: () => _onItemTapped(index),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 0,
+                      vertical: 10,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(navItem.icon, size: 24, color: foregroundColor),
+                        AnimatedSize(
+                          duration: const Duration(milliseconds: 220),
+                          curve: Curves.easeOutCubic,
+                          child: isSelected
+                              ? Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Text(
+                                    navItem.label,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.visible,
+                                    style: TextStyle(
+                                      color: foregroundColor,
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                )
+                              : const SizedBox.shrink(),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.calculate),
-                  label: 'Calcolatrice',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.storage),
-                  label: 'Dati',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.build),
-                  label: 'Strumenti',
-                ),
-              ],
-              currentIndex: _selectedIndex,
-              selectedItemColor: colorScheme.primary,
-              unselectedItemColor: colorScheme.onSurfaceVariant,
-              backgroundColor: Colors.transparent,
-              elevation: 0,
-              onTap: _onItemTapped,
-              type: BottomNavigationBarType.fixed,
-              selectedFontSize: 12,
-              unselectedFontSize: 11,
+              ),
             ),
-          ),
-        ),
+          );
+        }),
       ),
     );
   }
@@ -669,4 +729,11 @@ class _MyAppState extends State<MyApp> {
       ),
     );
   }
+}
+
+class _BottomNavItemData {
+  final IconData icon;
+  final String label;
+
+  const _BottomNavItemData({required this.icon, required this.label});
 }
