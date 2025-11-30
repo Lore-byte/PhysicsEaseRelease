@@ -30,13 +30,10 @@ class PeriodicTablePage extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
 
     if (element == null) {
-      return SizedBox(
+      return Container(
         width: cellSize,
         height: cellSize,
-        child: Container(
-          // Debugging colors
-          // color: Colors.grey.withOpacity(0.05),
-        ),
+        margin: const EdgeInsets.all(1),
       );
     }
 
@@ -321,8 +318,7 @@ class PeriodicTablePage extends StatelessWidget {
                       ),
                       Row(
                         children: [
-                          SizedBox(width: cellSize * 3),
-                          for (int x = 4; x <= 17; x++)
+                          for (int x = 0; x <= maxColumns; x++)
                             _buildElementCell(context, elementsByPosition['9-$x']),
                         ],
                       ),
@@ -333,8 +329,7 @@ class PeriodicTablePage extends StatelessWidget {
                       ),
                       Row(
                         children: [
-                          SizedBox(width: cellSize * 3),
-                          for (int x = 4; x <= 17; x++)
+                          for (int x = 0; x <= maxColumns; x++)
                             _buildElementCell(context, elementsByPosition['10-$x']),
                         ],
                       ),
