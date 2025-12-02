@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_avif: ^3.1.0
   flutter_math_fork: ^0.7.4
   share_plus: ^7.2.1
   shared_preferences: ^2.0.15
@@ -97,7 +98,29 @@ flutter:
     - assets/planet/saturn.png
     - assets/planet/mercury.png
     - assets/planet/pluto.png
-    - assets/fisici/robert_hooke.jpg
+    - assets/fisici/AbdusSalam.avif
+    - assets/fisici/AlbertEinstein.avif
+    - assets/fisici/CharlesAugustinDeCoulomb.avif
+    - assets/fisici/ChristiaanHuygens.avif
+    - assets/fisici/DanielBernoulli.avif
+    - assets/fisici/EnricoFermi.avif
+    - assets/fisici/ErnestRutherford.avif
+    - assets/fisici/ErwinSchrödinger.avif
+    - assets/fisici/HeinrichHertz.avif
+    - assets/fisici/HenryCavendish.avif
+    - assets/fisici/JamesClerkMaxwell.avif
+    - assets/fisici/LeonhardEuler.avif
+    - assets/fisici/MarieCurie.avif
+    - assets/fisici/MaxPlanck.avif
+    - assets/fisici/MichaelFaraday.avif
+    - assets/fisici/NielsBohr.avif
+    - assets/fisici/PaulDirac.avif
+    - assets/fisici/PeterHiggs.avif
+    - assets/fisici/RichardFeynman.avif
+    - assets/fisici/RobertHooke.avif
+    - assets/fisici/StevenWeinberg.avif
+    - assets/fisici/WernerHeisenberg.avif
+    - assets/fisici/WolfgangPauli.avif
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
