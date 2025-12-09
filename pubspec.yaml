@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 2.2.0+16
+version: 2.2.0+17
 
 environment:
   sdk: ^3.8.1
@@ -121,6 +121,35 @@ flutter:
     - assets/fisici/StevenWeinberg.avif
     - assets/fisici/WernerHeisenberg.avif
     - assets/fisici/WolfgangPauli.avif
+    - assets/fisici/Archimede.avif
+    - assets/fisici/IsaacNewton.avif
+    - assets/fisici/GalileoGalilei.avif
+    - assets/fisici/JohannesKepler.avif
+    - assets/fisici/EvangelistaTorricelli.avif
+    - assets/fisici/BlaisePascal.avif
+    - assets/fisici/RobertBoyle.avif
+    - assets/fisici/EtienneLouisMalus.avif
+    - assets/fisici/AndreMarieAmpere.avif
+    - assets/fisici/JeanBaptisteJosephFourier.avif
+    - assets/fisici/CarlFriedrichGauss.avif
+    - assets/fisici/JosephLouisGayLussac.avif
+    - assets/fisici/GeorgSimonOhm.avif
+    - assets/fisici/SadiCarnot.avif
+    - assets/fisici/FranzErnstNeumann.avif
+    - assets/fisici/HeinrichLenz.avif
+    - assets/fisici/JamesPrescottJoule.avif
+    - assets/fisici/GeorgeGabrielStokes.avif
+    - assets/fisici/RudolfClausius.avif
+    - assets/fisici/LordKelvin.avif
+    - assets/fisici/GustavRobertKirchhoff.avif
+    - assets/fisici/JosephStefan.avif
+    - assets/fisici/OsborneReynolds.avif
+    - assets/fisici/LudwigBoltzmann.avif
+    - assets/fisici/HendrikAntoonLorentz.avif
+    - assets/fisici/WilhelmWien.avif
+    - assets/fisici/LouisDeBroglie.avif
+    - assets/fisici/ArthurCompton.avif
+    - assets/fisici/JohnHenryPoynting.avif
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
