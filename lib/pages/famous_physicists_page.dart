@@ -308,6 +308,23 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
       'imageUrl': 'assets/fisici/EnricoFermi.avif',
     },
     {
+      'name': 'J. Robert Oppenheimer',
+      'period': '1904 – 1967',
+      'birthYear': 1904,
+      'bio':
+          'Teorico statunitense, guidò il laboratorio di Los Alamos nel Progetto Manhattan e contribuì alla fisica delle particelle e delle stelle compatte.',
+      'discoveries': [
+        'Direzione scientifica del Progetto Manhattan',
+        'Approssimazione Born-Oppenheimer per molecole complesse',
+        'Equazioni di Tolman-Oppenheimer-Volkoff per stelle di neutroni',
+      ],
+      'curiosities': [
+        'Citò la Bhagavadgita dicendo "Ora sono diventato Morte" dopo il Trinity Test.',
+        'Subì un celebre processo di revoca del nullaosta di sicurezza durante l\'era McCarthy.',
+      ],
+      'imageUrl': 'assets/fisici/JRobertOppenheimer.avif',
+    },
+    {
       'name': 'Richard Feynman',
       'period': '1918 – 1988',
       'birthYear': 1918,
@@ -361,6 +378,23 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
         'LHC osservò la particella nel 2012.',
       ],
       'imageUrl': 'assets/fisici/PeterHiggs.avif',
+    },
+    {
+      'name': 'Stephen Hawking',
+      'period': '1942 – 2018',
+      'birthYear': 1942,
+      'bio':
+          'Cosmologo britannico che studiò la natura delle singolarità e scoprì la radiazione termica emessa dai buchi neri, rendendo popolari i temi della cosmologia moderna.',
+      'discoveries': [
+        'Radiazione di Hawking dei buchi neri',
+        'Teoremi sulle singolarità con Penrose',
+        'Modello cosmologico senza confine',
+      ],
+      'curiosities': [
+        'Visse per oltre cinquant\'anni con la SLA comunicando tramite sintetizzatore vocale.',
+        'Il libro "A Brief History of Time" vendette milioni di copie, trasformandolo in un divulgatore di fama mondiale.',
+      ],
+      'imageUrl': 'assets/fisici/StephenHawking.avif',
     },
     {
       'name': 'Archimede',
@@ -720,7 +754,7 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
       'imageUrl': 'assets/fisici/GustavRobertKirchhoff.avif',
     },
     {
-      'name': 'Joseph Stefan',
+      'name': 'Josef Stefan',
       'period': '1835 – 1893',
       'birthYear': 1835,
       'bio':
@@ -786,6 +820,23 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
         'Presiedette il comitato scientifico della diga Afsluitdijk.',
       ],
       'imageUrl': 'assets/fisici/HendrikAntoonLorentz.avif',
+    },
+    {
+      'name': 'Nikola Tesla',
+      'period': '1856 – 1943',
+      'birthYear': 1856,
+      'bio':
+          'Inventore serbo-croato naturalizzato statunitense, rivoluzionò la distribuzione dell\'energia elettrica con sistemi a corrente alternata e dispositivi ad alta frequenza.',
+      'discoveries': [
+        'Sistemi polifase in corrente alternata',
+        'Bobina di Tesla e trasformatori ad alta tensione',
+        'Radiocomunicazioni e oscillatori ad alta frequenza',
+      ],
+      'curiosities': [
+        'Registrò centinaia di brevetti e organizzava dimostrazioni spettacolari con scariche luminose.',
+        'Sognava una rete globale di energia e informazione senza fili come la Wardenclyffe Tower.',
+      ],
+      'imageUrl': 'assets/fisici/NikolaTesla.avif',
     },
     {
       'name': 'Wilhelm Wien',
