@@ -187,7 +187,7 @@ class _GraphPageState extends State<GraphPage> {
         if (_functionControllers.isEmpty) {
           _addFunctionField(
             initialText:
-                _exampleFunctions[_random.nextInt(_exampleFunctions.length)],
+            _exampleFunctions[_random.nextInt(_exampleFunctions.length)],
             isPlaceholder: true,
           );
         } else {
@@ -222,22 +222,22 @@ class _GraphPageState extends State<GraphPage> {
 
     processedFunction = processedFunction.replaceAllMapped(
       RegExp(r'log10\(([^)]*)\)'),
-      (match) {
+          (match) {
         return 'ln(${match.group(1)})/ln(10)';
       },
     );
 
     processedFunction = processedFunction.replaceAllMapped(
       RegExp(r'(\d)([a-zA-Z(πe])'),
-      (match) => '${match.group(1)}*${match.group(2)}',
+          (match) => '${match.group(1)}*${match.group(2)}',
     );
     processedFunction = processedFunction.replaceAllMapped(
       RegExp(r'(\))([a-zAZ(πe])'),
-      (match) => '${match.group(1)}*${match.group(2)}',
+          (match) => '${match.group(1)}*${match.group(2)}',
     );
     processedFunction = processedFunction.replaceAllMapped(
       RegExp(r'([xπe])(sin|cos|tan|ln|exp|sqrt|abs|\()'),
-      (match) => '${match.group(1)}*${match.group(2)}',
+          (match) => '${match.group(1)}*${match.group(2)}',
     );
 
     return processedFunction;
@@ -283,13 +283,13 @@ class _GraphPageState extends State<GraphPage> {
               .replaceAll('ParserException: ', '');
           if (error.contains('Invalid syntax')) {
             _errorMessages[i] =
-                'Errore di sintassi: Controlla il formato. Usa * per la moltiplicazione esplicita (es. 2*x, x*sin(x)).';
+            'Errore di sintassi: Controlla il formato. Usa * per la moltiplicazione esplicita (es. 2*x, x*sin(x)).';
           } else if (error.contains('Undefined variable')) {
             _errorMessages[i] =
-                'Variabile non definita. Assicurati di usare solo \'x\'.';
+            'Variabile non definita. Assicurati di usare solo \'x\'.';
           } else if (error.contains('Undefined function')) {
             _errorMessages[i] =
-                'Funzione non definita o formato errato (es. sin(x), ln(x), log10(x)).';
+            'Funzione non definita o formato errato (es. sin(x), ln(x), log10(x)).';
           } else {
             _errorMessages[i] = 'Errore nel formato della funzione: $error.';
           }
@@ -415,10 +415,10 @@ class _GraphPageState extends State<GraphPage> {
   }
 
   Widget _buildKeypadButton(
-    String key,
-    Color backgroundColor,
-    Color textColor,
-  ) {
+      String key,
+      Color backgroundColor,
+      Color textColor,
+      ) {
     return Padding(
       padding: const EdgeInsets.all(3.0),
       child: ElevatedButton(
@@ -464,18 +464,18 @@ class _GraphPageState extends State<GraphPage> {
       } else if (key == 'x') {
         return colorScheme.errorContainer;
       } else if ([
-            'sin',
-            'cos',
-            'tan',
-            'log',
-            'ln',
-            'exp',
-            'sqrt',
-            'abs',
-            '!',
-            'π',
-            'e',
-          ].contains(key) &&
+        'sin',
+        'cos',
+        'tan',
+        'log',
+        'ln',
+        'exp',
+        'sqrt',
+        'abs',
+        '!',
+        'π',
+        'e',
+      ].contains(key) &&
           _showScientificKeys) {
         return colorScheme.tertiaryContainer;
       } else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
@@ -495,18 +495,18 @@ class _GraphPageState extends State<GraphPage> {
       } else if (key == 'x') {
         return colorScheme.onErrorContainer;
       } else if ([
-            'sin',
-            'cos',
-            'tan',
-            'log',
-            'ln',
-            'exp',
-            'sqrt',
-            'abs',
-            '!',
-            'π',
-            'e',
-          ].contains(key) &&
+        'sin',
+        'cos',
+        'tan',
+        'log',
+        'ln',
+        'exp',
+        'sqrt',
+        'abs',
+        '!',
+        'π',
+        'e',
+      ].contains(key) &&
           _showScientificKeys) {
         return colorScheme.onTertiaryContainer;
       } else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
@@ -773,7 +773,7 @@ class _GraphPageState extends State<GraphPage> {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             ...row.map(
-                              (key) => Expanded(
+                                  (key) => Expanded(
                                 child: _buildKeypadButton(
                                   key,
                                   getButtonColor(key),
@@ -784,7 +784,7 @@ class _GraphPageState extends State<GraphPage> {
                             if (row.length < 4)
                               ...List.generate(
                                 4 - row.length,
-                                (_) => const Expanded(child: SizedBox.shrink()),
+                                    (_) => const Expanded(child: SizedBox.shrink()),
                               ),
                           ],
                         ),
