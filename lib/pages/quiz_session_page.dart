@@ -349,7 +349,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                   context: context,
                   builder: (context) => AlertDialog(
                     title: const Text('Uscire dal quiz?'),
-                    content: const Text('I tuoi progressi andranno persi.'),
+                    content: const Text('I tuoi progressi andranno persi'),
                     actions: [
                       TextButton(
                         onPressed: () => Navigator.pop(context, false),
