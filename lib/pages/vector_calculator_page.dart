@@ -373,7 +373,7 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
             Expanded(
               child: TextField(
                 controller: xController,
-                keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                keyboardType: const TextInputType.numberWithOptions(decimal: true, signed: true),
                 decoration: const InputDecoration(
                   labelText: 'Componente X',
                   border: OutlineInputBorder(),
@@ -385,7 +385,7 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
             Expanded(
               child: TextField(
                 controller: yController,
-                keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                keyboardType: const TextInputType.numberWithOptions(decimal: true, signed: true),
                 decoration: const InputDecoration(
                   labelText: 'Componente Y',
                   border: OutlineInputBorder(),
@@ -398,7 +398,7 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
               Expanded(
                 child: TextField(
                   controller: zController,
-                  keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                  keyboardType: const TextInputType.numberWithOptions(decimal: true, signed: true),
                   decoration: const InputDecoration(
                     labelText: 'Componente Z',
                     border: OutlineInputBorder(),
