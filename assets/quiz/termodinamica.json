@@ -1,0 +1,84 @@
+{
+  "quiz": [
+    {
+      "id": "term_001",
+      "domanda": "Cosa misura la temperatura?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Temperatura",
+      "opzioni": [
+        "L'energia totale del sistema",
+        "L'energia cinetica media delle particelle",
+        "Il calore totale contenuto",
+        "La massa del sistema"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La temperatura è una misura dell'energia cinetica media delle particelle che costituiscono un sistema. Particelle più veloci corrispondono a temperature più alte.",
+      "difficolta": "facile",
+      "paroleChiave": ["temperatura", "energia cinetica", "particelle"]
+    },
+    {
+      "id": "term_002",
+      "domanda": "Quale principio afferma che il calore fluisce spontaneamente da un corpo più caldo a uno più freddo?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Principi",
+      "opzioni": [
+        "Principio zero",
+        "Primo principio",
+        "Secondo principio",
+        "Terzo principio"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il secondo principio della termodinamica stabilisce che il calore fluisce spontaneamente da corpi a temperatura maggiore verso corpi a temperatura minore, e che l'entropia di un sistema isolato tende ad aumentare.",
+      "difficolta": "medio",
+      "paroleChiave": ["secondo principio", "calore", "spontaneo", "entropia"]
+    },
+    {
+      "id": "term_003",
+      "domanda": "Quale trasformazione termodinamica mantiene costante la temperatura?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Trasformazioni",
+      "opzioni": [
+        "Isobara",
+        "Isocora",
+        "Isoterma",
+        "Adiabatica"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Una trasformazione isoterma avviene a temperatura costante. Isobara (pressione costante), isocora (volume costante), adiabatica (nessuno scambio di calore).",
+      "difficolta": "facile",
+      "paroleChiave": ["isoterma", "temperatura", "trasformazione"]
+    },
+    {
+      "id": "term_004",
+      "domanda": "Il primo principio della termodinamica esprime:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Principi",
+      "opzioni": [
+        "La conservazione dell'energia",
+        "L'aumento dell'entropia",
+        "L'equilibrio termico",
+        "La dilatazione termica"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il primo principio della termodinamica è l'espressione del principio di conservazione dell'energia: ΔU = Q - W, dove ΔU è la variazione di energia interna, Q il calore scambiato e W il lavoro compiuto.",
+      "difficolta": "medio",
+      "paroleChiave": ["primo principio", "energia", "conservazione"]
+    },
+    {
+      "id": "term_005",
+      "domanda": "Lo zero assoluto corrisponde a:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Temperatura",
+      "opzioni": [
+        "0°C",
+        "-273.15°C",
+        "-100°C",
+        "-459°F"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Lo zero assoluto corrisponde a -273.15°C o 0 K (kelvin). È la temperatura teorica più bassa possibile, alla quale il moto termico delle particelle è minimo.",
+      "difficolta": "facile",
+      "paroleChiave": ["zero assoluto", "kelvin", "temperatura"]
+    }
+  ]
+}

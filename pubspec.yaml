@@ -84,6 +84,23 @@ flutter:
     - assets/relativita.json
     - assets/fisicaquantistica.json
     - assets/fisicanucleare.json
+    # Quiz JSON files
+    - assets/quiz/kinematica.json
+    - assets/quiz/dinamica.json
+    - assets/quiz/termodinamica.json
+    - assets/quiz/lavoro.json
+    - assets/quiz/elettrostatica.json
+    - assets/quiz/elettromagnetismo.json
+    - assets/quiz/ottica.json
+    - assets/quiz/fluidi.json
+    - assets/quiz/gravitazione.json
+    - assets/quiz/qmoto.json
+    - assets/quiz/momentoangolare.json
+    - assets/quiz/circuiti.json
+    - assets/quiz/magnetismo.json
+    - assets/quiz/relativita.json
+    - assets/quiz/fisicaquantistica.json
+    - assets/quiz/fisicanucleare.json
     - assets/my_logo.png
     - assets/my_logo_dark.png
     - assets/my_logo_light.png

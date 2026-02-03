@@ -1,0 +1,164 @@
+{
+  "quiz": [
+    {
+      "id": "kin_001",
+      "domanda": "Quale formula descrive il moto rettilineo uniforme?",
+      "categoria": "Kinematica",
+      "sottocategoria": "Moto rettilineo",
+      "opzioni": [
+        "s = v × t",
+        "s = ½at²",
+        "v = v₀ + at",
+        "F = ma"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel moto rettilineo uniforme la velocità è costante, quindi lo spazio percorso è dato dal prodotto della velocità per il tempo: s = v × t",
+      "difficolta": "facile",
+      "paroleChiave": ["mru", "velocita", "costante", "spazio"]
+    },
+    {
+      "id": "kin_002",
+      "domanda": "Nel moto uniformemente accelerato, quale grandezza rimane costante?",
+      "categoria": "Kinematica",
+      "sottocategoria": "Moto accelerato",
+      "opzioni": [
+        "La velocità",
+        "L'accelerazione",
+        "Lo spazio percorso",
+        "Il tempo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel moto uniformemente accelerato, per definizione, l'accelerazione rimane costante nel tempo, mentre la velocità varia linearmente.",
+      "difficolta": "facile",
+      "paroleChiave": ["accelerazione", "mua", "costante"]
+    },
+    {
+      "id": "kin_003",
+      "domanda": "Un oggetto viene lanciato verticalmente verso l'alto. Quale affermazione è corretta?",
+      "categoria": "Kinematica",
+      "sottocategoria": "Moto verticale",
+      "opzioni": [
+        "L'accelerazione è zero nel punto più alto",
+        "La velocità è massima nel punto più alto",
+        "L'accelerazione è sempre g verso il basso",
+        "La velocità è costante durante la salita"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Durante tutto il moto, l'accelerazione di gravità g è sempre diretta verso il basso ed ha valore costante (circa 9.8 m/s²), anche nel punto più alto dove la velocità è zero.",
+      "difficolta": "medio",
+      "paroleChiave": ["gravita", "lancio", "verticale", "accelerazione"]
+    },
+    {
+      "id": "kin_004",
+      "domanda": "In un moto circolare uniforme, quale grandezza è costante?",
+      "categoria": "Kinematica",
+      "sottocategoria": "Moto circolare",
+      "opzioni": [
+        "La velocità vettoriale",
+        "Il modulo della velocità",
+        "L'accelerazione totale",
+        "La posizione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel moto circolare uniforme, il modulo della velocità (la rapidità) rimane costante, mentre la direzione della velocità cambia continuamente. L'accelerazione centripeta è presente e diretta verso il centro.",
+      "difficolta": "medio",
+      "paroleChiave": ["circolare", "uniforme", "velocita", "modulo"]
+    },
+    {
+      "id": "kin_005",
+      "domanda": "Un'auto parte da ferma e raggiunge 100 km/h in 10 secondi. Qual è l'accelerazione media?",
+      "categoria": "Kinematica",
+      "sottocategoria": "Moto accelerato",
+      "opzioni": [
+        "2.78 m/s²",
+        "10 m/s²",
+        "27.8 m/s²",
+        "100 m/s²"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Prima convertiamo 100 km/h in m/s: 100 km/h = 27.8 m/s. L'accelerazione media è a = Δv/Δt = 27.8 m/s / 10 s = 2.78 m/s²",
+      "difficolta": "medio",
+      "paroleChiave": ["accelerazione", "conversione", "unita", "media"]
+    },
+    {
+      "id": "kin_006",
+      "domanda": "Quale delle seguenti grandezze NON è un vettore?",
+      "categoria": "Kinematica",
+      "sottocategoria": "Grandezze vettoriali",
+      "opzioni": [
+        "Velocità",
+        "Accelerazione",
+        "Spostamento",
+        "Rapidità"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "La rapidità è una grandezza scalare (solo modulo), mentre velocità, accelerazione e spostamento sono grandezze vettoriali (hanno modulo, direzione e verso).",
+      "difficolta": "facile",
+      "paroleChiave": ["vettore", "scalare", "rapidita", "velocita"]
+    },
+    {
+      "id": "kin_007",
+      "domanda": "In un moto parabolico, trascurando l'attrito, come varia la componente orizzontale della velocità?",
+      "categoria": "Kinematica",
+      "sottocategoria": "Moto parabolico",
+      "opzioni": [
+        "Aumenta costantemente",
+        "Diminuisce costantemente",
+        "Rimane costante",
+        "Prima aumenta poi diminuisce"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel moto parabolico senza attrito, la componente orizzontale della velocità rimane costante poiché non agiscono forze orizzontali. Solo la componente verticale varia a causa della gravità.",
+      "difficolta": "medio",
+      "paroleChiave": ["parabolico", "proiettile", "componente", "orizzontale"]
+    },
+    {
+      "id": "kin_008",
+      "domanda": "Quale formula esprime correttamente l'accelerazione centripeta?",
+      "categoria": "Kinematica",
+      "sottocategoria": "Moto circolare",
+      "opzioni": [
+        "a = v/r",
+        "a = v²/r",
+        "a = vr",
+        "a = r/v²"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'accelerazione centripeta in un moto circolare è data da a = v²/r, dove v è la velocità tangenziale e r è il raggio della traiettoria circolare.",
+      "difficolta": "facile",
+      "paroleChiave": ["centripeta", "circolare", "accelerazione", "raggio"]
+    },
+    {
+      "id": "kin_009",
+      "domanda": "Due corpi cadono dalla stessa altezza: uno ha massa 10 kg, l'altro 1 kg. Quale arriva prima al suolo (trascurando l'attrito)?",
+      "categoria": "Kinematica",
+      "sottocategoria": "Caduta libera",
+      "opzioni": [
+        "Il corpo più pesante",
+        "Il corpo più leggero",
+        "Arrivano contemporaneamente",
+        "Dipende dalla forma"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In assenza di attrito dell'aria, tutti i corpi cadono con la stessa accelerazione (g) indipendentemente dalla loro massa, quindi arrivano al suolo contemporaneamente. Questo fu dimostrato da Galileo.",
+      "difficolta": "medio",
+      "paroleChiave": ["caduta", "libera", "gravita", "massa", "galileo"]
+    },
+    {
+      "id": "kin_010",
+      "domanda": "Un oggetto si muove con velocità costante di 20 m/s per 5 secondi. Quanto spazio percorre?",
+      "categoria": "Kinematica",
+      "sottocategoria": "Moto rettilineo",
+      "opzioni": [
+        "4 m",
+        "25 m",
+        "100 m",
+        "400 m"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Con velocità costante, lo spazio è s = v × t = 20 m/s × 5 s = 100 m",
+      "difficolta": "facile",
+      "paroleChiave": ["spazio", "velocita", "tempo", "uniforme"]
+    }
+  ]
+}
