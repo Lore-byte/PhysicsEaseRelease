@@ -4,6 +4,7 @@ import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:physics_ease_release/models/formula.dart';
 import 'package:physics_ease_release/pages/category_formulas_page.dart';
 import 'package:physics_ease_release/pages/formula_detail_page.dart';
+import 'package:physics_ease_release/pages/quiz_page.dart';
 
 // HomePage is a StatefulWidget that represents the main screen of the app
 class HomePage extends StatefulWidget {
@@ -210,12 +211,14 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     }
 
     // Build the page layout
-    return Column(
+    return Stack(
       children: [
-        // Search bar visibility controlled by ValueListenableBuilder
-        ValueListenableBuilder<bool>(
-          valueListenable: widget.searchBarVisible,
-          builder: (context, visible, _) {
+        Column(
+          children: [
+            // Search bar visibility controlled by ValueListenableBuilder
+            ValueListenableBuilder<bool>(
+              valueListenable: widget.searchBarVisible,
+              builder: (context, visible, _) {
             if (!visible) {
               // When search bar closes, clear query and focus
               if (_searchQuery.isNotEmpty || _searchFocusNode.hasFocus) {
@@ -392,6 +395,46 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
               ),
             );
           },
+        ),
+          ],
+        ),
+        
+        Positioned(
+          right: 16,
+          bottom: 100,
+          child: FloatingActionButton.extended(
+            heroTag: 'quiz_fab',
+            tooltip: 'Apri Quiz',
+            onPressed: () async {
+              widget.setGlobalAppBarVisibility(false);
+              await Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => QuizPage(
+                    setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
+                  ),
+                ),
+              );
+              widget.setGlobalAppBarVisibility(true);
+            },
+            icon: const Icon(Icons.quiz_rounded, size: 22),
+            label: Text(
+              'Quiz',
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w700,
+                letterSpacing: 0.2,
+                color: widget.colorScheme.onPrimary,
+              ),
+            ),
+            backgroundColor: widget.colorScheme.primary,
+            foregroundColor: widget.colorScheme.onPrimary,
+            elevation: 6,
+            focusElevation: 8,
+            hoverElevation: 8,
+            highlightElevation: 10,
+            shape: const StadiumBorder(),
+          ),
         ),
       ],
     );

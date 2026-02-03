@@ -1,0 +1,84 @@
+{
+  "quiz": [
+    {
+      "id": "din_001",
+      "domanda": "Quale legge di Newton stabilisce che F = ma?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Leggi di Newton",
+      "opzioni": [
+        "Prima legge (inerzia)",
+        "Seconda legge",
+        "Terza legge (azione-reazione)",
+        "Legge di gravitazione universale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La seconda legge di Newton stabilisce che la forza risultante su un corpo è uguale al prodotto della sua massa per l'accelerazione: F = ma",
+      "difficolta": "facile",
+      "paroleChiave": ["newton", "forza", "massa", "accelerazione"]
+    },
+    {
+      "id": "din_002",
+      "domanda": "Secondo la terza legge di Newton, se un corpo A esercita una forza su B:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Leggi di Newton",
+      "opzioni": [
+        "B esercita su A una forza uguale e concorde",
+        "B esercita su A una forza uguale e opposta",
+        "B non esercita alcuna forza su A",
+        "B esercita una forza doppia su A"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La terza legge di Newton (azione-reazione) afferma che ad ogni azione corrisponde una reazione uguale e contraria. Le due forze hanno stesso modulo, stessa direzione ma verso opposto.",
+      "difficolta": "facile",
+      "paroleChiave": ["azione", "reazione", "terza legge", "opposta"]
+    },
+    {
+      "id": "din_003",
+      "domanda": "Un corpo di 5 kg viene spinto con una forza di 20 N. Qual è la sua accelerazione?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Seconda legge",
+      "opzioni": [
+        "4 m/s²",
+        "15 m/s²",
+        "25 m/s²",
+        "100 m/s²"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Dalla seconda legge di Newton F = ma, ricaviamo a = F/m = 20 N / 5 kg = 4 m/s²",
+      "difficolta": "medio",
+      "paroleChiave": ["calcolo", "accelerazione", "forza", "massa"]
+    },
+    {
+      "id": "din_004",
+      "domanda": "La forza di attrito statico è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito",
+      "opzioni": [
+        "Sempre uguale a μₛ × N",
+        "Sempre minore di μₛ × N",
+        "Minore o uguale a μₛ × N",
+        "Indipendente dalla forza normale"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La forza di attrito statico può assumere valori compresi tra zero e un valore massimo dato da fₛ,max = μₛ × N, dove μₛ è il coefficiente di attrito statico e N la forza normale.",
+      "difficolta": "medio",
+      "paroleChiave": ["attrito", "statico", "coefficiente", "normale"]
+    },
+    {
+      "id": "din_005",
+      "domanda": "In assenza di forze esterne, un corpo in movimento:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Prima legge",
+      "opzioni": [
+        "Si ferma gradualmente",
+        "Mantiene velocità costante",
+        "Accelera costantemente",
+        "Cambia direzione casualmente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La prima legge di Newton (principio di inerzia) afferma che un corpo mantiene il suo stato di quiete o di moto rettilineo uniforme finché non interviene una forza esterna.",
+      "difficolta": "facile",
+      "paroleChiave": ["inerzia", "prima legge", "velocita costante"]
+    }
+  ]
+}
