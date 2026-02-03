@@ -1,7 +1,7 @@
 // lib/pages/help_page.dart
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/pages/onboarding_page.dart';
-import 'package:url_launcher/url_launcher.dart';
+//import 'package:url_launcher/url_launcher.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class HelpPage extends StatelessWidget {

@@ -132,8 +132,8 @@ class _UnitsListPageState extends State<UnitsListPage> {
                           setState(() {});
                         },
                         activeColor: colorScheme.secondary,
-                        inactiveThumbColor: colorScheme.onSurface.withOpacity(0.5),
-                        inactiveTrackColor: colorScheme.onSurface.withOpacity(0.2),
+                        inactiveThumbColor: colorScheme.onSurface.withValues(alpha: 0.5),
+                        inactiveTrackColor: colorScheme.onSurface.withValues(alpha: 0.2),
                       ),
                     ],
                   ),
@@ -229,11 +229,11 @@ class _UnitsListPageState extends State<UnitsListPage> {
                               unit['description']!,
                               style: TextStyle(
                                 fontSize: 14,
-                                color: isFundamental ? colorScheme.secondary.withOpacity(0.9) : colorScheme.onSurfaceVariant,
+                                color: isFundamental ? colorScheme.secondary.withValues(alpha: 0.9) : colorScheme.onSurfaceVariant,
                               ),
                             ),
                             if (unitList.last != unit)
-                              Divider(color: colorScheme.outlineVariant.withOpacity(0.5), height: 16),
+                              Divider(color: colorScheme.outlineVariant.withValues(alpha: 0.5), height: 16),
                           ],
                         ),
                       );

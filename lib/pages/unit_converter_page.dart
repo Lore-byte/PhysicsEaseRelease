@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
+//import 'dart:math' as math;
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class Unit {
@@ -152,6 +152,8 @@ final List<UnitCategory> _unitCategories = [
 ];
 
 class UnitConverterPage extends StatefulWidget {
+  const UnitConverterPage({super.key});
+
   @override
   State<UnitConverterPage> createState() => _UnitConverterPageState();
 }
@@ -340,7 +342,7 @@ class _UnitConverterPageState extends State<UnitConverterPage> with SingleTicker
                             decoration: InputDecoration(
                               hintText: 'Inserisci valore',
                               border: InputBorder.none,
-                              hintStyle: TextStyle(color: colorScheme.onSurface.withOpacity(0.5)),
+                              hintStyle: TextStyle(color: colorScheme.onSurface.withValues(alpha: 0.5)),
                             ),
                             onChanged: (_) => _convert(),
                           ),
@@ -349,7 +351,7 @@ class _UnitConverterPageState extends State<UnitConverterPage> with SingleTicker
                           padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8.0),
-                            border: Border.all(color: colorScheme.outline.withOpacity(0.3), width: 1.0),
+                            border: Border.all(color: colorScheme.outline.withValues(alpha: 0.3), width: 1.0),
                           ),
                           child: DropdownButtonHideUnderline(
                             child: DropdownButton<Unit>(
@@ -403,7 +405,7 @@ class _UnitConverterPageState extends State<UnitConverterPage> with SingleTicker
                             decoration: InputDecoration(
                               hintText: 'Risultato',
                               border: InputBorder.none,
-                              hintStyle: TextStyle(color: colorScheme.onSurface.withOpacity(0.5)),
+                              hintStyle: TextStyle(color: colorScheme.onSurface.withValues(alpha: 0.5)),
                             ),
                           ),
                         ),
@@ -411,7 +413,7 @@ class _UnitConverterPageState extends State<UnitConverterPage> with SingleTicker
                           padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8.0),
-                            border: Border.all(color: colorScheme.outline.withOpacity(0.3), width: 1.0),
+                            border: Border.all(color: colorScheme.outline.withValues(alpha: 0.3), width: 1.0),
                           ),
                           child: DropdownButtonHideUnderline(
                             child: DropdownButton<Unit>(
@@ -486,7 +488,7 @@ class ConversionTable extends StatelessWidget {
   final Unit fromUnit;
   final Unit toUnit;
 
-  ConversionTable({
+  const ConversionTable({super.key,
     required this.selectedCategory,
     required this.fromUnit,
     required this.toUnit,
@@ -579,7 +581,7 @@ class ConversionTable extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 14,
                   fontStyle: FontStyle.italic,
-                  color: colorScheme.onSurface.withOpacity(0.7),
+                  color: colorScheme.onSurface.withValues(alpha: 0.7),
                 ),
               ),
               const SizedBox(height: 10),
@@ -590,17 +592,17 @@ class ConversionTable extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: DataTable(
                       columnSpacing: 20,
-                      dataRowColor: MaterialStateProperty.resolveWith<Color?>(
-                            (Set<MaterialState> states) {
-                          if (states.contains(MaterialState.selected)) {
-                            return colorScheme.primary.withOpacity(0.08);
+                      dataRowColor: WidgetStateProperty.resolveWith<Color?>(
+                            (Set<WidgetState> states) {
+                          if (states.contains(WidgetState.selected)) {
+                            return colorScheme.primary.withValues(alpha: 0.08);
                           }
                           return null;
                         },
                       ),
-                      headingRowColor: MaterialStateProperty.resolveWith<Color?>(
-                            (Set<MaterialState> states) {
-                          return colorScheme.primaryContainer.withOpacity(0.5);
+                      headingRowColor: WidgetStateProperty.resolveWith<Color?>(
+                            (Set<WidgetState> states) {
+                          return colorScheme.primaryContainer.withValues(alpha: 0.5);
                         },
                       ),
                       columns: [

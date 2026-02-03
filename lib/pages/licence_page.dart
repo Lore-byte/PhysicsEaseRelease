@@ -11,7 +11,7 @@ class LicencePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final currentColorScheme = Theme.of(context).colorScheme;
 
-    final Uri _url = Uri.parse(
+    final Uri url = Uri.parse(
         'https://sites.google.com/view/physicsease-license/home');
 
     return Scaffold(
@@ -62,9 +62,10 @@ class LicencePage extends StatelessWidget {
                     ),
                     child: ElevatedButton.icon(
                       onPressed: () async {
-                        if (await canLaunchUrl(_url)) {
-                          await launchUrl(_url, mode: LaunchMode.externalApplication);
+                        if (await canLaunchUrl(url)) {
+                          await launchUrl(url, mode: LaunchMode.externalApplication);
                         } else {
+                          if(!context.mounted) return;
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(content: Text('Impossibile aprire il link.')),
                           );

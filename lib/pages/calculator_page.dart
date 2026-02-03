@@ -269,7 +269,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
             );
           }
 
-          Parser p = Parser();
+          GrammarParser p = GrammarParser();
           Expression exp = p.parse(finalExpression);
           ContextModel cm = ContextModel();
           cm.bindVariable(Variable('E'), Number(math.e));
@@ -311,7 +311,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
           }
         } catch (e) {
           _result = 'Errore';
-          print('Errore di calcolo: $e');
+          debugPrint('Errore di calcolo: $e');
           _showResult = true;
           _showExpression = true;
         }
@@ -373,7 +373,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
             _isRadians ? 'RAD' : 'DEG',
             style: TextStyle(
               fontSize: 18,
-              color: colorScheme.onSurface.withOpacity(0.6),
+              color: colorScheme.onSurface.withValues(alpha: 0.6),
             ),
           ),
         ),
@@ -512,12 +512,12 @@ class _CalculatorPageState extends State<CalculatorPage> {
             child: Container(
               padding: EdgeInsets.only(bottom: 16.0, left: 16.0, right: 16.0, top: MediaQuery.of(context).viewPadding.top + 70),
               decoration: BoxDecoration(
-                color: colorScheme.surfaceVariant.withOpacity(0.4),
+                color: colorScheme.surfaceContainerHighest.withValues(alpha: 0.4),
               ),
               child: buildDisplayArea(),
             ),
           ),
-          Divider(height: 1, color: colorScheme.outline.withOpacity(0.5)),
+          Divider(height: 1, color: colorScheme.outline.withValues(alpha: 0.5)),
           Expanded(
             flex: 4,
             child: Container(

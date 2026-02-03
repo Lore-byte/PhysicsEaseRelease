@@ -57,14 +57,14 @@ class _FavoritesPageState extends State<FavoritesPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.star_border, size: 80, color: Theme.of(context).colorScheme.onSurface.withOpacity(0.6)),
+            Icon(Icons.star_border, size: 80, color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.6)),
             const SizedBox(height: 20),
             Text(
               'Nessuna formula nei preferiti.\nClicca sulla stella per aggiungerne alcune!',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 18,
-                color: Theme.of(context).colorScheme.onSurface.withOpacity(0.8),
+                color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.8),
               ),
             ),
           ],

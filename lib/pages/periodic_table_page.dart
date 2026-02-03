@@ -1,18 +1,18 @@
 // lib/pages/periodic_table_page.dart
 import 'package:flutter/material.dart';
-import 'package:physics_ease_release/models/element.dart' as MyElement;
+import 'package:physics_ease_release/models/element.dart' as my_element;
 import 'package:physics_ease_release/data/elements_data.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class PeriodicTablePage extends StatelessWidget {
   const PeriodicTablePage({super.key});
 
-  static final List<MyElement.Element> allElements = getAllElements();
+  static final List<my_element.Element> allElements = getAllElements();
 
-  static final Map<int, MyElement.Element> elementsByNumber = {
+  static final Map<int, my_element.Element> elementsByNumber = {
     for (var e in allElements) e.number: e
   };
-  static final Map<String, MyElement.Element> elementsByPosition = {
+  static final Map<String, my_element.Element> elementsByPosition = {
     for (var e in allElements) '${e.ypos}-${e.xpos}': e
   };
 
@@ -26,7 +26,7 @@ class PeriodicTablePage extends StatelessWidget {
   static const double cellSize = 60.0; // Puoi aggiustare la dimensione delle celle
 
   // Costruisce una cella per un elemento specifico o una cella vuota
-  Widget _buildElementCell(BuildContext context, MyElement.Element? element) {
+  Widget _buildElementCell(BuildContext context, my_element.Element? element) {
     final colorScheme = Theme.of(context).colorScheme;
 
     if (element == null) {
@@ -46,10 +46,10 @@ class PeriodicTablePage extends StatelessWidget {
         decoration: BoxDecoration(
           color: element.displayColor,
           borderRadius: BorderRadius.circular(4),
-          border: Border.all(color: colorScheme.outline.withOpacity(0.4)),
+          border: Border.all(color: colorScheme.outline.withValues(alpha: 0.4)),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.1),
+              color: Colors.black.withValues(alpha: 0.1),
               blurRadius: 2,
               offset: const Offset(1, 1),
             ),
@@ -110,7 +110,7 @@ class PeriodicTablePage extends StatelessWidget {
     );
   }
 
-  void _showElementDetails(BuildContext context, MyElement.Element element) {
+  void _showElementDetails(BuildContext context, my_element.Element element) {
     final colorScheme = Theme.of(context).colorScheme;
     showDialog(
       context: context,
@@ -256,19 +256,19 @@ class PeriodicTablePage extends StatelessWidget {
                   width: 16,
                   height: 16,
                   decoration: BoxDecoration(
-                    color: MyElement.Element.getColorForCategory(category),
+                    color: my_element.Element.getColorForCategory(category),
                     shape: BoxShape.circle,
-                    border: Border.all(color: Colors.black.withOpacity(0.2)),
+                    border: Border.all(color: Colors.black.withValues(alpha: 0.2)),
                   ),
                 ),
                 label: Text(
                   category,
                   style: textTheme.bodySmall,
                 ),
-                backgroundColor: MyElement.Element.getColorForCategory(category).withOpacity(0.2),
+                backgroundColor: my_element.Element.getColorForCategory(category).withValues(alpha: 0.2),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
-                  side: BorderSide(color: MyElement.Element.getColorForCategory(category).withOpacity(0.5)),
+                  side: BorderSide(color: my_element.Element.getColorForCategory(category).withValues(alpha: 0.5)),
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               );
@@ -281,7 +281,7 @@ class PeriodicTablePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    //final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
       appBar: null,

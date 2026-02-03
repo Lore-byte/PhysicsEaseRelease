@@ -26,7 +26,7 @@ class _GraphPageState extends State<GraphPage> {
   final double yMin = -5.0;
   final double yMax = 5.0;
 
-  Parser p = Parser();
+  GrammarParser p = GrammarParser();
   ContextModel cm = ContextModel();
 
   final List<String> _basicKeypadKeys = [
@@ -109,7 +109,7 @@ class _GraphPageState extends State<GraphPage> {
   ];
   final Random _random = Random();
 
-  static const double _graphPreviewHeight = 320.0;
+  //static const double _graphPreviewHeight = 220.0;
 
   double _previewHorizontalMargin(double width) {
     const double minMargin = 4.0;
@@ -187,7 +187,7 @@ class _GraphPageState extends State<GraphPage> {
         if (_functionControllers.isEmpty) {
           _addFunctionField(
             initialText:
-            _exampleFunctions[_random.nextInt(_exampleFunctions.length)],
+                _exampleFunctions[_random.nextInt(_exampleFunctions.length)],
             isPlaceholder: true,
           );
         } else {
@@ -222,22 +222,22 @@ class _GraphPageState extends State<GraphPage> {
 
     processedFunction = processedFunction.replaceAllMapped(
       RegExp(r'log10\(([^)]*)\)'),
-          (match) {
+      (match) {
         return 'ln(${match.group(1)})/ln(10)';
       },
     );
 
     processedFunction = processedFunction.replaceAllMapped(
       RegExp(r'(\d)([a-zA-Z(πe])'),
-          (match) => '${match.group(1)}*${match.group(2)}',
+      (match) => '${match.group(1)}*${match.group(2)}',
     );
     processedFunction = processedFunction.replaceAllMapped(
       RegExp(r'(\))([a-zAZ(πe])'),
-          (match) => '${match.group(1)}*${match.group(2)}',
+      (match) => '${match.group(1)}*${match.group(2)}',
     );
     processedFunction = processedFunction.replaceAllMapped(
       RegExp(r'([xπe])(sin|cos|tan|ln|exp|sqrt|abs|\()'),
-          (match) => '${match.group(1)}*${match.group(2)}',
+      (match) => '${match.group(1)}*${match.group(2)}',
     );
 
     return processedFunction;
@@ -283,13 +283,13 @@ class _GraphPageState extends State<GraphPage> {
               .replaceAll('ParserException: ', '');
           if (error.contains('Invalid syntax')) {
             _errorMessages[i] =
-            'Errore di sintassi: Controlla il formato. Usa * per la moltiplicazione esplicita (es. 2*x, x*sin(x)).';
+                'Errore di sintassi: Controlla il formato. Usa * per la moltiplicazione esplicita (es. 2*x, x*sin(x)).';
           } else if (error.contains('Undefined variable')) {
             _errorMessages[i] =
-            'Variabile non definita. Assicurati di usare solo \'x\'.';
+                'Variabile non definita. Assicurati di usare solo \'x\'.';
           } else if (error.contains('Undefined function')) {
             _errorMessages[i] =
-            'Funzione non definita o formato errato (es. sin(x), ln(x), log10(x)).';
+                'Funzione non definita o formato errato (es. sin(x), ln(x), log10(x)).';
           } else {
             _errorMessages[i] = 'Errore nel formato della funzione: $error.';
           }
@@ -415,10 +415,10 @@ class _GraphPageState extends State<GraphPage> {
   }
 
   Widget _buildKeypadButton(
-      String key,
-      Color backgroundColor,
-      Color textColor,
-      ) {
+    String key,
+    Color backgroundColor,
+    Color textColor,
+  ) {
     return Padding(
       padding: const EdgeInsets.all(3.0),
       child: ElevatedButton(
@@ -464,18 +464,18 @@ class _GraphPageState extends State<GraphPage> {
       } else if (key == 'x') {
         return colorScheme.errorContainer;
       } else if ([
-        'sin',
-        'cos',
-        'tan',
-        'log',
-        'ln',
-        'exp',
-        'sqrt',
-        'abs',
-        '!',
-        'π',
-        'e',
-      ].contains(key) &&
+            'sin',
+            'cos',
+            'tan',
+            'log',
+            'ln',
+            'exp',
+            'sqrt',
+            'abs',
+            '!',
+            'π',
+            'e',
+          ].contains(key) &&
           _showScientificKeys) {
         return colorScheme.tertiaryContainer;
       } else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
@@ -495,18 +495,18 @@ class _GraphPageState extends State<GraphPage> {
       } else if (key == 'x') {
         return colorScheme.onErrorContainer;
       } else if ([
-        'sin',
-        'cos',
-        'tan',
-        'log',
-        'ln',
-        'exp',
-        'sqrt',
-        'abs',
-        '!',
-        'π',
-        'e',
-      ].contains(key) &&
+            'sin',
+            'cos',
+            'tan',
+            'log',
+            'ln',
+            'exp',
+            'sqrt',
+            'abs',
+            '!',
+            'π',
+            'e',
+          ].contains(key) &&
           _showScientificKeys) {
         return colorScheme.onTertiaryContainer;
       } else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
@@ -541,136 +541,148 @@ class _GraphPageState extends State<GraphPage> {
             children: [
               Expanded(
                 flex: 5,
-                child: SingleChildScrollView(
-                  padding: EdgeInsets.only(
-                    left: 0,
-                    right: 0,
-                    top: MediaQuery.of(context).viewPadding.top + 70,
-                    bottom: 16,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      const SizedBox(height: 16),
-                      ..._functionControllers.asMap().entries.map((entry) {
-                        int idx = entry.key;
-                        TextEditingController controller = entry.value;
-                        return Padding(
-                          padding: const EdgeInsets.only(bottom: 12.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              TextField(
-                                controller: controller,
-                                readOnly: true,
-                                onTap: () {
-                                  setState(() {
-                                    _focusedController = controller;
-                                    if (_isPlaceholder[idx]) {
-                                      controller.clear();
-                                      _isPlaceholder[idx] = false;
-                                      _updateFunction(idx);
-                                    }
-                                  });
-                                },
-                                decoration: InputDecoration(
-                                  labelText: 'f${idx + 1}(x)',
-                                  border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(12),
-                                    borderSide: BorderSide(
-                                      color: _focusedController == controller
-                                          ? colorScheme.primary
-                                          : colorScheme.outline,
-                                      width: 2.0,
-                                    ),
-                                  ),
-                                  focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(12),
-                                    borderSide: BorderSide(
-                                      color: colorScheme.primary,
-                                      width: 2.0,
-                                    ),
-                                  ),
-                                  prefixIcon: Icon(
-                                    Icons.show_chart,
-                                    color: _functionColors[idx],
-                                  ),
-                                  suffixIcon: Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      if (idx ==
-                                          _functionControllers.length - 1)
-                                        IconButton(
-                                          icon: Icon(
-                                            Icons.add,
-                                            color: colorScheme.primary,
-                                          ),
-                                          onPressed: () => _addFunctionField(
-                                            initialText: '',
-                                            isPlaceholder: false,
-                                          ),
-                                          tooltip: 'Aggiungi funzione',
-                                        ),
-                                      if (_functionControllers.length > 1)
-                                        IconButton(
-                                          icon: Icon(
-                                            Icons.close,
-                                            color: colorScheme.onSurfaceVariant,
-                                          ),
-                                          onPressed: () =>
-                                              _removeFunctionField(idx),
-                                          tooltip: 'Rimuovi funzione',
-                                        ),
-                                    ],
-                                  ),
-                                ),
-                                style: TextStyle(
-                                  color: colorScheme.onSurface,
-                                  fontSize: 20,
-                                ),
-                                textAlign: TextAlign.end,
-                              ),
-                              if (_errorMessages[idx].isNotEmpty)
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 8.0),
-                                  child: Card(
-                                    color: colorScheme.errorContainer,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8),
-                                    ),
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Text(
-                                        _errorMessages[idx],
-                                        style: TextStyle(
-                                          color: colorScheme.onErrorContainer,
-                                          fontSize: 12,
-                                        ),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                            ],
-                          ),
-                        );
-                      }).toList(),
-
-                      const SizedBox(height: 12),
-                      Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: previewMargin,
+                child: CustomScrollView(
+                  slivers: [
+                    SliverToBoxAdapter(
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: 16,
+                          right: 16,
+                          top: MediaQuery.of(context).viewPadding.top + 70,
+                          bottom: 12, // un po' di spazio prima della preview
                         ),
-                        child: SizedBox(
-                          height: _graphPreviewHeight,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            const SizedBox(height: 16),
+                            ..._functionControllers.asMap().entries.map((entry) {
+                              int idx = entry.key;
+                              TextEditingController controller = entry.value;
+                              return Padding(
+                                padding: const EdgeInsets.only(bottom: 12.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                                  children: [
+                                    TextField(
+                                      controller: controller,
+                                      readOnly: true,
+                                      onTap: () {
+                                        setState(() {
+                                          _focusedController = controller;
+                                          if (_isPlaceholder[idx]) {
+                                            controller.clear();
+                                            _isPlaceholder[idx] = false;
+                                            _updateFunction(idx);
+                                          }
+                                        });
+                                      },
+                                      decoration: InputDecoration(
+                                        labelText: 'f${idx + 1}(x)',
+                                        border: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(12),
+                                          borderSide: BorderSide(
+                                            color: _focusedController == controller
+                                                ? colorScheme.primary
+                                                : colorScheme.outline,
+                                            width: 2.0,
+                                          ),
+                                        ),
+                                        focusedBorder: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(12),
+                                          borderSide: BorderSide(
+                                            color: colorScheme.primary,
+                                            width: 2.0,
+                                          ),
+                                        ),
+                                        prefixIcon: Icon(
+                                          Icons.show_chart,
+                                          color: _functionColors[idx],
+                                        ),
+                                        suffixIcon: Row(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [
+                                            if (idx == _functionControllers.length - 1)
+                                              IconButton(
+                                                icon: Icon(
+                                                  Icons.add,
+                                                  color: colorScheme.primary,
+                                                ),
+                                                onPressed: () => _addFunctionField(
+                                                  initialText: '',
+                                                  isPlaceholder: false,
+                                                ),
+                                                tooltip: 'Aggiungi funzione',
+                                              ),
+                                            if (_functionControllers.length > 1)
+                                              IconButton(
+                                                icon: Icon(
+                                                  Icons.close,
+                                                  color: colorScheme.onSurfaceVariant,
+                                                ),
+                                                onPressed: () => _removeFunctionField(idx),
+                                                tooltip: 'Rimuovi funzione',
+                                              ),
+                                          ],
+                                        ),
+                                      ),
+                                      style: TextStyle(
+                                        color: colorScheme.onSurface,
+                                        fontSize: 20,
+                                      ),
+                                      textAlign: TextAlign.end,
+                                    ),
+                                    if (_errorMessages[idx].isNotEmpty)
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 8.0),
+                                        child: Card(
+                                          color: colorScheme.errorContainer,
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.circular(8),
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text(
+                                              _errorMessages[idx],
+                                              style: TextStyle(
+                                                color: colorScheme.onErrorContainer,
+                                                fontSize: 12,
+                                              ),
+                                              textAlign: TextAlign.center,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                  ],
+                                ),
+                              );
+                            })//.toList(),
+                          ],
+                        ),
+                      ),
+                    ),
+
+                    // 2) La preview del grafico si espande fino al bordo superiore del tastierino
+                    SliverFillRemaining(
+                      hasScrollBody: false,
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: previewMargin).copyWith(bottom: 16),
+                        child: Container(
+                          constraints: const BoxConstraints(minHeight: 120), // fallback minimo
+                          decoration: BoxDecoration(
+                            color: colorScheme.surfaceContainerHighest,
+                            borderRadius: BorderRadius.circular(12),
+                            border: Border.all(
+                              color: colorScheme.outline,
+                              width: 1,
+                            ),
+                          ),
                           child: Stack(
                             alignment: Alignment.center,
                             children: [
                               Positioned.fill(
                                 child: GestureDetector(
                                   onTap: () {
-                                    bool hasPlotableFunctions =
-                                        functionsToPlot.isNotEmpty;
+                                    bool hasPlotableFunctions = functionsToPlot.isNotEmpty;
                                     if (hasPlotableFunctions) {
                                       Navigator.of(context).push(
                                         MaterialPageRoute(
@@ -686,9 +698,7 @@ class _GraphPageState extends State<GraphPage> {
                                         ),
                                       );
                                     } else {
-                                      ScaffoldMessenger.of(
-                                        context,
-                                      ).showSnackBar(
+                                      ScaffoldMessenger.of(context).showSnackBar(
                                         const SnackBar(
                                           content: Text(
                                             'Inserisci almeno una funzione valida da visualizzare.',
@@ -697,32 +707,20 @@ class _GraphPageState extends State<GraphPage> {
                                       );
                                     }
                                   },
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: colorScheme.surfaceVariant,
-                                      borderRadius: BorderRadius.circular(12),
-                                      border: Border.all(
-                                        color: colorScheme.outline,
-                                        width: 1,
-                                      ),
-                                    ),
-                                    child: CustomPaint(
-                                      painter: GraphPainter(
-                                        functionStrings: functionsToPlot,
-                                        evaluateFunction: _evaluateFunction,
-                                        xMin: xMin,
-                                        xMax: xMax,
-                                        yMin: yMin,
-                                        yMax: yMax,
-                                        axisColor: colorScheme.onSurfaceVariant,
-                                        lineColors: colorsToPlot,
-                                        gridColor:
-                                            Theme.of(context).brightness ==
-                                                Brightness.dark
-                                            ? Colors.white.withOpacity(0.15)
-                                            : Colors.black.withOpacity(0.15),
-                                        textColor: colorScheme.onSurface,
-                                      ),
+                                  child: CustomPaint(
+                                    painter: GraphPainter(
+                                      functionStrings: functionsToPlot,
+                                      evaluateFunction: _evaluateFunction,
+                                      xMin: xMin,
+                                      xMax: xMax,
+                                      yMin: yMin,
+                                      yMax: yMax,
+                                      axisColor: colorScheme.onSurfaceVariant,
+                                      lineColors: colorsToPlot,
+                                      gridColor: Theme.of(context).brightness == Brightness.dark
+                                          ? Colors.white.withValues(alpha: 0.15)
+                                          : Colors.black.withValues(alpha: 0.15),
+                                      textColor: colorScheme.onSurface,
                                     ),
                                   ),
                                 ),
@@ -730,12 +728,9 @@ class _GraphPageState extends State<GraphPage> {
                               Positioned(
                                 bottom: 8,
                                 child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 12,
-                                    vertical: 6,
-                                  ),
+                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                                   decoration: BoxDecoration(
-                                    color: Colors.black.withOpacity(0.5),
+                                    color: Colors.black.withValues(alpha: 0.5),
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: const Text(
@@ -751,11 +746,11 @@ class _GraphPageState extends State<GraphPage> {
                           ),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
-              Divider(height: 1, color: colorScheme.outline.withOpacity(0.5)),
+              Divider(height: 1, color: colorScheme.outline.withValues(alpha: 0.5)),
               Expanded(
                 flex: 5,
                 child: Container(
@@ -773,7 +768,7 @@ class _GraphPageState extends State<GraphPage> {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             ...row.map(
-                                  (key) => Expanded(
+                              (key) => Expanded(
                                 child: _buildKeypadButton(
                                   key,
                                   getButtonColor(key),
@@ -784,7 +779,7 @@ class _GraphPageState extends State<GraphPage> {
                             if (row.length < 4)
                               ...List.generate(
                                 4 - row.length,
-                                    (_) => const Expanded(child: SizedBox.shrink()),
+                                (_) => const Expanded(child: SizedBox.shrink()),
                               ),
                           ],
                         ),
@@ -949,7 +944,7 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
         children: [
           SizedBox.expand(
             child: Container(
-              color: colorScheme.surfaceVariant,
+              color: colorScheme.surfaceContainerHighest,
               child: GestureDetector(
                 onPanUpdate: _onPanUpdate,
                 child: CustomPaint(
@@ -963,8 +958,8 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
                     axisColor: colorScheme.onSurfaceVariant,
                     lineColors: widget.functionColors,
                     gridColor: Theme.of(context).brightness == Brightness.dark
-                        ? Colors.white.withOpacity(0.15)
-                        : Colors.black.withOpacity(0.15),
+                        ? Colors.white.withValues(alpha: 0.15)
+                        : Colors.black.withValues(alpha: 0.15),
                     textColor: colorScheme.onSurface,
                   ),
                 ),

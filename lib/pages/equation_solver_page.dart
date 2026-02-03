@@ -127,18 +127,18 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
         final realPart = -(u + v) / 2;
         final imagPart = sqrt(3) / 2 * (u - v);
 
-        final x2_real = realPart - b / (3 * a);
-        final x2_imag = imagPart;
-        final x3_real = realPart - b / (3 * a);
-        final x3_imag = -imagPart;
+        final x2Real = realPart - b / (3 * a);
+        final x2Imag = imagPart;
+        final x3Real = realPart - b / (3 * a);
+        final x3Imag = -imagPart;
 
         String result = 'x₁ = ${x1.toStringAsFixed(6)}';
-        if (x2_imag.abs() < 1e-9) {
-          result += '\nx₂ = ${x2_real.toStringAsFixed(6)}';
-          result += '\nx₃ = ${x3_real.toStringAsFixed(6)}';
+        if (x2Imag.abs() < 1e-9) {
+          result += '\nx₂ = ${x2Real.toStringAsFixed(6)}';
+          result += '\nx₃ = ${x3Real.toStringAsFixed(6)}';
         } else {
-          result += '\nx₂ = ${x2_real.toStringAsFixed(6)} + ${x2_imag.toStringAsFixed(6)}i';
-          result += '\nx₃ = ${x3_real.toStringAsFixed(6)} - ${x3_imag.toStringAsFixed(6)}i';
+          result += '\nx₂ = ${x2Real.toStringAsFixed(6)} + ${x2Imag.toStringAsFixed(6)}i';
+          result += '\nx₃ = ${x3Real.toStringAsFixed(6)} - ${x3Imag.toStringAsFixed(6)}i';
         }
         return result;
       }
@@ -182,7 +182,7 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
                 ),
                 const SizedBox(height: 16),
                 Card(
-                  color: colorScheme.surfaceVariant,
+                  color: colorScheme.surfaceContainerHighest,
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                   child: Column(
                     children: [

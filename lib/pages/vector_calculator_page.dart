@@ -280,7 +280,7 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    //final colorScheme = Theme.of(context).colorScheme;
     return Scaffold(
       appBar: null,
       body: Stack(
@@ -572,7 +572,7 @@ class VectorPainter extends CustomPainter {
     final double gridStep = 40.0;
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final axisColor = isDark ? Colors.white : Colors.black;
-    final gridColor = isDark ? Colors.white.withOpacity(0.2) : Colors.grey.withOpacity(0.3);
+    final gridColor = isDark ? Colors.white.withValues(alpha: 0.2) : Colors.grey.withValues(alpha: 0.3);
 
     final Paint gridPaint = Paint()
       ..color = gridColor
@@ -650,7 +650,7 @@ class VectorPainter extends CustomPainter {
           shadows: [
             Shadow(
               blurRadius: 2.0,
-              color: isDark ? Colors.black.withOpacity(0.5) : Colors.black.withOpacity(0.5),
+              color: isDark ? Colors.black.withValues(alpha: 0.5) : Colors.black.withValues(alpha: 0.5),
               offset: const Offset(1, 1),
             )
           ],

@@ -3,10 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:url_launcher/url_launcher.dart';
+//import 'package:url_launcher/url_launcher.dart';
 import 'package:physics_ease_release/models/formula.dart';
 import 'package:screenshot/screenshot.dart';
-import 'dart:typed_data';
+//import 'dart:typed_data';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
 import 'dart:developer' as developer;
@@ -81,7 +81,7 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
             borderRadius: BorderRadius.circular(12),
           ),
           elevation: 4,
-          color: Theme.of(context).colorScheme.surfaceVariant,
+          color: Theme.of(context).colorScheme.surfaceContainerHighest,
           margin: const EdgeInsets.all(16),
           child: Padding(
             padding: const EdgeInsets.all(16),
@@ -113,7 +113,7 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
       pixelRatio: 4.0,
     );
 
-    if (imageBytes == null || imageBytes.isEmpty) {
+    if (imageBytes.isEmpty) {
       // fallback o messaggio errore
       return;
     }
@@ -123,6 +123,7 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
     final file = File('${directory.path}/formula_${widget.formula.id}.png');
     await file.writeAsBytes(imageBytes, flush: true);
 
+    if (!mounted) return;
     final size = MediaQuery.of(context).size;
     final origin = Rect.fromLTWH(0, 0, size.width, size.height / 2);
 
@@ -242,7 +243,7 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   elevation: 4,
-                  color: colorScheme.surfaceVariant,
+                  color: colorScheme.surfaceContainerHighest,
                   margin: const EdgeInsets.symmetric(vertical: 8),
                   child: Padding(
                     padding: const EdgeInsets.all(16),

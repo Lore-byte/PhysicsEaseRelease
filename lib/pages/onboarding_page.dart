@@ -104,7 +104,7 @@ class OnboardingPage extends StatelessWidget {
       done: Text("Inizia", style: TextStyle(fontWeight: FontWeight.bold, color: primaryColor)),
       dotsDecorator: DotsDecorator(
         size: const Size(10.0, 10.0),
-        color: primaryColor.withOpacity(0.3),
+        color: primaryColor.withValues(alpha: 0.3),
         activeSize: const Size(22.0, 10.0),
         activeColor: primaryColor,
         activeShape: const RoundedRectangleBorder(

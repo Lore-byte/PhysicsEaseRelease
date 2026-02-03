@@ -66,7 +66,7 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    //final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
       appBar: null, // RIMOSSA AppBar nativa

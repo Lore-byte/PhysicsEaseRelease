@@ -252,7 +252,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
         children: [
           Text(
             label,
-            style: TextStyle(fontSize: 18, color: textColor.withOpacity(0.8)),
+            style: TextStyle(fontSize: 18, color: textColor.withValues(alpha: 0.8)),
           ),
           Text(
             value,
@@ -338,11 +338,11 @@ class _SensorToolPageState extends State<SensorToolPage> {
                     show: true,
                     drawVerticalLine: true,
                     getDrawingHorizontalLine: (value) => FlLine(
-                      color: gridColor.withOpacity(0.1),
+                      color: gridColor.withValues(alpha: 0.1),
                       strokeWidth: 1,
                     ),
                     getDrawingVerticalLine: (value) => FlLine(
-                      color: gridColor.withOpacity(0.1),
+                      color: gridColor.withValues(alpha: 0.1),
                       strokeWidth: 1,
                     ),
                   ),
@@ -365,7 +365,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
                             child: Text(
                               value.toInt().toString(),
                               style: TextStyle(
-                                color: textColor.withOpacity(0.7),
+                                color: textColor.withValues(alpha: 0.7),
                                 fontSize: 12,
                               ),
                             ),
@@ -383,7 +383,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
                             child: Text(
                               value.toStringAsFixed(1),
                               style: TextStyle(
-                                color: textColor.withOpacity(0.7),
+                                color: textColor.withValues(alpha: 0.7),
                                 fontSize: 12,
                               ),
                             ),
@@ -395,7 +395,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
                   borderData: FlBorderData(
                     show: true,
                     border: Border.all(
-                      color: gridColor.withOpacity(0.3),
+                      color: gridColor.withValues(alpha: 0.3),
                       width: 1,
                     ),
                   ),

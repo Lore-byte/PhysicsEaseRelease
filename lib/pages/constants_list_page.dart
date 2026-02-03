@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class ConstantsListPage extends StatefulWidget {
+  const ConstantsListPage({super.key});
+
   @override
   State<ConstantsListPage> createState() => _ConstantsListPageState();
 }
@@ -187,7 +189,7 @@ class _ConstantsListPageState extends State<ConstantsListPage> {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
+    //final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
       appBar: null,
@@ -269,13 +271,13 @@ class _ConstantsListPageState extends State<ConstantsListPage> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.search_off, size: 60, color: colorScheme.onSurfaceVariant.withOpacity(0.6)),
+                          Icon(Icons.search_off, size: 60, color: colorScheme.onSurfaceVariant.withValues(alpha: 0.6)),
                           const SizedBox(height: 16),
                           Text(
                             'Nessuna costante trovata.',
                             style: TextStyle(
                               fontSize: 18,
-                              color: colorScheme.onSurfaceVariant.withOpacity(0.8),
+                              color: colorScheme.onSurfaceVariant.withValues(alpha: 0.8),
                             ),
                           ),
                         ],
@@ -358,7 +360,7 @@ class _ConstantsListPageState extends State<ConstantsListPage> {
       builder: (BuildContext context) {
         return AlertDialog(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          backgroundColor: colorScheme.surfaceVariant,
+          backgroundColor: colorScheme.surfaceContainerHighest,
           title: Text(
             constant['name']!,
             style: TextStyle(
@@ -375,7 +377,7 @@ class _ConstantsListPageState extends State<ConstantsListPage> {
                   constant['value']!,
                   style: TextStyle(
                     fontSize: 16,
-                    color: colorScheme.onSurfaceVariant.withOpacity(0.8),
+                    color: colorScheme.onSurfaceVariant.withValues(alpha: 0.8),
                     fontStyle: FontStyle.italic,
                   ),
                 ),

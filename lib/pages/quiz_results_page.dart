@@ -99,7 +99,7 @@ class QuizResultsPage extends StatelessWidget {
                           ),
                           Text(
                             'Corrette',
-                            style: TextStyle(color: colorScheme.onSurface.withOpacity(0.6)),
+                            style: TextStyle(color: colorScheme.onSurface.withValues(alpha: 0.6)),
                           ),
                         ],
                       ),
@@ -123,7 +123,7 @@ class QuizResultsPage extends StatelessWidget {
                           ),
                           Text(
                             'Errate',
-                            style: TextStyle(color: colorScheme.onSurface.withOpacity(0.6)),
+                            style: TextStyle(color: colorScheme.onSurface.withValues(alpha: 0.6)),
                           ),
                         ],
                       ),
@@ -152,8 +152,8 @@ class QuizResultsPage extends StatelessWidget {
               return Card(
                 margin: const EdgeInsets.only(bottom: 12),
                 color: isCorrect
-                    ? Colors.green.withOpacity(0.1)
-                    : Colors.red.withOpacity(0.1),
+                    ? Colors.green.withValues(alpha: 0.1)
+                    : Colors.red.withValues(alpha: 0.1),
                 child: ExpansionTile(
                   leading: CircleAvatar(
                     backgroundColor: isCorrect ? Colors.green : Colors.red,
@@ -218,12 +218,12 @@ class QuizResultsPage extends StatelessWidget {
                                 ],
                               ),
                             );
-                          }).toList(),
+                          }),//.toList(),
                           const Divider(height: 24),
                           Container(
                             padding: const EdgeInsets.all(12),
                             decoration: BoxDecoration(
-                              color: colorScheme.tertiaryContainer.withOpacity(0.5),
+                              color: colorScheme.tertiaryContainer.withValues(alpha: 0.5),
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Column(
@@ -257,7 +257,7 @@ class QuizResultsPage extends StatelessWidget {
                   ],
                 ),
               );
-            }).toList(),
+            }),//.toList(),
               ],
             ),
           ),
