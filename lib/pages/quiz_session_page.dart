@@ -208,7 +208,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                               color: cardColor ?? colorScheme.surface,
                               borderRadius: BorderRadius.circular(12),
                               border: Border.all(
-                                color: borderColor ?? colorScheme.outline.withOpacity(0.3),
+                                color: borderColor ?? colorScheme.outline.withValues(alpha: 0.3),
                                 width: borderColor != null ? 2 : 1,
                               ),
                             ),
@@ -221,7 +221,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                                   decoration: BoxDecoration(
                                     color: isSelected
                                         ? colorScheme.primary
-                                        : colorScheme.surfaceVariant,
+                                        : colorScheme.surfaceContainerHighest,
                                     shape: BoxShape.circle,
                                   ),
                                   child: Center(
@@ -254,7 +254,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                           ),
                         ),
                       );
-                    }).toList(),
+                    }),//.toList(),
 
                     if (_showFeedback) ...[
                       const SizedBox(height: 16),
@@ -297,7 +297,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                         borderRadius: BorderRadius.circular(12),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.1),
+                            color: Colors.black.withValues(alpha: 0.1),
                             blurRadius: 8,
                             offset: const Offset(0, -2),
                           ),
@@ -362,7 +362,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                     ],
                   ),
                 );
-                if (shouldPop == true && mounted) {
+                if (shouldPop == true && context.mounted) {
                   Navigator.pop(context);
                 }
               },

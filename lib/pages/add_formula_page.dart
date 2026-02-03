@@ -42,11 +42,18 @@ class _AddFormulaPageState extends State<AddFormulaPage> {
     _descriptionController.dispose();
     _formulaLatexController.dispose();
     _keywordsController.dispose();
-    for (var controller in _variableSymbolControllers) controller.dispose();
-    for (var controller in _variableDescControllers) controller.dispose();
-    for (var controller in _variableUnitControllers) controller.dispose();
-    for (var controller in _exampleTitleControllers) controller.dispose();
-    for (var controller in _exampleTextControllers) controller.dispose();
+    var allControllers = [
+      _variableSymbolControllers,
+      _variableDescControllers,
+      _variableUnitControllers,
+      _exampleTitleControllers,
+      _exampleTextControllers,
+    ];
+    for (var list in allControllers) {
+      for (var controller in list) {
+        controller.dispose();
+      }
+    }
     super.dispose();
   }
 
@@ -129,6 +136,8 @@ class _AddFormulaPageState extends State<AddFormulaPage> {
       );
 
       widget.onAddFormula(newFormula).then((_) {
+        if (!mounted) return;
+
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text('Formula salvata con successo nella sezione "Personalizzate" (Home)'),

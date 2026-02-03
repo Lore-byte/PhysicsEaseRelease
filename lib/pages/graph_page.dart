@@ -26,7 +26,7 @@ class _GraphPageState extends State<GraphPage> {
   final double yMin = -5.0;
   final double yMax = 5.0;
 
-  Parser p = Parser();
+  GrammarParser p = GrammarParser();
   ContextModel cm = ContextModel();
 
   final List<String> _basicKeypadKeys = [
@@ -655,7 +655,7 @@ class _GraphPageState extends State<GraphPage> {
                                   ],
                                 ),
                               );
-                            }).toList(),
+                            })//.toList(),
                           ],
                         ),
                       ),
@@ -669,7 +669,7 @@ class _GraphPageState extends State<GraphPage> {
                         child: Container(
                           constraints: const BoxConstraints(minHeight: 120), // fallback minimo
                           decoration: BoxDecoration(
-                            color: colorScheme.surfaceVariant,
+                            color: colorScheme.surfaceContainerHighest,
                             borderRadius: BorderRadius.circular(12),
                             border: Border.all(
                               color: colorScheme.outline,
@@ -718,8 +718,8 @@ class _GraphPageState extends State<GraphPage> {
                                       axisColor: colorScheme.onSurfaceVariant,
                                       lineColors: colorsToPlot,
                                       gridColor: Theme.of(context).brightness == Brightness.dark
-                                          ? Colors.white.withOpacity(0.15)
-                                          : Colors.black.withOpacity(0.15),
+                                          ? Colors.white.withValues(alpha: 0.15)
+                                          : Colors.black.withValues(alpha: 0.15),
                                       textColor: colorScheme.onSurface,
                                     ),
                                   ),
@@ -730,7 +730,7 @@ class _GraphPageState extends State<GraphPage> {
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                                   decoration: BoxDecoration(
-                                    color: Colors.black.withOpacity(0.5),
+                                    color: Colors.black.withValues(alpha: 0.5),
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: const Text(
@@ -750,7 +750,7 @@ class _GraphPageState extends State<GraphPage> {
                   ],
                 ),
               ),
-              Divider(height: 1, color: colorScheme.outline.withOpacity(0.5)),
+              Divider(height: 1, color: colorScheme.outline.withValues(alpha: 0.5)),
               Expanded(
                 flex: 5,
                 child: Container(
@@ -944,7 +944,7 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
         children: [
           SizedBox.expand(
             child: Container(
-              color: colorScheme.surfaceVariant,
+              color: colorScheme.surfaceContainerHighest,
               child: GestureDetector(
                 onPanUpdate: _onPanUpdate,
                 child: CustomPaint(
@@ -958,8 +958,8 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
                     axisColor: colorScheme.onSurfaceVariant,
                     lineColors: widget.functionColors,
                     gridColor: Theme.of(context).brightness == Brightness.dark
-                        ? Colors.white.withOpacity(0.15)
-                        : Colors.black.withOpacity(0.15),
+                        ? Colors.white.withValues(alpha: 0.15)
+                        : Colors.black.withValues(alpha: 0.15),
                     textColor: colorScheme.onSurface,
                   ),
                 ),

@@ -1028,7 +1028,7 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
                     ),
                   ),
                 )
-                .toList(),
+                //.toList(),
         ],
       ),
     );
@@ -1069,7 +1069,7 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
     if (isCard) {
       return CircleAvatar(
         radius: size / 2,
-        backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+        backgroundColor: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
         child: ClipOval(child: imageWidget),
       );
     } else {
@@ -1279,7 +1279,7 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
                             Icon(
                               Icons.search_off,
                               size: 60,
-                              color: colorScheme.onSurfaceVariant.withOpacity(
+                              color: colorScheme.onSurfaceVariant.withValues(alpha: 
                                 0.6,
                               ),
                             ),
@@ -1288,7 +1288,7 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
                               'Nessun fisico trovato.',
                               style: TextStyle(
                                 fontSize: 18,
-                                color: colorScheme.onSurfaceVariant.withOpacity(
+                                color: colorScheme.onSurfaceVariant.withValues(alpha: 
                                   0.8,
                                 ),
                               ),

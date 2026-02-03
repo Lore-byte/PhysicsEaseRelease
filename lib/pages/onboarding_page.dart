@@ -146,7 +146,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       // Dots
       dotsDecorator: DotsDecorator(
         size: const Size(10.0, 10.0),
-        color: primaryColor.withOpacity(0.3),
+        color: primaryColor.withValues(alpha: 0.3),
         activeSize: const Size(22.0, 10.0),
         activeColor: primaryColor,
         activeShape: const RoundedRectangleBorder(

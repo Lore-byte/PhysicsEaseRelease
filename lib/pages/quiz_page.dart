@@ -123,7 +123,7 @@ class _QuizPageState extends State<QuizPage> {
                               Text(
                                 'Seleziona gli argomenti e inizia il quiz',
                                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                  color: colorScheme.onPrimaryContainer.withOpacity(0.7),
+                                  color: colorScheme.onPrimaryContainer.withValues(alpha: 0.7),
                                 ),
                                 textAlign: TextAlign.center,
                               ),
