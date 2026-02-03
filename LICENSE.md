@@ -1,6 +1,6 @@
 # PhysicsEase Community License (**Non-Commercial**)
 
-Copyright (c) 2025 PhysicsEase. All rights reserved.
+Copyright (c) 2026 PhysicsEase. All rights reserved.
 
 ### 1. Definitions
 “Software” means the source code, documentation, and related materials of PhysicsEase made available by PhysicsEase.
