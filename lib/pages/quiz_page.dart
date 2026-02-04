@@ -132,13 +132,40 @@ class _QuizPageState extends State<QuizPage> {
                         ),
                       ),
                       const SizedBox(height: 24),
-
                       // Selezione argomenti
-                      Text(
-                        'Argomenti',
-                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Argomenti',
+                            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          TextButton.icon(
+                            onPressed: () {
+                              setState(() {
+                                if (_selectedCategories.length == QuizService.availableCategories.length) {
+                                  _selectedCategories.clear();
+                                } else {
+                                  _selectedCategories.clear();
+                                  _selectedCategories.addAll(QuizService.availableCategories);
+                                }
+                              });
+                            },
+                            icon: Icon(
+                              _selectedCategories.length == QuizService.availableCategories.length
+                                  ? Icons.clear_all
+                                  : Icons.select_all,
+                              size: 20,
+                            ),
+                            label: Text(
+                              _selectedCategories.length == QuizService.availableCategories.length
+                                  ? 'Deseleziona tutto'
+                                  : 'Seleziona tutto',
+                            ),
+                          ),
+                        ],
                       ),
                       const SizedBox(height: 8),
                       Card(
