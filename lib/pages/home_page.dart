@@ -401,7 +401,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         
         Positioned(
           right: 16,
-          bottom: 100,
+          bottom: 110,
           child: FloatingActionButton.extended(
             heroTag: 'quiz_fab',
             tooltip: 'Apri Quiz',

@@ -27,7 +27,7 @@ import 'package:physics_ease_release/pages/collaborate_page.dart';
 import 'package:physics_ease_release/pages/privacy_policy_page.dart';
 import 'package:physics_ease_release/pages/licence_page.dart';
 import 'package:physics_ease_release/pages/onboarding_page.dart';
-
+import 'package:physics_ease_release/pages/quiz_statistics_page.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 // Importing for controlling system features (like exiting the app)
@@ -400,12 +400,12 @@ class _MyAppState extends State<MyApp> {
 
     return Container(
       decoration: BoxDecoration(
-        color: colorScheme.surfaceContainer,
-        borderRadius: BorderRadius.circular(35),
+        color: colorScheme.surfaceContainerHighest,
+        borderRadius: BorderRadius.circular(32),
         boxShadow: [
           BoxShadow(
             color: shadowColor,
-            blurRadius: 30,
+            blurRadius: 35,
             offset: const Offset(0, 50),
             spreadRadius: 40,
           ),
@@ -600,6 +600,25 @@ class _MyAppState extends State<MyApp> {
                       MaterialPageRoute(
                         builder: (innerContext) =>
                             CollaboratePage(themeMode: _themeMode),
+                      ),
+                    );
+                  },
+                ),
+
+                // Quiz statistics page link
+                ListTile(
+                  leading: Icon(
+                    Icons.bar_chart,
+                    color: currentColorScheme.primary,
+                  ),
+                  title: const Text('Statistiche Quiz'),
+                  onTap: () {
+                    FocusScope.of(builderContext).unfocus();
+                    Navigator.of(builderContext).pop();
+                    Navigator.of(builderContext, rootNavigator: true).push(
+                      MaterialPageRoute(
+                        builder: (innerContext) =>
+                            QuizStatisticsPage(themeMode: _themeMode),
                       ),
                     );
                   },

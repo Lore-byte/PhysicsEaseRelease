@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:physics_ease_release/models/quiz.dart';
 import 'package:physics_ease_release/models/quiz_result.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'dart:convert';
+import 'dart:developer' as developer;
 
-class QuizResultsPage extends StatelessWidget {
+class QuizResultsPage extends StatefulWidget {
   final QuizSessionResult sessionResult;
   final List<Quiz> quizzes;
   final void Function(bool) setGlobalAppBarVisibility;
@@ -17,9 +20,34 @@ class QuizResultsPage extends StatelessWidget {
   });
 
   @override
+  State<QuizResultsPage> createState() => _QuizResultsPageState();
+}
+
+class _QuizResultsPageState extends State<QuizResultsPage> {
+  @override
+  void initState() {
+    super.initState();
+    _saveQuizResult();
+  }
+
+  Future<void> _saveQuizResult() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final savedResults = prefs.getStringList('quiz_history') ?? [];
+      
+      savedResults.add(widget.sessionResult.toJson());
+      
+      await prefs.setStringList('quiz_history', savedResults);
+      developer.log('Quiz result saved successfully');
+    } catch (e) {
+      developer.log('Error saving quiz result: $e');
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    final percentuale = sessionResult.percentuale;
+    final percentuale = widget.sessionResult.percentuale;
 
     return Scaffold(
       body: Stack(
@@ -58,7 +86,7 @@ class QuizResultsPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      '${sessionResult.punteggio} / ${sessionResult.totale}',
+                      '${widget.sessionResult.punteggio} / ${widget.sessionResult.totale}',
                       style: const TextStyle(
                         fontSize: 48,
                         fontWeight: FontWeight.bold,
@@ -91,7 +119,7 @@ class QuizResultsPage extends StatelessWidget {
                           Icon(Icons.check_circle, color: Colors.green, size: 32),
                           const SizedBox(height: 8),
                           Text(
-                            '${sessionResult.punteggio}',
+                            '${widget.sessionResult.punteggio}',
                             style: const TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.bold,
@@ -115,7 +143,7 @@ class QuizResultsPage extends StatelessWidget {
                           Icon(Icons.cancel, color: Colors.red, size: 32),
                           const SizedBox(height: 8),
                           Text(
-                            '${sessionResult.totale - sessionResult.punteggio}',
+                            '${widget.sessionResult.totale - widget.sessionResult.punteggio}',
                             style: const TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.bold,
@@ -143,10 +171,10 @@ class QuizResultsPage extends StatelessWidget {
             ),
             const SizedBox(height: 12),
 
-            ...sessionResult.risultati.asMap().entries.map((entry) {
+            ...widget.sessionResult.risultati.asMap().entries.map((entry) {
               final index = entry.key;
               final result = entry.value;
-              final quiz = quizzes[index];
+              final quiz = widget.quizzes[index];
               final isCorrect = result.isCorretta;
 
               return Card(
@@ -281,7 +309,7 @@ class QuizResultsPage extends StatelessWidget {
               children: [
                 FilledButton.icon(
                   onPressed: () {
-                    setGlobalAppBarVisibility(false);
+                    widget.setGlobalAppBarVisibility(false);
                     Navigator.pop(context);
                   },
                   icon: const Icon(Icons.replay),
