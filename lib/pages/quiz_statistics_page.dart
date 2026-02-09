@@ -6,7 +6,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
 import 'dart:developer' as developer;
 import 'package:fl_chart/fl_chart.dart';
-import 'dart:math' as math;
 
 class QuizStatisticsPage extends StatefulWidget {
   final ThemeMode themeMode;
@@ -273,13 +272,13 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                 Icon(
                                   Icons.quiz_outlined,
                                   size: 80,
-                                  color: colorScheme.primary.withOpacity(0.5),
+                                  color: colorScheme.primary.withValues(alpha: 0.5),
                                 ),
                                 const SizedBox(height: 16),
                                 Text(
                                   'Nessun quiz completato',
                                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                                    color: colorScheme.onSurface.withOpacity(0.6),
+                                    color: colorScheme.onSurface.withValues(alpha: 0.6),
                                   ),
                                 ),
                                 const SizedBox(height: 8),
@@ -287,7 +286,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                   'Completa un quiz per vedere le statistiche qui!',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                    color: colorScheme.onSurface.withOpacity(0.4),
+                                    color: colorScheme.onSurface.withValues(alpha: 0.4),
                                   ),
                                 ),
                               ],
@@ -493,7 +492,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                           final index = entry.key;
                           final quiz = entry.value;
                           return _buildQuizHistoryCard(quiz, index, colorScheme);
-                        }).toList(),
+                        }),
                       ],
                     ],
                   ),
@@ -525,7 +524,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
           horizontalInterval: 25,
           getDrawingHorizontalLine: (value) {
             return FlLine(
-              color: colorScheme.outline.withOpacity(0.2),
+              color: colorScheme.outline.withValues(alpha: 0.2),
               strokeWidth: 1,
             );
           },
@@ -539,7 +538,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                 return Text(
                   '${value.toInt()}%',
                   style: TextStyle(
-                    color: colorScheme.onSurface.withOpacity(0.6),
+                    color: colorScheme.onSurface.withValues(alpha: 0.6),
                     fontSize: 12,
                   ),
                 );
@@ -555,7 +554,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                 return Text(
                   '${value.toInt() + 1}',
                   style: TextStyle(
-                    color: colorScheme.onSurface.withOpacity(0.6),
+                    color: colorScheme.onSurface.withValues(alpha: 0.6),
                     fontSize: 12,
                   ),
                 );
@@ -588,7 +587,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
             ),
             belowBarData: BarAreaData(
               show: true,
-              color: colorScheme.primary.withOpacity(0.1),
+              color: colorScheme.primary.withValues(alpha: 0.1),
             ),
           ),
         ],
@@ -726,7 +725,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                   Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
-                      color: scoreColor.withOpacity(0.1),
+                      color: scoreColor.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Icon(
@@ -751,7 +750,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                           '${stats['count']} quiz completati',
                           style: TextStyle(
                             fontSize: 12,
-                            color: colorScheme.onSurface.withOpacity(0.6),
+                            color: colorScheme.onSurface.withValues(alpha: 0.6),
                           ),
                         ),
                       ],
@@ -842,14 +841,14 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
   ) {
     return Row(
       children: [
-        Icon(icon, size: 20, color: colorScheme.onPrimaryContainer.withOpacity(0.7)),
+        Icon(icon, size: 20, color: colorScheme.onPrimaryContainer.withValues(alpha: 0.7)),
         const SizedBox(width: 8),
         Expanded(
           child: Text(
             label,
             style: TextStyle(
               fontSize: 14,
-              color: colorScheme.onPrimaryContainer.withOpacity(0.8),
+              color: colorScheme.onPrimaryContainer.withValues(alpha: 0.8),
             ),
           ),
         ),
@@ -902,7 +901,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                     width: 60,
                     height: 60,
                     decoration: BoxDecoration(
-                      color: scoreColor.withOpacity(0.1),
+                      color: scoreColor.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Column(
@@ -946,7 +945,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                           dateFormat.format(quiz.dataCompletamento),
                           style: TextStyle(
                             fontSize: 14,
-                            color: colorScheme.onSurface.withOpacity(0.6),
+                            color: colorScheme.onSurface.withValues(alpha: 0.6),
                           ),
                         ),
                         const SizedBox(height: 4),
@@ -1022,7 +1021,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                       height: 4,
                       margin: const EdgeInsets.only(bottom: 20),
                       decoration: BoxDecoration(
-                        color: colorScheme.onSurface.withOpacity(0.2),
+                        color: colorScheme.onSurface.withValues(alpha: 0.2),
                         borderRadius: BorderRadius.circular(2),
                       ),
                     ),
@@ -1071,8 +1070,8 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                         final risultato = quiz.risultati[index];
                         return Card(
                           color: risultato.isCorretta
-                              ? Colors.green.withOpacity(0.1)
-                              : Colors.red.withOpacity(0.1),
+                              ? Colors.green.withValues(alpha: 0.1)
+                              : Colors.red.withValues(alpha: 0.1),
                           child: ListTile(
                             leading: CircleAvatar(
                               backgroundColor: risultato.isCorretta ? Colors.green : Colors.red,
