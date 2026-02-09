@@ -26,6 +26,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
   int? _selectedAnswer;
   bool _showFeedback = false;
   final List<QuizResult> _results = [];
+  bool _isFinished = false; // Flag to allow popping and hide content
 
   Quiz get _currentQuiz => widget.quizzes[_currentQuizIndex];
   bool get _isLastQuestion => _currentQuizIndex == widget.quizzes.length - 1;
@@ -54,12 +55,14 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
 
     setState(() {
       _showFeedback = true;
-      _results.add(QuizResult(
-        quizId: _currentQuiz.id,
-        rispostaUtente: _selectedAnswer!,
-        isCorretta: isCorrect,
-        timestamp: DateTime.now(),
-      ));
+      _results.add(
+        QuizResult(
+          quizId: _currentQuiz.id,
+          rispostaUtente: _selectedAnswer!,
+          isCorretta: isCorrect,
+          timestamp: DateTime.now(),
+        ),
+      );
     });
   }
 
@@ -75,7 +78,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
     }
   }
 
-  void _finishQuiz() {
+  Future<void> _finishQuiz() async {
     final correctAnswers = _results.where((r) => r.isCorretta).length;
     final sessionResult = QuizSessionResult(
       risultati: _results,
@@ -85,7 +88,13 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
       categorie: widget.selectedCategories.join(', '),
     );
 
-    Navigator.pushReplacement(
+    // Imposta flag per nascondere l'UI e permettere il pop
+    setState(() {
+      _isFinished = true;
+    });
+
+    // Usa push invece di pushReplacement, così QuizPage aspetta che questa rotta finisca
+    await Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) => QuizResultsPage(
@@ -95,17 +104,28 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
         ),
       ),
     );
+
+    // Quando torniamo dalla pagina dei risultati (back button o "Nuovo Quiz"),
+    // chiudiamo anche la sessione per tornare alla QuizPage
+    if (mounted) {
+      Navigator.pop(context);
+    }
   }
 
   @override
   Widget build(BuildContext context) {
+    // Se finito, mostra loader vuoto per evitare flash dell'ultima domanda mentre si chiude
+    if (_isFinished) {
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    }
+
     final colorScheme = Theme.of(context).colorScheme;
 
     return PopScope(
-      canPop: false,
+      canPop: _isFinished, // Permetti uscita solo se finito
       onPopInvokedWithResult: (bool didPop, dynamic result) async {
         if (didPop) return;
-        
+
         final shouldPop = await showDialog<bool>(
           context: context,
           builder: (context) => AlertDialog(
@@ -128,6 +148,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
         }
       },
       child: Scaffold(
+        appBar: null,
         body: Stack(
           children: [
             SingleChildScrollView(
@@ -140,236 +161,271 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                    Row(
-                      children: [
-                        Chip(
-                          label: Text(_currentQuiz.categoria),
-                          backgroundColor: colorScheme.secondaryContainer,
-                          labelStyle: TextStyle(color: colorScheme.onSecondaryContainer),
+                  Row(
+                    children: [
+                      Chip(
+                        label: Text(_currentQuiz.categoria),
+                        backgroundColor: colorScheme.secondaryContainer,
+                        labelStyle: TextStyle(
+                          color: colorScheme.onSecondaryContainer,
                         ),
-                        const SizedBox(width: 8),
-                        Chip(
-                          label: Text(_currentQuiz.difficolta.toUpperCase()),
-                          backgroundColor: _getDifficultyColor(colorScheme),
-                          labelStyle: const TextStyle(color: Colors.white),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 16),
+                      ),
+                      const SizedBox(width: 8),
+                      Chip(
+                        label: Text(_currentQuiz.difficolta.toUpperCase()),
+                        backgroundColor: _getDifficultyColor(colorScheme),
+                        labelStyle: const TextStyle(color: Colors.white),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 16),
 
-                    Card(
-                      color: colorScheme.primaryContainer,
-                      child: Padding(
-                        padding: const EdgeInsets.all(20.0),
-                        child: Text(
-                          _currentQuiz.domanda,
-                          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                            color: colorScheme.onPrimaryContainer,
-                          ),
+                  Card(
+                    color: colorScheme.primaryContainer,
+                    child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Text(
+                        _currentQuiz.domanda,
+                        style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: colorScheme.onPrimaryContainer,
                         ),
                       ),
                     ),
-                    const SizedBox(height: 24),
+                  ),
+                  const SizedBox(height: 24),
 
-                    ..._currentQuiz.opzioni.asMap().entries.map((entry) {
-                      final index = entry.key;
-                      final option = entry.value;
-                      final isSelected = _selectedAnswer == index;
-                      final isCorrect = index == _currentQuiz.rispostaCorretta;
+                  ..._currentQuiz.opzioni.asMap().entries.map((entry) {
+                    final index = entry.key;
+                    final option = entry.value;
+                    final isSelected = _selectedAnswer == index;
+                    final isCorrect = index == _currentQuiz.rispostaCorretta;
 
-                      final isDark = Theme.of(context).brightness == Brightness.dark;
-                      Color? cardColor;
-                      Color? borderColor;
-                      Color? optionTextColor;
+                    final isDark =
+                        Theme.of(context).brightness == Brightness.dark;
+                    Color? cardColor;
+                    Color? borderColor;
+                    Color? optionTextColor;
 
-                      if (_showFeedback) {
-                        if (isCorrect) {
-                          cardColor = isDark ? Colors.green.shade800 : Colors.green.shade100;
-                          borderColor = Colors.green;
-                          optionTextColor = isDark ? Colors.white : colorScheme.onSurface;
-                        } else if (isSelected) {
-                          cardColor = isDark ? Colors.red.shade800 : Colors.red.shade100;
-                          borderColor = Colors.red;
-                          optionTextColor = isDark ? Colors.white : colorScheme.onSurface;
-                        }
+                    if (_showFeedback) {
+                      if (isCorrect) {
+                        cardColor = isDark
+                            ? Colors.green.shade800
+                            : Colors.green.shade100;
+                        borderColor = Colors.green;
+                        optionTextColor = isDark
+                            ? Colors.white
+                            : colorScheme.onSurface;
                       } else if (isSelected) {
-                        cardColor = colorScheme.primaryContainer;
-                        borderColor = colorScheme.primary;
+                        cardColor = isDark
+                            ? Colors.red.shade800
+                            : Colors.red.shade100;
+                        borderColor = Colors.red;
+                        optionTextColor = isDark
+                            ? Colors.white
+                            : colorScheme.onSurface;
                       }
+                    } else if (isSelected) {
+                      cardColor = colorScheme.primaryContainer;
+                      borderColor = colorScheme.primary;
+                    }
 
-                      return Padding(
-                        padding: const EdgeInsets.only(bottom: 12.0),
-                        child: InkWell(
-                          onTap: () => _selectAnswer(index),
-                          borderRadius: BorderRadius.circular(12),
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: cardColor ?? colorScheme.surface,
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(
-                                color: borderColor ?? colorScheme.outline.withValues(alpha: 0.3),
-                                width: borderColor != null ? 2 : 1,
-                              ),
-                            ),
-                            padding: const EdgeInsets.all(16.0),
-                            child: Row(
-                              children: [
-                                Container(
-                                  width: 32,
-                                  height: 32,
-                                  decoration: BoxDecoration(
-                                    color: isSelected
-                                        ? colorScheme.primary
-                                        : colorScheme.surfaceContainerHighest,
-                                    shape: BoxShape.circle,
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      String.fromCharCode(65 + index), // A, B, C, D
-                                      style: TextStyle(
-                                        color: isSelected
-                                            ? colorScheme.onPrimary
-                                            : colorScheme.onSurfaceVariant,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                const SizedBox(width: 16),
-                                Expanded(
-                                  child: Text(
-                                    option,
-                                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                          color: optionTextColor,
-                                        ),
-                                  ),
-                                ),
-                                if (_showFeedback && isCorrect)
-                                  const Icon(Icons.check_circle, color: Colors.green),
-                                if (_showFeedback && isSelected && !isCorrect)
-                                  const Icon(Icons.cancel, color: Colors.red),
-                              ],
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 12.0),
+                      child: InkWell(
+                        onTap: () => _selectAnswer(index),
+                        borderRadius: BorderRadius.circular(12),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: cardColor ?? colorScheme.surface,
+                            borderRadius: BorderRadius.circular(12),
+                            border: Border.all(
+                              color:
+                                  borderColor ??
+                                  colorScheme.outline.withValues(alpha: 0.3),
+                              width: borderColor != null ? 2 : 1,
                             ),
                           ),
-                        ),
-                      );
-                    }),//.toList(),
-
-                    if (_showFeedback) ...[
-                      const SizedBox(height: 16),
-                      Card(
-                        color: colorScheme.tertiaryContainer,
-                        child: Padding(
                           padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                          child: Row(
                             children: [
-                              Row(
-                                children: [
-                                  Icon(Icons.info_outline, color: colorScheme.onTertiaryContainer),
-                                  const SizedBox(width: 8),
-                                  Text(
-                                    'Spiegazione',
-                                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                              Container(
+                                width: 32,
+                                height: 32,
+                                decoration: BoxDecoration(
+                                  color: isSelected
+                                      ? colorScheme.primary
+                                      : colorScheme.surfaceContainerHighest,
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    String.fromCharCode(
+                                      65 + index,
+                                    ), // A, B, C, D
+                                    style: TextStyle(
+                                      color: isSelected
+                                          ? colorScheme.onPrimary
+                                          : colorScheme.onSurfaceVariant,
                                       fontWeight: FontWeight.bold,
-                                      color: colorScheme.onTertiaryContainer,
                                     ),
                                   ),
-                                ],
-                              ),
-                              const SizedBox(height: 8),
-                              Text(
-                                _currentQuiz.spiegazione,
-                                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                  color: colorScheme.onTertiaryContainer,
                                 ),
                               ),
+                              const SizedBox(width: 16),
+                              Expanded(
+                                child: Text(
+                                  option,
+                                  style: Theme.of(context).textTheme.bodyLarge
+                                      ?.copyWith(color: optionTextColor),
+                                ),
+                              ),
+                              if (_showFeedback && isCorrect)
+                                const Icon(
+                                  Icons.check_circle,
+                                  color: Colors.green,
+                                ),
+                              if (_showFeedback && isSelected && !isCorrect)
+                                const Icon(Icons.cancel, color: Colors.red),
                             ],
                           ),
                         ),
                       ),
-                    ],
-                    const SizedBox(height: 24),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: colorScheme.surface,
-                        borderRadius: BorderRadius.circular(12),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withValues(alpha: 0.1),
-                            blurRadius: 8,
-                            offset: const Offset(0, -2),
-                          ),
-                        ],
+                    );
+                  }), //.toList(),
+
+                  if (_showFeedback) ...[
+                    const SizedBox(height: 16),
+                    Card(
+                      color: colorScheme.tertiaryContainer,
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.info_outline,
+                                  color: colorScheme.onTertiaryContainer,
+                                ),
+                                const SizedBox(width: 8),
+                                Text(
+                                  'Spiegazione',
+                                  style: Theme.of(context).textTheme.titleMedium
+                                      ?.copyWith(
+                                        fontWeight: FontWeight.bold,
+                                        color: colorScheme.onTertiaryContainer,
+                                      ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              _currentQuiz.spiegazione,
+                              style: Theme.of(context).textTheme.bodyMedium
+                                  ?.copyWith(
+                                    color: colorScheme.onTertiaryContainer,
+                                  ),
+                            ),
+                          ],
+                        ),
                       ),
-                      padding: const EdgeInsets.all(16),
-                      child: _showFeedback
-                          ? FilledButton.icon(
-                              onPressed: _nextQuestion,
-                              icon: Icon(_isLastQuestion ? Icons.check : Icons.arrow_forward),
-                              label: Text(
-                                _isLastQuestion ? 'Termina Quiz' : 'Prossima Domanda',
-                                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                              ),
-                              style: FilledButton.styleFrom(
-                                padding: const EdgeInsets.symmetric(vertical: 14),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(12),
-                                ),
-                              ),
-                            )
-                          : FilledButton.icon(
-                              onPressed: _confirmAnswer,
-                              icon: const Icon(Icons.check),
-                              label: const Text(
-                                'Conferma Risposta',
-                                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                              ),
-                              style: FilledButton.styleFrom(
-                                padding: const EdgeInsets.symmetric(vertical: 14),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(12),
-                                ),
+                    ),
+                  ],
+                  const SizedBox(height: 24),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: colorScheme.surface,
+                      borderRadius: BorderRadius.circular(12),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withValues(alpha: 0.1),
+                          blurRadius: 8,
+                          offset: const Offset(0, -2),
+                        ),
+                      ],
+                    ),
+                    padding: const EdgeInsets.all(16),
+                    child: _showFeedback
+                        ? FilledButton.icon(
+                            onPressed: _nextQuestion,
+                            icon: Icon(
+                              _isLastQuestion
+                                  ? Icons.check
+                                  : Icons.arrow_forward,
+                            ),
+                            label: Text(
+                              _isLastQuestion
+                                  ? 'Termina Quiz'
+                                  : 'Prossima Domanda',
+                              style: const TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
-                    ),
-              ],
-            ),
-          ),
-          Positioned(
-            top: MediaQuery.of(context).viewPadding.top,
-            left: 16,
-            right: 16,
-            child: FloatingTopBar(
-              title: 'Domanda ${_currentQuizIndex + 1}/${widget.quizzes.length}',
-              leading: FloatingTopBarLeading.back,
-              onBackPressed: () async {
-                final shouldPop = await showDialog<bool>(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    title: const Text('Uscire dal quiz?'),
-                    content: const Text('I tuoi progressi andranno persi'),
-                    actions: [
-                      TextButton(
-                        onPressed: () => Navigator.pop(context, false),
-                        child: const Text('Annulla'),
-                      ),
-                      FilledButton(
-                        onPressed: () => Navigator.pop(context, true),
-                        child: const Text('Esci'),
-                      ),
-                    ],
+                            style: FilledButton.styleFrom(
+                              padding: const EdgeInsets.symmetric(vertical: 14),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                            ),
+                          )
+                        : FilledButton.icon(
+                            onPressed: _confirmAnswer,
+                            icon: const Icon(Icons.check),
+                            label: const Text(
+                              'Conferma Risposta',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            style: FilledButton.styleFrom(
+                              padding: const EdgeInsets.symmetric(vertical: 14),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                            ),
+                          ),
                   ),
-                );
-                if (shouldPop == true && context.mounted) {
-                  Navigator.pop(context);
-                }
-              },
+                ],
+              ),
             ),
-          ),
-        ],
-      ),
+            Positioned(
+              top: MediaQuery.of(context).viewPadding.top,
+              left: 16,
+              right: 16,
+              child: FloatingTopBar(
+                title:
+                    'Domanda ${_currentQuizIndex + 1}/${widget.quizzes.length}',
+                leading: FloatingTopBarLeading.back,
+                onBackPressed: () async {
+                  final shouldPop = await showDialog<bool>(
+                    context: context,
+                    builder: (context) => AlertDialog(
+                      title: const Text('Uscire dal quiz?'),
+                      content: const Text('I tuoi progressi andranno persi.'),
+                      actions: [
+                        TextButton(
+                          onPressed: () => Navigator.pop(context, false),
+                          child: const Text('Annulla'),
+                        ),
+                        FilledButton(
+                          onPressed: () => Navigator.pop(context, true),
+                          child: const Text('Esci'),
+                        ),
+                      ],
+                    ),
+                  );
+                  if (shouldPop == true && context.mounted) {
+                    Navigator.pop(context);
+                  }
+                },
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
