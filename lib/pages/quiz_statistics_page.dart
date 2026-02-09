@@ -8,12 +8,9 @@ import 'dart:developer' as developer;
 import 'package:fl_chart/fl_chart.dart';
 
 class QuizStatisticsPage extends StatefulWidget {
-  final ThemeMode themeMode;
 
-  const QuizStatisticsPage({
-    super.key,
-    required this.themeMode,
-  });
+
+  const QuizStatisticsPage({super.key,});
 
   @override
   State<QuizStatisticsPage> createState() => _QuizStatisticsPageState();
@@ -34,7 +31,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     try {
       final prefs = await SharedPreferences.getInstance();
       final savedResults = prefs.getStringList('quiz_history') ?? [];
-      
+
       final List<QuizSessionResult> history = [];
       for (String jsonString in savedResults) {
         try {
@@ -43,9 +40,11 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
           developer.log('Error parsing quiz result: $e');
         }
       }
-      
-      history.sort((a, b) => b.dataCompletamento.compareTo(a.dataCompletamento));
-      
+
+      history.sort(
+        (a, b) => b.dataCompletamento.compareTo(a.dataCompletamento),
+      );
+
       setState(() {
         _quizHistory = history;
         _isLoading = false;
@@ -79,7 +78,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
       try {
         final prefs = await SharedPreferences.getInstance();
         final savedResults = prefs.getStringList('quiz_history') ?? [];
-        
+
         final List<QuizSessionResult> allResults = [];
         for (String jsonString in savedResults) {
           try {
@@ -88,16 +87,18 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
             developer.log('Error parsing quiz result: $e');
           }
         }
-        
-        allResults.sort((a, b) => b.dataCompletamento.compareTo(a.dataCompletamento));
-        
+
+        allResults.sort(
+          (a, b) => b.dataCompletamento.compareTo(a.dataCompletamento),
+        );
+
         allResults.removeAt(index);
-        
+
         final newSavedResults = allResults.map((r) => r.toJson()).toList();
         await prefs.setStringList('quiz_history', newSavedResults);
-        
+
         await _loadQuizHistory();
-        
+
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
@@ -125,7 +126,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('Conferma eliminazione'),
-        content: const Text('Vuoi eliminare TUTTI i quiz dallo storico? Questa azione non può essere annullata.'),
+        content: const Text(
+          'Vuoi eliminare TUTTI i quiz dallo storico? Questa azione non può essere annullata.',
+        ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
@@ -144,9 +147,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
       try {
         final prefs = await SharedPreferences.getInstance();
         await prefs.remove('quiz_history');
-        
+
         await _loadQuizHistory();
-        
+
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
@@ -182,12 +185,22 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     }
 
     final totalQuizzes = _quizHistory.length;
-    final totalQuestions = _quizHistory.fold<int>(0, (sum, quiz) => sum + quiz.totale);
-    final correctAnswers = _quizHistory.fold<int>(0, (sum, quiz) => sum + quiz.punteggio);
-    
+    final totalQuestions = _quizHistory.fold<int>(
+      0,
+      (sum, quiz) => sum + quiz.totale,
+    );
+    final correctAnswers = _quizHistory.fold<int>(
+      0,
+      (sum, quiz) => sum + quiz.punteggio,
+    );
+
     final averageScore = (correctAnswers / totalQuestions) * 100;
-    final bestScore = _quizHistory.map((q) => q.percentuale).reduce((a, b) => a > b ? a : b);
-    final worstScore = _quizHistory.map((q) => q.percentuale).reduce((a, b) => a < b ? a : b);
+    final bestScore = _quizHistory
+        .map((q) => q.percentuale)
+        .reduce((a, b) => a > b ? a : b);
+    final worstScore = _quizHistory
+        .map((q) => q.percentuale)
+        .reduce((a, b) => a < b ? a : b);
 
     return {
       'totalQuizzes': totalQuizzes,
@@ -201,10 +214,13 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
   Map<String, Map<String, dynamic>> _calculateCategoryStatistics() {
     final Map<String, List<QuizSessionResult>> quizzesByCategory = {};
-    
+
     for (var quiz in _quizHistory) {
       // Separa le categorie (potrebbero essere multiple separate da virgola)
-      final categories = quiz.categorie.split(',').map((c) => c.trim()).toList();
+      final categories = quiz.categorie
+          .split(',')
+          .map((c) => c.trim())
+          .toList();
       for (var category in categories) {
         if (!quizzesByCategory.containsKey(category)) {
           quizzesByCategory[category] = [];
@@ -214,13 +230,19 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     }
 
     final Map<String, Map<String, dynamic>> categoryStats = {};
-    
+
     quizzesByCategory.forEach((category, quizzes) {
       final totalQuizzes = quizzes.length;
-      final totalQuestions = quizzes.fold<int>(0, (sum, quiz) => sum + quiz.totale);
-      final correctAnswers = quizzes.fold<int>(0, (sum, quiz) => sum + quiz.punteggio);
+      final totalQuestions = quizzes.fold<int>(
+        0,
+        (sum, quiz) => sum + quiz.totale,
+      );
+      final correctAnswers = quizzes.fold<int>(
+        0,
+        (sum, quiz) => sum + quiz.punteggio,
+      );
       final averageScore = (correctAnswers / totalQuestions) * 100;
-      
+
       categoryStats[category] = {
         'count': totalQuizzes,
         'totalQuestions': totalQuestions,
@@ -234,9 +256,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
   List<FlSpot> _getProgressChartData() {
     if (_quizHistory.isEmpty) return [];
-    
+
     final recentQuizzes = _quizHistory.reversed.take(10).toList();
-    
+
     return recentQuizzes.asMap().entries.map((entry) {
       return FlSpot(entry.key.toDouble(), entry.value.percentuale);
     }).toList();
@@ -249,6 +271,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     final categoryStats = _calculateCategoryStatistics();
 
     return Scaffold(
+      appBar: null,
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
           : Stack(
@@ -272,21 +295,28 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                 Icon(
                                   Icons.quiz_outlined,
                                   size: 80,
-                                  color: colorScheme.primary.withValues(alpha: 0.5),
+                                  color: colorScheme.primary.withValues(
+                                    alpha: 0.5,
+                                  ),
                                 ),
                                 const SizedBox(height: 16),
                                 Text(
                                   'Nessun quiz completato',
-                                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                                    color: colorScheme.onSurface.withValues(alpha: 0.6),
-                                  ),
+                                  style: Theme.of(context).textTheme.titleLarge
+                                      ?.copyWith(
+                                        color: colorScheme.onSurface.withValues(
+                                          alpha: 0.6,
+                                        ),
+                                      ),
                                 ),
                                 const SizedBox(height: 8),
                                 Text(
                                   'Completa un quiz per vedere le statistiche qui!',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                    color: colorScheme.onSurface.withValues(alpha: 0.4),
+                                    color: colorScheme.onSurface.withValues(
+                                      alpha: 0.4,
+                                    ),
                                   ),
                                 ),
                               ],
@@ -439,7 +469,10 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                 const SizedBox(height: 20),
                                 SizedBox(
                                   height: 200,
-                                  child: _buildPieChart(statistics, colorScheme),
+                                  child: _buildPieChart(
+                                    statistics,
+                                    colorScheme,
+                                  ),
                                 ),
                               ],
                             ),
@@ -458,9 +491,8 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                               const SizedBox(width: 12),
                               Text(
                                 'Statistiche per Categoria',
-                                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                                  fontWeight: FontWeight.bold,
-                                ),
+                                style: Theme.of(context).textTheme.titleLarge
+                                    ?.copyWith(fontWeight: FontWeight.bold),
                               ),
                             ],
                           ),
@@ -474,9 +506,8 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                           children: [
                             Text(
                               'Storico Quiz',
-                              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                                fontWeight: FontWeight.bold,
-                              ),
+                              style: Theme.of(context).textTheme.titleLarge
+                                  ?.copyWith(fontWeight: FontWeight.bold),
                             ),
                             IconButton(
                               icon: const Icon(Icons.delete_forever),
@@ -491,13 +522,17 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                         ..._quizHistory.asMap().entries.map((entry) {
                           final index = entry.key;
                           final quiz = entry.value;
-                          return _buildQuizHistoryCard(quiz, index, colorScheme);
+                          return _buildQuizHistoryCard(
+                            quiz,
+                            index,
+                            colorScheme,
+                          );
                         }),
                       ],
                     ],
                   ),
                 ),
-                
+
                 Positioned(
                   top: MediaQuery.of(context).viewPadding.top + 10,
                   left: 16,
@@ -514,7 +549,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
   Widget _buildProgressChart(ColorScheme colorScheme) {
     final spots = _getProgressChartData();
-    if (spots.isEmpty) return const Center(child: Text('Nessun dato disponibile'));
+    if (spots.isEmpty) {
+      return const Center(child: Text('Nessun dato disponibile'));
+    }
 
     return LineChart(
       LineChartData(
@@ -561,8 +598,12 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
               },
             ),
           ),
-          rightTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)),
-          topTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)),
+          rightTitles: const AxisTitles(
+            sideTitles: SideTitles(showTitles: false),
+          ),
+          topTitles: const AxisTitles(
+            sideTitles: SideTitles(showTitles: false),
+          ),
         ),
         borderData: FlBorderData(show: false),
         minY: 0,
@@ -595,7 +636,10 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     );
   }
 
-  Widget _buildPieChart(Map<String, dynamic> statistics, ColorScheme colorScheme) {
+  Widget _buildPieChart(
+    Map<String, dynamic> statistics,
+    ColorScheme colorScheme,
+  ) {
     final correctAnswers = statistics['correctAnswers'] as int;
     final totalQuestions = statistics['totalQuestions'] as int;
     final wrongAnswers = totalQuestions - correctAnswers;
@@ -616,7 +660,8 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                 PieChartSectionData(
                   color: Colors.green,
                   value: correctAnswers.toDouble(),
-                  title: '${((correctAnswers / totalQuestions) * 100).toStringAsFixed(1)}%',
+                  title:
+                      '${((correctAnswers / totalQuestions) * 100).toStringAsFixed(1)}%',
                   radius: 60,
                   titleStyle: const TextStyle(
                     fontSize: 14,
@@ -627,7 +672,8 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                 PieChartSectionData(
                   color: Colors.red,
                   value: wrongAnswers.toDouble(),
-                  title: '${((wrongAnswers / totalQuestions) * 100).toStringAsFixed(1)}%',
+                  title:
+                      '${((wrongAnswers / totalQuestions) * 100).toStringAsFixed(1)}%',
                   radius: 60,
                   titleStyle: const TextStyle(
                     fontSize: 14,
@@ -671,10 +717,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                label,
-                style: const TextStyle(fontSize: 12),
-              ),
+              Text(label, style: const TextStyle(fontSize: 12)),
               Text(
                 '$value',
                 style: const TextStyle(
@@ -694,14 +737,17 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     ColorScheme colorScheme,
   ) {
     final sortedCategories = categoryStats.entries.toList()
-      ..sort((a, b) => (b.value['averageScore'] as double)
-          .compareTo(a.value['averageScore'] as double));
+      ..sort(
+        (a, b) => (b.value['averageScore'] as double).compareTo(
+          a.value['averageScore'] as double,
+        ),
+      );
 
     return sortedCategories.map((entry) {
       final category = entry.key;
       final stats = entry.value;
       final averageScore = stats['averageScore'] as double;
-      
+
       Color scoreColor;
       if (averageScore >= 80) {
         scoreColor = Colors.green;
@@ -728,11 +774,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                       color: scoreColor.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Icon(
-                      Icons.category,
-                      color: scoreColor,
-                      size: 24,
-                    ),
+                    child: Icon(Icons.category, color: scoreColor, size: 24),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
@@ -757,7 +799,10 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 6,
+                    ),
                     decoration: BoxDecoration(
                       color: scoreColor,
                       borderRadius: BorderRadius.circular(12),
@@ -779,11 +824,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                   Expanded(
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.check_circle,
-                          size: 16,
-                          color: Colors.green,
-                        ),
+                        Icon(Icons.check_circle, size: 16, color: Colors.green),
                         const SizedBox(width: 4),
                         Text(
                           '${stats['correctAnswers']}',
@@ -795,11 +836,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                   Expanded(
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.cancel,
-                          size: 16,
-                          color: Colors.red,
-                        ),
+                        Icon(Icons.cancel, size: 16, color: Colors.red),
                         const SizedBox(width: 4),
                         Text(
                           '${stats['totalQuestions'] - stats['correctAnswers']}',
@@ -811,11 +848,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                   Expanded(
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.quiz,
-                          size: 16,
-                          color: colorScheme.primary,
-                        ),
+                        Icon(Icons.quiz, size: 16, color: colorScheme.primary),
                         const SizedBox(width: 4),
                         Text(
                           '${stats['totalQuestions']} domande',
@@ -841,7 +874,11 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
   ) {
     return Row(
       children: [
-        Icon(icon, size: 20, color: colorScheme.onPrimaryContainer.withValues(alpha: 0.7)),
+        Icon(
+          icon,
+          size: 20,
+          color: colorScheme.onPrimaryContainer.withValues(alpha: 0.7),
+        ),
         const SizedBox(width: 8),
         Expanded(
           child: Text(
@@ -871,7 +908,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
   ) {
     final dateFormat = DateFormat('dd/MM/yyyy HH:mm');
     final percentuale = quiz.percentuale;
-    
+
     Color scoreColor;
     if (percentuale >= 90) {
       scoreColor = Colors.green;
@@ -917,16 +954,13 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                         ),
                         Text(
                           '${percentuale.toStringAsFixed(0)}%',
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: scoreColor,
-                          ),
+                          style: TextStyle(fontSize: 12, color: scoreColor),
                         ),
                       ],
                     ),
                   ),
                   const SizedBox(width: 16),
-                  
+
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -962,11 +996,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                               style: const TextStyle(fontSize: 12),
                             ),
                             const SizedBox(width: 12),
-                            Icon(
-                              Icons.cancel,
-                              size: 16,
-                              color: Colors.red,
-                            ),
+                            Icon(Icons.cancel, size: 16, color: Colors.red),
                             const SizedBox(width: 4),
                             Text(
                               '${quiz.totale - quiz.punteggio}',
@@ -977,7 +1007,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                       ],
                     ),
                   ),
-                  
+
                   IconButton(
                     icon: const Icon(Icons.delete_outline),
                     color: Colors.red,
@@ -1003,7 +1033,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
         final colorScheme = Theme.of(context).colorScheme;
         final dateFormat = DateFormat('dd/MM/yyyy HH:mm');
         final percentuale = quiz.percentuale;
-        
+
         return DraggableScrollableSheet(
           initialChildSize: 0.7,
           minChildSize: 0.5,
@@ -1026,7 +1056,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                       ),
                     ),
                   ),
-                  
+
                   Text(
                     'Dettagli Quiz',
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
@@ -1034,26 +1064,42 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                     ),
                   ),
                   const SizedBox(height: 20),
-                  
+
                   Card(
                     color: colorScheme.secondaryContainer,
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Column(
                         children: [
-                          _buildDetailRow('Categorie', quiz.categorie, Icons.category),
+                          _buildDetailRow(
+                            'Categorie',
+                            quiz.categorie,
+                            Icons.category,
+                          ),
                           const Divider(height: 24),
-                          _buildDetailRow('Data', dateFormat.format(quiz.dataCompletamento), Icons.calendar_today),
+                          _buildDetailRow(
+                            'Data',
+                            dateFormat.format(quiz.dataCompletamento),
+                            Icons.calendar_today,
+                          ),
                           const Divider(height: 24),
-                          _buildDetailRow('Punteggio', '${quiz.punteggio} / ${quiz.totale}', Icons.score),
+                          _buildDetailRow(
+                            'Punteggio',
+                            '${quiz.punteggio} / ${quiz.totale}',
+                            Icons.score,
+                          ),
                           const Divider(height: 24),
-                          _buildDetailRow('Percentuale', '${percentuale.toStringAsFixed(1)}%', Icons.percent),
+                          _buildDetailRow(
+                            'Percentuale',
+                            '${percentuale.toStringAsFixed(1)}%',
+                            Icons.percent,
+                          ),
                         ],
                       ),
                     ),
                   ),
                   const SizedBox(height: 20),
-                  
+
                   Text(
                     'Risposte (${quiz.risultati.length})',
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
@@ -1061,7 +1107,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                     ),
                   ),
                   const SizedBox(height: 12),
-                  
+
                   Expanded(
                     child: ListView.builder(
                       controller: scrollController,
@@ -1074,9 +1120,13 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                               : Colors.red.withValues(alpha: 0.1),
                           child: ListTile(
                             leading: CircleAvatar(
-                              backgroundColor: risultato.isCorretta ? Colors.green : Colors.red,
+                              backgroundColor: risultato.isCorretta
+                                  ? Colors.green
+                                  : Colors.red,
                               child: Icon(
-                                risultato.isCorretta ? Icons.check : Icons.close,
+                                risultato.isCorretta
+                                    ? Icons.check
+                                    : Icons.close,
                                 color: Colors.white,
                               ),
                             ),
@@ -1104,18 +1154,12 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
         Expanded(
           child: Text(
             label,
-            style: const TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w500,
-            ),
+            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
           ),
         ),
         Text(
           value,
-          style: const TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.bold,
-          ),
+          style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
         ),
       ],
     );
