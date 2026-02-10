@@ -30,9 +30,13 @@ class _QuizPageState extends State<QuizPage> {
   @override
   void initState() {
     super.initState();
-    _loadQuizzes();
-    _loadRecentHistory();
-    _updateMissedQuestionsCount();
+    _loadData();
+  }
+
+  Future<void> _loadData() async {
+    await _loadQuizzes();
+    await _loadRecentHistory();
+    await _updateMissedQuestionsCount();
   }
 
   Future<void> _loadRecentHistory() async {
@@ -59,9 +63,11 @@ class _QuizPageState extends State<QuizPage> {
 
   Future<void> _loadQuizzes() async {
     await _quizService.loadAllQuizzes();
-    setState(() {
-      _isLoading = false;
-    });
+    if (mounted) {
+      setState(() {
+        _isLoading = false;
+      });
+    }
   }
 
   void _startQuiz() async {
