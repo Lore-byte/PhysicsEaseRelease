@@ -102,7 +102,7 @@ class _QuizPageState extends State<QuizPage> {
       ),
     );
     if (mounted) {
-      _loadRecentHistory();
+      await _loadRecentHistory();
     }
   }
 
@@ -393,9 +393,9 @@ class _QuizPageState extends State<QuizPage> {
       clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: () async {
-          await Navigator.of(context).push(
-            MaterialPageRoute(builder: (ctx) => QuizStatisticsPage()),
-          );
+          await Navigator.of(
+            context,
+          ).push(MaterialPageRoute(builder: (ctx) => QuizStatisticsPage()));
           _loadRecentHistory();
         },
         child: Padding(

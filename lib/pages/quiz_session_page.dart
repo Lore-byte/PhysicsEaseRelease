@@ -107,9 +107,9 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
 
     // Quando torniamo dalla pagina dei risultati (back button o "Nuovo Quiz"),
     // chiudiamo anche la sessione per tornare alla QuizPage
-    if (mounted) {
-      Navigator.pop(context);
-    }
+    // if (mounted) {
+    //   Navigator.pop(context);
+    // }
   }
 
   @override
