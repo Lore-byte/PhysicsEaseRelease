@@ -5,6 +5,7 @@ import 'package:physics_ease_release/pages/quiz_session_page.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 import 'package:physics_ease_release/pages/quiz_statistics_page.dart';
 import 'package:physics_ease_release/models/quiz_result.dart';
+import 'package:physics_ease_release/models/quiz.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:fl_chart/fl_chart.dart';
 
@@ -24,12 +25,14 @@ class _QuizPageState extends State<QuizPage> {
   int _numberOfQuestions = 10;
   bool _isLoading = true;
   List<QuizSessionResult> _recentHistory = [];
+  int _missedQuestionsCount = 0;
 
   @override
   void initState() {
     super.initState();
     _loadQuizzes();
     _loadRecentHistory();
+    _updateMissedQuestionsCount();
   }
 
   Future<void> _loadRecentHistory() async {
@@ -103,7 +106,184 @@ class _QuizPageState extends State<QuizPage> {
     );
     if (mounted) {
       await _loadRecentHistory();
+      _updateMissedQuestionsCount();
     }
+  }
+
+  Future<void> _updateMissedQuestionsCount() async {
+    final missedQuizzes = await _getMissedQuizzes();
+    if (mounted) {
+      setState(() {
+        _missedQuestionsCount = missedQuizzes.length;
+      });
+    }
+  }
+
+  Future<List<Quiz>> _getMissedQuizzes() async {
+    final prefs = await SharedPreferences.getInstance();
+    final savedResults = prefs.getStringList('quiz_history') ?? [];
+    
+    // Conta quanti errori ha fatto per ogni domanda
+    final Map<String, int> missedCount = {};
+    
+    for (String jsonString in savedResults) {
+      try {
+        final session = QuizSessionResult.fromJson(jsonString);
+        for (final result in session.risultati) {
+          if (!result.isCorretta) {
+            missedCount[result.quizId] = (missedCount[result.quizId] ?? 0) + 1;
+          }
+        }
+      } catch (e) {
+        // ignore
+      }
+    }
+
+    // Recupera i quiz effettivi dalle categorie selezionate
+    final List<Quiz> missedQuizzes = [];
+    final categoriesToCheck = _selectedCategories.isEmpty 
+        ? QuizService.availableCategories 
+        : _selectedCategories.toList();
+
+    for (final category in categoriesToCheck) {
+      final quizzes = _quizService.getQuizzesByCategory(category);
+      for (final quiz in quizzes) {
+        if (missedCount.containsKey(quiz.id)) {
+          missedQuizzes.add(quiz);
+        }
+      }
+    }
+
+    // Ordina per numero di errori (dal più sbagliato al meno sbagliato)
+    missedQuizzes.sort((a, b) => 
+      (missedCount[b.id] ?? 0).compareTo(missedCount[a.id] ?? 0)
+    );
+
+    return missedQuizzes;
+  }
+
+  void _startMissedQuestionsQuiz() async {
+    final missedQuizzes = await _getMissedQuizzes();
+
+    if (missedQuizzes.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            _selectedCategories.isEmpty
+                ? 'Nessuna domanda sbagliata trovata!'
+                : 'Nessuna domanda sbagliata per gli argomenti selezionati!',
+          ),
+          backgroundColor: Colors.orange,
+        ),
+      );
+      return;
+    }
+
+    // Limita al numero di domande richiesto (o prendi tutte se sono meno)
+    final quizzesToUse = missedQuizzes.take(_numberOfQuestions).toList();
+
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => QuizSessionPage(
+          quizzes: quizzesToUse,
+          selectedCategories: _selectedCategories.isEmpty 
+              ? QuizService.availableCategories 
+              : _selectedCategories.toList(),
+          setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
+        ),
+      ),
+    );
+    if (mounted) {
+      await _loadRecentHistory();
+      _updateMissedQuestionsCount();
+    }
+  }
+
+  void _showMissedQuestionsInfo() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Row(
+          children: [
+            Icon(
+              Icons.lightbulb_outline,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            const SizedBox(width: 8),
+            const Text('Come funziona'),
+          ],
+        ),
+        content: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'Questa funzione ti permette di rifare tutte le domande che hai sbagliato in passato.',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
+              const SizedBox(height: 16),
+              _buildTipItem(
+                'Filtra per argomento',
+                'Seleziona gli argomenti sopra per ripassare solo le domande sbagliate di quegli argomenti.',
+              ),
+              const SizedBox(height: 12),
+              _buildTipItem(
+                'Tutte le domande',
+                'Non selezionare nessun argomento per rifare tutte le domande sbagliate.',
+              ),
+              const SizedBox(height: 12),
+              _buildTipItem(
+                'Priorità agli errori',
+                'Le domande sono ordinate: prima quelle che sbagli più spesso!',
+              ),
+              const SizedBox(height: 12),
+              _buildTipItem(
+                'Numero di domande',
+                'Usa lo slider sopra per decidere quante domande rifare.',
+              ),
+            ],
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Ho capito!'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildTipItem(String title, String description) {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const SizedBox(width: 8),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                title,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14,
+                ),
+              ),
+              Text(
+                description,
+                style: TextStyle(
+                  fontSize: 13,
+                  color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.7),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
   }
 
   @override
@@ -243,6 +423,7 @@ class _QuizPageState extends State<QuizPage> {
                                       } else {
                                         _selectedCategories.remove(category);
                                       }
+                                      _updateMissedQuestionsCount();
                                     });
                                   },
                                   selectedColor: colorScheme.primary,
@@ -349,6 +530,52 @@ class _QuizPageState extends State<QuizPage> {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
+                        ),
+                        const SizedBox(height: 12),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Expanded(
+                              child: OutlinedButton.icon(
+                                onPressed: _missedQuestionsCount > 0 ? _startMissedQuestionsQuiz : null,
+                                icon: const Icon(Icons.refresh, size: 24),
+                                label: Text(
+                                  _missedQuestionsCount > 0
+                                      ? 'Rifai Domande Sbagliate ($_missedQuestionsCount)'
+                                      : 'Nessuna Domanda Sbagliata',
+                                  style: const TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                style: OutlinedButton.styleFrom(
+                                  padding: const EdgeInsets.all(20),
+                                  side: BorderSide(
+                                    color: _missedQuestionsCount > 0 
+                                        ? colorScheme.error 
+                                        : colorScheme.onSurface.withValues(alpha: 0.12),
+                                    width: 2,
+                                  ),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  foregroundColor: _missedQuestionsCount > 0 
+                                      ? colorScheme.error 
+                                      : null,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            IconButton(
+                              onPressed: _showMissedQuestionsInfo,
+                              icon: Icon(
+                                Icons.info_outline,
+                                color: colorScheme.primary,
+                                size: 28,
+                              ),
+                              tooltip: 'Come funziona',
+                            ),
+                          ],
                         ),
 
                         const SizedBox(height: 32),
