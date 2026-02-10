@@ -1,7 +1,9 @@
 // lib/pages/quiz_statistics_page.dart
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/models/quiz_result.dart';
+import 'package:physics_ease_release/models/quiz.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
+import 'package:physics_ease_release/services/quiz_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
 import 'dart:developer' as developer;
@@ -17,11 +19,17 @@ class QuizStatisticsPage extends StatefulWidget {
 class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
   List<QuizSessionResult> _quizHistory = [];
   bool _isLoading = true;
+  final QuizService _quizService = QuizService();
 
   @override
   void initState() {
     super.initState();
-    _loadQuizHistory();
+    _loadData();
+  }
+
+  Future<void> _loadData() async {
+    await _quizService.loadAllQuizzes();
+    await _loadQuizHistory();
   }
 
   Future<void> _loadQuizHistory() async {
@@ -299,6 +307,78 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     // categoryStats.remove(_uncategorizedLabel);
 
     return categoryStats;
+  }
+
+  /// Calcola le domande più frequentemente sbagliate
+  List<Map<String, dynamic>> _calculateMostMissedQuestions({int limit = 10}) {
+    final Map<String, Map<String, dynamic>> missedStats = {};
+
+    // Analizza tutti i risultati
+    for (final quiz in _quizHistory) {
+      for (final risultato in quiz.risultati) {
+        final quizId = risultato.quizId;
+
+        if (!missedStats.containsKey(quizId)) {
+          missedStats[quizId] = {
+            'total': 0,
+            'errors': 0,
+            'errorRate': 0.0,
+            'quiz': null,
+          };
+        }
+
+        missedStats[quizId]!['total'] = (missedStats[quizId]!['total'] as int) + 1;
+        if (!risultato.isCorretta) {
+          missedStats[quizId]!['errors'] = (missedStats[quizId]!['errors'] as int) + 1;
+        }
+      }
+    }
+
+    // Calcola il tasso di errore e carica i dati della domanda
+    final List<Map<String, dynamic>> results = [];
+    for (final entry in missedStats.entries) {
+      final quizId = entry.key;
+      final stats = entry.value;
+      final total = stats['total'] as int;
+      final errors = stats['errors'] as int;
+      final errorRate = (errors / total) * 100;
+
+      // Carica il quiz dal servizio
+      Quiz? quizData;
+      for (final category in QuizService.availableCategories) {
+        final quizzes = _quizService.getQuizzesByCategory(category);
+        final found = quizzes.firstWhere(
+          (q) => q.id == quizId,
+          orElse: () => Quiz(
+            id: '',
+            domanda: '',
+            categoria: '',
+            opzioni: [],
+            rispostaCorretta: 0,
+            spiegazione: '',
+            difficolta: '',
+          ),
+        );
+        if (found.id.isNotEmpty) {
+          quizData = found;
+          break;
+        }
+      }
+
+      if (quizData != null && quizData.id.isNotEmpty) {
+        results.add({
+          'quizId': quizId,
+          'quiz': quizData,
+          'total': total,
+          'errors': errors,
+          'errorRate': errorRate,
+        });
+      }
+    }
+
+    // Ordina per numero di errori e filtra solo le domande sbagliate
+    results.sort((a, b) => (b['errors'] as int).compareTo(a['errors'] as int));
+    return results.where((r) => (r['errors'] as int) > 0).take(limit).toList();
   }
 
   List<Widget> _buildCategoryCards(
@@ -956,6 +1036,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                           ),
                         ),
                         const SizedBox(height: 24),
+                        _buildMostMissedQuestionsCard(colorScheme),
                         if (categoryStats.isNotEmpty) ...[
                           Row(
                             children: [
@@ -979,10 +1060,20 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              'Storico Quiz',
-                              style: Theme.of(context).textTheme.titleLarge
-                                  ?.copyWith(fontWeight: FontWeight.bold),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.history,
+                                  color: colorScheme.primary,
+                                  size: 24,
+                                ),
+                                const SizedBox(width: 12),
+                                Text(
+                                  'Storico Quiz',
+                                  style: Theme.of(context).textTheme.titleLarge
+                                      ?.copyWith(fontWeight: FontWeight.bold),
+                                ),
+                              ],
                             ),
                             IconButton(
                               icon: const Icon(Icons.delete_forever),
@@ -1196,6 +1287,308 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
           ),
         ),
       ],
+    );
+  }
+
+  Widget _buildMostMissedQuestionsCard(ColorScheme colorScheme) {
+    final mostMissedQuestions = _calculateMostMissedQuestions(limit: 10);
+
+    if (mostMissedQuestions.isEmpty) {
+      return const SizedBox.shrink();
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const SizedBox(height: 4),
+        Card(
+          margin: const EdgeInsets.only(bottom: 12),
+          child: ExpansionTile(
+            tilePadding: const EdgeInsets.symmetric(
+              horizontal: 16.0,
+              vertical: 8.0,
+            ),
+            childrenPadding: const EdgeInsets.only(bottom: 8.0),
+            leading: Icon(
+              Icons.warning_amber,
+              color: Colors.orange,
+              size: 24,
+            ),
+            title: Text(
+              'Domande Più Sbagliate',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            children: [
+              ListView.builder(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                itemCount: mostMissedQuestions.length,
+                itemBuilder: (context, index) {
+                  final data = mostMissedQuestions[index];
+                  final quiz = data['quiz'] as Quiz;
+                  final errors = data['errors'] as int;
+
+                  return InkWell(
+                    onTap: () {
+                      _showMissedQuestionDetails(quiz, errors, colorScheme);
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16.0,
+                        vertical: 12.0,
+                      ),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  quiz.domanda,
+                                  style: const TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                                const SizedBox(height: 4),
+                                Text(
+                                  quiz.categoria,
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: colorScheme.onSurface.withValues(
+                                      alpha: 0.6,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 12,
+                              vertical: 6,
+                            ),
+                            decoration: BoxDecoration(
+                              color: Colors.red.withValues(alpha: 0.2),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Text(
+                              '❌ $errors',
+                              style: const TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.red,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  void _showMissedQuestionDetails(
+    Quiz quiz,
+    int errors,
+    ColorScheme colorScheme,
+  ) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) {
+        return DraggableScrollableSheet(
+          initialChildSize: 0.7,
+          minChildSize: 0.5,
+          maxChildSize: 0.95,
+          expand: false,
+          builder: (context, scrollController) {
+            return Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Center(
+                    child: Container(
+                      width: 40,
+                      height: 4,
+                      margin: const EdgeInsets.only(bottom: 20),
+                      decoration: BoxDecoration(
+                        color: colorScheme.onSurface.withValues(alpha: 0.2),
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                    ),
+                  ),
+                  Text(
+                    'Dettagli Domanda',
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  Card(
+                    color: colorScheme.secondaryContainer,
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Domanda',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: colorScheme.onSecondaryContainer
+                                  .withValues(alpha: 0.7),
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          Text(
+                            quiz.domanda,
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          const Divider(height: 24),
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Categoria',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: colorScheme.onSecondaryContainer
+                                            .withValues(alpha: 0.7),
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      quiz.categoria,
+                                      style: const TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Difficoltà',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: colorScheme.onSecondaryContainer
+                                            .withValues(alpha: 0.7),
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      quiz.difficolta,
+                                      style: const TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Errori',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.red.withValues(alpha: 0.7),
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      '$errors',
+                                      style: const TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  Text(
+                    'Opzioni di Risposta',
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  Expanded(
+                    child: ListView.builder(
+                      controller: scrollController,
+                      itemCount: quiz.opzioni.length,
+                      itemBuilder: (context, index) {
+                        final isCorrect = index == quiz.rispostaCorretta;
+                        return Card(
+                          color: isCorrect
+                              ? Colors.green.withValues(alpha: 0.1)
+                              : Colors.grey.withValues(alpha: 0.1),
+                          margin: const EdgeInsets.only(bottom: 8),
+                          child: ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor:
+                                  isCorrect ? Colors.green : Colors.grey,
+                              child: Text(
+                                String.fromCharCode(65 + index),
+                                style: const TextStyle(color: Colors.white),
+                              ),
+                            ),
+                            title: Text(quiz.opzioni[index]),
+                            trailing: isCorrect
+                                ? const Icon(Icons.check_circle,
+                                    color: Colors.green)
+                                : null,
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      },
     );
   }
 }
