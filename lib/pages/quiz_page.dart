@@ -171,6 +171,10 @@ class _QuizPageState extends State<QuizPage> {
   void _startMissedQuestionsQuiz() async {
     final missedQuizzes = await _getMissedQuizzes();
 
+    if (!mounted) {
+      return;
+    }
+
     if (missedQuizzes.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -200,10 +204,12 @@ class _QuizPageState extends State<QuizPage> {
         ),
       ),
     );
-    if (mounted) {
-      await _loadRecentHistory();
-      _updateMissedQuestionsCount();
+    if (!mounted) {
+      return;
     }
+
+    await _loadRecentHistory();
+    _updateMissedQuestionsCount();
   }
 
   void _showMissedQuestionsInfo() {
