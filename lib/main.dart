@@ -356,6 +356,13 @@ class _MyAppState extends State<MyApp> {
   void _onItemTapped(int index) {
     FocusScope.of(context).unfocus();
 
+    if (_selectedIndex != index) {
+      final currentNavigator = _navigatorKeys[_selectedIndex].currentState;
+      if (currentNavigator?.canPop() ?? false) {
+        currentNavigator!.popUntil((route) => route.isFirst);
+      }
+    }
+
     if (_selectedIndex == index) {
       _navigatorKeys[index].currentState?.popUntil((route) => route.isFirst);
 
@@ -686,9 +693,19 @@ class _MyAppState extends State<MyApp> {
                   children: List.generate(_pages.length, (index) {
                     return Navigator(
                       key: _navigatorKeys[index],
+                      onGenerateInitialRoutes: (navigator, initialRoute) {
+                        return [
+                          MaterialPageRoute(
+                            builder: (context) => _pages[index],
+                            settings: const RouteSettings(
+                              name: Navigator.defaultRouteName,
+                            ),
+                          ),
+                        ];
+                      },
                       onGenerateRoute: (routeSettings) {
                         return MaterialPageRoute(
-                          builder: (innerContext) => _pages[index],
+                          builder: (context) => _pages[index],
                           settings: routeSettings,
                         );
                       },
