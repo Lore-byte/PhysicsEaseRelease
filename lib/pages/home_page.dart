@@ -148,8 +148,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         _filteredFormulas = widget.allFormulas.where((formula) {
           return formula.titolo.toLowerCase().contains(queryLower) ||
               formula.descrizione.toLowerCase().contains(queryLower) ||
-              formula.paroleChiave
-                  .any((k) => k.toLowerCase().contains(queryLower));
+              formula.paroleChiave.any(
+                (k) => k.toLowerCase().contains(queryLower),
+              );
         }).toList();
       }
     });
@@ -199,11 +200,14 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     // Extract unique categories from the formulas list
-    final Set<String> categories =
-        widget.allFormulas.map((f) => f.categoria).toSet();
+    final Set<String> categories = widget.allFormulas
+        .map((f) => f.categoria)
+        .toSet();
 
     // Sort categories alphabetically, except "Personalizzate" which goes last
-    List<String> temi = categories.where((cat) => cat != 'Personalizzate').toList();
+    List<String> temi = categories
+        .where((cat) => cat != 'Personalizzate')
+        .toList();
     temi.sort();
 
     if (categories.contains('Personalizzate')) {
@@ -219,193 +223,226 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
             ValueListenableBuilder<bool>(
               valueListenable: widget.searchBarVisible,
               builder: (context, visible, _) {
-            if (!visible) {
-              // When search bar closes, clear query and focus
-              if (_searchQuery.isNotEmpty || _searchFocusNode.hasFocus) {
-                WidgetsBinding.instance.addPostFrameCallback((_) => _resetSearchAndFocus());
-              }
-              return const SizedBox.shrink(); // Return empty space
-            }
+                if (!visible) {
+                  // When search bar closes, clear query and focus
+                  if (_searchQuery.isNotEmpty || _searchFocusNode.hasFocus) {
+                    WidgetsBinding.instance.addPostFrameCallback(
+                      (_) => _resetSearchAndFocus(),
+                    );
+                  }
+                  return const SizedBox.shrink(); // Return empty space
+                }
 
-            return Padding(
-              padding: EdgeInsets.only(
-                top: MediaQuery.of(context).viewPadding.top + 70,
-                left: 16,
-                right: 16,
-                bottom: 16,
-              ),
-              child: TextField(
-                controller: _searchController,
-                focusNode: _searchFocusNode,
-                autofocus: true,                         // focalizza solo all'apertura
-                textInputAction: TextInputAction.search, // tasto Invio/Cerca
-                onSubmitted: (_) {
-                  FocusScope.of(context).unfocus();      // chiude tastiera in modo stabile
-                  // opzionale: widget.searchBarVisible.value = false; // per chiudere anche la barra
-                },
-                decoration: InputDecoration(
-                  hintText: 'Cerca formule o parole chiave...',
-                  prefixIcon: Icon(
-                    Icons.search,
-                    color: Theme.of(context).colorScheme.onSurfaceVariant,
+                return Padding(
+                  padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).viewPadding.top + 70,
+                    left: 16,
+                    right: 16,
+                    bottom: 16,
                   ),
-                  suffixIcon: _searchQuery.isNotEmpty
-                      ? IconButton(
-                    icon: Icon(Icons.backspace_outlined, color: Theme.of(context).colorScheme.onSurfaceVariant),
-                    onPressed: () {
-                      _resetSearchAndFocus();
+                  child: TextField(
+                    controller: _searchController,
+                    focusNode: _searchFocusNode,
+                    autofocus: true, // focalizza solo all'apertura
+                    textInputAction:
+                        TextInputAction.search, // tasto Invio/Cerca
+                    onSubmitted: (_) {
+                      FocusScope.of(
+                        context,
+                      ).unfocus(); // chiude tastiera in modo stabile
+                      // opzionale: widget.searchBarVisible.value = false; // per chiudere anche la barra
                     },
-                  )
-                      : null,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(
-                      color: Theme.of(context).colorScheme.outline,
-                    ),
-                  ),
-                  filled: true,
-                  fillColor: Theme.of(context).colorScheme.surfaceContainerHighest,
-                ),
-                onChanged: _onSearchChanged,
-              ),
-            );
-
-          },
-        ),
-
-        // Main content list (categories or filtered formulas)
-        ValueListenableBuilder<bool>(
-          valueListenable: widget.searchBarVisible,
-          builder: (context, searchVisible, _) {
-            final topListPadding = searchVisible
-                ? 0.0
-                : MediaQuery.of(context).viewPadding.top + 70;
-
-            return Expanded(
-              child: GestureDetector(
-                // Tap outside search bar to dismiss keyboard
-                onTap: () => _searchFocusNode.unfocus(),
-                behavior: HitTestBehavior.translucent,
-                child: _searchQuery.isEmpty
-                    // If search is empty, show category list
-                    ? ListView.builder(
-                        padding: EdgeInsets.only(
-                          top: topListPadding,
-                          bottom: MediaQuery.of(context).viewPadding.bottom + 98 + MediaQuery.of(context).viewInsets.bottom,
+                    decoration: InputDecoration(
+                      hintText: 'Cerca formule o parole chiave...',
+                      prefixIcon: Icon(
+                        Icons.search,
+                        color: Theme.of(context).colorScheme.onSurfaceVariant,
+                      ),
+                      suffixIcon: _searchQuery.isNotEmpty
+                          ? IconButton(
+                              icon: Icon(
+                                Icons.backspace_outlined,
+                                color: Theme.of(
+                                  context,
+                                ).colorScheme.onSurfaceVariant,
+                              ),
+                              onPressed: () {
+                                _resetSearchAndFocus();
+                              },
+                            )
+                          : null,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: BorderSide(
+                          color: Theme.of(context).colorScheme.outline,
                         ),
-                        itemCount: temi.length,
-                        itemBuilder: (context, index) {
-                          final tema = temi[index];
-                          return _buildCategoryCard(
-                            context: context,
-                            title: tema,
-                            icon: _categoryIcons[tema] ?? Icons.category,
-                            onTap: () async {
-                              // When category tapped, hide search bar and navigate to category page
-                              widget.searchBarVisible.value = false;
-                              _searchFocusNode.unfocus();
-                              await Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (_) => CategoryFormulasPage(
-                                    category: tema,
-                                    allFormulas: widget.allFormulas,
-                                    favoriteIds: widget.favoriteIds,
-                                    onToggleFavorite: widget.onToggleFavorite,
-                                    themeMode: widget.themeMode,
-                                    setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
+                      ),
+                      filled: true,
+                      fillColor: Theme.of(
+                        context,
+                      ).colorScheme.surfaceContainerHighest,
+                    ),
+                    onChanged: _onSearchChanged,
+                  ),
+                );
+              },
+            ),
+
+            // Main content list (categories or filtered formulas)
+            ValueListenableBuilder<bool>(
+              valueListenable: widget.searchBarVisible,
+              builder: (context, searchVisible, _) {
+                final topListPadding = searchVisible
+                    ? 0.0
+                    : MediaQuery.of(context).viewPadding.top + 70;
+
+                return Expanded(
+                  child: GestureDetector(
+                    // Tap outside search bar to dismiss keyboard
+                    onTap: () => _searchFocusNode.unfocus(),
+                    behavior: HitTestBehavior.translucent,
+                    child: _searchQuery.isEmpty
+                        // If search is empty, show category list
+                        ? ListView.builder(
+                            padding: EdgeInsets.only(
+                              top: topListPadding,
+                              bottom:
+                                  MediaQuery.of(context).viewPadding.bottom +
+                                  98 +
+                                  MediaQuery.of(context).viewInsets.bottom,
+                            ),
+                            itemCount: temi.length,
+                            itemBuilder: (context, index) {
+                              final tema = temi[index];
+                              return _buildCategoryCard(
+                                context: context,
+                                title: tema,
+                                icon: _categoryIcons[tema] ?? Icons.category,
+                                onTap: () async {
+                                  // When category tapped, hide search bar and navigate to category page
+                                  widget.searchBarVisible.value = false;
+                                  _searchFocusNode.unfocus();
+                                  await Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (_) => CategoryFormulasPage(
+                                        category: tema,
+                                        allFormulas: widget.allFormulas,
+                                        favoriteIds: widget.favoriteIds,
+                                        onToggleFavorite:
+                                            widget.onToggleFavorite,
+                                        themeMode: widget.themeMode,
+                                        setGlobalAppBarVisibility:
+                                            widget.setGlobalAppBarVisibility,
+                                      ),
+                                    ),
+                                  );
+                                  // Restore app bar visibility after returning
+                                  widget.setGlobalAppBarVisibility(true);
+                                },
+                              );
+                            },
+                          )
+                        // Otherwise show filtered formulas
+                        : ListView.builder(
+                            padding: EdgeInsets.only(
+                              top: 0, // Explicitly zero when filtered
+                              bottom:
+                                  MediaQuery.of(context).viewPadding.bottom +
+                                  98 +
+                                  MediaQuery.of(context).viewInsets.bottom,
+                              left: 16,
+                              right: 16,
+                            ),
+                            itemCount: _filteredFormulas.length,
+                            itemBuilder: (context, index) {
+                              final formula = _filteredFormulas[index];
+                              return Card(
+                                margin: const EdgeInsets.symmetric(
+                                  vertical: 6.0,
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                elevation: 2,
+                                child: ListTile(
+                                  title: Text(
+                                    formula.titolo,
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                    ),
                                   ),
+                                  // If LaTeX formula available, render it
+                                  subtitle: formula.formulaLatex.isNotEmpty
+                                      ? Math.tex(
+                                          formula.formulaLatex,
+                                          textStyle: TextStyle(
+                                            fontSize: 16,
+                                            color: Theme.of(
+                                              context,
+                                            ).colorScheme.onSurfaceVariant,
+                                          ),
+                                          onErrorFallback: (Object e) {
+                                            // If LaTeX fails, show error text
+                                            return Text(
+                                              'Errore LaTeX',
+                                              style: TextStyle(
+                                                color: Theme.of(
+                                                  context,
+                                                ).colorScheme.error,
+                                                fontSize: 12,
+                                              ),
+                                            );
+                                          },
+                                        )
+                                      // Fallback text if formula missing
+                                      : Text(
+                                          'Formula non disponibile',
+                                          style: TextStyle(
+                                            fontStyle: FontStyle.italic,
+                                            color: Theme.of(
+                                              context,
+                                            ).colorScheme.error,
+                                          ),
+                                        ),
+                                  trailing: const Icon(
+                                    Icons.arrow_forward_ios,
+                                    size: 16,
+                                  ),
+                                  onTap: () async {
+                                    // When formula tapped, open detail page
+                                    widget.searchBarVisible.value = false;
+                                    _searchFocusNode.unfocus();
+                                    await Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (_) => FormulaDetailPage(
+                                          formula: formula,
+                                          themeMode: widget.themeMode,
+                                          setGlobalAppBarVisibility:
+                                              widget.setGlobalAppBarVisibility,
+                                          isFavorite: widget.favoriteIds
+                                              .contains(formula.id),
+                                          onToggleFavorite:
+                                              widget.onToggleFavorite,
+                                        ),
+                                      ),
+                                    );
+                                    // Restore app bar visibility after returning
+                                    widget.setGlobalAppBarVisibility(true);
+                                  },
                                 ),
                               );
-                              // Restore app bar visibility after returning
-                              widget.setGlobalAppBarVisibility(true);
                             },
-                          );
-                        },
-                      )
-                    // Otherwise show filtered formulas
-                    : ListView.builder(
-                        padding: EdgeInsets.only(
-                          top: 0, // Explicitly zero when filtered
-                          bottom: MediaQuery.of(context).viewPadding.bottom + 98 + MediaQuery.of(context).viewInsets.bottom,
-                          left: 16,
-                          right: 16,
-                        ),
-                        itemCount: _filteredFormulas.length,
-                        itemBuilder: (context, index) {
-                          final formula = _filteredFormulas[index];
-                          return Card(
-                            margin: const EdgeInsets.symmetric(vertical: 6.0),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            elevation: 2,
-                            child: ListTile(
-                              title: Text(
-                                formula.titolo,
-                                style: const TextStyle(fontWeight: FontWeight.w500),
-                              ),
-                              // If LaTeX formula available, render it
-                              subtitle: formula.formulaLatex.isNotEmpty
-                                  ? Math.tex(
-                                      formula.formulaLatex,
-                                      textStyle: TextStyle(
-                                        fontSize: 16,
-                                        color: Theme.of(context)
-                                            .colorScheme
-                                            .onSurfaceVariant,
-                                      ),
-                                      onErrorFallback: (Object e) {
-                                        // If LaTeX fails, show error text
-                                        return Text(
-                                          'Errore LaTeX',
-                                          style: TextStyle(
-                                            color: Theme.of(context).colorScheme.error,
-                                            fontSize: 12,
-                                          ),
-                                        );
-                                      },
-                                    )
-                                  // Fallback text if formula missing
-                                  : Text(
-                                      'Formula non disponibile',
-                                      style: TextStyle(
-                                        fontStyle: FontStyle.italic,
-                                        color: Theme.of(context).colorScheme.error,
-                                      ),
-                                    ),
-                              trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                              onTap: () async {
-                                // When formula tapped, open detail page
-                                widget.searchBarVisible.value = false;
-                                _searchFocusNode.unfocus();
-                                await Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                    builder: (_) => FormulaDetailPage(
-                                      formula: formula,
-                                      themeMode: widget.themeMode,
-                                      setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
-                                      isFavorite: widget.favoriteIds.contains(formula.id),
-                                      onToggleFavorite: widget.onToggleFavorite,
-                                    ),
-                                  ),
-                                );
-                                // Restore app bar visibility after returning
-                                widget.setGlobalAppBarVisibility(true);
-                              },
-                            ),
-                          );
-                        },
-                      ),
-              ),
-            );
-          },
-        ),
+                          ),
+                  ),
+                );
+              },
+            ),
           ],
         ),
-        
+
         Positioned(
           right: 16,
-          bottom: 110,
+          bottom: 130,
           child: FloatingActionButton.extended(
             heroTag: 'quiz_fab',
             tooltip: 'Apri Quiz',
@@ -421,16 +458,25 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
               );
               widget.setGlobalAppBarVisibility(true);
             },
-            icon: const Icon(Icons.quiz_rounded, size: 22),
+            icon: const Icon(Icons.quiz_rounded, size: 25),
             label: Text(
               'Quiz',
               style: TextStyle(
-                fontSize: 15,
+                fontSize: 16,
                 fontWeight: FontWeight.w700,
                 letterSpacing: 0.2,
                 color: widget.colorScheme.onPrimary,
               ),
             ),
+            // NEW: padding interno attorno a icona + testo
+            extendedPadding: const EdgeInsets.symmetric(
+              horizontal: 30,
+              vertical: 20,
+            ),
+
+            // opzionale: distanza tra icona e label
+            extendedIconLabelSpacing: 10,
+
             backgroundColor: widget.colorScheme.primary,
             foregroundColor: widget.colorScheme.onPrimary,
             elevation: 6,

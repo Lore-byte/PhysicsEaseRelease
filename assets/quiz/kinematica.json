@@ -3,7 +3,7 @@
     {
       "id": "kin_001",
       "domanda": "Quale formula descrive il moto rettilineo uniforme?",
-      "categoria": "Kinematica",
+      "categoria": "Cinematica",
       "sottocategoria": "Moto rettilineo",
       "opzioni": [
         "s = v × t",
@@ -19,7 +19,7 @@
     {
       "id": "kin_002",
       "domanda": "Nel moto uniformemente accelerato, quale grandezza rimane costante?",
-      "categoria": "Kinematica",
+      "categoria": "Cinematica",
       "sottocategoria": "Moto accelerato",
       "opzioni": [
         "La velocità",
@@ -35,7 +35,7 @@
     {
       "id": "kin_003",
       "domanda": "Un oggetto viene lanciato verticalmente verso l'alto. Quale affermazione è corretta?",
-      "categoria": "Kinematica",
+      "categoria": "Cinematica",
       "sottocategoria": "Moto verticale",
       "opzioni": [
         "L'accelerazione è zero nel punto più alto",
@@ -51,7 +51,7 @@
     {
       "id": "kin_004",
       "domanda": "In un moto circolare uniforme, quale grandezza è costante?",
-      "categoria": "Kinematica",
+      "categoria": "Cinematica",
       "sottocategoria": "Moto circolare",
       "opzioni": [
         "La velocità vettoriale",
@@ -67,7 +67,7 @@
     {
       "id": "kin_005",
       "domanda": "Un'auto parte da ferma e raggiunge 100 km/h in 10 secondi. Qual è l'accelerazione media?",
-      "categoria": "Kinematica",
+      "categoria": "Cinematica",
       "sottocategoria": "Moto accelerato",
       "opzioni": [
         "2.78 m/s²",
@@ -83,7 +83,7 @@
     {
       "id": "kin_006",
       "domanda": "Quale delle seguenti grandezze NON è un vettore?",
-      "categoria": "Kinematica",
+      "categoria": "Cinematica",
       "sottocategoria": "Grandezze vettoriali",
       "opzioni": [
         "Velocità",
@@ -99,7 +99,7 @@
     {
       "id": "kin_007",
       "domanda": "In un moto parabolico, trascurando l'attrito, come varia la componente orizzontale della velocità?",
-      "categoria": "Kinematica",
+      "categoria": "Cinematica",
       "sottocategoria": "Moto parabolico",
       "opzioni": [
         "Aumenta costantemente",
@@ -115,7 +115,7 @@
     {
       "id": "kin_008",
       "domanda": "Quale formula esprime correttamente l'accelerazione centripeta?",
-      "categoria": "Kinematica",
+      "categoria": "Cinematica",
       "sottocategoria": "Moto circolare",
       "opzioni": [
         "a = v/r",
@@ -131,7 +131,7 @@
     {
       "id": "kin_009",
       "domanda": "Due corpi cadono dalla stessa altezza: uno ha massa 10 kg, l'altro 1 kg. Quale arriva prima al suolo (trascurando l'attrito)?",
-      "categoria": "Kinematica",
+      "categoria": "Cinematica",
       "sottocategoria": "Caduta libera",
       "opzioni": [
         "Il corpo più pesante",
@@ -147,7 +147,7 @@
     {
       "id": "kin_010",
       "domanda": "Un oggetto si muove con velocità costante di 20 m/s per 5 secondi. Quanto spazio percorre?",
-      "categoria": "Kinematica",
+      "categoria": "Cinematica",
       "sottocategoria": "Moto rettilineo",
       "opzioni": [
         "4 m",

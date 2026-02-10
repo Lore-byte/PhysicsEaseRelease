@@ -51,6 +51,7 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
     final percentuale = widget.sessionResult.percentuale;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return PopScope(
       canPop: false,
@@ -69,7 +70,7 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                 top: MediaQuery.of(context).viewPadding.top + 80,
                 left: 16.0,
                 right: 16.0,
-                bottom: MediaQuery.of(context).viewPadding.bottom + 220,
+                bottom: MediaQuery.of(context).viewPadding.bottom + 280,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -343,54 +344,79 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
             ),
 
             Positioned(
-              bottom: MediaQuery.of(context).viewPadding.bottom + 30,
+              bottom: MediaQuery.of(context).viewPadding.bottom + 94,
               left: 16,
               right: 16,
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  FilledButton.icon(
-                    onPressed: () async {
-                      await _saveFuture;
-                      if (context.mounted) {
-                        await Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (ctx) => QuizPage(
-                              setGlobalAppBarVisibility:
-                                  widget.setGlobalAppBarVisibility,
+              child: Container(
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: colorScheme.surfaceContainerHighest,
+                  borderRadius: BorderRadius.circular(32),
+                  border: Border.all(
+                    color: colorScheme.outlineVariant.withValues(alpha: 0.5),
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: isDark
+                          ? Colors.black.withValues(alpha: 0.8)
+                          : Colors.white.withValues(alpha: 0.8),
+                      blurRadius: 35,
+                      offset: const Offset(0, 50),
+                      spreadRadius: 40,
+                    ),
+                  ],
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    FilledButton.icon(
+                      onPressed: () async {
+                        await _saveFuture;
+                        if (context.mounted) {
+                          await Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (ctx) => QuizPage(
+                                setGlobalAppBarVisibility:
+                                    widget.setGlobalAppBarVisibility,
+                              ),
                             ),
-                          ),
-                        );
-                      }
-                    },
-                    icon: const Icon(Icons.replay),
-                    label: const Text('Nuovo Quiz'),
-                    style: FilledButton.styleFrom(
-                      padding: const EdgeInsets.all(16),
-                      minimumSize: const Size.fromHeight(56),
+                          );
+                        }
+                      },
+                      icon: const Icon(Icons.replay, size: 22),
+                      label: const Text(
+                        'Nuovo Quiz',
+                        style: TextStyle(fontSize: 16),
+                      ),
+                      style: FilledButton.styleFrom(
+                        padding: const EdgeInsets.all(16),
+                        minimumSize: const Size.fromHeight(56),
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 16),
-                  FilledButton.icon(
-                    onPressed: () async {
-                      await _saveFuture;
-                      if (context.mounted) {
-                        await Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (ctx) => QuizStatisticsPage(),
-                          ),
-                        );
-                      }
-                    },
-                    icon: const Icon(Icons.bar_chart),
-                    label: const Text('Le tue statistiche'),
-                    style: FilledButton.styleFrom(
-                      padding: const EdgeInsets.all(16),
-                      minimumSize: const Size.fromHeight(56),
+                    const SizedBox(height: 16),
+                    FilledButton.icon(
+                      onPressed: () async {
+                        await _saveFuture;
+                        if (context.mounted) {
+                          await Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (ctx) => QuizStatisticsPage(),
+                            ),
+                          );
+                        }
+                      },
+                      icon: const Icon(Icons.bar_chart, size: 22),
+                      label: const Text(
+                        'Le tue statistiche',
+                        style: TextStyle(fontSize: 16),
+                      ),
+                      style: FilledButton.styleFrom(
+                        padding: const EdgeInsets.all(16),
+                        minimumSize: const Size.fromHeight(56),
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 64),
-                ],
+                  ],
+                ),
               ),
             ),
           ],
