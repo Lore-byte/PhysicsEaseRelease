@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:physics_ease_release/models/quiz_result.dart';
 import 'package:physics_ease_release/models/quiz.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
-import 'package:physics_ease_release/services/quiz_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
-import 'package:physics_ease_release/services/quiz_service.dart'; // Aggiungi import
+import 'package:physics_ease_release/services/quiz_service.dart';
 import 'dart:developer' as developer;
 import 'package:fl_chart/fl_chart.dart';
 
@@ -1145,8 +1144,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
   Widget _buildProgressChart(ColorScheme colorScheme) {
     final spots = _getProgressChartData();
-    if (spots.isEmpty)
+    if (spots.isEmpty) {
       return const Center(child: Text('Nessun dato disponibile'));
+    }
 
     return LineChart(
       LineChartData(
@@ -1235,8 +1235,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     final totalQuestions = statistics['totalQuestions'] as int;
     final wrongAnswers = totalQuestions - correctAnswers;
 
-    if (totalQuestions == 0)
+    if (totalQuestions == 0) {
       return const Center(child: Text('Nessun dato disponibile'));
+    }
 
     return Row(
       children: [
