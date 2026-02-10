@@ -10,6 +10,7 @@ class QuizService {
   QuizService._internal();
 
   final Map<String, List<Quiz>> _quizzesByCategory = {};
+  final Map<String, String> _quizIdToCategoryMap = {}; // Nuova mappa per ID -> Categoria Reale
   bool _isLoaded = false;
 
   // Categorie disponibili 
@@ -62,7 +63,12 @@ class QuizService {
         final List<dynamic> quizList = jsonData['quiz'] as List<dynamic>;
 
         _quizzesByCategory[category] = quizList
-            .map((quizMap) => Quiz.fromMap(quizMap as Map<String, dynamic>))
+            .map((quizMap) {
+              final quiz = Quiz.fromMap(quizMap as Map<String, dynamic>);
+              // Mappiamo l'ID del quiz (es: "kin_001") al nome reale della categoria (es: "Cinematica")
+              _quizIdToCategoryMap[quiz.id] = quiz.categoria;
+              return quiz;
+            })
             .toList();
 
         developer.log('Loaded ${_quizzesByCategory[category]!.length} quizzes for $category');
@@ -74,6 +80,11 @@ class QuizService {
 
     _isLoaded = true;
     developer.log('All quizzes loaded successfully');
+  }
+
+  // Aggiungi questo metodo per recuperare il nome corretto
+  String? getCategoryNameByQuizId(String quizId) {
+    return _quizIdToCategoryMap[quizId];
   }
 
   List<Quiz> getQuizzesByCategory(String category) {
