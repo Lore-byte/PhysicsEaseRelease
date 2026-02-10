@@ -8,9 +8,7 @@ import 'dart:developer' as developer;
 import 'package:fl_chart/fl_chart.dart';
 
 class QuizStatisticsPage extends StatefulWidget {
-
-
-  const QuizStatisticsPage({super.key,});
+  const QuizStatisticsPage({super.key});
 
   @override
   State<QuizStatisticsPage> createState() => _QuizStatisticsPageState();
@@ -212,524 +210,95 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     };
   }
 
-  Map<String, Map<String, dynamic>> _calculateCategoryStatistics() {
-    final Map<String, List<QuizSessionResult>> quizzesByCategory = {};
+  // Aggregatore interno per categoria (per-domanda, non per-quiz)
+  // (tenuto qui per evitare nuovi file)
+  // ignore: unused_element
+  static const String _uncategorizedLabel = 'Senza categoria';
 
-    for (var quiz in _quizHistory) {
-      // Separa le categorie (potrebbero essere multiple separate da virgola)
-      final categories = quiz.categorie
-          .split(',')
-          .map((c) => c.trim())
-          .toList();
-      for (var category in categories) {
-        if (!quizzesByCategory.containsKey(category)) {
-          quizzesByCategory[category] = [];
+  String _normalizeCategory(String input) {
+    final trimmed = input.trim();
+    if (trimmed.isEmpty) return _uncategorizedLabel;
+    // Normalizza spazi multipli
+    return trimmed.replaceAll(RegExp(r'\s+'), ' ');
+  }
+
+  /// Prova a ricavare la categoria dalla singola domanda.
+  /// Supporta formati tipici: "Dinamica_12", "Dinamica:12", "[Dinamica] 12", "Dinamica-12", "Dinamica/12".
+  String? _extractCategoryFromQuestionId(String quizId) {
+    final id = quizId.trim();
+    if (id.isEmpty) return null;
+
+    // [Categoria]resto
+    final bracket = RegExp(r'^\s*\[([^\]]+)\]\s*').firstMatch(id);
+    if (bracket != null) {
+      return _normalizeCategory(bracket.group(1) ?? '');
+    }
+
+    // Categoria:resto  | Categoria/resto | Categoria-resto | Categoria_resto
+    final sep = RegExp(r'^\s*([^:_/\-]+?)\s*[:_/\-]\s*.+$').firstMatch(id);
+    if (sep != null) {
+      return _normalizeCategory(sep.group(1) ?? '');
+    }
+
+    // Categoria + spazio + numero (es "Dinamica 12")
+    final spaceNum = RegExp(r'^\s*([^\d]+?)\s+\d+\s*$').firstMatch(id);
+    if (spaceNum != null) {
+      return _normalizeCategory(spaceNum.group(1) ?? '');
+    }
+
+    return null;
+  }
+
+  Map<String, Map<String, dynamic>> _calculateCategoryStatistics() {
+    // Nuova logica: statistica per categoria basata sulle DOMANDE effettive.
+    // Evita il problema: quiz "Dinamica + Termodinamica" da 10 domande -> non deve contare 10 su entrambe.
+    final Map<String, int> totalQuestionsByCategory = {};
+    final Map<String, int> correctByCategory = {};
+    final Map<String, Set<DateTime>> sessionsByCategory =
+        {}; // per conteggiare "quiz" che contengono quella categoria
+
+    for (final quiz in _quizHistory) {
+      // NOTA: qui non usiamo più quiz.categorie per splittare e duplicare i contatori.
+      for (final risultato in quiz.risultati) {
+        final rawCategory = _extractCategoryFromQuestionId(risultato.quizId);
+        final category = rawCategory ?? _uncategorizedLabel;
+
+        totalQuestionsByCategory[category] =
+            (totalQuestionsByCategory[category] ?? 0) + 1;
+        if (risultato.isCorretta == true) {
+          correctByCategory[category] = (correctByCategory[category] ?? 0) + 1;
         }
-        quizzesByCategory[category]!.add(quiz);
+
+        (sessionsByCategory[category] ??= <DateTime>{}).add(
+          quiz.dataCompletamento,
+        );
       }
     }
 
     final Map<String, Map<String, dynamic>> categoryStats = {};
-
-    quizzesByCategory.forEach((category, quizzes) {
-      final totalQuizzes = quizzes.length;
-      final totalQuestions = quizzes.fold<int>(
-        0,
-        (sum, quiz) => sum + quiz.totale,
-      );
-      final correctAnswers = quizzes.fold<int>(
-        0,
-        (sum, quiz) => sum + quiz.punteggio,
-      );
-      final averageScore = (correctAnswers / totalQuestions) * 100;
+    for (final entry in totalQuestionsByCategory.entries) {
+      final category = entry.key;
+      final totalQuestions = entry.value;
+      final correctAnswers = correctByCategory[category] ?? 0;
+      final averageScore = totalQuestions == 0
+          ? 0.0
+          : (correctAnswers / totalQuestions) * 100;
 
       categoryStats[category] = {
-        'count': totalQuizzes,
+        // "quizCount" = numero di sessioni che includono almeno una domanda di quella categoria
+        'quizCount': (sessionsByCategory[category]?.length ?? 0),
+        // "questionCount" = domande effettivamente svolte di quella categoria
+        'questionCount': totalQuestions,
         'totalQuestions': totalQuestions,
         'correctAnswers': correctAnswers,
         'averageScore': averageScore,
       };
-    });
+    }
+
+    // Opzionale: se non vuoi mostrare "Senza categoria", filtra qui.
+    // categoryStats.remove(_uncategorizedLabel);
 
     return categoryStats;
-  }
-
-  List<FlSpot> _getProgressChartData() {
-    if (_quizHistory.isEmpty) return [];
-
-    final recentQuizzes = _quizHistory.reversed.take(10).toList();
-
-    return recentQuizzes.asMap().entries.map((entry) {
-      return FlSpot(entry.key.toDouble(), entry.value.percentuale);
-    }).toList();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-    final statistics = _calculateStatistics();
-    final categoryStats = _calculateCategoryStatistics();
-
-    return Scaffold(
-      appBar: null,
-      body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
-          : Stack(
-              children: [
-                SingleChildScrollView(
-                  padding: EdgeInsets.only(
-                    top: MediaQuery.of(context).viewPadding.top + 80,
-                    left: 16.0,
-                    right: 16.0,
-                    bottom: MediaQuery.of(context).viewPadding.bottom + 20,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      if (_quizHistory.isEmpty)
-                        Center(
-                          child: Padding(
-                            padding: const EdgeInsets.all(32.0),
-                            child: Column(
-                              children: [
-                                Icon(
-                                  Icons.quiz_outlined,
-                                  size: 80,
-                                  color: colorScheme.primary.withValues(
-                                    alpha: 0.5,
-                                  ),
-                                ),
-                                const SizedBox(height: 16),
-                                Text(
-                                  'Nessun quiz completato',
-                                  style: Theme.of(context).textTheme.titleLarge
-                                      ?.copyWith(
-                                        color: colorScheme.onSurface.withValues(
-                                          alpha: 0.6,
-                                        ),
-                                      ),
-                                ),
-                                const SizedBox(height: 8),
-                                Text(
-                                  'Completa un quiz per vedere le statistiche qui!',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: colorScheme.onSurface.withValues(
-                                      alpha: 0.4,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        )
-                      else ...[
-                        Card(
-                          color: colorScheme.primaryContainer,
-                          child: Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  children: [
-                                    Icon(
-                                      Icons.analytics,
-                                      color: colorScheme.onPrimaryContainer,
-                                      size: 28,
-                                    ),
-                                    const SizedBox(width: 12),
-                                    Text(
-                                      'Statistiche Complessive',
-                                      style: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold,
-                                        color: colorScheme.onPrimaryContainer,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 20),
-                                _buildStatRow(
-                                  'Quiz completati',
-                                  '${statistics['totalQuizzes']}',
-                                  Icons.quiz,
-                                  colorScheme,
-                                ),
-                                const SizedBox(height: 12),
-                                _buildStatRow(
-                                  'Domande totali',
-                                  '${statistics['totalQuestions']}',
-                                  Icons.question_answer,
-                                  colorScheme,
-                                ),
-                                const SizedBox(height: 12),
-                                _buildStatRow(
-                                  'Risposte corrette',
-                                  '${statistics['correctAnswers']}',
-                                  Icons.check_circle,
-                                  colorScheme,
-                                ),
-                                const SizedBox(height: 12),
-                                _buildStatRow(
-                                  'Media punteggio',
-                                  '${statistics['averageScore'].toStringAsFixed(1)}%',
-                                  Icons.trending_up,
-                                  colorScheme,
-                                ),
-                                const SizedBox(height: 12),
-                                Row(
-                                  children: [
-                                    Expanded(
-                                      child: _buildStatRow(
-                                        'Migliore',
-                                        '${statistics['bestScore'].toStringAsFixed(1)}%',
-                                        Icons.stars,
-                                        colorScheme,
-                                      ),
-                                    ),
-                                    const SizedBox(width: 16),
-                                    Expanded(
-                                      child: _buildStatRow(
-                                        'Peggiore',
-                                        '${statistics['worstScore'].toStringAsFixed(1)}%',
-                                        Icons.show_chart,
-                                        colorScheme,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 24),
-
-                        if (_quizHistory.length > 1) ...[
-                          Card(
-                            child: Padding(
-                              padding: const EdgeInsets.all(20.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Row(
-                                    children: [
-                                      Icon(
-                                        Icons.show_chart,
-                                        color: colorScheme.primary,
-                                        size: 24,
-                                      ),
-                                      const SizedBox(width: 12),
-                                      Text(
-                                        'Andamento Ultimi Quiz',
-                                        style: TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold,
-                                          color: colorScheme.onSurface,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 20),
-                                  SizedBox(
-                                    height: 200,
-                                    child: _buildProgressChart(colorScheme),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 24),
-                        ],
-
-                        Card(
-                          child: Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  children: [
-                                    Icon(
-                                      Icons.pie_chart,
-                                      color: colorScheme.primary,
-                                      size: 24,
-                                    ),
-                                    const SizedBox(width: 12),
-                                    Text(
-                                      'Distribuzione Risposte',
-                                      style: TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold,
-                                        color: colorScheme.onSurface,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 20),
-                                SizedBox(
-                                  height: 200,
-                                  child: _buildPieChart(
-                                    statistics,
-                                    colorScheme,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 24),
-
-                        if (categoryStats.isNotEmpty) ...[
-                          Row(
-                            children: [
-                              Icon(
-                                Icons.category,
-                                color: colorScheme.primary,
-                                size: 24,
-                              ),
-                              const SizedBox(width: 12),
-                              Text(
-                                'Statistiche per Categoria',
-                                style: Theme.of(context).textTheme.titleLarge
-                                    ?.copyWith(fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 12),
-                          ..._buildCategoryCards(categoryStats, colorScheme),
-                          const SizedBox(height: 24),
-                        ],
-
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              'Storico Quiz',
-                              style: Theme.of(context).textTheme.titleLarge
-                                  ?.copyWith(fontWeight: FontWeight.bold),
-                            ),
-                            IconButton(
-                              icon: const Icon(Icons.delete_forever),
-                              color: Colors.red,
-                              onPressed: _deleteAllQuizzes,
-                              tooltip: 'Elimina tutto lo storico',
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 12),
-
-                        ..._quizHistory.asMap().entries.map((entry) {
-                          final index = entry.key;
-                          final quiz = entry.value;
-                          return _buildQuizHistoryCard(
-                            quiz,
-                            index,
-                            colorScheme,
-                          );
-                        }),
-                      ],
-                    ],
-                  ),
-                ),
-
-                Positioned(
-                  top: MediaQuery.of(context).viewPadding.top + 10,
-                  left: 16,
-                  right: 16,
-                  child: FloatingTopBar(
-                    title: 'Statistiche Quiz',
-                    leading: FloatingTopBarLeading.back,
-                  ),
-                ),
-              ],
-            ),
-    );
-  }
-
-  Widget _buildProgressChart(ColorScheme colorScheme) {
-    final spots = _getProgressChartData();
-    if (spots.isEmpty) {
-      return const Center(child: Text('Nessun dato disponibile'));
-    }
-
-    return LineChart(
-      LineChartData(
-        gridData: FlGridData(
-          show: true,
-          drawVerticalLine: false,
-          horizontalInterval: 25,
-          getDrawingHorizontalLine: (value) {
-            return FlLine(
-              color: colorScheme.outline.withValues(alpha: 0.2),
-              strokeWidth: 1,
-            );
-          },
-        ),
-        titlesData: FlTitlesData(
-          leftTitles: AxisTitles(
-            sideTitles: SideTitles(
-              showTitles: true,
-              reservedSize: 40,
-              getTitlesWidget: (value, meta) {
-                return Text(
-                  '${value.toInt()}%',
-                  style: TextStyle(
-                    color: colorScheme.onSurface.withValues(alpha: 0.6),
-                    fontSize: 12,
-                  ),
-                );
-              },
-            ),
-          ),
-          bottomTitles: AxisTitles(
-            sideTitles: SideTitles(
-              showTitles: true,
-              reservedSize: 30,
-              getTitlesWidget: (value, meta) {
-                if (value.toInt() >= spots.length) return const SizedBox();
-                return Text(
-                  '${value.toInt() + 1}',
-                  style: TextStyle(
-                    color: colorScheme.onSurface.withValues(alpha: 0.6),
-                    fontSize: 12,
-                  ),
-                );
-              },
-            ),
-          ),
-          rightTitles: const AxisTitles(
-            sideTitles: SideTitles(showTitles: false),
-          ),
-          topTitles: const AxisTitles(
-            sideTitles: SideTitles(showTitles: false),
-          ),
-        ),
-        borderData: FlBorderData(show: false),
-        minY: 0,
-        maxY: 100,
-        lineBarsData: [
-          LineChartBarData(
-            spots: spots,
-            isCurved: true,
-            color: colorScheme.primary,
-            barWidth: 3,
-            isStrokeCapRound: true,
-            dotData: FlDotData(
-              show: true,
-              getDotPainter: (spot, percent, barData, index) {
-                return FlDotCirclePainter(
-                  radius: 4,
-                  color: colorScheme.primary,
-                  strokeWidth: 2,
-                  strokeColor: colorScheme.surface,
-                );
-              },
-            ),
-            belowBarData: BarAreaData(
-              show: true,
-              color: colorScheme.primary.withValues(alpha: 0.1),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildPieChart(
-    Map<String, dynamic> statistics,
-    ColorScheme colorScheme,
-  ) {
-    final correctAnswers = statistics['correctAnswers'] as int;
-    final totalQuestions = statistics['totalQuestions'] as int;
-    final wrongAnswers = totalQuestions - correctAnswers;
-
-    if (totalQuestions == 0) {
-      return const Center(child: Text('Nessun dato disponibile'));
-    }
-
-    return Row(
-      children: [
-        Expanded(
-          flex: 2,
-          child: PieChart(
-            PieChartData(
-              sectionsSpace: 2,
-              centerSpaceRadius: 50,
-              sections: [
-                PieChartSectionData(
-                  color: Colors.green,
-                  value: correctAnswers.toDouble(),
-                  title:
-                      '${((correctAnswers / totalQuestions) * 100).toStringAsFixed(1)}%',
-                  radius: 60,
-                  titleStyle: const TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-                PieChartSectionData(
-                  color: Colors.red,
-                  value: wrongAnswers.toDouble(),
-                  title:
-                      '${((wrongAnswers / totalQuestions) * 100).toStringAsFixed(1)}%',
-                  radius: 60,
-                  titleStyle: const TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-        Expanded(
-          flex: 1,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _buildLegendItem('Corrette', Colors.green, correctAnswers),
-              const SizedBox(height: 8),
-              _buildLegendItem('Errate', Colors.red, wrongAnswers),
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildLegendItem(String label, Color color, int value) {
-    return Row(
-      children: [
-        Container(
-          width: 16,
-          height: 16,
-          decoration: BoxDecoration(
-            color: color,
-            borderRadius: BorderRadius.circular(4),
-          ),
-        ),
-        const SizedBox(width: 8),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(label, style: const TextStyle(fontSize: 12)),
-              Text(
-                '$value',
-                style: const TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
   }
 
   List<Widget> _buildCategoryCards(
@@ -758,6 +327,11 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
       } else {
         scoreColor = Colors.red;
       }
+
+      final totalQ = stats['totalQuestions'] as int;
+      final correct = stats['correctAnswers'] as int;
+      final wrong = totalQ - correct;
+      final quizCount = stats['quizCount'] as int;
 
       return Card(
         margin: const EdgeInsets.only(bottom: 12),
@@ -789,7 +363,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                           ),
                         ),
                         Text(
-                          '${stats['count']} quiz completati',
+                          // Prima: "${stats['count']} quiz completati" (era conteggio quiz “duplicato”)
+                          // Ora: domande effettive + (opzionale) in quanti quiz compare la categoria
+                          '$totalQ domande svolte • in $quizCount quiz',
                           style: TextStyle(
                             fontSize: 12,
                             color: colorScheme.onSurface.withValues(alpha: 0.6),
@@ -826,10 +402,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                       children: [
                         Icon(Icons.check_circle, size: 16, color: Colors.green),
                         const SizedBox(width: 4),
-                        Text(
-                          '${stats['correctAnswers']}',
-                          style: const TextStyle(fontSize: 14),
-                        ),
+                        Text('$correct', style: const TextStyle(fontSize: 14)),
                       ],
                     ),
                   ),
@@ -838,10 +411,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                       children: [
                         Icon(Icons.cancel, size: 16, color: Colors.red),
                         const SizedBox(width: 4),
-                        Text(
-                          '${stats['totalQuestions'] - stats['correctAnswers']}',
-                          style: const TextStyle(fontSize: 14),
-                        ),
+                        Text('$wrong', style: const TextStyle(fontSize: 14)),
                       ],
                     ),
                   ),
@@ -851,7 +421,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                         Icon(Icons.quiz, size: 16, color: colorScheme.primary),
                         const SizedBox(width: 4),
                         Text(
-                          '${stats['totalQuestions']} domande',
+                          '$totalQ domande',
                           style: const TextStyle(fontSize: 12),
                         ),
                       ],
@@ -1160,6 +730,470 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
         Text(
           value,
           style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+        ),
+      ],
+    );
+  }
+
+  List<FlSpot> _getProgressChartData() {
+    if (_quizHistory.isEmpty) return [];
+    final recentQuizzes = _quizHistory.reversed.take(10).toList();
+    return recentQuizzes.asMap().entries.map((entry) {
+      return FlSpot(entry.key.toDouble(), entry.value.percentuale);
+    }).toList();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+    final statistics = _calculateStatistics();
+    final categoryStats = _calculateCategoryStatistics();
+
+    return Scaffold(
+      appBar: null,
+      body: _isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : Stack(
+              children: [
+                SingleChildScrollView(
+                  padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).viewPadding.top + 80,
+                    left: 16.0,
+                    right: 16.0,
+                    bottom: MediaQuery.of(context).viewPadding.bottom + 20,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      if (_quizHistory.isEmpty)
+                        Center(
+                          child: Padding(
+                            padding: const EdgeInsets.all(32.0),
+                            child: Column(
+                              children: [
+                                Icon(
+                                  Icons.quiz_outlined,
+                                  size: 80,
+                                  color: colorScheme.primary.withValues(
+                                    alpha: 0.5,
+                                  ),
+                                ),
+                                const SizedBox(height: 16),
+                                Text(
+                                  'Nessun quiz completato',
+                                  style: Theme.of(context).textTheme.titleLarge
+                                      ?.copyWith(
+                                        color: colorScheme.onSurface.withValues(
+                                          alpha: 0.6,
+                                        ),
+                                      ),
+                                ),
+                                const SizedBox(height: 8),
+                                Text(
+                                  'Completa un quiz per vedere le statistiche qui!',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: colorScheme.onSurface.withValues(
+                                      alpha: 0.4,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
+                      else ...[
+                        Card(
+                          color: colorScheme.primaryContainer,
+                          child: Padding(
+                            padding: const EdgeInsets.all(20.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.analytics,
+                                      color: colorScheme.onPrimaryContainer,
+                                      size: 28,
+                                    ),
+                                    const SizedBox(width: 12),
+                                    Text(
+                                      'Statistiche Complessive',
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                        color: colorScheme.onPrimaryContainer,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(height: 20),
+                                _buildStatRow(
+                                  'Quiz completati',
+                                  '${statistics['totalQuizzes']}',
+                                  Icons.quiz,
+                                  colorScheme,
+                                ),
+                                const SizedBox(height: 12),
+                                _buildStatRow(
+                                  'Domande totali',
+                                  '${statistics['totalQuestions']}',
+                                  Icons.question_answer,
+                                  colorScheme,
+                                ),
+                                const SizedBox(height: 12),
+                                _buildStatRow(
+                                  'Risposte corrette',
+                                  '${statistics['correctAnswers']}',
+                                  Icons.check_circle,
+                                  colorScheme,
+                                ),
+                                const SizedBox(height: 12),
+                                _buildStatRow(
+                                  'Media punteggio',
+                                  '${(statistics['averageScore'] as double).toStringAsFixed(1)}%',
+                                  Icons.trending_up,
+                                  colorScheme,
+                                ),
+                                const SizedBox(height: 12),
+                                Row(
+                                  children: [
+                                    Expanded(
+                                      child: _buildStatRow(
+                                        'Migliore',
+                                        '${(statistics['bestScore'] as double).toStringAsFixed(1)}%',
+                                        Icons.stars,
+                                        colorScheme,
+                                      ),
+                                    ),
+                                    const SizedBox(width: 16),
+                                    Expanded(
+                                      child: _buildStatRow(
+                                        'Peggiore',
+                                        '${(statistics['worstScore'] as double).toStringAsFixed(1)}%',
+                                        Icons.show_chart,
+                                        colorScheme,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 24),
+                        if (_quizHistory.length > 1) ...[
+                          Card(
+                            child: Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.show_chart,
+                                        color: colorScheme.primary,
+                                        size: 24,
+                                      ),
+                                      const SizedBox(width: 12),
+                                      Text(
+                                        'Andamento Ultimi Quiz',
+                                        style: TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                          color: colorScheme.onSurface,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 20),
+                                  SizedBox(
+                                    height: 200,
+                                    child: _buildProgressChart(colorScheme),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 24),
+                        ],
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(20.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.pie_chart,
+                                      color: colorScheme.primary,
+                                      size: 24,
+                                    ),
+                                    const SizedBox(width: 12),
+                                    Text(
+                                      'Distribuzione Risposte',
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: colorScheme.onSurface,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(height: 20),
+                                SizedBox(
+                                  height: 200,
+                                  child: _buildPieChart(
+                                    statistics,
+                                    colorScheme,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 24),
+                        if (categoryStats.isNotEmpty) ...[
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.category,
+                                color: colorScheme.primary,
+                                size: 24,
+                              ),
+                              const SizedBox(width: 12),
+                              Text(
+                                'Statistiche per Categoria',
+                                style: Theme.of(context).textTheme.titleLarge
+                                    ?.copyWith(fontWeight: FontWeight.bold),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 12),
+                          ..._buildCategoryCards(categoryStats, colorScheme),
+                          const SizedBox(height: 24),
+                        ],
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Storico Quiz',
+                              style: Theme.of(context).textTheme.titleLarge
+                                  ?.copyWith(fontWeight: FontWeight.bold),
+                            ),
+                            IconButton(
+                              icon: const Icon(Icons.delete_forever),
+                              color: Colors.red,
+                              onPressed: _deleteAllQuizzes,
+                              tooltip: 'Elimina tutto lo storico',
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 12),
+                        ..._quizHistory.asMap().entries.map((entry) {
+                          final index = entry.key;
+                          final quiz = entry.value;
+                          return _buildQuizHistoryCard(
+                            quiz,
+                            index,
+                            colorScheme,
+                          );
+                        }),
+                      ],
+                    ],
+                  ),
+                ),
+                Positioned(
+                  top: MediaQuery.of(context).viewPadding.top + 10,
+                  left: 16,
+                  right: 16,
+                  child: const FloatingTopBar(
+                    title: 'Statistiche Quiz',
+                    leading: FloatingTopBarLeading.back,
+                  ),
+                ),
+              ],
+            ),
+    );
+  }
+
+  Widget _buildProgressChart(ColorScheme colorScheme) {
+    final spots = _getProgressChartData();
+    if (spots.isEmpty)
+      return const Center(child: Text('Nessun dato disponibile'));
+
+    return LineChart(
+      LineChartData(
+        gridData: FlGridData(
+          show: true,
+          drawVerticalLine: false,
+          horizontalInterval: 25,
+          getDrawingHorizontalLine: (value) => FlLine(
+            color: colorScheme.outline.withValues(alpha: 0.2),
+            strokeWidth: 1,
+          ),
+        ),
+        titlesData: FlTitlesData(
+          leftTitles: AxisTitles(
+            sideTitles: SideTitles(
+              showTitles: true,
+              reservedSize: 40,
+              getTitlesWidget: (value, meta) => Text(
+                '${value.toInt()}%',
+                style: TextStyle(
+                  color: colorScheme.onSurface.withValues(alpha: 0.6),
+                  fontSize: 12,
+                ),
+              ),
+            ),
+          ),
+          bottomTitles: AxisTitles(
+            sideTitles: SideTitles(
+              showTitles: true,
+              reservedSize: 30,
+              getTitlesWidget: (value, meta) {
+                if (value.toInt() >= spots.length) return const SizedBox();
+                return Text(
+                  '${value.toInt() + 1}',
+                  style: TextStyle(
+                    color: colorScheme.onSurface.withValues(alpha: 0.6),
+                    fontSize: 12,
+                  ),
+                );
+              },
+            ),
+          ),
+          rightTitles: const AxisTitles(
+            sideTitles: SideTitles(showTitles: false),
+          ),
+          topTitles: const AxisTitles(
+            sideTitles: SideTitles(showTitles: false),
+          ),
+        ),
+        borderData: FlBorderData(show: false),
+        minY: 0,
+        maxY: 100,
+        lineTouchData: const LineTouchData(enabled: false),
+        lineBarsData: [
+          LineChartBarData(
+            spots: spots,
+            isCurved: true,
+            color: colorScheme.primary,
+            barWidth: 3,
+            isStrokeCapRound: true,
+            dotData: FlDotData(
+              show: true,
+              getDotPainter: (spot, percent, barData, index) =>
+                  FlDotCirclePainter(
+                    radius: 4,
+                    color: colorScheme.primary,
+                    strokeWidth: 2,
+                    strokeColor: colorScheme.surface,
+                  ),
+            ),
+            belowBarData: BarAreaData(
+              show: true,
+              color: colorScheme.primary.withValues(alpha: 0.1),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildPieChart(
+    Map<String, dynamic> statistics,
+    ColorScheme colorScheme,
+  ) {
+    final correctAnswers = statistics['correctAnswers'] as int;
+    final totalQuestions = statistics['totalQuestions'] as int;
+    final wrongAnswers = totalQuestions - correctAnswers;
+
+    if (totalQuestions == 0)
+      return const Center(child: Text('Nessun dato disponibile'));
+
+    return Row(
+      children: [
+        Expanded(
+          flex: 2,
+          child: PieChart(
+            PieChartData(
+              sectionsSpace: 2,
+              centerSpaceRadius: 50,
+              sections: [
+                PieChartSectionData(
+                  color: Colors.green,
+                  value: correctAnswers.toDouble(),
+                  title:
+                      '${((correctAnswers / totalQuestions) * 100).toStringAsFixed(1)}%',
+                  radius: 60,
+                  titleStyle: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                PieChartSectionData(
+                  color: Colors.red,
+                  value: wrongAnswers.toDouble(),
+                  title:
+                      '${((wrongAnswers / totalQuestions) * 100).toStringAsFixed(1)}%',
+                  radius: 60,
+                  titleStyle: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Expanded(
+          flex: 1,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _buildLegendItem('Corrette', Colors.green, correctAnswers),
+              const SizedBox(height: 8),
+              _buildLegendItem('Errate', Colors.red, wrongAnswers),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildLegendItem(String label, Color color, int value) {
+    return Row(
+      children: [
+        Container(
+          width: 16,
+          height: 16,
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.circular(4),
+          ),
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(label, style: const TextStyle(fontSize: 12)),
+              Text(
+                '$value',
+                style: const TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
         ),
       ],
     );

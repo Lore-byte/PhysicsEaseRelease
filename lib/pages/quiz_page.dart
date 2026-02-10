@@ -433,7 +433,21 @@ class _QuizPageState extends State<QuizPage> {
                         color: colorScheme.primary,
                         barWidth: 2,
                         isStrokeCapRound: true,
-                        dotData: const FlDotData(show: false),
+                        dotData: FlDotData(
+                          show: true,
+                          checkToShowDot: (spot, barData) {
+                            // Mostra i pallini solo per i punti "reali" (non per lo padding iniziale)
+                            return spot.x >= padding.toDouble();
+                          },
+                          getDotPainter: (spot, percent, barData, index) {
+                            return FlDotCirclePainter(
+                              radius: 2.5,
+                              color: colorScheme.primary,
+                              strokeWidth: 1.5,
+                              strokeColor: colorScheme.surface,
+                            );
+                          },
+                        ),
                         belowBarData: BarAreaData(
                           show: true,
                           color: colorScheme.primary.withValues(alpha: 0.1),
