@@ -358,6 +358,55 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     return categoryStats;
   }
 
+  String _formatCategoriesMultiline(String categories) {
+    if (categories.isEmpty) return categories.trim();
+
+    final parts = categories
+        .split(RegExp(r'\s*(?:,|;|\+|•|\||/)\s*'))
+        .map((s) => s.trim())
+        .where((s) => s.isNotEmpty)
+        .map((s) => _prettifyCategory(s))
+        .toSet()
+        .toList();
+
+    if (parts.isEmpty) return categories.trim();
+    return parts.join('\n');
+  }
+
+  List<Map<String, dynamic>> _calculateMostMissedQuestions({int limit = 10}) {
+    final Map<String, int> missedCount = {};
+    final Map<String, Quiz> quizMap = {};
+
+    for (final category in QuizService.availableCategories) {
+      final quizzes = _quizService.getQuizzesByCategory(category);
+      for (final quiz in quizzes) {
+        quizMap[quiz.id] = quiz;
+      }
+    }
+
+    for (final session in _quizHistory) {
+      for (final result in session.risultati) {
+        if (!result.isCorretta) {
+          missedCount[result.quizId] = (missedCount[result.quizId] ?? 0) + 1;
+        }
+      }
+    }
+
+    final List<Map<String, dynamic>> mostMissed = [];
+    for (final entry in missedCount.entries) {
+      final quiz = quizMap[entry.key];
+      if (quiz != null) {
+        mostMissed.add({'quiz': quiz, 'errors': entry.value});
+      }
+    }
+
+    mostMissed.sort(
+      (a, b) => (b['errors'] as int).compareTo(a['errors'] as int),
+    );
+
+    return mostMissed.take(limit).toList();
+  }
+
   List<Widget> _buildCategoryCards(
     Map<String, Map<String, dynamic>> categoryStats,
     ColorScheme colorScheme,
