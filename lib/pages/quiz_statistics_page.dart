@@ -6,6 +6,7 @@ import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 import 'package:physics_ease_release/services/quiz_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
+import 'package:physics_ease_release/services/quiz_service.dart'; // Aggiungi import
 import 'dart:developer' as developer;
 import 'package:fl_chart/fl_chart.dart';
 
@@ -34,6 +35,10 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
   Future<void> _loadQuizHistory() async {
     setState(() => _isLoading = true);
+    
+    // Assicuriamoci che i quiz siano caricati per avere i nomi corretti delle categorie
+    await QuizService().loadAllQuizzes();
+
     try {
       final prefs = await SharedPreferences.getInstance();
       final savedResults = prefs.getStringList('quiz_history') ?? [];
@@ -230,6 +235,41 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     return trimmed.replaceAll(RegExp(r'\s+'), ' ');
   }
 
+  /// Helper per rendere i nomi delle categorie "belli" (es: "kinematica" -> "Cinematica")
+  String _prettifyCategory(String raw) {
+    if (raw.isEmpty) return raw;
+    final trimmed = raw.trim();
+    
+    // Cerca nella mappa del servizio (chiavi minuscole, es: 'kinematica')
+    final lower = trimmed.toLowerCase();
+    if (QuizService.categoryNames.containsKey(lower)) {
+      return QuizService.categoryNames[lower]!;
+    }
+
+    // Fallback: se non è nella mappa, capitalizza la prima lettera
+    if (trimmed.length > 1) {
+      return trimmed[0].toUpperCase() + trimmed.substring(1);
+    }
+    return trimmed.toUpperCase();
+  }
+
+  /// Helper per stringhe che possono contenere più categorie separate (es: "kinematica, dinamica")
+  String _prettifyCategoriesString(String categories) {
+    if (categories.isEmpty) return categories;
+    
+    // Split basato su separatori comuni
+    final parts = categories.split(RegExp(r'\s*(?:,|;|\+|•|\||/)\s*'));
+    
+    final prettyParts = parts
+        .where((s) => s.trim().isNotEmpty)
+        .map((s) => _prettifyCategory(s))
+        .toSet() // Rimuove duplicati
+        .toList();
+        
+    if (prettyParts.isEmpty) return categories;
+    return prettyParts.join(', ');
+  }
+
   /// Prova a ricavare la categoria dalla singola domanda.
   /// Supporta formati tipici: "Dinamica_12", "Dinamica:12", "[Dinamica] 12", "Dinamica-12", "Dinamica/12".
   String? _extractCategoryFromQuestionId(String quizId) {
@@ -268,8 +308,17 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     for (final quiz in _quizHistory) {
       // NOTA: qui non usiamo più quiz.categorie per splittare e duplicare i contatori.
       for (final risultato in quiz.risultati) {
-        final rawCategory = _extractCategoryFromQuestionId(risultato.quizId);
-        final category = rawCategory ?? _uncategorizedLabel;
+        // Tenta di recuperare il nome ufficiale della categoria dal servizio (es. "Cinematica")
+        String? category = QuizService().getCategoryNameByQuizId(risultato.quizId);
+        
+        // Se non trovato (es. quiz rimossi o vecchi), usa la logica di estrazione dall'ID come fallback
+        if (category == null) {
+           final rawCategory = _extractCategoryFromQuestionId(risultato.quizId);
+           category = rawCategory ?? _uncategorizedLabel;
+        }
+
+        // Applica sempre prettify per uniformare i nomi (es: "kinematica" -> "Cinematica", "cinematica" -> "Cinematica")
+        category = _prettifyCategory(category);
 
         totalQuestionsByCategory[category] =
             (totalQuestionsByCategory[category] ?? 0) + 1;
@@ -309,78 +358,6 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     return categoryStats;
   }
 
-  /// Calcola le domande più frequentemente sbagliate
-  List<Map<String, dynamic>> _calculateMostMissedQuestions({int limit = 10}) {
-    final Map<String, Map<String, dynamic>> missedStats = {};
-
-    // Analizza tutti i risultati
-    for (final quiz in _quizHistory) {
-      for (final risultato in quiz.risultati) {
-        final quizId = risultato.quizId;
-
-        if (!missedStats.containsKey(quizId)) {
-          missedStats[quizId] = {
-            'total': 0,
-            'errors': 0,
-            'errorRate': 0.0,
-            'quiz': null,
-          };
-        }
-
-        missedStats[quizId]!['total'] = (missedStats[quizId]!['total'] as int) + 1;
-        if (!risultato.isCorretta) {
-          missedStats[quizId]!['errors'] = (missedStats[quizId]!['errors'] as int) + 1;
-        }
-      }
-    }
-
-    // Calcola il tasso di errore e carica i dati della domanda
-    final List<Map<String, dynamic>> results = [];
-    for (final entry in missedStats.entries) {
-      final quizId = entry.key;
-      final stats = entry.value;
-      final total = stats['total'] as int;
-      final errors = stats['errors'] as int;
-      final errorRate = (errors / total) * 100;
-
-      // Carica il quiz dal servizio
-      Quiz? quizData;
-      for (final category in QuizService.availableCategories) {
-        final quizzes = _quizService.getQuizzesByCategory(category);
-        final found = quizzes.firstWhere(
-          (q) => q.id == quizId,
-          orElse: () => Quiz(
-            id: '',
-            domanda: '',
-            categoria: '',
-            opzioni: [],
-            rispostaCorretta: 0,
-            spiegazione: '',
-            difficolta: '',
-          ),
-        );
-        if (found.id.isNotEmpty) {
-          quizData = found;
-          break;
-        }
-      }
-
-      if (quizData != null && quizData.id.isNotEmpty) {
-        results.add({
-          'quizId': quizId,
-          'quiz': quizData,
-          'total': total,
-          'errors': errors,
-          'errorRate': errorRate,
-        });
-      }
-    }
-
-    // Ordina per numero di errori e filtra solo le domande sbagliate
-    results.sort((a, b) => (b['errors'] as int).compareTo(a['errors'] as int));
-    return results.where((r) => (r['errors'] as int) > 0).take(limit).toList();
-  }
-
   List<Widget> _buildCategoryCards(
     Map<String, Map<String, dynamic>> categoryStats,
     ColorScheme colorScheme,
@@ -393,7 +370,8 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
       );
 
     return sortedCategories.map((entry) {
-      final category = entry.key;
+      // Applichiamo la formattazione corretta anche qui
+      final category = _prettifyCategory(entry.key);
       final stats = entry.value;
       final averageScore = stats['averageScore'] as double;
 
@@ -443,8 +421,6 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                           ),
                         ),
                         Text(
-                          // Prima: "${stats['count']} quiz completati" (era conteggio quiz “duplicato”)
-                          // Ora: domande effettive + (opzionale) in quanti quiz compare la categoria
                           '$totalQ domande svolte • in $quizCount quiz',
                           style: TextStyle(
                             fontSize: 12,
@@ -559,6 +535,12 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     final dateFormat = DateFormat('dd/MM/yyyy HH:mm');
     final percentuale = quiz.percentuale;
 
+    // Converti la stringa categorie (che potrebbe essere "kinematica") in una forma leggibile ("Cinematica")
+    final displayCategories = _prettifyCategoriesString(quiz.categorie);
+    
+    final correct = quiz.punteggio;
+    final wrong = quiz.totale - quiz.punteggio;
+
     Color scoreColor;
     if (percentuale >= 90) {
       scoreColor = Colors.green;
@@ -616,7 +598,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          quiz.categorie,
+                          displayCategories, // Usa la stringa processata
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -641,17 +623,11 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                               color: Colors.green,
                             ),
                             const SizedBox(width: 4),
-                            Text(
-                              '${quiz.punteggio}',
-                              style: const TextStyle(fontSize: 12),
-                            ),
+                            Text('$correct', style: const TextStyle(fontSize: 14)),
                             const SizedBox(width: 12),
                             Icon(Icons.cancel, size: 16, color: Colors.red),
                             const SizedBox(width: 4),
-                            Text(
-                              '${quiz.totale - quiz.punteggio}',
-                              style: const TextStyle(fontSize: 12),
-                            ),
+                            Text('$wrong', style: const TextStyle(fontSize: 14)),
                           ],
                         ),
                       ],
@@ -690,105 +666,102 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
           maxChildSize: 0.95,
           expand: false,
           builder: (context, scrollController) {
-            return Padding(
+            return ListView(
+              controller: scrollController,
               padding: const EdgeInsets.all(20.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Center(
-                    child: Container(
-                      width: 40,
-                      height: 4,
-                      margin: const EdgeInsets.only(bottom: 20),
-                      decoration: BoxDecoration(
-                        color: colorScheme.onSurface.withValues(alpha: 0.2),
-                        borderRadius: BorderRadius.circular(2),
-                      ),
+              children: [
+                Center(
+                  child: Container(
+                    width: 40,
+                    height: 4,
+                    margin: const EdgeInsets.only(bottom: 20),
+                    decoration: BoxDecoration(
+                      color: colorScheme.onSurface.withValues(alpha: 0.2),
+                      borderRadius: BorderRadius.circular(2),
                     ),
                   ),
+                ),
+                Text(
+                  'Dettagli Quiz',
+                  style: Theme.of(
+                    context,
+                  ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 20),
+                Card(
+                  color: colorScheme.secondaryContainer,
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      children: [
+                        _buildDetailRow(
+                          'Categorie',
+                          _formatCategoriesMultiline(quiz.categorie),
+                          Icons.category,
+                        ),
+                        const Divider(height: 24),
+                        _buildDetailRow(
+                          'Data',
+                          dateFormat.format(quiz.dataCompletamento),
+                          Icons.calendar_today,
+                        ),
+                        const Divider(height: 24),
+                        _buildDetailRow(
+                          'Punteggio',
+                          '${quiz.punteggio} / ${quiz.totale}',
+                          Icons.score,
+                        ),
+                        const Divider(height: 24),
+                        _buildDetailRow(
+                          'Percentuale',
+                          '${percentuale.toStringAsFixed(1)}%',
+                          Icons.percent,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                //const SizedBox(height: 20),
 
-                  Text(
-                    'Dettagli Quiz',
-                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 20),
+                // Text(
+                //   'Risposte (${quiz.risultati.length})',
+                //   style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                //     fontWeight: FontWeight.bold,
+                //   ),
+                // ),
+                // const SizedBox(height: 12),
 
-                  Card(
-                    color: colorScheme.secondaryContainer,
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        children: [
-                          _buildDetailRow(
-                            'Categorie',
-                            quiz.categorie,
-                            Icons.category,
-                          ),
-                          const Divider(height: 24),
-                          _buildDetailRow(
-                            'Data',
-                            dateFormat.format(quiz.dataCompletamento),
-                            Icons.calendar_today,
-                          ),
-                          const Divider(height: 24),
-                          _buildDetailRow(
-                            'Punteggio',
-                            '${quiz.punteggio} / ${quiz.totale}',
-                            Icons.score,
-                          ),
-                          const Divider(height: 24),
-                          _buildDetailRow(
-                            'Percentuale',
-                            '${percentuale.toStringAsFixed(1)}%',
-                            Icons.percent,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-
-                  Text(
-                    'Risposte (${quiz.risultati.length})',
-                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-
-                  Expanded(
-                    child: ListView.builder(
-                      controller: scrollController,
-                      itemCount: quiz.risultati.length,
-                      itemBuilder: (context, index) {
-                        final risultato = quiz.risultati[index];
-                        return Card(
-                          color: risultato.isCorretta
-                              ? Colors.green.withValues(alpha: 0.1)
-                              : Colors.red.withValues(alpha: 0.1),
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundColor: risultato.isCorretta
-                                  ? Colors.green
-                                  : Colors.red,
-                              child: Icon(
-                                risultato.isCorretta
-                                    ? Icons.check
-                                    : Icons.close,
-                                color: Colors.white,
-                              ),
-                            ),
-                            title: Text('Domanda ${index + 1}'),
-                            subtitle: Text('Quiz ID: ${risultato.quizId}'),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
+                // Expanded(
+                //   child: ListView.builder(
+                //     controller: scrollController,
+                //     itemCount: quiz.risultati.length,
+                //     itemBuilder: (context, index) {
+                //       final risultato = quiz.risultati[index];
+                //       return Card(
+                //         color: risultato.isCorretta
+                //             ? Colors.green.withValues(alpha: 0.1)
+                //             : Colors.red.withValues(alpha: 0.1),
+                //         child: ListTile(
+                //           leading: CircleAvatar(
+                //             backgroundColor: risultato.isCorretta
+                //                 ? Colors.green
+                //                 : Colors.red,
+                //             child: Icon(
+                //               risultato.isCorretta
+                //                   ? Icons.check
+                //                   : Icons.close,
+                //               color: Colors.white,
+                //             ),
+                //           ),
+                //           title: Text('Domanda ${index + 1}'),
+                //           subtitle: Text('Quiz ID: ${risultato.quizId}'),
+                //         ),
+                //       );
+                //     },
+                //   ),
+                // ),
+                //const SizedBox(height: 24),
+              ],
             );
           },
         );
@@ -798,6 +771,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
   Widget _buildDetailRow(String label, String value, IconData icon) {
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Icon(icon, size: 20),
         const SizedBox(width: 12),
@@ -807,9 +781,14 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
             style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
           ),
         ),
-        Text(
-          value,
-          style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+        Flexible(
+          child: Text(
+            value,
+            textAlign: TextAlign.end,
+            softWrap: true,
+            maxLines: null,
+            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+          ),
         ),
       ],
     );
@@ -817,7 +796,11 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
   List<FlSpot> _getProgressChartData() {
     if (_quizHistory.isEmpty) return [];
-    final recentQuizzes = _quizHistory.reversed.take(10).toList();
+
+    // _quizHistory è ordinata: più recenti -> più vecchi
+    // Vogliamo i 10 più recenti (take 10) ma in ordine cronologico nel grafico.
+    final recentQuizzes = _quizHistory.take(10).toList().reversed.toList();
+
     return recentQuizzes.asMap().entries.map((entry) {
       return FlSpot(entry.key.toDouble(), entry.value.percentuale);
     }).toList();
@@ -840,7 +823,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                     top: MediaQuery.of(context).viewPadding.top + 80,
                     left: 16.0,
                     right: 16.0,
-                    bottom: MediaQuery.of(context).viewPadding.bottom + 20,
+                    bottom: MediaQuery.of(context).viewPadding.bottom + 94,
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -1243,15 +1226,16 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
             ),
           ),
         ),
+        const SizedBox(width: 24), // <-- più distanza tra grafico e legenda
         Expanded(
           flex: 1,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              _buildLegendItem('Corrette', Colors.green, correctAnswers),
-              const SizedBox(height: 8),
               _buildLegendItem('Errate', Colors.red, wrongAnswers),
+              const SizedBox(height: 80),
+              _buildLegendItem('Corrette', Colors.green, correctAnswers),
             ],
           ),
         ),
