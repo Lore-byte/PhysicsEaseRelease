@@ -8,7 +8,7 @@
       "opzioni": [
         "Volt (V)",
         "Ampere (A)",
-        "Ohm (Ω)",
+        "Ohm ($\\Omega$)",
         "Watt (W)"
       ],
       "rispostaCorretta": 1,
@@ -133,7 +133,7 @@
         "Potenza, energia, tempo"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La legge di Ohm collega tensione V, corrente I e resistenza R (V = R·I).",
+      "spiegazione": "La legge di Ohm collega tensione $V$, corrente $I$ e resistenza $R$ ($V = R \\cdot I$).",
       "difficolta": "facile",
       "paroleChiave": [
         "ohm",
@@ -148,13 +148,13 @@
       "categoria": "Circuiti",
       "sottocategoria": "Legge di Ohm",
       "opzioni": [
-        "V = R·I",
-        "P = m·g·h",
-        "F = k·x",
-        "Q = m·c·ΔT"
+        "$V = R \\cdot I$",
+        "$P = m \\cdot g \\cdot h$",
+        "$F = k \\cdot x$",
+        "$Q = m \\cdot c \\cdot \\Delta T$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "La legge di Ohm si scrive V = R·I.",
+      "spiegazione": "La legge di Ohm si scrive $V = R \\cdot I$.",
       "difficolta": "facile",
       "paroleChiave": [
         "ohm",
@@ -164,7 +164,7 @@
     },
     {
       "id": "cir_009",
-      "domanda": "Se la resistenza R aumenta a parità di tensione V, la corrente I:",
+      "domanda": "Se la resistenza $R$ aumenta a parità di tensione $V$, la corrente $I$:",
       "categoria": "Circuiti",
       "sottocategoria": "Legge di Ohm",
       "opzioni": [
@@ -174,7 +174,7 @@
         "Diventa negativa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Dalla legge di Ohm I = V/R: a V costante, se R aumenta allora I diminuisce.",
+      "spiegazione": "Dalla legge di Ohm $I = V/R$: a $V$ costante, se $R$ aumenta allora $I$ diminuisce.",
       "difficolta": "facile",
       "paroleChiave": [
         "ohm",
@@ -245,17 +245,17 @@
     },
     {
       "id": "cir_013",
-      "domanda": "Qual è la resistenza equivalente di due resistori R1 e R2 in serie?",
+      "domanda": "Qual è la resistenza equivalente di due resistori $R_1$ e $R_2$ in serie?",
       "categoria": "Circuiti",
       "sottocategoria": "Equivalente serie",
       "opzioni": [
-        "Req = R1 + R2",
-        "Req = R1·R2",
-        "Req = (R1+R2)/(R1·R2)",
-        "Req = (R1·R2)/(R1+R2)"
+        "$R_{eq} = R_1 + R_2$",
+        "$R_{eq} = R_1 \\cdot R_2$",
+        "$R_{eq} = (R_1 + R_2)/(R_1 \\cdot R_2)$",
+        "$R_{eq} = (R_1 \\cdot R_2)/(R_1 + R_2)$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "In serie le resistenze si sommano: Req = R1 + R2.",
+      "spiegazione": "In serie le resistenze si sommano: $R_{eq} = R_1 + R_2$.",
       "difficolta": "facile",
       "paroleChiave": [
         "serie",
@@ -269,13 +269,13 @@
       "categoria": "Circuiti",
       "sottocategoria": "Equivalente parallelo",
       "opzioni": [
-        "Req = R1 + R2",
-        "1/Req = 1/R1 + 1/R2",
-        "Req = R1 − R2",
-        "Req = R1/R2"
+        "$R_{eq} = R_1 + R_2$",
+        "$1/R_{eq} = 1/R_1 + 1/R_2$",
+        "$R_{eq} = R_1 - R_2$",
+        "$R_{eq} = R_1/R_2$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In parallelo si sommano le conduttanze: 1/Req = 1/R1 + 1/R2.",
+      "spiegazione": "In parallelo si sommano le conduttanze: $1/R_{eq} = 1/R_1 + 1/R_2$.",
       "difficolta": "facile",
       "paroleChiave": [
         "parallelo",
@@ -285,7 +285,7 @@
     },
     {
       "id": "cir_015",
-      "domanda": "Quale grandezza si misura in ohm (Ω)?",
+      "domanda": "Quale grandezza si misura in ohm ($\\Omega$)?",
       "categoria": "Circuiti",
       "sottocategoria": "Resistenza",
       "opzioni": [
@@ -295,7 +295,7 @@
         "Potenza"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "L'ohm (Ω) è l'unità di misura della resistenza elettrica.",
+      "spiegazione": "L'ohm ($\\Omega$) è l'unità di misura della resistenza elettrica.",
       "difficolta": "facile",
       "paroleChiave": [
         "ohm",
@@ -309,13 +309,13 @@
       "categoria": "Circuiti",
       "sottocategoria": "Potenza",
       "opzioni": [
-        "P = V·I",
-        "P = V/I",
-        "P = I/R",
-        "P = R/V"
+        "$P = V \\cdot I$",
+        "$P = V/I$",
+        "$P = I/R$",
+        "$P = R/V$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "La potenza elettrica scambiata è P = V·I.",
+      "spiegazione": "La potenza elettrica scambiata è $P = V \\cdot I$.",
       "difficolta": "facile",
       "paroleChiave": [
         "potenza",
@@ -329,13 +329,13 @@
       "categoria": "Circuiti",
       "sottocategoria": "Effetto Joule",
       "opzioni": [
-        "P = I·R",
-        "P = I^2·R",
-        "P = V·R",
-        "P = V/I^2"
+        "$P = I \\cdot R$",
+        "$P = I^2 \\cdot R$",
+        "$P = V \\cdot R$",
+        "$P = V/I^2$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per un resistore, usando V=RI, si ottiene P = I^2·R (effetto Joule).",
+      "spiegazione": "Per un resistore, usando $V = RI$, si ottiene $P = I^2 \\cdot R$ (effetto Joule).",
       "difficolta": "facile",
       "paroleChiave": [
         "joule",
@@ -346,17 +346,17 @@
     },
     {
       "id": "cir_018",
-      "domanda": "Se un resistore è attraversato da corrente nulla (I = 0), la potenza dissipata vale:",
+      "domanda": "Se un resistore è attraversato da corrente nulla ($I = 0$), la potenza dissipata vale:",
       "categoria": "Circuiti",
       "sottocategoria": "Effetto Joule",
       "opzioni": [
-        "P = 0",
-        "P = R",
-        "P = V",
-        "P è infinita"
+        "$P = 0$",
+        "$P = R$",
+        "$P = V$",
+        "$P$ è infinita"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "P = V·I: se I = 0, allora P = 0.",
+      "spiegazione": "$P = V \\cdot I$: se $I = 0$, allora $P = 0$.",
       "difficolta": "facile",
       "paroleChiave": [
         "potenza",
@@ -488,7 +488,7 @@
     },
     {
       "id": "cir_025",
-      "domanda": "In un resistore ohmico, il grafico V-I è:",
+      "domanda": "In un resistore ohmico, il grafico $V$-$I$ è:",
       "categoria": "Circuiti",
       "sottocategoria": "Comportamento ohmico",
       "opzioni": [
@@ -498,7 +498,7 @@
         "Un cerchio"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per un resistore ohmico vale V = R·I: è una retta che passa per l'origine con pendenza R.",
+      "spiegazione": "Per un resistore ohmico vale $V = R \\cdot I$: è una retta che passa per l'origine con pendenza $R$.",
       "difficolta": "facile",
       "paroleChiave": [
         "ohmico",
@@ -515,7 +515,7 @@
       "opzioni": [
         "Joule (J)",
         "Watt (W)",
-        "Ohm (Ω)",
+        "Ohm ($\\Omega$)",
         "Coulomb (C)"
       ],
       "rispostaCorretta": 1,
@@ -539,7 +539,7 @@
         "La corrente è necessariamente infinita"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Per un resistore ideale V = R·I: se V = 0 allora I = 0 (se R è finita).",
+      "spiegazione": "Per un resistore ideale $V = R \\cdot I$: se $V = 0$ allora $I = 0$ (se $R$ è finita).",
       "difficolta": "facile",
       "paroleChiave": [
         "resistore",
@@ -550,7 +550,7 @@
     },
     {
       "id": "cir_028",
-      "domanda": "Un resistore da 10 Ω attraversato da 2 A dissipa potenza pari a:",
+      "domanda": "Un resistore da 10 $\\Omega$ attraversato da 2 A dissipa potenza pari a:",
       "categoria": "Circuiti",
       "sottocategoria": "Calcolo potenza",
       "opzioni": [
@@ -560,7 +560,7 @@
         "200 W"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "P = I^2·R = (2^2)·10 = 40 W.",
+      "spiegazione": "$P = I^2 \\cdot R = (2^2) \\cdot 10 = 40$ W.",
       "difficolta": "facile",
       "paroleChiave": [
         "potenza",
@@ -581,7 +581,7 @@
         "Diventa zero"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In serie Req è la somma: aggiungere resistori aumenta Req.",
+      "spiegazione": "In serie $R_{eq}$ è la somma: aggiungere resistori aumenta $R_{eq}$.",
       "difficolta": "facile",
       "paroleChiave": [
         "serie",
@@ -602,7 +602,7 @@
         "Diventa infinita"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In parallelo aumentano i cammini per la corrente, quindi Req diminuisce.",
+      "spiegazione": "In parallelo aumentano i cammini per la corrente, quindi $R_{eq}$ diminuisce.",
       "difficolta": "facile",
       "paroleChiave": [
         "parallelo",
@@ -651,7 +651,7 @@
     },
     {
       "id": "cir_033",
-      "domanda": "In un circuito chiuso con un generatore ideale e un resistore, se raddoppio la tensione del generatore e R resta costante, la corrente:",
+      "domanda": "In un circuito chiuso con un generatore ideale e un resistore, se raddoppio la tensione del generatore e $R$ resta costante, la corrente:",
       "categoria": "Circuiti",
       "sottocategoria": "Legge di Ohm",
       "opzioni": [
@@ -661,7 +661,7 @@
         "Diventa zero"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "I = V/R: se V raddoppia e R è costante, anche I raddoppia.",
+      "spiegazione": "$I = V/R$: se $V$ raddoppia e $R$ è costante, anche $I$ raddoppia.",
       "difficolta": "facile",
       "paroleChiave": [
         "ohm",
@@ -741,7 +741,7 @@
         "Sempre zero"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "In un nodo, per KCL, la corrente totale si ripartisce nei rami: Itot = I1 + I2.",
+      "spiegazione": "In un nodo, per KCL, la corrente totale si ripartisce nei rami: $I_{tot} = I_1 + I_2$.",
       "difficolta": "facile",
       "paroleChiave": [
         "parallelo",
@@ -772,7 +772,7 @@
     },
     {
       "id": "cir_039",
-      "domanda": "Se un resistore ha valore 0 Ω, esso si comporta come:",
+      "domanda": "Se un resistore ha valore 0 $\\Omega$, esso si comporta come:",
       "categoria": "Circuiti",
       "sottocategoria": "Limiti",
       "opzioni": [
@@ -782,7 +782,7 @@
         "Un isolante perfetto"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "R = 0 Ω equivale a un collegamento ideale: cortocircuito.",
+      "spiegazione": "$R = 0$ $\\Omega$ equivale a un collegamento ideale: cortocircuito.",
       "difficolta": "facile",
       "paroleChiave": [
         "resistenza zero",
@@ -812,7 +812,7 @@
     },
     {
       "id": "cir_041",
-      "domanda": "Un resistore da 12 Ω è attraversato da 0,5 A. Qual è la tensione ai suoi capi?",
+      "domanda": "Un resistore da 12 $\\Omega$ è attraversato da 0,5 A. Qual è la tensione ai suoi capi?",
       "categoria": "Circuiti",
       "sottocategoria": "Applicazioni legge di Ohm",
       "opzioni": [
@@ -822,7 +822,7 @@
         "24 V"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "V = R·I = 12·0,5 = 6 V.",
+      "spiegazione": "$V = R \\cdot I = 12 \\cdot 0,5 = 6$ V.",
       "difficolta": "media",
       "paroleChiave": [
         "ohm",
@@ -836,13 +836,13 @@
       "categoria": "Circuiti",
       "sottocategoria": "Applicazioni legge di Ohm",
       "opzioni": [
-        "1,5 Ω",
-        "3 Ω",
-        "30 Ω",
-        "90 Ω"
+        "1,5 $\\Omega$",
+        "3 $\\Omega$",
+        "30 $\\Omega$",
+        "90 $\\Omega$"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "R = V/I = 9/0,3 = 30 Ω.",
+      "spiegazione": "$R = V/I = 9/0,3 = 30$ $\\Omega$.",
       "difficolta": "media",
       "paroleChiave": [
         "ohm",
@@ -852,7 +852,7 @@
     },
     {
       "id": "cir_043",
-      "domanda": "Due resistori da 10 Ω e 20 Ω sono in serie a un generatore da 12 V. Qual è la corrente nel circuito?",
+      "domanda": "Due resistori da 10 $\\Omega$ e 20 $\\Omega$ sono in serie a un generatore da 12 V. Qual è la corrente nel circuito?",
       "categoria": "Circuiti",
       "sottocategoria": "Serie con generatore",
       "opzioni": [
@@ -862,7 +862,7 @@
         "1,2 A"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Req = 10+20 = 30 Ω, quindi I = V/Req = 12/30 = 0,4 A.",
+      "spiegazione": "$R_{eq} = 10 + 20 = 30$ $\\Omega$, quindi $I = V/R_{eq} = 12/30 = 0,4$ A.",
       "difficolta": "media",
       "paroleChiave": [
         "serie",
@@ -873,17 +873,17 @@
     },
     {
       "id": "cir_044",
-      "domanda": "Due resistori da 6 Ω e 3 Ω sono in parallelo. Qual è la resistenza equivalente?",
+      "domanda": "Due resistori da 6 $\\Omega$ e 3 $\\Omega$ sono in parallelo. Qual è la resistenza equivalente?",
       "categoria": "Circuiti",
       "sottocategoria": "Equivalente parallelo",
       "opzioni": [
-        "1 Ω",
-        "2 Ω",
-        "3 Ω",
-        "9 Ω"
+        "1 $\\Omega$",
+        "2 $\\Omega$",
+        "3 $\\Omega$",
+        "9 $\\Omega$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "1/Req = 1/6 + 1/3 = 1/6 + 2/6 = 3/6, quindi Req = 2 Ω.",
+      "spiegazione": "$1/R_{eq} = 1/6 + 1/3 = 1/6 + 2/6 = 3/6$, quindi $R_{eq} = 2$ $\\Omega$.",
       "difficolta": "media",
       "paroleChiave": [
         "parallelo",
@@ -894,7 +894,7 @@
     },
     {
       "id": "cir_045",
-      "domanda": "In un parallelo di 4 Ω e 12 Ω collegato a 12 V, qual è la corrente totale assorbita?",
+      "domanda": "In un parallelo di 4 $\\Omega$ e 12 $\\Omega$ collegato a 12 V, qual è la corrente totale assorbita?",
       "categoria": "Circuiti",
       "sottocategoria": "Parallelo con generatore",
       "opzioni": [
@@ -904,7 +904,7 @@
         "6 A"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Req = (4·12)/(4+12) = 48/16 = 3 Ω, quindi Itot = 12/3 = 4 A.",
+      "spiegazione": "$R_{eq} = (4 \\cdot 12)/(4 + 12) = 48/16 = 3$ $\\Omega$, quindi $I_{tot} = 12/3 = 4$ A.",
       "difficolta": "media",
       "paroleChiave": [
         "parallelo",
@@ -915,7 +915,7 @@
     },
     {
       "id": "cir_046",
-      "domanda": "In un resistore da 5 Ω attraversato da 2 A, quanto vale la potenza dissipata?",
+      "domanda": "In un resistore da 5 $\\Omega$ attraversato da 2 A, quanto vale la potenza dissipata?",
       "categoria": "Circuiti",
       "sottocategoria": "Effetto Joule",
       "opzioni": [
@@ -925,7 +925,7 @@
         "40 W"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "P = I^2·R = 2^2·5 = 20 W.",
+      "spiegazione": "$P = I^2 \\cdot R = 2^2 \\cdot 5 = 20$ W.",
       "difficolta": "media",
       "paroleChiave": [
         "potenza",
@@ -936,7 +936,7 @@
     },
     {
       "id": "cir_047",
-      "domanda": "In un resistore da 10 Ω con 20 V ai capi, quanto vale la potenza dissipata?",
+      "domanda": "In un resistore da 10 $\\Omega$ con 20 V ai capi, quanto vale la potenza dissipata?",
       "categoria": "Circuiti",
       "sottocategoria": "Potenza su resistore",
       "opzioni": [
@@ -946,7 +946,7 @@
         "400 W"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "P = V^2/R = 20^2/10 = 400/10 = 40 W.",
+      "spiegazione": "$P = V^2/R = 20^2/10 = 400/10 = 40$ W.",
       "difficolta": "media",
       "paroleChiave": [
         "potenza",
@@ -956,17 +956,17 @@
     },
     {
       "id": "cir_048",
-      "domanda": "Due resistori uguali R in parallelo hanno resistenza equivalente:",
+      "domanda": "Due resistori uguali $R$ in parallelo hanno resistenza equivalente:",
       "categoria": "Circuiti",
       "sottocategoria": "Casi notevoli",
       "opzioni": [
-        "R",
-        "2R",
-        "R/2",
-        "R^2"
+        "$R$",
+        "$2R$",
+        "$R/2$",
+        "$R^2$"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Due resistori uguali in parallelo dimezzano la resistenza: Req = R/2.",
+      "spiegazione": "Due resistori uguali in parallelo dimezzano la resistenza: $R_{eq} = R/2$.",
       "difficolta": "media",
       "paroleChiave": [
         "parallelo",
@@ -977,17 +977,17 @@
     },
     {
       "id": "cir_049",
-      "domanda": "Tre resistori uguali R in serie hanno resistenza equivalente:",
+      "domanda": "Tre resistori uguali $R$ in serie hanno resistenza equivalente:",
       "categoria": "Circuiti",
       "sottocategoria": "Casi notevoli",
       "opzioni": [
-        "R/3",
-        "R",
-        "2R",
-        "3R"
+        "$R/3$",
+        "$R$",
+        "$2R$",
+        "$3R$"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "In serie si sommano: Req = R + R + R = 3R.",
+      "spiegazione": "In serie si sommano: $R_{eq} = R + R + R = 3R$.",
       "difficolta": "media",
       "paroleChiave": [
         "serie",
@@ -998,7 +998,7 @@
     },
     {
       "id": "cir_050",
-      "domanda": "Un partitore di tensione con R1=2 kΩ e R2=1 kΩ in serie a 9 V. Qual è la tensione su R2?",
+      "domanda": "Un partitore di tensione con $R_1 = 2\\,\\mathrm{k}\\Omega$ e $R_2 = 1\\,\\mathrm{k}\\Omega$ in serie a 9 V. Qual è la tensione su $R_2$?",
       "categoria": "Circuiti",
       "sottocategoria": "Partitore di tensione",
       "opzioni": [
@@ -1008,7 +1008,7 @@
         "9 V"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "V_R2 = V·R2/(R1+R2) = 9·1/(2+1) = 3 V.",
+      "spiegazione": "$V_{R2} = V \\cdot R_2/(R_1 + R_2) = 9 \\cdot 1/(2 + 1) = 3$ V.",
       "difficolta": "media",
       "paroleChiave": [
         "partitore",
@@ -1029,7 +1029,7 @@
         "Solo un condensatore"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Un generatore reale di tensione si modella spesso con un generatore ideale in serie a una resistenza interna r.",
+      "spiegazione": "Un generatore reale di tensione si modella spesso con un generatore ideale in serie a una resistenza interna $r$.",
       "difficolta": "media",
       "paroleChiave": [
         "generatore reale",
@@ -1039,7 +1039,7 @@
     },
     {
       "id": "cir_052",
-      "domanda": "Una batteria da 12 V con resistenza interna 1 Ω alimenta un carico da 5 Ω. Qual è la corrente erogata?",
+      "domanda": "Una batteria da 12 V con resistenza interna 1 $\\Omega$ alimenta un carico da 5 $\\Omega$. Qual è la corrente erogata?",
       "categoria": "Circuiti",
       "sottocategoria": "Resistenza interna",
       "opzioni": [
@@ -1049,7 +1049,7 @@
         "12 A"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "La resistenza totale è 1+5=6 Ω, quindi I = 12/6 = 2,0 A? Attenzione: 12/6=2 A. (Correzione: l'opzione corretta è 2 A).",
+      "spiegazione": "La resistenza totale è $1 + 5 = 6$ $\\Omega$, quindi $I = 12/6 = 2$ A.",
       "difficolta": "media",
       "paroleChiave": [
         "batteria",
@@ -1064,13 +1064,13 @@
       "categoria": "Circuiti",
       "sottocategoria": "Resistenza interna",
       "opzioni": [
-        "V = I·r",
-        "V = r/I",
-        "V = I/r",
-        "V = r^2·I"
+        "$V = I \\cdot r$",
+        "$V = r/I$",
+        "$V = I/r$",
+        "$V = r^2 \\cdot I$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "La resistenza interna si comporta come un resistore: la caduta è V = I·r.",
+      "spiegazione": "La resistenza interna si comporta come un resistore: la caduta è $V = I \\cdot r$.",
       "difficolta": "media",
       "paroleChiave": [
         "resistenza interna",
@@ -1080,7 +1080,7 @@
     },
     {
       "id": "cir_054",
-      "domanda": "In un nodo entrano 2 A e 0,5 A, esce una corrente I3. Quanto vale I3 (regime stazionario)?",
+      "domanda": "In un nodo entrano 2 A e 0,5 A, esce una corrente $I_3$. Quanto vale $I_3$ (regime stazionario)?",
       "categoria": "Circuiti",
       "sottocategoria": "KCL calcolo",
       "opzioni": [
@@ -1090,7 +1090,7 @@
         "4 A"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per KCL: somma entranti = somma uscenti, quindi I3 = 2 + 0,5 = 2,5 A.",
+      "spiegazione": "Per KCL: somma entranti = somma uscenti, quindi $I_3 = 2 + 0,5 = 2,5$ A.",
       "difficolta": "media",
       "paroleChiave": [
         "KCL",
@@ -1111,7 +1111,7 @@
         "7 V"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Per KVL, lungo la maglia 12 − 5 − 7 = 0 V.",
+      "spiegazione": "Per KVL, lungo la maglia $12 - 5 - 7 = 0$ V.",
       "difficolta": "media",
       "paroleChiave": [
         "KVL",
@@ -1121,17 +1121,17 @@
     },
     {
       "id": "cir_056",
-      "domanda": "Tre resistori 2 Ω, 3 Ω e 6 Ω: quali due in parallelo danno Req = 1,5 Ω?",
+      "domanda": "Tre resistori 2 $\\Omega$, 3 $\\Omega$ e 6 $\\Omega$: quali due in parallelo danno $R_{eq} = 1,5$ $\\Omega$?",
       "categoria": "Circuiti",
       "sottocategoria": "Parallelo selezione",
       "opzioni": [
-        "2 Ω || 3 Ω",
-        "2 Ω || 6 Ω",
-        "3 Ω || 6 Ω",
-        "2 Ω || 3 Ω || 6 Ω"
+        "2 $\\Omega$ || 3 $\\Omega$",
+        "2 $\\Omega$ || 6 $\\Omega$",
+        "3 $\\Omega$ || 6 $\\Omega$",
+        "2 $\\Omega$ || 3 $\\Omega$ || 6 $\\Omega$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Req(2||6) = (2·6)/(2+6) = 12/8 = 1,5 Ω.",
+      "spiegazione": "$R_{eq}(2 \\| 6) = (2 \\cdot 6)/(2 + 6) = 12/8 = 1,5$ $\\Omega$.",
       "difficolta": "media",
       "paroleChiave": [
         "parallelo",
@@ -1141,17 +1141,17 @@
     },
     {
       "id": "cir_057",
-      "domanda": "Un resistore da 8 Ω è in serie a un parallelo di 6 Ω e 3 Ω. Qual è la resistenza equivalente totale?",
+      "domanda": "Un resistore da 8 $\\Omega$ è in serie a un parallelo di 6 $\\Omega$ e 3 $\\Omega$. Qual è la resistenza equivalente totale?",
       "categoria": "Circuiti",
       "sottocategoria": "Misto serie-parallelo",
       "opzioni": [
-        "9 Ω",
-        "10 Ω",
-        "11 Ω",
-        "12 Ω"
+        "9 $\\Omega$",
+        "10 $\\Omega$",
+        "11 $\\Omega$",
+        "12 $\\Omega$"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Req_par = (6·3)/(6+3) = 18/9 = 2 Ω; totale = 8 + 2 = 10 Ω. (Quindi l'opzione corretta è 10 Ω).",
+      "spiegazione": "$R_{eq,par} = (6 \\cdot 3)/(6 + 3) = 18/9 = 2$ $\\Omega$; totale $= 8\\,\\Omega + 2\\,\\Omega = 10\\,\\Omega$.",
       "difficolta": "media",
       "paroleChiave": [
         "serie-parallelo",
@@ -1161,7 +1161,7 @@
     },
     {
       "id": "cir_058",
-      "domanda": "Se un circuito ha resistenza equivalente 4 Ω ed è alimentato a 12 V, qual è la potenza totale assorbita?",
+      "domanda": "Se un circuito ha resistenza equivalente 4 $\\Omega$ ed è alimentato a 12 V, qual è la potenza totale assorbita?",
       "categoria": "Circuiti",
       "sottocategoria": "Potenza totale",
       "opzioni": [
@@ -1171,7 +1171,7 @@
         "144 W"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "P = V^2/Req = 12^2/4 = 144/4 = 36 W.",
+      "spiegazione": "$P = V^2/R_{eq} = 12^2/4 = 144/4 = 36$ W.",
       "difficolta": "media",
       "paroleChiave": [
         "potenza",
@@ -1181,17 +1181,17 @@
     },
     {
       "id": "cir_059",
-      "domanda": "Che cosa rappresenta la costante di tempo di un circuito RC, τ?",
+      "domanda": "Che cosa rappresenta la costante di tempo di un circuito RC, $\\tau$?",
       "categoria": "Circuiti",
       "sottocategoria": "RC",
       "opzioni": [
-        "τ = R/C",
-        "τ = R·C",
-        "τ = C/R",
-        "τ = R + C"
+        "$\\tau = R/C$",
+        "$\\tau = R \\cdot C$",
+        "$\\tau = C/R$",
+        "$\\tau = R + C$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In un circuito RC, la costante di tempo è τ = R·C.",
+      "spiegazione": "In un circuito RC, la costante di tempo è $\\tau = R \\cdot C$.",
       "difficolta": "media",
       "paroleChiave": [
         "RC",
@@ -1202,7 +1202,7 @@
     },
     {
       "id": "cir_060",
-      "domanda": "In un circuito RC in carica, dopo un tempo pari a τ, la tensione sul condensatore vale circa:",
+      "domanda": "In un circuito RC in carica, dopo un tempo pari a $\\tau$, la tensione sul condensatore vale circa:",
       "categoria": "Circuiti",
       "sottocategoria": "RC carica",
       "opzioni": [
@@ -1223,17 +1223,17 @@
     },
     {
       "id": "cir_061",
-      "domanda": "Qual è la relazione tra carica Q e capacità C per un condensatore ideale?",
+      "domanda": "Qual è la relazione tra carica $Q$ e capacità $C$ per un condensatore ideale?",
       "categoria": "Circuiti",
       "sottocategoria": "Relazioni fondamentali",
       "opzioni": [
-        "Q = C·V",
-        "Q = V/C",
-        "Q = C/V",
-        "Q = V^2·C"
+        "$Q = C \\cdot V$",
+        "$Q = V/C$",
+        "$Q = C/V$",
+        "$Q = V^2 \\cdot C$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Per un condensatore ideale vale Q = C·V.",
+      "spiegazione": "Per un condensatore ideale vale $Q = C \\cdot V$.",
       "difficolta": "media",
       "paroleChiave": [
         "condensatore",
@@ -1244,17 +1244,17 @@
     },
     {
       "id": "cir_062",
-      "domanda": "Due condensatori C1 e C2 in parallelo hanno capacità equivalente:",
+      "domanda": "Due condensatori $C_1$ e $C_2$ in parallelo hanno capacità equivalente:",
       "categoria": "Circuiti",
       "sottocategoria": "Parallelo",
       "opzioni": [
-        "Ceq = C1 + C2",
-        "1/Ceq = 1/C1 + 1/C2",
-        "Ceq = C1·C2",
-        "Ceq = (C1+C2)/(C1·C2)"
+        "$C_{eq} = C_1 + C_2$",
+        "$1/C_{eq} = 1/C_1 + 1/C_2$",
+        "$C_{eq} = C_1 \\cdot C_2$",
+        "$C_{eq} = (C_1 + C_2)/(C_1 \\cdot C_2)$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "In parallelo le capacità si sommano: Ceq = C1 + C2.",
+      "spiegazione": "In parallelo le capacità si sommano: $C_{eq} = C_1 + C_2$.",
       "difficolta": "media",
       "paroleChiave": [
         "condensatori",
@@ -1265,17 +1265,17 @@
     },
     {
       "id": "cir_063",
-      "domanda": "Due condensatori C1 e C2 in serie hanno capacità equivalente:",
+      "domanda": "Due condensatori $C_1$ e $C_2$ in serie hanno capacità equivalente:",
       "categoria": "Circuiti",
       "sottocategoria": "Serie",
       "opzioni": [
-        "Ceq = C1 + C2",
-        "1/Ceq = 1/C1 + 1/C2",
-        "Ceq = C1·C2",
-        "Ceq = C1 − C2"
+        "$C_{eq} = C_1 + C_2$",
+        "$1/C_{eq} = 1/C_1 + 1/C_2$",
+        "$C_{eq} = C_1 \\cdot C_2$",
+        "$C_{eq} = C_1 - C_2$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In serie si sommano i reciproci: 1/Ceq = 1/C1 + 1/C2.",
+      "spiegazione": "In serie si sommano i reciproci: $1/C_{eq} = 1/C_1 + 1/C_2$.",
       "difficolta": "media",
       "paroleChiave": [
         "condensatori",
@@ -1285,7 +1285,7 @@
     },
     {
       "id": "cir_064",
-      "domanda": "Un condensatore da 100 μF è caricato a 10 V. Quanta carica accumula?",
+      "domanda": "Un condensatore da 100 $\\mu$F è caricato a 10 V. Quanta carica accumula?",
       "categoria": "Circuiti",
       "sottocategoria": "Calcolo Q",
       "opzioni": [
@@ -1295,7 +1295,7 @@
         "1000 mC"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Q = C·V = 100·10^-6 · 10 = 1000·10^-6 C = 10^-3 C = 1 mC.",
+      "spiegazione": "$Q = C \\cdot V = 100 \\cdot 10^{-6} \\cdot 10 = 10^{-3}$ C = 1 mC.",
       "difficolta": "media",
       "paroleChiave": [
         "Q=CV",
@@ -1312,7 +1312,7 @@
       "opzioni": [
         "Un corto circuito",
         "Un circuito aperto",
-        "Un resistore da 1 Ω",
+        "Un resistore da 1 $\\Omega$",
         "Un generatore ideale"
       ],
       "rispostaCorretta": 1,
@@ -1368,17 +1368,17 @@
     },
     {
       "id": "cir_068",
-      "domanda": "Qual è la costante di tempo di un circuito RL, τ?",
+      "domanda": "Qual è la costante di tempo di un circuito RL, $\\tau$?",
       "categoria": "Circuiti",
       "sottocategoria": "RL",
       "opzioni": [
-        "τ = L/R",
-        "τ = R/L",
-        "τ = L·R",
-        "τ = L + R"
+        "$\\tau = L/R$",
+        "$\\tau = R/L$",
+        "$\\tau = L \\cdot R$",
+        "$\\tau = L + R$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "In un circuito RL, la costante di tempo è τ = L/R.",
+      "spiegazione": "In un circuito RL, la costante di tempo è $\\tau = L/R$.",
       "difficolta": "media",
       "paroleChiave": [
         "RL",
@@ -1389,7 +1389,7 @@
     },
     {
       "id": "cir_069",
-      "domanda": "Un resistore da 2 Ω e uno da 8 Ω in parallelo: qual è la corrente nel ramo da 2 Ω se la tensione ai capi del parallelo è 8 V?",
+      "domanda": "Un resistore da 2 $\\Omega$ e uno da 8 $\\Omega$ in parallelo: qual è la corrente nel ramo da 2 $\\Omega$ se la tensione ai capi del parallelo è 8 V?",
       "categoria": "Circuiti",
       "sottocategoria": "Correnti nei rami",
       "opzioni": [
@@ -1399,7 +1399,7 @@
         "8 A"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Nel parallelo la tensione è la stessa: I = V/R = 8/2 = 4 A nel ramo da 2 Ω.",
+      "spiegazione": "Nel parallelo la tensione è la stessa: $I = V/R = 8/2 = 4$ A nel ramo da 2 $\\Omega$.",
       "difficolta": "media",
       "paroleChiave": [
         "parallelo",
@@ -1409,7 +1409,7 @@
     },
     {
       "id": "cir_070",
-      "domanda": "In una serie di R1=4 Ω e R2=6 Ω scorre 2 A. Qual è la tensione totale ai capi della serie?",
+      "domanda": "In una serie di $R_1 = 4$ $\\Omega$ e $R_2 = 6$ $\\Omega$ scorre 2 A. Qual è la tensione totale ai capi della serie?",
       "categoria": "Circuiti",
       "sottocategoria": "Serie calcolo V",
       "opzioni": [
@@ -1419,7 +1419,7 @@
         "24 V"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Req = 4+6=10 Ω, quindi V = I·Req = 2·10 = 20 V.",
+      "spiegazione": "$R_{eq} = 4 + 6 = 10$ $\\Omega$, quindi $V = I \\cdot R_{eq} = 2 \\cdot 10 = 20$ V.",
       "difficolta": "media",
       "paroleChiave": [
         "serie",
@@ -1430,7 +1430,7 @@
     },
     {
       "id": "cir_071",
-      "domanda": "In una serie R1=2 Ω, R2=8 Ω alimentata con 10 V, qual è la tensione su R2?",
+      "domanda": "In una serie $R_1 = 2$ $\\Omega$, $R_2 = 8$ $\\Omega$ alimentata con 10 V, qual è la tensione su $R_2$?",
       "categoria": "Circuiti",
       "sottocategoria": "Partitore di tensione",
       "opzioni": [
@@ -1440,7 +1440,7 @@
         "10 V"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "V_R2 = 10·8/(2+8) = 10·8/10 = 8 V.",
+      "spiegazione": "$V_{R2} = 10 \\cdot 8/(2 + 8) = 10 \\cdot 8/10 = 8$ V.",
       "difficolta": "media",
       "paroleChiave": [
         "partitore",
@@ -1454,13 +1454,13 @@
       "categoria": "Circuiti",
       "sottocategoria": "Dipendenze",
       "opzioni": [
-        "P cresce se R cresce",
-        "P diminuisce se R cresce",
-        "P non dipende da R",
-        "P è sempre zero"
+        "$P$ cresce se $R$ cresce",
+        "$P$ diminuisce se $R$ cresce",
+        "$P$ non dipende da $R$",
+        "$P$ è sempre zero"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "A V costante, P = V^2/R: se R aumenta, P diminuisce.",
+      "spiegazione": "A $V$ costante, $P = V^2/R$: se $R$ aumenta, $P$ diminuisce.",
       "difficolta": "media",
       "paroleChiave": [
         "potenza",
@@ -1475,13 +1475,13 @@
       "categoria": "Circuiti",
       "sottocategoria": "Dipendenze",
       "opzioni": [
-        "P cresce se R cresce",
-        "P diminuisce se R cresce",
-        "P non dipende da R",
-        "P è sempre uguale a V^2/R con V costante"
+        "$P$ cresce se $R$ cresce",
+        "$P$ diminuisce se $R$ cresce",
+        "$P$ non dipende da $R$",
+        "$P$ è sempre uguale a $V^2/R$ con $V$ costante"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "A I costante, P = I^2·R: se R aumenta, P aumenta.",
+      "spiegazione": "A $I$ costante, $P = I^2 \\cdot R$: se $R$ aumenta, $P$ aumenta.",
       "difficolta": "media",
       "paroleChiave": [
         "potenza",
@@ -1492,7 +1492,7 @@
     },
     {
       "id": "cir_074",
-      "domanda": "In una maglia con generatore da 9 V e un resistore da 3 Ω, qual è la corrente (generatore ideale)?",
+      "domanda": "In una maglia con generatore da 9 V e un resistore da 3 $\\Omega$, qual è la corrente (generatore ideale)?",
       "categoria": "Circuiti",
       "sottocategoria": "Serie semplice",
       "opzioni": [
@@ -1502,7 +1502,7 @@
         "27 A"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "I = V/R = 9/3 = 3 A.",
+      "spiegazione": "$I = V/R = 9/3 = 3$ A.",
       "difficolta": "media",
       "paroleChiave": [
         "ohm",
@@ -1522,7 +1522,7 @@
         "2,4 A"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per KCL, Itot = I1 + I2 = 1,2 + 0,8 = 2,0 A.",
+      "spiegazione": "Per KCL, $I_{tot} = I_1 + I_2 = 1,2 + 0,8 = 2,0$ A.",
       "difficolta": "media",
       "paroleChiave": [
         "KCL",
@@ -1532,17 +1532,17 @@
     },
     {
       "id": "cir_076",
-      "domanda": "Un condensatore da 10 μF è in parallelo a un altro da 20 μF. Qual è la capacità equivalente?",
+      "domanda": "Un condensatore da 10 $\\mu$F è in parallelo a un altro da 20 $\\mu$F. Qual è la capacità equivalente?",
       "categoria": "Circuiti",
       "sottocategoria": "Parallelo calcolo",
       "opzioni": [
-        "5 μF",
-        "10 μF",
-        "20 μF",
-        "30 μF"
+        "5 $\\mu$F",
+        "10 $\\mu$F",
+        "20 $\\mu$F",
+        "30 $\\mu$F"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "In parallelo le capacità si sommano: Ceq = 10 + 20 = 30 μF.",
+      "spiegazione": "In parallelo le capacità si sommano: $C_{eq} = 10 + 20 = 30$ $\\mu$F.",
       "difficolta": "media",
       "paroleChiave": [
         "condensatori",
@@ -1553,17 +1553,17 @@
     },
     {
       "id": "cir_077",
-      "domanda": "Un condensatore da 10 μF è in serie a un altro da 20 μF. Qual è la capacità equivalente?",
+      "domanda": "Un condensatore da 10 $\\mu$F è in serie a un altro da 20 $\\mu$F. Qual è la capacità equivalente?",
       "categoria": "Circuiti",
       "sottocategoria": "Serie calcolo",
       "opzioni": [
-        "6,7 μF",
-        "10 μF",
-        "15 μF",
-        "30 μF"
+        "6,7 $\\mu$F",
+        "10 $\\mu$F",
+        "15 $\\mu$F",
+        "30 $\\mu$F"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "1/Ceq = 1/10 + 1/20 = 0,1 + 0,05 = 0,15 (1/μF), quindi Ceq ≈ 6,67 μF.",
+      "spiegazione": "$1/C_{eq} = 1/10 + 1/20 = 0,1 + 0,05 = 0,15$ (1/$\\mu$F), quindi $C_{eq} \\approx 6,67$ $\\mu$F.",
       "difficolta": "media",
       "paroleChiave": [
         "condensatori",
@@ -1574,7 +1574,7 @@
     },
     {
       "id": "cir_078",
-      "domanda": "Un resistore da 100 Ω è attraversato da 50 mA. Qual è la tensione ai capi?",
+      "domanda": "Un resistore da 100 $\\Omega$ è attraversato da 50 mA. Qual è la tensione ai capi?",
       "categoria": "Circuiti",
       "sottocategoria": "Applicazioni legge di Ohm",
       "opzioni": [
@@ -1584,7 +1584,7 @@
         "500 V"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "I = 50 mA = 0,05 A; V = R·I = 100·0,05 = 5 V.",
+      "spiegazione": "$I = 50$ mA $= 0,05$ A; $V = R \\cdot I = 100 \\cdot 0,05 = 5$ V.",
       "difficolta": "media",
       "paroleChiave": [
         "ohm",
@@ -1595,7 +1595,7 @@
     },
     {
       "id": "cir_079",
-      "domanda": "In un circuito RC in scarica, dopo un tempo pari a τ, la tensione sul condensatore vale circa:",
+      "domanda": "In un circuito RC in scarica, dopo un tempo pari a $\\tau$, la tensione sul condensatore vale circa:",
       "categoria": "Circuiti",
       "sottocategoria": "RC scarica",
       "opzioni": [
@@ -1605,7 +1605,7 @@
         "Circa lo 0% del valore iniziale"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Nella scarica esponenziale, dopo τ resta circa il 37% del valore iniziale.",
+      "spiegazione": "Nella scarica esponenziale, dopo $\\tau$ resta circa il 37% del valore iniziale.",
       "difficolta": "media",
       "paroleChiave": [
         "RC",
@@ -1626,7 +1626,7 @@
         "Dipende dalla corrente nei rami"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In serie la corrente è la stessa: V = I·R, quindi la caduta maggiore è su R maggiore.",
+      "spiegazione": "In serie la corrente è la stessa: $V = I \\cdot R$, quindi la caduta maggiore è su $R$ maggiore.",
       "difficolta": "media",
       "paroleChiave": [
         "serie",
@@ -1636,7 +1636,7 @@
     },
     {
       "id": "cir_081",
-      "domanda": "In una maglia ci sono un generatore da 24 V e tre resistori in serie: 4 Ω, 2 Ω, 6 Ω. Qual è la corrente nel circuito?",
+      "domanda": "In una maglia ci sono un generatore da 24 V e tre resistori in serie: 4 $\\Omega$, 2 $\\Omega$, 6 $\\Omega$. Qual è la corrente nel circuito?",
       "categoria": "Circuiti",
       "sottocategoria": "Serie multi-resistore",
       "opzioni": [
@@ -1646,7 +1646,7 @@
         "4 A"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Req = 4+2+6 = 12 Ω, quindi I = 24/12 = 2 A.",
+      "spiegazione": "$R_{eq} = 4 + 2 + 6 = 12$ $\\Omega$, quindi $I = 24/12 = 2$ A.",
       "difficolta": "media",
       "paroleChiave": [
         "serie",
@@ -1657,17 +1657,17 @@
     },
     {
       "id": "cir_082",
-      "domanda": "Un resistore da 3 Ω è in serie a un parallelo di 6 Ω e 12 Ω. Qual è la resistenza equivalente totale?",
+      "domanda": "Un resistore da 3 $\\Omega$ è in serie a un parallelo di 6 $\\Omega$ e 12 $\\Omega$. Qual è la resistenza equivalente totale?",
       "categoria": "Circuiti",
       "sottocategoria": "Misto serie-parallelo",
       "opzioni": [
-        "5 Ω",
-        "6 Ω",
-        "7 Ω",
-        "9 Ω"
+        "5 $\\Omega$",
+        "6 $\\Omega$",
+        "7 $\\Omega$",
+        "9 $\\Omega$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Req_par = (6·12)/(6+12) = 72/18 = 4 Ω; totale = 3 + 4 = 7 Ω. (Quindi l'opzione corretta è 7 Ω).",
+      "spiegazione": "$R_{eq,par} = (6 \\cdot 12)/(6 + 12) = 72/18 = 4$ $\\Omega$; totale $= 3\\,\\Omega + 4\\,\\Omega = 7\\,\\Omega$.",
       "difficolta": "media",
       "paroleChiave": [
         "misto",
@@ -1688,7 +1688,7 @@
         "144 W"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "P = V·I = 12·2 = 24 W.",
+      "spiegazione": "$P = V \\cdot I = 12 \\cdot 2 = 24$ W.",
       "difficolta": "media",
       "paroleChiave": [
         "potenza",
@@ -1708,7 +1708,7 @@
         "6000 J"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "E = P·t = 60 W · 120 s = 7200 J.",
+      "spiegazione": "$E = P \\cdot t = 60 \\cdot 120 = 7200$ J.",
       "difficolta": "media",
       "paroleChiave": [
         "energia",
@@ -1719,7 +1719,7 @@
     },
     {
       "id": "cir_085",
-      "domanda": "Dato un resistore R=200 Ω, quale corrente scorre se applico 10 V?",
+      "domanda": "Dato un resistore $R = 200$ $\\Omega$, quale corrente scorre se applico 10 V?",
       "categoria": "Circuiti",
       "sottocategoria": "Applicazioni legge di Ohm",
       "opzioni": [
@@ -1729,7 +1729,7 @@
         "20 A"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "I = V/R = 10/200 = 0,05 A.",
+      "spiegazione": "$I = V/R = 10/200 = 0,05$ A.",
       "difficolta": "media",
       "paroleChiave": [
         "ohm",
@@ -1749,7 +1749,7 @@
         "Dipende dal generatore ideale"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In un ramo vale I = V/R: a V uguale, la corrente è maggiore dove R è minore.",
+      "spiegazione": "In un ramo vale $I = V/R$: a $V$ uguale, la corrente è maggiore dove $R$ è minore.",
       "difficolta": "media",
       "paroleChiave": [
         "parallelo",
@@ -1811,7 +1811,7 @@
         "Accumula carica"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Un resistore dissipa energia sotto forma di calore quando circola corrente: P = I^2·R.",
+      "spiegazione": "Un resistore dissipa energia sotto forma di calore quando circola corrente: $P = I^2 \\cdot R$.",
       "difficolta": "media",
       "paroleChiave": [
         "resistore",
@@ -1821,7 +1821,7 @@
     },
     {
       "id": "cir_090",
-      "domanda": "Un circuito RC ha R=10 kΩ e C=100 nF. Quanto vale τ?",
+      "domanda": "Un circuito RC ha $R = 10$ k$\\Omega$ e $C = 100$ nF. Quanto vale $\\tau$?",
       "categoria": "Circuiti",
       "sottocategoria": "RC calcolo",
       "opzioni": [
@@ -1831,7 +1831,7 @@
         "10 s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "τ = R·C = 10^4 · 10^-7 = 10^-3 s = 1 ms.",
+      "spiegazione": "$\\tau = R \\cdot C = 10^4 \\cdot 10^{-7} = 10^{-3}$ s = 1 ms.",
       "difficolta": "media",
       "paroleChiave": [
         "RC",
@@ -1863,7 +1863,7 @@
     },
     {
       "id": "cir_092",
-      "domanda": "Una maglia contiene un generatore da 18 V e due resistori in serie: R1=3 Ω, R2=6 Ω. Quanto vale la tensione ai capi di R2?",
+      "domanda": "Una maglia contiene un generatore da 18 V e due resistori in serie: $R_1 = 3$ $\\Omega$, $R_2 = 6$ $\\Omega$. Quanto vale la tensione ai capi di $R_2$?",
       "categoria": "Circuiti",
       "sottocategoria": "Partitore di tensione avanzato",
       "opzioni": [
@@ -1873,7 +1873,7 @@
         "18 V"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "I = 18/(3+6)=2 A, quindi V_R2 = I·R2 = 2·6 = 12 V.",
+      "spiegazione": "$I = 18/(3 + 6) = 2$ A, quindi $V_{R2} = I \\cdot R_2 = 2 \\cdot 6 = 12$ V.",
       "difficolta": "difficile",
       "paroleChiave": [
         "partitore",
@@ -1884,7 +1884,7 @@
     },
     {
       "id": "cir_093",
-      "domanda": "In un nodo escono 3 A e 1 A; entra una corrente I. Quanto vale I?",
+      "domanda": "In un nodo escono 3 A e 1 A; entra una corrente $I$. Quanto vale $I$?",
       "categoria": "Circuiti",
       "sottocategoria": "KCL calcolo",
       "opzioni": [
@@ -1894,7 +1894,7 @@
         "5 A"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per KCL la corrente entrante deve eguagliare la somma delle uscenti: I = 3+1 = 4 A.",
+      "spiegazione": "Per KCL la corrente entrante deve eguagliare la somma delle uscenti: $I = 3 + 1 = 4$ A.",
       "difficolta": "difficile",
       "paroleChiave": [
         "KCL",
@@ -1905,17 +1905,17 @@
     },
     {
       "id": "cir_094",
-      "domanda": "Un circuito ha un generatore ideale da 10 V, un resistore R1=2 Ω in serie a un parallelo di R2=4 Ω e R3=4 Ω. Qual è la corrente totale?",
+      "domanda": "Un circuito ha un generatore ideale da 10 V, un resistore $R_1 = 2$ $\\Omega$ in serie a un parallelo di $R_2 = 4$ $\\Omega$ e $R_3 = 4$ $\\Omega$. Qual è la corrente totale?",
       "categoria": "Circuiti",
       "sottocategoria": "Misto con calcolo Itot",
       "opzioni": [
         "1 A",
         "2 A",
-        "3 A",
+        "2,5 A",
         "4 A"
       ],
-      "rispostaCorretta": 3,
-      "spiegazione": "R2||R3 = 2 Ω; totale = 2+2=4 Ω; Itot = 10/4 = 2,5 A. (Nessuna opzione coincide: la risposta corretta sarebbe 2,5 A).",
+      "rispostaCorretta": 2,
+      "spiegazione": "$R_2 \\| R_3 = 2\\,\\Omega$; totale $= 2\\,\\Omega + 2\\,\\Omega = 4\\,\\Omega$; $I_{tot} = 10/4 = 2{,}5\\,\\mathrm{A}$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "misto",
@@ -1926,7 +1926,7 @@
     },
     {
       "id": "cir_095",
-      "domanda": "In un circuito con generatore reale (f.e.m. 12 V, r=2 Ω) e carico R=4 Ω, qual è la tensione ai capi del carico?",
+      "domanda": "In un circuito con generatore reale (f.e.m. 12 V, $r = 2$ $\\Omega$) e carico $R = 4$ $\\Omega$, qual è la tensione ai capi del carico?",
       "categoria": "Circuiti",
       "sottocategoria": "Tensione ai morsetti",
       "opzioni": [
@@ -1936,7 +1936,7 @@
         "12 V"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "I = 12/(2+4)=2 A; tensione sul carico V_R = I·R = 2·4 = 8 V.",
+      "spiegazione": "$I = 12/(2 + 4) = 2$ A; tensione sul carico $V_R = I \\cdot R = 2 \\cdot 4 = 8$ V.",
       "difficolta": "difficile",
       "paroleChiave": [
         "generatore reale",
@@ -1946,7 +1946,7 @@
     },
     {
       "id": "cir_096",
-      "domanda": "Nel circuito precedente (12 V, r=2 Ω, R=4 Ω), qual è la potenza dissipata nella resistenza interna?",
+      "domanda": "Nel circuito precedente (12 V, $r = 2$ $\\Omega$, $R = 4$ $\\Omega$), qual è la potenza dissipata nella resistenza interna?",
       "categoria": "Circuiti",
       "sottocategoria": "Perdite interne",
       "opzioni": [
@@ -1955,8 +1955,8 @@
         "8 W",
         "16 W"
       ],
-      "rispostaCorretta": 3,
-      "spiegazione": "I=2 A; P_r = I^2·r = 4·2 = 8 W. (Quindi l'opzione corretta è 8 W).",
+      "rispostaCorretta": 2,
+      "spiegazione": "$I = 2$ A; $P_r = I^2 \\cdot r = 2^2 \\cdot 2 = 8$ W.",
       "difficolta": "difficile",
       "paroleChiave": [
         "perdite",
@@ -1967,7 +1967,7 @@
     },
     {
       "id": "cir_097",
-      "domanda": "Un circuito RC ha R=1 kΩ e C=1 μF. Dopo quanto tempo circa la tensione sul condensatore in carica raggiunge ~63% del valore finale?",
+      "domanda": "Un circuito RC ha $R = 1$ k$\\Omega$ e $C = 1$ $\\mu$F. Dopo quanto tempo circa la tensione sul condensatore in carica raggiunge ~63% del valore finale?",
       "categoria": "Circuiti",
       "sottocategoria": "RC concetti",
       "opzioni": [
@@ -1977,7 +1977,7 @@
         "1 s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Il 63% si raggiunge dopo circa una costante di tempo τ = R·C = 1000·10^-6 = 0,001 s = 1 ms. (Quindi l'opzione corretta è 0,001 s).",
+      "spiegazione": "Il 63% si raggiunge dopo circa una costante di tempo $\\tau = R \\cdot C = 1000 \\cdot 10^{-6} = 0{,}001\\,\\mathrm{s}$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "RC",
@@ -1988,7 +1988,7 @@
     },
     {
       "id": "cir_098",
-      "domanda": "In un circuito RL con R=10 Ω e L=0,5 H, qual è la costante di tempo τ?",
+      "domanda": "In un circuito RL con $R = 10$ $\\Omega$ e $L = 0,5$ H, qual è la costante di tempo $\\tau$?",
       "categoria": "Circuiti",
       "sottocategoria": "RL calcolo",
       "opzioni": [
@@ -1997,8 +1997,8 @@
         "5 s",
         "50 s"
       ],
-      "rispostaCorretta": 1,
-      "spiegazione": "τ = L/R = 0,5/10 = 0,05 s. (Quindi l'opzione corretta è 0,05 s).",
+      "rispostaCorretta": 0,
+      "spiegazione": "$\\tau = L/R = 0{,}5/10 = 0{,}05\\,\\mathrm{s}$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "RL",
@@ -2009,17 +2009,17 @@
     },
     {
       "id": "cir_099",
-      "domanda": "In corrente alternata sinusoidale, la tensione efficace (RMS) di un segnale con ampiezza (valore di picco) V0 è:",
+      "domanda": "In corrente alternata sinusoidale, la tensione efficace (RMS) di un segnale con ampiezza (valore di picco) $V_0$ è:",
       "categoria": "Circuiti",
       "sottocategoria": "Valore efficace",
       "opzioni": [
-        "Veff = V0",
-        "Veff = V0/2",
-        "Veff = V0/√2",
-        "Veff = √2·V0"
+        "$V_{eff} = V_0$",
+        "$V_{eff} = V_0/2$",
+        "$V_{eff} = V_0/\\sqrt{2}$",
+        "$V_{eff} = \\sqrt{2} \\cdot V_0$"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per una sinusoide, il valore efficace è Veff = V0/√2.",
+      "spiegazione": "Per una sinusoide, il valore efficace è $V_{eff} = V_0/\\sqrt{2}$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "AC",
@@ -2030,17 +2030,17 @@
     },
     {
       "id": "cir_100",
-      "domanda": "In AC, la reattanza capacitiva Xc di un condensatore C a pulsazione ω vale:",
+      "domanda": "In AC, la reattanza capacitiva $X_C$ di un condensatore $C$ a pulsazione $\\omega$ vale:",
       "categoria": "Circuiti",
       "sottocategoria": "Reattanza",
       "opzioni": [
-        "Xc = ωC",
-        "Xc = 1/(ωC)",
-        "Xc = ω/C",
-        "Xc = C/ω"
+        "$X_C = \\omega C$",
+        "$X_C = 1/(\\omega C)$",
+        "$X_C = \\omega/C$",
+        "$X_C = C/\\omega$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La reattanza capacitiva diminuisce all'aumentare di ω: Xc = 1/(ωC).",
+      "spiegazione": "La reattanza capacitiva diminuisce all'aumentare di $\\omega$: $X_C = 1/(\\omega C)$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "AC",
@@ -2051,17 +2051,17 @@
     },
     {
       "id": "cir_101",
-      "domanda": "In AC, la reattanza induttiva Xl di un induttore L a pulsazione ω vale:",
+      "domanda": "In AC, la reattanza induttiva $X_L$ di un induttore $L$ a pulsazione $\\omega$ vale:",
       "categoria": "Circuiti",
       "sottocategoria": "Reattanza",
       "opzioni": [
-        "Xl = ωL",
-        "Xl = 1/(ωL)",
-        "Xl = L/ω",
-        "Xl = ω/L"
+        "$X_L = \\omega L$",
+        "$X_L = 1/(\\omega L)$",
+        "$X_L = L/\\omega$",
+        "$X_L = \\omega/L$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "La reattanza induttiva cresce con ω: Xl = ωL.",
+      "spiegazione": "La reattanza induttiva cresce con $\\omega$: $X_L = \\omega L$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "AC",
@@ -2082,7 +2082,7 @@
         "Minima e puramente induttiva"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Alla risonanza Xl = Xc, quindi si annullano e resta solo R: impedenza minima e resistiva.",
+      "spiegazione": "Alla risonanza $X_L = X_C$, quindi si annullano e resta solo $R$: impedenza minima e resistiva.",
       "difficolta": "difficile",
       "paroleChiave": [
         "RLC",
@@ -2097,13 +2097,13 @@
       "categoria": "Circuiti",
       "sottocategoria": "Risonanza RLC",
       "opzioni": [
-        "ωL = 1/(ωC)",
-        "ωL = ωC",
-        "L = C",
-        "R = 0"
+        "$\\omega L = 1/(\\omega C)$",
+        "$\\omega L = \\omega C$",
+        "$L = C$",
+        "$R = 0$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Alla risonanza le reattanze si eguagliano: Xl = Xc ⇒ ωL = 1/(ωC).",
+      "spiegazione": "Alla risonanza le reattanze si eguagliano: $X_L = X_C \\Rightarrow \\omega L = 1/(\\omega C)$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "risonanza",
@@ -2207,7 +2207,7 @@
         "Un trasformatore ideale"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "L'equivalente di Thevenin è un generatore ideale di tensione Vth in serie con una resistenza Rth.",
+      "spiegazione": "L'equivalente di Thevenin è un generatore ideale di tensione $V_{th}$ in serie con una resistenza $R_{th}$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "thevenin",
@@ -2228,7 +2228,7 @@
         "Un generatore dipendente obbligatorio"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "L'equivalente di Norton è un generatore ideale di corrente In in parallelo con una resistenza Rn.",
+      "spiegazione": "L'equivalente di Norton è un generatore ideale di corrente $I_n$ in parallelo con una resistenza $R_n$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "norton",
@@ -2239,7 +2239,7 @@
     },
     {
       "id": "cir_110",
-      "domanda": "In una rete lineare, la resistenza di Thevenin Rth è uguale alla resistenza di Norton Rn?",
+      "domanda": "In una rete lineare, la resistenza di Thevenin $R_{th}$ è uguale alla resistenza di Norton $R_n$?",
       "categoria": "Circuiti",
       "sottocategoria": "Thevenin-Norton",
       "opzioni": [
@@ -2259,17 +2259,17 @@
     },
     {
       "id": "cir_111",
-      "domanda": "In un circuito resistivo lineare, per trovare Rth si spengono le sorgenti indipendenti. Come si 'spegne' un generatore ideale di tensione?",
+      "domanda": "In un circuito resistivo lineare, per trovare $R_{th}$ si spengono le sorgenti indipendenti. Come si 'spegne' un generatore ideale di tensione?",
       "categoria": "Circuiti",
       "sottocategoria": "Thevenin calcolo Rth",
       "opzioni": [
         "Si sostituisce con un circuito aperto",
         "Si sostituisce con un corto circuito",
-        "Si sostituisce con un resistore da 1 Ω",
+        "Si sostituisce con un resistore da 1 $\\Omega$",
         "Non si può spegnere"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Un generatore ideale di tensione spento equivale a V=0, cioè un corto circuito.",
+      "spiegazione": "Un generatore ideale di tensione spento equivale a $V = 0$, cioè un corto circuito.",
       "difficolta": "difficile",
       "paroleChiave": [
         "Rth",
@@ -2280,7 +2280,7 @@
     },
     {
       "id": "cir_112",
-      "domanda": "In un circuito resistivo lineare, come si 'spegne' un generatore ideale di corrente per calcolare Rth?",
+      "domanda": "In un circuito resistivo lineare, come si 'spegne' un generatore ideale di corrente per calcolare $R_{th}$?",
       "categoria": "Circuiti",
       "sottocategoria": "Thevenin calcolo Rth",
       "opzioni": [
@@ -2290,7 +2290,7 @@
         "Si aumenta la tensione"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Un generatore ideale di corrente spento equivale a I=0, cioè un circuito aperto.",
+      "spiegazione": "Un generatore ideale di corrente spento equivale a $I = 0$, cioè un circuito aperto.",
       "difficolta": "difficile",
       "paroleChiave": [
         "Rth",
@@ -2301,7 +2301,7 @@
     },
     {
       "id": "cir_113",
-      "domanda": "In un circuito resistivo, se si raddoppia la tensione di alimentazione, la potenza dissipata su un resistore R (costante) diventa:",
+      "domanda": "In un circuito resistivo, se si raddoppia la tensione di alimentazione, la potenza dissipata su un resistore $R$ (costante) diventa:",
       "categoria": "Circuiti",
       "sottocategoria": "Scalabilità",
       "opzioni": [
@@ -2311,7 +2311,7 @@
         "Un quarto"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "P = V^2/R: se V raddoppia, V^2 quadruplica, quindi P diventa 4 volte.",
+      "spiegazione": "$P = V^2/R$: se $V$ raddoppia, $V^2$ quadruplica, quindi $P$ diventa 4 volte.",
       "difficolta": "difficile",
       "paroleChiave": [
         "potenza",
@@ -2322,7 +2322,7 @@
     },
     {
       "id": "cir_114",
-      "domanda": "Un circuito ha due resistori in serie: R1=2 Ω e R2=8 Ω. È applicata una tensione totale di 20 V. Qual è la potenza dissipata su R2?",
+      "domanda": "Un circuito ha due resistori in serie: $R_1 = 2$ $\\Omega$ e $R_2 = 8$ $\\Omega$. È applicata una tensione totale di 20 V. Qual è la potenza dissipata su $R_2$?",
       "categoria": "Circuiti",
       "sottocategoria": "Potenza su componente in serie",
       "opzioni": [
@@ -2331,8 +2331,8 @@
         "32 W",
         "64 W"
       ],
-      "rispostaCorretta": 3,
-      "spiegazione": "I = 20/(2+8)=2 A; P2 = I^2·R2 = 4·8 = 32 W. (Quindi l'opzione corretta è 32 W).",
+      "rispostaCorretta": 2,
+      "spiegazione": "$I = 20/(2 + 8) = 2\\,\\mathrm{A}$; $P_2 = I^2 \\cdot R_2 = 2^2 \\cdot 8 = 32\\,\\mathrm{W}$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "serie",
@@ -2343,7 +2343,7 @@
     },
     {
       "id": "cir_115",
-      "domanda": "In un parallelo di R1=3 Ω e R2=6 Ω alimentato con 12 V, qual è la potenza dissipata in totale?",
+      "domanda": "In un parallelo di $R_1 = 3$ $\\Omega$ e $R_2 = 6$ $\\Omega$ alimentato con 12 V, qual è la potenza dissipata in totale?",
       "categoria": "Circuiti",
       "sottocategoria": "Potenza totale in parallelo",
       "opzioni": [
@@ -2353,7 +2353,7 @@
         "72 W"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Req = (3·6)/(3+6)=18/9=2 Ω; Ptot = V^2/Req = 144/2 = 72 W.",
+      "spiegazione": "$R_{eq} = (3 \\cdot 6)/(3 + 6) = 18/9 = 2\\,\\Omega$; $P_{tot} = V^2/R_{eq} = 144/2 = 72\\,\\mathrm{W}$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "parallelo",
@@ -2406,7 +2406,7 @@
     },
     {
       "id": "cir_118",
-      "domanda": "Un circuito RC ha τ=0,2 s. Dopo quanto tempo circa la tensione in scarica scende sotto il 5% del valore iniziale (stima con costanti di tempo)?",
+      "domanda": "Un circuito RC ha $\\tau = 0,2$ s. Dopo quanto tempo circa la tensione in scarica scende sotto il 5% del valore iniziale (stima con costanti di tempo)?",
       "categoria": "Circuiti",
       "sottocategoria": "RC stime",
       "opzioni": [
@@ -2415,8 +2415,8 @@
         "0,6 s",
         "1,0 s"
       ],
-      "rispostaCorretta": 3,
-      "spiegazione": "Dopo ~3τ resta circa 5% (approssimazione scolastica): 3τ ≈ 0,6 s; per stare sotto 5% spesso si usa ~3τ o un po' più, tra le opzioni la più prudente è 1,0 s (~5τ).",
+      "rispostaCorretta": 2,
+      "spiegazione": "In scarica $V(t)/V_0 = e^{-t/\\tau}$: sotto il $5\\%$ si scende dopo circa $3\\tau$. Con $\\tau = 0{,}2\\,\\mathrm{s}$: $t \\approx 0{,}6\\,\\mathrm{s}$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "RC",
@@ -2427,7 +2427,7 @@
     },
     {
       "id": "cir_119",
-      "domanda": "Un circuito resistivo lineare ha ai morsetti un equivalente di Thevenin con Vth=12 V e Rth=3 Ω. Collegando un carico RL=3 Ω, qual è la tensione sul carico?",
+      "domanda": "Un circuito resistivo lineare ha ai morsetti un equivalente di Thevenin con $V_{th} = 12$ V e $R_{th} = 3$ $\\Omega$. Collegando un carico $R_L = 3$ $\\Omega$, qual è la tensione sul carico?",
       "categoria": "Circuiti",
       "sottocategoria": "Thevenin applicazione",
       "opzioni": [
@@ -2437,7 +2437,7 @@
         "12 V"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "È un partitore: V_L = Vth·RL/(Rth+RL) = 12·3/(3+3) = 6 V.",
+      "spiegazione": "È un partitore: $V_L = V_{th} \\cdot R_L/(R_{th} + R_L) = 12 \\cdot 3/(3 + 3) = 6$ V.",
       "difficolta": "difficile",
       "paroleChiave": [
         "thevenin",
@@ -2448,7 +2448,7 @@
     },
     {
       "id": "cir_120",
-      "domanda": "Nel caso precedente (Vth=12 V, Rth=3 Ω, RL=3 Ω), qual è la potenza dissipata sul carico?",
+      "domanda": "Nel caso precedente ($V_{th} = 12$ V, $R_{th} = 3$ $\\Omega$, $R_L = 3$ $\\Omega$), qual è la potenza dissipata sul carico?",
       "categoria": "Circuiti",
       "sottocategoria": "Thevenin potenza sul carico",
       "opzioni": [
@@ -2458,7 +2458,7 @@
         "24 W"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "V_L=6 V, quindi P_L = V_L^2/RL = 36/3 = 12 W.",
+      "spiegazione": "$V_L = 6$ V, quindi $P_L = V_L^2/R_L = 36/3 = 12$ W.",
       "difficolta": "difficile",
       "paroleChiave": [
         "thevenin",

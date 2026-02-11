@@ -2,7 +2,7 @@
   "quiz": [
     {
       "id": "els_001",
-      "domanda": "Qual è l’unità di misura della carica elettrica nel Sistema Internazionale?",
+      "domanda": "Qual è l'unità di misura della carica elettrica nel Sistema Internazionale?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Carica elettrica",
       "opzioni": [
@@ -46,7 +46,7 @@
       "categoria": "Elettrostatica",
       "sottocategoria": "Conservazione della carica",
       "opzioni": [
-        "Conservazione dell’energia meccanica",
+        "Conservazione dell'energia meccanica",
         "Conservazione della carica elettrica",
         "Conservazione della quantità di moto",
         "Conservazione della temperatura"
@@ -126,13 +126,13 @@
       "categoria": "Elettrostatica",
       "sottocategoria": "Campo elettrico",
       "opzioni": [
-        "E = q/F",
-        "E = F/q",
-        "E = V·q",
-        "E = Q/r"
+        "$E = q/F$",
+        "$E = F/q$",
+        "$E = V \\cdot q$",
+        "$E = Q/r$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Il campo elettrico è la forza per unità di carica di prova: E = F/q.",
+      "spiegazione": "Il campo elettrico è la forza per unità di carica di prova: $E = F/q$.",
       "difficolta": "facile",
       "paroleChiave": [
         "campo elettrico",
@@ -192,7 +192,7 @@
         "Cubo della distanza"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La forza è proporzionale al prodotto q1·q2 e inversamente proporzionale a r^2.",
+      "spiegazione": "La forza è proporzionale al prodotto $q_1 \\cdot q_2$ e inversamente proporzionale a $r^2$.",
       "difficolta": "facile",
       "paroleChiave": [
         "coulomb",
@@ -208,7 +208,7 @@
       "opzioni": [
         "Sempre perpendicolare alla congiungente",
         "Lungo la retta che congiunge le due cariche",
-        "Sempre verso l’alto",
+        "Sempre verso l'alto",
         "Tangente a una circonferenza"
       ],
       "rispostaCorretta": 1,
@@ -222,7 +222,7 @@
     },
     {
       "id": "els_012",
-      "domanda": "Il potenziale elettrico V in un punto si definisce come:",
+      "domanda": "Il potenziale elettrico $V$ in un punto si definisce come:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Potenziale elettrico",
       "opzioni": [
@@ -232,7 +232,7 @@
         "Carica per unità di volume"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "V è l’energia potenziale elettrica per unità di carica di prova.",
+      "spiegazione": "$V$ è l'energia potenziale elettrica per unità di carica di prova.",
       "difficolta": "facile",
       "paroleChiave": [
         "potenziale",
@@ -242,7 +242,7 @@
     },
     {
       "id": "els_013",
-      "domanda": "L’unità di misura della differenza di potenziale è:",
+      "domanda": "L'unità di misura della differenza di potenziale è:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Differenza di potenziale",
       "opzioni": [
@@ -302,7 +302,7 @@
     },
     {
       "id": "els_016",
-      "domanda": "All’interno di un conduttore in equilibrio elettrostatico, il campo elettrico vale:",
+      "domanda": "All'interno di un conduttore in equilibrio elettrostatico, il campo elettrico vale:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Conduttori in equilibrio",
       "opzioni": [
@@ -312,7 +312,7 @@
         "Dipende dalla forma ma non è nullo"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In equilibrio elettrostatico nel materiale del conduttore E = 0.",
+      "spiegazione": "In equilibrio elettrostatico nel materiale del conduttore $E = 0$.",
       "difficolta": "facile",
       "paroleChiave": [
         "conduttore",
@@ -322,7 +322,7 @@
     },
     {
       "id": "els_017",
-      "domanda": "In un conduttore isolato carico, l’eccesso di carica si dispone principalmente:",
+      "domanda": "In un conduttore isolato carico, l'eccesso di carica si dispone principalmente:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Distribuzione di carica",
       "opzioni": [
@@ -347,12 +347,12 @@
       "sottocategoria": "Schermatura",
       "opzioni": [
         "Amplificare il campo elettrico interno",
-        "Schermare l’interno da campi elettrici esterni",
+        "Schermare l'interno da campi elettrici esterni",
         "Generare cariche dal nulla",
         "Aumentare la massa degli elettroni"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Un conduttore chiuso può schermare l’interno dai campi elettrici esterni in condizioni elettrostatiche.",
+      "spiegazione": "Un conduttore chiuso può schermare l'interno dai campi elettrici esterni in condizioni elettrostatiche.",
       "difficolta": "facile",
       "paroleChiave": [
         "gabbia di Faraday",
@@ -366,13 +366,13 @@
       "categoria": "Elettrostatica",
       "sottocategoria": "Flusso elettrico",
       "opzioni": [
-        "Φ = E/A",
-        "Φ = E·A·cosθ",
-        "Φ = E·A·sinθ",
-        "Φ = Q·A"
+        "$\\Phi = E/A$",
+        "$\\Phi = E \\cdot A \\cdot \\cos\\theta$",
+        "$\\Phi = E \\cdot A \\cdot \\sin\\theta$",
+        "$\\Phi = Q \\cdot A$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per campo uniforme e superficie piana, Φ = E·A·cosθ.",
+      "spiegazione": "Per campo uniforme e superficie piana, $\\Phi = E \\cdot A \\cdot \\cos\\theta$.",
       "difficolta": "facile",
       "paroleChiave": [
         "flusso",
@@ -387,12 +387,12 @@
       "sottocategoria": "Legge di Gauss",
       "opzioni": [
         "Sempre nullo",
-        "Uguale a Qint/ε0",
-        "Uguale a E·A",
-        "Uguale a kQ/r"
+        "Uguale a $Q_{int}/\\varepsilon_0$",
+        "Uguale a $E \\cdot A$",
+        "Uguale a $kQ/r$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Il flusso attraverso una superficie chiusa vale Φ = Qint/ε0.",
+      "spiegazione": "Il flusso attraverso una superficie chiusa vale $\\Phi = Q_{int}/\\varepsilon_0$.",
       "difficolta": "facile",
       "paroleChiave": [
         "gauss",
@@ -412,7 +412,7 @@
         "Dipende dalla forma della superficie"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per Gauss, se Qint = 0 allora Φ = 0 (flusso totale nullo).",
+      "spiegazione": "Per Gauss, se $Q_{int} = 0$ allora $\\Phi = 0$ (flusso totale nullo).",
       "difficolta": "facile",
       "paroleChiave": [
         "gauss",
@@ -432,7 +432,7 @@
         "La resistenza del circuito"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La capacità misura quanto Q si accumula per una data V: Q = C·V.",
+      "spiegazione": "La capacità misura quanto $Q$ si accumula per una data $V$: $Q = C \\cdot V$.",
       "difficolta": "facile",
       "paroleChiave": [
         "capacità",
@@ -442,17 +442,17 @@
     },
     {
       "id": "els_023",
-      "domanda": "Quale relazione lega carica Q, capacità C e differenza di potenziale V in un condensatore?",
+      "domanda": "Quale relazione lega carica $Q$, capacità $C$ e differenza di potenziale $V$ in un condensatore?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Condensatori",
       "opzioni": [
-        "Q = V/C",
-        "Q = C·V",
-        "C = Q·V",
-        "V = C/Q"
+        "$Q = V/C$",
+        "$Q = C \\cdot V$",
+        "$C = Q \\cdot V$",
+        "$V = C/Q$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per definizione di capacità: Q = C·V.",
+      "spiegazione": "Per definizione di capacità: $Q = C \\cdot V$.",
       "difficolta": "facile",
       "paroleChiave": [
         "condensatore",
@@ -462,7 +462,7 @@
     },
     {
       "id": "els_024",
-      "domanda": "L’unità di misura della capacità elettrica è:",
+      "domanda": "L'unità di misura della capacità elettrica è:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Condensatori",
       "opzioni": [
@@ -482,7 +482,7 @@
     },
     {
       "id": "els_025",
-      "domanda": "In un condensatore a facce piane e parallele, aumentando l’area delle armature (a distanza costante) la capacità:",
+      "domanda": "In un condensatore a facce piane e parallele, aumentando l'area delle armature (a distanza costante) la capacità:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Condensatore piano",
       "opzioni": [
@@ -492,7 +492,7 @@
         "Diventa nulla"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per il condensatore piano C è proporzionale all’area delle armature.",
+      "spiegazione": "Per il condensatore piano $C$ è proporzionale all'area delle armature.",
       "difficolta": "facile",
       "paroleChiave": [
         "condensatore piano",
@@ -512,7 +512,7 @@
         "Cambia segno"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Nel condensatore piano C è inversamente proporzionale alla distanza d.",
+      "spiegazione": "Nel condensatore piano $C$ è inversamente proporzionale alla distanza $d$.",
       "difficolta": "facile",
       "paroleChiave": [
         "condensatore piano",
@@ -532,7 +532,7 @@
         "Cambiare unità di misura"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Un dielettrico aumenta la capacità di un fattore legato a εr.",
+      "spiegazione": "Un dielettrico aumenta la capacità di un fattore legato a $\\varepsilon_r$.",
       "difficolta": "facile",
       "paroleChiave": [
         "dielettrico",
@@ -542,17 +542,17 @@
     },
     {
       "id": "els_028",
-      "domanda": "L’energia immagazzinata in un condensatore vale:",
+      "domanda": "L'energia immagazzinata in un condensatore vale:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Energia nei condensatori",
       "opzioni": [
-        "U = C/V",
-        "U = 1/2·C·V^2",
-        "U = Q/V",
-        "U = kQ/r^2"
+        "$U = C/V$",
+        "$U = \\frac{1}{2}CV^2$",
+        "$U = Q/V$",
+        "$U = kQ/r^2$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "L’energia elettrostatica del condensatore è U = 1/2·C·V^2.",
+      "spiegazione": "L'energia elettrostatica del condensatore è $U = \\frac{1}{2}CV^2$.",
       "difficolta": "facile",
       "paroleChiave": [
         "energia",
@@ -569,7 +569,7 @@
         "Solo una forza netta",
         "Solo una coppia (momento torcente)",
         "Né forza né coppia",
-        "Sempre una forza verso l’alto"
+        "Sempre una forza verso l'alto"
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un campo uniforme un dipolo tende ad allinearsi: agisce una coppia; la forza netta può essere nulla.",
@@ -582,17 +582,17 @@
     },
     {
       "id": "els_030",
-      "domanda": "Il momento di dipolo elettrico p (in modulo) vale:",
+      "domanda": "Il momento di dipolo elettrico $p$ (in modulo) vale:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Dipolo elettrico",
       "opzioni": [
-        "p = q + d",
-        "p = q·d",
-        "p = q/d",
-        "p = d/q"
+        "$p = q + d$",
+        "$p = q \\cdot d$",
+        "$p = q/d$",
+        "$p = d/q$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per due cariche ±q distanti d, il modulo del momento dipolare è p = q·d.",
+      "spiegazione": "Per due cariche $\\pm q$ distanti $d$, il modulo del momento dipolare è $p = q \\cdot d$.",
       "difficolta": "facile",
       "paroleChiave": [
         "momento di dipolo",
@@ -606,13 +606,13 @@
       "categoria": "Elettrostatica",
       "sottocategoria": "Campo di carica puntiforme",
       "opzioni": [
-        "1/r",
-        "1/r^2",
-        "r^2",
-        "r"
+        "$1/r$",
+        "$1/r^2$",
+        "$r^2$",
+        "$r$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Il campo di una carica puntiforme segue una legge in 1/r^2.",
+      "spiegazione": "Il campo di una carica puntiforme segue una legge in $1/r^2$.",
       "difficolta": "facile",
       "paroleChiave": [
         "campo",
@@ -626,13 +626,13 @@
       "categoria": "Elettrostatica",
       "sottocategoria": "Potenziale di carica puntiforme",
       "opzioni": [
-        "1/r",
-        "1/r^2",
-        "r^2",
+        "$1/r$",
+        "$1/r^2$",
+        "$r^2$",
         "costante"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Il potenziale di una carica puntiforme è proporzionale a 1/r.",
+      "spiegazione": "Il potenziale di una carica puntiforme è proporzionale a $1/r$.",
       "difficolta": "facile",
       "paroleChiave": [
         "potenziale",
@@ -666,13 +666,13 @@
       "categoria": "Elettrostatica",
       "sottocategoria": "Campo e potenziale",
       "opzioni": [
-        "E = ΔV·d",
-        "E = ΔV/d",
-        "E = ΔV + d",
-        "E = d/ΔV"
+        "$E = \\Delta V \\cdot d$",
+        "$E = \\Delta V / d$",
+        "$E = \\Delta V + d$",
+        "$E = d / \\Delta V$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In modulo, per piastre parallele E ≈ ΔV/d.",
+      "spiegazione": "In modulo, per piastre parallele $E \\approx \\Delta V / d$.",
       "difficolta": "facile",
       "paroleChiave": [
         "E=V/d",
@@ -682,7 +682,7 @@
     },
     {
       "id": "els_035",
-      "domanda": "La carica dell’elettrone è:",
+      "domanda": "La carica dell'elettrone è:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Cariche elementari",
       "opzioni": [
@@ -692,7 +692,7 @@
         "Variabile"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "L’elettrone ha carica negativa.",
+      "spiegazione": "L'elettrone ha carica negativa.",
       "difficolta": "facile",
       "paroleChiave": [
         "elettrone",
@@ -722,7 +722,7 @@
     },
     {
       "id": "els_037",
-      "domanda": "Perché le punte (oggetti molto appuntiti) favoriscono la scarica elettrica nell’aria?",
+      "domanda": "Perché le punte (oggetti molto appuntiti) favoriscono la scarica elettrica nell'aria?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Effetto punta",
       "opzioni": [
@@ -742,17 +742,17 @@
     },
     {
       "id": "els_038",
-      "domanda": "In che unità si misura il campo elettrico E?",
+      "domanda": "In che unità si misura il campo elettrico $E$?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Campo elettrico",
       "opzioni": [
-        "N/C",
-        "J/C",
-        "C/N",
-        "W/A"
+        "$N/C$",
+        "$J/C$",
+        "$C/N$",
+        "$W/A$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Dal rapporto E = F/q, l’unità è newton per coulomb (N/C), equivalente a V/m.",
+      "spiegazione": "Dal rapporto $E = F/q$, l'unità è newton per coulomb ($N/C$), equivalente a $V/m$.",
       "difficolta": "facile",
       "paroleChiave": [
         "N/C",
@@ -772,7 +772,7 @@
         "Dipende dalla massa"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Su un’equipotenziale ΔV = 0, quindi W = q·ΔV = 0.",
+      "spiegazione": "Su un'equipotenziale $\\Delta V = 0$, quindi $W = q \\cdot \\Delta V = 0$.",
       "difficolta": "facile",
       "paroleChiave": [
         "equipotenziale",
@@ -782,7 +782,7 @@
     },
     {
       "id": "els_040",
-      "domanda": "Quale grandezza descrive meglio la “quantità di linee di campo” che attraversano una superficie?",
+      "domanda": "Quale grandezza descrive meglio la \"quantità di linee di campo\" che attraversano una superficie?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Flusso elettrico",
       "opzioni": [
@@ -802,17 +802,17 @@
     },
     {
       "id": "els_041",
-      "domanda": "Due cariche q1 = +2 μC e q2 = −3 μC sono a distanza r = 0,50 m nel vuoto. Quanto vale il modulo della forza di Coulomb? (Usa k ≈ 9,0×10^9)",
+      "domanda": "Due cariche $q_1 = +2 \\, \\mu C$ e $q_2 = -3 \\, \\mu C$ sono a distanza $r = 0{,}50 \\, m$ nel vuoto. Quanto vale il modulo della forza di Coulomb? (Usa $k \\approx 9{,}0 \\times 10^9$)",
       "categoria": "Elettrostatica",
       "sottocategoria": "Esercizi su Coulomb",
       "opzioni": [
-        "0,054 N",
-        "0,216 N",
-        "2,16 N",
-        "21,6 N"
+        "$0{,}054 \\, N$",
+        "$0{,}216 \\, N$",
+        "$2{,}16 \\, N$",
+        "$21{,}6 \\, N$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "F = k|q1q2|/r^2 = 9e9·6e−12/0,25 = 0,216 N.",
+      "spiegazione": "$$F = k|q_1 q_2|/r^2 = 9 \\times 10^9 \\cdot 6 \\times 10^{-12}/0{,}25 = 0{,}216 \\, N$$",
       "difficolta": "media",
       "paroleChiave": [
         "coulomb",
@@ -832,7 +832,7 @@
         "Quattro volte"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "F ∝ 1/r^2: se r raddoppia, F diventa 1/4.",
+      "spiegazione": "$F \\propto 1/r^2$: se $r$ raddoppia, $F$ diventa $1/4$.",
       "difficolta": "media",
       "paroleChiave": [
         "inverso quadrato",
@@ -842,14 +842,14 @@
     },
     {
       "id": "els_043",
-      "domanda": "Due cariche uguali +Q sono poste ai capi di un segmento. Il campo elettrico nel punto medio vale:",
+      "domanda": "Due cariche uguali $+Q$ sono poste ai capi di un segmento. Il campo elettrico nel punto medio vale:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Sovrapposizione del campo",
       "opzioni": [
         "È nullo",
         "È massimo",
         "È infinito",
-        "Dipende solo da Q, non dalla distanza"
+        "Dipende solo da $Q$, non dalla distanza"
       ],
       "rispostaCorretta": 0,
       "spiegazione": "I due campi hanno uguale modulo e verso opposto, quindi si annullano.",
@@ -862,7 +862,7 @@
     },
     {
       "id": "els_044",
-      "domanda": "Due cariche uguali +Q sono poste ai capi di un segmento. Il potenziale elettrico nel punto medio è:",
+      "domanda": "Due cariche uguali $+Q$ sono poste ai capi di un segmento. Il potenziale elettrico nel punto medio è:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Sovrapposizione del potenziale",
       "opzioni": [
@@ -882,17 +882,17 @@
     },
     {
       "id": "els_045",
-      "domanda": "Una carica Q = +2 μC genera un campo elettrico a distanza r = 0,30 m. Quanto vale E? (k ≈ 9,0×10^9)",
+      "domanda": "Una carica $Q = +2 \\, \\mu C$ genera un campo elettrico a distanza $r = 0{,}30 \\, m$. Quanto vale $E$? ($k \\approx 9{,}0 \\times 10^9$)",
       "categoria": "Elettrostatica",
       "sottocategoria": "Campo di carica puntiforme",
       "opzioni": [
-        "2,0×10^3 N/C",
-        "2,0×10^4 N/C",
-        "2,0×10^5 N/C",
-        "2,0×10^6 N/C"
+        "$2{,}0 \\times 10^3 \\, N/C$",
+        "$2{,}0 \\times 10^4 \\, N/C$",
+        "$2{,}0 \\times 10^5 \\, N/C$",
+        "$2{,}0 \\times 10^6 \\, N/C$"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "E = kQ/r^2 = 9e9·2e−6/0,09 = 2,0×10^5 N/C.",
+      "spiegazione": "$$E = kQ/r^2 = 9 \\times 10^9 \\cdot 2 \\times 10^{-6}/0{,}09 = 2{,}0 \\times 10^5 \\, N/C$$",
       "difficolta": "media",
       "paroleChiave": [
         "campo",
@@ -902,17 +902,17 @@
     },
     {
       "id": "els_046",
-      "domanda": "Una carica Q = +3 μC genera un potenziale a distanza r = 0,20 m. Quanto vale V? (k ≈ 9,0×10^9)",
+      "domanda": "Una carica $Q = +3 \\, \\mu C$ genera un potenziale a distanza $r = 0{,}20 \\, m$. Quanto vale $V$? ($k \\approx 9{,}0 \\times 10^9$)",
       "categoria": "Elettrostatica",
       "sottocategoria": "Potenziale di carica puntiforme",
       "opzioni": [
-        "13,5 kV",
-        "135 kV",
-        "1,35 kV",
-        "1,35 MV"
+        "$13{,}5 \\, kV$",
+        "$135 \\, kV$",
+        "$1{,}35 \\, kV$",
+        "$1{,}35 \\, MV$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "V = kQ/r = 9e9·3e−6/0,20 = 1,35×10^5 V = 135 kV.",
+      "spiegazione": "$$V = kQ/r = 9 \\times 10^9 \\cdot 3 \\times 10^{-6}/0{,}20 = 1{,}35 \\times 10^5 \\, V = 135 \\, kV$$",
       "difficolta": "media",
       "paroleChiave": [
         "potenziale",
@@ -922,17 +922,17 @@
     },
     {
       "id": "els_047",
-      "domanda": "Quanto lavoro serve per spostare una carica q = 2 nC attraverso una differenza di potenziale di 100 V?",
+      "domanda": "Quanto lavoro serve per spostare una carica $q = 2 \\, nC$ attraverso una differenza di potenziale di $100 \\, V$?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Lavoro e potenziale",
       "opzioni": [
-        "2×10^−7 J",
-        "2×10^−9 J",
-        "2×10^−5 J",
-        "200 J"
+        "$2 \\times 10^{-7} \\, J$",
+        "$2 \\times 10^{-9} \\, J$",
+        "$2 \\times 10^{-5} \\, J$",
+        "$200 \\, J$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "W = q·ΔV = 2e−9·100 = 2e−7 J.",
+      "spiegazione": "$$W = q \\cdot \\Delta V = 2 \\times 10^{-9} \\cdot 100 = 2 \\times 10^{-7} \\, J$$",
       "difficolta": "media",
       "paroleChiave": [
         "lavoro",
@@ -942,17 +942,17 @@
     },
     {
       "id": "els_048",
-      "domanda": "Un condensatore da C = 10 μF è caricato a V = 12 V. Quanta energia immagazzina?",
+      "domanda": "Un condensatore da $C = 10 \\, \\mu F$ è caricato a $V = 12 \\, V$. Quanta energia immagazzina?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Energia nei condensatori",
       "opzioni": [
-        "7,2×10^−4 J",
-        "7,2×10^−3 J",
-        "1,2×10^−4 J",
-        "1,2×10^−3 J"
+        "$7{,}2 \\times 10^{-4} \\, J$",
+        "$7{,}2 \\times 10^{-3} \\, J$",
+        "$1{,}2 \\times 10^{-4} \\, J$",
+        "$1{,}2 \\times 10^{-3} \\, J$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "U = 1/2·C·V^2 = 0,5·10e−6·144 = 7,2e−4 J.",
+      "spiegazione": "$$U = \\frac{1}{2}CV^2 = 0{,}5 \\cdot 10 \\times 10^{-6} \\cdot 144 = 7{,}2 \\times 10^{-4} \\, J$$",
       "difficolta": "media",
       "paroleChiave": [
         "energia",
@@ -962,17 +962,17 @@
     },
     {
       "id": "els_049",
-      "domanda": "Un condensatore da C = 10 μF è caricato a V = 12 V. Quanta carica accumula?",
+      "domanda": "Un condensatore da $C = 10 \\, \\mu F$ è caricato a $V = 12 \\, V$. Quanta carica accumula?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Condensatori",
       "opzioni": [
-        "12 μC",
-        "120 μC",
-        "1,2 μC",
-        "1200 μC"
+        "$12 \\, \\mu C$",
+        "$120 \\, \\mu C$",
+        "$1{,}2 \\, \\mu C$",
+        "$1200 \\, \\mu C$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Q = C·V = 10e−6·12 = 120e−6 C = 120 μC.",
+      "spiegazione": "$$Q = C \\cdot V = 10 \\times 10^{-6} \\cdot 12 = 120 \\times 10^{-6} \\, C = 120 \\, \\mu C$$",
       "difficolta": "media",
       "paroleChiave": [
         "Q=CV",
@@ -982,17 +982,17 @@
     },
     {
       "id": "els_050",
-      "domanda": "Due condensatori C1 = 2 μF e C2 = 3 μF sono in serie. Qual è la capacità equivalente?",
+      "domanda": "Due condensatori $C_1 = 2 \\, \\mu F$ e $C_2 = 3 \\, \\mu F$ sono in serie. Qual è la capacità equivalente?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Condensatori in serie",
       "opzioni": [
-        "5 μF",
-        "1,2 μF",
-        "2,5 μF",
-        "0,5 μF"
+        "$5 \\, \\mu F$",
+        "$1{,}2 \\, \\mu F$",
+        "$2{,}5 \\, \\mu F$",
+        "$0{,}5 \\, \\mu F$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "1/Ceq = 1/2 + 1/3 = 5/6 ⇒ Ceq = 6/5 = 1,2 μF.",
+      "spiegazione": "$$1/C_{eq} = 1/2 + 1/3 = 5/6 \\Rightarrow C_{eq} = 6/5 = 1{,}2 \\, \\mu F$$",
       "difficolta": "media",
       "paroleChiave": [
         "serie",
@@ -1002,17 +1002,17 @@
     },
     {
       "id": "els_051",
-      "domanda": "Due condensatori C1 = 2 μF e C2 = 3 μF sono in parallelo. Qual è la capacità equivalente?",
+      "domanda": "Due condensatori $C_1 = 2 \\, \\mu F$ e $C_2 = 3 \\, \\mu F$ sono in parallelo. Qual è la capacità equivalente?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Condensatori in parallelo",
       "opzioni": [
-        "1,2 μF",
-        "5 μF",
-        "0,6 μF",
-        "2,5 μF"
+        "$1{,}2 \\, \\mu F$",
+        "$5 \\, \\mu F$",
+        "$0{,}6 \\, \\mu F$",
+        "$2{,}5 \\, \\mu F$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In parallelo Ceq = C1 + C2 = 5 μF.",
+      "spiegazione": "In parallelo $C_{eq} = C_1 + C_2 = 5 \\, \\mu F$.",
       "difficolta": "media",
       "paroleChiave": [
         "parallelo",
@@ -1022,17 +1022,17 @@
     },
     {
       "id": "els_052",
-      "domanda": "Tra due piastre distanti d = 2,0 mm c’è una differenza di potenziale ΔV = 500 V. Quanto vale il campo (modulo) tra le piastre?",
+      "domanda": "Tra due piastre distanti $d = 2{,}0 \\, mm$ c'è una differenza di potenziale $\\Delta V = 500 \\, V$. Quanto vale il campo (modulo) tra le piastre?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Campo uniforme",
       "opzioni": [
-        "2,5×10^3 V/m",
-        "2,5×10^4 V/m",
-        "2,5×10^5 V/m",
-        "2,5×10^6 V/m"
+        "$2{,}5 \\times 10^3 \\, V/m$",
+        "$2{,}5 \\times 10^4 \\, V/m$",
+        "$2{,}5 \\times 10^5 \\, V/m$",
+        "$2{,}5 \\times 10^6 \\, V/m$"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "E = ΔV/d = 500/0,002 = 2,5×10^5 V/m.",
+      "spiegazione": "$$E = \\Delta V/d = 500/0{,}002 = 2{,}5 \\times 10^5 \\, V/m$$",
       "difficolta": "media",
       "paroleChiave": [
         "piastre",
@@ -1042,7 +1042,7 @@
     },
     {
       "id": "els_053",
-      "domanda": "Campo uniforme E = 100 N/C attraversa una superficie A = 0,20 m² con angolo θ = 60° tra E e la normale. Quanto vale il flusso?",
+      "domanda": "Campo uniforme $E = 100 \\, N/C$ attraversa una superficie $A = 0{,}20 \\, m^2$ con angolo $\\theta = 60^\\circ$ tra $E$ e la normale. Quanto vale il flusso?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Flusso elettrico",
       "opzioni": [
@@ -1052,7 +1052,7 @@
         "0"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Φ = E·A·cosθ = 100·0,20·0,5 = 10 (N·m²/C).",
+      "spiegazione": "$$\\Phi = E \\cdot A \\cdot \\cos\\theta = 100 \\cdot 0{,}20 \\cdot 0{,}5 = 10$$ ($N \\cdot m^2/C$).",
       "difficolta": "media",
       "paroleChiave": [
         "flusso",
@@ -1062,17 +1062,17 @@
     },
     {
       "id": "els_054",
-      "domanda": "Per una superficie chiusa il flusso totale vale Φ = 2,0×10^−3 N·m²/C. Quanta carica netta è racchiusa? (ε0 ≈ 8,85×10^−12)",
+      "domanda": "Per una superficie chiusa il flusso totale vale $\\Phi = 2{,}0 \\times 10^{-3} \\, N \\cdot m^2/C$. Quanta carica netta è racchiusa? ($\\varepsilon_0 \\approx 8{,}85 \\times 10^{-12}$)",
       "categoria": "Elettrostatica",
       "sottocategoria": "Legge di Gauss",
       "opzioni": [
-        "1,77×10^−14 C",
-        "2,26×10^8 C",
-        "1,77×10^−9 C",
-        "0 C"
+        "$1{,}77 \\times 10^{-14} \\, C$",
+        "$2{,}26 \\times 10^8 \\, C$",
+        "$1{,}77 \\times 10^{-9} \\, C$",
+        "$0 \\, C$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Qint = ε0·Φ = 8,85e−12·2,0e−3 = 1,77e−14 C.",
+      "spiegazione": "$$Q_{int} = \\varepsilon_0 \\cdot \\Phi = 8{,}85 \\times 10^{-12} \\cdot 2{,}0 \\times 10^{-3} = 1{,}77 \\times 10^{-14} \\, C$$",
       "difficolta": "media",
       "paroleChiave": [
         "gauss",
@@ -1082,17 +1082,17 @@
     },
     {
       "id": "els_055",
-      "domanda": "Quale scelta rende la legge di Gauss particolarmente utile per calcolare E?",
+      "domanda": "Quale scelta rende la legge di Gauss particolarmente utile per calcolare $E$?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Legge di Gauss",
       "opzioni": [
-        "Quando c’è attrito",
+        "Quando c'è attrito",
         "Quando la distribuzione di carica ha alta simmetria",
         "Quando le cariche sono in movimento",
         "Quando il campo è sempre nullo"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Con simmetria (sferica, cilindrica, planare) E è costante sulla superficie gaussiana e si semplifica il calcolo.",
+      "spiegazione": "Con simmetria (sferica, cilindrica, planare) $E$ è costante sulla superficie gaussiana e si semplifica il calcolo.",
       "difficolta": "media",
       "paroleChiave": [
         "gauss",
@@ -1102,7 +1102,7 @@
     },
     {
       "id": "els_056",
-      "domanda": "Inserisco un dielettrico in un condensatore collegato a una batteria (V costante). La carica Q sulle armature:",
+      "domanda": "Inserisco un dielettrico in un condensatore collegato a una batteria ($V$ costante). La carica $Q$ sulle armature:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Dielettrici e condensatori",
       "opzioni": [
@@ -1112,7 +1112,7 @@
         "Diventa zero"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Con V costante e C che aumenta, Q = C·V aumenta.",
+      "spiegazione": "Con $V$ costante e $C$ che aumenta, $Q = C \\cdot V$ aumenta.",
       "difficolta": "media",
       "paroleChiave": [
         "dielettrico",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": "els_057",
-      "domanda": "Inserisco un dielettrico in un condensatore isolato (Q costante). La differenza di potenziale V:",
+      "domanda": "Inserisco un dielettrico in un condensatore isolato ($Q$ costante). La differenza di potenziale $V$:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Dielettrici e condensatori",
       "opzioni": [
@@ -1132,7 +1132,7 @@
         "Cambia segno"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Con Q costante e C che aumenta, V = Q/C diminuisce.",
+      "spiegazione": "Con $Q$ costante e $C$ che aumenta, $V = Q/C$ diminuisce.",
       "difficolta": "media",
       "paroleChiave": [
         "dielettrico",
@@ -1142,17 +1142,17 @@
     },
     {
       "id": "els_058",
-      "domanda": "Un dielettrico con costante dielettrica relativa εr = 4 inserito completamente tra le piastre fa aumentare la capacità di un fattore:",
+      "domanda": "Un dielettrico con costante dielettrica relativa $\\varepsilon_r = 4$ inserito completamente tra le piastre fa aumentare la capacità di un fattore:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Dielettrici",
       "opzioni": [
-        "1/4",
+        "$1/4$",
         "2",
         "4",
         "16"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Se il dielettrico riempie tutto lo spazio, C diventa εr volte maggiore.",
+      "spiegazione": "Se il dielettrico riempie tutto lo spazio, $C$ diventa $\\varepsilon_r$ volte maggiore.",
       "difficolta": "media",
       "paroleChiave": [
         "epsilon_r",
@@ -1162,17 +1162,17 @@
     },
     {
       "id": "els_059",
-      "domanda": "In un campo uniforme E = 200 V/m, due punti distano 0,050 m lungo la direzione del campo. Quanto vale in modulo ΔV?",
+      "domanda": "In un campo uniforme $E = 200 \\, V/m$, due punti distano $0{,}050 \\, m$ lungo la direzione del campo. Quanto vale in modulo $\\Delta V$?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Campo e potenziale",
       "opzioni": [
-        "0,10 V",
-        "1,0 V",
-        "10 V",
-        "4000 V"
+        "$0{,}10 \\, V$",
+        "$1{,}0 \\, V$",
+        "$10 \\, V$",
+        "$4000 \\, V$"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "In modulo ΔV = E·d = 200·0,050 = 10 V.",
+      "spiegazione": "$$\\Delta V = E \\cdot d = 200 \\cdot 0{,}050 = 10 \\, V$$",
       "difficolta": "media",
       "paroleChiave": [
         "deltaV",
@@ -1182,17 +1182,17 @@
     },
     {
       "id": "els_060",
-      "domanda": "Una carica q = 5 nC si trova in un punto a potenziale V = 200 V (riferito a infinito). Qual è la sua energia potenziale elettrica U?",
+      "domanda": "Una carica $q = 5 \\, nC$ si trova in un punto a potenziale $V = 200 \\, V$ (riferito a infinito). Qual è la sua energia potenziale elettrica $U$?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Energia potenziale",
       "opzioni": [
-        "1,0×10^−6 J",
-        "1,0×10^−3 J",
-        "2,5×10^−7 J",
-        "4,0×10^−9 J"
+        "$1{,}0 \\times 10^{-6} \\, J$",
+        "$1{,}0 \\times 10^{-3} \\, J$",
+        "$2{,}5 \\times 10^{-7} \\, J$",
+        "$4{,}0 \\times 10^{-9} \\, J$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "U = q·V = 5e−9·200 = 1,0e−6 J.",
+      "spiegazione": "$$U = q \\cdot V = 5 \\times 10^{-9} \\cdot 200 = 1{,}0 \\times 10^{-6} \\, J$$",
       "difficolta": "media",
       "paroleChiave": [
         "energia potenziale",
@@ -1202,7 +1202,7 @@
     },
     {
       "id": "els_061",
-      "domanda": "La direzione del campo elettrico E rispetto al potenziale V è:",
+      "domanda": "La direzione del campo elettrico $E$ rispetto al potenziale $V$ è:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Campo e potenziale",
       "opzioni": [
@@ -1212,7 +1212,7 @@
         "Sempre nulla"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Il campo punta verso potenziale decrescente (E è legato al gradiente negativo del potenziale).",
+      "spiegazione": "Il campo punta verso potenziale decrescente ($E$ è legato al gradiente negativo del potenziale).",
       "difficolta": "media",
       "paroleChiave": [
         "direzione",
@@ -1232,7 +1232,7 @@
         "Carica sempre negativa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La densità di linee è proporzionale all’intensità del campo elettrico.",
+      "spiegazione": "La densità di linee è proporzionale all'intensità del campo elettrico.",
       "difficolta": "media",
       "paroleChiave": [
         "densità linee",
@@ -1242,17 +1242,17 @@
     },
     {
       "id": "els_063",
-      "domanda": "Una carica +q è posta al centro di una cavità in un conduttore. In equilibrio elettrostatico, la carica indotta sulla superficie interna è:",
+      "domanda": "Una carica $+q$ è posta al centro di una cavità in un conduttore. In equilibrio elettrostatico, la carica indotta sulla superficie interna è:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Induzione nei conduttori",
       "opzioni": [
-        "+q",
-        "−q",
-        "0",
-        "Dipende dalla forma ma può essere diversa da −q"
+        "$+q$",
+        "$-q$",
+        "$0$",
+        "Dipende dalla forma ma può essere diversa da $-q$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per avere E = 0 nel metallo, sulla superficie interna si induce carica totale −q.",
+      "spiegazione": "Per avere $E = 0$ nel metallo, sulla superficie interna si induce carica totale $-q$.",
       "difficolta": "media",
       "paroleChiave": [
         "cavità",
@@ -1262,14 +1262,14 @@
     },
     {
       "id": "els_064",
-      "domanda": "Se un condensatore ideale è in serie con un altro, la carica Q su ciascun condensatore (in regime stazionario) è:",
+      "domanda": "Se un condensatore ideale è in serie con un altro, la carica $Q$ su ciascun condensatore (in regime stazionario) è:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Condensatori in serie",
       "opzioni": [
         "Diversa",
         "Uguale",
         "Sempre nulla",
-        "Uguale solo se C1 = C2"
+        "Uguale solo se $C_1 = C_2$"
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In serie la stessa carica passa e si accumula su ciascun condensatore.",
@@ -1282,17 +1282,17 @@
     },
     {
       "id": "els_065",
-      "domanda": "Un condensatore sferico isolato (sfera conduttrice) di raggio R ha capacità proporzionale a:",
+      "domanda": "Un condensatore sferico isolato (sfera conduttrice) di raggio $R$ ha capacità proporzionale a:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Capacità di conduttori",
       "opzioni": [
-        "R",
-        "R^2",
-        "1/R",
-        "1/R^2"
+        "$R$",
+        "$R^2$",
+        "$1/R$",
+        "$1/R^2$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Per una sfera isolata C = 4π ε0 R, quindi C ∝ R.",
+      "spiegazione": "Per una sfera isolata $C = 4\\pi \\varepsilon_0 R$, quindi $C \\propto R$.",
       "difficolta": "media",
       "paroleChiave": [
         "sfera",
@@ -1302,7 +1302,7 @@
     },
     {
       "id": "els_066",
-      "domanda": "Se raddoppio la carica di una carica puntiforme Q, il potenziale V a distanza r:",
+      "domanda": "Se raddoppio la carica di una carica puntiforme $Q$, il potenziale $V$ a distanza $r$:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Potenziale di carica puntiforme",
       "opzioni": [
@@ -1312,7 +1312,7 @@
         "Quadruplica"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "V = kQ/r: è proporzionale a Q.",
+      "spiegazione": "$V = kQ/r$: è proporzionale a $Q$.",
       "difficolta": "media",
       "paroleChiave": [
         "potenziale",
@@ -1322,17 +1322,17 @@
     },
     {
       "id": "els_067",
-      "domanda": "Una carica q = 4 nC è in un campo uniforme E = 3,0×10^4 N/C. Quanto vale il modulo della forza su q?",
+      "domanda": "Una carica $q = 4 \\, nC$ è in un campo uniforme $E = 3{,}0 \\times 10^4 \\, N/C$. Quanto vale il modulo della forza su $q$?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Forza in campo uniforme",
       "opzioni": [
-        "1,2×10^−4 N",
-        "1,2×10^−1 N",
-        "7,5×10^3 N",
-        "0 N"
+        "$1{,}2 \\times 10^{-4} \\, N$",
+        "$1{,}2 \\times 10^{-1} \\, N$",
+        "$7{,}5 \\times 10^3 \\, N$",
+        "$0 \\, N$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "F = qE = 4e−9·3e4 = 1,2e−4 N.",
+      "spiegazione": "$$F = qE = 4 \\times 10^{-9} \\cdot 3 \\times 10^4 = 1{,}2 \\times 10^{-4} \\, N$$",
       "difficolta": "media",
       "paroleChiave": [
         "F=qE",
@@ -1342,7 +1342,7 @@
     },
     {
       "id": "els_068",
-      "domanda": "Tra una carica +Q e una carica −Q uguali, nel punto medio il campo elettrico risulta:",
+      "domanda": "Tra una carica $+Q$ e una carica $-Q$ uguali, nel punto medio il campo elettrico risulta:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Dipolo (qualitativo)",
       "opzioni": [
@@ -1352,7 +1352,7 @@
         "Infinito"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "I campi al punto medio hanno stesso verso (da + verso −) e si sommano.",
+      "spiegazione": "I campi al punto medio hanno stesso verso (da $+$ verso $-$) e si sommano.",
       "difficolta": "media",
       "paroleChiave": [
         "dipolo",
@@ -1362,7 +1362,7 @@
     },
     {
       "id": "els_069",
-      "domanda": "Tra una carica +Q e una carica −Q uguali, nel punto medio il potenziale elettrico vale:",
+      "domanda": "Tra una carica $+Q$ e una carica $-Q$ uguali, nel punto medio il potenziale elettrico vale:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Dipolo (qualitativo)",
       "opzioni": [
@@ -1372,7 +1372,7 @@
         "Dipende dal sistema di riferimento"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Il potenziale è scalare: i contributi +kQ/r e −kQ/r si annullano.",
+      "spiegazione": "Il potenziale è scalare: i contributi $+kQ/r$ e $-kQ/r$ si annullano.",
       "difficolta": "media",
       "paroleChiave": [
         "potenziale",
@@ -1392,7 +1392,7 @@
         "Le cariche dipendono solo dalla massa delle piastre"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Le armature accumulano ±Q: uguali in modulo e opposte in segno.",
+      "spiegazione": "Le armature accumulano $\\pm Q$: uguali in modulo e opposte in segno.",
       "difficolta": "media",
       "paroleChiave": [
         "armature",
@@ -1402,7 +1402,7 @@
     },
     {
       "id": "els_071",
-      "domanda": "In un condensatore collegato a batteria (V costante), se aumento la distanza d tra le armature (area costante), la carica Q:",
+      "domanda": "In un condensatore collegato a batteria ($V$ costante), se aumento la distanza $d$ tra le armature (area costante), la carica $Q$:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Condensatore piano",
       "opzioni": [
@@ -1412,7 +1412,7 @@
         "Cambia segno"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "C diminuisce (∝ 1/d) e con V costante Q = C·V diminuisce.",
+      "spiegazione": "$C$ diminuisce ($\\propto 1/d$) e con $V$ costante $Q = C \\cdot V$ diminuisce.",
       "difficolta": "media",
       "paroleChiave": [
         "batteria",
@@ -1422,7 +1422,7 @@
     },
     {
       "id": "els_072",
-      "domanda": "Due cariche +Q e +Q sono a distanza 2a. In un punto a distanza a da ciascuna (punto medio), il campo è nullo perché:",
+      "domanda": "Due cariche $+Q$ e $+Q$ sono a distanza $2a$. In un punto a distanza $a$ da ciascuna (punto medio), il campo è nullo perché:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Sovrapposizione del campo",
       "opzioni": [
@@ -1462,13 +1462,13 @@
     },
     {
       "id": "els_074",
-      "domanda": "Una sfera conduttrice isolata porta una carica +Q. Il campo elettrico all’interno della sfera (nel metallo) vale:",
+      "domanda": "Una sfera conduttrice isolata porta una carica $+Q$. Il campo elettrico all'interno della sfera (nel metallo) vale:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Conduttori in equilibrio",
       "opzioni": [
-        "kQ/r^2",
-        "0",
-        "kQ/R^2",
+        "$kQ/r^2$",
+        "$0$",
+        "$kQ/R^2$",
         "Dipende dalla temperatura"
       ],
       "rispostaCorretta": 1,
@@ -1502,7 +1502,7 @@
     },
     {
       "id": "els_076",
-      "domanda": "Un condensatore isolato ha carica Q. Inserendo un dielettrico completo (εr > 1), l’energia immagazzinata U:",
+      "domanda": "Un condensatore isolato ha carica $Q$. Inserendo un dielettrico completo ($\\varepsilon_r > 1$), l'energia immagazzinata $U$:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Energia e dielettrici",
       "opzioni": [
@@ -1512,7 +1512,7 @@
         "Diventa infinita"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "A Q costante, U = Q^2/(2C): se C aumenta, U diminuisce.",
+      "spiegazione": "A $Q$ costante, $U = Q^2/(2C)$: se $C$ aumenta, $U$ diminuisce.",
       "difficolta": "media",
       "paroleChiave": [
         "energia",
@@ -1522,7 +1522,7 @@
     },
     {
       "id": "els_077",
-      "domanda": "Un condensatore collegato a batteria ha tensione V costante. Inserendo un dielettrico completo, l’energia U:",
+      "domanda": "Un condensatore collegato a batteria ha tensione $V$ costante. Inserendo un dielettrico completo, l'energia $U$:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Energia e dielettrici",
       "opzioni": [
@@ -1532,7 +1532,7 @@
         "Si annulla"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "A V costante, U = 1/2·C·V^2: se C aumenta, U aumenta.",
+      "spiegazione": "A $V$ costante, $U = \\frac{1}{2}CV^2$: se $C$ aumenta, $U$ aumenta.",
       "difficolta": "media",
       "paroleChiave": [
         "energia",
@@ -1546,13 +1546,13 @@
       "categoria": "Elettrostatica",
       "sottocategoria": "Forza e segno della carica",
       "opzioni": [
-        "Nello stesso verso di E",
-        "Nel verso opposto a E",
-        "Perpendicolare a E",
-        "Sempre verso l’alto"
+        "Nello stesso verso di $E$",
+        "Nel verso opposto a $E$",
+        "Perpendicolare a $E$",
+        "Sempre verso l'alto"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "F = qE: se q è negativa, la forza è opposta al verso del campo.",
+      "spiegazione": "$F = qE$: se $q$ è negativa, la forza è opposta al verso del campo.",
       "difficolta": "media",
       "paroleChiave": [
         "carica negativa",
@@ -1562,17 +1562,17 @@
     },
     {
       "id": "els_079",
-      "domanda": "Un condensatore da 5 μF e uno da 10 μF sono in parallelo a 12 V. Quanta carica totale viene fornita dalla batteria?",
+      "domanda": "Un condensatore da $5 \\, \\mu F$ e uno da $10 \\, \\mu F$ sono in parallelo a $12 \\, V$. Quanta carica totale viene fornita dalla batteria?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Condensatori in parallelo",
       "opzioni": [
-        "60 μC",
-        "120 μC",
-        "180 μC",
-        "240 μC"
+        "$60 \\, \\mu C$",
+        "$120 \\, \\mu C$",
+        "$180 \\, \\mu C$",
+        "$240 \\, \\mu C$"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Ceq = 15 μF ⇒ Qtot = Ceq·V = 15e−6·12 = 180 μC.",
+      "spiegazione": "$C_{eq} = 15 \\, \\mu F \\Rightarrow Q_{tot} = C_{eq} \\cdot V = 15 \\times 10^{-6} \\cdot 12 = 180 \\, \\mu C$.",
       "difficolta": "media",
       "paroleChiave": [
         "parallelo",
@@ -1582,17 +1582,17 @@
     },
     {
       "id": "els_080",
-      "domanda": "Un condensatore da 6 μF è caricato a Q = 30 μC. Qual è la tensione ai capi?",
+      "domanda": "Un condensatore da $6 \\, \\mu F$ è caricato a $Q = 30 \\, \\mu C$. Qual è la tensione ai capi?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Condensatori",
       "opzioni": [
-        "5 V",
-        "30 V",
-        "180 V",
-        "0,2 V"
+        "$5 \\, V$",
+        "$30 \\, V$",
+        "$180 \\, V$",
+        "$0{,}2 \\, V$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "V = Q/C = 30e−6/6e−6 = 5 V.",
+      "spiegazione": "$V = Q/C = 30 \\times 10^{-6}/6 \\times 10^{-6} = 5 \\, V$.",
       "difficolta": "media",
       "paroleChiave": [
         "V=Q/C",
@@ -1602,17 +1602,17 @@
     },
     {
       "id": "els_081",
-      "domanda": "Tre cariche sono su una linea: q1 = +1 μC in x=0, q2 = +1 μC in x=2 m. In quale punto tra 0 e 2 m il campo elettrico totale è nullo?",
+      "domanda": "Tre cariche sono su una linea: $q_1 = +1 \\, \\mu C$ in $x = 0$, $q_2 = +1 \\, \\mu C$ in $x = 2 \\, m$. In quale punto tra $0$ e $2 \\, m$ il campo elettrico totale è nullo?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Annullamento del campo",
       "opzioni": [
-        "x = 0,5 m",
-        "x = 1,0 m",
-        "x = 1,5 m",
-        "In nessun punto tra 0 e 2 m"
+        "$x = 0{,}5 \\, m$",
+        "$x = 1{,}0 \\, m$",
+        "$x = 1{,}5 \\, m$",
+        "In nessun punto tra $0$ e $2 \\, m$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Con cariche uguali e simmetriche, l’annullamento del campo avviene al punto medio x = 1 m.",
+      "spiegazione": "Con cariche uguali e simmetriche, l'annullamento del campo avviene al punto medio $x = 1 \\, m$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "campo nullo",
@@ -1622,17 +1622,17 @@
     },
     {
       "id": "els_082",
-      "domanda": "Due cariche q1 = +2 μC e q2 = +8 μC sono a distanza 0,30 m. In quale punto lungo la congiungente (tra le cariche) il campo totale è nullo?",
+      "domanda": "Due cariche $q_1 = +2 \\, \\mu C$ e $q_2 = +8 \\, \\mu C$ sono a distanza $0{,}30 \\, m$. In quale punto lungo la congiungente (tra le cariche) il campo totale è nullo?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Annullamento del campo",
       "opzioni": [
-        "A metà (0,15 m da ciascuna)",
-        "Più vicino alla carica +2 μC",
-        "Più vicino alla carica +8 μC",
+        "A metà ($0{,}15 \\, m$ da ciascuna)",
+        "Più vicino alla carica $+2 \\, \\mu C$",
+        "Più vicino alla carica $+8 \\, \\mu C$",
         "Non esiste punto tra le due"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Tra cariche dello stesso segno l’annullamento è tra le due, più vicino alla carica di modulo minore.",
+      "spiegazione": "Tra cariche dello stesso segno l'annullamento è tra le due, più vicino alla carica di modulo minore.",
       "difficolta": "difficile",
       "paroleChiave": [
         "annullamento",
@@ -1642,17 +1642,17 @@
     },
     {
       "id": "els_083",
-      "domanda": "Sfera isolante uniformemente carica: Q = 1,0 μC, raggio R = 0,10 m. Quanto vale E a distanza r = 0,05 m dal centro (dentro la sfera)? (Usa k ≈ 9,0×10^9)",
+      "domanda": "Sfera isolante uniformemente carica: $Q = 1{,}0 \\, \\mu C$, raggio $R = 0{,}10 \\, m$. Quanto vale $E$ a distanza $r = 0{,}05 \\, m$ dal centro (dentro la sfera)? (Usa $k \\approx 9{,}0 \\times 10^9$)",
       "categoria": "Elettrostatica",
       "sottocategoria": "Sfera uniformemente carica",
       "opzioni": [
-        "9,0×10^5 N/C",
-        "4,5×10^5 N/C",
-        "2,25×10^5 N/C",
-        "0 N/C"
+        "$9{,}0 \\times 10^5 \\, N/C$",
+        "$4{,}5 \\times 10^5 \\, N/C$",
+        "$2{,}25 \\times 10^5 \\, N/C$",
+        "$0 \\, N/C$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Dentro: E = kQ·r/R^3 = 9e9·1e−6·0,05/0,001 = 4,5×10^5 N/C.",
+      "spiegazione": "Dentro: $$E = kQ \\cdot r/R^3 = 9 \\times 10^9 \\cdot 1 \\times 10^{-6} \\cdot 0{,}05/0{,}001 = 4{,}5 \\times 10^5 \\, N/C$$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "sfera isolante",
@@ -1662,17 +1662,17 @@
     },
     {
       "id": "els_084",
-      "domanda": "Sfera isolante uniformemente carica: Q = 1,0 μC, raggio R = 0,10 m. Quanto vale E a r = 0,20 m dal centro (fuori dalla sfera)? (k ≈ 9,0×10^9)",
+      "domanda": "Sfera isolante uniformemente carica: $Q = 1{,}0 \\, \\mu C$, raggio $R = 0{,}10 \\, m$. Quanto vale $E$ a $r = 0{,}20 \\, m$ dal centro (fuori dalla sfera)? ($k \\approx 9{,}0 \\times 10^9$)",
       "categoria": "Elettrostatica",
       "sottocategoria": "Sfera uniformemente carica",
       "opzioni": [
-        "2,25×10^5 N/C",
-        "9,0×10^4 N/C",
-        "9,0×10^5 N/C",
-        "4,5×10^5 N/C"
+        "$2{,}25 \\times 10^5 \\, N/C$",
+        "$9{,}0 \\times 10^4 \\, N/C$",
+        "$9{,}0 \\times 10^5 \\, N/C$",
+        "$4{,}5 \\times 10^5 \\, N/C$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Fuori: E = kQ/r^2 = 9e9·1e−6/0,04 = 9,0×10^4 N/C.",
+      "spiegazione": "Fuori: $$E = kQ/r^2 = 9 \\times 10^9 \\cdot 1 \\times 10^{-6}/0{,}04 = 9{,}0 \\times 10^4 \\, N/C$$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "sfera",
@@ -1682,7 +1682,7 @@
     },
     {
       "id": "els_085",
-      "domanda": "Una superficie gaussiana sferica racchiude una carica +Q al centro. Se raddoppio il raggio della sfera, il flusso totale attraverso la superficie:",
+      "domanda": "Una superficie gaussiana sferica racchiude una carica $+Q$ al centro. Se raddoppio il raggio della sfera, il flusso totale attraverso la superficie:",
       "categoria": "Elettrostatica",
       "sottocategoria": "Legge di Gauss",
       "opzioni": [
@@ -1692,7 +1692,7 @@
         "Diventa quattro volte"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Il flusso totale è Φ = Q/ε0 e non dipende dal raggio della superficie chiusa.",
+      "spiegazione": "Il flusso totale è $\\Phi = Q/\\varepsilon_0$ e non dipende dal raggio della superficie chiusa.",
       "difficolta": "difficile",
       "paroleChiave": [
         "flusso",
@@ -1702,17 +1702,17 @@
     },
     {
       "id": "els_086",
-      "domanda": "Una carica +Q è posta al centro di un cubo. Quanto flusso attraversa ciascuna faccia del cubo per simmetria?",
+      "domanda": "Una carica $+Q$ è posta al centro di un cubo. Quanto flusso attraversa ciascuna faccia del cubo per simmetria?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Legge di Gauss",
       "opzioni": [
-        "Q/ε0",
-        "Q/(2ε0)",
-        "Q/(6ε0)",
-        "0"
+        "$Q/\\varepsilon_0$",
+        "$Q/(2\\varepsilon_0)$",
+        "$Q/(6\\varepsilon_0)$",
+        "$0$"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Il flusso totale è Q/ε0 e, per simmetria, si divide ugualmente sulle 6 facce: Q/(6ε0).",
+      "spiegazione": "Il flusso totale è $Q/\\varepsilon_0$ e, per simmetria, si divide ugualmente sulle 6 facce: $Q/(6\\varepsilon_0)$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "cubo",
@@ -1722,17 +1722,17 @@
     },
     {
       "id": "els_087",
-      "domanda": "Un condensatore C1 = 2 μF in serie con C2 = 3 μF è collegato a V = 12 V. Qual è la carica Q che si accumula su ciascun condensatore?",
+      "domanda": "Un condensatore $C_1 = 2 \\, \\mu F$ in serie con $C_2 = 3 \\, \\mu F$ è collegato a $V = 12 \\, V$. Qual è la carica $Q$ che si accumula su ciascun condensatore?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Serie (calcolo)",
       "opzioni": [
-        "Q = 7,2 μC",
-        "Q = 14,4 μC",
-        "Q = 24 μC",
-        "Q = 60 μC"
+        "$Q = 7{,}2 \\, \\mu C$",
+        "$Q = 14{,}4 \\, \\mu C$",
+        "$Q = 24 \\, \\mu C$",
+        "$Q = 60 \\, \\mu C$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Ceq = 1,2 μF ⇒ Q = Ceq·V = 1,2e−6·12 = 14,4 μC (uguale su entrambi in serie).",
+      "spiegazione": "$C_{eq} = 1{,}2 \\, \\mu F \\Rightarrow Q = C_{eq} \\cdot V = 1{,}2 \\times 10^{-6} \\cdot 12 = 14{,}4 \\, \\mu C$ (uguale su entrambi in serie).",
       "difficolta": "difficile",
       "paroleChiave": [
         "serie",
@@ -1742,17 +1742,17 @@
     },
     {
       "id": "els_088",
-      "domanda": "Nel circuito dell’esercizio precedente (C1=2 μF, C2=3 μF in serie, V=12 V), quanto vale la tensione su C1?",
+      "domanda": "Nel circuito dell'esercizio precedente ($C_1 = 2 \\, \\mu F$, $C_2 = 3 \\, \\mu F$ in serie, $V = 12 \\, V$), quanto vale la tensione su $C_1$?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Serie (divisione tensione)",
       "opzioni": [
-        "7,2 V",
-        "4,8 V",
-        "12 V",
-        "2,4 V"
+        "$7{,}2 \\, V$",
+        "$4{,}8 \\, V$",
+        "$12 \\, V$",
+        "$2{,}4 \\, V$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Q = 14,4 μC ⇒ V1 = Q/C1 = 14,4/2 = 7,2 V.",
+      "spiegazione": "$Q = 14{,}4 \\, \\mu C \\Rightarrow V_1 = Q/C_1 = 14{,}4/2 = 7{,}2 \\, V$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "serie",
@@ -1762,17 +1762,17 @@
     },
     {
       "id": "els_089",
-      "domanda": "Nel circuito (C1=2 μF, C2=3 μF in serie, V=12 V), quanto vale la tensione su C2?",
+      "domanda": "Nel circuito ($C_1 = 2 \\, \\mu F$, $C_2 = 3 \\, \\mu F$ in serie, $V = 12 \\, V$), quanto vale la tensione su $C_2$?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Serie (divisione tensione)",
       "opzioni": [
-        "7,2 V",
-        "4,8 V",
-        "12 V",
-        "9,6 V"
+        "$7{,}2 \\, V$",
+        "$4{,}8 \\, V$",
+        "$12 \\, V$",
+        "$9{,}6 \\, V$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Q = 14,4 μC ⇒ V2 = Q/C2 = 14,4/3 = 4,8 V.",
+      "spiegazione": "$Q = 14{,}4 \\, \\mu C \\Rightarrow V_2 = Q/C_2 = 14{,}4/3 = 4{,}8 \\, V$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "serie",
@@ -1782,17 +1782,17 @@
     },
     {
       "id": "els_090",
-      "domanda": "Due cariche: q1 = +4 μC in x=0 e q2 = −1 μC in x=1 m. In quale regione sull’asse x può esistere un punto con E totale nullo?",
+      "domanda": "Due cariche: $q_1 = +4 \\, \\mu C$ in $x = 0$ e $q_2 = -1 \\, \\mu C$ in $x = 1 \\, m$. In quale regione sull'asse $x$ può esistere un punto con $E$ totale nullo?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Annullamento del campo",
       "opzioni": [
         "Solo tra le cariche",
-        "Solo a sinistra di x=0",
-        "Solo a destra di x=1",
+        "Solo a sinistra di $x = 0$",
+        "Solo a destra di $x = 1$",
         "In nessuna regione"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Con cariche opposte, tra di esse i campi si sommano (stesso verso), quindi l’annullamento può avvenire solo all’esterno, dal lato della carica di modulo minore (qui −1 μC, a destra).",
+      "spiegazione": "Con cariche opposte, tra di esse i campi si sommano (stesso verso), quindi l'annullamento può avvenire solo all'esterno, dal lato della carica di modulo minore (qui $-1 \\, \\mu C$, a destra).",
       "difficolta": "difficile",
       "paroleChiave": [
         "cariche opposte",
@@ -1802,17 +1802,17 @@
     },
     {
       "id": "els_091",
-      "domanda": "Per una carica puntiforme Q, la differenza di potenziale tra r1 e r2 vale ΔV = kQ(1/r1 − 1/r2). Se Q=+2 μC, r1=0,20 m, r2=0,50 m, quanto vale ΔV? (k≈9,0×10^9)",
+      "domanda": "Per una carica puntiforme $Q$, la differenza di potenziale tra $r_1$ e $r_2$ vale $\\Delta V = kQ(1/r_1 - 1/r_2)$. Se $Q = +2 \\, \\mu C$, $r_1 = 0{,}20 \\, m$, $r_2 = 0{,}50 \\, m$, quanto vale $\\Delta V$? ($k \\approx 9{,}0 \\times 10^9$)",
       "categoria": "Elettrostatica",
       "sottocategoria": "Differenza di potenziale",
       "opzioni": [
-        "36 kV",
-        "54 kV",
-        "90 kV",
-        "9 kV"
+        "$36 \\, kV$",
+        "$54 \\, kV$",
+        "$90 \\, kV$",
+        "$9 \\, kV$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "ΔV = 9e9·2e−6·(5−2) = 18e3·3 = 54 kV.",
+      "spiegazione": "$\\Delta V = 9 \\times 10^9 \\cdot 2 \\times 10^{-6} \\cdot (5 - 2) = 18 \\times 10^3 \\cdot 3 = 54 \\, kV$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "deltaV",
@@ -1822,17 +1822,17 @@
     },
     {
       "id": "els_092",
-      "domanda": "Quanto lavoro compie la forza elettrica nel portare una carica q = +1 nC da r=0,20 m a r=0,50 m rispetto a una carica Q=+2 μC? (k≈9,0×10^9)",
+      "domanda": "Quanto lavoro compie la forza elettrica nel portare una carica $q = +1 \\, nC$ da $r = 0{,}20 \\, m$ a $r = 0{,}50 \\, m$ rispetto a una carica $Q = +2 \\, \\mu C$? ($k \\approx 9{,}0 \\times 10^9$)",
       "categoria": "Elettrostatica",
       "sottocategoria": "Lavoro e potenziale",
       "opzioni": [
-        "5,4×10^−5 J",
-        "5,4×10^−8 J",
-        "5,4×10^−2 J",
-        "0 J"
+        "$5{,}4 \\times 10^{-5} \\, J$",
+        "$5{,}4 \\times 10^{-8} \\, J$",
+        "$5{,}4 \\times 10^{-2} \\, J$",
+        "$0 \\, J$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "W = q·ΔV = 1e−9·54e3 = 5,4e−5? Attenzione: 54 kV = 54e3 V ⇒ W = 54e−6 J = 5,4×10^−5 J.",
+      "spiegazione": "$$W = q \\cdot \\Delta V = 1 \\times 10^{-9} \\cdot 54 \\times 10^3 = 5{,}4 \\times 10^{-5}$$? **Attenzione:** $54 \\, kV = 54 \\times 10^3 \\, V$ $\\Rightarrow$ $W = 54 \\times 10^{-6} \\, J = 5{,}4 \\times 10^{-5} \\, J$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "lavoro",
@@ -1842,17 +1842,17 @@
     },
     {
       "id": "els_093",
-      "domanda": "Condensatore piano: A = 0,010 m², d = 1,0 mm nel vuoto. Qual è la capacità? (ε0 ≈ 8,85×10^−12)",
+      "domanda": "Condensatore piano: $A = 0{,}010 \\, m^2$, $d = 1{,}0 \\, mm$ nel vuoto. Qual è la capacità? ($\\varepsilon_0 \\approx 8{,}85 \\times 10^{-12}$)",
       "categoria": "Elettrostatica",
       "sottocategoria": "Condensatore piano (calcolo)",
       "opzioni": [
-        "8,85×10^−11 F",
-        "8,85×10^−10 F",
-        "8,85×10^−13 F",
-        "8,85×10^−9 F"
+        "$8{,}85 \\times 10^{-11} \\, F$",
+        "$8{,}85 \\times 10^{-10} \\, F$",
+        "$8{,}85 \\times 10^{-13} \\, F$",
+        "$8{,}85 \\times 10^{-9} \\, F$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "C = ε0A/d = 8,85e−12·0,010/0,001 = 8,85e−11 F.",
+      "spiegazione": "$$C = \\varepsilon_0 A/d = 8{,}85 \\times 10^{-12} \\cdot 0{,}010/0{,}001 = 8{,}85 \\times 10^{-11} \\, F$$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "C=epsilon0A/d",
@@ -1862,17 +1862,17 @@
     },
     {
       "id": "els_094",
-      "domanda": "Condensatore piano dell’esercizio precedente (C=8,85×10^−11 F) collegato a V=1000 V. Quanta carica accumula?",
+      "domanda": "Condensatore piano dell'esercizio precedente ($C = 8{,}85 \\times 10^{-11} \\, F$) collegato a $V = 1000 \\, V$. Quanta carica accumula?",
       "categoria": "Elettrostatica",
       "sottocategoria": "Condensatore piano (calcolo)",
       "opzioni": [
-        "8,85×10^−8 C",
-        "8,85×10^−11 C",
-        "8,85×10^−14 C",
-        "8,85×10^−5 C"
+        "$8{,}85 \\times 10^{-8} \\, C$",
+        "$8{,}85 \\times 10^{-11} \\, C$",
+        "$8{,}85 \\times 10^{-14} \\, C$",
+        "$8{,}85 \\times 10^{-5} \\, C$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Q = C·V = 8,85e−11·1000 = 8,85e−8 C.",
+      "spiegazione": "$$Q = C \\cdot V = 8{,}85 \\times 10^{-11} \\cdot 1000 = 8{,}85 \\times 10^{-8} \\, C$$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "Q=CV",
@@ -1882,17 +1882,17 @@
     },
     {
       "id": "els_095",
-      "domanda": "Condensatore piano (A=0,010 m², d=1,0 mm) a V=1000 V. Stima l’energia tramite U=1/2·C·V^2 usando C=8,85×10^−11 F.",
+      "domanda": "Condensatore piano ($A = 0{,}010 \\, m^2$, $d = 1{,}0 \\, mm$) a $V = 1000 \\, V$. Stima l'energia tramite $U = \\frac{1}{2}CV^2$ usando $C = 8{,}85 \\times 10^{-11} \\, F$.",
       "categoria": "Elettrostatica",
       "sottocategoria": "Energia nei condensatori",
       "opzioni": [
-        "4,43×10^−5 J",
-        "4,43×10^−2 J",
-        "8,85×10^−5 J",
-        "8,85×10^−11 J"
+        "$4{,}43 \\times 10^{-5} \\, J$",
+        "$4{,}43 \\times 10^{-2} \\, J$",
+        "$8{,}85 \\times 10^{-5} \\, J$",
+        "$8{,}85 \\times 10^{-11} \\, J$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "U = 0,5·8,85e−11·(1000)^2 = 0,5·8,85e−5 = 4,43e−5 J.",
+      "spiegazione": "$$U = 0{,}5 \\cdot 8{,}85 \\times 10^{-11} \\cdot (1000)^2 = 0{,}5 \\cdot 8{,}85 \\times 10^{-5} = 4{,}43 \\times 10^{-5} \\, J$$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "energia",

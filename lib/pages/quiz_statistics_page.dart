@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:physics_ease_release/models/quiz_result.dart';
 import 'package:physics_ease_release/models/quiz.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
+import 'package:physics_ease_release/widgets/latex_text.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
 import 'package:physics_ease_release/services/quiz_service.dart';
@@ -851,7 +852,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                         'Domanda ${index + 1}',
                         style: const TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      subtitle: Text(
+                      subtitle: LatexText(
                         questionQuiz.domanda,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
@@ -862,7 +863,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              LatexText(
                                 questionQuiz.domanda,
                                 style: const TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -902,7 +903,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                       ),
                                       const SizedBox(width: 8),
                                       Expanded(
-                                        child: Text(
+                                        child: LatexText(
                                           option,
                                           style: TextStyle(
                                             fontWeight:
@@ -948,7 +949,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                       ],
                                     ),
                                     const SizedBox(height: 8),
-                                    Text(questionQuiz.spiegazione),
+                                    LatexText(questionQuiz.spiegazione),
                                   ],
                                 ),
                               ),
@@ -1539,7 +1540,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
+                                LatexText(
                                   quiz.domanda,
                                   style: const TextStyle(
                                     fontSize: 14,
@@ -1652,7 +1653,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                             ),
                           ),
                           const SizedBox(height: 8),
-                          Text(
+                          LatexText(
                             quiz.domanda,
                             style: const TextStyle(
                               fontSize: 16,
@@ -1771,7 +1772,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                 style: const TextStyle(color: Colors.white),
                               ),
                             ),
-                            title: Text(quiz.opzioni[index]),
+                            title: LatexText(quiz.opzioni[index]),
                             trailing: isCorrect
                                 ? const Icon(
                                     Icons.check_circle,

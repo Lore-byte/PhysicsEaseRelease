@@ -4,6 +4,7 @@ import 'package:physics_ease_release/models/quiz.dart';
 import 'package:physics_ease_release/models/quiz_result.dart';
 import 'package:physics_ease_release/pages/quiz_page.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
+import 'package:physics_ease_release/widgets/latex_text.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:developer' as developer;
 import 'package:physics_ease_release/pages/quiz_statistics_page.dart';
@@ -223,7 +224,7 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                           'Domanda ${index + 1}',
                           style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        subtitle: Text(
+                        subtitle: LatexText(
                           quiz.domanda,
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
@@ -234,7 +235,7 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
+                                LatexText(
                                   quiz.domanda,
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -271,7 +272,7 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                                         ),
                                         const SizedBox(width: 8),
                                         Expanded(
-                                          child: Text(
+                                          child: LatexText(
                                             option,
                                             style: TextStyle(
                                               fontWeight:
@@ -318,7 +319,7 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                                         ],
                                       ),
                                       const SizedBox(height: 8),
-                                      Text(quiz.spiegazione),
+                                      LatexText(quiz.spiegazione),
                                     ],
                                   ),
                                 ),

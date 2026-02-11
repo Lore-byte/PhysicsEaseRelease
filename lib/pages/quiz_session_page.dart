@@ -4,6 +4,7 @@ import 'package:physics_ease_release/models/quiz.dart';
 import 'package:physics_ease_release/models/quiz_result.dart';
 import 'package:physics_ease_release/pages/quiz_results_page.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
+import 'package:physics_ease_release/widgets/latex_text.dart';
 
 class QuizSessionPage extends StatefulWidget {
   final List<Quiz> quizzes;
@@ -184,12 +185,13 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                     color: colorScheme.primaryContainer,
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
-                      child: Text(
+                      child: LatexText(
                         _currentQuiz.domanda,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
                           fontWeight: FontWeight.bold,
                           color: colorScheme.onPrimaryContainer,
                         ),
+                        latexColor: colorScheme.onPrimaryContainer,
                       ),
                     ),
                   ),
@@ -274,10 +276,11 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                               ),
                               const SizedBox(width: 16),
                               Expanded(
-                                child: Text(
+                                child: LatexText(
                                   option,
                                   style: Theme.of(context).textTheme.bodyLarge
                                       ?.copyWith(color: optionTextColor),
+                                  latexColor: optionTextColor,
                                 ),
                               ),
                               if (_showFeedback && isCorrect)
@@ -321,12 +324,13 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                               ],
                             ),
                             const SizedBox(height: 8),
-                            Text(
+                            LatexText(
                               _currentQuiz.spiegazione,
                               style: Theme.of(context).textTheme.bodyMedium
                                   ?.copyWith(
                                     color: colorScheme.onTertiaryContainer,
                                   ),
+                              latexColor: colorScheme.onTertiaryContainer,
                             ),
                           ],
                         ),

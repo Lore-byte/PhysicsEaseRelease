@@ -2,17 +2,17 @@
     "quiz": [
         {
             "id": "ang_001",
-            "domanda": "Che cos'è il momento angolare di un punto materiale rispetto a un polo O?",
+            "domanda": "Che cos'è il momento angolare di un punto materiale rispetto a un polo $O$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Definizione",
             "opzioni": [
-                "Il prodotto scalare tra r e p",
-                "Il prodotto vettoriale tra r e p",
-                "La somma tra r e p",
-                "Il rapporto tra p e r"
+                "Il prodotto scalare tra $r$ e $p$",
+                "Il prodotto vettoriale tra $r$ e $p$",
+                "La somma tra $r$ e $p$",
+                "Il rapporto tra $p$ e $r$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Per un punto materiale, il momento angolare rispetto a O è definito come L = r × p.",
+            "spiegazione": "Per un punto materiale, il momento angolare rispetto a $O$ è definito come $L = r \\times p$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "definizione",
@@ -27,13 +27,13 @@
             "categoria": "Momento Angolare",
             "sottocategoria": "Unità di misura",
             "opzioni": [
-                "N·m",
-                "kg·m/s",
-                "kg·m^2/s",
-                "J/s"
+                "$\\text{N} \\cdot \\text{m}$",
+                "$\\text{kg} \\cdot \\text{m/s}$",
+                "$\\text{kg} \\cdot \\text{m}^2/\\text{s}$",
+                "$\\text{J/s}$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Dalla definizione L = r × p con p = m v, l'unità è kg·m^2/s.",
+            "spiegazione": "Dalla definizione $L = r \\times p$ con $p = mv$, l'unità è $\\text{kg} \\cdot \\text{m}^2/\\text{s}$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "SI",
@@ -65,17 +65,17 @@
         },
         {
             "id": "ang_004",
-            "domanda": "Qual è la relazione fondamentale tra momento torcente τ e momento angolare L (rispetto allo stesso polo)?",
+            "domanda": "Qual è la relazione fondamentale tra momento torcente $\\tau$ e momento angolare $L$ (rispetto allo stesso polo)?",
             "categoria": "Momento Angolare",
             "sottoccategoria": "Relazione con il momento torcente",
             "opzioni": [
-                "τ = dL/dt",
-                "τ = L·t",
-                "τ = L/t",
-                "τ = d(t)/dL"
+                "$\\tau = dL/dt$",
+                "$\\tau = L \\cdot t$",
+                "$\\tau = L/t$",
+                "$\\tau = d(t)/dL$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "La derivata temporale del momento angolare è uguale al momento delle forze: τ = dL/dt.",
+            "spiegazione": "La derivata temporale del momento angolare è uguale al momento delle forze: $\\tau = dL/dt$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "tau",
@@ -86,7 +86,7 @@
         },
         {
             "id": "ang_005",
-            "domanda": "Se la forza è diretta lungo r (forza centrale), qual è il momento torcente rispetto al centro?",
+            "domanda": "Se la forza è diretta lungo $r$ (forza centrale), qual è il momento torcente rispetto al centro?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Forze centrali",
             "opzioni": [
@@ -96,7 +96,7 @@
                 "Dipende dalla velocità"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se F è parallela a r, r × F = 0 quindi il momento torcente è nullo.",
+            "spiegazione": "Se $F$ è parallela a $r$, $r \\times F = 0$ quindi il momento torcente è nullo.",
             "difficolta": "facile",
             "paroleChiave": [
                 "forza centrale",
@@ -107,13 +107,13 @@
         },
         {
             "id": "ang_006",
-            "domanda": "In quale direzione punta il vettore momento angolare L = r × p?",
+            "domanda": "In quale direzione punta il vettore momento angolare $L = r \\times p$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Direzione e verso",
             "opzioni": [
-                "Nella stessa direzione di r",
-                "Nella stessa direzione di p",
-                "Perpendicolare al piano formato da r e p",
+                "Nella stessa direzione di $r$",
+                "Nella stessa direzione di $p$",
+                "Perpendicolare al piano formato da $r$ e $p$",
                 "Sempre verso il basso"
             ],
             "rispostaCorretta": 2,
@@ -128,17 +128,17 @@
         },
         {
             "id": "ang_007",
-            "domanda": "Se p è parallela a r, quanto vale il momento angolare L?",
+            "domanda": "Se $p$ è parallela a $r$, quanto vale il momento angolare $L$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Casi particolari",
             "opzioni": [
-                "L è massimo",
-                "L è nullo",
-                "L vale m v",
-                "L vale r + p"
+                "$L$ è massimo",
+                "$L$ è nullo",
+                "$L$ vale $mv$",
+                "$L$ vale $r + p$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se r e p sono paralleli, il prodotto vettoriale r × p è zero.",
+            "spiegazione": "Se $r$ e $p$ sono paralleli, il prodotto vettoriale $r \\times p$ è zero.",
             "difficolta": "facile",
             "paroleChiave": [
                 "parallelo",
@@ -149,17 +149,17 @@
         },
         {
             "id": "ang_008",
-            "domanda": "Che effetto ha ridurre il momento d'inerzia I di un pattinatore che ruota (senza coppie esterne)?",
+            "domanda": "Che effetto ha ridurre il momento d'inerzia $I$ di un pattinatore che ruota (senza coppie esterne)?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Conservazione nei corpi rigidi",
             "opzioni": [
-                "La velocità angolare ω diminuisce",
-                "La velocità angolare ω aumenta",
-                "Il momento angolare L diminuisce",
+                "La velocità angolare $\\omega$ diminuisce",
+                "La velocità angolare $\\omega$ aumenta",
+                "Il momento angolare $L$ diminuisce",
                 "La massa diminuisce"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Senza coppie esterne L si conserva; con L = Iω, se I diminuisce allora ω aumenta.",
+            "spiegazione": "Senza coppie esterne $L$ si conserva; con $L = I\\omega$, se $I$ diminuisce allora $\\omega$ aumenta.",
             "difficolta": "facile",
             "paroleChiave": [
                 "pattinatore",
@@ -170,17 +170,17 @@
         },
         {
             "id": "ang_009",
-            "domanda": "Il momento torcente rispetto a O è definito come:",
+            "domanda": "Il momento torcente rispetto a $O$ è definito come:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Momento di una forza",
             "opzioni": [
-                "τ = r × F",
-                "τ = r · F",
-                "τ = F/m",
-                "τ = m·a"
+                "$\\tau = r \\times F$",
+                "$\\tau = r \\cdot F$",
+                "$\\tau = F/m$",
+                "$\\tau = m \\cdot a$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Il momento torcente di una forza rispetto a O è τ = r × F.",
+            "spiegazione": "Il momento torcente di una forza rispetto a $O$ è $\\tau = r \\times F$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "momento torcente",
@@ -198,10 +198,10 @@
                 "Resta sempre costante",
                 "Cambia nel tempo",
                 "Diventa necessariamente nullo",
-                "Diventa parallelo a r"
+                "Diventa parallelo a $r$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se τ_ext ≠ 0 allora dL/dt ≠ 0 e quindi L varia nel tempo.",
+            "spiegazione": "Se $\\tau_{ext} \\neq 0$ allora $dL/dt \\neq 0$ e quindi $L$ varia nel tempo.",
             "difficolta": "facile",
             "paroleChiave": [
                 "coppia esterna",
@@ -212,7 +212,7 @@
         },
         {
             "id": "ang_011",
-            "domanda": "Quale grandezza è l'analogo rotazionale della quantità di moto lineare p?",
+            "domanda": "Quale grandezza è l'analogo rotazionale della quantità di moto lineare $p$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Analogie lineare-rotazionale",
             "opzioni": [
@@ -222,7 +222,7 @@
                 "Pressione"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Nel moto rotazionale il momento angolare L gioca un ruolo analogo a p nel moto traslatorio.",
+            "spiegazione": "Nel moto rotazionale il momento angolare $L$ gioca un ruolo analogo a $p$ nel moto traslatorio.",
             "difficolta": "facile",
             "paroleChiave": [
                 "analogia",
@@ -237,13 +237,13 @@
             "categoria": "Momento Angolare",
             "sottocategoria": "Impulso angolare",
             "opzioni": [
-                "La somma tra τ e L",
+                "La somma tra $\\tau$ e $L$",
                 "L'integrale nel tempo del momento torcente",
-                "Il prodotto scalare τ·t",
-                "Il rapporto L/τ"
+                "Il prodotto scalare $\\tau \\cdot t$",
+                "Il rapporto $L/\\tau$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L'impulso angolare è l'integrale di τ nel tempo e coincide con ΔL.",
+            "spiegazione": "L'impulso angolare è l'integrale di $\\tau$ nel tempo e coincide con $\\Delta L$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "impulso angolare",
@@ -254,17 +254,17 @@
         },
         {
             "id": "ang_013",
-            "domanda": "Per un punto materiale in moto circolare uniforme di raggio r, con velocità v perpendicolare a r, il modulo di L vale:",
+            "domanda": "Per un punto materiale in moto circolare uniforme di raggio $r$, con velocità $v$ perpendicolare a $r$, il modulo di $L$ vale:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Modulo di L",
             "opzioni": [
-                "L = m v",
-                "L = m r",
-                "L = m r v",
-                "L = m v / r"
+                "$L = mv$",
+                "$L = mr$",
+                "$L = mrv$",
+                "$L = mv/r$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Se r ⟂ v, allora |L| = |r×p| = r·(m v) = m r v.",
+            "spiegazione": "Se $r \\perp v$, allora $|L| = |r \\times p| = r \\cdot (mv) = mrv$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "mrv",
@@ -285,7 +285,7 @@
                 "Si conserva sempre il momento d'inerzia"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se il momento esterno totale è nullo, L_tot resta costante.",
+            "spiegazione": "Se il momento esterno totale è nullo, $L_{tot}$ resta costante.",
             "difficolta": "facile",
             "paroleChiave": [
                 "assenza coppie",
@@ -296,7 +296,7 @@
         },
         {
             "id": "ang_015",
-            "domanda": "Quale grandezza determina quanto 'efficace' è una forza nel cambiare L rispetto a un punto?",
+            "domanda": "Quale grandezza determina quanto 'efficace' è una forza nel cambiare $L$ rispetto a un punto?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Momento di una forza",
             "opzioni": [
@@ -306,7 +306,7 @@
                 "La pressione"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "È il momento torcente τ che produce variazioni del momento angolare.",
+            "spiegazione": "È il momento torcente $\\tau$ che produce variazioni del momento angolare.",
             "difficolta": "facile",
             "paroleChiave": [
                 "torque",
@@ -317,7 +317,7 @@
         },
         {
             "id": "ang_016",
-            "domanda": "Se aumenti la distanza r dal polo, a parità di p perpendicolare a r, come cambia |L|?",
+            "domanda": "Se aumenti la distanza $r$ dal polo, a parità di $p$ perpendicolare a $r$, come cambia $|L|$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Dipendenze",
             "opzioni": [
@@ -327,7 +327,7 @@
                 "Diventa nullo"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con r ⟂ p, vale |L| = r p: aumentando r aumenta |L|.",
+            "spiegazione": "Con $r \\perp p$, vale $|L| = rp$: aumentando $r$ aumenta $|L|$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "dipendenza",
@@ -338,17 +338,17 @@
         },
         {
             "id": "ang_017",
-            "domanda": "In quale caso il momento angolare rispetto a O è sicuramente nullo?",
+            "domanda": "In quale caso il momento angolare rispetto a $O$ è sicuramente nullo?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Casi particolari",
             "opzioni": [
                 "Quando la velocità è massima",
-                "Quando r = 0",
+                "Quando $r = 0$",
                 "Quando la massa è grande",
                 "Quando l'energia cinetica è costante"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se la particella si trova in O, allora r = 0 e quindi L = r × p = 0.",
+            "spiegazione": "Se la particella si trova in $O$, allora $r = 0$ e quindi $L = r \\times p = 0$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "r=0",
@@ -363,13 +363,13 @@
             "categoria": "Momento Angolare",
             "sottocategoria": "Vettori nel moto circolare",
             "opzioni": [
-                "La massa m",
-                "Il raggio r",
-                "La quantità di moto p",
-                "Il periodo T"
+                "La massa $m$",
+                "Il raggio $r$",
+                "La quantità di moto $p$",
+                "Il periodo $T$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Nel moto circolare uniforme p è tangente e cambia direzione mentre il modulo resta costante.",
+            "spiegazione": "Nel moto circolare uniforme $p$ è tangente e cambia direzione mentre il modulo resta costante.",
             "difficolta": "facile",
             "paroleChiave": [
                 "moto circolare",
@@ -390,7 +390,7 @@
                 "Sempre positiva"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L deriva da un prodotto vettoriale, quindi è un vettore.",
+            "spiegazione": "$L$ deriva da un prodotto vettoriale, quindi è un vettore.",
             "difficolta": "facile",
             "paroleChiave": [
                 "vettore",
@@ -411,7 +411,7 @@
                 "Molla che si allunga"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Riducendo I senza coppie esterne, ω aumenta per conservare L = Iω.",
+            "spiegazione": "Riducendo $I$ senza coppie esterne, $\\omega$ aumenta per conservare $L = I\\omega$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "pattinatore",
@@ -422,7 +422,7 @@
         },
         {
             "id": "ang_021",
-            "domanda": "Se il momento torcente totale esterno è nullo, la variazione di L in un intervallo di tempo è:",
+            "domanda": "Se il momento torcente totale esterno è nullo, la variazione di $L$ in un intervallo di tempo è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Impulso angolare",
             "opzioni": [
@@ -432,7 +432,7 @@
                 "Impossibile da determinare"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Con τ_ext = 0 si ha dL/dt = 0, quindi ΔL = 0.",
+            "spiegazione": "Con $\\tau_{ext} = 0$ si ha $dL/dt = 0$, quindi $\\Delta L = 0$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "delta L",
@@ -443,17 +443,17 @@
         },
         {
             "id": "ang_022",
-            "domanda": "Quale formula esprime il modulo del prodotto vettoriale tra r e p?",
+            "domanda": "Quale formula esprime il modulo del prodotto vettoriale tra $r$ e $p$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Modulo",
             "opzioni": [
-                "|L| = r p cosθ",
-                "|L| = r + p",
-                "|L| = r p sinθ",
-                "|L| = r/p"
+                "$|L| = rp\\cos\\theta$",
+                "$|L| = r + p$",
+                "$|L| = rp\\sin\\theta$",
+                "$|L| = r/p$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Il modulo di r × p vale r p sinθ, dove θ è l'angolo tra r e p.",
+            "spiegazione": "Il modulo di $r \\times p$ vale $rp\\sin\\theta$, dove $\\theta$ è l'angolo tra $r$ e $p$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "modulo",
@@ -464,17 +464,17 @@
         },
         {
             "id": "ang_023",
-            "domanda": "Se una particella si muove lungo una retta passante per O, il momento angolare rispetto a O è:",
+            "domanda": "Se una particella si muove lungo una retta passante per $O$, il momento angolare rispetto a $O$ è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Moto radiale",
             "opzioni": [
                 "Costante e non nullo",
                 "Nullo",
                 "Massimo",
-                "Uguale a m v^2"
+                "Uguale a $mv^2$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se il moto è radiale, r è parallelo a p e quindi r × p = 0.",
+            "spiegazione": "Se il moto è radiale, $r$ è parallelo a $p$ e quindi $r \\times p = 0$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "moto radiale",
@@ -489,13 +489,13 @@
             "categoria": "Momento Angolare",
             "sottocategoria": "Conservazione nei corpi rigidi",
             "opzioni": [
-                "La velocità angolare ω",
-                "Il momento angolare L",
-                "Il vettore L (modulo e direzione) sempre invariabili in ogni caso",
+                "La velocità angolare $\\omega$",
+                "Il momento angolare $L$",
+                "Il vettore $L$ (modulo e direzione) sempre invariabili in ogni caso",
                 "La massa totale del sistema"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Se L è costante ma I cambia, allora ω deve cambiare per mantenere L = Iω.",
+            "spiegazione": "Se $L$ è costante ma $I$ cambia, allora $\\omega$ deve cambiare per mantenere $L = I\\omega$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "ω",
@@ -510,10 +510,10 @@
             "categoria": "Momento Angolare",
             "sottocategoria": "Concetto",
             "opzioni": [
-                "L resta costante se non ci sono forze interne",
-                "L resta costante se non c'è momento esterno risultante",
-                "L resta costante se la velocità è costante",
-                "L resta costante solo nei moti circolari"
+                "$L$ resta costante se non ci sono forze interne",
+                "$L$ resta costante se non c'è momento esterno risultante",
+                "$L$ resta costante se la velocità è costante",
+                "$L$ resta costante solo nei moti circolari"
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La condizione è l'assenza di momento esterno totale (coppia esterna risultante).",
@@ -537,7 +537,7 @@
                 "La densità"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Il momento torcente dipende da r e dalla componente perpendicolare della forza: τ = r × F.",
+            "spiegazione": "Il momento torcente dipende da $r$ e dalla componente perpendicolare della forza: $\\tau = r \\times F$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "braccio",
@@ -552,13 +552,13 @@
             "categoria": "Momento Angolare",
             "sottocategoria": "Corpi rigidi",
             "opzioni": [
-                "L = I ω",
-                "L = m v",
-                "L = F / r",
-                "L = r / p"
+                "$L = I\\omega$",
+                "$L = mv$",
+                "$L = F/r$",
+                "$L = r/p$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Per rotazione attorno ad asse fisso, spesso si usa L = Iω (lungo l'asse).",
+            "spiegazione": "Per rotazione attorno ad asse fisso, spesso si usa $L = I\\omega$ (lungo l'asse).",
             "difficolta": "facile",
             "paroleChiave": [
                 "Iω",
@@ -569,7 +569,7 @@
         },
         {
             "id": "ang_028",
-            "domanda": "Se r è raddoppiato e p resta uguale e perpendicolare, |L| diventa:",
+            "domanda": "Se $r$ è raddoppiato e $p$ resta uguale e perpendicolare, $|L|$ diventa:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Proporzionalità",
             "opzioni": [
@@ -579,7 +579,7 @@
                 "Invariato"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con r ⟂ p, |L| = r p: raddoppiare r raddoppia |L|.",
+            "spiegazione": "Con $r \\perp p$, $|L| = rp$: raddoppiare $r$ raddoppia $|L|$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "proporzionalità",
@@ -590,17 +590,17 @@
         },
         {
             "id": "ang_029",
-            "domanda": "Quale tra queste equazioni è l'analogo rotazionale di F = dp/dt?",
+            "domanda": "Quale tra queste equazioni è l'analogo rotazionale di $F = dp/dt$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Analogie",
             "opzioni": [
-                "τ = dL/dt",
-                "τ = dω/dt",
-                "L = dτ/dt",
-                "p = dF/dt"
+                "$\\tau = dL/dt$",
+                "$\\tau = d\\omega/dt$",
+                "$L = d\\tau/dt$",
+                "$p = dF/dt$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Come F causa variazione di p, così τ causa variazione di L: τ = dL/dt.",
+            "spiegazione": "Come $F$ causa variazione di $p$, così $\\tau$ causa variazione di $L$: $\\tau = dL/dt$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "analogo",
@@ -621,7 +621,7 @@
                 "Spinta laterale costante"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Una forza centrale è parallela a r e quindi non produce torque rispetto al centro.",
+            "spiegazione": "Una forza centrale è parallela a $r$ e quindi non produce torque rispetto al centro.",
             "difficolta": "facile",
             "paroleChiave": [
                 "gravitazione",
@@ -632,17 +632,17 @@
         },
         {
             "id": "ang_031",
-            "domanda": "Se la componente di p perpendicolare a r è zero, allora:",
+            "domanda": "Se la componente di $p$ perpendicolare a $r$ è zero, allora:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Componenti",
             "opzioni": [
-                "L è massimo",
-                "L è nullo",
-                "L dipende da cosθ",
-                "L dipende solo dalla massa"
+                "$L$ è massimo",
+                "$L$ è nullo",
+                "$L$ dipende da $\\cos\\theta$",
+                "$L$ dipende solo dalla massa"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se p non ha componente perpendicolare a r (p parallela a r), r × p = 0.",
+            "spiegazione": "Se $p$ non ha componente perpendicolare a $r$ ($p$ parallela a $r$), $r \\times p = 0$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "componenti",
@@ -653,17 +653,17 @@
         },
         {
             "id": "ang_032",
-            "domanda": "Un momento torcente costante applicato per un tempo Δt produce:",
+            "domanda": "Un momento torcente costante applicato per un tempo $\\Delta t$ produce:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Impulso angolare",
             "opzioni": [
-                "Un aumento di energia potenziale pari a τΔt",
-                "Una variazione di momento angolare ΔL = τΔt",
-                "Una variazione di massa Δm = τΔt",
-                "Una variazione di velocità lineare Δv = τΔt"
+                "Un aumento di energia potenziale pari a $\\tau \\Delta t$",
+                "Una variazione di momento angolare $\\Delta L = \\tau \\Delta t$",
+                "Una variazione di massa $\\Delta m = \\tau \\Delta t$",
+                "Una variazione di velocità lineare $\\Delta v = \\tau \\Delta t$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se τ è costante, integrando τ = dL/dt si ottiene ΔL = τΔt.",
+            "spiegazione": "Se $\\tau$ è costante, integrando $\\tau = dL/dt$ si ottiene $\\Delta L = \\tau \\Delta t$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "impulso",
@@ -684,7 +684,7 @@
                 "Solo dalla forma del corpo"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Poiché L = r × p, cambia se cambia r, quindi dipende dal polo scelto.",
+            "spiegazione": "Poiché $L = r \\times p$, cambia se cambia $r$, quindi dipende dal polo scelto.",
             "difficolta": "facile",
             "paroleChiave": [
                 "polo",
@@ -695,17 +695,17 @@
         },
         {
             "id": "ang_034",
-            "domanda": "Quale tra queste è una condizione sufficiente (tipica) per avere τ_ext = 0 rispetto a O?",
+            "domanda": "Quale tra queste è una condizione sufficiente (tipica) per avere $\\tau_{ext} = 0$ rispetto a $O$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Conservazione",
             "opzioni": [
-                "Forza esterna applicata con r = 0",
-                "Forza esterna perpendicolare a r",
+                "Forza esterna applicata con $r = 0$",
+                "Forza esterna perpendicolare a $r$",
                 "Forza esterna molto grande",
                 "Velocità molto grande"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Se la forza agisce nel polo (r = 0), il momento torcente τ = r × F è nullo.",
+            "spiegazione": "Se la forza agisce nel polo ($r = 0$), il momento torcente $\\tau = r \\times F$ è nullo.",
             "difficolta": "facile",
             "paroleChiave": [
                 "r=0",
@@ -722,11 +722,11 @@
             "opzioni": [
                 "Molto grande",
                 "Nullo o trascurabile",
-                "Sempre uguale a mg",
-                "Uguale a I"
+                "Sempre uguale a $mg$",
+                "Uguale a $I$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Senza attrito la coppia esterna dissipativa è trascurabile, quindi L tende a conservarsi.",
+            "spiegazione": "Senza attrito la coppia esterna dissipativa è trascurabile, quindi $L$ tende a conservarsi.",
             "difficolta": "facile",
             "paroleChiave": [
                 "attrito",
@@ -737,7 +737,7 @@
         },
         {
             "id": "ang_036",
-            "domanda": "Quale tra questi è un esempio di aumento di ω dovuto a conservazione di L?",
+            "domanda": "Quale tra questi è un esempio di aumento di $\\omega$ dovuto a conservazione di $L$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Esempi",
             "opzioni": [
@@ -747,7 +747,7 @@
                 "Salire una scala"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Chiudendo le braccia diminuisce I e quindi ω aumenta per mantenere L costante.",
+            "spiegazione": "Chiudendo le braccia diminuisce $I$ e quindi $\\omega$ aumenta per mantenere $L$ costante.",
             "difficolta": "facile",
             "paroleChiave": [
                 "piroetta",
@@ -758,17 +758,17 @@
         },
         {
             "id": "ang_037",
-            "domanda": "Se τ_ext = 0, quale tra queste frasi è corretta?",
+            "domanda": "Se $\\tau_{ext} = 0$, quale tra queste frasi è corretta?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Conservazione",
             "opzioni": [
-                "Il modulo di L può cambiare ma la direzione no",
-                "La direzione di L può cambiare ma il modulo no",
-                "Il vettore L resta costante (modulo e direzione)",
-                "L diventa sempre zero"
+                "Il modulo di $L$ può cambiare ma la direzione no",
+                "La direzione di $L$ può cambiare ma il modulo no",
+                "Il vettore $L$ resta costante (modulo e direzione)",
+                "$L$ diventa sempre zero"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Se dL/dt = 0 allora L è costante come vettore (modulo e direzione).",
+            "spiegazione": "Se $dL/dt = 0$ allora $L$ è costante come vettore (modulo e direzione).",
             "difficolta": "facile",
             "paroleChiave": [
                 "vettore",
@@ -783,13 +783,13 @@
             "categoria": "Momento Angolare",
             "sottocategoria": "Dissipazione",
             "opzioni": [
-                "Perché aumenta I",
+                "Perché aumenta $I$",
                 "Perché applica una coppia esterna opposta alla rotazione",
                 "Perché aumenta la massa",
                 "Perché annulla la gravità"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L'attrito esercita un momento torcente esterno che rende dL/dt ≠ 0.",
+            "spiegazione": "L'attrito esercita un momento torcente esterno che rende $dL/dt \\neq 0$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "attrito",
@@ -800,17 +800,17 @@
         },
         {
             "id": "ang_039",
-            "domanda": "Se un punto materiale ha p = 0, allora L rispetto a qualsiasi polo è:",
+            "domanda": "Se un punto materiale ha $p = 0$, allora $L$ rispetto a qualsiasi polo è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Casi particolari",
             "opzioni": [
                 "Massimo",
                 "Nullo",
-                "Dipende da r",
-                "Dipende da θ"
+                "Dipende da $r$",
+                "Dipende da $\\theta$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se p = 0 allora L = r × p = 0 indipendentemente da r.",
+            "spiegazione": "Se $p = 0$ allora $L = r \\times p = 0$ indipendentemente da $r$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "p=0",
@@ -821,17 +821,17 @@
         },
         {
             "id": "ang_040",
-            "domanda": "Quale relazione è corretta tra p e L per una particella?",
+            "domanda": "Quale relazione è corretta tra $p$ e $L$ per una particella?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Definizioni",
             "opzioni": [
-                "L è sempre parallelo a p",
-                "L è sempre perpendicolare a p",
-                "L è perpendicolare al piano di r e p",
-                "L è uguale a p"
+                "$L$ è sempre parallelo a $p$",
+                "$L$ è sempre perpendicolare a $p$",
+                "$L$ è perpendicolare al piano di $r$ e $p$",
+                "$L$ è uguale a $p$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Poiché L = r × p, L è perpendicolare al piano individuato da r e p.",
+            "spiegazione": "Poiché $L = r \\times p$, $L$ è perpendicolare al piano individuato da $r$ e $p$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "p",
@@ -842,17 +842,17 @@
         },
         {
             "id": "ang_041",
-            "domanda": "Una particella di massa 2 kg si muove con v = 3 m/s su una circonferenza di r = 0,5 m (v ⟂ r). Quanto vale |L|?",
+            "domanda": "Una particella di massa 2 kg si muove con $v = 3$ m/s su una circonferenza di $r = 0{,}5$ m ($v \\perp r$). Quanto vale $|L|$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Calcolo del modulo",
             "opzioni": [
-                "1,5 kg·m^2/s",
-                "3 kg·m^2/s",
-                "6 kg·m^2/s",
-                "12 kg·m^2/s"
+                "$1{,}5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$3 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$6 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$12 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "|L| = m r v = 2·0,5·3 = 3 kg·m^2/s.",
+            "spiegazione": "$$|L| = mrv = 2 \\cdot 0{,}5 \\cdot 3 = 3 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "calcolo",
@@ -863,17 +863,17 @@
         },
         {
             "id": "ang_042",
-            "domanda": "Una coppia costante τ = 4 N·m agisce per 0,5 s su un sistema. Qual è ΔL?",
+            "domanda": "Una coppia costante $\\tau = 4 \\text{ N}\\cdot\\text{m}$ agisce per $0{,}5$ s su un sistema. Qual è $\\Delta L$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Impulso angolare",
             "opzioni": [
-                "0,5 kg·m^2/s",
-                "2 kg·m^2/s",
-                "4 kg·m^2/s",
-                "8 kg·m^2/s"
+                "$0{,}5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$2 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$4 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$8 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "ΔL = τΔt = 4·0,5 = 2 kg·m^2/s.",
+            "spiegazione": "$$\\Delta L = \\tau \\Delta t = 4 \\cdot 0{,}5 = 2 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "impulso angolare",
@@ -884,17 +884,17 @@
         },
         {
             "id": "ang_043",
-            "domanda": "Un pattinatore riduce il suo momento d'inerzia da 3 a 1 kg·m^2. Se ω iniziale è 2 rad/s e non ci sono coppie esterne, ω finale è:",
+            "domanda": "Un pattinatore riduce il suo momento d'inerzia da $3$ a $1$ $\\text{kg}\\cdot\\text{m}^2$. Se $\\omega$ iniziale è $2$ rad/s e non ci sono coppie esterne, $\\omega$ finale è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Conservazione nei corpi rigidi",
             "opzioni": [
-                "0,67 rad/s",
-                "2 rad/s",
-                "4 rad/s",
-                "6 rad/s"
+                "$0{,}67$ rad/s",
+                "$2$ rad/s",
+                "$4$ rad/s",
+                "$6$ rad/s"
             ],
             "rispostaCorretta": 3,
-            "spiegazione": "L = Iω costante: ω_f = (I_i/I_f) ω_i = (3/1)·2 = 6 rad/s.",
+            "spiegazione": "$$L = I\\omega\\ \\text{ costante: }\\ \\omega_f = (I_i/I_f)\\omega_i = (3/1) \\cdot 2 = 6\\ \\text{rad/s}$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "Iω",
@@ -905,17 +905,17 @@
         },
         {
             "id": "ang_044",
-            "domanda": "Una particella ha r = 0,4 m e p = 5 kg·m/s con angolo tra r e p di 30°. Quanto vale |L|?",
+            "domanda": "Una particella ha $r = 0{,}4$ m e $p = 5 \\text{ kg}\\cdot\\text{m/s}$ con angolo tra $r$ e $p$ di $30^{\\circ}$. Quanto vale $|L|$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Modulo con sinθ",
             "opzioni": [
-                "0,5 kg·m^2/s",
-                "1,0 kg·m^2/s",
-                "2,0 kg·m^2/s",
-                "4,0 kg·m^2/s"
+                "$0{,}5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$1{,}0 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$2{,}0 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$4{,}0 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "|L| = r p sinθ = 0,4·5·sin30° = 2·0,5 = 1,0 kg·m^2/s.",
+            "spiegazione": "$$|L| = rp\\sin\\theta = 0{,}4 \\cdot 5 \\cdot \\sin 30^{\\circ} = 2 \\cdot 0{,}5 = 1{,}0 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "sin",
@@ -926,17 +926,17 @@
         },
         {
             "id": "ang_045",
-            "domanda": "Se la coppia esterna è costante e diretta lungo +z, cosa succede a L nel tempo?",
+            "domanda": "Se la coppia esterna è costante e diretta lungo $+z$, cosa succede a $L$ nel tempo?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Evoluzione vettoriale",
             "opzioni": [
-                "L resta costante",
-                "La componente Lz aumenta linearmente",
-                "La componente Lz diminuisce necessariamente",
-                "L cambia solo direzione, non modulo"
+                "$L$ resta costante",
+                "La componente $L_z$ aumenta linearmente",
+                "La componente $L_z$ diminuisce necessariamente",
+                "$L$ cambia solo direzione, non modulo"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Da τ = dL/dt, una τ costante lungo z produce variazione lineare di Lz nel tempo.",
+            "spiegazione": "Da $\\tau = dL/dt$, una $\\tau$ costante lungo $z$ produce variazione lineare di $L_z$ nel tempo.",
             "difficolta": "media",
             "paroleChiave": [
                 "componenti",
@@ -968,17 +968,17 @@
         },
         {
             "id": "ang_047",
-            "domanda": "Un disco ruota con I = 0,2 kg·m^2 e ω = 10 rad/s. Qual è L (modulo) lungo l'asse?",
+            "domanda": "Un disco ruota con $I = 0{,}2 \\text{ kg}\\cdot\\text{m}^2$ e $\\omega = 10$ rad/s. Qual è $L$ (modulo) lungo l'asse?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Corpi rigidi",
             "opzioni": [
-                "0,02 kg·m^2/s",
-                "0,2 kg·m^2/s",
-                "2 kg·m^2/s",
-                "20 kg·m^2/s"
+                "$0{,}02 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$0{,}2 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$2 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$20 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Per rotazione attorno ad asse fisso, |L| = Iω = 0,2·10 = 2 kg·m^2/s.",
+            "spiegazione": "$$\\text{Per rotazione attorno ad asse fisso, }|L| = I\\omega = 0{,}2 \\cdot 10 = 2 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "disco",
@@ -989,17 +989,17 @@
         },
         {
             "id": "ang_048",
-            "domanda": "Una forza F = 10 N applicata tangenzialmente a una leva di braccio 0,3 m produce un momento torcente di modulo:",
+            "domanda": "Una forza $F = 10$ N applicata tangenzialmente a una leva di braccio $0{,}3$ m produce un momento torcente di modulo:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Momento di una forza",
             "opzioni": [
-                "0,3 N·m",
-                "3 N·m",
-                "10 N·m",
-                "30 N·m"
+                "$0{,}3 \\text{ N}\\cdot\\text{m}$",
+                "$3 \\text{ N}\\cdot\\text{m}$",
+                "$10 \\text{ N}\\cdot\\text{m}$",
+                "$30 \\text{ N}\\cdot\\text{m}$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se F è perpendicolare a r, |τ| = rF = 0,3·10 = 3 N·m.",
+            "spiegazione": "$$\\text{Se }F\\text{ è perpendicolare a }r,\\ |\\tau| = rF = 0{,}3 \\cdot 10 = 3 \\text{ N}\\cdot\\text{m}$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "leva",
@@ -1010,7 +1010,7 @@
         },
         {
             "id": "ang_049",
-            "domanda": "Se una particella passa da r = 2 m a r = 1 m sotto forza centrale, cosa accade alla velocità tangenziale v_t?",
+            "domanda": "Se una particella passa da $r = 2$ m a $r = 1$ m sotto forza centrale, cosa accade alla velocità tangenziale $v_t$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Forze centrali e orbite",
             "opzioni": [
@@ -1020,7 +1020,7 @@
                 "Diventa zero"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con forza centrale L = m r v_t si conserva: dimezzando r, v_t raddoppia.",
+            "spiegazione": "$$\\text{Con forza centrale }L = mrv_t\\text{ si conserva: dimezzando }r,\\ v_t\\text{ raddoppia.}$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "forza centrale",
@@ -1041,7 +1041,7 @@
                 "Diventa zero"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se L si conserva e I diminuisce, ω aumenta e l'energia K = 1/2 Iω^2 aumenta (lavoro compiuto dalle masse).",
+            "spiegazione": "Se $L$ si conserva e $I$ diminuisce, $\\omega$ aumenta e l'energia $$K = \\frac{1}{2}I\\omega^2$$ aumenta (lavoro compiuto dalle masse).",
             "difficolta": "media",
             "paroleChiave": [
                 "energia",
@@ -1052,17 +1052,17 @@
         },
         {
             "id": "ang_051",
-            "domanda": "In un moto piano, se L rispetto a O è costante e non nullo, quale quantità è costante (per il punto materiale)?",
+            "domanda": "In un moto piano, se $L$ rispetto a $O$ è costante e non nullo, quale quantità è costante (per il punto materiale)?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Aree e forze centrali",
             "opzioni": [
-                "La distanza r",
-                "La velocità totale v",
+                "La distanza $r$",
+                "La velocità totale $v$",
                 "La velocità areolare",
                 "L'energia potenziale"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Per forza centrale, L costante implica velocità areolare costante (legge delle aree).",
+            "spiegazione": "Per forza centrale, $L$ costante implica velocità areolare costante (legge delle aree).",
             "difficolta": "media",
             "paroleChiave": [
                 "areolare",
@@ -1073,17 +1073,17 @@
         },
         {
             "id": "ang_052",
-            "domanda": "Una particella ha m = 1 kg, r = 0,2 m e v = 4 m/s perpendicolare a r. Qual è |L|?",
+            "domanda": "Una particella ha $m = 1$ kg, $r = 0{,}2$ m e $v = 4$ m/s perpendicolare a $r$. Qual è $|L|$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Calcolo del modulo",
             "opzioni": [
-                "0,2 kg·m^2/s",
-                "0,8 kg·m^2/s",
-                "4 kg·m^2/s",
-                "20 kg·m^2/s"
+                "$0{,}2 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$0{,}8 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$4 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$20 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "|L| = m r v = 1·0,2·4 = 0,8 kg·m^2/s.",
+            "spiegazione": "$$|L| = mrv = 1 \\cdot 0{,}2 \\cdot 4 = 0{,}8 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "mrv",
@@ -1094,17 +1094,17 @@
         },
         {
             "id": "ang_053",
-            "domanda": "Un corpo rigido passa da ω = 5 rad/s a ω = 2 rad/s mantenendo L costante. Come cambia I?",
+            "domanda": "Un corpo rigido passa da $\\omega = 5$ rad/s a $\\omega = 2$ rad/s mantenendo $L$ costante. Come cambia $I$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Corpi rigidi",
             "opzioni": [
-                "I diminuisce",
-                "I aumenta",
-                "I resta uguale",
-                "I diventa nullo"
+                "$I$ diminuisce",
+                "$I$ aumenta",
+                "$I$ resta uguale",
+                "$I$ diventa nullo"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con L = Iω costante, se ω diminuisce allora I deve aumentare.",
+            "spiegazione": "Con $L = I\\omega$ costante, se $\\omega$ diminuisce allora $I$ deve aumentare.",
             "difficolta": "media",
             "paroleChiave": [
                 "Iω",
@@ -1115,17 +1115,17 @@
         },
         {
             "id": "ang_054",
-            "domanda": "Una coppia τ = 0 agisce su una trottola. Quale tra queste evoluzioni è corretta?",
+            "domanda": "Una coppia $\\tau = 0$ agisce su una trottola. Quale tra queste evoluzioni è corretta?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Dinamica rotazionale",
             "opzioni": [
-                "L cambia direzione casualmente",
-                "L resta costante",
-                "L aumenta sempre",
-                "L diminuisce sempre"
+                "$L$ cambia direzione casualmente",
+                "$L$ resta costante",
+                "$L$ aumenta sempre",
+                "$L$ diminuisce sempre"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se τ = 0 allora dL/dt = 0, quindi L resta costante nel tempo.",
+            "spiegazione": "Se $\\tau = 0$ allora $dL/dt = 0$, quindi $L$ resta costante nel tempo.",
             "difficolta": "media",
             "paroleChiave": [
                 "tau zero",
@@ -1146,7 +1146,7 @@
                 "Momento d'inerzia"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Se il momento esterno rispetto all'asse è nullo, si conserva L rispetto a quell'asse.",
+            "spiegazione": "Se il momento esterno rispetto all'asse è nullo, si conserva $L$ rispetto a quell'asse.",
             "difficolta": "media",
             "paroleChiave": [
                 "urto",
@@ -1157,17 +1157,17 @@
         },
         {
             "id": "ang_056",
-            "domanda": "Un punto materiale ha p = 6 kg·m/s e distanza perpendicolare dall'origine (braccio) b = 0,25 m. Quanto vale |L| rispetto all'origine?",
+            "domanda": "Un punto materiale ha $p = 6 \\text{ kg}\\cdot\\text{m/s}$ e distanza perpendicolare dall'origine (braccio) $b = 0{,}25$ m. Quanto vale $|L|$ rispetto all'origine?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Braccio perpendicolare",
             "opzioni": [
-                "0,5 kg·m^2/s",
-                "1,0 kg·m^2/s",
-                "1,5 kg·m^2/s",
-                "2,0 kg·m^2/s"
+                "$0{,}5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$1{,}0 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$1{,}5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$2{,}0 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Usando |L| = b·p (distanza perpendicolare), |L| = 0,25·6 = 1,5 kg·m^2/s.",
+            "spiegazione": "$$\\text{Usando }|L| = b \\cdot p\\ (\\text{distanza perpendicolare}),\\ |L| = 0{,}25 \\cdot 6 = 1{,}5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "braccio",
@@ -1178,17 +1178,17 @@
         },
         {
             "id": "ang_057",
-            "domanda": "Quale azione aumenta la coppia prodotta da una forza F applicata a una chiave inglese?",
+            "domanda": "Quale azione aumenta la coppia prodotta da una forza $F$ applicata a una chiave inglese?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Momento di una forza",
             "opzioni": [
-                "Applicare F più vicino al fulcro",
-                "Applicare F più lontano dal fulcro",
-                "Allineare F lungo la chiave (parallela a r)",
-                "Ridurre il braccio r e aumentare la massa"
+                "Applicare $F$ più vicino al fulcro",
+                "Applicare $F$ più lontano dal fulcro",
+                "Allineare $F$ lungo la chiave (parallela a $r$)",
+                "Ridurre il braccio $r$ e aumentare la massa"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con F perpendicolare, |τ| = rF: aumentando r aumenta la coppia.",
+            "spiegazione": "Con $F$ perpendicolare, $|\\tau| = rF$: aumentando $r$ aumenta la coppia.",
             "difficolta": "media",
             "paroleChiave": [
                 "chiave",
@@ -1199,7 +1199,7 @@
         },
         {
             "id": "ang_058",
-            "domanda": "Un oggetto ruota con L costante. Se I triplica, ω diventa:",
+            "domanda": "Un oggetto ruota con $L$ costante. Se $I$ triplica, $\\omega$ diventa:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Corpi rigidi",
             "opzioni": [
@@ -1209,7 +1209,7 @@
                 "Nullo"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con L = Iω costante, se I triplica allora ω si riduce a 1/3.",
+            "spiegazione": "Con $L = I\\omega$ costante, se $I$ triplica allora $\\omega$ si riduce a $1/3$.",
             "difficolta": "media",
             "paroleChiave": [
                 "I triplica",
@@ -1230,7 +1230,7 @@
                 "L'energia potenziale è costante"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con forza centrale τ = r×F = 0, quindi L rispetto al centro si conserva.",
+            "spiegazione": "Con forza centrale $\\tau = r \\times F = 0$, quindi $L$ rispetto al centro si conserva.",
             "difficolta": "media",
             "paroleChiave": [
                 "forza centrale",
@@ -1241,7 +1241,7 @@
         },
         {
             "id": "ang_060",
-            "domanda": "Se una particella ha |L| costante ma r aumenta, cosa succede alla componente tangenziale della velocità?",
+            "domanda": "Se una particella ha $|L|$ costante ma $r$ aumenta, cosa succede alla componente tangenziale della velocità?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Orbita",
             "opzioni": [
@@ -1251,7 +1251,7 @@
                 "Diventa infinita"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Per L = m r v_t costante, aumentando r diminuisce v_t.",
+            "spiegazione": "Per $L = mrv_t$ costante, aumentando $r$ diminuisce $v_t$.",
             "difficolta": "media",
             "paroleChiave": [
                 "tangenziale",
@@ -1262,17 +1262,17 @@
         },
         {
             "id": "ang_061",
-            "domanda": "Una ruota ha L = 5 kg·m^2/s. Se una coppia opposta τ = 1 N·m agisce per 2 s, il nuovo L (modulo) è:",
+            "domanda": "Una ruota ha $L = 5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$. Se una coppia opposta $\\tau = 1 \\text{ N}\\cdot\\text{m}$ agisce per $2$ s, il nuovo $L$ (modulo) è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Impulso angolare",
             "opzioni": [
-                "1 kg·m^2/s",
-                "3 kg·m^2/s",
-                "5 kg·m^2/s",
-                "7 kg·m^2/s"
+                "$1 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$3 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$7 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "ΔL = τΔt = 1·2 = 2 (opposto), quindi L_f = 5 − 2 = 3 kg·m^2/s.",
+            "spiegazione": "$$\\Delta L = \\tau \\Delta t = 1 \\cdot 2 = 2\\ (\\text{opposto}),\\ \\text{quindi }L_f = 5 - 2 = 3 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "opposta",
@@ -1304,17 +1304,17 @@
         },
         {
             "id": "ang_063",
-            "domanda": "Una forza applicata in un punto produce momento torcente nullo rispetto a O se:",
+            "domanda": "Una forza applicata in un punto produce momento torcente nullo rispetto a $O$ se:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Momento di una forza",
             "opzioni": [
-                "F è massima",
-                "La linea d'azione di F passa per O",
-                "F è verticale",
+                "$F$ è massima",
+                "La linea d'azione di $F$ passa per $O$",
+                "$F$ è verticale",
                 "Il corpo è fermo"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se la linea d'azione passa per O, il braccio è nullo e quindi τ = 0.",
+            "spiegazione": "Se la linea d'azione passa per $O$, il braccio è nullo e quindi $\\tau = 0$.",
             "difficolta": "media",
             "paroleChiave": [
                 "linea d'azione",
@@ -1325,17 +1325,17 @@
         },
         {
             "id": "ang_064",
-            "domanda": "Un disco con I = 0,5 kg·m^2 subisce una coppia τ = 2 N·m. Qual è l'accelerazione angolare α?",
+            "domanda": "Un disco con $I = 0{,}5 \\text{ kg}\\cdot\\text{m}^2$ subisce una coppia $\\tau = 2 \\text{ N}\\cdot\\text{m}$. Qual è l'accelerazione angolare $\\alpha$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Dinamica rotazionale",
             "opzioni": [
-                "0,25 rad/s^2",
-                "1 rad/s^2",
-                "4 rad/s^2",
-                "10 rad/s^2"
+                "$0{,}25 \\text{ rad/s}^2$",
+                "$1 \\text{ rad/s}^2$",
+                "$4 \\text{ rad/s}^2$",
+                "$10 \\text{ rad/s}^2$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Per asse fisso, τ = Iα quindi α = τ/I = 2/0,5 = 4 rad/s^2.",
+            "spiegazione": "$$\\text{Per asse fisso, }\\tau = I\\alpha\\ \\text{quindi }\\alpha = \\tau/I = 2/0{,}5 = 4 \\text{ rad/s}^2$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "tau=Ialpha",
@@ -1346,17 +1346,17 @@
         },
         {
             "id": "ang_065",
-            "domanda": "Una particella ha |L| = 2 kg·m^2/s e m = 1 kg. Se r = 0,5 m e v ⟂ r, v vale:",
+            "domanda": "Una particella ha $|L| = 2 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$ e $m = 1$ kg. Se $r = 0{,}5$ m e $v \\perp r$, $v$ vale:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Ricavare la velocità",
             "opzioni": [
-                "1 m/s",
-                "2 m/s",
-                "4 m/s",
-                "8 m/s"
+                "$1$ m/s",
+                "$2$ m/s",
+                "$4$ m/s",
+                "$8$ m/s"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "|L| = m r v ⇒ v = L/(m r) = 2/(1·0,5) = 4 m/s.",
+            "spiegazione": "$$|L| = mrv \\Rightarrow v = L/(mr) = 2/(1 \\cdot 0{,}5) = 4\\ \\text{m/s}$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "ricavare v",
@@ -1367,17 +1367,17 @@
         },
         {
             "id": "ang_066",
-            "domanda": "Se la coppia esterna è sempre perpendicolare a L, quale effetto è più probabile?",
+            "domanda": "Se la coppia esterna è sempre perpendicolare a $L$, quale effetto è più probabile?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Variazione vettoriale",
             "opzioni": [
-                "Cambia solo il modulo di L",
-                "Cambia soprattutto la direzione di L",
-                "L resta invariato",
-                "L diventa nullo"
+                "Cambia solo il modulo di $L$",
+                "Cambia soprattutto la direzione di $L$",
+                "$L$ resta invariato",
+                "$L$ diventa nullo"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Una variazione perpendicolare a L tende a ruotare il vettore L cambiandone la direzione (tipico delle precessioni).",
+            "spiegazione": "Una variazione perpendicolare a $L$ tende a ruotare il vettore $L$ cambiandone la direzione (tipico delle precessioni).",
             "difficolta": "media",
             "paroleChiave": [
                 "direzione",
@@ -1388,17 +1388,17 @@
         },
         {
             "id": "ang_067",
-            "domanda": "Un sistema è soggetto a forze esterne, ma il momento totale esterno rispetto a O è nullo. Quale affermazione è corretta?",
+            "domanda": "Un sistema è soggetto a forze esterne, ma il momento totale esterno rispetto a $O$ è nullo. Quale affermazione è corretta?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Conservazione",
             "opzioni": [
                 "Il sistema è necessariamente privo di forze esterne",
-                "Il momento angolare rispetto a O si conserva",
+                "Il momento angolare rispetto a $O$ si conserva",
                 "La quantità di moto totale si conserva sempre",
                 "L'energia meccanica si conserva sempre"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "La condizione per la conservazione di L è τ_ext = 0, non l'assenza di forze esterne.",
+            "spiegazione": "La condizione per la conservazione di $L$ è $\\tau_{ext} = 0$, non l'assenza di forze esterne.",
             "difficolta": "media",
             "paroleChiave": [
                 "tau_ext",
@@ -1409,80 +1409,80 @@
         },
         {
             "id": "ang_068",
-            "domanda": "Una massa ruota in cerchio. Se la velocità raddoppia (r e m costanti, v ⟂ r), |L|:",
+            "domanda": "Una massa $m$ in moto circolare ha $L$ rispetto al centro. Se scegli un polo diverso dal centro, $L$ può:",
             "categoria": "Momento Angolare",
-            "sottocategoria": "Dipendenze",
+            "sottocategoria": "Dipendenza dal polo",
             "opzioni": [
-                "Si dimezza",
-                "Resta uguale",
-                "Raddoppia",
-                "Quadruplica"
+                "Restare identico in ogni caso",
+                "Cambiare valore perché cambia $r$",
+                "Diventare indipendente da $p$",
+                "Diventare sempre nullo"
             ],
-            "rispostaCorretta": 2,
-            "spiegazione": "Con |L| = m r v, raddoppiando v raddoppia |L|.",
+            "rispostaCorretta": 1,
+            "spiegazione": "Cambiando polo cambia il vettore $r$, quindi cambia $L = r \\times p$.",
             "difficolta": "media",
             "paroleChiave": [
+                "polo",
+                "origine",
                 "dipendenza",
-                "velocità",
-                "mrv",
-                "proporzionale"
+                "r×p"
             ]
         },
         {
             "id": "ang_069",
-            "domanda": "Se una coppia agisce per un tempo molto breve e intenso, la descrizione più utile è tramite:",
+            "domanda": "Una ruota con $I$ costante subisce $\\tau(t)$ variabile. Quale procedura fornisce $\\Delta L$ tra $t_1$ e $t_2$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Impulso angolare",
             "opzioni": [
-                "Impulso angolare",
-                "Temperatura",
-                "Pressione",
-                "Densità"
+                "$\\Delta L = \\int_{t_1}^{t_2} \\tau(t) \\, dt$",
+                "$\\Delta L = \\tau(t_2) - \\tau(t_1)$",
+                "$\\Delta L = I/\\omega$",
+                "$\\Delta L = r \\cdot F$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "In eventi brevi si usa l'impulso angolare J = ∫τ dt, che dà ΔL.",
+            "spiegazione": "$$\\text{Integrando }\\tau = dL/dt\\text{ si ottiene }\\Delta L = \\int_{t_1}^{t_2} \\tau(t) \\, dt$$.",
             "difficolta": "media",
             "paroleChiave": [
-                "breve",
-                "impulso",
                 "integrale",
+                "tau(t)",
+                "impulso",
                 "delta L"
             ]
         },
         {
             "id": "ang_070",
-            "domanda": "Una particella ha L costante rispetto a O. Quale delle seguenti è certamente falsa?",
+            "domanda": "Per una particella, qual è la relazione tra momento torcente e variazione di direzione di $p$?",
             "categoria": "Momento Angolare",
-            "sottocategoria": "Conseguenze",
+            "sottocategoria": "Collegamenti",
             "opzioni": [
-                "τ_ext rispetto a O è nullo",
-                "dL/dt = 0",
-                "L può cambiare nel tempo",
-                "L è costante come vettore"
+                "Non esiste relazione",
+                "Se la forza cambia $p$, allora può cambiare anche $L$ tramite $\\tau = r \\times F$",
+                "$\\tau$ dipende solo da $m$",
+                "$L$ dipende solo da $v$"
             ],
-            "rispostaCorretta": 2,
-            "spiegazione": "Se L è costante, non può cambiare nel tempo: dL/dt = 0 e τ_ext = 0.",
+            "rispostaCorretta": 1,
+            "spiegazione": "La forza determina $dp/dt$ e produce anche $\\tau = r \\times F$, che determina $dL/dt$.",
             "difficolta": "media",
             "paroleChiave": [
-                "coerenza",
+                "forza",
+                "r×F",
                 "dL/dt",
-                "tau_ext",
-                "costante"
+                "connessione"
             ]
         },
         {
             "id": "ang_071",
-            "domanda": "Un corpo rigido ha L = 10 kg·m^2/s e I = 2 kg·m^2. Qual è ω?",
+            "domanda": "Un corpo rigido ha $L = 10 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$ e $I = 2 \\text{ kg}\\cdot\\text{m}^2$. Qual è $\\omega$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Corpi rigidi",
             "opzioni": [
-                "2 rad/s",
-                "5 rad/s",
-                "10 rad/s",
-                "20 rad/s"
+                "$2$ rad/s",
+                "$5$ rad/s",
+                "$10$ rad/s",
+                "$20$ rad/s"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "ω = L/I = 10/2 = 5 rad/s.",
+            "spiegazione": "$$\\omega = L/I = 10/2 = 5\\ \\text{rad/s}$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "omega",
@@ -1493,7 +1493,7 @@
         },
         {
             "id": "ang_072",
-            "domanda": "In assenza di coppie esterne, una ruota con ω iniziale può fermarsi da sola?",
+            "domanda": "In assenza di coppie esterne, una ruota con $\\omega$ iniziale può fermarsi da sola?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Conservazione",
             "opzioni": [
@@ -1503,7 +1503,7 @@
                 "Dipende solo dal raggio"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Senza coppie esterne dissipative, L si conserva e la rotazione non si annulla spontaneamente.",
+            "spiegazione": "Senza coppie esterne dissipative, $L$ si conserva e la rotazione non si annulla spontaneamente.",
             "difficolta": "media",
             "paroleChiave": [
                 "ideale",
@@ -1514,17 +1514,17 @@
         },
         {
             "id": "ang_073",
-            "domanda": "Una particella ha p fissata in modulo ma cambia direzione. Quale condizione garantisce che |L| resti costante?",
+            "domanda": "Una particella ha $p$ fissata in modulo ma cambia direzione. Quale condizione garantisce che $|L|$ resti costante?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Condizioni",
             "opzioni": [
-                "r costante e angolo tra r e p costante",
-                "m costante e T costante",
+                "$r$ costante e angolo tra $r$ e $p$ costante",
+                "$m$ costante e $T$ costante",
                 "Energia potenziale costante",
                 "Attrito costante"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "|L| = r p sinθ: se r, p e θ restano costanti, anche |L| resta costante.",
+            "spiegazione": "$$|L| = rp\\sin\\theta:\\\\text{se }r,\\ p\\text{ e }\\theta\\text{ restano costanti, anche }|L|\\text{ resta costante.}$$",
             "difficolta": "media",
             "paroleChiave": [
                 "modulo",
@@ -1535,17 +1535,17 @@
         },
         {
             "id": "ang_074",
-            "domanda": "In quale caso l'energia cinetica di rotazione può aumentare pur conservando L?",
+            "domanda": "In quale caso l'energia cinetica di rotazione può aumentare pur conservando $L$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Energia",
             "opzioni": [
-                "Quando I diminuisce per cambiamento interno del sistema",
-                "Quando τ_ext ≠ 0",
+                "Quando $I$ diminuisce per cambiamento interno del sistema",
+                "Quando $\\tau_{ext} \\neq 0$",
                 "Quando la massa totale diminuisce",
                 "Quando la gravità è nulla"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Con L costante, K = L^2/(2I): se I diminuisce, K aumenta.",
+            "spiegazione": "Con $L$ costante, $K = L^2/(2I)$: se $I$ diminuisce, $K$ aumenta.",
             "difficolta": "media",
             "paroleChiave": [
                 "K",
@@ -1556,7 +1556,7 @@
         },
         {
             "id": "ang_075",
-            "domanda": "Se la coppia esterna ha verso opposto a L e modulo costante, il modulo di L:",
+            "domanda": "Se la coppia esterna ha verso opposto a $L$ e modulo costante, il modulo di $L$::",
             "categoria": "Momento Angolare",
             "sottocategoria": "Evoluzione nel tempo",
             "opzioni": [
@@ -1566,7 +1566,7 @@
                 "Oscilla sempre"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con τ antiparallela a L e costante, d|L|/dt = −|τ|: diminuzione lineare.",
+            "spiegazione": "Con $\\tau$ antiparallela a $L$ e costante, $d|L|/dt = -|\\tau|$: diminuzione lineare.",
             "difficolta": "media",
             "paroleChiave": [
                 "antiparallela",
@@ -1577,17 +1577,17 @@
         },
         {
             "id": "ang_076",
-            "domanda": "Una massa m in moto circolare ha L rispetto al centro. Se scegli un polo diverso dal centro, L può:",
+            "domanda": "Una massa $m$ in moto circolare ha $L$ rispetto al centro. Se scegli un polo diverso dal centro, $L$ può:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Dipendenza dal polo",
             "opzioni": [
                 "Restare identico in ogni caso",
-                "Cambiare valore perché cambia r",
-                "Diventare indipendente da p",
+                "Cambiare valore perché cambia $r$",
+                "Diventare indipendente da $p$",
                 "Diventare sempre nullo"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Cambiando polo cambia il vettore r, quindi cambia L = r × p.",
+            "spiegazione": "Cambiando polo cambia il vettore $r$, quindi cambia $L = r \\times p$.",
             "difficolta": "media",
             "paroleChiave": [
                 "polo",
@@ -1598,17 +1598,17 @@
         },
         {
             "id": "ang_077",
-            "domanda": "Una ruota con I costante subisce τ(t) variabile. Quale procedura fornisce ΔL tra t1 e t2?",
+            "domanda": "Una ruota con $I$ costante subisce $\\tau(t)$ variabile. Quale procedura fornisce $\\Delta L$ tra $t_1$ e $t_2$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Impulso angolare",
             "opzioni": [
-                "ΔL = ∫(t1→t2) τ(t) dt",
-                "ΔL = τ(t2) − τ(t1)",
-                "ΔL = I/ω",
-                "ΔL = r·F"
+                "$\\Delta L = \\int_{t_1}^{t_2} \\tau(t) \\, dt$",
+                "$\\Delta L = \\tau(t_2) - \\tau(t_1)$",
+                "$\\Delta L = I/\\omega$",
+                "$\\Delta L = r \\cdot F$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Integrando τ = dL/dt si ottiene ΔL = ∫ τ(t) dt.",
+            "spiegazione": "$$\\text{Integrando }\\tau = dL/dt\\text{ si ottiene }\\Delta L = \\int_{t_1}^{t_2} \\tau(t) \\, dt$$.",
             "difficolta": "media",
             "paroleChiave": [
                 "integrale",
@@ -1619,17 +1619,17 @@
         },
         {
             "id": "ang_078",
-            "domanda": "Per una particella, qual è la relazione tra momento torcente e variazione di direzione di p?",
+            "domanda": "Per una particella, qual è la relazione tra momento torcente e variazione di direzione di $p$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Collegamenti",
             "opzioni": [
                 "Non esiste relazione",
-                "Se la forza cambia p, allora può cambiare anche L tramite τ = r × F",
-                "τ dipende solo da m",
-                "L dipende solo da v"
+                "Se la forza cambia $p$, allora può cambiare anche $L$ tramite $\\tau = r \\times F$",
+                "$\\tau$ dipende solo da $m$",
+                "$L$ dipende solo da $v$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "La forza determina dp/dt e produce anche τ = r×F, che determina dL/dt.",
+            "spiegazione": "La forza determina $dp/dt$ e produce anche $\\tau = r \\times F$, che determina $dL/dt$.",
             "difficolta": "media",
             "paroleChiave": [
                 "forza",
@@ -1640,7 +1640,7 @@
         },
         {
             "id": "ang_079",
-            "domanda": "Un corpo ruota: I aumenta gradualmente senza coppie esterne. Che succede alla frequenza di rotazione?",
+            "domanda": "Un corpo ruota: $I$ aumenta gradualmente senza coppie esterne. Che succede alla frequenza di rotazione?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Conservazione",
             "opzioni": [
@@ -1650,7 +1650,7 @@
                 "Diventa infinita"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con L = Iω costante, se I aumenta allora ω diminuisce.",
+            "spiegazione": "Con $L = I\\omega$ costante, se $I$ aumenta allora $\\omega$ diminuisce.",
             "difficolta": "media",
             "paroleChiave": [
                 "frequenza",
@@ -1661,7 +1661,7 @@
         },
         {
             "id": "ang_080",
-            "domanda": "Un punto materiale descrive un'orbita attorno a O sotto forza centrale. Se passa vicino a O, la sua velocità tende a:",
+            "domanda": "Un punto materiale descrive un'orbita attorno a $O$ sotto forza centrale. Se passa vicino a $O$, la sua velocità tende a:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Orbita",
             "opzioni": [
@@ -1671,7 +1671,7 @@
                 "Diventare zero"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se L si conserva e r diminuisce, v_t deve aumentare per mantenere m r v_t costante.",
+            "spiegazione": "Se $L$ si conserva e $r$ diminuisce, $v_t$ deve aumentare per mantenere $mrv_t$ costante.",
             "difficolta": "media",
             "paroleChiave": [
                 "perielio",
@@ -1682,17 +1682,17 @@
         },
         {
             "id": "ang_081",
-            "domanda": "Dato r = (1,0) m e p = (0,2) kg·m/s nel piano xy, qual è Lz?",
+            "domanda": "Dato $r = (1, 0)$ m e $p = (0, 2)$ $\\text{kg}\\cdot\\text{m/s}$ nel piano $xy$, qual è $L_z$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Prodotto vettoriale in componenti",
             "opzioni": [
-                "0",
-                "2",
-                "-2",
-                "1"
+                "$0$",
+                "$2$",
+                "$-2$",
+                "$1$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Lz = x py − y px = 1·2 − 0·0 = 2 kg·m^2/s.",
+            "spiegazione": "$$L_z = xp_y - yp_x = 1 \\cdot 2 - 0 \\cdot 0 = 2 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "componenti",
@@ -1703,17 +1703,17 @@
         },
         {
             "id": "ang_082",
-            "domanda": "Dato r = (0,1) m e p = (2,0) kg·m/s nel piano xy, qual è Lz?",
+            "domanda": "Dato $r = (0, 1)$ m e $p = (2, 0)$ $\\text{kg}\\cdot\\text{m/s}$ nel piano $xy$, qual è $L_z$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Prodotto vettoriale in componenti",
             "opzioni": [
-                "2",
-                "0",
-                "-2",
-                "1"
+                "$2$",
+                "$0$",
+                "$-2$",
+                "$1$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Lz = x py − y px = 0·0 − 1·2 = −2 kg·m^2/s.",
+            "spiegazione": "$$L_z = xp_y - yp_x = 0 \\cdot 0 - 1 \\cdot 2 = -2 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "componenti",
@@ -1728,13 +1728,13 @@
             "categoria": "Momento Angolare",
             "sottocategoria": "Forze centrali",
             "opzioni": [
-                "Il vettore momento angolare L",
-                "La velocità v",
-                "Il raggio r",
+                "Il vettore momento angolare $L$",
+                "La velocità $v$",
+                "Il raggio $r$",
                 "L'energia cinetica"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Con forza centrale τ = 0 rispetto al centro, quindi L è costante come vettore.",
+            "spiegazione": "Con forza centrale $\\tau = 0$ rispetto al centro, quindi $L$ è costante come vettore.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "forza centrale",
@@ -1745,17 +1745,17 @@
         },
         {
             "id": "ang_084",
-            "domanda": "Un sistema di due particelle ha momento angolare totale L_tot rispetto a O. Se le forze interne rispettano il terzo principio di Newton, il loro contributo al momento torcente totale interno è (in un sistema isolato):",
+            "domanda": "Un sistema di due particelle ha momento angolare totale $L_{tot}$ rispetto a $O$. Se le forze interne rispettano il terzo principio di Newton, il loro contributo al momento torcente totale interno è (in un sistema isolato):",
             "categoria": "Momento Angolare",
             "sottocategoria": "Sistemi di particelle",
             "opzioni": [
-                "Sempre nullo rispetto a qualunque O",
-                "Può non essere nullo, ma non cambia L_tot se τ_ext=0",
+                "Sempre nullo rispetto a qualunque $O$",
+                "Può non essere nullo, ma non cambia $L_{tot}$ se $\\tau_{ext} = 0$",
                 "Sempre massimo",
-                "Uguale a m g r"
+                "Uguale a $mgr$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "In generale le forze interne possono dare torque interno, ma l'evoluzione di L_tot dipende dal momento esterno totale (se nullo, L_tot si conserva).",
+            "spiegazione": "In generale le forze interne possono dare torque interno, ma l'evoluzione di $L_{tot}$ dipende dal momento esterno totale (se nullo, $L_{tot}$ si conserva).",
             "difficolta": "difficile",
             "paroleChiave": [
                 "forze interne",
@@ -1766,17 +1766,17 @@
         },
         {
             "id": "ang_085",
-            "domanda": "Una coppia costante τ è applicata a un corpo con I costante. Quale legge descrive la crescita di L nel tempo?",
+            "domanda": "Una coppia costante $\\tau$ è applicata a un corpo con $I$ costante. Quale legge descrive la crescita di $L$ nel tempo?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Dinamica",
             "opzioni": [
-                "L cresce come t^2",
-                "L cresce linearmente con t",
-                "L cresce come 1/t",
-                "L resta costante"
+                "$L$ cresce come $t^2$",
+                "$L$ cresce linearmente con $t$",
+                "$L$ cresce come $1/t$",
+                "$L$ resta costante"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Da dL/dt = τ costante, si ottiene L(t) = L0 + τ t (crescita lineare).",
+            "spiegazione": "Da $dL/dt = \\tau$ costante, si ottiene $L(t) = L_0 + \\tau t$ (crescita lineare).",
             "difficolta": "difficile",
             "paroleChiave": [
                 "lineare",
@@ -1787,17 +1787,17 @@
         },
         {
             "id": "ang_086",
-            "domanda": "Un disco con L iniziale lungo +z subisce una coppia costante lungo +x, per un tempo breve. Come cambia L?",
+            "domanda": "Un disco con $L$ iniziale lungo $+z$ subisce una coppia costante lungo $+x$, per un tempo breve. Come cambia $L$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Variazione vettoriale",
             "opzioni": [
-                "Aumenta solo Lz",
-                "Aggiunge una componente Lx",
+                "Aumenta solo $L_z$",
+                "Aggiunge una componente $L_x$",
                 "Diventa necessariamente nullo",
-                "Rimane parallelo a z"
+                "Rimane parallelo a $z$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Poiché ΔL = ∫τ dt, una coppia lungo x aggiunge una componente di L lungo x.",
+            "spiegazione": "Poiché $\\Delta L = \\int \\tau \\, dt$, una coppia lungo $x$ aggiunge una componente di $L$ lungo $x$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "componenti",
@@ -1812,13 +1812,13 @@
             "categoria": "Momento Angolare",
             "sottocategoria": "Conservazione",
             "opzioni": [
-                "L si conserva, ma ω non necessariamente",
-                "ω si conserva sempre",
-                "I si conserva sempre",
-                "L diventa sempre parallelo a ω"
+                "$L$ si conserva, ma $\\omega$ non necessariamente",
+                "$\\omega$ si conserva sempre",
+                "$I$ si conserva sempre",
+                "$L$ diventa sempre parallelo a $\\omega$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Se τ_ext = 0, L totale si conserva; ω può cambiare se cambia il tensore/momento d'inerzia efficace.",
+            "spiegazione": "Se $\\tau_{ext} = 0$, $L$ totale si conserva; $\\omega$ può cambiare se cambia il tensore/momento d'inerzia efficace.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "distribuzione massa",
@@ -1829,17 +1829,17 @@
         },
         {
             "id": "ang_088",
-            "domanda": "Un punto materiale ha L non nullo rispetto a O. Se scegli un nuovo polo O' traslato, quale affermazione è corretta?",
+            "domanda": "Un punto materiale ha $L$ non nullo rispetto a $O$. Se scegli un nuovo polo $O'$ traslato, quale affermazione è corretta?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Cambio di polo",
             "opzioni": [
-                "L resta identico sempre",
-                "L può cambiare perché cambia il vettore posizione rispetto al polo",
-                "L diventa indipendente dalla velocità",
-                "L deve diventare nullo"
+                "$L$ resta identico sempre",
+                "$L$ può cambiare perché cambia il vettore posizione rispetto al polo",
+                "$L$ diventa indipendente dalla velocità",
+                "$L$ deve diventare nullo"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L dipende dal polo: L = r×p e r cambia passando da O a O'.",
+            "spiegazione": "$L$ dipende dal polo: $L = r \\times p$ e $r$ cambia passando da $O$ a $O'$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "cambio origine",
@@ -1850,7 +1850,7 @@
         },
         {
             "id": "ang_089",
-            "domanda": "Una massa m è legata a un filo e ruota su un tavolo senza attrito. Se il filo si accorcia lentamente (forza sempre radiale), quale quantità si conserva rispetto al foro?",
+            "domanda": "Una massa $m$ è legata a un filo e ruota su un tavolo senza attrito. Se il filo si accorcia lentamente (forza sempre radiale), quale quantità si conserva rispetto al foro?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Vincoli e forze centrali",
             "opzioni": [
@@ -1860,7 +1860,7 @@
                 "Raggio"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "La forza di vincolo è radiale, quindi τ = r×F = 0 e il momento angolare si conserva.",
+            "spiegazione": "La forza di vincolo è radiale, quindi $\\tau = r \\times F = 0$ e il momento angolare si conserva.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "filo",
@@ -1871,17 +1871,17 @@
         },
         {
             "id": "ang_090",
-            "domanda": "Una particella ha r = (2,3,0) m e p = (4,0,0) kg·m/s. Qual è Lz?",
+            "domanda": "Una particella ha $r = (2, 3, 0)$ m e $p = (4, 0, 0)$ $\\text{kg}\\cdot\\text{m/s}$. Qual è $L_z$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Componenti",
             "opzioni": [
-                "0",
-                "-12",
-                "12",
-                "8"
+                "$0$",
+                "$-12$",
+                "$12$",
+                "$8$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Lz = x py − y px = 2·0 − 3·4 = −12 kg·m^2/s.",
+            "spiegazione": "$$L_z = xp_y - yp_x = 2 \\cdot 0 - 3 \\cdot 4 = -12 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "Lz",
@@ -1892,17 +1892,17 @@
         },
         {
             "id": "ang_091",
-            "domanda": "Due masse puntiformi m a distanze r1 e r2 dall'asse ruotano con la stessa ω. Il momento angolare totale lungo l'asse vale:",
+            "domanda": "Due masse puntiformi $m$ a distanze $r_1$ e $r_2$ dall'asse ruotano con la stessa $\\omega$. Il momento angolare totale lungo l'asse vale:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Sistemi e momento d'inerzia",
             "opzioni": [
-                "L = m ω (r1 + r2)",
-                "L = m ω (r1^2 + r2^2)",
-                "L = m ω (r1 r2)",
-                "L = m ω (r1^3 + r2^3)"
+                "$L = m\\omega(r_1 + r_2)$",
+                "$L = m\\omega(r_1^2 + r_2^2)$",
+                "$L = m\\omega(r_1 r_2)$",
+                "$L = m\\omega(r_1^3 + r_2^3)$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Per punti materiali attorno a un asse, I = m r1^2 + m r2^2 e L = Iω = mω(r1^2 + r2^2).",
+            "spiegazione": "$$\\text{Per punti materiali attorno a un asse, }I = mr_1^2 + mr_2^2\\ \\text{e }L = I\\omega = m\\omega(r_1^2 + r_2^2)$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "I",
@@ -1913,17 +1913,17 @@
         },
         {
             "id": "ang_092",
-            "domanda": "Un sistema isolato ha L_tot = 0. È possibile che alcune parti del sistema ruotino?",
+            "domanda": "Un sistema isolato ha $L_{tot} = 0$. È possibile che alcune parti del sistema ruotino?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Sistemi di particelle",
             "opzioni": [
-                "No, L_tot=0 implica assenza di moti",
+                "No, $L_{tot} = 0$ implica assenza di moti",
                 "Sì, purché i momenti angolari delle parti si sommino a zero",
                 "Sì, ma solo se l'energia è zero",
-                "No, perché ω deve essere zero ovunque"
+                "No, perché $\\omega$ deve essere zero ovunque"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L_tot=0 può risultare dalla somma vettoriale di contributi opposti di parti diverse del sistema.",
+            "spiegazione": "$L_{tot} = 0$ può risultare dalla somma vettoriale di contributi opposti di parti diverse del sistema.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "L totale zero",
@@ -1934,17 +1934,17 @@
         },
         {
             "id": "ang_093",
-            "domanda": "Un urto avviene su un piano privo di attrito. Quale scelta di polo rende più semplice applicare la conservazione di L?",
+            "domanda": "Un urto avviene su un piano privo di attrito. Quale scelta di polo rende più semplice applicare la conservazione di $L$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Strategia problemi",
             "opzioni": [
                 "Un polo qualunque lontano",
                 "Il punto in cui agiscono forze esterne con braccio nullo",
-                "Il polo che massimizza r",
+                "Il polo che massimizza $r$",
                 "Il baricentro solo perché sempre"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Scegliere un polo per cui le forze esterne abbiano momento nullo (braccio nullo) elimina τ_ext e consente usare L conservato.",
+            "spiegazione": "Scegliere un polo per cui le forze esterne abbiano momento nullo (braccio nullo) elimina $\\tau_{ext}$ e consente usare $L$ conservato.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "scelta polo",
@@ -1959,13 +1959,13 @@
             "categoria": "Momento Angolare",
             "sottocategoria": "Precessione (concettuale)",
             "opzioni": [
-                "Perché la gravità annulla L",
-                "Perché la coppia gravitazionale è perpendicolare a L e ne cambia la direzione",
+                "Perché la gravità annulla $L$",
+                "Perché la coppia gravitazionale è perpendicolare a $L$ e ne cambia la direzione",
                 "Perché l'energia potenziale è costante",
-                "Perché I diventa infinito"
+                "Perché $I$ diventa infinito"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Una coppia perpendicolare a L tende a ruotare il vettore L, causando precessione invece di una semplice caduta dell'asse.",
+            "spiegazione": "Una coppia perpendicolare a $L$ tende a ruotare il vettore $L$, causando precessione invece di una semplice caduta dell'asse.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "trottola",
@@ -1976,17 +1976,17 @@
         },
         {
             "id": "ang_095",
-            "domanda": "Se un sistema è soggetto a una coppia esterna, ma questa agisce solo per un intervallo di tempo breve, quale grandezza è più utile calcolare per trovare L finale?",
+            "domanda": "Se un sistema è soggetto a una coppia esterna, ma questa agisce solo per un intervallo di tempo breve, quale grandezza è più utile calcolare per trovare $L$ finale?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Impulso angolare",
             "opzioni": [
                 "Il lavoro",
-                "L'impulso angolare ∫τ dt",
+                "L'impulso angolare $\\int \\tau \\, dt$",
                 "La pressione",
                 "La densità"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Per eventi brevi, ΔL si ottiene direttamente da ΔL = ∫τ dt (impulso angolare).",
+            "spiegazione": "Per eventi brevi, $\\Delta L$ si ottiene direttamente da $\\Delta L = \\int \\tau \\, dt$ (impulso angolare).",
             "difficolta": "difficile",
             "paroleChiave": [
                 "evento breve",
@@ -1997,17 +1997,17 @@
         },
         {
             "id": "ang_096",
-            "domanda": "Un corpo ruota attorno a un asse. Se τ_ext = 0 ma agiscono forze interne, quale affermazione è corretta?",
+            "domanda": "Un corpo ruota attorno a un asse. Se $\\tau_{ext} = 0$ ma agiscono forze interne, quale affermazione è corretta?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Sistema",
             "opzioni": [
-                "L_tot non può cambiare",
-                "L_tot cambia sempre",
-                "L_tot dipende solo dall'energia",
-                "L_tot è uguale a I"
+                "$L_{tot}$ non può cambiare",
+                "$L_{tot}$ cambia sempre",
+                "$L_{tot}$ dipende solo dall'energia",
+                "$L_{tot}$ è uguale a $I$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "La variazione del momento angolare totale dipende dalle coppie esterne; con τ_ext = 0, L_tot resta costante.",
+            "spiegazione": "La variazione del momento angolare totale dipende dalle coppie esterne; con $\\tau_{ext} = 0$, $L_{tot}$ resta costante.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "forze interne",
@@ -2018,17 +2018,17 @@
         },
         {
             "id": "ang_097",
-            "domanda": "Una massa m scorre senza attrito su un'asta che ruota con ω variabile. Se non ci sono coppie esterne, quale relazione è corretta?",
+            "domanda": "Una massa $m$ scorre senza attrito su un'asta che ruota con $\\omega$ variabile. Se non ci sono coppie esterne, quale relazione è corretta?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Vincoli e scorrimento",
             "opzioni": [
-                "m r^2 ω = costante",
-                "m r ω = costante",
-                "m ω = costante",
-                "r ω = costante"
+                "$mr^2\\omega = \\text{costante}$",
+                "$mr\\omega = \\text{costante}$",
+                "$m\\omega = \\text{costante}$",
+                "$r\\omega = \\text{costante}$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Per un punto a distanza r dall'asse, L = m r^2 ω (lungo l'asse): con τ_ext=0 si conserva.",
+            "spiegazione": "Per un punto a distanza $r$ dall'asse, $L = mr^2\\omega$ (lungo l'asse): con $\\tau_{ext} = 0$ si conserva.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "mr^2ω",
@@ -2039,17 +2039,17 @@
         },
         {
             "id": "ang_098",
-            "domanda": "Un punto materiale ha L = 3 kg·m^2/s rispetto a O e subisce una coppia media di 0,5 N·m per 4 s nello stesso verso di L. L finale (modulo) è:",
+            "domanda": "Un punto materiale ha $L = 3 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$ rispetto a $O$ e subisce una coppia media di $0{,}5 \\text{ N}\\cdot\\text{m}$ per $4$ s nello stesso verso di $L$. $L$ finale (modulo) è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Impulso angolare",
             "opzioni": [
-                "1 kg·m^2/s",
-                "3 kg·m^2/s",
-                "5 kg·m^2/s",
-                "7 kg·m^2/s"
+                "$1 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$3 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$",
+                "$7 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "ΔL = τΔt = 0,5·4 = 2, quindi L_f = 3 + 2 = 5 kg·m^2/s.",
+            "spiegazione": "$$\\Delta L = \\tau \\Delta t = 0{,}5 \\cdot 4 = 2,\\ \\text{quindi }L_f = 3 + 2 = 5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "coppia media",
@@ -2060,7 +2060,7 @@
         },
         {
             "id": "ang_099",
-            "domanda": "Per un moto in un piano, L rispetto a O è lungo l'asse z. Se Lz è positivo, il moto visto da +z è:",
+            "domanda": "Per un moto in un piano, $L$ rispetto a $O$ è lungo l'asse $z$. Se $L_z$ è positivo, il moto visto da $+z$ è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Segno e verso",
             "opzioni": [
@@ -2070,7 +2070,7 @@
                 "Non determinabile"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Per la regola della mano destra, Lz > 0 corrisponde a rotazione antioraria vista da +z.",
+            "spiegazione": "Per la regola della mano destra, $L_z > 0$ corrisponde a rotazione antioraria vista da $+z$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "mano destra",
@@ -2091,7 +2091,7 @@
                 "Orbita sotto forza gravitazionale centrale"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L'attrito nel perno fornisce una coppia esterna dissipativa che modifica L nel tempo.",
+            "spiegazione": "L'attrito nel perno fornisce una coppia esterna dissipativa che modifica $L$ nel tempo.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "attrito",
@@ -2102,17 +2102,17 @@
         },
         {
             "id": "ang_101",
-            "domanda": "Dato r = (1,2,0) m e p = (3,4,0) kg·m/s, qual è Lz?",
+            "domanda": "Dato $r = (1, 2, 0)$ m e $p = (3, 4, 0)$ $\\text{kg}\\cdot\\text{m/s}$, qual è $L_z$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Componenti",
             "opzioni": [
-                "2",
-                "-2",
-                "10",
-                "-10"
+                "$2$",
+                "$-2$",
+                "$10$",
+                "$-10$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Lz = x py − y px = 1·4 − 2·3 = 4 − 6 = −2 kg·m^2/s.",
+            "spiegazione": "$$L_z = xp_y - yp_x = 1 \\cdot 4 - 2 \\cdot 3 = 4 - 6 = -2 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "Lz",
@@ -2123,17 +2123,17 @@
         },
         {
             "id": "ang_102",
-            "domanda": "Un corpo con I = 0,1 kg·m^2 ruota a ω = 20 rad/s. Una coppia costante opposta τ = 1 N·m agisce. Quanto tempo serve per annullare L (assumendo asse fisso)?",
+            "domanda": "Un corpo con $I = 0{,}1 \\text{ kg}\\cdot\\text{m}^2$ ruota a $\\omega = 20$ rad/s. Una coppia costante opposta $\\tau = 1 \\text{ N}\\cdot\\text{m}$ agisce. Quanto tempo serve per annullare $L$ (assumendo asse fisso)?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Arresto per coppia",
             "opzioni": [
-                "0,2 s",
-                "2 s",
-                "4 s",
-                "20 s"
+                "$0{,}2$ s",
+                "$2$ s",
+                "$4$ s",
+                "$20$ s"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L0 = Iω = 0,1·20 = 2; con τ = 1 opposta, tempo t = L0/τ = 2/1 = 2 s.",
+            "spiegazione": "$$L_0 = I\\omega = 0{,}1 \\cdot 20 = 2;\\ \\text{con }\\tau = 1\\text{ opposta, tempo }t = L_0/\\tau = 2/1 = 2\\ \\text{s}$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "arresto",
@@ -2144,7 +2144,7 @@
         },
         {
             "id": "ang_103",
-            "domanda": "Un satellite in orbita ellittica attorno alla Terra (forza centrale) ha L costante. Quando è al perigeo, la sua velocità è:",
+            "domanda": "Un satellite in orbita ellittica attorno alla Terra (forza centrale) ha $L$ costante. Quando è al perigeo, la sua velocità è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Orbite",
             "opzioni": [
@@ -2154,7 +2154,7 @@
                 "Sempre zero"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con L = m r v_t costante, al perigeo r è minimo e quindi v_t (e quindi la velocità) è massima.",
+            "spiegazione": "Con $L = mrv_t$ costante, al perigeo $r$ è minimo e quindi $v_t$ (e quindi la velocità) è massima.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "orbita ellittica",
@@ -2165,17 +2165,17 @@
         },
         {
             "id": "ang_104",
-            "domanda": "Un sistema ha τ_ext = 0 e L ≠ 0. È possibile che la direzione di L cambi nel tempo?",
+            "domanda": "Un sistema ha $\\tau_{ext} = 0$ e $L \\neq 0$. È possibile che la direzione di $L$ cambi nel tempo?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Conservazione vettoriale",
             "opzioni": [
                 "Sì, sempre",
                 "Sì, ma solo se cambia il modulo",
-                "No, perché dL/dt = 0 implica L costante come vettore",
+                "No, perché $dL/dt = 0$ implica $L$ costante come vettore",
                 "Dipende solo dalla massa"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Se τ_ext = dL/dt = 0, allora L è costante come vettore (direzione e modulo).",
+            "spiegazione": "Se $\\tau_{ext} = dL/dt = 0$, allora $L$ è costante come vettore (direzione e modulo).",
             "difficolta": "difficile",
             "paroleChiave": [
                 "direzione",
@@ -2186,17 +2186,17 @@
         },
         {
             "id": "ang_105",
-            "domanda": "Se una forza esterna agisce ma è sempre diretta verso O, allora rispetto a O:",
+            "domanda": "Se una forza esterna agisce ma è sempre diretta verso $O$, allora rispetto a $O$:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Forze centrali",
             "opzioni": [
-                "τ_ext è massimo",
-                "τ_ext è nullo e L si conserva",
-                "L è necessariamente nullo",
+                "$\\tau_{ext}$ è massimo",
+                "$\\tau_{ext}$ è nullo e $L$ si conserva",
+                "$L$ è necessariamente nullo",
                 "La velocità è costante"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Una forza centrale è parallela a r, quindi τ = r×F = 0 e L si conserva.",
+            "spiegazione": "Una forza centrale è parallela a $r$, quindi $\\tau = r \\times F = 0$ e $L$ si conserva.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "centrale",
@@ -2207,7 +2207,7 @@
         },
         {
             "id": "ang_106",
-            "domanda": "Per un corpo rigido che ruota attorno a un asse fisso, se τ è costante e I è costante, ω(t) nel tempo è:",
+            "domanda": "Per un corpo rigido che ruota attorno a un asse fisso, se $\\tau$ è costante e $I$ è costante, $\\omega(t)$ nel tempo è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Dinamica rotazionale",
             "opzioni": [
@@ -2217,7 +2217,7 @@
                 "Inversa"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con τ = Iα e α costante, ω(t) = ω0 + α t è lineare nel tempo.",
+            "spiegazione": "Con $\\tau = I\\alpha$ e $\\alpha$ costante, $\\omega(t) = \\omega_0 + \\alpha t$ è lineare nel tempo.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "tau costante",
@@ -2228,17 +2228,17 @@
         },
         {
             "id": "ang_107",
-            "domanda": "Un punto materiale ha p costante e r ruota nel piano con modulo costante. Se l'angolo tra r e p è 90°, |L| è:",
+            "domanda": "Un punto materiale ha $p$ costante e $r$ ruota nel piano con modulo costante. Se l'angolo tra $r$ e $p$ è $90^{\\circ}$, $|L|$ è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Casi particolari",
             "opzioni": [
-                "0",
-                "r p",
-                "r p / 2",
-                "r + p"
+                "$0$",
+                "$rp$",
+                "$rp/2$",
+                "$r + p$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con θ = 90°, |L| = r p sinθ = r p.",
+            "spiegazione": "Con $\\theta = 90^{\\circ}$, $|L| = rp\\sin\\theta = rp$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "90 gradi",
@@ -2249,17 +2249,17 @@
         },
         {
             "id": "ang_108",
-            "domanda": "In un urto su piattaforma rotante senza attrito, perché spesso si conserva L ma non l'energia cinetica?",
+            "domanda": "In un urto su piattaforma rotante senza attrito, perché spesso si conserva $L$ ma non l'energia cinetica?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Urti",
             "opzioni": [
                 "Perché l'energia è sempre conservata",
-                "Perché l'urto anelastico dissipa energia interna ma, se τ_ext=0, non cambia L",
-                "Perché L dipende dalla temperatura",
-                "Perché I diventa nullo"
+                "Perché l'urto anelastico dissipa energia interna ma, se $\\tau_{ext} = 0$, non cambia $L$",
+                "Perché $L$ dipende dalla temperatura",
+                "Perché $I$ diventa nullo"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Negli urti anelastici parte dell'energia cinetica si trasforma in calore/deformazioni, ma L resta costante se non ci sono coppie esterne.",
+            "spiegazione": "Negli urti anelastici parte dell'energia cinetica si trasforma in calore/deformazioni, ma $L$ resta costante se non ci sono coppie esterne.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "anelastico",
@@ -2270,17 +2270,17 @@
         },
         {
             "id": "ang_109",
-            "domanda": "Una forza F applicata con angolo 0° rispetto a r produce un momento torcente di modulo:",
+            "domanda": "Una forza $F$ applicata con angolo $0^{\\circ}$ rispetto a $r$ produce un momento torcente di modulo:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Momento di una forza",
             "opzioni": [
-                "rF",
-                "rF/2",
-                "0",
-                "F/r"
+                "$rF$",
+                "$rF/2$",
+                "$0$",
+                "$F/r$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "|τ| = rF sinθ: con θ = 0°, sin0 = 0 quindi τ = 0.",
+            "spiegazione": "$$|\\tau| = rF\\sin\\theta:\\ \\text{con }\\theta = 0^{\\circ},\\ \\sin 0 = 0\\ \\text{quindi }\\tau = 0$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "sin",
@@ -2291,17 +2291,17 @@
         },
         {
             "id": "ang_110",
-            "domanda": "Una particella ha r = 0,3 m e v = 5 m/s. Se la sua traiettoria è tale che solo 60% di v è tangenziale (perpendicolare a r), |L| vale:",
+            "domanda": "Una particella ha $r = 0{,}3$ m e $v = 5$ m/s. Se la sua traiettoria è tale che solo 60% di $v$ è tangenziale (perpendicolare a $r$), $|L|$ vale:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Componente tangenziale",
             "opzioni": [
-                "0,45 m·kg·m/s (in unità errate)",
-                "m·0,3·(0,6·5) = 0,9 m·kg·m/s (in unità errate)",
-                "m·0,3·3 = 0,9 kg·m^2/s (per m = 1 kg)",
-                "m·0,3·5 = 1,5 kg·m^2/s (per m = 1 kg)"
+                "$0{,}45 \\text{ m}\\cdot\\text{kg}\\cdot\\text{m/s}$ (in unità errate)",
+                "$m \\cdot 0{,}3 \\cdot (0{,}6 \\cdot 5) = 0{,}9 \\text{ m}\\cdot\\text{kg}\\cdot\\text{m/s}$ (in unità errate)",
+                "$m \\cdot 0{,}3 \\cdot 3 = 0{,}9 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$ (per $m = 1$ kg)",
+                "$m \\cdot 0{,}3 \\cdot 5 = 1{,}5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$ (per $m = 1$ kg)"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Conta la componente perpendicolare: v_t = 0,6·5 = 3 m/s; con m = 1 kg, |L| = m r v_t = 0,3·3 = 0,9 kg·m^2/s.",
+            "spiegazione": "$$\\text{Conta la componente perpendicolare: }v_t = 0{,}6 \\cdot 5 = 3\\ \\text{m/s;}\\ \\text{con }m = 1\\ \\text{kg, }|L| = mrv_t = 0{,}3 \\cdot 3 = 0{,}9 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "tangenziale",
@@ -2312,17 +2312,17 @@
         },
         {
             "id": "ang_111",
-            "domanda": "Un corpo ha L costante e I costante. Quale affermazione è corretta?",
+            "domanda": "Un corpo ha $L$ costante e $I$ costante. Quale affermazione è corretta?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Corpi rigidi",
             "opzioni": [
-                "ω è costante",
-                "ω aumenta",
-                "ω diminuisce",
-                "ω è indefinita"
+                "$\\omega$ è costante",
+                "$\\omega$ aumenta",
+                "$\\omega$ diminuisce",
+                "$\\omega$ è indefinita"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Se L = Iω e sia L che I sono costanti, allora ω è costante.",
+            "spiegazione": "Se $L = I\\omega$ e sia $L$ che $I$ sono costanti, allora $\\omega$ è costante.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "I costante",
@@ -2333,17 +2333,17 @@
         },
         {
             "id": "ang_112",
-            "domanda": "Un sistema ha L non nullo. Se applichi una coppia che ha componente parallela a L e componente perpendicolare a L, cosa accade?",
+            "domanda": "Un sistema ha $L$ non nullo. Se applichi una coppia che ha componente parallela a $L$ e componente perpendicolare a $L$",
             "categoria": "Momento Angolare",
             "sottocategoria": "Decomposizione della coppia",
             "opzioni": [
-                "Cambia solo la direzione di L",
-                "Cambia solo il modulo di L",
-                "Cambiano sia modulo sia direzione di L",
-                "L resta costante"
+                "Cambia solo la direzione di $L$",
+                "Cambia solo il modulo di $L$",
+                "Cambiano sia modulo sia direzione di $L$",
+                "$L$ resta costante"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "La componente di τ parallela a L cambia il modulo, quella perpendicolare cambia la direzione.",
+            "spiegazione": "La componente di $\\tau$ parallela a $L$ cambia il modulo, quella perpendicolare cambia la direzione.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "componenti",
@@ -2354,17 +2354,17 @@
         },
         {
             "id": "ang_113",
-            "domanda": "Se τ_ext = 0, ma una massa si muove internamente (es. si avvicina all'asse), l'energia cinetica può aumentare perché:",
+            "domanda": "Se $\\tau_{ext} = 0$, ma una massa si muove internamente (es. si avvicina all'asse), l'energia cinetica può aumentare perché:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Energia e lavoro interno",
             "opzioni": [
                 "Si crea energia dal nulla",
                 "Viene compiuto lavoro da forze interne/spostamenti interni",
                 "La gravità cambia segno",
-                "I deve restare costante"
+                "$I$ deve restare costante"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L'energia può aumentare per lavoro interno mentre L resta costante (τ_ext = 0).",
+            "spiegazione": "L'energia può aumentare per lavoro interno mentre $L$ resta costante ($\\tau_{ext} = 0$).",
             "difficolta": "difficile",
             "paroleChiave": [
                 "lavoro interno",
@@ -2375,17 +2375,17 @@
         },
         {
             "id": "ang_114",
-            "domanda": "Un punto materiale ha r = 0,4 m e L = 1,6 kg·m^2/s (m = 2 kg, v ⟂ r). Quanto vale v?",
+            "domanda": "Un punto materiale ha $r = 0{,}4$ m e $L = 1{,}6 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$ ($m = 2$ kg, $v \\perp r$). Quanto vale $v$?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Ricavare la velocità",
             "opzioni": [
-                "1 m/s",
-                "2 m/s",
-                "3 m/s",
-                "4 m/s"
+                "$1$ m/s",
+                "$2$ m/s",
+                "$3$ m/s",
+                "$4$ m/s"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L = m r v ⇒ v = L/(m r) = 1,6/(2·0,4) = 2 m/s.",
+            "spiegazione": "$$L = mrv \\Rightarrow v = L/(mr) = 1{,}6/(2 \\cdot 0{,}4) = 2\\ \\text{m/s}$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "calcolo",
@@ -2396,7 +2396,7 @@
         },
         {
             "id": "ang_115",
-            "domanda": "In un moto orbitale sotto forza centrale, quale quantità è direttamente proporzionale a L (per una massa m) e descrive l'area spazzata nel tempo?",
+            "domanda": "In un moto orbitale sotto forza centrale, quale quantità è direttamente proporzionale a $L$ (per una massa $m$) e descrive l'area spazzata nel tempo?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Legge delle aree",
             "opzioni": [
@@ -2406,7 +2406,7 @@
                 "Pressione"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "La velocità areolare è legata a L (per moto piano, è costante se L è costante).",
+            "spiegazione": "La velocità areolare è legata a $L$ (per moto piano, è costante se $L$ è costante).",
             "difficolta": "difficile",
             "paroleChiave": [
                 "areolare",
@@ -2417,17 +2417,17 @@
         },
         {
             "id": "ang_116",
-            "domanda": "Una forza esterna è grande, ma agisce esattamente lungo la linea che passa per il polo O. Il momento torcente rispetto a O è:",
+            "domanda": "Una forza esterna è grande, ma agisce esattamente lungo la linea che passa per il polo $O$. Il momento torcente rispetto a $O$ è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Momento di una forza",
             "opzioni": [
                 "Grande",
                 "Nullo",
-                "Uguale a F",
-                "Uguale a m g"
+                "Uguale a $F$",
+                "Uguale a $mg$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se la linea d'azione passa per O, il braccio è nullo e τ = r×F = 0 anche se F è grande.",
+            "spiegazione": "Se la linea d'azione passa per $O$, il braccio è nullo e $\\tau = r \\times F = 0$ anche se $F$ è grande.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "linea d'azione",
@@ -2438,17 +2438,17 @@
         },
         {
             "id": "ang_117",
-            "domanda": "Un oggetto ha L costante, ma osservi che ω non è costante. Qual è la spiegazione più probabile?",
+            "domanda": "Un oggetto ha $L$ costante, ma osservi che $\\omega$ non è costante. Qual è la spiegazione più probabile?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Corpi rigidi",
             "opzioni": [
-                "I sta cambiando",
+                "$I$ sta cambiando",
                 "La massa sta cambiando necessariamente",
                 "La gravità è sparita",
                 "La temperatura è costante"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Se L = Iω si conserva ma ω cambia, allora deve cambiare I (distribuzione di massa).",
+            "spiegazione": "Se $L = I\\omega$ si conserva ma $\\omega$ cambia, allora deve cambiare $I$ (distribuzione di massa).",
             "difficolta": "difficile",
             "paroleChiave": [
                 "I cambia",
@@ -2459,17 +2459,17 @@
         },
         {
             "id": "ang_118",
-            "domanda": "Due punti materiali (m, stessa velocità v) passano a distanze perpendicolari b1 e b2 dall'origine. A parità di p, il rapporto dei moduli dei momenti angolari è:",
+            "domanda": "Due punti materiali ($m$, stessa velocità $v$) passano a distanze perpendicolari $b_1$ e $b_2$ dall'origine. A parità di $p$, il rapporto dei moduli dei momenti angolari è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Braccio perpendicolare",
             "opzioni": [
-                "|L1|/|L2| = b1/b2",
-                "|L1|/|L2| = b2/b1",
-                "|L1|/|L2| = b1^2/b2^2",
-                "|L1|/|L2| = 1"
+                "$|L_1|/|L_2| = b_1/b_2$",
+                "$|L_1|/|L_2| = b_2/b_1$",
+                "$|L_1|/|L_2| = b_1^2/b_2^2$",
+                "$|L_1|/|L_2| = 1$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Con |L| = b·p, a parità di p il rapporto è b1/b2.",
+            "spiegazione": "$$\\text{Con }|L| = b \\cdot p,\\ \\text{a parità di }p\\text{ il rapporto è }b_1/b_2$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "braccio",
@@ -2480,7 +2480,7 @@
         },
         {
             "id": "ang_119",
-            "domanda": "Un corpo ruota attorno a un asse fisso: se raddoppi I e mantieni ω costante, L:",
+            "domanda": "Un corpo ruota attorno a un asse fisso: se raddoppi $I$ e mantieni $\\omega$ costante, $L$:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Corpi rigidi",
             "opzioni": [
@@ -2490,7 +2490,7 @@
                 "Diventa nullo"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con L = Iω, se ω è costante e I raddoppia allora L raddoppia.",
+            "spiegazione": "$$\\text{Con }L = I\\omega,\\ \\text{se }\\omega\\text{ è costante e }I\\text{ raddoppia allora }L\\text{ raddoppia.}$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "I raddoppia",
@@ -2501,17 +2501,17 @@
         },
         {
             "id": "ang_120",
-            "domanda": "Una coppia τ(t) ha andamento a impulsi: τ = 0 tranne un picco breve. Quale grandezza riassume l'effetto totale sul momento angolare?",
+            "domanda": "Una coppia $\\tau(t)$ ha andamento a impulsi: $\\tau = 0$ tranne un picco breve. Quale grandezza riassume l'effetto totale sul momento angolare?",
             "categoria": "Momento Angolare",
             "sottocategoria": "Impulso angolare",
             "opzioni": [
-                "Il valore massimo di τ",
-                "L'impulso angolare ∫τ dt",
+                "Il valore massimo di $\\tau$",
+                "L'impulso angolare $\\int \\tau \\, dt$",
                 "La massa del corpo",
                 "Il raggio di rotazione"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L'effetto totale sulla variazione di L è dato dall'area sotto la curva τ(t): ΔL = ∫τ dt.",
+            "spiegazione": "$$\\text{L'effetto totale sulla variazione di }L\\text{ è dato dall'area sotto la curva }\\tau(t):\\ \\Delta L = \\int \\tau \\, dt$$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "impulso",

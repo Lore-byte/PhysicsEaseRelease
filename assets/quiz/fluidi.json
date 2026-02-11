@@ -12,7 +12,7 @@
         "La quantità di moto per unità di volume"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La densità è definita come massa per unità di volume: ρ = m/V.",
+      "spiegazione": "La densità è definita come massa per unità di volume: $\\rho = m/V$.",
       "difficolta": "facile",
       "paroleChiave": [
         "densita",
@@ -48,13 +48,13 @@
       "categoria": "Fluidi",
       "sottocategoria": "Pressione",
       "opzioni": [
-        "F = p/A",
-        "p = F/A",
-        "A = p/F",
-        "p = F·A"
+        "$F = p/A$",
+        "$p = F/A$",
+        "$A = p/F$",
+        "$p = F \\cdot A$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La pressione è definita come forza per unità di area: p = F/A.",
+      "spiegazione": "La pressione è definita come forza per unità di area: $p = F/A$.",
       "difficolta": "facile",
       "paroleChiave": [
         "pressione",
@@ -117,7 +117,7 @@
         "Solo dalla pressione atmosferica"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "A parità di g, la variazione Δp dipende da ρ e dalla differenza di profondità Δh.",
+      "spiegazione": "A parità di $g$, la variazione $\\Delta p$ dipende da $\\rho$ e dalla differenza di profondità $\\Delta h$.",
       "difficolta": "facile",
       "paroleChiave": [
         "stevino",
@@ -222,7 +222,7 @@
         "Si dissolve"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Se ρ_corpo < ρ_liquido, la spinta può equilibrare il peso prima dell’immersione completa e il corpo galleggia.",
+      "spiegazione": "Se $\\rho_{corpo}$ < $\\rho_{liquido}$, la spinta può equilibrare il peso prima dell’immersione completa e il corpo galleggia.",
       "difficolta": "facile",
       "paroleChiave": [
         "densita",
@@ -264,7 +264,7 @@
         "Colore del liquido"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La spinta è legata al peso del fluido spostato: dipende da ρ_fluido e dal volume spostato.",
+      "spiegazione": "La spinta è legata al peso del fluido spostato: dipende da $\\rho_{fluido}$ e dal volume spostato.",
       "difficolta": "facile",
       "paroleChiave": [
         "archimede",
@@ -428,7 +428,7 @@
       "opzioni": [
         "Q = A·v",
         "Q = p·A",
-        "Q = ρ·g·h",
+        "Q = $\\rho$·g·h",
         "Q = m·g"
       ],
       "rispostaCorretta": 0,
@@ -569,17 +569,17 @@
     },
     {
       "id": "flu_028",
-      "domanda": "Il 'peso specifico' γ (gamma) di un fluido è:",
+      "domanda": "Il 'peso specifico' $\\gamma$ (gamma) di un fluido è:",
       "categoria": "Fluidi",
       "sottocategoria": "Peso specifico",
       "opzioni": [
-        "γ = ρ/g",
-        "γ = ρ·g",
-        "γ = g/ρ",
-        "γ = ρ + g"
+        "$\\gamma$ = $\\rho$/g",
+        "$\\gamma$ = $\\rho$·g",
+        "$\\gamma$ = g/$\\rho$",
+        "$\\gamma$ = $\\rho$ + g"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Il peso specifico è il peso per unità di volume: γ = ρ·g.",
+      "spiegazione": "Il peso specifico è il peso per unità di volume: $\\gamma$ = $\\rho$·g.",
       "difficolta": "facile",
       "paroleChiave": [
         "peso specifico",
@@ -697,7 +697,7 @@
       "id": "flu_034",
       "domanda": "L'equazione di continuità per un fluido incomprimibile in un tubo afferma che:",
       "categoria": "Fluidi",
-      "sottocategoria": "Continuità (qualitativa)",
+      "sottocategoria": "Continuità (qualitativo)",
       "opzioni": [
         "La pressione è costante ovunque",
         "La portata Q è costante lungo il tubo (in moto stazionario)",
@@ -842,17 +842,17 @@
     },
     {
       "id": "flu_041",
-      "domanda": "In acqua (ρ = 1000 kg/m³), qual è l'aumento di pressione Δp a 5,0 m di profondità rispetto alla superficie? (g = 9,8 m/s²)",
+      "domanda": "In acqua ($\\rho$ = 1000 kg/m³), qual è l'aumento di pressione Δp a 5,0 m di profondità rispetto alla superficie? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Legge di Stevino (calcoli)",
       "opzioni": [
-        "4,9 × 10^3 Pa",
-        "4,9 × 10^4 Pa",
-        "9,8 × 10^4 Pa",
-        "5,0 × 10^5 Pa"
+        "$4{,}9 \\\\times 10^{3}$ Pa",
+        "$4{,}9 \\\\times 10^{4}$ Pa",
+        "$9{,}8 \\\\times 10^{4}$ Pa",
+        "$5{,}0 \\\\times 10^{5}$ Pa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per Stevino Δp = ρgh = 1000·9,8·5,0 = 4,9×10^4 Pa. [web:1]",
+      "spiegazione": "Per Stevino Δp = ρgh = 1000·9,8·5,0 = $4{,}9 \\\\times 10^{4}$ Pa. ",
       "difficolta": "media",
       "paroleChiave": [
         "stevino",
@@ -863,17 +863,17 @@
     },
     {
       "id": "flu_042",
-      "domanda": "Un sommozzatore è a 12 m di profondità in mare (ρ = 1025 kg/m³). Qual è circa la pressione assoluta se p_atm = 1,01×10^5 Pa e g = 9,8 m/s²?",
+      "domanda": "Un sommozzatore è a 12 m di profondità in mare ($\\rho$ = 1025 kg/m³). Qual è circa la pressione assoluta se p_atm = $1{,}01 \\\\times 10^{5}$ Pa e g = 9,8 m/s²?",
       "categoria": "Fluidi",
       "sottocategoria": "Pressione assoluta",
       "opzioni": [
-        "1,01×10^5 Pa",
-        "2,21×10^5 Pa",
-        "3,20×10^5 Pa",
-        "1,30×10^6 Pa"
+        "$1{,}01 \\\\times 10^{5}$ Pa",
+        "$2{,}21 \\\\times 10^{5}$ Pa",
+        "$3{,}20 \\\\times 10^{5}$ Pa",
+        "$1{,}30 \\\\times 10^{6}$ Pa"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "p = p_atm + ρgh = 1,01×10^5 + 1025·9,8·12 ≈ 3,20×10^5 Pa. [web:1]",
+      "spiegazione": "p = p_atm + ρgh = $1{,}01 \\\\times 10^{5}$ + 1025·9,8·12 $\\approx 3{,}20 \\\\times 10^{5}$ Pa. ",
       "difficolta": "media",
       "paroleChiave": [
         "pressione assoluta",
@@ -884,7 +884,7 @@
     },
     {
       "id": "flu_043",
-      "domanda": "In vasi comunicanti ci sono acqua (ρ = 1000 kg/m³) e olio (ρ = 800 kg/m³) separati e in equilibrio. Se la colonna d'acqua ha altezza 10 cm sopra il livello di separazione, quanto vale l'altezza della colonna d'olio sopra lo stesso livello?",
+      "domanda": "In vasi comunicanti ci sono acqua ($\\rho$ = 1000 kg/m³) e olio ($\\rho$ = 800 kg/m³) separati e in equilibrio. Se la colonna d'acqua ha altezza 10 cm sopra il livello di separazione, quanto vale l'altezza della colonna d'olio sopra lo stesso livello?",
       "categoria": "Fluidi",
       "sottocategoria": "Vasi comunicanti (liquidi diversi)",
       "opzioni": [
@@ -894,7 +894,7 @@
         "20 cm"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "In equilibrio ρ_acqua g h_acqua = ρ_olio g h_olio, quindi h_olio = (1000/800)·10 cm = 12,5 cm. [web:1]",
+      "spiegazione": "In equilibrio $\\rho_{acqua}$ g h_acqua = $\\rho_{olio}$ g h_olio $\\Rightarrow$ h_olio = (1000/800)·10 cm = 12,5 cm. ",
       "difficolta": "media",
       "paroleChiave": [
         "vasi comunicanti",
@@ -915,7 +915,7 @@
         "3000 N"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Per Pascal p1 = p2 ⇒ F1/A1 = F2/A2, quindi F2 = F1·(A2/A1) = 120·(50/2) = 3000 N. [web:14]",
+      "spiegazione": "Per Pascal p1 = p2 $\\Rightarrow$ F1/A1 = F2/A2, quindi F2 = F1·(A2/A1) = 120·(50/2) = 3000 N. ",
       "difficolta": "media",
       "paroleChiave": [
         "pascal",
@@ -926,7 +926,7 @@
     },
     {
       "id": "flu_045",
-      "domanda": "Un corpo di volume 3,0×10^-3 m³ è completamente immerso in acqua (ρ = 1000 kg/m³). Quanto vale la spinta di Archimede? (g = 9,8 m/s²)",
+      "domanda": "Un corpo di volume $3{,}0 \\\\times 10^{-3}$ m³ è completamente immerso in acqua ($\\rho$ = 1000 kg/m³). Quanto vale la spinta di Archimede? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Principio di Archimede (calcoli)",
       "opzioni": [
@@ -936,7 +936,7 @@
         "98 N"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "La spinta vale F_A = ρ g V = 1000·9,8·3,0×10^-3 = 29,4 N. [web:9]",
+      "spiegazione": "La spinta vale F_A = $\\rho$ g V = 1000·9,8·$3{,}0 \\\\times 10^{-3}$ = 29,4 N. ",
       "difficolta": "media",
       "paroleChiave": [
         "archimede",
@@ -947,7 +947,7 @@
     },
     {
       "id": "flu_046",
-      "domanda": "Un oggetto ha massa 4,0 kg e volume 5,0×10^-3 m³ ed è immerso completamente in acqua (ρ = 1000 kg/m³). Qual è il suo peso apparente in acqua? (g = 9,8 m/s²)",
+      "domanda": "Un oggetto ha massa 4,0 kg e volume $5{,}0 \\\\times 10^{-3}$ m³ ed è immerso completamente in acqua ($\\rho$ = 1000 kg/m³). Qual è il suo peso apparente in acqua? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Peso apparente",
       "opzioni": [
@@ -957,7 +957,7 @@
         "0 N"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Peso reale mg = 39,2 N; spinta F_A = ρgV = 1000·9,8·0,005 = 49 N; peso apparente = mg − F_A = −9,8 N (quindi tenderebbe a salire), l'opzione numericamente coerente con mg−F_A è -9,8 N ma non è presente: attenzione, qui l'oggetto non può restare completamente immerso in equilibrio e risalirebbe. [web:9]",
+      "spiegazione": "Peso reale mg = 39,2 N; spinta F_A = ρgV = 1000·9,8·0,005 = 49 N; peso apparente = mg − F_A = −9,8 N (quindi tenderebbe a salire), l'opzione numericamente coerente con mg−F_A è -9,8 N ma non è presente: attenzione, qui l'oggetto non può restare completamente immerso in equilibrio e risalirebbe. ",
       "difficolta": "media",
       "paroleChiave": [
         "peso apparente",
@@ -978,7 +978,7 @@
         "400 kg/m³"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "In galleggiamento V_imm/V_tot = ρ_corpo/ρ_fluido ⇒ ρ_corpo = 0,60·1000 = 600 kg/m³. [web:9]",
+      "spiegazione": "In galleggiamento V_imm/V_tot = $\\rho$_corpo/$\\rho$_fluido $\\Rightarrow \\rho$_corpo = 0,60·1000 = 600 kg/m³. ",
       "difficolta": "media",
       "paroleChiave": [
         "galleggiamento",
@@ -999,7 +999,7 @@
         "3,0 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per continuità Q = A v costante: v2 = v1·A1/A2 = 0,50·6/2 = 1,5 m/s. [web:20]",
+      "spiegazione": "Per continuità Q = A v costante: v2 = v1·A1/A2 = 0,50·6/2 = 1,5 m/s. ",
       "difficolta": "media",
       "paroleChiave": [
         "continuita",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": "flu_049",
-      "domanda": "La portata di acqua in un tubo è Q = 2,0×10^-3 m³/s. Se l'area della sezione è A = 5,0×10^-4 m², qual è la velocità media v?",
+      "domanda": "La portata di acqua in un tubo è Q = $2{,}0 \\\\times 10^{-3}$ m³/s. Se l'area della sezione è A = $5{,}0 \\\\times 10^{-4}$ m², qual è la velocità media v?",
       "categoria": "Fluidi",
       "sottocategoria": "Portata (calcoli)",
       "opzioni": [
@@ -1020,7 +1020,7 @@
         "10 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Usando Q = A·v, si ha v = Q/A = 2,0×10^-3 / 5,0×10^-4 = 4,0 m/s. [web:20]",
+      "spiegazione": "Usando Q = A·v, si ha v = Q/A = $2{,}0 \\\\times 10^{-3}$ / $5{,}0 \\\\times 10^{-4}$ = 4,0 m/s. ",
       "difficolta": "media",
       "paroleChiave": [
         "portata",
@@ -1031,17 +1031,17 @@
     },
     {
       "id": "flu_050",
-      "domanda": "In un condotto orizzontale (stessa quota), acqua (ρ = 1000 kg/m³) passa da v1 = 2,0 m/s a v2 = 6,0 m/s. Se p1 = 2,20×10^5 Pa, quanto vale p2 secondo Bernoulli (fluido ideale)?",
+      "domanda": "In un condotto orizzontale (stessa quota), acqua ($\\rho$ = 1000 kg/m³) passa da v1 = 2,0 m/s a v2 = 6,0 m/s. Se p1 = $2{,}20 \\\\times 10^{5}$ Pa, quanto vale p2 secondo Bernoulli (fluido ideale)?",
       "categoria": "Fluidi",
       "sottocategoria": "Bernoulli (calcoli, quota costante)",
       "opzioni": [
-        "2,00×10^5 Pa",
-        "2,40×10^5 Pa",
-        "2,04×10^5 Pa",
-        "2,92×10^5 Pa"
+        "$2{,}00 \\\\times 10^{5}$ Pa",
+        "$2{,}40 \\\\times 10^{5}$ Pa",
+        "$2{,}04 \\\\times 10^{5}$ Pa",
+        "$2{,}92 \\\\times 10^{5}$ Pa"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "A quota costante: p1 + 1/2 ρ v1² = p2 + 1/2 ρ v2² ⇒ p2 = p1 + 1/2ρ(v1²−v2²) = 2,20×10^5 + 500(4−36) = 2,04×10^5 Pa. [web:7]",
+      "spiegazione": "A quota costante: p1 + 1/2 $\\rho$ v1² = p2 + 1/2 $\\rho$ v2² $\\Rightarrow$ p2 = p1 + 1/2$\\rho$(v1²−v2²) = $2{,}20 \\\\times 10^{5}$ + 500(4−36) = $2{,}04 \\\\times 10^{5}$ Pa. ",
       "difficolta": "media",
       "paroleChiave": [
         "bernoulli",
@@ -1062,7 +1062,7 @@
         "Oscillare casualmente"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Bernoulli mostra che, a parità di quota, un aumento della velocità è associato a una diminuzione di pressione statica (effetto Venturi). [web:7]",
+      "spiegazione": "Bernoulli mostra che, a parità di quota, un aumento della velocità è associato a una diminuzione di pressione statica (effetto Venturi). ",
       "difficolta": "media",
       "paroleChiave": [
         "venturi",
@@ -1083,7 +1083,7 @@
         "9,8 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per Torricelli v = √(2gh) = √(2·9,8·1,8) ≈ √35,28 ≈ 5,9 m/s. [web:21]",
+      "spiegazione": "Per Torricelli v = √(2gh) = √(2·9,8·1,8) $\\approx$ √35,28 $\\approx$ 5,9 m/s. ",
       "difficolta": "media",
       "paroleChiave": [
         "torricelli",
@@ -1104,7 +1104,7 @@
         "√(2,0/0,50) = 2"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Da v = √(2gh), il rapporto è v2/v1 = √(h2/h1) = √(2,0/0,50) = √4 = 2. [web:21]",
+      "spiegazione": "Da v = √(2gh), il rapporto è v2/v1 = √(h2/h1) = √(2,0/0,50) = √4 = 2. ",
       "difficolta": "media",
       "paroleChiave": [
         "torricelli",
@@ -1125,7 +1125,7 @@
         "v2 = 4v1"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Q = Av costante ⇒ A1v1 = A2v2; se A1 = 4A2 allora v2 = 4v1. [web:20]",
+      "spiegazione": "Q = Av costante $\\Rightarrow$ A1v1 = A2v2; se A1 = 4A2 allora v2 = 4v1. ",
       "difficolta": "media",
       "paroleChiave": [
         "continuita",
@@ -1146,7 +1146,7 @@
         "Flusso a impulsi con pressione casuale"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Bernoulli si usa tipicamente per flusso stazionario di fluido ideale, lungo una linea di corrente. [web:7]",
+      "spiegazione": "Bernoulli si usa tipicamente per flusso stazionario di fluido ideale, lungo una linea di corrente. ",
       "difficolta": "media",
       "paroleChiave": [
         "bernoulli",
@@ -1157,17 +1157,17 @@
     },
     {
       "id": "flu_056",
-      "domanda": "In acqua (ρ = 1000 kg/m³), una differenza di quota tra due punti è Δh = 2,0 m. Quanto vale la differenza di pressione idrostatica Δp tra i due punti (p più in basso meno p più in alto)? (g = 9,8 m/s²)",
+      "domanda": "In acqua ($\\rho$ = 1000 kg/m³), una differenza di quota tra due punti è Δh = 2,0 m. Quanto vale la differenza di pressione idrostatica Δp tra i due punti (p più in basso meno p più in alto)? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Stevino (differenze)",
       "opzioni": [
-        "1,96×10^3 Pa",
-        "1,96×10^4 Pa",
-        "9,8×10^4 Pa",
-        "2,0×10^5 Pa"
+        "$1{,}96 \\\\times 10^{3}$ Pa",
+        "$1{,}96 \\\\times 10^{4}$ Pa",
+        "$9{,}8 \\\\times 10^{4}$ Pa",
+        "$2{,}0 \\\\times 10^{5}$ Pa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Δp = ρgΔh = 1000·9,8·2,0 = 1,96×10^4 Pa. [web:1]",
+      "spiegazione": "Δp = ρgΔh = 1000·9,8·2,0 = $1{,}96 \\\\times 10^{4}$ Pa. ",
       "difficolta": "media",
       "paroleChiave": [
         "stevino",
@@ -1178,7 +1178,7 @@
     },
     {
       "id": "flu_057",
-      "domanda": "Un oggetto di volume 8,0×10^-4 m³ e massa 0,60 kg è immerso in acqua. Affonda o galleggia? (ρ_acqua = 1000 kg/m³)",
+      "domanda": "Un oggetto di volume $8{,}0 \\\\times 10^{-4}$ m³ e massa 0,60 kg è immerso in acqua. Affonda o galleggia? ($\\rho_{acqua}$ = 1000 kg/m³)",
       "categoria": "Fluidi",
       "sottocategoria": "Galleggiamento (densità media)",
       "opzioni": [
@@ -1188,7 +1188,7 @@
         "Non si può stabilire senza g"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "La densità dell'oggetto è ρ = m/V = 0,60 / 8,0×10^-4 = 750 kg/m³, minore di 1000 kg/m³, quindi tende a galleggiare. [web:9]",
+      "spiegazione": "La densità dell'oggetto è $\\rho$ = m/V = 0,60 / $8{,}0 \\\\times 10^{-4}$ = 750 kg/m³, minore di 1000 kg/m³, quindi tende a galleggiare. ",
       "difficolta": "media",
       "paroleChiave": [
         "densita",
@@ -1199,7 +1199,7 @@
     },
     {
       "id": "flu_058",
-      "domanda": "Un pallone di volume 0,020 m³ è immerso completamente in acqua. Qual è la spinta di Archimede? (ρ = 1000 kg/m³; g = 9,8 m/s²)",
+      "domanda": "Un pallone di volume 0,020 m³ è immerso completamente in acqua. Qual è la spinta di Archimede? ($\\rho$ = 1000 kg/m³; g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Archimede (calcoli)",
       "opzioni": [
@@ -1209,7 +1209,7 @@
         "980 N"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "F_A = ρgV = 1000·9,8·0,020 = 196 N. [web:9]",
+      "spiegazione": "F_A = ρgV = 1000·9,8·0,020 = 196 N. ",
       "difficolta": "media",
       "paroleChiave": [
         "archimede",
@@ -1220,7 +1220,7 @@
     },
     {
       "id": "flu_059",
-      "domanda": "Un blocco galleggia in acqua con volume totale 2,0 L e volume immerso 0,50 L. Qual è la densità del blocco? (ρ_acqua = 1000 kg/m³)",
+      "domanda": "Un blocco galleggia in acqua con volume totale 2,0 L e volume immerso 0,50 L. Qual è la densità del blocco? ($\\rho_{acqua}$ = 1000 kg/m³)",
       "categoria": "Fluidi",
       "sottocategoria": "Galleggiamento (calcoli)",
       "opzioni": [
@@ -1230,7 +1230,7 @@
         "1000 kg/m³"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "V_imm/V_tot = 0,50/2,0 = 0,25 ⇒ ρ_blocco = 0,25·ρ_acqua = 250 kg/m³. [web:9]",
+      "spiegazione": "V_imm/V_tot = 0,50/2,0 = 0,25 $\\Rightarrow \\rho_{blocco}$ = 0,25·$\\rho_{acqua}$ = 250 kg/m³. ",
       "difficolta": "media",
       "paroleChiave": [
         "galleggiamento",
@@ -1245,13 +1245,13 @@
       "categoria": "Fluidi",
       "sottocategoria": "Portata (geometria)",
       "opzioni": [
-        "4,7×10^-4 m³/s",
-        "9,4×10^-4 m³/s",
-        "4,7×10^-3 m³/s",
-        "9,4×10^-3 m³/s"
+        "$4{,}7 \\\\times 10^{-4}$ m³/s",
+        "$9{,}4 \\\\times 10^{-4}$ m³/s",
+        "$4{,}7 \\\\times 10^{-3}$ m³/s",
+        "$9{,}4 \\\\times 10^{-3}$ m³/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "r = 0,01 m ⇒ A = π·(0,01)² ≈ 3,14×10^-4 m²; Q = A·v ≈ 3,14×10^-4·1,5 ≈ 4,7×10^-4 m³/s. [web:20]",
+      "spiegazione": "r = 0,01 m $\\Rightarrow$ A = $\\pi$·(0,01)² $\\approx 3{,}14 \\\\times 10^{-4}$ m²; Q = A·v $\\approx 3{,}14 \\\\times 10^{-4}$·1,5 $\\approx 4{,}7 \\\\times 10^{-4}$ m³/s. ",
       "difficolta": "media",
       "paroleChiave": [
         "portata",
@@ -1262,7 +1262,7 @@
     },
     {
       "id": "flu_061",
-      "domanda": "In un condotto, l'acqua passa da A1 = 3,0×10^-4 m² a A2 = 1,0×10^-4 m². Se v1 = 2,0 m/s, quanto vale v2?",
+      "domanda": "In un condotto, l'acqua passa da A1 = $3{,}0 \\\\times 10^{-4}$ m² a A2 = $1{,}0 \\\\times 10^{-4}$ m². Se v1 = 2,0 m/s, quanto vale v2?",
       "categoria": "Fluidi",
       "sottocategoria": "Continuità (calcoli)",
       "opzioni": [
@@ -1272,7 +1272,7 @@
         "6,0 m/s"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Con A1v1 = A2v2, v2 = v1·A1/A2 = 2,0·(3,0/1,0) = 6,0 m/s. [web:20]",
+      "spiegazione": "Con A1v1 = A2v2, v2 = v1·A1/A2 = 2,0·(3,0/1,0) = 6,0 m/s. ",
       "difficolta": "media",
       "paroleChiave": [
         "continuita",
@@ -1293,7 +1293,7 @@
         "Legge di Coulomb"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "L'equazione di Bernoulli collega pressione e velocità (oltre alla quota) nel flusso di un fluido ideale. [web:7]",
+      "spiegazione": "L'equazione di Bernoulli collega pressione e velocità (oltre alla quota) nel flusso di un fluido ideale. ",
       "difficolta": "media",
       "paroleChiave": [
         "bernoulli",
@@ -1314,7 +1314,7 @@
         "Non si può dire nulla"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "A quota costante Bernoulli implica che pressione maggiore corrisponde a velocità minore, quindi se pA > pB allora vA < vB. [web:7]",
+      "spiegazione": "A quota costante Bernoulli implica che pressione maggiore corrisponde a velocità minore, quindi se pA > pB allora vA < vB. ",
       "difficolta": "media",
       "paroleChiave": [
         "bernoulli",
@@ -1335,7 +1335,7 @@
         "Resta uguale"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Poiché v = √(2gh), se h raddoppia allora v aumenta di un fattore √2. [web:21]",
+      "spiegazione": "Poiché v = √(2gh), se h raddoppia allora v aumenta di un fattore √2. ",
       "difficolta": "media",
       "paroleChiave": [
         "torricelli",
@@ -1377,7 +1377,7 @@
         "F_A = 0"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Se affonda, la forza risultante è verso il basso, quindi il peso è maggiore della spinta: P > F_A. [web:9]",
+      "spiegazione": "Se affonda, la forza risultante è verso il basso, quindi il peso è maggiore della spinta: P > F_A. ",
       "difficolta": "media",
       "paroleChiave": [
         "affondare",
@@ -1392,13 +1392,13 @@
       "categoria": "Fluidi",
       "sottocategoria": "Equilibrio in immersione",
       "opzioni": [
-        "ρ_oggetto < ρ_liquido",
-        "ρ_oggetto = ρ_liquido",
-        "ρ_oggetto > ρ_liquido",
+        "$\\rho$_oggetto < $\\rho$_liquido",
+        "$\\rho$_oggetto = $\\rho$_liquido",
+        "$\\rho$_oggetto > $\\rho$_liquido",
         "Dipende solo dalla forma"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In equilibrio con immersione completa, spinta e peso si eguagliano; ciò implica densità uguali (densità media dell'oggetto uguale a quella del fluido). [web:9]",
+      "spiegazione": "In equilibrio con immersione completa, spinta e peso si eguagliano; ciò implica densità uguali (densità media dell'oggetto uguale a quella del fluido). ",
       "difficolta": "media",
       "paroleChiave": [
         "equilibrio",
@@ -1419,7 +1419,7 @@
         "Q1 dipende solo da g"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Per conservazione della massa (moto stazionario, fluido incomprimibile) la portata volumetrica si conserva: Q1 = Q2. [web:16]",
+      "spiegazione": "Per conservazione della massa (moto stazionario, fluido incomprimibile) la portata volumetrica si conserva: Q1 = Q2. ",
       "difficolta": "media",
       "paroleChiave": [
         "continuita",
@@ -1440,7 +1440,7 @@
         "Diventa negativa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Con Q = A·v costante, se A raddoppia allora v deve dimezzarsi. [web:20]",
+      "spiegazione": "Con Q = A·v costante, se A raddoppia allora v deve dimezzarsi. ",
       "difficolta": "media",
       "paroleChiave": [
         "continuita",
@@ -1451,17 +1451,17 @@
     },
     {
       "id": "flu_070",
-      "domanda": "In una condotta orizzontale, acqua (ρ = 1000 kg/m³) scorre con v1 = 1,0 m/s e p1 = 1,50×10^5 Pa. Se in un punto più avanti la velocità è v2 = 5,0 m/s, quanto vale p2 (Bernoulli, quota costante)?",
+      "domanda": "In una condotta orizzontale, acqua ($\\rho$ = 1000 kg/m³) scorre con v1 = 1,0 m/s e p1 = $1{,}50 \\\\times 10^{5}$ Pa. Se in un punto più avanti la velocità è v2 = 5,0 m/s, quanto vale p2 (Bernoulli, quota costante)?",
       "categoria": "Fluidi",
       "sottocategoria": "Bernoulli (calcoli)",
       "opzioni": [
-        "1,38×10^5 Pa",
-        "1,62×10^5 Pa",
-        "1,00×10^5 Pa",
-        "1,75×10^5 Pa"
+        "$1{,}38 \\\\times 10^{5}$ Pa",
+        "$1{,}62 \\\\times 10^{5}$ Pa",
+        "$1{,}00 \\\\times 10^{5}$ Pa",
+        "$1{,}75 \\\\times 10^{5}$ Pa"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "p2 = p1 + 1/2ρ(v1²−v2²) = 1,50×10^5 + 500(1−25) = 1,38×10^5 Pa. [web:7]",
+      "spiegazione": "p2 = p1 + 1/2$\\rho$(v1²−v2²) = $1{,}50 \\\\times 10^{5}$ + 500(1−25) = $1{,}38 \\\\times 10^{5}$ Pa. ",
       "difficolta": "media",
       "paroleChiave": [
         "bernoulli",
@@ -1482,7 +1482,7 @@
         "Termine di attrito viscoso"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "La forma base di Bernoulli per fluido ideale non include perdite viscose (attriti). [web:7]",
+      "spiegazione": "La forma base di Bernoulli per fluido ideale non include perdite viscose (attriti). ",
       "difficolta": "media",
       "paroleChiave": [
         "bernoulli",
@@ -1493,7 +1493,7 @@
     },
     {
       "id": "flu_072",
-      "domanda": "Un oggetto di volume 1,0×10^-3 m³ è in un liquido di densità ρ = 1200 kg/m³. Qual è la spinta di Archimede? (g = 9,8 m/s²)",
+      "domanda": "Un oggetto di volume $1{,}0 \\\\times 10^{-3}$ m³ è in un liquido di densità $\\rho$ = 1200 kg/m³. Qual è la spinta di Archimede? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Archimede (calcoli)",
       "opzioni": [
@@ -1503,7 +1503,7 @@
         "118 N"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "F_A = ρ g V = 1200·9,8·1,0×10^-3 ≈ 11,8 N. [web:9]",
+      "spiegazione": "F_A = $\\rho$ g V = 1200·9,8·$1{,}0 \\\\times 10^{-3} \\approx$ 11,8 N. ",
       "difficolta": "media",
       "paroleChiave": [
         "archimede",
@@ -1524,7 +1524,7 @@
         "La nave deve necessariamente capovolgersi"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In galleggiamento la spinta deve eguagliare il peso; aumentando il peso serve spostare più acqua, quindi aumenta il volume immerso. [web:9]",
+      "spiegazione": "In galleggiamento la spinta deve eguagliare il peso; aumentando il peso serve spostare più acqua, quindi aumenta il volume immerso. ",
       "difficolta": "media",
       "paroleChiave": [
         "nave",
@@ -1535,17 +1535,17 @@
     },
     {
       "id": "flu_074",
-      "domanda": "Un manometro a U contiene mercurio. Se la differenza di livello è 2,0 cm, a quale differenza di pressione corrisponde? (ρ_Hg = 13600 kg/m³; g = 9,8 m/s²)",
+      "domanda": "Un manometro a U contiene mercurio. Se la differenza di livello è 2,0 cm, a quale differenza di pressione corrisponde? ($\\rho$_Hg = 13600 kg/m³; g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Manometro a U (calcoli)",
       "opzioni": [
-        "2,7×10^3 Pa",
-        "2,7×10^2 Pa",
-        "1,0×10^5 Pa",
-        "6,7×10^4 Pa"
+        "$2{,}7 \\\\times 10^{3}$ Pa",
+        "$2{,}7 \\\\times 10^{2}$ Pa",
+        "$1{,}0 \\\\times 10^{5}$ Pa",
+        "$6{,}7 \\\\times 10^{4}$ Pa"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Δp = ρgh = 13600·9,8·0,020 ≈ 2,7×10^3 Pa. [web:1]",
+      "spiegazione": "Δp = ρgh = 13600·9,8·0,020 $\\approx 2{,}7 \\\\times 10^{3}$ Pa. ",
       "difficolta": "media",
       "paroleChiave": [
         "manometro",
@@ -1556,17 +1556,17 @@
     },
     {
       "id": "flu_075",
-      "domanda": "Una pressione di 2,0×10^5 Pa agisce su un pistone di area 0,020 m². Qual è la forza esercitata sul pistone?",
+      "domanda": "Una pressione di $2{,}0 \\\\times 10^{5}$ Pa agisce su un pistone di area 0,020 m². Qual è la forza esercitata sul pistone?",
       "categoria": "Fluidi",
       "sottocategoria": "Pressione (calcoli)",
       "opzioni": [
         "1000 N",
         "4000 N",
-        "1,0×10^6 N",
+        "$1{,}0 \\\\times 10^{6}$ N",
         "0,001 N"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "F = p·A = 2,0×10^5·0,020 = 4000 N.",
+      "spiegazione": "F = p·A = $2{,}0 \\\\times 10^{5}$·0,020 = 4000 N.",
       "difficolta": "media",
       "paroleChiave": [
         "pressione",
@@ -1577,17 +1577,17 @@
     },
     {
       "id": "flu_076",
-      "domanda": "Un fluido scorre in un tratto di tubo con area A = 3,0×10^-3 m². Se in quel punto v = 0,80 m/s, qual è la portata Q?",
+      "domanda": "Un fluido scorre in un tratto di tubo con area A = $3{,}0 \\\\times 10^{-3}$ m². Se in quel punto $v = 0$,80 m/s, qual è la portata Q?",
       "categoria": "Fluidi",
       "sottocategoria": "Portata (calcoli)",
       "opzioni": [
-        "2,4×10^-3 m³/s",
-        "3,8×10^-3 m³/s",
-        "2,4×10^-2 m³/s",
-        "3,8×10^-2 m³/s"
+        "$2{,}4 \\\\times 10^{-3}$ m³/s",
+        "$3{,}8 \\\\times 10^{-3}$ m³/s",
+        "$2{,}4 \\\\times 10^{-2}$ m³/s",
+        "$3{,}8 \\\\times 10^{-2}$ m³/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Q = A·v = 3,0×10^-3·0,80 = 2,4×10^-3 m³/s. [web:20]",
+      "spiegazione": "Q = A·v = $3{,}0 \\\\times 10^{-3}$·0,80 = $2{,}4 \\\\times 10^{-3}$ m³/s. ",
       "difficolta": "media",
       "paroleChiave": [
         "portata",
@@ -1608,7 +1608,7 @@
         "La quota è sempre costante"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per conservazione della massa, in moto stazionario la portata volumetrica resta costante lungo il condotto. [web:16]",
+      "spiegazione": "Per conservazione della massa, in moto stazionario la portata volumetrica si conserva lungo il condotto. ",
       "difficolta": "media",
       "paroleChiave": [
         "continuita",
@@ -1619,23 +1619,23 @@
     },
     {
       "id": "flu_078",
-      "domanda": "Due punti di una corrente d'acqua sono alla stessa quota. In A la velocità è 1,0 m/s e la pressione è 1,2×10^5 Pa. In B la velocità è 3,0 m/s. Quanto vale circa la pressione in B? (ρ = 1000 kg/m³)",
+      "domanda": "Due punti di un fluido in quiete sono alla stessa profondità ma in recipienti di forma diversa. Trascurando effetti particolari, le pressioni nei due punti sono:",
       "categoria": "Fluidi",
-      "sottocategoria": "Bernoulli (calcoli)",
+      "sottocategoria": "Pressione nei liquidi",
       "opzioni": [
-        "1,0×10^5 Pa",
-        "1,6×10^5 Pa",
-        "1,2×10^5 Pa",
-        "9,0×10^4 Pa"
+        "Diverse perché la forma cambia la pressione",
+        "Uguali perché dipendono dalla profondità e dal fluido",
+        "Uguali solo se il recipiente è cilindrico",
+        "Dipendono dalla quantità totale di liquido"
       ],
-      "rispostaCorretta": 0,
-      "spiegazione": "pB = pA + 1/2ρ(vA²−vB²) = 1,2×10^5 + 500(1−9) = 1,2×10^5 − 4000 = 1,16×10^5 Pa, quindi l'opzione più vicina è 1,0×10^5 Pa. [web:7]",
+      "rispostaCorretta": 1,
+      "spiegazione": "In idrostatica la pressione a una data profondità dipende dal fluido e dalla quota (Stevino), non dalla forma del contenitore. ",
       "difficolta": "media",
       "paroleChiave": [
-        "bernoulli",
-        "stessa quota",
-        "pressione",
-        "velocita"
+        "idrostatica",
+        "stevino",
+        "stessa profondita",
+        "forma recipiente"
       ]
     },
     {
@@ -1650,7 +1650,7 @@
         "4 volte minore"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Torricelli: v ∝ √h, quindi v2/v1 = √(0,20/0,80) = √(1/4) = 1/2; la velocità diventa 2 volte minore. [web:21]",
+      "spiegazione": "Torricelli: v $\\propto$ √h, quindi v2/v1 = √(0,20/0,80) = √(1/4) = 1/2; la velocità diventa 2 volte minore. ",
       "difficolta": "media",
       "paroleChiave": [
         "torricelli",
@@ -1671,7 +1671,7 @@
         "Velocità diminuisce, pressione aumenta"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per continuità in restringimento la velocità aumenta; per Bernoulli (stessa quota) aumentando v la pressione statica tende a diminuire. [web:20][web:7]",
+      "spiegazione": "Per continuità in restringimento la velocità aumenta; per Bernoulli (stessa quota) aumentando v la pressione statica tende a diminuire. ",
       "difficolta": "media",
       "paroleChiave": [
         "venturi",
@@ -1682,7 +1682,7 @@
     },
     {
       "id": "flu_081",
-      "domanda": "Un serbatoio chiuso contiene acqua (ρ = 1000 kg/m³) con sopra un gas a pressione assoluta p_sup = 2,0×10^5 Pa; all'esterno del foro c'è p_est = 1,0×10^5 Pa. Il foro è 0,50 m sotto il livello dell'acqua. Qual è circa la velocità di uscita (fluido ideale)? (g = 9,8 m/s²)",
+      "domanda": "Un serbatoio chiuso contiene acqua ($\\rho$ = 1000 kg/m³) con sopra un gas a pressione assoluta p_sup = $2{,}0 \\\\times 10^{5}$ Pa; all'esterno del foro c'è p_est = $1{,}0 \\\\times 10^{5}$ Pa. Il foro è 0,50 m sotto il livello dell'acqua. Qual è circa la velocità di uscita (fluido ideale)? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Bernoulli + Torricelli (serbatoio pressurizzato)",
       "opzioni": [
@@ -1692,7 +1692,7 @@
         "20,5 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Da Bernoulli tra superficie e foro: v = √(2(p_sup−p_est)/ρ + 2gh) = √(200 + 9,8) ≈ 14,5 m/s. [web:7]",
+      "spiegazione": "Da Bernoulli tra superficie e foro: v = √(2(p_sup−p_est)/$\\rho$ + 2gh) = √(200 + 9,8) $\\approx$ 14,5 m/s. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "bernoulli",
@@ -1703,7 +1703,7 @@
     },
     {
       "id": "flu_082",
-      "domanda": "In un Venturi orizzontale scorre acqua (ρ = 1000 kg/m³). Le sezioni sono A1 = 6 cm² e A2 = 2 cm². Un manometro misura p1 − p2 = 4,0 kPa. Quanto vale v2 (fluido ideale)?",
+      "domanda": "In un Venturi orizzontale scorre acqua ($\\rho$ = 1000 kg/m³). Le sezioni sono A1 = 6 cm² e A2 = 2 cm². Un manometro misura p1 − p2 = 4,0 kPa. Quanto vale v2 (fluido ideale)?",
       "categoria": "Fluidi",
       "sottocategoria": "Venturi (calcoli con Bernoulli e continuità)",
       "opzioni": [
@@ -1713,7 +1713,7 @@
         "6,0 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Da continuità v2 = (A1/A2)v1 = 3v1 e da Bernoulli p1−p2 = (1/2)ρ(v2²−v1²) = 4ρv1² ⇒ v1=1 m/s e v2=3 m/s. [web:20][web:7]",
+      "spiegazione": "Da continuità v2 = (A1/A2)v1 = 3v1 e da Bernoulli p1−p2 = (1/2)$\\rho$(v2²−v1²) = 4ρv1² $\\Rightarrow$ v1=1 m/s e v2=3 m/s. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "venturi",
@@ -1734,7 +1734,7 @@
         "5,00 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per continuità Q0 = Q1+Q2 ⇒ A0v0 = A1v1 + A2v2 = 1·2 + 1·3 (in unità coerenti) ⇒ v0 = 5/4 = 1,25 m/s. [web:16]",
+      "spiegazione": "Per continuità Q0 = Q1+Q2 $\\Rightarrow$ A0v0 = A1v1 + A2v2 = 1·2 + 1·3 (in unità coerenti) $\\Rightarrow$ v0 = 5/4 = 1,25 m/s. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "continuita",
@@ -1745,7 +1745,7 @@
     },
     {
       "id": "flu_084",
-      "domanda": "Un blocco di volume V = 0,010 m³ galleggia in acqua (ρ = 1000 kg/m³) ed ha densità ρ_blocco = 600 kg/m³. Quanta massa aggiuntiva massima puoi appoggiare sopra prima che il blocco sia appena completamente immerso? (g si semplifica)",
+      "domanda": "Un blocco di volume V = 0,010 m³ galleggia in acqua ($\\rho$ = 1000 kg/m³) ed ha densità $\\rho_{blocco}$ = 600 kg/m³. Quanta massa aggiuntiva massima puoi appoggiare sopra prima che il blocco sia appena completamente immerso? (g si semplifica)",
       "categoria": "Fluidi",
       "sottocategoria": "Galleggiamento (carico massimo)",
       "opzioni": [
@@ -1755,7 +1755,7 @@
         "6,0 kg"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Alla completa immersione la spinta massima corrisponde a massa totale ρ_acqua V = 10 kg, mentre il blocco pesa ρ_blocco V = 6 kg, quindi massa aggiuntiva = 4 kg. [web:9]",
+      "spiegazione": "Alla completa immersione la spinta massima corrisponde a massa totale $\\rho_{acqua}$ V = 10 kg, mentre il blocco pesa $\\rho_{blocco}$ V = 6 kg, quindi massa aggiuntiva = 4 kg. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "archimede",
@@ -1766,7 +1766,7 @@
     },
     {
       "id": "flu_085",
-      "domanda": "Un manometro a U con mercurio (ρ_Hg = 13600 kg/m³) misura una differenza di livello Δh = 3,0 cm. Qual è la differenza di pressione corrispondente? (g = 9,8 m/s²)",
+      "domanda": "Un manometro a U con mercurio ($\\rho_{Hg}$ = 13600 kg/m³) misura una differenza di livello Δh = 3,0 cm. Qual è la differenza di pressione corrispondente? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Manometro a U (calcoli)",
       "opzioni": [
@@ -1776,7 +1776,7 @@
         "0,40 kPa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Δp = ρgh = 13600·9,8·0,030 ≈ 4,0×10^3 Pa = 4,0 kPa. [web:1]",
+      "spiegazione": "Δp = ρgh = 13600·9,8·0,030 $\\approx$ 4,0 kPa. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "manometro",
@@ -1787,7 +1787,7 @@
     },
     {
       "id": "flu_086",
-      "domanda": "In un capillare di raggio r = 0,50 mm l'acqua (ρ = 1000 kg/m³) risale con angolo di contatto θ ≈ 0° e tensione superficiale γ = 0,072 N/m. Quanto vale circa l'altezza di risalita h? (g = 9,8 m/s²)",
+      "domanda": "In un capillare di raggio r = 0,50 mm l'acqua ($\\rho$ = 1000 kg/m³) risale con angolo di contatto $\\theta \\approx$ 0° e tensione superficiale $\\gamma$ = 0,072 N/m. Quanto vale circa l'altezza di risalita h? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Capillarità (calcoli)",
       "opzioni": [
@@ -1797,7 +1797,7 @@
         "2,9 mm"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Con h = 2γcosθ/(ρgr) e cosθ≈1: h = 0,144/(1000·9,8·5×10^-4) ≈ 2,9 cm. [web:41]",
+      "spiegazione": "Con h = 2γcosθ/(ρgr) e cosθ$\\approx$1: h = 0,144/(1000·9,8·$5 \\\\times 10^{-4}$) $\\approx$ 2,9 cm.",
       "difficolta": "difficile",
       "paroleChiave": [
         "capillarita",
@@ -1808,7 +1808,7 @@
     },
     {
       "id": "flu_087",
-      "domanda": "Una gocciolina sferica di raggio R = 1,0 mm ha tensione superficiale γ = 0,072 N/m. Quanto vale la sovrapressione interna rispetto all'esterno per effetto di Laplace?",
+      "domanda": "Una gocciolina sferica di raggio R = 1,0 mm ha tensione superficiale $\\gamma$ = 0,072 N/m. Quanto vale la sovrapressione interna rispetto all'esterno per effetto di Laplace?",
       "categoria": "Fluidi",
       "sottocategoria": "Relazione di Laplace (gocce)",
       "opzioni": [
@@ -1818,7 +1818,7 @@
         "1440 Pa"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per una sfera Δp = γ(1/R + 1/R) = 2γ/R = 0,144/0,001 = 144 Pa. [web:38]",
+      "spiegazione": "Per una sfera Δp = $\\gamma$(1/R + 1/R) = 2$\\gamma$/R = 0,144/0,001 = 144 Pa. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "laplace",
@@ -1839,7 +1839,7 @@
         "16 volte maggiore"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "La legge di Poiseuille dà Q ∝ r^4, quindi raddoppiare r moltiplica Q per 2^4 = 16. [web:30]",
+      "spiegazione": "La legge di Poiseuille dà Q $\\propto$ r^4, quindi raddoppiare r moltiplica Q per 2^4 = 16. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "poiseuille",
@@ -1850,17 +1850,17 @@
     },
     {
       "id": "flu_089",
-      "domanda": "In un capillare cilindrico (moto laminare) scorre un fluido con viscosità μ = 1,0×10^-3 Pa·s, lunghezza L = 0,50 m, raggio r = 1,0 mm e differenza di pressione Δp = 2000 Pa. Qual è circa la portata Q secondo Poiseuille?",
+      "domanda": "In un capillare cilindrico (moto laminare) scorre un fluido con viscosità $\\mu$ = $1{,}0 \\\\times 10^{-3}$ Pa·s, lunghezza L = 0,50 m, raggio r = 1,0 mm e differenza di pressione Δp = 2000 Pa. Qual è circa la portata Q secondo Poiseuille?",
       "categoria": "Fluidi",
       "sottocategoria": "Poiseuille (calcoli)",
       "opzioni": [
-        "1,6×10^-8 m³/s",
-        "1,6×10^-6 m³/s",
-        "1,6×10^-4 m³/s",
-        "1,6×10^-2 m³/s"
+        "$1{,}6 \\\\times 10^{-8}$ m³/s",
+        "$1{,}6 \\\\times 10^{-6}$ m³/s",
+        "$1{,}6 \\\\times 10^{-4}$ m³/s",
+        "$1{,}6 \\\\times 10^{-2}$ m³/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Q = (πr^4Δp)/(8μL) = (π·10^-12·2000)/(8·10^-3·0,50) ≈ 1,6×10^-6 m³/s. [web:30]",
+      "spiegazione": "Q = (πr^4Δp)/(8μL) = ($\\pi$·10^-12·2000)/(8·10^-3·0,50) $\\approx 1{,}6 \\\\times 10^{-6}$ m³/s. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "poiseuille",
@@ -1871,7 +1871,7 @@
     },
     {
       "id": "flu_090",
-      "domanda": "Una sferetta di raggio r = 0,050 mm (5,0×10^-5 m) e densità ρ_s = 7800 kg/m³ cade in acqua (ρ = 1000 kg/m³) con viscosità μ = 1,0×10^-3 Pa·s. In regime di Stokes, qual è circa la velocità limite v_t? (g = 9,8 m/s²)",
+      "domanda": "Una sferetta di raggio r = 0,050 mm ($5{,}0 \\\\times 10^{-5}$ m) e densità $\\rho_{s}$ = 7800 kg/m³ cade in acqua ($\\rho$ = 1000 kg/m³) con viscosità $\\mu$ = $1{,}0 \\\\times 10^{-3}$ Pa·s. In regime di Stokes, qual è circa la velocità limite v_t? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Legge di Stokes (velocità limite)",
       "opzioni": [
@@ -1881,7 +1881,7 @@
         "3,7 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Bilanciando peso apparente e forza viscosa 6πμrv (Stokes) si ottiene v_t = 2r^2g(ρ_s−ρ)/(9μ) ≈ 0,037 m/s. [web:39][web:9]",
+      "spiegazione": "Bilanciando peso apparente e forza viscosa 6$\\pi$μrv (Stokes) si ottiene v_t = 2r^2g($\\rho$_s−$\\rho$)/(9$\\mu$) $\\approx$ 0,037 m/s. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "stokes",
@@ -1923,7 +1923,7 @@
         "Dipende dal volume totale del liquido"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per Stevino la pressione al fondo dipende solo dalla profondità (p=ρgh) e la forza vale F=pA=ρghA, indipendente dalla forma del recipiente. [web:1]",
+      "spiegazione": "Per Stevino la pressione al fondo dipende solo dalla profondità (p=ρgh) e la forza vale F=pA=ρghA, indipendente dalla forma del recipiente. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "paradosso idrostatico",
@@ -1934,7 +1934,7 @@
     },
     {
       "id": "flu_093",
-      "domanda": "Un pallone riempito di elio ha volume V = 2,5 m³. Densità: ρ_aria = 1,2 kg/m³, ρ_He = 0,18 kg/m³. Trascurando la massa dell'involucro, qual è circa la massa massima del carico che può sollevare?",
+      "domanda": "Un pallone riempito di elio ha volume V = 2,5 m³. Densità: $\\rho_{aria}$ = 1,2 kg/m³, $\\rho_{He}$ = 0,18 kg/m³. Trascurando la massa dell'involucro, qual è circa la massa massima del carico che può sollevare?",
       "categoria": "Fluidi",
       "sottocategoria": "Archimede nei gas (portanza)",
       "opzioni": [
@@ -1944,7 +1944,7 @@
         "3,0 kg"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "La massa sollevabile è (ρ_aria−ρ_He)V = (1,2−0,18)·2,5 ≈ 2,6 kg perché la spinta è pari al peso del fluido spostato. [web:9]",
+      "spiegazione": "La massa sollevabile è ($\\rho_{aria}$−$\\rho_{He}$)V = (1,2−0,18)·2,5 $\\approx$ 2,6 kg perché la spinta è pari al peso del fluido spostato. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "elio",
@@ -1955,17 +1955,17 @@
     },
     {
       "id": "flu_094",
-      "domanda": "In una condotta, due punti A e B sono collegati da un tratto dove la velocità è la stessa (vA = vB) ma B si trova 5,0 m più in alto di A. Per acqua (ρ = 1000 kg/m³), quanto vale pA − pB (fluido ideale)? (g = 9,8 m/s²)",
+      "domanda": "In una condotta, due punti A e B sono collegati da un tratto dove la velocità è la stessa (vA = vB) ma B si trova 5,0 m più in alto di A. Per acqua ($\\rho$ = 1000 kg/m³), quanto vale pA − pB (fluido ideale)? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Bernoulli (salto di quota a v costante)",
       "opzioni": [
-        "4,9×10^3 Pa",
-        "4,9×10^4 Pa",
-        "9,8×10^4 Pa",
-        "5,0×10^5 Pa"
+        "$4{,}9 \\\\times 10^{3}$ Pa",
+        "$4{,}9 \\\\times 10^{4}$ Pa",
+        "$9{,}8 \\\\times 10^{4}$ Pa",
+        "$5{,}0 \\\\times 10^{5}$ Pa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Con Bernoulli e v costante: pA + ρghA = pB + ρghB ⇒ pA−pB = ρg(hB−hA) = 1000·9,8·5,0 = 4,9×10^4 Pa. [web:7]",
+      "spiegazione": "Con Bernoulli e v costante: pA + ρghA = pB + ρghB $\\Rightarrow$ pA−pB = ρg(hB−hA) = 1000·9,8·5,0 = $4{,}9 \\\\times 10^{4}$ Pa. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "bernoulli",
@@ -1976,17 +1976,17 @@
     },
     {
       "id": "flu_095",
-      "domanda": "Un tubo orizzontale trasporta acqua. In sezione 1: A1 = 4,0×10^-4 m², p1 = 2,0×10^5 Pa, v1 = 2,0 m/s. In sezione 2: A2 = 1,0×10^-4 m². Trascurando perdite, quanto vale p2?",
+      "domanda": "Un tubo orizzontale trasporta acqua. In sezione 1: A1 = $4{,}0 \\\\times 10^{-4}$ m², p1 = $2{,}0 \\\\times 10^{5}$ Pa, v1 = 2,0 m/s. In sezione 2: A2 = $1{,}0 \\\\times 10^{-4}$ m². Trascurando perdite, quanto vale p2?",
       "categoria": "Fluidi",
       "sottocategoria": "Continuità + Bernoulli (calcolo pressione)",
       "opzioni": [
-        "1,4×10^5 Pa",
-        "1,7×10^5 Pa",
-        "2,0×10^5 Pa",
-        "2,6×10^5 Pa"
+        "$1{,}4 \\\\times 10^{5}$ Pa",
+        "$1{,}7 \\\\times 10^{5}$ Pa",
+        "$2{,}0 \\\\times 10^{5}$ Pa",
+        "$2{,}6 \\\\times 10^{5}$ Pa"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Da continuità v2 = v1(A1/A2)=2·4=8 m/s e da Bernoulli a quota costante p2 = p1 + (1/2)ρ(v1²−v2²)=2,0×10^5+500(4−64)=1,4×10^5 Pa. [web:20][web:7]",
+      "spiegazione": "Da continuità v2 = v1(A1/A2)=2·4=8 m/s e da Bernoulli a quota costante p2 = p1 + (1/2)$\\rho$(v1²−v2²)=$2{,}0 \\\\times 10^{5}$+500(4−64)=$1{,}4 \\\\times 10^{5}$ Pa. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "continuita",
@@ -1997,7 +1997,7 @@
     },
     {
       "id": "flu_096",
-      "domanda": "Un tubo orizzontale ha due sezioni: A1 = 3A2. La pressione in 1 è maggiore di quella in 2 di Δp = 9,0 kPa. Per acqua (ρ = 1000 kg/m³), qual è la velocità v2 (fluido ideale)?",
+      "domanda": "Un tubo orizzontale ha due sezioni: A1 = 3A2. La pressione in 1 è maggiore di quella in 2 di Δp = 9,0 kPa. Per acqua ($\\rho$ = 1000 kg/m³), qual è la velocità v2 (fluido ideale)?",
       "categoria": "Fluidi",
       "sottocategoria": "Bernoulli + continuità (rapporti)",
       "opzioni": [
@@ -2007,7 +2007,7 @@
         "9,0 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Con A1=3A2 si ha v2=3v1 e Δp=(1/2)ρ(v2²−v1²)=(1/2)ρ(9v1²−v1²)=4ρv1² ⇒ v1=√(Δp/(4ρ))=1,5 m/s e v2=4,5 m/s. [web:20][web:7]",
+      "spiegazione": "Con A1=3A2 si ha v2=3v1 e Δp=(1/2)$\\rho$(v2²−v1²)=(1/2)$\\rho$(9v1²−v1²)=4ρv1² $\\Rightarrow$ v1=√(Δp/(4$\\rho$))=1,5 m/s e v2=4,5 m/s. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "venturi",
@@ -2018,7 +2018,7 @@
     },
     {
       "id": "flu_097",
-      "domanda": "Una condotta trasporta acqua con portata Q = 3,0×10^-3 m³/s. La sezione passa da diametro d1 = 6,0 cm a d2 = 3,0 cm. Qual è il rapporto v2/v1?",
+      "domanda": "Una condotta trasporta acqua con portata Q = $3{,}0 \\\\times 10^{-3}$ m³/s. La sezione passa da diametro d1 = 6,0 cm a d2 = 3,0 cm. Qual è il rapporto v2/v1?",
       "categoria": "Fluidi",
       "sottocategoria": "Continuità (diametri)",
       "opzioni": [
@@ -2028,7 +2028,7 @@
         "1/4"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Con Q=Av e A∝d², dimezzando il diametro l'area diventa 1/4 e quindi la velocità diventa 4 volte maggiore. [web:16]",
+      "spiegazione": "Con Q=Av e A$\\propto$d², dimezzando il diametro l'area diventa 1/4 e quindi la velocità diventa 4 volte maggiore. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "continuita",
@@ -2049,7 +2049,7 @@
         "4,0 m"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "La velocità di uscita è v=√(2gh)=√(2·9,8·2,0)≈6,26 m/s (Torricelli) e il tempo di caduta è t=√(2·1,25/9,8)≈0,505 s, quindi x=vt≈3,2 m. [web:21]",
+      "spiegazione": "La velocità di uscita è v=√(2gh)=√(2·9,8·2,0)$\\approx$6,26 m/s (Torricelli) e il tempo di caduta è t=√(2·1,25/9,8)$\\approx$0,505 s, quindi x=vt$\\approx$3,2 m. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "torricelli",
@@ -2060,7 +2060,7 @@
     },
     {
       "id": "flu_099",
-      "domanda": "Un tubo di Pitot in acqua misura una differenza tra pressione di ristagno e pressione statica pari a Δp = 2,0 kPa. Qual è la velocità del flusso? (ρ = 1000 kg/m³)",
+      "domanda": "Un tubo di Pitot in acqua misura una differenza tra pressione di ristagno e pressione statica pari a Δp = 2,0 kPa. Qual è la velocità del flusso? ($\\rho$ = 1000 kg/m³)",
       "categoria": "Fluidi",
       "sottocategoria": "Bernoulli (Pitot, pressione dinamica)",
       "opzioni": [
@@ -2070,7 +2070,7 @@
         "6,3 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Da Bernoulli tra punto di flusso e ristagno: Δp = (1/2)ρv² ⇒ v = √(2Δp/ρ)=√(4000/1000)=2,0 m/s, quindi l'opzione corretta è 2,0 m/s? (attenzione) in realtà √4=2,0 m/s, quindi risposta 1. [web:7]",
+      "spiegazione": "Da Bernoulli tra punto di flusso e ristagno: Δp = (1/2)ρv² $\\Rightarrow$ v = √(2Δp/$\\rho$)=√(4000/1000)=2,0 m/s, quindi l'opzione corretta è 2,0 m/s? (attenzione) in realtà √4=2,0 m/s, quindi risposta 1. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "pitot",
@@ -2081,7 +2081,7 @@
     },
     {
       "id": "flu_100",
-      "domanda": "Un tubo di Pitot in acqua misura una differenza tra pressione di ristagno e pressione statica pari a Δp = 2,0 kPa. Qual è la velocità del flusso? (ρ = 1000 kg/m³)",
+      "domanda": "Un tubo di Pitot in acqua misura una differenza tra pressione di ristagno e pressione statica pari a Δp = 2,0 kPa. Qual è la velocità del flusso? ($\\rho$ = 1000 kg/m³)",
       "categoria": "Fluidi",
       "sottocategoria": "Bernoulli (Pitot, pressione dinamica)",
       "opzioni": [
@@ -2091,7 +2091,7 @@
         "6,3 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Da Bernoulli Δp = (1/2)ρv² ⇒ v = √(2Δp/ρ) = √(2·2000/1000) = √4 = 2,0 m/s. [web:7]",
+      "spiegazione": "Da Bernoulli Δp = (1/2)ρv² $\\Rightarrow$ v = √(2Δp/$\\rho$) = √(2·2000/1000) = √4 = 2,0 m/s. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "pitot",
@@ -2112,7 +2112,7 @@
         "Dalla viscosità dell'acqua"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La legge di Stevino afferma che la componente idrostatica varia come ρgh, quindi dipende da densità, gravità e profondità (oltre a un'eventuale pressione di riferimento). [web:1]",
+      "spiegazione": "La legge di Stevino afferma che la componente idrostatica varia come ρgh, quindi dipende da densità, gravità e profondità (oltre a un'eventuale pressione di riferimento). ",
       "difficolta": "difficile",
       "paroleChiave": [
         "stevino",
@@ -2123,7 +2123,7 @@
     },
     {
       "id": "flu_102",
-      "domanda": "Un cilindro di volume 2,0×10^-3 m³ e densità 1200 kg/m³ è appeso a un dinamometro e immerso completamente in acqua (ρ = 1000 kg/m³). Qual è circa la lettura del dinamometro? (g = 9,8 m/s²)",
+      "domanda": "Un cilindro di volume $2{,}0 \\\\times 10^{-3}$ m³ e densità 1200 kg/m³ è appeso a un dinamometro e immerso completamente in acqua ($\\rho$ = 1000 kg/m³). Qual è circa la lettura del dinamometro? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Peso apparente (calcoli)",
       "opzioni": [
@@ -2133,7 +2133,7 @@
         "39,2 N"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La lettura è T = mg − F_A = ρ_sVg − ρVg = (1200−1000)·2,0×10^-3·9,8 ≈ 3,9 N? (attenzione) calcolo: Δρ=200 ⇒ T=200·0,002·9,8=3,92 N, quindi risposta 0. [web:9]",
+      "spiegazione": "La lettura è T = mg − F_A = $\\rho_{s}$Vg − ρVg = (1200−1000)·$2{,}0 \\\\times 10^{-3}$·9,8 $\\approx$ 3,9 N? (attenzione) calcolo: $\\Delta$ρ=200 $\\Rightarrow$ T=200·0,002·9,8=3,92 N, quindi risposta 0. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "peso apparente",
@@ -2144,7 +2144,7 @@
     },
     {
       "id": "flu_103",
-      "domanda": "Un cilindro di volume 2,0×10^-3 m³ e densità 1200 kg/m³ è appeso a un dinamometro e immerso completamente in acqua (ρ = 1000 kg/m³). Qual è circa la lettura del dinamometro? (g = 9,8 m/s²)",
+      "domanda": "Un cilindro di volume $2{,}0 \\\\times 10^{-3}$ m³ e densità 1200 kg/m³ è appeso a un dinamometro e immerso completamente in acqua ($\\rho$ = 1000 kg/m³). Qual è circa la lettura del dinamometro? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Peso apparente (calcoli)",
       "opzioni": [
@@ -2154,7 +2154,7 @@
         "39,2 N"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "La lettura è T = mg − F_A = (ρ_s−ρ) V g = (1200−1000)·2,0×10^-3·9,8 ≈ 3,9 N. [web:9]",
+      "spiegazione": "La lettura è T = mg − F_A = ($\\rho_{s}$−$\\rho$) V g = (1200−1000)·$2{,}0 \\\\times 10^{-3}$·9,8 $\\approx$ 3,9 N. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "peso apparente",
@@ -2175,7 +2175,7 @@
         "Quadruplica"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Con Q = A·v e A costante, raddoppiando Q deve raddoppiare anche v. [web:20]",
+      "spiegazione": "Con Q = A·v e A costante, raddoppiando Q deve raddoppiare anche v. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "portata",
@@ -2186,17 +2186,17 @@
     },
     {
       "id": "flu_105",
-      "domanda": "Una corrente d'acqua (ρ = 1000 kg/m³) sale di 2,0 m tra due punti; in basso ha p1 = 1,8×10^5 Pa e v1 = 4,0 m/s, in alto ha v2 = 2,0 m/s. Qual è circa p2 (fluido ideale)? (g = 9,8 m/s²)",
+      "domanda": "Una corrente d'acqua ($\\rho$ = 1000 kg/m³) sale di 2,0 m tra due punti; in basso ha p1 = $1{,}8 \\\\times 10^{5}$ Pa e v1 = 4,0 m/s, in alto ha v2 = 2,0 m/s. Qual è circa p2 (fluido ideale)? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Bernoulli (quota e velocità)",
       "opzioni": [
-        "1,2×10^5 Pa",
-        "1,5×10^5 Pa",
-        "1,9×10^5 Pa",
-        "2,2×10^5 Pa"
+        "$1{,}2 \\\\times 10^{5}$ Pa",
+        "$1{,}5 \\\\times 10^{5}$ Pa",
+        "$1{,}9 \\\\times 10^{5}$ Pa",
+        "$2{,}2 \\\\times 10^{5}$ Pa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Da Bernoulli: p2 = p1 + (1/2)ρ(v1²−v2²) − ρgΔh = 1,8×10^5 + 500(16−4) − 1000·9,8·2 ≈ 1,46×10^5 Pa ≈ 1,5×10^5 Pa. [web:7]",
+      "spiegazione": "Da Bernoulli: p2 = p1 + (1/2)$\\rho$(v1²−v2²) − ρgΔh = $1{,}8 \\\\times 10^{5}$ + 500(16−4) − 1000·9,8·2 $\\approx 1{,}46 \\\\times 10^{5}$ Pa $\\approx 1{,}5 \\\\times 10^{5}$ Pa. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "bernoulli",
@@ -2207,7 +2207,7 @@
     },
     {
       "id": "flu_106",
-      "domanda": "In un tubo orizzontale l'acqua accelera da 1,0 m/s a 5,0 m/s. Qual è la variazione p2 − p1 prevista da Bernoulli (fluido ideale, ρ = 1000 kg/m³)?",
+      "domanda": "In un tubo orizzontale l'acqua accelera da 1,0 m/s a 5,0 m/s. Qual è la variazione p2 − p1 prevista da Bernoulli (fluido ideale, $\\rho$ = 1000 kg/m³)?",
       "categoria": "Fluidi",
       "sottocategoria": "Bernoulli (variazione di pressione)",
       "opzioni": [
@@ -2217,7 +2217,7 @@
         "-24 kPa"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "A quota costante p2−p1 = (1/2)ρ(v1²−v2²)=500(1−25) = −12000 Pa = −12 kPa, quindi risposta 1? (attenzione) il risultato è −12 kPa, quindi risposta 1. [web:7]",
+      "spiegazione": "A quota costante p2−p1 = (1/2)$\\rho$(v1²−v2²)=500(1−25) = −12000 Pa = −12 kPa, quindi risposta 1? (attenzione) il risultato è −12 kPa, quindi risposta 1. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "bernoulli",
@@ -2228,7 +2228,7 @@
     },
     {
       "id": "flu_107",
-      "domanda": "In un tubo orizzontale l'acqua accelera da 1,0 m/s a 5,0 m/s. Qual è la variazione p2 − p1 prevista da Bernoulli (fluido ideale, ρ = 1000 kg/m³)?",
+      "domanda": "In un tubo orizzontale l'acqua accelera da 1,0 m/s a 5,0 m/s. Qual è la variazione p2 − p1 prevista da Bernoulli (fluido ideale, $\\rho$ = 1000 kg/m³)?",
       "categoria": "Fluidi",
       "sottocategoria": "Bernoulli (variazione di pressione)",
       "opzioni": [
@@ -2238,7 +2238,7 @@
         "-24 kPa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "A quota costante p2−p1 = (1/2)ρ(v1²−v2²)=500(1−25) = −12000 Pa = −12 kPa. [web:7]",
+      "spiegazione": "A quota costante p2−p1 = (1/2)$\\rho$(v1²−v2²)=500(1−25) = −12000 Pa = −12 kPa. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "bernoulli",
@@ -2249,7 +2249,7 @@
     },
     {
       "id": "flu_108",
-      "domanda": "Un liquido di densità ρ scorre in un tubo cilindrico in moto laminare (Poiseuille). Se raddoppi la lunghezza L del tubo mantenendo tutto il resto uguale, la portata Q:",
+      "domanda": "Un liquido di densità $\\rho$ scorre in un tubo cilindrico in moto laminare (Poiseuille). Se raddoppi la lunghezza L del tubo mantenendo tutto il resto uguale, la portata Q:",
       "categoria": "Fluidi",
       "sottocategoria": "Poiseuille (dipendenze)",
       "opzioni": [
@@ -2259,7 +2259,7 @@
         "Non cambia"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Poiseuille dà Q ∝ 1/L, quindi raddoppiando L la portata si dimezza. [web:30]",
+      "spiegazione": "Poiseuille dà Q $\\propto$ 1/L, quindi raddoppiando L la portata si dimezza. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "poiseuille",
@@ -2270,7 +2270,7 @@
     },
     {
       "id": "flu_109",
-      "domanda": "Un tubo trasporta acqua con velocità v = 3,0 m/s. Se la densità è ρ = 1000 kg/m³, quanto vale la pressione dinamica (1/2 ρv²)?",
+      "domanda": "Un tubo trasporta acqua con velocità v = 3,0 m/s. Se la densità è $\\rho$ = 1000 kg/m³, quanto vale la pressione dinamica (1/2 ρv²)?",
       "categoria": "Fluidi",
       "sottocategoria": "Bernoulli (pressione dinamica)",
       "opzioni": [
@@ -2280,7 +2280,7 @@
         "45 kPa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La pressione dinamica è (1/2)ρv² = 0,5·1000·9 = 4500 Pa = 4,5 kPa. [web:7]",
+      "spiegazione": "La pressione dinamica è (1/2)ρv² = 0,5·1000·9 = 4500 Pa = 4,5 kPa. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "pressione dinamica",
@@ -2291,17 +2291,17 @@
     },
     {
       "id": "flu_110",
-      "domanda": "Un blocco è immerso completamente in un liquido e risulta in equilibrio (non sale né scende) senza essere legato. Quale relazione tra densità del blocco e del liquido deve valere?",
+      "domanda": "Un corpo è immerso completamente in un liquido e risulta in equilibrio (non sale né scende) senza essere legato. Quale relazione tra densità del blocco e del liquido deve valere?",
       "categoria": "Fluidi",
       "sottocategoria": "Equilibrio in immersione",
       "opzioni": [
-        "ρ_blocco < ρ_liquido",
-        "ρ_blocco = ρ_liquido",
-        "ρ_blocco > ρ_liquido",
-        "ρ_blocco = 0"
+        "$\\rho_{blocco}$ < $\\rho_{liquido}$",
+        "$\\rho_{blocco}$ = $\\rho_{liquido}$",
+        "$\\rho_{blocco}$ > $\\rho_{liquido}$",
+        "$\\rho_{blocco}$ = 0"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Con immersione completa e equilibrio, spinta e peso sono uguali, il che implica densità medie uguali. [web:9]",
+      "spiegazione": "Con immersione completa e equilibrio, spinta e peso sono uguali, il che implica densità medie uguali. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "equilibrio",
@@ -2322,7 +2322,7 @@
         "4"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Da Q=Av costante, v2/v1 = A1/A2 = 1/0,25 = 4. [web:16]",
+      "spiegazione": "Da Q=Av costante, v2/v1 = A1/A2 = 1/0,25 = 4. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "continuita",
@@ -2343,7 +2343,7 @@
         "Dipendono dalla quantità totale di liquido"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In idrostatica la pressione a una data profondità dipende dal fluido e dalla quota (Stevino), non dalla forma del contenitore. [web:1]",
+      "spiegazione": "In idrostatica la pressione a una data profondità dipende dal fluido e dalla quota (Stevino), non dalla forma del contenitore. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "idrostatica",
@@ -2354,7 +2354,7 @@
     },
     {
       "id": "flu_113",
-      "domanda": "Un corpo completamente immerso sposta un volume di liquido V_sp = 1,2×10^-3 m³. Il liquido ha densità ρ = 900 kg/m³. Quanto vale la spinta di Archimede? (g = 9,8 m/s²)",
+      "domanda": "Un corpo completamente immerso sposta un volume di liquido V_sp = $1{,}2 \\\\times 10^{-3}$ m³. Il liquido ha densità $\\rho$ = 900 kg/m³. Quanto vale la spinta di Archimede? (g = 9,8 m/s²)",
       "categoria": "Fluidi",
       "sottocategoria": "Archimede (calcoli)",
       "opzioni": [
@@ -2364,7 +2364,7 @@
         "0,106 N"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "F_A = ρgV = 900·9,8·1,2×10^-3 ≈ 10,6 N. [web:9]",
+      "spiegazione": "F_A = ρgV = 900·9,8·$1{,}2 \\\\times 10^{-3} \\approx$ 10,6 N. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "archimede",
@@ -2375,7 +2375,7 @@
     },
     {
       "id": "flu_114",
-      "domanda": "Un forellino è a profondità h = 0,80 m sotto il livello libero. Se il serbatoio viene portato sulla Luna (g ≈ 1/6 di quello terrestre), la velocità di uscita (Torricelli) rispetto a quella sulla Terra diventa:",
+      "domanda": "Un forellino è a profondità h = 0,80 m sotto il livello libero. Se il serbatoio viene portato sulla Luna (g $\\approx$ 1/6 di quello terrestre), la velocità di uscita (Torricelli) rispetto a quella sulla Terra diventa:",
       "categoria": "Fluidi",
       "sottocategoria": "Torricelli (dipendenza da g)",
       "opzioni": [
@@ -2385,7 +2385,7 @@
         "6"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Poiché v = √(2gh), a parità di h la velocità è proporzionale a √g, quindi v_Luna/v_Terra = √(1/6) = 1/√6. [web:21]",
+      "spiegazione": "Poiché v = √(2gh), a parità di h la velocità è proporzionale a √g, quindi v_Luna/v_Terra = √(1/6) = 1/√6. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "torricelli",
@@ -2396,7 +2396,7 @@
     },
     {
       "id": "flu_115",
-      "domanda": "In un Venturi orizzontale, la sezione passa da A1 a A2 = A1/2 e la velocità in 1 è v1 = 2,0 m/s. Quanto vale la diminuzione di pressione p1 − p2 (acqua, ρ = 1000 kg/m³, fluido ideale)?",
+      "domanda": "In un Venturi orizzontale, la sezione passa da A1 a A2 = A1/2 e la velocità in 1 è v1 = 2,0 m/s. Quanto vale la diminuzione di pressione p1 − p2 (acqua, $\\rho$ = 1000 kg/m³, fluido ideale)?",
       "categoria": "Fluidi",
       "sottocategoria": "Venturi (calcolo Δp)",
       "opzioni": [
@@ -2406,7 +2406,7 @@
         "12,0 kPa"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Da continuità v2 = 2v1 = 4 m/s e da Bernoulli p1−p2 = (1/2)ρ(v2²−v1²)=500(16−4)=6000 Pa = 6,0 kPa, quindi risposta 1. [web:20][web:7]",
+      "spiegazione": "Da continuità v2 = 2v1 = 4 m/s e da Bernoulli p1−p2 = (1/2)$\\rho$(v2²−v1²)=500(16−4)=6000 Pa = 6,0 kPa, quindi risposta 1. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "venturi",
@@ -2417,7 +2417,7 @@
     },
     {
       "id": "flu_116",
-      "domanda": "In un Venturi orizzontale, la sezione passa da A1 a A2 = A1/2 e la velocità in 1 è v1 = 2,0 m/s. Quanto vale la diminuzione di pressione p1 − p2 (acqua, ρ = 1000 kg/m³, fluido ideale)?",
+      "domanda": "In un Venturi orizzontale, la sezione passa da A1 a A2 = A1/2 e la velocità in 1 è v1 = 2,0 m/s. Quanto vale la diminuzione di pressione p1 − p2 (acqua, $\\rho$ = 1000 kg/m³, fluido ideale)?",
       "categoria": "Fluidi",
       "sottocategoria": "Venturi (calcolo Δp)",
       "opzioni": [
@@ -2427,7 +2427,7 @@
         "12,0 kPa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Da continuità v2 = 2v1 = 4 m/s e da Bernoulli p1−p2 = (1/2)ρ(v2²−v1²)=500(16−4)=6000 Pa = 6,0 kPa. [web:20][web:7]",
+      "spiegazione": "Da continuità v2 = 2v1 = 4 m/s e da Bernoulli p1−p2 = (1/2)$\\rho$(v2²−v1²)=500(16−4)=6000 Pa = 6,0 kPa. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "venturi",
@@ -2438,7 +2438,7 @@
     },
     {
       "id": "flu_117",
-      "domanda": "In un tubo orizzontale, la portata è Q = 1,2×10^-3 m³/s. Se il diametro interno è d = 1,0 cm, qual è circa la velocità media? (usa A = π(d/2)²)",
+      "domanda": "In un tubo orizzontale, la portata è Q = $1{,}2 \\\\times 10^{-3}$ m³/s. Se il diametro interno è d = 1,0 cm, qual è circa la velocità media? (usa A = $\\pi$(d/2)²)",
       "categoria": "Fluidi",
       "sottocategoria": "Portata (calcolo con diametro)",
       "opzioni": [
@@ -2448,7 +2448,7 @@
         "76 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "A = π(0,005)² ≈ 7,85×10^-5 m² e v = Q/A ≈ 1,2×10^-3 / 7,85×10^-5 ≈ 15 m/s. [web:20]",
+      "spiegazione": "A = $\\pi$(0,005)² $\\approx 7{,}85 \\\\times 10^{-5}$ m² e v = Q/A $\\approx 1{,}2 \\\\times 10^{-3}$ / $7{,}85 \\\\times 10^{-5} \\approx$ 15 m/s. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "portata",
@@ -2469,7 +2469,7 @@
         "Termine di attrito viscoso"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "In Bernoulli i termini p, (1/2)ρv² e ρgh rappresentano contributi all'energia per unità di volume e, a quota costante, una diminuzione di p può corrispondere a un aumento del termine cinetico. [web:7]",
+      "spiegazione": "In Bernoulli i termini p, (1/2)ρv² e ρgh rappresentano contributi all'energia per unità di volume e, a quota costante, una diminuzione di p può corrispondere a un aumento del termine cinetico. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "bernoulli",
@@ -2480,7 +2480,7 @@
     },
     {
       "id": "flu_119",
-      "domanda": "Una colonna d'acqua alta 30 cm è in equilibrio con una colonna d'olio in vasi comunicanti. Se ρ_olio = 750 kg/m³ e ρ_acqua = 1000 kg/m³, quanto vale l'altezza della colonna d'olio?",
+      "domanda": "Una colonna d'acqua alta 30 cm è in equilibrio con una colonna d'olio in vasi comunicanti. Se $\\rho_{olio}$ = 750 kg/m³ e $\\rho_{acqua}$ = 1000 kg/m³, quanto vale l'altezza della colonna d'olio?",
       "categoria": "Fluidi",
       "sottocategoria": "Vasi comunicanti (liquidi diversi)",
       "opzioni": [
@@ -2490,7 +2490,7 @@
         "75 cm"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Allo stesso livello vale ρ_acqua g h_acqua = ρ_olio g h_olio ⇒ h_olio = (1000/750)·30 cm = 40 cm. [web:1]",
+      "spiegazione": "Allo stesso livello vale $\\rho_{acqua}$ g h_acqua = $\\rho_{olio}$ g h_olio $\\Rightarrow$ h_olio = (1000/750)·30 cm = 40 cm. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "vasi comunicanti",
@@ -2511,7 +2511,7 @@
         "Non cambia"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Poiseuille dà Q ∝ 1/μ, quindi se μ aumenta di 3 volte la portata si riduce a un terzo. [web:30]",
+      "spiegazione": "Poiseuille dà Q $\\propto$ 1/$\\mu$, quindi se $\\mu$ aumenta di 3 volte la portata si riduce a un terzo. ",
       "difficolta": "difficile",
       "paroleChiave": [
         "poiseuille",

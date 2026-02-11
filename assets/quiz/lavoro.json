@@ -33,7 +33,7 @@
                 "Pascal (Pa)"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Nel SI il lavoro si misura in joule (J), equivalenti a N·m.",
+            "spiegazione": "Nel SI il lavoro si misura in joule (J), equivalenti a $N \\cdot m$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "joule",
@@ -69,13 +69,13 @@
             "categoria": "Lavoro",
             "sottocategoria": "Energia cinetica",
             "opzioni": [
-                "Ec = mgh",
-                "Ec = 1/2 m v^2",
-                "Ec = kx^2",
-                "Ec = F·s"
+                "$E_c = mgh$",
+                "$E_c = \\frac{1}{2}mv^2$",
+                "$E_c = kx^2$",
+                "$E_c = F \\cdot s$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L'energia cinetica di un corpo di massa m che si muove a velocità v è Ec = 1/2 m v^2.",
+            "spiegazione": "L'energia cinetica di un corpo di massa $m$ che si muove a velocità $v$ è $E_c = \\frac{1}{2}mv^2$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "energia cinetica",
@@ -107,17 +107,17 @@
         },
         {
             "id": "lav_006",
-            "domanda": "Se una forza costante F è parallela allo spostamento s, quanto vale il lavoro W?",
+            "domanda": "Se una forza costante $F$ è parallela allo spostamento $s$, quanto vale il lavoro $W$?",
             "categoria": "Lavoro",
             "sottocategoria": "Forza parallela",
             "opzioni": [
-                "W = F/s",
-                "W = F·s",
-                "W = F·s·sinθ",
-                "W = 0"
+                "$W = F/s$",
+                "$W = F \\cdot s$",
+                "$W = F \\cdot s \\cdot \\sin\\theta$",
+                "$W = 0$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Quando forza e spostamento sono paralleli, θ = 0 e quindi W = F·s.",
+            "spiegazione": "Quando forza e spostamento sono paralleli, $\\theta = 0$ e quindi $W = F \\cdot s$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "forza costante",
@@ -180,7 +180,7 @@
                 "Coulomb (C)"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Nel SI la potenza si misura in watt (W), equivalenti a J/s.",
+            "spiegazione": "Nel SI la potenza si misura in watt (W), equivalenti a $J/s$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "watt",
@@ -195,13 +195,13 @@
             "categoria": "Lavoro",
             "sottocategoria": "Potenza media",
             "opzioni": [
-                "P = F·s",
-                "P = W/Δt",
-                "P = m·a",
-                "P = mgh"
+                "$P = F \\cdot s$",
+                "$P = W/\\Delta t$",
+                "$P = m \\cdot a$",
+                "$P = mgh$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "La potenza media è il lavoro compiuto diviso l'intervallo di tempo impiegato: P = W/Δt.",
+            "spiegazione": "La potenza media è il lavoro compiuto diviso l'intervallo di tempo impiegato: $P = W/\\Delta t$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "potenza media",
@@ -258,13 +258,13 @@
             "categoria": "Lavoro",
             "sottocategoria": "Energia potenziale gravitazionale",
             "opzioni": [
-                "Ep = 1/2 m v^2",
-                "Ep = mgh",
-                "Ep = kx",
-                "Ep = F·s·cosθ"
+                "$E_p = \\frac{1}{2}mv^2$",
+                "$E_p = mgh$",
+                "$E_p = kx$",
+                "$E_p = F \\cdot s \\cdot \\cos\\theta$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Vicino alla superficie terrestre, Ep = mgh rispetto a un livello di riferimento scelto.",
+            "spiegazione": "Vicino alla superficie terrestre, $E_p = mgh$ rispetto a un livello di riferimento scelto.",
             "difficolta": "facile",
             "paroleChiave": [
                 "energia potenziale",
@@ -275,17 +275,17 @@
         },
         {
             "id": "lav_014",
-            "domanda": "Sollevare un oggetto di massa m a quota h (a velocità costante) richiede un lavoro pari a:",
+            "domanda": "Sollevare un oggetto di massa $m$ a quota $h$ (a velocità costante) richiede un lavoro pari a:",
             "categoria": "Lavoro",
             "sottocategoria": "Lavoro contro la gravità",
             "opzioni": [
-                "mgh",
-                "1/2 m v^2",
-                "mg/h",
-                "0"
+                "$mgh$",
+                "$\\frac{1}{2}mv^2$",
+                "$mg/h$",
+                "$0$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "A velocità costante, il lavoro della forza esterna contro il peso è pari a mgh.",
+            "spiegazione": "A velocità costante, il lavoro della forza esterna contro il peso è pari a $mgh$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "sollevamento",
@@ -317,7 +317,7 @@
         },
         {
             "id": "lav_016",
-            "domanda": "Se la forza applicata è opposta allo spostamento (θ = 180°), il lavoro è:",
+            "domanda": "Se la forza applicata è opposta allo spostamento ($\\theta = 180^\\circ$), il lavoro è:",
             "categoria": "Lavoro",
             "sottocategoria": "Segno del lavoro",
             "opzioni": [
@@ -327,7 +327,7 @@
                 "Sempre uguale a 1 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con θ = 180° il coseno vale -1, quindi W = -F·s: lavoro negativo.",
+            "spiegazione": "Con $\\theta = 180^\\circ$ il coseno vale $-1$, quindi $W = -F \\cdot s$: lavoro negativo.",
             "difficolta": "facile",
             "paroleChiave": [
                 "lavoro negativo",
@@ -359,17 +359,17 @@
         },
         {
             "id": "lav_018",
-            "domanda": "L'energia potenziale elastica di una molla ideale allungata di x vale:",
+            "domanda": "L'energia potenziale elastica di una molla ideale allungata di $x$ vale:",
             "categoria": "Lavoro",
             "sottocategoria": "Energia elastica",
             "opzioni": [
-                "Ep = kx",
-                "Ep = 1/2 kx^2",
-                "Ep = mgx",
-                "Ep = 1/2 mv^2"
+                "$E_p = kx$",
+                "$E_p = \\frac{1}{2}kx^2$",
+                "$E_p = mgx$",
+                "$E_p = \\frac{1}{2}mv^2$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Per una molla ideale, l'energia potenziale elastica è Ep = 1/2 kx^2.",
+            "spiegazione": "Per una molla ideale, l'energia potenziale elastica è $E_p = \\frac{1}{2}kx^2$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "molla",
@@ -405,13 +405,13 @@
             "categoria": "Lavoro",
             "sottocategoria": "Energia potenziale e lavoro",
             "opzioni": [
-                "W = ΔEp",
-                "W = -ΔEp",
-                "W = ΔEc",
-                "W = 0 sempre"
+                "$W = \\Delta E_p$",
+                "$W = -\\Delta E_p$",
+                "$W = \\Delta E_c$",
+                "$W = 0$ sempre"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Per una forza conservativa, il lavoro della forza è l'opposto della variazione di energia potenziale: W = -ΔEp.",
+            "spiegazione": "Per una forza conservativa, il lavoro della forza è l'opposto della variazione di energia potenziale: $W = -\\Delta E_p$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "energia potenziale",
@@ -453,7 +453,7 @@
                 "0.17 W"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "La potenza media è P = W/Δt = 30/5 = 6 W.",
+            "spiegazione": "La potenza media è $P = W/\\Delta t = 30/5 = 6$ W.",
             "difficolta": "facile",
             "paroleChiave": [
                 "potenza",
@@ -510,13 +510,13 @@
             "categoria": "Lavoro",
             "sottocategoria": "Equivalenze unità",
             "opzioni": [
-                "N/s",
-                "N·m",
-                "kg·m",
-                "m/s^2"
+                "$N/s$",
+                "$N \\cdot m$",
+                "$kg \\cdot m$",
+                "$m/s^2$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "1 J è equivalente a 1 N·m (newton per metro).",
+            "spiegazione": "1 J è equivalente a $1\\;N \\cdot m$ (newton per metro).",
             "difficolta": "facile",
             "paroleChiave": [
                 "joule",
@@ -533,11 +533,11 @@
             "opzioni": [
                 "Raddoppia",
                 "Dimezza",
-                "Aumenta di un fattore √2",
+                "Aumenta di un fattore $\\sqrt{2}$",
                 "Rimane uguale"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Poiché Ec = 1/2 m v^2, raddoppiare Ec implica v moltiplicata per √2.",
+            "spiegazione": "Poiché $E_c = \\frac{1}{2}mv^2$, raddoppiare $E_c$ implica $v$ moltiplicata per $\\sqrt{2}$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "energia cinetica",
@@ -548,17 +548,17 @@
         },
         {
             "id": "lav_027",
-            "domanda": "In assenza di attriti, per un corpo che scende di quota Δh, la variazione di energia potenziale gravitazionale è:",
+            "domanda": "In assenza di attriti, per un corpo che scende di quota $\\Delta h$, la variazione di energia potenziale gravitazionale è:",
             "categoria": "Lavoro",
             "sottocategoria": "Variazione Ep",
             "opzioni": [
-                "ΔEp = +mgΔh",
-                "ΔEp = -mgΔh",
-                "ΔEp = 0",
-                "ΔEp = +1/2 mv^2"
+                "$\\Delta E_p = +mg\\Delta h$",
+                "$\\Delta E_p = -mg\\Delta h$",
+                "$\\Delta E_p = 0$",
+                "$\\Delta E_p = +\\frac{1}{2}mv^2$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se la quota diminuisce di Δh, l'energia potenziale diminuisce: ΔEp = -mgΔh.",
+            "spiegazione": "Se la quota diminuisce di $\\Delta h$, l'energia potenziale diminuisce: $\\Delta E_p = -mg\\Delta h$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "energia potenziale",
@@ -569,14 +569,14 @@
         },
         {
             "id": "lav_028",
-            "domanda": "Che cosa descrive il rendimento η di una macchina?",
+            "domanda": "Che cosa descrive il rendimento $\\eta$ di una macchina?",
             "categoria": "Lavoro",
             "sottocategoria": "Rendimento",
             "opzioni": [
-                "η = lavoro utile / lavoro speso",
-                "η = lavoro speso / lavoro utile",
-                "η = potenza utile + potenza spesa",
-                "η = massa / volume"
+                "$\\eta$ = lavoro utile / lavoro speso",
+                "$\\eta$ = lavoro speso / lavoro utile",
+                "$\\eta$ = potenza utile + potenza spesa",
+                "$\\eta$ = massa / volume"
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Il rendimento è il rapporto tra l'energia (o lavoro) utile e quella fornita/spesa.",
@@ -600,7 +600,7 @@
                 "300 J"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Con forza parallela allo spostamento, W = F·s = 10·3 = 30 J.",
+            "spiegazione": "Con forza parallela allo spostamento, $W = F \\cdot s = 10 \\cdot 3 = 30$ J.",
             "difficolta": "facile",
             "paroleChiave": [
                 "calcolo",
@@ -621,7 +621,7 @@
                 "Il corpo è fermo"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se W_tot = 0, allora ΔEc = 0 e l'energia cinetica resta costante.",
+            "spiegazione": "Se $W_{tot} = 0$, allora $\\Delta E_c = 0$ e l'energia cinetica resta costante.",
             "difficolta": "facile",
             "paroleChiave": [
                 "lavoro totale",
@@ -678,13 +678,13 @@
             "categoria": "Lavoro",
             "sottocategoria": "Relazioni fondamentali",
             "opzioni": [
-                "P = W·t",
-                "P = W/t",
-                "P = t/W",
-                "P = W + t"
+                "$P = W \\cdot t$",
+                "$P = W/t$",
+                "$P = t/W$",
+                "$P = W + t$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "La potenza media è definita come il lavoro fratto il tempo impiegato: P = W/t.",
+            "spiegazione": "La potenza media è definita come il lavoro fratto il tempo impiegato: $P = W/t$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "potenza",
@@ -699,13 +699,13 @@
             "categoria": "Lavoro",
             "sottocategoria": "Interpretazione grafica",
             "opzioni": [
-                "Grafico v-t: area = lavoro",
-                "Grafico a-t: area = lavoro",
-                "Grafico F-s: area = lavoro",
-                "Grafico m-v: area = lavoro"
+                "Grafico $v$-$t$: area = lavoro",
+                "Grafico $a$-$t$: area = lavoro",
+                "Grafico $F$-$s$: area = lavoro",
+                "Grafico $m$-$v$: area = lavoro"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "L'area sotto il grafico forza-spostamento (F-s) rappresenta il lavoro compiuto.",
+            "spiegazione": "L'area sotto il grafico forza-spostamento ($F$-$s$) rappresenta il lavoro compiuto.",
             "difficolta": "facile",
             "paroleChiave": [
                 "grafico",
@@ -747,7 +747,7 @@
                 "Non è collegata al lavoro"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Lavoro totale negativo implica ΔEc negativa, quindi l'energia cinetica diminuisce.",
+            "spiegazione": "Lavoro totale negativo implica $\\Delta E_c$ negativa, quindi l'energia cinetica diminuisce.",
             "difficolta": "facile",
             "paroleChiave": [
                 "lavoro negativo",
@@ -831,7 +831,7 @@
                 "Frenare su piano orizzontale"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Salendo di quota aumenta h e quindi aumenta Ep = mgh.",
+            "spiegazione": "Salendo di quota aumenta $h$ e quindi aumenta $E_p = mgh$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "mgh",
@@ -852,7 +852,7 @@
                 "200 J"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "W = F·s·cos60° = 20·5·0.5 = 50 J, quindi l'opzione corretta è 50 J (attenzione al calcolo).",
+            "spiegazione": "$W = F \\cdot s \\cdot \\cos 60^\\circ = 20 \\cdot 5 \\cdot 0.5 = 50$ J, quindi l'opzione corretta è 50 J (attenzione al calcolo).",
             "difficolta": "media",
             "paroleChiave": [
                 "coseno",
@@ -863,7 +863,7 @@
         },
         {
             "id": "lav_042",
-            "domanda": "Correggi: nel quesito precedente (F=20 N, s=5 m, θ=60°), quale opzione è corretta?",
+            "domanda": "Correggi: nel quesito precedente ($F = 20$ N, $s = 5$ m, $\\theta = 60°$), quale opzione è corretta?",
             "categoria": "Lavoro",
             "sottocategoria": "Verifica calcolo",
             "opzioni": [
@@ -873,7 +873,7 @@
                 "200 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Poiché cos60° = 0.5, il lavoro vale W = 20·5·0.5 = 50 J.",
+            "spiegazione": "Poiché $\\cos 60^\\circ = 0.5$, il lavoro vale $W = 20 \\cdot 5 \\cdot 0.5 = 50$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "correzione",
@@ -884,7 +884,7 @@
         },
         {
             "id": "lav_043",
-            "domanda": "Un blocco di 2 kg parte da fermo e dopo un tratto ha Ec = 18 J. Quanto vale il lavoro totale delle forze?",
+            "domanda": "Un blocco di 2 kg parte da fermo e dopo un tratto ha $E_c = 18$ J. Quanto vale il lavoro totale delle forze?",
             "categoria": "Lavoro",
             "sottocategoria": "Teorema lavoro-energia",
             "opzioni": [
@@ -894,7 +894,7 @@
                 "0 J"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "ΔEc = 18 J - 0 = 18 J, quindi W_tot = 18 J.",
+            "spiegazione": "$\\Delta E_c = 18 - 0 = 18$ J, quindi $W_{tot} = 18$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "ΔEc",
@@ -915,7 +915,7 @@
                 "20 J"
             ],
             "rispostaCorretta": 3,
-            "spiegazione": "ΔEc = 1/2·1·(6^2-2^2)=1/2·(36-4)=16 J, quindi la risposta corretta è 16 J (attenzione alle opzioni).",
+            "spiegazione": "$\\Delta E_c = \\frac{1}{2} \\cdot 1 \\cdot (6^2 - 2^2) = \\frac{1}{2} \\cdot (36 - 4) = 16$ J, quindi la risposta corretta è 16 J (attenzione alle opzioni).",
             "difficolta": "media",
             "paroleChiave": [
                 "energia cinetica",
@@ -936,7 +936,7 @@
                 "20 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Il lavoro totale è ΔEc = 16 J, quindi l'opzione corretta è 16 J.",
+            "spiegazione": "Il lavoro totale è $\\Delta E_c = 16$ J, quindi l'opzione corretta è 16 J.",
             "difficolta": "media",
             "paroleChiave": [
                 "correzione",
@@ -957,7 +957,7 @@
                 "-8 J"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Lavoro forza applicata: 12·4=48 J; totale: 48 + (-20)=28 J.",
+            "spiegazione": "Lavoro forza applicata: $12 \\cdot 4 = 48$ J; totale: $48 + (-20) = 28$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "lavoro totale",
@@ -968,7 +968,7 @@
         },
         {
             "id": "lav_047",
-            "domanda": "Un corpo sale su un piano inclinato senza attrito aumentando la quota di 2 m. Se m=3 kg, quanto vale il lavoro del peso?",
+            "domanda": "Un corpo sale su un piano inclinato senza attrito aumentando la quota di 2 m. Se $m = 3$ kg, quanto vale il lavoro del peso?",
             "categoria": "Lavoro",
             "sottocategoria": "Lavoro della gravità",
             "opzioni": [
@@ -978,7 +978,7 @@
                 "0 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Il lavoro del peso è W_p = -m g Δh = -3·9.8·2 = -58.8 J.",
+            "spiegazione": "Il lavoro del peso è $W_p = -mg\\Delta h = -3 \\cdot 9.8 \\cdot 2 = -58.8$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "piano inclinato",
@@ -999,7 +999,7 @@
                 "27000 W"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "P = W/Δt = 900/30 = 30 W.",
+            "spiegazione": "$P = W/\\Delta t = 900/30 = 30$ W.",
             "difficolta": "media",
             "paroleChiave": [
                 "potenza media",
@@ -1020,7 +1020,7 @@
                 "Non è definibile"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Il lavoro delle forze non conservative è uguale alla variazione di energia meccanica: ΔEm = -40 J.",
+            "spiegazione": "Il lavoro delle forze non conservative è uguale alla variazione di energia meccanica: $\\Delta E_m = -40$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "energia meccanica",
@@ -1031,7 +1031,7 @@
         },
         {
             "id": "lav_050",
-            "domanda": "Una molla con k=200 N/m viene compressa di 0.10 m. Quanta energia potenziale elastica immagazzina?",
+            "domanda": "Una molla con $k = 200$ N/m viene compressa di 0.10 m. Quanta energia potenziale elastica immagazzina?",
             "categoria": "Lavoro",
             "sottocategoria": "Energia elastica",
             "opzioni": [
@@ -1041,7 +1041,7 @@
                 "10 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Ep = 1/2 kx^2 = 0.5·200·(0.1^2)=1 J.",
+            "spiegazione": "$E_p = \\frac{1}{2}kx^2 = 0.5 \\cdot 200 \\cdot (0.1)^2 = 1$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "molla",
@@ -1052,7 +1052,7 @@
         },
         {
             "id": "lav_051",
-            "domanda": "Un corpo di 2 kg cade da 5 m senza attrito. Qual è l'energia cinetica poco prima di arrivare a terra (g=9.8 m/s^2)?",
+            "domanda": "Un corpo di 2 kg cade da 5 m senza attrito. Qual è l'energia cinetica poco prima di arrivare a terra ($g = 9.8\\;m/s^2$)?",
             "categoria": "Lavoro",
             "sottocategoria": "Conservazione energia",
             "opzioni": [
@@ -1062,7 +1062,7 @@
                 "0 J"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Ep persa = mgh = 2·9.8·5 = 98 J, quindi Ec finale = 98 J (attenzione alle opzioni).",
+            "spiegazione": "$E_p$ persa $= mgh = 2 \\cdot 9.8 \\cdot 5 = 98$ J, quindi $E_c$ finale $= 98$ J (attenzione alle opzioni).",
             "difficolta": "media",
             "paroleChiave": [
                 "caduta",
@@ -1073,7 +1073,7 @@
         },
         {
             "id": "lav_052",
-            "domanda": "Correggi: nel quesito precedente (m=2 kg, h=5 m), quale opzione era corretta?",
+            "domanda": "Correggi: nel quesito precedente ($m = 2$ kg, $h = 5$ m), quale opzione era corretta?",
             "categoria": "Lavoro",
             "sottocategoria": "Verifica calcolo",
             "opzioni": [
@@ -1094,7 +1094,7 @@
         },
         {
             "id": "lav_053",
-            "domanda": "Su un grafico F-s, una forza costante di 5 N agisce da s=0 a s=4 m. Quanto vale l'area sottesa (quindi il lavoro)?",
+            "domanda": "Su un grafico $F$-$s$, una forza costante di 5 N agisce da $s = 0$ a $s = 4$ m. Quanto vale l'area sottesa (quindi il lavoro)?",
             "categoria": "Lavoro",
             "sottocategoria": "Grafico F-s",
             "opzioni": [
@@ -1104,7 +1104,7 @@
                 "0 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Area rettangolo: W = F·s = 5·4 = 20 J.",
+            "spiegazione": "Area rettangolo: $W = F \\cdot s = 5 \\cdot 4 = 20$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "grafico",
@@ -1125,7 +1125,7 @@
                 "0 W"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Con forza parallela alla velocità, P = F·v = 50·2 = 100 W.",
+            "spiegazione": "Con forza parallela alla velocità, $P = F \\cdot v = 50 \\cdot 2 = 100$ W.",
             "difficolta": "media",
             "paroleChiave": [
                 "potenza",
@@ -1146,7 +1146,7 @@
                 "0.30"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "η = W_utile/W_speso = 350/500 = 0.70.",
+            "spiegazione": "$\\eta = W_{utile}/W_{speso} = 350/500 = 0.70$.",
             "difficolta": "media",
             "paroleChiave": [
                 "rendimento",
@@ -1188,7 +1188,7 @@
                 "Il lavoro totale è sempre positivo"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Con attrito, per mantenere v costante occorre una forza esterna che compia lavoro positivo per compensare il lavoro negativo dell'attrito.",
+            "spiegazione": "Con attrito, per mantenere $v$ costante occorre una forza esterna che compia lavoro positivo per compensare il lavoro negativo dell'attrito.",
             "difficolta": "media",
             "paroleChiave": [
                 "attrito",
@@ -1199,7 +1199,7 @@
         },
         {
             "id": "lav_058",
-            "domanda": "Un corpo sale di quota 1.5 m. Di quanto aumenta l'energia potenziale gravitazionale se m=4 kg (g=9.8)?",
+            "domanda": "Un corpo sale di quota 1.5 m. Di quanto aumenta l'energia potenziale gravitazionale se $m = 4$ kg ($g = 9.8$)?",
             "categoria": "Lavoro",
             "sottocategoria": "Calcolo Ep",
             "opzioni": [
@@ -1209,7 +1209,7 @@
                 "0 J"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "ΔEp = m g Δh = 4·9.8·1.5 = 58.8 J.",
+            "spiegazione": "$\\Delta E_p = mg\\Delta h = 4 \\cdot 9.8 \\cdot 1.5 = 58.8$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "energia potenziale",
@@ -1230,7 +1230,7 @@
                 "6 m/s"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Ec = 1/2 m v^2 ⇒ 9 = 1/2·2·v^2 ⇒ v^2=9 ⇒ v=3 m/s.",
+            "spiegazione": "$E_c = \\frac{1}{2}mv^2 \\Rightarrow 9 = \\frac{1}{2} \\cdot 2 \\cdot v^2 \\Rightarrow v^2 = 9 \\Rightarrow v = 3$ m/s.",
             "difficolta": "media",
             "paroleChiave": [
                 "energia cinetica",
@@ -1241,7 +1241,7 @@
         },
         {
             "id": "lav_060",
-            "domanda": "Una forza di 10 N agisce su un corpo che si sposta di 2 m, ma con θ=90°. Quanto vale il lavoro?",
+            "domanda": "Una forza di 10 N agisce su un corpo che si sposta di 2 m, ma con $\\theta = 90°$. Quanto vale il lavoro?",
             "categoria": "Lavoro",
             "sottocategoria": "Forza perpendicolare",
             "opzioni": [
@@ -1251,7 +1251,7 @@
                 "-20 J"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "W = F·s·cos90° = 0.",
+            "spiegazione": "$W = F \\cdot s \\cdot \\cos 90° = 0$.",
             "difficolta": "media",
             "paroleChiave": [
                 "cos90",
@@ -1262,7 +1262,7 @@
         },
         {
             "id": "lav_061",
-            "domanda": "Un blocco (m=1 kg) viene accelerato da 0 a 4 m/s. Quale lavoro è necessario (senza attriti)?",
+            "domanda": "Un blocco ($m = 1$ kg) viene accelerato da 0 a 4 m/s. Quale lavoro è necessario (senza attriti)?",
             "categoria": "Lavoro",
             "sottocategoria": "ΔEc",
             "opzioni": [
@@ -1272,7 +1272,7 @@
                 "32 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "W = ΔEc = 1/2·1·(4^2-0)=8 J.",
+            "spiegazione": "$W = \\Delta E_c = \\frac{1}{2} \\cdot 1 \\cdot (4^2 - 0) = 8$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "accelerazione",
@@ -1293,7 +1293,7 @@
                 "La potenza"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Senza attriti, la somma Ec+Ep resta costante durante la salita e la discesa.",
+            "spiegazione": "Senza attriti, la somma $E_c + E_p$ resta costante durante la salita e la discesa.",
             "difficolta": "media",
             "paroleChiave": [
                 "lancio",
@@ -1308,13 +1308,13 @@
             "categoria": "Lavoro",
             "sottocategoria": "Bilancio con non conservative",
             "opzioni": [
-                "Em_f = Em_i",
-                "Em_f = Em_i + W_noncons",
-                "W_noncons = -ΔEc sempre",
-                "ΔEp = 0 sempre"
+                "$E_{m,f} = E_{m,i}$",
+                "$E_{m,f} = E_{m,i} + W_{nc}$",
+                "$W_{nc} = -\\Delta E_c$ sempre",
+                "$\\Delta E_p = 0$ sempre"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "La variazione di energia meccanica è uguale al lavoro delle forze non conservative: Em_f = Em_i + W_noncons.",
+            "spiegazione": "La variazione di energia meccanica è uguale al lavoro delle forze non conservative: $E_{m,f} = E_{m,i} + W_{nc}$.",
             "difficolta": "media",
             "paroleChiave": [
                 "energia meccanica",
@@ -1325,7 +1325,7 @@
         },
         {
             "id": "lav_064",
-            "domanda": "Un corpo scende di quota 3 m. Qual è il lavoro della forza peso (m=2 kg, g=9.8)?",
+            "domanda": "Un corpo scende di quota 3 m. Qual è il lavoro della forza peso ($m = 2$ kg, $g = 9.8$)?",
             "categoria": "Lavoro",
             "sottocategoria": "Lavoro del peso",
             "opzioni": [
@@ -1335,7 +1335,7 @@
                 "0 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "In discesa Δh = -3 m, quindi W_p = -m g Δh = +m g·3 = +58.8 J.",
+            "spiegazione": "In discesa $\\Delta h = -3$ m, quindi $W_p = -mg\\Delta h = +mg \\cdot 3 = +58.8$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "peso",
@@ -1356,7 +1356,7 @@
                 "0.016 W"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "P = W/Δt = 120/2 = 60 W.",
+            "spiegazione": "$P = W/\\Delta t = 120/2 = 60$ W.",
             "difficolta": "media",
             "paroleChiave": [
                 "potenza",
@@ -1377,7 +1377,7 @@
                 "10 m"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "W = F·s ⇒ s = W/F = 20/4 = 5 m.",
+            "spiegazione": "$W = F \\cdot s \\Rightarrow s = W/F = 20/4 = 5$ m.",
             "difficolta": "media",
             "paroleChiave": [
                 "spostamento",
@@ -1409,7 +1409,7 @@
         },
         {
             "id": "lav_068",
-            "domanda": "Un oggetto di 5 kg viene sollevato di 1 m in 2 s a velocità costante. Trascurando perdite, potenza media richiesta (g=9.8)?",
+            "domanda": "Un oggetto di 5 kg viene sollevato di 1 m in 2 s a velocità costante. Trascurando perdite, potenza media richiesta ($g = 9.8$)?",
             "categoria": "Lavoro",
             "sottocategoria": "Potenza in sollevamento",
             "opzioni": [
@@ -1419,7 +1419,7 @@
                 "98 W"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "W = mgh = 5·9.8·1 = 49 J, quindi P = 49/2 = 24.5 W (attenzione alle opzioni).",
+            "spiegazione": "$W = mgh = 5 \\cdot 9.8 \\cdot 1 = 49$ J, quindi $P = 49/2 = 24.5$ W (attenzione alle opzioni).",
             "difficolta": "media",
             "paroleChiave": [
                 "sollevamento",
@@ -1430,7 +1430,7 @@
         },
         {
             "id": "lav_069",
-            "domanda": "Correggi: nel quesito precedente (m=5 kg, h=1 m, t=2 s), qual è la potenza media corretta?",
+            "domanda": "Correggi: nel quesito precedente ($m = 5$ kg, $h = 1$ m, $t = 2$ s), qual è la potenza media corretta?",
             "categoria": "Lavoro",
             "sottocategoria": "Verifica calcolo",
             "opzioni": [
@@ -1440,7 +1440,7 @@
                 "98 W"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "La potenza media è P = (mgh)/t = 49/2 = 24.5 W.",
+            "spiegazione": "La potenza media è $P = (mgh)/t = 49/2 = 24.5$ W.",
             "difficolta": "media",
             "paroleChiave": [
                 "correzione",
@@ -1497,13 +1497,13 @@
             "categoria": "Lavoro",
             "sottocategoria": "Potenza istantanea",
             "opzioni": [
-                "P = F/v",
-                "P = F·v·cosθ",
-                "P = F·s",
-                "P = mgh"
+                "$P = F/v$",
+                "$P = F \\cdot v \\cdot \\cos\\theta$",
+                "$P = F \\cdot s$",
+                "$P = mgh$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "La potenza istantanea è P = \u007eF·\u007ev = F v cosθ, dove θ è l'angolo tra forza e velocità.",
+            "spiegazione": "La potenza istantanea è $P = \\vec{F} \\cdot \\vec{v} = Fv\\cos\\theta$, dove $\\theta$ è l'angolo tra forza e velocità.",
             "difficolta": "media",
             "paroleChiave": [
                 "potenza istantanea",
@@ -1524,7 +1524,7 @@
                 "Sempre uguale a mg"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Se la velocità diminuisce, diminuisce Ec e quindi W_tot = ΔEc è negativo.",
+            "spiegazione": "Se la velocità diminuisce, diminuisce $E_c$ e quindi $W_{tot} = \\Delta E_c$ è negativo.",
             "difficolta": "media",
             "paroleChiave": [
                 "ΔEc",
@@ -1545,7 +1545,7 @@
                 "500 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Ec = 1/2·1·10^2 = 50 J.",
+            "spiegazione": "$E_c = \\frac{1}{2} \\cdot 1 \\cdot 10^2 = 50$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "Ec",
@@ -1566,7 +1566,7 @@
                 "-20 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "W_tot = (10·5) + (-6·5) = 50 - 30 = 20 J (attenzione alle opzioni).",
+            "spiegazione": "$W_{tot} = (10 \\cdot 5) + (-6 \\cdot 5) = 50 - 30 = 20$ J (attenzione alle opzioni).",
             "difficolta": "media",
             "paroleChiave": [
                 "attrito",
@@ -1619,7 +1619,7 @@
         },
         {
             "id": "lav_078",
-            "domanda": "Una molla ideale (k=100 N/m) viene allungata da 0 a 0.20 m. Qual è il lavoro della forza elastica?",
+            "domanda": "Una molla ideale ($k = 100$ N/m) viene allungata da 0 a 0.20 m. Qual è il lavoro della forza elastica?",
             "categoria": "Lavoro",
             "sottocategoria": "Lavoro forza elastica",
             "opzioni": [
@@ -1629,7 +1629,7 @@
                 "-4 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Il lavoro della forza elastica è negativo perché opposta all'allungamento: W = -ΔEp = -1/2 kx^2 = -2 J.",
+            "spiegazione": "Il lavoro della forza elastica è negativo perché opposta all'allungamento: $W = -\\Delta E_p = -\\frac{1}{2}kx^2 = -2$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "molla",
@@ -1650,7 +1650,7 @@
                 "Dipende dalla massa dell'oggetto"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Il livello zero dell'energia potenziale è una scelta convenzionale; fisicamente sono significative le differenze di Ep.",
+            "spiegazione": "Il livello zero dell'energia potenziale è una scelta convenzionale; fisicamente sono significative le differenze di $E_p$.",
             "difficolta": "media",
             "paroleChiave": [
                 "riferimento",
@@ -1661,7 +1661,7 @@
         },
         {
             "id": "lav_080",
-            "domanda": "Un corpo è soggetto a due forze parallele allo spostamento: F1=8 N nella direzione del moto e F2=3 N opposta. Per s=2 m, lavoro totale?",
+            "domanda": "Un corpo è soggetto a due forze parallele allo spostamento: $F_1 = 8$ N nella direzione del moto e $F_2 = 3$ N opposta. Per $s = 2$ m, lavoro totale?",
             "categoria": "Lavoro",
             "sottocategoria": "Composizione forze",
             "opzioni": [
@@ -1671,7 +1671,7 @@
                 "2 J"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "W_tot = (8·2) + (-3·2) = 16 - 6 = 10 J.",
+            "spiegazione": "$W_{tot} = (8 \\cdot 2) + (-3 \\cdot 2) = 16 - 6 = 10$ J.",
             "difficolta": "media",
             "paroleChiave": [
                 "forze",
@@ -1682,17 +1682,17 @@
         },
         {
             "id": "lav_081",
-            "domanda": "Qual è l'espressione generale del lavoro per una forza variabile lungo x (moto 1D)?",
+            "domanda": "Qual è l'espressione generale del lavoro per una forza variabile lungo $x$ (moto 1D)?",
             "categoria": "Lavoro",
             "sottocategoria": "Forza variabile",
             "opzioni": [
-                "W = F·s",
-                "W = ∫ F(x) dx tra xi e xf",
-                "W = mgh",
-                "W = F/v"
+                "$W = F \\cdot s$",
+                "$W = \\int_{x_i}^{x_f} F(x)\\,dx$",
+                "$W = mgh$",
+                "$W = F/v$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Per una forza variabile, il lavoro si calcola come integrale di F(x) rispetto a x tra le posizioni iniziale e finale.",
+            "spiegazione": "Per una forza variabile, il lavoro si calcola come integrale di $F(x)$ rispetto a $x$ tra le posizioni iniziale e finale.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "integrale",
@@ -1703,7 +1703,7 @@
         },
         {
             "id": "lav_082",
-            "domanda": "Se F(x)=2x (in N) e il corpo si sposta da x=0 a x=3 m, quanto vale il lavoro?",
+            "domanda": "Se $F(x) = 2x$ (in N) e il corpo si sposta da $x = 0$ a $x = 3$ m, quanto vale il lavoro?",
             "categoria": "Lavoro",
             "sottocategoria": "Integrale semplice",
             "opzioni": [
@@ -1713,7 +1713,7 @@
                 "3 J"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "W = ∫0^3 2x dx = [x^2]0^3 = 9 J (attenzione: 9 J è il valore corretto, quindi verifica opzioni).",
+            "spiegazione": "$W = \\int_0^3 2x\\,dx = [x^2]_0^3 = 9$ J (attenzione: 9 J è il valore corretto, quindi verifica opzioni).",
             "difficolta": "difficile",
             "paroleChiave": [
                 "integrale",
@@ -1734,7 +1734,7 @@
                 "3 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L'integrale dà W = 9 J, quindi l'opzione corretta è 9 J.",
+            "spiegazione": "L'integrale dà $W = 9$ J, quindi l'opzione corretta è 9 J.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "correzione",
@@ -1745,7 +1745,7 @@
         },
         {
             "id": "lav_084",
-            "domanda": "Nel grafico F-s, una forza cresce linearmente da 0 N a 10 N mentre s va da 0 a 4 m. Quanto vale il lavoro?",
+            "domanda": "Nel grafico $F$-$s$, una forza cresce linearmente da 0 N a 10 N mentre s va da 0 a 4 m. Quanto vale il lavoro?",
             "categoria": "Lavoro",
             "sottocategoria": "Area triangolo F-s",
             "opzioni": [
@@ -1755,7 +1755,7 @@
                 "80 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L'area del triangolo è W = 1/2·base·altezza = 1/2·4·10 = 20 J.",
+            "spiegazione": "Area rettangolo: $W = \\frac{1}{2} \\cdot 4 \\cdot 10 = 20$ J.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "grafico F-s",
@@ -1766,17 +1766,17 @@
         },
         {
             "id": "lav_085",
-            "domanda": "Una forza conservativa ha potenziale U(x). Qual è la relazione corretta tra forza e potenziale in 1D?",
+            "domanda": "Una forza conservativa ha potenziale $U(x)$. Qual è la relazione corretta tra forza e potenziale in 1D?",
             "categoria": "Lavoro",
             "sottocategoria": "Potenziale e forza",
             "opzioni": [
-                "F(x) = dU/dx",
-                "F(x) = -dU/dx",
-                "U(x) = F(x)·x",
-                "U(x) = F(x)/x"
+                "$F(x) = dU/dx$",
+                "$F(x) = -dU/dx$",
+                "$U(x) = F(x) \\cdot x$",
+                "$U(x) = F(x)/x$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "In una dimensione, per una forza conservativa vale F(x) = -dU/dx.",
+            "spiegazione": "In una dimensione, per una forza conservativa vale $F(x) = -dU/dx$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "potenziale",
@@ -1787,17 +1787,17 @@
         },
         {
             "id": "lav_086",
-            "domanda": "Se U(x)=3x^2 (J) con x in m, qual è la forza F(x) associata (1D)?",
+            "domanda": "Se $U(x) = 3x^2$ (J) con $x$ in m, qual è la forza $F(x)$ associata (1D)?",
             "categoria": "Lavoro",
             "sottocategoria": "Da potenziale a forza",
             "opzioni": [
-                "F(x)=6x",
-                "F(x)=-6x",
-                "F(x)=3x",
-                "F(x)=-3x^2"
+                "$F(x) = 6x$",
+                "$F(x) = -6x$",
+                "$F(x) = 3x$",
+                "$F(x) = -3x^2$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "F(x) = -dU/dx = -(6x) = -6x.",
+            "spiegazione": "$F(x) = -dU/dx = -(6x) = -6x$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "U(x)",
@@ -1871,7 +1871,7 @@
         },
         {
             "id": "lav_090",
-            "domanda": "Un blocco scende di quota 2 m e subisce lavoro di attrito -15 J. Se m=1 kg e g=9.8, quale è l'energia cinetica guadagnata se parte da fermo?",
+            "domanda": "Un blocco scende di quota 2 m e subisce lavoro di attrito -15 J. Se $m = 1$ kg e $g = 9.8$, quale è l'energia cinetica guadagnata se parte da fermo?",
             "categoria": "Lavoro",
             "sottocategoria": "Bilancio con attrito",
             "opzioni": [
@@ -1881,7 +1881,7 @@
                 "0 J"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "ΔEc = lavoro del peso + lavoro attrito = (mgh) + (-15) = 19.6 - 15 = 4.6 J.",
+            "spiegazione": "$\\Delta E_c =$ lavoro del peso + lavoro attrito $= mgh + (-15) = 19.6 - 15 = 4.6$ J.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "bilancio",
@@ -1902,7 +1902,7 @@
                 "10 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "W = 6·2 + 2·3 = 12 + 6 = 18 J (attenzione: l'opzione corretta è 18 J).",
+            "spiegazione": "$W = 6 \\cdot 2 + 2 \\cdot 3 = 12 + 6 = 18$ J (attenzione: l'opzione corretta è 18 J).",
             "difficolta": "difficile",
             "paroleChiave": [
                 "a tratti",
@@ -1965,7 +1965,7 @@
                 "Dipende solo dal raggio"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Nel moto circolare non uniforme esiste una componente tangenziale lungo la direzione del moto, che cambia Ec e quindi compie lavoro.",
+            "spiegazione": "Nel moto circolare non uniforme esiste una componente tangenziale lungo la direzione del moto, che cambia $E_c$ e quindi compie lavoro.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "tangenziale",
@@ -1976,7 +1976,7 @@
         },
         {
             "id": "lav_095",
-            "domanda": "Un corpo sale di quota 4 m con attrito che compie -30 J. Se m=2 kg, quanto lavoro deve compiere una forza esterna per arrivare con la stessa velocità iniziale?",
+            "domanda": "Un corpo sale di quota 4 m con attrito che compie -30 J. Se $m = 2$ kg, quanto lavoro deve compiere una forza esterna per arrivare con la stessa velocità iniziale?",
             "categoria": "Lavoro",
             "sottocategoria": "Bilancio energetico",
             "opzioni": [
@@ -1986,7 +1986,7 @@
                 "0 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Serve compensare aumento di Ep (mgh=2·9.8·4=78.4 J) e perdite per attrito (30 J): W_ext=78.4+30=108.4 J (quindi nessuna opzione: incongruenza).",
+            "spiegazione": "Serve compensare aumento di $E_p$ ($mgh = 2 \\cdot 9.8 \\cdot 4 = 78.4$ J) e perdite per attrito (30 J): $W_{ext} = 78.4 + 30 = 108.4$ J (quindi nessuna opzione: incongruenza).",
             "difficolta": "difficile",
             "paroleChiave": [
                 "bilancio",
@@ -1997,7 +1997,7 @@
         },
         {
             "id": "lav_096",
-            "domanda": "Correggi: nel quesito precedente, qual è il valore corretto di W_ext?",
+            "domanda": "Correggi: nel quesito precedente, qual è il valore corretto di $W_{ext}$?",
             "categoria": "Lavoro",
             "sottocategoria": "Correzione bilancio",
             "opzioni": [
@@ -2007,7 +2007,7 @@
                 "30 J"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Per arrivare con la stessa velocità (ΔEc=0), W_ext = ΔEp - W_attrito = 78.4 - (-30) = 108.4 J.",
+            "spiegazione": "Per arrivare con la stessa velocità ($\\Delta E_c = 0$), $W_{ext} = \\Delta E_p - W_{attrito} = 78.4 - (-30) = 108.4$ J.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "correzione",
@@ -2060,17 +2060,17 @@
         },
         {
             "id": "lav_099",
-            "domanda": "Una forza dipende dalla posizione: F(x)=ax+b. Quale tipo di grafico F-s produce e come si calcola il lavoro?",
+            "domanda": "Una forza dipende dalla posizione: $F(x) = ax + b$. Quale tipo di grafico $F$-$s$ produce e come si calcola il lavoro?",
             "categoria": "Lavoro",
             "sottocategoria": "Interpretazione grafica",
             "opzioni": [
                 "Retta; lavoro = area del trapezio sotto la retta",
                 "Parabola; lavoro = area del cerchio",
-                "Retta; lavoro = F_max·s",
+                "Retta; lavoro = $F_{max} \\cdot s$",
                 "Costante; lavoro = 0"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Se F è lineare in x, il grafico F-s è una retta e il lavoro è l'area (trapezio) sotto di essa.",
+            "spiegazione": "Se $F$ è lineare in $x$, il grafico $F$-$s$ è una retta e il lavoro è l'area (trapezio) sotto di essa.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "lineare",
@@ -2081,17 +2081,17 @@
         },
         {
             "id": "lav_100",
-            "domanda": "Una forza di attrito dinamico vale f=μN. Su piano orizzontale, quanto lavoro compie su spostamento s?",
+            "domanda": "Una forza di attrito dinamico vale $f = \\mu N$. Su piano orizzontale, quanto lavoro compie su spostamento $s$?",
             "categoria": "Lavoro",
             "sottocategoria": "Attrito dinamico",
             "opzioni": [
-                "W = +μmgs",
-                "W = -μmgs",
-                "W = 0",
-                "W = μmg/s"
+                "$W = +\\mu mgs$",
+                "$W = -\\mu mgs$",
+                "$W = 0$",
+                "$W = \\mu mg/s$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Su piano orizzontale N=mg, l'attrito è opposto allo spostamento, quindi W = -μmgs.",
+            "spiegazione": "Su piano orizzontale $N = mg$, l'attrito è opposto allo spostamento, quindi $W = -\\mu mgs$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "attrito",
@@ -2112,7 +2112,7 @@
                 "Impossibile determinare"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Senza attrito, l'energia meccanica si conserva e la velocità finale dipende solo da Δh.",
+            "spiegazione": "Senza attrito, l'energia meccanica si conserva e la velocità finale dipende solo da $\\Delta h$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "percorso",
@@ -2133,7 +2133,7 @@
                 "-35 J"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Kf = Ki + W = 10 + 45 = 55 J.",
+            "spiegazione": "$K_f = K_i + W = 10 + 45 = 55$ J.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "Ki",
@@ -2175,7 +2175,7 @@
                 "La temperatura"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Solo la componente della forza lungo lo spostamento contribuisce al lavoro: W = F_par·s.",
+            "spiegazione": "Solo la componente della forza lungo lo spostamento contribuisce al lavoro: $W = F_{\\parallel} \\cdot s$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "componente",
@@ -2186,7 +2186,7 @@
         },
         {
             "id": "lav_105",
-            "domanda": "Su grafico F-s, un'area negativa cosa rappresenta?",
+            "domanda": "Su grafico $F$-$s$, un'area negativa cosa rappresenta?",
             "categoria": "Lavoro",
             "sottocategoria": "Interpretazione segno",
             "opzioni": [
@@ -2196,7 +2196,7 @@
                 "Potenza negativa"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Se la forza ha verso opposto allo spostamento, nel grafico F-s l'area può risultare negativa e rappresenta lavoro negativo.",
+            "spiegazione": "Se la forza ha verso opposto allo spostamento, nel grafico $F$-$s$ l'area può risultare negativa e rappresenta lavoro negativo.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "area negativa",
@@ -2207,7 +2207,7 @@
         },
         {
             "id": "lav_106",
-            "domanda": "Un corpo (m=2 kg) ha v=3 m/s. Si applica una forza che compie lavoro -9 J. Qual è la velocità finale (se resta non negativa)?",
+            "domanda": "Un corpo ($m = 2$ kg) ha $v = 3$ m/s. Si applica una forza che compie lavoro -9 J. Qual è la velocità finale (se resta non negativa)?",
             "categoria": "Lavoro",
             "sottocategoria": "ΔEc con lavoro negativo",
             "opzioni": [
@@ -2217,7 +2217,7 @@
                 "3 m/s"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Ec_i=1/2·2·3^2=9 J; Ec_f=9-9=0 J ⇒ v_f=0 m/s (quindi l'opzione corretta è 0 m/s).",
+            "spiegazione": "$E_{c,i} = \\frac{1}{2} \\cdot 2 \\cdot 3^2 = 9$ J; $E_{c,f} = 9 - 9 = 0$ J $\\Rightarrow v_f = 0$ m/s (quindi l'opzione corretta è 0 m/s).",
             "difficolta": "difficile",
             "paroleChiave": [
                 "lavoro negativo",
@@ -2249,7 +2249,7 @@
         },
         {
             "id": "lav_108",
-            "domanda": "Un corpo scende di quota 10 m ma arriva con Ec finale minore di mgh. Quale causa è più plausibile?",
+            "domanda": "Un corpo scende di quota 10 m ma arriva con $E_c$ finale minore di $mgh$. Quale causa è più plausibile?",
             "categoria": "Lavoro",
             "sottocategoria": "Perdite",
             "opzioni": [
@@ -2259,7 +2259,7 @@
                 "L'energia potenziale aumenta"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Se Ec finale è minore di mgh, parte dell'energia è stata dissipata da forze non conservative.",
+            "spiegazione": "Se $E_c$ finale è minore di $mgh$, parte dell'energia è stata dissipata da forze non conservative.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "perdite",
@@ -2343,7 +2343,7 @@
                 "+200 J"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Il lavoro delle forze non conservative è uguale alla variazione di energia meccanica, quindi W_noncons = -100 J.",
+            "spiegazione": "Il lavoro delle forze non conservative è uguale alla variazione di energia meccanica, quindi $W_{nc} = -100$ J.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "energia meccanica",
@@ -2358,13 +2358,13 @@
             "categoria": "Lavoro",
             "sottocategoria": "Lavoro e Ec",
             "opzioni": [
-                "W_tot = ΔEc",
-                "W_tot = ΔEp",
-                "W_tot = 0",
-                "W_tot = mgh"
+                "$W_{tot} = \\Delta E_c$",
+                "$W_{tot} = \\Delta E_p$",
+                "$W_{tot} = 0$",
+                "$W_{tot} = mgh$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Il teorema lavoro-energia vale in generale: il lavoro totale delle forze è uguale a ΔEc.",
+            "spiegazione": "Il teorema lavoro-energia vale in generale: il lavoro totale delle forze è uguale a $\\Delta E_c$.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "teorema",
@@ -2375,7 +2375,7 @@
         },
         {
             "id": "lav_114",
-            "domanda": "Una molla (k=400 N/m) viene allungata da 0.10 m a 0.30 m. Qual è l'aumento di energia potenziale elastica?",
+            "domanda": "Una molla ($k = 400$ N/m) viene allungata da 0.10 m a 0.30 m. Qual è l'aumento di energia potenziale elastica?",
             "categoria": "Lavoro",
             "sottocategoria": "ΔEp elastica",
             "opzioni": [
@@ -2385,7 +2385,7 @@
                 "0 J"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "ΔEp = 1/2 k (x2^2 - x1^2) = 0.5·400·(0.09-0.01)=200·0.08=16 J.",
+            "spiegazione": "$\\Delta E_p = \\frac{1}{2}k(x_2^2 - x_1^2) = 0.5 \\cdot 400 \\cdot (0.09 - 0.01) = 200 \\cdot 0.08 = 16$ J.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "molla",
@@ -2406,7 +2406,7 @@
                 "200000 J"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "W = P·t = 2000 W·10 s = 20000 J.",
+            "spiegazione": "$W = P \\cdot t = 2000 \\cdot 10 = 20000$ J.",
             "difficolta": "difficile",
             "paroleChiave": [
                 "kilowatt",

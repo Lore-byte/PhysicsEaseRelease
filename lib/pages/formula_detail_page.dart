@@ -11,6 +11,7 @@ import 'package:path_provider/path_provider.dart';
 import 'dart:io';
 import 'dart:developer' as developer;
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
+import 'package:physics_ease_release/widgets/latex_text.dart';
 
 class FormulaDetailPage extends StatefulWidget {
   final Formula formula;
@@ -140,73 +141,6 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
     );
   }
 
-  //Nuovo parser
-  List<InlineSpan> _parseMixedContent(
-    String text,
-    TextStyle? textStyle,
-    Color? latexColor,
-  ) {
-    final List<InlineSpan> spans = [];
-    // Usa la nuova RegExp che riconosce sia LaTeX sia grassetto
-    final RegExp contentRegex = RegExp(
-      r'\$\$([^$]+?)\$\$|\$([^$]+?)\$|\*\*([^\*]+?)\*\*',
-    );
-
-    text.splitMapJoin(
-      contentRegex,
-      onMatch: (Match match) {
-        // Prova a trovare una corrispondenza LaTeX
-        final latexContent = match.group(1) ?? match.group(2);
-        if (latexContent != null) {
-          spans.add(
-            WidgetSpan(
-              alignment: PlaceholderAlignment.middle,
-              child: Math.tex(
-                latexContent,
-                textStyle: (textStyle ?? const TextStyle()).copyWith(
-                  color: latexColor,
-                ),
-                onErrorFallback: (Object e) {
-                  developer.log('ERRORE RENDERING INLINE LATEX: $e', error: e);
-                  return Text(
-                    '[Errore LaTeX]',
-                    style: TextStyle(
-                      color: Theme.of(context).colorScheme.error,
-                      fontSize: (textStyle?.fontSize ?? 14) * 0.8,
-                    ),
-                  );
-                },
-              ),
-            ),
-          );
-          return '';
-        }
-
-        // Se non è LaTeX, prova a trovare una corrispondenza per il grassetto
-        final boldContent = match.group(3);
-        if (boldContent != null) {
-          spans.add(
-            TextSpan(
-              text: boldContent,
-              // Applica lo stile grassetto
-              style: textStyle?.copyWith(fontWeight: FontWeight.bold),
-            ),
-          );
-          return '';
-        }
-
-        // Fallback (non dovrebbe accadere con questa regex)
-        return '';
-      },
-      onNonMatch: (String nonMatch) {
-        // Il testo normale viene aggiunto come sempre
-        spans.add(TextSpan(text: nonMatch, style: textStyle));
-        return '';
-      },
-    );
-    return spans;
-  }
-
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
@@ -296,7 +230,8 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                   title: 'Descrizione',
                   content: RichText(
                     text: TextSpan(
-                      children: _parseMixedContent(
+                      children: LatexText.parseMixedContent(
+                        context,
                         widget.formula.descrizione,
                         textTheme.bodyMedium,
                         colorScheme.onSurface, // Color for LaTeX in description
@@ -339,7 +274,8 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                                     color: colorScheme.onSurface,
                                   ),
                                 ),
-                                ..._parseMixedContent(
+                                ...LatexText.parseMixedContent(
+                                  context,
                                   v.descrizione,
                                   textTheme.bodyMedium,
                                   colorScheme.onSurface,
@@ -385,7 +321,8 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                       title: e.titolo,
                       content: RichText(
                         text: TextSpan(
-                          children: _parseMixedContent(
+                          children: LatexText.parseMixedContent(
+                            context,
                             e.testo,
                             textTheme.bodyMedium,
                             colorScheme
