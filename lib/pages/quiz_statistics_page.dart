@@ -1349,13 +1349,14 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
               size: 24,
             ),
             title: Text(
-              'Domande Più Sbagliate',
+              'Errori Frequenti',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
             ),
             children: [
               ListView.builder(
+                padding: EdgeInsets.zero,
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 itemCount: mostMissedQuestions.length,
