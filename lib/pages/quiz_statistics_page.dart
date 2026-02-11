@@ -34,7 +34,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
   Future<void> _loadQuizHistory() async {
     setState(() => _isLoading = true);
-    
+
     // Assicuriamoci che i quiz siano caricati per avere i nomi corretti delle categorie
     await QuizService().loadAllQuizzes();
 
@@ -238,9 +238,14 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
   String _prettifyCategory(String raw) {
     if (raw.isEmpty) return raw;
     final trimmed = raw.trim();
-    
-    // Cerca nella mappa del servizio (chiavi minuscole, es: 'kinematica')
     final lower = trimmed.toLowerCase();
+
+    // Mappatura manuale per correggere casi specifici visti nei dati
+    if (lower == 'kin' || lower == 'kinematica') {
+      return 'Cinematica';
+    }
+
+    // Cerca nella mappa del servizio (chiavi minuscole, es: 'kinematica')
     if (QuizService.categoryNames.containsKey(lower)) {
       return QuizService.categoryNames[lower]!;
     }
@@ -255,16 +260,16 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
   /// Helper per stringhe che possono contenere più categorie separate (es: "kinematica, dinamica")
   String _prettifyCategoriesString(String categories) {
     if (categories.isEmpty) return categories;
-    
+
     // Split basato su separatori comuni
     final parts = categories.split(RegExp(r'\s*(?:,|;|\+|•|\||/)\s*'));
-    
+
     final prettyParts = parts
         .where((s) => s.trim().isNotEmpty)
         .map((s) => _prettifyCategory(s))
         .toSet() // Rimuove duplicati
         .toList();
-        
+
     if (prettyParts.isEmpty) return categories;
     return prettyParts.join(', ');
   }
@@ -308,12 +313,14 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
       // NOTA: qui non usiamo più quiz.categorie per splittare e duplicare i contatori.
       for (final risultato in quiz.risultati) {
         // Tenta di recuperare il nome ufficiale della categoria dal servizio (es. "Cinematica")
-        String? category = QuizService().getCategoryNameByQuizId(risultato.quizId);
-        
+        String? category = QuizService().getCategoryNameByQuizId(
+          risultato.quizId,
+        );
+
         // Se non trovato (es. quiz rimossi o vecchi), usa la logica di estrazione dall'ID come fallback
         if (category == null) {
-           final rawCategory = _extractCategoryFromQuestionId(risultato.quizId);
-           category = rawCategory ?? _uncategorizedLabel;
+          final rawCategory = _extractCategoryFromQuestionId(risultato.quizId);
+          category = rawCategory ?? _uncategorizedLabel;
         }
 
         // Applica sempre prettify per uniformare i nomi (es: "kinematica" -> "Cinematica", "cinematica" -> "Cinematica")
@@ -585,7 +592,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
     // Converti la stringa categorie (che potrebbe essere "kinematica") in una forma leggibile ("Cinematica")
     final displayCategories = _prettifyCategoriesString(quiz.categorie);
-    
+
     final correct = quiz.punteggio;
     final wrong = quiz.totale - quiz.punteggio;
 
@@ -671,11 +678,17 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                               color: Colors.green,
                             ),
                             const SizedBox(width: 4),
-                            Text('$correct', style: const TextStyle(fontSize: 14)),
+                            Text(
+                              '$correct',
+                              style: const TextStyle(fontSize: 14),
+                            ),
                             const SizedBox(width: 12),
                             Icon(Icons.cancel, size: 16, color: Colors.red),
                             const SizedBox(width: 4),
-                            Text('$wrong', style: const TextStyle(fontSize: 14)),
+                            Text(
+                              '$wrong',
+                              style: const TextStyle(fontSize: 14),
+                            ),
                           ],
                         ),
                       ],
@@ -707,6 +720,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
         final colorScheme = Theme.of(context).colorScheme;
         final dateFormat = DateFormat('dd/MM/yyyy HH:mm');
         final percentuale = quiz.percentuale;
+
+        // Build lookup once for this sheet
+        final quizMap = _buildQuizMap();
 
         return DraggableScrollableSheet(
           initialChildSize: 0.7,
@@ -769,97 +785,178 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 24),
+
                 Text(
-                  'Domande Proposte (${quiz.risultati.length})',
-                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+                  'Dettaglio Risposte',
+                  style: Theme.of(
+                    context,
+                  ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
                 ),
-                const SizedBox(height: 12),
-                ListView.builder(
-                  padding: EdgeInsets.zero,
-                  shrinkWrap: true,
-                  physics: const NeverScrollableScrollPhysics(),
-                  itemCount: quiz.risultati.length,
-                  itemBuilder: (context, index) {
-                    final risultato = quiz.risultati[index];
-                    return InkWell(
-                      onTap: () {
-                        _showSessionQuestionDetails(
-                          risultato,
-                          index,
-                          colorScheme,
-                        );
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 4.0,
-                          vertical: 8.0,
-                        ),
-                        child: Card(
-                          color: risultato.isCorretta
-                              ? Colors.green.withValues(alpha: 0.1)
-                              : Colors.red.withValues(alpha: 0.1),
-                          child: Padding(
-                            padding: const EdgeInsets.all(12.0),
-                            child: Row(
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: risultato.isCorretta
-                                      ? Colors.green
-                                      : Colors.red,
-                                  radius: 20,
-                                  child: Icon(
-                                    risultato.isCorretta
-                                        ? Icons.check
-                                        : Icons.close,
-                                    color: Colors.white,
-                                    size: 20,
-                                  ),
-                                ),
-                                const SizedBox(width: 12),
-                                Expanded(
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        'Domanda ${index + 1}',
-                                        style: const TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                      ),
-                                      const SizedBox(height: 4),
-                                      Text(
-                                        'Quiz ID: ${risultato.quizId}',
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          color: colorScheme.onSurface
-                                              .withValues(alpha: 0.5),
-                                        ),
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                const SizedBox(width: 8),
-                                Icon(
-                                  Icons.chevron_right,
-                                  color: colorScheme.onSurface
-                                      .withValues(alpha: 0.4),
-                                ),
-                              ],
-                            ),
+                const SizedBox(height: 20),
+                ...quiz.risultati.asMap().entries.map((entry) {
+                  final index = entry.key;
+                  final result = entry.value;
+
+                  final isCorrect = result.isCorretta == true;
+                  final questionQuiz = quizMap[result.quizId];
+
+                  if (questionQuiz == null) {
+                    // Fallback per quiz/question non più presenti o non caricati
+                    return Card(
+                      margin: const EdgeInsets.only(bottom: 12),
+                      color: isCorrect
+                          ? Colors.green.withValues(alpha: 0.1)
+                          : Colors.red.withValues(alpha: 0.1),
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: isCorrect
+                              ? Colors.green
+                              : Colors.red,
+                          child: Icon(
+                            isCorrect ? Icons.check : Icons.close,
+                            color: Colors.white,
                           ),
+                        ),
+                        title: Text(
+                          'Domanda ${index + 1}',
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        subtitle: Text(
+                          'ID: ${result.quizId}',
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
                         ),
                       ),
                     );
-                  },
-                ),
-                const SizedBox(height: 24),
+                  }
+
+                  return Card(
+                    margin: const EdgeInsets.only(bottom: 12),
+                    color: isCorrect
+                        ? Colors.green.withValues(alpha: 0.1)
+                        : Colors.red.withValues(alpha: 0.1),
+                    child: ExpansionTile(
+                      leading: CircleAvatar(
+                        backgroundColor: isCorrect ? Colors.green : Colors.red,
+                        child: Icon(
+                          isCorrect ? Icons.check : Icons.close,
+                          color: Colors.white,
+                        ),
+                      ),
+                      title: Text(
+                        'Domanda ${index + 1}',
+                        style: const TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      subtitle: Text(
+                        questionQuiz.domanda,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                questionQuiz.domanda,
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
+                              ),
+                              const SizedBox(height: 12),
+                              ...questionQuiz.opzioni.asMap().entries.map((
+                                optEntry,
+                              ) {
+                                final optIndex = optEntry.key;
+                                final option = optEntry.value;
+
+                                final isUserAnswer =
+                                    optIndex == result.rispostaUtente;
+                                final isCorrectAnswer =
+                                    optIndex == questionQuiz.rispostaCorretta;
+
+                                return Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: 4,
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Icon(
+                                        isCorrectAnswer
+                                            ? Icons.check_circle
+                                            : (isUserAnswer
+                                                  ? Icons.cancel
+                                                  : Icons.circle_outlined),
+                                        color: isCorrectAnswer
+                                            ? Colors.green
+                                            : (isUserAnswer
+                                                  ? Colors.red
+                                                  : Colors.grey),
+                                        size: 20,
+                                      ),
+                                      const SizedBox(width: 8),
+                                      Expanded(
+                                        child: Text(
+                                          option,
+                                          style: TextStyle(
+                                            fontWeight:
+                                                (isUserAnswer ||
+                                                    isCorrectAnswer)
+                                                ? FontWeight.bold
+                                                : FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                              }),
+                              const Divider(height: 24),
+                              Container(
+                                padding: const EdgeInsets.all(12),
+                                decoration: BoxDecoration(
+                                  color: colorScheme.tertiaryContainer
+                                      .withValues(alpha: 0.5),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Icon(
+                                          Icons.lightbulb_outline,
+                                          size: 20,
+                                          color:
+                                              colorScheme.onTertiaryContainer,
+                                        ),
+                                        const SizedBox(width: 8),
+                                        Text(
+                                          'Spiegazione',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color:
+                                                colorScheme.onTertiaryContainer,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(height: 8),
+                                    Text(questionQuiz.spiegazione),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                }),
+                const SizedBox(height: 94),
               ],
             );
           },
@@ -891,6 +988,17 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
         ),
       ],
     );
+  }
+
+  Map<String, Quiz> _buildQuizMap() {
+    final Map<String, Quiz> quizMap = {};
+    for (final category in QuizService.availableCategories) {
+      final quizzes = _quizService.getQuizzesByCategory(category);
+      for (final q in quizzes) {
+        quizMap[q.id] = q;
+      }
+    }
+    return quizMap;
   }
 
   List<FlSpot> _getProgressChartData() {
@@ -1105,7 +1213,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                     ),
                                   ],
                                 ),
-                                const SizedBox(height: 20),
+                                const SizedBox(height: 24),
                                 SizedBox(
                                   height: 200,
                                   child: _buildPieChart(
@@ -1327,7 +1435,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
             ),
           ),
         ),
-        const SizedBox(width: 24), // <-- più distanza tra grafico e legenda
+        const SizedBox(width: 24),
         Expanded(
           flex: 1,
           child: Column(
@@ -1385,7 +1493,6 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 4),
         Card(
           margin: const EdgeInsets.only(bottom: 12),
           child: ExpansionTile(
@@ -1393,21 +1500,19 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
               horizontal: 16.0,
               vertical: 8.0,
             ),
-            childrenPadding: const EdgeInsets.only(bottom: 8.0),
-            leading: Icon(
-              Icons.warning_amber,
-              color: Colors.orange,
-              size: 24,
-            ),
+            childrenPadding: EdgeInsets.zero, // <-- remove gap under the header
+            leading: Icon(Icons.warning_amber, color: Colors.orange, size: 24),
             title: Text(
-              'Errori Frequenti',
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+              'Domande Più Sbagliate',
+              style: Theme.of(
+                context,
+              ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
             ),
             children: [
               ListView.builder(
-                padding: EdgeInsets.zero,
+                primary:
+                    false, // <-- avoid implicit MediaQuery padding behavior
+                padding: EdgeInsets.zero, // <-- remove ListView top padding
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 itemCount: mostMissedQuestions.length,
@@ -1481,270 +1586,8 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
             ],
           ),
         ),
+        const SizedBox(height: 24),
       ],
-    );
-  }
-
-  void _showSessionQuestionDetails(
-    QuizResult risultato,
-    int questionIndex,
-    ColorScheme colorScheme,
-  ) {
-    Quiz? quiz;
-    for (final category in QuizService.availableCategories) {
-      final quizzes = _quizService.getQuizzesByCategory(category);
-      for (final q in quizzes) {
-        if (q.id == risultato.quizId) {
-          quiz = q;
-          break;
-        }
-      }
-      if (quiz != null) break;
-    }
-
-    if (quiz == null) {
-      showDialog(
-        context: context,
-        builder: (context) => AlertDialog(
-          title: const Text('Domanda non trovata'),
-          content: const Text(
-            'Non è stato possibile trovare i dettagli di questa domanda.',
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('OK'),
-            ),
-          ],
-        ),
-      );
-      return;
-    }
-
-    final quizDetails = quiz;
-
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (context) {
-        return DraggableScrollableSheet(
-          initialChildSize: 0.7,
-          minChildSize: 0.5,
-          maxChildSize: 0.95,
-          expand: false,
-          builder: (context, scrollController) {
-            return Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Center(
-                    child: Container(
-                      width: 40,
-                      height: 4,
-                      margin: const EdgeInsets.only(bottom: 20),
-                      decoration: BoxDecoration(
-                        color: colorScheme.onSurface.withValues(alpha: 0.2),
-                        borderRadius: BorderRadius.circular(2),
-                      ),
-                    ),
-                  ),
-                  Text(
-                    'Dettagli Domanda',
-                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  Card(
-                    color: colorScheme.secondaryContainer,
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Domanda',
-                            style: TextStyle(
-                              fontSize: 12,
-                              color: colorScheme.onSecondaryContainer
-                                  .withValues(alpha: 0.7),
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            quizDetails.domanda,
-                            style: const TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          const Divider(height: 24),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'Categoria',
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        color: colorScheme.onSecondaryContainer
-                                            .withValues(alpha: 0.7),
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 4),
-                                    Text(
-                                      _prettifyCategory(quizDetails.categoria),
-                                      style: const TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'Difficoltà',
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        color: colorScheme.onSecondaryContainer
-                                            .withValues(alpha: 0.7),
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 4),
-                                    Text(
-                                      quizDetails.difficolta,
-                                      style: const TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'Risposta',
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        color: risultato.isCorretta
-                                            ? Colors.green.withValues(
-                                                alpha: 0.7)
-                                            : Colors.red.withValues(alpha: 0.7),
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 4),
-                                    Text(
-                                      risultato.isCorretta ? '✓ Corretta' : '✗ Errata',
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.bold,
-                                        color: risultato.isCorretta
-                                            ? Colors.green
-                                            : Colors.red,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  Text(
-                    'Opzioni di Risposta',
-                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  Expanded(
-                    child: ListView.builder(
-                      controller: scrollController,
-                      itemCount: quizDetails.opzioni.length,
-                      itemBuilder: (context, index) {
-                        final isCorrect = index == quizDetails.rispostaCorretta;
-                        final isUserAnswer = index == risultato.rispostaUtente;
-
-                        return Card(
-                          color: isCorrect
-                              ? Colors.green.withValues(alpha: 0.1)
-                              : isUserAnswer && !risultato.isCorretta
-                                  ? Colors.red.withValues(alpha: 0.1)
-                                  : Colors.grey.withValues(alpha: 0.05),
-                          margin: const EdgeInsets.only(bottom: 8),
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundColor: isCorrect
-                                  ? Colors.green
-                                  : isUserAnswer && !risultato.isCorretta
-                                      ? Colors.red
-                                      : Colors.grey,
-                              child: Text(
-                                String.fromCharCode(65 + index),
-                                style: const TextStyle(color: Colors.white),
-                              ),
-                            ),
-                            title: Text(quizDetails.opzioni[index]),
-                            trailing: isCorrect
-                                ? const Icon(Icons.check_circle,
-                                    color: Colors.green)
-                                : isUserAnswer && !risultato.isCorretta
-                                    ? const Icon(Icons.cancel, color: Colors.red)
-                                    : null,
-                            subtitle: isUserAnswer
-                                ? Text(
-                                    risultato.isCorretta
-                                        ? 'Tua risposta (corretta)'
-                                        : 'Tua risposta (errata)',
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      color: risultato.isCorretta
-                                          ? Colors.green
-                                          : Colors.red,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  )
-                                : isCorrect && !risultato.isCorretta
-                                    ? const Text(
-                                        'Risposta corretta',
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          color: Colors.green,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                      )
-                                    : null,
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
-            );
-          },
-        );
-      },
     );
   }
 
@@ -1753,15 +1596,6 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     int errors,
     ColorScheme colorScheme,
   ) {
-    QuizResult? lastWrongResult;
-    for (final session in _quizHistory) {
-      for (final result in session.risultati) {
-        if (result.quizId == quiz.id && !result.isCorretta) {
-          lastWrongResult = result;
-        }
-      }
-    }
-
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -1840,7 +1674,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                     ),
                                     const SizedBox(height: 4),
                                     Text(
-                                      _prettifyCategory(quiz.categoria),
+                                      quiz.categoria,
                                       style: const TextStyle(
                                         fontSize: 14,
                                         fontWeight: FontWeight.w600,
@@ -1881,7 +1715,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                       'Errori',
                                       style: TextStyle(
                                         fontSize: 12,
-                                        color: Colors.red.withValues(alpha: 0.7),
+                                        color: Colors.red.withValues(
+                                          alpha: 0.7,
+                                        ),
                                         fontWeight: FontWeight.w600,
                                       ),
                                     ),
@@ -1917,22 +1753,16 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                       itemCount: quiz.opzioni.length,
                       itemBuilder: (context, index) {
                         final isCorrect = index == quiz.rispostaCorretta;
-                        final isUserAnswer = lastWrongResult != null && index == lastWrongResult.rispostaUtente;
-
                         return Card(
                           color: isCorrect
                               ? Colors.green.withValues(alpha: 0.1)
-                              : isUserAnswer && lastWrongResult != null
-                                  ? Colors.red.withValues(alpha: 0.1)
-                                  : Colors.grey.withValues(alpha: 0.05),
+                              : Colors.grey.withValues(alpha: 0.1),
                           margin: const EdgeInsets.only(bottom: 8),
                           child: ListTile(
                             leading: CircleAvatar(
                               backgroundColor: isCorrect
                                   ? Colors.green
-                                  : isUserAnswer && lastWrongResult != null
-                                      ? Colors.red
-                                      : Colors.grey,
+                                  : Colors.grey,
                               child: Text(
                                 String.fromCharCode(65 + index),
                                 style: const TextStyle(color: Colors.white),
@@ -1940,30 +1770,11 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                             ),
                             title: Text(quiz.opzioni[index]),
                             trailing: isCorrect
-                                ? const Icon(Icons.check_circle,
-                                    color: Colors.green)
-                                : isUserAnswer && lastWrongResult != null
-                                    ? const Icon(Icons.cancel, color: Colors.red)
-                                    : null,
-                            subtitle: isUserAnswer && lastWrongResult != null
-                                ? const Text(
-                                    'Tua risposta (errata)',
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.w600,
-                                    ),
+                                ? const Icon(
+                                    Icons.check_circle,
+                                    color: Colors.green,
                                   )
-                                : isCorrect && (lastWrongResult == null || !isUserAnswer)
-                                    ? const Text(
-                                        'Risposta corretta',
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          color: Colors.green,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                      )
-                                    : null,
+                                : null,
                           ),
                         );
                       },

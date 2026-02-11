@@ -128,41 +128,62 @@ class _QuizPageState extends State<QuizPage> {
   Future<List<Quiz>> _getMissedQuizzes() async {
     final prefs = await SharedPreferences.getInstance();
     final savedResults = prefs.getStringList('quiz_history') ?? [];
-    
-    // Conta quanti errori ha fatto per ogni domanda
-    final Map<String, int> missedCount = {};
-    
-    for (String jsonString in savedResults) {
+
+    // Nuova logica:
+    // - una domanda è "da rifare" SOLO se l'ULTIMO tentativo è stato sbagliato
+    // - manteniamo anche il conteggio totale degli errori per ordinare per priorità
+    final Map<String, int> wrongAttempts = {};
+    final Map<String, bool> lastIsCorrect = {};
+    final List<QuizSessionResult> sessions = [];
+
+    for (final jsonString in savedResults) {
       try {
-        final session = QuizSessionResult.fromJson(jsonString);
-        for (final result in session.risultati) {
-          if (!result.isCorretta) {
-            missedCount[result.quizId] = (missedCount[result.quizId] ?? 0) + 1;
-          }
-        }
+        sessions.add(QuizSessionResult.fromJson(jsonString));
       } catch (e) {
         // ignore
       }
     }
 
-    // Recupera i quiz effettivi dalle categorie selezionate
+    // Ordina in senso cronologico (vecchio -> nuovo) così l'ultimo tentativo sovrascrive correttamente
+    sessions.sort((a, b) => a.dataCompletamento.compareTo(b.dataCompletamento));
+
+    for (final session in sessions) {
+      for (final result in session.risultati) {
+        final isCorrect = result.isCorretta == true;
+
+        if (!isCorrect) {
+          wrongAttempts[result.quizId] =
+              (wrongAttempts[result.quizId] ?? 0) + 1;
+        }
+
+        // l'ultimo esito vince
+        lastIsCorrect[result.quizId] = isCorrect;
+      }
+    }
+
+    final pendingMissedIds = lastIsCorrect.entries
+        .where((e) => e.value == false)
+        .map((e) => e.key)
+        .toSet();
+
+    // Recupera i quiz effettivi (filtrati per categorie selezionate, o tutte se nessuna selezionata)
     final List<Quiz> missedQuizzes = [];
-    final categoriesToCheck = _selectedCategories.isEmpty 
-        ? QuizService.availableCategories 
+    final categoriesToCheck = _selectedCategories.isEmpty
+        ? QuizService.availableCategories
         : _selectedCategories.toList();
 
     for (final category in categoriesToCheck) {
       final quizzes = _quizService.getQuizzesByCategory(category);
       for (final quiz in quizzes) {
-        if (missedCount.containsKey(quiz.id)) {
+        if (pendingMissedIds.contains(quiz.id)) {
           missedQuizzes.add(quiz);
         }
       }
     }
 
-    // Ordina per numero di errori (dal più sbagliato al meno sbagliato)
-    missedQuizzes.sort((a, b) => 
-      (missedCount[b.id] ?? 0).compareTo(missedCount[a.id] ?? 0)
+    // Ordina per numero totale di errori (più sbagliate -> meno sbagliate)
+    missedQuizzes.sort(
+      (a, b) => (wrongAttempts[b.id] ?? 0).compareTo(wrongAttempts[a.id] ?? 0),
     );
 
     return missedQuizzes;
@@ -197,8 +218,8 @@ class _QuizPageState extends State<QuizPage> {
       MaterialPageRoute(
         builder: (context) => QuizSessionPage(
           quizzes: quizzesToUse,
-          selectedCategories: _selectedCategories.isEmpty 
-              ? QuizService.availableCategories 
+          selectedCategories: _selectedCategories.isEmpty
+              ? QuizService.availableCategories
               : _selectedCategories.toList(),
           setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
         ),
@@ -288,7 +309,9 @@ class _QuizPageState extends State<QuizPage> {
                 description,
                 style: TextStyle(
                   fontSize: 13,
-                  color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.7),
+                  color: Theme.of(
+                    context,
+                  ).colorScheme.onSurface.withValues(alpha: 0.7),
                 ),
               ),
             ],
@@ -543,13 +566,15 @@ class _QuizPageState extends State<QuizPage> {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 12),
+                        const SizedBox(height: 24),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Expanded(
                               child: OutlinedButton.icon(
-                                onPressed: _missedQuestionsCount > 0 ? _startMissedQuestionsQuiz : null,
+                                onPressed: _missedQuestionsCount > 0
+                                    ? _startMissedQuestionsQuiz
+                                    : null,
                                 icon: const Icon(Icons.refresh, size: 24),
                                 label: Text(
                                   _missedQuestionsCount > 0
@@ -563,16 +588,18 @@ class _QuizPageState extends State<QuizPage> {
                                 style: OutlinedButton.styleFrom(
                                   padding: const EdgeInsets.all(20),
                                   side: BorderSide(
-                                    color: _missedQuestionsCount > 0 
-                                        ? colorScheme.error 
-                                        : colorScheme.onSurface.withValues(alpha: 0.12),
+                                    color: _missedQuestionsCount > 0
+                                        ? colorScheme.error
+                                        : colorScheme.onSurface.withValues(
+                                            alpha: 0.12,
+                                          ),
                                     width: 2,
                                   ),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(12),
                                   ),
-                                  foregroundColor: _missedQuestionsCount > 0 
-                                      ? colorScheme.error 
+                                  foregroundColor: _missedQuestionsCount > 0
+                                      ? colorScheme.error
                                       : null,
                                 ),
                               ),
