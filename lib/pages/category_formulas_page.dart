@@ -1,10 +1,10 @@
 // lib/pages/category_formulas_page.dart
 
 import 'package:flutter/material.dart';
-import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:physics_ease_release/models/formula.dart';
 import 'package:physics_ease_release/pages/formula_detail_page.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
+import 'package:physics_ease_release/widgets/latex_text.dart';
 
 class CategoryFormulasPage extends StatefulWidget {
   final String category;
@@ -99,14 +99,17 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
                     elevation: 2,
                     child: ListTile(
                       title: Text(formula.titolo),
-                      subtitle: Math.tex(
+                      subtitle: LatexText(
                         formula.formulaLatex,
-                        textStyle: TextStyle(
+                        style: TextStyle(
                           fontSize: 16,
                           color: Theme.of(context)
                               .colorScheme
                               .onSurfaceVariant,
                         ),
+                        latexColor:
+                            Theme.of(context).colorScheme.onSurfaceVariant,
+                        forceLatex: true,
                       ),
                       trailing:
                       const Icon(Icons.arrow_forward_ios, size: 16),

@@ -172,7 +172,7 @@
         "10 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "spiegazione": "Per passare da $\\text{km/h}$ a $\\text{m/s}$ si divide per $3{,}6$.",
       "difficolta": "facile",
       "paroleChiave": [
         "conversione",
@@ -192,7 +192,7 @@
         "15 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "spiegazione": "Per passare da $\\text{km/h}$ a $\\text{m/s}$ si divide per $3{,}6$.",
       "difficolta": "facile",
       "paroleChiave": [
         "conversione",
@@ -212,7 +212,7 @@
         "15 m/s"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "spiegazione": "Per passare da $\\text{km/h}$ a $\\text{m/s}$ si divide per $3{,}6$.",
       "difficolta": "facile",
       "paroleChiave": [
         "conversione",
@@ -232,7 +232,7 @@
         "25 m/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "spiegazione": "Per passare da $\\text{km/h}$ a $\\text{m/s}$ si divide per $3{,}6$.",
       "difficolta": "facile",
       "paroleChiave": [
         "conversione",
@@ -252,7 +252,7 @@
         "30 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "spiegazione": "Per passare da $\\text{km/h}$ a $\\text{m/s}$ si divide per $3{,}6$.",
       "difficolta": "facile",
       "paroleChiave": [
         "conversione",
@@ -272,7 +272,7 @@
         "35 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "spiegazione": "Per passare da $\\text{km/h}$ a $\\text{m/s}$ si divide per $3{,}6$.",
       "difficolta": "facile",
       "paroleChiave": [
         "conversione",
@@ -292,7 +292,7 @@
         "35 m/s"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "spiegazione": "Per passare da $\\text{km/h}$ a $\\text{m/s}$ si divide per $3{,}6$.",
       "difficolta": "facile",
       "paroleChiave": [
         "conversione",
@@ -312,7 +312,7 @@
         "45 m/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "spiegazione": "Per passare da $\\text{km/h}$ a $\\text{m/s}$ si divide per $3{,}6$.",
       "difficolta": "facile",
       "paroleChiave": [
         "conversione",
@@ -332,7 +332,7 @@
         "21.67 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "spiegazione": "Per passare da $\\text{km/h}$ a $\\text{m/s}$ si divide per $3{,}6$.",
       "difficolta": "facile",
       "paroleChiave": [
         "conversione",
@@ -352,7 +352,7 @@
         "38.33 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "spiegazione": "Per passare da $\\text{km/h}$ a $\\text{m/s}$ si divide per $3{,}6$.",
       "difficolta": "facile",
       "paroleChiave": [
         "conversione",
@@ -372,7 +372,7 @@
         "10 m"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è $s = v \\cdot t$ (se $s_0 = 0$).",
       "difficolta": "facile",
       "paroleChiave": [
         "MRU",
@@ -392,7 +392,7 @@
         "14 m"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è $s = v \\cdot t$ (se $s_0 = 0$).",
       "difficolta": "facile",
       "paroleChiave": [
         "MRU",
@@ -412,7 +412,7 @@
         "54 m"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è $s = v \\cdot t$ (se $s_0 = 0$).",
       "difficolta": "facile",
       "paroleChiave": [
         "MRU",
@@ -432,7 +432,7 @@
         "88 m"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è $s = v \\cdot t$ (se $s_0 = 0$).",
       "difficolta": "facile",
       "paroleChiave": [
         "MRU",
@@ -452,7 +452,7 @@
         "130 m"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è $s = v \\cdot t$ (se $s_0 = 0$).",
       "difficolta": "facile",
       "paroleChiave": [
         "MRU",
@@ -472,7 +472,7 @@
         "90 m"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è $s = v \\cdot t$ (se $s_0 = 0$).",
       "difficolta": "facile",
       "paroleChiave": [
         "MRU",
@@ -492,7 +492,7 @@
         "238 m"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è $s = v \\cdot t$ (se $s_0 = 0$).",
       "difficolta": "facile",
       "paroleChiave": [
         "MRU",
@@ -512,7 +512,7 @@
         "304 m"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è $s = v \\cdot t$ (se $s_0 = 0$).",
       "difficolta": "facile",
       "paroleChiave": [
         "MRU",
@@ -532,7 +532,7 @@
         "378 m"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è $s = v \\cdot t$ (se $s_0 = 0$).",
       "difficolta": "facile",
       "paroleChiave": [
         "MRU",
@@ -552,7 +552,7 @@
         "230 m"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è $s = v \\cdot t$ (se $s_0 = 0$).",
       "difficolta": "facile",
       "paroleChiave": [
         "MRU",
@@ -572,7 +572,7 @@
         "La massa"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "La pendenza di s(t) è Δs/Δt, cioè la velocità.",
+      "spiegazione": "La pendenza di $s(t)$ è $\\Delta s / \\Delta t$, cioè la velocità.",
       "difficolta": "facile",
       "paroleChiave": [
         "grafico",
@@ -593,7 +593,7 @@
         "La massa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La pendenza di s(t) è Δs/Δt, cioè la velocità.",
+      "spiegazione": "La pendenza di $s(t)$ è $\\Delta s / \\Delta t$, cioè la velocità.",
       "difficolta": "facile",
       "paroleChiave": [
         "grafico",
@@ -614,7 +614,7 @@
         "La massa"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "La pendenza di s(t) è Δs/Δt, cioè la velocità.",
+      "spiegazione": "La pendenza di $s(t)$ è $\\Delta s / \\Delta t$, cioè la velocità.",
       "difficolta": "facile",
       "paroleChiave": [
         "grafico",
@@ -635,7 +635,7 @@
         "La velocità"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "La pendenza di s(t) è Δs/Δt, cioè la velocità.",
+      "spiegazione": "La pendenza di $s(t)$ è $\\Delta s / \\Delta t$, cioè la velocità.",
       "difficolta": "facile",
       "paroleChiave": [
         "grafico",
@@ -656,7 +656,7 @@
         "La massa"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "La pendenza di s(t) è Δs/Δt, cioè la velocità.",
+      "spiegazione": "La pendenza di $s(t)$ è $\\Delta s / \\Delta t$, cioè la velocità.",
       "difficolta": "facile",
       "paroleChiave": [
         "grafico",
@@ -677,7 +677,7 @@
         "La massa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La pendenza di s(t) è Δs/Δt, cioè la velocità.",
+      "spiegazione": "La pendenza di $s(t)$ è $\\Delta s / \\Delta t$, cioè la velocità.",
       "difficolta": "facile",
       "paroleChiave": [
         "grafico",
@@ -688,72 +688,9 @@
     },
     {
       "id": "cin_035",
-      "domanda": "In un grafico velocità-tempo v(t), che cosa rappresenta l'area sotto la curva tra due istanti?",
+      "domanda": "In un grafico spazio-tempo s(t), che cosa rappresenta la pendenza?",
       "categoria": "Cinematica",
-      "sottocategoria": "Grafici (v-t)",
-      "opzioni": [
-        "L'accelerazione",
-        "Lo spostamento (area con segno sotto la curva)",
-        "La velocità media",
-        "La distanza sempre positiva"
-      ],
-      "rispostaCorretta": 1,
-      "spiegazione": "Integrando v(t) nel tempo si ottiene lo spostamento: Δs = ∫v(t)dt.",
-      "difficolta": "facile",
-      "paroleChiave": [
-        "grafico",
-        "v-t",
-        "area",
-        "spostamento"
-      ]
-    },
-    {
-      "id": "cin_036",
-      "domanda": "In un grafico velocità-tempo v(t), che cosa rappresenta l'area sotto la curva tra due istanti?",
-      "categoria": "Cinematica",
-      "sottocategoria": "Grafici (v-t)",
-      "opzioni": [
-        "L'accelerazione",
-        "La velocità media",
-        "Lo spostamento (area con segno sotto la curva)",
-        "La distanza sempre positiva"
-      ],
-      "rispostaCorretta": 2,
-      "spiegazione": "Integrando v(t) nel tempo si ottiene lo spostamento: Δs = ∫v(t)dt.",
-      "difficolta": "facile",
-      "paroleChiave": [
-        "grafico",
-        "v-t",
-        "area",
-        "spostamento"
-      ]
-    },
-    {
-      "id": "cin_037",
-      "domanda": "In un grafico velocità-tempo v(t), che cosa rappresenta l'area sotto la curva tra due istanti?",
-      "categoria": "Cinematica",
-      "sottocategoria": "Grafici (v-t)",
-      "opzioni": [
-        "L'accelerazione",
-        "La velocità media",
-        "La distanza sempre positiva",
-        "Lo spostamento (area con segno sotto la curva)"
-      ],
-      "rispostaCorretta": 3,
-      "spiegazione": "Integrando v(t) nel tempo si ottiene lo spostamento: Δs = ∫v(t)dt.",
-      "difficolta": "facile",
-      "paroleChiave": [
-        "grafico",
-        "v-t",
-        "area",
-        "spostamento"
-      ]
-    },
-    {
-      "id": "cin_038",
-      "domanda": "In un grafico velocità-tempo v(t), che cosa rappresenta l'area sotto la curva tra due istanti?",
-      "categoria": "Cinematica",
-      "sottocategoria": "Grafici (v-t)",
+      "sottocategoria": "Grafici (s-t)",
       "opzioni": [
         "Lo spostamento (area con segno sotto la curva)",
         "L'accelerazione",
@@ -761,41 +698,20 @@
         "La distanza sempre positiva"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Integrando v(t) nel tempo si ottiene lo spostamento: Δs = ∫v(t)dt.",
+      "spiegazione": "La pendenza di $s(t)$ è $\\Delta s / \\Delta t$, cioè la velocità.",
       "difficolta": "facile",
       "paroleChiave": [
         "grafico",
-        "v-t",
-        "area",
-        "spostamento"
+        "s-t",
+        "pendenza",
+        "velocità"
       ]
     },
     {
-      "id": "cin_039",
-      "domanda": "In un grafico velocità-tempo v(t), che cosa rappresenta l'area sotto la curva tra due istanti?",
+      "id": "cin_036",
+      "domanda": "In un grafico spazio-tempo s(t), che cosa rappresenta la pendenza?",
       "categoria": "Cinematica",
-      "sottocategoria": "Grafici (v-t)",
-      "opzioni": [
-        "L'accelerazione",
-        "Lo spostamento (area con segno sotto la curva)",
-        "La velocità media",
-        "La distanza sempre positiva"
-      ],
-      "rispostaCorretta": 1,
-      "spiegazione": "Integrando v(t) nel tempo si ottiene lo spostamento: Δs = ∫v(t)dt.",
-      "difficolta": "facile",
-      "paroleChiave": [
-        "grafico",
-        "v-t",
-        "area",
-        "spostamento"
-      ]
-    },
-    {
-      "id": "cin_040",
-      "domanda": "In un grafico velocità-tempo v(t), che cosa rappresenta l'area sotto la curva tra due istanti?",
-      "categoria": "Cinematica",
-      "sottocategoria": "Grafici (v-t)",
+      "sottocategoria": "Grafici (s-t)",
       "opzioni": [
         "L'accelerazione",
         "La velocità media",
@@ -803,11 +719,95 @@
         "La distanza sempre positiva"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Integrando v(t) nel tempo si ottiene lo spostamento: Δs = ∫v(t)dt.",
+      "spiegazione": "Integrando $v(t)$ nel tempo si ottiene lo spostamento: $\\Delta s = \\int v(t) \\, dt$.",
       "difficolta": "facile",
       "paroleChiave": [
         "grafico",
-        "v-t",
+        "s-t",
+        "area",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_037",
+      "domanda": "In un grafico spazio-tempo s(t), che cosa rappresenta la pendenza?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (s-t)",
+      "opzioni": [
+        "L'accelerazione",
+        "La velocità media",
+        "La distanza sempre positiva",
+        "Lo spostamento (area con segno sotto la curva)"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Integrando $v(t)$ nel tempo si ottiene lo spostamento: $\\Delta s = \\int v(t) \\, dt$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "s-t",
+        "area",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_038",
+      "domanda": "In un grafico spazio-tempo s(t), che cosa rappresenta la pendenza?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (s-t)",
+      "opzioni": [
+        "Lo spostamento (area con segno sotto la curva)",
+        "L'accelerazione",
+        "La velocità media",
+        "La distanza sempre positiva"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Integrando $v(t)$ nel tempo si ottiene lo spostamento: $\\Delta s = \\int v(t) \\, dt$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "s-t",
+        "area",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_039",
+      "domanda": "In un grafico spazio-tempo s(t), che cosa rappresenta la pendenza?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (s-t)",
+      "opzioni": [
+        "L'accelerazione",
+        "Lo spostamento (area con segno sotto la curva)",
+        "La velocità media",
+        "La distanza sempre positiva"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Integrando $v(t)$ nel tempo si ottiene lo spostamento: $\\Delta s = \\int v(t) \\, dt$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "s-t",
+        "area",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_040",
+      "domanda": "In un grafico spazio-tempo s(t), che cosa rappresenta la pendenza?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (s-t)",
+      "opzioni": [
+        "L'accelerazione",
+        "La velocità media",
+        "Lo spostamento (area con segno sotto la curva)",
+        "La distanza sempre positiva"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Integrando $v(t)$ nel tempo si ottiene lo spostamento: $\\Delta s = \\int v(t) \\, dt$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "s-t",
         "area",
         "spostamento"
       ]
@@ -824,7 +824,7 @@
         "1 m/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -844,7 +844,7 @@
         "6 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -864,7 +864,7 @@
         "13 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -884,7 +884,7 @@
         "26 m/s"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -904,7 +904,7 @@
         "13 m/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -924,7 +924,7 @@
         "12 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -944,7 +944,7 @@
         "22 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -964,7 +964,7 @@
         "29 m/s"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -984,7 +984,7 @@
         "20 m/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -1004,7 +1004,7 @@
         "28 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -1024,7 +1024,7 @@
         "17 m"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -1044,7 +1044,7 @@
         "37 m"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -1064,7 +1064,7 @@
         "65 m"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -1084,7 +1084,7 @@
         "65 m"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -1104,7 +1104,7 @@
         "33.5 m"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -1124,7 +1124,7 @@
         "41 m"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -1144,7 +1144,7 @@
         "35 m"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -1164,7 +1164,7 @@
         "77 m"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -1184,7 +1184,7 @@
         "35 m"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -1204,7 +1204,7 @@
         "41 m"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
       "difficolta": "media",
       "paroleChiave": [
         "MUA",
@@ -1224,7 +1224,7 @@
         "40 s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Si usa la velocità di avvicinamento v_rel = vA+vB: t = d/v_rel.",
+      "spiegazione": "Si usa la velocità di avvicinamento $v_{rel} = v_A + v_B$: $t = d / v_{rel}$.",
       "difficolta": "media",
       "paroleChiave": [
         "moto relativo",
@@ -1244,7 +1244,7 @@
         "22.5 s"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Si usa la velocità di avvicinamento v_rel = vA+vB: t = d/v_rel.",
+      "spiegazione": "Si usa la velocità di avvicinamento $v_{rel} = v_A + v_B$: $t = d / v_{rel}$.",
       "difficolta": "media",
       "paroleChiave": [
         "moto relativo",
@@ -1264,7 +1264,7 @@
         "120 s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Si usa la velocità di avvicinamento v_rel = vA+vB: t = d/v_rel.",
+      "spiegazione": "Si usa la velocità di avvicinamento $v_{rel} = v_A + v_B$: $t = d / v_{rel}$.",
       "difficolta": "media",
       "paroleChiave": [
         "moto relativo",
@@ -1284,7 +1284,7 @@
         "150 s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Si usa la velocità di avvicinamento v_rel = vA+vB: t = d/v_rel.",
+      "spiegazione": "Si usa la velocità di avvicinamento $v_{rel} = v_A + v_B$: $t = d / v_{rel}$.",
       "difficolta": "media",
       "paroleChiave": [
         "moto relativo",
@@ -1304,7 +1304,7 @@
         "180 s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Si usa la velocità di avvicinamento v_rel = vA+vB: t = d/v_rel.",
+      "spiegazione": "Si usa la velocità di avvicinamento $v_{rel} = v_A + v_B$: $t = d / v_{rel}$.",
       "difficolta": "media",
       "paroleChiave": [
         "moto relativo",
@@ -1324,7 +1324,7 @@
         "1.22 s"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Alla quota massima v=0 e vale t = v0/g.",
+      "spiegazione": "Alla quota massima $v = 0$ e vale $t = v_0 / g$.",
       "difficolta": "media",
       "paroleChiave": [
         "lancio verticale",
@@ -1344,7 +1344,7 @@
         "0.71 s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Alla quota massima v=0 e vale t = v0/g.",
+      "spiegazione": "Alla quota massima $v = 0$ e vale $t = v_0 / g$.",
       "difficolta": "media",
       "paroleChiave": [
         "lancio verticale",
@@ -1364,7 +1364,7 @@
         "0.82 s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Alla quota massima v=0 e vale t = v0/g.",
+      "spiegazione": "Alla quota massima $v = 0$ e vale $t = v_0 / g$.",
       "difficolta": "media",
       "paroleChiave": [
         "lancio verticale",
@@ -1384,7 +1384,7 @@
         "0.92 s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Alla quota massima v=0 e vale t = v0/g.",
+      "spiegazione": "Alla quota massima $v = 0$ e vale $t = v_0 / g$.",
       "difficolta": "media",
       "paroleChiave": [
         "lancio verticale",
@@ -1404,7 +1404,7 @@
         "2.04 s"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Alla quota massima v=0 e vale t = v0/g.",
+      "spiegazione": "Alla quota massima $v = 0$ e vale $t = v_0 / g$.",
       "difficolta": "media",
       "paroleChiave": [
         "lancio verticale",
@@ -1424,7 +1424,7 @@
         "7.1 m"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Alla quota massima v=0 e si usa v² = v0² - 2g·h ⇒ h = v0²/(2g).",
+      "spiegazione": "Alla quota massima $v = 0$ e si usa $v^2 = v_0^2 - 2g \\cdot h$ $\\Rightarrow$ $h = v_0^2 / (2g)$.",
       "difficolta": "media",
       "paroleChiave": [
         "altezza",
@@ -1444,7 +1444,7 @@
         "9.35 m"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Alla quota massima v=0 e si usa v² = v0² - 2g·h ⇒ h = v0²/(2g).",
+      "spiegazione": "Alla quota massima $v = 0$ e si usa $v^2 = v_0^2 - 2g \\cdot h$ $\\Rightarrow$ $h = v_0^2 / (2g)$.",
       "difficolta": "media",
       "paroleChiave": [
         "altezza",
@@ -1464,7 +1464,7 @@
         "12 m"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Alla quota massima v=0 e si usa v² = v0² - 2g·h ⇒ h = v0²/(2g).",
+      "spiegazione": "Alla quota massima $v = 0$ e si usa $v^2 = v_0^2 - 2g \\cdot h$ $\\Rightarrow$ $h = v_0^2 / (2g)$.",
       "difficolta": "media",
       "paroleChiave": [
         "altezza",
@@ -1484,7 +1484,7 @@
         "13.06 m"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Alla quota massima v=0 e si usa v² = v0² - 2g·h ⇒ h = v0²/(2g).",
+      "spiegazione": "Alla quota massima $v = 0$ e si usa $v^2 = v_0^2 - 2g \\cdot h$ $\\Rightarrow$ $h = v_0^2 / (2g)$.",
       "difficolta": "media",
       "paroleChiave": [
         "altezza",
@@ -1504,7 +1504,7 @@
         "18.53 m"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Alla quota massima v=0 e si usa v² = v0² - 2g·h ⇒ h = v0²/(2g).",
+      "spiegazione": "Alla quota massima $v = 0$ e si usa $v^2 = v_0^2 - 2g \\cdot h$ $\\Rightarrow$ $h = v_0^2 / (2g)$.",
       "difficolta": "media",
       "paroleChiave": [
         "altezza",
@@ -1524,7 +1524,7 @@
         "25 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Il modulo della velocità è v = √(vx² + vy²).",
+      "spiegazione": "Il modulo della velocità è $v = \\sqrt{v_x^2 + v_y^2}$.",
       "difficolta": "media",
       "paroleChiave": [
         "vettori",
@@ -1544,7 +1544,7 @@
         "41 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Il modulo della velocità è v = √(vx² + vy²).",
+      "spiegazione": "Il modulo della velocità è $v = \\sqrt{v_x^2 + v_y^2}$.",
       "difficolta": "media",
       "paroleChiave": [
         "vettori",
@@ -1564,7 +1564,7 @@
         "7.81 m/s"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Il modulo della velocità è v = √(vx² + vy²).",
+      "spiegazione": "Il modulo della velocità è $v = \\sqrt{v_x^2 + v_y^2}$.",
       "difficolta": "media",
       "paroleChiave": [
         "vettori",
@@ -1584,7 +1584,7 @@
         "85 m/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Il modulo della velocità è v = √(vx² + vy²).",
+      "spiegazione": "Il modulo della velocità è $v = \\sqrt{v_x^2 + v_y^2}$.",
       "difficolta": "media",
       "paroleChiave": [
         "vettori",
@@ -1604,7 +1604,7 @@
         "113 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Il modulo della velocità è v = √(vx² + vy²).",
+      "spiegazione": "Il modulo della velocità è $v = \\sqrt{v_x^2 + v_y^2}$.",
       "difficolta": "media",
       "paroleChiave": [
         "vettori",
@@ -1624,7 +1624,7 @@
         "v(1) = 2.5 m/s; a = 1 m/s²"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "spiegazione": "Derivando: $v(t)=ds/dt=2at+b$ e $a(t)=dv/dt=2a$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "derivata",
@@ -1644,7 +1644,7 @@
         "v(2) = 5.25 m/s; a = 2 m/s²"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "spiegazione": "Derivando: $v(t)=ds/dt=2at+b$ e $a(t)=dv/dt=2a$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "derivata",
@@ -1664,7 +1664,7 @@
         "v(3) = 10 m/s; a = 3 m/s²"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "spiegazione": "Derivando: $v(t)=ds/dt=2at+b$ e $a(t)=dv/dt=2a$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "derivata",
@@ -1684,7 +1684,7 @@
         "v(4) = 33.5 m/s; a = 8 m/s²"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "spiegazione": "Derivando: $v(t)=ds/dt=2at+b$ e $a(t)=dv/dt=2a$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "derivata",
@@ -1704,7 +1704,7 @@
         "v(5) = 26.5 m/s; a = 5 m/s²"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "spiegazione": "Derivando: $v(t)=ds/dt=2at+b$ e $a(t)=dv/dt=2a$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "derivata",
@@ -1724,7 +1724,7 @@
         "v(1) = 2.25 m/s; a = 1 m/s²"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "spiegazione": "Derivando: $v(t)=ds/dt=2at+b$ e $a(t)=dv/dt=2a$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "derivata",
@@ -1744,7 +1744,7 @@
         "v(2) = 5 m/s; a = 2 m/s²"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "spiegazione": "Derivando: $v(t)=ds/dt=2at+b$ e $a(t)=dv/dt=2a$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "derivata",
@@ -1764,7 +1764,7 @@
         "v(3) = 19.5 m/s; a = 6 m/s²"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "spiegazione": "Derivando: $v(t)=ds/dt=2at+b$ e $a(t)=dv/dt=2a$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "derivata",
@@ -1784,7 +1784,7 @@
         "v(4) = 17.5 m/s; a = 4 m/s²"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "spiegazione": "Derivando: $v(t)=ds/dt=2at+b$ e $a(t)=dv/dt=2a$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "derivata",
@@ -1804,7 +1804,7 @@
         "v(5) = 26.25 m/s; a = 5 m/s²"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "spiegazione": "Derivando: $v(t)=ds/dt=2at+b$ e $a(t)=dv/dt=2a$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "derivata",
@@ -1824,7 +1824,7 @@
         "9 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La variazione totale di velocità è Δv = a1·t1 + a2·t2, quindi v = v0 + Δv.",
+      "spiegazione": "La variazione totale di velocità è $Δv = a1·t1 + a2·t2$, quindi $v = v0 + Δv$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "a tratti",
@@ -1844,7 +1844,7 @@
         "12 m/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "La variazione totale di velocità è Δv = a1·t1 + a2·t2, quindi v = v0 + Δv.",
+      "spiegazione": "La variazione totale di velocità è $Δv = a1·t1 + a2·t2$, quindi $v = v0 + Δv$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "a tratti",
@@ -1864,7 +1864,7 @@
         "3 m/s"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "La variazione totale di velocità è Δv = a1·t1 + a2·t2, quindi v = v0 + Δv.",
+      "spiegazione": "La variazione totale di velocità è $Δv = a1·t1 + a2·t2$, quindi $v = v0 + Δv$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "a tratti",
@@ -1884,7 +1884,7 @@
         "18 m/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "La variazione totale di velocità è Δv = a1·t1 + a2·t2, quindi v = v0 + Δv.",
+      "spiegazione": "La variazione totale di velocità è $Δv = a1·t1 + a2·t2$, quindi $v = v0 + Δv$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "a tratti",
@@ -1904,7 +1904,7 @@
         "21 m/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La variazione totale di velocità è Δv = a1·t1 + a2·t2, quindi v = v0 + Δv.",
+      "spiegazione": "La variazione totale di velocità è $Δv = a1·t1 + a2·t2$, quindi $v = v0 + Δv$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "a tratti",
@@ -1924,7 +1924,7 @@
         "v = 3 m/s; deriva = 26.57°"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Somma vettoriale: v = √(vb²+vc²) e tan(θ)=vc/vb.",
+      "spiegazione": "Somma vettoriale: $v = √(vb²+vc²)$ e $tan(\\theta)=vc/vb$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "moto relativo",
@@ -1944,7 +1944,7 @@
         "v = 7.62 m/s; deriva = 23.2°"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Somma vettoriale: v = √(vb²+vc²) e tan(θ)=vc/vb.",
+      "spiegazione": "Somma vettoriale: $v = √(vb²+vc²)$ e $tan(\\theta)=vc/vb$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "moto relativo",
@@ -1964,7 +1964,7 @@
         "v = 5 m/s; deriva = 20.56°"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Somma vettoriale: v = √(vb²+vc²) e tan(θ)=vc/vb.",
+      "spiegazione": "Somma vettoriale: $v = √(vb²+vc²)$ e $tan(\\theta)=vc/vb$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "moto relativo",
@@ -1984,7 +1984,7 @@
         "v = 6 m/s; deriva = 18.43°"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Somma vettoriale: v = √(vb²+vc²) e tan(θ)=vc/vb.",
+      "spiegazione": "Somma vettoriale: $v = √(vb²+vc²)$ e $tan(\\theta)=vc/vb$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "moto relativo",
@@ -2004,7 +2004,7 @@
         "v = 7 m/s; deriva = 16.7°"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Somma vettoriale: v = √(vb²+vc²) e tan(θ)=vc/vb.",
+      "spiegazione": "Somma vettoriale: $v = √(vb²+vc²)$ e $tan(\\theta)=vc/vb$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "moto relativo",
@@ -2024,7 +2024,7 @@
         "16 m/s²"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Nel MCU vale a_c = v²/r.",
+      "spiegazione": "Nel MCU vale $a_c = v^2/r$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "centripeta",
@@ -2044,7 +2044,7 @@
         "10 m/s²"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Nel MCU vale a_c = v²/r.",
+      "spiegazione": "Nel MCU vale $a_c = v^2/r$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "centripeta",
@@ -2064,7 +2064,7 @@
         "12 m/s²"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Nel MCU vale a_c = v²/r.",
+      "spiegazione": "Nel MCU vale $a_c = v^2/r$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "centripeta",
@@ -2084,7 +2084,7 @@
         "14 m/s²"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Nel MCU vale a_c = v²/r.",
+      "spiegazione": "Nel MCU vale $a_c = v^2/r$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "centripeta",
@@ -2104,7 +2104,7 @@
         "32 m/s²"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Nel MCU vale a_c = v²/r.",
+      "spiegazione": "Nel MCU vale $a_c = v^2/r$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "centripeta",
@@ -2114,17 +2114,17 @@
     },
     {
       "id": "cin_106",
-      "domanda": "Nel moto circolare uniforme con r = 3 m e v = 5 m/s, calcola periodo T e velocità angolare ω.",
+      "domanda": "Nel moto circolare uniforme con r = 3 m e v = 5 m/s, calcola periodo T e velocità angolare $\\omega$.",
       "categoria": "Cinematica",
       "sottocategoria": "Moto circolare uniforme",
       "opzioni": [
-        "T = 3.77 s; ω = 1.67 rad/s",
-        "T = 0.27 s; ω = 1.67 rad/s",
-        "T = 3.77 s; ω = 3.33 rad/s",
-        "T = 1.88 s; ω = 1.67 rad/s"
+        "T = 3.77 s; $\\omega$ = 1.67 rad/s",
+        "T = 0.27 s; $\\omega$ = 1.67 rad/s",
+        "T = 3.77 s; $\\omega$ = 3.33 rad/s",
+        "T = 1.88 s; $\\omega$ = 1.67 rad/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Si usa T = 2πr/v e ω = 2π/T.",
+      "spiegazione": "Si usa $T = 2πr/v$ e $\\omega = 2\\pi/T$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "periodo",
@@ -2134,17 +2134,17 @@
     },
     {
       "id": "cin_107",
-      "domanda": "Nel moto circolare uniforme con r = 4 m e v = 6 m/s, calcola periodo T e velocità angolare ω.",
+      "domanda": "Nel moto circolare uniforme con r = 4 m e v = 6 m/s, calcola periodo T e velocità angolare $\\omega$.",
       "categoria": "Cinematica",
       "sottocategoria": "Moto circolare uniforme",
       "opzioni": [
-        "T = 0.24 s; ω = 1.5 rad/s",
-        "T = 4.19 s; ω = 1.5 rad/s",
-        "T = 4.19 s; ω = 3 rad/s",
-        "T = 2.09 s; ω = 1.5 rad/s"
+        "T = 0.24 s; $\\omega$ = 1.5 rad/s",
+        "T = 4.19 s; $\\omega$ = 1.5 rad/s",
+        "T = 4.19 s; $\\omega$ = 3 rad/s",
+        "T = 2.09 s; $\\omega$ = 1.5 rad/s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Si usa T = 2πr/v e ω = 2π/T.",
+      "spiegazione": "Si usa $T = 2πr/v$ e $\\omega = 2\\pi/T$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "periodo",
@@ -2154,17 +2154,17 @@
     },
     {
       "id": "cin_108",
-      "domanda": "Nel moto circolare uniforme con r = 5 m e v = 7 m/s, calcola periodo T e velocità angolare ω.",
+      "domanda": "Nel moto circolare uniforme con r = 5 m e v = 7 m/s, calcola periodo T e velocità angolare $\\omega$.",
       "categoria": "Cinematica",
       "sottocategoria": "Moto circolare uniforme",
       "opzioni": [
-        "T = 0.22 s; ω = 1.4 rad/s",
-        "T = 4.49 s; ω = 2.8 rad/s",
-        "T = 4.49 s; ω = 1.4 rad/s",
-        "T = 2.24 s; ω = 1.4 rad/s"
+        "T = 0.22 s; $\\omega$ = 1.4 rad/s",
+        "T = 4.49 s; $\\omega$ = 2.8 rad/s",
+        "T = 4.49 s; $\\omega$ = 1.4 rad/s",
+        "T = 2.24 s; $\\omega$ = 1.4 rad/s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Si usa T = 2πr/v e ω = 2π/T.",
+      "spiegazione": "Si usa $T = 2πr/v$ e $\\omega = 2\\pi/T$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "periodo",
@@ -2174,17 +2174,17 @@
     },
     {
       "id": "cin_109",
-      "domanda": "Nel moto circolare uniforme con r = 6 m e v = 8 m/s, calcola periodo T e velocità angolare ω.",
+      "domanda": "Nel moto circolare uniforme con r = 6 m e v = 8 m/s, calcola periodo T e velocità angolare $\\omega$.",
       "categoria": "Cinematica",
       "sottocategoria": "Moto circolare uniforme",
       "opzioni": [
-        "T = 0.21 s; ω = 1.33 rad/s",
-        "T = 4.71 s; ω = 2.67 rad/s",
-        "T = 2.36 s; ω = 1.33 rad/s",
-        "T = 4.71 s; ω = 1.33 rad/s"
+        "T = 0.21 s; $\\omega$ = 1.33 rad/s",
+        "T = 4.71 s; $\\omega$ = 2.67 rad/s",
+        "T = 2.36 s; $\\omega$ = 1.33 rad/s",
+        "T = 4.71 s; $\\omega$ = 1.33 rad/s"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Si usa T = 2πr/v e ω = 2π/T.",
+      "spiegazione": "Si usa $T = 2πr/v$ e $\\omega = 2\\pi/T$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "periodo",
@@ -2194,17 +2194,17 @@
     },
     {
       "id": "cin_110",
-      "domanda": "Nel moto circolare uniforme con r = 7 m e v = 9 m/s, calcola periodo T e velocità angolare ω.",
+      "domanda": "Nel moto circolare uniforme con r = 7 m e v = 9 m/s, calcola periodo T e velocità angolare $\\omega$.",
       "categoria": "Cinematica",
       "sottocategoria": "Moto circolare uniforme",
       "opzioni": [
-        "T = 4.89 s; ω = 1.29 rad/s",
-        "T = 0.2 s; ω = 1.29 rad/s",
-        "T = 4.89 s; ω = 2.57 rad/s",
-        "T = 2.44 s; ω = 1.29 rad/s"
+        "T = 4.89 s; $\\omega$ = 1.29 rad/s",
+        "T = 0.2 s; $\\omega$ = 1.29 rad/s",
+        "T = 4.89 s; $\\omega$ = 2.57 rad/s",
+        "T = 2.44 s; $\\omega$ = 1.29 rad/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Si usa T = 2πr/v e ω = 2π/T.",
+      "spiegazione": "Si usa $T = 2πr/v$ e $\\omega = 2\\pi/T$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "periodo",
@@ -2224,7 +2224,7 @@
         "6 m/s²"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "a_c e a_t sono perpendicolari, quindi a = √(a_c² + a_t²) con a_c = v²/r.",
+      "spiegazione": "$a_c$ e $a_t$ sono perpendicolari, quindi $a = √(a_c² + a_t²)$ con $a_c = v^2/r$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "tangenziale",
@@ -2244,7 +2244,7 @@
         "8.91 m/s²"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "a_c e a_t sono perpendicolari, quindi a = √(a_c² + a_t²) con a_c = v²/r.",
+      "spiegazione": "$a_c$ e $a_t$ sono perpendicolari, quindi $a = √(a_c² + a_t²)$ con $a_c = v^2/r$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "tangenziale",
@@ -2264,7 +2264,7 @@
         "12.96 m/s²"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "a_c e a_t sono perpendicolari, quindi a = √(a_c² + a_t²) con a_c = v²/r.",
+      "spiegazione": "$a_c$ e $a_t$ sono perpendicolari, quindi $a = √(a_c² + a_t²)$ con $a_c = v^2/r$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "tangenziale",
@@ -2284,7 +2284,7 @@
         "18 m/s²"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "a_c e a_t sono perpendicolari, quindi a = √(a_c² + a_t²) con a_c = v²/r.",
+      "spiegazione": "$a_c$ e $a_t$ sono perpendicolari, quindi $a = √(a_c² + a_t²)$ con $a_c = v^2/r$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "tangenziale",
@@ -2296,7 +2296,7 @@
       "id": "cin_115",
       "domanda": "Moto circolare non uniforme: v = 20 m/s, r = 16 m, a_t = 3 m/s². Qual è il modulo dell'accelerazione totale?",
       "categoria": "Cinematica",
-      "sottoccategoria": "Moto circolare non uniforme",
+      "sottocategoria": "Moto circolare non uniforme",
       "opzioni": [
         "28 m/s²",
         "25.18 m/s²",
@@ -2304,7 +2304,7 @@
         "25 m/s²"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "a_c e a_t sono perpendicolari, quindi a = √(a_c² + a_t²) con a_c = v²/r.",
+      "spiegazione": "$a_c$ e $a_t$ sono perpendicolari, quindi $a = √(a_c² + a_t²)$ con $a_c = v^2/r$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "tangenziale",
@@ -2324,7 +2324,7 @@
         "0.54 s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Si risolve vy0·t - (1/2)g·t² = 4 e si prende la soluzione più grande (secondo passaggio).",
+      "spiegazione": "Si risolve $vy0·t - (1/2)g·t² = 4$ e si prende la soluzione più grande (secondo passaggio).",
       "difficolta": "difficile",
       "paroleChiave": [
         "parabola",
@@ -2344,7 +2344,7 @@
         "1.49 s"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Si risolve vy0·t - (1/2)g·t² = 4 e si prende la soluzione più grande (secondo passaggio).",
+      "spiegazione": "Si risolve $vy0·t - (1/2)g·t² = 4$ e si prende la soluzione più grande (secondo passaggio).",
       "difficolta": "difficile",
       "paroleChiave": [
         "parabola",
@@ -2364,7 +2364,7 @@
         "0.89 s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Si risolve vy0·t - (1/2)g·t² = 4 e si prende la soluzione più grande (secondo passaggio).",
+      "spiegazione": "Si risolve $vy0·t - (1/2)g·t² = 4$ e si prende la soluzione più grande (secondo passaggio).",
       "difficolta": "difficile",
       "paroleChiave": [
         "parabola",
@@ -2384,7 +2384,7 @@
         "1.03 s"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Si risolve vy0·t - (1/2)g·t² = 4 e si prende la soluzione più grande (secondo passaggio).",
+      "spiegazione": "Si risolve $vy0·t - (1/2)g·t² = 4$ e si prende la soluzione più grande (secondo passaggio).",
       "difficolta": "difficile",
       "paroleChiave": [
         "parabola",
@@ -2396,7 +2396,7 @@
       "id": "cin_120",
       "domanda": "Un proiettile è lanciato con v0 = 26 m/s a 30°. Quanto tempo impiega a raggiungere una quota di 4 m sopra il punto di lancio? (g=9,8 m/s²)",
       "categoria": "Cinematica",
-      "sottoccategoria": "Moto parabolico (quota diversa)",
+      "sottocategoria": "Moto parabolico (quota diversa)",
       "opzioni": [
         "1.33 s",
         "2.65 s",
@@ -2404,7 +2404,7 @@
         "1.15 s"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Si risolve vy0·t - (1/2)g·t² = 4 e si prende la soluzione più grande (secondo passaggio).",
+      "spiegazione": "Si risolve $vy0·t - (1/2)g·t² = 4$ e si prende la soluzione più grande (secondo passaggio).",
       "difficolta": "difficile",
       "paroleChiave": [
         "parabola",

@@ -26,13 +26,13 @@
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Ipotesi di Planck",
       "opzioni": [
-        "E = mc",
-        "E = hf",
-        "E = ma",
-        "E = kT"
+        "$E = mc$",
+        "$E = hf$",
+        "$E = ma$",
+        "$E = kT$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "L'energia di un fotone è proporzionale alla frequenza: E = h f.",
+      "spiegazione": "L'energia di un fotone è proporzionale alla frequenza: $E = hf$.",
       "difficolta": "facile",
       "paroleChiave": [
         "planck",
@@ -89,13 +89,13 @@
       "categoria": "Fisica Quantistica",
       "sottocategoria": "De Broglie",
       "opzioni": [
-        "λ = hf",
-        "λ = h/p",
-        "λ = p/h",
-        "λ = c/f"
+        "$\\lambda = hf$",
+        "$\\lambda = h/p$",
+        "$\\lambda = p/h$",
+        "$\\lambda = c/f$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "De Broglie associa a una particella di quantità di moto p una lunghezza d'onda λ = h/p.",
+      "spiegazione": "De Broglie associa a una particella di quantità di moto $p$ una lunghezza d'onda $\\lambda = h/p$.",
       "difficolta": "facile",
       "paroleChiave": [
         "debroglie",
@@ -136,7 +136,7 @@
         "Impossibilità di misurare la velocità della luce"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In meccanica quantistica non è possibile rendere arbitrariamente piccole insieme le incertezze su x e p.",
+      "spiegazione": "In meccanica quantistica non è possibile rendere arbitrariamente piccole insieme le incertezze su $x$ e $p$.",
       "difficolta": "facile",
       "paroleChiave": [
         "heisenberg",
@@ -167,7 +167,7 @@
     },
     {
       "id": "qnt_009",
-      "domanda": "In modo semplificato, la funzione d'onda ψ descrive:",
+      "domanda": "In modo semplificato, la funzione d'onda $\\psi$ descrive:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Funzione d'onda",
       "opzioni": [
@@ -177,7 +177,7 @@
         "La carica del neutrone"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La funzione d'onda contiene informazione sullo stato; da |ψ|² si ricavano densità di probabilità.",
+      "spiegazione": "La funzione d'onda contiene informazione sullo stato; da $|\\psi|^2$ si ricavano densità di probabilità.",
       "difficolta": "facile",
       "paroleChiave": [
         "psi",
@@ -187,12 +187,12 @@
     },
     {
       "id": "qnt_010",
-      "domanda": "Cosa si intende (a livello liceale) per “collasso” della funzione d'onda?",
+      "domanda": "Cosa si intende (a livello liceale) per \u201ccollasso\u201d della funzione d'onda?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Misura",
       "opzioni": [
         "La particella esplode",
-        "Dopo la misura lo stato si “seleziona” su un risultato compatibile",
+        "Dopo la misura lo stato si \u201cseleziona\u201d su un risultato compatibile",
         "La luce diventa più lenta",
         "La massa diventa negativa"
       ],
@@ -289,7 +289,7 @@
     },
     {
       "id": "qnt_015",
-      "domanda": "Il numero quantico principale n descrive soprattutto:",
+      "domanda": "Il numero quantico principale $n$ descrive soprattutto:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Numeri quantici",
       "opzioni": [
@@ -299,7 +299,7 @@
         "La massa del nucleo"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "n identifica il livello energetico principale (guscio) dell'elettrone.",
+      "spiegazione": "$n$ identifica il livello energetico principale (guscio) dell'elettrone.",
       "difficolta": "facile",
       "paroleChiave": [
         "numeri quantici",
@@ -309,17 +309,17 @@
     },
     {
       "id": "qnt_016",
-      "domanda": "Per un dato n, il numero quantico orbitale l può valere:",
+      "domanda": "Per un dato $n$, il numero quantico orbitale $l$ può valere:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Numeri quantici",
       "opzioni": [
-        "Da 1 a n",
-        "Da 0 a n-1",
-        "Solo 0",
-        "Solo n"
+        "Da $1$ a $n$",
+        "Da $0$ a $n-1$",
+        "Solo $0$",
+        "Solo $n$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per un dato n, l può assumere valori interi da 0 fino a n−1.",
+      "spiegazione": "Per un dato $n$, $l$ può assumere valori interi da $0$ fino a $n-1$.",
       "difficolta": "facile",
       "paroleChiave": [
         "l",
@@ -353,13 +353,13 @@
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Spin",
       "opzioni": [
-        "ms = 0 oppure 1",
-        "ms = +1/2 oppure -1/2",
-        "ms = qualsiasi numero reale",
-        "ms = 2"
+        "$m_s = 0$ oppure $1$",
+        "$m_s = +1/2$ oppure $-1/2$",
+        "$m_s =$ qualsiasi numero reale",
+        "$m_s = 2$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per l'elettrone il numero quantico di spin ms assume solo i valori ±1/2.",
+      "spiegazione": "Per l'elettrone il numero quantico di spin $m_s$ assume solo i valori $\\pm 1/2$.",
       "difficolta": "facile",
       "paroleChiave": [
         "spin",
@@ -369,7 +369,7 @@
     },
     {
       "id": "qnt_019",
-      "domanda": "Un “orbitale” (linguaggio moderno) è meglio descritto come:",
+      "domanda": "Un \u201corbitale\u201d (linguaggio moderno) è meglio descritto come:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Orbitali",
       "opzioni": [
@@ -379,7 +379,7 @@
         "Una proprietà del nucleo"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "L'orbitale è legato alla distribuzione di probabilità (|ψ|²), non a una traiettoria classica.",
+      "spiegazione": "L'orbitale è legato alla distribuzione di probabilità ($|\\psi|^2$), non a una traiettoria classica.",
       "difficolta": "facile",
       "paroleChiave": [
         "orbitale",
@@ -389,7 +389,7 @@
     },
     {
       "id": "qnt_020",
-      "domanda": "Cosa indica lo “stato fondamentale” di un atomo?",
+      "domanda": "Cosa indica lo \u201cstato fondamentale\u201d di un atomo?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Stati energetici",
       "opzioni": [
@@ -409,7 +409,7 @@
     },
     {
       "id": "qnt_021",
-      "domanda": "Uno “stato eccitato” è:",
+      "domanda": "Uno \u201cstato eccitato\u201d è:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Stati energetici",
       "opzioni": [
@@ -439,7 +439,7 @@
         "Perché la massa è negativa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Prendendo E=0 per elettrone libero a infinito, uno stato legato è energeticamente più basso quindi E<0.",
+      "spiegazione": "Prendendo $E = 0$ per elettrone libero a infinito, uno stato legato è energeticamente più basso quindi $E < 0$.",
       "difficolta": "facile",
       "paroleChiave": [
         "bohr",
@@ -449,7 +449,7 @@
     },
     {
       "id": "qnt_023",
-      "domanda": "Il “tunneling quantistico” descrive:",
+      "domanda": "Il \u201ctunneling quantistico\u201d descrive:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Effetto tunnel",
       "opzioni": [
@@ -459,7 +459,7 @@
         "Un'onda che non si attenua mai"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "In MQ esiste una probabilità non nulla di attraversare barriere anche se classicanente E < U0.",
+      "spiegazione": "In MQ esiste una probabilità non nulla di attraversare barriere anche se classicanente $E < U_0$.",
       "difficolta": "facile",
       "paroleChiave": [
         "tunnel",
@@ -479,7 +479,7 @@
         "Rifrazione in un prisma"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Nel decadimento alfa, la particella α può uscire dal nucleo tramite effetto tunnel attraverso la barriera coulombiana.",
+      "spiegazione": "Nel decadimento alfa, la particella $\\alpha$ può uscire dal nucleo tramite effetto tunnel attraverso la barriera coulombiana.",
       "difficolta": "facile",
       "paroleChiave": [
         "tunnel",
@@ -534,13 +534,13 @@
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Indeterminazione",
       "opzioni": [
-        "Δx·Δp ≥ h",
-        "Δx·Δp ≥ ħ/2",
-        "Δx·Δp = 0",
-        "Δx·Δp ≤ ħ/2"
+        "$\\Delta x \\cdot \\Delta p \\geq h$",
+        "$\\Delta x \\cdot \\Delta p \\geq \\hbar/2$",
+        "$\\Delta x \\cdot \\Delta p = 0$",
+        "$\\Delta x \\cdot \\Delta p \\leq \\hbar/2$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La relazione standard è Δx·Δp ≥ ħ/2, dove ħ = h/(2π).",
+      "spiegazione": "La relazione standard è $\\Delta x \\cdot \\Delta p \\geq \\hbar/2$, dove $\\hbar = h/(2\\pi)$.",
       "difficolta": "facile",
       "paroleChiave": [
         "indeterminazione",
@@ -602,7 +602,7 @@
         "Solo a energia infinita"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Planck propose che l'energia fosse scambiata in quanti E = h f.",
+      "spiegazione": "Planck propose che l'energia fosse scambiata in quanti $E = hf$.",
       "difficolta": "facile",
       "paroleChiave": [
         "planck",
@@ -776,7 +776,7 @@
     },
     {
       "id": "qnt_039",
-      "domanda": "In un laser, “coerenza” della luce significa soprattutto:",
+      "domanda": "In un laser, \u201ccoerenza\u201d della luce significa soprattutto:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Laser",
       "opzioni": [
@@ -800,13 +800,13 @@
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Interpretazione",
       "opzioni": [
-        "ψ",
-        "|ψ|²",
-        "1/ψ",
-        "ψ³"
+        "$\\psi$",
+        "$|\\psi|^2$",
+        "$1/\\psi$",
+        "$\\psi^3$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La densità di probabilità è proporzionale al modulo quadro della funzione d'onda: |ψ|².",
+      "spiegazione": "La densità di probabilità è proporzionale al modulo quadro della funzione d'onda: $|\\psi|^2$.",
       "difficolta": "facile",
       "paroleChiave": [
         "born",
@@ -817,17 +817,17 @@
     },
     {
       "id": "qnt_041",
-      "domanda": "Un fotone ha lunghezza d'onda λ = 500 nm. Usando c = 3.0×10^8 m/s e h = 6.63×10^-34 J·s, qual è circa la sua energia?",
+      "domanda": "Un fotone ha lunghezza d'onda $\\lambda = 500$ nm. Usando $c = 3.0 \\times 10^8$ m/s e $h = 6.63 \\times 10^{-34}$ J·s, qual è circa la sua energia?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Energia del fotone",
       "opzioni": [
-        "≈ 4.0×10^-19 J",
-        "≈ 4.0×10^-25 J",
-        "≈ 4.0×10^-13 J",
-        "≈ 4.0×10^-31 J"
+        "$\\approx 4.0 \\times 10^{-19}$ J",
+        "$\\approx 4.0 \\times 10^{-25}$ J",
+        "$\\approx 4.0 \\times 10^{-13}$ J",
+        "$\\approx 4.0 \\times 10^{-31}$ J"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "E = hc/λ ≈ (6.63×10^-34·3.0×10^8)/(5.0×10^-7) ≈ 4.0×10^-19 J.",
+      "spiegazione": "$$E = hc/\\lambda \\approx (6.63 \\times 10^{-34} \\cdot 3.0 \\times 10^8)/(5.0 \\times 10^{-7}) \\approx 4.0 \\times 10^{-19}$$ J.",
       "difficolta": "media",
       "paroleChiave": [
         "fotone",
@@ -838,17 +838,17 @@
     },
     {
       "id": "qnt_042",
-      "domanda": "Per una luce di frequenza f = 6.0×10^14 Hz, con h = 6.63×10^-34 J·s, l'energia del fotone vale:",
+      "domanda": "Per una luce di frequenza $f = 6.0 \\times 10^{14}$ Hz, con $h = 6.63 \\times 10^{-34}$ J·s, l'energia del fotone vale:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Energia del fotone",
       "opzioni": [
-        "≈ 4.0×10^-19 J",
-        "≈ 1.1×10^-48 J",
-        "≈ 6.0×10^14 J",
-        "≈ 6.6×10^-20 J"
+        "$\\approx 4.0 \\times 10^{-19}$ J",
+        "$\\approx 1.1 \\times 10^{-48}$ J",
+        "$\\approx 6.0 \\times 10^{14}$ J",
+        "$\\approx 6.6 \\times 10^{-20}$ J"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "E = hf ≈ 6.63×10^-34 · 6.0×10^14 ≈ 4.0×10^-19 J.",
+      "spiegazione": "$$E = hf \\approx 6.63 \\times 10^{-34} \\cdot 6.0 \\times 10^{14} \\approx 4.0 \\times 10^{-19}$$ J.",
       "difficolta": "media",
       "paroleChiave": [
         "E=hf",
@@ -858,17 +858,17 @@
     },
     {
       "id": "qnt_043",
-      "domanda": "Una luce ha energia per fotone 2.0 eV. Sapendo 1 eV = 1.60×10^-19 J e h = 6.63×10^-34 J·s, qual è circa la frequenza?",
+      "domanda": "Una luce ha energia per fotone $2.0$ eV. Sapendo $1$ eV $= 1.60 \\times 10^{-19}$ J e $h = 6.63 \\times 10^{-34}$ J·s, qual è circa la frequenza?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Energia del fotone",
       "opzioni": [
-        "≈ 4.8×10^14 Hz",
-        "≈ 4.8×10^-14 Hz",
-        "≈ 3.0×10^8 Hz",
-        "≈ 1.2×10^20 Hz"
+        "$\\approx 4.8 \\times 10^{14}$ Hz",
+        "$\\approx 4.8 \\times 10^{-14}$ Hz",
+        "$\\approx 3.0 \\times 10^{8}$ Hz",
+        "$\\approx 1.2 \\times 10^{20}$ Hz"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "E ≈ 2.0·1.60×10^-19 = 3.2×10^-19 J, quindi f = E/h ≈ 3.2×10^-19 / 6.63×10^-34 ≈ 4.8×10^14 Hz.",
+      "spiegazione": "$$E \\approx 2.0 \\cdot 1.60 \\times 10^{-19} = 3.2 \\times 10^{-19}$$ J, quindi $$f = E/h \\approx 3.2 \\times 10^{-19} / 6.63 \\times 10^{-34} \\approx 4.8 \\times 10^{14}$$ Hz.",
       "difficolta": "media",
       "paroleChiave": [
         "eV",
@@ -878,17 +878,17 @@
     },
     {
       "id": "qnt_044",
-      "domanda": "Una luce ha λ = 400 nm. Con c = 3.0×10^8 m/s, la frequenza è circa:",
+      "domanda": "Una luce ha $\\lambda = 400$ nm. Con $c = 3.0 \\times 10^8$ m/s, la frequenza è circa:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Onde EM",
       "opzioni": [
-        "7.5×10^14 Hz",
-        "1.2×10^6 Hz",
-        "4.0×10^2 Hz",
-        "7.5×10^-14 Hz"
+        "$7.5 \\times 10^{14}$ Hz",
+        "$1.2 \\times 10^{6}$ Hz",
+        "$4.0 \\times 10^{2}$ Hz",
+        "$7.5 \\times 10^{-14}$ Hz"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "f = c/λ = 3.0×10^8 / 4.0×10^-7 ≈ 7.5×10^14 Hz.",
+      "spiegazione": "$$f = c/\\lambda = 3.0 \\times 10^8 / 4.0 \\times 10^{-7} \\approx 7.5 \\times 10^{14}$$ Hz.",
       "difficolta": "media",
       "paroleChiave": [
         "frequenza",
@@ -898,17 +898,17 @@
     },
     {
       "id": "qnt_045",
-      "domanda": "Effetto fotoelettrico: se il lavoro di estrazione è φ = 2.0 eV e il fotone ha energia 3.0 eV, qual è l'energia cinetica massima (in eV)?",
+      "domanda": "Effetto fotoelettrico: se il lavoro di estrazione è $\\phi = 2.0$ eV e il fotone ha energia $3.0$ eV, qual è l'energia cinetica massima (in eV)?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Effetto fotoelettrico",
       "opzioni": [
-        "1.0 eV",
-        "2.0 eV",
-        "3.0 eV",
-        "5.0 eV"
+        "$1.0$ eV",
+        "$2.0$ eV",
+        "$3.0$ eV",
+        "$5.0$ eV"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Kmax = E − φ = 3.0 − 2.0 = 1.0 eV.",
+      "spiegazione": "$K_{max} = E - \\phi = 3.0 - 2.0 = 1.0$ eV.",
       "difficolta": "media",
       "paroleChiave": [
         "fotoelettrico",
@@ -918,7 +918,7 @@
     },
     {
       "id": "qnt_046",
-      "domanda": "Effetto fotoelettrico: se la frequenza della luce aumenta (oltre soglia), la Kmax degli elettroni:",
+      "domanda": "Effetto fotoelettrico: se la frequenza della luce aumenta (oltre soglia), la $K_{max}$ degli elettroni:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Effetto fotoelettrico",
       "opzioni": [
@@ -928,7 +928,7 @@
         "Dipende solo dall'intensità"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Poiché E = hf, aumentando f aumenta l'energia del fotone e quindi Kmax = hf − φ aumenta.",
+      "spiegazione": "Poiché $E = hf$, aumentando $f$ aumenta l'energia del fotone e quindi $K_{max} = hf - \\phi$ aumenta.",
       "difficolta": "media",
       "paroleChiave": [
         "fotoelettrico",
@@ -938,7 +938,7 @@
     },
     {
       "id": "qnt_047",
-      "domanda": "Effetto fotoelettrico: se aumenta l'intensità della luce (a frequenza f sopra soglia), la Kmax degli elettroni:",
+      "domanda": "Effetto fotoelettrico: se aumenta l'intensità della luce (a frequenza $f$ sopra soglia), la $K_{max}$ degli elettroni:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Effetto fotoelettrico",
       "opzioni": [
@@ -948,7 +948,7 @@
         "Diventa negativa"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "A frequenza fissata, l'energia per fotone non cambia; l'intensità cambia soprattutto il numero di elettroni emessi, non Kmax.",
+      "spiegazione": "A frequenza fissata, l'energia per fotone non cambia; l'intensità cambia soprattutto il numero di elettroni emessi, non $K_{max}$.",
       "difficolta": "media",
       "paroleChiave": [
         "fotoelettrico",
@@ -958,17 +958,17 @@
     },
     {
       "id": "qnt_048",
-      "domanda": "Per un elettrone con quantità di moto p = 1.0×10^-24 kg·m/s e h = 6.63×10^-34 J·s, la lunghezza d'onda di de Broglie vale circa:",
+      "domanda": "Per un elettrone con quantità di moto $p = 1.0 \\times 10^{-24}$ kg·m/s e $h = 6.63 \\times 10^{-34}$ J·s, la lunghezza d'onda di de Broglie vale circa:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "De Broglie",
       "opzioni": [
-        "6.6×10^-10 m",
-        "6.6×10^-58 m",
-        "6.6×10^10 m",
-        "1.0×10^-24 m"
+        "$6.6 \\times 10^{-10}$ m",
+        "$6.6 \\times 10^{-58}$ m",
+        "$6.6 \\times 10^{10}$ m",
+        "$1.0 \\times 10^{-24}$ m"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "λ = h/p ≈ 6.63×10^-34 / 1.0×10^-24 = 6.6×10^-10 m.",
+      "spiegazione": "$$\\lambda = h/p \\approx 6.63 \\times 10^{-34} / 1.0 \\times 10^{-24} = 6.6 \\times 10^{-10}$$ m.",
       "difficolta": "media",
       "paroleChiave": [
         "debroglie",
@@ -978,7 +978,7 @@
     },
     {
       "id": "qnt_049",
-      "domanda": "Se la quantità di moto p di una particella raddoppia, la sua λ di de Broglie:",
+      "domanda": "Se la quantità di moto $p$ di una particella raddoppia, la sua $\\lambda$ di de Broglie:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "De Broglie",
       "opzioni": [
@@ -988,7 +988,7 @@
         "Diventa zero sempre"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Poiché λ = h/p, se p raddoppia allora λ si dimezza.",
+      "spiegazione": "Poiché $\\lambda = h/p$, se $p$ raddoppia allora $\\lambda$ si dimezza.",
       "difficolta": "media",
       "paroleChiave": [
         "debroglie",
@@ -997,17 +997,17 @@
     },
     {
       "id": "qnt_050",
-      "domanda": "Principio di indeterminazione: se Δx = 1.0×10^-10 m, qual è il limite minimo per Δp (usa ħ ≈ 1.05×10^-34 J·s)?",
+      "domanda": "Principio di indeterminazione: se $\\Delta x = 1.0 \\times 10^{-10}$ m, qual è il limite minimo per $\\Delta p$ (usa $\\hbar \\approx 1.05 \\times 10^{-34}$ J·s)?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Indeterminazione",
       "opzioni": [
-        "Δp ≥ 5.3×10^-25 kg·m/s",
-        "Δp ≥ 5.3×10^-45 kg·m/s",
-        "Δp ≥ 1.0×10^-10 kg·m/s",
-        "Δp ≥ 1.05×10^-34 kg·m/s"
+        "$\\Delta p \\geq 5.3 \\times 10^{-25}$ kg·m/s",
+        "$\\Delta p \\geq 5.3 \\times 10^{-45}$ kg·m/s",
+        "$\\Delta p \\geq 1.0 \\times 10^{-10}$ kg·m/s",
+        "$\\Delta p \\geq 1.05 \\times 10^{-34}$ kg·m/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Δx·Δp ≥ ħ/2 ⇒ Δp ≥ ħ/(2Δx) ≈ 1.05×10^-34 /(2×10^-10) ≈ 5.3×10^-25 kg·m/s.",
+      "spiegazione": "$\\Delta x \\cdot \\Delta p \\geq \\hbar/2 \\Rightarrow \\Delta p \\geq \\hbar/(2\\Delta x) \\approx 1.05 \\times 10^{-34} / (2 \\times 10^{-10}) \\approx 5.3 \\times 10^{-25}$ kg·m/s.",
       "difficolta": "media",
       "paroleChiave": [
         "heisenberg",
@@ -1017,17 +1017,17 @@
     },
     {
       "id": "qnt_051",
-      "domanda": "Nel modello di Bohr, l'energia dei livelli dell'idrogeno è E_n = -13.6 eV / n^2. Quanto vale E_2?",
+      "domanda": "Nel modello di Bohr, l'energia dei livelli dell'idrogeno è $E_n = -13.6/n^2$ eV. Quanto vale $E_2$?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Bohr",
       "opzioni": [
-        "-3.4 eV",
-        "-6.8 eV",
-        "-13.6 eV",
-        "-27.2 eV"
+        "$-3.4$ eV",
+        "$-6.8$ eV",
+        "$-13.6$ eV",
+        "$-27.2$ eV"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "E_2 = -13.6/4 = -3.4 eV.",
+      "spiegazione": "$E_2 = -13.6/4 = -3.4$ eV.",
       "difficolta": "media",
       "paroleChiave": [
         "bohr",
@@ -1037,17 +1037,17 @@
     },
     {
       "id": "qnt_052",
-      "domanda": "Transizione nell'idrogeno: da n=3 a n=2. Qual è ΔE in eV (usa E_n = -13.6/n^2)?",
+      "domanda": "Transizione nell'idrogeno: da $n=3$ a $n=2$. Qual è $\\Delta E$ in eV (usa $E_n = -13.6/n^2$)?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Transizioni",
       "opzioni": [
-        "≈ 1.89 eV",
-        "≈ 10.2 eV",
-        "≈ 12.1 eV",
-        "≈ 0.66 eV"
+        "$\\approx 1.89$ eV",
+        "$\\approx 10.2$ eV",
+        "$\\approx 12.1$ eV",
+        "$\\approx 0.66$ eV"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "E_2=-3.4 eV, E_3=-13.6/9≈-1.51 eV, quindi |ΔE|≈1.89 eV.",
+      "spiegazione": "$E_2 = -3.4$ eV, $E_3 = -13.6/9 \\approx -1.51$ eV, quindi $|\\Delta E| \\approx 1.89$ eV.",
       "difficolta": "media",
       "paroleChiave": [
         "transizione",
@@ -1058,17 +1058,17 @@
     },
     {
       "id": "qnt_053",
-      "domanda": "Se per una transizione atomica ΔE = 2.0 eV, quale fotone viene emesso?",
+      "domanda": "Se per una transizione atomica $\\Delta E = 2.0$ eV, quale fotone viene emesso?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Emissione",
       "opzioni": [
-        "Un fotone di energia 2.0 eV",
-        "Un fotone di energia 0 eV",
-        "Due fotoni da 2.0 eV ciascuno",
+        "Un fotone di energia $2.0$ eV",
+        "Un fotone di energia $0$ eV",
+        "Due fotoni da $2.0$ eV ciascuno",
         "Nessun fotone, perché l'energia è continua"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "L'energia del fotone emesso corrisponde (idealmente) alla differenza energetica ΔE tra i livelli.",
+      "spiegazione": "L'energia del fotone emesso corrisponde (idealmente) alla differenza energetica $\\Delta E$ tra i livelli.",
       "difficolta": "media",
       "paroleChiave": [
         "emissione",
@@ -1082,13 +1082,13 @@
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Numeri quantici",
       "opzioni": [
-        "n=2, l=1, m=0, ms=+1/2",
-        "n=3, l=2, m=-2, ms=-1/2",
-        "n=1, l=1, m=0, ms=+1/2",
-        "n=4, l=0, m=0, ms=-1/2"
+        "$n=2, l=1, m=0, m_s=+1/2$",
+        "$n=3, l=2, m=-2, m_s=-1/2$",
+        "$n=1, l=1, m=0, m_s=+1/2$",
+        "$n=4, l=0, m=0, m_s=-1/2$"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Per n=1 si deve avere l=0; l=1 è vietato perché l va da 0 a n−1.",
+      "spiegazione": "Per $n=1$ si deve avere $l=0$; $l=1$ è vietato perché $l$ va da $0$ a $n-1$.",
       "difficolta": "media",
       "paroleChiave": [
         "numeri quantici",
@@ -1098,17 +1098,17 @@
     },
     {
       "id": "qnt_055",
-      "domanda": "Per un dato l=1, i valori possibili del numero quantico magnetico m sono:",
+      "domanda": "Per un dato $l=1$, i valori possibili del numero quantico magnetico $m$ sono:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Numeri quantici",
       "opzioni": [
-        "m = 0, 1",
-        "m = -1, 0, +1",
-        "m = -2, -1, 0, +1, +2",
-        "m = solo 0"
+        "$m = 0, 1$",
+        "$m = -1, 0, +1$",
+        "$m = -2, -1, 0, +1, +2$",
+        "$m =$ solo $0$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "m assume valori interi da -l a +l, quindi per l=1: -1,0,+1.",
+      "spiegazione": "$m$ assume valori interi da $-l$ a $+l$, quindi per $l=1$: $-1, 0, +1$.",
       "difficolta": "media",
       "paroleChiave": [
         "m",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": "qnt_056",
-      "domanda": "Quanti elettroni massimi possono stare in un orbitale (stesso n,l,m)?",
+      "domanda": "Quanti elettroni massimi possono stare in un orbitale (stesso $n, l, m$)?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Pauli e spin",
       "opzioni": [
@@ -1128,7 +1128,7 @@
         "8"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In un orbitale possono stare al massimo 2 elettroni con spin opposto (ms=±1/2).",
+      "spiegazione": "In un orbitale possono stare al massimo 2 elettroni con spin opposto ($m_s = \\pm 1/2$).",
       "difficolta": "media",
       "paroleChiave": [
         "orbitale",
@@ -1139,17 +1139,17 @@
     },
     {
       "id": "qnt_057",
-      "domanda": "Un fotone ha energia doppia di un altro. Il rapporto delle loro frequenze f1/f2 è:",
+      "domanda": "Un fotone ha energia doppia di un altro. Il rapporto delle loro frequenze $f_1/f_2$ è:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Proporzionalità",
       "opzioni": [
-        "1/2",
-        "1",
-        "2",
-        "4"
+        "$1/2$",
+        "$1$",
+        "$2$",
+        "$4$"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Poiché E = hf, se E1 = 2E2 allora f1 = 2f2.",
+      "spiegazione": "Poiché $E = hf$, se $E_1 = 2E_2$ allora $f_1 = 2f_2$.",
       "difficolta": "media",
       "paroleChiave": [
         "E=hf",
@@ -1169,7 +1169,7 @@
         "Diventa zero"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "E = hc/λ: se λ si dimezza, E raddoppia.",
+      "spiegazione": "$E = hc/\\lambda$: se $\\lambda$ si dimezza, $E$ raddoppia.",
       "difficolta": "media",
       "paroleChiave": [
         "hc/lambda",
@@ -1189,7 +1189,7 @@
         "Diventa sempre zero"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Riducendo Δx, per Δx·Δp ≥ ħ/2, Δp deve aumentare.",
+      "spiegazione": "Riducendo $\\Delta x$, per $\\Delta x \\cdot \\Delta p \\geq \\hbar/2$, $\\Delta p$ deve aumentare.",
       "difficolta": "media",
       "paroleChiave": [
         "confinamento",
@@ -1200,17 +1200,17 @@
     },
     {
       "id": "qnt_060",
-      "domanda": "Quale affermazione è corretta sul grafico dell'effetto fotoelettrico (Kmax vs frequenza f)?",
+      "domanda": "Quale affermazione è corretta sul grafico dell'effetto fotoelettrico ($K_{max}$ vs frequenza $f$)?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Effetto fotoelettrico",
       "opzioni": [
-        "Kmax cresce linearmente con f sopra soglia",
-        "Kmax è indipendente da f",
-        "Kmax diminuisce con f",
-        "Kmax è sempre zero"
+        "$K_{max}$ cresce linearmente con $f$ sopra soglia",
+        "$K_{max}$ è indipendente da $f$",
+        "$K_{max}$ diminuisce con $f$",
+        "$K_{max}$ è sempre zero"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Secondo Kmax = hf − φ, per f > f0 la dipendenza è lineare con pendenza h.",
+      "spiegazione": "Secondo $K_{max} = hf - \\phi$, per $f > f_0$ la dipendenza è lineare con pendenza $h$.",
       "difficolta": "media",
       "paroleChiave": [
         "fotoelettrico",
@@ -1220,7 +1220,7 @@
     },
     {
       "id": "qnt_061",
-      "domanda": "Nel modello di Bohr, passando da n=2 a n=1 l'atomo di idrogeno:",
+      "domanda": "Nel modello di Bohr, passando da $n=2$ a $n=1$ l'atomo di idrogeno:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Bohr",
       "opzioni": [
@@ -1240,17 +1240,17 @@
     },
     {
       "id": "qnt_062",
-      "domanda": "Ionizzazione dall'idrogeno nello stato fondamentale (n=1): l'energia minima necessaria è:",
+      "domanda": "Ionizzazione dall'idrogeno nello stato fondamentale ($n=1$): l'energia minima necessaria è:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Bohr",
       "opzioni": [
-        "13.6 eV",
-        "3.4 eV",
-        "1.51 eV",
-        "0 eV"
+        "$13.6$ eV",
+        "$3.4$ eV",
+        "$1.51$ eV",
+        "$0$ eV"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Da E1 = -13.6 eV a 0 eV (elettrone libero) servono 13.6 eV.",
+      "spiegazione": "Da $E_1 = -13.6$ eV a $0$ eV (elettrone libero) servono $13.6$ eV.",
       "difficolta": "media",
       "paroleChiave": [
         "ionizzazione",
@@ -1270,7 +1270,7 @@
         "Impossibile dirlo: l'energia non dipende dalla frequenza"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Nel visibile il verde ha frequenza maggiore del rosso, quindi E=hf è maggiore.",
+      "spiegazione": "Nel visibile il verde ha frequenza maggiore del rosso, quindi $E = hf$ è maggiore.",
       "difficolta": "media",
       "paroleChiave": [
         "visibile",
@@ -1300,17 +1300,17 @@
     },
     {
       "id": "qnt_065",
-      "domanda": "Un fotone ha impulso p dato da:",
+      "domanda": "Un fotone ha impulso $p$ dato da:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Quantità di moto del fotone",
       "opzioni": [
-        "p = h/λ",
-        "p = m v",
-        "p = 0",
-        "p = kT"
+        "$p = h/\\lambda$",
+        "$p = mv$",
+        "$p = 0$",
+        "$p = kT$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Per i fotoni vale p = h/λ (equivalentemente p = E/c).",
+      "spiegazione": "Per i fotoni vale $p = h/\\lambda$ (equivalentemente $p = E/c$).",
       "difficolta": "media",
       "paroleChiave": [
         "fotone",
@@ -1320,7 +1320,7 @@
     },
     {
       "id": "qnt_066",
-      "domanda": "Se λ di un fotone raddoppia, il suo impulso p:",
+      "domanda": "Se $\\lambda$ di un fotone raddoppia, il suo impulso $p$:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Quantità di moto del fotone",
       "opzioni": [
@@ -1330,7 +1330,7 @@
         "Diventa infinito"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "p = h/λ: se λ raddoppia, p si dimezza.",
+      "spiegazione": "$p = h/\\lambda$: se $\\lambda$ raddoppia, $p$ si dimezza.",
       "difficolta": "media",
       "paroleChiave": [
         "fotone",
@@ -1340,7 +1340,7 @@
     },
     {
       "id": "qnt_067",
-      "domanda": "Per un livello con n=3, quanti valori diversi di l sono possibili?",
+      "domanda": "Per un livello con $n=3$, quanti valori diversi di $l$ sono possibili?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Numeri quantici",
       "opzioni": [
@@ -1350,7 +1350,7 @@
         "4"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "l può essere 0,1,2 quindi 3 valori possibili.",
+      "spiegazione": "$l$ può essere $0, 1, 2$ quindi 3 valori possibili.",
       "difficolta": "media",
       "paroleChiave": [
         "n=3",
@@ -1360,7 +1360,7 @@
     },
     {
       "id": "qnt_068",
-      "domanda": "Per l=2, quanti valori diversi di m sono possibili?",
+      "domanda": "Per $l=2$, quanti valori diversi di $m$ sono possibili?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Numeri quantici",
       "opzioni": [
@@ -1370,7 +1370,7 @@
         "7"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "m va da -2 a +2: sono 5 valori (-2,-1,0,1,2).",
+      "spiegazione": "$m$ va da $-2$ a $+2$: sono 5 valori ($-2, -1, 0, 1, 2$).",
       "difficolta": "media",
       "paroleChiave": [
         "l=2",
@@ -1380,17 +1380,17 @@
     },
     {
       "id": "qnt_069",
-      "domanda": "Nell'effetto fotoelettrico, la tensione di arresto V_s è legata a Kmax da:",
+      "domanda": "Nell'effetto fotoelettrico, la tensione di arresto $V_s$ è legata a $K_{max}$ da:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Effetto fotoelettrico",
       "opzioni": [
-        "Kmax = e V_s",
-        "Kmax = h V_s",
-        "Kmax = c V_s",
-        "Kmax = V_s / e"
+        "$K_{max} = eV_s$",
+        "$K_{max} = hV_s$",
+        "$K_{max} = cV_s$",
+        "$K_{max} = V_s / e$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "La tensione di arresto compie lavoro eV_s per fermare gli elettroni più energetici: Kmax = eV_s.",
+      "spiegazione": "La tensione di arresto compie lavoro $eV_s$ per fermare gli elettroni più energetici: $K_{max} = eV_s$.",
       "difficolta": "media",
       "paroleChiave": [
         "tensione arresto",
@@ -1400,17 +1400,17 @@
     },
     {
       "id": "qnt_070",
-      "domanda": "Se V_s = 1.5 V, qual è Kmax in eV?",
+      "domanda": "Se $V_s = 1.5$ V, qual è $K_{max}$ in eV?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Effetto fotoelettrico",
       "opzioni": [
-        "1.5 eV",
-        "0.67 eV",
-        "3.0 eV",
-        "1.5 J"
+        "$1.5$ eV",
+        "$0.67$ eV",
+        "$3.0$ eV",
+        "$1.5$ J"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Per definizione, e·1 V = 1 eV, quindi Kmax = eV_s = 1.5 eV.",
+      "spiegazione": "Per definizione, $e \\cdot 1$ V = 1 eV, quindi $K_{max} = eV_s = 1.5$ eV.",
       "difficolta": "media",
       "paroleChiave": [
         "eV",
@@ -1424,13 +1424,13 @@
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Bohr",
       "opzioni": [
-        "r_n ∝ n",
-        "r_n ∝ n^2",
-        "r_n ∝ 1/n",
-        "r_n ∝ 1/n^2"
+        "$r_n \\propto n$",
+        "$r_n \\propto n^2$",
+        "$r_n \\propto 1/n$",
+        "$r_n \\propto 1/n^2$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Nel modello di Bohr per idrogeno r_n = a0·n^2 (con a0 raggio di Bohr).",
+      "spiegazione": "Nel modello di Bohr per idrogeno $r_n = a_0 \\cdot n^2$ (con $a_0$ raggio di Bohr).",
       "difficolta": "media",
       "paroleChiave": [
         "bohr",
@@ -1440,22 +1440,22 @@
     },
     {
       "id": "qnt_072",
-      "domanda": "Se un sistema ha due esiti possibili con ampiezze ψ1=0.6 e ψ2=0.8 (reali), le probabilità sono:",
+      "domanda": "Se $\\lambda$ di un fotone raddoppia, il suo impulso $p$:",
       "categoria": "Fisica Quantistica",
-      "sottocategoria": "Regola di Born",
+      "sottocategoria": "Quantità di moto del fotone",
       "opzioni": [
-        "P1=0.6, P2=0.8",
-        "P1=0.36, P2=0.64",
-        "P1=0.48, P2=0.52",
-        "P1=1.4, P2=0"
+        "Raddoppia",
+        "Si dimezza",
+        "Resta uguale",
+        "Diventa infinito"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Le probabilità sono i moduli quadri: P1=|0.6|^2=0.36, P2=|0.8|^2=0.64.",
+      "spiegazione": "$p = h/\\lambda$: se $\\lambda$ raddoppia, $p$ si dimezza.",
       "difficolta": "media",
       "paroleChiave": [
-        "born",
-        "probabilità",
-        "ampiezza"
+        "fotone",
+        "impulso",
+        "inverso"
       ]
     },
     {
@@ -1470,7 +1470,7 @@
         "Raggi X"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "I raggi X hanno frequenza più alta e quindi fotoni più energetici (E=hf).",
+      "spiegazione": "I raggi X hanno frequenza più alta e quindi fotoni più energetici ($E = hf$).",
       "difficolta": "media",
       "paroleChiave": [
         "spettro",
@@ -1480,7 +1480,7 @@
     },
     {
       "id": "qnt_074",
-      "domanda": "Una luce con λ=200 nm è (principalmente):",
+      "domanda": "Una luce con $\\lambda = 200$ nm è (principalmente):",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Spettro EM",
       "opzioni": [
@@ -1545,12 +1545,12 @@
       "sottocategoria": "Transizioni",
       "opzioni": [
         "Solo dall'intensità della luce incidente",
-        "Dalla differenza di energia tra i livelli: f = ΔE/h",
+        "Dalla differenza di energia tra i livelli: $f = \\Delta E / h$",
         "Dalla massa del nucleo soltanto",
         "Dalla temperatura dell'ambiente soltanto"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Valgono ΔE = hf e quindi f = ΔE/h.",
+      "spiegazione": "Valgono $\\Delta E = hf$ e quindi $f = \\Delta E / h$.",
       "difficolta": "media",
       "paroleChiave": [
         "transizione",
@@ -1564,9 +1564,9 @@
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Interpretazione",
       "opzioni": [
-        "È data da ψ (non al quadrato)",
-        "È data da |ψ|²",
-        "È data da 1/|ψ|²",
+        "È data da $\\psi$ (non al quadrato)",
+        "È data da $|\\psi|^2$",
+        "È data da $1/|\\psi|^2$",
         "È indipendente dallo stato"
       ],
       "rispostaCorretta": 1,
@@ -1590,7 +1590,7 @@
         "Assorbe energia in modo continuo sempre"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "L'assorbimento avviene per fotoni “risonanti” con transizioni consentite tra livelli energetici discreti.",
+      "spiegazione": "L'assorbimento avviene per fotoni \u201crisonanti\u201d con transizioni consentite tra livelli energetici discreti.",
       "difficolta": "media",
       "paroleChiave": [
         "assorbimento",
@@ -1600,7 +1600,7 @@
     },
     {
       "id": "qnt_080",
-      "domanda": "Nel modello di Bohr, passando da n=4 a n=2, la lunghezza d'onda emessa rispetto alla transizione n=3→2 è:",
+      "domanda": "Nel modello di Bohr, passando da $n=4$ a $n=2$, la lunghezza d'onda emessa rispetto alla transizione $n=3 \\to 2$ è:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Confronto transizioni",
       "opzioni": [
@@ -1610,7 +1610,7 @@
         "Dipende dall'intensità"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La transizione 4→2 ha ΔE maggiore di 3→2, quindi il fotone ha energia maggiore e λ più corta (E=hc/λ).",
+      "spiegazione": "La transizione $4 \\to 2$ ha $\\Delta E$ maggiore di $3 \\to 2$, quindi il fotone ha energia maggiore e $\\lambda$ più corta ($E = hc/\\lambda$).",
       "difficolta": "media",
       "paroleChiave": [
         "bohr",
@@ -1621,7 +1621,7 @@
     },
     {
       "id": "qnt_081",
-      "domanda": "Particella in una scatola 1D: E_n = n^2 h^2 /(8mL^2). Qual è il rapporto E_2/E_1?",
+      "domanda": "Particella in una scatola 1D: $E_n = n^2 h^2 / (8mL^2)$. Qual è il rapporto $E_2/E_1$?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Particella nella scatola",
       "opzioni": [
@@ -1631,7 +1631,7 @@
         "8"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "E_n ∝ n^2, quindi E_2/E_1 = 2^2/1^2 = 4.",
+      "spiegazione": "$E_n \\propto n^2$, quindi $E_2/E_1 = 2^2/1^2 = 4$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "scatola",
@@ -1642,7 +1642,7 @@
     },
     {
       "id": "qnt_082",
-      "domanda": "Particella in una scatola 1D: E_n ∝ 1/L^2. Se L raddoppia, come cambia E_1?",
+      "domanda": "Particella in una scatola 1D: $E_n \\propto 1/L^2$. Se $L$ raddoppia, come cambia $E_1$?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Particella nella scatola",
       "opzioni": [
@@ -1652,7 +1652,7 @@
         "Diventa 4 volte"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Poiché E ∝ 1/L^2, se L→2L allora E→E/4.",
+      "spiegazione": "Poiché $E \\propto 1/L^2$, se $L \\to 2L$ allora $E \\to E/4$.",
       "difficolta": "difficile",
       "paroleChiave": [
         "scatola",
@@ -1663,17 +1663,17 @@
     },
     {
       "id": "qnt_083",
-      "domanda": "Idrogeno: E_n = -13.6 eV/n^2. Calcola l'energia del fotone emesso nella transizione n=2→1.",
+      "domanda": "Idrogeno: $E_n = -13.6/n^2$ eV. Calcola l'energia del fotone emesso nella transizione $n=2 \\to 1$.",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Transizioni",
       "opzioni": [
-        "10.2 eV",
-        "13.6 eV",
-        "3.4 eV",
-        "1.89 eV"
+        "$10.2$ eV",
+        "$13.6$ eV",
+        "$3.4$ eV",
+        "$1.89$ eV"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "E1=-13.6 eV, E2=-3.4 eV, quindi |ΔE|=10.2 eV.",
+      "spiegazione": "$E_1 = -13.6$ eV, $E_2 = -3.4$ eV, quindi $|\\Delta E| = 10.2$ eV.",
       "difficolta": "difficile",
       "paroleChiave": [
         "idrogeno",
@@ -1684,17 +1684,17 @@
     },
     {
       "id": "qnt_084",
-      "domanda": "Usando ΔE = 10.2 eV, trova λ del fotone emesso (usa hc ≈ 1240 eV·nm).",
+      "domanda": "Usando $\\Delta E = 10.2$ eV, trova $\\lambda$ del fotone emesso (usa $hc \\approx 1240$ eV·nm).",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Calcolo lunghezza d'onda",
       "opzioni": [
-        "≈ 122 nm",
-        "≈ 486 nm",
-        "≈ 656 nm",
-        "≈ 91.2 nm"
+        "$\\approx 122$ nm",
+        "$\\approx 486$ nm",
+        "$\\approx 656$ nm",
+        "$\\approx 91.2$ nm"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "λ = hc/ΔE ≈ 1240/10.2 ≈ 122 nm.",
+      "spiegazione": "$\\lambda = hc/\\Delta E \\approx 1240/10.2 \\approx 122$ nm.",
       "difficolta": "difficile",
       "paroleChiave": [
         "lambda",
@@ -1705,17 +1705,17 @@
     },
     {
       "id": "qnt_085",
-      "domanda": "Idrogeno: transizione n=3→1. Qual è ΔE (usa E_n=-13.6/n^2 eV)?",
+      "domanda": "Idrogeno: transizione $n=3 \\to 1$. Qual è $\\Delta E$ (usa $E_n = -13.6/n^2$ eV)?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Transizioni",
       "opzioni": [
-        "≈ 12.1 eV",
-        "≈ 1.89 eV",
-        "≈ 3.4 eV",
-        "≈ 13.6 eV"
+        "$\\approx 12.1$ eV",
+        "$\\approx 1.89$ eV",
+        "$\\approx 3.4$ eV",
+        "$\\approx 13.6$ eV"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "E3=-13.6/9≈-1.51 eV, E1=-13.6 eV, quindi |ΔE|≈12.09 eV ≈ 12.1 eV.",
+      "spiegazione": "$E_3 = -13.6/9 \\approx -1.51$ eV, $E_1 = -13.6$ eV, quindi $|\\Delta E| \\approx 12.09 \\approx 12.1$ eV.",
       "difficolta": "difficile",
       "paroleChiave": [
         "bohr",
@@ -1725,17 +1725,17 @@
     },
     {
       "id": "qnt_086",
-      "domanda": "Con hc ≈ 1240 eV·nm, quale λ corrisponde a ΔE ≈ 12.1 eV?",
+      "domanda": "Con $hc \\approx 1240$ eV·nm, quale $\\lambda$ corrisponde a $\\Delta E \\approx 12.1$ eV?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Calcolo lunghezza d'onda",
       "opzioni": [
-        "≈ 102.5 nm",
-        "≈ 656 nm",
-        "≈ 486 nm",
-        "≈ 122 nm"
+        "$\\approx 102.5$ nm",
+        "$\\approx 656$ nm",
+        "$\\approx 486$ nm",
+        "$\\approx 122$ nm"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "λ = 1240/12.1 ≈ 102.5 nm.",
+      "spiegazione": "$\\lambda = 1240/12.1 \\approx 102.5$ nm.",
       "difficolta": "difficile",
       "paroleChiave": [
         "lambda",

@@ -486,13 +486,13 @@
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Potenza elettrica",
       "opzioni": [
-        "P = V + I",
-        "P = V·I",
-        "P = V/I",
-        "P = I/V"
+        "$$P = V + I$$",
+        "$$P = V \\cdot I$$",
+        "$$P = V/I$$",
+        "$$P = I/V$$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La potenza elettrica trasferita è P = V·I (in watt).",
+      "spiegazione": "La potenza elettrica trasferita è $P = V \\cdot I$ (in watt).",
       "difficolta": "facile",
       "paroleChiave": [
         "potenza",
@@ -808,10 +808,10 @@
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Serie e parallelo",
       "opzioni": [
-        "Req = R1 + R2",
-        "Req = R1·R2",
-        "Req = 1/(R1+R2)",
-        "Req = (R1+R2)/2"
+        "$$R_{eq} = R_1 + R_2$$",
+        "$$R_{eq} = R_1 \\cdot R_2$$",
+        "$$R_{eq} = 1/(R_1 + R_2)$$",
+        "$$R_{eq} = (R_1 + R_2)/2$$"
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In serie le resistenze si sommano perché la corrente è la stessa e le cadute di tensione si aggiungono.",
@@ -824,14 +824,14 @@
     },
     {
       "id": "em_042",
-      "domanda": "In un circuito con due resistori in parallelo, quale relazione è corretta per Req?",
+      "domanda": "In un circuito con due resistori in parallelo, quale relazione è corretta per $R_{eq}$?",
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Serie e parallelo",
       "opzioni": [
-        "Req = R1 + R2",
-        "1/Req = 1/R1 + 1/R2",
-        "Req = R1·R2",
-        "Req = R1 - R2"
+        "$$R_{eq} = R_1 + R_2$$",
+        "$$1/R_{eq} = 1/R_1 + 1/R_2$$",
+        "$$R_{eq} = R_1 \\cdot R_2$$",
+        "$$R_{eq} = R_1 - R_2$$"
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In parallelo la tensione è uguale, quindi le correnti si sommano e vale la somma dei reciproci.",
@@ -948,8 +948,8 @@
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Linee di campo",
       "opzioni": [
-        "Più linee ravvicinate ⇒ campo più intenso",
-        "Più linee ravvicinate ⇒ campo più debole",
+        "Più linee ravvicinate $\\Rightarrow$ campo più intenso",
+        "Più linee ravvicinate $\\Rightarrow$ campo più debole",
         "La densità di linee non ha significato",
         "Le linee esistono solo su superfici"
       ],
@@ -1005,17 +1005,17 @@
     },
     {
       "id": "em_051",
-      "domanda": "In un circuito RC, la costante di tempo τ è:",
+      "domanda": "In un circuito RC, la costante di tempo $\\tau$ è:",
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Transitori RC",
       "opzioni": [
-        "τ = R/C",
-        "τ = R·C",
-        "τ = C/R",
-        "τ = R + C"
+        "$\\tau = R/C$",
+        "$\\tau = R \\cdot C$",
+        "$\\tau = C/R$",
+        "$\\tau = R + C$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La costante di tempo dell’RC è τ = R·C e determina la rapidità di carica/scarica.",
+      "spiegazione": "La costante di tempo dell'RC è $\\tau = R \\cdot C$ e determina la rapidità di carica/scarica.",
       "difficolta": "media",
       "paroleChiave": [
         "RC",
@@ -1095,7 +1095,7 @@
         "Sempre zero"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In un trasformatore ideale la tensione è proporzionale al numero di spire: più spire al secondario ⇒ tensione maggiore.",
+      "spiegazione": "In un trasformatore ideale la tensione è proporzionale al numero di spire: più spire al secondario $\\Rightarrow$ tensione maggiore.",
       "difficolta": "media",
       "paroleChiave": [
         "trasformatore",
@@ -1229,10 +1229,10 @@
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Capacitori in rete",
       "opzioni": [
-        "Ceq = C1 + C2",
-        "1/Ceq = 1/C1 + 1/C2",
-        "Ceq = C1·C2",
-        "Ceq = C1 - C2"
+        "$C_{eq} = C_1 + C_2$",
+        "$1/C_{eq} = 1/C_1 + 1/C_2$",
+        "$C_{eq} = C_1 \\cdot C_2$",
+        "$C_{eq} = C_1 - C_2$"
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In parallelo le capacità si sommano perché hanno la stessa tensione e la carica totale si somma.",
@@ -1249,10 +1249,10 @@
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Capacitori in rete",
       "opzioni": [
-        "Ceq = C1 + C2",
-        "1/Ceq = 1/C1 + 1/C2",
-        "Ceq = C1 - C2",
-        "Ceq = C1·C2"
+        "$C_{eq} = C_1 + C_2$",
+        "$1/C_{eq} = 1/C_1 + 1/C_2$",
+        "$C_{eq} = C_1 - C_2$",
+        "$C_{eq} = C_1 \\cdot C_2$"
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In serie la carica è la stessa su ogni condensatore e la tensione totale si ripartisce, quindi si sommano i reciproci.",
@@ -1410,13 +1410,13 @@
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Transitori RL",
       "opzioni": [
-        "R·L",
-        "L/R",
-        "R/L",
-        "L + R"
+        "$R \\cdot L$",
+        "$L/R$",
+        "$R/L$",
+        "$L + R$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La costante di tempo tipica dell’RL è τ = L/R: più induttanza o meno resistenza ⇒ transitorio più lento.",
+      "spiegazione": "La costante di tempo tipica dell'RL è $\\tau = L/R$: più induttanza o meno resistenza $\\Rightarrow$ transitorio più lento.",
       "difficolta": "media",
       "paroleChiave": [
         "RL",
@@ -1496,7 +1496,7 @@
         "Resta sempre costante"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "A tensione fissa, P = V^2/R: se R aumenta, la potenza diminuisce.",
+      "spiegazione": "A tensione fissa, $P = V^2/R$: se R aumenta, la potenza diminuisce.",
       "difficolta": "media",
       "paroleChiave": [
         "potenza",
@@ -1516,7 +1516,7 @@
         "Diventa alternata"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Inserendo il dielettrico la capacità aumenta; a carica costante, V = Q/C quindi la tensione diminuisce.",
+      "spiegazione": "Inserendo il dielettrico la capacità aumenta; a carica costante, $V = Q/C$ quindi la tensione diminuisce.",
       "difficolta": "media",
       "paroleChiave": [
         "dielettrico",
@@ -1536,7 +1536,7 @@
         "Diventa zero"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "A tensione costante, aumentando C aumenta Q = C·V: scorre carica dal generatore al condensatore.",
+      "spiegazione": "A tensione costante, aumentando C aumenta $Q = C \\cdot V$: scorre carica dal generatore al condensatore.",
       "difficolta": "media",
       "paroleChiave": [
         "dielettrico",
@@ -1861,7 +1861,7 @@
         "Sempre zero"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Se la tensione aumenta e la potenza si conserva idealmente, la corrente deve diminuire (P ≈ V·I).",
+      "spiegazione": "Se la tensione aumenta e la potenza si conserva idealmente, la corrente deve diminuire ($P \\approx V \\cdot I$).",
       "difficolta": "difficile",
       "paroleChiave": [
         "trasformatore",
@@ -1902,7 +1902,7 @@
         "Possibile solo nel ferro"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Se E = 0 in una regione, il potenziale non può variare nello spazio in quella regione: deve essere costante lì.",
+      "spiegazione": "Se $E = 0$ in una regione, il potenziale non può variare nello spazio in quella regione: deve essere costante lì.",
       "difficolta": "difficile",
       "paroleChiave": [
         "campo nullo",
@@ -1916,10 +1916,10 @@
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Energia e potenziale",
       "opzioni": [
-        "ΔU = q·ΔV",
-        "ΔU = ΔV/q",
-        "ΔU = q/ΔV",
-        "ΔU = 0 sempre"
+        "$\\Delta U = q \\cdot \\Delta V$",
+        "$\\Delta U = \\Delta V / q$",
+        "$\\Delta U = q / \\Delta V$",
+        "$\\Delta U = 0$ sempre"
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La variazione di energia potenziale è proporzionale alla carica e alla differenza di potenziale attraversata.",
@@ -1982,7 +1982,7 @@
         "Impossibile determinarlo senza la resistenza"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Il raggio del moto circolare dipende dalla massa: massa minore ⇒ raggio minore (a parità di |q|, v e B).",
+      "spiegazione": "Il raggio del moto circolare dipende dalla massa: massa minore $\\Rightarrow$ raggio minore (a parità di |q|, v e B).",
       "difficolta": "difficile",
       "paroleChiave": [
         "raggio",
@@ -2125,7 +2125,7 @@
         "Diventa infinita"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Con la stessa f.e.m. indotta, la corrente segue I = ε/R: aumentando R, I diminuisce in proporzione.",
+      "spiegazione": "Con la stessa f.e.m. indotta, la corrente segue $I = \\varepsilon / R$: aumentando R, I diminuisce in proporzione.",
       "difficolta": "difficile",
       "paroleChiave": [
         "corrente indotta",
@@ -2135,7 +2135,7 @@
     },
     {
       "id": "em_107",
-      "domanda": "Una carica positiva si muove in un campo elettrico uniforme E diretto verso est. Se la carica è lasciata libera (B = 0), l’energia cinetica della carica:",
+      "domanda": "Una carica positiva si muove in un campo elettrico uniforme E diretto verso est. Se la carica è lasciata libera ($B = 0$), l’energia cinetica della carica:",
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Energia e moto",
       "opzioni": [
@@ -2342,7 +2342,7 @@
       "sottocategoria": "Forza di Lorentz",
       "opzioni": [
         "Diversa da zero perché c’è B",
-        "Zero perché v = 0",
+        "Zero perché $v = 0$",
         "Massima",
         "Dipende solo da B"
       ],

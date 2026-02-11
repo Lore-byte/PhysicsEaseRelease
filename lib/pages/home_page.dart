@@ -1,9 +1,9 @@
 // lib/pages/home_page.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:physics_ease_release/models/formula.dart';
 import 'package:physics_ease_release/pages/category_formulas_page.dart';
 import 'package:physics_ease_release/pages/formula_detail_page.dart';
+import 'package:physics_ease_release/widgets/latex_text.dart';
 import 'package:physics_ease_release/pages/quiz_page.dart';
 
 // HomePage is a StatefulWidget that represents the main screen of the app
@@ -373,26 +373,18 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                                   ),
                                   // If LaTeX formula available, render it
                                   subtitle: formula.formulaLatex.isNotEmpty
-                                      ? Math.tex(
+                                      ? LatexText(
                                           formula.formulaLatex,
-                                          textStyle: TextStyle(
+                                          style: TextStyle(
                                             fontSize: 16,
                                             color: Theme.of(
                                               context,
                                             ).colorScheme.onSurfaceVariant,
                                           ),
-                                          onErrorFallback: (Object e) {
-                                            // If LaTeX fails, show error text
-                                            return Text(
-                                              'Errore LaTeX',
-                                              style: TextStyle(
-                                                color: Theme.of(
-                                                  context,
-                                                ).colorScheme.error,
-                                                fontSize: 12,
-                                              ),
-                                            );
-                                          },
+                                          latexColor: Theme.of(
+                                            context,
+                                          ).colorScheme.onSurfaceVariant,
+                                          forceLatex: true,
                                         )
                                       // Fallback text if formula missing
                                       : Text(

@@ -1,8 +1,8 @@
 // lib/pages/favorites_page.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:physics_ease_release/models/formula.dart';
 import 'package:physics_ease_release/pages/formula_detail_page.dart';
+import 'package:physics_ease_release/widgets/latex_text.dart';
 
 class FavoritesPage extends StatefulWidget {
   final List<Formula> allFormulas;
@@ -87,15 +87,14 @@ class _FavoritesPageState extends State<FavoritesPage> {
             child: ListTile(
               title: Text(formula.titolo),
               subtitle: formula.formulaLatex.isNotEmpty
-                  ? Math.tex(
+                  ? LatexText(
                 formula.formulaLatex,
-                textStyle: TextStyle(
+                style: TextStyle(
                   fontSize: 16,
                   color: Theme.of(context).colorScheme.onSurfaceVariant,
                 ),
-                onErrorFallback: (Object e) {
-                  return Text('Errore LaTeX', style: TextStyle(color: Theme.of(context).colorScheme.error, fontSize: 12));
-                },
+                latexColor: Theme.of(context).colorScheme.onSurfaceVariant,
+                forceLatex: true,
               )
                   : Text('Formula non disponibile', style: TextStyle(fontStyle: FontStyle.italic, color: Theme.of(context).colorScheme.error)),
               trailing: const Icon(Icons.arrow_forward_ios, size: 16),
