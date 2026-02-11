@@ -769,46 +769,97 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                     ),
                   ),
                 ),
-                //const SizedBox(height: 20),
-
-                // Text(
-                //   'Risposte (${quiz.risultati.length})',
-                //   style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                //     fontWeight: FontWeight.bold,
-                //   ),
-                // ),
-                // const SizedBox(height: 12),
-
-                // Expanded(
-                //   child: ListView.builder(
-                //     controller: scrollController,
-                //     itemCount: quiz.risultati.length,
-                //     itemBuilder: (context, index) {
-                //       final risultato = quiz.risultati[index];
-                //       return Card(
-                //         color: risultato.isCorretta
-                //             ? Colors.green.withValues(alpha: 0.1)
-                //             : Colors.red.withValues(alpha: 0.1),
-                //         child: ListTile(
-                //           leading: CircleAvatar(
-                //             backgroundColor: risultato.isCorretta
-                //                 ? Colors.green
-                //                 : Colors.red,
-                //             child: Icon(
-                //               risultato.isCorretta
-                //                   ? Icons.check
-                //                   : Icons.close,
-                //               color: Colors.white,
-                //             ),
-                //           ),
-                //           title: Text('Domanda ${index + 1}'),
-                //           subtitle: Text('Quiz ID: ${risultato.quizId}'),
-                //         ),
-                //       );
-                //     },
-                //   ),
-                // ),
-                //const SizedBox(height: 24),
+                const SizedBox(height: 20),
+                Text(
+                  'Domande Proposte (${quiz.risultati.length})',
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                ListView.builder(
+                  padding: EdgeInsets.zero,
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: quiz.risultati.length,
+                  itemBuilder: (context, index) {
+                    final risultato = quiz.risultati[index];
+                    return InkWell(
+                      onTap: () {
+                        _showSessionQuestionDetails(
+                          risultato,
+                          index,
+                          colorScheme,
+                        );
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 4.0,
+                          vertical: 8.0,
+                        ),
+                        child: Card(
+                          color: risultato.isCorretta
+                              ? Colors.green.withValues(alpha: 0.1)
+                              : Colors.red.withValues(alpha: 0.1),
+                          child: Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Row(
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: risultato.isCorretta
+                                      ? Colors.green
+                                      : Colors.red,
+                                  radius: 20,
+                                  child: Icon(
+                                    risultato.isCorretta
+                                        ? Icons.check
+                                        : Icons.close,
+                                    color: Colors.white,
+                                    size: 20,
+                                  ),
+                                ),
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        'Domanda ${index + 1}',
+                                        style: const TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 4),
+                                      Text(
+                                        'Quiz ID: ${risultato.quizId}',
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: colorScheme.onSurface
+                                              .withValues(alpha: 0.5),
+                                        ),
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                Icon(
+                                  Icons.chevron_right,
+                                  color: colorScheme.onSurface
+                                      .withValues(alpha: 0.4),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(height: 24),
               ],
             );
           },
@@ -1434,11 +1485,283 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     );
   }
 
+  void _showSessionQuestionDetails(
+    QuizResult risultato,
+    int questionIndex,
+    ColorScheme colorScheme,
+  ) {
+    Quiz? quiz;
+    for (final category in QuizService.availableCategories) {
+      final quizzes = _quizService.getQuizzesByCategory(category);
+      for (final q in quizzes) {
+        if (q.id == risultato.quizId) {
+          quiz = q;
+          break;
+        }
+      }
+      if (quiz != null) break;
+    }
+
+    if (quiz == null) {
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: const Text('Domanda non trovata'),
+          content: const Text(
+            'Non è stato possibile trovare i dettagli di questa domanda.',
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('OK'),
+            ),
+          ],
+        ),
+      );
+      return;
+    }
+
+    final quizDetails = quiz;
+
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) {
+        return DraggableScrollableSheet(
+          initialChildSize: 0.7,
+          minChildSize: 0.5,
+          maxChildSize: 0.95,
+          expand: false,
+          builder: (context, scrollController) {
+            return Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Center(
+                    child: Container(
+                      width: 40,
+                      height: 4,
+                      margin: const EdgeInsets.only(bottom: 20),
+                      decoration: BoxDecoration(
+                        color: colorScheme.onSurface.withValues(alpha: 0.2),
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                    ),
+                  ),
+                  Text(
+                    'Dettagli Domanda',
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  Card(
+                    color: colorScheme.secondaryContainer,
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Domanda',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: colorScheme.onSecondaryContainer
+                                  .withValues(alpha: 0.7),
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          Text(
+                            quizDetails.domanda,
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          const Divider(height: 24),
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Categoria',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: colorScheme.onSecondaryContainer
+                                            .withValues(alpha: 0.7),
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      _prettifyCategory(quizDetails.categoria),
+                                      style: const TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Difficoltà',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: colorScheme.onSecondaryContainer
+                                            .withValues(alpha: 0.7),
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      quizDetails.difficolta,
+                                      style: const TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Risposta',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: risultato.isCorretta
+                                            ? Colors.green.withValues(
+                                                alpha: 0.7)
+                                            : Colors.red.withValues(alpha: 0.7),
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      risultato.isCorretta ? '✓ Corretta' : '✗ Errata',
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.bold,
+                                        color: risultato.isCorretta
+                                            ? Colors.green
+                                            : Colors.red,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  Text(
+                    'Opzioni di Risposta',
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  Expanded(
+                    child: ListView.builder(
+                      controller: scrollController,
+                      itemCount: quizDetails.opzioni.length,
+                      itemBuilder: (context, index) {
+                        final isCorrect = index == quizDetails.rispostaCorretta;
+                        final isUserAnswer = index == risultato.rispostaUtente;
+
+                        return Card(
+                          color: isCorrect
+                              ? Colors.green.withValues(alpha: 0.1)
+                              : isUserAnswer && !risultato.isCorretta
+                                  ? Colors.red.withValues(alpha: 0.1)
+                                  : Colors.grey.withValues(alpha: 0.05),
+                          margin: const EdgeInsets.only(bottom: 8),
+                          child: ListTile(
+                            leading: CircleAvatar(
+                              backgroundColor: isCorrect
+                                  ? Colors.green
+                                  : isUserAnswer && !risultato.isCorretta
+                                      ? Colors.red
+                                      : Colors.grey,
+                              child: Text(
+                                String.fromCharCode(65 + index),
+                                style: const TextStyle(color: Colors.white),
+                              ),
+                            ),
+                            title: Text(quizDetails.opzioni[index]),
+                            trailing: isCorrect
+                                ? const Icon(Icons.check_circle,
+                                    color: Colors.green)
+                                : isUserAnswer && !risultato.isCorretta
+                                    ? const Icon(Icons.cancel, color: Colors.red)
+                                    : null,
+                            subtitle: isUserAnswer
+                                ? Text(
+                                    risultato.isCorretta
+                                        ? 'Tua risposta (corretta)'
+                                        : 'Tua risposta (errata)',
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: risultato.isCorretta
+                                          ? Colors.green
+                                          : Colors.red,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )
+                                : isCorrect && !risultato.isCorretta
+                                    ? const Text(
+                                        'Risposta corretta',
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.green,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      )
+                                    : null,
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+
   void _showMissedQuestionDetails(
     Quiz quiz,
     int errors,
     ColorScheme colorScheme,
   ) {
+    QuizResult? lastWrongResult;
+    for (final session in _quizHistory) {
+      for (final result in session.risultati) {
+        if (result.quizId == quiz.id && !result.isCorretta) {
+          lastWrongResult = result;
+        }
+      }
+    }
+
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -1517,7 +1840,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                     ),
                                     const SizedBox(height: 4),
                                     Text(
-                                      quiz.categoria,
+                                      _prettifyCategory(quiz.categoria),
                                       style: const TextStyle(
                                         fontSize: 14,
                                         fontWeight: FontWeight.w600,
@@ -1594,15 +1917,22 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                       itemCount: quiz.opzioni.length,
                       itemBuilder: (context, index) {
                         final isCorrect = index == quiz.rispostaCorretta;
+                        final isUserAnswer = lastWrongResult != null && index == lastWrongResult.rispostaUtente;
+
                         return Card(
                           color: isCorrect
                               ? Colors.green.withValues(alpha: 0.1)
-                              : Colors.grey.withValues(alpha: 0.1),
+                              : isUserAnswer && lastWrongResult != null
+                                  ? Colors.red.withValues(alpha: 0.1)
+                                  : Colors.grey.withValues(alpha: 0.05),
                           margin: const EdgeInsets.only(bottom: 8),
                           child: ListTile(
                             leading: CircleAvatar(
-                              backgroundColor:
-                                  isCorrect ? Colors.green : Colors.grey,
+                              backgroundColor: isCorrect
+                                  ? Colors.green
+                                  : isUserAnswer && lastWrongResult != null
+                                      ? Colors.red
+                                      : Colors.grey,
                               child: Text(
                                 String.fromCharCode(65 + index),
                                 style: const TextStyle(color: Colors.white),
@@ -1612,7 +1942,28 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                             trailing: isCorrect
                                 ? const Icon(Icons.check_circle,
                                     color: Colors.green)
-                                : null,
+                                : isUserAnswer && lastWrongResult != null
+                                    ? const Icon(Icons.cancel, color: Colors.red)
+                                    : null,
+                            subtitle: isUserAnswer && lastWrongResult != null
+                                ? const Text(
+                                    'Tua risposta (errata)',
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.red,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )
+                                : isCorrect && (lastWrongResult == null || !isUserAnswer)
+                                    ? const Text(
+                                        'Risposta corretta',
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.green,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      )
+                                    : null,
                           ),
                         );
                       },
