@@ -1,1 +1,2272 @@
-{"quiz": []}
+{
+    "quiz": [
+        {
+            "id": "qdm_001",
+            "domanda": "Che cos'è la quantità di moto di un corpo?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Definizione",
+            "opzioni": [
+                "Un’energia",
+                "Un vettore definito come p = m·v",
+                "Una forza costante",
+                "Un’accelerazione"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La quantità di moto è una grandezza vettoriale definita come p = m·v. [web:60]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "quantità di moto",
+                "p=mv",
+                "vettore",
+                "definizione"
+            ]
+        },
+        {
+            "id": "qdm_002",
+            "domanda": "Qual è l'unità di misura SI della quantità di moto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Unità di misura",
+            "opzioni": [
+                "N",
+                "J",
+                "kg·m/s",
+                "W"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Nel SI la quantità di moto si misura in kg·m/s. [web:67]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "unità",
+                "SI",
+                "kg m/s",
+                "misura"
+            ]
+        },
+        {
+            "id": "qdm_003",
+            "domanda": "La quantità di moto ha la stessa direzione e verso di:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Vettorialità",
+            "opzioni": [
+                "La massa",
+                "La velocità",
+                "La forza peso",
+                "L'energia cinetica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché p = m·v, la quantità di moto ha direzione e verso della velocità. [web:67]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "direzione",
+                "verso",
+                "velocità",
+                "vettore"
+            ]
+        },
+        {
+            "id": "qdm_004",
+            "domanda": "Se la massa raddoppia e la velocità resta uguale, la quantità di moto:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Proporzionalità",
+            "opzioni": [
+                "Si dimezza",
+                "Raddoppia",
+                "Resta uguale",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dato p = m·v, se m raddoppia (v costante) allora p raddoppia. [web:61]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "proporzionalità",
+                "massa",
+                "p=mv",
+                "raddoppio"
+            ]
+        },
+        {
+            "id": "qdm_005",
+            "domanda": "Se la velocità dimezza e la massa resta uguale, la quantità di moto:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Proporzionalità",
+            "opzioni": [
+                "Raddoppia",
+                "Si dimezza",
+                "Resta uguale",
+                "Cambia solo direzione"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dato p = m·v, se v si dimezza (m costante) allora p si dimezza. [web:61]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "proporzionalità",
+                "velocità",
+                "p=mv",
+                "dimezza"
+            ]
+        },
+        {
+            "id": "qdm_006",
+            "domanda": "Che cos'è l'impulso di una forza (nel caso di forza costante)?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso",
+            "opzioni": [
+                "I = F/Δt",
+                "I = F·Δt",
+                "I = m·a",
+                "I = m·v"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per forza costante l’impulso è I = F·Δt. [web:65]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "impulso",
+                "FΔt",
+                "forza costante",
+                "definizione"
+            ]
+        },
+        {
+            "id": "qdm_007",
+            "domanda": "Qual è l'unità di misura SI dell'impulso?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso",
+            "opzioni": [
+                "N·s",
+                "J",
+                "W",
+                "kg·m^2/s^2"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "L’impulso si misura in N·s, equivalente a kg·m/s. [web:61]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "impulso",
+                "N s",
+                "unità",
+                "equivalenza"
+            ]
+        },
+        {
+            "id": "qdm_008",
+            "domanda": "Il teorema dell'impulso afferma che:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Teorema dell'impulso",
+            "opzioni": [
+                "I = Δp",
+                "I = p",
+                "I = ΔK",
+                "I = m·g"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il teorema dell’impulso afferma che l’impulso è uguale alla variazione di quantità di moto: I = Δp. [web:63]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "teorema impulso",
+                "I=Δp",
+                "variazione",
+                "quantità di moto"
+            ]
+        },
+        {
+            "id": "qdm_009",
+            "domanda": "Quale relazione generale collega forza risultante e quantità di moto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Seconda legge (forma generale)",
+            "opzioni": [
+                "F = m·v",
+                "F = dp/dt",
+                "F = p·t",
+                "F = p/t"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La seconda legge in forma generale si esprime come forza risultante uguale alla derivata temporale della quantità di moto: F = dp/dt. [web:60]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "F=dp/dt",
+                "seconda legge",
+                "quantità di moto",
+                "derivata"
+            ]
+        },
+        {
+            "id": "qdm_010",
+            "domanda": "In un sistema isolato, la quantità di moto totale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "Aumenta sempre",
+                "Diminuisce sempre",
+                "Rimane costante",
+                "Diventa necessariamente zero"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La legge di conservazione afferma che la quantità di moto totale di un sistema isolato è costante nel tempo. [web:81]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "conservazione",
+                "sistema isolato",
+                "costante",
+                "totale"
+            ]
+        },
+        {
+            "id": "qdm_011",
+            "domanda": "Un sistema è detto isolato (per la quantità di moto) quando:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "Le forze interne sono nulle",
+                "La risultante delle forze esterne è nulla",
+                "La velocità di tutti i corpi è nulla",
+                "La massa totale è nulla"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La condizione di isolamento, per la conservazione della quantità di moto, è che la risultante delle forze esterne sia nulla. [web:81]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "isolato",
+                "forze esterne",
+                "risultante",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "qdm_012",
+            "domanda": "Durante un urto (in tempi molto brevi), spesso si può trascurare l'impulso di forze esterne perché:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti",
+            "opzioni": [
+                "Le forze esterne non esistono",
+                "Agiscono per un tempo breve rispetto alle forze interne di contatto",
+                "L'energia cinetica si conserva sempre",
+                "La massa cambia"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Negli urti si usa spesso la conservazione di p perché l’impulso esterno può essere trascurabile rispetto a quello delle forze interne durante il breve intervallo di collisione. [web:81]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "urti",
+                "impulso esterno",
+                "breve tempo",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "qdm_013",
+            "domanda": "In un urto anelastico, quale grandezza (tra queste) si conserva sempre in un sistema isolato?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti anelastici",
+            "opzioni": [
+                "Energia cinetica",
+                "Quantità di moto totale",
+                "Temperatura",
+                "Potenza"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Negli urti anelastici l’energia cinetica non si conserva, ma in un sistema isolato si conserva la quantità di moto totale. [web:66]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "urto anelastico",
+                "conservazione",
+                "quantità di moto",
+                "energia cinetica"
+            ]
+        },
+        {
+            "id": "qdm_014",
+            "domanda": "In un urto perfettamente elastico (ideale), oltre alla quantità di moto totale si conserva anche:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti elastici",
+            "opzioni": [
+                "Energia cinetica",
+                "Energia potenziale",
+                "Lavoro delle forze esterne",
+                "Attrito"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Nel modello di urto elastico si conserva anche l’energia cinetica (oltre alla quantità di moto totale se il sistema è isolato). [web:66]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "urto elastico",
+                "energia cinetica",
+                "quantità di moto",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "qdm_015",
+            "domanda": "Se un corpo è fermo, la sua quantità di moto vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Definizione",
+            "opzioni": [
+                "m",
+                "v",
+                "0",
+                "m^2"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Se v = 0 allora p = m·v = 0. [web:60]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "fermo",
+                "p=mv",
+                "zero",
+                "riposo"
+            ]
+        },
+        {
+            "id": "qdm_016",
+            "domanda": "Se un corpo inverte il verso della velocità (stesso modulo), la quantità di moto:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Vettorialità",
+            "opzioni": [
+                "Resta uguale",
+                "Inverte verso",
+                "Diventa zero",
+                "Raddoppia"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Essendo p un vettore proporzionale a v, se v cambia verso anche p cambia verso. [web:67]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "vettore",
+                "verso",
+                "inversione",
+                "p"
+            ]
+        },
+        {
+            "id": "qdm_017",
+            "domanda": "Quale affermazione è corretta sull'impulso e sulla quantità di moto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso",
+            "opzioni": [
+                "Hanno unità di misura diverse",
+                "Hanno la stessa unità di misura",
+                "L'impulso è uno scalare sempre positivo",
+                "La quantità di moto è sempre zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Impulso e quantità di moto hanno la stessa unità di misura (N·s = kg·m/s) perché I = Δp. [web:61][web:63]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "impulso",
+                "unità",
+                "I=Δp",
+                "N s"
+            ]
+        },
+        {
+            "id": "qdm_018",
+            "domanda": "Se la risultante delle forze esterne su un sistema è nulla, allora la quantità di moto totale del sistema:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "Si conserva",
+                "Aumenta",
+                "Diminuisce",
+                "Oscilla"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Se la risultante delle forze esterne è nulla, la quantità di moto totale del sistema resta costante. [web:81]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "forze esterne",
+                "risultante zero",
+                "conservazione",
+                "totale"
+            ]
+        },
+        {
+            "id": "qdm_019",
+            "domanda": "La quantità di moto totale di un sistema di più corpi è:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Sistemi di particelle",
+            "opzioni": [
+                "La somma scalare delle masse",
+                "La somma vettoriale delle quantità di moto dei singoli corpi",
+                "La somma delle energie cinetiche",
+                "Il prodotto delle velocità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La quantità di moto totale di un sistema è la somma vettoriale delle quantità di moto dei corpi che lo compongono. [web:81]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "sistema",
+                "somma vettoriale",
+                "totale",
+                "p"
+            ]
+        },
+        {
+            "id": "qdm_020",
+            "domanda": "Quale tra queste grandezze è vettoriale?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Vettorialità",
+            "opzioni": [
+                "Massa",
+                "Temperatura",
+                "Quantità di moto",
+                "Tempo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La quantità di moto è una grandezza vettoriale perché dipende dalla velocità vettoriale. [web:67]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "vettore",
+                "quantità di moto",
+                "velocità",
+                "grandezza"
+            ]
+        },
+        {
+            "id": "qdm_021",
+            "domanda": "Se una forza esterna costante agisce su un corpo per un tempo Δt, la variazione di quantità di moto è:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Teorema dell'impulso",
+            "opzioni": [
+                "Δp = F·Δt",
+                "Δp = F/Δt",
+                "Δp = m·g",
+                "Δp = 0"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dal teorema dell’impulso, per forza costante vale F·Δt = Δp. [web:68]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Δp",
+                "FΔt",
+                "teorema impulso",
+                "forza"
+            ]
+        },
+        {
+            "id": "qdm_022",
+            "domanda": "In un urto perfettamente anelastico (corpi che restano attaccati), l'energia cinetica:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti anelastici",
+            "opzioni": [
+                "Si conserva sempre",
+                "Non si conserva in generale",
+                "Diventa sempre zero",
+                "Diventa sempre massima"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In un urto perfettamente anelastico l’energia cinetica non si conserva in generale. [web:66]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "perfettamente anelastico",
+                "energia",
+                "non si conserva",
+                "urto"
+            ]
+        },
+        {
+            "id": "qdm_023",
+            "domanda": "Quale condizione garantisce la conservazione della quantità di moto totale durante un intervallo di tempo?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "Energia cinetica costante",
+                "Impulso esterno totale nullo",
+                "Attrito massimo",
+                "Massa totale variabile"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La quantità di moto totale si conserva se l’impulso esterno totale è nullo (sistema isolato). [web:81]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "impulso esterno",
+                "isolato",
+                "conservazione",
+                "totale"
+            ]
+        },
+        {
+            "id": "qdm_024",
+            "domanda": "Qual è la quantità di moto di un corpo di massa m che si muove con velocità v?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Formula",
+            "opzioni": [
+                "p = m/v",
+                "p = v/m",
+                "p = m·v",
+                "p = m + v"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La formula è p = m·v. [web:60]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "formula",
+                "p=mv",
+                "massa",
+                "velocità"
+            ]
+        },
+        {
+            "id": "qdm_025",
+            "domanda": "Se la massa è costante, la forza risultante è proporzionale a:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Seconda legge (forma generale)",
+            "opzioni": [
+                "p",
+                "La variazione di p nel tempo",
+                "Il quadrato di p",
+                "La radice di p"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La relazione generale è F = dp/dt, quindi la forza è legata alla variazione temporale di p. [web:60]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "forza",
+                "dp/dt",
+                "seconda legge",
+                "variazione"
+            ]
+        },
+        {
+            "id": "qdm_026",
+            "domanda": "In un sistema isolato, durante un urto la quantità di moto totale prima e dopo l'urto è:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti",
+            "opzioni": [
+                "Diversa",
+                "Uguale",
+                "Uguale solo se l'urto è elastico",
+                "Uguale solo se l'urto è anelastico"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In un sistema isolato la quantità di moto totale si conserva, quindi è la stessa prima e dopo l’urto. [web:81]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "urto",
+                "prima e dopo",
+                "isolato",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "qdm_027",
+            "domanda": "La quantità di moto totale può essere zero anche se i corpi si muovono?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Sistemi di particelle",
+            "opzioni": [
+                "No, è impossibile",
+                "Sì, se le quantità di moto si annullano vettorialmente",
+                "Sì, ma solo se le masse sono uguali",
+                "Sì, ma solo se le velocità sono zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Essendo una somma vettoriale, la quantità di moto totale può annullarsi se i contributi sono opposti. [web:81]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "totale zero",
+                "somma vettoriale",
+                "opposti",
+                "sistema"
+            ]
+        },
+        {
+            "id": "qdm_028",
+            "domanda": "Quale tra queste è una situazione tipica in cui si applica la conservazione della quantità di moto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Applicazioni",
+            "opzioni": [
+                "Caduta libera con attrito",
+                "Urto tra due carrelli su pista quasi senza attrito",
+                "Oggetto che si riscalda",
+                "Molla che oscilla con attrito forte"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Negli urti su pista quasi senza attrito si può approssimare il sistema come isolato e usare la conservazione di p totale. [web:81]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "applicazioni",
+                "urto",
+                "pista",
+                "isolato"
+            ]
+        },
+        {
+            "id": "qdm_029",
+            "domanda": "Se un corpo ha quantità di moto p, allora la sua velocità è:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Ricavare v",
+            "opzioni": [
+                "v = p/m",
+                "v = m/p",
+                "v = p·m",
+                "v = p + m"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dalla definizione p = m·v, ricavi v = p/m. [web:60]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "v=p/m",
+                "ricavare",
+                "formula",
+                "definizione"
+            ]
+        },
+        {
+            "id": "qdm_030",
+            "domanda": "Se un corpo ha quantità di moto p, allora la sua massa è:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Ricavare m",
+            "opzioni": [
+                "m = p·v",
+                "m = v/p",
+                "m = p/v",
+                "m = p + v"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Dalla definizione p = m·v, ricavi m = p/v (se v ≠ 0). [web:60]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "m=p/v",
+                "ricavare",
+                "p=mv",
+                "massa"
+            ]
+        },
+        {
+            "id": "qdm_031",
+            "domanda": "Se un corpo A ha massa doppia di B e stessa velocità, allora p_A rispetto a p_B è:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Confronti",
+            "opzioni": [
+                "p_A = p_B/2",
+                "p_A = p_B",
+                "p_A = 2·p_B",
+                "p_A = 4·p_B"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con p = m·v, a parità di v la quantità di moto è proporzionale alla massa. [web:61]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "confronto",
+                "massa doppia",
+                "proporzionale",
+                "p=mv"
+            ]
+        },
+        {
+            "id": "qdm_032",
+            "domanda": "Se due corpi hanno stessa massa ma uno ha velocità tripla, allora le quantità di moto sono in rapporto:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Confronti",
+            "opzioni": [
+                "1:1",
+                "1:2",
+                "1:3",
+                "1:9"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con p = m·v, a parità di m la quantità di moto è proporzionale alla velocità. [web:61]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "confronto",
+                "velocità tripla",
+                "rapporto",
+                "p=mv"
+            ]
+        },
+        {
+            "id": "qdm_033",
+            "domanda": "Se la forza risultante su un corpo è nulla, allora la sua quantità di moto:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Dinamica",
+            "opzioni": [
+                "Aumenta",
+                "Diminuisce",
+                "Resta costante",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Da F = dp/dt, se F = 0 allora dp/dt = 0 e p resta costante. [web:60]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "F=0",
+                "dp/dt",
+                "costante",
+                "quantità di moto"
+            ]
+        },
+        {
+            "id": "qdm_034",
+            "domanda": "In quali casi la quantità di moto totale di un sistema NON si conserva?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "Quando agisce un impulso esterno netto",
+                "Quando ci sono forze interne",
+                "Quando due corpi urtano",
+                "Quando le masse sono uguali"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La quantità di moto totale non si conserva se l’impulso esterno totale non è nullo. [web:81]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "non conservazione",
+                "impulso esterno",
+                "sistema",
+                "p totale"
+            ]
+        },
+        {
+            "id": "qdm_035",
+            "domanda": "La quantità di moto del centro di massa di un sistema è:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Centro di massa",
+            "opzioni": [
+                "Sempre zero",
+                "p_CM = M_tot·v_CM",
+                "p_CM = v_CM/M_tot",
+                "p_CM = M_tot + v_CM"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per un sistema di punti materiali vale p_tot = M_tot·v_CM, cioè la quantità di moto totale equivale a quella del centro di massa. [web:81]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "centro di massa",
+                "p_tot",
+                "M v_CM",
+                "sistema"
+            ]
+        },
+        {
+            "id": "qdm_036",
+            "domanda": "Se p_tot = M_tot·v_CM, allora la velocità del centro di massa è:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Centro di massa",
+            "opzioni": [
+                "v_CM = p_tot/M_tot",
+                "v_CM = M_tot/p_tot",
+                "v_CM = p_tot·M_tot",
+                "v_CM = p_tot + M_tot"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dalla relazione p_tot = M_tot·v_CM si ottiene v_CM = p_tot/M_tot. [web:81]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "v_CM",
+                "p_tot/M",
+                "centro di massa",
+                "formula"
+            ]
+        },
+        {
+            "id": "qdm_037",
+            "domanda": "Il coefficiente di restituzione e in un urto (modello standard) assume valori:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti (coefficiente di restituzione)",
+            "opzioni": [
+                "Sempre maggiori di 1",
+                "Sempre minori di 0",
+                "Tra 0 e 1",
+                "Uguale a 0 solo negli urti elastici"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Nel modello usuale il coefficiente di restituzione soddisfa 0 ≤ e ≤ 1, con e = 1 elastico ed e = 0 perfettamente anelastico. [web:66]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "restituzione",
+                "0-1",
+                "elastico",
+                "anelastico"
+            ]
+        },
+        {
+            "id": "qdm_038",
+            "domanda": "In un urto perfettamente anelastico, il coefficiente di restituzione e vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti (coefficiente di restituzione)",
+            "opzioni": [
+                "1",
+                "0",
+                "2",
+                "−1"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per un urto completamente (perfettamente) anelastico il coefficiente di restituzione è e = 0. [web:66]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "e=0",
+                "perfettamente anelastico",
+                "restituzione",
+                "urto"
+            ]
+        },
+        {
+            "id": "qdm_039",
+            "domanda": "In un urto elastico ideale, il coefficiente di restituzione e vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti (coefficiente di restituzione)",
+            "opzioni": [
+                "0",
+                "1",
+                "0,5",
+                "Dipende dalla massa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per un urto elastico ideale il coefficiente di restituzione è e = 1. [web:66]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "e=1",
+                "urto elastico",
+                "restituzione",
+                "ideale"
+            ]
+        },
+        {
+            "id": "qdm_040",
+            "domanda": "Quale tra queste affermazioni è corretta?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Concetti base",
+            "opzioni": [
+                "La quantità di moto è uno scalare",
+                "L'impulso non può essere negativo",
+                "La quantità di moto dipende da massa e velocità",
+                "La quantità di moto si misura in joule"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La quantità di moto dipende da massa e velocità secondo p = m·v. [web:60]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "dipendenza",
+                "massa",
+                "velocità",
+                "p=mv"
+            ]
+        },
+        {
+            "id": "qdm_041",
+            "domanda": "Un corpo di massa 2 kg si muove a 3 m/s. Quanto vale p?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Calcolo di p",
+            "opzioni": [
+                "1 kg·m/s",
+                "5 kg·m/s",
+                "6 kg·m/s",
+                "12 kg·m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "p = m·v = 2·3 = 6 kg·m/s. [web:60]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "calcolo",
+                "p=mv",
+                "2kg",
+                "3m/s"
+            ]
+        },
+        {
+            "id": "qdm_042",
+            "domanda": "Un corpo di massa 0,5 kg si muove a 8 m/s. Quanto vale p?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Calcolo di p",
+            "opzioni": [
+                "2 kg·m/s",
+                "4 kg·m/s",
+                "8 kg·m/s",
+                "16 kg·m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "p = m·v = 0,5·8 = 4 kg·m/s. [web:60]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "calcolo",
+                "p=mv",
+                "0.5kg",
+                "8m/s"
+            ]
+        },
+        {
+            "id": "qdm_043",
+            "domanda": "Una forza costante di 10 N agisce per 0,2 s su un corpo. Quanto vale l'impulso?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso",
+            "opzioni": [
+                "0,5 N·s",
+                "2 N·s",
+                "10 N·s",
+                "50 N·s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "I = F·Δt = 10·0,2 = 2 N·s. [web:65]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso",
+                "FΔt",
+                "10N",
+                "0.2s"
+            ]
+        },
+        {
+            "id": "qdm_044",
+            "domanda": "Un corpo passa da p = 3 a p = 11 kg·m/s nello stesso verso. Quanto vale Δp?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Variazione di p",
+            "opzioni": [
+                "4 kg·m/s",
+                "8 kg·m/s",
+                "14 kg·m/s",
+                "−8 kg·m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La variazione è Δp = p_f − p_i = 11 − 3 = 8 kg·m/s. [web:63]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Δp",
+                "variazione",
+                "impulso",
+                "kg m/s"
+            ]
+        },
+        {
+            "id": "qdm_045",
+            "domanda": "Un corpo di massa 1 kg cambia velocità da 2 m/s a 6 m/s nello stesso verso. Quanto vale l'impulso subito?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Teorema dell'impulso",
+            "opzioni": [
+                "2 N·s",
+                "4 N·s",
+                "6 N·s",
+                "8 N·s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "I = Δp = m·Δv = 1·(6−2) = 4 N·s. [web:68]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "I=Δp",
+                "mΔv",
+                "impulso",
+                "variazione velocità"
+            ]
+        },
+        {
+            "id": "qdm_046",
+            "domanda": "Un corpo di massa 2 kg subisce un impulso di 6 N·s e inizialmente è fermo. Qual è la velocità finale (stesso verso dell'impulso)?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Teorema dell'impulso",
+            "opzioni": [
+                "1 m/s",
+                "2 m/s",
+                "3 m/s",
+                "6 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "I = Δp = m·v_f ⇒ v_f = I/m = 6/2 = 3 m/s. [web:68]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso",
+                "velocità",
+                "I=Δp",
+                "v=I/m"
+            ]
+        },
+        {
+            "id": "qdm_047",
+            "domanda": "Due carrelli su guida senza attrito: m1=1 kg con v1=4 m/s, m2=1 kg fermo. Urto perfettamente anelastico (si attaccano). v finale?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti perfettamente anelastici (1D)",
+            "opzioni": [
+                "1 m/s",
+                "2 m/s",
+                "4 m/s",
+                "8 m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Conservazione di p: p_i = 1·4 + 1·0 = 4, massa finale 2 kg ⇒ v = 4/2 = 2 m/s. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto anelastico",
+                "conservazione",
+                "carrelli",
+                "1D"
+            ]
+        },
+        {
+            "id": "qdm_048",
+            "domanda": "Urto 1D perfettamente anelastico: m1=2 kg con v1=3 m/s, m2=1 kg con v2=0. v finale comune?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti perfettamente anelastici (1D)",
+            "opzioni": [
+                "1 m/s",
+                "2 m/s",
+                "3 m/s",
+                "6 m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "p_i = 2·3 + 1·0 = 6, massa finale 3 kg ⇒ v = 6/3 = 2 m/s. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto anelastico",
+                "p totale",
+                "massa totale",
+                "v finale"
+            ]
+        },
+        {
+            "id": "qdm_049",
+            "domanda": "Un corpo di massa 0,2 kg ha p = 1,6 kg·m/s. Qual è v?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Ricavare v",
+            "opzioni": [
+                "0,32 m/s",
+                "4 m/s",
+                "8 m/s",
+                "16 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "v = p/m = 1,6/0,2 = 8 m/s. [web:60]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "v=p/m",
+                "calcolo",
+                "0.2kg",
+                "1.6kg m/s"
+            ]
+        },
+        {
+            "id": "qdm_050",
+            "domanda": "Un corpo ha massa 3 kg e quantità di moto 12 kg·m/s. Qual è v?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Ricavare v",
+            "opzioni": [
+                "2 m/s",
+                "3 m/s",
+                "4 m/s",
+                "6 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "v = p/m = 12/3 = 4 m/s. [web:60]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "v=p/m",
+                "calcolo",
+                "12",
+                "3kg"
+            ]
+        },
+        {
+            "id": "qdm_051",
+            "domanda": "Una forza media di 50 N agisce per 0,1 s su un corpo. Qual è Δp?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Teorema dell'impulso",
+            "opzioni": [
+                "0,5 kg·m/s",
+                "5 kg·m/s",
+                "50 kg·m/s",
+                "500 kg·m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dal teorema dell’impulso F·Δt = Δp: Δp = 50·0,1 = 5 kg·m/s. [web:68]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Δp",
+                "FΔt",
+                "impulso",
+                "forza media"
+            ]
+        },
+        {
+            "id": "qdm_052",
+            "domanda": "Un corpo (m=2 kg) passa da v=+1 m/s a v=−2 m/s (stessa direzione, verso opposto). Quanto vale Δp?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Variazione di p",
+            "opzioni": [
+                "−2 kg·m/s",
+                "−6 kg·m/s",
+                "+6 kg·m/s",
+                "+2 kg·m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Δp = m·(v_f−v_i)=2·(−2−1)=−6 kg·m/s. [web:63]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Δp",
+                "verso opposto",
+                "mΔv",
+                "segno"
+            ]
+        },
+        {
+            "id": "qdm_053",
+            "domanda": "Un corpo subisce un impulso di −4 N·s lungo x. Se inizialmente p_x = +7 kg·m/s, p_x finale vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso e p",
+            "opzioni": [
+                "+3 kg·m/s",
+                "+11 kg·m/s",
+                "−3 kg·m/s",
+                "−11 kg·m/s"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Poiché I = Δp, p_f = p_i + I = 7 + (−4) = 3 kg·m/s. [web:63]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso",
+                "Δp",
+                "p finale",
+                "segno"
+            ]
+        },
+        {
+            "id": "qdm_054",
+            "domanda": "Due pattinatori (m1=60 kg, m2=40 kg) sono fermi su ghiaccio e si spingono: m1 va a +2 m/s. Qual è v2 (asse x) per conservazione di p?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione (spinta interna)",
+            "opzioni": [
+                "−1 m/s",
+                "−2 m/s",
+                "−3 m/s",
+                "+3 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "p iniziale 0, quindi 60·2 + 40·v2 = 0 ⇒ v2 = −3 m/s. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "pattinatori",
+                "azione interna",
+                "conservazione",
+                "v2"
+            ]
+        },
+        {
+            "id": "qdm_055",
+            "domanda": "Un proiettile di 0,01 kg a 400 m/s si conficca in un blocco di 1,99 kg fermo (urto anelastico). v finale del sistema?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti perfettamente anelastici (1D)",
+            "opzioni": [
+                "0,5 m/s",
+                "1,0 m/s",
+                "2,0 m/s",
+                "4,0 m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Conservazione di p: p_i=0,01·400=4, massa finale 2,00 kg ⇒ v=4/2=2 m/s. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "proiettile",
+                "blocco",
+                "anelastico",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "qdm_056",
+            "domanda": "Due carrelli: m1=2 kg con v1=1 m/s, m2=1 kg con v2=−1 m/s. p totale iniziale vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Quantità di moto totale",
+            "opzioni": [
+                "−1 kg·m/s",
+                "0 kg·m/s",
+                "+1 kg·m/s",
+                "+3 kg·m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "p_tot = m1v1 + m2v2 = 2·1 + 1·(−1) = +1 kg·m/s. [web:60]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p totale",
+                "somma",
+                "segni",
+                "1D"
+            ]
+        },
+        {
+            "id": "qdm_057",
+            "domanda": "Un carrello di 3 kg ha v=2 m/s. Quale impulso serve per portarlo a v=0?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Teorema dell'impulso",
+            "opzioni": [
+                "−3 N·s",
+                "−6 N·s",
+                "+6 N·s",
+                "+3 N·s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "I = Δp = m(v_f−v_i)=3·(0−2)=−6 N·s. [web:68]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso",
+                "arresto",
+                "Δp",
+                "segno"
+            ]
+        },
+        {
+            "id": "qdm_058",
+            "domanda": "Se un corpo riceve un impulso di 12 N·s e ha massa 3 kg (inizialmente fermo), v finale vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso",
+            "opzioni": [
+                "2 m/s",
+                "3 m/s",
+                "4 m/s",
+                "6 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "I = Δp = m·v ⇒ v = I/m = 12/3 = 4 m/s. [web:68]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso",
+                "v=I/m",
+                "inizio fermo",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_059",
+            "domanda": "Due corpi si muovono in direzioni opposte con quantità di moto +10 e −10 kg·m/s. p totale vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Somma vettoriale",
+            "opzioni": [
+                "20 kg·m/s",
+                "0 kg·m/s",
+                "10 kg·m/s",
+                "−10 kg·m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La quantità di moto totale è la somma vettoriale: +10 + (−10) = 0. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "somma vettoriale",
+                "opposti",
+                "zero",
+                "totale"
+            ]
+        },
+        {
+            "id": "qdm_060",
+            "domanda": "In un sistema isolato, p_tot iniziale è 5 kg·m/s verso +x. Quale deve essere p_tot finale?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "0",
+                "5 kg·m/s verso +x",
+                "5 kg·m/s verso −x",
+                "Dipende dal tipo di urto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In un sistema isolato p_tot resta costante, quindi finale = iniziale. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "conservazione",
+                "isolato",
+                "p_tot",
+                "costante"
+            ]
+        },
+        {
+            "id": "qdm_061",
+            "domanda": "m1=1 kg (v1=+2 m/s) urta m2=3 kg (v2=0) e si attaccano. v finale comune?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti perfettamente anelastici (1D)",
+            "opzioni": [
+                "0,5 m/s",
+                "1,0 m/s",
+                "1,5 m/s",
+                "2,0 m/s"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "p_i=1·2=2, massa finale 4 kg ⇒ v=2/4=0,5 m/s. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "anelastico",
+                "si attaccano",
+                "v finale",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "qdm_062",
+            "domanda": "Un razzo espelle massa all'indietro: perché può accelerare anche nello spazio quasi vuoto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Propulsione",
+            "opzioni": [
+                "Perché serve l'aria per spingere",
+                "Per conservazione della quantità di moto totale sistema razzo+gas",
+                "Perché aumenta la massa",
+                "Perché annulla la gravità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il razzo accelera perché, in assenza di forze esterne significative, si conserva la quantità di moto totale del sistema razzo+gas espulsi. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "razzo",
+                "propulsione",
+                "conservazione",
+                "gas"
+            ]
+        },
+        {
+            "id": "qdm_063",
+            "domanda": "Un sistema di massa totale 5 kg ha p_tot = 15 kg·m/s. Quanto vale v_CM?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Centro di massa",
+            "opzioni": [
+                "1 m/s",
+                "2 m/s",
+                "3 m/s",
+                "5 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "v_CM = p_tot/M_tot = 15/5 = 3 m/s. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "centro di massa",
+                "v_CM",
+                "p_tot/M",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_064",
+            "domanda": "Due corpi: m1=2 kg con v1=+1 m/s, m2=3 kg con v2=−1 m/s. v_CM vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Centro di massa",
+            "opzioni": [
+                "−0,2 m/s",
+                "0 m/s",
+                "+0,2 m/s",
+                "+1 m/s"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "p_tot=2·1+3·(−1)=−1, M=5 ⇒ v_CM=p_tot/M=−1/5=−0,2 m/s. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "v_CM",
+                "p_tot",
+                "segno",
+                "media pesata"
+            ]
+        },
+        {
+            "id": "qdm_065",
+            "domanda": "Un urto è perfettamente elastico: quale valore ha e?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Coefficiente di restituzione",
+            "opzioni": [
+                "0",
+                "0,5",
+                "1",
+                "2"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Nel modello standard e = 1 corrisponde a urto elastico. [web:66]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "e",
+                "elastico",
+                "restituzione",
+                "urti"
+            ]
+        },
+        {
+            "id": "qdm_066",
+            "domanda": "Urto 1D: se e = 0, cosa implica per le velocità relative dopo l'urto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Coefficiente di restituzione",
+            "opzioni": [
+                "La velocità relativa finale è uguale a quella iniziale",
+                "La velocità relativa finale è nulla",
+                "Le velocità finali sono sempre opposte",
+                "Non si conserva la quantità di moto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con e definito come rapporto tra velocità relativa dopo e prima l’urto, e = 0 implica velocità relativa finale nulla (corpi con stessa velocità lungo la linea d’urto). [web:86]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "e=0",
+                "velocità relativa",
+                "urto 1D",
+                "anelastico"
+            ]
+        },
+        {
+            "id": "qdm_067",
+            "domanda": "Un corpo (m=1 kg) cambia velocità da +4 m/s a −4 m/s. Qual è Δp?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Variazione di p",
+            "opzioni": [
+                "0",
+                "−4 kg·m/s",
+                "−8 kg·m/s",
+                "−16 kg·m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Δp = m(v_f−v_i)=1·(−4−4)=−8 kg·m/s. [web:63]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Δp",
+                "inversione",
+                "segno",
+                "mΔv"
+            ]
+        },
+        {
+            "id": "qdm_068",
+            "domanda": "Un corpo (m=2 kg) riceve impulso +10 N·s. Se v_i = −1 m/s, v_f vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso",
+            "opzioni": [
+                "−6 m/s",
+                "−1 m/s",
+                "+4 m/s",
+                "+6 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "I = Δp = m(v_f−v_i) ⇒ 10 = 2(v_f+1) ⇒ v_f = 4 m/s. [web:68]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso",
+                "mΔv",
+                "v_f",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_069",
+            "domanda": "Due masse uguali si urtano frontalmente: una arriva a +3 m/s e l'altra è ferma. In urto elastico ideale 1D, la prima dopo l'urto:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti elastici (qualitativo)",
+            "opzioni": [
+                "Si ferma e l'altra prende +3 m/s",
+                "Rimbalza a −3 m/s e l'altra resta ferma",
+                "Entrambe vanno a +1,5 m/s",
+                "Si attaccano"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In un urto elastico 1D tra masse uguali (una ferma), idealmente si scambiano le velocità, coerentemente con conservazione di p e dell’energia cinetica. [web:66]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto elastico",
+                "masse uguali",
+                "scambio",
+                "1D"
+            ]
+        },
+        {
+            "id": "qdm_070",
+            "domanda": "Un sistema isolato esplode in due parti di masse 1 kg e 2 kg, inizialmente fermo. Se la massa da 1 kg va a +6 m/s, quella da 2 kg va a:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Esplosioni (1D)",
+            "opzioni": [
+                "+3 m/s",
+                "−3 m/s",
+                "+6 m/s",
+                "−6 m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "p_tot iniziale 0, quindi 1·6 + 2·v = 0 ⇒ v = −3 m/s. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "esplosione",
+                "p_tot=0",
+                "conservazione",
+                "opposto"
+            ]
+        },
+        {
+            "id": "qdm_071",
+            "domanda": "Un corpo di massa 5 kg va a 2 m/s. Quanto impulso serve per portarlo a 6 m/s (stesso verso)?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Teorema dell'impulso",
+            "opzioni": [
+                "10 N·s",
+                "20 N·s",
+                "30 N·s",
+                "40 N·s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "I = Δp = mΔv = 5·(6−2) = 20 N·s. [web:68]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso",
+                "Δp",
+                "mΔv",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_072",
+            "domanda": "Un corpo subisce una forza costante 100 N per 0,05 s. Se inizialmente è fermo e m=2 kg, v finale vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso",
+            "opzioni": [
+                "1,25 m/s",
+                "2,5 m/s",
+                "5 m/s",
+                "10 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "I=FΔt=100·0,05=5 N·s e quindi v=I/m=5/2=2,5 m/s. [web:68]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza",
+                "impulso",
+                "v=I/m",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_073",
+            "domanda": "In un sistema isolato, p_tot è costante: ciò significa che ogni singolo corpo mantiene p costante?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione (interpretazione)",
+            "opzioni": [
+                "Sì, sempre",
+                "No, i singoli p possono cambiare ma la somma resta costante",
+                "Sì, ma solo negli urti elastici",
+                "No, perché p_tot non può essere costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La conservazione riguarda la quantità di moto totale (somma vettoriale), mentre le quantità di moto dei singoli corpi possono variare per azione delle forze interne. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "totale",
+                "forze interne",
+                "somma",
+                "interpretazione"
+            ]
+        },
+        {
+            "id": "qdm_074",
+            "domanda": "Un corpo (m=4 kg) ha p=20 kg·m/s. Qual è v?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Ricavare v",
+            "opzioni": [
+                "2 m/s",
+                "4 m/s",
+                "5 m/s",
+                "10 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "v = p/m = 20/4 = 5 m/s. [web:60]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "v=p/m",
+                "calcolo",
+                "20",
+                "4kg"
+            ]
+        },
+        {
+            "id": "qdm_075",
+            "domanda": "Un corpo ha v=10 m/s e p=50 kg·m/s. Qual è m?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Ricavare m",
+            "opzioni": [
+                "2 kg",
+                "5 kg",
+                "10 kg",
+                "50 kg"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "m = p/v = 50/10 = 5 kg. [web:60]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "m=p/v",
+                "calcolo",
+                "massa",
+                "p=mv"
+            ]
+        },
+        {
+            "id": "qdm_076",
+            "domanda": "Un urto anelastico avviene in un sistema isolato. Quale equazione scrivi sempre correttamente?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti (equazioni)",
+            "opzioni": [
+                "p_tot iniziale = p_tot finale",
+                "K iniziale = K finale",
+                "v1 iniziale = v1 finale",
+                "m1 = m2"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In un sistema isolato vale sempre p_tot iniziale = p_tot finale, anche negli urti anelastici. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto",
+                "equazione",
+                "conservazione",
+                "p_tot"
+            ]
+        },
+        {
+            "id": "qdm_077",
+            "domanda": "Due carrelli: m1=1 kg con v1=+5 m/s, m2=4 kg con v2=0. Urto perfettamente anelastico. v finale?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti perfettamente anelastici (1D)",
+            "opzioni": [
+                "0,5 m/s",
+                "1,0 m/s",
+                "2,0 m/s",
+                "5,0 m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "p_i=1·5=5, massa finale 5 kg ⇒ v=5/5=1 m/s. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "anelastico",
+                "conservazione",
+                "massa totale",
+                "v finale"
+            ]
+        },
+        {
+            "id": "qdm_078",
+            "domanda": "Un corpo subisce un impulso di 3 N·s in 0,05 s. Qual è la forza media?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso e forza media",
+            "opzioni": [
+                "15 N",
+                "30 N",
+                "60 N",
+                "150 N"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Per forza media I = F_media·Δt, quindi F_media = I/Δt = 3/0,05 = 60 N. [web:65]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza media",
+                "I/Δt",
+                "impulso",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_079",
+            "domanda": "Un corpo cambia quantità di moto di 12 kg·m/s in 0,2 s. Qual è la forza media risultante?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso e forza media",
+            "opzioni": [
+                "2,4 N",
+                "6 N",
+                "60 N",
+                "240 N"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Dal teorema dell’impulso F_media·Δt = Δp, quindi F_media = Δp/Δt = 12/0,2 = 60 N. [web:68]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "F media",
+                "Δp/Δt",
+                "impulso",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_080",
+            "domanda": "Due corpi in 1D hanno p_tot = 0. Se uno ha p = +7 kg·m/s, l'altro deve avere p =",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Somma vettoriale",
+            "opzioni": [
+                "+7 kg·m/s",
+                "0",
+                "−7 kg·m/s",
+                "Dipende dalle masse"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Se p_tot = p1 + p2 = 0, allora p2 = −p1 = −7 kg·m/s. [web:81]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p_tot=0",
+                "opposto",
+                "somma",
+                "1D"
+            ]
+        },
+        {
+            "id": "qdm_081",
+            "domanda": "Urto 2D: due palle uguali, una con p = 4 kg·m/s lungo +x urta un’altra ferma e dopo l’urto la prima va lungo +y con p = 3 kg·m/s. Qual è il modulo di p della seconda (assumendo sistema isolato)?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti (2D)",
+            "opzioni": [
+                "1 kg·m/s",
+                "3 kg·m/s",
+                "5 kg·m/s",
+                "7 kg·m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Per conservazione vettoriale p2 = (4,0) − (0,3) = (4,−3) e |p2| = 5 kg·m/s. [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "urto 2D",
+                "vettori",
+                "conservazione",
+                "modulo"
+            ]
+        },
+        {
+            "id": "qdm_082",
+            "domanda": "Urto 1D con coefficiente di restituzione: v1=+4 m/s, v2=0 e e=0,5. Quanto vale la velocità relativa di separazione (v2'−v1') rispetto a quella di avvicinamento (v1−v2)?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Coefficiente di restituzione",
+            "opzioni": [
+                "È uguale (rapporto 1)",
+                "È metà (rapporto 0,5)",
+                "È doppia (rapporto 2)",
+                "È zero (rapporto 0)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per definizione, il coefficiente di restituzione e è il rapporto tra velocità relativa dopo e prima la collisione lungo la linea d’urto. [web:86]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "restituzione",
+                "velocità relativa",
+                "definizione",
+                "e=0.5"
+            ]
+        },
+        {
+            "id": "qdm_083",
+            "domanda": "Urto 1D: m1=1 kg (v1=+6 m/s) urta m2=2 kg (v2=0) e restano attaccati. Quanta energia cinetica viene persa?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti anelastici (energia)",
+            "opzioni": [
+                "0 J",
+                "3 J",
+                "6 J",
+                "9 J"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Si usa p conservata per trovare v finale e poi si confronta K iniziale e finale sapendo che in urti anelastici K non si conserva. [web:66][web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "perdita energia",
+                "anelastico",
+                "p conservata",
+                "K"
+            ]
+        },
+        {
+            "id": "qdm_084",
+            "domanda": "Un sistema isolato di due masse (m e 2m) è fermo e poi esplode: la massa 2m ha velocità 3 m/s verso +x. La massa m avrà velocità:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Esplosioni (1D)",
+            "opzioni": [
+                "1,5 m/s verso −x",
+                "3 m/s verso −x",
+                "6 m/s verso −x",
+                "6 m/s verso +x"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con p_tot iniziale 0: m·v + 2m·3 = 0 ⇒ v = −6 m/s. [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "esplosione",
+                "p_tot=0",
+                "rapporti masse",
+                "opposto"
+            ]
+        },
+        {
+            "id": "qdm_085",
+            "domanda": "Due corpi: m1=2 kg a +3 m/s e m2=1 kg a −3 m/s. Calcola v_CM.",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Centro di massa",
+            "opzioni": [
+                "−1 m/s",
+                "+1 m/s",
+                "0 m/s",
+                "+3 m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "p_tot=2·3+1·(−3)=3, M=3 ⇒ v_CM=p_tot/M=1 m/s. [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "v_CM",
+                "p_tot/M",
+                "segni",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_086",
+            "domanda": "Un corpo (m=1 kg) subisce una forza variabile: 10 N per 0,1 s e poi 20 N per 0,1 s (stesso verso). Se inizialmente è fermo, v finale vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso (forza a tratti)",
+            "opzioni": [
+                "1 m/s",
+                "2 m/s",
+                "3 m/s",
+                "4 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "L’impulso totale è I = 10·0,1 + 20·0,1 = 3 N·s e quindi v = I/m = 3 m/s. [web:68]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "forza variabile",
+                "impulso",
+                "a tratti",
+                "v=I/m"
+            ]
+        },
+        {
+            "id": "qdm_087",
+            "domanda": "Urto 1D: m1=1 kg con v1=+4 m/s urta m2=1 kg con v2=−2 m/s. Se e=1 (elastico ideale), la velocità relativa dopo è:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Coefficiente di restituzione",
+            "opzioni": [
+                "0",
+                "Uguale a quella prima",
+                "Metà di quella prima",
+                "Il doppio di quella prima"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con e=1, per definizione la velocità relativa dopo l’urto ha lo stesso modulo di quella prima (rapporto 1). [web:86]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "e=1",
+                "velocità relativa",
+                "elastico",
+                "definizione"
+            ]
+        },
+        {
+            "id": "qdm_088",
+            "domanda": "Urto 2D: p_tot iniziale è (6, 8) kg·m/s. Dopo l'urto, un corpo ha p1'=(2, 1). Qual è p2'?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti (2D)",
+            "opzioni": [
+                "(4, 7)",
+                "(8, 9)",
+                "(−4, −7)",
+                "(6, 8)"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per conservazione vettoriale p2' = p_tot − p1' = (6−2, 8−1) = (4,7). [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "2D",
+                "componenti",
+                "conservazione",
+                "p2"
+            ]
+        },
+        {
+            "id": "qdm_089",
+            "domanda": "Urto perfettamente anelastico: m1=3 kg (v1=+2 m/s) urta m2=1 kg (v2=−4 m/s) e si attaccano. v finale comune?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti perfettamente anelastici (1D)",
+            "opzioni": [
+                "−0,5 m/s",
+                "0 m/s",
+                "+0,5 m/s",
+                "+1,0 m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "p_i=3·2 + 1·(−4)=2, M=4 ⇒ v=2/4=0,5 m/s. [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "anelastico",
+                "segni",
+                "v finale",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "qdm_090",
+            "domanda": "Un corpo riceve un impulso che lo ferma e poi lo fa tornare indietro: se p_i=+5 kg·m/s e p_f=−3 kg·m/s, l'impulso totale è:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso e Δp",
+            "opzioni": [
+                "+2 N·s",
+                "−2 N·s",
+                "+8 N·s",
+                "−8 N·s"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "I = Δp = p_f − p_i = −3 − 5 = −8 N·s. [web:63]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "impulso",
+                "Δp",
+                "cambio verso",
+                "segno"
+            ]
+        },
+        {
+            "id": "qdm_091",
+            "domanda": "Un sistema isolato ha M_tot=10 kg e v_CM=−0,5 m/s. Quanto vale p_tot?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Centro di massa",
+            "opzioni": [
+                "−5 kg·m/s",
+                "−20 kg·m/s",
+                "+5 kg·m/s",
+                "+20 kg·m/s"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "p_tot = M_tot·v_CM = 10·(−0,5) = −5 kg·m/s. [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "p_tot",
+                "M v_CM",
+                "calcolo",
+                "segno"
+            ]
+        },
+        {
+            "id": "qdm_092",
+            "domanda": "Urto 1D con e: due corpi hanno v1=+5 m/s e v2=+1 m/s prima dell'urto. Se e=0, la condizione sulle velocità finali lungo la linea d'urto è:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Coefficiente di restituzione",
+            "opzioni": [
+                "v1' = v2'",
+                "v1' = −v2'",
+                "v1' − v2' = v1 − v2",
+                "v1' + v2' = v1 + v2"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con e=0 la velocità relativa finale è nulla, quindi v1' = v2' lungo la direzione d’urto. [web:86]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "e=0",
+                "v1'=v2'",
+                "velocità relativa",
+                "urto 1D"
+            ]
+        },
+        {
+            "id": "qdm_093",
+            "domanda": "Un corpo (m=2 kg) ha v=(3,4) m/s nel piano. Quanto vale il modulo della quantità di moto |p|?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Quantità di moto (2D)",
+            "opzioni": [
+                "5 kg·m/s",
+                "10 kg·m/s",
+                "7 kg·m/s",
+                "8 kg·m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "p = m·v quindi |p| = m·|v| = 2·√(3^2+4^2)=2·5=10 kg·m/s. [web:60]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "2D",
+                "modulo",
+                "p=mv",
+                "vettore"
+            ]
+        },
+        {
+            "id": "qdm_094",
+            "domanda": "Urto 2D: p_tot iniziale è lungo x. Dopo l’urto osservi che p_tot ha anche componente y. Quale conclusione è più corretta?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione (componenti)",
+            "opzioni": [
+                "La massa è cambiata",
+                "C'è stato un impulso esterno con componente y",
+                "L’urto è elastico",
+                "L’energia cinetica si è conservata"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Se p_tot cambia direzione serve un impulso esterno non nullo, perché in un sistema isolato p_tot resta costante come vettore. [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "impulso esterno",
+                "componenti",
+                "p_tot",
+                "vettore"
+            ]
+        },
+        {
+            "id": "qdm_095",
+            "domanda": "Un corpo di massa 1 kg subisce impulso totale 0, ma la sua velocità cambia. È possibile?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso",
+            "opzioni": [
+                "Sì, sempre",
+                "No, perché I=Δp e quindi Δv deve essere zero",
+                "Sì, se c’è attrito",
+                "Sì, se cambia massa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Se l’impulso totale è nullo, allora Δp=0 e quindi (a massa costante) la velocità non può cambiare. [web:63]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "I=Δp",
+                "impulso nullo",
+                "Δp=0",
+                "velocità"
+            ]
+        },
+        {
+            "id": "qdm_096",
+            "domanda": "Due corpi (m1=1 kg, m2=3 kg) in 1D: v1=+4 m/s, v2=0. Dopo l’urto risultano v1'=−1 m/s, v2'=+? (sistema isolato). Trova v2'.",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti (1D)",
+            "opzioni": [
+                "1 m/s",
+                "2 m/s",
+                "3 m/s",
+                "5 m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Conservazione di p: 1·4+3·0 = 1·(−1)+3·v2' ⇒ 4 = −1 + 3v2' ⇒ v2' = 5/3 ≈ 1,67 m/s (opzione più vicina 2 m/s). [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "urto 1D",
+                "conservazione",
+                "equazione",
+                "v2"
+            ]
+        },
+        {
+            "id": "qdm_097",
+            "domanda": "Un proiettile (0,02 kg) a 300 m/s colpisce un blocco (1,98 kg) fermo e resta conficcato. Qual è p_tot dopo l'urto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti perfettamente anelastici",
+            "opzioni": [
+                "0",
+                "3 kg·m/s",
+                "6 kg·m/s",
+                "12 kg·m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "In un sistema isolato p_tot si conserva, quindi p_tot finale = p_tot iniziale = 0,02·300 = 6 kg·m/s. [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "p_tot",
+                "conservazione",
+                "proiettile",
+                "anelastico"
+            ]
+        },
+        {
+            "id": "qdm_098",
+            "domanda": "Un sistema di due corpi ha p_tot = 0 ma K_tot > 0. Quale scenario è coerente?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Interpretazione",
+            "opzioni": [
+                "Due corpi fermi",
+                "Due corpi che si muovono con quantità di moto opposte",
+                "Un corpo solo che si muove",
+                "Due corpi che si muovono nello stesso verso con stessa velocità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "p_tot può essere zero per somma vettoriale di quantità di moto opposte anche se i corpi si muovono e quindi l’energia cinetica è non nulla. [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "p_tot=0",
+                "K>0",
+                "opposti",
+                "somma vettoriale"
+            ]
+        },
+        {
+            "id": "qdm_099",
+            "domanda": "Urto 2D: due corpi identici. Prima: p1=(5,0), p2=(0,0). Dopo: p1'=(3,4). Qual è p2'?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti (2D)",
+            "opzioni": [
+                "(2, −4)",
+                "(2, 4)",
+                "(−2, −4)",
+                "(−3, 4)"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "p_tot=(5,0) quindi p2'=p_tot−p1'=(5−3,0−4)=(2,−4). [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "2D",
+                "componenti",
+                "p_tot",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "qdm_100",
+            "domanda": "Urto 1D: e = (v2'−v1')/(v1−v2). Se e=0,8 e v1−v2=5 m/s, allora v2'−v1' vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Coefficiente di restituzione",
+            "opzioni": [
+                "4 m/s",
+                "5 m/s",
+                "6,25 m/s",
+                "0,8 m/s"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dalla definizione del coefficiente di restituzione, v2'−v1' = e·(v1−v2) = 0,8·5 = 4 m/s. [web:86]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "restituzione",
+                "formula",
+                "velocità relativa",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_101",
+            "domanda": "Un corpo subisce una forza risultante nulla ma non è fermo. Che succede alla sua quantità di moto nel tempo?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Dinamica",
+            "opzioni": [
+                "Aumenta",
+                "Diminuisce",
+                "Resta costante",
+                "Cambia direzione in modo casuale"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Se F=0 allora dp/dt=0 e la quantità di moto resta costante. [web:60]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "dp/dt",
+                "F=0",
+                "costante",
+                "moto rettilineo uniforme"
+            ]
+        },
+        {
+            "id": "qdm_102",
+            "domanda": "In un urto anelastico in un sistema isolato, perché NON basta conservare l’energia cinetica per trovare le velocità finali?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti (concettuale)",
+            "opzioni": [
+                "Perché l’energia cinetica non si conserva",
+                "Perché la massa non si conserva",
+                "Perché la forza è nulla",
+                "Perché la quantità di moto non si conserva"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Negli urti anelastici l’energia cinetica non si conserva, mentre in sistema isolato si conserva la quantità di moto totale. [web:66][web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "anelastico",
+                "energia",
+                "p totale",
+                "concetto"
+            ]
+        },
+        {
+            "id": "qdm_103",
+            "domanda": "Un corpo (m=0,5 kg) subisce impulso +1,5 N·s. Se v_i = +1 m/s, v_f vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso",
+            "opzioni": [
+                "0 m/s",
+                "2 m/s",
+                "4 m/s",
+                "−2 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "I = m(v_f−v_i) ⇒ 1,5 = 0,5(v_f−1) ⇒ v_f = 4 m/s. [web:68]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "impulso",
+                "mΔv",
+                "calcolo",
+                "v finale"
+            ]
+        },
+        {
+            "id": "qdm_104",
+            "domanda": "Due corpi: m1=1 kg con v1=+2 m/s e m2=2 kg con v2=+2 m/s. Qual è v_CM?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Centro di massa",
+            "opzioni": [
+                "1 m/s",
+                "2 m/s",
+                "3 m/s",
+                "4 m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "p_tot=1·2+2·2=6, M=3 ⇒ v_CM=6/3=2 m/s. [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "v_CM",
+                "media pesata",
+                "p_tot/M",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_105",
+            "domanda": "Urto 2D: p_tot iniziale è (0, 10). Dopo, un corpo ha p1'=(6, 8). Qual è p2'?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti (2D)",
+            "opzioni": [
+                "(−6, 2)",
+                "(6, 2)",
+                "(−6, 18)",
+                "(6, 18)"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "p2' = p_tot − p1' = (0−6, 10−8) = (−6,2). [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "2D",
+                "componenti",
+                "conservazione",
+                "p2"
+            ]
+        },
+        {
+            "id": "qdm_106",
+            "domanda": "Un urto avviene in un sistema isolato. Se la quantità di moto totale iniziale è nulla, la velocità del centro di massa durante e dopo l’urto è:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Centro di massa",
+            "opzioni": [
+                "Sempre nulla",
+                "Sempre massima",
+                "Sempre uguale a quella del corpo più massiccio",
+                "Impossibile da dire"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Poiché p_tot = M_tot·v_CM, se p_tot=0 allora v_CM=0 e resta così se il sistema è isolato. [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "v_CM",
+                "p_tot=0",
+                "isolato",
+                "costante"
+            ]
+        },
+        {
+            "id": "qdm_107",
+            "domanda": "Urto 1D: m1=2 kg (v1=+3 m/s), m2=2 kg (v2=−1 m/s), perfettamente anelastico. v finale comune?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti perfettamente anelastici (1D)",
+            "opzioni": [
+                "+1 m/s",
+                "+0,5 m/s",
+                "+2 m/s",
+                "0 m/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "p_i=2·3 + 2·(−1)=4, M=4 ⇒ v=4/4=1 m/s. [web:81]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "anelastico",
+                "massa uguale",
+                "segni",
+                "v finale"
+            ]
+        },
+        {
+            "id": "qdm_108",
+            "domanda": "Un corpo di massa 1 kg ha p=(3,4) kg·m/s. Qual è il modulo della velocità?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Ricavare v (2D)",
+            "opzioni": [
+                "2 m/s",
+                "4 m/s",
+                "5 m/s",
+                "7 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Poiché p = m·v, con m=1 vale |v|=|p|/m=√(3^2+4^2)=5 m/s. [web:60]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "2D",
+                "v=|p|/m",
+                "modulo",
+                "componenti"
+            ]
+        }
+    ]
+}

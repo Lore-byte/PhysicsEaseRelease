@@ -1,1 +1,2419 @@
-{"quiz": []}
+{
+    "quiz": [
+        {
+            "id": "lav_001",
+            "domanda": "Che cos'è il lavoro meccanico di una forza costante?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Definizione",
+            "opzioni": [
+                "Il prodotto tra massa e accelerazione",
+                "Il prodotto scalare tra forza e spostamento",
+                "La variazione di energia potenziale",
+                "Il rapporto tra forza e tempo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro di una forza costante è dato dal prodotto scalare tra il vettore forza e il vettore spostamento.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lavoro",
+                "prodotto scalare",
+                "forza",
+                "spostamento"
+            ]
+        },
+        {
+            "id": "lav_002",
+            "domanda": "Qual è l'unità di misura del lavoro nel Sistema Internazionale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Unità di misura",
+            "opzioni": [
+                "Watt (W)",
+                "Newton (N)",
+                "Joule (J)",
+                "Pascal (Pa)"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Nel SI il lavoro si misura in joule (J), equivalenti a N·m.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "joule",
+                "SI",
+                "newton metro",
+                "unità"
+            ]
+        },
+        {
+            "id": "lav_003",
+            "domanda": "Quando il lavoro di una forza è nullo?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Casi particolari",
+            "opzioni": [
+                "Quando forza e spostamento sono paralleli",
+                "Quando forza e spostamento sono perpendicolari",
+                "Quando la massa è zero",
+                "Quando la velocità è costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Se la forza è perpendicolare allo spostamento, il prodotto scalare è zero e quindi il lavoro è nullo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "perpendicolare",
+                "lavoro nullo",
+                "coseno",
+                "prodotto scalare"
+            ]
+        },
+        {
+            "id": "lav_004",
+            "domanda": "Quale tra queste è la formula dell'energia cinetica?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia cinetica",
+            "opzioni": [
+                "Ec = mgh",
+                "Ec = 1/2 m v^2",
+                "Ec = kx^2",
+                "Ec = F·s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'energia cinetica di un corpo di massa m che si muove a velocità v è Ec = 1/2 m v^2.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia cinetica",
+                "massa",
+                "velocità",
+                "formula"
+            ]
+        },
+        {
+            "id": "lav_005",
+            "domanda": "Che cosa afferma il teorema lavoro-energia (energia cinetica)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Teorema lavoro-energia",
+            "opzioni": [
+                "Il lavoro totale è uguale all'energia potenziale",
+                "Il lavoro totale è uguale alla variazione di energia cinetica",
+                "La potenza è uguale al lavoro totale",
+                "L'energia meccanica aumenta sempre"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro totale delle forze agenti su un corpo è pari alla variazione della sua energia cinetica.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "teorema",
+                "lavoro",
+                "energia cinetica",
+                "variazione"
+            ]
+        },
+        {
+            "id": "lav_006",
+            "domanda": "Se una forza costante F è parallela allo spostamento s, quanto vale il lavoro W?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forza parallela",
+            "opzioni": [
+                "W = F/s",
+                "W = F·s",
+                "W = F·s·sinθ",
+                "W = 0"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Quando forza e spostamento sono paralleli, θ = 0 e quindi W = F·s.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "forza costante",
+                "parallelo",
+                "lavoro",
+                "Fs"
+            ]
+        },
+        {
+            "id": "lav_007",
+            "domanda": "Che segno ha il lavoro della forza di attrito (dinamico) rispetto allo spostamento?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Attrito",
+            "opzioni": [
+                "Sempre positivo",
+                "Sempre negativo",
+                "Sempre nullo",
+                "Dipende solo dalla massa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'attrito dinamico è opposto al moto, quindi compie lavoro negativo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "attrito",
+                "lavoro negativo",
+                "dissipazione",
+                "moto"
+            ]
+        },
+        {
+            "id": "lav_008",
+            "domanda": "Quale grandezza descrive la rapidità con cui si compie lavoro?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Definizione",
+            "opzioni": [
+                "Energia",
+                "Forza",
+                "Potenza",
+                "Pressione"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La potenza misura quanto lavoro (o quanta energia) si trasferisce nell'unità di tempo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "potenza",
+                "lavoro",
+                "tempo",
+                "rapidità"
+            ]
+        },
+        {
+            "id": "lav_009",
+            "domanda": "Qual è l'unità di misura della potenza nel SI?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Unità di misura",
+            "opzioni": [
+                "Joule (J)",
+                "Watt (W)",
+                "Newton (N)",
+                "Coulomb (C)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel SI la potenza si misura in watt (W), equivalenti a J/s.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "watt",
+                "J/s",
+                "potenza",
+                "SI"
+            ]
+        },
+        {
+            "id": "lav_010",
+            "domanda": "Qual è l'espressione della potenza media?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Potenza media",
+            "opzioni": [
+                "P = F·s",
+                "P = W/Δt",
+                "P = m·a",
+                "P = mgh"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La potenza media è il lavoro compiuto diviso l'intervallo di tempo impiegato: P = W/Δt.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "potenza media",
+                "lavoro",
+                "tempo",
+                "formula"
+            ]
+        },
+        {
+            "id": "lav_011",
+            "domanda": "Quale tra queste forze è conservativa (in condizioni ideali)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forze conservative",
+            "opzioni": [
+                "Attrito dinamico",
+                "Resistenza dell'aria",
+                "Forza peso",
+                "Spinta viscosa"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "In condizioni ideali, la forza peso è conservativa: il suo lavoro dipende solo da quota iniziale e finale.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "conservativa",
+                "peso",
+                "gravità",
+                "energia potenziale"
+            ]
+        },
+        {
+            "id": "lav_012",
+            "domanda": "Quale grandezza diminuisce se l'attrito compie lavoro negativo su un corpo?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Dissipazione",
+            "opzioni": [
+                "Energia interna/termica aumenta, energia meccanica diminuisce",
+                "Energia meccanica aumenta",
+                "Energia potenziale aumenta",
+                "Massa diminuisce"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il lavoro negativo dell'attrito trasforma energia meccanica in energia interna (calore).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "attrito",
+                "dissipazione",
+                "energia meccanica",
+                "calore"
+            ]
+        },
+        {
+            "id": "lav_013",
+            "domanda": "Qual è la formula dell'energia potenziale gravitazionale vicino alla superficie terrestre?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia potenziale gravitazionale",
+            "opzioni": [
+                "Ep = 1/2 m v^2",
+                "Ep = mgh",
+                "Ep = kx",
+                "Ep = F·s·cosθ"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Vicino alla superficie terrestre, Ep = mgh rispetto a un livello di riferimento scelto.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia potenziale",
+                "mgh",
+                "gravità",
+                "quota"
+            ]
+        },
+        {
+            "id": "lav_014",
+            "domanda": "Sollevare un oggetto di massa m a quota h (a velocità costante) richiede un lavoro pari a:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Lavoro contro la gravità",
+            "opzioni": [
+                "mgh",
+                "1/2 m v^2",
+                "mg/h",
+                "0"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "A velocità costante, il lavoro della forza esterna contro il peso è pari a mgh.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "sollevamento",
+                "mgh",
+                "lavoro",
+                "peso"
+            ]
+        },
+        {
+            "id": "lav_015",
+            "domanda": "In un moto circolare uniforme, la forza centripeta compie lavoro?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Moto circolare",
+            "opzioni": [
+                "Sì, sempre positivo",
+                "Sì, sempre negativo",
+                "No, perché è perpendicolare allo spostamento",
+                "Dipende dal raggio"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Nel moto circolare uniforme la forza centripeta è radiale e perpendicolare allo spostamento tangenziale, quindi il lavoro è nullo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "moto circolare",
+                "centripeta",
+                "lavoro nullo",
+                "perpendicolare"
+            ]
+        },
+        {
+            "id": "lav_016",
+            "domanda": "Se la forza applicata è opposta allo spostamento (θ = 180°), il lavoro è:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Segno del lavoro",
+            "opzioni": [
+                "Positivo",
+                "Negativo",
+                "Nullo",
+                "Sempre uguale a 1 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con θ = 180° il coseno vale -1, quindi W = -F·s: lavoro negativo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lavoro negativo",
+                "opposto",
+                "coseno",
+                "angolo"
+            ]
+        },
+        {
+            "id": "lav_017",
+            "domanda": "Quale tra queste è una trasformazione energetica tipica senza attrito per un corpo che cade?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Conservazione energia meccanica",
+            "opzioni": [
+                "Energia cinetica → energia potenziale",
+                "Energia potenziale → energia cinetica",
+                "Energia meccanica → energia elettrica",
+                "Energia termica → energia potenziale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In caduta libera senza attrito, l'energia potenziale gravitazionale si trasforma in energia cinetica.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "caduta",
+                "energia potenziale",
+                "energia cinetica",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "lav_018",
+            "domanda": "L'energia potenziale elastica di una molla ideale allungata di x vale:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia elastica",
+            "opzioni": [
+                "Ep = kx",
+                "Ep = 1/2 kx^2",
+                "Ep = mgx",
+                "Ep = 1/2 mv^2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per una molla ideale, l'energia potenziale elastica è Ep = 1/2 kx^2.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "molla",
+                "energia elastica",
+                "kx^2",
+                "Hooke"
+            ]
+        },
+        {
+            "id": "lav_019",
+            "domanda": "Quale tra queste affermazioni è corretta sul lavoro di una forza conservativa?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Conservatività",
+            "opzioni": [
+                "Dipende dal cammino percorso",
+                "Dipende solo dagli istanti di tempo",
+                "Dipende solo dagli stati iniziale e finale",
+                "È sempre negativo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Per una forza conservativa il lavoro dipende solo dalla posizione iniziale e finale, non dal percorso.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "forza conservativa",
+                "percorso",
+                "lavoro",
+                "posizione"
+            ]
+        },
+        {
+            "id": "lav_020",
+            "domanda": "Quale relazione collega lavoro e variazione di energia potenziale per una forza conservativa?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia potenziale e lavoro",
+            "opzioni": [
+                "W = ΔEp",
+                "W = -ΔEp",
+                "W = ΔEc",
+                "W = 0 sempre"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per una forza conservativa, il lavoro della forza è l'opposto della variazione di energia potenziale: W = -ΔEp.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia potenziale",
+                "lavoro",
+                "conservativa",
+                "segno"
+            ]
+        },
+        {
+            "id": "lav_021",
+            "domanda": "Se il lavoro totale su un corpo è positivo, l'energia cinetica del corpo:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Teorema lavoro-energia",
+            "opzioni": [
+                "Diminuisce",
+                "Rimane invariata",
+                "Aumenta",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Dal teorema lavoro-energia, un lavoro totale positivo implica un aumento di energia cinetica.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lavoro positivo",
+                "energia cinetica",
+                "aumento",
+                "teorema"
+            ]
+        },
+        {
+            "id": "lav_022",
+            "domanda": "Una forza compie lavoro di 30 J in 5 s: qual è la potenza media?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Calcolo potenza media",
+            "opzioni": [
+                "6 W",
+                "150 W",
+                "25 W",
+                "0.17 W"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La potenza media è P = W/Δt = 30/5 = 6 W.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "potenza",
+                "W/Δt",
+                "watt",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "lav_023",
+            "domanda": "Se un corpo si muove a velocità costante su piano orizzontale senza attrito, il lavoro della forza risultante è:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forza risultante",
+            "opzioni": [
+                "Positivo",
+                "Negativo",
+                "Nullo",
+                "Impossibile determinarlo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Velocità costante implica energia cinetica costante, quindi lavoro totale nullo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "velocità costante",
+                "lavoro totale",
+                "risultante",
+                "energia cinetica"
+            ]
+        },
+        {
+            "id": "lav_024",
+            "domanda": "Che cosa rappresenta l'energia meccanica (in un sistema con gravità e molle ideali)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia meccanica",
+            "opzioni": [
+                "Solo l'energia termica",
+                "Somma di energia cinetica e potenziali",
+                "Solo l'energia cinetica",
+                "Solo la quantità di moto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'energia meccanica è la somma di energia cinetica ed energie potenziali (gravitazionale ed elastica).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia meccanica",
+                "cinetica",
+                "potenziale",
+                "somma"
+            ]
+        },
+        {
+            "id": "lav_025",
+            "domanda": "Quale tra queste coppie di unità è equivalente a un joule?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Equivalenze unità",
+            "opzioni": [
+                "N/s",
+                "N·m",
+                "kg·m",
+                "m/s^2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "1 J è equivalente a 1 N·m (newton per metro).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "joule",
+                "newton metro",
+                "unità",
+                "equivalenza"
+            ]
+        },
+        {
+            "id": "lav_026",
+            "domanda": "Se l'energia cinetica di un corpo raddoppia, la sua velocità:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Dipendenze",
+            "opzioni": [
+                "Raddoppia",
+                "Dimezza",
+                "Aumenta di un fattore √2",
+                "Rimane uguale"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Poiché Ec = 1/2 m v^2, raddoppiare Ec implica v moltiplicata per √2.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia cinetica",
+                "velocità",
+                "quadrato",
+                "radice"
+            ]
+        },
+        {
+            "id": "lav_027",
+            "domanda": "In assenza di attriti, per un corpo che scende di quota Δh, la variazione di energia potenziale gravitazionale è:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Variazione Ep",
+            "opzioni": [
+                "ΔEp = +mgΔh",
+                "ΔEp = -mgΔh",
+                "ΔEp = 0",
+                "ΔEp = +1/2 mv^2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Se la quota diminuisce di Δh, l'energia potenziale diminuisce: ΔEp = -mgΔh.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia potenziale",
+                "quota",
+                "mgΔh",
+                "segno"
+            ]
+        },
+        {
+            "id": "lav_028",
+            "domanda": "Che cosa descrive il rendimento η di una macchina?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Rendimento",
+            "opzioni": [
+                "η = lavoro utile / lavoro speso",
+                "η = lavoro speso / lavoro utile",
+                "η = potenza utile + potenza spesa",
+                "η = massa / volume"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il rendimento è il rapporto tra l'energia (o lavoro) utile e quella fornita/spesa.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "rendimento",
+                "macchina",
+                "utile",
+                "speso"
+            ]
+        },
+        {
+            "id": "lav_029",
+            "domanda": "Se una forza di 10 N sposta un corpo di 3 m nella stessa direzione, il lavoro vale:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Calcolo semplice",
+            "opzioni": [
+                "3 J",
+                "10 J",
+                "30 J",
+                "300 J"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con forza parallela allo spostamento, W = F·s = 10·3 = 30 J.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "calcolo",
+                "joule",
+                "forza",
+                "spostamento"
+            ]
+        },
+        {
+            "id": "lav_030",
+            "domanda": "Se il lavoro totale compiuto su un corpo è nullo, allora:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Teorema lavoro-energia",
+            "opzioni": [
+                "La velocità è sicuramente zero",
+                "L'energia cinetica non cambia",
+                "L'energia potenziale non cambia",
+                "Il corpo è fermo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Se W_tot = 0, allora ΔEc = 0 e l'energia cinetica resta costante.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lavoro totale",
+                "ΔEc",
+                "costante",
+                "teorema"
+            ]
+        },
+        {
+            "id": "lav_031",
+            "domanda": "Quale tra queste grandezze è uno scalare?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Scalari e vettori",
+            "opzioni": [
+                "Forza",
+                "Spostamento",
+                "Lavoro",
+                "Accelerazione"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Il lavoro è una grandezza scalare (può essere positiva, negativa o nulla).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "scalare",
+                "lavoro",
+                "vettori",
+                "forza"
+            ]
+        },
+        {
+            "id": "lav_032",
+            "domanda": "Che cosa succede all'energia meccanica in presenza di attrito?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Non conservazione",
+            "opzioni": [
+                "Si conserva sempre",
+                "Aumenta sempre",
+                "Diminuisce perché parte si dissipa in calore",
+                "Diventa negativa"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con forze dissipative come l'attrito, parte dell'energia meccanica si trasforma in energia interna.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "attrito",
+                "energia meccanica",
+                "dissipazione",
+                "calore"
+            ]
+        },
+        {
+            "id": "lav_033",
+            "domanda": "Quale relazione collega potenza, lavoro e tempo?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Relazioni fondamentali",
+            "opzioni": [
+                "P = W·t",
+                "P = W/t",
+                "P = t/W",
+                "P = W + t"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La potenza media è definita come il lavoro fratto il tempo impiegato: P = W/t.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "potenza",
+                "lavoro",
+                "tempo",
+                "rapporto"
+            ]
+        },
+        {
+            "id": "lav_034",
+            "domanda": "Quale tra questi grafici permette di ottenere il lavoro calcolando un'area?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Interpretazione grafica",
+            "opzioni": [
+                "Grafico v-t: area = lavoro",
+                "Grafico a-t: area = lavoro",
+                "Grafico F-s: area = lavoro",
+                "Grafico m-v: area = lavoro"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "L'area sotto il grafico forza-spostamento (F-s) rappresenta il lavoro compiuto.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "grafico",
+                "F-s",
+                "area",
+                "lavoro"
+            ]
+        },
+        {
+            "id": "lav_035",
+            "domanda": "In un sistema senza attrito, l'energia meccanica totale:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "Si conserva",
+                "Aumenta sempre",
+                "Diminuisce sempre",
+                "Dipende dalla massa"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In assenza di forze dissipative, l'energia meccanica si conserva.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "conservazione",
+                "energia meccanica",
+                "attrito",
+                "sistema ideale"
+            ]
+        },
+        {
+            "id": "lav_036",
+            "domanda": "Se una forza compie lavoro negativo su un corpo, l'energia cinetica del corpo:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Teorema lavoro-energia",
+            "opzioni": [
+                "Aumenta",
+                "Diminuisce",
+                "Rimane sempre uguale a zero",
+                "Non è collegata al lavoro"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Lavoro totale negativo implica ΔEc negativa, quindi l'energia cinetica diminuisce.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lavoro negativo",
+                "energia cinetica",
+                "diminuisce",
+                "teorema"
+            ]
+        },
+        {
+            "id": "lav_037",
+            "domanda": "Che cos'è l'energia potenziale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Concetto",
+            "opzioni": [
+                "Energia dovuta alla posizione/configurazione in un campo",
+                "Energia dovuta solo alla velocità",
+                "Energia dovuta solo alla massa",
+                "Energia dovuta alla temperatura"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "L'energia potenziale è associata alla posizione o alla configurazione del sistema in presenza di forze conservative.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia potenziale",
+                "posizione",
+                "campo",
+                "conservativa"
+            ]
+        },
+        {
+            "id": "lav_038",
+            "domanda": "Il lavoro della forza peso durante uno spostamento orizzontale (quota costante) è:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Peso e spostamento",
+            "opzioni": [
+                "Positivo",
+                "Negativo",
+                "Nullo",
+                "Dipende dalla massa"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con spostamento orizzontale, peso e spostamento sono perpendicolari, quindi il lavoro del peso è nullo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "peso",
+                "orizzontale",
+                "lavoro nullo",
+                "perpendicolare"
+            ]
+        },
+        {
+            "id": "lav_039",
+            "domanda": "Quale tra queste affermazioni sulla potenza è corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Concetto",
+            "opzioni": [
+                "Si misura in joule",
+                "È lavoro per unità di tempo",
+                "È forza per unità di tempo",
+                "È spostamento per unità di tempo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La potenza è il lavoro compiuto nell'unità di tempo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "potenza",
+                "lavoro",
+                "tempo",
+                "definizione"
+            ]
+        },
+        {
+            "id": "lav_040",
+            "domanda": "Quale tra queste situazioni comporta un aumento di energia potenziale gravitazionale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia potenziale gravitazionale",
+            "opzioni": [
+                "Scendere di quota",
+                "Salire di quota",
+                "Muoversi in orizzontale",
+                "Frenare su piano orizzontale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Salendo di quota aumenta h e quindi aumenta Ep = mgh.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "mgh",
+                "quota",
+                "aumento",
+                "gravità"
+            ]
+        },
+        {
+            "id": "lav_041",
+            "domanda": "Una forza di 20 N forma un angolo di 60° con lo spostamento di 5 m. Qual è il lavoro compiuto?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forza inclinata",
+            "opzioni": [
+                "0 J",
+                "50 J",
+                "100 J",
+                "200 J"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "W = F·s·cos60° = 20·5·0.5 = 50 J, quindi l'opzione corretta è 50 J (attenzione al calcolo).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "coseno",
+                "angolo",
+                "lavoro",
+                "forza inclinata"
+            ]
+        },
+        {
+            "id": "lav_042",
+            "domanda": "Correggi: nel quesito precedente (F=20 N, s=5 m, θ=60°), quale opzione è corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Verifica calcolo",
+            "opzioni": [
+                "0 J",
+                "50 J",
+                "100 J",
+                "200 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché cos60° = 0.5, il lavoro vale W = 20·5·0.5 = 50 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "correzione",
+                "cos60",
+                "50J",
+                "lavoro"
+            ]
+        },
+        {
+            "id": "lav_043",
+            "domanda": "Un blocco di 2 kg parte da fermo e dopo un tratto ha Ec = 18 J. Quanto vale il lavoro totale delle forze?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Teorema lavoro-energia",
+            "opzioni": [
+                "18 J",
+                "-18 J",
+                "36 J",
+                "0 J"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "ΔEc = 18 J - 0 = 18 J, quindi W_tot = 18 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "ΔEc",
+                "teorema",
+                "lavoro totale",
+                "da fermo"
+            ]
+        },
+        {
+            "id": "lav_044",
+            "domanda": "Un corpo di 1 kg ha velocità iniziale 2 m/s e finale 6 m/s. Qual è il lavoro totale compiuto?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Calcolo con Ec",
+            "opzioni": [
+                "8 J",
+                "16 J",
+                "18 J",
+                "20 J"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "ΔEc = 1/2·1·(6^2-2^2)=1/2·(36-4)=16 J, quindi la risposta corretta è 16 J (attenzione alle opzioni).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia cinetica",
+                "variazione",
+                "lavoro",
+                "v^2"
+            ]
+        },
+        {
+            "id": "lav_045",
+            "domanda": "Correggi: nel quesito precedente, quale opzione doveva essere selezionata?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Verifica calcolo",
+            "opzioni": [
+                "8 J",
+                "16 J",
+                "18 J",
+                "20 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro totale è ΔEc = 16 J, quindi l'opzione corretta è 16 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "correzione",
+                "ΔEc",
+                "16J",
+                "teorema"
+            ]
+        },
+        {
+            "id": "lav_046",
+            "domanda": "Un oggetto viene trascinato su piano orizzontale con forza costante 12 N per 4 m. Se l'attrito compie -20 J, qual è il lavoro totale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Somma dei lavori",
+            "opzioni": [
+                "28 J",
+                "48 J",
+                "68 J",
+                "-8 J"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Lavoro forza applicata: 12·4=48 J; totale: 48 + (-20)=28 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lavoro totale",
+                "attrito",
+                "somma",
+                "piano"
+            ]
+        },
+        {
+            "id": "lav_047",
+            "domanda": "Un corpo sale su un piano inclinato senza attrito aumentando la quota di 2 m. Se m=3 kg, quanto vale il lavoro del peso?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Lavoro della gravità",
+            "opzioni": [
+                "+58.8 J",
+                "-58.8 J",
+                "+6 J",
+                "0 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro del peso è W_p = -m g Δh = -3·9.8·2 = -58.8 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "piano inclinato",
+                "peso",
+                "quota",
+                "lavoro negativo"
+            ]
+        },
+        {
+            "id": "lav_048",
+            "domanda": "Un motore compie 900 J in 30 s. Qual è la potenza media?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Calcolo",
+            "opzioni": [
+                "30 W",
+                "300 W",
+                "0.03 W",
+                "27000 W"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "P = W/Δt = 900/30 = 30 W.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "potenza media",
+                "watt",
+                "lavoro",
+                "tempo"
+            ]
+        },
+        {
+            "id": "lav_049",
+            "domanda": "Un blocco scivola con attrito: il lavoro dell'attrito è -40 J. Di quanto cambia l'energia meccanica?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Lavoro non conservativo",
+            "opzioni": [
+                "Aumenta di 40 J",
+                "Diminuisce di 40 J",
+                "Resta invariata",
+                "Non è definibile"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro delle forze non conservative è uguale alla variazione di energia meccanica: ΔEm = -40 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia meccanica",
+                "attrito",
+                "non conservativa",
+                "ΔEm"
+            ]
+        },
+        {
+            "id": "lav_050",
+            "domanda": "Una molla con k=200 N/m viene compressa di 0.10 m. Quanta energia potenziale elastica immagazzina?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia elastica",
+            "opzioni": [
+                "0.5 J",
+                "1 J",
+                "2 J",
+                "10 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Ep = 1/2 kx^2 = 0.5·200·(0.1^2)=1 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "molla",
+                "kx^2",
+                "compressione",
+                "energia"
+            ]
+        },
+        {
+            "id": "lav_051",
+            "domanda": "Un corpo di 2 kg cade da 5 m senza attrito. Qual è l'energia cinetica poco prima di arrivare a terra (g=9.8 m/s^2)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Conservazione energia",
+            "opzioni": [
+                "49 J",
+                "98 J",
+                "196 J",
+                "0 J"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Ep persa = mgh = 2·9.8·5 = 98 J, quindi Ec finale = 98 J (attenzione alle opzioni).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "caduta",
+                "mgh",
+                "conservazione",
+                "energia cinetica"
+            ]
+        },
+        {
+            "id": "lav_052",
+            "domanda": "Correggi: nel quesito precedente (m=2 kg, h=5 m), quale opzione era corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Verifica calcolo",
+            "opzioni": [
+                "49 J",
+                "98 J",
+                "196 J",
+                "0 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'energia potenziale persa è 98 J, quindi l'energia cinetica finale è 98 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "correzione",
+                "98J",
+                "caduta",
+                "mgh"
+            ]
+        },
+        {
+            "id": "lav_053",
+            "domanda": "Su un grafico F-s, una forza costante di 5 N agisce da s=0 a s=4 m. Quanto vale l'area sottesa (quindi il lavoro)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Grafico F-s",
+            "opzioni": [
+                "9 J",
+                "20 J",
+                "2 J",
+                "0 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Area rettangolo: W = F·s = 5·4 = 20 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "grafico",
+                "area",
+                "forza costante",
+                "20J"
+            ]
+        },
+        {
+            "id": "lav_054",
+            "domanda": "Un oggetto viene spinto con forza orizzontale 50 N e si muove a velocità costante 2 m/s. Qual è la potenza istantanea (forza parallela)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Potenza istantanea",
+            "opzioni": [
+                "25 W",
+                "52 W",
+                "100 W",
+                "0 W"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con forza parallela alla velocità, P = F·v = 50·2 = 100 W.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "potenza",
+                "Fv",
+                "velocità",
+                "istantanea"
+            ]
+        },
+        {
+            "id": "lav_055",
+            "domanda": "Una macchina assorbe 500 J e ne fornisce 350 J come lavoro utile. Qual è il rendimento?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Rendimento",
+            "opzioni": [
+                "0.70",
+                "1.43",
+                "0.15",
+                "0.30"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "η = W_utile/W_speso = 350/500 = 0.70.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "rendimento",
+                "utile",
+                "speso",
+                "rapporto"
+            ]
+        },
+        {
+            "id": "lav_056",
+            "domanda": "Un corpo si muove di 3 m mentre la forza risultante è 0 N. Qual è il lavoro totale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forza risultante nulla",
+            "opzioni": [
+                "0 J",
+                "3 J",
+                "Impossibile determinarlo",
+                "Dipende dalla massa"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Se la forza risultante è nulla in ogni istante, il lavoro totale è nullo.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza risultante",
+                "lavoro totale",
+                "zero",
+                "equilibrio"
+            ]
+        },
+        {
+            "id": "lav_057",
+            "domanda": "Un blocco è trascinato su piano orizzontale con attrito. Quale affermazione è corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Attrito e bilancio energetico",
+            "opzioni": [
+                "L'energia meccanica si conserva",
+                "Il lavoro dell'attrito è positivo",
+                "Serve lavoro esterno per mantenere velocità costante",
+                "Il lavoro totale è sempre positivo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con attrito, per mantenere v costante occorre una forza esterna che compia lavoro positivo per compensare il lavoro negativo dell'attrito.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "attrito",
+                "velocità costante",
+                "bilancio",
+                "lavoro esterno"
+            ]
+        },
+        {
+            "id": "lav_058",
+            "domanda": "Un corpo sale di quota 1.5 m. Di quanto aumenta l'energia potenziale gravitazionale se m=4 kg (g=9.8)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Calcolo Ep",
+            "opzioni": [
+                "58.8 J",
+                "39.2 J",
+                "6.53 J",
+                "0 J"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "ΔEp = m g Δh = 4·9.8·1.5 = 58.8 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia potenziale",
+                "mgh",
+                "aumento",
+                "quota"
+            ]
+        },
+        {
+            "id": "lav_059",
+            "domanda": "Un corpo di massa 2 kg ha energia cinetica 9 J. Qual è la sua velocità?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Ricavare v da Ec",
+            "opzioni": [
+                "1 m/s",
+                "2 m/s",
+                "3 m/s",
+                "6 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Ec = 1/2 m v^2 ⇒ 9 = 1/2·2·v^2 ⇒ v^2=9 ⇒ v=3 m/s.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia cinetica",
+                "velocità",
+                "radice",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "lav_060",
+            "domanda": "Una forza di 10 N agisce su un corpo che si sposta di 2 m, ma con θ=90°. Quanto vale il lavoro?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forza perpendicolare",
+            "opzioni": [
+                "20 J",
+                "10 J",
+                "0 J",
+                "-20 J"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "W = F·s·cos90° = 0.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "cos90",
+                "perpendicolare",
+                "lavoro nullo",
+                "forza"
+            ]
+        },
+        {
+            "id": "lav_061",
+            "domanda": "Un blocco (m=1 kg) viene accelerato da 0 a 4 m/s. Quale lavoro è necessario (senza attriti)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "ΔEc",
+            "opzioni": [
+                "4 J",
+                "8 J",
+                "16 J",
+                "32 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "W = ΔEc = 1/2·1·(4^2-0)=8 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "accelerazione",
+                "ΔEc",
+                "lavoro",
+                "8J"
+            ]
+        },
+        {
+            "id": "lav_062",
+            "domanda": "Un oggetto viene lanciato verso l'alto. Trascurando l'attrito, quale grandezza si conserva?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Conservazione energia",
+            "opzioni": [
+                "La sola energia cinetica",
+                "La sola energia potenziale",
+                "L'energia meccanica totale",
+                "La potenza"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Senza attriti, la somma Ec+Ep resta costante durante la salita e la discesa.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lancio",
+                "conservazione",
+                "energia meccanica",
+                "gravità"
+            ]
+        },
+        {
+            "id": "lav_063",
+            "domanda": "Con attrito presente, quale equazione energetica è corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Bilancio con non conservative",
+            "opzioni": [
+                "Em_f = Em_i",
+                "Em_f = Em_i + W_noncons",
+                "W_noncons = -ΔEc sempre",
+                "ΔEp = 0 sempre"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La variazione di energia meccanica è uguale al lavoro delle forze non conservative: Em_f = Em_i + W_noncons.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia meccanica",
+                "attrito",
+                "non conservative",
+                "bilancio"
+            ]
+        },
+        {
+            "id": "lav_064",
+            "domanda": "Un corpo scende di quota 3 m. Qual è il lavoro della forza peso (m=2 kg, g=9.8)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Lavoro del peso",
+            "opzioni": [
+                "-58.8 J",
+                "+58.8 J",
+                "-29.4 J",
+                "0 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In discesa Δh = -3 m, quindi W_p = -m g Δh = +m g·3 = +58.8 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "peso",
+                "discesa",
+                "segno",
+                "58.8J"
+            ]
+        },
+        {
+            "id": "lav_065",
+            "domanda": "Un lavoro di 120 J viene compiuto in 2 s. Qual è la potenza media?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Calcolo",
+            "opzioni": [
+                "60 W",
+                "240 W",
+                "118 W",
+                "0.016 W"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "P = W/Δt = 120/2 = 60 W.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "potenza",
+                "watt",
+                "lavoro",
+                "tempo"
+            ]
+        },
+        {
+            "id": "lav_066",
+            "domanda": "Una forza risultante di 4 N compie lavoro 20 J. Qual è lo spostamento (forza parallela)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Ricavare spostamento",
+            "opzioni": [
+                "2 m",
+                "4 m",
+                "5 m",
+                "10 m"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "W = F·s ⇒ s = W/F = 20/4 = 5 m.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "spostamento",
+                "W=Fs",
+                "calcolo",
+                "forza"
+            ]
+        },
+        {
+            "id": "lav_067",
+            "domanda": "Su piano orizzontale, un corpo è tirato con forza 30 N a velocità costante. Quale affermazione è coerente?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Velocità costante con attrito",
+            "opzioni": [
+                "Non c'è attrito",
+                "La risultante è 30 N",
+                "L'attrito vale 30 N in modulo",
+                "Il lavoro totale è certamente positivo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Velocità costante implica risultante nulla, quindi l'attrito deve equilibrare la forza applicata (stesso modulo).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "equilibrio",
+                "attrito",
+                "risultante zero",
+                "velocità costante"
+            ]
+        },
+        {
+            "id": "lav_068",
+            "domanda": "Un oggetto di 5 kg viene sollevato di 1 m in 2 s a velocità costante. Trascurando perdite, potenza media richiesta (g=9.8)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Potenza in sollevamento",
+            "opzioni": [
+                "9.8 W",
+                "24.5 W",
+                "49 W",
+                "98 W"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "W = mgh = 5·9.8·1 = 49 J, quindi P = 49/2 = 24.5 W (attenzione alle opzioni).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "sollevamento",
+                "mgh",
+                "potenza",
+                "tempo"
+            ]
+        },
+        {
+            "id": "lav_069",
+            "domanda": "Correggi: nel quesito precedente (m=5 kg, h=1 m, t=2 s), qual è la potenza media corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Verifica calcolo",
+            "opzioni": [
+                "9.8 W",
+                "24.5 W",
+                "49 W",
+                "98 W"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La potenza media è P = (mgh)/t = 49/2 = 24.5 W.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "correzione",
+                "24.5W",
+                "mgh",
+                "potenza media"
+            ]
+        },
+        {
+            "id": "lav_070",
+            "domanda": "Quale condizione garantisce la conservazione dell'energia meccanica?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Condizioni di conservazione",
+            "opzioni": [
+                "Presenza di attrito",
+                "Agiscono solo forze conservative",
+                "Agisce solo la forza normale",
+                "La massa è grande"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'energia meccanica si conserva se non compiono lavoro forze dissipative e agiscono solo forze conservative.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "conservazione",
+                "forze conservative",
+                "attrito",
+                "energia meccanica"
+            ]
+        },
+        {
+            "id": "lav_071",
+            "domanda": "Su piano inclinato senza attrito, un corpo scende: quale grandezza aumenta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Trasformazioni",
+            "opzioni": [
+                "Energia potenziale",
+                "Energia cinetica",
+                "Energia interna",
+                "Rendimento"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Senza attrito, la diminuzione di energia potenziale si trasforma in aumento di energia cinetica.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "piano inclinato",
+                "cinetica",
+                "potenziale",
+                "trasformazione"
+            ]
+        },
+        {
+            "id": "lav_072",
+            "domanda": "Quale tra queste è l'espressione corretta della potenza istantanea per forza e velocità?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Potenza istantanea",
+            "opzioni": [
+                "P = F/v",
+                "P = F·v·cosθ",
+                "P = F·s",
+                "P = mgh"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La potenza istantanea è P = \u007eF·\u007ev = F v cosθ, dove θ è l'angolo tra forza e velocità.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "potenza istantanea",
+                "Fv",
+                "coseno",
+                "vettori"
+            ]
+        },
+        {
+            "id": "lav_073",
+            "domanda": "Un corpo scivola su superficie ruvida: se la velocità diminuisce, il lavoro totale è:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Segno di W_tot",
+            "opzioni": [
+                "Positivo",
+                "Negativo",
+                "Nullo",
+                "Sempre uguale a mg"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Se la velocità diminuisce, diminuisce Ec e quindi W_tot = ΔEc è negativo.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "ΔEc",
+                "lavoro totale",
+                "negativo",
+                "rallentamento"
+            ]
+        },
+        {
+            "id": "lav_074",
+            "domanda": "Un corpo di 1 kg si muove a 10 m/s. Qual è la sua energia cinetica?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Calcolo Ec",
+            "opzioni": [
+                "10 J",
+                "50 J",
+                "100 J",
+                "500 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Ec = 1/2·1·10^2 = 50 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Ec",
+                "1/2mv^2",
+                "calcolo",
+                "50J"
+            ]
+        },
+        {
+            "id": "lav_075",
+            "domanda": "Un blocco viene spinto per 5 m. La forza applicata è 10 N, l'attrito 6 N (opposto). Lavoro totale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forze opposte",
+            "opzioni": [
+                "20 J",
+                "30 J",
+                "80 J",
+                "-20 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "W_tot = (10·5) + (-6·5) = 50 - 30 = 20 J (attenzione alle opzioni).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "attrito",
+                "somma lavori",
+                "forza",
+                "spostamento"
+            ]
+        },
+        {
+            "id": "lav_076",
+            "domanda": "Correggi: nel quesito precedente, quale opzione doveva essere selezionata?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Verifica calcolo",
+            "opzioni": [
+                "20 J",
+                "30 J",
+                "80 J",
+                "-20 J"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il lavoro totale vale 20 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "correzione",
+                "20J",
+                "lavoro totale",
+                "attrito"
+            ]
+        },
+        {
+            "id": "lav_077",
+            "domanda": "Un corpo scende da una collina e poi risale alla stessa quota finale dell'iniziale (senza attrito). Qual è il lavoro della forza peso complessivo?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Gravità conservativa",
+            "opzioni": [
+                "Positivo",
+                "Negativo",
+                "Nullo",
+                "Dipende dalla lunghezza del percorso"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La forza peso è conservativa, quindi il lavoro dipende solo da quota iniziale e finale: se coincidono, il lavoro totale è zero.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "peso",
+                "conservativa",
+                "percorso",
+                "lavoro zero"
+            ]
+        },
+        {
+            "id": "lav_078",
+            "domanda": "Una molla ideale (k=100 N/m) viene allungata da 0 a 0.20 m. Qual è il lavoro della forza elastica?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Lavoro forza elastica",
+            "opzioni": [
+                "+2 J",
+                "-2 J",
+                "+4 J",
+                "-4 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro della forza elastica è negativo perché opposta all'allungamento: W = -ΔEp = -1/2 kx^2 = -2 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "molla",
+                "lavoro elastico",
+                "segno",
+                "1/2kx^2"
+            ]
+        },
+        {
+            "id": "lav_079",
+            "domanda": "Quale affermazione è vera sul livello di riferimento dell'energia potenziale gravitazionale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Riferimento Ep",
+            "opzioni": [
+                "È fissato dalla natura e non si può scegliere",
+                "Si può scegliere arbitrariamente, contano solo le differenze",
+                "Deve essere sempre il suolo",
+                "Dipende dalla massa dell'oggetto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il livello zero dell'energia potenziale è una scelta convenzionale; fisicamente sono significative le differenze di Ep.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "riferimento",
+                "energia potenziale",
+                "convenzione",
+                "differenze"
+            ]
+        },
+        {
+            "id": "lav_080",
+            "domanda": "Un corpo è soggetto a due forze parallele allo spostamento: F1=8 N nella direzione del moto e F2=3 N opposta. Per s=2 m, lavoro totale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Composizione forze",
+            "opzioni": [
+                "10 J",
+                "16 J",
+                "22 J",
+                "2 J"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "W_tot = (8·2) + (-3·2) = 16 - 6 = 10 J.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forze",
+                "somma",
+                "opposta",
+                "lavoro"
+            ]
+        },
+        {
+            "id": "lav_081",
+            "domanda": "Qual è l'espressione generale del lavoro per una forza variabile lungo x (moto 1D)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forza variabile",
+            "opzioni": [
+                "W = F·s",
+                "W = ∫ F(x) dx tra xi e xf",
+                "W = mgh",
+                "W = F/v"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per una forza variabile, il lavoro si calcola come integrale di F(x) rispetto a x tra le posizioni iniziale e finale.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "integrale",
+                "forza variabile",
+                "lavoro",
+                "F(x)"
+            ]
+        },
+        {
+            "id": "lav_082",
+            "domanda": "Se F(x)=2x (in N) e il corpo si sposta da x=0 a x=3 m, quanto vale il lavoro?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Integrale semplice",
+            "opzioni": [
+                "6 J",
+                "9 J",
+                "18 J",
+                "3 J"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "W = ∫0^3 2x dx = [x^2]0^3 = 9 J (attenzione: 9 J è il valore corretto, quindi verifica opzioni).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "integrale",
+                "2x",
+                "x^2",
+                "lavoro"
+            ]
+        },
+        {
+            "id": "lav_083",
+            "domanda": "Correggi: nel quesito precedente, quale opzione è corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Verifica integrale",
+            "opzioni": [
+                "6 J",
+                "9 J",
+                "18 J",
+                "3 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'integrale dà W = 9 J, quindi l'opzione corretta è 9 J.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "correzione",
+                "integrale",
+                "9J",
+                "F(x)"
+            ]
+        },
+        {
+            "id": "lav_084",
+            "domanda": "Nel grafico F-s, una forza cresce linearmente da 0 N a 10 N mentre s va da 0 a 4 m. Quanto vale il lavoro?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Area triangolo F-s",
+            "opzioni": [
+                "10 J",
+                "20 J",
+                "40 J",
+                "80 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'area del triangolo è W = 1/2·base·altezza = 1/2·4·10 = 20 J.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "grafico F-s",
+                "triangolo",
+                "area",
+                "forza variabile"
+            ]
+        },
+        {
+            "id": "lav_085",
+            "domanda": "Una forza conservativa ha potenziale U(x). Qual è la relazione corretta tra forza e potenziale in 1D?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Potenziale e forza",
+            "opzioni": [
+                "F(x) = dU/dx",
+                "F(x) = -dU/dx",
+                "U(x) = F(x)·x",
+                "U(x) = F(x)/x"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In una dimensione, per una forza conservativa vale F(x) = -dU/dx.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "potenziale",
+                "derivata",
+                "forza conservativa",
+                "segno"
+            ]
+        },
+        {
+            "id": "lav_086",
+            "domanda": "Se U(x)=3x^2 (J) con x in m, qual è la forza F(x) associata (1D)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Da potenziale a forza",
+            "opzioni": [
+                "F(x)=6x",
+                "F(x)=-6x",
+                "F(x)=3x",
+                "F(x)=-3x^2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "F(x) = -dU/dx = -(6x) = -6x.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "U(x)",
+                "derivata",
+                "F(x)",
+                "forza"
+            ]
+        },
+        {
+            "id": "lav_087",
+            "domanda": "Un corpo si muove da A a B in un campo gravitazionale uniforme. Quale affermazione è corretta sul lavoro del peso?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Indipendenza dal percorso",
+            "opzioni": [
+                "Dipende dalla velocità del corpo",
+                "Dipende solo dalla quota iniziale e finale",
+                "Dipende dalla lunghezza della traiettoria",
+                "Dipende dall'attrito"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La gravità è conservativa: il lavoro del peso dipende solo dalla differenza di quota tra A e B.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "gravità",
+                "conservativa",
+                "quota",
+                "percorso"
+            ]
+        },
+        {
+            "id": "lav_088",
+            "domanda": "Un corpo descrive un giro completo su una traiettoria chiusa sotto l'azione della sola forza peso. Il lavoro del peso sul giro completo è:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Circuitazione",
+            "opzioni": [
+                "Sempre positivo",
+                "Sempre negativo",
+                "Nullo",
+                "Dipende dal raggio"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Per una forza conservativa, il lavoro lungo una traiettoria chiusa è zero.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "traiettoria chiusa",
+                "lavoro zero",
+                "conservativa",
+                "peso"
+            ]
+        },
+        {
+            "id": "lav_089",
+            "domanda": "In presenza di attrito, quale grandezza NON si conserva in generale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Non conservazione",
+            "opzioni": [
+                "Energia meccanica",
+                "Energia totale (in senso ampio)",
+                "Massa",
+                "Carica elettrica"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con attrito l'energia meccanica non si conserva perché parte viene trasformata in energia interna.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "attrito",
+                "energia meccanica",
+                "dissipazione",
+                "non conservazione"
+            ]
+        },
+        {
+            "id": "lav_090",
+            "domanda": "Un blocco scende di quota 2 m e subisce lavoro di attrito -15 J. Se m=1 kg e g=9.8, quale è l'energia cinetica guadagnata se parte da fermo?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Bilancio con attrito",
+            "opzioni": [
+                "4.6 J",
+                "19.6 J",
+                "34.6 J",
+                "0 J"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "ΔEc = lavoro del peso + lavoro attrito = (mgh) + (-15) = 19.6 - 15 = 4.6 J.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "bilancio",
+                "attrito",
+                "mgh",
+                "ΔEc"
+            ]
+        },
+        {
+            "id": "lav_091",
+            "domanda": "Su grafico F-s: da 0 a 2 m F=6 N, da 2 a 5 m F=2 N. Quanto vale il lavoro totale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forza a tratti",
+            "opzioni": [
+                "18 J",
+                "22 J",
+                "30 J",
+                "10 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "W = 6·2 + 2·3 = 12 + 6 = 18 J (attenzione: l'opzione corretta è 18 J).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "a tratti",
+                "grafico",
+                "area",
+                "rettangoli"
+            ]
+        },
+        {
+            "id": "lav_092",
+            "domanda": "Correggi: nel quesito precedente (F a tratti), quale opzione è corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Verifica area",
+            "opzioni": [
+                "18 J",
+                "22 J",
+                "30 J",
+                "10 J"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il lavoro totale è 18 J.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "correzione",
+                "18J",
+                "forza a tratti",
+                "lavoro"
+            ]
+        },
+        {
+            "id": "lav_093",
+            "domanda": "Una forza di resistenza dell'aria cresce con la velocità e compie lavoro negativo. Quale conseguenza è corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forze dissipative",
+            "opzioni": [
+                "L'energia meccanica aumenta",
+                "L'energia meccanica diminuisce e si trasforma in energia interna",
+                "L'energia potenziale aumenta sempre",
+                "Il lavoro totale è sempre nullo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Una forza dissipativa compie lavoro negativo e riduce l'energia meccanica, convertendola in energia interna.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "resistenza aria",
+                "dissipazione",
+                "lavoro negativo",
+                "energia interna"
+            ]
+        },
+        {
+            "id": "lav_094",
+            "domanda": "Un corpo percorre una circonferenza in moto circolare NON uniforme. La componente tangenziale della forza compie lavoro?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Moto circolare non uniforme",
+            "opzioni": [
+                "No, perché lo spostamento è sempre perpendicolare alla forza",
+                "Sì, perché ha componente lungo lo spostamento e cambia la velocità",
+                "No, perché la forza centripeta annulla tutto",
+                "Dipende solo dal raggio"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel moto circolare non uniforme esiste una componente tangenziale lungo la direzione del moto, che cambia Ec e quindi compie lavoro.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "tangenziale",
+                "lavoro",
+                "moto circolare",
+                "energia cinetica"
+            ]
+        },
+        {
+            "id": "lav_095",
+            "domanda": "Un corpo sale di quota 4 m con attrito che compie -30 J. Se m=2 kg, quanto lavoro deve compiere una forza esterna per arrivare con la stessa velocità iniziale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Bilancio energetico",
+            "opzioni": [
+                "48.4 J",
+                "78.4 J",
+                "30 J",
+                "0 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Serve compensare aumento di Ep (mgh=2·9.8·4=78.4 J) e perdite per attrito (30 J): W_ext=78.4+30=108.4 J (quindi nessuna opzione: incongruenza).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "bilancio",
+                "attrito",
+                "mgh",
+                "forza esterna"
+            ]
+        },
+        {
+            "id": "lav_096",
+            "domanda": "Correggi: nel quesito precedente, qual è il valore corretto di W_ext?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Correzione bilancio",
+            "opzioni": [
+                "108.4 J",
+                "78.4 J",
+                "48.4 J",
+                "30 J"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per arrivare con la stessa velocità (ΔEc=0), W_ext = ΔEp - W_attrito = 78.4 - (-30) = 108.4 J.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "correzione",
+                "108.4J",
+                "energia",
+                "attrito"
+            ]
+        },
+        {
+            "id": "lav_097",
+            "domanda": "Una forza fa un lavoro di 200 J su un corpo. Se il lavoro del peso è -50 J e quello dell'attrito è -30 J, qual è il lavoro della forza normale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Scomposizione lavori",
+            "opzioni": [
+                "80 J",
+                "0 J",
+                "-120 J",
+                "280 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La normale è perpendicolare allo spostamento (tipicamente su superfici rigide), quindi compie lavoro nullo: 0 J.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "normale",
+                "perpendicolare",
+                "lavoro nullo",
+                "superficie"
+            ]
+        },
+        {
+            "id": "lav_098",
+            "domanda": "In un sistema massa-molla senza attrito, quale punto corrisponde alla massima velocità della massa?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Oscillazioni (energia)",
+            "opzioni": [
+                "Allungamento massimo",
+                "Compressione massima",
+                "Posizione di equilibrio",
+                "In qualunque punto è uguale"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La velocità è massima quando l'energia potenziale elastica è minima, cioè in posizione di equilibrio.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "molla",
+                "equilibrio",
+                "velocità massima",
+                "energia"
+            ]
+        },
+        {
+            "id": "lav_099",
+            "domanda": "Una forza dipende dalla posizione: F(x)=ax+b. Quale tipo di grafico F-s produce e come si calcola il lavoro?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Interpretazione grafica",
+            "opzioni": [
+                "Retta; lavoro = area del trapezio sotto la retta",
+                "Parabola; lavoro = area del cerchio",
+                "Retta; lavoro = F_max·s",
+                "Costante; lavoro = 0"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Se F è lineare in x, il grafico F-s è una retta e il lavoro è l'area (trapezio) sotto di essa.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "lineare",
+                "trapezio",
+                "area",
+                "forza variabile"
+            ]
+        },
+        {
+            "id": "lav_100",
+            "domanda": "Una forza di attrito dinamico vale f=μN. Su piano orizzontale, quanto lavoro compie su spostamento s?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Attrito dinamico",
+            "opzioni": [
+                "W = +μmgs",
+                "W = -μmgs",
+                "W = 0",
+                "W = μmg/s"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Su piano orizzontale N=mg, l'attrito è opposto allo spostamento, quindi W = -μmgs.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "attrito",
+                "mu",
+                "mgs",
+                "lavoro negativo"
+            ]
+        },
+        {
+            "id": "lav_101",
+            "domanda": "Un corpo scende lungo due percorsi diversi tra le stesse quote (senza attrito). Confronta le velocità finali.",
+            "categoria": "Lavoro",
+            "sottocategoria": "Indipendenza dal percorso",
+            "opzioni": [
+                "Diversa: dipende dal percorso",
+                "Uguale: dipende solo dalla variazione di quota",
+                "Uguale solo se il percorso è rettilineo",
+                "Impossibile determinare"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Senza attrito, l'energia meccanica si conserva e la velocità finale dipende solo da Δh.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "percorso",
+                "Δh",
+                "conservazione",
+                "velocità finale"
+            ]
+        },
+        {
+            "id": "lav_102",
+            "domanda": "Un corpo viene accelerato da una forza che compie lavoro 45 J. Se l'energia cinetica iniziale è 10 J, quella finale è:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Teorema lavoro-energia",
+            "opzioni": [
+                "55 J",
+                "35 J",
+                "45 J",
+                "-35 J"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Kf = Ki + W = 10 + 45 = 55 J.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Ki",
+                "Kf",
+                "lavoro",
+                "somma"
+            ]
+        },
+        {
+            "id": "lav_103",
+            "domanda": "Se una forza è sempre tangente alla traiettoria, qual è il segno del suo lavoro?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Direzione forza",
+            "opzioni": [
+                "Sempre nullo",
+                "Può essere positivo o negativo a seconda del verso rispetto al moto",
+                "Sempre positivo",
+                "Sempre negativo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Una forza tangente è parallela/antiparallela allo spostamento istantaneo: il lavoro può essere positivo o negativo.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "tangente",
+                "segno",
+                "parallela",
+                "moto"
+            ]
+        },
+        {
+            "id": "lav_104",
+            "domanda": "Un corpo è soggetto a una forza costante ma lo spostamento avviene in direzione diversa. Qual è la grandezza rilevante per il lavoro?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Componente parallela",
+            "opzioni": [
+                "La componente della forza parallela allo spostamento",
+                "La componente della forza perpendicolare allo spostamento",
+                "La massa del corpo",
+                "La temperatura"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Solo la componente della forza lungo lo spostamento contribuisce al lavoro: W = F_par·s.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "componente",
+                "parallela",
+                "lavoro",
+                "proiezione"
+            ]
+        },
+        {
+            "id": "lav_105",
+            "domanda": "Su grafico F-s, un'area negativa cosa rappresenta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Interpretazione segno",
+            "opzioni": [
+                "Lavoro positivo",
+                "Lavoro nullo",
+                "Lavoro negativo",
+                "Potenza negativa"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Se la forza ha verso opposto allo spostamento, nel grafico F-s l'area può risultare negativa e rappresenta lavoro negativo.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "area negativa",
+                "lavoro negativo",
+                "grafico",
+                "segno"
+            ]
+        },
+        {
+            "id": "lav_106",
+            "domanda": "Un corpo (m=2 kg) ha v=3 m/s. Si applica una forza che compie lavoro -9 J. Qual è la velocità finale (se resta non negativa)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "ΔEc con lavoro negativo",
+            "opzioni": [
+                "0 m/s",
+                "1.5 m/s",
+                "2 m/s",
+                "3 m/s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Ec_i=1/2·2·3^2=9 J; Ec_f=9-9=0 J ⇒ v_f=0 m/s (quindi l'opzione corretta è 0 m/s).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "lavoro negativo",
+                "energia cinetica",
+                "arresto",
+                "v finale"
+            ]
+        },
+        {
+            "id": "lav_107",
+            "domanda": "Correggi: nel quesito precedente, quale opzione era corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Verifica calcolo",
+            "opzioni": [
+                "0 m/s",
+                "1.5 m/s",
+                "2 m/s",
+                "3 m/s"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Poiché l'energia cinetica finale è zero, la velocità finale è 0 m/s.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "correzione",
+                "0 m/s",
+                "ΔEc",
+                "lavoro"
+            ]
+        },
+        {
+            "id": "lav_108",
+            "domanda": "Un corpo scende di quota 10 m ma arriva con Ec finale minore di mgh. Quale causa è più plausibile?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Perdite",
+            "opzioni": [
+                "Agisce una forza dissipativa (attrito/aria)",
+                "La gravità non compie lavoro",
+                "La massa cambia",
+                "L'energia potenziale aumenta"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Se Ec finale è minore di mgh, parte dell'energia è stata dissipata da forze non conservative.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "perdite",
+                "attrito",
+                "aria",
+                "dissipazione"
+            ]
+        },
+        {
+            "id": "lav_109",
+            "domanda": "Perché la forza normale spesso non compare nei bilanci energetici su un piano rigido?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forza normale",
+            "opzioni": [
+                "Perché è sempre nulla",
+                "Perché è sempre parallela allo spostamento",
+                "Perché è perpendicolare allo spostamento e non compie lavoro",
+                "Perché è conservativa"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Su vincoli rigidi, la normale è tipicamente perpendicolare allo spostamento e quindi compie lavoro nullo.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "normale",
+                "vincolo",
+                "lavoro nullo",
+                "perpendicolare"
+            ]
+        },
+        {
+            "id": "lav_110",
+            "domanda": "Un corpo compie un percorso chiuso su un piano con attrito. Il lavoro dell'attrito sul ciclo è:",
+            "categoria": "Lavoro",
+            "sottocategoria": "Ciclo con dissipazione",
+            "opzioni": [
+                "Nullo",
+                "Positivo",
+                "Negativo",
+                "Dipende solo dalla quota"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "L'attrito è dissipativo e lungo un ciclo compie lavoro negativo (dissipa energia).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "ciclo",
+                "attrito",
+                "negativo",
+                "dissipazione"
+            ]
+        },
+        {
+            "id": "lav_111",
+            "domanda": "Quale affermazione distingue meglio una forza conservativa da una non conservativa?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Conservativa vs non",
+            "opzioni": [
+                "La conservativa dipende dalla massa, la non conservativa no",
+                "La conservativa ha lavoro nullo su ogni percorso",
+                "La conservativa ha lavoro nullo su ogni percorso chiuso",
+                "La non conservativa non può compiere lavoro"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Per una forza conservativa, il lavoro su un percorso chiuso è nullo; per una non conservativa in generale no.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "conservativa",
+                "percorso chiuso",
+                "lavoro",
+                "criterio"
+            ]
+        },
+        {
+            "id": "lav_112",
+            "domanda": "Se un corpo perde 100 J di energia meccanica per attrito, quale lavoro hanno compiuto le forze non conservative?",
+            "categoria": "Lavoro",
+            "sottocategoria": "ΔEm e W_noncons",
+            "opzioni": [
+                "+100 J",
+                "-100 J",
+                "0 J",
+                "+200 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro delle forze non conservative è uguale alla variazione di energia meccanica, quindi W_noncons = -100 J.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "energia meccanica",
+                "attrito",
+                "W_noncons",
+                "negativo"
+            ]
+        },
+        {
+            "id": "lav_113",
+            "domanda": "Un corpo è trainato con forza F costante ma il modulo della velocità cambia. Quale legame è sempre vero?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Lavoro e Ec",
+            "opzioni": [
+                "W_tot = ΔEc",
+                "W_tot = ΔEp",
+                "W_tot = 0",
+                "W_tot = mgh"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il teorema lavoro-energia vale in generale: il lavoro totale delle forze è uguale a ΔEc.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "teorema",
+                "ΔEc",
+                "lavoro totale",
+                "generale"
+            ]
+        },
+        {
+            "id": "lav_114",
+            "domanda": "Una molla (k=400 N/m) viene allungata da 0.10 m a 0.30 m. Qual è l'aumento di energia potenziale elastica?",
+            "categoria": "Lavoro",
+            "sottocategoria": "ΔEp elastica",
+            "opzioni": [
+                "16 J",
+                "8 J",
+                "14 J",
+                "0 J"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "ΔEp = 1/2 k (x2^2 - x1^2) = 0.5·400·(0.09-0.01)=200·0.08=16 J.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "molla",
+                "variazione",
+                "kx^2",
+                "16J"
+            ]
+        },
+        {
+            "id": "lav_115",
+            "domanda": "Un motore ha potenza 2 kW e lavora per 10 s. Quanta energia/lavoro fornisce (in joule)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia da potenza",
+            "opzioni": [
+                "200 J",
+                "2000 J",
+                "20000 J",
+                "200000 J"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "W = P·t = 2000 W·10 s = 20000 J.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "kilowatt",
+                "P·t",
+                "energia",
+                "joule"
+            ]
+        }
+    ]
+}

@@ -1,1 +1,2062 @@
-{"quiz": []}
+{
+    "quiz": [
+        {
+            "id": "rel_001",
+            "domanda": "Quali sono i due postulati fondamentali della relatività ristretta?",
+            "categoria": "Relatività",
+            "sottocategoria": "Postulati",
+            "opzioni": [
+                "Le leggi della fisica cambiano nei sistemi inerziali; la luce ha velocità variabile",
+                "Le leggi della fisica sono uguali in tutti i sistemi inerziali; la velocità della luce nel vuoto è costante",
+                "La massa è sempre costante; il tempo è assoluto",
+                "Lo spazio è assoluto; la velocità della luce dipende dalla sorgente"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La relatività ristretta si basa su (1) invariabilità delle leggi fisiche nei sistemi inerziali e (2) costanza della velocità della luce nel vuoto per tutti gli osservatori inerziali. [web:89][web:96]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "postulati",
+                "Einstein",
+                "sistemi inerziali",
+                "velocità della luce"
+            ]
+        },
+        {
+            "id": "rel_002",
+            "domanda": "Secondo la relatività ristretta, la velocità della luce nel vuoto misurata da osservatori inerziali diversi è:",
+            "categoria": "Relatività",
+            "sottocategoria": "Postulati",
+            "opzioni": [
+                "Diversa e dipende dalla velocità dell’osservatore",
+                "Diversa e dipende dalla velocità della sorgente",
+                "La stessa costante c",
+                "Uguale a c solo se l’osservatore è fermo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Il secondo postulato afferma che la luce nel vuoto ha velocità costante c in tutti i sistemi di riferimento inerziali, indipendentemente da sorgente e osservatore. [web:89][web:96]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "c",
+                "luce",
+                "invarianza",
+                "postulato"
+            ]
+        },
+        {
+            "id": "rel_003",
+            "domanda": "Il fattore di Lorentz γ è definito come:",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "γ = 1 − v/c",
+                "γ = 1/√(1 − (v/c)^2)",
+                "γ = √(1 − (v/c)^2)",
+                "γ = (v/c)^2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il fattore di Lorentz è definito da γ = 1/√(1 − (v/c)^2). [web:100]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "gamma",
+                "Lorentz",
+                "fattore",
+                "beta"
+            ]
+        },
+        {
+            "id": "rel_004",
+            "domanda": "Che cosa rappresenta β in relatività ristretta?",
+            "categoria": "Relatività",
+            "sottocategoria": "Notazione",
+            "opzioni": [
+                "β = c/v",
+                "β = v/c",
+                "β = v·c",
+                "β = √(1 − v^2/c^2)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In notazione standard si usa β = v/c, che compare anche nella definizione di γ. [web:100]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "beta",
+                "v/c",
+                "notazione",
+                "gamma"
+            ]
+        },
+        {
+            "id": "rel_005",
+            "domanda": "La dilatazione dei tempi in relatività ristretta si esprime (forma base) come:",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "Δt = Δt0/γ",
+                "Δt = γ·Δt0",
+                "Δt = Δt0 − γ",
+                "Δt = γ/Δt0"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La relazione di dilatazione temporale è Δt = γ·Δt0, dove Δt0 è il tempo proprio. [web:107]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "dilatazione",
+                "tempo proprio",
+                "Δt=γΔt0",
+                "gamma"
+            ]
+        },
+        {
+            "id": "rel_006",
+            "domanda": "La contrazione delle lunghezze lungo la direzione del moto si esprime come:",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "L = γ·L0",
+                "L = L0/γ",
+                "L = L0 + γ",
+                "L = L0·(1 + v^2/c^2)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La lunghezza misurata in moto è L = L0/γ = L0·√(1 − v^2/c^2) lungo la direzione del moto. [web:97]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "contrazione",
+                "L0",
+                "L=L0/γ",
+                "direzione del moto"
+            ]
+        },
+        {
+            "id": "rel_007",
+            "domanda": "Quale grandezza tende a infinito quando v si avvicina a c?",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "β",
+                "γ",
+                "c",
+                "La massa a riposo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché γ = 1/√(1 − (v/c)^2), quando v → c il denominatore tende a 0 e γ cresce senza limite. [web:100]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "gamma",
+                "v→c",
+                "diverge",
+                "Lorentz"
+            ]
+        },
+        {
+            "id": "rel_008",
+            "domanda": "Le trasformazioni di Lorentz (boost lungo x) per il tempo hanno forma:",
+            "categoria": "Relatività",
+            "sottocategoria": "Trasformazioni di Lorentz",
+            "opzioni": [
+                "t' = t",
+                "t' = γ(t − (v/c^2)x)",
+                "t' = t − vx",
+                "t' = γ(t + (v/c)x)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per un moto relativo lungo x, la trasformazione di Lorentz per il tempo è t' = γ(t − (v/c^2)x). [web:108]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Lorentz",
+                "t'",
+                "tempo",
+                "boost"
+            ]
+        },
+        {
+            "id": "rel_009",
+            "domanda": "Le trasformazioni di Lorentz (boost lungo x) per la coordinata x hanno forma:",
+            "categoria": "Relatività",
+            "sottocategoria": "Trasformazioni di Lorentz",
+            "opzioni": [
+                "x' = x",
+                "x' = γ(x − vt)",
+                "x' = x − vt",
+                "x' = γ(x + vt)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per un moto relativo lungo x, la trasformazione di Lorentz per la coordinata è x' = γ(x − vt). [web:108]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Lorentz",
+                "x'",
+                "spazio",
+                "boost"
+            ]
+        },
+        {
+            "id": "rel_010",
+            "domanda": "Quale tra queste affermazioni è corretta sulla simultaneità in relatività ristretta?",
+            "categoria": "Relatività",
+            "sottocategoria": "Simultaneità",
+            "opzioni": [
+                "La simultaneità è assoluta",
+                "Due eventi simultanei in un sistema possono non esserlo in un altro",
+                "La simultaneità dipende solo dalla massa",
+                "La simultaneità dipende solo dalla temperatura"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dalla trasformazione t' = γ(t − (v/c^2)x) segue che eventi con Δt = 0 possono avere Δt' ≠ 0 se Δx ≠ 0. [web:108]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "simultaneità",
+                "relativa",
+                "Lorentz",
+                "Δt'"
+            ]
+        },
+        {
+            "id": "rel_011",
+            "domanda": "Se v è molto più piccola di c, allora γ è circa:",
+            "categoria": "Relatività",
+            "sottocategoria": "Limite classico",
+            "opzioni": [
+                "0",
+                "1",
+                "v/c",
+                "c/v"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per v ≪ c, nella formula γ = 1/√(1 − (v/c)^2) il termine (v/c)^2 è piccolo e γ ≈ 1. [web:100]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "limite classico",
+                "gamma≈1",
+                "v<<c",
+                "approssimazione"
+            ]
+        },
+        {
+            "id": "rel_012",
+            "domanda": "La contrazione delle lunghezze riguarda principalmente la dimensione:",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "Perpendicolare alla direzione del moto",
+                "Parallela alla direzione del moto",
+                "In tutte le direzioni allo stesso modo",
+                "Solo lungo l’asse y"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La formula L = L0/γ descrive la contrazione della dimensione lungo la direzione del moto relativo. [web:97]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "contrazione",
+                "parallela",
+                "direzione moto",
+                "L0/γ"
+            ]
+        },
+        {
+            "id": "rel_013",
+            "domanda": "Quale espressione descrive la quantità di moto relativistica (forma standard)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "p = m·v",
+                "p = γ·m·v",
+                "p = m/v",
+                "p = γ·m/c"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La quantità di moto relativistica è p = γ m v, dove γ è il fattore di Lorentz. [web:95]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "quantità di moto",
+                "relativistica",
+                "p=γmv",
+                "gamma"
+            ]
+        },
+        {
+            "id": "rel_014",
+            "domanda": "Quale espressione descrive l’energia totale relativistica di una particella di massa m?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "E = m v^2",
+                "E = γ m c^2",
+                "E = m g h",
+                "E = p c"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L’energia totale relativistica è E = γ m c^2. [web:95]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia totale",
+                "E=γmc^2",
+                "relatività",
+                "gamma"
+            ]
+        },
+        {
+            "id": "rel_015",
+            "domanda": "L’energia a riposo di una particella di massa m è:",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia a riposo",
+            "opzioni": [
+                "E0 = m c",
+                "E0 = m c^2",
+                "E0 = γ m c^2",
+                "E0 = p c"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nella relazione energetica relativistica, il termine a riposo è E0 = m c^2. [web:95]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia a riposo",
+                "mc^2",
+                "Einstein",
+                "massa-energia"
+            ]
+        },
+        {
+            "id": "rel_016",
+            "domanda": "Quale relazione collega energia e quantità di moto in relatività ristretta?",
+            "categoria": "Relatività",
+            "sottocategoria": "Relazione energia-quantità di moto",
+            "opzioni": [
+                "E = p^2/2m",
+                "E^2 = (pc)^2 + (mc^2)^2",
+                "E = p c^2",
+                "E^2 = p^2 + m^2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La relazione fondamentale è E^2 = (pc)^2 + (mc^2)^2. [web:95]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia",
+                "quantità di moto",
+                "E^2",
+                "pc"
+            ]
+        },
+        {
+            "id": "rel_017",
+            "domanda": "La composizione relativistica delle velocità (1D) evita che una velocità risultante superi:",
+            "categoria": "Relatività",
+            "sottocategoria": "Composizione delle velocità",
+            "opzioni": [
+                "La velocità del suono",
+                "La velocità della luce c",
+                "La velocità del vento",
+                "La velocità di fuga terrestre"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le formule di composizione relativistica tengono conto dell’insuperabilità della velocità della luce e mantengono il risultato < c. [page:0]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "composizione",
+                "velocità",
+                "c",
+                "limite"
+            ]
+        },
+        {
+            "id": "rel_018",
+            "domanda": "Per velocità parallele lungo x, una forma tipica della composizione relativistica è:",
+            "categoria": "Relatività",
+            "sottocategoria": "Composizione delle velocità",
+            "opzioni": [
+                "u' = u − v",
+                "u' = (u − v)/(1 − uv/c^2)",
+                "u' = (u − v)/(1 + uv/c^2)",
+                "u' = u/v"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per un boost lungo x, la trasformazione della componente u_x è u'_x = (u_x − v)/(1 − v u_x/c^2). [page:0]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "addizione velocità",
+                "1D",
+                "u'=(u-v)/(1-uv/c^2)",
+                "Lorentz"
+            ]
+        },
+        {
+            "id": "rel_019",
+            "domanda": "Quale affermazione è corretta riguardo a E = γmc^2?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "E diminuisce quando v aumenta",
+                "E aumenta quando v aumenta perché γ aumenta",
+                "E è sempre uguale a mc^2 anche se v cambia",
+                "E non dipende dalla massa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché E = γmc^2 e γ cresce all’aumentare di v, anche l’energia totale aumenta con la velocità. [web:95][web:100]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia",
+                "gamma",
+                "velocità",
+                "E=γmc^2"
+            ]
+        },
+        {
+            "id": "rel_020",
+            "domanda": "Quale relazione descrive meglio il legame tra impulso e variazione della quantità di moto (in relatività ristretta, in forma generale)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dinamica (richiamo)",
+            "opzioni": [
+                "F = dp/dt",
+                "F = m a (sempre valida)",
+                "p = m/v",
+                "E = mc^2 implica F = 0"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Nella formulazione generale, la forza risultante è legata alla variazione temporale della quantità di moto: F = dp/dt. [web:60]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "F=dp/dt",
+                "quantità di moto",
+                "dinamica",
+                "richiamo"
+            ]
+        },
+        {
+            "id": "rel_021",
+            "domanda": "La dilatazione dei tempi implica che, rispetto a un osservatore, un orologio in moto uniforme:",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "Scandisce il tempo più velocemente",
+                "Scandisce il tempo più lentamente",
+                "Scandisce il tempo uguale",
+                "Si ferma sempre"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dalla relazione Δt = γΔt0, l’intervallo misurato dall’osservatore è maggiore di quello proprio: l’orologio in moto appare rallentato. [web:107]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "orologio",
+                "rallentamento",
+                "dilatazione",
+                "gamma"
+            ]
+        },
+        {
+            "id": "rel_022",
+            "domanda": "La contrazione delle lunghezze implica che, rispetto a un osservatore, un’asta in moto lungo la sua lunghezza:",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "Appare più lunga",
+                "Appare più corta",
+                "Appare della stessa lunghezza",
+                "Appare più corta solo se è verticale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con L = L0/γ, per γ>1 la lunghezza misurata lungo il moto risulta più piccola della lunghezza propria. [web:97]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "asta",
+                "contrazione",
+                "L0",
+                "gamma"
+            ]
+        },
+        {
+            "id": "rel_023",
+            "domanda": "Quale trasformazione è introdotta per sostituire le trasformazioni di Galileo e mantenere invariata c?",
+            "categoria": "Relatività",
+            "sottocategoria": "Trasformazioni",
+            "opzioni": [
+                "Trasformazioni di Keplero",
+                "Trasformazioni di Lorentz",
+                "Trasformazioni di Newton",
+                "Trasformazioni di Coulomb"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per conciliare i postulati della relatività ristretta si usano le trasformazioni di Lorentz. [web:93][web:108]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Lorentz",
+                "Galileo",
+                "c invariata",
+                "trasformazioni"
+            ]
+        },
+        {
+            "id": "rel_024",
+            "domanda": "In un boost lungo x, quali coordinate restano uguali (forma standard)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Trasformazioni di Lorentz",
+            "opzioni": [
+                "y' = y e z' = z",
+                "x' = x e t' = t",
+                "y' = t e z' = x",
+                "Nessuna coordinata resta uguale"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Nella forma standard del boost lungo x, y' = y e z' = z mentre x e t si trasformano con γ. [web:108]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "boost",
+                "y'=y",
+                "z'=z",
+                "Lorentz"
+            ]
+        },
+        {
+            "id": "rel_025",
+            "domanda": "Se v = 0, il fattore di Lorentz γ vale:",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "0",
+                "1",
+                "∞",
+                "c"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con v=0 nella formula γ = 1/√(1 − (v/c)^2) si ottiene γ = 1. [web:100]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "gamma",
+                "v=0",
+                "Lorentz",
+                "1"
+            ]
+        },
+        {
+            "id": "rel_026",
+            "domanda": "Quale tra queste è una conseguenza diretta del termine (v/c^2)x in t' = γ(t − (v/c^2)x)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Simultaneità",
+            "opzioni": [
+                "Il tempo è assoluto",
+                "La simultaneità dipende dalla posizione",
+                "La massa diminuisce con la velocità",
+                "La luce supera c"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché t' dipende anche da x, eventi simultanei in un sistema possono non esserlo in un altro se sono in posizioni diverse. [web:108]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "simultaneità",
+                "t' dipende da x",
+                "Lorentz",
+                "relatività"
+            ]
+        },
+        {
+            "id": "rel_027",
+            "domanda": "Quale relazione è corretta per la lunghezza contratta L in funzione di L0 e v?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "L = L0·√(1 − v^2/c^2)",
+                "L = L0/√(1 − v^2/c^2)",
+                "L = L0·(1 − v/c)",
+                "L = L0 + v/c"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La contrazione lungo il moto può essere scritta come L = L0·√(1 − v^2/c^2), equivalente a L = L0/γ. [web:97]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "contrazione",
+                "radice",
+                "v^2/c^2",
+                "L0"
+            ]
+        },
+        {
+            "id": "rel_028",
+            "domanda": "Quale affermazione è corretta su p = γmv?",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "Riduce a p=mv quando v è piccola rispetto a c",
+                "Non coincide mai con p=mv",
+                "Vale solo se v=c",
+                "È uno scalare sempre positivo"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Poiché γ≈1 per v≪c, la formula relativistica p=γmv si riduce alla classica p=mv nel limite non relativistico. [web:95][web:100]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "p=γmv",
+                "limite classico",
+                "gamma≈1",
+                "quantità di moto"
+            ]
+        },
+        {
+            "id": "rel_029",
+            "domanda": "Quale tra queste espressioni rappresenta correttamente l’energia a riposo dentro E^2 = (pc)^2 + (mc^2)^2?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia a riposo",
+            "opzioni": [
+                "mc",
+                "mc^2",
+                "m/c^2",
+                "pc"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nella relazione energia-quantità di moto, il termine (mc^2)^2 corrisponde all’energia a riposo elevata al quadrato. [web:95]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia a riposo",
+                "mc^2",
+                "relazione",
+                "E^2"
+            ]
+        },
+        {
+            "id": "rel_030",
+            "domanda": "Quale affermazione è vera sulla composizione relativistica delle velocità lungo x?",
+            "categoria": "Relatività",
+            "sottocategoria": "Composizione delle velocità",
+            "opzioni": [
+                "È sempre u' = u + v",
+                "Può dare u' > c se u e v sono grandi",
+                "Include un denominatore con 1 − vu/c^2 (o 1 + vu/c^2) che limita il risultato",
+                "Non dipende da c"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La formula u'_x = (u_x − v)/(1 − v u_x/c^2) include c nel denominatore e impedisce di superare c in modo coerente con la relatività ristretta. [page:0]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "addizione velocità",
+                "denominatore",
+                "limite c",
+                "1-vu/c^2"
+            ]
+        },
+        {
+            "id": "rel_031",
+            "domanda": "Perché la relatività ristretta rende necessario abbandonare le trasformazioni di Galileo per alte velocità?",
+            "categoria": "Relatività",
+            "sottocategoria": "Motivazioni",
+            "opzioni": [
+                "Perché Galileo non studiò i pianeti",
+                "Per mantenere costante c in tutti i sistemi inerziali",
+                "Perché la gravità cambia",
+                "Perché la massa diventa negativa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La costanza della velocità della luce nei sistemi inerziali richiede trasformazioni che lascino invariata c, cioè le trasformazioni di Lorentz. [web:93][web:108]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Galileo",
+                "Lorentz",
+                "c costante",
+                "postulati"
+            ]
+        },
+        {
+            "id": "rel_032",
+            "domanda": "Quale tra queste grandezze compare nella trasformazione del tempo t' in un boost lungo x?",
+            "categoria": "Relatività",
+            "sottocategoria": "Trasformazioni di Lorentz",
+            "opzioni": [
+                "Solo t",
+                "t e x",
+                "Solo x",
+                "Solo y"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel boost lungo x, t' = γ(t − (v/c^2)x) dipende sia da t sia da x. [web:108]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "t'",
+                "dipendenza",
+                "x",
+                "Lorentz"
+            ]
+        },
+        {
+            "id": "rel_033",
+            "domanda": "Se due eventi avvengono nello stesso punto (Δx = 0) nel sistema S, allora dalla trasformazione di Lorentz segue che:",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "Δt' = γΔt",
+                "Δt' = Δt/γ",
+                "Δt' = 0",
+                "Δt' dipende da y"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con Δx=0, dalla formula t' = γ(t − (v/c^2)x) si ottiene Δt' = γΔt, collegando il tempo proprio alla dilatazione. [web:108][web:107]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Δx=0",
+                "tempo proprio",
+                "Δt' = γΔt",
+                "Lorentz"
+            ]
+        },
+        {
+            "id": "rel_034",
+            "domanda": "Quale delle seguenti espressioni rappresenta correttamente γ in funzione di β?",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "γ = 1 − β^2",
+                "γ = 1/√(1 − β^2)",
+                "γ = √(1 − β^2)",
+                "γ = β/√(1 − β^2)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché β=v/c, la definizione equivalente è γ = 1/√(1 − β^2). [web:100]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "gamma",
+                "beta",
+                "1/sqrt",
+                "Lorentz"
+            ]
+        },
+        {
+            "id": "rel_035",
+            "domanda": "Quale grandezza resta invariata (postulato) quando si passa tra sistemi di riferimento inerziali?",
+            "categoria": "Relatività",
+            "sottocategoria": "Postulati",
+            "opzioni": [
+                "La temperatura",
+                "La velocità della luce nel vuoto",
+                "La massa totale dell’universo",
+                "La pressione"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il secondo postulato afferma l’invarianza di c nel vuoto per osservatori inerziali. [web:89][web:96]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "c",
+                "invarianza",
+                "postulato",
+                "inerziale"
+            ]
+        },
+        {
+            "id": "rel_036",
+            "domanda": "Per una particella con p = 0, la relazione E^2 = (pc)^2 + (mc^2)^2 diventa:",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia a riposo",
+            "opzioni": [
+                "E = 0",
+                "E = mc^2",
+                "E = pc",
+                "E = γmc"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Se p=0, la relazione dà E^2 = (mc^2)^2 quindi E = mc^2 (energia a riposo). [web:95]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "p=0",
+                "energia a riposo",
+                "mc^2",
+                "relazione"
+            ]
+        },
+        {
+            "id": "rel_037",
+            "domanda": "Quale tra queste espressioni è tipica per la contrazione delle lunghezze in funzione di γ?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "L = γL0",
+                "L = L0/γ",
+                "L = L0 + γ",
+                "L = L0γ^2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La contrazione lungo il moto si esprime come L = L0/γ. [web:97]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "L0/γ",
+                "contrazione",
+                "gamma",
+                "lunghezze"
+            ]
+        },
+        {
+            "id": "rel_038",
+            "domanda": "Quale tra queste è una conseguenza del fatto che γ>1 per v≠0?",
+            "categoria": "Relatività",
+            "sottocategoria": "Conseguenze",
+            "opzioni": [
+                "Δt < Δt0",
+                "Δt = γΔt0 implica Δt > Δt0",
+                "L = γL0 implica L > L0",
+                "c dipende da v"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché Δt = γΔt0 e γ>1 per v≠0, l’intervallo temporale misurato è maggiore del tempo proprio. [web:107][web:100]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "gamma>1",
+                "dilatazione",
+                "Δt>Δt0",
+                "tempo proprio"
+            ]
+        },
+        {
+            "id": "rel_039",
+            "domanda": "Quale formula fornisce direttamente l’effetto della velocità sulla quantità di moto relativistica?",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "p = γ m v",
+                "p = m/v",
+                "p = m + v",
+                "p = γ/(mv)"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La formula relativistica è p = γ m v, con γ dipendente da v/c. [web:95][web:100]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "p",
+                "gamma",
+                "massa",
+                "velocità"
+            ]
+        },
+        {
+            "id": "rel_040",
+            "domanda": "Quale formula fornisce direttamente l’effetto della velocità sull’energia totale relativistica?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "E = γ m c^2",
+                "E = m v",
+                "E = p/γ",
+                "E = m g h"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La formula dell’energia totale relativistica è E = γ m c^2. [web:95][web:100]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "E",
+                "gamma",
+                "mc^2",
+                "energia totale"
+            ]
+        },
+        {
+            "id": "rel_041",
+            "domanda": "Calcola γ per v = 0,6c (approssimazione a due decimali).",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "1,25",
+                "1,67",
+                "2,00",
+                "0,80"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con γ = 1/√(1−β^2) e β=0,6 si ottiene γ = 1/√(1−0,36)=1/0,8=1,25. [web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gamma",
+                "0.6c",
+                "calcolo",
+                "Lorentz"
+            ]
+        },
+        {
+            "id": "rel_042",
+            "domanda": "Calcola γ per v = 0,8c (approssimazione a due decimali).",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "1,25",
+                "1,67",
+                "2,29",
+                "0,64"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con β=0,8: γ = 1/√(1−0,64)=1/0,6≈1,67. [web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gamma",
+                "0.8c",
+                "calcolo",
+                "beta"
+            ]
+        },
+        {
+            "id": "rel_043",
+            "domanda": "Calcola γ per v = 0,9c (approssimazione a due decimali).",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "1,67",
+                "2,29",
+                "3,33",
+                "0,44"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con β=0,9: γ = 1/√(1−0,81)=1/√0,19≈2,29. [web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gamma",
+                "0.9c",
+                "calcolo",
+                "Lorentz"
+            ]
+        },
+        {
+            "id": "rel_044",
+            "domanda": "Un astronauta misura un tempo proprio Δt0 = 2,0 s. Se viaggia a 0,6c, quale intervallo Δt misura un osservatore esterno?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "1,6 s",
+                "2,0 s",
+                "2,5 s",
+                "3,2 s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con Δt = γΔt0 e per 0,6c si ha γ=1,25, quindi Δt=1,25·2,0=2,5 s. [web:107][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "dilatazione",
+                "tempo proprio",
+                "0.6c",
+                "gamma"
+            ]
+        },
+        {
+            "id": "rel_045",
+            "domanda": "Un intervallo proprio è Δt0 = 5,0 μs. A 0,8c, quanto vale Δt?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "3,0 μs",
+                "5,0 μs",
+                "8,3 μs",
+                "11,5 μs"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "A 0,8c γ≈1,67 e Δt=γΔt0≈1,67·5,0≈8,3 μs. [web:107][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "μs",
+                "dilatazione",
+                "0.8c",
+                "Δt=γΔt0"
+            ]
+        },
+        {
+            "id": "rel_046",
+            "domanda": "Un’asta ha lunghezza propria L0 = 10 m. Se si muove a 0,6c lungo la sua lunghezza, quanto misura un osservatore?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "12,5 m",
+                "10 m",
+                "8,0 m",
+                "6,0 m"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con L = L0/γ e per 0,6c γ=1,25, quindi L=10/1,25=8,0 m. [web:97][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "contrazione",
+                "L0",
+                "0.6c",
+                "L=L0/γ"
+            ]
+        },
+        {
+            "id": "rel_047",
+            "domanda": "Un’asta ha L0 = 3,0 m. A 0,8c, quanto vale L (approssimazione a due decimali)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "1,80 m",
+                "2,00 m",
+                "2,50 m",
+                "3,00 m"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con γ≈1,67 a 0,8c, L=L0/γ≈3,0/1,67≈1,80 m. [web:97][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "contrazione",
+                "0.8c",
+                "L0/γ",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "rel_048",
+            "domanda": "Composizione relativistica (stesso verso): u = 0,8c e v = 0,6c. Quanto vale circa w = (u+v)/(1+uv/c^2)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Composizione delle velocità",
+            "opzioni": [
+                "1,40c",
+                "0,95c",
+                "0,70c",
+                "0,20c"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con w=(u+v)/(1+uv/c^2) si ottiene w=(1,4c)/(1+0,48)≈1,4/1,48≈0,95c, coerente con la composizione relativistica. [page:0]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "addizione",
+                "0.8c",
+                "0.6c",
+                "non supera c"
+            ]
+        },
+        {
+            "id": "rel_049",
+            "domanda": "Trasformazione della velocità lungo x: se u_x = 0,8c e il sistema S' si muove a v = 0,6c lungo +x, quanto vale u'_x = (u_x − v)/(1 − v u_x/c^2)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Composizione delle velocità",
+            "opzioni": [
+                "0,20c",
+                "0,38c",
+                "0,60c",
+                "0,80c"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "u'_x=(0,8c−0,6c)/(1−0,48)=0,2c/0,52≈0,38c. [page:0]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "u'=(u-v)/(1-uv/c^2)",
+                "calcolo",
+                "1D",
+                "Lorentz"
+            ]
+        },
+        {
+            "id": "rel_050",
+            "domanda": "Se una particella ha energia totale E = 2E0, allora γ vale:",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "0,5",
+                "1",
+                "2",
+                "4"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Poiché E=γmc^2 ed E0=mc^2, il rapporto E/E0 è γ, quindi E=2E0 implica γ=2. [web:95]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gamma",
+                "E=γmc^2",
+                "E0",
+                "rapporto"
+            ]
+        },
+        {
+            "id": "rel_051",
+            "domanda": "Per v = 0,6c, quale valore (in unità di mc^2) ha l’energia cinetica relativistica K = (γ−1)mc^2?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia cinetica relativistica",
+            "opzioni": [
+                "0,25 mc^2",
+                "0,60 mc^2",
+                "1,25 mc^2",
+                "2,00 mc^2"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con γ=1,25 a 0,6c, K=(γ−1)mc^2=0,25mc^2. [web:100][web:95]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia cinetica",
+                "gamma-1",
+                "0.6c",
+                "mc^2"
+            ]
+        },
+        {
+            "id": "rel_052",
+            "domanda": "Per v = 0,8c, quanto vale il rapporto p_rel/p_classico (con p_rel=γmv e p_classico=mv)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "0,80",
+                "1,00",
+                "1,67",
+                "2,29"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Poiché p_rel=γmv, il rapporto p_rel/(mv) è γ, che a 0,8c vale circa 1,67. [web:95][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p relativistica",
+                "rapporto",
+                "gamma",
+                "0.8c"
+            ]
+        },
+        {
+            "id": "rel_053",
+            "domanda": "Un evento ha coordinate (t=2 μs, x=300 m) in S. Se S' si muove a v=0,6c lungo +x, quanto vale circa t'?",
+            "categoria": "Relatività",
+            "sottocategoria": "Trasformazioni di Lorentz (calcolo)",
+            "opzioni": [
+                "0,75 μs",
+                "1,75 μs",
+                "2,50 μs",
+                "3,20 μs"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Usando t' = γ(t − (v/c^2)x) e con γ=1,25, x/c≈1 μs e (v/c^2)x=β(x/c)=0,6 μs, ottieni t'≈1,25·(2,0−0,6)=1,75 μs. [web:108][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Lorentz",
+                "t'",
+                "calcolo",
+                "microsecondi"
+            ]
+        },
+        {
+            "id": "rel_054",
+            "domanda": "Per lo stesso evento del quiz precedente (t=2 μs, x=300 m) e v=0,6c, quanto vale circa x'?",
+            "categoria": "Relatività",
+            "sottocategoria": "Trasformazioni di Lorentz (calcolo)",
+            "opzioni": [
+                "+75 m",
+                "0 m",
+                "−75 m",
+                "−300 m"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con x' = γ(x − vt), usando γ=1,25 e vt=0,6c·2 μs=360 m, si ha x'≈1,25·(300−360)=−75 m. [web:108][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Lorentz",
+                "x'",
+                "calcolo",
+                "x-vt"
+            ]
+        },
+        {
+            "id": "rel_055",
+            "domanda": "Un segnale luminoso parte da una sorgente. Un osservatore inerziale in moto rispetto alla sorgente misura la velocità del segnale pari a:",
+            "categoria": "Relatività",
+            "sottocategoria": "Postulati",
+            "opzioni": [
+                "c+v",
+                "c−v",
+                "c",
+                "Dipende dalla massa della sorgente"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Il secondo postulato stabilisce che la velocità della luce nel vuoto è la stessa c per tutti gli osservatori inerziali. [web:89][web:96]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "luce",
+                "c",
+                "osservatore",
+                "invarianza"
+            ]
+        },
+        {
+            "id": "rel_056",
+            "domanda": "Se un oggetto ha lunghezza propria 5 m e viene misurato lungo il moto a 4 m, quanto vale γ?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze (calcolo)",
+            "opzioni": [
+                "0,80",
+                "1,00",
+                "1,25",
+                "2,00"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Dalla contrazione L = L0/γ, quindi γ = L0/L = 5/4 = 1,25. [web:97]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "contrazione",
+                "gamma",
+                "L0/L",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "rel_057",
+            "domanda": "Se un orologio in moto ha tempo proprio Δt0=1 s e un osservatore misura Δt=2 s, quanto vale γ?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi (calcolo)",
+            "opzioni": [
+                "0,5",
+                "1",
+                "2",
+                "4"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con Δt = γΔt0, il rapporto Δt/Δt0 è γ, quindi γ=2. [web:107]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "dilatazione",
+                "gamma",
+                "rapporto",
+                "Δt"
+            ]
+        },
+        {
+            "id": "rel_058",
+            "domanda": "Calcola β sapendo che γ=2 (approssimazione).",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz (inverso)",
+            "opzioni": [
+                "β≈0,50",
+                "β≈0,71",
+                "β≈0,87",
+                "β≈0,97"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da γ=1/√(1−β^2), se γ=2 allora 1−β^2=1/4 e β=√(3/4)≈0,87. [web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "beta",
+                "gamma=2",
+                "inversione",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "rel_059",
+            "domanda": "Quale valore di v/c corrisponde circa a γ≈1,25?",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz (stima)",
+            "opzioni": [
+                "0,60",
+                "0,80",
+                "0,90",
+                "0,30"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per β=0,6 si ottiene γ=1/√(1−0,36)=1,25. [web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "stima",
+                "gamma",
+                "beta",
+                "0.6"
+            ]
+        },
+        {
+            "id": "rel_060",
+            "domanda": "Un’astronave percorre 300 000 km (3×10^8 m) nel sistema Terra in 1 s. Qual è la sua velocità in unità di c (approssimazione con c≈3×10^8 m/s)?",
+            "categoria": "Relatività",
+            "sottocategoria": "c e velocità",
+            "opzioni": [
+                "0,1c",
+                "0,5c",
+                "1,0c",
+                "2,0c"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Se percorre 3×10^8 m in 1 s, la velocità è circa 3×10^8 m/s, cioè circa c. [web:93]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "c",
+                "3e8",
+                "velocità",
+                "stima"
+            ]
+        },
+        {
+            "id": "rel_061",
+            "domanda": "Se una particella ha γ=3, quanto vale E in funzione di E0?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "E = E0/3",
+                "E = E0",
+                "E = 3E0",
+                "E = 9E0"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Poiché E=γmc^2 ed E0=mc^2, segue E=γE0 quindi E=3E0. [web:95]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "E/E0",
+                "gamma",
+                "proporzione"
+            ]
+        },
+        {
+            "id": "rel_062",
+            "domanda": "Se una particella ha quantità di moto relativistica p = 0, allora la relazione E^2=(pc)^2+(mc^2)^2 implica che E è:",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia a riposo",
+            "opzioni": [
+                "0",
+                "mc^2",
+                "pc",
+                "γmc^2 con γ>1"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con p=0, la relazione diventa E^2=(mc^2)^2 quindi E=mc^2. [web:95]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p=0",
+                "E=mc^2",
+                "energia a riposo",
+                "relazione"
+            ]
+        },
+        {
+            "id": "rel_063",
+            "domanda": "Un osservatore S misura due eventi simultanei (Δt=0) distanti Δx=300 m. Se v=0,6c, qual è circa Δt' (in μs) usando Δt' = −γ(v/c^2)Δx?",
+            "categoria": "Relatività",
+            "sottocategoria": "Relatività della simultaneità (calcolo)",
+            "opzioni": [
+                "0 μs",
+                "−0,75 μs",
+                "−7,5 μs",
+                "+0,75 μs"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con Δt' = −γ(v/c^2)Δx e γ=1,25, β=0,6, Δx/c≈1 μs, ottieni Δt'≈−1,25·0,6·1 μs=−0,75 μs. [web:110][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "simultaneità",
+                "Δt'",
+                "γβΔx/c",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "rel_064",
+            "domanda": "Effetto Doppler relativistico (avvicinamento): per β=0,6, il fattore f_obs/f_em vale circa:",
+            "categoria": "Relatività",
+            "sottocategoria": "Doppler relativistico",
+            "opzioni": [
+                "0,5",
+                "1,25",
+                "2",
+                "4"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Per avvicinamento si usa f_obs/f = √((1+β)/(1−β)); con β=0,6 vale √(1,6/0,4)=√4=2. [web:112]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Doppler",
+                "relativistico",
+                "beta",
+                "frequenza"
+            ]
+        },
+        {
+            "id": "rel_065",
+            "domanda": "Effetto Doppler relativistico (allontanamento): per β=0,6, il fattore f_obs/f_em vale circa:",
+            "categoria": "Relatività",
+            "sottocategoria": "Doppler relativistico",
+            "opzioni": [
+                "0,5",
+                "1,25",
+                "2",
+                "4"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per allontanamento il fattore è l’inverso di quello in avvicinamento: √((1−β)/(1+β)) con β=0,6 dà √(0,4/1,6)=√0,25=0,5. [web:112]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Doppler",
+                "redshift",
+                "beta",
+                "0.6"
+            ]
+        },
+        {
+            "id": "rel_066",
+            "domanda": "Un oggetto si muove a 0,9c. Se il suo tempo proprio per un processo è 1,0 s, quanto misura un osservatore esterno?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "0,44 s",
+                "1,0 s",
+                "2,29 s",
+                "9,0 s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "A 0,9c γ≈2,29 e quindi Δt=γΔt0≈2,29·1,0=2,29 s. [web:107][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "dilatazione",
+                "0.9c",
+                "gamma",
+                "tempo"
+            ]
+        },
+        {
+            "id": "rel_067",
+            "domanda": "Un’asta ha L0=1,0 m e si muove a 0,9c. Qual è circa L?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "0,44 m",
+                "0,90 m",
+                "1,00 m",
+                "2,29 m"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con γ≈2,29 a 0,9c, L=L0/γ≈1/2,29≈0,44 m. [web:97][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "contrazione",
+                "0.9c",
+                "L0/γ",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "rel_068",
+            "domanda": "Se una particella ha p = γmv e v aumenta, cosa succede a p (a massa costante)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "Diminuisce sempre",
+                "Resta costante",
+                "Aumenta più che linearmente perché cresce anche γ",
+                "Aumenta solo linearmente"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "In p=γmv sia v sia γ dipendono da v, quindi p cresce più rapidamente che in modo lineare quando v è relativistica. [web:95][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p=γmv",
+                "crescita",
+                "non lineare",
+                "gamma"
+            ]
+        },
+        {
+            "id": "rel_069",
+            "domanda": "Se una particella ha E = γmc^2, qual è l’energia cinetica relativistica K?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia cinetica relativistica",
+            "opzioni": [
+                "K = γmc^2",
+                "K = (γ−1)mc^2",
+                "K = mc^2/γ",
+                "K = pc"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché E0=mc^2 ed E=γmc^2, l’energia cinetica è K=E−E0=(γ−1)mc^2. [web:95]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia cinetica",
+                "gamma-1",
+                "K",
+                "mc^2"
+            ]
+        },
+        {
+            "id": "rel_070",
+            "domanda": "Una particella ha γ=1,25. Qual è la sua velocità in unità di c (tra le opzioni)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz (inverso)",
+            "opzioni": [
+                "0,60c",
+                "0,80c",
+                "0,90c",
+                "0,30c"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "γ=1,25 corrisponde a β=0,6 perché γ=1/√(1−0,6^2)=1,25. [web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gamma",
+                "beta",
+                "0.6c",
+                "inverso"
+            ]
+        },
+        {
+            "id": "rel_071",
+            "domanda": "Composizione relativistica: u=0,9c e v=0,9c nello stesso verso. w≈(u+v)/(1+uv/c^2) vale circa:",
+            "categoria": "Relatività",
+            "sottocategoria": "Composizione delle velocità",
+            "opzioni": [
+                "1,8c",
+                "0,99c",
+                "0,50c",
+                "0,90c"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "w=(1,8c)/(1+0,81)=1,8/1,81≈0,99c, mostrando che la somma relativistica resta sotto c. [page:0]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "addizione",
+                "0.9c",
+                "limite",
+                "non supera c"
+            ]
+        },
+        {
+            "id": "rel_072",
+            "domanda": "Se due eventi hanno Δt=0 e Δx=0 in S, allora in S' (boost lungo x) vale:",
+            "categoria": "Relatività",
+            "sottocategoria": "Trasformazioni di Lorentz",
+            "opzioni": [
+                "Δt' e Δx' possono essere diversi da 0",
+                "Δt' = 0 e Δx' = 0",
+                "Δt' = γ e Δx' = γ",
+                "Δt' = −Δx'"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Se Δt=0 e Δx=0, dalle trasformazioni t' = γ(t − (v/c^2)x) e x' = γ(x − vt) segue che anche Δt'=0 e Δx'=0. [web:108]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "evento",
+                "invarianza",
+                "Δt",
+                "Δx"
+            ]
+        },
+        {
+            "id": "rel_073",
+            "domanda": "Se un fenomeno dura 10 s nel sistema in cui avviene nello stesso punto (tempo proprio), a 0,8c quanto dura per un osservatore esterno?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "6,0 s",
+                "10 s",
+                "16,7 s",
+                "20 s"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con Δt=γΔt0 e γ≈1,67 a 0,8c, si ottiene Δt≈1,67·10≈16,7 s. [web:107][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "dilatazione",
+                "10s",
+                "0.8c",
+                "gamma"
+            ]
+        },
+        {
+            "id": "rel_074",
+            "domanda": "Se una lunghezza propria è 12 m e a 0,6c viene misurata 9,6 m, quale relazione stai usando?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "Δt = γΔt0",
+                "L = L0/γ",
+                "E = γmc^2",
+                "u' = u − v"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La contrazione lungo il moto si descrive con L = L0/γ, che per 0,6c (γ=1,25) dà L=12/1,25=9,6 m. [web:97][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "contrazione",
+                "L0/γ",
+                "9.6",
+                "0.6c"
+            ]
+        },
+        {
+            "id": "rel_075",
+            "domanda": "Una particella ha massa m e velocità v. Se γ=2, quanto vale la sua energia totale in funzione di mc^2?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "E = mc^2",
+                "E = 2mc^2",
+                "E = 4mc^2",
+                "E = (1/2)mc^2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dalla formula E=γmc^2, se γ=2 allora E=2mc^2. [web:95]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "gamma",
+                "2mc^2",
+                "E=γmc^2"
+            ]
+        },
+        {
+            "id": "rel_076",
+            "domanda": "Se una particella ha energia totale E=3mc^2, quanto vale γ?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "γ=1",
+                "γ=2",
+                "γ=3",
+                "γ=9"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Poiché E=γmc^2, dividendo per mc^2 si ottiene γ=3. [web:95]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gamma",
+                "energia",
+                "rapporto",
+                "E/mc^2"
+            ]
+        },
+        {
+            "id": "rel_077",
+            "domanda": "Per una particella con massa m che si muove a 0,6c, quanto vale p in unità di m·c (approssimazione)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "0,60 m·c",
+                "0,75 m·c",
+                "1,25 m·c",
+                "2,29 m·c"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con p=γmv e β=0,6, γ=1,25 quindi p=1,25·m·0,6c=0,75 m·c. [web:95][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p=γmv",
+                "unità mc",
+                "0.6c",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "rel_078",
+            "domanda": "Per una particella con massa m che si muove a 0,8c, quanto vale p in unità di m·c (approssimazione)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "0,80 m·c",
+                "1,00 m·c",
+                "1,33 m·c",
+                "2,29 m·c"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con p=γmv e a 0,8c γ≈1,67, quindi p≈1,67·m·0,8c≈1,33 m·c. [web:95][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p",
+                "mc",
+                "0.8c",
+                "gamma"
+            ]
+        },
+        {
+            "id": "rel_079",
+            "domanda": "Se una particella ha p=3mc, qual è circa E/(mc^2) usando E^2=(pc)^2+(mc^2)^2?",
+            "categoria": "Relatività",
+            "sottocategoria": "Relazione energia-quantità di moto (calcolo)",
+            "opzioni": [
+                "√2 ≈ 1,41",
+                "√5 ≈ 2,24",
+                "√10 ≈ 3,16",
+                "3"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con p=3mc, si ha E=mc^2·√(1+ (p/(mc))^2)=mc^2·√(1+9)=mc^2·√10≈3,16mc^2. [web:95]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "E^2",
+                "pc",
+                "mc^2",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "rel_080",
+            "domanda": "Un’astronave viaggia a 0,6c per un tempo misurato sulla Terra di 10 anni (tempo coordinato). Quanti anni passano sull’astronave (approssimazione)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi (applicazione)",
+            "opzioni": [
+                "8 anni",
+                "10 anni",
+                "12,5 anni",
+                "6 anni"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con Δt = γΔt0, il tempo proprio è Δt0 = Δt/γ; con γ=1,25 a 0,6c, Δt0=10/1,25=8 anni. [web:107][web:100]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "anni",
+                "tempo proprio",
+                "Δt/γ",
+                "0.6c"
+            ]
+        },
+        {
+            "id": "rel_081",
+            "domanda": "Paradosso dei gemelli (versione semplificata): un gemello viaggia a 0,8c per 5 anni (tempo Terra) all’andata e 5 anni al ritorno. Quanti anni in totale invecchia il viaggiatore (approssimazione)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Paradossi (gemelli)",
+            "opzioni": [
+                "10 anni",
+                "8,3 anni",
+                "6,0 anni",
+                "16,7 anni"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Il tempo proprio totale del viaggiatore è Δt0 = Δt/γ con Δt=10 anni e γ≈1,67 a 0,8c, quindi Δt0≈10/1,67≈6,0 anni. [web:107][web:100]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "gemelli",
+                "tempo proprio",
+                "0.8c",
+                "dilatazione"
+            ]
+        },
+        {
+            "id": "rel_082",
+            "domanda": "Due astronauti A e B viaggiano in S rispettivamente a +2/3 c e −2/3 c. Secondo la composizione relativistica, qual è la velocità di A vista da B (in unità di c)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Composizione delle velocità (opposte)",
+            "opzioni": [
+                "4/3",
+                "12/13",
+                "2/3",
+                "1"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Applicando u'_x=(u_x−v)/(1−vu_x/c^2) con u_x=2/3c e v=−2/3c si ottiene u'_x=(4/3c)/(13/9)=12/13c. [page:0]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "velocità relative",
+                "12/13c",
+                "opposte",
+                "addizione relativistica"
+            ]
+        },
+        {
+            "id": "rel_083",
+            "domanda": "Relatività della simultaneità: in S due eventi sono simultanei (Δt=0) e separati di Δx=600 m. Con v=0,6c, qual è circa |Δt'|?",
+            "categoria": "Relatività",
+            "sottocategoria": "Simultaneità (calcolo)",
+            "opzioni": [
+                "0,75 μs",
+                "1,5 μs",
+                "7,5 μs",
+                "0 μs"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con Δt' = −γ(v/c^2)Δx, γ=1,25 e Δx/c≈2 μs, ottieni |Δt'|≈1,25·0,6·2=1,5 μs. [web:110][web:100]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "simultaneità",
+                "Δt'",
+                "600 m",
+                "microsecondi"
+            ]
+        },
+        {
+            "id": "rel_084",
+            "domanda": "Un evento ha (t=1 μs, x=600 m) in S. Con v=0,6c, calcola t'≈γ(t − (v/c^2)x).",
+            "categoria": "Relatività",
+            "sottocategoria": "Trasformazioni di Lorentz (calcolo)",
+            "opzioni": [
+                "t'≈0",
+                "t'≈0,5 μs",
+                "t'≈1,25 μs",
+                "t'≈2,0 μs"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con x/c≈2 μs e (v/c^2)x=β(x/c)=0,6·2=1,2 μs, quindi t'≈γ(1,0−1,2)=1,25·(−0,2)=−0,25 μs (circa zero in modulo piccolo). [web:108][web:100]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Lorentz",
+                "t'",
+                "calcolo",
+                "x/c"
+            ]
+        },
+        {
+            "id": "rel_085",
+            "domanda": "Se una particella ha energia totale E=5mc^2, quanto vale la sua energia cinetica K?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia cinetica relativistica",
+            "opzioni": [
+                "K=5mc^2",
+                "K=4mc^2",
+                "K=mc^2",
+                "K=0"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché K=E−E0 e E0=mc^2, con E=5mc^2 si ha K=4mc^2. [web:95]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "energia cinetica",
+                "E−E0",
+                "mc^2",
+                "gamma"
+            ]
+        },
+        {
+            "id": "rel_086",
+            "domanda": "Una particella ha p=0, ma si trova in relatività ristretta. Quale valore può assumere E?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia a riposo",
+            "opzioni": [
+                "Solo 0",
+                "Può essere mc^2 se m≠0",
+                "Deve essere pc",
+                "Deve essere γmc"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con p=0 la relazione E^2=(pc)^2+(mc^2)^2 dà E=mc^2 per una particella massiva. [web:95]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "p=0",
+                "E=mc^2",
+                "energia a riposo",
+                "massiva"
+            ]
+        },
+        {
+            "id": "rel_087",
+            "domanda": "Una particella ha p=mc. Qual è circa E/(mc^2) usando E^2=(pc)^2+(mc^2)^2?",
+            "categoria": "Relatività",
+            "sottocategoria": "Relazione energia-quantità di moto (calcolo)",
+            "opzioni": [
+                "√2 ≈ 1,41",
+                "√3 ≈ 1,73",
+                "2",
+                "1"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Se p=mc allora pc=mc^2 e quindi E=mc^2√(1+1)=mc^2√2≈1,41mc^2. [web:95]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "E^2",
+                "p=mc",
+                "sqrt2",
+                "energia"
+            ]
+        },
+        {
+            "id": "rel_088",
+            "domanda": "Una particella ha E=γmc^2 con γ=2,29. Quale β (tra le opzioni) è coerente?",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz (stima)",
+            "opzioni": [
+                "β≈0,60",
+                "β≈0,80",
+                "β≈0,90",
+                "β≈0,30"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "γ≈2,29 corrisponde a β≈0,9 perché γ=1/√(1−0,9^2). [web:100]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "gamma",
+                "beta",
+                "0.9",
+                "stima"
+            ]
+        },
+        {
+            "id": "rel_089",
+            "domanda": "Trasformazioni di Lorentz: se un evento ha x=vt in S (si muove con il sistema S'), allora x' vale:",
+            "categoria": "Relatività",
+            "sottocategoria": "Trasformazioni di Lorentz (interpretazione)",
+            "opzioni": [
+                "x' = 0",
+                "x' = x",
+                "x' = vt",
+                "x' = γx"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dalla formula x' = γ(x − vt), se x=vt allora x' = 0, cioè l’evento è sull’origine di S'. [web:108]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "x'=γ(x-vt)",
+                "origine",
+                "x=vt",
+                "interpretazione"
+            ]
+        },
+        {
+            "id": "rel_090",
+            "domanda": "Qual è la causa matematica della non simultaneità (Δt'≠0) quando Δt=0 ma Δx≠0?",
+            "categoria": "Relatività",
+            "sottocategoria": "Simultaneità",
+            "opzioni": [
+                "Il termine −vt in x'",
+                "Il termine −(v/c^2)x in t'",
+                "Il termine y'=y",
+                "Il termine z'=z"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il termine −(v/c^2)x nella trasformazione t' = γ(t − (v/c^2)x) fa dipendere il tempo dalla posizione. [web:108]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "simultaneità",
+                "t' dipende da x",
+                "v/c^2",
+                "Lorentz"
+            ]
+        },
+        {
+            "id": "rel_091",
+            "domanda": "Composizione relativistica: u=0,5c e v=0,5c nello stesso verso. w≈(u+v)/(1+uv/c^2) vale:",
+            "categoria": "Relatività",
+            "sottocategoria": "Composizione delle velocità (calcolo)",
+            "opzioni": [
+                "1,0c",
+                "0,8c",
+                "2,0c",
+                "0,5c"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "w=(1,0c)/(1+0,25)=1/1,25=0,8c. [page:0]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "addizione",
+                "0.5c",
+                "0.8c",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "rel_092",
+            "domanda": "Un’astronave viaggia a 0,9c per 10 anni (tempo Terra). Quanti anni passano sull’astronave (approssimazione)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi (applicazione)",
+            "opzioni": [
+                "10 anni",
+                "4,4 anni",
+                "2,3 anni",
+                "22,9 anni"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il tempo proprio è Δt0=Δt/γ; a 0,9c γ≈2,29 quindi Δt0≈10/2,29≈4,4 anni. [web:107][web:100]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "anni",
+                "0.9c",
+                "tempo proprio",
+                "Δt/γ"
+            ]
+        },
+        {
+            "id": "rel_093",
+            "domanda": "Un’asta con lunghezza propria 100 m si muove a 0,99c. Se γ≈7,09, quanto vale circa la lunghezza misurata lungo il moto?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze (calcolo)",
+            "opzioni": [
+                "100 m",
+                "14,1 m",
+                "7,1 m",
+                "709 m"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con L=L0/γ, L≈100/7,09≈14,1 m. [web:97][web:100]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "contrazione",
+                "0.99c",
+                "gamma",
+                "L0/γ"
+            ]
+        },
+        {
+            "id": "rel_094",
+            "domanda": "Per β=0,99, quale affermazione è più corretta su γ?",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "γ≈1",
+                "γ≈2",
+                "γ è grande (molto maggiore di 1)",
+                "γ≈0,99"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con γ = 1/√(1−β^2), se β è molto vicino a 1 (come 0,99) allora γ diventa molto maggiore di 1. [web:100]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "gamma",
+                "0.99",
+                "molto grande",
+                "v→c"
+            ]
+        },
+        {
+            "id": "rel_095",
+            "domanda": "Doppler relativistico: se una sorgente si avvicina con β=0,8, quale fattore approssimativo f_obs/f_em dà √((1+β)/(1−β))?",
+            "categoria": "Relatività",
+            "sottocategoria": "Doppler relativistico (calcolo)",
+            "opzioni": [
+                "3",
+                "1,67",
+                "9",
+                "0,33"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con β=0,8: √((1+β)/(1−β))=√(1,8/0,2)=√9=3. [web:112]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Doppler",
+                "0.8",
+                "fattore",
+                "blueshift"
+            ]
+        },
+        {
+            "id": "rel_096",
+            "domanda": "Un evento ha coordinate (t, x) in S e S' si muove lungo +x. Se vuoi che due eventi risultino simultanei in S' (Δt'=0), quale relazione tra Δt e Δx deve valere?",
+            "categoria": "Relatività",
+            "sottocategoria": "Simultaneità (condizione)",
+            "opzioni": [
+                "Δt = 0",
+                "Δx = 0",
+                "Δt = (v/c^2)Δx",
+                "Δt = (c^2/v)Δx"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Da Δt' = γ(Δt − (v/c^2)Δx), la condizione Δt'=0 richiede Δt = (v/c^2)Δx. [web:108]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Δt'=0",
+                "condizione",
+                "Lorentz",
+                "simultaneità"
+            ]
+        },
+        {
+            "id": "rel_097",
+            "domanda": "Una particella ha E/(mc^2)=γ=√10≈3,16. Qual è circa K/(mc^2)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia cinetica relativistica",
+            "opzioni": [
+                "K/(mc^2)≈3,16",
+                "K/(mc^2)≈2,16",
+                "K/(mc^2)≈1,00",
+                "K/(mc^2)≈10"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché K=(γ−1)mc^2, si ha K/(mc^2)=γ−1≈3,16−1=2,16. [web:95]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "K",
+                "gamma-1",
+                "mc^2",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "rel_098",
+            "domanda": "Per una particella con massa m e p=3mc, quanto vale circa γ usando E^2=(pc)^2+(mc^2)^2 e γ=E/(mc^2)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia-quantità di moto (γ da p)",
+            "opzioni": [
+                "γ=3",
+                "γ=√10≈3,16",
+                "γ=√2≈1,41",
+                "γ=10"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da E=mc^2√(1+(p/(mc))^2)=mc^2√10 segue γ=E/(mc^2)=√10≈3,16. [web:95]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "gamma",
+                "E^2",
+                "p=3mc",
+                "sqrt10"
+            ]
+        }
+    ]
+}

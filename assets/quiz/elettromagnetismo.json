@@ -1,1 +1,2420 @@
-{"quiz": []}
+{
+  "quiz": [
+    {
+      "id": "em_001",
+      "domanda": "Qual è l’unità di misura della carica elettrica nel SI?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Grandezze e unità",
+      "opzioni": [
+        "Volt (V)",
+        "Coulomb (C)",
+        "Ampere (A)",
+        "Ohm (Ω)"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La carica elettrica si misura in coulomb (C).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "carica",
+        "SI",
+        "coulomb"
+      ]
+    },
+    {
+      "id": "em_002",
+      "domanda": "Quale affermazione descrive meglio il campo elettrico?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Campo elettrico",
+      "opzioni": [
+        "È una forza che agisce solo su masse",
+        "È una grandezza scalare sempre positiva",
+        "È una grandezza vettoriale che indica la forza per unità di carica",
+        "È sempre nullo nel vuoto"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il campo elettrico è definito come forza elettrica per unità di carica di prova positiva.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "campo elettrico",
+        "vettore",
+        "forza",
+        "carica"
+      ]
+    },
+    {
+      "id": "em_003",
+      "domanda": "Due cariche elettriche dello stesso segno si:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Interazione tra cariche",
+      "opzioni": [
+        "Attraggono",
+        "Respingono",
+        "Neutralizzano sempre",
+        "Non interagiscono"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Cariche dello stesso segno esercitano una forza repulsiva.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "cariche",
+        "repulsione",
+        "segno"
+      ]
+    },
+    {
+      "id": "em_004",
+      "domanda": "Le linee di campo elettrico escono da:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Linee di campo",
+      "opzioni": [
+        "Cariche negative",
+        "Cariche positive",
+        "Solo da magneti",
+        "Solo da masse"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per convenzione le linee del campo elettrico escono dalle cariche positive ed entrano nelle negative.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "linee di campo",
+        "positivo",
+        "negativo"
+      ]
+    },
+    {
+      "id": "em_005",
+      "domanda": "Qual è l’unità di misura della differenza di potenziale (tensione) nel SI?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Potenziale elettrico",
+      "opzioni": [
+        "Coulomb (C)",
+        "Volt (V)",
+        "Tesla (T)",
+        "Watt (W)"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La tensione si misura in volt (V).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "tensione",
+        "volt",
+        "potenziale"
+      ]
+    },
+    {
+      "id": "em_006",
+      "domanda": "In un conduttore in equilibrio elettrostatico, il campo elettrico interno è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Conduttori",
+      "opzioni": [
+        "Massimo",
+        "Costante non nullo",
+        "Nullo",
+        "Dipende dalla temperatura"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In equilibrio elettrostatico le cariche libere si redistribuiscono fino ad annullare il campo interno.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conduttore",
+        "equilibrio",
+        "campo nullo"
+      ]
+    },
+    {
+      "id": "em_007",
+      "domanda": "Che cosa misura un amperometro?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Strumenti di misura",
+      "opzioni": [
+        "La tensione",
+        "La corrente",
+        "La resistenza",
+        "La potenza"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L’amperometro misura la corrente elettrica.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "amperometro",
+        "corrente",
+        "misura"
+      ]
+    },
+    {
+      "id": "em_008",
+      "domanda": "Per misurare la differenza di potenziale ai capi di un resistore, un voltmetro si collega:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Collegamenti",
+      "opzioni": [
+        "In serie al resistore",
+        "In parallelo al resistore",
+        "Sempre a massa",
+        "Solo tra due generatori"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il voltmetro va collegato in parallelo all’elemento di cui si vuole misurare la tensione.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "voltmetro",
+        "parallelo",
+        "tensione"
+      ]
+    },
+    {
+      "id": "em_009",
+      "domanda": "L’unità di misura della resistenza elettrica nel SI è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Grandezze e unità",
+      "opzioni": [
+        "Ohm (Ω)",
+        "Tesla (T)",
+        "Farad (F)",
+        "Henry (H)"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La resistenza elettrica si misura in ohm (Ω).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "resistenza",
+        "ohm",
+        "SI"
+      ]
+    },
+    {
+      "id": "em_010",
+      "domanda": "In un circuito in corrente continua, se la resistenza aumenta a tensione costante, la corrente:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Legge di Ohm",
+      "opzioni": [
+        "Aumenta",
+        "Diminuisce",
+        "Resta uguale",
+        "Diventa alternata"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A tensione costante, aumentando R la corrente I diminuisce (relazione inversa).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "ohm",
+        "corrente",
+        "resistenza"
+      ]
+    },
+    {
+      "id": "em_011",
+      "domanda": "Il campo magnetico terrestre può orientare:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Magneti e bussola",
+      "opzioni": [
+        "Un voltmetro",
+        "Una bussola",
+        "Un resistore",
+        "Un condensatore"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L’ago della bussola si orienta lungo la direzione del campo magnetico terrestre.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "bussola",
+        "campo magnetico",
+        "terra"
+      ]
+    },
+    {
+      "id": "em_012",
+      "domanda": "Le linee di campo magnetico (B) sono:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Linee di campo",
+      "opzioni": [
+        "Sempre aperte e partono da un polo",
+        "Sempre chiuse",
+        "Sempre rettilinee",
+        "Presenti solo nel ferro"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Le linee del campo magnetico sono chiuse: non esistono monopoli magnetici nel modello classico scolastico.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "campo magnetico",
+        "linee chiuse"
+      ]
+    },
+    {
+      "id": "em_013",
+      "domanda": "L’unità di misura del campo magnetico B nel SI è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Grandezze e unità",
+      "opzioni": [
+        "Tesla (T)",
+        "Weber (Wb)",
+        "Newton (N)",
+        "Joule (J)"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il campo magnetico B si misura in tesla (T).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "tesla",
+        "campo magnetico",
+        "SI"
+      ]
+    },
+    {
+      "id": "em_014",
+      "domanda": "Una corrente elettrica in un filo rettilineo genera intorno a sé:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Campo magnetico di correnti",
+      "opzioni": [
+        "Un campo elettrico nullo",
+        "Un campo magnetico circolare",
+        "Un campo magnetico uniforme ovunque",
+        "Solo calore, nessun campo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Attorno a un filo percorso da corrente le linee di B sono circonferenze concentriche.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "filo",
+        "corrente",
+        "campo magnetico"
+      ]
+    },
+    {
+      "id": "em_015",
+      "domanda": "Il verso del campo magnetico attorno a un filo percorso da corrente si trova con:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Regole di orientamento",
+      "opzioni": [
+        "La regola della mano destra",
+        "La regola della mano sinistra (sempre)",
+        "Il principio di Archimede",
+        "La legge di Boyle"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Con la regola della mano destra: pollice nel verso della corrente, dita nel verso delle linee di B.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "mano destra",
+        "verso",
+        "campo magnetico"
+      ]
+    },
+    {
+      "id": "em_016",
+      "domanda": "Che cosa indica il simbolo 'I' in elettrotecnica di base?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Grandezze",
+      "opzioni": [
+        "Tensione",
+        "Corrente",
+        "Resistenza",
+        "Capacità"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "I indica l’intensità di corrente elettrica.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "I",
+        "corrente",
+        "grandezze"
+      ]
+    },
+    {
+      "id": "em_017",
+      "domanda": "Un condensatore ideale è un componente che:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Capacitori",
+      "opzioni": [
+        "Dissipa energia in calore",
+        "Immagazzina carica ed energia nel campo elettrico",
+        "Genera corrente senza generatore",
+        "Trasforma corrente continua in alternata"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il condensatore accumula carica sulle armature e immagazzina energia nel campo elettrico tra esse.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "condensatore",
+        "campo elettrico",
+        "energia"
+      ]
+    },
+    {
+      "id": "em_018",
+      "domanda": "L’unità di misura della capacità elettrica nel SI è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Capacitori",
+      "opzioni": [
+        "Farad (F)",
+        "Henry (H)",
+        "Ohm (Ω)",
+        "Tesla (T)"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La capacità elettrica si misura in farad (F).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "capacità",
+        "farad",
+        "SI"
+      ]
+    },
+    {
+      "id": "em_019",
+      "domanda": "In corrente continua, dopo molto tempo, un condensatore ideale inserito in serie a un resistore si comporta come:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Transitori RC",
+      "opzioni": [
+        "Un cortocircuito",
+        "Un circuito aperto",
+        "Un generatore",
+        "Un induttore"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A regime in DC, il condensatore è carico e non lascia passare corrente (si comporta come circuito aperto).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "RC",
+        "regime",
+        "condensatore"
+      ]
+    },
+    {
+      "id": "em_020",
+      "domanda": "La corrente convenzionale in un circuito esterno al generatore va:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Convenzioni",
+      "opzioni": [
+        "Dal polo negativo al positivo",
+        "Dal polo positivo al negativo",
+        "Sempre dal punto a potenziale minore al maggiore",
+        "Dipende dal materiale del filo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per convenzione la corrente scorre dal polo positivo a quello negativo nel circuito esterno.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "corrente convenzionale",
+        "poli",
+        "generatore"
+      ]
+    },
+    {
+      "id": "em_021",
+      "domanda": "Il campo magnetico esercita forza su una carica elettrica:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Forza su cariche",
+      "opzioni": [
+        "Anche se è ferma",
+        "Solo se è in movimento",
+        "Solo se è negativa",
+        "Solo se è positiva"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La componente magnetica della forza agisce su cariche in movimento.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "forza magnetica",
+        "carica",
+        "movimento"
+      ]
+    },
+    {
+      "id": "em_022",
+      "domanda": "Quale fenomeno descrive la magnetizzazione di un pezzo di ferro vicino a un magnete?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Materiali magnetici",
+      "opzioni": [
+        "Induzione elettrostatica",
+        "Induzione magnetica",
+        "Effetto fotoelettrico",
+        "Diffrazione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il ferro può magnetizzarsi per induzione magnetica in presenza di un campo magnetico esterno.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "ferro",
+        "magnetizzazione",
+        "induzione"
+      ]
+    },
+    {
+      "id": "em_023",
+      "domanda": "In un circuito in serie con due resistori, la corrente nei due resistori è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Serie e parallelo",
+      "opzioni": [
+        "Diversa e casuale",
+        "La stessa",
+        "Zero nel secondo",
+        "Maggiore nel resistore più grande"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In serie la corrente è uguale in tutti i componenti.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "serie",
+        "corrente",
+        "resistori"
+      ]
+    },
+    {
+      "id": "em_024",
+      "domanda": "In un circuito in parallelo, la tensione ai capi di ogni ramo è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Serie e parallelo",
+      "opzioni": [
+        "La stessa",
+        "Sempre zero",
+        "Proporzionale alla resistenza",
+        "Maggiore nei rami più lunghi"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In parallelo la differenza di potenziale è la stessa su ogni ramo collegato agli stessi nodi.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "parallelo",
+        "tensione",
+        "rami"
+      ]
+    },
+    {
+      "id": "em_025",
+      "domanda": "La potenza elettrica dissipata da un resistore è legata a V e I da:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Potenza elettrica",
+      "opzioni": [
+        "P = V + I",
+        "P = V·I",
+        "P = V/I",
+        "P = I/V"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La potenza elettrica trasferita è P = V·I (in watt).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "potenza",
+        "VI",
+        "watt"
+      ]
+    },
+    {
+      "id": "em_026",
+      "domanda": "Quale componente si oppone alle variazioni di corrente grazie al campo magnetico che genera?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Induttori",
+      "opzioni": [
+        "Resistore",
+        "Condensatore",
+        "Induttore",
+        "Diodo"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L’induttore tende a opporsi alle variazioni di corrente per effetto dell’autoinduzione.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "induttore",
+        "autoinduzione",
+        "corrente"
+      ]
+    },
+    {
+      "id": "em_027",
+      "domanda": "L’unità di misura dell’induttanza nel SI è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Induttori",
+      "opzioni": [
+        "Henry (H)",
+        "Farad (F)",
+        "Tesla (T)",
+        "Volt (V)"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L’induttanza si misura in henry (H).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "induttanza",
+        "henry",
+        "SI"
+      ]
+    },
+    {
+      "id": "em_028",
+      "domanda": "Il flusso magnetico attraverso una superficie dipende da:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Flusso magnetico",
+      "opzioni": [
+        "Solo dalla corrente nel circuito",
+        "Solo dalla resistenza elettrica",
+        "Dal campo magnetico, dall’area e dall’orientazione",
+        "Solo dal materiale della superficie"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il flusso dipende dall’intensità del campo magnetico, dall’area e dall’angolo tra campo e normale alla superficie.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "flusso",
+        "area",
+        "orientazione",
+        "campo B"
+      ]
+    },
+    {
+      "id": "em_029",
+      "domanda": "La variazione del flusso magnetico concatenato con una spira può produrre:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Fenomeno",
+      "opzioni": [
+        "Una f.e.m. indotta",
+        "Un aumento certo della massa",
+        "Solo calore senza corrente",
+        "Una carica netta dal nulla"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Se il flusso magnetico varia nel tempo, si può indurre una forza elettromotrice nel circuito.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "induzione",
+        "fem",
+        "flusso"
+      ]
+    },
+    {
+      "id": "em_030",
+      "domanda": "La legge di Lenz riguarda:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Lenz",
+      "opzioni": [
+        "Il modulo del flusso magnetico",
+        "Il verso della corrente indotta",
+        "La resistenza equivalente",
+        "La velocità della luce"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La legge di Lenz determina il verso della corrente indotta: si oppone alla causa che la produce.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "lenz",
+        "verso",
+        "corrente indotta"
+      ]
+    },
+    {
+      "id": "em_031",
+      "domanda": "Quando un magnete si avvicina a una spira chiusa, in generale si osserva:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Esperimenti",
+      "opzioni": [
+        "Corrente indotta",
+        "Carica indotta permanente senza corrente",
+        "Nessun effetto possibile",
+        "Solo aumento di resistenza"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il movimento del magnete varia il flusso magnetico e può indurre una corrente se il circuito è chiuso.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "magnete",
+        "spira",
+        "corrente indotta"
+      ]
+    },
+    {
+      "id": "em_032",
+      "domanda": "Un trasformatore ideale funziona grazie a:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Trasformatori",
+      "opzioni": [
+        "Elettrostatica",
+        "Induzione elettromagnetica",
+        "Effetto termico",
+        "Effetto Compton"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il trasformatore sfrutta la variazione di flusso magnetico nel nucleo per indurre tensione nel secondario.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "trasformatore",
+        "induzione",
+        "flusso"
+      ]
+    },
+    {
+      "id": "em_033",
+      "domanda": "Un campo magnetico uniforme è rappresentato graficamente con linee:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Rappresentazioni",
+      "opzioni": [
+        "Curve che si incrociano",
+        "Parallele e equidistanti",
+        "Radiali",
+        "Sempre circolari"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Linee parallele ed equidistanti indicano modulo e direzione costanti nello spazio.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "campo uniforme",
+        "linee",
+        "rappresentazione"
+      ]
+    },
+    {
+      "id": "em_034",
+      "domanda": "Il verso del campo elettrico è, per definizione, quello della forza su:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Campo elettrico",
+      "opzioni": [
+        "Una carica negativa",
+        "Una carica positiva di prova",
+        "Un neutrone",
+        "Un dipolo magnetico"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per convenzione il campo elettrico ha verso della forza esercitata su una carica positiva di prova.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "campo elettrico",
+        "carica di prova",
+        "verso"
+      ]
+    },
+    {
+      "id": "em_035",
+      "domanda": "Un isolante (dielettrico) rispetto a un conduttore si caratterizza perché:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Materiali",
+      "opzioni": [
+        "Ha molte cariche libere che scorrono facilmente",
+        "Ha cariche libere quasi assenti o poco mobili",
+        "È sempre metallico",
+        "Non può essere polarizzato"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Negli isolanti le cariche non sono libere di muoversi come nei conduttori (possono però polarizzarsi).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isolante",
+        "dielettrico",
+        "cariche libere"
+      ]
+    },
+    {
+      "id": "em_036",
+      "domanda": "In elettrostatica, un dipolo elettrico è costituito da:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Dipoli",
+      "opzioni": [
+        "Due cariche uguali e dello stesso segno",
+        "Due cariche uguali e opposte separate da distanza",
+        "Due magneti",
+        "Un’unica carica ferma"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un dipolo elettrico è formato da due cariche uguali in modulo e opposte in segno separate da una distanza.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "dipolo",
+        "cariche opposte",
+        "momento dipolare"
+      ]
+    },
+    {
+      "id": "em_037",
+      "domanda": "Quale grandezza descrive quanta carica passa in una sezione di conduttore nell’unità di tempo?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Corrente elettrica",
+      "opzioni": [
+        "Resistenza",
+        "Corrente",
+        "Potenziale",
+        "Campo magnetico"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La corrente elettrica è definita come carica che attraversa una sezione nell’unità di tempo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "corrente",
+        "carica",
+        "tempo"
+      ]
+    },
+    {
+      "id": "em_038",
+      "domanda": "La direzione della forza magnetica su una carica in moto è sempre:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Forza su cariche",
+      "opzioni": [
+        "Parallela alla velocità",
+        "Perpendicolare sia alla velocità sia al campo magnetico",
+        "Parallela al campo magnetico",
+        "Sempre verticale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La forza magnetica è perpendicolare a v e a B (prodotto vettoriale).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "forza magnetica",
+        "perpendicolare",
+        "v",
+        "B"
+      ]
+    },
+    {
+      "id": "em_039",
+      "domanda": "Se un circuito è aperto, una f.e.m. indotta può comunque esistere come:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "F.e.m. indotta",
+      "opzioni": [
+        "Differenza di potenziale ai capi dell’interruzione",
+        "Corrente elevata nel circuito",
+        "Resistenza equivalente nulla",
+        "Carica totale infinita"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Anche con circuito aperto può comparire una differenza di potenziale indotta, ma non circola corrente continua nel circuito.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "fem",
+        "circuito aperto",
+        "tensione indotta"
+      ]
+    },
+    {
+      "id": "em_040",
+      "domanda": "Le onde elettromagnetiche nel vuoto sono:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Proprietà",
+      "opzioni": [
+        "Onde che richiedono un mezzo materiale",
+        "Onde longitudinali",
+        "Onde trasversali",
+        "Onde che trasportano solo carica"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel vuoto le onde elettromagnetiche sono trasversali: E e B oscillano perpendicolarmente alla direzione di propagazione.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "onde EM",
+        "trasversali",
+        "vuoto"
+      ]
+    },
+    {
+      "id": "em_041",
+      "domanda": "In un circuito con due resistori in serie, come si calcola la resistenza equivalente?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Serie e parallelo",
+      "opzioni": [
+        "Req = R1 + R2",
+        "Req = R1·R2",
+        "Req = 1/(R1+R2)",
+        "Req = (R1+R2)/2"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In serie le resistenze si sommano perché la corrente è la stessa e le cadute di tensione si aggiungono.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "resistenza equivalente",
+        "serie",
+        "somma"
+      ]
+    },
+    {
+      "id": "em_042",
+      "domanda": "In un circuito con due resistori in parallelo, quale relazione è corretta per Req?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Serie e parallelo",
+      "opzioni": [
+        "Req = R1 + R2",
+        "1/Req = 1/R1 + 1/R2",
+        "Req = R1·R2",
+        "Req = R1 - R2"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In parallelo la tensione è uguale, quindi le correnti si sommano e vale la somma dei reciproci.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "parallelo",
+        "reciproci",
+        "equivalente"
+      ]
+    },
+    {
+      "id": "em_043",
+      "domanda": "In un circuito in serie, quale grandezza si ripartisce tra i resistori?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Serie e parallelo",
+      "opzioni": [
+        "La corrente",
+        "La tensione",
+        "La carica totale",
+        "La potenza del generatore rimane sempre zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In serie la corrente è la stessa, mentre la tensione si divide in cadute sui resistori.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "serie",
+        "tensione",
+        "caduta"
+      ]
+    },
+    {
+      "id": "em_044",
+      "domanda": "La prima legge di Kirchhoff (dei nodi) afferma che:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Leggi di Kirchhoff",
+      "opzioni": [
+        "La somma delle f.e.m. è sempre nulla",
+        "La somma delle correnti entranti in un nodo è uguale alla somma delle correnti uscenti",
+        "La resistenza totale è la somma dei reciproci",
+        "La potenza è conservata solo in AC"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "È una conseguenza della conservazione della carica: in un nodo non si accumula carica in regime stazionario.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "kirchhoff",
+        "nodo",
+        "correnti"
+      ]
+    },
+    {
+      "id": "em_045",
+      "domanda": "La seconda legge di Kirchhoff (delle maglie) afferma che in una maglia chiusa:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Leggi di Kirchhoff",
+      "opzioni": [
+        "La somma algebrica delle differenze di potenziale è zero",
+        "La corrente è sempre nulla",
+        "La resistenza equivalente è sempre 1 Ω",
+        "La carica totale è massima"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Lungo una maglia, la somma algebrica di f.e.m. e cadute di tensione è nulla.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "kirchhoff",
+        "maglia",
+        "somma algebrica"
+      ]
+    },
+    {
+      "id": "em_046",
+      "domanda": "Se raddoppi la distanza tra due cariche puntiformi, il modulo della forza elettrostatica (a cariche fissate) diventa:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Dipendenza dalla distanza",
+      "opzioni": [
+        "Doppio",
+        "Metà",
+        "Un quarto",
+        "Quattro volte"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La forza elettrostatica diminuisce con il quadrato della distanza: raddoppiare la distanza riduce la forza a 1/4.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "forza",
+        "distanza",
+        "quadrato"
+      ]
+    },
+    {
+      "id": "em_047",
+      "domanda": "Il lavoro per spostare una carica positiva in un campo elettrico uniforme contro il campo è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Lavoro e potenziale",
+      "opzioni": [
+        "Negativo e il potenziale diminuisce",
+        "Positivo e il potenziale aumenta",
+        "Sempre nullo",
+        "Indipendente dalla direzione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Spostando contro il campo serve lavoro esterno positivo e la carica va verso potenziali più alti.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lavoro",
+        "potenziale",
+        "campo uniforme"
+      ]
+    },
+    {
+      "id": "em_048",
+      "domanda": "Quale relazione qualitativa è corretta tra linee di campo elettrico e intensità del campo?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Linee di campo",
+      "opzioni": [
+        "Più linee ravvicinate ⇒ campo più intenso",
+        "Più linee ravvicinate ⇒ campo più debole",
+        "La densità di linee non ha significato",
+        "Le linee esistono solo su superfici"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La densità delle linee rappresenta l’intensità del campo: linee più fitte indicano campo maggiore.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "densità linee",
+        "intensità",
+        "campo elettrico"
+      ]
+    },
+    {
+      "id": "em_049",
+      "domanda": "Un condensatore piano-parallelo ha capacità maggiore se:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Capacitori",
+      "opzioni": [
+        "Aumenti la distanza tra le armature",
+        "Riduci l’area delle armature",
+        "Inserisci un dielettrico tra le armature",
+        "Aumenti la resistenza del circuito"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Un dielettrico aumenta la capacità perché riduce il campo interno a parità di carica e consente più carica a parità di tensione.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "capacità",
+        "dielettrico",
+        "condensatore"
+      ]
+    },
+    {
+      "id": "em_050",
+      "domanda": "L’energia immagazzinata in un condensatore carico dipende principalmente da:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Energia nei capacitori",
+      "opzioni": [
+        "Solo dalla corrente",
+        "Da capacità e tensione",
+        "Solo dalla resistenza",
+        "Solo dalla temperatura"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L’energia immagazzinata è legata alla capacità e alla tensione ai suoi capi (equivalentemente anche alla carica).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "energia",
+        "capacitore",
+        "tensione",
+        "capacità"
+      ]
+    },
+    {
+      "id": "em_051",
+      "domanda": "In un circuito RC, la costante di tempo τ è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Transitori RC",
+      "opzioni": [
+        "τ = R/C",
+        "τ = R·C",
+        "τ = C/R",
+        "τ = R + C"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La costante di tempo dell’RC è τ = R·C e determina la rapidità di carica/scarica.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "RC",
+        "costante di tempo",
+        "tau"
+      ]
+    },
+    {
+      "id": "em_052",
+      "domanda": "In un solenoide lungo percorso da corrente, il campo magnetico interno è approssimativamente:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Solenoidi",
+      "opzioni": [
+        "Nullo",
+        "Uniforme e parallelo all’asse",
+        "Radiale verso l’esterno",
+        "Casuale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per un solenoide lungo, all’interno il campo è quasi uniforme e diretto lungo l’asse.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "solenoide",
+        "campo interno",
+        "uniforme"
+      ]
+    },
+    {
+      "id": "em_053",
+      "domanda": "L’unità di misura del flusso magnetico nel SI è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Flusso magnetico",
+      "opzioni": [
+        "Weber (Wb)",
+        "Tesla (T)",
+        "Henry (H)",
+        "Coulomb (C)"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il flusso magnetico si misura in weber (Wb).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "flusso",
+        "weber",
+        "SI"
+      ]
+    },
+    {
+      "id": "em_054",
+      "domanda": "Se una spira ruota in un campo magnetico uniforme, la f.e.m. indotta tipica è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Generatori",
+      "opzioni": [
+        "Costante nel tempo",
+        "Alternata nel tempo",
+        "Sempre nulla",
+        "Sempre infinita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Ruotando cambia il flusso concatenato e la f.e.m. risulta in genere alternata: principio dell’alternatore.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "alternatore",
+        "spira",
+        "fem alternata"
+      ]
+    },
+    {
+      "id": "em_055",
+      "domanda": "In un trasformatore ideale, se il numero di spire del secondario è maggiore di quello del primario, la tensione al secondario è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Trasformatori",
+      "opzioni": [
+        "Minore (step-down)",
+        "Maggiore (step-up)",
+        "Sempre uguale",
+        "Sempre zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un trasformatore ideale la tensione è proporzionale al numero di spire: più spire al secondario ⇒ tensione maggiore.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "trasformatore",
+        "spire",
+        "step-up"
+      ]
+    },
+    {
+      "id": "em_056",
+      "domanda": "Una carica positiva entra in un campo magnetico uniforme con velocità perpendicolare a B. La traiettoria è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Moto di cariche",
+      "opzioni": [
+        "Rettlinea",
+        "Circolare",
+        "Parabolica",
+        "Iperbolica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La forza magnetica è perpendicolare alla velocità e agisce da forza centripeta: moto circolare uniforme (se B costante).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto circolare",
+        "carica",
+        "campo B"
+      ]
+    },
+    {
+      "id": "em_057",
+      "domanda": "Se la velocità di una carica è parallela al campo magnetico B, la forza magnetica è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Forza su cariche",
+      "opzioni": [
+        "Massima",
+        "Nulle",
+        "Sempre verso B",
+        "Sempre opposta a B"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Quando v è parallela a B, il prodotto vettoriale è nullo e quindi la forza magnetica è zero.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "parallelo",
+        "forza magnetica",
+        "prodotto vettoriale"
+      ]
+    },
+    {
+      "id": "em_058",
+      "domanda": "Che cosa rappresenta la permeabilità magnetica di un materiale?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Materiali magnetici",
+      "opzioni": [
+        "La facilità con cui il materiale si carica elettricamente",
+        "La capacità del materiale di amplificare il campo magnetico interno rispetto al vuoto",
+        "La resistenza elettrica specifica",
+        "La densità del materiale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La permeabilità indica come un materiale risponde a un campo magnetico e quanto contribuisce al campo risultante.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "permeabilità",
+        "materiali",
+        "magnetismo"
+      ]
+    },
+    {
+      "id": "em_059",
+      "domanda": "Quale configurazione riduce maggiormente la resistenza di un conduttore di stesso materiale?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Resistività",
+      "opzioni": [
+        "Aumentare la lunghezza",
+        "Ridurre la sezione",
+        "Aumentare la sezione",
+        "Aumentare la temperatura sempre e comunque"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "A parità di materiale e lunghezza, una sezione maggiore riduce la resistenza.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "resistenza",
+        "sezione",
+        "conduttore"
+      ]
+    },
+    {
+      "id": "em_060",
+      "domanda": "Il campo elettrico in un punto è uguale a zero. Questo implica che il potenziale elettrico in quel punto è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Potenziale e campo",
+      "opzioni": [
+        "Sicuramente zero",
+        "Sicuramente massimo",
+        "Sicuramente minimo",
+        "Può essere costante localmente ma non necessariamente zero"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Campo nullo implica gradiente del potenziale nullo localmente: il potenziale può essere costante in zona, ma non deve valere zero assoluto.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "campo nullo",
+        "potenziale",
+        "gradiente"
+      ]
+    },
+    {
+      "id": "em_061",
+      "domanda": "In una maglia con un generatore e un resistore, la somma algebrica delle tensioni lungo il percorso vale:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Leggi di Kirchhoff",
+      "opzioni": [
+        "Sempre positiva",
+        "Sempre negativa",
+        "Zero",
+        "Dipende dalla corrente"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per la legge delle maglie, la somma algebrica delle differenze di potenziale lungo un percorso chiuso è zero.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "maglia",
+        "tensioni",
+        "kirchhoff"
+      ]
+    },
+    {
+      "id": "em_062",
+      "domanda": "Se due condensatori sono collegati in parallelo, la capacità equivalente è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Capacitori in rete",
+      "opzioni": [
+        "Ceq = C1 + C2",
+        "1/Ceq = 1/C1 + 1/C2",
+        "Ceq = C1·C2",
+        "Ceq = C1 - C2"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In parallelo le capacità si sommano perché hanno la stessa tensione e la carica totale si somma.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "capacità equivalente",
+        "parallelo",
+        "condensatori"
+      ]
+    },
+    {
+      "id": "em_063",
+      "domanda": "Se due condensatori sono collegati in serie, quale relazione è corretta?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Capacitori in rete",
+      "opzioni": [
+        "Ceq = C1 + C2",
+        "1/Ceq = 1/C1 + 1/C2",
+        "Ceq = C1 - C2",
+        "Ceq = C1·C2"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In serie la carica è la stessa su ogni condensatore e la tensione totale si ripartisce, quindi si sommano i reciproci.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "serie",
+        "reciproci",
+        "capacitori"
+      ]
+    },
+    {
+      "id": "em_064",
+      "domanda": "Per un resistore ohmico, il grafico V-I è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Legge di Ohm",
+      "opzioni": [
+        "Una retta passante per l’origine",
+        "Una parabola",
+        "Una sinusoide",
+        "Un’iperbole"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per un conduttore ohmico vale proporzionalità tra V e I: retta con pendenza R.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ohmico",
+        "grafico",
+        "lineare"
+      ]
+    },
+    {
+      "id": "em_065",
+      "domanda": "Una corrente che scorre in una spira genera un momento magnetico che tende a orientare la spira in un campo B. Questa è l’idea base di:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Coppia su spira",
+      "opzioni": [
+        "Un motore elettrico",
+        "Un condensatore",
+        "Un resistore",
+        "Un diodo LED"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Un motore elettrico sfrutta la coppia su una spira percorsa da corrente immersa in un campo magnetico.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "motore",
+        "spira",
+        "coppia",
+        "campo B"
+      ]
+    },
+    {
+      "id": "em_066",
+      "domanda": "Qual è l’effetto principale del nucleo ferromagnetico in un elettromagnete?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Elettromagneti",
+      "opzioni": [
+        "Riduce il campo magnetico generato",
+        "Aumenta il campo magnetico concentrandolo",
+        "Trasforma corrente continua in alternata",
+        "Elimina la resistenza del filo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un nucleo ferromagnetico aumenta e concentra il campo magnetico prodotto dalla bobina.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "elettromagnete",
+        "nucleo",
+        "ferromagnetico"
+      ]
+    },
+    {
+      "id": "em_067",
+      "domanda": "Quale situazione NON induce corrente in una spira chiusa?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Condizioni di induzione",
+      "opzioni": [
+        "Aumentare l’intensità del campo magnetico che attraversa la spira",
+        "Ruotare la spira in un campo magnetico",
+        "Mantenere flusso magnetico costante nel tempo",
+        "Avvicinare un magnete alla spira"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Serve una variazione del flusso magnetico nel tempo; se il flusso resta costante, non si induce f.e.m.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "induzione",
+        "flusso costante",
+        "spira"
+      ]
+    },
+    {
+      "id": "em_068",
+      "domanda": "Nel caso di una spira che entra in una regione con campo magnetico uniforme, la f.e.m. indotta è diversa da zero principalmente quando:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Flusso variabile",
+      "opzioni": [
+        "La spira è completamente dentro la regione",
+        "La spira è completamente fuori dalla regione",
+        "La porzione di area immersa nel campo sta cambiando",
+        "La resistenza della spira è infinita"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La f.e.m. si genera quando il flusso cambia: durante l’ingresso/uscita cambia l’area attraversata dal campo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ingresso",
+        "area",
+        "flusso variabile"
+      ]
+    },
+    {
+      "id": "em_069",
+      "domanda": "Un campo elettrico può compiere lavoro su una carica. Un campo magnetico (da solo) su una carica in moto compie lavoro?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Energia e lavoro",
+      "opzioni": [
+        "Sì, sempre",
+        "Sì, solo per cariche negative",
+        "No, perché la forza è perpendicolare alla velocità",
+        "No, perché la forza è nulla"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La forza magnetica è perpendicolare alla velocità, quindi non cambia l’energia cinetica e non compie lavoro.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lavoro",
+        "forza magnetica",
+        "energia cinetica"
+      ]
+    },
+    {
+      "id": "em_070",
+      "domanda": "In un circuito RL, l’induttore si oppone principalmente a:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Transitori RL",
+      "opzioni": [
+        "La tensione",
+        "La corrente costante",
+        "Le variazioni di corrente",
+        "La resistenza"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per autoinduzione, l’induttore genera una f.e.m. che si oppone alle variazioni della corrente.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "RL",
+        "autoinduzione",
+        "variazioni corrente"
+      ]
+    },
+    {
+      "id": "em_071",
+      "domanda": "La costante di tempo in un circuito RL è proporzionale a:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Transitori RL",
+      "opzioni": [
+        "R·L",
+        "L/R",
+        "R/L",
+        "L + R"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La costante di tempo tipica dell’RL è τ = L/R: più induttanza o meno resistenza ⇒ transitorio più lento.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "RL",
+        "tau",
+        "L/R"
+      ]
+    },
+    {
+      "id": "em_072",
+      "domanda": "Il campo elettrico tra due piastre di un condensatore piano ideale è approssimativamente:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Campo tra piastre",
+      "opzioni": [
+        "Nullo",
+        "Uniforme",
+        "Sempre radiale",
+        "Sempre circolare"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Tra piastre estese e vicine, il campo è circa uniforme (trascurando gli effetti di bordo).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "condensatore piano",
+        "campo uniforme",
+        "piastre"
+      ]
+    },
+    {
+      "id": "em_073",
+      "domanda": "Un filo percorso da corrente in un campo magnetico uniforme può subire:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Forza su conduttori",
+      "opzioni": [
+        "Una forza magnetica",
+        "Una forza gravitazionale nulla",
+        "Solo una forza elettrica",
+        "Nessuna forza possibile"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Un conduttore percorso da corrente in un campo magnetico può subire una forza (principio del motore).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "filo",
+        "corrente",
+        "forza magnetica"
+      ]
+    },
+    {
+      "id": "em_074",
+      "domanda": "Che cosa cambia se si inverte il verso della corrente in un filo immerso in un campo magnetico uniforme?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Forza su conduttori",
+      "opzioni": [
+        "La forza mantiene lo stesso verso",
+        "La forza inverte verso",
+        "La forza diventa sempre nulla",
+        "La massa del filo cambia"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La forza dipende dal verso della corrente: invertendo la corrente, si inverte il verso della forza.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "corrente",
+        "inversione",
+        "forza su filo"
+      ]
+    },
+    {
+      "id": "em_075",
+      "domanda": "In un circuito con generatore ideale e resistenza interna nulla, aumentando la resistenza del carico la potenza sul carico:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Potenza",
+      "opzioni": [
+        "Aumenta sempre",
+        "Diminuisce sempre",
+        "Può aumentare o diminuire a seconda della tensione",
+        "Resta sempre costante"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A tensione fissa, P = V^2/R: se R aumenta, la potenza diminuisce.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "potenza",
+        "carico",
+        "V costante"
+      ]
+    },
+    {
+      "id": "em_076",
+      "domanda": "Se un dielettrico viene inserito in un condensatore isolato (carica totale costante), la tensione ai capi del condensatore:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Dielettrici",
+      "opzioni": [
+        "Aumenta",
+        "Diminuisce",
+        "Resta uguale",
+        "Diventa alternata"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Inserendo il dielettrico la capacità aumenta; a carica costante, V = Q/C quindi la tensione diminuisce.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "dielettrico",
+        "carica costante",
+        "tensione"
+      ]
+    },
+    {
+      "id": "em_077",
+      "domanda": "Se invece un dielettrico viene inserito in un condensatore collegato a un generatore (tensione costante), la carica sul condensatore:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Dielettrici",
+      "opzioni": [
+        "Diminuisce",
+        "Aumenta",
+        "Resta uguale",
+        "Diventa zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A tensione costante, aumentando C aumenta Q = C·V: scorre carica dal generatore al condensatore.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "dielettrico",
+        "tensione costante",
+        "carica"
+      ]
+    },
+    {
+      "id": "em_078",
+      "domanda": "Nelle onde elettromagnetiche nel vuoto, i campi E e B sono tra loro:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Relazioni tra campi",
+      "opzioni": [
+        "Paralleli",
+        "Perpendicolari",
+        "Sempre nulli",
+        "A caso"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un’onda elettromagnetica i campi E e B sono perpendicolari tra loro e alla direzione di propagazione.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "onda EM",
+        "E",
+        "B",
+        "perpendicolari"
+      ]
+    },
+    {
+      "id": "em_079",
+      "domanda": "Quale grandezza è sempre conservativa in elettrostatica (campi statici)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Campi conservativi",
+      "opzioni": [
+        "Il campo elettrico statico (lavoro indipendente dal percorso)",
+        "Il campo magnetico statico",
+        "La corrente indotta",
+        "La resistenza equivalente"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In elettrostatica il campo elettrico deriva da un potenziale: il lavoro dipende solo dagli estremi.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "conservativo",
+        "elettrostatica",
+        "potenziale"
+      ]
+    },
+    {
+      "id": "em_080",
+      "domanda": "Quando un circuito subisce un aumento di flusso magnetico entrante nel piano, la corrente indotta tende a creare un campo magnetico:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Lenz",
+      "opzioni": [
+        "Entrante nel piano",
+        "Uscente dal piano",
+        "Sempre nullo",
+        "Parallelo alla spira"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per Lenz, la corrente indotta si oppone alla variazione del flusso: se il flusso entrante aumenta, la spira genera campo uscente.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lenz",
+        "flusso",
+        "verso corrente"
+      ]
+    },
+    {
+      "id": "em_081",
+      "domanda": "Una carica positiva si muove verso est in un campo magnetico diretto verso nord. Qual è la direzione della forza magnetica?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Forza di Lorentz (direzioni)",
+      "opzioni": [
+        "Verso l’alto",
+        "Verso il basso",
+        "Verso ovest",
+        "Verso nord"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Usando la regola della mano destra per v × B: est × nord dà verso l’alto (per carica positiva).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "lorentz",
+        "mano destra",
+        "direzione forza"
+      ]
+    },
+    {
+      "id": "em_082",
+      "domanda": "Se nella situazione precedente la carica è negativa (stessa v e stesso B), la forza magnetica è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Forza di Lorentz (segno)",
+      "opzioni": [
+        "Verso l’alto",
+        "Verso il basso",
+        "Verso nord",
+        "Nessuna forza"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La forza cambia verso perché è proporzionale alla carica q: per q negativa si inverte.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "carica negativa",
+        "lorentz",
+        "inversione verso"
+      ]
+    },
+    {
+      "id": "em_083",
+      "domanda": "Un circuito contiene un induttore ideale. In regime stazionario in corrente continua, l’induttore si comporta come:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Induttori in DC",
+      "opzioni": [
+        "Un circuito aperto",
+        "Un cortocircuito",
+        "Un generatore",
+        "Un resistore grande"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A regime in DC (corrente costante), la f.e.m. autoindotta è nulla e l’induttore ideale equivale a un filo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "induttore",
+        "DC",
+        "regime",
+        "cortocircuito"
+      ]
+    },
+    {
+      "id": "em_084",
+      "domanda": "Una spira è immersa in un campo magnetico uniforme B. Se la spira ruota di 90° attorno a un asse nel suo piano, il flusso magnetico:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Flusso e orientazione",
+      "opzioni": [
+        "Non cambia mai",
+        "Passa da massimo a zero (o viceversa) a seconda della posizione iniziale",
+        "Diventa sempre negativo",
+        "Aumenta sempre"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il flusso dipende dal coseno dell’angolo tra B e la normale alla spira; ruotare di 90° può portare da cos=1 a cos=0.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "flusso",
+        "rotazione",
+        "coseno",
+        "normale"
+      ]
+    },
+    {
+      "id": "em_085",
+      "domanda": "Una sbarra conduttrice scorre su due binari in un campo magnetico uniforme perpendicolare al piano dei binari. Quale fenomeno spiega la tensione tra gli estremi della sbarra?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "F.e.m. di movimento",
+      "opzioni": [
+        "Effetto Joule",
+        "Polarizzazione dielettrica",
+        "Separazione di cariche dovuta alla forza magnetica su portatori in moto",
+        "Diffrazione"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "I portatori in moto con la sbarra subiscono forza magnetica laterale, si separano e nasce una differenza di potenziale (f.e.m. di movimento).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "fem di movimento",
+        "sbarra",
+        "binari",
+        "portatori"
+      ]
+    },
+    {
+      "id": "em_086",
+      "domanda": "In un circuito con una spira, il flusso magnetico aumenta linearmente nel tempo. La f.e.m. indotta (in modulo) è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Dipendenza temporale",
+      "opzioni": [
+        "Crescente linearmente",
+        "Costante",
+        "Decrescente esponenzialmente",
+        "Nulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se la variazione del flusso per unità di tempo è costante, anche il modulo della f.e.m. indotta è costante.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "flusso lineare",
+        "fem",
+        "costante"
+      ]
+    },
+    {
+      "id": "em_087",
+      "domanda": "In un circuito RL alimentato con un gradino di tensione, la corrente nel tempo:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Transitori RL",
+      "opzioni": [
+        "Sale istantaneamente al valore finale",
+        "Cresce esponenzialmente verso un valore limite",
+        "Oscilla necessariamente",
+        "Resta sempre zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La corrente non può cambiare istantaneamente nell’induttore: cresce gradualmente (tipicamente esponenziale) verso il valore finale.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "RL",
+        "gradino",
+        "esponenziale",
+        "corrente"
+      ]
+    },
+    {
+      "id": "em_088",
+      "domanda": "In un circuito RC alimentato con un gradino di tensione, la tensione sul condensatore all’istante iniziale (t=0+) vale:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Transitori RC",
+      "opzioni": [
+        "Uguale alla tensione finale",
+        "Dipende da R",
+        "Non può cambiare istantaneamente rispetto al valore iniziale",
+        "È sempre infinita"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La tensione ai capi di un condensatore ideale non può variare istantaneamente: a t=0+ coincide con quella iniziale.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "RC",
+        "t=0",
+        "continuità tensione"
+      ]
+    },
+    {
+      "id": "em_089",
+      "domanda": "Una carica si muove in una regione con campo elettrico E e campo magnetico B. Se la velocità è tale che la forza totale è zero, ciò corrisponde a un principio alla base di:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Campi incrociati",
+      "opzioni": [
+        "Selettore di velocità",
+        "Trasformatore",
+        "Condensatore",
+        "Resistore ohmico"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In campi incrociati, per una certa velocità la forza elettrica e magnetica possono bilanciarsi: è il principio del selettore di velocità.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "campi incrociati",
+        "bilanciamento",
+        "selettore"
+      ]
+    },
+    {
+      "id": "em_090",
+      "domanda": "Un’onda elettromagnetica trasporta energia. La direzione del trasporto di energia è associata a:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Energia e propagazione",
+      "opzioni": [
+        "La direzione del campo E soltanto",
+        "La direzione del campo B soltanto",
+        "La direzione di propagazione (perpendicolare a E e B)",
+        "Sempre verso il polo nord magnetico"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L’energia si propaga nella direzione dell’onda, che è perpendicolare sia a E sia a B.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "onda EM",
+        "energia",
+        "propagazione"
+      ]
+    },
+    {
+      "id": "em_091",
+      "domanda": "Una spira conduttrice entra ed esce da una regione con campo magnetico. In quale tratto la corrente indotta è sicuramente nulla (trascurando resistenza di contatto e assumendo B costante nella regione)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Flusso variabile",
+      "opzioni": [
+        "Solo quando sta entrando",
+        "Solo quando sta uscendo",
+        "Quando è completamente dentro o completamente fuori",
+        "Mai"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La corrente indotta dipende dalla variazione del flusso: quando la spira è tutta dentro o tutta fuori (flusso costante), la f.e.m. è nulla.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "spira",
+        "entrata uscita",
+        "flusso costante"
+      ]
+    },
+    {
+      "id": "em_092",
+      "domanda": "Se si aumenta rapidamente la corrente in una bobina, nella bobina stessa compare una f.e.m. che tende a:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Autoinduzione",
+      "opzioni": [
+        "Favorire l’aumento di corrente",
+        "Opporsi all’aumento di corrente",
+        "Annullare la resistenza",
+        "Invertire la carica degli elettroni"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per autoinduzione, l’induttore genera una f.e.m. che si oppone alla variazione della corrente (effetto di Lenz).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "autoinduzione",
+        "lenz",
+        "variazione corrente"
+      ]
+    },
+    {
+      "id": "em_093",
+      "domanda": "In un trasformatore ideale, se la tensione al secondario è aumentata (step-up), la corrente al secondario rispetto al primario (a potenza trasferita simile) è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Trasformatori",
+      "opzioni": [
+        "Maggiore",
+        "Minore",
+        "Uguale",
+        "Sempre zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se la tensione aumenta e la potenza si conserva idealmente, la corrente deve diminuire (P ≈ V·I).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "trasformatore",
+        "step-up",
+        "corrente",
+        "potenza"
+      ]
+    },
+    {
+      "id": "em_094",
+      "domanda": "Un campo magnetico variabile nel tempo può generare nello spazio un campo elettrico che è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Campo elettrico indotto",
+      "opzioni": [
+        "Conservativo e derivabile da potenziale scalare globale",
+        "Non conservativo e con linee chiuse",
+        "Sempre nullo nel vuoto",
+        "Sempre parallelo a B"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un campo elettrico indotto da B variabile è in generale non conservativo: le sue linee possono chiudersi e il lavoro lungo un circuito può non essere zero.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "campo indotto",
+        "non conservativo",
+        "linee chiuse"
+      ]
+    },
+    {
+      "id": "em_095",
+      "domanda": "In una regione di spazio, il campo elettrico è nullo ma il potenziale elettrico non è costante. Questa situazione è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Potenziale e campo",
+      "opzioni": [
+        "Possibile",
+        "Impossibile",
+        "Possibile solo in AC",
+        "Possibile solo nel ferro"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se E = 0 in una regione, il potenziale non può variare nello spazio in quella regione: deve essere costante lì.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "campo nullo",
+        "potenziale",
+        "coerenza"
+      ]
+    },
+    {
+      "id": "em_096",
+      "domanda": "Una carica q attraversa una differenza di potenziale ΔV. L’energia potenziale elettrica cambia di:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Energia e potenziale",
+      "opzioni": [
+        "ΔU = q·ΔV",
+        "ΔU = ΔV/q",
+        "ΔU = q/ΔV",
+        "ΔU = 0 sempre"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La variazione di energia potenziale è proporzionale alla carica e alla differenza di potenziale attraversata.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "energia potenziale",
+        "deltaV",
+        "carica"
+      ]
+    },
+    {
+      "id": "em_097",
+      "domanda": "In un circuito RLC in serie, al variare della frequenza esiste una frequenza per cui la corrente è massima. Questo fenomeno è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Risonanza RLC",
+      "opzioni": [
+        "Induzione elettrostatica",
+        "Risonanza",
+        "Polarizzazione",
+        "Elettrolisi"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un RLC serie, a risonanza le reattanze di L e C si compensano e l’impedenza è minima, quindi la corrente è massima.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "RLC",
+        "risonanza",
+        "impedenza"
+      ]
+    },
+    {
+      "id": "em_098",
+      "domanda": "Una spira è in un campo magnetico che aumenta nel tempo verso l’osservatore (uscente dal piano). La corrente indotta (vista dall’osservatore) è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Lenz (verso corrente)",
+      "opzioni": [
+        "Oraria",
+        "Antioraria",
+        "Nulla",
+        "Alternata"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Se il flusso uscente aumenta, la spira deve creare campo entrante per opporsi: ciò corrisponde a corrente oraria (regola della mano destra).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "lenz",
+        "oraria",
+        "flusso uscente"
+      ]
+    },
+    {
+      "id": "em_099",
+      "domanda": "Un elettrone entra in un campo magnetico uniforme con velocità perpendicolare a B. A parità di velocità e campo, rispetto a un protone la traiettoria ha raggio:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Moto di cariche",
+      "opzioni": [
+        "Molto maggiore, perché la massa è minore",
+        "Molto minore, perché la massa è minore",
+        "Uguale, perché la carica è uguale in modulo",
+        "Impossibile determinarlo senza la resistenza"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il raggio del moto circolare dipende dalla massa: massa minore ⇒ raggio minore (a parità di |q|, v e B).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "raggio",
+        "elettrone",
+        "protone",
+        "massa"
+      ]
+    },
+    {
+      "id": "em_100",
+      "domanda": "In un circuito con bobina reale, la resistenza ohmica della bobina implica che durante il transitorio RL:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Induttori reali",
+      "opzioni": [
+        "Non si dissipa energia",
+        "Parte dell’energia va dissipata in calore",
+        "La corrente è sempre sinusoidale",
+        "La tensione sull’induttore è sempre zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una bobina reale ha resistenza: parte dell’energia elettrica si dissipa per effetto Joule oltre a immagazzinarsi nel campo magnetico.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "bobina reale",
+        "joule",
+        "dissipazione"
+      ]
+    },
+    {
+      "id": "em_101",
+      "domanda": "Perché un trasformatore non funziona con corrente continua ideale (a regime)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Trasformatori",
+      "opzioni": [
+        "Perché non esiste campo magnetico in DC",
+        "Perché senza variazione del flusso non si induce tensione nel secondario",
+        "Perché la resistenza diventa infinita",
+        "Perché il secondario genera carica dal nulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A regime in DC il flusso nel nucleo non varia nel tempo, quindi non si induce f.e.m. nel secondario.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "trasformatore",
+        "DC",
+        "flusso variabile"
+      ]
+    },
+    {
+      "id": "em_102",
+      "domanda": "Due fili paralleli lunghi con correnti nello stesso verso si:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Interazione tra correnti",
+      "opzioni": [
+        "Respingono",
+        "Attraggono",
+        "Non interagiscono",
+        "Si annullano"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Correnti parallele nello stesso verso si attraggono per effetto del campo magnetico generato da ciascun filo sull’altro.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "fili paralleli",
+        "correnti",
+        "attrazione"
+      ]
+    },
+    {
+      "id": "em_103",
+      "domanda": "Due fili paralleli lunghi con correnti in versi opposti si:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Interazione tra correnti",
+      "opzioni": [
+        "Attraggono",
+        "Respingono",
+        "Non interagiscono",
+        "Rendono nullo B ovunque"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Correnti parallele in versi opposti si respingono.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "fili",
+        "correnti opposte",
+        "repulsione"
+      ]
+    },
+    {
+      "id": "em_104",
+      "domanda": "Un campo magnetico uniforme B è diretto entrante nel piano. Un’asta si muove verso destra. In quale direzione (qualitativa) si separano le cariche positive nell’asta?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "F.e.m. di movimento",
+      "opzioni": [
+        "Verso l’alto",
+        "Verso il basso",
+        "Verso destra",
+        "Verso sinistra"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Le cariche positive in moto subiscono forza v × B: destra × entrante dà verso l’alto, quindi si accumulano in alto.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "asta",
+        "moto",
+        "v×B",
+        "separazione cariche"
+      ]
+    },
+    {
+      "id": "em_105",
+      "domanda": "In un circuito con condensatore inizialmente carico che si scarica su un resistore, l’energia elettrica iniziale del condensatore viene trasformata principalmente in:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Scarica RC",
+      "opzioni": [
+        "Energia nucleare",
+        "Energia termica nel resistore",
+        "Energia gravitazionale",
+        "Energia di massa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Durante la scarica, l’energia del campo elettrico del condensatore viene dissipata come calore nel resistore.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "scarica",
+        "RC",
+        "energia",
+        "calore"
+      ]
+    },
+    {
+      "id": "em_106",
+      "domanda": "Un circuito chiuso contiene una spira e una resistenza. Se aumenta il flusso magnetico concatenato, la corrente indotta esiste. Se raddoppi la resistenza mantenendo invariata la f.e.m. indotta, la corrente indotta:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Corrente indotta",
+      "opzioni": [
+        "Raddoppia",
+        "Si dimezza",
+        "Resta uguale",
+        "Diventa infinita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con la stessa f.e.m. indotta, la corrente segue I = ε/R: aumentando R, I diminuisce in proporzione.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "corrente indotta",
+        "resistenza",
+        "proporzionalità"
+      ]
+    },
+    {
+      "id": "em_107",
+      "domanda": "Una carica positiva si muove in un campo elettrico uniforme E diretto verso est. Se la carica è lasciata libera (B = 0), l’energia cinetica della carica:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Energia e moto",
+      "opzioni": [
+        "Aumenta muovendosi verso est",
+        "Aumenta muovendosi verso ovest",
+        "Resta costante sempre",
+        "Diminuisce muovendosi verso est"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La forza elettrica su carica positiva è nel verso di E: accelerando in quel verso, l’energia cinetica aumenta.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "campo elettrico",
+        "accelerazione",
+        "energia cinetica"
+      ]
+    },
+    {
+      "id": "em_108",
+      "domanda": "Un campo magnetico può essere schermato perfettamente con un conduttore ideale statico come avviene per il campo elettrico in elettrostatica?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Schermatura",
+      "opzioni": [
+        "Sì, sempre",
+        "No, non in modo analogo per campi statici",
+        "Sì, ma solo nel vuoto",
+        "Sì, ma solo con isolanti"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In elettrostatica i conduttori schermano E; per B statico la situazione è diversa e non si ottiene una schermatura perfetta nello stesso modo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "schermatura",
+        "campo magnetico",
+        "conduttore"
+      ]
+    },
+    {
+      "id": "em_109",
+      "domanda": "In un circuito RLC serie, all’aumentare della resistenza R, la risonanza diventa in genere:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Risonanza RLC",
+      "opzioni": [
+        "Più selettiva (picco più stretto)",
+        "Meno selettiva (picco più largo)",
+        "Impossibile",
+        "Con corrente infinita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una resistenza maggiore aumenta lo smorzamento e rende il picco di risonanza meno pronunciato e più largo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "RLC",
+        "smorzamento",
+        "selettività"
+      ]
+    },
+    {
+      "id": "em_110",
+      "domanda": "Se in una regione lo spazio è privo di cariche e correnti ma esiste un’onda elettromagnetica, allora:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Propagazione nel vuoto",
+      "opzioni": [
+        "E e B devono essere nulli",
+        "E può esistere ma B no",
+        "E e B possono esistere e propagarsi anche nel vuoto",
+        "Serve sempre un conduttore per propagarsi"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Le onde elettromagnetiche si propagano anche nel vuoto: sono campi variabili che si auto-sostengono.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "vuoto",
+        "onda EM",
+        "propagazione"
+      ]
+    },
+    {
+      "id": "em_111",
+      "domanda": "Una carica entra in una regione con solo campo magnetico e viene deviata. Quale grandezza rimane sicuramente costante (se non ci sono altre forze)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Energia e moto",
+      "opzioni": [
+        "Modulo della velocità",
+        "Direzione della velocità",
+        "Quantità di moto angolare sempre zero",
+        "Carica elettrica totale del mondo"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La forza magnetica non compie lavoro: cambia direzione della velocità ma non il suo modulo (quindi l’energia cinetica resta costante).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "energia cinetica",
+        "modulo velocità",
+        "forza magnetica"
+      ]
+    },
+    {
+      "id": "em_112",
+      "domanda": "Una spira è attraversata da corrente indotta. Se il flusso magnetico esterno smette di variare, cosa succede alla corrente indotta (trascurando autoinduttanza)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Fine induzione",
+      "opzioni": [
+        "Resta costante per sempre",
+        "Aumenta indefinitamente",
+        "Diventa zero",
+        "Inverte verso spontaneamente"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Senza variazione di flusso non c’è f.e.m. indotta; con resistenza presente la corrente indotta si annulla.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "corrente indotta",
+        "flusso costante",
+        "zero"
+      ]
+    },
+    {
+      "id": "em_113",
+      "domanda": "Un campo elettrico uniforme E è diretto verso l’alto. Una carica negativa libera accelera:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Forza su cariche",
+      "opzioni": [
+        "Verso l’alto",
+        "Verso il basso",
+        "Verso destra",
+        "Non accelera"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La forza elettrica è qE: per q negativa è opposta a E, quindi verso il basso.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "carica negativa",
+        "campo elettrico",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "em_114",
+      "domanda": "Un condensatore e un induttore ideali possono scambiarsi energia senza dissipazione formando un’oscillazione. Questa oscillazione riguarda energia tra:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Oscillazioni LC",
+      "opzioni": [
+        "Campo elettrico del condensatore e campo magnetico dell’induttore",
+        "Energia termica e nucleare",
+        "Energia gravitazionale e chimica",
+        "Energia di massa e di legame"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In un circuito LC ideale l’energia oscilla tra campo elettrico (C) e campo magnetico (L).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "LC",
+        "oscillazione",
+        "energia",
+        "campi"
+      ]
+    },
+    {
+      "id": "em_115",
+      "domanda": "In un circuito reale LC con resistenza, cosa accade alle oscillazioni nel tempo?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Oscillazioni smorzate",
+      "opzioni": [
+        "Ampiezza costante per sempre",
+        "Ampiezza che cresce",
+        "Ampiezza che diminuisce (smorzamento)",
+        "Oscillazioni impossibili"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La resistenza dissipa energia per effetto Joule, quindi le oscillazioni si smorzano nel tempo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "smorzamento",
+        "resistenza",
+        "joule",
+        "oscillazioni"
+      ]
+    },
+    {
+      "id": "em_116",
+      "domanda": "Una particella carica attraversa un campo magnetico uniforme. Se raddoppi B mantenendo v e q costanti, il raggio della traiettoria circolare:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Moto di cariche",
+      "opzioni": [
+        "Raddoppia",
+        "Si dimezza",
+        "Resta uguale",
+        "Diventa infinito"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il raggio è inversamente proporzionale a B: aumentando B, la traiettoria curva di più e il raggio diminuisce.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "raggio",
+        "campo B",
+        "proporzionalità inversa"
+      ]
+    },
+    {
+      "id": "em_117",
+      "domanda": "Una carica positiva è ferma in presenza di un campo elettrico E e un campo magnetico B. La forza magnetica è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Forza di Lorentz",
+      "opzioni": [
+        "Diversa da zero perché c’è B",
+        "Zero perché v = 0",
+        "Massima",
+        "Dipende solo da B"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La forza magnetica dipende dalla velocità: se la carica è ferma, la componente magnetica è nulla; resta solo l’eventuale forza elettrica.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "v=0",
+        "forza magnetica",
+        "lorentz"
+      ]
+    },
+    {
+      "id": "em_118",
+      "domanda": "In una spira, la f.e.m. indotta è grande se la variazione di flusso è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Intensità della f.e.m.",
+      "opzioni": [
+        "Lenta",
+        "Rapida",
+        "Nulla",
+        "Costante e pari a zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Più rapida è la variazione del flusso nel tempo, maggiore è la f.e.m. indotta (in modulo).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "fem",
+        "variazione rapida",
+        "flusso"
+      ]
+    },
+    {
+      "id": "em_119",
+      "domanda": "Perché le linee di campo magnetico non “iniziano” né “finiscono” come quelle elettriche?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Proprietà del campo B",
+      "opzioni": [
+        "Perché B non esiste nel vuoto",
+        "Perché non si osservano cariche magnetiche isolate nel modello scolastico",
+        "Perché il ferro assorbe tutte le linee",
+        "Perché B è sempre zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel quadro classico scolastico non esistono monopoli magnetici: le linee di B sono chiuse.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "linee chiuse",
+        "monopoli",
+        "campo magnetico"
+      ]
+    },
+    {
+      "id": "em_120",
+      "domanda": "Una bobina con N spire è attraversata da un flusso magnetico variabile. Se raddoppi N mantenendo invariata la variazione di flusso per spira, la f.e.m. indotta totale (in modulo) tende a:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Bobine a più spire",
+      "opzioni": [
+        "Dimezzarsi",
+        "Raddoppiare",
+        "Restare uguale",
+        "Diventare zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Più spire significano maggiore concatenazione: a parità di variazione di flusso per spira, la f.e.m. totale cresce proporzionalmente a N.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "spire",
+        "bobina",
+        "fem",
+        "proporzionalità"
+      ]
+    }
+  ]
+}

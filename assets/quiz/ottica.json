@@ -1,1 +1,2251 @@
-{"quiz": []}
+{
+    "quiz": [
+        {
+            "id": "opt_001",
+            "domanda": "Qual è la legge della riflessione della luce su uno specchio piano?",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione",
+            "opzioni": [
+                "Angolo di incidenza maggiore dell’angolo di riflessione",
+                "Angolo di incidenza minore dell’angolo di riflessione",
+                "Angolo di incidenza uguale all’angolo di riflessione (rispetto alla normale)",
+                "Angolo di incidenza uguale all’angolo di riflessione (rispetto alla superficie)"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La legge della riflessione afferma che l’angolo di incidenza è uguale all’angolo di riflessione, entrambi misurati rispetto alla normale. [web:31]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "riflessione",
+                "angolo",
+                "normale",
+                "specchio"
+            ]
+        },
+        {
+            "id": "opt_002",
+            "domanda": "In ottica geometrica, la 'normale' a una superficie è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione",
+            "opzioni": [
+                "La retta tangente alla superficie nel punto di incidenza",
+                "La retta perpendicolare alla superficie nel punto di incidenza",
+                "La bisettrice dell’angolo tra raggio incidente e riflesso",
+                "La direzione del raggio rifratto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nelle leggi della riflessione gli angoli si misurano rispetto alla normale, cioè la retta perpendicolare alla superficie nel punto di incidenza. [web:31]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "normale",
+                "perpendicolare",
+                "incidenza",
+                "angoli"
+            ]
+        },
+        {
+            "id": "opt_003",
+            "domanda": "Quale relazione esprime la legge di Snell per la rifrazione?",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "n1·cos(theta1) = n2·cos(theta2)",
+                "n1·sin(theta1) = n2·sin(theta2)",
+                "n1/theta1 = n2/theta2",
+                "n1 + n2 = sin(theta1 + theta2)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La legge di Snell per la rifrazione è n1·sin(theta1) = n2·sin(theta2). [web:18]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Snell",
+                "rifrazione",
+                "seno",
+                "indici"
+            ]
+        },
+        {
+            "id": "opt_004",
+            "domanda": "Se un raggio passa da un mezzo con indice maggiore a uno con indice minore, in genere il raggio rifratto:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Si avvicina alla normale",
+                "Si allontana dalla normale",
+                "Non cambia direzione",
+                "Diventa sempre perpendicolare alla superficie"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dalla legge di Snell, passando a indice minore l’angolo di rifrazione aumenta e il raggio tende ad allontanarsi dalla normale. [web:19]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "rifrazione",
+                "normale",
+                "indice",
+                "Snell"
+            ]
+        },
+        {
+            "id": "opt_005",
+            "domanda": "Qual è la condizione necessaria perché avvenga riflessione totale interna?",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "La luce deve passare da indice minore a indice maggiore",
+                "La luce deve passare da indice maggiore a indice minore",
+                "La luce deve incidere con angolo nullo",
+                "Serve sempre un filtro polarizzatore"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La riflessione totale interna può avvenire quando la luce va da un mezzo con indice maggiore a uno con indice minore. [web:42]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "riflessione totale",
+                "indice",
+                "mezzi",
+                "condizione"
+            ]
+        },
+        {
+            "id": "opt_006",
+            "domanda": "L’angolo critico theta_c (per n1 > n2) è definito come l’angolo di incidenza per cui l’angolo rifratto vale:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "0°",
+                "45°",
+                "60°",
+                "90°"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "L’angolo critico è quello per cui l’angolo di rifrazione diventa 90°. [web:36]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "angolo critico",
+                "90",
+                "rifrazione",
+                "TIR"
+            ]
+        },
+        {
+            "id": "opt_007",
+            "domanda": "Per n1 > n2, quale formula lega l’angolo critico theta_c agli indici di rifrazione?",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "sin(theta_c) = n1/n2",
+                "sin(theta_c) = n2/n1",
+                "tan(theta_c) = n2/n1",
+                "cos(theta_c) = n2/n1"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per la riflessione totale interna vale sin(theta_c) = n2/n1 (con n1 > n2). [web:42]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "angolo critico",
+                "sin",
+                "n2/n1",
+                "TIR"
+            ]
+        },
+        {
+            "id": "opt_008",
+            "domanda": "Qual è la formula delle lenti sottili (distanze oggetto p, immagine q, focale f)?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "1/p + 1/q = 1/f",
+                "p + q = f",
+                "p·q = f",
+                "1/p − 1/q = 1/f"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La formula delle lenti sottili è 1/p + 1/q = 1/f. [web:24]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lenti sottili",
+                "equazione",
+                "focale",
+                "p q"
+            ]
+        },
+        {
+            "id": "opt_009",
+            "domanda": "Il potere diottrico di una lente (in diottrie) è definito come:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "D = f",
+                "D = 1/f (con f in metri)",
+                "D = f^2",
+                "D = 1/p + 1/q"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il potere diottrico è D = 1/f (con f in metri) e si misura in m^-1 (diottrie). [web:24]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "diottrie",
+                "potere",
+                "1/f",
+                "f metri"
+            ]
+        },
+        {
+            "id": "opt_010",
+            "domanda": "In ottica, l’ingrandimento laterale (in valore assoluto) si calcola spesso come rapporto tra:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "p/f",
+                "q/p",
+                "f/p",
+                "p/q"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per le lenti sottili, l’ingrandimento laterale si ricava dal rapporto tra distanza immagine e distanza oggetto (q/p) con segno secondo convenzioni. [web:27]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "ingrandimento",
+                "q/p",
+                "lente",
+                "immagine"
+            ]
+        },
+        {
+            "id": "opt_011",
+            "domanda": "Quale affermazione descrive correttamente la dispersione ottica?",
+            "categoria": "Ottica",
+            "sottocategoria": "Dispersione",
+            "opzioni": [
+                "L’indice di rifrazione è sempre costante per tutte le lunghezze d’onda",
+                "L’indice di rifrazione dipende dalla lunghezza d’onda",
+                "La frequenza della luce cambia quando passa in un mezzo",
+                "La luce bianca non può essere separata in colori"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La dispersione ottica è legata al fatto che l’indice di rifrazione n dipende dalla lunghezza d’onda (n = n(λ)). [web:52]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "dispersione",
+                "indice",
+                "lunghezza d'onda",
+                "n(λ)"
+            ]
+        },
+        {
+            "id": "opt_012",
+            "domanda": "Quale tra questi fenomeni è spiegato dalla dispersione in un prisma?",
+            "categoria": "Ottica",
+            "sottocategoria": "Dispersione",
+            "opzioni": [
+                "La luce bianca si separa in colori",
+                "La luce rimbalza con angolo uguale all’incidenza",
+                "La luce viene sempre assorbita",
+                "La luce perde frequenza passando nel vetro"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Poiché n dipende da λ, nel prisma le diverse lunghezze d’onda rifrangono con angoli diversi e la luce bianca si separa in colori. [web:52]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "prisma",
+                "colori",
+                "dispersione",
+                "rifrazione"
+            ]
+        },
+        {
+            "id": "opt_013",
+            "domanda": "La legge di Malus per la luce polarizzata linearmente afferma che l’intensità trasmessa da un analizzatore vale:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "I = I0·sin(theta)",
+                "I = I0·cos(theta)",
+                "I = I0·cos^2(theta)",
+                "I = I0·tan(theta)"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La legge di Malus è I = I0·cos^2(theta). [web:37]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Malus",
+                "polarizzazione",
+                "cos^2",
+                "intensità"
+            ]
+        },
+        {
+            "id": "opt_014",
+            "domanda": "Che cosa succede, in media, all’intensità di luce non polarizzata dopo un singolo polarizzatore ideale?",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "Resta uguale",
+                "Si dimezza",
+                "Raddoppia",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per luce non polarizzata un polarizzatore ideale trasmette in media metà intensità (I = 1/2 I0). [web:37]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "non polarizzata",
+                "metà",
+                "polarizzatore",
+                "I0/2"
+            ]
+        },
+        {
+            "id": "opt_015",
+            "domanda": "L’angolo di Brewster theta_B soddisfa (per luce che passa da mezzo 1 a mezzo 2):",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "sin(theta_B) = n2/n1",
+                "tan(theta_B) = n2/n1",
+                "cos(theta_B) = n2/n1",
+                "theta_B = 90°"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per l’angolo di Brewster vale tan(theta_B) = n2/n1. [web:46]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Brewster",
+                "tan",
+                "n2/n1",
+                "polarizzazione"
+            ]
+        },
+        {
+            "id": "opt_016",
+            "domanda": "Quale relazione viene spesso usata per uno specchio sferico (legge dei punti coniugati) in forma focale?",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "1/p + 1/q = 1/f",
+                "p + q = f",
+                "1/p − 1/q = 1/f",
+                "p·q = f"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per gli specchi sferici si usa l’equazione 1/p + 1/q = 1/f con convenzioni di segno. [web:54]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "specchio sferico",
+                "punti coniugati",
+                "1/p+1/q",
+                "f"
+            ]
+        },
+        {
+            "id": "opt_017",
+            "domanda": "In uno specchio sferico, quale relazione lega raggio di curvatura R e distanza focale f (nel caso ideale)?",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "f = R",
+                "f = R/2",
+                "f = 2R",
+                "f = 1/R"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per lo specchio sferico vale f = R/2, coerente con la forma 2/R = 1/p + 1/q e 1/f = 1/p + 1/q. [web:54]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "specchio",
+                "R/2",
+                "focale",
+                "curvatura"
+            ]
+        },
+        {
+            "id": "opt_018",
+            "domanda": "Qual è la condizione (in forma integrale) per ottenere la variazione di momento angolare? (domanda di controllo: NON è ottica)",
+            "categoria": "Ottica",
+            "sottocategoria": "Controllo",
+            "opzioni": [
+                "ΔL = ∫τ dt",
+                "n1·sin(theta1)=n2·sin(theta2)",
+                "1/p + 1/q = 1/f",
+                "I = I0 cos^2(theta)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La relazione corretta per l’ottica tra mezzi è la legge di Snell n1·sin(theta1)=n2·sin(theta2). [web:18]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "controllo",
+                "Snell",
+                "ottica",
+                "rifrazione"
+            ]
+        },
+        {
+            "id": "opt_019",
+            "domanda": "Nell’interferenza a doppia fenditura, le massime d’interferenza si hanno quando:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "sin(theta) = (k·lambda)/d",
+                "sin(theta) = (d·lambda)/k",
+                "cos(theta) = (k·lambda)/d",
+                "tan(theta) = (k·d)/lambda"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per due fenditure, le massime soddisfano sin(theta) = k·lambda/d (con k intero). [web:22]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Young",
+                "doppia fenditura",
+                "massimi",
+                "kλ/d"
+            ]
+        },
+        {
+            "id": "opt_020",
+            "domanda": "Nella diffrazione da fenditura singola di larghezza a, un minimo di diffrazione si ha quando:",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "a·sin(theta) = m·lambda (m ≠ 0)",
+                "a·cos(theta) = m·lambda",
+                "d·sin(theta) = m·lambda",
+                "I = I0·cos^2(theta)"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per una fenditura singola, le condizioni di minimo includono a·sin(theta) = m·lambda (m intero non nullo). [web:28]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "diffrazione",
+                "fenditura",
+                "minimi",
+                "a sinθ"
+            ]
+        },
+        {
+            "id": "opt_021",
+            "domanda": "Quale grandezza resta invariata quando la luce passa da un mezzo a un altro (rifrazione ideale)?",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "La lunghezza d’onda",
+                "La velocità",
+                "La frequenza",
+                "L’indice di rifrazione"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Nella rifrazione la legge di Snell descrive il cambio di direzione legato agli indici, mentre la frequenza della luce rimane la stessa. [web:19]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "frequenza",
+                "rifrazione",
+                "mezzi",
+                "Snell"
+            ]
+        },
+        {
+            "id": "opt_022",
+            "domanda": "Quale tra questi strumenti sfrutta direttamente la riflessione totale interna per guidare la luce?",
+            "categoria": "Ottica",
+            "sottocategoria": "Applicazioni",
+            "opzioni": [
+                "Fibra ottica",
+                "Specchio piano",
+                "Lente divergente",
+                "Prisma (solo dispersione)"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La riflessione totale interna è alla base della guida della luce nelle fibre ottiche. [web:42]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "fibra ottica",
+                "TIR",
+                "guida",
+                "applicazioni"
+            ]
+        },
+        {
+            "id": "opt_023",
+            "domanda": "Quale affermazione è corretta sull’angolo critico?",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "Esiste solo se n2 > n1",
+                "Esiste solo se n1 > n2",
+                "Esiste per qualunque coppia di indici",
+                "È sempre 45°"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L’angolo critico per la riflessione totale interna è definito per n1 > n2 e soddisfa sin(theta_c)=n2/n1. [web:42]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "angolo critico",
+                "n1>n2",
+                "sin",
+                "TIR"
+            ]
+        },
+        {
+            "id": "opt_024",
+            "domanda": "Quale relazione collega (idealmente) l’intensità trasmessa e l’angolo tra due polarizzatori quando la luce in ingresso al secondo è polarizzata?",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "I = I0·cos^2(theta)",
+                "I = I0·sin(theta)",
+                "I = I0·tan(theta)",
+                "I = I0·cos(theta)"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con luce polarizzata linearmente, la legge di Malus dà I = I0·cos^2(theta). [web:40]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "polarizzatori",
+                "Malus",
+                "cos^2",
+                "intensità"
+            ]
+        },
+        {
+            "id": "opt_025",
+            "domanda": "Qual è l’equazione che permette di calcolare la posizione dell’immagine in uno specchio (forma generale in termini di f, do, di)?",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "1/f = 1/do + 1/di",
+                "f = do + di",
+                "f = do·di",
+                "1/do − 1/di = 1/f"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "L’equazione dello specchio collega f, do e di tramite 1/f = 1/do + 1/di. [web:51]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "specchio",
+                "equazione",
+                "1/f",
+                "do di"
+            ]
+        },
+        {
+            "id": "opt_026",
+            "domanda": "Nell’esperimento di Young, cosa serve perché le frange siano stabili nel tempo?",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Luce incoerente",
+                "Due sorgenti coerenti (o divisione di un’unica sorgente)",
+                "Un prisma dispersivo",
+                "Un solo specchio piano"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per ottenere frange ben definite nella doppia fenditura serve coerenza tra i due contributi che interferiscono. [web:25]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Young",
+                "coerenza",
+                "frange",
+                "interferenza"
+            ]
+        },
+        {
+            "id": "opt_027",
+            "domanda": "Quale formula collega la variazione di L con la coppia esterna? (domanda-trappola: non è ottica)",
+            "categoria": "Ottica",
+            "sottocategoria": "Controllo",
+            "opzioni": [
+                "τ = dL/dt",
+                "I = I0·cos^2(theta)",
+                "1/p + 1/q = 1/f",
+                "n1·sin(theta1)=n2·sin(theta2)"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "In ottica, la relazione corretta tra angoli e indici è n1·sin(theta1)=n2·sin(theta2). [web:18]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "controllo",
+                "Snell",
+                "rifrazione",
+                "ottica"
+            ]
+        },
+        {
+            "id": "opt_028",
+            "domanda": "Quale grandezza descrive la capacità di una lente di far convergere/divergere i raggi ed è pari a 1/f (f in m)?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Indice di rifrazione",
+                "Potere diottrico",
+                "Angolo critico",
+                "Intensità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il potere diottrico della lente è 1/f e si misura in diottrie (m^-1). [web:24]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "potere diottrico",
+                "diottrie",
+                "1/f",
+                "lente"
+            ]
+        },
+        {
+            "id": "opt_029",
+            "domanda": "Se due polarizzatori ideali sono incrociati (90°), l’intensità trasmessa (luce polarizzata in ingresso al secondo) è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "Massima",
+                "Metà",
+                "Zero",
+                "Doppia"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con la legge di Malus I = I0·cos^2(theta), per theta = 90° si ottiene I = 0. [web:37]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "polarizzatori",
+                "incrociati",
+                "Malus",
+                "zero"
+            ]
+        },
+        {
+            "id": "opt_030",
+            "domanda": "La riflessione totale interna avviene quando l’angolo di incidenza è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "Minore di theta_c",
+                "Uguale a theta_c",
+                "Maggiore di theta_c",
+                "Sempre 0°"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La riflessione totale interna si verifica quando l’angolo di incidenza supera l’angolo critico theta_c. [web:36]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "TIR",
+                "theta_c",
+                "maggiore",
+                "incidenza"
+            ]
+        },
+        {
+            "id": "opt_031",
+            "domanda": "Quale relazione è tipica delle massime d’interferenza per due fenditure separate di distanza d?",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "d·sin(theta) = k·lambda",
+                "a·sin(theta) = k·lambda",
+                "d·cos(theta) = k·lambda",
+                "I = I0·cos^2(theta)"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per la doppia fenditura le massime soddisfano d·sin(theta) = k·lambda. [web:22]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "interferenza",
+                "d sinθ",
+                "kλ",
+                "Young"
+            ]
+        },
+        {
+            "id": "opt_032",
+            "domanda": "Quale tra questi è un effetto tipico della diffrazione?",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "La luce si propaga solo in linea retta senza allargarsi",
+                "La luce può 'allargarsi' passando attraverso aperture strette",
+                "La luce aumenta sempre di frequenza",
+                "La luce non può interferire"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La diffrazione porta a un allargamento angolare del fascio, con minimi descritti da condizioni come a·sin(theta)=m·lambda. [web:28]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "diffrazione",
+                "apertura",
+                "allargamento",
+                "minimi"
+            ]
+        },
+        {
+            "id": "opt_033",
+            "domanda": "Quale affermazione è corretta sull’angolo di Brewster?",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "Dipende solo dalla lunghezza d’onda",
+                "Dipende dagli indici di rifrazione dei due mezzi",
+                "È sempre uguale all’angolo critico",
+                "Esiste solo per specchi metallici perfetti"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L’angolo di Brewster soddisfa tan(theta_B)=n2/n1 e quindi dipende dagli indici dei due mezzi. [web:46]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Brewster",
+                "indici",
+                "tan",
+                "mezzi"
+            ]
+        },
+        {
+            "id": "opt_034",
+            "domanda": "In un prisma, perché il violetto devia più del rosso (dispersione normale)?",
+            "categoria": "Ottica",
+            "sottocategoria": "Dispersione",
+            "opzioni": [
+                "Perché n aumenta all’aumentare di lambda",
+                "Perché n diminuisce all’aumentare di lambda",
+                "Perché la frequenza aumenta nel vetro",
+                "Perché la luce rossa non rifrange"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nella dispersione normale l’indice n decresce all’aumentare di λ, quindi lunghezze d’onda più corte (violetto) hanno n maggiore e deviano di più. [web:52]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "dispersione normale",
+                "violetto",
+                "rosso",
+                "n(λ)"
+            ]
+        },
+        {
+            "id": "opt_035",
+            "domanda": "Quale tra queste formule permette di ricavare il nuovo momento angolare dopo una coppia costante? (domanda-trappola)",
+            "categoria": "Ottica",
+            "sottocategoria": "Controllo",
+            "opzioni": [
+                "ΔL = τ·Δt",
+                "I = I0·cos^2(theta)",
+                "n1·sin(theta1)=n2·sin(theta2)",
+                "1/p + 1/q = 1/f"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La legge fondamentale per la rifrazione è n1·sin(theta1)=n2·sin(theta2). [web:18]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "controllo",
+                "Snell",
+                "rifrazione",
+                "ottica"
+            ]
+        },
+        {
+            "id": "opt_036",
+            "domanda": "Quale tipo di immagine produce tipicamente una lente convergente con oggetto oltre la focale?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Sempre virtuale e diritta",
+                "Reale e capovolta",
+                "Sempre virtuale e capovolta",
+                "Sempre reale e diritta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con la formula 1/p+1/q=1/f, se p>f per lente convergente risulta q>0 e l’immagine è reale (tipicamente capovolta). [web:30]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lente convergente",
+                "immagine reale",
+                "capovolta",
+                "q>0"
+            ]
+        },
+        {
+            "id": "opt_037",
+            "domanda": "Quale affermazione è corretta sul calcolo dell’angolo critico?",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "Si usa sin(theta_c) = n1/n2",
+                "Si usa sin(theta_c) = n2/n1",
+                "Si usa cos(theta_c) = n1/n2",
+                "Si usa tan(theta_c) = n1/n2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per n1>n2 l’angolo critico soddisfa sin(theta_c)=n2/n1. [web:42]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "theta_c",
+                "sin",
+                "n2/n1",
+                "TIR"
+            ]
+        },
+        {
+            "id": "opt_038",
+            "domanda": "Quale tra queste grandezze compare direttamente nella legge di Snell?",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Energia cinetica",
+                "Indici di rifrazione e seni degli angoli",
+                "Temperatura e pressione",
+                "Potenza elettrica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La legge di Snell lega n1, n2 e sin(theta1), sin(theta2) tramite n1·sin(theta1)=n2·sin(theta2). [web:17]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Snell",
+                "indici",
+                "seni",
+                "angoli"
+            ]
+        },
+        {
+            "id": "opt_039",
+            "domanda": "Quale tra questi fenomeni è collegato alla dipendenza di n dalla lunghezza d’onda?",
+            "categoria": "Ottica",
+            "sottocategoria": "Dispersione",
+            "opzioni": [
+                "Dispersione cromatica",
+                "Riflessione speculare",
+                "Urti elastici",
+                "Conservazione del momento angolare"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La dispersione cromatica deriva dal fatto che l’indice di rifrazione dipende da λ. [web:52]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "dispersione",
+                "cromatica",
+                "indice",
+                "λ"
+            ]
+        },
+        {
+            "id": "opt_040",
+            "domanda": "Quale relazione descrive meglio l’effetto di un analizzatore su luce polarizzata (angolo theta tra direzioni)?",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "I = I0·cos^2(theta)",
+                "I = I0·sin^2(theta)",
+                "I = I0·(1 + cos(theta))",
+                "I = I0·theta"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La legge di Malus stabilisce che I = I0·cos^2(theta). [web:37]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Malus",
+                "analizzatore",
+                "cos^2",
+                "intensità"
+            ]
+        },
+        {
+            "id": "opt_041",
+            "domanda": "Un raggio passa da aria (n1 = 1,00) a vetro (n2 = 1,50) con angolo di incidenza 30°. Qual è circa l’angolo di rifrazione?",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Circa 19°",
+                "Circa 30°",
+                "Circa 45°",
+                "Circa 60°"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con Snell n1·sin(theta1)=n2·sin(theta2): sin(theta2)=(1,00/1,50)·sin30°≈(0,6667)·0,5≈0,3333 quindi theta2≈19°. [web:18]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Snell",
+                "aria-vetro",
+                "rifrazione",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_042",
+            "domanda": "Un raggio passa da vetro (n1 = 1,50) ad aria (n2 = 1,00). Qual è l’angolo critico theta_c?",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "Circa 42°",
+                "Circa 48°",
+                "Circa 60°",
+                "Circa 75°"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per n1>n2 vale sin(theta_c)=n2/n1=1/1,5=0,6667 quindi theta_c≈41,8° (≈42°). [web:42]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "angolo critico",
+                "arcsin",
+                "n2/n1",
+                "vetro-aria"
+            ]
+        },
+        {
+            "id": "opt_043",
+            "domanda": "Una lente convergente ha f = 20 cm e un oggetto a p = 60 cm. Qual è q (distanza immagine)?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "10 cm",
+                "20 cm",
+                "30 cm",
+                "60 cm"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con 1/p + 1/q = 1/f: 1/60 + 1/q = 1/20 ⇒ 1/q = 1/20 − 1/60 = (3−1)/60 = 2/60 = 1/30 quindi q = 30 cm. [web:24]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lente",
+                "1/p+1/q",
+                "f",
+                "q"
+            ]
+        },
+        {
+            "id": "opt_044",
+            "domanda": "Una lente ha distanza focale f = 0,50 m. Qual è il suo potere diottrico D?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "0,5 D",
+                "1 D",
+                "2 D",
+                "5 D"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Il potere diottrico è D = 1/f (in m), quindi D = 1/0,50 = 2 diottrie. [web:24]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "diottrie",
+                "1/f",
+                "calcolo",
+                "focale"
+            ]
+        },
+        {
+            "id": "opt_045",
+            "domanda": "Con una lente sottile, p = 30 cm e q = 60 cm. Qual è l’ingrandimento laterale (in valore assoluto)?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "0,5",
+                "1",
+                "2",
+                "4"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "L’ingrandimento laterale in valore assoluto è |m| = |q/p| = 60/30 = 2. [web:27]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "ingrandimento",
+                "q/p",
+                "m",
+                "lenti"
+            ]
+        },
+        {
+            "id": "opt_046",
+            "domanda": "Uno specchio sferico ha f = 15 cm e un oggetto a do = 30 cm. Quanto vale di?",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "7,5 cm",
+                "10 cm",
+                "15 cm",
+                "30 cm"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "Con 1/f = 1/do + 1/di: 1/15 = 1/30 + 1/di ⇒ 1/di = 1/15 − 1/30 = 1/30 quindi di = 30 cm. [web:51]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "specchio",
+                "1/f",
+                "do",
+                "di"
+            ]
+        },
+        {
+            "id": "opt_047",
+            "domanda": "Due polarizzatori ideali: il primo rende la luce polarizzata, il secondo è ruotato di 60°. Se dopo il primo l’intensità è I0, quanto passa dopo il secondo?",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "I0",
+                "0,75 I0",
+                "0,50 I0",
+                "0,25 I0"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Per Malus I = I0·cos^2(60°) = I0·(0,5)^2 = 0,25 I0. [web:37]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Malus",
+                "cos^2",
+                "60 gradi",
+                "polarizzatori"
+            ]
+        },
+        {
+            "id": "opt_048",
+            "domanda": "Doppia fenditura: λ = 600 nm, distanza schermo L = 2,0 m, distanza tra fenditure d = 0,50 mm. Spaziatura frange Δy vale circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "0,24 mm",
+                "2,4 mm",
+                "24 mm",
+                "0,024 mm"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Usando l’approssimazione dei piccoli angoli per Young (Δy ≈ λL/d), Δy ≈ (600e-9·2,0)/(0,50e-3) ≈ 2,4e-3 m = 2,4 mm. [web:25]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Young",
+                "Δy",
+                "λL/d",
+                "frange"
+            ]
+        },
+        {
+            "id": "opt_049",
+            "domanda": "Fenditura singola: a = 0,20 mm, λ = 500 nm. L’angolo del primo minimo (piccoli angoli) è circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "0,14°",
+                "1,4°",
+                "14°",
+                "0,014°"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dal primo minimo a·sin(theta)=λ: theta≈λ/a≈(500e-9)/(0,20e-3)=2,5e-3 rad≈0,14°. [web:28]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "diffrazione",
+                "primo minimo",
+                "λ/a",
+                "rad-gradi"
+            ]
+        },
+        {
+            "id": "opt_050",
+            "domanda": "Per n1=1,50 e n2=1,00, se l’angolo di incidenza è 50°, cosa accade (idealmente)?",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "Rifrazione normale, senza riflessione",
+                "Riflessione totale interna",
+                "Nessun fenomeno: la luce si ferma",
+                "La luce passa sempre con theta2=0°"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché theta_c≈41,8° (sin(theta_c)=n2/n1) e 50°>theta_c, si verifica riflessione totale interna. [web:42]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "TIR",
+                "theta_c",
+                "vetro-aria",
+                "50 gradi"
+            ]
+        },
+        {
+            "id": "opt_051",
+            "domanda": "Calcola l’angolo di Brewster per passaggio aria (n1=1,00) → vetro (n2=1,50).",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "Circa 34°",
+                "Circa 45°",
+                "Circa 56°",
+                "Circa 75°"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con tan(theta_B)=n2/n1=1,5 si ha theta_B≈arctan(1,5)≈56°. [web:46]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Brewster",
+                "arctan",
+                "1.5",
+                "polarizzazione"
+            ]
+        },
+        {
+            "id": "opt_052",
+            "domanda": "Una lente ha f = 10 cm e produce un’immagine reale a q = 20 cm. Quanto vale p?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "5 cm",
+                "10 cm",
+                "20 cm",
+                "∞"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Da 1/p + 1/q = 1/f: 1/p = 1/10 − 1/20 = 1/20 quindi p = 20 cm. [web:24]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lente",
+                "p",
+                "q",
+                "f"
+            ]
+        },
+        {
+            "id": "opt_053",
+            "domanda": "Una lente ha D = 5 diottrie. Qual è la sua distanza focale f?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "0,05 m",
+                "0,20 m",
+                "0,50 m",
+                "2,0 m"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché D = 1/f, si ha f = 1/D = 1/5 = 0,20 m. [web:24]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "diottrie",
+                "focale",
+                "1/D",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_054",
+            "domanda": "Specchio sferico: do = 40 cm, f = 20 cm. Calcola di.",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "10 cm",
+                "20 cm",
+                "40 cm",
+                "∞"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "Con 1/f = 1/do + 1/di: 1/20 = 1/40 + 1/di ⇒ 1/di = 1/20 − 1/40 = 1/40 quindi di = 40 cm. [web:51]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "specchio",
+                "equazione",
+                "do",
+                "di"
+            ]
+        },
+        {
+            "id": "opt_055",
+            "domanda": "Doppia fenditura: se raddoppi d (distanza tra fenditure) mantenendo λ e L costanti, la spaziatura delle frange Δy:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Raddoppia",
+                "Si dimezza",
+                "Resta uguale",
+                "Quadruplica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché Δy ≈ λL/d, raddoppiare d dimezza Δy. [web:25]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Young",
+                "Δy",
+                "inverso",
+                "d"
+            ]
+        },
+        {
+            "id": "opt_056",
+            "domanda": "Diffrazione da fenditura: se dimezzi la larghezza a, l’angolo del primo minimo (piccoli angoli):",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "Si dimezza",
+                "Resta uguale",
+                "Raddoppia",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Dal primo minimo theta≈λ/a, quindi dimezzare a raddoppia theta. [web:28]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "diffrazione",
+                "λ/a",
+                "minimo",
+                "proporzionalità"
+            ]
+        },
+        {
+            "id": "opt_057",
+            "domanda": "Un raggio passa da acqua (n=1,33) ad aria (n=1,00). Qual è circa theta_c?",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "Circa 49°",
+                "Circa 62°",
+                "Circa 75°",
+                "Circa 30°"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con sin(theta_c)=n2/n1=1,00/1,33≈0,752 quindi theta_c≈48,8° (≈49°). [web:42]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "acqua-aria",
+                "theta_c",
+                "arcsin",
+                "TIR"
+            ]
+        },
+        {
+            "id": "opt_058",
+            "domanda": "Una luce non polarizzata di intensità I_in attraversa un polarizzatore ideale: I_out vale:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "I_in",
+                "I_in/2",
+                "I_in/4",
+                "0"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per luce non polarizzata, l’intensità media trasmessa da un polarizzatore ideale è I_out = 1/2 I_in. [web:37]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "non polarizzata",
+                "polarizzatore",
+                "metà",
+                "intensità"
+            ]
+        },
+        {
+            "id": "opt_059",
+            "domanda": "Dopo un primo polarizzatore, l’intensità è I0. Un secondo polarizzatore è ruotato di 45°: intensità finale?",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "I0",
+                "0,75 I0",
+                "0,50 I0",
+                "0,25 I0"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Per Malus I = I0·cos^2(45°)=I0·(√2/2)^2=0,5 I0. [web:37]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Malus",
+                "45 gradi",
+                "cos^2",
+                "0.5"
+            ]
+        },
+        {
+            "id": "opt_060",
+            "domanda": "Una lente convergente ha f = 25 cm. Un oggetto è posto a p = 25 cm. Dove si forma l’immagine?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "A q = 25 cm",
+                "A q = 50 cm",
+                "All’infinito",
+                "A q = 0"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con 1/p + 1/q = 1/f, se p=f allora 1/q=0 e l’immagine è all’infinito. [web:24]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p=f",
+                "immagine",
+                "infinito",
+                "lente convergente"
+            ]
+        },
+        {
+            "id": "opt_061",
+            "domanda": "Un raggio passa da aria (1,00) a acqua (1,33) con theta1 = 45°. theta2 è circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "32°",
+                "45°",
+                "60°",
+                "75°"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con Snell: sin(theta2)=(1,00/1,33)·sin45°≈0,752·0,707≈0,532 quindi theta2≈32°. [web:18]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Snell",
+                "aria-acqua",
+                "45",
+                "rifrazione"
+            ]
+        },
+        {
+            "id": "opt_062",
+            "domanda": "Doppia fenditura: se raddoppi λ mantenendo L e d costanti, la spaziatura frange Δy:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Si dimezza",
+                "Raddoppia",
+                "Resta uguale",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché Δy ≈ λL/d, raddoppiare λ raddoppia Δy. [web:25]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Young",
+                "lambda",
+                "Δy",
+                "proporzionale"
+            ]
+        },
+        {
+            "id": "opt_063",
+            "domanda": "Specchio sferico: se R = 1,0 m, quanto vale f?",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "0,25 m",
+                "0,50 m",
+                "1,0 m",
+                "2,0 m"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per lo specchio sferico vale f = R/2, quindi f = 0,50 m. [web:54]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "specchio",
+                "R/2",
+                "f",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_064",
+            "domanda": "Una lente ha f = 40 cm e un oggetto a p = 20 cm. Quanto vale q (convenzione standard, lente convergente)?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "q = +40 cm (reale)",
+                "q = +80 cm (reale)",
+                "q = −40 cm (virtuale)",
+                "q = −80 cm (virtuale)"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Da 1/20 + 1/q = 1/40 ⇒ 1/q = 1/40 − 1/20 = −1/40 quindi q = −40 cm (immagine virtuale). [web:30]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "q negativo",
+                "virtuale",
+                "1/p+1/q",
+                "f"
+            ]
+        },
+        {
+            "id": "opt_065",
+            "domanda": "Un raggio incide su uno specchio piano con angolo 20° rispetto alla normale. L’angolo di riflessione (rispetto alla normale) è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione",
+            "opzioni": [
+                "10°",
+                "20°",
+                "40°",
+                "70°"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per la legge della riflessione, l’angolo di riflessione è uguale all’angolo di incidenza rispetto alla normale. [web:31]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "specchio piano",
+                "incidenza",
+                "riflessione",
+                "uguali"
+            ]
+        },
+        {
+            "id": "opt_066",
+            "domanda": "Se in un esperimento di Young L triplica, con λ e d costanti, la distanza tra frange Δy:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Si riduce a 1/3",
+                "Triplica",
+                "Resta uguale",
+                "Quadruplica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dato che Δy ≈ λL/d, se L triplica allora Δy triplica. [web:25]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Young",
+                "L",
+                "Δy",
+                "proporzionale"
+            ]
+        },
+        {
+            "id": "opt_067",
+            "domanda": "Diffrazione: a = 0,10 mm, λ = 500 nm. theta (primo minimo, piccoli angoli) circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "0,29°",
+                "2,9°",
+                "29°",
+                "0,029°"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "theta≈λ/a≈(500e-9)/(0,10e-3)=5e-3 rad≈0,29°. [web:28]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "diffrazione",
+                "λ/a",
+                "primo minimo",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_068",
+            "domanda": "Angolo di Brewster: se n2/n1 aumenta, theta_B:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "Diminuisce",
+                "Aumenta",
+                "Resta uguale",
+                "Diventa sempre 0°"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché tan(theta_B)=n2/n1, se il rapporto aumenta anche theta_B aumenta. [web:46]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Brewster",
+                "tan",
+                "rapporto",
+                "aumenta"
+            ]
+        },
+        {
+            "id": "opt_069",
+            "domanda": "Una lente ha f = 0,25 m. Quale potere diottrico ha?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "0,25 D",
+                "2 D",
+                "4 D",
+                "25 D"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "D = 1/f = 1/0,25 = 4 diottrie. [web:24]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "diottrie",
+                "1/f",
+                "0.25",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_070",
+            "domanda": "Un raggio passa da un mezzo 1 a mezzo 2. Se n2 > n1, rispetto alla normale il raggio rifratto tende a:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Avvicinarsi alla normale",
+                "Allontanarsi dalla normale",
+                "Non cambiare mai direzione",
+                "Diventare sempre tangente"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dalla legge di Snell, entrando in un mezzo più rifrangente (n2>n1) l’angolo rifratto diminuisce e il raggio si avvicina alla normale. [web:19]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "rifrazione",
+                "n2>n1",
+                "normale",
+                "Snell"
+            ]
+        },
+        {
+            "id": "opt_071",
+            "domanda": "Specchio sferico: do = 60 cm e di = 30 cm. Calcola f.",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "10 cm",
+                "15 cm",
+                "20 cm",
+                "30 cm"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Da 1/f=1/do+1/di=1/60+1/30=1/60+2/60=3/60=1/20 quindi f=20 cm. [web:51]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "specchio",
+                "f",
+                "do di",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_072",
+            "domanda": "Polarizzazione: se theta = 30° tra polarizzazione e asse dell’analizzatore, I/I0 vale:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "cos(30°)",
+                "cos^2(30°)",
+                "sin^2(30°)",
+                "tan(30°)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per Malus vale I/I0 = cos^2(theta), quindi qui cos^2(30°). [web:37]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Malus",
+                "rapporto",
+                "cos^2",
+                "30 gradi"
+            ]
+        },
+        {
+            "id": "opt_073",
+            "domanda": "Doppia fenditura: λ=500 nm, L=1 m, d=0,25 mm. Δy circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "0,5 mm",
+                "2,0 mm",
+                "0,2 mm",
+                "5,0 mm"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Δy≈λL/d≈(500e-9·1)/(0,25e-3)=2e-3 m=2,0 mm. [web:25]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Young",
+                "Δy",
+                "calcolo",
+                "λL/d"
+            ]
+        },
+        {
+            "id": "opt_074",
+            "domanda": "Una lente convergente forma un’immagine reale a q = 40 cm di un oggetto a p = 20 cm. Qual è f?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "10 cm",
+                "13,3 cm",
+                "20 cm",
+                "30 cm"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "1/f=1/p+1/q=1/20+1/40=2/40+1/40=3/40 quindi f=40/3≈13,3 cm. [web:24]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lente",
+                "f",
+                "p q",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_075",
+            "domanda": "Riflessione totale interna: n1=1,50, n2=1,20. theta_c è circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "53°",
+                "37°",
+                "30°",
+                "80°"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "sin(theta_c)=n2/n1=1,20/1,50=0,8 quindi theta_c≈53°. [web:42]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "theta_c",
+                "sin",
+                "n2/n1",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_076",
+            "domanda": "Una lente con f = 50 cm ha D pari a:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "0,5 D",
+                "2 D",
+                "5 D",
+                "0,02 D"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "D=1/f con f in metri: f=0,50 m ⇒ D=2 D. [web:24]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "diottrie",
+                "1/f",
+                "0.5m",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_077",
+            "domanda": "Uno specchio: f = 10 cm, do = 15 cm. di vale:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "di = 30 cm",
+                "di = 15 cm",
+                "di = 6 cm",
+                "di = 5 cm"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "1/10=1/15+1/di ⇒ 1/di=1/10−1/15=(3−2)/30=1/30 ⇒ di=30 cm. [web:51]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "specchio",
+                "calcolo",
+                "1/f",
+                "do di"
+            ]
+        },
+        {
+            "id": "opt_078",
+            "domanda": "Due polarizzatori con angolo 30°: se l’intensità dopo il primo è I0, dopo il secondo è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "0,25 I0",
+                "0,50 I0",
+                "0,75 I0",
+                "I0"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Per Malus I=I0·cos^2(30°)=I0·(0,866)^2≈0,75 I0. [web:37]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Malus",
+                "30 gradi",
+                "0.75",
+                "cos^2"
+            ]
+        },
+        {
+            "id": "opt_079",
+            "domanda": "Interferenza: condizione di massimo in forma d·sin(theta)=k·λ. Se k aumenta, l’angolo theta del massimo:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Diminuisce",
+                "Aumenta",
+                "Resta uguale",
+                "Diventa sempre 0"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da d·sin(theta)=k·λ, a d e λ fissi un k maggiore richiede sin(theta) maggiore quindi theta maggiore. [web:22]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "massimi",
+                "k",
+                "Young",
+                "sin"
+            ]
+        },
+        {
+            "id": "opt_080",
+            "domanda": "Diffrazione: condizione a·sin(theta)=m·λ (m≠0). Se λ aumenta, l’angolo dei minimi:",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "Diminuisce",
+                "Aumenta",
+                "Resta uguale",
+                "Diventa sempre 0"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con a·sin(theta)=m·λ, a parità di a e m, aumentando λ aumenta sin(theta) e quindi theta. [web:28]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "diffrazione",
+                "lambda",
+                "minimi",
+                "a sinθ"
+            ]
+        },
+        {
+            "id": "opt_081",
+            "domanda": "Due interfacce: aria (1,00) → vetro (1,50) → aria (1,00) con lastre a facce parallele. Se l’angolo d’incidenza sulla prima faccia è 40°, l’angolo di emergenza in aria (rispetto alla normale) è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "40°",
+                "Più grande di 40°",
+                "Più piccolo di 40°",
+                "90°"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Applicando Snell su due superfici parallele (n1·sin(theta1)=n2·sin(theta2) e poi n2·sin(theta2)=n1·sin(theta3)) si ottiene theta3=theta1, quindi 40°. [web:18]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "lastre parallele",
+                "Snell",
+                "emergenza",
+                "angolo"
+            ]
+        },
+        {
+            "id": "opt_082",
+            "domanda": "Un raggio passa da vetro (1,50) ad aria (1,00). Se theta1 = 30°, theta2 vale circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "19°",
+                "30°",
+                "49°",
+                "Nessuna rifrazione: riflessione totale"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con Snell: sin(theta2)=(n1/n2)·sin30°=(1,5/1,0)·0,5=0,75 ⇒ theta2≈48,6° (≈49°), e non c’è TIR perché theta1 < theta_c≈41,8° non è vero (qui theta1=30°). [web:18][web:42]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Snell",
+                "vetro-aria",
+                "angolo",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_083",
+            "domanda": "Riflessione totale interna: vetro (1,50) → aria (1,00). Quale tra questi angoli di incidenza produce sicuramente TIR?",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "35°",
+                "40°",
+                "42°",
+                "30°"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Per vetro-aria theta_c≈41,8° (sin(theta_c)=n2/n1), quindi un angolo > theta_c come 42° produce TIR. [web:42]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "TIR",
+                "theta_c",
+                "41.8",
+                "scelta"
+            ]
+        },
+        {
+            "id": "opt_084",
+            "domanda": "Due lenti sottili in contatto hanno f1 = 20 cm e f2 = 30 cm. Assumendo approssimazione di lenti sottili, la focale equivalente f_eq è circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "12 cm",
+                "20 cm",
+                "50 cm",
+                "−12 cm"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Usando l’idea di potere diottrico (D=1/f) la lente equivalente ha D_eq=D1+D2=1/0,20+1/0,30=5+3,33=8,33 D quindi f_eq≈0,12 m=12 cm. [web:24]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "lenti in contatto",
+                "diottrie",
+                "f equivalente",
+                "somma poteri"
+            ]
+        },
+        {
+            "id": "opt_085",
+            "domanda": "Una lente convergente (f = 15 cm) forma un’immagine reale su uno schermo posto a 30 cm dalla lente. A che distanza deve essere posto l’oggetto?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "10 cm",
+                "15 cm",
+                "30 cm",
+                "∞"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con 1/p + 1/q = 1/f e q=30 cm: 1/p = 1/15 − 1/30 = 1/30 quindi p = 30 cm. [web:24]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "schermo",
+                "q",
+                "1/p+1/q",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_086",
+            "domanda": "Specchio sferico: do = 25 cm e f = 10 cm. Calcola di.",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "di = 16,7 cm",
+                "di = 40 cm",
+                "di = 10 cm",
+                "di = 2,5 cm"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Da 1/f=1/do+1/di: 1/10=1/25+1/di ⇒ 1/di=1/10−1/25=(5−2)/50=3/50 ⇒ di≈16,7 cm. [web:51]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "specchio",
+                "di",
+                "calcolo",
+                "punti coniugati"
+            ]
+        },
+        {
+            "id": "opt_087",
+            "domanda": "Polarizzatori: luce non polarizzata di intensità I_in attraversa un polarizzatore, poi un analizzatore a 60°. Intensità finale?",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "I_in",
+                "I_in/2",
+                "I_in/8",
+                "I_in/4"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Dopo il primo polarizzatore I=I_in/2, poi Malus con 60° dà I=(I_in/2)·cos^2(60°)=(I_in/2)·1/4=I_in/8. [web:37]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "non polarizzata",
+                "I/2",
+                "Malus",
+                "I/8"
+            ]
+        },
+        {
+            "id": "opt_088",
+            "domanda": "Angolo di Brewster: aria→vetro (n2=1,50). Se l’incidenza è theta_B, quale relazione geometrica tra raggio riflesso e rifratto è tipica?",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "Sono paralleli",
+                "Sono perpendicolari",
+                "Hanno lo stesso angolo rispetto alla superficie",
+                "Non esiste alcuna relazione"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "All’angolo di Brewster, nella derivazione si usa la condizione che i raggi riflesso e rifratto siano ortogonali (theta_i + theta_t = 90°). [web:46]",
+            "difficile": "difficile",
+            "paroleChiave": [
+                "Brewster",
+                "ortogonali",
+                "90 gradi",
+                "riflesso rifratto"
+            ]
+        },
+        {
+            "id": "opt_089",
+            "domanda": "Interferenza a doppia fenditura: λ = 650 nm, L = 1,5 m, d = 0,30 mm. Δy circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "1,1 mm",
+                "3,3 mm",
+                "0,33 mm",
+                "11 mm"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Δy≈λL/d≈(650e-9·1,5)/(0,30e-3)=3,25e-3 m≈3,3 mm. [web:25]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Young",
+                "frange",
+                "λL/d",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_090",
+            "domanda": "Diffrazione: a = 0,05 mm e λ = 500 nm. Primo minimo (rad) circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "0,010 rad",
+                "0,0010 rad",
+                "0,10 rad",
+                "1,0 rad"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "theta≈λ/a≈(500e-9)/(0,05e-3)=1,0e-2 rad. [web:28]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "diffrazione",
+                "primo minimo",
+                "rad",
+                "λ/a"
+            ]
+        },
+        {
+            "id": "opt_091",
+            "domanda": "Lente convergente f = 12 cm, oggetto p = 18 cm. Calcola q.",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "q = 36 cm",
+                "q = 24 cm",
+                "q = 12 cm",
+                "q = −36 cm"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "1/18 + 1/q = 1/12 ⇒ 1/q = 1/12 − 1/18 = (3−2)/36 = 1/36 ⇒ q = 36 cm. [web:24]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "lente",
+                "q",
+                "calcolo",
+                "1/p+1/q"
+            ]
+        },
+        {
+            "id": "opt_092",
+            "domanda": "Lente convergente f = 12 cm, oggetto p = 18 cm e altezza oggetto h = 2,0 cm. Altezza immagine (modulo) circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "2,0 cm",
+                "3,0 cm",
+                "4,0 cm",
+                "0,67 cm"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da m=|q/p| e (dal problema precedente) q=36 cm, |m|=36/18=2 quindi |h'|=|m|·h=2·2,0=4,0 cm. [web:27]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "ingrandimento",
+                "altezza",
+                "m=q/p",
+                "immagine"
+            ]
+        },
+        {
+            "id": "opt_093",
+            "domanda": "Specchio sferico: f = 20 cm, do = 10 cm. Calcola di (con convenzioni standard).",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "di = +20 cm",
+                "di = +10 cm",
+                "di = −20 cm",
+                "di = ∞"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "1/20 = 1/10 + 1/di ⇒ 1/di = 1/20 − 1/10 = −1/20 quindi di = −20 cm (immagine virtuale). [web:51]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "specchio",
+                "di negativo",
+                "virtuale",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_094",
+            "domanda": "Riflessione totale interna: n1 = 1,60, n2 = 1,20. Quale angolo garantisce TIR?",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "40°",
+                "48°",
+                "55°",
+                "30°"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "sin(theta_c)=n2/n1=1,20/1,60=0,75 ⇒ theta_c≈48,6°, quindi 55°>theta_c garantisce TIR. [web:42]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "TIR",
+                "theta_c",
+                "0.75",
+                "garantisce"
+            ]
+        },
+        {
+            "id": "opt_095",
+            "domanda": "Doppia fenditura: se vuoi dimezzare Δy senza cambiare λ, cosa puoi fare (tra le opzioni)?",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Raddoppiare L",
+                "Dimezzare d",
+                "Raddoppiare d",
+                "Raddoppiare λ"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Poiché Δy≈λL/d, per dimezzare Δy a λ e L fissi devi raddoppiare d. [web:25]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Young",
+                "Δy",
+                "λL/d",
+                "controllo parametri"
+            ]
+        },
+        {
+            "id": "opt_096",
+            "domanda": "Diffrazione: se a raddoppia (λ costante), il primo minimo (piccoli angoli) cambia di un fattore:",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "2",
+                "1/2",
+                "4",
+                "1"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dal primo minimo theta≈λ/a, raddoppiare a dimezza theta. [web:28]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "diffrazione",
+                "scalare",
+                "lambda/a",
+                "minimo"
+            ]
+        },
+        {
+            "id": "opt_097",
+            "domanda": "Un raggio passa aria→vetro con theta1 = 60° (n2=1,50). Qual è theta2 circa?",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "35°",
+                "60°",
+                "75°",
+                "15°"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "sin(theta2)=(1/1,5)·sin60°≈0,6667·0,866≈0,577 ⇒ theta2≈35°. [web:18]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Snell",
+                "60 gradi",
+                "aria-vetro",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_098",
+            "domanda": "Angolo di Brewster: mezzo 1 aria (1,00), mezzo 2 acqua (1,33). theta_B circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "34°",
+                "53°",
+                "60°",
+                "48°"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "tan(theta_B)=n2/n1=1,33 ⇒ theta_B≈arctan(1,33)≈53°. [web:46]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Brewster",
+                "acqua",
+                "arctan",
+                "53"
+            ]
+        },
+        {
+            "id": "opt_099",
+            "domanda": "Lente: f = 10 cm, oggetto p = 12 cm. Qual è q?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "q = 60 cm",
+                "q = 6 cm",
+                "q = 12 cm",
+                "q = −60 cm"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "1/12 + 1/q = 1/10 ⇒ 1/q = 1/10 − 1/12 = (6−5)/60 = 1/60 ⇒ q = 60 cm. [web:24]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "lente",
+                "q",
+                "vicino alla focale",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_100",
+            "domanda": "Lente: f = 10 cm, p = 12 cm, altezza oggetto 1,5 cm. Altezza immagine (modulo) circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "7,5 cm",
+                "1,25 cm",
+                "0,25 cm",
+                "15 cm"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con q=60 cm e |m|=|q/p|=60/12=5, l’altezza immagine è |h'|=5·1,5=7,5 cm. [web:27]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "ingrandimento",
+                "altezza",
+                "m",
+                "q/p"
+            ]
+        },
+        {
+            "id": "opt_101",
+            "domanda": "Specchio: f = 15 cm, do = 10 cm. di vale:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "di = +30 cm",
+                "di = −30 cm",
+                "di = +6 cm",
+                "di = −6 cm"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "1/15 = 1/10 + 1/di ⇒ 1/di = 1/15 − 1/10 = (2−3)/30 = −1/30 ⇒ di = −30 cm. [web:51]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "specchio",
+                "di",
+                "virtuale",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "opt_102",
+            "domanda": "Riflessione: un raggio incide con 25° rispetto alla superficie (non alla normale). L’angolo rispetto alla normale è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione",
+            "opzioni": [
+                "25°",
+                "65°",
+                "90°",
+                "115°"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Gli angoli per la legge della riflessione si misurano rispetto alla normale, quindi se è 25° rispetto alla superficie è 90°−25°=65° rispetto alla normale. [web:31]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "normale",
+                "superficie",
+                "conversione",
+                "riflessione"
+            ]
+        },
+        {
+            "id": "opt_103",
+            "domanda": "Interferenza: d = 0,40 mm, L = 2,0 m. Se passi da λ=500 nm a λ=700 nm, Δy cambia di un fattore:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "700/500",
+                "500/700",
+                "(700/500)^2",
+                "Non cambia"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Poiché Δy≈λL/d, passando da 500 a 700 nm Δy si moltiplica per 700/500. [web:25]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Young",
+                "lambda",
+                "fattore",
+                "proporzionalità"
+            ]
+        },
+        {
+            "id": "opt_104",
+            "domanda": "Diffrazione: a = 0,20 mm, λ = 400 nm e poi λ = 600 nm. Il rapporto tra i primi minimi theta_600/theta_400 vale circa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "2/3",
+                "3/2",
+                "1/2",
+                "1"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con theta≈λ/a, il rapporto è 600/400 = 3/2. [web:28]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "diffrazione",
+                "rapporto",
+                "lambda",
+                "minimo"
+            ]
+        },
+        {
+            "id": "opt_105",
+            "domanda": "Polarizzazione: dopo un polarizzatore ideale, la luce ha intensità I0. Ruoti l’analizzatore di 30° e poi di 60° (rispetto alla polarizzazione). Il rapporto I(60)/I(30) vale:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "1/3",
+                "1/2",
+                "1",
+                "3"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per Malus I(theta)=I0·cos^2(theta), quindi I(60)/I(30)=cos^2(60)/cos^2(30)=(0,5^2)/(0,866^2)≈0,25/0,75≈1/3. [web:37]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Malus",
+                "rapporto intensità",
+                "cos^2",
+                "30 60"
+            ]
+        },
+        {
+            "id": "opt_106",
+            "domanda": "Angolo critico: se n1 resta fisso e n2 diminuisce, theta_c:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "Aumenta",
+                "Diminuisce",
+                "Resta uguale",
+                "Diventa sempre 90°"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché sin(theta_c)=n2/n1, se n2 diminuisce anche sin(theta_c) diminuisce e quindi theta_c diminuisce. [web:42]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "theta_c",
+                "n2/n1",
+                "dipendenza",
+                "TIR"
+            ]
+        },
+        {
+            "id": "opt_107",
+            "domanda": "Rifrazione: aria→vetro (1,50). Se theta1 aumenta, cosa accade a theta2?",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "theta2 diminuisce sempre",
+                "theta2 aumenta (fino al limite imposto da Snell)",
+                "theta2 resta costante",
+                "theta2 diventa sempre 90°"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dalla legge di Snell n1·sin(theta1)=n2·sin(theta2), aumentando theta1 aumenta sin(theta2) e quindi theta2 (entro i limiti). [web:18]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Snell",
+                "monotonia",
+                "angoli",
+                "rifrazione"
+            ]
+        }
+    ]
+}

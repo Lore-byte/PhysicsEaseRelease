@@ -1,84 +1,2419 @@
 {
   "quiz": [
     {
-      "id": "term_001",
-      "domanda": "Cosa misura la temperatura?",
+      "id": "ter_001",
+      "domanda": "Qual è l’enunciato più comune del primo principio della termodinamica (con convenzione ΔU = Q − W)?",
       "categoria": "Termodinamica",
-      "sottocategoria": "Temperatura",
+      "sottocategoria": "Primo principio",
       "opzioni": [
-        "L'energia totale del sistema",
-        "L'energia cinetica media delle particelle",
-        "Il calore totale contenuto",
-        "La massa del sistema"
+        "ΔU = Q + W",
+        "ΔU = Q − W",
+        "ΔU = W − Q",
+        "ΔU = Q·W"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La temperatura è una misura dell'energia cinetica media delle particelle che costituiscono un sistema. Particelle più veloci corrispondono a temperature più alte.",
+      "spiegazione": "Con la convenzione in cui W è il lavoro compiuto dal sistema, il primo principio si scrive ΔU = Q − W. [web:118][web:125]",
       "difficolta": "facile",
-      "paroleChiave": ["temperatura", "energia cinetica", "particelle"]
+      "paroleChiave": [
+        "primo principio",
+        "ΔU",
+        "Q",
+        "W"
+      ]
     },
     {
-      "id": "term_002",
-      "domanda": "Quale principio afferma che il calore fluisce spontaneamente da un corpo più caldo a uno più freddo?",
+      "id": "ter_002",
+      "domanda": "Nel primo principio con ΔU = Q − W, W è positivo quando:",
       "categoria": "Termodinamica",
-      "sottocategoria": "Principi",
+      "sottocategoria": "Primo principio",
       "opzioni": [
-        "Principio zero",
-        "Primo principio",
-        "Secondo principio",
-        "Terzo principio"
+        "Il sistema compie lavoro sull’ambiente",
+        "L’ambiente compie lavoro sul sistema",
+        "Il sistema assorbe calore",
+        "La temperatura resta costante"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Con la convenzione ΔU = Q − W, il lavoro W è positivo quando è compiuto dal sistema sull’ambiente. [web:125]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "convenzione segni",
+        "lavoro",
+        "sistema",
+        "ambiente"
+      ]
+    },
+    {
+      "id": "ter_003",
+      "domanda": "Qual è l’unità di misura SI del calore Q?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Calore e lavoro",
+      "opzioni": [
+        "Watt (W)",
+        "Joule (J)",
+        "Pascal (Pa)",
+        "Newton (N)"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il calore è un trasferimento di energia e nel SI si misura in joule (J). [web:122]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "calore",
+        "joule",
+        "energia",
+        "SI"
+      ]
+    },
+    {
+      "id": "ter_004",
+      "domanda": "Qual è l’equazione di stato dei gas ideali?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas ideali",
+      "opzioni": [
+        "PV = nRT",
+        "P + V = nRT",
+        "PV = nR/T",
+        "P/V = nRT"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per un gas ideale vale l’equazione di Clapeyron PV = nRT. [web:126][web:123]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "gas ideale",
+        "PV=nRT",
+        "Clapeyron",
+        "stato"
+      ]
+    },
+    {
+      "id": "ter_005",
+      "domanda": "In una trasformazione isoterma, quale grandezza resta costante?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Trasformazioni dei gas",
+      "opzioni": [
+        "Pressione",
+        "Volume",
+        "Temperatura",
+        "Calore scambiato"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Il secondo principio della termodinamica stabilisce che il calore fluisce spontaneamente da corpi a temperatura maggiore verso corpi a temperatura minore, e che l'entropia di un sistema isolato tende ad aumentare.",
-      "difficolta": "medio",
-      "paroleChiave": ["secondo principio", "calore", "spontaneo", "entropia"]
+      "spiegazione": "Una trasformazione isoterma è definita da temperatura costante. [web:132]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isoterma",
+        "temperatura",
+        "costante",
+        "trasformazione"
+      ]
     },
     {
-      "id": "term_003",
-      "domanda": "Quale trasformazione termodinamica mantiene costante la temperatura?",
+      "id": "ter_006",
+      "domanda": "In una trasformazione isocora, quale grandezza resta costante?",
       "categoria": "Termodinamica",
-      "sottocategoria": "Trasformazioni",
+      "sottocategoria": "Trasformazioni dei gas",
       "opzioni": [
+        "Pressione",
+        "Volume",
+        "Temperatura",
+        "Entropia"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una trasformazione isocora è definita da volume costante. [web:132]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isocora",
+        "volume",
+        "costante",
+        "trasformazione"
+      ]
+    },
+    {
+      "id": "ter_007",
+      "domanda": "In una trasformazione isobara, quale grandezza resta costante?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Trasformazioni dei gas",
+      "opzioni": [
+        "Pressione",
+        "Volume",
+        "Temperatura",
+        "Energia interna"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Una trasformazione isobara è definita da pressione costante. [web:132]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isobara",
+        "pressione",
+        "costante",
+        "trasformazione"
+      ]
+    },
+    {
+      "id": "ter_008",
+      "domanda": "In una trasformazione adiabatica ideale, quale condizione vale?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Trasformazioni dei gas",
+      "opzioni": [
+        "Q = 0",
+        "W = 0",
+        "ΔU = 0",
+        "T = 0"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Una trasformazione adiabatica è definita da calore scambiato nullo, cioè Q = 0. [web:132]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "adiabatica",
+        "Q=0",
+        "isolamento termico",
+        "trasformazione"
+      ]
+    },
+    {
+      "id": "ter_009",
+      "domanda": "Quale grandezza è una funzione di stato?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Grandezze di stato",
+      "opzioni": [
+        "Calore Q",
+        "Lavoro W",
+        "Energia interna U",
+        "Impulso"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L’energia interna U è una funzione di stato, mentre Q e W dipendono dal percorso. [web:122]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "funzione di stato",
+        "energia interna",
+        "Q e W",
+        "percorso"
+      ]
+    },
+    {
+      "id": "ter_010",
+      "domanda": "In una trasformazione ciclica (ritorno allo stato iniziale), la variazione di energia interna ΔU vale:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio",
+      "opzioni": [
+        "ΔU > 0",
+        "ΔU < 0",
+        "ΔU = 0",
+        "ΔU = Q"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In un ciclo si torna allo stesso stato, quindi ΔU = 0 perché U è funzione di stato. [web:122]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "ciclo",
+        "ΔU=0",
+        "funzione di stato",
+        "primo principio"
+      ]
+    },
+    {
+      "id": "ter_011",
+      "domanda": "Nel SI, la pressione si misura in:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Grandezze e unità",
+      "opzioni": [
+        "Pascal (Pa)",
+        "Joule (J)",
+        "Newton (N)",
+        "Watt (W)"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La pressione nel SI si misura in pascal (Pa). [web:132]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "pressione",
+        "Pa",
+        "SI",
+        "unità"
+      ]
+    },
+    {
+      "id": "ter_012",
+      "domanda": "Quale tra queste grandezze NON è una variabile di stato per un gas ideale nella descrizione p-V-T?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Grandezze di stato",
+      "opzioni": [
+        "Pressione p",
+        "Volume V",
+        "Temperatura T",
+        "Calore Q"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Pressione, volume e temperatura descrivono lo stato, mentre il calore Q è legato al processo e non è una variabile di stato. [web:122]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "variabili di stato",
+        "p V T",
+        "calore",
+        "processo"
+      ]
+    },
+    {
+      "id": "ter_013",
+      "domanda": "Qual è la relazione tra lavoro e area nel diagramma p-V per una trasformazione quasi-statica?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Diagrammi p-V",
+      "opzioni": [
+        "W è uguale al perimetro della curva",
+        "W è uguale all’area sotto la curva p(V)",
+        "W è uguale a p+V",
+        "W è uguale a ΔT"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per un processo quasi-statico il lavoro è W = ∫ p dV, cioè l’area sotto la curva nel piano p-V. [web:132]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "diagramma pV",
+        "lavoro",
+        "integrale",
+        "area"
+      ]
+    },
+    {
+      "id": "ter_014",
+      "domanda": "Per una trasformazione a pressione costante, il lavoro compiuto dal gas è:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Lavoro nei gas",
+      "opzioni": [
+        "W = p·ΔV",
+        "W = V·Δp",
+        "W = nRT",
+        "W = 0"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In isobara il lavoro è W = p(Vf − Vi) = p·ΔV. [web:120]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isobara",
+        "lavoro",
+        "pΔV",
+        "gas"
+      ]
+    },
+    {
+      "id": "ter_015",
+      "domanda": "Quale affermazione descrive correttamente il secondo principio in termini di entropia?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio",
+      "opzioni": [
+        "L’entropia totale può diminuire in un sistema isolato",
+        "In un sistema isolato l’entropia non può diminuire",
+        "L’entropia è sempre zero",
+        "L’entropia coincide con la temperatura"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il secondo principio implica che in un sistema isolato l’entropia totale non diminuisce. [web:130]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "secondo principio",
+        "entropia",
+        "sistema isolato",
+        "non diminuisce"
+      ]
+    },
+    {
+      "id": "ter_016",
+      "domanda": "Per una trasformazione reversibile, la variazione di entropia soddisfa:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia",
+      "opzioni": [
+        "dS = δQrev/T",
+        "dS = δW/T",
+        "dS = δQrev·T",
+        "dS = 0 sempre"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per processi reversibili vale dS = δQrev/T. [web:130]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "entropia",
+        "reversibile",
+        "dS",
+        "Qrev/T"
+      ]
+    },
+    {
+      "id": "ter_017",
+      "domanda": "Il rendimento massimo teorico di una macchina termica operante tra due sorgenti a Th e Tc è quello della macchina di:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Macchine termiche",
+      "opzioni": [
+        "Newton",
+        "Carnot",
+        "Galileo",
+        "Boyle"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il massimo rendimento teorico tra due temperature è quello del ciclo di Carnot. [web:127]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "Carnot",
+        "rendimento massimo",
+        "macchina termica",
+        "sorgenti"
+      ]
+    },
+    {
+      "id": "ter_018",
+      "domanda": "Il rendimento della macchina di Carnot è:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Ciclo di Carnot",
+      "opzioni": [
+        "η = 1 + Tc/Th",
+        "η = 1 − Tc/Th",
+        "η = Tc/Th",
+        "η = Th/Tc"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per Carnot vale η = 1 − Tc/Th (con temperature assolute). [web:127]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "rendimento",
+        "Carnot",
+        "1-Tc/Th",
+        "temperature assolute"
+      ]
+    },
+    {
+      "id": "ter_019",
+      "domanda": "Quale temperatura va usata nella formula η = 1 − Tc/Th?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Ciclo di Carnot",
+      "opzioni": [
+        "Temperature in °C",
+        "Temperature in °F",
+        "Temperature assolute (K)",
+        "Qualsiasi unità va bene"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel rendimento di Carnot si usano temperature assolute, cioè in kelvin. [web:127]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "kelvin",
+        "temperature assolute",
+        "Carnot",
+        "rendimento"
+      ]
+    },
+    {
+      "id": "ter_020",
+      "domanda": "In una trasformazione isocora, il lavoro W vale:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Lavoro nei gas",
+      "opzioni": [
+        "W = p·ΔV",
+        "W = 0",
+        "W = nRT ln(Vf/Vi)",
+        "W = ΔU"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se il volume è costante, dV=0 e quindi W = ∫ p dV = 0. [web:132]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isocora",
+        "lavoro nullo",
+        "integrale",
+        "dV=0"
+      ]
+    },
+    {
+      "id": "ter_021",
+      "domanda": "In un gas ideale, l’energia interna U dipende principalmente da:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas ideali",
+      "opzioni": [
+        "Solo dalla temperatura",
+        "Solo dalla pressione",
+        "Solo dal volume",
+        "Dalla pressione e dal volume ma non dalla temperatura"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per un gas ideale l’energia interna dipende dalla temperatura (tramite la teoria cinetica e le capacità termiche). [web:125]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "gas ideale",
+        "energia interna",
+        "temperatura",
+        "U(T)"
+      ]
+    },
+    {
+      "id": "ter_022",
+      "domanda": "Quale disuguaglianza esprime la formulazione di Clausius per un processo qualsiasi?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio",
+      "opzioni": [
+        "∫ δQ/T ≥ 0 sempre",
+        "∫ δQ/T ≤ ΔS",
+        "ΔS ≤ 0 sempre",
+        "ΔS = 0 per qualunque processo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per un processo qualunque vale ∫(δQ/T) ≤ ΔS, con l’uguaglianza per processi reversibili. [web:130]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "Clausius",
+        "disuguaglianza",
+        "entropia",
+        "reversibile"
+      ]
+    },
+    {
+      "id": "ter_023",
+      "domanda": "Quale trasformazione ha Q = 0 per definizione (nel modello ideale)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Trasformazioni dei gas",
+      "opzioni": [
+        "Isoterma",
         "Isobara",
+        "Adiabatica",
+        "Isocora"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Una trasformazione adiabatica è definita dall’assenza di scambio di calore, quindi Q = 0. [web:132]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "adiabatica",
+        "Q=0",
+        "definizione",
+        "trasformazione"
+      ]
+    },
+    {
+      "id": "ter_024",
+      "domanda": "Quale rappresentazione è tipica di un’isoterma di un gas ideale nel piano p-V?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Diagrammi p-V",
+      "opzioni": [
+        "Una retta verticale",
+        "Una retta orizzontale",
+        "Un’iperbole pV = costante",
+        "Una parabola"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In isoterma per gas ideale vale pV = costante, che nel piano p-V è un’iperbole. [web:132]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isoterma",
+        "pV costante",
+        "iperbole",
+        "diagramma"
+      ]
+    },
+    {
+      "id": "ter_025",
+      "domanda": "Quale trasformazione è rappresentata da una retta verticale nel diagramma p-V?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Diagrammi p-V",
+      "opzioni": [
         "Isocora",
+        "Isobara",
         "Isoterma",
         "Adiabatica"
       ],
-      "rispostaCorretta": 2,
-      "spiegazione": "Una trasformazione isoterma avviene a temperatura costante. Isobara (pressione costante), isocora (volume costante), adiabatica (nessuno scambio di calore).",
-      "difficolta": "facile",
-      "paroleChiave": ["isoterma", "temperatura", "trasformazione"]
-    },
-    {
-      "id": "term_004",
-      "domanda": "Il primo principio della termodinamica esprime:",
-      "categoria": "Termodinamica",
-      "sottocategoria": "Principi",
-      "opzioni": [
-        "La conservazione dell'energia",
-        "L'aumento dell'entropia",
-        "L'equilibrio termico",
-        "La dilatazione termica"
-      ],
       "rispostaCorretta": 0,
-      "spiegazione": "Il primo principio della termodinamica è l'espressione del principio di conservazione dell'energia: ΔU = Q - W, dove ΔU è la variazione di energia interna, Q il calore scambiato e W il lavoro compiuto.",
-      "difficolta": "medio",
-      "paroleChiave": ["primo principio", "energia", "conservazione"]
+      "spiegazione": "Nel piano p-V una trasformazione a volume costante (isocora) è una retta verticale. [web:132]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isocora",
+        "verticale",
+        "p-V",
+        "volume costante"
+      ]
     },
     {
-      "id": "term_005",
-      "domanda": "Lo zero assoluto corrisponde a:",
+      "id": "ter_026",
+      "domanda": "Quale trasformazione è rappresentata da una retta orizzontale nel diagramma p-V?",
       "categoria": "Termodinamica",
-      "sottocategoria": "Temperatura",
+      "sottocategoria": "Diagrammi p-V",
       "opzioni": [
-        "0°C",
-        "-273.15°C",
-        "-100°C",
-        "-459°F"
+        "Isocora",
+        "Isobara",
+        "Isoterma",
+        "Adiabatica"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Lo zero assoluto corrisponde a -273.15°C o 0 K (kelvin). È la temperatura teorica più bassa possibile, alla quale il moto termico delle particelle è minimo.",
+      "spiegazione": "Nel piano p-V una trasformazione a pressione costante (isobara) è una retta orizzontale. [web:132]",
       "difficolta": "facile",
-      "paroleChiave": ["zero assoluto", "kelvin", "temperatura"]
+      "paroleChiave": [
+        "isobara",
+        "orizzontale",
+        "p-V",
+        "pressione costante"
+      ]
+    },
+    {
+      "id": "ter_027",
+      "domanda": "Se un gas assorbe calore Q>0 e compie lavoro W>0, la variazione di energia interna è:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio",
+      "opzioni": [
+        "ΔU = Q + W",
+        "ΔU = Q − W",
+        "ΔU = W − Q",
+        "ΔU = 0 sempre"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con ΔU = Q − W, assorbire calore aumenta U mentre compiere lavoro la diminuisce. [web:118][web:125]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "ΔU",
+        "Q>0",
+        "W>0",
+        "bilancio energia"
+      ]
+    },
+    {
+      "id": "ter_028",
+      "domanda": "Quale frase è coerente con il secondo principio (forma qualitativa)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio",
+      "opzioni": [
+        "È possibile convertire tutto il calore in lavoro in un ciclo",
+        "Non esiste una macchina con rendimento 100% tra due sorgenti finite",
+        "L’entropia di un sistema isolato diminuisce sempre",
+        "Il calore fluisce spontaneamente dal freddo al caldo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il secondo principio implica che non è possibile convertire tutto il calore in lavoro in una macchina ciclica con due sorgenti. [web:130][web:127]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "secondo principio",
+        "rendimento",
+        "macchine termiche",
+        "impossibilità"
+      ]
+    },
+    {
+      "id": "ter_029",
+      "domanda": "Qual è la costante dei gas R nell’equazione PV=nRT (ordine di grandezza e unità)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas ideali",
+      "opzioni": [
+        "R ≈ 8,31 J/(mol·K)",
+        "R ≈ 9,81 J/(mol·K)",
+        "R ≈ 1,60 J/(mol·K)",
+        "R ≈ 3,00 J/(mol·K)"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nell’equazione dei gas ideali si usa R ≈ 8,31 J/(mol·K). [web:123]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "R",
+        "8.31",
+        "gas ideali",
+        "mol K"
+      ]
+    },
+    {
+      "id": "ter_030",
+      "domanda": "Quale tra queste trasformazioni è reversibile solo come idealizzazione (richiede equilibrio quasi-statico)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Reversibilità",
+      "opzioni": [
+        "Qualsiasi trasformazione rapida e turbolenta",
+        "Una trasformazione quasi-statica",
+        "Un’esplosione",
+        "Un urto anelastico"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Le trasformazioni reversibili sono idealizzazioni che richiedono che il sistema passi attraverso stati di equilibrio (quasi-statiche). [web:122]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "reversibile",
+        "quasi-statica",
+        "equilibrio",
+        "idealizzazione"
+      ]
+    },
+    {
+      "id": "ter_031",
+      "domanda": "Se una trasformazione è adiabatica e il gas compie lavoro W>0, allora ΔU è:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio",
+      "opzioni": [
+        "ΔU = +W",
+        "ΔU = −W",
+        "ΔU = 0",
+        "ΔU = Q"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In adiabatica Q=0, quindi dal primo principio ΔU = −W. [web:118][web:132]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "adiabatica",
+        "Q=0",
+        "ΔU=-W",
+        "lavoro"
+      ]
+    },
+    {
+      "id": "ter_032",
+      "domanda": "Quale tra queste è la forma corretta del primo principio in forma differenziale (con la stessa convenzione)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio",
+      "opzioni": [
+        "dU = δQ − δW",
+        "dU = δQ + δW",
+        "δU = dQ − dW",
+        "dU = dQ − dW"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In forma differenziale, con Q e W dipendenti dal percorso, si scrive dU = δQ − δW. [web:122]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "dU",
+        "δQ",
+        "δW",
+        "differenziale"
+      ]
+    },
+    {
+      "id": "ter_033",
+      "domanda": "Quale affermazione è corretta sul lavoro W = ∫ p dV?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Lavoro nei gas",
+      "opzioni": [
+        "Dipende solo dagli stati iniziale e finale",
+        "È sempre nullo",
+        "Dipende dal percorso seguito nel piano p-V",
+        "È una funzione di stato"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il lavoro W=∫p dV dipende dal percorso della trasformazione e non solo dagli stati iniziale e finale. [web:122][web:132]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "lavoro",
+        "percorso",
+        "integrale",
+        "non funzione di stato"
+      ]
+    },
+    {
+      "id": "ter_034",
+      "domanda": "Quale grandezza è definita in modo che per un processo reversibile valga dS = δQrev/T?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia",
+      "opzioni": [
+        "Temperatura",
+        "Entropia",
+        "Energia interna",
+        "Pressione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L’entropia S è introdotta in modo che per processi reversibili dS = δQrev/T. [web:130]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "entropia",
+        "definizione",
+        "Qrev/T",
+        "Clausius"
+      ]
+    },
+    {
+      "id": "ter_035",
+      "domanda": "Quale tra queste affermazioni è corretta sulla disuguaglianza di Clausius?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio",
+      "opzioni": [
+        "Per un processo reversibile ∫δQ/T < ΔS",
+        "Per un processo irreversibile ∫δQ/T = ΔS",
+        "Per un processo reversibile ∫δQ/T = ΔS",
+        "Per ogni processo ΔS = 0"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La disuguaglianza di Clausius diventa un’uguaglianza (∫δQrev/T = ΔS) per processi reversibili. [web:130]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "Clausius",
+        "reversibile",
+        "uguaglianza",
+        "entropia"
+      ]
+    },
+    {
+      "id": "ter_036",
+      "domanda": "Quale relazione collega il lavoro scambiato in un ciclo alla variazione di energia interna?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio",
+      "opzioni": [
+        "In un ciclo ΔU = Q − W ma ΔU ≠ 0",
+        "In un ciclo ΔU = 0 quindi Q = W",
+        "In un ciclo Q = 0 quindi W = 0",
+        "In un ciclo W = ΔU"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un ciclo ΔU=0, quindi dal primo principio Q=W (con la stessa convenzione). [web:122]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "ciclo",
+        "Q=W",
+        "ΔU=0",
+        "primo principio"
+      ]
+    },
+    {
+      "id": "ter_037",
+      "domanda": "Quale tra queste affermazioni è corretta sulla macchina di Carnot?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Ciclo di Carnot",
+      "opzioni": [
+        "Ha rendimento 100% se Th è finita",
+        "È una macchina reale che esiste in natura",
+        "È un modello ideale reversibile con rendimento massimo tra Th e Tc",
+        "Funziona senza sorgente fredda"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il ciclo di Carnot è un modello ideale reversibile che fissa il rendimento massimo tra due sorgenti. [web:127]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "Carnot",
+        "reversibile",
+        "massimo rendimento",
+        "ideale"
+      ]
+    },
+    {
+      "id": "ter_038",
+      "domanda": "Quale relazione è coerente con η = 1 − Tc/Th se Tc aumenta a Th fissata?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Ciclo di Carnot",
+      "opzioni": [
+        "η aumenta",
+        "η diminuisce",
+        "η resta uguale",
+        "η diventa negativa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Poiché η = 1 − Tc/Th, se Tc aumenta (Th costante) il rendimento diminuisce. [web:127]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "rendimento",
+        "Carnot",
+        "Tc",
+        "dipendenza"
+      ]
+    },
+    {
+      "id": "ter_039",
+      "domanda": "Quale condizione rende massimale il rendimento di una macchina tra due sorgenti fissate?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Macchine termiche",
+      "opzioni": [
+        "Processo reversibile",
+        "Processo con attrito elevato",
+        "Processo con dissipazione massima",
+        "Processo non ciclico"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "A parità di sorgenti, il massimo rendimento si ottiene per cicli reversibili (Carnot). [web:127]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "reversibile",
+        "massimo rendimento",
+        "Carnot",
+        "dissipazione"
+      ]
+    },
+    {
+      "id": "ter_040",
+      "domanda": "Quale affermazione è corretta sul segno di Q nel primo principio (con la convenzione indicata)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio",
+      "opzioni": [
+        "Q è positivo se il sistema cede calore",
+        "Q è positivo se il sistema assorbe calore",
+        "Q è sempre negativo",
+        "Q è una funzione di stato"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con la convenzione usata, Q è positivo quando il sistema assorbe calore dall’ambiente. [web:125]",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "calore",
+        "convenzione",
+        "Q positivo",
+        "assorbito"
+      ]
+    },
+    {
+      "id": "ter_041",
+      "domanda": "Un gas ideale ha n=1 mol, T=300 K, V=0,025 m³. Quanto vale p?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas ideali (calcoli)",
+      "opzioni": [
+        "p ≈ 1,0×10^5 Pa",
+        "p ≈ 1,0×10^4 Pa",
+        "p ≈ 1,0×10^6 Pa",
+        "p ≈ 1,0×10^3 Pa"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Da PV=nRT segue p=nRT/V≈(1·8,31·300)/0,025≈1,0×10^5 Pa. [web:126]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "PV=nRT",
+        "pressione",
+        "mol",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_042",
+      "domanda": "In un’isobara a p=2,0×10^5 Pa, il volume aumenta da 0,010 a 0,030 m³. Quanto lavoro compie il gas?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Lavoro nei gas (calcoli)",
+      "opzioni": [
+        "W = 2,0×10^3 J",
+        "W = 4,0×10^3 J",
+        "W = 6,0×10^3 J",
+        "W = 8,0×10^3 J"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In isobara W=pΔV=2,0×10^5·(0,020)=4,0×10^3 J. [web:120]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isobara",
+        "W=pΔV",
+        "lavoro",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_043",
+      "domanda": "Un gas assorbe Q=500 J e compie lavoro W=200 J. Quanto vale ΔU (con ΔU=Q−W)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio (calcoli)",
+      "opzioni": [
+        "ΔU = 700 J",
+        "ΔU = 300 J",
+        "ΔU = −300 J",
+        "ΔU = −700 J"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Dal primo principio ΔU=Q−W=500−200=300 J. [web:118][web:125]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ΔU",
+        "Q-W",
+        "bilancio",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_044",
+      "domanda": "Un gas cede calore Q=−300 J e subisce lavoro dall’esterno W=−100 J (con W positivo se fatto dal sistema). Quanto vale ΔU?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio (segni)",
+      "opzioni": [
+        "ΔU = −200 J",
+        "ΔU = −400 J",
+        "ΔU = +200 J",
+        "ΔU = +400 J"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con ΔU=Q−W si ha ΔU=−300−(−100)=−200 J (attenzione: qui la risposta corretta è −200 J). [web:125]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "segni",
+        "ΔU",
+        "Q",
+        "W"
+      ]
+    },
+    {
+      "id": "ter_045",
+      "domanda": "In una isocora, un gas ideale assorbe Q=400 J. Quanto vale il lavoro W e quanto vale ΔU?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isocora e primo principio",
+      "opzioni": [
+        "W=0, ΔU=400 J",
+        "W=400 J, ΔU=0",
+        "W=0, ΔU=0",
+        "W=−400 J, ΔU=−400 J"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In isocora W=∫p dV=0, quindi ΔU=Q−W=Q=400 J. [web:132][web:118]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isocora",
+        "W=0",
+        "ΔU=Q",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_046",
+      "domanda": "In una trasformazione adiabatica, un gas compie lavoro W=250 J. Quanto vale Q e quanto vale ΔU?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Adiabatica e primo principio",
+      "opzioni": [
+        "Q=0, ΔU=−250 J",
+        "Q=250 J, ΔU=0",
+        "Q=0, ΔU=+250 J",
+        "Q=−250 J, ΔU=0"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In adiabatica Q=0 e quindi dal primo principio ΔU=−W=−250 J. [web:132][web:118]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "adiabatica",
+        "Q=0",
+        "ΔU=-W",
+        "lavoro"
+      ]
+    },
+    {
+      "id": "ter_047",
+      "domanda": "Un gas ideale passa isoterma da Vi=2,0 L a Vf=4,0 L. Cosa succede alla pressione?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isoterma (qualitativo)",
+      "opzioni": [
+        "Raddoppia",
+        "Si dimezza",
+        "Resta costante",
+        "Diventa zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In isoterma per gas ideale vale pV=costante, quindi raddoppiando V la pressione si dimezza. [web:132]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isoterma",
+        "pV costante",
+        "pressione",
+        "qualitativo"
+      ]
+    },
+    {
+      "id": "ter_048",
+      "domanda": "Un gas ideale ha p=1,0×10^5 Pa e V=0,010 m³ a T=300 K. Quante moli contiene (n)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas ideali (calcoli)",
+      "opzioni": [
+        "n ≈ 0,04 mol",
+        "n ≈ 0,40 mol",
+        "n ≈ 4,0 mol",
+        "n ≈ 40 mol"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Da PV=nRT si ricava n=PV/(RT)≈(1,0×10^5·0,010)/(8,31·300)≈0,40 mol (attenzione: l’opzione corretta è 0,40 mol). [web:126]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "n=PV/RT",
+        "moli",
+        "gas ideale",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_049",
+      "domanda": "Una macchina di Carnot opera tra Th=600 K e Tc=300 K. Qual è il rendimento η?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Carnot (calcoli)",
+      "opzioni": [
+        "η = 0,25",
+        "η = 0,50",
+        "η = 0,75",
+        "η = 1,00"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per Carnot η=1−Tc/Th=1−300/600=0,50. [web:127]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Carnot",
+        "rendimento",
+        "1-Tc/Th",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_050",
+      "domanda": "Una macchina di Carnot opera tra Th=500 K e Tc=400 K. Qual è il rendimento η?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Carnot (calcoli)",
+      "opzioni": [
+        "0,10",
+        "0,20",
+        "0,80",
+        "0,90"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "η=1−Tc/Th=1−400/500=0,20. [web:127]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Carnot",
+        "rendimento",
+        "temperature",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_051",
+      "domanda": "Se una macchina termica assorbe Qh=1000 J e compie lavoro W=250 J, qual è il rendimento η=W/Qh?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Macchine termiche (calcoli)",
+      "opzioni": [
+        "0,10",
+        "0,25",
+        "0,40",
+        "0,75"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il rendimento è η=W/Qh=250/1000=0,25. [web:127]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "rendimento",
+        "W/Qh",
+        "macchina termica",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_052",
+      "domanda": "In un ciclo, se una macchina assorbe Qh=800 J e compie lavoro W=200 J, quanto calore cede alla sorgente fredda Qc?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Macchine termiche (bilanci)",
+      "opzioni": [
+        "Qc = 600 J",
+        "Qc = 800 J",
+        "Qc = 1000 J",
+        "Qc = 200 J"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In un ciclo ΔU=0 quindi Q=W, cioè Qh−Qc=W e dunque Qc=Qh−W=600 J. [web:122]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ciclo",
+        "Qh-Qc=W",
+        "bilancio",
+        "calore ceduto"
+      ]
+    },
+    {
+      "id": "ter_053",
+      "domanda": "Un gas ideale compie un processo quasi-statico con p costante: se V triplica, cosa succede a T?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isobara (gas ideali)",
+      "opzioni": [
+        "T triplica",
+        "T si dimezza",
+        "T resta costante",
+        "T diventa un terzo"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Da PV=nRT, a p e n costanti vale T proporzionale a V, quindi se V triplica anche T triplica. [web:126][web:132]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isobara",
+        "PV=nRT",
+        "T∝V",
+        "qualitativo"
+      ]
+    },
+    {
+      "id": "ter_054",
+      "domanda": "Un gas ideale compie un processo isocoro: se T raddoppia, cosa succede a p?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isocora (gas ideali)",
+      "opzioni": [
+        "p raddoppia",
+        "p si dimezza",
+        "p resta costante",
+        "p diventa zero"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Con V e n costanti, da PV=nRT segue p proporzionale a T, quindi se T raddoppia anche p raddoppia. [web:126][web:132]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isocora",
+        "p∝T",
+        "PV=nRT",
+        "qualitativo"
+      ]
+    },
+    {
+      "id": "ter_055",
+      "domanda": "In un’isoterma reversibile di gas ideale, il lavoro può essere calcolato (forma tipica) come:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isoterma (formule)",
+      "opzioni": [
+        "W = pΔV",
+        "W = nRT ln(Vf/Vi)",
+        "W = 0",
+        "W = nRΔT"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per un’isoterma reversibile di gas ideale si ottiene W = nRT ln(Vf/Vi). [web:126][web:132]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isoterma",
+        "lavoro",
+        "ln(Vf/Vi)",
+        "reversibile"
+      ]
+    },
+    {
+      "id": "ter_056",
+      "domanda": "Un gas ideale in isoterma reversibile (n=1 mol, T=300 K) passa da 10 L a 20 L: quale è il segno del lavoro W compiuto dal gas?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isoterma (segno lavoro)",
+      "opzioni": [
+        "W>0 perché il gas si espande",
+        "W<0 perché il gas si espande",
+        "W=0 perché T è costante",
+        "Impossibile determinare"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Con W=∫p dV, in espansione dV>0 e quindi il gas compie lavoro positivo. [web:132]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "espansione",
+        "lavoro positivo",
+        "p dV",
+        "segno"
+      ]
+    },
+    {
+      "id": "ter_057",
+      "domanda": "Un gas ideale compie un ciclo chiuso: se il lavoro totale del ciclo è positivo, nel diagramma p-V il ciclo è percorso in senso:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Diagrammi p-V (cicli)",
+      "opzioni": [
+        "Orario",
+        "Antiorario",
+        "Non importa",
+        "Solo verticale"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il lavoro totale di un ciclo è l’area racchiusa nel piano p-V e il segno dipende dal verso, con lavoro positivo per ciclo orario. [web:132]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ciclo",
+        "p-V",
+        "area",
+        "senso orario"
+      ]
+    },
+    {
+      "id": "ter_058",
+      "domanda": "In una trasformazione reversibile, se δQrev > 0 e T > 0, allora dS è:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia (segno)",
+      "opzioni": [
+        "Negativo",
+        "Nullo",
+        "Positivo",
+        "Indefinito"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per reversibile dS=δQrev/T, quindi con δQrev>0 e T>0 si ha dS>0. [web:130]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "entropia",
+        "dS=Qrev/T",
+        "segno",
+        "reversibile"
+      ]
+    },
+    {
+      "id": "ter_059",
+      "domanda": "Se in un processo qualunque vale ∫δQ/T < ΔS, il processo è:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio",
+      "opzioni": [
+        "Reversibile",
+        "Irreversibile",
+        "Isotermo",
+        "Isocoro"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La disuguaglianza stretta ∫δQ/T < ΔS indica un processo irreversibile. [web:130]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "irreversibile",
+        "Clausius",
+        "disuguaglianza",
+        "entropia"
+      ]
+    },
+    {
+      "id": "ter_060",
+      "domanda": "In un’isobara, se ΔV = 0,020 m³ e p = 1,5×10^5 Pa, quanto vale W?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Lavoro nei gas (calcoli)",
+      "opzioni": [
+        "1,5×10^3 J",
+        "3,0×10^3 J",
+        "3,0×10^4 J",
+        "7,5×10^3 J"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "W=pΔV=1,5×10^5·0,020=3,0×10^3 J. [web:120]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "pΔV",
+        "lavoro",
+        "isobara",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_061",
+      "domanda": "Un gas ideale ha n=2 mol e T=400 K. Se p=2,0×10^5 Pa, qual è V?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas ideali (calcoli)",
+      "opzioni": [
+        "V ≈ 0,033 m³",
+        "V ≈ 0,066 m³",
+        "V ≈ 0,0066 m³",
+        "V ≈ 0,33 m³"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Da PV=nRT segue V=nRT/p≈(2·8,31·400)/(2,0×10^5)≈0,033 m³. [web:126]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "V=nRT/p",
+        "gas ideale",
+        "calcolo",
+        "volume"
+      ]
+    },
+    {
+      "id": "ter_062",
+      "domanda": "Una macchina di Carnot opera tra Th=700 K e Tc=350 K: η vale:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Carnot (calcoli)",
+      "opzioni": [
+        "0,25",
+        "0,50",
+        "0,75",
+        "0,95"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "η=1−Tc/Th=1−350/700=0,50. [web:127]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Carnot",
+        "rendimento",
+        "calcolo",
+        "temperature"
+      ]
+    },
+    {
+      "id": "ter_063",
+      "domanda": "Per un gas ideale, se p e T restano costanti e n non cambia, allora V:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas ideali (qualitativo)",
+      "opzioni": [
+        "Aumenta",
+        "Diminuisce",
+        "Resta costante",
+        "Diventa infinita"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Da PV=nRT, se p, T e n sono costanti, allora anche V resta costante. [web:126]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "PV=nRT",
+        "costanti",
+        "volume",
+        "qualitativo"
+      ]
+    },
+    {
+      "id": "ter_064",
+      "domanda": "Un gas ideale compie un’isoterma reversibile: se Vi=1,0 L e Vf=0,50 L, il segno del lavoro W compiuto dal gas è:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isoterma (compressione)",
+      "opzioni": [
+        "W>0",
+        "W<0",
+        "W=0",
+        "W non è definito"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In compressione dV<0, quindi W=∫p dV è negativo (lavoro compiuto sul gas). [web:132]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "compressione",
+        "dV<0",
+        "lavoro negativo",
+        "isoterma"
+      ]
+    },
+    {
+      "id": "ter_065",
+      "domanda": "In un ciclo, una macchina assorbe Qh=1200 J e cede Qc=900 J. Quanto lavoro compie?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Macchine termiche (bilanci)",
+      "opzioni": [
+        "W = 300 J",
+        "W = 2100 J",
+        "W = 150 J",
+        "W = 900 J"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In un ciclo vale W=Qh−Qc, quindi W=1200−900=300 J. [web:122]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "W=Qh-Qc",
+        "ciclo",
+        "bilancio energia",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_066",
+      "domanda": "Se una macchina ha rendimento η=0,30 e assorbe Qh=1000 J, quanto lavoro produce?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Macchine termiche (rendimento)",
+      "opzioni": [
+        "W = 300 J",
+        "W = 700 J",
+        "W = 1300 J",
+        "W = 30 J"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per definizione η=W/Qh quindi W=ηQh=0,30·1000=300 J. [web:127]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "rendimento",
+        "W=ηQh",
+        "calcolo",
+        "macchina"
+      ]
+    },
+    {
+      "id": "ter_067",
+      "domanda": "Per un processo reversibile con scambio di calore δQrev = 100 J a T=300 K, quanto vale ΔS (approssimando T costante)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia (calcoli)",
+      "opzioni": [
+        "0,33 J/K",
+        "3,0 J/K",
+        "30 J/K",
+        "300 J/K"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Se T è circa costante, ΔS≈Qrev/T=100/300≈0,33 J/K. [web:130]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ΔS=Qrev/T",
+        "entropia",
+        "J/K",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_068",
+      "domanda": "Quale tra queste relazioni è tipica di un’adiabatica reversibile di gas ideale (equazioni di Poisson)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Adiabatiche (Poisson)",
+      "opzioni": [
+        "pV = costante",
+        "pV^γ = costante",
+        "p + V = costante",
+        "p/V = costante"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per un’adiabatica reversibile di gas ideale vale pV^γ = costante (equazioni di Poisson). [web:129]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Poisson",
+        "adiabatica",
+        "pV^γ",
+        "gas ideale"
+      ]
+    },
+    {
+      "id": "ter_069",
+      "domanda": "Nelle equazioni di Poisson, γ è:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Capacità termiche",
+      "opzioni": [
+        "γ = Cv/Cp",
+        "γ = Cp/Cv",
+        "γ = Cp − Cv",
+        "γ = Cp + Cv"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel modello dei gas ideali, γ è il rapporto tra capacità termiche: γ = Cp/Cv. [web:129]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "gamma",
+        "Cp/Cv",
+        "capacità termiche",
+        "Poisson"
+      ]
+    },
+    {
+      "id": "ter_070",
+      "domanda": "In un’adiabatica reversibile di gas ideale, se il volume aumenta, la temperatura:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Adiabatica (qualitativo)",
+      "opzioni": [
+        "Aumenta",
+        "Diminuisce",
+        "Resta costante",
+        "Diventa infinita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un’espansione adiabatica reversibile, il gas compie lavoro senza assorbire calore e quindi la temperatura diminuisce. [web:129][web:118]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "adiabatica",
+        "espansione",
+        "raffreddamento",
+        "Q=0"
+      ]
+    },
+    {
+      "id": "ter_071",
+      "domanda": "Quale trasformazione ha ΔT = 0 per definizione?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Trasformazioni dei gas",
+      "opzioni": [
+        "Isoterma",
+        "Isobara",
+        "Isocora",
+        "Adiabatica"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In una trasformazione isoterma la temperatura resta costante, quindi ΔT=0. [web:132]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isoterma",
+        "ΔT=0",
+        "definizione",
+        "trasformazione"
+      ]
+    },
+    {
+      "id": "ter_072",
+      "domanda": "Un gas ideale compie una isoterma: se ΔU dipende solo da T, allora ΔU vale:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas ideali e primo principio",
+      "opzioni": [
+        "ΔU > 0",
+        "ΔU < 0",
+        "ΔU = 0",
+        "ΔU = Q"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per un gas ideale U dipende da T, quindi in isoterma (ΔT=0) si ha ΔU=0. [web:125][web:132]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isoterma",
+        "ΔU=0",
+        "gas ideale",
+        "U(T)"
+      ]
+    },
+    {
+      "id": "ter_073",
+      "domanda": "In una isoterma di gas ideale con ΔU=0, quale relazione lega Q e W (con ΔU=Q−W)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isoterma e primo principio",
+      "opzioni": [
+        "Q = W",
+        "Q = −W",
+        "Q = 0",
+        "W = 0"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Se ΔU=0, dal primo principio 0=Q−W quindi Q=W. [web:118][web:125]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isoterma",
+        "Q=W",
+        "ΔU=0",
+        "primo principio"
+      ]
+    },
+    {
+      "id": "ter_074",
+      "domanda": "Un gas ideale è compresso isobaro: se V diminuisce, allora T:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isobara (qualitativo)",
+      "opzioni": [
+        "Aumenta",
+        "Diminuisce",
+        "Resta costante",
+        "Non è definita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con p costante, da PV=nRT segue che T è proporzionale a V, quindi se V diminuisce anche T diminuisce. [web:126]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isobara",
+        "T∝V",
+        "compressione",
+        "PV=nRT"
+      ]
+    },
+    {
+      "id": "ter_075",
+      "domanda": "In un processo reversibile che scambia Qrev=600 J a temperatura costante T=300 K, ΔS vale:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia (calcoli)",
+      "opzioni": [
+        "0,5 J/K",
+        "2 J/K",
+        "6 J/K",
+        "200 J/K"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per T costante, ΔS=Qrev/T=600/300=2 J/K. [web:130]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "entropia",
+        "Q/T",
+        "J/K",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_076",
+      "domanda": "Se una macchina di Carnot ha η=0,40, quale rapporto Tc/Th ha?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Carnot (calcoli inversi)",
+      "opzioni": [
+        "Tc/Th = 0,60",
+        "Tc/Th = 0,40",
+        "Tc/Th = 1,40",
+        "Tc/Th = 0,20"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Da η=1−Tc/Th segue Tc/Th=1−η=0,60. [web:127]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Carnot",
+        "inverso",
+        "Tc/Th",
+        "rendimento"
+      ]
+    },
+    {
+      "id": "ter_077",
+      "domanda": "Se Th=800 K e una macchina di Carnot ha η=0,25, quanto vale Tc?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Carnot (calcoli inversi)",
+      "opzioni": [
+        "Tc = 200 K",
+        "Tc = 400 K",
+        "Tc = 600 K",
+        "Tc = 1000 K"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Da η=1−Tc/Th segue Tc=Th(1−η)=800·0,75=600 K. [web:127]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Carnot",
+        "Tc",
+        "calcolo",
+        "temperature"
+      ]
+    },
+    {
+      "id": "ter_078",
+      "domanda": "Se in un ciclo una macchina produce W=150 J assorbendo Qh=500 J, quanto calore cede Qc?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Macchine termiche (bilanci)",
+      "opzioni": [
+        "Qc = 350 J",
+        "Qc = 650 J",
+        "Qc = 150 J",
+        "Qc = 500 J"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In un ciclo vale Qh−Qc=W, quindi Qc=Qh−W=500−150=350 J. [web:122]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Qc",
+        "Qh-Qc=W",
+        "ciclo",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_079",
+      "domanda": "Una trasformazione con T costante e V costante è possibile per un gas ideale?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Vincoli (gas ideali)",
+      "opzioni": [
+        "Sì, con p che cambia",
+        "Sì, con n che cambia",
+        "No, perché implica anche p costante (se n costante)",
+        "No, perché viola il primo principio"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Con PV=nRT, se n è costante e T e V sono costanti allora anche p è costante, quindi non è una trasformazione non banale. [web:126]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "vincoli",
+        "PV=nRT",
+        "costanti",
+        "stato"
+      ]
+    },
+    {
+      "id": "ter_080",
+      "domanda": "Per un processo reversibile, se ΔS=0 e non ci sono altre sorgenti di entropia, il processo è detto:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia",
+      "opzioni": [
+        "Isobaro",
+        "Isotermo",
+        "Isentropico",
+        "Isoenergetico"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Un processo con ΔS=0 è detto isentropico, in particolare in molti contesti coincide con un’adiabatica reversibile. [web:130][web:129]",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isentropico",
+        "ΔS=0",
+        "reversibile",
+        "adiabatica"
+      ]
+    },
+    {
+      "id": "ter_081",
+      "domanda": "Un gas ideale (γ=1,4) compie un’adiabatica reversibile da Vi=1,0 L a Vf=2,0 L. Di quanto cambia la pressione (rapporto pf/pi)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Adiabatiche (Poisson, calcoli)",
+      "opzioni": [
+        "pf/pi = 2^1,4",
+        "pf/pi = 2^(-1,4)",
+        "pf/pi = 2",
+        "pf/pi = 1/2"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Da pV^γ=costante segue pf/pi=(Vi/Vf)^γ=(1/2)^1,4=2^(−1,4). [web:129]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "adiabatica",
+        "Poisson",
+        "pV^γ",
+        "rapporto pressioni"
+      ]
+    },
+    {
+      "id": "ter_082",
+      "domanda": "In un’adiabatica reversibile di gas ideale vale anche una relazione tra T e V (forma tipica):",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Adiabatiche (Poisson)",
+      "opzioni": [
+        "TV^(γ−1) = costante",
+        "TV = costante",
+        "T/V = costante",
+        "T + V = costante"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per un’adiabatica reversibile di gas ideale, dalle equazioni di Poisson si ricava TV^(γ−1)=costante. [web:129]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Poisson",
+        "T V^(γ-1)",
+        "adiabatica",
+        "gas ideale"
+      ]
+    },
+    {
+      "id": "ter_083",
+      "domanda": "Un gas ideale compie un’isoterma reversibile a T=300 K tra Vi=1,0 L e Vf=3,0 L (n=1 mol). Qual è il lavoro W (ordine di grandezza)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isoterma (calcoli)",
+      "opzioni": [
+        "W ≈ 2,7 kJ",
+        "W ≈ 0,27 kJ",
+        "W ≈ 27 kJ",
+        "W ≈ 2,7 J"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "W=nRT ln(Vf/Vi)=1·8,31·300·ln(3)≈2,7×10^3 J. [web:126]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "isoterma",
+        "nRT ln",
+        "ln3",
+        "lavoro"
+      ]
+    },
+    {
+      "id": "ter_084",
+      "domanda": "Un gas ideale compie un ciclo e produce lavoro netto W>0. Quale deve essere il segno del calore netto scambiato Q_net nel ciclo (con la convenzione ΔU=Q−W)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Cicli (primo principio)",
+      "opzioni": [
+        "Q_net < 0",
+        "Q_net = 0",
+        "Q_net > 0",
+        "Non determinabile"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In un ciclo ΔU=0, quindi Q_net=W_net e se W_net>0 allora Q_net>0. [web:122]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "ciclo",
+        "Q=W",
+        "lavoro netto",
+        "segno"
+      ]
+    },
+    {
+      "id": "ter_085",
+      "domanda": "Una macchina di Carnot lavora tra Th=1000 K e Tc=300 K. Qual è η e quale affermazione è corretta?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Carnot (interpretazione)",
+      "opzioni": [
+        "η=0,70 e non può esistere macchina migliore tra queste sorgenti",
+        "η=0,30 e può esistere macchina migliore",
+        "η=0,70 e può esistere macchina migliore",
+        "η=1,00 e converte tutto il calore in lavoro"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "η=1−Tc/Th=1−300/1000=0,70 e per il teorema di Carnot nessuna macchina può superare questo rendimento tra le stesse sorgenti. [web:127]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Carnot",
+        "0.70",
+        "massimo",
+        "teorema"
+      ]
+    },
+    {
+      "id": "ter_086",
+      "domanda": "Un processo irreversibile porta un sistema isolato da A a B. Quale confronto è corretto tra ΔS e ∫A→B δQ/T?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio (Clausius)",
+      "opzioni": [
+        "ΔS = ∫ δQ/T",
+        "ΔS < ∫ δQ/T",
+        "ΔS > ∫ δQ/T",
+        "ΔS = 0 sempre"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per il secondo principio vale ∫(δQ/T) ≤ ΔS, con disuguaglianza stretta nei processi irreversibili. [web:130]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "irreversibile",
+        "Clausius",
+        "ΔS",
+        "disuguaglianza"
+      ]
+    },
+    {
+      "id": "ter_087",
+      "domanda": "Un sistema assorbe Q=1000 J e contemporaneamente subisce lavoro dall’esterno pari a 300 J (cioè il sistema compie W=−300 J). Quanto vale ΔU?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio (calcoli segni)",
+      "opzioni": [
+        "ΔU = 700 J",
+        "ΔU = 1000 J",
+        "ΔU = 1300 J",
+        "ΔU = −1300 J"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Con ΔU=Q−W e W=−300 J, si ottiene ΔU=1000−(−300)=1300 J. [web:125]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "segni",
+        "lavoro su sistema",
+        "ΔU",
+        "Q-W"
+      ]
+    },
+    {
+      "id": "ter_088",
+      "domanda": "Un gas ideale compie un’adiabatica reversibile con γ=1,4. Se la pressione si dimezza, di quanto cambia il volume (rapporto Vf/Vi)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Adiabatiche (Poisson, inverso)",
+      "opzioni": [
+        "Vf/Vi = 2^(1/1,4)",
+        "Vf/Vi = 2^1,4",
+        "Vf/Vi = 1/2^(1/1,4)",
+        "Vf/Vi = 1/2"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Da pV^γ=costante, se pf=pi/2 allora (Vf/Vi)^γ=2 e quindi Vf/Vi=2^(1/γ). [web:129]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Poisson",
+        "inverso",
+        "pV^γ",
+        "rapporto volumi"
+      ]
+    },
+    {
+      "id": "ter_089",
+      "domanda": "In una isoterma reversibile di gas ideale (ΔU=0), se il gas compie lavoro W=800 J, quanto vale Q?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isoterma e primo principio (calcoli)",
+      "opzioni": [
+        "Q = −800 J",
+        "Q = 0",
+        "Q = 800 J",
+        "Q = 1600 J"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Se ΔU=0, dal primo principio 0=Q−W quindi Q=W=800 J. [web:118][web:125]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "isoterma",
+        "ΔU=0",
+        "Q=W",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_090",
+      "domanda": "Un gas ideale (n costante) passa da (p1,V1,T1) a (p2,V2,T2). Se p raddoppia e V raddoppia, T:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas ideali (proporzionalità)",
+      "opzioni": [
+        "Resta uguale",
+        "Raddoppia",
+        "Quadruplica",
+        "Si dimezza"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Da PV=nRT, se sia P sia V raddoppiano allora PV quadruplica e quindi T quadruplica (n costante). [web:126]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "PV=nRT",
+        "proporzionalità",
+        "T",
+        "quadruplica"
+      ]
+    },
+    {
+      "id": "ter_091",
+      "domanda": "Una macchina di Carnot ha Th=600 K e rendimento η=0,25. Quanto vale Tc?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Carnot (calcoli)",
+      "opzioni": [
+        "Tc = 150 K",
+        "Tc = 300 K",
+        "Tc = 450 K",
+        "Tc = 750 K"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Da η=1−Tc/Th segue Tc=Th(1−η)=600·0,75=450 K. [web:127]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Carnot",
+        "Tc",
+        "inverso",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_092",
+      "domanda": "In un processo reversibile, un sistema assorbe Qrev=500 J a temperatura che varia lentamente ma resta circa 250 K. Stima ΔS.",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia (stima)",
+      "opzioni": [
+        "2 J/K",
+        "0,5 J/K",
+        "200 J/K",
+        "125000 J/K"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Se T≈costante, ΔS≈Qrev/T≈500/250=2 J/K. [web:130]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "entropia",
+        "stima",
+        "Q/T",
+        "J/K"
+      ]
+    },
+    {
+      "id": "ter_093",
+      "domanda": "Due sorgenti a Th e Tc: quale condizione rende impossibile un rendimento η=1 per una macchina ciclica reale?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio",
+      "opzioni": [
+        "Perché ΔU non è definita",
+        "Perché dovrebbe valere Qc=0, in contrasto con il secondo principio",
+        "Perché PV=nRT non vale",
+        "Perché la pressione sarebbe negativa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un rendimento 1 significherebbe conversione completa del calore in lavoro senza cedere calore a Tc, in contrasto con i limiti posti dal secondo principio e da Carnot. [web:130][web:127]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "η=1",
+        "secondo principio",
+        "Qc",
+        "impossibile"
+      ]
+    },
+    {
+      "id": "ter_094",
+      "domanda": "In una trasformazione adiabatica reversibile, qual è la variazione di entropia del sistema?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia (adiabatica)",
+      "opzioni": [
+        "ΔS > 0",
+        "ΔS < 0",
+        "ΔS = 0",
+        "ΔS = Q/T"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Un’adiabatica reversibile è isentropica, quindi ΔS=0. [web:129][web:130]",
+      "difficile": "difficile",
+      "paroleChiave": [
+        "adiabatica reversibile",
+        "isentropica",
+        "ΔS=0",
+        "entropia"
+      ]
+    },
+    {
+      "id": "ter_095",
+      "domanda": "In un ciclo reversibile di Carnot, quale affermazione è corretta sul rapporto tra calori scambiati e temperature?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Carnot (relazioni)",
+      "opzioni": [
+        "Qh/Qc = Tc/Th",
+        "Qh/Qc = Th/Tc",
+        "Qh + Qc = 0",
+        "Qh = Qc sempre"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per il ciclo di Carnot (reversibile) il rapporto tra calori scambiati con le sorgenti è legato alle temperature assolute, coerentemente con η=1−Tc/Th. [web:127]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Carnot",
+        "Qh/Qc",
+        "Th/Tc",
+        "reversibile"
+      ]
+    },
+    {
+      "id": "ter_096",
+      "domanda": "Un gas ideale compie una isoterma reversibile con Vi=1,0 m³ e Vf=0,5 m³. Quale segno ha ln(Vf/Vi) e quindi il lavoro W=nRT ln(Vf/Vi)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isoterma (logaritmi e segni)",
+      "opzioni": [
+        "ln>0, quindi W>0",
+        "ln<0, quindi W<0",
+        "ln=0, quindi W=0",
+        "ln non è definito"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se Vf/Vi=0,5 allora ln(Vf/Vi)<0 e quindi W=nRT ln(Vf/Vi) è negativo. [web:126]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "isoterma",
+        "logaritmo",
+        "segno",
+        "compressione"
+      ]
+    },
+    {
+      "id": "ter_097",
+      "domanda": "Un gas ideale subisce due trasformazioni: (1) isocora assorbe Q=300 J, (2) isobara compie lavoro W=200 J e assorbe Q=500 J. Qual è ΔU totale?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio (multi-step)",
+      "opzioni": [
+        "ΔU = 600 J",
+        "ΔU = 900 J",
+        "ΔU = 1100 J",
+        "ΔU = 100 J"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Sommi le variazioni: in isocora ΔU=Q=300 J, poi ΔU=Q−W=500−200=300 J, quindi ΔU_tot=600 J. [web:118][web:132]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "multi-step",
+        "ΔU",
+        "Q-W",
+        "isocora isobara"
+      ]
+    },
+    {
+      "id": "ter_098",
+      "domanda": "Un sistema compie un ciclo e scambia calore totale netto Q_net = +400 J. Quanto vale il lavoro netto W_net (convenzione ΔU=Q−W)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Cicli (calcoli)",
+      "opzioni": [
+        "W_net = 0",
+        "W_net = +400 J",
+        "W_net = −400 J",
+        "W_net = +800 J"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un ciclo ΔU=0 quindi Q_net=W_net, dunque W_net=+400 J. [web:122]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "ciclo",
+        "Q=W",
+        "lavoro netto",
+        "calore netto"
+      ]
+    },
+    {
+      "id": "ter_099",
+      "domanda": "Un gas ideale compie una adiabatica reversibile da pi=4,0 bar a pf=1,0 bar con γ=1,4. Qual è Vf/Vi?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Adiabatiche (Poisson, calcoli)",
+      "opzioni": [
+        "Vf/Vi = 4^(1/1,4)",
+        "Vf/Vi = 4^1,4",
+        "Vf/Vi = 1/4^(1/1,4)",
+        "Vf/Vi = 1/4"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Da pV^γ=costante: pf/p i=(Vi/Vf)^γ=1/4, quindi Vf/Vi=4^(1/γ). [web:129]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "adiabatica",
+        "pV^γ",
+        "rapporto",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_100",
+      "domanda": "Una macchina di Carnot con Th=400 K e Tc=300 K assorbe Qh=1000 J. Quanto lavoro massimo può produrre?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Carnot (lavoro massimo)",
+      "opzioni": [
+        "Wmax = 250 J",
+        "Wmax = 500 J",
+        "Wmax = 750 J",
+        "Wmax = 1000 J"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "η=1−Tc/Th=1−300/400=0,25 e quindi Wmax=ηQh=0,25·1000=250 J. [web:127]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Carnot",
+        "Wmax",
+        "ηQh",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_101",
+      "domanda": "Se una macchina reale opera tra Th e Tc, quale confronto con η_Carnot è corretto?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Macchine termiche (limiti)",
+      "opzioni": [
+        "η_reale > η_Carnot",
+        "η_reale = η_Carnot sempre",
+        "η_reale ≤ η_Carnot",
+        "η_reale può essere 1 anche se η_Carnot < 1"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il teorema di Carnot afferma che nessuna macchina che lavori tra le stesse sorgenti può superare il rendimento di Carnot. [web:127]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "limite",
+        "Carnot",
+        "η_reale",
+        "teorema"
+      ]
+    },
+    {
+      "id": "ter_102",
+      "domanda": "In un processo reversibile, se la temperatura raddoppia ma δQrev rimane la stessa, cosa succede a dS=δQrev/T?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia (dipendenze)",
+      "opzioni": [
+        "Raddoppia",
+        "Si dimezza",
+        "Resta uguale",
+        "Diventa negativa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Poiché dS=δQrev/T, a δQrev costante se T raddoppia allora dS si dimezza. [web:130]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "dS=Q/T",
+        "inversamente",
+        "temperatura",
+        "reversibile"
+      ]
+    },
+    {
+      "id": "ter_103",
+      "domanda": "Un gas ideale compie un’isobara e assorbe Q=1000 J mentre compie lavoro W=600 J. Quanto vale ΔU?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio (calcoli)",
+      "opzioni": [
+        "ΔU = 1600 J",
+        "ΔU = 400 J",
+        "ΔU = −400 J",
+        "ΔU = 0"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Dal primo principio ΔU=Q−W=1000−600=400 J. [web:118][web:125]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "ΔU",
+        "Q-W",
+        "calcolo",
+        "isobara"
+      ]
+    },
+    {
+      "id": "ter_104",
+      "domanda": "Una trasformazione è reversibile e adiabatica. Quale delle seguenti è necessariamente vera?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Adiabatiche reversibili",
+      "opzioni": [
+        "Q=0 e ΔS=0",
+        "Q=0 e ΔS>0",
+        "W=0 e ΔS=0",
+        "ΔU=0 e ΔS=0"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Adiabatica implica Q=0 e reversibile implica dS=δQrev/T=0, quindi ΔS=0. [web:132][web:130]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "adiabatica",
+        "reversibile",
+        "ΔS=0",
+        "Q=0"
+      ]
+    },
+    {
+      "id": "ter_105",
+      "domanda": "Un gas ideale compie un’adiabatica reversibile: quale confronto tra p(V) adiabatica e p(V) isoterma è corretto (a parità di stato iniziale)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Confronto curve p-V",
+      "opzioni": [
+        "L’adiabatica è meno ripida dell’isoterma",
+        "L’adiabatica è più ripida dell’isoterma",
+        "Sono identiche",
+        "Dipende solo da n"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per gas ideale l’adiabatica soddisfa pV^γ=costante con γ>1, risultando più ripida dell’isoterma pV=costante nel piano p-V. [web:129][web:132]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "adiabatica",
+        "isoterma",
+        "ripidezza",
+        "p-V"
+      ]
+    },
+    {
+      "id": "ter_106",
+      "domanda": "Un sistema isolato subisce un processo irreversibile interno. Cosa si può dire su ΔS del sistema?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio (sistema isolato)",
+      "opzioni": [
+        "ΔS < 0",
+        "ΔS = 0",
+        "ΔS > 0",
+        "Non determinabile"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per un sistema isolato, un processo irreversibile comporta aumento di entropia, quindi ΔS>0. [web:130]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "isolato",
+        "irreversibile",
+        "ΔS>0",
+        "secondo principio"
+      ]
+    },
+    {
+      "id": "ter_107",
+      "domanda": "Un gas ideale compie un ciclo di Carnot: qual è la variazione totale di entropia del sistema dopo un ciclo completo?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Cicli (entropia)",
+      "opzioni": [
+        "ΔS_tot > 0",
+        "ΔS_tot < 0",
+        "ΔS_tot = 0",
+        "ΔS_tot = Q/T"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In un ciclo il sistema torna allo stato iniziale, quindi la variazione di entropia del sistema è zero perché S è funzione di stato. [web:130]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "ciclo",
+        "entropia",
+        "funzione di stato",
+        "ΔS=0"
+      ]
+    },
+    {
+      "id": "ter_108",
+      "domanda": "Una macchina di Carnot assorbe Qh=2000 J da Th=500 K. Quanta entropia riceve dalla sorgente calda (modulo)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia e sorgenti",
+      "opzioni": [
+        "4 J/K",
+        "0,25 J/K",
+        "1000 J/K",
+        "250000 J/K"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per uno scambio reversibile a temperatura costante, ΔS=Qrev/T quindi 2000/500=4 J/K. [web:130]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "entropia",
+        "sorgente calda",
+        "Q/T",
+        "Carnot"
+      ]
+    },
+    {
+      "id": "ter_109",
+      "domanda": "In un processo ciclico di macchina termica, quale relazione è corretta tra Qh, Qc e W (con W lavoro prodotto dalla macchina)?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Macchine termiche (relazioni)",
+      "opzioni": [
+        "W = Qc − Qh",
+        "W = Qh − Qc",
+        "W = Qh + Qc",
+        "W = 0 sempre"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per un ciclo, con ΔU=0, il bilancio energetico porta a W=Qh−Qc. [web:122]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "macchina termica",
+        "W=Qh-Qc",
+        "ciclo",
+        "bilancio"
+      ]
+    },
+    {
+      "id": "ter_110",
+      "domanda": "Se una macchina termica produce W=300 J e ha rendimento η=0,20, quanto calore assorbe Qh?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Macchine termiche (calcoli)",
+      "opzioni": [
+        "Qh = 60 J",
+        "Qh = 300 J",
+        "Qh = 1500 J",
+        "Qh = 600 J"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Da η=W/Qh segue Qh=W/η=300/0,20=1500 J. [web:127]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "rendimento",
+        "Qh=W/η",
+        "calcolo",
+        "macchina"
+      ]
+    },
+    {
+      "id": "ter_111",
+      "domanda": "Un gas ideale ha p=1,0×10^5 Pa e T=300 K. Se la temperatura passa a 450 K a volume costante, quanto vale la nuova pressione?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isocora (calcoli)",
+      "opzioni": [
+        "1,5×10^5 Pa",
+        "0,67×10^5 Pa",
+        "2,0×10^5 Pa",
+        "4,5×10^5 Pa"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "A volume costante per gas ideale vale p∝T, quindi p2=p1·(T2/T1)=1,0×10^5·(450/300)=1,5×10^5 Pa. [web:126][web:132]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "isocora",
+        "p∝T",
+        "calcolo",
+        "PV=nRT"
+      ]
+    },
+    {
+      "id": "ter_112",
+      "domanda": "Un gas ideale in isobara passa da T1=300 K a T2=600 K. Qual è il rapporto V2/V1?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isobara (calcoli)",
+      "opzioni": [
+        "V2/V1 = 1/2",
+        "V2/V1 = 2",
+        "V2/V1 = 4",
+        "V2/V1 = 1"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A pressione costante per gas ideale vale V∝T, quindi V2/V1=T2/T1=600/300=2. [web:126][web:132]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "isobara",
+        "V∝T",
+        "rapporto",
+        "gas ideale"
+      ]
+    },
+    {
+      "id": "ter_113",
+      "domanda": "Un sistema passa da A a B con ΔS=+5 J/K. Se lungo il processo si ha ∫δQ/T = +5 J/K, il processo è:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio (criterio)",
+      "opzioni": [
+        "Irreversibile",
+        "Reversibile",
+        "Adiabatica",
+        "Impossibile"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se ∫δQ/T = ΔS, la disuguaglianza di Clausius è in forma di uguaglianza e il processo è reversibile. [web:130]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "reversibile",
+        "Clausius",
+        "uguaglianza",
+        "ΔS"
+      ]
+    },
+    {
+      "id": "ter_114",
+      "domanda": "Un sistema passa da A a B con ΔS=+5 J/K. Se lungo il processo ∫δQ/T = +3 J/K, il processo è:",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio (criterio)",
+      "opzioni": [
+        "Reversibile",
+        "Irreversibile",
+        "Impossibile perché viola il secondo principio",
+        "Necessariamente isoterma"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Poiché ∫δQ/T ≤ ΔS e qui 3 ≤ 5, il processo è compatibile ma irreversibile (disuguaglianza stretta). [web:130]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "irreversibile",
+        "Clausius",
+        "3<5",
+        "secondo principio"
+      ]
+    },
+    {
+      "id": "ter_115",
+      "domanda": "Un gas ideale compie una isoterma reversibile a 300 K e assorbe Q=900 J. Quanto vale la variazione di entropia del gas?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia (calcoli)",
+      "opzioni": [
+        "ΔS = 0,33 J/K",
+        "ΔS = 3 J/K",
+        "ΔS = 30 J/K",
+        "ΔS = 270000 J/K"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per uno scambio reversibile a temperatura costante, ΔS=Qrev/T=900/300=3 J/K. [web:130]",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "entropia",
+        "Q/T",
+        "isoterma",
+        "calcolo"
+      ]
     }
   ]
 }

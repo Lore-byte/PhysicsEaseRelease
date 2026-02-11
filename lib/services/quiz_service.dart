@@ -10,10 +10,11 @@ class QuizService {
   QuizService._internal();
 
   final Map<String, List<Quiz>> _quizzesByCategory = {};
-  final Map<String, String> _quizIdToCategoryMap = {}; // Nuova mappa per ID -> Categoria Reale
+  final Map<String, String> _quizIdToCategoryMap =
+      {}; // Nuova mappa per ID -> Categoria Reale
   bool _isLoaded = false;
 
-  // Categorie disponibili 
+  // Categorie disponibili
   static const List<String> availableCategories = [
     'kinematica',
     'dinamica',
@@ -58,22 +59,24 @@ class QuizService {
     developer.log('Loading quizzes from assets...');
     for (final category in availableCategories) {
       try {
-        final String jsonString = await rootBundle.loadString('assets/quiz/$category.json');
+        final String jsonString = await rootBundle.loadString(
+          'assets/quiz/$category.json',
+        );
         final Map<String, dynamic> jsonData = jsonDecode(jsonString);
         final List<dynamic> quizList = jsonData['quiz'] as List<dynamic>;
 
-        _quizzesByCategory[category] = quizList
-            .map((quizMap) {
-              final quiz = Quiz.fromMap(quizMap as Map<String, dynamic>);
-              // Mappiamo l'ID del quiz (es: "kin_001") al nome reale della categoria (es: "Cinematica")
-              _quizIdToCategoryMap[quiz.id] = quiz.categoria;
-              return quiz;
-            })
-            .toList();
+        _quizzesByCategory[category] = quizList.map((quizMap) {
+          final quiz = Quiz.fromMap(quizMap as Map<String, dynamic>);
+          // Mappiamo l'ID del quiz (es: "kin_001") al nome reale della categoria (es: "Cinematica")
+          _quizIdToCategoryMap[quiz.id] = quiz.categoria;
+          return quiz;
+        }).toList();
 
-        developer.log('Loaded ${_quizzesByCategory[category]!.length} quizzes for $category');
-      } catch (e) {
-        developer.log('Error loading quiz for $category: $e');
+        developer.log(
+          'Loaded ${_quizzesByCategory[category]!.length} quizzes for $category',
+        );
+      } catch (e, st) {
+        developer.log('Error loading quiz for $category: $e', stackTrace: st);
         _quizzesByCategory[category] = [];
       }
     }
@@ -91,7 +94,11 @@ class QuizService {
     return _quizzesByCategory[category] ?? [];
   }
 
-  List<Quiz> getQuizzesByCategories(List<String> categories, {String? difficolta, int? limit}) {
+  List<Quiz> getQuizzesByCategories(
+    List<String> categories, {
+    String? difficolta,
+    int? limit,
+  }) {
     List<Quiz> allQuizzes = [];
 
     for (final category in categories) {
@@ -101,7 +108,9 @@ class QuizService {
 
     // Filtra per difficoltà se specificata
     if (difficolta != null && difficolta.isNotEmpty) {
-      allQuizzes = allQuizzes.where((quiz) => quiz.difficolta == difficolta).toList();
+      allQuizzes = allQuizzes
+          .where((quiz) => quiz.difficolta == difficolta)
+          .toList();
     }
 
     // Mescola i quiz

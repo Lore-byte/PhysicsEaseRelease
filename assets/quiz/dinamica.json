@@ -2,7 +2,7 @@
   "quiz": [
     {
       "id": "din_001",
-      "domanda": "Quale legge di Newton stabilisce che F = ma?",
+      "domanda": "Quale legge di Newton stabilisce che la forza risultante è proporzionale all'accelerazione (F = ma)?",
       "categoria": "Dinamica",
       "sottocategoria": "Leggi di Newton",
       "opzioni": [
@@ -12,73 +12,1904 @@
         "Legge di gravitazione universale"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La seconda legge di Newton stabilisce che la forza risultante su un corpo è uguale al prodotto della sua massa per l'accelerazione: F = ma",
+      "spiegazione": "La seconda legge di Newton lega forza risultante, massa e accelerazione: F = ma.",
       "difficolta": "facile",
-      "paroleChiave": ["newton", "forza", "massa", "accelerazione"]
+      "paroleChiave": [
+        "newton",
+        "forza",
+        "massa",
+        "accelerazione"
+      ]
     },
     {
       "id": "din_002",
-      "domanda": "Secondo la terza legge di Newton, se un corpo A esercita una forza su B:",
+      "domanda": "In assenza di forze esterne risultanti, un corpo:",
       "categoria": "Dinamica",
       "sottocategoria": "Leggi di Newton",
       "opzioni": [
-        "B esercita su A una forza uguale e concorde",
-        "B esercita su A una forza uguale e opposta",
-        "B non esercita alcuna forza su A",
-        "B esercita una forza doppia su A"
+        "Si ferma sempre",
+        "Aumenta sempre la velocità",
+        "Resta in quiete o in moto rettilineo uniforme",
+        "Si muove in moto circolare uniforme"
       ],
-      "rispostaCorretta": 1,
-      "spiegazione": "La terza legge di Newton (azione-reazione) afferma che ad ogni azione corrisponde una reazione uguale e contraria. Le due forze hanno stesso modulo, stessa direzione ma verso opposto.",
+      "rispostaCorretta": 2,
+      "spiegazione": "Se la risultante delle forze è nulla, l'accelerazione è nulla e il corpo mantiene lo stato di moto (o quiete): prima legge di Newton.",
       "difficolta": "facile",
-      "paroleChiave": ["azione", "reazione", "terza legge", "opposta"]
+      "paroleChiave": [
+        "inerzia",
+        "risultante",
+        "equilibrio",
+        "mru"
+      ]
     },
     {
       "id": "din_003",
-      "domanda": "Un corpo di 5 kg viene spinto con una forza di 20 N. Qual è la sua accelerazione?",
+      "domanda": "Qual è l'unità di misura della forza nel Sistema Internazionale?",
       "categoria": "Dinamica",
-      "sottocategoria": "Seconda legge",
+      "sottocategoria": "Grandezze e unità",
       "opzioni": [
-        "4 m/s²",
-        "15 m/s²",
-        "25 m/s²",
-        "100 m/s²"
+        "Joule (J)",
+        "Newton (N)",
+        "Watt (W)",
+        "Pascal (Pa)"
       ],
-      "rispostaCorretta": 0,
-      "spiegazione": "Dalla seconda legge di Newton F = ma, ricaviamo a = F/m = 20 N / 5 kg = 4 m/s²",
-      "difficolta": "medio",
-      "paroleChiave": ["calcolo", "accelerazione", "forza", "massa"]
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel SI la forza si misura in newton (N).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "SI",
+        "newton",
+        "unità",
+        "forza"
+      ]
     },
     {
       "id": "din_004",
-      "domanda": "La forza di attrito statico è:",
+      "domanda": "Un corpo di massa 2 kg subisce una forza risultante di 6 N. Qual è l'accelerazione?",
       "categoria": "Dinamica",
-      "sottocategoria": "Attrito",
+      "sottocategoria": "Seconda legge di Newton",
       "opzioni": [
-        "Sempre uguale a μₛ × N",
-        "Sempre minore di μₛ × N",
-        "Minore o uguale a μₛ × N",
-        "Indipendente dalla forza normale"
+        "1 m/s²",
+        "2 m/s²",
+        "3 m/s²",
+        "12 m/s²"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "La forza di attrito statico può assumere valori compresi tra zero e un valore massimo dato da fₛ,max = μₛ × N, dove μₛ è il coefficiente di attrito statico e N la forza normale.",
-      "difficolta": "medio",
-      "paroleChiave": ["attrito", "statico", "coefficiente", "normale"]
+      "spiegazione": "Per F = ma: a = F/m = 6/2 = 3 m/s².",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "F=ma",
+        "accelerazione",
+        "calcolo",
+        "massa"
+      ]
     },
     {
       "id": "din_005",
-      "domanda": "In assenza di forze esterne, un corpo in movimento:",
+      "domanda": "Il peso di un corpo è:",
       "categoria": "Dinamica",
-      "sottocategoria": "Prima legge",
+      "sottocategoria": "Forza peso",
       "opzioni": [
-        "Si ferma gradualmente",
-        "Mantiene velocità costante",
-        "Accelera costantemente",
-        "Cambia direzione casualmente"
+        "La massa del corpo",
+        "La forza di gravità che agisce sul corpo",
+        "La reazione normale del piano",
+        "La forza di attrito"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La prima legge di Newton (principio di inerzia) afferma che un corpo mantiene il suo stato di quiete o di moto rettilineo uniforme finché non interviene una forza esterna.",
+      "spiegazione": "Il peso è la forza gravitazionale esercitata dalla Terra: P = mg (vicino alla superficie terrestre).",
       "difficolta": "facile",
-      "paroleChiave": ["inerzia", "prima legge", "velocita costante"]
+      "paroleChiave": [
+        "peso",
+        "gravità",
+        "mg",
+        "forza"
+      ]
+    },
+    {
+      "id": "din_006",
+      "domanda": "Su un piano orizzontale, se un blocco è fermo e non ci sono altre forze verticali oltre a peso e reazione vincolare, la normale N vale:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Reazioni vincolari",
+      "opzioni": [
+        "N = 0",
+        "N = mg",
+        "N = 2mg",
+        "N = mg/2"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In equilibrio verticale la risultante è nulla: N - mg = 0 quindi N = mg.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "normale",
+        "equilibrio",
+        "peso",
+        "piano orizzontale"
+      ]
+    },
+    {
+      "id": "din_007",
+      "domanda": "L'attrito radente dinamico (cinetico) su un piano si calcola tipicamente come:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito",
+      "opzioni": [
+        "F = μd · N",
+        "F = μd / N",
+        "F = N / μd",
+        "F = μd · mg²"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'attrito dinamico ha modulo proporzionale alla normale: F_attr = μd·N.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "attrito",
+        "dinamico",
+        "mu",
+        "normale"
+      ]
+    },
+    {
+      "id": "din_008",
+      "domanda": "La terza legge di Newton afferma che:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Leggi di Newton",
+      "opzioni": [
+        "A ogni forza corrisponde una forza uguale e contraria, applicata allo stesso corpo",
+        "La forza è uguale a massa per accelerazione",
+        "Un corpo mantiene lo stato di moto se la risultante è nulla",
+        "A ogni azione corrisponde una reazione uguale e contraria, su corpi diversi"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Azione e reazione sono uguali e opposte, ma agiscono su corpi diversi (non si annullano tra loro sullo stesso corpo).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "azione-reazione",
+        "terza legge",
+        "newton",
+        "interazione"
+      ]
+    },
+    {
+      "id": "din_009",
+      "domanda": "Se la risultante delle forze su un corpo è diversa da zero, allora:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Risultante delle forze",
+      "opzioni": [
+        "Il corpo è necessariamente fermo",
+        "Il corpo ha accelerazione nulla",
+        "Il corpo ha accelerazione non nulla",
+        "Il corpo si muove sempre di moto circolare"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per la seconda legge di Newton, una risultante non nulla implica accelerazione non nulla.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "risultante",
+        "accelerazione",
+        "newton",
+        "dinamica"
+      ]
+    },
+    {
+      "id": "din_010",
+      "domanda": "La forza elastica di una molla (legge di Hooke) è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Molle",
+      "opzioni": [
+        "F = kx",
+        "F = x/k",
+        "F = k/x",
+        "F = kx²"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In modulo, la forza elastica è proporzionale all'allungamento: F = kx (diretta in verso opposto alla deformazione).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "molla",
+        "hooke",
+        "kx",
+        "forza elastica"
+      ]
+    },
+    {
+      "id": "din_011",
+      "domanda": "Scomponendo il peso su un piano inclinato di angolo θ (rispetto all'orizzontale), la componente parallela al piano vale:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Piano inclinato",
+      "opzioni": [
+        "mg cosθ",
+        "mg sinθ",
+        "mg tanθ",
+        "mg / sinθ"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Sul piano inclinato: componente parallela = mg sinθ, componente perpendicolare = mg cosθ.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "piano inclinato",
+        "scomposizione",
+        "peso",
+        "sin"
+      ]
+    },
+    {
+      "id": "din_012",
+      "domanda": "Nel moto circolare uniforme l'accelerazione è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto circolare",
+      "opzioni": [
+        "Niente accelerazione (a = 0)",
+        "Tangenziale, costante",
+        "Diretta verso il centro della traiettoria",
+        "Diretta verso l'esterno (centrifuga reale)"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel moto circolare uniforme c'è accelerazione centripeta, diretta verso il centro, perché cambia la direzione della velocità.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "moto circolare",
+        "centripeta",
+        "accelerazione",
+        "direzione"
+      ]
+    },
+    {
+      "id": "din_013",
+      "domanda": "Qual è una formula comune per il modulo della forza centripeta?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto circolare",
+      "opzioni": [
+        "F = m v² / r",
+        "F = m r / v²",
+        "F = v² / (m r)",
+        "F = m g r"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La forza centripeta necessaria a mantenere un moto circolare di raggio r a velocità v è F = m v² / r.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "centripeta",
+        "mv2r",
+        "raggio",
+        "velocità"
+      ]
+    },
+    {
+      "id": "din_014",
+      "domanda": "Un corpo in equilibrio statico ha:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Equilibrio",
+      "opzioni": [
+        "Velocità costante non nulla e risultante nulla",
+        "Accelerazione nulla e risultante nulla",
+        "Accelerazione non nulla e risultante nulla",
+        "Risultante non nulla e accelerazione nulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In equilibrio (statico o dinamico) la risultante delle forze è zero e quindi l'accelerazione è zero.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "equilibrio",
+        "risultante",
+        "accelerazione",
+        "statica"
+      ]
+    },
+    {
+      "id": "din_015",
+      "domanda": "Se raddoppio la massa di un corpo mantenendo costante la forza risultante, l'accelerazione:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Seconda legge di Newton",
+      "opzioni": [
+        "Raddoppia",
+        "Dimezza",
+        "Resta uguale",
+        "Diventa zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Da a = F/m: se m raddoppia e F è costante, a si dimezza.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "proporzionalità",
+        "massa",
+        "accelerazione",
+        "F=ma"
+      ]
+    },
+    {
+      "id": "din_016",
+      "domanda": "La forza di attrito statico massimo vale (in modello semplificato):",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito",
+      "opzioni": [
+        "F = μs · N",
+        "F = μd · N",
+        "F = μs / N",
+        "F = N / μs"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'attrito statico si adatta fino a un massimo pari a μs·N.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "attrito",
+        "statico",
+        "mu_s",
+        "soglia"
+      ]
+    },
+    {
+      "id": "din_017",
+      "domanda": "In un diagramma delle forze (free-body diagram) di un blocco su piano orizzontale senza attrito, tirato con una forza orizzontale, quali forze compaiono sicuramente?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Diagrammi delle forze",
+      "opzioni": [
+        "Peso, normale, forza applicata",
+        "Solo la forza applicata",
+        "Peso e attrito",
+        "Normale e forza centripeta"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Agiscono peso (verso il basso), reazione normale (verso l'alto) e forza applicata (orizzontale); senza attrito non compare la forza d'attrito.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "free body",
+        "peso",
+        "normale",
+        "forza applicata"
+      ]
+    },
+    {
+      "id": "din_018",
+      "domanda": "Quale affermazione è corretta riguardo massa e peso?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Forza peso",
+      "opzioni": [
+        "La massa dipende da g, il peso no",
+        "Il peso dipende da g, la massa no",
+        "Massa e peso sono la stessa grandezza",
+        "Il peso si misura in kg"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La massa è una proprietà del corpo (kg), il peso è una forza P = mg e dipende dall'accelerazione di gravità g (N).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "massa",
+        "peso",
+        "g",
+        "newton"
+      ]
+    },
+    {
+      "id": "din_019",
+      "domanda": "Un corpo si muove di moto rettilineo uniforme. La risultante delle forze su di esso è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Equilibrio",
+      "opzioni": [
+        "Maggiore di zero",
+        "Minore di zero",
+        "Nulla",
+        "Impossibile da stabilire"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Moto rettilineo uniforme implica accelerazione nulla, quindi risultante delle forze nulla.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "mru",
+        "risultante",
+        "equilibrio",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "din_020",
+      "domanda": "Quando cammini spingendo all'indietro il suolo con il piede, il suolo esercita su di te una forza che ti fa avanzare. Questa è un esempio di:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito e locomozione",
+      "opzioni": [
+        "Forza peso",
+        "Reazione normale",
+        "Attrito statico",
+        "Attrito dinamico"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il piede non scivola: l'avanzamento è dovuto all'attrito statico tra suola e terreno.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "camminare",
+        "attrito statico",
+        "azione-reazione",
+        "locomozione"
+      ]
+    },
+    {
+      "id": "din_021",
+      "domanda": "Un blocco è trascinato a velocità costante su un piano orizzontale ruvido. La risultante delle forze orizzontali è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Equilibrio dinamico",
+      "opzioni": [
+        "Zero",
+        "Uguale alla forza d'attrito",
+        "Uguale a mg",
+        "Uguale a ma con a > 0"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Velocità costante ⇒ accelerazione nulla ⇒ risultante orizzontale nulla; la forza di traino bilancia l'attrito.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "velocità costante",
+        "attrito",
+        "equilibrio dinamico",
+        "risultante"
+      ]
+    },
+    {
+      "id": "din_022",
+      "domanda": "Se un corpo è soggetto a due forze uguali e opposte lungo la stessa linea d'azione, la risultante è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Composizione di forze",
+      "opzioni": [
+        "Il doppio di una delle forze",
+        "Zero",
+        "Una forza perpendicolare",
+        "Dipende dalla massa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Due forze uguali e opposte si sommano vettorialmente a zero.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "forze",
+        "vettori",
+        "risultante",
+        "opposte"
+      ]
+    },
+    {
+      "id": "din_023",
+      "domanda": "La tensione in una fune ideale (massa trascurabile, inestensibile) è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Tensione",
+      "opzioni": [
+        "Diversa in ogni punto della fune",
+        "Uguale a zero",
+        "La stessa in ogni punto (se non ci sono pulegge con attrito o massa)",
+        "Sempre uguale al peso del corpo appeso"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In una fune ideale la tensione si considera uniforme lungo la fune.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "tensione",
+        "fune ideale",
+        "pulegge",
+        "vincoli"
+      ]
+    },
+    {
+      "id": "din_024",
+      "domanda": "Una forza è una grandezza:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Grandezze e unità",
+      "opzioni": [
+        "Scalare",
+        "Vettoriale",
+        "Sempre positiva",
+        "Adimensionale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La forza è una grandezza vettoriale: ha modulo, direzione e verso.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "forza",
+        "vettore",
+        "direzione",
+        "verso"
+      ]
+    },
+    {
+      "id": "din_025",
+      "domanda": "In un moto circolare uniforme, la velocità istantanea è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto circolare",
+      "opzioni": [
+        "Diretta verso il centro",
+        "Tangente alla traiettoria",
+        "Diretta verso l'esterno",
+        "Sempre nulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La velocità istantanea è tangente alla traiettoria; l'accelerazione è centripeta (verso il centro).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "velocità",
+        "tangente",
+        "moto circolare",
+        "direzione"
+      ]
+    },
+    {
+      "id": "din_026",
+      "domanda": "Se un oggetto è appoggiato su un piano inclinato e non scivola, l'attrito che agisce è di tipo:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito",
+      "opzioni": [
+        "Nullo",
+        "Statico",
+        "Dinamico",
+        "Viscoso"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se non c'è scorrimento relativo, l'attrito è statico (si adatta fino a un massimo).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "attrito statico",
+        "piano inclinato",
+        "equilibrio",
+        "scorrimento"
+      ]
+    },
+    {
+      "id": "din_027",
+      "domanda": "Un corpo di massa 5 kg ha accelerazione nulla. Quale condizione deve valere?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Equilibrio",
+      "opzioni": [
+        "La risultante delle forze è zero",
+        "La velocità è zero",
+        "La massa è zero",
+        "La forza peso è zero"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Accelerazione nulla ⇒ risultante delle forze nulla (non è necessario che la velocità sia zero).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "accelerazione",
+        "risultante",
+        "equilibrio",
+        "newton"
+      ]
+    },
+    {
+      "id": "din_028",
+      "domanda": "Quale coppia rappresenta correttamente un'azione-reazione?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Terza legge di Newton",
+      "opzioni": [
+        "Peso di un corpo e reazione normale sul corpo",
+        "Forza della mano sul muro e forza del muro sulla mano",
+        "Forza di attrito sul corpo e forza applicata sul corpo",
+        "Peso del corpo e attrito del piano sul corpo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Azione-reazione agiscono su corpi diversi: mano↔muro, uguali e opposte.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "azione-reazione",
+        "terza legge",
+        "interazione",
+        "corpi diversi"
+      ]
+    },
+    {
+      "id": "din_029",
+      "domanda": "Un blocco è su un piano orizzontale senza attrito. Se la forza risultante orizzontale è 10 N e la massa è 2 kg, la velocità:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Seconda legge di Newton",
+      "opzioni": [
+        "Resta costante",
+        "Aumenta di 5 m/s ogni secondo",
+        "Diminuisce di 5 m/s ogni secondo",
+        "Diventa zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "a = F/m = 10/2 = 5 m/s², quindi la velocità aumenta di 5 m/s ogni secondo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "accelerazione",
+        "variazione velocità",
+        "F=ma",
+        "moto rettilineo"
+      ]
+    },
+    {
+      "id": "din_030",
+      "domanda": "Quale forza è sempre perpendicolare a un piano di appoggio (ideale)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Reazioni vincolari",
+      "opzioni": [
+        "Attrito dinamico",
+        "Forza elastica",
+        "Reazione normale",
+        "Tensione"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La reazione normale è per definizione perpendicolare alla superficie di contatto.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "normale",
+        "vincolo",
+        "perpendicolare",
+        "contatto"
+      ]
+    },
+    {
+      "id": "din_031",
+      "domanda": "Se un oggetto scivola su un piano orizzontale ruvido, la forza d'attrito dinamico è diretta:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito",
+      "opzioni": [
+        "Nella stessa direzione del moto",
+        "Opposta al moto relativo",
+        "Verso l'alto",
+        "Verso il basso"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'attrito dinamico si oppone al moto relativo tra le superfici.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "attrito",
+        "verso",
+        "moto",
+        "opposizione"
+      ]
+    },
+    {
+      "id": "din_032",
+      "domanda": "Un corpo appeso a una molla verticale è in equilibrio. La forza elastica della molla vale:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Equilibrio con molle",
+      "opzioni": [
+        "Zero",
+        "Uguale al peso mg",
+        "Uguale a 2mg",
+        "Uguale a mg/2"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In equilibrio la risultante è zero: la forza elastica verso l'alto bilancia il peso mg verso il basso.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "molla",
+        "equilibrio",
+        "peso",
+        "forza elastica"
+      ]
+    },
+    {
+      "id": "din_033",
+      "domanda": "La massa inerziale misura la resistenza del corpo a:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Massa e inerzia",
+      "opzioni": [
+        "Cambiare velocità (accelerare)",
+        "Cambiare temperatura",
+        "Cambiare colore",
+        "Cambiare volume"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La massa inerziale quantifica l'inerzia: più massa ⇒ più difficile ottenere una certa accelerazione con la stessa forza.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "massa",
+        "inerzia",
+        "accelerazione",
+        "resistenza"
+      ]
+    },
+    {
+      "id": "din_034",
+      "domanda": "Un'auto percorre una curva: quale forza (risultante) deve essere presente per cambiare direzione?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto curvilineo",
+      "opzioni": [
+        "Una forza centripeta verso il centro della curva",
+        "Una forza tangenziale costante",
+        "Solo la forza peso",
+        "Nessuna forza: basta la velocità"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per curvare serve una risultante verso il centro della traiettoria (centripeta) che produca accelerazione normale.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "curva",
+        "centripeta",
+        "cambio direzione",
+        "risultante"
+      ]
+    },
+    {
+      "id": "din_035",
+      "domanda": "Se una forza costante agisce su un corpo libero di muoversi su una linea retta, l'accelerazione è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Seconda legge di Newton",
+      "opzioni": [
+        "Costante (se la massa è costante)",
+        "Sempre nulla",
+        "Sempre crescente",
+        "Sempre decrescente"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Con massa costante e forza risultante costante, a = F/m è costante.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "forza costante",
+        "accelerazione",
+        "massa costante",
+        "F=ma"
+      ]
+    },
+    {
+      "id": "din_036",
+      "domanda": "In un sistema di riferimento inerziale vale che:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Sistemi di riferimento",
+      "opzioni": [
+        "La prima legge di Newton non è valida",
+        "La prima legge di Newton è valida",
+        "La forza centripeta è sempre nulla",
+        "La gravità non esiste"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un riferimento inerziale è definito proprio come quello in cui vale il principio d'inerzia (prima legge).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "inerziale",
+        "riferimento",
+        "prima legge",
+        "inerzia"
+      ]
+    },
+    {
+      "id": "din_037",
+      "domanda": "Un oggetto di massa 1 kg è soggetto a due forze orizzontali: 5 N verso destra e 2 N verso sinistra. La risultante vale:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Composizione di forze",
+      "opzioni": [
+        "7 N verso destra",
+        "3 N verso destra",
+        "3 N verso sinistra",
+        "0 N"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Le forze sono opposte: F_ris = 5 - 2 = 3 N verso destra.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "risultante",
+        "somma vettoriale",
+        "forze opposte",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "din_038",
+      "domanda": "Se un corpo è in caduta libera (trascurando l'aria), la risultante delle forze è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Caduta libera",
+      "opzioni": [
+        "Zero",
+        "Il peso mg",
+        "La normale N",
+        "L'attrito statico"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In caduta libera l'unica forza significativa è il peso mg, quindi la risultante coincide con mg.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "caduta libera",
+        "peso",
+        "risultante",
+        "gravità"
+      ]
+    },
+    {
+      "id": "din_039",
+      "domanda": "Un corpo su un piano orizzontale ruvido viene spinto con una forza orizzontale minore dell'attrito statico massimo. Il corpo:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito statico",
+      "opzioni": [
+        "Scivola con velocità costante",
+        "Inizia a scivolare accelerando",
+        "Resta fermo",
+        "Si solleva dal piano"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Se la forza applicata non supera l'attrito statico massimo, l'attrito statico si adegua e il corpo resta in quiete.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "attrito statico",
+        "soglia",
+        "quiete",
+        "forza applicata"
+      ]
+    },
+    {
+      "id": "din_040",
+      "domanda": "In un moto rettilineo uniformemente accelerato, una forza risultante costante produce:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Forza e moto",
+      "opzioni": [
+        "Accelerazione costante",
+        "Velocità costante",
+        "Traiettoria circolare",
+        "Accelerazione nulla"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Forza risultante costante (massa costante) ⇒ accelerazione costante per F = ma.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "accelerazione costante",
+        "forza costante",
+        "dinamica",
+        "F=ma"
+      ]
+    },
+    {
+      "id": "din_041",
+      "domanda": "Un blocco di 4 kg su piano orizzontale senza attrito è tirato con 10 N. Qual è l'accelerazione?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Seconda legge di Newton",
+      "opzioni": [
+        "0,4 m/s²",
+        "2,5 m/s²",
+        "4 m/s²",
+        "40 m/s²"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "a = F/m = 10/4 = 2,5 m/s².",
+      "difficolta": "media",
+      "paroleChiave": [
+        "calcolo",
+        "accelerazione",
+        "piano liscio",
+        "F=ma"
+      ]
+    },
+    {
+      "id": "din_042",
+      "domanda": "Un blocco di massa m scivola su un piano inclinato di angolo θ senza attrito. Qual è l'accelerazione lungo il piano?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Piano inclinato",
+      "opzioni": [
+        "g cosθ",
+        "g sinθ",
+        "g tanθ",
+        "g / sinθ"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La componente del peso lungo il piano è mg sinθ; quindi a = (mg sinθ)/m = g sinθ.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "piano inclinato",
+        "senza attrito",
+        "accelerazione",
+        "gsinθ"
+      ]
+    },
+    {
+      "id": "din_043",
+      "domanda": "Un blocco di 2 kg su piano orizzontale ruvido (μd = 0,2) viene trascinato con forza orizzontale costante. Se g ≈ 10 m/s², quanto vale il modulo dell'attrito dinamico?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito dinamico",
+      "opzioni": [
+        "0,4 N",
+        "2 N",
+        "4 N",
+        "20 N"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Su piano orizzontale N = mg = 2·10 = 20 N; quindi F_attr = μd·N = 0,2·20 = 4 N.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "attrito",
+        "mu_d",
+        "normale",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "din_044",
+      "domanda": "Un ascensore accelera verso l'alto con accelerazione a. Il peso apparente (la normale sulla bilancia) di una persona di massa m vale:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Ascensore (peso apparente)",
+      "opzioni": [
+        "N = m(g - a)",
+        "N = mg",
+        "N = m(g + a)",
+        "N = ma"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Equazione verticale: N - mg = ma (verso l'alto). Quindi N = m(g + a).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ascensore",
+        "peso apparente",
+        "normale",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "din_045",
+      "domanda": "Macchina di Atwood: masse m1 e m2 (m2 > m1) collegate da fune ideale su puleggia ideale. L'accelerazione del sistema vale:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Macchina di Atwood",
+      "opzioni": [
+        "a = g(m2 - m1)/(m1 + m2)",
+        "a = g(m1 + m2)/(m2 - m1)",
+        "a = g(m1 - m2)/(m1 + m2)",
+        "a = g"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Applicando F = ma ai due corpi e sommando le equazioni si ottiene a = g(m2 - m1)/(m1 + m2).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "atwood",
+        "puleggia",
+        "fune ideale",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "din_046",
+      "domanda": "Un blocco di massa 3 kg è tirato orizzontalmente con 15 N su piano con attrito dinamico 6 N. Qual è l'accelerazione?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Forze con attrito",
+      "opzioni": [
+        "1 m/s²",
+        "2 m/s²",
+        "3 m/s²",
+        "7 m/s²"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Risultante orizzontale: 15 - 6 = 9 N. Quindi a = 9/3 = 2 m/s².",
+      "difficolta": "media",
+      "paroleChiave": [
+        "attrito",
+        "risultante",
+        "accelerazione",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "din_047",
+      "domanda": "Due forze perpendicolari tra loro, 3 N e 4 N, agiscono su un punto materiale. Il modulo della risultante è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Composizione di forze",
+      "opzioni": [
+        "1 N",
+        "5 N",
+        "7 N",
+        "12 N"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per Pitagora: F_ris = √(3²+4²)=5 N.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "forze perpendicolari",
+        "pitagora",
+        "risultante",
+        "vettori"
+      ]
+    },
+    {
+      "id": "din_048",
+      "domanda": "Un'auto di massa 1000 kg percorre una curva di raggio 50 m a velocità 10 m/s. Qual è la forza centripeta richiesta?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto circolare",
+      "opzioni": [
+        "200 N",
+        "2000 N",
+        "20 000 N",
+        "200 000 N"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "F = m v² / r = 1000·(10²)/50 = 1000·100/50 = 2000 N? Attenzione: 100/50=2, quindi F=2000 N.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "centripeta",
+        "curva",
+        "mv2r",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "din_049",
+      "domanda": "Riguardo alla domanda precedente (m=1000 kg, v=10 m/s, r=50 m), quale opzione è corretta per la forza centripeta?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto circolare",
+      "opzioni": [
+        "2000 N",
+        "20 000 N",
+        "200 N",
+        "0 N"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "F = m v² / r = 1000·100/50 = 2000 N.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "centripeta",
+        "mv2r",
+        "raggio",
+        "velocità"
+      ]
+    },
+    {
+      "id": "din_050",
+      "domanda": "Un corpo è spinto contro una parete verticale con forza orizzontale F. L'attrito statico lo sostiene contro la gravità. Quale condizione minima (semplificata) deve valere per non scivolare verso il basso?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito statico (parete)",
+      "opzioni": [
+        "μs F ≥ mg",
+        "μs mg ≥ F",
+        "F ≥ μs mg",
+        "mg ≥ F"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La normale sulla parete è circa N=F; l'attrito statico massimo è μsN=μsF e deve almeno bilanciare mg.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "parete",
+        "attrito statico",
+        "normale",
+        "condizione"
+      ]
+    },
+    {
+      "id": "din_051",
+      "domanda": "Due blocchi m1=1 kg e m2=2 kg sono collegati da una fune ideale su piano orizzontale liscio. Una forza esterna F=6 N tira il sistema. Qual è l'accelerazione comune?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Sistemi di corpi",
+      "opzioni": [
+        "1 m/s²",
+        "2 m/s²",
+        "3 m/s²",
+        "6 m/s²"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Considero il sistema: massa totale 3 kg, risultante esterna 6 N ⇒ a = 6/3 = 2 m/s².",
+      "difficolta": "media",
+      "paroleChiave": [
+        "sistema",
+        "massa totale",
+        "accelerazione",
+        "fune"
+      ]
+    },
+    {
+      "id": "din_052",
+      "domanda": "Nel sistema della domanda precedente (m1=1 kg, m2=2 kg, a=2 m/s²), quanto vale la tensione nella fune tra i due blocchi (forza necessaria ad accelerare m1)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Tensione",
+      "opzioni": [
+        "1 N",
+        "2 N",
+        "4 N",
+        "6 N"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Sul blocco m1 l'unica forza orizzontale è la tensione T: T = m1 a = 1·2 = 2 N.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "tensione",
+        "sistemi",
+        "fune",
+        "m1a"
+      ]
+    },
+    {
+      "id": "din_053",
+      "domanda": "Un corpo di massa 0,5 kg è soggetto a una forza costante di 1 N per 4 s, partendo da fermo (attriti trascurabili). Quale velocità raggiunge?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Impulso e variazione di velocità (base)",
+      "opzioni": [
+        "2 m/s",
+        "4 m/s",
+        "8 m/s",
+        "16 m/s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "a = F/m = 1/0,5 = 2 m/s². Da fermo: v = a t = 2·4 = 8 m/s.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "forza costante",
+        "accelerazione",
+        "v=at",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "din_054",
+      "domanda": "Un blocco di massa 10 kg è su un piano inclinato di 30° con attrito dinamico μd=0,1. Prendendo g=10 m/s², qual è l'accelerazione lungo il piano (verso il basso)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Piano inclinato con attrito",
+      "opzioni": [
+        "a = 5 - 1 = 4 m/s²",
+        "a = 5 - 0,866 ≈ 4,13 m/s²",
+        "a = 10 m/s²",
+        "a = 0 m/s²"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Lungo il piano: mg sin30° = 100·0,5 = 50 N. Normale: N=mg cos30°≈100·0,866=86,6 N. Attrito: μdN≈0,1·86,6=8,66 N (verso l'alto). Risultante: 50-8,66=41,34 N ⇒ a=41,34/10≈4,13 m/s².",
+      "difficolta": "media",
+      "paroleChiave": [
+        "piano inclinato",
+        "attrito",
+        "sin",
+        "cos"
+      ]
+    },
+    {
+      "id": "din_055",
+      "domanda": "Un corpo si muove in moto circolare uniforme di raggio r con velocità v. Qual è l'accelerazione centripeta?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto circolare",
+      "opzioni": [
+        "a = v/r",
+        "a = v²/r",
+        "a = r/v²",
+        "a = vr"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'accelerazione centripeta in modulo è a_c = v²/r.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "accelerazione centripeta",
+        "v2r",
+        "moto circolare",
+        "formula"
+      ]
+    },
+    {
+      "id": "din_056",
+      "domanda": "Un oggetto di massa m è appeso a una fune e ruota in un cerchio orizzontale formando un pendolo conico. Quale forza fornisce la componente centripeta?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Pendolo conico",
+      "opzioni": [
+        "Il peso mg",
+        "La componente orizzontale della tensione",
+        "La normale",
+        "L'attrito dinamico"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel pendolo conico la tensione si scompone: la componente verticale bilancia mg, quella orizzontale è centripeta.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "pendolo conico",
+        "tensione",
+        "centripeta",
+        "scomposizione"
+      ]
+    },
+    {
+      "id": "din_057",
+      "domanda": "Un blocco su piano orizzontale è tirato con una forza inclinata verso l'alto. Rispetto al caso di forza orizzontale, l'attrito dinamico tende a:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito con forza inclinata",
+      "opzioni": [
+        "Aumentare perché aumenta la normale",
+        "Diminuire perché diminuisce la normale",
+        "Restare identico sempre",
+        "Invertire verso"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una componente verso l'alto riduce la normale N; poiché F_attr=μdN, l'attrito diminuisce.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "forza inclinata",
+        "normale",
+        "attrito",
+        "componenti"
+      ]
+    },
+    {
+      "id": "din_058",
+      "domanda": "Un corpo di massa 2 kg è appeso a una fune in equilibrio. La tensione vale 20 N con g=10 m/s². Questo indica che:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Equilibrio verticale",
+      "opzioni": [
+        "Il corpo accelera verso l'alto",
+        "Il corpo accelera verso il basso",
+        "Il corpo è in equilibrio (a=0)",
+        "Il corpo è in caduta libera"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "mg = 2·10 = 20 N. Se T=mg, risultante zero ⇒ a=0.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "tensione",
+        "equilibrio",
+        "mg",
+        "risultante"
+      ]
+    },
+    {
+      "id": "din_059",
+      "domanda": "Su un piano inclinato senza attrito, un corpo scende con accelerazione g sinθ. Se θ aumenta, l'accelerazione:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Piano inclinato",
+      "opzioni": [
+        "Diminuisce",
+        "Aumenta",
+        "Resta costante",
+        "Diventa negativa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Poiché sinθ aumenta al crescere di θ (tra 0° e 90°), aumenta anche g sinθ.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "sin",
+        "piano inclinato",
+        "accelerazione",
+        "dipendenza"
+      ]
+    },
+    {
+      "id": "din_060",
+      "domanda": "In un moto circolare uniforme, se raddoppio la velocità v mantenendo r costante, la forza centripeta:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto circolare",
+      "opzioni": [
+        "Raddoppia",
+        "Dimezza",
+        "Quadruplica",
+        "Resta uguale"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "F_c = m v² / r: se v raddoppia, v² quadruplica, quindi anche F_c quadruplica.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "centripeta",
+        "dipendenza",
+        "v^2",
+        "scala"
+      ]
+    },
+    {
+      "id": "din_061",
+      "domanda": "Un blocco di 5 kg è su un piano orizzontale con μs = 0,4. Con g=10 m/s², qual è la massima forza orizzontale applicabile senza mettere in moto il blocco?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito statico",
+      "opzioni": [
+        "2 N",
+        "20 N",
+        "50 N",
+        "200 N"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "N=mg=50 N. Attrito statico massimo: F_s,max=μsN=0,4·50=20 N.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "attrito statico",
+        "soglia",
+        "mu_s",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "din_062",
+      "domanda": "Un blocco è lanciato su piano orizzontale ruvido e rallenta per attrito dinamico costante. L'accelerazione è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito e decelerazione",
+      "opzioni": [
+        "Variabile e dipende dalla velocità",
+        "Costante e opposta alla velocità",
+        "Diretta sempre verso l'alto",
+        "Nulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con attrito dinamico costante (μd costante e N costante), la forza d'attrito è costante e opposta al moto ⇒ accelerazione costante opposta alla velocità.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "attrito dinamico",
+        "decelerazione",
+        "costante",
+        "opposizione"
+      ]
+    },
+    {
+      "id": "din_063",
+      "domanda": "Due forze agiscono su un corpo: una di 10 N verso est e una di 10 N verso nord. Il modulo della risultante è circa:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Composizione di forze",
+      "opzioni": [
+        "10 N",
+        "14,1 N",
+        "20 N",
+        "0 N"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Forze perpendicolari: √(10²+10²)=10√2≈14,1 N.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "vettori",
+        "perpendicolari",
+        "sqrt2",
+        "risultante"
+      ]
+    },
+    {
+      "id": "din_064",
+      "domanda": "Un blocco di massa m è appeso a una fune in un ascensore che accelera verso il basso con accelerazione a (con a<g). La tensione vale:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Ascensore (tensione)",
+      "opzioni": [
+        "T = m(g + a)",
+        "T = m(g - a)",
+        "T = ma",
+        "T = 0"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Prendendo verso l'alto positivo: T - mg = -ma ⇒ T = m(g - a).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ascensore",
+        "tensione",
+        "accelerazione",
+        "peso apparente"
+      ]
+    },
+    {
+      "id": "din_065",
+      "domanda": "Un corpo di massa 3 kg è soggetto a una forza risultante di 12 N diretta a 30° sopra l'orizzontale. Qual è il modulo dell'accelerazione?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Seconda legge di Newton",
+      "opzioni": [
+        "0,25 m/s²",
+        "2 m/s²",
+        "4 m/s²",
+        "6 m/s²"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il modulo dell'accelerazione dipende dal modulo della risultante: a = F/m = 12/3 = 4 m/s², indipendentemente dall'angolo (per il modulo).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "risultante",
+        "modulo",
+        "accelerazione",
+        "vettori"
+      ]
+    },
+    {
+      "id": "din_066",
+      "domanda": "Un blocco scivola verso il basso su un piano inclinato ruvido. La forza d'attrito dinamico è diretta:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito su piano inclinato",
+      "opzioni": [
+        "Verso il basso lungo il piano",
+        "Verso l'alto lungo il piano",
+        "Perpendicolare al piano",
+        "Verso il basso verticale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'attrito dinamico si oppone al moto relativo: se il blocco scende, l'attrito è verso l'alto lungo il piano.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "attrito",
+        "piano inclinato",
+        "verso",
+        "scivolamento"
+      ]
+    },
+    {
+      "id": "din_067",
+      "domanda": "Due blocchi sovrapposti: il superiore (m) è trascinato dal blocco inferiore tramite attrito statico, senza slittamento. Quale condizione deve valere per evitare lo slittamento (modello semplificato)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito statico (due blocchi)",
+      "opzioni": [
+        "La forza richiesta m a deve essere ≤ μs N",
+        "La forza richiesta m a deve essere ≥ μs N",
+        "Serve sempre attrito dinamico",
+        "L'attrito non dipende dalla normale"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per non slittare, l'attrito statico disponibile (≤ μsN) deve essere sufficiente a fornire la forza necessaria m a al blocco superiore.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "slittamento",
+        "attrito statico",
+        "ma",
+        "mu_s"
+      ]
+    },
+    {
+      "id": "din_068",
+      "domanda": "In una macchina di Atwood con m2>m1, la tensione della fune è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Macchina di Atwood",
+      "opzioni": [
+        "Maggiore di m2 g",
+        "Minore di m1 g",
+        "Compresa tra m1 g e m2 g",
+        "Uguale a (m1+m2)g"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il corpo più pesante (m2) accelera verso il basso, quindi T < m2g; quello più leggero accelera verso l'alto, quindi T > m1g.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "atwood",
+        "tensione",
+        "confronto",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "din_069",
+      "domanda": "Un blocco su piano orizzontale è tirato con forza F e accelera. Se aumento μd mantenendo F e m costanti, l'accelerazione:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito e accelerazione",
+      "opzioni": [
+        "Aumenta",
+        "Diminuisce",
+        "Resta uguale",
+        "Diventa infinita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Attrito dinamico F_attr=μdN cresce, quindi la risultante orizzontale diminuisce e l'accelerazione diminuisce.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "mu_d",
+        "attrito",
+        "risultante",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "din_070",
+      "domanda": "Un corpo in equilibrio su un piano inclinato ruvido: l'attrito statico (se presente) è diretto:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito statico su piano inclinato",
+      "opzioni": [
+        "Sempre verso l'alto lungo il piano",
+        "Sempre verso il basso lungo il piano",
+        "Nel verso che si oppone alla tendenza al moto",
+        "Perpendicolare al piano"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L'attrito statico si orienta per opporsi alla tendenza allo scorrimento, che può essere verso il basso o verso l'alto a seconda delle altre forze.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "attrito statico",
+        "tendenza al moto",
+        "equilibrio",
+        "piano inclinato"
+      ]
+    },
+    {
+      "id": "din_071",
+      "domanda": "Un corpo di massa 1 kg è sottoposto a una forza risultante che varia nel tempo. Quale grandezza determina istante per istante l'accelerazione?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Forza variabile",
+      "opzioni": [
+        "Solo la velocità",
+        "La risultante istantanea delle forze",
+        "Solo la posizione",
+        "Solo l'energia potenziale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per la seconda legge di Newton, a(t) = F_ris(t)/m.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "forza variabile",
+        "istantaneo",
+        "a=F/m",
+        "dinamica"
+      ]
+    },
+    {
+      "id": "din_072",
+      "domanda": "Un corpo su piano orizzontale è soggetto a due forze orizzontali entrambe verso destra: 3 N e 7 N. Con m=2 kg, l'accelerazione vale:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Seconda legge di Newton",
+      "opzioni": [
+        "2 m/s²",
+        "5 m/s²",
+        "10 m/s²",
+        "20 m/s²"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Risultante = 3+7=10 N ⇒ a = 10/2 = 5 m/s².",
+      "difficolta": "media",
+      "paroleChiave": [
+        "somma forze",
+        "risultante",
+        "accelerazione",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "din_073",
+      "domanda": "Un blocco di massa m su piano orizzontale ruvido è trainato con forza F. La condizione per moto a velocità costante è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Equilibrio dinamico con attrito",
+      "opzioni": [
+        "F = μd N",
+        "F > μd N",
+        "F < μd N",
+        "F = 0"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Velocità costante ⇒ a=0 ⇒ risultante orizzontale zero, quindi F bilancia l'attrito dinamico μdN.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "velocità costante",
+        "attrito dinamico",
+        "equilibrio",
+        "condizione"
+      ]
+    },
+    {
+      "id": "din_074",
+      "domanda": "Una massa appesa a una molla verticale oscilla. Nel punto di massimo allungamento, l'accelerazione istantanea è diretta:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Forze elastiche (qualitativo)",
+      "opzioni": [
+        "Verso il basso",
+        "Verso l'alto",
+        "Nullo perché la velocità è zero",
+        "Orizzontale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel massimo allungamento la velocità è zero, ma la forza risultante non è necessariamente zero; in quel punto la risultante è verso l'alto (verso l'equilibrio) quindi anche l'accelerazione.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "molla",
+        "accelerazione",
+        "estremo",
+        "forza risultante"
+      ]
+    },
+    {
+      "id": "din_075",
+      "domanda": "Un corpo su un piano inclinato di 30° è tenuto fermo da una forza parallela al piano diretta verso l'alto. Senza attrito, tale forza deve valere:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Piano inclinato (equilibrio)",
+      "opzioni": [
+        "mg cos30°",
+        "mg sin30°",
+        "mg",
+        "0"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per l'equilibrio lungo il piano bisogna bilanciare la componente del peso: F = mg sin30°.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "equilibrio",
+        "piano inclinato",
+        "componenti",
+        "sin30"
+      ]
+    },
+    {
+      "id": "din_076",
+      "domanda": "Un corpo compie moto circolare uniforme. Quale affermazione è corretta?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto circolare",
+      "opzioni": [
+        "La velocità è costante come vettore",
+        "L'accelerazione è nulla",
+        "La risultante delle forze è diretta verso il centro",
+        "La forza centripeta è una nuova forza fondamentale"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel moto circolare uniforme cambia la direzione della velocità: serve una risultante verso il centro (centripeta).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto circolare",
+        "risultante",
+        "centripeta",
+        "velocità"
+      ]
+    },
+    {
+      "id": "din_077",
+      "domanda": "Un corpo viene trascinato su piano orizzontale con una forza F inclinata di 60° sopra l'orizzontale. Se F è fissata, quale componente contribuisce all'accelerazione orizzontale (trascurando attrito)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Scomposizione forze",
+      "opzioni": [
+        "F cos60°",
+        "F sin60°",
+        "F",
+        "N"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La componente orizzontale è F_x = F cosθ; con θ=60° vale F cos60°.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "componenti",
+        "cos",
+        "forza inclinata",
+        "orizzontale"
+      ]
+    },
+    {
+      "id": "din_078",
+      "domanda": "Due blocchi collegati da fune su piano orizzontale ruvido: il blocco A (m=2 kg) è tirato da F=10 N, l'attrito dinamico su A è 2 N e su B (m=3 kg) è 3 N. Qual è l'accelerazione del sistema?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Sistemi con attrito",
+      "opzioni": [
+        "a = (10-5)/(5) = 1 m/s²",
+        "a = (10-5)/(2) = 2,5 m/s²",
+        "a = (10-5)/(3) = 1,67 m/s²",
+        "a = (10-5)/(1) = 5 m/s²"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Forza esterna netta sul sistema: 10 - (2+3)=5 N. Massa totale: 2+3=5 kg. Quindi a=5/5=1 m/s².",
+      "difficolta": "media",
+      "paroleChiave": [
+        "sistema",
+        "attrito",
+        "massa totale",
+        "risultante"
+      ]
+    },
+    {
+      "id": "din_079",
+      "domanda": "Un corpo è soggetto a una forza risultante costante, ma la sua velocità iniziale è opposta alla forza. Cosa accade alla velocità nel tempo?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Forza e verso della velocità",
+      "opzioni": [
+        "Aumenta in modulo fin dall'inizio",
+        "Diminuisce fino a zero e poi aumenta nel verso della forza",
+        "Resta costante",
+        "Diventa immediatamente zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se l'accelerazione è opposta alla velocità iniziale, il corpo rallenta, può fermarsi e poi invertire il verso accelerando nella direzione della forza.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "verso",
+        "accelerazione",
+        "inversione",
+        "moto rettilineo"
+      ]
+    },
+    {
+      "id": "din_080",
+      "domanda": "Un oggetto su piano orizzontale è collegato a una molla e tirato lentamente finché sta per muoversi (attrito statico). In quel limite, la forza elastica vale:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Molla e attrito statico",
+      "opzioni": [
+        "F_el = 0",
+        "F_el = μs N (massimo attrito statico)",
+        "F_el = μd N",
+        "F_el = mg"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Al distacco imminente l'attrito statico è al massimo: F_el (che tira) = F_s,max = μsN.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "molla",
+        "attrito statico",
+        "distacco",
+        "soglia"
+      ]
+    },
+    {
+      "id": "din_081",
+      "domanda": "In una macchina di Atwood reale con puleggia dotata di momento d'inerzia I e raggio R (senza slittamento), quale grandezza addizionale entra nelle equazioni rispetto al caso ideale?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Puleggia con inerzia",
+      "opzioni": [
+        "La forza centripeta",
+        "La coppia τ = Iα della puleggia",
+        "La pressione atmosferica",
+        "La legge di Coulomb"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con puleggia massiva bisogna considerare la dinamica rotazionale: la differenza di tensione genera una coppia τ = (T2-T1)R = Iα.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "puleggia",
+        "momento d'inerzia",
+        "coppia",
+        "alpha"
+      ]
+    },
+    {
+      "id": "din_082",
+      "domanda": "Un blocco su piano inclinato con attrito statico μs è in equilibrio senza altre forze. Qual è la condizione (in termini di θ) per cui l'equilibrio è possibile?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Piano inclinato con attrito statico",
+      "opzioni": [
+        "tanθ ≤ μs",
+        "tanθ ≥ μs",
+        "sinθ ≤ μs",
+        "cosθ ≤ μs"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Serve mg sinθ ≤ μs mg cosθ ⇒ tanθ ≤ μs.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "piano inclinato",
+        "equilibrio",
+        "tan",
+        "mu_s"
+      ]
+    },
+    {
+      "id": "din_083",
+      "domanda": "Due masse m1 e m2 sono collegate da fune ideale su puleggia ideale. Se aggiungo una terza forza esterna orizzontale su una delle masse (tramite guida), qual è il metodo più robusto per impostare il problema?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Metodologia (sistemi vincolati)",
+      "opzioni": [
+        "Usare solo la prima legge di Newton",
+        "Disegnare i diagrammi delle forze per ogni massa e scrivere F=ma con il vincolo sulle accelerazioni",
+        "Calcolare sempre e solo le energie",
+        "Ignorare la tensione perché interna"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nei sistemi vincolati si impostano le equazioni di Newton per ciascun corpo e si aggiunge il vincolo cinematico (stessa accelerazione in modulo lungo la fune).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "vincoli",
+        "F=ma",
+        "diagramma forze",
+        "tensione"
+      ]
+    },
+    {
+      "id": "din_084",
+      "domanda": "Un'auto percorre una curva sopraelevata (banked) di angolo θ senza attrito. Quale relazione deve valere tra v, r e θ per la percorrenza senza slittamento laterale?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Curva sopraelevata",
+      "opzioni": [
+        "v²/r = g tanθ",
+        "v²/r = g cosθ",
+        "v²/r = g sinθ",
+        "v²/r = g / tanθ"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Senza attrito, la componente orizzontale della normale fornisce la centripeta e quella verticale bilancia il peso: tanθ = v²/(rg).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "banked",
+        "curva",
+        "tan",
+        "centripeta"
+      ]
+    },
+    {
+      "id": "din_085",
+      "domanda": "Un corpo è in un riferimento non inerziale che accelera con accelerazione A verso destra. Per applicare F=ma nel riferimento, si introduce una forza apparente:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Riferimenti non inerziali",
+      "opzioni": [
+        "F_app = mA verso destra",
+        "F_app = mA verso sinistra",
+        "F_app = A/m verso sinistra",
+        "F_app = 0"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel riferimento che accelera verso destra, compare una forza apparente su masse m pari a mA verso sinistra (opposta all'accelerazione del riferimento).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "non inerziale",
+        "forza apparente",
+        "pseudo-forza",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "din_086",
+      "domanda": "Un blocco di massa m è su un piano orizzontale in un camion che accelera verso destra con accelerazione A. Qual è il valore minimo di μs per non far scivolare il blocco (rispetto al camion)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito in riferimento accelerato",
+      "opzioni": [
+        "μs ≥ A/g",
+        "μs ≥ g/A",
+        "μs ≥ A·g",
+        "μs ≥ 1/A"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Serve una forza di attrito statico mA. Il massimo è μsN=μs mg. Quindi mA ≤ μs mg ⇒ μs ≥ A/g.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "camion",
+        "attrito statico",
+        "riferimento accelerato",
+        "A/g"
+      ]
+    },
+    {
+      "id": "din_087",
+      "domanda": "Pendolo conico: massa m ruota con velocità angolare ω a raggio orizzontale r. La relazione corretta tra tensione T, angolo α (con la verticale) e centripeta è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Pendolo conico",
+      "opzioni": [
+        "T cosα = mω²r e T sinα = mg",
+        "T sinα = mω²r e T cosα = mg",
+        "T = mg + mω²r",
+        "T = mg - mω²r"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La componente verticale bilancia il peso: T cosα = mg. La componente orizzontale è centripeta: T sinα = mω²r.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "pendolo conico",
+        "tensione",
+        "omega",
+        "componenti"
+      ]
+    },
+    {
+      "id": "din_088",
+      "domanda": "Un corpo scivola su un piano inclinato ruvido e raggiunge velocità limite costante (accelerazione nulla). Quale condizione lungo il piano deve valere?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Equilibrio dinamico su piano inclinato",
+      "opzioni": [
+        "mg sinθ = μd mg cosθ",
+        "mg cosθ = μd mg sinθ",
+        "μd = 0",
+        "mg = 0"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Accelerazione nulla ⇒ risultante lungo il piano nulla: componente del peso mg sinθ bilanciata dall'attrito dinamico μd mg cosθ.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "piano inclinato",
+        "velocità costante",
+        "attrito",
+        "condizione"
+      ]
+    },
+    {
+      "id": "din_089",
+      "domanda": "Due blocchi m e 2m sono collegati da una fune ideale che passa su una puleggia ideale; il blocco m è su un tavolo ruvido con μd, il blocco 2m è appeso. Se il sistema si muove con 2m verso il basso, quale è l'accelerazione in funzione di μd (g costante)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Sistemi con attrito e puleggia",
+      "opzioni": [
+        "a = g(2 - μd)/(3)",
+        "a = g(2 + μd)/(3)",
+        "a = g(1 - 2μd)/(3)",
+        "a = g(2 - μd)/(2)"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Forze esterne sul sistema lungo il moto: peso del blocco appeso 2mg meno attrito sul blocco sul tavolo (μd·N=μd·mg). Massa totale 3m. Quindi a = (2mg - μd mg)/(3m)= g(2-μd)/3.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "puleggia",
+        "attrito",
+        "sistema",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "din_090",
+      "domanda": "Una massa m è spinta contro un muro verticale con forza orizzontale F e rimane in equilibrio. Se μs è il coefficiente di attrito statico, qual è la forza minima F richiesta (modello N=F)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito statico (parete)",
+      "opzioni": [
+        "F ≥ mg/μs",
+        "F ≥ μs mg",
+        "F ≥ mg",
+        "F ≥ μs/F"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Serve μsN ≥ mg e N≈F ⇒ μsF ≥ mg ⇒ F ≥ mg/μs.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "parete",
+        "attrito statico",
+        "forza minima",
+        "mg/mu"
+      ]
+    },
+    {
+      "id": "din_091",
+      "domanda": "In un sistema di due masse collegate da fune ideale su piano liscio, una forza esterna F agisce su una massa. Per trovare l'accelerazione è spesso utile considerare:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Sistemi di corpi",
+      "opzioni": [
+        "Solo il corpo su cui agisce F",
+        "Il sistema complessivo e le sole forze esterne",
+        "Solo le forze interne (tensione)",
+        "Solo la forza peso"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Considerando l'intero sistema, le tensioni interne si elidono e resta a = F_ext / M_tot.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "forze esterne",
+        "sistema",
+        "tensione interna",
+        "metodo"
+      ]
     }
   ]
 }

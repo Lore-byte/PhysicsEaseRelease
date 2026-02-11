@@ -244,6 +244,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     if (lower == 'kin' || lower == 'kinematica') {
       return 'Cinematica';
     }
+    if (lower == 'term' || lower == 'termodinamica') {
+      return 'Termodinamica';
+    }
 
     // Cerca nella mappa del servizio (chiavi minuscole, es: 'kinematica')
     if (QuizService.categoryNames.containsKey(lower)) {
@@ -1503,7 +1506,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
             childrenPadding: EdgeInsets.zero, // <-- remove gap under the header
             leading: Icon(Icons.warning_amber, color: Colors.orange, size: 24),
             title: Text(
-              'Domande Più Sbagliate',
+              'Errori più frequenti',
               style: Theme.of(
                 context,
               ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),

@@ -24,22 +24,109 @@ class Quiz {
     this.paroleChiave = const [],
   });
 
+  // --- helpers (robust JSON parsing) ---
+  static String _readString(
+    Map<String, dynamic> map,
+    List<String> keys, {
+    String fallback = '',
+  }) {
+    for (final k in keys) {
+      final v = map[k];
+      if (v == null) continue;
+      final s = v.toString().trim();
+      if (s.isNotEmpty) return s;
+    }
+    return fallback;
+  }
+
+  static int _readInt(
+    Map<String, dynamic> map,
+    List<String> keys, {
+    int fallback = 0,
+  }) {
+    for (final k in keys) {
+      final v = map[k];
+      if (v == null) continue;
+      if (v is int) return v;
+      final parsed = int.tryParse(v.toString());
+      if (parsed != null) return parsed;
+    }
+    return fallback;
+  }
+
+  static List<String> _readStringList(
+    Map<String, dynamic> map,
+    List<String> keys, {
+    List<String> fallback = const [],
+  }) {
+    for (final k in keys) {
+      final v = map[k];
+      if (v == null) continue;
+      if (v is List) return v.map((e) => e.toString()).toList();
+    }
+    return fallback;
+  }
+
   factory Quiz.fromMap(Map<String, dynamic> map) {
+    // NOTE: molti JSON usano "Categoria" (C maiuscola). Accetta entrambe.
+    final id = _readString(map, const ['id']);
+    final domanda = _readString(map, const ['domanda', 'Domanda']);
+    final categoria = _readString(map, const [
+      'categoria',
+      'Categoria',
+      'category',
+      'Category',
+    ]);
+    final difficolta = _readString(map, const [
+      'difficolta',
+      'difficoltà',
+      'Difficolta',
+      'Difficoltà',
+    ]);
+
+    if (id.isEmpty || domanda.isEmpty || categoria.isEmpty) {
+      throw FormatException(
+        'Quiz JSON missing required fields (id/domanda/categoria): $map',
+      );
+    }
+
+    final opzioni = _readStringList(map, const [
+      'opzioni',
+      'Opzioni',
+      'options',
+      'Options',
+    ]);
+    if (opzioni.isEmpty) {
+      throw FormatException('Quiz JSON missing opzioni list: $map');
+    }
+
     return Quiz(
-      id: map['id'] as String,
-      domanda: map['domanda'] as String,
-      categoria: map['categoria'] as String,
-      sottocategoria: map['sottocategoria'] as String?,
-      opzioni: (map['opzioni'] as List<dynamic>)
-          .map((e) => e.toString())
-          .toList(),
-      rispostaCorretta: map['rispostaCorretta'] as int,
-      spiegazione: map['spiegazione'] as String,
-      difficolta: map['difficolta'] as String,
-      paroleChiave: (map['paroleChiave'] as List<dynamic>?)
-          ?.map((e) => e.toString())
-          .toList() ??
-          const [],
+      id: id,
+      domanda: domanda,
+      categoria: categoria,
+      sottocategoria:
+          _readString(map, const [
+            'sottocategoria',
+            'Sottocategoria',
+          ], fallback: '').isEmpty
+          ? null
+          : _readString(map, const ['sottocategoria', 'Sottocategoria']),
+      opzioni: opzioni,
+      rispostaCorretta: _readInt(map, const [
+        'rispostaCorretta',
+        'RispostaCorretta',
+        'correctAnswer',
+        'correct_answer',
+      ]),
+      spiegazione: _readString(map, const ['spiegazione', 'Spiegazione']),
+      difficolta: difficolta,
+      paroleChiave: _readStringList(map, const [
+        'paroleChiave',
+        'ParoleChiave',
+        'parole_chiave',
+        'keywords',
+        'Keywords',
+      ]),
     );
   }
 

@@ -1,164 +1,2416 @@
 {
   "quiz": [
     {
-      "id": "kin_001",
-      "domanda": "Quale formula descrive il moto rettilineo uniforme?",
+      "id": "cin_001",
+      "domanda": "Che cos'è lo spostamento (Δx)?",
       "categoria": "Cinematica",
-      "sottocategoria": "Moto rettilineo",
+      "sottocategoria": "Grandezze fondamentali",
       "opzioni": [
-        "s = v × t",
-        "s = ½at²",
-        "v = v₀ + at",
-        "F = ma"
+        "La variazione di posizione con segno (grandezza vettoriale)",
+        "La lunghezza totale del percorso (distanza)",
+        "Il tempo impiegato",
+        "La velocità istantanea"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Nel moto rettilineo uniforme la velocità è costante, quindi lo spazio percorso è dato dal prodotto della velocità per il tempo: s = v × t",
+      "spiegazione": "Lo spostamento è la differenza tra posizione finale e iniziale e include direzione e verso.",
       "difficolta": "facile",
-      "paroleChiave": ["mru", "velocita", "costante", "spazio"]
+      "paroleChiave": [
+        "spostamento",
+        "vettore",
+        "posizione"
+      ]
     },
     {
-      "id": "kin_002",
-      "domanda": "Nel moto uniformemente accelerato, quale grandezza rimane costante?",
+      "id": "cin_002",
+      "domanda": "Che cos'è la distanza percorsa?",
       "categoria": "Cinematica",
-      "sottocategoria": "Moto accelerato",
+      "sottocategoria": "Grandezze fondamentali",
+      "opzioni": [
+        "La variazione di posizione con segno",
+        "La lunghezza totale del percorso (grandezza scalare)",
+        "Il modulo dell'accelerazione",
+        "La componente x della velocità"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La distanza è una grandezza scalare e non può essere negativa.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "distanza",
+        "percorso",
+        "scalare"
+      ]
+    },
+    {
+      "id": "cin_003",
+      "domanda": "Che cosa rappresenta la velocità istantanea?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grandezze fondamentali",
+      "opzioni": [
+        "Il rapporto tra distanza totale e tempo totale",
+        "L'area sotto il grafico s-t",
+        "Il limite di Δx/Δt per intervalli di tempo molto piccoli",
+        "La pendenza del grafico a-t"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La velocità istantanea descrive come cambia la posizione in un preciso istante.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "velocità",
+        "istantanea",
+        "limite"
+      ]
+    },
+    {
+      "id": "cin_004",
+      "domanda": "Che cos'è l'accelerazione?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grandezze fondamentali",
+      "opzioni": [
+        "La variazione di posizione nel tempo",
+        "Il rapporto tra massa e forza",
+        "La distanza divisa il tempo",
+        "La variazione di velocità nel tempo: a = Δv/Δt"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "L'accelerazione misura quanto rapidamente cambia la velocità.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "accelerazione",
+        "delta v",
+        "tempo"
+      ]
+    },
+    {
+      "id": "cin_005",
+      "domanda": "Qual è l'unità SI dell'accelerazione?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Unità di misura",
+      "opzioni": [
+        "m/s²",
+        "m/s",
+        "N",
+        "kg·m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel SI l'accelerazione si misura in metri al secondo quadrato.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "unità",
+        "SI",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_006",
+      "domanda": "Che cos'è lo spostamento (Δx)?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grandezze fondamentali",
+      "opzioni": [
+        "La lunghezza totale del percorso (distanza)",
+        "La variazione di posizione con segno (grandezza vettoriale)",
+        "Il tempo impiegato",
+        "La velocità istantanea"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Lo spostamento è la differenza tra posizione finale e iniziale e include direzione e verso.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "spostamento",
+        "vettore",
+        "posizione"
+      ]
+    },
+    {
+      "id": "cin_007",
+      "domanda": "Che cos'è la distanza percorsa?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grandezze fondamentali",
+      "opzioni": [
+        "La variazione di posizione con segno",
+        "Il modulo dell'accelerazione",
+        "La lunghezza totale del percorso (grandezza scalare)",
+        "La componente x della velocità"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La distanza è una grandezza scalare e non può essere negativa.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "distanza",
+        "percorso",
+        "scalare"
+      ]
+    },
+    {
+      "id": "cin_008",
+      "domanda": "Che cosa rappresenta la velocità istantanea?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grandezze fondamentali",
+      "opzioni": [
+        "Il rapporto tra distanza totale e tempo totale",
+        "L'area sotto il grafico s-t",
+        "La pendenza del grafico a-t",
+        "Il limite di Δx/Δt per intervalli di tempo molto piccoli"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "La velocità istantanea descrive come cambia la posizione in un preciso istante.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "velocità",
+        "istantanea",
+        "limite"
+      ]
+    },
+    {
+      "id": "cin_009",
+      "domanda": "Converti 18 km/h in m/s.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Conversioni",
+      "opzioni": [
+        "18 m/s",
+        "5 m/s",
+        "1.39 m/s",
+        "10 m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conversione",
+        "km/h",
+        "m/s"
+      ]
+    },
+    {
+      "id": "cin_010",
+      "domanda": "Converti 36 km/h in m/s.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Conversioni",
+      "opzioni": [
+        "36 m/s",
+        "2.78 m/s",
+        "10 m/s",
+        "15 m/s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conversione",
+        "km/h",
+        "m/s"
+      ]
+    },
+    {
+      "id": "cin_011",
+      "domanda": "Converti 54 km/h in m/s.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Conversioni",
+      "opzioni": [
+        "54 m/s",
+        "4.17 m/s",
+        "20 m/s",
+        "15 m/s"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conversione",
+        "km/h",
+        "m/s"
+      ]
+    },
+    {
+      "id": "cin_012",
+      "domanda": "Converti 72 km/h in m/s.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Conversioni",
+      "opzioni": [
+        "20 m/s",
+        "72 m/s",
+        "5.56 m/s",
+        "25 m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conversione",
+        "km/h",
+        "m/s"
+      ]
+    },
+    {
+      "id": "cin_013",
+      "domanda": "Converti 90 km/h in m/s.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Conversioni",
+      "opzioni": [
+        "90 m/s",
+        "25 m/s",
+        "6.94 m/s",
+        "30 m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conversione",
+        "km/h",
+        "m/s"
+      ]
+    },
+    {
+      "id": "cin_014",
+      "domanda": "Converti 108 km/h in m/s.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Conversioni",
+      "opzioni": [
+        "108 m/s",
+        "8.33 m/s",
+        "30 m/s",
+        "35 m/s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conversione",
+        "km/h",
+        "m/s"
+      ]
+    },
+    {
+      "id": "cin_015",
+      "domanda": "Converti 126 km/h in m/s.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Conversioni",
+      "opzioni": [
+        "126 m/s",
+        "9.72 m/s",
+        "40 m/s",
+        "35 m/s"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conversione",
+        "km/h",
+        "m/s"
+      ]
+    },
+    {
+      "id": "cin_016",
+      "domanda": "Converti 144 km/h in m/s.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Conversioni",
+      "opzioni": [
+        "40 m/s",
+        "144 m/s",
+        "11.11 m/s",
+        "45 m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conversione",
+        "km/h",
+        "m/s"
+      ]
+    },
+    {
+      "id": "cin_017",
+      "domanda": "Converti 60 km/h in m/s.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Conversioni",
+      "opzioni": [
+        "60 m/s",
+        "16.67 m/s",
+        "4.63 m/s",
+        "21.67 m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conversione",
+        "km/h",
+        "m/s"
+      ]
+    },
+    {
+      "id": "cin_018",
+      "domanda": "Converti 120 km/h in m/s.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Conversioni",
+      "opzioni": [
+        "120 m/s",
+        "9.26 m/s",
+        "33.33 m/s",
+        "38.33 m/s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per passare da km/h a m/s si divide per 3,6.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conversione",
+        "km/h",
+        "m/s"
+      ]
+    },
+    {
+      "id": "cin_019",
+      "domanda": "Nel MRU con v = 1 m/s e t = 5 s (s0 = 0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto rettilineo uniforme (MRU)",
+      "opzioni": [
+        "6 m",
+        "2.5 m",
+        "5 m",
+        "10 m"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "s=vt",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_020",
+      "domanda": "Nel MRU con v = 2 m/s e t = 7 s (s0 = 0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto rettilineo uniforme (MRU)",
+      "opzioni": [
+        "9 m",
+        "7.0 m",
+        "28 m",
+        "14 m"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "s=vt",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_021",
+      "domanda": "Nel MRU con v = 3 m/s e t = 9 s (s0 = 0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto rettilineo uniforme (MRU)",
+      "opzioni": [
+        "27 m",
+        "12 m",
+        "13.5 m",
+        "54 m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "s=vt",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_022",
+      "domanda": "Nel MRU con v = 4 m/s e t = 11 s (s0 = 0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto rettilineo uniforme (MRU)",
+      "opzioni": [
+        "15 m",
+        "44 m",
+        "22.0 m",
+        "88 m"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "s=vt",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_023",
+      "domanda": "Nel MRU con v = 5 m/s e t = 13 s (s0 = 0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto rettilineo uniforme (MRU)",
+      "opzioni": [
+        "18 m",
+        "32.5 m",
+        "65 m",
+        "130 m"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "s=vt",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_024",
+      "domanda": "Nel MRU con v = 6 m/s e t = 15 s (s0 = 0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto rettilineo uniforme (MRU)",
+      "opzioni": [
+        "21 m",
+        "45.0 m",
+        "180 m",
+        "90 m"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "s=vt",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_025",
+      "domanda": "Nel MRU con v = 7 m/s e t = 17 s (s0 = 0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto rettilineo uniforme (MRU)",
+      "opzioni": [
+        "119 m",
+        "24 m",
+        "59.5 m",
+        "238 m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "s=vt",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_026",
+      "domanda": "Nel MRU con v = 8 m/s e t = 19 s (s0 = 0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto rettilineo uniforme (MRU)",
+      "opzioni": [
+        "27 m",
+        "152 m",
+        "76.0 m",
+        "304 m"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "s=vt",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_027",
+      "domanda": "Nel MRU con v = 9 m/s e t = 21 s (s0 = 0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto rettilineo uniforme (MRU)",
+      "opzioni": [
+        "30 m",
+        "94.5 m",
+        "189 m",
+        "378 m"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "s=vt",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_028",
+      "domanda": "Nel MRU con v = 10 m/s e t = 23 s (s0 = 0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto rettilineo uniforme (MRU)",
+      "opzioni": [
+        "33 m",
+        "115.0 m",
+        "460 m",
+        "230 m"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Nel moto rettilineo uniforme lo spostamento è s = v·t (se s0 = 0).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "s=vt",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_029",
+      "domanda": "In un grafico spazio-tempo s(t), che cosa rappresenta la pendenza?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (s-t)",
       "opzioni": [
         "La velocità",
         "L'accelerazione",
-        "Lo spazio percorso",
-        "Il tempo"
-      ],
-      "rispostaCorretta": 1,
-      "spiegazione": "Nel moto uniformemente accelerato, per definizione, l'accelerazione rimane costante nel tempo, mentre la velocità varia linearmente.",
-      "difficolta": "facile",
-      "paroleChiave": ["accelerazione", "mua", "costante"]
-    },
-    {
-      "id": "kin_003",
-      "domanda": "Un oggetto viene lanciato verticalmente verso l'alto. Quale affermazione è corretta?",
-      "categoria": "Cinematica",
-      "sottocategoria": "Moto verticale",
-      "opzioni": [
-        "L'accelerazione è zero nel punto più alto",
-        "La velocità è massima nel punto più alto",
-        "L'accelerazione è sempre g verso il basso",
-        "La velocità è costante durante la salita"
-      ],
-      "rispostaCorretta": 2,
-      "spiegazione": "Durante tutto il moto, l'accelerazione di gravità g è sempre diretta verso il basso ed ha valore costante (circa 9.8 m/s²), anche nel punto più alto dove la velocità è zero.",
-      "difficolta": "medio",
-      "paroleChiave": ["gravita", "lancio", "verticale", "accelerazione"]
-    },
-    {
-      "id": "kin_004",
-      "domanda": "In un moto circolare uniforme, quale grandezza è costante?",
-      "categoria": "Cinematica",
-      "sottocategoria": "Moto circolare",
-      "opzioni": [
-        "La velocità vettoriale",
-        "Il modulo della velocità",
-        "L'accelerazione totale",
-        "La posizione"
-      ],
-      "rispostaCorretta": 1,
-      "spiegazione": "Nel moto circolare uniforme, il modulo della velocità (la rapidità) rimane costante, mentre la direzione della velocità cambia continuamente. L'accelerazione centripeta è presente e diretta verso il centro.",
-      "difficolta": "medio",
-      "paroleChiave": ["circolare", "uniforme", "velocita", "modulo"]
-    },
-    {
-      "id": "kin_005",
-      "domanda": "Un'auto parte da ferma e raggiunge 100 km/h in 10 secondi. Qual è l'accelerazione media?",
-      "categoria": "Cinematica",
-      "sottocategoria": "Moto accelerato",
-      "opzioni": [
-        "2.78 m/s²",
-        "10 m/s²",
-        "27.8 m/s²",
-        "100 m/s²"
+        "Lo spostamento",
+        "La massa"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Prima convertiamo 100 km/h in m/s: 100 km/h = 27.8 m/s. L'accelerazione media è a = Δv/Δt = 27.8 m/s / 10 s = 2.78 m/s²",
-      "difficolta": "medio",
-      "paroleChiave": ["accelerazione", "conversione", "unita", "media"]
-    },
-    {
-      "id": "kin_006",
-      "domanda": "Quale delle seguenti grandezze NON è un vettore?",
-      "categoria": "Cinematica",
-      "sottocategoria": "Grandezze vettoriali",
-      "opzioni": [
-        "Velocità",
-        "Accelerazione",
-        "Spostamento",
-        "Rapidità"
-      ],
-      "rispostaCorretta": 3,
-      "spiegazione": "La rapidità è una grandezza scalare (solo modulo), mentre velocità, accelerazione e spostamento sono grandezze vettoriali (hanno modulo, direzione e verso).",
+      "spiegazione": "La pendenza di s(t) è Δs/Δt, cioè la velocità.",
       "difficolta": "facile",
-      "paroleChiave": ["vettore", "scalare", "rapidita", "velocita"]
+      "paroleChiave": [
+        "grafico",
+        "s-t",
+        "pendenza",
+        "velocità"
+      ]
     },
     {
-      "id": "kin_007",
-      "domanda": "In un moto parabolico, trascurando l'attrito, come varia la componente orizzontale della velocità?",
+      "id": "cin_030",
+      "domanda": "In un grafico spazio-tempo s(t), che cosa rappresenta la pendenza?",
       "categoria": "Cinematica",
-      "sottocategoria": "Moto parabolico",
+      "sottocategoria": "Grafici (s-t)",
       "opzioni": [
-        "Aumenta costantemente",
-        "Diminuisce costantemente",
-        "Rimane costante",
-        "Prima aumenta poi diminuisce"
-      ],
-      "rispostaCorretta": 2,
-      "spiegazione": "Nel moto parabolico senza attrito, la componente orizzontale della velocità rimane costante poiché non agiscono forze orizzontali. Solo la componente verticale varia a causa della gravità.",
-      "difficolta": "medio",
-      "paroleChiave": ["parabolico", "proiettile", "componente", "orizzontale"]
-    },
-    {
-      "id": "kin_008",
-      "domanda": "Quale formula esprime correttamente l'accelerazione centripeta?",
-      "categoria": "Cinematica",
-      "sottocategoria": "Moto circolare",
-      "opzioni": [
-        "a = v/r",
-        "a = v²/r",
-        "a = vr",
-        "a = r/v²"
+        "L'accelerazione",
+        "La velocità",
+        "Lo spostamento",
+        "La massa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "L'accelerazione centripeta in un moto circolare è data da a = v²/r, dove v è la velocità tangenziale e r è il raggio della traiettoria circolare.",
+      "spiegazione": "La pendenza di s(t) è Δs/Δt, cioè la velocità.",
       "difficolta": "facile",
-      "paroleChiave": ["centripeta", "circolare", "accelerazione", "raggio"]
+      "paroleChiave": [
+        "grafico",
+        "s-t",
+        "pendenza",
+        "velocità"
+      ]
     },
     {
-      "id": "kin_009",
-      "domanda": "Due corpi cadono dalla stessa altezza: uno ha massa 10 kg, l'altro 1 kg. Quale arriva prima al suolo (trascurando l'attrito)?",
+      "id": "cin_031",
+      "domanda": "In un grafico spazio-tempo s(t), che cosa rappresenta la pendenza?",
       "categoria": "Cinematica",
-      "sottocategoria": "Caduta libera",
+      "sottocategoria": "Grafici (s-t)",
       "opzioni": [
-        "Il corpo più pesante",
-        "Il corpo più leggero",
-        "Arrivano contemporaneamente",
-        "Dipende dalla forma"
+        "L'accelerazione",
+        "Lo spostamento",
+        "La velocità",
+        "La massa"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "In assenza di attrito dell'aria, tutti i corpi cadono con la stessa accelerazione (g) indipendentemente dalla loro massa, quindi arrivano al suolo contemporaneamente. Questo fu dimostrato da Galileo.",
-      "difficolta": "medio",
-      "paroleChiave": ["caduta", "libera", "gravita", "massa", "galileo"]
+      "spiegazione": "La pendenza di s(t) è Δs/Δt, cioè la velocità.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "s-t",
+        "pendenza",
+        "velocità"
+      ]
     },
     {
-      "id": "kin_010",
-      "domanda": "Un oggetto si muove con velocità costante di 20 m/s per 5 secondi. Quanto spazio percorre?",
+      "id": "cin_032",
+      "domanda": "In un grafico spazio-tempo s(t), che cosa rappresenta la pendenza?",
       "categoria": "Cinematica",
-      "sottocategoria": "Moto rettilineo",
+      "sottocategoria": "Grafici (s-t)",
+      "opzioni": [
+        "L'accelerazione",
+        "Lo spostamento",
+        "La massa",
+        "La velocità"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "La pendenza di s(t) è Δs/Δt, cioè la velocità.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "s-t",
+        "pendenza",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_033",
+      "domanda": "In un grafico spazio-tempo s(t), che cosa rappresenta la pendenza?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (s-t)",
+      "opzioni": [
+        "La velocità",
+        "L'accelerazione",
+        "Lo spostamento",
+        "La massa"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La pendenza di s(t) è Δs/Δt, cioè la velocità.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "s-t",
+        "pendenza",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_034",
+      "domanda": "In un grafico spazio-tempo s(t), che cosa rappresenta la pendenza?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (s-t)",
+      "opzioni": [
+        "L'accelerazione",
+        "La velocità",
+        "Lo spostamento",
+        "La massa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La pendenza di s(t) è Δs/Δt, cioè la velocità.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "s-t",
+        "pendenza",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_035",
+      "domanda": "In un grafico velocità-tempo v(t), che cosa rappresenta l'area sotto la curva tra due istanti?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (v-t)",
+      "opzioni": [
+        "L'accelerazione",
+        "Lo spostamento (area con segno sotto la curva)",
+        "La velocità media",
+        "La distanza sempre positiva"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Integrando v(t) nel tempo si ottiene lo spostamento: Δs = ∫v(t)dt.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "v-t",
+        "area",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_036",
+      "domanda": "In un grafico velocità-tempo v(t), che cosa rappresenta l'area sotto la curva tra due istanti?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (v-t)",
+      "opzioni": [
+        "L'accelerazione",
+        "La velocità media",
+        "Lo spostamento (area con segno sotto la curva)",
+        "La distanza sempre positiva"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Integrando v(t) nel tempo si ottiene lo spostamento: Δs = ∫v(t)dt.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "v-t",
+        "area",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_037",
+      "domanda": "In un grafico velocità-tempo v(t), che cosa rappresenta l'area sotto la curva tra due istanti?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (v-t)",
+      "opzioni": [
+        "L'accelerazione",
+        "La velocità media",
+        "La distanza sempre positiva",
+        "Lo spostamento (area con segno sotto la curva)"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Integrando v(t) nel tempo si ottiene lo spostamento: Δs = ∫v(t)dt.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "v-t",
+        "area",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_038",
+      "domanda": "In un grafico velocità-tempo v(t), che cosa rappresenta l'area sotto la curva tra due istanti?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (v-t)",
+      "opzioni": [
+        "Lo spostamento (area con segno sotto la curva)",
+        "L'accelerazione",
+        "La velocità media",
+        "La distanza sempre positiva"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Integrando v(t) nel tempo si ottiene lo spostamento: Δs = ∫v(t)dt.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "v-t",
+        "area",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_039",
+      "domanda": "In un grafico velocità-tempo v(t), che cosa rappresenta l'area sotto la curva tra due istanti?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (v-t)",
+      "opzioni": [
+        "L'accelerazione",
+        "Lo spostamento (area con segno sotto la curva)",
+        "La velocità media",
+        "La distanza sempre positiva"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Integrando v(t) nel tempo si ottiene lo spostamento: Δs = ∫v(t)dt.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "v-t",
+        "area",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_040",
+      "domanda": "In un grafico velocità-tempo v(t), che cosa rappresenta l'area sotto la curva tra due istanti?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici (v-t)",
+      "opzioni": [
+        "L'accelerazione",
+        "La velocità media",
+        "Lo spostamento (area con segno sotto la curva)",
+        "La distanza sempre positiva"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Integrando v(t) nel tempo si ottiene lo spostamento: Δs = ∫v(t)dt.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico",
+        "v-t",
+        "area",
+        "spostamento"
+      ]
+    },
+    {
+      "id": "cin_041",
+      "domanda": "Nel MUA con v0 = 0 m/s, a = 1 m/s² e t = 2 s, quanto vale la velocità v?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto uniformemente accelerato (MUA)",
+      "opzioni": [
+        "2 m/s",
+        "0 m/s",
+        "3 m/s",
+        "1 m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "v=v0+at",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_042",
+      "domanda": "Nel MUA con v0 = 2 m/s, a = 2 m/s² e t = 3 s, quanto vale la velocità v?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto uniformemente accelerato (MUA)",
+      "opzioni": [
+        "4 m/s",
+        "8 m/s",
+        "7 m/s",
+        "6 m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "v=v0+at",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_043",
+      "domanda": "Nel MUA con v0 = 4 m/s, a = 3 m/s² e t = 4 s, quanto vale la velocità v?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto uniformemente accelerato (MUA)",
+      "opzioni": [
+        "12 m/s",
+        "11 m/s",
+        "16 m/s",
+        "13 m/s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "v=v0+at",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_044",
+      "domanda": "Nel MUA con v0 = 6 m/s, a = 4 m/s² e t = 5 s, quanto vale la velocità v?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto uniformemente accelerato (MUA)",
+      "opzioni": [
+        "24 m/s",
+        "15 m/s",
+        "22 m/s",
+        "26 m/s"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "v=v0+at",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_045",
+      "domanda": "Nel MUA con v0 = 8 m/s, a = 5 m/s² e t = 2 s, quanto vale la velocità v?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto uniformemente accelerato (MUA)",
+      "opzioni": [
+        "18 m/s",
+        "40 m/s",
+        "15 m/s",
+        "13 m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "v=v0+at",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_046",
+      "domanda": "Nel MUA con v0 = 10 m/s, a = 1 m/s² e t = 3 s, quanto vale la velocità v?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto uniformemente accelerato (MUA)",
+      "opzioni": [
+        "10 m/s",
+        "13 m/s",
+        "14 m/s",
+        "12 m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "v=v0+at",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_047",
+      "domanda": "Nel MUA con v0 = 12 m/s, a = 2 m/s² e t = 4 s, quanto vale la velocità v?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto uniformemente accelerato (MUA)",
+      "opzioni": [
+        "24 m/s",
+        "18 m/s",
+        "20 m/s",
+        "22 m/s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "v=v0+at",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_048",
+      "domanda": "Nel MUA con v0 = 14 m/s, a = 3 m/s² e t = 5 s, quanto vale la velocità v?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto uniformemente accelerato (MUA)",
+      "opzioni": [
+        "42 m/s",
+        "22 m/s",
+        "26 m/s",
+        "29 m/s"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "v=v0+at",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_049",
+      "domanda": "Nel MUA con v0 = 16 m/s, a = 4 m/s² e t = 2 s, quanto vale la velocità v?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto uniformemente accelerato (MUA)",
+      "opzioni": [
+        "24 m/s",
+        "64 m/s",
+        "22 m/s",
+        "20 m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "v=v0+at",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_050",
+      "domanda": "Nel MUA con v0 = 18 m/s, a = 5 m/s² e t = 3 s, quanto vale la velocità v?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto uniformemente accelerato (MUA)",
+      "opzioni": [
+        "90 m/s",
+        "33 m/s",
+        "26 m/s",
+        "28 m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Si usa la relazione v = v0 + a·t.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "v=v0+at",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_051",
+      "domanda": "Nel MUA con v0 = 1 m/s, a = 2 m/s² e t = 3 s (s0=0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA (legge oraria)",
+      "opzioni": [
+        "3 m",
+        "12 m",
+        "9 m",
+        "17 m"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "spostamento",
+        "t²"
+      ]
+    },
+    {
+      "id": "cin_052",
+      "domanda": "Nel MUA con v0 = 2 m/s, a = 3 m/s² e t = 4 s (s0=0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA (legge oraria)",
+      "opzioni": [
+        "8 m",
+        "24 m",
+        "32 m",
+        "37 m"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "spostamento",
+        "t²"
+      ]
+    },
+    {
+      "id": "cin_053",
+      "domanda": "Nel MUA con v0 = 3 m/s, a = 4 m/s² e t = 5 s (s0=0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA (legge oraria)",
+      "opzioni": [
+        "15 m",
+        "50 m",
+        "70 m",
+        "65 m"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "spostamento",
+        "t²"
+      ]
+    },
+    {
+      "id": "cin_054",
+      "domanda": "Nel MUA con v0 = 4 m/s, a = 2 m/s² e t = 6 s (s0=0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA (legge oraria)",
+      "opzioni": [
+        "60 m",
+        "24 m",
+        "36 m",
+        "65 m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "spostamento",
+        "t²"
+      ]
+    },
+    {
+      "id": "cin_055",
+      "domanda": "Nel MUA con v0 = 5 m/s, a = 3 m/s² e t = 3 s (s0=0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA (legge oraria)",
+      "opzioni": [
+        "15 m",
+        "28.5 m",
+        "13.5 m",
+        "33.5 m"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "spostamento",
+        "t²"
+      ]
+    },
+    {
+      "id": "cin_056",
+      "domanda": "Nel MUA con v0 = 1 m/s, a = 4 m/s² e t = 4 s (s0=0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA (legge oraria)",
       "opzioni": [
         "4 m",
-        "25 m",
-        "100 m",
-        "400 m"
+        "32 m",
+        "36 m",
+        "41 m"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Con velocità costante, lo spazio è s = v × t = 20 m/s × 5 s = 100 m",
-      "difficolta": "facile",
-      "paroleChiave": ["spazio", "velocita", "tempo", "uniforme"]
+      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "spostamento",
+        "t²"
+      ]
+    },
+    {
+      "id": "cin_057",
+      "domanda": "Nel MUA con v0 = 2 m/s, a = 2 m/s² e t = 5 s (s0=0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA (legge oraria)",
+      "opzioni": [
+        "10 m",
+        "25 m",
+        "40 m",
+        "35 m"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "spostamento",
+        "t²"
+      ]
+    },
+    {
+      "id": "cin_058",
+      "domanda": "Nel MUA con v0 = 3 m/s, a = 3 m/s² e t = 6 s (s0=0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA (legge oraria)",
+      "opzioni": [
+        "72 m",
+        "18 m",
+        "54 m",
+        "77 m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "spostamento",
+        "t²"
+      ]
+    },
+    {
+      "id": "cin_059",
+      "domanda": "Nel MUA con v0 = 4 m/s, a = 4 m/s² e t = 3 s (s0=0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA (legge oraria)",
+      "opzioni": [
+        "12 m",
+        "30 m",
+        "18 m",
+        "35 m"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "spostamento",
+        "t²"
+      ]
+    },
+    {
+      "id": "cin_060",
+      "domanda": "Nel MUA con v0 = 5 m/s, a = 2 m/s² e t = 4 s (s0=0), quanto vale lo spostamento?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA (legge oraria)",
+      "opzioni": [
+        "20 m",
+        "16 m",
+        "36 m",
+        "41 m"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel MUA vale s = v0·t + (1/2)·a·t² (se s0=0).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "spostamento",
+        "t²"
+      ]
+    },
+    {
+      "id": "cin_061",
+      "domanda": "Due corpi distano 120 m e si muovono uno verso l'altro con velocità 2 m/s e 4 m/s. Dopo quanto tempo si incontrano?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto relativo (MRU)",
+      "opzioni": [
+        "60 s",
+        "30 s",
+        "20 s",
+        "40 s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Si usa la velocità di avvicinamento v_rel = vA+vB: t = d/v_rel.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto relativo",
+        "incontro",
+        "vrel"
+      ]
+    },
+    {
+      "id": "cin_062",
+      "domanda": "Due corpi distano 180 m e si muovono uno verso l'altro con velocità 3 m/s e 5 m/s. Dopo quanto tempo si incontrano?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto relativo (MRU)",
+      "opzioni": [
+        "60 s",
+        "36 s",
+        "90 s",
+        "22.5 s"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Si usa la velocità di avvicinamento v_rel = vA+vB: t = d/v_rel.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto relativo",
+        "incontro",
+        "vrel"
+      ]
+    },
+    {
+      "id": "cin_063",
+      "domanda": "Due corpi distano 240 m e si muovono uno verso l'altro con velocità 4 m/s e 6 m/s. Dopo quanto tempo si incontrano?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto relativo (MRU)",
+      "opzioni": [
+        "24 s",
+        "60 s",
+        "40 s",
+        "120 s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Si usa la velocità di avvicinamento v_rel = vA+vB: t = d/v_rel.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto relativo",
+        "incontro",
+        "vrel"
+      ]
+    },
+    {
+      "id": "cin_064",
+      "domanda": "Due corpi distano 300 m e si muovono uno verso l'altro con velocità 5 m/s e 7 m/s. Dopo quanto tempo si incontrano?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto relativo (MRU)",
+      "opzioni": [
+        "60 s",
+        "25 s",
+        "42.86 s",
+        "150 s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Si usa la velocità di avvicinamento v_rel = vA+vB: t = d/v_rel.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto relativo",
+        "incontro",
+        "vrel"
+      ]
+    },
+    {
+      "id": "cin_065",
+      "domanda": "Due corpi distano 360 m e si muovono uno verso l'altro con velocità 6 m/s e 8 m/s. Dopo quanto tempo si incontrano?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto relativo (MRU)",
+      "opzioni": [
+        "60 s",
+        "45 s",
+        "25.71 s",
+        "180 s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Si usa la velocità di avvicinamento v_rel = vA+vB: t = d/v_rel.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto relativo",
+        "incontro",
+        "vrel"
+      ]
+    },
+    {
+      "id": "cin_066",
+      "domanda": "Un oggetto è lanciato verticalmente verso l'alto con v0 = 12 m/s. Dopo quanto tempo raggiunge la quota massima? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lancio verticale",
+      "opzioni": [
+        "2.45 s",
+        "117.6 s",
+        "0.61 s",
+        "1.22 s"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Alla quota massima v=0 e vale t = v0/g.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lancio verticale",
+        "tempo",
+        "g"
+      ]
+    },
+    {
+      "id": "cin_067",
+      "domanda": "Un oggetto è lanciato verticalmente verso l'alto con v0 = 14 m/s. Dopo quanto tempo raggiunge la quota massima? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lancio verticale",
+      "opzioni": [
+        "1.43 s",
+        "2.86 s",
+        "137.2 s",
+        "0.71 s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Alla quota massima v=0 e vale t = v0/g.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lancio verticale",
+        "tempo",
+        "g"
+      ]
+    },
+    {
+      "id": "cin_068",
+      "domanda": "Un oggetto è lanciato verticalmente verso l'alto con v0 = 16 m/s. Dopo quanto tempo raggiunge la quota massima? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lancio verticale",
+      "opzioni": [
+        "3.27 s",
+        "1.63 s",
+        "156.8 s",
+        "0.82 s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Alla quota massima v=0 e vale t = v0/g.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lancio verticale",
+        "tempo",
+        "g"
+      ]
+    },
+    {
+      "id": "cin_069",
+      "domanda": "Un oggetto è lanciato verticalmente verso l'alto con v0 = 18 m/s. Dopo quanto tempo raggiunge la quota massima? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lancio verticale",
+      "opzioni": [
+        "3.67 s",
+        "176.4 s",
+        "1.84 s",
+        "0.92 s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Alla quota massima v=0 e vale t = v0/g.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lancio verticale",
+        "tempo",
+        "g"
+      ]
+    },
+    {
+      "id": "cin_070",
+      "domanda": "Un oggetto è lanciato verticalmente verso l'alto con v0 = 20 m/s. Dopo quanto tempo raggiunge la quota massima? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lancio verticale",
+      "opzioni": [
+        "4.08 s",
+        "196 s",
+        "1.02 s",
+        "2.04 s"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Alla quota massima v=0 e vale t = v0/g.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lancio verticale",
+        "tempo",
+        "g"
+      ]
+    },
+    {
+      "id": "cin_071",
+      "domanda": "Un oggetto è lanciato verticalmente verso l'alto con v0 = 10 m/s. Qual è l'altezza massima? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lancio verticale",
+      "opzioni": [
+        "5.1 m",
+        "1.02 m",
+        "10.2 m",
+        "7.1 m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Alla quota massima v=0 e si usa v² = v0² - 2g·h ⇒ h = v0²/(2g).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "altezza",
+        "v²",
+        "g"
+      ]
+    },
+    {
+      "id": "cin_072",
+      "domanda": "Un oggetto è lanciato verticalmente verso l'alto con v0 = 12 m/s. Qual è l'altezza massima? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lancio verticale",
+      "opzioni": [
+        "1.22 m",
+        "7.35 m",
+        "14.69 m",
+        "9.35 m"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Alla quota massima v=0 e si usa v² = v0² - 2g·h ⇒ h = v0²/(2g).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "altezza",
+        "v²",
+        "g"
+      ]
+    },
+    {
+      "id": "cin_073",
+      "domanda": "Un oggetto è lanciato verticalmente verso l'alto con v0 = 14 m/s. Qual è l'altezza massima? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lancio verticale",
+      "opzioni": [
+        "1.43 m",
+        "20 m",
+        "10 m",
+        "12 m"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Alla quota massima v=0 e si usa v² = v0² - 2g·h ⇒ h = v0²/(2g).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "altezza",
+        "v²",
+        "g"
+      ]
+    },
+    {
+      "id": "cin_074",
+      "domanda": "Un oggetto è lanciato verticalmente verso l'alto con v0 = 16 m/s. Qual è l'altezza massima? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lancio verticale",
+      "opzioni": [
+        "1.63 m",
+        "26.12 m",
+        "15.06 m",
+        "13.06 m"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Alla quota massima v=0 e si usa v² = v0² - 2g·h ⇒ h = v0²/(2g).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "altezza",
+        "v²",
+        "g"
+      ]
+    },
+    {
+      "id": "cin_075",
+      "domanda": "Un oggetto è lanciato verticalmente verso l'alto con v0 = 18 m/s. Qual è l'altezza massima? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lancio verticale",
+      "opzioni": [
+        "16.53 m",
+        "1.84 m",
+        "33.06 m",
+        "18.53 m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Alla quota massima v=0 e si usa v² = v0² - 2g·h ⇒ h = v0²/(2g).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "altezza",
+        "v²",
+        "g"
+      ]
+    },
+    {
+      "id": "cin_076",
+      "domanda": "Un corpo ha componenti di velocità vx = 3 m/s e vy = 4 m/s. Qual è il modulo della velocità?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Vettori (componenti)",
+      "opzioni": [
+        "7 m/s",
+        "5 m/s",
+        "1 m/s",
+        "25 m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il modulo della velocità è v = √(vx² + vy²).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "vettori",
+        "componenti",
+        "modulo"
+      ]
+    },
+    {
+      "id": "cin_077",
+      "domanda": "Un corpo ha componenti di velocità vx = 4 m/s e vy = 5 m/s. Qual è il modulo della velocità?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Vettori (componenti)",
+      "opzioni": [
+        "9 m/s",
+        "1 m/s",
+        "6.4 m/s",
+        "41 m/s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il modulo della velocità è v = √(vx² + vy²).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "vettori",
+        "componenti",
+        "modulo"
+      ]
+    },
+    {
+      "id": "cin_078",
+      "domanda": "Un corpo ha componenti di velocità vx = 5 m/s e vy = 6 m/s. Qual è il modulo della velocità?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Vettori (componenti)",
+      "opzioni": [
+        "11 m/s",
+        "1 m/s",
+        "61 m/s",
+        "7.81 m/s"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Il modulo della velocità è v = √(vx² + vy²).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "vettori",
+        "componenti",
+        "modulo"
+      ]
+    },
+    {
+      "id": "cin_079",
+      "domanda": "Un corpo ha componenti di velocità vx = 6 m/s e vy = 7 m/s. Qual è il modulo della velocità?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Vettori (componenti)",
+      "opzioni": [
+        "9.22 m/s",
+        "13 m/s",
+        "1 m/s",
+        "85 m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il modulo della velocità è v = √(vx² + vy²).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "vettori",
+        "componenti",
+        "modulo"
+      ]
+    },
+    {
+      "id": "cin_080",
+      "domanda": "Un corpo ha componenti di velocità vx = 7 m/s e vy = 8 m/s. Qual è il modulo della velocità?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Vettori (componenti)",
+      "opzioni": [
+        "15 m/s",
+        "10.63 m/s",
+        "1 m/s",
+        "113 m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il modulo della velocità è v = √(vx² + vy²).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "vettori",
+        "componenti",
+        "modulo"
+      ]
+    },
+    {
+      "id": "cin_081",
+      "domanda": "Data s(t) = 1·t² + 3·t (m), calcola v(t), a(t) e poi v(1 s).",
+      "categoria": "Cinematica",
+      "sottocategoria": "Derivate (s→v→a)",
+      "opzioni": [
+        "v(1) = 5 m/s; a = 2 m/s²",
+        "v(1) = 4 m/s; a = 2 m/s²",
+        "v(1) = 3 m/s; a = 2 m/s²",
+        "v(1) = 2.5 m/s; a = 1 m/s²"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "derivata",
+        "velocità",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_082",
+      "domanda": "Data s(t) = 2·t² + 2.5·t (m), calcola v(t), a(t) e poi v(2 s).",
+      "categoria": "Cinematica",
+      "sottocategoria": "Derivate (s→v→a)",
+      "opzioni": [
+        "v(2) = 10.5 m/s; a = 8 m/s²",
+        "v(2) = 10.5 m/s; a = 4 m/s²",
+        "v(2) = 8.5 m/s; a = 4 m/s²",
+        "v(2) = 5.25 m/s; a = 2 m/s²"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "derivata",
+        "velocità",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_083",
+      "domanda": "Data s(t) = 3·t² + 2·t (m), calcola v(t), a(t) e poi v(3 s).",
+      "categoria": "Cinematica",
+      "sottocategoria": "Derivate (s→v→a)",
+      "opzioni": [
+        "v(3) = 29 m/s; a = 6 m/s²",
+        "v(3) = 20 m/s; a = 18 m/s²",
+        "v(3) = 20 m/s; a = 6 m/s²",
+        "v(3) = 10 m/s; a = 3 m/s²"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "derivata",
+        "velocità",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_084",
+      "domanda": "Data s(t) = 4·t² + 1.5·t (m), calcola v(t), a(t) e poi v(4 s).",
+      "categoria": "Cinematica",
+      "sottocategoria": "Derivate (s→v→a)",
+      "opzioni": [
+        "v(4) = 65.5 m/s; a = 8 m/s²",
+        "v(4) = 33.5 m/s; a = 32 m/s²",
+        "v(4) = 16.75 m/s; a = 4 m/s²",
+        "v(4) = 33.5 m/s; a = 8 m/s²"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "derivata",
+        "velocità",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_085",
+      "domanda": "Data s(t) = 5·t² + 3·t (m), calcola v(t), a(t) e poi v(5 s).",
+      "categoria": "Cinematica",
+      "sottocategoria": "Derivate (s→v→a)",
+      "opzioni": [
+        "v(5) = 53 m/s; a = 10 m/s²",
+        "v(5) = 128 m/s; a = 10 m/s²",
+        "v(5) = 53 m/s; a = 50 m/s²",
+        "v(5) = 26.5 m/s; a = 5 m/s²"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "derivata",
+        "velocità",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_086",
+      "domanda": "Data s(t) = 1·t² + 2.5·t (m), calcola v(t), a(t) e poi v(1 s).",
+      "categoria": "Cinematica",
+      "sottocategoria": "Derivate (s→v→a)",
+      "opzioni": [
+        "v(1) = 3.5 m/s; a = 2 m/s²",
+        "v(1) = 4.5 m/s; a = 2 m/s²",
+        "v(1) = 4 m/s; a = 2 m/s²",
+        "v(1) = 2.25 m/s; a = 1 m/s²"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "derivata",
+        "velocità",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_087",
+      "domanda": "Data s(t) = 2·t² + 2·t (m), calcola v(t), a(t) e poi v(2 s).",
+      "categoria": "Cinematica",
+      "sottocategoria": "Derivate (s→v→a)",
+      "opzioni": [
+        "v(2) = 10 m/s; a = 8 m/s²",
+        "v(2) = 9 m/s; a = 4 m/s²",
+        "v(2) = 10 m/s; a = 4 m/s²",
+        "v(2) = 5 m/s; a = 2 m/s²"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "derivata",
+        "velocità",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_088",
+      "domanda": "Data s(t) = 3·t² + 1.5·t (m), calcola v(t), a(t) e poi v(3 s).",
+      "categoria": "Cinematica",
+      "sottocategoria": "Derivate (s→v→a)",
+      "opzioni": [
+        "v(3) = 28.5 m/s; a = 6 m/s²",
+        "v(3) = 19.5 m/s; a = 18 m/s²",
+        "v(3) = 9.75 m/s; a = 3 m/s²",
+        "v(3) = 19.5 m/s; a = 6 m/s²"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "derivata",
+        "velocità",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_089",
+      "domanda": "Data s(t) = 4·t² + 3·t (m), calcola v(t), a(t) e poi v(4 s).",
+      "categoria": "Cinematica",
+      "sottocategoria": "Derivate (s→v→a)",
+      "opzioni": [
+        "v(4) = 35 m/s; a = 8 m/s²",
+        "v(4) = 67 m/s; a = 8 m/s²",
+        "v(4) = 35 m/s; a = 32 m/s²",
+        "v(4) = 17.5 m/s; a = 4 m/s²"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "derivata",
+        "velocità",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_090",
+      "domanda": "Data s(t) = 5·t² + 2.5·t (m), calcola v(t), a(t) e poi v(5 s).",
+      "categoria": "Cinematica",
+      "sottocategoria": "Derivate (s→v→a)",
+      "opzioni": [
+        "v(5) = 127.5 m/s; a = 10 m/s²",
+        "v(5) = 52.5 m/s; a = 10 m/s²",
+        "v(5) = 52.5 m/s; a = 50 m/s²",
+        "v(5) = 26.25 m/s; a = 5 m/s²"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Derivando: v(t)=ds/dt=2at+b e a(t)=dv/dt=2a.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "derivata",
+        "velocità",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_091",
+      "domanda": "Un corpo ha v0 = 3 m/s. Per 2 s ha a = 2 m/s², poi per 4 s ha a = -1 m/s². Qual è la velocità finale?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Accelerazione a tratti",
+      "opzioni": [
+        "7 m/s",
+        "3 m/s",
+        "-1 m/s",
+        "9 m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La variazione totale di velocità è Δv = a1·t1 + a2·t2, quindi v = v0 + Δv.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "a tratti",
+        "delta v",
+        "integrale"
+      ]
+    },
+    {
+      "id": "cin_092",
+      "domanda": "Un corpo ha v0 = 3 m/s. Per 2 s ha a = 3 m/s², poi per 4 s ha a = -1.5 m/s². Qual è la velocità finale?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Accelerazione a tratti",
+      "opzioni": [
+        "9 m/s",
+        "-3 m/s",
+        "3 m/s",
+        "12 m/s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La variazione totale di velocità è Δv = a1·t1 + a2·t2, quindi v = v0 + Δv.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "a tratti",
+        "delta v",
+        "integrale"
+      ]
+    },
+    {
+      "id": "cin_093",
+      "domanda": "Un corpo ha v0 = 3 m/s. Per 2 s ha a = 4 m/s², poi per 4 s ha a = -2 m/s². Qual è la velocità finale?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Accelerazione a tratti",
+      "opzioni": [
+        "11 m/s",
+        "-5 m/s",
+        "15 m/s",
+        "3 m/s"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "La variazione totale di velocità è Δv = a1·t1 + a2·t2, quindi v = v0 + Δv.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "a tratti",
+        "delta v",
+        "integrale"
+      ]
+    },
+    {
+      "id": "cin_094",
+      "domanda": "Un corpo ha v0 = 3 m/s. Per 2 s ha a = 5 m/s², poi per 4 s ha a = -2.5 m/s². Qual è la velocità finale?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Accelerazione a tratti",
+      "opzioni": [
+        "3 m/s",
+        "13 m/s",
+        "-7 m/s",
+        "18 m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La variazione totale di velocità è Δv = a1·t1 + a2·t2, quindi v = v0 + Δv.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "a tratti",
+        "delta v",
+        "integrale"
+      ]
+    },
+    {
+      "id": "cin_095",
+      "domanda": "Un corpo ha v0 = 3 m/s. Per 2 s ha a = 6 m/s², poi per 4 s ha a = -3 m/s². Qual è la velocità finale?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Accelerazione a tratti",
+      "opzioni": [
+        "15 m/s",
+        "3 m/s",
+        "-9 m/s",
+        "21 m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La variazione totale di velocità è Δv = a1·t1 + a2·t2, quindi v = v0 + Δv.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "a tratti",
+        "delta v",
+        "integrale"
+      ]
+    },
+    {
+      "id": "cin_096",
+      "domanda": "Una barca va perpendicolarmente alla riva con velocità 6 m/s rispetto all'acqua; la corrente è 3 m/s lungo la riva. Trova modulo della velocità rispetto a terra e angolo di deriva rispetto alla perpendicolare.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto relativo (vettori)",
+      "opzioni": [
+        "v = 9 m/s; deriva = 26.57°",
+        "v = 6.71 m/s; deriva = 63.43°",
+        "v = 6.71 m/s; deriva = 26.57°",
+        "v = 3 m/s; deriva = 26.57°"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Somma vettoriale: v = √(vb²+vc²) e tan(θ)=vc/vb.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "moto relativo",
+        "deriva",
+        "tan"
+      ]
+    },
+    {
+      "id": "cin_097",
+      "domanda": "Una barca va perpendicolarmente alla riva con velocità 7 m/s rispetto all'acqua; la corrente è 3 m/s lungo la riva. Trova modulo della velocità rispetto a terra e angolo di deriva rispetto alla perpendicolare.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto relativo (vettori)",
+      "opzioni": [
+        "v = 10 m/s; deriva = 23.2°",
+        "v = 7.62 m/s; deriva = 66.8°",
+        "v = 4 m/s; deriva = 23.2°",
+        "v = 7.62 m/s; deriva = 23.2°"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Somma vettoriale: v = √(vb²+vc²) e tan(θ)=vc/vb.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "moto relativo",
+        "deriva",
+        "tan"
+      ]
+    },
+    {
+      "id": "cin_098",
+      "domanda": "Una barca va perpendicolarmente alla riva con velocità 8 m/s rispetto all'acqua; la corrente è 3 m/s lungo la riva. Trova modulo della velocità rispetto a terra e angolo di deriva rispetto alla perpendicolare.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto relativo (vettori)",
+      "opzioni": [
+        "v = 8.54 m/s; deriva = 20.56°",
+        "v = 11 m/s; deriva = 20.56°",
+        "v = 8.54 m/s; deriva = 69.44°",
+        "v = 5 m/s; deriva = 20.56°"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Somma vettoriale: v = √(vb²+vc²) e tan(θ)=vc/vb.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "moto relativo",
+        "deriva",
+        "tan"
+      ]
+    },
+    {
+      "id": "cin_099",
+      "domanda": "Una barca va perpendicolarmente alla riva con velocità 9 m/s rispetto all'acqua; la corrente è 3 m/s lungo la riva. Trova modulo della velocità rispetto a terra e angolo di deriva rispetto alla perpendicolare.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto relativo (vettori)",
+      "opzioni": [
+        "v = 12 m/s; deriva = 18.43°",
+        "v = 9.49 m/s; deriva = 18.43°",
+        "v = 9.49 m/s; deriva = 71.57°",
+        "v = 6 m/s; deriva = 18.43°"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Somma vettoriale: v = √(vb²+vc²) e tan(θ)=vc/vb.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "moto relativo",
+        "deriva",
+        "tan"
+      ]
+    },
+    {
+      "id": "cin_100",
+      "domanda": "Una barca va perpendicolarmente alla riva con velocità 10 m/s rispetto all'acqua; la corrente è 3 m/s lungo la riva. Trova modulo della velocità rispetto a terra e angolo di deriva rispetto alla perpendicolare.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto relativo (vettori)",
+      "opzioni": [
+        "v = 13 m/s; deriva = 16.7°",
+        "v = 10.44 m/s; deriva = 73.3°",
+        "v = 10.44 m/s; deriva = 16.7°",
+        "v = 7 m/s; deriva = 16.7°"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Somma vettoriale: v = √(vb²+vc²) e tan(θ)=vc/vb.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "moto relativo",
+        "deriva",
+        "tan"
+      ]
+    },
+    {
+      "id": "cin_101",
+      "domanda": "Nel moto circolare uniforme con v = 8 m/s e r = 4 m, calcola l'accelerazione centripeta.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare uniforme",
+      "opzioni": [
+        "2 m/s²",
+        "32 m/s²",
+        "8 m/s²",
+        "16 m/s²"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Nel MCU vale a_c = v²/r.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "centripeta",
+        "v²/r",
+        "MCU"
+      ]
+    },
+    {
+      "id": "cin_102",
+      "domanda": "Nel moto circolare uniforme con v = 10 m/s e r = 5 m, calcola l'accelerazione centripeta.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare uniforme",
+      "opzioni": [
+        "20 m/s²",
+        "2 m/s²",
+        "50 m/s²",
+        "10 m/s²"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel MCU vale a_c = v²/r.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "centripeta",
+        "v²/r",
+        "MCU"
+      ]
+    },
+    {
+      "id": "cin_103",
+      "domanda": "Nel moto circolare uniforme con v = 12 m/s e r = 6 m, calcola l'accelerazione centripeta.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare uniforme",
+      "opzioni": [
+        "2 m/s²",
+        "24 m/s²",
+        "72 m/s²",
+        "12 m/s²"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel MCU vale a_c = v²/r.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "centripeta",
+        "v²/r",
+        "MCU"
+      ]
+    },
+    {
+      "id": "cin_104",
+      "domanda": "Nel moto circolare uniforme con v = 14 m/s e r = 7 m, calcola l'accelerazione centripeta.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare uniforme",
+      "opzioni": [
+        "2 m/s²",
+        "98 m/s²",
+        "28 m/s²",
+        "14 m/s²"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel MCU vale a_c = v²/r.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "centripeta",
+        "v²/r",
+        "MCU"
+      ]
+    },
+    {
+      "id": "cin_105",
+      "domanda": "Nel moto circolare uniforme con v = 16 m/s e r = 8 m, calcola l'accelerazione centripeta.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare uniforme",
+      "opzioni": [
+        "2 m/s²",
+        "128 m/s²",
+        "16 m/s²",
+        "32 m/s²"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Nel MCU vale a_c = v²/r.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "centripeta",
+        "v²/r",
+        "MCU"
+      ]
+    },
+    {
+      "id": "cin_106",
+      "domanda": "Nel moto circolare uniforme con r = 3 m e v = 5 m/s, calcola periodo T e velocità angolare ω.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare uniforme",
+      "opzioni": [
+        "T = 3.77 s; ω = 1.67 rad/s",
+        "T = 0.27 s; ω = 1.67 rad/s",
+        "T = 3.77 s; ω = 3.33 rad/s",
+        "T = 1.88 s; ω = 1.67 rad/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Si usa T = 2πr/v e ω = 2π/T.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "periodo",
+        "omega",
+        "2π"
+      ]
+    },
+    {
+      "id": "cin_107",
+      "domanda": "Nel moto circolare uniforme con r = 4 m e v = 6 m/s, calcola periodo T e velocità angolare ω.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare uniforme",
+      "opzioni": [
+        "T = 0.24 s; ω = 1.5 rad/s",
+        "T = 4.19 s; ω = 1.5 rad/s",
+        "T = 4.19 s; ω = 3 rad/s",
+        "T = 2.09 s; ω = 1.5 rad/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Si usa T = 2πr/v e ω = 2π/T.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "periodo",
+        "omega",
+        "2π"
+      ]
+    },
+    {
+      "id": "cin_108",
+      "domanda": "Nel moto circolare uniforme con r = 5 m e v = 7 m/s, calcola periodo T e velocità angolare ω.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare uniforme",
+      "opzioni": [
+        "T = 0.22 s; ω = 1.4 rad/s",
+        "T = 4.49 s; ω = 2.8 rad/s",
+        "T = 4.49 s; ω = 1.4 rad/s",
+        "T = 2.24 s; ω = 1.4 rad/s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Si usa T = 2πr/v e ω = 2π/T.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "periodo",
+        "omega",
+        "2π"
+      ]
+    },
+    {
+      "id": "cin_109",
+      "domanda": "Nel moto circolare uniforme con r = 6 m e v = 8 m/s, calcola periodo T e velocità angolare ω.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare uniforme",
+      "opzioni": [
+        "T = 0.21 s; ω = 1.33 rad/s",
+        "T = 4.71 s; ω = 2.67 rad/s",
+        "T = 2.36 s; ω = 1.33 rad/s",
+        "T = 4.71 s; ω = 1.33 rad/s"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Si usa T = 2πr/v e ω = 2π/T.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "periodo",
+        "omega",
+        "2π"
+      ]
+    },
+    {
+      "id": "cin_110",
+      "domanda": "Nel moto circolare uniforme con r = 7 m e v = 9 m/s, calcola periodo T e velocità angolare ω.",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare uniforme",
+      "opzioni": [
+        "T = 4.89 s; ω = 1.29 rad/s",
+        "T = 0.2 s; ω = 1.29 rad/s",
+        "T = 4.89 s; ω = 2.57 rad/s",
+        "T = 2.44 s; ω = 1.29 rad/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Si usa T = 2πr/v e ω = 2π/T.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "periodo",
+        "omega",
+        "2π"
+      ]
+    },
+    {
+      "id": "cin_111",
+      "domanda": "Moto circolare non uniforme: v = 12 m/s, r = 24 m, a_t = 1 m/s². Qual è il modulo dell'accelerazione totale?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare non uniforme",
+      "opzioni": [
+        "7 m/s²",
+        "6.08 m/s²",
+        "5 m/s²",
+        "6 m/s²"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "a_c e a_t sono perpendicolari, quindi a = √(a_c² + a_t²) con a_c = v²/r.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "tangenziale",
+        "centripeta",
+        "risultante"
+      ]
+    },
+    {
+      "id": "cin_112",
+      "domanda": "Moto circolare non uniforme: v = 14 m/s, r = 22 m, a_t = 1.5 m/s². Qual è il modulo dell'accelerazione totale?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare non uniforme",
+      "opzioni": [
+        "10.41 m/s²",
+        "7.41 m/s²",
+        "9.03 m/s²",
+        "8.91 m/s²"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "a_c e a_t sono perpendicolari, quindi a = √(a_c² + a_t²) con a_c = v²/r.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "tangenziale",
+        "centripeta",
+        "risultante"
+      ]
+    },
+    {
+      "id": "cin_113",
+      "domanda": "Moto circolare non uniforme: v = 16 m/s, r = 20 m, a_t = 2 m/s². Qual è il modulo dell'accelerazione totale?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare non uniforme",
+      "opzioni": [
+        "14.8 m/s²",
+        "10.8 m/s²",
+        "12.8 m/s²",
+        "12.96 m/s²"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "a_c e a_t sono perpendicolari, quindi a = √(a_c² + a_t²) con a_c = v²/r.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "tangenziale",
+        "centripeta",
+        "risultante"
+      ]
+    },
+    {
+      "id": "cin_114",
+      "domanda": "Moto circolare non uniforme: v = 18 m/s, r = 18 m, a_t = 2.5 m/s². Qual è il modulo dell'accelerazione totale?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare non uniforme",
+      "opzioni": [
+        "18.17 m/s²",
+        "20.5 m/s²",
+        "15.5 m/s²",
+        "18 m/s²"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "a_c e a_t sono perpendicolari, quindi a = √(a_c² + a_t²) con a_c = v²/r.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "tangenziale",
+        "centripeta",
+        "risultante"
+      ]
+    },
+    {
+      "id": "cin_115",
+      "domanda": "Moto circolare non uniforme: v = 20 m/s, r = 16 m, a_t = 3 m/s². Qual è il modulo dell'accelerazione totale?",
+      "categoria": "Cinematica",
+      "sottoccategoria": "Moto circolare non uniforme",
+      "opzioni": [
+        "28 m/s²",
+        "25.18 m/s²",
+        "22 m/s²",
+        "25 m/s²"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "a_c e a_t sono perpendicolari, quindi a = √(a_c² + a_t²) con a_c = v²/r.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "tangenziale",
+        "centripeta",
+        "risultante"
+      ]
+    },
+    {
+      "id": "cin_116",
+      "domanda": "Un proiettile è lanciato con v0 = 18 m/s a 30°. Quanto tempo impiega a raggiungere una quota di 4 m sopra il punto di lancio? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico (quota diversa)",
+      "opzioni": [
+        "0.92 s",
+        "1.84 s",
+        "1.08 s",
+        "0.54 s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Si risolve vy0·t - (1/2)g·t² = 4 e si prende la soluzione più grande (secondo passaggio).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "parabola",
+        "quota",
+        "equazione"
+      ]
+    },
+    {
+      "id": "cin_117",
+      "domanda": "Un proiettile è lanciato con v0 = 20 m/s a 30°. Quanto tempo impiega a raggiungere una quota di 4 m sopra il punto di lancio? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico (quota diversa)",
+      "opzioni": [
+        "1.02 s",
+        "2.04 s",
+        "0.75 s",
+        "1.49 s"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Si risolve vy0·t - (1/2)g·t² = 4 e si prende la soluzione più grande (secondo passaggio).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "parabola",
+        "quota",
+        "equazione"
+      ]
+    },
+    {
+      "id": "cin_118",
+      "domanda": "Un proiettile è lanciato con v0 = 22 m/s a 30°. Quanto tempo impiega a raggiungere una quota di 4 m sopra il punto di lancio? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico (quota diversa)",
+      "opzioni": [
+        "1.79 s",
+        "1.12 s",
+        "2.24 s",
+        "0.89 s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Si risolve vy0·t - (1/2)g·t² = 4 e si prende la soluzione più grande (secondo passaggio).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "parabola",
+        "quota",
+        "equazione"
+      ]
+    },
+    {
+      "id": "cin_119",
+      "domanda": "Un proiettile è lanciato con v0 = 24 m/s a 30°. Quanto tempo impiega a raggiungere una quota di 4 m sopra il punto di lancio? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico (quota diversa)",
+      "opzioni": [
+        "1.22 s",
+        "2.05 s",
+        "2.45 s",
+        "1.03 s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Si risolve vy0·t - (1/2)g·t² = 4 e si prende la soluzione più grande (secondo passaggio).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "parabola",
+        "quota",
+        "equazione"
+      ]
+    },
+    {
+      "id": "cin_120",
+      "domanda": "Un proiettile è lanciato con v0 = 26 m/s a 30°. Quanto tempo impiega a raggiungere una quota di 4 m sopra il punto di lancio? (g=9,8 m/s²)",
+      "categoria": "Cinematica",
+      "sottoccategoria": "Moto parabolico (quota diversa)",
+      "opzioni": [
+        "1.33 s",
+        "2.65 s",
+        "2.3 s",
+        "1.15 s"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Si risolve vy0·t - (1/2)g·t² = 4 e si prende la soluzione più grande (secondo passaggio).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "parabola",
+        "quota",
+        "equazione"
+      ]
     }
   ]
 }
