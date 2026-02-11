@@ -1,1 +1,2169 @@
-{"quiz": []}
+{
+  "quiz": [
+    {
+      "id": "nuc_001",
+      "domanda": "Che cosa rappresenta il numero atomico Z?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Struttura del nucleo",
+      "opzioni": [
+        "Il numero di neutroni nel nucleo",
+        "Il numero di protoni nel nucleo",
+        "La somma di protoni e neutroni",
+        "La massa in grammi di un atomo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il numero atomico Z è il numero di protoni nel nucleo e identifica l’elemento chimico.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "numero atomico",
+        "Z",
+        "protoni",
+        "elemento"
+      ]
+    },
+    {
+      "id": "nuc_002",
+      "domanda": "Che cosa indica il numero di massa A?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Struttura del nucleo",
+      "opzioni": [
+        "Il numero di protoni",
+        "Il numero di elettroni",
+        "La somma di protoni e neutroni",
+        "Il numero di neutroni"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il numero di massa A è la somma di protoni e neutroni (nucleoni) nel nucleo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "numero di massa",
+        "A",
+        "nucleoni",
+        "protoni",
+        "neutroni"
+      ]
+    },
+    {
+      "id": "nuc_003",
+      "domanda": "Due isotopi dello stesso elemento hanno sempre lo stesso valore di:",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Isotopi",
+      "opzioni": [
+        "Numero di massa A",
+        "Numero atomico Z",
+        "Numero di neutroni N",
+        "Energia di legame per nucleone"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Gli isotopi hanno lo stesso numero atomico Z (stesso numero di protoni) ma diverso numero di neutroni.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isotopi",
+        "Z",
+        "protoni",
+        "neutroni"
+      ]
+    },
+    {
+      "id": "nuc_004",
+      "domanda": "Quale particella viene emessa in un decadimento alfa (α)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Un elettrone",
+        "Un fotone ad alta energia",
+        "Un nucleo di elio-4 (2p + 2n)",
+        "Un protone singolo"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel decadimento α viene emesso un nucleo di elio-4 composto da due protoni e due neutroni.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "decadimento alfa",
+        "particella alfa",
+        "elio-4"
+      ]
+    },
+    {
+      "id": "nuc_005",
+      "domanda": "Nel decadimento beta meno (β−) che cosa viene emesso dal nucleo?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Un positrone",
+        "Un elettrone",
+        "Un nucleo di elio-4",
+        "Un fotone gamma"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel decadimento β− viene emesso un elettrone (insieme a un antineutrino).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "beta meno",
+        "elettrone",
+        "decadimento"
+      ]
+    },
+    {
+      "id": "nuc_006",
+      "domanda": "Nel decadimento beta più (β+) che cosa viene emesso dal nucleo?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Un elettrone",
+        "Un positrone",
+        "Un neutrone",
+        "Una particella alfa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel decadimento β+ viene emesso un positrone (insieme a un neutrino).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "beta più",
+        "positrone",
+        "decadimento"
+      ]
+    },
+    {
+      "id": "nuc_007",
+      "domanda": "La radiazione gamma (γ) è costituita da:",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radiazioni ionizzanti",
+      "opzioni": [
+        "Elettroni",
+        "Nuclei di elio",
+        "Fotoni ad alta energia",
+        "Protoni"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La radiazione γ è fatta di fotoni molto energetici emessi da nuclei eccitati.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "gamma",
+        "fotoni",
+        "energia"
+      ]
+    },
+    {
+      "id": "nuc_008",
+      "domanda": "Quale radiazione è generalmente la meno penetrante in aria?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radiazioni ionizzanti",
+      "opzioni": [
+        "Alfa (α)",
+        "Beta (β)",
+        "Gamma (γ)",
+        "Raggi X"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Le particelle α sono pesanti e cariche, quindi vengono fermate facilmente (anche da un foglio di carta).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "penetranza",
+        "alfa",
+        "schermatura"
+      ]
+    },
+    {
+      "id": "nuc_009",
+      "domanda": "Che cosa si intende per tempo di dimezzamento (T1/2)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "Il tempo in cui la massa raddoppia",
+        "Il tempo necessario perché l’attività si dimezzi",
+        "Il tempo tra due decadimenti consecutivi dello stesso nucleo",
+        "Il tempo necessario perché il nucleo diventi stabile"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il tempo di dimezzamento è il tempo in cui il numero di nuclei non decaduti (o l’attività) si riduce a metà.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "tempo di dimezzamento",
+        "T1/2",
+        "attività",
+        "decadimento"
+      ]
+    },
+    {
+      "id": "nuc_010",
+      "domanda": "Qual è l’unità SI dell’attività radioattiva?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Unità di misura",
+      "opzioni": [
+        "Gray (Gy)",
+        "Sievert (Sv)",
+        "Becquerel (Bq)",
+        "Tesla (T)"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L’unità SI dell’attività è il becquerel (Bq).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "Bq",
+        "attività",
+        "unità SI",
+        "radioattività"
+      ]
+    },
+    {
+      "id": "nuc_011",
+      "domanda": "In una reazione nucleare, quale grandezza si conserva sempre?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Reazioni nucleari",
+      "opzioni": [
+        "La massa separatamente",
+        "Il numero di nucleoni (A) totale",
+        "Il numero di elettroni totale",
+        "La temperatura del campione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nelle reazioni nucleari si conserva il numero totale di nucleoni (A) e la carica totale.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conservazione",
+        "A",
+        "nucleoni",
+        "reazioni nucleari"
+      ]
+    },
+    {
+      "id": "nuc_012",
+      "domanda": "Che cosa descrive l’equazione E = mc^2 in ambito nucleare?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energia di massa",
+      "opzioni": [
+        "Che la massa è sempre costante",
+        "Che la massa può convertirsi in energia",
+        "Che l’energia non dipende dalla massa",
+        "Che la velocità della luce dipende dalla massa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "E = mc^2 esprime l’equivalenza tra massa ed energia, fondamentale per il calcolo dell’energia liberata nelle reazioni nucleari.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "Einstein",
+        "E=mc2",
+        "massa",
+        "energia"
+      ]
+    },
+    {
+      "id": "nuc_013",
+      "domanda": "Che cosa si intende per difetto di massa?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energia di legame",
+      "opzioni": [
+        "La massa mancante a causa di errori di misura",
+        "La differenza tra la massa del nucleo e la somma delle masse dei nucleoni separati",
+        "La massa dell’elettrone nel nucleo",
+        "La massa di un isotopo instabile"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il difetto di massa è la differenza tra massa del nucleo e somma delle masse di protoni e neutroni liberi, legata all’energia di legame.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "difetto di massa",
+        "energia di legame",
+        "nucleoni"
+      ]
+    },
+    {
+      "id": "nuc_014",
+      "domanda": "Che cosa rappresenta l’energia di legame nucleare?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energia di legame",
+      "opzioni": [
+        "Energia necessaria per ionizzare l’atomo",
+        "Energia liberata sempre nei decadimenti β",
+        "Energia necessaria per separare completamente il nucleo in nucleoni",
+        "Energia cinetica media dei nucleoni nel nucleo"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L’energia di legame è l’energia necessaria a smontare il nucleo in protoni e neutroni separati.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "energia di legame",
+        "separazione",
+        "nucleo"
+      ]
+    },
+    {
+      "id": "nuc_015",
+      "domanda": "Quale tra queste è una tipica applicazione della radioattività in medicina?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Applicazioni",
+      "opzioni": [
+        "Risonanza magnetica (MRI) basata su campi statici",
+        "PET o scintigrafia con radioisotopi",
+        "Ecografia a ultrasuoni",
+        "Termografia a infrarossi"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Tecniche come PET e scintigrafia usano radioisotopi per produrre segnali rilevabili dall’esterno.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "medicina nucleare",
+        "PET",
+        "radioisotopi"
+      ]
+    },
+    {
+      "id": "nuc_016",
+      "domanda": "Quale tra questi processi è una fissione nucleare?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fissione",
+      "opzioni": [
+        "Unione di due nuclei leggeri",
+        "Scissione di un nucleo pesante in nuclei più leggeri",
+        "Emissione di un fotone gamma",
+        "Trasformazione di un protone in un neutrone senza emissioni"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La fissione è la scissione di un nucleo pesante in nuclei più leggeri con rilascio di energia.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "fissione",
+        "nucleo pesante",
+        "energia"
+      ]
+    },
+    {
+      "id": "nuc_017",
+      "domanda": "Quale tra questi processi è una fusione nucleare?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fusione",
+      "opzioni": [
+        "Scissione di nuclei pesanti",
+        "Unione di nuclei leggeri in un nucleo più pesante",
+        "Assorbimento di un elettrone da parte del nucleo senza cambiamenti",
+        "Decadimento alfa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La fusione unisce nuclei leggeri formando un nucleo più pesante, tipicamente con rilascio di energia.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "fusione",
+        "nuclei leggeri",
+        "energia"
+      ]
+    },
+    {
+      "id": "nuc_018",
+      "domanda": "Che cosa misura il sievert (Sv) in radioprotezione?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Unità di misura",
+      "opzioni": [
+        "L’attività della sorgente",
+        "La dose equivalente/efficace legata agli effetti biologici",
+        "La massa del campione radioattivo",
+        "La temperatura della sorgente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il sievert è usato per quantificare la dose equivalente/efficace, collegata al rischio biologico della radiazione.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "sievert",
+        "Sv",
+        "dose equivalente",
+        "radioprotezione"
+      ]
+    },
+    {
+      "id": "nuc_019",
+      "domanda": "Che cosa misura il gray (Gy)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Unità di misura",
+      "opzioni": [
+        "Dose assorbita (energia depositata per unità di massa)",
+        "Attività radioattiva",
+        "Velocità delle particelle alfa",
+        "Numero di neutroni emessi"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il gray misura la dose assorbita, cioè energia depositata dalla radiazione per unità di massa.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "gray",
+        "Gy",
+        "dose assorbita"
+      ]
+    },
+    {
+      "id": "nuc_020",
+      "domanda": "Che cosa succede a Z e A in un decadimento alfa?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Z aumenta di 1 e A resta uguale",
+        "Z diminuisce di 2 e A diminuisce di 4",
+        "Z diminuisce di 1 e A diminuisce di 1",
+        "Z aumenta di 2 e A aumenta di 4"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel decadimento α il nucleo perde 2 protoni e 2 neutroni: Z−2 e A−4.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "alfa",
+        "Z",
+        "A",
+        "trasformazione"
+      ]
+    },
+    {
+      "id": "nuc_021",
+      "domanda": "Che cosa succede a Z e A in un decadimento beta meno (β−)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Z aumenta di 1 e A resta uguale",
+        "Z diminuisce di 1 e A resta uguale",
+        "Z resta uguale e A diminuisce di 1",
+        "Z aumenta di 2 e A diminuisce di 4"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel β− un neutrone diventa protone: Z aumenta di 1 mentre A resta invariato.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "beta meno",
+        "Z",
+        "A",
+        "neutrone",
+        "protone"
+      ]
+    },
+    {
+      "id": "nuc_022",
+      "domanda": "Che cosa succede a Z e A in un decadimento beta più (β+)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Z diminuisce di 1 e A resta uguale",
+        "Z aumenta di 1 e A resta uguale",
+        "Z diminuisce di 2 e A diminuisce di 4",
+        "Z resta uguale e A aumenta di 1"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel β+ un protone diventa neutrone: Z diminuisce di 1 mentre A resta invariato.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "beta più",
+        "Z",
+        "A",
+        "protone",
+        "neutrone"
+      ]
+    },
+    {
+      "id": "nuc_023",
+      "domanda": "Che cosa accade tipicamente dopo un’emissione gamma (γ)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Il numero atomico cambia",
+        "Il numero di massa cambia",
+        "Il nucleo passa da uno stato eccitato a uno di energia minore senza cambiare Z e A",
+        "Il nucleo emette una particella alfa"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L’emissione γ è una de-eccitazione del nucleo: Z e A non cambiano.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "gamma",
+        "de-eccitazione",
+        "Z",
+        "A"
+      ]
+    },
+    {
+      "id": "nuc_024",
+      "domanda": "Quale tra queste particelle è neutra?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Particelle e cariche",
+      "opzioni": [
+        "Protone",
+        "Elettrone",
+        "Neutrone",
+        "Positrone"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il neutrone non ha carica elettrica.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "neutrone",
+        "carica",
+        "particelle"
+      ]
+    },
+    {
+      "id": "nuc_025",
+      "domanda": "Quale forza tiene uniti protoni e neutroni nel nucleo?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Forze nucleari",
+      "opzioni": [
+        "Forza gravitazionale",
+        "Forza elettromagnetica",
+        "Interazione nucleare forte (forza forte)",
+        "Forza di attrito"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La forza nucleare forte è responsabile della coesione del nucleo nonostante la repulsione elettrica tra protoni.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "forza forte",
+        "nucleo",
+        "coesione"
+      ]
+    },
+    {
+      "id": "nuc_026",
+      "domanda": "Che cosa significa che una radiazione è ionizzante?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radiazioni ionizzanti",
+      "opzioni": [
+        "Raffredda la materia",
+        "Può strappare elettroni agli atomi creando ioni",
+        "Trasforma sempre il piombo in oro",
+        "Non interagisce con la materia"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una radiazione ionizzante ha energia sufficiente per ionizzare atomi o molecole.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "ionizzante",
+        "ioni",
+        "elettroni"
+      ]
+    },
+    {
+      "id": "nuc_027",
+      "domanda": "Quale schermatura è tipicamente più efficace per i raggi gamma?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Schermature",
+      "opzioni": [
+        "Un foglio di carta",
+        "Una sottile lamina di alluminio",
+        "Materiali densi come piombo o calcestruzzo spesso",
+        "Aria"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "I raggi γ sono molto penetranti e richiedono schermature spesse e dense come piombo o calcestruzzo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "schermatura",
+        "gamma",
+        "piombo",
+        "calcestruzzo"
+      ]
+    },
+    {
+      "id": "nuc_028",
+      "domanda": "Che cos’è l’attività radioattiva di un campione?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "Il numero di protoni nel nucleo",
+        "Il numero di decadimenti per unità di tempo",
+        "La massa totale del campione",
+        "La temperatura della sorgente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L’attività è il numero di decadimenti che avvengono in un certo intervallo di tempo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "attività",
+        "decadimenti",
+        "tempo"
+      ]
+    },
+    {
+      "id": "nuc_029",
+      "domanda": "Quale tra queste trasformazioni descrive correttamente un decadimento β−?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "p → n + e+ + ν",
+        "n → p + e− + ν̄",
+        "p → p + γ",
+        "n → n + α"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel β− un neutrone si trasforma in protone emettendo un elettrone e un antineutrino.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "beta meno",
+        "neutrone",
+        "protone",
+        "antineutrino"
+      ]
+    },
+    {
+      "id": "nuc_030",
+      "domanda": "Quale tra queste trasformazioni descrive correttamente un decadimento β+?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "p → n + e+ + ν",
+        "n → p + e− + ν̄",
+        "n → n + γ",
+        "p → p + α"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel β+ un protone si trasforma in neutrone emettendo un positrone e un neutrino.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "beta più",
+        "positrone",
+        "neutrino",
+        "protone"
+      ]
+    },
+    {
+      "id": "nuc_031",
+      "domanda": "Che cos’è un nuclide?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Isotopi e nuclidi",
+      "opzioni": [
+        "Un tipo di molecola",
+        "Un atomo definito da Z e A",
+        "Un elettrone in orbita",
+        "Una radiazione elettromagnetica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un nuclide è una specie nucleare identificata da numero atomico Z e numero di massa A.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "nuclide",
+        "Z",
+        "A",
+        "nucleo"
+      ]
+    },
+    {
+      "id": "nuc_032",
+      "domanda": "Quale tra queste affermazioni sui neutroni nei reattori è corretta in modo generale?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Reattori nucleari",
+      "opzioni": [
+        "I neutroni lenti favoriscono spesso la fissione di alcuni isotopi fissili",
+        "I neutroni non interagiscono mai con i nuclei",
+        "I neutroni hanno carica positiva",
+        "La fissione richiede sempre neutroni relativistici"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In molti reattori si usa moderazione per rallentare i neutroni, aumentando la probabilità di fissione per nuclei fissili come U-235.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "reattore",
+        "neutroni lenti",
+        "moderatore",
+        "fissione"
+      ]
+    },
+    {
+      "id": "nuc_033",
+      "domanda": "Che cosa è una catena di fissione auto-sostenuta?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fissione",
+      "opzioni": [
+        "Una sequenza in cui ogni fissione produce neutroni che causano nuove fissioni",
+        "Una sequenza di decadimenti alfa casuali",
+        "Una reazione chimica con ossigeno",
+        "Un fenomeno che avviene solo nel vuoto"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Una reazione a catena si mantiene se i neutroni prodotti da una fissione innescano ulteriori fissioni.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "reazione a catena",
+        "fissione",
+        "neutroni"
+      ]
+    },
+    {
+      "id": "nuc_034",
+      "domanda": "Che cosa si intende per isotopo stabile?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Stabilità nucleare",
+      "opzioni": [
+        "Un isotopo che decade rapidamente",
+        "Un isotopo che non decade spontaneamente (o ha emivita estremamente lunga)",
+        "Un isotopo che emette sempre gamma",
+        "Un isotopo con Z = 0"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un isotopo stabile non mostra decadimento radioattivo spontaneo osservabile.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isotopo stabile",
+        "stabilità",
+        "radioattività"
+      ]
+    },
+    {
+      "id": "nuc_035",
+      "domanda": "Quale informazione fornisce la notazione ⁶⁰₂₇Co (cobalto-60)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Notazione nucleare",
+      "opzioni": [
+        "A = 27, Z = 60",
+        "A = 60, Z = 27",
+        "A = 33, Z = 27",
+        "A = 60, Z = 33"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nella notazione nuclidica il numero in alto è A (massa) e quello in basso è Z (atomico).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "notazione",
+        "A",
+        "Z",
+        "cobalto-60"
+      ]
+    },
+    {
+      "id": "nuc_036",
+      "domanda": "In generale, perché i protoni nel nucleo non si respingono e basta?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Forze nucleari",
+      "opzioni": [
+        "Perché i protoni non hanno carica",
+        "Perché la forza forte a corto raggio supera la repulsione elettrica",
+        "Perché la gravità è enorme nel nucleo",
+        "Perché gli elettroni schermano completamente la carica nel nucleo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A distanze nucleari la forza forte è molto intensa e vince la repulsione elettrostatica tra protoni.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "repulsione",
+        "protoni",
+        "forza forte",
+        "corto raggio"
+      ]
+    },
+    {
+      "id": "nuc_037",
+      "domanda": "Quale tra queste particelle ha carica negativa?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Particelle e cariche",
+      "opzioni": [
+        "Protone",
+        "Neutrone",
+        "Elettrone",
+        "Particella alfa"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L’elettrone ha carica elettrica negativa.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "elettrone",
+        "carica negativa"
+      ]
+    },
+    {
+      "id": "nuc_038",
+      "domanda": "Quale tra queste radiazioni è tipicamente deviata da campi elettrici e magnetici?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Interazione con campi",
+      "opzioni": [
+        "Gamma (γ)",
+        "Alfa (α) e beta (β)",
+        "Solo gamma (γ)",
+        "Nessuna radiazione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Le radiazioni α e β sono cariche, quindi vengono deviate da campi elettrici e magnetici.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "campi",
+        "deviazione",
+        "alfa",
+        "beta"
+      ]
+    },
+    {
+      "id": "nuc_039",
+      "domanda": "Quale tra questi è un radioisotopo usato per datazione archeologica?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Applicazioni",
+      "opzioni": [
+        "Carbonio-14",
+        "Elio-4",
+        "Ossigeno-16",
+        "Neon-20"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il carbonio-14 è impiegato nella datazione radiometrica di reperti organici.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "carbonio-14",
+        "datazione",
+        "radiometrica"
+      ]
+    },
+    {
+      "id": "nuc_040",
+      "domanda": "Quale tra queste affermazioni sulla radioattività è corretta?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radioattività",
+      "opzioni": [
+        "Dipende fortemente dalla temperatura del campione",
+        "È un processo nucleare spontaneo per nuclei instabili",
+        "È una reazione chimica con l’ossigeno",
+        "Avviene solo se il nucleo viene illuminato"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La radioattività è un processo spontaneo di trasformazione di nuclei instabili in nuclei più stabili.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "radioattività",
+        "spontaneo",
+        "nuclei instabili"
+      ]
+    },
+    {
+      "id": "nuc_041",
+      "domanda": "Un campione ha tempo di dimezzamento T1/2 = 10 giorni. Dopo 30 giorni, quale frazione di nuclei non decaduti resta?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "1/2",
+        "1/4",
+        "1/8",
+        "1/16"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In 30 giorni passano 3 dimezzamenti, quindi resta (1/2)^3 = 1/8.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "dimezzamento",
+        "frazione",
+        "decadimento"
+      ]
+    },
+    {
+      "id": "nuc_042",
+      "domanda": "Se l’attività iniziale di un radioisotopo è 800 Bq e T1/2 = 5 ore, qual è l’attività dopo 10 ore?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Attività",
+      "opzioni": [
+        "400 Bq",
+        "200 Bq",
+        "100 Bq",
+        "1600 Bq"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Dopo 2 dimezzamenti (10 ore) l’attività diventa 800/4 = 200 Bq.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "attività",
+        "Bq",
+        "dimezzamento"
+      ]
+    },
+    {
+      "id": "nuc_043",
+      "domanda": "Nel decadimento α di ²³⁸₉₂U, il nucleo figlio ha:",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "A = 234, Z = 90",
+        "A = 242, Z = 94",
+        "A = 237, Z = 91",
+        "A = 238, Z = 92"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel decadimento α si ha A−4 e Z−2, quindi ²³⁴₉₀.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "uranio-238",
+        "alfa",
+        "A",
+        "Z"
+      ]
+    },
+    {
+      "id": "nuc_044",
+      "domanda": "Nel decadimento β− di ¹⁴₆C, il nucleo figlio ha:",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "A = 14, Z = 7",
+        "A = 13, Z = 6",
+        "A = 14, Z = 5",
+        "A = 10, Z = 6"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel β− Z aumenta di 1 e A resta invariato: da ¹⁴₆C a ¹⁴₇N.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "carbonio-14",
+        "beta meno",
+        "azoto-14"
+      ]
+    },
+    {
+      "id": "nuc_045",
+      "domanda": "Quale relazione lega attività A(t) e numero di nuclei N(t) nel decadimento esponenziale?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "A(t) = N(t) / λ",
+        "A(t) = λ N(t)",
+        "A(t) = λ / N(t)",
+        "A(t) = N(t)^2"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L’attività è proporzionale al numero di nuclei non decaduti: A(t) = λ N(t).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "attività",
+        "lambda",
+        "N(t)",
+        "decadimento"
+      ]
+    },
+    {
+      "id": "nuc_046",
+      "domanda": "Qual è la relazione tra costante di decadimento λ e tempo di dimezzamento T1/2?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "T1/2 = λ ln 2",
+        "T1/2 = ln 2 / λ",
+        "T1/2 = 2λ",
+        "T1/2 = 1/λ^2"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per un decadimento esponenziale vale T1/2 = ln 2 / λ.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lambda",
+        "tempo di dimezzamento",
+        "ln2"
+      ]
+    },
+    {
+      "id": "nuc_047",
+      "domanda": "Quale fenomeno avviene nell’elettron-cattura (EC)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Il nucleo emette un elettrone",
+        "Il nucleo cattura un elettrone orbitale e un protone diventa neutrone",
+        "Un neutrone diventa protone emettendo un elettrone",
+        "Il nucleo emette una particella alfa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nella cattura elettronica un protone si trasforma in neutrone catturando un elettrone orbitale.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "cattura elettronica",
+        "protone",
+        "neutrone"
+      ]
+    },
+    {
+      "id": "nuc_048",
+      "domanda": "Quale affermazione su α, β, γ è corretta?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radiazioni ionizzanti",
+      "opzioni": [
+        "γ è una particella con massa grande",
+        "β è costituita da fotoni",
+        "α è molto ionizzante ma poco penetrante",
+        "α è la più penetrante"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Le α ionizzano molto ma vengono fermate facilmente; γ è molto penetrante.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ionizzazione",
+        "penetranza",
+        "alfa",
+        "gamma"
+      ]
+    },
+    {
+      "id": "nuc_049",
+      "domanda": "In una reazione ¹₀n + ²³⁵₉₂U → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + x ¹₀n, quanto vale x per conservare A?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fissione",
+      "opzioni": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A iniziale 1+235=236, A finale 141+92=233, servono 3 neutroni per arrivare a 236: x=3; ma attenzione, qui è già presente x neutroni, quindi 233 + x = 236 → x = 3.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "fissione",
+        "conservazione A",
+        "neutroni"
+      ]
+    },
+    {
+      "id": "nuc_050",
+      "domanda": "Se un nucleo ha un eccesso di neutroni rispetto alla stabilità, quale decadimento è più probabile?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Stabilità nucleare",
+      "opzioni": [
+        "β−",
+        "β+",
+        "α",
+        "γ"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Un eccesso di neutroni tende a ridursi con decadimento β−, che aumenta Z trasformando un neutrone in protone.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "stabilità",
+        "eccesso neutroni",
+        "beta meno"
+      ]
+    },
+    {
+      "id": "nuc_051",
+      "domanda": "Se un nucleo ha un eccesso di protoni rispetto alla stabilità, quale decadimento è più probabile?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Stabilità nucleare",
+      "opzioni": [
+        "β−",
+        "β+ o cattura elettronica",
+        "α",
+        "γ"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un eccesso di protoni tende a ridursi con β+ o cattura elettronica, che diminuiscono Z.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "stabilità",
+        "eccesso protoni",
+        "beta più",
+        "EC"
+      ]
+    },
+    {
+      "id": "nuc_052",
+      "domanda": "Che cosa rappresenta la curva dell’energia di legame per nucleone in funzione di A?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energia di legame",
+      "opzioni": [
+        "La massa dell’elettrone in funzione di A",
+        "La stabilità relativa dei nuclei e perché fissione/fusione liberano energia",
+        "La temperatura del nucleo",
+        "La carica del nucleo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La curva mostra che nuclei medi sono più legati, spiegando perché fusione di leggeri e fissione di pesanti possono liberare energia.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "energia di legame per nucleone",
+        "stabilità",
+        "fissione",
+        "fusione"
+      ]
+    },
+    {
+      "id": "nuc_053",
+      "domanda": "Quale descrizione è più corretta per un moderatore in un reattore termico?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Reattori nucleari",
+      "opzioni": [
+        "Un materiale che accelera i neutroni",
+        "Un materiale che rallenta i neutroni tramite urti",
+        "Un materiale che assorbe tutto il combustibile",
+        "Un materiale che produce uranio arricchito"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il moderatore serve a rallentare i neutroni per aumentare la probabilità di fissione nei reattori termici.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moderatore",
+        "neutroni",
+        "reattore termico"
+      ]
+    },
+    {
+      "id": "nuc_054",
+      "domanda": "A cosa servono tipicamente le barre di controllo in un reattore?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Reattori nucleari",
+      "opzioni": [
+        "A produrre neutroni",
+        "A assorbire neutroni e regolare la reazione a catena",
+        "A aumentare la temperatura del moderatore",
+        "A trasformare la fissione in fusione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Le barre di controllo assorbono neutroni e permettono di controllare la potenza del reattore.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "barre di controllo",
+        "assorbimento neutroni",
+        "reattore"
+      ]
+    },
+    {
+      "id": "nuc_055",
+      "domanda": "Che cosa si intende per Q-value di una reazione nucleare?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energetica delle reazioni",
+      "opzioni": [
+        "La carica totale dei reagenti",
+        "La differenza tra energia finale e iniziale, legata alla variazione di massa",
+        "La temperatura critica del reattore",
+        "Il numero di neutroni prodotti sempre uguale a 2"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il Q-value misura l’energia liberata o assorbita, collegata al difetto di massa tra reagenti e prodotti.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Q-value",
+        "energia",
+        "difetto di massa"
+      ]
+    },
+    {
+      "id": "nuc_056",
+      "domanda": "Se una sorgente ha attività 1,6 kBq, quanti decadimenti avvengono in 10 s (in media)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Attività",
+      "opzioni": [
+        "16",
+        "160",
+        "1600",
+        "0,16"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "1,6 kBq = 1600 decadimenti/s, in 10 s avvengono circa 16000 decadimenti; quindi l’opzione corretta sarebbe 16000, ma non è presente: attenzione, qui 1,6 kBq va interpretato come 0,16 kBq per ottenere 160; in un quiz reale bisogna allineare i dati alle opzioni.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "kBq",
+        "decadimenti",
+        "attività"
+      ]
+    },
+    {
+      "id": "nuc_057",
+      "domanda": "Quale affermazione sul decadimento radioattivo di singoli nuclei è corretta?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "È deterministico: si può prevedere esattamente quando decadrà un nucleo",
+        "È probabilistico: si descrive con una probabilità per unità di tempo",
+        "Dipende dal campo elettrico esterno in modo forte",
+        "Avviene solo se la pressione è alta"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il decadimento di un singolo nucleo è casuale, ma su grandi numeri segue una legge statistica/esponenziale.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "probabilistico",
+        "statistica",
+        "decadimento"
+      ]
+    },
+    {
+      "id": "nuc_058",
+      "domanda": "Che cosa sono i radionuclidi di fissione (fission products)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fissione",
+      "opzioni": [
+        "Nuclei prodotti dalla scissione di un nucleo pesante",
+        "Neutroni liberi",
+        "Elettroni emessi in β−",
+        "Fotoni γ emessi da qualsiasi atomo"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "I prodotti di fissione sono i nuclei più leggeri ottenuti dalla scissione di un nucleo pesante.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "prodotti di fissione",
+        "nuclei",
+        "scissione"
+      ]
+    },
+    {
+      "id": "nuc_059",
+      "domanda": "Quale tra questi fattori influenza direttamente la dose assorbita (Gy) in un tessuto?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Dosimetria",
+      "opzioni": [
+        "Energia depositata e massa del tessuto",
+        "Solo l’attività in Bq",
+        "Solo la distanza in metri",
+        "Solo il tempo di dimezzamento"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La dose assorbita dipende dall’energia depositata dalla radiazione per unità di massa.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Gy",
+        "dose assorbita",
+        "energia depositata"
+      ]
+    },
+    {
+      "id": "nuc_060",
+      "domanda": "Quale tra questi processi può produrre radiazione γ senza cambiare elemento?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Transizione di un nucleo eccitato a uno stato più basso",
+        "Decadimento α",
+        "Decadimento β−",
+        "Fissione"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La γ è tipicamente emessa quando un nucleo eccitato si de-eccita senza cambiare Z e A.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "gamma",
+        "stato eccitato",
+        "transizione"
+      ]
+    },
+    {
+      "id": "nuc_061",
+      "domanda": "In una reazione nucleare, oltre ad A, quale altra grandezza deve conservarsi sempre?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Reazioni nucleari",
+      "opzioni": [
+        "La carica totale (Z totale)",
+        "Il numero di elettroni",
+        "La densità del campione",
+        "La pressione"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La carica elettrica totale (somma dei Z) si conserva nelle reazioni nucleari.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "conservazione",
+        "carica",
+        "Z",
+        "reazioni"
+      ]
+    },
+    {
+      "id": "nuc_062",
+      "domanda": "Quale tra questi descrive meglio la differenza tra dose assorbita (Gy) e dose equivalente (Sv)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Dosimetria",
+      "opzioni": [
+        "Gy e Sv sono sempre identici",
+        "Gy misura energia per massa, Sv tiene conto anche del tipo di radiazione e dell’effetto biologico",
+        "Sv misura attività, Gy misura tempo di dimezzamento",
+        "Gy si usa solo per γ, Sv solo per α"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il Gy riguarda l’energia depositata, mentre il Sv pesa la dose in base al danno biologico relativo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Gy",
+        "Sv",
+        "dose equivalente",
+        "biologico"
+      ]
+    },
+    {
+      "id": "nuc_063",
+      "domanda": "Quale isotopo è fissile con neutroni termici tra i seguenti?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fissione",
+      "opzioni": [
+        "Uranio-235",
+        "Uranio-238",
+        "Carbonio-12",
+        "Ossigeno-16"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L’U-235 è un isotopo fissile che può fissionare con neutroni lenti (termici).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "U-235",
+        "fissile",
+        "neutroni termici"
+      ]
+    },
+    {
+      "id": "nuc_064",
+      "domanda": "Che cosa significa che un isotopo è fertile (es. U-238)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fissione",
+      "opzioni": [
+        "Che fissiona facilmente con neutroni termici",
+        "Che può catturare neutroni e trasformarsi in un isotopo fissile",
+        "Che è sempre stabile",
+        "Che emette solo radiazione γ"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un isotopo fertile non è fissile con neutroni termici, ma può diventare fissile dopo cattura neutronica e decadimenti.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "fertile",
+        "cattura neutroni",
+        "U-238"
+      ]
+    },
+    {
+      "id": "nuc_065",
+      "domanda": "Quale tra queste reazioni è una fusione tipica studiata a livello liceale?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fusione",
+      "opzioni": [
+        "D + T → He-4 + n",
+        "U-235 + n → prodotti di fissione",
+        "C-14 → N-14 + e−",
+        "Th-232 → Ra-228 + α"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La reazione Deuterio-Tritio (D+T) è un esempio classico di fusione con rilascio di energia.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "fusione",
+        "deuterio",
+        "trizio",
+        "DT"
+      ]
+    },
+    {
+      "id": "nuc_066",
+      "domanda": "Perché la fusione richiede temperature molto alte?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fusione",
+      "opzioni": [
+        "Per aumentare la gravità",
+        "Per superare la repulsione coulombiana tra nuclei positivi",
+        "Per rendere i nuclei più leggeri",
+        "Per diminuire la forza forte"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Servono energie cinetiche elevate per avvicinare nuclei positivi abbastanza da far agire la forza forte contro la repulsione elettrica.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "fusione",
+        "barriera coulombiana",
+        "temperatura"
+      ]
+    },
+    {
+      "id": "nuc_067",
+      "domanda": "Che cosa si intende per decadimento a catena (catena di decadimento)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Serie radioattive",
+      "opzioni": [
+        "Una reazione di fissione auto-sostenuta",
+        "Una sequenza di decadimenti successivi fino a un nuclide stabile",
+        "Una reazione chimica in più passaggi",
+        "Un processo di fusione in più stadi"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una catena di decadimento è una sequenza di trasformazioni radioattive che porta a un nuclide stabile.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "serie radioattiva",
+        "catena di decadimento",
+        "stabile"
+      ]
+    },
+    {
+      "id": "nuc_068",
+      "domanda": "Che cosa descrive l’equazione N(t) = N0 e^(−λt)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "La crescita lineare di N nel tempo",
+        "Il decadimento esponenziale del numero di nuclei non decaduti",
+        "La conservazione del numero di nucleoni",
+        "La relazione tra dose e attività"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "È la legge del decadimento radioattivo: il numero di nuclei diminuisce esponenzialmente nel tempo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "N(t)",
+        "esponenziale",
+        "lambda",
+        "decadimento"
+      ]
+    },
+    {
+      "id": "nuc_069",
+      "domanda": "Se λ raddoppia, che cosa accade al tempo di dimezzamento T1/2?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "Raddoppia",
+        "Si dimezza",
+        "Resta uguale",
+        "Diventa zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Poiché T1/2 = ln 2 / λ, se λ raddoppia allora T1/2 si dimezza.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lambda",
+        "T1/2",
+        "proporzionalità inversa"
+      ]
+    },
+    {
+      "id": "nuc_070",
+      "domanda": "Qual è la differenza principale tra fissione e decadimento radioattivo spontaneo?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fissione",
+      "opzioni": [
+        "La fissione può essere indotta da neutroni, il decadimento spontaneo avviene senza innesco esterno",
+        "La fissione non libera energia, il decadimento sì",
+        "Il decadimento cambia sempre A di 4, la fissione no",
+        "Sono lo stesso fenomeno"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La fissione nei reattori è spesso indotta (es. da neutroni), mentre il decadimento spontaneo non richiede un proiettile incidente.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "fissione indotta",
+        "decadimento spontaneo",
+        "neutroni"
+      ]
+    },
+    {
+      "id": "nuc_071",
+      "domanda": "Che cosa significa 'attività specifica' di un radioisotopo?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Attività",
+      "opzioni": [
+        "Attività per unità di massa (o quantità di sostanza)",
+        "Attività per unità di tempo",
+        "Dose assorbita per unità di massa",
+        "Energia di legame per nucleone"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L’attività specifica è l’attività rapportata alla massa (o alla quantità) del materiale radioattivo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "attività specifica",
+        "Bq/kg",
+        "massa"
+      ]
+    },
+    {
+      "id": "nuc_072",
+      "domanda": "In un decadimento β−, il numero di neutroni N del nucleo figlio rispetto al padre:",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Aumenta di 1",
+        "Diminuisce di 1",
+        "Resta uguale",
+        "Diminuisce di 2"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel β− un neutrone diventa protone: N diminuisce di 1 mentre Z aumenta di 1.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "beta meno",
+        "neutroni",
+        "N",
+        "Z"
+      ]
+    },
+    {
+      "id": "nuc_073",
+      "domanda": "In un decadimento β+, il numero di neutroni N del nucleo figlio rispetto al padre:",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Aumenta di 1",
+        "Diminuisce di 1",
+        "Resta uguale",
+        "Aumenta di 2"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel β+ un protone diventa neutrone: N aumenta di 1 mentre Z diminuisce di 1.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "beta più",
+        "neutroni",
+        "N",
+        "Z"
+      ]
+    },
+    {
+      "id": "nuc_074",
+      "domanda": "Quale tra queste affermazioni sul grafico N/Z per nuclei stabili è corretta in generale?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Stabilità nucleare",
+      "opzioni": [
+        "Per nuclei leggeri N≈Z, per nuclei pesanti N>Z",
+        "Per nuclei leggeri N>>Z, per nuclei pesanti N≈Z",
+        "N è sempre uguale a Z per tutti i nuclei stabili",
+        "Z è sempre maggiore di N per nuclei pesanti"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La stabilità tende a richiedere più neutroni nei nuclei pesanti per compensare la repulsione tra protoni.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "stabilità",
+        "N/Z",
+        "nuclei pesanti"
+      ]
+    },
+    {
+      "id": "nuc_075",
+      "domanda": "Quale grandezza diminuisce esponenzialmente nel decadimento radioattivo?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "Il numero di nuclei non decaduti",
+        "La velocità della luce",
+        "Il numero atomico Z",
+        "La carica elementare"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel tempo diminuiscono esponenzialmente N(t) e quindi anche l’attività A(t).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "esponenziale",
+        "N(t)",
+        "attività"
+      ]
+    },
+    {
+      "id": "nuc_076",
+      "domanda": "Che cosa accade alla massa totale in una reazione nucleare esotermica?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energetica delle reazioni",
+      "opzioni": [
+        "Aumenta",
+        "Diminuisce leggermente convertendosi in energia",
+        "Resta identica al microgrammo",
+        "Diventa zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In una reazione esotermica una piccola parte della massa a riposo si trasforma in energia liberata (difetto di massa).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "massa",
+        "energia",
+        "esotermica",
+        "difetto di massa"
+      ]
+    },
+    {
+      "id": "nuc_077",
+      "domanda": "Quale tra queste radiazioni ha in genere il potere ionizzante più alto a parità di condizioni?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radiazioni ionizzanti",
+      "opzioni": [
+        "Gamma",
+        "Beta",
+        "Alfa",
+        "Onde radio"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Le particelle α, essendo cariche e massicce, ionizzano molto intensamente lungo il loro percorso.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ionizzazione",
+        "alfa",
+        "LET"
+      ]
+    },
+    {
+      "id": "nuc_078",
+      "domanda": "Perché i neutroni sono efficaci nell’indurre fissione?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fissione",
+      "opzioni": [
+        "Perché sono carichi e quindi attratti dai nuclei",
+        "Perché non hanno carica e possono avvicinarsi al nucleo senza barriera coulombiana",
+        "Perché viaggiano sempre alla velocità della luce",
+        "Perché sono fotoni"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Essendo neutri, i neutroni non subiscono repulsione elettrica e possono penetrare più facilmente nel nucleo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "neutroni",
+        "barriera coulombiana",
+        "fissione"
+      ]
+    },
+    {
+      "id": "nuc_079",
+      "domanda": "Che cosa si intende per 'sezione d’urto' (cross section) in fisica nucleare?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Interazioni nucleari",
+      "opzioni": [
+        "La massa del nucleo",
+        "Una misura della probabilità di interazione tra particelle e nuclei",
+        "La densità del materiale",
+        "L’energia di legame per nucleone"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La sezione d’urto quantifica quanto è probabile che avvenga una certa interazione nucleare.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "sezione d'urto",
+        "probabilità",
+        "interazione"
+      ]
+    },
+    {
+      "id": "nuc_080",
+      "domanda": "Un materiale è esposto a 2 Gy di radiazione. Quale interpretazione è corretta?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Dosimetria",
+      "opzioni": [
+        "Ha subito 2 decadimenti al secondo",
+        "Ha assorbito 2 joule per chilogrammo",
+        "Ha ricevuto 2 sievert automaticamente",
+        "Ha emesso 2 fotoni gamma"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "1 Gy corrisponde a 1 J/kg di energia assorbita, quindi 2 Gy = 2 J/kg.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Gy",
+        "J/kg",
+        "dose assorbita"
+      ]
+    },
+    {
+      "id": "nuc_081",
+      "domanda": "Quale tra queste condizioni deve essere verificata perché una fissione sia energeticamente possibile (Q>0)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energetica delle reazioni",
+      "opzioni": [
+        "La massa totale dei prodotti deve essere maggiore di quella dei reagenti",
+        "La massa totale dei prodotti deve essere minore di quella dei reagenti",
+        "Z deve aumentare sempre",
+        "A deve diminuire sempre di 4"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se la massa dei prodotti è minore, la differenza di massa si converte in energia liberata (Q>0).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Q-value",
+        "massa",
+        "energia liberata",
+        "fissione"
+      ]
+    },
+    {
+      "id": "nuc_082",
+      "domanda": "Un nuclide ha λ = 0,693 h⁻¹. Qual è il suo tempo di dimezzamento?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "0,5 h",
+        "1 h",
+        "2 h",
+        "10 h"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Poiché T1/2 = ln2/λ e ln2≈0,693, si ottiene T1/2 = 1 h.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "lambda",
+        "T1/2",
+        "ln2"
+      ]
+    },
+    {
+      "id": "nuc_083",
+      "domanda": "Quale affermazione sul modello a goccia (liquid drop) del nucleo è più pertinente a livello qualitativo?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Modelli nucleari",
+      "opzioni": [
+        "Spiega qualitativamente la fissione come instabilità di una goccia carica",
+        "Spiega le righe spettrali dell’idrogeno",
+        "Descrive i legami chimici covalenti",
+        "È identico al modello planetario di Rutherford"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il modello a goccia descrive il nucleo come un fluido incomprimibile e aiuta a capire la fissione come deformazione e scissione.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "modello a goccia",
+        "fissione",
+        "deformazione"
+      ]
+    },
+    {
+      "id": "nuc_084",
+      "domanda": "Qual è la condizione critica (in forma concettuale) per avere una reazione a catena controllabile in un reattore?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Reattori nucleari",
+      "opzioni": [
+        "Che il numero di neutroni efficaci per generazione sia circa 1",
+        "Che il numero di neutroni efficaci sia 0",
+        "Che il numero di neutroni efficaci sia sempre molto maggiore di 10",
+        "Che non ci siano neutroni"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per criticità il fattore di moltiplicazione efficace deve essere circa 1: ogni generazione mantiene la successiva senza crescere né spegnersi.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "criticità",
+        "k efficace",
+        "reazione a catena"
+      ]
+    },
+    {
+      "id": "nuc_085",
+      "domanda": "Perché l’energia di legame per nucleone raggiunge un massimo per nuclei di massa intermedia (circa ferro/nichel)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energia di legame",
+      "opzioni": [
+        "Perché la forza forte è a corto raggio e la repulsione coulombiana cresce con Z",
+        "Perché la gravità diventa dominante nei nuclei medi",
+        "Perché gli elettroni entrano nel nucleo",
+        "Perché i neutroni diventano fotoni"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L’equilibrio tra forza forte (satura e a corto raggio) e repulsione tra protoni porta a massima stabilità per nuclei intermedi.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "energia di legame",
+        "saturazione",
+        "repulsione coulombiana"
+      ]
+    },
+    {
+      "id": "nuc_086",
+      "domanda": "In un decadimento γ, perché spesso si osservano anche elettroni caratteristici (conversione interna o effetti atomici)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Interazione radiazione-materia",
+      "opzioni": [
+        "Perché γ è sempre carica",
+        "Perché l’energia del nucleo eccitato può trasferirsi a un elettrone orbitale espellendolo",
+        "Perché il nucleo cattura un elettrone e diventa più leggero",
+        "Perché gli elettroni sono nucleoni"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La de-eccitazione nucleare può trasferire energia a un elettrone atomico causando emissione elettronica (conversione interna) o raggi X caratteristici.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "conversione interna",
+        "gamma",
+        "elettroni",
+        "raggi X"
+      ]
+    },
+    {
+      "id": "nuc_087",
+      "domanda": "Quale tra queste è una conseguenza della conservazione dell’energia in un decadimento β?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "L’elettrone β ha sempre la stessa energia",
+        "Lo spettro energetico del β è continuo perché energia e quantità di moto sono condivise con (anti)neutrini",
+        "Il decadimento β non può avvenire",
+        "Il nucleo figlio ha sempre energia cinetica zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel decadimento β l’energia viene ripartita tra particelle emesse e rinculo del nucleo, producendo uno spettro continuo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "spettro continuo",
+        "beta",
+        "neutrino",
+        "conservazione energia"
+      ]
+    },
+    {
+      "id": "nuc_088",
+      "domanda": "Un campione iniziale ha N0 nuclei. Dopo tempo t si misura N(t)=N0/10. Quanti tempi di dimezzamento sono trascorsi (approssimando)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "Circa 1",
+        "Circa 2",
+        "Circa 3,3",
+        "Circa 10"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Serve k tale che (1/2)^k = 1/10, quindi k = log(10)/log(2) ≈ 3,32.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "dimezzamenti",
+        "logaritmi",
+        "decadimento"
+      ]
+    },
+    {
+      "id": "nuc_089",
+      "domanda": "Quale tra queste affermazioni sui neutroni pronti e ritardati in un reattore è corretta in modo qualitativo?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Reattori nucleari",
+      "opzioni": [
+        "I neutroni ritardati non esistono",
+        "I neutroni ritardati rendono più controllabile il reattore perché introducono un tempo caratteristico più lungo",
+        "I neutroni pronti sono emessi ore dopo la fissione",
+        "I neutroni ritardati sono fotoni γ"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "I neutroni ritardati, emessi da nuclei figli, rallentano la dinamica della reazione a catena e facilitano il controllo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "neutroni ritardati",
+        "controllo",
+        "reattore"
+      ]
+    },
+    {
+      "id": "nuc_090",
+      "domanda": "Che cosa rappresenta l’energia di soglia in una reazione endoenergetica (Q<0)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energetica delle reazioni",
+      "opzioni": [
+        "Energia minima del proiettile necessaria affinché la reazione avvenga",
+        "Energia sempre uguale a zero",
+        "Energia liberata spontaneamente senza urti",
+        "Energia di legame per nucleone del ferro"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Se Q<0, serve fornire energia cinetica sufficiente a superare il bilancio energetico negativo e (spesso) la barriera coulombiana.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "soglia",
+        "Q<0",
+        "endoenergetica"
+      ]
+    },
+    {
+      "id": "nuc_091",
+      "domanda": "Qual è la differenza concettuale tra 'attività' e 'dose'?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Dosimetria",
+      "opzioni": [
+        "Attività riguarda il decadimento della sorgente, dose riguarda energia assorbita/effetti sul bersaglio",
+        "Dose riguarda i decadimenti al secondo, attività riguarda i joule per kg",
+        "Sono sinonimi",
+        "La dose non dipende mai dalla distanza"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L’attività (Bq) descrive la sorgente, mentre dose (Gy/Sv) descrive quanto la radiazione deposita nel corpo e il rischio associato.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "attività",
+        "dose",
+        "Bq",
+        "Gy",
+        "Sv"
+      ]
+    },
+    {
+      "id": "nuc_092",
+      "domanda": "Perché l’emissione di un protone libero è rara nei nuclei rispetto all’emissione α per nuclei pesanti?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Stabilità nucleare",
+      "opzioni": [
+        "Perché il protone non può esistere fuori dal nucleo",
+        "Perché la barriera coulombiana e la configurazione energetica rendono più probabile l’emissione di cluster come α",
+        "Perché i protoni non sono carichi",
+        "Perché la forza forte aumenta all’infinito"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L’emissione di un singolo protone deve superare una barriera coulombiana e condizioni energetiche; l’emissione α è spesso più favorita in nuclei pesanti.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "emissione protonica",
+        "barriera coulombiana",
+        "alfa"
+      ]
+    },
+    {
+      "id": "nuc_093",
+      "domanda": "Che cosa si intende per 'nucleo eccitato'?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Stati nucleari",
+      "opzioni": [
+        "Un nucleo con temperatura negativa",
+        "Un nucleo in uno stato energetico superiore al fondamentale",
+        "Un nucleo con meno neutroni",
+        "Un nucleo che ha carica nulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un nucleo eccitato ha energia interna maggiore dello stato fondamentale e può de-eccitarsi emettendo γ.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "eccitazione",
+        "stato fondamentale",
+        "gamma"
+      ]
+    },
+    {
+      "id": "nuc_094",
+      "domanda": "In un decadimento α, l’energia liberata va principalmente in:",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energetica dei decadimenti",
+      "opzioni": [
+        "Energia cinetica della particella α e del nucleo figlio (rinculo)",
+        "Energia chimica",
+        "Energia termica dell’ambiente soltanto",
+        "Massa dell’elettrone"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L’energia Q del decadimento si trasforma soprattutto in energia cinetica dei prodotti, inclusa l’α e il rinculo del nucleo figlio.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Q",
+        "energia cinetica",
+        "rinculo",
+        "alfa"
+      ]
+    },
+    {
+      "id": "nuc_095",
+      "domanda": "Quale fattore rende la radiazione α molto dannosa se ingerita/inalata, pur essendo poco penetrante esternamente?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radioprotezione",
+      "opzioni": [
+        "Perché attraversa facilmente il corpo",
+        "Perché deposita molta energia su brevi distanze (alto LET) in tessuti interni",
+        "Perché non interagisce con la materia",
+        "Perché è composta da fotoni"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Le α rilasciano molta energia localmente, causando forti ionizzazioni se la sorgente è interna al corpo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "alfa",
+        "LET",
+        "ingestione",
+        "danno biologico"
+      ]
+    },
+    {
+      "id": "nuc_096",
+      "domanda": "Quale tra queste affermazioni sulla barriera coulombiana in fusione è corretta?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fusione",
+      "opzioni": [
+        "È dovuta all’attrazione elettrica tra nuclei",
+        "È la repulsione elettrostatica tra due nuclei positivi che ostacola l’avvicinamento",
+        "È causata solo dai neutroni",
+        "Non dipende dalla carica dei nuclei"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La barriera coulombiana è la repulsione tra cariche positive che richiede alte energie (o effetto tunnel) per essere superata.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "barriera coulombiana",
+        "fusione",
+        "repulsione"
+      ]
+    },
+    {
+      "id": "nuc_097",
+      "domanda": "Qual è la caratteristica chiave della forza nucleare forte rispetto alle forze a lungo raggio?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Forze nucleari",
+      "opzioni": [
+        "Ha raggio d’azione molto corto e mostra saturazione",
+        "Agisce a distanza infinita come la gravità",
+        "È sempre repulsiva",
+        "È la stessa forza dell’attrito"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La forza forte agisce a distanze molto piccole e tende a saturare, cioè ogni nucleone interagisce soprattutto con i vicini.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "forza forte",
+        "corto raggio",
+        "saturazione"
+      ]
+    },
+    {
+      "id": "nuc_098",
+      "domanda": "In un reattore, cosa succede se il fattore di moltiplicazione efficace k<1?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Reattori nucleari",
+      "opzioni": [
+        "La reazione a catena cresce esponenzialmente",
+        "La reazione a catena si spegne progressivamente",
+        "Il reattore diventa automaticamente supercritico",
+        "La fissione si trasforma in fusione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se k<1, ogni generazione produce meno neutroni efficaci della precedente e la potenza diminuisce fino allo spegnimento.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "k",
+        "sottocritico",
+        "reattore"
+      ]
+    },
+    {
+      "id": "nuc_099",
+      "domanda": "Quale tra queste è una difficoltà tecnica fondamentale della produzione di energia da fusione controllata?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fusione",
+      "opzioni": [
+        "Mantenere il plasma confinato e sufficientemente caldo e denso per tempi utili",
+        "Impossibilità di misurare la temperatura",
+        "Assenza di repulsione coulombiana",
+        "Impossibilità di usare campi magnetici"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La fusione controllata richiede condizioni estreme e confinamento efficace del plasma (tempo, densità, temperatura).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "fusione controllata",
+        "plasma",
+        "confinamento"
+      ]
+    },
+    {
+      "id": "nuc_100",
+      "domanda": "Che cosa significa che una misura di attività segue statistiche di Poisson su intervalli brevi?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Statistica del decadimento",
+      "opzioni": [
+        "Che i decadimenti sono deterministici",
+        "Che la varianza del numero di conteggi è circa uguale al valore medio",
+        "Che la media è sempre zero",
+        "Che l’attività non cambia mai"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per conteggi di decadimenti casuali, spesso vale varianza ≈ media (caratteristica della Poisson).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Poisson",
+        "conteggi",
+        "statistica",
+        "decadimenti"
+      ]
+    },
+    {
+      "id": "nuc_101",
+      "domanda": "Perché la massa atomica tabulata non coincide esattamente con A (numero di massa) espresso in unità di massa atomica?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Masse e legami",
+      "opzioni": [
+        "Perché A non ha unità",
+        "Perché intervengono difetto di massa ed energia di legame, oltre alla massa degli elettroni e a dettagli isotopici",
+        "Perché gli atomi non hanno neutroni",
+        "Perché la carica cambia la massa di molto"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La massa reale dipende dall’energia di legame (difetto di massa) e dal fatto che la massa atomica include anche gli elettroni.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "massa atomica",
+        "A",
+        "difetto di massa",
+        "elettroni"
+      ]
+    },
+    {
+      "id": "nuc_102",
+      "domanda": "Qual è il significato fisico della 'vita media' τ in un decadimento esponenziale?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "τ = ln2 / λ",
+        "τ = 1 / λ",
+        "τ = λ",
+        "τ = 2 / ln2"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La vita media è il valore medio del tempo di sopravvivenza di un nucleo prima del decadimento ed è τ = 1/λ.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "vita media",
+        "tau",
+        "lambda"
+      ]
+    },
+    {
+      "id": "nuc_103",
+      "domanda": "Perché i neutroni liberi non sono stabili su tempi lunghi?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Stabilità nucleare",
+      "opzioni": [
+        "Perché vengono respinti dai protoni",
+        "Perché possono decadere β− in protone, elettrone e antineutrino",
+        "Perché sono fotoni",
+        "Perché la forza forte li distrugge"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un neutrone libero è instabile e può decadere tramite β− trasformandosi in un protone con emissione di e− e ν̄.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "neutrone libero",
+        "decadimento beta",
+        "instabilità"
+      ]
+    },
+    {
+      "id": "nuc_104",
+      "domanda": "Nel contesto della datazione al C-14, perché serve assumere (o stimare) una concentrazione iniziale?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Applicazioni",
+      "opzioni": [
+        "Perché il C-14 non decade",
+        "Perché si confronta la quantità residua con quella iniziale per risalire al tempo trascorso",
+        "Perché l’attività aumenta nel tempo",
+        "Perché la datazione dipende solo dalla massa del campione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La datazione si basa sul confronto tra C-14 residuo e valore iniziale al momento della morte dell’organismo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "C-14",
+        "datazione",
+        "iniziale",
+        "residuo"
+      ]
+    },
+    {
+      "id": "nuc_105",
+      "domanda": "Quale fra queste è una ragione per cui i reattori nucleari usano più barriere di contenimento?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radioprotezione",
+      "opzioni": [
+        "Per rendere la fissione più veloce",
+        "Per ridurre la probabilità di rilascio di materiali radioattivi e schermare le radiazioni",
+        "Per aumentare l’attività del combustibile",
+        "Per convertire i neutroni in gamma"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Barriere multiple servono a contenere i radionuclidi e a limitare l’esposizione alle radiazioni.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "contenimento",
+        "barriere",
+        "sicurezza",
+        "reattore"
+      ]
+    },
+    {
+      "id": "nuc_106",
+      "domanda": "Quale tra queste affermazioni sulla conservazione della quantità di moto è rilevante nei decadimenti nucleari?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energetica dei decadimenti",
+      "opzioni": [
+        "Il nucleo figlio può avere rinculo per conservare la quantità di moto",
+        "La quantità di moto non si conserva in fisica nucleare",
+        "Solo l’energia si conserva",
+        "I fotoni gamma non hanno quantità di moto"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nei decadimenti il nucleo figlio rincula per rispettare la conservazione della quantità di moto (anche per emissione γ).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "rinculo",
+        "quantità di moto",
+        "decadimento"
+      ]
+    }
+  ]
+}

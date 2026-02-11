@@ -1,1 +1,2398 @@
-{"quiz": []}
+{
+    "quiz": [
+        {
+            "id": "grav_001",
+            "domanda": "Cosa descrive la legge di gravitazione universale di Newton?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Legge di Newton",
+            "opzioni": [
+                "L’attrito tra superfici",
+                "L’attrazione tra masse",
+                "La spinta di Archimede",
+                "La pressione dei gas"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La legge di Newton descrive la forza di attrazione reciproca tra due masse.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "newton",
+                "attrazione",
+                "masse",
+                "gravitazione"
+            ]
+        },
+        {
+            "id": "grav_002",
+            "domanda": "Nella formula F = G m1 m2 / r^2, cosa rappresenta r?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Significato delle grandezze",
+            "opzioni": [
+                "Il raggio del Sole",
+                "La distanza tra i centri delle masse",
+                "La massa minore",
+                "La velocità orbitale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "r è la distanza tra i centri di massa dei due corpi considerati puntiformi.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "r",
+                "distanza",
+                "centri",
+                "formula"
+            ]
+        },
+        {
+            "id": "grav_003",
+            "domanda": "Se la distanza r tra due masse raddoppia, la forza gravitazionale (a parità di masse) come cambia?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Legge dell’inverso del quadrato",
+            "opzioni": [
+                "Raddoppia",
+                "Dimezza",
+                "Diventa 1/4",
+                "Diventa 4 volte"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con dipendenza 1/r^2, r→2r implica F→F/4.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "inverso",
+                "quadrato",
+                "distanza",
+                "proporzionalità"
+            ]
+        },
+        {
+            "id": "grav_004",
+            "domanda": "Qual è la direzione della forza gravitazionale tra due masse?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Direzione della forza",
+            "opzioni": [
+                "Perpendicolare alla congiungente",
+                "Lungo la congiungente dei centri",
+                "Sempre verso nord",
+                "Tangente all’orbita"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La forza gravitazionale è una forza centrale: agisce lungo la congiungente dei centri.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "forza",
+                "centrale",
+                "direzione",
+                "congiungente"
+            ]
+        },
+        {
+            "id": "grav_005",
+            "domanda": "Che cos’è g (accelerazione di gravità) vicino alla superficie terrestre?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Accelerazione di gravità",
+            "opzioni": [
+                "Una forza",
+                "Un’accelerazione",
+                "Una massa",
+                "Un’energia"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "g è l’accelerazione con cui cadono i corpi in assenza di resistenza dell’aria.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "g",
+                "accelerazione",
+                "caduta",
+                "terra"
+            ]
+        },
+        {
+            "id": "grav_006",
+            "domanda": "Il peso P di un corpo è dato (in prima approssimazione) da:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Peso e massa",
+            "opzioni": [
+                "P = m/g",
+                "P = m·g",
+                "P = g/m",
+                "P = m + g"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il peso è la forza gravitazionale: P = m·g.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "peso",
+                "massa",
+                "g",
+                "forza"
+            ]
+        },
+        {
+            "id": "grav_007",
+            "domanda": "La massa di un corpo (rispetto al luogo) è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Massa vs peso",
+            "opzioni": [
+                "Costante",
+                "Dipende da g",
+                "Dipende dall’altitudine",
+                "Dipende dalla temperatura"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La massa è una proprietà intrinseca, non dipende dal campo gravitazionale locale.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "massa",
+                "costante",
+                "intrinseca",
+                "peso"
+            ]
+        },
+        {
+            "id": "grav_008",
+            "domanda": "Il peso di un corpo sulla Luna rispetto alla Terra è (a parità di massa):",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Confronto campi",
+            "opzioni": [
+                "Maggiore",
+                "Uguale",
+                "Minore",
+                "Nullo sempre"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Il peso dipende da g locale; sulla Luna g è minore che sulla Terra.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "luna",
+                "peso",
+                "g",
+                "confronto"
+            ]
+        },
+        {
+            "id": "grav_009",
+            "domanda": "Che segno ha l’energia potenziale gravitazionale U, scegliendo U=0 a distanza infinita?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Segno del potenziale",
+            "opzioni": [
+                "Sempre positiva",
+                "Sempre negativa",
+                "Sempre zero",
+                "Dipende dalla massa del corpo di prova"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con zero all’infinito, per corpi legati gravitazionalmente U è negativa.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia",
+                "potenziale",
+                "negativa",
+                "infinito"
+            ]
+        },
+        {
+            "id": "grav_010",
+            "domanda": "La forza gravitazionale tra due corpi è sempre:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Natura della forza",
+            "opzioni": [
+                "Repulsiva",
+                "Attrattiva",
+                "A volte nulla",
+                "Solo tangenziale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nella gravitazione classica newtoniana la forza tra masse è attrattiva.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "attrattiva",
+                "forza",
+                "newton",
+                "masse"
+            ]
+        },
+        {
+            "id": "grav_011",
+            "domanda": "Quale grandezza è una costante universale nella legge di Newton?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Costante G",
+            "opzioni": [
+                "g",
+                "G",
+                "r",
+                "m"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "G è la costante di gravitazione universale, uguale ovunque (nel modello classico).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "G",
+                "costante",
+                "universale",
+                "newton"
+            ]
+        },
+        {
+            "id": "grav_012",
+            "domanda": "In un’orbita circolare, la velocità del satellite è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Moto circolare",
+            "opzioni": [
+                "Diretta verso il centro",
+                "Tangente alla traiettoria",
+                "Sempre nulla",
+                "Sempre verticale verso l’alto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La velocità istantanea in un moto circolare è tangente alla traiettoria.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "orbita",
+                "velocità",
+                "tangente",
+                "circolare"
+            ]
+        },
+        {
+            "id": "grav_013",
+            "domanda": "Che cosa significa “forza centrale”?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Forze centrali",
+            "opzioni": [
+                "Forza sempre uguale",
+                "Forza sempre perpendicolare alla velocità",
+                "Forza diretta verso un punto fisso (il centro)",
+                "Forza dovuta solo al magnetismo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Una forza centrale è diretta lungo il raggio verso (o da) un centro fisso.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "forza",
+                "centrale",
+                "raggio",
+                "orbite"
+            ]
+        },
+        {
+            "id": "grav_014",
+            "domanda": "Prima legge di Keplero: le orbite dei pianeti sono:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Prima legge",
+            "opzioni": [
+                "Cerchi con il Sole al centro",
+                "Ellissi con il Sole in un fuoco",
+                "Parabole con il Sole nel vertice",
+                "Rette con velocità costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Keplero 1: i pianeti descrivono ellissi con il Sole in uno dei fuochi.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "keplero",
+                "ellisse",
+                "fuoco",
+                "orbite"
+            ]
+        },
+        {
+            "id": "grav_015",
+            "domanda": "Seconda legge di Keplero riguarda:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Seconda legge",
+            "opzioni": [
+                "Forma dell’orbita",
+                "Aree uguali in tempi uguali",
+                "Rapporto T^2/r^3",
+                "Velocità di fuga"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Keplero 2: il raggio vettore spazza aree uguali in tempi uguali.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "keplero",
+                "aree",
+                "tempi",
+                "raggio"
+            ]
+        },
+        {
+            "id": "grav_016",
+            "domanda": "Terza legge di Keplero mette in relazione:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Terza legge",
+            "opzioni": [
+                "Massa e peso",
+                "Periodo e distanza media (semiasse)",
+                "Energia e velocità",
+                "Forza e accelerazione"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Keplero 3: (T^2) è proporzionale a (a^3) (distanza media/semiasse maggiore).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "keplero",
+                "periodo",
+                "distanza",
+                "proporzione"
+            ]
+        },
+        {
+            "id": "grav_017",
+            "domanda": "Perché gli astronauti in orbita sembrano “inermi” (assenza di peso)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Microgravità",
+            "opzioni": [
+                "Perché non c’è gravità",
+                "Perché sono in caduta libera",
+                "Perché la massa diventa zero",
+                "Perché l’aria li sostiene"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In orbita sono in caduta libera continua: la gravità c’è, ma manca la reazione del suolo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "orbita",
+                "caduta libera",
+                "microgravità",
+                "peso apparente"
+            ]
+        },
+        {
+            "id": "grav_018",
+            "domanda": "La velocità di fuga è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Velocità di fuga",
+            "opzioni": [
+                "La velocità per restare in orbita circolare",
+                "La velocità minima per non ricadere (senza propulsione)",
+                "La velocità massima possibile",
+                "La velocità del suono"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "È la velocità minima per allontanarsi fino all’infinito senza ulteriore spinta (trascurando attriti).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "velocità di fuga",
+                "minima",
+                "infinito",
+                "energia"
+            ]
+        },
+        {
+            "id": "grav_019",
+            "domanda": "Le maree sulla Terra sono dovute principalmente a:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Maree",
+            "opzioni": [
+                "Vento solare",
+                "Differenze del campo gravitazionale lunare (e solare)",
+                "Attrito dell’aria",
+                "Rotazione del campo magnetico"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le maree nascono dall’azione differenziale della gravità (soprattutto della Luna) su parti diverse della Terra.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "maree",
+                "luna",
+                "campo differenziale",
+                "gravità"
+            ]
+        },
+        {
+            "id": "grav_020",
+            "domanda": "Come varia l’intensità del campo gravitazionale g con la distanza r dal centro della Terra (approssimando la Terra come sfera)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Dipendenza da r",
+            "opzioni": [
+                "Proporzionale a r",
+                "Proporzionale a r^2",
+                "Inversamente proporzionale a r^2",
+                "Costante"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "All'esterno: (g=GM/r^2), quindi decresce come 1/r^2.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "campo",
+                "g",
+                "1/r^2",
+                "terra"
+            ]
+        },
+        {
+            "id": "grav_021",
+            "domanda": "Se r diminuisce, la forza gravitazionale tra due masse (m1 e m2 costanti) tende a:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Dipendenza dalla distanza",
+            "opzioni": [
+                "Diminuire",
+                "Aumentare",
+                "Restare uguale",
+                "Diventare negativa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con F ∝ 1/r^2, diminuendo r la forza aumenta.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "forza",
+                "distanza",
+                "aumento",
+                "inverso"
+            ]
+        },
+        {
+            "id": "grav_022",
+            "domanda": "Unità di misura del peso (forza) nel SI:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Unità SI",
+            "opzioni": [
+                "kg",
+                "J",
+                "N",
+                "W"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Il peso è una forza e si misura in newton (N).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "newton",
+                "unità",
+                "forza",
+                "SI"
+            ]
+        },
+        {
+            "id": "grav_023",
+            "domanda": "Unità di misura della massa nel SI:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Unità SI",
+            "opzioni": [
+                "N",
+                "kg",
+                "J",
+                "Pa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La massa nel Sistema Internazionale si misura in chilogrammi (kg).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "massa",
+                "kg",
+                "SI",
+                "unità"
+            ]
+        },
+        {
+            "id": "grav_024",
+            "domanda": "A parità di r, se raddoppio m1 nella legge di Newton, la forza F:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Proporzionalità alle masse",
+            "opzioni": [
+                "Raddoppia",
+                "Dimezza",
+                "Quadruplica",
+                "Diventa 1/4"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "F è proporzionale a m1: raddoppiando m1 raddoppia F.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "massa",
+                "proporzionalità",
+                "forza",
+                "newton"
+            ]
+        },
+        {
+            "id": "grav_025",
+            "domanda": "La forza gravitazionale che la Terra esercita su un oggetto è uguale (in modulo) alla forza che l’oggetto esercita sulla Terra perché:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Terza legge di Newton",
+            "opzioni": [
+                "È un caso",
+                "Vale la 3ª legge di Newton (azione-reazione)",
+                "Dipende da G",
+                "Dipende dalla distanza"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le forze tra due corpi sono uguali e opposte (azione e reazione).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "azione-reazione",
+                "terza legge",
+                "forze",
+                "reciproche"
+            ]
+        },
+        {
+            "id": "grav_026",
+            "domanda": "In un’orbita ellittica attorno al Sole, il pianeta è più veloce:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Velocità lungo l’orbita",
+            "opzioni": [
+                "All’afelio",
+                "Al perielio",
+                "Sempre uguale",
+                "Solo nei nodi"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "È più veloce al perielio (più vicino al Sole), coerente con la 2ª legge di Keplero.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "perielio",
+                "afelio",
+                "velocità",
+                "keplero"
+            ]
+        },
+        {
+            "id": "grav_027",
+            "domanda": "Un satellite geostazionario ha periodo:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Geostazionaria",
+            "opzioni": [
+                "1 ora",
+                "24 ore circa",
+                "1 anno",
+                "Dipende dalla massa del satellite"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per restare sopra lo stesso punto della Terra deve avere lo stesso periodo di rotazione terrestre (circa 24 h).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "geostazionario",
+                "periodo",
+                "24h",
+                "terra"
+            ]
+        },
+        {
+            "id": "grav_028",
+            "domanda": "In prima approssimazione, il campo gravitazionale di una massa sferica (esternamente) equivale a quello di:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Sfera come punto",
+            "opzioni": [
+                "Una linea di massa",
+                "Una massa puntiforme al centro",
+                "Un disco uniforme",
+                "Due masse ai poli"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "All’esterno di una sfera, il campo è come se tutta la massa fosse concentrata nel centro.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "sfera",
+                "massa puntiforme",
+                "centro",
+                "campo"
+            ]
+        },
+        {
+            "id": "grav_029",
+            "domanda": "Se non c’è resistenza dell’aria, in caduta libera tutti i corpi vicino alla Terra hanno (circa):",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Caduta libera",
+            "opzioni": [
+                "Accelerazioni diverse",
+                "La stessa accelerazione g",
+                "Velocità sempre uguale",
+                "Forze nulle"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L’accelerazione di gravità è la stessa per tutti i corpi (idealmente) vicino alla superficie terrestre.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "caduta libera",
+                "g",
+                "accelerazione",
+                "galileo"
+            ]
+        },
+        {
+            "id": "grav_030",
+            "domanda": "Quale tra queste grandezze dipende dalla massa del corpo di prova m?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Dipendenze",
+            "opzioni": [
+                "g",
+                "v orbitale (a r fissato)",
+                "Peso P",
+                "r"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Il peso P = m·g dipende dalla massa del corpo; g e v orbitale dipendono dal corpo centrale e da r.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "peso",
+                "massa",
+                "dipendenza",
+                "g"
+            ]
+        },
+        {
+            "id": "grav_031",
+            "domanda": "La forza gravitazionale diminuisce rapidamente con la distanza perché:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Dipendenza 1/r^2",
+            "opzioni": [
+                "È proporzionale a r",
+                "È proporzionale a 1/r",
+                "È proporzionale a 1/r^2",
+                "È proporzionale a r^2"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La legge di Newton è un’inverso del quadrato: F ∝ 1/r^2.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "1/r^2",
+                "distanza",
+                "legge",
+                "newton"
+            ]
+        },
+        {
+            "id": "grav_032",
+            "domanda": "In un’orbita circolare stabile, la forza gravitazionale fornisce:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Centripeta",
+            "opzioni": [
+                "Forza centrifuga reale",
+                "Forza centripeta",
+                "Forza di attrito",
+                "Spinta di galleggiamento"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La gravità è la forza centripeta che curva la traiettoria del satellite.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "centripeta",
+                "orbita",
+                "gravità",
+                "circolare"
+            ]
+        },
+        {
+            "id": "grav_033",
+            "domanda": "Quale affermazione è corretta?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Peso apparente",
+            "opzioni": [
+                "In ascensore in accelerazione verso l’alto il peso apparente diminuisce",
+                "In ascensore in accelerazione verso l’alto il peso apparente aumenta",
+                "Il peso apparente non cambia mai",
+                "Il peso apparente è sempre zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Accelerando verso l’alto, la reazione vincolare aumenta e con essa il peso apparente.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "peso apparente",
+                "ascensore",
+                "accelerazione",
+                "reazione"
+            ]
+        },
+        {
+            "id": "grav_034",
+            "domanda": "La gravità agisce anche nello spazio vicino alla Terra (es. ISS) perché:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Gravità in orbita",
+            "opzioni": [
+                "G vale solo sulla Terra",
+                "La distanza è ancora relativamente piccola",
+                "La massa dell’ISS annulla g",
+                "Il vuoto elimina la gravità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "A poche centinaia di km di quota, r è poco maggiore di R terrestre: g è ancora significativa.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "ISS",
+                "quota",
+                "gravità",
+                "distanza"
+            ]
+        },
+        {
+            "id": "grav_035",
+            "domanda": "Un corpo in orbita attorno alla Terra sta “cadendo” perché:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Concetto di orbita",
+            "opzioni": [
+                "Si muove troppo lentamente",
+                "È in caduta libera ma con velocità tangenziale",
+                "La gravità è nulla",
+                "Ha massa negativa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "È una caduta libera continua: la velocità tangenziale fa “mancare” il suolo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "orbita",
+                "caduta libera",
+                "velocità tangenziale",
+                "satellite"
+            ]
+        },
+        {
+            "id": "grav_036",
+            "domanda": "Se un pianeta è più lontano dal Sole, in media il suo periodo di rivoluzione tende a essere:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Terza legge qualitativa",
+            "opzioni": [
+                "Più breve",
+                "Più lungo",
+                "Uguale",
+                "Indipendente dalla distanza"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da Keplero 3, maggiore distanza media implica periodo maggiore.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "periodo",
+                "distanza",
+                "keplero",
+                "rivoluzione"
+            ]
+        },
+        {
+            "id": "grav_037",
+            "domanda": "La costante G nella legge di Newton serve a:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Costante di proporzionalità",
+            "opzioni": [
+                "Cambiare le unità",
+                "Rendere la formula dimensionalmente corretta e valida",
+                "Eliminare la dipendenza da r",
+                "Rendere F indipendente dalle masse"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "G è la costante di proporzionalità che rende la relazione quantitativa corretta.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "G",
+                "costante",
+                "proporzionalità",
+                "unità"
+            ]
+        },
+        {
+            "id": "grav_038",
+            "domanda": "Il campo gravitazionale in un punto è una grandezza:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Vettori",
+            "opzioni": [
+                "Scalare",
+                "Vettoriale",
+                "Sempre nulla",
+                "Solo positiva"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il campo gravitazionale ha modulo e direzione (verso la massa che lo genera).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "campo",
+                "vettore",
+                "direzione",
+                "modulo"
+            ]
+        },
+        {
+            "id": "grav_039",
+            "domanda": "La forza gravitazionale tra due corpi aumenta se:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Dipendenze",
+            "opzioni": [
+                "Aumenta r",
+                "Diminuisce r",
+                "Diminuisce m1",
+                "Diminuisce m2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Riducendo la distanza r la forza aumenta, perché F ∝ 1/r^2.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "forza",
+                "distanza",
+                "aumento",
+                "1/r^2"
+            ]
+        },
+        {
+            "id": "grav_040",
+            "domanda": "In quale situazione il peso apparente può diventare zero?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Peso apparente",
+            "opzioni": [
+                "Fermo su un tavolo",
+                "In caduta libera",
+                "In moto rettilineo uniforme",
+                "In rotazione su una giostra"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In caduta libera la reazione vincolare può annullarsi: il peso apparente è zero.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "peso apparente",
+                "caduta libera",
+                "reazione",
+                "zero"
+            ]
+        },
+        {
+            "id": "grav_041",
+            "domanda": "Due masse uguali M sono a distanza r. Se una massa raddoppia e la distanza dimezza, il rapporto F'/F vale:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Variazioni parametri",
+            "opzioni": [
+                "2",
+                "4",
+                "8",
+                "16"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "F ∝ m1 m2 / r^2: raddoppio una massa (×2) e dimezzo r (×4) → totale ×8; ma anche l’altra massa era M: resta uguale, quindi ×8. Attenzione: r dimezzata dà ×4, massa raddoppiata ×2, totale ×8; opzione corretta è 8.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "proporzioni",
+                "massa",
+                "distanza",
+                "1/r^2"
+            ]
+        },
+        {
+            "id": "grav_042",
+            "domanda": "(Correzione ragionata) Nel quesito precedente, qual è il rapporto corretto F'/F?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Variazioni parametri",
+            "opzioni": [
+                "2",
+                "4",
+                "8",
+                "16"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "F'/F = (2)/( (1/2)^2 ) = 2 / (1/4) = 8.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "rapporto",
+                "scaling",
+                "newton",
+                "forza"
+            ]
+        },
+        {
+            "id": "grav_043",
+            "domanda": "Calcola g a distanza r = 2R dal centro terrestre (R raggio terrestre), trascurando rotazione:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "g con la quota",
+            "opzioni": [
+                "g/2",
+                "g/3",
+                "g/4",
+                "2g"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "g(r)=GM/r^2 → a 2R vale g/4.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "g",
+                "quota",
+                "1/r^2",
+                "terra"
+            ]
+        },
+        {
+            "id": "grav_044",
+            "domanda": "Se la massa della Terra raddoppiasse (raggio invariato), g in superficie diventerebbe:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "g=GM/R^2",
+            "opzioni": [
+                "g/2",
+                "g",
+                "2g",
+                "4g"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "g=GM/R^2: raddoppiando M raddoppia g.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "g",
+                "massa terra",
+                "GM/R^2",
+                "superficie"
+            ]
+        },
+        {
+            "id": "grav_045",
+            "domanda": "Un satellite in orbita circolare a r ha velocità orbitale v. Se passa a orbita circolare di raggio 4r (stesso corpo centrale), v diventa:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "v orbitale",
+            "opzioni": [
+                "2v",
+                "v",
+                "v/2",
+                "v/4"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "v=√(GM/r) → a 4r: v' = √(GM/4r)=v/2.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "velocità orbitale",
+                "radice",
+                "raggio",
+                "satellite"
+            ]
+        },
+        {
+            "id": "grav_046",
+            "domanda": "In orbita circolare, il periodo T dipende dal raggio r come:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Periodo orbitale",
+            "opzioni": [
+                "T ∝ r",
+                "T ∝ r^2",
+                "T ∝ r^(3/2)",
+                "T ∝ 1/r"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Da T=2π√(r^3/GM), quindi T ∝ r^(3/2).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "periodo",
+                "r^(3/2)",
+                "orbita",
+                "keplero"
+            ]
+        },
+        {
+            "id": "grav_047",
+            "domanda": "Se raddoppio il raggio dell’orbita circolare, il periodo T cambia di un fattore:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Scala del periodo",
+            "opzioni": [
+                "2",
+                "√2",
+                "2√2",
+                "4"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "T ∝ r^(3/2): (2r)^(3/2)=2^(3/2) r^(3/2)=2√2 ·T.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "scaling",
+                "periodo",
+                "orbita",
+                "potenza"
+            ]
+        },
+        {
+            "id": "grav_048",
+            "domanda": "La velocità di fuga da un corpo di massa M e raggio R (senza atmosfera) dipende da:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Velocità di fuga",
+            "opzioni": [
+                "Solo da M",
+                "Solo da R",
+                "Da M e R",
+                "Dalla massa del razzo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "v_f = √(2GM/R): dipende da M e R del corpo centrale, non dalla massa dell’oggetto che fugge.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "velocità di fuga",
+                "2GM/R",
+                "massa",
+                "raggio"
+            ]
+        },
+        {
+            "id": "grav_049",
+            "domanda": "In un campo gravitazionale, il lavoro della forza peso tra quota h1 e h2 (con h2>h1, vicino alla Terra) è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Lavoro del peso",
+            "opzioni": [
+                "Positivo",
+                "Negativo",
+                "Nullo",
+                "Dipende solo dalla massa terrestre"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Salendo, lo spostamento è opposto alla forza peso: lavoro negativo (W = -m g Δh).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lavoro",
+                "peso",
+                "negativo",
+                "quota"
+            ]
+        },
+        {
+            "id": "grav_050",
+            "domanda": "Se un corpo cade da fermo da altezza h (senza attrito), la sua energia cinetica al suolo vale:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Conservazione energia",
+            "opzioni": [
+                "mgh",
+                "(1/2)mgh",
+                "2mgh",
+                "Zero"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per conservazione dell’energia: perdita di potenziale mgh = guadagno di cinetica.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "mgh",
+                "caduta",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "grav_051",
+            "domanda": "Perché la massa del satellite non compare nella formula del periodo orbitale (per un dato r)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Dipendenza dalla massa",
+            "opzioni": [
+                "Perché G cambia",
+                "Perché la massa del satellite si semplifica nelle equazioni",
+                "Perché la gravità non agisce sui satelliti",
+                "Perché l’orbita è ellittica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nell’equilibrio tra forza gravitazionale e centripeta, la massa del satellite compare in entrambi i membri e si semplifica.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "semplificazione",
+                "centripeta",
+                "gravitazione",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_052",
+            "domanda": "Una sonda raddoppia la sua distanza dal Sole. L’intensità della forza gravitazionale del Sole sulla sonda diventa:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Forza Sole-sonda",
+            "opzioni": [
+                "2 volte",
+                "1/2",
+                "1/4",
+                "4 volte"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "F ∝ 1/r^2: r→2r implica F→F/4.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "sole",
+                "sonda",
+                "1/r^2",
+                "forza"
+            ]
+        },
+        {
+            "id": "grav_053",
+            "domanda": "Se un pianeta ha periodo orbitale 8 volte quello di un altro attorno allo stesso Sole, il rapporto tra le distanze medie a/a0 è circa:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Terza legge quantitativa",
+            "opzioni": [
+                "2",
+                "4",
+                "8",
+                "16"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Keplero 3: T^2 ∝ a^3 → (8)^2 = 64 = (a/a0)^3 → a/a0 = 4.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "keplero 3",
+                "periodo",
+                "distanza",
+                "proporzione"
+            ]
+        },
+        {
+            "id": "grav_054",
+            "domanda": "In un’orbita ellittica, quale grandezza resta costante (in assenza di forze non conservative)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Conservazioni",
+            "opzioni": [
+                "La velocità",
+                "Il momento angolare",
+                "La distanza dal Sole",
+                "L’energia potenziale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con forza centrale (gravità), il momento angolare si conserva.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "momento angolare",
+                "conservazione",
+                "forza centrale",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_055",
+            "domanda": "Un oggetto di massa m viene portato da r a 2r dal centro di un pianeta (massa M). Il modulo dell’energia potenziale gravitazionale U (con U=0 a infinito) diventa:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "U = -GMm/r",
+            "opzioni": [
+                "Doppio",
+                "Metà",
+                "Quattro volte",
+                "Invariato"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "U = -GMm/r: a 2r diventa U/2 (meno negativa in modulo dimezza).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "potenziale",
+                "-GMm/r",
+                "modulo",
+                "distanza"
+            ]
+        },
+        {
+            "id": "grav_056",
+            "domanda": "Quale tra queste affermazioni su g è più corretta?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Definizione",
+            "opzioni": [
+                "g è la stessa cosa di G",
+                "g dipende da M e r del corpo centrale",
+                "g dipende dalla massa dell’oggetto di prova",
+                "g è uguale a 0 nello spazio"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "g(r)=GM/r^2 dipende dalla massa del corpo centrale e dalla distanza dal suo centro.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "g",
+                "GM/r^2",
+                "dipendenza",
+                "distanza"
+            ]
+        },
+        {
+            "id": "grav_057",
+            "domanda": "Se la distanza Terra-Luna aumentasse, l’ampiezza delle maree dovute alla Luna tenderebbe a:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Maree e distanza",
+            "opzioni": [
+                "Aumentare",
+                "Diminuire",
+                "Restare uguale",
+                "Invertire segno"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L’effetto mareale dipende fortemente dalla distanza (decresce rapidamente con r).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "maree",
+                "distanza",
+                "luna",
+                "effetto"
+            ]
+        },
+        {
+            "id": "grav_058",
+            "domanda": "Un satellite in orbita circolare ha energia meccanica totale (E) che risulta:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Orbita legata",
+            "opzioni": [
+                "Positiva",
+                "Negativa",
+                "Zero",
+                "Dipende dalla scelta dello zero del tempo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In un’orbita legata, scegliendo U=0 a infinito, l’energia totale è negativa.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia totale",
+                "orbita",
+                "negativa",
+                "legata"
+            ]
+        },
+        {
+            "id": "grav_059",
+            "domanda": "Quale relazione tra forza gravitazionale e campo g è corretta per una massa di prova m?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "F = m g",
+            "opzioni": [
+                "F = g/m",
+                "F = m·g",
+                "g = m·F",
+                "g = F·m"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per definizione, la forza su una massa m è F = m·g.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "F=mg",
+                "campo",
+                "forza",
+                "massa"
+            ]
+        },
+        {
+            "id": "grav_060",
+            "domanda": "Un pianeta A ha stesso raggio di B ma massa doppia. Il rapporto delle velocità di fuga v_fA/v_fB è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Velocità di fuga scaling",
+            "opzioni": [
+                "2",
+                "√2",
+                "1/2",
+                "1/√2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "v_f ∝ √(M/R): se M raddoppia e R uguale → v_f moltiplica per √2.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "velocità di fuga",
+                "radice",
+                "massa",
+                "raggio"
+            ]
+        },
+        {
+            "id": "grav_061",
+            "domanda": "Quale tra queste è una conseguenza della 2ª legge di Keplero?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Conseguenze",
+            "opzioni": [
+                "Il pianeta accelera avvicinandosi al Sole",
+                "Il pianeta ha velocità costante",
+                "L’orbita è sempre circolare",
+                "Il periodo non dipende dalla distanza"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Aree uguali in tempi uguali implica velocità maggiore vicino al Sole (perielio).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "keplero 2",
+                "velocità",
+                "perielio",
+                "aree"
+            ]
+        },
+        {
+            "id": "grav_062",
+            "domanda": "Un oggetto di massa m viene spostato lungo una traiettoria chiusa in un campo gravitazionale statico (senza attriti). Il lavoro totale della forza gravitazionale è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Forza conservativa",
+            "opzioni": [
+                "Positivo",
+                "Negativo",
+                "Dipende dal percorso",
+                "Zero"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "La gravità è conservativa: lungo un percorso chiuso il lavoro totale è nullo.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "conservativa",
+                "percorso chiuso",
+                "lavoro",
+                "gravità"
+            ]
+        },
+        {
+            "id": "grav_063",
+            "domanda": "Se un satellite passa a un’orbita più alta (r maggiore), la sua velocità orbitale in orbita circolare:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Velocità vs r",
+            "opzioni": [
+                "Aumenta",
+                "Diminuisce",
+                "Resta uguale",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "v=√(GM/r): aumentando r, v diminuisce.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "orbita",
+                "velocità",
+                "GM/r",
+                "quota"
+            ]
+        },
+        {
+            "id": "grav_064",
+            "domanda": "La terza legge di Keplero per corpi che orbitano lo stesso centro afferma che:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "T^2/a^3 costante",
+            "opzioni": [
+                "T/a è costante",
+                "T^2/a^3 è costante",
+                "T^3/a^2 è costante",
+                "T·a è costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per lo stesso corpo centrale, il rapporto T^2/a^3 è costante.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "T^2/a^3",
+                "costante",
+                "keplero 3",
+                "orbite"
+            ]
+        },
+        {
+            "id": "grav_065",
+            "domanda": "Per un’orbita circolare di raggio r, quale espressione è corretta per la forza centripeta richiesta?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Centripeta",
+            "opzioni": [
+                "F_c = m v r",
+                "F_c = m v^2 / r",
+                "F_c = m r^2 / v",
+                "F_c = m g r"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel moto circolare uniforme F_c = m v^2 / r.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "centripeta",
+                "mv^2/r",
+                "moto circolare",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_066",
+            "domanda": "Per un satellite in orbita circolare, uguagliando gravità e centripeta si ottiene:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Derivazione v",
+            "opzioni": [
+                "v = √(GM/r)",
+                "v = √(GMr)",
+                "v = GM/r",
+                "v = r/GM"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Da GMm/r^2 = m v^2 / r si ricava v = √(GM/r).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "derivazione",
+                "velocità orbitale",
+                "GM/r",
+                "uguaglianza"
+            ]
+        },
+        {
+            "id": "grav_067",
+            "domanda": "Se un pianeta ha raggio doppio ma stessa massa, la gravità in superficie (g) diventa:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "g scaling con R",
+            "opzioni": [
+                "2g",
+                "g",
+                "g/2",
+                "g/4"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "g=GM/R^2: se R raddoppia, g diventa g/4.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "g",
+                "raggio",
+                "GM/R^2",
+                "scaling"
+            ]
+        },
+        {
+            "id": "grav_068",
+            "domanda": "L’energia potenziale gravitazionale tra due masse m e M a distanza r (con zero a infinito) è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Formula U",
+            "opzioni": [
+                "U = +GMm/r",
+                "U = -GMm/r",
+                "U = GMm r",
+                "U = -GMr/m"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con U(∞)=0, l’energia potenziale è U = -GMm/r.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "U",
+                "-GMm/r",
+                "potenziale",
+                "infinito"
+            ]
+        },
+        {
+            "id": "grav_069",
+            "domanda": "Quale affermazione è vera riguardo alla velocità di fuga?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Proprietà v_f",
+            "opzioni": [
+                "Dipende dalla massa dell’oggetto lanciato",
+                "Dipende solo dal pianeta (M e R)",
+                "È uguale alla velocità orbitale",
+                "È sempre minore della velocità orbitale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "v_f dipende da M e R del corpo centrale, non dalla massa del corpo di prova.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "v_f",
+                "indipendenza massa",
+                "pianeta",
+                "2GM/R"
+            ]
+        },
+        {
+            "id": "grav_070",
+            "domanda": "Un satellite passa da orbita circolare r a orbita circolare r/2. Il suo periodo T diventa:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Periodo scaling",
+            "opzioni": [
+                "T/2",
+                "T/√2",
+                "T/(2√2)",
+                "2T"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "T ∝ r^(3/2): (r/2)^(3/2)=T/ (2^(3/2)) = T/(2√2).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "periodo",
+                "scaling",
+                "r^(3/2)",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_071",
+            "domanda": "Quale tra queste grandezze resta costante per un pianeta in orbita attorno al Sole (modello a due corpi) ?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Conservazione energia",
+            "opzioni": [
+                "Energia meccanica totale",
+                "Energia cinetica",
+                "Distanza dal Sole",
+                "Velocità"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In assenza di dissipazioni, l’energia meccanica totale del sistema si conserva.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "conservazione",
+                "orbita",
+                "due corpi"
+            ]
+        },
+        {
+            "id": "grav_072",
+            "domanda": "Se un corpo viene lanciato verticalmente verso l’alto, trascurando attrito, la sua energia meccanica:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Conservazione energia",
+            "opzioni": [
+                "Aumenta",
+                "Diminuisce",
+                "Resta costante",
+                "Diventa zero al culmine"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Senza attrito l’energia meccanica si conserva: cambia forma tra cinetica e potenziale.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "conservazione",
+                "lancio verticale",
+                "cinetica",
+                "potenziale"
+            ]
+        },
+        {
+            "id": "grav_073",
+            "domanda": "Quale tra questi è un modo corretto di interpretare g?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Interpretazione fisica",
+            "opzioni": [
+                "Forza per unità di massa",
+                "Energia per unità di massa",
+                "Massa per unità di forza",
+                "Tempo per unità di distanza"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "g è l’accelerazione e anche la forza per unità di massa: g = F/m.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "g",
+                "F/m",
+                "forza specifica",
+                "accelerazione"
+            ]
+        },
+        {
+            "id": "grav_074",
+            "domanda": "Due satelliti orbitano la stessa Terra in orbite circolari con raggi r1 e r2. Se r2 = 9 r1, allora T2/T1 vale:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Keplero per satelliti",
+            "opzioni": [
+                "3",
+                "9",
+                "27",
+                "√9=3"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "T ∝ r^(3/2): (9)^(3/2)=9·√9=27.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "periodo",
+                "r^(3/2)",
+                "satelliti",
+                "rapporto"
+            ]
+        },
+        {
+            "id": "grav_075",
+            "domanda": "Un oggetto viene spostato da r a 3r. Il modulo della forza gravitazionale diventa:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Scaling 1/r^2",
+            "opzioni": [
+                "1/3",
+                "1/6",
+                "1/9",
+                "3"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "F ∝ 1/r^2: r→3r implica F→F/9.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza",
+                "1/r^2",
+                "triplica",
+                "rapporto"
+            ]
+        },
+        {
+            "id": "grav_076",
+            "domanda": "Un satellite in orbita circolare: se aumenta r, l’energia potenziale U (con zero a infinito) diventa:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "U vs r",
+            "opzioni": [
+                "Più negativa",
+                "Meno negativa",
+                "Invariata",
+                "Sempre zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "U = -GMm/r: aumentando r, U aumenta verso 0 (meno negativa).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "U",
+                "-GMm/r",
+                "meno negativa",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_077",
+            "domanda": "Per un’orbita circolare, confronta v_f (fuga) e v_orb (circolare) allo stesso r:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "v_f vs v_orb",
+            "opzioni": [
+                "v_f = v_orb",
+                "v_f = √2 v_orb",
+                "v_f = 2 v_orb",
+                "v_f = v_orb/√2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "v_orb=√(GM/r), v_f=√(2GM/r)=√2·v_orb.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "sqrt2",
+                "fuga",
+                "orbita",
+                "relazione"
+            ]
+        },
+        {
+            "id": "grav_078",
+            "domanda": "Perché in un’orbita ellittica l’energia cinetica non è costante?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Scambio energia",
+            "opzioni": [
+                "Perché G cambia",
+                "Perché varia r e quindi varia U",
+                "Perché la massa del pianeta cambia",
+                "Perché la forza non è centrale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Varia la distanza r: cambia l’energia potenziale e la cinetica si adatta per conservare l’energia totale.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia cinetica",
+                "r variabile",
+                "ellisse",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "grav_079",
+            "domanda": "Un pianeta orbita con semiasse maggiore a. Se a raddoppia, il periodo T cambia di fattore:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Terza legge",
+            "opzioni": [
+                "2",
+                "√2",
+                "2√2",
+                "4"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "T ∝ a^(3/2): raddoppiare a dà fattore 2^(3/2)=2√2.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "keplero 3",
+                "a^(3/2)",
+                "periodo",
+                "scaling"
+            ]
+        },
+        {
+            "id": "grav_080",
+            "domanda": "Un oggetto è in orbita circolare bassa. Se perde energia (attrito tenue), cosa succede tipicamente all’orbita?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Decadimento orbitale",
+            "opzioni": [
+                "Sale a quota maggiore",
+                "Resta identica",
+                "Scende a quota minore",
+                "Diventa perfettamente ellittica con a maggiore"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Perdere energia in un’orbita legata porta a un’orbita più “bassa” (r minore) fino al rientro.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "attrito",
+                "energia",
+                "decadimento",
+                "rientro"
+            ]
+        },
+        {
+            "id": "grav_081",
+            "domanda": "Per un’orbita circolare di raggio r attorno a massa M, l’energia meccanica totale E del satellite (massa m) è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia orbita circolare",
+            "opzioni": [
+                "E = -GMm/(2r)",
+                "E = -GMm/r",
+                "E = +GMm/(2r)",
+                "E = 0"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In orbita circolare: K=GMm/(2r), U=-GMm/r, quindi E=K+U=-GMm/(2r).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "energia totale",
+                "orbita circolare",
+                "-GMm/2r",
+                "legata"
+            ]
+        },
+        {
+            "id": "grav_082",
+            "domanda": "La formula di vis-viva per un’orbita ellittica (massa centrale M, distanza istantanea r, semiasse maggiore a) è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Vis-viva",
+            "opzioni": [
+                "v^2 = GM(2/r - 1/a)",
+                "v^2 = GM(1/r - 2/a)",
+                "v^2 = GM(r/a)",
+                "v^2 = 2GM/r + GM/a"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per orbite kepleriane vale v^2 = GM(2/r - 1/a).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "vis-viva",
+                "orbita ellittica",
+                "velocità",
+                "keplero"
+            ]
+        },
+        {
+            "id": "grav_083",
+            "domanda": "In un’orbita ellittica, dove l’energia potenziale è più bassa (più negativa)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Potenziale lungo orbita",
+            "opzioni": [
+                "All’afelio",
+                "Al perielio",
+                "È costante",
+                "Nei due fuochi"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "U=-GMm/r: al perielio r è minore, quindi U è più negativa.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "potenziale",
+                "perielio",
+                "r minimo",
+                "-GMm/r"
+            ]
+        },
+        {
+            "id": "grav_084",
+            "domanda": "Un pianeta uniforme (densità costante) ha campo gravitazionale interno (r<R) che varia come:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Campo interno sfera",
+            "opzioni": [
+                "g ∝ 1/r^2",
+                "g ∝ 1/r",
+                "g ∝ r",
+                "g costante"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Dentro una sfera uniforme, la massa “efficace” cresce come r^3 e g=GM(r)/r^2 ∝ r.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "sfera uniforme",
+                "campo interno",
+                "proporzionale a r",
+                "gravità"
+            ]
+        },
+        {
+            "id": "grav_085",
+            "domanda": "Per la stessa sfera uniforme, il valore di g al centro (r=0) è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Centro della sfera",
+            "opzioni": [
+                "Massimo",
+                "Minimo non nullo",
+                "Zero",
+                "Infinito"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con g ∝ r all’interno, al centro r=0 quindi g=0.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "centro",
+                "g=0",
+                "sfera uniforme",
+                "simmetria"
+            ]
+        },
+        {
+            "id": "grav_086",
+            "domanda": "Se definisci U(∞)=0, per quale condizione un oggetto è “non legato” gravitazionalmente a un pianeta?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia di legame",
+            "opzioni": [
+                "E totale < 0",
+                "E totale = 0",
+                "E totale > 0",
+                "U < 0"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Se l’energia totale è positiva, l’oggetto può raggiungere l’infinito con velocità residua: non è legato.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "energia totale",
+                "legame",
+                "E>0",
+                "infinito"
+            ]
+        },
+        {
+            "id": "grav_087",
+            "domanda": "La velocità di fuga si ottiene imponendo (a r=R):",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Derivazione v_f",
+            "opzioni": [
+                "K = U",
+                "K + U = 0",
+                "K - U = 0",
+                "U = 0 sempre"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per fuga “appena”: energia totale iniziale K+U = 0 (con U=0 a infinito).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "v_f",
+                "energia",
+                "K+U=0",
+                "derivazione"
+            ]
+        },
+        {
+            "id": "grav_088",
+            "domanda": "Una cometa in orbita molto eccentrica: in quale punto ha massima energia cinetica?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Cinetica lungo orbita",
+            "opzioni": [
+                "All’afelio",
+                "Al perielio",
+                "A metà orbita",
+                "È costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Al perielio r è minimo, U è più negativa e quindi K deve essere massima (E totale costante).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "cometa",
+                "perielio",
+                "cinetica massima",
+                "energia"
+            ]
+        },
+        {
+            "id": "grav_089",
+            "domanda": "In un’orbita ellittica, il momento angolare specifico (per unità di massa) si collega alla velocità areolare perché:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Aree e momento angolare",
+            "opzioni": [
+                "Sono indipendenti",
+                "Sono proporzionali (aree uguali ↔ L costante)",
+                "Dipende da attrito",
+                "Dipende dal numero di pianeti"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La 2ª legge di Keplero equivale alla conservazione del momento angolare in una forza centrale.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "velocità areolare",
+                "momento angolare",
+                "keplero 2",
+                "forza centrale"
+            ]
+        },
+        {
+            "id": "grav_090",
+            "domanda": "Due pianeti orbitano lo stesso Sole con semiasse maggiore a1 e a2. Se a2/a1 = 5, allora T2/T1 è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Terza legge quantitativa",
+            "opzioni": [
+                "5",
+                "√5",
+                "5√5",
+                "√125"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "T ∝ a^(3/2): (5)^(3/2)=√(5^3)=√125.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "keplero 3",
+                "a^(3/2)",
+                "rapporti",
+                "periodo"
+            ]
+        },
+        {
+            "id": "grav_091",
+            "domanda": "Per quale motivo in prossimità della Terra si usa spesso U ≈ mgh invece di U=-GMm/r?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Approssimazione vicino alla superficie",
+            "opzioni": [
+                "Perché GMm/r è sbagliata",
+                "Perché per h<<R la variazione di U si linearizza",
+                "Perché g è zero",
+                "Perché G dipende da h"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per variazioni piccole di quota (h<<R), la differenza di potenziale si approssima con ΔU ≈ m g h.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "mgh",
+                "approssimazione",
+                "h<<R",
+                "linearizzazione"
+            ]
+        },
+        {
+            "id": "grav_092",
+            "domanda": "A quale distanza dal centro terrestre vale g = g0/9 (con g0 in superficie, r=R)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Problema inverso su g",
+            "opzioni": [
+                "r=2R",
+                "r=3R",
+                "r=9R",
+                "r=R/3"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "g(r)=g0 (R^2/r^2). Imporre 1/9 → r^2=9R^2 → r=3R.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "g0/9",
+                "1/r^2",
+                "distanza",
+                "terra"
+            ]
+        },
+        {
+            "id": "grav_093",
+            "domanda": "Un satellite passa da r a r+Δr (Δr<<r). Come cambia approssimativamente v=√(GM/r)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Variazione differenziale",
+            "opzioni": [
+                "Aumenta di Δr/r",
+                "Diminuisce di circa (1/2)(Δr/r) in frazione",
+                "Diminuisce di circa (Δr/r)^2",
+                "Non cambia"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "v ∝ r^(-1/2): variazione relativa ≈ -(1/2)Δr/r.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "derivata",
+                "r^(-1/2)",
+                "variazione relativa",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_094",
+            "domanda": "Se la densità media di un pianeta resta costante ma il suo raggio R raddoppia, come cambia g in superficie?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Scaling con densità costante",
+            "opzioni": [
+                "Resta uguale",
+                "Raddoppia",
+                "Quadruplica",
+                "Dimezza"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con densità costante, M ∝ R^3; g=GM/R^2 ∝ R.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "densità costante",
+                "M∝R^3",
+                "g∝R",
+                "scaling"
+            ]
+        },
+        {
+            "id": "grav_095",
+            "domanda": "Due corpi A e B si attraggono gravitazionalmente. Se su A la forza ha modulo F, su B la forza ha modulo:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Azione-reazione",
+            "opzioni": [
+                "F/2",
+                "F",
+                "2F",
+                "Dipende dalle masse"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per la 3ª legge di Newton le forze sono uguali in modulo e opposte in verso.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "azione-reazione",
+                "forze uguali",
+                "newton 3",
+                "sistema"
+            ]
+        },
+        {
+            "id": "grav_096",
+            "domanda": "Una massa m è in orbita circolare di raggio r. Se la sua energia totale E è -GMm/(2r), allora l’energia cinetica K vale:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Relazione K-U-E",
+            "opzioni": [
+                "K = GMm/(2r)",
+                "K = GMm/r",
+                "K = -GMm/(2r)",
+                "K = 0"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In orbita circolare: K=+GMm/(2r), U=-GMm/r e E=K+U.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "cinetica",
+                "orbita",
+                "GMm/2r",
+                "energia"
+            ]
+        },
+        {
+            "id": "grav_097",
+            "domanda": "Un oggetto viene portato da r1 a r2 (r2>r1). La variazione di energia potenziale ΔU (con U=-GMm/r) è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "ΔU tra due raggi",
+            "opzioni": [
+                "ΔU = -GMm(1/r2 - 1/r1)",
+                "ΔU = GMm(1/r2 - 1/r1)",
+                "ΔU = GMm(r2 - r1)",
+                "ΔU = 0"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "U2-U1 = -GMm/r2 - (-GMm/r1) = GMm(1/r2 - 1/r1).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "deltaU",
+                "1/r",
+                "potenziale",
+                "raggi"
+            ]
+        },
+        {
+            "id": "grav_098",
+            "domanda": "Per un’orbita ellittica, quale grandezza determina l’energia totale?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia e semiasse",
+            "opzioni": [
+                "Il perielio",
+                "Il semiasse maggiore a",
+                "L’afelio",
+                "L’eccentricità e"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nelle orbite kepleriane l’energia totale dipende da a: E = -GMm/(2a).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "semiasse maggiore",
+                "energia",
+                "-GMm/2a",
+                "ellisse"
+            ]
+        },
+        {
+            "id": "grav_099",
+            "domanda": "Se un satellite in orbita circolare riceve un impulso tangenziale che aumenta leggermente la velocità, l’orbita risultante è tipicamente:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Manovre orbitali",
+            "opzioni": [
+                "Circolare più bassa",
+                "Ellittica con punto di manovra al perielio",
+                "Ellittica con punto di manovra all’afelio",
+                "Rettilinea verso l’alto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Aumentando v in un punto di un’orbita circolare, quel punto diventa perielio di un’ellisse più grande.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "impulso tangenziale",
+                "orbita ellittica",
+                "perielio",
+                "manovra"
+            ]
+        },
+        {
+            "id": "grav_100",
+            "domanda": "Quale affermazione su v_f e v_orb alla stessa quota è corretta?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Confronto velocità",
+            "opzioni": [
+                "v_f < v_orb",
+                "v_f = v_orb",
+                "v_f = √2 v_orb",
+                "v_f = 2 v_orb"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Dalle formule: v_orb=√(GM/r) e v_f=√(2GM/r)=√2 v_orb.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "sqrt2",
+                "fuga",
+                "orbita",
+                "quota"
+            ]
+        },
+        {
+            "id": "grav_101",
+            "domanda": "Un pianeta ha massa 3M e raggio 3R rispetto alla Terra. Il rapporto g_p/g_T è:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "g=GM/R^2",
+            "opzioni": [
+                "1/3",
+                "1",
+                "3",
+                "9"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "g ∝ M/R^2: (3)/(3^2)=3/9=1/3.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "g",
+                "proporzione",
+                "massa",
+                "raggio"
+            ]
+        },
+        {
+            "id": "grav_102",
+            "domanda": "Un satellite orbita a r=R (ipotesi ideale). Se la Terra non avesse atmosfera, quale velocità dovrebbe avere per orbita circolare rasente?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Orbita rasente",
+            "opzioni": [
+                "v = √(GM/R)",
+                "v = √(2GM/R)",
+                "v = GM/R",
+                "v = 2√(GM/R)"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per orbita circolare: v = √(GM/r); con r=R segue v=√(GM/R).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "orbita",
+                "rasente",
+                "√(GM/R)",
+                "circolare"
+            ]
+        },
+        {
+            "id": "grav_103",
+            "domanda": "Se il periodo di un satellite geostazionario è fissato (T≈24 h), il raggio orbitale dipende da GM come:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Raggio da periodo",
+            "opzioni": [
+                "r ∝ (GM)",
+                "r ∝ (GM)^(1/3)",
+                "r ∝ (GM)^(1/2)",
+                "r ∝ 1/(GM)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da T=2π√(r^3/GM) → r^3 ∝ GM → r ∝ (GM)^(1/3).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "geostazionario",
+                "raggio",
+                "(GM)^(1/3)",
+                "periodo"
+            ]
+        },
+        {
+            "id": "grav_104",
+            "domanda": "Per due orbite ellittiche attorno allo stesso corpo centrale, a parità di semiasse maggiore a, i periodi sono:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Periodo e semiasse",
+            "opzioni": [
+                "Diversi perché l’eccentricità cambia",
+                "Uguali anche se l’eccentricità cambia",
+                "Uguali solo se sono circolari",
+                "Dipendono dalla massa del satellite"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per il moto kepleriano, il periodo dipende solo da a (e dal corpo centrale), non dall’eccentricità.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "periodo",
+                "semiasse",
+                "eccentricità",
+                "keplero"
+            ]
+        },
+        {
+            "id": "grav_105",
+            "domanda": "Un oggetto viene lanciato con velocità esattamente pari a v_f. Qual è la sua velocità a distanza infinita (senza attriti)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Condizione di fuga",
+            "opzioni": [
+                "Uguale a v_f",
+                "Zero",
+                "Infinita",
+                "Dipende dall’angolo di lancio"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per definizione, con v=v_f l’energia totale è zero e la velocità tende a 0 all’infinito.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "fuga",
+                "energia zero",
+                "v(infinito)=0",
+                "definizione"
+            ]
+        },
+        {
+            "id": "grav_106",
+            "domanda": "Quale tra questi grafici qualitativi descrive meglio U(r) = -GMm/r?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Andamento del potenziale",
+            "opzioni": [
+                "Linea crescente che passa per 0 a r=0",
+                "Iperbole negativa che tende a 0 per r→∞",
+                "Parabola positiva",
+                "Costante negativa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "U è negativa e cresce verso 0 all’aumentare di r, con forma ~ -1/r.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "potenziale",
+                "-1/r",
+                "iperbole",
+                "tende a 0"
+            ]
+        },
+        {
+            "id": "grav_107",
+            "domanda": "In un’orbita circolare, qual è il rapporto tra energia cinetica K e |U| (modulo del potenziale)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Teorema del viriale (caso orbitale)",
+            "opzioni": [
+                "K = |U|",
+                "K = |U|/2",
+                "K = 2|U|",
+                "K = 0"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per orbita circolare: K=GMm/(2r) e |U|=GMm/r → K=|U|/2.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "K",
+                "U",
+                "rapporto",
+                "orbita circolare"
+            ]
+        },
+        {
+            "id": "grav_108",
+            "domanda": "Un pianeta uniforme ha densità ρ. In termini di ρ e R, g in superficie scala come:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "g e densità",
+            "opzioni": [
+                "g ∝ ρ/R",
+                "g ∝ ρR",
+                "g ∝ ρR^2",
+                "g ∝ ρ^2 R"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "M ∝ ρR^3 e g=GM/R^2 ∝ ρR.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "densità",
+                "scala",
+                "g",
+                "ρR"
+            ]
+        },
+        {
+            "id": "grav_109",
+            "domanda": "Un satellite in orbita ellittica: quale punto ha minore velocità?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Velocità lungo ellisse",
+            "opzioni": [
+                "Perielio",
+                "Afelio",
+                "Fuoco",
+                "Centro dell’ellisse"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "All’afelio la distanza è massima e la velocità è minima (Keplero 2).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "afelio",
+                "velocità minima",
+                "keplero",
+                "ellisse"
+            ]
+        },
+        {
+            "id": "grav_110",
+            "domanda": "Per un’orbita ellittica, se l’energia totale è E=-GMm/(2a), allora aumentando a (a più grande) l’energia totale diventa:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia vs semiasse",
+            "opzioni": [
+                "Più negativa",
+                "Meno negativa (più vicina a 0)",
+                "Più positiva",
+                "Invariata"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "E = -GMm/(2a): aumentando a, E aumenta verso 0 (orbita meno legata).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "energia",
+                "semiasse",
+                "meno negativa",
+                "legame"
+            ]
+        },
+        {
+            "id": "grav_111",
+            "domanda": "Un corpo cade da r1 a r2 (r2<r1) verso massa M, partendo da fermo. Trascurando attriti, la sua velocità a r2 è data da:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Caduta con potenziale -GMm/r",
+            "opzioni": [
+                "v = √(2GM(1/r2 - 1/r1))",
+                "v = √(2GM(1/r1 - 1/r2))",
+                "v = √(GM(r2 - r1))",
+                "v = √(2g(r1-r2)) sempre"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Da conservazione: (1/2)mv^2 = GMm(1/r2 - 1/r1).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "caduta",
+                "conservazione energia",
+                "1/r",
+                "velocità"
+            ]
+        },
+        {
+            "id": "grav_112",
+            "domanda": "Perché la 1ª legge di Keplero (ellisse) è compatibile con una forza 1/r^2?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Legame con Newton",
+            "opzioni": [
+                "Perché una forza costante dà ellissi",
+                "Perché le forze centrali con legge 1/r^2 ammettono orbite coniche",
+                "Perché la gravità è repulsiva",
+                "Perché l’attrito crea ellissi"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Una forza centrale inversamente proporzionale al quadrato della distanza porta a orbite coniche (ellissi per energia negativa).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "newton-keplero",
+                "1/r^2",
+                "orbite coniche",
+                "ellisse"
+            ]
+        },
+        {
+            "id": "grav_113",
+            "domanda": "Se un oggetto è in orbita circolare e la sua velocità viene ridotta istantaneamente (impulso contrario), l’orbita risultante è tipicamente:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Manovre orbitali",
+            "opzioni": [
+                "Ellittica con punto di manovra all’afelio",
+                "Ellittica con punto di manovra al perielio",
+                "Circolare più alta",
+                "Iperbolica"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Ridurre la velocità in un punto rende quel punto l’afelio di un’ellisse più bassa.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "impulso",
+                "ellisse",
+                "afelio",
+                "manovra"
+            ]
+        },
+        {
+            "id": "grav_114",
+            "domanda": "Quale condizione garantisce che un’orbita sia circolare (non ellittica) a un dato r?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Condizione di circolarità",
+            "opzioni": [
+                "v = √(GM/r) e velocità tangenziale",
+                "v = √(2GM/r)",
+                "v = GM/r",
+                "Qualsiasi v purché tangenziale"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Serve la velocità circolare corretta e direzione tangenziale; altrimenti l’orbita diventa ellittica (o non legata).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "orbita circolare",
+                "velocità",
+                "tangenziale",
+                "condizione"
+            ]
+        }
+    ]
+}

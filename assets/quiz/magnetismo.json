@@ -1,1 +1,2273 @@
-{"quiz": []}
+{
+    "quiz": [
+        {
+            "id": "mag_001",
+            "domanda": "Qual è l'unità di misura SI dell'induzione magnetica B?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Unità di misura",
+            "opzioni": [
+                "Weber (Wb)",
+                "Tesla (T)",
+                "Henry (H)",
+                "Ampere (A)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel SI l'induzione magnetica (densità di flusso magnetico) B si misura in tesla (T). [web:42]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "tesla",
+                "B",
+                "unità",
+                "SI"
+            ]
+        },
+        {
+            "id": "mag_002",
+            "domanda": "Un tesla (T) è equivalente a:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Equivalenze",
+            "opzioni": [
+                "1 Wb/m²",
+                "1 J/C",
+                "1 N·m",
+                "1 V·s/m"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "1 T = 1 Wb/m²: un flusso di 1 weber attraverso 1 m² corrisponde a 1 tesla. [web:36]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "tesla",
+                "weber",
+                "m²",
+                "equivalenza"
+            ]
+        },
+        {
+            "id": "mag_003",
+            "domanda": "Qual è l'unità SI del flusso magnetico Φ?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Flusso magnetico",
+            "opzioni": [
+                "Tesla (T)",
+                "Weber (Wb)",
+                "Newton (N)",
+                "Watt (W)"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'unità di misura SI del flusso magnetico Φ è il weber (Wb). [web:43]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "flusso",
+                "weber",
+                "Φ",
+                "unità"
+            ]
+        },
+        {
+            "id": "mag_004",
+            "domanda": "Qual è la formula (modulo) della forza magnetica su una carica q che si muove in un campo B con angolo α tra v e B?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Forza di Lorentz (carica)",
+            "opzioni": [
+                "F = qvBcosα",
+                "F = qvBsinα",
+                "F = qB/v",
+                "F = qv/B"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il modulo della forza di Lorentz (parte magnetica) è F = q·v·B·sinα. [web:19]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lorentz",
+                "qvB",
+                "seno",
+                "carica"
+            ]
+        },
+        {
+            "id": "mag_005",
+            "domanda": "La direzione della forza di Lorentz su una carica in moto è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Direzione della forza",
+            "opzioni": [
+                "Parallela a v",
+                "Parallela a B",
+                "Perpendicolare al piano individuato da v e B",
+                "Sempre verticale verso l'alto"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La forza magnetica è perpendicolare al piano definito dai vettori v e B (regola della mano destra per cariche positive). [web:17]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "direzione",
+                "perpendicolare",
+                "mano destra",
+                "v e B"
+            ]
+        },
+        {
+            "id": "mag_006",
+            "domanda": "Quando la forza magnetica su una carica in moto è nulla?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Casi particolari",
+            "opzioni": [
+                "Quando v è perpendicolare a B",
+                "Quando v è parallela a B",
+                "Quando B è massimo",
+                "Quando q è molto grande"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Se v è parallela (o antiparallela) a B, sinα = 0 e quindi F = qvBsinα = 0. [web:19]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "forza nulla",
+                "parallelo",
+                "sin0",
+                "lorentz"
+            ]
+        },
+        {
+            "id": "mag_007",
+            "domanda": "La legge di Faraday (per una spira) afferma che la f.e.m. indotta vale:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Legge di Faraday",
+            "opzioni": [
+                "ε = +dΦ/dt",
+                "ε = -dΦ/dt",
+                "ε = -Φ·t",
+                "ε = Φ/t²"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La legge di Faraday dà ε = - dΦ/dt: la f.e.m. indotta è legata alla variazione temporale del flusso. [web:27]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "faraday",
+                "fem",
+                "dPhi/dt",
+                "segno meno"
+            ]
+        },
+        {
+            "id": "mag_008",
+            "domanda": "Cosa esprime il segno meno nella legge di Faraday-Lenz?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Legge di Lenz",
+            "opzioni": [
+                "Che il flusso è sempre negativo",
+                "Che la corrente indotta si oppone alla variazione di flusso",
+                "Che il campo magnetico indotto è sempre nullo",
+                "Che la f.e.m. indotta è sempre costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il segno meno rappresenta la legge di Lenz: la corrente indotta genera un campo che si oppone alla variazione del flusso che l'ha prodotta. [web:30]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lenz",
+                "opposizione",
+                "variazione flusso",
+                "segno meno"
+            ]
+        },
+        {
+            "id": "mag_009",
+            "domanda": "Qual è il valore della permeabilità magnetica del vuoto μ0 nel SI?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Costanti",
+            "opzioni": [
+                "μ0 = 4π·10^-7 H/m",
+                "μ0 = 9.8 m/s²",
+                "μ0 = 8.85·10^-12 C²/(N·m²)",
+                "μ0 = 3·10^8 m/s"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La permeabilità magnetica del vuoto vale μ0 = 4π·10^-7 H/m nel SI. [web:32]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "mu0",
+                "permeabilità",
+                "4pi",
+                "costante"
+            ]
+        },
+        {
+            "id": "mag_010",
+            "domanda": "Per un filo rettilineo molto lungo percorso da corrente I, il campo magnetico a distanza r vale (in modulo):",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Filo rettilineo",
+            "opzioni": [
+                "B = μ0 I/(2πr)",
+                "B = μ0 I·r/(2π)",
+                "B = μ0 r/(2πI)",
+                "B = μ0/(2πIr²)"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per un filo rettilineo lungo, B è proporzionale a I e inversamente proporzionale a r: B = μ0 I/(2πr). [web:22]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "filo",
+                "campo",
+                "mu0I/2pir",
+                "biot-savart"
+            ]
+        },
+        {
+            "id": "mag_011",
+            "domanda": "Il teorema/circuitazione di Ampère è spesso usato per calcolare B in un:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Teorema di Ampère",
+            "opzioni": [
+                "Condensatore piano",
+                "Solenoide lungo",
+                "Pendolo semplice",
+                "Moto parabolico"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Applicando il teorema di Ampère si può calcolare il campo magnetico all'interno di un solenoide. [web:28]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "ampere",
+                "solenoide",
+                "campo magnetico",
+                "circuitazione"
+            ]
+        },
+        {
+            "id": "mag_012",
+            "domanda": "Dentro un solenoide lungo (ideale), il campo magnetico in vuoto è circa:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Solenoide",
+            "opzioni": [
+                "B = μ0·N·I/L",
+                "B = μ0·I·L/N",
+                "B = μ0/(NIL)",
+                "B = μ0·N/(IL)"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per un solenoide ideale lungo, B ≈ μ0·N·I/L (con N spire e lunghezza L). [web:28]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "solenoide",
+                "mu0",
+                "NIL",
+                "campo interno"
+            ]
+        },
+        {
+            "id": "mag_013",
+            "domanda": "Quale grandezza compare nella legge di Faraday?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Grandezze fisiche",
+            "opzioni": [
+                "Flusso magnetico Φ",
+                "Massa m",
+                "Carica totale Q del circuito",
+                "Pressione p"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La legge di Faraday lega la f.e.m. indotta alla variazione temporale del flusso magnetico Φ. [web:27]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "faraday",
+                "flusso",
+                "Phi",
+                "fem"
+            ]
+        },
+        {
+            "id": "mag_014",
+            "domanda": "Se il flusso magnetico attraverso una spira resta costante nel tempo, la f.e.m. indotta è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Casi particolari",
+            "opzioni": [
+                "Costante e non nulla",
+                "Niente si può dire",
+                "Nulla",
+                "Infinita"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Se Φ non cambia nel tempo, dΦ/dt = 0 e quindi ε = -dΦ/dt = 0. [web:27]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "flusso costante",
+                "dPhi/dt",
+                "fem nulla",
+                "faraday"
+            ]
+        },
+        {
+            "id": "mag_015",
+            "domanda": "In quale caso una carica q in moto in un campo B subisce forza massima (in modulo)?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Massimo del seno",
+            "opzioni": [
+                "α = 0°",
+                "α = 90°",
+                "α = 180°",
+                "α = 45° sempre minima"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché F = qvBsinα, la forza è massima quando sinα = 1, cioè per α = 90°. [web:19]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "massimo",
+                "sin",
+                "90 gradi",
+                "lorentz"
+            ]
+        },
+        {
+            "id": "mag_016",
+            "domanda": "La legge di Lenz afferma che:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Enunciato",
+            "opzioni": [
+                "La corrente indotta aumenta la variazione di flusso",
+                "La corrente indotta ha verso tale da opporsi alla variazione di flusso",
+                "La f.e.m. indotta è sempre positiva",
+                "Il flusso magnetico è sempre nullo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La legge di Lenz: la corrente indotta genera un campo magnetico che si oppone alla variazione del flusso che l'ha provocata. [web:30]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lenz",
+                "corrente indotta",
+                "opposizione",
+                "flusso"
+            ]
+        },
+        {
+            "id": "mag_017",
+            "domanda": "La forza magnetica su una carica in moto è direttamente proporzionale a:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Dipendenze",
+            "opzioni": [
+                "q, v, B e sinα",
+                "Solo alla massa",
+                "Solo al tempo",
+                "Solo alla temperatura"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dal modulo F = qvBsinα, la forza cresce con q, v, B e con sinα. [web:19]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "proporzionalità",
+                "q",
+                "v",
+                "B"
+            ]
+        },
+        {
+            "id": "mag_018",
+            "domanda": "La formula vettoriale della forza magnetica su una carica è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Forma vettoriale",
+            "opzioni": [
+                "F = q(v × B)",
+                "F = q(v · B)",
+                "F = q(v + B)",
+                "F = q(v/B)"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La parte magnetica della forza di Lorentz si scrive F = q (v × B). [web:20]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "prodotto vettoriale",
+                "v cross B",
+                "lorentz",
+                "vettori"
+            ]
+        },
+        {
+            "id": "mag_019",
+            "domanda": "La regola della mano destra per F = q(v × B) vale direttamente per:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Regola della mano destra",
+            "opzioni": [
+                "Cariche positive",
+                "Cariche negative",
+                "Neutroni",
+                "Corpi neutri"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La direzione data dalla mano destra per v × B è quella della forza su una carica positiva (per una carica negativa si inverte). [web:17]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "mano destra",
+                "carica positiva",
+                "verso",
+                "lorentz"
+            ]
+        },
+        {
+            "id": "mag_020",
+            "domanda": "Quale legge collega circuito e corrente per ottenere B nel caso di simmetria (circuitazione)?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Leggi fondamentali",
+            "opzioni": [
+                "Legge di Faraday",
+                "Teorema di Ampère",
+                "Legge di Ohm",
+                "Legge di Snell"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il teorema di Ampère (circuitazione) collega il campo magnetico lungo una linea chiusa alla corrente concatenata. [web:28]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "ampere",
+                "circuitazione",
+                "corrente",
+                "linea chiusa"
+            ]
+        },
+        {
+            "id": "mag_021",
+            "domanda": "Nel calcolo del campo magnetico di un filo lungo, B dipende da r come:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Dipendenza dalla distanza",
+            "opzioni": [
+                "B ∝ r",
+                "B ∝ 1/r",
+                "B ∝ r²",
+                "B ∝ 1/r²"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per un filo rettilineo lungo, B = μ0 I/(2πr), quindi B è inversamente proporzionale a r. [web:22]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "1/r",
+                "filo lungo",
+                "dipendenza",
+                "campo"
+            ]
+        },
+        {
+            "id": "mag_022",
+            "domanda": "Se r raddoppia, il campo magnetico di un filo lungo (a parità di I) diventa:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Proporzionalità",
+            "opzioni": [
+                "Doppio",
+                "Metà",
+                "Quattro volte",
+                "Uguale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché B ∝ 1/r per il filo lungo, se r raddoppia allora B si dimezza. [web:22]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "dimezza",
+                "raddoppio",
+                "filo",
+                "1/r"
+            ]
+        },
+        {
+            "id": "mag_023",
+            "domanda": "Se la corrente I in un filo lungo raddoppia, il campo B (a distanza r fissa) diventa:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Proporzionalità",
+            "opzioni": [
+                "Metà",
+                "Doppio",
+                "Quattro volte",
+                "Nullo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per il filo lungo, B = μ0 I/(2πr), quindi B è proporzionale a I: raddoppiare I raddoppia B. [web:22]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "proporzionale",
+                "corrente",
+                "filo",
+                "campo"
+            ]
+        },
+        {
+            "id": "mag_024",
+            "domanda": "Se N (numero di spire) raddoppia in un solenoide lungo e I resta uguale, il campo interno B (ideale) diventa:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Solenoide",
+            "opzioni": [
+                "Metà",
+                "Doppio",
+                "Un quarto",
+                "Indipendente da N"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dal modello B ≈ μ0·N·I/L, a L e I costanti il campo interno è proporzionale a N. [web:28]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "spire",
+                "solenoide",
+                "proporzionale",
+                "N"
+            ]
+        },
+        {
+            "id": "mag_025",
+            "domanda": "Quale condizione è necessaria per avere f.e.m. indotta in una spira?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Condizioni",
+            "opzioni": [
+                "Flusso magnetico variabile nel tempo",
+                "Flusso magnetico costante",
+                "Campo elettrico nullo",
+                "Resistenza infinita"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Secondo Faraday, la f.e.m. indotta nasce quando il flusso magnetico Φ cambia nel tempo (ε = -dΦ/dt). [web:27]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "fem indotta",
+                "flusso variabile",
+                "faraday",
+                "dPhi/dt"
+            ]
+        },
+        {
+            "id": "mag_026",
+            "domanda": "In un solenoide lungo in vuoto, il campo interno B è (circa) proporzionale a:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Solenoide",
+            "opzioni": [
+                "I e N, inverso di L",
+                "Solo a L",
+                "Solo a 1/I",
+                "Solo alla massa del solenoide"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La relazione B ≈ μ0·N·I/L mostra proporzionalità a N e I e inversa a L. [web:28]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "B",
+                "solenoide",
+                "N",
+                "I",
+                "L"
+            ]
+        },
+        {
+            "id": "mag_027",
+            "domanda": "Quale formula riassume meglio Faraday-Lenz per N spire?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "N spire",
+            "opzioni": [
+                "ε = -N dΦ/dt",
+                "ε = -d(NΦ)/dt = -dΦ/dt",
+                "ε = NΦ",
+                "ε = Φ/N"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per una bobina di N spire, la f.e.m. indotta si scrive ε = -N·dΦ/dt (Φ flusso per spira). [web:27]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "N spire",
+                "fem",
+                "faraday",
+                "bobina"
+            ]
+        },
+        {
+            "id": "mag_028",
+            "domanda": "Se una carica negativa si muove con la stessa v in un campo B, rispetto al caso della carica positiva la forza magnetica:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Segno della carica",
+            "opzioni": [
+                "Ha stesso verso",
+                "Ha verso opposto",
+                "È sempre nulla",
+                "Diventa parallela a B"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La direzione ottenuta con la mano destra è per cariche positive; per cariche negative il verso della forza si inverte. [web:17]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "carica negativa",
+                "verso opposto",
+                "mano destra",
+                "lorentz"
+            ]
+        },
+        {
+            "id": "mag_029",
+            "domanda": "Quale relazione descrive il contributo infinitesimo di Biot-Savart (forma vettoriale) per un elemento di corrente?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Biot-Savart (elemento)",
+            "opzioni": [
+                "dB = (μ0 I/4π) (dℓ × r̂)/r²",
+                "dB = (μ0/4π) (dℓ · r̂)/r²",
+                "dB = μ0 I dℓ r̂",
+                "dB = μ0 I / r"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La legge di Biot-Savart in forma differenziale è dB = (μ0 I/4π) (dℓ × r̂)/r². [web:25]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "biot-savart",
+                "dB",
+                "dl cross rhat",
+                "mu0"
+            ]
+        },
+        {
+            "id": "mag_030",
+            "domanda": "Quale grandezza entra nella formula B = μ0 I/(2πr) per il filo lungo?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Filo rettilineo",
+            "opzioni": [
+                "La frequenza",
+                "La corrente I",
+                "La tensione V",
+                "La capacità C"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel caso del filo lungo, il campo magnetico è direttamente proporzionale alla corrente I. [web:22]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "corrente",
+                "filo",
+                "campo",
+                "B"
+            ]
+        },
+        {
+            "id": "mag_031",
+            "domanda": "Quale grandezza NON influisce sul modulo F = qvBsinα se le altre restano fissate?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Dipendenze",
+            "opzioni": [
+                "q",
+                "v",
+                "B",
+                "La massa m della particella"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "Nel modulo della forza magnetica F = qvBsinα non compare la massa m. [web:19]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "massa",
+                "lorentz",
+                "dipendenze",
+                "qvB"
+            ]
+        },
+        {
+            "id": "mag_032",
+            "domanda": "In un solenoide, mantenendo N e I costanti, se la lunghezza L raddoppia, il campo interno B (ideale) diventa:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Solenoide",
+            "opzioni": [
+                "Doppio",
+                "Metà",
+                "Quattro volte",
+                "Invariato"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da B ≈ μ0·N·I/L, se L raddoppia allora B si dimezza. [web:28]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "solenoide",
+                "lunghezza",
+                "inverso",
+                "campo"
+            ]
+        },
+        {
+            "id": "mag_033",
+            "domanda": "La legge di Faraday collega la f.e.m. indotta a:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Concetto",
+            "opzioni": [
+                "La variazione del flusso magnetico nel tempo",
+                "Il valore assoluto del flusso magnetico",
+                "La corrente costante nel circuito",
+                "La massa del conduttore"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Faraday: ε è proporzionale alla variazione temporale del flusso magnetico (ε = -dΦ/dt). [web:27]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "faraday",
+                "variazione flusso",
+                "fem",
+                "tempo"
+            ]
+        },
+        {
+            "id": "mag_034",
+            "domanda": "Secondo Lenz, se il flusso magnetico esterno attraverso una spira aumenta, il campo magnetico indotto tende a:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Applicazione di Lenz",
+            "opzioni": [
+                "Aumentare nello stesso verso",
+                "Opporsi all'aumento (verso opposto al cambiamento)",
+                "Annullarsi sempre",
+                "Diventare perpendicolare alla spira"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La legge di Lenz dice che il campo indotto si dispone in modo da opporsi alla variazione del flusso che lo genera. [web:30]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lenz",
+                "flusso aumenta",
+                "campo indotto",
+                "opposizione"
+            ]
+        },
+        {
+            "id": "mag_035",
+            "domanda": "Qual è la relazione tra tesla e newton/ampere·metro?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Equivalenze",
+            "opzioni": [
+                "1 T = 1 N/(A·m)",
+                "1 T = 1 N·m/A",
+                "1 T = 1 A·m/N",
+                "1 T = 1 J·s"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il tesla può essere espresso anche come 1 T = 1 N/(A·m). [web:36]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "tesla",
+                "newton",
+                "ampere",
+                "metro"
+            ]
+        },
+        {
+            "id": "mag_036",
+            "domanda": "Quale affermazione è corretta sulla forza magnetica su una carica in moto in un campo B uniforme?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Proprietà",
+            "opzioni": [
+                "È sempre parallela alla velocità",
+                "È perpendicolare a v e può cambiare direzione della velocità",
+                "È indipendente da q",
+                "È sempre nulla"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La forza magnetica è perpendicolare a v (tramite v × B), quindi può deviare la traiettoria cambiando la direzione della velocità. [web:17]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "deviazione",
+                "perpendicolare",
+                "v cross B",
+                "traiettoria"
+            ]
+        },
+        {
+            "id": "mag_037",
+            "domanda": "Quale grandezza è una costante fisica legata al vuoto nel magnetismo?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Costanti",
+            "opzioni": [
+                "μ0",
+                "g",
+                "R",
+                "h"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Nel magnetismo la permeabilità magnetica del vuoto μ0 è una costante fondamentale (μ0 = 4π·10^-7 H/m). [web:32]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "mu0",
+                "vuoto",
+                "costante",
+                "permeabilità"
+            ]
+        },
+        {
+            "id": "mag_038",
+            "domanda": "Se una carica q è ferma (v = 0) in un campo magnetico B, la forza magnetica vale:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Casi particolari",
+            "opzioni": [
+                "F = qB",
+                "F = qvB",
+                "F = 0",
+                "F = qv/B"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Se v = 0 allora F = qvBsinα = 0. [web:19]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "v=0",
+                "forza nulla",
+                "lorentz",
+                "carica ferma"
+            ]
+        },
+        {
+            "id": "mag_039",
+            "domanda": "Nel filo lungo, la formula B = μ0 I/(2πr) indica che r è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Significato delle variabili",
+            "opzioni": [
+                "La resistenza del filo",
+                "La distanza dal filo",
+                "Il raggio del magnete",
+                "Il rendimento"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nella legge per il filo lungo, r è la distanza dal filo a cui si calcola il campo magnetico. [web:22]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "r",
+                "distanza",
+                "filo",
+                "campo"
+            ]
+        },
+        {
+            "id": "mag_040",
+            "domanda": "La legge di Faraday in forma differenziale usa una derivata rispetto a:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Forma matematica",
+            "opzioni": [
+                "Spazio",
+                "Tempo",
+                "Massa",
+                "Carica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La legge di Faraday contiene la derivata temporale del flusso: ε = -∂Φ/∂t. [web:27]",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "derivata",
+                "tempo",
+                "faraday",
+                "flusso"
+            ]
+        },
+        {
+            "id": "mag_041",
+            "domanda": "Una carica q = 2 μC si muove con v = 3·10^5 m/s perpendicolarmente a B = 0.20 T. Quanto vale il modulo della forza magnetica?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Calcolo numerico",
+            "opzioni": [
+                "0.12 N",
+                "0.24 N",
+                "0.36 N",
+                "0.048 N"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "Con α=90°, F = qvB = 2·10^-6·3·10^5·0.2 = 0.12 N (quindi 0.12 N è corretto). [web:19]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "calcolo",
+                "qvB",
+                "perpendicolare",
+                "newton"
+            ]
+        },
+        {
+            "id": "mag_042",
+            "domanda": "Correzione del quesito precedente: quale opzione è corretta per F?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Verifica calcolo",
+            "opzioni": [
+                "0.12 N",
+                "0.24 N",
+                "0.36 N",
+                "0.048 N"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il risultato è F = 0.12 N. [web:19]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "correzione",
+                "0.12N",
+                "lorentz",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "mag_043",
+            "domanda": "Un protone (q = +e) entra in un campo B uniforme con velocità perpendicolare a B. Il moto risultante è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Traiettoria in B uniforme",
+            "opzioni": [
+                "Rettolineo uniforme",
+                "Circolare uniforme",
+                "Parabolico",
+                "Armonico semplice"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con v ⟂ B, la forza magnetica è perpendicolare alla velocità e può curvare la traiettoria in moto circolare. [web:17]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "moto circolare",
+                "carica",
+                "campo uniforme",
+                "v perpendicolare"
+            ]
+        },
+        {
+            "id": "mag_044",
+            "domanda": "Nel moto circolare di una carica in B uniforme (v ⟂ B), se B raddoppia e v resta costante, il raggio della traiettoria:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Raggio di curvatura",
+            "opzioni": [
+                "Raddoppia",
+                "Si dimezza",
+                "Resta uguale",
+                "Quadruplica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "A parità di v e q, aumentando B aumenta la forza qvB e la curvatura: il raggio diminuisce. [web:19]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "raggio",
+                "B raddoppia",
+                "curvatura",
+                "lorentz"
+            ]
+        },
+        {
+            "id": "mag_045",
+            "domanda": "Una spira di area A = 0.050 m² è immersa in un campo B = 0.30 T perpendicolare alla spira. Qual è il flusso Φ?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Flusso magnetico",
+            "opzioni": [
+                "0.015 Wb",
+                "0.150 Wb",
+                "0.006 Wb",
+                "0.350 Wb"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con B perpendicolare, Φ = B·A = 0.30·0.050 = 0.015 Wb. [web:43]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "flusso",
+                "BA",
+                "weber",
+                "area"
+            ]
+        },
+        {
+            "id": "mag_046",
+            "domanda": "Una bobina di N = 50 spire subisce una variazione di flusso per spira da 0.020 Wb a 0.005 Wb in 0.10 s. Quanto vale la f.e.m. media indotta (in modulo)?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Faraday (f.e.m. media)",
+            "opzioni": [
+                "7.5 V",
+                "2.5 V",
+                "0.75 V",
+                "75 V"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "ε_media = N·|ΔΦ|/Δt = 50·|0.005-0.020|/0.10 = 7.5 V. [web:27]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "fem media",
+                "N spire",
+                "deltaPhi",
+                "faraday"
+            ]
+        },
+        {
+            "id": "mag_047",
+            "domanda": "Se il flusso attraverso una spira aumenta, secondo Lenz la corrente indotta genera un campo che:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Direzione corrente indotta",
+            "opzioni": [
+                "Rinforza l'aumento del flusso",
+                "Si oppone all'aumento del flusso",
+                "È sempre parallelo alla spira",
+                "È nullo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Lenz: la corrente indotta genera un campo magnetico indotto che si oppone alla variazione del flusso. [web:30]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lenz",
+                "corrente indotta",
+                "opposizione",
+                "campo indotto"
+            ]
+        },
+        {
+            "id": "mag_048",
+            "domanda": "Campo magnetico a distanza r = 0.10 m da un filo lungo percorso da I = 5 A (μ0 = 4π·10^-7): B vale circa:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Filo lungo (calcolo)",
+            "opzioni": [
+                "1.0·10^-5 T",
+                "1.0·10^-6 T",
+                "1.0·10^-4 T",
+                "1.0·10^-3 T"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "B = μ0 I/(2πr) = (4π·10^-7·5)/(2π·0.1) = 1.0·10^-5 T. [web:22][web:32]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "filo",
+                "campo",
+                "mu0",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "mag_049",
+            "domanda": "In un solenoide lungo, N = 200 spire, L = 0.50 m, I = 2.0 A. Quanto vale B (in vuoto) circa?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Solenoide (calcolo)",
+            "opzioni": [
+                "1.0·10^-3 T",
+                "1.0·10^-2 T",
+                "1.0·10^-4 T",
+                "1.0·10^-1 T"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "B ≈ μ0 N I/L = (4π·10^-7)·200·2/0.5 ≈ 1.0·10^-3 T (ordine di grandezza millitesla). [web:28][web:32]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "solenoide",
+                "B=mu0NI/L",
+                "calcolo",
+                "millitesla"
+            ]
+        },
+        {
+            "id": "mag_050",
+            "domanda": "Correzione del quesito precedente: qual è l'ordine di grandezza più coerente per B?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Verifica calcolo",
+            "opzioni": [
+                "10^-3 T",
+                "10^-2 T",
+                "10^-1 T",
+                "10^1 T"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Inserendo i dati in B ≈ μ0 N I/L si ottiene un valore dell'ordine di 10^-3 T. [web:28][web:32]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "correzione",
+                "ordine di grandezza",
+                "solenoide",
+                "mu0"
+            ]
+        },
+        {
+            "id": "mag_051",
+            "domanda": "Una carica q attraversa un campo B e la sua traiettoria curva ma la velocità in modulo resta costante. Quale proprietà della forza magnetica lo spiega?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Lavoro della forza magnetica",
+            "opzioni": [
+                "La forza è parallela alla velocità",
+                "La forza è perpendicolare alla velocità",
+                "La forza dipende dalla massa",
+                "La forza è sempre nulla"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La forza magnetica è perpendicolare alla velocità (direzione da v e B), quindi può deviare senza “spingere” lungo v. [web:17]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "perpendicolare",
+                "deviazione",
+                "velocità costante",
+                "lorentz"
+            ]
+        },
+        {
+            "id": "mag_052",
+            "domanda": "Una bobina ha N = 100 spire. Il flusso per spira varia linearmente da 0.010 Wb a 0.040 Wb in 2 s. f.e.m. media (in modulo)?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Faraday (f.e.m. media)",
+            "opzioni": [
+                "1.5 V",
+                "3.0 V",
+                "0.15 V",
+                "15 V"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "ε = N·|ΔΦ|/Δt = 100·(0.030)/2 = 1.5 V. [web:27]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "bobina",
+                "fem",
+                "deltaPhi",
+                "faraday"
+            ]
+        },
+        {
+            "id": "mag_053",
+            "domanda": "Se una spira ruota in un campo magnetico uniforme cambiando l'angolo tra B e la normale alla spira, il flusso magnetico:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Flusso e angolo",
+            "opzioni": [
+                "Resta sempre costante",
+                "Può variare anche se B e A sono costanti",
+                "Diventa sempre nullo",
+                "Non dipende dall'angolo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il flusso magnetico tiene conto dell'angolo di incidenza del campo sulla superficie, quindi può variare se cambia l'orientazione. [web:43]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "flusso",
+                "angolo",
+                "orientazione",
+                "spira"
+            ]
+        },
+        {
+            "id": "mag_054",
+            "domanda": "In un filo lungo, se si passa da r = 0.05 m a r = 0.20 m (corrente costante), B cambia di un fattore:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Scala con r",
+            "opzioni": [
+                "4",
+                "1/4",
+                "2",
+                "1/2"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché B ∝ 1/r, passando a una distanza 4 volte maggiore (0.05→0.20) il campo diventa 1/4. [web:22]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "1/r",
+                "fattore 4",
+                "filo",
+                "campo"
+            ]
+        },
+        {
+            "id": "mag_055",
+            "domanda": "Una carica in moto ha v che forma α = 30° con B. Rispetto al caso α = 90°, la forza magnetica (a parità di q, v, B) è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Dipendenza angolare",
+            "opzioni": [
+                "Uguale",
+                "Metà",
+                "Un quarto",
+                "√3/2 volte"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "F ∝ sinα: sin30° = 1/2, quindi la forza è metà rispetto al caso α = 90°. [web:19]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "sin30",
+                "angolo",
+                "metà",
+                "lorentz"
+            ]
+        },
+        {
+            "id": "mag_056",
+            "domanda": "Una bobina ha resistenza R. Se la f.e.m. indotta aumenta (a R costante), la corrente indotta (in modulo):",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Corrente indotta",
+            "opzioni": [
+                "Diminuisce",
+                "Aumenta",
+                "Resta costante",
+                "Diventa sempre zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "A parità di resistenza, una f.e.m. indotta più grande produce una corrente più grande (I = ε/R).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "corrente indotta",
+                "Ohm",
+                "resistenza",
+                "fem"
+            ]
+        },
+        {
+            "id": "mag_057",
+            "domanda": "In un solenoide, se si inserisce un nucleo ferromagnetico (μr > 1), a parità di I e geometria, l'induttanza L:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Nucleo ferromagnetico",
+            "opzioni": [
+                "Diminuisce",
+                "Aumenta",
+                "Resta uguale",
+                "Diventa negativa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per un solenoide con nucleo, L aumenta con μr (ad esempio L = μ0·μr·n²·l·S). [web:46]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "induttanza",
+                "mu_r",
+                "nucleo",
+                "solenoide"
+            ]
+        },
+        {
+            "id": "mag_058",
+            "domanda": "Per un solenoide (vuoto) con N spire, sezione S e lunghezza l, la dipendenza corretta dell'induttanza è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Formula solenoide",
+            "opzioni": [
+                "L ∝ N²S/l",
+                "L ∝ NS/l",
+                "L ∝ l/(N²S)",
+                "L ∝ N/l²"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per un solenoide ideale, L cresce con N² e con la sezione e diminuisce con la lunghezza (forma tipica L = μ0 N² S / l). [web:46]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "L",
+                "N^2",
+                "sezione",
+                "lunghezza"
+            ]
+        },
+        {
+            "id": "mag_059",
+            "domanda": "Una corrente in una bobina cambia nel tempo. La f.e.m. autoindotta è descritta da:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Autoinduzione",
+            "opzioni": [
+                "ε = -L dI/dt",
+                "ε = +L dI/dt",
+                "ε = -I dL/dt",
+                "ε = -dΦ/dx"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Nell'autoinduzione la f.e.m. autoindotta è ε = -L (dI/dt). [web:52]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "autoinduzione",
+                "fem",
+                "L dI/dt",
+                "lenz"
+            ]
+        },
+        {
+            "id": "mag_060",
+            "domanda": "Un induttore di induttanza L attraversato da corrente I immagazzina energia U pari a:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Energia nell'induttore",
+            "opzioni": [
+                "U = LI",
+                "U = 1/2 L I²",
+                "U = I/L",
+                "U = L/I²"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'energia immagazzinata in un induttore vale U = (1/2)·L·I². [web:57]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "induttore",
+                "1/2LI2",
+                "campo magnetico"
+            ]
+        },
+        {
+            "id": "mag_061",
+            "domanda": "Un induttore ha L = 0.50 H e corrente I = 2.0 A. Quanta energia immagazzina?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Calcolo energia",
+            "opzioni": [
+                "0.5 J",
+                "1.0 J",
+                "2.0 J",
+                "4.0 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "U = 1/2 L I² = 0.5·0.50·(2.0)² = 1.0 J. [web:57]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "joule",
+                "induttanza",
+                "corrente"
+            ]
+        },
+        {
+            "id": "mag_062",
+            "domanda": "Un solenoide (vuoto) ha N = 500, sezione S = 2.0·10^-4 m², lunghezza l = 0.20 m. Stima L.",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Calcolo L solenoide",
+            "opzioni": [
+                "~0.31 H",
+                "~0.0031 H",
+                "~3.1 H",
+                "~3.1·10^-5 H"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L = μ0 N² S / l ≈ (4π·10^-7)·(2.5·10^5)·(2.0·10^-4)/0.20 ≈ 3.1·10^-4 H (ordine 10^-4–10^-3 H). [web:46][web:32]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "induttanza",
+                "mu0",
+                "N^2",
+                "solenoide"
+            ]
+        },
+        {
+            "id": "mag_063",
+            "domanda": "Correzione del quesito precedente: qual è l'ordine di grandezza più plausibile per L?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Verifica ordine di grandezza",
+            "opzioni": [
+                "10^-4 H",
+                "10^-1 H",
+                "10^1 H",
+                "10^-8 H"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Usando L = μ0 N² S / l con i dati forniti si ottiene un valore dell'ordine di 10^-4 H. [web:46][web:32]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "correzione",
+                "ordine",
+                "henry",
+                "solenoide"
+            ]
+        },
+        {
+            "id": "mag_064",
+            "domanda": "Una bobina con L = 0.20 H vede la corrente crescere da 1 A a 3 A in 0.5 s. Qual è la f.e.m. autoindotta media (in modulo)?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Autoinduzione (calcolo)",
+            "opzioni": [
+                "0.8 V",
+                "0.4 V",
+                "2.0 V",
+                "0.08 V"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "ε = L·|ΔI|/Δt = 0.20·(2/0.5) = 0.8 V. [web:52]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "autoinduzione",
+                "dI/dt",
+                "volt",
+                "induttanza"
+            ]
+        },
+        {
+            "id": "mag_065",
+            "domanda": "In base alla legge di Lenz, la f.e.m. autoindotta in una bobina durante l'aumento di corrente tende a:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Verso della f.e.m.",
+            "opzioni": [
+                "Favorire l'aumento di corrente",
+                "Opporsi all'aumento di corrente",
+                "Annullare μ0",
+                "Aumentare la resistenza del circuito"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La legge di Lenz implica che la f.e.m. (anche autoindotta) si oppone al cambiamento che la genera, quindi si oppone all'aumento di corrente. [web:52][web:30]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lenz",
+                "autoinduzione",
+                "opposizione",
+                "corrente"
+            ]
+        },
+        {
+            "id": "mag_066",
+            "domanda": "Se una bobina ha N spire e si raddoppia N (stessa geometria), l'induttanza L (ideale) varia come:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Dipendenza da N",
+            "opzioni": [
+                "Raddoppia",
+                "Quadruplica",
+                "Si dimezza",
+                "Resta invariata"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per il solenoide ideale L ∝ N², quindi raddoppiando N l'induttanza quadruplica. [web:46]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "N^2",
+                "spire",
+                "quadruplica",
+                "induttanza"
+            ]
+        },
+        {
+            "id": "mag_067",
+            "domanda": "Una bobina ha L = 1.0 H. Se la corrente raddoppia, l'energia immagazzinata:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Energia e corrente",
+            "opzioni": [
+                "Raddoppia",
+                "Quadruplica",
+                "Si dimezza",
+                "Resta uguale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché U = (1/2)LI², raddoppiare I fa crescere U di un fattore 4. [web:57]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "I^2",
+                "quadruplica",
+                "induttore"
+            ]
+        },
+        {
+            "id": "mag_068",
+            "domanda": "Se B in una regione raddoppia mentre area A e orientazione restano costanti, il flusso Φ:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Flusso e B",
+            "opzioni": [
+                "Raddoppia",
+                "Si dimezza",
+                "Non cambia",
+                "Diventa nullo"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il flusso magnetico è proporzionale a B e all'area (tenendo conto dell'angolo), quindi raddoppiando B raddoppia Φ. [web:43]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "flusso",
+                "proporzionale",
+                "B",
+                "area"
+            ]
+        },
+        {
+            "id": "mag_069",
+            "domanda": "Una spira ha area A = 0.020 m² e B = 0.50 T. Se l'angolo tra B e la normale passa da 0° a 60°, il flusso cambia da:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Flusso e rotazione",
+            "opzioni": [
+                "0.010 Wb a 0.005 Wb",
+                "0.010 Wb a 0.020 Wb",
+                "0.005 Wb a 0.010 Wb",
+                "0.000 Wb a 0.010 Wb"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Φ = BAcosθ: inizialmente 0.50·0.020·cos0 = 0.010 Wb, poi 0.50·0.020·cos60 = 0.005 Wb. [web:43]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "BAcos",
+                "cos60",
+                "rotazione",
+                "weber"
+            ]
+        },
+        {
+            "id": "mag_070",
+            "domanda": "Se una spira subisce una variazione di flusso |ΔΦ| in un tempo Δt, la f.e.m. media (modulo) è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Formula f.e.m. media",
+            "opzioni": [
+                "ε = |ΔΦ|/Δt",
+                "ε = |Δt|/ΔΦ",
+                "ε = ΔΦ·Δt",
+                "ε = Φ/Δt²"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La forma media della legge di Faraday per una spira è |ε| = |ΔΦ|/Δt. [web:27]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "fem media",
+                "deltaPhi",
+                "delta t",
+                "faraday"
+            ]
+        },
+        {
+            "id": "mag_071",
+            "domanda": "Per un filo lungo, con I = 10 A e r = 0.20 m, calcola B (μ0 = 4π·10^-7).",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Filo lungo (calcolo)",
+            "opzioni": [
+                "1.0·10^-5 T",
+                "1.0·10^-6 T",
+                "1.0·10^-4 T",
+                "1.0·10^-3 T"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "B = μ0I/(2πr) = (4π·10^-7·10)/(2π·0.2) = 1.0·10^-5 T. [web:22][web:32]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "filo",
+                "mu0",
+                "2pir",
+                "tesla"
+            ]
+        },
+        {
+            "id": "mag_072",
+            "domanda": "Una bobina ha N=200 spire e la f.e.m. indotta (modulo) è 4 V. Qual è |dΦ/dt| per spira (in Wb/s)?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Ricavare dΦ/dt",
+            "opzioni": [
+                "0.02",
+                "0.2",
+                "20",
+                "800"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Da |ε| = N|dΦ/dt| segue |dΦ/dt| = 4/200 = 0.02 Wb/s. [web:27]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "dPhi/dt",
+                "N spire",
+                "faraday",
+                "Wb/s"
+            ]
+        },
+        {
+            "id": "mag_073",
+            "domanda": "Una bobina con L=0.10 H ha dI/dt = -5 A/s. Qual è la f.e.m. autoindotta?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Autoinduzione (segno)",
+            "opzioni": [
+                "ε = +0.5 V",
+                "ε = -0.5 V",
+                "ε = +5 V",
+                "ε = -5 V"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "ε = -L dI/dt = -0.10·(-5) = +0.5 V. [web:52]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "autoinduzione",
+                "segno",
+                "dI/dt",
+                "volt"
+            ]
+        },
+        {
+            "id": "mag_074",
+            "domanda": "Energia in un induttore: L=0.25 H e I=4 A. U vale:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Calcolo energia",
+            "opzioni": [
+                "0.5 J",
+                "2.0 J",
+                "8.0 J",
+                "16 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "U = 1/2·L·I² = 0.5·0.25·16 = 2.0 J. [web:57]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "1/2LI2",
+                "joule",
+                "henry"
+            ]
+        },
+        {
+            "id": "mag_075",
+            "domanda": "Se un solenoide ha n = N/l (spire per metro), una forma equivalente per l'induttanza è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Forma con n",
+            "opzioni": [
+                "L = μ0 n² l S",
+                "L = μ0 n l S",
+                "L = μ0 S/(n² l)",
+                "L = μ0 n² S/l²"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per il solenoide ideale, una forma è L = μ0·n²·l·S. [web:46]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "n spire/metro",
+                "L",
+                "mu0",
+                "solenoide"
+            ]
+        },
+        {
+            "id": "mag_076",
+            "domanda": "Se la corrente in una bobina cresce rapidamente, la f.e.m. autoindotta tende a:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Interpretazione fisica",
+            "opzioni": [
+                "Opporsi alla crescita di corrente",
+                "Favorire la crescita di corrente",
+                "Non dipendere dalla variazione di corrente",
+                "Essere sempre nulla"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con ε = -L dI/dt e la legge di Lenz, la f.e.m. autoindotta si oppone alla variazione di corrente che la produce. [web:52]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "opposizione",
+                "lenz",
+                "autoinduzione",
+                "dI/dt"
+            ]
+        },
+        {
+            "id": "mag_077",
+            "domanda": "Una bobina ha L=2 H. Se la corrente passa da 0 a 1 A, l'energia immagazzinata finale è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Energia (da 0 a I)",
+            "opzioni": [
+                "0.5 J",
+                "1 J",
+                "2 J",
+                "4 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "U = 1/2·L·I² = 0.5·2·1² = 1 J. [web:57]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "I=1A",
+                "induttore",
+                "joule"
+            ]
+        },
+        {
+            "id": "mag_078",
+            "domanda": "In un circuito, se Φ diminuisce nel tempo, il segno di ε secondo Faraday è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Segno della f.e.m.",
+            "opzioni": [
+                "Sempre positivo",
+                "Sempre negativo",
+                "Dipende dal verso scelto per Φ e per la circuitazione",
+                "È sempre nullo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "In ε = -dΦ/dt il segno dipende dalle convenzioni di verso per flusso e f.e.m.; il meno esprime comunque l'opposizione di Lenz. [web:27][web:30]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "segno",
+                "convenzioni",
+                "faraday",
+                "lenz"
+            ]
+        },
+        {
+            "id": "mag_079",
+            "domanda": "Calcola l'induttanza di un solenoide (vuoto) con N=1000, S=1.0·10^-4 m², l=0.50 m.",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Calcolo L solenoide",
+            "opzioni": [
+                "~2.5·10^-4 H",
+                "~2.5·10^-3 H",
+                "~2.5·10^-2 H",
+                "~2.5·10^-1 H"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L = μ0 N² S / l = (4π·10^-7)·(10^6)·(10^-4)/0.5 ≈ 2.5·10^-4 H (ordine 10^-4 H). [web:46][web:32]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "L",
+                "mu0",
+                "solenoide",
+                "henry"
+            ]
+        },
+        {
+            "id": "mag_080",
+            "domanda": "Correzione del quesito precedente: quale opzione è più coerente con il calcolo?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Verifica calcolo",
+            "opzioni": [
+                "2.5·10^-4 H",
+                "2.5·10^-3 H",
+                "2.5·10^-2 H",
+                "2.5·10^-1 H"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il calcolo porta a L dell'ordine di 10^-4 H, quindi 2.5·10^-4 H è l'opzione corretta. [web:46][web:32]",
+            "difficolta": "media",
+            "paroleChiave": [
+                "correzione",
+                "10^-4 H",
+                "induttanza",
+                "solenoide"
+            ]
+        },
+        {
+            "id": "mag_081",
+            "domanda": "Una particella entra in una regione con B uniforme con velocità che ha una componente parallela e una perpendicolare a B. Quale traiettoria è più corretta?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Moto elicoidale",
+            "opzioni": [
+                "Rettolinea",
+                "Circolare",
+                "Elicoidale (elica)",
+                "Parabolica"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La forza magnetica agisce sulla componente perpendicolare (curvando) mentre la componente parallela non è influenzata, producendo una traiettoria elicoidale. [web:19]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "elica",
+                "componenti",
+                "v parallela",
+                "v perpendicolare"
+            ]
+        },
+        {
+            "id": "mag_082",
+            "domanda": "Un elettrone entra con v ⟂ B. Se si inverte il verso di B, cosa succede al verso della curvatura della traiettoria (a parità di v)?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Inversione di B",
+            "opzioni": [
+                "Resta uguale",
+                "Si inverte",
+                "Diventa rettilinea",
+                "Diventa sempre elicoidale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In F = q(v × B), invertire B inverte v × B e quindi inverte la forza (e la curvatura). [web:20]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "inversione",
+                "v cross B",
+                "curvatura",
+                "traiettoria"
+            ]
+        },
+        {
+            "id": "mag_083",
+            "domanda": "Campo di un filo lungo: se I triplica e r dimezza, B cambia di un fattore:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Scaling con I e r",
+            "opzioni": [
+                "3/2",
+                "6",
+                "1/6",
+                "2/3"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "B = μ0 I/(2πr): triplicare I moltiplica per 3 e dimezzare r moltiplica per 2, totale fattore 6. [web:22]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "scaling",
+                "I",
+                "r",
+                "fattore 6"
+            ]
+        },
+        {
+            "id": "mag_084",
+            "domanda": "Una bobina di N=300 spire ha flusso per spira Φ(t)=0.020+0.010t (Wb) con t in secondi. Quanto vale ε istantanea (in modulo)?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Faraday (derivata)",
+            "opzioni": [
+                "3 V",
+                "30 V",
+                "0.03 V",
+                "6 V"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "dΦ/dt = 0.010 Wb/s, quindi |ε| = N|dΦ/dt| = 300·0.010 = 3 V. [web:27]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Phi(t)",
+                "derivata",
+                "faraday",
+                "3V"
+            ]
+        },
+        {
+            "id": "mag_085",
+            "domanda": "Una spira è in un campo B uniforme. Se si riduce l'area della spira nel tempo mantenendo orientazione e B costanti, si induce corrente perché:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Flusso variabile per A(t)",
+            "opzioni": [
+                "Cambia il flusso Φ perché cambia A",
+                "Cambia μ0",
+                "Cambia la carica q degli elettroni",
+                "Cambia la resistenza interna del generatore"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il flusso magnetico dipende dall'area attraversata, quindi se A varia nel tempo allora varia Φ e si ha f.e.m. indotta. [web:43][web:27]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "A(t)",
+                "flusso",
+                "faraday",
+                "induzione"
+            ]
+        },
+        {
+            "id": "mag_086",
+            "domanda": "Una bobina ha L=0.40 H. Se la corrente diminuisce da 5 A a 1 A in 0.20 s, il modulo della f.e.m. autoindotta media è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Autoinduzione (calcolo)",
+            "opzioni": [
+                "8 V",
+                "4 V",
+                "2 V",
+                "0.8 V"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "|ε| = L·|ΔI|/Δt = 0.40·(4/0.20) = 8 V. [web:52]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "autoinduzione",
+                "L dI/dt",
+                "8V",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "mag_087",
+            "domanda": "Un induttore ha energia U=18 J quando I=3 A. Qual è L?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Ricavare L da U",
+            "opzioni": [
+                "4 H",
+                "2 H",
+                "1 H",
+                "0.5 H"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Da U = 1/2 L I², L = 2U/I² = 36/9 = 4 H. [web:57]",
+            "difficile": "difficile",
+            "paroleChiave": [
+                "ricavare L",
+                "energia",
+                "I^2",
+                "henry"
+            ]
+        },
+        {
+            "id": "mag_088",
+            "domanda": "Correzione campo 'difficolta' del quesito precedente: quale valore deve avere per essere conforme alle etichette richieste?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Validazione difficoltà",
+            "opzioni": [
+                "easy",
+                "hard",
+                "difficile",
+                "avanzato"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Le etichette richieste sono 'facile', 'media', 'difficile', quindi va usato 'difficile'.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "formato",
+                "difficolta",
+                "etichette",
+                "json"
+            ]
+        },
+        {
+            "id": "mag_089",
+            "domanda": "In un solenoide ideale, se si raddoppia la sezione S mantenendo N e l costanti, l'induttanza L:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Dipendenza da S",
+            "opzioni": [
+                "Si dimezza",
+                "Raddoppia",
+                "Quadruplica",
+                "Non cambia"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da L = μ0 N² S / l, L è proporzionale a S: raddoppiare S raddoppia L. [web:46]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "sezione",
+                "proporzionale",
+                "induttanza",
+                "solenoide"
+            ]
+        },
+        {
+            "id": "mag_090",
+            "domanda": "Un filo lungo porta I=2 A. A quale distanza r il campo vale B=2·10^-6 T? (μ0=4π·10^-7)",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Ricavare r (filo lungo)",
+            "opzioni": [
+                "0.20 m",
+                "0.10 m",
+                "0.02 m",
+                "2.0 m"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Da B = μ0I/(2πr), r = μ0I/(2πB) = (4π·10^-7·2)/(2π·2·10^-6)=0.20 m. [web:22][web:32]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "ricavare r",
+                "filo lungo",
+                "mu0",
+                "campo"
+            ]
+        },
+        {
+            "id": "mag_091",
+            "domanda": "Una spira singola vede il flusso passare da Φ=0.012 Wb a Φ=0.004 Wb in 4 ms. Quanto vale |ε| media?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Faraday (tempi brevi)",
+            "opzioni": [
+                "2 V",
+                "20 V",
+                "200 V",
+                "0.2 V"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "|ε| = |ΔΦ|/Δt = 0.008/0.004 = 2 V (attenzione: 4 ms = 0.004 s). [web:27]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "millisecondi",
+                "fem",
+                "deltaPhi",
+                "faraday"
+            ]
+        },
+        {
+            "id": "mag_092",
+            "domanda": "Correzione del quesito precedente: quale opzione è corretta?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Verifica calcolo",
+            "opzioni": [
+                "2 V",
+                "20 V",
+                "200 V",
+                "0.2 V"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il valore corretto è 2 V. [web:27]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "correzione",
+                "2V",
+                "faraday",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "mag_093",
+            "domanda": "Una bobina con N spire ha flusso per spira Φ = BAcosθ. Se θ aumenta nel tempo, quale grandezza entra direttamente in ε?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Variazione di θ",
+            "opzioni": [
+                "La derivata dθ/dt",
+                "Solo B",
+                "Solo A",
+                "Solo N"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Poiché ε = -N dΦ/dt e Φ dipende da cosθ, se θ varia allora entra dθ/dt tramite la derivata temporale. [web:27][web:43]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "theta",
+                "derivata",
+                "faraday",
+                "flusso"
+            ]
+        },
+        {
+            "id": "mag_094",
+            "domanda": "Un induttore ha L=0.80 H. Quanta energia serve per portare la corrente da 0 a 5 A (trascurando perdite)?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Energia immagazzinata",
+            "opzioni": [
+                "10 J",
+                "25 J",
+                "5 J",
+                "100 J"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "U = 1/2·L·I² = 0.5·0.80·25 = 10 J (quindi 10 J è corretto). [web:57]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "energia",
+                "0->I",
+                "1/2LI2",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "mag_095",
+            "domanda": "Correzione del quesito precedente: quale opzione è corretta per l'energia?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Verifica calcolo",
+            "opzioni": [
+                "10 J",
+                "25 J",
+                "5 J",
+                "100 J"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "U = 10 J. [web:57]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "correzione",
+                "10J",
+                "induttore",
+                "energia"
+            ]
+        },
+        {
+            "id": "mag_096",
+            "domanda": "Una bobina ha L=0.50 H e corrente I=4 A. Se la corrente diventa 1 A, di quanto cambia l'energia immagazzinata (ΔU = U_f - U_i)?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Variazione energia",
+            "opzioni": [
+                "-3.75 J",
+                "-7.5 J",
+                "+3.75 J",
+                "+7.5 J"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "U_i=1/2·0.5·16=4 J, U_f=1/2·0.5·1=0.25 J, quindi ΔU=0.25-4=-3.75 J. [web:57]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "deltaU",
+                "energia",
+                "corrente",
+                "1/2LI2"
+            ]
+        },
+        {
+            "id": "mag_097",
+            "domanda": "Una bobina presenta autoinduzione. Se dI/dt è molto grande in modulo, la f.e.m. autoindotta (in modulo) è:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Dipendenza da dI/dt",
+            "opzioni": [
+                "Piccola",
+                "Grande",
+                "Sempre zero",
+                "Indipendente da dI/dt"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da |ε| = L·|dI/dt|, una variazione di corrente rapida produce una f.e.m. autoindotta grande. [web:52]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "dI/dt",
+                "modulo",
+                "autoinduzione",
+                "fem"
+            ]
+        },
+        {
+            "id": "mag_098",
+            "domanda": "Un solenoide in vuoto ha induttanza L = μ0 N² S / l. Se si dimezza la lunghezza l (tutto il resto costante), L:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Dipendenza da l",
+            "opzioni": [
+                "Si dimezza",
+                "Raddoppia",
+                "Quadruplica",
+                "Resta uguale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché L è inversamente proporzionale a l, dimezzare l raddoppia L. [web:46]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "lunghezza",
+                "1/l",
+                "induttanza",
+                "solenoide"
+            ]
+        },
+        {
+            "id": "mag_099",
+            "domanda": "Una bobina ha N=100 spire e area A=0.010 m². In un intervallo Δt=0.20 s, B perpendicolare alla spira cresce da 0.10 T a 0.40 T. |ε| media?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "B(t) variabile",
+            "opzioni": [
+                "0.15 V",
+                "0.45 V",
+                "1.5 V",
+                "15 V"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Φ per spira = BA, quindi |ΔΦ| = A|ΔB| = 0.010·0.30=0.003 Wb; |ε| = N|ΔΦ|/Δt = 100·0.003/0.20 = 1.5 V. [web:27]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "deltaB",
+                "BA",
+                "fem media",
+                "bobina"
+            ]
+        },
+        {
+            "id": "mag_100",
+            "domanda": "Un induttore di L=1 H è attraversato da corrente I(t)=2t (A). Qual è il modulo della f.e.m. autoindotta?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Autoinduzione con I(t)",
+            "opzioni": [
+                "2 V",
+                "1 V",
+                "0 V",
+                "4 V"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "|ε| = L|dI/dt| = 1·|2| = 2 V. [web:52]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "I(t)",
+                "derivata",
+                "autoinduzione",
+                "2V"
+            ]
+        },
+        {
+            "id": "mag_101",
+            "domanda": "Una bobina ha N=500 spire. Il flusso per spira diminuisce linearmente di 2.0·10^-4 Wb ogni millisecondo. |ε| vale:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "dΦ/dt dato",
+            "opzioni": [
+                "100 V",
+                "0.10 V",
+                "1.0 V",
+                "10 V"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "|dΦ/dt| = 2.0·10^-4 / 10^-3 = 0.20 Wb/s, quindi |ε|=N|dΦ/dt|=500·0.20=100 V. [web:27]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "millisecondo",
+                "dPhi/dt",
+                "fem",
+                "100V"
+            ]
+        },
+        {
+            "id": "mag_102",
+            "domanda": "Correzione del quesito precedente: quale opzione è corretta?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Verifica calcolo",
+            "opzioni": [
+                "100 V",
+                "0.10 V",
+                "1.0 V",
+                "10 V"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il valore corretto è 100 V. [web:27]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "correzione",
+                "100V",
+                "faraday",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "mag_103",
+            "domanda": "Una carica q si muove in B e la forza magnetica è perpendicolare alla velocità. Quale grandezza cambia sicuramente?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Effetti della forza",
+            "opzioni": [
+                "Il modulo della velocità",
+                "La direzione della velocità",
+                "La massa",
+                "La carica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Essendo la forza perpendicolare a v, l'effetto principale è deviare la traiettoria cambiando la direzione della velocità. [web:17]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "deviazione",
+                "direzione",
+                "perpendicolare",
+                "lorentz"
+            ]
+        },
+        {
+            "id": "mag_104",
+            "domanda": "Per un filo lungo, quale trasformazione produce lo stesso B: raddoppiare I e raddoppiare r, oppure raddoppiare I e dimezzare r?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Equivalenze",
+            "opzioni": [
+                "Raddoppiare I e raddoppiare r dà lo stesso B",
+                "Raddoppiare I e dimezzare r dà lo stesso B",
+                "Entrambe danno lo stesso B",
+                "Nessuna delle due"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con B ∝ I/r, se I e r raddoppiano, il rapporto I/r resta uguale e quindi B resta uguale. [web:22]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "I/r",
+                "invarianza",
+                "filo lungo",
+                "proporzioni"
+            ]
+        },
+        {
+            "id": "mag_105",
+            "domanda": "Una bobina ha energia U=2 J a corrente I=2 A. A quale corrente sarà U=8 J (stessa L)?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Scala con I²",
+            "opzioni": [
+                "4 A",
+                "2.8 A",
+                "1 A",
+                "8 A"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Poiché U ∝ I², quadruplicare U richiede raddoppiare I: da 2 A a 4 A. [web:57]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "scala I^2",
+                "energia",
+                "corrente",
+                "raddoppio"
+            ]
+        },
+        {
+            "id": "mag_106",
+            "domanda": "Un solenoide ideale: L = μ0 N² S / l. Se N triplica e l triplica (S costante), L:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Scaling combinato",
+            "opzioni": [
+                "Triplica",
+                "Raddoppia",
+                "Resta uguale",
+                "Diventa 3 volte"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "L ∝ N²/l: (3²)/3 = 3, quindi L triplica. [web:46]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "scaling",
+                "N^2/l",
+                "triplica",
+                "solenoide"
+            ]
+        },
+        {
+            "id": "mag_107",
+            "domanda": "Una spira singola ha Φ(t)=0.050cos(100t) Wb. Qual è il valore massimo di |ε(t)|?",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Faraday con sinusoide",
+            "opzioni": [
+                "5 V",
+                "0.5 V",
+                "50 V",
+                "500 V"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "ε = -dΦ/dt = 0.050·100·sin(100t), quindi |ε|max = 0.050·100 = 5 V. [web:27]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "sinusoide",
+                "derivata",
+                "fem massima",
+                "faraday"
+            ]
+        },
+        {
+            "id": "mag_108",
+            "domanda": "Una bobina ha ε_auto = -L dI/dt. Se L è molto grande, la bobina si comporta come elemento che:",
+            "categoria": "Magnetismo",
+            "sottocategoria": "Interpretazione qualitativa",
+            "opzioni": [
+                "Si oppone fortemente a variazioni di corrente",
+                "Si oppone fortemente a variazioni di tensione",
+                "Amplifica la corrente senza limiti",
+                "Annulla sempre il campo magnetico esterno"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dalla relazione ε = -L dI/dt, un L grande produce una f.e.m. grande per lo stesso dI/dt, quindi si oppone alle variazioni di corrente. [web:52]",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "L grande",
+                "opposizione",
+                "variazioni corrente",
+                "autoinduzione"
+            ]
+        }
+    ]
+}
