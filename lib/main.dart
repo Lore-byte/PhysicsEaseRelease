@@ -357,13 +357,6 @@ class _MyAppState extends State<MyApp> {
   void _onItemTapped(int index) {
     FocusScope.of(context).unfocus();
 
-    if (_selectedIndex != index) {
-      final currentNavigator = _navigatorKeys[_selectedIndex].currentState;
-      if (currentNavigator?.canPop() ?? false) {
-        currentNavigator!.popUntil((route) => route.isFirst);
-      }
-    }
-
     if (_selectedIndex == index) {
       _navigatorKeys[index].currentState?.popUntil((route) => route.isFirst);
 
