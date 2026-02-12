@@ -97,7 +97,14 @@ class _FavoritesPageState extends State<FavoritesPage> {
                 forceLatex: true,
               )
                   : Text('Formula non disponibile', style: TextStyle(fontStyle: FontStyle.italic, color: Theme.of(context).colorScheme.error)),
-              trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+              trailing: IconButton(
+                icon: Icon(Icons.star, color: Theme.of(context).colorScheme.primary),
+                tooltip: 'Rimuovi dai preferiti',
+                onPressed: () {
+                  widget.onToggleFavorite(formula.id);
+                  widget.setGlobalAppBarVisibility(true);
+                },
+              ),
               onTap: () async {
                 widget.setGlobalAppBarVisibility(false); // NASCONDI PRIMA DI APRIRE
                 await Navigator.of(context).push(
