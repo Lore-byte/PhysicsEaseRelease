@@ -1899,6 +1899,1706 @@
         "1/2CV^2",
         "joule"
       ]
+    },
+    {
+      "id": "els_096",
+      "domanda": "Perché la carica elettrica si dice 'quantizzata'?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Proprietà della carica",
+      "opzioni": [
+        "Può assumere qualsiasi valore reale arbitrario",
+        "Esiste solo in multipli interi di una carica elementare",
+        "Si misura solo in chilogrammi",
+        "È sempre nulla in natura"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La carica elettrica è quantizzata perché esiste sempre come multiplo intero della carica elementare $e \\approx 1{,}6 \\times 10^{-19} \\, C$ (carica dell'elettrone o del protone).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "quantizzazione",
+        "carica elementare",
+        "multipli interi"
+      ]
+    },
+    {
+      "id": "els_097",
+      "domanda": "In un sistema isolato formato da più corpi carichi, cosa accade alla carica totale nel tempo?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Conservazione della carica",
+      "opzioni": [
+        "Diminuisce sempre",
+        "Aumenta sempre",
+        "Rimane costante",
+        "Oscilla periodicamente"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per il principio di conservazione della carica, in un sistema isolato la carica totale rimane costante: le cariche possono redistribuirsi ma la somma algebrica non cambia.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conservazione",
+        "sistema isolato",
+        "carica totale"
+      ]
+    },
+    {
+      "id": "els_098",
+      "domanda": "Quale delle seguenti affermazioni sul campo elettrico è corretta?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Campo elettrico",
+      "opzioni": [
+        "Esiste solo in presenza di cariche in movimento",
+        "È una grandezza scalare",
+        "È definito in ogni punto dello spazio anche in assenza di cariche di prova",
+        "Ha sempre lo stesso valore in tutti i punti"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il campo elettrico è una proprietà dello spazio definita in ogni punto, indipendentemente dalla presenza di cariche di prova. È una grandezza vettoriale che descrive come una carica influenza lo spazio circostante.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "campo elettrico",
+        "spazio",
+        "grandezza vettoriale"
+      ]
+    },
+    {
+      "id": "els_099",
+      "domanda": "Perché il campo elettrico all'interno di un conduttore in equilibrio elettrostatico è nullo?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Conduttori in equilibrio",
+      "opzioni": [
+        "Perché non ci sono cariche nel conduttore",
+        "Perché le cariche mobili si ridistribuiscono fino ad annullare qualsiasi campo interno",
+        "Perché il conduttore è sempre neutro",
+        "Perché il campo viene assorbito dal materiale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un conduttore in equilibrio, le cariche libere si ridistribuiscono sulla superficie in modo tale da annullare ogni campo elettrico interno. Se ci fosse campo interno, le cariche continuerebbero a muoversi.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "conduttore",
+        "equilibrio",
+        "campo interno nullo"
+      ]
+    },
+    {
+      "id": "els_100",
+      "domanda": "Perché le linee di campo elettrico non possono mai incrociarsi?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Linee di campo",
+      "opzioni": [
+        "Per convenzione grafica",
+        "Perché il campo elettrico in un punto ha una sola direzione ben definita",
+        "Perché si respingono tra loro",
+        "Perché sono sempre rettilinee"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Le linee di campo rappresentano la direzione del vettore campo elettrico. Se si incrociassero, in quel punto il campo avrebbe due direzioni diverse contemporaneamente, il che è impossibile per una grandezza vettoriale.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "linee di campo",
+        "direzione",
+        "unicità"
+      ]
+    },
+    {
+      "id": "els_101",
+      "domanda": "Una carica puntiforme positiva è isolata nello spazio. Come sono orientate le linee di campo elettrico?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Linee di campo",
+      "opzioni": [
+        "Entrano radialmente verso la carica",
+        "Escono radialmente dalla carica",
+        "Sono chiuse su se stesse",
+        "Sono parallele tra loro"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per convenzione, le linee di campo elettrico escono dalle cariche positive e entrano in quelle negative. Da una carica positiva isolata le linee divergono radialmente verso l'infinito.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "linee di campo",
+        "carica positiva",
+        "radiali"
+      ]
+    },
+    {
+      "id": "els_102",
+      "domanda": "Cosa rappresenta fisicamente una superficie equipotenziale?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Superfici equipotenziali",
+      "opzioni": [
+        "Una superficie su cui la carica è costante",
+        "Una superficie su cui il potenziale elettrico ha lo stesso valore in ogni punto",
+        "Una superficie su cui il campo elettrico è massimo",
+        "Una superficie sempre sferica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una superficie equipotenziale è il luogo dei punti dello spazio che hanno lo stesso potenziale elettrico. Non serve compiere lavoro per spostare una carica lungo una tale superficie.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "equipotenziale",
+        "potenziale costante",
+        "lavoro nullo"
+      ]
+    },
+    {
+      "id": "els_103",
+      "domanda": "Quale relazione geometrica esiste tra le linee di campo elettrico e le superfici equipotenziali?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Campo e potenziale",
+      "opzioni": [
+        "Sono sempre parallele",
+        "Sono sempre coincidenti",
+        "Sono sempre perpendicolari",
+        "Non hanno alcuna relazione"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Le linee di campo elettrico sono sempre perpendicolari alle superfici equipotenziali. Questo perché il campo punta nella direzione di massima variazione del potenziale.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "linee di campo",
+        "equipotenziali",
+        "perpendicolari"
+      ]
+    },
+    {
+      "id": "els_104",
+      "domanda": "Perché la superficie di un conduttore in equilibrio elettrostatico è una superficie equipotenziale?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Conduttori e potenziale",
+      "opzioni": [
+        "Perché il campo interno è nullo quindi tutto il conduttore ha lo stesso potenziale",
+        "Perché il conduttore è sempre neutro",
+        "Perché è fatto di metallo",
+        "Perché attrae tutte le cariche"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Poiché il campo elettrico interno è nullo, non c'è differenza di potenziale tra punti interni. L'intero conduttore (compresa la superficie) è allo stesso potenziale elettrico.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "conduttore",
+        "equipotenziale",
+        "campo nullo"
+      ]
+    },
+    {
+      "id": "els_105",
+      "domanda": "Un elettrone viene lasciato libero in un campo elettrico uniforme. In che direzione si muoverà?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Moto di cariche",
+      "opzioni": [
+        "Nella direzione del campo elettrico",
+        "Nella direzione opposta al campo elettrico",
+        "Perpendicolarmente al campo",
+        "Non si muove"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'elettrone ha carica negativa, quindi la forza elettrica $\\vec{F} = q\\vec{E}$ è opposta al campo elettrico. L'elettrone si muove verso le zone a potenziale più alto, contro il campo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "elettrone",
+        "carica negativa",
+        "direzione moto"
+      ]
+    },
+    {
+      "id": "els_106",
+      "domanda": "Quale tipo di energia possiede una carica ferma in un campo elettrico?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Energia potenziale",
+      "opzioni": [
+        "Solo energia cinetica",
+        "Solo energia potenziale elettrica",
+        "Sia cinetica che potenziale",
+        "Energia termica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una carica ferma non ha energia cinetica ma possiede energia potenziale elettrica data dalla sua posizione nel campo elettrico: $U = qV$, dove $V$ è il potenziale nel punto considerato.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "energia potenziale",
+        "carica ferma",
+        "campo elettrico"
+      ]
+    },
+    {
+      "id": "els_107",
+      "domanda": "Come varia l'energia potenziale elettrica di una carica positiva che si muove spontaneamente in un campo elettrico?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Energia e lavoro",
+      "opzioni": [
+        "Aumenta sempre",
+        "Diminuisce sempre",
+        "Rimane costante",
+        "Dipende dalla massa della carica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una carica positiva si muove spontaneamente verso potenziali più bassi (nel verso del campo), quindi la sua energia potenziale elettrica diminuisce mentre aumenta l'energia cinetica.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "energia potenziale",
+        "moto spontaneo",
+        "conservazione energia"
+      ]
+    },
+    {
+      "id": "els_108",
+      "domanda": "Il teorema di Gauss afferma che il flusso del campo elettrico attraverso una superficie chiusa dipende da:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Teorema di Gauss",
+      "opzioni": [
+        "La forma della superficie",
+        "La carica totale racchiusa dalla superficie",
+        "La dimensione della superficie",
+        "Il materiale di cui è fatta la superficie"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il teorema di Gauss stabilisce che $\\Phi = Q_{int}/\\varepsilon_0$: il flusso dipende solo dalla carica totale racchiusa, non dalla forma, dimensione o materiale della superficie.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Gauss",
+        "flusso",
+        "carica racchiusa"
+      ]
+    },
+    {
+      "id": "els_109",
+      "domanda": "Perché il teorema di Gauss è particolarmente utile per calcolare il campo elettrico in situazioni con simmetria?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Applicazioni di Gauss",
+      "opzioni": [
+        "Perché si può scegliere una superficie gaussiana su cui il campo è costante o nullo",
+        "Perché funziona solo in casi simmetrici",
+        "Perché elimina la costante dielettrica",
+        "Perché rende il campo sempre uniforme"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Con simmetria (sferica, cilindrica, planare) si può scegliere una superficie gaussiana su cui $\\vec{E}$ è costante in modulo e parallelo alla normale, semplificando enormemente il calcolo del flusso.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Gauss",
+        "simmetria",
+        "superficie gaussiana"
+      ]
+    },
+    {
+      "id": "els_110",
+      "domanda": "Una carica puntiforme $+Q$ è posta al centro di una sfera conduttrice cava scarica. Cosa accade alle cariche sulla superficie interna ed esterna del conduttore?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Induzione elettrostatica",
+      "opzioni": [
+        "Rimangono distribuite uniformemente",
+        "Sulla superficie interna si distribuisce $-Q$, su quella esterna $+Q$",
+        "Si annullano completamente",
+        "Tutte le cariche vanno sulla superficie esterna"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per induzione, sulla superficie interna del conduttore si distribuisce una carica $-Q$ (attratta da $+Q$), mentre sulla superficie esterna compare $+Q$ per conservazione della carica.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "induzione",
+        "conduttore cavo",
+        "distribuzione carica"
+      ]
+    },
+    {
+      "id": "els_111",
+      "domanda": "Quale delle seguenti affermazioni sulla gabbia di Faraday è corretta?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Schermatura elettrostatica",
+      "opzioni": [
+        "Protegge l'interno da campi elettrici statici esterni",
+        "Protegge solo da campi magnetici",
+        "Funziona solo se è completamente chiusa senza aperture",
+        "Deve essere spessa almeno 10 cm"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Una gabbia di Faraday è una struttura conduttrice che scherma l'interno da campi elettrici esterni statici. Le cariche si ridistribuiscono sulla superficie esterna annullando il campo interno.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "Faraday",
+        "schermatura",
+        "campo elettrico"
+      ]
+    },
+    {
+      "id": "els_112",
+      "domanda": "In un condensatore carico isolato, l'energia elettrostatica è immagazzinata:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Energia nei condensatori",
+      "opzioni": [
+        "Solo sulle armature metalliche",
+        "Nel campo elettrico tra le armature",
+        "Nei fili di collegamento",
+        "Non è immagazzinata ma dispersa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'energia elettrostatica di un condensatore è localizzata nel campo elettrico presente nello spazio tra le armature. Il campo elettrico rappresenta una forma di energia distribuita nello spazio.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "energia",
+        "condensatore",
+        "campo elettrico"
+      ]
+    },
+    {
+      "id": "els_113",
+      "domanda": "Cosa accade alla capacità di un condensatore se si raddoppia la distanza tra le armature mantenendo tutto il resto costante?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Capacità e geometria",
+      "opzioni": [
+        "Raddoppia",
+        "Si dimezza",
+        "Quadruplica",
+        "Si riduce a un quarto"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per un condensatore piano $C = \\varepsilon_0 A/d$: la capacità è inversamente proporzionale alla distanza. Raddoppiando $d$, la capacità si dimezza.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "capacità",
+        "distanza",
+        "proporzionalità inversa"
+      ]
+    },
+    {
+      "id": "els_114",
+      "domanda": "Perché inserire un dielettrico tra le armature di un condensatore aumenta la capacità?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Dielettrici",
+      "opzioni": [
+        "Perché aumenta la carica sulle armature",
+        "Perché le molecole si polarizzano riducendo il campo elettrico effettivo",
+        "Perché aumenta la distanza tra le armature",
+        "Perché il dielettrico conduce corrente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il dielettrico si polarizza creando un campo opposto a quello originario. Il campo risultante diminuisce, quindi a parità di carica la differenza di potenziale è minore: $C = Q/V$ aumenta.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "dielettrico",
+        "polarizzazione",
+        "capacità"
+      ]
+    },
+    {
+      "id": "els_115",
+      "domanda": "Due condensatori identici sono collegati prima in serie poi in parallelo. In quale configurazione la capacità equivalente è maggiore?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Condensatori in serie e parallelo",
+      "opzioni": [
+        "In serie",
+        "In parallelo",
+        "È uguale in entrambi i casi",
+        "Dipende dalla tensione applicata"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In parallelo le capacità si sommano ($C_{eq} = C_1 + C_2$), mentre in serie diminuiscono ($1/C_{eq} = 1/C_1 + 1/C_2$). La configurazione in parallelo dà sempre capacità maggiore.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "serie",
+        "parallelo",
+        "capacità equivalente"
+      ]
+    },
+    {
+      "id": "els_116",
+      "domanda": "Un dipolo elettrico è costituito da:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Dipolo elettrico",
+      "opzioni": [
+        "Due cariche uguali dello stesso segno",
+        "Due cariche uguali di segno opposto separate da una distanza",
+        "Una singola carica in movimento",
+        "Un campo elettrico uniforme"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un dipolo elettrico è un sistema costituito da due cariche uguali e opposte ($+q$ e $-q$) separate da una distanza $d$. Il momento di dipolo è $\\vec{p} = q\\vec{d}$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "dipolo",
+        "cariche opposte",
+        "momento dipolare"
+      ]
+    },
+    {
+      "id": "els_117",
+      "domanda": "Un dipolo elettrico posto in un campo elettrico uniforme subisce:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Dipolo in campo esterno",
+      "opzioni": [
+        "Una forza netta e una coppia meccanica",
+        "Solo una coppia meccanica che tende ad allinearlo al campo",
+        "Solo una forza traslazionale",
+        "Nessun effetto"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un campo uniforme, le forze sulle due cariche sono uguali e opposte (forza netta nulla), ma agisce una coppia che tende ad allineare il dipolo con il campo elettrico.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "dipolo",
+        "campo uniforme",
+        "coppia meccanica"
+      ]
+    },
+    {
+      "id": "els_118",
+      "domanda": "Perché su un conduttore con superficie appuntita (effetto punta) il campo elettrico è più intenso?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Effetto punta",
+      "opzioni": [
+        "Perché la densità superficiale di carica è maggiore sulle zone con raggio di curvatura minore",
+        "Perché ci sono più elettroni sulle punte",
+        "Perché le punte sono fatte di materiale diverso",
+        "Perché le punte sono sempre positive"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Su superfici con raggio di curvatura piccolo (punte) la densità superficiale di carica è maggiore. Di conseguenza il campo elettrico locale è più intenso, favorendo ionizzazione e scariche.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "effetto punta",
+        "densità superficiale",
+        "curvatura"
+      ]
+    },
+    {
+      "id": "els_119",
+      "domanda": "Due sfere conduttrici identiche, una carica con $+Q$ e l'altra neutra, vengono messe in contatto e poi separate. Quale sarà la carica finale su ciascuna sfera?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Condivisione di carica",
+      "opzioni": [
+        "$+Q$ e $0$",
+        "$+Q/2$ su entrambe",
+        "$+2Q$ e $-Q$",
+        "$+Q$ e $-Q$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Quando due conduttori identici si toccano, la carica totale si distribuisce equamente tra loro per raggiungere lo stesso potenziale. Carica totale $+Q$ divisa in due parti uguali: $+Q/2$ ciascuna.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "condivisione carica",
+        "contatto",
+        "conduttori identici"
+      ]
+    },
+    {
+      "id": "els_120",
+      "domanda": "La costante dielettrica relativa $\\varepsilon_r$ di un materiale è sempre:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Proprietà dielettriche",
+      "opzioni": [
+        "Minore di 1",
+        "Uguale a 1",
+        "Maggiore o uguale a 1",
+        "Negativa"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La costante dielettrica relativa $\\varepsilon_r = \\varepsilon/\\varepsilon_0$ è sempre $\\geq 1$. Per il vuoto $\\varepsilon_r = 1$, per i materiali dielettrici $\\varepsilon_r > 1$ perché riducono il campo elettrico.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "costante dielettrica",
+        "epsilon_r",
+        "maggiore di 1"
+      ]
+    },
+    {
+      "id": "els_121",
+      "domanda": "Tre cariche puntiformi uguali $+q$ sono poste ai vertici di un triangolo equilatero. Qual è la direzione della forza risultante sulla carica in un vertice?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Sovrapposizione delle forze",
+      "opzioni": [
+        "Verso il centro del triangolo",
+        "Verso l'esterno, nella direzione della bisettrice dell'angolo",
+        "Tangente al triangolo",
+        "È nulla per simmetria"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Le due forze repulsive dalle altre cariche hanno uguale intensità. La risultante punta lungo la bisettrice dell'angolo, verso l'esterno del triangolo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "sovrapposizione",
+        "simmetria",
+        "forze vettoriali"
+      ]
+    },
+    {
+      "id": "els_122",
+      "domanda": "Quale delle seguenti affermazioni sul potenziale elettrico è falsa?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Potenziale elettrico",
+      "opzioni": [
+        "È una grandezza scalare",
+        "Si misura in volt",
+        "È sempre positivo",
+        "Dipende dalla scelta del punto di riferimento"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il potenziale elettrico può essere positivo, negativo o nullo, a seconda della distribuzione di cariche e del punto di riferimento scelto (spesso l'infinito).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "potenziale",
+        "scalare",
+        "segno"
+      ]
+    },
+    {
+      "id": "els_123",
+      "domanda": "In quale punto tra due cariche $+Q$ e $-Q$ (uguali in modulo) il campo elettrico è massimo?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Campo di configurazioni",
+      "opzioni": [
+        "Nel punto medio tra le cariche",
+        "Vicino alla carica positiva",
+        "Vicino alla carica negativa",
+        "All'infinito"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per un dipolo, nel punto medio tra le cariche i due campi sono diretti nello stesso verso e si sommano, raggiungendo quindi il valore massimo lungo l'asse che le congiunge.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "dipolo",
+        "punto medio",
+        "massimo campo"
+      ]
+    },
+    {
+      "id": "els_124",
+      "domanda": "Una sfera metallica cava ha una carica $+Q$ uniformemente distribuita. Qual è il campo elettrico all'interno della cavità?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Conduttori cavi",
+      "opzioni": [
+        "Costante e diverso da zero",
+        "Decrescente verso il centro",
+        "Nullo ovunque",
+        "Infinito"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In un conduttore cavo in equilibrio, tutta la carica si distribuisce sulla superficie esterna. Il campo all'interno della cavità è nullo per il teorema di Gauss.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "conduttore cavo",
+        "campo interno",
+        "teorema di Gauss"
+      ]
+    },
+    {
+      "id": "els_125",
+      "domanda": "Qual è la relazione tra energia potenziale elettrica $U$ e potenziale elettrico $V$ per una carica $q$?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Energia e potenziale",
+      "opzioni": [
+        "$U = qV$",
+        "$U = V/q$",
+        "$U = q/V$",
+        "$U = V^2/q$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'energia potenziale elettrica è il prodotto della carica per il potenziale: $U = qV$. Il potenziale è l'energia potenziale per unità di carica.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "energia potenziale",
+        "U=qV",
+        "relazione"
+      ]
+    },
+    {
+      "id": "els_126",
+      "domanda": "Perché l'elettrizzazione per strofinio funziona?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Elettrizzazione",
+      "opzioni": [
+        "Si creano nuove cariche dal nulla",
+        "Gli elettroni vengono trasferiti da un corpo all'altro per contatto",
+        "I protoni si muovono tra i corpi",
+        "La carica totale aumenta"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per strofinio, gli elettroni superficiali vengono trasferiti da un materiale all'altro. Un corpo perde elettroni (diventa positivo), l'altro li acquista (diventa negativo). La carica totale si conserva.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "strofinio",
+        "elettroni",
+        "trasferimento"
+      ]
+    },
+    {
+      "id": "els_127",
+      "domanda": "Un materiale isolante elettrizzato per strofinio:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Isolanti e conduttori",
+      "opzioni": [
+        "Perde immediatamente la carica",
+        "Mantiene la carica localizzata nella zona strofinata",
+        "Distribuisce uniformemente la carica su tutta la superficie",
+        "Diventa un conduttore"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Negli isolanti le cariche non sono libere di muoversi, quindi rimangono localizzate dove sono state depositate per strofinio, a differenza dei conduttori.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isolante",
+        "carica localizzata",
+        "strofinio"
+      ]
+    },
+    {
+      "id": "els_128",
+      "domanda": "La polarizzazione di un dielettrico consiste in:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Polarizzazione",
+      "opzioni": [
+        "Un movimento di cariche libere",
+        "Un orientamento o deformazione delle molecole che crea dipoli",
+        "Una variazione di temperatura",
+        "Una fusione del materiale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un campo elettrico esterno, le molecole del dielettrico si orientano (dipoli permanenti) o si deformano (dipoli indotti), creando una polarizzazione che riduce il campo interno.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "polarizzazione",
+        "dielettrico",
+        "dipoli"
+      ]
+    },
+    {
+      "id": "els_129",
+      "domanda": "Il lavoro compiuto per spostare una carica positiva da un punto $A$ a potenziale $V_A = 100 \\, V$ a un punto $B$ a potenziale $V_B = 50 \\, V$ è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Lavoro e potenziale",
+      "opzioni": [
+        "Positivo (fatto dalla forza elettrica)",
+        "Negativo (fatto contro la forza elettrica)",
+        "Nullo",
+        "Infinito"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La carica positiva si muove spontaneamente verso potenziale minore. Il lavoro della forza elettrica è $W = q(V_A - V_B) > 0$, quindi è positivo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lavoro",
+        "potenziale",
+        "carica positiva"
+      ]
+    },
+    {
+      "id": "els_130",
+      "domanda": "Il campo elettrico generato da un piano infinito carico uniformemente ha la proprietà di essere:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Campo di distribuzioni",
+      "opzioni": [
+        "Proporzionale alla distanza dal piano",
+        "Inversamente proporzionale alla distanza",
+        "Costante indipendentemente dalla distanza",
+        "Nullo ovunque"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il campo generato da un piano infinito uniformemente carico è $E = \\sigma/(2\\varepsilon_0)$, costante e indipendente dalla distanza dal piano.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "piano infinito",
+        "campo uniforme",
+        "costante"
+      ]
+    },
+    {
+      "id": "els_131",
+      "domanda": "Due piastre piane parallele con cariche $+\\sigma$ e $-\\sigma$ generano tra loro un campo elettrico di intensità:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Condensatore piano",
+      "opzioni": [
+        "$E = \\sigma/\\varepsilon_0$",
+        "$E = \\sigma/(2\\varepsilon_0)$",
+        "$E = 2\\sigma/\\varepsilon_0$",
+        "$E = 0$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Tra due piastre con densità opposte $\\pm\\sigma$ i campi si sommano: $E = \\sigma/(2\\varepsilon_0) + \\sigma/(2\\varepsilon_0) = \\sigma/\\varepsilon_0$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "piastre parallele",
+        "campo",
+        "sovrapposizione"
+      ]
+    },
+    {
+      "id": "els_132",
+      "domanda": "Una particella carica accelerata in un campo elettrico uniforme subisce:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Moto in campo uniforme",
+      "opzioni": [
+        "Un moto circolare uniforme",
+        "Un moto rettilineo uniformemente accelerato",
+        "Un moto armonico",
+        "Nessun movimento"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un campo uniforme la forza $\\vec{F} = q\\vec{E}$ è costante, quindi l'accelerazione è costante e il moto è rettilineo uniformemente accelerato (come un grave).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "campo uniforme",
+        "accelerazione",
+        "moto rettilineo"
+      ]
+    },
+    {
+      "id": "els_133",
+      "domanda": "Un elettrone ($m = 9{,}1 \\times 10^{-31} \\, kg$, $q = -1{,}6 \\times 10^{-19} \\, C$) in un campo $E = 1000 \\, N/C$ subisce una forza di modulo:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Forza su cariche",
+      "opzioni": [
+        "$1{,}6 \\times 10^{-16} \\, N$",
+        "$1{,}6 \\times 10^{-19} \\, N$",
+        "$9{,}1 \\times 10^{-28} \\, N$",
+        "$1000 \\, N$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$F = |q|E = 1{,}6 \\times 10^{-19} \\cdot 1000 = 1{,}6 \\times 10^{-16} \\, N$$",
+      "difficolta": "media",
+      "paroleChiave": [
+        "forza",
+        "elettrone",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "els_134",
+      "domanda": "Il potenziale a distanza $r$ da una carica puntiforme $Q$ è proporzionale a:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Potenziale",
+      "opzioni": [
+        "$1/r$",
+        "$1/r^2$",
+        "$r$",
+        "$r^2$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il potenziale di una carica puntiforme è $V = kQ/r$, quindi proporzionale a $1/r$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "potenziale",
+        "1/r",
+        "carica puntiforme"
+      ]
+    },
+    {
+      "id": "els_135",
+      "domanda": "Qual è il potenziale elettrico al centro di una sfera conduttrice carica con raggio $R$ e carica totale $Q$?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Potenziale nei conduttori",
+      "opzioni": [
+        "$V = 0$",
+        "$V = kQ/R$",
+        "$V = kQ/R^2$",
+        "$V = \\infty$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un conduttore sferico in equilibrio, il potenziale è costante ovunque all'interno e sulla superficie: $V = kQ/R$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "sfera conduttrice",
+        "potenziale interno",
+        "costante"
+      ]
+    },
+    {
+      "id": "els_136",
+      "domanda": "La rigidità dielettrica di un materiale rappresenta:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Dielettrici",
+      "opzioni": [
+        "La sua densità",
+        "Il massimo campo elettrico sopportabile prima della scarica",
+        "La sua temperatura di fusione",
+        "La sua resistenza meccanica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La rigidità dielettrica (o campo di breakdown) è il massimo campo elettrico che un isolante può sopportare prima che si verifichi una scarica elettrica attraverso di esso.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "rigidità dielettrica",
+        "breakdown",
+        "campo massimo"
+      ]
+    },
+    {
+      "id": "els_137",
+      "domanda": "Quando un conduttore viene messo a terra, il suo potenziale diventa:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Messa a terra",
+      "opzioni": [
+        "Infinito",
+        "Zero (per convenzione)",
+        "Negativo",
+        "Uguale alla carica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La Terra viene convenzionalmente scelta come punto a potenziale zero. Mettere a terra un conduttore significa portarlo a potenziale nullo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "messa a terra",
+        "potenziale zero",
+        "terra"
+      ]
+    },
+    {
+      "id": "els_138",
+      "domanda": "Il flusso del campo elettrico attraverso una superficie dipende:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Flusso",
+      "opzioni": [
+        "Solo dall'intensità del campo",
+        "Sia dall'intensità del campo che dall'orientamento della superficie",
+        "Solo dall'area della superficie",
+        "Solo dalla carica della superficie"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il flusso $\\Phi = \\vec{E} \\cdot \\vec{A} = EA\\cos\\theta$ dipende dall'intensità del campo, dall'area e dall'angolo tra campo e normale alla superficie.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "flusso",
+        "prodotto scalare",
+        "orientamento"
+      ]
+    },
+    {
+      "id": "els_139",
+      "domanda": "Se il campo elettrico è parallelo a una superficie, il flusso attraverso quella superficie è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Flusso",
+      "opzioni": [
+        "Massimo",
+        "Nullo",
+        "Negativo",
+        "Infinito"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se $\\vec{E}$ è parallelo alla superficie, è perpendicolare alla normale ($\\theta = 90°$), quindi $\\Phi = EA\\cos(90°) = 0$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "flusso nullo",
+        "campo parallelo",
+        "coseno"
+      ]
+    },
+    {
+      "id": "els_140",
+      "domanda": "Una superficie gaussiana cubica racchiude una carica $+Q$ al suo centro. Il flusso attraverso una singola faccia del cubo è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Teorema di Gauss",
+      "opzioni": [
+        "$Q/\\varepsilon_0$",
+        "$Q/(6\\varepsilon_0)$",
+        "$6Q/\\varepsilon_0$",
+        "Zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il flusso totale è $Q/\\varepsilon_0$. Per simmetria, attraverso ciascuna delle 6 facce passa $1/6$ del flusso totale: $Q/(6\\varepsilon_0)$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "cubo",
+        "simmetria",
+        "flusso parziale"
+      ]
+    },
+    {
+      "id": "els_141",
+      "domanda": "Due cariche $+4 \\, \\mu C$ e $-4 \\, \\mu C$ sono separate da $0{,}60 \\, m$. Il momento di dipolo (in modulo) vale:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Dipolo elettrico",
+      "opzioni": [
+        "$2{,}4 \\times 10^{-6} \\, C \\cdot m$",
+        "$4{,}0 \\times 10^{-6} \\, C \\cdot m$",
+        "$6{,}7 \\times 10^{-6} \\, C \\cdot m$",
+        "$0{,}60 \\, C \\cdot m$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$p = qd = 4 \\times 10^{-6} \\cdot 0{,}60 = 2{,}4 \\times 10^{-6} \\, C \\cdot m$$",
+      "difficolta": "media",
+      "paroleChiave": [
+        "momento di dipolo",
+        "p=qd",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "els_142",
+      "domanda": "Un dipolo elettrico in un campo uniforme ha energia potenziale minima quando:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Energia del dipolo",
+      "opzioni": [
+        "È perpendicolare al campo",
+        "È allineato con il campo",
+        "È opposto al campo",
+        "È a 45° dal campo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'energia potenziale di un dipolo è $U = -\\vec{p} \\cdot \\vec{E} = -pE\\cos\\theta$. È minima quando $\\theta = 0°$, cioè quando il dipolo è allineato con il campo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "energia dipolo",
+        "allineamento",
+        "minimo"
+      ]
+    },
+    {
+      "id": "els_143",
+      "domanda": "Collegando in serie due condensatori identici da $C = 100 \\, \\mu F$, la capacità equivalente è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Condensatori in serie",
+      "opzioni": [
+        "$200 \\, \\mu F$",
+        "$100 \\, \\mu F$",
+        "$50 \\, \\mu F$",
+        "$150 \\, \\mu F$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In serie: $1/C_{eq} = 1/C + 1/C = 2/C$, quindi $C_{eq} = C/2 = 50 \\, \\mu F$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "serie",
+        "capacità equivalente",
+        "metà"
+      ]
+    },
+    {
+      "id": "els_144",
+      "domanda": "Collegando in parallelo tre condensatori da $C_1 = 10 \\, \\mu F$, $C_2 = 20 \\, \\mu F$ e $C_3 = 30 \\, \\mu F$, la capacità equivalente è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Condensatori in parallelo",
+      "opzioni": [
+        "$5 \\, \\mu F$",
+        "$20 \\, \\mu F$",
+        "$60 \\, \\mu F$",
+        "$18{,}2 \\, \\mu F$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In parallelo le capacità si sommano: $C_{eq} = 10 + 20 + 30 = 60 \\, \\mu F$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "parallelo",
+        "somma",
+        "capacità"
+      ]
+    },
+    {
+      "id": "els_145",
+      "domanda": "Un condensatore da $C = 50 \\, \\mu F$ viene caricato a $V = 200 \\, V$. Quanta energia immagazzina?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Energia condensatori",
+      "opzioni": [
+        "$1{,}0 \\, J$",
+        "$0{,}50 \\, J$",
+        "$2{,}0 \\, J$",
+        "$0{,}10 \\, J$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$U = \\frac{1}{2}CV^2 = 0{,}5 \\cdot 50 \\times 10^{-6} \\cdot 40000 = 1{,}0 \\, J$$",
+      "difficolta": "media",
+      "paroleChiave": [
+        "energia",
+        "condensatore",
+        "1/2CV^2"
+      ]
+    },
+    {
+      "id": "els_146",
+      "domanda": "Se la distanza tra le armature di un condensatore piano raddoppia mantenendo la carica costante, l'energia immagazzinata:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Energia e geometria",
+      "opzioni": [
+        "Si dimezza",
+        "Raddoppia",
+        "Rimane costante",
+        "Quadruplica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con $Q$ costante, $U = Q^2/(2C)$. Se $d$ raddoppia, $C$ si dimezza, quindi $U$ raddoppia (serve più energia per separare le cariche).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "energia",
+        "Q costante",
+        "distanza"
+      ]
+    },
+    {
+      "id": "els_147",
+      "domanda": "Una carica $q = 10 \\, nC$ viene spostata da un punto a $V_1 = 0 \\, V$ a un punto a $V_2 = 500 \\, V$. La variazione di energia potenziale è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Energia potenziale",
+      "opzioni": [
+        "$5{,}0 \\times 10^{-6} \\, J$",
+        "$5{,}0 \\times 10^{-9} \\, J$",
+        "$5{,}0 \\times 10^{-3} \\, J$",
+        "$0 \\, J$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$\\Delta U = q\\Delta V = 10 \\times 10^{-9} \\cdot 500 = 5{,}0 \\times 10^{-6} \\, J$$",
+      "difficolta": "media",
+      "paroleChiave": [
+        "variazione energia",
+        "deltaU=qdeltaV",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "els_148",
+      "domanda": "Quale configurazione di cariche produce un campo elettrico nullo in un punto particolare?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Configurazioni particolari",
+      "opzioni": [
+        "Una singola carica positiva",
+        "Due cariche uguali e dello stesso segno equidistanti dal punto",
+        "Tre cariche positive ai vertici di un triangolo equilatero (punto al centro)",
+        "Tutte le precedenti"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per simmetria, tre cariche uguali ai vertici di un triangolo equilatero producono campo nullo al centro. Anche due cariche uguali producono campo nullo nel punto medio.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "campo nullo",
+        "simmetria",
+        "cancellazione"
+      ]
+    },
+    {
+      "id": "els_149",
+      "domanda": "In quale regione dello spazio il potenziale di una carica negativa isolata è negativo?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Potenziale negativo",
+      "opzioni": [
+        "Solo vicino alla carica",
+        "Solo lontano dalla carica",
+        "Ovunque nello spazio (tranne all'infinito dove è zero)",
+        "In nessun punto"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il potenziale generato da una carica negativa $-Q$ è $V = -kQ/r < 0$ ovunque (tranne all'infinito dove $V \\to 0$).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "potenziale negativo",
+        "carica negativa",
+        "ovunque"
+      ]
+    },
+    {
+      "id": "els_150",
+      "domanda": "Due sfere conduttrici hanno raggi $R_1 = R$ e $R_2 = 2R$ e sono caricate alla stessa carica $Q$. Quale ha potenziale maggiore?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Potenziale di conduttori",
+      "opzioni": [
+        "La sfera di raggio $R$",
+        "La sfera di raggio $2R$",
+        "Hanno lo stesso potenziale",
+        "Dipende dalla distanza tra loro"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il potenziale di una sfera conduttrice è $V = kQ/R$. A parità di carica, la sfera più piccola ha potenziale maggiore (inversamente proporzionale al raggio).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "potenziale sfere",
+        "raggio",
+        "V=kQ/R"
+      ]
+    },
+    {
+      "id": "els_151",
+      "domanda": "Il campo elettrico sulla superficie di un conduttore carico è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Campo superficiale",
+      "opzioni": [
+        "Tangente alla superficie",
+        "Perpendicolare alla superficie",
+        "Parallelo alla superficie",
+        "Nullo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In equilibrio elettrostatico, il campo sulla superficie di un conduttore è sempre perpendicolare alla superficie (che è equipotenziale).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "campo superficiale",
+        "perpendicolare",
+        "conduttore"
+      ]
+    },
+    {
+      "id": "els_152",
+      "domanda": "L'intensità del campo elettrico sulla superficie di un conduttore è legata alla densità superficiale $\\sigma$ dalla relazione:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Campo e densità superficiale",
+      "opzioni": [
+        "$E = \\sigma/\\varepsilon_0$",
+        "$E = \\sigma/(2\\varepsilon_0)$",
+        "$E = 2\\sigma/\\varepsilon_0$",
+        "$E = \\sigma$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Appena fuori dalla superficie di un conduttore, il campo elettrico è $E = \\sigma/\\varepsilon_0$, perpendicolare alla superficie.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "campo superficiale",
+        "sigma",
+        "conduttore"
+      ]
+    },
+    {
+      "id": "els_153",
+      "domanda": "Quale delle seguenti è una unità alternativa per misurare il campo elettrico?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Unità di misura",
+      "opzioni": [
+        "$V/m$",
+        "$J/C$",
+        "$C/N$",
+        "$A/m$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il campo elettrico si misura in $N/C$ ma anche in $V/m$ (volt per metro), poiché $E = -\\Delta V/\\Delta x$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "unità",
+        "V/m",
+        "N/C"
+      ]
+    },
+    {
+      "id": "els_154",
+      "domanda": "Un condensatore piano ha armature di area $A = 0{,}020 \\, m^2$ distanti $d = 2{,}0 \\, mm$ con un dielettrico ($\\varepsilon_r = 4$). La capacità è circa:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Condensatore con dielettrico",
+      "opzioni": [
+        "$3{,}5 \\times 10^{-10} \\, F$",
+        "$1{,}8 \\times 10^{-10} \\, F$",
+        "$7{,}1 \\times 10^{-10} \\, F$",
+        "$8{,}9 \\times 10^{-12} \\, F$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$C = \\varepsilon_r \\varepsilon_0 A/d = 4 \\cdot 8{,}85 \\times 10^{-12} \\cdot 0{,}020/0{,}002 \\approx 3{,}5 \\times 10^{-10} \\, F$$",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "dielettrico",
+        "capacità",
+        "epsilon_r"
+      ]
+    },
+    {
+      "id": "els_155",
+      "domanda": "Perché i condensatori elettrolitici hanno una polarità definita?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Tipi di condensatori",
+      "opzioni": [
+        "Per convenzione estetica",
+        "Perché il dielettrico si forma elettrochimicamente con un verso specifico",
+        "Perché hanno campo magnetico",
+        "Non hanno polarità"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nei condensatori elettrolitici, lo strato di ossido isolante (dielettrico) si forma elettrochimicamente su un elettrodo. Invertire la polarità può danneggiare il componente.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "elettrolitico",
+        "polarità",
+        "ossido"
+      ]
+    },
+    {
+      "id": "els_156",
+      "domanda": "Una carica $Q$ è distribuita uniformemente su un anello di raggio $R$. Il campo elettrico al centro dell'anello è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Configurazioni simmetriche",
+      "opzioni": [
+        "$E = kQ/R^2$",
+        "$E = kQ/(2R^2)$",
+        "$E = 0$",
+        "$E = kQ/R$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per simmetria, ogni elemento dell'anello produce un campo che viene cancellato dall'elemento opposto. Il campo risultante al centro è nullo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "anello carico",
+        "simmetria",
+        "campo nullo"
+      ]
+    },
+    {
+      "id": "els_157",
+      "domanda": "In un sistema con due cariche $+Q$ e $-3Q$, dove si trova il punto in cui il potenziale elettrico è nullo?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Potenziale nullo",
+      "opzioni": [
+        "A metà strada tra le cariche",
+        "Più vicino alla carica $+Q$",
+        "Più vicino alla carica $-3Q$",
+        "All'infinito"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il potenziale è $V = k(Q/r_1 - 3Q/r_2) = 0$ quando $r_1 = r_2/3$, cioè più vicino alla carica positiva più piccola.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "potenziale nullo",
+        "due cariche",
+        "ragionamento"
+      ]
+    },
+    {
+      "id": "els_158",
+      "domanda": "Una carica esploratrice positiva viene rilasciata in una regione dove ci sono solo campi elettrostatici. Cosa si può affermare con certezza?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Moto di cariche",
+      "opzioni": [
+        "La sua energia cinetica aumenterà sempre",
+        "La sua energia totale (cinetica + potenziale) si conserva",
+        "Si fermerà immediatamente",
+        "Descriverà sempre un'orbita circolare"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il campo elettrostatico è conservativo: l'energia meccanica totale (cinetica + potenziale elettrica) si conserva durante il moto della carica.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "conservazione energia",
+        "campo conservativo",
+        "moto"
+      ]
+    },
+    {
+      "id": "els_159",
+      "domanda": "Quale affermazione è vera per un sistema di cariche in equilibrio elettrostatico?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Equilibrio",
+      "opzioni": [
+        "Le cariche sono tutte positive",
+        "Le cariche non si muovono e la forza netta su ciascuna è zero",
+        "Il campo elettrico è ovunque nullo",
+        "Il potenziale è ovunque uguale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In equilibrio elettrostatico, le cariche sono ferme e la forza elettrica netta su ciascuna carica è zero (anche se il campo può essere non nullo).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "equilibrio",
+        "forza netta nulla",
+        "cariche ferme"
+      ]
+    },
+    {
+      "id": "els_160",
+      "domanda": "Il potenziale elettrico è massimo:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Massimi e minimi",
+      "opzioni": [
+        "Vicino alle cariche positive",
+        "Vicino alle cariche negative",
+        "Dove il campo è nullo",
+        "All'infinito"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il potenziale è più alto vicino alle cariche positive (che sono sorgenti di potenziale positivo) e diminuisce allontanandosi da esse o avvicinandosi a cariche negative.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "potenziale massimo",
+        "cariche positive",
+        "vicinanza"
+      ]
+    },
+    {
+      "id": "els_161",
+      "domanda": "Due condensatori da $C_1 = 4 \\, \\mu F$ e $C_2 = 12 \\, \\mu F$ sono in serie. La capacità equivalente è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Condensatori in serie",
+      "opzioni": [
+        "$16 \\, \\mu F$",
+        "$8 \\, \\mu F$",
+        "$3 \\, \\mu F$",
+        "$2{,}4 \\, \\mu F$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "$$1/C_{eq} = 1/4 + 1/12 = 3/12 + 1/12 = 4/12 \\Rightarrow C_{eq} = 3 \\, \\mu F$$",
+      "difficolta": "media",
+      "paroleChiave": [
+        "serie",
+        "calcolo",
+        "reciproci"
+      ]
+    },
+    {
+      "id": "els_162",
+      "domanda": "Un campo elettrico variabile nello spazio ma costante nel tempo è detto:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Classificazione campi",
+      "opzioni": [
+        "Campo magnetico",
+        "Campo elettrostatico",
+        "Campo variabile",
+        "Campo elettromagnetico"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un campo elettrico che non varia nel tempo (anche se varia nello spazio) è un campo elettrostatico. Se variasse nel tempo, indurrebbe campi magnetici.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "elettrostatico",
+        "costante nel tempo",
+        "classificazione"
+      ]
+    },
+    {
+      "id": "els_163",
+      "domanda": "La forza elettrica tra due cariche è di natura:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Tipo di forza",
+      "opzioni": [
+        "Conservativa",
+        "Dissipativa",
+        "Nucleare",
+        "Gravitazionale"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La forza elettrica è conservativa: il lavoro compiuto non dipende dal percorso ma solo dalle posizioni iniziale e finale.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "conservativa",
+        "lavoro",
+        "percorso"
+      ]
+    },
+    {
+      "id": "els_164",
+      "domanda": "Quale proprietà NON è caratteristica di un campo conservativo?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Campi conservativi",
+      "opzioni": [
+        "Il lavoro lungo un percorso chiuso è nullo",
+        "Esiste una funzione energia potenziale",
+        "Il lavoro dipende dal percorso seguito",
+        "Il campo può essere espresso come gradiente di un potenziale"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In un campo conservativo il lavoro NON dipende dal percorso, ma solo dai punti iniziale e finale. La dipendenza dal percorso caratterizza i campi non conservativi.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "conservativo",
+        "percorso",
+        "lavoro"
+      ]
+    },
+    {
+      "id": "els_165",
+      "domanda": "Se raddoppiamo tutte le cariche di un sistema e tutte le distanze, la forza tra due cariche qualsiasi diventa:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Legge di scala",
+      "opzioni": [
+        "Uguale",
+        "Doppia",
+        "Quadrupla",
+        "La metà"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per Coulomb, $F = k(2q_1)(2q_2)/(2r)^2 = k \\cdot 4q_1q_2/(4r^2) = kq_1q_2/r^2$, quindi la forza rimane uguale.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "scala",
+        "proporzionalità",
+        "Coulomb"
+      ]
+    },
+    {
+      "id": "els_166",
+      "domanda": "Una sfera isolante carica uniformemente ha campo elettrico all'interno proporzionale a:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Sfera isolante",
+      "opzioni": [
+        "$r$ (distanza dal centro)",
+        "$1/r$",
+        "$1/r^2$",
+        "Costante"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "All'interno di una sfera isolante uniformemente carica, $E \\propto r$ (cresce linearmente con la distanza dal centro).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "sfera isolante",
+        "campo interno",
+        "proporzionale a r"
+      ]
+    },
+    {
+      "id": "els_167",
+      "domanda": "Una particella di polvere neutra viene attratta da un oggetto carico. Questo fenomeno è dovuto a:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Polarizzazione",
+      "opzioni": [
+        "Induzione elettrostatica (polarizzazione della polvere)",
+        "Magnetismo",
+        "Gravità",
+        "Errore di osservazione"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Un oggetto carico polarizza la polvere neutra per induzione, separando le cariche interne. Il lato più vicino ha carica di segno opposto, risultando in attrazione netta.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "induzione",
+        "polarizzazione",
+        "attrazione neutra"
+      ]
+    },
+    {
+      "id": "els_168",
+      "domanda": "Tre condensatori identici ($C$ ciascuno) sono collegati: due in parallelo tra loro, e questa combinazione in serie con il terzo. La capacità equivalente totale è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Reti di condensatori",
+      "opzioni": [
+        "$3C$",
+        "$C$",
+        "$2C/3$",
+        "$3C/2$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Due in parallelo danno $2C$. Questa in serie con $C$ dà: $1/C_{eq} = 1/(2C) + 1/C = 3/(2C)$, quindi $C_{eq} = 2C/3$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "rete mista",
+        "serie parallelo",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "els_169",
+      "domanda": "Un elettrone viene accelerato da fermo attraverso una differenza di potenziale di $100 \\, V$. L'energia cinetica finale è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Accelerazione di particelle",
+      "opzioni": [
+        "$100 \\, eV$",
+        "$50 \\, eV$",
+        "$200 \\, eV$",
+        "$1 \\, eV$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'energia acquisita è $\\Delta K = |q|\\Delta V = e \\cdot 100 \\, V = 100 \\, eV$. Gli elettronvolt (eV) sono un'unità naturale per queste energie.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "elettronvolt",
+        "accelerazione",
+        "energia cinetica"
+      ]
+    },
+    {
+      "id": "els_170",
+      "domanda": "Due sfere metalliche identiche sono caricate con $Q_1 = +8 \\, \\mu C$ e $Q_2 = -2 \\, \\mu C$. Si toccano e poi si separano. La carica finale su ciascuna è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Ridistribuzione carica",
+      "opzioni": [
+        "$+3 \\, \\mu C$ ciascuna",
+        "$+4 \\, \\mu C$ e $-4 \\, \\mu C$",
+        "$+6 \\, \\mu C$ e $0 \\, \\mu C$",
+        "$+5 \\, \\mu C$ e $+1 \\, \\mu C$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Carica totale: $8 - 2 = +6 \\, \\mu C$. Su conduttori identici si distribuisce equamente: $+3 \\, \\mu C$ ciascuno.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "contatto",
+        "distribuzione",
+        "sfere identiche"
+      ]
+    },
+    {
+      "id": "els_171",
+      "domanda": "Il campo elettrico generato da un disco uniformemente carico al centro, perpendicolarmente al disco, è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Configurazioni planari",
+      "opzioni": [
+        "Nullo per simmetria",
+        "Perpendicolare al disco",
+        "Parallelo al disco",
+        "Circolare"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per simmetria, il campo al centro di un disco carico è perpendicolare al piano del disco. Le componenti parallele si cancellano.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "disco carico",
+        "simmetria",
+        "perpendicolare"
+      ]
+    },
+    {
+      "id": "els_172",
+      "domanda": "La costante di Coulomb $k_e$ è legata a $\\varepsilon_0$ dalla relazione:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Costanti fondamentali",
+      "opzioni": [
+        "$k_e = 4\\pi\\varepsilon_0$",
+        "$k_e = 1/(4\\pi\\varepsilon_0)$",
+        "$k_e = \\varepsilon_0$",
+        "$k_e = 2\\pi\\varepsilon_0$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La costante di Coulomb è definita come $k_e = 1/(4\\pi\\varepsilon_0) \\approx 9{,}0 \\times 10^9 \\, N \\cdot m^2/C^2$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "costanti",
+        "k_e",
+        "epsilon_0"
+      ]
+    },
+    {
+      "id": "els_173",
+      "domanda": "In un condensatore piano, se si inserisce un dielettrico mantenendo collegato il generatore (V costante), la carica sulle armature:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Dielettrico con V costante",
+      "opzioni": [
+        "Diminuisce",
+        "Aumenta",
+        "Rimane costante",
+        "Diventa nulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con $V$ costante e $C$ che aumenta (per il dielettrico), $Q = CV$ aumenta. Il generatore fornisce più carica alle armature.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "dielettrico",
+        "V costante",
+        "Q aumenta"
+      ]
+    },
+    {
+      "id": "els_174",
+      "domanda": "Quale grandezza fisica ha le stesse dimensioni di $\\varepsilon_0 E^2$ (dove $E$ è il campo elettrico)?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Analisi dimensionale",
+      "opzioni": [
+        "Energia per unità di volume",
+        "Forza",
+        "Potenza",
+        "Carica"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La densità di energia del campo elettrico è $u = \\frac{1}{2}\\varepsilon_0 E^2$, che ha dimensioni di energia per unità di volume ($J/m^3$).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "densità energia",
+        "dimensioni",
+        "epsilon_0 E^2"
+      ]
+    },
+    {
+      "id": "els_175",
+      "domanda": "Un protone e un elettrone partono da fermo nello stesso campo elettrico uniforme. Dopo lo stesso tempo:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Dinamica comparata",
+      "opzioni": [
+        "Hanno la stessa velocità",
+        "L'elettrone ha velocità maggiore",
+        "Il protone ha velocità maggiore",
+        "Hanno percorso la stessa distanza"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Stessa forza $F = |q|E$, ma $m_e \\ll m_p$. Per $a = F/m$, l'elettrone ha accelerazione molto maggiore e quindi velocità maggiore dopo lo stesso tempo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "confronto",
+        "accelerazione",
+        "massa"
+      ]
+    },
+    {
+      "id": "els_176",
+      "domanda": "Una carica $Q$ è distribuita uniformemente su una sfera conduttrice di raggio $R$. Il campo elettrico a distanza $r < R$ (interno) vale:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Sfera conduttrice",
+      "opzioni": [
+        "$E = kQ/r^2$",
+        "$E = kQr/R^3$",
+        "$E = 0$",
+        "$E = kQ/R^2$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "All'interno di un conduttore in equilibrio il campo è sempre nullo. Tutta la carica si distribuisce sulla superficie.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "sfera conduttrice",
+        "interno",
+        "campo nullo"
+      ]
+    },
+    {
+      "id": "els_177",
+      "domanda": "Se aumentiamo l'area delle armature di un condensatore piano mantenendo costanti carica e distanza, il campo elettrico tra le armature:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Campo nel condensatore",
+      "opzioni": [
+        "Aumenta",
+        "Diminuisce",
+        "Rimane costante",
+        "Si annulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con $Q$ costante, $\\sigma = Q/A$ diminuisce se $A$ aumenta. Poiché $E = \\sigma/\\varepsilon_0$, il campo diminuisce.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "campo",
+        "area",
+        "sigma"
+      ]
+    },
+    {
+      "id": "els_178",
+      "domanda": "Una particella carica positivamente si muove in un campo elettrico uniforme subendo una decelerazione. Questo significa che:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Moto e campo",
+      "opzioni": [
+        "Si muove nel verso del campo",
+        "Si muove nel verso opposto al campo",
+        "Il campo è nullo",
+        "La carica è negativa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una carica positiva subisce forza nel verso del campo. Se decelera, significa che si muove contro il campo (verso opposto), contro la forza elettrica.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "decelerazione",
+        "moto opposto",
+        "campo"
+      ]
+    },
+    {
+      "id": "els_179",
+      "domanda": "Il lavoro per portare una carica $q$ dall'infinito a un punto a potenziale $V$ è:",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Lavoro esterno",
+      "opzioni": [
+        "$W = qV$",
+        "$W = -qV$",
+        "$W = qV^2$",
+        "$W = 0$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il lavoro della forza esterna per portare $q$ dall'infinito ($V = 0$) fino a un punto a potenziale $V$ è $W = q(V - 0) = qV$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lavoro",
+        "infinito",
+        "potenziale"
+      ]
+    },
+    {
+      "id": "els_180",
+      "domanda": "Quale delle seguenti configurazioni è impossibile in elettrostatica?",
+      "categoria": "Elettrostatica",
+      "sottocategoria": "Configurazioni impossibili",
+      "opzioni": [
+        "Una carica positiva in equilibrio stabile solo sotto forze elettrostatiche",
+        "Due cariche positive in equilibrio instabile",
+        "Un dipolo che ruota in un campo uniforme",
+        "Una carica negativa ferma in un punto di campo nullo"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per il teorema di Earnshaw, è impossibile avere equilibrio stabile di una carica usando solo forze elettrostatiche. L'equilibrio può essere al massimo instabile.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "equilibrio stabile",
+        "Earnshaw",
+        "impossibile"
+      ]
     }
   ]
 }

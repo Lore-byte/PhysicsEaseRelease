@@ -2411,6 +2411,2018 @@
         "quota",
         "equazione"
       ]
+    },
+    {
+      "id": "cin_121",
+      "domanda": "Un corpo si muove di **moto rettilineo uniforme**. Quale grandezza ha sicuramente modulo costante?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Comprensione MRU",
+      "opzioni": [
+        "L'accelerazione",
+        "La velocità istantanea",
+        "La forza applicata",
+        "Lo spostamento totale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel MRU la velocità istantanea è costante sia in modulo che in direzione. L'accelerazione è invece zero.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "velocità",
+        "costante"
+      ]
+    },
+    {
+      "id": "cin_122",
+      "domanda": "Due automobili percorrono la stessa strada rettilinea. La prima ha velocità media $v_1 = 50$ km/h, la seconda $v_2 = 60$ km/h. Quale affermazione è corretta?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Velocità media vs istantanea",
+      "opzioni": [
+        "La prima automobile ha sempre velocità istantanea minore di 50 km/h",
+        "La seconda auto percorre 10 km/h più di distanza nel medesimo tempo",
+        "Entrambe hanno velocità istantanea uguale alla velocità media",
+        "La distanza percorsa in 1 ora è 50 km per la prima e 60 km per la seconda"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "La velocità media è definita come distanza totale/tempo totale. Se la media è $v_m$, allora $d = v_m \\cdot t$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "velocità media",
+        "distanza",
+        "tempo"
+      ]
+    },
+    {
+      "id": "cin_123",
+      "domanda": "Un punto materiale ha spostamento totale nullo. Che cosa possiamo affermare con certezza?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Spostamento vs distanza",
+      "opzioni": [
+        "La distanza percorsa è nulla",
+        "Il corpo era fermo",
+        "La posizione finale coincide con quella iniziale",
+        "La velocità media è zero"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Se lo spostamento $\\Delta x = 0$, allora $x_f - x_i = 0$, quindi $x_f = x_i$ (il corpo ritorna alla posizione iniziale, ma ha potuto percorrere una qualsiasi distanza).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "spostamento",
+        "posizione",
+        "finale iniziale"
+      ]
+    },
+    {
+      "id": "cin_124",
+      "domanda": "Un corpo si muove con velocità istantanea non nulla. È possibile che abbia accelerazione nulla?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Accelerazione",
+      "opzioni": [
+        "No, se il corpo si muove deve accelerare",
+        "Sì, nel moto rettilineo uniforme la velocità è costante",
+        "No, la velocità e l'accelerazione sono proporzionali",
+        "Sì, solo se la velocità diminuisce"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'accelerazione misura il **cambiamento** di velocità nel tempo. Nel MRU la velocità è costante, quindi $a = \\frac{\\Delta v}{\\Delta t} = 0$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "accelerazione",
+        "nulla",
+        "velocità costante"
+      ]
+    },
+    {
+      "id": "cin_125",
+      "domanda": "In un grafico spazio-tempo con asse orizzontale il tempo e asse verticale lo spazio, una linea **parallela all'asse delle ascisse** rappresenta:",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici s-t",
+      "opzioni": [
+        "Un moto uniformemente accelerato",
+        "Un corpo fermo",
+        "Un moto con accelerazione costante negativa",
+        "Un moto decelerato"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una linea parallela all'asse del tempo significa $\\Delta s = 0$ al passare del tempo, cioè lo spazio non cambia: il corpo è fermo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico s-t",
+        "fermo",
+        "parallelo"
+      ]
+    },
+    {
+      "id": "cin_126",
+      "domanda": "In un grafico velocità-tempo, l'**area sottesa dalla curva** rappresenta quale grandezza fisica?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici v-t",
+      "opzioni": [
+        "L'accelerazione",
+        "La massa del corpo",
+        "Lo spostamento",
+        "La potenza"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Ricordando che $v = \\frac{ds}{dt}$, integrando si ottiene $s = \\int v \\, dt$, cioè l'area sotto il grafico v-t è lo spostamento.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "grafico v-t",
+        "area",
+        "spostamento",
+        "integrale"
+      ]
+    },
+    {
+      "id": "cin_127",
+      "domanda": "Un corpo parte da fermo e accelera uniformemente per 10 secondi. In quale **intervallo di tempo** il corpo percorre la maggior distanza?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Ragionamento",
+      "opzioni": [
+        "Nei primi 5 secondi",
+        "Nel secondo intervallo di 5 secondi (dal 5° al 10°)",
+        "La distanza è uniforme nei due intervalli",
+        "Non è possibile determinarlo senza il valore di accelerazione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel MUA con partenza da fermo: $s = \\frac{1}{2}at^2$. Infatti $s(5) = \\frac{1}{2}a(5)^2 = 12.5a$, mentre $s(10) - s(5) = 50a - 12.5a = 37.5a$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "distanza",
+        "intervalli"
+      ]
+    },
+    {
+      "id": "cin_128",
+      "domanda": "Quale relazione lega velocità media, accelerazione media e tempo in un moto uniformemente accelerato?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Concetti",
+      "opzioni": [
+        "$v_m = v_0 + \\frac{1}{2}at$",
+        "$v_m = \\frac{v_0 + v_f}{2}$",
+        "$v_m = at$",
+        "$v_m = \\frac{1}{2}at^2$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La velocità media nel MUA è la media aritmetica tra velocità iniziale e finale: $v_m = \\frac{v_0 + v_f}{2}$. Questo perché l'accelerazione è costante.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "velocità media",
+        "MUA",
+        "media aritmetica"
+      ]
+    },
+    {
+      "id": "cin_129",
+      "domanda": "Se la velocità di un corpo aumenta da 10 m/s a 30 m/s in 4 secondi, qual è l'accelerazione media e quale relazione sussiste con la velocità media?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Relazioni",
+      "opzioni": [
+        "a = 5 m/s² e $v_m = 20$ m/s, quindi $v_m = 4a$",
+        "a = 10 m/s² e $v_m = 40$ m/s, quindi $v_m = a$",
+        "a = 5 m/s² e $v_m = 20$ m/s, quindi $v_m = 4a$",
+        "a = 2.5 m/s² e $v_m = 10$ m/s, quindi $v_m = 2a$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Accelerazione media: $a = \\frac{\\Delta v}{\\Delta t} = \\frac{20}{4} = 5$ m/s². Velocità media: $v_m = \\frac{10 + 30}{2} = 20$ m/s.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "accelerazione",
+        "velocità media",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "cin_130",
+      "domanda": "Un corpo cade da fermo sotto l'effetto della gravità. Quale qualità caratterizza il suo moto?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Caduta libera",
+      "opzioni": [
+        "Moto rettilineo uniforme",
+        "Moto curvilineo",
+        "Moto rettilineo uniformemente accelerato",
+        "Moto armonico"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Un corpo in caduta libera ha accelerazione costante pari a $g = 9.8$ m/s² (verso il basso), quindi moto rettilineo uniformemente accelerato.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "caduta libera",
+        "gravità",
+        "accelerazione costante"
+      ]
+    },
+    {
+      "id": "cin_131",
+      "domanda": "Da quale altezza deve cadere un corpo per raggiungere il suolo con velocità di 20 m/s? (g=10 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Caduta libera - Ragionamento",
+      "opzioni": [
+        "Basta usare $h = vt$ dove $t$ si ricava dalla media di velocità",
+        "Si usa $v^2 = v_0^2 + 2g\\Delta h$, da cui $h = \\frac{v^2}{2g} = 20$ m",
+        "È impossibile determinarlo senza il tempo di caduta",
+        "Si usa $h = \\frac{1}{2}gt^2$ ma serve il tempo e non lo conosciamo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Dalla relazione $v^2 = v_0^2 + 2g\\Delta h$ con $v_0 = 0$, si ricava: $h = \\frac{v^2}{2g} = \\frac{400}{20} = 20$ m.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "caduta libera",
+        "altezza",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_132",
+      "domanda": "Un oggetto viene lanciato verticalmente verso l'alto. Nel punto di massima altezza, l'accelerazione è:",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lanciamento verticale",
+      "opzioni": [
+        "Nulla",
+        "Massima",
+        "Pari a $g$, diretta verso il basso",
+        "Pari a $v$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L'accelerazione di gravità $g$ agisce **sempre** verso il basso, indipendentemente dal fatto che il corpo salga o scenda. Nel punto di massima altezza, $v = 0$ ma $a = g$ verso il basso.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lanciamento verticale",
+        "gravità",
+        "massima altezza"
+      ]
+    },
+    {
+      "id": "cin_133",
+      "domanda": "Un corpo è lanciato verso l'alto con velocità iniziale $v_0 = 20$ m/s. Dopo quanto tempo ritorna al punto di partenza? (g=10 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lanciamento verticale",
+      "opzioni": [
+        "$t = 1$ s",
+        "$t = 2$ s",
+        "$t = 4$ s",
+        "Dipende dalla massa del corpo"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel lanciamento verticale, il tempo per ritornare al punto di partenza è $t = \\frac{2v_0}{g} = \\frac{2 \\cdot 20}{10} = 4$ s (tempo totale di salita e discesa).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lanciamento verticale",
+        "tempo di volo",
+        "simmetria"
+      ]
+    },
+    {
+      "id": "cin_134",
+      "domanda": "Rappresenta il moto di un corpo con velocità iniziale $v_0 = 0$, sottoposto a moto uniformemente accelerato. Quale relazione descrive meglio l'andamento dello **spazio percorso** nel tempo?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Grafici",
+      "opzioni": [
+        "Lineare (proporzionale a $t$)",
+        "Parabolico (proporzionale a $t^2$)",
+        "Esponenziale",
+        "Iperbolico"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La legge oraria nel MUA con $v_0 = 0$ è $s = \\frac{1}{2}at^2$, che è una **parabola** nel piano spazio-tempo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MUA",
+        "legge oraria",
+        "parabola"
+      ]
+    },
+    {
+      "id": "cin_135",
+      "domanda": "Un corpo si muove in linea retta. Il grafico della sua accelerazione rispetto al tempo mostra una linea parallela all'asse del tempo a $a = 0$. Quale tipo di moto rappresenta?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici a-t",
+      "opzioni": [
+        "Moto uniformemente accelerato",
+        "Moto rettilineo uniforme",
+        "Caduta libera",
+        "Moto decelerato fino all'arresto"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se l'accelerazione è nulla ($a = 0$), allora $\\Delta v = 0$ e la velocità è costante, rappresentando un **moto rettilineo uniforme**.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico a-t",
+        "accelerazione nulla",
+        "MRU"
+      ]
+    },
+    {
+      "id": "cin_136",
+      "domanda": "Due proiettili sono lanciati dallo stesso punto con lo stesso modulo di velocità iniziale, ma con angoli di lancio diversi: il primo a 30° e il secondo a 60°. Quale affermazione è corretta?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico - Ragionamento",
+      "opzioni": [
+        "Il primo raggiunge distanza massima",
+        "Il secondo raggiunge distanza massima",
+        "La gittata è identica",
+        "Il primo raggiunge un'altezza maggiore"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La gittata nel moto parabolico è: $R = \\frac{v_0^2 \\sin(2\\theta)}{g}$. Poiché $\\sin(60°) = \\sin(120°)$, gli angoli 30° e 60° danno la **stessa gittata**.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto parabolico",
+        "gittata",
+        "angoli complementari"
+      ]
+    },
+    {
+      "id": "cin_137",
+      "domanda": "Un oggetto si muove con **accelerazione costante**. Se negli ultimi 2 secondi percorre 30 m, quanto spazio ha percorso nei 2 secondi precedenti?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Ragionamento",
+      "opzioni": [
+        "10 m",
+        "15 m",
+        "20 m",
+        "Non è possibile determinarlo senza altri dati"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel MUA, gli spazi percorsi in intervalli uguali di tempo stanno nel rapporto $1:3:5:7:...$. Se nei 2 s finali percorre 30 m, nei 2 s precedenti percorre 10 m (rapporto 1:3).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "intervalli uguali",
+        "distanze successive"
+      ]
+    },
+    {
+      "id": "cin_138",
+      "domanda": "Nel **moto circolare uniforme**, quale delle seguenti grandezze rimane costante?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare uniforme",
+      "opzioni": [
+        "La velocità vettoriale",
+        "L'accelerazione",
+        "La velocità scalare (modulo)",
+        "La distanza dal centro rimane costante, ma il vettore accelerazione cambia sempre"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel MCU il **modulo** della velocità è costante. Ma la velocità vettoriale cambia direzione, e c'è una accelerazione centripeta costante in modulo ma diretta verso il centro.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MCU",
+        "velocità scalare",
+        "velocità vettoriale"
+      ]
+    },
+    {
+      "id": "cin_139",
+      "domanda": "L'accelerazione centripeta nel **moto circolare uniforme** dipende da quali variabili?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare - Concetti",
+      "opzioni": [
+        "Solo dalla velocità angolare $\\omega$",
+        "Dalla velocità scalare $v$ e dal raggio $r$: $a_c = v^2/r$",
+        "Solo dal raggio $r$",
+        "Dalla frequenza $f$ e dalla massa del corpo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'accelerazione centripeta è: $a_c = \\frac{v^2}{r} = \\omega^2 r$. Dipende da velocità e raggio (o da velocità angolare e raggio).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "accelerazione centripeta",
+        "velocità",
+        "raggio"
+      ]
+    },
+    {
+      "id": "cin_140",
+      "domanda": "Un corpo si muove su una circonferenza di raggio $r$ con velocità costante $v$. Se raddoppia il raggio mantenendo costante la velocità, che cosa accade all'accelerazione centripeta?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare - Ragionamento",
+      "opzioni": [
+        "Raddoppia",
+        "Dimezza",
+        "Quadruplica",
+        "Rimane costante"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Poiché $a_c = \\frac{v^2}{r}$ e $v$ rimane costante, se $r$ raddoppia, $a_c$ diventa: $a_c' = \\frac{v^2}{2r} = \\frac{1}{2}a_c$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "accelerazione centripeta",
+        "raggio",
+        "proporzionalità inversa"
+      ]
+    },
+    {
+      "id": "cin_141",
+      "domanda": "Quale è la **differenza concettuale** tra velocità media e velocità istantanea?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Velocità - Concetti",
+      "opzioni": [
+        "La velocità media è sempre negativa, la istantanea è positiva",
+        "La velocità media rappresenta l'intero percorso in uno scatto temporale; la istantanea è il valore in un istante preciso",
+        "La velocità media dipende dalla massa; la istantanea no",
+        "Non esiste differenza, sono la stessa cosa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La velocità media è $v_m = \\frac{\\Delta x}{\\Delta t}$ su un intervallo finito. La velocità istantanea è $v = \\lim_{\\Delta t \\to 0} \\frac{\\Delta x}{\\Delta t}$ in un istante preciso (concetto di derivata).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "velocità media",
+        "velocità istantanea",
+        "limite"
+      ]
+    },
+    {
+      "id": "cin_142",
+      "domanda": "In un grafico spazio-tempo, un segmento **curvilineo** (convesso verso l'alto) cosa rappresenta?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici s-t",
+      "opzioni": [
+        "Moto rettilineo uniforme",
+        "Moto uniformemente accelerato con accelerazione positiva",
+        "Moto decelerato",
+        "Il corpo è fermo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La curvatura del grafico s-t indica cambiamento di velocità. Se è convessa verso l'alto, la pendenza aumenta, quindi accelerazione positiva.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "grafico s-t",
+        "curvatura",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_143",
+      "domanda": "Un corpo parte da fermo e raggiunge velocità $v$ in tempo $t$ con accelerazione costante. Se la stessa accelerazione agisse per il doppio del tempo, quale relazione lega le due velocità finali?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Proporzioni",
+      "opzioni": [
+        "La velocità finale raddoppia",
+        "La velocità finale quadruplica",
+        "La velocità finale rimane uguale",
+        "La velocità finale diventa zero"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel MUA: $v = at$. Se il tempo raddoppia, $v' = a(2t) = 2at = 2v$ (la velocità è proporzionale al tempo).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MUA",
+        "velocità",
+        "tempo",
+        "proporzionalità"
+      ]
+    },
+    {
+      "id": "cin_144",
+      "domanda": "Un corpo parte da fermo e percorre distanza $s$ con accelerazione costante in tempo $t$. Se la stessa accelerazione agisse per il doppio del tempo, quale relazione lega le due distanze percorse?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Proporzioni",
+      "opzioni": [
+        "La distanza raddoppia",
+        "La distanza quadruplica",
+        "La distanza non cambia",
+        "La distanza rimane uguale solo se il tempo è uguale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel MUA con $v_0 = 0$: $s = \\frac{1}{2}at^2$. Se il tempo raddoppia, $s' = \\frac{1}{2}a(2t)^2 = 4 \\cdot \\frac{1}{2}at^2 = 4s$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "distanza",
+        "quadrato del tempo"
+      ]
+    },
+    {
+      "id": "cin_145",
+      "domanda": "Un'automobile frena con decelerazione costante da 25 m/s a 0 m/s. Quale grafico della velocità nel tempo caratterizza questo moto?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici v-t",
+      "opzioni": [
+        "Una linea parallela all'asse del tempo",
+        "Una curva parabolica",
+        "Una retta inclinata verso il basso",
+        "Una linea verticale"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In un moto con accelerazione costante (anche negativa), il grafico v-t è una **retta**. Se l'accelerazione è negativa, la retta è inclinata verso il basso.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico v-t",
+        "decelerazione",
+        "retta"
+      ]
+    },
+    {
+      "id": "cin_146",
+      "domanda": "Nel moto uniformemente accelerato, la **pendenza del grafico v-t** rappresenta quale grandezza?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici v-t",
+      "opzioni": [
+        "La velocità",
+        "Lo spostamento",
+        "L'accelerazione",
+        "La massa"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La pendenza del grafico v-t è: $\\text{pendenza} = \\frac{\\Delta v}{\\Delta t} = a$ (l'accelerazione).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "grafico v-t",
+        "pendenza",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_147",
+      "domanda": "Un corpo cade verticalmente verso il basso partendo da fermo. Quale grandezza aumenta linearmente nel tempo?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Caduta libera",
+      "opzioni": [
+        "L'altezza",
+        "La velocità",
+        "L'accelerazione",
+        "La massa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nella caduta libera: $v = gt$ (velocità proporzionale al tempo, quindi aumenta linearmente).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "caduta libera",
+        "velocità",
+        "gravità",
+        "linearità"
+      ]
+    },
+    {
+      "id": "cin_148",
+      "domanda": "Un corpo cade verticalmente verso il basso partendo da fermo. Quale grandezza aumenta quadraticamente nel tempo?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Caduta libera",
+      "opzioni": [
+        "La velocità",
+        "L'accelerazione",
+        "La distanza percorsa",
+        "La forza"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nella caduta libera: $h = \\frac{1}{2}gt^2$ (altezza proporzionale al quadrato del tempo).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "caduta libera",
+        "altezza",
+        "quadrato del tempo"
+      ]
+    },
+    {
+      "id": "cin_149",
+      "domanda": "Un oggetto è lanciato verticalmente verso l'alto con velocità iniziale $v_0$. Nel punto di massima altezza, la velocità è nulla. Quale è l'unica grandezza cinematica non nulla in quel punto?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lanciamento verticale",
+      "opzioni": [
+        "Lo spostamento",
+        "La velocità",
+        "L'accelerazione di gravità",
+        "La distanza dal punto di lancio è sempre zero"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel punto di massima altezza: $v = 0$ ma $a = g$ (verso il basso, sempre agente). Lo spostamento non è nullo (l'oggetto è più in alto).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lanciamento verticale",
+        "massima altezza",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_150",
+      "domanda": "Un corpo è lanciato orizzontalmente da un'altezza $h$. Il suo moto può essere scomposto in:",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico - Scomposizione",
+      "opzioni": [
+        "Moto verticale accelerato e moto orizzontale accelerato",
+        "Moto verticale uniformemente accelerato e moto orizzontale uniforme",
+        "Moto verticale e moto orizzontale entrambi uniformi",
+        "Moto circolare"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel moto parabolico di un proiettile lanciato orizzontalmente: componente orizzontale ha $a_x = 0$ (MRU), componente verticale ha $a_y = g$ (MUA).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto parabolico",
+        "scomposizione",
+        "orizzontale verticale"
+      ]
+    },
+    {
+      "id": "cin_151",
+      "domanda": "Nel moto parabolico, la **componente orizzontale** della velocità rimane costante. Che cosa rappresenta fisicamente questa affermazione?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico - Concetti",
+      "opzioni": [
+        "L'oggetto non subisce alcuna forza",
+        "Non c'è accelerazione orizzontale (in assenza di resistenza dell'aria)",
+        "La gravità agisce solo verticalmente",
+        "Tutte le affermazioni precedenti sono corrette"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "La gravità agisce **solo verticalmente** ($F = mg$ downward), quindi $a_x = 0$ in assenza di attrito. Per questo, la componente orizzontale della velocità rimane quella del lancio.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto parabolico",
+        "componente orizzontale",
+        "gravità"
+      ]
+    },
+    {
+      "id": "cin_152",
+      "domanda": "Un corpo si muove su una retta e il suo grafico spazio-tempo è una parabola con vertice a $t = 0$. Che cosa possiamo dedurre?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici - Deduzioni",
+      "opzioni": [
+        "A $t = 0$ la velocità è massima e l'accelerazione è nulla",
+        "A $t = 0$ la velocità è nulla",
+        "A $t = 0$ l'accelerazione è nulla",
+        "A $t = 0$ il corpo è fermo ma continua ad accelerare"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il vertice della parabola nel grafico s-t rappresenta il punto dove $\\frac{ds}{dt} = 0$, cioè dove la velocità è nulla.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "grafico s-t",
+        "parabola",
+        "vertice",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_153",
+      "domanda": "Due automobili si muovono sulla stessa strada rettilinea. Se hanno la **stessa velocità media** ma diversa velocità istantanea, quale affermazione è vera?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Velocità - Ragionamento",
+      "opzioni": [
+        "Percorrono la stessa distanza in tempi diversi",
+        "Hanno accelerazione nulla",
+        "La loro velocità istantanea è sempre la stessa",
+        "Una deve accelerare e una decelerare durante il percorso"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Se la velocità media è uguale ma la istantanea diversa, significa che i moti non sono uniformi. Una auto deve raggiungere velocità diverse da quella media per tornare a quella media complessiva.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "velocità media",
+        "velocità istantanea",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_154",
+      "domanda": "Nel moto circolare uniforme, se la **frequenza raddoppia**, quale effetto ha sul **periodo**?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare - Frequenza",
+      "opzioni": [
+        "Il periodo raddoppia",
+        "Il periodo dimezza",
+        "Il periodo rimane costante",
+        "Il periodo diventa infinito"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La frequenza e il periodo sono inversamente proporzionali: $T = \\frac{1}{f}$. Se $f' = 2f$, allora $T' = \\frac{1}{2f} = \\frac{T}{2}$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "periodo",
+        "frequenza",
+        "MCU",
+        "inversa proporzionalità"
+      ]
+    },
+    {
+      "id": "cin_155",
+      "domanda": "In un moto uniformemente accelerato da fermo, gli spazi percorsi in intervalli di tempo uguali consecutivi sono nel rapporto:",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Spazi in tempi uguali",
+      "opzioni": [
+        "$1:1:1:...$",
+        "$1:2:3:...$",
+        "$1:3:5:7:...$",
+        "$1:4:9:16:...$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel MUA con $v_0 = 0$, gli spazi nei successivi intervalli di tempo $\\tau$ sono: $s_1 = \\frac{1}{2}a\\tau^2$, $s_2 - s_1 = \\frac{3}{2}a\\tau^2$, etc., nel rapporto $1:3:5:7:...$",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "MUA",
+        "spazi",
+        "intervalli uguali",
+        "rapporto dispari"
+      ]
+    },
+    {
+      "id": "cin_156",
+      "domanda": "Un'auto accelera uniformemente da 0 a 100 km/h in 10 secondi. Quale distanza percorre in questo intervallo?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Applicazione",
+      "opzioni": [
+        "Usa $v = at$ per trovare $a$, poi $s = \\frac{1}{2}at^2$",
+        "Usa $v_m = \\frac{v_0 + v_f}{2}$ e $s = v_m \\cdot t$",
+        "Usa solo la formula $s = vt$",
+        "Entrambe le opzioni A e B sono corrette"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Entrambi i metodi sono validi: (A) Trovare $a = \\frac{v}{t}$ quindi $s = \\frac{1}{2}at^2$; (B) Usare direttamente $s = \\frac{v_0 + v_f}{2} \\cdot t$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "distanza",
+        "metodi equivalenti"
+      ]
+    },
+    {
+      "id": "cin_157",
+      "domanda": "Un oggetto segue un percorso curvilineo. Quale affermazione è **sempre vera**?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto curvilineo",
+      "opzioni": [
+        "Ha accelerazione nulla",
+        "Ha accelerazione tangenziale",
+        "Ha almeno una componente di accelerazione diversa da zero",
+        "La velocità è costante"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Un moto curvilineo implica cambio di **direzione** della velocità, il che richiede **sempre** una componente di accelerazione centripeta (almeno). Quindi $a \\neq 0$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto curvilineo",
+        "accelerazione",
+        "direzione"
+      ]
+    },
+    {
+      "id": "cin_158",
+      "domanda": "Nel moto rettilineo uniforme, il grafico accelerazione-tempo è:",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici a-t",
+      "opzioni": [
+        "Una retta con pendenza positiva",
+        "Una parabola",
+        "Una retta parallela all'asse del tempo a $a = 0$",
+        "Non è possibile disegnare tale grafico"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel MRU l'accelerazione è $a = 0$, quindi il grafico è una **retta parallela all'asse del tempo** (linea orizzontale).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "grafico a-t",
+        "accelerazione zero"
+      ]
+    },
+    {
+      "id": "cin_159",
+      "domanda": "Un'auto percorre la prima metà del percorso a 60 km/h e la seconda metà a 100 km/h. Qual è la velocità media su tutto il percorso?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Velocità media - Trappola",
+      "opzioni": [
+        "80 km/h (media aritmetica)",
+        "Minore di 80 km/h",
+        "Maggiore di 80 km/h",
+        "Dipende dalla distanza totale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La velocità media è $\\frac{\\text{distanza totale}}{\\text{tempo totale}}$. Se la prima metà a 60 km/h impiega più tempo della seconda a 100 km/h, la media è vicina a 60 km/h (minore di 80).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "velocità media",
+        "distanze uguali",
+        "velocità diverse"
+      ]
+    },
+    {
+      "id": "cin_160",
+      "domanda": "Un corpo percorre 100 m in 10 s con accelerazione costante. Se partiva da fermo, quale è stata l'accelerazione?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Calcolo",
+      "opzioni": [
+        "Usa la formula $s = v_0 t + \\frac{1}{2}at^2$ con $v_0 = 0$, quindi $a = \\frac{2s}{t^2} = 2$ m/s²",
+        "$a = \\frac{s}{t} = 10$ m/s²",
+        "$a = \\frac{v}{t}$ ma serve la velocità finale",
+        "Non si può determinare senza il valore di velocità"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Con $v_0 = 0$: $s = \\frac{1}{2}at^2 \\Rightarrow 100 = \\frac{1}{2}a(100) \\Rightarrow a = 2$ m/s².",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "accelerazione",
+        "spazio",
+        "tempo"
+      ]
+    },
+    {
+      "id": "cin_161",
+      "domanda": "Un corpo è sottoposto a **accelerazione centripeta** costante di 10 m/s². Quale affermazione è corretta?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Accelerazione centripeta",
+      "opzioni": [
+        "Nel moto circolare uniforme, l'accelerazione centripeta è sempre diretta verso il centro",
+        "L'accelerazione centripeta causa una variazione del modulo della velocità",
+        "Non esiste accelerazione in moto circolare uniforme",
+        "L'accelerazione centripeta è tangente alla traiettoria"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'accelerazione centripeta nel MCU è sempre **radiale** e diretta verso il centro della circonferenza. Causa cambio di direzione, non di modulo della velocità.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "accelerazione centripeta",
+        "MCU",
+        "direzione"
+      ]
+    },
+    {
+      "id": "cin_162",
+      "domanda": "Nel moto di un proiettile lanciato all'orizzontale, come variano le componenti della velocità nel tempo?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico - Componenti",
+      "opzioni": [
+        "Entrambe rimangono costanti",
+        "Entrambe aumentano linearmente",
+        "$v_x$ rimane costante, $v_y$ aumenta linearmente",
+        "$v_x$ aumenta, $v_y$ rimane costante"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel moto parabolico orizzontale: $v_x = v_0$ (costante, no accelerazione orizzontale); $v_y = gt$ (aumenta linearmente per accelerazione di gravità).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto parabolico",
+        "componenti velocità",
+        "gravità"
+      ]
+    },
+    {
+      "id": "cin_163",
+      "domanda": "Un corpo cade verticalmente per 5 secondi. La velocità che raggiunge è (g=10 m/s²):",
+      "categoria": "Cinematica",
+      "sottocategoria": "Caduta libera - Calcolo",
+      "opzioni": [
+        "50 m/s",
+        "125 m/s",
+        "25 m/s",
+        "Non è possibile determinarla senza l'altezza iniziale"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nella caduta libera da fermo: $v = gt = 10 \\cdot 5 = 50$ m/s. Non dipende dall'altezza iniziale ma dal tempo di caduta.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "caduta libera",
+        "velocità",
+        "tempo"
+      ]
+    },
+    {
+      "id": "cin_164",
+      "domanda": "Un corpo cade verticalmente per 5 secondi. La distanza percorsa è (g=10 m/s²):",
+      "categoria": "Cinematica",
+      "sottocategoria": "Caduta libera - Calcolo",
+      "opzioni": [
+        "125 m",
+        "50 m",
+        "250 m",
+        "25 m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nella caduta libera: $h = \\frac{1}{2}gt^2 = \\frac{1}{2} \\cdot 10 \\cdot 25 = 125$ m.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "caduta libera",
+        "altezza",
+        "tempo"
+      ]
+    },
+    {
+      "id": "cin_165",
+      "domanda": "Un oggetto è lanciato verticalmente verso l'alto e ritorna al punto di lancio. La time in aria è di 4 secondi. Quale era la velocità iniziale? (g=10 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lanciamento verticale - Calcolo",
+      "opzioni": [
+        "20 m/s",
+        "40 m/s",
+        "10 m/s",
+        "80 m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel lanciamento verticale: $t_{tot} = \\frac{2v_0}{g} \\Rightarrow 4 = \\frac{2v_0}{10} \\Rightarrow v_0 = 20$ m/s.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lanciamento verticale",
+        "velocità iniziale",
+        "tempo di volo"
+      ]
+    },
+    {
+      "id": "cin_166",
+      "domanda": "Quale è la relazione tra spostamento, velocità **media** e tempo in un moto qualsiasi?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Relazioni cinematiche",
+      "opzioni": [
+        "$\\Delta x = a \\cdot t$",
+        "$\\Delta x = v_m \\cdot t$",
+        "$\\Delta x = \\frac{1}{2}gt^2$",
+        "$\\Delta x = v \\cdot t^2$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La velocità media è **per definizione** $v_m = \\frac{\\Delta x}{\\Delta t}$, quindi $\\Delta x = v_m \\cdot \\Delta t$. È una relazione universale, indipendente dal tipo di moto.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "velocità media",
+        "spostamento",
+        "definizione"
+      ]
+    },
+    {
+      "id": "cin_167",
+      "domanda": "Un corpo si muove con moto uniformemente accelerato a partire da velocità $v_0 = 0$. Quale relazione lega solo le grandezze finali (senza il tempo)?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Relazioni",
+      "opzioni": [
+        "$v = at$",
+        "$v^2 = 2a\\Delta x$",
+        "$\\Delta x = \\frac{1}{2}at^2$",
+        "$a = \\frac{\\Delta x}{t}$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La relazione $v^2 = v_0^2 + 2a\\Delta x$ con $v_0 = 0$ diventa $v^2 = 2a\\Delta x$. Lega velocità finale, accelerazione e distanza **senza il tempo**.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "relazione cinematica",
+        "v² = 2as"
+      ]
+    },
+    {
+      "id": "cin_168",
+      "domanda": "Quali sono le **tre equazioni fondamentali** del moto uniformemente accelerato?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Equazioni fondamentali",
+      "opzioni": [
+        "$v = at$, $s = \\frac{1}{2}at^2$, $v^2 = 2as$",
+        "$s = vt$, $v = at$, $a = \\frac{v}{t}$",
+        "$v = v_0 + at$, $s = v_0 t + \\frac{1}{2}at^2$, $v^2 = v_0^2 + 2a\\Delta s$",
+        "Tutte le equazioni sopra elencate"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Le tre equazioni fondamentali del MUA sono: (1) $v = v_0 + at$, (2) $s = v_0 t + \\frac{1}{2}at^2$, (3) $v^2 = v_0^2 + 2a\\Delta s$. Tutte parten da queste.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "equazioni",
+        "fondamentali"
+      ]
+    },
+    {
+      "id": "cin_169",
+      "domanda": "Un corpo subisce **accelerazione negativa** (decelerazione). Quale fatto garantisce che il corpo si ferma?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Decelerazione",
+      "opzioni": [
+        "La decelerazione è negativa",
+        "La velocità iniziale è positiva e la decelerazione agisce abbastanza a lungo",
+        "Nessuna: un corpo con decelerazione non si ferma mai",
+        "L'accelerazione negativa causa sempre arresto istantaneo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se $v_0 > 0$ e $a < 0$, il corpo si ferma quando $v = 0$. Questo accade in tempo $t = \\frac{-v_0}{a} > 0$ (un istante futuro).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "decelerazione",
+        "arresto",
+        "velocità nulla"
+      ]
+    },
+    {
+      "id": "cin_170",
+      "domanda": "Un corpo accelera partendo da fermo e raggiunge velocità $v$ in tempo $t$. Se successivamente mantiene costante la velocità per un ulteriore tempo $t$, quale sarà lo spostamento totale?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA + MRU",
+      "opzioni": [
+        "$s_{tot} = \\frac{1}{2}vt + vt = \\frac{3}{2}vt$",
+        "$s_{tot} = vt + vt = 2vt$",
+        "$s_{tot} = \\frac{1}{2}v(t)^2 + vt$",
+        "Non è possibile senza il valore di accelerazione"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Fase 1 (accelerazione): $s_1 = \\frac{1}{2}vt$ (poiché $a = v/t$, quindi $s = \\frac{1}{2}at^2 = \\frac{1}{2}\\frac{v}{t}t^2 = \\frac{1}{2}vt$). Fase 2 (MRU): $s_2 = vt$. Totale: $s = \\frac{3}{2}vt$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "MRU",
+        "spostamento totale"
+      ]
+    },
+    {
+      "id": "cin_171",
+      "domanda": "Nel moto circolare uniforme, la **velocità angolare** $\\omega$ e la **velocità lineare** $v$ sono legate dalla relazione:",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare - Relazioni",
+      "opzioni": [
+        "$v = \\omega r$",
+        "$\\omega = vr$",
+        "$v = \\frac{r}{\\omega}$",
+        "$\\omega = \\frac{r}{v}$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La relazione è: $v = \\omega r$, dove $\\omega$ è la velocità angolare in rad/s, $r$ è il raggio e $v$ è la velocità tangenziale.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MCU",
+        "velocità angolare",
+        "velocità lineare",
+        "raggio"
+      ]
+    },
+    {
+      "id": "cin_172",
+      "domanda": "Un oggetto si muove in linea retta con velocità che varia nel tempo secondo il grafico v-t. Se il grafico è una **parabola**, quale tipo di moto è?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici v-t",
+      "opzioni": [
+        "Moto rettilineo uniforme",
+        "Moto uniformemente accelerato",
+        "Moto con accelerazione variabile (non uniforme)",
+        "Moto armonico"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel grafico v-t, una parabola indica che l'accelerazione $a = \\frac{dv}{dt}$ **varia** nel tempo (non è costante). Quindi il moto ha accelerazione non uniforme.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "grafico v-t",
+        "parabola",
+        "accelerazione variabile"
+      ]
+    },
+    {
+      "id": "cin_173",
+      "domanda": "Un corpo percorre lo stesso spazio di 100 m in due casi: (A) con velocità costante 50 m/s, (B) partendo da fermo con accelerazione costante. Se entrambi i tempi sono uguali a 2 secondi, quale accelerazione ha il secondo corpo?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Confronto MRU",
+      "opzioni": [
+        "25 m/s²",
+        "50 m/s²",
+        "Non è possibile un moto accelerato che percorra 100 m in 2 s se parte da fermo",
+        "$a = 50$ m/s²"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel caso B, con $v_0 = 0$: $s = \\frac{1}{2}at^2 \\Rightarrow 100 = \\frac{1}{2}a(4) \\Rightarrow a = 50$ m/s². Ma nel caso A, con 100 m in 2 s, velocità media è 50 m/s. Nel caso B, velocità media è 50 m/s, quindi sia i tempi che le distanze sarebbero identici. Questo è **compatibile**. Rieseguiamo: $a = 50$ m/s² è possibile.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "MUA",
+        "MRU",
+        "confronto"
+      ]
+    },
+    {
+      "id": "cin_174",
+      "domanda": "Nel **moto parabolico**, quale affermazione sulla gittata è corretta?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico - Gittata",
+      "opzioni": [
+        "La gittata è massima a 45° di lancio",
+        "La gittata dipende solo dalla velocità iniziale",
+        "La gittata è massima a 90° di lancio",
+        "La gittata non dipende dall'angolo di lancio"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La gittata è: $R = \\frac{v_0^2 \\sin(2\\theta)}{g}$. È massima quando $\\sin(2\\theta) = 1$, cioè $2\\theta = 90°$, quindi $\\theta = 45°$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto parabolico",
+        "gittata",
+        "massima",
+        "45°"
+      ]
+    },
+    {
+      "id": "cin_175",
+      "domanda": "Un'automobile parte da fermo e accelera uniformemente fino a raggiungere 100 km/h, poi decelera uniformemente fino a fermarsi. Se la distanza totale è 1 km, quale grandezza caratterizza questo moto complessivamente?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto composto",
+      "opzioni": [
+        "L'accelerazione è sempre positiva",
+        "La velocità media è inferiore a 50 km/h",
+        "Il moto è simmetrico (accelerazione e decelerazione uguali)",
+        "Lo spostamento è diverso dalla distanza"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel moto descritto (accelerazione uniforme, poi decelerazione uniforme con stessi moduli), il moto è **simmetrico**: tempo di salita = tempo di discesa, velocità media è quella di picco/2.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "accelerazione",
+        "decelerazione",
+        "simmetria"
+      ]
+    },
+    {
+      "id": "cin_176",
+      "domanda": "Un corpo ha spostamento nullo ma distanza percorsa diversa da zero. Quale path ha seguito?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Spostamento vs distanza",
+      "opzioni": [
+        "Una linea retta",
+        "Una traiettoria che ritorna al punto di partenza (ad es. circolare o andata-ritorno)",
+        "Nessun moto è possibile con queste condizioni",
+        "Una parabola"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se lo spostamento è zero, il punto finale coincide con il punto iniziale. Ma se distanza è diversa da zero, il corpo ha percorso un cammino non banale. Esempio: moto circolare completo, andata e ritorno.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "spostamento",
+        "distanza",
+        "traiettoria"
+      ]
+    },
+    {
+      "id": "cin_177",
+      "domanda": "Due corpi si muovono con **accelerazione costante** su due rette diverse. Quale grandezza ha **sicuramente** la stessa direzione e verso per entrambi?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Accelerazione come vettore",
+      "opzioni": [
+        "La velocità",
+        "Lo spostamento",
+        "L'accelerazione",
+        "Non è possibile dire senza più informazioni"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Ogni corpo ha **sua** accelerazione diretta in una certa direzione (per il corpo 1 in una direzione, per il corpo 2 eventualmente in un'altra). Non hanno necessariamente la stessa direzione.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "accelerazione",
+        "direzione",
+        "vettore"
+      ]
+    },
+    {
+      "id": "cin_178",
+      "domanda": "Quali sono le unità SI di: velocità, accelerazione, velocità angolare?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Unità di misura SI",
+      "opzioni": [
+        "m/s, m/s², rad/s",
+        "km/h, m/s², rev/s",
+        "m, m/s, m/s²",
+        "m/s², s, m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel SI: velocità in **m/s**, accelerazione in **m/s²**, velocità angolare in **rad/s** (radianti al secondo).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "unità SI",
+        "velocità",
+        "accelerazione",
+        "angolare"
+      ]
+    },
+    {
+      "id": "cin_179",
+      "domanda": "Un corpo si muove con la seguente legge oraria: $x(t) = 5 + 2t + 3t^2$. Quale è la velocità iniziale?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Legge oraria",
+      "opzioni": [
+        "$v_0 = 5$ m/s",
+        "$v_0 = 2$ m/s",
+        "$v_0 = 3$ m/s",
+        "$v_0 = 0$ m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La legge oraria generale è $x = x_0 + v_0 t + \\frac{1}{2}at^2$. Confrontando con $x = 5 + 2t + 3t^2$: $v_0 = 2$ m/s e $a = 6$ m/s².",
+      "difficolta": "media",
+      "paroleChiave": [
+        "legge oraria",
+        "velocità iniziale",
+        "confronto"
+      ]
+    },
+    {
+      "id": "cin_180",
+      "domanda": "Un corpo si muove con la seguente legge oraria: $x(t) = 5 + 2t + 3t^2$. Quale è l'accelerazione?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Legge oraria",
+      "opzioni": [
+        "$a = 5$ m/s²",
+        "$a = 2$ m/s²",
+        "$a = 3$ m/s²",
+        "$a = 6$ m/s²"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Nel moto uniformemente accelerato: $x = x_0 + v_0 t + \\frac{1}{2}at^2$. Comparando i coefficienti di $t^2$: $\\frac{1}{2}a = 3 \\Rightarrow a = 6$ m/s².",
+      "difficolta": "media",
+      "paroleChiave": [
+        "legge oraria",
+        "accelerazione",
+        "coefficiente"
+      ]
+    },
+    {
+      "id": "cin_181",
+      "domanda": "In un moto rettilineo, se la velocità e l'accelerazione hanno **versi opposti**, il corpo:",
+      "categoria": "Cinematica",
+      "sottocategoria": "Verso e direzione",
+      "opzioni": [
+        "Continua ad accelerare nella stessa direzione",
+        "Sta decelerando e cambierà direzione",
+        "Rimane fermo",
+        "Ha accelerazione nulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se $v$ e $a$ hanno versi opposti, il modulo della velocità diminuisce. Eventualmente la velocità diventa nulla e il corpo inverte direzione.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "velocità",
+        "accelerazione",
+        "verso opposto"
+      ]
+    },
+    {
+      "id": "cin_182",
+      "domanda": "Una ruota gira con frequenza $f = 10$ Hz. Quale è il periodo di rotazione?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare - Periodo",
+      "opzioni": [
+        "$T = 10$ s",
+        "$T = 0.1$ s",
+        "$T = 100$ s",
+        "$T = 0.01$ s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il periodo è l'inverso della frequenza: $T = \\frac{1}{f} = \\frac{1}{10} = 0.1$ s.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "periodo",
+        "frequenza",
+        "MCU"
+      ]
+    },
+    {
+      "id": "cin_183",
+      "domanda": "Una ruota gira con periodo $T = 0.5$ s e raggio $r = 0.2$ m. Quale è la velocità tangenziale?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare - Velocità lineare",
+      "opzioni": [
+        "$v = \\frac{2\\pi r}{T} = \\frac{2\\pi \\cdot 0.2}{0.5} \\approx 2.51$ m/s",
+        "$v = rT = 0.1$ m/s",
+        "$v = \\frac{r}{T} = 0.4$ m/s",
+        "$v = 2\\pi rT = 0.628$ m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La velocità tangenziale è: $v = \\frac{2\\pi r}{T} = \\frac{2\\pi \\cdot 0.2}{0.5} = 0.4\\pi \\approx 2.51$ m/s.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MCU",
+        "velocità tangenziale",
+        "periodo"
+      ]
+    },
+    {
+      "id": "cin_184",
+      "domanda": "Un'auto frena da 25 m/s a 10 m/s in 5 secondi. Quale è la decelerazione media?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Accelerazione negativa",
+      "opzioni": [
+        "$a = -3$ m/s²",
+        "$a = 3$ m/s²",
+        "$a = -5$ m/s²",
+        "$a = -15$ m/s²"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Accelerazione media: $a = \\frac{\\Delta v}{\\Delta t} = \\frac{10 - 25}{5} = \\frac{-15}{5} = -3$ m/s² (negativa, decelerazione).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "decelerazione",
+        "accelerazione negativa",
+        "freno"
+      ]
+    },
+    {
+      "id": "cin_185",
+      "domanda": "Un corpo lanciato verticalmente verso l'alto raggiunge la massima altezza dopo 2 secondi. Quale era la velocità iniziale? (g=10 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lanciamento verticale",
+      "opzioni": [
+        "$v_0 = 10$ m/s",
+        "$v_0 = 20$ m/s",
+        "$v_0 = 40$ m/s",
+        "$v_0 = 5$ m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Al massimo, $v = 0$. Dalla relazione $v = v_0 - gt$: $0 = v_0 - 10(2) \\Rightarrow v_0 = 20$ m/s.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lanciamento verticale",
+        "massima altezza",
+        "velocità iniziale"
+      ]
+    },
+    {
+      "id": "cin_186",
+      "domanda": "Un corpo lanciato verticalmente verso l'alto raggiunge la massima altezza dopo 2 secondi. Qual è la massima altezza raggiunta? (g=10 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Lanciamento verticale",
+      "opzioni": [
+        "$h_{max} = 10$ m",
+        "$h_{max} = 20$ m",
+        "$h_{max} = 40$ m",
+        "$h_{max} = 5$ m"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Dalla legge oraria: $h = v_0 t - \\frac{1}{2}gt^2 = 20(2) - \\frac{1}{2}(10)(4) = 40 - 20 = 20$ m.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "massima altezza",
+        "lanciamento verticale",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "cin_187",
+      "domanda": "Nel moto circolare uniforme, il **vettore velocità** è **sempre**:",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare - Proprietà",
+      "opzioni": [
+        "Tangente alla circonferenza",
+        "Radiale verso il centro",
+        "Parallelo all'asse di rotazione",
+        "Costante in modulo e direzione"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel MCU la velocità è **sempre tangente** alla traiettoria circolare (perpendiculare al raggio). Il modulo è costante ma la direzione cambia continuamente.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MCU",
+        "velocità",
+        "tangente"
+      ]
+    },
+    {
+      "id": "cin_188",
+      "domanda": "Un corpo si muove con accelerazione costante. Se aumentiamo il tempo di applicazione dell'accelerazione al doppio, di quanto aumenta la distanza percorsa?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Proporzionalità tempo",
+      "opzioni": [
+        "Raddoppia",
+        "Quadruplica",
+        "Rimane la stessa",
+        "Aumenta di 4 volte alla 2 potenza"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel MUA con $v_0 = 0$: $s = \\frac{1}{2}at^2$. Se $t' = 2t$, allora $s' = \\frac{1}{2}a(2t)^2 = 4s$ (quadruplica).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "distanza",
+        "quadrato del tempo"
+      ]
+    },
+    {
+      "id": "cin_189",
+      "domanda": "Un corpo parte da fermo con accelerazione costante di 2 m/s². Quale distanza percorre nel terzo secondo (cioè tra $t = 2$ s e $t = 3$ s)?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Spazi in intervalli",
+      "opzioni": [
+        "$s = 5$ m",
+        "$s = 10$ m",
+        "$s = 15$ m",
+        "$s = 2$ m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Distanza al $t = 2$ s: $s(2) = \\frac{1}{2}(2)(4) = 4$ m. Distanza al $t = 3$ s: $s(3) = \\frac{1}{2}(2)(9) = 9$ m. Differenza: $9 - 4 = 5$ m.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "intervallo temporale",
+        "spazio"
+      ]
+    },
+    {
+      "id": "cin_190",
+      "domanda": "Un proiettile è lanciato con velocità iniziale $v_0$ a un angolo $\\theta$ dal suolo (resistenza dell'aria nulla). Nel punto di massima altezza, quale componente della velocità è nulla?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico - Massima altezza",
+      "opzioni": [
+        "La componente orizzontale $v_x$",
+        "La componente verticale $v_y$",
+        "Entrambe le componenti",
+        "Nessuna, il proiettile ha ancora velocità"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel punto di massima altezza del moto parabolico, la componente verticale della velocità è **nulla** ($v_y = 0$), mentre quella orizzontale rimane costante ($v_x = v_0 \\cos\\theta$).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto parabolico",
+        "massima altezza",
+        "componenti velocità"
+      ]
+    },
+    {
+      "id": "cin_191",
+      "domanda": "Due motociclette si muovono su strade rettilinee parallele. Entrambe hanno la stessa velocità media, ma diverse velocità istantanee durante il percorso. Quale affermazione **non** può essere vera?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Velocità - Deduzioni",
+      "opzioni": [
+        "Una accelera all'inizio e decelera alla fine",
+        "Una ha velocità costante e l'altra no",
+        "Entrambe hanno percorso la stessa distanza nello stesso tempo",
+        "Una ha velocità istantanea sempre inferiore alla media"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "Se una moto ha velocità istantanea **sempre** inferiore alla media, allora non potrebbe mai raggiungere la media complessiva.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "velocità media",
+        "velocità istantanea",
+        "deducibilità"
+      ]
+    },
+    {
+      "id": "cin_192",
+      "domanda": "Un corpo si muove linearmente con velocità che varia secondo il grafico v-t. Se il grafico è una **retta spezzata** (due tratti lineari), quale tipo di moto complessivo ha?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici v-t - Interpretazione",
+      "opzioni": [
+        "Moto rettilineo uniforme",
+        "Moto uniformemente accelerato",
+        "Moto con accelerazione costante per intervalli, ma che cambia tra gli intervalli (moto composto)",
+        "Moto armonico"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Una retta spezzata nel grafico v-t indica due intervalli, ciascuno con accelerazione costante (diversa tra i due). È un moto con **accelerazione a strati** o moto composto.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "grafico v-t",
+        "retta spezzata",
+        "accelerazione variabile"
+      ]
+    },
+    {
+      "id": "cin_193",
+      "domanda": "Nel lancio di un proiettile, se aumentiamo l'angolo di lancio da 30° a 45°, mantenendo costante la velocità iniziale, quale effetto ha sulla gittata?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico - Angoli",
+      "opzioni": [
+        "La gittata diminuisce",
+        "La gittata rimane costante",
+        "La gittata aumenta",
+        "La gittata dipende dal raggio di curvatura, non dall'angolo"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La gittata è $R = \\frac{v_0^2\\sin(2\\theta)}{g}$. Passando da 30° a 45°: $\\sin(60°) \\approx 0.866$; $\\sin(90°) = 1$. Quindi la gittata **aumenta** fino al massimo a 45°.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto parabolico",
+        "gittata",
+        "angolo"
+      ]
+    },
+    {
+      "id": "cin_194",
+      "domanda": "Un corpo cade verticalmente per 5 m. Se continuasse a cadere per altri 5 m, quale sarebbe la relazione tra il tempo per cadere i primi 5 m e il tempo total per cadere 10 m?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Caduta libera - Tempi",
+      "opzioni": [
+        "Il tempo raddoppia",
+        "Il tempo aumenta ma non raddoppia",
+        "Il tempo dimezza",
+        "Le due quote implicano tempi proporzionali alle loro distanze"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Dalla caduta libera $h = \\frac{1}{2}gt^2$: per 5 m, $t_1 = \\sqrt{\\frac{10}{9,8}} \\approx 1$ s; per 10 m, $t_2 = \\sqrt{\\frac{20}{9,8}} \\approx 1.43$ s. Quindi $t_2 \\neq 2t_1$, il tempo aumenta ma non raddoppia (aumenta di $\\sqrt{2} \\approx 1.41$ volte).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "caduta libera",
+        "altezza",
+        "radice quadrata"
+      ]
+    },
+    {
+      "id": "cin_195",
+      "domanda": "Un oggetto si muove lungo un asse rettilineo con velocità iniziale 10 m/s e accelerazione di -2 m/s². Dopo quanto tempo l'oggetto ritorna al punto di partenza?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Inversione di direzione",
+      "opzioni": [
+        "$t = 5$ s",
+        "$t = 10$ s",
+        "$t = 2.5$ s",
+        "Non ritorna al punto di partenza con questi dati"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'oggetto si ferma a $v = 0$ quando $0 = 10 - 2t \\Rightarrow t = 5$ s. Distanza fino al fermo: $s = 10(5) - \\frac{1}{2}(2)(25) = 50 - 25 = 25$ m. Per tornare indietro e raggiungere il punto di partenza, dalla quiete deve percorrere ulteriori 25 m. Tempo dalla quiete: $25 = -\\frac{1}{2}(2)t^2 \\Rightarrow t = 5$ s. Tempo totale: **10 s**.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "MUA",
+        "inversione",
+        "ritorno"
+      ]
+    },
+    {
+      "id": "cin_196",
+      "domanda": "Nel moto circolare uniforme, quale affermazione sulla **distanza dal centro** è vera?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto circolare - Raggio",
+      "opzioni": [
+        "È costante nel tempo",
+        "Varia linearmente con il tempo",
+        "Varia parabolicamente con il tempo",
+        "Diventa zero periodicamente"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel MCU il raggio della circonferenza è **sempre costante**. È questa la definizione di moto circolare.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MCU",
+        "raggio",
+        "costante"
+      ]
+    },
+    {
+      "id": "cin_197",
+      "domanda": "Un corpo si muove con legge oraria $x(t) = 3t^2 + 2t + 1$. La velocità al tempo $t = 1$ s è:",
+      "categoria": "Cinematica",
+      "sottocategoria": "Derivata della legge oraria",
+      "opzioni": [
+        "$v(1) = 8$ m/s",
+        "$v(1) = 6$ m/s",
+        "$v(1) = 2$ m/s",
+        "$v(1) = 4$ m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La velocità è la derivata della posizione: $v = \\frac{dx}{dt} = 6t + 2$. A $t = 1$ s: $v(1) = 6(1) + 2 = 8$ m/s.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "legge oraria",
+        "derivata",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_198",
+      "domanda": "Un corpo si muove con legge oraria $x(t) = 3t^2 + 2t + 1$. L'accelerazione al tempo $t = 2$ s è:",
+      "categoria": "Cinematica",
+      "sottocategoria": "Derivata della velocità",
+      "opzioni": [
+        "$a(2) = 6$ m/s²",
+        "$a(2) = 8$ m/s²",
+        "$a(2) = 2$ m/s²",
+        "$a(2) = 14$ m/s²"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La velocità è $v = 6t + 2$. L'accelerazione è la derivata della velocità: $a = \\frac{dv}{dt} = 6$ m/s² (costante, indipendente da $t$).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "legge oraria",
+        "derivata",
+        "accelerazione"
+      ]
+    },
+    {
+      "id": "cin_199",
+      "domanda": "Un corpo percorre 60 m in 3 s, poi altri 40 m in 2 s. Quale è la velocità media sull'intero percorso?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Velocità media - Applicazione",
+      "opzioni": [
+        "$v_m = 20$ m/s",
+        "$v_m = 16$ m/s",
+        "$v_m = 15$ m/s",
+        "$v_m = 25$ m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Velocità media: $v_m = \\frac{\\text{distanza totale}}{\\text{tempo totale}} = \\frac{60 + 40}{3 + 2} = \\frac{100}{5} = 20$ m/s.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "velocità media",
+        "distanza",
+        "tempo"
+      ]
+    },
+    {
+      "id": "cin_200",
+      "domanda": "Un corpo raggiunge velocità di 50 m/s partendo da fermo in 5 secondi. Se partisse con una velocità iniziale di 10 m/s e avesse la **stessa accelerazione**, quale velocità raggiungerebbe nello stesso tempo (5 s)?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Velocità finale",
+      "opzioni": [
+        "$v = 50$ m/s",
+        "$v = 60$ m/s",
+        "$v = 40$ m/s",
+        "$v = 55$ m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel primo caso: $50 = 0 + a(5) \\Rightarrow a = 10$ m/s². Nel secondo caso con $v_0 = 10$ m/s: $v = 10 + 10(5) = 60$ m/s.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "velocità finale",
+        "accelerazione costante"
+      ]
+    },
+    {
+      "id": "cin_201",
+      "domanda": "Un proiettile è lanciato dal suolo e ritorna al suolo dopo 4 secondi. Se la massima altezza è raggiunta dopo 2 secondi, quale è la velocità iniziale? (g=10 m/s²)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico - Simmetria",
+      "opzioni": [
+        "$v_0 = 10$ m/s",
+        "$v_0 = 20$ m/s",
+        "$v_0 = 40$ m/s",
+        "$v_0 = 5$ m/s"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La massima altezza è raggiunta quando $v = v_0 - gt = 0$, quindi $v_0 = gt = 10(2) = 20$ m/s. Verifica: tempo totale = $\\frac{2v_0}{g} = \\frac{40}{10} = 4$ s ✓",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto parabolico",
+        "velocità iniziale",
+        "simmetria"
+      ]
+    },
+    {
+      "id": "cin_202",
+      "domanda": "Un corpo accelera da 0 a 20 m/s in 4 secondi con accelerazione costante. Quale distanza percorre negli ultimi 2 secondi del percorso?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Intervalli",
+      "opzioni": [
+        "10 m",
+        "20 m",
+        "30 m",
+        "40 m"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "1. Calcolo l'accelerazione: $a = \\Delta v / \\Delta t = 20 / 4 = 5$ m/s². 2. Calcolo lo spazio totale in 4 s: $s(4) = \\frac{1}{2}at^2 = \\frac{1}{2}(5)(16) = 40$ m. 3. Calcolo lo spazio percorso nei primi 2 s: $s(2) = \\frac{1}{2}(5)(4) = 10$ m. 4. La distanza negli ultimi 2 s è la differenza: $40 - 10 = 30$ m. In alternativa, usando la velocità media nell'intervallo [2s, 4s]: $v_{media} = (10 + 20) / 2 = 15$ m/s; $distanza = 15 \\text{ m/s} \\times 2 \\text{ s} = 30$ m.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "MUA",
+        "ultimi secondi",
+        "velocità media"
+      ]
+    },
+    {
+      "id": "cin_203",
+      "domanda": "Un corpo si muove con accelerazione costante. Nel grafico x-t il corpo parte dall'origine. Quale forma ha la curva nel grafico x-t?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici x-t",
+      "opzioni": [
+        "Linea retta",
+        "Parabola",
+        "Circonferenza",
+        "Esponenziale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel MUA, la legge oraria è $x = v_0 t + \\frac{1}{2}at^2$, che è una **parabola** nel piano spazio-tempo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MUA",
+        "grafico x-t",
+        "parabola"
+      ]
+    },
+    {
+      "id": "cin_204",
+      "domanda": "Un corpo si muove secondo la relazione $x = 5t - 2t^2$. Qual è la posizione massima raggiunta?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Massimi/Minim di legge oraria",
+      "opzioni": [
+        "$x_{max} = 3.125$ m",
+        "$x_{max} = 5$ m",
+        "$x_{max} = 2$ m",
+        "$x_{max} = 1.25$ m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La posizione massima si raggiunge quando $\\frac{dx}{dt} = 0$: $v = 5 - 4t = 0 \\Rightarrow t = 1.25$ s. Allora $x_{max} = 5(1.25) - 2(1.5625) = 6.25 - 3.125 = 3.125$ m.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "legge oraria",
+        "massimo",
+        "derivata"
+      ]
+    },
+    {
+      "id": "cin_205",
+      "domanda": "Un'automobile che si muove con MRU passa davanti a un vigile. Se il vigile vede l'auto per 2 secondi, quale relazione lega la lunghezza dell'auto $L$ e la sua velocità $v$?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MRU - Applicazione",
+      "opzioni": [
+        "$L = 2v$",
+        "$L = v/2$",
+        "$L = v + 2$",
+        "$L = 2v - v$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel MRU: $s = v \\cdot t$. Il vigile vede l'auto per il tempo in cui questa passa, percorrendo una distanza pari alla sua lunghezza $L$: $L = v \\cdot 2$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MRU",
+        "lunghezza",
+        "tempo"
+      ]
+    },
+    {
+      "id": "cin_206",
+      "domanda": "Un corpo si muove su una traiettoria rettilinea con velocità che cambia secondo il grafico v-t. Se il grafico ha una linea che scende fino a attraversare l'asse del tempo e poi continua in negativo, cosa significa dal punto di vista fisico?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Grafici v-t - Interpretazione",
+      "opzioni": [
+        "Il corpo si ferma e poi rimane fermo",
+        "Il corpo raggiunge una velocità nulla e poi inverte direzione",
+        "L'accelerazione diventa nulla",
+        "Il corpo esce dalle nostre osservazioni"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Quando la curva nel grafico v-t attraversa l'asse del tempo (v = 0), il corpo **inverte direzione di movimento**. La velocità negativa significa movimento nella direzione opposta.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "grafico v-t",
+        "velocità nulla",
+        "inversione direzione"
+      ]
+    },
+    {
+      "id": "cin_207",
+      "domanda": "Un corpo cade da fermo. Se misuriamo le distanze percorse come funzione del tempo e osserviamo $h_1$ nel primo secondo, $h_2$ nei due primi secondi, qual è il rapporto $h_2 / h_1$?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Caduta libera - Proporzioni",
+      "opzioni": [
+        "2",
+        "3",
+        "4",
+        "$\\sqrt{2} \\approx 1.41$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Caduta libera: $h = \\frac{1}{2}gt^2$. $h_1 = \\frac{1}{2}g(1)^2 = \\frac{g}{2}$; $h_2 = \\frac{1}{2}g(2)^2 = 2g$. Rapporto: $\\frac{h_2}{h_1} = \\frac{2g}{g/2} = 4$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "caduta libera",
+        "distanze",
+        "quadrato del tempo"
+      ]
+    },
+    {
+      "id": "cin_208",
+      "domanda": "Nel moto circolare uniforme, se la **velocità angolare raddoppia**, quale effetto ha su **periodo e frequenza**?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MCU - Velocità angolare",
+      "opzioni": [
+        "Periodo e frequenza raddoppiano",
+        "Periodo dimezza, frequenza raddoppia",
+        "Sia periodo che frequenza dimezzano",
+        "Non c'è effetto"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "$\\omega = \\frac{2\\pi}{T}$ e $f = \\frac{1}{T}$. Se $\\omega' = 2\\omega$, allora $T' = \\frac{T}{2}$ e $f' = 2f$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MCU",
+        "velocità angolare",
+        "periodo",
+        "frequenza"
+      ]
+    },
+    {
+      "id": "cin_209",
+      "domanda": "Un proiettile lanciato orizzontalmente cade verso il suolo. Nel punto di impatto col suolo, il vettore velocità è:",
+      "categoria": "Cinematica",
+      "sottocategoria": "Moto parabolico - Velocità finale",
+      "opzioni": [
+        "Orizzontale (come quello iniziale)",
+        "Verticale verso il basso",
+        "Inclinato verso il basso, con componenti orizzontale e verticale",
+        "Nullo (l'oggetto si ferma all'impatto)"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel moto parabolico: $v_x = v_0$ (costante) e $v_y$ aumenta (da 0 a $-gt$). Al suolo, entrambe le componenti sono non nulle, quindi il vettore è inclinato.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto parabolico",
+        "velocità finale",
+        "componenti"
+      ]
+    },
+    {
+      "id": "cin_210",
+      "domanda": "Un corpo si muove con accelerazione costante partendo da velocità non nulla. Come si comporta la **distanza percorsa per unità di tempo** al passare del tempo?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Ragionamento qualitativo",
+      "opzioni": [
+        "Rimane costante",
+        "Aumenta (linearmente se partenza da fermo)",
+        "Diminuisce",
+        "Oscilla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La distanza percorsa per unità di tempo è la **velocità istantanea**. Nel MUA con accelerazione positiva, la velocità aumenta linearmente: $v = v_0 + at$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MUA",
+        "distanza per unità tempo",
+        "velocità"
+      ]
+    },
+    {
+      "id": "cin_211",
+      "domanda": "Un corpo in caduta libera percorre 45 m nel suo primo secondo di caduta. Quale accelerazione agisce su di esso? (assumere che non sia sulla Terra)",
+      "categoria": "Cinematica",
+      "sottocategoria": "Caduta libera - Accelerazione locale",
+      "opzioni": [
+        "$g = 45$ m/s²",
+        "$g = 22.5$ m/s²",
+        "$g = 90$ m/s²",
+        "$g = 11.25$ m/s²"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Caduta libera: $h = \\frac{1}{2}gt^2$. Con $h = 45$ m e $t = 1$ s: $45 = \\frac{1}{2}g(1)^2 \\Rightarrow g = 90$ m/s².",
+      "difficolta": "media",
+      "paroleChiave": [
+        "caduta libera",
+        "accelerazione",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "cin_212",
+      "domanda": "Nel moto rettilineo uniforme, quale proprietà della traiettoria rimane sempre vera?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MRU - Proprietà",
+      "opzioni": [
+        "La traiettoria è curvilinea",
+        "La traiettoria è rettilinea e il corpo percorre spazi uguali in tempi uguali",
+        "La traiettoria cambia continuamente",
+        "Lo spazio percorso è proporzionale al quadrato del tempo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel MRU la traiettoria è **rettilinea** (per definizione). Poiché $v = \\text{costante}$, $s = vt$ implica spazi uguali in tempi uguali.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MRU",
+        "traiettoria",
+        "spazi uguali tempi uguali"
+      ]
+    },
+    {
+      "id": "cin_213",
+      "domanda": "Un corpo accelera da 0 a 30 m/s. Se l'accelerazione è 5 m/s², quale distanza copre durante il **primo secondo**?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Intervallo iniziale",
+      "opzioni": [
+        "2.5 m",
+        "5 m",
+        "7.5 m",
+        "15 m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel primo secondo con $v_0 = 0$ e $a = 5$ m/s²: $s_1 = \\frac{1}{2}(5)(1)^2 = 2.5$ m.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "MUA",
+        "primo secondo",
+        "distanza"
+      ]
+    },
+    {
+      "id": "cin_214",
+      "domanda": "Un corpo accelera da 0 a 30 m/s con accelerazione di 5 m/s². Quale distanza copre durante il **secondo** secondo (da $t = 1$ a $t = 2$ s)?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Intervallo specifico",
+      "opzioni": [
+        "2.5 m",
+        "5 m",
+        "7.5 m",
+        "10 m"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "$s(2) = \\frac{1}{2}(5)(4) = 10$ m. $s(1) = 2.5$ m (dal quiz precedente). Intervallo: 10 - 2.5 = 7.5 m.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MUA",
+        "secondo secondo",
+        "differenza"
+      ]
+    },
+    {
+      "id": "cin_215",
+      "domanda": "Un corpo subisce un'accelerazione che cambia direzione ma mantiene sempre lo **stesso modulo**. Quale tipo di moto descrive?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Accelerazione - Modulo e direzione",
+      "opzioni": [
+        "Moto rettilineo (la direzione dell'accelerazione non importa)",
+        "Moto curvilineo (l'accelerazione ha sempre componente normale alla traiettoria)",
+        "Moto circolare",
+        "Moto parabolico"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se l'accelerazione cambia direzione, deve avere una componente perpendicolare (normale) alla velocità. Questo causa **curvatura** della traiettoria (moto curvilineo).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "accelerazione",
+        "direzione",
+        "moto curvilineo"
+      ]
+    },
+    {
+      "id": "cin_216",
+      "domanda": "Un corpo si muove con velocità iniziale $v_0$ e accelerazione costante $a$. Quale è lo **spostamento medio** nei primi $t$ secondi (rapporto tra spostamento totale e tempo totale)?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MUA - Velocità media",
+      "opzioni": [
+        "$s_m = v_0 + at$",
+        "$s_m = v_0 t + \\frac{1}{2}at^2$",
+        "$s_m = v_0 + \\frac{1}{2}at$",
+        "$s_m = \\frac{v_0 + at}{2}$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Spostamento medio = $\\frac{\\text{spostamento totale}}{\\text{tempo totale}} = \\frac{v_0 t + \\frac{1}{2}at^2}{t} = v_0 + \\frac{1}{2}at$.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "MUA",
+        "velocità media",
+        "spostamento medio"
+      ]
+    },
+    {
+      "id": "cin_217",
+      "domanda": "Un corpo è lanciato verso l'alto con velocità $v_0$ e raggiunge il suolo con velocità $v_f$ (in modulo). Quale relazione lega queste due velocità?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Energia e simmetria",
+      "opzioni": [
+        "$v_f = v_0$ (stessa velocità in modulo ma direzione opposta)",
+        "$v_f < v_0$ (perde energia)",
+        "$v_f > v_0$ (guadagna energia)",
+        "Non è possibile determinare la relazione senza l'altezza"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel lanciamento verticale (assumendo no attrito), il corpo ritorna al punto di lancio con velocità di modulo uguale ma verso opposto: $|v_f| = |v_0|$ per simmetria dell'accelerazione di gravità.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lanciamento verticale",
+        "simmetria",
+        "velocità finale"
+      ]
+    },
+    {
+      "id": "cin_218",
+      "domanda": "Un corpo si muove con accelerazione costante. La sua velocità è $v_1$ a tempo $t_1$ e $v_2$ a tempo $t_2 > t_1$. Quale è l'accelerazione?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Accelerazione - Definizione",
+      "opzioni": [
+        "$a = \\frac{v_1 - v_2}{t_1 - t_2}$",
+        "$a = \\frac{v_2 - v_1}{t_2 - t_1}$",
+        "$a = \\frac{v_1 + v_2}{t_1 + t_2}$",
+        "$a = \\frac{(v_2 - v_1)^2}{t_2 - t_1}$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'accelerazione per definizione è: $a = \\frac{\\Delta v}{\\Delta t} = \\frac{v_2 - v_1}{t_2 - t_1}$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "accelerazione",
+        "definizione",
+        "variazione velocità"
+      ]
+    },
+    {
+      "id": "cin_219",
+      "domanda": "Un corpo cade verticalmente da un'altezza $h$. Se raddoppiamo l'altezza, di quanto aumenta il tempo di caduta?",
+      "categoria": "Cinematica",
+      "sottocategoria": "Caduta libera - Proporzioni tempo",
+      "opzioni": [
+        "Raddoppia",
+        "Aumenta di $\\sqrt{2}$ volta",
+        "Quadruplica",
+        "Aumenta di 3 volte"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Tempo di caduta: $t = \\sqrt{\\frac{2h}{g}}$. Se $h' = 2h$, allora $t' = \\sqrt{\\frac{4h}{g}} = \\sqrt{2} \\cdot t$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "caduta libera",
+        "altezza",
+        "radice quadrata"
+      ]
+    },
+    {
+      "id": "cin_220",
+      "domanda": "Un corpo si muove su una circonferenza con velocità costante in modulo. La sua accelerazione centripeta è $a_c$. Se triplica la velocità, quale diventa la nuova accelerazione centripeta (a parità di raggio)?",
+      "categoria": "Cinematica",
+      "sottocategoria": "MCU - Accelerazione centripeta",
+      "opzioni": [
+        "Triplica",
+        "Sestuplicata",
+        "Noveuplica",
+        "Rimane costante"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "$a_c = \\frac{v^2}{r}$. Se $v' = 3v$, allora $a_c' = \\frac{(3v)^2}{r} = \\frac{9v^2}{r} = 9 \\cdot a_c$ (noveuplica).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MCU",
+        "accelerazione centripeta",
+        "velocità",
+        "quadrato"
+      ]
     }
   ]
 }

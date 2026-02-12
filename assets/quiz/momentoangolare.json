@@ -2519,6 +2519,1161 @@
                 "area sotto curva",
                 "delta L"
             ]
+        },
+        {
+            "id": "ang_121",
+            "domanda": "Perché i pianeti si muovono più velocemente quando sono vicini al Sole?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Conservazione e orbite",
+            "opzioni": [
+                "Perché la gravità è più forte e li spinge di più",
+                "Perché il momento angolare si conserva e $r$ più piccolo richiede $v$ maggiore",
+                "Perché la temperatura aumenta",
+                "Perché la massa del pianeta aumenta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La forza gravitazionale è centrale, quindi $L$ si conserva. Con $L = mrv_t$ costante, diminuendo $r$ deve aumentare $v_t$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "pianeti",
+                "Sole",
+                "Keplero",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "ang_122",
+            "domanda": "Qual è la principale differenza tra momento angolare e quantità di moto?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Concetti fondamentali",
+            "opzioni": [
+                "Sono la stessa cosa",
+                "Il momento angolare descrive rotazioni e dipende da un polo, la quantità di moto descrive traslazioni",
+                "Il momento angolare si misura in newton",
+                "La quantità di moto è sempre nulla"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il momento angolare $L = r \\times p$ è legato ai moti rotazionali e dipende dal polo scelto, mentre $p = mv$ descrive il moto traslazionale.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "differenza",
+                "rotazione",
+                "traslazione",
+                "p"
+            ]
+        },
+        {
+            "id": "ang_123",
+            "domanda": "Quale fenomeno quotidiano è spiegato dalla conservazione del momento angolare?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Applicazioni pratiche",
+            "opzioni": [
+                "La caduta di una mela",
+                "Un tuffatore che si raggomitola gira più velocemente",
+                "L'acqua che bolle",
+                "La luce che si propaga"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Quando un tuffatore si raggomitola, riduce il suo momento d'inerzia $I$. Poiché $L = I\\omega$ si conserva, $\\omega$ aumenta.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "tuffatore",
+                "vita quotidiana",
+                "raggomitolarsi",
+                "L=Iω"
+            ]
+        },
+        {
+            "id": "ang_124",
+            "domanda": "Perché una trottola resta in piedi quando ruota rapidamente ma cade quando rallenta?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Stabilità giroscopica",
+            "opzioni": [
+                "Perché la massa diminuisce",
+                "Perché il momento angolare elevato rende difficile cambiare l'orientamento dell'asse",
+                "Perché la gravità si annulla",
+                "Perché il momento d'inerzia diventa infinito"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Un elevato momento angolare conferisce stabilità giroscopica: serve una grande coppia per cambiare l'orientamento di $L$, resistendo alla caduta.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "trottola",
+                "stabilità",
+                "giroscopio",
+                "orientamento"
+            ]
+        },
+        {
+            "id": "ang_125",
+            "domanda": "Quale tra queste affermazioni sul momento angolare è FALSA?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Concetti errati",
+            "opzioni": [
+                "È una grandezza vettoriale",
+                "Si conserva sempre, in qualunque situazione",
+                "Dipende dal polo scelto",
+                "È legato alle rotazioni"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il momento angolare si conserva solo se il momento torcente esterno è nullo ($\\tau_{ext} = 0$), non sempre.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "falso",
+                "conservazione",
+                "condizioni",
+                "tau"
+            ]
+        },
+        {
+            "id": "ang_126",
+            "domanda": "Perché un giroscopio resiste al cambiamento della sua orientazione?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Effetti giroscopici",
+            "opzioni": [
+                "Perché ha grande massa",
+                "Perché il grande momento angolare richiede grandi coppie per cambiare direzione",
+                "Perché la temperatura è elevata",
+                "Perché non c'è gravità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dalla relazione $\\tau = dL/dt$, cambiare un $L$ grande richiede coppie grandi o tempi lunghi. Questa è la base della stabilità giroscopica.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "giroscopio",
+                "resistenza",
+                "stabilità",
+                "L grande"
+            ]
+        },
+        {
+            "id": "ang_127",
+            "domanda": "Se due persone su una giostra che ruota si spostano verso il centro, cosa succede alla velocità angolare?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Conservazione pratica",
+            "opzioni": [
+                "Diminuisce",
+                "Resta uguale",
+                "Aumenta",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Spostandosi verso il centro, il momento d'inerzia $I$ diminuisce. Per conservare $L = I\\omega$ (senza attriti), $\\omega$ aumenta.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "giostra",
+                "centro",
+                "omega aumenta",
+                "I diminuisce"
+            ]
+        },
+        {
+            "id": "ang_128",
+            "domanda": "Cosa hanno in comune un pattinatore che piroetta, una stella che collassa e una giostra dove le persone si avvicinano al centro?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Principio unificante",
+            "opzioni": [
+                "La temperatura costante",
+                "La conservazione del momento angolare con $I$ che diminuisce",
+                "La conservazione della massa",
+                "La pressione costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In tutti questi casi la materia si avvicina all'asse di rotazione riducendo $I$, e per conservare $L$ aumenta $\\omega$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "principio comune",
+                "I diminuisce",
+                "esempi",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "ang_129",
+            "domanda": "Perché le stelle di neutroni ruotano così velocemente?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Astrofisica",
+            "opzioni": [
+                "Perché assorbono energia dal vuoto",
+                "Perché nel collasso gravitazionale $I$ diminuisce enormemente e $L$ si conserva",
+                "Perché la temperatura aumenta infinitamente",
+                "Perché la massa aumenta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Una stella che collassa conserva $L$ ma riduce enormemente il suo raggio e quindi $I$, causando un aumento enorme di $\\omega$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "stelle neutroni",
+                "collasso",
+                "conservazione",
+                "omega elevata"
+            ]
+        },
+        {
+            "id": "ang_130",
+            "domanda": "Un ciclista che curva si inclina verso l'interno della curva. Quale ruolo gioca il momento angolare delle ruote?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Applicazioni reali",
+            "opzioni": [
+                "Nessun ruolo",
+                "Il momento angolare delle ruote che ruotano fornisce stabilità giroscopica",
+                "Aumenta la massa",
+                "Annulla la gravità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le ruote in rotazione hanno momento angolare che conferisce stabilità giroscopica, aiutando il ciclista a mantenere l'equilibrio.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "bicicletta",
+                "equilibrio",
+                "ruote",
+                "stabilità"
+            ]
+        },
+        {
+            "id": "ang_131",
+            "domanda": "Quale legge di Keplero è direttamente collegata alla conservazione del momento angolare?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Leggi di Keplero",
+            "opzioni": [
+                "Prima legge (orbite ellittiche)",
+                "Seconda legge (legge delle aree)",
+                "Terza legge (periodo e semiasse maggiore)",
+                "Nessuna delle tre"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La seconda legge di Keplero (velocità areolare costante) deriva direttamente dalla conservazione di $L$ sotto forza centrale gravitazionale.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Keplero",
+                "aree",
+                "seconda legge",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "ang_132",
+            "domanda": "Se un satellite in orbita accende i motori tangenzialmente, come cambia il suo momento angolare rispetto alla Terra?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Forze non centrali",
+            "opzioni": [
+                "Non cambia mai",
+                "Cambia perché la forza del motore non è centrale",
+                "Diventa sempre nullo",
+                "Dipende solo dalla massa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Una spinta tangenziale produce un momento torcente rispetto al centro della Terra ($\\tau \\neq 0$), quindi $L$ cambia.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "satellite",
+                "motori",
+                "tangenziale",
+                "tau non zero"
+            ]
+        },
+        {
+            "id": "ang_133",
+            "domanda": "Due dischi identici ruotano: uno con $\\omega$ maggiore. Quale ha più momento angolare?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Confronti",
+            "opzioni": [
+                "Entrambi uguale",
+                "Quello con $\\omega$ maggiore",
+                "Quello con $\\omega$ minore",
+                "Impossibile determinare"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "A parità di $I$ (dischi identici), con $L = I\\omega$, maggiore è $\\omega$ maggiore è $L$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "confronto",
+                "I uguale",
+                "omega",
+                "L proporzionale"
+            ]
+        },
+        {
+            "id": "ang_134",
+            "domanda": "Una pulsar (stella di neutroni rotante) rallenta gradualmente pur essendo isolata. Qual è la spiegazione più probabile?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Perdita di momento angolare",
+            "opzioni": [
+                "Viola la conservazione del momento angolare",
+                "Emette radiazione elettromagnetica che porta via energia e momento angolare",
+                "La massa aumenta spontaneamente",
+                "Il vuoto la frena"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le pulsar emettono radiazione che trasporta via energia e momento angolare, causando il rallentamento graduale ($\\tau_{rad} \\neq 0$).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "pulsar",
+                "rallentamento",
+                "radiazione",
+                "perdita L"
+            ]
+        },
+        {
+            "id": "ang_135",
+            "domanda": "Perché un elicottero ha una piccola elica sulla coda?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Applicazioni tecnologiche",
+            "opzioni": [
+                "Per andare più veloce",
+                "Per controbilanciare il momento angolare dell'elica principale e evitare che il corpo ruoti",
+                "Per decorazione",
+                "Per raffreddare il motore"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'elica principale crea un momento angolare; per il terzo principio, il corpo tenderebbe a ruotare nel verso opposto. L'elica di coda fornisce una coppia che lo previene.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "elicottero",
+                "elica coda",
+                "controreazione",
+                "bilanciamento"
+            ]
+        },
+        {
+            "id": "ang_136",
+            "domanda": "Un astronauta nello spazio può cambiare il suo orientamento (direzione del corpo) senza emettere gas. Come?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Conservazione e moti interni",
+            "opzioni": [
+                "È impossibile",
+                "Muovendo braccia e gambe per creare rotazioni relative delle parti del corpo",
+                "Pensando intensamente",
+                "Aspettando che passi del tempo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Senza coppie esterne, $L_{tot} = 0$ si conserva. L'astronauta può creare rotazioni interne che cambiano l'orientamento mantenendo $L_{tot} = 0$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "astronauta",
+                "spazio",
+                "orientamento",
+                "moti interni"
+            ]
+        },
+        {
+            "id": "ang_137",
+            "domanda": "Due oggetti hanno lo stesso momento angolare ma masse diverse. Quale affermazione è corretta?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Relazioni tra grandezze",
+            "opzioni": [
+                "Hanno necessariamente la stessa velocità angolare",
+                "Possono avere $\\omega$ diversi se hanno $I$ diversi",
+                "Hanno la stessa energia cinetica",
+                "Hanno lo stesso momento d'inerzia"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $L = I\\omega$, a parità di $L$, oggetti con $I$ diversi hanno $\\omega$ diversi: $\\omega = L/I$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "L uguale",
+                "masse diverse",
+                "omega",
+                "I diverso"
+            ]
+        },
+        {
+            "id": "ang_138",
+            "domanda": "Un satellite passa dall'apogeo (punto più lontano) al perigeo (punto più vicino) in orbita ellittica. Come varia la sua energia cinetica?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Orbite e energia",
+            "opzioni": [
+                "Diminuisce",
+                "Resta costante",
+                "Aumenta",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "L'energia totale si conserva. Passando al perigeo, $r$ diminuisce quindi l'energia potenziale diminuisce (più negativa) e l'energia cinetica aumenta.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "orbita",
+                "apogeo",
+                "perigeo",
+                "energia cinetica"
+            ]
+        },
+        {
+            "id": "ang_139",
+            "domanda": "Quale dispositivo sfrutta il momento angolare per mantenere la direzione in una nave o aereo?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Strumenti di navigazione",
+            "opzioni": [
+                "Termometro",
+                "Giroscopio",
+                "Barometro",
+                "Anemometro"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Un giroscopio mantiene costante la direzione del suo asse di rotazione grazie all'elevato momento angolare, permettendo la navigazione inerziale.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "giroscopio",
+                "navigazione",
+                "direzione",
+                "strumento"
+            ]
+        },
+        {
+            "id": "ang_140",
+            "domanda": "Un pattinatore accelera la sua rotazione chiudendo le braccia. Da dove viene l'energia cinetica aggiuntiva?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Lavoro ed energia",
+            "opzioni": [
+                "Si crea dal nulla",
+                "Dal lavoro muscolare fatto per portare le braccia verso l'asse",
+                "Dalla gravità",
+                "Dalla temperatura"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Chiudendo le braccia, i muscoli compiono lavoro positivo contro la forza centrifuga, aumentando l'energia cinetica anche se $L$ resta costante.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "lavoro muscolare",
+                "braccia",
+                "K aumenta"
+            ]
+        },
+        {
+            "id": "ang_141",
+            "domanda": "Quando una stella collassa in una pulsar, quale grandezza aumenta oltre alla velocità angolare?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Collasso stellare",
+            "opzioni": [
+                "Il raggio",
+                "L'energia cinetica di rotazione",
+                "Il momento d'inerzia",
+                "La temperatura diminuisce sempre"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $L$ costante e $I$ che diminuisce, $\\omega$ aumenta. L'energia cinetica $K = L^2/(2I)$ aumenta (per lavoro gravitazionale).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "collasso",
+                "pulsar",
+                "energia",
+                "L^2/2I"
+            ]
+        },
+        {
+            "id": "ang_142",
+            "domanda": "Una bici resta in equilibrio quando è in movimento ma cade quando è ferma. Oltre al momento angolare delle ruote, cos'altro contribuisce?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Equilibrio dinamico",
+            "opzioni": [
+                "Solo la massa",
+                "Anche la possibilità di sterzare per riportare il punto di appoggio sotto il centro di massa",
+                "La temperatura dell'aria",
+                "Il colore della bici"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Oltre all'effetto giroscopico, quando la bici si inclina il ciclista può sterzare per spostare il punto d'appoggio e mantenere l'equilibrio dinamico.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "bicicletta",
+                "equilibrio",
+                "sterzo",
+                "dinamica"
+            ]
+        },
+        {
+            "id": "ang_143",
+            "domanda": "Perché la precessione di una trottola avviene in una direzione specifica?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Precessione",
+            "opzioni": [
+                "È casuale",
+                "La direzione è determinata da $\\tau = dL/dt$ con $\\tau$ perpendicolare a $L$",
+                "Dipende solo dalla massa",
+                "È sempre verso il basso"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La coppia gravitazionale $\\tau$ è perpendicolare sia a $L$ che alla verticale, determinando la direzione della precessione secondo la regola della mano destra.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "precessione",
+                "direzione",
+                "tau perpendicolare",
+                "gravità"
+            ]
+        },
+        {
+            "id": "ang_144",
+            "domanda": "In un sistema di due stelle binarie che orbitano, dove si trova il punto rispetto al quale il momento angolare totale è più semplice da calcolare?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Sistemi binari",
+            "opzioni": [
+                "Nel Sole",
+                "Nel centro di massa del sistema",
+                "In una delle due stelle",
+                "All'infinito"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel centro di massa, la forma del momento angolare è più semplice e si conserva se non ci sono forze esterne (le forze gravitazionali sono interne).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "stelle binarie",
+                "centro massa",
+                "L totale",
+                "simplificazione"
+            ]
+        },
+        {
+            "id": "ang_145",
+            "domanda": "Un disco e un anello hanno stessa massa e raggio e ruotano con stesso $\\omega$. Quale ha maggiore momento angolare?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Confronto geometrie",
+            "opzioni": [
+                "Il disco",
+                "L'anello",
+                "Uguale",
+                "Dipende dalla temperatura"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'anello ha momento d'inerzia maggiore ($I_{anello} = mR^2$ vs $I_{disco} = \\frac{1}{2}mR^2$), quindi a parità di $\\omega$ ha $L = I\\omega$ maggiore.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "disco",
+                "anello",
+                "I diverso",
+                "geometria"
+            ]
+        },
+        {
+            "id": "ang_146",
+            "domanda": "Come può un gatto che cade sempre atterrare sulle zampe partendo da fermo in caduta libera?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Moti complessi",
+            "opzioni": [
+                "Viola la conservazione del momento angolare",
+                "Ruota diverse parti del corpo in sequenza mantenendo $L_{tot} = 0$",
+                "Emette gas",
+                "La gravità lo ruota"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il gatto sfrutta movimenti interni complessi (rotazioni di diverse parti con momenti d'inerzia diversi) mantenendo $L_{tot} = 0$ ma cambiando orientamento.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "gatto",
+                "caduta",
+                "rotazione",
+                "L totale zero"
+            ]
+        },
+        {
+            "id": "ang_147",
+            "domanda": "Un satellite geostazionario resta sempre sopra lo stesso punto della Terra. Cosa si può dire del suo momento angolare rispetto al centro della Terra?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Orbite speciali",
+            "opzioni": [
+                "È nullo",
+                "È costante e allineato con l'asse di rotazione terrestre",
+                "Cambia continuamente",
+                "È perpendicolare all'equatore"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In orbita geostazionaria (equatoriale e circolare), $L$ è costante (forza centrale) e parallelo all'asse di rotazione terrestre.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "geostazionario",
+                "costante",
+                "asse terrestre",
+                "orbita"
+            ]
+        },
+        {
+            "id": "ang_148",
+            "domanda": "La Luna presenta sempre la stessa faccia alla Terra. Questo implica che rispetto al centro della Terra:",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Rotazione sincrona",
+            "opzioni": [
+                "La Luna non ha momento angolare",
+                "Il periodo di rotazione della Luna su se stessa è uguale al periodo orbitale",
+                "La Luna non ruota mai",
+                "Il momento angolare è zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La rotazione sincrona (tidal locking) fa sì che la Luna ruoti su se stessa con lo stesso periodo dell'orbita. Ha comunque momento angolare sia orbitale che rotazionale.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Luna",
+                "faccia",
+                "sincrona",
+                "marea"
+            ]
+        },
+        {
+            "id": "ang_149",
+            "domanda": "Perché è impossibile per un nuotatore fermo nell'acqua iniziare a ruotare sul proprio asse senza muovere le braccia o le gambe?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Conservazione rigorosa",
+            "opzioni": [
+                "Manca l'ossigeno",
+                "Senza coppie esterne, con $L = 0$ iniziale deve restare $L = 0$",
+                "L'acqua lo impedisce sempre",
+                "La temperatura è troppo bassa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Partendo da $L = 0$ e senza coppie esterne (solo forze idrostatiche radiali), per conservazione deve restare $L = 0$. Serve movimento interno/relativo.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "nuotatore",
+                "L zero",
+                "conservazione",
+                "impossibile"
+            ]
+        },
+        {
+            "id": "ang_150",
+            "domanda": "Un volano (flywheel) immagazzina energia. Se raddoppi $\\omega$ a parità di $I$, di quanto aumenta l'energia immagazzinata?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Energia e applicazioni",
+            "opzioni": [
+                "Raddoppia",
+                "Aumenta di 4 volte",
+                "Resta uguale",
+                "Triplica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'energia cinetica rotazionale è $K = \\frac{1}{2}I\\omega^2$. Raddoppiando $\\omega$, $K$ diventa $4$ volte maggiore.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "volano",
+                "energia",
+                "omega^2",
+                "quadratica"
+            ]
+        },
+        {
+            "id": "ang_151",
+            "domanda": "Due pianeti orbitano attorno a stelle diverse. Entrambi hanno stesso periodo orbitale ma raggi orbitali diversi. Cosa si può concludere?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Keplero e scale",
+            "opzioni": [
+                "Le stelle hanno masse diverse",
+                "È impossibile",
+                "Le stelle hanno stessa massa",
+                "I momenti angolari sono uguali"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dalla terza legge di Keplero $T^2 \\propto R^3/M_{stella}$: stesso $T$ con $R$ diversi implica masse stellari diverse.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Keplero",
+                "periodo",
+                "raggio",
+                "massa stella"
+            ]
+        },
+        {
+            "id": "ang_152",
+            "domanda": "La precessione dell'asse terrestre (precessione degli equinozi) avviene con periodo di circa 26000 anni. Qual è la causa principale?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Precessione planetaria",
+            "opzioni": [
+                "Il vento solare",
+                "La coppia gravitazionale del Sole e della Luna sul rigonfiamento equatoriale terrestre",
+                "L'attrito con l'atmosfera",
+                "La rotazione del Sole"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La Terra non è perfettamente sferica. Le forze gravitazionali di Sole e Luna sul rigonfiamento equatoriale creano una coppia che causa la precessione dell'asse.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "precessione terrestre",
+                "equinozi",
+                "coppia solare",
+                "Luna"
+            ]
+        },
+        {
+            "id": "ang_153",
+            "domanda": "In meccanica quantistica, il momento angolare è quantizzato. Qual è l'unità fondamentale?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Connessione quantistica",
+            "opzioni": [
+                "Il joule",
+                "La costante di Planck ridotta $\\hbar$",
+                "La massa dell'elettrone",
+                "La costante gravitazionale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In meccanica quantistica, il momento angolare è quantizzato in multipli di $\\hbar = h/(2\\pi) \\approx 1{,}05 \\times 10^{-34}$ J$\\cdot$s.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "quantistico",
+                "Planck",
+                "hbar",
+                "quantizzazione"
+            ]
+        },
+        {
+            "id": "ang_154",
+            "domanda": "Un'astronave può cambiare orientamento nello spazio profondo usando ruote di reazione (reaction wheels). Come funzionano?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Tecnologia spaziale",
+            "opzioni": [
+                "Accelerano ruote interne: il momento angolare delle ruote è compensato da una rotazione opposta dell'astronave",
+                "Emettono sempre gas",
+                "Usano campi magnetici",
+                "Sfruttano la gravità"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Accelerando ruote interne, per conservare $L_{tot} = 0$ (o costante), l'astronave ruota nel verso opposto. Nessun propellente necessario.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "reaction wheels",
+                "astronave",
+                "conservazione",
+                "orientamento"
+            ]
+        },
+        {
+            "id": "ang_155",
+            "domanda": "Perché la velocità di rotazione della Terra sta gradualmente diminuendo?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Dissipazione mareale",
+            "opzioni": [
+                "Per attrito con l'atmosfera solare",
+                "Per effetti mareali che dissipano energia e trasferiscono momento angolare alla Luna",
+                "Per la radiazione cosmica",
+                "Per il raffreddamento del nucleo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le maree causano dissipazione di energia sulla Terra. Il momento angolare si conserva nel sistema Terra-Luna: la Terra rallenta e la Luna si allontana leggermente.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "rotazione Terra",
+                "maree",
+                "dissipazione",
+                "trasferimento L"
+            ]
+        },
+        {
+            "id": "ang_156",
+            "domanda": "Perché un frisbee vola in modo più stabile quando ruota rapidamente?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Stabilità nel volo",
+            "opzioni": [
+                "Perché pesa di meno",
+                "Perché il momento angolare fornisce stabilità giroscopica impedendo oscillazioni dell'asse",
+                "Perché la gravità è minore",
+                "Perché l'aria è più densa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La rotazione rapida crea un grande momento angolare che resiste a cambiamenti di orientamento, stabilizzando il volo del frisbee.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "frisbee",
+                "stabilità",
+                "volo",
+                "giroscopico"
+            ]
+        },
+        {
+            "id": "ang_157",
+            "domanda": "Quale relazione esiste tra il momento angolare di un corpo rigido e la sua energia cinetica di rotazione?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Relazioni energetiche",
+            "opzioni": [
+                "Sono indipendenti",
+                "L'energia cinetica è $K = \\frac{L^2}{2I}$",
+                "Sono sempre uguali",
+                "L'energia è sempre il doppio di $L$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Usando $L = I\\omega$ e $K = \\frac{1}{2}I\\omega^2$, si ottiene $K = \\frac{L^2}{2I}$, relazione fondamentale tra le due grandezze.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia cinetica",
+                "L^2/2I",
+                "relazione",
+                "rotazione"
+            ]
+        },
+        {
+            "id": "ang_158",
+            "domanda": "Perché i proiettili dei fucili sono rigati (hanno scanalature elicoidali nella canna)?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Applicazioni balistiche",
+            "opzioni": [
+                "Per decorazione",
+                "Per far ruotare il proiettile e stabilizzarlo giroscopicamente durante il volo",
+                "Per rallentarlo",
+                "Per aumentarne la massa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le rigature imprimono una rotazione rapida al proiettile, creando momento angolare che lo stabilizza giroscopicamente migliorando precisione e gittata.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "proiettile",
+                "rigatura",
+                "stabilità",
+                "rotazione"
+            ]
+        },
+        {
+            "id": "ang_159",
+            "domanda": "In un sistema isolato di due particelle che collidono, quale affermazione sul momento angolare totale rispetto al centro di massa è corretta?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Urti e conservazione",
+            "opzioni": [
+                "Si conserva sempre",
+                "Si conserva solo in urti elastici",
+                "Non si conserva mai",
+                "Si conserva solo se le masse sono uguali"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In assenza di coppie esterne, il momento angolare totale si conserva in ogni tipo di urto (elastico o anelastico) rispetto a qualunque polo fisso.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urti",
+                "conservazione",
+                "sistema isolato",
+                "centro massa"
+            ]
+        },
+        {
+            "id": "ang_160",
+            "domanda": "Come può un helicopter mantenersi in hovering (fermo in aria) senza ruotare su se stesso?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Bilanciamento delle coppie",
+            "opzioni": [
+                "L'elica principale non crea momento angolare",
+                "L'elica di coda applica una coppia uguale e opposta a quella dell'elica principale",
+                "La gravità lo stabilizza",
+                "Il vento lo tiene fermo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'elica principale crea una coppia sul corpo dell'elicottero. L'elica di coda genera una spinta laterale che crea una coppia uguale e opposta, mantenendo $L = 0$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "elicottero",
+                "hovering",
+                "coppia opposta",
+                "bilanciamento"
+            ]
+        },
+        {
+            "id": "ang_161",
+            "domanda": "Se un sistema ha $L = 0$ in un certo istante e non agiscono coppie esterne, cosa si può dire sul suo futuro?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Conservazione rigorosa",
+            "opzioni": [
+                "Può acquisire momento angolare spontaneamente",
+                "$L$ resterà zero per sempre",
+                "$L$ aumenterà gradualmente",
+                "Dipende dalla temperatura"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Senza coppie esterne, $dL/dt = 0$ quindi $L$ è costante. Se $L(t_0) = 0$, allora $L(t) = 0$ per ogni tempo successivo.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "L zero",
+                "conservazione",
+                "costante",
+                "futuro"
+            ]
+        },
+        {
+            "id": "ang_162",
+            "domanda": "Un yo-yo scende lungo il filo. Quale forma di energia si trasforma in energia cinetica di traslazione e rotazione?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Conversione energetica",
+            "opzioni": [
+                "Energia nucleare",
+                "Energia potenziale gravitazionale",
+                "Energia termica",
+                "Energia chimica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Scendendo, lo yo-yo perde energia potenziale gravitazionale che si converte in energia cinetica di traslazione del centro di massa e di rotazione attorno ad esso.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "yo-yo",
+                "energia potenziale",
+                "traslazione",
+                "rotazione"
+            ]
+        },
+        {
+            "id": "ang_163",
+            "domanda": "Perché i dischi degli hard disk girano a velocità costante anziché accelerare continuamente?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Rotazione controllata",
+            "opzioni": [
+                "Perché viola le leggi della fisica accelerare di più",
+                "Perché il motore fornisce solo la coppia necessaria a bilanciare gli attriti, mantenendo $\\omega$ costante",
+                "Perché la massa aumenta",
+                "Perché lo spazio è limitato"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $\\tau_{motore} = \\tau_{attrito}$, la coppia totale è nulla e quindi $\\omega$ resta costante. Se $\\tau_{motore} > \\tau_{attrito}$ il disco accelererebbe.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "hard disk",
+                "omega costante",
+                "bilanciamento",
+                "attrito"
+            ]
+        },
+        {
+            "id": "ang_164",
+            "domanda": "Quale affermazione è vera per un punto materiale in moto rettilineo uniforme rispetto a un polo $O$ fuori dalla traiettoria?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Moto rettilineo",
+            "opzioni": [
+                "$L$ è nullo",
+                "$L$ è costante (direzione e modulo)",
+                "$L$ varia nel tempo",
+                "$L$ è sempre parallelo alla velocità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In moto rettilineo uniforme, $p$ è costante. Anche se $r$ cambia, il prodotto $r \\times p$ ha modulo costante $|L| = bp$ (braccio $b$ costante) e direzione costante.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "rettilineo uniforme",
+                "L costante",
+                "braccio",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "ang_165",
+            "domanda": "Un pianeta in orbita ellittica ha momento angolare costante ma velocità variabile. Come si concilia questo con $L = mrv_t$?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Orbite ellittiche",
+            "opzioni": [
+                "È una contraddizione",
+                "Quando $r$ aumenta, $v_t$ diminuisce proporzionalmente mantenendo il prodotto costante",
+                "$L$ non è mai costante",
+                "La formula è sbagliata"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con forza centrale, $L = mrv_t$ si conserva. La variazione di $r$ è compensata inversamente dalla variazione di $v_t$: $rv_t = \\text{costante}$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "ellittica",
+                "rv_t costante",
+                "compensazione",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "ang_166",
+            "domanda": "Se la Terra improvvisamente si espandesse (aumentando il raggio) conservando la massa e senza coppie esterne, cosa succederebbe al giorno terrestre?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Variazioni planetarie",
+            "opzioni": [
+                "Resterebbe uguale",
+                "Si accorcerebbe",
+                "Si allungherebbe",
+                "Diventerebbe infinito"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Aumentando il raggio, $I$ aumenta. Per conservare $L = I\\omega$, $\\omega$ deve diminuire, quindi il periodo di rotazione (giorno) aumenterebbe.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Terra",
+                "espansione",
+                "giorno",
+                "I aumenta"
+            ]
+        },
+        {
+            "id": "ang_167",
+            "domanda": "Quale proprietà del momento angolare spiega perché è difficile cambiare direzione a una ruota di bicicletta che gira rapidamente?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Resistenza al cambiamento",
+            "opzioni": [
+                "La massa della ruota",
+                "La resistenza giroscopica: serve una grande coppia per cambiare la direzione di $L$",
+                "L'attrito con l'aria",
+                "La temperatura"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da $\\tau = dL/dt$, per cambiare rapidamente la direzione di un $L$ grande serve una coppia molto grande. Questo crea la resistenza giroscopica percepita.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "ruota",
+                "resistenza",
+                "direzione L",
+                "giroscopico"
+            ]
+        },
+        {
+            "id": "ang_168",
+            "domanda": "Due pianeti orbitano attorno alla stessa stella con stesso semiasse maggiore ma diverse eccentricità. Come si confrontano i loro momenti angolari?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Orbite e eccentricità",
+            "opzioni": [
+                "Sono sempre uguali",
+                "Quello con eccentricità maggiore ha $L$ minore",
+                "Quello con eccentricità maggiore ha $L$ maggiore",
+                "Non si possono confrontare"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "A parità di semiasse maggiore e massa, un'orbita più eccentrica (più ellittica) ha momento angolare minore. Per un'orbita circolare $L$ è massimo.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "eccentricità",
+                "orbite",
+                "confronto L",
+                "ellitticità"
+            ]
+        },
+        {
+            "id": "ang_169",
+            "domanda": "Un bambino su un'altalena compie un'oscillazione. Il suo momento angolare rispetto al punto di sospensione è:",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Moto oscillatorio",
+            "opzioni": [
+                "Sempre costante",
+                "Varia periodicamente (nullo agli estremi, massimo al centro)",
+                "Sempre nullo",
+                "Sempre massimo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Agli estremi dell'oscillazione $v = 0$ quindi $L = 0$. Nel punto più basso la velocità è massima quindi $L$ è massimo. Varia continuamente.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "altalena",
+                "oscillazione",
+                "variazione L",
+                "periodico"
+            ]
+        },
+        {
+            "id": "ang_170",
+            "domanda": "Quale fenomeno astronomico è causato dalla coppia gravitazionale differenziale del Sole sulla Terra non perfettamente sferica?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Coppie mareali",
+            "opzioni": [
+                "Le stagioni",
+                "La precessione dell'asse terrestre",
+                "Le eclissi",
+                "L'aurora boreale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La Terra ha un rigonfiamento equatoriale. La coppia gravitazionale differenziale di Sole e Luna su questo rigonfiamento causa la precessione dell'asse terrestre (periodo ~26000 anni).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "precessione",
+                "coppia differenziale",
+                "rigonfiamento",
+                "Sole"
+            ]
+        },
+        {
+            "id": "ang_171",
+            "domanda": "Se applichi una forza tangenziale a un disco che ruota liberamente, quale effetto produce?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Forze tangenziali",
+            "opzioni": [
+                "Nessun effetto",
+                "Cambia $\\omega$ perché crea un momento torcente",
+                "Cambia solo la temperatura",
+                "Ferma il disco istantaneamente"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Una forza tangenziale applicata a distanza $r$ dall'asse crea momento torcente $\\tau = rF$, che causa variazione di $L$ e quindi di $\\omega$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "forza tangenziale",
+                "torque",
+                "omega cambia",
+                "disco"
+            ]
+        },
+        {
+            "id": "ang_172",
+            "domanda": "Perché gli anelli di Saturno mantengono una forma piatta anziché sferica?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Sistemi planetari",
+            "opzioni": [
+                "Per caso",
+                "Perché le particelle hanno momento angolare netto attorno a Saturno e si dispongono su un piano perpendicolare a $L$",
+                "Per la temperatura",
+                "Per la pressione"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il momento angolare totale del sistema definisce un asse. Le collisioni tra particelle dissipano energia ma conservano $L$, portandole a orbitare tutte sullo stesso piano.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "anelli Saturno",
+                "piano",
+                "L conservato",
+                "collisioni"
+            ]
+        },
+        {
+            "id": "ang_173",
+            "domanda": "Un giocattolo chiamato 'diabolo' viene fatto ruotare rapidamente su una corda. Perché è più facile farlo girare in un piano verticale anziché lasciarlo cadere?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Giocattoli e fisica",
+            "opzioni": [
+                "Per la massa",
+                "La rotazione rapida crea stabilità giroscopica che mantiene l'orientamento",
+                "Per il colore",
+                "Per l'attrito"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il diabolo che ruota rapidamente ha grande momento angolare che resiste a cambiamenti di orientamento, mantenendosi stabile sulla corda.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "diabolo",
+                "stabilità",
+                "rotazione",
+                "giroscopico"
+            ]
+        },
+        {
+            "id": "ang_174",
+            "domanda": "In una collisione tra due auto in un incrocio, il momento angolare totale rispetto al punto d'impatto è generalmente:",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Urti reali",
+            "opzioni": [
+                "Conservato se si trascurano forze esterne verticali (peso e normale si bilanciano)",
+                "Mai conservato",
+                "Sempre nullo",
+                "Infinito"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Rispetto al punto d'impatto, peso e normale hanno braccio nullo. L'attrito con l'asfalto può dare coppia, ma in prima approssimazione $L$ si conserva durante l'urto.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "auto",
+                "collisione",
+                "conservazione",
+                "punto impatto"
+            ]
+        },
+        {
+            "id": "ang_175",
+            "domanda": "Perché una palla da football americano lanciata con spirale (rotazione attorno all'asse longitudinale) vola più stabile e lontano?",
+            "categoria": "Momento Angolare",
+            "sottocategoria": "Sport e fisica",
+            "opzioni": [
+                "Perché pesa meno",
+                "La rotazione crea momento angolare che stabilizza l'orientamento riducendo l'effetto delle turbolenze",
+                "Per il colore",
+                "Per la temperatura"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La spirale imprime rotazione rapida che genera momento angolare lungo l'asse del pallone, stabilizzandolo giroscopicamente contro le perturbazioni aerodinamiche.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "football",
+                "spirale",
+                "stabilità",
+                "aerodinamica"
+            ]
         }
     ]
 }

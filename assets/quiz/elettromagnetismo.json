@@ -2415,6 +2415,1931 @@
         "fem",
         "proporzionalità"
       ]
+    },
+    {
+      "id": "em_121",
+      "domanda": "Spiega perché in un circuito chiuso formato da una spira conduttrice, la legge di Lenz afferma che la corrente indotta sempre si oppone alla variazione di flusso. Quale principio fisico fondamentale spiega questo comportamento?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Fondamenti di Lenz",
+      "opzioni": [
+        "Conservazione della carica",
+        "Conservazione dell'energia",
+        "Principio di azione-reazione",
+        "Principio di relatività"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La legge di Lenz è una conseguenza della conservazione dell'energia: se la corrente indotta non opponesse il cambiamento, darebbe energia dal nulla.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "lenz",
+        "energia",
+        "conservazione",
+        "fondamenti"
+      ]
+    },
+    {
+      "id": "em_122",
+      "domanda": "Un condensatore piano viene caricato lentamente e poi staccato dal generatore. Se successivamente le armature vengono allontanate mantenendole isolate, cosa accade al campo elettrico tra le armature?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Campo tra piastre",
+      "opzioni": [
+        "Aumenta proporzionalmente alla distanza",
+        "Diminuisce perché l'area aumenta",
+        "Rimane circa costante (a carica costante)",
+        "Diventa nullo"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il campo $E = \\sigma / \\varepsilon_0$ dipende dalla densità di carica superficiale, non dalla distanza tra piastre. A carica costante (circuito aperto), $E$ rimane circa costante.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "campo costante",
+        "carica isolata",
+        "densità superficiale"
+      ]
+    },
+    {
+      "id": "em_123",
+      "domanda": "Considera il rapporto concettuale tra il campo elettrico E e il potenziale V in una regione di spazio. Se il potenziale è massimo in un punto, cosa si può dire del campo elettrico in quel punto?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Relazione E e V",
+      "opzioni": [
+        "È massimo in modulo",
+        "È zero",
+        "È negativo",
+        "È sempre orientato verso nord"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il campo è il gradiente negativo del potenziale: $\\vec{E} = -\\nabla V$. Dove V è estremale (max o min), il gradiente è nullo, quindi E = 0.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "potenziale massimo",
+        "gradiente",
+        "campo zero"
+      ]
+    },
+    {
+      "id": "em_124",
+      "domanda": "Un materiale ferromagnetico (come il ferro) è caratterizzato da domini magnetici microscopici orientati casualmente a causa della temperatura. Al diminuire della temperatura, il comportamento magnetico del ferro tende a:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Magnetismo dei materiali",
+      "opzioni": [
+        "Diminuire perché aumenta la resistività",
+        "Aumentare perché i domini tendent a ordinarsi",
+        "Diventare perfettamente diamagnetico",
+        "Scomparire completamente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'agitazione termica che disordina i domini diminuisce al diminuire di T: i domini possono allinearsi spontaneamente, potenziando le proprietà ferromagnetiche.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "domini",
+        "temperatura",
+        "ferromagnetico"
+      ]
+    },
+    {
+      "id": "em_125",
+      "domanda": "Un generatore ideale ha f.e.m. costante. Quale affermazione è corretta sulla tensione ai suoi terminali (differenza di potenziale esterna)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Generatori ideali",
+      "opzioni": [
+        "È sempre uguale alla f.e.m. indipendentemente dal carico",
+        "Diminuisce all'aumentare della corrente erogata",
+        "Dipende solo dalla resistenza interna (che è nulla in un ideale)",
+        "È sempre zero"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Un generatore ideale (resistenza interna nulla) mantiene tensione ai terminali uguale alla f.e.m., indipendentemente dal carico.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "generatore ideale",
+        "terminali",
+        "fem"
+      ]
+    },
+    {
+      "id": "em_126",
+      "domanda": "In un circuito RL alimentato con tensione alternata sinusoidale, al variare della frequenza dell'alimentazione, come cambia il tipo di impedenza del circuito?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Comportamento relativo alla frequenza",
+      "opzioni": [
+        "È sempre quasi resistiva",
+        "A bassa frequenza è dominata da R; ad alta frequenza da L (reattanza induttiva)",
+        "È sempre induttiva",
+        "Rimane costante"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'induttanza presenta reattanza $X_L = \\omega L$: a bassa frequenza è trascurabile (domina R), ad alta frequenza domina (l'induttore impedisce rapide variazioni di corrente).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "frequenza",
+        "RL",
+        "reattanza",
+        "impedenza"
+      ]
+    },
+    {
+      "id": "em_127",
+      "domanda": "Un ago magnetico si trova al centro di un solenoide percorso da corrente stazionaria. L'ago si orienta lungo l'asse del solenoide. Se improvvisamente la corrente aumenta, cosa succede all'ago?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Dinamica magnetica",
+      "opzioni": [
+        "Non accade nulla perché il campo magnetico non varia",
+        "L'ago ruota verso la nuova direzione di equilibrio",
+        "L'ago viene espulso dal solenoide",
+        "L'ago perde la magnetizzazione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La variazione di corrente cambia il campo magnetico nel solenoide. L'ago, soggetto a coppia torcente dal nuovo campo, ruota verso il nuovo stato di equilibrio.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "ago magnetico",
+        "solenoide",
+        "coppia"
+      ]
+    },
+    {
+      "id": "em_128",
+      "domanda": "In un condensatore con dielettrico, le molecole del dielettrico si polarizzano in presenza del campo elettrico. Questo fenomeno implica che il campo elettrico complessivo all'interno del dielettrico è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Polarizzazione dielettrica",
+      "opzioni": [
+        "Uguale al campo esterno applicato",
+        "Maggiore del campo esterno",
+        "Minore del campo esterno per effetto della polarizzazione",
+        "Sempre nullo"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il dielettrico si polarizza creando un campo interno che si oppone al campo applicato. Il risultato è una riduzione del campo totale dentro il dielettrico: $E = E_0 / \\kappa$.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "dielettrico",
+        "polarizzazione",
+        "campo ridotto"
+      ]
+    },
+    {
+      "id": "em_129",
+      "domanda": "Quale affermazione descrive meglio il significato fisico della permittività relativa $\\kappa$ di un materiale dielettrico?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Costante dielettrica",
+      "opzioni": [
+        "La capacità di trasportare corrente",
+        "La capacità del materiale di ridurre il campo per effetto della polarizzazione",
+        "La resistenza del materiale",
+        "La densità di carica libera"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La permittività relativa $\\kappa$ esprime di quante volte il materiale riduce il campo elettrico rispetto al vuoto grazie alla polarizzazione delle sue molecole.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "permittività relativa",
+        "kappa",
+        "polarizzazione",
+        "campo"
+      ]
+    },
+    {
+      "id": "em_130",
+      "domanda": "Quando due cariche puntiformi di segno opposto si avvicinano, l'energia potenziale elettrica del sistema cambia. In che modo?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Energia potenziale",
+      "opzioni": [
+        "Aumenta sempre",
+        "Diminuisce perché il sistema tende verso stato a energia minore",
+        "Resta costante perché sono opposte",
+        "Diventa infinita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'energia potenziale di due cariche opposte è negativa e decresce (diventa più negativa) avvicinandosi. Il sistema evolve verso minore energia.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "energia potenziale",
+        "cariche opposte",
+        "minima energia"
+      ]
+    },
+    {
+      "id": "em_131",
+      "domanda": "Un circuito RLC in serie raggiunge la risonanza a una certa frequenza $f_0$. A questa frequenza la reattanza capacitiva e quella induttiva sono:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Risonanza RLC",
+      "opzioni": [
+        "Entrambe nulla",
+        "Uguali e opposte, quindi si annullano",
+        "Una molto maggiore dell'altra",
+        "Sempre presenti ma non calcolabili"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A risonanza: $X_L = X_C$. Le reattanze si bilanciano ($\\omega L = 1/(\\omega C)$) e l'impedenza è minima (solo resistiva): $Z = R$.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "risonanza",
+        "reattanza",
+        "bilanciamento"
+      ]
+    },
+    {
+      "id": "em_132",
+      "domanda": "In una spira conduttrice ferma immersa in un campo magnetico uniforme e stazionario, la corrente indotta è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Induzione fermi",
+      "opzioni": [
+        "Massima",
+        "Nulla (non esiste f.e.m. indotta)",
+        "Necessariamente positiva",
+        "Infinita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'induzione di Faraday richiede una variazione di flusso. Se la spira è ferma e B è costante nel tempo, il flusso non cambia e non c'è f.e.m. indotta.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "spira ferma",
+        "campo stazionario",
+        "flusso costante"
+      ]
+    },
+    {
+      "id": "em_133",
+      "domanda": "In un circuito in corrente continua con due resistori in serie, raddoppiando uno dei due resistori, come cambia la potenza totale dissipata nel circuito (assumendo generatore ideale)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Potenza e variazioni",
+      "opzioni": [
+        "Aumenta",
+        "Diminuisce",
+        "Resta uguale",
+        "Diventa zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Aumentando la resistenza totale a tensione fissa, la corrente $I = V/R$ diminuisce. La potenza $P = V^2/R$ diminuisce.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "resistenza serie",
+        "potenza",
+        "diminuzione"
+      ]
+    },
+    {
+      "id": "em_134",
+      "domanda": "Perché un trasformatore ideale non conserva la potenza perfettamente quando passa da primario a secondario se le tensioni cambiano?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Conservazione potenza",
+      "opzioni": [
+        "Perché dissipa energia in calore",
+        "Perché la conserve: se $V_1 I_1 = V_2 I_2$ (potenza conservata)",
+        "Perché la resistenza interna è infinita",
+        "Perché genera energia dal nulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un trasformatore ideale la potenza si conserva: $P_1 = P_2$, cioè $V_1 I_1 = V_2 I_2$. Se la tensione aumenta (step-up), la corrente diminuisce proporzionalmente.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "trasformatore",
+        "conservazione potenza",
+        "potenza"
+      ]
+    },
+    {
+      "id": "em_135",
+      "domanda": "Un corpo conduttore isolato in equilibrio elettrostatico ha al suo interno campo elettrico nullo. Cosa possiamo dire con certezza riguardo al suo interno?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Conduttori",
+      "opzioni": [
+        "Il potenziale è necessariamente zero",
+        "Il potenziale è costante",
+        "Le cariche libere sono assenti",
+        "Non ci sono proprietà determinate"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Campo nullo significa $E = -\\nabla V = 0$: il potenziale non varia nello spazio, quindi è costante all'interno.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "conduttore",
+        "campo nullo",
+        "potenziale costante"
+      ]
+    },
+    {
+      "id": "em_136",
+      "domanda": "Una spira conduttrice viene estratta da un campo magnetico uniforme. Durante l'estrazione, si sviluppa una corrente indotta. Quale affermazione sulla corrente è vera?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Estrazione da campo",
+      "opzioni": [
+        "Ha verso sempre uguale indipendentemente da come si esce",
+        "Ha verso e intensità che dipendono dalla velocità di estrazione",
+        "È sempre nulla perché il campo è uniforme",
+        "Aumenta continuamente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il flusso cambia man mano che l'area immessa diminuisce. La f.e.m. indotta è $\\varepsilon = -dΦ/dt$: dipende dalla velocità di variazione (estrazione lenta vs veloce).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "estrazione",
+        "campo uniforme",
+        "flusso variabile"
+      ]
+    },
+    {
+      "id": "em_137",
+      "domanda": "Nel fenomeno dell'induzione elettromagnetica, il verso della corrente indotta è determinato da:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Determinazione verso indotto",
+      "opzioni": [
+        "Solo dalla direzione del campo esterno",
+        "Dal verso della variazione del flusso e dal principio di Lenz",
+        "Dal colore del conduttore",
+        "Da considerazioni relativistiche"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il verso è determinato dalla legge di Lenz: la corrente si oppone alla variazione di flusso che la genera.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "lenz",
+        "verso corrente",
+        "principio"
+      ]
+    },
+    {
+      "id": "em_138",
+      "domanda": "Un campo magnetico statico (che non varia nel tempo) può fare lavoro su una carica ferma?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Campi statici",
+      "opzioni": [
+        "Sì, sempre",
+        "Sì, ma solo con cariche negative",
+        "No, perché manca il campo elettrico",
+        "No, perché la forza è zero su carica ferma"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "La forza magnetica è $\\vec{F} = q\\vec{v} \\times \\vec{B}$: se la carica è ferma ($v = 0$), la forza è zero, quindi non fa lavoro.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "campo magnetico",
+        "carica ferma",
+        "lavoro nullo"
+      ]
+    },
+    {
+      "id": "em_139",
+      "domanda": "Due condensatori identici, uno carico e uno scarico, vengono collegati in parallelo. Quale affermazione riguardo all'energia è corretta?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Energia condensatori",
+      "opzioni": [
+        "L'energia totale rimane costante",
+        "L'energia totale aumenta",
+        "L'energia totale diminuisce per dissipazione",
+        "L'energia non è definibile"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Quando si collegano condensatori a diverso potenziale, circola corrente e c'è dissipazione di energia nei fili (resistenza). L'energia finale è minore dell'iniziale.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "energia",
+        "dissipazione",
+        "condensatori"
+      ]
+    },
+    {
+      "id": "em_140",
+      "domanda": "Quale dei seguenti scenari rappresenta meglio una situazione di non conservazione di energia in un circuito?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Energia conservazione",
+      "opzioni": [
+        "Un circuito con solo resistori e generatori ideali",
+        "Un circuito con resistori reali che dissipano calore",
+        "Un circuito con condensatori ideali",
+        "Un circuito RL ideale senza resistenza"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "I resistori reali dissipano energia per effetto Joule. Questa energia (fornita dal generatore) si converte in calore, apparentemente \"scomparendo\" dal circuito.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "dissipazione",
+        "joule",
+        "resistori"
+      ]
+    },
+    {
+      "id": "em_141",
+      "domanda": "Una carica positiva si muove in un campo elettrico uniforme E da un punto ad alto potenziale a uno a basso potenziale. Considerando solo il campo elettrico, il lavoro fatto dal campo su di essa è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Lavoro campi",
+      "opzioni": [
+        "Negativo",
+        "Positivo",
+        "Nullo",
+        "Indefinibile"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Carica positiva si muove dal potenziale alto a basso: il campo compie lavoro positivo su di essa. $W = q \\Delta V < 0$ (ma ΔV negativo, quindi W > 0).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "lavoro",
+        "potenziale",
+        "carica positiva"
+      ]
+    },
+    {
+      "id": "em_142",
+      "domanda": "In un conduttore ohmico, la resistenza è dovuta principalmente a:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Origine della resistenza",
+      "opzioni": [
+        "Repulsione tra portatori di carica",
+        "Mancanza assoluta di cariche libere",
+        "Collisioni dei portatori di carica con la struttura reticolare del materiale",
+        "Effetto Hall"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Le cariche libere durante il loro moto si scontrano con gli ioni del reticolo cristallino. Questi urti causano dissipazione di energia e generano resistenza.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "resistenza",
+        "collisioni",
+        "microstruttura"
+      ]
+    },
+    {
+      "id": "em_143",
+      "domanda": "Quale differenza concettuale esiste tra il campo E in elettrostatica e il campo E indotto da una variazione di B?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Campi statici vs indotti",
+      "opzioni": [
+        "Nessuna, sono identici",
+        "Quello indotto è conservativo, quello statico è non conservativo",
+        "Quello statico è conservativo, quello indotto può essere non conservativo",
+        "Il campo indotto è sempre nullo"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il campo elettrostatico $\\vec{E} = -\\nabla V$ è conservativo. Il campo indotto da $dB/dt$ non derivabile da potenziale scalare: è non conservativo con linee di campo chiuse.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "campo conservativo",
+        "indotto",
+        "non conservativo"
+      ]
+    },
+    {
+      "id": "em_144",
+      "domanda": "Perché gli elettromagneti usano un nucleo di ferro anziché aria, pur riuscendo a generare un campo magnetico anche così?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Ragione nuclei ferromagnetici",
+      "opzioni": [
+        "Perché il ferro assorbe il campo",
+        "Perché il ferro aumenta la permeabilità magnetica concentrando il campo",
+        "Perché allontana gli ioni",
+        "Perché riduce la resistenza al calore"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il ferro ha elevata permeabilità magnetica: il suo campo interno amplifica il campo generato dalla bobina. Con nuclei ferromagnetici l'effetto è molto superiore che con aria.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "ferro",
+        "permeabilità",
+        "amplificazione"
+      ]
+    },
+    {
+      "id": "em_145",
+      "domanda": "Una spira è immersa in un campo magnetico variabile sinusoidalmente nel tempo. La pendenza della sinusoide (velocità di variazione di B) impatta sulla f.e.m. indotta come segue:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Dinamica della variazione",
+      "opzioni": [
+        "Non importa: dipende solo dall'ampiezza di B",
+        "Maggiore pendenza $\\Rightarrow$ f.e.m. indotta maggiore (in modulo)",
+        "Minore pendenza $\\Rightarrow$ f.e.m. indotta maggiore",
+        "La f.e.m. è sempre uguale indipendentemente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La f.e.m. indotta è $\\varepsilon = -dΦ/dt$: dipende dalla velocità di variazione del flusso, non solo dall'ampiezza. Pendenza maggiore significa dΦ/dt maggiore.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "derivata",
+        "velocità variazione",
+        "fem"
+      ]
+    },
+    {
+      "id": "em_146",
+      "domanda": "Nell'esplosione di una bomba elettromagnetica teorica, cosa succede alle linee del campo magnetico intorno all'epicentro durante il fenomeno?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Interpretazione fenomeni",
+      "opzioni": [
+        "Rimangono parallele e uniformi",
+        "Si diffondono radialmente verso l'esterno come le linee di un campo centrale",
+        "Scompaiono immediatamente",
+        "Convergono tutte verso il basso"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un impulso magnetico espansivo genererebbe un campo magnetico che si diffonde nello spazio, con linee che si irradiano radialmente (simile a un'onda d'urto).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "impulso",
+        "propagazione",
+        "irradiamento"
+      ]
+    },
+    {
+      "id": "em_147",
+      "domanda": "In un circuito RLC dove R è piccolissima (quasi assente), cosa accade al fattore di qualità Q e alla selettività della risonanza?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Smorzamento e Q",
+      "opzioni": [
+        "Q diminuisce e la risonanza è larga",
+        "Q aumenta e la risonanza diventa molto stretta e selettiva",
+        "Q è sempre zero",
+        "Q è indefinito"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il fattore di qualità $Q = \\omega_0 L / R = 1/(\\omega_0 R C)$: con R piccola, Q è grande. Risonanza stretta significa alta selettività.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Q",
+        "selettività",
+        "smorzamento"
+      ]
+    },
+    {
+      "id": "em_148",
+      "domanda": "Cosa significa fisicamente che le onde elettromagnetiche sono trasversali (a differenza di onde sonore che sono longitudinali)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Carattere onde EM",
+      "opzioni": [
+        "Che trasportano cariche libere",
+        "Che i campi E e B oscillano perpendicolarmente alla direzione di propagazione",
+        "Che hanno lunghezza d'onda infinita",
+        "Che richiedono sempre un mezzo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Onde trasversali: oscillazioni perpendicolari alla direzione di moto. In EM, E e B oscillano trasversalmente mentre l'onda si propaga (diverso dalle onde sonore).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "trasversale",
+        "oscillazione",
+        "propagazione"
+      ]
+    },
+    {
+      "id": "em_149",
+      "domanda": "Una particella carica entra in una regione dove sia E che B sono presenti e uniformi, perpendicolari tra loro e alla velocità iniziale della particella. Se la particella si muove dritta senza curvare, ciò implica:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Campi incrociati",
+      "opzioni": [
+        "La particella è neutra",
+        "Le forze elettrica e magnetica sulla particella si bilanciano",
+        "Il campo B è nullo",
+        "La particella non ha carica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Moto rettilineo non accelerato significa forza netta nulla: $q\\vec{E} + q\\vec{v} \\times \\vec{B} = 0$. Le forze si bilanciano: è il selettore di velocità.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "bilancia",
+        "lorentz",
+        "selettore velocità"
+      ]
+    },
+    {
+      "id": "em_150",
+      "domanda": "Perché il trasporto di energia elettrica su lunghe distanze usa tensioni molto elevate anziché correnti molto elevate?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Trasmissione potenza",
+      "opzioni": [
+        "Perché le tensioni elevate sono più sicure",
+        "Perché riduce la dissipazione nel filo: le perdite Joule sono $P = I^2 R$",
+        "Perché il rame è più resistente alle alte tensioni",
+        "Per ragioni estetiche"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A potenza P fissa, se usiamo V alta allora I = P/V è bassa. Perdite nel filo: $P_{loss} = I^2 R$. Con I piccola le perdite sono minime.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "trasmissione",
+        "perdite",
+        "joule"
+      ]
+    },
+    {
+      "id": "em_151",
+      "domanda": "Nel fenomeno della ferromagnetismo, cosa accade ai domini magnetici quando il campo magnetico esterno supera un certo valore (campo coercitivo)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Isteresi magnetica",
+      "opzioni": [
+        "Rimangono completamente disordinati",
+        "Si orientano progressivamente verso il campo esterno",
+        "Si invertono sempre e comunque",
+        "Scompaiono definitivamente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Al crescere del campo esterno, più domini si allineano progressivamente. Superato il campo coercitivo, quasi tutti i domini sono orientati nel verso del campo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "domini",
+        "campo coercitivo",
+        "allineamento"
+      ]
+    },
+    {
+      "id": "em_152",
+      "domanda": "Un anello superconduttore (resistenza zero) viene mantenuto in un campo magnetico. Se il superconduttore viene raffreddato al di sotto della temperatura critica, il flusso magnetico attraverso l'anello:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Superconduttori",
+      "opzioni": [
+        "Aumenta indefinitamente",
+        "Scende a zero istantaneamente",
+        "Rimane costante (congelato) per effetto della corrente indotta che mantiene il flusso",
+        "Varia periodicamente"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel passaggio allo stato superconduttore, il flusso magnetico rimane congelato per effetto di correnti indotte persistenti (resistenza zero). Il flusso non può variare.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "superconduttore",
+        "flusso congelato",
+        "corrente persistente"
+      ]
+    },
+    {
+      "id": "em_153",
+      "domanda": "Un circuito RC in corrente continua raggiunge uno stato stazionario. In questo stato, quale grandezza è zero e perché?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Stato stazionario RC",
+      "opzioni": [
+        "Tensione sul condensatore è zero",
+        "Corrente nel circuito è zero perché il condensatore è carico e impedisce ulteriore flusso",
+        "Resistenza è zero",
+        "La tensione del generatore è zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A regime in DC, il condensatore è totalmente carico al potenziale del generatore. Nessuna più carica fluisce: I = 0 perché il circuito è aperto dal condensatore.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "RC",
+        "regime",
+        "corrente zero"
+      ]
+    },
+    {
+      "id": "em_154",
+      "domanda": "Due magneti permanenti si respingono quando i loro poli dello stesso segno si avvicinano. Spiega il meccanismo microscopico dietro questa repulsione:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Meccanica magnetica",
+      "opzioni": [
+        "I magneti hanno cariche opposte che si attraggono",
+        "I domini magnetici di un magnete respingono quelli dell'altro per effetto dei loro campi magnetici",
+        "I magneti hanno masse che si respingono",
+        "No c'è una vera interazione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Ogni magnet è un insieme di dipoli magnetici (domini). I campi magnetici di domini affacciati dello stesso verso si oppongono, creando repulsione.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "magneti",
+        "dipoli",
+        "repulsione"
+      ]
+    },
+    {
+      "id": "em_155",
+      "domanda": "Un condensatore piano viene caricato e poi isolato. Rispetto allo stato iniziale, se raddoppi il dielettrico costante (inserendo un materiale con κ doppia), quale grandezza NON cambia?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Condensatore e materiali",
+      "opzioni": [
+        "La capacità",
+        "La carica su ogni armatura",
+        "L'energia immagazzinata",
+        "Il momento di dipolo del sistema"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con il condensatore isolato (carica costante), inserire dielettrico con κ doppia: aumenta C e diminuisce V, ma Q = costante (carica congelata).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "dielettrico",
+        "carica costante",
+        "isolato"
+      ]
+    },
+    {
+      "id": "em_156",
+      "domanda": "Nell'equazione di continuità della corrente $\\nabla \\cdot \\vec{J} + \\frac{\\partial \\rho}{\\partial t} = 0$ (in forma locale), quale concetto fisico è rappresentato?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Equazioni fondamentali",
+      "opzioni": [
+        "La conservazione del campo magnetico",
+        "La conservazione della carica elettrica",
+        "La conservazione dell'energia",
+        "La seconda legge di Newton"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'equazione esprime che la carica non può scomparire: variazione di densità di carica nel tempo = divergenza negativa della corrente (carica che defluisce).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "continuità",
+        "corrente",
+        "carica"
+      ]
+    },
+    {
+      "id": "em_157",
+      "domanda": "Una spira viene estratta lentamente (--> lentamente!) da un campo magnetico uniforme. In quale istante durante il processo la corrente indotta è massima?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Estrazione lenta",
+      "opzioni": [
+        "Quando la spira è completamente dentro il campo",
+        "Quando la spira è completamente fuori dal campo",
+        "Quando parte della spira esce (area immessa sta diminuendo)",
+        "La corrente è sempre nulla in estrazione lenta"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "$\\varepsilon = -dΦ/dt$. Durante l'estrazione, dΦ/dt è massimo (area cala al ritmo massimo) quando metà della spira è dentro/fuori, se l'estrazione ha velocità costante.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "estrazione",
+        "variazione flusso",
+        "corrente massima"
+      ]
+    },
+    {
+      "id": "em_158",
+      "domanda": "Spiega perché un circuito in serie con un induttore ha una corrente iniziale zero quando il circuito viene chiuso con un generatore.",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Transitorio RL",
+      "opzioni": [
+        "Perché l'induttore è rotto",
+        "Perché l'autoinduzione genera una f.e.m. che si oppone al cambiamento istantaneo della corrente",
+        "Perché il generatore non funziona",
+        "Perché non c'è ragione fisica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Quando chiudi il circuito, la corrente tenderebbe a salire. L'induttore genera f.e.m. autoindotta $\\varepsilon_L = -L dI/dt$ che si oppone (Lenz), causando I(0) = 0.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "autoinduzione",
+        "lenz",
+        "corrente iniziale"
+      ]
+    },
+    {
+      "id": "em_159",
+      "domanda": "In un circuito LC (senza resistenza), durante un'oscillazione completa, come evolve il sistema energeticamente?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Ciclo energetico LC",
+      "opzioni": [
+        "L'energia rimane interamente nel condensatore",
+        "L'energia rimane interamente nell'induttore",
+        "L'energia che oscilla tra il campo elettrico del C e il campo magnetico della L, totale conservata",
+        "L'energia viene dissipata progressivamente"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In un LC ideale: quando I è massima l'energia è tutta magnetica (L), quando V è massima è tutta elettrica (C). L'energia totale oscilla tra i due, conservata.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "LC",
+        "energia",
+        "oscillazione",
+        "conservazione"
+      ]
+    },
+    {
+      "id": "em_160",
+      "domanda": "Un qualunque sistema di cariche statiche crea intorno a sé un campo elettrico E che dipende dalla posizione. Questo campo è legato al potenziale V dalla relazione $\\vec{E} = -\\nabla V$. Quale affermazione riguardo all'unicità è vera?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Campi e potenziali",
+      "opzioni": [
+        "Dato E esiste un potenzialeunivocamente determinato",
+        "Dato E il potenziale V è determinato a meno di una costante additiva",
+        "Dati E e V il sistema è sempre fisicamente realizzabile",
+        "Nessuna delle precedenti"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il potenziale è definito mediante integrale: $V(\\vec{r}) = -\\int \\vec{E} \\cdot d\\vec{l}$. L'integrale è definito a meno della costante di integrazione (scelta del punto di riferimento).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "potenziale",
+        "unicità",
+        "costante additiva"
+      ]
+    },
+    {
+      "id": "em_161",
+      "domanda": "Due conduttori sferici identici: uno carico (+Q) e uno scarico (0). Vengono brevemente messi a contatto e poi separati. Qual è la carica finale su ciascuno?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Equilibrio cariche",
+      "opzioni": [
+        "Uno ha +Q, l'altro ha 0",
+        "Entrambi hanno +Q/2",
+        "Uno ha +2Q, l'altro ha -Q",
+        "Non si muove nulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "I conduttori a contatto raggiungono lo stesso potenziale. Per conservazione e simmetria, la carica totale (+Q) si distribuisce equamente: Q/2 su ciascuno.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "conduttori",
+        "contatto",
+        "distribuzione carica"
+      ]
+    },
+    {
+      "id": "em_162",
+      "domanda": "Nel processo di polarizzazione di un dielettrico, i nuclei atomici e gli elettroni si spostano di poco rispetto alle loro posizioni di equilibrio. Quale effetto macroscopico produce?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Polarizzazione",
+      "opzioni": [
+        "Aumento della conduttività",
+        "Creazione di una distribuzione di dipoli indotti che genera un campo interno opposto a quello applicato",
+        "Generazione di corrente continua",
+        "Rottura della simmetria del cristallo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Ogni atomo diventa un dipolo (cariche positive e negative spostate). Il campo totale dei dipoli si oppone al campo applicato, riducendolo ($E_{tot} = E_0 / \\kappa$).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "polarizzazione",
+        "dipoli",
+        "campo opposto"
+      ]
+    },
+    {
+      "id": "em_163",
+      "domanda": "Quale proprietà fisica della materia fa sì che alcuni materiali siano buoni conduttori e altri isolanti?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Natura della conduzione",
+      "opzioni": [
+        "La massa degli atomi",
+        "La densità numerica di carica liberi e la loro mobilità nel materiale",
+        "Il colore del materiale",
+        "La forma del materiale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un buon conduttore ha molti portatori di carica liberi (es. elettroni in metallo) con alta mobilità. Un isolante ha pochi portatori liberi e bassa mobilità.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "conduttore",
+        "isolante",
+        "portatori",
+        "mobilità"
+      ]
+    },
+    {
+      "id": "em_164",
+      "domanda": "Un magnete permanente genera un campo magnetico anche senza corrente esterna. Da un punto di vista microscopico, cosa causa quantitativamente il campo magnetico del magnete?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Origine campi magnetici",
+      "opzioni": [
+        "Cariche stazionarie nel magnete",
+        "Movimenti orbitali e spin degli elettroni nei domini allineati",
+        "Oscillazioni del nucleo atomico",
+        "Radiazione termica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Gli elettroni in moto orbitale e il loro spin magnetico intrinseco generano momenti magnetici. Nord magnete questo origini un campo macroscopico.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "magnete",
+        "spin",
+        "momento magnetico"
+      ]
+    },
+    {
+      "id": "em_165",
+      "domanda": "Quando una spira conduttrice entra in una regione di campo magnetico uniforme con velocità costante, in quale configurazione la corrente indotta è massima?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Massimo flusso variabile",
+      "opzioni": [
+        "Quando la spira è completamente dentro il campo",
+        "Quando la spira è metà dentro e metà fuori",
+        "Quando è completamente fuori",
+        "Mai, la corrente è sempre zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "$P_{max} = B \\cdot v \\cdot L_{edge}$: massimo quando il lato della spira che taglia le linee di campo sta attraversando il confine. Ciò avviene a metà ingresso.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "flusso massimo",
+        "velocità",
+        "confine campo"
+      ]
+    },
+    {
+      "id": "em_166",
+      "domanda": "Una corrente alternata sinusoidale scorre in un resistore. La potenza dissipata in esso varia nel tempo sinusoidalmente, ma quando si parla di \"potenza media\" di un resistore si usa la formula P = I_rms² R. Quale è il significato di I_rms?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Corrente efficace",
+      "opzioni": [
+        "La corrente massima della sinusoide",
+        "La corrente che dissipa la stessa potenza media di una corrente continua costante",
+        "La corrente minima",
+        "Una quantità priva di significato fisico"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "$I_{rms} = I_0 / \\sqrt{2}$ per sinusoide. È il valore equivalente di corrente continua che produrrebbe la stessa potenza media dissipata.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "rms",
+        "efficace",
+        "potenza media"
+      ]
+    },
+    {
+      "id": "em_167",
+      "domanda": "Nel fenomeno dell'induzione reciproca (mutua induttanza) tra due bobine, la variazione di corrente in una bobina induce una tensione nell'altra. Questo è simile a:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Mutua induttanza",
+      "opzioni": [
+        "Fenomeno di autoinduzione soltanto",
+        "Un trasformatore, dove la variazione di flusso comune a entrambe genera f.e.m. in ciascuna",
+        "Una batteria che si carica da sola",
+        "Comunicazione wireless"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La mutua induttanza è il principio dei trasformatori: variazione di corrente in primario → variazione di flusso nel nucleo → induce tensione in secondario.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "mutua induttanza",
+        "trasformatore",
+        "flusso comune"
+      ]
+    },
+    {
+      "id": "em_168",
+      "domanda": "Un circuito RLC serie è alimentato con una tensione sinusoidale di frequenza variabile. A bassa frequenza, quale componente domina l'impedenza?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Comportamento frequenziale",
+      "opzioni": [
+        "La resistenza R",
+        "L'induttore L (reattanza induttiva)",
+        "Il condensatore C (reattanza capacitiva)",
+        "Nessuno"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Reattanza capacitiva: $X_C = 1/(\\omega C)$. A bassa frequenza (ω piccolo), $X_C$ è grande e domina l'impedenza.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "frequenza bassa",
+        "reattanza capacitiva",
+        "dominanza"
+      ]
+    },
+    {
+      "id": "em_169",
+      "domanda": "Che cosa rappresenta il vettore di Poynting $\\vec{S} = \\vec{E} \\times \\vec{B} / \\mu_0$ in un'onda elettromagnetica?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Trasporto energia",
+      "opzioni": [
+        "La velocità dell'onda",
+        "La densità volumetrica di energia",
+        "Il flusso di energia (potenza per unità di area) nella direzione di propagazione",
+        "La carica totale trasportata"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il vettore di Poynting rappresenta il flusso di energia: $\\sqrt{S}$ ha dimensioni di potenza/area e punta nella direzione di propagazione dell'onda.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "poynting",
+        "energia",
+        "propagazione"
+      ]
+    },
+    {
+      "id": "em_170",
+      "domanda": "Nella teoria classica, il modello semiclassico dell'atomo ipotizza che l'elettrone orbiti attorno al nucleo. Se questo modello fosse totalmente realistico, l'elettrone dovrebbe emettere radiazione e collassare. Questo paradosso ha portato a:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Limiti teoria classica",
+      "opzioni": [
+        "Rifiuto della teoria electromagnetica di Maxwell",
+        "Lo sviluppo della meccanica quantistica e del modello orbitale quantistico",
+        "L'aumento della massa dell'elettrone",
+        "L'abbandono del concetto di orbita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Questo problema (collasso atomico predetto da EM classica) è uno dei principali fallimenti della fisica classica che ha spinto alla rivoluzione quantistica.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "atomo",
+        "radiazione",
+        "quantistica"
+      ]
+    },
+    {
+      "id": "em_171",
+      "domanda": "Un campo magnetico statico può essere creato solo da correnti elettriche o da magneti permanenti. Ma perché una carica singola ferma NON produce un campo magnetico?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Origine del campo B",
+      "opzioni": [
+        "Perché le cariche non hanno proprietà magnetiche",
+        "Perché il campo magnetico richiede movimento di cariche (corrente)",
+        "Perché il campo B è sempre zero",
+        "Perché i magneti permanenti cancellano il campo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il campo magnetico è strettamente legato al movimento delle cariche (corrente). Una carica ferma produce solo campo elettrico, non magnetico.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "carica ferma",
+        "corrente",
+        "B zero"
+      ]
+    },
+    {
+      "id": "em_172",
+      "domanda": "Durante l'oscillazione di un circuito LC (senza resistenza), in quale momento la corrente nel circuito è massima?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Cicli LC",
+      "opzioni": [
+        "Quando la tensione sul condensatore è massima",
+        "Quando la tensione sul condensatore è nulla (tutta l'energia è magnetica)",
+        "Quando l'energia totale è zero",
+        "Mai, è costante"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A risonanza LC, quando il condensatore è scarico (V=0), tutta l'energia è nel campo magnetico dell'induttore: la corrente è massima.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "LC",
+        "oscillazione",
+        "corrente massima"
+      ]
+    },
+    {
+      "id": "em_173",
+      "domanda": "Che cosa significa fisicamente che una resistenza ha una 'isteresi' nei valori di corrente-tensione sotto certi regimi?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Componenti reali",
+      "opzioni": [
+        "Che cambia il verso della corrente",
+        "Che dissipa energia diversamente salendo vs scendendo in frequenza/voltaggio",
+        "Che non obbedisce alla legge di Ohm",
+        "Che genera autoinduzione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un resistore reale può mostrare isteresi se soggetto a campi magnetici variabili o variazioni termiche, causando dissipazione diversa nei cicli up/down.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "isteresi",
+        "resistenza",
+        "dissipazione"
+      ]
+    },
+    {
+      "id": "em_174",
+      "domanda": "Una carica puntiforme si trova a una certa distanza da un filo rettilineo percorso da corrente. La forza magnetica sulla carica è:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Forza su carica mobile",
+      "opzioni": [
+        "Sempre nulla perché è un filo, non una carica",
+        "Diversa da zero solo se la carica si muove parallela al filo",
+        "Diversa da zero solo se la carica si muove perpendicolarmente",
+        "Massima quando la velocità è parallela al filo"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "$\\vec{F} = q\\vec{v} \\times \\vec{B}$: il campo B circonda il filo. Se v è parallela a B (o az filo), non c'è forza; se v è perpendicolare, la forza è massima.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "filo",
+        "v perpendicolare",
+        "prodotto vettoriale"
+      ]
+    },
+    {
+      "id": "em_175",
+      "domanda": "Quale differenza sostanziale esiste tra un condensatore reale e uno ideale in uno scenario di carica/scarica?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Componenti reali",
+      "opzioni": [
+        "Nessuna, si comportano identicamente",
+        "Il reale ha perdite dielettriche e una piccolissima corrente di fuga",
+        "Il reale non si carica mai",
+        "Il reale ha capacità infinita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un condensatore reale ha un dielettrico con conduttività piccolissima (non infinita) e perdite. Ciò causa lenta scarica attraverso il dielettrico e riscaldamento.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "condensatore reale",
+        "perdite",
+        "fuga"
+      ]
+    },
+    {
+      "id": "em_176",
+      "domanda": "In un laboratorio di fisica, il campo magnetico terrestre (circa 50 μT) può influenzare un esperimento di misura di campi deboli. Quale configurazione riduce meglio l'effetto del campo terrestre?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Schermatura magnetica",
+      "opzioni": [
+        "Una gabbia di Faraday in rame",
+        "Un avvolgimento di spire perpendicolare al campo terrestre che genera campo opposto",
+        "Niente, è impossibile schermarne gli effetti",
+        "Una camera isolata dal freddo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se non si possono usare schermi perfetti, si genera localmente un campo magnetico opposto al campo terrestre per compensarlo in una piccola regione.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "campo terrestre",
+        "compensazione",
+        "esperimento"
+      ]
+    },
+    {
+      "id": "em_177",
+      "domanda": "Quale concetto teorico di base differenzia un circuito RC dal circuito RL?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Transitori",
+      "opzioni": [
+        "L'RC accumula carica nel tempo, l'RL accumula corrente",
+        "Nessuna differenza concettuale sostanziale",
+        "L'RC blocca i transienti, l'RL no",
+        "Solo la geometria"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel circuito RC la tensione sul condensatore non può cambiare istantaneamente (accumula carica gradualmente). Nel circuito RL la corrente non può cambiare istantaneamente (accumula 'magnone' gradualmente).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "dualità",
+        "RC",
+        "RL"
+      ]
+    },
+    {
+      "id": "em_178",
+      "domanda": "Quando si applica una velocità v a una sbarra conduttrice in un campo magnetico uniforme B perpendicolare, il potenziale tra gli estremi della sbarra è proporzionale a:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "F.e.m. di movimento",
+      "opzioni": [
+        "$v \\cdot B \\cdot L$",
+        "$v / B$",
+        "$B / v$",
+        "$v + B$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La f.e.m. di movimento è $\\varepsilon = B \\cdot L \\cdot v$, dove L è la lunghezza della sbarra perpendicolare a v e B.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "fem movimento",
+        "proporzionalità",
+        "sbarra"
+      ]
+    },
+    {
+      "id": "em_179",
+      "domanda": "Un circuito oscillante RLC (con smorzamento) raggiunge una frequenza di oscillazione $f_d$ (smorzata) minore di $f_0$ (risonanza). Da cosa dipende questa riduzione?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Smorzamento LC",
+      "opzioni": [
+        "Solo dal valore di C",
+        "Solo dal valore di R (smorzamento dimostra)",
+        "Solo dal valore di L",
+        "Non c'è relazione con R, L, C"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La resistenza causa smorzamento che riduce la frequenza di oscillazione: $f_d = f_0 \\sqrt{1 - (R/2L\\omega_0)^2}$ approssimativamente (dipende da R, L).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "smorzamento",
+        "frequenza smorzata",
+        "resistenza"
+      ]
+    },
+    {
+      "id": "em_180",
+      "domanda": "Due magneti permanenti uguali si attraggono quando opposti (N-S). Perché NON si respingono quando uguali (N-N)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Interazione magneti",
+      "opzioni": [
+        "Perché i magneti non hanno proprietà repulsive",
+        "Perché IN REALTÀ si respingono: il campo di uno si oppone all'orientamento dell'altro",
+        "Perché la gravità li attrae",
+        "Non c'è ragione fisica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Magneti N-N SI respingono: i campi magnetici dei due magneti si oppongono, creando una repulsione fra le zone nord-nord.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "magneti",
+        "repulsione",
+        "N-N"
+      ]
+    },
+    {
+      "id": "em_181",
+      "domanda": "Nel fenomeno della superconduttività, una volta stabilito uno stato superconduttore, una corrente iniziale persiste indefinitamente senza dissipazione. Questo implica:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Superconduttori",
+      "opzioni": [
+        "Violazione della conservazione dell'energia",
+        "Che la resistenza è zero: no dissipazione $I^2R$ (legge di Joule)",
+        "Che il superconduttore genera energia",
+        "Che la corrente cessa dopo un istante"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un superconduttore R = 0 (esatto, non solo piccolo). Quindi $P_{dissipata} = I^2 \\cdot 0 = 0$: la corrente persiste senza perdita.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "superconduttore",
+        "R zero",
+        "corrente persistente"
+      ]
+    },
+    {
+      "id": "em_182",
+      "domanda": "Come mai, nel vuoto, la permittività $\\varepsilon_0$ e la permeabilità $\\mu_0$ sono legati alla velocità della luce?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Costanti fondamentali",
+      "opzioni": [
+        "Per puro caso",
+        "Perché $c = 1/\\sqrt{\\varepsilon_0 \\mu_0}$: le onde EM nel vuoto viaggiano a questa velocità",
+        "Perché la luce è solo un'onda elettrica",
+        "Non sono legati"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Maxwell dimostrò che le onde EM si propagano a velocità $c = 1/\\sqrt{\\varepsilon_0 \\mu_0}$. Questa è la velocità della luce: la luce È un'onda EM!",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "velocità luce",
+        "onde EM",
+        "maxwell"
+      ]
+    },
+    {
+      "id": "em_183",
+      "domanda": "Quale grandezza rimane invariante quando un'onda elettromagnetica transita da un mezzo all'altro (es. vapore d'acqua)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Onde EM nei mezzi",
+      "opzioni": [
+        "La lunghezza d'onda",
+        "L'ampiezza del campo E",
+        "La frequenza",
+        "La velocità di propagazione"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La frequenza è determinata dalla sorgente e non cambia mai. Invece, velocità e lunghezza d'onda cambiano nel nuovo mezzo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "frecquenza",
+        "invariante",
+        "mezzo"
+      ]
+    },
+    {
+      "id": "em_184",
+      "domanda": "Perché il concetto di 'linee equipotenziali' (in elettrostatica) è utile per visualizzare il campo elettrico?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Visualizzazione campi",
+      "opzioni": [
+        "Perché sono parallele alle linee di campo E",
+        "Perché sono sempre perpendicolari alle linee di campo E",
+        "Perché sono uguali alle linee di campo B",
+        "No utilità particolare"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Le linee equipotenziali sono perpendicolari a $\\vec{E}$ per definizione: il campo punta sempre nella direzione di massima variazione del potenziale.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "equipotenziali",
+        "perpendicolare",
+        "visualizzazione"
+      ]
+    },
+    {
+      "id": "em_185",
+      "domanda": "In un materiale paramagnetico, gli atomi hanno dipoli magnetici atomici non compensati. Quale affermazione è vera?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Paramagnetismo",
+      "opzioni": [
+        "Il materiale genera spontaneamente un campo magnetico forte",
+        "Un campo esterno orienta (parzialmente) i dipoli atomici, aumentando il campo interno",
+        "Il materiale repelle sempre i campi magnetici",
+        "Non esiste interazione con campi esterni"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un paramagnetico ha dipoli atomici disordinati. Un campo B esterno tende ad orientarli, amplificando il campo interno (ma debolmente vs ferromagnetici).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "paramagnetico",
+        "dipoli atomici",
+        "orientamento"
+      ]
+    },
+    {
+      "id": "em_186",
+      "domanda": "Un materiale diamagnetico risponde a un campo magnetico esterno come?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Diamagnetismo",
+      "opzioni": [
+        "Amplificando il campo interno",
+        "Generando un campo interno opposto (debole schermatura)",
+        "Non rispondendo",
+        "Smagnetizzandosi"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "I diamagnetici generano un campo opposto al campo applicato: è una risposta di Lenz microscopica. L'effetto è debole ma universale.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "diamagnetico",
+        "lenz",
+        "campo opposto"
+      ]
+    },
+    {
+      "id": "em_187",
+      "domanda": "Quando la corrente in un circuito cambia molto rapidamente, l'effetto di autoinduzione diventa importante. Perché?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Autoinduzione",
+      "opzioni": [
+        "Perché aumenta la resistenza",
+        "Perché la f.e.m. autoindotta $\\varepsilon_L = L \\cdot dI/dt$ diventa paragonabile alla tensione applicata",
+        "Perché il campo E scompare",
+        "Perché il ferro si magnetizza"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se dI/dt è grande, la f.e.m. autoindotta $L \\cdot dI/dt$ può essere molto grande, influenzando significativamente il circuito.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "autoinduzione",
+        "dI/dt",
+        "fem"
+      ]
+    },
+    {
+      "id": "em_188",
+      "domanda": "Quale ruolo fondamentale ha la simmetria di gauge nell'elettromagnetismo classico?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Formalismo avanzato",
+      "opzioni": [
+        "È solo una curiosità matematica",
+        "Permette di scegliere una convenzione per il potenziale vettore, semplificando i calcoli",
+        "Modifica le equazioni di Maxwell",
+        "Non ha alcun ruolo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La gauge permette libertà di scelta nei potenziali senza cambiare E e B osservabili. È essenziale per risolvere problemi e ha significato profondo in teorie moderne.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "gauge",
+        "libertà scelta",
+        "potenziali"
+      ]
+    },
+    {
+      "id": "em_189",
+      "domanda": "In una guida d'onda (waveguide) rettangolare, perché le onde EM non si propagano al di sotto di una certa frequenza di cutoff?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Propagazione guidata",
+      "opzioni": [
+        "Perché la resistenza del conduttore aumenta",
+        "Perché le dimensioni della guida limitano quali modi di propagazione sono possibili",
+        "Perché la frizione attenua tutto",
+        "Non c'è una vera ragione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una guida ha dimensioni finite. Solo onde la cui lunghezza d'onda è sufficientemente piccola da entrare nella guida si propagano (modi risonanti).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "guida d'onda",
+        "cutoff",
+        "modi"
+      ]
+    },
+    {
+      "id": "em_190",
+      "domanda": "Che cosa significa 'impedenza caratteristica' di uno spazio libero vuoto (Z₀ ≈ 377 Ω)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Onde EM",
+      "opzioni": [
+        "La resistenza del vuoto",
+        "Il rapporto tra E e H (o E e B/μ₀) nelle onde EM piane",
+        "La velocità della luce",
+        "Non ha significato"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "$Z_0 = \\sqrt{\\mu_0/\\varepsilon_0} \\approx 377 \\ Ω$. In un'onda piana nel vuoto, $E/H = Z_0$, collegando i campi per una data onda.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "impedenza",
+        "Z0",
+        "onda piana"
+      ]
+    },
+    {
+      "id": "em_191",
+      "domanda": "Quale somiglianza concettuale esiste tra una cavità risonante (cavity resonator) e un circuito RLC ?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Risonanza",
+      "opzioni": [
+        "Nessuna somiglianza",
+        "Entrambi hanno una frequenza di risonanza dove accumoli l'energia",
+        "Entrambi dissipano energia allo stesso modo",
+        "La cavità è sempre migliore"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una cavità risonante 'immagazzina' energia in campi E e B, come un RLC immagazzina in V e I. Entrambi hanno Q-factor e risonanze.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "cavità",
+        "RLC",
+        "risonanza"
+      ]
+    },
+    {
+      "id": "em_192",
+      "domanda": "Perché i trasformatori ad alta tensione (trasmissione di potenza) hanno perdite di carica significative se sono vicini a oggetti conduttori?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Perdite trafos",
+      "opzioni": [
+        "Perché il campo E tra le bobine forte induce correnti parassite negli oggetti vicini",
+        "Perché il ferro attira i metalli",
+        "Non c'è effetto reale",
+        "Perché la corrente esce dal circuito"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il forte campo E alternato vicino al trasformatore induce correnti parassite (eddy currents) negli oggetti conduttori circostanti, causando dissipazione di energia.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "perdite",
+        "campo forte",
+        "eddy"
+      ]
+    },
+    {
+      "id": "em_193",
+      "domanda": "Un circuito capacitivo puro (solo condensatore e generatore AC) ha sfasamento tra tensione e corrente di:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Sfasamenti AC",
+      "opzioni": [
+        "0° (I e V in fase)",
+        "90° (I anticipa V)",
+        "180° (I opposta a V)",
+        "45°"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un condensatore puro: $I = C \\cdot dV/dt$. La corrente è 90° in anticipo sulla tensione (sfasamento positivo).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "capacitivo",
+        "sfasamento",
+        "90°"
+      ]
+    },
+    {
+      "id": "em_194",
+      "domanda": "Un circuito induttivo puro (solo induttore e generatore AC) ha sfasamento tra tensione e corrente di:",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Sfasamenti AC",
+      "opzioni": [
+        "0° (I e V in fase)",
+        "90° (V anticipa I o I rimane indietro)",
+        "180° ",
+        "45°"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un induttore puro: $V = L \\cdot dI/dt$. La tensione è 90° in anticipo sulla corrente (la corrente rimane indietro).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "induttivo",
+        "sfasamento",
+        "90°"
+      ]
+    },
+    {
+      "id": "em_195",
+      "domanda": "Quale significato fisico ha il 'fattore di potenza' cos(φ) in un circuito AC?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Potenza AC",
+      "opzioni": [
+        "La frazione di potenza nominale trasportata",
+        "La frazione di potenza che è effettivamente dissipata (vs reattanza)",
+        "L'angolo tra E e B",
+        "La frequenza relativa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il fattore di potenza cos(φ) indica quale frazione della potenza apparente VA è potenza reale W dissipata: $P = VA \\cdot \\cos(φ)$.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "fattore potenza",
+        "cos(φ)",
+        "dissipata"
+      ]
+    },
+    {
+      "id": "em_196",
+      "domanda": "In un experimento di raggi catodici storici, gli elettroni vengono deflessi da campi E e B. Se si bilanciano perfettamente, gli elettroni viaggiano dritti. A cosa serve?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Storici esperimenti",
+      "opzioni": [
+        "A misurare la massa dell'elettrone",
+        "A misurare il rapporto carica-massa e/m dell'elettrone",
+        "A dimostrare che la luce è ondulatoria",
+        "A generare raggi X"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Selezionando una velocità specifica v dove $qE = qvB$ (motore bilanciato), si misura e/m dal rapporto E/B e dalla velocità determinata.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "catodo",
+        "e/m",
+        "selezione velocità"
+      ]
+    },
+    {
+      "id": "em_197",
+      "domanda": "Quale affermazione descrive il 'effetto Hall' (Hall effect)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Effetto Hall",
+      "opzioni": [
+        "La generazione di luce da campi magnetici",
+        "Separazione trasversale di cariche in un conduttore percorso da corrente e immerso in B perpendicolare",
+        "Generazione involontaria di armoniche",
+        "Esaurimento del semiconduttore"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con corrente I e campo B perpendicolare, le cariche in moto subiscono forza trasversale, creando una tensione (Hall voltage) perpendicolare a I e B.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "effect hall",
+        "trasversale",
+        "tensione"
+      ]
+    },
+    {
+      "id": "em_198",
+      "domanda": "Come mai le equazioni di Maxwell nel vuoto sono invarianti sotto trasformazioni di Lorentz (relatività ristretta)?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Relativi-EM",
+      "opzioni": [
+        "È una coincidenza matematica",
+        "Perché le equazioni di Maxwell sono fondamentalmente relativistiche; la relatività è una conseguenza dell'EM classica",
+        "Perché Maxwell lo ha deciso",
+        "Non sono invarianti"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Maxwell scrisse equazioni che accidentalmente sono invarianti di Lorentz. Questo portò Einstein a formulare la relatività ristretta (EM è 'built-in' relativistico).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "maxwell",
+        "lorentz",
+        "relatività"
+      ]
+    },
+    {
+      "id": "em_199",
+      "domanda": "Un corpo neutro può essere polarizzato da un campo elettrico esterno. Dopo che il campo esterno è rimosso, la polarizzazione scompare. Qual è il motivo microscopico?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Polarizzazione e rilassamento",
+      "opzioni": [
+        "Le cariche rimangono separate per sempre",
+        "L'agitazione termica (entropia) riporta le molecole in disordine casuale",
+        "Le cariche vengono attratte dalla Terra",
+        "Il campo resta residuo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A livello microscopico, l'agitazione termica (moto Browniano) causa continui urti. Senza campo esterno, l'entropia prevale e i dipoli si disorientano.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "polarizzazione",
+        "agitazione termica",
+        "entropia"
+      ]
+    },
+    {
+      "id": "em_200",
+      "domanda": "In che modo la 'corrente di spostamento' $I_d = \\varepsilon_0 dΦ_E/dt$ proposta da Maxwell completa concettualmente l'EM classica?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Corrente spostamento",
+      "opzioni": [
+        "Aggiunge complessità inutile",
+        "Permette a campi E variabili di generare campi B (necessario per le onde EM)",
+        "Contraddice Faraday",
+        "Non ha ruolo reale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Maxwell aggiunse la corrente di spostamento alla legge di Ampère. Ciò permette a un campo E variabile di generare B (simmetria) → onde EM.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "spostamento",
+        "ondeEM",
+        "maxwell"
+      ]
+    },
+    {
+      "id": "em_201",
+      "domanda": "In un esperimento di diffrazione di elettroni, vengono fatti passare attraverso una doppia fenditura. Quale proprietà dell'elettrone viene rivelata?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Sovrapposizione fenomeni",
+      "opzioni": [
+        "La sua carica",
+        "La sua massa",
+        "La sua natura ondulatoria (lunghezza d'onda di de Broglie)",
+        "La sua accelerazione"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Gli elettroni mostrano interferenza (proprietà ondulatoria) con lunghezza d'onda λ = h/p (de Broglie), confermando wave-particle duality.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "elettrone",
+        "de broglie",
+        "diffrazione"
+      ]
+    },
+    {
+      "id": "em_202",
+      "domanda": "Perché in una scarica in gas (gas discharge) il cambiamento di colore della luce emessa corrisponde a cambiamenti di tensione applicata?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Plasmi e scariche",
+      "opzioni": [
+        "È solo casualità visiva",
+        "Perché tensione più alta ionizza atomi diversi, che emettono fotoni di diversa energia/colore",
+        "Perché il gas cambia colore per assorbimento",
+        "Non c'è legame reale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Tensioni più alte eccitano/ionizzano due differenti elementi o stati atomici. Ogni emette fotoni caratteristici (colori specifici), creando spettri diversi.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "scarica gas",
+        "tensione",
+        "colore"
+      ]
+    },
+    {
+      "id": "em_203",
+      "domanda": "Quale fenomeno fisico descrive l'emissione di luce quando una corrente scorre attraverso un filo incandescente?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Effetto Joule-radiazione",
+      "opzioni": [
+        "Effetto fotoelettrico",
+        "Corpo nero: riscaldamento resistivo causa radiazione termica",
+        "Effetto Compton",
+        "Annigilazione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La corrente dissipa energia in calore (I²R). Un corpo caldo irradia secondo la legge di Planck (corpo nero), emettendo fotoni.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "incandescenza",
+        "corpo nero",
+        "radiazione"
+      ]
+    },
+    {
+      "id": "em_204",
+      "domanda": "In materiali ad alta temperatura (plasma), i portatori di carica possono muoversi molto velocemente. Come influisce questa velocità sulla permeabilità magnetica effettiva?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Plasmi",
+      "opzioni": [
+        "Non cambia",
+        "Le correnti elevate modificano il comportamento della permeabilità",
+        "Il plasma diventa sempre invisibile ai campi magnetici",
+        "Non esiste plasma"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel plasma, le alte correnti e movimenti inducono campi magnetici significativi e modificano la risposta del plasma ai campi aplicati (permeabilità effettiva).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "plasma",
+        "correnti elevate",
+        "permeabilità"
+      ]
+    },
+    {
+      "id": "em_205",
+      "domanda": "Un pendolo di torsione (torsional pendulum) in un debole campo magnetico rappresenta un modello per capire quale fenomeno?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Esperimenti",
+      "opzioni": [
+        "L'oscillazione di un pendolo classico",
+        "La quantizzazione del momento angolare (primissimi studi)",
+        "La gravità",
+        "Nessun fenomeno EM"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Esperimenti storici (Stern-Gerlach) usavano un'apparato simile per rivelare la quantizzazione dello spin magnetico,verificando proprietà quantistiche.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "quantizzazione",
+        "spin",
+        "momento angolare"
+      ]
+    },
+    {
+      "id": "em_206",
+      "domanda": "Quale è il principio fisico fondamentale che spiega perché un trasformatore toroidale (con nucleo toroidale) è più efficiente di uno rettilineo nel confinare il flusso magnetico?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Geometria trafo",
+      "opzioni": [
+        "Il toroide è una forma più bella",
+        "La geometria chiusa del toroide contiene il flusso all'interno senza dissiparsi verso l'esterno",
+        "Il toroide respinge sempre i campi",
+        "Non c'è differenza reale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un toroide è una geometria chiusa dove il flusso magnetico rimane confinato all'interno (linee chiuse). In un rettilineo, il flusso si disperde esternamente.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "toroidale",
+        "confinamento",
+        "flusso"
+      ]
+    },
+    {
+      "id": "em_207",
+      "domanda": "Un esperimento di Millikan (oil drop) misura la carica dell'elettrone bilanciando la forza electrostatica con la gravità e la resistenza dell'aria. Perché è necessario il bilancio della resistenza dell'aria?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Esperimenti classici",
+      "opzioni": [
+        "Non è necessario, è solo complicazione",
+        "Perché le gocce cadono attraverso aria, la quale crea forza di trascinamento (drag)",
+        "Perché l'aria è un conduttore",
+        "Non c'è motivo reale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Le goccioline d'olio, piccole e lente, risentono significativamente della forza di trascinamento viscosa dell'aria. Deve essere considerata per misure precise.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "millikan",
+        "drag",
+        "bilancio forze"
+      ]
+    },
+    {
+      "id": "em_208",
+      "domanda": "Perché i conduttori superconduttori espellono completamente il campo magnetico (effetto Meissner) una volta nel stato superconduttore?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Meissner",
+      "opzioni": [
+        "Perché la resistenza zero blocca l'ingresso di campi",
+        "Perché il superconduttore genera correnti superficiali che creano un campo opposto esatto",
+        "Perché il ferro respinge i magnetiche",
+        "Non è vero, i campi penetrano"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Non basta avere R=0. Nel superconduttore si inducono correnti superficiali che generano un campo B opposto ESATTO al campo applicato (diamagnetismo perfetto).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "meissner",
+        "superconduttore",
+        "diamagnetismo perfetto"
+      ]
+    },
+    {
+      "id": "em_209",
+      "domanda": "Una bobina superconduttrice con una corrente iniziale rimane carica per anni. Quale implicazione ha questo per l'immagazzinamento di energia?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Superconduttori applicazioni",
+      "opzioni": [
+        "Non ha implicazioni",
+        "Permette immagazzinamento di energia magnetica senza perdite indefinitamente",
+        "È impossibile",
+        "Viola la conservazione dell'energia"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Energia magnetica $U = \\frac{1}{2}LI^2$ rimane congelata in una bobina superconduttrice. Questo è il principio dei SMES (Superconducting Magnetic Energy Storage).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "SMES",
+        "energia",
+        "immagazzinamento"
+      ]
+    },
+    {
+      "id": "em_210",
+      "domanda": "Quale legame concettuale esiste tra ferromagnetismo e ordine cooperativo?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Fisica della materia",
+      "opzioni": [
+        "Nessun legame",
+        "Il ferromagnetismo emerge quando i dipoli atomici si orientano coerentemente (ordine a lungo raggio)",
+        "Il ferromagnetismo è puramente casuale",
+        "Il ferromagnetismo è una proprietà dell'atomo isolato"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Ferromagnetismo richiede che i domini (gruppi di dipoli) si allineino. Questo è ordine cooperativo a lungo raggio, emerso per interazione di scambio (exchange interaction) tra atomi vicini.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "ferromagnetismo",
+        "ordine cooperativo",
+        "domini"
+      ]
+    },
+    {
+      "id": "em_211",
+      "domanda": "In una guida d'onda, il modo fondamentale (lowest mode) ha la frequenza di cutoff più bassa. Quali vantaggi ha operare in questo modo?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Modi guida",
+      "opzioni": [
+        "Nessun vantaggio",
+        "Minore attenuazione legata ai modelli, e design più semplice della guida",
+        "Sempre instabile",
+        "Non funziona"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Operare nel modo fondamentale riduce la dispersione (tutti i componenti Fourier si propagano alla stessa velocità) e semplifica il design.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "modo fondamentale",
+        "attenuazione",
+        "guida"
+      ]
+    },
+    {
+      "id": "em_212",
+      "domanda": "Come mai la trasmissione di dati su fibre ottiche è immune all'interferenza elettromagnetica, a differenza di cavetti coassiali?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Fibre ottiche",
+      "opzioni": [
+        "Le fibre ottiche non trasmettono nulla",
+        "Le fibre usano fotoni (EM ad altissima frequenza) confinati in materiale dielettrico, non campi in aria/rame",
+        "Le fibre hanno proprietà magiche",
+        "Non c'è differenza reale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Le fibre ottiche guidano fotoni in vetro: il confinamento dielettrico non è suscettibile alle interferenze ElektromagnEtiche esterne come i cavi coassiali in aria/rame.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "fibra ottica",
+        "fotoni",
+        "confinamento"
+      ]
+    },
+    {
+      "id": "em_213",
+      "domanda": "Quale fondamentale scoperta sperimentale ha portato alla formulazione della meccanica quantistica, originata da problemi dell'EM classica?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Crisi classica",
+      "opzioni": [
+        "La scoperta del nucleo",
+        "Il catastrofe ultravioletta: la radiazione del corpo nero non si comporta come previsto da EM classica",
+        "La scoperta di nuovi elementi",
+        "La relatività di Einstein"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La legge di Stefan-Boltzmann classica predice energia infinita nell'UV ('ultraviolet catastrophe'). Planck la risolveva quantizzando l'energia → meccanica quantistica.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "catastrofe UV",
+        "corpo nero",
+        "planck"
+      ]
+    },
+    {
+      "id": "em_214",
+      "domanda": "Un dipolo magnetico in un campo magnetico non uniforme subisce sia coppia che forza traslazionale. Quale è il significato di questa doppia azione?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Dipoli in campi",
+      "opzioni": [
+        "È solo una curiosità",
+        "La coppia lo orienta, la forza lo attrae verso regioni di campo più intenso",
+        "Solo la coppia esiste",
+        "Non ha significato fisico"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un campo uniforme il dipolo subisce solo coppia (momento). In un campo gradiente, subisce anche forza verso le regioni di campo maggiore.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "dipolo",
+        "coppia",
+        "forza gradiente"
+      ]
+    },
+    {
+      "id": "em_215",
+      "domanda": "Un'antenna ricevente cattura photoni EM convertendoli in oscillazioni di corrente. Come funziona concettualmente il meccanismo?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "Antenne",
+      "opzioni": [
+        "Assorbe i fotoni fisicamente",
+        "Il campo E oscillante dell'onda muove le cariche libere nell'antenna, producendo corrente oscillante",
+        "Converte i fotoni in atomi",
+        "Non funziona"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'antenna (conduttore) contiene cariche libere. Il campo E dell'onda EM le accelera, producendo oscillazioni di corrente alla stessa frequenza della radiazione incidente.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "antenna",
+        "campo E",
+        "corrente oscillante"
+      ]
+    },
+    {
+      "id": "em_216",
+      "domanda": "Perché la risonanza magnetica nucleare (NMR) richiede campi magnetici molto forti per ottenere buona sensibilità?",
+      "categoria": "Elettromagnetismo",
+      "sottocategoria": "NMR",
+      "opzioni": [
+        "Per ragioni estetiche",
+        "Perché la popolazione agli stati energetici è legata a Boltzmann: campi forti aumentano la differenza",
+        "Perché è più facile costruirli",
+        "Non c'è vero motivo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La differenza di popolazione tra stati (spin up/down) segue la distribuzione di Boltzmann. Campi B forti creano splitting energetico maggiore → più alta polarizzazione netta.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "NMR",
+        "boltzmann",
+        "splitting"
+      ]
     }
   ]
 }

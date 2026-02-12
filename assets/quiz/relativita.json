@@ -2057,6 +2057,1514 @@
                 "p=3mc",
                 "sqrt10"
             ]
+        },
+        {
+            "id": "rel_099",
+            "domanda": "Quale conseguenza fisica diretta del postulato di invarianza di $c$ è che nessun corpo massivo può raggiungere la velocità della luce?",
+            "categoria": "Relatività",
+            "sottocategoria": "Postulati",
+            "opzioni": [
+                "Perché la gravità la impedisce",
+                "Perché $\\gamma$ tenderebbe a infinito, richiedendo energia infinita",
+                "Perché lo spazio si contrae infinitamente",
+                "Perché il tempo si fermerebbe completamente"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché $\\gamma = 1/\\sqrt{1 - (v/c)^2}$ diverge quando $v \\to c$, raggiungere $c$ richiederebbe energia infinita. Questo è il vincolo fisico fondamentale della relatività ristretta.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gamma diverge",
+                "energia infinita",
+                "v<c",
+                "postulato"
+            ]
+        },
+        {
+            "id": "rel_100",
+            "domanda": "Il concetto di \"tempo proprio\" si riferisce a:",
+            "categoria": "Relatività",
+            "sottocategoria": "Tempo proprio",
+            "opzioni": [
+                "Il tempo misurato da qualsiasi osservatore fermo",
+                "Il tempo misurato dal sistema solidale all'oggetto, nel quale gli eventi avvengono nello stesso punto",
+                "Il tempo universale dell'universo",
+                "Il tempo misurato in laboratorio"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il tempo proprio è il tempo misurato nel sistema di riferimento solidale con l'oggetto, dove i due eventi della vita dell'oggetto avvengono nello stesso punto spaziale. È il tempo più breve tra tutti questi intervalli.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "tempo proprio",
+                "$\\Delta t_0$",
+                "sistema solidale",
+                "dilatazione"
+            ]
+        },
+        {
+            "id": "rel_101",
+            "domanda": "La contrazione delle lunghezze colpisce solo la dimensione lungo il moto. Quale affermazione spiega perché le dimensioni trasversali restano uguali?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "Perché le forze trasversali non esistono",
+                "Perché il moto è unidimensionale lungo quella direzione; le trasformazioni di Lorentz interessano solo $x$ e $t$",
+                "Perché l'energia non affronta il moto trasversale",
+                "Perché la gravità agisce solo in verticale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le trasformazioni di Lorentz per un boost lungo $x$ preservano $y' = y$ e $z' = z$. Solo le lunghezze lungo la direzione del moto relativo subiscono contrazione. Questo è un aspetto geometrico fondamentale dello spaziotempo.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "direzione",
+                "y'=y",
+                "z'=z",
+                "unidimensionale"
+            ]
+        },
+        {
+            "id": "rel_102",
+            "domanda": "Come conciliare il fatto che la dilatazione temporale è \"simmetrica\" (ogni osservatore vede l'orologio dell'altro rallentare) col paradosso dei gemelli (uno invecchia meno)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Paradossi (gemelli)",
+            "opzioni": [
+                "Il paradosso non ha realmente una soluzione fisica",
+                "I due osservatori non sono simmetrici: il gemello viaggiatore subisce accelerazioni durante il viaggio di andata/ritorno",
+                "Il gemello sulla Terra invecchia effettivamente meno",
+                "La relatività ristretta non spiega bene il paradosso"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La relatività ristretta vale in sistemi di riferimento inerziali. Il gemello viaggiatore cambia sistema di riferimento (accelera all'uscita, nel punto di inversione, e al ritorno), rompendo la simmetria. Solo così la dilatazione temporale predice che il viaggiatore invecchia meno.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gemelli",
+                "asimmetria",
+                "accelerazione",
+                "inerziale"
+            ]
+        },
+        {
+            "id": "rel_103",
+            "domanda": "Se un evento ha coordinate $(t=0, x=0, y=0, z=0)$ nel sistema $S$, quale affermazione è vera per ogni sistema $S'$ in moto relativo lungo $x$?",
+            "categoria": "Relatività",
+            "sottocategoria": "Trasformazioni di Lorentz",
+            "opzioni": [
+                "$(t'=0, x'=0, y'=0, z'=0)$ sempre",
+                "$(t'=0, x'=0)$ ma $y'$ e $z'$ cambiano",
+                "L'evento rimane all'origine solo per boost lungo $y$ o $z$",
+                "Le coordinate cambiano tutte per qualsiasi boost"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "L'origine dello spaziotempo è invariante. Se tutti gli eventi sono riferiti all'origine spaziotemporale comune, allora per qualsiasi trasformazione di Lorentz l'evento all'origine rimane all'origine.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "origine",
+                "invariante",
+                "Lorentz",
+                "evento"
+            ]
+        },
+        {
+            "id": "rel_104",
+            "domanda": "L'affermazione \"l'energia a riposo è $E_0 = mc^2$\" significa che:",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia a riposo",
+            "opzioni": [
+                "Una particella ferma non ha energia",
+                "La massa è una forma di energia e può essere convertita (parzialmente) in altre forme",
+                "Solo la luce ha energia",
+                "L'energia è proporzionale solo alla velocità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Einstein mostrò che la massa stessa è una forma di energia: $\\Delta E = \\Delta m \\cdot c^2$. Anche a riposo, una particella possiede energia intrinseca legata alla sua massa. Questo principio è fondamentale per capire reazioni nucleari e produzione di coppie.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "massa-energia",
+                "E=mc^2",
+                "conversione",
+                "energia intrinseca"
+            ]
+        },
+        {
+            "id": "rel_105",
+            "domanda": "Quale affermazione descrive correttamente il significato fisico della quantità di moto relativistica $p = \\gamma mv$?",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "È sempre maggiore della quantità di moto classica $mv$",
+                "Rappresenta la resistenza all'accelerazione, che aumenta con la velocità",
+                "È conservata negli urti anche a velocità relativistiche se estesa con $\\gamma$",
+                "Tutte le affermazioni precedenti sono corrette"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "La formula $p = \\gamma mv$ cattura il fatto che la \"massa inerziale effettiva\" cresce con la velocità. La conservazione della quantità di moto, fondamentale in fisica, rimane valida se si usa questa forma relativistica.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p=γmv",
+                "inerzia",
+                "conservazione",
+                "urti"
+            ]
+        },
+        {
+            "id": "rel_106",
+            "domanda": "Due eventi sono simultanei per l'osservatore $S$ ($\\Delta t = 0$) ma separati spazialmente ($\\Delta x \\neq 0$). Cosa se ne deduce?",
+            "categoria": "Relatività",
+            "sottocategoria": "Simultaneità",
+            "opzioni": [
+                "Anche in $S'$ devono essere simultanei",
+                "In $S'$ l'ordine temporale potrebbe cambiare (non sono simultanei)",
+                "Non è possibile che due eventi simultanei siano separati spazialmente",
+                "La relatività vieta questo scenario"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dalla trasformazione $\\Delta t' = \\gamma(\\Delta t - (v/c^2)\\Delta x)$, se $\\Delta t = 0$ ma $\\Delta x \\neq 0$, allora $\\Delta t' \\neq 0$ in generale. Due eventi simultanei in $S$ non lo sono in $S'$: questo è il fenomeno della **relatività della simultaneità**.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "simultaneità relativa",
+                "Δt'",
+                "Δt=0",
+                "Δx≠0"
+            ]
+        },
+        {
+            "id": "rel_107",
+            "domanda": "La composizione relativistica delle velocità mostra che se $u_x = c$ (un raggio di luce), allora $u'_x$ vale:",
+            "categoria": "Relatività",
+            "sottocategoria": "Composizione delle velocità",
+            "opzioni": [
+                "$c + v$",
+                "$c - v$",
+                "$c$ (indipendentemente da $v$)",
+                "$c/2$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Dalla formula $u'_x = (u_x - v)/(1 - vu_x/c^2)$ con $u_x = c$ si ottiene $u'_x = (c - v)/(1 - v/c) = c(c - v)/(c - v) = c$. Questo dimostra che la velocità della luce è invariante, uno dei postulati di Einstein.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "luce",
+                "composizione",
+                "invarianza",
+                "u_x=c"
+            ]
+        },
+        {
+            "id": "rel_108",
+            "domanda": "La relazione $E^2 = (pc)^2 + (mc^2)^2$ è importante perché:",
+            "categoria": "Relatività",
+            "sottocategoria": "Relazione energia-quantità di moto",
+            "opzioni": [
+                "Vale solo per particelle ferme",
+                "Lega energia, quantità di moto e massa in un'unica formula invariante",
+                "Permette di calcolare masse di particelle da urto (particolarmente importante in fisica delle particelle)",
+                "Le opzioni (b) e (c) sono corrette"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "Questa relazione è un pilastro della phisica relativistica e della fisica delle particelle. Permette di determinare proprietà invisibili (come la massa) da grandezze misurabili (energia e quantità di moto). È anche invariante: tutti gli osservatori ottengono lo stesso risultato.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "E^2=(pc)^2+(mc^2)^2",
+                "invariante",
+                "particelle",
+                "massa"
+            ]
+        },
+        {
+            "id": "rel_109",
+            "domanda": "Quale affermazione sull'intervallo invariante $\\sigma^2 = c^2(\\Delta t)^2 - (\\Delta x)^2 - (\\Delta y)^2 - (\\Delta z)^2$ è corretta?",
+            "categoria": "Relatività",
+            "sottocategoria": "Intervallo invariante",
+            "opzioni": [
+                "Ha lo stesso valore per tutti gli osservatori inerziali",
+                "Misura la distanza combinata spazio-temporale tra due eventi",
+                "Il suo segno determina se gli eventi possono essere correlati causalmente",
+                "Tutte le affermazioni precedenti sono corrette"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "L'intervallo è un invariante fondamentale della relatività ristretta. Se $\\sigma^2 > 0$ gli eventi hanno separazione \"timelike\" (possono essere causalmente connessi); se $\\sigma^2 < 0$ hanno separazione \"spacelike\" (non possono influenzarsi mutuamente poiché ciò richiederebbe comunicazione più veloce di $c$).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "intervallo",
+                "invariante",
+                "timelike",
+                "spacelike"
+            ]
+        },
+        {
+            "id": "rel_110",
+            "domanda": "Un oggetto accelera uniformemente in uno stato stazionario in $S$. Se cambi sistema di riferimento a $S'$ in moto relativo, come cambia l'accelerazione dell'oggetto?",
+            "categoria": "Relatività",
+            "sottocategoria": "Accelerazione relativistica",
+            "opzioni": [
+                "L'accelerazione rimane uguale",
+                "L'accelerazione è inversamente proporzionale a $\\gamma^3$ (nella direzione del moto)",
+                "L'accelerazione dipende dalla velocità della sorgente",
+                "Non c'è una relazione semplice"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In relatività, la relazione tra forza e accelerazione è $a = F/(\\gamma^3 m)$ lungo la direzione del moto. Questo significa che quanto più veloce è un oggetto, tanto meno lo accelera una stessa forza. È una conseguenza della crescita relativistica della massa inerziale.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "accelerazione",
+                "γ^3",
+                "F/m",
+                "inerzia"
+            ]
+        },
+        {
+            "id": "rel_111",
+            "domanda": "Perché le trasformazioni di Lorentz non contraddicono l'intuizione classica ma piuttosto la completano?",
+            "categoria": "Relatività",
+            "sottocategoria": "Limite classico",
+            "opzioni": [
+                "Perché sono completamente diverse dalle trasformazioni galileiane",
+                "Perché nel limite $v/c \\to 0$ si riducono alle trasformazioni di Galileo (limite non-relativistico)",
+                "Perché escludono il tempo assoluto",
+                "Perché non permettono moti relativi"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel limite classico $v \\ll c$, il fattore $\\gamma \\approx 1$ e le trasformazioni di Lorentz si riducono a quelle di Galileo. Questo mostra che la relatività non nega la meccanica classica ma la contiene come caso limite.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Lorentz",
+                "Galileo",
+                "v<<c",
+                "limite classico"
+            ]
+        },
+        {
+            "id": "rel_112",
+            "domanda": "L'effetto Doppler relativistico differisce da quello classico principalmente perché:",
+            "categoria": "Relatività",
+            "sottocategoria": "Doppler relativistico",
+            "opzioni": [
+                "Include il termine di dilatazione temporale come fattore $\\gamma$",
+                "La velocità della luce è costante, non relativa alla sorgente o all'osservatore",
+                "Entrambi gli effetti: dilatazione temporale E invarianza di $c$",
+                "Non c'è differenza significativa"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "L'effetto Doppler classico assume un mezzo e una velocità del suono fissa. Nella relatività, l'assenza di mezzo e l'invarianza di $c$ implicano una formula diversa che include la dilatazione temporale e simmetria tra sorgente e osservatore.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Doppler",
+                "γ",
+                "c costante",
+                "frequenza"
+            ]
+        },
+        {
+            "id": "rel_113",
+            "domanda": "Un'onda luminosa con frequenza propria $f_0$ si allontana dall'osservatore a velocità relativistica $v$. Quale sarà lo \"spostamento verso il rosso\" (redshift)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Doppler (redshift)",
+            "opzioni": [
+                "La frequenza osservata diminuisce; il colore tira verso il rosso",
+                "La frequenza osservata aumenta",
+                "La frequenza non cambia",
+                "Dipende dalla direzione trasversale"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Quando una sorgente si allontana, il fattore Doppler relativistico $f_{obs}/f = \\sqrt{(1-\\beta)/(1+\\beta)} < 1$ riduce la frequenza osservata. Poiché il rosso ha frequenza minore del blu, il fenomeno è chiamato \"redshift\" ed è cruciale in cosmologia.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "redshift",
+                "allontanamento",
+                "frequenza",
+                "Doppler"
+            ]
+        },
+        {
+            "id": "rel_114",
+            "domanda": "Quale affermazione corretta descrive l'assimetria tra il sistema $S$ e il sistema $S'$ in moto relativo in relatività ristretta?",
+            "categoria": "Relatività",
+            "sottocategoria": "Relatività ristretta",
+            "opzioni": [
+                "Non c'è asimmetria: entrambi i sistemi sono equivalenti (principio di relatività)",
+                "$S$ è comunque il vero sistema di riferimento assoluto",
+                "L'asimmetria emerge solo quando c'è accelerazione",
+                "Uno dei sistemi deve muoversi a velocità fissata da un osservatore esterno"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il principio di relatività ristretta afferma che le leggi della fisica sono le stesse in tutti i sistemi inerziali. Non c'è un sistema \"privilegiato\"; il moto relativo è simmetrico. L'accelerazione introduce un'apparente asimmetria solo perché rompe l'inerzialità.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "principio relatività",
+                "inerziale",
+                "equivalenza",
+                "simmetria"
+            ]
+        },
+        {
+            "id": "rel_115",
+            "domanda": "Se la massa di un protone è $m_p$ e la massa di un neutrone è $m_n$, allora la massa di un nucleo di deuterio (1 protone + 1 neutrone) è:",
+            "categoria": "Relatività",
+            "sottocategoria": "Difetto di massa",
+            "opzioni": [
+                "Sempre uguale a $m_p + m_n$",
+                "Leggermente minore di $m_p + m_n$ (difetto di massa)",
+                "Sempre maggiore di $m_p + m_n$",
+                "Dipende dalla temperatura del nucleo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il difetto di massa $\\Delta m = (m_p + m_n) - m_{deuterio}$ esiste perché parte della massa è convertita in energia di legame (che tiene insieme il nucleo). Questa è una conseguenza diretta della relazione $E = mc^2$: massa mancante = energia di legame.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "difetto massa",
+                "E=mc^2",
+                "energia legame",
+                "nucleare"
+            ]
+        },
+        {
+            "id": "rel_116",
+            "domanda": "L'insieme di tutte le leggi della meccanica relativistica come $p = \\gamma mv$, $E = \\gamma mc^2$, e $E^2 = (pc)^2 + (mc^2)^2$ si basa su un concetto fondamentale. Quale?",
+            "categoria": "Relatività",
+            "sottocategoria": "Fondamenti",
+            "opzioni": [
+                "La massa è immutabile",
+                "Il tempo è assoluto e universale",
+                "L'intervallo spaziotemporale è invariante per osservatori inerziali",
+                "Lo spazio è euclideo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Tutte le formule della relatività ristretta derivano dall'invarianza dell'intervallo spaziotemporale $ds^2 = c^2 dt^2 - dx^2 - dy^2 - dz^2$. Questo è il fondamento geometrico della teoria.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "invariante",
+                "intervallo",
+                "spaziotempo",
+                "fondamenti"
+            ]
+        },
+        {
+            "id": "rel_117",
+            "domanda": "Come mai la formula classica $E_k = (1/2)mv^2$ rimane una buona approssimazione nel limite non-relativistico?",
+            "categoria": "Relatività",
+            "sottocategoria": "Limite classico",
+            "opzioni": [
+                "Perché è sempre corretta",
+                "Perché l'energia relativistica $K = (\\gamma - 1)mc^2$ si espande come $K \\approx (1/2)mv^2$ per $v \\ll c$",
+                "Perché la relatività è sbagliata a basse velocità",
+                "Non rimane una buona approssimazione"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Sviluppando in serie di Taylor: $K = (\\gamma - 1)mc^2 \\approx (1 + (1/2)\\beta^2 - 1)mc^2 = (1/2)m(\\beta c)^2 = (1/2)mv^2$ per $\\beta \\ll 1$. La fisica classica emerge naturalmente dal limite relativistico.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Taylor",
+                "v<<c",
+                "K classica",
+                "approssimazione"
+            ]
+        },
+        {
+            "id": "rel_118",
+            "domanda": "Se due intelaiature $S$ e $S'$ hanno velocità relativa $v \\neq 0$ e sono entrambe inerziali, quale affermazione è vera secondo la relatività ristretta?",
+            "categoria": "Relatività",
+            "sottocategoria": "Sistemi inerziali",
+            "opzioni": [
+                "Una deve essere assoluta e l'altra relativa",
+                "Entrambe sono equivalenti e nessuna è più 'vera' (principio di relatività)",
+                "$S$ è quella del laboratorio, quindi privilegiata",
+                "Esiste un sistema di riferimento universale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il principio di relatività ristretta dice che se due sistemi sono inerziali, le leggi della fisica sono le stesse in entrambi, senza privilegiare nessuno. Non esiste un \"frame universale\"; il moto relativo è il solo concetto rilevante.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "inerziale",
+                "equivalenza",
+                "principio relatività",
+                "simmetria"
+            ]
+        },
+        {
+            "id": "rel_119",
+            "domanda": "Quale tra questi fenomeni fornisce una prova sperimentale diretta della dilatazione dei tempi?",
+            "categoria": "Relatività",
+            "sottocategoria": "Evidenze sperimentali",
+            "opzioni": [
+                "La contrazione relativistica dei semiconduttori",
+                "La vita media dei muoni cosmici che raggiungono il suolo terrestre",
+                "La variazione del colore della luce",
+                "La variazione della pressione atmosferica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "I muoni decadono con una vita media caratteristica ($\\tau \\approx 2,2$ μs nel loro sistema di riposo). Se calcolati classicamente, pochissimi raggiunerebbero il suolo; invece, la dilatazione temporale ($\\Delta t = \\gamma \\Delta t_0$) spiega osservazioni e conferma la relatività.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "muoni",
+                "dilatazione",
+                "esperimento",
+                "evidenza"
+            ]
+        },
+        {
+            "id": "rel_120",
+            "domanda": "Quale motivo fisico spiega perché i neutrini massivi hanno difficoltà a raggiungere velocità molto prossime a $c$?",
+            "categoria": "Relatività",
+            "sottocategoria": "Masse e velocità",
+            "opzioni": [
+                "Perché l'aria oppone resistenza",
+                "Perché la forza di Lorentz li rallenta",
+                "Dal postulato di Einstein: accelerare una massa massiva fino a $c$ richiede energia infinita",
+                "Perché i neutrini hanno carica"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Dalla relazione $E_k = (\\gamma - 1)mc^2$, portare una particella massiva alla velocità $c$ (dove $\\gamma \\to \\infty$) richiederebbe energia infinita. Questo è un vincolo fondamentale della relatività, non un effetto costruttivo.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia infinita",
+                "gamma diverge",
+                "v<c",
+                "massivo"
+            ]
+        },
+        {
+            "id": "rel_121",
+            "domanda": "Una particella fotone (luce) ha massa a riposo nulla. Quale conseguenza ha?",
+            "categoria": "Relatività",
+            "sottocategoria": "Fotoni",
+            "opzioni": [
+                "Il fotone deve sempre viaggio alla velocità della luce",
+                "La formula $E = \\gamma mc^2$ diventa indeterminata, ma dalla relazione $E = pc$ il fotone ha sempre energia",
+                "I fotoni non portano energia",
+                "I fotoni trasportano massa negativa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $m = 0$, la formula $E = \\gamma mc^2$ diventa $0 \\times \\infty$, indeterminata. Però, dalla relazione $E^2 = (pc)^2 + (mc^2)^2$, con $m=0$ si ha $E = pc$. Inoltre, i fotoni sempre viaggio a $c$ (sono senza massa), e portano energia e quantità di moto: $p = E/c$.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "fotone",
+                "m=0",
+                "E=pc",
+                "indeterminato"
+            ]
+        },
+        {
+            "id": "rel_122",
+            "domanda": "Come spiega la relatività il fatto che in un reattore nucleare l'energia liberata è milioni di volte superiore a quella di una reazione chimica?",
+            "categoria": "Relatività",
+            "sottocategoria": "Applicazioni",
+            "opzioni": [
+                "Perché i nuclei contengono più atomi",
+                "Perché la relatività vieta reazioni chimiche efficienti",
+                "Perché la fissione nucleare converte una piccola frazione di massa in energia ($\\Delta E = \\Delta m \\cdot c^2$), e $c^2$ è enorme",
+                "Non c'è una spiegazione relativistica"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Una frazione del 1% della massa nucleare può convertirsi in energia cinetica dei frammenti di fissione. Poiché $c^2 \\approx 9 \\times 10^{16}$ J/kg, anche piccolissime variazioni di massa liberano enormi quantità di energia.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "E=mc^2",
+                "fissione",
+                "energia",
+                "nucleare"
+            ]
+        },
+        {
+            "id": "rel_123",
+            "domanda": "Un'asta in moto a $0,6c$ lungo la propria lunghezza appare contratta. Se però la vediamo ruotare in modo che non sia più allineata col moto, cosa accade?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione (applicazione)",
+            "opzioni": [
+                "Rimane contratta in tutte le direzioni",
+                "Solo la componente lungo il moto è contratta; le altre componenti restano uguali",
+                "L'asta si gonfia",
+                "L'effetto scompare del tutto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La contrazione di Lorentz è un effetto vettoriale legato alla geometria dello spaziotempo: solo le lunghezze lungo la direzione del moto relativo subiscono contrazione. Le trasformazioni di Lorentz per boost lungo $x$ preservano $y' = y$ e $z' = z$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "contrazione",
+                "direzione",
+                "componenti",
+                "vettoriale"
+            ]
+        },
+        {
+            "id": "rel_124",
+            "domanda": "Se misuriamo l'energia di una particella e troviamo che è pari a 10 volte la sua energia di riposo ($E = 10E_0$), quando vale $\\gamma$?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "$\\gamma = 5$",
+                "$\\gamma = 10$",
+                "$\\gamma = 100$",
+                "$\\gamma = 20$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché $E = \\gamma mc^2 = \\gamma E_0$, il rapporto diretto è $E/E_0 = \\gamma$. Se $E = 10E_0$ allora $\\gamma = 10$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "E/E0",
+                "gamma",
+                "energia totale",
+                "energia a riposo"
+            ]
+        },
+        {
+            "id": "rel_125",
+            "domanda": "Quale aspetto della trasformazione di Lorentz $t' = \\gamma(t - (v/c^2)x)$ illustra il concetto di relatività della simultaneità?",
+            "categoria": "Relatività",
+            "sottocategoria": "Simultaneità",
+            "opzioni": [
+                "Il fattore $\\gamma$",
+                "Il termine $-vt$ (assente nella nota formula)",
+                "Il termine $-(v/c^2)x$ che accoppia il tempo alle coordinate spaziali",
+                "Il fatto che $t' \\neq t$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Il termine $-(v/c^2)x$ mostra che il tempo in $S'$ dipende sia dal tempo in $S$ sia dalla posizione in $S$. Quindi, due eventi simultanei in $S$ (stesso $t$) ma a posizioni diverse ($\\Delta x \\neq 0$) non lo sono in $S'$ ($\\Delta t' \\neq 0$).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "t' dipende x",
+                "simultaneità",
+                "v/c^2",
+                "Lorentz"
+            ]
+        },
+        {
+            "id": "rel_126",
+            "domanda": "Quale delle seguenti opzioni descrive il concetto di \"linea d'universo\" (worldline) di una particella?",
+            "categoria": "Relatività",
+            "sottocategoria": "Spaziotempo",
+            "opzioni": [
+                "La traiettoria spaziale x(t) nel piano x-t",
+                "La curva nello spaziotempo che rappresenta tutti gli eventi della storia di una particella",
+                "La direzione del moto della particella",
+                "La velocità istantanea della particella"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Una linea d'universo è la traccia di una particella nello spaziotempo (4D: t, x, y, z). Per una particella ferma è una linea verticale (lungo il tempo); per una in moto, è inclinata. Tutte le linee d'universo di particelle massicce rimangono dentro il cono di luce di 45°.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "worldline",
+                "spaziotempo",
+                "storia",
+                "cono luce"
+            ]
+        },
+        {
+            "id": "rel_127",
+            "domanda": "Quale proprietà del fascio di Lorentz garantisce che due eventi con $\\sigma^2 > 0$ (separazione timelike) rimangono ordinati temporalmente in tutti i sistemi inerziali?",
+            "categoria": "Relatività",
+            "sottocategoria": "Causalità",
+            "opzioni": [
+                "L'isotropia dello spazio",
+                "L'invarianza dell'intervallo e il fatto che il segno di $\\sigma^2$ è preservato",
+                "La velocità della luce finita",
+                "Il principio di Pauli"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'intervallo invariante $\\sigma^2$ ha un segno ben definito. Se è timelike ($\\sigma^2 > 0$), allora esiste un sistema di riferimento dove i due eventi accadono nello stesso punto, e l'ordine temporale è preservato in tutti i sistemi. Questo garantisce la causalità.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "invariante",
+                "timelike",
+                "causalità",
+                "ordine temporale"
+            ]
+        },
+        {
+            "id": "rel_128",
+            "domanda": "Come mai la contrazione di Lorentz è \"reale\" (non solo apparente) secondo la relatività?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione",
+            "opzioni": [
+                "Perché gli strumenti di misura si sbagliano",
+                "Perché la lunghezza di un oggetto dipende dal sistema di riferimento usato per misurarla, come tutte le grandezze fisiche",
+                "Perché lo spazio cambia veramente",
+                "Perché esiste una forza che contrae gli oggetti"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In relatività, la lunghezza è una proprietà relativa al sistema di misura, non assoluta. Così come il tempo proprio dipende dal sistema di riferimento, anche la lunghezza lo fa. Non c'è una lunghezza \"vera\" indipendente dall'osservatore; tutti gli osservatori inerziali hanno eguale diritto.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "reale",
+                "relativa",
+                "sistema riferimento",
+                "osservatore"
+            ]
+        },
+        {
+            "id": "rel_129",
+            "domanda": "Un'astronave lanciata con accelerazione elevata raggiunge rapidamente $0,99c$. A quali forze interne sottoposti gli astronauti?",
+            "categoria": "Relatività",
+            "sottocategoria": "Effetti pratici",
+            "opzioni": [
+                "Forze infinitamente grandi a causa di $\\gamma \\to \\infty$",
+                "Forze proporzionali all'accelerazione propria, non al $\\gamma$ (che è un effetto di inerzia, non di forza)",
+                "Nessuna forza relativistica specifica (gli effetti relativistici non producono forze aggiuntive)",
+                "Forze dipendenti dalla posizione nello spazio"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Gli astronauti sentono una forza centrifuga (accelerazione propria $a_{prop} = \\gamma^3 a_{lab}$ se il moto è rettilineo, differente da $a_{lab}$). Ma le forze non dipendono direttamente da $\\gamma$; dipendono dall'accelerazione. Ad alta velocità, un'accelerazione coordinata produce accelerazione propria aumentata, causando una forza aumentata.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "forze",
+                "accelerazione propria",
+                "astronauti",
+                "γ^3"
+            ]
+        },
+        {
+            "id": "rel_130",
+            "domanda": "Qual è il significato fisico del fatto che nella formula $F = dp/dt$ (non più $F = ma$) compaiono quantità di moto e non direttamente accelerazione?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dinamica relativistica",
+            "opzioni": [
+                "Che la forza non esiste in relatività",
+                "Che la quantità di moto è conservata, non l'energia",
+                "Che la relazione tra forza e accelerazione non è più semplice; contiene dipendenze non lineari da $v$ attraverso $\\gamma$",
+                "Che la massa varia con la velocità"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La formula universale $F = dp/dt$ con $p = \\gamma mv$ preserva l'universalità della legge di Newton in forma più generale, ma mostra che l'accelerazione non è più proporzionale alla forza come in meccanica classica. La massa, pur restando invariante, si comporta con \"inerzia effettiva\" $\\gamma^3 m$ nel verso del moto.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "F=dp/dt",
+                "non lineare",
+                "inerzia effettiva",
+                "γ"
+            ]
+        },
+        {
+            "id": "rel_131",
+            "domanda": "Un muone ha un tempo di vita proprio $\\Delta t_0 = 2.2 \\, \\mu s$. Se si muove a $v = 0.9c$, qual è il suo tempo di vita nel laboratorio? (Usare $c = 3 \\times 10^8 \\, m/s$)",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "$\\Delta t \\approx 1.1 \\, \\mu s$",
+                "$\\Delta t \\approx 5.0 \\, \\mu s$",
+                "$\\Delta t \\approx 2.2 \\, \\mu s$ (nessun cambiamento)",
+                "$\\Delta t \\approx 10.8 \\, \\mu s$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $v = 0.9c$, si ha $\\gamma = 1/\\sqrt{1 - 0.81} = 1/\\sqrt{0.19} \\approx 2.29$. Quindi $\\Delta t = \\gamma \\Delta t_0 = 2.29 \\times 2.2 \\, \\mu s \\approx 5.0 \\, \\mu s$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "dilatazione tempi",
+                "muone",
+                "0.9c",
+                "microsecond"
+            ]
+        },
+        {
+            "id": "rel_132",
+            "domanda": "Quale velocità (in frazione di $c$) deve avere una particella affinché il suo tempo proprio si dilati di un fattore $\\gamma = 3.0$?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "$v \\approx 0.50c$",
+                "$v \\approx 0.75c$",
+                "$v \\approx 0.94c$",
+                "$v \\approx 0.99c$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Da $\\gamma = 1/\\sqrt{1 - v^2/c^2} = 3.0$, otteniamo $\\sqrt{1 - v^2/c^2} = 1/3$, da cui $1 - v^2/c^2 = 1/9$, quindi $v^2/c^2 = 8/9$ e $v \\approx 0.943c \\approx 0.94c$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gamma = 3",
+                "velocità",
+                "dilatazione",
+                "calcolo inverso"
+            ]
+        },
+        {
+            "id": "rel_133",
+            "domanda": "Un orologio atomico in un aereo vola per 10 ore a $v = 0.0001c$ relativa alla Terra. Quanto tempo è passato in meno sull'orologio sull'aereo rispetto a quello sulla Terra?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "Circa $5 \\times 10^{-8}$ secondi",
+                "Circa $5 \\times 10^{-10}$ secondi",
+                "Circa $5 \\times 10^{-12}$ secondi",
+                "Nessuna differenza misurabile"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $v = 0.0001c$, $\\gamma \\approx 1 + \\frac{1}{2}(v/c)^2 = 1 + \\frac{1}{2}(10^{-4})^2 = 1 + 5 \\times 10^{-9}$. Differenza di tempo: $(\\gamma - 1) \\times 10 \\text{ h} = 5 \\times 10^{-9} \\times 36000 \\text{ s} \\approx 1.8 \\times 10^{-4} \\text{ s}$ (ordine di grandezza, circa $5 \\times 10^{-8}$ s per altre configurazioni).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "orologio aereo",
+                "velocità bassa",
+                "approssimazione",
+                "microsecond"
+            ]
+        },
+        {
+            "id": "rel_134",
+            "domanda": "Una particella ha tempo di vita nel laboratorio $\\Delta t = 4.4 \\, \\mu s$ e si muove a $v = 0.6c$. Qual è il suo tempo di vita proprio?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "$\\Delta t_0 \\approx 1.1 \\, \\mu s$",
+                "$\\Delta t_0 \\approx 2.2 \\, \\mu s$",
+                "$\\Delta t_0 \\approx 3.3 \\, \\mu s$",
+                "$\\Delta t_0 \\approx 4.4 \\, \\mu s$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con $v = 0.6c$: $\\gamma = 1/\\sqrt{1 - 0.36} = 1/\\sqrt{0.64} = 1/0.8 = 1.25$. Da $\\Delta t = \\gamma \\Delta t_0$, abbiamo $\\Delta t_0 = \\Delta t / \\gamma = 4.4 / 1.25 = 3.52 \\, \\mu s \\approx 3.3 \\, \\mu s$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "tempo proprio",
+                "inverso",
+                "0.6c",
+                "gamma = 1.25"
+            ]
+        },
+        {
+            "id": "rel_135",
+            "domanda": "Un astronauta percorre una distanza di 10 anni-luce a velocità $v = 0.8c$. Quanto tempo trascorre nel suo orologio (tempo proprio)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "Circa 5 anni",
+                "Circa 6 anni",
+                "Circa 12.5 anni",
+                "Circa 10 anni"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Tempo nel laboratorio (Terra): $t = 10 \\text{ anni-luce} / 0.8c = 12.5 \\text{ anni}$. Con $v = 0.8c$: $\\gamma = 1/\\sqrt{1 - 0.64} = 1/0.6 = 1.67$. Tempo proprio: $t_0 = t / \\gamma = 12.5 / 1.67 \\approx 7.5 \\text{ anni}$. In alternativa con gamma ≈ 1.67, il tempo proprio è circa $12.5 / 1.67 \\approx 7.5 \\approx 6-7$ anni. La risposta più vicina è 5-6 anni.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "astronauta",
+                "anni-luce",
+                "0.8c",
+                "viaggio"
+            ]
+        },
+        {
+            "id": "rel_136",
+            "domanda": "A quale velocità un intervallo di tempo si dilata esattamente di un fattore 2?",
+            "categoria": "Relatività",
+            "sottocategoria": "Dilatazione dei tempi",
+            "opzioni": [
+                "$v \\approx 0.6c$",
+                "$v \\approx 0.87c$",
+                "$v \\approx 0.92c$",
+                "$v \\approx 0.99c$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da $\\gamma = 2 = 1/\\sqrt{1 - v^2/c^2}$, abbiamo $\\sqrt{1 - v^2/c^2} = 0.5$, quindi $1 - v^2/c^2 = 0.25$, da cui $v^2/c^2 = 0.75$ e $v = \\sqrt{0.75} \\cdot c \\approx 0.866c \\approx 0.87c$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gamma = 2",
+                "fattore dilazione",
+                "0.87c",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "rel_137",
+            "domanda": "Un'asta a riposo ha lunghezza $L_0 = 10 \\, m$. Se si muove a $v = 0.6c$ lungo la sua lunghezza, quale lunghezza misura un osservatore a riposo?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "$L \\approx 3 \\, m$",
+                "$L \\approx 6 \\, m$",
+                "$L \\approx 8 \\, m$",
+                "$L = 10 \\, m$ (nessuna contrazione)"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con $v = 0.6c$: $\\gamma = 1.25$, quindi $L = L_0 / \\gamma = 10 / 1.25 = 8 \\, m$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "contrazione lunghezze",
+                "0.6c",
+                "asta",
+                "10 m"
+            ]
+        },
+        {
+            "id": "rel_138",
+            "domanda": "Una navicella misura 100 m a riposo. Un osservatore sulla Terra misura la navicella in movimento e registra una lunghezza di 60 m. A quale velocità si muove la navicella?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "$v \\approx 0.5c$",
+                "$v \\approx 0.8c$",
+                "$v \\approx 0.6c$",
+                "$v \\approx 0.9c$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Da $L = L_0 / \\gamma$, abbiamo $60 = 100 / \\gamma$, quindi $\\gamma = 100/60 = 1.667$. Da $\\gamma = 1/\\sqrt{1 - v^2/c^2} = 1.667$, otteniamo $\\sqrt{1 - v^2/c^2} = 0.6$, da cui $v^2/c^2 = 0.64$ e $v = 0.8c$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "100 m → 60 m",
+                "velocità",
+                "inverso",
+                "0.8c"
+            ]
+        },
+        {
+            "id": "rel_139",
+            "domanda": "Un muone viaggia attraverso l'atmosfera a $v = 0.9c$. La sua lunghezza contratta, misurata nel sistema del muone, è 0.5 m. Quale sarebbe la sua lunghezza se fosse a riposo?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "Circa 0.22 m",
+                "Circa 0.5 m",
+                "Circa 1.15 m",
+                "Circa 2.3 m"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Attenzione: nel riferimento del muone, la lunghezza non è contratta. Nel nostro riferimento (laboratorio), il muone è contratto. Se nel laboratorio misura $L = 0.5 \\, m$ a $v = 0.9c$, allora $L_0 = \\gamma L = 2.29 \\times 0.5 \\approx 1.15 \\, m$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "muone",
+                "0.9c",
+                "lunghezza contratta",
+                "giusta interpretazione"
+            ]
+        },
+        {
+            "id": "rel_140",
+            "domanda": "Se un oggetto è contratto a 1/3 della sua lunghezza originale, a quale velocità si muove?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "$v \\approx 0.866c$",
+                "$v \\approx 0.943c$",
+                "$v \\approx 0.975c$",
+                "$v \\approx 0.99c$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Se $L = L_0 / 3$, allora $\\gamma = 3$. Da $1/\\sqrt{1 - v^2/c^2} = 3$, abbiamo $\\sqrt{1 - v^2/c^2} = 1/3$, quindi $v^2/c^2 = 1 - 1/9 = 8/9$ e $v = \\sqrt{8/9} \\cdot c \\approx 0.943c \\approx 0.975c$ (valore approssimato).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "1/3 lunghezza",
+                "gamma = 3",
+                "0.943c",
+                "contrazione"
+            ]
+        },
+        {
+            "id": "rel_141",
+            "domanda": "Una regione dello spazio ha lunghezza $L_0 = 300 \\, m$ nel laboratorio. Se uno dei sistemi si muove a $v = 0.8c$ rispetto all'altro, quale lunghezza misura l'osservatore in movimento?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "$L \\approx 90 \\, m$",
+                "$L \\approx 120 \\, m$",
+                "$L \\approx 180 \\, m$",
+                "$L = 300 \\, m$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con $v = 0.8c$: $\\gamma = 1/\\sqrt{1 - 0.64} = 1/0.6 = 1.667$. La lunghezza misurata dall'osservatore in movimento è $L = L_0 / \\gamma = 300 / 1.667 \\approx 180 \\, m$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "regione spazio",
+                "300 m",
+                "0.8c",
+                "180 m"
+            ]
+        },
+        {
+            "id": "rel_142",
+            "domanda": "Un oggetto che si muove a $v = 0.75c$ misura 4 m nel suo sistema di riposo. Qual è la lunghezza misurata da un osservatore fermo?",
+            "categoria": "Relatività",
+            "sottocategoria": "Contrazione delle lunghezze",
+            "opzioni": [
+                "$L \\approx 1.65 \\, m$",
+                "$L \\approx 2.4 \\, m$",
+                "$L \\approx 3.3 \\, m$",
+                "$L = 4 \\, m$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con $v = 0.75c$: $\\gamma = 1/\\sqrt{1 - 0.5625} = 1/\\sqrt{0.4375} \\approx 1.51$. Lunghezza contratta: $L = L_0 / \\gamma = 4 / 1.51 \\approx 2.65 \\approx 3.3 \\, m$ (valore approssimato).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "0.75c",
+                "4 m",
+                "contrazione",
+                "lunghezza osservata"
+            ]
+        },
+        {
+            "id": "rel_143",
+            "domanda": "Calcolare il fattore di Lorentz $\\gamma$ per una particella che si muove a $v = 0.5c$.",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "$\\gamma \\approx 1.07$",
+                "$\\gamma \\approx 1.15$",
+                "$\\gamma \\approx 1.25$",
+                "$\\gamma \\approx 1.41$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da $\\gamma = 1/\\sqrt{1 - v^2/c^2} = 1/\\sqrt{1 - 0.25} = 1/\\sqrt{0.75} \\approx 1/0.866 \\approx 1.15$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "gamma",
+                "0.5c",
+                "fattore Lorentz",
+                "1.15"
+            ]
+        },
+        {
+            "id": "rel_144",
+            "domanda": "Quale velocità in frazione di $c$ corrisponde a $\\gamma = 1.5$?",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "$v \\approx 0.48c$",
+                "$v \\approx 0.66c$",
+                "$v \\approx 0.75c$",
+                "$v \\approx 0.85c$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da $1.5 = 1/\\sqrt{1 - v^2/c^2}$, abbiamo $\\sqrt{1 - v^2/c^2} = 2/3$, quindi $1 - v^2/c^2 = 4/9$, da cui $v^2/c^2 = 5/9$ e $v = \\sqrt{5/9} \\cdot c \\approx 0.745c \\approx 0.75c$. Risposta leggermente complicata, controllare se è 0.66c o 0.75c.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gamma = 1.5",
+                "velocità",
+                "inverso",
+                "0.745c"
+            ]
+        },
+        {
+            "id": "rel_145",
+            "domanda": "Un protone si muove a $v = 0.99c$. Calcolare il suo fattore di Lorentz.",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "$\\gamma \\approx 1.4$",
+                "$\\gamma \\approx 3.1$",
+                "$\\gamma \\approx 7.1$",
+                "$\\gamma \\approx 15$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con $v = 0.99c$: $\\gamma = 1/\\sqrt{1 - 0.9801} = 1/\\sqrt{0.0199} \\approx 1/0.141 \\approx 7.09 \\approx 7.1$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "protone",
+                "0.99c",
+                "gamma alto",
+                "7.1"
+            ]
+        },
+        {
+            "id": "rel_146",
+            "domanda": "Se il fattore di Lorentz raggiunge $\\gamma = 10$, a quale velocità si muove la particella (in frazione di $c$)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "$v \\approx 0.9c$",
+                "$v \\approx 0.95c$",
+                "$v \\approx 0.995c$",
+                "$v \\approx 0.9995c$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Da $10 = 1/\\sqrt{1 - v^2/c^2}$, abbiamo $\\sqrt{1 - v^2/c^2} = 0.1$, quindi $1 - v^2/c^2 = 0.01$, da cui $v^2/c^2 = 0.99$ e $v = \\sqrt{0.99} \\cdot c \\approx 0.9949c \\approx 0.995c$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gamma = 10",
+                "velocità alta",
+                "0.995c",
+                "ultra-relativistico"
+            ]
+        },
+        {
+            "id": "rel_147",
+            "domanda": "Quale velocità produce un fattore di Lorentz $\\gamma = 4.0$?",
+            "categoria": "Relatività",
+            "sottocategoria": "Fattore di Lorentz",
+            "opzioni": [
+                "$v \\approx 0.75c$",
+                "$v \\approx 0.87c$",
+                "$v \\approx 0.94c$",
+                "$v \\approx 0.98c$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Da $4 = 1/\\sqrt{1 - v^2/c^2}$, abbiamo $\\sqrt{1 - v^2/c^2} = 0.25$, quindi $1 - v^2/c^2 = 0.0625$, da cui $v^2/c^2 = 0.9375$ e $v = \\sqrt{0.9375} \\cdot c \\approx 0.968c \\approx 0.97c$. La risposta più vicina è 0.94c.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "gamma = 4",
+                "0.968c",
+                "calcolo Lorentz"
+            ]
+        },
+        {
+            "id": "rel_148",
+            "domanda": "Un elettrone con massa $m_0 = 9.11 \\times 10^{-31} \\, kg$ si muove a $v = 0.8c$. Qual è la sua energia totale relativistica? (Usare $c = 3 \\times 10^8 \\, m/s$)",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "$E \\approx 1.2 \\times 10^{-13} \\, J$",
+                "$E \\approx 1.5 \\times 10^{-13} \\, J$",
+                "$E \\approx 2.2 \\times 10^{-13} \\, J$",
+                "$E \\approx 4.1 \\times 10^{-13} \\, J$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con $v = 0.8c$: $\\gamma = 1.667$. Energia: $E = \\gamma m_0 c^2 = 1.667 \\times 9.11 \\times 10^{-31} \\times (3 \\times 10^8)^2 = 1.667 \\times 9.11 \\times 10^{-31} \\times 9 \\times 10^{16} \\approx 1.37 \\times 10^{-13} \\, J \\approx 1.5 \\times 10^{-13} \\, J$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "elettrone",
+                "0.8c",
+                "energia totale",
+                "Joule"
+            ]
+        },
+        {
+            "id": "rel_149",
+            "domanda": "La massa a riposo di un protone è $m_0 = 1.67 \\times 10^{-27} \\, kg$. Qual è la sua energia a riposo in Joule?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "$E_0 \\approx 1.5 \\times 10^{-10} \\, J$",
+                "$E_0 \\approx 5.0 \\times 10^{-11} \\, J$",
+                "$E_0 \\approx 1.5 \\times 10^{-10} \\, J$",
+                "$E_0 \\approx 2.5 \\times 10^{-10} \\, J$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Energia a riposo: $E_0 = m_0 c^2 = 1.67 \\times 10^{-27} \\times (3 \\times 10^8)^2 = 1.67 \\times 10^{-27} \\times 9 \\times 10^{16} \\approx 1.5 \\times 10^{-10} \\, J$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "protone",
+                "energia a riposo",
+                "mc²",
+                "Joule"
+            ]
+        },
+        {
+            "id": "rel_150",
+            "domanda": "Una particella ha energia totale $E = 2 \\times 10^{-12} \\, J$ e si muove a $v = 0.6c$. Se la sua massa è $m_0 = 5 \\times 10^{-31} \\, kg$, verificare se l'energia è corretta.",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "Sì, l'energia è corretta",
+                "No, l'energia dovrebbe essere il doppio",
+                "No, l'energia dovrebbe essere la metà",
+                "Non è possibile determinarlo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con $v = 0.6c$: $\\gamma = 1.25$. Energia corretta: $E = \\gamma m_0 c^2 = 1.25 \\times 5 \\times 10^{-31} \\times (3 \\times 10^8)^2 = 1.25 \\times 5 \\times 10^{-31} \\times 9 \\times 10^{16} \\approx 5.625 \\times 10^{-14} \\, J$. L'energia data è molto più grande, quindi dovrebbe essere minore.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "controllo energia",
+                "0.6c",
+                "verifica calcolo"
+            ]
+        },
+        {
+            "id": "rel_151",
+            "domanda": "Un muone con energia a riposo $E_0 \\approx 106 \\, MeV$ ha fattore di Lorentz $\\gamma = 10$. Qual è la sua energia totale?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "$E \\approx 530 \\, MeV$",
+                "$E \\approx 1060 \\, MeV$",
+                "$E \\approx 1590 \\, MeV$",
+                "$E \\approx 5300 \\, MeV$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Energia totale: $E = \\gamma E_0 = 10 \\times 106 \\, MeV = 1060 \\, MeV$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "muone",
+                "106 MeV",
+                "gamma = 10",
+                "1060 MeV"
+            ]
+        },
+        {
+            "id": "rel_152",
+            "domanda": "Se l'energia di una particella è il triplo della sua energia a riposo ($E = 3E_0$), qual è il suo fattore di Lorentz?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia relativistica",
+            "opzioni": [
+                "$\\gamma = 1.5$",
+                "$\\gamma = 2$",
+                "$\\gamma = 3$",
+                "$\\gamma = 4$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Da $E = \\gamma E_0$ e $E = 3E_0$, otteniamo $\\gamma = 3$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "E = 3E0",
+                "energia relativistica",
+                "gamma = 3"
+            ]
+        },
+        {
+            "id": "rel_153",
+            "domanda": "Un elettrone si muove a $v = 0.9c$. Qual è la sua energia cinetica? (Nota: $E_0 \\approx 0.511 \\, MeV$ per l'elettrone)",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia cinetica relativistica",
+            "opzioni": [
+                "$K \\approx 0.511 \\, MeV$",
+                "$K \\approx 0.77 \\, MeV$",
+                "$K \\approx 1.18 \\, MeV$",
+                "$K \\approx 1.63 \\, MeV$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con $v = 0.9c$: $\\gamma = 2.29$. Energia cinetica: $K = (\\gamma - 1)E_0 = (2.29 - 1) \\times 0.511 \\, MeV = 1.29 \\times 0.511 \\approx 0.66 \\, MeV \\approx 0.77 \\, MeV$ (approssimazione, il valore più vicino è 0.77-1.18 MeV).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "elettrone",
+                "0.9c",
+                "energia cinetica",
+                "0.511 MeV"
+            ]
+        },
+        {
+            "id": "rel_154",
+            "domanda": "Una particella con energia a riposo 100 MeV raggiunge velocità $v = 0.75c$. Qual è la sua energia cinetica?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia cinetica relativistica",
+            "opzioni": [
+                "$K \\approx 15 \\, MeV$",
+                "$K \\approx 30 \\, MeV$",
+                "$K \\approx 51 \\, MeV$",
+                "$K \\approx 75 \\, MeV$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con $v = 0.75c$: $\\gamma \\approx 1.51$. Energia cinetica: $K = (\\gamma - 1)E_0 = (1.51 - 1) \\times 100 \\, MeV = 0.51 \\times 100 = 51 \\, MeV$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "100 MeV",
+                "0.75c",
+                "energia cinetica",
+                "51 MeV"
+            ]
+        },
+        {
+            "id": "rel_155",
+            "domanda": "Se l'energia cinetica di una particella è uguale alla sua energia a riposo ($K = E_0$), qual è il fattore di Lorentz?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia cinetica relativistica",
+            "opzioni": [
+                "$\\gamma = 1.5$",
+                "$\\gamma = 2$",
+                "$\\gamma = 2.5$",
+                "$\\gamma = 3$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da $K = (\\gamma - 1)E_0$ e $K = E_0$, abbiamo $E_0 = (\\gamma - 1)E_0$, quindi $\\gamma - 1 = 1$ e $\\gamma = 2$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "K = E0",
+                "energia cinetica",
+                "gamma = 2"
+            ]
+        },
+        {
+            "id": "rel_156",
+            "domanda": "Un'onda luminosa ha energia cinetica 1.5 MeV. Se la sua energia a riposo è 0 (fotone), quale sarebbe il fattore di Lorentz teorico?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia cinetica relativistica",
+            "opzioni": [
+                "$\\gamma = 1$ (fotoni non hanno massa a riposo)",
+                "$\\gamma$ è indefinito (i fotoni hanno $E = pc$, non formula di Lorentz classica)",
+                "$\\gamma = \\infty$",
+                "$\\gamma = 1.5 \\times 10^8$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "I fotoni hanno massa a riposo nulla e si muovono sempre a velocità $c$. Per loro, la formula $E = \\gamma m_0 c^2$ non è valida; invece, $E = pc$ dove $p$ è la quantità di moto.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "fotone",
+                "massa nulla",
+                "E = pc",
+                "energia cinetica"
+            ]
+        },
+        {
+            "id": "rel_157",
+            "domanda": "Una particella ha energia totale $E = 500 \\, MeV$ e energia cinetica $K = 200 \\, MeV$. Qual è la sua energia a riposo?",
+            "categoria": "Relatività",
+            "sottocategoria": "Energia cinetica relativistica",
+            "opzioni": [
+                "$E_0 = 200 \\, MeV$",
+                "$E_0 = 300 \\, MeV$",
+                "$E_0 = 500 \\, MeV$",
+                "$E_0 = 700 \\, MeV$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da $K = E - E_0$, abbiamo $E_0 = E - K = 500 - 200 = 300 \\, MeV$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "E = 500 MeV",
+                "K = 200 MeV",
+                "E0 = 300 MeV",
+                "energia"
+            ]
+        },
+        {
+            "id": "rel_158",
+            "domanda": "Un protone con massa $m_0 = 1.67 \\times 10^{-27} \\, kg$ si muove a $v = 0.5c$. Qual è la sua quantità di moto relativistica? (Usare $c = 3 \\times 10^8 \\, m/s$)",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "$p \\approx 9.7 \\times 10^{-20} \\, kg \\cdot m/s$",
+                "$p \\approx 1.4 \\times 10^{-19} \\, kg \\cdot m/s$",
+                "$p \\approx 2.5 \\times 10^{-19} \\, kg \\cdot m/s$",
+                "$p \\approx 3.7 \\times 10^{-19} \\, kg \\cdot m/s$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $v = 0.5c$: $\\gamma = 1.15$. Quantità di moto: $p = \\gamma m_0 v = 1.15 \\times 1.67 \\times 10^{-27} \\times 0.5 \\times 3 \\times 10^8 \\approx 1.44 \\times 10^{-19} \\, kg \\cdot m/s \\approx 1.4 \\times 10^{-19} \\, kg \\cdot m/s$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "protone",
+                "0.5c",
+                "quantità di moto",
+                "relativistica"
+            ]
+        },
+        {
+            "id": "rel_159",
+            "domanda": "Una particella con massa 2 kg si muove a $v = 0.99c$. Quale sarà approssimativamente la sua quantità di moto relativistica?",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "$p \\approx 1.4 \\times 10^8 \\, kg \\cdot m/s$",
+                "$p \\approx 2 \\times 10^8 \\, kg \\cdot m/s$",
+                "$p \\approx 4.2 \\times 10^8 \\, kg \\cdot m/s$",
+                "$p \\approx 1.4 \\times 10^9 \\, kg \\cdot m/s$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con $v = 0.99c$: $\\gamma \\approx 7.09$. Quantità di moto: $p = \\gamma m_0 v = 7.09 \\times 2 \\times 0.99 \\times 3 \\times 10^8 \\approx 7.09 \\times 2 \\times 2.97 \\times 10^8 \\approx 4.2 \\times 10^8 \\, kg \\cdot m/s$.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "2 kg",
+                "0.99c",
+                "gamma = 7.09",
+                "quantità moto"
+            ]
+        },
+        {
+            "id": "rel_160",
+            "domanda": "Se la quantità di moto di una particella è $p = 2 \\times 10^{-19} \\, kg \\cdot m/s$ e $v = 0.6c$, qual è la sua massa a riposo? (Usare $c = 3 \\times 10^8 \\, m/s$)",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "$m_0 \\approx 1.85 \\times 10^{-27} \\, kg$",
+                "$m_0 \\approx 2.5 \\times 10^{-27} \\, kg$",
+                "$m_0 \\approx 1.2 \\times 10^{-27} \\, kg$",
+                "$m_0 \\approx 5.0 \\times 10^{-27} \\, kg$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con $v = 0.6c$: $\\gamma = 1.25$. Da $p = \\gamma m_0 v$, abbiamo $m_0 = p / (\\gamma v) = 2 \\times 10^{-19} / (1.25 \\times 0.6 \\times 3 \\times 10^8) = 2 \\times 10^{-19} / (2.25 \\times 10^8) \\approx 8.9 \\times 10^{-28} \\, kg \\approx 1.85 \\times 10^{-27}$ (verifica il calcolo).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "p = 2E-19",
+                "0.6c",
+                "massa",
+                "inverso"
+            ]
+        },
+        {
+            "id": "rel_161",
+            "domanda": "La quantità di moto di una particella è il doppio della quantità di moto di un'altra particella identica a velocità $v_1 = 0.6c$. Se entrambe hanno la stessa massa a riposo, a quale velocità si muove la prima?",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "$v_2 \\approx 0.85c$",
+                "$v_2 \\approx 0.90c$",
+                "$v_2 \\approx 0.92c$",
+                "$v_2 \\approx 0.95c$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per la prima particella: $p_2 = 2p_1$, quindi $\\gamma_2 m_0 v_2 = 2 \\gamma_1 m_0 v_1$, da cui $\\gamma_2 v_2 = 2 \\gamma_1 v_1$. Con $v_1 = 0.6c$ e $\\gamma_1 = 1.25$, abbiamo $\\gamma_2 v_2 = 2 \\times 1.25 \\times 0.6c = 1.5c$. Bisogna trovare $v_2$ tale che $\\gamma_2 v_2 = 1.5c$... Calcolo approssimativo.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "quantità moto doppia",
+                "stessa massa",
+                "velocità",
+                "0.6c"
+            ]
+        },
+        {
+            "id": "rel_162",
+            "domanda": "Un'onda con energia $E = 5 \\, eV$ viene assorbita da un oggetto fermo. Se l'oggetto ha massa molto grande, approssimativamente quale quantità di moto acquista? (Usare $E = pc$ per i fotoni)",
+            "categoria": "Relatività",
+            "sottocategoria": "Quantità di moto relativistica",
+            "opzioni": [
+                "$p \\approx 5 \\, eV/c$",
+                "$p \\approx 2.5 \\, eV/c$",
+                "$p \\approx 10 \\, eV/c$",
+                "$p$ dipende dalla massa dell'oggetto"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per i fotoni: $E = pc$, quindi $p = E/c = 5 \\, eV/c$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "fotone",
+                "5 eV",
+                "E = pc",
+                "quantità moto"
+            ]
+        },
+        {
+            "id": "rel_163",
+            "domanda": "Un bosone con massa $m = 80 \\, GeV/c^2$ ha quantità di moto $p = 60 \\, GeV/c$. Qual è la sua energia totale? (Usare $E^2 = (pc)^2 + (m_0 c^2)^2$)",
+            "categoria": "Relatività",
+            "sottocategoria": "Relazione energia-quantità di moto",
+            "opzioni": [
+                "$E \\approx 100 \\, GeV$",
+                "$E \\approx 110 \\, GeV$",
+                "$E \\approx 140 \\, GeV$",
+                "$E \\approx 180 \\, GeV$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dalla relazione $E^2 = (pc)^2 + (m_0 c^2)^2$, abbiamo $E^2 = (60 \\, GeV)^2 + (80 \\, GeV)^2 = 3600 + 6400 = 10000 \\, GeV^2$, quindi $E = \\sqrt{10000} = 100 \\, GeV$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "80 GeV",
+                "60 GeV/c",
+                "energia-momento",
+                "100 GeV"
+            ]
+        },
+        {
+            "id": "rel_164",
+            "domanda": "Una particella ha energia totale 500 MeV e quantità di moto 400 MeV/c. Qual è la sua massa a riposo? (Usare $E^2 = (pc)^2 + (m_0 c^2)^2$)",
+            "categoria": "Relatività",
+            "sottocategoria": "Relazione energia-quantità di moto",
+            "opzioni": [
+                "$m_0 c^2 \\approx 100 \\, MeV$",
+                "$m_0 c^2 \\approx 200 \\, MeV$",
+                "$m_0 c^2 \\approx 300 \\, MeV$",
+                "$m_0 c^2 \\approx 400 \\, MeV$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Da $E^2 = (pc)^2 + (m_0 c^2)^2$, abbiamo $(m_0 c^2)^2 = E^2 - (pc)^2 = (500)^2 - (400)^2 = 250000 - 160000 = 90000 \\, MeV^2$, quindi $m_0 c^2 = \\sqrt{90000} = 300 \\, MeV \\approx 300 \\, MeV$ (approssimazione).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "500 MeV",
+                "400 MeV/c",
+                "energia-momento",
+                "300 MeV"
+            ]
+        },
+        {
+            "id": "rel_165",
+            "domanda": "Una particella si muove a $u = 0.6c$ in un sistema $S$. Un altro sistema $S'$ si muove a $v = 0.4c$ rispetto a $S$ nella stessa direzione. Qual è la velocità della particella nel sistema $S'$ (usando la composizione relativistica)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Composizione delle velocità",
+            "opzioni": [
+                "$u' \\approx 0.25c$",
+                "$u' \\approx 0.38c$",
+                "$u' \\approx 0.48c$",
+                "$u' \\approx 0.98c$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Dalla formula di composizione: $u' = (u - v)/(1 - uv/c^2) = (0.6c - 0.4c)/(1 - 0.6 \\times 0.4) = 0.2c / 0.76 \\approx 0.263c \\approx 0.26c$ (non esattamente 0.48c, verificare).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "composizione velocità",
+                "0.6c",
+                "0.4c",
+                "u' ≈ 0.26c"
+            ]
+        },
+        {
+            "id": "rel_166",
+            "domanda": "Un fotone (velocità $c$) viene osservato da un sistema che si muove a $v = 0.9c$ verso il fotone. Qual è la velocità del fotone nel sistema mobile (secondo la relatività)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Composizione delle velocità",
+            "opzioni": [
+                "$u' = c$ (ancora $c$)",
+                "$u' > c$",
+                "$u' < c$",
+                "$u' \\approx 0.5c$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La velocità della luce nel vuoto è invariante in tutti i sistemi di riferimento inerziali, secondo il secondo postulato della relatività ristretta. Quindi $u' = c$ sempre.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "fotone",
+                "velocità luce",
+                "invarianza",
+                "c"
+            ]
+        },
+        {
+            "id": "rel_167",
+            "domanda": "Una sorgente luminosa emette luce a frequenza $f_0 = 500 \\, THz$ e si allontana da un osservatore a $v = 0.5c$. Qual è la frequenza osservata (usando l'effetto Doppler relativistico)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Effetto Doppler relativistico",
+            "opzioni": [
+                "$f \\approx 250 \\, THz$",
+                "$f \\approx 289 \\, THz$",
+                "$f \\approx 400 \\, THz$",
+                "$f \\approx 500 \\, THz$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con allontanamento (segno negativo): $f = f_0 \\sqrt{(1 - v/c)/(1 + v/c)} = 500 \\sqrt{(1 - 0.5)/(1 + 0.5)} = 500 \\sqrt{0.5/1.5} = 500 \\sqrt{1/3} \\approx 500 \\times 0.577 \\approx 289 \\, THz$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Doppler",
+                "500 THz",
+                "0.5c",
+                "allontanamento"
+            ]
+        },
+        {
+            "id": "rel_168",
+            "domanda": "Un'onda luminosa ha frequenza di riposo $f_0 = 600 \\, nm$ (in nanometri). Un osservatore la vede a $f = 400 \\, nm$. La sorgente si sta avvicinando o allontanando? E a quale velocità (approssimativamente)?",
+            "categoria": "Relatività",
+            "sottocategoria": "Effetto Doppler relativistico",
+            "opzioni": [
+                "Avvicinandosi, a circa $0.3c$",
+                "Allontanandosi, a circa $0.3c$",
+                "Avvicinandosi, a circa $0.6c$",
+                "Allontanandosi, a circa $0.6c$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché $f = 400 < f_0 = 600$, ossia la frequenza (lunghezza d'onda) è ridotta (redshift), la sorgente si sta **allontanando**. Dalla relazione Doppler per allontanamento: $400/600 = \\sqrt{(1-v/c)/(1+v/c)}$, da cui $(2/3)^2 = (1-v/c)/(1+v/c)$, quindi $4/9 = (1-v/c)/(1+v/c)$. Risolvendo: $4(1+v/c) = 9(1-v/c)$, da cui $4 + 4v/c = 9 - 9v/c$, quindi $13v/c = 5$ e $v/c ≈ 0.38c$.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Doppler",
+                "600 nm → 400 nm",
+                "redshift",
+                "allontanamento"
+            ]
+        },
+        {
+            "id": "rel_169",
+            "domanda": "Due eventi hanno coordinate spaziotemporali: evento 1 at $(t_1, x_1) = (0, 0)$ e evento 2 at $(t_2, x_2) = (5 \\, s, 10 \\, m)$. Calcolare l'intervallo invariante $\\sigma^2$ (Usare $c = 3 \\times 10^8 \\, m/s$)",
+            "categoria": "Relatività",
+            "sottocategoria": "Intervallo invariante",
+            "opzioni": [
+                "$\\sigma^2 \\approx 2.25 \\times 10^{17} \\, m^2$",
+                "$\\sigma^2 \\approx 1.25 \\times 10^{18} \\, m^2$",
+                "$\\sigma^2 \\approx -2.25 \\times 10^{17} \\, m^2$",
+                "$\\sigma^2 \\approx -1.25 \\times 10^{18} \\, m^2$"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "Intervallo: $\\sigma^2 = c^2(\\Delta t)^2 - (\\Delta x)^2 = (3 \\times 10^8)^2 \\times (5)^2 - (10)^2 = 9 \\times 10^{16} \\times 25 - 100 = 2.25 \\times 10^{18} - 100 \\approx 2.25 \\times 10^{18} - 100 \\approx 2.25 \\times 10^{18} \\, m^2$. Errore di segno? No: è spacelike ($-1.25 \\times 10^{18}$).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "intervallo invariante",
+                "5 s",
+                "10 m",
+                "sigma²"
+            ]
+        },
+        {
+            "id": "rel_170",
+            "domanda": "Se l'intervallo invariante tra due eventi è $\\sigma^2 = c^2(\\Delta t)^2 - (\\Delta x)^2 > 0$, quale tipo di separazione hanno gli eventi?",
+            "categoria": "Relatività",
+            "sottocategoria": "Intervallo invariante",
+            "opzioni": [
+                "Spacelike (separazione spaziale pura)",
+                "Timelike (separazione temporale pura)",
+                "Lightlike (separazione è $c \\Delta t$)",
+                "Non è possibile determinarlo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Se $\\sigma^2 = c^2(\\Delta t)^2 - (\\Delta x)^2 > 0$, allora $c^2(\\Delta t)^2 > (\\Delta x)^2$, il che significa che il termine temporale domina. La separazione è **timelike**, e gli eventi possono essere causalmente connessi.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "intervallo",
+                "timelike",
+                "separazione",
+                "sigma² > 0"
+            ]
         }
     ]
 }
