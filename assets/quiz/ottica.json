@@ -2246,6 +2246,1791 @@
                 "angoli",
                 "rifrazione"
             ]
+        },
+        {
+            "id": "opt_108",
+            "domanda": "Quale principio qualitativo spiega il percorso seguito da un raggio nella rifrazione?",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Principio di Fermat: tempo di percorrenza minimo (o stazionario)",
+                "Principio di Pauli: esclusione tra fotoni",
+                "Principio di Archimede: spinta verso l'alto",
+                "Principio di conservazione della massa"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La rifrazione si interpreta con il principio di Fermat: il raggio segue un cammino di tempo ottico stazionario. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Fermat",
+                "tempo ottico",
+                "rifrazione",
+                "principio"
+            ]
+        },
+        {
+            "id": "opt_109",
+            "domanda": "Il significato fisico dell'indice di rifrazione $n$ è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "$n = v/c$, rapporto tra velocità nel mezzo e nel vuoto",
+                "$n = c/v$, rapporto tra velocità nel vuoto e nel mezzo",
+                "$n = \\lambda_0/\\lambda$, rapporto tra lunghezze d'onda",
+                "$n$ misura l'intensità della luce"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per definizione $n = c/v$, con $v$ velocità della luce nel mezzo. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "indice",
+                "velocità",
+                "c/v",
+                "rifrazione"
+            ]
+        },
+        {
+            "id": "opt_110",
+            "domanda": "Quando la luce passa da un mezzo a un altro, quale grandezza resta invariata?",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "La frequenza",
+                "La lunghezza d'onda",
+                "La velocità",
+                "L'indice di rifrazione"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Nel passaggio tra mezzi cambia la velocità e quindi la lunghezza d'onda, ma la frequenza resta invariata. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "frequenza",
+                "rifrazione",
+                "invarianza",
+                "mezzi"
+            ]
+        },
+        {
+            "id": "opt_111",
+            "domanda": "Se la frequenza resta costante e la velocità diminuisce passando in un mezzo più rifrangente, la lunghezza d'onda:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Aumenta",
+                "Diminuisce",
+                "Resta invariata",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Vale $v = \\lambda f$: se $v$ diminuisce e $f$ resta costante, allora $\\lambda$ diminuisce. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lunghezza d'onda",
+                "velocità",
+                "rifrazione",
+                "v=\\lambda f"
+            ]
+        },
+        {
+            "id": "opt_112",
+            "domanda": "L'immagine formata da uno specchio piano è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione",
+            "opzioni": [
+                "Reale e capovolta",
+                "Virtuale e simmetrica rispetto allo specchio",
+                "Reale e ingrandita",
+                "Virtuale e sempre rimpicciolita"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Uno specchio piano forma un'immagine virtuale, simmetrica rispetto al piano dello specchio. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "specchio piano",
+                "immagine virtuale",
+                "simmetria",
+                "riflessione"
+            ]
+        },
+        {
+            "id": "opt_113",
+            "domanda": "In uno specchio piano, la distanza dell'immagine dallo specchio è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione",
+            "opzioni": [
+                "Maggiore della distanza dell'oggetto",
+                "Minore della distanza dell'oggetto",
+                "Uguale alla distanza dell'oggetto",
+                "Sempre nulla"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "In uno specchio piano l'immagine è simmetrica: distanza immagine = distanza oggetto. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "specchio piano",
+                "distanza",
+                "simmetria",
+                "immagine"
+            ]
+        },
+        {
+            "id": "opt_114",
+            "domanda": "La cosiddetta inversione laterale in uno specchio piano significa che:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione",
+            "opzioni": [
+                "L'immagine è capovolta sopra-sotto",
+                "Destra e sinistra risultano scambiate",
+                "L'immagine è più piccola",
+                "L'immagine è reale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Lo specchio piano non capovolge sopra-sotto, ma scambia destra e sinistra. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "inversione laterale",
+                "specchio piano",
+                "destra-sinistra",
+                "riflessione"
+            ]
+        },
+        {
+            "id": "opt_115",
+            "domanda": "Una lente convergente con oggetto oltre $2f$ produce un'immagine:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Reale, capovolta e ridotta, tra $f$ e $2f$",
+                "Virtuale, diritta e ingrandita",
+                "Reale, diritta e ingrandita",
+                "Virtuale, capovolta e ridotta"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per una lente convergente con oggetto oltre $2f$, l'immagine è reale, capovolta e si forma tra $f$ e $2f$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lente convergente",
+                "2f",
+                "immagine reale",
+                "capovolta"
+            ]
+        },
+        {
+            "id": "opt_116",
+            "domanda": "Una lente convergente con oggetto tra $f$ e $2f$ produce un'immagine:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Reale, capovolta e ingrandita, oltre $2f$",
+                "Virtuale, diritta e ridotta",
+                "Reale, diritta e ridotta",
+                "Virtuale, capovolta e ingrandita"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per oggetto tra $f$ e $2f$, la lente convergente dà un'immagine reale, capovolta e ingrandita oltre $2f$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lente convergente",
+                "f e 2f",
+                "ingrandita",
+                "reale"
+            ]
+        },
+        {
+            "id": "opt_117",
+            "domanda": "Una lente convergente con oggetto tra la lente e il fuoco produce un'immagine:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Reale e capovolta",
+                "Virtuale, diritta e ingrandita",
+                "Reale e ridotta",
+                "Virtuale e ridotta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Se l'oggetto è entro la focale, la lente convergente forma un'immagine virtuale, diritta e ingrandita. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lente convergente",
+                "entro fuoco",
+                "immagine virtuale",
+                "ingrandita"
+            ]
+        },
+        {
+            "id": "opt_118",
+            "domanda": "Una lente divergente, per un oggetto reale, produce sempre un'immagine:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Reale e capovolta",
+                "Virtuale, diritta e ridotta",
+                "Reale, diritta e ingrandita",
+                "Virtuale e capovolta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Una lente divergente forma sempre un'immagine virtuale, diritta e ridotta. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lente divergente",
+                "virtuale",
+                "diritta",
+                "ridotta"
+            ]
+        },
+        {
+            "id": "opt_119",
+            "domanda": "Se l'ingrandimento laterale $m$ è negativo, l'immagine è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Diritta",
+                "Capovolta",
+                "Sempre virtuale",
+                "Sempre ridotta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Un ingrandimento negativo indica un'immagine capovolta rispetto all'oggetto. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "ingrandimento",
+                "segno",
+                "capovolta",
+                "lenti"
+            ]
+        },
+        {
+            "id": "opt_120",
+            "domanda": "Uno specchio concavo con oggetto oltre il centro di curvatura produce un'immagine:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "Reale, capovolta e ridotta tra $F$ e $C$",
+                "Virtuale e ingrandita",
+                "Reale, diritta e ingrandita",
+                "Virtuale e ridotta"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per specchio concavo con oggetto oltre $C$, l'immagine è reale, capovolta e tra $F$ e $C$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "specchio concavo",
+                "centro curvatura",
+                "immagine reale",
+                "capovolta"
+            ]
+        },
+        {
+            "id": "opt_121",
+            "domanda": "Uno specchio concavo con oggetto tra $F$ e $C$ produce un'immagine:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "Reale, capovolta e ingrandita oltre $C$",
+                "Virtuale e ridotta",
+                "Reale e diritta",
+                "Virtuale e capovolta"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per oggetto tra $F$ e $C$, l'immagine è reale, capovolta e ingrandita oltre $C$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "specchio concavo",
+                "F e C",
+                "ingrandita",
+                "reale"
+            ]
+        },
+        {
+            "id": "opt_122",
+            "domanda": "Uno specchio concavo con oggetto tra specchio e fuoco produce un'immagine:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "Reale e capovolta",
+                "Virtuale, diritta e ingrandita",
+                "Reale e ridotta",
+                "Virtuale e ridotta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per oggetto entro la focale, lo specchio concavo produce un'immagine virtuale, diritta e ingrandita. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "specchio concavo",
+                "entro fuoco",
+                "virtuale",
+                "ingrandita"
+            ]
+        },
+        {
+            "id": "opt_123",
+            "domanda": "Uno specchio convesso produce sempre un'immagine:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "Reale e capovolta",
+                "Virtuale, diritta e ridotta",
+                "Reale e diritta",
+                "Virtuale e capovolta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Lo specchio convesso forma sempre immagini virtuali, diritte e ridotte. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "specchio convesso",
+                "virtuale",
+                "diritta",
+                "ridotta"
+            ]
+        },
+        {
+            "id": "opt_124",
+            "domanda": "In una lente convergente, un raggio incidente parallelo all'asse ottico emerge:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Passando per il fuoco della lente",
+                "Riflettendosi indietro",
+                "Parallelamente all'asse",
+                "Sempre deviato verso l'alto"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Regola dei raggi: un raggio parallelo all'asse attraversa il fuoco dopo la lente convergente. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "raggi principali",
+                "lente convergente",
+                "fuoco",
+                "asse"
+            ]
+        },
+        {
+            "id": "opt_125",
+            "domanda": "In una lente convergente, un raggio che passa per il fuoco emerge:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Parallelo all'asse ottico",
+                "Sempre deviato verso il basso",
+                "Passando per il fuoco opposto",
+                "Riflettendosi"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Un raggio che passa per il fuoco prima della lente convergente emerge parallelo all'asse ottico. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "raggi principali",
+                "fuoco",
+                "parallelo",
+                "lente"
+            ]
+        },
+        {
+            "id": "opt_126",
+            "domanda": "In una lente sottile, un raggio che passa per il centro ottico:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Non viene deviato (approssimazione paraxiale)",
+                "Si riflette",
+                "Passa sempre per il fuoco",
+                "Si annulla"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Nell'approssimazione di lente sottile, il raggio che attraversa il centro ottico non devia. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "centro ottico",
+                "lente sottile",
+                "raggi principali",
+                "paraxiale"
+            ]
+        },
+        {
+            "id": "opt_127",
+            "domanda": "In uno specchio concavo, un raggio parallelo all'asse ottico si riflette:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "Passando per il fuoco",
+                "Parallelo all'asse",
+                "Verso il centro di curvatura",
+                "Indietro su se stesso"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Nel concavo, un raggio parallelo all'asse si riflette passando per il fuoco. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "specchio concavo",
+                "fuoco",
+                "raggi principali",
+                "asse"
+            ]
+        },
+        {
+            "id": "opt_128",
+            "domanda": "In uno specchio concavo, un raggio che passa per il fuoco si riflette:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "Parallelo all'asse ottico",
+                "Verso il centro di curvatura",
+                "Indietro su se stesso",
+                "Senza deviazione"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Nel concavo, un raggio passante per il fuoco si riflette parallelamente all'asse. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "specchio concavo",
+                "fuoco",
+                "parallelo",
+                "raggi"
+            ]
+        },
+        {
+            "id": "opt_129",
+            "domanda": "In uno specchio concavo, un raggio diretto verso il centro di curvatura:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "Si riflette su se stesso",
+                "Passa per il fuoco",
+                "Diventa parallelo all'asse",
+                "Viene assorbito"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Un raggio diretto verso il centro di curvatura incide perpendicolarmente e si riflette su se stesso. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "centro curvatura",
+                "specchio concavo",
+                "riflessione",
+                "raggi"
+            ]
+        },
+        {
+            "id": "opt_130",
+            "domanda": "Se $n_2 > n_1$, il raggio rifratto rispetto alla normale tende a:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Avvicinarsi alla normale",
+                "Allontanarsi dalla normale",
+                "Rimanere invariato",
+                "Diventare sempre parallelo"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Entrando in un mezzo più rifrangente ($n_2 > n_1$) il raggio si avvicina alla normale. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "rifrazione",
+                "normale",
+                "indice",
+                "Snell"
+            ]
+        },
+        {
+            "id": "opt_131",
+            "domanda": "Se $n_2 < n_1$, il raggio rifratto rispetto alla normale tende a:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Allontanarsi dalla normale",
+                "Avvicinarsi alla normale",
+                "Restare invariato",
+                "Diventare sempre perpendicolare"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Passando a indice minore, l'angolo di rifrazione aumenta e il raggio si allontana dalla normale. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "rifrazione",
+                "normale",
+                "indice",
+                "Snell"
+            ]
+        },
+        {
+            "id": "opt_132",
+            "domanda": "L'angolo critico è definito solo se:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "$n_1 > n_2$",
+                "$n_1 = n_2$",
+                "$n_1 < n_2$",
+                "Gli indici non contano"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "L'angolo critico esiste solo per passaggio da indice maggiore a indice minore ($n_1 > n_2$). ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "angolo critico",
+                "n1>n2",
+                "TIR",
+                "condizione"
+            ]
+        },
+        {
+            "id": "opt_133",
+            "domanda": "Se un raggio incide perpendicolarmente a un'interfaccia (incidenza normale), la rifrazione:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Non cambia direzione",
+                "Devia di $90^\\circ$",
+                "Si riflette totalmente",
+                "Non attraversa l'interfaccia"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con incidenza normale ($\\theta_1 = 0$) il raggio attraversa senza deviazione angolare. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "incidenza normale",
+                "rifrazione",
+                "direzione",
+                "Snell"
+            ]
+        },
+        {
+            "id": "opt_134",
+            "domanda": "In riflessione totale interna, quando $\\theta_1 > \\theta_c$, il raggio rifratto:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione totale interna",
+            "opzioni": [
+                "Non esiste (si ha solo riflessione)",
+                "È sempre perpendicolare",
+                "Ha angolo di $45^\\circ$",
+                "Ha intensità maggiore della riflessione"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per $\\theta_1 > \\theta_c$ si ha riflessione totale interna: non c'è raggio rifratto propagante. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "TIR",
+                "angolo critico",
+                "rifrazione",
+                "riflessione"
+            ]
+        },
+        {
+            "id": "opt_135",
+            "domanda": "Nella dispersione normale in un prisma di vetro, quale colore devia di più?",
+            "categoria": "Ottica",
+            "sottocategoria": "Dispersione",
+            "opzioni": [
+                "Violetto",
+                "Rosso",
+                "Verde",
+                "Tutti uguali"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con dispersione normale $n$ è maggiore per lunghezze d'onda più corte: il violetto devia di più. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "dispersione",
+                "violetto",
+                "prisma",
+                "indice"
+            ]
+        },
+        {
+            "id": "opt_136",
+            "domanda": "In un mezzo con dispersione normale, l'indice $n$ al crescere della lunghezza d'onda $\\lambda$:",
+            "categoria": "Ottica",
+            "sottocategoria": "Dispersione",
+            "opzioni": [
+                "Diminuisce",
+                "Aumenta",
+                "Resta costante",
+                "Diventa negativo"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Nella dispersione normale, $n$ decresce all'aumentare di $\\lambda$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "dispersione normale",
+                "indice",
+                "lambda",
+                "prisma"
+            ]
+        },
+        {
+            "id": "opt_137",
+            "domanda": "Quando la luce bianca attraversa un prisma, la frequenza della luce:",
+            "categoria": "Ottica",
+            "sottocategoria": "Dispersione",
+            "opzioni": [
+                "Resta invariata",
+                "Diminuisce per tutti i colori",
+                "Aumenta per il violetto",
+                "Diventa uguale per tutti i colori"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La frequenza è determinata dalla sorgente e non cambia nel passaggio di mezzo; cambiano velocità e lunghezza d'onda. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "frequenza",
+                "prisma",
+                "dispersione",
+                "invarianza"
+            ]
+        },
+        {
+            "id": "opt_138",
+            "domanda": "Se l'indice di rifrazione di un mezzo è maggiore, la velocità della luce nel mezzo è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Minore",
+                "Maggiore",
+                "Uguale a $c$",
+                "Indeterminata"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Poiché $n = c/v$, un indice maggiore corrisponde a velocità minore. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "velocità",
+                "indice",
+                "c/v",
+                "rifrazione"
+            ]
+        },
+        {
+            "id": "opt_139",
+            "domanda": "All'angolo di Brewster, la luce riflessa è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "Completamente polarizzata linearmente",
+                "Non polarizzata",
+                "Completamente circolare",
+                "Assente"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "All'angolo di Brewster la componente riflessa è completamente polarizzata linearmente. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Brewster",
+                "polarizzazione",
+                "riflessione",
+                "lineare"
+            ]
+        },
+        {
+            "id": "opt_140",
+            "domanda": "Due polarizzatori ideali con assi incrociati ($90^\\circ$) trasmettono:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "Nessuna luce",
+                "Metà della luce",
+                "Tutta la luce",
+                "Una luce più intensa"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con polarizzatori incrociati, la legge di Malus dà $I = I_0 \\cdot \\cos^2(90^\\circ) = 0$. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "polarizzatori",
+                "incrociati",
+                "Malus",
+                "intensità"
+            ]
+        },
+        {
+            "id": "opt_141",
+            "domanda": "Due polarizzatori ideali con assi paralleli trasmettono:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "L'intensità massima consentita dal secondo polarizzatore",
+                "Nessuna luce",
+                "Sempre metà della luce",
+                "Solo luce rossa"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con assi paralleli, la luce polarizzata passa senza attenuazione aggiuntiva. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "polarizzatori",
+                "assi paralleli",
+                "intensità",
+                "Malus"
+            ]
+        },
+        {
+            "id": "opt_142",
+            "domanda": "Secondo la legge di Malus, se $\\theta = 0^\\circ$ tra polarizzazione e analizzatore, allora:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "$I = I_0$",
+                "$I = I_0/2$",
+                "$I = 0$",
+                "$I = 2 I_0$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per Malus $I = I_0 \\cdot \\cos^2(0^\\circ) = I_0$. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "Malus",
+                "theta=0",
+                "intensità",
+                "polarizzazione"
+            ]
+        },
+        {
+            "id": "opt_143",
+            "domanda": "Una luce non polarizzata attraversa un polarizzatore ideale. L'intensità in uscita è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "$I_{in}/2$",
+                "$I_{in}$",
+                "$2 I_{in}$",
+                "$0$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Un polarizzatore ideale trasmette in media metà dell'intensità di una luce non polarizzata. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "luce non polarizzata",
+                "polarizzatore",
+                "metà",
+                "intensità"
+            ]
+        },
+        {
+            "id": "opt_144",
+            "domanda": "Il principio di Huygens afferma che:",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "Ogni punto del fronte d'onda è sorgente di onde secondarie",
+                "La luce non può diffrangere",
+                "La rifrazione non esiste",
+                "Le onde si propagano solo rettilineamente"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il principio di Huygens descrive la propagazione dei fronti d'onda tramite onde secondarie. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Huygens",
+                "fronti d'onda",
+                "diffrazione",
+                "onde"
+            ]
+        },
+        {
+            "id": "opt_145",
+            "domanda": "Riducendo l'ampiezza di una fenditura, l'effetto di diffrazione:",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "Aumenta (il fascio si allarga di più)",
+                "Diminuisce fino a sparire",
+                "Resta invariato",
+                "Si trasforma in rifrazione"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Una fenditura più stretta produce una diffrazione più marcata, con pattern più largo. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "diffrazione",
+                "fenditura",
+                "apertura",
+                "allargamento"
+            ]
+        },
+        {
+            "id": "opt_146",
+            "domanda": "Per osservare frange d'interferenza stabili è necessario che le sorgenti siano:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Coerenti",
+                "Incoerenti",
+                "Solo molto intense",
+                "Solo monocromatiche ma incoerenti"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La stabilità delle frange richiede coerenza, cioè una differenza di fase costante nel tempo. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "interferenza",
+                "coerenza",
+                "frange",
+                "fase"
+            ]
+        },
+        {
+            "id": "opt_147",
+            "domanda": "Se cambia la differenza di cammino tra due raggi che interferiscono, le frange:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Si spostano",
+                "Scompaiono per sempre",
+                "Restano fisse",
+                "Diventano tutte scure"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Variando la differenza di cammino, cambia la fase relativa e il sistema di frange si sposta. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "interferenza",
+                "cammino ottico",
+                "frange",
+                "fase"
+            ]
+        },
+        {
+            "id": "opt_148",
+            "domanda": "Nel doppio foro di Young, se aumenta la lunghezza d'onda $\\lambda$ (a parità di $L$ e $d$), le frange:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Si allontanano (spaziatura maggiore)",
+                "Si avvicinano",
+                "Restano invariate",
+                "Scompaiono sempre"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La spaziatura è proporzionale a $\\lambda$, quindi aumentando $\\lambda$ le frange si allontanano. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Young",
+                "lambda",
+                "frange",
+                "spaziatura"
+            ]
+        },
+        {
+            "id": "opt_149",
+            "domanda": "Nel doppio foro di Young, se aumenta la distanza tra le fenditure $d$, le frange:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Si avvicinano (spaziatura minore)",
+                "Si allontanano",
+                "Non cambiano",
+                "Diventano tutte scure"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La spaziatura è inversamente proporzionale a $d$, quindi aumentando $d$ le frange si avvicinano. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "Young",
+                "distanza d",
+                "frange",
+                "spaziatura"
+            ]
+        },
+        {
+            "id": "opt_150",
+            "domanda": "Nella doppia fenditura, il massimo centrale corrisponde a:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Differenza di cammino $\\Delta = 0$",
+                "Differenza di cammino $\\Delta = \\lambda/2$",
+                "Differenza di cammino $\\Delta = 2\\lambda$",
+                "Differenza di cammino $\\Delta = (2k+1)\\lambda/2$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il massimo centrale si ha con cammino uguale, cioè $\\Delta = 0$ (in fase). ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "interferenza",
+                "massimo centrale",
+                "cammino",
+                "fase"
+            ]
+        },
+        {
+            "id": "opt_151",
+            "domanda": "Due onde sono in fase se la differenza di cammino vale:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "$\\Delta = k\\lambda$",
+                "$\\Delta = (k+1/2)\\lambda$",
+                "$\\Delta = \\lambda/4$",
+                "$\\Delta = \\lambda/3$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Onde in fase hanno differenza di cammino multipla intera di $\\lambda$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "fase",
+                "interferenza",
+                "lambda",
+                "massimi"
+            ]
+        },
+        {
+            "id": "opt_152",
+            "domanda": "Due onde sono in opposizione di fase se la differenza di cammino vale:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "$\\Delta = (k+1/2)\\lambda$",
+                "$\\Delta = k\\lambda$",
+                "$\\Delta = \\lambda$",
+                "$\\Delta = 2\\lambda$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "L'opposizione di fase (minimi) si ha per differenza di cammino semintera: $(k+1/2)\\lambda$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "interferenza",
+                "minimi",
+                "fase",
+                "lambda"
+            ]
+        },
+        {
+            "id": "opt_153",
+            "domanda": "Nella diffrazione da fenditura singola, il massimo centrale corrisponde a:",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "$m = 0$",
+                "$m = 1$",
+                "$m = -1$",
+                "$m = 2$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il massimo centrale è l'ordine $m = 0$ (nessuna cancellazione). ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "diffrazione",
+                "massimo centrale",
+                "ordine",
+                "fenditura"
+            ]
+        },
+        {
+            "id": "opt_154",
+            "domanda": "Nel pattern di diffrazione da fenditura singola, il massimo centrale è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "Il più intenso e il più largo",
+                "Uguale a tutti gli altri",
+                "Sempre nullo",
+                "Sempre più stretto"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il massimo centrale ha ampiezza e intensità maggiori dei massimi laterali. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "diffrazione",
+                "massimo centrale",
+                "intensità",
+                "fenditura"
+            ]
+        },
+        {
+            "id": "opt_155",
+            "domanda": "Per ridurre l'effetto di diffrazione e migliorare la risoluzione di un telescopio, conviene:",
+            "categoria": "Ottica",
+            "sottocategoria": "Applicazioni",
+            "opzioni": [
+                "Aumentare il diametro dell'obiettivo",
+                "Ridurre il diametro dell'obiettivo",
+                "Usare luce a lunghezza d'onda maggiore",
+                "Mettere un filtro polarizzatore"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Una maggiore apertura riduce la diffrazione e aumenta la risoluzione angolare. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "risoluzione",
+                "diffrazione",
+                "telescopio",
+                "apertura"
+            ]
+        },
+        {
+            "id": "opt_156",
+            "domanda": "Due lenti sottili in contatto hanno poteri diottrici $D_1$ e $D_2$. Il potere equivalente è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "$D_{eq} = D_1 + D_2$",
+                "$D_{eq} = D_1 - D_2$",
+                "$D_{eq} = D_1 \\cdot D_2$",
+                "$D_{eq} = D_1/D_2$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per lenti sottili in contatto, i poteri diottrici si sommano. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lenti in contatto",
+                "potere diottrico",
+                "somma",
+                "equivalente"
+            ]
+        },
+        {
+            "id": "opt_157",
+            "domanda": "In un prisma, aumentando l'indice di rifrazione del materiale, la deviazione complessiva del raggio:",
+            "categoria": "Ottica",
+            "sottocategoria": "Dispersione",
+            "opzioni": [
+                "Aumenta",
+                "Diminuisce",
+                "Resta invariata",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Un indice maggiore implica una rifrazione più intensa e quindi maggiore deviazione. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "prisma",
+                "deviazione",
+                "indice",
+                "dispersione"
+            ]
+        },
+        {
+            "id": "opt_158",
+            "domanda": "Nelle fibre ottiche, per ottenere riflessione totale interna, è necessario che:",
+            "categoria": "Ottica",
+            "sottocategoria": "Applicazioni",
+            "opzioni": [
+                "L'indice del nucleo sia maggiore di quello del rivestimento",
+                "L'indice del rivestimento sia maggiore del nucleo",
+                "Gli indici siano uguali",
+                "Il nucleo sia metallico"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per la TIR nel core della fibra serve $n_{core} > n_{cladding}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "fibra ottica",
+                "TIR",
+                "indice",
+                "core"
+            ]
+        },
+        {
+            "id": "opt_159",
+            "domanda": "Il cammino ottico di un raggio che percorre una lunghezza $L$ in un mezzo di indice $n$ è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "$n \\cdot L$",
+                "$L/n$",
+                "$n + L$",
+                "$n - L$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il cammino ottico (optical path) è $n \\cdot L$ e compare nel principio di Fermat. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "cammino ottico",
+                "nL",
+                "Fermat",
+                "rifrazione"
+            ]
+        },
+        {
+            "id": "opt_160",
+            "domanda": "Se un raggio passa in un mezzo con indice maggiore, il suo tempo di percorrenza su una stessa distanza:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Aumenta",
+                "Diminuisce",
+                "Resta invariato",
+                "Diventa nullo"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Indice maggiore significa velocità minore, quindi a parità di distanza il tempo aumenta. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "tempo",
+                "indice",
+                "velocità",
+                "rifrazione"
+            ]
+        },
+        {
+            "id": "opt_161",
+            "domanda": "Uno specchio concavo per raggi paralleli all'asse si comporta come:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "Elemento convergente verso il fuoco",
+                "Elemento divergente",
+                "Elemento neutro senza effetto",
+                "Polarizzatore"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Uno specchio concavo concentra i raggi paralleli nel fuoco: è convergente. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "specchio concavo",
+                "convergenza",
+                "fuoco",
+                "raggi paralleli"
+            ]
+        },
+        {
+            "id": "opt_162",
+            "domanda": "Uno specchio convesso per raggi paralleli all'asse si comporta come:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "Elemento divergente con fuoco virtuale",
+                "Elemento convergente",
+                "Elemento neutro",
+                "Filtro dispersivo"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Lo specchio convesso diverge i raggi; il fuoco è virtuale dietro lo specchio. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "specchio convesso",
+                "divergenza",
+                "fuoco virtuale",
+                "raggi"
+            ]
+        },
+        {
+            "id": "opt_163",
+            "domanda": "L'ottica geometrica è una buona approssimazione quando:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Le dimensioni degli ostacoli sono molto maggiori di $\\lambda$",
+                "Le dimensioni degli ostacoli sono comparabili a $\\lambda$",
+                "La luce è incoerente",
+                "La luce è polarizzata"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Quando $\\lambda$ è molto piccola rispetto alle dimensioni, gli effetti ondulatori sono trascurabili. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "ottica geometrica",
+                "approssimazione",
+                "lambda",
+                "dimensioni"
+            ]
+        },
+        {
+            "id": "opt_164",
+            "domanda": "L'aberrazione cromatica nelle lenti è causata principalmente da:",
+            "categoria": "Ottica",
+            "sottocategoria": "Dispersione",
+            "opzioni": [
+                "Dispersione dell'indice con la lunghezza d'onda",
+                "Riflessione totale interna",
+                "Polarizzazione",
+                "Interferenza a due fenditure"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Poiché $n$ dipende da $\\lambda$, colori diversi hanno focali diverse, generando aberrazione cromatica. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "aberrazione cromatica",
+                "dispersione",
+                "lenti",
+                "indice"
+            ]
+        },
+        {
+            "id": "opt_165",
+            "domanda": "Una lente acromatica serve a:",
+            "categoria": "Ottica",
+            "sottocategoria": "Dispersione",
+            "opzioni": [
+                "Ridurre l'aberrazione cromatica",
+                "Aumentare la polarizzazione",
+                "Eliminare la diffrazione",
+                "Rendere la lente più sottile"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Le lenti acromatiche combinano materiali diversi per ridurre la dispersione e l'aberrazione cromatica. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "acromatica",
+                "aberrazione",
+                "dispersione",
+                "lenti"
+            ]
+        },
+        {
+            "id": "opt_166",
+            "domanda": "In un esperimento di interferenza con luce bianca, le frange risultano:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Colorate e poco visibili lontano dal centro",
+                "Tutte nere",
+                "Tutte identiche e bianche",
+                "Assenti al centro e massime ai lati"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con luce bianca le frange hanno colori diversi; lontano dal centro si sovrappongono e diventano meno visibili. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "interferenza",
+                "luce bianca",
+                "frange colorate",
+                "visibilità"
+            ]
+        },
+        {
+            "id": "opt_167",
+            "domanda": "La luce riflessa da una superficie dielettrica con incidenza obliqua risulta in genere:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "Parzialmente polarizzata",
+                "Sempre non polarizzata",
+                "Completamente circolare",
+                "Sempre assente"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La riflessione su dielettrici produce in genere una polarizzazione parziale, completa solo a $\\theta_B$. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "polarizzazione",
+                "riflessione",
+                "dielettrico",
+                "Brewster"
+            ]
+        },
+        {
+            "id": "opt_168",
+            "domanda": "L'indice relativo $n_{21}$ tra due mezzi è definito come:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "$n_{21} = n_2/n_1$",
+                "$n_{21} = n_1/n_2$",
+                "$n_{21} = n_1 + n_2$",
+                "$n_{21} = n_1 - n_2$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per definizione, l'indice relativo dal mezzo 1 al mezzo 2 è $n_{21} = n_2/n_1$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "indice relativo",
+                "n2/n1",
+                "rifrazione",
+                "definizione"
+            ]
+        },
+        {
+            "id": "opt_169",
+            "domanda": "L'immagine in uno specchio piano è capovolta rispetto a:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione",
+            "opzioni": [
+                "Destra e sinistra",
+                "Alto e basso",
+                "Fronte e retro",
+                "Nessuna direzione"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Lo specchio piano provoca inversione laterale: destra e sinistra risultano scambiate. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "specchio piano",
+                "inversione laterale",
+                "destra-sinistra",
+                "immagine"
+            ]
+        },
+        {
+            "id": "opt_170",
+            "domanda": "Quale affermazione distingue correttamente immagine reale e virtuale?",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Un'immagine reale può essere proiettata su uno schermo",
+                "Un'immagine virtuale è sempre capovolta",
+                "Un'immagine reale è sempre più piccola",
+                "Un'immagine virtuale è sempre prodotta da specchi"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Un'immagine reale si forma dove i raggi convergono e può essere raccolta su uno schermo; quella virtuale no. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "immagine reale",
+                "immagine virtuale",
+                "schermo",
+                "lenti"
+            ]
+        },
+        {
+            "id": "opt_171",
+            "domanda": "Una lente convergente forma un'immagine reale solo se l'oggetto è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Oltre il fuoco ($p > f$)",
+                "Tra lente e fuoco ($p < f$)",
+                "Esattamente sul fuoco",
+                "Sempre, in qualunque posizione"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con lente convergente, l'immagine è reale se l'oggetto è posto oltre la focale. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lente convergente",
+                "immagine reale",
+                "fuoco",
+                "posizione oggetto"
+            ]
+        },
+        {
+            "id": "opt_172",
+            "domanda": "Per una lente divergente, il fuoco è considerato:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Virtuale e posto dallo stesso lato dell'oggetto",
+                "Reale e posto oltre la lente",
+                "Infinito per definizione",
+                "Sempre nullo"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il fuoco di una lente divergente è virtuale e si trova dallo stesso lato dell'oggetto. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lente divergente",
+                "fuoco virtuale",
+                "convenzioni",
+                "ottica geometrica"
+            ]
+        },
+        {
+            "id": "opt_173",
+            "domanda": "In una lastra a facce parallele, il raggio emergente rispetto a quello incidente è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Parallelo ma traslato lateralmente",
+                "Sempre più vicino alla normale",
+                "Sempre perpendicolare",
+                "Riflesso totalmente"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In una lastra a facce parallele l'angolo di emergenza è uguale a quello di incidenza: il raggio è parallelo ma subisce uno spostamento laterale. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lastra parallela",
+                "rifrazione",
+                "spostamento laterale",
+                "Snell"
+            ]
+        },
+        {
+            "id": "opt_174",
+            "domanda": "Un miraggio caldo su strada è dovuto principalmente a:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Rifrazione in strati d'aria con indice variabile",
+                "Interferenza da doppia fenditura",
+                "Polarizzazione totale",
+                "Diffrazione da fenditura singola"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "I miraggi sono dovuti a gradienti di indice nell'aria calda che curvano i raggi. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "miraggio",
+                "indice variabile",
+                "rifrazione",
+                "aria calda"
+            ]
+        },
+        {
+            "id": "opt_175",
+            "domanda": "Inserendo un terzo polarizzatore tra due polarizzatori incrociati, l'intensità trasmessa:",
+            "categoria": "Ottica",
+            "sottocategoria": "Polarizzazione",
+            "opzioni": [
+                "Può aumentare rispetto a zero",
+                "Resta zero in ogni caso",
+                "Diventa maggiore di $I_{in}$",
+                "Diventa indipendente dall'angolo"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Un polarizzatore intermedio ruota gradualmente la direzione di polarizzazione, permettendo una trasmissione non nulla. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "polarizzatori",
+                "incrociati",
+                "Malus",
+                "intensità"
+            ]
+        },
+        {
+            "id": "opt_176",
+            "domanda": "Nel doppio foro di Young, l'interferenza costruttiva si ha quando:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "La differenza di cammino è $k\\lambda$",
+                "La differenza di cammino è $(k+1/2)\\lambda$",
+                "La differenza di cammino è $\\lambda/4$",
+                "La differenza di cammino è $2\\lambda/3$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "I massimi di interferenza si ottengono quando la differenza di cammino è un multiplo intero di $\\lambda$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "interferenza",
+                "massimi",
+                "lambda",
+                "Young"
+            ]
+        },
+        {
+            "id": "opt_177",
+            "domanda": "Nel doppio foro di Young, l'interferenza distruttiva si ha quando:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "La differenza di cammino è $(k+1/2)\\lambda$",
+                "La differenza di cammino è $k\\lambda$",
+                "La differenza di cammino è $0$",
+                "La differenza di cammino è $2k\\lambda$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "I minimi si hanno quando le onde arrivano in opposizione di fase: differenza di cammino semintera. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "interferenza",
+                "minimi",
+                "fase",
+                "lambda"
+            ]
+        },
+        {
+            "id": "opt_178",
+            "domanda": "Uno specchio concavo con oggetto nel centro di curvatura $C$ produce un'immagine:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "Reale, capovolta e della stessa dimensione in $C$",
+                "Virtuale e ingrandita",
+                "Reale e ridotta in $F$",
+                "Virtuale e ridotta"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per oggetto in $C$, l'immagine si forma in $C$, reale, capovolta e di uguale dimensione. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "specchio concavo",
+                "centro curvatura",
+                "immagine reale",
+                "dimensione"
+            ]
+        },
+        {
+            "id": "opt_179",
+            "domanda": "Uno specchio convesso è spesso usato come retrovisore perché:",
+            "categoria": "Ottica",
+            "sottocategoria": "Applicazioni",
+            "opzioni": [
+                "Offre un campo visivo più ampio",
+                "Ingrandisce le immagini reali",
+                "Elimina l'aberrazione cromatica",
+                "Riduce la diffrazione"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Lo specchio convesso produce immagini ridotte e permette di vedere un'area più ampia. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "specchio convesso",
+                "retrovisore",
+                "campo visivo",
+                "applicazioni"
+            ]
+        },
+        {
+            "id": "opt_180",
+            "domanda": "Una lente con potere diottrico negativo è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Divergente",
+                "Convergente",
+                "Sempre acromatica",
+                "Sempre spessa"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Un potere diottrico negativo corrisponde a una focale negativa: lente divergente. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "diottrie",
+                "lente divergente",
+                "focale negativa",
+                "potere"
+            ]
+        },
+        {
+            "id": "opt_181",
+            "domanda": "Una lente con potere diottrico positivo è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Convergente",
+                "Divergente",
+                "Sempre afocale",
+                "Sempre biconcava"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Potere diottrico positivo significa focale positiva: lente convergente. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "diottrie",
+                "lente convergente",
+                "focale positiva",
+                "potere"
+            ]
+        },
+        {
+            "id": "opt_182",
+            "domanda": "Nel passaggio da un mezzo a un altro, la fase delle onde luminose cambia perché:",
+            "categoria": "Ottica",
+            "sottocategoria": "Rifrazione",
+            "opzioni": [
+                "Cambia la lunghezza d'onda nel mezzo",
+                "Cambia la frequenza della luce",
+                "La luce perde energia",
+                "La luce diventa polarizzata"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La frequenza resta costante, ma la lunghezza d'onda cambia; ciò modifica l'andamento di fase nello spazio. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "fase",
+                "lunghezza d'onda",
+                "rifrazione",
+                "frequenza"
+            ]
+        },
+        {
+            "id": "opt_183",
+            "domanda": "L'arcobaleno è dovuto principalmente a:",
+            "categoria": "Ottica",
+            "sottocategoria": "Dispersione",
+            "opzioni": [
+                "Rifrazione, dispersione e riflessione interna nelle gocce",
+                "Interferenza da doppia fenditura",
+                "Polarizzazione completa della luce",
+                "Diffrazione su ostacoli"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Le gocce d'acqua rifrangono e disperdono la luce, con una riflessione interna che separa i colori. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "arcobaleno",
+                "dispersione",
+                "rifrazione",
+                "gocce"
+            ]
+        },
+        {
+            "id": "opt_184",
+            "domanda": "La direzione di propagazione di un'onda luminosa è sempre:",
+            "categoria": "Ottica",
+            "sottocategoria": "Interferenza",
+            "opzioni": [
+                "Perpendicolare al fronte d'onda",
+                "Parallela al fronte d'onda",
+                "Casuale",
+                "Tangente al fronte d'onda"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "I raggi sono normali ai fronti d'onda: la propagazione è perpendicolare al fronte. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "fronti d'onda",
+                "raggi",
+                "propagazione",
+                "Huygens"
+            ]
+        },
+        {
+            "id": "opt_185",
+            "domanda": "In un mezzo omogeneo, un raggio di luce si propaga:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione",
+            "opzioni": [
+                "In linea retta",
+                "Sempre curvo",
+                "Sempre a spirale",
+                "Solo lungo traiettorie circolari"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In un mezzo omogeneo l'indice è costante e il raggio segue una traiettoria rettilinea. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "propagazione rettilinea",
+                "mezzo omogeneo",
+                "raggi",
+                "ottica geometrica"
+            ]
+        },
+        {
+            "id": "opt_186",
+            "domanda": "Se il potere diottrico di una lente aumenta, la sua focale $f$:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Diminuisce",
+                "Aumenta",
+                "Resta costante",
+                "Diventa infinita"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Poiché $D = 1/f$, un aumento di $D$ implica una diminuzione di $f$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "diottrie",
+                "focale",
+                "inverso",
+                "lenti"
+            ]
+        },
+        {
+            "id": "opt_187",
+            "domanda": "Una lente convergente può produrre un'immagine virtuale solo se l'oggetto è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Lenti sottili",
+            "opzioni": [
+                "Tra lente e fuoco",
+                "Oltre $2f$",
+                "Esattamente in $2f$",
+                "Sempre"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per una lente convergente, l'immagine è virtuale solo se l'oggetto è all'interno della focale. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lente convergente",
+                "immagine virtuale",
+                "focale",
+                "posizione oggetto"
+            ]
+        },
+        {
+            "id": "opt_188",
+            "domanda": "In uno specchio concavo, l'immagine di un oggetto posto al fuoco è:",
+            "categoria": "Ottica",
+            "sottocategoria": "Specchi sferici",
+            "opzioni": [
+                "All'infinito",
+                "In $C$",
+                "Tra $F$ e $C$",
+                "Dietro lo specchio"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con oggetto in $F$, i raggi riflessi escono paralleli: l'immagine è all'infinito. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "specchio concavo",
+                "fuoco",
+                "immagine all'infinito",
+                "raggi paralleli"
+            ]
+        },
+        {
+            "id": "opt_189",
+            "domanda": "Il criterio di Rayleigh per la risoluzione angolare indica che due punti sono risolti quando:",
+            "categoria": "Ottica",
+            "sottocategoria": "Diffrazione",
+            "opzioni": [
+                "Il massimo di uno coincide col primo minimo dell'altro",
+                "I massimi coincidono perfettamente",
+                "I minimi coincidono con il centro",
+                "La diffrazione è assente"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Secondo Rayleigh, la risoluzione si ha quando il massimo centrale di un'immagine coincide col primo minimo dell'altra. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "Rayleigh",
+                "risoluzione",
+                "diffrazione",
+                "criterio"
+            ]
+        },
+        {
+            "id": "opt_190",
+            "domanda": "In un prisma, se la lunghezza d'onda aumenta, la deviazione del raggio in dispersione normale:",
+            "categoria": "Ottica",
+            "sottocategoria": "Dispersione",
+            "opzioni": [
+                "Diminuisce",
+                "Aumenta",
+                "Resta uguale",
+                "Diventa sempre $90^\\circ$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In dispersione normale, $n$ diminuisce con $\\lambda$, quindi la deviazione diminuisce. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "prisma",
+                "dispersione normale",
+                "lambda",
+                "deviazione"
+            ]
+        },
+        {
+            "id": "opt_191",
+            "domanda": "Una superficie perfettamente liscia rispetto alla lunghezza d'onda produce prevalentemente:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione",
+            "opzioni": [
+                "Riflessione speculare",
+                "Riflessione diffusa",
+                "Diffrazione intensa",
+                "Assorbimento totale"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Se le asperità sono molto più piccole di $\\lambda$, la riflessione è speculare. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "riflessione speculare",
+                "superficie liscia",
+                "lambda",
+                "ottica"
+            ]
+        },
+        {
+            "id": "opt_192",
+            "domanda": "Una superficie ruvida rispetto alla lunghezza d'onda produce prevalentemente:",
+            "categoria": "Ottica",
+            "sottocategoria": "Riflessione",
+            "opzioni": [
+                "Riflessione diffusa",
+                "Riflessione speculare",
+                "Polarizzazione completa",
+                "Interferenza stabile"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con asperità confrontabili o maggiori di $\\lambda$, la riflessione è diffusa. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "riflessione diffusa",
+                "superficie ruvida",
+                "lambda",
+                "ottica"
+            ]
         }
     ]
 }

@@ -2393,6 +2393,2400 @@
                 "tangenziale",
                 "condizione"
             ]
+        },
+        {
+            "id": "grav_115",
+            "domanda": "Perché, nel modello newtoniano, la gravità tra due masse è sempre attrattiva?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Natura della forza",
+            "opzioni": [
+                "Perché le masse sono sempre positive",
+                "Perché $G$ è negativa",
+                "Perché la forza è tangenziale",
+                "Perché dipende dalla velocità"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con masse positive e $G > 0$, la forza è diretta verso l'altra massa, quindi attrattiva.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "attrattiva",
+                "masse",
+                "newton",
+                "G"
+            ]
+        },
+        {
+            "id": "grav_116",
+            "domanda": "Perché le orbite legate hanno energia totale negativa se si pone $U = 0$ all'infinito?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia di legame",
+            "opzioni": [
+                "Perché la massa è negativa",
+                "Perché il potenziale è negativo e domina su $K$",
+                "Perché $K$ è sempre zero",
+                "Perché la forza è repulsiva"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $U(\\infty)=0$, un sistema legato ha $U<0$ e l'energia totale $E=K+U$ resta negativa.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "legame",
+                "potenziale",
+                "negativa"
+            ]
+        },
+        {
+            "id": "grav_117",
+            "domanda": "Che cosa rappresenta il campo gravitazionale $g$ in un punto?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Definizione di campo",
+            "opzioni": [
+                "Forza totale nel punto",
+                "Forza per unità di massa",
+                "Massa per unità di forza",
+                "Energia potenziale per unità di tempo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "$g$ è definito come $g = F/m$, cioè forza per unità di massa di prova.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "campo",
+                "g",
+                "F/m",
+                "definizione"
+            ]
+        },
+        {
+            "id": "grav_118",
+            "domanda": "Le linee di campo gravitazionale indicano:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Linee di campo",
+            "opzioni": [
+                "Le traiettorie dei pianeti",
+                "La direzione della forza su una massa di prova",
+                "Il valore della massa",
+                "La velocità di fuga"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le linee di campo sono tangenti alla direzione del campo, quindi alla forza su una massa di prova.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "linee di campo",
+                "direzione",
+                "forza",
+                "g"
+            ]
+        },
+        {
+            "id": "grav_119",
+            "domanda": "Perché la forza gravitazionale è detta forza centrale?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Forze centrali",
+            "opzioni": [
+                "Perché è sempre costante",
+                "Perché è diretta verso un centro",
+                "Perché agisce solo al centro",
+                "Perché è parallela alla velocità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Una forza centrale è diretta lungo il raggio verso (o da) un centro fisso.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "forza centrale",
+                "direzione",
+                "centro",
+                "raggio"
+            ]
+        },
+        {
+            "id": "grav_120",
+            "domanda": "Perché in caduta libera si parla di \"assenza di peso\"?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Peso apparente",
+            "opzioni": [
+                "Perché la gravità è nulla",
+                "Perché manca la reazione del vincolo",
+                "Perché la massa diventa zero",
+                "Perché la velocità è costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il peso apparente è la reazione del vincolo; in caduta libera il vincolo non spinge e il peso apparente è nullo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "caduta libera",
+                "peso apparente",
+                "vincolo",
+                "microgravità"
+            ]
+        },
+        {
+            "id": "grav_121",
+            "domanda": "In un ascensore che accelera verso l'alto, il peso apparente di una persona:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Peso apparente",
+            "opzioni": [
+                "Diminuisce",
+                "Aumenta",
+                "Resta uguale",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Serve una reazione maggiore per accelerare verso l'alto, quindi il peso apparente aumenta.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "ascensore",
+                "accelerazione",
+                "peso apparente",
+                "reazione"
+            ]
+        },
+        {
+            "id": "grav_122",
+            "domanda": "Perché la massa non dipende dal luogo mentre il peso sì?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Massa vs peso",
+            "opzioni": [
+                "Perché la massa è una proprietà intrinseca",
+                "Perché $g$ è costante ovunque",
+                "Perché il peso non è una forza",
+                "Perché la massa dipende dalla velocità"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La massa è intrinseca; il peso è una forza che dipende dal campo gravitazionale locale.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "massa",
+                "peso",
+                "g",
+                "intrinseca"
+            ]
+        },
+        {
+            "id": "grav_123",
+            "domanda": "Perché un satellite in orbita non cade sulla Terra?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Concetto di orbita",
+            "opzioni": [
+                "Perché non c'è gravità",
+                "Perché ha velocità tangenziale sufficiente",
+                "Perché la massa è piccola",
+                "Perché l'aria lo sostiene"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "È in caduta libera, ma con velocità tangenziale tale da \"mancare\" continuamente il suolo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "orbita",
+                "caduta libera",
+                "velocità tangenziale",
+                "satellite"
+            ]
+        },
+        {
+            "id": "grav_124",
+            "domanda": "Perché in un'orbita ellittica la velocità è maggiore al perielio?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Seconda legge",
+            "opzioni": [
+                "Perché la massa cambia",
+                "Perché si conserva il momento angolare",
+                "Perché $g$ è costante",
+                "Perché l'orbita è circolare"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con forza centrale si conserva il momento angolare: a raggio minore corrisponde velocità maggiore.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "perielio",
+                "momento angolare",
+                "keplero",
+                "velocità"
+            ]
+        },
+        {
+            "id": "grav_125",
+            "domanda": "In un'orbita ellittica, quale grandezza resta costante in assenza di attriti?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Conservazioni",
+            "opzioni": [
+                "La velocità",
+                "L'energia meccanica totale",
+                "La distanza dal fuoco",
+                "L'energia potenziale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Senza forze non conservative, l'energia meccanica totale si conserva.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "conservazione",
+                "orbita",
+                "attriti"
+            ]
+        },
+        {
+            "id": "grav_126",
+            "domanda": "Perché la 2ª legge di Keplero equivale alla conservazione del momento angolare?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Aree e momento angolare",
+            "opzioni": [
+                "Perché la forza è costante",
+                "Perché una forza centrale ha momento torcente nullo",
+                "Perché la massa cambia",
+                "Perché l'orbita è circolare"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Una forza centrale ha momento torcente nullo, quindi il momento angolare si conserva e l'area spazzata è costante nel tempo.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "keplero",
+                "momento angolare",
+                "forza centrale",
+                "aree"
+            ]
+        },
+        {
+            "id": "grav_127",
+            "domanda": "Perché la forza di gravità è conservativa?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Forza conservativa",
+            "opzioni": [
+                "Perché non dipende dalla massa",
+                "Perché il lavoro non dipende dal percorso",
+                "Perché è costante nel tempo",
+                "Perché è sempre repulsiva"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro della gravità dipende solo dai punti iniziale e finale, non dal percorso.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "conservativa",
+                "lavoro",
+                "percorso",
+                "gravità"
+            ]
+        },
+        {
+            "id": "grav_128",
+            "domanda": "Se si sceglie un diverso zero di energia potenziale, cosa cambia?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia potenziale",
+            "opzioni": [
+                "Cambia la forza gravitazionale",
+                "Cambia solo il valore assoluto di $U$",
+                "Cambia la massa",
+                "Cambia $G$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Lo zero di $U$ è convenzionale: la forza dipende dalle differenze di potenziale, non dal valore assoluto.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia potenziale",
+                "zero",
+                "convenzione",
+                "differenze"
+            ]
+        },
+        {
+            "id": "grav_129",
+            "domanda": "Perché vicino alla Terra si usa spesso $\\Delta U \\approx mgh$?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Approssimazione locale",
+            "opzioni": [
+                "Perché $g$ è esattamente costante",
+                "Perché per $h \\ll R$ la variazione di $g$ è trascurabile",
+                "Perché $G$ dipende da $h$",
+                "Perché la gravità è repulsiva"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per piccole variazioni di quota rispetto al raggio terrestre, $g$ varia poco e si può assumere costante.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "mgh",
+                "approssimazione",
+                "h<<R",
+                "g"
+            ]
+        },
+        {
+            "id": "grav_130",
+            "domanda": "Perché il periodo orbitale non dipende dalla massa del satellite?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Dipendenza dalla massa",
+            "opzioni": [
+                "Perché la massa del satellite è nulla",
+                "Perché si semplifica nell'equilibrio tra forze",
+                "Perché la massa del satellite è costante",
+                "Perché dipende solo dall'angolo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Uguagliando forza gravitazionale e centripeta, la massa del satellite compare in entrambi i membri e si elimina.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "periodo",
+                "massa",
+                "semplifica",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_131",
+            "domanda": "Perché le maree dipendono fortemente dalla distanza?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Maree",
+            "opzioni": [
+                "Perché dipendono dalla velocità della Luna",
+                "Perché l'effetto mareale dipende dalla differenza di gravità",
+                "Perché $g$ è costante",
+                "Perché dipendono dalla massa della Terra"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le maree nascono dal gradiente del campo gravitazionale: questo diminuisce rapidamente con la distanza.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "maree",
+                "gradiente",
+                "distanza",
+                "gravità"
+            ]
+        },
+        {
+            "id": "grav_132",
+            "domanda": "Perché l'effetto mareale della Luna è maggiore di quello del Sole, pur essendo il Sole più massiccio?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Maree",
+            "opzioni": [
+                "Perché la Luna è più veloce",
+                "Perché la Luna è molto più vicina",
+                "Perché il Sole è troppo grande",
+                "Perché il Sole non ha gravità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'effetto mareale dipende fortemente dalla distanza: la Luna è molto più vicina della massa solare.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "maree",
+                "luna",
+                "sole",
+                "distanza"
+            ]
+        },
+        {
+            "id": "grav_133",
+            "domanda": "Perché la gravità in una sfera uniforme è zero al centro?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Campo interno sfera",
+            "opzioni": [
+                "Perché manca la massa",
+                "Perché le forze si cancellano per simmetria",
+                "Perché $G=0$ al centro",
+                "Perché la massa è infinita"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Al centro, per simmetria, le attrazioni provenienti da tutte le direzioni si compensano.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "sfera uniforme",
+                "centro",
+                "simmetria",
+                "campo"
+            ]
+        },
+        {
+            "id": "grav_134",
+            "domanda": "All'esterno di una sfera omogenea, il campo gravitazionale equivale a quello di:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Sfera come punto",
+            "opzioni": [
+                "Una massa distribuita sulla superficie",
+                "Una massa concentrata nel centro",
+                "Due masse ai poli",
+                "Una linea di massa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per il teorema del guscio, una sfera uniforme agisce esternamente come una massa puntiforme al centro.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "teorema del guscio",
+                "sfera",
+                "massa puntiforme",
+                "centro"
+            ]
+        },
+        {
+            "id": "grav_135",
+            "domanda": "In assenza di altre forze, un corpo lanciato orizzontalmente vicino alla Terra:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Moto e gravità",
+            "opzioni": [
+                "Segue una linea retta",
+                "Segue una parabola",
+                "Si ferma subito",
+                "Sale verso l'alto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La componente orizzontale è uniforme, quella verticale è accelerata: la traiettoria è parabolica.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "parabola",
+                "moto",
+                "gravità",
+                "proiettile"
+            ]
+        },
+        {
+            "id": "grav_136",
+            "domanda": "Perché il campo gravitazionale diminuisce con $r$ come $1/r^2$?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Legge dell'inverso del quadrato",
+            "opzioni": [
+                "Perché la massa diminuisce",
+                "Perché le superfici sferiche crescono come $r^2$",
+                "Perché la velocità aumenta",
+                "Perché $G$ dipende da $r$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La stessa influenza gravitazionale si distribuisce su superfici sferiche che crescono come $r^2$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "1/r^2",
+                "superficie sferica",
+                "r^2",
+                "campo"
+            ]
+        },
+        {
+            "id": "grav_137",
+            "domanda": "Quale grandezza descrive meglio la curvatura della traiettoria in un'orbita circolare?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Moto circolare",
+            "opzioni": [
+                "La velocità tangenziale",
+                "L'accelerazione centripeta",
+                "Il periodo",
+                "L'energia potenziale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La deviazione continua dalla traiettoria rettilinea è dovuta all'accelerazione centripeta.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "centripeta",
+                "orbita",
+                "accelerazione",
+                "curvatura"
+            ]
+        },
+        {
+            "id": "grav_138",
+            "domanda": "Se $g$ diminuisce con la distanza, perché in orbita si è comunque in caduta libera?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Gravità in orbita",
+            "opzioni": [
+                "Perché $g$ è zero",
+                "Perché $g$ è ancora significativa e fornisce l'accelerazione centripeta",
+                "Perché l'aria sostiene gli astronauti",
+                "Perché la massa si annulla"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In orbita $g$ non è nullo: agisce come accelerazione centripeta e mantiene la caduta libera.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "orbita",
+                "caduta libera",
+                "g",
+                "centripeta"
+            ]
+        },
+        {
+            "id": "grav_139",
+            "domanda": "Quale affermazione è corretta sul rapporto tra $g$ e $G$?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Costanti e grandezze",
+            "opzioni": [
+                "$g$ è universale, $G$ dipende dal luogo",
+                "$G$ è universale, $g$ dipende dal corpo centrale",
+                "Entrambe sono universali e costanti",
+                "Entrambe dipendono dalla massa dell'oggetto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "$G$ è una costante universale; $g$ varia con la massa e la distanza dal corpo centrale.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "g",
+                "G",
+                "costante",
+                "dipendenza"
+            ]
+        },
+        {
+            "id": "grav_140",
+            "domanda": "Perché la velocità di fuga non dipende dalla massa dell'oggetto che fugge?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Velocità di fuga",
+            "opzioni": [
+                "Perché la massa è zero",
+                "Perché la massa si semplifica nell'energia",
+                "Perché $G$ dipende dalla massa",
+                "Perché la forza è costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nell'uguaglianza energetica, la massa dell'oggetto compare in entrambi i termini e si semplifica.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "velocità di fuga",
+                "massa",
+                "energia",
+                "semplifica"
+            ]
+        },
+        {
+            "id": "grav_141",
+            "domanda": "Qual è il significato fisico di $U = -GMm/r$?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia potenziale",
+            "opzioni": [
+                "Energia necessaria per portare $m$ da $r$ a infinito",
+                "Energia cinetica dell'orbita",
+                "Forza per unità di massa",
+                "Lavoro fatto dalla massa $m$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "$U$ è l'energia potenziale gravitazionale con zero all'infinito: rappresenta l'energia di legame.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "U",
+                "energia potenziale",
+                "legame",
+                "infinito"
+            ]
+        },
+        {
+            "id": "grav_142",
+            "domanda": "Quale affermazione sui satelliti geostazionari è corretta?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Geostazionaria",
+            "opzioni": [
+                "Possono avere qualsiasi inclinazione",
+                "Devono orbitare sul piano equatoriale",
+                "Possono essere a qualsiasi raggio",
+                "Hanno periodo di 12 ore"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per rimanere sopra lo stesso punto, l'orbita deve essere equatoriale e con periodo di 24 h.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "geostazionario",
+                "equatore",
+                "periodo",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_143",
+            "domanda": "Perché la velocità orbitale in orbita circolare diminuisce se aumenta $r$?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Velocità vs r",
+            "opzioni": [
+                "Perché la massa aumenta",
+                "Perché la gravità è più debole",
+                "Perché $G$ diminuisce",
+                "Perché il periodo è costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Aumentando $r$, il campo gravitazionale diminuisce e serve meno velocità per la curva richiesta.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "velocità orbitale",
+                "r",
+                "gravità",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_144",
+            "domanda": "Se un satellite passa a un'orbita più alta, il suo periodo:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Periodo orbitale",
+            "opzioni": [
+                "Diminuisce",
+                "Aumenta",
+                "Resta uguale",
+                "Diventa zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per $T \\propto r^{3/2}$, aumentando $r$ il periodo aumenta.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "periodo",
+                "orbita",
+                "r",
+                "keplero"
+            ]
+        },
+        {
+            "id": "grav_145",
+            "domanda": "Perché il moto di un satellite in orbita circolare è uniforme (modulo della velocità costante)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Moto circolare",
+            "opzioni": [
+                "Perché la forza è tangenziale",
+                "Perché la forza è radiale e non fa lavoro",
+                "Perché $g$ è zero",
+                "Perché la massa è nulla"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La forza è radiale, perpendicolare alla velocità: non cambia il modulo della velocità.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "orbita circolare",
+                "lavoro",
+                "forza radiale",
+                "velocità"
+            ]
+        },
+        {
+            "id": "grav_146",
+            "domanda": "Quale affermazione descrive correttamente il peso apparente in un'astronave in orbita?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Peso apparente",
+            "opzioni": [
+                "È massimo",
+                "È nullo perché il vincolo non esercita reazione",
+                "È uguale al peso reale",
+                "È negativo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In orbita si è in caduta libera: la reazione del vincolo è nulla, quindi il peso apparente è zero.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "peso apparente",
+                "orbita",
+                "caduta libera",
+                "reazione"
+            ]
+        },
+        {
+            "id": "grav_147",
+            "domanda": "Perché la seconda legge di Keplero implica velocità maggiore al perielio?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Seconda legge",
+            "opzioni": [
+                "Perché l'area spazzata è maggiore",
+                "Perché l'area spazzata in tempi uguali è la stessa",
+                "Perché la massa cambia",
+                "Perché l'orbita è circolare"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Aree uguali in tempi uguali: quando il raggio è minore, la velocità deve aumentare.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "keplero",
+                "aree",
+                "perielio",
+                "velocità"
+            ]
+        },
+        {
+            "id": "grav_148",
+            "domanda": "Perché un oggetto può orbitare solo con velocità tangenziale e non con velocità puramente radiale?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Concetto di orbita",
+            "opzioni": [
+                "Perché la forza è tangenziale",
+                "Perché serve una componente perpendicolare al raggio per curvare la traiettoria",
+                "Perché la gravità scompare",
+                "Perché la massa deve essere grande"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La gravità è radiale; serve una velocità perpendicolare al raggio per ottenere una traiettoria chiusa.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "orbita",
+                "tangenziale",
+                "radiale",
+                "curvatura"
+            ]
+        },
+        {
+            "id": "grav_149",
+            "domanda": "Quale affermazione è corretta sulla costante di gravitazione $G$?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Costante G",
+            "opzioni": [
+                "Cambia con la distanza",
+                "È la stessa ovunque nel modello classico",
+                "Dipende dalla massa del satellite",
+                "Dipende dal tempo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "$G$ è una costante universale in fisica classica.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "G",
+                "costante",
+                "universale",
+                "newton"
+            ]
+        },
+        {
+            "id": "grav_150",
+            "domanda": "Perché la gravità è più debole sulla cima di una montagna rispetto al livello del mare?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Dipendenza da r",
+            "opzioni": [
+                "Perché la massa della Terra diminuisce",
+                "Perché aumenta la distanza dal centro della Terra",
+                "Perché $G$ diminuisce",
+                "Perché l'aria riduce la gravità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Salendo aumenta la distanza dal centro terrestre, quindi $g$ diminuisce per legge $1/r^2$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "montagna",
+                "distanza",
+                "g",
+                "1/r^2"
+            ]
+        },
+        {
+            "id": "grav_151",
+            "domanda": "Quale interpretazione è corretta per $g = F/m$?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Interpretazione fisica",
+            "opzioni": [
+                "$g$ è la forza totale",
+                "$g$ è l'accelerazione per unità di forza",
+                "$g$ è la forza per unità di massa",
+                "$g$ è una massa"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Per definizione $g = F/m$: il campo è la forza per unità di massa di prova.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "g",
+                "F/m",
+                "campo",
+                "forza"
+            ]
+        },
+        {
+            "id": "grav_152",
+            "domanda": "Se si raddoppia la distanza da una massa, il campo $g$ diventa:",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Dipendenza da r",
+            "opzioni": [
+                "Raddoppia",
+                "Dimezza",
+                "Diventa $1/4$",
+                "Resta uguale"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Con $g \\propto 1/r^2$, raddoppiando $r$ il campo diventa un quarto.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "g",
+                "1/r^2",
+                "distanza",
+                "campo"
+            ]
+        },
+        {
+            "id": "grav_153",
+            "domanda": "Perché la forza gravitazionale non può annullarsi tra due masse isolate?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Natura della forza",
+            "opzioni": [
+                "Perché la forza è sempre attrattiva",
+                "Perché la distanza è sempre zero",
+                "Perché la massa è negativa",
+                "Perché $G$ è zero"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Con masse positive, la gravità è sempre attrattiva e non può annullarsi se sono presenti solo due masse.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "attrattiva",
+                "forza",
+                "masse",
+                "isolato"
+            ]
+        },
+        {
+            "id": "grav_154",
+            "domanda": "In un sistema a due corpi, perché entrambi orbitano attorno al baricentro?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Sistema a due corpi",
+            "opzioni": [
+                "Perché il baricentro ha massa infinita",
+                "Perché le forze sono uguali e opposte",
+                "Perché la gravità è repulsiva",
+                "Perché uno dei due corpi è fermo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le forze sono uguali e opposte: entrambi i corpi si muovono attorno al baricentro comune.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "baricentro",
+                "due corpi",
+                "azione-reazione",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_155",
+            "domanda": "Perché le orbite possibili in un potenziale $1/r$ sono coniche?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Orbite coniche",
+            "opzioni": [
+                "Perché la forza è costante",
+                "Perché una forza centrale $1/r^2$ produce coniche",
+                "Perché l'energia è sempre zero",
+                "Perché $g$ è costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Una forza centrale inversa al quadrato ammette soluzioni coniche: ellissi, parabole, iperboli.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "coniche",
+                "1/r^2",
+                "orbite",
+                "forza centrale"
+            ]
+        },
+        {
+            "id": "grav_156",
+            "domanda": "Quale condizione indica un'orbita non legata (parabolica o iperbolica)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia orbitale",
+            "opzioni": [
+                "$E < 0$",
+                "$E = 0$ o $E > 0$",
+                "$E$ sempre negativo",
+                "Velocità nulla"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $U(\\infty)=0$, $E=0$ indica fuga parabolica, $E>0$ orbita iperbolica.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "energia",
+                "non legata",
+                "parabola",
+                "iperbole"
+            ]
+        },
+        {
+            "id": "grav_157",
+            "domanda": "Perché la forza gravitazionale non dipende dalla velocità degli oggetti nel modello newtoniano?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Legge di Newton",
+            "opzioni": [
+                "Perché $G$ compensa la velocità",
+                "Perché la legge dipende solo da masse e distanza",
+                "Perché la velocità è sempre zero",
+                "Perché la gravità è magnetica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La legge di Newton dipende solo da $m_1$, $m_2$ e $r$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "newton",
+                "masse",
+                "distanza",
+                "velocità"
+            ]
+        },
+        {
+            "id": "grav_158",
+            "domanda": "Perché la traiettoria di un oggetto lanciato verso l'alto (senza attrito) è simmetrica in salita e discesa?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Conservazione energia",
+            "opzioni": [
+                "Perché $g$ cambia segno",
+                "Perché l'energia meccanica si conserva",
+                "Perché la massa aumenta",
+                "Perché la gravità è nulla"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Senza attrito, l'energia meccanica si conserva: la velocità dipende solo dalla quota.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "simmetria",
+                "lancio",
+                "quota"
+            ]
+        },
+        {
+            "id": "grav_159",
+            "domanda": "Quale effetto ha la rotazione terrestre sulla misura di $g$?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Gravità effettiva",
+            "opzioni": [
+                "Aumenta $g$ ovunque",
+                "Riduce $g$ al suolo, soprattutto all'equatore",
+                "Non ha alcun effetto",
+                "Rende $g$ negativa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La rotazione introduce una piccola accelerazione centrifuga che riduce il peso apparente, massima all'equatore.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "rotazione",
+                "g",
+                "centrifuga",
+                "equatore"
+            ]
+        },
+        {
+            "id": "grav_160",
+            "domanda": "Perché una forza centrale implica conservazione del momento angolare?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Forze centrali",
+            "opzioni": [
+                "Perché il momento angolare è sempre zero",
+                "Perché il momento torcente è nullo",
+                "Perché la massa è costante",
+                "Perché l'orbita è ellittica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La forza è diretta lungo il raggio, quindi il momento torcente rispetto al centro è nullo.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "momento angolare",
+                "forza centrale",
+                "torcente",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "grav_161",
+            "domanda": "Qual è il significato qualitativo di un'energia totale più vicina a zero in un'orbita?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia orbitale",
+            "opzioni": [
+                "Orbita più legata",
+                "Orbita meno legata e più ampia",
+                "Orbita sempre circolare",
+                "Orbita impossibile"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Un'energia totale meno negativa indica un'orbita più ampia e meno legata al corpo centrale.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "orbita",
+                "legame",
+                "ampia"
+            ]
+        },
+        {
+            "id": "grav_162",
+            "domanda": "Perché la forza gravitazionale è uguale e opposta su due masse?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Terza legge di Newton",
+            "opzioni": [
+                "Perché le masse sono uguali",
+                "Perché vale la terza legge di Newton",
+                "Perché $G$ è negativo",
+                "Perché la distanza è nulla"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'interazione gravitazionale obbedisce alla terza legge: azione e reazione sono uguali e opposte.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "azione-reazione",
+                "terza legge",
+                "forze",
+                "uguali"
+            ]
+        },
+        {
+            "id": "grav_163",
+            "domanda": "Perché l'energia potenziale gravitazionale è negativa quando $U(\\infty)=0$?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Segno del potenziale",
+            "opzioni": [
+                "Perché la forza è repulsiva",
+                "Perché bisogna fornire energia per separare le masse",
+                "Perché la massa è negativa",
+                "Perché $G$ è negativo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il sistema è legato: serve lavoro positivo per portare le masse all'infinito, quindi $U$ è negativo.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "potenziale",
+                "negativo",
+                "legame",
+                "lavoro"
+            ]
+        },
+        {
+            "id": "grav_164",
+            "domanda": "Quale affermazione descrive meglio il concetto di campo?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Definizione di campo",
+            "opzioni": [
+                "Una proprietà solo dei corpi in movimento",
+                "Una grandezza definita in ogni punto dello spazio",
+                "Una forza costante",
+                "Una traiettoria"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Un campo assegna a ogni punto dello spazio un valore (scalare o vettoriale) che descrive l'interazione.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "campo",
+                "spazio",
+                "grandezza",
+                "definizione"
+            ]
+        },
+        {
+            "id": "grav_165",
+            "domanda": "Perché in un'orbita circolare la forza di gravità non cambia il modulo della velocità?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Moto circolare",
+            "opzioni": [
+                "Perché la forza è nulla",
+                "Perché la forza è perpendicolare alla velocità",
+                "Perché la massa è zero",
+                "Perché l'energia non è definita"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La forza è radiale e perpendicolare alla velocità, quindi non compie lavoro e non cambia il modulo di $v$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza radiale",
+                "velocità",
+                "lavoro",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_166",
+            "domanda": "Cosa accade all'energia potenziale se un satellite passa a un'orbita più alta?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "U vs r",
+            "opzioni": [
+                "Diventa più negativa",
+                "Diventa meno negativa (aumenta verso 0)",
+                "Resta uguale",
+                "Diventa positiva"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $U = -GMm/r$, aumentando $r$ il valore di $U$ cresce verso 0.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "potenziale",
+                "orbita alta",
+                "-GMm/r",
+                "meno negativa"
+            ]
+        },
+        {
+            "id": "grav_167",
+            "domanda": "Perché la velocità di fuga è maggiore della velocità orbitale circolare alla stessa quota?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "v_f vs v_orb",
+            "opzioni": [
+                "Perché $v_f$ include l'energia per arrivare all'infinito",
+                "Perché $v_f$ è sempre costante",
+                "Perché l'orbita è ellittica",
+                "Perché $v_{orb}$ dipende dalla massa del satellite"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Per fuggire serve energia extra per annullare il legame: $v_f = \\sqrt{2} \\, v_{orb}$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "velocità di fuga",
+                "orbita",
+                "energia",
+                "sqrt2"
+            ]
+        },
+        {
+            "id": "grav_168",
+            "domanda": "Quale affermazione descrive meglio l'equivalenza tra massa inerziale e massa gravitazionale?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Principio di equivalenza",
+            "opzioni": [
+                "Sono grandezze diverse senza relazione",
+                "Sono proporzionali e sperimentalmente uguali",
+                "La massa inerziale è sempre maggiore",
+                "Dipendono dalla velocità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Gli esperimenti mostrano che massa inerziale e gravitazionale sono equivalenti entro alta precisione.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "equivalenza",
+                "massa inerziale",
+                "massa gravitazionale",
+                "esperimenti"
+            ]
+        },
+        {
+            "id": "grav_169",
+            "domanda": "Perché due corpi in caduta libera accelerano allo stesso modo (in assenza di attrito)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Caduta libera",
+            "opzioni": [
+                "Perché hanno la stessa massa",
+                "Perché l'accelerazione di gravità non dipende dalla massa",
+                "Perché la forza è nulla",
+                "Perché l'aria li spinge"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'accelerazione $g$ è indipendente dalla massa del corpo di prova.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "caduta libera",
+                "g",
+                "massa",
+                "indipendenza"
+            ]
+        },
+        {
+            "id": "grav_170",
+            "domanda": "Perché la velocità orbitale è tangente alla traiettoria?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Moto orbitale",
+            "opzioni": [
+                "Perché la forza è tangenziale",
+                "Perché la velocità è sempre perpendicolare al raggio istantaneo",
+                "Perché la massa è nulla",
+                "Perché l'orbita è retta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In moto curvilineo la velocità è tangente alla traiettoria, mentre la forza gravitazionale è radiale.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "velocità",
+                "tangente",
+                "orbita",
+                "raggio"
+            ]
+        },
+        {
+            "id": "grav_171",
+            "domanda": "Quale affermazione descrive correttamente l'energia meccanica in un'orbita circolare?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia orbita circolare",
+            "opzioni": [
+                "È positiva",
+                "È negativa e pari a metà del potenziale",
+                "È zero",
+                "È uguale alla cinetica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In orbita circolare $E = -GMm/(2r)$, quindi è negativa e pari a metà del potenziale (in modulo).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "orbita circolare",
+                "negativa",
+                "-GMm/2r"
+            ]
+        },
+        {
+            "id": "grav_172",
+            "domanda": "Perché un'orbita ellittica è legata ma un'orbita iperbolica no?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia orbitale",
+            "opzioni": [
+                "Perché l'ellisse ha due fuochi",
+                "Perché l'energia totale è negativa nell'ellisse e positiva nell'iperbole",
+                "Perché l'ellisse è più veloce",
+                "Perché la massa cambia"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $U(\\infty)=0$, $E<0$ indica orbita legata (ellisse), $E>0$ indica non legata (iperbole).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "ellisse",
+                "iperbole",
+                "energia",
+                "legame"
+            ]
+        },
+        {
+            "id": "grav_173",
+            "domanda": "Perché, a parità di $r$, il periodo orbitale non dipende dalla massa del satellite?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Periodo orbitale",
+            "opzioni": [
+                "Perché la massa non appare nella forza",
+                "Perché la massa si semplifica nelle equazioni",
+                "Perché $G$ dipende dalla massa",
+                "Perché $r$ dipende dalla massa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le equazioni del moto contengono la massa del satellite in entrambi i membri e si semplifica.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "periodo",
+                "massa",
+                "semplifica",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_174",
+            "domanda": "Quale fattore aumenta l'intensità del campo gravitazionale in un punto?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Dipendenze",
+            "opzioni": [
+                "Aumentare la distanza",
+                "Aumentare la massa del corpo centrale",
+                "Diminuire $G$",
+                "Aumentare il periodo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il campo vale $g = GM/r^2$: aumenta con la massa del corpo centrale.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "g",
+                "massa",
+                "dipendenza",
+                "campo"
+            ]
+        },
+        {
+            "id": "grav_175",
+            "domanda": "Qual è il ruolo della gravità nel moto dei pianeti secondo Newton?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Newton e Keplero",
+            "opzioni": [
+                "Fornisce la forza centripeta per le orbite",
+                "Rende i pianeti fermi",
+                "Spinge i pianeti verso l'esterno",
+                "Elimina la necessità di velocità"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La gravità fornisce l'accelerazione centripeta che curva la traiettoria dei pianeti.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "newton",
+                "pianeti",
+                "centripeta",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_176",
+            "domanda": "Perché un'orbita ellittica non richiede una forza tangenziale continua?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Forze centrali",
+            "opzioni": [
+                "Perché la forza è costante",
+                "Perché la forza è sempre radiale",
+                "Perché la massa cambia",
+                "Perché la velocità è zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La gravità agisce radialmente; la variazione di velocità tangenziale deriva dalla conservazione dell'energia e del momento angolare.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza radiale",
+                "ellisse",
+                "gravità",
+                "tangenziale"
+            ]
+        },
+        {
+            "id": "grav_177",
+            "domanda": "Perché il campo gravitazionale è un vettore?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Vettori",
+            "opzioni": [
+                "Perché ha solo modulo",
+                "Perché ha modulo e direzione",
+                "Perché è sempre positivo",
+                "Perché è una costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il campo ha un modulo e una direzione (verso la massa che lo genera), quindi è una grandezza vettoriale.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "vettore",
+                "modulo",
+                "direzione",
+                "campo"
+            ]
+        },
+        {
+            "id": "grav_178",
+            "domanda": "Perché un satellite in orbita circolare ha accelerazione centripeta anche se la velocità ha modulo costante?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Moto circolare",
+            "opzioni": [
+                "Perché la velocità cambia direzione",
+                "Perché la velocità è zero",
+                "Perché la forza è nulla",
+                "Perché il raggio è infinito"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "L'accelerazione è legata alla variazione del vettore velocità: anche con modulo costante, cambia direzione.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "accelerazione",
+                "direzione",
+                "moto circolare",
+                "velocità"
+            ]
+        },
+        {
+            "id": "grav_179",
+            "domanda": "Perché il peso di un corpo è diverso a quote molto elevate?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Dipendenza da r",
+            "opzioni": [
+                "Perché la massa cambia",
+                "Perché $g$ diminuisce con la distanza",
+                "Perché $G$ cambia",
+                "Perché l'aria pesa di più"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il peso dipende da $g$, che diminuisce con la distanza dal centro della Terra.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "peso",
+                "quota",
+                "g",
+                "distanza"
+            ]
+        },
+        {
+            "id": "grav_180",
+            "domanda": "Perché un corpo in orbita ellittica scambia energia potenziale e cinetica?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Scambio energia",
+            "opzioni": [
+                "Perché la gravità è repulsiva",
+                "Perché varia la distanza dal corpo centrale",
+                "Perché la massa cambia",
+                "Perché $G$ dipende dal tempo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "All'aumentare di $r$, $U$ aumenta (meno negativa) e $K$ diminuisce, mantenendo $E$ costante.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia",
+                "potenziale",
+                "cinetica",
+                "ellisse"
+            ]
+        },
+        {
+            "id": "grav_181",
+            "domanda": "Quale caratteristica distingue un campo gravitazionale uniforme da uno centrale?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Campo uniforme",
+            "opzioni": [
+                "In un campo uniforme $g$ cambia direzione",
+                "In un campo uniforme $g$ ha modulo e direzione costanti",
+                "In un campo centrale $g$ è costante",
+                "In un campo centrale $g$ è zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Un campo uniforme ha modulo e direzione costanti, mentre un campo centrale varia con la distanza.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "campo uniforme",
+                "campo centrale",
+                "g",
+                "variazione"
+            ]
+        },
+        {
+            "id": "grav_182",
+            "domanda": "Perché i pianeti più lontani dal Sole hanno periodi di rivoluzione maggiori?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Terza legge",
+            "opzioni": [
+                "Perché il Sole è più leggero",
+                "Perché la distanza media maggiore implica periodo maggiore",
+                "Perché la massa del pianeta aumenta",
+                "Perché l'orbita è circolare"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dalla terza legge di Keplero, $T^2 \\propto a^3$: maggiore $a$ implica maggiore $T$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "keplero",
+                "periodo",
+                "distanza",
+                "pianeti"
+            ]
+        },
+        {
+            "id": "grav_183",
+            "domanda": "Perché un corpo che perde energia in orbita tende a scendere?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Decadimento orbitale",
+            "opzioni": [
+                "Perché la gravità diventa repulsiva",
+                "Perché un'orbita più bassa ha energia totale più negativa",
+                "Perché la massa aumenta",
+                "Perché la velocità diventa zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per orbitare più in basso serve un'energia totale più negativa; perdendo energia, l'orbita si abbassa.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "decadimento",
+                "energia",
+                "orbita",
+                "bassa"
+            ]
+        },
+        {
+            "id": "grav_184",
+            "domanda": "Quale affermazione descrive meglio il concetto di velocità di fuga?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Velocità di fuga",
+            "opzioni": [
+                "La velocità massima possibile",
+                "La velocità minima per raggiungere l'infinito con $v \to 0$",
+                "La velocità necessaria per orbitare",
+                "La velocità del suono"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "È la velocità minima per arrivare all'infinito con velocità residua nulla (senza attriti).",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "velocità di fuga",
+                "minima",
+                "infinito",
+                "energia"
+            ]
+        },
+        {
+            "id": "grav_185",
+            "domanda": "Perché l'energia potenziale cresce (diventa meno negativa) quando ci si allontana da una massa?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia potenziale",
+            "opzioni": [
+                "Perché la forza aumenta",
+                "Perché la forza diminuisce e serve meno lavoro per separare le masse",
+                "Perché la massa diminuisce",
+                "Perché $G$ aumenta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Allontanandosi diminuisce l'intensità della forza; il sistema è meno legato e $U$ si avvicina a 0.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "potenziale",
+                "distanza",
+                "legame",
+                "forza"
+            ]
+        },
+        {
+            "id": "grav_186",
+            "domanda": "Quale affermazione è corretta sul lavoro della forza di gravità lungo un percorso chiuso?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Forza conservativa",
+            "opzioni": [
+                "È sempre positivo",
+                "È zero",
+                "È sempre negativo",
+                "Dipende dalla velocità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La gravità è conservativa: il lavoro lungo un percorso chiuso è nullo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lavoro",
+                "percorso chiuso",
+                "conservativa",
+                "gravità"
+            ]
+        },
+        {
+            "id": "grav_187",
+            "domanda": "Perché la velocità orbitale dipende solo dal corpo centrale e dal raggio?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Derivazione v",
+            "opzioni": [
+                "Perché il satellite non ha massa",
+                "Perché la massa del satellite si semplifica nelle equazioni",
+                "Perché $G$ dipende dalla massa del satellite",
+                "Perché $r$ dipende dal satellite"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Uguagliando $GMm/r^2$ e $mv^2/r$, la massa del satellite si semplifica.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "velocità orbitale",
+                "massa",
+                "semplifica",
+                "equazioni"
+            ]
+        },
+        {
+            "id": "grav_188",
+            "domanda": "Quale affermazione è vera sul potenziale gravitazionale vicino a una massa?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Potenziale",
+            "opzioni": [
+                "È positivo e cresce con $r$",
+                "È negativo e aumenta verso 0 all'aumentare di $r$",
+                "È costante",
+                "È zero per ogni $r$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $U(\\infty)=0$, il potenziale è negativo e tende a 0 quando $r$ aumenta.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "potenziale",
+                "negativo",
+                "-1/r",
+                "infinito"
+            ]
+        },
+        {
+            "id": "grav_189",
+            "domanda": "Perché l'energia meccanica in orbita circolare è metà del potenziale (in modulo)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Teorema del viriale",
+            "opzioni": [
+                "Perché $K = |U|$",
+                "Perché $K = |U|/2$",
+                "Perché $U = 0$",
+                "Perché $K = 0$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In orbita circolare $K = GMm/(2r)$ e $|U| = GMm/r$, quindi $K = |U|/2$.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "viriale",
+                "energia",
+                "orbita",
+                "rapporto"
+            ]
+        },
+        {
+            "id": "grav_190",
+            "domanda": "Perché una forza centrale non può cambiare il momento angolare?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Momento angolare",
+            "opzioni": [
+                "Perché il raggio è nullo",
+                "Perché la forza è parallela al raggio",
+                "Perché la forza è nulla",
+                "Perché la massa è zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il momento torcente $\tau = r \times F$ è nullo se $F$ è parallela a $r$.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "momento angolare",
+                "forza centrale",
+                "torcente",
+                "r x F"
+            ]
+        },
+        {
+            "id": "grav_191",
+            "domanda": "Quale affermazione descrive meglio il peso reale di un corpo?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Peso e massa",
+            "opzioni": [
+                "È la reazione del suolo",
+                "È la forza gravitazionale $P = m g$",
+                "È la massa del corpo",
+                "È sempre uguale a zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il peso reale è la forza con cui la gravità agisce sul corpo: $P = m g$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "peso",
+                "forza",
+                "m g",
+                "gravità"
+            ]
+        },
+        {
+            "id": "grav_192",
+            "domanda": "Perché il peso apparente può essere diverso dal peso reale?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Peso apparente",
+            "opzioni": [
+                "Perché la massa cambia",
+                "Perché dipende dalla reazione del vincolo",
+                "Perché $G$ cambia",
+                "Perché $g$ è costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il peso apparente è la forza di reazione del vincolo, che può variare con l'accelerazione.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "peso apparente",
+                "vincolo",
+                "reazione",
+                "accelerazione"
+            ]
+        },
+        {
+            "id": "grav_193",
+            "domanda": "Perché la gravità può essere considerata una forza di lungo raggio?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Caratteristiche",
+            "opzioni": [
+                "Perché cresce con $r$",
+                "Perché non si annulla mai a distanza finita",
+                "Perché dipende dalla velocità",
+                "Perché è repulsiva"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La gravità diminuisce con $r$ ma non si annulla mai completamente: è una forza a lungo raggio.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lungo raggio",
+                "forza",
+                "distanza",
+                "gravità"
+            ]
+        },
+        {
+            "id": "grav_194",
+            "domanda": "Perché si parla di \"microgravità\" in orbita e non di assenza di gravità?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Microgravità",
+            "opzioni": [
+                "Perché $g$ è grande",
+                "Perché $g$ è ridotta ma non nulla",
+                "Perché $G$ è nullo",
+                "Perché la massa è zero"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "A quota orbitale $g$ è solo un po' più piccola; l'assenza di peso è dovuta alla caduta libera.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "microgravità",
+                "orbita",
+                "g",
+                "caduta libera"
+            ]
+        },
+        {
+            "id": "grav_195",
+            "domanda": "Perché un campo gravitazionale non può essere schermato?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Caratteristiche",
+            "opzioni": [
+                "Perché non esistono masse negative note",
+                "Perché il campo è magnetico",
+                "Perché $G$ è nullo",
+                "Perché dipende dalla velocità"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Non esistono masse negative note che possano annullare il campo, quindi la gravità non è schermabile.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "schermatura",
+                "massa negativa",
+                "campo",
+                "gravità"
+            ]
+        },
+        {
+            "id": "grav_196",
+            "domanda": "Quale affermazione descrive meglio la relazione tra forza gravitazionale e distanza?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Legge di Newton",
+            "opzioni": [
+                "Proporzionale a $r$",
+                "Proporzionale a $1/r^2$",
+                "Indipendente da $r$",
+                "Proporzionale a $r^2$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La legge di Newton dà $F = G m_1 m_2 / r^2$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "newton",
+                "1/r^2",
+                "distanza",
+                "forza"
+            ]
+        },
+        {
+            "id": "grav_197",
+            "domanda": "Perché la velocità di un pianeta non è costante lungo un'orbita ellittica?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Seconda legge",
+            "opzioni": [
+                "Perché $g$ è costante",
+                "Perché l'energia potenziale cambia con $r$",
+                "Perché la massa cambia",
+                "Perché la distanza è costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Variando $r$, varia $U$ e quindi $K$ per conservare l'energia totale.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "orbita ellittica",
+                "velocità",
+                "energia",
+                "r"
+            ]
+        },
+        {
+            "id": "grav_198",
+            "domanda": "Perché il lavoro della gravità tra due quote dipende solo dalla differenza di quota?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Forza conservativa",
+            "opzioni": [
+                "Perché la gravità è repulsiva",
+                "Perché la gravità è una forza conservativa",
+                "Perché la massa cambia",
+                "Perché $g$ è nullo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Essendo conservativa, la gravità fa un lavoro che dipende solo dagli stati iniziale e finale.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lavoro",
+                "conservativa",
+                "quota",
+                "gravità"
+            ]
+        },
+        {
+            "id": "grav_199",
+            "domanda": "Perché le orbite dei pianeti giacciono quasi su uno stesso piano?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Sistema solare",
+            "opzioni": [
+                "Perché la gravità è repulsiva",
+                "Perché il sistema si è formato da un disco protoplanetario",
+                "Perché $G$ è negativo",
+                "Perché le orbite sono casuali"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il Sistema Solare si è formato da un disco di gas e polveri che ha imposto un piano medio alle orbite.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "piano orbitale",
+                "disco",
+                "sistema solare",
+                "formazione"
+            ]
+        },
+        {
+            "id": "grav_200",
+            "domanda": "Quale affermazione è corretta sul rapporto tra energia cinetica e potenziale in orbita circolare?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia orbita circolare",
+            "opzioni": [
+                "$K = |U|$",
+                "$K = |U|/2$",
+                "$K = 2|U|$",
+                "$K = 0$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per orbita circolare vale $K = |U|/2$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "K",
+                "U",
+                "orbita circolare",
+                "rapporto"
+            ]
+        },
+        {
+            "id": "grav_201",
+            "domanda": "Perché un campo gravitazionale è descritto come conservativo?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Forza conservativa",
+            "opzioni": [
+                "Perché non dipende dal tempo",
+                "Perché il lavoro non dipende dal percorso",
+                "Perché è sempre costante",
+                "Perché non dipende dalla distanza"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In un campo conservativo il lavoro compiuto tra due punti è indipendente dal percorso seguito.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "conservativo",
+                "lavoro",
+                "percorso",
+                "campo"
+            ]
+        },
+        {
+            "id": "grav_202",
+            "domanda": "Quale affermazione è corretta sulla forza gravitazionale tra Terra e Luna?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Azione-reazione",
+            "opzioni": [
+                "La Terra attrae più della Luna",
+                "Sono uguali in modulo e opposte",
+                "La Luna non attrae la Terra",
+                "Dipende dalla velocità"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per la terza legge di Newton le forze sono uguali in modulo e opposte.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "terra",
+                "luna",
+                "azione-reazione",
+                "forza"
+            ]
+        },
+        {
+            "id": "grav_203",
+            "domanda": "Perché la gravità può essere descritta come campo scalare di potenziale?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Potenziale",
+            "opzioni": [
+                "Perché il campo è sempre costante",
+                "Perché il campo è gradiente di un potenziale scalare",
+                "Perché il potenziale è vettoriale",
+                "Perché $G$ è variabile"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In gravità newtoniana, il campo $g$ deriva dal gradiente del potenziale $U$.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "potenziale",
+                "gradiente",
+                "campo",
+                "newton"
+            ]
+        },
+        {
+            "id": "grav_204",
+            "domanda": "Perché la velocità orbitale dipende dal raggio come $v \\propto 1/\\sqrt{r}$?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Velocità vs r",
+            "opzioni": [
+                "Perché la forza aumenta con $r$",
+                "Perché uguagliando gravità e centripeta si ottiene $v = \\sqrt{GM/r}$",
+                "Perché $G$ dipende da $r$",
+                "Perché la massa diminuisce"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dall'equilibrio $GMm/r^2 = mv^2/r$ si ricava $v = \\sqrt{GM/r}$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "velocità",
+                "1/sqrt(r)",
+                "centripeta",
+                "gravità"
+            ]
+        },
+        {
+            "id": "grav_205",
+            "domanda": "Perché il campo gravitazionale dentro un guscio sferico vuoto è nullo?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Teorema del guscio",
+            "opzioni": [
+                "Perché non c'è massa",
+                "Perché le forze si cancellano per simmetria",
+                "Perché $G$ è zero",
+                "Perché il raggio è infinito"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dentro un guscio sferico, le attrazioni in direzioni opposte si compensano esattamente.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "guscio",
+                "simmetria",
+                "campo nullo",
+                "sfera"
+            ]
+        },
+        {
+            "id": "grav_206",
+            "domanda": "Perché l'energia totale in un'orbita ellittica dipende solo dal semiasse maggiore $a$?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia e semiasse",
+            "opzioni": [
+                "Perché l'eccentricità non conta",
+                "Perché per un potenziale $1/r$ l'energia dipende solo da $a$",
+                "Perché la massa è zero",
+                "Perché il periodo è costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per orbite kepleriane vale $E = -GMm/(2a)$, indipendente da $e$.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "energia",
+                "semiasse",
+                "ellisse",
+                "keplero"
+            ]
+        },
+        {
+            "id": "grav_207",
+            "domanda": "Perché il periodo orbitale cresce più che linearmente con $r$?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Terza legge",
+            "opzioni": [
+                "Perché $T \\propto r$",
+                "Perché $T \\propto r^{3/2}$",
+                "Perché $T$ è costante",
+                "Perché $T \\propto 1/r$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La terza legge di Keplero implica $T \\propto r^{3/2}$, quindi crescita più che lineare.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "keplero",
+                "periodo",
+                "r^{3/2}",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_208",
+            "domanda": "Perché un'orbita circolare è un caso particolare di orbita ellittica?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Orbite",
+            "opzioni": [
+                "Perché ha eccentricità $e = 0$",
+                "Perché ha due fuochi",
+                "Perché ha energia positiva",
+                "Perché ha velocità nulla"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Un'orbita circolare è un'ellisse con eccentricità zero, con i fuochi coincidenti.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "ellisse",
+                "circolare",
+                "eccentricità",
+                "e=0"
+            ]
+        },
+        {
+            "id": "grav_209",
+            "domanda": "Perché la forza di gravità non può fare lavoro netto in un'orbita chiusa completa?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Forza conservativa",
+            "opzioni": [
+                "Perché è tangenziale",
+                "Perché è conservativa",
+                "Perché è repulsiva",
+                "Perché è costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro su un ciclo chiuso è nullo per le forze conservative, quindi l'energia totale si conserva.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lavoro",
+                "orbita chiusa",
+                "conservativa",
+                "energia"
+            ]
+        },
+        {
+            "id": "grav_210",
+            "domanda": "Perché una traiettoria parabolica corrisponde a energia totale zero?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia orbitale",
+            "opzioni": [
+                "Perché la massa è nulla",
+                "Perché è il limite tra orbite legate e non legate",
+                "Perché $g$ è nullo",
+                "Perché l'energia è minima"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con $U(\\infty)=0$, $E=0$ è il limite tra orbite legate ($E<0$) e non legate ($E>0$).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "parabola",
+                "energia zero",
+                "limite",
+                "orbite"
+            ]
+        },
+        {
+            "id": "grav_211",
+            "domanda": "Perché $g$ al centro della Terra vale zero (modello sferico uniforme)?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Campo interno sfera",
+            "opzioni": [
+                "Perché la massa è nulla",
+                "Perché le forze si annullano per simmetria",
+                "Perché $G$ è zero",
+                "Perché $r$ è massimo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel centro, per simmetria, le forze gravitazionali provenienti da ogni direzione si cancellano.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "centro terra",
+                "simmetria",
+                "g=0",
+                "sfera"
+            ]
+        },
+        {
+            "id": "grav_212",
+            "domanda": "Perché una massa in orbita ellittica ha velocità minima all'afelio?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Seconda legge",
+            "opzioni": [
+                "Perché l'energia cinetica è massima",
+                "Perché la distanza è massima",
+                "Perché il momento angolare è zero",
+                "Perché la forza è tangenziale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "All'afelio $r$ è massimo: la potenziale è meno negativa e la cinetica è minima.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "afelio",
+                "velocità minima",
+                "energia",
+                "ellisse"
+            ]
+        },
+        {
+            "id": "grav_213",
+            "domanda": "Perché il campo gravitazionale è diretto verso la massa che lo genera?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Direzione del campo",
+            "opzioni": [
+                "Perché la forza è repulsiva",
+                "Perché la gravità è attrattiva",
+                "Perché la massa è negativa",
+                "Perché la velocità è tangenziale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La gravità è una forza attrattiva, quindi il campo è diretto verso la massa sorgente.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "campo",
+                "direzione",
+                "attrattiva",
+                "massa"
+            ]
+        },
+        {
+            "id": "grav_214",
+            "domanda": "Perché il momento angolare si conserva in un'orbita kepleriana?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Momento angolare",
+            "opzioni": [
+                "Perché la forza è centrale",
+                "Perché l'energia è costante",
+                "Perché la massa varia",
+                "Perché la distanza è costante"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Una forza centrale produce momento torcente nullo, quindi il momento angolare resta costante.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "momento angolare",
+                "forza centrale",
+                "keplero",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "grav_215",
+            "domanda": "Quale condizione caratterizza un'orbita circolare stabile?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Condizione di circolarità",
+            "opzioni": [
+                "Velocità qualunque",
+                "Velocità tangenziale con valore $v = \\sqrt{GM/r}$",
+                "Velocità radiale verso l'esterno",
+                "Energia positiva"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Serve la velocità circolare corretta e direzione tangenziale per mantenere $r$ costante.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "orbita circolare",
+                "velocità",
+                "stabile",
+                "sqrt(GM/r)"
+            ]
+        },
+        {
+            "id": "grav_216",
+            "domanda": "Perché il campo gravitazionale non dipende dalla massa di prova?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Campo e massa",
+            "opzioni": [
+                "Perché la massa è sempre zero",
+                "Perché $g = F/m$ e $F$ è proporzionale a $m$",
+                "Perché $G$ dipende da $m$",
+                "Perché la gravità è repulsiva"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La forza gravitazionale è proporzionale a $m$, quindi in $g = F/m$ la massa si semplifica.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "campo",
+                "massa di prova",
+                "semplifica",
+                "g"
+            ]
+        },
+        {
+            "id": "grav_217",
+            "domanda": "Perché un'orbita geostazionaria deve avere periodo uguale a quello di rotazione terrestre?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Geostazionaria",
+            "opzioni": [
+                "Perché il satellite è fermo nello spazio",
+                "Perché deve restare sopra lo stesso punto della Terra",
+                "Perché $G$ dipende dalla rotazione",
+                "Perché la massa del satellite lo impone"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Solo con lo stesso periodo di rotazione della Terra il satellite resta sopra lo stesso meridiano.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "geostazionario",
+                "periodo",
+                "terra",
+                "rotazione"
+            ]
+        },
+        {
+            "id": "grav_218",
+            "domanda": "Quale affermazione è corretta sul lavoro necessario per portare una massa da $r$ a infinito?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia potenziale",
+            "opzioni": [
+                "È negativo",
+                "È pari al modulo di $U$",
+                "È sempre zero",
+                "È pari a $-U$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro esterno richiesto è pari a $|U|$ perché $U$ è negativo con zero all'infinito.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lavoro",
+                "infinito",
+                "U",
+                "energia"
+            ]
+        },
+        {
+            "id": "grav_219",
+            "domanda": "Perché il periodo di rivoluzione dipende dal semiasse maggiore e non dall'eccentricità?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Terza legge",
+            "opzioni": [
+                "Perché l'eccentricità è sempre zero",
+                "Perché per un dato $a$ l'energia totale è fissata",
+                "Perché la massa cambia",
+                "Perché l'orbita è circolare"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In un potenziale $1/r$, il periodo dipende dall'energia che è fissata da $a$.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "periodo",
+                "semiasse",
+                "eccentricità",
+                "energia"
+            ]
+        },
+        {
+            "id": "grav_220",
+            "domanda": "Perché un satellite con velocità maggiore di quella circolare in un punto va su un'orbita ellittica più grande?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Manovre orbitali",
+            "opzioni": [
+                "Perché la gravità aumenta",
+                "Perché aumenta l'energia totale",
+                "Perché la massa diminuisce",
+                "Perché il periodo diminuisce"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Un incremento di velocità aumenta l'energia totale e porta a un'ellisse con semiasse maggiore più grande.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "manovre",
+                "energia",
+                "ellisse",
+                "velocità"
+            ]
+        },
+        {
+            "id": "grav_221",
+            "domanda": "Quale fattore determina principalmente l'intensità del campo gravitazionale in superficie di un pianeta?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "g in superficie",
+            "opzioni": [
+                "Solo il raggio",
+                "Il rapporto $M/R^2$",
+                "Solo la densità",
+                "Solo la temperatura"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In superficie $g = GM/R^2$, quindi conta il rapporto tra massa e raggio al quadrato.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "g",
+                "M/R^2",
+                "superficie",
+                "pianeta"
+            ]
+        },
+        {
+            "id": "grav_222",
+            "domanda": "Perché una forza $1/r^2$ produce un periodo orbitale che cresce con la distanza?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Terza legge",
+            "opzioni": [
+                "Perché la forza aumenta con $r$",
+                "Perché la forza diminuisce e l'accelerazione centripeta è minore",
+                "Perché la massa aumenta",
+                "Perché l'orbita è retta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "A distanze maggiori la gravità è più debole, quindi la velocità orbitale è minore e il periodo aumenta.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "1/r^2",
+                "periodo",
+                "distanza",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_223",
+            "domanda": "Perché il campo gravitazionale generato da più masse si ottiene con la somma vettoriale?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Sovrapposizione",
+            "opzioni": [
+                "Perché le masse si annullano",
+                "Perché vale il principio di sovrapposizione",
+                "Perché $G$ dipende dalla massa totale",
+                "Perché il campo è scalare"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel modello classico, i campi gravitazionali si sommano vettorialmente (principio di sovrapposizione).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "sovrapposizione",
+                "somma vettoriale",
+                "campi",
+                "gravità"
+            ]
+        },
+        {
+            "id": "grav_224",
+            "domanda": "Perché l'energia potenziale gravitazionale è una funzione della distanza e non della velocità?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia potenziale",
+            "opzioni": [
+                "Perché la forza dipende solo dalla posizione",
+                "Perché la forza dipende dalla velocità",
+                "Perché $G$ dipende dal tempo",
+                "Perché la massa cambia"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La gravità è una forza conservativa e dipende dalla posizione; perciò $U$ dipende solo da $r$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "potenziale",
+                "posizione",
+                "forza",
+                "conservativa"
+            ]
+        },
+        {
+            "id": "grav_225",
+            "domanda": "Perché l'orbita più energetica tra due orbite ellittiche è quella con semiasse maggiore più grande?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Energia e semiasse",
+            "opzioni": [
+                "Perché $E = -GMm/(2a)$ cresce con $a$",
+                "Perché $E$ è indipendente da $a$",
+                "Perché $E$ è sempre zero",
+                "Perché $E$ diminuisce con $a$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "$E = -GMm/(2a)$: aumentando $a$, $E$ diventa meno negativa (più alta).",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "energia",
+                "semiasse",
+                "-GMm/2a",
+                "orbita"
+            ]
+        },
+        {
+            "id": "grav_226",
+            "domanda": "Perché la costante $G$ è necessaria nella legge di Newton?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Costante di proporzionalità",
+            "opzioni": [
+                "Perché rende la forza indipendente dalla massa",
+                "Perché fissa l'unità di misura della forza gravitazionale",
+                "Perché annulla la distanza",
+                "Perché rende $F$ costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "$G$ è la costante di proporzionalità che rende corretta la relazione numerica tra masse, distanza e forza.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "G",
+                "costante",
+                "proporzionalità",
+                "forza"
+            ]
+        },
+        {
+            "id": "grav_227",
+            "domanda": "Quale affermazione spiega perché il moto orbitale è possibile senza motori?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Concetto di orbita",
+            "opzioni": [
+                "Perché non c'è gravità",
+                "Perché l'inerzia e la gravità si bilanciano in una traiettoria curva",
+                "Perché la velocità è zero",
+                "Perché la massa è infinita"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'inerzia tende a mantenere il moto rettilineo, la gravità curva la traiettoria: il risultato è l'orbita.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "orbita",
+                "inerzia",
+                "gravità",
+                "equilibrio"
+            ]
+        },
+        {
+            "id": "grav_228",
+            "domanda": "Perché l'energia cinetica è massima al perielio in un'orbita ellittica?",
+            "categoria": "Gravitazione",
+            "sottocategoria": "Cinetica lungo orbita",
+            "opzioni": [
+                "Perché la distanza è minima e il potenziale è più negativo",
+                "Perché la massa aumenta",
+                "Perché $g$ è costante",
+                "Perché la distanza è massima"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Al perielio $r$ è minimo: $U$ è più negativa, quindi $K$ è massima per conservare l'energia totale.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "perielio",
+                "energia cinetica",
+                "potenziale",
+                "ellisse"
+            ]
         }
     ]
 }

@@ -2164,6 +2164,796 @@
         "quantità di moto",
         "decadimento"
       ]
+    },
+    {
+      "id": "nuc_107",
+      "domanda": "Perché per nuclei pesanti la stabilità richiede in genere $N > Z$?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Stabilità nucleare",
+      "opzioni": [
+        "Per ridurre la repulsione coulombiana tra protoni mantenendo efficace la forza forte",
+        "Perché i neutroni hanno carica positiva",
+        "Perché gli elettroni aumentano il numero di neutroni",
+        "Perché la gravità domina nel nucleo"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nei nuclei pesanti servono più neutroni per compensare la repulsione tra protoni e mantenere la coesione nucleare.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "N/Z",
+        "stabilità",
+        "repulsione",
+        "protoni"
+      ]
+    },
+    {
+      "id": "nuc_108",
+      "domanda": "Perché lo spettro energetico degli elettroni nel decadimento $\\beta$ è continuo?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Perché i livelli energetici atomici sono continui",
+        "Perché l’energia si ripartisce anche con un neutrino/antineutrino",
+        "Perché il nucleo figlio non ha massa",
+        "Perché il decadimento $\\beta$ emette sempre due elettroni"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel decadimento $\\beta$ parte dell’energia va al neutrino (o antineutrino), quindi l’elettrone può avere energie diverse.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "beta",
+        "spettro continuo",
+        "neutrino",
+        "energia"
+      ]
+    },
+    {
+      "id": "nuc_109",
+      "domanda": "Che cosa sono gli isotoni?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Isotopi e nuclidi",
+      "opzioni": [
+        "Nuclei con stesso $Z$ e diverso $A$",
+        "Nuclei con stesso numero di neutroni $N$",
+        "Nuclei con stesso numero di massa $A$",
+        "Atomi con stesso numero di elettroni"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Gli isotoni sono nuclei con uguale numero di neutroni $N$ ma diverso numero atomico $Z$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isotoni",
+        "neutroni",
+        "N",
+        "nuclidi"
+      ]
+    },
+    {
+      "id": "nuc_110",
+      "domanda": "Perché un moderatore è più efficace se formato da nuclei leggeri (es. H o D)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Reattori nucleari",
+      "opzioni": [
+        "Perché assorbe tutti i neutroni",
+        "Perché trasferisce energia in urti elastici in modo efficiente",
+        "Perché aumenta la sezione d’urto di fissione per neutroni veloci",
+        "Perché rende i neutroni carichi"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con nuclei leggeri l’urto elastico è più efficace nel rallentare i neutroni, favorendo la fissione termica.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moderatore",
+        "neutroni",
+        "urti elastici",
+        "reattore"
+      ]
+    },
+    {
+      "id": "nuc_111",
+      "domanda": "Perché la radiazione $\\gamma$ è più penetrante di $\\alpha$ e $\\beta$?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radiazioni ionizzanti",
+      "opzioni": [
+        "Perché è composta da particelle cariche pesanti",
+        "Perché è elettricamente neutra e interagisce meno con la materia",
+        "Perché ha massa maggiore dei protoni",
+        "Perché viene bloccata dalla carta"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "I fotoni $\\gamma$ non hanno carica e interagiscono meno spesso con la materia, quindi sono più penetranti.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "gamma",
+        "penetranza",
+        "interazione",
+        "materia"
+      ]
+    },
+    {
+      "id": "nuc_112",
+      "domanda": "Perché la fusione di nuclei leggeri può liberare energia?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energia di legame",
+      "opzioni": [
+        "Perché i prodotti hanno energia di legame per nucleone maggiore",
+        "Perché i prodotti hanno massa maggiore dei reagenti",
+        "Perché la forza forte diminuisce con $A$",
+        "Perché l’energia di legame per nucleone è minima per nuclei leggeri"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La fusione sposta verso nuclei con maggiore energia di legame per nucleone, liberando energia.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "fusione",
+        "energia di legame",
+        "nucleone",
+        "rilascio"
+      ]
+    },
+    {
+      "id": "nuc_113",
+      "domanda": "Che cosa significa che la forza nucleare forte è a corto raggio e satura?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Forze nucleari",
+      "opzioni": [
+        "Ogni nucleone interagisce soprattutto con i vicini a breve distanza",
+        "La forza cresce all’infinito con la distanza",
+        "La forza agisce solo tra protoni",
+        "La forza è uguale alla gravità"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La forza forte agisce solo a distanze molto piccole e non aumenta all’infinito: ogni nucleone interagisce principalmente con pochi vicini.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "forza forte",
+        "corto raggio",
+        "saturazione",
+        "nucleoni"
+      ]
+    },
+    {
+      "id": "nuc_114",
+      "domanda": "Perché i nuclei con numeri magici di protoni o neutroni sono più stabili?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Modelli nucleari",
+      "opzioni": [
+        "Perché hanno gusci nucleari chiusi",
+        "Perché hanno sempre $Z = N$",
+        "Perché non contengono neutroni",
+        "Perché emettono meno fotoni $\\gamma$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "I numeri magici corrispondono a gusci nucleari completi, che rendono il nucleo più stabile.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "numeri magici",
+        "gusci",
+        "stabilità",
+        "nucleo"
+      ]
+    },
+    {
+      "id": "nuc_115",
+      "domanda": "Che cosa sono gli isobari?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Isotopi e nuclidi",
+      "opzioni": [
+        "Nuclei con stesso numero di massa $A$",
+        "Nuclei con stesso numero atomico $Z$",
+        "Nuclei con stesso numero di neutroni $N$",
+        "Atomi con stesso numero di elettroni"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Gli isobari hanno lo stesso numero di massa $A$ ma diverso numero atomico $Z$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isobari",
+        "A",
+        "Z",
+        "nuclidi"
+      ]
+    },
+    {
+      "id": "nuc_116",
+      "domanda": "Perché spesso dopo un decadimento $\\alpha$ o $\\beta$ segue un’emissione $\\gamma$?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Perché il nucleo figlio è in uno stato eccitato e si de-eccita",
+        "Perché il nucleo figlio perde massa chimica",
+        "Perché i neutroni diventano fotoni",
+        "Perché $\\gamma$ aumenta $A$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Dopo $\\alpha$ o $\\beta$ il nucleo figlio può essere eccitato e si de-eccita emettendo un fotone $\\gamma$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "gamma",
+        "de-eccitazione",
+        "decadimento",
+        "stati"
+      ]
+    },
+    {
+      "id": "nuc_117",
+      "domanda": "Che cosa accade a $Z$ e $A$ nella cattura elettronica (EC)?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "$Z$ diminuisce di 1 e $A$ resta uguale",
+        "$Z$ aumenta di 1 e $A$ resta uguale",
+        "$Z$ diminuisce di 2 e $A$ diminuisce di 4",
+        "$Z$ resta uguale e $A$ diminuisce di 1"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nella cattura elettronica un protone diventa neutrone: $Z$ diminuisce di 1 e $A$ resta invariato.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "cattura elettronica",
+        "Z",
+        "A",
+        "decadimento"
+      ]
+    },
+    {
+      "id": "nuc_118",
+      "domanda": "Perché la fissione di un nucleo pesante emette tipicamente neutroni?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fissione",
+      "opzioni": [
+        "Perché i frammenti sono in genere ricchi di neutroni e devono riequilibrarsi",
+        "Perché i protoni si trasformano sempre in neutroni",
+        "Perché i neutroni hanno carica positiva",
+        "Perché i fotoni $\\gamma$ si trasformano in neutroni"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "I frammenti di fissione risultano spesso con eccesso di neutroni e rilasciano neutroni per avvicinarsi alla stabilità.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "fissione",
+        "neutroni",
+        "frammenti",
+        "stabilità"
+      ]
+    },
+    {
+      "id": "nuc_119",
+      "domanda": "Qual è il ruolo principale del refrigerante in un reattore nucleare?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Reattori nucleari",
+      "opzioni": [
+        "Trasferire il calore dal nocciolo all’esterno",
+        "Aumentare il numero di neutroni",
+        "Assorbire tutti i neutroni",
+        "Produrre uranio arricchito"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il refrigerante asporta il calore prodotto nel nocciolo e lo trasferisce ai sistemi di conversione energetica.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "refrigerante",
+        "calore",
+        "reattore",
+        "nocciolo"
+      ]
+    },
+    {
+      "id": "nuc_120",
+      "domanda": "Perché l’uranio-238 non è fissile con neutroni termici?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fissione",
+      "opzioni": [
+        "Perché ha sezione d’urto di fissione molto bassa per neutroni lenti",
+        "Perché non contiene neutroni",
+        "Perché è sempre stabile chimicamente",
+        "Perché i neutroni termici lo caricano positivamente"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L’U-238 può fissionare con neutroni veloci ma ha bassa probabilità di fissione con neutroni termici.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "U-238",
+        "fissione",
+        "neutroni termici",
+        "sezione d'urto"
+      ]
+    },
+    {
+      "id": "nuc_121",
+      "domanda": "Perché le particelle $\\alpha$ hanno un potere ionizzante elevato?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radiazioni ionizzanti",
+      "opzioni": [
+        "Perché sono cariche e massicce, quindi ionizzano intensamente",
+        "Perché sono fotoni senza carica",
+        "Perché non interagiscono con la materia",
+        "Perché viaggiano sempre alla velocità della luce"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Le $\\alpha$ hanno carica doppia e massa elevata, quindi producono molte ionizzazioni lungo il percorso.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "alfa",
+        "ionizzazione",
+        "carica",
+        "massa"
+      ]
+    },
+    {
+      "id": "nuc_122",
+      "domanda": "Perché la schermatura dei raggi $\\gamma$ richiede materiali densi e ad alto Z?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Schermature",
+      "opzioni": [
+        "Perché aumenta la probabilità di interazione dei fotoni $\\gamma$",
+        "Perché rende i fotoni $\\gamma$ carichi",
+        "Perché riduce l’energia della forza forte",
+        "Perché trasforma $\\gamma$ in $\\alpha$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Materiali densi e con alto numero atomico aumentano le interazioni dei fotoni $\\gamma$, riducendo la penetrazione.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "schermatura",
+        "gamma",
+        "materiali densi",
+        "Z"
+      ]
+    },
+    {
+      "id": "nuc_123",
+      "domanda": "Che cosa indica un’elevata energia di legame per nucleone?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energia di legame",
+      "opzioni": [
+        "Maggiore stabilità del nucleo",
+        "Maggiore radioattività",
+        "Maggiore carica elettrica",
+        "Maggiore numero di elettroni"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Più alta energia di legame per nucleone significa nucleo più stabile.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "energia di legame",
+        "stabilità",
+        "nucleone"
+      ]
+    },
+    {
+      "id": "nuc_124",
+      "domanda": "Perché il decadimento radioattivo è quasi indipendente da temperatura e pressione?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radioattività",
+      "opzioni": [
+        "Perché è un processo nucleare interno, non chimico",
+        "Perché dipende solo dall’umidità",
+        "Perché coinvolge solo gli elettroni esterni",
+        "Perché è controllato dalla gravità"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il decadimento è un processo del nucleo e non risente in modo significativo delle condizioni esterne usuali.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "decadimento",
+        "temperatura",
+        "pressione",
+        "nucleo"
+      ]
+    },
+    {
+      "id": "nuc_125",
+      "domanda": "Qual è la differenza principale tra reazioni nucleari e reazioni chimiche?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Reazioni nucleari",
+      "opzioni": [
+        "Coinvolgono il nucleo e liberano energie molto maggiori",
+        "Coinvolgono solo gli elettroni e liberano energie molto maggiori",
+        "Non conservano la carica",
+        "Avvengono solo a basse temperature"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Le reazioni nucleari coinvolgono il nucleo e possono liberare energie molto superiori a quelle chimiche.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "reazioni nucleari",
+        "chimiche",
+        "energia",
+        "nucleo"
+      ]
+    },
+    {
+      "id": "nuc_126",
+      "domanda": "In generale, il decadimento $\\beta^-$ tende a:",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Stabilità nucleare",
+      "opzioni": [
+        "Ridurre l’eccesso di neutroni aumentando $Z$",
+        "Ridurre l’eccesso di protoni aumentando $Z$",
+        "Aumentare $A$ di 1",
+        "Diminuire $A$ di 4"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel $\\beta^-$ un neutrone diventa protone, riducendo l’eccesso di neutroni e aumentando $Z$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "beta meno",
+        "stabilità",
+        "neutroni",
+        "Z"
+      ]
+    },
+    {
+      "id": "nuc_127",
+      "domanda": "Perché nella PET i positroni producono due fotoni $\\gamma$ in direzioni opposte?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Applicazioni",
+      "opzioni": [
+        "Perché avviene annichilazione e si conserva la quantità di moto",
+        "Perché i positroni hanno massa nulla",
+        "Perché il nucleo emette due $\\alpha$",
+        "Perché la temperatura è molto alta"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il positrone annichila con un elettrone producendo due fotoni $\\gamma$ opposti per conservare la quantità di moto.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "PET",
+        "annichilazione",
+        "gamma",
+        "quantità di moto"
+      ]
+    },
+    {
+      "id": "nuc_128",
+      "domanda": "Un radioisotopo con emivita molto lunga ha in genere:",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "Costante di decadimento piccola e attività specifica bassa",
+        "Costante di decadimento grande e attività specifica alta",
+        "Costante di decadimento grande e attività specifica bassa",
+        "Costante di decadimento zero e attività infinita"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Emivita lunga implica $\\lambda$ piccolo e quindi minore attività specifica a parità di nuclei.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "emivita",
+        "lambda",
+        "attività specifica"
+      ]
+    },
+    {
+      "id": "nuc_129",
+      "domanda": "Perché i neutroni lenti aumentano la probabilità di fissione per U-235?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fissione",
+      "opzioni": [
+        "Perché la sezione d’urto di fissione è maggiore a basse energie",
+        "Perché i neutroni lenti hanno carica positiva",
+        "Perché i neutroni lenti aumentano $A$ di 4",
+        "Perché i neutroni lenti non interagiscono"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per nuclei fissili come U-235 la sezione d’urto di fissione cresce per neutroni termici.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "neutroni termici",
+        "fissione",
+        "U-235",
+        "sezione d'urto"
+      ]
+    },
+    {
+      "id": "nuc_130",
+      "domanda": "Perché i prodotti di fissione sono spesso radioattivi?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fissione",
+      "opzioni": [
+        "Perché hanno un eccesso di neutroni rispetto alla stabilità",
+        "Perché sono sempre nuclei stabili",
+        "Perché perdono subito tutti i protoni",
+        "Perché diventano fotoni $\\gamma$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "I frammenti di fissione risultano neutron-rich e decadono per raggiungere la stabilità.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "prodotti di fissione",
+        "radioattività",
+        "neutroni",
+        "stabilità"
+      ]
+    },
+    {
+      "id": "nuc_131",
+      "domanda": "Perché la fusione può avvenire nel Sole nonostante la barriera coulombiana?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Fusione",
+      "opzioni": [
+        "Per l’alta temperatura e l’effetto tunnel quantistico",
+        "Perché i nuclei non hanno carica",
+        "Perché la forza forte agisce a lungo raggio",
+        "Perché il Sole è fatto di metalli pesanti"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Le alte temperature aumentano l’energia cinetica e l’effetto tunnel rende possibile la fusione.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "fusione",
+        "Sole",
+        "tunnel",
+        "barriera"
+      ]
+    },
+    {
+      "id": "nuc_132",
+      "domanda": "Che cosa si intende per radiazione di fondo?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radioprotezione",
+      "opzioni": [
+        "Radiazione naturale presente sempre nell’ambiente",
+        "Radiazione prodotta solo in laboratorio",
+        "Radiazione emessa solo dai reattori",
+        "Radiazione che non è ionizzante"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La radiazione di fondo è la radiazione naturale proveniente da sorgenti terrestri e cosmiche.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "radiazione di fondo",
+        "naturale",
+        "ambiente"
+      ]
+    },
+    {
+      "id": "nuc_133",
+      "domanda": "Che cosa rappresenta la costante di decadimento $\\lambda$?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Legge del decadimento",
+      "opzioni": [
+        "La probabilità di decadimento per unità di tempo",
+        "Il numero di protoni nel nucleo",
+        "Il numero di massa",
+        "La temperatura del campione"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$\\lambda$ misura la probabilità che un nucleo decada in un intervallo di tempo unitario.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "lambda",
+        "probabilità",
+        "decadimento"
+      ]
+    },
+    {
+      "id": "nuc_134",
+      "domanda": "Perché la dose equivalente (Sv) dipende dal tipo di radiazione?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Dosimetria",
+      "opzioni": [
+        "Perché diverse radiazioni causano diversi effetti biologici",
+        "Perché il Sv misura solo l’attività",
+        "Perché il Gy non dipende dalla massa",
+        "Perché le radiazioni non depositano energia"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il Sv applica fattori di peso che tengono conto dell’effetto biologico relativo delle diverse radiazioni.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Sv",
+        "dose equivalente",
+        "biologico",
+        "radiazioni"
+      ]
+    },
+    {
+      "id": "nuc_135",
+      "domanda": "Perché nel decadimento $\\beta$ è necessaria l’emissione di un (anti)neutrino?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Per conservare energia e quantità di moto",
+        "Per aumentare il numero di massa",
+        "Perché i neutroni sono fotoni",
+        "Perché il nucleo non può rinculare"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il (anti)neutrino permette di conservare energia e quantità di moto nei decadimenti $\\beta$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "beta",
+        "neutrino",
+        "conservazione",
+        "energia"
+      ]
+    },
+    {
+      "id": "nuc_136",
+      "domanda": "Che differenza c’è tra radioattività naturale e artificiale?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radioattività",
+      "opzioni": [
+        "La naturale esiste in natura, l’artificiale è prodotta dall’uomo",
+        "La naturale è sempre innocua, l’artificiale sempre pericolosa",
+        "La naturale è solo $\\gamma$, l’artificiale solo $\\alpha$",
+        "Non esiste alcuna differenza"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La radioattività naturale proviene da isotopi presenti in natura, quella artificiale da isotopi prodotti dall’uomo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "radioattività",
+        "naturale",
+        "artificiale"
+      ]
+    },
+    {
+      "id": "nuc_137",
+      "domanda": "Che cosa significa che un reattore è supercritico?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Reattori nucleari",
+      "opzioni": [
+        "Che il fattore di moltiplicazione efficace $k>1$ e la potenza cresce",
+        "Che il fattore $k=1$ e la potenza è costante",
+        "Che il fattore $k<1$ e la potenza diminuisce",
+        "Che non avvengono fissioni"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In condizioni supercritiche $k>1$, quindi il numero di neutroni efficaci cresce e la potenza aumenta.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "supercritico",
+        "k",
+        "reattore",
+        "potenza"
+      ]
+    },
+    {
+      "id": "nuc_138",
+      "domanda": "Perché sia la fusione di nuclei leggeri sia la fissione di nuclei pesanti possono liberare energia?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energia di legame",
+      "opzioni": [
+        "Perché i prodotti hanno energia di legame per nucleone maggiore",
+        "Perché i reagenti sono sempre più stabili",
+        "Perché l’energia di legame è massima per nuclei molto pesanti",
+        "Perché l’energia non si conserva"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Spostarsi verso nuclei con maggiore energia di legame per nucleone libera energia: questo vale per fusione di leggeri e fissione di pesanti.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "energia di legame",
+        "fusione",
+        "fissione",
+        "stabilità"
+      ]
+    },
+    {
+      "id": "nuc_139",
+      "domanda": "Perché un nucleo che emette un fotone $\\gamma$ rincula?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Energetica dei decadimenti",
+      "opzioni": [
+        "Per conservare la quantità di moto",
+        "Perché il fotone ha massa a riposo",
+        "Per aumentare $A$",
+        "Perché i fotoni non trasportano quantità di moto"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il fotone $\\gamma$ trasporta quantità di moto, quindi il nucleo rincula per conservarla.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "rinculo",
+        "gamma",
+        "quantità di moto"
+      ]
+    },
+    {
+      "id": "nuc_140",
+      "domanda": "Qual è la differenza tra decadimento spontaneo e decadimento indotto?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Radioattività",
+      "opzioni": [
+        "Lo spontaneo avviene senza innesco esterno, l’indotto richiede un proiettile incidente",
+        "Lo spontaneo è chimico, l’indotto è nucleare",
+        "Lo spontaneo avviene solo per nuclei stabili",
+        "Non c’è alcuna differenza"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il decadimento spontaneo avviene senza cause esterne, quello indotto richiede una particella incidente.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "spontaneo",
+        "indotto",
+        "decadimento"
+      ]
+    },
+    {
+      "id": "nuc_141",
+      "domanda": "Perché gli isotopi di uno stesso elemento hanno proprietà chimiche molto simili?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Isotopi",
+      "opzioni": [
+        "Perché hanno lo stesso numero di protoni e quindi la stessa configurazione elettronica",
+        "Perché hanno lo stesso numero di neutroni",
+        "Perché hanno lo stesso numero di massa",
+        "Perché non hanno elettroni"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Le proprietà chimiche dipendono dagli elettroni; isotopi hanno lo stesso $Z$ quindi stessa configurazione elettronica.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isotopi",
+        "chimica",
+        "Z",
+        "elettroni"
+      ]
+    },
+    {
+      "id": "nuc_142",
+      "domanda": "Perché in un decadimento $\\beta$ il numero di massa $A$ non cambia?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Perché un nucleone si trasforma in un altro nucleone",
+        "Perché vengono emessi due protoni",
+        "Perché il nucleo perde quattro nucleoni",
+        "Perché $A$ dipende dagli elettroni"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel $\\beta$ un protone diventa neutrone o viceversa, quindi il totale dei nucleoni resta invariato.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "beta",
+        "A",
+        "nucleoni"
+      ]
+    },
+    {
+      "id": "nuc_143",
+      "domanda": "Perché in un decadimento $\\alpha$ il numero di massa diminuisce di 4?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Perché si emette un nucleo di elio-4 con 2 protoni e 2 neutroni",
+        "Perché si emettono quattro elettroni",
+        "Perché il nucleo perde solo neutroni",
+        "Perché si emette un fotone $\\gamma$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La particella $\\alpha$ è un nucleo di elio-4, quindi porta via 4 nucleoni.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "alfa",
+        "A",
+        "elio-4",
+        "nucleoni"
+      ]
+    },
+    {
+      "id": "nuc_144",
+      "domanda": "Perché l’emissione $\\gamma$ non cambia l’elemento chimico?",
+      "categoria": "Fisica Nucleare",
+      "sottocategoria": "Decadimenti radioattivi",
+      "opzioni": [
+        "Perché non altera $Z$ e $A$, emette solo energia",
+        "Perché aumenta $Z$ di 1",
+        "Perché diminuisce $A$ di 4",
+        "Perché trasforma un protone in neutrone"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La $\\gamma$ è una de-eccitazione: non cambia il numero di protoni o di nucleoni.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "gamma",
+        "Z",
+        "A",
+        "de-eccitazione"
+      ]
     }
   ]
 }

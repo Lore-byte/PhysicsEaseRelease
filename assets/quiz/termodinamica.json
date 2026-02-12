@@ -2414,6 +2414,860 @@
         "isoterma",
         "calcolo"
       ]
+    },
+    {
+      "id": "ter_116",
+      "domanda": "Quale delle seguenti affermazioni circa il **primo principio della termodinamica** nella forma $\\Delta U = Q - W$ è corretta?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio",
+      "opzioni": [
+        "L'energia interna dipende sia da $Q$ che da $W$, ma non è una funzione di stato",
+        "Se un gas compie un ciclo chiuso ritornando allo stato iniziale, allora $Q = W$",
+        "Se il gas assorbe calore ma non compie lavoro, la sua energia interna decresce",
+        "Se il gas compie lavoro positivo e assorbe calore positivo, allora necessariamente $\\Delta U > Q$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un ciclo, il sistema ritorna allo stato iniziale, quindi $\\Delta U = 0$. Dal primo principio: $0 = Q - W$, da cui $Q = W$. Le altre affermazioni sono errate: (a) l'energia interna è una funzione di stato; (c) se assorbe calore e non compie lavoro, $\\Delta U = Q > 0$; (d) da $\\Delta U = Q - W$ segue $\\Delta U = Q$ solo se $W = 0$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "primo principio",
+        "ciclo",
+        "Q=W",
+        "stato iniziale",
+        "energia interna"
+      ]
+    },
+    {
+      "id": "ter_117",
+      "domanda": "Un gas ideale subisce una **trasformazione adiabatica**. Quale affermazione è coerente con il primo principio?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio",
+      "opzioni": [
+        "Il gas non scambia calore, quindi la sua energia interna non cambia",
+        "Se il gas si espande, compie lavoro positivo e quindi la sua energia interna diminuisce",
+        "L'energia interna del gas può aumentare solo se il gas assorbe calore",
+        "Se il gas viene compresso, il suo volume diminuisce e la temperatura rimane costante"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In adiabatica $Q = 0$, quindi dal primo principio $\\Delta U = -W$. Se il gas si espande compie lavoro positivo ($W > 0$), quindi $\\Delta U < 0$ e l'energia interna diminuisce, provocando una diminuzione di temperatura. Le altre sono errate: (a) la variazione di energia interna è legata al lavoro; (c) l'energia può cambiare anche per lavoro; (d) in espansione adiabatica la temperatura diminuisce.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "adiabatica",
+        "Q=0",
+        "ΔU=-W",
+        "espansione",
+        "energia interna"
+      ]
+    },
+    {
+      "id": "ter_118",
+      "domanda": "Quale delle seguenti affermazioni spiega correttamente perché, secondo il **secondo principio della termodinamica**, il calore non fluisce spontaneamente da un corpo freddo a uno più caldo?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio",
+      "opzioni": [
+        "Perché violerebbe la conservazione dell'energia",
+        "Perché causerebbe una diminuzione dell'entropia totale dell'universo, contraria al secondo principio",
+        "Perché la forza gravitazionale attira il calore verso il basso",
+        "Perché il primo principio impedisce il trasferimento di calore in quella direzione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il secondo principio stabilisce che l'entropia di un sistema isolato non diminuisce mai. Se il calore fluisse spontaneamente da freddo a caldo, l'entropia totale diminuirebbe, violando il principio. Le altre affermazioni sono scorrette: (a) la conservazione dell'energia non impedisce questo flusso; (c) la gravità non è rilevante; (d) il primo principio non ha questa funzione.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "secondo principio",
+        "entropia",
+        "calore",
+        "spontaneo",
+        "isolato"
+      ]
+    },
+    {
+      "id": "ter_119",
+      "domanda": "Quale fra queste trasformazioni di un gas ideale **aumenta maggiormente l'entropia** per uno stesso assorbimento di calore $Q$?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia",
+      "opzioni": [
+        "Una trasformazione isoterma a 500 K",
+        "Una trasformazione isoterma a 300 K",
+        "Una trasformazione isobara con $\\Delta T = 200$ K",
+        "Una trasformazione isocora"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La variazione di entropia in un processo reversibile è $\\Delta S = Q_{rev}/T$. A parità di calore assorbito, l'entropia aumenta di più quando la temperatura è più bassa. Un'isoterma a 300 K produce un aumento di entropia maggiore rispetto a un'isoterma a 500 K. Le trasformazioni isobara e isocora hanno variazioni di entropia diverse e non sono direttamente confrontabili senza più informazioni.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "entropia",
+        "ΔS=Q/T",
+        "temperatura",
+        "isoterma",
+        "assorbimento calore"
+      ]
+    },
+    {
+      "id": "ter_120",
+      "domanda": "Un gas ideale **biatomico** ha energia interna $U$ che dipende dalla temperatura come $U = f(T)$. Quale relazione è corretta per l'energia interna?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas ideali",
+      "opzioni": [
+        "$U = \\frac{5}{2}nRT$ (5 gradi di libertà: 3 traslazionali + 2 rotazionali)",
+        "$U = \\frac{3}{2}nRT$ (solo gradi di libertà traslazionali)",
+        "$U = \\frac{7}{2}nRT$ (includendo vibrazioni)",
+        "$U = nRT$ (formula semplificata)"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per un gas biatomico a temperatura ambiente, i gradi di libertà sono 5: 3 traslazionali e 2 rotazionali. Dato che ogni grado di libertà contribuisce $\\frac{1}{2}kT$ per particella, l'energia media è $\\frac{5}{2}kT$ per molecola e $\\frac{5}{2}nRT$ per una mole. Le vibrazioni non sono eccitate a temperatura ambiente.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "gas biatomico",
+        "energia interna",
+        "gradi di libertà",
+        "traslazionale",
+        "rotazionale"
+      ]
+    },
+    {
+      "id": "ter_121",
+      "domanda": "Consideriamo due trasformazioni di un gas ideale: (A) **isoterma reversibile** e (B) **espansione libera adiabatica** nel vuoto. Quale affermazione è corretta?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Trasformazioni dei gas",
+      "opzioni": [
+        "In entrambi i processi $\\Delta T = 0$ e $\\Delta S = 0$",
+        "In (A) $\\Delta U = 0$ e $\\Delta S > 0$; in (B) $\\Delta U = 0$ e $\\Delta S > 0$ ma il processo è irreversibile",
+        "In (A) il gas compie lavoro e assorbe calore; in (B) il gas non compie lavoro e non scambia calore",
+        "Entrambi i processi sono reversibili e violano il secondo principio"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nell'isoterma reversibile: $\\Delta U = 0$ (temperatura costante), $Q = W > 0$ (assorbe calore), $\\Delta S = Q/T > 0$ (processo reversibile). Nell'espansione libera nel vuoto: $\\Delta U = 0$ (nessun lavoro, $W = 0$, nessun calore, $Q = 0$), ma $\\Delta S > 0$ (processo irreversibile). Le altre affermazioni sono errate.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "isoterma",
+        "espansione libera",
+        "adiabatica",
+        "irreversibile",
+        "entropia"
+      ]
+    },
+    {
+      "id": "ter_122",
+      "domanda": "Un **ciclo di Carnot** viene eseguito tra due sorgenti a $T_h = 600$ K e $T_c = 300$ K. Se fosse possibile costruire un motore reale con rendimento $\\eta = 60\\%$, cosa succederebbe?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Ciclo di Carnot",
+      "opzioni": [
+        "Sarebbe possibile, perché il rendimento è minore di quello di Carnot",
+        "Sarebbe impossibile, perché supererebbe il rendimento massimo di Carnot ($\\eta_{max} = 50\\%$)",
+        "Sarebbe possibile solo se il ciclo fosse leggermente irreversibile",
+        "Dipende dal calore assorbito dalla sorgente calda"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il rendimento massimo teorico è quello di Carnot: $\\eta_{max} = 1 - T_c/T_h = 1 - 300/600 = 0,50 = 50\\%$. Un motore reale con $\\eta = 60\\%$ supererebbe questo limite, violando il secondo principio, quindi è impossibile. Nessun motore reale può superare il rendimento di Carnot.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Carnot",
+        "rendimento",
+        "secondo principio",
+        "massimo",
+        "violazione"
+      ]
+    },
+    {
+      "id": "ter_123",
+      "domanda": "Quale affermazione spiega correttamente il collegamento tra il **secondo principio della termodinamica** e la **freccia del tempo**?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio",
+      "opzioni": [
+        "L'entropia di un sistema isolato può aumentare, rimanere costante, ma mai diminuire; questo fornisce una direzione privilegiata al tempo",
+        "Il flusso del calore da freddo a caldo definisce il senso in cui il tempo scorre",
+        "Il secondo principio implica che tutti i processi termodinamici sono reversibili",
+        "La freccia del tempo è determinata dall'aumento di temperatura nei sistemi isolati"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il secondo principio stabilisce che l'entropia di un sistema isolato non diminuisce: $\\Delta S \\geq 0$. Questo fornisce una direzione privilegiata al tempo (dal passato al futuro), poiché i processi naturali procedono verso stati di maggior disordine. Le altre affermazioni sono scorrette: (b) è una conseguenza, non la causa; (c) molti processi sono irreversibili; (d) la temperatura può diminuire in sistemi isolati se aumenta l'entropia.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "entropia",
+        "secondo principio",
+        "freccia del tempo",
+        "irreversibilità",
+        "disordine"
+      ]
+    },
+    {
+      "id": "ter_124",
+      "domanda": "In una trasformazione **isocora** di un gas ideale, il **primo principio** diventa $\\Delta U = Q$. Quale è la ragione fisica?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio",
+      "opzioni": [
+        "Perché il volume è costante, quindi non c'è scambio di energia con l'ambiente",
+        "Perché il volume è costante, quindi il gas non compie lavoro ($W = 0$)",
+        "Perché il calore assorbito è interamente convertito in lavoro meccanico",
+        "Perché l'pressione rimane costante nella trasformazione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In una trasformazione isocora il volume è costante: $dV = 0$. Il lavoro è $W = \\int p \\, dV = 0$. Pertanto, dal primo principio $\\Delta U = Q - W = Q - 0 = Q$. Tutto il calore assorbito aumenta l'energia interna (aumentando la temperatura), poiché non c'è lavoro meccanico svolto.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isocora",
+        "primo principio",
+        "W=0",
+        "ΔU=Q",
+        "volume costante"
+      ]
+    },
+    {
+      "id": "ter_125",
+      "domanda": "Quale affermazione descrive correttamente la relazione tra **reversibilità** e **tempo** in una trasformazione termodinamica?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Reversibilità",
+      "opzioni": [
+        "Un processo reversibile può procedere indifferentemente in avanti o all'indietro nel tempo lungo la stessa sequenza di stati di equilibrio",
+        "Un processo irreversibile può tornare indietro nel tempo se inversione della velocità è veloce",
+        "Il tempo non gioca nessun ruolo nella termodinamica, solo la variazione di entropia",
+        "Un processo reversibile è sempre più veloce di uno irreversibile"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Un processo reversibile passa attraverso stati di equilibrio infinitesimalmente vicini. Se inveriamo la direzione della trasformazione lentamente, il sistema ripercorre gli stessi stati; quindi il processo è temporalmente reversibile. Un processo irreversibile non può tornare indietro perché violerebbe il secondo principio (l'entropia non può diminuire). Le altre affermazioni sono scorrette.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "reversibile",
+        "irreversibile",
+        "tempo",
+        "equilibrio",
+        "estados"
+      ]
+    },
+    {
+      "id": "ter_126",
+      "domanda": "Un gas perfetto compie una **espansione isoterma reversibile**. Quale relazione tra calore e lavoro è corretta?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isoterma",
+      "opzioni": [
+        "$Q = W$ e $\\Delta U = 0$",
+        "$Q = W$ e $\\Delta U = Q$",
+        "$Q > W$ perché parte del calore aumenta l'energia interna",
+        "$W > Q$ perché il lavoro compie il gas"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In una trasformazione isoterma la temperatura resta costante, quindi per un gas ideale $\\Delta U = 0$. Dal primo principio: $\\Delta U = Q - W$, quindi $0 = Q - W$, da cui $Q = W$. Il gas assorbe calore dalla sorgente e lo trasforma completamente in lavoro meccanico.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isoterma",
+        "Q=W",
+        "ΔU=0",
+        "calore",
+        "lavoro"
+      ]
+    },
+    {
+      "id": "ter_127",
+      "domanda": "Quale affermazione circa l'**equazione di van der Waals** rispetto all'equazione di un gas ideale è corretta?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas reali",
+      "opzioni": [
+        "Corrregge l'equazione ideale considerando il volume effettivo occupato dalle molecole e le forze attrattive",
+        "È valida solo per gas monoatomici",
+        "Non fa differenza per pressioni basse e temperature alte",
+        "Riduce sempre la pressione misurata rispetto alle predizioni ideali"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'equazione di van der Waals è $\\left(P + \\frac{an^2}{V^2}\\right)(V - nb) = nRT$. Il termine $\\frac{an^2}{V^2}$ corregge per le forze attrattive (riduce la pressione), mentre $nb$ corregge il volume disponibile (aumenta la pressione effettiva). È applicabile a qualunque gas. A basse pressioni e alte temperature il gas si comporta quasi idealmente.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "van der Waals",
+        "gas reale",
+        "forze attrattive",
+        "volume",
+        "correzione"
+      ]
+    },
+    {
+      "id": "ter_128",
+      "domanda": "Secondo la **teoria cinetica dei gas**, quale affermazione spiega perché la pressione aumenta con la temperatura a volume costante?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Teoria cinetica",
+      "opzioni": [
+        "Aumentare la temperatura aggiunge più molecole al gas",
+        "Aumentare la temperatura aumenta la velocità media delle molecole, che urtano più frequentemente e con più forza sulle pareti",
+        "Aumentare la temperatura diminuisce il volume del contenitore",
+        "La pressione non dipende dalla temperatura se il volume è costante"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Secondo la teoria cinetica, la pressione è dovuta agli urti delle molecole contro le pareti. Se la temperatura aumenta, l'energia cinetica media delle molecole $E_k = \\frac{3}{2}kT$ aumenta, quindi le molecole si muovono più velocemente e urtano più frequentemente e intensamente. A volume costante, questo provoca un aumento di pressione, coerente con la legge di Gay-Lussac.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "teoria cinetica",
+        "pressione",
+        "temperatura",
+        "velocità",
+        "molecole"
+      ]
+    },
+    {
+      "id": "ter_129",
+      "domanda": "Un corpo a temperatura $T_h = 400$ K irradia energia secondo la **legge di Stefan-Boltzmann**. Se la temperatura raddoppia a $T = 800$ K, come cambia la potenza irradiata?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Radiazione termica",
+      "opzioni": [
+        "Raddoppia",
+        "Quadruplica",
+        "Aumenta di 16 volte",
+        "Aumenta di 8 volte"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La legge di Stefan-Boltzmann è $P = \\varepsilon \\sigma A T^4$. La potenza dipende dalla quarta potenza della temperatura. Se la temperatura raddoppia: $(2T)^4 = 16T^4$, quindi la potenza aumenta di 16 volte.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Stefan-Boltzmann",
+        "radiazione",
+        "temperatura",
+        "potenza",
+        "T^4"
+      ]
+    },
+    {
+      "id": "ter_130",
+      "domanda": "Quale affermazione circa il **calore specifico** di una sostanza è corretta?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Calore specifico",
+      "opzioni": [
+        "Il calore specifico dipende dalla quantità di materia della sostanza",
+        "Una sostanza con alto calore specifico si scalda rapidamente",
+        "Una sostanza con alto calore specifico richiede molta energia per cambiare di poco la sua temperatura",
+        "Il calore specifico è sempre costante indipendentemente dalla temperatura"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il calore specifico $c$ è definito come $c = Q/(m \\Delta T)$ ed è una proprietà intrinseca della sostanza (non dipende dalla quantità). Un calore specifico alto significa che serve molta energia per aumentare la temperatura di una certa massa. Per esempio, l'acqua ha un calore specifico molto alto (~4186 J/kg·K), quindi si scalda lentamente (non rapidamente come dice l'opzione b).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "calore specifico",
+        "energia",
+        "temperatura",
+        "massa",
+        "proprietà intrinseca"
+      ]
+    },
+    {
+      "id": "ter_131",
+      "domanda": "Un gas ideale monoatomico subisce una **compressione adiabatica**. Quale affermazione è corretta?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Adiabatica",
+      "opzioni": [
+        "La temperatura rimane costante perché non c'è scambio di calore",
+        "La temperatura aumenta perché il lavoro fatto sul gas aumenta l'energia interna",
+        "L'entropia diminuisce perché il gas viene compresso",
+        "Il calore assorbito è positivo per compensare la diminuzione di volume"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In adiabatica $Q = 0$. Durante una compressione, l'ambiente compie lavoro sul gas ($W < 0$ nella convenzione $\\Delta U = Q - W$, risultando in $\\Delta U > 0$). Questo aumento di energia interna corrisponde a un aumento di temperatura. L'entropia rimane costante solo nei processi isoentropici ideali, ma realisticamente aumenta durante compressioni reali.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "adiabatica",
+        "compressione",
+        "temperatura",
+        "energia interna",
+        "lavoro"
+      ]
+    },
+    {
+      "id": "ter_132",
+      "domanda": "Quale è l'andamento della **velocità quadratica media** delle molecole in un gas in funzione della massa molecolare e della temperatura?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Teoria cinetica",
+      "opzioni": [
+        "Aumenta con la massa molecolare e con la temperatura",
+        "Diminuisce con la massa molecolare e aumenta con la radice della temperatura",
+        "Aumenta con la radice della temperatura e diminuisce con la radice della massa molecolare",
+        "È indipendente sia dalla massa che dalla temperatura"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La velocità quadratica media è $v_{rms} = \\sqrt{\\frac{3kT}{m}}$. Aumenta con la radice della temperatura (gas caldi hanno molecole più veloci) e diminuisce con la radice della massa molecolare (molecole pesanti si muovono più lentamente a parità di temperatura).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "velocità quadratica media",
+        "temperatura",
+        "massa molecolare",
+        "teoria cinetica",
+        "radice quadrata"
+      ]
+    },
+    {
+      "id": "ter_133",
+      "domanda": "Un sistema termodinamico subisce una trasformazione dove sia $Q = 0$ (adiabatica) che $W = 0$ (isocora). Quale affermazione è corretta?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Primo principio",
+      "opzioni": [
+        "Sono due condizioni contraddittorie e impossibili",
+        "Entrambe si verificano contemporaneamente in una trasformazione isocora adiabatica, e $\\Delta U = 0$",
+        "Sono processi diversi: uno è isocora, l'altro è adiabatico",
+        "Se si verificano insieme, allora $\\Delta U = 0$ sempre"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una trasformazione **isocora adiabatica** è un processo dove volume e calore sono entrambi nulli: $Q = 0$ (adiabatica) e $W = 0$ (isocora). Dal primo principio $\\Delta U = Q - W = 0 - 0 = 0$. Quindi l'energia interna non cambia e la temperatura rimane costante.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isocora",
+        "adiabatica",
+        "Q=0",
+        "W=0",
+        "ΔU=0"
+      ]
+    },
+    {
+      "id": "ter_134",
+      "domanda": "Due corpi a temperature diverse $T_1 > T_2$ sono posti a contatto termico in un sistema isolato. Quale affermazione descrive correttamente l'evoluzione secondo il **secondo principio**?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio",
+      "opzioni": [
+        "Il calore fluisce da $T_1$ a $T_2$ e l'entropia totale diminuisce",
+        "Il calore fluisce da $T_1$ a $T_2$ e l'entropia totale aumenta",
+        "Il calore fluisce da $T_2$ a $T_1$ per raggiungere l'equilibrio",
+        "Non c'è flusso di calore perché il sistema è isolato"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel sistema isolato il calore fluisce spontaneamente dal corpo caldo ($T_1$) al freddo ($T_2$). Il corpo caldo emette calore $Q$ a $T_1$, diminuendo di entropia $\\Delta S_1 = -Q/T_1$. Il corpo freddo assorbe lo stesso calore a $T_2$, aumentando di entropia $\\Delta S_2 = +Q/T_2$. Poiché $T_1 > T_2$, risulta $Q/T_2 > Q/T_1$, quindi $\\Delta S_{tot} = \\Delta S_1 + \\Delta S_2 > 0$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "secondo principio",
+        "entropia",
+        "calore",
+        "flusso",
+        "equilibrio"
+      ]
+    },
+    {
+      "id": "ter_135",
+      "domanda": "Quale affermazione spiega il significato fisico della **costante di Boltzmann** $k_B \\approx 1.38 \\times 10^{-23}$ J/K?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Teoria cinetica",
+      "opzioni": [
+        "È il rapporto tra energia cinetica media e temperature assoluta per una singola molecola",
+        "È il calore specifico di un gas monoatomico",
+        "È la velocità media delle particelle a 1 K",
+        "È il numero di Avogadro diviso la costante dei gas"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La costante di Boltzmann collega l'energia microscopica (molecole) con la temperatura macroscopica: $E_{k,media} = \\frac{3}{2}k_B T$. È il 'ponte' tra la descrizione microscopica (singola particella) e macroscopica (proprietà collettive). L'opzione (d) è parzialmente corretta matematicamente ($k_B = R/N_A$), ma non spiega il significato fisico.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Boltzmann",
+        "energia cinetica",
+        "molecola",
+        "temperatura",
+        "microscopico"
+      ]
+    },
+    {
+      "id": "ter_136",
+      "domanda": "Un gas ideale passa da uno stato A a uno stato B attraverso due percorsi diversi: (I) diretto irreversibile, (II) reversibile attraverso diversi stati intermedi. Quale affermazione è corretta?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Funzioni di stato",
+      "opzioni": [
+        "$\\Delta U$, $Q$ e $W$ sono uguali nei due percorsi",
+        "$\\Delta U$ è uguale nei due percorsi, ma $Q$ e $W$ possono differire",
+        "Tutti e tre ($\\Delta U$, $Q$, $W$) differiscono nei due percorsi",
+        "$Q$ e $W$ sono uguali, ma $\\Delta U$ differisce"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'energia interna $U$ è una **funzione di stato**, dipende solo dallo stato iniziale e finale, quindi $\\Delta U$ è uguale in entrambi i percorsi. Invece il calore $Q$ e il lavoro $W$ sono **funzioni di percorso**, dipendono da come il sistema passa da A a B. Nel percorso reversibile il lavoro è massimo e il processo è più efficiente, mentre nel percorso irreversibile il lavoro è minore.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "funzione di stato",
+        "ΔU",
+        "energia interna",
+        "percorso",
+        "reversibile"
+      ]
+    },
+    {
+      "id": "ter_137",
+      "domanda": "Quale fra queste affermazioni descrive correttamente il significato della **variazione di entropia** $\\Delta S$ per un processo reversibile?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Entropia",
+      "opzioni": [
+        "Misura la quantità di calore assorbito indipendentemente dalla temperatura",
+        "Misura il grado di disordine microscopico e la disponibilità di energia per compiere lavoro",
+        "È sempre positiva per qualunque processo reversibile",
+        "Dipende solo dal calore totale e non dalla temperatura a cui avviene"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'entropia $\\Delta S = Q_{rev}/T$ combina due aspetti: (1) la quantità di calore scambiato reversibilmente, (2) la temperatura. Un aumento di entropia indica maggior disordine microscopico e minore disponibilità di energia per compiere lavoro. Per processi reversibili $\\Delta S$ può essere positiva, negativa o nulla a seconda dei dettagli.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "entropia",
+        "disordine",
+        "reversibile",
+        "energia disponibile",
+        "ΔS=Q_rev/T"
+      ]
+    },
+    {
+      "id": "ter_138",
+      "domanda": "Un frigorifero trasferisce calore da un ambiente freddo a uno caldo. Quale affermazione spiega come ciò rispetta il **secondo principio**?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio",
+      "opzioni": [
+        "Viola il secondo principio perché il calore fluisce da freddo a caldo",
+        "È consentito perché fornita lavoro esterno che aumenta l'entropia totale dell'universo",
+        "Non richiede lavoro esterno, funziona spontaneamente",
+        "È possibile solo se la differenza di temperatura è molto piccola"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un frigorifero (macchina frigorifera) trasferisce calore da freddo a caldo violando localmente il secondo principio, ma compensa fornendo lavoro esterno. L'entropia del freddo diminuisce meno di quanto aumenta quella del caldo (a causa del lavoro fornito), quindi l'entropia totale dell'universo aumenta, rispettando il secondo principio globalmente.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "frigorifero",
+        "secondo principio",
+        "lavoro esterno",
+        "entropia totale",
+        "universo"
+      ]
+    },
+    {
+      "id": "ter_139",
+      "domanda": "Quale affermazione circa la **conduzione termica** (legge di Fourier) è corretta?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Trasferimento di calore",
+      "opzioni": [
+        "Il flusso di calore è direttamente proporzionale alla differenza di temperatura e all'area della superficie",
+        "Il flusso di calore non dipende dalla conduttività termica del materiale",
+        "Il flusso di calore aumenta linearmente con lo spessore del materiale",
+        "La conduzione avviene nel vuoto così come negli oggetti solidi"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La legge di Fourier è $Q = -kA\\frac{\\Delta T}{\\Delta x}\\Delta t$. Il calore trasferito è proporzionale a: (1) differenza di temperatura $\\Delta T$, (2) area $A$. È inversamente proporzionale allo spessore $\\Delta x$. La costante $k$ è la conduttività termica. La conduzione avviene nei materiali, non nel vuoto.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Fourier",
+        "conduzione",
+        "temperatura",
+        "area",
+        "spessore"
+      ]
+    },
+    {
+      "id": "ter_140",
+      "domanda": "Un gas ideale compie un **ciclo** ritornando allo stato iniziale. Quale affermazione è corretta?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Cicli termodinamici",
+      "opzioni": [
+        "$\\Delta U = 0$, $Q \\neq W$ generalmente, e il ciclo è impossibile",
+        "$\\Delta U = 0$, $Q = W$, e il ciclo è una macchina termica o frigorifera",
+        "$\\Delta U \\neq 0$ sempre perché il gas cambia stato",
+        "$\\Delta U = 0$, ma $Q$ e $W$ sono indipendenti dal valore di $\\Delta U$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un ciclo il sistema ritorna allo stato iniziale. Poiché l'energia interna è una funzione di stato, $\\Delta U = 0$. Dal primo principio: $0 = Q - W$, quindi $Q = W$. Se $Q > 0$ il ciclo è una macchina termica (assorbe calore e produce lavoro); se $Q < 0$ è una frigorifera (riceve lavoro per pompare calore).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ciclo",
+        "ΔU=0",
+        "Q=W",
+        "macchina termica",
+        "frigorifera"
+      ]
+    },
+    {
+      "id": "ter_141",
+      "domanda": "Quale affermazione spiega perché l'**energia interna** di un gas perfetto dipende **solo dalla temperatura** e non dalla pressione o volume?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas ideali",
+      "opzioni": [
+        "Perché le molecole di un gas perfetto non hanno volume proprio e non interagiscono fra loro",
+        "Perché la pressione e il volume cambiano sempre insieme nell'equazione $PV = nRT$",
+        "Perché il lavoro è sempre zero in un gas perfetto",
+        "Perché l'energia interna è una grandezza estensiva"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In un gas perfetto le molecole sono puntiformi (volume nullo) e non interagiscono fra loro. Quindi non hanno energia potenziale. L'unica energia è quella cinetica dovuta al movimento: $E_{cin} = \\frac{f}{2}nRT$, dove $f$ è il numero di gradi di libertà. Questa dipende solo dalla temperatura. La pressione e il volume sono indipendenti dalla stessa energia interna.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "energia interna",
+        "gas perfetto",
+        "temperatura",
+        "molecole",
+        "non interagenti"
+      ]
+    },
+    {
+      "id": "ter_142",
+      "domanda": "Un gas ideale subisce una **trasformazione isobara** (pressione costante). Come si relazionano le variazioni di volume e temperatura?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isobara",
+      "opzioni": [
+        "Il volume e la temperatura non sono correlati in isobara",
+        "Il volume è inversamente proporzionale alla temperatura",
+        "Il volume è direttamente proporzionale alla temperatura (prima legge di Gay-Lussac)",
+        "La temperatura rimane costante perché la pressione è costante"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In isobara dalla equazione $PV = nRT$ con $P = \\text{costante}$ segue $V \\propto T$. Questa è la **prima legge di Gay-Lussac**: a pressione costante, il volume di un gas aumenta linearmente con la temperatura assoluta. Se raddoppia la temperatura, il volume raddoppia.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isobara",
+        "Gay-Lussac",
+        "V∝T",
+        "pressione",
+        "proporzionalità"
+      ]
+    },
+    {
+      "id": "ter_143",
+      "domanda": "Un gas ideale subisce una **trasformazione isocora** (volume costante). Come si relazionano le variazioni di pressione e temperatura?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isocora",
+      "opzioni": [
+        "La pressione rimane costante perché il volume è costante",
+        "La pressione è inversamente proporzionale alla temperatura",
+        "La pressione è direttamente proporzionale alla temperatura assoluta (seconda legge di Gay-Lussac)",
+        "Pressione e temperatura non sono correlate in isocora"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In isocora dalla equazione $PV = nRT$ con $V = \\text{costante}$ segue $P \\propto T$. Questa è la **seconda legge di Gay-Lussac**: a volume costante, la pressione è direttamente proporzionale alla temperatura assoluta. Se si raddoppia la temperatura, la pressione raddoppia.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isocora",
+        "Gay-Lussac",
+        "P∝T",
+        "volume",
+        "proporzionalità"
+      ]
+    },
+    {
+      "id": "ter_144",
+      "domanda": "Una trasformazione **isoterma** di un gas ideale è rappresentata nel diagramma $p$-$V$. Quale curva la rappresenta?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Diagrammi p-V",
+      "opzioni": [
+        "Una retta verticale (volume costante)",
+        "Una retta orizzontale (pressione costante)",
+        "Un'iperbole $pV = \\text{costante}$",
+        "Una parabola"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In isoterma dalla $PV = nRT$ con $T = \\text{costante}$ segue $PV = \\text{costante}$, che è l'equazione di un'iperbole rettangolare nel piano $p$-$V$. Una retta verticale rappresenta isocora (V costante), una orizzontale isobara (P costante).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "isoterma",
+        "diagramma p-V",
+        "iperbole",
+        "PV=costante",
+        "Boyle"
+      ]
+    },
+    {
+      "id": "ter_145",
+      "domanda": "Quale affermazione descrive correttamente la relazione tra **lavoro** e **area** nel diagramma $p$-$V$ per una trasformazione quasi-statica?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Diagrammi p-V",
+      "opzioni": [
+        "Il lavoro è proporzionale all'area solo se la trasformazione è isoterma",
+        "Il lavoro è uguale all'area 'sotto' la curva nel piano $p$-$V$",
+        "L'area non ha significato fisico; il lavoro si calcola solo dall'equazione differenziale",
+        "Il lavoro è uguale all'area 'sopra' la curva, non sotto"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il lavoro compiuto da un gas in una trasformazione quasi-statica è $W = \\int p \\, dV$, che rappresenta l'area sottesa dalla curva nel diagramma $p$-$V$. Se $dV > 0$ (espansione), il gas compie lavoro positivo e l'area è sotto la curva. Se $dV < 0$ (compressione), il gas riceve lavoro e l'area è sempre considerata come il valore assoluto.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lavoro",
+        "diagramma p-V",
+        "area",
+        "integrale",
+        "quasi-statico"
+      ]
+    },
+    {
+      "id": "ter_146",
+      "domanda": "Un sistema termodinamico ha **entropia** che può solo aumentare o rimanere costante. Quale affermazione spiega correttamente cosa significa per la **freccia del tempo** cosmologica?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Secondo principio",
+      "opzioni": [
+        "Il tempo non ha direzione; l'entropia è solo una misura matematica",
+        "Il tempo ha una direzione privilegiata: dal passato (bassa entropia) al futuro (alta entropia)",
+        "L'entropia è sempre massima, quindi il tempo è bloccato",
+        "Solo i sistemi isolati hanno una direzione del tempo; gli altri no"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'universo è un sistema isolato e per il secondo principio la sua entropia totale non diminuisce mai. Questo fornisce una **freccia del tempo**: i processi naturali procedono dal passato (quando l'entropia era più bassa) verso il futuro (quando è più alta). È per questo che ricordiamo il passato ma non il futuro, e perché i processi naturali hanno una direzione privilegiata.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "freccia del tempo",
+        "entropia",
+        "passato",
+        "futuro",
+        "universo"
+      ]
+    },
+    {
+      "id": "ter_147",
+      "domanda": "Un gas ideale occupa inizialmente un volume di $V_1 = 2,0$ m³ a una pressione di $P_1 = 1,5 \\times 10^5$ Pa. Se viene compresso a una pressione di $P_2 = 3,0 \\times 10^5$ Pa in una trasformazione isoterma, qual è il nuovo volume?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isoterma (calcoli)",
+      "opzioni": [
+        "$V_2 = 0,50$ m³",
+        "$V_2 = 1,0$ m³",
+        "$V_2 = 4,0$ m³",
+        "$V_2 = 6,0$ m³"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In una trasformazione isoterma per un gas ideale vale $P_1 V_1 = P_2 V_2$ (legge di Boyle). Da cui: $V_2 = \\frac{P_1 V_1}{P_2} = \\frac{1,5 \\times 10^5 \\times 2,0}{3,0 \\times 10^5} = \\frac{3,0 \\times 10^5}{3,0 \\times 10^5} = 1,0$ m³.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isoterma",
+        "Boyle",
+        "P_1V_1=P_2V_2",
+        "volume",
+        "pressione"
+      ]
+    },
+    {
+      "id": "ter_148",
+      "domanda": "Un gas ideale ha $n = 2$ moli a una temperatura di $T = 300$ K. Quale è la sua energia interna se è **monoatomico**?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Energia interna",
+      "opzioni": [
+        "$U = 3,0 \\times 10^3$ J",
+        "$U = 7,5 \\times 10^3$ J",
+        "$U = 1,5 \\times 10^4$ J",
+        "$U = 5,0 \\times 10^3$ J"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per un gas monoatomico l'energia interna è $U = \\frac{3}{2}nRT = \\frac{3}{2} \\times 2 \\times 8.314 \\times 300 = 3 \\times 8.314 \\times 300 = 7494$ J $\\approx 7,5 \\times 10^3$ J.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "energia interna",
+        "monoatomico",
+        "nRT",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_149",
+      "domanda": "Un gas ideale compie un'espansione **isobara reversibile** da $V_1 = 1,0$ m³ a $V_2 = 2,0$ m³ a una pressione costante di $P = 2,0 \\times 10^5$ Pa. Quanto lavoro compie il gas?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isobara (calcoli)",
+      "opzioni": [
+        "$W = 1,0 \\times 10^5$ J",
+        "$W = 2,0 \\times 10^5$ J",
+        "$W = 4,0 \\times 10^5$ J",
+        "$W = 0,5 \\times 10^5$ J"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In una trasformazione isobara il lavoro compiuto è $W = P \\Delta V = P(V_2 - V_1) = 2,0 \\times 10^5 \\times (2,0 - 1,0) = 2,0 \\times 10^5$ J.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isobara",
+        "lavoro",
+        "W=PΔV",
+        "espansione"
+      ]
+    },
+    {
+      "id": "ter_150",
+      "domanda": "Un gas ideale in una trasformazione **isocora** passa da $T_1 = 250$ K a $T_2 = 500$ K. Se la pressione iniziale è $P_1 = 1,0 \\times 10^5$ Pa, qual è la pressione finale?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Isocora (calcoli)",
+      "opzioni": [
+        "$P_2 = 0,5 \\times 10^5$ Pa",
+        "$P_2 = 2,0 \\times 10^5$ Pa",
+        "$P_2 = 4,0 \\times 10^5$ Pa",
+        "$P_2 = 1,5 \\times 10^5$ Pa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In una trasformazione isocora per un gas ideale vale $\\frac{P_1}{T_1} = \\frac{P_2}{T_2}$ (seconda legge di Gay-Lussac). Da cui: $P_2 = P_1 \\frac{T_2}{T_1} = 1,0 \\times 10^5 \\times \\frac{500}{250} = 2,0 \\times 10^5$ Pa.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "isocora",
+        "Gay-Lussac",
+        "P/T=costante",
+        "pressione",
+        "temperatura"
+      ]
+    },
+    {
+      "id": "ter_151",
+      "domanda": "Una quantità di acqua di massa $m = 0,5$ kg viene riscaldata da $T_1 = 20°C$ a $T_2 = 80°C$. Quanto calore è necessario? (Calore specifico dell'acqua: $c = 4186$ J/kg·K)",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Calore specifico",
+      "opzioni": [
+        "$Q = 1,26 \\times 10^5$ J",
+        "$Q = 2,51 \\times 10^4$ J",
+        "$Q = 1,26 \\times 10^4$ J",
+        "$Q = 6,28 \\times 10^4$ J"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il calore necessario è $Q = mc\\Delta T = 0,5 \\times 4186 \\times (80 - 20) = 0,5 \\times 4186 \\times 60 = 125580$ J $\\approx 1,26 \\times 10^5$ J.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "calore specifico",
+        "acqua",
+        "Q=mcΔT",
+        "riscaldamento"
+      ]
+    },
+    {
+      "id": "ter_152",
+      "domanda": "Un gas ideale in una trasformazione **adiabatica reversibile** ha volume iniziale $V_1 = 1,0$ m³ e volume finale $V_2 = 0,5$ m³. La temperatura iniziale è $T_1 = 300$ K. Per un gas monoatomico ($\\gamma = 5/3$), qual è la temperatura finale?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Adiabatica (calcoli)",
+      "opzioni": [
+        "$T_2 = 150$ K",
+        "$T_2 = 347$ K",
+        "$T_2 = 476$ K",
+        "$T_2 = 600$ K"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per una trasformazione adiabatica reversibile di un gas ideale vale $T_1 V_1^{\\gamma -1} = T_2 V_2^{\\gamma -1}$. Da cui: $T_2 = T_1 \\left(\\frac{V_1}{V_2}\\right)^{\\gamma -1} = 300 \\times (2)^{5/3 - 1} = 300 \\times 2^{2/3} = 300 \\times 1,587 \\approx 476$ K.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "adiabatica",
+        "monoatomico",
+        "gamma",
+        "T V^γ-1=costante",
+        "temperatura"
+      ]
+    },
+    {
+      "id": "ter_153",
+      "domanda": "Un gas ideale alla pressione di $P = 1,0 \\times 10^5$ Pa occupa un volume di $V = 3,0$ m³ a una temperatura di $T = 300$ K. Quante moli di gas sono presenti?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Gas ideali (calcoli)",
+      "opzioni": [
+        "$n = 100$ mol",
+        "$n = 120$ mol",
+        "$n = 150$ mol",
+        "$n = 12$ mol"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Dall'equazione di stato dei gas ideali $PV = nRT$: $n = \\frac{PV}{RT} = \\frac{1,0 \\times 10^5 \\times 3,0}{8.314 \\times 300} = \\frac{3,0 \\times 10^5}{2494,2} \\approx 120$ mol.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "PV=nRT",
+        "gas ideale",
+        "moli",
+        "calcolo"
+      ]
+    },
+    {
+      "id": "ter_154",
+      "domanda": "Un ciclo termodinamico assorbe calore $Q_h = 1200$ J da una sorgente calda e cede calore $Q_c = 600$ J a una sorgente fredda. Qual è il rendimento del ciclo?",
+      "categoria": "Termodinamica",
+      "sottocategoria": "Cicli termodinamici",
+      "opzioni": [
+        "$\\eta = 0,25 = 25\\%$",
+        "$\\eta = 0,50 = 50\\%$",
+        "$\\eta = 0,75 = 75\\%$",
+        "$\\eta = 0,33 = 33\\%$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il rendimento di una macchina termica è $\\eta = \\frac{W}{Q_h} = \\frac{Q_h - Q_c}{Q_h} = 1 - \\frac{Q_c}{Q_h} = 1 - \\frac{600}{1200} = 1 - 0,5 = 0,5 = 50\\%$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "rendimento",
+        "ciclo",
+        "η",
+        "Q_h",
+        "Q_c"
+      ]
     }
   ]
 }

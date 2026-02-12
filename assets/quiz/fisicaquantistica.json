@@ -1743,6 +1743,1405 @@
         "lyman",
         "1240"
       ]
+    },
+    {
+      "id": "qnt_087",
+      "domanda": "Cosa prevedeva la fisica classica riguardo all'irraggiamento del corpo nero ad alte frequenze (ultravioletto)?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Radiazione di corpo nero",
+      "opzioni": [
+        "L'intensità della radiazione tende a zero",
+        "L'intensità della radiazione diverge all'infinito (Catastrofe ultravioletta)",
+        "L'intensità si stabilizza su un valore costante",
+        "La radiazione cambia colore diventando rossa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Secondo la teoria classica (Rayleigh-Jeans), l'energia emessa doveva crescere indefinitamente al diminuire della lunghezza d'onda, portando a valori infiniti nell'ultravioletto, in palese contrasto con i dati sperimentali.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "corpo nero",
+        "catastrofe ultravioletta",
+        "fisica classica"
+      ]
+    },
+    {
+      "id": "qnt_088",
+      "domanda": "All'aumentare della temperatura di un corpo nero, come cambia il picco di emissione secondo la legge di Wien?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Radiazione di corpo nero",
+      "opzioni": [
+        "Si sposta verso lunghezze d'onda più lunghe (infrarosso)",
+        "Si sposta verso lunghezze d'onda più corte (blu/ultravioletto)",
+        "Rimane alla stessa lunghezza d'onda, ma aumenta l'intensità",
+        "Si sposta casualmente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La legge di spostamento di Wien afferma che $\\lambda_{max} T = \\text{costante}$, quindi se $T$ aumenta, $\\lambda_{max}$ diminuisce.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "legge di Wien",
+        "temperatura",
+        "picco di emissione"
+      ]
+    },
+    {
+      "id": "qnt_089",
+      "domanda": "Nell'effetto fotoelettrico, cosa determina l'energia cinetica massima dei fotoelettroni emessi?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Effetto fotoelettrico",
+      "opzioni": [
+        "L'intensità della luce incidente",
+        "La frequenza della luce incidente",
+        "La durata dell'esposizione alla luce",
+        "La distanza della sorgente luminosa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'energia cinetica massima dipende linearmente dalla frequenza della luce ($K_{max} = hf - W_0$). L'intensità influisce solo sul *numero* di elettroni emessi.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "effetto fotoelettrico",
+        "frequenza",
+        "energia cinetica"
+      ]
+    },
+    {
+      "id": "qnt_090",
+      "domanda": "Perché l'effetto fotoelettrico non avviene se la frequenza della luce è inferiore a una certa soglia?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Effetto fotoelettrico",
+      "opzioni": [
+        "Perché i fotoni non hanno energia sufficiente a superare il lavoro di estrazione",
+        "Perché l'intensità della luce è troppo bassa",
+        "Perché gli elettroni respingono i fotoni a bassa frequenza",
+        "Perché la velocità della luce diminuisce a bassa frequenza"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'emissione avviene solo se il singolo fotone ha energia $hf$ almeno pari al lavoro di estrazione $W_0$ del metallo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "soglia fotoelettrica",
+        "lavoro di estrazione",
+        "fotoni"
+      ]
+    },
+    {
+      "id": "qnt_091",
+      "domanda": "Quale caratteristica dell'effetto fotoelettrico dimostra la natura corpuscolare della luce?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Effetto fotoelettrico",
+      "opzioni": [
+        "La diffrazione della luce attraverso fenditure",
+        "L'emissione istantanea degli elettroni senza ritardo misurabile",
+        "L'aumento della corrente con l'intensità luminosa",
+        "La rifrazione della luce nel prisma"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Classicamente, l'energia dell'onda dovrebbe accumularsi nel tempo prima di espellere un elettrone. L'emissione istantanea suggerisce un'interazione 'urto' uno-a-uno particella-particella.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "istantaneità",
+        "natura corpuscolare",
+        "fotoni"
+      ]
+    },
+    {
+      "id": "qnt_092",
+      "domanda": "Nell'effetto Compton, perché la lunghezza d'onda del fotone diffuso è maggiore di quella incidente?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Effetto Compton",
+      "opzioni": [
+        "Perché il fotone cede parte della sua energia all'elettrone",
+        "Perché il fotone acquista massa durante l'urto",
+        "Perché il fotone accelera dopo l'urto",
+        "Perché l'elettrone assorbe completamente il fotone"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nell'urto elastico con l'elettrone, il fotone perde energia. Poiché $E = hc / \\lambda$, una diminuzione di energia corrisponde a un aumento della lunghezza d'onda ($\\lambda' > \\lambda$).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "effetto Compton",
+        "urto elastico",
+        "lunghezza d'onda"
+      ]
+    },
+    {
+      "id": "qnt_093",
+      "domanda": "Il modello atomico di Bohr fu introdotto per risolvere quale problema principale del modello di Rutherford?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Modello di Bohr",
+      "opzioni": [
+        "La massa del nucleo troppo piccola",
+        "L'instabilità dell'atomo dovuta all'irraggiamento degli elettroni accelerati",
+        "La scoperta del neutrone",
+        "La forma ellittica delle orbite"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Secondo l'elettromagnetismo classico, un elettrone in orbita (accelerato) dovrebbe irradiare energia e cadere a spirale sul nucleo. Bohr postulò orbite stazionarie senza emissione.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "atomo di Rutherford",
+        "instabilità",
+        "orbite stazionarie"
+      ]
+    },
+    {
+      "id": "qnt_094",
+      "domanda": "Nel modello di Bohr, l'emissione di luce (spettri a righe) avviene quando:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Modello di Bohr",
+      "opzioni": [
+        "Un elettrone salta da un'orbita a energia maggiore a una a energia minore",
+        "Un elettrone salta da un'orbita a energia minore a una a energia maggiore",
+        "Un elettrone collide con il nucleo",
+        "Il nucleo si scinde"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il fotone emesso ha energia pari alla differenza tra i livelli energetici: $hf = E_i - E_f$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "spettri a righe",
+        "transizione energetica",
+        "emissione"
+      ]
+    },
+    {
+      "id": "qnt_095",
+      "domanda": "Secondo l'ipotesi di De Broglie, a ogni particella materiale in moto è associata:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Onde di materia",
+      "opzioni": [
+        "Una carica elettrica",
+        "Un'onda di lunghezza $\\lambda = h/p$",
+        "Un campo magnetico statico",
+        "Una temperatura infinita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "De Broglie estese il dualismo onda-particella alla materia, associando una lunghezza d'onda inversamente proporzionale alla quantità di moto $p$.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "De Broglie",
+        "lunghezza d'onda",
+        "quantità di moto"
+      ]
+    },
+    {
+      "id": "qnt_096",
+      "domanda": "Perché non osserviamo il comportamento ondulatorio negli oggetti macroscopici (come una palla da tennis)?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Onde di materia",
+      "opzioni": [
+        "Perché non hanno carica elettrica",
+        "Perché la loro lunghezza d'onda di De Broglie è impercettibilmente piccola",
+        "Perché si muovono troppo velocemente",
+        "Perché la costante di Planck è troppo grande"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Poiché $\\lambda = h / (mv)$ e $h$ è piccolissima ($\\sim 10^{-34}$), per masse $m$ macroscopiche $\\lambda$ risulta così piccola da rendere impossibili fenomeni di diffrazione o interferenza misurabili.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "macroscopico",
+        "lunghezza d'onda",
+        "limite classico"
+      ]
+    },
+    {
+      "id": "qnt_097",
+      "domanda": "Il principio di indeterminazione di Heisenberg afferma che non è possibile misurare simultaneamente con precisione arbitraria:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Principio di indeterminazione",
+      "opzioni": [
+        "Massa e carica",
+        "Posizione e quantità di moto",
+        "Velocità e accelerazione",
+        "Energia e temperatura"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La relazione $\\Delta x \\cdot \\Delta p \\geq h / (4\\pi)$ impone un limite fondamentale alla precisione con cui posizione e momento possono essere determinati contemporaneamente.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "Heisenberg",
+        "posizione",
+        "quantità di moto"
+      ]
+    },
+    {
+      "id": "qnt_098",
+      "domanda": "Qual è una conseguenza del principio di indeterminazione energia-tempo ($\\Delta E \\cdot \\Delta t \\geq \\hbar/2$)?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Principio di indeterminazione",
+      "opzioni": [
+        "L'energia si conserva sempre perfettamente",
+        "Sono possibili violazioni momentanee della conservazione dell'energia (particelle virtuali)",
+        "Il tempo scorre più lentamente ad alte energie",
+        "L'energia cinetica è sempre nulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per intervalli di tempo $\\Delta t$ estremamente brevi, l'incertezza sull'energia $\\Delta E$ può essere grande, permettendo l'esistenza di particelle virtuali.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "energia-tempo",
+        "particelle virtuali",
+        "fluttuazioni"
+      ]
+    },
+    {
+      "id": "qnt_099",
+      "domanda": "Nel microscopio elettronico si usano elettroni invece che luce visibile perché:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Applicazioni",
+      "opzioni": [
+        "Gli elettroni sono più lenti dei fotoni",
+        "Gli elettroni possono avere lunghezze d'onda molto minori della luce visibile",
+        "Gli elettroni non danneggiano il campione",
+        "Gli elettroni sono colorati"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per risolvere dettagli fini, la lunghezza d'onda della sonda deve essere piccola. Accelerando gli elettroni, si ottiene $\\lambda$ molto minore della luce, aumentando il potere risolutivo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "microscopio elettronico",
+        "potere risolutivo",
+        "lunghezza d'onda"
+      ]
+    },
+    {
+      "id": "qnt_100",
+      "domanda": "Cosa rappresenta il quadrato del modulo della funzione d'onda $|\\Psi|^2$ secondo l'interpretazione di Born?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Funzione d'onda",
+      "opzioni": [
+        "L'energia della particella in quel punto",
+        "La densità di carica della particella",
+        "La densità di probabilità di trovare la particella in quel punto",
+        "La traiettoria esatta della particella"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "In meccanica quantistica, non calcoliamo la posizione esatta, ma la probabilità di trovare la particella in una regione, data da $|\\Psi(x,t)|^2$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "probabilità",
+        "interpretazione di Born",
+        "funzione d'onda"
+      ]
+    },
+    {
+      "id": "qnt_101",
+      "domanda": "Cosa si intende per 'effetto tunnel' in meccanica quantistica?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Fenomeni ondulatori",
+      "opzioni": [
+        "Il passaggio di una particella attraverso una barriera di potenziale che classicamente non potrebbe superare",
+        "Il moto di una particella all'interno di un acceleratore",
+        "La riflessione totale di un'onda",
+        "La fusione di due nuclei atomici"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "A causa della natura ondulatoria, la funzione d'onda non si annulla istantaneamente nella barriera ma decade esponenzialmente, lasciando una probabilità non nulla di trovarsi oltre l'ostacolo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "effetto tunnel",
+        "barriera di potenziale",
+        "penetrazione"
+      ]
+    },
+    {
+      "id": "qnt_102",
+      "domanda": "Il numero quantico principale $n$ definisce principalmente:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Numeri quantici",
+      "opzioni": [
+        "La forma dell'orbitale",
+        "L'orientamento dello spin",
+        "Il livello energetico e la dimensione media dell'orbitale",
+        "La direzione dell'orbitale nello spazio"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "$n$ (1, 2, 3...) è legato all'energia dell'elettrone e alla distanza media dal nucleo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "numero quantico principale",
+        "energia",
+        "dimensione"
+      ]
+    },
+    {
+      "id": "qnt_103",
+      "domanda": "Qual è la forma geometrica di un orbitale di tipo 's' ($l=0$)?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Numeri quantici",
+      "opzioni": [
+        "Sferica",
+        "A doppio lobo (bilobata)",
+        "A forma di ciambella",
+        "Cubica"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Gli orbitali *s* hanno simmetria sferica, ovvero la probabilità dipende solo dalla distanza dal nucleo e non dalla direzione.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "orbitale s",
+        "forma",
+        "sferico"
+      ]
+    },
+    {
+      "id": "qnt_104",
+      "domanda": "Il principio di esclusione di Pauli afferma che:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Principi fondamentali",
+      "opzioni": [
+        "Due elettroni non possono occupare lo stesso spazio",
+        "In un atomo non possono esistere due elettroni con tutti e quattro i numeri quantici uguali",
+        "Gli elettroni si respingono con forza infinita",
+        "Solo i bosoni possono stare nello stesso stato"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Questo principio è fondamentale per la struttura atomica e proibisce a due fermioni (come gli elettroni) di occupare lo stesso identico stato quantico nello stesso sistema.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Pauli",
+        "esclusione",
+        "numeri quantici"
+      ]
+    },
+    {
+      "id": "qnt_105",
+      "domanda": "Cos'è lo 'spin' di una particella elementare?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Proprietà delle particelle",
+      "opzioni": [
+        "La rotazione fisica della particella su se stessa come una trottola",
+        "Un momento angolare intrinseco, proprietà quantistica fondamentale senza analogo classico esatto",
+        "La vibrazione della particella",
+        "La carica magnetica della particella"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Sebbene il nome suggerisca una rotazione, lo spin è una proprietà intrinseca quantizzata che non corrisponde a una reale rotazione fisica di un corpo esteso.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "spin",
+        "momento angolare intrinseco",
+        "quantistico"
+      ]
+    },
+    {
+      "id": "qnt_106",
+      "domanda": "L'esperimento di Stern-Gerlach ha dimostrato:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Esperimenti fondamentali",
+      "opzioni": [
+        "L'esistenza del nucleo atomico",
+        "La quantizzazione spaziale del momento angolare (spin)",
+        "La natura ondulatoria degli elettroni",
+        "La velocità della luce costante"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Facendo passare atomi di argento in un campo magnetico disomogeneo, il fascio si divise in due parti discrete, dimostrando che lo spin può assumere solo orientazioni quantizzate (su/giù).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Stern-Gerlach",
+        "spin",
+        "quantizzazione spaziale"
+      ]
+    },
+    {
+      "id": "qnt_107",
+      "domanda": "Qual è la differenza fondamentale tra 'orbita' (Bohr) e 'orbitale' (Schrödinger)?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Modello atomico",
+      "opzioni": [
+        "Nessuna, sono sinonimi",
+        "L'orbita è una traiettoria definita, l'orbitale è una regione di probabilità",
+        "L'orbitale è bidimensionale, l'orbita tridimensionale",
+        "L'orbita è per i protoni, l'orbitale per gli elettroni"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel modello quantistico ondulatorio, per il principio di Heisenberg non possiamo definire una traiettoria (orbita), ma solo una nuvola di probabilità (orbitale).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "orbita vs orbitale",
+        "probabilità",
+        "traiettoria"
+      ]
+    },
+    {
+      "id": "qnt_108",
+      "domanda": "Perché i metalli, se scaldati, diventano incandescenti emettendo luce?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Radiazione termica",
+      "opzioni": [
+        "Per il decadimento radioattivo degli atomi",
+        "Per l'emissione di corpo nero dovuta all'agitazione termica delle cariche",
+        "Per reazioni chimiche di ossidazione",
+        "Per effetto fotoelettrico inverso"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Ogni corpo a temperatura $T > 0$ K emette radiazione elettromagnetica (spettro di corpo nero). A temperature alte, l'emissione rientra nel visibile.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "incandescenza",
+        "corpo nero",
+        "temperatura"
+      ]
+    },
+    {
+      "id": "qnt_109",
+      "domanda": "Cosa si intende per 'inversione di popolazione' nel funzionamento di un laser?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Laser",
+      "opzioni": [
+        "Avere più elettroni nel livello eccitato che nel livello fondamentale",
+        "Avere più elettroni nel nucleo che nell'atomo",
+        "Invertire la carica degli elettroni",
+        "Avere gli elettroni che ruotano in senso opposto"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per avere amplificazione tramite emissione stimolata, è necessario mantenere artificialmente più atomi nello stato eccitato rispetto a quello base, una condizione di non-equilibrio.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "inversione di popolazione",
+        "laser",
+        "emissione stimolata"
+      ]
+    },
+    {
+      "id": "qnt_110",
+      "domanda": "Quale fenomeno è alla base del microscopio a scansione a effetto tunnel (STM)?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Applicazioni",
+      "opzioni": [
+        "L'effetto fotoelettrico",
+        "L'effetto Compton",
+        "L'effetto tunnel quantistico degli elettroni tra punta e superficie",
+        "La diffrazione dei raggi X"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Una punta conduttrice finissima viene avvicinata alla superficie; gli elettroni possono 'tunnellare' attraverso il vuoto, creando una corrente sensibilissima alla distanza.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "STM",
+        "effetto tunnel",
+        "microscopia"
+      ]
+    },
+    {
+      "id": "qnt_111",
+      "domanda": "Cosa distingue i semiconduttori dagli isolanti nella teoria a bande?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Stato solido",
+      "opzioni": [
+        "I semiconduttori non hanno bande energetiche",
+        "La banda proibita (gap) nei semiconduttori è piccola abbastanza da essere superata per agitazione termica",
+        "Gli isolanti hanno la banda di valenza vuota",
+        "I semiconduttori conducono solo a zero assoluto"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Negli isolanti il gap energetico è grande. Nei semiconduttori è piccolo ($\\sim 1$ eV), permettendo agli elettroni di saltare in banda di conduzione a temperatura ambiente.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "banda proibita",
+        "gap",
+        "semiconduttori"
+      ]
+    },
+    {
+      "id": "qnt_112",
+      "domanda": "L' 'energia di punto zero' è:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Oscillatore armonico",
+      "opzioni": [
+        "L'energia minima non nulla che un sistema quantistico possiede anche allo zero assoluto",
+        "L'energia di un fotone fermo",
+        "L'energia necessaria per creare il vuoto",
+        "Sempre uguale a zero"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "A causa del principio di indeterminazione, una particella confinata (come in un oscillatore) non può essere perfettamente ferma con energia nulla, ma possiede un'energia minima $E_0 = \\frac{1}{2}hf$.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "energia di punto zero",
+        "stato fondamentale",
+        "indeterminazione"
+      ]
+    },
+    {
+      "id": "qnt_113",
+      "domanda": "Quale affermazione descrive meglio la 'sovrapposizione quantistica'?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Concetti fondamentali",
+      "opzioni": [
+        "Due particelle che si scontrano",
+        "La capacità di un sistema di trovarsi simultaneamente in una combinazione lineare di più stati possibili finché non viene misurato",
+        "La somma delle masse di due particelle",
+        "L'interferenza distruttiva sempre presente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Prima della misura, un sistema non è necessariamente in uno stato definito (come 'spin su' o 'spin giù'), ma in una sovrapposizione di entrambi.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "sovrapposizione",
+        "stati quantistici",
+        "gatto di Schrödinger"
+      ]
+    },
+    {
+      "id": "qnt_114",
+      "domanda": "Che cosa si intende per 'qubit' nel calcolo quantistico?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Applicazioni",
+      "opzioni": [
+        "Un bit che vale sempre 1",
+        "Un'unità di informazione che può essere 0, 1 o una sovrapposizione di entrambi",
+        "Un computer molto veloce",
+        "Un nuovo tipo di batteria"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A differenza del bit classico (0 o 1), il qubit sfrutta la sovrapposizione quantistica per elaborare più stati contemporaneamente.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "qubit",
+        "computer quantistico",
+        "sovrapposizione"
+      ]
+    },
+    {
+      "id": "qnt_115",
+      "domanda": "Cosa afferma il principio di complementarità di Bohr?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Interpretazione",
+      "opzioni": [
+        "Onda e corpuscolo sono due aspetti complementari della stessa realtà, mai osservabili contemporaneamente nello stesso esperimento",
+        "La fisica classica e quantistica sono opposte",
+        "L'energia e la massa sono la stessa cosa",
+        "Protoni ed elettroni sono complementari"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Un esperimento può mostrare la natura ondulatoria (interferenza) O quella corpuscolare (urti), ma mai entrambe simultaneamente in modo completo.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "complementarità",
+        "dualismo",
+        "Bohr"
+      ]
+    },
+    {
+      "id": "qnt_116",
+      "domanda": "La risonanza magnetica nucelare (NMR/MRI) si basa su quale proprietà quantistica?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Applicazioni",
+      "opzioni": [
+        "La carica elettrica degli elettroni",
+        "Lo spin dei nuclei atomici (solitamente idrogeno) immersi in un campo magnetico",
+        "La radioattività del corpo umano",
+        "L'effetto fotoelettrico nei tessuti"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "I nuclei con spin non nullo si allineano al campo magnetico; impulsi radio possono ribaltare questo spin (risonanza), emettendo segnali rilevabili al ritorno all'equilibrio.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "MRI",
+        "spin nucleare",
+        "risonanza"
+      ]
+    },
+    {
+      "id": "qnt_117",
+      "domanda": "Quale esperimento confermò l'ipotesi di De Broglie sulla natura ondulatoria degli elettroni?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Esperimenti storici",
+      "opzioni": [
+        "Esperimento di Michelson-Morley",
+        "Esperimento di Davisson e Germer",
+        "Esperimento di Millikan",
+        "Esperimento di Joule"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Davisson e Germer osservarono figure di diffrazione sparando elettroni contro un cristallo di nichel, un fenomeno tipico delle onde.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "Davisson-Germer",
+        "diffrazione elettroni",
+        "prova sperimentale"
+      ]
+    },
+    {
+      "id": "qnt_118",
+      "domanda": "Nel modello a fasce (bande), cosa sono le lacune (o buche)?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Stato solido",
+      "opzioni": [
+        "Particelle di antimateria nel nucleo",
+        "La mancanza di un elettrone nella banda di valenza, che si comporta come una carica positiva mobile",
+        "Difetti fisici nel cristallo (buchi reali)",
+        "Atomi mancanti nel reticolo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Quando un elettrone salta in conduzione, lascia uno spazio vuoto in valenza. Questo vuoto relativo si muove sotto campo elettrico come se fosse una particella positiva.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lacune",
+        "semiconduttori",
+        "banda di valenza"
+      ]
+    },
+    {
+      "id": "qnt_119",
+      "domanda": "Cosa si intende per 'collasso della funzione d'onda'?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Interpretazione",
+      "opzioni": [
+        "L'onda si distrugge contro un muro",
+        "Il passaggio istantaneo da una sovrapposizione di stati a uno stato definito al momento della misura",
+        "La fine dell'universo",
+        "La riduzione dell'energia a zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "È il processo (postulato nell'interpretazione di Copenaghen) per cui l'osservazione costringe il sistema quantistico a 'scegliere' uno dei possibili autovalori.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "collasso",
+        "misura",
+        "Copenaghen"
+      ]
+    },
+    {
+      "id": "qnt_120",
+      "domanda": "Quale è il significato del principio di corrispondenza di Bohr?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Concetti fondamentali",
+      "opzioni": [
+        "La fisica quantistica contraddice sempre quella classica",
+        "Le previsioni della meccanica quantistica devono coincidere con quelle della fisica classica nel limite dei grandi numeri quantici (macroscopico)",
+        "Ogni particella corrisponde a un'onda",
+        "La massa corrisponde all'energia"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Assicura la continuità tra le teorie: per sistemi grandi (ad es. orbite molto larghe), il comportamento quantistico deve sfumare in quello classico noto.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "principio di corrispondenza",
+        "limite classico",
+        "Bohr"
+      ]
+    },
+    {
+      "id": "qnt_121",
+      "domanda": "Cosa indica il numero quantico magnetico $m_l$?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Numeri quantici",
+      "opzioni": [
+        "La forma dell'orbitale",
+        "L'energia dell'orbitale",
+        "L'orientamento spaziale dell'orbitale rispetto a un campo magnetico esterno",
+        "Lo spin dell'elettrone"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il numero $m_l$ distingue orbitali della stessa forma (stesso $l$) ma con diverso orientamento nello spazio (es. $p_x, p_y, p_z$).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "numero quantico magnetico",
+        "orientamento",
+        "orbitali"
+      ]
+    },
+    {
+      "id": "qnt_122",
+      "domanda": "Nella funzione d'onda dell'atomo di idrogeno, da quali numeri quantici dipende l'energia (in prima approssimazione)?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Atomo di Idrogeno",
+      "opzioni": [
+        "Solo da $n$",
+        "Da $n$ e $l$",
+        "Da $n, l$ e $m$",
+        "Dallo spin"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per l'atomo di idrogeno (un solo elettrone), l'energia dipende quasi esclusivamente dal numero quantico principale $n$. (In atomi polielettronici dipende anche da $l$).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "livelli energetici",
+        "idrogeno",
+        "degenerazione"
+      ]
+    },
+    {
+      "id": "qnt_123",
+      "domanda": "Che cos'è un fermione?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Particelle",
+      "opzioni": [
+        "Una particella con spin intero che non segue Pauli",
+        "Una particella con spin semintero (es. 1/2) soggetta al principio di esclusione di Pauli",
+        "Un atomo di ferro",
+        "Un quanto di luce"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Elettroni, protoni e neutroni sono fermioni. Essi obbediscono alla statistica di Fermi-Dirac e al principio di esclusione.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "fermioni",
+        "spin semintero",
+        "Pauli"
+      ]
+    },
+    {
+      "id": "qnt_124",
+      "domanda": "L'effetto Zeeman consiste in:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Spettroscopia",
+      "opzioni": [
+        "Riscaldamento dell'atomo",
+        "Scissione delle righe spettrali in presenza di un campo magnetico",
+        "Emissione spontanea di luce",
+        "Accelerazione degli elettroni"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il campo magnetico interagisce con i momenti magnetici orbitali e di spin, separando livelli energetici che altrimenti sarebbero degeneri (stessa energia).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "effetto Zeeman",
+        "campo magnetico",
+        "scissione righe"
+      ]
+    },
+    {
+      "id": "qnt_125",
+      "domanda": "In meccanica quantistica, le particelle identiche (es. due elettroni) sono:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Concetti fondamentali",
+      "opzioni": [
+        "Distinguibili se osservate attentamente",
+        "Indistinguibili: non è possibile etichettarle o seguirne le traiettorie individualmente",
+        "Diverso colore",
+        "Sempre in stati opposti"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'indistinguibilità è una proprietà profonda che porta a conseguenze statistiche diverse (Fermi-Dirac o Bose-Einstein) rispetto alla fisica classica.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "indistinguibilità",
+        "particelle identiche",
+        "statistica"
+      ]
+    },
+    {
+      "id": "qnt_126",
+      "domanda": "Cosa implica la 'normalizzazione' della funzione d'onda?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Formalismo",
+      "opzioni": [
+        "Che la funzione d'onda deve essere sempre positiva",
+        "Che l'integrale della densità di probabilità su tutto lo spazio deve essere uguale a 1 (certezza che la particella esista)",
+        "Che l'energia totale è 1 Joule",
+        "Che la particella è ferma"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Poiché la particella deve trovarsi da qualche parte nell'universo, la somma di tutte le probabilità deve dare il 100% (ossia 1).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "normalizzazione",
+        "probabilità totale",
+        "matematica"
+      ]
+    },
+    {
+      "id": "qnt_127",
+      "domanda": "Un fotone ha lunghezza d'onda $\\lambda = 600$ nm. Usando $c = 3.0 \\times 10^8$ m/s e $h = 6.63 \\times 10^{-34}$ J·s, qual è la sua frequenza?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Calcoli di base",
+      "opzioni": [
+        "$f \\approx 5.0 \\times 10^{14}$ Hz",
+        "$f \\approx 2.0 \\times 10^{14}$ Hz",
+        "$f \\approx 1.0 \\times 10^{15}$ Hz",
+        "$f \\approx 3.0 \\times 10^8$ Hz"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$f = \\frac{c}{\\lambda} = \\frac{3.0 \\times 10^8}{6.0 \\times 10^{-7}} \\approx 5.0 \\times 10^{14}$$ Hz.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "frequenza",
+        "lunghezza d'onda",
+        "fotone"
+      ]
+    },
+    {
+      "id": "qnt_128",
+      "domanda": "Un fotone di frequenza $f = 7.5 \\times 10^{14}$ Hz, con $h = 6.63 \\times 10^{-34}$ J·s e $c = 3.0 \\times 10^8$ m/s, ha lunghezza d'onda circa:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Calcoli di base",
+      "opzioni": [
+        "$\\lambda \\approx 400$ nm",
+        "$\\lambda \\approx 600$ nm",
+        "$\\lambda \\approx 800$ nm",
+        "$\\lambda \\approx 200$ nm"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$\\lambda = \\frac{c}{f} = \\frac{3.0 \\times 10^8}{7.5 \\times 10^{14}} = 4.0 \\times 10^{-7}$$ m $= 400$ nm.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lunghezza d'onda",
+        "frequenza",
+        "ultravioletto"
+      ]
+    },
+    {
+      "id": "qnt_129",
+      "domanda": "Un fanale di automobile emette luce rossa con $\\lambda = 700$ nm e luce blu con $\\lambda = 400$ nm. Qual è il rapporto tra le frequenze $f_{blu}/f_{rosso}$?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Rapporti",
+      "opzioni": [
+        "$\\approx 1.75$",
+        "$\\approx 1.0$",
+        "$\\approx 0.57$",
+        "$\\approx 2.0$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$\\frac{f_{blu}}{f_{rosso}} = \\frac{\\lambda_{rosso}}{\\lambda_{blu}} = \\frac{700}{400} = 1.75$$",
+      "difficolta": "media",
+      "paroleChiave": [
+        "rapporto frequenze",
+        "lunghezza d'onda",
+        "visibile"
+      ]
+    },
+    {
+      "id": "qnt_130",
+      "domanda": "Effetto fotoelettrico: metallo con lavoro di estrazione $\\phi = 3.5$ eV. Fotone con energia $E = 5.0$ eV. Qual è $K_{max}$?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Effetto fotoelettrico",
+      "opzioni": [
+        "$1.5$ eV",
+        "$2.0$ eV",
+        "$3.5$ eV",
+        "$8.5$ eV"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$K_{max} = E - \\phi = 5.0 - 3.5 = 1.5$$ eV.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "fotoelettrico",
+        "energia cinetica",
+        "lavoro di estrazione"
+      ]
+    },
+    {
+      "id": "qnt_131",
+      "domanda": "Effetto fotoelettrico: per un metallo con frequenza di soglia $f_0 = 5.0 \\times 10^{14}$ Hz, qual è il lavoro di estrazione (usa $h = 6.63 \\times 10^{-34}$ J·s)?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Effetto fotoelettrico",
+      "opzioni": [
+        "$\\approx 2.1$ eV",
+        "$\\approx 3.3$ eV",
+        "$\\approx 1.3$ eV",
+        "$\\approx 5.0$ eV"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$\\phi = hf_0 = 6.63 \\times 10^{-34} \\times 5.0 \\times 10^{14} \\approx 3.32 \\times 10^{-19}$$ J $\\approx 2.1$ eV.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "soglia fotoelettrica",
+        "lavoro di estrazione",
+        "eV"
+      ]
+    },
+    {
+      "id": "qnt_132",
+      "domanda": "Una tensione di arresto $V_s = 2.5$ V ferma completamente i fotoelettroni. Qual è $K_{max}$ in eV?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Effetto fotoelettrico",
+      "opzioni": [
+        "$2.5$ eV",
+        "$5.0$ eV",
+        "$1.25$ eV",
+        "$0$ eV"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$K_{max} = eV_s = 1 \\times 2.5 = 2.5$$ eV.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "tensione di arresto",
+        "fotoelettrico",
+        "energia cinetica"
+      ]
+    },
+    {
+      "id": "qnt_133",
+      "domanda": "Un elettrone ha lunghezza d'onda di de Broglie $\\lambda = 3.0 \\times 10^{-10}$ m (con $h = 6.63 \\times 10^{-34}$ J·s). Qual è la sua quantità di moto?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "De Broglie",
+      "opzioni": [
+        "$p \\approx 2.2 \\times 10^{-24}$ kg·m/s",
+        "$p \\approx 1.1 \\times 10^{-24}$ kg·m/s",
+        "$p \\approx 3.0 \\times 10^{-10}$ kg·m/s",
+        "$p \\approx 5.0 \\times 10^{-24}$ kg·m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$p = \\frac{h}{\\lambda} = \\frac{6.63 \\times 10^{-34}}{3.0 \\times 10^{-10}} \\approx 2.2 \\times 10^{-24}$$ kg·m/s.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "de Broglie",
+        "quantità di moto",
+        "lunghezza d'onda"
+      ]
+    },
+    {
+      "id": "qnt_134",
+      "domanda": "Se la quantità di moto di una particella aumenta di un fattore 3, come cambia la sua lunghezza d'onda di de Broglie?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "De Broglie",
+      "opzioni": [
+        "Aumenta di un fattore 3",
+        "Si riduce di un fattore 3",
+        "Raddoppia",
+        "Rimane uguale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Poiché $\\lambda = h/p$ è inversamente proporzionale a $p$, se $p \\to 3p$ allora $\\lambda \\to \\lambda/3$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "de Broglie",
+        "proporzionalità inversa",
+        "quantità di moto"
+      ]
+    },
+    {
+      "id": "qnt_135",
+      "domanda": "Principio di indeterminazione: se $\\Delta x = 5.0 \\times 10^{-11}$ m, qual è il minimo $\\Delta p$ (usa $\\hbar = 1.055 \\times 10^{-34}$ J·s)?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Indeterminazione",
+      "opzioni": [
+        "$\\Delta p \\geq 1.06 \\times 10^{-24}$ kg·m/s",
+        "$\\Delta p \\geq 5.3 \\times 10^{-24}$ kg·m/s",
+        "$\\Delta p \\geq 1.06 \\times 10^{-34}$ kg·m/s",
+        "$\\Delta p \\geq 0$ kg·m/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$\\Delta p \\geq \\frac{\\hbar}{2\\Delta x} = \\frac{1.055 \\times 10^{-34}}{2 \\times 5.0 \\times 10^{-11}} \\approx 1.06 \\times 10^{-24}$$ kg·m/s.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "indeterminazione",
+        "Heisenberg",
+        "limite minimo"
+      ]
+    },
+    {
+      "id": "qnt_136",
+      "domanda": "Se $\\Delta x$ di una particella raddoppia, come cambia il limite minimo $\\Delta p$?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Indeterminazione",
+      "opzioni": [
+        "Raddoppia",
+        "Si dimezza",
+        "Rimane uguale",
+        "Diventa zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Da $\\Delta p \\geq \\hbar/(2\\Delta x)$: se $\\Delta x \\to 2\\Delta x$ allora $\\Delta p_{min} \\to \\Delta p_{min}/2$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "indeterminazione",
+        "inverso",
+        "confinamento"
+      ]
+    },
+    {
+      "id": "qnt_137",
+      "domanda": "Modello di Bohr: energie $E_n = -13.6/n^2$ eV. Calcola l'energia del livello $n=3$.",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Bohr",
+      "opzioni": [
+        "$E_3 \\approx -1.51$ eV",
+        "$E_3 \\approx -3.4$ eV",
+        "$E_3 \\approx -4.53$ eV",
+        "$E_3 \\approx 0$ eV"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$E_3 = -\\frac{13.6}{3^2} = -\\frac{13.6}{9} \\approx -1.51$$ eV.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "bohr",
+        "livelli energetici",
+        "n=3"
+      ]
+    },
+    {
+      "id": "qnt_138",
+      "domanda": "Transizione idrogeno: da $n=4$ a $n=2$. Calcola $|\\Delta E|$ (usa $E_n = -13.6/n^2$ eV).",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Transizioni",
+      "opzioni": [
+        "$|\\Delta E| \\approx 2.55$ eV",
+        "$|\\Delta E| \\approx 10.2$ eV",
+        "$|\\Delta E| \\approx 3.4$ eV",
+        "$|\\Delta E| \\approx 12.1$ eV"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$E_4 = -13.6/16 = -0.85$ eV, $E_2 = -13.6/4 = -3.4$ eV, quindi $|\\Delta E| = 3.4 - 0.85 = 2.55$ eV.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "transizione",
+        "bohr",
+        "energia"
+      ]
+    },
+    {
+      "id": "qnt_139",
+      "domanda": "Per la transizione calcolata (da $n=4$ a $n=2$, $\\Delta E \\approx 2.55$ eV), qual è la lunghezza d'onda emessa (usa $hc = 1240$ eV·nm)?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Lunghezza d'onda fotone",
+      "opzioni": [
+        "$\\lambda \\approx 486$ nm",
+        "$\\lambda \\approx 420$ nm",
+        "$\\lambda \\approx 656$ nm",
+        "$\\lambda \\approx 122$ nm"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$\\lambda = \\frac{hc}{\\Delta E} = \\frac{1240}{2.55} \\approx 486$$ nm (serie di Balmer).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "lunghezza d'onda",
+        "fotone",
+        "Balmer"
+      ]
+    },
+    {
+      "id": "qnt_140",
+      "domanda": "Transizione idrogeno $n=3 \\to 2$, con $E_3 \\approx -1.51$ eV e $E_2 = -3.4$ eV. Qual è $\\Delta E$?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Transizioni",
+      "opzioni": [
+        "$|\\Delta E| \\approx 1.89$ eV",
+        "$|\\Delta E| \\approx 2.5$ eV",
+        "$|\\Delta E| \\approx 5.0$ eV",
+        "$|\\Delta E| \\approx 0.5$ eV"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$|\\Delta E| = 3.4 - 1.51 = 1.89$$ eV.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "transizione",
+        "differenza energetica"
+      ]
+    },
+    {
+      "id": "qnt_141",
+      "domanda": "Usando $hc = 1240$ eV·nm, la lunghezza d'onda per $\\Delta E = 1.89$ eV è circa:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Lunghezza d'onda fotone",
+      "opzioni": [
+        "$\\lambda \\approx 656$ nm",
+        "$\\lambda \\approx 486$ nm",
+        "$\\lambda \\approx 434$ nm",
+        "$\\lambda \\approx 122$ nm"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$\\lambda = \\frac{1240}{1.89} \\approx 656$$ nm (serie Balmer, linea H-alpha rossa).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Balmer",
+        "H-alpha",
+        "lunghezza d'onda"
+      ]
+    },
+    {
+      "id": "qnt_142",
+      "domanda": "Ionizzazione dell'idrogeno da $n=2$: qual è l'energia minima richiesta? ($E_2 = -3.4$ eV)",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Ionizzazione",
+      "opzioni": [
+        "$E_{ion} = 3.4$ eV",
+        "$E_{ion} = 13.6$ eV",
+        "$E_{ion} = 10.2$ eV",
+        "$E_{ion} = 1.51$ eV"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Da $E_2 = -3.4$ eV a stato libero ($E = 0$) servono $3.4$ eV.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ionizzazione",
+        "energia",
+        "n=2"
+      ]
+    },
+    {
+      "id": "qnt_143",
+      "domanda": "Particella in scatola 1D: $E_n = \\frac{n^2 h^2}{8mL^2}$ con $n=1$. Qual è il rapporto $E_3 / E_1$?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Particella nella scatola",
+      "opzioni": [
+        "$E_3/E_1 = 3$",
+        "$E_3/E_1 = 9$",
+        "$E_3/E_1 = 6$",
+        "$E_3/E_1 = 1$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "$$E_n \\propto n^2$$ quindi $$\\frac{E_3}{E_1} = \\frac{3^2}{1^2} = 9$$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "scatola",
+        "rapporto energie",
+        "n quadrato"
+      ]
+    },
+    {
+      "id": "qnt_144",
+      "domanda": "Particella in scatola: se la larghezza $L$ diminuisce della metà, come cambiano i livelli energetici?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Particella nella scatola",
+      "opzioni": [
+        "Aumentano di 4 volte",
+        "Si dimezzano",
+        "Rimangono uguali",
+        "Aumentano di 2 volte"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Poiché $E \\propto 1/L^2$, se $L \\to L/2$ allora $E \\to 4E$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "scatola",
+        "scaling",
+        "energia"
+      ]
+    },
+    {
+      "id": "qnt_145",
+      "domanda": "Un atomo passa da stato eccitato con energia $E_i = 8.0$ eV a $E_f = 5.0$ eV. Qual è la frequenza del fotone emesso? (usa $h = 4.14 \\times 10^{-15}$ eV·s)",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Emissione",
+      "opzioni": [
+        "$f \\approx 7.2 \\times 10^{14}$ Hz",
+        "$f \\approx 3.6 \\times 10^{14}$ Hz",
+        "$f \\approx 1.2 \\times 10^{15}$ Hz",
+        "$f \\approx 5.0 \\times 10^{14}$ Hz"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$\\Delta E = 8.0 - 5.0 = 3.0$$ eV, quindi $$f = \\frac{\\Delta E}{h} = \\frac{3.0}{4.14 \\times 10^{-15}} \\approx 7.2 \\times 10^{14}$$ Hz.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "emissione",
+        "frequenza fotone",
+        "energia"
+      ]
+    },
+    {
+      "id": "qnt_146",
+      "domanda": "Una luce con frequenza $f = 6.0 \\times 10^{14}$ Hz e intensità $I = 2$ W/m² incide su una superficie. Quanti fotoni per secondo colpiscono 1 m² (usa $h = 6.63 \\times 10^{-34}$ J·s)?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Numero di fotoni",
+      "opzioni": [
+        "$N \\approx 5.0 \\times 10^{18}$ fotoni/s",
+        "$N \\approx 2.0 \\times 10^{18}$ fotoni/s",
+        "$N \\approx 1.0 \\times 10^{19}$ fotoni/s",
+        "$N \\approx 3.0 \\times 10^{18}$ fotoni/s"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Energia per fotone: $E = hf = 6.63 \\times 10^{-34} \\times 6.0 \\times 10^{14} = 4.0 \\times 10^{-19}$ J. Numero di fotoni: $N = I/E = 2 / (4.0 \\times 10^{-19}) \\approx 5.0 \\times 10^{18}$ fotoni/s.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "intensità",
+        "numero fotoni",
+        "energia"
+      ]
+    },
+    {
+      "id": "qnt_147",
+      "domanda": "Effetto Compton: fotone con energia $E = 3.0$ MeV urta un elettrone (inizialmente a riposo). Se il fotone è diffuso a 90°, quale relazione useremmo?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Compton",
+      "opzioni": [
+        "$\\Delta \\lambda = (h/m_e c)(1 - \\cos\\theta)$",
+        "$\\Delta \\lambda = h m_e c$",
+        "$\\Delta \\lambda = hc$",
+        "$\\Delta \\lambda = 0$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "È la formula di Compton. Per $\\theta = 90°$, $\\cos(90°) = 0$, quindi $\\Delta \\lambda = h/(m_e c) \\approx 2.43$ pm.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Compton",
+        "scattering",
+        "formula"
+      ]
+    },
+    {
+      "id": "qnt_148",
+      "domanda": "Calcula numericamente il 'Compton wavelength' dell'elettrone $\\lambda_C = h/(m_e c)$ (usa $h = 6.63 \\times 10^{-34}$ J·s, $m_e = 9.11 \\times 10^{-31}$ kg, $c = 3.0 \\times 10^8$ m/s).",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Compton",
+      "opzioni": [
+        "$\\lambda_C \\approx 2.43 \\times 10^{-12}$ m",
+        "$\\lambda_C \\approx 1.2 \\times 10^{-12}$ m",
+        "$\\lambda_C \\approx 5.0 \\times 10^{-12}$ m",
+        "$\\lambda_C \\approx 1.0 \\times 10^{-10}$ m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$\\lambda_C = \\frac{6.63 \\times 10^{-34}}{9.11 \\times 10^{-31} \\times 3.0 \\times 10^8} \\approx 2.43 \\times 10^{-12}$$ m.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Compton wavelength",
+        "elettrone",
+        "scala quantistica"
+      ]
+    },
+    {
+      "id": "qnt_149",
+      "domanda": "Quanti stati (orbitali diversi) sono possibili per $n=2$ nell'atomo di idrogeno?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Numeri quantici",
+      "opzioni": [
+        "2",
+        "4",
+        "8",
+        "1"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per $n=2$: $l = 0, 1$. Per $l=0$ ($m=0$): 1 orbitale $\\times$ 2 spin = 2 stati. Per $l=1$ ($m=-1,0,+1$): 3 orbitali $\\times$ 2 spin = 6 stati. Totale: $2 + 6 = 8$ stati.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "degenerazione",
+        "n=2",
+        "stati"
+      ]
+    },
+    {
+      "id": "qnt_150",
+      "domanda": "Numero massimo di elettroni che possono stare in un guscio con $n=3$:",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Configurazione elettronica",
+      "opzioni": [
+        "6",
+        "8",
+        "18",
+        "32"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per $n=3$: $l = 0, 1, 2$. Numero di orbitali: $(0) 1 + (1) 3 + (2) 5 = 9$. Numero di stati (con spin): $9 \\times 2 = 18$.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "guscio",
+        "n=3",
+        "principio di Pauli"
+      ]
+    },
+    {
+      "id": "qnt_151",
+      "domanda": "Un elettrone si trova in uno stato con $n=3, l=2, m=1, m_s=-1/2$. Quale affermazione è vera?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Numeri quantici",
+      "opzioni": [
+        "Lo stato è impossibile perché $l$ non può essere 2 per $n=3$",
+        "Lo stato è valido",
+        "Lo stato è impossibile perché $m_s$ deve essere positivo",
+        "Lo stato è impossibile perché $m$ deve essere 0"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per $n=3$: $l$ può essere $0, 1, 2$ (sì). Per $l=2$: $m$ va da $-2$ a $+2$ (1 è ok). $m_s = \\pm 1/2$ (ok). Lo stato è valido.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "numeri quantici",
+        "validità",
+        "vincoli"
+      ]
+    },
+    {
+      "id": "qnt_152",
+      "domanda": "Quale coppia di numeri quantici è impossibile?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Numeri quantici",
+      "opzioni": [
+        "$n=2, l=1$",
+        "$n=3, l=2$",
+        "$n=2, l=2$",
+        "$n=3, l=0$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Per $n=2$: $l$ può essere solo $0, 1$. La coppia $n=2, l=2$ è vietata ($l$ deve essere $< n$).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "numeri quantici",
+        "vincoli",
+        "validità"
+      ]
+    },
+    {
+      "id": "qnt_153",
+      "domanda": "Se un fotone ha energia $E = 2.0 \\times 10^{-18}$ J e $h = 6.63 \\times 10^{-34}$ J·s, qual è la sua frequenza?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Energia fotone",
+      "opzioni": [
+        "$f \\approx 3.0 \\times 10^{15}$ Hz",
+        "$f \\approx 1.5 \\times 10^{15}$ Hz",
+        "$f \\approx 6.0 \\times 10^{15}$ Hz",
+        "$f \\approx 1.0 \\times 10^{15}$ Hz"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$f = \\frac{E}{h} = \\frac{2.0 \\times 10^{-18}}{6.63 \\times 10^{-34}} \\approx 3.0 \\times 10^{15}$$ Hz.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "frequenza fotone",
+        "energia",
+        "Planck"
+      ]
+    },
+    {
+      "id": "qnt_154",
+      "domanda": "Quale è l'energia di un fotone infrarosso con $\\lambda = 10$ μm? (usa $hc = 1.24 \\times 10^{-6}$ eV·m)",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "Energia fotone",
+      "opzioni": [
+        "$E \\approx 0.124$ eV",
+        "$E \\approx 1.24$ eV",
+        "$E \\approx 0.012$ eV",
+        "$E \\approx 10$ eV"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$E = \\frac{hc}{\\lambda} = \\frac{1.24 \\times 10^{-6}}{10 \\times 10^{-6}} = 0.124$$ eV.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "infrarosso",
+        "lunghezza d'onda",
+        "energia"
+      ]
+    },
+    {
+      "id": "qnt_155",
+      "domanda": "Un elettrone si muove con velocità $v = 1.0 \\times 10^6$ m/s (con $m_e = 9.11 \\times 10^{-31}$ kg e $h = 6.63 \\times 10^{-34}$ J·s). Qual è la sua lunghezza d'onda di de Broglie?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "De Broglie",
+      "opzioni": [
+        "$\\lambda \\approx 7.3 \\times 10^{-10}$ m",
+        "$\\lambda \\approx 1.2 \\times 10^{-9}$ m",
+        "$\\lambda \\approx 3.6 \\times 10^{-10}$ m",
+        "$\\lambda \\approx 2.0 \\times 10^{-9}$ m"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "$$p = m_e v = 9.11 \\times 10^{-31} \\times 1.0 \\times 10^6 \\approx 9.11 \\times 10^{-25}$$ kg·m/s. $$\\lambda = \\frac{h}{p} = \\frac{6.63 \\times 10^{-34}}{9.11 \\times 10^{-25}} \\approx 7.3 \\times 10^{-10}$$ m.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "de Broglie",
+        "velocità",
+        "quantità di moto"
+      ]
+    },
+    {
+      "id": "qnt_156",
+      "domanda": "Comparazione: quale particella ha lunghezza d'onda di de Broglie più piccola, un protone o un elettrone, alla stessa velocità?",
+      "categoria": "Fisica Quantistica",
+      "sottocategoria": "De Broglie",
+      "opzioni": [
+        "Il protone, perché più massivo",
+        "L'elettrone, perché più leggero",
+        "Hanno la stessa lunghezza d'onda",
+        "Dipende dalla frequenza"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "A parità di velocità, il protone ha maggior quantità di moto ($p = mv$, con $m_p \\approx 1836 m_e$). Poiché $\\lambda = h/p$, il protone ha $\\lambda$ più piccola.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "de Broglie",
+        "massa",
+        "comparazione"
+      ]
     }
   ]
 }

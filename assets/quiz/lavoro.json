@@ -2414,6 +2414,1161 @@
                 "energia",
                 "joule"
             ]
+        },
+        {
+            "id": "lav_116",
+            "domanda": "Perché il lavoro è una grandezza scalare e non vettoriale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Natura del lavoro",
+            "opzioni": [
+                "Perché dipende solo dall'intensità della forza",
+                "Perché è il risultato di un prodotto scalare tra due vettori",
+                "Perché lo spostamento è sempre positivo",
+                "Perché la forza è sempre parallela al moto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro è il prodotto scalare $\\vec{F} \\cdot \\vec{s}$, operazione che restituisce uno scalare (positivo, negativo o nullo) e non un vettore.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "scalare",
+                "vettore",
+                "prodotto scalare",
+                "natura"
+            ]
+        },
+        {
+            "id": "lav_117",
+            "domanda": "Che significato fisico ha il lavoro negativo?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Interpretazione fisica",
+            "opzioni": [
+                "La forza aumenta l'energia cinetica del corpo",
+                "La forza sottrae energia al sistema",
+                "La forza non agisce sul corpo",
+                "La forza cambia direzione durante il moto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Un lavoro negativo indica che la forza si oppone al moto e sottrae energia cinetica al corpo, come nel caso dell'attrito.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lavoro negativo",
+                "significato fisico",
+                "energia",
+                "opposizione"
+            ]
+        },
+        {
+            "id": "lav_118",
+            "domanda": "Perché la forza peso è considerata conservativa?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forze conservative",
+            "opzioni": [
+                "Perché ha sempre la stessa direzione",
+                "Perché il suo lavoro dipende solo dalle posizioni iniziale e finale",
+                "Perché è proporzionale alla massa",
+                "Perché agisce solo verticalmente"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La forza peso è conservativa perché il suo lavoro dipende solo dalla differenza di quota, non dal percorso seguito.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "conservativa",
+                "forza peso",
+                "percorso",
+                "indipendenza"
+            ]
+        },
+        {
+            "id": "lav_119",
+            "domanda": "Quale delle seguenti affermazioni sul teorema lavoro-energia è corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Teorema lavoro-energia",
+            "opzioni": [
+                "Vale solo per forze costanti",
+                "Collega il lavoro totale alla variazione di energia cinetica",
+                "Vale solo in assenza di attrito",
+                "Si applica solo a moti rettilinei"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il teorema lavoro-energia afferma che $W_{tot} = \\Delta E_c$, ed è valido in generale, per qualsiasi tipo di forza e traiettoria.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "teorema",
+                "lavoro totale",
+                "energia cinetica",
+                "validità"
+            ]
+        },
+        {
+            "id": "lav_120",
+            "domanda": "Perché l'attrito non è una forza conservativa?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forze non conservative",
+            "opzioni": [
+                "Perché ha direzione variabile",
+                "Perché il suo lavoro dipende dal percorso seguito",
+                "Perché agisce solo su superfici ruvide",
+                "Perché è sempre di intensità minore del peso"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'attrito è non conservativo perché il suo lavoro (sempre negativo) dipende dalla lunghezza del percorso seguito, non solo dalle posizioni iniziale e finale.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "attrito",
+                "non conservativa",
+                "percorso",
+                "dissipazione"
+            ]
+        },
+        {
+            "id": "lav_121",
+            "domanda": "Che cosa significa che l'energia meccanica si conserva?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Conservazione energia",
+            "opzioni": [
+                "L'energia cinetica rimane costante",
+                "La somma di energia cinetica e potenziale rimane costante",
+                "L'energia potenziale aumenta sempre",
+                "Non ci sono forze che agiscono sul sistema"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In assenza di forze dissipative, l'energia meccanica totale $E_{mec} = E_c + E_p$ si conserva: può trasformarsi da cinetica a potenziale e viceversa, ma la somma resta costante.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "conservazione",
+                "energia meccanica",
+                "somma",
+                "costante"
+            ]
+        },
+        {
+            "id": "lav_122",
+            "domanda": "Perché la forza normale non compie lavoro su un corpo che si muove su una superficie?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forza normale",
+            "opzioni": [
+                "Perché ha sempre intensità nulla",
+                "Perché è sempre perpendicolare allo spostamento",
+                "Perché è una forza di reazione",
+                "Perché agisce solo in direzione verticale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La forza normale è sempre perpendicolare alla superficie, quindi perpendicolare allo spostamento del corpo: di conseguenza $W = F \\cdot s \\cdot \\cos 90° = 0$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza normale",
+                "perpendicolare",
+                "lavoro nullo",
+                "superficie"
+            ]
+        },
+        {
+            "id": "lav_123",
+            "domanda": "Che relazione c'è tra potenza istantanea e velocità?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Potenza istantanea",
+            "opzioni": [
+                "Sono inversamente proporzionali",
+                "La potenza istantanea è $P = \\vec{F} \\cdot \\vec{v}$",
+                "Non c'è alcuna relazione",
+                "La potenza dipende solo dall'accelerazione"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La potenza istantanea è data dal prodotto scalare tra forza e velocità: $P = \\vec{F} \\cdot \\vec{v}$, che esprime l'energia trasferita per unità di tempo in ogni istante.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "potenza istantanea",
+                "velocità",
+                "F·v",
+                "prodotto scalare"
+            ]
+        },
+        {
+            "id": "lav_124",
+            "domanda": "Cosa si intende per rendimento di una macchina?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Rendimento",
+            "opzioni": [
+                "Il rapporto tra energia utile ed energia fornita",
+                "La differenza tra energia iniziale e finale",
+                "La potenza massima sviluppabile",
+                "Il lavoro compiuto nell'unità di tempo"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il rendimento $\\eta$ è il rapporto tra l'energia (o lavoro) utile in uscita e l'energia totale fornita in ingresso: $\\eta = \\frac{E_{utile}}{E_{fornita}}$, sempre minore o uguale a 1.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "rendimento",
+                "rapporto",
+                "energia utile",
+                "fornita"
+            ]
+        },
+        {
+            "id": "lav_125",
+            "domanda": "Perché in presenza di attrito l'energia meccanica diminuisce?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Dissipazione",
+            "opzioni": [
+                "Perché la massa del corpo diminuisce",
+                "Perché parte dell'energia meccanica si trasforma in energia interna (calore)",
+                "Perché la velocità diventa zero",
+                "Perché la forza peso aumenta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'attrito è una forza dissipativa che trasforma energia meccanica in energia interna (calore), facendo diminuire l'energia meccanica totale del sistema.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "attrito",
+                "dissipazione",
+                "energia interna",
+                "calore"
+            ]
+        },
+        {
+            "id": "lav_126",
+            "domanda": "Quale tra le seguenti situazioni rappresenta un caso di lavoro motore?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Lavoro motore",
+            "opzioni": [
+                "Un freno che rallenta un'automobile",
+                "Una persona che solleva un peso",
+                "L'attrito che ferma un oggetto",
+                "La resistenza dell'aria su un proiettile"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro motore è positivo e fornisce energia al sistema: sollevare un peso richiede una forza nella direzione dello spostamento, compiendo lavoro positivo.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lavoro motore",
+                "positivo",
+                "energia fornita",
+                "sollevamento"
+            ]
+        },
+        {
+            "id": "lav_127",
+            "domanda": "Perché l'energia potenziale dipende dal sistema di riferimento scelto?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia potenziale",
+            "opzioni": [
+                "Perché la forza cambia con il sistema di riferimento",
+                "Perché la quota è relativa al livello scelto come riferimento",
+                "Perché la massa varia con la velocità",
+                "Perché l'accelerazione di gravità non è costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'energia potenziale gravitazionale $E_p = mgh$ dipende dalla quota $h$, che è sempre misurata rispetto a un livello di riferimento arbitrario. Solo le differenze di energia potenziale hanno significato fisico assoluto.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia potenziale",
+                "riferimento",
+                "quota",
+                "relatività"
+            ]
+        },
+        {
+            "id": "lav_128",
+            "domanda": "In un grafico forza-spostamento, cosa rappresenta l'area sottesa dalla curva?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Interpretazione grafica",
+            "opzioni": [
+                "La velocità finale",
+                "Il lavoro compiuto dalla forza",
+                "L'energia potenziale",
+                "La potenza sviluppata"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel grafico $F$ vs $s$, l'area sotto la curva rappresenta il lavoro: $W = \\int F \\, ds$. Per forze costanti è semplicemente $F \\cdot s$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "grafico",
+                "forza-spostamento",
+                "area",
+                "integrale"
+            ]
+        },
+        {
+            "id": "lav_129",
+            "domanda": "Perché due corpi con la stessa energia cinetica possono avere velocità diverse?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia cinetica",
+            "opzioni": [
+                "Perché l'energia cinetica non dipende dalla velocità",
+                "Perché hanno masse diverse",
+                "Perché si muovono in direzioni diverse",
+                "Perché agiscono forze diverse su di essi"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché $E_c = \\frac{1}{2}mv^2$, a parità di energia cinetica, un corpo più massiccio ha velocità minore e viceversa.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia cinetica",
+                "massa",
+                "velocità",
+                "relazione"
+            ]
+        },
+        {
+            "id": "lav_130",
+            "domanda": "Quale affermazione sul lavoro di una forza variabile è corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forza variabile",
+            "opzioni": [
+                "Non è possibile calcolarlo",
+                "Si calcola tramite integrale: $W = \\int \\vec{F} \\cdot d\\vec{s}$",
+                "È sempre nullo",
+                "Vale sempre $F \\cdot s$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per una forza variabile, il lavoro si calcola come integrale del prodotto scalare tra forza e spostamento elementare lungo il percorso.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza variabile",
+                "integrale",
+                "percorso",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "lav_131",
+            "domanda": "Che differenza c'è tra potenza media e potenza istantanea?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Tipi di potenza",
+            "opzioni": [
+                "La potenza media considera un intervallo di tempo finito, quella istantanea un istante preciso",
+                "Sono la stessa cosa",
+                "La potenza media è sempre maggiore",
+                "Differiscono solo per le unità di misura"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "La potenza media è $P_m = W/\\Delta t$ su un intervallo finito; la potenza istantanea è $P = \\vec{F} \\cdot \\vec{v}$ in un preciso istante.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "potenza media",
+                "potenza istantanea",
+                "intervallo",
+                "istante"
+            ]
+        },
+        {
+            "id": "lav_132",
+            "domanda": "Perché l'energia potenziale elastica dipende dal quadrato dell'allungamento?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia elastica",
+            "opzioni": [
+                "Perché la forza elastica è costante",
+                "Perché la forza elastica è proporzionale all'allungamento (legge di Hooke)",
+                "Perché l'energia è sempre quadratica",
+                "È solo un'approssimazione matematica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dalla legge di Hooke $F = kx$, integrando per trovare il lavoro si ottiene $E_p = \\frac{1}{2}kx^2$. La dipendenza quadratica deriva dall'integrazione di una forza lineare.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "energia elastica",
+                "quadrato",
+                "Hooke",
+                "integrazione"
+            ]
+        },
+        {
+            "id": "lav_133",
+            "domanda": "Cosa si può affermare sul lavoro compiuto dalla tensione di un filo in un pendolo?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Tensione",
+            "opzioni": [
+                "È sempre positivo",
+                "È sempre nullo perché la tensione è sempre perpendicolare alla velocità",
+                "Dipende dalla massa del pendolo",
+                "È uguale al lavoro del peso"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La tensione del filo è sempre diretta verso il punto di sospensione e perpendicolare alla velocità istantanea (tangente alla traiettoria), quindi non compie lavoro.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "tensione",
+                "pendolo",
+                "perpendicolare",
+                "lavoro nullo"
+            ]
+        },
+        {
+            "id": "lav_134",
+            "domanda": "Qual è il significato fisico del kilowattora (kWh)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Unità di misura",
+            "opzioni": [
+                "È un'unità di potenza",
+                "È un'unità di energia (lavoro)",
+                "È un'unità di tempo",
+                "È un'unità di forza"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il kilowattora è un'unità di energia: rappresenta l'energia fornita da una potenza di 1 kW in 1 ora. Equivale a $1\\,\\text{kWh} = 3.6 \\times 10^6\\,\\text{J}$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "kilowattora",
+                "kWh",
+                "energia",
+                "unità"
+            ]
+        },
+        {
+            "id": "lav_135",
+            "domanda": "In quale situazione l'energia meccanica di un sistema può aumentare?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia meccanica",
+            "opzioni": [
+                "Mai, è sempre costante",
+                "Quando forze esterne non conservative compiono lavoro positivo",
+                "Solo in presenza di attrito",
+                "Quando la velocità diminuisce"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'energia meccanica può aumentare se forze esterne (non conservative rispetto al sistema) compiono lavoro positivo, fornendo energia al sistema.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia meccanica",
+                "aumento",
+                "forze esterne",
+                "lavoro positivo"
+            ]
+        },
+        {
+            "id": "lav_136",
+            "domanda": "Perché il lavoro della forza centripeta nel moto circolare uniforme è nullo?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Moto circolare",
+            "opzioni": [
+                "Perché la forza ha modulo variabile",
+                "Perché è sempre perpendicolare alla velocità",
+                "Perché la traiettoria è circolare",
+                "Perché non c'è accelerazione"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel moto circolare, la forza centripeta è diretta verso il centro (radiale) mentre la velocità è tangente alla traiettoria: essendo perpendicolari, il lavoro è nullo.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "centripeta",
+                "circolare",
+                "perpendicolare",
+                "lavoro nullo"
+            ]
+        },
+        {
+            "id": "lav_137",
+            "domanda": "Cosa rappresenta l'energia interna in relazione al lavoro dell'attrito?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia interna",
+            "opzioni": [
+                "L'energia potenziale persa",
+                "L'energia meccanica trasformata in energia termica e deformazioni microscopiche",
+                "L'energia cinetica guadagnata",
+                "L'energia necessaria per vincere la forza normale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'attrito trasforma energia meccanica in energia interna: calore e deformazioni microscopiche delle superfici a contatto. Questa energia non è recuperabile come energia meccanica.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia interna",
+                "attrito",
+                "calore",
+                "irreversibile"
+            ]
+        },
+        {
+            "id": "lav_138",
+            "domanda": "Quale delle seguenti trasformazioni energetiche è reversibile dal punto di vista termodinamico?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Reversibilità",
+            "opzioni": [
+                "Energia meccanica in calore per attrito",
+                "Energia potenziale gravitazionale in energia cinetica (senza attriti)",
+                "Energia elettrica in calore in una resistenza",
+                "Energia cinetica dissipata dall'attrito dell'aria"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In assenza di attrito, la trasformazione tra energia potenziale e cinetica è reversibile: il sistema può tornare allo stato iniziale senza perdite energetiche.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "reversibile",
+                "irreversibile",
+                "trasformazione",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "lav_139",
+            "domanda": "Se due forze compiono rispettivamente lavori $W_1 = 50$ J e $W_2 = -30$ J su un corpo, qual è il significato fisico del lavoro totale?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Lavoro totale",
+            "opzioni": [
+                "La prima forza domina sempre",
+                "Il lavoro netto è $20$ J e rappresenta l'energia trasferita complessivamente al corpo",
+                "Le due forze si annullano",
+                "Il lavoro totale è sempre nullo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro totale è la somma algebrica: $W_{tot} = 50 + (-30) = 20$ J, che rappresenta la variazione netta di energia cinetica del corpo secondo il teorema lavoro-energia.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lavoro totale",
+                "somma algebrica",
+                "energia netta",
+                "teorema"
+            ]
+        },
+        {
+            "id": "lav_140",
+            "domanda": "Perché il concetto di energia potenziale ha senso solo per forze conservative?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia potenziale",
+            "opzioni": [
+                "Perché solo le forze conservative hanno intensità costante",
+                "Perché solo per forze conservative il lavoro non dipende dal percorso",
+                "Perché le forze non conservative non compiono mai lavoro",
+                "È solo una convenzione matematica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'energia potenziale è definibile solo per forze conservative perché solo in questo caso il lavoro dipende esclusivamente dalle posizioni iniziale e finale, permettendo di associare un valore univoco di energia a ogni posizione.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "energia potenziale",
+                "conservativa",
+                "percorso",
+                "univocità"
+            ]
+        },
+        {
+            "id": "lav_141",
+            "domanda": "Quale delle seguenti affermazioni spiega meglio perché un satellite in orbita circolare mantiene energia cinetica costante?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Applicazioni",
+            "opzioni": [
+                "Perché non ci sono forze che agiscono su di esso",
+                "Perché la forza gravitazionale è sempre perpendicolare alla velocità",
+                "Perché si muove nel vuoto",
+                "Perché la massa del satellite è costante"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nel moto circolare, la forza gravitazionale è radiale (verso il centro) mentre la velocità è tangenziale, quindi perpendicolare. Il lavoro è nullo e l'energia cinetica rimane costante.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "satellite",
+                "orbita",
+                "perpendicolare",
+                "energia costante"
+            ]
+        },
+        {
+            "id": "lav_142",
+            "domanda": "In un urto anelastico, quale forma di energia NON si conserva?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Urti",
+            "opzioni": [
+                "L'energia totale del sistema",
+                "L'energia meccanica",
+                "La quantità di moto",
+                "L'energia chimica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In un urto anelastico l'energia meccanica non si conserva perché parte viene dissipata in deformazioni, calore e suono. Si conservano invece l'energia totale (primo principio termodinamica) e la quantità di moto.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto anelastico",
+                "energia meccanica",
+                "dissipazione",
+                "conservazione"
+            ]
+        },
+        {
+            "id": "lav_143",
+            "domanda": "Perché quando si comprime una molla il lavoro compiuto dipende dal quadrato dello spostamento?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forza elastica",
+            "opzioni": [
+                "Perché la forza elastica è costante",
+                "Perché la forza elastica aumenta linearmente con lo spostamento",
+                "È solo una convenzione",
+                "Perché la molla si riscalda"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nella legge di Hooke, $F = kx$ aumenta linearmente. Il lavoro è l'integrale di una funzione lineare, quindi risulta proporzionale a $x^2$: $W = \\int_0^x kx' \\, dx' = \\frac{1}{2}kx^2$.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "molla",
+                "quadrato",
+                "forza variabile",
+                "integrale"
+            ]
+        },
+        {
+            "id": "lav_144",
+            "domanda": "Qual è la condizione necessaria affinché il lavoro di una forza risultante sia nullo?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Condizioni",
+            "opzioni": [
+                "La forza deve essere nulla",
+                "L'energia cinetica deve rimanere costante",
+                "Il corpo deve essere fermo",
+                "Non deve esserci attrito"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dal teorema lavoro-energia, $W_{tot} = \\Delta E_c$. Se il lavoro totale è nullo, allora $\\Delta E_c = 0$, cioè l'energia cinetica rimane costante. Questo può avvenire anche con forze non nulle che si bilanciano.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lavoro nullo",
+                "energia cinetica",
+                "costante",
+                "condizione"
+            ]
+        },
+        {
+            "id": "lav_145",
+            "domanda": "Cosa succede all'energia potenziale elastica quando si dimezza l'allungamento di una molla?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energia elastica",
+            "opzioni": [
+                "Si dimezza",
+                "Rimane invariata",
+                "Diventa un quarto",
+                "Raddoppia"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Poiché $E_p = \\frac{1}{2}kx^2$, se $x$ diventa $x/2$, allora $E_p$ diventa $\\frac{1}{2}k(x/2)^2 = \\frac{1}{4} \\cdot \\frac{1}{2}kx^2$, cioè un quarto del valore iniziale.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia elastica",
+                "proporzionalità",
+                "quadrato",
+                "variazione"
+            ]
+        },
+        {
+            "id": "lav_146",
+            "domanda": "Quale principio fisico fondamentale garantisce che l'energia totale si conservi sempre?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Principi",
+            "opzioni": [
+                "Il teorema lavoro-energia",
+                "Il primo principio della termodinamica",
+                "La legge di conservazione della quantità di moto",
+                "Il principio di inerzia"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il primo principio della termodinamica afferma che l'energia totale (comprese tutte le forme: meccanica, termica, chimica, ecc.) si conserva in un sistema isolato.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "conservazione energia",
+                "primo principio",
+                "termodinamica",
+                "fondamentale"
+            ]
+        },
+        {
+            "id": "lav_147",
+            "domanda": "In quale situazione un corpo può avere energia cinetica nulla ma energia potenziale non nulla?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Energie",
+            "opzioni": [
+                "Mai, le due energie sono sempre uguali",
+                "Quando il corpo è fermo a una certa quota",
+                "Solo in moto circolare uniforme",
+                "Quando non agiscono forze"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Un corpo fermo ($v = 0$, quindi $E_c = 0$) posizionato a una quota $h$ sopra il livello di riferimento ha energia potenziale $E_p = mgh \\neq 0$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "energia cinetica",
+                "energia potenziale",
+                "corpo fermo",
+                "quota"
+            ]
+        },
+        {
+            "id": "lav_148",
+            "domanda": "Perché l'energia cinetica è sempre positiva o nulla, mentre il lavoro può essere negativo?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Nature diverse",
+            "opzioni": [
+                "Perché l'energia cinetica dipende da $v^2$ (sempre positivo), il lavoro da $\\cos\\theta$ (può essere negativo)",
+                "Perché il lavoro si misura in joule",
+                "È solo una convenzione",
+                "Perché la massa è sempre positiva"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "L'energia cinetica $E_c = \\frac{1}{2}mv^2$ dipende dal quadrato della velocità, quindi è sempre $\\geq 0$. Il lavoro $W = F \\cdot s \\cdot \\cos\\theta$ dipende dall'angolo e può essere negativo se $90° < \\theta \\leq 180°$.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia cinetica positiva",
+                "lavoro negativo",
+                "quadrato",
+                "coseno"
+            ]
+        },
+        {
+            "id": "lav_149",
+            "domanda": "Che relazione esiste tra la variazione di energia potenziale gravitazionale e il lavoro della forza peso?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Relazioni",
+            "opzioni": [
+                "Sono indipendenti",
+                "Sono uguali in modulo ma di segno opposto",
+                "Sono sempre uguali",
+                "La relazione dipende dalla massa"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per una forza conservativa vale $W_{peso} = -\\Delta E_p$. Se il corpo scende, il peso compie lavoro positivo e l'energia potenziale diminuisce; se sale, il peso compie lavoro negativo e $E_p$ aumenta.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "energia potenziale",
+                "lavoro peso",
+                "segno opposto",
+                "relazione"
+            ]
+        },
+        {
+            "id": "lav_150",
+            "domanda": "Quale affermazione sul principio di conservazione dell'energia meccanica è corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "Vale sempre, in qualsiasi situazione",
+                "Vale solo per forze conservative, in assenza di forze dissipative",
+                "Vale solo per corpi in caduta libera",
+                "Non vale mai nella realtà"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'energia meccanica $E_{mec} = E_c + E_p$ si conserva solo quando agiscono esclusivamente forze conservative. Se ci sono forze dissipative (attrito, resistenza dell'aria), l'energia meccanica diminuisce.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "conservazione",
+                "energia meccanica",
+                "forze conservative",
+                "condizioni"
+            ]
+        },
+        {
+            "id": "lav_151",
+            "domanda": "Perché in una montagna russa (senza attrito) la velocità nel punto più basso è massima?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Applicazioni",
+            "opzioni": [
+                "Perché la forza è massima",
+                "Perché l'energia potenziale è minima e si è convertita in energia cinetica",
+                "Perché la massa aumenta",
+                "Perché l'accelerazione è massima"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per conservazione dell'energia meccanica, nel punto più basso l'energia potenziale è minima, quindi l'energia cinetica è massima, e di conseguenza anche la velocità.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "montagna russa",
+                "conservazione",
+                "conversione energia",
+                "velocità massima"
+            ]
+        },
+        {
+            "id": "lav_152",
+            "domanda": "Cosa rappresenta fisicamente il lavoro compiuto da tutte le forze in un sistema?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Significato fisico",
+            "opzioni": [
+                "La variazione di energia potenziale",
+                "La variazione di energia cinetica del sistema",
+                "La potenza sviluppata",
+                "La quantità di moto finale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il teorema lavoro-energia afferma che il lavoro totale di tutte le forze uguaglia la variazione di energia cinetica: $W_{tot} = \\Delta E_c$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "lavoro totale",
+                "significato",
+                "energia cinetica",
+                "teorema"
+            ]
+        },
+        {
+            "id": "lav_153",
+            "domanda": "Perché sollevare un oggetto molto lentamente o rapidamente (alla stessa altezza) richiede lo stesso lavoro contro la gravità?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Indipendenza dal tempo",
+            "opzioni": [
+                "Perché il lavoro non dipende dal tempo impiegato, ma solo da forza e spostamento",
+                "In realtà richiede lavoro diverso",
+                "Perché la potenza è la stessa",
+                "Solo se non c'è attrito"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Il lavoro $W = F \\cdot s$ dipende solo dalla forza applicata e dallo spostamento, non dal tempo. La velocità di sollevamento influenza solo la potenza ($P = W/t$), non il lavoro totale.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lavoro",
+                "indipendenza tempo",
+                "potenza",
+                "sollevamento"
+            ]
+        },
+        {
+            "id": "lav_154",
+            "domanda": "Quale delle seguenti trasformazioni energetiche avviene in una dinamo (generatore)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Trasformazioni energetiche",
+            "opzioni": [
+                "Energia elettrica in energia meccanica",
+                "Energia meccanica in energia elettrica",
+                "Energia termica in energia elettrica",
+                "Energia chimica in energia meccanica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Una dinamo trasforma energia meccanica (rotazione) in energia elettrica tramite induzione elettromagnetica. Il lavoro meccanico viene convertito in energia elettrica.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "dinamo",
+                "trasformazione",
+                "meccanica-elettrica",
+                "conversione"
+            ]
+        },
+        {
+            "id": "lav_155",
+            "domanda": "In quale caso il lavoro della forza risultante è uguale al lavoro della sola forza peso?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Caduta libera",
+            "opzioni": [
+                "Sempre",
+                "In caduta libera (solo peso agisce)",
+                "Mai",
+                "Solo su piano inclinato"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In caduta libera, l'unica forza agente è il peso (trascurando la resistenza dell'aria), quindi $W_{tot} = W_{peso}$. In altre situazioni agiscono anche altre forze.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "caduta libera",
+                "forza peso",
+                "lavoro totale",
+                "unica forza"
+            ]
+        },
+        {
+            "id": "lav_156",
+            "domanda": "Perché un pendolo (ideale, senza attriti) non supera mai l'altezza da cui è stato rilasciato?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Pendolo",
+            "opzioni": [
+                "Perché la tensione lo frena",
+                "Per conservazione dell'energia meccanica: non può acquistare più energia potenziale di quella iniziale",
+                "Perché la massa è costante",
+                "Perché la velocità si annulla"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In assenza di attriti, l'energia meccanica si conserva. Partendo da altezza $h$ con $E_c = 0$, l'energia totale è $E = mgh$. Non può risalire oltre $h$ perché richiederebbe $E_p > mgh$, violando la conservazione.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "pendolo",
+                "conservazione",
+                "altezza massima",
+                "energia"
+            ]
+        },
+        {
+            "id": "lav_157",
+            "domanda": "Quale grandezza fisica misura l'efficienza con cui una macchina converte l'energia in ingresso in lavoro utile?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Efficienza",
+            "opzioni": [
+                "La potenza",
+                "Il rendimento",
+                "L'energia cinetica",
+                "Il lavoro totale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il rendimento $\\eta = \\frac{L_{utile}}{E_{fornita}}$ misura l'efficienza energetica. Un rendimento di 0.8 (80%) significa che l'80% dell'energia fornita viene convertita in lavoro utile.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "rendimento",
+                "efficienza",
+                "conversione",
+                "rapporto"
+            ]
+        },
+        {
+            "id": "lav_158",
+            "domanda": "Perché è impossibile costruire una macchina con rendimento maggiore del 100%?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Limiti termodinamici",
+            "opzioni": [
+                "Per limiti tecnologici attuali",
+                "Perché violerebbe il primo principio della termodinamica (conservazione dell'energia)",
+                "Perché costa troppo",
+                "È possibile, ma solo in teoria"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Un rendimento $>$ 100% significherebbe produrre più energia di quella fornita, violando la conservazione dell'energia (primo principio della termodinamica). Il massimo teorico è $\\eta = 1$ (100%).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "rendimento",
+                "100%",
+                "primo principio",
+                "impossibilità"
+            ]
+        },
+        {
+            "id": "lav_159",
+            "domanda": "Qual è la differenza fondamentale tra lavoro ed energia?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Concetti fondamentali",
+            "opzioni": [
+                "Hanno unità di misura diverse",
+                "Il lavoro è un trasferimento di energia, l'energia è una proprietà del sistema",
+                "Non c'è alcuna differenza",
+                "Il lavoro è sempre positivo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'energia è una proprietà del sistema (capacità di compiere lavoro), mentre il lavoro è il processo di trasferimento di energia da un sistema all'altro tramite forze.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lavoro",
+                "energia",
+                "differenza",
+                "trasferimento"
+            ]
+        },
+        {
+            "id": "lav_160",
+            "domanda": "Perché un'automobile in movimento rettilineo uniforme su strada orizzontale non aumenta la sua energia cinetica?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Moto uniforme",
+            "opzioni": [
+                "Perché non ci sono forze",
+                "Perché la forza motrice bilancia l'attrito, quindi il lavoro totale è nullo",
+                "Perché la velocità è troppo bassa",
+                "Perché l'energia si conserva sempre"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In moto rettilineo uniforme, $v$ è costante quindi $E_c$ è costante. Questo implica $W_{tot} = 0$: la forza motrice del motore bilancia esattamente le forze resistenti (attrito, aria).",
+            "difficolta": "media",
+            "paroleChiave": [
+                "moto uniforme",
+                "forze bilanciate",
+                "energia costante",
+                "lavoro nullo"
+            ]
+        },
+        {
+            "id": "lav_161",
+            "domanda": "In un piano inclinato senza attrito, come varia l'energia meccanica di un corpo che scende?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Piano inclinato",
+            "opzioni": [
+                "Aumenta",
+                "Diminuisce",
+                "Rimane costante",
+                "Dipende dall'angolo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Senza attrito agiscono solo forze conservative (peso e normale, ma quest'ultima non compie lavoro). L'energia meccanica si conserva: $E_{mec} = E_c + E_p = costante$.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "piano inclinato",
+                "conservazione",
+                "energia meccanica",
+                "senza attrito"
+            ]
+        },
+        {
+            "id": "lav_162",
+            "domanda": "Quale delle seguenti affermazioni sulla forza elastica di una molla ideale è corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forza elastica",
+            "opzioni": [
+                "È costante durante la compressione",
+                "È una forza conservativa",
+                "Compie sempre lavoro negativo",
+                "Non dipende dalla costante elastica"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La forza elastica ideale è conservativa: il suo lavoro dipende solo dalle posizioni iniziale e finale (allungamenti), non dal percorso. Si può definire un'energia potenziale elastica.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza elastica",
+                "conservativa",
+                "molla",
+                "ideale"
+            ]
+        },
+        {
+            "id": "lav_163",
+            "domanda": "Perché per mantenere un libro sollevato a quota costante non si compie lavoro (dal punto di vista fisico)?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Lavoro nullo",
+            "opzioni": [
+                "Perché la forza è verticale",
+                "Perché non c'è spostamento ($s = 0$), quindi $W = F \\cdot s = 0$",
+                "Perché il libro non si muove orizzontalmente",
+                "In realtà si compie lavoro"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro è definito come $W = F \\cdot s$. Se non c'è spostamento ($s = 0$), il lavoro è nullo anche se si esercita una forza. Nota: dal punto di vista fisiologico i muscoli consumano energia.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lavoro nullo",
+                "spostamento zero",
+                "forza statica",
+                "definizione"
+            ]
+        },
+        {
+            "id": "lav_164",
+            "domanda": "Quale concetto spiega perché è più faticoso salire le scale di corsa piuttosto che lentamente?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Potenza",
+            "opzioni": [
+                "Il lavoro totale è maggiore",
+                "La potenza richiesta è maggiore",
+                "L'energia potenziale finale è maggiore",
+                "La forza di gravità è maggiore"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il lavoro contro la gravità è lo stesso ($W = mgh$), ma salendo di corsa il tempo è minore, quindi la potenza $P = W/t$ è maggiore. La fatica è legata alla potenza richiesta.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "potenza",
+                "fatica",
+                "tempo",
+                "lavoro costante"
+            ]
+        },
+        {
+            "id": "lav_165",
+            "domanda": "In quale condizione il modulo della velocità di un corpo aumenta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Dinamica",
+            "opzioni": [
+                "Quando agisce una forza qualsiasi",
+                "Quando il lavoro totale è positivo",
+                "Quando la forza è perpendicolare al moto",
+                "Quando l'energia potenziale aumenta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Se $W_{tot} > 0$, allora $\\Delta E_c > 0$, quindi l'energia cinetica aumenta. Poiché $E_c = \\frac{1}{2}mv^2$, questo implica che il modulo della velocità aumenta.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "velocità",
+                "lavoro positivo",
+                "energia cinetica",
+                "aumento"
+            ]
+        },
+        {
+            "id": "lav_166",
+            "domanda": "Qual è il significato fisico dell'area sotto il grafico potenza-tempo?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Interpretazione grafica",
+            "opzioni": [
+                "La forza totale",
+                "Il lavoro compiuto",
+                "L'energia potenziale",
+                "La velocità finale"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché $P = \\frac{dW}{dt}$, integrando si ottiene $W = \\int P \\, dt$, che corrisponde all'area sotto il grafico $P$ vs $t$.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "grafico",
+                "potenza-tempo",
+                "area",
+                "integrale"
+            ]
+        },
+        {
+            "id": "lav_167",
+            "domanda": "Perché le forze interne in un sistema isolato non modificano l'energia cinetica totale del centro di massa?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Forze interne",
+            "opzioni": [
+                "Perché sono sempre nulle",
+                "Perché per il terzo principio di Newton si annullano a coppie, non compiendo lavoro netto sul sistema",
+                "Perché agiscono solo verticalmente",
+                "Dipende dal tipo di sistema"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le forze interne formano coppie azione-reazione che si annullano (terzo principio). Il lavoro netto delle forze interne è nullo, quindi non cambiano l'energia cinetica del centro di massa del sistema.",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "forze interne",
+                "terzo principio",
+                "centro di massa",
+                "sistema"
+            ]
+        },
+        {
+            "id": "lav_168",
+            "domanda": "Quale affermazione sul lavoro della resistenza dell'aria è corretta?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Resistenza aria",
+            "opzioni": [
+                "È sempre positivo",
+                "È sempre negativo perché si oppone al moto",
+                "Dipende dalla massa del corpo",
+                "È sempre nullo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La resistenza dell'aria è una forza dissipativa opposta alla direzione del moto, quindi forma un angolo di 180° con lo spostamento. Il suo lavoro è sempre negativo: dissipa energia meccanica.",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "resistenza aria",
+                "lavoro negativo",
+                "dissipazione",
+                "opposizione"
+            ]
+        },
+        {
+            "id": "lav_169",
+            "domanda": "Quale relazione esiste tra il lavoro compiuto per accelerare un corpo e la sua massa?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Dipendenza dalla massa",
+            "opzioni": [
+                "Il lavoro non dipende dalla massa",
+                "A parità di variazione di velocità, il lavoro è proporzionale alla massa",
+                "Il lavoro è inversamente proporzionale alla massa",
+                "Dipende solo dalla forza applicata"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Dal teorema lavoro-energia, $W = \\Delta E_c = \\frac{1}{2}m(v_f^2 - v_i^2)$. A parità di $\\Delta v$, il lavoro è direttamente proporzionale alla massa: un corpo più massiccio richiede più lavoro per la stessa variazione di velocità.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "lavoro",
+                "massa",
+                "proporzionalità",
+                "accelerazione"
+            ]
+        },
+        {
+            "id": "lav_170",
+            "domanda": "Perché in una collisione elastica tra due corpi si conserva sia la quantità di moto che l'energia cinetica?",
+            "categoria": "Lavoro",
+            "sottocategoria": "Urti elastici",
+            "opzioni": [
+                "Perché non agiscono forze esterne e non c'è dissipazione di energia",
+                "Perché i corpi hanno la stessa massa",
+                "Solo se le velocità sono uguali",
+                "È solo un'approssimazione teorica"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In un urto elastico, senza forze esterne si conserva la quantità di moto (sempre). Inoltre, non essendoci dissipazione (deformazioni permanenti, calore), si conserva anche l'energia cinetica totale del sistema.",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto elastico",
+                "conservazione",
+                "quantità di moto",
+                "energia cinetica"
+            ]
         }
     ]
 }

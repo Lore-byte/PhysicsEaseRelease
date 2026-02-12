@@ -2268,6 +2268,1203 @@
         "variazioni corrente",
         "autoinduzione"
       ]
+    },
+    {
+      "id": "mag_109",
+      "domanda": "Un magnete permanente genera un campo magnetico in assenza di corrente elettrica. Quale meccanismo microscopico spiega questo fenomeno?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Origine del magnetismo",
+      "opzioni": [
+        "Il movimento orbitale degli elettroni attorno al nucleo genera campi magnetici che non si annullano completamente",
+        "I protoni del nucleo si muovono producendo il campo magnetico",
+        "Il magnetismo è una proprietà intrinseca della materia indipendente dalle particelle cariche",
+        "Il campo magnetico terrestre polarizza gli atomi del materiale"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In un magnete permanente, il momento magnetico orbitale e di spin degli elettroni è parzialmente allineato, generando un momento magnetico macroscopico netto. Nel ferro, cobalto e nichel questo effetto è particolarmente pronunciato (ferromagnetismo).",
+      "difficolta": "media",
+      "paroleChiave": [
+        "magnete permanente",
+        "momento magnetico",
+        "elettroni",
+        "ferromagnetismo"
+      ]
+    },
+    {
+      "id": "mag_110",
+      "domanda": "Perché il riscaldamento distrugge il magnetismo permanente di un materiale ferromagnetico?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Temperatura e magnetismo",
+      "opzioni": [
+        "Il calore aumenta l'agitazione termica, disallineando i momenti magnetici precedentemente allineati",
+        "Il calore riduce la carica degli elettroni nel materiale",
+        "Il calore converte il ferro in un materiale paramagnetico permanente",
+        "L'agitazione termica aumenta la velocità dei nuclei, amplificando il campo magnetico"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Ad una temperatura critica chiamata temperatura di Curie, l'agitazione termica causa il disallineamento casuale dei momenti magnetici atomici. Al di sopra di questa temperatura, il materiale ferromagnetico diventa paramagnetico e perde il suo magnetismo permanente.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "temperatura",
+        "Curie",
+        "disallineamento",
+        "agitazione termica"
+      ]
+    },
+    {
+      "id": "mag_111",
+      "domanda": "Due lunghi fili rettilinei paralleli percorsi da correnti nella stessa direzione si attraggono. Quale principio spiega questo comportamento?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Forze tra conduttori",
+      "opzioni": [
+        "Ogni filo genera un campo magnetico che esercita una forza sull'altro filo percorso da corrente",
+        "Le correnti uguali si attraggono per un principio fisico analogo all'attrazione nucleare",
+        "Il movimento degli elettroni in una direzione crea una forza dovuta solely alle cariche",
+        "I campi magnetici all'interno dei fili si indeboliscono, causando attrazione reciproca"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Ogni filo percorso da corrente genera un campo magnetico $B = \\frac{\\mu_0 I}{2\\pi r}$ intorno a sé. L'altro filo, percorso da corrente nello stesso verso, subisce una forza di attrazione nel campo del primo filo. Se le correnti sono in verso opposto, il risultato è una repulsione.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "fili paralleli",
+        "attrazione",
+        "correnti",
+        "campo magnetico"
+      ]
+    },
+    {
+      "id": "mag_112",
+      "domanda": "In un motore elettrico a corrente continua, il principio di funzionamento si basa su:",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Motori elettrici",
+      "opzioni": [
+        "Una bobina di filo conduttore percorsa da corrente, posta in un campo magnetico, sperimenta una coppia di forze che la fa ruotare",
+        "La corrente continua usura i contatti causando rotazione",
+        "Un campo magnetico variabile induce correnti che causano rotazione",
+        "La resistenza del filo genera calore che causa dilatazione e movimento"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Quando una bobina percorsa da corrente è immersa in un campo magnetico uniforme, le forze di Lorentz agiscono su i lati della bobina in direzioni opposte, generando una coppia (momento torcente). Il commutatore assicura che la corrente cambi direzione ogni mezzo giro, mantenendo la rotazione continua.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "motore",
+        "coppia",
+        "Lorentz",
+        "commutatore"
+      ]
+    },
+    {
+      "id": "mag_113",
+      "domanda": "Un generatore di corrente continua funziona invertendo il principio del motore. Quale grandezza fisica cambia direzione ogni mezzo giro per produrre corrente continua?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Generatori",
+      "opzioni": [
+        "La corrente indotta (grazie al commutatore che commuta i contatti)",
+        "Il flusso magnetico attraverso la bobina",
+        "La velocità di rotazione della bobina",
+        "L'intensità del campo magnetico esterno"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Quando una bobina ruota in un campo magnetico, il flusso cambia sinusoidalmente, inducendo una f.e.m. sinusoidale. Il commutatore (contatti a spazzole) inverte i collegamenti al circuito esterno ogni mezzo giro, trasformando la corrente alternata in corrente continua pulsante.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "generatore",
+        "commutatore",
+        "flusso",
+        "corrente continua"
+      ]
+    },
+    {
+      "id": "mag_114",
+      "domanda": "Un trasformatore ideale senza perdite ha spira primaria con $N_1 = 100$ spire e secondaria con $N_2 = 10$ spire. Se la tensione primaria è $V_1 = 220$ V, quale sarà la tensione secondaria $V_2$?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Trasformatori (concetto)",
+      "opzioni": [
+        "22 V (il trasformatore abbassa la tensione di un fattore $N_1/N_2$)",
+        "2200 V (il trasformatore alza la tensione di un fattore $N_1/N_2$)",
+        "220 V (la tensione non cambia nel trasformatore)",
+        "4.4 V (secondo una formula empirica del trasformatore)"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In un trasformatore ideale vale: $\\frac{V_2}{V_1} = \\frac{N_2}{N_1}$. Quindi $V_2 = V_1 \\cdot \\frac{N_2}{N_1} = 220 \\cdot \\frac{10}{100} = 22$ V. Questo è un trasformatore riduttore.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "trasformatore",
+        "N1",
+        "N2",
+        "rapporto spire"
+      ]
+    },
+    {
+      "id": "mag_115",
+      "domanda": "Nel funzionamento di un trasformatore, quale legge fisica consente il trasferimento di energia tra il circuito primario e secondario in assenza di contatto diretto?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Trasformatori (principio)",
+      "opzioni": [
+        "La legge di Faraday-Lenz: la variazione di flusso magnetico nel nucleo ferromagnetico induce una f.e.m. nel circuito secondario",
+        "La legge di Coulomb: il campo elettrico varia nel nucleo",
+        "La legge di Ampère: il campo presente nel nucleo accelera gli elettroni",
+        "La conservazione della carica: gli elettroni migrano dal primo al secondo avvolgimento"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel trasformatore, una corrente alternata nel circuito primario genera un flusso magnetico variabile nel nucleo di ferro. Questo flusso mutevole, secondo la legge di Faraday-Lenz, induce una f.e.m. nel circuito secondario proporzionale al rapporto del numero di spire.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "trasformatore",
+        "Faraday",
+        "flusso variabile",
+        "induzione"
+      ]
+    },
+    {
+      "id": "mag_116",
+      "domanda": "Una particella carica si muove in un campo magnetico uniforme con velocità perpendicolare al campo. Quale affermazione è FALSA regarding il moto risultante?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Moto in campo magnetico",
+      "opzioni": [
+        "Il modulo della velocità rimane costante durante il moto",
+        "La particella segue una traiettoria circolare nel piano perpendicolare a B",
+        "La forza magnetica agisce come forza centripeta",
+        "L'energia cinetica della particella aumenta continuamente nel tempo"
+      ],
+      "rispostaCorretta": 3,
+      "spiegazione": "La forza magnetica essendo perpendicolare alla velocità non compie lavoro (W = F·v·cosθ = 0, dove θ = 90°). Quindi l'energia cinetica rimane costante. Il modulo della velocità è costante, e solo la direzione cambia, come in un moto circolare uniforme.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "moto circolare",
+        "energia",
+        "velocità",
+        "lavoro"
+      ]
+    },
+    {
+      "id": "mag_117",
+      "domanda": "La frequenza ciclotrone di una particella carica in un campo magnetico B è $f_c = \\frac{qB}{2\\pi m}$. Quale affermazione è corretta?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Frequenza ciclotrone",
+      "opzioni": [
+        "La frequenza è indipendente dalla velocità della particella: tutte le particelle dello stesso tipo girano intorno a B con la stessa frequenza",
+        "La frequenza aumenta con la velocità della particella",
+        "La frequenza dipende dal raggio orbita della particella",
+        "Particelle con lo stesso rapporto q/m ma diverse velocità hanno frequenze diverse"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Dalla formula $f_c = \\frac{qB}{2\\pi m}$, la frequenza dipende solo dalla carica specifica (q/m) e dal campo B, non dalla velocità. Questo è un risultato fisicamente importante: la frequenza di ciclotrone è una caratteristica della particella e della sua interazione con il campo, indipendente dalla velocità di ingresso.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "frequenza ciclotrone",
+        "q/m",
+        "velocità indipendente",
+        "orbita"
+      ]
+    },
+    {
+      "id": "mag_118",
+      "domanda": "Un materiale diamagnetico risponde a un campo magnetico esterno generando un momento magnetico opposto al campo. Quale conseguenza diretta discende da questo comportamento?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Diamagnetismo",
+      "opzioni": [
+        "Il materiale è leggermente respinto dai campi magnetici (permeabilità magnetica relativa $\\mu_r < 1$)",
+        "Il materiale è fortemente attratto dai campi magnetici",
+        "Il materiale diventa permanentemente magnetizzato",
+        "Il materiale sviluppa campi magnetici indipendenti dall'esterno"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nei materiali diamagnetici, il momento indotto è opposto al campo esterno, generando una forza repulsiva. Questo è il motivo per cui sostanze diamagnetiche (come l'acqua, il bismuto e molti materiali biologici) sono debolmente repinte dai magneti. La permeabilità relativa è inferiore a 1.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "diamagnetico",
+        "repulsione",
+        "mu_r < 1",
+        "momento opposto"
+      ]
+    },
+    {
+      "id": "mag_119",
+      "domanda": "Un materiale paramagnetico differisce da uno ferromagnetico principalmente perché:",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Paramagneti vs ferromagneti",
+      "opzioni": [
+        "I paramagnetici hanno momenti magnetici atomici disallineati casualmente; i ferromagnetici mantenono allineamento spontaneo",
+        "I ferromagnetici hanno più atomi dei paramagnetici",
+        "I paramagnetici perdono magnetizzazione mentre i ferromagnetici no",
+        "I ferromagnetici sono sempre più forti magneticamente indipendentemente dalla storia della magnetizzazione"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nei paramagnetici (come l'alluminio), i momenti magnetici atomici sono casualmente orientati e si allineano parzialmente solo in presence di un campo esterno, risultando in un'attrazione debole. Nei ferromagnetici (come il ferro), c'è un allineamento spontaneo e parallelo dei momenti anche in assenza di campo esterno, dovuto a interazioni di scambio quantistiche.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "paramagnetico",
+        "ferromagnetico",
+        "allineamento",
+        "spontaneo"
+      ]
+    },
+    {
+      "id": "mag_120",
+      "domanda": "Durante la magnetizzazione di un materiale ferromagnetico, il ciclo di isteresi mostra che è possibile avere magnetizzazione residua anche quando il campo esterno torna a zero. Quale proprietà fisica causa questo fenomeno?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Isteresi magnetica",
+      "opzioni": [
+        "L'anisotropia magnetica e le barriere di energia che stabilizzano i domini magnetici allineati",
+        "La resistenza del materiale al passaggio di corrente",
+        "La diminuzione della luminosità del materiale",
+        "La variazione della densità del materiale"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'isteresi magnetica riflette il fatto che i domini magnetici, una volta allineati, rimangono bloccati nelle loro orientazioni a causa di barriere di energia locali (anisotropia magnetica). Pertanto, anche se il campo esterno scompare, parte dell'allineamento persiste, causando magnetizzazione residua. Questo è essenziale per i magneti permanenti.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "isteresi",
+        "domini",
+        "magnet residua",
+        "anisotropia"
+      ]
+    },
+    {
+      "id": "mag_121",
+      "domanda": "Se una spira conduttrice è posizionata in un campo magnetico non uniforme, quale effetto esperimenta?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Campo non uniforme",
+      "opzioni": [
+        "Una forza netta attrae o respinge la spira verso/lontano dalla regione di campo più intenso, oltre alla possibile coppia",
+        "Solo una coppia torcente, senza movimento traslazionale",
+        "Unicamente una suddivisione del flusso in parti uguali",
+        "Nessun effetto, poiché il flusso totale rimane costante"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In un campo non uniforme, i lati della spira immersi in campagne diverse sperimentano forze diverse, generando non solo una coppia ma anche una forza netta (traslazionale). Questo è il principio dietro il funzionamento dei 'magnetic force traps' e di molti dispositivi di manipolazione magnetica utilizzati in laboratorio.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "campo non uniforme",
+        "coppia",
+        "forza traslazionale",
+        "spira"
+      ]
+    },
+    {
+      "id": "mag_122",
+      "domanda": "Una rete di distribuzione elettrica usa trasformatori per ridurre la tensione da 220 kV a 30 kV prima della distribuzione ai quartieri. Quale vantaggio principale offre la trasmissione ad alta tensione?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Trasformatori (applicazioni)",
+      "opzioni": [
+        "Riduce le perdite per effetto Joule: con tensione più alta, la corrente è più bassa e le perdite $I^2R$ diminuiscono",
+        "Aumenta la sicurezza dei lavoratori",
+        "Riduce i costi dei materiali utilizzati nei cavi",
+        "Garantisce che tutta l'energia sia utilizzata dal consumatore finale"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La potenza trasmessa è $P = VI$. A parità di potenza, aumentare V significa ridurre I. Poiché le perdite Joule sono $P_{loss} = I^2R$, una corrente minore riduce significativamente le perdite lungo i lunghi cavi di trasmissione. Questo è il motivo per cui le linee ad alta tensione sono usate per le lunghe distanze.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "trasformatore",
+        "alta tensione",
+        "perdite Joule",
+        "I²R"
+      ]
+    },
+    {
+      "id": "mag_123",
+      "domanda": "Un recipiente di acqua diamagnetica è posizionato in una forte disomogeneità di campo magnetico. Quale comportamento è atteso?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Diamagnetismo e disomogeneità",
+      "opzioni": [
+        "L'acqua è respinta verso la regione di campo più debole (effetto levitazione nel vuoto di campo)",
+        "L'acqua è attratta verso la regione di campo più forte",
+        "L'acqua non sente alcun effetto poiché è neutra",
+        "L'acqua viene ionizzata dal forte campo"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel diamagnetismo, il momento magnetico indotto è opposto al campo. In una disomogeneità (gradiente non zero), il materiale è sospinto verso la regione WHERE il gradiente di campo è minore (cioè verso il campo più debole). Questo è il principio della levitazione diamagnetica. Esperimenti celebri mostrano rane intere levitanti in campi sufficientemente forti.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "diamagnetico",
+        "disomogeneità",
+        "Gradiente",
+        "levitazione"
+      ]
+    },
+    {
+      "id": "mag_124",
+      "domanda": "Quale affermazione descrive correttamente il campo magnetico all'interno di un solenoide ideale molto lungo?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Solenoide (caratteristiche)",
+      "opzioni": [
+        "Il campo è uniforme e parallelo all'asse; all'esterno è approssimativamente zero",
+        "Il campo è concentrico intorno a ogni spira",
+        "Il campo è perpendicolare all'asse",
+        "Il campo non dipende dal numero di spire"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Un solenoide ideale lungo crea un campo magnetico sufficientemente uniforme all'interno (parallelo all'asse) e praticamente nullo all'esterno. La formula $B \\approx \\mu_0 n I = \\mu_0 \\frac{N}{L}I$ mostra che B dentro è proporzionale a N (numero di spire). Questa uniformità interna è ideale per molte applicazioni.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "solenoide",
+        "campo uniforme",
+        "interno",
+        "esterno"
+      ]
+    },
+    {
+      "id": "mag_125",
+      "domanda": "Due solenoidi concentrici hanno lo stesso asse. Il primo (interno) ha $N_1 = 500$ spire; il secondo (esterno) ha $N_2 = 200$ spire. Se il flusso è interamente confinato dentro il primo, quale relazione collega le f.e.m. indotte nei due solenoidi quando il flusso varia?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Induzione mutua",
+      "opzioni": [
+        "La f.e.m. nel primo è $\\frac{N_1}{N_2} = 2.5$ volte la f.e.m. nel secondo (rapporto dei numeri di spire)",
+        "Le f.e.m. sono uguali",
+        "La f.e.m. nel secondo è il doppio della f.e.m. nel primo",
+        "Non c'è relazione deterministica tra le f.e.m."
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Quando il flusso attraverso il primo solenoide varia, $\\frac{d\\Phi}{dt}$ è lo stesso per entrambi (il flusso è confinato dentro). Dalla legge di Faraday, $\\varepsilon = -N\\frac{d\\Phi}{dt}$. Quindi $\\frac{\\varepsilon_1}{\\varepsilon_2} = \\frac{N_1}{N_2} = \\frac{500}{200} = 2.5$. Questo esemplifica l'induzione mutua.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "solenoidi concentrici",
+        "induzione mutua",
+        "rapporto spire",
+        "N1/N2"
+      ]
+    },
+    {
+      "id": "mag_126",
+      "domanda": "Una spira rettangolare di rame cade in allontanamento verticale verso il basso dentro un campo magnetico orizzontale uniforme. Quale dei seguenti processi si verifica?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Effetti della caduta",
+      "opzioni": [
+        "Mentre la spira cade, il flusso magnetico attraverso di essa cambia, inducendo corrente per la legge di Faraday; questa corrente interagisce col campo generando una forza che si oppone al moto",
+        "La spira accelera liberamente perché il campo magnetico orizzontale non influenza il moto verticale",
+        "La spira accelera di più del normale perché il campo aumenta durante la caduta",
+        "Non succede nulla di particolare perché la spira è di rame non magnetico"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Quando la spira cade (muovendosi in una direzione non parallela al campo orizzontale), il flusso attraverso di essa si modifica continuamente. Questo induce una f.e.m. e una corrente nella spira. La corrente nel campo magnetico sperimenta una forza di Lorentz che si oppone al moto (per la legge di Lenz). Questo effetto crea una resistenza al moto, rallentalente la caduta—un fenomeno affascinante che dimostra l'interdipendenza tra magnetismo e meccanica.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "spira che cade",
+        "Faraday",
+        "Lenz",
+        "resistenza al moto"
+      ]
+    },
+    {
+      "id": "mag_127",
+      "domanda": "L'energia immagazzinata in un campo magnetico di un solenoide è $U = \\frac{1}{2}LI^2$. Quale differenza fondamentale esiste tra questa energia e l'energia cinetica di una particella?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Energia magnetica",
+      "opzioni": [
+        "L'energia magnetica dipende quadraticamente dalla corrente (come l'energia cinetica dalla velocità), ma è immagazzinata nel campo quando non c'è movimento macroscopico",
+        "L'energia magnetica non è reale ma solo convenzione matematica",
+        "L'energia magnetica è sempre negativa",
+        "L'energia magnetica varia linearmente con la corrente, non quadraticamente"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'energia magnetica $U = \\frac{1}{2}LI^2$ è una reale energia immagazzinata nel campo magnetico intorno al solenoide, analoga a how a loaded spring stores energy. A differenza dell'energia cinetica di una particella (che richiede movimento), questa energia esiste anche quando la corrente è stazionaria—l'energia risiede nella configurazione del campo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "energia magnetica",
+        "1/2 LI²",
+        "induttanza",
+        "campo magnetico"
+      ]
+    },
+    {
+      "id": "mag_128",
+      "domanda": "Un circuito RLC viene azionato con un forcing sinusoidale. In quale condizione il circuito risuona magneticamente?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Risonanza",
+      "opzioni": [
+        "Quando la frequenza del forcing uguaglia la frequenza di risonanza $f_0 = \\frac{1}{2\\pi\\sqrt{LC}}$, l'impedenza è minima e la corrente è massima",
+        "Quando la resistenza R è zero",
+        "Quando la frequenza del forcing è il doppio della frequenza del solenoide",
+        "Non esiste risonanza in circuiti magnetici"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La frequenza di risonanza di un circuito LC è $f_0 = \\frac{1}{2\\pi\\sqrt{LC}}$. A questa frequenza, le reattanze inductive e capacitiva si cancellano esattamente: $X_L = X_C$. L'impedenza totale è minima (uguale a R), e l'ampiezza della corrente è massima. Questo è il principio dietro i circuiti sintonizzati nelle radio.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "risonanza",
+        "LC",
+        "f0",
+        "impedenza"
+      ]
+    },
+    {
+      "id": "mag_129",
+      "domanda": "Un superconduttore a temperatura critica sviluppa resistenza nulla. Quale effetto diretto ha la resistenza nulla sulla corrente circolante in un circuito superconduttivo?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Superconduttività",
+      "opzioni": [
+        "La corrente iniziana può circolare indefinitamente senza decadimento, e qualsiasi campo magnetico esterno è espulso (effetto Meissner)",
+        "La corrente accelera indefinitamente",
+        "La corrente oscillay fra valori positivi e negativi",
+        "La corrente diventa immediatamente zero"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In un superconduttore (in stato superconduttivo), la resistenza zero consente a una corrente di circolareindefinitamente una volta instaurata. La legge di Ohm (V = IR) diventa inapplicabile. Inoltre, il superconduttore genera campi magnetici tali da espellere qualsiasi flusso magnetico esterno—l'effetto Meissner. Questo è sfruttato per creare campi magnetici molto intensi e stabili, come negli acceleratori di particelle.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "superconduttore",
+        "resistenza zero",
+        "Meissner",
+        "corrente persistente"
+      ]
+    },
+    {
+      "id": "mag_130",
+      "domanda": "Quale orientamento di una spira rettangolare in un campo magnetico uniforme produce il massimo flusso magnetico attraverso di essa?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Orientamento e flusso",
+      "opzioni": [
+        "Quando il piano della spira è perpendicolare al campo magnetico (normale parallela a B)",
+        "Quando il piano della spira è parallelo al campo",
+        "Quando la spira forma 45° con il campo",
+        "L'orientamento non influenza il flusso"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il flusso magnetico è $\\Phi = \\int \\vec{B} \\cdot d\\vec{A} = BA\\cos\\theta$, dove $\\theta$ è l'angolo tra il campo e la normale della superficie. Il flusso è massimo quando $\\cos\\theta = 1$ (θ = 0°), cioè quando la normale è parallela a B—geometricamente, quando il piano della spira è perpendicolare a B.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "flusso",
+        "cos theta",
+        "orientamento",
+        "normale"
+      ]
+    },
+    {
+      "id": "mag_131",
+      "domanda": "In un fenomeno di magnetoresistenza, la resistività di alcuni materiali aumenta notevolmente in presence di un forte campo magnetico perpendicolare. Quale proprietà dei portatori di carica spiega questo fenomeno?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Magnetoresistenza",
+      "opzioni": [
+        "I portatori di carica (elettroni) vengono deviati dalla loro traiettoria dalla forza di Lorentz, aumentando il cammino libero medio effettivo e quindi la resistenza",
+        "Il campo magnetico distrugge la struttura cristallina del materiale",
+        "Gli elettroni vengono fermati dal campo magnetico",
+        "La resistenza è causata dall'aumento della temperatura"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Quando un campo magnetico perpendicolare è applicato a un conduttore percorso da corrente, i portatori di carica (principalmente elettroni) subiscono la forza di Lorentz trasversa. Questa forza devia gli elettroni dalla loro direzione di moto, causando un percorso più lungo attraverso il materiale (curling path). Il risultato è una resistenza aumentata, proporzionale al campo magnetico. Questo effetto è alla base dei sensori Hallmagneti e altri dispositivi magnetoresistivi.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "magnetoresistenza",
+        "Lorentz",
+        "deviazione",
+        "portatori carica"
+      ]
+    },
+    {
+      "id": "mag_132",
+      "domanda": "Una barra conduttrice lunga L si muove con velocità v perpendicolare sia alla sua lunghezza che al campo magnetico B. Quale potenziale elettrico si sviluppa tra le estremità della barra?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Motional EMF",
+      "opzioni": [
+        "$\\mathcal{E} = BLv$ (differenza di potenziale dovuta all'azione della forza di Lorentz sui portatori di carica)",
+        "$\\mathcal{E} = \\frac{BL}{v}$",
+        "$\\mathcal{E} = \\frac{v}{BL}$",
+        "Nessuna differenza di potenziale si sviluppa"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Quando una barra si muove in un campo magnetico, i portatori di carica liberi sperimentano la forza di Lorentz, venendo separati: cariche positive verso una estremità, cariche negative verso l'altra. Questo accumulo crea una differenza di potenziale (motional EMF) $\\mathcal{E} = BLv$. Al raggiungimento dell'equilibrio, il campo elettrico creato dal separamento bilancia la forza magnetica.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "motional EMF",
+        "BLv",
+        "barra",
+        "potenziale"
+      ]
+    },
+    {
+      "id": "mag_133",
+      "domanda": "Quale affermazione riguardante il teorema di Ampère è corretta?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Teorema di Ampère",
+      "opzioni": [
+        "La circuitazione del campo magnetico lungo una curva chiusa è proporzionale alla corrente concatenata alla curva: $\\oint \\vec{B} \\cdot d\\vec{\\ell} = \\mu_0 I_{enc}$",
+        "La circuitazione è sempre nulla indipendentemente dalle correnti",
+        "La circuitazione dipende solo dall'area racchiusa dalla curva",
+        "Il campo magnetico non è conservativo e ciò contraddice Ampère"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il teorema di Ampère stabilisce che $\\oint \\vec{B} \\cdot d\\vec{\\ell} = \\mu_0 I_{enc}$, dove $I_{enc}$ è la corrente totale concatenata (passante attraverso la superficie limitata dalla curva). Questo teorema è fondamentale per calcolare il campo magnetico in situazioni ad alta simmetria, come nel caso di fili rettilinei infiniti, cilindri percorsi da corrente, e solenoidi.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "Ampère",
+        "circuitazione",
+        "corrente concatenata",
+        "simmetria"
+      ]
+    },
+    {
+      "id": "mag_134",
+      "domanda": "La densità di energia contenuta in un campo magnetico è $u = \\frac{B^2}{2\\mu_0}$. Se il campo magnetico raddoppia, come varia la densità di energia?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Densità di energia",
+      "opzioni": [
+        "La densità di energia quadruplica (è proporzionale a $B^2$)",
+        "Raddoppia",
+        "Dimezza",
+        "Rimane costante"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La densità di energia in un campo magnetico è $u = \\frac{B^2}{2\\mu_0}$, quindi è proporzionale al quadrato del campo. Se B raddoppia, allora $B_{new}^2 = (2B)^2 = 4B^2$, e quindi $u_{new} = 4u$. L'energia contenuta nello spazio disponibile quadruplica.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "densità energia",
+        "B²",
+        "mu0",
+        "quadrato"
+      ]
+    },
+    {
+      "id": "mag_135",
+      "domanda": "Nel fenomeno di induzione elettromagnetica, perché la legge di Lenz è fondamentale nel garantire la conservazione dell'energia?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Lenz e conservazione",
+      "opzioni": [
+        "La f.e.m. indotta genera una corrente che si oppone alla variazione di flusso, garantendo che l'energia estratta dal sistema magnetico non superi l'energia fornita dall'agente esterno che cambia il flusso",
+        "La legge di Lenz non ha relazione con la conservazione dell'energia",
+        "La legge di Lenz riduce sempre l'energia del sistema",
+        "La legge di Lenz amplifica l'energia del sistema"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La legge di Lenz assicura che la corrente indotta generi un campo magnetico che si oppone alla variazione di flusso che l'ha prodotta. Ciò significa che l'agente esterno (che cambia il flusso) deve compiere lavoro CONTRO questa corrente indotta. Questo lavoro esterno è convertito in energia, garantendo che nessuna energia sia creata dal nulla—l'energia totale è sempre conservata.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Lenz",
+        "conservazione energia",
+        "lavoro esterno",
+        "f.e.m. indotta"
+      ]
+    },
+    {
+      "id": "mag_136",
+      "domanda": "Il momento di dipolo magnetico $\\vec{\\mu}$ di una spira di corrente è definito come $\\mu = IA$, dove I è la corrente e A è l'area della spira. In quale direzione punta il vettore $\\vec{\\mu}$?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Momento magnetico",
+      "opzioni": [
+        "Perpendicolarmente al piano della spira, determinato dalla regola della mano destra (dita lungo la corrente, pollice lungo $\\vec{\\mu}$)",
+        "Nel piano della spira",
+        "In direzione opposta alla corrente",
+        "Sempre verticale verso l'alto"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il momento di dipolo magnetico è una grandezza vettoriale la cui direzione è data dalla regola della mano destra: se le dita seguono il verso della corrente lungo la spira, il pollice indica la direzione di $\\vec{\\mu}$. Questo vettore è perpendicolare al piano della spira ed è la proprietà che determina come la spira interagisce con campi magnetici esterni.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "momento magnetico",
+        "mu",
+        "IA",
+        "regola mano destra"
+      ]
+    },
+    {
+      "id": "mag_137",
+      "domanda": "Una spira con momento magnetico $\\vec{\\mu}$ è immersa in un campo magnetico uniforme $\\vec{B}$. Quale è l'energia potenziale magnetica della spira?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Energia potenziale",
+      "opzioni": [
+        "$U = -\\vec{\\mu} \\cdot \\vec{B} = -\\mu B \\cos\\theta$, dove $\\theta$ è l'angolo tra i due vettori",
+        "$U = \\mu B \\sin\\theta$",
+        "$U = \\mu B / \\theta$",
+        "$U$ non dipende dall'orientamento"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'energia potenziale di un dipolo magnetico in un campo uniforme è $U = -\\vec{\\mu} \\cdot \\vec{B} = -\\mu B \\cos\\theta$. L'energia è minima ($U = -\\mu B$) quando $\\theta = 0$ (dipolo allineato con il campo), e massima ($U = +\\mu B$) quando $\\theta = 180°$ (dipolo opposto al campo). Questa struttura energetica spiega l'allineamento naturale di dipoli magnetici con campi esterni.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "energia potenziale",
+        "dipolo",
+        "cos theta",
+        "allineamento"
+      ]
+    },
+    {
+      "id": "mag_138",
+      "domanda": "Quando un dipolo magnetico è sottoposto a un campo magnetico non uniforme, quale forza (oltre alla possibile coppia) sperimenta?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Dipolo in campo non uniforme",
+      "opzioni": [
+        "Una forza traslazionale che attrae il dipolo verso la regione di campo más intenso (se allineato) o lo respinge (se antiallineato)",
+        "Nessuna forza; solo una coppia torcente",
+        "Una forza repulsiva costante",
+        "Una forza dipendente dalla velocità del dipolo"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In un campo non uniforme, il dipolo non sperimenta solo una coppia ma anche una forza netta. Se il dipolo è allineato con il gradiente di campo, è attratto verso la regione di campo più forte. Se è opposto, è repinto. La forza è proporzionale al prodotto $\\mu \\cdot \\nabla B$. Questo principio è usato nel 'magnetic tweezing' per manipolare particelle magnetiche.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "dipolo",
+        "gradiente",
+        "campo non uniforme",
+        "forza traslazionale"
+      ]
+    },
+    {
+      "id": "mag_139",
+      "domanda": "L'effetto Hall consiste nella separazione di carica perpendicolare alla corrente quando un conduttore è immerso in un campo magnetico trasversale. Quale grandezza è direttamente misurata dalla tensione di Hall?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Effetto Hall",
+      "opzioni": [
+        "La densità di portatori di carica (n) e il segno dei portatori di carica nel conduttore",
+        "La resistenza totale del conduttore",
+        "La velocità media dei portatori di carica",
+        "La temperatura del conduttore"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La tensione di Hall $V_H = \\frac{IB}{nqt}$ (dove n è la densità di portatori, q la carica, t lo spessore) consente di determinare sia il numero di portatori che il loro segno. Se $V_H$ è positiva, i portatori sono positivi; se negativa, sono negativi. Questo fu fondamentale per provare che nei metalli i portatori di carica sono elettroni negativi, non ioni positivi.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Hall",
+        "portatori carica",
+        "densità n",
+        "segno"
+      ]
+    },
+    {
+      "id": "mag_140",
+      "domanda": "Quale proprietà del magnetismo terrestre è responsabile della declinazione magnetica (il fatto che l'ago magnetico non punti esattamente verso il Polo Nord geografico)?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Magnetismo terrestre",
+      "opzioni": [
+        "I poli magnetici terrestri non coincidono esattamente con i poli geografici della rotazione terrestre, e la loro posizione varia nel tempo",
+        "L'atmosfera terrestre devia il campo magnetico",
+        "Il campo magnetico terrestre è causato da rocce vulcaniche che non sono uniformemente distribuite",
+        "L'effetto della gravità altera il campo magnetico"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il campo magnetico terrestre è generato principalmente dalle correnti nel nucleo liquido di ferro della Terra. L'asse magnetico è inclinato rispetto all'asse di rotazione geografico di circa 11°. Inoltre, i poli magnetici si spostano nel tempo (decine di chilometri all'anno). Questo causa la declinazione magnetica, che varia geograficamente e temporalmente.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "declinazione",
+        "poli magnetici",
+        "poli geografici",
+        "variazione"
+      ]
+    },
+    {
+      "id": "mag_141",
+      "domanda": "In un blindaggio magnetico (scatola di mu-metal), quale proprietà del materiale permette l'attenuazione del campo magnetico esterno?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Blindaggio magnetico",
+      "opzioni": [
+        "Una permeabilità magnetica relativa $\\mu_r >> 1$: il campo si concentra preferibilmente nel materiale ad alta permeabilità, riducendo il campo all'interno della cavità",
+        "Una resistività molto alta che blocca i campi magnetici",
+        "Una densità elevatissima che assorbe i campi",
+        "Un campo magnetico proprio generato dal materiale"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "I materiali ferromagnetici come il mu-metal hanno permeabilità relativa $\\mu_r$ fino a 10000 o superiore. Le linee di campo magnetico vengono attratte preferibilmente nel materiale a causa di questa alta permeabilità. Il blindaggio riduce il campo all'interno di un fattore di circa $\\mu_r$. Questo è usato per schermare strumenti sensibili (magnetometri, CRT) da campi magnetici ambientali.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "blindaggio",
+        "mu-metal",
+        "mu_r",
+        "permeabilità"
+      ]
+    },
+    {
+      "id": "mag_142",
+      "domanda": "Un campo magnetico variabile nel tempo induce un campo elettrico vorticoso, secondo le equazioni di Maxwell. In quale direzione circola questo campo elettrico indotto intorno alle linee di campo magnetico?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Maxwell e campi incrociati",
+      "opzioni": [
+        "Il campo elettrico circola vorticosamente intorno alle linee di campo magnetico secondo la regola della mano destra (se B aumenta, E circola per creare un'onda elettromagnetica)",
+        "Il campo elettrico è sempre parallelo al campo magnetico",
+        "Il campo elettrico non dipende da B",
+        "Il campo elettrico circola casualmente"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Secondo la legge di Faraday-Maxwell, $\\nabla \\times \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t}$, un campo magnetico mutevole genera un campo elettrico vorticoso. Le curve di livello di E circolano intorno alle linee di B. Questo accoppiamento reciproco tra campi elettrici e magnetici variabili è il fondamento delle onde elettromagnetiche.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Maxwell",
+        "campo elettrico vorticoso",
+        "Faraday",
+        "onde EM"
+      ]
+    },
+    {
+      "id": "mag_143",
+      "domanda": "Perché i monopoli magnetici (particelle con sola carica magnetica, simili agli elettroni per la carica elettrica) non sono stati mai osservati in natura?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Monopoli magnetici",
+      "opzioni": [
+        "Le equazioni di Maxwell fondamentali non prevedono monopoli magnetici liberi: il flusso magnetico $\\nabla \\cdot \\vec{B} = 0$ implica che i campi magnetici hanno origine da dipoli (nord-sud inseparabili), non da cariche singole",
+        "La gravità impedisce l'esistenza di monopoli",
+        "I monopoli si annichilano istantaneamente",
+        "Sono troppo piccoli per essere rilevati"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Una delle equazioni di Maxwell è $\\nabla \\cdot \\vec{B} = 0$, che afferma che non esiste carica magnetica libera (monopolo). Questa è una conseguenza della struttura della natura: mentre esistono cariche elettriche libere (positive e negative), i campi magnetici sorgono sempre da dipoli indissolubili. Se eventuali monopoli erano creati durante i primi istanti dell'Universo, dovrebbero comunque fornire evidenza diretta non ancora observata.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "monopoli",
+        "nabla B = 0",
+        "Maxwell",
+        "carica magnetica"
+      ]
+    },
+    {
+      "id": "mag_144",
+      "domanda": "Quale fenomeno impedisce ai fotoni (particelle di luce) di penetrare in un superconduttore, anche nel regime dei raggi gamma?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Superconduttività e fotoni",
+      "opzioni": [
+        "Il superconduttore espelle qualsiasi flusso magnetico (effetto Meissner); il fotone trasporta energia e momento ma non carica: l'interazione è mediata dal campo EM che viene preservato al confine, riflettendo il fotone",
+        "I fotoni vengono assorbiti e trasformati in calore",
+        "I fotoni sviluppano carica magnetica nel superconduttore",
+        "I superconduttori attraggono i fotoni fortemente"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Un superconduttore espelle qualsiasi campo magnetico (effetto Meissner) e resiste a qualsiasi penetrazione di linee di campo. Sebbene i fotoni siano neutretti agli occhi della carica elettrica, la loro energia si manifesta nel campo elettromagnetico. Una conseguenza è che un superconduttore riflette i fotoni come un specchio perfetto. Questa proprietà è usata in alcuni esperimenti di ricerca sulle proprietà quantistiche della superconduttività.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "superconduttore",
+        "fotone",
+        "Meissner",
+        "riflessione"
+      ]
+    },
+    {
+      "id": "mag_145",
+      "domanda": "Cosa sono le correnti parassite (eddy currents) e quale effetto hanno su un conduttore in movimento in un campo magnetico?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Correnti parassite",
+      "opzioni": [
+        "Sono correnti circolari indotte nel conduttore dal cambio di flusso magnetico; generano un campo magnetico opposto (Lenz), causando una forza di resistenza al moto e dissipazione di energia come calore",
+        "Sono correnti che aumentano il movimento del conduttore",
+        "Sono correnti che non dissipano energia",
+        "Sono correnti che amplificano il campo magnetico"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Quando un conduttore si muove in un campo magnetico non uniforme, diversi settori del conduttore esperimentano diversi flussi magnetici. Questo induce f.e.m. locali e correnti circolari (eddy currents) nel conduttore. Per la legge di Lenz, queste correnti generano un campo che si oppone al cambio di flusso, producendo una forza di frenamento e dissipazione di energia. Questo è usato nei freni magnetici e negli smorzatori.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "eddy currents",
+        "parassite",
+        "Lenz",
+        "frenamento"
+      ]
+    },
+    {
+      "id": "mag_146",
+      "domanda": "In risonanza magnetica nucleare (NMR), i nuclei con spin magnetico sono allineati da un forte campo statico $B_0$. Quale frequenza di oscillazione $f_0$ (frequenza di Larmor) è richiesta per raggiungere la risonanza?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "NMR e Larmor",
+      "opzioni": [
+        "$f_0 = \\frac{\\gamma B_0}{2\\pi}$, dove $\\gamma$ è il rapporto magnetogiro (dipende dal nucleare);per i protoni in un campo di 1.5 T, $f_0 \\approx 64$ MHz",
+        "$f_0 = B_0 / 2$",
+        "$f_0$ è indipendente da $B_0$",
+        "$f_0 = 2\\pi B_0$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La frequenza di Larmor è la frequenza di precessione dei momenti magnetici nucleari attorno a un campo statico $B_0$: $f_0 = \\frac{\\gamma B_0}{2\\pi}$. Quando un campo radiofrequenza (RF) oscillante è applicato a questa frequenza esatta, i nuclei assorbono l'energia e flippano tra gli stati energetici (condizione di risonanza). Questo è il principio di base dell'MRI (risonanza magnetica per immagini).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Larmor",
+        "NMR",
+        "gamma",
+        "risonanza"
+      ]
+    },
+    {
+      "id": "mag_147",
+      "domanda": "Quale materiale è meglio per costruire un nucleo di un trasformatore per applicazioni ad alta frequenza (rf)?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Trasformatori ad alta frequenza",
+      "opzioni": [
+        "Materiali a bassa permeabilità magnetica o aria, perché materiali ferromagnetici sviluppano perdite significative (isteresi e correnti parassite) ad alta frequenza, mentre il ferro lamellato è ideale solo per frequenze basse (50/60 Hz)",
+        "Ferro massivo per massima permeabilità",
+        "Magneti permanenti per assicurare costanza",
+        "Alluminio puro"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Ad alte frequenze, i materiali ferromagnetici soffrono di due limitazioni: (1) le perdite di isteresi aumentano con la frequenza, (2) le correnti parassite (eddy currents) aumentano quadraticamente con la frequenza. Il ferro lamellato è utilizzato a 50/60 Hz perché riduce le eddy currents, ma diventa inefficiente a frequenze MHz. I trasformatori RF usano nuclei a aria o ferriti (ceramiche magnetiche con bassa conduttività).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "alta frequenza",
+        "isteresi",
+        "eddy currents",
+        "ferrite"
+      ]
+    },
+    {
+      "id": "mag_148",
+      "domanda": "L'antiferromagnetismo è contraddistinto da un allineamento alternato di momenti magnetici vicini. Quale conseguenza macroscopica discende da questo allineamento?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Antiferromagnetismo",
+      "opzioni": [
+        "Il materiale non mostra magnetismo spontaneo (magnetizzazione netta totale nulla), anche se i momenti microscopici sono ordinati; tuttavia, a temperature elevate, sopra la temperatura di Néel, diventa paramagnetico",
+        "Il materiale è ferromagnetico come il ferro",
+        "Il materiale respinge sempre tutti i magneti",
+        "Il materiale attrae tutti i magneti fortemente"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Negli antiferromagneti (es. MnO, NiO), i momenti magnetici atomici si allineano alternativamente in direzioni opposte. Nel reticolo bidimensionale o tridimensionale, i momenti si annullano reciprocamente, risultando in una magnetizzazione netta macroscopica nulla. Tuttavia, l'ordine magnetico microscopico è conservato sotto la temperatura di Néel $T_N$. Sopra $T_N$, il disordine termico distrugge l'ordine antiferro.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "antiferromagnetico",
+        "Néel",
+        "momenti opposti",
+        "anullarsi"
+      ]
+    },
+    {
+      "id": "mag_149",
+      "domanda": "Un ferrofluido è una sospensione di nanoparticelle ferro-magnetiche in un liquido non magnetico. Quale applicazione pratica sfrutta la capacità del ferrofluido di cambiare forma/densità rapidamente?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Ferrofluidi",
+      "opzioni": [
+        "Smorzatori magnetici e sospensioni controllabili: il campo magnetico allinea le particelle, modificando la viscosità apparente e il comportamento meccanico del fluido in tempo reale",
+        "Illuminazione dei display",
+        "Raffreddamento del motore",
+        "Nessuna applicazione pratica"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "I ferrofluidi rispondono istantaneamente a campi magnetici variabili, cambiando viscosità, forma e geometria. Questa proprietà è sfruttata in 'dampers magnetici intelligenti' (ad es., sospensioni di veicoli adattive), sigilli magnetici, e sistemi di raffreddamento. L'esercito e le industrie ad alta tecnologia utilizzano ferrofluidi per controllare vibrazioni, shock e rumori dinamicamente.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "ferrofluido",
+        "nanoparticelle",
+        "viscosità",
+        "smorzatore"
+      ]
+    },
+    {
+      "id": "mag_150",
+      "domanda": "Qual è il significato fisico della suscettibilità magnetica $\\chi_m$ di un materiale?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Suscettibilità magnetica",
+      "opzioni": [
+        "$\\chi_m$ misura quanto il materiale si magnetizza in risposta a un campo magnetico esterno: $\\vec{M} = \\chi_m \\vec{H}$, dove M è la magnetizzazione e H è l'intensità di campo. Positiva per paramagneti e ferromagneti; negativa per diamagneti",
+        "$\\chi_m$ misura la resistenza del materiale",
+        "$\\chi_m$ è sempre positiva",
+        "$\\chi_m$ non ha significato fisico"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La suscettibilità magnetica $\\chi_m$ definisce come un materiale risponde a un campo magnetico esterno. La magnetizzazione indotta è $\\vec{M} = \\chi_m \\vec{H}$. Per i diamagneti, $\\chi_m < 0$ (magnetizzazione opposta al campo). Per i paramagneti, $\\chi_m > 0$ (magnetizzazione parallela al campo). Per i ferromagneti, $\\chi_m >> 1$ e la relazione non è lineare. La permeabilità relativa è $\\mu_r = 1 + \\chi_m$.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "suscettibilità",
+        "chi_m",
+        "magnetizzazione",
+        "H"
+      ]
+    },
+    {
+      "id": "mag_151",
+      "domanda": "Quale fenomeno fisico spiega perché un magnete permanente attrae il ferro anche se il ferro non è magnetizzato?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Induzione magnetica",
+      "opzioni": [
+        "Il campo magnetico del magnete induce una magnetizzazione paramagnetica nel ferro, allineando i momenti magnetici locali. Anche se non permanente, questa magnetizzazione indotta è sufficiente per creare attrazione",
+        "Il ferro contiene sempre monopoli magnetici liberi",
+        "Il ferro è sempre permanentemente magnetizzato",
+        "Non c'è spiegazione fisica valida"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il ferro è ferromagnetico e contiene domini magnetici microscopici. Un magnete esterno applica un campo che tende ad allineare questi domini ai propri, anche se inizialmente casualmente orientati. Questo allineamento indotto crea una magnetizzazione netta nel ferro che attrae il magnete. Inoltre, il ferro ad alta permeabilità concentra le linee di campo del magnete, amplificando l'attrazione.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "induzione",
+        "domini",
+        "ferro",
+        "attrazione"
+      ]
+    },
+    {
+      "id": "mag_152",
+      "domanda": "Nel modello di Bohr dell'atomo di idrogeno, l'elettrone orbita il nucleo. Quale momento magnetico orbitale genera questo movimento?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Momento orbitale",
+      "opzioni": [
+        "$\\mu_L = -\\frac{e}{2m}L = -\\frac{e}{2m}n\\hbar$ (negativo perché l'elettrone ha carica negativa), proporzionale al momento angolare L",
+        "$\\mu_L$ non esiste nel modello di Bohr",
+        "$\\mu_L$ è sempre positiva",
+        "$\\mu_L$ dipende dalla distanza dal nucleo ma non dal moto"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Un elettrone in orbita costituisce una corrente circolare microscopica, producendo un momento magnetico orbitale $\\mu_L = -\\frac{e}{2m}L$. Il segno negativo riflette la carica negativa dell'elettrone. In unità quantistiche, per un'orbita con numero quantico n, $\\mu_L = -n\\mu_B$, dove $\\mu_B = \\frac{e\\hbar}{2m}$ è il magnetone di Bohr. Questo momento orbitale è responsabile del diamagnetismo di Larmor negli atomi.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "momento orbitale",
+        "Bohr",
+        "magnetone",
+        "mu_B"
+      ]
+    },
+    {
+      "id": "mag_153",
+      "domanda": "Quale proprietà dello spin dell'elettrone è essenziale per spiegare il ferromagnetismo?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Spin e ferromagnetismo",
+      "opzioni": [
+        "Lo spin dell'elettrone genera un momento magnetico intrinseco $\\mu_s \\approx \\mu_B$ (magnetone di Bohr); nel ferro, gli spin degli elettroni non appaiati si allineano parallelamente grazie all'interazione di scambio quantistica, producendo un momento magnetico macroscopico netto",
+        "Lo spin non ha effetto sul magnetismo",
+        "Lo spin indebolisce sempre il ferro",
+        "Lo spin è visibile solo nei neutroni"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'elettrone possiede uno spin intrinseco (momento angolare quantico) che genera un momento magnetico spin $\\mu_s ≈ \\mu_B$. Nel ferro, nel cobalto e nel nichel, gli spin degli elettroni non appaiati in orbitali 3d si allineano parallelamente grazie a un'interazione quantistica (scambio di Heisenberg). Questo allineamento spontaneo di spin è il fondamento del ferromagnetismo, non il momento orbitale.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "spin",
+        "ferromagnetismo",
+        "scambio",
+        "momento spin"
+      ]
+    },
+    {
+      "id": "mag_154",
+      "domanda": "In una risonanza magnetica per immagini (MRI), un impulso radiofrequenza a 90° flippizza i nuclei (protoni) dal stato allineato al state anti-allineato. Perché questo impulso è critico per l'imaging?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "MRI imaging",
+      "opzioni": [
+        "L'impulso a 90° massimizza la coerenza dei nuclei: la magnetizzazione netta passa da parallela a B a perpendicolare a B, creando una magnetizzazione trasversale che precessa e genera il segnale RF rilevabile dai ricevitori",
+        "L'impulso annulla il campo magnetico",
+        "L'impulso distrugge i nuclei",
+        "Non è critico; qualsiasi impulso va bene"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Prima dell'impulso, i nuclei (protoni) sono leggermente più allineati a B (stato basa energetico). Un impulso RF a 90° eccita i nuclei, tipping la magnetizzazione macro scopica da longitudinale (parallela a B) a trasversale (perpendicolare a B). Questa magnetizzazione trasversale precessa intorno a B e genera un segnale RF (precessione di Larmor) che i ricevitori rilevano. Questo segnale contiene l'informazione strutturale usata per costruire l'immagine.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "MRI",
+        "impulso 90°",
+        "magnetizzazione trasversale",
+        "precessione"
+      ]
+    },
+    {
+      "id": "mag_155",
+      "domanda": "In relatività speciale, come si trasformano i campi magnetico E ed elettrico E tra due sistemi di riferimento inerziali?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Relatività e campi",
+      "opzioni": [
+        "I campi si trasformano come componenti di un tensore: la componente parallela al moto rimane la stessa, mentre le componenti perpendicolari mischiano E e B (un campo puramente magnetico per un osservatore può sembrare parzialmente elettromagnetico per un altro in moto relativo)",
+        "E e B non si trasformano",
+        "E e B si trasformano indipendentemente",
+        "Solo E si trasforma"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Le trasformazioni di Lorentz dei campi sono: $E_\\parallel' = E_\\parallel$, $E_\\perp' = \\gamma(E_\\perp - \\vec{v} \\times \\vec{B})$, $B_\\parallel' = B_\\parallel$, $B_\\perp' = \\gamma(B_\\perp + \\frac{\\vec{v} \\times \\vec{E}}{c^2})$. Questo mostra che E e B sono componenti di un'unica entità (tensore EM). Un campo puramente magnetico in un sistema può contenere una componente elettrica in un altro sistema in moto relativo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Lorentz",
+        "trasformazione",
+        "E e B",
+        "relatività"
+      ]
+    },
+    {
+      "id": "mag_156",
+      "domanda": "Il quantum di flusso magnetico $\\Phi_0 = \\frac{h}{2e} \\approx 2.07 \\times 10^{-15}$ Wb è fondamentale nella quantizzazione magnetica dei superconduttori. Quale fenomeno fisico esso descrive?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Quantizzazione magnetica",
+      "opzioni": [
+        "Nei superconduttori, il flusso magnetico attraverso un loop superconduttivo è quantizzato in multipli interi di $\\Phi_0$. Questo segue dalla quantizzazione della fase della funzione d'onda (bosone dei paia di Cooper) e dall'invarianza di gauge quantistica",
+        "Non ha significato fisico",
+        "È uguale al flusso totale di qualsiasi campo magnetico",
+        "Descrive solo il diamagnetismo"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel formalismo quantistico della superconduttività, i coppie di Cooper sono bosoni descritti da una funzione d'onda macroscopica. La circuitazione della fase della funzione d'onda intorno a un loop è quantizzata, portando a una quantizzazione del flusso: $\\Phi = n\\Phi_0$. Questo predice che il flusso attraverso un anello superconduttivo può solo cambiare in salti quantici, creando vortici quantizzati nei superconduttori di tipo II.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "quantum flusso",
+        "Phi_0",
+        "superconduttore",
+        "vortici"
+      ]
+    },
+    {
+      "id": "mag_157",
+      "domanda": "Perché un magnete permanente utilizzato per attrarre oggetti di ferro non perde magnetizzazione nel tempo, in assenza di disturbi esterni?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Stabilità magnetica",
+      "opzioni": [
+        "Una volta magnetizzato, i domini magnetici rimangono bloccati nelle loro orientazioni a causa delle barriere di energia nel materiale (anisotropia magnetica e interazioni di scambio). Senza apporto energetico sufficiente (calore, campi esterni), il disallineamento termico è insignificante a temperatura ambiente",
+        "Il magnetesimo è inesauribile",
+        "I magneti perdono sempre magnetizzazione istantaneamente",
+        "La temperatura non influenza i magneti"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Un magnete permanente mantiene la magnetizzazione perché i domini magnetici, una volta allineati, sono stabilizzati in quella configurazione da barriere di energia elevate. L'agitazione termica a temperatura ambiente è insufficiente per superare queste barriere, quindi i domini rimangono allineati. Tuttavia, a temperature elevate (sopra la temperatura di Curie), l'energia termica supera le barriere e i domini si disallineano, distruggendo il magnetismo permanente.",
+      "difficolta": "media",
+      "paroleChiave": [
+        "dominio",
+        "stabilità",
+        "temperatura ambiente",
+        "barriera energia"
+      ]
+    },
+    {
+      "id": "mag_158",
+      "domanda": "Nel calcolo del campo magnetico di una distribuzione di corrente complessa, quale legge è più generale e universale?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Leggi di calcolo",
+      "opzioni": [
+        "La legge di Biot-Savart: $d\\vec{B} = \\frac{\\mu_0}{4\\pi}\\frac{I d\\vec{\\ell} \\times \\hat{r}}{r^2}$, che è valida per qualsiasi distribuzione di corrente, da quella discretizzata a quella continua. Ampère è più conveniente solo in simmetrie speciali",
+        "La legge di Ampère è universale",
+        "Solo calcoli numerici sono possibili",
+        "Né Biot-Savart né Ampère sono utili"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Biot-Savart $d\\vec{B} = \\frac{\\mu_0}{4\\pi}\\frac{I d\\vec{\\ell} \\times \\hat{r}}{r^2}$ è applicabile a qualsiasi geometria di corrente e fornisce il campo infinitesimale generato da ogni elemento di corrente. Ampère è più veloce in simmetrie elevate (fili lungi, cilindri) ma richiede condizioni specifiche. Biot-Savart è il framework fondamentale, anche se l'integrazione è spesso più laboriosa.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Biot-Savart",
+        "universale",
+        "Ampère",
+        "simmetria"
+      ]
+    },
+    {
+      "id": "mag_159",
+      "domanda": "Cosa rappresenta fisicamente la divergenza del campo magnetico $\\nabla \\cdot \\vec{B} = 0$?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Equazionj di Maxwell",
+      "opzioni": [
+        "Non esistono cariche magnetiche, quindi le linee di campo magnetico non hanno sorgenti isolate; le linee di B formano sempre loop chiusi",
+        "Il campo magnetico è sempre divergente",
+        "La divergenza misura la corrente",
+        "La divergenza descrive la rotazione del campo"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'equazione $\\nabla \\cdot \\vec{B} = 0$ è una delle equazioni di Maxwell e rappresenta l'assenza di monopoli magnetici. A differenza del campo elettrico (che ha sorgenti: le cariche), il campo magnetico non ha sorgenti isolate. Le linee di B devono sempre formare loop chiusi: per ogni línea di B che esce da una regione, un'altra deve entrarvi. Questo è analogo alla conservazione del flusso di fluido incomprimibile.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "divergenza",
+        "monopoli",
+        "Maxwell",
+        "linee chiuse"
+      ]
+    },
+    {
+      "id": "mag_160",
+      "domanda": "Quale è la relazione tra il campo magnetico H e l'induzione magnetica B all'interno di un materiale?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "H e B nel materiale",
+      "opzioni": [
+        "$\\vec{B} = \\mu_0(\\vec{H} + \\vec{M})$, dove M è la magnetizzazione del materiale; nel vuoto, $\\vec{B} = \\mu_0 \\vec{H}$",
+        "$\\vec{B} = \\vec{H}$ sempre",
+        "$\\vec{H}$ non ha significato",
+        "$\\vec{B}$ e $\\vec{H}$ sono indipendenti"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel materiale, l'induzione magnetica B è legata al campo H e alla magnetizzazione M dalla relazione $\\vec{B} = \\mu_0(\\vec{H} + \\vec{M})$. H rappresenta il campo magnetico \"libero\" (dovuto alle correnti libere esterne), mentre M è la risposta magnetica del materiale. Nel vuoto, M = 0 e $\\vec{B} = \\mu_0 \\vec{H}$. Nei materiali paramagnetici e ferromagnetici, M è non-zero e può essere molto grande, amplificando B.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "H",
+        "B",
+        "M",
+        "magnetizzazione"
+      ]
+    },
+    {
+      "id": "mag_161",
+      "domanda": "Un toroide (forma a ciambella) percorso da corrente genera un campo magnetico confinato principalmente all'interno del toroide. Quale proprietà geometrica del toroide rende difficile l'applicazione della legge di Ampère lungo un circolo non attraversante il toroide?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Toroide",
+      "opzioni": [
+        "Un cerchio che non passa attraverso il buco del toroide non è concatenato da alcuna corrente, quindi la circuitazione di B è nulla e il campo fuori dal toroide è praticamente zero",
+        "Ampère non vale per il toroide",
+        "Il toroide non ha simetria",
+        "La corrente nel toroide non genera campo"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In un toroide, solo i cerchi concentrici passanti attraverso il buco del toroide sono concatenati dalla corrente. Un cerchio nel piano esterno non concatena la corrente, quindi $\\oint \\vec{B} \\cdot d\\vec{\\ell} = \\mu_0 I_{enc} = 0$. Se la geometria è sufficientemente simmetrica, B = 0 fuori dal toroide. Questo è perfetto per il confinamento magnetico: l'energia è confinata e non spande all'esterno, lo contrario di un solenoide aperto.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "toroide",
+        "Ampère",
+        "concatenato",
+        "confinamento"
+      ]
+    },
+    {
+      "id": "mag_162",
+      "domanda": "Quale è l'effetto fisico della Rotazione Faraday (Faraday rotation), in cui la polarizzazione lineare della luce ruota in presence di un forte campo magnetico?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Faraday rotation",
+      "opzioni": [
+        "Il campo magnetico interagisce con l'orbita/spin degli elettroni nel materiale, modificando gli indici di rifrazione per le due polarizzazioni circolari (destrorsa e sinistrorsa) in modo diverso. L'accumulo di questa differenza di fase causa una rotazione del piano di polarizzazione",
+        "La luce cambia colore",
+        "La luce viene assorbita",
+        "Non c'è effetto fisico su la luce"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Nel materiale, il fotone interagisce con i momenti magnetici atomici, causando una birifrangenza magnetica (differenza di indice di rifrazione per circolari dextro e sinistro). Due componenti di polarizzazione circolare accumulano una differenza di fase, risultando in una rotazione del piano di polarizzazione lineare. L'angolo di rotazione è proporzionale a B e alla lunghezza del percorso: $\\theta = V B L$, dove V è la costante di Verdet. Questo viene usato per gli isolatori ottici (Faraday isolators) che proteggono laser da riflessioni.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "Faraday rotation",
+        "polarizzazione",
+        "birifrangenza",
+        "isolatore"
+      ]
+    },
+    {
+      "id": "mag_163",
+      "domanda": "In un circuito magnetico analogicamente simile a un circuito elettrico, quale grandezza magnetica è l'equivalente della resistenza elettrica?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Circuiti magnetici",
+      "opzioni": [
+        "La riluttanza magnetica $\\mathcal{R} = \\frac{l}{\\mu_0 \\mu_r A}$; la legge di Ohm magnetica è $\\Phi = \\frac{\\mathcal{F}}{\\mathcal{R}}$, dove $\\mathcal{F}$ è la forza magnetomotrice (equivalente della voltage)",
+        "La permeabilità",
+        "L'induttanza",
+        "La capacità"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "I circuiti magnetici usano un'analogia diretta con i circuiti elettrici: Flusso Φ ↔ Corrente I, Forza magnetomotrice $\\mathcal{F}$ ↔ Tensione V, Riluttanza $\\mathcal{R}$ ↔ Resistenza R. La legge di Ohm magnetica è $\\Phi = \\frac{\\mathcal{F}}{\\mathcal{R}}$. Riluttanze in serie si sommano, come resistenze. Questa analogia è utile per analizzare circuiti magnetici complessi in trasformatori e macchine elettriche.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "riluttanza",
+        "circuito magnetico",
+        "Ohm",
+        "F.M.M."
+      ]
+    },
+    {
+      "id": "mag_164",
+      "domanda": "Perché i pinguini potrebbero teoricamente usare il campo magnetico terrestre come sistema di navigazione, anche se non hanno organi magnetici evoluti come i piccioni?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Biomagnetismo",
+      "opzioni": [
+        "Anche senza organi magnetici specializzati, il movimento nel campo magnetico terrestre induce una forza di Lorentz su ioni e molecole cariche nel corpo (effetto ionotermico), fornendo input sensoriali circa la direzione; inoltre, studi recenti suggeriscono proteine quantistiche (cryptochrome) che potrebbero rilevare campi magnetici",
+        "I pinguini hanno una magnetite speciale nel cervello",
+        "Il campo magnetico terrestre non ha effetti biologici",
+        "I pinguini usano solo la vista"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La ricerca moderna suggerisce molteplici meccanismi di biomagnetismo: (1) L'effetto ionotermico: il flusso di ioni nel corpo in un campo magnetico crea una forza di Lorentz. (2) Proteine magnetiche come la magnetite in organelli cellulari. (3) Effetti quantistici: il criptocromo (proteina presente negli occhi di uccelli) potrebbe rilevare campi attraverso stati di spin di radicali paia. I pinguini, attraverso uno o più di questi meccanismi, potrebbero navigare usando il campo magnetico terrestre.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "biomagnetismo",
+        "pinguini",
+        "Lorentz",
+        "cryptochrome"
+      ]
+    },
+    {
+      "id": "mag_165",
+      "domanda": "Quale è il principio fisico dietro la schermatura magnetica di Mu-metal, che offre attenuazione di campi magnetici molto più efficace del ferro ordinario per campi deboli?",
+      "categoria": "Magnetismo",
+      "sottocategoria": "Blindaggio avanzato",
+      "opzioni": [
+        "Mu-metal ha una permeabilità magnetica relativa $\\mu_r$ estremamente alta (fino a 200000) a frequenze basse e campi deboli, grazie alla composizione di leghe nichel-ferro ottimizzate con basso tasso di coercitività. Il campo magnetico viene \"assorbito\" nel materiale con minima perdita di isteresi",
+        "Mu-metal è diamagnetico puro",
+        "Mu-metal converte il campo in calore",
+        "Mu-metal ha monopoli magnetici"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Mu-metal è una lega nichel-ferro con elementi aggiuntivi (molibdeno, rame) che riduce la coercitività e aumenta la permeabilità massima a valori straordinari. Per campi statici e a bassa frequenza, il flusso magnetico viene confinato preferibilmente nel mu-metal, riducendo il flusso nello spazio schermato di un fattore $\\mu_r$. A differenze del ferro ordinario, mu-metal mantiene un'alta permeabilità anche in campi deboli, rendendolo ideale per schermare strumenti sensibili.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "mu-metal",
+        "permeabilità",
+        "coercitività",
+        "schermatura"
+      ]
     }
   ]
 }

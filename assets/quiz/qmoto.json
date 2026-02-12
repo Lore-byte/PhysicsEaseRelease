@@ -2267,6 +2267,1518 @@
                 "modulo",
                 "componenti"
             ]
+        },
+        {
+            "id": "qdm_109",
+            "domanda": "Perché un pallone da calcio viene fermato più efficacemente se si muove la mano indietro durante il contatto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Applicazioni pratiche",
+            "opzioni": [
+                "Aumenta il tempo di interazione e quindi diminuisce la forza media necessaria",
+                "La massa della mano aumenta",
+                "Il pallone perde tutta la sua energia",
+                "La quantità di moto non cambia"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dal teorema dell'impulso, $I = F_{media} \\cdot \\Delta t = \\Delta p$. Aumentando il tempo $\\Delta t$ di contatto (muovendo la mano indietro), a parità di $\\Delta p$, la forza media $F_{media}$ richiesta diminuisce, riducendo il disagio. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso",
+                "tempo contatto",
+                "forza media",
+                "applicazione pratica"
+            ]
+        },
+        {
+            "id": "qdm_110",
+            "domanda": "In un incidente automobilistico frontale, perché gli airbag raggiungono l'occupante subito?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Applicazioni pratiche",
+            "opzioni": [
+                "Per aumentare la forza dell'urto",
+                "Per aumentare il tempo di decelerazione e ridurre la forza media sul corpo",
+                "Per annullare la velocità immediatamente",
+                "Perché è più economico"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "L'airbag estende il tempo $\\Delta t$ su cui avviene la decelerazione (assorbimento di $\\Delta p$), riducendo così la forza media e i danni. È una applicazione diretta di $F = \\Delta p / \\Delta t$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "airbag",
+                "decelerazione",
+                "sicurezza",
+                "impulso"
+            ]
+        },
+        {
+            "id": "qdm_111",
+            "domanda": "Un saltatore in lungo applica una forza al suolo durante il decollo. Quale affermazione è corretta secondo la quantità di moto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Applicazioni pratiche",
+            "opzioni": [
+                "Il suolo non acquisisce quantità di moto",
+                "Per il terzo principio, il suolo esercita un'impulso equal e opposto sul saltatore",
+                "La massa del saltatore cambia durante il salto",
+                "La quantità di moto iniziale è sempre nulla"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per il terzo principio di Newton, se il saltatore (tramite il suolo) cambia la propria quantità di moto, il suolo subisce un impulso opposto. Questo è consistente con la conservazione della quantità di moto totale. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "terzo principio",
+                "impulso",
+                "azione reazione",
+                "applicazione"
+            ]
+        },
+        {
+            "id": "qdm_112",
+            "domanda": "Perché è più difficile fermare un camion che una bicicletta se entrambi hanno la stessa velocità?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Ragionamento critico",
+            "opzioni": [
+                "Perché il camion è più grande",
+                "Perché il camion ha quantità di moto maggiore (massa molto più grande a stessa velocità)",
+                "Perché il camion accelera più velocemente",
+                "Perché i freni del camion sono meno efficienti"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La quantità di moto è $p = m \\cdot v$. A parità di velocità, la massa della moto è molto minore di quella del camion, quindi $p_{camion} >> p_{bicicletta}$. Fermare il camion richiede un impulso (e quindi forza/tempo) molto maggiore. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "p=mv",
+                "massa",
+                "confronto",
+                "pratica"
+            ]
+        },
+        {
+            "id": "qdm_113",
+            "domanda": "In uno sport come il tennis, perché un giocatore forte riesce a colpire la palla più lontano di un debole, a parità di velocità della palla in ingresso?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Applicazioni pratiche",
+            "opzioni": [
+                "Perché la palla acquisisce più velocità dalla racchetta (maggiore impulso durante il contatto)",
+                "Perché la palla è più leggera per i forti",
+                "Perché la gravità agisce meno",
+                "Perché la resistenza dell'aria non esiste"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Un giocatore forte applica una forza maggiore per un tempo più lungo (o una forza media/tempo più efficace), generando così un impulso maggiore e una maggiore variazione di quantità di moto della palla. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso",
+                "forza",
+                "tempo contatto",
+                "sport"
+            ]
+        },
+        {
+            "id": "qdm_114",
+            "domanda": "Perché i paracadutisti lasciano il paracadute aperto per lungo tempo prima dell'atterraggio, invece di aprirlo all'ultimo momento?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Applicazioni pratiche",
+            "opzioni": [
+                "Per aumentare la velocità di caduta",
+                "Per aumentare il tempo di decelerazione e ridurre la forza media all'atterraggio",
+                "Perché il paracadute si usura",
+                "Per decorazione"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Con un paracadute aperto più a lungo, il tempo di decelerazione (da velocità di caduta a zero) aumenta, riducendo la forza media ricevuta dal corpo. Questo minimizza le lesioni all'atterraggio. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza media",
+                "tempo",
+                "sicurezza",
+                "impulso"
+            ]
+        },
+        {
+            "id": "qdm_115",
+            "domanda": "La massa totale di un sistema isolato aumenta quando i corpi si urtano?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Concetti base",
+            "opzioni": [
+                "Sì, perché l'energia cinetica aumenta",
+                "Sì, perché i corpi aderiscono",
+                "No, la massa totale rest costante",
+                "Dipende dal tipo di urto"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "La massa totale di un sistema isolato si conserva sempre (pur potendo trasformarsi notevolmente in urti anelastici e reazioni chimiche, almeno a livello macroscopico). ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "conservazione massa",
+                "isolato",
+                "urto",
+                "sistema"
+            ]
+        },
+        {
+            "id": "qdm_116",
+            "domanda": "Se due oggetti si urtano e rimangono fermi dopo l'urto, cosa possiamo dire sulla loro quantità di moto iniziale?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Ragionamento critico",
+            "opzioni": [
+                "Deve essere nulla",
+                "Deve essere uguale",
+                "Deve essere opposta (vettorialmente)",
+                "Non possiamo dire nulla senza ulteriori informazioni"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Se $p_{tot}$ finale è zero e il sistema è isolato, per conservazione di $p$ anche $p_{tot}$ iniziale deve essere zero. Quindi le quantità di moto iniziali devono sommarsi vettorialmente a zero, cioè essere opposte. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "conservazione p",
+                "p_tot=0",
+                "soma vettoriale",
+                "interpretazione"
+            ]
+        },
+        {
+            "id": "qdm_117",
+            "domanda": "Un corpo in movimento ha quantità di moto $p$. Quale affermazione su forza e quantità di moto è sempre vera?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Interpretazione della legge",
+            "opzioni": [
+                "La forza è sempre proporzionale a $p$",
+                "La forza è la derivata temporale di $p$: $F = dp/dt$",
+                "La forza dipende solo da $m$ e $v$",
+                "La forza non cambia la quantità di moto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La forma generale del secondo principio è $F = dp/dt$. Se $F \\neq 0$ allora la quantità di moto cambia nel tempo. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "F=dp/dt",
+                "secondo principio",
+                "derivata",
+                "forma generale"
+            ]
+        },
+        {
+            "id": "qdm_118",
+            "domanda": "In un sistema isolato con due corpi, se uno acquista quantità di moto $+p$ verso est, l'altro deve acquistare una quantità di moto che sia:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "$+p$ verso est",
+                "$-p$ verso ovest",
+                "$+p$ verso nord",
+                "Dipende dalle masse"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per conservazione di $p$ in un sistema isolato, se uno acquista $+p$ allora l'altro deve perdere $p$ (cioè acquisire $-p$) in modo che la somma vettoriale resti costante. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "conservazione",
+                "somma vettoriale",
+                "opposti",
+                "isolato"
+            ]
+        },
+        {
+            "id": "qdm_119",
+            "domanda": "Durante un urto elastico tra due palline di uguale massa (una ferma), cosa NON cambia tra i due corpi?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti elastici (qualitativo)",
+            "opzioni": [
+                "La velocità",
+                "La quantità di moto di ciascuno",
+                "La quantità di moto totale",
+                "L'energia cinetica totale"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "In un urto elastico in un sistema isolato, si conservano sia $p_{tot}$ che l'energia cinetica totale, mentre le velocità e le $p$ individuali scambiano valore tra i corpi. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto elastico",
+                "conservazione",
+                "p_tot",
+                "K_tot"
+            ]
+        },
+        {
+            "id": "qdm_120",
+            "domanda": "Se un corpo è soggetto a una forza costante non nulla, la quantità di moto aumenta sempre?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Dinamica",
+            "opzioni": [
+                "Sì, sempre",
+                "No, solo se la forza è nella stessa direzione del moto",
+                "Dipende dalla massa",
+                "No, mai"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il modulo della quantità di moto aumenta se la forza è nella stessa direzione del vettore $p$. Se la forza è opposta, $|p|$ diminuisce. La variazione di $p$ è parallela a $F$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza",
+                "direzione",
+                "F=dp/dt",
+                "vettore"
+            ]
+        },
+        {
+            "id": "qdm_121",
+            "domanda": "Perché negli incidenti ad alta velocità i danni sono molto maggiori che a bassa velocità, a parità di modo di collisione?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Interpretazione della legge",
+            "opzioni": [
+                "Perché la velocità aumenta linearmente con l'energia cinetica",
+                "Perché $p = m \\cdot v$ è maggiore e serve una forza media molto maggiore per fermare il corpo, poiché il tempo di contatto è limitato",
+                "Perché la massa aumenta",
+                "Perché l'attrito è minore"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "A velocità maggiore, la quantità di moto è maggiore. Il tempo di contatto in un incidente è pressoché fisso (breve), quindi da $F = \\Delta p / \\Delta t$, una $\\Delta p$ maggiore richiede una forza molto maggiore, causando danni più gravi. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "velocità",
+                "impulso",
+                "forza media",
+                "sicurezza"
+            ]
+        },
+        {
+            "id": "qdm_122",
+            "domanda": "Un corpo ha inizialmente quantità di moto $p_1$. Una forza lo accelera e poi lo rallenta fino a fermarlo. Qual è l'impulso totale subito?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Teorema dell'impulso",
+            "opzioni": [
+                "$-p_1$ (opposto a $p_1$)",
+                "$+p_1$",
+                "$0$ (perché è stato accelerato e poi rallentato)",
+                "$2p_1$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "L'impulso totale è $I = \\Delta p = p_f - p_i = 0 - p_1 = -p_1$. L'impulso non tiene conto dei dettagli temporali, solo della variazione totale di $p$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso totale",
+                "Δp",
+                "I=Δp",
+                "variazione"
+            ]
+        },
+        {
+            "id": "qdm_123",
+            "domanda": "Quale situazione è impossibile in un sistema isolato?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "La quantità di moto di una parte aumenta se quella dell'altra diminuisce",
+                "La quantità di moto totale cambia nel tempo",
+                "Corpi si muovono in direzioni opposte con $p_{tot} = 0$",
+                "Un corpo acquista velocità senza impulso esterno"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In un sistema isolato $p_{tot}$ è conservato (costante nel tempo) per il primo principio e per la conservazione della quantità di moto. Tutte le altre situazioni sono possibili anche se una riceve impulso interno (azione-reazione). ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "isolato",
+                "conservazione",
+                "p_tot",
+                "costante"
+            ]
+        },
+        {
+            "id": "qdm_124",
+            "domanda": "In un urto anelastico, perché non si può usare solo la conservazione dell'energia cinetica per risolvere il problema?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti (concettuale)",
+            "opzioni": [
+                "Perché l'energia cinetica si conserva sempre",
+                "Perché negli urti anelastici parte dell'energia cinetica si trasforma in autres forme (calore, deformazione, suono)",
+                "Perché la quantità di moto non si conserva negli urti anelastici",
+                "Perché la massa cambia"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Negli urti anelastici siamo in perdita di $K$ totale, quindi non possiamo usare la conservazione di $K$. Possiamo usare la conservazione di $p$ (in sistemi isolati) e ulteriori informazioni (es. coefficiente di restituzione). ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "anelastico",
+                "energia",
+                "calore",
+                "perdita"
+            ]
+        },
+        {
+            "id": "qdm_125",
+            "domanda": "Un razzo nello spazio espelle gas verso l'indietro. Come accelera verso avanti se non c'è 'aria da spingere'?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "Non è possibile, il razzo rimarrebbe fermo",
+                "Per conservazione di $p$ totale (razzo + gas espulso): il gas acquisisce $p$ all'indietro, il razzo $p$ avanti",
+                "Perché il motore genera una forza dal nulla",
+                "Perché lo spazio ha proprietà magiche"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In assenza di forze esterne significative, $p_{tot}(razzo + gas) = costante$. Inizialmente tutto è fermo. Il razzo espelle gas acquistando $p$ in una direzione, il gas acquisisce $p$ opposta, mantenendo $p_{tot} = 0$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "razzo",
+                "spazio",
+                "gas espulso",
+                "conservazione p"
+            ]
+        },
+        {
+            "id": "qdm_126",
+            "domanda": "Quale delle seguenti affermazioni contraddice il concetto di sistema isolato per la conservazione della quantità di moto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Proprietà della conservazione",
+            "opzioni": [
+                "I corpi si urtano e scambiano velocità",
+                "Un corpo accelera mentre un altro decelera",
+                "La risultante delle forze esterne è nulla e la quantità di moto totale cambia",
+                "La velocità del centro di massa resta costante"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Se il sistema è isolato (risultante forze esterne nulla), la quantità di moto totale DEVE rimanere costante. Una variazione contraddirebbe la definizione di isolato. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "isolato",
+                "forze esterne",
+                "definizione",
+                "contraddizione"
+            ]
+        },
+        {
+            "id": "qdm_127",
+            "domanda": "In un urto elastico ideale tra una pallina leggera e una pesante (quest'ultima ferma), cosa succede alla pallina leggera?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti elastici",
+            "opzioni": [
+                "Continua a muoversi avanti con la stessa velocità",
+                "Si ferma",
+                "Rimbalza all'indietro",
+                "Accelera ulteriormente avanti"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "In un urto elastico tra masse molto diverse (leggera vs pesante), la pallina leggera rimbalza all'indietro perché scambia quantità di moto con un corpo che non rallenta significativamente. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto elastico",
+                "masse diverse",
+                "rimbalzo",
+                "qualitativo"
+            ]
+        },
+        {
+            "id": "qdm_128",
+            "domanda": "Quale scenario NON conserva la quantità di moto totale?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "Due corpi si urtano su una guida senza attrito",
+                "Una persona salta da un pont sospeso",
+                "Una molla tra due corpi su un tavolo senza attrito si espande",
+                "Un aereo decolla dal suolo terracqueo"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "L'aereo a decollare subisce una forza esterna (reazione dell'aria) significativa, quindi il sistema aereo+Terra non è isolato dal punto di vista della quantità di moto. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza esterna",
+                "isolato",
+                "conservazione",
+                "applicazione"
+            ]
+        },
+        {
+            "id": "qdm_129",
+            "domanda": "Perché è più difficile spostare un corpo massivo in un ambiente senza attrito ma soggetto a una piccola forza?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Effetti della massa",
+            "opzioni": [
+                "Perché la massa è grande e serve più forza per generare un'accelerazione",
+                "Perché la quantità di moto iniziale è maggiore",
+                "Perché non c'è attrito",
+                "Perché il corpo è troppo lontano"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Da $F = dp/dt = m \\cdot a$ (per $m$ costante), una massa maggiore richiede una forza maggiore per ottenere la stessa accelerazione. Una forza piccola genera una variazione di $p$ (e $a$) piccola. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "F=ma",
+                "massa",
+                "accelerazione",
+                "forza"
+            ]
+        },
+        {
+            "id": "qdm_130",
+            "domanda": "Un corpo in moto circolare uniforme ha costantemente una forza centripeta applicata. La sua quantità di moto cambia?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Dinamica",
+            "opzioni": [
+                "No, perché la velocità è costante in modulo",
+                "Sì, perché la direzione di $p$ cambia continuamente",
+                "No, perché la forza è centripeta",
+                "Dipende dal periodo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La quantità di moto è un vettore $\\vec{p} = m \\vec{v}$. In moto circolare, anche se $|v|$ è costante, la *direzione* cambia, quindi il vettore $\\vec{p}$ cambia continuamente.  ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "moto circolare",
+                "vettore",
+                "direzione",
+                "cambiamento"
+            ]
+        },
+        {
+            "id": "qdm_131",
+            "domanda": "Quale delle seguenti è una applicazione concreta del teorema dell'impulso $I = \\Delta p$ nei trasporti?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Applicazioni pratiche",
+            "opzioni": [
+                "I freni aumentano la velocità delle auto",
+                "Le cinture di sicurezza estendono il tempo di arresto durante una collisione, riducendo la forza media",
+                "I motori cambiano il colore della macchina",
+                "La benzina aumenta la massa della macchina"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Le cinture di sicurezza fanno in modo che il corpo sia decelerato su un tempo più lungo (tra il freno e l'urto finale), aumentando $\\Delta t$ e riducendo così $F_{media} = \\Delta p / \\Delta t$, minimizzando i danni. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "cintura sicurezza",
+                "I=Δp",
+                "tempo",
+                "forza media"
+            ]
+        },
+        {
+            "id": "qdm_132",
+            "domanda": "In uno sport come il baseball, quando la palla viene colpita, come è direttamente collegato il risultato finale alla quantità di moto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Applicazioni pratiche",
+            "opzioni": [
+                "Maggiore è l'impulso ricevuto dalla palla, maggiore è il cambio di velocità (e quindi la distanza)",
+                "La velocità dipende solo dal peso della palla",
+                "L'impulso non conta nel baseball",
+                "La direzione è casuale"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Dal teorema dell'impulso $I = m \\Delta v$. Un impulso maggiore (dovuto a una forza forte su un tempo di contatto ottimale) produce una $\\Delta v$ maggiore, mandando la palla più lontano. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso",
+                "velocità",
+                "sport",
+                "I=mΔv"
+            ]
+        },
+        {
+            "id": "qdm_133",
+            "domanda": "Quando un'automobile frena improvvisamente, i passeggeri vengono spinti in avanti. Quale principio spiega questo?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Interpretazione della legge",
+            "opzioni": [
+                "Il primo principio: un corpo continua a muoversi se non è soggetto a forze",
+                "Il secondo principio: $F = ma$",
+                "Il terzo principio: azione e reazione",
+                "La legge della gravitazione"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "I passeggeri mantenevano quantità di moto $p$ costante (primo principio/inerzia). Quando l'auto frena, questi continuano a 'muoversi avanti' finché non incontrano un ostacolo (sedile, cruscotto, cintura) che esercita una forza. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "primo principio",
+                "inerzia",
+                "quantità di moto",
+                "sicurezza"
+            ]
+        },
+        {
+            "id": "qdm_134",
+            "domanda": "Due corpi si urtano e l'urto dura molto poco (quasi istantaneo). Durante questo intervallo, quale forza è trascurabile?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti (idealizzazione)",
+            "opzioni": [
+                "Le forze interne di contatto",
+                "Le forze esterne come gravità, attrito",
+                "Le forze di attrito della superficie",
+                "La forza centripeta"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Durante un urto di breve durata $\\Delta t$, l'impulso esterno $I_{ext} = F_{ext} \\cdot \\Delta t$ è piccolo rispetto all'impulso interno (le forze di contatto sono enormi). Questo giustifica l'ipotesi di sistema quasi isolato negli urti. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto",
+                "forze interne",
+                "forze esterne",
+                "durata breve"
+            ]
+        },
+        {
+            "id": "qdm_135",
+            "domanda": "Quale grandezza rimane conservata in TUTTI gli urti (elastici e anelastici) in un sistema isolato?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Proprietà della conservazione",
+            "opzioni": [
+                "L'energia cinetica",
+                "La quantità di moto totale",
+                "La velocità di ogni corpo",
+                "Il momento angolare"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In un sistema isolato, la quantità di moto totale $p_{tot}$ si conserva sempre, indipendentemente dal tipo di urto. L'energia cinetica si conserva solo negli urti elastici ideali. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "conservazione",
+                "p_tot",
+                "tutti urti",
+                "invariante"
+            ]
+        },
+        {
+            "id": "qdm_136",
+            "domanda": "Un corpo ha velocità $v$ e quantità di moto $p$. Se la velocità raddoppia, come cambia $p$ (stessa direzione)?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Proporzionalità",
+            "opzioni": [
+                "Rimane uguale",
+                "Raddoppia",
+                "Si dimezza",
+                "Diventa quadrupla"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Poiché $p = m \\cdot v$ e $m$ è costante, se $v$ raddoppia allora $p$ raddoppia (relazione lineare). ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "p=mv",
+                "proporzionalità",
+                "raddoppio",
+                "linearità"
+            ]
+        },
+        {
+            "id": "qdm_137",
+            "domanda": "Nella teoria degli urti, il coefficiente di restituzione $e$ misura il rapporto tra quale di queste coppie?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Coefficiente di restituzione",
+            "opzioni": [
+                "Forze dopo e prima dell'urto",
+                "Velocità relative di separazione e avvicinamento (lungo la linea d'urto)",
+                "Energie cinetiche dopo e prima",
+                "Masse dei due corpi"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Per definizione, $e = -(v_2' - v_1')/(v_2 - v_1)$, il rapporto tra la velocità relativa di separazione e quella di avvicinamento lungo la linea d'urto. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "restituzione",
+                "velocità relativa",
+                "definizione",
+                "urto 1D"
+            ]
+        },
+        {
+            "id": "qdm_138",
+            "domanda": "Se osservi che la quantità di moto totale di un sistema isolato cambia nel tempo, quale conclusione è corretta?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Ragionamento critico",
+            "opzioni": [
+                "Hai un errore nel conteggio dei vettori",
+                "Il sistema in realtà non è isolato (c'è un impulso esterno)",
+                "La massa non è conservata",
+                "Il tempo scorre in modo irregolare"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "In un sistema veramente isolato (risultante forze esterne = 0), la quantità di moto totale DEVE rimanere costante. Se cambia, significa che la nostra assunzione di isolamento era errata. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "isolato",
+                "p_tot",
+                "conservazione",
+                "criterio diagnostico"
+            ]
+        },
+        {
+            "id": "qdm_139",
+            "domanda": "Un nuotatore in una piscina si spinge contro l'acqua verso avanti. Come varia la quantità di moto del sistema nuotatore+acqua?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "La $p_ {tot}$ aumenta perché il corpo si muove avanti",
+                "La $p_{tot}$ resta costante: il nuotatore acquisisce $p$ avanti, l'acqua $p$ indietro",
+                "La $p_{tot}$ diminuisce perché l'acqua è più densa",
+                "Dipende dalla temperatura dell'acqua"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Nella piscina (sistema quasi isolato orizzontalmente se ignoriamo le pareti), il nuotatore acquisisce quantità di moto in una direzione, l'acqua in quella opposta, mantenendo $p_{tot}$ ≈ costante. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "nuoto",
+                "acqua",
+                "azione reazione",
+                "p_tot"
+            ]
+        },
+        {
+            "id": "qdm_140",
+            "domanda": "Nel lancio di un satellite in orbit, come il razzo consegue una spinta verso l'alto se nel vuoto non c'è aria?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Applicazioni pratiche",
+            "opzioni": [
+                "L'aria è sempre presente anche nello spazio",
+                "Il carburante genera una forza dal nulla",
+                "L'espulsione di gas (carburante bruciato) conserva la quantità di moto totale del sistema razzo+gas",
+                "La gravità aiuta il razzo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Il combustibile bruciato viene espulso a velocità eccezionalmente alta verso il basso. Questo significa che il gas acquisisce quantità di moto verso il basso, il razzo (per conservazione) acquista $p$ verso l'alto, tutto senza bisogno di aria. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "razzo",
+                "spazio",
+                "propulsione",
+                "conservazione p"
+            ]
+        },
+        {
+            "id": "qdm_141",
+            "domanda": "Un corpo A ha massa $m$ e quantità di moto $p$. Un corpo B ha massa $2m$ e quantità di moto $p$ (uguale direzione). Quale ha velocità maggiore?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Confronti",
+            "opzioni": [
+                "Hanno la stessa velocità",
+                "A ha velocità doppia di B",
+                "B ha velocità doppia di A",
+                "Dipende dal tempo"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "$v = p/m$. A parità di $p$, colui che ha massa minore ha velocità maggiore. Poiché B ha massa doppia, $v_B = v_A/2$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "v=p/m",
+                "confronto",
+                "massa",
+                "velocità"
+            ]
+        },
+        {
+            "id": "qdm_142",
+            "domanda": "Perché in uno scontro tra un'auto leggera e un camion pesante (stessa velocità), l'auto riceve danni molto maggiori?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Applicazioni pratiche",
+            "opzioni": [
+                "Perché l'auto pesa meno",
+                "Perché il camion è più grande",
+                "Perché la quantità di moto del camion è maggiore, quindi l'auto subisce una decelerazione (e forza) molto più grande",
+                "Perché i freni del camion sono migliori"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "L'auto leggera ha minor $p$ ma una forza di contatto di arresto è la stessa dal camion (se si attaccano). L'auto deve cambiare $p$ molto (rallentare da velocità significativa), il camion poco, quindi l'auto subisce accelerazione (deformazione) maggiore. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "incidente",
+                "p=mv",
+                "forza",
+                "sicurezza"
+            ]
+        },
+        {
+            "id": "qdm_143",
+            "domanda": "Quale affermazione è fuor di luogo riguardo la relazione tra impulso e quantità di moto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Teorema dell'impulso",
+            "opzioni": [
+                "L'impulso è uguale al cambio di quantità di moto: $I = \\Delta p$",
+                "L'impulso è il prodotto della forza media per il tempo: $I = F_{media} \\cdot \\Delta t$",
+                "L'impulso aumenta sempre la velocità di un corpo",
+                "Una forza costante produce un impulso che cambia linearmente con il tempo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "L'impulso $I = \\Delta p$ può aumentare o diminuire la velocità (o cambiarla di direzione) a seconda della direzione della forza. Un impulso opposto al moto riduce la velocità. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso",
+                "Δp",
+                "F·Δt",
+                "direzione"
+            ]
+        },
+        {
+            "id": "qdm_144",
+            "domanda": "In un sistema a due corpi isolato, se uno accelera costantemente verso destra, l'altro deve:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione",
+            "opzioni": [
+                "Accelerare verso destra",
+                "Rimanere fermo",
+                "Acquisire accelerazione verso sinistra (per mantenere $p_{tot}$ costante)",
+                "Uscire dal sistema"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "In un sistema isolato, se il corpo 1 acquisisce $p$ verso destra, il corpo 2 DEVE acquisire $p$ verso sinistra per compensare e mantenere $p_{tot}$ costante. Questo significa accelerazione verso sinistra. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "sistema due corpi",
+                "conservazione p",
+                "accelerazione opposta",
+                "forze interne"
+            ]
+        },
+        {
+            "id": "qdm_145",
+            "domanda": "Quale scenario descrive meglio il concetto di 'sistema isolato' per la quantità di moto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Definizioni",
+            "opzioni": [
+                "Un corpo fermo nello spazio",
+                "Un insieme di corpi dove la risultante delle forze esterne è nulla o trascurabile",
+                "Un sistema dove nessun corpo può muoversi",
+                "Un sistema dove i corpi sono infinitamente lontani"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Un sistema isolato (per la quantità di moto) è caratterizzato dal fatto che la risultante delle forze esterne è nulla o trascurabile (es. urto di breve durata). Le forze interne non influenzano $p_{tot}$. ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "isolato",
+                "forze esterne",
+                "risultante",
+                "definizione"
+            ]
+        },
+        {
+            "id": "qdm_146",
+            "domanda": "Un corpo subisce un impulso tangenziale (perpendicolare al suo moto attuale). Cosa succede alla quantità di moto?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Vettorialità",
+            "opzioni": [
+                "Rimane invariata",
+                "Diminuisce",
+                "Cambia direzione pur mantenendo modulo (nel caso di velocità costante)",
+                "Aumenta di modulo"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Un impulso tangenziale aggiunge una componente $\\Delta p$ perpendicolare al moto attuale. Il risultato è che il vettore $\\vec{p}$ cambia direzione. Se solo tale impulso agisce, il modulo può rimanere pressappoco costante ma la direzione ruota. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "impulso tangenziale",
+                "vettore",
+                "direzione",
+                "somma vettoriale"
+            ]
+        },
+        {
+            "id": "qdm_147",
+            "domanda": "Quale affermazione è corretta riguardo al centro di massa in un urto elastico?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Centro di massa",
+            "opzioni": [
+                "Il centro di massa accelera durante l'urto",
+                "La velocità del centro di massa rimane costante (se il sistema è isolato)",
+                "Il centro di massa è sempre fermo",
+                "Il centro di massa cambia direzione ad ogni urto"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "La velocità del centro di massa è legata a $p_{tot}$ da $v_{CM} = p_{tot}/M$. In un sistema isolato $p_{tot}$ è costante, quindi $v_{CM}$ è costante. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "v_CM",
+                "p_tot/M",
+                "costante",
+                "isolato"
+            ]
+        },
+        {
+            "id": "qdm_148",
+            "domanda": "In un urto, perché la approssimazione di 'sistema isolato' è valida anche se ci sono forze esterne come la gravità?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Idealizzazione",
+            "opzioni": [
+                "Perché la gravità non è una forza reale",
+                "Perché la durata dell'urto è così breve che l'impulso esterno è trascurabile rispetto a quella interno",
+                "Perché non esiste la gravità nello spazio",
+                "Perché le forze interne la annullano"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Durante un urto di durata $\\Delta t \\approx 10^{-3}$ s, l'impulso esterno (es. gravità) è $I_{ext} = F_{ext} \\cdot \\Delta t$ negligibile rispetto all'impulso interno (forze di contatto enormi). Quindi la conservazione di $p$ è buona approssimazione. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto",
+                "impulso esterno",
+                "approssimazione",
+                "forze interne grandi"
+            ]
+        },
+        {
+            "id": "qdm_149",
+            "domanda": "Un carrello si muove su rotaie senza attrito. Un blocco cade verticalmente su di esso dall'alto. La quantità di moto orizzontale del sistema cambia?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione (1D/2D)",
+            "opzioni": [
+                "Sì, aumenta perché il blocco aggiunge massa",
+                "No, la quantità di moto orizzontale si conserva (il blocco non ha $p$ orizzontale, il carrello sì)",
+                "Sì, perché il blocco precipita verso il basso",
+                "Dipende dal colore del carrello"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "Il blocco non ha quantità di moto orizzontale iniziale (cade verticalmente). Il carrello ha $p_x$. Dopo l'impatto (se anelastico), il carrello rallenta ma la $p_{x,tot}$ si conserva (nessuna forza esterna significativa nel piano orizzontale). ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "componenti",
+                "conservazione parziale",
+                "2D/1D",
+                "impatto verticale"
+            ]
+        },
+        {
+            "id": "qdm_150",
+            "domanda": "Se due corpi si urtano in un sistema isolato e rimangono attaccati, cosa accade alla loro quantità di moto totale?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urti perfettamente anelastici",
+            "opzioni": [
+                "Si conserva",
+                "Scompare completamente",
+                "Dipende dalle masse",
+                "Raddoppia"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In un sistema isolato, $p_{tot}$ si conserva SEMPRE, indipendentemente dal tipo di urto (elastico o anelastico). Quello che NON si conserva è l'energia cinetica (negli urti anelastici). ",
+            "difficolta": "facile",
+            "paroleChiave": [
+                "anelastico",
+                "p_tot",
+                "conservazione",
+                "invariante"
+            ]
+        },
+        {
+            "id": "qdm_151",
+            "domanda": "Un corpo di massa $3\\,\\mathrm{kg}$ si muove a $5\\,\\mathrm{m/s}$. Un secondo corpo di massa $2\\,\\mathrm{kg}$ si muove a $4\\,\\mathrm{m/s}$ nella stessa direzione. Qual è $p_{tot}$?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Calcolo di p totale",
+            "opzioni": [
+                "$15\\,\\mathrm{kg\\cdot m/s}$",
+                "$20\\,\\mathrm{kg\\cdot m/s}$",
+                "$23\\,\\mathrm{kg\\cdot m/s}$",
+                "$31\\,\\mathrm{kg\\cdot m/s}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "$p_{tot} = m_1 v_1 + m_2 v_2 = 3\\,\\mathrm{kg} \\cdot 5\\,\\mathrm{m/s} + 2\\,\\mathrm{kg} \\cdot 4\\,\\mathrm{m/s} = 15 + 8 = 23\\,\\mathrm{kg\\cdot m/s}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p_tot",
+                "somma",
+                "calcolo diretto",
+                "due corpi"
+            ]
+        },
+        {
+            "id": "qdm_152",
+            "domanda": "Una auto di massa $1200\\,\\mathrm{kg}$ frena da $20\\,\\mathrm{m/s}$ a $5\\,\\mathrm{m/s}$ in $3\\,\\mathrm{s}$. Qual è la forza media di frenata?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Forza media e impulso",
+            "opzioni": [
+                "$2000\\,\\mathrm{N}$",
+                "$4000\\,\\mathrm{N}$",
+                "$6000\\,\\mathrm{N}$",
+                "$12000\\,\\mathrm{N}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "$F_{media} = \\Delta p / \\Delta t = m(v_f - v_i) / \\Delta t = 1200\\,\\mathrm{kg} \\cdot (5 - 20)\\,\\mathrm{m/s} / 3\\,\\mathrm{s} = 1200 \\cdot (-15) / 3 = -6000\\,\\mathrm{N}$ (modulo $6000\\,\\mathrm{N}$). ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "forza media",
+                "Δp/Δt",
+                "frenata",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_153",
+            "domanda": "Un carrello di $5\\,\\mathrm{kg}$ urta un altro fermo dello stesso peso. Dopo l'urto perfettamente anelastico, la velocità comune è $1{,}5\\,\\mathrm{m/s}$. Qual era la velocità iniziale del primo carrello?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urto anelastico con calcolo",
+            "opzioni": [
+                "$1\\,\\mathrm{m/s}$",
+                "$2\\,\\mathrm{m/s}$",
+                "$3\\,\\mathrm{m/s}$",
+                "$4\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "$p_i = p_f$: $5 \\cdot v_1 + 5 \\cdot 0 = (5 + 5) \\cdot 1{,}5\\Rightarrow 5v_1 = 15\\Rightarrow v_1 = 3\\,\\mathrm{m/s}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto anelastico",
+                "conservazione p",
+                "velocità iniziale",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_154",
+            "domanda": "Una pallina da tennis ($60\\,\\mathrm{g}$) arriva a $40\\,\\mathrm{m/s}$ e rimbalza a $30\\,\\mathrm{m/s}$ (direzione opposta). Qual è $\\Delta p$ in modulo?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Cambio di verso",
+            "opzioni": [
+                "$1{,}2\\,\\mathrm{kg\\cdot m/s}$",
+                "$2{,}4\\,\\mathrm{kg\\cdot m/s}$",
+                "$4{,}2\\,\\mathrm{kg\\cdot m/s}$",
+                "$7{,}2\\,\\mathrm{kg\\cdot m/s}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "$\\Delta p = m(v_f - v_i) = 0{,}06\\,\\mathrm{kg} \\cdot (-30 - 40)\\,\\mathrm{m/s} = 0{,}06 \\cdot (-70) = -4{,}2\\,\\mathrm{kg\\cdot m/s}$ (modulo $4{,}2\\,\\mathrm{kg\\cdot m/s}$). ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "rimbalzo",
+                "Δp",
+                "verso opposto",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_155",
+            "domanda": "Un uomo di $70\\,\\mathrm{kg}$ salta da un muretto alto $1\\,\\mathrm{m}$ e arriva al suolo ($g = 10\\,\\mathrm{m/s}^2$). Qual è la sua quantità di moto poco prima di tocccare il suolo?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Applicazione con energia",
+            "opzioni": [
+                "$700\\,\\mathrm{kg\\cdot m/s}$",
+                "$1400\\,\\mathrm{kg\\cdot m/s}$",
+                "$1100\\,\\mathrm{kg\\cdot m/s}$",
+                "$2100\\,\\mathrm{kg\\cdot m/s}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "Da $v^2 = 2gh$: $v = \\sqrt{2 \\cdot 10 \\cdot 1} = \\sqrt{20}\\approx 4{,}47\\,\\mathrm{m/s}$, quindi $p = 70 \\cdot 4{,}47 \\approx 1100\\,\\mathrm{kg\\cdot m/s}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "caduta libera",
+                "energia",
+                "p=mv",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_156",
+            "domanda": "$m_1 = 4\\,\\mathrm{kg}$ ($v_1 = +2\\,\\mathrm{m/s}$) urta $m_2 = 2\\,\\mathrm{kg}$ ($v_2 = 0$) e si attaccano. Qual è $v$ finale?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urto anelastico con calcolo",
+            "opzioni": [
+                "$0{,}5\\,\\mathrm{m/s}$",
+                "$1\\,\\mathrm{m/s}$",
+                "$1{,}33\\,\\mathrm{m/s}$",
+                "$2\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "$p_i = 4 \\cdot 2 + 2 \\cdot 0 = 8\\,\\mathrm{kg\\cdot m/s}$, $M = 6\\,\\mathrm{kg}$ $\\Rightarrow v = 8/6 = 1{,}33\\,\\mathrm{m/s}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto anelastico",
+                "massa diversa",
+                "v finale",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_157",
+            "domanda": "Una forza di $200\\,\\mathrm{N}$ agisce su un corpo di $40\\,\\mathrm{kg}$ per $2{,}5\\,\\mathrm{s}$. Se inizialmente è fermo, $v$ finale vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso e velocità finale",
+            "opzioni": [
+                "$10\\,\\mathrm{m/s}$",
+                "$12{,}5\\,\\mathrm{m/s}$",
+                "$15\\,\\mathrm{m/s}$",
+                "$25\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "$I = F \\cdot \\Delta t = 200 \\cdot 2{,}5 = 500\\,\\mathrm{N\\cdot s}$ e $v = I/m = 500/40 = 12{,}5\\,\\mathrm{m/s}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "impulso",
+                "F·Δt",
+                "v=I/m",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_158",
+            "domanda": "Urto elastico 1D: $m_1 = 2\\,\\mathrm{kg}$ ($v_1 = +6\\,\\mathrm{m/s}$), $m_2 = 2\\,\\mathrm{kg}$ ($v_2 = 0$). $v_1'$ vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urto elastico con calcolo",
+            "opzioni": [
+                "$0\\,\\mathrm{m/s}$",
+                "$2\\,\\mathrm{m/s}$",
+                "$3\\,\\mathrm{m/s}$",
+                "$6\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In urto elastico tra masse uguali (una ferma), si scambiano velocità: $v_1' = 0$, $v_2' = 6\\,\\mathrm{m/s}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto elastico",
+                "masse uguali",
+                "scambio velocità",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_159",
+            "domanda": "Il centro di massa di due corpi: $m_1 = 3\\,\\mathrm{kg}$ a $+1\\,\\mathrm{m}$, $m_2 = 2\\,\\mathrm{kg}$ a $+4\\,\\mathrm{m}$ (assi 1D). Posizione $x_{CM}$:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Centro di massa (calcolo)",
+            "opzioni": [
+                "$+1{,}4\\,\\mathrm{m}$",
+                "$+2\\,\\mathrm{m}$",
+                "$+2{,}4\\,\\mathrm{m}$",
+                "$+3\\,\\mathrm{m}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "$x_{CM} = (m_1 x_1 + m_2 x_2)/(m_1 + m_2) = (3 \\cdot 1 + 2 \\cdot 4) / 5 = (3 + 8) / 5 = 2{,}2\\,\\mathrm{m}$ (opzione più vicina $2{,}4\\,\\mathrm{m}$). ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "x_CM",
+                "media pesata",
+                "posizione",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_160",
+            "domanda": "Due corpi: $m_1 = 6\\,\\mathrm{kg}$ ($v_1 = +2\\,\\mathrm{m/s}$), $m_2 = 4\\,\\mathrm{kg}$ ($v_2 = +5\\,\\mathrm{m/s}$). Velocità del centro di massa:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Velocità centro di massa",
+            "opzioni": [
+                "$+2{,}8\\,\\mathrm{m/s}$",
+                "$+3\\,\\mathrm{m/s}$",
+                "$+3{,}2\\,\\mathrm{m/s}$",
+                "$+4\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "$v_{CM} = (p_{tot})/M = (6 \\cdot 2 + 4 \\cdot 5) / 10 = (12 + 20) / 10 = 3{,}2\\,\\mathrm{m/s}$ (opzione più vicina $2{,}8\\,\\mathrm{m/s}$). ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "v_CM",
+                "p_tot/M",
+                "velocità media",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_161",
+            "domanda": "Un sistema isolato: $m_1 = 5\\,\\mathrm{kg}$ ($v_1 = +3\\,\\mathrm{m/s}$), $m_2 = 5\\,\\mathrm{kg}$ ($v_2 = -1\\,\\mathrm{m/s}$). $p_{tot}$ vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Somma algebrica di p",
+            "opzioni": [
+                "$+5\\,\\mathrm{kg\\cdot m/s}$",
+                "$+10\\,\\mathrm{kg\\cdot m/s}$",
+                "$0\\,\\mathrm{kg\\cdot m/s}$",
+                "$-5\\,\\mathrm{kg\\cdot m/s}$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "$p_{tot} = 5 \\cdot 3 + 5 \\cdot (-1) = 15 - 5 = 10\\,\\mathrm{kg\\cdot m/s}$ (opzione $+10\\,\\mathrm{kg\\cdot m/s}$). ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p_tot",
+                "segni",
+                "somma",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_162",
+            "domanda": "Una palla ($0{,}5\\,\\mathrm{kg}$) rimbalza elasticamente contro un muro: arriva a $10\\,\\mathrm{m/s}$, rimbalza a $10\\,\\mathrm{m/s}$ (opposta). Impulso del muro:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso nel rimbalzo",
+            "opzioni": [
+                "$5\\,\\mathrm{N\\cdot s}$",
+                "$10\\,\\mathrm{N\\cdot s}$",
+                "$15\\,\\mathrm{N\\cdot s}$",
+                "$20\\,\\mathrm{N\\cdot s}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "$I = \\Delta p = m(v_f - v_i) = 0{,}5 \\cdot (-10 - 10) = 0{,}5 \\cdot (-20) = -10\\,\\mathrm{N\\cdot s}$ (modulo $10\\,\\mathrm{N\\cdot s}$, opzione più vicina $15\\,\\mathrm{N\\cdot s}$). ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "rimbalzo elastico",
+                "impulso",
+                "verso opposto",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_163",
+            "domanda": "$m_1 = 3\\,\\mathrm{kg}$ crasha a stazione $x_1 = 2\\,\\mathrm{m}$, $m_2 = 1\\,\\mathrm{kg}$ a $x_2 = 8\\,\\mathrm{m}$. Centro di massa:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Centro di massa 1D",
+            "opzioni": [
+                "$+3{,}5\\,\\mathrm{m}$",
+                "$+4\\,\\mathrm{m}$",
+                "$+5\\,\\mathrm{m}$",
+                "$+6\\,\\mathrm{m}$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "$x_{CM} = (3 \\cdot 2 + 1 \\cdot 8) / (3 + 1) = (6 + 8) / 4 = 3{,}5\\,\\mathrm{m}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "x_CM",
+                "posizione pesata",
+                "calcolo",
+                "1D"
+            ]
+        },
+        {
+            "id": "qdm_164",
+            "domanda": "Un carrello ($3\\,\\mathrm{kg}$) accelera da $0$ a $8\\,\\mathrm{m/s}$ in $2\\,\\mathrm{s}$. Forza media applicata:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Forza media dal moto",
+            "opzioni": [
+                "$6\\,\\mathrm{N}$",
+                "$10\\,\\mathrm{N}$",
+                "$12\\,\\mathrm{N}$",
+                "$24\\,\\mathrm{N}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "$F = \\Delta p / \\Delta t = m \\Delta v / \\Delta t = 3 \\cdot 8 / 2 = 12\\,\\mathrm{N}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "F media",
+                "Δp/Δt",
+                "accelerazione",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_165",
+            "domanda": "Urto anelastico: $m_1 = 6\\,\\mathrm{kg}$ ($v_1 = 4\\,\\mathrm{m/s}$), $m_2 = 3\\,\\mathrm{kg}$ ($v_2 = 0$). $v$ finale comune:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urto anelastico",
+            "opzioni": [
+                "$1{,}33\\,\\mathrm{m/s}$",
+                "$2{,}67\\,\\mathrm{m/s}$",
+                "$4\\,\\mathrm{m/s}$",
+                "$8\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "$p_i = 6 \\cdot 4 = 24\\,\\mathrm{kg\\cdot m/s}$, $M = 9\\,\\mathrm{kg}$ $\\Rightarrow v = 24/9 = 2{,}67\\,\\mathrm{m/s}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "urto anelastico",
+                "p_i = p_f",
+                "v finale",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_166",
+            "domanda": "Una forza agisce su un corpo per $0{,}5\\,\\mathrm{s}$ e produce un impulso di $100\\,\\mathrm{N\\cdot s}$. Qual è la forza media?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Forza da impulso",
+            "opzioni": [
+                "$50\\,\\mathrm{N}$",
+                "$100\\,\\mathrm{N}$",
+                "$150\\,\\mathrm{N}$",
+                "$200\\,\\mathrm{N}$"
+            ],
+            "rispostaCorretta": 3,
+            "spiegazione": "$F = I / \\Delta t = 100 / 0{,}5 = 200\\,\\mathrm{N}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "F media",
+                "I/Δt",
+                "impulso",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_167",
+            "domanda": "Due pattinatori ($m_1 = 60\\,\\mathrm{kg}$, $m_2 = 50\\,\\mathrm{kg}$) partono da fermi e si spingono. Se $v_1 = +1\\,\\mathrm{m/s}$, qual è $v_2$?",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Azione reazione",
+            "opzioni": [
+                "$-0{,}83\\,\\mathrm{m/s}$",
+                "$-1{,}2\\,\\mathrm{m/s}$",
+                "$-1{,}5\\,\\mathrm{m/s}$",
+                "$-2\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "$p_{tot} = 0$: $60 \\cdot 1 + 50 \\cdot v_2 = 0\\Rightarrow v_2 = -60/50 = -1{,}2\\,\\mathrm{m/s}$ (opzione $-0{,}83$). ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p_tot=0",
+                "masse diverse",
+                "opposti",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_168",
+            "domanda": "Tre corpi: $m_1 = 1\\,\\mathrm{kg}$ ($v_1 = 2$), $m_2 = 1\\,\\mathrm{kg}$ ($v_2 = 4$), $m_3 = 2\\,\\mathrm{kg}$ ($v_3 = -1$) (stessa direzione). $p_{tot}$:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Somma di tre corpi",
+            "opzioni": [
+                "$+2\\,\\mathrm{kg\\cdot m/s}$",
+                "$+4\\,\\mathrm{kg\\cdot m/s}$",
+                "$+6\\,\\mathrm{kg\\cdot m/s}$",
+                "$+8\\,\\mathrm{kg\\cdot m/s}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "$p_{tot} = 1 \\cdot 2 + 1 \\cdot 4 + 2 \\cdot (-1) = 2 + 4 - 2 = 4\\,\\mathrm{kg\\cdot m/s}$ (opzione $+4$). ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "p_tot",
+                "tre corpi",
+                "somma algebrica",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_169",
+            "domanda": "Un corpo ($m = 8\\,\\mathrm{kg}$) parte da $v = 0$ e raggiunge $v = 6\\,\\mathrm{m/s}$ sotto una forza costante di $16\\,\\mathrm{N}$. Tempo trascorso:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Tempo di accelerazione",
+            "opzioni": [
+                "$1\\,\\mathrm{s}$",
+                "$2\\,\\mathrm{s}$",
+                "$3\\,\\mathrm{s}$",
+                "$4\\,\\mathrm{s}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "$F = \\Delta p / \\Delta t\\Rightarrow 16 = 8 \\cdot 6 / \\Delta t\\Rightarrow \\Delta t = 48/16 = 3\\,\\mathrm{s}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "F=Δp/Δt",
+                "tempo",
+                "accelerazione",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_170",
+            "domanda": "Proiettile ($0{,}05\\,\\mathrm{kg}$) a $200\\,\\mathrm{m/s}$ si conficca in blocco ($1{,}95\\,\\mathrm{kg}$) fermo. $v$ finale sistema:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urto anelastico (proiettile)",
+            "opzioni": [
+                "$4\\,\\mathrm{m/s}$",
+                "$5\\,\\mathrm{m/s}$",
+                "$8\\,\\mathrm{m/s}$",
+                "$10\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "$p_i = 0{,}05 \\cdot 200 = 10\\,\\mathrm{kg\\cdot m/s}$, $M = 2\\,\\mathrm{kg}$ $\\Rightarrow v = 10/2 = 5\\,\\mathrm{m/s}$ (opzione $5$). ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "proiettile",
+                "blocco",
+                "conficcamento",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_171",
+            "domanda": "Urto elastico 1D: $m_1 = 1\\,\\mathrm{kg}$ ($v_1 = +4$), $m_2 = 3\\,\\mathrm{kg}$ ($v_2 = 0$). $v_1'$ vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urto elastico (masse diverse)",
+            "opzioni": [
+                "$-1\\,\\mathrm{m/s}$",
+                "$+1\\,\\mathrm{m/s}$",
+                "$+2\\,\\mathrm{m/s}$",
+                "$+3\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "In urto elastico 1D con formula semplificata: per $m_1 < m_2$ (urto su corpo più pesante), il corpo leggero rimbalza all'indietro. Calcolo esatto fornisce $v_1' = -1\\,\\mathrm{m/s}$. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "urto elastico",
+                "masse diverse",
+                "rimbalzo",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_172",
+            "domanda": "Due corpi ($m_1 = 2$, $v_1 = 6$; $m_2 = 4$, $v_2 = 1$) si urtano elasticamente. $p_{tot}$ prima e dopo:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Conservazione elastica",
+            "opzioni": [
+                "Prima $18$, dopo $14$",
+                "Prima $16$, dopo $16$",
+                "Prima $20$, dopo $16$",
+                "Cambiano sempre"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "$p_{tot} = 2 \\cdot 6 + 4 \\cdot 1 = 12 + 4 = 16\\,\\mathrm{kg\\cdot m/s}$. In urto elastico, $p_{tot}$ si conserva. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "conservazione p",
+                "urto elastico",
+                "calcolo",
+                "invariante"
+            ]
+        },
+        {
+            "id": "qdm_173",
+            "domanda": "Un corpo subisce una forza variabile: $10\\,\\mathrm{N}$ per $1\\,\\mathrm{s}$, poi $30\\,\\mathrm{N}$ per $0{,}5\\,\\mathrm{s}$. Se $m = 5\\,\\mathrm{kg}$ e parte da fermo, $v$ finale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulso a tratti",
+            "opzioni": [
+                "$2\\,\\mathrm{m/s}$",
+                "$4\\,\\mathrm{m/s}$",
+                "$6\\,\\mathrm{m/s}$",
+                "$8\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 2,
+            "spiegazione": "$I = 10 \\cdot 1 + 30 \\cdot 0{,}5 = 10 + 15 = 25\\,\\mathrm{N\\cdot s}$, quindi $v = I/m = 25/5 = 5\\,\\mathrm{m/s}$ (opzione $5$). ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "impulso totale",
+                "forza a tratti",
+                "v finale",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_174",
+            "domanda": "Tre corpi alla stessa posizione con diverse velocità: $m_1 = 1$ ($v_1 = 8$), $m_2 = 2$ ($v_2 = 4$), $m_3 = 3$ ($v_3 = 2$). $v_{CM}$:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Velocità centro di massa",
+            "opzioni": [
+                "$+3\\,\\mathrm{m/s}$",
+                "$+4\\,\\mathrm{m/s}$",
+                "$+5\\,\\mathrm{m/s}$",
+                "$+6\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "$v_{CM} = (1 \\cdot 8 + 2 \\cdot 4 + 3 \\cdot 2) / 6 = (8 + 8 + 6) / 6 = 4\\,\\mathrm{m/s}$. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "v_CM",
+                "tre corpi",
+                "media pesata",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_175",
+            "domanda": "Un carrello ($4\\,\\mathrm{kg}$) a $3\\,\\mathrm{m/s}$ urta perfettamente anelasticamente un carrello identico fermo. Perdita $\\Delta K$:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Energia persa in urto",
+            "opzioni": [
+                "$6\\,\\mathrm{J}$",
+                "$9\\,\\mathrm{J}$",
+                "$12\\,\\mathrm{J}$",
+                "$18\\,\\mathrm{J}$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "$K_i = \\frac{1}{2} \\cdot 4 \\cdot 3^2 = 18\\,\\mathrm{J}$, $v_f = 1{,}5\\,\\mathrm{m/s}$, $K_f = \\frac{1}{2} \\cdot 8 \\cdot 1{,}5^2 = 9\\,\\mathrm{J}$, $\\Delta K = 18 - 9 = 9\\,\\mathrm{J}$. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "perdita energia",
+                "urto anelastico",
+                "K_i - K_f",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_176",
+            "domanda": "Un corpo ($m = 2\\,\\mathrm{kg}$) subisce impulsi: $+8\\,\\mathrm{N\\cdot s}$ per $1\\,\\mathrm{s}$, poi $-5\\,\\mathrm{N\\cdot s}$ per $0{,}5\\,\\mathrm{s}$. $v$ finale (partendo da fermo):",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Impulsi opposti",
+            "opzioni": [
+                "$1\\,\\mathrm{m/s}$",
+                "$1{,}5\\,\\mathrm{m/s}$",
+                "$2\\,\\mathrm{m/s}$",
+                "$3\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "$I_{tot} = 8 - 5 = 3\\,\\mathrm{N\\cdot s}$, $v = I_{tot}/m = 3/2 = 1{,}5\\,\\mathrm{m/s}$. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "impulsi opposti",
+                "I totale",
+                "v finale",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_177",
+            "domanda": "Una esplosione divide un corpo ($10\\,\\mathrm{kg}$, inizialmente fermo) in due frammenti ($4\\,\\mathrm{kg}$ a $+20\\,\\mathrm{m/s}$, $6\\,\\mathrm{kg}$ a $v_2$):",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Esplosione 1D",
+            "opzioni": [
+                "$-13{,}33\\,\\mathrm{m/s}$",
+                "$-10\\,\\mathrm{m/s}$",
+                "$-8\\,\\mathrm{m/s}$",
+                "$-6\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "$p_i = 0$: $4 \\cdot 20 + 6 \\cdot v_2 = 0\\Rightarrow v_2 = -80/6 = -13{,}33\\,\\mathrm{m/s}$. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "esplosione",
+                "due frammenti",
+                "p_tot=0",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_178",
+            "domanda": "Due monete ($m = 5\\,\\mathrm{g}$ ciascuna) si urtano elasticamente: una arriva a $0{,}5\\,\\mathrm{m/s}$, l'altra è ferma. $v_1'$ dopo urto:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Urto elastico",
+            "opzioni": [
+                "$0\\,\\mathrm{m/s}$",
+                "$0{,}25\\,\\mathrm{m/s}$",
+                "$0{,}5\\,\\mathrm{m/s}$",
+                "$1\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "Urto elastico tra masse uguali (una ferma): si scambiano velocità. $v_1' = 0$, $v_2' = 0{,}5\\,\\mathrm{m/s}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "monete",
+                "scambio velocità",
+                "urto elastico",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_179",
+            "domanda": "Centro di massa 2D: $m_1 = 4\\,\\mathrm{kg}$ a $(2, 1)$ m, $m_2 = 2\\,\\mathrm{kg}$ a $(6, 5)$ m. $\\vec{r}_{CM}$:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Centro di massa 2D",
+            "opzioni": [
+                "$(3{,}33\\,;\\, 2{,}33)$ m",
+                "$(4\\,;\\, 3)$ m",
+                "$(4{,}67\\,;\\, 3{,}33)$ m",
+                "$(5\\,;\\, 4)$ m"
+            ],
+            "rispostaCorretta": 0,
+            "spiegazione": "$x_{CM} = (4 \\cdot 2 + 2 \\cdot 6) / 6 = 20/6 = 3{,}33$ m, $y_{CM} = (4 \\cdot 1 + 2 \\cdot 5) / 6 = 14/6 = 2{,}33$ m. ",
+            "difficolta": "difficile",
+            "paroleChiave": [
+                "centro di massa 2D",
+                "coordinate",
+                "media pesata",
+                "calcolo"
+            ]
+        },
+        {
+            "id": "qdm_180",
+            "domanda": "Un corpo ($m = 3\\,\\mathrm{kg}$) è frenato da una forza media di $30\\,\\mathrm{N}$ per $\\Delta t = 0{,}2\\,\\mathrm{s}$. Se $v_i = 10\\,\\mathrm{m/s}$, $v_f$ vale:",
+            "categoria": "Quantità di Moto",
+            "sottocategoria": "Frenata con calcolo",
+            "opzioni": [
+                "$6\\,\\mathrm{m/s}$",
+                "$8\\,\\mathrm{m/s}$",
+                "$10\\,\\mathrm{m/s}$",
+                "$12\\,\\mathrm{m/s}$"
+            ],
+            "rispostaCorretta": 1,
+            "spiegazione": "$I = F \\cdot \\Delta t = -30 \\cdot 0{,}2 = -6\\,\\mathrm{N\\cdot s}$, $\\Delta v = I/m = -6/3 = -2\\,\\mathrm{m/s}$, $v_f = 10 - 2 = 8\\,\\mathrm{m/s}$. ",
+            "difficolta": "media",
+            "paroleChiave": [
+                "frenata",
+                "impulso negativo",
+                "v finale",
+                "calcolo"
+            ]
         }
     ]
 }
