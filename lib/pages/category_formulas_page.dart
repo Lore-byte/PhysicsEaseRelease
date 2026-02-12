@@ -59,10 +59,20 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
   }
 
   void _filterFormulas() {
+    final filtered = widget.allFormulas
+        .where((f) => f.categoria == widget.category)
+        .toList();
+
+    if (widget.category == 'Personalizzate') {
+      filtered.sort((a, b) {
+        final aTime = int.tryParse(a.id) ?? 0;
+        final bTime = int.tryParse(b.id) ?? 0;
+        return bTime.compareTo(aTime);
+      });
+    }
+
     setState(() {
-      _filteredFormulas = widget.allFormulas
-          .where((f) => f.categoria == widget.category)
-          .toList();
+      _filteredFormulas = filtered;
     });
   }
 
@@ -169,7 +179,9 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
                               ? IconButton(
                                   icon: Icon(
                                     Icons.delete,
-                                    color: Theme.of(context).colorScheme.primary,
+                                    color: Theme.of(
+                                      context,
+                                    ).colorScheme.primary,
                                   ),
                                   tooltip: 'Elimina formula',
                                   onPressed: () =>
