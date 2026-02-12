@@ -1,5 +1,6 @@
 // lib/pages/quiz_session_page.dart
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:physics_ease_release/models/quiz.dart';
 import 'package:physics_ease_release/models/quiz_result.dart';
 import 'package:physics_ease_release/pages/quiz_results_page.dart';
@@ -45,7 +46,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Seleziona una risposta!'),
-          backgroundColor: Colors.orange,
+          backgroundColor: AppColors.orange,
           duration: Duration(seconds: 1),
         ),
       );
@@ -175,7 +176,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                       Chip(
                         label: Text(_currentQuiz.difficolta.toUpperCase()),
                         backgroundColor: _getDifficultyColor(colorScheme),
-                        labelStyle: const TextStyle(color: Colors.white),
+                        labelStyle: const TextStyle(color: AppColors.white),
                       ),
                     ],
                   ),
@@ -212,19 +213,19 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                     if (_showFeedback) {
                       if (isCorrect) {
                         cardColor = isDark
-                            ? Colors.green.shade800
-                            : Colors.green.shade100;
-                        borderColor = Colors.green;
+                            ? AppColors.green.shade800
+                            : AppColors.green.shade100;
+                        borderColor = AppColors.green;
                         optionTextColor = isDark
-                            ? Colors.white
+                            ? AppColors.white
                             : colorScheme.onSurface;
                       } else if (isSelected) {
                         cardColor = isDark
-                            ? Colors.red.shade800
-                            : Colors.red.shade100;
-                        borderColor = Colors.red;
+                            ? AppColors.red.shade800
+                            : AppColors.red.shade100;
+                        borderColor = AppColors.red;
                         optionTextColor = isDark
-                            ? Colors.white
+                            ? AppColors.white
                             : colorScheme.onSurface;
                       }
                     } else if (isSelected) {
@@ -286,10 +287,10 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                               if (_showFeedback && isCorrect)
                                 const Icon(
                                   Icons.check_circle,
-                                  color: Colors.green,
+                                  color: AppColors.green,
                                 ),
                               if (_showFeedback && isSelected && !isCorrect)
-                                const Icon(Icons.cancel, color: Colors.red),
+                                const Icon(Icons.cancel, color: AppColors.red),
                             ],
                           ),
                         ),
@@ -344,7 +345,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                       borderRadius: BorderRadius.circular(12),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.1),
+                          color: AppColors.black.withValues(alpha: 0.1),
                           blurRadius: 8,
                           offset: const Offset(0, -2),
                         ),
@@ -437,11 +438,11 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
   Color _getDifficultyColor(ColorScheme colorScheme) {
     switch (_currentQuiz.difficolta) {
       case 'facile':
-        return Colors.green;
+        return AppColors.green;
       case 'medio':
-        return Colors.orange;
+        return AppColors.orange;
       case 'difficile':
-        return Colors.red;
+        return AppColors.red;
       default:
         return colorScheme.primary;
     }

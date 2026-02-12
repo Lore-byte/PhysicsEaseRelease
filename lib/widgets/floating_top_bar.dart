@@ -1,5 +1,6 @@
 // lib/widgets/floating_top_bar.dart
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/theme/app_theme.dart';
 
 enum FloatingTopBarLeading { menu, back, none }
 
@@ -66,19 +67,19 @@ class FloatingTopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final shadowColor = isDark
-        ? Colors.black.withValues(alpha: 0.8)
-        : Colors.white.withValues(alpha: 0.8);
+    final shadowColor = AppTheme.shadowForBrightness(
+      Theme.of(context).brightness,
+      alpha: 0.9,
+    );
 
     return Container(
       decoration: BoxDecoration(
-        color: Colors.transparent,
+        color: AppTheme.transparent,
         boxShadow: [
           BoxShadow(
             color: shadowColor,
             blurRadius: 30,
-            offset: const Offset(0, -50),
+            offset: const Offset(0, -40),
             spreadRadius: 40,
           ),
         ],
@@ -114,19 +115,28 @@ class FloatingTopBar extends StatelessWidget {
     );
   }
 
+  ButtonStyle _iconButtonStyle(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+    return IconButton.styleFrom(
+      shape: const CircleBorder(),
+      backgroundColor: colorScheme.primary,
+      foregroundColor: colorScheme.onPrimary,
+    );
+  }
+
   Widget _buildLeading(BuildContext context) {
     switch (leading) {
       case FloatingTopBarLeading.menu:
         return Builder(
-          builder: (ctx) => IconButton.filledTonal(
-            style: IconButton.styleFrom(shape: const CircleBorder()),
+          builder: (ctx) => IconButton.filled(
+            style: _iconButtonStyle(ctx),
             icon: const Icon(Icons.menu),
             onPressed: onMenuPressed ?? () => Scaffold.of(ctx).openDrawer(),
           ),
         );
       case FloatingTopBarLeading.back:
-        return IconButton.filledTonal(
-          style: IconButton.styleFrom(shape: const CircleBorder()),
+        return IconButton.filled(
+          style: _iconButtonStyle(context),
           icon: const Icon(Icons.arrow_back),
           onPressed: onBackPressed ?? () => Navigator.of(context).maybePop(),
         );
@@ -144,8 +154,8 @@ class FloatingTopBar extends StatelessWidget {
         ValueListenableBuilder<bool>(
           valueListenable: searchVisible!,
           builder: (context, visible, _) {
-            return IconButton.filledTonal(
-              style: IconButton.styleFrom(shape: const CircleBorder()),
+            return IconButton.filled(
+              style: _iconButtonStyle(context),
               icon: Icon(visible ? Icons.close : Icons.search),
               onPressed: () {
                 searchVisible!.value = !visible;
@@ -160,13 +170,9 @@ class FloatingTopBar extends StatelessWidget {
     // Ordinamento
     if (showOrdinamento) {
       right.add(
-        IconButton.filledTonal(
-          style: IconButton.styleFrom(
-            shape: const CircleBorder(),
-          ),
-          icon: Icon(
-            ordinamentoIcon ?? Icons.arrow_upward,
-          ),
+        IconButton.filled(
+          style: _iconButtonStyle(context),
+          icon: Icon(ordinamentoIcon ?? Icons.arrow_upward),
           onPressed: onOrdinamentoPressed,
         ),
       );
@@ -175,8 +181,8 @@ class FloatingTopBar extends StatelessWidget {
     // Preferiti
     if (showFavorite) {
       right.add(
-        IconButton.filledTonal(
-          style: IconButton.styleFrom(shape: const CircleBorder()),
+        IconButton.filled(
+          style: _iconButtonStyle(context),
           icon: Icon(isFavorite ? Icons.star : Icons.star_border),
           onPressed: onFavoritePressed,
         ),
@@ -186,8 +192,8 @@ class FloatingTopBar extends StatelessWidget {
     // Condividi
     if (showShare) {
       right.add(
-        IconButton.filledTonal(
-          style: IconButton.styleFrom(shape: const CircleBorder()),
+        IconButton.filled(
+          style: _iconButtonStyle(context),
           icon: const Icon(Icons.share),
           onPressed: onSharePressed,
         ),
@@ -197,8 +203,8 @@ class FloatingTopBar extends StatelessWidget {
     // Filtra
     if (showFilter) {
       right.add(
-        IconButton.filledTonal(
-          style: IconButton.styleFrom(shape: const CircleBorder()),
+        IconButton.filled(
+          style: _iconButtonStyle(context),
           icon: Icon(isFilterActive ? Icons.filter_alt_off : Icons.filter_alt),
           onPressed: onFilterPressed,
         ),
@@ -208,8 +214,8 @@ class FloatingTopBar extends StatelessWidget {
     // Grafici
     if (showCharts) {
       right.add(
-        IconButton.filledTonal(
-          style: IconButton.styleFrom(shape: const CircleBorder()),
+        IconButton.filled(
+          style: _iconButtonStyle(context),
           icon: Icon(isChartsVisible ? Icons.list : Icons.auto_graph),
           onPressed: onChartsPressed,
         ),

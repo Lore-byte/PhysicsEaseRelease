@@ -1,5 +1,6 @@
 // lib/pages/sensor_tool_page.dart
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:async';
 import 'package:fl_chart/fl_chart.dart';
@@ -252,7 +253,10 @@ class _SensorToolPageState extends State<SensorToolPage> {
         children: [
           Text(
             label,
-            style: TextStyle(fontSize: 18, color: textColor.withValues(alpha: 0.8)),
+            style: TextStyle(
+              fontSize: 18,
+              color: textColor.withValues(alpha: 0.8),
+            ),
           ),
           Text(
             value,
@@ -495,9 +499,9 @@ class _SensorToolPageState extends State<SensorToolPage> {
                     xSpots: _userAccelXSpots,
                     ySpots: _userAccelYSpots,
                     zSpots: _userAccelZSpots,
-                    lineColorX: Colors.redAccent,
-                    lineColorY: Colors.greenAccent,
-                    lineColorZ: Colors.blueAccent,
+                    lineColorX: AppColors.redAccent,
+                    lineColorY: AppColors.greenAccent,
+                    lineColorZ: AppColors.blueAccent,
                     textColor: colorScheme.onSurface,
                     gridColor: colorScheme.onSurface,
                     unit: 'm/s²',
@@ -507,9 +511,9 @@ class _SensorToolPageState extends State<SensorToolPage> {
                     xSpots: _accelXSpots,
                     ySpots: _accelYSpots,
                     zSpots: _accelZSpots,
-                    lineColorX: Colors.red,
-                    lineColorY: Colors.green,
-                    lineColorZ: Colors.blue,
+                    lineColorX: AppColors.red,
+                    lineColorY: AppColors.green,
+                    lineColorZ: AppColors.blue,
                     textColor: colorScheme.onSurface,
                     gridColor: colorScheme.onSurface,
                     unit: 'm/s²',
@@ -519,9 +523,9 @@ class _SensorToolPageState extends State<SensorToolPage> {
                     xSpots: _gyroXSpots,
                     ySpots: _gyroYSpots,
                     zSpots: _gyroZSpots,
-                    lineColorX: Colors.purpleAccent,
-                    lineColorY: Colors.orangeAccent,
-                    lineColorZ: Colors.cyanAccent,
+                    lineColorX: AppColors.purpleAccent,
+                    lineColorY: AppColors.orangeAccent,
+                    lineColorZ: AppColors.cyanAccent,
                     textColor: colorScheme.onSurface,
                     gridColor: colorScheme.onSurface,
                     unit: 'rad/s',
@@ -531,9 +535,9 @@ class _SensorToolPageState extends State<SensorToolPage> {
                     xSpots: _magXSpots,
                     ySpots: _magYSpots,
                     zSpots: _magZSpots,
-                    lineColorX: Colors.teal,
-                    lineColorY: Colors.amber,
-                    lineColorZ: Colors.indigo,
+                    lineColorX: AppColors.teal,
+                    lineColorY: AppColors.amber,
+                    lineColorZ: AppColors.indigo,
                     textColor: colorScheme.onSurface,
                     gridColor: colorScheme.onSurface,
                     unit: 'µT',

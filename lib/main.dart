@@ -27,6 +27,7 @@ import 'package:physics_ease_release/pages/collaborate_page.dart';
 import 'package:physics_ease_release/pages/privacy_policy_page.dart';
 import 'package:physics_ease_release/pages/licence_page.dart';
 import 'package:physics_ease_release/pages/onboarding_page.dart';
+import 'package:physics_ease_release/theme/app_theme.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 // Importing for controlling system features (like exiting the app)
@@ -106,6 +107,25 @@ class _MyAppState extends State<MyApp> {
 
   // Determines whether to show the global AppBar
   bool _showGlobalAppBar = true;
+
+  ColorScheme get _currentColorScheme => _themeMode == ThemeMode.dark
+      ? AppTheme.darkColorScheme
+      : AppTheme.lightColorScheme;
+
+  MaterialApp _buildRootApp({
+    required Widget home,
+    bool debugShowCheckedModeBanner = true,
+    String title = 'PhysicsEase',
+  }) {
+    return MaterialApp(
+      title: title,
+      debugShowCheckedModeBanner: debugShowCheckedModeBanner,
+      themeMode: _themeMode,
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      home: home,
+    );
+  }
 
   static const List<_BottomNavItemData> _navItems = [
     _BottomNavItemData(icon: Icons.home, label: 'Home'),
@@ -209,17 +229,7 @@ class _MyAppState extends State<MyApp> {
 
   // Builds the main page widgets list
   List<Widget> _buildPages() {
-    final darkColorScheme = ColorScheme.fromSeed(
-      seedColor: Colors.blue[800]!,
-      brightness: Brightness.dark,
-    );
-    final lightColorScheme = ColorScheme.fromSeed(
-      seedColor: Colors.blue[600]!,
-      brightness: Brightness.light,
-    );
-    final currentColorScheme = _themeMode == ThemeMode.dark
-        ? darkColorScheme
-        : lightColorScheme;
+    final currentColorScheme = _currentColorScheme;
 
     developer.log('Building pages with favorites: $_favoriteIds');
     return [
@@ -265,17 +275,7 @@ class _MyAppState extends State<MyApp> {
 
   // Updates pages when data or theme changes
   void _updateTabPages() {
-    final darkColorScheme = ColorScheme.fromSeed(
-      seedColor: Colors.blue[800]!,
-      brightness: Brightness.dark,
-    );
-    final lightColorScheme = ColorScheme.fromSeed(
-      seedColor: Colors.blue[600]!,
-      brightness: Brightness.light,
-    );
-    final currentColorScheme = _themeMode == ThemeMode.dark
-        ? darkColorScheme
-        : lightColorScheme;
+    final currentColorScheme = _currentColorScheme;
 
     setState(() {
       _pages[0] = HomePage(
@@ -400,9 +400,7 @@ class _MyAppState extends State<MyApp> {
 
   // Builds the floating bottom navigation bar
   Widget _buildFloatingNavBar(ColorScheme colorScheme) {
-    final shadowColor = _themeMode == ThemeMode.dark
-        ? Colors.black.withValues(alpha: 0.8)
-        : Colors.white.withValues(alpha: 0.8);
+    final shadowColor = AppTheme.shadowForTheme(_themeMode, alpha: 0.8);
 
     return Container(
       decoration: BoxDecoration(
@@ -434,18 +432,18 @@ class _MyAppState extends State<MyApp> {
               curve: Curves.easeOutCubic,
               margin: EdgeInsets.only(right: 4, left: 4),
               decoration: BoxDecoration(
-                color: isSelected ? colorScheme.primary : Colors.transparent,
+                color: isSelected ? colorScheme.primary : AppTheme.transparent,
                 borderRadius: BorderRadius.circular(22),
               ),
               child: Material(
-                color: Colors.transparent,
+                color: AppTheme.transparent,
                 borderRadius: BorderRadius.circular(22),
                 child: InkWell(
                   borderRadius: BorderRadius.circular(22),
-                  splashColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
+                  splashColor: AppTheme.transparent,
+                  highlightColor: AppTheme.transparent,
+                  focusColor: AppTheme.transparent,
+                  hoverColor: AppTheme.transparent,
                   onTap: () => _onItemTapped(index),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
@@ -497,36 +495,17 @@ class _MyAppState extends State<MyApp> {
       );
     }
 
-    // Define color schemes for light and dark mode
-    final darkColorScheme = ColorScheme.fromSeed(
-      seedColor: Colors.blue[800]!,
-      brightness: Brightness.dark,
-    );
-    final lightColorScheme = ColorScheme.fromSeed(
-      seedColor: Colors.blue[600]!,
-      brightness: Brightness.light,
-    );
-    final currentColorScheme = _themeMode == ThemeMode.dark
-        ? darkColorScheme
-        : lightColorScheme;
+    final currentColorScheme = _currentColorScheme;
 
     // Show onboarding page if user hasn't completed it
     if (_showOnboarding) {
-      return MaterialApp(
+      return _buildRootApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(colorScheme: lightColorScheme, useMaterial3: true),
-        darkTheme: ThemeData(colorScheme: darkColorScheme, useMaterial3: true),
-        themeMode: _themeMode,
         home: OnboardingPage(onFinished: _completeOnboarding),
       );
     }
 
-    // Main MaterialApp structure
-    return MaterialApp(
-      title: 'PhysicsEase',
-      themeMode: _themeMode,
-      theme: ThemeData(colorScheme: lightColorScheme, useMaterial3: true),
-      darkTheme: ThemeData(colorScheme: darkColorScheme, useMaterial3: true),
+    return _buildRootApp(
       home: Builder(
         builder: (builderContext) => Scaffold(
           key: _scaffoldKey,

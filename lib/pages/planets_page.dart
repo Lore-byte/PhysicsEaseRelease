@@ -1,5 +1,6 @@
 // lib/pages/planets_page.dart
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:physics_ease_release/models/celestial_body.dart';
 //import 'dart:math';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
@@ -7,20 +8,20 @@ import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 class PlanetsPage extends StatelessWidget {
   const PlanetsPage({super.key});
 
-
   static final List<CelestialBody> celestialBodies = [
     CelestialBody(
       id: 'sun',
       name: 'Sole',
       type: 'Stella',
-      description: 'Il Sole è la stella al centro del nostro Sistema Solare. È una gigantesca sfera di gas incandescenti che produce energia attraverso la fusione nucleare.',
+      description:
+          'Il Sole è la stella al centro del nostro Sistema Solare. È una gigantesca sfera di gas incandescenti che produce energia attraverso la fusione nucleare.',
       massKg: 1.989 * 1e30,
       radiusKm: 696340,
       orbitalPeriodDays: 0.0,
       distanceFromSunKm: 0.0,
       surfaceGravityMetersPerSecondSquared: 274.0,
       imagePath: 'assets/planet/sun.png',
-      color: Colors.yellow[700]!,
+      color: AppColors.yellow[700]!,
     ),
     CelestialBody(
       id: 'mercury',
@@ -33,7 +34,7 @@ class PlanetsPage extends StatelessWidget {
       distanceFromSunKm: 57.91e6,
       surfaceGravityMetersPerSecondSquared: 3.70,
       imagePath: 'assets/planet/mercury.png',
-      color: Colors.grey[700]!,
+      color: AppColors.grey[700]!,
     ),
     CelestialBody(
       id: 'venus',
@@ -46,7 +47,7 @@ class PlanetsPage extends StatelessWidget {
       distanceFromSunKm: 108.2e6,
       surfaceGravityMetersPerSecondSquared: 8.87,
       imagePath: 'assets/planet/venus.png',
-      color: Colors.orange[800]!,
+      color: AppColors.orange[800]!,
     ),
     CelestialBody(
       id: 'earth',
@@ -59,20 +60,21 @@ class PlanetsPage extends StatelessWidget {
       distanceFromSunKm: 149.6e6,
       surfaceGravityMetersPerSecondSquared: 9.81,
       imagePath: 'assets/planet/earth.png',
-      color: Colors.blue[600]!,
+      color: AppColors.blue[600]!,
     ),
     CelestialBody(
       id: 'moon',
       name: 'Luna',
       type: 'Satellite Naturale',
-      description: 'La Luna è l\'unico satellite naturale della Terra. Influisce sulle maree oceaniche e stabilizza l\'asse di rotazione terrestre.',
+      description:
+          'La Luna è l\'unico satellite naturale della Terra. Influisce sulle maree oceaniche e stabilizza l\'asse di rotazione terrestre.',
       massKg: 7.342 * 1e22,
       radiusKm: 1737.4,
       orbitalPeriodDays: 27.32,
       distanceFromSunKm: 384400,
       surfaceGravityMetersPerSecondSquared: 1.63,
       imagePath: 'assets/planet/moon.png',
-      color: Colors.blueGrey[300]!,
+      color: AppColors.blueGrey[300]!,
     ),
     CelestialBody(
       id: 'mars',
@@ -85,7 +87,7 @@ class PlanetsPage extends StatelessWidget {
       distanceFromSunKm: 227.9e6,
       surfaceGravityMetersPerSecondSquared: 3.71,
       imagePath: 'assets/planet/mars.png',
-      color: Colors.red[800]!,
+      color: AppColors.red[800]!,
     ),
     CelestialBody(
       id: 'jupiter',
@@ -98,7 +100,7 @@ class PlanetsPage extends StatelessWidget {
       distanceFromSunKm: 778.5e6,
       surfaceGravityMetersPerSecondSquared: 24.79,
       imagePath: 'assets/planet/jupiter.png',
-      color: Colors.orange[400]!,
+      color: AppColors.orange[400]!,
     ),
     CelestialBody(
       id: 'saturn',
@@ -111,7 +113,7 @@ class PlanetsPage extends StatelessWidget {
       distanceFromSunKm: 1.433e9,
       surfaceGravityMetersPerSecondSquared: 10.44,
       imagePath: 'assets/planet/saturn.png',
-      color: Colors.yellow[700]!,
+      color: AppColors.yellow[700]!,
     ),
     CelestialBody(
       id: 'uranus',
@@ -124,7 +126,7 @@ class PlanetsPage extends StatelessWidget {
       distanceFromSunKm: 2.874e9,
       surfaceGravityMetersPerSecondSquared: 8.69,
       imagePath: 'assets/planet/uranus.png',
-      color: Colors.blueAccent[100]!,
+      color: AppColors.blueAccent[100]!,
     ),
     CelestialBody(
       id: 'neptune',
@@ -137,28 +139,35 @@ class PlanetsPage extends StatelessWidget {
       distanceFromSunKm: 4.504e9,
       surfaceGravityMetersPerSecondSquared: 11.15,
       imagePath: 'assets/planet/neptune.png',
-      color: Colors.indigo[800]!,
+      color: AppColors.indigo[800]!,
     ),
     CelestialBody(
       id: 'pluto',
       name: 'Plutone',
       type: 'Pianeta nano',
-      description: 'Un pianeta nano della fascia di Kuiper, un tempo considerato il nono pianeta del Sistema Solare.',
+      description:
+          'Un pianeta nano della fascia di Kuiper, un tempo considerato il nono pianeta del Sistema Solare.',
       massKg: 1.303 * 1e22,
       radiusKm: 1188.3,
       orbitalPeriodDays: 90560,
       distanceFromSunKm: 5.906e9,
       surfaceGravityMetersPerSecondSquared: 0.62,
       imagePath: 'assets/planet/pluto.png',
-      color: Colors.brown[400]!,
+      color: AppColors.brown[400]!,
     ),
   ];
 
   @override
   Widget build(BuildContext context) {
-    final List<CelestialBody> planetsOnly = celestialBodies.where((body) => body.type == 'Pianeta').toList();
-    final double maxPlanetRadius = planetsOnly.map((p) => p.radiusKm).reduce((a, b) => a > b ? a : b);
-    final double minPlanetRadius = planetsOnly.map((p) => p.radiusKm).reduce((a, b) => a < b ? a : b);
+    final List<CelestialBody> planetsOnly = celestialBodies
+        .where((body) => body.type == 'Pianeta')
+        .toList();
+    final double maxPlanetRadius = planetsOnly
+        .map((p) => p.radiusKm)
+        .reduce((a, b) => a > b ? a : b);
+    final double minPlanetRadius = planetsOnly
+        .map((p) => p.radiusKm)
+        .reduce((a, b) => a < b ? a : b);
 
     const double minCircleSize = 50.0;
     const double maxCircleSize = 120.0;
@@ -166,13 +175,17 @@ class PlanetsPage extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
     final double dynamicChildAspectRatio = screenWidth < 400 ? 0.7 : 0.8;
 
-
     return Scaffold(
       appBar: null,
       body: Stack(
         children: [
           SingleChildScrollView(
-            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 80, left: 16, right: 16, top: MediaQuery.of(context).viewPadding.top + 20),
+            padding: EdgeInsets.only(
+              bottom: MediaQuery.of(context).viewPadding.bottom + 80,
+              left: 16,
+              right: 16,
+              top: MediaQuery.of(context).viewPadding.top + 20,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -195,8 +208,12 @@ class PlanetsPage extends StatelessWidget {
                     } else if (body.type == 'Satellite Naturale') {
                       circleSize = minCircleSize * 0.8;
                     } else {
-                      final double normalizedRadius = (body.radiusKm - minPlanetRadius) / (maxPlanetRadius - minPlanetRadius);
-                      circleSize = minCircleSize + (normalizedRadius * (maxCircleSize - minCircleSize));
+                      final double normalizedRadius =
+                          (body.radiusKm - minPlanetRadius) /
+                          (maxPlanetRadius - minPlanetRadius);
+                      circleSize =
+                          minCircleSize +
+                          (normalizedRadius * (maxCircleSize - minCircleSize));
                     }
 
                     return _buildCelestialBodyCard(context, body, circleSize);
@@ -216,11 +233,15 @@ class PlanetsPage extends StatelessWidget {
             ),
           ),
         ],
-      )
+      ),
     );
   }
 
-  Widget _buildCelestialBodyCard(BuildContext context, CelestialBody body, double circleSize) {
+  Widget _buildCelestialBodyCard(
+    BuildContext context,
+    CelestialBody body,
+    double circleSize,
+  ) {
     final colorScheme = Theme.of(context).colorScheme;
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -268,7 +289,6 @@ class PlanetsPage extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
               ),
               const SizedBox(height: 4),
-
             ],
           ),
         ),
@@ -283,7 +303,9 @@ class PlanetsPage extends StatelessWidget {
       builder: (BuildContext context) {
         return AlertDialog(
           backgroundColor: colorScheme.surface,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
           title: Text(
             '${body.name} (${body.type})',
             style: TextStyle(
@@ -297,8 +319,7 @@ class PlanetsPage extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Center(
-                  child:
-                  ClipOval(
+                  child: ClipOval(
                     child: Image.asset(
                       body.imagePath,
                       width: 100,
@@ -315,9 +336,21 @@ class PlanetsPage extends StatelessWidget {
                 const Divider(height: 30),
                 _buildDetailRow(context, 'Massa:', body.massScientific),
                 _buildDetailRow(context, 'Raggio:', '${body.radiusKm} km'),
-                _buildDetailRow(context, 'Periodo Orbitale:', body.orbitalPeriodDisplay),
-                _buildDetailRow(context, 'Distanza:', body.distanceFromSunDisplay),
-                _buildDetailRow(context, 'Gravità Superficiale:', body.surfaceGravityString),
+                _buildDetailRow(
+                  context,
+                  'Periodo Orbitale:',
+                  body.orbitalPeriodDisplay,
+                ),
+                _buildDetailRow(
+                  context,
+                  'Distanza:',
+                  body.distanceFromSunDisplay,
+                ),
+                _buildDetailRow(
+                  context,
+                  'Gravità Superficiale:',
+                  body.surfaceGravityString,
+                ),
               ],
             ),
           ),
@@ -349,12 +382,7 @@ class PlanetsPage extends StatelessWidget {
             style: textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.bold),
           ),
           const SizedBox(width: 8),
-          Expanded(
-            child: Text(
-              value,
-              style: textTheme.bodyLarge,
-            ),
-          ),
+          Expanded(child: Text(value, style: textTheme.bodyLarge)),
         ],
       ),
     );
