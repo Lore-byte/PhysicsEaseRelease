@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:vector_math/vector_math_64.dart' show Vector3;
 import 'dart:math';
+import 'package:physics_ease_release/theme/app_theme.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 void main() {
@@ -14,20 +16,8 @@ class VectorCalculatorApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Calcolo Vettoriale',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-      ),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-        primarySwatch: Colors.blue,
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blue,
-          brightness: Brightness.dark,
-        ),
-      ),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
       home: const VectorCalculatorPage(),
     );
@@ -54,7 +44,8 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
   dynamic _v2;
   dynamic _resultVector;
   String? _selectedOperation;
-  final TransformationController _transformationController = TransformationController();
+  final TransformationController _transformationController =
+      TransformationController();
   bool _is3D = false;
 
   final List<String> _operations2D = [
@@ -98,8 +89,16 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
   void _updateVectors() {
     setState(() {
       if (_is3D) {
-        _v1 = _parseVector3(_x1Controller.text, _y1Controller.text, _z1Controller.text);
-        _v2 = _parseVector3(_x2Controller.text, _y2Controller.text, _z2Controller.text);
+        _v1 = _parseVector3(
+          _x1Controller.text,
+          _y1Controller.text,
+          _z1Controller.text,
+        );
+        _v2 = _parseVector3(
+          _x2Controller.text,
+          _y2Controller.text,
+          _z2Controller.text,
+        );
       } else {
         _v1 = _parseVector2(_x1Controller.text, _y1Controller.text);
         _v2 = _parseVector2(_x2Controller.text, _y2Controller.text);
@@ -153,12 +152,14 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
       case 'Somma':
         _resultVector = v1 + v2;
         final resultMagnitude = _resultVector!.distance.toStringAsFixed(2);
-        _risultato = "Vettore risultante: (${_resultVector!.dx.toStringAsFixed(2)}, ${_resultVector!.dy.toStringAsFixed(2)})\nModulo: $resultMagnitude";
+        _risultato =
+            "Vettore risultante: (${_resultVector!.dx.toStringAsFixed(2)}, ${_resultVector!.dy.toStringAsFixed(2)})\nModulo: $resultMagnitude";
         break;
       case 'Differenza':
         _resultVector = v1 - v2;
         final resultMagnitude = _resultVector!.distance.toStringAsFixed(2);
-        _risultato = "Vettore risultante: (${_resultVector!.dx.toStringAsFixed(2)}, ${_resultVector!.dy.toStringAsFixed(2)})\nModulo: $resultMagnitude";
+        _risultato =
+            "Vettore risultante: (${_resultVector!.dx.toStringAsFixed(2)}, ${_resultVector!.dy.toStringAsFixed(2)})\nModulo: $resultMagnitude";
         break;
       case 'Prodotto scalare':
         final result = v1.dx * v2.dx + v1.dy * v2.dy;
@@ -168,7 +169,8 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
       case 'Prodotto vettoriale':
         final result = v1.dx * v2.dy - v1.dy * v2.dx;
         _resultVector = null;
-        _risultato = "Prodotto vettoriale (componente z): ${result.toStringAsFixed(2)}";
+        _risultato =
+            "Prodotto vettoriale (componente z): ${result.toStringAsFixed(2)}";
         break;
       case 'Modulo V1':
         final result = v1.distance;
@@ -211,12 +213,14 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
       case 'Somma':
         _resultVector = v1 + v2;
         final resultMagnitude = _resultVector!.length.toStringAsFixed(2);
-        _risultato = "Vettore risultante: (${_resultVector!.x.toStringAsFixed(2)}, ${_resultVector!.y.toStringAsFixed(2)}, ${_resultVector!.z.toStringAsFixed(2)})\nModulo: $resultMagnitude";
+        _risultato =
+            "Vettore risultante: (${_resultVector!.x.toStringAsFixed(2)}, ${_resultVector!.y.toStringAsFixed(2)}, ${_resultVector!.z.toStringAsFixed(2)})\nModulo: $resultMagnitude";
         break;
       case 'Differenza':
         _resultVector = v1 - v2;
         final resultMagnitude = _resultVector!.length.toStringAsFixed(2);
-        _risultato = "Vettore risultante: (${_resultVector!.x.toStringAsFixed(2)}, ${_resultVector!.y.toStringAsFixed(2)}, ${_resultVector!.z.toStringAsFixed(2)})\nModulo: $resultMagnitude";
+        _risultato =
+            "Vettore risultante: (${_resultVector!.x.toStringAsFixed(2)}, ${_resultVector!.y.toStringAsFixed(2)}, ${_resultVector!.z.toStringAsFixed(2)})\nModulo: $resultMagnitude";
         break;
       case 'Prodotto scalare':
         final result = v1.dot(v2);
@@ -226,7 +230,8 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
       case 'Prodotto vettoriale':
         _resultVector = v1.cross(v2);
         final resultMagnitude = _resultVector!.length.toStringAsFixed(2);
-        _risultato = "Prodotto vettoriale: (${_resultVector!.x.toStringAsFixed(2)}, ${_resultVector!.y.toStringAsFixed(2)}, ${_resultVector!.z.toStringAsFixed(2)})\nModulo: $resultMagnitude";
+        _risultato =
+            "Prodotto vettoriale: (${_resultVector!.x.toStringAsFixed(2)}, ${_resultVector!.y.toStringAsFixed(2)}, ${_resultVector!.z.toStringAsFixed(2)})\nModulo: $resultMagnitude";
         break;
       case 'Modulo V1':
         final result = v1.length;
@@ -286,7 +291,12 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
       body: Stack(
         children: [
           SingleChildScrollView(
-            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, left: 16.0, right: 16.0, top: MediaQuery.of(context).viewPadding.top + 70),
+            padding: EdgeInsets.only(
+              bottom: MediaQuery.of(context).viewPadding.bottom + 98,
+              left: 16.0,
+              right: 16.0,
+              top: MediaQuery.of(context).viewPadding.top + 70,
+            ),
             child: Column(
               children: [
                 _buildModeSwitch(),
@@ -338,9 +348,9 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
               leading: FloatingTopBarLeading.back,
               onBackPressed: () => Navigator.of(context).maybePop(),
             ),
-          )
+          ),
         ],
-      )
+      ),
     );
   }
 
@@ -359,7 +369,14 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
     );
   }
 
-  Widget _buildVectorInput(String title, TextEditingController xController, TextEditingController yController, TextEditingController zController, bool is3D, VoidCallback onChanged) {
+  Widget _buildVectorInput(
+    String title,
+    TextEditingController xController,
+    TextEditingController yController,
+    TextEditingController zController,
+    bool is3D,
+    VoidCallback onChanged,
+  ) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -373,7 +390,10 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
             Expanded(
               child: TextField(
                 controller: xController,
-                keyboardType: const TextInputType.numberWithOptions(decimal: true, signed: true),
+                keyboardType: const TextInputType.numberWithOptions(
+                  decimal: true,
+                  signed: true,
+                ),
                 decoration: const InputDecoration(
                   labelText: 'Componente X',
                   border: OutlineInputBorder(),
@@ -385,7 +405,10 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
             Expanded(
               child: TextField(
                 controller: yController,
-                keyboardType: const TextInputType.numberWithOptions(decimal: true, signed: true),
+                keyboardType: const TextInputType.numberWithOptions(
+                  decimal: true,
+                  signed: true,
+                ),
                 decoration: const InputDecoration(
                   labelText: 'Componente Y',
                   border: OutlineInputBorder(),
@@ -398,7 +421,10 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
               Expanded(
                 child: TextField(
                   controller: zController,
-                  keyboardType: const TextInputType.numberWithOptions(decimal: true, signed: true),
+                  keyboardType: const TextInputType.numberWithOptions(
+                    decimal: true,
+                    signed: true,
+                  ),
                   decoration: const InputDecoration(
                     labelText: 'Componente Z',
                     border: OutlineInputBorder(),
@@ -423,10 +449,7 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
       value: _selectedOperation,
       menuMaxHeight: 350,
       items: operations.map((String value) {
-        return DropdownMenuItem<String>(
-          value: value,
-          child: Text(value),
-        );
+        return DropdownMenuItem<String>(value: value, child: Text(value));
       }).toList(),
       onChanged: _onOperationSelected,
     );
@@ -472,10 +495,7 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
               const SizedBox(width: 8),
               const Text(
                 'Visualizza Grafico',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
             ],
           ),
@@ -489,59 +509,60 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
       _centerGraph();
     });
 
-    Navigator.of(context).push(MaterialPageRoute<void>(
-      builder: (BuildContext context) {
-        final colorScheme = Theme.of(context).colorScheme;
-        return Scaffold(
-          appBar: null,
-          body: Stack(
-            children: [
-              InteractiveViewer(
-                transformationController: _transformationController,
-                minScale: 0.1,
-                maxScale: 4.0,
-                constrained: false,
-                boundaryMargin: const EdgeInsets.all(double.infinity),
-                child: SizedBox(
-                  width: 4000,
-                  height: 4000,
-                  child: CustomPaint(
-                    painter: VectorPainter(
-                      v1: _v1,
-                      v2: _v2,
-                      resultVector: _resultVector,
-                      lastOperation: _selectedOperation ?? '',
-                      context: context,
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (BuildContext context) {
+          final colorScheme = Theme.of(context).colorScheme;
+          return Scaffold(
+            appBar: null,
+            body: Stack(
+              children: [
+                InteractiveViewer(
+                  transformationController: _transformationController,
+                  minScale: 0.1,
+                  maxScale: 4.0,
+                  constrained: false,
+                  boundaryMargin: const EdgeInsets.all(double.infinity),
+                  child: SizedBox(
+                    width: 4000,
+                    height: 4000,
+                    child: CustomPaint(
+                      painter: VectorPainter(
+                        v1: _v1,
+                        v2: _v2,
+                        resultVector: _resultVector,
+                        lastOperation: _selectedOperation ?? '',
+                        context: context,
+                      ),
                     ),
                   ),
                 ),
-              ),
 
-              Positioned(
-                top: MediaQuery.of(context).viewPadding.top,
-                left: 16,
-                right: 16,
-                child: FloatingTopBar(
-                  title: 'Grafico',
-                  leading: FloatingTopBarLeading.back,
-                  onBackPressed: () => Navigator.of(context).maybePop(),
+                Positioned(
+                  top: MediaQuery.of(context).viewPadding.top,
+                  left: 16,
+                  right: 16,
+                  child: FloatingTopBar(
+                    title: 'Grafico',
+                    leading: FloatingTopBarLeading.back,
+                    onBackPressed: () => Navigator.of(context).maybePop(),
+                  ),
                 ),
-              )
-            ],
-          ),
-          floatingActionButton: Padding(
-            padding: EdgeInsets.only(bottom: 80),
-            child: FloatingActionButton(
-              onPressed: _centerGraph,
-              backgroundColor: colorScheme.primary,
-              foregroundColor: colorScheme.onPrimary,
-              child: const Icon(Icons.center_focus_strong),
+              ],
             ),
-          ),
-
-        );
-      },
-    ));
+            floatingActionButton: Padding(
+              padding: EdgeInsets.only(bottom: 80),
+              child: FloatingActionButton(
+                onPressed: _centerGraph,
+                backgroundColor: colorScheme.primary,
+                foregroundColor: colorScheme.onPrimary,
+                child: const Icon(Icons.center_focus_strong),
+              ),
+            ),
+          );
+        },
+      ),
+    );
   }
 
   void _centerGraph() {
@@ -571,8 +592,10 @@ class VectorPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final double gridStep = 40.0;
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final axisColor = isDark ? Colors.white : Colors.black;
-    final gridColor = isDark ? Colors.white.withValues(alpha: 0.2) : Colors.grey.withValues(alpha: 0.3);
+    final axisColor = isDark ? AppColors.white : AppColors.black;
+    final gridColor = isDark
+        ? AppColors.white.withValues(alpha: 0.2)
+        : AppColors.grey.withValues(alpha: 0.3);
 
     final Paint gridPaint = Paint()
       ..color = gridColor
@@ -590,41 +613,48 @@ class VectorPainter extends CustomPainter {
     canvas.drawLine(const Offset(-2000, 0), const Offset(2000, 0), axisPaint);
     canvas.drawLine(const Offset(0, -2000), const Offset(0, 2000), axisPaint);
 
-    _drawArrowHead(canvas, const Offset(1950, 0), const Offset(2000, 0), axisPaint);
-    _drawArrowHead(canvas, const Offset(0, -1950), const Offset(0, -2000), axisPaint);
-
-    final textStyle = TextStyle(
-      color: axisColor,
-      fontWeight: FontWeight.bold,
+    _drawArrowHead(
+      canvas,
+      const Offset(1950, 0),
+      const Offset(2000, 0),
+      axisPaint,
+    );
+    _drawArrowHead(
+      canvas,
+      const Offset(0, -1950),
+      const Offset(0, -2000),
+      axisPaint,
     );
 
+    final textStyle = TextStyle(color: axisColor, fontWeight: FontWeight.bold);
+
     final textPainterX = TextPainter(
-      text: TextSpan(
-        text: 'X',
-        style: textStyle,
-      ),
+      text: TextSpan(text: 'X', style: textStyle),
       textDirection: TextDirection.ltr,
     )..layout();
     textPainterX.paint(canvas, const Offset(1960, 10));
 
     final textPainterY = TextPainter(
-      text: TextSpan(
-        text: 'Y',
-        style: textStyle,
-      ),
+      text: TextSpan(text: 'Y', style: textStyle),
       textDirection: TextDirection.ltr,
     )..layout();
     textPainterY.paint(canvas, const Offset(10, -1990));
 
-    _drawVector(canvas, v1, gridStep, Colors.blue, 'V1');
-    _drawVector(canvas, v2, gridStep, Colors.red, 'V2');
+    _drawVector(canvas, v1, gridStep, AppColors.blue, 'V1');
+    _drawVector(canvas, v2, gridStep, AppColors.red, 'V2');
 
     if (lastOperation == 'Somma' || lastOperation == 'Differenza') {
-      _drawVector(canvas, resultVector, gridStep, Colors.green, 'Risultato');
+      _drawVector(canvas, resultVector, gridStep, AppColors.green, 'Risultato');
     }
   }
 
-  void _drawVector(Canvas canvas, Offset? vector, double gridStep, Color color, String label) {
+  void _drawVector(
+    Canvas canvas,
+    Offset? vector,
+    double gridStep,
+    Color color,
+    String label,
+  ) {
     if (vector == null) return;
 
     final end = Offset(vector.dx * gridStep, -vector.dy * gridStep);
@@ -642,17 +672,20 @@ class VectorPainter extends CustomPainter {
 
     final textPainter = TextPainter(
       text: TextSpan(
-        text: '$label\n(${vector.dx.toStringAsFixed(1)}, ${vector.dy.toStringAsFixed(1)})',
+        text:
+            '$label\n(${vector.dx.toStringAsFixed(1)}, ${vector.dy.toStringAsFixed(1)})',
         style: TextStyle(
-          color: isDark ? Colors.white : color,
+          color: isDark ? AppColors.white : color,
           fontWeight: FontWeight.bold,
           fontSize: 12,
           shadows: [
             Shadow(
               blurRadius: 2.0,
-              color: isDark ? Colors.black.withValues(alpha: 0.5) : Colors.black.withValues(alpha: 0.5),
+              color: isDark
+                  ? AppColors.black.withValues(alpha: 0.5)
+                  : AppColors.black.withValues(alpha: 0.5),
               offset: const Offset(1, 1),
-            )
+            ),
           ],
         ),
       ),

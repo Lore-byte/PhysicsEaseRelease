@@ -1,5 +1,6 @@
 // lib/pages/quiz_page.dart
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:physics_ease_release/services/quiz_service.dart';
 import 'package:physics_ease_release/pages/quiz_session_page.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
@@ -75,7 +76,7 @@ class _QuizPageState extends State<QuizPage> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Seleziona almeno un argomento!'),
-          backgroundColor: Colors.orange,
+          backgroundColor: AppColors.orange,
         ),
       );
       return;
@@ -94,7 +95,7 @@ class _QuizPageState extends State<QuizPage> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Nessun quiz disponibile per la selezione corrente!'),
-          backgroundColor: Colors.red,
+          backgroundColor: AppColors.red,
         ),
       );
       return;
@@ -204,7 +205,7 @@ class _QuizPageState extends State<QuizPage> {
                 ? 'Nessuna domanda sbagliata trovata!'
                 : 'Nessuna domanda sbagliata per gli argomenti selezionati!',
           ),
-          backgroundColor: Colors.orange,
+          backgroundColor: AppColors.orange,
         ),
       );
       return;

@@ -1,5 +1,6 @@
 // lib/pages/quiz_statistics_page.dart
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:physics_ease_release/models/quiz_result.dart';
 import 'package:physics_ease_release/models/quiz.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
@@ -114,7 +115,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
               content: Text('Quiz eliminato con successo'),
-              backgroundColor: Colors.green,
+              backgroundColor: AppColors.green,
             ),
           );
         }
@@ -124,7 +125,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
               content: Text('Errore durante l\'eliminazione'),
-              backgroundColor: Colors.red,
+              backgroundColor: AppColors.red,
             ),
           );
         }
@@ -147,7 +148,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
           ),
           TextButton(
             onPressed: () => Navigator.pop(context, true),
-            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            style: TextButton.styleFrom(foregroundColor: AppColors.red),
             child: const Text('Elimina Tutto'),
           ),
         ],
@@ -165,7 +166,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
               content: Text('Tutti i quiz sono stati eliminati'),
-              backgroundColor: Colors.green,
+              backgroundColor: AppColors.green,
             ),
           );
         }
@@ -175,7 +176,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
               content: Text('Errore durante l\'eliminazione'),
-              backgroundColor: Colors.red,
+              backgroundColor: AppColors.red,
             ),
           );
         }
@@ -436,13 +437,13 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
       Color scoreColor;
       if (averageScore >= 80) {
-        scoreColor = Colors.green;
+        scoreColor = AppColors.green;
       } else if (averageScore >= 60) {
-        scoreColor = Colors.blue;
+        scoreColor = AppColors.blue;
       } else if (averageScore >= 40) {
-        scoreColor = Colors.orange;
+        scoreColor = AppColors.orange;
       } else {
-        scoreColor = Colors.red;
+        scoreColor = AppColors.red;
       }
 
       final totalQ = stats['totalQuestions'] as int;
@@ -501,7 +502,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                     child: Text(
                       '${averageScore.toStringAsFixed(1)}%',
                       style: const TextStyle(
-                        color: Colors.white,
+                        color: AppColors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
                       ),
@@ -515,7 +516,11 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                   Expanded(
                     child: Row(
                       children: [
-                        Icon(Icons.check_circle, size: 16, color: Colors.green),
+                        Icon(
+                          Icons.check_circle,
+                          size: 16,
+                          color: AppColors.green,
+                        ),
                         const SizedBox(width: 4),
                         Text('$correct', style: const TextStyle(fontSize: 14)),
                       ],
@@ -524,7 +529,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                   Expanded(
                     child: Row(
                       children: [
-                        Icon(Icons.cancel, size: 16, color: Colors.red),
+                        Icon(Icons.cancel, size: 16, color: AppColors.red),
                         const SizedBox(width: 4),
                         Text('$wrong', style: const TextStyle(fontSize: 14)),
                       ],
@@ -602,13 +607,13 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
     Color scoreColor;
     if (percentuale >= 90) {
-      scoreColor = Colors.green;
+      scoreColor = AppColors.green;
     } else if (percentuale >= 70) {
-      scoreColor = Colors.blue;
+      scoreColor = AppColors.blue;
     } else if (percentuale >= 50) {
-      scoreColor = Colors.orange;
+      scoreColor = AppColors.orange;
     } else {
-      scoreColor = Colors.red;
+      scoreColor = AppColors.red;
     }
 
     return Card(
@@ -679,7 +684,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                             Icon(
                               Icons.check_circle,
                               size: 16,
-                              color: Colors.green,
+                              color: AppColors.green,
                             ),
                             const SizedBox(width: 4),
                             Text(
@@ -687,7 +692,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                               style: const TextStyle(fontSize: 14),
                             ),
                             const SizedBox(width: 12),
-                            Icon(Icons.cancel, size: 16, color: Colors.red),
+                            Icon(Icons.cancel, size: 16, color: AppColors.red),
                             const SizedBox(width: 4),
                             Text(
                               '$wrong',
@@ -701,7 +706,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
                   IconButton(
                     icon: const Icon(Icons.delete_outline),
-                    color: Colors.red,
+                    color: AppColors.red,
                     onPressed: () => _deleteQuiz(index),
                   ),
                 ],
@@ -810,16 +815,16 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                     return Card(
                       margin: const EdgeInsets.only(bottom: 12),
                       color: isCorrect
-                          ? Colors.green.withValues(alpha: 0.1)
-                          : Colors.red.withValues(alpha: 0.1),
+                          ? AppColors.green.withValues(alpha: 0.1)
+                          : AppColors.red.withValues(alpha: 0.1),
                       child: ListTile(
                         leading: CircleAvatar(
                           backgroundColor: isCorrect
-                              ? Colors.green
-                              : Colors.red,
+                              ? AppColors.green
+                              : AppColors.red,
                           child: Icon(
                             isCorrect ? Icons.check : Icons.close,
-                            color: Colors.white,
+                            color: AppColors.white,
                           ),
                         ),
                         title: Text(
@@ -838,14 +843,16 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                   return Card(
                     margin: const EdgeInsets.only(bottom: 12),
                     color: isCorrect
-                        ? Colors.green.withValues(alpha: 0.1)
-                        : Colors.red.withValues(alpha: 0.1),
+                        ? AppColors.green.withValues(alpha: 0.1)
+                        : AppColors.red.withValues(alpha: 0.1),
                     child: ExpansionTile(
                       leading: CircleAvatar(
-                        backgroundColor: isCorrect ? Colors.green : Colors.red,
+                        backgroundColor: isCorrect
+                            ? AppColors.green
+                            : AppColors.red,
                         child: Icon(
                           isCorrect ? Icons.check : Icons.close,
-                          color: Colors.white,
+                          color: AppColors.white,
                         ),
                       ),
                       title: Text(
@@ -895,10 +902,10 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                                   ? Icons.cancel
                                                   : Icons.circle_outlined),
                                         color: isCorrectAnswer
-                                            ? Colors.green
+                                            ? AppColors.green
                                             : (isUserAnswer
-                                                  ? Colors.red
-                                                  : Colors.grey),
+                                                  ? AppColors.red
+                                                  : AppColors.grey),
                                         size: 20,
                                       ),
                                       const SizedBox(width: 8),
@@ -1271,7 +1278,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                             ),
                             IconButton(
                               icon: const Icon(Icons.delete_forever),
-                              color: Colors.red,
+                              color: AppColors.red,
                               onPressed: _deleteAllQuizzes,
                               tooltip: 'Elimina tutto lo storico',
                             ),
@@ -1412,7 +1419,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
               centerSpaceRadius: 50,
               sections: [
                 PieChartSectionData(
-                  color: Colors.green,
+                  color: AppColors.green,
                   value: correctAnswers.toDouble(),
                   title:
                       '${((correctAnswers / totalQuestions) * 100).toStringAsFixed(1)}%',
@@ -1420,11 +1427,11 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                   titleStyle: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: AppColors.white,
                   ),
                 ),
                 PieChartSectionData(
-                  color: Colors.red,
+                  color: AppColors.red,
                   value: wrongAnswers.toDouble(),
                   title:
                       '${((wrongAnswers / totalQuestions) * 100).toStringAsFixed(1)}%',
@@ -1432,7 +1439,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                   titleStyle: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: AppColors.white,
                   ),
                 ),
               ],
@@ -1446,9 +1453,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              _buildLegendItem('Errate', Colors.red, wrongAnswers),
+              _buildLegendItem('Errate', AppColors.red, wrongAnswers),
               const SizedBox(height: 80),
-              _buildLegendItem('Corrette', Colors.green, correctAnswers),
+              _buildLegendItem('Corrette', AppColors.green, correctAnswers),
             ],
           ),
         ),
@@ -1505,7 +1512,11 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
               vertical: 8.0,
             ),
             childrenPadding: EdgeInsets.zero, // <-- remove gap under the header
-            leading: Icon(Icons.warning_amber, color: Colors.orange, size: 24),
+            leading: Icon(
+              Icons.warning_amber,
+              color: AppColors.orange,
+              size: 24,
+            ),
             title: Text(
               'Errori più frequenti',
               style: Theme.of(
@@ -1569,7 +1580,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                               vertical: 6,
                             ),
                             decoration: BoxDecoration(
-                              color: Colors.red.withValues(alpha: 0.2),
+                              color: AppColors.red.withValues(alpha: 0.2),
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Text(
@@ -1577,7 +1588,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                               style: const TextStyle(
                                 fontSize: 13,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.red,
+                                color: AppColors.red,
                               ),
                             ),
                           ),
@@ -1719,7 +1730,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                       'Errori',
                                       style: TextStyle(
                                         fontSize: 12,
-                                        color: Colors.red.withValues(
+                                        color: AppColors.red.withValues(
                                           alpha: 0.7,
                                         ),
                                         fontWeight: FontWeight.w600,
@@ -1731,7 +1742,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                                       style: const TextStyle(
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.red,
+                                        color: AppColors.red,
                                       ),
                                     ),
                                   ],
@@ -1759,24 +1770,24 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                         final isCorrect = index == quiz.rispostaCorretta;
                         return Card(
                           color: isCorrect
-                              ? Colors.green.withValues(alpha: 0.1)
-                              : Colors.grey.withValues(alpha: 0.1),
+                              ? AppColors.green.withValues(alpha: 0.1)
+                              : AppColors.grey.withValues(alpha: 0.1),
                           margin: const EdgeInsets.only(bottom: 8),
                           child: ListTile(
                             leading: CircleAvatar(
                               backgroundColor: isCorrect
-                                  ? Colors.green
-                                  : Colors.grey,
+                                  ? AppColors.green
+                                  : AppColors.grey,
                               child: Text(
                                 String.fromCharCode(65 + index),
-                                style: const TextStyle(color: Colors.white),
+                                style: const TextStyle(color: AppColors.white),
                               ),
                             ),
                             title: LatexText(quiz.opzioni[index]),
                             trailing: isCorrect
                                 ? const Icon(
                                     Icons.check_circle,
-                                    color: Colors.green,
+                                    color: AppColors.green,
                                   )
                                 : null,
                           ),

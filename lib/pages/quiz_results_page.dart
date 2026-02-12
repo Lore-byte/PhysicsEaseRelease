@@ -1,5 +1,6 @@
 // lib/pages/quiz_results_page.dart
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:physics_ease_release/models/quiz.dart';
 import 'package:physics_ease_release/models/quiz_result.dart';
 import 'package:physics_ease_release/pages/quiz_page.dart';
@@ -86,7 +87,7 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                           Icon(
                             _getScoreIcon(percentuale),
                             size: 64,
-                            color: Colors.white,
+                            color: AppColors.white,
                           ),
                           const SizedBox(height: 16),
                           Text(
@@ -94,7 +95,7 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                             style: const TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              color: AppColors.white,
                             ),
                             textAlign: TextAlign.center,
                           ),
@@ -104,7 +105,7 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                             style: const TextStyle(
                               fontSize: 48,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              color: AppColors.white,
                             ),
                           ),
                           const SizedBox(height: 4),
@@ -112,7 +113,7 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                             '${percentuale.toStringAsFixed(1)}%',
                             style: const TextStyle(
                               fontSize: 24,
-                              color: Colors.white70,
+                              color: AppColors.white70,
                             ),
                           ),
                         ],
@@ -132,7 +133,7 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                               children: [
                                 Icon(
                                   Icons.check_circle,
-                                  color: Colors.green,
+                                  color: AppColors.green,
                                   size: 32,
                                 ),
                                 const SizedBox(height: 8),
@@ -162,7 +163,11 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                             padding: const EdgeInsets.all(16.0),
                             child: Column(
                               children: [
-                                Icon(Icons.cancel, color: Colors.red, size: 32),
+                                Icon(
+                                  Icons.cancel,
+                                  color: AppColors.red,
+                                  size: 32,
+                                ),
                                 const SizedBox(height: 8),
                                 Text(
                                   '${widget.sessionResult.totale - widget.sessionResult.punteggio}',
@@ -208,16 +213,16 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                     return Card(
                       margin: const EdgeInsets.only(bottom: 12),
                       color: isCorrect
-                          ? Colors.green.withValues(alpha: 0.1)
-                          : Colors.red.withValues(alpha: 0.1),
+                          ? AppColors.green.withValues(alpha: 0.1)
+                          : AppColors.red.withValues(alpha: 0.1),
                       child: ExpansionTile(
                         leading: CircleAvatar(
                           backgroundColor: isCorrect
-                              ? Colors.green
-                              : Colors.red,
+                              ? AppColors.green
+                              : AppColors.red,
                           child: Icon(
                             isCorrect ? Icons.check : Icons.close,
-                            color: Colors.white,
+                            color: AppColors.white,
                           ),
                         ),
                         title: Text(
@@ -264,10 +269,10 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                                                     ? Icons.cancel
                                                     : Icons.circle_outlined),
                                           color: isCorrectAnswer
-                                              ? Colors.green
+                                              ? AppColors.green
                                               : (isUserAnswer
-                                                    ? Colors.red
-                                                    : Colors.grey),
+                                                    ? AppColors.red
+                                                    : AppColors.grey),
                                           size: 20,
                                         ),
                                         const SizedBox(width: 8),
@@ -359,8 +364,8 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                   boxShadow: [
                     BoxShadow(
                       color: isDark
-                          ? Colors.black.withValues(alpha: 0.8)
-                          : Colors.white.withValues(alpha: 0.8),
+                          ? AppColors.black.withValues(alpha: 0.8)
+                          : AppColors.white.withValues(alpha: 0.8),
                       blurRadius: 35,
                       offset: const Offset(0, 50),
                       spreadRadius: 40,
@@ -427,10 +432,10 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
   }
 
   Color _getScoreColor(double percentuale) {
-    if (percentuale >= 90) return Colors.green;
-    if (percentuale >= 70) return Colors.blue;
-    if (percentuale >= 50) return Colors.orange;
-    return Colors.red;
+    if (percentuale >= 90) return AppColors.green;
+    if (percentuale >= 70) return AppColors.blue;
+    if (percentuale >= 50) return AppColors.orange;
+    return AppColors.red;
   }
 
   IconData _getScoreIcon(double percentuale) {

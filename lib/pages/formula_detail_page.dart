@@ -1,6 +1,7 @@
 // lib/pages/formula_detail_page.dart
 
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:share_plus/share_plus.dart';
 //import 'package:url_launcher/url_launcher.dart';
@@ -76,7 +77,7 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
     final widgetToCapture = InheritedTheme.captureAll(
       context,
       Material(
-        color: Colors.transparent,
+        color: AppColors.transparent,
         child: Card(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),

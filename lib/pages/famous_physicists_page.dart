@@ -1,5 +1,6 @@
 import 'package:flutter_avif/flutter_avif.dart';
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 enum SortOrder { ascending, descending }
@@ -1015,20 +1016,19 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
           const Divider(thickness: 1, height: 16),
           if (content is String) Text(content, style: textTheme.bodyLarge),
           if (content is List<String>)
-            ...content
-                .map(
-                  (item) => Padding(
-                    padding: const EdgeInsets.only(left: 8.0, bottom: 4.0),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('• ', style: textTheme.bodyLarge),
-                        Expanded(child: Text(item, style: textTheme.bodyLarge)),
-                      ],
-                    ),
-                  ),
-                )
-                //.toList(),
+            ...content.map(
+              (item) => Padding(
+                padding: const EdgeInsets.only(left: 8.0, bottom: 4.0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('• ', style: textTheme.bodyLarge),
+                    Expanded(child: Text(item, style: textTheme.bodyLarge)),
+                  ],
+                ),
+              ),
+            ),
+          //.toList(),
         ],
       ),
     );
@@ -1042,7 +1042,7 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
     final fallbackIcon = Icon(
       Icons.person,
       size: size * 0.5,
-      color: Colors.grey,
+      color: AppColors.grey,
     );
 
     final double width = isCard ? size : double.infinity;
@@ -1069,7 +1069,9 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
     if (isCard) {
       return CircleAvatar(
         radius: size / 2,
-        backgroundColor: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+        backgroundColor: Theme.of(
+          context,
+        ).colorScheme.primary.withValues(alpha: 0.1),
         child: ClipOval(child: imageWidget),
       );
     } else {
@@ -1279,8 +1281,8 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
                             Icon(
                               Icons.search_off,
                               size: 60,
-                              color: colorScheme.onSurfaceVariant.withValues(alpha: 
-                                0.6,
+                              color: colorScheme.onSurfaceVariant.withValues(
+                                alpha: 0.6,
                               ),
                             ),
                             const SizedBox(height: 16),
@@ -1288,8 +1290,8 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
                               'Nessun fisico trovato.',
                               style: TextStyle(
                                 fontSize: 18,
-                                color: colorScheme.onSurfaceVariant.withValues(alpha: 
-                                  0.8,
+                                color: colorScheme.onSurfaceVariant.withValues(
+                                  alpha: 0.8,
                                 ),
                               ),
                             ),

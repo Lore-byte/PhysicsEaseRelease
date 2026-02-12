@@ -1,5 +1,6 @@
 // lib/pages/periodic_table_page.dart
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:physics_ease_release/models/element.dart' as my_element;
 import 'package:physics_ease_release/data/elements_data.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
@@ -10,20 +11,25 @@ class PeriodicTablePage extends StatelessWidget {
   static final List<my_element.Element> allElements = getAllElements();
 
   static final Map<int, my_element.Element> elementsByNumber = {
-    for (var e in allElements) e.number: e
+    for (var e in allElements) e.number: e,
   };
   static final Map<String, my_element.Element> elementsByPosition = {
-    for (var e in allElements) '${e.ypos}-${e.xpos}': e
+    for (var e in allElements) '${e.ypos}-${e.xpos}': e,
   };
 
   // Determina le dimensioni della griglia
-  static final int maxColumns = allElements.map((e) => e.xpos).reduce(
-          (a, b) => a > b ? a : b); // Max xpos = 18 per la tavola principale
-  static final int maxRows = allElements.map((e) => e.ypos).reduce(
-          (a, b) => a > b ? a : b); // Max ypos = 10 per lantanidi/attinidi
+  static final int maxColumns = allElements
+      .map((e) => e.xpos)
+      .reduce(
+        (a, b) => a > b ? a : b,
+      ); // Max xpos = 18 per la tavola principale
+  static final int maxRows = allElements
+      .map((e) => e.ypos)
+      .reduce((a, b) => a > b ? a : b); // Max ypos = 10 per lantanidi/attinidi
 
   // Larghezza di ogni cella (element tile)
-  static const double cellSize = 60.0; // Puoi aggiustare la dimensione delle celle
+  static const double cellSize =
+      60.0; // Puoi aggiustare la dimensione delle celle
 
   // Costruisce una cella per un elemento specifico o una cella vuota
   Widget _buildElementCell(BuildContext context, my_element.Element? element) {
@@ -49,7 +55,7 @@ class PeriodicTablePage extends StatelessWidget {
           border: Border.all(color: colorScheme.outline.withValues(alpha: 0.4)),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withValues(alpha: 0.1),
+              color: AppColors.black.withValues(alpha: 0.1),
               blurRadius: 2,
               offset: const Offset(1, 1),
             ),
@@ -67,8 +73,8 @@ class PeriodicTablePage extends StatelessWidget {
                   fontSize: 8,
                   fontWeight: FontWeight.bold,
                   color: element.displayColor.computeLuminance() > 0.5
-                      ? Colors.black87
-                      : Colors.white,
+                      ? AppColors.black87
+                      : AppColors.white,
                 ),
               ),
             ),
@@ -81,8 +87,8 @@ class PeriodicTablePage extends StatelessWidget {
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                     color: element.displayColor.computeLuminance() > 0.5
-                        ? Colors.black
-                        : Colors.white,
+                        ? AppColors.black
+                        : AppColors.white,
                   ),
                 ),
               ),
@@ -98,8 +104,8 @@ class PeriodicTablePage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 8,
                     color: element.displayColor.computeLuminance() > 0.5
-                        ? Colors.black54
-                        : Colors.white70,
+                        ? AppColors.black54
+                        : AppColors.white70,
                   ),
                 ),
               ),
@@ -117,7 +123,9 @@ class PeriodicTablePage extends StatelessWidget {
       builder: (BuildContext context) {
         return AlertDialog(
           backgroundColor: colorScheme.surface,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
           title: Row(
             children: [
               Container(
@@ -132,8 +140,8 @@ class PeriodicTablePage extends StatelessWidget {
                     element.symbol,
                     style: TextStyle(
                       color: element.displayColor.computeLuminance() > 0.5
-                          ? Colors.black
-                          : Colors.white,
+                          ? AppColors.black
+                          : AppColors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
                     ),
@@ -170,24 +178,53 @@ class PeriodicTablePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
-                _buildDetailRow(context, 'Massa Atomica:', element.formattedAtomicMass),
+                _buildDetailRow(
+                  context,
+                  'Massa Atomica:',
+                  element.formattedAtomicMass,
+                ),
                 _buildDetailRow(context, 'Categoria:', element.category),
-                _buildDetailRow(context, 'Conf. Elet:', element.electronicConfiguration),
-                _buildDetailRow(context, 'P. Fus:', element.formattedMeltingPoint),
-                _buildDetailRow(context, 'P. Eboll:', element.formattedBoilingPoint),
+                _buildDetailRow(
+                  context,
+                  'Conf. Elet:',
+                  element.electronicConfiguration,
+                ),
+                _buildDetailRow(
+                  context,
+                  'P. Fus:',
+                  element.formattedMeltingPoint,
+                ),
+                _buildDetailRow(
+                  context,
+                  'P. Eboll:',
+                  element.formattedBoilingPoint,
+                ),
                 _buildDetailRow(context, 'Densità:', element.formattedDensity),
                 if (element.shell != null && element.shell!.isNotEmpty)
                   _buildDetailRow(context, 'Periodo:', element.shell!),
                 if (element.block != null && element.block!.isNotEmpty)
-                  _buildDetailRow(context, 'Blocco:', element.block!.toUpperCase()),
-                if (element.discoveredBy != 'Sconosciuto' && element.discoveredBy.isNotEmpty)
-                  _buildDetailRow(context, 'Scoperto da:', element.discoveredBy),
+                  _buildDetailRow(
+                    context,
+                    'Blocco:',
+                    element.block!.toUpperCase(),
+                  ),
+                if (element.discoveredBy != 'Sconosciuto' &&
+                    element.discoveredBy.isNotEmpty)
+                  _buildDetailRow(
+                    context,
+                    'Scoperto da:',
+                    element.discoveredBy,
+                  ),
                 if (element.yearDiscovered != 0)
-                  _buildDetailRow(context, 'Anno Scoperta:', element.yearDiscovered.toString()),
+                  _buildDetailRow(
+                    context,
+                    'Anno Scoperta:',
+                    element.yearDiscovered.toString(),
+                  ),
                 const SizedBox(height: 10),
                 //Text(
-                  //element.description,
-                  //style: TextStyle(color: colorScheme.onSurfaceVariant),
+                //element.description,
+                //style: TextStyle(color: colorScheme.onSurfaceVariant),
                 //),
               ],
             ),
@@ -220,12 +257,7 @@ class PeriodicTablePage extends StatelessWidget {
             style: textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.bold),
           ),
           const SizedBox(width: 8),
-          Expanded(
-            child: Text(
-              value,
-              style: textTheme.bodyLarge,
-            ),
-          ),
+          Expanded(child: Text(value, style: textTheme.bodyLarge)),
         ],
       ),
     );
@@ -258,17 +290,22 @@ class PeriodicTablePage extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: my_element.Element.getColorForCategory(category),
                     shape: BoxShape.circle,
-                    border: Border.all(color: Colors.black.withValues(alpha: 0.2)),
+                    border: Border.all(
+                      color: AppColors.black.withValues(alpha: 0.2),
+                    ),
                   ),
                 ),
-                label: Text(
+                label: Text(category, style: textTheme.bodySmall),
+                backgroundColor: my_element.Element.getColorForCategory(
                   category,
-                  style: textTheme.bodySmall,
-                ),
-                backgroundColor: my_element.Element.getColorForCategory(category).withValues(alpha: 0.2),
+                ).withValues(alpha: 0.2),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
-                  side: BorderSide(color: my_element.Element.getColorForCategory(category).withValues(alpha: 0.5)),
+                  side: BorderSide(
+                    color: my_element.Element.getColorForCategory(
+                      category,
+                    ).withValues(alpha: 0.5),
+                  ),
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               );
@@ -288,7 +325,12 @@ class PeriodicTablePage extends StatelessWidget {
       body: Stack(
         children: [
           SingleChildScrollView(
-            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, left: 16, right: 16, top: MediaQuery.of(context).viewPadding.top + 70),
+            padding: EdgeInsets.only(
+              bottom: MediaQuery.of(context).viewPadding.bottom + 98,
+              left: 16,
+              right: 16,
+              top: MediaQuery.of(context).viewPadding.top + 70,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -308,29 +350,40 @@ class PeriodicTablePage extends StatelessWidget {
                         Row(
                           children: [
                             for (int x = 1; x <= maxColumns; x++)
-                              _buildElementCell(context, elementsByPosition['$y-$x']),
+                              _buildElementCell(
+                                context,
+                                elementsByPosition['$y-$x'],
+                              ),
                           ],
                         ),
                       const SizedBox(height: 20),
                       Text(
                         'Lantanidi',
-                        style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
+                        style: Theme.of(context).textTheme.titleMedium
+                            ?.copyWith(fontWeight: FontWeight.bold),
                       ),
                       Row(
                         children: [
                           for (int x = 0; x <= maxColumns; x++)
-                            _buildElementCell(context, elementsByPosition['9-$x']),
+                            _buildElementCell(
+                              context,
+                              elementsByPosition['9-$x'],
+                            ),
                         ],
                       ),
                       const SizedBox(height: 10),
                       Text(
                         'Attinidi',
-                        style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
+                        style: Theme.of(context).textTheme.titleMedium
+                            ?.copyWith(fontWeight: FontWeight.bold),
                       ),
                       Row(
                         children: [
                           for (int x = 0; x <= maxColumns; x++)
-                            _buildElementCell(context, elementsByPosition['10-$x']),
+                            _buildElementCell(
+                              context,
+                              elementsByPosition['10-$x'],
+                            ),
                         ],
                       ),
                     ],
@@ -339,7 +392,9 @@ class PeriodicTablePage extends StatelessWidget {
                 const SizedBox(height: 20),
                 Text(
                   'I dati degli elementi sono basati su informazioni standard sulla tavola periodica (es. IUPAC). Alcuni valori di punti di fusione/ebollizione e densità potrebbero essere N/D (Non Disponibile) per elementi sintetici o non completamente caratterizzati.',
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+                  style: Theme.of(
+                    context,
+                  ).textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic),
                 ),
               ],
             ),
@@ -355,7 +410,7 @@ class PeriodicTablePage extends StatelessWidget {
             ),
           ),
         ],
-      )
+      ),
     );
   }
 }

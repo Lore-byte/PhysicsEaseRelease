@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:physics_ease_release/theme/app_colors.dart';
 import 'dart:math';
 import 'package:math_expressions/math_expressions.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
@@ -82,15 +83,15 @@ class _GraphPageState extends State<GraphPage> {
   ];
 
   final List<Color> _predefinedColors = [
-    Colors.red.shade700,
-    Colors.blue.shade700,
-    Colors.green.shade700,
-    Colors.purple.shade700,
-    Colors.orange.shade700,
-    Colors.teal.shade700,
-    Colors.pink.shade700,
-    Colors.brown.shade700,
-    Colors.indigo.shade700,
+    AppColors.red.shade700,
+    AppColors.blue.shade700,
+    AppColors.green.shade700,
+    AppColors.purple.shade700,
+    AppColors.orange.shade700,
+    AppColors.teal.shade700,
+    AppColors.pink.shade700,
+    AppColors.brown.shade700,
+    AppColors.indigo.shade700,
   ];
 
   final List<String> _exampleFunctions = [
@@ -555,13 +556,16 @@ class _GraphPageState extends State<GraphPage> {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             const SizedBox(height: 16),
-                            ..._functionControllers.asMap().entries.map((entry) {
+                            ..._functionControllers.asMap().entries.map((
+                              entry,
+                            ) {
                               int idx = entry.key;
                               TextEditingController controller = entry.value;
                               return Padding(
                                 padding: const EdgeInsets.only(bottom: 12.0),
                                 child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                                  crossAxisAlignment:
+                                      CrossAxisAlignment.stretch,
                                   children: [
                                     TextField(
                                       controller: controller,
@@ -579,16 +583,21 @@ class _GraphPageState extends State<GraphPage> {
                                       decoration: InputDecoration(
                                         labelText: 'f${idx + 1}(x)',
                                         border: OutlineInputBorder(
-                                          borderRadius: BorderRadius.circular(12),
+                                          borderRadius: BorderRadius.circular(
+                                            12,
+                                          ),
                                           borderSide: BorderSide(
-                                            color: _focusedController == controller
+                                            color:
+                                                _focusedController == controller
                                                 ? colorScheme.primary
                                                 : colorScheme.outline,
                                             width: 2.0,
                                           ),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderRadius: BorderRadius.circular(12),
+                                          borderRadius: BorderRadius.circular(
+                                            12,
+                                          ),
                                           borderSide: BorderSide(
                                             color: colorScheme.primary,
                                             width: 2.0,
@@ -601,25 +610,29 @@ class _GraphPageState extends State<GraphPage> {
                                         suffixIcon: Row(
                                           mainAxisSize: MainAxisSize.min,
                                           children: [
-                                            if (idx == _functionControllers.length - 1)
+                                            if (idx ==
+                                                _functionControllers.length - 1)
                                               IconButton(
                                                 icon: Icon(
                                                   Icons.add,
                                                   color: colorScheme.primary,
                                                 ),
-                                                onPressed: () => _addFunctionField(
-                                                  initialText: '',
-                                                  isPlaceholder: false,
-                                                ),
+                                                onPressed: () =>
+                                                    _addFunctionField(
+                                                      initialText: '',
+                                                      isPlaceholder: false,
+                                                    ),
                                                 tooltip: 'Aggiungi funzione',
                                               ),
                                             if (_functionControllers.length > 1)
                                               IconButton(
                                                 icon: Icon(
                                                   Icons.close,
-                                                  color: colorScheme.onSurfaceVariant,
+                                                  color: colorScheme
+                                                      .onSurfaceVariant,
                                                 ),
-                                                onPressed: () => _removeFunctionField(idx),
+                                                onPressed: () =>
+                                                    _removeFunctionField(idx),
                                                 tooltip: 'Rimuovi funzione',
                                               ),
                                           ],
@@ -633,18 +646,23 @@ class _GraphPageState extends State<GraphPage> {
                                     ),
                                     if (_errorMessages[idx].isNotEmpty)
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 8.0),
+                                        padding: const EdgeInsets.only(
+                                          top: 8.0,
+                                        ),
                                         child: Card(
                                           color: colorScheme.errorContainer,
                                           shape: RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(8),
+                                            borderRadius: BorderRadius.circular(
+                                              8,
+                                            ),
                                           ),
                                           child: Padding(
                                             padding: const EdgeInsets.all(8.0),
                                             child: Text(
                                               _errorMessages[idx],
                                               style: TextStyle(
-                                                color: colorScheme.onErrorContainer,
+                                                color: colorScheme
+                                                    .onErrorContainer,
                                                 fontSize: 12,
                                               ),
                                               textAlign: TextAlign.center,
@@ -655,7 +673,7 @@ class _GraphPageState extends State<GraphPage> {
                                   ],
                                 ),
                               );
-                            })//.toList(),
+                            }), //.toList(),
                           ],
                         ),
                       ),
@@ -665,9 +683,13 @@ class _GraphPageState extends State<GraphPage> {
                     SliverFillRemaining(
                       hasScrollBody: false,
                       child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: previewMargin).copyWith(bottom: 16),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: previewMargin,
+                        ).copyWith(bottom: 16),
                         child: Container(
-                          constraints: const BoxConstraints(minHeight: 120), // fallback minimo
+                          constraints: const BoxConstraints(
+                            minHeight: 120,
+                          ), // fallback minimo
                           decoration: BoxDecoration(
                             color: colorScheme.surfaceContainerHighest,
                             borderRadius: BorderRadius.circular(12),
@@ -682,7 +704,8 @@ class _GraphPageState extends State<GraphPage> {
                               Positioned.fill(
                                 child: GestureDetector(
                                   onTap: () {
-                                    bool hasPlotableFunctions = functionsToPlot.isNotEmpty;
+                                    bool hasPlotableFunctions =
+                                        functionsToPlot.isNotEmpty;
                                     if (hasPlotableFunctions) {
                                       Navigator.of(context).push(
                                         MaterialPageRoute(
@@ -698,7 +721,9 @@ class _GraphPageState extends State<GraphPage> {
                                         ),
                                       );
                                     } else {
-                                      ScaffoldMessenger.of(context).showSnackBar(
+                                      ScaffoldMessenger.of(
+                                        context,
+                                      ).showSnackBar(
                                         const SnackBar(
                                           content: Text(
                                             'Inserisci almeno una funzione valida da visualizzare.',
@@ -717,9 +742,15 @@ class _GraphPageState extends State<GraphPage> {
                                       yMax: yMax,
                                       axisColor: colorScheme.onSurfaceVariant,
                                       lineColors: colorsToPlot,
-                                      gridColor: Theme.of(context).brightness == Brightness.dark
-                                          ? Colors.white.withValues(alpha: 0.15)
-                                          : Colors.black.withValues(alpha: 0.15),
+                                      gridColor:
+                                          Theme.of(context).brightness ==
+                                              Brightness.dark
+                                          ? AppColors.white.withValues(
+                                              alpha: 0.15,
+                                            )
+                                          : AppColors.black.withValues(
+                                              alpha: 0.15,
+                                            ),
                                       textColor: colorScheme.onSurface,
                                     ),
                                   ),
@@ -728,15 +759,20 @@ class _GraphPageState extends State<GraphPage> {
                               Positioned(
                                 bottom: 8,
                                 child: Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 12,
+                                    vertical: 6,
+                                  ),
                                   decoration: BoxDecoration(
-                                    color: Colors.black.withValues(alpha: 0.5),
+                                    color: AppColors.black.withValues(
+                                      alpha: 0.5,
+                                    ),
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: const Text(
                                     'Tocca il grafico per ingrandirlo',
                                     style: TextStyle(
-                                      color: Colors.white,
+                                      color: AppColors.white,
                                       fontSize: 12,
                                     ),
                                   ),
@@ -750,7 +786,10 @@ class _GraphPageState extends State<GraphPage> {
                   ],
                 ),
               ),
-              Divider(height: 1, color: colorScheme.outline.withValues(alpha: 0.5)),
+              Divider(
+                height: 1,
+                color: colorScheme.outline.withValues(alpha: 0.5),
+              ),
               Expanded(
                 flex: 5,
                 child: Container(
@@ -958,8 +997,8 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
                     axisColor: colorScheme.onSurfaceVariant,
                     lineColors: widget.functionColors,
                     gridColor: Theme.of(context).brightness == Brightness.dark
-                        ? Colors.white.withValues(alpha: 0.15)
-                        : Colors.black.withValues(alpha: 0.15),
+                        ? AppColors.white.withValues(alpha: 0.15)
+                        : AppColors.black.withValues(alpha: 0.15),
                     textColor: colorScheme.onSurface,
                   ),
                 ),
