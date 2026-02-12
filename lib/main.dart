@@ -228,6 +228,23 @@ class _MyAppState extends State<MyApp> {
     _updateTabPages();
   }
 
+  Future<void> _removeUserFormulaAndSave(String formulaId) async {
+    final prefs = await SharedPreferences.getInstance();
+
+    setState(() {
+      _userFormulas.removeWhere((formula) => formula.id == formulaId);
+      _allFormulas.removeWhere((formula) => formula.id == formulaId);
+      _favoriteIds.remove(formulaId);
+      developer.log('Removed user formula: $formulaId');
+    });
+
+    final userFormulasJson = _userFormulas.map((f) => f.toJson()).toList();
+    await prefs.setStringList('userFormulas', userFormulasJson);
+    await prefs.setStringList('favorites', _favoriteIds.toList());
+    developer.log('Saved ${_userFormulas.length} user formulas after removal.');
+    _updateTabPages();
+  }
+
   // Builds the main page widgets list
   List<Widget> _buildPages() {
     final currentColorScheme = _currentColorScheme;
@@ -240,6 +257,7 @@ class _MyAppState extends State<MyApp> {
         allFormulas: _allFormulas,
         favoriteIds: _favoriteIds,
         onToggleFavorite: _toggleFavorite,
+        onRemoveUserFormula: _removeUserFormulaAndSave,
         setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
         searchBarVisible: _searchBarVisible,
         colorScheme: currentColorScheme,
@@ -285,6 +303,7 @@ class _MyAppState extends State<MyApp> {
         allFormulas: _allFormulas,
         favoriteIds: _favoriteIds,
         onToggleFavorite: _toggleFavorite,
+        onRemoveUserFormula: _removeUserFormulaAndSave,
         setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
         searchBarVisible: _searchBarVisible,
         colorScheme: currentColorScheme,
