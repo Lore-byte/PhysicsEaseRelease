@@ -85,6 +85,14 @@ class _FavoritesPageState extends State<FavoritesPage> {
             ),
             elevation: 2,
             child: ListTile(
+              leading: IconButton(
+                icon: Icon(Icons.remove_circle, color: Theme.of(context).colorScheme.primary),
+                tooltip: 'Rimuovi dai preferiti',
+                onPressed: () {
+                  widget.onToggleFavorite(formula.id);
+                  widget.setGlobalAppBarVisibility(true);
+                },
+              ),
               title: Text(formula.titolo),
               subtitle: formula.formulaLatex.isNotEmpty
                   ? LatexText(
@@ -97,14 +105,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                 forceLatex: true,
               )
                   : Text('Formula non disponibile', style: TextStyle(fontStyle: FontStyle.italic, color: Theme.of(context).colorScheme.error)),
-              trailing: IconButton(
-                icon: Icon(Icons.star, color: Theme.of(context).colorScheme.primary),
-                tooltip: 'Rimuovi dai preferiti',
-                onPressed: () {
-                  widget.onToggleFavorite(formula.id);
-                  widget.setGlobalAppBarVisibility(true);
-                },
-              ),
+              trailing: const Icon(Icons.arrow_forward_ios, size: 16),
               onTap: () async {
                 widget.setGlobalAppBarVisibility(false); // NASCONDI PRIMA DI APRIRE
                 await Navigator.of(context).push(

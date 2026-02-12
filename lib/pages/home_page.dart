@@ -23,6 +23,9 @@ class HomePage extends StatefulWidget {
   // Async function to toggle a formula as favorite
   final Future<void> Function(String) onToggleFavorite;
 
+  // Async function to remove a user-created formula
+  final Future<void> Function(String) onRemoveUserFormula;
+
   // Function to control visibility of the global app bar
   final void Function(bool) setGlobalAppBarVisibility;
 
@@ -40,6 +43,7 @@ class HomePage extends StatefulWidget {
     required this.allFormulas,
     required this.favoriteIds,
     required this.onToggleFavorite,
+    required this.onRemoveUserFormula,
     required this.setGlobalAppBarVisibility,
     required this.searchBarVisible,
     required this.colorScheme,
@@ -330,6 +334,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                                         favoriteIds: widget.favoriteIds,
                                         onToggleFavorite:
                                             widget.onToggleFavorite,
+                                        onRemoveUserFormula:
+                                            widget.onRemoveUserFormula,
                                         themeMode: widget.themeMode,
                                         setGlobalAppBarVisibility:
                                             widget.setGlobalAppBarVisibility,

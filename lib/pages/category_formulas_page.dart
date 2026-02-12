@@ -11,6 +11,7 @@ class CategoryFormulasPage extends StatefulWidget {
   final List<Formula> allFormulas;
   final Set<String> favoriteIds;
   final Future<void> Function(String) onToggleFavorite;
+  final Future<void> Function(String) onRemoveUserFormula;
   final ThemeMode themeMode;
   final void Function(bool) setGlobalAppBarVisibility;
 
@@ -20,6 +21,7 @@ class CategoryFormulasPage extends StatefulWidget {
     required this.allFormulas,
     required this.favoriteIds,
     required this.onToggleFavorite,
+    required this.onRemoveUserFormula,
     required this.themeMode,
     required this.setGlobalAppBarVisibility,
   });
@@ -64,6 +66,68 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
     });
   }
 
+  Future<void> _confirmAndDeleteFormula(Formula formula) async {
+    final shouldDelete = await showDialog<bool>(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text('Conferma eliminazione'),
+          content: Text('Vuoi eliminare la formula "${formula.titolo}"?'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(false),
+              child: const Text('Annulla'),
+            ),
+            FilledButton(
+              onPressed: () => Navigator.of(context).pop(true),
+              child: const Text('Elimina'),
+            ),
+          ],
+        );
+      },
+    );
+
+    if (shouldDelete != true) return;
+
+    final removedIndex = _filteredFormulas.indexWhere(
+      (f) => f.id == formula.id,
+    );
+    Formula? removedFormula;
+
+    if (removedIndex != -1) {
+      setState(() {
+        removedFormula = _filteredFormulas.removeAt(removedIndex);
+      });
+    }
+
+    try {
+      await widget.onRemoveUserFormula(formula.id);
+    } catch (_) {
+      if (!mounted) return;
+      if (removedFormula != null) {
+        setState(() {
+          _filteredFormulas.insert(removedIndex, removedFormula!);
+        });
+      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Errore durante l\'eliminazione della formula'),
+          duration: Duration(seconds: 2),
+        ),
+      );
+      return;
+    }
+
+    if (!mounted) return;
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Formula eliminata con successo'),
+        duration: Duration(seconds: 2),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     //final colorScheme = Theme.of(context).colorScheme;
@@ -72,66 +136,85 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
       appBar: null, // RIMOSSA AppBar nativa
       body: Stack(
         children: [
-
           // Contenuto sotto la barra
-            _filteredFormulas.isEmpty
-                ? const Center(
-              child: Text('Nessuna formula trovata per questa categoria.'),
-            )
-                : ListView.builder(
-              padding: EdgeInsets.only(
-                top: MediaQuery.of(context).viewPadding.top + 70,
-                left: 8.0,
-                right: 8.0,
-                bottom: MediaQuery.of(context).viewPadding.bottom + 98,
-              ),
-              itemCount: _filteredFormulas.length,
-              itemBuilder: (context, index) {
-                final formula = _filteredFormulas[index];
-
-                return Padding(
-                  padding: const EdgeInsets.symmetric(
-                      vertical: 4.0, horizontal: 8.0),
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    elevation: 2,
-                    child: ListTile(
-                      title: Text(formula.titolo),
-                      subtitle: LatexText(
-                        formula.formulaLatex,
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Theme.of(context)
-                              .colorScheme
-                              .onSurfaceVariant,
-                        ),
-                        latexColor:
-                            Theme.of(context).colorScheme.onSurfaceVariant,
-                        forceLatex: true,
-                      ),
-                      trailing:
-                      const Icon(Icons.arrow_forward_ios, size: 16),
-                      onTap: () async {
-                        await Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (_) => FormulaDetailPage(
-                              formula: formula,
-                              themeMode: widget.themeMode,
-                              isFavorite: widget.favoriteIds
-                                  .contains(formula.id),
-                              onToggleFavorite: widget.onToggleFavorite,
-                              setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
-                            ),
-                          ),
-                        );
-                      },
-                    ),
+          _filteredFormulas.isEmpty
+              ? const Center(
+                  child: Text('Nessuna formula trovata per questa categoria.'),
+                )
+              : ListView.builder(
+                  padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).viewPadding.top + 70,
+                    left: 8.0,
+                    right: 8.0,
+                    bottom: MediaQuery.of(context).viewPadding.bottom + 98,
                   ),
-                );
-              },
-            ),
+                  itemCount: _filteredFormulas.length,
+                  itemBuilder: (context, index) {
+                    final formula = _filteredFormulas[index];
+                    final isCustomCategory =
+                        widget.category == 'Personalizzate';
+
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 4.0,
+                        horizontal: 8.0,
+                      ),
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        elevation: 2,
+                        child: ListTile(
+                          leading: isCustomCategory
+                              ? IconButton(
+                                  icon: Icon(
+                                    Icons.delete,
+                                    color: Theme.of(context).colorScheme.primary,
+                                  ),
+                                  tooltip: 'Elimina formula',
+                                  onPressed: () =>
+                                      _confirmAndDeleteFormula(formula),
+                                )
+                              : null,
+                          title: Text(formula.titolo),
+                          subtitle: LatexText(
+                            formula.formulaLatex,
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: Theme.of(
+                                context,
+                              ).colorScheme.onSurfaceVariant,
+                            ),
+                            latexColor: Theme.of(
+                              context,
+                            ).colorScheme.onSurfaceVariant,
+                            forceLatex: true,
+                          ),
+                          trailing: const Icon(
+                            Icons.arrow_forward_ios,
+                            size: 16,
+                          ),
+                          onTap: () async {
+                            await Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => FormulaDetailPage(
+                                  formula: formula,
+                                  themeMode: widget.themeMode,
+                                  isFavorite: widget.favoriteIds.contains(
+                                    formula.id,
+                                  ),
+                                  onToggleFavorite: widget.onToggleFavorite,
+                                  setGlobalAppBarVisibility:
+                                      widget.setGlobalAppBarVisibility,
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                      ),
+                    );
+                  },
+                ),
           // Barra flottante in alto con back e senza cerca
           Positioned(
             top: MediaQuery.of(context).viewPadding.top,
