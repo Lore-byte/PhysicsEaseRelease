@@ -43,10 +43,19 @@ class _FavoritesPageState extends State<FavoritesPage> {
   }
 
   void _loadFavorites() {
+    final formulasById = <String, Formula>{
+      for (final formula in widget.allFormulas) formula.id: formula,
+    };
+
+    final orderedFavorites = widget.favoriteIds
+        .toList()
+        .reversed
+        .map((id) => formulasById[id])
+        .whereType<Formula>()
+        .toList();
+
     setState(() {
-      _favoriteFormulas = widget.allFormulas
-          .where((f) => widget.favoriteIds.contains(f.id))
-          .toList();
+      _favoriteFormulas = orderedFavorites;
     });
   }
 
@@ -57,14 +66,22 @@ class _FavoritesPageState extends State<FavoritesPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.star_border, size: 80, color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.6)),
+            Icon(
+              Icons.star_border,
+              size: 80,
+              color: Theme.of(
+                context,
+              ).colorScheme.onSurface.withValues(alpha: 0.6),
+            ),
             const SizedBox(height: 20),
             Text(
               'Nessuna formula nei preferiti.\nClicca sulla stella per aggiungerne alcune!',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 18,
-                color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.8),
+                color: Theme.of(
+                  context,
+                ).colorScheme.onSurface.withValues(alpha: 0.8),
               ),
             ),
           ],
@@ -73,7 +90,12 @@ class _FavoritesPageState extends State<FavoritesPage> {
     }
 
     return ListView.builder(
-      padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 98, left: 8.0, right: 8.0, top: MediaQuery.of(context).viewPadding.top + 70),
+      padding: EdgeInsets.only(
+        bottom: MediaQuery.of(context).viewPadding.bottom + 98,
+        left: 8.0,
+        right: 8.0,
+        top: MediaQuery.of(context).viewPadding.top + 70,
+      ),
       itemCount: _favoriteFormulas.length,
       itemBuilder: (context, index) {
         final formula = _favoriteFormulas[index];
@@ -86,7 +108,10 @@ class _FavoritesPageState extends State<FavoritesPage> {
             elevation: 2,
             child: ListTile(
               leading: IconButton(
-                icon: Icon(Icons.remove_circle, color: Theme.of(context).colorScheme.primary),
+                icon: Icon(
+                  Icons.remove_circle,
+                  color: Theme.of(context).colorScheme.primary,
+                ),
                 tooltip: 'Rimuovi dai preferiti',
                 onPressed: () {
                   widget.onToggleFavorite(formula.id);
@@ -96,18 +121,28 @@ class _FavoritesPageState extends State<FavoritesPage> {
               title: Text(formula.titolo),
               subtitle: formula.formulaLatex.isNotEmpty
                   ? LatexText(
-                formula.formulaLatex,
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Theme.of(context).colorScheme.onSurfaceVariant,
-                ),
-                latexColor: Theme.of(context).colorScheme.onSurfaceVariant,
-                forceLatex: true,
-              )
-                  : Text('Formula non disponibile', style: TextStyle(fontStyle: FontStyle.italic, color: Theme.of(context).colorScheme.error)),
+                      formula.formulaLatex,
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Theme.of(context).colorScheme.onSurfaceVariant,
+                      ),
+                      latexColor: Theme.of(
+                        context,
+                      ).colorScheme.onSurfaceVariant,
+                      forceLatex: true,
+                    )
+                  : Text(
+                      'Formula non disponibile',
+                      style: TextStyle(
+                        fontStyle: FontStyle.italic,
+                        color: Theme.of(context).colorScheme.error,
+                      ),
+                    ),
               trailing: const Icon(Icons.arrow_forward_ios, size: 16),
               onTap: () async {
-                widget.setGlobalAppBarVisibility(false); // NASCONDI PRIMA DI APRIRE
+                widget.setGlobalAppBarVisibility(
+                  false,
+                ); // NASCONDI PRIMA DI APRIRE
                 await Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (_) => FormulaDetailPage(
@@ -115,11 +150,14 @@ class _FavoritesPageState extends State<FavoritesPage> {
                       themeMode: widget.themeMode,
                       isFavorite: widget.favoriteIds.contains(formula.id),
                       onToggleFavorite: widget.onToggleFavorite,
-                      setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
+                      setGlobalAppBarVisibility:
+                          widget.setGlobalAppBarVisibility,
                     ),
                   ),
                 );
-                widget.setGlobalAppBarVisibility(true); // RIPRISTINA DOPO IL POP
+                widget.setGlobalAppBarVisibility(
+                  true,
+                ); // RIPRISTINA DOPO IL POP
               },
             ),
           ),
