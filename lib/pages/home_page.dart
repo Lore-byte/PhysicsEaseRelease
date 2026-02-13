@@ -310,10 +310,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                         ? ListView.builder(
                             padding: EdgeInsets.only(
                               top: topListPadding,
-                              bottom:
-                                  MediaQuery.of(context).viewPadding.bottom +
-                                  98 +
-                                  MediaQuery.of(context).viewInsets.bottom,
+                              bottom: MediaQuery.of(context).viewPadding.bottom + 180
                             ),
                             itemCount: temi.length,
                             itemBuilder: (context, index) {
