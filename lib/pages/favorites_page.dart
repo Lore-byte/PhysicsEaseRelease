@@ -26,6 +26,57 @@ class FavoritesPage extends StatefulWidget {
 
 class _FavoritesPageState extends State<FavoritesPage> {
   List<Formula> _favoriteFormulas = [];
+  final Set<String> _programmaticDismissIds = {};
+  static const Duration _programmaticDismissDuration = Duration(
+    milliseconds: 500,
+  );
+
+  Widget _buildDismissBackground(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.error,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      alignment: Alignment.centerLeft,
+      padding: const EdgeInsets.only(left: 20),
+      child: Icon(
+        Icons.delete_outline,
+        color: Theme.of(context).colorScheme.onError,
+      ),
+    );
+  }
+
+  void _handleFavoriteDismissed(Formula formula) {
+    if (mounted) {
+      setState(() {
+        _favoriteFormulas.removeWhere((item) => item.id == formula.id);
+        _programmaticDismissIds.remove(formula.id);
+      });
+    }
+
+    widget.onToggleFavorite(formula.id);
+    widget.setGlobalAppBarVisibility(true);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: const Text('Formula rimossa dai preferiti'),
+        duration: const Duration(seconds: 2),
+        action: SnackBarAction(
+          label: 'Annulla',
+          onPressed: () {
+            widget.onToggleFavorite(formula.id);
+          },
+        ),
+      ),
+    );
+  }
+
+  void _triggerDismissAnimation(Formula formula) {
+    if (_programmaticDismissIds.contains(formula.id)) return;
+
+    setState(() {
+      _programmaticDismissIds.add(formula.id);
+    });
+  }
 
   @override
   void initState() {
@@ -99,98 +150,121 @@ class _FavoritesPageState extends State<FavoritesPage> {
       itemCount: _favoriteFormulas.length,
       itemBuilder: (context, index) {
         final formula = _favoriteFormulas[index];
+        final isProgrammaticDismissing = _programmaticDismissIds.contains(
+          formula.id,
+        );
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 4.0),
           child: Dismissible(
             key: Key(formula.id),
-            direction: DismissDirection.endToStart,
+            direction: DismissDirection.startToEnd,
             onDismissed: (_) {
-              widget.onToggleFavorite(formula.id);
-              widget.setGlobalAppBarVisibility(true);
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: const Text('Formula rimossa dai preferiti'),
-                  duration: const Duration(seconds: 2),
-                  action: SnackBarAction(
-                    label: 'Annulla',
-                    onPressed: () {
-                      widget.onToggleFavorite(formula.id);
-                    },
-                  ),
-                ),
-              );
+              _handleFavoriteDismissed(formula);
             },
-            background: Container(
-              decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.error,
-                borderRadius: BorderRadius.circular(12),
-              ),
-              alignment: Alignment.centerRight,
-              padding: const EdgeInsets.only(right: 20),
-              child: Icon(
-                Icons.delete_outline,
-                color: Theme.of(context).colorScheme.onError,
-              ),
-            ),
-            child: Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-              elevation: 2,
-              child: ListTile(
-                leading: IconButton(
-                  icon: Icon(
-                    Icons.remove_circle,
-                    color: Theme.of(context).colorScheme.primary,
+            background: _buildDismissBackground(context),
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                return TweenAnimationBuilder<double>(
+                  tween: Tween<double>(
+                    begin: 0,
+                    end: isProgrammaticDismissing ? 1 : 0,
                   ),
-                  tooltip: 'Rimuovi dai preferiti',
-                  onPressed: () {
-                    widget.onToggleFavorite(formula.id);
-                    widget.setGlobalAppBarVisibility(true);
+                  duration: _programmaticDismissDuration,
+                  curve: Curves.easeOutCubic,
+                  onEnd: () {
+                    if (!mounted ||
+                        !_programmaticDismissIds.contains(formula.id)) {
+                      return;
+                    }
+
+                    _handleFavoriteDismissed(formula);
                   },
-                ),
-                title: Text(formula.titolo),
-                subtitle: formula.formulaLatex.isNotEmpty
-                    ? LatexText(
-                        formula.formulaLatex,
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Theme.of(context).colorScheme.onSurfaceVariant,
-                        ),
-                        latexColor: Theme.of(
-                          context,
-                        ).colorScheme.onSurfaceVariant,
-                        forceLatex: true,
-                      )
-                    : Text(
-                        'Formula non disponibile',
-                        style: TextStyle(
-                          fontStyle: FontStyle.italic,
-                          color: Theme.of(context).colorScheme.error,
-                        ),
+                  child: IgnorePointer(
+                    ignoring: isProgrammaticDismissing,
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
                       ),
-                trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                onTap: () async {
-                  widget.setGlobalAppBarVisibility(
-                    false,
-                  ); // NASCONDI PRIMA DI APRIRE
-                  await Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => FormulaDetailPage(
-                        formula: formula,
-                        themeMode: widget.themeMode,
-                        isFavorite: widget.favoriteIds.contains(formula.id),
-                        onToggleFavorite: widget.onToggleFavorite,
-                        setGlobalAppBarVisibility:
-                            widget.setGlobalAppBarVisibility,
+                      elevation: 2,
+                      child: ListTile(
+                        leading: IconButton(
+                          icon: Icon(
+                            Icons.remove_circle,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
+                          tooltip: 'Rimuovi dai preferiti',
+                          onPressed: () {
+                            _triggerDismissAnimation(formula);
+                          },
+                        ),
+                        title: Text(formula.titolo),
+                        subtitle: formula.formulaLatex.isNotEmpty
+                            ? LatexText(
+                                formula.formulaLatex,
+                                style: TextStyle(
+                                  fontSize: 16,
+                          color: Theme.of(context).colorScheme.onSurfaceVariant,
+                                ),
+                                latexColor: Theme.of(
+                                  context,
+                                ).colorScheme.onSurfaceVariant,
+                                forceLatex: true,
+                              )
+                            : Text(
+                                'Formula non disponibile',
+                                style: TextStyle(
+                                  fontStyle: FontStyle.italic,
+                                  color: Theme.of(context).colorScheme.error,
+                                ),
+                              ),
+                        trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                        onTap: () async {
+                          widget.setGlobalAppBarVisibility(
+                            false,
+                          ); // NASCONDI PRIMA DI APRIRE
+                          await Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => FormulaDetailPage(
+                                formula: formula,
+                                themeMode: widget.themeMode,
+                                isFavorite: widget.favoriteIds.contains(formula.id),
+                                onToggleFavorite: widget.onToggleFavorite,
+                                setGlobalAppBarVisibility:
+                                    widget.setGlobalAppBarVisibility,
+                              ),
+                            ),
+                          );
+                          widget.setGlobalAppBarVisibility(
+                            true,
+                          ); // RIPRISTINA DOPO IL POP
+                        },
                       ),
                     ),
-                  );
-                  widget.setGlobalAppBarVisibility(
-                    true,
-                  ); // RIPRISTINA DOPO IL POP
-                },
-              ),
+                  ),
+                  builder: (context, progress, child) {
+                    final translatedDx = constraints.maxWidth * 1.15 * progress;
+
+                    return Stack(
+                      children: [
+                        if (progress > 0)
+                          Positioned.fill(
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: SizedBox(
+                                width: constraints.maxWidth * progress,
+                                child: _buildDismissBackground(context),
+                              ),
+                            ),
+                          ),
+                        Transform.translate(
+                          offset: Offset(translatedDx, 0),
+                          child: child,
+                        ),
+                      ],
+                    );
+                  },
+                );
+              },
             ),
           ),
         );

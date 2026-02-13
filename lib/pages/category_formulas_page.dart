@@ -32,6 +32,26 @@ class CategoryFormulasPage extends StatefulWidget {
 
 class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
   List<Formula> _filteredFormulas = [];
+  final Set<String> _programmaticDismissIds = {};
+  final Set<String> _pendingDeleteIds = {};
+  static const Duration _programmaticDismissDuration = Duration(
+    milliseconds: 500,
+  );
+
+  Widget _buildDismissBackground(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.error,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      alignment: Alignment.centerLeft,
+      padding: const EdgeInsets.only(left: 20),
+      child: Icon(
+        Icons.delete_outline,
+        color: Theme.of(context).colorScheme.onError,
+      ),
+    );
+  }
 
   @override
   void initState() {
@@ -76,7 +96,7 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
     });
   }
 
-  Future<void> _confirmAndDeleteFormula(Formula formula) async {
+  Future<bool> _confirmAndDeleteFormula(Formula formula) async {
     final shouldDelete = await showDialog<bool>(
       context: context,
       builder: (context) {
@@ -97,45 +117,95 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
       },
     );
 
-    if (shouldDelete != true) return;
+    return shouldDelete == true;
+  }
+
+  Future<void> _triggerDismissAnimation(Formula formula) async {
+    if (_programmaticDismissIds.contains(formula.id) ||
+        _pendingDeleteIds.contains(formula.id)) {
+      return;
+    }
+
+    final shouldDelete = await _confirmAndDeleteFormula(formula);
+    if (!shouldDelete || !mounted) return;
+
+    setState(() {
+      _programmaticDismissIds.add(formula.id);
+    });
+  }
+
+  Future<void> _handleFormulaDismissed(Formula formula) async {
+    if (_pendingDeleteIds.contains(formula.id)) return;
 
     final removedIndex = _filteredFormulas.indexWhere(
       (f) => f.id == formula.id,
     );
-    Formula? removedFormula;
-
-    if (removedIndex != -1) {
-      setState(() {
-        removedFormula = _filteredFormulas.removeAt(removedIndex);
-      });
+    if (removedIndex == -1) {
+      if (mounted) {
+        setState(() {
+          _programmaticDismissIds.remove(formula.id);
+        });
+      }
+      return;
     }
+
+    setState(() {
+      _filteredFormulas.removeAt(removedIndex);
+      _programmaticDismissIds.remove(formula.id);
+      _pendingDeleteIds.add(formula.id);
+    });
+
+    var isUndo = false;
+    final snackBarController = ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: const Text('Formula rimossa dalle personalizzate'),
+        duration: const Duration(seconds: 2),
+        action: SnackBarAction(
+          label: 'Annulla',
+          onPressed: () {
+            isUndo = true;
+            if (!mounted) return;
+
+            setState(() {
+              final safeIndex = removedIndex.clamp(0, _filteredFormulas.length);
+              _filteredFormulas.insert(safeIndex, formula);
+              _pendingDeleteIds.remove(formula.id);
+            });
+          },
+        ),
+      ),
+    );
+
+    await snackBarController.closed;
+
+    if (!mounted) return;
+    if (isUndo) return;
 
     try {
       await widget.onRemoveUserFormula(formula.id);
+      if (!mounted) return;
+
+      setState(() {
+        _pendingDeleteIds.remove(formula.id);
+      });
     } catch (_) {
       if (!mounted) return;
-      if (removedFormula != null) {
-        setState(() {
-          _filteredFormulas.insert(removedIndex, removedFormula!);
-        });
-      }
+
+      setState(() {
+        if (!_filteredFormulas.any((f) => f.id == formula.id)) {
+          final safeIndex = removedIndex.clamp(0, _filteredFormulas.length);
+          _filteredFormulas.insert(safeIndex, formula);
+        }
+        _pendingDeleteIds.remove(formula.id);
+      });
+
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Errore durante l\'eliminazione della formula'),
           duration: Duration(seconds: 2),
         ),
       );
-      return;
     }
-
-    if (!mounted) return;
-
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Formula eliminata con successo'),
-        duration: Duration(seconds: 2),
-      ),
-    );
   }
 
   @override
@@ -164,66 +234,177 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
                     final isCustomCategory =
                         widget.category == 'Personalizzate';
 
+                    final isProgrammaticDismissing = _programmaticDismissIds
+                        .contains(formula.id);
+
                     return Padding(
                       padding: const EdgeInsets.symmetric(
                         vertical: 4.0,
                         horizontal: 8.0,
                       ),
-                      child: Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        elevation: 2,
-                        child: ListTile(
-                          leading: isCustomCategory
-                              ? IconButton(
-                                  icon: Icon(
-                                    Icons.delete,
+                      child: isCustomCategory
+                          ? Dismissible(
+                              key: Key(formula.id),
+                              direction: DismissDirection.startToEnd,
+                              confirmDismiss: (_) =>
+                                  _confirmAndDeleteFormula(formula),
+                              onDismissed: (_) {
+                                _handleFormulaDismissed(formula);
+                              },
+                              background: _buildDismissBackground(context),
+                              child: LayoutBuilder(
+                                builder: (context, constraints) {
+                                  return TweenAnimationBuilder<double>(
+                                    tween: Tween<double>(
+                                      begin: 0,
+                                      end: isProgrammaticDismissing ? 1 : 0,
+                                    ),
+                                    duration: _programmaticDismissDuration,
+                                    curve: Curves.easeOutCubic,
+                                    onEnd: () {
+                                      if (!mounted ||
+                                          !_programmaticDismissIds.contains(
+                                            formula.id,
+                                          )) {
+                                        return;
+                                      }
+
+                                      _handleFormulaDismissed(formula);
+                                    },
+                                    child: IgnorePointer(
+                                      ignoring: isProgrammaticDismissing,
+                                      child: Card(
+                                        shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(12),
+                                        ),
+                                        elevation: 2,
+                                        child: ListTile(
+                                          leading: IconButton(
+                                            icon: Icon(
+                                              Icons.delete,
+                                              color: Theme.of(
+                                                context,
+                                              ).colorScheme.primary,
+                                            ),
+                                            tooltip: 'Rimuovi formula',
+                                            onPressed: () {
+                                              _triggerDismissAnimation(formula);
+                                            },
+                                          ),
+                                          title: Text(formula.titolo),
+                                          subtitle: LatexText(
+                                            formula.formulaLatex,
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                              color: Theme.of(
+                                                context,
+                                              ).colorScheme.onSurfaceVariant,
+                                            ),
+                                            latexColor: Theme.of(
+                                              context,
+                                            ).colorScheme.onSurfaceVariant,
+                                            forceLatex: true,
+                                          ),
+                                          trailing: const Icon(
+                                            Icons.arrow_forward_ios,
+                                            size: 16,
+                                          ),
+                                          onTap: () async {
+                                            await Navigator.of(context).push(
+                                              MaterialPageRoute(
+                                                builder: (_) => FormulaDetailPage(
+                                                  formula: formula,
+                                                  themeMode: widget.themeMode,
+                                                  isFavorite: widget.favoriteIds
+                                                      .contains(formula.id),
+                                                  onToggleFavorite:
+                                                      widget.onToggleFavorite,
+                                                  setGlobalAppBarVisibility: widget
+                                                      .setGlobalAppBarVisibility,
+                                                ),
+                                              ),
+                                            );
+                                          },
+                                        ),
+                                      ),
+                                    ),
+                                    builder: (context, progress, child) {
+                                      final translatedDx =
+                                          constraints.maxWidth *
+                                          1.15 *
+                                          progress;
+
+                                      return Stack(
+                                        children: [
+                                          if (progress > 0)
+                                            Positioned.fill(
+                                              child: Align(
+                                                alignment: Alignment.centerLeft,
+                                                child: SizedBox(
+                                                  width:
+                                                      constraints.maxWidth *
+                                                      progress,
+                                                  child:
+                                                      _buildDismissBackground(
+                                                        context,
+                                                      ),
+                                                ),
+                                              ),
+                                            ),
+                                          Transform.translate(
+                                            offset: Offset(translatedDx, 0),
+                                            child: child,
+                                          ),
+                                        ],
+                                      );
+                                    },
+                                  );
+                                },
+                              ),
+                            )
+                          : Card(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              elevation: 2,
+                              child: ListTile(
+                                title: Text(formula.titolo),
+                                subtitle: LatexText(
+                                  formula.formulaLatex,
+                                  style: TextStyle(
+                                    fontSize: 16,
                                     color: Theme.of(
                                       context,
-                                    ).colorScheme.primary,
+                                    ).colorScheme.onSurfaceVariant,
                                   ),
-                                  tooltip: 'Elimina formula',
-                                  onPressed: () =>
-                                      _confirmAndDeleteFormula(formula),
-                                )
-                              : null,
-                          title: Text(formula.titolo),
-                          subtitle: LatexText(
-                            formula.formulaLatex,
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Theme.of(
-                                context,
-                              ).colorScheme.onSurfaceVariant,
-                            ),
-                            latexColor: Theme.of(
-                              context,
-                            ).colorScheme.onSurfaceVariant,
-                            forceLatex: true,
-                          ),
-                          trailing: const Icon(
-                            Icons.arrow_forward_ios,
-                            size: 16,
-                          ),
-                          onTap: () async {
-                            await Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (_) => FormulaDetailPage(
-                                  formula: formula,
-                                  themeMode: widget.themeMode,
-                                  isFavorite: widget.favoriteIds.contains(
-                                    formula.id,
-                                  ),
-                                  onToggleFavorite: widget.onToggleFavorite,
-                                  setGlobalAppBarVisibility:
-                                      widget.setGlobalAppBarVisibility,
+                                  latexColor: Theme.of(
+                                    context,
+                                  ).colorScheme.onSurfaceVariant,
+                                  forceLatex: true,
                                 ),
+                                trailing: const Icon(
+                                  Icons.arrow_forward_ios,
+                                  size: 16,
+                                ),
+                                onTap: () async {
+                                  await Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (_) => FormulaDetailPage(
+                                        formula: formula,
+                                        themeMode: widget.themeMode,
+                                        isFavorite: widget.favoriteIds.contains(
+                                          formula.id,
+                                        ),
+                                        onToggleFavorite:
+                                            widget.onToggleFavorite,
+                                        setGlobalAppBarVisibility:
+                                            widget.setGlobalAppBarVisibility,
+                                      ),
+                                    ),
+                                  );
+                                },
                               ),
-                            );
-                          },
-                        ),
-                      ),
+                            ),
                     );
                   },
                 ),
