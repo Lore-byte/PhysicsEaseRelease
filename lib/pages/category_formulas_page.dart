@@ -49,8 +49,8 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
         color: Theme.of(context).colorScheme.error,
         borderRadius: BorderRadius.circular(12),
       ),
-      alignment: Alignment.centerLeft,
-      padding: const EdgeInsets.only(left: 20),
+      alignment: Alignment.centerRight,
+      padding: const EdgeInsets.only(right: 20),
       child: Icon(
         Icons.delete_outline,
         color: Theme.of(context).colorScheme.onError,
@@ -250,7 +250,7 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
                       child: isCustomCategory
                           ? Dismissible(
                               key: Key(formula.id),
-                              direction: DismissDirection.startToEnd,
+                              direction: DismissDirection.endToStart,
                               confirmDismiss: (_) =>
                                   _confirmAndDeleteFormula(formula),
                               onDismissed: (_) {
@@ -337,7 +337,7 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
                                     ),
                                     builder: (context, progress, child) {
                                       final translatedDx =
-                                          constraints.maxWidth *
+                                          -constraints.maxWidth *
                                           1.15 *
                                           progress;
 
@@ -346,7 +346,7 @@ class _CategoryFormulasPageState extends State<CategoryFormulasPage> {
                                           if (progress > 0)
                                             Positioned.fill(
                                               child: Align(
-                                                alignment: Alignment.centerLeft,
+                                                alignment: Alignment.centerRight,
                                                 child: SizedBox(
                                                   width:
                                                       constraints.maxWidth *
