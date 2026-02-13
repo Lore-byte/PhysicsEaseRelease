@@ -1139,7 +1139,7 @@ class _FamousPhysicistsPageState extends State<FamousPhysicistsPage> {
             ),
           ),
           actions: <Widget>[
-            TextButton(
+            FilledButton(
               onPressed: () {
                 Navigator.of(dialogContext).pop();
               },

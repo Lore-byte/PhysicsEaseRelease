@@ -404,10 +404,10 @@ class _ConstantsListPageState extends State<ConstantsListPage> {
             ),
           ),
           actions: <Widget>[
-            TextButton(
+            FilledButton(
               child: Text(
                 'Chiudi',
-                style: TextStyle(color: colorScheme.primary),
+                style: TextStyle(color: colorScheme.onPrimary),
               ),
               onPressed: () {
                 Navigator.of(context).pop();

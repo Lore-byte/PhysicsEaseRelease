@@ -230,13 +230,13 @@ class PeriodicTablePage extends StatelessWidget {
             ),
           ),
           actions: <Widget>[
-            TextButton(
+            FilledButton(
               onPressed: () {
                 Navigator.of(context).pop();
               },
               child: Text(
                 'Chiudi',
-                style: TextStyle(color: colorScheme.primary),
+                style: TextStyle(color: colorScheme.onPrimary),
               ),
             ),
           ],

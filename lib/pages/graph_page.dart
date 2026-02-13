@@ -13,10 +13,12 @@ class GraphPage extends StatefulWidget {
 
 class _GraphPageState extends State<GraphPage> {
   final List<TextEditingController> _functionControllers = [];
+  final List<FocusNode> _focusNodes = [];
   final List<String> _currentFunctions = [];
   final List<String> _errorMessages = [];
   final List<Color> _functionColors = [];
   final List<bool> _isPlaceholder = [];
+  final List<bool> _showCursorAtIndex = [];
 
   TextEditingController? _focusedController;
 
@@ -141,17 +143,33 @@ class _GraphPageState extends State<GraphPage> {
   }) {
     setState(() {
       final newController = TextEditingController(text: initialText);
+      final newFocusNode = FocusNode();
       final int newIndex = _functionControllers.length;
 
       newController.addListener(() => _updateFunction(newIndex));
+      newFocusNode.addListener(() {
+        if (!mounted) return;
+        if (newFocusNode.hasFocus) {
+          setState(() {
+            _focusedController = newController;
+          });
+        }
+      });
       _functionControllers.add(newController);
+      _focusNodes.add(newFocusNode);
       _currentFunctions.add(initialText);
       _errorMessages.add('');
       _functionColors.add(
         _predefinedColors[newIndex % _predefinedColors.length],
       );
       _isPlaceholder.add(isPlaceholder);
+      _showCursorAtIndex.add(false);
       _focusedController = newController;
+    });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || _focusNodes.isEmpty) return;
+      _focusNodes.last.requestFocus();
     });
   }
 
@@ -160,14 +178,14 @@ class _GraphPageState extends State<GraphPage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text('Conferma Eliminazione'),
-          content: const Text('Sei sicuro di voler eliminare questa funzione?'),
+          title: const Text('Conferma eliminazione'),
+          content: const Text('Vuoi eliminare questa funzione?'),
           actions: <Widget>[
             TextButton(
               onPressed: () => Navigator.of(context).pop(false),
               child: const Text('Annulla'),
             ),
-            TextButton(
+            FilledButton(
               onPressed: () => Navigator.of(context).pop(true),
               child: const Text('Elimina'),
             ),
@@ -179,11 +197,14 @@ class _GraphPageState extends State<GraphPage> {
     if (confirm == true) {
       setState(() {
         _functionControllers[index].dispose();
+        _focusNodes[index].dispose();
         _functionControllers.removeAt(index);
+        _focusNodes.removeAt(index);
         _currentFunctions.removeAt(index);
         _errorMessages.removeAt(index);
         _functionColors.removeAt(index);
         _isPlaceholder.removeAt(index);
+        _showCursorAtIndex.removeAt(index);
 
         if (_functionControllers.isEmpty) {
           _addFunctionField(
@@ -195,6 +216,10 @@ class _GraphPageState extends State<GraphPage> {
           if (_focusedController == null ||
               !_functionControllers.contains(_focusedController)) {
             _focusedController = _functionControllers.first;
+            WidgetsBinding.instance.addPostFrameCallback((_) {
+              if (!mounted || _focusNodes.isEmpty) return;
+              _focusNodes.first.requestFocus();
+            });
           }
         }
         _plotGraph();
@@ -311,6 +336,13 @@ class _GraphPageState extends State<GraphPage> {
 
   void _onKeyPress(String key) {
     if (_focusedController == null) {
+      final int focusedIndex = _focusNodes.indexWhere((node) => node.hasFocus);
+      if (focusedIndex != -1) {
+        _focusedController = _functionControllers[focusedIndex];
+      }
+    }
+
+    if (_focusedController == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text(
@@ -410,6 +442,13 @@ class _GraphPageState extends State<GraphPage> {
         selection: newSelection,
       );
       if (focusedIndex != -1) {
+        final int caretOffset = controller.selection.baseOffset;
+        final int textLength = controller.text.length;
+        _showCursorAtIndex[focusedIndex] =
+            controller.text.isEmpty ||
+            (caretOffset >= 0 && caretOffset < textLength);
+      }
+      if (focusedIndex != -1) {
         _updateFunction(focusedIndex);
       }
     });
@@ -442,6 +481,9 @@ class _GraphPageState extends State<GraphPage> {
   void dispose() {
     for (var controller in _functionControllers) {
       controller.dispose();
+    }
+    for (var focusNode in _focusNodes) {
+      focusNode.dispose();
     }
     super.dispose();
   }
@@ -569,15 +611,29 @@ class _GraphPageState extends State<GraphPage> {
                                   children: [
                                     TextField(
                                       controller: controller,
+                                      focusNode: _focusNodes[idx],
                                       readOnly: true,
+                                      showCursor: _focusNodes[idx].hasFocus
+                                          ? _showCursorAtIndex[idx]
+                                          : false,
                                       onTap: () {
                                         setState(() {
+                                          _focusNodes[idx].requestFocus();
                                           _focusedController = controller;
                                           if (_isPlaceholder[idx]) {
                                             controller.clear();
                                             _isPlaceholder[idx] = false;
                                             _updateFunction(idx);
                                           }
+
+                                          final int caretOffset =
+                                              controller.selection.baseOffset;
+                                          final int textLength =
+                                              controller.text.length;
+                                          _showCursorAtIndex[idx] =
+                                              controller.text.isEmpty ||
+                                              (caretOffset >= 0 &&
+                                                  caretOffset < textLength);
                                         });
                                       },
                                       decoration: InputDecoration(
@@ -587,8 +643,7 @@ class _GraphPageState extends State<GraphPage> {
                                             12,
                                           ),
                                           borderSide: BorderSide(
-                                            color:
-                                                _focusedController == controller
+                                            color: _focusNodes[idx].hasFocus
                                                 ? colorScheme.primary
                                                 : colorScheme.outline,
                                             width: 2.0,
