@@ -101,64 +101,96 @@ class _FavoritesPageState extends State<FavoritesPage> {
         final formula = _favoriteFormulas[index];
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 4.0),
-          child: Card(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            elevation: 2,
-            child: ListTile(
-              leading: IconButton(
-                icon: Icon(
-                  Icons.remove_circle,
-                  color: Theme.of(context).colorScheme.primary,
+          child: Dismissible(
+            key: Key(formula.id),
+            direction: DismissDirection.endToStart,
+            onDismissed: (_) {
+              widget.onToggleFavorite(formula.id);
+              widget.setGlobalAppBarVisibility(true);
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: const Text('Formula rimossa dai preferiti'),
+                  duration: const Duration(seconds: 2),
+                  action: SnackBarAction(
+                    label: 'Annulla',
+                    onPressed: () {
+                      widget.onToggleFavorite(formula.id);
+                    },
+                  ),
                 ),
-                tooltip: 'Rimuovi dai preferiti',
-                onPressed: () {
-                  widget.onToggleFavorite(formula.id);
-                  widget.setGlobalAppBarVisibility(true);
+              );
+            },
+            background: Container(
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.error,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              alignment: Alignment.centerRight,
+              padding: const EdgeInsets.only(right: 20),
+              child: Icon(
+                Icons.delete_outline,
+                color: Theme.of(context).colorScheme.onError,
+              ),
+            ),
+            child: Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              elevation: 2,
+              child: ListTile(
+                leading: IconButton(
+                  icon: Icon(
+                    Icons.remove_circle,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+                  tooltip: 'Rimuovi dai preferiti',
+                  onPressed: () {
+                    widget.onToggleFavorite(formula.id);
+                    widget.setGlobalAppBarVisibility(true);
+                  },
+                ),
+                title: Text(formula.titolo),
+                subtitle: formula.formulaLatex.isNotEmpty
+                    ? LatexText(
+                        formula.formulaLatex,
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Theme.of(context).colorScheme.onSurfaceVariant,
+                        ),
+                        latexColor: Theme.of(
+                          context,
+                        ).colorScheme.onSurfaceVariant,
+                        forceLatex: true,
+                      )
+                    : Text(
+                        'Formula non disponibile',
+                        style: TextStyle(
+                          fontStyle: FontStyle.italic,
+                          color: Theme.of(context).colorScheme.error,
+                        ),
+                      ),
+                trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                onTap: () async {
+                  widget.setGlobalAppBarVisibility(
+                    false,
+                  ); // NASCONDI PRIMA DI APRIRE
+                  await Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => FormulaDetailPage(
+                        formula: formula,
+                        themeMode: widget.themeMode,
+                        isFavorite: widget.favoriteIds.contains(formula.id),
+                        onToggleFavorite: widget.onToggleFavorite,
+                        setGlobalAppBarVisibility:
+                            widget.setGlobalAppBarVisibility,
+                      ),
+                    ),
+                  );
+                  widget.setGlobalAppBarVisibility(
+                    true,
+                  ); // RIPRISTINA DOPO IL POP
                 },
               ),
-              title: Text(formula.titolo),
-              subtitle: formula.formulaLatex.isNotEmpty
-                  ? LatexText(
-                      formula.formulaLatex,
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Theme.of(context).colorScheme.onSurfaceVariant,
-                      ),
-                      latexColor: Theme.of(
-                        context,
-                      ).colorScheme.onSurfaceVariant,
-                      forceLatex: true,
-                    )
-                  : Text(
-                      'Formula non disponibile',
-                      style: TextStyle(
-                        fontStyle: FontStyle.italic,
-                        color: Theme.of(context).colorScheme.error,
-                      ),
-                    ),
-              trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-              onTap: () async {
-                widget.setGlobalAppBarVisibility(
-                  false,
-                ); // NASCONDI PRIMA DI APRIRE
-                await Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => FormulaDetailPage(
-                      formula: formula,
-                      themeMode: widget.themeMode,
-                      isFavorite: widget.favoriteIds.contains(formula.id),
-                      onToggleFavorite: widget.onToggleFavorite,
-                      setGlobalAppBarVisibility:
-                          widget.setGlobalAppBarVisibility,
-                    ),
-                  ),
-                );
-                widget.setGlobalAppBarVisibility(
-                  true,
-                ); // RIPRISTINA DOPO IL POP
-              },
             ),
           ),
         );
