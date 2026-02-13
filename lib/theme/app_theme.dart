@@ -17,7 +17,7 @@ class AppTheme {
   static ColorScheme darkColorScheme = ColorScheme.fromSeed(
     seedColor: darkSeed,
     brightness: Brightness.dark,
-  );
+  ).copyWith(surface: AppColors.black);
 
   static ThemeData lightTheme = ThemeData(
     colorScheme: lightColorScheme,
@@ -26,6 +26,8 @@ class AppTheme {
 
   static ThemeData darkTheme = ThemeData(
     colorScheme: darkColorScheme,
+    scaffoldBackgroundColor: AppColors.black,
+    canvasColor: AppColors.black,
     useMaterial3: true,
   );
 
