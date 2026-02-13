@@ -12,6 +12,10 @@ import 'package:physics_ease_release/models/formula.dart';
 // Importing the service used to load and manage formulas
 import 'package:physics_ease_release/services/formula_service.dart';
 
+// Importing the service used to manage formula notes
+import 'package:physics_ease_release/services/notes_service.dart';
+import 'package:physics_ease_release/models/note.dart';
+
 // Importing developer tools for logging
 import 'dart:developer' as developer;
 
@@ -71,6 +75,9 @@ class _MyAppState extends State<MyApp> {
 
   // Stores the IDs of favorite formulas
   Set<String> _favoriteIds = {};
+
+  // Stores notes for formulas (formulaId -> List of Note objects)
+  Map<String, List<Note>> _formulaNotes = {};
 
   // Lists containing all formulas and user-added formulas
   List<Formula> _allFormulas = [];
@@ -143,6 +150,7 @@ class _MyAppState extends State<MyApp> {
     // Load all app data and preferences when app starts
     _loadAllFormulasAndUserFormulas();
     _loadFavorites();
+    _loadNotes();
     _loadThemeMode();
     _pages = _buildPages();
     _checkOnboardingStatus();
@@ -260,6 +268,8 @@ class _MyAppState extends State<MyApp> {
         setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
         searchBarVisible: _searchBarVisible,
         colorScheme: currentColorScheme,
+        formulaNotes: _formulaNotes,
+        onSaveNotes: _saveNotes,
       ),
       FavoritesPage(
         allFormulas: _allFormulas,
@@ -267,6 +277,8 @@ class _MyAppState extends State<MyApp> {
         onToggleFavorite: _toggleFavorite,
         themeMode: _themeMode,
         setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
+        formulaNotes: _formulaNotes,
+        onSaveNotes: _saveNotes,
       ),
       const CalculatorPage(),
       DataPage(setGlobalAppBarVisibility: _setGlobalAppBarVisibility),
@@ -306,6 +318,8 @@ class _MyAppState extends State<MyApp> {
         setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
         searchBarVisible: _searchBarVisible,
         colorScheme: currentColorScheme,
+        formulaNotes: _formulaNotes,
+        onSaveNotes: _saveNotes,
       );
       _pages[1] = FavoritesPage(
         allFormulas: _allFormulas,
@@ -313,6 +327,8 @@ class _MyAppState extends State<MyApp> {
         onToggleFavorite: _toggleFavorite,
         themeMode: _themeMode,
         setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
+        formulaNotes: _formulaNotes,
+        onSaveNotes: _saveNotes,
       );
       _pages[3] = DataPage(
         setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
@@ -353,6 +369,41 @@ class _MyAppState extends State<MyApp> {
     await prefs.setStringList('favorites', _favoriteIds.toList());
     developer.log('Saved favorites: ${_favoriteIds.toList()}');
     _updateTabPages();
+  }
+
+  // Loads saved notes 
+  Future<void> _loadNotes() async {
+    try {
+      final formulasWithNotes = await NotesService.getFormulasWithNotes();
+      final notesByFormula = <String, List<Note>>{};
+      
+      for (final formulaId in formulasWithNotes) {
+        final notes = await NotesService.loadNotes(formulaId);
+        notesByFormula[formulaId] = notes;
+      }
+      
+      setState(() {
+        _formulaNotes = notesByFormula;
+        developer.log('Loaded notes for ${_formulaNotes.length} formulas');
+      });
+    } catch (e) {
+      developer.log('Error loading notes: $e');
+    }
+  }
+
+  // Saves or updates notes for a specific formula
+  Future<void> _saveNotes(String formulaId, List<Note> notes) async {
+    final success = await NotesService.saveNotes(formulaId, notes);
+    if (success) {
+      setState(() {
+        if (notes.isEmpty) {
+          _formulaNotes.remove(formulaId);
+        } else {
+          _formulaNotes[formulaId] = notes;
+        }
+        developer.log('Notes saved for formula: $formulaId');
+      });
+    }
   }
 
   // Toggles between light and dark mode
