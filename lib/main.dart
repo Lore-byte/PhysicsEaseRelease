@@ -559,6 +559,7 @@ class _MyAppState extends State<MyApp> {
     }
 
     final currentColorScheme = _currentColorScheme;
+    final bool isDarkMode = _themeMode == ThemeMode.dark;
 
     // Show onboarding page if user hasn't completed it
     if (_showOnboarding) {
@@ -575,48 +576,142 @@ class _MyAppState extends State<MyApp> {
           resizeToAvoidBottomInset: false, // Avoid resizing when keyboard opens
           appBar: null, // Custom top bar used instead
           drawer: Drawer(
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                topRight: Radius.circular(36),
+                bottomRight: Radius.circular(36),
+              ),
+            ),
             child: Column(
               children: [
                 // Drawer header with app title
-                DrawerHeader(
+                Container(
+                  width: double.infinity,
+                  height: 256,
+                  clipBehavior: Clip.antiAlias,
                   decoration: BoxDecoration(
-                    color: currentColorScheme.primaryContainer.withAlpha(200),
+                    color: currentColorScheme.primaryContainer,
+                    borderRadius: const BorderRadius.only(
+                      bottomLeft: Radius.circular(36),
+                      bottomRight: Radius.circular(36),
+                    ),
                   ),
                   child: Center(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20.0),
-                      child: Image.asset(
-                        _themeMode == ThemeMode.dark
-                            ? 'assets/my_logo_dark.png'
-                            : 'assets/my_logo_light.png',
-                        width: 150,
-                        height: 150,
-                        fit: BoxFit.cover,
-                        errorBuilder: (context, error, stackTrace) {
-                          return Icon(
-                            Icons.image,
-                            size: 120,
-                            color: currentColorScheme.onPrimaryContainer,
-                          );
-                        },
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 64),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(36),
+                        child: Image.asset(
+                          _themeMode == ThemeMode.dark
+                              ? 'assets/my_logo_dark.png'
+                              : 'assets/my_logo_light.png',
+                          width: 150,
+                          height: 150,
+                          fit: BoxFit.cover,
+                          errorBuilder: (context, error, stackTrace) {
+                            return Icon(
+                              Icons.image,
+                              size: 120,
+                              color: currentColorScheme.onPrimaryContainer,
+                            );
+                          },
+                        ),
                       ),
                     ),
                   ),
                 ),
+                const SizedBox(height: 16),
                 // Theme toggle option
                 ListTile(
                   leading: Icon(
-                    _themeMode == ThemeMode.light
-                        ? Icons.light_mode
-                        : Icons.dark_mode,
+                    Icons.palette,
                     color: currentColorScheme.primary,
                   ),
                   title: const Text('Tema'),
-                  trailing: Switch(
-                    value: _themeMode == ThemeMode.dark,
-                    onChanged: (_) => _toggleTheme(),
+                  trailing: Padding(
+                    padding: const EdgeInsets.only(right: 16),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: currentColorScheme.primaryContainer,
+                        borderRadius: BorderRadius.circular(28),
+                      ),
+                      padding: const EdgeInsets.all(4),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Material(
+                            color: AppTheme.transparent,
+                            borderRadius: BorderRadius.circular(24),
+                            child: InkWell(
+                              borderRadius: BorderRadius.circular(24),
+                              onTap: () {
+                                if (isDarkMode) _toggleTheme();
+                              },
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 14,
+                                  vertical: 8,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: !isDarkMode
+                                      ? currentColorScheme.primary
+                                      : AppTheme.transparent,
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                child: Icon(
+                                  Icons.wb_sunny_outlined,
+                                  size: 24,
+                                  color: !isDarkMode
+                                      ? currentColorScheme.onPrimary
+                                      : currentColorScheme.onPrimaryContainer,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Material(
+                            color: AppTheme.transparent,
+                            borderRadius: BorderRadius.circular(24),
+                            child: InkWell(
+                              borderRadius: BorderRadius.circular(24),
+                              onTap: () {
+                                if (!isDarkMode) _toggleTheme();
+                              },
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 14,
+                                  vertical: 8,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: isDarkMode
+                                      ? currentColorScheme.primary
+                                      : AppTheme.transparent,
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                child: Icon(
+                                  Icons.dark_mode_outlined,
+                                  size: 24,
+                                  color: isDarkMode
+                                      ? currentColorScheme.onPrimary
+                                      : currentColorScheme.onPrimaryContainer,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
+
+                const SizedBox(height: 16),
+                Divider(
+                  color: currentColorScheme.outlineVariant,
+                  height: 1,
+                  indent: 16,
+                  endIndent: 16,
+                ),
+
+                const SizedBox(height: 16),
 
                 // Help page link
                 ListTile(
