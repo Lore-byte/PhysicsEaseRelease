@@ -11,12 +11,14 @@ class QuizSessionPage extends StatefulWidget {
   final List<Quiz> quizzes;
   final List<String> selectedCategories;
   final void Function(bool) setGlobalAppBarVisibility;
+  final bool saveResults;
 
   const QuizSessionPage({
     super.key,
     required this.quizzes,
     required this.selectedCategories,
     required this.setGlobalAppBarVisibility,
+    this.saveResults = true,
   });
 
   @override
@@ -94,6 +96,14 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
     setState(() {
       _isFinished = true;
     });
+
+    // Non vanno salvati i risultati dei quiz ottenuti dalla ricerca
+    if (!widget.saveResults) {
+      if (mounted) {
+        Navigator.pop(context);
+      }
+      return;
+    }
 
     // Usa push invece di pushReplacement, così QuizPage aspetta che questa rotta finisca
     await Navigator.push(
