@@ -27,11 +27,71 @@ class _QuizPageState extends State<QuizPage> {
   bool _isLoading = true;
   List<QuizSessionResult> _recentHistory = [];
   int _missedQuestionsCount = 0;
+  
+  late ValueNotifier<bool> _searchVisible;
+  late TextEditingController _searchController;
+  String _searchQuery = '';
+  List<Quiz> _quizSearchResults = [];
+  
+  // Filtri per la ricerca
+  Set<String> _searchSelectedCategories = {};
+  String _searchSelectedDifficulty = 'tutte';
+  bool _filtersVisible = false;
 
   @override
   void initState() {
     super.initState();
+    _searchVisible = ValueNotifier(false);
+    _searchController = TextEditingController();
+    _searchController.addListener(_onSearchChanged);
     _loadData();
+  }
+  
+  @override
+  void dispose() {
+    _searchVisible.dispose();
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  void _onSearchChanged() {
+    _searchQuery = _searchController.text.toLowerCase();
+    _searchQuizzes(_searchQuery);
+  }
+
+  void _searchQuizzes(String query) {
+    final results = <Quiz>[];
+    
+    if (query.isEmpty) {
+      setState(() {
+        _quizSearchResults = [];
+      });
+      return;
+    }
+
+    for (final category in QuizService.availableCategories) {
+      if (_searchSelectedCategories.isNotEmpty &&
+          !_searchSelectedCategories.contains(category)) {
+        continue;
+      }
+
+      final quizzes = _quizService.getQuizzesByCategory(category);
+      for (final quiz in quizzes) {
+        if (_searchSelectedDifficulty != 'tutte' &&
+            quiz.difficolta.toLowerCase() != _searchSelectedDifficulty) {
+          continue;
+        }
+
+        if (quiz.domanda.toLowerCase().contains(query) ||
+            quiz.categoria.toLowerCase().contains(query)) {
+          results.add(quiz);
+        }
+      }
+    }
+
+    setState(() {
+      _quizSearchResults = results;
+    });
   }
 
   Future<void> _loadData() async {
@@ -626,6 +686,12 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ],
             ),
+          ValueListenableBuilder<bool>(
+            valueListenable: _searchVisible,
+            builder: (context, isVisible, _) {
+              return isVisible ? _buildSearchOverlay(context, colorScheme) : const SizedBox.shrink();
+            },
+          ),
           Positioned(
             top: MediaQuery.of(context).viewPadding.top,
             left: 16,
@@ -634,11 +700,255 @@ class _QuizPageState extends State<QuizPage> {
               title: 'Quiz di Fisica',
               leading: FloatingTopBarLeading.back,
               onBackPressed: () => Navigator.of(context).maybePop(),
+              showSearch: true,
+              searchVisible: _searchVisible,
             ),
           ),
         ],
       ),
     );
+  }
+
+  Widget _buildSearchOverlay(BuildContext context, ColorScheme colorScheme) {
+    return Positioned.fill(
+      child: Scaffold(
+        backgroundColor: Theme.of(context).colorScheme.surface,
+        body: Column(
+          children: [
+            SizedBox(height: MediaQuery.of(context).viewPadding.top + 70),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: TextField(
+                controller: _searchController,
+                autofocus: true,
+                decoration: InputDecoration(
+                  hintText: 'Cerca un quiz...',
+                  prefixIcon: const Icon(Icons.search),
+                  suffixIcon: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      IconButton(
+                        icon: Icon(
+                          _filtersVisible ? Icons.tune : Icons.tune_outlined,
+                          color: _filtersVisible ? colorScheme.primary : null,
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            _filtersVisible = !_filtersVisible;
+                          });
+                        },
+                        tooltip: 'Filtri',
+                      ),
+                      if (_searchController.text.isNotEmpty)
+                        IconButton(
+                          icon: const Icon(Icons.clear),
+                          onPressed: () {
+                            _searchController.clear();
+                          },
+                        ),
+                    ],
+                  ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
+                  ),
+                ),
+              ),
+            ),
+            if (_filtersVisible)
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Filtra per categoria',
+                      style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: QuizService.availableCategories.map((category) {
+                          final isSelected = _searchSelectedCategories.contains(category);
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 8.0),
+                            child: FilterChip(
+                              label: Text(QuizService.categoryNames[category] ?? category),
+                              selected: isSelected,
+                              onSelected: (selected) {
+                                setState(() {
+                                  if (selected) {
+                                    _searchSelectedCategories.add(category);
+                                  } else {
+                                    _searchSelectedCategories.remove(category);
+                                  }
+                                  _searchQuizzes(_searchQuery);
+                                });
+                              },
+                              selectedColor: colorScheme.primary,
+                            ),
+                          );
+                        }).toList(),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    Text(
+                      'Filtra per difficoltà',
+                      style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    SegmentedButton<String>(
+                      segments: const [
+                        ButtonSegment(value: 'tutte', label: Text('Tutte')),
+                        ButtonSegment(value: 'facile', label: Text('Facile')),
+                        ButtonSegment(value: 'medio', label: Text('Medio')),
+                        ButtonSegment(value: 'difficile', label: Text('Difficile')),
+                      ],
+                      selected: {_searchSelectedDifficulty},
+                      onSelectionChanged: (Set<String> newSelection) {
+                        setState(() {
+                          _searchSelectedDifficulty = newSelection.first;
+                          _searchQuizzes(_searchQuery);
+                        });
+                      },
+                    ),
+                    const SizedBox(height: 16),
+                  ],
+                ),
+              ),
+            const SizedBox(height: 16),
+            Expanded(
+              child: _quizSearchResults.isEmpty
+                  ? Center(
+                      child: Padding(
+                        padding: const EdgeInsets.all(32.0),
+                        child: Text(
+                          _searchQuery.isEmpty
+                              ? 'Inizia a digitare per cercare...'
+                              : 'Nessun quiz trovato',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: colorScheme.onSurface.withValues(alpha: 0.6),
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    )
+                  : ListView.builder(
+                      padding: const EdgeInsets.all(16.0),
+                      itemCount: _quizSearchResults.length,
+                      itemBuilder: (context, index) {
+                        final quiz = _quizSearchResults[index];
+                        return Card(
+                          margin: const EdgeInsets.only(bottom: 12),
+                          child: InkWell(
+                            onTap: () async {
+                              _searchVisible.value = false;
+                              _searchController.clear();
+                              
+                              await Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => QuizSessionPage(
+                                    quizzes: [quiz],
+                                    selectedCategories: [quiz.categoria],
+                                    setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
+                                    saveResults: false,
+                                  ),
+                                ),
+                              );
+                            },
+                            child: Padding(
+                              padding: const EdgeInsets.all(12.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    quiz.domanda,
+                                    maxLines: 2,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodyLarge
+                                        ?.copyWith(
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                  ),
+                                  const SizedBox(height: 8),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Chip(
+                                        label: Text(
+                                          quiz.categoria,
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            color: colorScheme.onPrimary,
+                                          ),
+                                        ),
+                                        backgroundColor: colorScheme.primary,
+                                      ),
+                                      Container(
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 8,
+                                          vertical: 4,
+                                        ),
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(6),
+                                          color: _getDifficultyColor(
+                                            quiz.difficolta,
+                                            colorScheme,
+                                          ),
+                                        ),
+                                        child: Text(
+                                          quiz.difficolta,
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w600,
+                                            color: colorScheme.onPrimary,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Color _getDifficultyColor(
+    String difficulty,
+    ColorScheme colorScheme,
+  ) {
+    switch (difficulty.toLowerCase()) {
+      case 'facile':
+        return Colors.green;
+      case 'medio':
+        return Colors.orange;
+      case 'difficile':
+        return Colors.red;
+      default:
+        return colorScheme.primary;
+    }
   }
 
   Widget _buildStatsButton(BuildContext context, ColorScheme colorScheme) {
