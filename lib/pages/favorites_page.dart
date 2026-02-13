@@ -1,6 +1,7 @@
 // lib/pages/favorites_page.dart
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/models/formula.dart';
+import 'package:physics_ease_release/models/note.dart';
 import 'package:physics_ease_release/pages/formula_detail_page.dart';
 import 'package:physics_ease_release/widgets/latex_text.dart';
 
@@ -10,6 +11,8 @@ class FavoritesPage extends StatefulWidget {
   final Future<void> Function(String) onToggleFavorite;
   final ThemeMode themeMode;
   final void Function(bool) setGlobalAppBarVisibility;
+  final Map<String, List<Note>> formulaNotes;
+  final Future<void> Function(String, List<Note>)? onSaveNotes;
 
   const FavoritesPage({
     super.key,
@@ -18,6 +21,8 @@ class FavoritesPage extends StatefulWidget {
     required this.onToggleFavorite,
     required this.themeMode,
     required this.setGlobalAppBarVisibility,
+    required this.formulaNotes,
+    required this.onSaveNotes,
   });
 
   @override
@@ -231,6 +236,8 @@ class _FavoritesPageState extends State<FavoritesPage> {
                                 onToggleFavorite: widget.onToggleFavorite,
                                 setGlobalAppBarVisibility:
                                     widget.setGlobalAppBarVisibility,
+                                initialNotes: widget.formulaNotes[formula.id] ?? [],
+                                onSaveNotes: widget.onSaveNotes,
                               ),
                             ),
                           );

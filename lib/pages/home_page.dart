@@ -1,6 +1,7 @@
 // lib/pages/home_page.dart
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/models/formula.dart';
+import 'package:physics_ease_release/models/note.dart';
 import 'package:physics_ease_release/pages/category_formulas_page.dart';
 import 'package:physics_ease_release/pages/formula_detail_page.dart';
 import 'package:physics_ease_release/widgets/latex_text.dart';
@@ -35,6 +36,12 @@ class HomePage extends StatefulWidget {
   // The color scheme currently used in the app
   final ColorScheme colorScheme;
 
+  // Map of formula notes (formulaId -> List of Note objects)
+  final Map<String, List<Note>> formulaNotes;
+
+  // Function to save notes for a formula
+  final Future<void> Function(String, List<Note>)? onSaveNotes;
+
   // Constructor for HomePage with all required parameters
   const HomePage({
     super.key,
@@ -47,6 +54,8 @@ class HomePage extends StatefulWidget {
     required this.setGlobalAppBarVisibility,
     required this.searchBarVisible,
     required this.colorScheme,
+    required this.formulaNotes,
+    required this.onSaveNotes,
   });
 
   @override
@@ -336,6 +345,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                                         themeMode: widget.themeMode,
                                         setGlobalAppBarVisibility:
                                             widget.setGlobalAppBarVisibility,
+                                        formulaNotes: widget.formulaNotes,
+                                        onSaveNotes: widget.onSaveNotes,
                                       ),
                                     ),
                                   );
@@ -418,6 +429,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                                               .contains(formula.id),
                                           onToggleFavorite:
                                               widget.onToggleFavorite,
+                                          initialNotes: widget.formulaNotes[formula.id] ?? [],
+                                          onSaveNotes: widget.onSaveNotes,
                                         ),
                                       ),
                                     );

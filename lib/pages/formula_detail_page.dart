@@ -13,6 +13,7 @@ import 'dart:io';
 import 'dart:developer' as developer;
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 import 'package:physics_ease_release/widgets/latex_text.dart';
+import 'package:physics_ease_release/models/note.dart';
 
 class FormulaDetailPage extends StatefulWidget {
   final Formula formula;
@@ -20,6 +21,8 @@ class FormulaDetailPage extends StatefulWidget {
   final void Function(bool) setGlobalAppBarVisibility;
   final bool isFavorite;
   final Future<void> Function(String) onToggleFavorite;
+  final List<Note> initialNotes;
+  final Future<void> Function(String, List<Note>)? onSaveNotes;
 
   const FormulaDetailPage({
     super.key,
@@ -28,6 +31,8 @@ class FormulaDetailPage extends StatefulWidget {
     required this.isFavorite,
     required this.onToggleFavorite,
     required this.setGlobalAppBarVisibility,
+    this.initialNotes = const [],
+    this.onSaveNotes,
   });
 
   @override
@@ -37,16 +42,46 @@ class FormulaDetailPage extends StatefulWidget {
 class _FormulaDetailPageState extends State<FormulaDetailPage> {
   late bool _isFavorite;
   final TextEditingController _chatInputController = TextEditingController();
+  final List<TextEditingController> _noteTitleControllers = [];
+  final List<TextEditingController> _noteContentControllers = [];
+  final List<FocusNode> _noteTitleFocusNodes = [];
+  final List<FocusNode> _noteContentFocusNodes = [];
+  final List<bool> _noteEditingStates = [];
   final ScreenshotController _screenshotController = ScreenshotController();
+  bool _hasUnsavedChanges = false;
 
   @override
   void initState() {
     super.initState();
     _isFavorite = widget.isFavorite;
+    _initializeNotes();
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       widget.setGlobalAppBarVisibility(false);
     });
+  }
+
+  void _initializeNotes() {
+    final initialNotes = widget.initialNotes;
+    for (final note in initialNotes) {
+      _addNoteController(note);
+    }
+  }
+
+  void _addNoteController(Note note) {
+    final titleController = TextEditingController(text: note.title);
+    final contentController = TextEditingController(text: note.content);
+    final titleFocusNode = FocusNode();
+    final contentFocusNode = FocusNode();
+    
+    titleController.addListener(_onNoteChanged);
+    contentController.addListener(_onNoteChanged);
+    
+    _noteTitleControllers.add(titleController);
+    _noteContentControllers.add(contentController);
+    _noteTitleFocusNodes.add(titleFocusNode);
+    _noteContentFocusNodes.add(contentFocusNode);
+    _noteEditingStates.add(note.content.isEmpty && note.title.isEmpty);
   }
 
   @override
@@ -62,7 +97,133 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
   @override
   void dispose() {
     _chatInputController.dispose();
+    for (var controller in _noteTitleControllers) {
+      controller.removeListener(_onNoteChanged);
+      controller.dispose();
+    }
+    for (var controller in _noteContentControllers) {
+      controller.removeListener(_onNoteChanged);
+      controller.dispose();
+    }
+    for (var focusNode in _noteTitleFocusNodes) {
+      focusNode.dispose();
+    }
+    for (var focusNode in _noteContentFocusNodes) {
+      focusNode.dispose();
+    }
     super.dispose();
+  }
+
+  void _onNoteChanged() {
+    final currentNotes = _getAllNotes();
+    final hasChanged = currentNotes != widget.initialNotes;
+    if (hasChanged != _hasUnsavedChanges) {
+      setState(() {
+        _hasUnsavedChanges = hasChanged;
+      });
+    }
+  }
+
+  List<Note> _getAllNotes() {
+    final notes = <Note>[];
+    for (int i = 0; i < _noteTitleControllers.length; i++) {
+      final title = _noteTitleControllers[i].text.trim();
+      final content = _noteContentControllers[i].text.trim();
+      
+      if (content.isNotEmpty) {
+        notes.add(Note(title: title, content: content));
+      }
+    }
+    return notes;
+  }
+
+  void _addNewNote() {
+    setState(() {
+      _addNoteController(Note(title: '', content: ''));
+    });
+    Future.delayed(const Duration(milliseconds: 100), () {
+      if (_noteContentFocusNodes.isNotEmpty) {
+        _noteContentFocusNodes.last.requestFocus();
+      }
+    });
+  }
+
+  void _removeNoteAt(int index) {
+    setState(() {
+      _noteTitleControllers[index].dispose();
+      _noteContentControllers[index].dispose();
+      _noteTitleFocusNodes[index].dispose();
+      _noteContentFocusNodes[index].dispose();
+      _noteTitleControllers.removeAt(index);
+      _noteContentControllers.removeAt(index);
+      _noteTitleFocusNodes.removeAt(index);
+      _noteContentFocusNodes.removeAt(index);
+      _noteEditingStates.removeAt(index);
+      _hasUnsavedChanges = true;
+    });
+  }
+
+  Future<void> _saveNote() async {
+    if (widget.onSaveNotes != null) {
+      final notes = _getAllNotes();
+      await widget.onSaveNotes!(widget.formula.id, notes);
+      setState(() {
+        _hasUnsavedChanges = false;
+        for (int i = 0; i < _noteEditingStates.length; i++) {
+          _noteEditingStates[i] = false;
+        }
+      });
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Note salvate con successo'),
+            duration: Duration(seconds: 2),
+          ),
+        );
+      }
+    }
+    for (var focusNode in _noteTitleFocusNodes) {
+      focusNode.unfocus();
+    }
+    for (var focusNode in _noteContentFocusNodes) {
+      focusNode.unfocus();
+    }
+  }
+
+  void _editNoteAt(int index) {
+    setState(() {
+      _noteEditingStates[index] = true;
+      _hasUnsavedChanges = true;
+    });
+    Future.delayed(const Duration(milliseconds: 100), () {
+      _noteContentFocusNodes[index].requestFocus();
+    });
+  }
+
+  void _cancelNoteEdit() {
+    setState(() {
+      for (var controller in _noteTitleControllers) {
+        controller.removeListener(_onNoteChanged);
+        controller.dispose();
+      }
+      for (var controller in _noteContentControllers) {
+        controller.removeListener(_onNoteChanged);
+        controller.dispose();
+      }
+      for (var focusNode in _noteTitleFocusNodes) {
+        focusNode.dispose();
+      }
+      for (var focusNode in _noteContentFocusNodes) {
+        focusNode.dispose();
+      }
+      _noteTitleControllers.clear();
+      _noteContentControllers.clear();
+      _noteTitleFocusNodes.clear();
+      _noteContentFocusNodes.clear();
+      _noteEditingStates.clear();
+      _initializeNotes();
+      _hasUnsavedChanges = false;
+    });
   }
 
   Future<void> _toggleLocalFavorite() async {
@@ -333,6 +494,7 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                       ),
                     ),
                   ),
+                _buildNotesSection(colorScheme, textTheme),
                 if (widget.formula.paroleChiave.isNotEmpty)
                   _buildSectionCard(
                     title: 'Parole chiave',
@@ -399,6 +561,229 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
             content,
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildNotesSection(ColorScheme colorScheme, TextTheme textTheme) {
+    return Card(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      elevation: 2,
+      color: colorScheme.surfaceContainer,
+      margin: const EdgeInsets.symmetric(vertical: 8),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Text(
+                  'Note',
+                  style: textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const Spacer(),
+                if (_hasUnsavedChanges) ...[
+                  TextButton.icon(
+                    onPressed: _cancelNoteEdit,
+                    icon: const Icon(Icons.close, size: 18),
+                    label: const Text('Annulla'),
+                    style: TextButton.styleFrom(
+                      foregroundColor: colorScheme.error,
+                    ),
+                  ),
+                  const SizedBox(width: 4),
+                  FilledButton.icon(
+                    onPressed: _saveNote,
+                    icon: const Icon(Icons.save, size: 18),
+                    label: const Text('Salva'),
+                    style: FilledButton.styleFrom(
+                      backgroundColor: colorScheme.primary,
+                    ),
+                  ),
+                ],
+                const SizedBox(width: 4),
+                IconButton(
+                  onPressed: _addNewNote,
+                  icon: const Icon(Icons.add_circle_outline, size: 22),
+                  tooltip: 'Aggiungi nota',
+                  color: colorScheme.primary,
+                ),
+              ],
+            ),
+            if (_noteTitleControllers.isNotEmpty) ...[
+              const SizedBox(height: 12),
+              ...List.generate(_noteTitleControllers.length, (index) {
+                final isEditing = _noteEditingStates[index];
+                final hasContent = _noteContentControllers[index].text.trim().isNotEmpty;
+                
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 16),
+                  child: isEditing
+                      ? _buildEditingNote(index, colorScheme, textTheme)
+                      : hasContent
+                          ? _buildViewNote(index, colorScheme, textTheme)
+                          : _buildEditingNote(index, colorScheme, textTheme),
+                );
+              }),
+            ],
+            if (_hasUnsavedChanges)
+              Padding(
+                padding: const EdgeInsets.only(top: 4),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.info_outline,
+                      size: 14,
+                      color: colorScheme.primary,
+                    ),
+                    const SizedBox(width: 4),
+                    Text(
+                      'Hai modifiche non salvate',
+                      style: textTheme.bodySmall?.copyWith(
+                        color: colorScheme.primary,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildEditingNote(int index, ColorScheme colorScheme, TextTheme textTheme) {
+    return Container(
+      decoration: BoxDecoration(
+        color: colorScheme.surfaceContainerLow,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(
+          color: colorScheme.outline.withValues(alpha: 0.2),
+          width: 1,
+        ),
+      ),
+      padding: const EdgeInsets.all(12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Expanded(
+                child: TextField(
+                  controller: _noteTitleControllers[index],
+                  focusNode: _noteTitleFocusNodes[index],
+                  maxLines: 1,
+                  decoration: InputDecoration(
+                    hintText: 'Titolo della nota (opzionale)',
+                    hintStyle: textTheme.bodyMedium?.copyWith(
+                      color: colorScheme.onSurfaceVariant.withValues(alpha: 0.6),
+                    ),
+                    border: InputBorder.none,
+                    contentPadding: EdgeInsets.zero,
+                    isDense: true,
+                  ),
+                  style: textTheme.bodyMedium?.copyWith(
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+              IconButton(
+                onPressed: () => _removeNoteAt(index),
+                icon: const Icon(Icons.delete_outline, size: 20),
+                tooltip: 'Elimina nota',
+                color: colorScheme.error,
+                padding: EdgeInsets.zero,
+                constraints: const BoxConstraints(
+                  minWidth: 32,
+                  minHeight: 32,
+                ),
+              ),
+            ],
+          ),
+          const Divider(height: 16),
+          TextField(
+            controller: _noteContentControllers[index],
+            focusNode: _noteContentFocusNodes[index],
+            maxLines: null,
+            minLines: 3,
+            decoration: InputDecoration(
+              hintText: 'Scrivi qui la tua nota...',
+              hintStyle: textTheme.bodyMedium?.copyWith(
+                color: colorScheme.onSurfaceVariant.withValues(alpha: 0.6),
+              ),
+              border: InputBorder.none,
+              contentPadding: EdgeInsets.zero,
+              isDense: true,
+            ),
+            style: textTheme.bodyMedium,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildViewNote(int index, ColorScheme colorScheme, TextTheme textTheme) {
+    final title = _noteTitleControllers[index].text.trim();
+    final content = _noteContentControllers[index].text.trim();
+    
+    return Container(
+      decoration: BoxDecoration(
+        color: colorScheme.surfaceContainerHigh,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(
+          color: colorScheme.primary.withValues(alpha: 0.2),
+          width: 1,
+        ),
+      ),
+      padding: const EdgeInsets.all(12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    if (title.isNotEmpty) ...[
+                      Text(
+                        title,
+                        style: textTheme.bodyMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: colorScheme.onSurface,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                    ],
+                    Text(
+                      content,
+                      style: textTheme.bodyMedium?.copyWith(
+                        color: colorScheme.onSurfaceVariant,
+                        height: 1.5,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              IconButton(
+                onPressed: () => _editNoteAt(index),
+                icon: const Icon(Icons.edit_outlined, size: 18),
+                tooltip: 'Modifica nota',
+                color: colorScheme.primary,
+                padding: EdgeInsets.zero,
+                constraints: const BoxConstraints(
+                  minWidth: 32,
+                  minHeight: 32,
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
