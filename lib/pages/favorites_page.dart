@@ -42,8 +42,8 @@ class _FavoritesPageState extends State<FavoritesPage> {
         color: Theme.of(context).colorScheme.error,
         borderRadius: BorderRadius.circular(12),
       ),
-      alignment: Alignment.centerLeft,
-      padding: const EdgeInsets.only(left: 20),
+      alignment: Alignment.centerRight,
+      padding: const EdgeInsets.only(right: 20),
       child: Icon(
         Icons.delete_outline,
         color: Theme.of(context).colorScheme.onError,
@@ -162,7 +162,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 4.0),
           child: Dismissible(
             key: Key(formula.id),
-            direction: DismissDirection.startToEnd,
+            direction: DismissDirection.endToStart,
             onDismissed: (_) {
               _handleFavoriteDismissed(formula);
             },
@@ -249,14 +249,14 @@ class _FavoritesPageState extends State<FavoritesPage> {
                     ),
                   ),
                   builder: (context, progress, child) {
-                    final translatedDx = constraints.maxWidth * 1.15 * progress;
+                    final translatedDx = -constraints.maxWidth * 1.15 * progress;
 
                     return Stack(
                       children: [
                         if (progress > 0)
                           Positioned.fill(
                             child: Align(
-                              alignment: Alignment.centerLeft,
+                              alignment: Alignment.centerRight,
                               child: SizedBox(
                                 width: constraints.maxWidth * progress,
                                 child: _buildDismissBackground(context),
