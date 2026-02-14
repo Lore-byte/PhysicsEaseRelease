@@ -5,16 +5,22 @@ PhysicsEase è l'app definitiva per chiunque studi o lavori nel mondo della fisi
 ## 🚀 Caratteristiche principali
 
 - **Raccolta interattiva di formule**: Naviga tra le principali formule della fisica suddivise per argomento (meccanica, elettromagnetismo, termodinamica, ecc.) con spiegazioni chiare e immediate.
+- **Quiz**: Metti alla prova le tue conoscenze con quiz dedicati e statistiche dei risultati.
 - **Aggiunta formule personalizzate**: Inserisci e salva le tue formule fisiche personalizzate tramite un'interfaccia semplice e intuitiva.
-- **Calcolatrice fisica integrata**: Inserisci i dati e ottieni subito il risultato! L'app fa i conti per te.
-- **Risolutore di equazioni**: Risolvi equazioni algebriche e fisiche con strumenti dedicati.
-- **Visualizzatore di grafici**: Traccia funzioni matematiche e visualizza i grafici direttamente nell'app.
+- **Note alle formule**: Aggiungi note personali alle formule per ricordare passaggi, dettagli o esempi.
+- **Preferiti**: Salva formule e contenuti utili tra i preferiti per ritrovarli al volo.
 - **Database di costanti fisiche**: Tutte le costanti più importanti (G, h, c, k, ecc.) sempre aggiornate e facilmente consultabili.
-- **Convertitore di unità**: Converti istantaneamente tra diverse unità di misura (energia, lunghezza, massa, temperatura, ecc.).
 - **Unità di misura dettagliate**: Esplora le unità più comuni in ambito fisico.
 - **Sistema Solare**: Scopri dati e proprietà fisiche dei pianeti.
 - **Tavola periodica**: Esplora gli elementi chimici e le loro caratteristiche.
 - **Alfabeto greco**: Consulta le lettere greche usate comunemente in fisica e matematica.
+- **Fisici famosi**: Scopri scienziati e scoperte che hanno segnato la storia della fisica.
+- **Calcolatrice integrata**: Inserisci i dati e ottieni subito il risultato! L'app fa i conti per te.
+- **Convertitore di unità**: Converti istantaneamente tra diverse unità di misura (energia, lunghezza, massa, temperatura, ecc.).
+- **Risolutore di equazioni**: Risolvi equazioni algebriche e fisiche con strumenti dedicati.
+- **Visualizzatore di grafici**: Traccia funzioni matematiche e visualizza i grafici direttamente nell'app.
+- **Calcolatore vettoriale**: Esegui operazioni su vettori in modo rapido.
+- **Sensori del dispositivo**: Esplora i dati dei sensori disponibili (dove supportato).
 
 ## 🎯 Per chi è pensata
 
