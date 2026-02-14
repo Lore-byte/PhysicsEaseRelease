@@ -462,6 +462,54 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
+  // Builds a card-style drawer item
+  Widget _buildDrawerCard({
+    required BuildContext context,
+    required IconData icon,
+    required String title,
+    required ColorScheme colorScheme,
+    VoidCallback? onTap,
+    Widget? trailing,
+  }) {
+    return Card(
+      margin: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(28)),
+      elevation: 4,
+      color: colorScheme.surfaceContainerHighest,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(28),
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
+          child: Row(
+            children: [
+              Icon(icon, size: 28, color: colorScheme.primary),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Text(
+                  title,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                    color: colorScheme.onSurface,
+                  ),
+                ),
+              ),
+              if (trailing != null)
+                trailing
+              else if (onTap != null)
+                Icon(
+                  Icons.chevron_right,
+                  color: colorScheme.onSurfaceVariant,
+                  size: 20,
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   // Builds the floating bottom navigation bar
   Widget _buildFloatingNavBar(ColorScheme colorScheme) {
     final shadowColor = AppTheme.shadowForTheme(_themeMode, alpha: 0.8);
@@ -583,12 +631,13 @@ class _MyAppState extends State<MyApp> {
                 bottomRight: Radius.circular(36),
               ),
             ),
-            child: Column(
+            child: ListView(
+              padding: EdgeInsets.zero,
               children: [
                 // Drawer header with app title
                 Container(
                   width: double.infinity,
-                  height: 256,
+                  height: 200,
                   clipBehavior: Clip.antiAlias,
                   decoration: BoxDecoration(
                     color: currentColorScheme.primaryContainer,
@@ -599,20 +648,20 @@ class _MyAppState extends State<MyApp> {
                   ),
                   child: Center(
                     child: Padding(
-                      padding: const EdgeInsets.only(top: 64),
+                      padding: const EdgeInsets.only(top: 48),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(36),
                         child: Image.asset(
                           _themeMode == ThemeMode.dark
                               ? 'assets/my_logo_dark.png'
                               : 'assets/my_logo_light.png',
-                          width: 150,
-                          height: 150,
+                          width: 120,
+                          height: 120,
                           fit: BoxFit.cover,
                           errorBuilder: (context, error, stackTrace) {
                             return Icon(
                               Icons.image,
-                              size: 120,
+                              size: 100,
                               color: currentColorScheme.onPrimaryContainer,
                             );
                           },
@@ -621,7 +670,9 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                 ),
+
                 const SizedBox(height: 16),
+
                 // Theme toggle option
                 ListTile(
                   leading: Icon(
@@ -712,12 +763,27 @@ class _MyAppState extends State<MyApp> {
                   endIndent: 16,
                 ),
 
-                const SizedBox(height: 16),
+                const SizedBox(height: 20),
 
-                // Help page link
-                ListTile(
-                  leading: Icon(Icons.help, color: currentColorScheme.primary),
-                  title: const Text('Aiuto'),
+                // Sezione Supporto
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text(
+                    'Supporto',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                      color: currentColorScheme.primary,
+                      letterSpacing: 1.2,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                _buildDrawerCard(
+                  context: builderContext,
+                  icon: Icons.help_outline,
+                  title: 'Aiuto',
+                  colorScheme: currentColorScheme,
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
@@ -729,13 +795,11 @@ class _MyAppState extends State<MyApp> {
                     );
                   },
                 ),
-
-                ListTile(
-                  leading: Icon(
-                    Icons.favorite,
-                    color: currentColorScheme.primary,
-                  ),
-                  title: const Text('Dona ora'),
+                _buildDrawerCard(
+                  context: builderContext,
+                  icon: Icons.favorite_outline,
+                  title: 'Dona ora',
+                  colorScheme: currentColorScheme,
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
@@ -747,13 +811,11 @@ class _MyAppState extends State<MyApp> {
                     );
                   },
                 ),
-                // Collaborate page link
-                ListTile(
-                  leading: Icon(
-                    Icons.handshake,
-                    color: currentColorScheme.primary,
-                  ),
-                  title: const Text('Collabora'),
+                _buildDrawerCard(
+                  context: builderContext,
+                  icon: Icons.handshake_outlined,
+                  title: 'Collabora',
+                  colorScheme: currentColorScheme,
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
@@ -766,10 +828,27 @@ class _MyAppState extends State<MyApp> {
                   },
                 ),
 
-                // Info page link
-                ListTile(
-                  leading: Icon(Icons.info, color: currentColorScheme.primary),
-                  title: const Text('Info'),
+                const SizedBox(height: 24),
+
+                // Sezione Informazioni
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text(
+                    'Informazioni',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                      color: currentColorScheme.primary,
+                      letterSpacing: 1.2,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                _buildDrawerCard(
+                  context: builderContext,
+                  icon: Icons.info_outline,
+                  title: 'Info',
+                  colorScheme: currentColorScheme,
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
@@ -781,14 +860,11 @@ class _MyAppState extends State<MyApp> {
                     );
                   },
                 ),
-
-                // Privacy policy page link
-                ListTile(
-                  leading: Icon(
-                    Icons.policy,
-                    color: currentColorScheme.primary,
-                  ),
-                  title: const Text('Privacy Policy'),
+                _buildDrawerCard(
+                  context: builderContext,
+                  icon: Icons.policy_outlined,
+                  title: 'Privacy Policy',
+                  colorScheme: currentColorScheme,
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
@@ -800,14 +876,11 @@ class _MyAppState extends State<MyApp> {
                     );
                   },
                 ),
-
-                // License page link
-                ListTile(
-                  leading: Icon(
-                    Icons.copyright,
-                    color: currentColorScheme.primary,
-                  ),
-                  title: const Text('Licenza'),
+                _buildDrawerCard(
+                  context: builderContext,
+                  icon: Icons.copyright_outlined,
+                  title: 'Licenza',
+                  colorScheme: currentColorScheme,
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
@@ -819,6 +892,8 @@ class _MyAppState extends State<MyApp> {
                     );
                   },
                 ),
+
+                const SizedBox(height: 20),
               ],
             ),
           ),
