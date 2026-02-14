@@ -59,13 +59,14 @@ class _OnboardingPageState extends State<OnboardingPage> {
   Widget build(BuildContext context) {
     final primaryColor = Theme.of(context).colorScheme.primary;
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    const double arrowButtonSize = 56;
 
     // Definisci qui le pagine per poter calcolare l'ultima pagina in build
     final pages = <PageViewModel>[
       PageViewModel(
         title: "PhysicsEase ⚡",
         body:
-        "Benvenuto in PhysicsEase! La tua app completa per lo studio della fisica con formule, quiz interattivi, strumenti avanzati e dati scientifici.",
+            "Benvenuto in PhysicsEase! La tua app completa per lo studio della fisica con formule, quiz interattivi, strumenti avanzati e dati scientifici.",
         image: _buildAnimatedIcon(
           icon: Icons.school_rounded,
           color: primaryColor,
@@ -95,7 +96,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       PageViewModel(
         title: "Quiz interattivi",
         body:
-        "Metti alla prova le tue conoscenze con migliaia di quiz! Scegli la categoria, il livello di difficoltà e il numero di domande. Tieni traccia dei tuoi progressi con statistiche dettagliate.",
+            "Metti alla prova le tue conoscenze con migliaia di quiz! Scegli la categoria, il livello di difficoltà e il numero di domande. Tieni traccia dei tuoi progressi con statistiche dettagliate.",
         image: _buildAnimatedIcon(
           icon: Icons.quiz_rounded,
           color: const Color(0xFFFF6B6B),
@@ -125,7 +126,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       PageViewModel(
         title: "Formule e ricerca",
         body:
-        "Accedi a centinaia di formule di fisica organizzate per categoria. Usa la ricerca avanzata per trovare rapidamente ciò che ti serve. Aggiungi note personali!",
+            "Accedi a centinaia di formule di fisica organizzate per categoria. Usa la ricerca avanzata per trovare rapidamente ciò che ti serve. Aggiungi note personali!",
         image: _buildAnimatedIcon(
           icon: Icons.calculate_rounded,
           color: const Color(0xFF4ECDC4),
@@ -155,7 +156,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       PageViewModel(
         title: "Sempre offline",
         body:
-        "PhysicsEase funziona completamente offline! Studia ovunque tu sia: formule, quiz, strumenti e dati sono sempre disponibili senza connessione internet.",
+            "PhysicsEase funziona completamente offline! Studia ovunque tu sia: formule, quiz, strumenti e dati sono sempre disponibili senza connessione internet.",
         image: _buildAnimatedIcon(
           icon: Icons.wifi_off_rounded,
           color: const Color(0xFF9B59B6),
@@ -185,7 +186,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       PageViewModel(
         title: "Preferiti",
         body:
-        "Salva le tue formule preferite per accedervi rapidamente. Crea e gestisci le tue formule personalizzate nella sezione 'Strumenti'. Organizza il tuo studio!",
+            "Salva le tue formule preferite per accedervi rapidamente. Crea e gestisci le tue formule personalizzate nella sezione 'Strumenti'. Organizza il tuo studio!",
         image: _buildAnimatedIcon(
           icon: Icons.star_rounded,
           color: const Color(0xFFFFA502),
@@ -215,7 +216,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       PageViewModel(
         title: "Strumenti potenti",
         body:
-        "Calcolatrice scientifica, convertitore di unità, risolutore di equazioni, visualizzatore di grafici, calcolatore vettoriale e molto altro in un'unica app.",
+            "Calcolatrice scientifica, convertitore di unità, risolutore di equazioni, visualizzatore di grafici, calcolatore vettoriale e molto altro in un'unica app.",
         image: _buildAnimatedIcon(
           icon: Icons.build_rounded,
           color: const Color(0xFF3498DB),
@@ -245,7 +246,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       PageViewModel(
         title: "Sensori real-time",
         body:
-        "Utilizza i sensori del tuo dispositivo per esperimenti in tempo reale! Accelerometro, giroscopio e magnetometro con grafici in tempo reale per visualizzare i dati.",
+            "Utilizza i sensori del tuo dispositivo per esperimenti in tempo reale! Accelerometro, giroscopio e magnetometro con grafici in tempo reale per visualizzare i dati.",
         image: _buildAnimatedIcon(
           icon: Icons.sensors_rounded,
           color: const Color(0xFFE74C3C),
@@ -275,7 +276,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       PageViewModel(
         title: "Dati scientifici",
         body:
-        "Costanti fisiche, dati sui pianeti del sistema solare, tavola periodica degli elementi, biografie di fisici famosi, alfabeto greco e unità di misura. Tutto a portata di mano!",
+            "Costanti fisiche, dati sui pianeti del sistema solare, tavola periodica degli elementi, biografie di fisici famosi, alfabeto greco e unità di misura. Tutto a portata di mano!",
         image: _buildAnimatedIcon(
           icon: Icons.science_rounded,
           color: const Color(0xFF1ABC9C),
@@ -311,14 +312,19 @@ class _OnboardingPageState extends State<OnboardingPage> {
       // Aggiorna l'indice corrente per cambiare "Salta" -> "Inizia"
       onChange: (index) => setState(() => _currentIndex = index), // top-right
       // Callbacks
-      onDone: widget.onFinished, // usato solo se riattivi Done
-      onSkip: widget.onFinished, // non mostrato (skip nascosto)
+      onDone: () {},
+      onSkip: () {},
       // Mostra solo frecce in basso
       showBackButton: true,
-      showSkipButton: false,
-      showDoneButton: false,
+      showSkipButton: true,
+      showDoneButton: true,
+      skip: IgnorePointer(
+        child: SizedBox(width: arrowButtonSize, height: arrowButtonSize),
+      ),
       back: Container(
-        padding: const EdgeInsets.all(8),
+        width: arrowButtonSize,
+        height: arrowButtonSize,
+        alignment: Alignment.center,
         decoration: BoxDecoration(
           color: primaryColor.withOpacity(0.1),
           borderRadius: BorderRadius.circular(12),
@@ -326,7 +332,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
         child: Icon(Icons.arrow_back_rounded, color: primaryColor, size: 28),
       ),
       next: Container(
-        padding: const EdgeInsets.all(8),
+        width: arrowButtonSize,
+        height: arrowButtonSize,
+        alignment: Alignment.center,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [primaryColor, primaryColor.withOpacity(0.8)],
@@ -340,24 +348,31 @@ class _OnboardingPageState extends State<OnboardingPage> {
             ),
           ],
         ),
-        child: const Icon(Icons.arrow_forward_rounded, color: Colors.white, size: 28),
+        child: const Icon(
+          Icons.arrow_forward_rounded,
+          color: Colors.white,
+          size: 28,
+        ),
+      ),
+      done: IgnorePointer(
+        child: SizedBox(width: arrowButtonSize, height: arrowButtonSize),
       ),
       // Dots e layout in basso
       skipOrBackFlex: 0,
       nextFlex: 0,
       dotsFlex: 2,
-      controlsPadding: const EdgeInsets.fromLTRB(16, 12, 16, 98),
+      controlsPadding: const EdgeInsets.fromLTRB(24, 12, 24, 98),
       baseBtnStyle: TextButton.styleFrom(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0),
-        minimumSize: const Size(0, 40),
-        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        padding: EdgeInsets.zero,
+        minimumSize: const Size(arrowButtonSize, arrowButtonSize),
+        tapTargetSize: MaterialTapTargetSize.padded,
       ),
       // Header in alto a destra: Salta/Inizia
       globalHeader: SafeArea(
         child: Align(
           alignment: Alignment.topRight,
           child: Padding(
-            padding: const EdgeInsets.only(top: 16.0, right: 16.0),
+            padding: const EdgeInsets.only(top: 16.0, right: 24.0),
             child: Container(
               decoration: BoxDecoration(
                 color: isLastPage
@@ -377,7 +392,10 @@ class _OnboardingPageState extends State<OnboardingPage> {
               child: TextButton(
                 onPressed: widget.onFinished,
                 style: TextButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 24,
+                    vertical: 12,
+                  ),
                 ),
                 child: Text(
                   isLastPage ? "Inizia" : "Salta",
