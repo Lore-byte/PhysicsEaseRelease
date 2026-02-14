@@ -854,7 +854,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Con $\\alpha$=90°, $F = qvB$ = 2·10^-6·3·10^5·0.2 = 0.12 N (quindi 0.12 N è corretto). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "calcolo",
         "qvB",
@@ -875,7 +875,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il risultato è F = 0.12 N. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "correzione",
         "0.12N",
@@ -896,7 +896,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Con v ⟂ B, la forza magnetica è perpendicolare alla velocità e può curvare la traiettoria in moto circolare. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto circolare",
         "carica",
@@ -917,7 +917,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "A parità di v e q, aumentando B aumenta la forza qvB e la curvatura: il raggio diminuisce. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "raggio",
         "B raddoppia",
@@ -938,7 +938,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Con B perpendicolare, $\\Phi$ = B·A = 0.30·0.050 = 0.015 Wb. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "flusso",
         "BA",
@@ -948,9 +948,9 @@
     },
     {
       "id": "mag_046",
-      "domanda": "Una bobina di N = 50 spire subisce una variazione di flusso per spira da 0.020 Wb a 0.005 Wb in 0.10 s. Quanto vale la f.e.m. media indotta (in modulo)?",
+      "domanda": "Una bobina di N = 50 spire subisce una variazione di flusso per spira da 0.020 Wb a 0.005 Wb in 0.10 s. Quanto vale la f.e.m. medio indotta (in modulo)?",
       "categoria": "Magnetismo",
-      "sottocategoria": "Faraday (f.e.m. media)",
+      "sottocategoria": "Faraday (f.e.m. medio)",
       "opzioni": [
         "7.5 V",
         "2.5 V",
@@ -958,10 +958,10 @@
         "75 V"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "$\\varepsilon$_media = N·|$\\Delta$Φ|/Δt = 50·|0.005-0.020|/0.10 = 7.5 V. ",
-      "difficolta": "media",
+      "spiegazione": "$\\varepsilon$_medio = N·|$\\Delta$Φ|/Δt = 50·|0.005-0.020|/0.10 = 7.5 V. ",
+      "difficolta": "medio",
       "paroleChiave": [
-        "fem media",
+        "fem medio",
         "N spire",
         "deltaPhi",
         "faraday"
@@ -980,7 +980,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Lenz: la corrente indotta genera un campo magnetico indotto che si oppone alla variazione del flusso. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lenz",
         "corrente indotta",
@@ -1001,7 +1001,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "B = $\\mu$0 I/(2πr) = (4$\\pi$·10^-7·5)/(2$\\pi$·0.1) = 1.0·10^-5 T. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "filo",
         "campo",
@@ -1022,7 +1022,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "B $\\approx \\mu$0 N I/L = (4$\\pi$·10^-7)·200·2/0.5 $\\approx$ 1.0·10^-3 T (ordine di grandezza millitesla). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "solenoide",
         "B=mu0NI/L",
@@ -1043,7 +1043,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Inserendo i dati in B $\\approx \\mu$0 N I/L si ottiene un valore dell'ordine di 10^-3 T. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "correzione",
         "ordine di grandezza",
@@ -1064,7 +1064,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La forza magnetica è perpendicolare alla velocità (direzione da v e B), quindi può deviare senza “spingere” lungo v. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "perpendicolare",
         "deviazione",
@@ -1074,9 +1074,9 @@
     },
     {
       "id": "mag_052",
-      "domanda": "Una bobina ha N = 100 spire. Il flusso per spira varia linearmente da 0.010 Wb a 0.040 Wb in 2 s. f.e.m. media (in modulo)?",
+      "domanda": "Una bobina ha N = 100 spire. Il flusso per spira varia linearmente da 0.010 Wb a 0.040 Wb in 2 s. f.e.m. medio (in modulo)?",
       "categoria": "Magnetismo",
-      "sottocategoria": "Faraday (f.e.m. media)",
+      "sottocategoria": "Faraday (f.e.m. medio)",
       "opzioni": [
         "1.5 V",
         "3.0 V",
@@ -1085,7 +1085,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$\\varepsilon$ = N·|$\\Delta$Φ|/Δt = 100·(0.030)/2 = 1.5 V. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "bobina",
         "fem",
@@ -1106,7 +1106,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il flusso magnetico tiene conto dell'angolo di incidenza del campo sulla superficie, quindi può variare se cambia l'orientazione. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "flusso",
         "angolo",
@@ -1127,7 +1127,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Poiché B $\\propto 1/r$, passando a una distanza 4 volte maggiore (0.05→0.20) il campo diventa 1/4. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "1/r",
         "fattore 4",
@@ -1148,7 +1148,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "F $\\propto$ sinα: sin30° = 1/2, quindi la forza è metà rispetto al caso $\\alpha$ = 90°. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "sin30",
         "angolo",
@@ -1169,7 +1169,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "A parità di resistenza, una f.e.m. indotta più grande produce una corrente più grande (I = $\\varepsilon$/R).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "corrente indotta",
         "Ohm",
@@ -1190,7 +1190,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per un solenoide con nucleo, L aumenta con μr (ad esempio L = $\\mu$0·μr·n²·l·S). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "induttanza",
         "mu_r",
@@ -1211,7 +1211,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Per un solenoide ideale, L cresce con N² e con la sezione e diminuisce con la lunghezza (forma tipica L = $\\mu$0 N² S / l). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "L",
         "N^2",
@@ -1232,7 +1232,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nell'autoinduzione la f.e.m. autoindotta è $\\varepsilon$ = -L (dI/dt). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "autoinduzione",
         "fem",
@@ -1253,7 +1253,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L'energia immagazzinata in un induttore vale U = (1/2)·L·I². ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia",
         "induttore",
@@ -1274,7 +1274,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "U = 1/2 L I² = 0.5·0.50·(2.0)² = 1.0 J. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia",
         "joule",
@@ -1295,7 +1295,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L = $\\mu$0 N² S / l $\\approx$ (4$\\pi$·10^-7)·(2.5·10^5)·(2.0·10^-4)/0.20 $\\approx$ 3.1·10^-4 H (ordine 10^-4–10^-3 H). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "induttanza",
         "mu0",
@@ -1316,7 +1316,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Usando L = $\\mu$0 N² S / l con i dati forniti si ottiene un valore dell'ordine di 10^-4 H. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "correzione",
         "ordine",
@@ -1326,7 +1326,7 @@
     },
     {
       "id": "mag_064",
-      "domanda": "Una bobina con L = 0.20 H vede la corrente crescere da 1 A a 3 A in 0.5 s. Qual è la f.e.m. autoindotta media (in modulo)?",
+      "domanda": "Una bobina con L = 0.20 H vede la corrente crescere da 1 A a 3 A in 0.5 s. Qual è la f.e.m. autoindotta medio (in modulo)?",
       "categoria": "Magnetismo",
       "sottocategoria": "Autoinduzione (calcolo)",
       "opzioni": [
@@ -1337,7 +1337,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$\\varepsilon$ = L·|ΔI|/Δt = 0.20·(2/0.5) = 0.8 V. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "autoinduzione",
         "dI/dt",
@@ -1358,7 +1358,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La legge di Lenz implica che la f.e.m. (anche autoindotta) si oppone al cambiamento che la genera, quindi si oppone all'aumento di corrente. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lenz",
         "autoinduzione",
@@ -1379,7 +1379,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per il solenoide ideale L $\\propto$ N², quindi raddoppiando N l'induttanza quadruplica. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "N^2",
         "spire",
@@ -1400,7 +1400,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Poiché U = (1/2)LI², raddoppiare I fa crescere U di un fattore 4. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia",
         "I^2",
@@ -1421,7 +1421,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il flusso magnetico è proporzionale a B e all'area (tenendo conto dell'angolo), quindi raddoppiando B raddoppia $\\Phi$. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "flusso",
         "proporzionale",
@@ -1442,7 +1442,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$\\Phi$ = BAcosθ: inizialmente 0.50·0.020·cos0 = 0.010 Wb, poi 0.50·0.020·cos60 = 0.005 Wb. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "BAcos",
         "cos60",
@@ -1452,9 +1452,9 @@
     },
     {
       "id": "mag_070",
-      "domanda": "Se una spira subisce una variazione di flusso |$\\Delta$Φ| in un tempo Δt, la f.e.m. media (modulo) è:",
+      "domanda": "Se una spira subisce una variazione di flusso |$\\Delta$Φ| in un tempo Δt, la f.e.m. medio (modulo) è:",
       "categoria": "Magnetismo",
-      "sottocategoria": "Formula f.e.m. media",
+      "sottocategoria": "Formula f.e.m. medio",
       "opzioni": [
         "$\\varepsilon$ = |$\\Delta$Φ|/Δt",
         "$\\varepsilon$ = |Δt|/$\\Delta$Φ",
@@ -1462,10 +1462,10 @@
         "$\\varepsilon$ = $\\Phi$/Δt²"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "La forma media della legge di Faraday per una spira è $|\\varepsilon| = \\frac{|\\Delta\\Phi|}{\\Delta t}$. ",
-      "difficolta": "media",
+      "spiegazione": "La forma medio della legge di Faraday per una spira è $|\\varepsilon| = \\frac{|\\Delta\\Phi|}{\\Delta t}$. ",
+      "difficolta": "medio",
       "paroleChiave": [
-        "fem media",
+        "fem medio",
         "deltaPhi",
         "delta t",
         "faraday"
@@ -1484,7 +1484,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "B = $\\mu$0I/(2πr) = (4$\\pi$·10^-7·10)/(2$\\pi$·0.2) = 1.0·10^-5 T. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "filo",
         "mu0",
@@ -1505,7 +1505,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Da |$\\varepsilon$| = N|dΦ/dt| segue |dΦ/dt| = 4/200 = 0.02 Wb/s. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "dPhi/dt",
         "N spire",
@@ -1526,7 +1526,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$\\varepsilon$ = -L dI/dt = -0.10·(-5) = +0.5 V. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "autoinduzione",
         "segno",
@@ -1547,7 +1547,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "U = 1/2·L·I² = 0.5·0.25·16 = 2.0 J. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia",
         "1/2LI2",
@@ -1568,7 +1568,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Per il solenoide ideale, una forma è L = $\\mu$0·n²·l·S. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "n spire/metro",
         "L",
@@ -1589,7 +1589,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Con $\\varepsilon$ = -L dI/dt e la legge di Lenz, la f.e.m. autoindotta si oppone alla variazione di corrente che la produce. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "opposizione",
         "lenz",
@@ -1610,7 +1610,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "U = 1/2·L·I² = 0.5·2·1² = 1 J. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia",
         "I=1A",
@@ -1631,7 +1631,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "In $\\varepsilon$ = -dΦ/dt il segno dipende dalle convenzioni di verso per flusso e f.e.m.; il meno esprime comunque l'opposizione di Lenz. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "segno",
         "convenzioni",
@@ -1652,7 +1652,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L = $\\mu$0 N² S / l = (4$\\pi$·10^-7)·(10^6)·(10^-4)/0.5 $\\approx$ 2.5·10^-4 H (ordine 10^-4 H). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "L",
         "mu0",
@@ -1673,7 +1673,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il calcolo porta a L dell'ordine di 10^-4 H, quindi 2.5·10^-4 H è l'opzione corretta. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "correzione",
         "10^-4 H",
@@ -1788,7 +1788,7 @@
     },
     {
       "id": "mag_086",
-      "domanda": "Una bobina ha L=0.40 H. Se la corrente diminuisce da 5 A a 1 A in 0.20 s, il modulo della f.e.m. autoindotta media è:",
+      "domanda": "Una bobina ha L=0.40 H. Se la corrente diminuisce da 5 A a 1 A in 0.20 s, il modulo della f.e.m. autoindotta medio è:",
       "categoria": "Magnetismo",
       "sottocategoria": "Autoinduzione (calcolo)",
       "opzioni": [
@@ -1840,7 +1840,7 @@
         "avanzato"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Le etichette richieste sono 'facile', 'media', 'difficile', quindi va usato 'difficile'.",
+      "spiegazione": "Le etichette richieste sono 'facile', 'medio', 'difficile', quindi va usato 'difficile'.",
       "difficolta": "difficile",
       "paroleChiave": [
         "formato",
@@ -1893,7 +1893,7 @@
     },
     {
       "id": "mag_091",
-      "domanda": "Una spira singola vede il flusso passare da $\\Phi$=0.012 Wb a $\\Phi$=0.004 Wb in $4\\,\\text{ms}$. Quanto vale $|\\varepsilon|$ media?",
+      "domanda": "Una spira singola vede il flusso passare da $\\Phi$=0.012 Wb a $\\Phi$=0.004 Wb in $4\\,\\text{ms}$. Quanto vale $|\\varepsilon|$ medio?",
       "categoria": "Magnetismo",
       "sottocategoria": "Faraday (tempi brevi)",
       "opzioni": [
@@ -2061,7 +2061,7 @@
     },
     {
       "id": "mag_099",
-      "domanda": "Una bobina ha N=100 spire e area A=0.010 m². In un intervallo Δt=0.20 s, B perpendicolare alla spira cresce da 0.10 T a 0.40 T. |$\\varepsilon$| media?",
+      "domanda": "Una bobina ha N=100 spire e area A=0.010 m². In un intervallo Δt=0.20 s, B perpendicolare alla spira cresce da 0.10 T a 0.40 T. |$\\varepsilon$| medio?",
       "categoria": "Magnetismo",
       "sottocategoria": "B(t) variabile",
       "opzioni": [
@@ -2076,7 +2076,7 @@
       "paroleChiave": [
         "deltaB",
         "BA",
-        "fem media",
+        "fem medio",
         "bobina"
       ]
     },
@@ -2282,7 +2282,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In un magnete permanente, il momento magnetico orbitale e di spin degli elettroni è parzialmente allineato, generando un momento magnetico macroscopico netto. Nel ferro, cobalto e nichel questo effetto è particolarmente pronunciato (ferromagnetismo).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "magnete permanente",
         "momento magnetico",
@@ -2303,7 +2303,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Ad una temperatura critica chiamata temperatura di Curie, l'agitazione termica causa il disallineamento casuale dei momenti magnetici atomici. Al di sopra di questa temperatura, il materiale ferromagnetico diventa paramagnetico e perde il suo magnetismo permanente.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "temperatura",
         "Curie",
@@ -2324,7 +2324,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Ogni filo percorso da corrente genera un campo magnetico $B = \\frac{\\mu_0 I}{2\\pi r}$ intorno a sé. L'altro filo, percorso da corrente nello stesso verso, subisce una forza di attrazione nel campo del primo filo. Se le correnti sono in verso opposto, il risultato è una repulsione.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "fili paralleli",
         "attrazione",
@@ -2345,7 +2345,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Quando una bobina percorsa da corrente è immersa in un campo magnetico uniforme, le forze di Lorentz agiscono su i lati della bobina in direzioni opposte, generando una coppia (momento torcente). Il commutatore assicura che la corrente cambi direzione ogni mezzo giro, mantenendo la rotazione continua.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "motore",
         "coppia",
@@ -2366,7 +2366,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Quando una bobina ruota in un campo magnetico, il flusso cambia sinusoidalmente, inducendo una f.e.m. sinusoidale. Il commutatore (contatti a spazzole) inverte i collegamenti al circuito esterno ogni mezzo giro, trasformando la corrente alternata in corrente continua pulsante.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "generatore",
         "commutatore",
@@ -2387,7 +2387,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In un trasformatore ideale vale: $\\frac{V_2}{V_1} = \\frac{N_2}{N_1}$. Quindi $V_2 = V_1 \\cdot \\frac{N_2}{N_1} = 220 \\cdot \\frac{10}{100} = 22$ V. Questo è un trasformatore riduttore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "trasformatore",
         "N1",
@@ -2408,7 +2408,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nel trasformatore, una corrente alternata nel circuito primario genera un flusso magnetico variabile nel nucleo di ferro. Questo flusso mutevole, secondo la legge di Faraday-Lenz, induce una f.e.m. nel circuito secondario proporzionale al rapporto del numero di spire.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "trasformatore",
         "Faraday",
@@ -2429,7 +2429,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "La forza magnetica essendo perpendicolare alla velocità non compie lavoro (W = F·v·cosθ = 0, dove θ = 90°). Quindi l'energia cinetica rimane costante. Il modulo della velocità è costante, e solo la direzione cambia, come in un moto circolare uniforme.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto circolare",
         "energia",
@@ -2471,7 +2471,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nei materiali diamagnetici, il momento indotto è opposto al campo esterno, generando una forza repulsiva. Questo è il motivo per cui sostanze diamagnetiche (come l'acqua, il bismuto e molti materiali biologici) sono debolmente repinte dai magneti. La permeabilità relativa è inferiore a 1.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "diamagnetico",
         "repulsione",
@@ -2492,7 +2492,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nei paramagnetici (come l'alluminio), i momenti magnetici atomici sono casualmente orientati e si allineano parzialmente solo in presence di un campo esterno, risultando in un'attrazione debole. Nei ferromagnetici (come il ferro), c'è un allineamento spontaneo e parallelo dei momenti anche in assenza di campo esterno, dovuto a interazioni di scambio quantistiche.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "paramagnetico",
         "ferromagnetico",
@@ -2534,7 +2534,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In un campo non uniforme, i lati della spira immersi in campagne diverse sperimentano forze diverse, generando non solo una coppia ma anche una forza netta (traslazionale). Questo è il principio dietro il funzionamento dei 'magnetic force traps' e di molti dispositivi di manipolazione magnetica utilizzati in laboratorio.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "campo non uniforme",
         "coppia",
@@ -2555,7 +2555,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La potenza trasmessa è $P = VI$. A parità di potenza, aumentare V significa ridurre I. Poiché le perdite Joule sono $P_{loss} = I^2R$, una corrente minore riduce significativamente le perdite lungo i lunghi cavi di trasmissione. Questo è il motivo per cui le linee ad alta tensione sono usate per le lunghe distanze.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "trasformatore",
         "alta tensione",
@@ -2698,7 +2698,7 @@
         "La corrente iniziana può circolare indefinitamente senza decadimento, e qualsiasi campo magnetico esterno è espulso (effetto Meissner)",
         "La corrente accelera indefinitamente",
         "La corrente oscillay fra valori positivi e negativi",
-        "La corrente diventa immediatamente zero"
+        "La corrente diventa immediotamente zero"
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In un superconduttore (in stato superconduttivo), la resistenza zero consente a una corrente di circolareindefinitamente una volta instaurata. La legge di Ohm (V = IR) diventa inapplicabile. Inoltre, il superconduttore genera campi magnetici tali da espellere qualsiasi flusso magnetico esterno—l'effetto Meissner. Questo è sfruttato per creare campi magnetici molto intensi e stabili, come negli acceleratori di particelle.",
@@ -2765,7 +2765,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Quando una barra si muove in un campo magnetico, i portatori di carica liberi sperimentano la forza di Lorentz, venendo separati: cariche positive verso una estremità, cariche negative verso l'altra. Questo accumulo crea una differenza di potenziale (motional EMF) $\\mathcal{E} = BLv$. Al raggiungimento dell'equilibrio, il campo elettrico creato dal separamento bilancia la forza magnetica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "motional EMF",
         "BLv",
@@ -2786,7 +2786,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il teorema di Ampère stabilisce che $\\oint \\vec{B} \\cdot d\\vec{\\ell} = \\mu_0 I_{enc}$, dove $I_{enc}$ è la corrente totale concatenata (passante attraverso la superficie limitata dalla curva). Questo teorema è fondamentale per calcolare il campo magnetico in situazioni ad alta simmetria, come nel caso di fili rettilinei infiniti, cilindri percorsi da corrente, e solenoidi.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Ampère",
         "circuitazione",
@@ -2807,7 +2807,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La densità di energia in un campo magnetico è $u = \\frac{B^2}{2\\mu_0}$, quindi è proporzionale al quadrato del campo. Se B raddoppia, allora $B_{new}^2 = (2B)^2 = 4B^2$, e quindi $u_{new} = 4u$. L'energia contenuta nello spazio disponibile quadruplica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "densità energia",
         "B²",
@@ -2849,7 +2849,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il momento di dipolo magnetico è una grandezza vettoriale la cui direzione è data dalla regola della mano destra: se le dita seguono il verso della corrente lungo la spira, il pollice indica la direzione di $\\vec{\\mu}$. Questo vettore è perpendicolare al piano della spira ed è la proprietà che determina come la spira interagisce con campi magnetici esterni.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "momento magnetico",
         "mu",
@@ -2870,7 +2870,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "L'energia potenziale di un dipolo magnetico in un campo uniforme è $U = -\\vec{\\mu} \\cdot \\vec{B} = -\\mu B \\cos\\theta$. L'energia è minima ($U = -\\mu B$) quando $\\theta = 0$ (dipolo allineato con il campo), e massima ($U = +\\mu B$) quando $\\theta = 180°$ (dipolo opposto al campo). Questa struttura energetica spiega l'allineamento naturale di dipoli magnetici con campi esterni.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia potenziale",
         "dipolo",
@@ -2907,7 +2907,7 @@
       "opzioni": [
         "La densità di portatori di carica (n) e il segno dei portatori di carica nel conduttore",
         "La resistenza totale del conduttore",
-        "La velocità media dei portatori di carica",
+        "La velocità medio dei portatori di carica",
         "La temperatura del conduttore"
       ],
       "rispostaCorretta": 0,
@@ -2933,7 +2933,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il campo magnetico terrestre è generato principalmente dalle correnti nel nucleo liquido di ferro della Terra. L'asse magnetico è inclinato rispetto all'asse di rotazione geografico di circa 11°. Inoltre, i poli magnetici si spostano nel tempo (decine di chilometri all'anno). Questo causa la declinazione magnetica, che varia geograficamente e temporalmente.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "declinazione",
         "poli magnetici",
@@ -2954,7 +2954,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "I materiali ferromagnetici come il mu-metal hanno permeabilità relativa $\\mu_r$ fino a 10000 o superiore. Le linee di campo magnetico vengono attratte preferibilmente nel materiale a causa di questa alta permeabilità. Il blindaggio riduce il campo all'interno di un fattore di circa $\\mu_r$. Questo è usato per schermare strumenti sensibili (magnetometri, CRT) da campi magnetici ambientali.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "blindaggio",
         "mu-metal",
@@ -3010,7 +3010,7 @@
       "categoria": "Magnetismo",
       "sottocategoria": "Superconduttività e fotoni",
       "opzioni": [
-        "Il superconduttore espelle qualsiasi flusso magnetico (effetto Meissner); il fotone trasporta energia e momento ma non carica: l'interazione è mediata dal campo EM che viene preservato al confine, riflettendo il fotone",
+        "Il superconduttore espelle qualsiasi flusso magnetico (effetto Meissner); il fotone trasporta energia e momento ma non carica: l'interazione è mediota dal campo EM che viene preservato al confine, riflettendo il fotone",
         "I fotoni vengono assorbiti e trasformati in calore",
         "I fotoni sviluppano carica magnetica nel superconduttore",
         "I superconduttori attraggono i fotoni fortemente"
@@ -3038,7 +3038,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Quando un conduttore si muove in un campo magnetico non uniforme, diversi settori del conduttore esperimentano diversi flussi magnetici. Questo induce f.e.m. locali e correnti circolari (eddy currents) nel conduttore. Per la legge di Lenz, queste correnti generano un campo che si oppone al cambio di flusso, producendo una forza di frenamento e dissipazione di energia. Questo è usato nei freni magnetici e negli smorzatori.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "eddy currents",
         "parassite",
@@ -3122,7 +3122,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "I ferrofluidi rispondono istantaneamente a campi magnetici variabili, cambiando viscosità, forma e geometria. Questa proprietà è sfruttata in 'dampers magnetici intelligenti' (ad es., sospensioni di veicoli adattive), sigilli magnetici, e sistemi di raffreddamento. L'esercito e le industrie ad alta tecnologia utilizzano ferrofluidi per controllare vibrazioni, shock e rumori dinamicamente.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ferrofluido",
         "nanoparticelle",
@@ -3164,7 +3164,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il ferro è ferromagnetico e contiene domini magnetici microscopici. Un magnete esterno applica un campo che tende ad allineare questi domini ai propri, anche se inizialmente casualmente orientati. Questo allineamento indotto crea una magnetizzazione netta nel ferro che attrae il magnete. Inoltre, il ferro ad alta permeabilità concentra le linee di campo del magnete, amplificando l'attrazione.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "induzione",
         "domini",
@@ -3290,7 +3290,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Un magnete permanente mantiene la magnetizzazione perché i domini magnetici, una volta allineati, sono stabilizzati in quella configurazione da barriere di energia elevate. L'agitazione termica a temperatura ambiente è insufficiente per superare queste barriere, quindi i domini rimangono allineati. Tuttavia, a temperature elevate (sopra la temperatura di Curie), l'energia termica supera le barriere e i domini si disallineano, distruggendo il magnetismo permanente.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "dominio",
         "stabilità",

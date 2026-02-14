@@ -694,7 +694,7 @@
       "opzioni": [
         "Lo spostamento (area con segno sotto la curva)",
         "L'accelerazione",
-        "La velocità media",
+        "La velocità medio",
         "La distanza sempre positiva"
       ],
       "rispostaCorretta": 0,
@@ -714,7 +714,7 @@
       "sottocategoria": "Grafici (s-t)",
       "opzioni": [
         "L'accelerazione",
-        "La velocità media",
+        "La velocità medio",
         "Lo spostamento (area con segno sotto la curva)",
         "La distanza sempre positiva"
       ],
@@ -735,7 +735,7 @@
       "sottocategoria": "Grafici (s-t)",
       "opzioni": [
         "L'accelerazione",
-        "La velocità media",
+        "La velocità medio",
         "La distanza sempre positiva",
         "Lo spostamento (area con segno sotto la curva)"
       ],
@@ -757,7 +757,7 @@
       "opzioni": [
         "Lo spostamento (area con segno sotto la curva)",
         "L'accelerazione",
-        "La velocità media",
+        "La velocità medio",
         "La distanza sempre positiva"
       ],
       "rispostaCorretta": 0,
@@ -778,7 +778,7 @@
       "opzioni": [
         "L'accelerazione",
         "Lo spostamento (area con segno sotto la curva)",
-        "La velocità media",
+        "La velocità medio",
         "La distanza sempre positiva"
       ],
       "rispostaCorretta": 1,
@@ -798,7 +798,7 @@
       "sottocategoria": "Grafici (s-t)",
       "opzioni": [
         "L'accelerazione",
-        "La velocità media",
+        "La velocità medio",
         "Lo spostamento (area con segno sotto la curva)",
         "La distanza sempre positiva"
       ],
@@ -825,7 +825,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "v=v0+at",
@@ -845,7 +845,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "v=v0+at",
@@ -865,7 +865,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "v=v0+at",
@@ -885,7 +885,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "v=v0+at",
@@ -905,7 +905,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "v=v0+at",
@@ -925,7 +925,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "v=v0+at",
@@ -945,7 +945,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "v=v0+at",
@@ -965,7 +965,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "v=v0+at",
@@ -985,7 +985,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "v=v0+at",
@@ -1005,7 +1005,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Si usa la relazione $v = v_0 + a \\cdot t$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "v=v0+at",
@@ -1025,7 +1025,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "spostamento",
@@ -1045,7 +1045,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "spostamento",
@@ -1065,7 +1065,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "spostamento",
@@ -1085,7 +1085,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "spostamento",
@@ -1105,7 +1105,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "spostamento",
@@ -1125,7 +1125,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "spostamento",
@@ -1145,7 +1145,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "spostamento",
@@ -1165,7 +1165,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "spostamento",
@@ -1185,7 +1185,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "spostamento",
@@ -1205,7 +1205,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Nel MUA vale $s = v_0 \\cdot t + \\frac{1}{2} a t^2$ (se $s_0 = 0$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "spostamento",
@@ -1225,7 +1225,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Si usa la velocità di avvicinamento $v_{rel} = v_A + v_B$: $t = d / v_{rel}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto relativo",
         "incontro",
@@ -1245,7 +1245,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Si usa la velocità di avvicinamento $v_{rel} = v_A + v_B$: $t = d / v_{rel}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto relativo",
         "incontro",
@@ -1265,7 +1265,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Si usa la velocità di avvicinamento $v_{rel} = v_A + v_B$: $t = d / v_{rel}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto relativo",
         "incontro",
@@ -1285,7 +1285,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Si usa la velocità di avvicinamento $v_{rel} = v_A + v_B$: $t = d / v_{rel}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto relativo",
         "incontro",
@@ -1305,7 +1305,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Si usa la velocità di avvicinamento $v_{rel} = v_A + v_B$: $t = d / v_{rel}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto relativo",
         "incontro",
@@ -1325,7 +1325,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Alla quota massima $v = 0$ e vale $t = v_0 / g$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lancio verticale",
         "tempo",
@@ -1345,7 +1345,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Alla quota massima $v = 0$ e vale $t = v_0 / g$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lancio verticale",
         "tempo",
@@ -1365,7 +1365,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Alla quota massima $v = 0$ e vale $t = v_0 / g$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lancio verticale",
         "tempo",
@@ -1385,7 +1385,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Alla quota massima $v = 0$ e vale $t = v_0 / g$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lancio verticale",
         "tempo",
@@ -1405,7 +1405,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Alla quota massima $v = 0$ e vale $t = v_0 / g$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lancio verticale",
         "tempo",
@@ -1425,7 +1425,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Alla quota massima $v = 0$ e si usa $v^2 = v_0^2 - 2g \\cdot h$ $\\Rightarrow$ $h = v_0^2 / (2g)$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "altezza",
         "v²",
@@ -1445,7 +1445,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Alla quota massima $v = 0$ e si usa $v^2 = v_0^2 - 2g \\cdot h$ $\\Rightarrow$ $h = v_0^2 / (2g)$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "altezza",
         "v²",
@@ -1465,7 +1465,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Alla quota massima $v = 0$ e si usa $v^2 = v_0^2 - 2g \\cdot h$ $\\Rightarrow$ $h = v_0^2 / (2g)$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "altezza",
         "v²",
@@ -1485,7 +1485,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Alla quota massima $v = 0$ e si usa $v^2 = v_0^2 - 2g \\cdot h$ $\\Rightarrow$ $h = v_0^2 / (2g)$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "altezza",
         "v²",
@@ -1505,7 +1505,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Alla quota massima $v = 0$ e si usa $v^2 = v_0^2 - 2g \\cdot h$ $\\Rightarrow$ $h = v_0^2 / (2g)$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "altezza",
         "v²",
@@ -1525,7 +1525,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il modulo della velocità è $v = \\sqrt{v_x^2 + v_y^2}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "vettori",
         "componenti",
@@ -1545,7 +1545,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Il modulo della velocità è $v = \\sqrt{v_x^2 + v_y^2}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "vettori",
         "componenti",
@@ -1565,7 +1565,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Il modulo della velocità è $v = \\sqrt{v_x^2 + v_y^2}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "vettori",
         "componenti",
@@ -1585,7 +1585,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il modulo della velocità è $v = \\sqrt{v_x^2 + v_y^2}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "vettori",
         "componenti",
@@ -1605,7 +1605,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il modulo della velocità è $v = \\sqrt{v_x^2 + v_y^2}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "vettori",
         "componenti",
@@ -2434,20 +2434,20 @@
     },
     {
       "id": "cin_122",
-      "domanda": "Due automobili percorrono la stessa strada rettilinea. La prima ha velocità media $v_1 = 50$ km/h, la seconda $v_2 = 60$ km/h. Quale affermazione è corretta?",
+      "domanda": "Due automobili percorrono la stessa strada rettilinea. La prima ha velocità medio $v_1 = 50$ km/h, la seconda $v_2 = 60$ km/h. Quale affermazione è corretta?",
       "categoria": "Cinematica",
-      "sottocategoria": "Velocità media vs istantanea",
+      "sottocategoria": "Velocità medio vs istantanea",
       "opzioni": [
         "La prima automobile ha sempre velocità istantanea minore di 50 km/h",
         "La seconda auto percorre 10 km/h più di distanza nel medesimo tempo",
-        "Entrambe hanno velocità istantanea uguale alla velocità media",
+        "Entrambe hanno velocità istantanea uguale alla velocità medio",
         "La distanza percorsa in 1 ora è 50 km per la prima e 60 km per la seconda"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "La velocità media è definita come distanza totale/tempo totale. Se la media è $v_m$, allora $d = v_m \\cdot t$.",
-      "difficolta": "media",
+      "spiegazione": "La velocità medio è definita come distanza totale/tempo totale. Se la medio è $v_m$, allora $d = v_m \\cdot t$.",
+      "difficolta": "medio",
       "paroleChiave": [
-        "velocità media",
+        "velocità medio",
         "distanza",
         "tempo"
       ]
@@ -2461,11 +2461,11 @@
         "La distanza percorsa è nulla",
         "Il corpo era fermo",
         "La posizione finale coincide con quella iniziale",
-        "La velocità media è zero"
+        "La velocità medio è zero"
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Se lo spostamento $\\Delta x = 0$, allora $x_f - x_i = 0$, quindi $x_f = x_i$ (il corpo ritorna alla posizione iniziale, ma ha potuto percorrere una qualsiasi distanza).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "spostamento",
         "posizione",
@@ -2525,7 +2525,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Ricordando che $v = \\frac{ds}{dt}$, integrando si ottiene $s = \\int v \\, dt$, cioè l'area sotto il grafico v-t è lo spostamento.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "grafico v-t",
         "area",
@@ -2546,7 +2546,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel MUA con partenza da fermo: $s = \\frac{1}{2}at^2$. Infatti $s(5) = \\frac{1}{2}a(5)^2 = 12.5a$, mentre $s(10) - s(5) = 50a - 12.5a = 37.5a$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "distanza",
@@ -2555,7 +2555,7 @@
     },
     {
       "id": "cin_128",
-      "domanda": "Quale relazione lega velocità media, accelerazione media e tempo in un moto uniformemente accelerato?",
+      "domanda": "Quale relazione lega velocità medio, accelerazione medio e tempo in un moto uniformemente accelerato?",
       "categoria": "Cinematica",
       "sottocategoria": "MUA - Concetti",
       "opzioni": [
@@ -2565,17 +2565,17 @@
         "$v_m = \\frac{1}{2}at^2$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La velocità media nel MUA è la media aritmetica tra velocità iniziale e finale: $v_m = \\frac{v_0 + v_f}{2}$. Questo perché l'accelerazione è costante.",
-      "difficolta": "media",
+      "spiegazione": "La velocità medio nel MUA è la medio aritmetica tra velocità iniziale e finale: $v_m = \\frac{v_0 + v_f}{2}$. Questo perché l'accelerazione è costante.",
+      "difficolta": "medio",
       "paroleChiave": [
-        "velocità media",
+        "velocità medio",
         "MUA",
-        "media aritmetica"
+        "medio aritmetica"
       ]
     },
     {
       "id": "cin_129",
-      "domanda": "Se la velocità di un corpo aumenta da 10 m/s a 30 m/s in 4 secondi, qual è l'accelerazione media e quale relazione sussiste con la velocità media?",
+      "domanda": "Se la velocità di un corpo aumenta da 10 m/s a 30 m/s in 4 secondi, qual è l'accelerazione medio e quale relazione sussiste con la velocità medio?",
       "categoria": "Cinematica",
       "sottocategoria": "MUA - Relazioni",
       "opzioni": [
@@ -2585,11 +2585,11 @@
         "a = 2.5 m/s² e $v_m = 10$ m/s, quindi $v_m = 2a$"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Accelerazione media: $a = \\frac{\\Delta v}{\\Delta t} = \\frac{20}{4} = 5$ m/s². Velocità media: $v_m = \\frac{10 + 30}{2} = 20$ m/s.",
-      "difficolta": "media",
+      "spiegazione": "Accelerazione medio: $a = \\frac{\\Delta v}{\\Delta t} = \\frac{20}{4} = 5$ m/s². Velocità medio: $v_m = \\frac{10 + 30}{2} = 20$ m/s.",
+      "difficolta": "medio",
       "paroleChiave": [
         "accelerazione",
-        "velocità media",
+        "velocità medio",
         "calcolo"
       ]
     },
@@ -2619,14 +2619,14 @@
       "categoria": "Cinematica",
       "sottocategoria": "Caduta libera - Ragionamento",
       "opzioni": [
-        "Basta usare $h = vt$ dove $t$ si ricava dalla media di velocità",
+        "Basta usare $h = vt$ dove $t$ si ricava dalla medio di velocità",
         "Si usa $v^2 = v_0^2 + 2g\\Delta h$, da cui $h = \\frac{v^2}{2g} = 20$ m",
         "È impossibile determinarlo senza il tempo di caduta",
         "Si usa $h = \\frac{1}{2}gt^2$ ma serve il tempo e non lo conosciamo"
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Dalla relazione $v^2 = v_0^2 + 2g\\Delta h$ con $v_0 = 0$, si ricava: $h = \\frac{v^2}{2g} = \\frac{400}{20} = 20$ m.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "caduta libera",
         "altezza",
@@ -2646,7 +2646,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "L'accelerazione di gravità $g$ agisce **sempre** verso il basso, indipendentemente dal fatto che il corpo salga o scenda. Nel punto di massima altezza, $v = 0$ ma $a = g$ verso il basso.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lanciamento verticale",
         "gravità",
@@ -2666,7 +2666,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Nel lanciamento verticale, il tempo per ritornare al punto di partenza è $t = \\frac{2v_0}{g} = \\frac{2 \\cdot 20}{10} = 4$ s (tempo totale di salita e discesa).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lanciamento verticale",
         "tempo di volo",
@@ -2726,7 +2726,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "La gittata nel moto parabolico è: $R = \\frac{v_0^2 \\sin(2\\theta)}{g}$. Poiché $\\sin(60°) = \\sin(120°)$, gli angoli 30° e 60° danno la **stessa gittata**.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto parabolico",
         "gittata",
@@ -2746,7 +2746,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nel MUA, gli spazi percorsi in intervalli uguali di tempo stanno nel rapporto $1:3:5:7:...$. Se nei 2 s finali percorre 30 m, nei 2 s precedenti percorre 10 m (rapporto 1:3).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "intervalli uguali",
@@ -2766,7 +2766,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Nel MCU il **modulo** della velocità è costante. Ma la velocità vettoriale cambia direzione, e c'è una accelerazione centripeta costante in modulo ma diretta verso il centro.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MCU",
         "velocità scalare",
@@ -2786,7 +2786,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L'accelerazione centripeta è: $a_c = \\frac{v^2}{r} = \\omega^2 r$. Dipende da velocità e raggio (o da velocità angolare e raggio).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "accelerazione centripeta",
         "velocità",
@@ -2806,7 +2806,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Poiché $a_c = \\frac{v^2}{r}$ e $v$ rimane costante, se $r$ raddoppia, $a_c$ diventa: $a_c' = \\frac{v^2}{2r} = \\frac{1}{2}a_c$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "accelerazione centripeta",
         "raggio",
@@ -2815,20 +2815,20 @@
     },
     {
       "id": "cin_141",
-      "domanda": "Quale è la **differenza concettuale** tra velocità media e velocità istantanea?",
+      "domanda": "Quale è la **differenza concettuale** tra velocità medio e velocità istantanea?",
       "categoria": "Cinematica",
       "sottocategoria": "Velocità - Concetti",
       "opzioni": [
-        "La velocità media è sempre negativa, la istantanea è positiva",
-        "La velocità media rappresenta l'intero percorso in uno scatto temporale; la istantanea è il valore in un istante preciso",
-        "La velocità media dipende dalla massa; la istantanea no",
+        "La velocità medio è sempre negativa, la istantanea è positiva",
+        "La velocità medio rappresenta l'intero percorso in uno scatto temporale; la istantanea è il valore in un istante preciso",
+        "La velocità medio dipende dalla massa; la istantanea no",
         "Non esiste differenza, sono la stessa cosa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La velocità media è $v_m = \\frac{\\Delta x}{\\Delta t}$ su un intervallo finito. La velocità istantanea è $v = \\lim_{\\Delta t \\to 0} \\frac{\\Delta x}{\\Delta t}$ in un istante preciso (concetto di derivata).",
-      "difficolta": "media",
+      "spiegazione": "La velocità medio è $v_m = \\frac{\\Delta x}{\\Delta t}$ su un intervallo finito. La velocità istantanea è $v = \\lim_{\\Delta t \\to 0} \\frac{\\Delta x}{\\Delta t}$ in un istante preciso (concetto di derivata).",
+      "difficolta": "medio",
       "paroleChiave": [
-        "velocità media",
+        "velocità medio",
         "velocità istantanea",
         "limite"
       ]
@@ -2846,7 +2846,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La curvatura del grafico s-t indica cambiamento di velocità. Se è convessa verso l'alto, la pendenza aumenta, quindi accelerazione positiva.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "grafico s-t",
         "curvatura",
@@ -2887,7 +2887,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel MUA con $v_0 = 0$: $s = \\frac{1}{2}at^2$. Se il tempo raddoppia, $s' = \\frac{1}{2}a(2t)^2 = 4 \\cdot \\frac{1}{2}at^2 = 4s$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "distanza",
@@ -2988,7 +2988,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Nel punto di massima altezza: $v = 0$ ma $a = g$ (verso il basso, sempre agente). Lo spostamento non è nullo (l'oggetto è più in alto).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lanciamento verticale",
         "massima altezza",
@@ -3008,7 +3008,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel moto parabolico di un proiettile lanciato orizzontalmente: componente orizzontale ha $a_x = 0$ (MRU), componente verticale ha $a_y = g$ (MUA).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto parabolico",
         "scomposizione",
@@ -3028,7 +3028,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "La gravità agisce **solo verticalmente** ($F = mg$ downward), quindi $a_x = 0$ in assenza di attrito. Per questo, la componente orizzontale della velocità rimane quella del lancio.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto parabolico",
         "componente orizzontale",
@@ -3048,7 +3048,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il vertice della parabola nel grafico s-t rappresenta il punto dove $\\frac{ds}{dt} = 0$, cioè dove la velocità è nulla.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "grafico s-t",
         "parabola",
@@ -3058,7 +3058,7 @@
     },
     {
       "id": "cin_153",
-      "domanda": "Due automobili si muovono sulla stessa strada rettilinea. Se hanno la **stessa velocità media** ma diversa velocità istantanea, quale affermazione è vera?",
+      "domanda": "Due automobili si muovono sulla stessa strada rettilinea. Se hanno la **stessa velocità medio** ma diversa velocità istantanea, quale affermazione è vera?",
       "categoria": "Cinematica",
       "sottocategoria": "Velocità - Ragionamento",
       "opzioni": [
@@ -3068,10 +3068,10 @@
         "Una deve accelerare e una decelerare durante il percorso"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Se la velocità media è uguale ma la istantanea diversa, significa che i moti non sono uniformi. Una auto deve raggiungere velocità diverse da quella media per tornare a quella media complessiva.",
+      "spiegazione": "Se la velocità medio è uguale ma la istantanea diversa, significa che i moti non sono uniformi. Una auto deve raggiungere velocità diverse da quella medio per tornare a quella medio complessiva.",
       "difficolta": "difficile",
       "paroleChiave": [
-        "velocità media",
+        "velocità medio",
         "velocità istantanea",
         "accelerazione"
       ]
@@ -3131,7 +3131,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Entrambi i metodi sono validi: (A) Trovare $a = \\frac{v}{t}$ quindi $s = \\frac{1}{2}at^2$; (B) Usare direttamente $s = \\frac{v_0 + v_f}{2} \\cdot t$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "distanza",
@@ -3151,7 +3151,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Un moto curvilineo implica cambio di **direzione** della velocità, il che richiede **sempre** una componente di accelerazione centripeta (almeno). Quindi $a \\neq 0$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto curvilineo",
         "accelerazione",
@@ -3180,20 +3180,20 @@
     },
     {
       "id": "cin_159",
-      "domanda": "Un'auto percorre la prima metà del percorso a 60 km/h e la seconda metà a 100 km/h. Qual è la velocità media su tutto il percorso?",
+      "domanda": "Un'auto percorre la prima metà del percorso a 60 km/h e la seconda metà a 100 km/h. Qual è la velocità medio su tutto il percorso?",
       "categoria": "Cinematica",
-      "sottocategoria": "Velocità media - Trappola",
+      "sottocategoria": "Velocità medio - Trappola",
       "opzioni": [
-        "80 km/h (media aritmetica)",
+        "80 km/h (medio aritmetica)",
         "Minore di 80 km/h",
         "Maggiore di 80 km/h",
         "Dipende dalla distanza totale"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La velocità media è $\\frac{\\text{distanza totale}}{\\text{tempo totale}}$. Se la prima metà a 60 km/h impiega più tempo della seconda a 100 km/h, la media è vicina a 60 km/h (minore di 80).",
-      "difficolta": "media",
+      "spiegazione": "La velocità medio è $\\frac{\\text{distanza totale}}{\\text{tempo totale}}$. Se la prima metà a 60 km/h impiega più tempo della seconda a 100 km/h, la medio è vicina a 60 km/h (minore di 80).",
+      "difficolta": "medio",
       "paroleChiave": [
-        "velocità media",
+        "velocità medio",
         "distanze uguali",
         "velocità diverse"
       ]
@@ -3211,7 +3211,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Con $v_0 = 0$: $s = \\frac{1}{2}at^2 \\Rightarrow 100 = \\frac{1}{2}a(100) \\Rightarrow a = 2$ m/s².",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "accelerazione",
@@ -3232,7 +3232,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "L'accelerazione centripeta nel MCU è sempre **radiale** e diretta verso il centro della circonferenza. Causa cambio di direzione, non di modulo della velocità.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "accelerazione centripeta",
         "MCU",
@@ -3252,7 +3252,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Nel moto parabolico orizzontale: $v_x = v_0$ (costante, no accelerazione orizzontale); $v_y = gt$ (aumenta linearmente per accelerazione di gravità).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto parabolico",
         "componenti velocità",
@@ -3312,7 +3312,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nel lanciamento verticale: $t_{tot} = \\frac{2v_0}{g} \\Rightarrow 4 = \\frac{2v_0}{10} \\Rightarrow v_0 = 20$ m/s.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lanciamento verticale",
         "velocità iniziale",
@@ -3321,7 +3321,7 @@
     },
     {
       "id": "cin_166",
-      "domanda": "Quale è la relazione tra spostamento, velocità **media** e tempo in un moto qualsiasi?",
+      "domanda": "Quale è la relazione tra spostamento, velocità **medio** e tempo in un moto qualsiasi?",
       "categoria": "Cinematica",
       "sottocategoria": "Relazioni cinematiche",
       "opzioni": [
@@ -3331,10 +3331,10 @@
         "$\\Delta x = v \\cdot t^2$"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La velocità media è **per definizione** $v_m = \\frac{\\Delta x}{\\Delta t}$, quindi $\\Delta x = v_m \\cdot \\Delta t$. È una relazione universale, indipendente dal tipo di moto.",
+      "spiegazione": "La velocità medio è **per definizione** $v_m = \\frac{\\Delta x}{\\Delta t}$, quindi $\\Delta x = v_m \\cdot \\Delta t$. È una relazione universale, indipendente dal tipo di moto.",
       "difficolta": "facile",
       "paroleChiave": [
-        "velocità media",
+        "velocità medio",
         "spostamento",
         "definizione"
       ]
@@ -3352,7 +3352,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La relazione $v^2 = v_0^2 + 2a\\Delta x$ con $v_0 = 0$ diventa $v^2 = 2a\\Delta x$. Lega velocità finale, accelerazione e distanza **senza il tempo**.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "relazione cinematica",
@@ -3372,7 +3372,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Le tre equazioni fondamentali del MUA sono: (1) $v = v_0 + at$, (2) $s = v_0 t + \\frac{1}{2}at^2$, (3) $v^2 = v_0^2 + 2a\\Delta s$. Tutte parten da queste.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "equazioni",
@@ -3392,7 +3392,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Se $v_0 > 0$ e $a < 0$, il corpo si ferma quando $v = 0$. Questo accade in tempo $t = \\frac{-v_0}{a} > 0$ (un istante futuro).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "decelerazione",
         "arresto",
@@ -3412,7 +3412,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Fase 1 (accelerazione): $s_1 = \\frac{1}{2}vt$ (poiché $a = v/t$, quindi $s = \\frac{1}{2}at^2 = \\frac{1}{2}\\frac{v}{t}t^2 = \\frac{1}{2}vt$). Fase 2 (MRU): $s_2 = vt$. Totale: $s = \\frac{3}{2}vt$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "MRU",
@@ -3472,7 +3472,7 @@
         "$a = 50$ m/s²"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Nel caso B, con $v_0 = 0$: $s = \\frac{1}{2}at^2 \\Rightarrow 100 = \\frac{1}{2}a(4) \\Rightarrow a = 50$ m/s². Ma nel caso A, con 100 m in 2 s, velocità media è 50 m/s. Nel caso B, velocità media è 50 m/s, quindi sia i tempi che le distanze sarebbero identici. Questo è **compatibile**. Rieseguiamo: $a = 50$ m/s² è possibile.",
+      "spiegazione": "Nel caso B, con $v_0 = 0$: $s = \\frac{1}{2}at^2 \\Rightarrow 100 = \\frac{1}{2}a(4) \\Rightarrow a = 50$ m/s². Ma nel caso A, con 100 m in 2 s, velocità medio è 50 m/s. Nel caso B, velocità medio è 50 m/s, quindi sia i tempi che le distanze sarebbero identici. Questo è **compatibile**. Rieseguiamo: $a = 50$ m/s² è possibile.",
       "difficolta": "difficile",
       "paroleChiave": [
         "MUA",
@@ -3493,7 +3493,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La gittata è: $R = \\frac{v_0^2 \\sin(2\\theta)}{g}$. È massima quando $\\sin(2\\theta) = 1$, cioè $2\\theta = 90°$, quindi $\\theta = 45°$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto parabolico",
         "gittata",
@@ -3508,12 +3508,12 @@
       "sottocategoria": "Moto composto",
       "opzioni": [
         "L'accelerazione è sempre positiva",
-        "La velocità media è inferiore a 50 km/h",
+        "La velocità medio è inferiore a 50 km/h",
         "Il moto è simmetrico (accelerazione e decelerazione uguali)",
         "Lo spostamento è diverso dalla distanza"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Nel moto descritto (accelerazione uniforme, poi decelerazione uniforme con stessi moduli), il moto è **simmetrico**: tempo di salita = tempo di discesa, velocità media è quella di picco/2.",
+      "spiegazione": "Nel moto descritto (accelerazione uniforme, poi decelerazione uniforme con stessi moduli), il moto è **simmetrico**: tempo di salita = tempo di discesa, velocità medio è quella di picco/2.",
       "difficolta": "difficile",
       "paroleChiave": [
         "accelerazione",
@@ -3595,7 +3595,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La legge oraria generale è $x = x_0 + v_0 t + \\frac{1}{2}at^2$. Confrontando con $x = 5 + 2t + 3t^2$: $v_0 = 2$ m/s e $a = 6$ m/s².",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "legge oraria",
         "velocità iniziale",
@@ -3615,7 +3615,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Nel moto uniformemente accelerato: $x = x_0 + v_0 t + \\frac{1}{2}at^2$. Comparando i coefficienti di $t^2$: $\\frac{1}{2}a = 3 \\Rightarrow a = 6$ m/s².",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "legge oraria",
         "accelerazione",
@@ -3635,7 +3635,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Se $v$ e $a$ hanno versi opposti, il modulo della velocità diminuisce. Eventualmente la velocità diventa nulla e il corpo inverte direzione.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "velocità",
         "accelerazione",
@@ -3675,7 +3675,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La velocità tangenziale è: $v = \\frac{2\\pi r}{T} = \\frac{2\\pi \\cdot 0.2}{0.5} = 0.4\\pi \\approx 2.51$ m/s.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MCU",
         "velocità tangenziale",
@@ -3684,7 +3684,7 @@
     },
     {
       "id": "cin_184",
-      "domanda": "Un'auto frena da 25 m/s a 10 m/s in 5 secondi. Quale è la decelerazione media?",
+      "domanda": "Un'auto frena da 25 m/s a 10 m/s in 5 secondi. Quale è la decelerazione medio?",
       "categoria": "Cinematica",
       "sottocategoria": "Accelerazione negativa",
       "opzioni": [
@@ -3694,7 +3694,7 @@
         "$a = -15$ m/s²"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Accelerazione media: $a = \\frac{\\Delta v}{\\Delta t} = \\frac{10 - 25}{5} = \\frac{-15}{5} = -3$ m/s² (negativa, decelerazione).",
+      "spiegazione": "Accelerazione medio: $a = \\frac{\\Delta v}{\\Delta t} = \\frac{10 - 25}{5} = \\frac{-15}{5} = -3$ m/s² (negativa, decelerazione).",
       "difficolta": "facile",
       "paroleChiave": [
         "decelerazione",
@@ -3715,7 +3715,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Al massimo, $v = 0$. Dalla relazione $v = v_0 - gt$: $0 = v_0 - 10(2) \\Rightarrow v_0 = 20$ m/s.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lanciamento verticale",
         "massima altezza",
@@ -3735,7 +3735,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Dalla legge oraria: $h = v_0 t - \\frac{1}{2}gt^2 = 20(2) - \\frac{1}{2}(10)(4) = 40 - 20 = 20$ m.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "massima altezza",
         "lanciamento verticale",
@@ -3775,7 +3775,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel MUA con $v_0 = 0$: $s = \\frac{1}{2}at^2$. Se $t' = 2t$, allora $s' = \\frac{1}{2}a(2t)^2 = 4s$ (quadruplica).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "distanza",
@@ -3795,7 +3795,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Distanza al $t = 2$ s: $s(2) = \\frac{1}{2}(2)(4) = 4$ m. Distanza al $t = 3$ s: $s(3) = \\frac{1}{2}(2)(9) = 9$ m. Differenza: $9 - 4 = 5$ m.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "intervallo temporale",
@@ -3815,7 +3815,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel punto di massima altezza del moto parabolico, la componente verticale della velocità è **nulla** ($v_y = 0$), mentre quella orizzontale rimane costante ($v_x = v_0 \\cos\\theta$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto parabolico",
         "massima altezza",
@@ -3824,20 +3824,20 @@
     },
     {
       "id": "cin_191",
-      "domanda": "Due motociclette si muovono su strade rettilinee parallele. Entrambe hanno la stessa velocità media, ma diverse velocità istantanee durante il percorso. Quale affermazione **non** può essere vera?",
+      "domanda": "Due motociclette si muovono su strade rettilinee parallele. Entrambe hanno la stessa velocità medio, ma diverse velocità istantanee durante il percorso. Quale affermazione **non** può essere vera?",
       "categoria": "Cinematica",
       "sottocategoria": "Velocità - Deduzioni",
       "opzioni": [
         "Una accelera all'inizio e decelera alla fine",
         "Una ha velocità costante e l'altra no",
         "Entrambe hanno percorso la stessa distanza nello stesso tempo",
-        "Una ha velocità istantanea sempre inferiore alla media"
+        "Una ha velocità istantanea sempre inferiore alla medio"
       ],
       "rispostaCorretta": 3,
-      "spiegazione": "Se una moto ha velocità istantanea **sempre** inferiore alla media, allora non potrebbe mai raggiungere la media complessiva.",
+      "spiegazione": "Se una moto ha velocità istantanea **sempre** inferiore alla medio, allora non potrebbe mai raggiungere la medio complessiva.",
       "difficolta": "difficile",
       "paroleChiave": [
-        "velocità media",
+        "velocità medio",
         "velocità istantanea",
         "deducibilità"
       ]
@@ -3855,7 +3855,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Una retta spezzata nel grafico v-t indica due intervalli, ciascuno con accelerazione costante (diversa tra i due). È un moto con **accelerazione a strati** o moto composto.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "grafico v-t",
         "retta spezzata",
@@ -3875,7 +3875,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "La gittata è $R = \\frac{v_0^2\\sin(2\\theta)}{g}$. Passando da 30° a 45°: $\\sin(60°) \\approx 0.866$; $\\sin(90°) = 1$. Quindi la gittata **aumenta** fino al massimo a 45°.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto parabolico",
         "gittata",
@@ -3955,7 +3955,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La velocità è la derivata della posizione: $v = \\frac{dx}{dt} = 6t + 2$. A $t = 1$ s: $v(1) = 6(1) + 2 = 8$ m/s.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "legge oraria",
         "derivata",
@@ -3975,7 +3975,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La velocità è $v = 6t + 2$. L'accelerazione è la derivata della velocità: $a = \\frac{dv}{dt} = 6$ m/s² (costante, indipendente da $t$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "legge oraria",
         "derivata",
@@ -3984,9 +3984,9 @@
     },
     {
       "id": "cin_199",
-      "domanda": "Un corpo percorre 60 m in 3 s, poi altri 40 m in 2 s. Quale è la velocità media sull'intero percorso?",
+      "domanda": "Un corpo percorre 60 m in 3 s, poi altri 40 m in 2 s. Quale è la velocità medio sull'intero percorso?",
       "categoria": "Cinematica",
-      "sottocategoria": "Velocità media - Applicazione",
+      "sottocategoria": "Velocità medio - Applicazione",
       "opzioni": [
         "$v_m = 20$ m/s",
         "$v_m = 16$ m/s",
@@ -3994,10 +3994,10 @@
         "$v_m = 25$ m/s"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Velocità media: $v_m = \\frac{\\text{distanza totale}}{\\text{tempo totale}} = \\frac{60 + 40}{3 + 2} = \\frac{100}{5} = 20$ m/s.",
+      "spiegazione": "Velocità medio: $v_m = \\frac{\\text{distanza totale}}{\\text{tempo totale}} = \\frac{60 + 40}{3 + 2} = \\frac{100}{5} = 20$ m/s.",
       "difficolta": "facile",
       "paroleChiave": [
-        "velocità media",
+        "velocità medio",
         "distanza",
         "tempo"
       ]
@@ -4015,7 +4015,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel primo caso: $50 = 0 + a(5) \\Rightarrow a = 10$ m/s². Nel secondo caso con $v_0 = 10$ m/s: $v = 10 + 10(5) = 60$ m/s.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "velocità finale",
@@ -4035,7 +4035,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La massima altezza è raggiunta quando $v = v_0 - gt = 0$, quindi $v_0 = gt = 10(2) = 20$ m/s. Verifica: tempo totale = $\\frac{2v_0}{g} = \\frac{40}{10} = 4$ s ✓",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto parabolico",
         "velocità iniziale",
@@ -4054,12 +4054,12 @@
         "40 m"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "1. Calcolo l'accelerazione: $a = \\Delta v / \\Delta t = 20 / 4 = 5$ m/s². 2. Calcolo lo spazio totale in 4 s: $s(4) = \\frac{1}{2}at^2 = \\frac{1}{2}(5)(16) = 40$ m. 3. Calcolo lo spazio percorso nei primi 2 s: $s(2) = \\frac{1}{2}(5)(4) = 10$ m. 4. La distanza negli ultimi 2 s è la differenza: $40 - 10 = 30$ m. In alternativa, usando la velocità media nell'intervallo [2s, 4s]: $v_{media} = (10 + 20) / 2 = 15$ m/s; $distanza = 15 \\text{ m/s} \\times 2 \\text{ s} = 30$ m.",
+      "spiegazione": "1. Calcolo l'accelerazione: $a = \\Delta v / \\Delta t = 20 / 4 = 5$ m/s². 2. Calcolo lo spazio totale in 4 s: $s(4) = \\frac{1}{2}at^2 = \\frac{1}{2}(5)(16) = 40$ m. 3. Calcolo lo spazio percorso nei primi 2 s: $s(2) = \\frac{1}{2}(5)(4) = 10$ m. 4. La distanza negli ultimi 2 s è la differenza: $40 - 10 = 30$ m. In alternativa, usando la velocità medio nell'intervallo [2s, 4s]: $v_{medio} = (10 + 20) / 2 = 15$ m/s; $distanza = 15 \\text{ m/s} \\times 2 \\text{ s} = 30$ m.",
       "difficolta": "difficile",
       "paroleChiave": [
         "MUA",
         "ultimi secondi",
-        "velocità media"
+        "velocità medio"
       ]
     },
     {
@@ -4115,7 +4115,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nel MRU: $s = v \\cdot t$. Il vigile vede l'auto per il tempo in cui questa passa, percorrendo una distanza pari alla sua lunghezza $L$: $L = v \\cdot 2$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MRU",
         "lunghezza",
@@ -4135,7 +4135,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Quando la curva nel grafico v-t attraversa l'asse del tempo (v = 0), il corpo **inverte direzione di movimento**. La velocità negativa significa movimento nella direzione opposta.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "grafico v-t",
         "velocità nulla",
@@ -4155,7 +4155,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Caduta libera: $h = \\frac{1}{2}gt^2$. $h_1 = \\frac{1}{2}g(1)^2 = \\frac{g}{2}$; $h_2 = \\frac{1}{2}g(2)^2 = 2g$. Rapporto: $\\frac{h_2}{h_1} = \\frac{2g}{g/2} = 4$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "caduta libera",
         "distanze",
@@ -4175,7 +4175,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$\\omega = \\frac{2\\pi}{T}$ e $f = \\frac{1}{T}$. Se $\\omega' = 2\\omega$, allora $T' = \\frac{T}{2}$ e $f' = 2f$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MCU",
         "velocità angolare",
@@ -4196,7 +4196,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Nel moto parabolico: $v_x = v_0$ (costante) e $v_y$ aumenta (da 0 a $-gt$). Al suolo, entrambe le componenti sono non nulle, quindi il vettore è inclinato.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto parabolico",
         "velocità finale",
@@ -4236,7 +4236,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Caduta libera: $h = \\frac{1}{2}gt^2$. Con $h = 45$ m e $t = 1$ s: $45 = \\frac{1}{2}g(1)^2 \\Rightarrow g = 90$ m/s².",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "caduta libera",
         "accelerazione",
@@ -4296,7 +4296,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$s(2) = \\frac{1}{2}(5)(4) = 10$ m. $s(1) = 2.5$ m (dal quiz precedente). Intervallo: 10 - 2.5 = 7.5 m.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MUA",
         "secondo secondo",
@@ -4316,7 +4316,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Se l'accelerazione cambia direzione, deve avere una componente perpendicolare (normale) alla velocità. Questo causa **curvatura** della traiettoria (moto curvilineo).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "accelerazione",
         "direzione",
@@ -4327,7 +4327,7 @@
       "id": "cin_216",
       "domanda": "Un corpo si muove con velocità iniziale $v_0$ e accelerazione costante $a$. Quale è lo **spostamento medio** nei primi $t$ secondi (rapporto tra spostamento totale e tempo totale)?",
       "categoria": "Cinematica",
-      "sottocategoria": "MUA - Velocità media",
+      "sottocategoria": "MUA - Velocità medio",
       "opzioni": [
         "$s_m = v_0 + at$",
         "$s_m = v_0 t + \\frac{1}{2}at^2$",
@@ -4339,7 +4339,7 @@
       "difficolta": "difficile",
       "paroleChiave": [
         "MUA",
-        "velocità media",
+        "velocità medio",
         "spostamento medio"
       ]
     },
@@ -4356,7 +4356,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nel lanciamento verticale (assumendo no attrito), il corpo ritorna al punto di lancio con velocità di modulo uguale ma verso opposto: $|v_f| = |v_0|$ per simmetria dell'accelerazione di gravità.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lanciamento verticale",
         "simmetria",
@@ -4396,7 +4396,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Tempo di caduta: $t = \\sqrt{\\frac{2h}{g}}$. Se $h' = 2h$, allora $t' = \\sqrt{\\frac{4h}{g}} = \\sqrt{2} \\cdot t$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "caduta libera",
         "altezza",
@@ -4416,7 +4416,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$a_c = \\frac{v^2}{r}$. Se $v' = 3v$, allora $a_c' = \\frac{(3v)^2}{r} = \\frac{9v^2}{r} = 9 \\cdot a_c$ (noveuplica).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "MCU",
         "accelerazione centripeta",

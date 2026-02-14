@@ -853,7 +853,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$a = F/m = 10/4 = 2,5 \\, m/s^2$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "calcolo",
         "accelerazione",
@@ -874,7 +874,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La componente del peso lungo il piano è $mg\\sin\\theta$; quindi $a = (mg\\sin\\theta)/m = g\\sin\\theta$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "piano inclinato",
         "senza attrito",
@@ -895,7 +895,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Su piano orizzontale $N = mg = 2 \\cdot 10 = 20$ N; quindi $F_{attr} = \\mu_d \\cdot N = 0,2 \\cdot 20 = 4$ N.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "attrito",
         "mu_d",
@@ -916,7 +916,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Equazione verticale: $N - mg = ma$ (verso l'alto). Quindi $N = m(g + a)$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ascensore",
         "peso apparente",
@@ -937,7 +937,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Applicando $F = ma$ ai due corpi e sommando le equazioni si ottiene $a = g(m_2 - m_1)/(m_1 + m_2)$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "atwood",
         "puleggia",
@@ -958,7 +958,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Risultante orizzontale: $15 - 6 = 9$ N. Quindi $a = 9/3 = 2 \\, m/s^2$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "attrito",
         "risultante",
@@ -979,7 +979,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per Pitagora: $F_{ris} = \\sqrt{3^2 + 4^2} = 5$ N.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "forze perpendicolari",
         "pitagora",
@@ -1000,7 +1000,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$F = \\frac{mv^2}{r} = \\frac{1000\\cdot 10^2}{50} = \\frac{1000\\cdot 100}{50} = 2000\\,\\mathrm{N}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "centripeta",
         "curva",
@@ -1021,7 +1021,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$F = mv^2/r = 1000 \\cdot 100/50 = 2000$ N.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "centripeta",
         "mv2r",
@@ -1042,7 +1042,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La normale sulla parete è circa $N = F$; l'attrito statico massimo è $\\mu_s N = \\mu_s F$ e deve almeno bilanciare $mg$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "parete",
         "attrito statico",
@@ -1063,7 +1063,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Considero il sistema: massa totale 3 kg, risultante esterna 6 N $\\Rightarrow$ $a = 6/3 = 2 \\, m/s^2$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "sistema",
         "massa totale",
@@ -1084,7 +1084,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Sul blocco $m_1$ l'unica forza orizzontale è la tensione $T$: $T = m_1 a = 1 \\cdot 2 = 2$ N.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "tensione",
         "sistemi",
@@ -1105,7 +1105,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$a = F/m = 1/0,5 = 2 \\, m/s^2$. Da fermo: $v = at = 2 \\cdot 4 = 8$ m/s.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "forza costante",
         "accelerazione",
@@ -1126,7 +1126,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Lungo il piano: $mg\\sin 30^\\circ = 100 \\cdot 0,5 = 50$ N. Normale: $N = mg\\cos 30^\\circ \\approx 100 \\cdot 0,866 = 86,6$ N. Attrito: $\\mu_d N \\approx 0,1 \\cdot 86,6 = 8,66$ N (verso l'alto). Risultante: $50 - 8,66 = 41,34$ N $\\Rightarrow$ $a = 41,34/10 \\approx 4,13 \\, m/s^2$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "piano inclinato",
         "attrito",
@@ -1147,7 +1147,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L'accelerazione centripeta in modulo è $a_c = v^2/r$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "accelerazione centripeta",
         "v2r",
@@ -1168,7 +1168,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel pendolo conico la tensione si scompone: la componente verticale bilancia $mg$, quella orizzontale è centripeta.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "pendolo conico",
         "tensione",
@@ -1189,7 +1189,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Una componente verso l'alto riduce la normale $N$; poiché $F_{attr} = \\mu_d N$, l'attrito diminuisce.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "forza inclinata",
         "normale",
@@ -1210,7 +1210,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$mg = 2 \\cdot 10 = 20$ N. Se $T = mg$, risultante zero $\\Rightarrow$ $a = 0$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "tensione",
         "equilibrio",
@@ -1231,7 +1231,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Poiché $\\sin\\theta$ aumenta al crescere di $\\theta$ (tra 0° e 90°), aumenta anche $g\\sin\\theta$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "sin",
         "piano inclinato",
@@ -1252,7 +1252,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$F_c = mv^2/r$: se $v$ raddoppia, $v^2$ quadruplica, quindi anche $F_c$ quadruplica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "centripeta",
         "dipendenza",
@@ -1273,7 +1273,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$N = mg = 50$ N. Attrito statico massimo: $F_{s,max} = \\mu_s N = 0,4 \\cdot 50 = 20$ N.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "attrito statico",
         "soglia",
@@ -1294,7 +1294,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Con attrito dinamico costante ($\\mu_d$ costante e $N$ costante), la forza d'attrito è costante e opposta al moto $\\Rightarrow$ accelerazione costante opposta alla velocità.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "attrito dinamico",
         "decelerazione",
@@ -1315,7 +1315,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Forze perpendicolari: $\\sqrt{10^2 + 10^2} = 10\\sqrt{2} \\approx 14,1$ N.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "vettori",
         "perpendicolari",
@@ -1336,7 +1336,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Prendendo verso l'alto positivo: $T - mg = -ma$ $\\Rightarrow$ $T = m(g - a)$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ascensore",
         "tensione",
@@ -1357,7 +1357,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Il modulo dell'accelerazione dipende dal modulo della risultante: $a = F/m = 12/3 = 4 \\, m/s^2$, indipendentemente dall'angolo (per il modulo).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "risultante",
         "modulo",
@@ -1378,7 +1378,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L'attrito dinamico si oppone al moto relativo: se il blocco scende, l'attrito è verso l'alto lungo il piano.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "attrito",
         "piano inclinato",
@@ -1399,7 +1399,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Per non slittare, l'attrito statico disponibile ($\\leq \\mu_s N$) deve essere sufficiente a fornire la forza necessaria $ma$ al blocco superiore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "slittamento",
         "attrito statico",
@@ -1420,7 +1420,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Il corpo più pesante ($m_2$) accelera verso il basso, quindi $T < m_2 g$; quello più leggero accelera verso l'alto, quindi $T > m_1 g$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "atwood",
         "tensione",
@@ -1441,7 +1441,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Attrito dinamico $F_{attr} = \\mu_d N$ cresce, quindi la risultante orizzontale diminuisce e l'accelerazione diminuisce.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "mu_d",
         "attrito",
@@ -1462,7 +1462,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "L'attrito statico si orienta per opporsi alla tendenza allo scorrimento, che può essere verso il basso o verso l'alto a seconda delle altre forze.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "attrito statico",
         "tendenza al moto",
@@ -1483,7 +1483,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per la seconda legge di Newton, $a(t) = F_{ris}(t)/m$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "forza variabile",
         "istantaneo",
@@ -1504,7 +1504,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Risultante $= 3 + 7 = 10$ N $\\Rightarrow$ $a = 10/2 = 5 \\, m/s^2$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "somma forze",
         "risultante",
@@ -1525,7 +1525,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Velocità costante $\\Rightarrow$ $a = 0$ $\\Rightarrow$ risultante orizzontale zero, quindi $F$ bilancia l'attrito dinamico $\\mu_d N$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "velocità costante",
         "attrito dinamico",
@@ -1546,7 +1546,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel massimo allungamento la velocità è zero, ma la forza risultante non è necessariamente zero; in quel punto la risultante è verso l'alto (verso l'equilibrio) quindi anche l'accelerazione.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "molla",
         "accelerazione",
@@ -1567,7 +1567,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per l'equilibrio lungo il piano bisogna bilanciare la componente del peso: $F = mg\\sin 30^\\circ$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "equilibrio",
         "piano inclinato",
@@ -1588,7 +1588,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Nel moto circolare uniforme cambia la direzione della velocità: serve una risultante verso il centro (centripeta).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto circolare",
         "risultante",
@@ -1609,7 +1609,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La componente orizzontale è $F_x = F\\cos\\theta$; con $\\theta = 60^\\circ$ vale $F\\cos 60^\\circ$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "componenti",
         "cos",
@@ -1630,7 +1630,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Forza esterna netta sul sistema: $10 - (2 + 3) = 5$ N. Massa totale: $2 + 3 = 5$ kg. Quindi $a = 5/5 = 1 \\, m/s^2$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "sistema",
         "attrito",
@@ -1647,11 +1647,11 @@
         "Aumenta in modulo fin dall'inizio",
         "Diminuisce fino a zero e poi aumenta nel verso della forza",
         "Resta costante",
-        "Diventa immediatamente zero"
+        "Diventa immediotamente zero"
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Se l'accelerazione è opposta alla velocità iniziale, il corpo rallenta, può fermarsi e poi invertire il verso accelerando nella direzione della forza.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "verso",
         "accelerazione",
@@ -1672,7 +1672,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Al distacco imminente l'attrito statico è al massimo: $F_{el}$ (che tira) $= F_{s,max} = \\mu_s N$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "molla",
         "attrito statico",
@@ -2900,7 +2900,7 @@
   },
   {
     "id": "din_139",
-    "domanda": "Un'automobile di massa 1000 kg accelera da 0 a 20 m/s in 5 secondi. Qual è la forza media applicata?",
+    "domanda": "Un'automobile di massa 1000 kg accelera da 0 a 20 m/s in 5 secondi. Qual è la forza medio applicata?",
     "categoria": "Dinamica",
     "sottocategoria": "Seconda legge di Newton",
     "opzioni": [
@@ -2984,7 +2984,7 @@
   },
   {
     "id": "din_143",
-    "domanda": "Un motore compie un lavoro di 3000 J in 5 secondi. Qual è la potenza media erogata?",
+    "domanda": "Un motore compie un lavoro di 3000 J in 5 secondi. Qual è la potenza medio erogata?",
     "categoria": "Dinamica",
     "sottocategoria": "Potenza",
     "opzioni": [
@@ -2994,7 +2994,7 @@
       "$15000 \\, W$"
     ],
     "rispostaCorretta": 1,
-    "spiegazione": "Potenza media: $P = W/t = 3000/5 = 600 \\, W$.",
+    "spiegazione": "Potenza medio: $P = W/t = 3000/5 = 600 \\, W$.",
     "difficolta": "facile",
     "paroleChiave": [
       "potenza",
@@ -3194,7 +3194,7 @@
   },
   {
     "id": "din_153",
-    "domanda": "Un veicolo di massa 800 kg viaggia a 15 m/s e frena fino a fermarsi in 50 m. Qual è la forza frenante media?",
+    "domanda": "Un veicolo di massa 800 kg viaggia a 15 m/s e frena fino a fermarsi in 50 m. Qual è la forza frenante medio?",
     "categoria": "Dinamica",
     "sottocategoria": "Lavoro e energia",
     "opzioni": [
