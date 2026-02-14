@@ -37,7 +37,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
               shape: BoxShape.circle,
               boxShadow: [
                 BoxShadow(
-                  color: color.withOpacity(0.4),
+                  color: color.withValues(alpha: 0.4),
                   blurRadius: 30,
                   spreadRadius: 5,
                   offset: const Offset(0, 10),
@@ -72,14 +72,14 @@ class _OnboardingPageState extends State<OnboardingPage> {
           color: primaryColor,
           gradientColors: [
             primaryColor,
-            primaryColor.withOpacity(0.7),
+            primaryColor.withValues(alpha: 0.7),
           ],
         ),
         decoration: PageDecoration(
           bodyTextStyle: TextStyle(
             fontSize: 18,
             height: 1.5,
-            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+            color: isDark ? Colors.white.withValues(alpha: 0.9) : Colors.black87,
           ),
           titleTextStyle: TextStyle(
             fontSize: 28,
@@ -109,7 +109,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           bodyTextStyle: TextStyle(
             fontSize: 18,
             height: 1.5,
-            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+            color: isDark ? Colors.white.withValues(alpha: 0.9) : Colors.black87,
           ),
           titleTextStyle: const TextStyle(
             fontSize: 26,
@@ -139,7 +139,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           bodyTextStyle: TextStyle(
             fontSize: 18,
             height: 1.5,
-            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+            color: isDark ? Colors.white.withValues(alpha: 0.9) : Colors.black87,
           ),
           titleTextStyle: const TextStyle(
             fontSize: 26,
@@ -169,7 +169,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           bodyTextStyle: TextStyle(
             fontSize: 18,
             height: 1.5,
-            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+            color: isDark ? Colors.white.withValues(alpha: 0.9) : Colors.black87,
           ),
           titleTextStyle: const TextStyle(
             fontSize: 26,
@@ -199,7 +199,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           bodyTextStyle: TextStyle(
             fontSize: 18,
             height: 1.5,
-            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+            color: isDark ? Colors.white.withValues(alpha: 0.9) : Colors.black87,
           ),
           titleTextStyle: const TextStyle(
             fontSize: 26,
@@ -229,7 +229,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           bodyTextStyle: TextStyle(
             fontSize: 18,
             height: 1.5,
-            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+            color: isDark ? Colors.white.withValues(alpha: 0.9) : Colors.black87,
           ),
           titleTextStyle: const TextStyle(
             fontSize: 26,
@@ -259,7 +259,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           bodyTextStyle: TextStyle(
             fontSize: 18,
             height: 1.5,
-            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+            color: isDark ? Colors.white.withValues(alpha: 0.9) : Colors.black87,
           ),
           titleTextStyle: const TextStyle(
             fontSize: 26,
@@ -289,7 +289,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           bodyTextStyle: TextStyle(
             fontSize: 18,
             height: 1.5,
-            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+            color: isDark ? Colors.white.withValues(alpha: 0.9) : Colors.black87,
           ),
           titleTextStyle: const TextStyle(
             fontSize: 26,
@@ -326,7 +326,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
         height: arrowButtonSize,
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: primaryColor.withOpacity(0.1),
+          color: primaryColor.withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Icon(Icons.arrow_back_rounded, color: primaryColor, size: 28),
@@ -337,12 +337,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
         alignment: Alignment.center,
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [primaryColor, primaryColor.withOpacity(0.8)],
+            colors: [primaryColor, primaryColor.withValues(alpha: 0.8)],
           ),
           borderRadius: BorderRadius.circular(12),
           boxShadow: [
             BoxShadow(
-              color: primaryColor.withOpacity(0.3),
+              color: primaryColor.withValues(alpha: 0.3),
               blurRadius: 8,
               offset: const Offset(0, 4),
             ),
@@ -377,12 +377,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
               decoration: BoxDecoration(
                 color: isLastPage
                     ? primaryColor
-                    : primaryColor.withOpacity(0.1),
+                    : primaryColor.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: isLastPage
                     ? [
                         BoxShadow(
-                          color: primaryColor.withOpacity(0.3),
+                          color: primaryColor.withValues(alpha: 0.3),
                           blurRadius: 12,
                           offset: const Offset(0, 4),
                         ),
@@ -413,7 +413,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       // Dots
       dotsDecorator: DotsDecorator(
         size: const Size(12.0, 12.0),
-        color: primaryColor.withOpacity(0.2),
+        color: primaryColor.withValues(alpha: 0.2),
         activeSize: const Size(28.0, 12.0),
         activeColor: primaryColor,
         activeShape: RoundedRectangleBorder(

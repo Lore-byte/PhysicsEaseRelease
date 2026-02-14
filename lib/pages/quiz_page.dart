@@ -35,7 +35,7 @@ class _QuizPageState extends State<QuizPage> {
   List<Quiz> _quizSearchResults = [];
 
   // Filtri per la ricerca
-  Set<String> _searchSelectedCategories = {};
+  final Set<String> _searchSelectedCategories = {};
   String _searchSelectedDifficulty = 'tutte';
   bool _filtersVisible = false;
 

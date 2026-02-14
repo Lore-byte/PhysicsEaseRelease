@@ -34,7 +34,7 @@ class CollaboratePage extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
-                          color: colorScheme.primary.withOpacity(0.1),
+                          color: colorScheme.primary.withValues(alpha: 0.1),
                           shape: BoxShape.circle,
                         ),
                         child: Icon(
@@ -71,7 +71,7 @@ class CollaboratePage extends StatelessWidget {
                     gradient: LinearGradient(
                       colors: [
                         colorScheme.primary,
-                        colorScheme.primary.withOpacity(0.8),
+                        colorScheme.primary.withValues(alpha: 0.8),
                       ],
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
@@ -79,7 +79,7 @@ class CollaboratePage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(24),
                     boxShadow: [
                       BoxShadow(
-                        color: colorScheme.primary.withOpacity(0.4),
+                        color: colorScheme.primary.withValues(alpha: 0.4),
                         blurRadius: 16,
                         offset: const Offset(0, 6),
                       ),
@@ -110,7 +110,7 @@ class CollaboratePage extends StatelessWidget {
                             Container(
                               padding: const EdgeInsets.all(14),
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.2),
+                                color: Colors.white.withValues(alpha: 0.2),
                                 borderRadius: BorderRadius.circular(16),
                               ),
                               child: Icon(
@@ -135,7 +135,7 @@ class CollaboratePage extends StatelessWidget {
                                   Text(
                                     'Visualizza su GitHub',
                                     style: textTheme.bodyMedium?.copyWith(
-                                      color: colorScheme.onPrimary.withOpacity(0.9),
+                                      color: colorScheme.onPrimary.withValues(alpha: 0.9),
                                     ),
                                   ),
                                 ],
@@ -221,10 +221,10 @@ class CollaboratePage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                    color: colorScheme.primaryContainer.withOpacity(0.5),
+                    color: colorScheme.primaryContainer.withValues(alpha: 0.5),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: colorScheme.primary.withOpacity(0.3),
+                      color: colorScheme.primary.withValues(alpha: 0.3),
                       width: 1,
                     ),
                   ),
@@ -289,7 +289,7 @@ class CollaboratePage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: colorScheme.primary.withOpacity(0.1),
+                    color: colorScheme.primary.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Icon(
@@ -322,10 +322,10 @@ class CollaboratePage extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: colorScheme.secondaryContainer.withOpacity(0.5),
+                color: colorScheme.secondaryContainer.withValues(alpha: 0.5),
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
-                  color: colorScheme.secondary.withOpacity(0.3),
+                  color: colorScheme.secondary.withValues(alpha: 0.3),
                   width: 1,
                 ),
               ),
@@ -365,7 +365,7 @@ class CollaboratePage extends StatelessWidget {
   }) {
     return Container(
       decoration: BoxDecoration(
-        color: colorScheme.surfaceContainerHighest.withOpacity(0.5),
+        color: colorScheme.surfaceContainerHighest.withValues(alpha: 0.5),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: colorScheme.outlineVariant,
@@ -380,7 +380,7 @@ class CollaboratePage extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: colorScheme.primary.withOpacity(0.1),
+                color: colorScheme.primary.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Icon(
