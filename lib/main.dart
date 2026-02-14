@@ -651,13 +651,75 @@ class _MyAppState extends State<MyApp> {
                 DrawerCard(
                   icon: Icons.help_outline,
                   title: 'Aiuto',
-                  onTap: () {
+                  onTap: () async {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
-                    Navigator.of(builderContext, rootNavigator: true).push(
+                    await Navigator.of(builderContext, rootNavigator: true).push(
                       MaterialPageRoute(
-                        builder: (innerContext) =>
-                            HelpPage(themeMode: _themeMode),
+                        builder: (innerContext) => HelpPage(
+                          themeMode: _themeMode,
+                          setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
+                          onNavigateToSection: (ctx, section) async {
+                            if (section == 'search') {
+                              Navigator.of(ctx).pop();
+                              if (mounted) {
+                                setState(() {
+                                  _selectedIndex = 0;
+                                  _searchBarVisible.value = true;
+                                });
+                              }
+                            } else if (section == 'favorites') {
+                              _setGlobalAppBarVisibility(false);
+                              await Navigator.push(
+                                ctx,
+                                MaterialPageRoute(
+                                  builder: (context) => FavoritesPage(
+                                    allFormulas: _allFormulas,
+                                    favoriteIds: _favoriteIds,
+                                    onToggleFavorite: _toggleFavorite,
+                                    themeMode: _themeMode,
+                                    setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
+                                    formulaNotes: _formulaNotes,
+                                    onSaveNotes: _saveNotes,
+                                  ),
+                                ),
+                              );
+                              _setGlobalAppBarVisibility(true);
+                            } else if (section == 'calculator') {
+                              _setGlobalAppBarVisibility(false);
+                              await Navigator.push(
+                                ctx,
+                                MaterialPageRoute(
+                                  builder: (context) => const CalculatorPage(),
+                                ),
+                              );
+                              _setGlobalAppBarVisibility(true);
+                            } else if (section == 'data') {
+                              _setGlobalAppBarVisibility(false);
+                              await Navigator.push(
+                                ctx,
+                                MaterialPageRoute(
+                                  builder: (context) => DataPage(
+                                    setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
+                                  ),
+                                ),
+                              );
+                              _setGlobalAppBarVisibility(true);
+                            } else if (section == 'tools') {
+                              _setGlobalAppBarVisibility(false);
+                              await Navigator.push(
+                                ctx,
+                                MaterialPageRoute(
+                                  builder: (context) => ToolsPage(
+                                    onAddFormula: _addFormulaAndSave,
+                                    setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
+                                  ),
+                                ),
+                              );
+                              _setGlobalAppBarVisibility(true);
+                            }
+                          },
+                        ),
                       ),
                     );
                   },
