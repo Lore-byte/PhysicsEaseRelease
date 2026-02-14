@@ -212,7 +212,7 @@
     },
     {
       "id": "flu_011",
-      "domanda": "Se la densità media di un corpo è minore della densità del liquido in cui è immerso, cosa succede?",
+      "domanda": "Se la densità medio di un corpo è minore della densità del liquido in cui è immerso, cosa succede?",
       "categoria": "Fluidi",
       "sottocategoria": "Galleggiamento",
       "opzioni": [
@@ -432,7 +432,7 @@
         "Q = m·g"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Per flusso medio uniforme su una sezione: Q = A·v (area per velocità media).",
+      "spiegazione": "Per flusso medio uniforme su una sezione: Q = A·v (area per velocità medio).",
       "difficolta": "facile",
       "paroleChiave": [
         "portata",
@@ -443,7 +443,7 @@
     },
     {
       "id": "flu_022",
-      "domanda": "In un flusso stazionario di fluido incomprimibile in un tubo, se la sezione diminuisce, la velocità media:",
+      "domanda": "In un flusso stazionario di fluido incomprimibile in un tubo, se la sezione diminuisce, la velocità medio:",
       "categoria": "Fluidi",
       "sottocategoria": "Continuità (qualitativa)",
       "opzioni": [
@@ -853,7 +853,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per Stevino Δp = ρgh = 1000·9,8·5,0 = $4{,}9 \\\\times 10^{4}$ Pa. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "stevino",
         "delta p",
@@ -874,7 +874,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "p = p_atm + ρgh = $1{,}01 \\\\times 10^{5}$ + 1025·9,8·12 $\\approx 3{,}20 \\\\times 10^{5}$ Pa. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "pressione assoluta",
         "stevino",
@@ -895,7 +895,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "In equilibrio $\\rho_{acqua}$ g h_acqua = $\\rho_{olio}$ g h_olio $\\Rightarrow$ h_olio = (1000/800)·10 cm = 12,5 cm. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "vasi comunicanti",
         "densita",
@@ -916,7 +916,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Per Pascal p1 = p2 $\\Rightarrow$ F1/A1 = F2/A2, quindi F2 = F1·(A2/A1) = 120·(50/2) = 3000 N. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "pascal",
         "pressa idraulica",
@@ -937,7 +937,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "La spinta vale F_A = $\\rho$ g V = 1000·9,8·$3{,}0 \\\\times 10^{-3}$ = 29,4 N. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "archimede",
         "spinta",
@@ -958,7 +958,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Peso reale mg = 39,2 N; spinta F_A = ρgV = 1000·9,8·0,005 = 49 N; peso apparente = mg − F_A = −9,8 N (quindi tenderebbe a salire), l'opzione numericamente coerente con mg−F_A è -9,8 N ma non è presente: attenzione, qui l'oggetto non può restare completamente immerso in equilibrio e risalirebbe. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "peso apparente",
         "archimede",
@@ -979,7 +979,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In galleggiamento V_imm/V_tot = $\\rho$_corpo/$\\rho$_fluido $\\Rightarrow \\rho$_corpo = 0,60·1000 = 600 kg/m³. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "galleggiamento",
         "frazione immersa",
@@ -1000,7 +1000,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Per continuità Q = A v costante: v2 = v1·A1/A2 = 0,50·6/2 = 1,5 m/s. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "continuita",
         "Q",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": "flu_049",
-      "domanda": "La portata di acqua in un tubo è Q = $2{,}0 \\\\times 10^{-3}$ m³/s. Se l'area della sezione è A = $5{,}0 \\\\times 10^{-4}$ m², qual è la velocità media v?",
+      "domanda": "La portata di acqua in un tubo è Q = $2{,}0 \\\\times 10^{-3}$ m³/s. Se l'area della sezione è A = $5{,}0 \\\\times 10^{-4}$ m², qual è la velocità medio v?",
       "categoria": "Fluidi",
       "sottocategoria": "Portata (calcoli)",
       "opzioni": [
@@ -1021,7 +1021,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Usando Q = A·v, si ha v = Q/A = $2{,}0 \\\\times 10^{-3}$ / $5{,}0 \\\\times 10^{-4}$ = 4,0 m/s. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "portata",
         "Q",
@@ -1042,7 +1042,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "A quota costante: p1 + 1/2 $\\rho$ v1² = p2 + 1/2 $\\rho$ v2² $\\Rightarrow$ p2 = p1 + 1/2$\\rho$(v1²−v2²) = $2{,}20 \\\\times 10^{5}$ + 500(4−36) = $2{,}04 \\\\times 10^{5}$ Pa. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "bernoulli",
         "pressione",
@@ -1063,7 +1063,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Bernoulli mostra che, a parità di quota, un aumento della velocità è associato a una diminuzione di pressione statica (effetto Venturi). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "venturi",
         "bernoulli",
@@ -1084,7 +1084,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Per Torricelli v = √(2gh) = √(2·9,8·1,8) $\\approx$ √35,28 $\\approx$ 5,9 m/s. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "torricelli",
         "getto",
@@ -1105,7 +1105,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Da v = √(2gh), il rapporto è v2/v1 = √(h2/h1) = √(2,0/0,50) = √4 = 2. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "torricelli",
         "rapporto",
@@ -1126,7 +1126,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Q = Av costante $\\Rightarrow$ A1v1 = A2v2; se A1 = 4A2 allora v2 = 4v1. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "continuita",
         "rapporti",
@@ -1147,7 +1147,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Bernoulli si usa tipicamente per flusso stazionario di fluido ideale, lungo una linea di corrente. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "bernoulli",
         "ipotesi",
@@ -1168,7 +1168,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Δp = ρgΔh = 1000·9,8·2,0 = $1{,}96 \\\\times 10^{4}$ Pa. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "stevino",
         "delta h",
@@ -1180,7 +1180,7 @@
       "id": "flu_057",
       "domanda": "Un oggetto di volume $8{,}0 \\\\times 10^{-4}$ m³ e massa 0,60 kg è immerso in acqua. Affonda o galleggia? ($\\rho_{acqua}$ = 1000 kg/m³)",
       "categoria": "Fluidi",
-      "sottocategoria": "Galleggiamento (densità media)",
+      "sottocategoria": "Galleggiamento (densità medio)",
       "opzioni": [
         "Galleggia perché la sua densità è minore di quella dell'acqua",
         "Affonda perché la sua densità è minore di quella dell'acqua",
@@ -1189,7 +1189,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La densità dell'oggetto è $\\rho$ = m/V = 0,60 / $8{,}0 \\\\times 10^{-4}$ = 750 kg/m³, minore di 1000 kg/m³, quindi tende a galleggiare. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "densita",
         "galleggia",
@@ -1210,7 +1210,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "F_A = ρgV = 1000·9,8·0,020 = 196 N. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "archimede",
         "spinta",
@@ -1231,7 +1231,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "V_imm/V_tot = 0,50/2,0 = 0,25 $\\Rightarrow \\rho_{blocco}$ = 0,25·$\\rho_{acqua}$ = 250 kg/m³. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "galleggiamento",
         "volume immerso",
@@ -1241,7 +1241,7 @@
     },
     {
       "id": "flu_060",
-      "domanda": "Un tubo ha diametro 2,0 cm. Se la velocità media dell'acqua è 1,5 m/s, qual è la portata volumetrica Q? (usa A = πr²)",
+      "domanda": "Un tubo ha diametro 2,0 cm. Se la velocità medio dell'acqua è 1,5 m/s, qual è la portata volumetrica Q? (usa A = πr²)",
       "categoria": "Fluidi",
       "sottocategoria": "Portata (geometria)",
       "opzioni": [
@@ -1252,7 +1252,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "r = 0,01 m $\\Rightarrow$ A = $\\pi$·(0,01)² $\\approx 3{,}14 \\\\times 10^{-4}$ m²; Q = A·v $\\approx 3{,}14 \\\\times 10^{-4}$·1,5 $\\approx 4{,}7 \\\\times 10^{-4}$ m³/s. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "portata",
         "sezione",
@@ -1273,7 +1273,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Con A1v1 = A2v2, v2 = v1·A1/A2 = 2,0·(3,0/1,0) = 6,0 m/s. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "continuita",
         "sezione",
@@ -1294,7 +1294,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L'equazione di Bernoulli collega pressione e velocità (oltre alla quota) nel flusso di un fluido ideale. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "bernoulli",
         "pressione",
@@ -1315,7 +1315,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "A quota costante Bernoulli implica che pressione maggiore corrisponde a velocità minore, quindi se pA > pB allora vA < vB. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "bernoulli",
         "p maggiore v minore",
@@ -1336,7 +1336,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Poiché v = √(2gh), se h raddoppia allora v aumenta di un fattore √2. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "torricelli",
         "dipendenza",
@@ -1357,7 +1357,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Salendo diminuisce la pressione esterna; un gas tende ad espandersi se la pressione diminuisce (qualitativamente).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "bolla",
         "pressione",
@@ -1378,7 +1378,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Se affonda, la forza risultante è verso il basso, quindi il peso è maggiore della spinta: P > F_A. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "affondare",
         "archimede",
@@ -1388,7 +1388,7 @@
     },
     {
       "id": "flu_067",
-      "domanda": "Un oggetto è sospeso in equilibrio in un liquido (né sale né scende) ed è completamente immerso. Quale condizione vale sulla densità media dell'oggetto rispetto al liquido?",
+      "domanda": "Un oggetto è sospeso in equilibrio in un liquido (né sale né scende) ed è completamente immerso. Quale condizione vale sulla densità medio dell'oggetto rispetto al liquido?",
       "categoria": "Fluidi",
       "sottocategoria": "Equilibrio in immersione",
       "opzioni": [
@@ -1398,8 +1398,8 @@
         "Dipende solo dalla forma"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "In equilibrio con immersione completa, spinta e peso si eguagliano; ciò implica densità uguali (densità media dell'oggetto uguale a quella del fluido). ",
-      "difficolta": "media",
+      "spiegazione": "In equilibrio con immersione completa, spinta e peso si eguagliano; ciò implica densità uguali (densità medio dell'oggetto uguale a quella del fluido). ",
+      "difficolta": "medio",
       "paroleChiave": [
         "equilibrio",
         "densita",
@@ -1420,7 +1420,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Per conservazione della massa (moto stazionario, fluido incomprimibile) la portata volumetrica si conserva: Q1 = Q2. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "continuita",
         "portata",
@@ -1430,7 +1430,7 @@
     },
     {
       "id": "flu_069",
-      "domanda": "In un condotto, l'area raddoppia mantenendo costante la portata. La velocità media del fluido:",
+      "domanda": "In un condotto, l'area raddoppia mantenendo costante la portata. La velocità medio del fluido:",
       "categoria": "Fluidi",
       "sottocategoria": "Continuità (qualitativo)",
       "opzioni": [
@@ -1441,7 +1441,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Con Q = A·v costante, se A raddoppia allora v deve dimezzarsi. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "continuita",
         "portata costante",
@@ -1462,7 +1462,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "p2 = p1 + 1/2$\\rho$(v1²−v2²) = $1{,}50 \\\\times 10^{5}$ + 500(1−25) = $1{,}38 \\\\times 10^{5}$ Pa. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "bernoulli",
         "pressione",
@@ -1483,7 +1483,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "La forma base di Bernoulli per fluido ideale non include perdite viscose (attriti). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "bernoulli",
         "termini",
@@ -1504,7 +1504,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "F_A = $\\rho$ g V = 1200·9,8·$1{,}0 \\\\times 10^{-3} \\approx$ 11,8 N. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "archimede",
         "spinta",
@@ -1525,7 +1525,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In galleggiamento la spinta deve eguagliare il peso; aumentando il peso serve spostare più acqua, quindi aumenta il volume immerso. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "nave",
         "galleggiamento",
@@ -1546,7 +1546,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Δp = ρgh = 13600·9,8·0,020 $\\approx 2{,}7 \\\\times 10^{3}$ Pa. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "manometro",
         "U",
@@ -1567,7 +1567,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "F = p·A = $2{,}0 \\\\times 10^{5}$·0,020 = 4000 N.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "pressione",
         "forza",
@@ -1588,7 +1588,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Q = A·v = $3{,}0 \\\\times 10^{-3}$·0,80 = $2{,}4 \\\\times 10^{-3}$ m³/s. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "portata",
         "A v",
@@ -1609,7 +1609,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per conservazione della massa, in moto stazionario la portata volumetrica si conserva lungo il condotto. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "continuita",
         "portata",
@@ -1630,7 +1630,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In idrostatica la pressione a una data profondità dipende dal fluido e dalla quota (Stevino), non dalla forma del contenitore. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "idrostatica",
         "stevino",
@@ -1651,7 +1651,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Torricelli: v $\\propto$ √h, quindi v2/v1 = √(0,20/0,80) = √(1/4) = 1/2; la velocità diventa 2 volte minore. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "torricelli",
         "radice",
@@ -1672,7 +1672,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per continuità in restringimento la velocità aumenta; per Bernoulli (stessa quota) aumentando v la pressione statica tende a diminuire. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "venturi",
         "continuita",
@@ -1892,7 +1892,7 @@
     },
     {
       "id": "flu_091",
-      "domanda": "A parità di fluido e diametro del tubo, se la velocità media del flusso raddoppia, il numero di Reynolds (Re) come varia?",
+      "domanda": "A parità di fluido e diametro del tubo, se la velocità medio del flusso raddoppia, il numero di Reynolds (Re) come varia?",
       "categoria": "Fluidi",
       "sottocategoria": "Reynolds (dipendenze)",
       "opzioni": [
@@ -1902,7 +1902,7 @@
         "Quadruplica"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "Poiché Re è proporzionale alla velocità media (con gli altri parametri costanti), raddoppiando v raddoppia anche Re.",
+      "spiegazione": "Poiché Re è proporzionale alla velocità medio (con gli altri parametri costanti), raddoppiando v raddoppia anche Re.",
       "difficolta": "difficile",
       "paroleChiave": [
         "reynolds",
@@ -2165,7 +2165,7 @@
     },
     {
       "id": "flu_104",
-      "domanda": "In un tubo cilindrico, se la portata raddoppia e il diametro resta invariato, la velocità media del fluido:",
+      "domanda": "In un tubo cilindrico, se la portata raddoppia e il diametro resta invariato, la velocità medio del fluido:",
       "categoria": "Fluidi",
       "sottocategoria": "Portata e velocità (dipendenze)",
       "opzioni": [
@@ -2438,7 +2438,7 @@
     },
     {
       "id": "flu_117",
-      "domanda": "In un tubo orizzontale, la portata è Q = $1{,}2 \\\\times 10^{-3}$ m³/s. Se il diametro interno è d = 1,0 cm, qual è circa la velocità media? (usa A = $\\pi$(d/2)²)",
+      "domanda": "In un tubo orizzontale, la portata è Q = $1{,}2 \\\\times 10^{-3}$ m³/s. Se il diametro interno è d = 1,0 cm, qual è circa la velocità medio? (usa A = $\\pi$(d/2)²)",
       "categoria": "Fluidi",
       "sottocategoria": "Portata (calcolo con diametro)",
       "opzioni": [
@@ -2454,7 +2454,7 @@
         "portata",
         "diametro",
         "Q su A",
-        "velocita media"
+        "velocita medio"
       ]
     },
     {
@@ -2533,7 +2533,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In quiete, il fluido non può esercitare sforzi tangenziali (di taglio) alle superfici, solo pressioni normali. Per equilibrio, la pressione deve essere isotropa in ogni punto.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isotropa",
         "pressione",
@@ -2554,7 +2554,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La pressione aumenta con la profondità nel fluido. La pressione sulla parte inferiore del corpo è maggiore di quella sulla parte superiore, generando una risultante verso l'alto pari al peso del fluido spostato.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "archimede",
         "spinta",
@@ -2575,7 +2575,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel modello di fluido ideale si trascura la viscosità (attrito interno), semplificando i calcoli. I fluidi reali hanno sempre viscosità non nulla che causa dissipazione energetica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "fluido ideale",
         "viscosita",
@@ -2596,7 +2596,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nei vasi comunicanti, se i livelli fossero a diverse altezze, avremmo pressioni diverse al fondo. Per equilibrio, la pressione deve stabilizzarsi uguale, il che accade quando i livelli sono alla stessa altezza.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "vasi comunicanti",
         "equilibrio",
@@ -2617,7 +2617,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel fluido confinato di una pressa idraulica, la pressione$\\Delta p$ aggiunta si propaga uniformemente. Poiché $F = p \\cdot A$, su un'area più grande la forza risulterà amplificata.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "pascal",
         "pressa idraulica",
@@ -2638,7 +2638,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La spinta di Archimede è $F_A = \\rho_{fluido} g V_{immerso}$. Se la densità del fluido diminuisce, la spinta diminuisce. Se il peso del corpo rimane costante, la condizione di equilibrio $F_A = mg$ non è più soddisfatta, e il corpo affonda.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "galleggiamento",
         "densita",
@@ -2659,7 +2659,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Un fluido in quiete non può sostenere sforzi di taglio (tangenziali). Per questa ragione, la forza di pressione deve agire sempre normalmente (perpendicolarmente) a qualsiasi superficie.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "pressione",
         "normale",
@@ -2680,7 +2680,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La pressione in un punto dipende solo dalla profondità h (verticale) e dalle proprietà del fluido, non dalla forma orizzontale del contenitore. Questo è il 'paradosso idrostatico'.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "stevino",
         "profondita",
@@ -2701,7 +2701,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La portata massica $\\dot{m} = \\rho A v$ deve conservarsi in condizioni stazionarie (no accumuli). Per fluido incomprimibile ($\\rho$ costante), $A v = Q$ si conserva.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "continuita",
         "portata",
@@ -2722,7 +2722,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel restringimento di una condotta orizzontale, per conservare la portata, la velocità aumenta. Per conservare l'energia totale (Bernoulli), l'aumento di energia cinetica implica una diminuzione di pressione statica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "venturi",
         "energia cinetica",
@@ -2743,7 +2743,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "La viscosità causa attrito interno: strati di fluido a velocità diverse esercitano sforzi tangenziali l'uno sull'altro. Questo comporta dissipazione di energia meccanica in calore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "viscosita",
         "attrito interno",
@@ -2764,7 +2764,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Sulla superficie del liquido le molecole sono attratte più intensamente verso l'interno che verso l'esterno (asimmetria). Questa forza di coesione genera una 'tensione' che tira la superficie a contrarsi.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "tensione superficiale",
         "molecole",
@@ -2785,7 +2785,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L'adesione tra acqua e vetro (e la tensione superficiale) genera una forza menisco che tira l'acqua verso l'alto. Questo contrasta il peso della colonna d'acqua. Se la forza è sufficientemente grande, l'acqua risale nel capillare.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "capillarita",
         "adesione",
@@ -2806,7 +2806,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il peso specifico è il peso (forza) per unità di volume: $\\gamma = mg/V = (\\rho V)g/V = \\rho g$. Ha unità N/m³ (o Pa/m).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "peso specifico",
         "densita",
@@ -2827,7 +2827,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Pressione assoluta = 0 al vuoto perfetto. Pressione relativa = pressione assoluta − pressione atmosferica. Un manometro legge solitamente la relativa.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "assoluta",
         "relativa",
@@ -2848,7 +2848,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La Torricelli è derivata da Bernoulli, che è conseguenza della conservazione dell'energia. L'energia potenziale gravitazionale si trasforma in cinetica indipendentemente dalla massa.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "torricelli",
         "energia",
@@ -2869,7 +2869,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Sebbene la forza totale $F = p \\cdot A$ sia diversa su basi diverse, la pressione $p = \\rho g h$ dipende solo dalla profondità. La forza si distribuisce su aree diverse in modo che la pressione rimane costante.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "paradosso idrostatico",
         "pressione",
@@ -2890,7 +2890,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L'assunzione di incompressibilità ($\\rho$ = costante) è valida per liquidi in range di pressione ordinari. Permette di semplificare l'equazione di continuità a $Q = Av = $ costante.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "incompressibile",
         "densita",
@@ -2900,7 +2900,7 @@
     },
     {
       "id": "flu_139",
-      "domanda": "Nel trasporto di un fluido attraverso un tubo, che rapporto esiste tra la velocità media e il gradiente di velocità all'interno di un profilo laminare?",
+      "domanda": "Nel trasporto di un fluido attraverso un tubo, che rapporto esiste tra la velocità medio e il gradiente di velocità all'interno di un profilo laminare?",
       "categoria": "Fluidi",
       "sottocategoria": "Profilo di velocità",
       "opzioni": [
@@ -2911,7 +2911,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In moto laminare in un tubo cilindrico, la viscosità causa un profilo di velocità parabolico: massimo al centro (asse) e zero alle pareti (condizione di non-scorrimento). Il gradiente $dv/dr$ è massimo in prossimità della parete.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "laminare",
         "profilo velocita",
@@ -2932,7 +2932,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Bernoulli esprime la conservazione dell'energia meccanica per unità di volume: il termine $p$ è energia di pressione, $(1/2)\\rho v^2$ è energia cinetica, $\\rho g h$ è energia potenziale gravitazionale.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "bernoulli",
         "energia",
@@ -2953,7 +2953,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Il numero di Reynolds $Re = \\frac{\\rho v D}{\\mu}$ è adimensionale e paragona le forze inerziali a quelle viscose. $Re < 2300$ circa → laminare; $Re > 4000$ → turbolento.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "numero reynolds",
         "laminare",
@@ -2974,7 +2974,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Se $F_A = \\rho_{fluido} g V_{corpo} < mg$ (peso), la forza risultante è verso il basso e il corpo affonda. La spinta rimane costante (massima immersione) mentre il corpo accelera verso il fondo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "affondamento",
         "spinta",
@@ -2995,7 +2995,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Un fluido statico, per sua natura, non può trasmettere sforzi tangenziali (di taglio). Solo pressioni normali (isotrope) possono agire. Quindi, un incremento di pressione si propaga uniformemente ovunque.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "pascal",
         "isotropa",
@@ -3016,7 +3016,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La linea di corrente è uno strumento matematico della descrizione Euleriana: in un dato istante, è tangente alla velocità del fluido in ogni suo punto. Nel moto stazionario coincide con la traiettoria.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "linea corrente",
         "velocita",
@@ -3037,7 +3037,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Un barometro misura la pressione atmosferica facendola equilibrare una colonna di mercurio. A livello del mare, $p_{atm} = \\rho_{Hg} g h = 101325$ Pa $\\approx$ 760 mm di Hg.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "barometro",
         "mercurio",
@@ -3079,7 +3079,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Bernoulli in un tubo verticale: $p_1 + (1/2)\\rho v_1^2 + \\rho g h_1 = p_2 + (1/2)\\rho v_2^2 + \\rho g h_2$. La pressione varia sia per il cambiamento di velocità che per l'altezza.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "bernoulli",
         "tubo verticale",
@@ -3100,7 +3100,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La densità dell'elio ($\\rho_{He} \\approx 0.18$ kg/m³) è molto minore di quella dell'aria ($\\rho_{aria} \\approx 1.2$ kg/m³). La spinta $F_A = \\rho_{aria} g V$ supera il peso totale.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "archimede",
         "elio",
@@ -3121,7 +3121,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La viscosità genera sforzi tangenziali proporzionali al gradiente di velocità. In un tubo, maggiore viscosità produce gradienti più accentuati → profilo più curvato (parabolico in laminarità).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "viscosita",
         "profilo velocita",
@@ -3142,7 +3142,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "La transizione da laminare a turbolento avviene quando il numero di Reynolds supera un valore critico (circa 2300 per tubi circolari). Aumentare $v$ o ridurre il diametro aumenta $Re$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "transizione",
         "reynolds",
@@ -3163,7 +3163,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il modello ideale (viscosità nulla) ignora effetti di attrito interno. In realtà, l'energia meccanica si dissipa in calore. Questo rende il modello inapplicabile dove la viscosità è importante.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "fluido ideale",
         "viscosita",
@@ -3184,7 +3184,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Un fluido, per definizione, non può mantenere sforzi di taglio quando è a riposo. Se si applica uno sforzo tangenziale, il fluido si deforma (scorre). Solo pressioni normali (isotrope) agiscono.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "equilibrio",
         "sforzi tangenziali",
@@ -3205,7 +3205,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Dalla legge di Stevino, $\\Delta p = \\rho g h$. Poiché l'acqua è più densa dell'olio, la pressione aumenta più rapidamente con la profondità in acqua che in olio.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "stevino",
         "densita",
@@ -3247,7 +3247,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Quando le forze di adesione (liquido-parete) superano le forze di coesione (liquido-liquido), il liquido 'bagna'. L'acqua ha maggiore adesione al vetro rispetto all'olio.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "adesione",
         "coesione",
@@ -3268,7 +3268,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Nel sifone, la colonna di liquido dall'alto al basso sviluppa energia potenziale. Se il sifone è innescato (privo di aria), Bernoulli garantisce che il flusso continua finché il livello esterno non eguaglia il tubo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "sifone",
         "bernoulli",
@@ -3289,7 +3289,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "In una pressa idraulica, la forza è amplificata dal rapporto delle aree: $F_2 = F_1 (A_2/A_1)$. Ma gli spostamenti sono inversamente proporzionali: $s_2 = s_1 (A_1/A_2)$. Il lavoro si conserva: $W = Fs$ è uguale.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "pascal",
         "pressa idraulica",
@@ -3310,7 +3310,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "I liquidi hanno scarsa compressibilità. Se il volume è fisso e aumenta la temperatura, l'energia termica causa aumento significativo di pressione. Questo è il principio dei termometri a liquido.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "temperatura",
         "pressione",
@@ -3331,7 +3331,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Il numero di Reynolds predice il regime di flusso. Flussi turbolenti (alti $Re$) generano fluttuazioni caotiche che producono rumore e dissipazione energetica. Conoscere $Re$ aiuta a progettare sistemi efficienti.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "reynolds",
         "turbolenza",
@@ -3352,7 +3352,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un serbatoio, la superficie del liquido ha velocità $v_1 \\approx 0$ (grande sezione), mentre all'uscita è $v_2$. Bernoulli a stessa pressione: $(1/2)\\rho v_1^2 + \\rho g h = (1/2)\\rho v_2^2$ → $v_2 = \\sqrt{2gh}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "torricelli",
         "bernoulli",

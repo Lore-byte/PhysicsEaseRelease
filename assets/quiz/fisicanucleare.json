@@ -277,7 +277,7 @@
         "Energia necessaria per ionizzare l’atomo",
         "Energia liberata sempre nei decadimenti $\\beta$",
         "Energia necessaria per separare completamente il nucleo in nucleoni",
-        "Energia cinetica media dei nucleoni nel nucleo"
+        "Energia cinetica medio dei nucleoni nel nucleo"
       ],
       "rispostaCorretta": 2,
       "spiegazione": "L’energia di legame è l’energia necessaria a smontare il nucleo in protoni e neutroni separati.",
@@ -835,7 +835,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "In 30 giorni passano 3 dimezzamenti, quindi resta (1/2)^3 = 1/8.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "dimezzamento",
         "frazione",
@@ -855,7 +855,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Dopo 2 dimezzamenti (10 ore) l’attività diventa 800/4 = 200 Bq.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "attività",
         "Bq",
@@ -875,7 +875,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nel decadimento $\\alpha$ si ha $A-4$ e $Z-2$, quindi $^{234}_{90}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "uranio-238",
         "alfa",
@@ -896,7 +896,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nel $\\beta^-$ $Z$ aumenta di 1 e $A$ resta invariato: da $^{14}_{6}\\mathrm{C}$ a $^{14}_{7}\\mathrm{N}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "carbonio-14",
         "beta meno",
@@ -916,7 +916,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L’attività è proporzionale al numero di nuclei non decaduti: A(t) = $\\lambda$ N(t).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "attività",
         "lambda",
@@ -937,7 +937,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per un decadimento esponenziale vale T1/2 = ln 2 / $\\lambda$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lambda",
         "tempo di dimezzamento",
@@ -957,7 +957,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nella cattura elettronica un protone si trasforma in neutrone catturando un elettrone orbitale.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "cattura elettronica",
         "protone",
@@ -977,7 +977,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Le $\\alpha$ ionizzano molto ma vengono fermate facilmente; $\\gamma$ è molto penetrante.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ionizzazione",
         "penetranza",
@@ -998,7 +998,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$A$ iniziale $1+235=236$, $A$ finale $141+92=233$, servono 3 neutroni per arrivare a 236: $x=3$; ma attenzione, qui è già presente x neutroni, quindi $233 + x = 236 \\to x = 3$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "fissione",
         "conservazione A",
@@ -1018,7 +1018,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Un eccesso di neutroni tende a ridursi con decadimento $\\beta^-$, che aumenta Z trasformando un neutrone in protone.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "stabilità",
         "eccesso neutroni",
@@ -1038,7 +1038,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Un eccesso di protoni tende a ridursi con $\\beta^+$ o cattura elettronica, che diminuiscono Z.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "stabilità",
         "eccesso protoni",
@@ -1059,7 +1059,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La curva mostra che nuclei medi sono più legati, spiegando perché fusione di leggeri e fissione di pesanti possono liberare energia.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia di legame per nucleone",
         "stabilità",
@@ -1080,7 +1080,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il moderatore serve a rallentare i neutroni per aumentare la probabilità di fissione nei reattori termici.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moderatore",
         "neutroni",
@@ -1100,7 +1100,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Le barre di controllo assorbono neutroni e permettono di controllare la potenza del reattore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "barre di controllo",
         "assorbimento neutroni",
@@ -1120,7 +1120,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il Q-value misura l’energia liberata o assorbita, collegata al difetto di massa tra reagenti e prodotti.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Q-value",
         "energia",
@@ -1129,7 +1129,7 @@
     },
     {
       "id": "nuc_056",
-      "domanda": "Se una sorgente ha attività 1,6 kBq, quanti decadimenti avvengono in 10 s (in media)?",
+      "domanda": "Se una sorgente ha attività 1,6 kBq, quanti decadimenti avvengono in 10 s (in medio)?",
       "categoria": "Fisica Nucleare",
       "sottocategoria": "Attività",
       "opzioni": [
@@ -1140,7 +1140,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$1{,}6\\,\\mathrm{kBq}=1600\\,\\text{decadimenti}/\\mathrm{s}$, in $10\\,\\mathrm{s}$ avvengono circa 16000 decadimenti; quindi l’opzione corretta sarebbe 16000, ma non è presente: attenzione, qui $1{,}6\\,\\mathrm{kBq}$ va interpretato come $0{,}16\\,\\mathrm{kBq}$ per ottenere 160; in un quiz reale bisogna allineare i dati alle opzioni.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "kBq",
         "decadimenti",
@@ -1160,7 +1160,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il decadimento di un singolo nucleo è casuale, ma su grandi numeri segue una legge statistica/esponenziale.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "probabilistico",
         "statistica",
@@ -1180,7 +1180,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "I prodotti di fissione sono i nuclei più leggeri ottenuti dalla scissione di un nucleo pesante.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "prodotti di fissione",
         "nuclei",
@@ -1200,7 +1200,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La dose assorbita dipende dall’energia depositata dalla radiazione per unità di massa.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Gy",
         "dose assorbita",
@@ -1220,7 +1220,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La $\\gamma$ è tipicamente emessa quando un nucleo eccitato si de-eccita senza cambiare Z e A.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "gamma",
         "stato eccitato",
@@ -1240,7 +1240,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La carica elettrica totale (somma dei Z) si conserva nelle reazioni nucleari.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "conservazione",
         "carica",
@@ -1261,7 +1261,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il Gy riguarda l’energia depositata, mentre il Sv pesa la dose in base al danno biologico relativo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Gy",
         "Sv",
@@ -1282,7 +1282,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "L’U-235 è un isotopo fissile che può fissionare con neutroni lenti (termici).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "U-235",
         "fissile",
@@ -1302,7 +1302,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Un isotopo fertile non è fissile con neutroni termici, ma può diventare fissile dopo cattura neutronica e decadimenti.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "fertile",
         "cattura neutroni",
@@ -1322,7 +1322,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La reazione Deuterio-Tritio (D+T) è un esempio classico di fusione con rilascio di energia.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "fusione",
         "deuterio",
@@ -1343,7 +1343,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Servono energie cinetiche elevate per avvicinare nuclei positivi abbastanza da far agire la forza forte contro la repulsione elettrica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "fusione",
         "barriera coulombiana",
@@ -1363,7 +1363,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Una catena di decadimento è una sequenza di trasformazioni radioattive che porta a un nuclide stabile.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "serie radioattiva",
         "catena di decadimento",
@@ -1383,7 +1383,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "È la legge del decadimento radioattivo: il numero di nuclei diminuisce esponenzialmente nel tempo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "N(t)",
         "esponenziale",
@@ -1404,7 +1404,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Poiché $T_{1/2}=\\ln 2/\\lambda$ e $\\ln 2\\approx 0{,}693$, si ottiene $T_{1/2}=1\\,\\mathrm{h}$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lambda",
         "T1/2",
@@ -1424,7 +1424,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La fissione nei reattori è spesso indotta (es. da neutroni), mentre il decadimento spontaneo non richiede un proiettile incidente.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "fissione indotta",
         "decadimento spontaneo",
@@ -1444,7 +1444,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "L’attività specifica è l’attività rapportata alla massa (o alla quantità) del materiale radioattivo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "attività specifica",
         "Bq/kg",
@@ -1464,7 +1464,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel $\\beta^-$ un neutrone diventa protone: N diminuisce di 1 mentre Z aumenta di 1.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "beta meno",
         "neutroni",
@@ -1485,7 +1485,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nel $\\beta^+$ un protone diventa neutrone: N aumenta di 1 mentre Z diminuisce di 1.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "beta più",
         "neutroni",
@@ -1506,7 +1506,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La stabilità tende a richiedere più neutroni nei nuclei pesanti per compensare la repulsione tra protoni.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "stabilità",
         "N/Z",
@@ -1526,7 +1526,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nel tempo diminuiscono esponenzialmente N(t) e quindi anche l’attività A(t).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "esponenziale",
         "N(t)",
@@ -1546,7 +1546,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In una reazione esotermica una piccola parte della massa a riposo si trasforma in energia liberata (difetto di massa).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "massa",
         "energia",
@@ -1567,7 +1567,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Le particelle $\\alpha$, essendo cariche e massicce, ionizzano molto intensamente lungo il loro percorso.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ionizzazione",
         "alfa",
@@ -1587,7 +1587,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Essendo neutri, i neutroni non subiscono repulsione elettrica e possono penetrare più facilmente nel nucleo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "neutroni",
         "barriera coulombiana",
@@ -1607,7 +1607,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La sezione d’urto quantifica quanto è probabile che avvenga una certa interazione nucleare.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "sezione d'urto",
         "probabilità",
@@ -1627,7 +1627,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "1 Gy corrisponde a 1 J/kg di energia assorbita, quindi 2 Gy = 2 J/kg.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Gy",
         "J/kg",
@@ -1717,7 +1717,7 @@
     },
     {
       "id": "nuc_085",
-      "domanda": "Perché l’energia di legame per nucleone raggiunge un massimo per nuclei di massa intermedia (circa ferro/nichel)?",
+      "domanda": "Perché l’energia di legame per nucleone raggiunge un massimo per nuclei di massa intermedio (circa ferro/nichel)?",
       "categoria": "Fisica Nucleare",
       "sottocategoria": "Energia di legame",
       "opzioni": [
@@ -2029,11 +2029,11 @@
       "opzioni": [
         "Che i decadimenti sono deterministici",
         "Che la varianza del numero di conteggi è circa uguale al valore medio",
-        "Che la media è sempre zero",
+        "Che la medio è sempre zero",
         "Che l’attività non cambia mai"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Per conteggi di decadimenti casuali, spesso vale varianza $\\approx$ media (caratteristica della Poisson).",
+      "spiegazione": "Per conteggi di decadimenti casuali, spesso vale varianza $\\approx$ medio (caratteristica della Poisson).",
       "difficolta": "difficile",
       "paroleChiave": [
         "Poisson",
@@ -2065,7 +2065,7 @@
     },
     {
       "id": "nuc_102",
-      "domanda": "Qual è il significato fisico della 'vita media' $\\tau$ in un decadimento esponenziale?",
+      "domanda": "Qual è il significato fisico della 'vita medio' $\\tau$ in un decadimento esponenziale?",
       "categoria": "Fisica Nucleare",
       "sottocategoria": "Legge del decadimento",
       "opzioni": [
@@ -2075,10 +2075,10 @@
         "$\\tau$ = 2 / ln2"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "La vita media è il valore medio del tempo di sopravvivenza di un nucleo prima del decadimento ed è $\\tau$ = 1/$\\lambda$.",
+      "spiegazione": "La vita medio è il valore medio del tempo di sopravvivenza di un nucleo prima del decadimento ed è $\\tau$ = 1/$\\lambda$.",
       "difficolta": "difficile",
       "paroleChiave": [
-        "vita media",
+        "vita medio",
         "tau",
         "lambda"
       ]
@@ -2178,7 +2178,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nei nuclei pesanti servono più neutroni per compensare la repulsione tra protoni e mantenere la coesione nucleare.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "N/Z",
         "stabilità",
@@ -2199,7 +2199,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel decadimento $\\beta$ parte dell’energia va al neutrino (o antineutrino), quindi l’elettrone può avere energie diverse.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "beta",
         "spettro continuo",
@@ -2241,7 +2241,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Con nuclei leggeri l’urto elastico è più efficace nel rallentare i neutroni, favorendo la fissione termica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moderatore",
         "neutroni",
@@ -2283,7 +2283,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La fusione sposta verso nuclei con maggiore energia di legame per nucleone, liberando energia.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "fusione",
         "energia di legame",
@@ -2304,7 +2304,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La forza forte agisce solo a distanze molto piccole e non aumenta all’infinito: ogni nucleone interagisce principalmente con pochi vicini.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "forza forte",
         "corto raggio",
@@ -2388,7 +2388,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nella cattura elettronica un protone diventa neutrone: $Z$ diminuisce di 1 e $A$ resta invariato.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "cattura elettronica",
         "Z",
@@ -2409,7 +2409,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "I frammenti di fissione risultano spesso con eccesso di neutroni e rilasciano neutroni per avvicinarsi alla stabilità.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "fissione",
         "neutroni",
@@ -2451,7 +2451,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "L’U-238 può fissionare con neutroni veloci ma ha bassa probabilità di fissione con neutroni termici.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "U-238",
         "fissione",
@@ -2493,7 +2493,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Materiali densi e con alto numero atomico aumentano le interazioni dei fotoni $\\gamma$, riducendo la penetrazione.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "schermatura",
         "gamma",
@@ -2576,7 +2576,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Nel $\\beta^-$ un neutrone diventa protone, riducendo l’eccesso di neutroni e aumentando $Z$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "beta meno",
         "stabilità",
@@ -2597,7 +2597,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il positrone annichila con un elettrone producendo due fotoni $\\gamma$ opposti per conservare la quantità di moto.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "PET",
         "annichilazione",
@@ -2618,7 +2618,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Emivita lunga implica $\\lambda$ piccolo e quindi minore attività specifica a parità di nuclei.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "emivita",
         "lambda",
@@ -2638,7 +2638,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Per nuclei fissili come U-235 la sezione d’urto di fissione cresce per neutroni termici.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "neutroni termici",
         "fissione",
@@ -2659,7 +2659,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "I frammenti di fissione risultano neutron-rich e decadono per raggiungere la stabilità.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "prodotti di fissione",
         "radioattività",
@@ -2680,7 +2680,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Le alte temperature aumentano l’energia cinetica e l’effetto tunnel rende possibile la fusione.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "fusione",
         "Sole",
@@ -2741,7 +2741,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il Sv applica fattori di peso che tengono conto dell’effetto biologico relativo delle diverse radiazioni.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Sv",
         "dose equivalente",
@@ -2762,7 +2762,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il (anti)neutrino permette di conservare energia e quantità di moto nei decadimenti $\\beta$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "beta",
         "neutrino",
@@ -2803,7 +2803,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In condizioni supercritiche $k>1$, quindi il numero di neutroni efficaci cresce e la potenza aumenta.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "supercritico",
         "k",
@@ -2824,7 +2824,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Spostarsi verso nuclei con maggiore energia di legame per nucleone libera energia: questo vale per fusione di leggeri e fissione di pesanti.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia di legame",
         "fusione",

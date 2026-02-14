@@ -544,82 +544,81 @@ class _MyAppState extends State<MyApp> {
 
                 // Theme toggle option
                 ListTile(
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 28),
                   leading: Icon(
-                    Icons.palette,
+                    Icons.palette_outlined,
                     color: currentColorScheme.primary,
+                    size: 28,
                   ),
-                  title: const Text('Tema'),
-                  trailing: Padding(
-                    padding: const EdgeInsets.only(right: 16),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: currentColorScheme.primaryContainer,
-                        borderRadius: BorderRadius.circular(28),
-                      ),
-                      padding: const EdgeInsets.all(4),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Material(
-                            color: AppTheme.transparent,
+                  title: const Text('Tema', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500)),
+                  trailing: Container(
+                    decoration: BoxDecoration(
+                      color: currentColorScheme.primaryContainer,
+                      borderRadius: BorderRadius.circular(28),
+                    ),
+                    padding: const EdgeInsets.all(4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Material(
+                          color: AppTheme.transparent,
+                          borderRadius: BorderRadius.circular(24),
+                          child: InkWell(
                             borderRadius: BorderRadius.circular(24),
-                            child: InkWell(
-                              borderRadius: BorderRadius.circular(24),
-                              onTap: () {
-                                if (isDarkMode) _toggleTheme();
-                              },
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 14,
-                                  vertical: 8,
-                                ),
-                                decoration: BoxDecoration(
-                                  color: !isDarkMode
-                                      ? currentColorScheme.primary
-                                      : AppTheme.transparent,
-                                  borderRadius: BorderRadius.circular(24),
-                                ),
-                                child: Icon(
-                                  Icons.wb_sunny_outlined,
-                                  size: 24,
-                                  color: !isDarkMode
-                                      ? currentColorScheme.onPrimary
-                                      : currentColorScheme.onPrimaryContainer,
-                                ),
+                            onTap: () {
+                              if (isDarkMode) _toggleTheme();
+                            },
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 14,
+                                vertical: 8,
+                              ),
+                              decoration: BoxDecoration(
+                                color: !isDarkMode
+                                    ? currentColorScheme.primary
+                                    : AppTheme.transparent,
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              child: Icon(
+                                Icons.wb_sunny_outlined,
+                                size: 24,
+                                color: !isDarkMode
+                                    ? currentColorScheme.onPrimary
+                                    : currentColorScheme.onPrimaryContainer,
                               ),
                             ),
                           ),
-                          Material(
-                            color: AppTheme.transparent,
+                        ),
+                        Material(
+                          color: AppTheme.transparent,
+                          borderRadius: BorderRadius.circular(24),
+                          child: InkWell(
                             borderRadius: BorderRadius.circular(24),
-                            child: InkWell(
-                              borderRadius: BorderRadius.circular(24),
-                              onTap: () {
-                                if (!isDarkMode) _toggleTheme();
-                              },
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 14,
-                                  vertical: 8,
-                                ),
-                                decoration: BoxDecoration(
-                                  color: isDarkMode
-                                      ? currentColorScheme.primary
-                                      : AppTheme.transparent,
-                                  borderRadius: BorderRadius.circular(24),
-                                ),
-                                child: Icon(
-                                  Icons.dark_mode_outlined,
-                                  size: 24,
-                                  color: isDarkMode
-                                      ? currentColorScheme.onPrimary
-                                      : currentColorScheme.onPrimaryContainer,
-                                ),
+                            onTap: () {
+                              if (!isDarkMode) _toggleTheme();
+                            },
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 14,
+                                vertical: 8,
+                              ),
+                              decoration: BoxDecoration(
+                                color: isDarkMode
+                                    ? currentColorScheme.primary
+                                    : AppTheme.transparent,
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              child: Icon(
+                                Icons.dark_mode_outlined,
+                                size: 24,
+                                color: isDarkMode
+                                    ? currentColorScheme.onPrimary
+                                    : currentColorScheme.onPrimaryContainer,
                               ),
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                 ),

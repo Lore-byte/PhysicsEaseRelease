@@ -9,6 +9,7 @@ import 'package:physics_ease_release/models/quiz_result.dart';
 import 'package:physics_ease_release/models/quiz.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:fl_chart/fl_chart.dart';
+import 'package:physics_ease_release/widgets/latex_text.dart';
 
 class QuizPage extends StatefulWidget {
   final void Function(bool) setGlobalAppBarVisibility;
@@ -27,12 +28,12 @@ class _QuizPageState extends State<QuizPage> {
   bool _isLoading = true;
   List<QuizSessionResult> _recentHistory = [];
   int _missedQuestionsCount = 0;
-  
+
   late ValueNotifier<bool> _searchVisible;
   late TextEditingController _searchController;
   String _searchQuery = '';
   List<Quiz> _quizSearchResults = [];
-  
+
   // Filtri per la ricerca
   Set<String> _searchSelectedCategories = {};
   String _searchSelectedDifficulty = 'tutte';
@@ -46,7 +47,7 @@ class _QuizPageState extends State<QuizPage> {
     _searchController.addListener(_onSearchChanged);
     _loadData();
   }
-  
+
   @override
   void dispose() {
     _searchVisible.dispose();
@@ -61,8 +62,12 @@ class _QuizPageState extends State<QuizPage> {
 
   void _searchQuizzes(String query) {
     final results = <Quiz>[];
-    
-    if (query.isEmpty) {
+
+    final hasActiveFilters =
+        _searchSelectedCategories.isNotEmpty ||
+        _searchSelectedDifficulty != 'tutte';
+
+    if (query.isEmpty && !hasActiveFilters) {
       setState(() {
         _quizSearchResults = [];
       });
@@ -82,8 +87,12 @@ class _QuizPageState extends State<QuizPage> {
           continue;
         }
 
-        if (quiz.domanda.toLowerCase().contains(query) ||
-            quiz.categoria.toLowerCase().contains(query)) {
+        final matchesQuery =
+            query.isEmpty ||
+            quiz.domanda.toLowerCase().contains(query) ||
+            quiz.categoria.toLowerCase().contains(query);
+
+        if (matchesQuery) {
           results.add(quiz);
         }
       }
@@ -511,6 +520,7 @@ class _QuizPageState extends State<QuizPage> {
                                           : colorScheme.onSurface,
                                     ),
                                   ),
+                                  showCheckmark: false,
                                   selected: isSelected,
                                   onSelected: (selected) {
                                     setState(() {
@@ -523,7 +533,6 @@ class _QuizPageState extends State<QuizPage> {
                                     });
                                   },
                                   selectedColor: colorScheme.primary,
-                                  checkmarkColor: colorScheme.onPrimary,
                                 );
                               }).toList(),
                             ),
@@ -538,36 +547,46 @@ class _QuizPageState extends State<QuizPage> {
                               ?.copyWith(fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 8),
-                        Card(
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: SegmentedButton<String>(
-                              segments: const [
-                                ButtonSegment(
-                                  value: 'tutte',
-                                  label: Text('Tutte'),
-                                ),
-                                ButtonSegment(
-                                  value: 'facile',
-                                  label: Text('Facile'),
-                                ),
-                                ButtonSegment(
-                                  value: 'medio',
-                                  label: Text('Medio'),
-                                ),
-                                ButtonSegment(
-                                  value: 'difficile',
-                                  label: Text('Difficile'),
-                                ),
-                              ],
-                              selected: {_selectedDifficulty},
-                              onSelectionChanged: (Set<String> newSelection) {
-                                setState(() {
-                                  _selectedDifficulty = newSelection.first;
-                                });
-                              },
-                            ),
+                        SegmentedButton<String>(
+                          showSelectedIcon: false,
+                          style: ButtonStyle(
+                            backgroundColor:
+                                WidgetStateProperty.resolveWith<Color?>((
+                                  states,
+                                ) {
+                                  if (states.contains(WidgetState.selected)) {
+                                    return colorScheme.primary;
+                                  }
+                                  return null;
+                                }),
+                            foregroundColor:
+                                WidgetStateProperty.resolveWith<Color?>((
+                                  states,
+                                ) {
+                                  if (states.contains(WidgetState.selected)) {
+                                    return colorScheme.onPrimary;
+                                  }
+                                  return colorScheme.onSurface;
+                                }),
                           ),
+                          segments: const [
+                            ButtonSegment(value: 'tutte', label: Text('Tutte')),
+                            ButtonSegment(
+                              value: 'facile',
+                              label: Text('Facile'),
+                            ),
+                            ButtonSegment(value: 'medio', label: Text('Medio')),
+                            ButtonSegment(
+                              value: 'difficile',
+                              label: Text('Difficile'),
+                            ),
+                          ],
+                          selected: {_selectedDifficulty},
+                          onSelectionChanged: (Set<String> newSelection) {
+                            setState(() {
+                              _selectedDifficulty = newSelection.first;
+                            });
+                          },
                         ),
                         const SizedBox(height: 24),
 
@@ -689,7 +708,9 @@ class _QuizPageState extends State<QuizPage> {
           ValueListenableBuilder<bool>(
             valueListenable: _searchVisible,
             builder: (context, isVisible, _) {
-              return isVisible ? _buildSearchOverlay(context, colorScheme) : const SizedBox.shrink();
+              return isVisible
+                  ? _buildSearchOverlay(context, colorScheme)
+                  : const SizedBox.shrink();
             },
           ),
           Positioned(
@@ -774,12 +795,24 @@ class _QuizPageState extends State<QuizPage> {
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
-                        children: QuizService.availableCategories.map((category) {
-                          final isSelected = _searchSelectedCategories.contains(category);
+                        children: QuizService.availableCategories.map((
+                          category,
+                        ) {
+                          final isSelected = _searchSelectedCategories.contains(
+                            category,
+                          );
                           return Padding(
                             padding: const EdgeInsets.only(right: 8.0),
                             child: FilterChip(
-                              label: Text(QuizService.categoryNames[category] ?? category),
+                              label: Text(
+                                QuizService.categoryNames[category] ?? category,
+                                style: TextStyle(
+                                  color: isSelected
+                                      ? colorScheme.onPrimary
+                                      : colorScheme.onSurface,
+                                ),
+                              ),
+                              showCheckmark: false,
                               selected: isSelected,
                               onSelected: (selected) {
                                 setState(() {
@@ -806,11 +839,31 @@ class _QuizPageState extends State<QuizPage> {
                     ),
                     const SizedBox(height: 8),
                     SegmentedButton<String>(
+                      showSelectedIcon: false,
+                      style: ButtonStyle(
+                        backgroundColor:
+                            WidgetStateProperty.resolveWith<Color?>((states) {
+                              if (states.contains(WidgetState.selected)) {
+                                return colorScheme.primary;
+                              }
+                              return null;
+                            }),
+                        foregroundColor:
+                            WidgetStateProperty.resolveWith<Color?>((states) {
+                              if (states.contains(WidgetState.selected)) {
+                                return colorScheme.onPrimary;
+                              }
+                              return colorScheme.onSurface;
+                            }),
+                      ),
                       segments: const [
                         ButtonSegment(value: 'tutte', label: Text('Tutte')),
                         ButtonSegment(value: 'facile', label: Text('Facile')),
                         ButtonSegment(value: 'medio', label: Text('Medio')),
-                        ButtonSegment(value: 'difficile', label: Text('Difficile')),
+                        ButtonSegment(
+                          value: 'difficile',
+                          label: Text('Difficile'),
+                        ),
                       ],
                       selected: {_searchSelectedDifficulty},
                       onSelectionChanged: (Set<String> newSelection) {
@@ -832,7 +885,7 @@ class _QuizPageState extends State<QuizPage> {
                         padding: const EdgeInsets.all(32.0),
                         child: Text(
                           _searchQuery.isEmpty
-                              ? 'Inizia a digitare per cercare...'
+                              ? 'Inizia a digitare o seleziona i filtri per cercare...'
                               : 'Nessun quiz trovato',
                           style: TextStyle(
                             fontSize: 16,
@@ -843,7 +896,12 @@ class _QuizPageState extends State<QuizPage> {
                       ),
                     )
                   : ListView.builder(
-                      padding: const EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.only(
+                        top: 16.0,
+                        bottom: 120.0,
+                        left: 16.0,
+                        right: 16.0,
+                      ),
                       itemCount: _quizSearchResults.length,
                       itemBuilder: (context, index) {
                         final quiz = _quizSearchResults[index];
@@ -853,14 +911,15 @@ class _QuizPageState extends State<QuizPage> {
                             onTap: () async {
                               _searchVisible.value = false;
                               _searchController.clear();
-                              
+
                               await Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => QuizSessionPage(
                                     quizzes: [quiz],
                                     selectedCategories: [quiz.categoria],
-                                    setGlobalAppBarVisibility: widget.setGlobalAppBarVisibility,
+                                    setGlobalAppBarVisibility:
+                                        widget.setGlobalAppBarVisibility,
                                     saveResults: false,
                                   ),
                                 ),
@@ -871,16 +930,12 @@ class _QuizPageState extends State<QuizPage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  LatexText(
                                     quiz.domanda,
                                     maxLines: 2,
                                     overflow: TextOverflow.ellipsis,
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .bodyLarge
-                                        ?.copyWith(
-                                          fontWeight: FontWeight.w600,
-                                        ),
+                                    style: Theme.of(context).textTheme.bodyLarge
+                                        ?.copyWith(fontWeight: FontWeight.w600),
                                   ),
                                   const SizedBox(height: 8),
                                   Row(
@@ -903,8 +958,9 @@ class _QuizPageState extends State<QuizPage> {
                                           vertical: 4,
                                         ),
                                         decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(6),
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
                                           color: _getDifficultyColor(
                                             quiz.difficolta,
                                             colorScheme,
@@ -935,10 +991,7 @@ class _QuizPageState extends State<QuizPage> {
     );
   }
 
-  Color _getDifficultyColor(
-    String difficulty,
-    ColorScheme colorScheme,
-  ) {
+  Color _getDifficultyColor(String difficulty, ColorScheme colorScheme) {
     switch (difficulty.toLowerCase()) {
       case 'facile':
         return Colors.green;

@@ -823,7 +823,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$V = R \\cdot I = 12 \\cdot 0,5 = 6$ V.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ohm",
         "calcolo",
@@ -843,7 +843,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$R = V/I = 9/0,3 = 30$ $\\Omega$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ohm",
         "R=V/I",
@@ -863,7 +863,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$R_{eq} = 10 + 20 = 30$ $\\Omega$, quindi $I = V/R_{eq} = 12/30 = 0,4$ A.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "serie",
         "Req",
@@ -884,7 +884,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$1/R_{eq} = 1/6 + 1/3 = 1/6 + 2/6 = 3/6$, quindi $R_{eq} = 2$ $\\Omega$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "parallelo",
         "Req",
@@ -905,7 +905,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$R_{eq} = (4 \\cdot 12)/(4 + 12) = 48/16 = 3$ $\\Omega$, quindi $I_{tot} = 12/3 = 4$ A.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "parallelo",
         "Req",
@@ -926,7 +926,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$P = I^2 \\cdot R = 2^2 \\cdot 5 = 20$ W.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenza",
         "I2R",
@@ -947,7 +947,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$P = V^2/R = 20^2/10 = 400/10 = 40$ W.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenza",
         "V2/R",
@@ -967,7 +967,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Due resistori uguali in parallelo dimezzano la resistenza: $R_{eq} = R/2$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "parallelo",
         "uguali",
@@ -988,7 +988,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "In serie si sommano: $R_{eq} = R + R + R = 3R$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "serie",
         "uguali",
@@ -1009,7 +1009,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$V_{R2} = V \\cdot R_2/(R_1 + R_2) = 9 \\cdot 1/(2 + 1) = 3$ V.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "partitore",
         "tensione",
@@ -1030,7 +1030,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Un generatore reale di tensione si modella spesso con un generatore ideale in serie a una resistenza interna $r$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "generatore reale",
         "resistenza interna",
@@ -1050,7 +1050,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "La resistenza totale è $1 + 5 = 6$ $\\Omega$, quindi $I = 12/6 = 2$ A.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "batteria",
         "resistenza interna",
@@ -1071,7 +1071,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La resistenza interna si comporta come un resistore: la caduta è $V = I \\cdot r$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "resistenza interna",
         "caduta",
@@ -1091,7 +1091,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Per KCL: somma entranti = somma uscenti, quindi $I_3 = 2 + 0,5 = 2,5$ A.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "KCL",
         "nodo",
@@ -1112,7 +1112,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Per KVL, lungo la maglia $12 - 5 - 7 = 0$ V.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "KVL",
         "maglia",
@@ -1132,7 +1132,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$R_{eq}(2 \\| 6) = (2 \\cdot 6)/(2 + 6) = 12/8 = 1,5$ $\\Omega$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "parallelo",
         "calcolo",
@@ -1152,7 +1152,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "$R_{eq,par} = (6 \\cdot 3)/(6 + 3) = 18/9 = 2$ $\\Omega$; totale $= 8\\,\\Omega + 2\\,\\Omega = 10\\,\\Omega$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "serie-parallelo",
         "Req",
@@ -1172,7 +1172,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$P = V^2/R_{eq} = 12^2/4 = 144/4 = 36$ W.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenza",
         "V2/R",
@@ -1192,7 +1192,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un circuito RC, la costante di tempo è $\\tau = R \\cdot C$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "RC",
         "costante di tempo",
@@ -1213,7 +1213,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Dopo una costante di tempo, il condensatore raggiunge circa il 63% del valore finale in carica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "RC",
         "carica",
@@ -1234,7 +1234,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Per un condensatore ideale vale $Q = C \\cdot V$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "condensatore",
         "carica",
@@ -1255,7 +1255,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In parallelo le capacità si sommano: $C_{eq} = C_1 + C_2$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "condensatori",
         "parallelo",
@@ -1276,7 +1276,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In serie si sommano i reciproci: $1/C_{eq} = 1/C_1 + 1/C_2$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "condensatori",
         "serie",
@@ -1296,7 +1296,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$Q = C \\cdot V = 100 \\cdot 10^{-6} \\cdot 10 = 10^{-3}$ C = 1 mC.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Q=CV",
         "microfarad",
@@ -1317,7 +1317,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In DC a regime, il condensatore è carico e la corrente continua non lo attraversa: circuito aperto.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "condensatore",
         "DC",
@@ -1338,7 +1338,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In DC a regime, l'induttore ideale oppone resistenza nulla alla corrente costante: corto circuito.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "induttore",
         "DC",
@@ -1359,7 +1359,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per un induttore ideale, la tensione è proporzionale alla variazione della corrente nel tempo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "induttore",
         "variazione corrente",
@@ -1379,7 +1379,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In un circuito RL, la costante di tempo è $\\tau = L/R$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "RL",
         "costante di tempo",
@@ -1400,7 +1400,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Nel parallelo la tensione è la stessa: $I = V/R = 8/2 = 4$ A nel ramo da 2 $\\Omega$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "parallelo",
         "corrente ramo",
@@ -1420,7 +1420,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$R_{eq} = 4 + 6 = 10$ $\\Omega$, quindi $V = I \\cdot R_{eq} = 2 \\cdot 10 = 20$ V.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "serie",
         "tensione",
@@ -1441,7 +1441,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$V_{R2} = 10 \\cdot 8/(2 + 8) = 10 \\cdot 8/10 = 8$ V.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "partitore",
         "tensione",
@@ -1461,7 +1461,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "A $V$ costante, $P = V^2/R$: se $R$ aumenta, $P$ diminuisce.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenza",
         "V2/R",
@@ -1482,7 +1482,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "A $I$ costante, $P = I^2 \\cdot R$: se $R$ aumenta, $P$ aumenta.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenza",
         "I2R",
@@ -1503,7 +1503,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$I = V/R = 9/3 = 3$ A.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ohm",
         "I=V/R",
@@ -1523,7 +1523,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Per KCL, $I_{tot} = I_1 + I_2 = 1,2 + 0,8 = 2,0$ A.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "KCL",
         "parallelo",
@@ -1543,7 +1543,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "In parallelo le capacità si sommano: $C_{eq} = 10 + 20 = 30$ $\\mu$F.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "condensatori",
         "parallelo",
@@ -1564,7 +1564,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$1/C_{eq} = 1/10 + 1/20 = 0,1 + 0,05 = 0,15$ (1/$\\mu$F), quindi $C_{eq} \\approx 6,67$ $\\mu$F.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "condensatori",
         "serie",
@@ -1585,7 +1585,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$I = 50$ mA $= 0,05$ A; $V = R \\cdot I = 100 \\cdot 0,05 = 5$ V.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ohm",
         "mA",
@@ -1606,7 +1606,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nella scarica esponenziale, dopo $\\tau$ resta circa il 37% del valore iniziale.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "RC",
         "scarica",
@@ -1627,7 +1627,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In serie la corrente è la stessa: $V = I \\cdot R$, quindi la caduta maggiore è su $R$ maggiore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "serie",
         "caduta tensione",
@@ -1647,7 +1647,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$R_{eq} = 4 + 2 + 6 = 12$ $\\Omega$, quindi $I = 24/12 = 2$ A.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "serie",
         "Req",
@@ -1668,7 +1668,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$R_{eq,par} = (6 \\cdot 12)/(6 + 12) = 72/18 = 4$ $\\Omega$; totale $= 3\\,\\Omega + 4\\,\\Omega = 7\\,\\Omega$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "misto",
         "parallelo",
@@ -1689,7 +1689,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$P = V \\cdot I = 12 \\cdot 2 = 24$ W.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenza",
         "P=VI",
@@ -1709,7 +1709,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$E = P \\cdot t = 60 \\cdot 120 = 7200$ J.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia",
         "E=Pt",
@@ -1730,7 +1730,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$I = V/R = 10/200 = 0,05$ A.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ohm",
         "I=V/R",
@@ -1750,7 +1750,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un ramo vale $I = V/R$: a $V$ uguale, la corrente è maggiore dove $R$ è minore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "parallelo",
         "I=V/R",
@@ -1770,7 +1770,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Un voltmetro ha resistenza interna molto alta: in serie fa quasi da circuito aperto e riduce la corrente.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "voltmetro",
         "serie",
@@ -1791,7 +1791,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Un amperometro ha resistenza molto bassa: messo in parallelo può cortocircuitare il generatore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "amperometro",
         "parallelo",
@@ -1812,7 +1812,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Un resistore dissipa energia sotto forma di calore quando circola corrente: $P = I^2 \\cdot R$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "resistore",
         "dissipazione",
@@ -1832,7 +1832,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$\\tau = R \\cdot C = 10^4 \\cdot 10^{-7} = 10^{-3}$ s = 1 ms.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "RC",
         "tau",
@@ -2480,7 +2480,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Una batteria reale ha una resistenza interna $r$. La corrente $I$ che circola causa una caduta $V_r = I \\cdot r$ ai morsetti della batteria stessa. La tensione disponibile al carico è ridotta di questa quantità: $V_{carico} = f.e.m. - I \\cdot r$.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "batteria reale",
       "resistenza interna",
@@ -2501,7 +2501,7 @@
     ],
     "rispostaCorretta": 0,
     "spiegazione": "Il concetto chiave è il percorso della corrente. In serie c'è un unico percorso; in parallelo la corrente può dividersi in più rami alternativi. Questo spiega perché in serie la corrente è uguale ovunque, mentre in parallelo può essere diversa nei diversi rami.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "serie",
       "parallelo",
@@ -2522,7 +2522,7 @@
     ],
     "rispostaCorretta": 0,
     "spiegazione": "In serie, i resistori si oppongono uno dopo l'altro al passaggio della corrente, aumentando l'ostacolo totale ($R_{eq} = R_1 + R_2 + \\dots$). In parallelo, la corrente può scegliere il percorso più facile e dividersi tra i rami: questo riduce la resistenza totale vista dal generatore (più 'strade' disponibili).",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "serie",
       "parallelo",
@@ -2544,7 +2544,7 @@
     ],
     "rispostaCorretta": 0,
     "spiegazione": "Un voltmetro in parallelo assorbe una piccola corrente a causa della sua resistenza interna molto alta. Idealmente non dovrebbe influenzare il circuito, ma in realtà riduce leggermente la resistenza equivalente vista dai nodi, alterando di poco la corrente totale.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "voltmetro",
       "parallelo",
@@ -2566,7 +2566,7 @@
     ],
     "rispostaCorretta": 0,
     "spiegazione": "L'amperometro è messo in serie. Se avesse resistenza alta, creerebbe una caduta di tensione che altererebbe significativamente la corrente del circuito. Con resistenza trascurabile, la caduta è negligibile e la misura è rappresentativa della corrente reale.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "amperometro",
       "serie",
@@ -2588,7 +2588,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "La dipendenza da $I^2$ significa che piccoli aumenti di corrente causano grandi aumenti di potenza dissipata. Per esempio, raddoppiando $I$, $P$ quadruplica ($2^2 = 4$). Questo spiega il rapido surriscaldamento dei componenti.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "potenza",
       "I^2R",
@@ -2610,7 +2610,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Aumentando la tensione ai capi di una lampadina, per la legge di Ohm aumenta la corrente. Poiché $P = I^2 R$ (o $P = \frac{V^2}{R}$), l'aumento di tensione produce un aumento della potenza, quindi più calore nel filamento e più luce.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "lampadina",
       "tensione",
@@ -2633,7 +2633,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Una batteria ha una resistenza interna $r$. Parte dell'energia è dissipata come calore in $r$ stessa. A corrente elevata, la potenza persa internamente ($P = I^2 r$) è maggiore, riducendo l'efficienza e accelerando il consumo dei reagenti chimici.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "batteria",
       "scarica",
@@ -2656,7 +2656,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "$\\tau = R \\cdot C$ è una scala temporale. Rappresenta quanto velocemente cambiano le grandezze. Dopo un tempo $\\tau$, in fase di carica la tensione raggiunge circa il $63\\%$ del valore finale, mentre in scarica scende al $37\\\\%$.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "RC",
       "costante di tempo",
@@ -2679,7 +2679,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "All'inizio il condensatore è scarico ($V_C = 0$), quindi la tensione sulla resistenza è massima ($V_R = V_{gen}$) e $I_{max} = \frac{V_{gen}}{R}$. Caricandosi, $V_C$ aumenta e la tensione residua su $R$ diminuisce, riducendo la corrente fino a zero.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "RC",
       "carica",
@@ -2723,7 +2723,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Compiendo un percorso chiuso, il lavoro totale svolto dal campo elettrostatico su una carica deve essere nullo (il potenziale è una funzione di stato). Ciò implica che la somma algebrica delle differenze di potenziale sia $\\sum V = 0$.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "KVL",
       "maglia",
@@ -2745,7 +2745,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "In regime stazionario DC i transitori si sono estinti. I condensatori sono carichi e agiscono come circuiti aperti ($I = 0$), mentre gli induttori agiscono come cortocircuiti ($V = 0$), semplificando drasticamente i calcoli.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "regime stazionario",
       "DC",
@@ -2768,7 +2768,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Le forze elettromotrici si sottraggono algebricamente. La tensione risultante è $|f.e.m._1 - f.e.m._2|$. Se sono identiche, la tensione totale è $0 \\text{ V}$ e non circola corrente.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "batterie",
       "serie",
@@ -2814,7 +2814,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "L'effetto Joule è dovuto alle collisioni microscopiche tra portatori di carica e reticolo atomico. L'energia potenziale elettrica si trasforma in energia cinetica e poi, tramite urti, in calore (vibrazioni atomiche).",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "dissipazione",
       "calore",
@@ -2837,7 +2837,7 @@
     ],
     "rispostaCorretta": 0,
     "spiegazione": "La legge di Ohm ($V = R \\cdot I$) è una relazione empirica. Sperimentalmente si osserva che, per molti materiali (conduttori ohmici), il grafico tensione-corrente è una retta passante per l'origine, il cui coefficiente angolare è $R = \\frac{V}{I}$.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "legge di ohm",
       "empirica",
@@ -2860,7 +2860,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "In caso di cortocircuito ($R_{ext} \\to 0$), la corrente è limitata dalla resistenza interna $r$: $I_{max} = \\frac{f.e.m.}{r}$. Questo valore è finito e rappresenta il limite fisico del generatore.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "batteria reale",
       "resistenza interna",
@@ -2882,7 +2882,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "In un partitore, la tensione d'uscita è fissata dal rapporto tra due resistenze. Se il carico ha un'alta impedenza rispetto alle resistenze del partitore, la tensione rimane stabile. Una singola resistenza in serie causerebbe una caduta variabile in base alla corrente del carico.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "partitore",
       "tensione",
@@ -2904,7 +2904,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Alla risonanza, la reattanza induttiva $\\omega L$ e quella capacitiva $\\frac{1}{\\omega C}$ si eguagliano e si annullano a vicenda ($X_L - X_C = 0$). L'impedenza $Z$ diventa pari alla sola resistenza $R$, permettendo alla corrente di raggiungere il picco massimo.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "RLC",
       "AC",
@@ -2916,7 +2916,7 @@
   },
   {
     "id": "cir_141",
-    "domanda": "Come mai la potenza media dissipata in un circuito AC con carico puramente reattivo (solo condensatore o solo induttore) è zero?",
+    "domanda": "Come mai la potenza medio dissipata in un circuito AC con carico puramente reattivo (solo condensatore o solo induttore) è zero?",
     "categoria": "Circuiti",
     "sottocategoria": "Potenza reattiva",
     "opzioni": [
@@ -2934,7 +2934,7 @@
       "condensatore",
       "induttore",
       "sfasamento 90 gradi",
-      "media zero"
+      "medio zero"
     ]
   },
   {
@@ -3040,7 +3040,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "L'energia non si crea né si distrugge. In un circuito puramente resistivo stazionario, tutta l'energia elettrica prodotta dal generatore viene convertita in energia termica nei resistori.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "conservazione energia",
       "potenza",
@@ -3063,7 +3063,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Il segno dipende dalla convenzione e dal verso scelto per la maglia. Se il verso 'sale' di potenziale (dal $-$ al $+$), la tensione è positiva; se 'scende' (dal $+$ al $-$), è negativa.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "KVL",
       "segni",
@@ -3080,12 +3080,12 @@
     "opzioni": [
       "Il voltmetro funzionerebbe normalmente",
       "La corrente del circuito crollerebbe quasi a zero e il voltmetro leggerebbe quasi tutta la tensione del generatore",
-      "Il voltmetro si brucerebbe immediatamente",
+      "Il voltmetro si brucerebbe immediotamente",
       "Non succederebbe nulla di strano"
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Un voltmetro ha una resistenza interna altissima ($M\\Omega$). In serie, agisce quasi come un interruttore aperto, limitando drasticamente la corrente. Poiché quasi tutta la tensione cade su di esso, segnerà il valore della $f.e.m.$ della batteria.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "voltmetro",
       "serie",
@@ -3129,7 +3129,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "In una rete lineare con più generatori, la corrente in un ramo (o la tensione tra due nodi) è la somma algebrica degli effetti prodotti da ogni generatore singolarmente, con gli altri 'spenti' (tensioni cortocircuitate, correnti aperte).",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "sovrapposizione",
       "linearità",
@@ -3171,7 +3171,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Immaginando il circuito come un condotto d'acqua senza perdite, la quantità di liquido che passa in ogni sezione deve essere la stessa. Senza nodi (bivi), la carica non ha percorsi alternativi.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "serie",
       "continuità corrente",
@@ -3192,7 +3192,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Aumentando $I$, aumenta la quantità $V_{interna} = I \\cdot r$. Essendo $V_{morsetti} = f.e.m. - V_{interna}$, la tensione disponibile per l'esterno cala progressivamente.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "generatore reale",
       "resistenza interna",   
@@ -3214,7 +3214,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Un resistore è un componente lineare e non reattivo. Non introduce sfasamenti tra tensione e corrente (sono in fase) e non altera la frequenza del segnale d'ingresso.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "AC",
       "resistore",
@@ -3236,7 +3236,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "L'induttore si oppone alle variazioni di corrente. In DC stazionario la corrente non varia nel tempo, quindi non viene indotta alcuna forza elettromotrice contraria ($0 \text{ V}$ ai capi).",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "induttore",
       "DC",
@@ -3258,7 +3258,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Una volta che il condensatore ha accumulato la massima carica possibile per quella tensione ($Q = C \\cdot V$), il potenziale sulle armature bilancia quello del generatore e il flusso di cariche si interrompe.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "condensatore",
       "DC",
@@ -3302,7 +3302,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "L'impedenza tiene conto di come i componenti resistivi 'bruciano' energia e di come i componenti reattivi 'immagazzinano' energia nei campi, causando anche sfasamenti temporali tra onda di tensione e di corrente.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "impedenza",
       "AC",
@@ -3347,7 +3347,7 @@
     ],
     "rispostaCorretta": 0,
     "spiegazione": "Per la legge dell'induzione e la conservazione dell'energia ($P_1 = P_2$), se la tensione sale del fattore $k = \\frac{N_2}{N_1}$, la corrente deve scendere dello stesso fattore per mantenere costante il prodotto $V \\cdot I$.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "trasformatore",
       "rapporto spire",
@@ -3364,16 +3364,16 @@
     "opzioni": [
       "Il valore massimo del segnale",
       "Il valore medio del segnale",
-      "Il valore equivalente in DC che dissiperebbe la stessa potenza media in un resistore",
+      "Il valore equivalente in DC che dissiperebbe la stessa potenza medio in un resistore",
       "Il valore alla frequenza di risonanza"
     ],
     "rispostaCorretta": 2,
     "spiegazione": "Il valore RMS (o efficace) permette di confrontare segnali alternati e continui. Una tensione AC da $230 \\text{ V}_{RMS}$ scalda una resistenza esattamente quanto $230 \\text{ V}$ in DC. Per una sinusoide, $V_{RMS} = \\frac{V_{picco}}{\\sqrt{2}}$.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "RMS",
       "valore efficace",
-      "potenza media",
+      "potenza medio",
       "sinusoide",
       "equivalente DC"
     ]
@@ -3412,7 +3412,7 @@
     ],
     "rispostaCorretta": 2,
     "spiegazione": "L'equazione è $V(t) = V_{max}(1 - e^{-t/\\tau})$. Per $t = 3\\tau$, abbiamo $1 - e^{-3} \\approx 1 - 0.049 = 0.951$, ovvero circa il $95\\%$. Dopo $5\\tau$ si considera convenzionalmente la carica completa ($>99\\%$).",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "RC",
       "carica",
@@ -3477,7 +3477,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "La 'spinta' (differenza di potenziale) che fa muovere le cariche è $V_{gen} - V_C$. Man mano che $V_C$ aumenta, questa spinta diminuisce, la corrente cala e l'accumulo di ulteriore carica diventa sempre più lento.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "RC",
       "carica",
@@ -3499,7 +3499,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "In cortocircuito l'energia viene dissipata quasi interamente dentro la batteria ($P = I^2 r$). L'eccessivo calore può far bollire gli elettroliti, sciogliere i contatti o causare esplosioni/incendi.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "cortocircuito",
       "alta corrente",
@@ -3510,21 +3510,21 @@
   },
   {
     "id": "cir_168",
-    "domanda": "In un circuito AC, qual è il legame concettuale tra valore RMS e potenza media dissipata?",
+    "domanda": "In un circuito AC, qual è il legame concettuale tra valore RMS e potenza medio dissipata?",
     "categoria": "Circuiti",
-    "sottocategoria": "RMS e potenza media",
+    "sottocategoria": "RMS e potenza medio",
     "opzioni": [
       "Non c'è legame diretto",
-      "La potenza media su un carico resistivo è $P = V_{RMS} \\cdot I_{RMS}$, proprio come in DC",
-      "RMS è solo una media geometrica",
-      "La potenza media è sempre il massimo"
+      "La potenza medio su un carico resistivo è $P = V_{RMS} \\cdot I_{RMS}$, proprio come in DC",
+      "RMS è solo una medio geometrica",
+      "La potenza medio è sempre il massimo"
     ],
     "rispostaCorretta": 1,
     "spiegazione": "I valori RMS sono stati definiti appositamente per poter utilizzare le formule della potenza DC ($P = V \\cdot I$) anche in AC sinusoidale, senza dover integrare ogni volta le funzioni trigonometriche nel tempo.",
     "difficolta": "difficile",
     "paroleChiave": [
       "RMS",
-      "potenza media",
+      "potenza medio",
       "AC",
       "fattore potenza",
       "formula"
@@ -3543,7 +3543,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Se la distanza $d$ aumenta, la capacità $C = \\epsilon \\cdot \\frac{A}{d}$ diminuisce. L'energia è $U = \\frac{Q^2}{2C}$. Poiché $C$ è al denominatore, se $C$ cala, $U$ aumenta. Il lavoro fatto per allontanare le armature (che si attraggono) si trasforma in energia del campo elettrico.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "condensatore",
       "energia",
@@ -3565,7 +3565,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "La velocità di scarica dipende dalla carica residua: meno carica c'è, meno corrente scorre, rendendo lo svuotamento finale sempre più lento. In pratica si considera scarico dopo $5\tau$.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "RC",
       "scarica",
@@ -3581,13 +3581,13 @@
     "sottocategoria": "Differenza energetica",
     "opzioni": [
       "Tutti e tre dissipano energia in calore allo stesso modo",
-      "La resistenza dissipa energia irreversibilmente; i reattivi la scambiano senza consumarla in media",
+      "La resistenza dissipa energia irreversibilmente; i reattivi la scambiano senza consumarla in medio",
       "I reattivi dissipano più energia",
       "La resistenza accumula energia"
     ],
     "rispostaCorretta": 1,
     "spiegazione": "La resistenza 'consuma' energia togliendola dal circuito (calore). Induttori e condensatori agiscono come 'serbatoi' temporanei che restituiscono l'energia al generatore in ogni ciclo di alternata.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "reattivo",
       "resistenza",
@@ -3609,7 +3609,7 @@
     ],
     "rispostaCorretta": 0,
     "spiegazione": "Poiché i resistori sono uguali, l'ostacolo è diviso equamente. Per la legge di Kirchhoff, la somma delle cadute deve fare $V$. Quindi ogni resistore preleva $V_R = \frac{V}{3}$.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "serie",
       "partitore",
@@ -3630,7 +3630,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "In DC, una volta carico, le cariche si fermano. In AC, poiché la polarità cambia continuamente (es. $50 \text{ Hz}$), le cariche entrano ed escono continuamente dai fili per spostarsi tra le armature, creando una corrente misurabile.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "condensatore",
       "DC",
@@ -3695,7 +3695,7 @@
     ],
     "rispostaCorretta": 2,
     "spiegazione": "La reattanza capacitiva è l'ostacolo del condensatore in AC. Poiché $X_C = \\frac{1}{2\\pi f C}$, aumentando la frequenza $f$, l'ostacolo diminuisce e la corrente cresce a parità di tensione.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "condensatore",
       "AC",
@@ -3717,7 +3717,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Rappresenta lo sfasamento tra i picchi delle due onde sinusoidali. In una resistenza è $0^\\circ$, in un induttore puro la tensione anticipa di $90^\\circ$, in un condensatore ritarda di $90^\\circ$.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "fase",
       "AC",
@@ -3739,7 +3739,7 @@
     ],
     "rispostaCorretta": 2,
     "spiegazione": "Vettorialmente, le tensioni su $L$ e $C$ sono sfasate di $180^\\circ$ tra loro. Poiché in risonanza i loro moduli sono identici ($I \\cdot X_L = I \\cdot X_C$), la loro somma algebrica istantanea è zero, lasciando tutta la tensione del generatore sulla resistenza.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "RLC serie",
       "risonanza",
@@ -3761,7 +3761,7 @@
     ],
     "rispostaCorretta": 1,
     "spiegazione": "Si può immaginare come un'autostrada: più corsie ci sono (sezione), più veicoli (cariche) possono transitare contemporaneamente con meno intoppi, riducendo la resistenza globale del conduttore.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
       "resistenza filo",
       "lunghezza",
@@ -3774,7 +3774,7 @@
     "id": "cir_180",
     "domanda": "In un circuito AC con resistenza, qual è la caratteristica della potenza istantanea $P(t)$?",
     "categoria": "Circuiti",
-    "sottocategoria": "Potenza media AC",
+    "sottocategoria": "Potenza medio AC",
     "opzioni": [
       "La potenza è sempre positiva (unidirezionale)",
       "La potenza è sempre negativa",
@@ -3783,9 +3783,9 @@
     ],
     "rispostaCorretta": 0,
     "spiegazione": "In una resistenza $P = V \\cdot I$. Poiché $V$ e $I$ cambiano segno insieme, il loro prodotto è sempre positivo. Ciò significa che l'energia fluisce sempre dal generatore verso la resistenza, dove viene trasformata irreversibilmente in calore.",
-    "difficolta": "media",
+    "difficolta": "medio",
     "paroleChiave": [
-      "potenza media",
+      "potenza medio",
       "AC",
       "resistore",
       "dissipazione",

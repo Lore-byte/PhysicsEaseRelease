@@ -191,9 +191,9 @@
         },
         {
             "id": "lav_010",
-            "domanda": "Qual è l'espressione della potenza media?",
+            "domanda": "Qual è l'espressione della potenza medio?",
             "categoria": "Lavoro",
-            "sottocategoria": "Potenza media",
+            "sottocategoria": "Potenza medio",
             "opzioni": [
                 "$P = F \\cdot s$",
                 "$P = W/\\Delta t$",
@@ -201,10 +201,10 @@
                 "$P = mgh$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "La potenza media è il lavoro compiuto diviso l'intervallo di tempo impiegato: $P = W/\\Delta t$.",
+            "spiegazione": "La potenza medio è il lavoro compiuto diviso l'intervallo di tempo impiegato: $P = W/\\Delta t$.",
             "difficolta": "facile",
             "paroleChiave": [
-                "potenza media",
+                "potenza medio",
                 "lavoro",
                 "tempo",
                 "formula"
@@ -443,9 +443,9 @@
         },
         {
             "id": "lav_022",
-            "domanda": "Una forza compie lavoro di 30 J in 5 s: qual è la potenza media?",
+            "domanda": "Una forza compie lavoro di 30 J in 5 s: qual è la potenza medio?",
             "categoria": "Lavoro",
-            "sottocategoria": "Calcolo potenza media",
+            "sottocategoria": "Calcolo potenza medio",
             "opzioni": [
                 "6 W",
                 "150 W",
@@ -453,7 +453,7 @@
                 "0.17 W"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "La potenza media è $P = W/\\Delta t = 30/5 = 6$ W.",
+            "spiegazione": "La potenza medio è $P = W/\\Delta t = 30/5 = 6$ W.",
             "difficolta": "facile",
             "paroleChiave": [
                 "potenza",
@@ -684,7 +684,7 @@
                 "$P = W + t$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "La potenza media è definita come il lavoro fratto il tempo impiegato: $P = W/t$.",
+            "spiegazione": "La potenza medio è definita come il lavoro fratto il tempo impiegato: $P = W/t$.",
             "difficolta": "facile",
             "paroleChiave": [
                 "potenza",
@@ -853,7 +853,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$W = F \\cdot s \\cdot \\cos 60^\\circ = 20 \\cdot 5 \\cdot 0.5 = 50$ J, quindi l'opzione corretta è 50 J (attenzione al calcolo).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "coseno",
                 "angolo",
@@ -874,7 +874,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Poiché $\\cos 60^\\circ = 0.5$, il lavoro vale $W = 20 \\cdot 5 \\cdot 0.5 = 50$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "correzione",
                 "cos60",
@@ -895,7 +895,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$\\Delta E_c = 18 - 0 = 18$ J, quindi $W_{tot} = 18$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "ΔEc",
                 "teorema",
@@ -916,7 +916,7 @@
             ],
             "rispostaCorretta": 3,
             "spiegazione": "$\\Delta E_c = \\frac{1}{2} \\cdot 1 \\cdot (6^2 - 2^2) = \\frac{1}{2} \\cdot (36 - 4) = 16$ J, quindi la risposta corretta è 16 J (attenzione alle opzioni).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia cinetica",
                 "variazione",
@@ -937,7 +937,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il lavoro totale è $\\Delta E_c = 16$ J, quindi l'opzione corretta è 16 J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "correzione",
                 "ΔEc",
@@ -958,7 +958,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Lavoro forza applicata: $12 \\cdot 4 = 48$ J; totale: $48 + (-20) = 28$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lavoro totale",
                 "attrito",
@@ -979,7 +979,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il lavoro del peso è $W_p = -mg\\Delta h = -3 \\cdot 9.8 \\cdot 2 = -58.8$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "piano inclinato",
                 "peso",
@@ -989,7 +989,7 @@
         },
         {
             "id": "lav_048",
-            "domanda": "Un motore compie 900 J in 30 s. Qual è la potenza media?",
+            "domanda": "Un motore compie 900 J in 30 s. Qual è la potenza medio?",
             "categoria": "Lavoro",
             "sottocategoria": "Calcolo",
             "opzioni": [
@@ -1000,9 +1000,9 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$P = W/\\Delta t = 900/30 = 30$ W.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
-                "potenza media",
+                "potenza medio",
                 "watt",
                 "lavoro",
                 "tempo"
@@ -1021,7 +1021,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il lavoro delle forze non conservative è uguale alla variazione di energia meccanica: $\\Delta E_m = -40$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia meccanica",
                 "attrito",
@@ -1042,7 +1042,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$E_p = \\frac{1}{2}kx^2 = 0.5 \\cdot 200 \\cdot (0.1)^2 = 1$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "molla",
                 "kx^2",
@@ -1063,7 +1063,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$E_p$ persa $= mgh = 2 \\cdot 9.8 \\cdot 5 = 98$ J, quindi $E_c$ finale $= 98$ J (attenzione alle opzioni).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "caduta",
                 "mgh",
@@ -1084,7 +1084,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "L'energia potenziale persa è 98 J, quindi l'energia cinetica finale è 98 J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "correzione",
                 "98J",
@@ -1105,7 +1105,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Area rettangolo: $W = F \\cdot s = 5 \\cdot 4 = 20$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "grafico",
                 "area",
@@ -1126,7 +1126,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Con forza parallela alla velocità, $P = F \\cdot v = 50 \\cdot 2 = 100$ W.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "potenza",
                 "Fv",
@@ -1147,7 +1147,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$\\eta = W_{utile}/W_{speso} = 350/500 = 0.70$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "rendimento",
                 "utile",
@@ -1168,7 +1168,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Se la forza risultante è nulla in ogni istante, il lavoro totale è nullo.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza risultante",
                 "lavoro totale",
@@ -1189,7 +1189,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Con attrito, per mantenere $v$ costante occorre una forza esterna che compia lavoro positivo per compensare il lavoro negativo dell'attrito.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "attrito",
                 "velocità costante",
@@ -1210,7 +1210,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$\\Delta E_p = mg\\Delta h = 4 \\cdot 9.8 \\cdot 1.5 = 58.8$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia potenziale",
                 "mgh",
@@ -1231,7 +1231,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$E_c = \\frac{1}{2}mv^2 \\Rightarrow 9 = \\frac{1}{2} \\cdot 2 \\cdot v^2 \\Rightarrow v^2 = 9 \\Rightarrow v = 3$ m/s.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia cinetica",
                 "velocità",
@@ -1252,7 +1252,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$W = F \\cdot s \\cdot \\cos 90° = 0$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "cos90",
                 "perpendicolare",
@@ -1273,7 +1273,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$W = \\Delta E_c = \\frac{1}{2} \\cdot 1 \\cdot (4^2 - 0) = 8$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "accelerazione",
                 "ΔEc",
@@ -1294,7 +1294,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Senza attriti, la somma $E_c + E_p$ resta costante durante la salita e la discesa.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lancio",
                 "conservazione",
@@ -1315,7 +1315,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La variazione di energia meccanica è uguale al lavoro delle forze non conservative: $E_{m,f} = E_{m,i} + W_{nc}$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia meccanica",
                 "attrito",
@@ -1336,7 +1336,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In discesa $\\Delta h = -3$ m, quindi $W_p = -mg\\Delta h = +mg \\cdot 3 = +58.8$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "peso",
                 "discesa",
@@ -1346,7 +1346,7 @@
         },
         {
             "id": "lav_065",
-            "domanda": "Un lavoro di 120 J viene compiuto in 2 s. Qual è la potenza media?",
+            "domanda": "Un lavoro di 120 J viene compiuto in 2 s. Qual è la potenza medio?",
             "categoria": "Lavoro",
             "sottocategoria": "Calcolo",
             "opzioni": [
@@ -1357,7 +1357,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$P = W/\\Delta t = 120/2 = 60$ W.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "potenza",
                 "watt",
@@ -1378,7 +1378,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$W = F \\cdot s \\Rightarrow s = W/F = 20/4 = 5$ m.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "spostamento",
                 "W=Fs",
@@ -1399,7 +1399,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Velocità costante implica risultante nulla, quindi l'attrito deve equilibrare la forza applicata (stesso modulo).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "equilibrio",
                 "attrito",
@@ -1409,7 +1409,7 @@
         },
         {
             "id": "lav_068",
-            "domanda": "Un oggetto di 5 kg viene sollevato di 1 m in 2 s a velocità costante. Trascurando perdite, potenza media richiesta ($g = 9.8$)?",
+            "domanda": "Un oggetto di 5 kg viene sollevato di 1 m in 2 s a velocità costante. Trascurando perdite, potenza medio richiesta ($g = 9.8$)?",
             "categoria": "Lavoro",
             "sottocategoria": "Potenza in sollevamento",
             "opzioni": [
@@ -1420,7 +1420,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$W = mgh = 5 \\cdot 9.8 \\cdot 1 = 49$ J, quindi $P = 49/2 = 24.5$ W (attenzione alle opzioni).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "sollevamento",
                 "mgh",
@@ -1430,7 +1430,7 @@
         },
         {
             "id": "lav_069",
-            "domanda": "Correggi: nel quesito precedente ($m = 5$ kg, $h = 1$ m, $t = 2$ s), qual è la potenza media corretta?",
+            "domanda": "Correggi: nel quesito precedente ($m = 5$ kg, $h = 1$ m, $t = 2$ s), qual è la potenza medio corretta?",
             "categoria": "Lavoro",
             "sottocategoria": "Verifica calcolo",
             "opzioni": [
@@ -1440,13 +1440,13 @@
                 "98 W"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "La potenza media è $P = (mgh)/t = 49/2 = 24.5$ W.",
-            "difficolta": "media",
+            "spiegazione": "La potenza medio è $P = (mgh)/t = 49/2 = 24.5$ W.",
+            "difficolta": "medio",
             "paroleChiave": [
                 "correzione",
                 "24.5W",
                 "mgh",
-                "potenza media"
+                "potenza medio"
             ]
         },
         {
@@ -1462,7 +1462,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "L'energia meccanica si conserva se non compiono lavoro forze dissipative e agiscono solo forze conservative.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "conservazione",
                 "forze conservative",
@@ -1483,7 +1483,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Senza attrito, la diminuzione di energia potenziale si trasforma in aumento di energia cinetica.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "piano inclinato",
                 "cinetica",
@@ -1504,7 +1504,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La potenza istantanea è $P = \\vec{F} \\cdot \\vec{v} = Fv\\cos\\theta$, dove $\\theta$ è l'angolo tra forza e velocità.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "potenza istantanea",
                 "Fv",
@@ -1525,7 +1525,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Se la velocità diminuisce, diminuisce $E_c$ e quindi $W_{tot} = \\Delta E_c$ è negativo.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "ΔEc",
                 "lavoro totale",
@@ -1546,7 +1546,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$E_c = \\frac{1}{2} \\cdot 1 \\cdot 10^2 = 50$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Ec",
                 "1/2mv^2",
@@ -1567,7 +1567,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$W_{tot} = (10 \\cdot 5) + (-6 \\cdot 5) = 50 - 30 = 20$ J (attenzione alle opzioni).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "attrito",
                 "somma lavori",
@@ -1588,7 +1588,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Il lavoro totale vale 20 J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "correzione",
                 "20J",
@@ -1609,7 +1609,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "La forza peso è conservativa, quindi il lavoro dipende solo da quota iniziale e finale: se coincidono, il lavoro totale è zero.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "peso",
                 "conservativa",
@@ -1630,7 +1630,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il lavoro della forza elastica è negativo perché opposta all'allungamento: $W = -\\Delta E_p = -\\frac{1}{2}kx^2 = -2$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "molla",
                 "lavoro elastico",
@@ -1651,7 +1651,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il livello zero dell'energia potenziale è una scelta convenzionale; fisicamente sono significative le differenze di $E_p$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "riferimento",
                 "energia potenziale",
@@ -1672,7 +1672,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$W_{tot} = (8 \\cdot 2) + (-3 \\cdot 2) = 16 - 6 = 10$ J.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forze",
                 "somma",
@@ -2491,7 +2491,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il teorema lavoro-energia afferma che $W_{tot} = \\Delta E_c$, ed è valido in generale, per qualsiasi tipo di forza e traiettoria.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "teorema",
                 "lavoro totale",
@@ -2512,7 +2512,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "L'attrito è non conservativo perché il suo lavoro (sempre negativo) dipende dalla lunghezza del percorso seguito, non solo dalle posizioni iniziale e finale.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "attrito",
                 "non conservativa",
@@ -2554,7 +2554,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La forza normale è sempre perpendicolare alla superficie, quindi perpendicolare allo spostamento del corpo: di conseguenza $W = F \\cdot s \\cdot \\cos 90° = 0$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza normale",
                 "perpendicolare",
@@ -2575,7 +2575,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La potenza istantanea è data dal prodotto scalare tra forza e velocità: $P = \\vec{F} \\cdot \\vec{v}$, che esprime l'energia trasferita per unità di tempo in ogni istante.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "potenza istantanea",
                 "velocità",
@@ -2659,7 +2659,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "L'energia potenziale gravitazionale $E_p = mgh$ dipende dalla quota $h$, che è sempre misurata rispetto a un livello di riferimento arbitrario. Solo le differenze di energia potenziale hanno significato fisico assoluto.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia potenziale",
                 "riferimento",
@@ -2680,7 +2680,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Nel grafico $F$ vs $s$, l'area sotto la curva rappresenta il lavoro: $W = \\int F \\, ds$. Per forze costanti è semplicemente $F \\cdot s$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "grafico",
                 "forza-spostamento",
@@ -2701,7 +2701,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Poiché $E_c = \\frac{1}{2}mv^2$, a parità di energia cinetica, un corpo più massiccio ha velocità minore e viceversa.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia cinetica",
                 "massa",
@@ -2722,7 +2722,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per una forza variabile, il lavoro si calcola come integrale del prodotto scalare tra forza e spostamento elementare lungo il percorso.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza variabile",
                 "integrale",
@@ -2732,20 +2732,20 @@
         },
         {
             "id": "lav_131",
-            "domanda": "Che differenza c'è tra potenza media e potenza istantanea?",
+            "domanda": "Che differenza c'è tra potenza medio e potenza istantanea?",
             "categoria": "Lavoro",
             "sottocategoria": "Tipi di potenza",
             "opzioni": [
-                "La potenza media considera un intervallo di tempo finito, quella istantanea un istante preciso",
+                "La potenza medio considera un intervallo di tempo finito, quella istantanea un istante preciso",
                 "Sono la stessa cosa",
-                "La potenza media è sempre maggiore",
+                "La potenza medio è sempre maggiore",
                 "Differiscono solo per le unità di misura"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "La potenza media è $P_m = W/\\Delta t$ su un intervallo finito; la potenza istantanea è $P = \\vec{F} \\cdot \\vec{v}$ in un preciso istante.",
-            "difficolta": "media",
+            "spiegazione": "La potenza medio è $P_m = W/\\Delta t$ su un intervallo finito; la potenza istantanea è $P = \\vec{F} \\cdot \\vec{v}$ in un preciso istante.",
+            "difficolta": "medio",
             "paroleChiave": [
-                "potenza media",
+                "potenza medio",
                 "potenza istantanea",
                 "intervallo",
                 "istante"
@@ -2827,7 +2827,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "L'energia meccanica può aumentare se forze esterne (non conservative rispetto al sistema) compiono lavoro positivo, fornendo energia al sistema.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia meccanica",
                 "aumento",
@@ -2848,7 +2848,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Nel moto circolare, la forza centripeta è diretta verso il centro (radiale) mentre la velocità è tangente alla traiettoria: essendo perpendicolari, il lavoro è nullo.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "centripeta",
                 "circolare",
@@ -2869,7 +2869,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "L'attrito trasforma energia meccanica in energia interna: calore e deformazioni microscopiche delle superfici a contatto. Questa energia non è recuperabile come energia meccanica.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia interna",
                 "attrito",
@@ -2911,7 +2911,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il lavoro totale è la somma algebrica: $W_{tot} = 50 + (-30) = 20$ J, che rappresenta la variazione netta di energia cinetica del corpo secondo il teorema lavoro-energia.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lavoro totale",
                 "somma algebrica",
@@ -2953,7 +2953,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Nel moto circolare, la forza gravitazionale è radiale (verso il centro) mentre la velocità è tangenziale, quindi perpendicolare. Il lavoro è nullo e l'energia cinetica rimane costante.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "satellite",
                 "orbita",
@@ -2974,7 +2974,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In un urto anelastico l'energia meccanica non si conserva perché parte viene dissipata in deformazioni, calore e suono. Si conservano invece l'energia totale (primo principio termodinamica) e la quantità di moto.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto anelastico",
                 "energia meccanica",
@@ -3016,7 +3016,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Dal teorema lavoro-energia, $W_{tot} = \\Delta E_c$. Se il lavoro totale è nullo, allora $\\Delta E_c = 0$, cioè l'energia cinetica rimane costante. Questo può avvenire anche con forze non nulle che si bilanciano.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lavoro nullo",
                 "energia cinetica",
@@ -3037,7 +3037,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Poiché $E_p = \\frac{1}{2}kx^2$, se $x$ diventa $x/2$, allora $E_p$ diventa $\\frac{1}{2}k(x/2)^2 = \\frac{1}{4} \\cdot \\frac{1}{2}kx^2$, cioè un quarto del valore iniziale.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia elastica",
                 "proporzionalità",
@@ -3058,7 +3058,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il primo principio della termodinamica afferma che l'energia totale (comprese tutte le forme: meccanica, termica, chimica, ecc.) si conserva in un sistema isolato.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "conservazione energia",
                 "primo principio",
@@ -3100,7 +3100,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "L'energia cinetica $E_c = \\frac{1}{2}mv^2$ dipende dal quadrato della velocità, quindi è sempre $\\geq 0$. Il lavoro $W = F \\cdot s \\cdot \\cos\\theta$ dipende dall'angolo e può essere negativo se $90° < \\theta \\leq 180°$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia cinetica positiva",
                 "lavoro negativo",
@@ -3121,7 +3121,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per una forza conservativa vale $W_{peso} = -\\Delta E_p$. Se il corpo scende, il peso compie lavoro positivo e l'energia potenziale diminuisce; se sale, il peso compie lavoro negativo e $E_p$ aumenta.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia potenziale",
                 "lavoro peso",
@@ -3205,7 +3205,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Il lavoro $W = F \\cdot s$ dipende solo dalla forza applicata e dallo spostamento, non dal tempo. La velocità di sollevamento influenza solo la potenza ($P = W/t$), non il lavoro totale.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lavoro",
                 "indipendenza tempo",
@@ -3268,7 +3268,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In assenza di attriti, l'energia meccanica si conserva. Partendo da altezza $h$ con $E_c = 0$, l'energia totale è $E = mgh$. Non può risalire oltre $h$ perché richiederebbe $E_p > mgh$, violando la conservazione.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "pendolo",
                 "conservazione",
@@ -3310,7 +3310,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Un rendimento $>$ 100% significherebbe produrre più energia di quella fornita, violando la conservazione dell'energia (primo principio della termodinamica). Il massimo teorico è $\\eta = 1$ (100%).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "rendimento",
                 "100%",
@@ -3331,7 +3331,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "L'energia è una proprietà del sistema (capacità di compiere lavoro), mentre il lavoro è il processo di trasferimento di energia da un sistema all'altro tramite forze.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lavoro",
                 "energia",
@@ -3352,7 +3352,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In moto rettilineo uniforme, $v$ è costante quindi $E_c$ è costante. Questo implica $W_{tot} = 0$: la forza motrice del motore bilancia esattamente le forze resistenti (attrito, aria).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "moto uniforme",
                 "forze bilanciate",
@@ -3394,7 +3394,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La forza elastica ideale è conservativa: il suo lavoro dipende solo dalle posizioni iniziale e finale (allungamenti), non dal percorso. Si può definire un'energia potenziale elastica.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza elastica",
                 "conservativa",
@@ -3415,7 +3415,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il lavoro è definito come $W = F \\cdot s$. Se non c'è spostamento ($s = 0$), il lavoro è nullo anche se si esercita una forza. Nota: dal punto di vista fisiologico i muscoli consumano energia.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lavoro nullo",
                 "spostamento zero",
@@ -3436,7 +3436,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il lavoro contro la gravità è lo stesso ($W = mgh$), ma salendo di corsa il tempo è minore, quindi la potenza $P = W/t$ è maggiore. La fatica è legata alla potenza richiesta.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "potenza",
                 "fatica",
@@ -3457,7 +3457,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Se $W_{tot} > 0$, allora $\\Delta E_c > 0$, quindi l'energia cinetica aumenta. Poiché $E_c = \\frac{1}{2}mv^2$, questo implica che il modulo della velocità aumenta.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "velocità",
                 "lavoro positivo",
@@ -3541,7 +3541,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Dal teorema lavoro-energia, $W = \\Delta E_c = \\frac{1}{2}m(v_f^2 - v_i^2)$. A parità di $\\Delta v$, il lavoro è direttamente proporzionale alla massa: un corpo più massiccio richiede più lavoro per la stessa variazione di velocità.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lavoro",
                 "massa",
@@ -3562,7 +3562,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "In un urto elastico, senza forze esterne si conserva la quantità di moto (sempre). Inoltre, non essendoci dissipazione (deformazioni permanenti, calore), si conserva anche l'energia cinetica totale del sistema.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto elastico",
                 "conservazione",
