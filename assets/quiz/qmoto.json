@@ -853,7 +853,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$p = m \\cdot v = 2\\,\\mathrm{kg} \\cdot 3\\,\\mathrm{m/s} = 6\\,\\mathrm{kg\\cdot m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "calcolo",
                 "p=mv",
@@ -874,7 +874,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$p = m \\cdot v = 0{,}5\\,\\mathrm{kg} \\cdot 8\\,\\mathrm{m/s} = 4\\,\\mathrm{kg\\cdot m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "calcolo",
                 "p=mv",
@@ -895,7 +895,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$I = F\\cdot\\Delta t = 10\\,\\mathrm{N} \\cdot 0{,}2\\,\\mathrm{s} = 2\\,\\mathrm{N\\cdot s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso",
                 "FΔt",
@@ -916,7 +916,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La variazione è $\\Delta p = p_f - p_i = 11 - 3 = 8\\,\\mathrm{kg\\cdot m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Δp",
                 "variazione",
@@ -937,7 +937,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$I = \\Delta p = m\\cdot\\Delta v = 1\\,\\mathrm{kg} \\cdot (6 - 2)\\,\\mathrm{m/s} = 4\\,\\mathrm{N\\cdot s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "I=Δp",
                 "mΔv",
@@ -958,7 +958,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$I = \\Delta p = m\\cdot v_f\\Rightarrow v_f = I/m = 6/2 = 3\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso",
                 "velocità",
@@ -979,7 +979,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Conservazione di $p$: $p_i = 1\\,\\mathrm{kg} \\cdot 4\\,\\mathrm{m/s} + 1\\,\\mathrm{kg} \\cdot 0 = 4\\,\\mathrm{kg\\cdot m/s}$, massa finale $2\\,\\mathrm{kg}$ $\\Rightarrow v = 4/2 = 2\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto anelastico",
                 "conservazione",
@@ -1000,7 +1000,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$p_i = 2\\,\\mathrm{kg} \\cdot 3\\,\\mathrm{m/s} + 1\\,\\mathrm{kg} \\cdot 0 = 6\\,\\mathrm{kg\\cdot m/s}$, massa finale $3\\,\\mathrm{kg}$ $\\Rightarrow v = 6/3 = 2\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto anelastico",
                 "p totale",
@@ -1021,7 +1021,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$v = p/m = 1{,}6 / 0{,}2 = 8\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "v=p/m",
                 "calcolo",
@@ -1042,7 +1042,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$v = p/m = 12/3 = 4\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "v=p/m",
                 "calcolo",
@@ -1052,7 +1052,7 @@
         },
         {
             "id": "qdm_051",
-            "domanda": "Una forza media di $50\\,\\mathrm{N}$ agisce per $0{,}1\\,\\mathrm{s}$ su un corpo. Qual è $\\Delta p$?",
+            "domanda": "Una forza medio di $50\\,\\mathrm{N}$ agisce per $0{,}1\\,\\mathrm{s}$ su un corpo. Qual è $\\Delta p$?",
             "categoria": "Quantità di Moto",
             "sottocategoria": "Teorema dell'impulso",
             "opzioni": [
@@ -1063,12 +1063,12 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Dal teorema dell'impulso $F\\cdot\\Delta t = \\Delta p$: $\\Delta p = 50\\,\\mathrm{N} \\cdot 0{,}1\\,\\mathrm{s} = 5\\,\\mathrm{kg\\cdot m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Δp",
                 "FΔt",
                 "impulso",
-                "forza media"
+                "forza medio"
             ]
         },
         {
@@ -1084,7 +1084,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$\\Delta p = m\\cdot(v_f - v_i) = 2\\,\\mathrm{kg} \\cdot (-2 - 1)\\,\\mathrm{m/s} = -6\\,\\mathrm{kg\\cdot m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Δp",
                 "verso opposto",
@@ -1105,7 +1105,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Poiché $I = \\Delta p$, $p_f = p_i + I = 7 + (-4) = 3\\,\\mathrm{kg\\cdot m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso",
                 "Δp",
@@ -1126,7 +1126,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$p$ iniziale $0$, quindi $60\\,\\mathrm{kg} \\cdot 2\\,\\mathrm{m/s} + 40\\,\\mathrm{kg} \\cdot v_2 = 0\\,\\mathrm{kg\\cdot m/s} \\Rightarrow v_2 = -3\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "pattinatori",
                 "azione interna",
@@ -1147,7 +1147,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Conservazione di $p$: $p_i = 0{,}01\\,\\mathrm{kg} \\cdot 400\\,\\mathrm{m/s} = 4\\,\\mathrm{kg\\cdot m/s}$, massa finale $2{,}00\\,\\mathrm{kg}$ $\\Rightarrow v = 4/2 = 2\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "proiettile",
                 "blocco",
@@ -1168,7 +1168,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$p_{tot} = m_1 v_1 + m_2 v_2 = 2\\,\\mathrm{kg} \\cdot 1\\,\\mathrm{m/s} + 1\\,\\mathrm{kg} \\cdot (-1\\,\\mathrm{m/s}) = +1\\,\\mathrm{kg\\cdot m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "p totale",
                 "somma",
@@ -1189,7 +1189,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$I = \\Delta p = m(v_f - v_i) = 3\\,\\mathrm{kg} \\cdot (0 - 2\\,\\mathrm{m/s}) = -6\\,\\mathrm{N\\cdot s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso",
                 "arresto",
@@ -1210,7 +1210,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$I = \\Delta p = m\\cdot v\\Rightarrow v = I/m = 12/3 = 4\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso",
                 "v=I/m",
@@ -1231,7 +1231,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La quantità di moto totale è la somma vettoriale: $+10 + (-10) = 0$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "somma vettoriale",
                 "opposti",
@@ -1252,7 +1252,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In un sistema isolato $p_{tot}$ resta costante, quindi finale = iniziale. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "conservazione",
                 "isolato",
@@ -1273,7 +1273,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$p_i = 1\\,\\mathrm{kg} \\cdot 2\\,\\mathrm{m/s} = 2\\,\\mathrm{kg\\cdot m/s}$, massa finale $4\\,\\mathrm{kg}$ $\\Rightarrow v = 2/4 = 0{,}5\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "anelastico",
                 "si attaccano",
@@ -1294,7 +1294,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il razzo accelera perché, in assenza di forze esterne significative, si conserva la quantità di moto totale del sistema razzo+gas espulsi. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "razzo",
                 "propulsione",
@@ -1315,7 +1315,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$v_{CM} = p_{tot} / M_{tot} = 15/5 = 3\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "centro di massa",
                 "v_CM",
@@ -1336,12 +1336,12 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$p_{tot} = 2\\,\\mathrm{kg} \\cdot 1\\,\\mathrm{m/s} + 3\\,\\mathrm{kg} \\cdot (-1\\,\\mathrm{m/s}) = -1\\,\\mathrm{kg\\cdot m/s}$, $M = 5\\,\\mathrm{kg}$ $\\Rightarrow v_{CM} = p_{tot}/M = -1/5 = -0{,}2\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "v_CM",
                 "p_tot",
                 "segno",
-                "media pesata"
+                "medio pesata"
             ]
         },
         {
@@ -1357,7 +1357,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Nel modello standard $e = 1$ corrisponde a urto elastico. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "e",
                 "elastico",
@@ -1378,7 +1378,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $e$ definito come rapporto tra velocità relativa dopo e prima la collisione lungo la linea d'urto, $e = 0$ implica velocità relativa finale nulla (corpi con stessa velocità lungo la linea d'urto). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "e=0",
                 "velocità relativa",
@@ -1399,7 +1399,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$\\Delta p = m(v_f - v_i) = 1\\,\\mathrm{kg} \\cdot (-4 - 4)\\,\\mathrm{m/s} = -8\\,\\mathrm{kg\\cdot m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Δp",
                 "inversione",
@@ -1420,7 +1420,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$I = m(v_f - v_i)\\Rightarrow 10 = 2(v_f + 1)\\Rightarrow v_f = 4\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso",
                 "mΔv",
@@ -1441,7 +1441,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "In un urto elastico 1D tra masse uguali (una ferma), idealmente si scambiano le velocità, coerentemente con conservazione di $p$ e dell'energia cinetica. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto elastico",
                 "masse uguali",
@@ -1462,7 +1462,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$p_{tot}$ iniziale $0$, quindi $1\\,\\mathrm{kg} \\cdot 6\\,\\mathrm{m/s} + 2\\,\\mathrm{kg} \\cdot v = 0\\,\\mathrm{kg\\cdot m/s} \\Rightarrow v = -3\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "esplosione",
                 "p_tot=0",
@@ -1483,7 +1483,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$I = \\Delta p = m\\Delta v = 5\\,\\mathrm{kg} \\cdot (6 - 2)\\,\\mathrm{m/s} = 20\\,\\mathrm{N\\cdot s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso",
                 "Δp",
@@ -1504,7 +1504,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$I = F\\cdot\\Delta t = 100\\,\\mathrm{N} \\cdot 0{,}05\\,\\mathrm{s} = 5\\,\\mathrm{N\\cdot s}$ e quindi $v = I/m = 5/2 = 2{,}5\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza",
                 "impulso",
@@ -1525,7 +1525,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La conservazione riguarda la quantità di moto totale (somma vettoriale), mentre le quantità di moto dei singoli corpi possono variare per azione delle forze interne. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "totale",
                 "forze interne",
@@ -1546,7 +1546,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$v = p/m = 20/4 = 5\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "v=p/m",
                 "calcolo",
@@ -1567,7 +1567,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$m = p/v = 50/10 = 5\\,\\mathrm{kg}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "m=p/v",
                 "calcolo",
@@ -1588,7 +1588,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "In un sistema isolato vale sempre $p_{tot}$ iniziale $= p_{tot}$ finale, anche negli urti anelastici. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto",
                 "equazione",
@@ -1609,7 +1609,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$p_i = 1\\,\\mathrm{kg} \\cdot 5\\,\\mathrm{m/s} = 5\\,\\mathrm{kg\\cdot m/s}$, massa finale $5\\,\\mathrm{kg}$ $\\Rightarrow v = 5/5 = 1\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "anelastico",
                 "conservazione",
@@ -1619,9 +1619,9 @@
         },
         {
             "id": "qdm_078",
-            "domanda": "Un corpo subisce un impulso di $3\\,\\mathrm{N\\cdot s}$ in $0{,}05\\,\\mathrm{s}$. Qual è la forza media?",
+            "domanda": "Un corpo subisce un impulso di $3\\,\\mathrm{N\\cdot s}$ in $0{,}05\\,\\mathrm{s}$. Qual è la forza medio?",
             "categoria": "Quantità di Moto",
-            "sottocategoria": "Impulso e forza media",
+            "sottocategoria": "Impulso e forza medio",
             "opzioni": [
                 "$15\\,\\mathrm{N}$",
                 "$30\\,\\mathrm{N}$",
@@ -1629,10 +1629,10 @@
                 "$150\\,\\mathrm{N}$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Per forza media $I = F_{media} \\cdot\\Delta t$, quindi $F_{media} = I /\\Delta t = 3 / 0{,}05 = 60\\,\\mathrm{N}$. ",
-            "difficolta": "media",
+            "spiegazione": "Per forza medio $I = F_{medio} \\cdot\\Delta t$, quindi $F_{medio} = I /\\Delta t = 3 / 0{,}05 = 60\\,\\mathrm{N}$. ",
+            "difficolta": "medio",
             "paroleChiave": [
-                "forza media",
+                "forza medio",
                 "I/Δt",
                 "impulso",
                 "calcolo"
@@ -1640,9 +1640,9 @@
         },
         {
             "id": "qdm_079",
-            "domanda": "Un corpo cambia quantità di moto di $12\\,\\mathrm{kg\\cdot m/s}$ in $0{,}2\\,\\mathrm{s}$. Qual è la forza media risultante?",
+            "domanda": "Un corpo cambia quantità di moto di $12\\,\\mathrm{kg\\cdot m/s}$ in $0{,}2\\,\\mathrm{s}$. Qual è la forza medio risultante?",
             "categoria": "Quantità di Moto",
-            "sottocategoria": "Impulso e forza media",
+            "sottocategoria": "Impulso e forza medio",
             "opzioni": [
                 "$2{,}4\\,\\mathrm{N}$",
                 "$6\\,\\mathrm{N}$",
@@ -1650,10 +1650,10 @@
                 "$240\\,\\mathrm{N}$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "Dal teorema dell'impulso $F_{media}\\cdot\\Delta t =\\Delta p$, quindi $F_{media} =\\Delta p /\\Delta t = 12 / 0{,}2 = 60\\,\\mathrm{N}$. ",
-            "difficolta": "media",
+            "spiegazione": "Dal teorema dell'impulso $F_{medio}\\cdot\\Delta t =\\Delta p$, quindi $F_{medio} =\\Delta p /\\Delta t = 12 / 0{,}2 = 60\\,\\mathrm{N}$. ",
+            "difficolta": "medio",
             "paroleChiave": [
-                "F media",
+                "F medio",
                 "Δp/Δt",
                 "impulso",
                 "calcolo"
@@ -1672,7 +1672,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Se $p_{tot} = p_1 + p_2 = 0$, allora $p_2 = -p_1 = -7\\,\\mathrm{kg\\cdot m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "p_tot=0",
                 "opposto",
@@ -2179,7 +2179,7 @@
             "difficolta": "difficile",
             "paroleChiave": [
                 "v_CM",
-                "media pesata",
+                "medio pesata",
                 "p_tot/M",
                 "calcolo"
             ]
@@ -2274,18 +2274,18 @@
             "categoria": "Quantità di Moto",
             "sottocategoria": "Applicazioni pratiche",
             "opzioni": [
-                "Aumenta il tempo di interazione e quindi diminuisce la forza media necessaria",
+                "Aumenta il tempo di interazione e quindi diminuisce la forza medio necessaria",
                 "La massa della mano aumenta",
                 "Il pallone perde tutta la sua energia",
                 "La quantità di moto non cambia"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Dal teorema dell'impulso, $I = F_{media} \\cdot \\Delta t = \\Delta p$. Aumentando il tempo $\\Delta t$ di contatto (muovendo la mano indietro), a parità di $\\Delta p$, la forza media $F_{media}$ richiesta diminuisce, riducendo il disagio. ",
-            "difficolta": "media",
+            "spiegazione": "Dal teorema dell'impulso, $I = F_{medio} \\cdot \\Delta t = \\Delta p$. Aumentando il tempo $\\Delta t$ di contatto (muovendo la mano indietro), a parità di $\\Delta p$, la forza medio $F_{medio}$ richiesta diminuisce, riducendo il disagio. ",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso",
                 "tempo contatto",
-                "forza media",
+                "forza medio",
                 "applicazione pratica"
             ]
         },
@@ -2296,13 +2296,13 @@
             "sottocategoria": "Applicazioni pratiche",
             "opzioni": [
                 "Per aumentare la forza dell'urto",
-                "Per aumentare il tempo di decelerazione e ridurre la forza media sul corpo",
-                "Per annullare la velocità immediatamente",
+                "Per aumentare il tempo di decelerazione e ridurre la forza medio sul corpo",
+                "Per annullare la velocità immediotamente",
                 "Perché è più economico"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "L'airbag estende il tempo $\\Delta t$ su cui avviene la decelerazione (assorbimento di $\\Delta p$), riducendo così la forza media e i danni. È una applicazione diretta di $F = \\Delta p / \\Delta t$. ",
-            "difficolta": "media",
+            "spiegazione": "L'airbag estende il tempo $\\Delta t$ su cui avviene la decelerazione (assorbimento di $\\Delta p$), riducendo così la forza medio e i danni. È una applicazione diretta di $F = \\Delta p / \\Delta t$. ",
+            "difficolta": "medio",
             "paroleChiave": [
                 "airbag",
                 "decelerazione",
@@ -2323,7 +2323,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per il terzo principio di Newton, se il saltatore (tramite il suolo) cambia la propria quantità di moto, il suolo subisce un impulso opposto. Questo è consistente con la conservazione della quantità di moto totale. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "terzo principio",
                 "impulso",
@@ -2364,8 +2364,8 @@
                 "Perché la resistenza dell'aria non esiste"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Un giocatore forte applica una forza maggiore per un tempo più lungo (o una forza media/tempo più efficace), generando così un impulso maggiore e una maggiore variazione di quantità di moto della palla. ",
-            "difficolta": "media",
+            "spiegazione": "Un giocatore forte applica una forza maggiore per un tempo più lungo (o una forza medio/tempo più efficace), generando così un impulso maggiore e una maggiore variazione di quantità di moto della palla. ",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso",
                 "forza",
@@ -2380,15 +2380,15 @@
             "sottocategoria": "Applicazioni pratiche",
             "opzioni": [
                 "Per aumentare la velocità di caduta",
-                "Per aumentare il tempo di decelerazione e ridurre la forza media all'atterraggio",
+                "Per aumentare il tempo di decelerazione e ridurre la forza medio all'atterraggio",
                 "Perché il paracadute si usura",
                 "Per decorazione"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Con un paracadute aperto più a lungo, il tempo di decelerazione (da velocità di caduta a zero) aumenta, riducendo la forza media ricevuta dal corpo. Questo minimizza le lesioni all'atterraggio. ",
-            "difficolta": "media",
+            "spiegazione": "Con un paracadute aperto più a lungo, il tempo di decelerazione (da velocità di caduta a zero) aumenta, riducendo la forza medio ricevuta dal corpo. Questo minimizza le lesioni all'atterraggio. ",
+            "difficolta": "medio",
             "paroleChiave": [
-                "forza media",
+                "forza medio",
                 "tempo",
                 "sicurezza",
                 "impulso"
@@ -2428,7 +2428,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Se $p_{tot}$ finale è zero e il sistema è isolato, per conservazione di $p$ anche $p_{tot}$ iniziale deve essere zero. Quindi le quantità di moto iniziali devono sommarsi vettorialmente a zero, cioè essere opposte. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "conservazione p",
                 "p_tot=0",
@@ -2449,7 +2449,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La forma generale del secondo principio è $F = dp/dt$. Se $F \\neq 0$ allora la quantità di moto cambia nel tempo. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "F=dp/dt",
                 "secondo principio",
@@ -2491,7 +2491,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "In un urto elastico in un sistema isolato, si conservano sia $p_{tot}$ che l'energia cinetica totale, mentre le velocità e le $p$ individuali scambiano valore tra i corpi. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto elastico",
                 "conservazione",
@@ -2512,7 +2512,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il modulo della quantità di moto aumenta se la forza è nella stessa direzione del vettore $p$. Se la forza è opposta, $|p|$ diminuisce. La variazione di $p$ è parallela a $F$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza",
                 "direzione",
@@ -2527,17 +2527,17 @@
             "sottocategoria": "Interpretazione della legge",
             "opzioni": [
                 "Perché la velocità aumenta linearmente con l'energia cinetica",
-                "Perché $p = m \\cdot v$ è maggiore e serve una forza media molto maggiore per fermare il corpo, poiché il tempo di contatto è limitato",
+                "Perché $p = m \\cdot v$ è maggiore e serve una forza medio molto maggiore per fermare il corpo, poiché il tempo di contatto è limitato",
                 "Perché la massa aumenta",
                 "Perché l'attrito è minore"
             ],
             "rispostaCorretta": 1,
             "spiegazione": "A velocità maggiore, la quantità di moto è maggiore. Il tempo di contatto in un incidente è pressoché fisso (breve), quindi da $F = \\Delta p / \\Delta t$, una $\\Delta p$ maggiore richiede una forza molto maggiore, causando danni più gravi. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "velocità",
                 "impulso",
-                "forza media",
+                "forza medio",
                 "sicurezza"
             ]
         },
@@ -2554,7 +2554,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "L'impulso totale è $I = \\Delta p = p_f - p_i = 0 - p_1 = -p_1$. L'impulso non tiene conto dei dettagli temporali, solo della variazione totale di $p$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso totale",
                 "Δp",
@@ -2575,7 +2575,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In un sistema isolato $p_{tot}$ è conservato (costante nel tempo) per il primo principio e per la conservazione della quantità di moto. Tutte le altre situazioni sono possibili anche se una riceve impulso interno (azione-reazione). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "isolato",
                 "conservazione",
@@ -2596,7 +2596,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Negli urti anelastici siamo in perdita di $K$ totale, quindi non possiamo usare la conservazione di $K$. Possiamo usare la conservazione di $p$ (in sistemi isolati) e ulteriori informazioni (es. coefficiente di restituzione). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "anelastico",
                 "energia",
@@ -2617,7 +2617,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In assenza di forze esterne significative, $p_{tot}(razzo + gas) = costante$. Inizialmente tutto è fermo. Il razzo espelle gas acquistando $p$ in una direzione, il gas acquisisce $p$ opposta, mantenendo $p_{tot} = 0$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "razzo",
                 "spazio",
@@ -2638,7 +2638,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Se il sistema è isolato (risultante forze esterne nulla), la quantità di moto totale DEVE rimanere costante. Una variazione contraddirebbe la definizione di isolato. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "isolato",
                 "forze esterne",
@@ -2659,7 +2659,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "In un urto elastico tra masse molto diverse (leggera vs pesante), la pallina leggera rimbalza all'indietro perché scambia quantità di moto con un corpo che non rallenta significativamente. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto elastico",
                 "masse diverse",
@@ -2680,7 +2680,7 @@
             ],
             "rispostaCorretta": 3,
             "spiegazione": "L'aereo a decollare subisce una forza esterna (reazione dell'aria) significativa, quindi il sistema aereo+Terra non è isolato dal punto di vista della quantità di moto. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza esterna",
                 "isolato",
@@ -2722,7 +2722,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La quantità di moto è un vettore $\\vec{p} = m \\vec{v}$. In moto circolare, anche se $|v|$ è costante, la *direzione* cambia, quindi il vettore $\\vec{p}$ cambia continuamente.  ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "moto circolare",
                 "vettore",
@@ -2737,18 +2737,18 @@
             "sottocategoria": "Applicazioni pratiche",
             "opzioni": [
                 "I freni aumentano la velocità delle auto",
-                "Le cinture di sicurezza estendono il tempo di arresto durante una collisione, riducendo la forza media",
+                "Le cinture di sicurezza estendono il tempo di arresto durante una collisione, riducendo la forza medio",
                 "I motori cambiano il colore della macchina",
                 "La benzina aumenta la massa della macchina"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Le cinture di sicurezza fanno in modo che il corpo sia decelerato su un tempo più lungo (tra il freno e l'urto finale), aumentando $\\Delta t$ e riducendo così $F_{media} = \\Delta p / \\Delta t$, minimizzando i danni. ",
-            "difficolta": "media",
+            "spiegazione": "Le cinture di sicurezza fanno in modo che il corpo sia decelerato su un tempo più lungo (tra il freno e l'urto finale), aumentando $\\Delta t$ e riducendo così $F_{medio} = \\Delta p / \\Delta t$, minimizzando i danni. ",
+            "difficolta": "medio",
             "paroleChiave": [
                 "cintura sicurezza",
                 "I=Δp",
                 "tempo",
-                "forza media"
+                "forza medio"
             ]
         },
         {
@@ -2764,7 +2764,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Dal teorema dell'impulso $I = m \\Delta v$. Un impulso maggiore (dovuto a una forza forte su un tempo di contatto ottimale) produce una $\\Delta v$ maggiore, mandando la palla più lontano. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso",
                 "velocità",
@@ -2806,7 +2806,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Durante un urto di breve durata $\\Delta t$, l'impulso esterno $I_{ext} = F_{ext} \\cdot \\Delta t$ è piccolo rispetto all'impulso interno (le forze di contatto sono enormi). Questo giustifica l'ipotesi di sistema quasi isolato negli urti. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto",
                 "forze interne",
@@ -2827,7 +2827,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In un sistema isolato, la quantità di moto totale $p_{tot}$ si conserva sempre, indipendentemente dal tipo di urto. L'energia cinetica si conserva solo negli urti elastici ideali. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "conservazione",
                 "p_tot",
@@ -2869,7 +2869,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per definizione, $e = -(v_2' - v_1')/(v_2 - v_1)$, il rapporto tra la velocità relativa di separazione e quella di avvicinamento lungo la linea d'urto. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "restituzione",
                 "velocità relativa",
@@ -2890,7 +2890,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In un sistema veramente isolato (risultante forze esterne = 0), la quantità di moto totale DEVE rimanere costante. Se cambia, significa che la nostra assunzione di isolamento era errata. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "isolato",
                 "p_tot",
@@ -2911,7 +2911,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Nella piscina (sistema quasi isolato orizzontalmente se ignoriamo le pareti), il nuotatore acquisisce quantità di moto in una direzione, l'acqua in quella opposta, mantenendo $p_{tot}$ ≈ costante. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "nuoto",
                 "acqua",
@@ -2932,7 +2932,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Il combustibile bruciato viene espulso a velocità eccezionalmente alta verso il basso. Questo significa che il gas acquisisce quantità di moto verso il basso, il razzo (per conservazione) acquista $p$ verso l'alto, tutto senza bisogno di aria. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "razzo",
                 "spazio",
@@ -2953,7 +2953,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$v = p/m$. A parità di $p$, colui che ha massa minore ha velocità maggiore. Poiché B ha massa doppia, $v_B = v_A/2$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "v=p/m",
                 "confronto",
@@ -2974,7 +2974,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "L'auto leggera ha minor $p$ ma una forza di contatto di arresto è la stessa dal camion (se si attaccano). L'auto deve cambiare $p$ molto (rallentare da velocità significativa), il camion poco, quindi l'auto subisce accelerazione (deformazione) maggiore. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "incidente",
                 "p=mv",
@@ -2989,13 +2989,13 @@
             "sottocategoria": "Teorema dell'impulso",
             "opzioni": [
                 "L'impulso è uguale al cambio di quantità di moto: $I = \\Delta p$",
-                "L'impulso è il prodotto della forza media per il tempo: $I = F_{media} \\cdot \\Delta t$",
+                "L'impulso è il prodotto della forza medio per il tempo: $I = F_{medio} \\cdot \\Delta t$",
                 "L'impulso aumenta sempre la velocità di un corpo",
                 "Una forza costante produce un impulso che cambia linearmente con il tempo"
             ],
             "rispostaCorretta": 2,
             "spiegazione": "L'impulso $I = \\Delta p$ può aumentare o diminuire la velocità (o cambiarla di direzione) a seconda della direzione della forza. Un impulso opposto al moto riduce la velocità. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso",
                 "Δp",
@@ -3016,7 +3016,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "In un sistema isolato, se il corpo 1 acquisisce $p$ verso destra, il corpo 2 DEVE acquisire $p$ verso sinistra per compensare e mantenere $p_{tot}$ costante. Questo significa accelerazione verso sinistra. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "sistema due corpi",
                 "conservazione p",
@@ -3079,7 +3079,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La velocità del centro di massa è legata a $p_{tot}$ da $v_{CM} = p_{tot}/M$. In un sistema isolato $p_{tot}$ è costante, quindi $v_{CM}$ è costante. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "v_CM",
                 "p_tot/M",
@@ -3100,7 +3100,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Durante un urto di durata $\\Delta t \\approx 10^{-3}$ s, l'impulso esterno (es. gravità) è $I_{ext} = F_{ext} \\cdot \\Delta t$ negligibile rispetto all'impulso interno (forze di contatto enormi). Quindi la conservazione di $p$ è buona approssimazione. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto",
                 "impulso esterno",
@@ -3121,7 +3121,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il blocco non ha quantità di moto orizzontale iniziale (cade verticalmente). Il carrello ha $p_x$. Dopo l'impatto (se anelastico), il carrello rallenta ma la $p_{x,tot}$ si conserva (nessuna forza esterna significativa nel piano orizzontale). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "componenti",
                 "conservazione parziale",
@@ -3163,7 +3163,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$p_{tot} = m_1 v_1 + m_2 v_2 = 3\\,\\mathrm{kg} \\cdot 5\\,\\mathrm{m/s} + 2\\,\\mathrm{kg} \\cdot 4\\,\\mathrm{m/s} = 15 + 8 = 23\\,\\mathrm{kg\\cdot m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "p_tot",
                 "somma",
@@ -3173,9 +3173,9 @@
         },
         {
             "id": "qdm_152",
-            "domanda": "Una auto di massa $1200\\,\\mathrm{kg}$ frena da $20\\,\\mathrm{m/s}$ a $5\\,\\mathrm{m/s}$ in $3\\,\\mathrm{s}$. Qual è la forza media di frenata?",
+            "domanda": "Una auto di massa $1200\\,\\mathrm{kg}$ frena da $20\\,\\mathrm{m/s}$ a $5\\,\\mathrm{m/s}$ in $3\\,\\mathrm{s}$. Qual è la forza medio di frenata?",
             "categoria": "Quantità di Moto",
-            "sottocategoria": "Forza media e impulso",
+            "sottocategoria": "Forza medio e impulso",
             "opzioni": [
                 "$2000\\,\\mathrm{N}$",
                 "$4000\\,\\mathrm{N}$",
@@ -3183,10 +3183,10 @@
                 "$12000\\,\\mathrm{N}$"
             ],
             "rispostaCorretta": 2,
-            "spiegazione": "$F_{media} = \\Delta p / \\Delta t = m(v_f - v_i) / \\Delta t = 1200\\,\\mathrm{kg} \\cdot (5 - 20)\\,\\mathrm{m/s} / 3\\,\\mathrm{s} = 1200 \\cdot (-15) / 3 = -6000\\,\\mathrm{N}$ (modulo $6000\\,\\mathrm{N}$). ",
-            "difficolta": "media",
+            "spiegazione": "$F_{medio} = \\Delta p / \\Delta t = m(v_f - v_i) / \\Delta t = 1200\\,\\mathrm{kg} \\cdot (5 - 20)\\,\\mathrm{m/s} / 3\\,\\mathrm{s} = 1200 \\cdot (-15) / 3 = -6000\\,\\mathrm{N}$ (modulo $6000\\,\\mathrm{N}$). ",
+            "difficolta": "medio",
             "paroleChiave": [
-                "forza media",
+                "forza medio",
                 "Δp/Δt",
                 "frenata",
                 "calcolo"
@@ -3205,7 +3205,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$p_i = p_f$: $5 \\cdot v_1 + 5 \\cdot 0 = (5 + 5) \\cdot 1{,}5\\Rightarrow 5v_1 = 15\\Rightarrow v_1 = 3\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto anelastico",
                 "conservazione p",
@@ -3226,7 +3226,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$\\Delta p = m(v_f - v_i) = 0{,}06\\,\\mathrm{kg} \\cdot (-30 - 40)\\,\\mathrm{m/s} = 0{,}06 \\cdot (-70) = -4{,}2\\,\\mathrm{kg\\cdot m/s}$ (modulo $4{,}2\\,\\mathrm{kg\\cdot m/s}$). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "rimbalzo",
                 "Δp",
@@ -3247,7 +3247,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Da $v^2 = 2gh$: $v = \\sqrt{2 \\cdot 10 \\cdot 1} = \\sqrt{20}\\approx 4{,}47\\,\\mathrm{m/s}$, quindi $p = 70 \\cdot 4{,}47 \\approx 1100\\,\\mathrm{kg\\cdot m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "caduta libera",
                 "energia",
@@ -3268,7 +3268,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$p_i = 4 \\cdot 2 + 2 \\cdot 0 = 8\\,\\mathrm{kg\\cdot m/s}$, $M = 6\\,\\mathrm{kg}$ $\\Rightarrow v = 8/6 = 1{,}33\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto anelastico",
                 "massa diversa",
@@ -3289,7 +3289,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$I = F \\cdot \\Delta t = 200 \\cdot 2{,}5 = 500\\,\\mathrm{N\\cdot s}$ e $v = I/m = 500/40 = 12{,}5\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso",
                 "F·Δt",
@@ -3310,7 +3310,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "In urto elastico tra masse uguali (una ferma), si scambiano velocità: $v_1' = 0$, $v_2' = 6\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto elastico",
                 "masse uguali",
@@ -3331,10 +3331,10 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$x_{CM} = (m_1 x_1 + m_2 x_2)/(m_1 + m_2) = (3 \\cdot 1 + 2 \\cdot 4) / 5 = (3 + 8) / 5 = 2{,}2\\,\\mathrm{m}$ (opzione più vicina $2{,}4\\,\\mathrm{m}$). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "x_CM",
-                "media pesata",
+                "medio pesata",
                 "posizione",
                 "calcolo"
             ]
@@ -3352,11 +3352,11 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$v_{CM} = (p_{tot})/M = (6 \\cdot 2 + 4 \\cdot 5) / 10 = (12 + 20) / 10 = 3{,}2\\,\\mathrm{m/s}$ (opzione più vicina $2{,}8\\,\\mathrm{m/s}$). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "v_CM",
                 "p_tot/M",
-                "velocità media",
+                "velocità medio",
                 "calcolo"
             ]
         },
@@ -3373,7 +3373,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$p_{tot} = 5 \\cdot 3 + 5 \\cdot (-1) = 15 - 5 = 10\\,\\mathrm{kg\\cdot m/s}$ (opzione $+10\\,\\mathrm{kg\\cdot m/s}$). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "p_tot",
                 "segni",
@@ -3394,7 +3394,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$I = \\Delta p = m(v_f - v_i) = 0{,}5 \\cdot (-10 - 10) = 0{,}5 \\cdot (-20) = -10\\,\\mathrm{N\\cdot s}$ (modulo $10\\,\\mathrm{N\\cdot s}$, opzione più vicina $15\\,\\mathrm{N\\cdot s}$). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "rimbalzo elastico",
                 "impulso",
@@ -3415,7 +3415,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$x_{CM} = (3 \\cdot 2 + 1 \\cdot 8) / (3 + 1) = (6 + 8) / 4 = 3{,}5\\,\\mathrm{m}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "x_CM",
                 "posizione pesata",
@@ -3425,9 +3425,9 @@
         },
         {
             "id": "qdm_164",
-            "domanda": "Un carrello ($3\\,\\mathrm{kg}$) accelera da $0$ a $8\\,\\mathrm{m/s}$ in $2\\,\\mathrm{s}$. Forza media applicata:",
+            "domanda": "Un carrello ($3\\,\\mathrm{kg}$) accelera da $0$ a $8\\,\\mathrm{m/s}$ in $2\\,\\mathrm{s}$. Forza medio applicata:",
             "categoria": "Quantità di Moto",
-            "sottocategoria": "Forza media dal moto",
+            "sottocategoria": "Forza medio dal moto",
             "opzioni": [
                 "$6\\,\\mathrm{N}$",
                 "$10\\,\\mathrm{N}$",
@@ -3436,9 +3436,9 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$F = \\Delta p / \\Delta t = m \\Delta v / \\Delta t = 3 \\cdot 8 / 2 = 12\\,\\mathrm{N}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
-                "F media",
+                "F medio",
                 "Δp/Δt",
                 "accelerazione",
                 "calcolo"
@@ -3457,7 +3457,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$p_i = 6 \\cdot 4 = 24\\,\\mathrm{kg\\cdot m/s}$, $M = 9\\,\\mathrm{kg}$ $\\Rightarrow v = 24/9 = 2{,}67\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto anelastico",
                 "p_i = p_f",
@@ -3467,7 +3467,7 @@
         },
         {
             "id": "qdm_166",
-            "domanda": "Una forza agisce su un corpo per $0{,}5\\,\\mathrm{s}$ e produce un impulso di $100\\,\\mathrm{N\\cdot s}$. Qual è la forza media?",
+            "domanda": "Una forza agisce su un corpo per $0{,}5\\,\\mathrm{s}$ e produce un impulso di $100\\,\\mathrm{N\\cdot s}$. Qual è la forza medio?",
             "categoria": "Quantità di Moto",
             "sottocategoria": "Forza da impulso",
             "opzioni": [
@@ -3478,9 +3478,9 @@
             ],
             "rispostaCorretta": 3,
             "spiegazione": "$F = I / \\Delta t = 100 / 0{,}5 = 200\\,\\mathrm{N}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
-                "F media",
+                "F medio",
                 "I/Δt",
                 "impulso",
                 "calcolo"
@@ -3499,7 +3499,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$p_{tot} = 0$: $60 \\cdot 1 + 50 \\cdot v_2 = 0\\Rightarrow v_2 = -60/50 = -1{,}2\\,\\mathrm{m/s}$ (opzione $-0{,}83$). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "p_tot=0",
                 "masse diverse",
@@ -3520,7 +3520,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$p_{tot} = 1 \\cdot 2 + 1 \\cdot 4 + 2 \\cdot (-1) = 2 + 4 - 2 = 4\\,\\mathrm{kg\\cdot m/s}$ (opzione $+4$). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "p_tot",
                 "tre corpi",
@@ -3541,7 +3541,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$F = \\Delta p / \\Delta t\\Rightarrow 16 = 8 \\cdot 6 / \\Delta t\\Rightarrow \\Delta t = 48/16 = 3\\,\\mathrm{s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "F=Δp/Δt",
                 "tempo",
@@ -3604,7 +3604,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$p_{tot} = 2 \\cdot 6 + 4 \\cdot 1 = 12 + 4 = 16\\,\\mathrm{kg\\cdot m/s}$. In urto elastico, $p_{tot}$ si conserva. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "conservazione p",
                 "urto elastico",
@@ -3650,7 +3650,7 @@
             "paroleChiave": [
                 "v_CM",
                 "tre corpi",
-                "media pesata",
+                "medio pesata",
                 "calcolo"
             ]
         },
@@ -3730,7 +3730,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Urto elastico tra masse uguali (una ferma): si scambiano velocità. $v_1' = 0$, $v_2' = 0{,}5\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "monete",
                 "scambio velocità",
@@ -3755,13 +3755,13 @@
             "paroleChiave": [
                 "centro di massa 2D",
                 "coordinate",
-                "media pesata",
+                "medio pesata",
                 "calcolo"
             ]
         },
         {
             "id": "qdm_180",
-            "domanda": "Un corpo ($m = 3\\,\\mathrm{kg}$) è frenato da una forza media di $30\\,\\mathrm{N}$ per $\\Delta t = 0{,}2\\,\\mathrm{s}$. Se $v_i = 10\\,\\mathrm{m/s}$, $v_f$ vale:",
+            "domanda": "Un corpo ($m = 3\\,\\mathrm{kg}$) è frenato da una forza medio di $30\\,\\mathrm{N}$ per $\\Delta t = 0{,}2\\,\\mathrm{s}$. Se $v_i = 10\\,\\mathrm{m/s}$, $v_f$ vale:",
             "categoria": "Quantità di Moto",
             "sottocategoria": "Frenata con calcolo",
             "opzioni": [
@@ -3772,7 +3772,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$I = F \\cdot \\Delta t = -30 \\cdot 0{,}2 = -6\\,\\mathrm{N\\cdot s}$, $\\Delta v = I/m = -6/3 = -2\\,\\mathrm{m/s}$, $v_f = 10 - 2 = 8\\,\\mathrm{m/s}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "frenata",
                 "impulso negativo",

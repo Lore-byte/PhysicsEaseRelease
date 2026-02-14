@@ -813,7 +813,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$$F = k|q_1 q_2|/r^2 = 9 \\times 10^9 \\cdot 6 \\times 10^{-12}/0{,}25 = 0{,}216 \\, N$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "coulomb",
         "forza",
@@ -833,7 +833,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$F \\propto 1/r^2$: se $r$ raddoppia, $F$ diventa $1/4$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "inverso quadrato",
         "distanza",
@@ -853,7 +853,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "I due campi hanno uguale modulo e verso opposto, quindi si annullano.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "campo nullo",
         "punto medio",
@@ -873,7 +873,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il potenziale è scalare: al punto medio si sommano due contributi positivi.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenziale",
         "scalare",
@@ -893,7 +893,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$$E = kQ/r^2 = 9 \\times 10^9 \\cdot 2 \\times 10^{-6}/0{,}09 = 2{,}0 \\times 10^5 \\, N/C$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "campo",
         "puntiforme",
@@ -913,7 +913,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$$V = kQ/r = 9 \\times 10^9 \\cdot 3 \\times 10^{-6}/0{,}20 = 1{,}35 \\times 10^5 \\, V = 135 \\, kV$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenziale",
         "kQ/r",
@@ -933,7 +933,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$$W = q \\cdot \\Delta V = 2 \\times 10^{-9} \\cdot 100 = 2 \\times 10^{-7} \\, J$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lavoro",
         "qV",
@@ -953,7 +953,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$$U = \\frac{1}{2}CV^2 = 0{,}5 \\cdot 10 \\times 10^{-6} \\cdot 144 = 7{,}2 \\times 10^{-4} \\, J$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia",
         "1/2CV^2",
@@ -973,7 +973,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$$Q = C \\cdot V = 10 \\times 10^{-6} \\cdot 12 = 120 \\times 10^{-6} \\, C = 120 \\, \\mu C$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Q=CV",
         "carica",
@@ -993,7 +993,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$$1/C_{eq} = 1/2 + 1/3 = 5/6 \\Rightarrow C_{eq} = 6/5 = 1{,}2 \\, \\mu F$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "serie",
         "capacità equivalente",
@@ -1013,7 +1013,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In parallelo $C_{eq} = C_1 + C_2 = 5 \\, \\mu F$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "parallelo",
         "somma",
@@ -1033,7 +1033,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$$E = \\Delta V/d = 500/0{,}002 = 2{,}5 \\times 10^5 \\, V/m$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "piastre",
         "E=V/d",
@@ -1053,7 +1053,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$$\\Phi = E \\cdot A \\cdot \\cos\\theta = 100 \\cdot 0{,}20 \\cdot 0{,}5 = 10$$ ($N \\cdot m^2/C$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "flusso",
         "coseno",
@@ -1073,7 +1073,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$$Q_{int} = \\varepsilon_0 \\cdot \\Phi = 8{,}85 \\times 10^{-12} \\cdot 2{,}0 \\times 10^{-3} = 1{,}77 \\times 10^{-14} \\, C$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "gauss",
         "Q=epsilon0Phi",
@@ -1093,7 +1093,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Con simmetria (sferica, cilindrica, planare) $E$ è costante sulla superficie gaussiana e si semplifica il calcolo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "gauss",
         "simmetria",
@@ -1113,7 +1113,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Con $V$ costante e $C$ che aumenta, $Q = C \\cdot V$ aumenta.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "dielettrico",
         "batteria",
@@ -1133,7 +1133,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Con $Q$ costante e $C$ che aumenta, $V = Q/C$ diminuisce.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "dielettrico",
         "isolato",
@@ -1153,7 +1153,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Se il dielettrico riempie tutto lo spazio, $C$ diventa $\\varepsilon_r$ volte maggiore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "epsilon_r",
         "capacità",
@@ -1173,7 +1173,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$$\\Delta V = E \\cdot d = 200 \\cdot 0{,}050 = 10 \\, V$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "deltaV",
         "campo uniforme",
@@ -1193,7 +1193,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$$U = q \\cdot V = 5 \\times 10^{-9} \\cdot 200 = 1{,}0 \\times 10^{-6} \\, J$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia potenziale",
         "U=qV",
@@ -1213,7 +1213,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il campo punta verso potenziale decrescente ($E$ è legato al gradiente negativo del potenziale).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "direzione",
         "potenziale",
@@ -1233,7 +1233,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La densità di linee è proporzionale all'intensità del campo elettrico.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "densità linee",
         "intensità",
@@ -1253,7 +1253,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per avere $E = 0$ nel metallo, sulla superficie interna si induce carica totale $-q$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "cavità",
         "induzione",
@@ -1273,7 +1273,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In serie la stessa carica passa e si accumula su ciascun condensatore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "serie",
         "carica uguale",
@@ -1293,7 +1293,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Per una sfera isolata $C = 4\\pi \\varepsilon_0 R$, quindi $C \\propto R$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "sfera",
         "capacità",
@@ -1313,7 +1313,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$V = kQ/r$: è proporzionale a $Q$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenziale",
         "proporzionalità",
@@ -1333,7 +1333,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$$F = qE = 4 \\times 10^{-9} \\cdot 3 \\times 10^4 = 1{,}2 \\times 10^{-4} \\, N$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "F=qE",
         "campo uniforme",
@@ -1353,7 +1353,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "I campi al punto medio hanno stesso verso (da $+$ verso $-$) e si sommano.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "dipolo",
         "campo",
@@ -1373,7 +1373,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Il potenziale è scalare: i contributi $+kQ/r$ e $-kQ/r$ si annullano.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenziale",
         "dipolo",
@@ -1393,7 +1393,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Le armature accumulano $\\pm Q$: uguali in modulo e opposte in segno.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "armature",
         "cariche opposte",
@@ -1413,7 +1413,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$C$ diminuisce ($\\propto 1/d$) e con $V$ costante $Q = C \\cdot V$ diminuisce.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "batteria",
         "Q=CV",
@@ -1433,7 +1433,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Al punto medio i vettori campo sono opposti e si cancellano.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "cancellazione",
         "campo",
@@ -1453,7 +1453,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Il potenziale elettrico è una grandezza scalare.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "scalare",
         "potenziale",
@@ -1473,7 +1473,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel conduttore in equilibrio elettrostatico il campo nel materiale è nullo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "conduttore",
         "equilibrio",
@@ -1493,7 +1493,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Se ci fosse differenza di potenziale sulla superficie, esisterebbe un campo tangenziale e le cariche si muoverebbero.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "equipotenziale",
         "campo tangenziale",
@@ -1513,7 +1513,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "A $Q$ costante, $U = Q^2/(2C)$: se $C$ aumenta, $U$ diminuisce.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia",
         "Q^2/2C",
@@ -1533,7 +1533,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "A $V$ costante, $U = \\frac{1}{2}CV^2$: se $C$ aumenta, $U$ aumenta.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia",
         "1/2CV^2",
@@ -1553,7 +1553,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$F = qE$: se $q$ è negativa, la forza è opposta al verso del campo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "carica negativa",
         "F=qE",
@@ -1573,7 +1573,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$C_{eq} = 15 \\, \\mu F \\Rightarrow Q_{tot} = C_{eq} \\cdot V = 15 \\times 10^{-6} \\cdot 12 = 180 \\, \\mu C$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "parallelo",
         "carica totale",
@@ -1593,7 +1593,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$V = Q/C = 30 \\times 10^{-6}/6 \\times 10^{-6} = 5 \\, V$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "V=Q/C",
         "microcoulomb",
@@ -1953,7 +1953,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Il campo elettrico è una proprietà dello spazio definita in ogni punto, indipendentemente dalla presenza di cariche di prova. È una grandezza vettoriale che descrive come una carica influenza lo spazio circostante.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "campo elettrico",
         "spazio",
@@ -1973,7 +1973,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un conduttore in equilibrio, le cariche libere si ridistribuiscono sulla superficie in modo tale da annullare ogni campo elettrico interno. Se ci fosse campo interno, le cariche continuerebbero a muoversi.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "conduttore",
         "equilibrio",
@@ -1993,7 +1993,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Le linee di campo rappresentano la direzione del vettore campo elettrico. Se si incrociassero, in quel punto il campo avrebbe due direzioni diverse contemporaneamente, il che è impossibile per una grandezza vettoriale.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "linee di campo",
         "direzione",
@@ -2053,7 +2053,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Le linee di campo elettrico sono sempre perpendicolari alle superfici equipotenziali. Questo perché il campo punta nella direzione di massima variazione del potenziale.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "linee di campo",
         "equipotenziali",
@@ -2073,7 +2073,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Poiché il campo elettrico interno è nullo, non c'è differenza di potenziale tra punti interni. L'intero conduttore (compresa la superficie) è allo stesso potenziale elettrico.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "conduttore",
         "equipotenziale",
@@ -2093,7 +2093,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L'elettrone ha carica negativa, quindi la forza elettrica $\\vec{F} = q\\vec{E}$ è opposta al campo elettrico. L'elettrone si muove verso le zone a potenziale più alto, contro il campo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "elettrone",
         "carica negativa",
@@ -2133,7 +2133,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Una carica positiva si muove spontaneamente verso potenziali più bassi (nel verso del campo), quindi la sua energia potenziale elettrica diminuisce mentre aumenta l'energia cinetica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia potenziale",
         "moto spontaneo",
@@ -2153,7 +2153,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il teorema di Gauss stabilisce che $\\Phi = Q_{int}/\\varepsilon_0$: il flusso dipende solo dalla carica totale racchiusa, non dalla forma, dimensione o materiale della superficie.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Gauss",
         "flusso",
@@ -2173,7 +2173,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Con simmetria (sferica, cilindrica, planare) si può scegliere una superficie gaussiana su cui $\\vec{E}$ è costante in modulo e parallelo alla normale, semplificando enormemente il calcolo del flusso.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Gauss",
         "simmetria",
@@ -2193,7 +2193,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per induzione, sulla superficie interna del conduttore si distribuisce una carica $-Q$ (attratta da $+Q$), mentre sulla superficie esterna compare $+Q$ per conservazione della carica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "induzione",
         "conduttore cavo",
@@ -2233,7 +2233,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L'energia elettrostatica di un condensatore è localizzata nel campo elettrico presente nello spazio tra le armature. Il campo elettrico rappresenta una forma di energia distribuita nello spazio.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia",
         "condensatore",
@@ -2273,7 +2273,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il dielettrico si polarizza creando un campo opposto a quello originario. Il campo risultante diminuisce, quindi a parità di carica la differenza di potenziale è minore: $C = Q/V$ aumenta.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "dielettrico",
         "polarizzazione",
@@ -2333,7 +2333,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un campo uniforme, le forze sulle due cariche sono uguali e opposte (forza netta nulla), ma agisce una coppia che tende ad allineare il dipolo con il campo elettrico.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "dipolo",
         "campo uniforme",
@@ -2353,7 +2353,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Su superfici con raggio di curvatura piccolo (punte) la densità superficiale di carica è maggiore. Di conseguenza il campo elettrico locale è più intenso, favorendo ionizzazione e scariche.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "effetto punta",
         "densità superficiale",
@@ -2373,7 +2373,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Quando due conduttori identici si toccano, la carica totale si distribuisce equamente tra loro per raggiungere lo stesso potenziale. Carica totale $+Q$ divisa in due parti uguali: $+Q/2$ ciascuna.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "condivisione carica",
         "contatto",
@@ -2413,7 +2413,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Le due forze repulsive dalle altre cariche hanno uguale intensità. La risultante punta lungo la bisettrice dell'angolo, verso l'esterno del triangolo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "sovrapposizione",
         "simmetria",
@@ -2453,7 +2453,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Per un dipolo, nel punto medio tra le cariche i due campi sono diretti nello stesso verso e si sommano, raggiungendo quindi il valore massimo lungo l'asse che le congiunge.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "dipolo",
         "punto medio",
@@ -2473,7 +2473,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "In un conduttore cavo in equilibrio, tutta la carica si distribuisce sulla superficie esterna. Il campo all'interno della cavità è nullo per il teorema di Gauss.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "conduttore cavo",
         "campo interno",
@@ -2526,14 +2526,14 @@
       "categoria": "Elettrostatica",
       "sottocategoria": "Isolanti e conduttori",
       "opzioni": [
-        "Perde immediatamente la carica",
+        "Perde immediotamente la carica",
         "Mantiene la carica localizzata nella zona strofinata",
         "Distribuisce uniformemente la carica su tutta la superficie",
         "Diventa un conduttore"
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Negli isolanti le cariche non sono libere di muoversi, quindi rimangono localizzate dove sono state depositate per strofinio, a differenza dei conduttori.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isolante",
         "carica localizzata",
@@ -2553,7 +2553,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un campo elettrico esterno, le molecole del dielettrico si orientano (dipoli permanenti) o si deformano (dipoli indotti), creando una polarizzazione che riduce il campo interno.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "polarizzazione",
         "dielettrico",
@@ -2573,7 +2573,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La carica positiva si muove spontaneamente verso potenziale minore. Il lavoro della forza elettrica è $W = q(V_A - V_B) > 0$, quindi è positivo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lavoro",
         "potenziale",
@@ -2593,7 +2593,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Il campo generato da un piano infinito uniformemente carico è $E = \\sigma/(2\\varepsilon_0)$, costante e indipendente dalla distanza dal piano.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "piano infinito",
         "campo uniforme",
@@ -2613,7 +2613,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Tra due piastre con densità opposte $\\pm\\sigma$ i campi si sommano: $E = \\sigma/(2\\varepsilon_0) + \\sigma/(2\\varepsilon_0) = \\sigma/\\varepsilon_0$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "piastre parallele",
         "campo",
@@ -2653,7 +2653,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$$F = |q|E = 1{,}6 \\times 10^{-19} \\cdot 1000 = 1{,}6 \\times 10^{-16} \\, N$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "forza",
         "elettrone",
@@ -2693,7 +2693,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un conduttore sferico in equilibrio, il potenziale è costante ovunque all'interno e sulla superficie: $V = kQ/R$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "sfera conduttrice",
         "potenziale interno",
@@ -2713,7 +2713,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La rigidità dielettrica (o campo di breakdown) è il massimo campo elettrico che un isolante può sopportare prima che si verifichi una scarica elettrica attraverso di esso.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "rigidità dielettrica",
         "breakdown",
@@ -2793,7 +2793,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il flusso totale è $Q/\\varepsilon_0$. Per simmetria, attraverso ciascuna delle 6 facce passa $1/6$ del flusso totale: $Q/(6\\varepsilon_0)$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "cubo",
         "simmetria",
@@ -2813,7 +2813,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$$p = qd = 4 \\times 10^{-6} \\cdot 0{,}60 = 2{,}4 \\times 10^{-6} \\, C \\cdot m$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "momento di dipolo",
         "p=qd",
@@ -2833,7 +2833,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L'energia potenziale di un dipolo è $U = -\\vec{p} \\cdot \\vec{E} = -pE\\cos\\theta$. È minima quando $\\theta = 0°$, cioè quando il dipolo è allineato con il campo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia dipolo",
         "allineamento",
@@ -2893,7 +2893,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$$U = \\frac{1}{2}CV^2 = 0{,}5 \\cdot 50 \\times 10^{-6} \\cdot 40000 = 1{,}0 \\, J$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia",
         "condensatore",
@@ -2933,7 +2933,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "$$\\Delta U = q\\Delta V = 10 \\times 10^{-9} \\cdot 500 = 5{,}0 \\times 10^{-6} \\, J$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "variazione energia",
         "deltaU=qdeltaV",
@@ -2953,7 +2953,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Per simmetria, tre cariche uguali ai vertici di un triangolo equilatero producono campo nullo al centro. Anche due cariche uguali producono campo nullo nel punto medio.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "campo nullo",
         "simmetria",
@@ -2973,7 +2973,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Il potenziale generato da una carica negativa $-Q$ è $V = -kQ/r < 0$ ovunque (tranne all'infinito dove $V \\to 0$).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenziale negativo",
         "carica negativa",
@@ -2993,7 +2993,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il potenziale di una sfera conduttrice è $V = kQ/R$. A parità di carica, la sfera più piccola ha potenziale maggiore (inversamente proporzionale al raggio).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenziale sfere",
         "raggio",
@@ -3033,7 +3033,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Appena fuori dalla superficie di un conduttore, il campo elettrico è $E = \\sigma/\\varepsilon_0$, perpendicolare alla superficie.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "campo superficiale",
         "sigma",
@@ -3093,7 +3093,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nei condensatori elettrolitici, lo strato di ossido isolante (dielettrico) si forma elettrochimicamente su un elettrodo. Invertire la polarità può danneggiare il componente.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "elettrolitico",
         "polarità",
@@ -3113,7 +3113,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Per simmetria, ogni elemento dell'anello produce un campo che viene cancellato dall'elemento opposto. Il campo risultante al centro è nullo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "anello carico",
         "simmetria",
@@ -3148,12 +3148,12 @@
       "opzioni": [
         "La sua energia cinetica aumenterà sempre",
         "La sua energia totale (cinetica + potenziale) si conserva",
-        "Si fermerà immediatamente",
+        "Si fermerà immediotamente",
         "Descriverà sempre un'orbita circolare"
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il campo elettrostatico è conservativo: l'energia meccanica totale (cinetica + potenziale elettrica) si conserva durante il moto della carica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "conservazione energia",
         "campo conservativo",
@@ -3213,7 +3213,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "$$1/C_{eq} = 1/4 + 1/12 = 3/12 + 1/12 = 4/12 \\Rightarrow C_{eq} = 3 \\, \\mu F$$",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "serie",
         "calcolo",
@@ -3273,7 +3273,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "In un campo conservativo il lavoro NON dipende dal percorso, ma solo dai punti iniziale e finale. La dipendenza dal percorso caratterizza i campi non conservativi.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "conservativo",
         "percorso",
@@ -3313,7 +3313,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "All'interno di una sfera isolante uniformemente carica, $E \\propto r$ (cresce linearmente con la distanza dal centro).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "sfera isolante",
         "campo interno",
@@ -3333,7 +3333,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Un oggetto carico polarizza la polvere neutra per induzione, separando le cariche interne. Il lato più vicino ha carica di segno opposto, risultando in attrazione netta.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "induzione",
         "polarizzazione",
@@ -3353,7 +3353,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Due in parallelo danno $2C$. Questa in serie con $C$ dà: $1/C_{eq} = 1/(2C) + 1/C = 3/(2C)$, quindi $C_{eq} = 2C/3$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "rete mista",
         "serie parallelo",
@@ -3373,7 +3373,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "L'energia acquisita è $\\Delta K = |q|\\Delta V = e \\cdot 100 \\, V = 100 \\, eV$. Gli elettronvolt (eV) sono un'unità naturale per queste energie.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "elettronvolt",
         "accelerazione",
@@ -3393,7 +3393,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Carica totale: $8 - 2 = +6 \\, \\mu C$. Su conduttori identici si distribuisce equamente: $+3 \\, \\mu C$ ciascuno.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "contatto",
         "distribuzione",
@@ -3413,7 +3413,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per simmetria, il campo al centro di un disco carico è perpendicolare al piano del disco. Le componenti parallele si cancellano.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "disco carico",
         "simmetria",
@@ -3433,7 +3433,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La costante di Coulomb è definita come $k_e = 1/(4\\pi\\varepsilon_0) \\approx 9{,}0 \\times 10^9 \\, N \\cdot m^2/C^2$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "costanti",
         "k_e",
@@ -3453,7 +3453,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Con $V$ costante e $C$ che aumenta (per il dielettrico), $Q = CV$ aumenta. Il generatore fornisce più carica alle armature.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "dielettrico",
         "V costante",
@@ -3493,7 +3493,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Stessa forza $F = |q|E$, ma $m_e \\ll m_p$. Per $a = F/m$, l'elettrone ha accelerazione molto maggiore e quindi velocità maggiore dopo lo stesso tempo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "confronto",
         "accelerazione",
@@ -3533,7 +3533,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Con $Q$ costante, $\\sigma = Q/A$ diminuisce se $A$ aumenta. Poiché $E = \\sigma/\\varepsilon_0$, il campo diminuisce.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "campo",
         "area",
@@ -3553,7 +3553,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Una carica positiva subisce forza nel verso del campo. Se decelera, significa che si muove contro il campo (verso opposto), contro la forza elettrica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "decelerazione",
         "moto opposto",
@@ -3573,7 +3573,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il lavoro della forza esterna per portare $q$ dall'infinito ($V = 0$) fino a un punto a potenziale $V$ è $W = q(V - 0) = qV$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lavoro",
         "infinito",

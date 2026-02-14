@@ -275,7 +275,7 @@
         },
         {
             "id": "opt_014",
-            "domanda": "Che cosa succede, in media, all'intensità di luce non polarizzata dopo un singolo polarizzatore ideale?",
+            "domanda": "Che cosa succede, in medio, all'intensità di luce non polarizzata dopo un singolo polarizzatore ideale?",
             "categoria": "Ottica",
             "sottocategoria": "Polarizzazione",
             "opzioni": [
@@ -285,7 +285,7 @@
                 "Diventa zero"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Per luce non polarizzata un polarizzatore ideale trasmette in media metà intensità ($I = I_0/2$). ",
+            "spiegazione": "Per luce non polarizzata un polarizzatore ideale trasmette in medio metà intensità ($I = I_0/2$). ",
             "difficolta": "facile",
             "paroleChiave": [
                 "non polarizzata",
@@ -853,7 +853,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Con Snell $n_1 \\cdot \\sin(\\theta_1) = n_2 \\cdot \\sin(\\theta_2)$:\n$$\\sin(\\theta_2) = (1{,}00/1{,}50) \\cdot \\sin 30^\\circ \\approx 0{,}6667 \\cdot 0{,}5 \\approx 0{,}3333$$\nquindi **$\\theta_2 \\approx 19^\\circ$**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Snell",
                 "aria-vetro",
@@ -874,7 +874,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per $n_1 > n_2$ vale $\\sin(\\theta_c) = n_2/n_1$:\n$$\\sin(\\theta_c) = 1/1{,}5 = 0{,}6667$$\nquindi **$\\theta_c \\approx 41{,}8^\\circ$** ($\\approx 42^\\circ$). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "angolo critico",
                 "arcsin",
@@ -895,7 +895,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Con $1/p + 1/q = 1/f$:\n$$1/60 + 1/q = 1/20 \\Rightarrow 1/q = 1/20 - 1/60 = (3-1)/60 = 2/60 = 1/30$$\nquindi **$q = 30$ cm**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lente",
                 "1/p+1/q",
@@ -916,7 +916,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Il potere diottrico è $D = 1/f$ (in m):\n$$D = 1/0{,}50 = 2$$\nquindi **$D = 2$** diottrie. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "diottrie",
                 "1/f",
@@ -937,7 +937,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "L'ingrandimento laterale in valore assoluto è $|m| = |q/p|$:\n$$|m| = 60/30 = 2$$\nquindi **$|m| = 2$**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "ingrandimento",
                 "q/p",
@@ -958,7 +958,7 @@
             ],
             "rispostaCorretta": 3,
             "spiegazione": "Con $1/f = 1/d_o + 1/d_i$:\n$$1/15 = 1/30 + 1/d_i \\Rightarrow 1/d_i = 1/15 - 1/30 = 1/30$$\nquindi **$d_i = 30$ cm**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "specchio",
                 "di",
@@ -979,7 +979,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Per Malus:\n$$I = I_0 \\cdot \\cos^2(60^\\circ) = I_0 \\cdot (0{,}5)^2 = 0{,}25 I_0$$\nquindi **$I = 0{,}25 I_0$**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Malus",
                 "cos^2",
@@ -1000,7 +1000,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Usando l'approssimazione dei piccoli angoli per Young ($\\Delta y \\approx \\lambda L/d$):\n$$\\Delta y \\approx (600 \\cdot 10^{-9} \\cdot 2{,}0)/(0{,}50 \\cdot 10^{-3}) \\approx 2{,}4 \\cdot 10^{-3}\\,\\mathrm{m} = 2{,}4\\,\\mathrm{mm}$$\nquindi **$\\Delta y \\approx 2{,}4$ mm**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Young",
                 "Δy",
@@ -1021,7 +1021,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Dal primo minimo $a \\cdot \\sin(\\theta) = \\lambda$:\n$$\\theta \\approx \\lambda/a \\approx (500 \\cdot 10^{-9})/(0{,}20 \\cdot 10^{-3}) = 2{,}5 \\cdot 10^{-3}\\,\\mathrm{rad} \\approx 0{,}14^\\circ$$\nquindi **$\\theta \\approx 0{,}14^\\circ$**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "diffrazione",
                 "primo minimo",
@@ -1042,7 +1042,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Poiché $\\theta_c \\approx 41{,}8^\\circ$ ($\\sin(\\theta_c) = n_2/n_1$) e $50^\\circ > \\theta_c$, si verifica riflessione totale interna. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "TIR",
                 "theta_c",
@@ -1063,7 +1063,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Con $\\tan(\\theta_B) = n_2/n_1 = 1{,}5$:\n$$\\theta_B \\approx \\arctan(1{,}5) \\approx 56^\\circ$$\nquindi **$\\theta_B \\approx 56^\\circ$**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Brewster",
                 "arctan",
@@ -1084,7 +1084,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Da $1/p + 1/q = 1/f$:\n$$1/p = 1/10 - 1/20 = 1/20$$\nquindi **$p = 20$ cm**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lente",
                 "p",
@@ -1105,7 +1105,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Poiché $D = 1/f$:\n$$f = 1/D = 1/5 = 0{,}20\\,\\mathrm{m}$$\nquindi **$f = 0{,}20$ m**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "diottrie",
                 "focale",
@@ -1126,7 +1126,7 @@
             ],
             "rispostaCorretta": 3,
             "spiegazione": "Con $1/f = 1/d_o + 1/d_i$:\n$$1/20 = 1/40 + 1/d_i \\Rightarrow 1/d_i = 1/20 - 1/40 = 1/40$$\nquindi **$d_i = 40$ cm**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "specchio",
                 "di",
@@ -1147,7 +1147,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Poiché $\\Delta y \\approx \\lambda L/d$,\nraddoppiare $d$ dimezza $\\Delta y$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Young",
                 "Δy",
@@ -1168,7 +1168,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Dal primo minimo $\\theta \\approx \\lambda/a$,\ndimezzare $a$ raddoppia $\\theta$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "diffrazione",
                 "λ/a",
@@ -1189,7 +1189,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Con $\\sin(\\theta_c) = n_2/n_1 = 1{,}00/1{,}33 \\approx 0{,}752$ quindi $\\theta_c \\approx 48{,}8^\\circ$ ($\\approx 49^\\circ$). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "acqua-aria",
                 "theta_c",
@@ -1209,8 +1209,8 @@
                 "$0$"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Per luce non polarizzata, l'intensità media trasmessa da un polarizzatore ideale è $I_{out} = I_{in}/2$. ",
-            "difficolta": "media",
+            "spiegazione": "Per luce non polarizzata, l'intensità medio trasmessa da un polarizzatore ideale è $I_{out} = I_{in}/2$. ",
+            "difficolta": "medio",
             "paroleChiave": [
                 "non polarizzata",
                 "polarizzatore",
@@ -1231,7 +1231,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Per Malus:\n$$I = I_0 \\cdot \\cos^2(45^\\circ) = I_0 \\cdot (\\sqrt{2}/2)^2 = 0{,}5 I_0$$\nquindi **$I = 0{,}5 I_0$**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Malus",
                 "45 gradi",
@@ -1252,7 +1252,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Con $1/p + 1/q = 1/f$, se $p = f$ allora $1/q = 0$ e l'immagine è all'infinito. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "p=f",
                 "immagine",
@@ -1273,7 +1273,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Con Snell:\n$$\\sin(\\theta_2) = (1{,}00/1{,}33) \\cdot \\sin 45^\\circ \\approx 0{,}752 \\cdot 0{,}707 \\approx 0{,}532$$\nquindi **$\\theta_2 \\approx 32^\\circ$**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Snell",
                 "aria-acqua",
@@ -1294,7 +1294,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Poiché $\\Delta y \\approx \\lambda L/d$,\nraddoppiare $\\lambda$ raddoppia $\\Delta y$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Young",
                 "lambda",
@@ -1315,7 +1315,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per lo specchio sferico vale $f = R/2$:\n$$f = 1{,}0/2 = 0{,}50\\,\\mathrm{m}$$\nquindi **$f = 0{,}50$ m**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "specchio",
                 "R/2",
@@ -1336,7 +1336,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Da $1/20 + 1/q = 1/40$:\n$$1/q = 1/40 - 1/20 = -1/40$$\nquindi **$q = -40$ cm** (immagine virtuale). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "q negativo",
                 "virtuale",
@@ -1357,7 +1357,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per la legge della riflessione, l'angolo di riflessione è uguale all'angolo di incidenza rispetto alla normale. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "specchio piano",
                 "incidenza",
@@ -1378,7 +1378,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Dato che $\\Delta y \\approx \\lambda L/d$,\nse $L$ triplica allora $\\Delta y$ triplica. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Young",
                 "L",
@@ -1399,7 +1399,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$\\theta \\approx \\lambda/a \\approx (500 \\cdot 10^{-9})/(0{,}10 \\cdot 10^{-3}) = 5 \\cdot 10^{-3}\\,\\mathrm{rad} \\approx 0{,}29^\\circ$$\nquindi **$\\theta \\approx 0{,}29^\\circ$**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "diffrazione",
                 "λ/a",
@@ -1420,7 +1420,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Poiché $\\tan(\\theta_B) = n_2/n_1$,\nse il rapporto aumenta anche $\\theta_B$ aumenta. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Brewster",
                 "tan",
@@ -1441,7 +1441,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$$D = 1/f = 1/0{,}25 = 4$$\nquindi **$D = 4$** diottrie. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "diottrie",
                 "1/f",
@@ -1462,7 +1462,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Dalla legge di Snell, entrando in un mezzo più rifrangente ($n_2 > n_1$) l'angolo rifratto diminuisce e il raggio si avvicina alla normale. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "rifrazione",
                 "n2>n1",
@@ -1483,7 +1483,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Da $1/f = 1/d_o + 1/d_i$:\n$$1/f = 1/60 + 1/30 = 1/60 + 2/60 = 3/60 = 1/20$$\nquindi **$f = 20$ cm**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "specchio",
                 "f",
@@ -1504,7 +1504,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per Malus vale $I/I_0 = \\cos^2(\\theta)$, quindi qui $\\cos^2(30^\\circ)$",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Malus",
                 "rapporto",
@@ -1525,7 +1525,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$$\\Delta y \\approx \\lambda L/d \\approx (500 \\cdot 10^{-9} \\cdot 1)/(0{,}25 \\cdot 10^{-3}) = 2 \\cdot 10^{-3}\\,\\mathrm{m} = 2{,}0\\,\\mathrm{mm}$$\nquindi **$\\Delta y \\approx 2{,}0$ mm**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Young",
                 "Δy",
@@ -1546,7 +1546,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$$1/f = 1/p + 1/q = 1/20 + 1/40 = 2/40 + 1/40 = 3/40$$\nquindi **$f = 40/3 \\approx 13{,}3$ cm**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lente",
                 "f",
@@ -1567,7 +1567,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$$\\sin(\\theta_c) = n_2/n_1 = 1{,}20/1{,}50 = 0{,}8 \\Rightarrow \\theta_c \\approx 53^\\circ$$\nquindi **$\\theta_c \\approx 53^\\circ$**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "theta_c",
                 "sin",
@@ -1588,7 +1588,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$$D = 1/f = 1/0{,}50 = 2$$\nquindi **$D = 2$ D**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "diottrie",
                 "1/f",
@@ -1609,7 +1609,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$$1/10 = 1/15 + 1/d_i \\Rightarrow 1/d_i = 1/10 - 1/15 = (3-2)/30 = 1/30 \\Rightarrow d_i = 30\\,\\mathrm{cm}$$\nquindi **$d_i = 30$ cm**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "specchio",
                 "calcolo",
@@ -1630,7 +1630,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Per Malus:\n$$I = I_0 \\cdot \\cos^2(30^\\circ) = I_0 \\cdot (0{,}866)^2 \\approx 0{,}75 I_0$$\nquindi **$I = 0{,}75 I_0$**. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Malus",
                 "30 gradi",
@@ -1651,7 +1651,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Da $d \\cdot \\sin(\\theta) = k\\lambda$,\na $d$ e $\\lambda$ fissi un $k$ maggiore richiede $\\sin(\\theta)$ maggiore quindi $\\theta$ maggiore. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "massimi",
                 "k",
@@ -1672,7 +1672,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $a \\cdot \\sin(\\theta) = m\\lambda$,\na parità di $a$ e $m$, aumentando $\\lambda$ aumenta $\\sin(\\theta)$ e quindi $\\theta$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "diffrazione",
                 "lambda",
@@ -2260,7 +2260,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "La rifrazione si interpreta con il principio di Fermat: il raggio segue un cammino di tempo ottico stazionario. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Fermat",
                 "tempo ottico",
@@ -2323,7 +2323,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Vale $v = \\lambda f$: se $v$ diminuisce e $f$ resta costante, allora $\\lambda$ diminuisce. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lunghezza d'onda",
                 "velocità",
@@ -2407,7 +2407,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Per una lente convergente con oggetto oltre $2f$, l'immagine è reale, capovolta e si forma tra $f$ e $2f$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lente convergente",
                 "2f",
@@ -2428,7 +2428,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Per oggetto tra $f$ e $2f$, la lente convergente dà un'immagine reale, capovolta e ingrandita oltre $2f$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lente convergente",
                 "f e 2f",
@@ -2449,7 +2449,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Se l'oggetto è entro la focale, la lente convergente forma un'immagine virtuale, diritta e ingrandita. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lente convergente",
                 "entro fuoco",
@@ -2491,7 +2491,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Un ingrandimento negativo indica un'immagine capovolta rispetto all'oggetto. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "ingrandimento",
                 "segno",
@@ -2512,7 +2512,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Per specchio concavo con oggetto oltre $C$, l'immagine è reale, capovolta e tra $F$ e $C$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "specchio concavo",
                 "centro curvatura",
@@ -2533,7 +2533,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Per oggetto tra $F$ e $C$, l'immagine è reale, capovolta e ingrandita oltre $C$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "specchio concavo",
                 "F e C",
@@ -2554,7 +2554,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per oggetto entro la focale, lo specchio concavo produce un'immagine virtuale, diritta e ingrandita. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "specchio concavo",
                 "entro fuoco",
@@ -2701,7 +2701,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Un raggio diretto verso il centro di curvatura incide perpendicolarmente e si riflette su se stesso. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "centro curvatura",
                 "specchio concavo",
@@ -2806,7 +2806,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Per $\\theta_1 > \\theta_c$ si ha riflessione totale interna: non c'è raggio rifratto propagante. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "TIR",
                 "angolo critico",
@@ -2848,7 +2848,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Nella dispersione normale, $n$ decresce all'aumentare di $\\lambda$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "dispersione normale",
                 "indice",
@@ -2869,7 +2869,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "La frequenza è determinata dalla sorgente e non cambia nel passaggio di mezzo; cambiano velocità e lunghezza d'onda. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "frequenza",
                 "prisma",
@@ -2911,7 +2911,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "All'angolo di Brewster la componente riflessa è completamente polarizzata linearmente. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Brewster",
                 "polarizzazione",
@@ -2994,7 +2994,7 @@
                 "$0$"
             ],
             "rispostaCorretta": 0,
-            "spiegazione": "Un polarizzatore ideale trasmette in media metà dell'intensità di una luce non polarizzata. ",
+            "spiegazione": "Un polarizzatore ideale trasmette in medio metà dell'intensità di una luce non polarizzata. ",
             "difficolta": "facile",
             "paroleChiave": [
                 "luce non polarizzata",
@@ -3016,7 +3016,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Il principio di Huygens descrive la propagazione dei fronti d'onda tramite onde secondarie. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Huygens",
                 "fronti d'onda",
@@ -3037,7 +3037,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Una fenditura più stretta produce una diffrazione più marcata, con pattern più largo. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "diffrazione",
                 "fenditura",
@@ -3079,7 +3079,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Variando la differenza di cammino, cambia la fase relativa e il sistema di frange si sposta. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "interferenza",
                 "cammino ottico",
@@ -3100,7 +3100,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "La spaziatura è proporzionale a $\\lambda$, quindi aumentando $\\lambda$ le frange si allontanano. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Young",
                 "lambda",
@@ -3121,7 +3121,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "La spaziatura è inversamente proporzionale a $d$, quindi aumentando $d$ le frange si avvicinano. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Young",
                 "distanza d",
@@ -3163,7 +3163,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Onde in fase hanno differenza di cammino multipla intera di $\\lambda$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "fase",
                 "interferenza",
@@ -3184,7 +3184,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "L'opposizione di fase (minimi) si ha per differenza di cammino semintera: $(k+1/2)\\lambda$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "interferenza",
                 "minimi",
@@ -3205,7 +3205,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Il massimo centrale è l'ordine $m = 0$ (nessuna cancellazione). ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "diffrazione",
                 "massimo centrale",
@@ -3226,7 +3226,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Il massimo centrale ha ampiezza e intensità maggiori dei massimi laterali. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "diffrazione",
                 "massimo centrale",
@@ -3268,7 +3268,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Per lenti sottili in contatto, i poteri diottrici si sommano. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lenti in contatto",
                 "potere diottrico",
@@ -3289,7 +3289,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Un indice maggiore implica una rifrazione più intensa e quindi maggiore deviazione. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "prisma",
                 "deviazione",
@@ -3310,7 +3310,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Per la TIR nel core della fibra serve $n_{core} > n_{cladding}$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "fibra ottica",
                 "TIR",
@@ -3331,7 +3331,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Il cammino ottico (optical path) è $n \\cdot L$ e compare nel principio di Fermat. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "cammino ottico",
                 "nL",
@@ -3352,7 +3352,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Indice maggiore significa velocità minore, quindi a parità di distanza il tempo aumenta. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "tempo",
                 "indice",
@@ -3520,7 +3520,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Per definizione, l'indice relativo dal mezzo 1 al mezzo 2 è $n_{21} = n_2/n_1$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "indice relativo",
                 "n2/n1",
@@ -3562,7 +3562,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Un'immagine reale si forma dove i raggi convergono e può essere raccolta su uno schermo; quella virtuale no. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "immagine reale",
                 "immagine virtuale",
@@ -3583,7 +3583,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Con lente convergente, l'immagine è reale se l'oggetto è posto oltre la focale. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lente convergente",
                 "immagine reale",
@@ -3604,7 +3604,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Il fuoco di una lente divergente è virtuale e si trova dallo stesso lato dell'oggetto. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lente divergente",
                 "fuoco virtuale",
@@ -3625,7 +3625,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "In una lastra a facce parallele l'angolo di emergenza è uguale a quello di incidenza: il raggio è parallelo ma subisce uno spostamento laterale. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lastra parallela",
                 "rifrazione",
@@ -3646,7 +3646,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "I miraggi sono dovuti a gradienti di indice nell'aria calda che curvano i raggi. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "miraggio",
                 "indice variabile",
@@ -3688,7 +3688,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "I massimi di interferenza si ottengono quando la differenza di cammino è un multiplo intero di $\\lambda$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "interferenza",
                 "massimi",
@@ -3709,7 +3709,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "I minimi si hanno quando le onde arrivano in opposizione di fase: differenza di cammino semintera. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "interferenza",
                 "minimi",
@@ -3730,7 +3730,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Per oggetto in $C$, l'immagine si forma in $C$, reale, capovolta e di uguale dimensione. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "specchio concavo",
                 "centro curvatura",
@@ -3835,7 +3835,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Le gocce d'acqua rifrangono e disperdono la luce, con una riflessione interna che separa i colori. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "arcobaleno",
                 "dispersione",
@@ -3856,7 +3856,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "I raggi sono normali ai fronti d'onda: la propagazione è perpendicolare al fronte. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "fronti d'onda",
                 "raggi",
@@ -3898,7 +3898,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Poiché $D = 1/f$, un aumento di $D$ implica una diminuzione di $f$. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "diottrie",
                 "focale",
@@ -3919,7 +3919,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Per una lente convergente, l'immagine è virtuale solo se l'oggetto è all'interno della focale. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lente convergente",
                 "immagine virtuale",
@@ -3940,7 +3940,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Con oggetto in $F$, i raggi riflessi escono paralleli: l'immagine è all'infinito. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "specchio concavo",
                 "fuoco",
@@ -3982,7 +3982,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "In dispersione normale, $n$ diminuisce con $\\lambda$, quindi la deviazione diminuisce. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "prisma",
                 "dispersione normale",
@@ -4003,7 +4003,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Se le asperità sono molto più piccole di $\\lambda$, la riflessione è speculare. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "riflessione speculare",
                 "superficie liscia",
@@ -4024,7 +4024,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Con asperità confrontabili o maggiori di $\\lambda$, la riflessione è diffusa. ",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "riflessione diffusa",
                 "superficie ruvida",

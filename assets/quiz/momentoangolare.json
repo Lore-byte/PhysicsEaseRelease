@@ -853,7 +853,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$$|L| = mrv = 2 \\cdot 0{,}5 \\cdot 3 = 3 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "calcolo",
                 "mrv",
@@ -874,7 +874,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$$\\Delta L = \\tau \\Delta t = 4 \\cdot 0{,}5 = 2 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "impulso angolare",
                 "tau",
@@ -895,7 +895,7 @@
             ],
             "rispostaCorretta": 3,
             "spiegazione": "$$L = I\\omega\\ \\text{ costante: }\\ \\omega_f = (I_i/I_f)\\omega_i = (3/1) \\cdot 2 = 6\\ \\text{rad/s}$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Iω",
                 "pattinatore",
@@ -916,7 +916,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$$|L| = rp\\sin\\theta = 0{,}4 \\cdot 5 \\cdot \\sin 30^{\\circ} = 2 \\cdot 0{,}5 = 1{,}0 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "sin",
                 "angolo",
@@ -937,7 +937,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Da $\\tau = dL/dt$, una $\\tau$ costante lungo $z$ produce variazione lineare di $L_z$ nel tempo.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "componenti",
                 "Lz",
@@ -954,11 +954,11 @@
                 "Energia cinetica",
                 "Quantità di moto lineare totale",
                 "Momento angolare rispetto all'asse",
-                "Potenza media"
+                "Potenza medio"
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Se il momento esterno rispetto all'asse è nullo, si conserva il momento angolare rispetto all'asse anche nell'urto.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto anelastico",
                 "asse",
@@ -979,7 +979,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$$\\text{Per rotazione attorno ad asse fisso, }|L| = I\\omega = 0{,}2 \\cdot 10 = 2 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "disco",
                 "Iω",
@@ -1000,7 +1000,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$$\\text{Se }F\\text{ è perpendicolare a }r,\\ |\\tau| = rF = 0{,}3 \\cdot 10 = 3 \\text{ N}\\cdot\\text{m}$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "leva",
                 "rF",
@@ -1021,7 +1021,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$$\\text{Con forza centrale }L = mrv_t\\text{ si conserva: dimezzando }r,\\ v_t\\text{ raddoppia.}$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza centrale",
                 "m r v_t",
@@ -1042,7 +1042,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Se $L$ si conserva e $I$ diminuisce, $\\omega$ aumenta e l'energia $$K = \\frac{1}{2}I\\omega^2$$ aumenta (lavoro compiuto dalle masse).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia",
                 "I",
@@ -1063,7 +1063,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Per forza centrale, $L$ costante implica velocità areolare costante (legge delle aree).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "areolare",
                 "legge delle aree",
@@ -1084,7 +1084,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$$|L| = mrv = 1 \\cdot 0{,}2 \\cdot 4 = 0{,}8 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "mrv",
                 "perpendicolare",
@@ -1105,7 +1105,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $L = I\\omega$ costante, se $\\omega$ diminuisce allora $I$ deve aumentare.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Iω",
                 "variazione",
@@ -1126,7 +1126,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Se $\\tau = 0$ allora $dL/dt = 0$, quindi $L$ resta costante nel tempo.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "tau zero",
                 "dL/dt",
@@ -1147,7 +1147,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Se il momento esterno rispetto all'asse è nullo, si conserva $L$ rispetto a quell'asse.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urto",
                 "asse",
@@ -1168,7 +1168,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$$\\text{Usando }|L| = b \\cdot p\\ (\\text{distanza perpendicolare}),\\ |L| = 0{,}25 \\cdot 6 = 1{,}5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "braccio",
                 "distanza perpendicolare",
@@ -1189,7 +1189,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $F$ perpendicolare, $|\\tau| = rF$: aumentando $r$ aumenta la coppia.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "chiave",
                 "coppia",
@@ -1210,7 +1210,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $L = I\\omega$ costante, se $I$ triplica allora $\\omega$ si riduce a $1/3$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "I triplica",
                 "omega",
@@ -1231,7 +1231,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con forza centrale $\\tau = r \\times F = 0$, quindi $L$ rispetto al centro si conserva.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza centrale",
                 "r×F",
@@ -1252,7 +1252,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per $L = mrv_t$ costante, aumentando $r$ diminuisce $v_t$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "tangenziale",
                 "v_t",
@@ -1273,7 +1273,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$$\\Delta L = \\tau \\Delta t = 1 \\cdot 2 = 2\\ (\\text{opposto}),\\ \\text{quindi }L_f = 5 - 2 = 3 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "opposta",
                 "delta L",
@@ -1294,7 +1294,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "In assenza di coppie esterne, il momento angolare totale del sistema si conserva.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "sistema isolato",
                 "pattinatori",
@@ -1315,7 +1315,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Se la linea d'azione passa per $O$, il braccio è nullo e quindi $\\tau = 0$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "linea d'azione",
                 "braccio nullo",
@@ -1336,7 +1336,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$$\\text{Per asse fisso, }\\tau = I\\alpha\\ \\text{quindi }\\alpha = \\tau/I = 2/0{,}5 = 4 \\text{ rad/s}^2$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "tau=Ialpha",
                 "accelerazione",
@@ -1357,7 +1357,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$$|L| = mrv \\Rightarrow v = L/(mr) = 2/(1 \\cdot 0{,}5) = 4\\ \\text{m/s}$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "ricavare v",
                 "mrv",
@@ -1378,7 +1378,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Una variazione perpendicolare a $L$ tende a ruotare il vettore $L$ cambiandone la direzione (tipico delle precessioni).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "direzione",
                 "perpendicolare",
@@ -1399,7 +1399,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La condizione per la conservazione di $L$ è $\\tau_{ext} = 0$, non l'assenza di forze esterne.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "tau_ext",
                 "forze esterne",
@@ -1420,7 +1420,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Cambiando polo cambia il vettore $r$, quindi cambia $L = r \\times p$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "polo",
                 "origine",
@@ -1441,7 +1441,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$$\\text{Integrando }\\tau = dL/dt\\text{ si ottiene }\\Delta L = \\int_{t_1}^{t_2} \\tau(t) \\, dt$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "integrale",
                 "tau(t)",
@@ -1462,7 +1462,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La forza determina $dp/dt$ e produce anche $\\tau = r \\times F$, che determina $dL/dt$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza",
                 "r×F",
@@ -1483,7 +1483,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$$\\omega = L/I = 10/2 = 5\\ \\text{rad/s}$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "omega",
                 "L/I",
@@ -1504,7 +1504,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Senza coppie esterne dissipative, $L$ si conserva e la rotazione non si annulla spontaneamente.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "ideale",
                 "assenza attrito",
@@ -1525,7 +1525,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$$|L| = rp\\sin\\theta:\\\\text{se }r,\\ p\\text{ e }\\theta\\text{ restano costanti, anche }|L|\\text{ resta costante.}$$",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "modulo",
                 "sinθ",
@@ -1546,7 +1546,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Con $L$ costante, $K = L^2/(2I)$: se $I$ diminuisce, $K$ aumenta.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "K",
                 "L^2/2I",
@@ -1567,7 +1567,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $\\tau$ antiparallela a $L$ e costante, $d|L|/dt = -|\\tau|$: diminuzione lineare.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "antiparallela",
                 "lineare",
@@ -1588,7 +1588,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Cambiando polo cambia il vettore $r$, quindi cambia $L = r \\times p$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "polo",
                 "origine",
@@ -1609,7 +1609,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$$\\text{Integrando }\\tau = dL/dt\\text{ si ottiene }\\Delta L = \\int_{t_1}^{t_2} \\tau(t) \\, dt$$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "integrale",
                 "tau(t)",
@@ -1630,7 +1630,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La forza determina $dp/dt$ e produce anche $\\tau = r \\times F$, che determina $dL/dt$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza",
                 "r×F",
@@ -1651,7 +1651,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $L = I\\omega$ costante, se $I$ aumenta allora $\\omega$ diminuisce.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "frequenza",
                 "omega",
@@ -1672,7 +1672,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Se $L$ si conserva e $r$ diminuisce, $v_t$ deve aumentare per mantenere $mrv_t$ costante.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "perielio",
                 "r diminuisce",
@@ -2039,7 +2039,7 @@
         },
         {
             "id": "ang_098",
-            "domanda": "Un punto materiale ha $L = 3 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$ rispetto a $O$ e subisce una coppia media di $0{,}5 \\text{ N}\\cdot\\text{m}$ per $4$ s nello stesso verso di $L$. $L$ finale (modulo) è:",
+            "domanda": "Un punto materiale ha $L = 3 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$ rispetto a $O$ e subisce una coppia medio di $0{,}5 \\text{ N}\\cdot\\text{m}$ per $4$ s nello stesso verso di $L$. $L$ finale (modulo) è:",
             "categoria": "Momento Angolare",
             "sottocategoria": "Impulso angolare",
             "opzioni": [
@@ -2052,7 +2052,7 @@
             "spiegazione": "$$\\Delta L = \\tau \\Delta t = 0{,}5 \\cdot 4 = 2,\\ \\text{quindi }L_f = 3 + 2 = 5 \\text{ kg}\\cdot\\text{m}^2/\\text{s}$$.",
             "difficolta": "difficile",
             "paroleChiave": [
-                "coppia media",
+                "coppia medio",
                 "aumento",
                 "delta L",
                 "modulo"
@@ -2785,7 +2785,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "A parità di $I$ (dischi identici), con $L = I\\omega$, maggiore è $\\omega$ maggiore è $L$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "confronto",
                 "I uguale",
@@ -2806,7 +2806,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Le pulsar emettono radiazione che trasporta via energia e momento angolare, causando il rallentamento graduale ($\\tau_{rad} \\neq 0$).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "pulsar",
                 "rallentamento",
@@ -2827,7 +2827,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "L'elica principale crea un momento angolare; per il terzo principio, il corpo tenderebbe a ruotare nel verso opposto. L'elica di coda fornisce una coppia che lo previene.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "elicottero",
                 "elica coda",
@@ -2848,7 +2848,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Senza coppie esterne, $L_{tot} = 0$ si conserva. L'astronauta può creare rotazioni interne che cambiano l'orientamento mantenendo $L_{tot} = 0$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "astronauta",
                 "spazio",
@@ -2869,7 +2869,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $L = I\\omega$, a parità di $L$, oggetti con $I$ diversi hanno $\\omega$ diversi: $\\omega = L/I$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "L uguale",
                 "masse diverse",
@@ -2890,7 +2890,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "L'energia totale si conserva. Passando al perigeo, $r$ diminuisce quindi l'energia potenziale diminuisce (più negativa) e l'energia cinetica aumenta.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "orbita",
                 "apogeo",
@@ -2911,7 +2911,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Un giroscopio mantiene costante la direzione del suo asse di rotazione grazie all'elevato momento angolare, permettendo la navigazione inerziale.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "giroscopio",
                 "navigazione",
@@ -2932,7 +2932,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Chiudendo le braccia, i muscoli compiono lavoro positivo contro la forza centrifuga, aumentando l'energia cinetica anche se $L$ resta costante.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia",
                 "lavoro muscolare",
@@ -2953,7 +2953,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $L$ costante e $I$ che diminuisce, $\\omega$ aumenta. L'energia cinetica $K = L^2/(2I)$ aumenta (per lavoro gravitazionale).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "collasso",
                 "pulsar",
@@ -2974,7 +2974,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Oltre all'effetto giroscopico, quando la bici si inclina il ciclista può sterzare per spostare il punto d'appoggio e mantenere l'equilibrio dinamico.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "bicicletta",
                 "equilibrio",
@@ -2995,7 +2995,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La coppia gravitazionale $\\tau$ è perpendicolare sia a $L$ che alla verticale, determinando la direzione della precessione secondo la regola della mano destra.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "precessione",
                 "direzione",
@@ -3016,7 +3016,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Nel centro di massa, la forma del momento angolare è più semplice e si conserva se non ci sono forze esterne (le forze gravitazionali sono interne).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "stelle binarie",
                 "centro massa",
@@ -3037,7 +3037,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "L'anello ha momento d'inerzia maggiore ($I_{anello} = mR^2$ vs $I_{disco} = \\frac{1}{2}mR^2$), quindi a parità di $\\omega$ ha $L = I\\omega$ maggiore.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "disco",
                 "anello",
@@ -3289,7 +3289,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Usando $L = I\\omega$ e $K = \\frac{1}{2}I\\omega^2$, si ottiene $K = \\frac{L^2}{2I}$, relazione fondamentale tra le due grandezze.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia cinetica",
                 "L^2/2I",
@@ -3331,7 +3331,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "In assenza di coppie esterne, il momento angolare totale si conserva in ogni tipo di urto (elastico o anelastico) rispetto a qualunque polo fisso.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "urti",
                 "conservazione",
@@ -3373,7 +3373,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Senza coppie esterne, $dL/dt = 0$ quindi $L$ è costante. Se $L(t_0) = 0$, allora $L(t) = 0$ per ogni tempo successivo.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "L zero",
                 "conservazione",
@@ -3415,7 +3415,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $\\tau_{motore} = \\tau_{attrito}$, la coppia totale è nulla e quindi $\\omega$ resta costante. Se $\\tau_{motore} > \\tau_{attrito}$ il disco accelererebbe.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "hard disk",
                 "omega costante",
@@ -3436,7 +3436,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In moto rettilineo uniforme, $p$ è costante. Anche se $r$ cambia, il prodotto $r \\times p$ ha modulo costante $|L| = bp$ (braccio $b$ costante) e direzione costante.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "rettilineo uniforme",
                 "L costante",
@@ -3457,7 +3457,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con forza centrale, $L = mrv_t$ si conserva. La variazione di $r$ è compensata inversamente dalla variazione di $v_t$: $rv_t = \\text{costante}$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "ellittica",
                 "rv_t costante",
@@ -3478,7 +3478,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Aumentando il raggio, $I$ aumenta. Per conservare $L = I\\omega$, $\\omega$ deve diminuire, quindi il periodo di rotazione (giorno) aumenterebbe.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "Terra",
                 "espansione",
@@ -3541,7 +3541,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Agli estremi dell'oscillazione $v = 0$ quindi $L = 0$. Nel punto più basso la velocità è massima quindi $L$ è massimo. Varia continuamente.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "altalena",
                 "oscillazione",

@@ -815,7 +815,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In serie le resistenze si sommano perché la corrente è la stessa e le cadute di tensione si aggiungono.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "resistenza equivalente",
         "serie",
@@ -835,7 +835,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In parallelo la tensione è uguale, quindi le correnti si sommano e vale la somma dei reciproci.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "parallelo",
         "reciproci",
@@ -855,7 +855,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In serie la corrente è la stessa, mentre la tensione si divide in cadute sui resistori.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "serie",
         "tensione",
@@ -875,7 +875,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "È una conseguenza della conservazione della carica: in un nodo non si accumula carica in regime stazionario.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "kirchhoff",
         "nodo",
@@ -895,7 +895,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Lungo una maglia, la somma algebrica di f.e.m. e cadute di tensione è nulla.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "kirchhoff",
         "maglia",
@@ -915,7 +915,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "La forza elettrostatica diminuisce con il quadrato della distanza: raddoppiare la distanza riduce la forza a 1/4.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "forza",
         "distanza",
@@ -935,7 +935,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Spostando contro il campo serve lavoro esterno positivo e la carica va verso potenziali più alti.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lavoro",
         "potenziale",
@@ -955,7 +955,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La densità delle linee rappresenta l’intensità del campo: linee più fitte indicano campo maggiore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "densità linee",
         "intensità",
@@ -975,7 +975,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Un dielettrico aumenta la capacità perché riduce il campo interno a parità di carica e consente più carica a parità di tensione.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "capacità",
         "dielettrico",
@@ -995,7 +995,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L’energia immagazzinata è legata alla capacità e alla tensione ai suoi capi (equivalentemente anche alla carica).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia",
         "capacitore",
@@ -1016,7 +1016,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La costante di tempo dell'RC è $\\tau = R \\cdot C$ e determina la rapidità di carica/scarica.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "RC",
         "costante di tempo",
@@ -1036,7 +1036,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per un solenoide lungo, all’interno il campo è quasi uniforme e diretto lungo l’asse.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "solenoide",
         "campo interno",
@@ -1056,7 +1056,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il flusso magnetico si misura in weber (Wb).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "flusso",
         "weber",
@@ -1076,7 +1076,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Ruotando cambia il flusso concatenato e la f.e.m. risulta in genere alternata: principio dell’alternatore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "alternatore",
         "spira",
@@ -1096,7 +1096,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un trasformatore ideale la tensione è proporzionale al numero di spire: più spire al secondario $\\Rightarrow$ tensione maggiore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "trasformatore",
         "spire",
@@ -1116,7 +1116,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La forza magnetica è perpendicolare alla velocità e agisce da forza centripeta: moto circolare uniforme (se B costante).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "moto circolare",
         "carica",
@@ -1136,7 +1136,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Quando v è parallela a B, il prodotto vettoriale è nullo e quindi la forza magnetica è zero.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "parallelo",
         "forza magnetica",
@@ -1156,7 +1156,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La permeabilità indica come un materiale risponde a un campo magnetico e quanto contribuisce al campo risultante.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "permeabilità",
         "materiali",
@@ -1176,7 +1176,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "A parità di materiale e lunghezza, una sezione maggiore riduce la resistenza.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "resistenza",
         "sezione",
@@ -1196,7 +1196,7 @@
       ],
       "rispostaCorretta": 3,
       "spiegazione": "Campo nullo implica gradiente del potenziale nullo localmente: il potenziale può essere costante in zona, ma non deve valere zero assoluto.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "campo nullo",
         "potenziale",
@@ -1216,7 +1216,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Per la legge delle maglie, la somma algebrica delle differenze di potenziale lungo un percorso chiuso è zero.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "maglia",
         "tensioni",
@@ -1236,7 +1236,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In parallelo le capacità si sommano perché hanno la stessa tensione e la carica totale si somma.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "capacità equivalente",
         "parallelo",
@@ -1256,7 +1256,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In serie la carica è la stessa su ogni condensatore e la tensione totale si ripartisce, quindi si sommano i reciproci.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "serie",
         "reciproci",
@@ -1276,7 +1276,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Per un conduttore ohmico vale proporzionalità tra V e I: retta con pendenza R.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ohmico",
         "grafico",
@@ -1296,7 +1296,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Un motore elettrico sfrutta la coppia su una spira percorsa da corrente immersa in un campo magnetico.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "motore",
         "spira",
@@ -1317,7 +1317,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Un nucleo ferromagnetico aumenta e concentra il campo magnetico prodotto dalla bobina.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "elettromagnete",
         "nucleo",
@@ -1337,7 +1337,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Serve una variazione del flusso magnetico nel tempo; se il flusso resta costante, non si induce f.e.m.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "induzione",
         "flusso costante",
@@ -1357,7 +1357,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "La f.e.m. si genera quando il flusso cambia: durante l’ingresso/uscita cambia l’area attraversata dal campo.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ingresso",
         "area",
@@ -1377,7 +1377,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "La forza magnetica è perpendicolare alla velocità, quindi non cambia l’energia cinetica e non compie lavoro.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lavoro",
         "forza magnetica",
@@ -1397,7 +1397,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Per autoinduzione, l’induttore genera una f.e.m. che si oppone alle variazioni della corrente.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "RL",
         "autoinduzione",
@@ -1417,7 +1417,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La costante di tempo tipica dell'RL è $\\tau = L/R$: più induttanza o meno resistenza $\\Rightarrow$ transitorio più lento.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "RL",
         "tau",
@@ -1437,7 +1437,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Tra piastre estese e vicine, il campo è circa uniforme (trascurando gli effetti di bordo).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "condensatore piano",
         "campo uniforme",
@@ -1457,7 +1457,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Un conduttore percorso da corrente in un campo magnetico può subire una forza (principio del motore).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "filo",
         "corrente",
@@ -1477,7 +1477,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La forza dipende dal verso della corrente: invertendo la corrente, si inverte il verso della forza.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "corrente",
         "inversione",
@@ -1497,7 +1497,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "A tensione fissa, $P = V^2/R$: se R aumenta, la potenza diminuisce.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "potenza",
         "carico",
@@ -1517,7 +1517,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Inserendo il dielettrico la capacità aumenta; a carica costante, $V = Q/C$ quindi la tensione diminuisce.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "dielettrico",
         "carica costante",
@@ -1537,7 +1537,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "A tensione costante, aumentando C aumenta $Q = C \\cdot V$: scorre carica dal generatore al condensatore.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "dielettrico",
         "tensione costante",
@@ -1557,7 +1557,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un’onda elettromagnetica i campi E e B sono perpendicolari tra loro e alla direzione di propagazione.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "onda EM",
         "E",
@@ -1578,7 +1578,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In elettrostatica il campo elettrico deriva da un potenziale: il lavoro dipende solo dagli estremi.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "conservativo",
         "elettrostatica",
@@ -1598,7 +1598,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per Lenz, la corrente indotta si oppone alla variazione del flusso: se il flusso entrante aumenta, la spira genera campo uscente.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lenz",
         "flusso",
@@ -2927,7 +2927,7 @@
       "opzioni": [
         "Rimangono parallele e uniformi",
         "Si diffondono radialmente verso l'esterno come le linee di un campo centrale",
-        "Scompaiono immediatamente",
+        "Scompaiono immediotamente",
         "Convergono tutte verso il basso"
       ],
       "rispostaCorretta": 1,
@@ -3212,7 +3212,7 @@
         "Nessuna delle precedenti"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Il potenziale è definito mediante integrale: $V(\\vec{r}) = -\\int \\vec{E} \\cdot d\\vec{l}$. L'integrale è definito a meno della costante di integrazione (scelta del punto di riferimento).",
+      "spiegazione": "Il potenziale è definito medionte integrale: $V(\\vec{r}) = -\\int \\vec{E} \\cdot d\\vec{l}$. L'integrale è definito a meno della costante di integrazione (scelta del punto di riferimento).",
       "difficolta": "difficile",
       "paroleChiave": [
         "potenziale",
@@ -3323,22 +3323,22 @@
     },
     {
       "id": "em_166",
-      "domanda": "Una corrente alternata sinusoidale scorre in un resistore. La potenza dissipata in esso varia nel tempo sinusoidalmente, ma quando si parla di \"potenza media\" di un resistore si usa la formula P = I_rms² R. Quale è il significato di I_rms?",
+      "domanda": "Una corrente alternata sinusoidale scorre in un resistore. La potenza dissipata in esso varia nel tempo sinusoidalmente, ma quando si parla di \"potenza medio\" di un resistore si usa la formula P = I_rms² R. Quale è il significato di I_rms?",
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Corrente efficace",
       "opzioni": [
         "La corrente massima della sinusoide",
-        "La corrente che dissipa la stessa potenza media di una corrente continua costante",
+        "La corrente che dissipa la stessa potenza medio di una corrente continua costante",
         "La corrente minima",
         "Una quantità priva di significato fisico"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "$I_{rms} = I_0 / \\sqrt{2}$ per sinusoide. È il valore equivalente di corrente continua che produrrebbe la stessa potenza media dissipata.",
+      "spiegazione": "$I_{rms} = I_0 / \\sqrt{2}$ per sinusoide. È il valore equivalente di corrente continua che produrrebbe la stessa potenza medio dissipata.",
       "difficolta": "difficile",
       "paroleChiave": [
         "rms",
         "efficace",
-        "potenza media"
+        "potenza medio"
       ]
     },
     {

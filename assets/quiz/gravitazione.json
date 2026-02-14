@@ -322,12 +322,12 @@
             "sottocategoria": "Terza legge",
             "opzioni": [
                 "Massa e peso",
-                "Periodo e distanza media (semiasse)",
+                "Periodo e distanza medio (semiasse)",
                 "Energia e velocità",
                 "Forza e accelerazione"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Keplero 3: $T^2$ è proporzionale a $a^3$ (distanza media/semiasse maggiore).",
+            "spiegazione": "Keplero 3: $T^2$ è proporzionale a $a^3$ (distanza medio/semiasse maggiore).",
             "difficolta": "facile",
             "paroleChiave": [
                 "keplero",
@@ -737,7 +737,7 @@
         },
         {
             "id": "grav_036",
-            "domanda": "Se un pianeta è più lontano dal Sole, in media il suo periodo di rivoluzione tende a essere:",
+            "domanda": "Se un pianeta è più lontano dal Sole, in medio il suo periodo di rivoluzione tende a essere:",
             "categoria": "Gravitazione",
             "sottocategoria": "Terza legge qualitativa",
             "opzioni": [
@@ -747,7 +747,7 @@
                 "Indipendente dalla distanza"
             ],
             "rispostaCorretta": 1,
-            "spiegazione": "Da Keplero 3, maggiore distanza media implica periodo maggiore.",
+            "spiegazione": "Da Keplero 3, maggiore distanza medio implica periodo maggiore.",
             "difficolta": "facile",
             "paroleChiave": [
                 "periodo",
@@ -853,7 +853,7 @@
             ],
             "rispostaCorretta": 3,
             "spiegazione": "$F \\propto m_1 m_2 / r^2$: raddoppio una massa (×2) e dimezzo $r$ (×4) → totale ×8; ma anche l'altra massa era $M$: resta uguale, quindi ×8. Attenzione: $r$ dimezzata dà ×4, massa raddoppiata ×2, totale ×8; opzione corretta è 8.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "proporzioni",
                 "massa",
@@ -874,7 +874,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$F'/F = 2 / (1/2)^2 = 2 / (1/4) = 8$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "rapporto",
                 "scaling",
@@ -895,7 +895,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$g(r) = GM/r^2$ → a $2R$ vale $g/4$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "g",
                 "quota",
@@ -916,7 +916,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$g = GM/R^2$: raddoppiando $M$ raddoppia $g$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "g",
                 "massa terra",
@@ -937,7 +937,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$v = \\sqrt{GM/r}$ → a $4r$: $v' = \\sqrt{GM/(4r)} = v/2$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "velocità orbitale",
                 "radice",
@@ -958,7 +958,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Da $T = 2\\pi\\sqrt{r^3/GM}$, quindi $T \\propto r^{3/2}$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "periodo",
                 "r^(3/2)",
@@ -979,7 +979,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$T \\propto r^{3/2}$: $(2r)^{3/2} = 2^{3/2} r^{3/2} = 2\\sqrt{2} \\cdot T$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "scaling",
                 "periodo",
@@ -1000,7 +1000,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$v_f = \\sqrt{2GM/R}$: dipende da $M$ e $R$ del corpo centrale, non dalla massa dell'oggetto che fugge.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "velocità di fuga",
                 "2GM/R",
@@ -1021,7 +1021,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Salendo, lo spostamento è opposto alla forza peso: lavoro negativo ($W = -mg\\Delta h$).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lavoro",
                 "peso",
@@ -1042,7 +1042,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Per conservazione dell'energia: perdita di potenziale $mgh$ = guadagno di cinetica.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia",
                 "mgh",
@@ -1063,7 +1063,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Nell'equilibrio tra forza gravitazionale e centripeta, la massa del satellite compare in entrambi i membri e si semplifica.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "semplificazione",
                 "centripeta",
@@ -1084,7 +1084,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$F \\propto 1/r^2$: $r \\to 2r$ implica $F \\to F/4$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "sole",
                 "sonda",
@@ -1105,7 +1105,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Keplero 3: $T^2 \\propto a^3$ → $8^2 = 64 = (a/a_0)^3$ → $a/a_0 = 4$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "keplero 3",
                 "periodo",
@@ -1126,7 +1126,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con forza centrale (gravità), il momento angolare si conserva.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "momento angolare",
                 "conservazione",
@@ -1147,7 +1147,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$U = -GMm/r$: a $2r$ diventa $U/2$ (meno negativa in modulo dimezza).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "potenziale",
                 "-GMm/r",
@@ -1168,7 +1168,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$g(r) = GM/r^2$ dipende dalla massa del corpo centrale e dalla distanza dal suo centro.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "g",
                 "GM/r^2",
@@ -1189,7 +1189,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "L'effetto mareale dipende fortemente dalla distanza (decresce rapidamente con $r$).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "maree",
                 "distanza",
@@ -1210,7 +1210,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In un'orbita legata, scegliendo $U = 0$ a infinito, l'energia totale è negativa.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia totale",
                 "orbita",
@@ -1231,7 +1231,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per definizione, la forza su una massa $m$ è $F = m \\cdot g$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "F=mg",
                 "campo",
@@ -1252,7 +1252,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$v_f \\propto \\sqrt{M/R}$: se $M$ raddoppia e $R$ uguale → $v_f$ moltiplica per $\\sqrt{2}$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "velocità di fuga",
                 "radice",
@@ -1273,7 +1273,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Aree uguali in tempi uguali implica velocità maggiore vicino al Sole (perielio).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "keplero 2",
                 "velocità",
@@ -1294,7 +1294,7 @@
             ],
             "rispostaCorretta": 3,
             "spiegazione": "La gravità è conservativa: lungo un percorso chiuso il lavoro totale è nullo.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "conservativa",
                 "percorso chiuso",
@@ -1315,7 +1315,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$v = \\sqrt{GM/r}$: aumentando $r$, $v$ diminuisce.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "orbita",
                 "velocità",
@@ -1336,7 +1336,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per lo stesso corpo centrale, il rapporto $T^2/a^3$ è costante.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "T^2/a^3",
                 "costante",
@@ -1357,7 +1357,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Nel moto circolare uniforme $F_c = mv^2/r$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "centripeta",
                 "mv^2/r",
@@ -1378,7 +1378,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Da $GMm/r^2 = mv^2/r$ si ricava $v = \\sqrt{GM/r}$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "derivazione",
                 "velocità orbitale",
@@ -1399,7 +1399,7 @@
             ],
             "rispostaCorretta": 3,
             "spiegazione": "$g = GM/R^2$: se $R$ raddoppia, $g$ diventa $g/4$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "g",
                 "raggio",
@@ -1420,7 +1420,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $U(\\infty) = 0$, l'energia potenziale è $U = -GMm/r$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "U",
                 "-GMm/r",
@@ -1441,7 +1441,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$v_f$ dipende da $M$ e $R$ del corpo centrale, non dalla massa del corpo di prova.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "v_f",
                 "indipendenza massa",
@@ -1462,7 +1462,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$T \\propto r^{3/2}$: $(r/2)^{3/2} = T/2^{3/2} = T/(2\\sqrt{2})$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "periodo",
                 "scaling",
@@ -1483,7 +1483,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "In assenza di dissipazioni, l'energia meccanica totale del sistema si conserva.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia",
                 "conservazione",
@@ -1504,7 +1504,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Senza attrito l'energia meccanica si conserva: cambia forma tra cinetica e potenziale.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "conservazione",
                 "lancio verticale",
@@ -1525,7 +1525,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$g$ è l'accelerazione e anche la forza per unità di massa: $g = F/m$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "g",
                 "F/m",
@@ -1546,7 +1546,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$T \\propto r^{3/2}$: $9^{3/2} = 9 \\cdot \\sqrt{9} = 27$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "periodo",
                 "r^(3/2)",
@@ -1567,7 +1567,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$F \\propto 1/r^2$: $r \\to 3r$ implica $F \\to F/9$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza",
                 "1/r^2",
@@ -1588,7 +1588,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$U = -GMm/r$: aumentando $r$, $U$ aumenta verso 0 (meno negativa).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "U",
                 "-GMm/r",
@@ -1609,7 +1609,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "$v_{orb} = \\sqrt{GM/r}$, $v_f = \\sqrt{2GM/r} = \\sqrt{2} \\cdot v_{orb}$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "sqrt2",
                 "fuga",
@@ -1630,7 +1630,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Varia la distanza $r$: cambia l'energia potenziale e la cinetica si adatta per conservare l'energia totale.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia cinetica",
                 "r variabile",
@@ -1651,7 +1651,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "$T \\propto a^{3/2}$: raddoppiare $a$ dà fattore $2^{3/2} = 2\\sqrt{2}$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "keplero 3",
                 "a^(3/2)",
@@ -1672,7 +1672,7 @@
             ],
             "rispostaCorretta": 2,
             "spiegazione": "Perdere energia in un'orbita legata porta a un'orbita più \u201cbassa\u201d ($r$ minore) fino al rientro.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "attrito",
                 "energia",
@@ -1955,7 +1955,7 @@
         },
         {
             "id": "grav_094",
-            "domanda": "Se la densità media di un pianeta resta costante ma il suo raggio $R$ raddoppia, come cambia $g$ in superficie?",
+            "domanda": "Se la densità medio di un pianeta resta costante ma il suo raggio $R$ raddoppia, come cambia $g$ in superficie?",
             "categoria": "Gravitazione",
             "sottocategoria": "Scaling con densità costante",
             "opzioni": [
@@ -2428,7 +2428,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $U(\\infty)=0$, un sistema legato ha $U<0$ e l'energia totale $E=K+U$ resta negativa.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia",
                 "legame",
@@ -2596,7 +2596,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con forza centrale si conserva il momento angolare: a raggio minore corrisponde velocità maggiore.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "perielio",
                 "momento angolare",
@@ -2617,7 +2617,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Senza forze non conservative, l'energia meccanica totale si conserva.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia",
                 "conservazione",
@@ -2638,7 +2638,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Una forza centrale ha momento torcente nullo, quindi il momento angolare si conserva e l'area spazzata è costante nel tempo.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "keplero",
                 "momento angolare",
@@ -2659,7 +2659,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il lavoro della gravità dipende solo dai punti iniziale e finale, non dal percorso.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "conservativa",
                 "lavoro",
@@ -2701,7 +2701,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per piccole variazioni di quota rispetto al raggio terrestre, $g$ varia poco e si può assumere costante.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "mgh",
                 "approssimazione",
@@ -2722,7 +2722,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Uguagliando forza gravitazionale e centripeta, la massa del satellite compare in entrambi i membri e si elimina.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "periodo",
                 "massa",
@@ -2743,7 +2743,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Le maree nascono dal gradiente del campo gravitazionale: questo diminuisce rapidamente con la distanza.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "maree",
                 "gradiente",
@@ -2764,7 +2764,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "L'effetto mareale dipende fortemente dalla distanza: la Luna è molto più vicina della massa solare.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "maree",
                 "luna",
@@ -2785,7 +2785,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Al centro, per simmetria, le attrazioni provenienti da tutte le direzioni si compensano.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "sfera uniforme",
                 "centro",
@@ -2848,7 +2848,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La stessa influenza gravitazionale si distribuisce su superfici sferiche che crescono come $r^2$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "1/r^2",
                 "superficie sferica",
@@ -2869,7 +2869,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La deviazione continua dalla traiettoria rettilinea è dovuta all'accelerazione centripeta.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "centripeta",
                 "orbita",
@@ -2932,7 +2932,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Nell'uguaglianza energetica, la massa dell'oggetto compare in entrambi i termini e si semplifica.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "velocità di fuga",
                 "massa",
@@ -2953,7 +2953,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "$U$ è l'energia potenziale gravitazionale con zero all'infinito: rappresenta l'energia di legame.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "U",
                 "energia potenziale",
@@ -2974,7 +2974,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per rimanere sopra lo stesso punto, l'orbita deve essere equatoriale e con periodo di 24 h.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "geostazionario",
                 "equatore",
@@ -3037,7 +3037,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La forza è radiale, perpendicolare alla velocità: non cambia il modulo della velocità.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "orbita circolare",
                 "lavoro",
@@ -3079,7 +3079,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Aree uguali in tempi uguali: quando il raggio è minore, la velocità deve aumentare.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "keplero",
                 "aree",
@@ -3100,7 +3100,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La gravità è radiale; serve una velocità perpendicolare al raggio per ottenere una traiettoria chiusa.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "orbita",
                 "tangenziale",
@@ -3205,7 +3205,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Con masse positive, la gravità è sempre attrattiva e non può annullarsi se sono presenti solo due masse.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "attrattiva",
                 "forza",
@@ -3226,7 +3226,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Le forze sono uguali e opposte: entrambi i corpi si muovono attorno al baricentro comune.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "baricentro",
                 "due corpi",
@@ -3310,7 +3310,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Senza attrito, l'energia meccanica si conserva: la velocità dipende solo dalla quota.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia",
                 "simmetria",
@@ -3331,7 +3331,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La rotazione introduce una piccola accelerazione centrifuga che riduce il peso apparente, massima all'equatore.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "rotazione",
                 "g",
@@ -3352,7 +3352,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La forza è diretta lungo il raggio, quindi il momento torcente rispetto al centro è nullo.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "momento angolare",
                 "forza centrale",
@@ -3373,7 +3373,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Un'energia totale meno negativa indica un'orbita più ampia e meno legata al corpo centrale.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia",
                 "orbita",
@@ -3415,7 +3415,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il sistema è legato: serve lavoro positivo per portare le masse all'infinito, quindi $U$ è negativo.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "potenziale",
                 "negativo",
@@ -3457,7 +3457,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La forza è radiale e perpendicolare alla velocità, quindi non compie lavoro e non cambia il modulo di $v$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza radiale",
                 "velocità",
@@ -3499,7 +3499,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Per fuggire serve energia extra per annullare il legame: $v_f = \\sqrt{2} \\, v_{orb}$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "velocità di fuga",
                 "orbita",
@@ -3520,7 +3520,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Gli esperimenti mostrano che massa inerziale e gravitazionale sono equivalenti entro alta precisione.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "equivalenza",
                 "massa inerziale",
@@ -3583,7 +3583,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In orbita circolare $E = -GMm/(2r)$, quindi è negativa e pari a metà del potenziale (in modulo).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia",
                 "orbita circolare",
@@ -3625,7 +3625,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Le equazioni del moto contengono la massa del satellite in entrambi i membri e si semplifica.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "periodo",
                 "massa",
@@ -3688,7 +3688,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La gravità agisce radialmente; la variazione di velocità tangenziale deriva dalla conservazione dell'energia e del momento angolare.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "forza radiale",
                 "ellisse",
@@ -3772,7 +3772,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "All'aumentare di $r$, $U$ aumenta (meno negativa) e $K$ diminuisce, mantenendo $E$ costante.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "energia",
                 "potenziale",
@@ -3793,7 +3793,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Un campo uniforme ha modulo e direzione costanti, mentre un campo centrale varia con la distanza.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "campo uniforme",
                 "campo centrale",
@@ -3808,7 +3808,7 @@
             "sottocategoria": "Terza legge",
             "opzioni": [
                 "Perché il Sole è più leggero",
-                "Perché la distanza media maggiore implica periodo maggiore",
+                "Perché la distanza medio maggiore implica periodo maggiore",
                 "Perché la massa del pianeta aumenta",
                 "Perché l'orbita è circolare"
             ],
@@ -3835,7 +3835,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per orbitare più in basso serve un'energia totale più negativa; perdendo energia, l'orbita si abbassa.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "decadimento",
                 "energia",
@@ -3877,7 +3877,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Allontanandosi diminuisce l'intensità della forza; il sistema è meno legato e $U$ si avvicina a 0.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "potenziale",
                 "distanza",
@@ -3919,7 +3919,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Uguagliando $GMm/r^2$ e $mv^2/r$, la massa del satellite si semplifica.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "velocità orbitale",
                 "massa",
@@ -3940,7 +3940,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Con $U(\\infty)=0$, il potenziale è negativo e tende a 0 quando $r$ aumenta.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "potenziale",
                 "negativo",
@@ -4045,7 +4045,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La gravità diminuisce con $r$ ma non si annulla mai completamente: è una forza a lungo raggio.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lungo raggio",
                 "forza",
@@ -4129,7 +4129,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Variando $r$, varia $U$ e quindi $K$ per conservare l'energia totale.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "orbita ellittica",
                 "velocità",
@@ -4150,7 +4150,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Essendo conservativa, la gravità fa un lavoro che dipende solo dagli stati iniziale e finale.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lavoro",
                 "conservativa",
@@ -4171,7 +4171,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il Sistema Solare si è formato da un disco di gas e polveri che ha imposto un piano medio alle orbite.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "piano orbitale",
                 "disco",
@@ -4192,7 +4192,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Per orbita circolare vale $K = |U|/2$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "K",
                 "U",
@@ -4276,7 +4276,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Dall'equilibrio $GMm/r^2 = mv^2/r$ si ricava $v = \\sqrt{GM/r}$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "velocità",
                 "1/sqrt(r)",
@@ -4339,7 +4339,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La terza legge di Keplero implica $T \\propto r^{3/2}$, quindi crescita più che lineare.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "keplero",
                 "periodo",
@@ -4381,7 +4381,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il lavoro su un ciclo chiuso è nullo per le forze conservative, quindi l'energia totale si conserva.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lavoro",
                 "orbita chiusa",
@@ -4423,7 +4423,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Nel centro, per simmetria, le forze gravitazionali provenienti da ogni direzione si cancellano.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "centro terra",
                 "simmetria",
@@ -4444,7 +4444,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "All'afelio $r$ è massimo: la potenziale è meno negativa e la cinetica è minima.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "afelio",
                 "velocità minima",
@@ -4486,7 +4486,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Una forza centrale produce momento torcente nullo, quindi il momento angolare resta costante.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "momento angolare",
                 "forza centrale",
@@ -4507,7 +4507,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Serve la velocità circolare corretta e direzione tangenziale per mantenere $r$ costante.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "orbita circolare",
                 "velocità",
@@ -4528,7 +4528,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "La forza gravitazionale è proporzionale a $m$, quindi in $g = F/m$ la massa si semplifica.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "campo",
                 "massa di prova",
@@ -4570,7 +4570,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Il lavoro esterno richiesto è pari a $|U|$ perché $U$ è negativo con zero all'infinito.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "lavoro",
                 "infinito",
@@ -4612,7 +4612,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Un incremento di velocità aumenta l'energia totale e porta a un'ellisse con semiasse maggiore più grande.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "manovre",
                 "energia",
@@ -4633,7 +4633,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "In superficie $g = GM/R^2$, quindi conta il rapporto tra massa e raggio al quadrato.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "g",
                 "M/R^2",
@@ -4654,7 +4654,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "A distanze maggiori la gravità è più debole, quindi la velocità orbitale è minore e il periodo aumenta.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "1/r^2",
                 "periodo",
@@ -4675,7 +4675,7 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "Nel modello classico, i campi gravitazionali si sommano vettorialmente (principio di sovrapposizione).",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "sovrapposizione",
                 "somma vettoriale",
@@ -4696,7 +4696,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "La gravità è una forza conservativa e dipende dalla posizione; perciò $U$ dipende solo da $r$.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "potenziale",
                 "posizione",
@@ -4780,7 +4780,7 @@
             ],
             "rispostaCorretta": 0,
             "spiegazione": "Al perielio $r$ è minimo: $U$ è più negativa, quindi $K$ è massima per conservare l'energia totale.",
-            "difficolta": "media",
+            "difficolta": "medio",
             "paroleChiave": [
                 "perielio",
                 "energia cinetica",

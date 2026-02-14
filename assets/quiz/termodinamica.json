@@ -853,7 +853,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Da $PV = nRT$ segue $p = nRT/V \\approx (1 \\cdot 8,31 \\cdot 300)/0,025 \\approx 1,0 \\times 10^5$ Pa. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "PV=nRT",
         "pressione",
@@ -874,7 +874,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In isobara $W = p\\Delta V = 2,0 \\times 10^5 \\cdot (0,020) = 4,0 \\times 10^3$ J. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isobara",
         "W=pΔV",
@@ -895,7 +895,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Dal primo principio $\\Delta U = Q - W = 500 - 200 = 300$ J. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ΔU",
         "Q-W",
@@ -916,7 +916,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Con $\\Delta U = Q - W$ si ha $\\Delta U = -300 - (-100) = -200$ J (**attenzione**: qui la risposta corretta è $-200$ J). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "segni",
         "ΔU",
@@ -937,7 +937,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In isocora $W = \\int p \\, dV = 0$, quindi $\\Delta U = Q - W = Q = 400$ J. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isocora",
         "W=0",
@@ -958,7 +958,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In adiabatica $Q = 0$ e quindi dal primo principio $\\Delta U = -W = -250$ J. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "adiabatica",
         "Q=0",
@@ -979,7 +979,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In isoterma per gas ideale vale $pV$ = costante, quindi raddoppiando $V$ la pressione si dimezza. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isoterma",
         "pV costante",
@@ -1000,7 +1000,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Da $PV = nRT$ si ricava $n = PV/(RT) \\approx (1,0 \\times 10^5 \\cdot 0,010)/(8,31 \\cdot 300) \\approx 0,40$ mol (**attenzione**: l'opzione corretta è $0,40$ mol). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "n=PV/RT",
         "moli",
@@ -1021,7 +1021,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per Carnot $\\eta = 1 - T_c/T_h = 1 - 300/600 = 0,50$. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Carnot",
         "rendimento",
@@ -1042,7 +1042,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$\\eta = 1 - T_c/T_h = 1 - 400/500 = 0,20$. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Carnot",
         "rendimento",
@@ -1063,7 +1063,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il rendimento è $\\eta = W/Q_h = 250/1000 = 0,25$. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "rendimento",
         "W/Qh",
@@ -1084,7 +1084,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In un ciclo $\\Delta U = 0$ quindi $Q = W$, cioè $Q_h - Q_c = W$ e dunque $Q_c = Q_h - W = 600$ J. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ciclo",
         "Qh-Qc=W",
@@ -1105,7 +1105,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Da $PV = nRT$, a $p$ e $n$ costanti vale $T$ proporzionale a $V$, quindi se $V$ triplica anche $T$ triplica. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isobara",
         "PV=nRT",
@@ -1126,7 +1126,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Con $V$ e $n$ costanti, da $PV = nRT$ segue $p$ proporzionale a $T$, quindi se $T$ raddoppia anche $p$ raddoppia. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isocora",
         "p∝T",
@@ -1147,7 +1147,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per un'isoterma reversibile di gas ideale si ottiene $W = nRT \\ln(V_f/V_i)$. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isoterma",
         "lavoro",
@@ -1168,7 +1168,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Con $W = \\int p \\, dV$, in espansione $dV > 0$ e quindi il gas compie lavoro positivo. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "espansione",
         "lavoro positivo",
@@ -1189,7 +1189,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Il lavoro totale di un ciclo è l'area racchiusa nel piano $p$-$V$ e il segno dipende dal verso, con lavoro positivo per ciclo orario. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ciclo",
         "p-V",
@@ -1210,7 +1210,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Per reversibile $dS = \\delta Q_{rev}/T$, quindi con $\\delta Q_{rev} > 0$ e $T > 0$ si ha $dS > 0$. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "entropia",
         "dS=Qrev/T",
@@ -1231,7 +1231,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La disuguaglianza stretta $\\int \\delta Q/T < \\Delta S$ indica un processo irreversibile. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "irreversibile",
         "Clausius",
@@ -1252,7 +1252,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$W = p\\Delta V = 1,5 \\times 10^5 \\cdot 0,020 = 3,0 \\times 10^3$ J. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "pΔV",
         "lavoro",
@@ -1273,7 +1273,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Da $PV = nRT$ segue $V = nRT/p \\approx (2 \\cdot 8,31 \\cdot 400)/(2,0 \\times 10^5) \\approx 0,033$ m³. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "V=nRT/p",
         "gas ideale",
@@ -1294,7 +1294,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "$\\eta = 1 - T_c/T_h = 1 - 350/700 = 0,50$. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Carnot",
         "rendimento",
@@ -1315,7 +1315,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Da $PV = nRT$, se $p$, $T$ e $n$ sono costanti, allora anche $V$ resta costante. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "PV=nRT",
         "costanti",
@@ -1336,7 +1336,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In compressione $dV < 0$, quindi $W = \\int p \\, dV$ è negativo (lavoro compiuto sul gas). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "compressione",
         "dV<0",
@@ -1357,7 +1357,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In un ciclo vale $W = Q_h - Q_c$, quindi $W = 1200 - 900 = 300$ J. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "W=Qh-Qc",
         "ciclo",
@@ -1378,7 +1378,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Per definizione $\\eta = W/Q_h$ quindi $W = \\eta Q_h = 0,30 \\cdot 1000 = 300$ J. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "rendimento",
         "W=ηQh",
@@ -1399,7 +1399,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Se $T$ è circa costante, $\\Delta S \\approx Q_{rev}/T = 100/300 \\approx 0,33$ J/K. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ΔS=Qrev/T",
         "entropia",
@@ -1420,7 +1420,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per un'adiabatica reversibile di gas ideale vale $pV^\\gamma$ = costante (equazioni di Poisson). ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Poisson",
         "adiabatica",
@@ -1441,7 +1441,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel modello dei gas ideali, $\\gamma$ è il rapporto tra capacità termiche: $\\gamma = C_p/C_v$. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "gamma",
         "Cp/Cv",
@@ -1462,7 +1462,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un'espansione adiabatica reversibile, il gas compie lavoro senza assorbire calore e quindi la temperatura diminuisce. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "adiabatica",
         "espansione",
@@ -1483,7 +1483,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In una trasformazione isoterma la temperatura resta costante, quindi $\\Delta T = 0$. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isoterma",
         "ΔT=0",
@@ -1504,7 +1504,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Per un gas ideale $U$ dipende da $T$, quindi in isoterma ($\\Delta T = 0$) si ha $\\Delta U = 0$. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isoterma",
         "ΔU=0",
@@ -1525,7 +1525,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Se $\\Delta U = 0$, dal primo principio $0 = Q - W$ quindi $Q = W$. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isoterma",
         "Q=W",
@@ -1546,7 +1546,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Con $p$ costante, da $PV = nRT$ segue che $T$ è proporzionale a $V$, quindi se $V$ diminuisce anche $T$ diminuisce. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isobara",
         "T∝V",
@@ -1567,7 +1567,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Per $T$ costante, $\\Delta S = Q_{rev}/T = 600/300 = 2$ J/K. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "entropia",
         "Q/T",
@@ -1588,7 +1588,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Da $\\eta = 1 - T_c/T_h$ segue $T_c/T_h = 1 - \\eta = 0,60$. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Carnot",
         "inverso",
@@ -1609,7 +1609,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Da $\\eta = 1 - T_c/T_h$ segue $T_c = T_h(1 - \\eta) = 800 \\cdot 0,75 = 600$ K. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Carnot",
         "Tc",
@@ -1630,7 +1630,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In un ciclo vale $Q_h - Q_c = W$, quindi $Q_c = Q_h - W = 500 - 150 = 350$ J. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Qc",
         "Qh-Qc=W",
@@ -1651,7 +1651,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Con $PV = nRT$, se $n$ è costante e $T$ e $V$ sono costanti allora anche $p$ è costante, quindi non è una trasformazione non banale. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "vincoli",
         "PV=nRT",
@@ -1672,7 +1672,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Un processo con $\\Delta S = 0$ è detto isentropico, in particolare in molti contesti coincide con un'adiabatica reversibile. ",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isentropico",
         "ΔS=0",
@@ -2428,7 +2428,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un ciclo, il sistema ritorna allo stato iniziale, quindi $\\Delta U = 0$. Dal primo principio: $0 = Q - W$, da cui $Q = W$. Le altre affermazioni sono errate: (a) l'energia interna è una funzione di stato; (c) se assorbe calore e non compie lavoro, $\\Delta U = Q > 0$; (d) da $\\Delta U = Q - W$ segue $\\Delta U = Q$ solo se $W = 0$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "primo principio",
         "ciclo",
@@ -2450,7 +2450,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In adiabatica $Q = 0$, quindi dal primo principio $\\Delta U = -W$. Se il gas si espande compie lavoro positivo ($W > 0$), quindi $\\Delta U < 0$ e l'energia interna diminuisce, provocando una diminuzione di temperatura. Le altre sono errate: (a) la variazione di energia interna è legata al lavoro; (c) l'energia può cambiare anche per lavoro; (d) in espansione adiabatica la temperatura diminuisce.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "adiabatica",
         "Q=0",
@@ -2472,7 +2472,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il secondo principio stabilisce che l'entropia di un sistema isolato non diminuisce mai. Se il calore fluisse spontaneamente da freddo a caldo, l'entropia totale diminuirebbe, violando il principio. Le altre affermazioni sono scorrette: (a) la conservazione dell'energia non impedisce questo flusso; (c) la gravità non è rilevante; (d) il primo principio non ha questa funzione.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "secondo principio",
         "entropia",
@@ -2494,7 +2494,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "La variazione di entropia in un processo reversibile è $\\Delta S = Q_{rev}/T$. A parità di calore assorbito, l'entropia aumenta di più quando la temperatura è più bassa. Un'isoterma a 300 K produce un aumento di entropia maggiore rispetto a un'isoterma a 500 K. Le trasformazioni isobara e isocora hanno variazioni di entropia diverse e non sono direttamente confrontabili senza più informazioni.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "entropia",
         "ΔS=Q/T",
@@ -2515,8 +2515,8 @@
         "$U = nRT$ (formula semplificata)"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Per un gas biatomico a temperatura ambiente, i gradi di libertà sono 5: 3 traslazionali e 2 rotazionali. Dato che ogni grado di libertà contribuisce $\\frac{1}{2}kT$ per particella, l'energia media è $\\frac{5}{2}kT$ per molecola e $\\frac{5}{2}nRT$ per una mole. Le vibrazioni non sono eccitate a temperatura ambiente.",
-      "difficolta": "media",
+      "spiegazione": "Per un gas biatomico a temperatura ambiente, i gradi di libertà sono 5: 3 traslazionali e 2 rotazionali. Dato che ogni grado di libertà contribuisce $\\frac{1}{2}kT$ per particella, l'energia medio è $\\frac{5}{2}kT$ per molecola e $\\frac{5}{2}nRT$ per una mole. Le vibrazioni non sono eccitate a temperatura ambiente.",
+      "difficolta": "medio",
       "paroleChiave": [
         "gas biatomico",
         "energia interna",
@@ -2560,7 +2560,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il rendimento massimo teorico è quello di Carnot: $\\eta_{max} = 1 - T_c/T_h = 1 - 300/600 = 0,50 = 50\\%$. Un motore reale con $\\eta = 60\\%$ supererebbe questo limite, violando il secondo principio, quindi è impossibile. Nessun motore reale può superare il rendimento di Carnot.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Carnot",
         "rendimento",
@@ -2604,7 +2604,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In una trasformazione isocora il volume è costante: $dV = 0$. Il lavoro è $W = \\int p \\, dV = 0$. Pertanto, dal primo principio $\\Delta U = Q - W = Q - 0 = Q$. Tutto il calore assorbito aumenta l'energia interna (aumentando la temperatura), poiché non c'è lavoro meccanico svolto.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isocora",
         "primo principio",
@@ -2648,7 +2648,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In una trasformazione isoterma la temperatura resta costante, quindi per un gas ideale $\\Delta U = 0$. Dal primo principio: $\\Delta U = Q - W$, quindi $0 = Q - W$, da cui $Q = W$. Il gas assorbe calore dalla sorgente e lo trasforma completamente in lavoro meccanico.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isoterma",
         "Q=W",
@@ -2670,7 +2670,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "L'equazione di van der Waals è $\\left(P + \\frac{an^2}{V^2}\\right)(V - nb) = nRT$. Il termine $\\frac{an^2}{V^2}$ corregge per le forze attrattive (riduce la pressione), mentre $nb$ corregge il volume disponibile (aumenta la pressione effettiva). È applicabile a qualunque gas. A basse pressioni e alte temperature il gas si comporta quasi idealmente.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "van der Waals",
         "gas reale",
@@ -2686,13 +2686,13 @@
       "sottocategoria": "Teoria cinetica",
       "opzioni": [
         "Aumentare la temperatura aggiunge più molecole al gas",
-        "Aumentare la temperatura aumenta la velocità media delle molecole, che urtano più frequentemente e con più forza sulle pareti",
+        "Aumentare la temperatura aumenta la velocità medio delle molecole, che urtano più frequentemente e con più forza sulle pareti",
         "Aumentare la temperatura diminuisce il volume del contenitore",
         "La pressione non dipende dalla temperatura se il volume è costante"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Secondo la teoria cinetica, la pressione è dovuta agli urti delle molecole contro le pareti. Se la temperatura aumenta, l'energia cinetica media delle molecole $E_k = \\frac{3}{2}kT$ aumenta, quindi le molecole si muovono più velocemente e urtano più frequentemente e intensamente. A volume costante, questo provoca un aumento di pressione, coerente con la legge di Gay-Lussac.",
-      "difficolta": "media",
+      "spiegazione": "Secondo la teoria cinetica, la pressione è dovuta agli urti delle molecole contro le pareti. Se la temperatura aumenta, l'energia cinetica medio delle molecole $E_k = \\frac{3}{2}kT$ aumenta, quindi le molecole si muovono più velocemente e urtano più frequentemente e intensamente. A volume costante, questo provoca un aumento di pressione, coerente con la legge di Gay-Lussac.",
+      "difficolta": "medio",
       "paroleChiave": [
         "teoria cinetica",
         "pressione",
@@ -2714,7 +2714,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "La legge di Stefan-Boltzmann è $P = \\varepsilon \\sigma A T^4$. La potenza dipende dalla quarta potenza della temperatura. Se la temperatura raddoppia: $(2T)^4 = 16T^4$, quindi la potenza aumenta di 16 volte.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Stefan-Boltzmann",
         "radiazione",
@@ -2736,7 +2736,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "Il calore specifico $c$ è definito come $c = Q/(m \\Delta T)$ ed è una proprietà intrinseca della sostanza (non dipende dalla quantità). Un calore specifico alto significa che serve molta energia per aumentare la temperatura di una certa massa. Per esempio, l'acqua ha un calore specifico molto alto (~4186 J/kg·K), quindi si scalda lentamente (non rapidamente come dice l'opzione b).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "calore specifico",
         "energia",
@@ -2758,7 +2758,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In adiabatica $Q = 0$. Durante una compressione, l'ambiente compie lavoro sul gas ($W < 0$ nella convenzione $\\Delta U = Q - W$, risultando in $\\Delta U > 0$). Questo aumento di energia interna corrisponde a un aumento di temperatura. L'entropia rimane costante solo nei processi isoentropici ideali, ma realisticamente aumenta durante compressioni reali.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "adiabatica",
         "compressione",
@@ -2769,7 +2769,7 @@
     },
     {
       "id": "ter_132",
-      "domanda": "Quale è l'andamento della **velocità quadratica media** delle molecole in un gas in funzione della massa molecolare e della temperatura?",
+      "domanda": "Quale è l'andamento della **velocità quadratica medio** delle molecole in un gas in funzione della massa molecolare e della temperatura?",
       "categoria": "Termodinamica",
       "sottocategoria": "Teoria cinetica",
       "opzioni": [
@@ -2779,10 +2779,10 @@
         "È indipendente sia dalla massa che dalla temperatura"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "La velocità quadratica media è $v_{rms} = \\sqrt{\\frac{3kT}{m}}$. Aumenta con la radice della temperatura (gas caldi hanno molecole più veloci) e diminuisce con la radice della massa molecolare (molecole pesanti si muovono più lentamente a parità di temperatura).",
-      "difficolta": "media",
+      "spiegazione": "La velocità quadratica medio è $v_{rms} = \\sqrt{\\frac{3kT}{m}}$. Aumenta con la radice della temperatura (gas caldi hanno molecole più veloci) e diminuisce con la radice della massa molecolare (molecole pesanti si muovono più lentamente a parità di temperatura).",
+      "difficolta": "medio",
       "paroleChiave": [
-        "velocità quadratica media",
+        "velocità quadratica medio",
         "temperatura",
         "massa molecolare",
         "teoria cinetica",
@@ -2802,7 +2802,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Una trasformazione **isocora adiabatica** è un processo dove volume e calore sono entrambi nulli: $Q = 0$ (adiabatica) e $W = 0$ (isocora). Dal primo principio $\\Delta U = Q - W = 0 - 0 = 0$. Quindi l'energia interna non cambia e la temperatura rimane costante.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isocora",
         "adiabatica",
@@ -2824,7 +2824,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel sistema isolato il calore fluisce spontaneamente dal corpo caldo ($T_1$) al freddo ($T_2$). Il corpo caldo emette calore $Q$ a $T_1$, diminuendo di entropia $\\Delta S_1 = -Q/T_1$. Il corpo freddo assorbe lo stesso calore a $T_2$, aumentando di entropia $\\Delta S_2 = +Q/T_2$. Poiché $T_1 > T_2$, risulta $Q/T_2 > Q/T_1$, quindi $\\Delta S_{tot} = \\Delta S_1 + \\Delta S_2 > 0$.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "secondo principio",
         "entropia",
@@ -2839,14 +2839,14 @@
       "categoria": "Termodinamica",
       "sottocategoria": "Teoria cinetica",
       "opzioni": [
-        "È il rapporto tra energia cinetica media e temperature assoluta per una singola molecola",
+        "È il rapporto tra energia cinetica medio e temperature assoluta per una singola molecola",
         "È il calore specifico di un gas monoatomico",
-        "È la velocità media delle particelle a 1 K",
+        "È la velocità medio delle particelle a 1 K",
         "È il numero di Avogadro diviso la costante dei gas"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "La costante di Boltzmann collega l'energia microscopica (molecole) con la temperatura macroscopica: $E_{k,media} = \\frac{3}{2}k_B T$. È il 'ponte' tra la descrizione microscopica (singola particella) e macroscopica (proprietà collettive). L'opzione (d) è parzialmente corretta matematicamente ($k_B = R/N_A$), ma non spiega il significato fisico.",
-      "difficolta": "media",
+      "spiegazione": "La costante di Boltzmann collega l'energia microscopica (molecole) con la temperatura macroscopica: $E_{k,medio} = \\frac{3}{2}k_B T$. È il 'ponte' tra la descrizione microscopica (singola particella) e macroscopica (proprietà collettive). L'opzione (d) è parzialmente corretta matematicamente ($k_B = R/N_A$), ma non spiega il significato fisico.",
+      "difficolta": "medio",
       "paroleChiave": [
         "Boltzmann",
         "energia cinetica",
@@ -2934,7 +2934,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "La legge di Fourier è $Q = -kA\\frac{\\Delta T}{\\Delta x}\\Delta t$. Il calore trasferito è proporzionale a: (1) differenza di temperatura $\\Delta T$, (2) area $A$. È inversamente proporzionale allo spessore $\\Delta x$. La costante $k$ è la conduttività termica. La conduzione avviene nei materiali, non nel vuoto.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "Fourier",
         "conduzione",
@@ -2956,7 +2956,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "In un ciclo il sistema ritorna allo stato iniziale. Poiché l'energia interna è una funzione di stato, $\\Delta U = 0$. Dal primo principio: $0 = Q - W$, quindi $Q = W$. Se $Q > 0$ il ciclo è una macchina termica (assorbe calore e produce lavoro); se $Q < 0$ è una frigorifera (riceve lavoro per pompare calore).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "ciclo",
         "ΔU=0",
@@ -2978,7 +2978,7 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "In un gas perfetto le molecole sono puntiformi (volume nullo) e non interagiscono fra loro. Quindi non hanno energia potenziale. L'unica energia è quella cinetica dovuta al movimento: $E_{cin} = \\frac{f}{2}nRT$, dove $f$ è il numero di gradi di libertà. Questa dipende solo dalla temperatura. La pressione e il volume sono indipendenti dalla stessa energia interna.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "energia interna",
         "gas perfetto",
@@ -3000,7 +3000,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "In isobara dalla equazione $PV = nRT$ con $P = \\text{costante}$ segue $V \\propto T$. Questa è la **prima legge di Gay-Lussac**: a pressione costante, il volume di un gas aumenta linearmente con la temperatura assoluta. Se raddoppia la temperatura, il volume raddoppia.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isobara",
         "Gay-Lussac",
@@ -3022,7 +3022,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "In isocora dalla equazione $PV = nRT$ con $V = \\text{costante}$ segue $P \\propto T$. Questa è la **seconda legge di Gay-Lussac**: a volume costante, la pressione è direttamente proporzionale alla temperatura assoluta. Se si raddoppia la temperatura, la pressione raddoppia.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isocora",
         "Gay-Lussac",
@@ -3044,7 +3044,7 @@
       ],
       "rispostaCorretta": 2,
       "spiegazione": "In isoterma dalla $PV = nRT$ con $T = \\text{costante}$ segue $PV = \\text{costante}$, che è l'equazione di un'iperbole rettangolare nel piano $p$-$V$. Una retta verticale rappresenta isocora (V costante), una orizzontale isobara (P costante).",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "isoterma",
         "diagramma p-V",
@@ -3066,7 +3066,7 @@
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Il lavoro compiuto da un gas in una trasformazione quasi-statica è $W = \\int p \\, dV$, che rappresenta l'area sottesa dalla curva nel diagramma $p$-$V$. Se $dV > 0$ (espansione), il gas compie lavoro positivo e l'area è sotto la curva. Se $dV < 0$ (compressione), il gas riceve lavoro e l'area è sempre considerata come il valore assoluto.",
-      "difficolta": "media",
+      "difficolta": "medio",
       "paroleChiave": [
         "lavoro",
         "diagramma p-V",
