@@ -1,15 +1,21 @@
 // lib/pages/help_page.dart
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/pages/onboarding_page.dart';
-//import 'package:url_launcher/url_launcher.dart';
+import 'package:physics_ease_release/pages/quiz_page.dart';
+import 'package:physics_ease_release/pages/calculator_page.dart';
+import 'package:physics_ease_release/pages/data_page.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class HelpPage extends StatelessWidget {
   final ThemeMode themeMode;
+  final void Function(bool) setGlobalAppBarVisibility;
+  final Future<void> Function(BuildContext, String) onNavigateToSection;
 
   const HelpPage({
     super.key,
     required this.themeMode,
+    required this.setGlobalAppBarVisibility,
+    required this.onNavigateToSection,
   });
 
   @override
@@ -17,121 +23,208 @@ class HelpPage extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
 
-    final iconColor = colorScheme.primary;
-    final textColor = colorScheme.onSurface;
-    final cardColor = colorScheme.surfaceContainer;
-
     return Scaffold(
       appBar: null,
       body: Stack(
         children: [
           SingleChildScrollView(
-            padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 16, left: 16.0, right: 16.0, top: MediaQuery.of(context).viewPadding.top + 60),
+            padding: EdgeInsets.only(
+              bottom: MediaQuery.of(context).viewPadding.bottom + 16,
+              left: 0,
+              right: 0,
+              top: MediaQuery.of(context).viewPadding.top + 70,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const SizedBox(height: 24),
-
-                Text(
-                  'Come usare l\'app',
-                  style: textTheme.headlineSmall?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: textColor,
-                  ),
-                ),
                 const SizedBox(height: 16),
+
                 _buildInfoCard(
-                  context,
-                  cardColor,
-                  iconColor,
-                  Icons.search,
-                  'Cerca formule',
-                  'Usa la barra di ricerca nella schermata Home per trovare rapidamente formule per titolo, descrizione o parole chiave. Puoi anche filtrare per categorie specifiche.',
+                  context: context,
+                  icon: Icons.quiz,
+                  title: 'Quiz interattivi',
+                  description:
+                      'Metti alla prova le tue conoscenze con quiz su vari argomenti di fisica. Scegli categoria, difficoltà e numero di domande. Visualizza statistiche dettagliate e rivedi le domande sbagliate.',
+                  colorScheme: colorScheme,
+                  onTap: () async {
+                    setGlobalAppBarVisibility(false);
+                    await Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) => QuizPage(
+                          setGlobalAppBarVisibility: setGlobalAppBarVisibility,
+                        ),
+                      ),
+                    );
+                    setGlobalAppBarVisibility(true);
+                  },
                 ),
+
                 _buildInfoCard(
-                  context,
-                  cardColor,
-                  iconColor,
-                  Icons.star,
-                  'I tuoi preferiti',
-                  'Tocca l\'icona a stella su qualsiasi formula per aggiungerla o rimuoverla dai tuoi preferiti. Troverai tutte le formule salvate nella sezione "Preferiti" per un accesso rapido.',
+                  context: context,
+                  icon: Icons.search,
+                  title: 'Cerca formule',
+                  description:
+                      'Usa la barra di ricerca nella schermata Home per trovare rapidamente formule per titolo, descrizione o parole chiave.',
+                  colorScheme: colorScheme,
+                  onTap: () async {
+                    await onNavigateToSection(context, 'search');
+                  },
                 ),
+
                 _buildInfoCard(
-                  context,
-                  cardColor,
-                  iconColor,
-                  Icons.calculate,
-                  'Calcolatrice integrata',
-                  'La sezione "Calcolatrice" offre uno strumento utile per i tuoi calcoli rapidi. Puoi inserire espressioni matematiche complesse e ottenere risultati istantanei.',
+                  context: context,
+                  icon: Icons.star,
+                  title: 'Preferiti',
+                  description:
+                      'Tocca la stella per salvare le formule che usi più spesso. Accedi rapidamente dalla sezione Preferiti.',
+                  colorScheme: colorScheme,
+                  onTap: () async {
+                    await onNavigateToSection(context, 'favorites');
+                  },
                 ),
+
                 _buildInfoCard(
-                  context,
-                  cardColor,
-                  iconColor,
-                  Icons.storage,
-                  'Informazioni e dati',
-                  'Nella sezione "Dati" troverai raccolte di informazioni utili come liste di costanti fisiche, unità di misura, dati sui pianeti e la tavola periodica. Ideale per la consultazione rapida.',
+                  context: context,
+                  icon: Icons.calculate,
+                  title: 'Calcolatrice scientifica',
+                  description:
+                      'Calcolatrice avanzata con funzioni scientifiche complete. Supporta espressioni matematiche complesse, funzioni trigonometriche e logaritmi.',
+                  colorScheme: colorScheme,
+                  onTap: () async {
+                    await onNavigateToSection(context, 'calculator');
+                  },
                 ),
+                
+                 _buildInfoCard(
+                  context: context,
+                  icon: Icons.storage,
+                  title: 'Dati scientifici',
+                  description:
+                      'Costanti fisiche, dati planetari, tavola periodica completa, biografie di fisici famosi, alfabeto greco e unità di misura.',
+                  colorScheme: colorScheme,
+                  onTap: () async {
+                    await onNavigateToSection(context, 'data');
+                  },
+                ),
+
                 _buildInfoCard(
-                  context,
-                  cardColor,
-                  iconColor,
-                  Icons.build,
-                  'Strumenti utili',
-                  'La sezione "Tools" mette a tua disposizione strumenti interattivi come la possibilità di aggiungere le tue formule personalizzate, un convertitore di unità e un potente risolutore di equazioni.',
+                  context: context,
+                  icon: Icons.build,
+                  title: 'Strumenti avanzati',
+                  description:
+                      'Convertitore di unità, risolutore di equazioni, visualizzatore di grafici, calcolatore vettoriale e formule personalizzate. Utilizza i sensori del dispositivo per esperimenti real-time.',
+                  colorScheme: colorScheme,
+                  onTap: () async {
+                    await onNavigateToSection(context, 'tools');
+                  },
                 ),
 
                 const SizedBox(height: 24),
 
-                Card(
-                  color: colorScheme.primary,
-                  margin: const EdgeInsets.symmetric(horizontal: 16),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => OnboardingPage(
-                            onFinished: () {
-                              Navigator.of(context).pop();
-                            },
-                          ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          colorScheme.primary,
+                          colorScheme.primary.withOpacity(0.8),
+                        ],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                      borderRadius: BorderRadius.circular(24),
+                      boxShadow: [
+                        BoxShadow(
+                          color: colorScheme.primary.withOpacity(0.4),
+                          blurRadius: 16,
+                          offset: const Offset(0, 6),
                         ),
-                      );
-                    },
-                    borderRadius: BorderRadius.circular(20),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(Icons.slideshow, size: 30, color: colorScheme.onPrimary),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Text(
-                              "Riguarda l'Onboarding",
-                              textAlign: TextAlign.center,
-                              style: textTheme.titleMedium?.copyWith(
-                                fontWeight: FontWeight.bold,
-                                color: colorScheme.onPrimary,
+                      ],
+                    ),
+                    child: Material(
+                      color: Colors.transparent,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => OnboardingPage(
+                                onFinished: () {
+                                  Navigator.of(context).pop();
+                                },
                               ),
                             ),
+                          );
+                        },
+                        borderRadius: BorderRadius.circular(24),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 24,
+                            horizontal: 24,
                           ),
-                        ],
+                          child: Row(
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.all(12),
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.2),
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                child: Icon(
+                                  Icons.slideshow_rounded,
+                                  size: 32,
+                                  color: colorScheme.onPrimary,
+                                ),
+                              ),
+                              const SizedBox(width: 20),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Rivedi l'onboarding",
+                                      style: textTheme.titleLarge?.copyWith(
+                                        fontWeight: FontWeight.bold,
+                                        color: colorScheme.onPrimary,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      "Scopri di nuovo tutte le funzionalità",
+                                      style: textTheme.bodyMedium?.copyWith(
+                                        color: colorScheme.onPrimary
+                                            .withOpacity(0.9),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Icon(
+                                Icons.arrow_forward_rounded,
+                                color: colorScheme.onPrimary,
+                                size: 28,
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                   ),
                 ),
 
                 const SizedBox(height: 24),
+
                 Center(
                   child: Text(
                     '© 2026 PhysicsEase. Tutti i diritti riservati.',
-                    style: textTheme.bodySmall?.copyWith(color: colorScheme.onSurfaceVariant),
+                    style: textTheme.bodySmall?.copyWith(
+                      color: colorScheme.onSurfaceVariant,
+                    ),
                   ),
                 ),
+
+                const SizedBox(height: 16),
               ],
             ),
           ),
@@ -146,55 +239,88 @@ class HelpPage extends StatelessWidget {
             ),
           ),
         ],
-      )
+      ),
     );
   }
 
-  Widget _buildInfoCard(
-      BuildContext context,
-      Color cardBgColor,
-      Color iconColor,
-      IconData icon,
-      String title,
-      String description,
-      ) {
+  Widget _buildTip(
+    BuildContext context,
+    IconData icon,
+    String text,
+    ColorScheme colorScheme,
+  ) {
     final textTheme = Theme.of(context).textTheme;
-    final textColor = Theme.of(context).colorScheme.onSurface;
-    final subtitleColor = Theme.of(context).colorScheme.onSurfaceVariant;
 
-    return Card(
-      margin: const EdgeInsets.only(bottom: 12),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      elevation: 4,
-      color: cardBgColor,
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Icon(icon, size: 30, color: iconColor),
-            const SizedBox(width: 16),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    title,
-                    style: textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: textColor,
-                    ),
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    description,
-                    style: textTheme.bodyMedium?.copyWith(color: subtitleColor),
-                    textAlign: TextAlign.justify,
-                  ),
-                ],
-              ),
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Icon(
+          icon,
+          size: 20,
+          color: colorScheme.primary,
+        ),
+        const SizedBox(width: 12),
+        Expanded(
+          child: Text(
+            text,
+            style: textTheme.bodyMedium?.copyWith(
+              color: colorScheme.onSurfaceVariant,
             ),
-          ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildInfoCard({
+    required BuildContext context,
+    required IconData icon,
+    required String title,
+    required String description,
+    required ColorScheme colorScheme,
+    VoidCallback? onTap,
+  }) {
+    return Card(
+      margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      elevation: 4,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(16),
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(icon, size: 40, color: colorScheme.primary),
+              const SizedBox(width: 20),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: colorScheme.onSurface,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      description,
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: colorScheme.onSurfaceVariant,
+                        height: 1.4,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Icon(Icons.chevron_right, color: colorScheme.onSurfaceVariant),
+            ],
+          ),
         ),
       ),
     );
