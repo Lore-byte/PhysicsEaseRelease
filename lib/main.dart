@@ -33,6 +33,8 @@ import 'package:physics_ease_release/pages/licence_page.dart';
 import 'package:physics_ease_release/pages/onboarding_page.dart';
 import 'package:physics_ease_release/theme/app_theme.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
+import 'package:physics_ease_release/widgets/drawer_card.dart';
+import 'package:physics_ease_release/widgets/floating_nav_bar.dart';
 
 // Importing for controlling system features (like exiting the app)
 import 'package:flutter/services.dart';
@@ -134,12 +136,12 @@ class _MyAppState extends State<MyApp> {
     );
   }
 
-  static const List<_BottomNavItemData> _navItems = [
-    _BottomNavItemData(icon: Icons.home, label: 'Home'),
-    _BottomNavItemData(icon: Icons.star, label: 'Preferiti'),
-    _BottomNavItemData(icon: Icons.calculate, label: 'Calcolatrice'),
-    _BottomNavItemData(icon: Icons.storage, label: 'Dati'),
-    _BottomNavItemData(icon: Icons.build, label: 'Strumenti'),
+  static const List<NavBarItem> _navItems = [
+    NavBarItem(icon: Icons.home, label: 'Home'),
+    NavBarItem(icon: Icons.star, label: 'Preferiti'),
+    NavBarItem(icon: Icons.calculate, label: 'Calcolatrice'),
+    NavBarItem(icon: Icons.storage, label: 'Dati'),
+    NavBarItem(icon: Icons.build, label: 'Strumenti'),
   ];
 
   @override
@@ -461,140 +463,7 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
-  // Builds a card-style drawer item
-  Widget _buildDrawerCard({
-    required BuildContext context,
-    required IconData icon,
-    required String title,
-    required ColorScheme colorScheme,
-    VoidCallback? onTap,
-    Widget? trailing,
-  }) {
-    return Card(
-      margin: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(28)),
-      elevation: 4,
-      color: colorScheme.surfaceContainerHighest,
-      child: InkWell(
-        borderRadius: BorderRadius.circular(28),
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
-          child: Row(
-            children: [
-              Icon(icon, size: 28, color: colorScheme.primary),
-              const SizedBox(width: 16),
-              Expanded(
-                child: Text(
-                  title,
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                    color: colorScheme.onSurface,
-                  ),
-                ),
-              ),
-              if (trailing != null)
-                trailing
-              else if (onTap != null)
-                Icon(
-                  Icons.chevron_right,
-                  color: colorScheme.onSurfaceVariant,
-                  size: 20,
-                ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
 
-  // Builds the floating bottom navigation bar
-  Widget _buildFloatingNavBar(ColorScheme colorScheme) {
-    final shadowColor = AppTheme.shadowForTheme(_themeMode, alpha: 0.8);
-
-    return Container(
-      decoration: BoxDecoration(
-        color: colorScheme.surfaceContainerHighest,
-        borderRadius: BorderRadius.circular(32),
-        boxShadow: [
-          BoxShadow(
-            color: shadowColor,
-            blurRadius: 35,
-            offset: const Offset(0, 50),
-            spreadRadius: 40,
-          ),
-        ],
-      ),
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-      child: Row(
-        children: List.generate(_navItems.length, (index) {
-          final navItem = _navItems[index];
-          final bool isSelected = _selectedIndex == index;
-          final Color foregroundColor = isSelected
-              ? colorScheme.onPrimary
-              : colorScheme.onSurfaceVariant;
-          final int flex = isSelected ? 11 : 4;
-
-          return Flexible(
-            flex: flex,
-            child: AnimatedContainer(
-              duration: const Duration(milliseconds: 220),
-              curve: Curves.easeOutCubic,
-              margin: EdgeInsets.only(right: 4, left: 4),
-              decoration: BoxDecoration(
-                color: isSelected ? colorScheme.primary : AppTheme.transparent,
-                borderRadius: BorderRadius.circular(22),
-              ),
-              child: Material(
-                color: AppTheme.transparent,
-                borderRadius: BorderRadius.circular(22),
-                child: InkWell(
-                  borderRadius: BorderRadius.circular(22),
-                  splashColor: AppTheme.transparent,
-                  highlightColor: AppTheme.transparent,
-                  focusColor: AppTheme.transparent,
-                  hoverColor: AppTheme.transparent,
-                  onTap: () => _onItemTapped(index),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 0,
-                      vertical: 10,
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(navItem.icon, size: 24, color: foregroundColor),
-                        AnimatedSize(
-                          duration: const Duration(milliseconds: 220),
-                          curve: Curves.easeOutCubic,
-                          child: isSelected
-                              ? Padding(
-                                  padding: const EdgeInsets.only(left: 8),
-                                  child: Text(
-                                    navItem.label,
-                                    maxLines: 1,
-                                    overflow: TextOverflow.visible,
-                                    style: TextStyle(
-                                      color: foregroundColor,
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                )
-                              : const SizedBox.shrink(),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          );
-        }),
-      ),
-    );
-  }
 
   // Builds the entire app UI
   @override
@@ -778,11 +647,9 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
                 const SizedBox(height: 8),
-                _buildDrawerCard(
-                  context: builderContext,
+                DrawerCard(
                   icon: Icons.help_outline,
                   title: 'Aiuto',
-                  colorScheme: currentColorScheme,
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
@@ -794,13 +661,11 @@ class _MyAppState extends State<MyApp> {
                     );
                   },
                 ),
-
-                ListTile(
-                  leading: Icon(
-                    Icons.favorite,
-                    color: currentColorScheme.primary,
-                  ),
-                  title: const Text('Dona ora'),
+                _buildDrawerCard(
+                  context: builderContext,
+                  icon: Icons.favorite_outline,
+                  title: 'Dona ora',
+                  colorScheme: currentColorScheme,
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
@@ -812,13 +677,11 @@ class _MyAppState extends State<MyApp> {
                     );
                   },
                 ),
-                // Collaborate page link
-                ListTile(
-                  leading: Icon(
-                    Icons.handshake,
-                    color: currentColorScheme.primary,
-                  ),
-                  title: const Text('Collabora'),
+                _buildDrawerCard(
+                  context: builderContext,
+                  icon: Icons.handshake_outlined,
+                  title: 'Collabora',
+                  colorScheme: currentColorScheme,
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
@@ -847,11 +710,9 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
                 const SizedBox(height: 8),
-                _buildDrawerCard(
-                  context: builderContext,
+                DrawerCard(
                   icon: Icons.info_outline,
                   title: 'Info',
-                  colorScheme: currentColorScheme,
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
@@ -863,11 +724,9 @@ class _MyAppState extends State<MyApp> {
                     );
                   },
                 ),
-                _buildDrawerCard(
-                  context: builderContext,
+                DrawerCard(
                   icon: Icons.policy_outlined,
                   title: 'Privacy Policy',
-                  colorScheme: currentColorScheme,
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
@@ -879,11 +738,9 @@ class _MyAppState extends State<MyApp> {
                     );
                   },
                 ),
-                _buildDrawerCard(
-                  context: builderContext,
+                DrawerCard(
                   icon: Icons.copyright_outlined,
                   title: 'Licenza',
-                  colorScheme: currentColorScheme,
                   onTap: () {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
@@ -951,7 +808,12 @@ class _MyAppState extends State<MyApp> {
                   bottom: MediaQuery.of(context).viewPadding.bottom + 12,
                   left: 16,
                   right: 16,
-                  child: _buildFloatingNavBar(currentColorScheme),
+                  child: FloatingNavBar(
+                    selectedIndex: _selectedIndex,
+                    onItemTapped: _onItemTapped,
+                    themeMode: _themeMode,
+                    items: _navItems,
+                  ),
                 ),
 
                 // Floating top AppBar
@@ -978,11 +840,4 @@ class _MyAppState extends State<MyApp> {
       ),
     );
   }
-}
-
-class _BottomNavItemData {
-  final IconData icon;
-  final String label;
-
-  const _BottomNavItemData({required this.icon, required this.label});
 }
