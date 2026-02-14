@@ -9,104 +9,196 @@ class DonationPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final currentColorScheme = Theme.of(context).colorScheme;
+    final colorScheme = Theme.of(context).colorScheme;
+    final textTheme = Theme.of(context).textTheme;
 
     final Uri url = Uri.parse('https://github.com/sponsors/Lore-byte');
 
 
     return Scaffold(
-        appBar: null,
-        body: Stack(
-          children: [
-            SingleChildScrollView(
-              padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom + 16, left: 16.0, right: 16.0, top: MediaQuery.of(context).viewPadding.top + 60),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  const SizedBox(height: 20),
-
-                  Icon(
-                    Icons.volunteer_activism,
-                    size: 80,
-                    color: currentColorScheme.primary,
-                  ),
-                  const SizedBox(height: 24),
-
-                  Text(
-                    'Il tuo supporto, anche piccolo, fa la differenza',
-                    style: TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
-                      color: currentColorScheme.onSurface,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 12),
-
-                  Text(
-                    'PhysicsEase è e rimarrà sempre gratuita per tutti gli utenti. Il tuo contributo ci aiuta a continuare a sviluppare nuove funzionalità e a mantenere l\'app aggiornata senza pubblicità invasive.',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: currentColorScheme.onSurfaceVariant,
-                      height: 1.4,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 40),
-
-                  Center(
-                    child: ConstrainedBox(
-                      constraints: const BoxConstraints(
-                        maxWidth: 320, // larghezza massima del bottone
+      appBar: null,
+      body: Stack(
+        children: [
+          SingleChildScrollView(
+            padding: EdgeInsets.only(
+              bottom: MediaQuery.of(context).viewPadding.bottom + 16,
+              left: 16.0,
+              right: 16.0,
+              top: MediaQuery.of(context).viewPadding.top + 70,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(height: 16),
+                Center(
+                  child: Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          color: colorScheme.primary.withValues(alpha: 0.1),
+                          shape: BoxShape.circle,
+                        ),
+                        child: Icon(
+                          Icons.volunteer_activism_rounded,
+                          size: 80,
+                          color: colorScheme.primary,
+                        ),
                       ),
-                      child: ElevatedButton.icon(
-                        onPressed: () async {
-                          if (await canLaunchUrl(url)) {
-                            await launchUrl(url, mode: LaunchMode.externalApplication);
-                          } else {
-                            if (!context.mounted) return;
-
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(content: Text('Impossibile aprire il link.')),
-                            );
-                          }
-                        },
-                        icon: const Icon(Icons.open_in_new, size: 32),
-                        label: const Text('Dona ora!'),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: currentColorScheme.primary,
-                          foregroundColor: currentColorScheme.onPrimary,
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 32,
-                            vertical: 22, // più alto
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(40), // più stondato
-                          ),
-                          textStyle: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          elevation: 6, // ombra per risalto
+                      const SizedBox(height: 24),
+                      Text(
+                        'Il tuo supporto fa la differenza',
+                        style: textTheme.headlineMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: colorScheme.onSurface,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 12),
+                      Text(
+                        'PhysicsEase è gratuita per tutti. Il tuo contributo ci aiuta a creare nuove funzionalità e a mantenere l\'app aggiornata senza pubblicità invasive.',
+                        style: textTheme.bodyLarge?.copyWith(
+                          color: colorScheme.onSurfaceVariant,
+                          height: 1.5,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 40),
+                Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        colorScheme.primary,
+                        colorScheme.primary.withValues(alpha: 0.8),
+                      ],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    borderRadius: BorderRadius.circular(24),
+                    boxShadow: [
+                      BoxShadow(
+                        color: colorScheme.primary.withValues(alpha: 0.4),
+                        blurRadius: 16,
+                        offset: const Offset(0, 6),
+                      ),
+                    ],
+                  ),
+                  child: Material(
+                    color: Colors.transparent,
+                    child: InkWell(
+                      onTap: () async {
+                        if (await canLaunchUrl(url)) {
+                          await launchUrl(url, mode: LaunchMode.externalApplication);
+                        } else {
+                          if (!context.mounted) return;
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: const Text('Impossibile aprire il link.'),
+                              backgroundColor: colorScheme.error,
+                            ),
+                          );
+                        }
+                      },
+                      borderRadius: BorderRadius.circular(24),
+                      child: Padding(
+                        padding: const EdgeInsets.all(24),
+                        child: Row(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.all(14),
+                              decoration: BoxDecoration(
+                                color: Colors.white.withValues(alpha: 0.2),
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              child: Icon(
+                                Icons.volunteer_activism_rounded,
+                                size: 36,
+                                color: colorScheme.onPrimary,
+                              ),
+                            ),
+                            const SizedBox(width: 20),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Sostieni il progetto',
+                                    style: textTheme.titleLarge?.copyWith(
+                                      fontWeight: FontWeight.bold,
+                                      color: colorScheme.onPrimary,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 4),
+                                  Text(
+                                    'Vai a GitHub Sponsors',
+                                    style: textTheme.bodyMedium?.copyWith(
+                                      color: colorScheme.onPrimary.withValues(alpha: 0.9),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Icon(
+                              Icons.open_in_new_rounded,
+                              color: colorScheme.onPrimary,
+                              size: 28,
+                            ),
+                          ],
                         ),
                       ),
                     ),
                   ),
-                ],
-              ),
+                ),
+                const SizedBox(height: 32),
+                Container(
+                  padding: const EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    color: colorScheme.primaryContainer.withValues(alpha: 0.5),
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(
+                      color: colorScheme.primary.withValues(alpha: 0.3),
+                      width: 1,
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.favorite_rounded,
+                        color: colorScheme.primary,
+                        size: 32,
+                      ),
+                      const SizedBox(width: 16),
+                      Expanded(
+                        child: Text(
+                          'Grazie per il tuo supporto. Ogni contributo ci permette di migliorare PhysicsEase e mantenerla gratuita.',
+                          style: textTheme.bodyMedium?.copyWith(
+                            color: colorScheme.onSurface,
+                            height: 1.5,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 24),
+              ],
             ),
-            Positioned(
-              top: MediaQuery.of(context).viewPadding.top,
-              left: 16,
-              right: 16,
-              child: FloatingTopBar(
-                title: 'Donazioni',
-                leading: FloatingTopBarLeading.back,
-                onBackPressed: () => Navigator.of(context).maybePop(),
-              ),
+          ),
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: 'Donazioni',
+              leading: FloatingTopBarLeading.back,
+              onBackPressed: () => Navigator.of(context).maybePop(),
             ),
-          ],
-        )
+          ),
+        ],
+      ),
     );
   }
 }
