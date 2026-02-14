@@ -2,8 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/pages/onboarding_page.dart';
 import 'package:physics_ease_release/pages/quiz_page.dart';
-import 'package:physics_ease_release/pages/calculator_page.dart';
-import 'package:physics_ease_release/pages/data_page.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 class HelpPage extends StatelessWidget {
@@ -129,7 +127,7 @@ class HelpPage extends StatelessWidget {
                       gradient: LinearGradient(
                         colors: [
                           colorScheme.primary,
-                          colorScheme.primary.withOpacity(0.8),
+                          colorScheme.primary.withValues(alpha: 0.8),
                         ],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
@@ -137,7 +135,7 @@ class HelpPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(24),
                       boxShadow: [
                         BoxShadow(
-                          color: colorScheme.primary.withOpacity(0.4),
+                          color: colorScheme.primary.withValues(alpha: 0.4),
                           blurRadius: 16,
                           offset: const Offset(0, 6),
                         ),
@@ -168,7 +166,7 @@ class HelpPage extends StatelessWidget {
                               Container(
                                 padding: const EdgeInsets.all(12),
                                 decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.2),
+                                  color: Colors.white.withValues(alpha: 0.2),
                                   borderRadius: BorderRadius.circular(16),
                                 ),
                                 child: Icon(
@@ -194,7 +192,7 @@ class HelpPage extends StatelessWidget {
                                       "Scopri di nuovo tutte le funzionalità",
                                       style: textTheme.bodyMedium?.copyWith(
                                         color: colorScheme.onPrimary
-                                            .withOpacity(0.9),
+                                            .withValues(alpha: 0.9),
                                       ),
                                     ),
                                   ],
@@ -240,35 +238,6 @@ class HelpPage extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-
-  Widget _buildTip(
-    BuildContext context,
-    IconData icon,
-    String text,
-    ColorScheme colorScheme,
-  ) {
-    final textTheme = Theme.of(context).textTheme;
-
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Icon(
-          icon,
-          size: 20,
-          color: colorScheme.primary,
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: Text(
-            text,
-            style: textTheme.bodyMedium?.copyWith(
-              color: colorScheme.onSurfaceVariant,
-            ),
-          ),
-        ),
-      ],
     );
   }
 

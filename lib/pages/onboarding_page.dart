@@ -13,6 +13,48 @@ class OnboardingPage extends StatelessWidget {
 class _OnboardingPageState extends State<OnboardingPage> {
   int _currentIndex = 0;
 
+  Widget _buildAnimatedIcon({
+    required IconData icon,
+    required Color color,
+    required List<Color> gradientColors,
+  }) {
+    return TweenAnimationBuilder<double>(
+      tween: Tween(begin: 0.0, end: 1.0),
+      duration: const Duration(milliseconds: 600),
+      curve: Curves.elasticOut,
+      builder: (context, value, child) {
+        return Transform.scale(
+          scale: value,
+          child: Container(
+            width: 180,
+            height: 180,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: gradientColors,
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              shape: BoxShape.circle,
+              boxShadow: [
+                BoxShadow(
+                  color: color.withOpacity(0.4),
+                  blurRadius: 30,
+                  spreadRadius: 5,
+                  offset: const Offset(0, 10),
+                ),
+              ],
+            ),
+            child: Icon(
+              icon,
+              size: 90,
+              color: Colors.white,
+            ),
+          ),
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final primaryColor = Theme.of(context).colorScheme.primary;
@@ -30,13 +72,21 @@ class _OnboardingPageState extends State<OnboardingPage> {
           color: primaryColor,
           gradientColors: [
             primaryColor,
-            primaryColor.withOpacity(0.7),
+            primaryColor.withValues(alpha: 0.7),
           ],
         ),
         decoration: PageDecoration(
-          bodyTextStyle: const TextStyle(fontSize: 18),
-          titleTextStyle:
-          const TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+          bodyTextStyle: TextStyle(
+            fontSize: 18,
+            height: 1.5,
+            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+          ),
+          titleTextStyle: TextStyle(
+            fontSize: 28,
+            fontWeight: FontWeight.w900,
+            color: primaryColor,
+            letterSpacing: 0.5,
+          ),
           pageColor: Theme.of(context).scaffoldBackgroundColor,
           imagePadding: const EdgeInsets.only(top: 50),
         ),
@@ -54,9 +104,17 @@ class _OnboardingPageState extends State<OnboardingPage> {
           ],
         ),
         decoration: PageDecoration(
-          bodyTextStyle: const TextStyle(fontSize: 18),
-          titleTextStyle:
-          const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          bodyTextStyle: TextStyle(
+            fontSize: 18,
+            height: 1.5,
+            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+          ),
+          titleTextStyle: const TextStyle(
+            fontSize: 26,
+            fontWeight: FontWeight.w900,
+            color: Color(0xFFFF6B6B),
+            letterSpacing: 0.5,
+          ),
           pageColor: Theme.of(context).scaffoldBackgroundColor,
           imagePadding: const EdgeInsets.only(top: 50),
         ),
@@ -74,9 +132,17 @@ class _OnboardingPageState extends State<OnboardingPage> {
           ],
         ),
         decoration: PageDecoration(
-          bodyTextStyle: const TextStyle(fontSize: 18),
-          titleTextStyle:
-          const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          bodyTextStyle: TextStyle(
+            fontSize: 18,
+            height: 1.5,
+            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+          ),
+          titleTextStyle: const TextStyle(
+            fontSize: 26,
+            fontWeight: FontWeight.w900,
+            color: Color(0xFF4ECDC4),
+            letterSpacing: 0.5,
+          ),
           pageColor: Theme.of(context).scaffoldBackgroundColor,
           imagePadding: const EdgeInsets.only(top: 50),
         ),
@@ -94,9 +160,17 @@ class _OnboardingPageState extends State<OnboardingPage> {
           ],
         ),
         decoration: PageDecoration(
-          bodyTextStyle: const TextStyle(fontSize: 18),
-          titleTextStyle:
-          const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          bodyTextStyle: TextStyle(
+            fontSize: 18,
+            height: 1.5,
+            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+          ),
+          titleTextStyle: const TextStyle(
+            fontSize: 26,
+            fontWeight: FontWeight.w900,
+            color: Color(0xFF9B59B6),
+            letterSpacing: 0.5,
+          ),
           pageColor: Theme.of(context).scaffoldBackgroundColor,
           imagePadding: const EdgeInsets.only(top: 50),
         ),
@@ -114,9 +188,17 @@ class _OnboardingPageState extends State<OnboardingPage> {
           ],
         ),
         decoration: PageDecoration(
-          bodyTextStyle: const TextStyle(fontSize: 18),
-          titleTextStyle:
-          const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          bodyTextStyle: TextStyle(
+            fontSize: 18,
+            height: 1.5,
+            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+          ),
+          titleTextStyle: const TextStyle(
+            fontSize: 26,
+            fontWeight: FontWeight.w900,
+            color: Color(0xFFFFA502),
+            letterSpacing: 0.5,
+          ),
           pageColor: Theme.of(context).scaffoldBackgroundColor,
           imagePadding: const EdgeInsets.only(top: 50),
         ),
@@ -134,9 +216,17 @@ class _OnboardingPageState extends State<OnboardingPage> {
           ],
         ),
         decoration: PageDecoration(
-          bodyTextStyle: const TextStyle(fontSize: 18),
-          titleTextStyle:
-          const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          bodyTextStyle: TextStyle(
+            fontSize: 18,
+            height: 1.5,
+            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+          ),
+          titleTextStyle: const TextStyle(
+            fontSize: 26,
+            fontWeight: FontWeight.w900,
+            color: Color(0xFF3498DB),
+            letterSpacing: 0.5,
+          ),
           pageColor: Theme.of(context).scaffoldBackgroundColor,
           imagePadding: const EdgeInsets.only(top: 60, bottom: 30),
           bodyPadding: const EdgeInsets.symmetric(horizontal: 24),
@@ -159,7 +249,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           bodyTextStyle: TextStyle(
             fontSize: 18,
             height: 1.5,
-            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+            color: isDark ? Colors.white.withValues(alpha: 0.9) : Colors.black87,
           ),
           titleTextStyle: const TextStyle(
             fontSize: 26,
@@ -189,7 +279,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           bodyTextStyle: TextStyle(
             fontSize: 18,
             height: 1.5,
-            color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+            color: isDark ? Colors.white.withValues(alpha: 0.9) : Colors.black87,
           ),
           titleTextStyle: const TextStyle(
             fontSize: 26,
@@ -226,7 +316,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
         height: arrowButtonSize,
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: primaryColor.withOpacity(0.1),
+          color: primaryColor.withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Icon(Icons.arrow_back_rounded, color: primaryColor, size: 28),
@@ -237,12 +327,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
         alignment: Alignment.center,
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [primaryColor, primaryColor.withOpacity(0.8)],
+            colors: [primaryColor, primaryColor.withValues(alpha: 0.8)],
           ),
           borderRadius: BorderRadius.circular(12),
           boxShadow: [
             BoxShadow(
-              color: primaryColor.withOpacity(0.3),
+              color: primaryColor.withValues(alpha: 0.3),
               blurRadius: 8,
               offset: const Offset(0, 4),
             ),
@@ -277,12 +367,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
               decoration: BoxDecoration(
                 color: isLastPage
                     ? primaryColor
-                    : primaryColor.withOpacity(0.1),
+                    : primaryColor.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: isLastPage
                     ? [
                         BoxShadow(
-                          color: primaryColor.withOpacity(0.3),
+                          color: primaryColor.withValues(alpha: 0.3),
                           blurRadius: 12,
                           offset: const Offset(0, 4),
                         ),
@@ -313,7 +403,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       // Dots
       dotsDecorator: DotsDecorator(
         size: const Size(12.0, 12.0),
-        color: primaryColor.withOpacity(0.2),
+        color: primaryColor.withValues(alpha: 0.2),
         activeSize: const Size(28.0, 12.0),
         activeColor: primaryColor,
         activeShape: RoundedRectangleBorder(
