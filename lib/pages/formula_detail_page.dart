@@ -711,7 +711,7 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
             maxLines: null,
             minLines: 3,
             decoration: InputDecoration(
-              hintText: 'Scrivi qui la tua nota...',
+              hintText: r'Scrivi qui la tua nota... Usa $...$ per il LaTeX.',
               hintStyle: textTheme.bodyMedium?.copyWith(
                 color: colorScheme.onSurfaceVariant.withValues(alpha: 0.6),
               ),
@@ -760,11 +760,17 @@ class _FormulaDetailPageState extends State<FormulaDetailPage> {
                       ),
                       const SizedBox(height: 8),
                     ],
-                    Text(
-                      content,
-                      style: textTheme.bodyMedium?.copyWith(
-                        color: colorScheme.onSurfaceVariant,
-                        height: 1.5,
+                    RichText(
+                      text: TextSpan(
+                        children: LatexText.parseMixedContent(
+                          context,
+                          content,
+                          textTheme.bodyMedium?.copyWith(
+                            color: colorScheme.onSurfaceVariant,
+                            height: 1.5,
+                          ),
+                          colorScheme.onSurfaceVariant,
+                        ),
                       ),
                     ),
                   ],
