@@ -665,57 +665,46 @@ class _MyAppState extends State<MyApp> {
                                 setState(() {
                                   _selectedIndex = 0;
                                   _searchBarVisible.value = true;
+                                  _tabAppBarVisibility[0] = true;
+                                  _showGlobalAppBar = true;
                                 });
                               }
                             } else if (section == 'favorites') {
-                              _setGlobalAppBarVisibility(false);
-                              await Navigator.push(
-                                ctx,
-                                MaterialPageRoute(
-                                  builder: (context) => FavoritesPage(
-                                    allFormulas: _allFormulas,
-                                    favoriteIds: _favoriteIds,
-                                    onToggleFavorite: _toggleFavorite,
-                                    themeMode: _themeMode,
-                                    setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
-                                    formulaNotes: _formulaNotes,
-                                    onSaveNotes: _saveNotes,
-                                  ),
-                                ),
-                              );
-                              _setGlobalAppBarVisibility(true);
+                              Navigator.of(ctx).pop();
+                              if (mounted) {
+                                setState(() {
+                                  _selectedIndex = 1;
+                                  _tabAppBarVisibility[1] = true;
+                                  _showGlobalAppBar = true;
+                                });
+                              }
                             } else if (section == 'calculator') {
-                              _setGlobalAppBarVisibility(false);
-                              await Navigator.push(
-                                ctx,
-                                MaterialPageRoute(
-                                  builder: (context) => const CalculatorPage(),
-                                ),
-                              );
-                              _setGlobalAppBarVisibility(true);
+                              Navigator.of(ctx).pop();
+                              if (mounted) {
+                                setState(() {
+                                  _selectedIndex = 2;
+                                  _tabAppBarVisibility[2] = true;
+                                  _showGlobalAppBar = true;
+                                });
+                              }
                             } else if (section == 'data') {
-                              _setGlobalAppBarVisibility(false);
-                              await Navigator.push(
-                                ctx,
-                                MaterialPageRoute(
-                                  builder: (context) => DataPage(
-                                    setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
-                                  ),
-                                ),
-                              );
-                              _setGlobalAppBarVisibility(true);
+                              Navigator.of(ctx).pop();
+                              if (mounted) {
+                                setState(() {
+                                  _selectedIndex = 3;
+                                  _tabAppBarVisibility[3] = true;
+                                  _showGlobalAppBar = true;
+                                });
+                              }
                             } else if (section == 'tools') {
-                              _setGlobalAppBarVisibility(false);
-                              await Navigator.push(
-                                ctx,
-                                MaterialPageRoute(
-                                  builder: (context) => ToolsPage(
-                                    onAddFormula: _addFormulaAndSave,
-                                    setGlobalAppBarVisibility: _setGlobalAppBarVisibility,
-                                  ),
-                                ),
-                              );
-                              _setGlobalAppBarVisibility(true);
+                              Navigator.of(ctx).pop();
+                              if (mounted) {
+                                setState(() {
+                                  _selectedIndex = 4;
+                                  _tabAppBarVisibility[4] = true;
+                                  _showGlobalAppBar = true;
+                                });
+                              }
                             }
                           },
                         ),
