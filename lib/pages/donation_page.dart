@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
-class LicencePage extends StatelessWidget {
+class DonationPage extends StatelessWidget {
   final ThemeMode themeMode;
 
-  const LicencePage({super.key, required this.themeMode});
+  const DonationPage({super.key, required this.themeMode});
 
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
 
-    final Uri url = Uri.parse(
-        'https://sites.google.com/view/physicsease-license/home');
+    final Uri url = Uri.parse('https://github.com/sponsors/Lore-byte');
+
 
     return Scaffold(
       appBar: null,
@@ -40,14 +40,14 @@ class LicencePage extends StatelessWidget {
                           shape: BoxShape.circle,
                         ),
                         child: Icon(
-                          Icons.balance_rounded,
+                          Icons.volunteer_activism_rounded,
                           size: 80,
                           color: colorScheme.primary,
                         ),
                       ),
                       const SizedBox(height: 24),
                       Text(
-                        'Per un uso sicuro e consapevole',
+                        'Il tuo supporto fa la differenza',
                         style: textTheme.headlineMedium?.copyWith(
                           fontWeight: FontWeight.bold,
                           color: colorScheme.onSurface,
@@ -56,7 +56,7 @@ class LicencePage extends StatelessWidget {
                       ),
                       const SizedBox(height: 12),
                       Text(
-                        'Puoi trovare nella licenza completa tutte le informazioni sui termini e le condizioni d\'uso dell\'app.',
+                        'PhysicsEase è gratuita per tutti. Il tuo contributo ci aiuta a creare nuove funzionalità e a mantenere l\'app aggiornata senza pubblicità invasive.',
                         style: textTheme.bodyLarge?.copyWith(
                           color: colorScheme.onSurfaceVariant,
                           height: 1.5,
@@ -114,7 +114,7 @@ class LicencePage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(16),
                               ),
                               child: Icon(
-                                Icons.open_in_new_rounded,
+                                Icons.volunteer_activism_rounded,
                                 size: 36,
                                 color: colorScheme.onPrimary,
                               ),
@@ -125,7 +125,7 @@ class LicencePage extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'Apri la Licenza',
+                                    'Sostieni il progetto',
                                     style: textTheme.titleLarge?.copyWith(
                                       fontWeight: FontWeight.bold,
                                       color: colorScheme.onPrimary,
@@ -133,7 +133,7 @@ class LicencePage extends StatelessWidget {
                                   ),
                                   const SizedBox(height: 4),
                                   Text(
-                                    'Consulta i termini completi',
+                                    'Vai a GitHub Sponsors',
                                     style: textTheme.bodyMedium?.copyWith(
                                       color: colorScheme.onPrimary.withValues(alpha: 0.9),
                                     ),
@@ -142,7 +142,7 @@ class LicencePage extends StatelessWidget {
                               ),
                             ),
                             Icon(
-                              Icons.arrow_forward_rounded,
+                              Icons.open_in_new_rounded,
                               color: colorScheme.onPrimary,
                               size: 28,
                             ),
@@ -166,14 +166,14 @@ class LicencePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Icon(
-                        Icons.gavel_rounded,
+                        Icons.favorite_rounded,
                         color: colorScheme.primary,
                         size: 32,
                       ),
                       const SizedBox(width: 16),
                       Expanded(
                         child: Text(
-                          'Leggi la licenza per conoscere i diritti e i limiti d\'uso dell\'app e dei contenuti.',
+                          'Grazie per il tuo supporto. Ogni contributo ci permette di migliorare PhysicsEase e mantenerla gratuita.',
                           style: textTheme.bodyMedium?.copyWith(
                             color: colorScheme.onSurface,
                             height: 1.5,
@@ -192,7 +192,7 @@ class LicencePage extends StatelessWidget {
             left: 16,
             right: 16,
             child: FloatingTopBar(
-              title: 'Licenza',
+              title: 'Donazioni',
               leading: FloatingTopBarLeading.back,
               onBackPressed: () => Navigator.of(context).maybePop(),
             ),
