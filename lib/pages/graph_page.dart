@@ -33,55 +33,21 @@ class _GraphPageState extends State<GraphPage> {
   ContextModel cm = ContextModel();
 
   final List<String> _basicKeypadKeys = [
-    '7',
-    '8',
-    '9',
-    '/',
-    '4',
-    '5',
-    '6',
-    '*',
-    '1',
-    '2',
-    '3',
-    '-',
-    '0',
-    '.',
-    '^',
-    '+',
-    '(',
-    ')',
-    'x',
-    'C',
-    '⌫',
-    'Sci',
-    'Plot',
+    '7','8','9','/',
+    '4','5','6','*',
+    '1','2','3','-',
+    '0','.','^','+',
+    '(',')','x','C',
+    'DL','Sci','',
   ];
 
   final List<String> _scientificKeypadKeys = [
-    'sin',
-    'cos',
-    'tan',
-    'log',
-    'ln',
-    'exp',
-    'sqrt',
-    'abs',
-    '(',
-    ')',
-    '^',
-    '/',
-    '*',
-    '-',
-    '+',
-    'π',
-    'e',
-    '!',
-    'x',
-    'C',
-    '⌫',
-    'Basic',
-    'Plot',
+    'sin','cos','tan','log',
+    'ln','exp','sqrt','abs',
+    '(',')','^','/',
+    '*','-','+','π',
+    'e','!','x','C',
+    'DL','Basic','',
   ];
 
   final List<Color> _predefinedColors = [
@@ -382,7 +348,7 @@ class _GraphPageState extends State<GraphPage> {
           newText = '';
           newSelection = TextSelection.collapsed(offset: 0);
           break;
-        case '⌫':
+        case 'DL':
           if (start != end) {
             newText = currentText.replaceRange(start, end, '');
             newSelection = TextSelection.collapsed(offset: start);
@@ -393,9 +359,6 @@ class _GraphPageState extends State<GraphPage> {
             return;
           }
           break;
-        case 'Plot':
-          _plotGraph();
-          return;
         case 'Sci':
           _showScientificKeys = true;
           break;
@@ -456,24 +419,141 @@ class _GraphPageState extends State<GraphPage> {
 
   Widget _buildKeypadButton(
     String key,
-    Color backgroundColor,
-    Color textColor,
+    ({
+      Color gradientStart,
+      Color gradientEnd,
+      Color textColor,
+      Color borderColor,
+      Color shadowColor,
+      double fontSize,
+    })
+    style,
   ) {
     return Padding(
-      padding: const EdgeInsets.all(3.0),
-      child: ElevatedButton(
-        onPressed: () => _onKeyPress(key),
-        style: ElevatedButton.styleFrom(
-          backgroundColor: backgroundColor,
-          foregroundColor: textColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+      padding: const EdgeInsets.all(5.0),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(999),
+          border: Border.all(color: style.borderColor, width: 1.1),
+          gradient: LinearGradient(
+            colors: [style.gradientStart, style.gradientEnd],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
           ),
-          elevation: 3,
-          textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          boxShadow: [
+            BoxShadow(
+              color: style.shadowColor.withValues(alpha: 0.22),
+              blurRadius: 18,
+              spreadRadius: 0.2,
+              offset: const Offset(0, 8),
+            ),
+          ],
         ),
-        child: FittedBox(fit: BoxFit.scaleDown, child: Text(key)),
+        child: ElevatedButton(
+          onPressed: () => _onKeyPress(key),
+          style: ButtonStyle(
+            backgroundColor: const WidgetStatePropertyAll(Colors.transparent),
+            foregroundColor: WidgetStatePropertyAll(style.textColor),
+            surfaceTintColor: const WidgetStatePropertyAll(Colors.transparent),
+            shadowColor: const WidgetStatePropertyAll(Colors.transparent),
+            elevation: const WidgetStatePropertyAll(0),
+            overlayColor: WidgetStateProperty.resolveWith((states) {
+              if (states.contains(WidgetState.pressed)) {
+                return style.textColor.withValues(alpha: 0.12);
+              }
+              if (states.contains(WidgetState.hovered)) {
+                return style.textColor.withValues(alpha: 0.07);
+              }
+              return null;
+            }),
+            shape: WidgetStatePropertyAll(
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(999)),
+            ),
+            padding: const WidgetStatePropertyAll(
+              EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+            ),
+            textStyle: WidgetStatePropertyAll(
+              TextStyle(
+                fontSize: style.fontSize,
+                fontWeight: FontWeight.w700,
+                letterSpacing: 0.2,
+              ),
+            ),
+          ),
+          child: key == 'DL'
+              ? Icon(Icons.backspace_outlined, size: style.fontSize + 2)
+              : FittedBox(fit: BoxFit.scaleDown, child: Text(key)),
+        ),
       ),
+    );
+  }
+
+  ({
+    Color gradientStart,
+    Color gradientEnd,
+    Color textColor,
+    Color borderColor,
+    Color shadowColor,
+    double fontSize,
+  })
+  _keypadButtonStyle(String key, ColorScheme colorScheme) {
+    var gradientStart = colorScheme.surfaceContainerHighest;
+    var gradientEnd = colorScheme.surfaceContainerHigh;
+    var textColor = colorScheme.onSurface;
+    var borderColor = colorScheme.outlineVariant.withValues(alpha: 0.55);
+    var shadowColor = colorScheme.onSurface;
+    var fontSize = 20.0;
+
+    if (key == 'C') {
+      gradientStart = colorScheme.error;
+      gradientEnd = colorScheme.error.withValues(alpha: 0.85);
+      textColor = colorScheme.onError;
+      borderColor = colorScheme.error.withValues(alpha: 0.28);
+      shadowColor = colorScheme.error;
+    } else if (key == 'DL') {
+      gradientStart = colorScheme.errorContainer;
+      gradientEnd = colorScheme.errorContainer.withValues(alpha: 0.9);
+      textColor = colorScheme.onErrorContainer;
+      borderColor = colorScheme.error.withValues(alpha: 0.26);
+      shadowColor = colorScheme.error;
+    } else if (['/', '*', '-', '+', '^', '(', ')'].contains(key) ||
+        (_showScientificKeys &&
+            [
+              'sin',
+              'cos',
+              'tan',
+              'log',
+              'ln',
+              'exp',
+              'sqrt',
+              'abs',
+              '!',
+              'π',
+              'e',
+            ].contains(key))) {
+      gradientStart = colorScheme.secondaryContainer;
+      gradientEnd = colorScheme.secondaryContainer.withValues(alpha: 0.9);
+      textColor = colorScheme.onSecondaryContainer;
+      borderColor = colorScheme.secondary.withValues(alpha: 0.22);
+      shadowColor = colorScheme.secondary;
+    }
+
+    if (key == 'Sci' || key == 'Basic') {
+      fontSize = 16.0;
+      gradientStart = colorScheme.primary;
+      gradientEnd = colorScheme.primary.withValues(alpha: 0.86);
+      textColor = colorScheme.onPrimary;
+      borderColor = colorScheme.primary.withValues(alpha: 0.24);
+      shadowColor = colorScheme.primary;
+    }
+
+    return (
+      gradientStart: gradientStart,
+      gradientEnd: gradientEnd,
+      textColor: textColor,
+      borderColor: borderColor,
+      shadowColor: shadowColor,
+      fontSize: fontSize,
     );
   }
 
@@ -496,68 +576,6 @@ class _GraphPageState extends State<GraphPage> {
         : _basicKeypadKeys;
     final screenWidth = MediaQuery.of(context).size.width;
     final previewMargin = _previewHorizontalMargin(screenWidth);
-
-    Color getButtonColor(String key) {
-      if (key == 'C' || key == '⌫') {
-        return colorScheme.error;
-      } else if (key == 'Plot') {
-        return colorScheme.primary;
-      } else if (key == 'Sci' || key == 'Basic') {
-        return colorScheme.tertiary;
-      } else if (key == 'x') {
-        return colorScheme.errorContainer;
-      } else if ([
-            'sin',
-            'cos',
-            'tan',
-            'log',
-            'ln',
-            'exp',
-            'sqrt',
-            'abs',
-            '!',
-            'π',
-            'e',
-          ].contains(key) &&
-          _showScientificKeys) {
-        return colorScheme.tertiaryContainer;
-      } else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
-        return colorScheme.secondary;
-      } else {
-        return colorScheme.primaryContainer;
-      }
-    }
-
-    Color getButtonTextColor(String key) {
-      if (key == 'C' || key == '⌫') {
-        return colorScheme.onError;
-      } else if (key == 'Plot') {
-        return colorScheme.onPrimary;
-      } else if (key == 'Sci' || key == 'Basic') {
-        return colorScheme.onTertiary;
-      } else if (key == 'x') {
-        return colorScheme.onErrorContainer;
-      } else if ([
-            'sin',
-            'cos',
-            'tan',
-            'log',
-            'ln',
-            'exp',
-            'sqrt',
-            'abs',
-            '!',
-            'π',
-            'e',
-          ].contains(key) &&
-          _showScientificKeys) {
-        return colorScheme.onTertiaryContainer;
-      } else if (['/', '*', '-', '+', '^', '(', ')'].contains(key)) {
-        return colorScheme.onSecondary;
-      } else {
-        return colorScheme.onPrimaryContainer;
-      }
-    }
 
     List<String> functionsToPlot = [];
     List<Color> colorsToPlot = [];
@@ -861,15 +879,15 @@ class _GraphPageState extends State<GraphPage> {
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
-                            ...row.map(
-                              (key) => Expanded(
-                                child: _buildKeypadButton(
-                                  key,
-                                  getButtonColor(key),
-                                  getButtonTextColor(key),
-                                ),
-                              ),
-                            ),
+                            ...row.map((key) {
+                              final style = _keypadButtonStyle(
+                                key,
+                                colorScheme,
+                              );
+                              return Expanded(
+                                child: _buildKeypadButton(key, style),
+                              );
+                            }),
                             if (row.length < 4)
                               ...List.generate(
                                 4 - row.length,

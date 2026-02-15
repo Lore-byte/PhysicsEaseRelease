@@ -30,11 +30,14 @@ class _CalculatorPageState extends State<CalculatorPage> {
     'cos',
     'tan',
     '√',
+    'x^√',
     'log',
     'ln',
     'π',
     'e',
     'e^x',
+    '10^x',
+    'x^y',
     '!',
   ];
   static const List<String> _primaryOperators = ['÷', '×', '-', '+'];
@@ -97,51 +100,95 @@ class _CalculatorPageState extends State<CalculatorPage> {
   }
 
   static const List<List<String>> _buttonsLayout = [
-    ['AC', 'DL', '%', '÷', 'Sci'],
-    ['7', '8', '9', '×', '('],
-    ['4', '5', '6', '-', ')'],
-    ['1', '2', '3', '+', '^'],
-    ['0', '.', '='],
+    ['AC', 'DL', '%', '÷'],
+    ['7', '8', '9', '×'],
+    ['4', '5', '6', '-'],
+    ['1', '2', '3', '+'],
+    ['Sci', '0', '.', '='],
   ];
 
   static const List<List<String>> _scientificButtonsLayout = [
-    ['AC', 'DL', 'RAD/DEG_TOGGLE', 'Sci'],
+    ['AC', 'DL', 'RAD/DEG_TOGGLE', '!'],
     ['sin', 'cos', 'tan', 'π'],
-    ['log', 'ln', '√', 'e'],
-    ['!', 'e^x', '(', ')'],
-    ['='],
+    ['log', 'ln', 'e', 'e^x'],
+    ['√', 'x^√', '10^x', 'x^y'],
+    ['Sci', '(', ')', '='],
   ];
 
   Widget _buildButton(
     String displayedText,
     String actionText,
-    Color buttonColor,
+    Color gradientStart,
+    Color gradientEnd,
     Color textColor, {
+    required Color borderColor,
+    required Color shadowColor,
     double fontSize = 24.0,
     int flex = 1,
   }) {
     return Expanded(
       flex: flex,
       child: Padding(
-        padding: const EdgeInsets.all(4.0),
-        child: ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            backgroundColor: buttonColor,
-            foregroundColor: textColor,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(16),
+        padding: const EdgeInsets.all(5.0),
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(999),
+            border: Border.all(color: borderColor, width: 1.1),
+            gradient: LinearGradient(
+              colors: [gradientStart, gradientEnd],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
             ),
-            elevation: 4,
-            padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 8),
-            textStyle: TextStyle(
-              fontSize: fontSize,
-              fontWeight: FontWeight.bold,
-            ),
+            boxShadow: [
+              BoxShadow(
+                color: shadowColor.withValues(alpha: 0.22),
+                blurRadius: 18,
+                spreadRadius: 0.2,
+                offset: const Offset(0, 8),
+              ),
+            ],
           ),
-          onPressed: actionText.isEmpty
-              ? null
-              : () => _onButtonPressed(actionText),
-          child: FittedBox(fit: BoxFit.scaleDown, child: Text(displayedText)),
+          child: ElevatedButton(
+            style: ButtonStyle(
+              backgroundColor: const WidgetStatePropertyAll(Colors.transparent),
+              foregroundColor: WidgetStatePropertyAll(textColor),
+              surfaceTintColor: const WidgetStatePropertyAll(
+                Colors.transparent,
+              ),
+              shadowColor: const WidgetStatePropertyAll(Colors.transparent),
+              elevation: const WidgetStatePropertyAll(0),
+              overlayColor: WidgetStateProperty.resolveWith((states) {
+                if (states.contains(WidgetState.pressed)) {
+                  return textColor.withValues(alpha: 0.12);
+                }
+                if (states.contains(WidgetState.hovered)) {
+                  return textColor.withValues(alpha: 0.07);
+                }
+                return null;
+              }),
+              shape: WidgetStatePropertyAll(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(999),
+                ),
+              ),
+              padding: const WidgetStatePropertyAll(
+                EdgeInsets.symmetric(vertical: 16, horizontal: 8),
+              ),
+              textStyle: WidgetStatePropertyAll(
+                TextStyle(
+                  fontSize: fontSize,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 0.2,
+                ),
+              ),
+            ),
+            onPressed: actionText.isEmpty
+                ? null
+                : () => _onButtonPressed(actionText),
+            child: actionText == 'DL'
+                ? Icon(Icons.backspace_outlined, size: fontSize + 2)
+                : FittedBox(fit: BoxFit.scaleDown, child: Text(displayedText)),
+          ),
         ),
       ),
     );
@@ -407,6 +454,12 @@ class _CalculatorPageState extends State<CalculatorPage> {
         return '$buttonText(';
       case '√':
         return 'sqrt(';
+      case 'x^√':
+        return '^(1/(';
+      case '10^x':
+        return '10^(';
+      case 'x^y':
+        return '^(';
       case 'log':
         return 'log(10,';
       case 'ln':
@@ -424,9 +477,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
   }
 
   int _buttonFlex(String buttonText) {
-    if (!_showScientificButtons && buttonText == '0') {
-      return 2;
-    }
     return 1;
   }
 
@@ -434,43 +484,79 @@ class _CalculatorPageState extends State<CalculatorPage> {
     if (buttonText == 'RAD/DEG_TOGGLE') {
       return _isRadians ? 'DEG' : 'RAD';
     }
+    if (buttonText == 'Sci') {
+      return _showScientificButtons ? 'Basic' : 'Sci';
+    }
     return buttonText;
   }
 
-  ({Color buttonColor, Color textColor, double fontSize}) _buttonStyle(
-    String buttonText,
-    ColorScheme colorScheme,
-  ) {
-    var buttonColor = colorScheme.surfaceContainerHighest;
+  ({
+    Color gradientStart,
+    Color gradientEnd,
+    Color textColor,
+    Color borderColor,
+    Color shadowColor,
+    double fontSize,
+  })
+  _buttonStyle(String buttonText, ColorScheme colorScheme) {
+    var gradientStart = colorScheme.surfaceContainerHighest;
+    var gradientEnd = colorScheme.surfaceContainerHigh;
     var textColor = colorScheme.onSurface;
+    var borderColor = colorScheme.outlineVariant.withValues(alpha: 0.55);
+    var shadowColor = colorScheme.onSurface;
     var fontSize = 24.0;
 
     if (buttonText == 'AC') {
-      buttonColor = colorScheme.error;
+      gradientStart = colorScheme.error;
+      gradientEnd = colorScheme.error.withValues(alpha: 0.85);
       textColor = colorScheme.onError;
+      borderColor = colorScheme.error.withValues(alpha: 0.28);
+      shadowColor = colorScheme.error;
     } else if (buttonText == 'DL') {
-      buttonColor = colorScheme.errorContainer;
+      gradientStart = colorScheme.errorContainer;
+      gradientEnd = colorScheme.errorContainer.withValues(alpha: 0.9);
       textColor = colorScheme.onErrorContainer;
+      borderColor = colorScheme.error.withValues(alpha: 0.26);
+      shadowColor = colorScheme.error;
     } else if (_primaryOperators.contains(buttonText)) {
-      buttonColor = colorScheme.primary;
-      textColor = colorScheme.onPrimary;
+      gradientStart = colorScheme.secondaryContainer;
+      gradientEnd = colorScheme.secondaryContainer.withValues(alpha: 0.9);
+      textColor = colorScheme.onSecondaryContainer;
+      borderColor = colorScheme.secondary.withValues(alpha: 0.22);
+      shadowColor = colorScheme.secondary;
     } else if (buttonText == '=') {
-      buttonColor = colorScheme.tertiary;
-      textColor = colorScheme.onTertiary;
+      gradientStart = colorScheme.primary;
+      gradientEnd = colorScheme.primary.withValues(alpha: 0.85);
+      textColor = colorScheme.onPrimary;
+      borderColor = colorScheme.primary.withValues(alpha: 0.24);
+      shadowColor = colorScheme.primary;
     } else if (_secondaryOperators.contains(buttonText) ||
         (_showScientificButtons &&
             _scientificInputButtons.contains(buttonText))) {
-      buttonColor = colorScheme.secondaryContainer;
+      gradientStart = colorScheme.secondaryContainer;
+      gradientEnd = colorScheme.secondaryContainer.withValues(alpha: 0.9);
       textColor = colorScheme.onSecondaryContainer;
+      borderColor = colorScheme.secondary.withValues(alpha: 0.22);
+      shadowColor = colorScheme.secondary;
     }
 
     if (buttonText == 'RAD/DEG_TOGGLE' || buttonText == 'Sci') {
       fontSize = 18.0;
-      buttonColor = colorScheme.tertiary;
-      textColor = colorScheme.onTertiary;
+      gradientStart = colorScheme.primary;
+      gradientEnd = colorScheme.primary.withValues(alpha: 0.86);
+      textColor = colorScheme.onPrimary;
+      borderColor = colorScheme.primary.withValues(alpha: 0.24);
+      shadowColor = colorScheme.primary;
     }
 
-    return (buttonColor: buttonColor, textColor: textColor, fontSize: fontSize);
+    return (
+      gradientStart: gradientStart,
+      gradientEnd: gradientEnd,
+      textColor: textColor,
+      borderColor: borderColor,
+      shadowColor: shadowColor,
+      fontSize: fontSize,
+    );
   }
 
   void _onButtonPressed(String buttonText) {
@@ -697,37 +783,70 @@ class _CalculatorPageState extends State<CalculatorPage> {
           ),
           Expanded(
             flex: 4,
-            child: Container(
-              color: colorScheme.surface,
-              padding: EdgeInsets.only(
-                bottom: MediaQuery.of(context).viewPadding.bottom + 98,
-                left: 8.0,
-                right: 8.0,
-                top: 8.0,
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                borderRadius: const BorderRadius.vertical(
+                  top: Radius.circular(28),
+                ),
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    colorScheme.surfaceContainerLowest,
+                    colorScheme.surface,
+                  ],
+                ),
+                border: Border(
+                  top: BorderSide(
+                    color: colorScheme.outlineVariant.withValues(alpha: 0.28),
+                    width: 1,
+                  ),
+                ),
               ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: buttonsLayout.map((row) {
-                  return Expanded(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: row.map((buttonText) {
-                        final flex = _buttonFlex(buttonText);
-                        final displayedButtonText = _displayLabel(buttonText);
-                        final style = _buttonStyle(buttonText, colorScheme);
+              child: Container(
+                padding: EdgeInsets.only(
+                  bottom: MediaQuery.of(context).viewPadding.bottom + 98,
+                  left: 10.0,
+                  right: 10.0,
+                  top: 10.0,
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: buttonsLayout.map((row) {
+                    return Expanded(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: List.generate(4, (index) {
+                          if (index >= row.length) {
+                            return const Expanded(
+                              child: Padding(
+                                padding: EdgeInsets.all(5.0),
+                                child: SizedBox.shrink(),
+                              ),
+                            );
+                          }
 
-                        return _buildButton(
-                          displayedButtonText,
-                          buttonText,
-                          style.buttonColor,
-                          style.textColor,
-                          fontSize: style.fontSize,
-                          flex: flex,
-                        );
-                      }).toList(),
-                    ),
-                  );
-                }).toList(),
+                          final buttonText = row[index];
+                          final flex = _buttonFlex(buttonText);
+                          final displayedButtonText = _displayLabel(buttonText);
+                          final style = _buttonStyle(buttonText, colorScheme);
+
+                          return _buildButton(
+                            displayedButtonText,
+                            buttonText,
+                            style.gradientStart,
+                            style.gradientEnd,
+                            style.textColor,
+                            borderColor: style.borderColor,
+                            shadowColor: style.shadowColor,
+                            fontSize: style.fontSize,
+                            flex: flex,
+                          );
+                        }),
+                      ),
+                    );
+                  }).toList(),
+                ),
               ),
             ),
           ),
