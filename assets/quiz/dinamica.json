@@ -14,12 +14,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "La seconda legge di Newton lega forza risultante, massa e accelerazione: $F = ma$.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "newton",
-        "forza",
-        "massa",
-        "accelerazione"
-      ]
+      "paroleChiave": ["newton", "forza", "massa", "accelerazione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_002",
@@ -35,12 +31,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "Se la risultante delle forze è nulla, l'accelerazione è nulla e il corpo mantiene lo stato di moto (o quiete): prima legge di Newton.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "inerzia",
-        "risultante",
-        "equilibrio",
-        "mru"
-      ]
+      "paroleChiave": ["inerzia", "risultante", "equilibrio", "mru"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_003",
@@ -56,12 +48,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Nel SI la forza si misura in newton (N).",
       "difficolta": "facile",
-      "paroleChiave": [
-        "SI",
-        "newton",
-        "unità",
-        "forza"
-      ]
+      "paroleChiave": ["SI", "newton", "unità", "forza"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_004",
@@ -77,12 +65,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "Per $F = ma$: $a = F/m = 6/2 = 3 \\, m/s^2$.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "F=ma",
-        "accelerazione",
-        "calcolo",
-        "massa"
-      ]
+      "paroleChiave": ["F=ma", "accelerazione", "calcolo", "massa"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_005",
@@ -98,12 +82,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Il peso è la forza gravitazionale esercitata dalla Terra: $P = mg$ (vicino alla superficie terrestre).",
       "difficolta": "facile",
-      "paroleChiave": [
-        "peso",
-        "gravità",
-        "mg",
-        "forza"
-      ]
+      "paroleChiave": ["peso", "gravità", "mg", "forza"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_006",
@@ -119,12 +99,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "In equilibrio verticale la risultante è nulla: $N - mg = 0$ quindi $N = mg$.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "normale",
-        "equilibrio",
-        "peso",
-        "piano orizzontale"
-      ]
+      "paroleChiave": ["normale", "equilibrio", "peso", "piano orizzontale"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_007",
@@ -140,12 +116,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "L'attrito dinamico ha modulo proporzionale alla normale: $F_{attr} = \\mu_d \\cdot N$.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "attrito",
-        "dinamico",
-        "mu",
-        "normale"
-      ]
+      "paroleChiave": ["attrito", "dinamico", "mu", "normale"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_008",
@@ -161,12 +133,8 @@
       "rispostaCorretta": 3,
       "spiegazione": "Azione e reazione sono uguali e opposte, ma agiscono su corpi diversi (non si annullano tra loro sullo stesso corpo).",
       "difficolta": "facile",
-      "paroleChiave": [
-        "azione-reazione",
-        "terza legge",
-        "newton",
-        "interazione"
-      ]
+      "paroleChiave": ["azione-reazione", "terza legge", "newton", "interazione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_009",
@@ -182,12 +150,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "Per la seconda legge di Newton, una risultante non nulla implica accelerazione non nulla.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "risultante",
-        "accelerazione",
-        "newton",
-        "dinamica"
-      ]
+      "paroleChiave": ["risultante", "accelerazione", "newton", "dinamica"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_010",
@@ -203,12 +167,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "In modulo, la forza elastica è proporzionale all'allungamento: $F = kx$ (diretta in verso opposto alla deformazione).",
       "difficolta": "facile",
-      "paroleChiave": [
-        "molla",
-        "hooke",
-        "kx",
-        "forza elastica"
-      ]
+      "paroleChiave": ["molla", "hooke", "kx", "forza elastica"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_011",
@@ -224,12 +184,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Sul piano inclinato: componente parallela = $mg\\sin\\theta$, componente perpendicolare = $mg\\cos\\theta$.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "piano inclinato",
-        "scomposizione",
-        "peso",
-        "sin"
-      ]
+      "paroleChiave": ["piano inclinato", "scomposizione", "peso", "sin"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_012",
@@ -245,12 +201,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "Nel moto circolare uniforme c'è accelerazione centripeta, diretta verso il centro, perché cambia la direzione della velocità.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "moto circolare",
-        "centripeta",
-        "accelerazione",
-        "direzione"
-      ]
+      "paroleChiave": ["moto circolare", "centripeta", "accelerazione", "direzione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_013",
@@ -266,12 +218,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "La forza centripeta necessaria a mantenere un moto circolare di raggio $r$ a velocità $v$ è $F = mv^2/r$.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "centripeta",
-        "mv2r",
-        "raggio",
-        "velocità"
-      ]
+      "paroleChiave": ["centripeta", "mv2r", "raggio", "velocità"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_014",
@@ -287,12 +235,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "In equilibrio (statico o dinamico) la risultante delle forze è zero e quindi l'accelerazione è zero.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "equilibrio",
-        "risultante",
-        "accelerazione",
-        "statica"
-      ]
+      "paroleChiave": ["equilibrio", "risultante", "accelerazione", "statica"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_015",
@@ -308,12 +252,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Da $a = F/m$: se $m$ raddoppia e $F$ è costante, $a$ si dimezza.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "proporzionalità",
-        "massa",
-        "accelerazione",
-        "F=ma"
-      ]
+      "paroleChiave": ["proporzionalità", "massa", "accelerazione", "F=ma"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_016",
@@ -329,12 +269,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "L'attrito statico si adatta fino a un massimo pari a $\\mu_s \\cdot N$.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "attrito",
-        "statico",
-        "mu_s",
-        "soglia"
-      ]
+      "paroleChiave": ["attrito", "statico", "mu_s", "soglia"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_017",
@@ -350,12 +286,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Agiscono peso (verso il basso), reazione normale (verso l'alto) e forza applicata (orizzontale); senza attrito non compare la forza d'attrito.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "free body",
-        "peso",
-        "normale",
-        "forza applicata"
-      ]
+      "paroleChiave": ["free body", "peso", "normale", "forza applicata"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_018",
@@ -371,12 +303,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "La massa è una proprietà del corpo (kg), il peso è una forza $P = mg$ e dipende dall'accelerazione di gravità $g$ (N).",
       "difficolta": "facile",
-      "paroleChiave": [
-        "massa",
-        "peso",
-        "g",
-        "newton"
-      ]
+      "paroleChiave": ["massa", "peso", "g", "newton"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_019",
@@ -392,12 +320,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "Moto rettilineo uniforme implica accelerazione nulla, quindi risultante delle forze nulla.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "mru",
-        "risultante",
-        "equilibrio",
-        "accelerazione"
-      ]
+      "paroleChiave": ["mru", "risultante", "equilibrio", "accelerazione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_020",
@@ -413,12 +337,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "Il piede non scivola: l'avanzamento è dovuto all'attrito statico tra suola e terreno.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "camminare",
-        "attrito statico",
-        "azione-reazione",
-        "locomozione"
-      ]
+      "paroleChiave": ["camminare", "attrito statico", "azione-reazione", "locomozione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_021",
@@ -434,12 +354,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Velocità costante $\\Rightarrow$ accelerazione nulla $\\Rightarrow$ risultante orizzontale nulla; la forza di traino bilancia l'attrito.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "velocità costante",
-        "attrito",
-        "equilibrio dinamico",
-        "risultante"
-      ]
+      "paroleChiave": ["velocità costante", "attrito", "equilibrio dinamico", "risultante"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_022",
@@ -455,12 +371,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Due forze uguali e opposte si sommano vettorialmente a zero.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "forze",
-        "vettori",
-        "risultante",
-        "opposte"
-      ]
+      "paroleChiave": ["forze", "vettori", "risultante", "opposte"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_023",
@@ -476,12 +388,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "In una fune ideale la tensione si considera uniforme lungo la fune.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "tensione",
-        "fune ideale",
-        "pulegge",
-        "vincoli"
-      ]
+      "paroleChiave": ["tensione", "fune ideale", "pulegge", "vincoli"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_024",
@@ -497,12 +405,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "La forza è una grandezza vettoriale: ha modulo, direzione e verso.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "forza",
-        "vettore",
-        "direzione",
-        "verso"
-      ]
+      "paroleChiave": ["forza", "vettore", "direzione", "verso"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_025",
@@ -518,12 +422,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "La velocità istantanea è tangente alla traiettoria; l'accelerazione è centripeta (verso il centro).",
       "difficolta": "facile",
-      "paroleChiave": [
-        "velocità",
-        "tangente",
-        "moto circolare",
-        "direzione"
-      ]
+      "paroleChiave": ["velocità", "tangente", "moto circolare", "direzione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_026",
@@ -539,12 +439,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Se non c'è scorrimento relativo, l'attrito è statico (si adatta fino a un massimo).",
       "difficolta": "facile",
-      "paroleChiave": [
-        "attrito statico",
-        "piano inclinato",
-        "equilibrio",
-        "scorrimento"
-      ]
+      "paroleChiave": ["attrito statico", "piano inclinato", "equilibrio", "scorrimento"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_027",
@@ -560,12 +456,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Accelerazione nulla $\\Rightarrow$ risultante delle forze nulla (non è necessario che la velocità sia zero).",
       "difficolta": "facile",
-      "paroleChiave": [
-        "accelerazione",
-        "risultante",
-        "equilibrio",
-        "newton"
-      ]
+      "paroleChiave": ["accelerazione", "risultante", "equilibrio", "newton"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_028",
@@ -581,12 +473,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Azione-reazione agiscono su corpi diversi: mano↔muro, uguali e opposte.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "azione-reazione",
-        "terza legge",
-        "interazione",
-        "corpi diversi"
-      ]
+      "paroleChiave": ["azione-reazione", "terza legge", "interazione", "corpi diversi"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_029",
@@ -602,12 +490,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "$a = F/m = 10/2 = 5 \\, m/s^2$, quindi la velocità aumenta di 5 m/s ogni secondo.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "accelerazione",
-        "variazione velocità",
-        "F=ma",
-        "moto rettilineo"
-      ]
+      "paroleChiave": ["accelerazione", "variazione velocità", "F=ma", "moto rettilineo"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_030",
@@ -623,12 +507,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "La reazione normale è per definizione perpendicolare alla superficie di contatto.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "normale",
-        "vincolo",
-        "perpendicolare",
-        "contatto"
-      ]
+      "paroleChiave": ["normale", "vincolo", "perpendicolare", "contatto"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_031",
@@ -644,12 +524,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "L'attrito dinamico si oppone al moto relativo tra le superfici.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "attrito",
-        "verso",
-        "moto",
-        "opposizione"
-      ]
+      "paroleChiave": ["attrito", "verso", "moto", "opposizione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_032",
@@ -665,12 +541,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "In equilibrio la risultante è zero: la forza elastica verso l'alto bilancia il peso $mg$ verso il basso.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "molla",
-        "equilibrio",
-        "peso",
-        "forza elastica"
-      ]
+      "paroleChiave": ["molla", "equilibrio", "peso", "forza elastica"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_033",
@@ -686,12 +558,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "La massa inerziale quantifica l'inerzia: più massa $\\Rightarrow$ più difficile ottenere una certa accelerazione con la stessa forza.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "massa",
-        "inerzia",
-        "accelerazione",
-        "resistenza"
-      ]
+      "paroleChiave": ["massa", "inerzia", "accelerazione", "resistenza"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_034",
@@ -707,12 +575,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Per curvare serve una risultante verso il centro della traiettoria (centripeta) che produca accelerazione normale.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "curva",
-        "centripeta",
-        "cambio direzione",
-        "risultante"
-      ]
+      "paroleChiave": ["curva", "centripeta", "cambio direzione", "risultante"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_035",
@@ -728,12 +592,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Con massa costante e forza risultante costante, $a = F/m$ è costante.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "forza costante",
-        "accelerazione",
-        "massa costante",
-        "F=ma"
-      ]
+      "paroleChiave": ["forza costante", "accelerazione", "massa costante", "F=ma"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_036",
@@ -749,12 +609,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Un riferimento inerziale è definito proprio come quello in cui vale il principio d'inerzia (prima legge).",
       "difficolta": "facile",
-      "paroleChiave": [
-        "inerziale",
-        "riferimento",
-        "prima legge",
-        "inerzia"
-      ]
+      "paroleChiave": ["inerziale", "riferimento", "prima legge", "inerzia"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_037",
@@ -770,12 +626,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Le forze sono opposte: $F_{ris} = 5 - 2 = 3$ N verso destra.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "risultante",
-        "somma vettoriale",
-        "forze opposte",
-        "calcolo"
-      ]
+      "paroleChiave": ["risultante", "somma vettoriale", "forze opposte", "calcolo"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_038",
@@ -791,12 +643,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "In caduta libera l'unica forza significativa è il peso $mg$, quindi la risultante coincide con $mg$.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "caduta libera",
-        "peso",
-        "risultante",
-        "gravità"
-      ]
+      "paroleChiave": ["caduta libera", "peso", "risultante", "gravità"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_039",
@@ -812,12 +660,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "Se la forza applicata non supera l'attrito statico massimo, l'attrito statico si adegua e il corpo resta in quiete.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "attrito statico",
-        "soglia",
-        "quiete",
-        "forza applicata"
-      ]
+      "paroleChiave": ["attrito statico", "soglia", "quiete", "forza applicata"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_040",
@@ -833,12 +677,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Forza risultante costante (massa costante) $\\Rightarrow$ accelerazione costante per $F = ma$.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "accelerazione costante",
-        "forza costante",
-        "dinamica",
-        "F=ma"
-      ]
+      "paroleChiave": ["accelerazione costante", "forza costante", "dinamica", "F=ma"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_041",
@@ -854,12 +694,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "$a = F/m = 10/4 = 2,5 \\, m/s^2$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "calcolo",
-        "accelerazione",
-        "piano liscio",
-        "F=ma"
-      ]
+      "paroleChiave": ["calcolo", "accelerazione", "piano liscio", "F=ma"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_042",
@@ -875,12 +711,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "La componente del peso lungo il piano è $mg\\sin\\theta$; quindi $a = (mg\\sin\\theta)/m = g\\sin\\theta$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "piano inclinato",
-        "senza attrito",
-        "accelerazione",
-        "gsinθ"
-      ]
+      "paroleChiave": ["piano inclinato", "senza attrito", "accelerazione", "gsinθ"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_043",
@@ -896,12 +728,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "Su piano orizzontale $N = mg = 2 \\cdot 10 = 20$ N; quindi $F_{attr} = \\mu_d \\cdot N = 0,2 \\cdot 20 = 4$ N.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "attrito",
-        "mu_d",
-        "normale",
-        "calcolo"
-      ]
+      "paroleChiave": ["attrito", "mu_d", "normale", "calcolo"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_044",
@@ -917,12 +745,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "Equazione verticale: $N - mg = ma$ (verso l'alto). Quindi $N = m(g + a)$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "ascensore",
-        "peso apparente",
-        "normale",
-        "accelerazione"
-      ]
+      "paroleChiave": ["ascensore", "peso apparente", "normale", "accelerazione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_045",
@@ -938,12 +762,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Applicando $F = ma$ ai due corpi e sommando le equazioni si ottiene $a = g(m_2 - m_1)/(m_1 + m_2)$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "atwood",
-        "puleggia",
-        "fune ideale",
-        "accelerazione"
-      ]
+      "paroleChiave": ["atwood", "puleggia", "fune ideale", "accelerazione"],
+      "richiedeCalcolo": true
     },
     {
       "id": "din_046",
@@ -959,12 +779,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Risultante orizzontale: $15 - 6 = 9$ N. Quindi $a = 9/3 = 2 \\, m/s^2$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "attrito",
-        "risultante",
-        "accelerazione",
-        "calcolo"
-      ]
+      "paroleChiave": ["attrito", "risultante", "accelerazione", "calcolo"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_047",
@@ -980,12 +796,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Per Pitagora: $F_{ris} = \\sqrt{3^2 + 4^2} = 5$ N.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "forze perpendicolari",
-        "pitagora",
-        "risultante",
-        "vettori"
-      ]
+      "paroleChiave": ["forze perpendicolari", "pitagora", "risultante", "vettori"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_048",
@@ -1001,12 +813,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "$F = \\frac{mv^2}{r} = \\frac{1000\\cdot 10^2}{50} = \\frac{1000\\cdot 100}{50} = 2000\\,\\mathrm{N}$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "centripeta",
-        "curva",
-        "mv2r",
-        "calcolo"
-      ]
+      "paroleChiave": ["centripeta", "curva", "mv2r", "calcolo"],
+      "richiedeCalcolo": true
     },
     {
       "id": "din_049",
@@ -1022,12 +830,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "$F = mv^2/r = 1000 \\cdot 100/50 = 2000$ N.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "centripeta",
-        "mv2r",
-        "raggio",
-        "velocità"
-      ]
+      "paroleChiave": ["centripeta", "mv2r", "raggio", "velocità"],
+      "richiedeCalcolo": true
     },
     {
       "id": "din_050",
@@ -1043,12 +847,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "La normale sulla parete è circa $N = F$; l'attrito statico massimo è $\\mu_s N = \\mu_s F$ e deve almeno bilanciare $mg$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "parete",
-        "attrito statico",
-        "normale",
-        "condizione"
-      ]
+      "paroleChiave": ["parete", "attrito statico", "normale", "condizione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_051",
@@ -1064,12 +864,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Considero il sistema: massa totale 3 kg, risultante esterna 6 N $\\Rightarrow$ $a = 6/3 = 2 \\, m/s^2$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "sistema",
-        "massa totale",
-        "accelerazione",
-        "fune"
-      ]
+      "paroleChiave": ["sistema", "massa totale", "accelerazione", "fune"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_052",
@@ -1085,12 +881,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Sul blocco $m_1$ l'unica forza orizzontale è la tensione $T$: $T = m_1 a = 1 \\cdot 2 = 2$ N.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "tensione",
-        "sistemi",
-        "fune",
-        "m1a"
-      ]
+      "paroleChiave": ["tensione", "sistemi", "fune", "m1a"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_053",
@@ -1106,12 +898,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "$a = F/m = 1/0,5 = 2 \\, m/s^2$. Da fermo: $v = at = 2 \\cdot 4 = 8$ m/s.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "forza costante",
-        "accelerazione",
-        "v=at",
-        "calcolo"
-      ]
+      "paroleChiave": ["forza costante", "accelerazione", "v=at", "calcolo"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_054",
@@ -1127,12 +915,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Lungo il piano: $mg\\sin 30^\\circ = 100 \\cdot 0,5 = 50$ N. Normale: $N = mg\\cos 30^\\circ \\approx 100 \\cdot 0,866 = 86,6$ N. Attrito: $\\mu_d N \\approx 0,1 \\cdot 86,6 = 8,66$ N (verso l'alto). Risultante: $50 - 8,66 = 41,34$ N $\\Rightarrow$ $a = 41,34/10 \\approx 4,13 \\, m/s^2$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "piano inclinato",
-        "attrito",
-        "sin",
-        "cos"
-      ]
+      "paroleChiave": ["piano inclinato", "attrito", "sin", "cos"],
+      "richiedeCalcolo": true
     },
     {
       "id": "din_055",
@@ -1148,12 +932,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "L'accelerazione centripeta in modulo è $a_c = v^2/r$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "accelerazione centripeta",
-        "v2r",
-        "moto circolare",
-        "formula"
-      ]
+      "paroleChiave": ["accelerazione centripeta", "v2r", "moto circolare", "formula"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_056",
@@ -1169,12 +949,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Nel pendolo conico la tensione si scompone: la componente verticale bilancia $mg$, quella orizzontale è centripeta.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "pendolo conico",
-        "tensione",
-        "centripeta",
-        "scomposizione"
-      ]
+      "paroleChiave": ["pendolo conico", "tensione", "centripeta", "scomposizione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_057",
@@ -1190,12 +966,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Una componente verso l'alto riduce la normale $N$; poiché $F_{attr} = \\mu_d N$, l'attrito diminuisce.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "forza inclinata",
-        "normale",
-        "attrito",
-        "componenti"
-      ]
+      "paroleChiave": ["forza inclinata", "normale", "attrito", "componenti"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_058",
@@ -1211,12 +983,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "$mg = 2 \\cdot 10 = 20$ N. Se $T = mg$, risultante zero $\\Rightarrow$ $a = 0$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "tensione",
-        "equilibrio",
-        "mg",
-        "risultante"
-      ]
+      "paroleChiave": ["tensione", "equilibrio", "mg", "risultante"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_059",
@@ -1232,12 +1000,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Poiché $\\sin\\theta$ aumenta al crescere di $\\theta$ (tra 0° e 90°), aumenta anche $g\\sin\\theta$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "sin",
-        "piano inclinato",
-        "accelerazione",
-        "dipendenza"
-      ]
+      "paroleChiave": ["sin", "piano inclinato", "accelerazione", "dipendenza"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_060",
@@ -1253,12 +1017,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "$F_c = mv^2/r$: se $v$ raddoppia, $v^2$ quadruplica, quindi anche $F_c$ quadruplica.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "centripeta",
-        "dipendenza",
-        "v^2",
-        "scala"
-      ]
+      "paroleChiave": ["centripeta", "dipendenza", "v^2", "scala"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_061",
@@ -1274,12 +1034,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "$N = mg = 50$ N. Attrito statico massimo: $F_{s,max} = \\mu_s N = 0,4 \\cdot 50 = 20$ N.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "attrito statico",
-        "soglia",
-        "mu_s",
-        "calcolo"
-      ]
+      "paroleChiave": ["attrito statico", "soglia", "mu_s", "calcolo"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_062",
@@ -1295,12 +1051,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Con attrito dinamico costante ($\\mu_d$ costante e $N$ costante), la forza d'attrito è costante e opposta al moto $\\Rightarrow$ accelerazione costante opposta alla velocità.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "attrito dinamico",
-        "decelerazione",
-        "costante",
-        "opposizione"
-      ]
+      "paroleChiave": ["attrito dinamico", "decelerazione", "costante", "opposizione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_063",
@@ -1316,12 +1068,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Forze perpendicolari: $\\sqrt{10^2 + 10^2} = 10\\sqrt{2} \\approx 14,1$ N.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "vettori",
-        "perpendicolari",
-        "sqrt2",
-        "risultante"
-      ]
+      "paroleChiave": ["vettori", "perpendicolari", "sqrt2", "risultante"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_064",
@@ -1337,12 +1085,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Prendendo verso l'alto positivo: $T - mg = -ma$ $\\Rightarrow$ $T = m(g - a)$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "ascensore",
-        "tensione",
-        "accelerazione",
-        "peso apparente"
-      ]
+      "paroleChiave": ["ascensore", "tensione", "accelerazione", "peso apparente"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_065",
@@ -1358,12 +1102,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "Il modulo dell'accelerazione dipende dal modulo della risultante: $a = F/m = 12/3 = 4 \\, m/s^2$, indipendentemente dall'angolo (per il modulo).",
       "difficolta": "medio",
-      "paroleChiave": [
-        "risultante",
-        "modulo",
-        "accelerazione",
-        "vettori"
-      ]
+      "paroleChiave": ["risultante", "modulo", "accelerazione", "vettori"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_066",
@@ -1379,12 +1119,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "L'attrito dinamico si oppone al moto relativo: se il blocco scende, l'attrito è verso l'alto lungo il piano.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "attrito",
-        "piano inclinato",
-        "verso",
-        "scivolamento"
-      ]
+      "paroleChiave": ["attrito", "piano inclinato", "verso", "scivolamento"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_067",
@@ -1400,12 +1136,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Per non slittare, l'attrito statico disponibile ($\\leq \\mu_s N$) deve essere sufficiente a fornire la forza necessaria $ma$ al blocco superiore.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "slittamento",
-        "attrito statico",
-        "ma",
-        "mu_s"
-      ]
+      "paroleChiave": ["slittamento", "attrito statico", "ma", "mu_s"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_068",
@@ -1421,12 +1153,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "Il corpo più pesante ($m_2$) accelera verso il basso, quindi $T < m_2 g$; quello più leggero accelera verso l'alto, quindi $T > m_1 g$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "atwood",
-        "tensione",
-        "confronto",
-        "accelerazione"
-      ]
+      "paroleChiave": ["atwood", "tensione", "confronto", "accelerazione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_069",
@@ -1442,12 +1170,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Attrito dinamico $F_{attr} = \\mu_d N$ cresce, quindi la risultante orizzontale diminuisce e l'accelerazione diminuisce.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "mu_d",
-        "attrito",
-        "risultante",
-        "accelerazione"
-      ]
+      "paroleChiave": ["mu_d", "attrito", "risultante", "accelerazione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_070",
@@ -1463,12 +1187,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "L'attrito statico si orienta per opporsi alla tendenza allo scorrimento, che può essere verso il basso o verso l'alto a seconda delle altre forze.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "attrito statico",
-        "tendenza al moto",
-        "equilibrio",
-        "piano inclinato"
-      ]
+      "paroleChiave": ["attrito statico", "tendenza al moto", "equilibrio", "piano inclinato"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_071",
@@ -1484,12 +1204,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Per la seconda legge di Newton, $a(t) = F_{ris}(t)/m$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "forza variabile",
-        "istantaneo",
-        "a=F/m",
-        "dinamica"
-      ]
+      "paroleChiave": ["forza variabile", "istantaneo", "a=F/m", "dinamica"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_072",
@@ -1505,12 +1221,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Risultante $= 3 + 7 = 10$ N $\\Rightarrow$ $a = 10/2 = 5 \\, m/s^2$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "somma forze",
-        "risultante",
-        "accelerazione",
-        "calcolo"
-      ]
+      "paroleChiave": ["somma forze", "risultante", "accelerazione", "calcolo"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_073",
@@ -1526,12 +1238,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Velocità costante $\\Rightarrow$ $a = 0$ $\\Rightarrow$ risultante orizzontale zero, quindi $F$ bilancia l'attrito dinamico $\\mu_d N$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "velocità costante",
-        "attrito dinamico",
-        "equilibrio",
-        "condizione"
-      ]
+      "paroleChiave": ["velocità costante", "attrito dinamico", "equilibrio", "condizione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_074",
@@ -1547,12 +1255,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Nel massimo allungamento la velocità è zero, ma la forza risultante non è necessariamente zero; in quel punto la risultante è verso l'alto (verso l'equilibrio) quindi anche l'accelerazione.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "molla",
-        "accelerazione",
-        "estremo",
-        "forza risultante"
-      ]
+      "paroleChiave": ["molla", "accelerazione", "estremo", "forza risultante"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_075",
@@ -1568,12 +1272,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Per l'equilibrio lungo il piano bisogna bilanciare la componente del peso: $F = mg\\sin 30^\\circ$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "equilibrio",
-        "piano inclinato",
-        "componenti",
-        "sin30"
-      ]
+      "paroleChiave": ["equilibrio", "piano inclinato", "componenti", "sin30"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_076",
@@ -1589,12 +1289,8 @@
       "rispostaCorretta": 2,
       "spiegazione": "Nel moto circolare uniforme cambia la direzione della velocità: serve una risultante verso il centro (centripeta).",
       "difficolta": "medio",
-      "paroleChiave": [
-        "moto circolare",
-        "risultante",
-        "centripeta",
-        "velocità"
-      ]
+      "paroleChiave": ["moto circolare", "risultante", "centripeta", "velocità"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_077",
@@ -1610,12 +1306,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "La componente orizzontale è $F_x = F\\cos\\theta$; con $\\theta = 60^\\circ$ vale $F\\cos 60^\\circ$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "componenti",
-        "cos",
-        "forza inclinata",
-        "orizzontale"
-      ]
+      "paroleChiave": ["componenti", "cos", "forza inclinata", "orizzontale"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_078",
@@ -1631,12 +1323,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Forza esterna netta sul sistema: $10 - (2 + 3) = 5$ N. Massa totale: $2 + 3 = 5$ kg. Quindi $a = 5/5 = 1 \\, m/s^2$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "sistema",
-        "attrito",
-        "massa totale",
-        "risultante"
-      ]
+      "paroleChiave": ["sistema", "attrito", "massa totale", "risultante"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_079",
@@ -1652,12 +1340,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Se l'accelerazione è opposta alla velocità iniziale, il corpo rallenta, può fermarsi e poi invertire il verso accelerando nella direzione della forza.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "verso",
-        "accelerazione",
-        "inversione",
-        "moto rettilineo"
-      ]
+      "paroleChiave": ["verso", "accelerazione", "inversione", "moto rettilineo"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_080",
@@ -1673,12 +1357,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Al distacco imminente l'attrito statico è al massimo: $F_{el}$ (che tira) $= F_{s,max} = \\mu_s N$.",
       "difficolta": "medio",
-      "paroleChiave": [
-        "molla",
-        "attrito statico",
-        "distacco",
-        "soglia"
-      ]
+      "paroleChiave": ["molla", "attrito statico", "distacco", "soglia"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_081",
@@ -1694,12 +1374,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Con puleggia massiva bisogna considerare la dinamica rotazionale: la differenza di tensione genera una coppia $\\tau = (T_2 - T_1)R = I\\alpha$.",
       "difficolta": "difficile",
-      "paroleChiave": [
-        "puleggia",
-        "momento d'inerzia",
-        "coppia",
-        "alpha"
-      ]
+      "paroleChiave": ["puleggia", "momento d'inerzia", "coppia", "alpha"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_082",
@@ -1715,12 +1391,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Serve $mg\\sin\\theta \\leq \\mu_s mg\\cos\\theta$ $\\Rightarrow$ $\\tan\\theta \\leq \\mu_s$.",
       "difficolta": "difficile",
-      "paroleChiave": [
-        "piano inclinato",
-        "equilibrio",
-        "tan",
-        "mu_s"
-      ]
+      "paroleChiave": ["piano inclinato", "equilibrio", "tan", "mu_s"],
+      "richiedeCalcolo": true
     },
     {
       "id": "din_083",
@@ -1736,12 +1408,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Nei sistemi vincolati si impostano le equazioni di Newton per ciascun corpo e si aggiunge il vincolo cinematico (stessa accelerazione in modulo lungo la fune).",
       "difficolta": "difficile",
-      "paroleChiave": [
-        "vincoli",
-        "F=ma",
-        "diagramma forze",
-        "tensione"
-      ]
+      "paroleChiave": ["vincoli", "F=ma", "diagramma forze", "tensione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_084",
@@ -1757,12 +1425,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Senza attrito, la componente orizzontale della normale fornisce la centripeta e quella verticale bilancia il peso: $\\tan\\theta = v^2/(rg)$.",
       "difficolta": "difficile",
-      "paroleChiave": [
-        "banked",
-        "curva",
-        "tan",
-        "centripeta"
-      ]
+      "paroleChiave": ["banked", "curva", "tan", "centripeta"],
+      "richiedeCalcolo": true
     },
     {
       "id": "din_085",
@@ -1778,12 +1442,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Nel riferimento che accelera verso destra, compare una forza apparente su masse $m$ pari a $mA$ verso sinistra (opposta all'accelerazione del riferimento).",
       "difficolta": "difficile",
-      "paroleChiave": [
-        "non inerziale",
-        "forza apparente",
-        "pseudo-forza",
-        "accelerazione"
-      ]
+      "paroleChiave": ["non inerziale", "forza apparente", "pseudo-forza", "accelerazione"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_086",
@@ -1799,12 +1459,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Serve una forza di attrito statico $mA$. Il massimo è $\\mu_s N = \\mu_s mg$. Quindi $mA \\leq \\mu_s mg$ $\\Rightarrow$ $\\mu_s \\geq A/g$.",
       "difficolta": "difficile",
-      "paroleChiave": [
-        "camion",
-        "attrito statico",
-        "riferimento accelerato",
-        "A/g"
-      ]
+      "paroleChiave": ["camion", "attrito statico", "riferimento accelerato", "A/g"],
+      "richiedeCalcolo": true
     },
     {
       "id": "din_087",
@@ -1820,12 +1476,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "La componente verticale bilancia il peso: $T\\cos\\alpha = mg$. La componente orizzontale è centripeta: $T\\sin\\alpha = m\\omega^2 r$.",
       "difficolta": "difficile",
-      "paroleChiave": [
-        "pendolo conico",
-        "tensione",
-        "omega",
-        "componenti"
-      ]
+      "paroleChiave": ["pendolo conico", "tensione", "omega", "componenti"],
+      "richiedeCalcolo": true
     },
     {
       "id": "din_088",
@@ -1841,12 +1493,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Accelerazione nulla $\\Rightarrow$ risultante lungo il piano nulla: componente del peso $mg\\sin\\theta$ bilanciata dall'attrito dinamico $\\mu_d mg\\cos\\theta$.",
       "difficolta": "difficile",
-      "paroleChiave": [
-        "piano inclinato",
-        "velocità costante",
-        "attrito",
-        "condizione"
-      ]
+      "paroleChiave": ["piano inclinato", "velocità costante", "attrito", "condizione"],
+      "richiedeCalcolo": true
     },
     {
       "id": "din_089",
@@ -1862,12 +1510,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Forze esterne sul sistema lungo il moto: peso del blocco appeso $2mg$ meno attrito sul blocco sul tavolo ($\\mu_d N = \\mu_d mg$). Massa totale $3m$. Quindi $a = (2mg - \\mu_d mg)/(3m) = g(2 - \\mu_d)/3$.",
       "difficolta": "difficile",
-      "paroleChiave": [
-        "puleggia",
-        "attrito",
-        "sistema",
-        "accelerazione"
-      ]
+      "paroleChiave": ["puleggia", "attrito", "sistema", "accelerazione"],
+      "richiedeCalcolo": true
     },
     {
       "id": "din_090",
@@ -1883,12 +1527,8 @@
       "rispostaCorretta": 0,
       "spiegazione": "Serve $\\mu_s N \\geq mg$ e $N \\approx F$ $\\Rightarrow$ $\\mu_s F \\geq mg$ $\\Rightarrow$ $F \\geq mg/\\mu_s$.",
       "difficolta": "difficile",
-      "paroleChiave": [
-        "parete",
-        "attrito statico",
-        "forza minima",
-        "mg/mu"
-      ]
+      "paroleChiave": ["parete", "attrito statico", "forza minima", "mg/mu"],
+      "richiedeCalcolo": true
     },
     {
       "id": "din_091",
@@ -1904,12 +1544,8 @@
       "rispostaCorretta": 1,
       "spiegazione": "Considerando l'intero sistema, le tensioni interne si elidono e resta $a = F_{ext}/M_{tot}$.",
       "difficolta": "difficile",
-      "paroleChiave": [
-        "forze esterne",
-        "sistema",
-        "tensione interna",
-        "metodo"
-      ]
+      "paroleChiave": ["forze esterne", "sistema", "tensione interna", "metodo"],
+      "richiedeCalcolo": false
     },
     {
       "id": "din_092",
@@ -1925,1356 +1561,1096 @@
       "rispostaCorretta": 1,
       "spiegazione": "Nel riferimento dell'auto (non inerziale), compare una pseudo-forza in avanti. Nel riferimento del suolo, i passeggeri tendono a mantenere la velocità iniziale per inerzia mentre l'auto rallenta.",
       "difficolta": "facile",
-      "paroleChiave": [
-        "inerzia",
-        "frenata",
-        "riferimento non inerziale",
-        "passeggeri"
-      ]
-  },
-  {
-    "id": "din_093",
-    "domanda": "In quale situazione la forza di attrito statico compie lavoro positivo su un corpo?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Attrito statico",
-    "opzioni": [
-      "Quando il corpo scivola su una superficie ruvida",
-      "Quando il corpo viene trascinato lentamente senza scivolare",
-      "Quando è la causa del moto del corpo (es. camminare, accelerare un'auto)",
-      "L'attrito statico non compie mai lavoro"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "L'attrito statico compie lavoro positivo quando accelera il corpo (es. quando cammini, il terreno ti spinge avanti; quando un'auto accelera, l'attrito tra ruote e terreno la propel).",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "attrito statico",
-      "lavoro",
-      "motore",
-      "accelerazione"
-    ]
-  },
-  {
-    "id": "din_094",
-    "domanda": "Cosa rappresenta fisicamente il coefficiente di attrito $\\mu$?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Attrito",
-    "opzioni": [
-      "La forza di attrito in newton",
-      "Una misura adimensionale della ruvidità relativa tra due superfici",
-      "La velocità a cui inizia lo slittamento",
-      "La massa del corpo che scivola"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Il coefficiente di attrito è una grandezza adimensionale che dipende dalle proprietà delle due superfici in contatto, non dalla forma, massa o velocità.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "mu",
-      "attrito",
-      "proprie superfici",
-      "adimensionale"
-    ]
-  },
-  {
-    "id": "din_095",
-    "domanda": "Per quale ragione teorica la prima legge di Newton non è indipendente dalla seconda?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Leggi di Newton",
-    "opzioni": [
-      "La prima legge è un caso particolare della seconda con $F = 0$",
-      "La prima legge precede cronoloicamente la seconda",
-      "Non c'è alcuna relazione tra loro",
-      "La prima legge riguarda solo masse piccole"
-    ],
-    "rispostaCorretta": 0,
-    "spiegazione": "Se $F_{risultante} = 0$, allora $a = 0$ dalla seconda legge ($F = ma$), il che concorda con la prima legge. Quindi la prima è un caso particolare della seconda.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "leggi newton",
-      "indipendenza",
-      "F=ma",
-      "inerzia"
-    ]
-  },
-  {
-    "id": "din_096",
-    "domanda": "Un satellite orbita attorno a un pianeta con velocità costante ma non è in equilibrio. Perché?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Moto circolare e accelerazione",
-    "opzioni": [
-      "Perché la velocità non è nulla",
-      "Perché subisce un'accelerazione (centripeta) diretta verso il centro",
-      "Perché la forza di gravità non agisce su di esso",
-      "Perché cade verso il pianeta"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "L'equilibrio statico richiede $a = 0$. Nel moto orbitale circolare, c'è sempre un'accelerazione centripeta (la direzione di $v$ continua a cambiare), quindi il satellite non è in equilibrio.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "orbita",
-      "centripeta",
-      "equilibrio",
-      "accelerazione"
-    ]
-  },
-  {
-    "id": "din_097",
-    "domanda": "Quale delle seguenti affermazioni sulla terza legge di Newton è falsa?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Leggi di Newton",
-    "opzioni": [
-      "Le forze di azione e reazione hanno lo stesso modulo",
-      "Agiscono sempre su corpi diversi",
-      "Si annullano reciprocamente se applicate allo stesso corpo",
-      "Hanno la stessa retta d'azione"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "L'affermazione falsa è la terza: le forze azione-reazione per definizione agiscono su corpi diversi, quindi non possono sommarsi e annullarsi.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "terza legge",
-      "azione-reazione",
-      "falso",
-      "corpi diversi"
-    ]
-  },
-  {
-    "id": "din_098",
-    "domanda": "Quando spari una freccia con un arco, la corda applica una forza $F$ alla freccia. Per la terza legge, la freccia applica una forza $-F$ alla corda. Come mai la corda non rimbalza indietro con la stessa energia della freccia?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Terza legge - interpretazione",
-    "opzioni": [
-      "La terza legge non è vera per le frecce",
-      "Perché l'arco ha massa molto maggiore della freccia. A parità di forza, l'accelerazione è minore.",
-      "Perché la corda è più corta della freccia",
-      "Perché l'arco è tenuto fermo dalla mano"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Sebbene forze uguali e opposte agiscono per lo stesso tempo su freccia e corda, $F = ma$ implica che $a = F/m$. La massa della corda è maggiore, quindi la sua accelerazione è minore e la velocità finale è minore.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "terza legge",
-      "arco freccia",
-      "accelerazione",
-      "massa"
-    ]
-  },
-  {
-    "id": "din_099",
-    "domanda": "Come cambia la distanza di frenata di un'auto se raddoppia la velocità iniziale (a parità di decelerazione)?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Cinematica e dinamica",
-    "opzioni": [
-      "Raddoppia",
-      "Quadruplica",
-      "Dimezza",
-      "Rimane la stessa"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Con $v^2 = v_0^2 - 2a \\cdot s$, se $v=0$ abbiamo $s = v_0^2 / (2a)$. Se $v_0$ raddoppia, $s$ quadruplica (relazione quadratica).",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "frenata",
-      "spazio",
-      "velocità",
-      "v2"
-    ]
-  },
-  {
-    "id": "din_100",
-    "domanda": "Perché l'attrito dinamico è approssimativamente indipendente dalla velocità (nel range macroscopico)?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Attrito - proprietà",
-    "opzioni": [
-      "Perché è una proprietà fondamentale della materia",
-      "Perché dipende dalla normale, che non cambia con la velocità",
-      "Perché la velocità non influisce sulle interazioni atomiche locali",
-      "Perché la forza di attrito è sempre uguale al peso"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "L'attrito dinamico $F_d = \\mu_d \\cdot N$ dipende dalla normale $N$, che è determinata dalle forze perpendicolari al piano, non dalla velocità di scorrimento.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "attrito",
-      "velocità",
-      "normale",
-      "proprieta"
-    ]
-  },
-  {
-    "id": "din_101",
-    "domanda": "Un corpo è tirato da due funi che formano un angolo di $90^\\circ$ tra loro, ognuna con tensione $T$. Quale è il modulo della risultante?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Composizione di forze",
-    "opzioni": [
-      "$2T$",
-      "$T\\sqrt{2}$",
-      "$T$",
-      "$T/2$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Due forze di modulo $T$ perpendicolari tra loro: $R = \\sqrt{T^2 + T^2} = T\\sqrt{2}$.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "composizione",
-      "forze",
-      "risultante",
-      "90 gradi"
-    ]
-  },
-  {
-    "id": "din_102",
-    "domanda": "In quale direzione agisce la forza di attrito su un corpo che scivola su un piano?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Attrito dinamico",
-    "opzioni": [
-      "Nella direzione del moto",
-      "Sempre verso il basso",
-      "Opposta al moto relativo tra le superfici",
-      "Parallela alla normale"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "L'attrito dinamico si oppone sempre al moto relativo tra le due superfici, indipendentemente dalla direzione del moto assoluto.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "attrito",
-      "direzione",
-      "moto relativo",
-      "dinamico"
-    ]
-  },
-  {
-    "id": "din_103",
-    "domanda": "Perché un astronauta sulla Luna, con un peso minore che sulla Terra, potrebbe comunque avere difficoltà a muoversi velocemente?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Massa vs peso",
-    "opzioni": [
-      "Perché la Luna non ha attrito",
-      "Perché la massa non cambia; cambia solo il peso. Per accelerare la stessa massa serve comunque la stessa forza.",
-      "Perché sulla Luna non esiste la forza di gravità",
-      "Perché l'astronauta è dentro una tuta molto pesante"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La massa è invariante; per accelerarla serve $F = ma$. Sulla Luna $g$ è minore, quindi il peso è minore, ma la massa conserva l'inerzia.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "luna",
-      "massa",
-      "peso",
-      "inerzia"
-    ]
-  },
-  {
-    "id": "din_104",
-    "domanda": "Quale affermazione sulla reazione normale è corretta?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Reazioni vincolari",
-    "opzioni": [
-      "È sempre uguale al peso del corpo",
-      "È la forza esercitata da una superficie per evitare che un corpo l'attraversi",
-      "Agisce parallela alla superficie",
-      "Dipende dalla velocità del corpo"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La reazione normale è una forza di vincolo perpendicolare alla superficie che impedisce l'interpenetrazione. Non è necessariamente uguale al peso (dipende da altre forze verticali).",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "normale",
-      "reazione vincolare",
-      "perpendicolare",
-      "contatto"
-    ]
-  },
-  {
-    "id": "din_105",
-    "domanda": "Durante una virata di un'auto su curva orizzontale (senza sopraelevazione), quale forza fornisce l'accelerazione centripeta?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Attrito e moto circolare",
-    "opzioni": [
-      "La gravità",
-      "La tensione del volante",
-      "L'attrito radente tra pneumatici e asfalto",
-      "Una forza centrifuga reale"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "L'attrito statico tra pneumatici e asfalto fornisce la forza di attrito che agisce come centripeta, mantenendo l'auto in traiettoria.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "curva",
-      "attrito",
-      "centripeta",
-      "automobile"
-    ]
-  },
-  {
-    "id": "din_106",
-    "domanda": "Un corpo cade in caduta libera in un ascensore che accelera verso il basso con accelerazione $a < g$. Come appare il moto del corpo nel riferimento dell'ascensore?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Riferimenti accelerati",
-    "opzioni": [
-      "Il corpo rimane fermo",
-      "Il corpo accelera verso l'alto",
-      "Il corpo accelera verso il basso con accelerazione $g - a$",
-      "Il corpo non si muove"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "Nel riferimento dell'ascensore (non inerziale), il corpo subisce una pseudo-forza $m(g - a)$ verso il basso. L'accelerazione apparente è $g - a$.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "ascensore",
-      "caduta libera",
-      "riferimento non inerziale",
-      "pseudo-forza"
-    ]
-  },
-  {
-    "id": "din_107",
-    "domanda": "Se sospendo un corpo con una fune leggera (massa trascurabile) e tiro la fune verso l'alto con accelerazione $a$, come cambia la tensione rispetto al peso?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Tensione e accelerazione",
-    "opzioni": [
-      "Rimane uguale al peso",
-      "Aumenta di $m \\cdot a$",
-      "Dipende dal colore della fune",
-      "Diventa zero"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Applicando $F = ma$ in direzione verticale: $T - mg = ma$, quindi $T = m(g + a)$. La tensione aumenta rispetto al peso statico.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "tensione",
-      "accelerazione",
-      "fune",
-      "peso"
-    ]
-  },
-  {
-    "id": "din_108",
-    "domanda": "Un corpo è appoggiato su una bilancia in un ascensore fermo. Se l'ascensore inizia a salire con accelerazione costante, quale fenomeno osserva una persona sulla bilancia?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Peso apparente",
-    "opzioni": [
-      "Il peso diminuisce",
-      "Il peso aumenta temporaneamente, poi ritorna normale",
-      "Il peso aumenta proporzionalmente all'accelerazione",
-      "Il peso rimane sempre lo stesso"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "Durante l'accelerazione verso l'alto, la normale aumenta: $N = m(g + a)$. La bilancia misura questa normale, quindi il peso apparente aumenta.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "ascensore",
-      "bilancia",
-      "peso apparente",
-      "accelerazione"
-    ]
-  },
-  {
-    "id": "din_109",
-    "domanda": "Perché un oggetto appoggiato su un tavolo accelerante non scivola, mentre uno su un tavolo lungo un piano inclinato può scivolare?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Attrito statico",
-    "opzioni": [
-      "Perché l'attrito sui tavoli orizzontali è maggiore",
-      "Perché la normale è diversa; su piano inclinato è $mg \\cos\\theta$, mentre su tavolo accelerante è $mg\\sqrt{1 + (a/g)^2}$",
-      "Perché la gravità agisce diversamente",
-      "Perché il primo tavolo è meglio lubrificato"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La differenza sta nella normale. Su piano inclinato la componente parallela $mg \\sin\\theta$ non è controbilanciata. Su tavolo accelerante, se $\\mu_s$ è sufficiente, l'attrito può bilanciare $ma$.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "attrito",
-      "piano inclinato",
-      "accelerazione",
-      "confronto"
-    ]
-  },
-  {
-    "id": "din_110",
-    "domanda": "Un corpo di massa $m$ si muove in linea retta. La risultante delle forze passa sempre per il baricentro perché:",
-    "categoria": "Dinamica",
-    "sottocategoria": "Meccanica del corpo rigido",
-    "opzioni": [
-      "Come conseguenza della terza legge di Newton",
-      "Per definizione il baricentro è il punto dove si concentra l'azione della risultante",
-      "Perché è il principio del'equilibrio rotazionale",
-      "Nessuno dei motivi precedenti, è una conseguenza della definizione di risultante"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La risultante delle forze agisce nel baricentro per definizione di baricentro (centro di massa). Se così non fosse, il corpo ruoterebbe anche durante il moto traslatorio.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "baricentro",
-      "risultante",
-      "centro di massa",
-      "traslazione"
-    ]
-  },
-  {
-    "id": "din_111",
-    "domanda": "Due blocchi identici vengono lanciati orizzontalmente dalla stessa altezza con velocità diverse. Quale affermazione è corretta?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Indipendenza delle accelerazioni",
-    "opzioni": [
-      "Quello più veloce cade più lentamente",
-      "Quello più lento cade in meno tempo",
-      "Entrambi impiegano lo stesso tempo a cadere (l'accelerazione di gravità è indipendente da $v$ orizzontale)",
-      "Il blocco più veloce cade prima"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "L'accelerazione verticale $g$ è indipendente dalla velocità orizzontale. Il tempo di volo dipende solo da $h$: $t = \\sqrt{2h/g}$.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "caduta libera",
-      "lanciato",
-      "velocità orizzontale",
-      "indipendenza"
-    ]
-  },
-  {
-    "id": "din_112",
-    "domanda": "Una molla è compressa e rilascia un corpo. Quale affermazione sulla forza elastica è vera?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Molle e forza elastica",
-    "opzioni": [
-      "La forza elastica è costante durante il rilascio",
-      "La forza elastica è massima quando la compressione è massima e nulla quando la molla torna a lunghezza naturale",
-      "La forza elastica non compie lavoro",
-      "La forza elastica dipende dalla velocità del corpo"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Dalla legge di Hooke $F = kx$, la forza è proporzionale alla deformazione $x$. È massima quando $x$ è massima (molla compressa) e diventa nulla quando $x=0$ (lunghezza naturale).",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "hooke",
-      "molla",
-      "elastica",
-      "kx"
-    ]
-  },
-  {
-    "id": "din_113",
-    "domanda": "Perché in un salto in verticale da una piattaforma, l'accelerazione durante la fase di stacco (spinta verso l'alto) è fondamentale per l'altezza raggiunta?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Applicazione della seconda legge",
-    "opzioni": [
-      "Perché determina il tempo di contatto con il suolo",
-      "Perché $F = ma$ durante la spinta; una forza maggiore (dallo squat) produce accelerazione maggiore, quindi velocità di decollo maggiore",
-      "Perché la gravità agisce meno durante la spinta",
-      "Perché dipende dal peso della persona"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Durante la spinta, $F - mg = ma$. Una forza muscolare $F$ maggiore produce $a$ maggiore. La velocità di decollo è $v = a \\cdot t_{spinta}$. Altezza: $h = v^2 / (2g)$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "salto",
-      "accelerazione",
-      "spinta",
-      "altezza"
-    ]
-  },
-  {
-    "id": "din_114",
-    "domanda": "Un corpo viene lanciato verso l'alto. Nel punto di massima altezza, qual è il suo stato di equilibrio?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Equilibrio e velocità",
-    "opzioni": [
-      "È in equilibrio perché la velocità è zero",
-      "Non è in equilibrio perché ha accelerazione non nulla ($g$ verso il basso) anche se $v = 0$",
-      "L'accelerazione diventa zero al culmine",
-      "È in equilibrio statico"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "L'equilibrio richiede $a = 0$, ma al culmine lungo la traiettoria agisce ancora $g$. La velocità è zero (istantaneamente), ma l'accelerazione non è zero. Non è equilibrio.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "lancio",
-      "massima altezza",
-      "accelerazione",
-      "equilibrio"
-    ]
-  },
-  {
-    "id": "din_115",
-    "domanda": "Nel modello dell'attrito Coulombiano, perché l'attrito statico massimo è maggiore dell'attrito dinamico ($\\mu_s > \\mu_d$)?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Attrito - interpretazione",
-    "opzioni": [
-      "Perché la superficie è meno ruvida dopo l'inizio dello slittamento",
-      "Perché i picchi di ruvidezza rimangono incastrati, richiedendo una forza maggiore per iniziare il moto",
-      "Perché la gravità agisce meno quando il corpo si muove",
-      "Il modello non spiega questa differenza"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Interpretazione microscopica: quando due superfici sono a riposo, gli attriti microscopici e i legami superficiali sono più forti. Con il moto, questi cedono e il corpo rimane in moto con attrito minore.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "attrito statico",
-      "attrito dinamico",
-      "mu_s",
-      "mu_d"
-    ]
-  },
-  {
-    "id": "din_116",
-    "domanda": "Un corpo è in moto circolare uniforme. La sua velocità è costante in modulo ma non in direzione. Come si riconcilia questo con la prima legge di Newton?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Moto circolare e inerzia",
-    "opzioni": [
-      "Non si riconcilia; la prima legge è sbagliata per moti circolari",
-      "Perché c'è una forza risultante (centripeta) che causa il continuo cambio di direzione della velocità",
-      "Perché la velocità è costante in modulo, quindi $F = 0$",
-      "La prima legge non dice nulla sulla direzione della velocità"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La velocità è un vettore. Nel moto circolare uniforme, $|v|$ è costante ma la direzione cambia. Una forza $F \\neq 0$ è necessaria per produrre questa accelerazione centripeta $a = v^2/r$.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "moto circolare",
-      "vettore",
-      "centripeta",
-      "prima legge"
-    ]
-  },
-  {
-    "id": "din_117",
-    "domanda": "In quale modo la seconda legge di Newton consente di prevedere il moto futuro di un sistema se si conoscono le forze e le condizioni iniziali?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Determinismo e prevedibilità",
-    "opzioni": [
-      "Non è possibile: il moto è caotico",
-      "Perché $F = ma$ fornisce l'accelerazione; integrando due volte si ricavano $v(t)$ e $s(t)$",
-      "Solo se il sistema è in equilibrio",
-      "Solo in assenza di attrito"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Nota $F(t)$, si ricava $a(t) = F(t)/m$. Integrando: $v(t) = v_0 + \\int a \\, dt$ e $s(t) = s_0 + \\int v \\, dt$. Questo costituisce il fondamento del determinismo classico.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "secondo principio",
-      "prevedibilità",
-      "integrazione",
-      "determinismo"
-    ]
-  },
-  {
-    "id": "din_118",
-    "domanda": "Una scatola scivola su un tavolo ruvido e si ferma dopo aver percorso una certa distanza. Cosa succede all'energia cinetica iniziale?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Attrito e energia",
-    "opzioni": [
-      "Scompare",
-      "Si trasforma in energia potenziale",
-      "Viene dissipata principalmente come calore a causa dell'attrito",
-      "Viene trasferita al tavolo che accelera"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "L'attrito è una forza dissipativa. L'energia cinetica si converte in calore (e deformazioni) tramite l'attrito: $E_{cinetica} = \\mu_d \\cdot mg \\cdot s$.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "attrito",
-      "energia cinetica",
-      "calore",
-      "dissipazione"
-    ]
-  },
-  {
-    "id": "din_119",
-    "domanda": "Perché il peso di un corpo aumenta o diminuisce a seconda della latitudine sulla Terra (anche ignorando la rotazione)?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Forza peso e gravità",
-    "opzioni": [
-      "Perché la massa cambia",
-      "Perché la Terra è una sfera leggermente oblata (schiacciata ai poli), variando la distanza dal centro e quindi $g$",
-      "Perché il sole influisce",
-      "Non cambia realmente, solo l'apparato di misura è impreciso"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La Terra è oblata. La distanza dal centro è minore ai poli (circa $6357$ km) e maggiore all'equatore (circa $6378$ km). Dato che $g \\propto 1/r^2$, il peso varia.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "peso",
-      "latitudine",
-      "oblato",
-      "terra"
-    ]
-  },
-  {
-    "id": "din_120",
-    "domanda": "Un corpo si muove in linea retta con accelerazione variabile nel tempo: $a(t) = kt$, dove $k$ è costante. Come varia la forza risultante nel tempo?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Forza variabile",
-    "opzioni": [
-      "Rimane costante",
-      "Varia linearmente: $F(t) = mkt$",
-      "Varia quadraticamente",
-      "Non si può stabilire senza ulteriori informazioni"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Dalla seconda legge: $F = ma$. Se $a(t) = kt$, allora $F(t) = m \\cdot kt = mkt$. La forza varia linearmente nel tempo.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "accelerazione variabile",
-      "forza variabile",
-      "F=ma",
-      "tempo"
-    ]
-  },
-  {
-    "id": "din_121",
-    "domanda": "Un'asse è appoggiata su due supporti. Un blocco è posto sull'asse e si muove verso uno dei supporti. Come cambia la normale su ciascun supporto?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Reazioni vincolari - distribuzioni",
-    "opzioni": [
-      "Entrambe rimangono uguali",
-      "Aumenta verso cui il blocco si muove, diminuisce sull'altro",
-      "Diminuisce verso cui il blocco si muove",
-      "Una diventa negativa"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Il blocco concentra il suo peso sul supporto verso cui è più vicino. La normale aumenta lì e diminuisce sull'altro, mantenendo l'equilibrio globale.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "normale",
-      "supporti",
-      "distribuzione",
-      "equilibrio"
-    ]
-  },
-  {
-    "id": "din_122",
-    "domanda": "In quale situazione la reazione normale può diventare nulla?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Reazioni vincolari",
-    "opzioni": [
-      "Quando il corpo è in caduta libera",
-      "Quando la massa è zero",
-      "Quando il corpo accelera verso l'alto",
-      "Mai, la normale è sempre presente"
-    ],
-    "rispostaCorretta": 0,
-    "spiegazione": "Se un corpo è in caduta libera (no vincolo dal suolo), la normale è zero. Più in generale, $N$ diventa zero quando il vincolo cessa di agire o quando il corpo si stacca.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "normale",
-      "caduta libera",
-      "vincolo",
-      "zero"
-    ]
-  },
-  {
-    "id": "din_123",
-    "domanda": "Un pendolo è appeso al soffitto di un vagone di treno. Durante una brusca frenata, il pendolo si inclina in avanti. Questo accade perché:",
-    "categoria": "Dinamica",
-    "sottocategoria": "Riferimenti non inerziali",
-    "opzioni": [
-      "Una forza lo spinge in avanti",
-      "Nel riferimento accelerato del vagone, compare una pseudo-forza indietro, bilanciata dalla tensione della corda",
-      "La gravità cambia durante la frenata",
-      "L'attrito del pendolo lo spinge avanti"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Nel riferimento del vagone (non inerziale, decelerante), su tutte le masse agisce una pseudo-forza in avanti $m \\cdot a_{freno}$. Il pendolo si inclina fino a quando la componente di tensione bilancia questa pseudo-forza.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "pendolo",
-      "vagone",
-      "pseudo-forza",
-      "riferimento non inerziale"
-    ]
-  },
-  {
-    "id": "din_124",
-    "domanda": "Perché un corpo che scivola su un piano inclinato non accelera indefinitamente, ma raggiunge una velocità limite?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Equilibrio dinamico",
-    "opzioni": [
-      "Perché la gravità diminuisce",
-      "Perché l'attrito aumenta con la velocità finché non bilancia la componente del peso parallela al piano",
-      "Nel modello Coulombiano, non raggiunge velocità limite se $\\mu_d < \\tan\\theta$",
-      "Perché il piano è curvo"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "Nel modello classico, $f = \\mu_d N$ è costante e non dipende da $v$. Velocità limite si raggiunge solo se altre forze dipendono da $v$ (come la resistenza dell'aria), non per attrito Coulombiano.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "piano inclinato",
-      "velocità limite",
-      "attrito",
-      "equilibrio"
-    ]
-  },
-  {
-    "id": "din_125",
-    "domanda": "Un'auto rallenta bruscamente e i passeggeri avvertono una sensazione di spinta in avanti. Quale delle seguenti affermazioni è più accurata?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Inerzia e pseudo-forze",
-    "opzioni": [
-      "Una forza esterna li spinge in avanti",
-      "Per inerzia, tendono a mantenere il moto mentre l'auto rallenta; nel riferimento dell'auto (non inerziale) sperimentano una pseudo-forza",
-      "La gravità li tira in avanti",
-      "Le cinture di sicurezza li spingono indietro, non avanti"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Nel riferimento inerziale del suolo, il corpo tende a mantenere la velocità (inerzia). Nel riferimento non inerziale dell'auto, compare una pseudo-forza apparente in avanti.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "auto",
-      "frenata",
-      "inerzia",
-      "pseudo-forza"
-    ]
-  },
-  {
-    "id": "din_126",
-    "domanda": "Come mai il coefficiente di attrito statico è tipicamente diverso per superfici diverse (acciaio su acciaio vs legno su legno)?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Attrito - proprietà dei materiali",
-    "opzioni": [
-      "Perché dipende dalla forma del corpo",
-      "Perché dipende principalmente dalla natura e struttura microscopica delle superfici materiali",
-      "Perché dipende dalla velocità",
-      "Non cambia veramente, è sempre lo stesso"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Il coefficiente di attrito dipende da fattori microscopici: rugosità, tipo di legami intermolecolari, deformabilità dei materiali. Materiali diversi hanno proprietà di contatto diverse.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "mu",
-      "superfici",
-      "materiali",
-      "proprietà"
-    ]
-  },
-  {
-    "id": "din_127",
-    "domanda": "Un corpo è sottoposto a due forze: una di $5$ N verso est e una di $12$ N verso nord. Quale è il modulo della risultante?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Composizione vettoriale di forze",
-    "opzioni": [
-      "$17$ N",
-      "$13$ N",
-      "$7$ N",
-      "$\\sqrt{25+144} = \\sqrt{169} = 13$ N"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Due forze perpendicolari: $R = \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13$ N.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "risultante",
-      "pitagora",
-      "vettori",
-      "forze"
-    ]
-  },
-  {
-    "id": "din_128",
-    "domanda": "Perché in gita fuori strada con un 4x4, se una ruota scivola bruscamente su ghiaccio, il veicolo tende a ribaltarsi verso l'esterno della curva?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Dinamica delle curve",
-    "opzioni": [
-      "Perché l'attrito è assente",
-      "Perché il corpo del veicolo continua in moto rettilineo per inerzia mentre le ruote cambiano direzione, generando un momento che lo ribalta",
-      "Perché la gravità cambia",
-      "Perché il motore spinge lateralmente"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Durante una curva veloce, l'attrito fornisce centripeta. Su ghiaccio viene a mancare, e il veicolo per inerzia tende a muoversi in linea retta, causando scivolamento laterale e potenziale ribaltamento.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "curva",
-      "ghiaccio",
-      "attrito",
-      "ribaltamento"
-    ]
-  },
-  {
-    "id": "din_129",
-    "domanda": "Un corpo cade dentro un liquido viscoso. Inizialmente accelera, poi raggiunge una velocità costante (terminale). Nel momento in cui raggiunge costanza, la risultante delle forze è:",
-    "categoria": "Dinamica",
-    "sottocategoria": "Velocità terminale",
-    "opzioni": [
-      "Grande (eguale al peso)",
-      "Nulla",
-      "Aumenta progressivamente",
-      "Dipende dal liquido"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "A velocità terminale, l'accelerazione è nulla, quindi la risultante è zero. La resistenza del fluido bilancia il peso: $F_{drag} + F_{galleggiamento} = mg$.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "velocità terminale",
-      "liquido",
-      "resistenza",
-      "equilibrio"
-    ]
-  },
-  {
-    "id": "din_130",
-    "domanda": "Un satellite geostazionario orbita a raggio $r$ costante attorno alla Terra. La sua accelerazione è:",
-    "categoria": "Dinamica",
-    "sottocategoria": "Moto orbitale",
-    "opzioni": [
-      "Zero, perché è in orbita stabile",
-      "Costante, diretta verso il centro (centripeta), valore $g_{satellite} = GM/r^2$",
-      "Varia nel tempo",
-      "Negativa (opposta al moto)"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Un satellite ha accelerazione centripeta costante $a_c = v^2/r = GM/r^2$ diretta verso il centro. L'orbita è stabile perché questa accelerazione è fornita esattamente dalla gravità.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "satellite",
-      "orbita",
-      "centripeta",
-      "stabile"
-    ]
-  },
-  {
-    "id": "din_131",
-    "domanda": "In un ascensore che accelera verso l'alto, il passeggero sulla bilancia si sente più pesante. Ciò accade perché:",
-    "categoria": "Dinamica",
-    "sottocategoria": "Peso apparente",
-    "opzioni": [
-      "La gravità aumenta",
-      "La bilancia misura la normale, che ora deve accelerare il passeggero verso l'alto oltre a sostenerlo",
-      "La massa aumenta",
-      "L'accelerazione di gravità cambia"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La bilancia misura $N$. Applicando $F=ma$: $N - mg = ma$, quindi $N = m(g+a)$. Se $a > 0$ (verso l'alto), la normale e il peso apparente aumentano.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "ascensore",
-      "bilancia",
-      "normale",
-      "accelerazione"
-    ]
-  },
-  {
-    "id": "din_132",
-    "domanda": "Quale principio fisico consente a un trampolinista di raggiungere altezze sempre maggiori sul trampolino?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Applicazione della seconda legge",
-    "opzioni": [
-      "La gravità diminuisce temporaneamente",
-      "Il trampolino fornisce forza elastica ($F=kx$) che accelera il corpo; maggiore è la compressione, maggiore è la forza e l'accelerazione",
-      "Il corpo non cade mai durante il rimbalzo",
-      "La massa del corpo diminuisce"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Il trampolino compresso esercita $F = kx$ verso l'alto. Durante la spinta, questa forza supera il peso, producendo accelerazione verso l'alto. Velocità di decollo: $v^2 = 2as$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "trampolino",
-      "elastica",
-      "accelerazione",
-      "rimbalzo"
-    ]
-  },
-  {
-    "id": "din_133",
-    "domanda": "Un corpo è in equilibrio statico su un piano inclinato. Se inclino leggermente di più il piano, il corpo rimane in equilibrio? Perché?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Equilibrio statico",
-    "opzioni": [
-      "Sì, sempre rimane in equilibrio",
-      "No, se $\\tan\\theta$ supera il coefficiente di attrito statico $\\mu_s$, il corpo inizia a scivolare",
-      "Dipende dalla massa del corpo",
-      "Rimane in equilibrio solo se la velocità iniziale è nulla"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Condizione di equilibrio: $mg \\sin\\theta \\leq f_{s,max} = \\mu_s mg \\cos\\theta$, quindi $\\tan\\theta \\leq \\mu_s$. Se $\\theta$ aumenta oltre $\\arctan(\\mu_s)$, l'equilibrio si rompe.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "piano inclinato",
-      "equilibrio",
-      "attrito",
-      "tan"
-    ]
-  },
-  {
-    "id": "din_134",
-    "domanda": "Un corpo di massa $10$ kg è tirato da una corda inclinata $30^\\circ$ sopra l'orizzontale con tensione $T$. L'accelerazione orizzontale è $2$ m/s$^2$. Quale è l'effetto della componente verticale della tensione sulla normale?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Forze inclinate e risultante",
-    "opzioni": [
-      "Aumenta la normale",
-      "Diminuisce la normale perché riduce il carico sul piano",
-      "Non ha effetto",
-      "Inverte la direzione della normale"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La componente verticale $T \\sin\\theta$ agisce verso l'alto. Per equilibrio verticale: $N + T \\sin 30^\\circ = mg$, quindi $N = mg - T \\sin 30^\\circ$. La normale diminuisce.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "corda inclinata",
-      "normale",
-      "componente verticale",
-      "equilibrio"
-    ]
-  },
-  {
-    "id": "din_135",
-    "domanda": "Durante una collisione, perché indossare le cinture di sicurezza o gli airbag riduce le lesioni anche se il tempo di arresto è molto breve?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Impulso e varietà di forze",
-    "opzioni": [
-      "Perché aumentano il tempo di arresto, riducendo l'accelerazione ($F=ma$) e quindi la forza d'impatto",
-      "Perché cambiano la massa della persona",
-      "Perché la gravità agisce diversamente",
-      "Perché gli airbag sono magici"
-    ],
-    "rispostaCorretta": 0,
-    "spiegazione": "Cinture e airbag distribuiscono l'arresto su un intervallo di tempo più lungo. Se $\\Delta v$ è costante, una $\\Delta t$ maggiore produce $a$ minore ($a = \\Delta v / \\Delta t$). Quindi $F = ma$ è minore, riducendo le lesioni.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "collisione",
-      "cintura",
-      "airbag",
-      "tempo di arresto"
-    ]
-  },
-  {
-    "id": "din_136",
-    "domanda": "In quale situazione il lavoro compiuto da una forza è negativo?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Lavoro e forze",
-    "opzioni": [
-      "Quando la forza è nulla",
-      "Quando la forza ha componente opposta allo spostamento",
-      "Quando il corpo è fermo",
-      "Quando la massa aumenta"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Lavoro $W = F \\cdot s \\cdot \\cos\\theta$. Se $\\theta > 90^\\circ$, $\\cos\\theta < 0$ e $W < 0$. Esempi: attrito (opposto al moto), frenata (forza opposta a $v$).",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "lavoro",
-      "negativo",
-      "forza",
-      "spostamento"
-    ]
-  },
-  {
-    "id": "din_137",
-    "domanda": "Un corpo di massa 5 kg è soggetto a una forza netta di 20 N. Calcola la sua accelerazione.",
-    "categoria": "Dinamica",
-    "sottocategoria": "Seconda legge di Newton",
-    "opzioni": [
-      "$2 \\, m/s^2$",
-      "$4 \\, m/s^2$",
-      "$10 \\, m/s^2$",
-      "$100 \\, m/s^2$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Dalla seconda legge di Newton: $a = F/m = 20/5 = 4 \\, m/s^2$.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "accelerazione",
-      "forza",
-      "massa",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_138",
-    "domanda": "Un blocco di 10 kg scivola su un piano con coefficiente di attrito dinamico $\\mu_d = 0.2$. Quale è la forza di attrito? (Usa $g = 10 \\, m/s^2$)",
-    "categoria": "Dinamica",
-    "sottocategoria": "Attrito",
-    "opzioni": [
-      "$10 \\, N$",
-      "$20 \\, N$",
-      "$50 \\, N$",
-      "$100 \\, N$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Forza di attrito: $F_{attr} = \\mu_d \\cdot N = \\mu_d \\cdot mg = 0.2 \\cdot 10 \\cdot 10 = 20 \\, N$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "attrito",
-      "coefficiente",
-      "piano",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_139",
-    "domanda": "Un'automobile di massa 1000 kg accelera da 0 a 20 m/s in 5 secondi. Qual è la forza medio applicata?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Seconda legge di Newton",
-    "opzioni": [
-      "$2000 \\, N$",
-      "$4000 \\, N$",
-      "$5000 \\, N$",
-      "$10000 \\, N$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Accelerazione: $a = \\Delta v / \\Delta t = 20/5 = 4 \\, m/s^2$. Forza: $F = ma = 1000 \\cdot 4 = 4000 \\, N$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "forza",
-      "accelerazione",
-      "automobile",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_140",
-    "domanda": "Un blocco di 8 kg scende lungo un piano inclinato di 30° senza attrito. Calcola l'accelerazione lungo il piano. (Usa $g = 10 \\, m/s^2$, $\\sin 30° = 0.5$)",
-    "categoria": "Dinamica",
-    "sottocategoria": "Piano inclinato",
-    "opzioni": [
-      "$2.5 \\, m/s^2$",
-      "$5 \\, m/s^2$",
-      "$8 \\, m/s^2$",
-      "$10 \\, m/s^2$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La componente del peso lungo il piano è $F = mg\\sin\\theta$. L'accelerazione è $a = g\\sin\\theta = 10 \\cdot 0.5 = 5 \\, m/s^2$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "piano inclinato",
-      "accelerazione",
-      "componente",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_141",
-    "domanda": "Una forza costante di 50 N sposta un oggetto di 10 m nella stessa direzione della forza. Quanto lavoro è compiuto?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Lavoro",
-    "opzioni": [
-      "$5 \\, J$",
-      "$50 \\, J$",
-      "$500 \\, J$",
-      "$5000 \\, J$"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "Lavoro: $W = F \\cdot s = 50 \\cdot 10 = 500 \\, J$.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "lavoro",
-      "forza",
-      "spostamento",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_142",
-    "domanda": "Un corpo di massa 4 kg ha velocità iniziale 10 m/s e finale 20 m/s. Qual è la variazione di quantità di moto?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Quantità di moto",
-    "opzioni": [
-      "$10 \\, kg \\cdot m/s$",
-      "$20 \\, kg \\cdot m/s$",
-      "$40 \\, kg \\cdot m/s$",
-      "$80 \\, kg \\cdot m/s$"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "Variazione: $\\Delta p = m\\Delta v = 4 \\cdot (20-10) = 4 \\cdot 10 = 40 \\, kg \\cdot m/s$.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "quantità di moto",
-      "impulso",
-      "variazione",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_143",
-    "domanda": "Un motore compie un lavoro di 3000 J in 5 secondi. Qual è la potenza medio erogata?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Potenza",
-    "opzioni": [
-      "$300 \\, W$",
-      "$600 \\, W$",
-      "$1500 \\, W$",
-      "$15000 \\, W$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Potenza medio: $P = W/t = 3000/5 = 600 \\, W$.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "potenza",
-      "lavoro",
-      "tempo",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_144",
-    "domanda": "Una forza di 30 N forma un angolo di 60° con lo spostamento di 4 m. Quanto lavoro viene compiuto? (Usa $\\cos 60° = 0.5$)",
-    "categoria": "Dinamica",
-    "sottocategoria": "Lavoro",
-    "opzioni": [
-      "$30 \\, J$",
-      "$60 \\, J$",
-      "$90 \\, J$",
-      "$120 \\, J$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Lavoro: $W = F \\cdot s \\cdot \\cos\\theta = 30 \\cdot 4 \\cdot 0.5 = 60 \\, J$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "lavoro",
-      "angolo",
-      "coseno",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_145",
-    "domanda": "Un corpo di 2 kg si muove con velocità costante di 5 m/s. Quale forza orizzontale è necessaria per mantenerlo in movimento su un piano con $\\mu_d = 0.3$? (Usa $g = 10 \\, m/s^2$)",
-    "categoria": "Dinamica",
-    "sottocategoria": "Attrito",
-    "opzioni": [
-      "$3 \\, N$",
-      "$6 \\, N$",
-      "$15 \\, N$",
-      "$30 \\, N$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Per velocità costante, la forza deve bilanciare l'attrito: $F = \\mu_d \\cdot mg = 0.3 \\cdot 2 \\cdot 10 = 6 \\, N$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "attrito",
-      "velocità costante",
-      "equilibrio",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_146",
-    "domanda": "Un oggetto di 6 kg cade liberamente per 3 secondi. Quale quantità di moto ha acquisito? (Usa $g = 10 \\, m/s^2$)",
-    "categoria": "Dinamica",
-    "sottocategoria": "Caduta libera",
-    "opzioni": [
-      "$60 \\, kg \\cdot m/s$",
-      "$90 \\, kg \\cdot m/s$",
-      "$180 \\, kg \\cdot m/s$",
-      "$270 \\, kg \\cdot m/s$"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "Velocità finale: $v = gt = 10 \\cdot 3 = 30 \\, m/s$. Quantità di moto: $p = mv = 6 \\cdot 30 = 180 \\, kg \\cdot m/s$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "caduta libera",
-      "quantità di moto",
-      "velocità",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_147",
-    "domanda": "Una massa di 3 kg ruota su una traiettoria circolare di raggio 2 m con velocità tangenziale 4 m/s. Qual è la forza centripeta?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Moto circolare",
-    "opzioni": [
-      "$12 \\, N$",
-      "$24 \\, N$",
-      "$36 \\, N$",
-      "$48 \\, N$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Forza centripeta: $F_c = \\frac{mv^2}{r} = \\frac{3 \\cdot 4^2}{2} = \\frac{3 \\cdot 16}{2} = 24 \\, N$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "moto circolare",
-      "forza centripeta",
-      "velocità",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_148",
-    "domanda": "Un blocco di 12 kg è su un piano inclinato di 30° con $\\mu_s = 0.4$. Calcola la forza normale. (Usa $g = 10 \\, m/s^2$, $\\cos 30° \\approx 0.87$)",
-    "categoria": "Dinamica",
-    "sottocategoria": "Piano inclinato",
-    "opzioni": [
-      "$60 \\, N$",
-      "$87 \\, N$",
-      "$104 \\, N$",
-      "$120 \\, N$"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "Forza normale: $N = mg\\cos\\theta = 12 \\cdot 10 \\cdot 0.87 = 104.4 \\, N \\approx 104 \\, N$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "piano inclinato",
-      "normale",
-      "componente",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_149",
-    "domanda": "Una forza di 100 N agisce per 0.2 secondi su un corpo fermo di massa 5 kg. Quale velocità finale raggiunge?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Impulso",
-    "opzioni": [
-      "$2 \\, m/s$",
-      "$4 \\, m/s$",
-      "$10 \\, m/s$",
-      "$20 \\, m/s$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Impulso: $I = F \\cdot t = 100 \\cdot 0.2 = 20 \\, N \\cdot s$. Velocità: $v = I/m = 20/5 = 4 \\, m/s$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "impulso",
-      "forza",
-      "velocità",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_150",
-    "domanda": "Un corpo di 8 kg viene trainato con forza costante di 64 N su un piano orizzontale senza attrito. Quanto spazio percorre in 4 secondi partendo da fermo?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Cinematica dinamica",
-    "opzioni": [
-      "$32 \\, m$",
-      "$64 \\, m$",
-      "$128 \\, m$",
-      "$256 \\, m$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Accelerazione: $a = F/m = 64/8 = 8 \\, m/s^2$. Spazio: $s = \\frac{1}{2}at^2 = \\frac{1}{2} \\cdot 8 \\cdot 16 = 64 \\, m$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "accelerazione",
-      "spazio",
-      "tempo",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_151",
-    "domanda": "Due corpi di massa $m_1 = 3 \\, kg$ e $m_2 = 6 \\, kg$ sono collegati da una fune su una carrucola. Qual è l'accelerazione del sistema? (Trascura attrito e massa della carrucola, $g = 10 \\, m/s^2$)",
-    "categoria": "Dinamica",
-    "sottocategoria": "Macchina di Atwood",
-    "opzioni": [
-      "$\\frac{10}{3} \\, m/s^2$",
-      "$5 \\, m/s^2$",
-      "$\\frac{20}{3} \\, m/s^2$",
-      "$10 \\, m/s^2$"
-    ],
-    "rispostaCorretta": 0,
-    "spiegazione": "Per la macchina di Atwood: $a = \\frac{(m_2 - m_1)g}{m_1 + m_2} = \\frac{(6-3) \\cdot 10}{3+6} = \\frac{30}{9} = \\frac{10}{3} \\, m/s^2$.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "Atwood",
-      "carrucola",
-      "accelerazione",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_152",
-    "domanda": "Un proiettile di 0.05 kg viene sparato con velocità 200 m/s. Qual è la sua quantità di moto?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Quantità di moto",
-    "opzioni": [
-      "$1 \\, kg \\cdot m/s$",
-      "$4 \\, kg \\cdot m/s$",
-      "$10 \\, kg \\cdot m/s$",
-      "$40 \\, kg \\cdot m/s$"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "Quantità di moto: $p = mv = 0.05 \\cdot 200 = 10 \\, kg \\cdot m/s$.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "quantità di moto",
-      "proiettile",
-      "velocità",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_153",
-    "domanda": "Un veicolo di massa 800 kg viaggia a 15 m/s e frena fino a fermarsi in 50 m. Qual è la forza frenante medio?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Lavoro e energia",
-    "opzioni": [
-      "$900 \\, N$",
-      "$1200 \\, N$",
-      "$1800 \\, N$",
-      "$2400 \\, N$"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "Energia cinetica: $E_k = \\frac{1}{2}mv^2 = \\frac{1}{2} \\cdot 800 \\cdot 225 = 90000 \\, J$. Forza: $F = E_k/s = 90000/50 = 1800 \\, N$.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "frenata",
-      "energia",
-      "forza",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_154",
-    "domanda": "Un corpo di 2.5 kg accelera da 8 m/s a 12 m/s in 2 secondi. Qual è la forza netta applicata?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Seconda legge di Newton",
-    "opzioni": [
-      "$2.5 \\, N$",
-      "$5 \\, N$",
-      "$10 \\, N$",
-      "$20 \\, N$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Accelerazione: $a = \\Delta v / \\Delta t = (12-8)/2 = 2 \\, m/s^2$. Forza: $F = ma = 2.5 \\cdot 2 = 5 \\, N$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "accelerazione",
-      "forza",
-      "variazione velocità",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_155",
-    "domanda": "Su una massa di 15 kg agiscono due forze orizzontali opposte: 80 N verso destra e 50 N verso sinistra. Qual è l'accelerazione risultante?",
-    "categoria": "Dinamica",
-    "sottocategoria": "Forze concorrenti",
-    "opzioni": [
-      "$1 \\, m/s^2$ verso destra",
-      "$2 \\, m/s^2$ verso destra",
-      "$3 \\, m/s^2$ verso sinistra",
-      "$5 \\, m/s^2$ verso sinistra"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Forza risultante: $F_{ris} = 80 - 50 = 30 \\, N$ verso destra. Accelerazione: $a = F/m = 30/15 = 2 \\, m/s^2$ verso destra.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "forze",
-      "risultante",
-      "accelerazione",
-      "calcolo"
-    ]
-  },
-  {
-    "id": "din_156",
-    "domanda": "Un satellite di massa 500 kg orbita alla velocità di 8000 m/s su una traiettoria circolare di raggio 7000 km. Qual è la forza centripeta? (Esprimi la risposta in kN)",
-    "categoria": "Dinamica",
-    "sottocategoria": "Moto circolare",
-    "opzioni": [
-      "$2286 \\, kN$",
-      "$4571 \\, kN$",
-      "$6857 \\, kN$",
-      "$9143 \\, kN$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Forza centripeta: $F_c = \\frac{mv^2}{r} = \\frac{500 \\cdot (8000)^2}{7 \\times 10^6} = \\frac{500 \\cdot 64 \\times 10^6}{7 \\times 10^6} = \\frac{32000}{7} \\times 10^3 \\approx 4571 \\, kN$.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "satellite",
-      "orbita",
-      "forza centripeta",
-      "calcolo"
-    ]
-  }
+      "paroleChiave": ["inerzia", "frenata", "riferimento non inerziale", "passeggeri"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_093",
+      "domanda": "In quale situazione la forza di attrito statico compie lavoro positivo su un corpo?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito statico",
+      "opzioni": [
+        "Quando il corpo scivola su una superficie ruvida",
+        "Quando il corpo viene trascinato lentamente senza scivolare",
+        "Quando è la causa del moto del corpo (es. camminare, accelerare un'auto)",
+        "L'attrito statico non compie mai lavoro"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L'attrito statico compie lavoro positivo quando accelera il corpo (es. quando cammini, il terreno ti spinge avanti; quando un'auto accelera, l'attrito tra ruote e terreno la propel).",
+      "difficolta": "medio",
+      "paroleChiave": ["attrito statico", "lavoro", "motore", "accelerazione"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_094",
+      "domanda": "Cosa rappresenta fisicamente il coefficiente di attrito $\\mu$?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito",
+      "opzioni": [
+        "La forza di attrito in newton",
+        "Una misura adimensionale della ruvidità relativa tra due superfici",
+        "La velocità a cui inizia lo slittamento",
+        "La massa del corpo che scivola"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il coefficiente di attrito è una grandezza adimensionale che dipende dalle proprietà delle due superfici in contatto, non dalla forma, massa o velocità.",
+      "difficolta": "facile",
+      "paroleChiave": ["mu", "attrito", "proprie superfici", "adimensionale"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_095",
+      "domanda": "Per quale ragione teorica la prima legge di Newton non è indipendente dalla seconda?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Leggi di Newton",
+      "opzioni": [
+        "La prima legge è un caso particolare della seconda con $F = 0$",
+        "La prima legge precede cronoloicamente la seconda",
+        "Non c'è alcuna relazione tra loro",
+        "La prima legge riguarda solo masse piccole"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Se $F_{risultante} = 0$, allora $a = 0$ dalla seconda legge ($F = ma$), il che concorda con la prima legge. Quindi la prima è un caso particolare della seconda.",
+      "difficolta": "medio",
+      "paroleChiave": ["leggi newton", "indipendenza", "F=ma", "inerzia"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_096",
+      "domanda": "Un satellite orbita attorno a un pianeta con velocità costante ma non è in equilibrio. Perché?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto circolare e accelerazione",
+      "opzioni": [
+        "Perché la velocità non è nulla",
+        "Perché subisce un'accelerazione (centripeta) diretta verso il centro",
+        "Perché la forza di gravità non agisce su di esso",
+        "Perché cade verso il pianeta"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'equilibrio statico richiede $a = 0$. Nel moto orbitale circolare, c'è sempre un'accelerazione centripeta (la direzione di $v$ continua a cambiare), quindi il satellite non è in equilibrio.",
+      "difficolta": "medio",
+      "paroleChiave": ["orbita", "centripeta", "equilibrio", "accelerazione"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_097",
+      "domanda": "Quale delle seguenti affermazioni sulla terza legge di Newton è falsa?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Leggi di Newton",
+      "opzioni": [
+        "Le forze di azione e reazione hanno lo stesso modulo",
+        "Agiscono sempre su corpi diversi",
+        "Si annullano reciprocamente se applicate allo stesso corpo",
+        "Hanno la stessa retta d'azione"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L'affermazione falsa è la terza: le forze azione-reazione per definizione agiscono su corpi diversi, quindi non possono sommarsi e annullarsi.",
+      "difficolta": "facile",
+      "paroleChiave": ["terza legge", "azione-reazione", "falso", "corpi diversi"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_098",
+      "domanda": "Quando spari una freccia con un arco, la corda applica una forza $F$ alla freccia. Per la terza legge, la freccia applica una forza $-F$ alla corda. Come mai la corda non rimbalza indietro con la stessa energia della freccia?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Terza legge - interpretazione",
+      "opzioni": [
+        "La terza legge non è vera per le frecce",
+        "Perché l'arco ha massa molto maggiore della freccia. A parità di forza, l'accelerazione è minore.",
+        "Perché la corda è più corta della freccia",
+        "Perché l'arco è tenuto fermo dalla mano"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Sebbene forze uguali e opposte agiscono per lo stesso tempo su freccia e corda, $F = ma$ implica che $a = F/m$. La massa della corda è maggiore, quindi la sua accelerazione è minore e la velocità finale è minore.",
+      "difficolta": "medio",
+      "paroleChiave": ["terza legge", "arco freccia", "accelerazione", "massa"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_099",
+      "domanda": "Come cambia la distanza di frenata di un'auto se raddoppia la velocità iniziale (a parità di decelerazione)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Cinematica e dinamica",
+      "opzioni": [
+        "Raddoppia",
+        "Quadruplica",
+        "Dimezza",
+        "Rimane la stessa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Con $v^2 = v_0^2 - 2a \\cdot s$, se $v=0$ abbiamo $s = v_0^2 / (2a)$. Se $v_0$ raddoppia, $s$ quadruplica (relazione quadratica).",
+      "difficolta": "medio",
+      "paroleChiave": ["frenata", "spazio", "velocità", "v2"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_100",
+      "domanda": "Perché l'attrito dinamico è approssimativamente indipendente dalla velocità (nel range macroscopico)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito - proprietà",
+      "opzioni": [
+        "Perché è una proprietà fondamentale della materia",
+        "Perché dipende dalla normale, che non cambia con la velocità",
+        "Perché la velocità non influisce sulle interazioni atomiche locali",
+        "Perché la forza di attrito è sempre uguale al peso"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'attrito dinamico $F_d = \\mu_d \\cdot N$ dipende dalla normale $N$, che è determinata dalle forze perpendicolari al piano, non dalla velocità di scorrimento.",
+      "difficolta": "medio",
+      "paroleChiave": ["attrito", "velocità", "normale", "proprieta"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_101",
+      "domanda": "Un corpo è tirato da due funi che formano un angolo di $90^\\circ$ tra loro, ognuna con tensione $T$. Quale è il modulo della risultante?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Composizione di forze",
+      "opzioni": [
+        "$2T$",
+        "$T\\sqrt{2}$",
+        "$T$",
+        "$T/2$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Due forze di modulo $T$ perpendicolari tra loro: $R = \\sqrt{T^2 + T^2} = T\\sqrt{2}$.",
+      "difficolta": "facile",
+      "paroleChiave": ["composizione", "forze", "risultante", "90 gradi"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_102",
+      "domanda": "In quale direzione agisce la forza di attrito su un corpo che scivola su un piano?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito dinamico",
+      "opzioni": [
+        "Nella direzione del moto",
+        "Sempre verso il basso",
+        "Opposta al moto relativo tra le superfici",
+        "Parallela alla normale"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L'attrito dinamico si oppone sempre al moto relativo tra le due superfici, indipendentemente dalla direzione del moto assoluto.",
+      "difficolta": "facile",
+      "paroleChiave": ["attrito", "direzione", "moto relativo", "dinamico"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_103",
+      "domanda": "Perché un astronauta sulla Luna, con un peso minore che sulla Terra, potrebbe comunque avere difficoltà a muoversi velocemente?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Massa vs peso",
+      "opzioni": [
+        "Perché la Luna non ha attrito",
+        "Perché la massa non cambia; cambia solo il peso. Per accelerare la stessa massa serve comunque la stessa forza.",
+        "Perché sulla Luna non esiste la forza di gravità",
+        "Perché l'astronauta è dentro una tuta molto pesante"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La massa è invariante; per accelerarla serve $F = ma$. Sulla Luna $g$ è minore, quindi il peso è minore, ma la massa conserva l'inerzia.",
+      "difficolta": "medio",
+      "paroleChiave": ["luna", "massa", "peso", "inerzia"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_104",
+      "domanda": "Quale affermazione sulla reazione normale è corretta?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Reazioni vincolari",
+      "opzioni": [
+        "È sempre uguale al peso del corpo",
+        "È la forza esercitata da una superficie per evitare che un corpo l'attraversi",
+        "Agisce parallela alla superficie",
+        "Dipende dalla velocità del corpo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La reazione normale è una forza di vincolo perpendicolare alla superficie che impedisce l'interpenetrazione. Non è necessariamente uguale al peso (dipende da altre forze verticali).",
+      "difficolta": "facile",
+      "paroleChiave": ["normale", "reazione vincolare", "perpendicolare", "contatto"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_105",
+      "domanda": "Durante una virata di un'auto su curva orizzontale (senza sopraelevazione), quale forza fornisce l'accelerazione centripeta?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito e moto circolare",
+      "opzioni": [
+        "La gravità",
+        "La tensione del volante",
+        "L'attrito radente tra pneumatici e asfalto",
+        "Una forza centrifuga reale"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L'attrito statico tra pneumatici e asfalto fornisce la forza di attrito che agisce come centripeta, mantenendo l'auto in traiettoria.",
+      "difficolta": "medio",
+      "paroleChiave": ["curva", "attrito", "centripeta", "automobile"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_106",
+      "domanda": "Un corpo cade in caduta libera in un ascensore che accelera verso il basso con accelerazione $a < g$. Come appare il moto del corpo nel riferimento dell'ascensore?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Riferimenti accelerati",
+      "opzioni": [
+        "Il corpo rimane fermo",
+        "Il corpo accelera verso l'alto",
+        "Il corpo accelera verso il basso con accelerazione $g - a$",
+        "Il corpo non si muove"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel riferimento dell'ascensore (non inerziale), il corpo subisce una pseudo-forza $m(g - a)$ verso il basso. L'accelerazione apparente è $g - a$.",
+      "difficolta": "difficile",
+      "paroleChiave": ["ascensore", "caduta libera", "riferimento non inerziale", "pseudo-forza"],
+      "richiedeCalcolo": true
+    },
+    {
+      "id": "din_107",
+      "domanda": "Se sospendo un corpo con una fune leggera (massa trascurabile) e tiro la fune verso l'alto con accelerazione $a$, come cambia la tensione rispetto al peso?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Tensione e accelerazione",
+      "opzioni": [
+        "Rimane uguale al peso",
+        "Aumenta di $m \\cdot a$",
+        "Dipende dal colore della fune",
+        "Diventa zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Applicando $F = ma$ in direzione verticale: $T - mg = ma$, quindi $T = m(g + a)$. La tensione aumenta rispetto al peso statico.",
+      "difficolta": "facile",
+      "paroleChiave": ["tensione", "accelerazione", "fune", "peso"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_108",
+      "domanda": "Un corpo è appoggiato su una bilancia in un ascensore fermo. Se l'ascensore inizia a salire con accelerazione costante, quale fenomeno osserva una persona sulla bilancia?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Peso apparente",
+      "opzioni": [
+        "Il peso diminuisce",
+        "Il peso aumenta temporaneamente, poi ritorna normale",
+        "Il peso aumenta proporzionalmente all'accelerazione",
+        "Il peso rimane sempre lo stesso"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Durante l'accelerazione verso l'alto, la normale aumenta: $N = m(g + a)$. La bilancia misura questa normale, quindi il peso apparente aumenta.",
+      "difficolta": "facile",
+      "paroleChiave": ["ascensore", "bilancia", "peso apparente", "accelerazione"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_109",
+      "domanda": "Perché un oggetto appoggiato su un tavolo accelerante non scivola, mentre uno su un tavolo lungo un piano inclinato può scivolare?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito statico",
+      "opzioni": [
+        "Perché l'attrito sui tavoli orizzontali è maggiore",
+        "Perché la normale è diversa; su piano inclinato è $mg \\cos\\theta$, mentre su tavolo accelerante è $mg\\sqrt{1 + (a/g)^2}$",
+        "Perché la gravità agisce diversamente",
+        "Perché il primo tavolo è meglio lubrificato"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La differenza sta nella normale. Su piano inclinato la componente parallela $mg \\sin\\theta$ non è controbilanciata. Su tavolo accelerante, se $\\mu_s$ è sufficiente, l'attrito può bilanciare $ma$.",
+      "difficolta": "difficile",
+      "paroleChiave": ["attrito", "piano inclinato", "accelerazione", "confronto"],
+      "richiedeCalcolo": true
+    },
+    {
+      "id": "din_110",
+      "domanda": "Un corpo di massa $m$ si muove in linea retta. La risultante delle forze passa sempre per il baricentro perché:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Meccanica del corpo rigido",
+      "opzioni": [
+        "Come conseguenza della terza legge di Newton",
+        "Per definizione il baricentro è il punto dove si concentra l'azione della risultante",
+        "Perché è il principio del'equilibrio rotazionale",
+        "Nessuno dei motivi precedenti, è una conseguenza della definizione di risultante"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La risultante delle forze agisce nel baricentro per definizione di baricentro (centro di massa). Se così non fosse, il corpo ruoterebbe anche durante il moto traslatorio.",
+      "difficolta": "difficile",
+      "paroleChiave": ["baricentro", "risultante", "centro di massa", "traslazione"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_111",
+      "domanda": "Due blocchi identici vengono lanciati orizzontalmente dalla stessa altezza con velocità diverse. Quale affermazione è corretta?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Indipendenza delle accelerazioni",
+      "opzioni": [
+        "Quello più veloce cade più lentamente",
+        "Quello più lento cade in meno tempo",
+        "Entrambi impiegano lo stesso tempo a cadere (l'accelerazione di gravità è indipendente da $v$ orizzontale)",
+        "Il blocco più veloce cade prima"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L'accelerazione verticale $g$ è indipendente dalla velocità orizzontale. Il tempo di volo dipende solo da $h$: $t = \\sqrt{2h/g}$.",
+      "difficolta": "facile",
+      "paroleChiave": ["caduta libera", "lanciato", "velocità orizzontale", "indipendenza"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_112",
+      "domanda": "Una molla è compressa e rilascia un corpo. Quale affermazione sulla forza elastica è vera?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Molle e forza elastica",
+      "opzioni": [
+        "La forza elastica è costante durante il rilascio",
+        "La forza elastica è massima quando la compressione è massima e nulla quando la molla torna a lunghezza naturale",
+        "La forza elastica non compie lavoro",
+        "La forza elastica dipende dalla velocità del corpo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Dalla legge di Hooke $F = kx$, la forza è proporzionale alla deformazione $x$. È massima quando $x$ è massima (molla compressa) e diventa nulla quando $x=0$ (lunghezza naturale).",
+      "difficolta": "facile",
+      "paroleChiave": ["hooke", "molla", "elastica", "kx"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_113",
+      "domanda": "Perché in un salto in verticale da una piattaforma, l'accelerazione durante la fase di stacco (spinta verso l'alto) è fondamentale per l'altezza raggiunta?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Applicazione della seconda legge",
+      "opzioni": [
+        "Perché determina il tempo di contatto con il suolo",
+        "Perché $F = ma$ durante la spinta; una forza maggiore (dallo squat) produce accelerazione maggiore, quindi velocità di decollo maggiore",
+        "Perché la gravità agisce meno durante la spinta",
+        "Perché dipende dal peso della persona"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Durante la spinta, $F - mg = ma$. Una forza muscolare $F$ maggiore produce $a$ maggiore. La velocità di decollo è $v = a \\cdot t_{spinta}$. Altezza: $h = v^2 / (2g)$.",
+      "difficolta": "medio",
+      "paroleChiave": ["salto", "accelerazione", "spinta", "altezza"],
+      "richiedeCalcolo": true
+    },
+    {
+      "id": "din_114",
+      "domanda": "Un corpo viene lanciato verso l'alto. Nel punto di massima altezza, qual è il suo stato di equilibrio?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Equilibrio e velocità",
+      "opzioni": [
+        "È in equilibrio perché la velocità è zero",
+        "Non è in equilibrio perché ha accelerazione non nulla ($g$ verso il basso) anche se $v = 0$",
+        "L'accelerazione diventa zero al culmine",
+        "È in equilibrio statico"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'equilibrio richiede $a = 0$, ma al culmine lungo la traiettoria agisce ancora $g$. La velocità è zero (istantaneamente), ma l'accelerazione non è zero. Non è equilibrio.",
+      "difficolta": "medio",
+      "paroleChiave": ["lancio", "massima altezza", "accelerazione", "equilibrio"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_115",
+      "domanda": "Nel modello dell'attrito Coulombiano, perché l'attrito statico massimo è maggiore dell'attrito dinamico ($\\mu_s > \\mu_d$)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito - interpretazione",
+      "opzioni": [
+        "Perché la superficie è meno ruvida dopo l'inizio dello slittamento",
+        "Perché i picchi di ruvidezza rimangono incastrati, richiedendo una forza maggiore per iniziare il moto",
+        "Perché la gravità agisce meno quando il corpo si muove",
+        "Il modello non spiega questa differenza"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Interpretazione microscopica: quando due superfici sono a riposo, gli attriti microscopici e i legami superficiali sono più forti. Con il moto, questi cedono e il corpo rimane in moto con attrito minore.",
+      "difficolta": "medio",
+      "paroleChiave": ["attrito statico", "attrito dinamico", "mu_s", "mu_d"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_116",
+      "domanda": "Un corpo è in moto circolare uniforme. La sua velocità è costante in modulo ma non in direzione. Come si riconcilia questo con la prima legge di Newton?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto circolare e inerzia",
+      "opzioni": [
+        "Non si riconcilia; la prima legge è sbagliata per moti circolari",
+        "Perché c'è una forza risultante (centripeta) che causa il continuo cambio di direzione della velocità",
+        "Perché la velocità è costante in modulo, quindi $F = 0$",
+        "La prima legge non dice nulla sulla direzione della velocità"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La velocità è un vettore. Nel moto circolare uniforme, $|v|$ è costante ma la direzione cambia. Una forza $F \\neq 0$ è necessaria per produrre questa accelerazione centripeta $a = v^2/r$.",
+      "difficolta": "facile",
+      "paroleChiave": ["moto circolare", "vettore", "centripeta", "prima legge"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_117",
+      "domanda": "In quale modo la seconda legge di Newton consente di prevedere il moto futuro di un sistema se si conoscono le forze e le condizioni iniziali?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Determinismo e prevedibilità",
+      "opzioni": [
+        "Non è possibile: il moto è caotico",
+        "Perché $F = ma$ fornisce l'accelerazione; integrando due volte si ricavano $v(t)$ e $s(t)$",
+        "Solo se il sistema è in equilibrio",
+        "Solo in assenza di attrito"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nota $F(t)$, si ricava $a(t) = F(t)/m$. Integrando: $v(t) = v_0 + \\int a \\, dt$ e $s(t) = s_0 + \\int v \\, dt$. Questo costituisce il fondamento del determinismo classico.",
+      "difficolta": "difficile",
+      "paroleChiave": ["secondo principio", "prevedibilità", "integrazione", "determinismo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_118",
+      "domanda": "Una scatola scivola su un tavolo ruvido e si ferma dopo aver percorso una certa distanza. Cosa succede all'energia cinetica iniziale?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito e energia",
+      "opzioni": [
+        "Scompare",
+        "Si trasforma in energia potenziale",
+        "Viene dissipata principalmente come calore a causa dell'attrito",
+        "Viene trasferita al tavolo che accelera"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L'attrito è una forza dissipativa. L'energia cinetica si converte in calore (e deformazioni) tramite l'attrito: $E_{cinetica} = \\mu_d \\cdot mg \\cdot s$.",
+      "difficolta": "facile",
+      "paroleChiave": ["attrito", "energia cinetica", "calore", "dissipazione"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_119",
+      "domanda": "Perché il peso di un corpo aumenta o diminuisce a seconda della latitudine sulla Terra (anche ignorando la rotazione)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Forza peso e gravità",
+      "opzioni": [
+        "Perché la massa cambia",
+        "Perché la Terra è una sfera leggermente oblata (schiacciata ai poli), variando la distanza dal centro e quindi $g$",
+        "Perché il sole influisce",
+        "Non cambia realmente, solo l'apparato di misura è impreciso"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La Terra è oblata. La distanza dal centro è minore ai poli (circa $6357$ km) e maggiore all'equatore (circa $6378$ km). Dato che $g \\propto 1/r^2$, il peso varia.",
+      "difficolta": "medio",
+      "paroleChiave": ["peso", "latitudine", "oblato", "terra"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_120",
+      "domanda": "Un corpo si muove in linea retta con accelerazione variabile nel tempo: $a(t) = kt$, dove $k$ è costante. Come varia la forza risultante nel tempo?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Forza variabile",
+      "opzioni": [
+        "Rimane costante",
+        "Varia linearmente: $F(t) = mkt$",
+        "Varia quadraticamente",
+        "Non si può stabilire senza ulteriori informazioni"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Dalla seconda legge: $F = ma$. Se $a(t) = kt$, allora $F(t) = m \\cdot kt = mkt$. La forza varia linearmente nel tempo.",
+      "difficolta": "facile",
+      "paroleChiave": ["accelerazione variabile", "forza variabile", "F=ma", "tempo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_121",
+      "domanda": "Un'asse è appoggiata su due supporti. Un blocco è posto sull'asse e si muove verso uno dei supporti. Come cambia la normale su ciascun supporto?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Reazioni vincolari - distribuzioni",
+      "opzioni": [
+        "Entrambe rimangono uguali",
+        "Aumenta verso cui il blocco si muove, diminuisce sull'altro",
+        "Diminuisce verso cui il blocco si muove",
+        "Una diventa negativa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il blocco concentra il suo peso sul supporto verso cui è più vicino. La normale aumenta lì e diminuisce sull'altro, mantenendo l'equilibrio globale.",
+      "difficolta": "medio",
+      "paroleChiave": ["normale", "supporti", "distribuzione", "equilibrio"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_122",
+      "domanda": "In quale situazione la reazione normale può diventare nulla?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Reazioni vincolari",
+      "opzioni": [
+        "Quando il corpo è in caduta libera",
+        "Quando la massa è zero",
+        "Quando il corpo accelera verso l'alto",
+        "Mai, la normale è sempre presente"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Se un corpo è in caduta libera (no vincolo dal suolo), la normale è zero. Più in generale, $N$ diventa zero quando il vincolo cessa di agire o quando il corpo si stacca.",
+      "difficolta": "facile",
+      "paroleChiave": ["normale", "caduta libera", "vincolo", "zero"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_123",
+      "domanda": "Un pendolo è appeso al soffitto di un vagone di treno. Durante una brusca frenata, il pendolo si inclina in avanti. Questo accade perché:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Riferimenti non inerziali",
+      "opzioni": [
+        "Una forza lo spinge in avanti",
+        "Nel riferimento accelerato del vagone, compare una pseudo-forza indietro, bilanciata dalla tensione della corda",
+        "La gravità cambia durante la frenata",
+        "L'attrito del pendolo lo spinge avanti"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel riferimento del vagone (non inerziale, decelerante), su tutte le masse agisce una pseudo-forza in avanti $m \\cdot a_{freno}$. Il pendolo si inclina fino a quando la componente di tensione bilancia questa pseudo-forza.",
+      "difficolta": "medio",
+      "paroleChiave": ["pendolo", "vagone", "pseudo-forza", "riferimento non inerziale"],
+      "richiedeCalcolo": true
+    },
+    {
+      "id": "din_124",
+      "domanda": "Perché un corpo che scivola su un piano inclinato non accelera indefinitamente, ma raggiunge una velocità limite?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Equilibrio dinamico",
+      "opzioni": [
+        "Perché la gravità diminuisce",
+        "Perché l'attrito aumenta con la velocità finché non bilancia la componente del peso parallela al piano",
+        "Nel modello Coulombiano, non raggiunge velocità limite se $\\mu_d < \\tan\\theta$",
+        "Perché il piano è curvo"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Nel modello classico, $f = \\mu_d N$ è costante e non dipende da $v$. Velocità limite si raggiunge solo se altre forze dipendono da $v$ (como la resistenza dell'aria), non per attrito Coulombiano.",
+      "difficolta": "difficile",
+      "paroleChiave": ["piano inclinato", "velocità limite", "attrito", "equilibrio"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_125",
+      "domanda": "Un'auto rallenta bruscamente e i passeggeri avvertono una sensazione di spinta in avanti. Quale delle seguenti affermazioni è più accurata?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Inerzia e pseudo-forze",
+      "opzioni": [
+        "Una forza esterna li spinge in avanti",
+        "Per inerzia, tendono a mantenere il moto mentre l'auto rallenta; nel riferimento dell'auto (non inerziale) sperimentano una pseudo-forza",
+        "La gravità li tira in avanti",
+        "Le cinture di sicurezza li spingono indietro, non avanti"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Nel riferimento inerziale del suolo, il corpo tende a mantenere la velocità (inerzia). Nel riferimento non inerziale dell'auto, compare una pseudo-forza apparente in avanti.",
+      "difficolta": "facile",
+      "paroleChiave": ["auto", "frenata", "inerzia", "pseudo-forza"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_126",
+      "domanda": "Come mai il coefficiente di attrito statico è tipicamente diverso per superfici diverse (acciaio su acciaio vs legno su legno)?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito - proprietà dei materiali",
+      "opzioni": [
+        "Perché dipende dalla forma del corpo",
+        "Perché dipende principalmente dalla natura e struttura microscopica delle superfici materiali",
+        "Perché dipende dalla velocità",
+        "Non cambia veramente, è sempre lo stesso"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il coefficiente di attrito dipende da fattori microscopici: rugosità, tipo di legami intermolecolari, deformabilità dei materiali. Materiali diversi hanno proprietà di contatto diverse.",
+      "difficolta": "medio",
+      "paroleChiave": ["mu", "superfici", "materiali", "proprietà"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_127",
+      "domanda": "Un corpo è sottoposto a due forze: una di $5$ N verso est e una di $12$ N verso nord. Quale è il modulo della risultante?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Composizione vettoriale di forze",
+      "opzioni": [
+        "$17$ N",
+        "$13$ N",
+        "$7$ N",
+        "$\\sqrt{25+144} = \\sqrt{169} = 13$ N"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Due forze perpendicolari: $R = \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13$ N.",
+      "difficolta": "facile",
+      "paroleChiave": ["risultante", "pitagora", "vettori", "forze"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_128",
+      "domanda": "Perché in gita fuori strada con un 4x4, se una ruota scivola bruscamente su ghiaccio, il veicolo tende a ribaltarsi verso l'esterno della curva?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Dinamica delle curve",
+      "opzioni": [
+        "Perché l'attrito è assente",
+        "Perché il corpo del veicolo continua in moto rettilineo per inerzia mentre le ruote cambiano direzione, generando un momento che lo ribalta",
+        "Perché la gravità cambia",
+        "Perché il motore spinge lateralmente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Durante una curva veloce, l'attrito fornisce centripeta. Su ghiaccio viene a mancare, e il veicolo per inerzia tende a muoversi in linea retta, causando scivolamento laterale e potenziale ribaltamento.",
+      "difficolta": "difficile",
+      "paroleChiave": ["curva", "ghiaccio", "attrito", "ribaltamento"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_129",
+      "domanda": "Un corpo cade dentro un liquido viscoso. Inizialmente accelera, poi raggiunge una velocità costante (terminale). Nel momento in cui raggiunge costanza, la risultante delle forze è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Velocità terminale",
+      "opzioni": [
+        "Grande (eguale al peso)",
+        "Nulla",
+        "Aumenta progressivamente",
+        "Dipende dal liquido"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "A velocità terminale, l'accelerazione è nulla, quindi la risultante è zero. La resistenza del fluido bilancia il peso: $F_{drag} + F_{galleggiamento} = mg$.",
+      "difficolta": "facile",
+      "paroleChiave": ["velocità terminale", "liquido", "resistenza", "equilibrio"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_130",
+      "domanda": "Un satellite geostazionario orbita a raggio $r$ costante attorno alla Terra. La sua accelerazione è:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto orbitale",
+      "opzioni": [
+        "Zero, perché è in orbita stabile",
+        "Costante, diretta verso il centro (centripeta), valore $g_{satellite} = GM/r^2$",
+        "Varia nel tempo",
+        "Negativa (opposta al moto)"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un satellite ha accelerazione centripeta costante $a_c = v^2/r = GM/r^2$ diretta verso il centro. L'orbita è stabile perché questa accelerazione è fornita esattamente dalla gravità.",
+      "difficolta": "medio",
+      "paroleChiave": ["satellite", "orbita", "centripeta", "stabile"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_131",
+      "domanda": "In un ascensore che accelera verso l'alto, il passeggero sulla bilancia si sente più pesante. Ciò accade perché:",
+      "categoria": "Dinamica",
+      "sottocategoria": "Peso apparente",
+      "opzioni": [
+        "La gravità aumenta",
+        "La bilancia misura la normale, che ora deve accelerare il passeggero verso l'alto oltre a sostenerlo",
+        "La massa aumenta",
+        "L'accelerazione di gravità cambia"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La bilancia misura $N$. Applicando $F=ma$: $N - mg = ma$, quindi $N = m(g+a)$. Se $a > 0$ (verso l'alto), la normale e il peso apparente aumentano.",
+      "difficolta": "facile",
+      "paroleChiave": ["ascensore", "bilancia", "normale", "accelerazione"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_132",
+      "domanda": "Quale principio fisico consente a un trampolinista di raggiungere altezze sempre maggiori sul trampolino?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Applicazione della seconda legge",
+      "opzioni": [
+        "La gravità diminuisce temporaneamente",
+        "Il trampolino fornisce forza elastica ($F=kx$) che accelera il corpo; maggiore è la compressione, maggiore è la forza e l'accelerazione",
+        "Il corpo non cade mai durante il rimbalzo",
+        "La massa del corpo diminuisce"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il trampolino compresso esercita $F = kx$ verso l'alto. Durante la spinta, questa forza supera il peso, producendo accelerazione verso l'alto. Velocità di decollo: $v^2 = 2as$.",
+      "difficolta": "medio",
+      "paroleChiave": ["trampolino", "elastica", "accelerazione", "rimbalzo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_133",
+      "domanda": "Un corpo è in equilibrio statico su un piano inclinato. Se inclino leggermente di più il piano, il corpo rimane in equilibrio? Perché?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Equilibrio statico",
+      "opzioni": [
+        "Sì, sempre rimane in equilibrio",
+        "No, se $\\tan\\theta$ supera il coefficiente di attrito statico $\\mu_s$, il corpo inizia a scivolare",
+        "Dipende dalla massa del corpo",
+        "Rimane in equilibrio solo se la velocità iniziale è nulla"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Condizione di equilibrio: $mg \\sin\\theta \\leq f_{s,max} = \\mu_s mg \\cos\\theta$, quindi $\\tan\\theta \\leq \\mu_s$. Se $\\theta$ aumenta oltre $\\arctan(\\mu_s)$, l'equilibrio si rompe.",
+      "difficolta": "medio",
+      "paroleChiave": ["piano inclinato", "equilibrio", "attrito", "tan"],
+      "richiedeCalcolo": true
+    },
+    {
+      "id": "din_134",
+      "domanda": "Un corpo di massa $10$ kg è tirato da una corda inclinata $30^\\circ$ sopra l'orizzontale con tensione $T$. L'accelerazione orizzontale è $2$ m/s$^2$. Quale è l'effetto della componente verticale della tensione sulla normale?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Forze inclinate e risultante",
+      "opzioni": [
+        "Aumenta la normale",
+        "Diminuisce la normale perché riduce il carico sul piano",
+        "Non ha effetto",
+        "Inverte la direzione della normale"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La componente verticale $T \\sin\\theta$ agisce verso l'alto. Per equilibrio verticale: $N + T \\sin 30^\\circ = mg$, quindi $N = mg - T \\sin 30^\\circ$. La normale diminuisce.",
+      "difficolta": "medio",
+      "paroleChiave": ["corda inclinata", "normale", "componente verticale", "equilibrio"],
+      "richiedeCalcolo": true
+    },
+    {
+      "id": "din_135",
+      "domanda": "Durante una collisione, perché indossare le cinture di sicurezza o gli airbag riduce le lesioni anche se il tempo di arresto è molto breve?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Impulso e varietà di forze",
+      "opzioni": [
+        "Perché aumentano il tempo di arresto, riducendo l'accelerazione ($F=ma$) e quindi la forza d'impatto",
+        "Perché cambiano la massa della persona",
+        "Perché la gravità agisce diversamente",
+        "Perché gli airbag sono magici"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Cinture e airbag distribuiscono l'arresto su un intervallo di tempo più lungo. Se $\\Delta v$ è costante, una $\\Delta t$ maggiore produce $a$ minore ($a = \\Delta v / \\Delta t$). Quindi $F = ma$ è minore, riducendo le lesioni.",
+      "difficolta": "facile",
+      "paroleChiave": ["collisione", "cintura", "airbag", "tempo di arresto"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_136",
+      "domanda": "In quale situazione il lavoro compiuto da una forza è negativo?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Lavoro e forze",
+      "opzioni": [
+        "Quando la forza è nulla",
+        "Quando la forza ha componente opposta allo spostamento",
+        "Quando il corpo è fermo",
+        "Quando la massa aumenta"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Lavoro $W = F \\cdot s \\cdot \\cos\\theta$. Se $\\theta > 90^\\circ$, $\\cos\\theta < 0$ e $W < 0$. Esempi: attrito (opposto al moto), frenata (forza opposta a $v$).",
+      "difficolta": "facile",
+      "paroleChiave": ["lavoro", "negativo", "forza", "spostamento"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_137",
+      "domanda": "Un corpo di massa 5 kg è soggetto a una forza netta di 20 N. Calcola la sua accelerazione.",
+      "categoria": "Dinamica",
+      "sottocategoria": "Seconda legge di Newton",
+      "opzioni": [
+        "$2 \\, m/s^2$",
+        "$4 \\, m/s^2$",
+        "$10 \\, m/s^2$",
+        "$100 \\, m/s^2$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Dalla seconda legge di Newton: $a = F/m = 20/5 = 4 \\, m/s^2$.",
+      "difficolta": "facile",
+      "paroleChiave": ["accelerazione", "forza", "massa", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_138",
+      "domanda": "Un blocco di 10 kg scivola su un piano con coefficiente di attrito dinamico $\\mu_d = 0.2$. Quale è la forza di attrito? (Usa $g = 10 \\, m/s^2$)",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito",
+      "opzioni": [
+        "$10 \\, N$",
+        "$20 \\, N$",
+        "$50 \\, N$",
+        "$100 \\, N$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Forza di attrito: $F_{attr} = \\mu_d \\cdot N = \\mu_d \\cdot mg = 0.2 \\cdot 10 \\cdot 10 = 20 \\, N$.",
+      "difficolta": "medio",
+      "paroleChiave": ["attrito", "coefficiente", "piano", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_139",
+      "domanda": "Un'automobile di massa 1000 kg accelera da 0 a 20 m/s in 5 secondi. Qual è la forza medio applicata?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Seconda legge di Newton",
+      "opzioni": [
+        "$2000 \\, N$",
+        "$4000 \\, N$",
+        "$5000 \\, N$",
+        "$10000 \\, N$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Accelerazione: $a = \\Delta v / \\Delta t = 20/5 = 4 \\, m/s^2$. Forza: $F = ma = 1000 \\cdot 4 = 4000 \\, N$.",
+      "difficolta": "medio",
+      "paroleChiave": ["forza", "accelerazione", "automobile", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_140",
+      "domanda": "Un blocco di 8 kg scende lungo un piano inclinato di 30° senza attrito. Calcola l'accelerazione lungo il piano. (Usa $g = 10 \\, m/s^2$, $\\sin 30° = 0.5$)",
+      "categoria": "Dinamica",
+      "sottocategoria": "Piano inclinato",
+      "opzioni": [
+        "$2.5 \\, m/s^2$",
+        "$5 \\, m/s^2$",
+        "$8 \\, m/s^2$",
+        "$10 \\, m/s^2$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La componente del peso lungo il piano è $F = mg\\sin\\theta$. L'accelerazione è $a = g\\sin\\theta = 10 \\cdot 0.5 = 5 \\, m/s^2$.",
+      "difficolta": "medio",
+      "paroleChiave": ["piano inclinato", "accelerazione", "componente", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_141",
+      "domanda": "Una forza costante di 50 N sposta un oggetto di 10 m nella stessa direzione della forza. Quanto lavoro è compiuto?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Lavoro",
+      "opzioni": [
+        "$5 \\, J$",
+        "$50 \\, J$",
+        "$500 \\, J$",
+        "$5000 \\, J$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Lavoro: $W = F \\cdot s = 50 \\cdot 10 = 500 \\, J$.",
+      "difficolta": "facile",
+      "paroleChiave": ["lavoro", "forza", "spostamento", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_142",
+      "domanda": "Un corpo di massa 4 kg ha velocità iniziale 10 m/s e finale 20 m/s. Qual è la variazione di quantità di moto?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Quantità di moto",
+      "opzioni": [
+        "$10 \\, kg \\cdot m/s$",
+        "$20 \\, kg \\cdot m/s$",
+        "$40 \\, kg \\cdot m/s$",
+        "$80 \\, kg \\cdot m/s$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Variazione: $\\Delta p = m\\Delta v = 4 \\cdot (20-10) = 4 \\cdot 10 = 40 \\, kg \\cdot m/s$.",
+      "difficolta": "facile",
+      "paroleChiave": ["quantità di moto", "impulso", "variazione", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_143",
+      "domanda": "Un motore compie un lavoro di 3000 J in 5 secondi. Qual è la potenza medio erogata?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Potenza",
+      "opzioni": [
+        "$300 \\, W$",
+        "$600 \\, W$",
+        "$1500 \\, W$",
+        "$15000 \\, W$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Potenza medio: $P = W/t = 3000/5 = 600 \\, W$.",
+      "difficolta": "facile",
+      "paroleChiave": ["potenza", "lavoro", "tempo", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_144",
+      "domanda": "Una forza di 30 N forma un angolo di 60° con lo spostamento di 4 m. Quanto lavoro viene compiuto? (Usa $\\cos 60° = 0.5$)",
+      "categoria": "Dinamica",
+      "sottocategoria": "Lavoro",
+      "opzioni": [
+        "$30 \\, J$",
+        "$60 \\, J$",
+        "$90 \\, J$",
+        "$120 \\, J$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Lavoro: $W = F \\cdot s \\cdot \\cos\\theta = 30 \\cdot 4 \\cdot 0.5 = 60 \\, J$.",
+      "difficolta": "medio",
+      "paroleChiave": ["lavoro", "angolo", "coseno", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_145",
+      "domanda": "Un corpo di 2 kg si muove con velocità costante di 5 m/s. Quale forza orizzontale è necessaria per mantenerlo in movimento su un piano con $\\mu_d = 0.3$? (Usa $g = 10 \\, m/s^2$)",
+      "categoria": "Dinamica",
+      "sottocategoria": "Attrito",
+      "opzioni": [
+        "$3 \\, N$",
+        "$6 \\, N$",
+        "$15 \\, N$",
+        "$30 \\, N$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Per velocità costante, la forza deve bilanciare l'attrito: $F = \\mu_d \\cdot mg = 0.3 \\cdot 2 \\cdot 10 = 6 \\, N$.",
+      "difficolta": "medio",
+      "paroleChiave": ["attrito", "velocità costante", "equilibrio", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_146",
+      "domanda": "Un oggetto di 6 kg cade liberamente per 3 secondi. Quale quantità di moto ha acquisito? (Usa $g = 10 \\, m/s^2$)",
+      "categoria": "Dinamica",
+      "sottocategoria": "Caduta libera",
+      "opzioni": [
+        "$60 \\, kg \\cdot m/s$",
+        "$90 \\, kg \\cdot m/s$",
+        "$180 \\, kg \\cdot m/s$",
+        "$270 \\, kg \\cdot m/s$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Velocità finale: $v = gt = 10 \\cdot 3 = 30 \\, m/s$. Quantità di moto: $p = mv = 6 \\cdot 30 = 180 \\, kg \\cdot m/s$.",
+      "difficolta": "medio",
+      "paroleChiave": ["caduta libera", "quantità di moto", "velocità", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_147",
+      "domanda": "Una massa di 3 kg ruota su una traiettoria circolare di raggio 2 m con velocità tangenziale 4 m/s. Qual è la forza centripeta?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto circolare",
+      "opzioni": [
+        "$12 \\, N$",
+        "$24 \\, N$",
+        "$36 \\, N$",
+        "$48 \\, N$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Forza centripeta: $F_c = \\frac{mv^2}{r} = \\frac{3 \\cdot 4^2}{2} = \\frac{3 \\cdot 16}{2} = 24 \\, N$.",
+      "difficolta": "medio",
+      "paroleChiave": ["moto circolare", "forza centripeta", "velocità", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_148",
+      "domanda": "Un blocco di 12 kg è su un piano inclinato di 30° con $\\mu_s = 0.4$. Calcola la forza normale. (Usa $g = 10 \\, m/s^2$, $\\cos 30° \\approx 0.87$)",
+      "categoria": "Dinamica",
+      "sottocategoria": "Piano inclinato",
+      "opzioni": [
+        "$60 \\, N$",
+        "$87 \\, N$",
+        "$104 \\, N$",
+        "$120 \\, N$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Forza normale: $N = mg\\cos\\theta = 12 \\cdot 10 \\cdot 0.87 = 104.4 \\, N \\approx 104 \\, N$.",
+      "difficolta": "medio",
+      "paroleChiave": ["piano inclinato", "normale", "componente", "calcolo"],
+      "richiedeCalcolo": true
+    },
+    {
+      "id": "din_149",
+      "domanda": "Una forza di 100 N agisce per 0.2 secondi su un corpo fermo di massa 5 kg. Quale velocità finale raggiunge?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Impulso",
+      "opzioni": [
+        "$2 \\, m/s$",
+        "$4 \\, m/s$",
+        "$10 \\, m/s$",
+        "$20 \\, m/s$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Impulso: $I = F \\cdot t = 100 \\cdot 0.2 = 20 \\, N \\cdot s$. Velocità: $v = I/m = 20/5 = 4 \\, m/s$.",
+      "difficolta": "medio",
+      "paroleChiave": ["impulso", "forza", "velocità", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_150",
+      "domanda": "Un corpo di 8 kg viene trainato con forza costante di 64 N su un piano orizzontale senza attrito. Quanto spazio percorre in 4 secondi partendo da fermo?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Cinematica dinamica",
+      "opzioni": [
+        "$32 \\, m$",
+        "$64 \\, m$",
+        "$128 \\, m$",
+        "$256 \\, m$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Accelerazione: $a = F/m = 64/8 = 8 \\, m/s^2$. Spazio: $s = \\frac{1}{2}at^2 = \\frac{1}{2} \\cdot 8 \\cdot 16 = 64 \\, m$.",
+      "difficolta": "medio",
+      "paroleChiave": ["accelerazione", "spazio", "tempo", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_151",
+      "domanda": "Due corpi di massa $m_1 = 3 \\, kg$ e $m_2 = 6 \\, kg$ sono collegati da una fune su una carrucola. Qual è l'accelerazione del sistema? (Trascura attrito e massa della carrucola, $g = 10 \\, m/s^2$)",
+      "categoria": "Dinamica",
+      "sottocategoria": "Macchina di Atwood",
+      "opzioni": [
+        "$\\frac{10}{3} \\, m/s^2$",
+        "$5 \\, m/s^2$",
+        "$\\frac{20}{3} \\, m/s^2$",
+        "$10 \\, m/s^2$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per la macchina di Atwood: $a = \\frac{(m_2 - m_1)g}{m_1 + m_2} = \\frac{(6-3) \\cdot 10}{3+6} = \\frac{30}{9} = \\frac{10}{3} \\, m/s^2$.",
+      "difficolta": "difficile",
+      "paroleChiave": ["Atwood", "carrucola", "accelerazione", "calcolo"],
+      "richiedeCalcolo": true
+    },
+    {
+      "id": "din_152",
+      "domanda": "Un proiettile di 0.05 kg viene sparato con velocità 200 m/s. Qual è la sua quantità di moto?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Quantità di moto",
+      "opzioni": [
+        "$1 \\, kg \\cdot m/s$",
+        "$4 \\, kg \\cdot m/s$",
+        "$10 \\, kg \\cdot m/s$",
+        "$40 \\, kg \\cdot m/s$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Quantità di moto: $p = mv = 0.05 \\cdot 200 = 10 \\, kg \\cdot m/s$.",
+      "difficolta": "facile",
+      "paroleChiave": ["quantità di moto", "proiettile", "velocità", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_153",
+      "veicolo": "veicolo di massa 800 kg viaggia a 15 m/s e frena fino a fermarsi in 50 m. Qual è la forza frenante medio?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Lavoro e energia",
+      "opzioni": [
+        "$900 \\, N$",
+        "$1200 \\, N$",
+        "$1800 \\, N$",
+        "$2400 \\, N$"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Energia cinetica: $E_k = \\frac{1}{2}mv^2 = \\frac{1}{2} \\cdot 800 \\cdot 225 = 90000 \\, J$. Forza: $F = E_k/s = 90000/50 = 1800 \\, N$.",
+      "difficolta": "difficile",
+      "paroleChiave": ["frenata", "energia", "forza", "calcolo"],
+      "richiedeCalcolo": true
+    },
+    {
+      "id": "din_154",
+      "domanda": "Un corpo di 2.5 kg accelera da 8 m/s a 12 m/s in 2 secondi. Qual è la forza netta applicata?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Seconda legge di Newton",
+      "opzioni": [
+        "$2.5 \\, N$",
+        "$5 \\, N$",
+        "$10 \\, N$",
+        "$20 \\, N$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Accelerazione: $a = \\Delta v / \\Delta t = (12-8)/2 = 2 \\, m/s^2$. Forza: $F = ma = 2.5 \\cdot 2 = 5 \\, N$.",
+      "difficolta": "medio",
+      "paroleChiave": ["accelerazione", "forza", "variazione velocità", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_155",
+      "domanda": "Su una massa di 15 kg agiscono due forze orizzontali opposte: 80 N verso destra e 50 N verso sinistra. Qual è l'accelerazione risultante?",
+      "categoria": "Dinamica",
+      "sottocategoria": "Forze concorrenti",
+      "opzioni": [
+        "$1 \\, m/s^2$ verso destra",
+        "$2 \\, m/s^2$ verso destra",
+        "$3 \\, m/s^2$ verso sinistra",
+        "$5 \\, m/s^2$ verso sinistra"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Forza risultante: $F_{ris} = 80 - 50 = 30 \\, N$ verso destra. Accelerazione: $a = F/m = 30/15 = 2 \\, m/s^2$ verso destra.",
+      "difficolta": "medio",
+      "paroleChiave": ["forze", "risultante", "accelerazione", "calcolo"],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "din_156",
+      "domanda": "Un satellite di massa 500 kg orbita alla velocità di 8000 m/s su una traiettoria circolare di raggio 7000 km. Qual è la forza centripeta? (Esprimi la risposta in kN)",
+      "categoria": "Dinamica",
+      "sottocategoria": "Moto circolare",
+      "opzioni": [
+        "$2286 \\, kN$",
+        "$4571 \\, kN$",
+        "$6857 \\, kN$",
+        "$9143 \\, kN$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Forza centripeta: $F_c = \\frac{mv^2}{r} = \\frac{500 \\cdot (8000)^2}{7 \\times 10^6} = \\frac{500 \\cdot 64 \\times 10^6}{7 \\times 10^6} = \\frac{32000}{7} \\times 10^3 \\approx 4571 \\, kN$.",
+      "difficolta": "difficile",
+      "paroleChiave": ["satellite", "orbita", "forza centripeta", "calcolo"],
+      "richiedeCalcolo": true
+    }
   ]
 }

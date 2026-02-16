@@ -19,7 +19,8 @@
         "B",
         "unità",
         "SI"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_002",
@@ -40,7 +41,8 @@
         "weber",
         "m²",
         "equivalenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_003",
@@ -61,7 +63,8 @@
         "weber",
         "Φ",
         "unità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_004",
@@ -82,7 +85,8 @@
         "qvB",
         "seno",
         "carica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_005",
@@ -103,7 +107,8 @@
         "perpendicolare",
         "mano destra",
         "v e B"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_006",
@@ -124,7 +129,8 @@
         "parallelo",
         "sin0",
         "lorentz"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_007",
@@ -145,7 +151,8 @@
         "fem",
         "dPhi/dt",
         "segno meno"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_008",
@@ -166,7 +173,8 @@
         "opposizione",
         "variazione flusso",
         "segno meno"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_009",
@@ -187,7 +195,8 @@
         "permeabilità",
         "4pi",
         "costante"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_010",
@@ -208,7 +217,8 @@
         "campo",
         "mu0I/2pir",
         "biot-savart"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_011",
@@ -229,7 +239,8 @@
         "solenoide",
         "campo magnetico",
         "circuitazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_012",
@@ -250,7 +261,8 @@
         "mu0",
         "NIL",
         "campo interno"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_013",
@@ -271,7 +283,8 @@
         "flusso",
         "Phi",
         "fem"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_014",
@@ -292,11 +305,12 @@
         "dPhi/dt",
         "fem nulla",
         "faraday"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_015",
-      "domanda": "In quale caso una carica q in moto in un campo B subisce forza massima (in modulo)?",
+      "domanda": "In quale caso una carica q in moto in un campo B utile forza massima (in modulo)?",
       "categoria": "Magnetismo",
       "sottocategoria": "Massimo del seno",
       "opzioni": [
@@ -313,7 +327,8 @@
         "sin",
         "90 gradi",
         "lorentz"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_016",
@@ -334,7 +349,8 @@
         "corrente indotta",
         "opposizione",
         "flusso"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_017",
@@ -355,7 +371,8 @@
         "q",
         "v",
         "B"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_018",
@@ -373,10 +390,11 @@
       "difficolta": "facile",
       "paroleChiave": [
         "prodotto vettoriale",
+        "vettori",
         "v cross B",
-        "lorentz",
-        "vettori"
-      ]
+        "lorentz"
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_019",
@@ -397,7 +415,8 @@
         "carica positiva",
         "verso",
         "lorentz"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_020",
@@ -418,7 +437,8 @@
         "circuitazione",
         "corrente",
         "linea chiusa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_021",
@@ -439,7 +459,8 @@
         "filo lungo",
         "dipendenza",
         "campo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_022",
@@ -460,7 +481,8 @@
         "raddoppio",
         "filo",
         "1/r"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_023",
@@ -481,7 +503,8 @@
         "corrente",
         "filo",
         "campo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_024",
@@ -502,7 +525,8 @@
         "solenoide",
         "proporzionale",
         "N"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_025",
@@ -523,7 +547,8 @@
         "flusso variabile",
         "faraday",
         "dPhi/dt"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_026",
@@ -545,7 +570,8 @@
         "N",
         "I",
         "L"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_027",
@@ -566,7 +592,8 @@
         "fem",
         "faraday",
         "bobina"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_028",
@@ -587,7 +614,8 @@
         "verso opposto",
         "mano destra",
         "lorentz"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_029",
@@ -608,7 +636,8 @@
         "dB",
         "dl cross rhat",
         "mu0"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_030",
@@ -629,7 +658,8 @@
         "filo",
         "campo",
         "B"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_031",
@@ -650,7 +680,8 @@
         "lorentz",
         "dipendenze",
         "qvB"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_032",
@@ -671,7 +702,8 @@
         "lunghezza",
         "inverso",
         "campo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_033",
@@ -692,7 +724,8 @@
         "variazione flusso",
         "fem",
         "tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_034",
@@ -713,7 +746,8 @@
         "flusso aumenta",
         "campo indotto",
         "opposizione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_035",
@@ -734,7 +768,8 @@
         "newton",
         "ampere",
         "metro"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_036",
@@ -755,7 +790,8 @@
         "perpendicolare",
         "v cross B",
         "traiettoria"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_037",
@@ -776,7 +812,8 @@
         "vuoto",
         "costante",
         "permeabilità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_038",
@@ -797,7 +834,8 @@
         "forza nulla",
         "lorentz",
         "carica ferma"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_039",
@@ -818,7 +856,8 @@
         "distanza",
         "filo",
         "campo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_040",
@@ -839,7 +878,8 @@
         "tempo",
         "faraday",
         "flusso"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_041",
@@ -860,7 +900,8 @@
         "qvB",
         "perpendicolare",
         "newton"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_042",
@@ -881,7 +922,8 @@
         "0.12N",
         "lorentz",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_043",
@@ -902,7 +944,8 @@
         "carica",
         "campo uniforme",
         "v perpendicolare"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_044",
@@ -923,7 +966,8 @@
         "B raddoppia",
         "curvatura",
         "lorentz"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_045",
@@ -944,7 +988,8 @@
         "BA",
         "weber",
         "area"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_046",
@@ -965,7 +1010,8 @@
         "N spire",
         "deltaPhi",
         "faraday"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_047",
@@ -986,7 +1032,8 @@
         "corrente indotta",
         "opposizione",
         "campo indotto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_048",
@@ -1007,7 +1054,8 @@
         "campo",
         "mu0",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_049",
@@ -1028,7 +1076,8 @@
         "B=mu0NI/L",
         "calcolo",
         "millitesla"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_050",
@@ -1049,7 +1098,8 @@
         "ordine di grandezza",
         "solenoide",
         "mu0"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_051",
@@ -1070,7 +1120,8 @@
         "deviazione",
         "velocità costante",
         "lorentz"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_052",
@@ -1091,7 +1142,8 @@
         "fem",
         "deltaPhi",
         "faraday"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_053",
@@ -1112,7 +1164,8 @@
         "angolo",
         "orientazione",
         "spira"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_054",
@@ -1133,7 +1186,8 @@
         "fattore 4",
         "filo",
         "campo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_055",
@@ -1154,7 +1208,8 @@
         "angolo",
         "metà",
         "lorentz"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_056",
@@ -1175,7 +1230,8 @@
         "Ohm",
         "resistenza",
         "fem"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_057",
@@ -1196,7 +1252,8 @@
         "mu_r",
         "nucleo",
         "solenoide"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_058",
@@ -1217,7 +1274,8 @@
         "N^2",
         "sezione",
         "lunghezza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_059",
@@ -1238,7 +1296,8 @@
         "fem",
         "L dI/dt",
         "lenz"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_060",
@@ -1259,7 +1318,8 @@
         "induttore",
         "1/2LI2",
         "campo magnetico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_061",
@@ -1280,7 +1340,8 @@
         "joule",
         "induttanza",
         "corrente"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_062",
@@ -1301,7 +1362,8 @@
         "mu0",
         "N^2",
         "solenoide"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_063",
@@ -1322,7 +1384,8 @@
         "ordine",
         "henry",
         "solenoide"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_064",
@@ -1343,7 +1406,8 @@
         "dI/dt",
         "volt",
         "induttanza"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_065",
@@ -1364,7 +1428,8 @@
         "autoinduzione",
         "opposizione",
         "corrente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_066",
@@ -1385,7 +1450,8 @@
         "spire",
         "quadruplica",
         "induttanza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_067",
@@ -1406,7 +1472,8 @@
         "I^2",
         "quadruplica",
         "induttore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_068",
@@ -1427,7 +1494,8 @@
         "proporzionale",
         "B",
         "area"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_069",
@@ -1448,7 +1516,8 @@
         "cos60",
         "rotazione",
         "weber"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_070",
@@ -1469,7 +1538,8 @@
         "deltaPhi",
         "delta t",
         "faraday"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_071",
@@ -1490,7 +1560,8 @@
         "mu0",
         "2pir",
         "tesla"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_072",
@@ -1511,7 +1582,8 @@
         "N spire",
         "faraday",
         "Wb/s"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_073",
@@ -1532,7 +1604,8 @@
         "segno",
         "dI/dt",
         "volt"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_074",
@@ -1553,7 +1626,8 @@
         "1/2LI2",
         "joule",
         "henry"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_075",
@@ -1574,7 +1648,8 @@
         "L",
         "mu0",
         "solenoide"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_076",
@@ -1595,7 +1670,8 @@
         "lenz",
         "autoinduzione",
         "dI/dt"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_077",
@@ -1616,7 +1692,8 @@
         "I=1A",
         "induttore",
         "joule"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_078",
@@ -1637,7 +1714,8 @@
         "convenzioni",
         "faraday",
         "lenz"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_079",
@@ -1658,7 +1736,8 @@
         "mu0",
         "solenoide",
         "henry"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_080",
@@ -1679,7 +1758,8 @@
         "10^-4 H",
         "induttanza",
         "solenoide"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_081",
@@ -1700,7 +1780,8 @@
         "componenti",
         "v parallela",
         "v perpendicolare"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_082",
@@ -1721,7 +1802,8 @@
         "v cross B",
         "curvatura",
         "traiettoria"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_083",
@@ -1742,7 +1824,8 @@
         "I",
         "r",
         "fattore 6"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_084",
@@ -1763,7 +1846,8 @@
         "derivata",
         "faraday",
         "3V"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_085",
@@ -1784,7 +1868,8 @@
         "flusso",
         "faraday",
         "induzione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_086",
@@ -1805,7 +1890,8 @@
         "L dI/dt",
         "8V",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_087",
@@ -1820,13 +1906,14 @@
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Da U = 1/2 L I², L = 2U/I² = 36/9 = 4 H. ",
-      "difficile": "difficile",
+      "difficolta": "difficile",
       "paroleChiave": [
         "ricavare L",
         "energia",
         "I^2",
         "henry"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_088",
@@ -1847,7 +1934,8 @@
         "difficolta",
         "etichette",
         "json"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_089",
@@ -1868,7 +1956,8 @@
         "proporzionale",
         "induttanza",
         "solenoide"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_090",
@@ -1889,7 +1978,8 @@
         "filo lungo",
         "mu0",
         "campo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_091",
@@ -1910,7 +2000,8 @@
         "fem",
         "deltaPhi",
         "faraday"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_092",
@@ -1931,7 +2022,8 @@
         "2V",
         "faraday",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_093",
@@ -1952,7 +2044,8 @@
         "derivata",
         "faraday",
         "flusso"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_094",
@@ -1973,7 +2066,8 @@
         "0->I",
         "1/2LI2",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_095",
@@ -1994,7 +2088,8 @@
         "10J",
         "induttore",
         "energia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_096",
@@ -2015,7 +2110,8 @@
         "energia",
         "corrente",
         "1/2LI2"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_097",
@@ -2036,7 +2132,8 @@
         "modulo",
         "autoinduzione",
         "fem"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_098",
@@ -2057,7 +2154,8 @@
         "1/l",
         "induttanza",
         "solenoide"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_099",
@@ -2078,7 +2176,8 @@
         "BA",
         "fem medio",
         "bobina"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_100",
@@ -2099,7 +2198,8 @@
         "derivata",
         "autoinduzione",
         "2V"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_101",
@@ -2112,7 +2212,7 @@
         "1.0 V",
         "10 V"
       ],
-      "rispostaCorretta": 3,
+      "rispostaCorretta": 0,
       "spiegazione": "|dΦ/dt| = 2.0·10^-4 / 10^-3 = 0.20 Wb/s, quindi |$\\varepsilon$|=N|dΦ/dt|=500·0.20=100 V. ",
       "difficolta": "difficile",
       "paroleChiave": [
@@ -2120,7 +2220,8 @@
         "dPhi/dt",
         "fem",
         "100V"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_102",
@@ -2141,7 +2242,8 @@
         "100V",
         "faraday",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_103",
@@ -2162,7 +2264,8 @@
         "direzione",
         "perpendicolare",
         "lorentz"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_104",
@@ -2183,7 +2286,8 @@
         "invarianza",
         "filo lungo",
         "proporzioni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_105",
@@ -2204,7 +2308,8 @@
         "energia",
         "corrente",
         "raddoppio"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_106",
@@ -2225,7 +2330,8 @@
         "N^2/l",
         "triplica",
         "solenoide"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_107",
@@ -2246,7 +2352,8 @@
         "derivata",
         "fem massima",
         "faraday"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_108",
@@ -2267,7 +2374,8 @@
         "opposizione",
         "variazioni corrente",
         "autoinduzione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_109",
@@ -2288,7 +2396,8 @@
         "momento magnetico",
         "elettroni",
         "ferromagnetismo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_110",
@@ -2309,7 +2418,8 @@
         "Curie",
         "disallineamento",
         "agitazione termica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_111",
@@ -2330,7 +2440,8 @@
         "attrazione",
         "correnti",
         "campo magnetico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_112",
@@ -2351,7 +2462,8 @@
         "coppia",
         "Lorentz",
         "commutatore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_113",
@@ -2372,7 +2484,8 @@
         "commutatore",
         "flusso",
         "corrente continua"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_114",
@@ -2393,7 +2506,8 @@
         "N1",
         "N2",
         "rapporto spire"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_115",
@@ -2414,7 +2528,8 @@
         "Faraday",
         "flusso variabile",
         "induzione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_116",
@@ -2435,7 +2550,8 @@
         "energia",
         "velocità",
         "lavoro"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_117",
@@ -2456,7 +2572,8 @@
         "q/m",
         "velocità indipendente",
         "orbita"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_118",
@@ -2477,7 +2594,8 @@
         "repulsione",
         "mu_r < 1",
         "momento opposto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_119",
@@ -2498,7 +2616,8 @@
         "ferromagnetico",
         "allineamento",
         "spontaneo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_120",
@@ -2519,7 +2638,8 @@
         "domini",
         "magnet residua",
         "anisotropia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_121",
@@ -2540,7 +2660,8 @@
         "coppia",
         "forza traslazionale",
         "spira"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_122",
@@ -2561,7 +2682,8 @@
         "alta tensione",
         "perdite Joule",
         "I²R"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_123",
@@ -2582,7 +2704,8 @@
         "disomogeneità",
         "Gradiente",
         "levitazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_124",
@@ -2603,7 +2726,8 @@
         "campo uniforme",
         "interno",
         "esterno"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_125",
@@ -2624,7 +2748,8 @@
         "induzione mutua",
         "rapporto spire",
         "N1/N2"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_126",
@@ -2645,7 +2770,8 @@
         "Faraday",
         "Lenz",
         "resistenza al moto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_127",
@@ -2666,7 +2792,8 @@
         "1/2 LI²",
         "induttanza",
         "campo magnetico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_128",
@@ -2687,7 +2814,8 @@
         "LC",
         "f0",
         "impedenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_129",
@@ -2708,7 +2836,8 @@
         "resistenza zero",
         "Meissner",
         "corrente persistente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_130",
@@ -2729,7 +2858,8 @@
         "cos theta",
         "orientamento",
         "normale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_131",
@@ -2750,7 +2880,8 @@
         "Lorentz",
         "deviazione",
         "portatori carica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_132",
@@ -2771,7 +2902,8 @@
         "BLv",
         "barra",
         "potenziale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_133",
@@ -2792,7 +2924,8 @@
         "circuitazione",
         "corrente concatenata",
         "simmetria"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_134",
@@ -2813,7 +2946,8 @@
         "B²",
         "mu0",
         "quadrato"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_135",
@@ -2834,7 +2968,8 @@
         "conservazione energia",
         "lavoro esterno",
         "f.e.m. indotta"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_136",
@@ -2855,7 +2990,8 @@
         "mu",
         "IA",
         "regola mano destra"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_137",
@@ -2876,7 +3012,8 @@
         "dipolo",
         "cos theta",
         "allineamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_138",
@@ -2897,7 +3034,8 @@
         "gradiente",
         "campo non uniforme",
         "forza traslazionale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_139",
@@ -2918,7 +3056,8 @@
         "portatori carica",
         "densità n",
         "segno"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_140",
@@ -2939,7 +3078,8 @@
         "poli magnetici",
         "poli geografici",
         "variazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_141",
@@ -2960,7 +3100,8 @@
         "mu-metal",
         "mu_r",
         "permeabilità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_142",
@@ -2981,7 +3122,8 @@
         "campo elettrico vorticoso",
         "Faraday",
         "onde EM"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_143",
@@ -3002,7 +3144,8 @@
         "nabla B = 0",
         "Maxwell",
         "carica magnetica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_144",
@@ -3023,7 +3166,8 @@
         "fotone",
         "Meissner",
         "riflessione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_145",
@@ -3044,7 +3188,8 @@
         "parassite",
         "Lenz",
         "frenamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_146",
@@ -3065,7 +3210,8 @@
         "NMR",
         "gamma",
         "risonanza"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_147",
@@ -3086,7 +3232,8 @@
         "isteresi",
         "eddy currents",
         "ferrite"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_148",
@@ -3107,7 +3254,8 @@
         "Néel",
         "momenti opposti",
         "anullarsi"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_149",
@@ -3128,7 +3276,8 @@
         "nanoparticelle",
         "viscosità",
         "smorzatore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_150",
@@ -3149,7 +3298,8 @@
         "chi_m",
         "magnetizzazione",
         "H"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_151",
@@ -3170,7 +3320,8 @@
         "domini",
         "ferro",
         "attrazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_152",
@@ -3191,7 +3342,8 @@
         "Bohr",
         "magnetone",
         "mu_B"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_153",
@@ -3212,7 +3364,8 @@
         "ferromagnetismo",
         "scambio",
         "momento spin"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_154",
@@ -3233,7 +3386,8 @@
         "impulso 90°",
         "magnetizzazione trasversale",
         "precessione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_155",
@@ -3254,7 +3408,8 @@
         "trasformazione",
         "E e B",
         "relatività"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_156",
@@ -3275,7 +3430,8 @@
         "Phi_0",
         "superconduttore",
         "vortici"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_157",
@@ -3296,7 +3452,8 @@
         "stabilità",
         "temperatura ambiente",
         "barriera energia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_158",
@@ -3317,7 +3474,8 @@
         "universale",
         "Ampère",
         "simmetria"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_159",
@@ -3338,7 +3496,8 @@
         "monopoli",
         "Maxwell",
         "linee chiuse"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_160",
@@ -3359,7 +3518,8 @@
         "B",
         "M",
         "magnetizzazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_161",
@@ -3380,7 +3540,8 @@
         "Ampère",
         "concatenato",
         "confinamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_162",
@@ -3401,7 +3562,8 @@
         "polarizzazione",
         "birifrangenza",
         "isolatore"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "mag_163",
@@ -3422,7 +3584,8 @@
         "circuito magnetico",
         "Ohm",
         "F.M.M."
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_164",
@@ -3443,11 +3606,12 @@
         "pinguini",
         "Lorentz",
         "cryptochrome"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_165",
-      "domanda": "Quale è il principio fisico dietro la schermatura magnetica di Mu-metal, che offre attenuazione di campi magnetici molto più efficace del ferro ordinario per campi deboli?",
+      "domanda": "Qual è il principio fisico dietro la schermatura magnetica di Mu-metal, che offre attenuazione di campi magnetici molto più efficace del ferro ordinario per campi deboli?",
       "categoria": "Magnetismo",
       "sottocategoria": "Blindaggio avanzato",
       "opzioni": [
@@ -3464,7 +3628,8 @@
         "permeabilità",
         "coercitività",
         "schermatura"
-      ]
+      ],
+      "richiedeCalcolo": false
     }
   ]
 }

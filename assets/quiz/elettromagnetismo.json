@@ -18,7 +18,8 @@
         "carica",
         "SI",
         "coulomb"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_002",
@@ -39,7 +40,8 @@
         "vettore",
         "forza",
         "carica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_003",
@@ -59,7 +61,8 @@
         "cariche",
         "repulsione",
         "segno"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_004",
@@ -79,7 +82,8 @@
         "linee di campo",
         "positivo",
         "negativo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_005",
@@ -99,7 +103,8 @@
         "tensione",
         "volt",
         "potenziale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_006",
@@ -119,7 +124,8 @@
         "conduttore",
         "equilibrio",
         "campo nullo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_007",
@@ -139,7 +145,8 @@
         "amperometro",
         "corrente",
         "misura"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_008",
@@ -159,7 +166,8 @@
         "voltmetro",
         "parallelo",
         "tensione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_009",
@@ -179,7 +187,8 @@
         "resistenza",
         "ohm",
         "SI"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_010",
@@ -199,7 +208,8 @@
         "ohm",
         "corrente",
         "resistenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_011",
@@ -219,7 +229,8 @@
         "bussola",
         "campo magnetico",
         "terra"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_012",
@@ -238,7 +249,8 @@
       "paroleChiave": [
         "campo magnetico",
         "linee chiuse"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_013",
@@ -258,7 +270,8 @@
         "tesla",
         "campo magnetico",
         "SI"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_014",
@@ -278,7 +291,8 @@
         "filo",
         "corrente",
         "campo magnetico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_015",
@@ -298,7 +312,8 @@
         "mano destra",
         "verso",
         "campo magnetico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_016",
@@ -318,7 +333,8 @@
         "I",
         "corrente",
         "grandezze"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_017",
@@ -338,7 +354,8 @@
         "condensatore",
         "campo elettrico",
         "energia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_018",
@@ -358,7 +375,8 @@
         "capacità",
         "farad",
         "SI"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_019",
@@ -378,7 +396,8 @@
         "RC",
         "regime",
         "condensatore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_020",
@@ -398,7 +417,8 @@
         "corrente convenzionale",
         "poli",
         "generatore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_021",
@@ -418,7 +438,8 @@
         "forza magnetica",
         "carica",
         "movimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_022",
@@ -438,7 +459,8 @@
         "ferro",
         "magnetizzazione",
         "induzione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_023",
@@ -458,7 +480,8 @@
         "serie",
         "corrente",
         "resistori"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_024",
@@ -478,7 +501,8 @@
         "parallelo",
         "tensione",
         "rami"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_025",
@@ -498,7 +522,8 @@
         "potenza",
         "VI",
         "watt"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_026",
@@ -518,7 +543,8 @@
         "induttore",
         "autoinduzione",
         "corrente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_027",
@@ -538,7 +564,8 @@
         "induttanza",
         "henry",
         "SI"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_028",
@@ -559,7 +586,8 @@
         "area",
         "orientazione",
         "campo B"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_029",
@@ -579,7 +607,8 @@
         "induzione",
         "fem",
         "flusso"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_030",
@@ -599,7 +628,8 @@
         "lenz",
         "verso",
         "corrente indotta"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_031",
@@ -619,7 +649,8 @@
         "magnete",
         "spira",
         "corrente indotta"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_032",
@@ -639,7 +670,8 @@
         "trasformatore",
         "induzione",
         "flusso"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_033",
@@ -659,7 +691,8 @@
         "campo uniforme",
         "linee",
         "rappresentazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_034",
@@ -679,7 +712,8 @@
         "campo elettrico",
         "carica di prova",
         "verso"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_035",
@@ -699,7 +733,8 @@
         "isolante",
         "dielettrico",
         "cariche libere"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_036",
@@ -719,7 +754,8 @@
         "dipolo",
         "cariche opposte",
         "momento dipolare"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_037",
@@ -739,7 +775,8 @@
         "corrente",
         "carica",
         "tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_038",
@@ -760,7 +797,8 @@
         "perpendicolare",
         "v",
         "B"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_039",
@@ -780,7 +818,8 @@
         "fem",
         "circuito aperto",
         "tensione indotta"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_040",
@@ -800,7 +839,8 @@
         "onde EM",
         "trasversali",
         "vuoto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_041",
@@ -820,7 +860,8 @@
         "resistenza equivalente",
         "serie",
         "somma"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_042",
@@ -840,7 +881,8 @@
         "parallelo",
         "reciproci",
         "equivalente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_043",
@@ -860,7 +902,8 @@
         "serie",
         "tensione",
         "caduta"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_044",
@@ -880,7 +923,8 @@
         "kirchhoff",
         "nodo",
         "correnti"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_045",
@@ -900,7 +944,8 @@
         "kirchhoff",
         "maglia",
         "somma algebrica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_046",
@@ -920,7 +965,8 @@
         "forza",
         "distanza",
         "quadrato"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_047",
@@ -940,7 +986,8 @@
         "lavoro",
         "potenziale",
         "campo uniforme"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_048",
@@ -960,7 +1007,8 @@
         "densità linee",
         "intensità",
         "campo elettrico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_049",
@@ -980,7 +1028,8 @@
         "capacità",
         "dielettrico",
         "condensatore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_050",
@@ -1001,7 +1050,8 @@
         "capacitore",
         "tensione",
         "capacità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_051",
@@ -1021,7 +1071,8 @@
         "RC",
         "costante di tempo",
         "tau"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_052",
@@ -1041,7 +1092,8 @@
         "solenoide",
         "campo interno",
         "uniforme"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_053",
@@ -1061,7 +1113,8 @@
         "flusso",
         "weber",
         "SI"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_054",
@@ -1081,11 +1134,12 @@
         "alternatore",
         "spira",
         "fem alternata"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_055",
-      "domanda": "In un trasformatore ideale, se il numero di spire del secondario è maggiore di quello del primario, la tensione al secondario è:",
+      "domanda": "In un trasformatore ideale, se le spire del secondario sono maggiori di quelle del primario, la tensione al secondario è:",
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Trasformatori",
       "opzioni": [
@@ -1101,7 +1155,8 @@
         "trasformatore",
         "spire",
         "step-up"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_056",
@@ -1121,7 +1176,8 @@
         "moto circolare",
         "carica",
         "campo B"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_057",
@@ -1141,7 +1197,8 @@
         "parallelo",
         "forza magnetica",
         "prodotto vettoriale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_058",
@@ -1161,7 +1218,8 @@
         "permeabilità",
         "materiali",
         "magnetismo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_059",
@@ -1181,7 +1239,8 @@
         "resistenza",
         "sezione",
         "conduttore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_060",
@@ -1201,7 +1260,8 @@
         "campo nullo",
         "potenziale",
         "gradiente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_061",
@@ -1221,7 +1281,8 @@
         "maglia",
         "tensioni",
         "kirchhoff"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_062",
@@ -1241,7 +1302,8 @@
         "capacità equivalente",
         "parallelo",
         "condensatori"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_063",
@@ -1261,7 +1323,8 @@
         "serie",
         "reciproci",
         "capacitori"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_064",
@@ -1281,7 +1344,8 @@
         "ohmico",
         "grafico",
         "lineare"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_065",
@@ -1302,7 +1366,8 @@
         "spira",
         "coppia",
         "campo B"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_066",
@@ -1322,7 +1387,8 @@
         "elettromagnete",
         "nucleo",
         "ferromagnetico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_067",
@@ -1342,7 +1408,8 @@
         "induzione",
         "flusso costante",
         "spira"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_068",
@@ -1362,7 +1429,8 @@
         "ingresso",
         "area",
         "flusso variabile"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_069",
@@ -1382,7 +1450,8 @@
         "lavoro",
         "forza magnetica",
         "energia cinetica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_070",
@@ -1402,7 +1471,8 @@
         "RL",
         "autoinduzione",
         "variazioni corrente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_071",
@@ -1422,7 +1492,8 @@
         "RL",
         "tau",
         "L/R"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_072",
@@ -1442,7 +1513,8 @@
         "condensatore piano",
         "campo uniforme",
         "piastre"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_073",
@@ -1462,7 +1534,8 @@
         "filo",
         "corrente",
         "forza magnetica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_074",
@@ -1482,7 +1555,8 @@
         "corrente",
         "inversione",
         "forza su filo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_075",
@@ -1502,7 +1576,8 @@
         "potenza",
         "carico",
         "V costante"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_076",
@@ -1522,7 +1597,8 @@
         "dielettrico",
         "carica costante",
         "tensione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_077",
@@ -1542,7 +1618,8 @@
         "dielettrico",
         "tensione costante",
         "carica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_078",
@@ -1563,7 +1640,8 @@
         "E",
         "B",
         "perpendicolari"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_079",
@@ -1583,7 +1661,8 @@
         "conservativo",
         "elettrostatica",
         "potenziale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_080",
@@ -1603,7 +1682,8 @@
         "lenz",
         "flusso",
         "verso corrente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_081",
@@ -1623,7 +1703,8 @@
         "lorentz",
         "mano destra",
         "direzione forza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_082",
@@ -1643,7 +1724,8 @@
         "carica negativa",
         "lorentz",
         "inversione verso"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_083",
@@ -1664,7 +1746,8 @@
         "DC",
         "regime",
         "cortocircuito"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_084",
@@ -1685,7 +1768,8 @@
         "rotazione",
         "coseno",
         "normale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_085",
@@ -1706,7 +1790,8 @@
         "sbarra",
         "binari",
         "portatori"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_086",
@@ -1726,7 +1811,8 @@
         "flusso lineare",
         "fem",
         "costante"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_087",
@@ -1747,7 +1833,8 @@
         "gradino",
         "esponenziale",
         "corrente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_088",
@@ -1767,7 +1854,8 @@
         "RC",
         "t=0",
         "continuità tensione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_089",
@@ -1787,7 +1875,8 @@
         "campi incrociati",
         "bilanciamento",
         "selettore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_090",
@@ -1807,7 +1896,8 @@
         "onda EM",
         "energia",
         "propagazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_091",
@@ -1827,7 +1917,8 @@
         "spira",
         "entrata uscita",
         "flusso costante"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_092",
@@ -1847,7 +1938,8 @@
         "autoinduzione",
         "lenz",
         "variazione corrente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_093",
@@ -1868,7 +1960,8 @@
         "step-up",
         "corrente",
         "potenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_094",
@@ -1888,7 +1981,8 @@
         "campo indotto",
         "non conservativo",
         "linee chiuse"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_095",
@@ -1908,7 +2002,8 @@
         "campo nullo",
         "potenziale",
         "coerenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_096",
@@ -1928,7 +2023,8 @@
         "energia potenziale",
         "deltaV",
         "carica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_097",
@@ -1948,7 +2044,8 @@
         "RLC",
         "risonanza",
         "impedenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_098",
@@ -1968,7 +2065,8 @@
         "lenz",
         "oraria",
         "flusso uscente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_099",
@@ -1989,7 +2087,8 @@
         "elettrone",
         "protone",
         "massa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_100",
@@ -2009,7 +2108,8 @@
         "bobina reale",
         "joule",
         "dissipazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_101",
@@ -2029,7 +2129,8 @@
         "trasformatore",
         "DC",
         "flusso variabile"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_102",
@@ -2049,7 +2150,8 @@
         "fili paralleli",
         "correnti",
         "attrazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_103",
@@ -2069,7 +2171,8 @@
         "fili",
         "correnti opposte",
         "repulsione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_104",
@@ -2090,7 +2193,8 @@
         "moto",
         "v×B",
         "separazione cariche"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_105",
@@ -2111,7 +2215,8 @@
         "RC",
         "energia",
         "calore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_106",
@@ -2131,7 +2236,8 @@
         "corrente indotta",
         "resistenza",
         "proporzionalità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_107",
@@ -2151,7 +2257,8 @@
         "campo elettrico",
         "accelerazione",
         "energia cinetica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_108",
@@ -2171,7 +2278,8 @@
         "schermatura",
         "campo magnetico",
         "conduttore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_109",
@@ -2191,7 +2299,8 @@
         "RLC",
         "smorzamento",
         "selettività"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_110",
@@ -2211,7 +2320,8 @@
         "vuoto",
         "onda EM",
         "propagazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_111",
@@ -2231,7 +2341,8 @@
         "energia cinetica",
         "modulo velocità",
         "forza magnetica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_112",
@@ -2251,7 +2362,8 @@
         "corrente indotta",
         "flusso costante",
         "zero"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_113",
@@ -2271,7 +2383,8 @@
         "carica negativa",
         "campo elettrico",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_114",
@@ -2292,7 +2405,8 @@
         "oscillazione",
         "energia",
         "campi"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_115",
@@ -2313,7 +2427,8 @@
         "resistenza",
         "joule",
         "oscillazioni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_116",
@@ -2333,7 +2448,8 @@
         "raggio",
         "campo B",
         "proporzionalità inversa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_117",
@@ -2353,7 +2469,8 @@
         "v=0",
         "forza magnetica",
         "lorentz"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_118",
@@ -2373,7 +2490,8 @@
         "fem",
         "variazione rapida",
         "flusso"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_119",
@@ -2393,7 +2511,8 @@
         "linee chiuse",
         "monopoli",
         "campo magnetico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_120",
@@ -2414,7 +2533,8 @@
         "bobina",
         "fem",
         "proporzionalità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_121",
@@ -2435,7 +2555,8 @@
         "energia",
         "conservazione",
         "fondamenti"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_122",
@@ -2455,7 +2576,8 @@
         "campo costante",
         "carica isolata",
         "densità superficiale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_123",
@@ -2475,7 +2597,8 @@
         "potenziale massimo",
         "gradiente",
         "campo zero"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_124",
@@ -2495,7 +2618,8 @@
         "domini",
         "temperatura",
         "ferromagnetico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_125",
@@ -2515,7 +2639,8 @@
         "generatore ideale",
         "terminali",
         "fem"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_126",
@@ -2536,7 +2661,8 @@
         "RL",
         "reattanza",
         "impedenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_127",
@@ -2556,7 +2682,8 @@
         "ago magnetico",
         "solenoide",
         "coppia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_128",
@@ -2576,7 +2703,8 @@
         "dielettrico",
         "polarizzazione",
         "campo ridotto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_129",
@@ -2597,7 +2725,8 @@
         "kappa",
         "polarizzazione",
         "campo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_130",
@@ -2617,7 +2746,8 @@
         "energia potenziale",
         "cariche opposte",
         "minima energia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_131",
@@ -2637,7 +2767,8 @@
         "risonanza",
         "reattanza",
         "bilanciamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_132",
@@ -2657,7 +2788,8 @@
         "spira ferma",
         "campo stazionario",
         "flusso costante"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_133",
@@ -2677,7 +2809,8 @@
         "resistenza serie",
         "potenza",
         "diminuzione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_134",
@@ -2697,7 +2830,8 @@
         "trasformatore",
         "conservazione potenza",
         "potenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_135",
@@ -2717,7 +2851,8 @@
         "conduttore",
         "campo nullo",
         "potenziale costante"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_136",
@@ -2737,7 +2872,8 @@
         "estrazione",
         "campo uniforme",
         "flusso variabile"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_137",
@@ -2757,7 +2893,8 @@
         "lenz",
         "verso corrente",
         "principio"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_138",
@@ -2777,7 +2914,8 @@
         "campo magnetico",
         "carica ferma",
         "lavoro nullo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_139",
@@ -2797,7 +2935,8 @@
         "energia",
         "dissipazione",
         "condensatori"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_140",
@@ -2817,7 +2956,8 @@
         "dissipazione",
         "joule",
         "resistori"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_141",
@@ -2837,7 +2977,8 @@
         "lavoro",
         "potenziale",
         "carica positiva"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_142",
@@ -2857,7 +2998,8 @@
         "resistenza",
         "collisioni",
         "microstruttura"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_143",
@@ -2877,7 +3019,8 @@
         "campo conservativo",
         "indotto",
         "non conservativo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_144",
@@ -2897,7 +3040,8 @@
         "ferro",
         "permeabilità",
         "amplificazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_145",
@@ -2917,7 +3061,8 @@
         "derivata",
         "velocità variazione",
         "fem"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_146",
@@ -2937,7 +3082,8 @@
         "impulso",
         "propagazione",
         "irradiamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_147",
@@ -2957,7 +3103,8 @@
         "Q",
         "selettività",
         "smorzamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_148",
@@ -2977,7 +3124,8 @@
         "trasversale",
         "oscillazione",
         "propagazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_149",
@@ -2997,7 +3145,8 @@
         "bilancia",
         "lorentz",
         "selettore velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_150",
@@ -3017,7 +3166,8 @@
         "trasmissione",
         "perdite",
         "joule"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_151",
@@ -3037,7 +3187,8 @@
         "domini",
         "campo coercitivo",
         "allineamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_152",
@@ -3057,7 +3208,8 @@
         "superconduttore",
         "flusso congelato",
         "corrente persistente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_153",
@@ -3077,7 +3229,8 @@
         "RC",
         "regime",
         "corrente zero"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_154",
@@ -3097,7 +3250,8 @@
         "magneti",
         "dipoli",
         "repulsione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_155",
@@ -3117,7 +3271,8 @@
         "dielettrico",
         "carica costante",
         "isolato"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_156",
@@ -3137,7 +3292,8 @@
         "continuità",
         "corrente",
         "carica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_157",
@@ -3157,7 +3313,8 @@
         "estrazione",
         "variazione flusso",
         "corrente massima"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_158",
@@ -3177,7 +3334,8 @@
         "autoinduzione",
         "lenz",
         "corrente iniziale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_159",
@@ -3198,7 +3356,8 @@
         "energia",
         "oscillazione",
         "conservazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_160",
@@ -3218,7 +3377,8 @@
         "potenziale",
         "unicità",
         "costante additiva"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_161",
@@ -3238,7 +3398,8 @@
         "conduttori",
         "contatto",
         "distribuzione carica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_162",
@@ -3258,7 +3419,8 @@
         "polarizzazione",
         "dipoli",
         "campo opposto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_163",
@@ -3279,7 +3441,8 @@
         "isolante",
         "portatori",
         "mobilità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_164",
@@ -3299,7 +3462,8 @@
         "magnete",
         "spin",
         "momento magnetico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_165",
@@ -3307,7 +3471,7 @@
       "categoria": "Elettromagnetismo",
       "sottocategoria": "Massimo flusso variabile",
       "opzioni": [
-        "Quando la spira è completamente dentro il campo",
+        "Quando la spira è completamente dentro the campo",
         "Quando la spira è metà dentro e metà fuori",
         "Quando è completamente fuori",
         "Mai, la corrente è sempre zero"
@@ -3319,7 +3483,8 @@
         "flusso massimo",
         "velocità",
         "confine campo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_166",
@@ -3339,7 +3504,8 @@
         "rms",
         "efficace",
         "potenza medio"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_167",
@@ -3359,7 +3525,8 @@
         "mutua induttanza",
         "trasformatore",
         "flusso comune"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_168",
@@ -3379,7 +3546,8 @@
         "frequenza bassa",
         "reattanza capacitiva",
         "dominanza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_169",
@@ -3399,7 +3567,8 @@
         "poynting",
         "energia",
         "propagazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_170",
@@ -3419,7 +3588,8 @@
         "atomo",
         "radiazione",
         "quantistica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_171",
@@ -3439,7 +3609,8 @@
         "carica ferma",
         "corrente",
         "B zero"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_172",
@@ -3459,7 +3630,8 @@
         "LC",
         "oscillazione",
         "corrente massima"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_173",
@@ -3479,7 +3651,8 @@
         "isteresi",
         "resistenza",
         "dissipazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_174",
@@ -3493,13 +3666,14 @@
         "Massima quando la velocità è parallela al filo"
       ],
       "rispostaCorretta": 2,
-      "spiegazione": "$\\vec{F} = q\\vec{v} \\times \\vec{B}$: il campo B circonda il filo. Se v è parallela a B (o az filo), non c'è forza; se v è perpendicolare, la forza è massima.",
+      "spiegazione": "$\\vec{F} = q\\vec{v} \\times \\vec{B}$: il campo B circonda il filo. Se v è parallela a B (o al filo), non c'è forza; se v è perpendicolare, la forza è massima.",
       "difficolta": "difficile",
       "paroleChiave": [
         "filo",
         "v perpendicolare",
         "prodotto vettoriale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_175",
@@ -3519,7 +3693,8 @@
         "condensatore reale",
         "perdite",
         "fuga"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_176",
@@ -3539,7 +3714,8 @@
         "campo terrestre",
         "compensazione",
         "esperimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_177",
@@ -3553,13 +3729,14 @@
         "Solo la geometria"
       ],
       "rispostaCorretta": 0,
-      "spiegazione": "Nel circuito RC la tensione sul condensatore non può cambiare istantaneamente (accumula carica gradualmente). Nel circuito RL la corrente non può cambiare istantaneamente (accumula 'magnone' gradualmente).",
+      "spiegazione": "Nel circuito RC la tensione sul condensatore non può cambiare istantaneamente (accumula carica gradualmente). Nel circuito RL la corrente non può cambiare istantaneamente (accumula gradualmente).",
       "difficolta": "difficile",
       "paroleChiave": [
         "dualità",
         "RC",
         "RL"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_178",
@@ -3579,7 +3756,8 @@
         "fem movimento",
         "proporzionalità",
         "sbarra"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_179",
@@ -3599,7 +3777,8 @@
         "smorzamento",
         "frequenza smorzata",
         "resistenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_180",
@@ -3619,7 +3798,8 @@
         "magneti",
         "repulsione",
         "N-N"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_181",
@@ -3629,7 +3809,7 @@
       "opzioni": [
         "Violazione della conservazione dell'energia",
         "Che la resistenza è zero: no dissipazione $I^2R$ (legge di Joule)",
-        "Che il superconduttore genera energia",
+        "Che the superconduttore genera energia",
         "Che la corrente cessa dopo un istante"
       ],
       "rispostaCorretta": 1,
@@ -3639,7 +3819,8 @@
         "superconduttore",
         "R zero",
         "corrente persistente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_182",
@@ -3659,7 +3840,8 @@
         "velocità luce",
         "onde EM",
         "maxwell"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_183",
@@ -3679,7 +3861,8 @@
         "frecquenza",
         "invariante",
         "mezzo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_184",
@@ -3699,7 +3882,8 @@
         "equipotenziali",
         "perpendicolare",
         "visualizzazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_185",
@@ -3719,7 +3903,8 @@
         "paramagnetico",
         "dipoli atomici",
         "orientamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_186",
@@ -3739,7 +3924,8 @@
         "diamagnetico",
         "lenz",
         "campo opposto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_187",
@@ -3759,7 +3945,8 @@
         "autoinduzione",
         "dI/dt",
         "fem"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_188",
@@ -3779,7 +3966,8 @@
         "gauge",
         "libertà scelta",
         "potenziali"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_189",
@@ -3799,7 +3987,8 @@
         "guida d'onda",
         "cutoff",
         "modi"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_190",
@@ -3819,7 +4008,8 @@
         "impedenza",
         "Z0",
         "onda piana"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_191",
@@ -3839,7 +4029,8 @@
         "cavità",
         "RLC",
         "risonanza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_192",
@@ -3859,7 +4050,8 @@
         "perdite",
         "campo forte",
         "eddy"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_193",
@@ -3879,7 +4071,8 @@
         "capacitivo",
         "sfasamento",
         "90°"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_194",
@@ -3899,7 +4092,8 @@
         "induttivo",
         "sfasamento",
         "90°"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_195",
@@ -3919,7 +4113,8 @@
         "fattore potenza",
         "cos(φ)",
         "dissipata"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_196",
@@ -3939,7 +4134,8 @@
         "catodo",
         "e/m",
         "selezione velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_197",
@@ -3959,7 +4155,8 @@
         "effect hall",
         "trasversale",
         "tensione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_198",
@@ -3979,7 +4176,8 @@
         "maxwell",
         "lorentz",
         "relatività"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_199",
@@ -3999,7 +4197,8 @@
         "polarizzazione",
         "agitazione termica",
         "entropia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_200",
@@ -4019,7 +4218,8 @@
         "spostamento",
         "ondeEM",
         "maxwell"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_201",
@@ -4039,7 +4239,8 @@
         "elettrone",
         "de broglie",
         "diffrazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_202",
@@ -4053,13 +4254,14 @@
         "Non c'è legame reale"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Tensioni più alte eccitano/ionizzano due differenti elementi o stati atomici. Ogni emette fotoni caratteristici (colori specifici), creando spettri diversi.",
+      "spiegazione": "Tensioni più alte eccitano/ionizzano differenti elementi o stati atomici. Ognuno emette fotoni caratteristici (colori specifici), creando spettri diversi.",
       "difficolta": "difficile",
       "paroleChiave": [
         "scarica gas",
         "tensione",
         "colore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_203",
@@ -4079,7 +4281,8 @@
         "incandescenza",
         "corpo nero",
         "radiazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_204",
@@ -4099,7 +4302,8 @@
         "plasma",
         "correnti elevate",
         "permeabilità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_205",
@@ -4119,7 +4323,8 @@
         "quantizzazione",
         "spin",
         "momento angolare"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_206",
@@ -4139,7 +4344,8 @@
         "toroidale",
         "confinamento",
         "flusso"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_207",
@@ -4159,7 +4365,8 @@
         "millikan",
         "drag",
         "bilancio forze"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_208",
@@ -4179,7 +4386,8 @@
         "meissner",
         "superconduttore",
         "diamagnetismo perfetto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_209",
@@ -4199,7 +4407,8 @@
         "SMES",
         "energia",
         "immagazzinamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_210",
@@ -4219,7 +4428,8 @@
         "ferromagnetismo",
         "ordine cooperativo",
         "domini"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_211",
@@ -4239,7 +4449,8 @@
         "modo fondamentale",
         "attenuazione",
         "guida"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_212",
@@ -4259,7 +4470,8 @@
         "fibra ottica",
         "fotoni",
         "confinamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_213",
@@ -4279,7 +4491,8 @@
         "catastrofe UV",
         "corpo nero",
         "planck"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_214",
@@ -4299,7 +4512,8 @@
         "dipolo",
         "coppia",
         "forza gradiente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_215",
@@ -4319,7 +4533,8 @@
         "antenna",
         "campo E",
         "corrente oscillante"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "em_216",
@@ -4339,7 +4554,8 @@
         "NMR",
         "boltzmann",
         "splitting"
-      ]
+      ],
+      "richiedeCalcolo": false
     }
   ]
 }

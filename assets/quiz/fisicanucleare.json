@@ -19,7 +19,8 @@
         "Z",
         "protoni",
         "elemento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_002",
@@ -41,7 +42,8 @@
         "nucleoni",
         "protoni",
         "neutroni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_003",
@@ -62,7 +64,8 @@
         "Z",
         "protoni",
         "neutroni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_004",
@@ -82,7 +85,8 @@
         "decadimento alfa",
         "particella alfa",
         "elio-4"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_005",
@@ -102,7 +106,8 @@
         "beta meno",
         "elettrone",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_006",
@@ -122,7 +127,8 @@
         "beta più",
         "positrone",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_007",
@@ -142,7 +148,8 @@
         "gamma",
         "fotoni",
         "energia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_008",
@@ -162,7 +169,8 @@
         "penetranza",
         "alfa",
         "schermatura"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_009",
@@ -183,7 +191,8 @@
         "T1/2",
         "attività",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_010",
@@ -204,7 +213,8 @@
         "attività",
         "unità SI",
         "radioattività"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_011",
@@ -225,7 +235,8 @@
         "A",
         "nucleoni",
         "reazioni nucleari"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_012",
@@ -246,7 +257,8 @@
         "E=mc2",
         "massa",
         "energia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_013",
@@ -266,7 +278,8 @@
         "difetto di massa",
         "energia di legame",
         "nucleoni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_014",
@@ -286,7 +299,8 @@
         "energia di legame",
         "separazione",
         "nucleo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_015",
@@ -306,7 +320,8 @@
         "medicina nucleare",
         "PET",
         "radioisotopi"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_016",
@@ -326,7 +341,8 @@
         "fissione",
         "nucleo pesante",
         "energia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_017",
@@ -346,7 +362,8 @@
         "fusione",
         "nuclei leggeri",
         "energia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_018",
@@ -367,7 +384,8 @@
         "Sv",
         "dose equivalente",
         "radioprotezione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_019",
@@ -387,7 +405,8 @@
         "gray",
         "Gy",
         "dose assorbita"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_020",
@@ -408,7 +427,8 @@
         "Z",
         "A",
         "trasformazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_021",
@@ -430,7 +450,8 @@
         "A",
         "neutrone",
         "protone"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_022",
@@ -452,7 +473,8 @@
         "A",
         "protone",
         "neutrone"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_023",
@@ -473,7 +495,8 @@
         "de-eccitazione",
         "Z",
         "A"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_024",
@@ -493,7 +516,8 @@
         "neutrone",
         "carica",
         "particelle"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_025",
@@ -513,7 +537,8 @@
         "forza forte",
         "nucleo",
         "coesione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_026",
@@ -533,7 +558,8 @@
         "ionizzante",
         "ioni",
         "elettroni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_027",
@@ -554,7 +580,8 @@
         "gamma",
         "piombo",
         "calcestruzzo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_028",
@@ -574,7 +601,8 @@
         "attività",
         "decadimenti",
         "tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_029",
@@ -595,7 +623,8 @@
         "neutrone",
         "protone",
         "antineutrino"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_030",
@@ -616,7 +645,8 @@
         "positrone",
         "neutrino",
         "protone"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_031",
@@ -637,7 +667,8 @@
         "Z",
         "A",
         "nucleo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_032",
@@ -658,7 +689,8 @@
         "neutroni lenti",
         "moderatore",
         "fissione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_033",
@@ -669,7 +701,7 @@
         "Una sequenza in cui ogni fissione produce neutroni che causano nuove fissioni",
         "Una sequenza di decadimenti alfa casuali",
         "Una reazione chimica con ossigeno",
-        "Un fenomeno che avviene solo nel vuoto"
+        "Un phenomenon che avviene solo nel vuoto"
       ],
       "rispostaCorretta": 0,
       "spiegazione": "Una reazione a catena si mantiene se i neutroni prodotti da una fissione innescano ulteriori fissioni.",
@@ -678,7 +710,8 @@
         "reazione a catena",
         "fissione",
         "neutroni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_034",
@@ -698,7 +731,8 @@
         "isotopo stabile",
         "stabilità",
         "radioattività"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_035",
@@ -719,7 +753,8 @@
         "A",
         "Z",
         "cobalto-60"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_036",
@@ -740,7 +775,8 @@
         "protoni",
         "forza forte",
         "corto raggio"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_037",
@@ -759,7 +795,8 @@
       "paroleChiave": [
         "elettrone",
         "carica negativa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_038",
@@ -780,7 +817,8 @@
         "deviazione",
         "alfa",
         "beta"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_039",
@@ -800,7 +838,8 @@
         "carbonio-14",
         "datazione",
         "radiometrica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_040",
@@ -820,7 +859,8 @@
         "radioattività",
         "spontaneo",
         "nuclei instabili"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_041",
@@ -840,7 +880,8 @@
         "dimezzamento",
         "frazione",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_042",
@@ -860,7 +901,8 @@
         "attività",
         "Bq",
         "dimezzamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_043",
@@ -881,7 +923,8 @@
         "alfa",
         "A",
         "Z"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_044",
@@ -901,7 +944,8 @@
         "carbonio-14",
         "beta meno",
         "azoto-14"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_045",
@@ -922,7 +966,8 @@
         "lambda",
         "N(t)",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_046",
@@ -942,7 +987,8 @@
         "lambda",
         "tempo di dimezzamento",
         "ln2"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_047",
@@ -962,7 +1008,8 @@
         "cattura elettronica",
         "protone",
         "neutrone"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_048",
@@ -983,7 +1030,8 @@
         "penetranza",
         "alfa",
         "gamma"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_049",
@@ -1003,7 +1051,8 @@
         "fissione",
         "conservazione A",
         "neutroni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_050",
@@ -1023,7 +1072,8 @@
         "stabilità",
         "eccesso neutroni",
         "beta meno"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_051",
@@ -1044,7 +1094,8 @@
         "eccesso protoni",
         "beta più",
         "EC"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_052",
@@ -1065,7 +1116,8 @@
         "stabilità",
         "fissione",
         "fusione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_053",
@@ -1085,7 +1137,8 @@
         "moderatore",
         "neutroni",
         "reattore termico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_054",
@@ -1105,7 +1158,8 @@
         "barre di controllo",
         "assorbimento neutroni",
         "reattore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_055",
@@ -1125,7 +1179,8 @@
         "Q-value",
         "energia",
         "difetto di massa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_056",
@@ -1145,7 +1200,8 @@
         "kBq",
         "decadimenti",
         "attività"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_057",
@@ -1165,7 +1221,8 @@
         "probabilistico",
         "statistica",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_058",
@@ -1185,7 +1242,8 @@
         "prodotti di fissione",
         "nuclei",
         "scissione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_059",
@@ -1205,7 +1263,8 @@
         "Gy",
         "dose assorbita",
         "energia depositata"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_060",
@@ -1225,7 +1284,8 @@
         "gamma",
         "stato eccitato",
         "transizione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_061",
@@ -1246,7 +1306,8 @@
         "carica",
         "Z",
         "reazioni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_062",
@@ -1267,7 +1328,8 @@
         "Sv",
         "dose equivalente",
         "biologico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_063",
@@ -1287,7 +1349,8 @@
         "U-235",
         "fissile",
         "neutroni termici"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_064",
@@ -1307,7 +1370,8 @@
         "fertile",
         "cattura neutroni",
         "U-238"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_065",
@@ -1328,7 +1392,8 @@
         "deuterio",
         "trizio",
         "DT"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_066",
@@ -1348,7 +1413,8 @@
         "fusione",
         "barriera coulombiana",
         "temperatura"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_067",
@@ -1368,7 +1434,8 @@
         "serie radioattiva",
         "catena di decadimento",
         "stabile"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_068",
@@ -1389,7 +1456,8 @@
         "esponenziale",
         "lambda",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_069",
@@ -1409,7 +1477,8 @@
         "lambda",
         "T1/2",
         "proporzionalità inversa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_070",
@@ -1429,7 +1498,8 @@
         "fissione indotta",
         "decadimento spontaneo",
         "neutroni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_071",
@@ -1449,7 +1519,8 @@
         "attività specifica",
         "Bq/kg",
         "massa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_072",
@@ -1470,7 +1541,8 @@
         "neutroni",
         "N",
         "Z"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_073",
@@ -1491,7 +1563,8 @@
         "neutroni",
         "N",
         "Z"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_074",
@@ -1511,7 +1584,8 @@
         "stabilità",
         "N/Z",
         "nuclei pesanti"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_075",
@@ -1531,7 +1605,8 @@
         "esponenziale",
         "N(t)",
         "attività"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_076",
@@ -1549,10 +1624,11 @@
       "difficolta": "medio",
       "paroleChiave": [
         "massa",
-        "energia",
+        "energy",
         "esotermica",
         "difetto di massa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_077",
@@ -1572,7 +1648,8 @@
         "ionizzazione",
         "alfa",
         "LET"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_078",
@@ -1592,7 +1669,8 @@
         "neutroni",
         "barriera coulombiana",
         "fissione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_079",
@@ -1612,7 +1690,8 @@
         "sezione d'urto",
         "probabilità",
         "interazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_080",
@@ -1632,7 +1711,8 @@
         "Gy",
         "J/kg",
         "dose assorbita"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_081",
@@ -1653,7 +1733,8 @@
         "massa",
         "energia liberata",
         "fissione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_082",
@@ -1673,7 +1754,8 @@
         "lambda",
         "T1/2",
         "ln2"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_083",
@@ -1693,7 +1775,8 @@
         "modello a goccia",
         "fissione",
         "deformazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_084",
@@ -1713,7 +1796,8 @@
         "criticità",
         "k efficace",
         "reazione a catena"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_085",
@@ -1733,7 +1817,8 @@
         "energia di legame",
         "saturazione",
         "repulsione coulombiana"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_086",
@@ -1754,7 +1839,8 @@
         "gamma",
         "elettroni",
         "raggi X"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_087",
@@ -1775,7 +1861,8 @@
         "beta",
         "neutrino",
         "conservazione energia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_088",
@@ -1795,7 +1882,8 @@
         "dimezzamenti",
         "logaritmi",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "nuc_089",
@@ -1815,7 +1903,8 @@
         "neutroni ritardati",
         "controllo",
         "reattore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_090",
@@ -1835,7 +1924,8 @@
         "soglia",
         "Q<0",
         "endoenergetica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_091",
@@ -1857,7 +1947,8 @@
         "Bq",
         "Gy",
         "Sv"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_092",
@@ -1877,7 +1968,8 @@
         "emissione protonica",
         "barriera coulombiana",
         "alfa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_093",
@@ -1897,7 +1989,8 @@
         "eccitazione",
         "stato fondamentale",
         "gamma"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_094",
@@ -1918,7 +2011,8 @@
         "energia cinetica",
         "rinculo",
         "alfa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_095",
@@ -1939,7 +2033,8 @@
         "LET",
         "ingestione",
         "danno biologico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_096",
@@ -1959,7 +2054,8 @@
         "barriera coulombiana",
         "fusione",
         "repulsione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_097",
@@ -1979,7 +2075,8 @@
         "forza forte",
         "corto raggio",
         "saturazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_098",
@@ -1999,7 +2096,8 @@
         "k",
         "sottocritico",
         "reattore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_099",
@@ -2019,7 +2117,8 @@
         "fusione controllata",
         "plasma",
         "confinamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_100",
@@ -2040,7 +2139,8 @@
         "conteggi",
         "statistica",
         "decadimenti"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_101",
@@ -2061,7 +2161,8 @@
         "A",
         "difetto di massa",
         "elettroni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_102",
@@ -2081,7 +2182,8 @@
         "vita medio",
         "tau",
         "lambda"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_103",
@@ -2101,7 +2203,8 @@
         "neutrone libero",
         "decadimento beta",
         "instabilità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_104",
@@ -2122,7 +2225,8 @@
         "datazione",
         "iniziale",
         "residuo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_105",
@@ -2143,7 +2247,8 @@
         "barriere",
         "sicurezza",
         "reattore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_106",
@@ -2163,7 +2268,8 @@
         "rinculo",
         "quantità di moto",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_107",
@@ -2184,7 +2290,8 @@
         "stabilità",
         "repulsione",
         "protoni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_108",
@@ -2205,7 +2312,8 @@
         "spettro continuo",
         "neutrino",
         "energia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_109",
@@ -2226,7 +2334,8 @@
         "neutroni",
         "N",
         "nuclidi"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_110",
@@ -2247,7 +2356,8 @@
         "neutroni",
         "urti elastici",
         "reattore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_111",
@@ -2268,7 +2378,8 @@
         "penetranza",
         "interazione",
         "materia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_112",
@@ -2289,7 +2400,8 @@
         "energia di legame",
         "nucleone",
         "rilascio"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_113",
@@ -2310,7 +2422,8 @@
         "corto raggio",
         "saturazione",
         "nucleoni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_114",
@@ -2331,7 +2444,8 @@
         "gusci",
         "stabilità",
         "nucleo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_115",
@@ -2352,7 +2466,8 @@
         "A",
         "Z",
         "nuclidi"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_116",
@@ -2373,7 +2488,8 @@
         "de-eccitazione",
         "decadimento",
         "stati"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_117",
@@ -2394,7 +2510,8 @@
         "Z",
         "A",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_118",
@@ -2415,7 +2532,8 @@
         "neutroni",
         "frammenti",
         "stabilità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_119",
@@ -2436,7 +2554,8 @@
         "calore",
         "reattore",
         "nocciolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_120",
@@ -2457,7 +2576,8 @@
         "fissione",
         "neutroni termici",
         "sezione d'urto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_121",
@@ -2478,7 +2598,8 @@
         "ionizzazione",
         "carica",
         "massa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_122",
@@ -2499,7 +2620,8 @@
         "gamma",
         "materiali densi",
         "Z"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_123",
@@ -2519,7 +2641,8 @@
         "energia di legame",
         "stabilità",
         "nucleone"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_124",
@@ -2540,7 +2663,8 @@
         "temperatura",
         "pressione",
         "nucleo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_125",
@@ -2561,7 +2685,8 @@
         "chimiche",
         "energia",
         "nucleo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_126",
@@ -2582,7 +2707,8 @@
         "stabilità",
         "neutroni",
         "Z"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_127",
@@ -2603,7 +2729,8 @@
         "annichilazione",
         "gamma",
         "quantità di moto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_128",
@@ -2623,7 +2750,8 @@
         "emivita",
         "lambda",
         "attività specifica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_129",
@@ -2644,7 +2772,8 @@
         "fissione",
         "U-235",
         "sezione d'urto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_130",
@@ -2665,7 +2794,8 @@
         "radioattività",
         "neutroni",
         "stabilità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_131",
@@ -2686,7 +2816,8 @@
         "Sole",
         "tunnel",
         "barriera"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_132",
@@ -2706,7 +2837,8 @@
         "radiazione di fondo",
         "naturale",
         "ambiente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_133",
@@ -2726,7 +2858,8 @@
         "lambda",
         "probabilità",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_134",
@@ -2747,7 +2880,8 @@
         "dose equivalente",
         "biologico",
         "radiazioni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_135",
@@ -2767,8 +2901,9 @@
         "beta",
         "neutrino",
         "conservazione",
-        "energia"
-      ]
+        "energy"
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_136",
@@ -2788,7 +2923,8 @@
         "radioattività",
         "naturale",
         "artificiale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_137",
@@ -2809,7 +2945,8 @@
         "k",
         "reattore",
         "potenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_138",
@@ -2830,7 +2967,8 @@
         "fusione",
         "fissione",
         "stabilità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_139",
@@ -2850,7 +2988,8 @@
         "rinculo",
         "gamma",
         "quantità di moto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_140",
@@ -2870,7 +3009,8 @@
         "spontaneo",
         "indotto",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_141",
@@ -2891,7 +3031,8 @@
         "chimica",
         "Z",
         "elettroni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_142",
@@ -2911,7 +3052,8 @@
         "beta",
         "A",
         "nucleoni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_143",
@@ -2932,7 +3074,8 @@
         "A",
         "elio-4",
         "nucleoni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "nuc_144",
@@ -2953,7 +3096,8 @@
         "Z",
         "A",
         "de-eccitazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     }
   ]
 }

@@ -18,7 +18,8 @@
         "spostamento",
         "vettore",
         "posizione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_002",
@@ -38,7 +39,8 @@
         "distanza",
         "percorso",
         "scalare"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_003",
@@ -58,7 +60,8 @@
         "velocità",
         "istantanea",
         "limite"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_004",
@@ -78,7 +81,8 @@
         "accelerazione",
         "delta v",
         "tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_005",
@@ -98,7 +102,8 @@
         "unità",
         "SI",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_006",
@@ -118,7 +123,8 @@
         "spostamento",
         "vettore",
         "posizione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_007",
@@ -138,7 +144,8 @@
         "distanza",
         "percorso",
         "scalare"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_008",
@@ -158,7 +165,8 @@
         "velocità",
         "istantanea",
         "limite"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_009",
@@ -178,7 +186,8 @@
         "conversione",
         "km/h",
         "m/s"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_010",
@@ -198,7 +207,8 @@
         "conversione",
         "km/h",
         "m/s"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_011",
@@ -218,7 +228,8 @@
         "conversione",
         "km/h",
         "m/s"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_012",
@@ -238,7 +249,8 @@
         "conversione",
         "km/h",
         "m/s"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_013",
@@ -258,7 +270,8 @@
         "conversione",
         "km/h",
         "m/s"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_014",
@@ -278,7 +291,8 @@
         "conversione",
         "km/h",
         "m/s"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_015",
@@ -298,7 +312,8 @@
         "conversione",
         "km/h",
         "m/s"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_016",
@@ -318,7 +333,8 @@
         "conversione",
         "km/h",
         "m/s"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_017",
@@ -338,7 +354,8 @@
         "conversione",
         "km/h",
         "m/s"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_018",
@@ -358,7 +375,8 @@
         "conversione",
         "km/h",
         "m/s"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_019",
@@ -378,7 +396,8 @@
         "MRU",
         "s=vt",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_020",
@@ -398,7 +417,8 @@
         "MRU",
         "s=vt",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_021",
@@ -418,7 +438,8 @@
         "MRU",
         "s=vt",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_022",
@@ -438,7 +459,8 @@
         "MRU",
         "s=vt",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_023",
@@ -458,7 +480,8 @@
         "MRU",
         "s=vt",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_024",
@@ -478,7 +501,8 @@
         "MRU",
         "s=vt",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_025",
@@ -498,7 +522,8 @@
         "MRU",
         "s=vt",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_026",
@@ -518,7 +543,8 @@
         "MRU",
         "s=vt",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_027",
@@ -538,7 +564,8 @@
         "MRU",
         "s=vt",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_028",
@@ -558,7 +585,8 @@
         "MRU",
         "s=vt",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_029",
@@ -579,7 +607,8 @@
         "s-t",
         "pendenza",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_030",
@@ -600,7 +629,8 @@
         "s-t",
         "pendenza",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_031",
@@ -621,7 +651,8 @@
         "s-t",
         "pendenza",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_032",
@@ -642,7 +673,8 @@
         "s-t",
         "pendenza",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_033",
@@ -663,7 +695,8 @@
         "s-t",
         "pendenza",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_034",
@@ -684,7 +717,8 @@
         "s-t",
         "pendenza",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_035",
@@ -705,7 +739,8 @@
         "s-t",
         "pendenza",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_036",
@@ -726,7 +761,8 @@
         "s-t",
         "area",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_037",
@@ -747,7 +783,8 @@
         "s-t",
         "area",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_038",
@@ -768,7 +805,8 @@
         "s-t",
         "area",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_039",
@@ -789,7 +827,8 @@
         "s-t",
         "area",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_040",
@@ -810,7 +849,8 @@
         "s-t",
         "area",
         "spostamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_041",
@@ -830,7 +870,8 @@
         "MUA",
         "v=v0+at",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_042",
@@ -850,7 +891,8 @@
         "MUA",
         "v=v0+at",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_043",
@@ -870,7 +912,8 @@
         "MUA",
         "v=v0+at",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_044",
@@ -890,7 +933,8 @@
         "MUA",
         "v=v0+at",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_045",
@@ -910,7 +954,8 @@
         "MUA",
         "v=v0+at",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_046",
@@ -930,7 +975,8 @@
         "MUA",
         "v=v0+at",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_047",
@@ -950,7 +996,8 @@
         "MUA",
         "v=v0+at",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_048",
@@ -970,7 +1017,8 @@
         "MUA",
         "v=v0+at",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_049",
@@ -990,7 +1038,8 @@
         "MUA",
         "v=v0+at",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_050",
@@ -1010,7 +1059,8 @@
         "MUA",
         "v=v0+at",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_051",
@@ -1030,7 +1080,8 @@
         "MUA",
         "spostamento",
         "t²"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_052",
@@ -1050,7 +1101,8 @@
         "MUA",
         "spostamento",
         "t²"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_053",
@@ -1070,7 +1122,8 @@
         "MUA",
         "spostamento",
         "t²"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_054",
@@ -1090,7 +1143,8 @@
         "MUA",
         "spostamento",
         "t²"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_055",
@@ -1110,7 +1164,8 @@
         "MUA",
         "spostamento",
         "t²"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_056",
@@ -1130,7 +1185,8 @@
         "MUA",
         "spostamento",
         "t²"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_057",
@@ -1150,7 +1206,8 @@
         "MUA",
         "spostamento",
         "t²"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_058",
@@ -1170,7 +1227,8 @@
         "MUA",
         "spostamento",
         "t²"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_059",
@@ -1190,7 +1248,8 @@
         "MUA",
         "spostamento",
         "t²"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_060",
@@ -1210,7 +1269,8 @@
         "MUA",
         "spostamento",
         "t²"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_061",
@@ -1230,7 +1290,8 @@
         "moto relativo",
         "incontro",
         "vrel"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_062",
@@ -1250,7 +1311,8 @@
         "moto relativo",
         "incontro",
         "vrel"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_063",
@@ -1270,7 +1332,8 @@
         "moto relativo",
         "incontro",
         "vrel"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_064",
@@ -1290,7 +1353,8 @@
         "moto relativo",
         "incontro",
         "vrel"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_065",
@@ -1310,7 +1374,8 @@
         "moto relativo",
         "incontro",
         "vrel"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_066",
@@ -1330,7 +1395,8 @@
         "lancio verticale",
         "tempo",
         "g"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_067",
@@ -1350,7 +1416,8 @@
         "lancio verticale",
         "tempo",
         "g"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_068",
@@ -1370,7 +1437,8 @@
         "lancio verticale",
         "tempo",
         "g"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_069",
@@ -1390,7 +1458,8 @@
         "lancio verticale",
         "tempo",
         "g"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_070",
@@ -1410,7 +1479,8 @@
         "lancio verticale",
         "tempo",
         "g"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_071",
@@ -1430,7 +1500,8 @@
         "altezza",
         "v²",
         "g"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_072",
@@ -1450,7 +1521,8 @@
         "altezza",
         "v²",
         "g"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_073",
@@ -1470,7 +1542,8 @@
         "altezza",
         "v²",
         "g"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_074",
@@ -1490,7 +1563,8 @@
         "altezza",
         "v²",
         "g"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_075",
@@ -1510,7 +1584,8 @@
         "altezza",
         "v²",
         "g"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_076",
@@ -1530,7 +1605,8 @@
         "vettori",
         "componenti",
         "modulo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_077",
@@ -1550,7 +1626,8 @@
         "vettori",
         "componenti",
         "modulo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_078",
@@ -1570,7 +1647,8 @@
         "vettori",
         "componenti",
         "modulo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_079",
@@ -1590,7 +1668,8 @@
         "vettori",
         "componenti",
         "modulo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_080",
@@ -1610,7 +1689,8 @@
         "vettori",
         "componenti",
         "modulo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_081",
@@ -1630,7 +1710,8 @@
         "derivata",
         "velocità",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_082",
@@ -1650,7 +1731,8 @@
         "derivata",
         "velocità",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_083",
@@ -1670,7 +1752,8 @@
         "derivata",
         "velocità",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_084",
@@ -1690,7 +1773,8 @@
         "derivata",
         "velocità",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_085",
@@ -1710,7 +1794,8 @@
         "derivata",
         "velocità",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_086",
@@ -1730,7 +1815,8 @@
         "derivata",
         "velocità",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_087",
@@ -1750,7 +1836,8 @@
         "derivata",
         "velocità",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_088",
@@ -1770,7 +1857,8 @@
         "derivata",
         "velocità",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_089",
@@ -1790,7 +1878,8 @@
         "derivata",
         "velocità",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_090",
@@ -1810,7 +1899,8 @@
         "derivata",
         "velocità",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_091",
@@ -1830,7 +1920,8 @@
         "a tratti",
         "delta v",
         "integrale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_092",
@@ -1850,7 +1941,8 @@
         "a tratti",
         "delta v",
         "integrale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_093",
@@ -1870,7 +1962,8 @@
         "a tratti",
         "delta v",
         "integrale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_094",
@@ -1890,7 +1983,8 @@
         "a tratti",
         "delta v",
         "integrale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_095",
@@ -1910,7 +2004,8 @@
         "a tratti",
         "delta v",
         "integrale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_096",
@@ -1930,7 +2025,8 @@
         "moto relativo",
         "deriva",
         "tan"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_097",
@@ -1950,7 +2046,8 @@
         "moto relativo",
         "deriva",
         "tan"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_098",
@@ -1970,7 +2067,8 @@
         "moto relativo",
         "deriva",
         "tan"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_099",
@@ -1990,7 +2088,8 @@
         "moto relativo",
         "deriva",
         "tan"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_100",
@@ -2010,7 +2109,8 @@
         "moto relativo",
         "deriva",
         "tan"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_101",
@@ -2030,7 +2130,8 @@
         "centripeta",
         "v²/r",
         "MCU"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_102",
@@ -2050,7 +2151,8 @@
         "centripeta",
         "v²/r",
         "MCU"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_103",
@@ -2070,7 +2172,8 @@
         "centripeta",
         "v²/r",
         "MCU"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_104",
@@ -2090,7 +2193,8 @@
         "centripeta",
         "v²/r",
         "MCU"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_105",
@@ -2110,7 +2214,8 @@
         "centripeta",
         "v²/r",
         "MCU"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_106",
@@ -2130,7 +2235,8 @@
         "periodo",
         "omega",
         "2π"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_107",
@@ -2150,7 +2256,8 @@
         "periodo",
         "omega",
         "2π"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_108",
@@ -2170,7 +2277,8 @@
         "periodo",
         "omega",
         "2π"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_109",
@@ -2190,7 +2298,8 @@
         "periodo",
         "omega",
         "2π"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_110",
@@ -2210,7 +2319,8 @@
         "periodo",
         "omega",
         "2π"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_111",
@@ -2230,7 +2340,8 @@
         "tangenziale",
         "centripeta",
         "risultante"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_112",
@@ -2250,7 +2361,8 @@
         "tangenziale",
         "centripeta",
         "risultante"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_113",
@@ -2270,7 +2382,8 @@
         "tangenziale",
         "centripeta",
         "risultante"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_114",
@@ -2290,7 +2403,8 @@
         "tangenziale",
         "centripeta",
         "risultante"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_115",
@@ -2310,7 +2424,8 @@
         "tangenziale",
         "centripeta",
         "risultante"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_116",
@@ -2330,7 +2445,8 @@
         "parabola",
         "quota",
         "equazione"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_117",
@@ -2350,7 +2466,8 @@
         "parabola",
         "quota",
         "equazione"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_118",
@@ -2370,7 +2487,8 @@
         "parabola",
         "quota",
         "equazione"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_119",
@@ -2390,7 +2508,8 @@
         "parabola",
         "quota",
         "equazione"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_120",
@@ -2410,7 +2529,8 @@
         "parabola",
         "quota",
         "equazione"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_121",
@@ -2430,7 +2550,8 @@
         "MRU",
         "velocità",
         "costante"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_122",
@@ -2450,7 +2571,8 @@
         "velocità medio",
         "distanza",
         "tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_123",
@@ -2470,7 +2592,8 @@
         "spostamento",
         "posizione",
         "finale iniziale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_124",
@@ -2490,7 +2613,8 @@
         "accelerazione",
         "nulla",
         "velocità costante"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_125",
@@ -2510,7 +2634,8 @@
         "grafico s-t",
         "fermo",
         "parallelo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_126",
@@ -2531,7 +2656,8 @@
         "area",
         "spostamento",
         "integrale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_127",
@@ -2551,7 +2677,8 @@
         "MUA",
         "distanza",
         "intervalli"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_128",
@@ -2571,7 +2698,8 @@
         "velocità medio",
         "MUA",
         "medio aritmetica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_129",
@@ -2591,7 +2719,8 @@
         "accelerazione",
         "velocità medio",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_130",
@@ -2611,7 +2740,8 @@
         "caduta libera",
         "gravità",
         "accelerazione costante"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_131",
@@ -2631,7 +2761,8 @@
         "caduta libera",
         "altezza",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_132",
@@ -2651,7 +2782,8 @@
         "lanciamento verticale",
         "gravità",
         "massima altezza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_133",
@@ -2671,7 +2803,8 @@
         "lanciamento verticale",
         "tempo di volo",
         "simmetria"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_134",
@@ -2691,7 +2824,8 @@
         "MUA",
         "legge oraria",
         "parabola"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_135",
@@ -2711,11 +2845,12 @@
         "grafico a-t",
         "accelerazione nulla",
         "MRU"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_136",
-      "domanda": "Due proiettili sono lanciati dallo stesso punto con lo stesso modulo di velocità iniziale, ma con angoli di lancio diversi: il primo a 30° e il secondo a 60°. Quale affermazione è corretta?",
+      "domanda": "Due proiettili sono lanciati dallo stesso punto con lo stesso modulo di velocità iniziale, mas con angoli di lancio diversi: il primo a 30° e il secondo a 60°. Quale affermazione è corretta?",
       "categoria": "Cinematica",
       "sottocategoria": "Moto parabolico - Ragionamento",
       "opzioni": [
@@ -2731,7 +2866,8 @@
         "moto parabolico",
         "gittata",
         "angoli complementari"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_137",
@@ -2751,7 +2887,8 @@
         "MUA",
         "intervalli uguali",
         "distanze successive"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_138",
@@ -2771,7 +2908,8 @@
         "MCU",
         "velocità scalare",
         "velocità vettoriale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_139",
@@ -2791,7 +2929,8 @@
         "accelerazione centripeta",
         "velocità",
         "raggio"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_140",
@@ -2811,7 +2950,8 @@
         "accelerazione centripeta",
         "raggio",
         "proporzionalità inversa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_141",
@@ -2831,7 +2971,8 @@
         "velocità medio",
         "velocità istantanea",
         "limite"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_142",
@@ -2851,7 +2992,8 @@
         "grafico s-t",
         "curvatura",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_143",
@@ -2872,7 +3014,8 @@
         "velocità",
         "tempo",
         "proporzionalità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_144",
@@ -2892,7 +3035,8 @@
         "MUA",
         "distanza",
         "quadrato del tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_145",
@@ -2912,7 +3056,8 @@
         "grafico v-t",
         "decelerazione",
         "retta"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_146",
@@ -2932,7 +3077,8 @@
         "grafico v-t",
         "pendenza",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_147",
@@ -2946,14 +3092,15 @@
         "La massa"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "Nella caduta libera: $v = gt$ (velocità proporzionale al tempo, quindi aumenta linearmente).",
+      "spiegazione": "Nella caduta libera: $v = gt (velocità proporzionale al tempo, quindi aumenta linearmente).",
       "difficolta": "facile",
       "paroleChiave": [
         "caduta libera",
         "velocità",
         "gravità",
         "linearità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_148",
@@ -2973,7 +3120,8 @@
         "caduta libera",
         "altezza",
         "quadrato del tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_149",
@@ -2993,7 +3141,8 @@
         "lanciamento verticale",
         "massima altezza",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_150",
@@ -3013,7 +3162,8 @@
         "moto parabolico",
         "scomposizione",
         "orizzontale verticale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_151",
@@ -3033,7 +3183,8 @@
         "moto parabolico",
         "componente orizzontale",
         "gravità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_152",
@@ -3054,7 +3205,8 @@
         "parabola",
         "vertice",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_153",
@@ -3074,7 +3226,8 @@
         "velocità medio",
         "velocità istantanea",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_154",
@@ -3095,7 +3248,8 @@
         "frequenza",
         "MCU",
         "inversa proporzionalità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_155",
@@ -3116,7 +3270,8 @@
         "spazi",
         "intervalli uguali",
         "rapporto dispari"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_156",
@@ -3136,7 +3291,8 @@
         "MUA",
         "distanza",
         "metodi equivalenti"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_157",
@@ -3156,7 +3312,8 @@
         "moto curvilineo",
         "accelerazione",
         "direzione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_158",
@@ -3176,7 +3333,8 @@
         "MRU",
         "grafico a-t",
         "accelerazione zero"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_159",
@@ -3196,7 +3354,8 @@
         "velocità medio",
         "distanze uguali",
         "velocità diverse"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_160",
@@ -3217,7 +3376,8 @@
         "accelerazione",
         "spazio",
         "tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_161",
@@ -3237,7 +3397,8 @@
         "accelerazione centripeta",
         "MCU",
         "direzione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_162",
@@ -3257,7 +3418,8 @@
         "moto parabolico",
         "componenti velocità",
         "gravità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_163",
@@ -3277,7 +3439,8 @@
         "caduta libera",
         "velocità",
         "tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_164",
@@ -3297,7 +3460,8 @@
         "caduta libera",
         "altezza",
         "tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_165",
@@ -3317,7 +3481,8 @@
         "lanciamento verticale",
         "velocità iniziale",
         "tempo di volo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_166",
@@ -3337,7 +3502,8 @@
         "velocità medio",
         "spostamento",
         "definizione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_167",
@@ -3357,7 +3523,8 @@
         "MUA",
         "relazione cinematica",
         "v² = 2as"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_168",
@@ -3377,7 +3544,8 @@
         "MUA",
         "equazioni",
         "fondamentali"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_169",
@@ -3397,7 +3565,8 @@
         "decelerazione",
         "arresto",
         "velocità nulla"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_170",
@@ -3417,7 +3586,8 @@
         "MUA",
         "MRU",
         "spostamento totale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_171",
@@ -3438,7 +3608,8 @@
         "velocità angolare",
         "velocità lineare",
         "raggio"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_172",
@@ -3458,7 +3629,8 @@
         "grafico v-t",
         "parabola",
         "accelerazione variabile"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_173",
@@ -3478,7 +3650,8 @@
         "MUA",
         "MRU",
         "confronto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_174",
@@ -3499,7 +3672,8 @@
         "gittata",
         "massima",
         "45°"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_175",
@@ -3519,7 +3693,8 @@
         "accelerazione",
         "decelerazione",
         "simmetria"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_176",
@@ -3539,7 +3714,8 @@
         "spostamento",
         "distanza",
         "traiettoria"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_177",
@@ -3559,7 +3735,8 @@
         "accelerazione",
         "direzione",
         "vettore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_178",
@@ -3580,7 +3757,8 @@
         "velocità",
         "accelerazione",
         "angolare"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_179",
@@ -3600,7 +3778,8 @@
         "legge oraria",
         "velocità iniziale",
         "confronto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_180",
@@ -3620,7 +3799,8 @@
         "legge oraria",
         "accelerazione",
         "coefficiente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_181",
@@ -3640,7 +3820,8 @@
         "velocità",
         "accelerazione",
         "verso opposto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_182",
@@ -3660,7 +3841,8 @@
         "periodo",
         "frequenza",
         "MCU"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_183",
@@ -3680,7 +3862,8 @@
         "MCU",
         "velocità tangenziale",
         "periodo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_184",
@@ -3700,7 +3883,8 @@
         "decelerazione",
         "accelerazione negativa",
         "freno"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_185",
@@ -3720,7 +3904,8 @@
         "lanciamento verticale",
         "massima altezza",
         "velocità iniziale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_186",
@@ -3740,7 +3925,8 @@
         "massima altezza",
         "lanciamento verticale",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_187",
@@ -3760,7 +3946,8 @@
         "MCU",
         "velocità",
         "tangente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_188",
@@ -3780,7 +3967,8 @@
         "MUA",
         "distanza",
         "quadrato del tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_189",
@@ -3800,7 +3988,8 @@
         "MUA",
         "intervallo temporale",
         "spazio"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_190",
@@ -3820,7 +4009,8 @@
         "moto parabolico",
         "massima altezza",
         "componenti velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_191",
@@ -3840,7 +4030,8 @@
         "velocità medio",
         "velocità istantanea",
         "deducibilità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_192",
@@ -3860,7 +4051,8 @@
         "grafico v-t",
         "retta spezzata",
         "accelerazione variabile"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_193",
@@ -3880,7 +4072,8 @@
         "moto parabolico",
         "gittata",
         "angolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_194",
@@ -3900,18 +4093,19 @@
         "caduta libera",
         "altezza",
         "radice quadrata"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_195",
-      "domanda": "Un oggetto si muove lungo un asse rettilineo con velocità iniziale 10 m/s e accelerazione di -2 m/s². Dopo quanto tempo l'oggetto ritorna al punto di partenza?",
+      "domanda": "Un oggetto segue un percorso curvilineo. Quale affermazione è **sempre vera**?",
       "categoria": "Cinematica",
-      "sottocategoria": "MUA - Inversione di direzione",
+      "sottocategoria": "Moto curvilineo",
       "opzioni": [
-        "$t = 5$ s",
-        "$t = 10$ s",
-        "$t = 2.5$ s",
-        "Non ritorna al punto di partenza con questi dati"
+        "Ha accelerazione nulla",
+        "Ha accelerazione tangenziale",
+        "Ha almeno una componente di accelerazione diversa da zero",
+        "La velocità è costante"
       ],
       "rispostaCorretta": 1,
       "spiegazione": "L'oggetto si ferma a $v = 0$ quando $0 = 10 - 2t \\Rightarrow t = 5$ s. Distanza fino al fermo: $s = 10(5) - \\frac{1}{2}(2)(25) = 50 - 25 = 25$ m. Per tornare indietro e raggiungere il punto di partenza, dalla quiete deve percorrere ulteriori 25 m. Tempo dalla quiete: $25 = -\\frac{1}{2}(2)t^2 \\Rightarrow t = 5$ s. Tempo totale: **10 s**.",
@@ -3920,7 +4114,8 @@
         "MUA",
         "inversione",
         "ritorno"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_196",
@@ -3940,7 +4135,8 @@
         "MCU",
         "raggio",
         "costante"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_197",
@@ -3960,7 +4156,8 @@
         "legge oraria",
         "derivata",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_198",
@@ -3980,7 +4177,8 @@
         "legge oraria",
         "derivata",
         "accelerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_199",
@@ -4000,7 +4198,8 @@
         "velocità medio",
         "distanza",
         "tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_200",
@@ -4020,11 +4219,12 @@
         "MUA",
         "velocità finale",
         "accelerazione costante"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_201",
-      "domanda": "Un proiettile è lanciato dal suolo e ritorna al suolo dopo 4 secondi. Se la massima altezza è raggiunta dopo 2 secondi, quale è la velocità iniziale? (g=10 m/s²)",
+      "domanda": "Un proiettile è lanciato dal suolo e ritorna al suolo dopo 4 secondi. Se la massima altezza è raggiunta dopo 2 secondi, quale era la velocità iniziale? (g=10 m/s²)",
       "categoria": "Cinematica",
       "sottocategoria": "Moto parabolico - Simmetria",
       "opzioni": [
@@ -4040,7 +4240,8 @@
         "moto parabolico",
         "velocità iniziale",
         "simmetria"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_202",
@@ -4060,7 +4261,8 @@
         "MUA",
         "ultimi secondi",
         "velocità medio"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_203",
@@ -4080,7 +4282,8 @@
         "MUA",
         "grafico x-t",
         "parabola"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_204",
@@ -4100,7 +4303,8 @@
         "legge oraria",
         "massimo",
         "derivata"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_205",
@@ -4120,7 +4324,8 @@
         "MRU",
         "lunghezza",
         "tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_206",
@@ -4140,7 +4345,8 @@
         "grafico v-t",
         "velocità nulla",
         "inversione direzione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_207",
@@ -4160,7 +4366,8 @@
         "caduta libera",
         "distanze",
         "quadrato del tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_208",
@@ -4181,7 +4388,8 @@
         "velocità angolare",
         "periodo",
         "frequenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_209",
@@ -4201,7 +4409,8 @@
         "moto parabolico",
         "velocità finale",
         "componenti"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_210",
@@ -4221,7 +4430,8 @@
         "MUA",
         "distanza per unità tempo",
         "velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_211",
@@ -4241,7 +4451,8 @@
         "caduta libera",
         "accelerazione",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_212",
@@ -4261,7 +4472,8 @@
         "MRU",
         "traiettoria",
         "spazi uguali tempi uguali"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_213",
@@ -4281,7 +4493,8 @@
         "MUA",
         "primo secondo",
         "distanza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_214",
@@ -4301,7 +4514,8 @@
         "MUA",
         "secondo secondo",
         "differenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_215",
@@ -4321,7 +4535,8 @@
         "accelerazione",
         "direzione",
         "moto curvilineo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_216",
@@ -4341,7 +4556,8 @@
         "MUA",
         "velocità medio",
         "spostamento medio"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_217",
@@ -4361,7 +4577,8 @@
         "lanciamento verticale",
         "simmetria",
         "velocità finale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_218",
@@ -4381,7 +4598,8 @@
         "accelerazione",
         "definizione",
         "variazione velocità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_219",
@@ -4401,7 +4619,8 @@
         "caduta libera",
         "altezza",
         "radice quadrata"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cin_220",
@@ -4422,7 +4641,8 @@
         "accelerazione centripeta",
         "velocità",
         "quadrato"
-      ]
+      ],
+      "richiedeCalcolo": false
     }
   ]
 }

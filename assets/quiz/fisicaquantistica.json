@@ -18,7 +18,8 @@
         "quantizzazione",
         "livelli",
         "discreto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_002",
@@ -39,7 +40,8 @@
         "fotone",
         "energia",
         "frequenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_003",
@@ -60,7 +62,8 @@
         "elettroni",
         "metallo",
         "luce"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_004",
@@ -81,7 +84,8 @@
         "fotoelettrico",
         "frequenza",
         "lavoro"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_005",
@@ -101,7 +105,8 @@
         "debroglie",
         "lunghezza d'onda",
         "quantità di moto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_006",
@@ -122,7 +127,8 @@
         "onda",
         "particella",
         "misura"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_007",
@@ -143,7 +149,8 @@
         "posizione",
         "quantità di moto",
         "incertezza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_008",
@@ -163,7 +170,8 @@
         "sovrapposizione",
         "stato",
         "misura"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_009",
@@ -183,16 +191,17 @@
         "psi",
         "funzione d'onda",
         "probabilità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_010",
-      "domanda": "Cosa si intende (a livello liceale) per \u201ccollasso\u201d della funzione d'onda?",
+      "domanda": "Cosa si intende (a livello liceale) per “collasso” della funzione d'onda?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Misura",
       "opzioni": [
         "La particella esplode",
-        "Dopo la misura lo stato si \u201cseleziona\u201d su un risultato compatibile",
+        "Dopo la misura lo stato si “seleziona” su un risultato compatibile",
         "La luce diventa più lenta",
         "La massa diventa negativa"
       ],
@@ -203,7 +212,8 @@
         "collasso",
         "misura",
         "stato"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_011",
@@ -224,7 +234,8 @@
         "idrogeno",
         "livelli",
         "spettro"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_012",
@@ -245,7 +256,8 @@
         "transizioni",
         "fotone",
         "livelli"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_013",
@@ -265,7 +277,8 @@
         "assorbimento",
         "eccitazione",
         "livelli"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_014",
@@ -285,7 +298,8 @@
         "emissione",
         "fotone",
         "transizione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_015",
@@ -305,7 +319,8 @@
         "numeri quantici",
         "n",
         "livello energetico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_016",
@@ -325,7 +340,8 @@
         "l",
         "numeri quantici",
         "orbitali"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_017",
@@ -344,8 +360,9 @@
       "paroleChiave": [
         "pauli",
         "esclusione",
-        "numeri quantici"
-      ]
+        "numbers quantici"
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_018",
@@ -365,11 +382,12 @@
         "spin",
         "ms",
         "elettrone"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_019",
-      "domanda": "Un \u201corbitale\u201d (linguaggio moderno) è meglio descritto come:",
+      "domanda": "Un “orbitale” (linguaggio moderno) è meglio descritto come:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Orbitali",
       "opzioni": [
@@ -385,11 +403,12 @@
         "orbitale",
         "probabilità",
         "psi"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_020",
-      "domanda": "Cosa indica lo \u201cstato fondamentale\u201d di un atomo?",
+      "domanda": "Cosa indica lo “stato fondamentale” di un atomo?",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Stati energetici",
       "opzioni": [
@@ -405,11 +424,12 @@
         "fondamentale",
         "energia minima",
         "stato"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_021",
-      "domanda": "Uno \u201cstato eccitato\u201d è:",
+      "domanda": "Uno “stato eccitato” è:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Stati energetici",
       "opzioni": [
@@ -425,7 +445,8 @@
         "eccitato",
         "energia",
         "decadimento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_022",
@@ -445,11 +466,12 @@
         "bohr",
         "energia negativa",
         "stato legato"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_023",
-      "domanda": "Il \u201ctunneling quantistico\u201d descrive:",
+      "domanda": "Il “tunneling quantistico” descrive:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Effetto tunnel",
       "opzioni": [
@@ -465,7 +487,8 @@
         "tunnel",
         "barriera",
         "probabilità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_024",
@@ -485,7 +508,8 @@
         "tunnel",
         "decadimento alfa",
         "nucleo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_025",
@@ -506,7 +530,8 @@
         "tunnel",
         "corrente",
         "distanza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_026",
@@ -526,7 +551,8 @@
         "entanglement",
         "stato",
         "correlazioni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_027",
@@ -547,7 +573,8 @@
         "Δx",
         "Δp",
         "hbar"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_028",
@@ -568,7 +595,8 @@
         "bohr",
         "onda",
         "particella"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_029",
@@ -588,7 +616,8 @@
         "corpo nero",
         "planck",
         "ultravioletto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_030",
@@ -608,7 +637,8 @@
         "planck",
         "quanti",
         "corpo nero"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_031",
@@ -629,7 +659,8 @@
         "diffusione",
         "fotone",
         "elettrone"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_032",
@@ -649,7 +680,8 @@
         "diffrazione",
         "elettroni",
         "onda"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_033",
@@ -670,7 +702,8 @@
         "germer",
         "diffrazione",
         "cristallo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_034",
@@ -690,7 +723,8 @@
         "stern-gerlach",
         "spin",
         "quantizzazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_035",
@@ -710,7 +744,8 @@
         "zeeman",
         "campo magnetico",
         "spettro"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_036",
@@ -731,7 +766,8 @@
         "righe",
         "gas",
         "atomi"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_037",
@@ -751,7 +787,8 @@
         "laser",
         "emissione stimolata",
         "coerenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_038",
@@ -772,11 +809,12 @@
         "stimolata",
         "laser",
         "fotoni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_039",
-      "domanda": "In un laser, \u201ccoerenza\u201d della luce significa soprattutto:",
+      "domanda": "In un laser, “coerenza” della luce significa soprattutto:",
       "categoria": "Fisica Quantistica",
       "sottocategoria": "Laser",
       "opzioni": [
@@ -792,7 +830,8 @@
         "laser",
         "coerenza",
         "fase"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_040",
@@ -813,7 +852,8 @@
         "probabilità",
         "modulo quadro",
         "psi"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_041",
@@ -834,7 +874,8 @@
         "energia",
         "hc/lambda",
         "500nm"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_042",
@@ -854,7 +895,8 @@
         "E=hf",
         "fotone",
         "frequenza"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_043",
@@ -874,7 +916,8 @@
         "eV",
         "frequenza",
         "E/h"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_044",
@@ -894,7 +937,8 @@
         "frequenza",
         "lambda",
         "c/lambda"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_045",
@@ -914,7 +958,8 @@
         "fotoelettrico",
         "lavoro estrazione",
         "einstein"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_046",
@@ -934,7 +979,8 @@
         "fotoelettrico",
         "frequenza",
         "Kmax"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_047",
@@ -954,7 +1000,8 @@
         "fotoelettrico",
         "intensità",
         "energia fotone"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_048",
@@ -974,7 +1021,8 @@
         "debroglie",
         "h/p",
         "quantità di moto"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_049",
@@ -993,7 +1041,8 @@
       "paroleChiave": [
         "debroglie",
         "proporzionalità inversa"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_050",
@@ -1013,7 +1062,8 @@
         "heisenberg",
         "ΔxΔp",
         "hbar"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_051",
@@ -1033,7 +1083,8 @@
         "bohr",
         "idrogeno",
         "E=-13.6/n^2"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_052",
@@ -1054,7 +1105,8 @@
         "bohr",
         "n=3->2",
         "deltaE"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_053",
@@ -1074,13 +1126,14 @@
         "emissione",
         "fotone",
         "deltaE"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_054",
       "domanda": "Quale set di numeri quantici è impossibile?",
       "categoria": "Fisica Quantistica",
-      "sottocategoria": "Numeri quantici",
+      "sottocategoria": "Numbers quantici",
       "opzioni": [
         "$n=2, l=1, m=0, m_s=+1/2$",
         "$n=3, l=2, m=-2, m_s=-1/2$",
@@ -1094,13 +1147,14 @@
         "numeri quantici",
         "vincoli",
         "n l m ms"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_055",
       "domanda": "Per un dato $l=1$, i valori possibili del numero quantico magnetico $m$ sono:",
       "categoria": "Fisica Quantistica",
-      "sottocategoria": "Numeri quantici",
+      "sottocategoria": "Numbers quantici",
       "opzioni": [
         "$m = 0, 1$",
         "$m = -1, 0, +1$",
@@ -1114,7 +1168,8 @@
         "m",
         "l",
         "magnetico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_056",
@@ -1135,7 +1190,8 @@
         "pauli",
         "spin",
         "2 elettroni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_057",
@@ -1155,7 +1211,8 @@
         "E=hf",
         "frequenza",
         "proporzionalità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_058",
@@ -1175,7 +1232,8 @@
         "hc/lambda",
         "energia",
         "lunghezza d'onda"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_059",
@@ -1196,7 +1254,8 @@
         "Δx",
         "Δp",
         "heisenberg"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_060",
@@ -1216,7 +1275,8 @@
         "fotoelettrico",
         "lineare",
         "pendenza h"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_061",
@@ -1236,7 +1296,8 @@
         "bohr",
         "n=2->1",
         "emissione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_062",
@@ -1256,7 +1317,8 @@
         "ionizzazione",
         "idrogeno",
         "13.6eV"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_063",
@@ -1276,7 +1338,8 @@
         "visibile",
         "frequenza",
         "energia fotone"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_064",
@@ -1296,7 +1359,8 @@
         "doppia fenditura",
         "interferenza",
         "which-way"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_065",
@@ -1316,7 +1380,8 @@
         "fotone",
         "impulso",
         "h/lambda"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_066",
@@ -1336,13 +1401,14 @@
         "fotone",
         "impulso",
         "inverso"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_067",
       "domanda": "Per un livello con $n=3$, quanti valori diversi di $l$ sono possibili?",
       "categoria": "Fisica Quantistica",
-      "sottocategoria": "Numeri quantici",
+      "sottocategoria": "Numbers quantici",
       "opzioni": [
         "1",
         "2",
@@ -1356,13 +1422,14 @@
         "n=3",
         "l",
         "valori possibili"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_068",
       "domanda": "Per $l=2$, quanti valori diversi di $m$ sono possibili?",
       "categoria": "Fisica Quantistica",
-      "sottocategoria": "Numeri quantici",
+      "sottocategoria": "Numbers quantici",
       "opzioni": [
         "2",
         "3",
@@ -1376,7 +1443,8 @@
         "l=2",
         "m",
         "degenerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_069",
@@ -1396,7 +1464,8 @@
         "tensione arresto",
         "eV",
         "fotoelettrico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_070",
@@ -1416,7 +1485,8 @@
         "eV",
         "tensione",
         "fotoelettrico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_071",
@@ -1436,7 +1506,8 @@
         "bohr",
         "raggio",
         "n^2"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_072",
@@ -1456,7 +1527,8 @@
         "fotone",
         "impulso",
         "inverso"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_073",
@@ -1476,7 +1548,8 @@
         "spettro",
         "raggi X",
         "frequenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_074",
@@ -1496,7 +1569,8 @@
         "UV",
         "lunghezza d'onda",
         "200nm"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_075",
@@ -1516,7 +1590,8 @@
         "corpo nero",
         "catastrofe ultravioletta",
         "rayleigh-jeans"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_076",
@@ -1536,7 +1611,8 @@
         "osservabile",
         "autovalori",
         "discreto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_077",
@@ -1556,7 +1632,8 @@
         "transizione",
         "frequenza",
         "deltaE"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_078",
@@ -1576,7 +1653,8 @@
         "probabilità",
         "psi",
         "born"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_079",
@@ -1590,13 +1668,14 @@
         "Assorbe energia in modo continuo sempre"
       ],
       "rispostaCorretta": 1,
-      "spiegazione": "L'assorbimento avviene per fotoni \u201crisonanti\u201d con transizioni consentite tra livelli energetici discreti.",
+      "spiegazione": "L'assorbimento avviene per fotoni “risonanti” con transizioni consentite tra livelli energetici discreti.",
       "difficolta": "medio",
       "paroleChiave": [
         "assorbimento",
         "righe",
         "transizioni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_080",
@@ -1617,7 +1696,8 @@
         "transizioni",
         "energia",
         "lambda"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_081",
@@ -1638,7 +1718,8 @@
         "livelli",
         "n^2",
         "rapporto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_082",
@@ -1659,7 +1740,8 @@
         "L",
         "scaling",
         "1/L^2"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_083",
@@ -1680,7 +1762,8 @@
         "transizione",
         "10.2eV",
         "lyman"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_084",
@@ -1701,7 +1784,8 @@
         "hc",
         "eVnm",
         "122nm"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_085",
@@ -1721,7 +1805,8 @@
         "bohr",
         "n=3->1",
         "deltaE"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_086",
@@ -1742,7 +1827,8 @@
         "UV",
         "lyman",
         "1240"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_087",
@@ -1762,7 +1848,8 @@
         "corpo nero",
         "catastrofe ultravioletta",
         "fisica classica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_088",
@@ -1782,7 +1869,8 @@
         "legge di Wien",
         "temperatura",
         "picco di emissione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_089",
@@ -1802,7 +1890,8 @@
         "effetto fotoelettrico",
         "frequenza",
         "energia cinetica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_090",
@@ -1822,7 +1911,8 @@
         "soglia fotoelettrica",
         "lavoro di estrazione",
         "fotoni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_091",
@@ -1842,7 +1932,8 @@
         "istantaneità",
         "natura corpuscolare",
         "fotoni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_092",
@@ -1862,7 +1953,8 @@
         "effetto Compton",
         "urto elastico",
         "lunghezza d'onda"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_093",
@@ -1882,7 +1974,8 @@
         "atomo di Rutherford",
         "instabilità",
         "orbite stazionarie"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_094",
@@ -1902,7 +1995,8 @@
         "spettri a righe",
         "transizione energetica",
         "emissione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_095",
@@ -1922,7 +2016,8 @@
         "De Broglie",
         "lunghezza d'onda",
         "quantità di moto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_096",
@@ -1942,7 +2037,8 @@
         "macroscopico",
         "lunghezza d'onda",
         "limite classico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_097",
@@ -1962,7 +2058,8 @@
         "Heisenberg",
         "posizione",
         "quantità di moto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_098",
@@ -1982,7 +2079,8 @@
         "energia-tempo",
         "particelle virtuali",
         "fluttuazioni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_099",
@@ -2002,7 +2100,8 @@
         "microscopio elettronico",
         "potere risolutivo",
         "lunghezza d'onda"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_100",
@@ -2022,7 +2121,8 @@
         "probabilità",
         "interpretazione di Born",
         "funzione d'onda"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_101",
@@ -2042,13 +2142,14 @@
         "effetto tunnel",
         "barriera di potenziale",
         "penetrazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_102",
       "domanda": "Il numero quantico principale $n$ definisce principalmente:",
       "categoria": "Fisica Quantistica",
-      "sottocategoria": "Numeri quantici",
+      "sottocategoria": "Numbers quantici",
       "opzioni": [
         "La forma dell'orbitale",
         "L'orientamento dello spin",
@@ -2062,13 +2163,14 @@
         "numero quantico principale",
         "energia",
         "dimensione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_103",
       "domanda": "Qual è la forma geometrica di un orbitale di tipo 's' ($l=0$)?",
       "categoria": "Fisica Quantistica",
-      "sottocategoria": "Numeri quantici",
+      "sottocategoria": "Numbers quantici",
       "opzioni": [
         "Sferica",
         "A doppio lobo (bilobata)",
@@ -2082,7 +2184,8 @@
         "orbitale s",
         "forma",
         "sferico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_104",
@@ -2102,7 +2205,8 @@
         "Pauli",
         "esclusione",
         "numeri quantici"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_105",
@@ -2122,7 +2226,8 @@
         "spin",
         "momento angolare intrinseco",
         "quantistico"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_106",
@@ -2142,7 +2247,8 @@
         "Stern-Gerlach",
         "spin",
         "quantizzazione spaziale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_107",
@@ -2162,7 +2268,8 @@
         "orbita vs orbitale",
         "probabilità",
         "traiettoria"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_108",
@@ -2182,7 +2289,8 @@
         "incandescenza",
         "corpo nero",
         "temperatura"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_109",
@@ -2202,7 +2310,8 @@
         "inversione di popolazione",
         "laser",
         "emissione stimolata"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_110",
@@ -2222,7 +2331,8 @@
         "STM",
         "effetto tunnel",
         "microscopia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_111",
@@ -2242,7 +2352,8 @@
         "banda proibita",
         "gap",
         "semiconduttori"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_112",
@@ -2262,7 +2373,8 @@
         "energia di punto zero",
         "stato fondamentale",
         "indeterminazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_113",
@@ -2282,7 +2394,8 @@
         "sovrapposizione",
         "stati quantistici",
         "gatto di Schrödinger"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_114",
@@ -2302,7 +2415,8 @@
         "qubit",
         "computer quantistico",
         "sovrapposizione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_115",
@@ -2322,7 +2436,8 @@
         "complementarità",
         "dualismo",
         "Bohr"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_116",
@@ -2342,7 +2457,8 @@
         "MRI",
         "spin nucleare",
         "risonanza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_117",
@@ -2362,7 +2478,8 @@
         "Davisson-Germer",
         "diffrazione elettroni",
         "prova sperimentale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_118",
@@ -2382,7 +2499,8 @@
         "lacune",
         "semiconduttori",
         "banda di valenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_119",
@@ -2402,7 +2520,8 @@
         "collasso",
         "misura",
         "Copenaghen"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_120",
@@ -2422,13 +2541,14 @@
         "principio di corrispondenza",
         "limite classico",
         "Bohr"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_121",
       "domanda": "Cosa indica il numero quantico magnetico $m_l$?",
       "categoria": "Fisica Quantistica",
-      "sottocategoria": "Numeri quantici",
+      "sottocategoria": "Numbers quantici",
       "opzioni": [
         "La forma dell'orbitale",
         "L'energia dell'orbitale",
@@ -2442,7 +2562,8 @@
         "numero quantico magnetico",
         "orientamento",
         "orbitali"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_122",
@@ -2462,7 +2583,8 @@
         "livelli energetici",
         "idrogeno",
         "degenerazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_123",
@@ -2482,7 +2604,8 @@
         "fermioni",
         "spin semintero",
         "Pauli"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_124",
@@ -2502,7 +2625,8 @@
         "effetto Zeeman",
         "campo magnetico",
         "scissione righe"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_125",
@@ -2522,7 +2646,8 @@
         "indistinguibilità",
         "particelle identiche",
         "statistica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_126",
@@ -2542,7 +2667,8 @@
         "normalizzazione",
         "probabilità totale",
         "matematica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_127",
@@ -2562,7 +2688,8 @@
         "frequenza",
         "lunghezza d'onda",
         "fotone"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_128",
@@ -2582,7 +2709,8 @@
         "lunghezza d'onda",
         "frequenza",
         "ultravioletto"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_129",
@@ -2602,7 +2730,8 @@
         "rapporto frequenze",
         "lunghezza d'onda",
         "visibile"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_130",
@@ -2622,7 +2751,8 @@
         "fotoelettrico",
         "energia cinetica",
         "lavoro di estrazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_131",
@@ -2642,7 +2772,8 @@
         "soglia fotoelettrica",
         "lavoro di estrazione",
         "eV"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_132",
@@ -2662,7 +2793,8 @@
         "tensione di arresto",
         "fotoelettrico",
         "energia cinetica"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_133",
@@ -2682,7 +2814,8 @@
         "de Broglie",
         "quantità di moto",
         "lunghezza d'onda"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_134",
@@ -2702,7 +2835,8 @@
         "de Broglie",
         "proporzionalità inversa",
         "quantità di moto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_135",
@@ -2722,7 +2856,8 @@
         "indeterminazione",
         "Heisenberg",
         "limite minimo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_136",
@@ -2742,7 +2877,8 @@
         "indeterminazione",
         "inverso",
         "confinamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_137",
@@ -2762,7 +2898,8 @@
         "bohr",
         "livelli energetici",
         "n=3"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_138",
@@ -2782,7 +2919,8 @@
         "transizione",
         "bohr",
         "energia"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_139",
@@ -2802,7 +2940,8 @@
         "lunghezza d'onda",
         "fotone",
         "Balmer"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_140",
@@ -2821,7 +2960,8 @@
       "paroleChiave": [
         "transizione",
         "differenza energetica"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_141",
@@ -2841,7 +2981,8 @@
         "Balmer",
         "H-alpha",
         "lunghezza d'onda"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_142",
@@ -2861,7 +3002,8 @@
         "ionizzazione",
         "energia",
         "n=2"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_143",
@@ -2881,7 +3023,8 @@
         "scatola",
         "rapporto energie",
         "n quadrato"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_144",
@@ -2901,7 +3044,8 @@
         "scatola",
         "scaling",
         "energia"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_145",
@@ -2921,7 +3065,8 @@
         "emissione",
         "frequenza fotone",
         "energia"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_146",
@@ -2941,7 +3086,8 @@
         "intensità",
         "numero fotoni",
         "energia"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_147",
@@ -2961,7 +3107,8 @@
         "Compton",
         "scattering",
         "formula"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_148",
@@ -2981,13 +3128,14 @@
         "Compton wavelength",
         "elettrone",
         "scala quantistica"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_149",
       "domanda": "Quanti stati (orbitali diversi) sono possibili per $n=2$ nell'atomo di idrogeno?",
       "categoria": "Fisica Quantistica",
-      "sottocategoria": "Numeri quantici",
+      "sottocategoria": "Numbers quantici",
       "opzioni": [
         "2",
         "4",
@@ -3001,7 +3149,8 @@
         "degenerazione",
         "n=2",
         "stati"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_150",
@@ -3021,13 +3170,14 @@
         "guscio",
         "n=3",
         "principio di Pauli"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_151",
       "domanda": "Un elettrone si trova in uno stato con $n=3, l=2, m=1, m_s=-1/2$. Quale affermazione è vera?",
       "categoria": "Fisica Quantistica",
-      "sottocategoria": "Numeri quantici",
+      "sottocategoria": "Numbers quantici",
       "opzioni": [
         "Lo stato è impossibile perché $l$ non può essere 2 per $n=3$",
         "Lo stato è valido",
@@ -3041,13 +3191,14 @@
         "numeri quantici",
         "validità",
         "vincoli"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_152",
       "domanda": "Quale coppia di numeri quantici è impossibile?",
       "categoria": "Fisica Quantistica",
-      "sottocategoria": "Numeri quantici",
+      "sottocategoria": "Numbers quantici",
       "opzioni": [
         "$n=2, l=1$",
         "$n=3, l=2$",
@@ -3061,7 +3212,8 @@
         "numeri quantici",
         "vincoli",
         "validità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "qnt_153",
@@ -3081,7 +3233,8 @@
         "frequenza fotone",
         "energia",
         "Planck"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_154",
@@ -3101,7 +3254,8 @@
         "infrarosso",
         "lunghezza d'onda",
         "energia"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_155",
@@ -3121,7 +3275,8 @@
         "de Broglie",
         "velocità",
         "quantità di moto"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "qnt_156",
@@ -3141,7 +3296,8 @@
         "de Broglie",
         "massa",
         "comparazione"
-      ]
+      ],
+      "richiedeCalcolo": false
     }
   ]
 }
