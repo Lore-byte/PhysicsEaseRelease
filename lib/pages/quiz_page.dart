@@ -23,7 +23,7 @@ class QuizPage extends StatefulWidget {
 class _QuizPageState extends State<QuizPage> {
   final QuizService _quizService = QuizService();
   final Set<String> _selectedCategories = {};
-  String _selectedDifficulty = 'tutte';
+  final Set<String> _selectedDifficulties = {};
   int _numberOfQuestions = 10;
   bool _isLoading = true;
   List<QuizSessionResult> _recentHistory = [];
@@ -37,7 +37,7 @@ class _QuizPageState extends State<QuizPage> {
 
   // Filtri per la ricerca
   final Set<String> _searchSelectedCategories = {};
-  String _searchSelectedDifficulty = 'tutte';
+  final Set<String> _searchSelectedDifficulties = {};
   bool _filtersVisible = false;
 
   @override
@@ -66,7 +66,7 @@ class _QuizPageState extends State<QuizPage> {
 
     final hasActiveFilters =
         _searchSelectedCategories.isNotEmpty ||
-        _searchSelectedDifficulty != 'tutte';
+        _searchSelectedDifficulties.isNotEmpty;
 
     if (query.isEmpty && !hasActiveFilters) {
       setState(() {
@@ -83,8 +83,8 @@ class _QuizPageState extends State<QuizPage> {
 
       final quizzes = _quizService.getQuizzesByCategory(category);
       for (final quiz in quizzes) {
-        if (_searchSelectedDifficulty != 'tutte' &&
-            quiz.difficolta.toLowerCase() != _searchSelectedDifficulty) {
+        if (_searchSelectedDifficulties.isNotEmpty &&
+            !_searchSelectedDifficulties.contains(quiz.difficolta.toLowerCase())) {
           continue;
         }
 
@@ -152,12 +152,12 @@ class _QuizPageState extends State<QuizPage> {
       return;
     }
 
-    final difficulty = _selectedDifficulty == 'tutte'
-        ? null
-        : _selectedDifficulty;
+    final difficulties = _selectedDifficulties.isNotEmpty
+        ? _selectedDifficulties.toList()
+        : null;
     final quizzes = _quizService.getQuizzesByCategories(
       _selectedCategories.toList(),
-      difficolta: difficulty,
+      difficolta: difficulties,
       limit: _numberOfQuestions,
       excludeCalculation: _excludeCalculation,
     );
@@ -248,6 +248,11 @@ class _QuizPageState extends State<QuizPage> {
       final quizzes = _quizService.getQuizzesByCategory(category);
       for (final quiz in quizzes) {
         if (pendingMissedIds.contains(quiz.id)) {
+          // Applica il filtro difficoltà se selezionato
+          if (_selectedDifficulties.isNotEmpty &&
+              !_selectedDifficulties.contains(quiz.difficolta.toLowerCase())) {
+            continue;
+          }
           // Applica il filtro excludeCalculation se attivo
           if (_excludeCalculation && quiz.richiedeCalcolo) {
             continue;
@@ -553,46 +558,57 @@ class _QuizPageState extends State<QuizPage> {
                               ?.copyWith(fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 8),
-                        SegmentedButton<String>(
-                          showSelectedIcon: false,
-                          style: ButtonStyle(
-                            backgroundColor:
-                                WidgetStateProperty.resolveWith<Color?>((
-                                  states,
-                                ) {
-                                  if (states.contains(WidgetState.selected)) {
-                                    return colorScheme.primary;
-                                  }
-                                  return null;
-                                }),
-                            foregroundColor:
-                                WidgetStateProperty.resolveWith<Color?>((
-                                  states,
-                                ) {
-                                  if (states.contains(WidgetState.selected)) {
-                                    return colorScheme.onPrimary;
-                                  }
-                                  return colorScheme.onSurface;
-                                }),
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Wrap(
+                              spacing: 8.0,
+                              children: [
+                                FilterChip(
+                                  label: const Text('Facile'),
+                                  selected: _selectedDifficulties.contains('facile'),
+                                  onSelected: (selected) {
+                                    setState(() {
+                                      if (selected) {
+                                        _selectedDifficulties.add('facile');
+                                      } else {
+                                        _selectedDifficulties.remove('facile');
+                                      }
+                                    });
+                                  },
+                                  selectedColor: colorScheme.primary,
+                                ),
+                                FilterChip(
+                                  label: const Text('Medio'),
+                                  selected: _selectedDifficulties.contains('medio'),
+                                  onSelected: (selected) {
+                                    setState(() {
+                                      if (selected) {
+                                        _selectedDifficulties.add('medio');
+                                      } else {
+                                        _selectedDifficulties.remove('medio');
+                                      }
+                                    });
+                                  },
+                                  selectedColor: colorScheme.primary,
+                                ),
+                                FilterChip(
+                                  label: const Text('Difficile'),
+                                  selected: _selectedDifficulties.contains('difficile'),
+                                  onSelected: (selected) {
+                                    setState(() {
+                                      if (selected) {
+                                        _selectedDifficulties.add('difficile');
+                                      } else {
+                                        _selectedDifficulties.remove('difficile');
+                                      }
+                                    });
+                                  },
+                                  selectedColor: colorScheme.primary,
+                                ),
+                              ],
+                            ),
                           ),
-                          segments: const [
-                            ButtonSegment(value: 'tutte', label: Text('Tutte')),
-                            ButtonSegment(
-                              value: 'facile',
-                              label: Text('Facile'),
-                            ),
-                            ButtonSegment(value: 'medio', label: Text('Medio')),
-                            ButtonSegment(
-                              value: 'difficile',
-                              label: Text('Difficile'),
-                            ),
-                          ],
-                          selected: {_selectedDifficulty},
-                          onSelectionChanged: (Set<String> newSelection) {
-                            setState(() {
-                              _selectedDifficulty = newSelection.first;
-                            });
-                          },
                         ),
                         const SizedBox(height: 24),
 
@@ -869,40 +885,59 @@ class _QuizPageState extends State<QuizPage> {
                       ),
                     ),
                     const SizedBox(height: 8),
-                    SegmentedButton<String>(
-                      showSelectedIcon: false,
-                      style: ButtonStyle(
-                        backgroundColor:
-                            WidgetStateProperty.resolveWith<Color?>((states) {
-                              if (states.contains(WidgetState.selected)) {
-                                return colorScheme.primary;
-                              }
-                              return null;
-                            }),
-                        foregroundColor:
-                            WidgetStateProperty.resolveWith<Color?>((states) {
-                              if (states.contains(WidgetState.selected)) {
-                                return colorScheme.onPrimary;
-                              }
-                              return colorScheme.onSurface;
-                            }),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          FilterChip(
+                            label: const Text('Facile'),
+                            selected: _searchSelectedDifficulties.contains('facile'),
+                            onSelected: (selected) {
+                              setState(() {
+                                if (selected) {
+                                  _searchSelectedDifficulties.add('facile');
+                                } else {
+                                  _searchSelectedDifficulties.remove('facile');
+                                }
+                                _searchQuizzes(_searchQuery);
+                              });
+                            },
+                            selectedColor: colorScheme.primary,
+                          ),
+                          const SizedBox(width: 8),
+                          FilterChip(
+                            label: const Text('Medio'),
+                            selected: _searchSelectedDifficulties.contains('medio'),
+                            onSelected: (selected) {
+                              setState(() {
+                                if (selected) {
+                                  _searchSelectedDifficulties.add('medio');
+                                } else {
+                                  _searchSelectedDifficulties.remove('medio');
+                                }
+                                _searchQuizzes(_searchQuery);
+                              });
+                            },
+                            selectedColor: colorScheme.primary,
+                          ),
+                          const SizedBox(width: 8),
+                          FilterChip(
+                            label: const Text('Difficile'),
+                            selected: _searchSelectedDifficulties.contains('difficile'),
+                            onSelected: (selected) {
+                              setState(() {
+                                if (selected) {
+                                  _searchSelectedDifficulties.add('difficile');
+                                } else {
+                                  _searchSelectedDifficulties.remove('difficile');
+                                }
+                                _searchQuizzes(_searchQuery);
+                              });
+                            },
+                            selectedColor: colorScheme.primary,
+                          ),
+                        ],
                       ),
-                      segments: const [
-                        ButtonSegment(value: 'tutte', label: Text('Tutte')),
-                        ButtonSegment(value: 'facile', label: Text('Facile')),
-                        ButtonSegment(value: 'medio', label: Text('Medio')),
-                        ButtonSegment(
-                          value: 'difficile',
-                          label: Text('Difficile'),
-                        ),
-                      ],
-                      selected: {_searchSelectedDifficulty},
-                      onSelectionChanged: (Set<String> newSelection) {
-                        setState(() {
-                          _searchSelectedDifficulty = newSelection.first;
-                          _searchQuizzes(_searchQuery);
-                        });
-                      },
                     ),
                     const SizedBox(height: 16),
                   ],

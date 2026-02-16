@@ -96,7 +96,7 @@ class QuizService {
 
   List<Quiz> getQuizzesByCategories(
     List<String> categories, {
-    String? difficolta,
+    List<String>? difficolta,
     int? limit,
     bool? excludeCalculation,
   }) {
@@ -110,7 +110,7 @@ class QuizService {
     // Filtra per difficoltà se specificata
     if (difficolta != null && difficolta.isNotEmpty) {
       allQuizzes = allQuizzes
-          .where((quiz) => quiz.difficolta == difficolta)
+          .where((quiz) => difficolta.contains(quiz.difficolta.toLowerCase()))
           .toList();
     }
 
