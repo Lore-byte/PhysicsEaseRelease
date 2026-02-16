@@ -561,11 +561,12 @@ class _QuizPageState extends State<QuizPage> {
                         Card(
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Wrap(
-                              spacing: 8.0,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 FilterChip(
                                   label: const Text('Facile'),
+                                  showCheckmark: false,
                                   selected: _selectedDifficulties.contains('facile'),
                                   onSelected: (selected) {
                                     setState(() {
@@ -576,10 +577,19 @@ class _QuizPageState extends State<QuizPage> {
                                       }
                                     });
                                   },
-                                  selectedColor: colorScheme.primary,
+                                  // Modifica colori: Verde
+                                  selectedColor: Colors.green,
+                                  backgroundColor: Colors.white,
+                                  labelStyle: TextStyle(
+                                    color: _selectedDifficulties.contains('facile')
+                                        ? Colors.white
+                                        : Colors.green.shade700,
+                                  ),
                                 ),
+                                const SizedBox(width: 24),
                                 FilterChip(
                                   label: const Text('Medio'),
+                                  showCheckmark: false,
                                   selected: _selectedDifficulties.contains('medio'),
                                   onSelected: (selected) {
                                     setState(() {
@@ -590,10 +600,19 @@ class _QuizPageState extends State<QuizPage> {
                                       }
                                     });
                                   },
-                                  selectedColor: colorScheme.primary,
+                                  // Modifica colori: Giallo/Arancio
+                                  selectedColor: Colors.orange,
+                                  backgroundColor: Colors.white,
+                                  labelStyle: TextStyle(
+                                    color: _selectedDifficulties.contains('medio')
+                                        ? Colors.white
+                                        : Colors.orange.shade700,
+                                  ),
                                 ),
+                                const SizedBox(width: 24),
                                 FilterChip(
                                   label: const Text('Difficile'),
+                                  showCheckmark: false,
                                   selected: _selectedDifficulties.contains('difficile'),
                                   onSelected: (selected) {
                                     setState(() {
@@ -604,7 +623,14 @@ class _QuizPageState extends State<QuizPage> {
                                       }
                                     });
                                   },
-                                  selectedColor: colorScheme.primary,
+                                  // Modifica colori: Rosso
+                                  selectedColor: Colors.red,
+                                  backgroundColor: Colors.white,
+                                  labelStyle: TextStyle(
+                                    color: _selectedDifficulties.contains('difficile')
+                                        ? Colors.white
+                                        : Colors.red.shade700,
+                                  ),
                                 ),
                               ],
                             ),
@@ -889,52 +915,80 @@ class _QuizPageState extends State<QuizPage> {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
-                          FilterChip(
-                            label: const Text('Facile'),
-                            selected: _searchSelectedDifficulties.contains('facile'),
-                            onSelected: (selected) {
-                              setState(() {
+                          Padding(
+                            padding: const EdgeInsets.only(right: 8.0),
+                            child: FilterChip(
+                              label: const Text('Facile'),
+                              showCheckmark: false,
+                              selected: _searchSelectedDifficulties.contains('facile'),
+                              onSelected: (selected) {
+                                setState(() {
                                 if (selected) {
                                   _searchSelectedDifficulties.add('facile');
                                 } else {
                                   _searchSelectedDifficulties.remove('facile');
                                 }
-                                _searchQuizzes(_searchQuery);
-                              });
-                            },
-                            selectedColor: colorScheme.primary,
+                                  _searchQuizzes(_searchQuery);
+                                });
+                              },
+                              selectedColor: Colors.green,
+                              backgroundColor: Colors.white,
+                              labelStyle: TextStyle(
+                                color: _searchSelectedDifficulties.contains('facile')
+                                    ? Colors.white
+                                    : Colors.green.shade700,
+                              ),
+                            ),
                           ),
-                          const SizedBox(width: 8),
-                          FilterChip(
-                            label: const Text('Medio'),
-                            selected: _searchSelectedDifficulties.contains('medio'),
-                            onSelected: (selected) {
-                              setState(() {
+                          Padding(
+                            padding: const EdgeInsets.only(right: 8.0),
+                            child: FilterChip(
+                              label: const Text('Medio'),
+                              showCheckmark: false,
+                              selected: _searchSelectedDifficulties.contains('medio'),
+                              onSelected: (selected) {
+                                setState(() {
                                 if (selected) {
                                   _searchSelectedDifficulties.add('medio');
                                 } else {
                                   _searchSelectedDifficulties.remove('medio');
                                 }
-                                _searchQuizzes(_searchQuery);
-                              });
-                            },
-                            selectedColor: colorScheme.primary,
+                                  _searchQuizzes(_searchQuery);
+                                });
+                              },
+                              selectedColor: Colors.orange,
+                              backgroundColor: Colors.white,
+                              labelStyle: TextStyle(
+                                color: _searchSelectedDifficulties.contains('medio')
+                                    ? Colors.white
+                                    : Colors.orange.shade700,
+                              ),
+                            ),
                           ),
-                          const SizedBox(width: 8),
-                          FilterChip(
-                            label: const Text('Difficile'),
-                            selected: _searchSelectedDifficulties.contains('difficile'),
-                            onSelected: (selected) {
-                              setState(() {
+                          Padding(
+                            padding: const EdgeInsets.only(right: 8.0),
+                            child: FilterChip(
+                              label: const Text('Difficile'),
+                              showCheckmark: false,
+                              selected: _searchSelectedDifficulties.contains('difficile'),
+                              onSelected: (selected) {
+                                setState(() {
                                 if (selected) {
                                   _searchSelectedDifficulties.add('difficile');
                                 } else {
                                   _searchSelectedDifficulties.remove('difficile');
                                 }
-                                _searchQuizzes(_searchQuery);
-                              });
-                            },
-                            selectedColor: colorScheme.primary,
+                                  _searchQuizzes(_searchQuery);
+                                });
+                              },
+                              selectedColor: Colors.red,
+                              backgroundColor: Colors.white,
+                              labelStyle: TextStyle(
+                                color: _searchSelectedDifficulties.contains('difficile')
+                                    ? Colors.white
+                                    : Colors.red.shade700,
+                              ),
+                            ),
                           ),
                         ],
                       ),
@@ -943,7 +997,6 @@ class _QuizPageState extends State<QuizPage> {
                   ],
                 ),
               ),
-            const SizedBox(height: 16),
             Expanded(
               child: _quizSearchResults.isEmpty
                   ? Center(
