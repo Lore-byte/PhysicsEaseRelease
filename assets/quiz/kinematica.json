@@ -3292,7 +3292,7 @@
         "distanza",
         "metodi equivalenti"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_157",
@@ -3355,7 +3355,7 @@
         "distanze uguali",
         "velocità diverse"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_160",
@@ -4094,7 +4094,7 @@
         "altezza",
         "radice quadrata"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_195",
@@ -4115,7 +4115,7 @@
         "inversione",
         "ritorno"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_196",
@@ -4262,7 +4262,7 @@
         "ultimi secondi",
         "velocità medio"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_203",
@@ -4620,7 +4620,7 @@
         "altezza",
         "radice quadrata"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "cin_220",

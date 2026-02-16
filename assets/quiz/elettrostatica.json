@@ -3001,7 +3001,7 @@
         "capacità equivalente",
         "metà"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "els_144",
@@ -3022,7 +3022,7 @@
         "somma",
         "capacità"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "els_145",
@@ -3295,7 +3295,7 @@
         "due cariche",
         "ragionamento"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "els_158",
@@ -3379,7 +3379,7 @@
         "calcolo",
         "reciproci"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "els_162",
@@ -3526,7 +3526,7 @@
         "serie parallelo",
         "calcolo"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "els_169",
@@ -3568,7 +3568,7 @@
         "distribuzione",
         "sfere identiche"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "els_171",

@@ -891,8 +891,8 @@
                 "8",
                 "16"
             ],
-            "rispostaCorretta": 3,
-            "spiegazione": "$F \\propto m_1 m_2 / r^2$: raddoppio una massa (×2) e dimezzo $r$ (×4) → totale ×8; ma anche l'altra massa era $M$: resta uguale, quindi ×8. Attenzione: $r$ dimezzata dà ×4, massa raddoppiata ×2, totale ×8; opzione corretta è 8.",
+            "rispostaCorretta": 2,
+            "spiegazione": "$F \\propto m_1 m_2 / r^2$: raddoppio una massa (×2) e dimezzo $r$ (×4) → totale ×8. Quindi $F'/F = 8$.",
             "difficolta": "medio",
             "paroleChiave": [
                 "proporzioni",
@@ -900,29 +900,7 @@
                 "distanza",
                 "1/r^2"
             ],
-            "richiedeCalcolo": true
-        },
-        {
-            "id": "grav_042",
-            "domanda": "(Correzione ragionata) Nel quesito precedente, qual è il rapporto corretto $F'/F$?",
-            "categoria": "Gravitazione",
-            "sottocategoria": "Variazioni parametri",
-            "opzioni": [
-                "2",
-                "4",
-                "8",
-                "16"
-            ],
-            "rispostaCorretta": 2,
-            "spiegazione": "$F'/F = 2 / (1/2)^2 = 2 / (1/4) = 8$.",
-            "difficolta": "medio",
-            "paroleChiave": [
-                "rapporto",
-                "scaling",
-                "newton",
-                "forza"
-            ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_043",
@@ -988,7 +966,7 @@
                 "raggio",
                 "satellite"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_046",
@@ -1032,7 +1010,7 @@
                 "orbita",
                 "potenza"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_048",
@@ -1164,7 +1142,7 @@
                 "distanza",
                 "proporzione"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_054",
@@ -1318,7 +1296,7 @@
                 "massa",
                 "raggio"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_061",
@@ -1538,7 +1516,7 @@
                 "r^(3/2)",
                 "orbita"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_071",
@@ -1626,7 +1604,7 @@
                 "satelliti",
                 "rapporto"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_075",
@@ -1736,7 +1714,7 @@
                 "periodo",
                 "scaling"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_080",
@@ -1780,7 +1758,7 @@
                 "-GMm/2r",
                 "legata"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_082",
@@ -1802,7 +1780,7 @@
                 "velocità",
                 "keplero"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_083",
@@ -1846,7 +1824,7 @@
                 "proporzionale a r",
                 "gravità"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_085",
@@ -1912,7 +1890,7 @@
                 "K+U=0",
                 "derivazione"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_088",
@@ -1956,7 +1934,7 @@
                 "keplero 2",
                 "forza centrale"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_090",
@@ -1978,7 +1956,7 @@
                 "rapporti",
                 "periodo"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_091",
@@ -2000,7 +1978,7 @@
                 "h<<R",
                 "linearizzazione"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_092",
@@ -2022,7 +2000,7 @@
                 "distanza",
                 "terra"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_093",
@@ -2044,7 +2022,7 @@
                 "variazione relativa",
                 "orbita"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_094",
@@ -2066,7 +2044,7 @@
                 "g∝R",
                 "scaling"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_095",
@@ -2110,7 +2088,7 @@
                 "GMm/2r",
                 "energia"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_097",
@@ -2132,7 +2110,7 @@
                 "potenziale",
                 "raggi"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_098",
@@ -2220,7 +2198,7 @@
                 "massa",
                 "raggio"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_102",
@@ -2264,7 +2242,7 @@
                 "(GM)^(1/3)",
                 "periodo"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_104",
@@ -2352,7 +2330,7 @@
                 "rapporto",
                 "orbita circolare"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_108",
@@ -2374,7 +2352,7 @@
                 "g",
                 "ρR"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_109",
@@ -2440,7 +2418,7 @@
                 "1/r",
                 "velocità"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_112",
@@ -2770,7 +2748,7 @@
                 "forza centrale",
                 "aree"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_127",
@@ -3408,7 +3386,7 @@
                 "orbite",
                 "forza centrale"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_156",
@@ -3518,7 +3496,7 @@
                 "torcente",
                 "conservazione"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_161",
@@ -3760,7 +3738,7 @@
                 "negativa",
                 "-GMm/2r"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_172",
@@ -4156,7 +4134,7 @@
                 "orbita",
                 "rapporto"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_190",
@@ -4178,7 +4156,7 @@
                 "torcente",
                 "r x F"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_191",
@@ -4398,7 +4376,7 @@
                 "orbita circolare",
                 "rapporto"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_201",
@@ -4464,7 +4442,7 @@
                 "campo",
                 "newton"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_204",
@@ -4486,7 +4464,7 @@
                 "centripeta",
                 "gravità"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_205",
@@ -4508,7 +4486,7 @@
                 "campo nullo",
                 "sfera"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_206",
@@ -4530,7 +4508,7 @@
                 "ellisse",
                 "keplero"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_207",
@@ -4552,7 +4530,7 @@
                 "r^{3/2}",
                 "orbita"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_208",
@@ -4706,7 +4684,7 @@
                 "keplero",
                 "conservazione"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_215",
@@ -4816,7 +4794,7 @@
                 "eccentricità",
                 "energia"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_220",
@@ -4904,7 +4882,7 @@
                 "campi",
                 "gravità"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_224",
@@ -4948,7 +4926,7 @@
                 "-GMm/2a",
                 "orbita"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "grav_226",

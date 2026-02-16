@@ -966,7 +966,7 @@
                 "lavoro",
                 "v^2"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "lav_045",
@@ -1010,7 +1010,7 @@
                 "somma",
                 "piano"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "lav_047",
@@ -1890,7 +1890,7 @@
                 "F(x)",
                 "forza"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "lav_087",

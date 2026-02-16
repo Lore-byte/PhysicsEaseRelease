@@ -1693,7 +1693,7 @@
         "induttore",
         "joule"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_078",
@@ -1825,7 +1825,7 @@
         "r",
         "fattore 6"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_084",
@@ -1847,7 +1847,7 @@
         "faraday",
         "3V"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_085",
@@ -2199,7 +2199,7 @@
         "autoinduzione",
         "2V"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_101",
@@ -2309,7 +2309,7 @@
         "corrente",
         "raddoppio"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_106",
@@ -2353,7 +2353,7 @@
         "fem massima",
         "faraday"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_108",
@@ -2749,7 +2749,7 @@
         "rapporto spire",
         "N1/N2"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_126",
@@ -3211,7 +3211,7 @@
         "gamma",
         "risonanza"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_147",
@@ -3409,7 +3409,7 @@
         "E e B",
         "relatività"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_156",
@@ -3563,7 +3563,7 @@
         "birifrangenza",
         "isolatore"
       ],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "mag_163",
