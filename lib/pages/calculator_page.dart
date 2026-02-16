@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
 import 'dart:math' as math;
+import 'package:flutter_math_fork/flutter_math.dart';
 
 class CalculatorPage extends StatefulWidget {
   const CalculatorPage({super.key});
@@ -30,7 +31,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
     'cos',
     'tan',
     '√',
-    'x^√',
+    '³√',
     'log',
     'ln',
     'π',
@@ -43,23 +44,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
   static const List<String> _primaryOperators = ['÷', '×', '-', '+'];
   static const List<String> _secondaryOperators = ['%', '^', '(', ')'];
 
-  bool get _shouldShowCursor {
-    if (_isResultMode || !_focusNode.hasFocus) {
-      return false;
-    }
-
-    final selection = _expressionController.selection;
-    if (!selection.isValid) {
-      return false;
-    }
-
-    final int textLength = _expressionController.text.length;
-    final bool isCaretAtRightEnd =
-        selection.isCollapsed && selection.extentOffset == textLength;
-
-    return !isCaretAtRightEnd;
-  }
-
   @override
   void initState() {
     super.initState();
@@ -67,16 +51,10 @@ class _CalculatorPageState extends State<CalculatorPage> {
     _scrollController = ScrollController();
     _focusNode = FocusNode();
     _expressionController.addListener(_onExpressionValueChanged);
-    _focusNode.addListener(_onFocusChanged);
 
     _expressionController.selection = TextSelection.collapsed(
       offset: _expressionController.text.length,
     );
-
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _focusNode.requestFocus();
-      _isResultMode = false;
-    });
   }
 
   void _onExpressionValueChanged() {
@@ -84,19 +62,134 @@ class _CalculatorPageState extends State<CalculatorPage> {
     setState(() {});
   }
 
-  void _onFocusChanged() {
-    if (!mounted) return;
-    setState(() {});
-  }
-
   @override
   void dispose() {
     _expressionController.removeListener(_onExpressionValueChanged);
-    _focusNode.removeListener(_onFocusChanged);
     _expressionController.dispose();
     _scrollController.dispose();
     _focusNode.dispose();
     super.dispose();
+  }
+
+  String _convertInputToLatex(String input) {
+    if (input.isEmpty) return '';
+    String latex = input;
+
+    latex = latex.replaceAllMapped(RegExp(r'(\d+(\.\d*)?)e([+-]?\d+)'), (
+      match,
+    ) {
+      String base = match.group(1)!;
+      String exponent = match.group(3)!;
+      if (exponent.startsWith('+')) exponent = exponent.substring(1);
+      return '$base \\times 10^{$exponent}';
+    });
+
+    latex = latex.replaceAll('÷', r'\div ');
+    latex = latex.replaceAll('×', r'\times ');
+    latex = latex.replaceAll('π', r'\pi');
+    latex = latex.replaceAll('%', r'\%');
+
+    latex = latex.replaceAll('log₁₀', r'\log_{10}');
+
+    latex = latex.replaceAllMapped(RegExp(r'(sin|cos|tan|ln)'), (match) {
+      return r'\' + match.group(1)!;
+    });
+
+    while (latex.contains('√(')) {
+      int start = latex.indexOf('√(');
+      int openParens = 1;
+      int end = -1;
+
+      for (int i = start + 2; i < latex.length; i++) {
+        if (latex[i] == '(') openParens++;
+        if (latex[i] == ')') openParens--;
+
+        if (openParens == 0) {
+          end = i;
+          break;
+        }
+      }
+
+      if (end != -1) {
+        String content = latex.substring(start + 2, end);
+        latex = latex.replaceRange(start, end + 1, r'\sqrt{(' + content + ')}');
+      } else {
+        latex = latex.replaceFirst('√(', r'\sqrt{(');
+        latex += '}';
+      }
+    }
+
+    while (latex.contains('³√(')) {
+      int start = latex.indexOf('³√(');
+      int openParens = 1;
+      int end = -1;
+      for (int i = start + 3; i < latex.length; i++) {
+        if (latex[i] == '(') openParens++;
+        if (latex[i] == ')') openParens--;
+        if (openParens == 0) {
+          end = i;
+          break;
+        }
+      }
+      if (end != -1) {
+        String content = latex.substring(start + 3, end);
+        latex = latex.replaceRange(
+          start,
+          end + 1,
+          r'\sqrt[3]{(' + content + ')}',
+        );
+      } else {
+        latex = latex.replaceFirst('³√(', r'\sqrt[3]{(');
+        latex += '}';
+      }
+    }
+
+    while (latex.contains('^(')) {
+      int start = latex.indexOf('^(');
+      int openParens = 1;
+      int end = -1;
+
+      for (int i = start + 2; i < latex.length; i++) {
+        if (latex[i] == '(') openParens++;
+        if (latex[i] == ')') openParens--;
+
+        if (openParens == 0) {
+          end = i;
+          break;
+        }
+      }
+
+      if (end != -1) {
+        String content = latex.substring(start + 2, end);
+        latex = latex.replaceRange(start, end + 1, r'^{(' + content + ')}');
+      } else {
+        latex = latex.replaceFirst('^(', r'^{(');
+        latex += '}';
+      }
+    }
+
+    return latex;
+  }
+
+  String _convertResultToLatex(String result) {
+    if (result == 'Errore') return r'\text{Errore}';
+    if (result == 'Infinity') return r'\infty';
+    if (result == '-Infinity') return r'-\infty';
+    if (result == 'NaN') return r'\text{NaN}';
+
+    if (result.contains('e')) {
+      final parts = result.split('e');
+      final base = parts[0];
+      String exponent = parts[1];
+
+      if (exponent.startsWith('+')) {
+        exponent = exponent.substring(1);
+      }
+
+      return '$base \\times 10^{$exponent}';
+    }
+
+    return result;
   }
 
   static const List<List<String>> _buttonsLayout = [
@@ -107,13 +200,94 @@ class _CalculatorPageState extends State<CalculatorPage> {
     ['Sci', '0', '.', '='],
   ];
 
-  static const List<List<String>> _scientificButtonsLayout = [
-    ['AC', 'DL', 'RAD/DEG_TOGGLE', '!'],
-    ['sin', 'cos', 'tan', 'π'],
-    ['log', 'ln', 'e', 'e^x'],
-    ['√', 'x^√', '10^x', 'x^y'],
-    ['Sci', '(', ')', '='],
+  static const List<List<String>> _scientificExtraRows = [
+    ['RAD/DEG_TOGGLE', 'sin', 'cos', 'tan'],
+    ['ln', 'log', '10^x', 'e^x'],
+    ['π', 'e', 'x^y', '!'],
+    ['(', ')', '√', '³√'],
   ];
+
+  Widget _buildButtonContent(
+    String actionText,
+    String displayedText,
+    double fontSize,
+    Color textColor,
+  ) {
+    if (actionText == 'DL') {
+      return Icon(Icons.backspace_outlined, size: fontSize + 2);
+    }
+
+    if (['AC', 'Sci', 'RAD/DEG_TOGGLE'].contains(actionText)) {
+      return Text(displayedText);
+    }
+
+    String latex = displayedText;
+    switch (actionText) {
+      case '÷':
+        latex = r'\div';
+        break;
+      case '×':
+        latex = r'\times';
+        break;
+      case '-':
+        latex = '-';
+        break;
+      case '+':
+        latex = '+';
+        break;
+      case '%':
+        latex = r'\%';
+        break;
+      case 'π':
+        latex = r'\pi';
+        break;
+      case '√':
+        latex = r'\sqrt{\square}';
+        break;
+      case '³√':
+        latex = r'\sqrt[3]{\square}';
+        break;
+      case 'e^x':
+        latex = r'e^x';
+        break;
+      case '10^x':
+        latex = r'10^x';
+        break;
+      case 'x^y':
+        latex = r'x^y';
+        break;
+      case '!':
+        latex = r'x!';
+        break;
+      case 'log':
+        latex = r'\log_{10}';
+        break;
+      case 'ln':
+        latex = r'\ln';
+        break;
+      case 'sin':
+        latex = r'\sin';
+        break;
+      case 'cos':
+        latex = r'\cos';
+        break;
+      case 'tan':
+        latex = r'\tan';
+        break;
+    }
+
+    return FittedBox(
+      fit: BoxFit.scaleDown,
+      child: Math.tex(
+        latex,
+        textStyle: TextStyle(
+          fontSize: fontSize,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+        ),
+      ),
+    );
+  }
 
   Widget _buildButton(
     String displayedText,
@@ -126,6 +300,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
     double fontSize = 24.0,
     int flex = 1,
   }) {
+    final double verticalPadding = _showScientificButtons ? 6.0 : 16.0;
+
     return Expanded(
       flex: flex,
       child: Padding(
@@ -171,8 +347,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
                   borderRadius: BorderRadius.circular(999),
                 ),
               ),
-              padding: const WidgetStatePropertyAll(
-                EdgeInsets.symmetric(vertical: 16, horizontal: 8),
+              padding: WidgetStatePropertyAll(
+                EdgeInsets.symmetric(vertical: verticalPadding, horizontal: 2),
               ),
               textStyle: WidgetStatePropertyAll(
                 TextStyle(
@@ -185,9 +361,12 @@ class _CalculatorPageState extends State<CalculatorPage> {
             onPressed: actionText.isEmpty
                 ? null
                 : () => _onButtonPressed(actionText),
-            child: actionText == 'DL'
-                ? Icon(Icons.backspace_outlined, size: fontSize + 2)
-                : FittedBox(fit: BoxFit.scaleDown, child: Text(displayedText)),
+            child: _buildButtonContent(
+              actionText,
+              displayedText,
+              fontSize,
+              textColor,
+            ),
           ),
         ),
       ),
@@ -217,7 +396,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
   double _measureExpressionWidth(String text, double fontSize) {
     if (text.isEmpty) return 0;
-
     final textPainter = TextPainter(
       text: TextSpan(
         text: text,
@@ -230,28 +408,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
     return textPainter.width;
   }
 
-  double _calculateAdaptiveFontSize(
-    String text,
-    double availableWidth, {
-    double? minFontSize,
-    double? maxFontSize,
-  }) {
-    final double minSize = minFontSize ?? _minFontSize;
-    final double maxSize = maxFontSize ?? _maxFontSize;
-
-    if (text.isEmpty || availableWidth <= 0) {
-      return maxSize;
-    }
-
-    final double widthAtMax = _measureExpressionWidth(text, maxSize);
-    if (widthAtMax <= availableWidth) {
-      return maxSize;
-    }
-
-    final double scaleFactor = availableWidth / widthAtMax;
-    return (maxSize * scaleFactor).clamp(minSize, maxSize);
-  }
-
   void _updateDisplayMetrics({bool animateScroll = true}) {
     final text = _expressionController.text;
     final double maxWidth =
@@ -259,11 +415,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
     if (text.isEmpty) {
       _expressionFontSize = _maxFontSize;
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (_scrollController.hasClients) {
-          _scrollController.jumpTo(0);
-        }
-      });
       return;
     }
 
@@ -281,33 +432,17 @@ class _CalculatorPageState extends State<CalculatorPage> {
     _expressionFontSize = targetFontSize;
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (!_scrollController.hasClients) return;
-
-      final double maxExtent = _scrollController.position.maxScrollExtent;
-      final double targetOffset = maxExtent > 0 ? maxExtent : 0;
-
-      if ((targetOffset - _scrollController.offset).abs() < 0.5) return;
-
-      if (animateScroll) {
-        _scrollController.animateTo(
-          targetOffset,
-          duration: const Duration(milliseconds: 180),
-          curve: Curves.easeOutCubic,
-        );
-      } else {
-        _scrollController.jumpTo(targetOffset);
+      if (_scrollController.hasClients) {
+        _scrollController.jumpTo(0);
       }
     });
   }
 
-  void _setExpression(String value, {bool focusInput = true}) {
+  void _setExpression(String value) {
     _expressionController.text = value;
     _expressionController.selection = TextSelection.collapsed(
       offset: value.length,
     );
-    if (focusInput) {
-      _focusNode.requestFocus();
-    }
     _updateDisplayMetrics();
   }
 
@@ -318,66 +453,112 @@ class _CalculatorPageState extends State<CalculatorPage> {
     _setExpression(startingValue);
   }
 
-  TextSelection _getValidSelection(String text) {
-    final selection = _expressionController.selection;
-    final bool isValid =
-        selection.isValid &&
-        selection.start >= 0 &&
-        selection.end >= 0 &&
-        selection.start <= text.length &&
-        selection.end <= text.length;
-
-    if (isValid) {
-      return selection;
-    }
-
-    final fallback = TextSelection.collapsed(offset: text.length);
-    _expressionController.selection = fallback;
-    return fallback;
-  }
-
   void _insertTextAtCursor(String insertText) {
     final text = _expressionController.text;
-    final selection = _getValidSelection(text);
+    final selection = _expressionController.selection;
 
-    final newText = text.replaceRange(
-      selection.start,
-      selection.end,
-      insertText,
-    );
-    _expressionController.text = newText;
-    _isResultMode = false;
+    int start = selection.start;
+    if (start < 0) start = text.length;
 
-    final newCursorPosition = selection.start + insertText.length;
-    _expressionController.selection = TextSelection.collapsed(
-      offset: newCursorPosition,
-    );
+    String textToInsert = insertText;
 
-    if (!_focusNode.hasFocus) {
-      _focusNode.requestFocus();
+    if (start > 0) {
+      final String prevChar = text[start - 1];
+
+      final bool isPrevMultiplicative = RegExp(
+        r'[0-9eπ!%)]',
+      ).hasMatch(prevChar);
+
+      final bool isNextMultiplicativeStart =
+          RegExp(r'^[0-9eπ(sctl√]').hasMatch(textToInsert) ||
+          textToInsert.startsWith('³√') ||
+          textToInsert.startsWith('10^');
+
+      final bool isPrevDigit = RegExp(r'[0-9]').hasMatch(prevChar);
+
+      final bool isNextDigit = RegExp(r'^[0-9]+$').hasMatch(textToInsert);
+
+      if (isPrevMultiplicative &&
+          isNextMultiplicativeStart &&
+          !(isPrevDigit && isNextDigit)) {
+        textToInsert = '×$textToInsert';
+      }
     }
 
+    String newText;
+    if (start >= text.length) {
+      newText = text + textToInsert;
+    } else {
+      newText = text.replaceRange(start, selection.end, textToInsert);
+    }
+
+    _expressionController.value = TextEditingValue(
+      text: newText,
+      selection: TextSelection.collapsed(offset: start + textToInsert.length),
+    );
+
+    _isResultMode = false;
     _updateDisplayMetrics();
   }
 
   void _deleteAtCursor() {
     final text = _expressionController.text;
-    final selection = _getValidSelection(text);
+    if (text.isEmpty) return;
 
-    if (selection.start <= 0) {
+    final selection = _expressionController.selection;
+    int end = selection.end;
+    if (end < 0) end = text.length;
+
+    if (selection.start != selection.end && selection.start >= 0) {
+      final newText = text.replaceRange(selection.start, selection.end, '');
+      _expressionController.value = TextEditingValue(
+        text: newText,
+        selection: TextSelection.collapsed(offset: selection.start),
+      );
       return;
     }
 
-    final newText = text.replaceRange(selection.start - 1, selection.start, '');
-    _expressionController.text = newText;
-    _expressionController.selection = TextSelection.collapsed(
-      offset: selection.start - 1,
-    );
+    if (end > 0) {
+      final newText = text.replaceRange(end - 1, end, '');
+      _expressionController.value = TextEditingValue(
+        text: newText,
+        selection: TextSelection.collapsed(offset: end - 1),
+      );
+    }
+
+    _updateDisplayMetrics();
   }
 
   String _normalizeExpression(String expression) {
     var normalized = expression;
+
+    normalized = normalized.replaceAllMapped(
+      RegExp(r'(\d+(\.\d*)?)e([+-]?\d+)'),
+      (m) {
+        String exponent = m.group(3)!;
+        if (exponent.startsWith('+')) exponent = exponent.substring(1);
+        return '(${m.group(1)}*10^($exponent))';
+      },
+    );
+
     normalized = normalized.replaceAll('÷', '/').replaceAll('×', '*');
+
+    normalized = normalized.replaceAll('π', 'pi');
+
+    normalized = normalized.replaceAllMapped(
+      RegExp(r'log₁₀\((.*?)\)'),
+      (match) => 'log(10,${match.group(1)})',
+    );
+
+    normalized = normalized.replaceAllMapped(
+      RegExp(r'³√\((.*?)\)'),
+      (match) => '(${match.group(1)})^(1/3)',
+    );
+
+    normalized = normalized.replaceAllMapped(
+      RegExp(r'√\((.*?)\)'),
+      (match) => 'sqrt(${match.group(1)})',
+    );
 
     normalized = normalized.replaceAllMapped(RegExp(r'(\d+(\.\d*)?)%'), (
       match,
@@ -453,23 +634,23 @@ class _CalculatorPageState extends State<CalculatorPage> {
       case 'tan':
         return '$buttonText(';
       case '√':
-        return 'sqrt(';
-      case 'x^√':
-        return '^(1/(';
+        return '√(';
+      case '³√':
+        return '³√(';
       case '10^x':
         return '10^(';
       case 'x^y':
         return '^(';
       case 'log':
-        return 'log(10,';
+        return 'log₁₀(';
       case 'ln':
         return 'ln(';
       case 'e^x':
-        return 'E^(';
+        return 'e^(';
       case 'π':
-        return 'pi';
+        return 'π';
       case 'e':
-        return 'E';
+        return 'e';
       case '!':
       default:
         return buttonText;
@@ -485,7 +666,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
       return _isRadians ? 'DEG' : 'RAD';
     }
     if (buttonText == 'Sci') {
-      return _showScientificButtons ? 'Basic' : 'Sci';
+      return _showScientificButtons ? '123' : 'Sci';
     }
     return buttonText;
   }
@@ -504,7 +685,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
     var textColor = colorScheme.onSurface;
     var borderColor = colorScheme.outlineVariant.withValues(alpha: 0.55);
     var shadowColor = colorScheme.onSurface;
-    var fontSize = 24.0;
+    var fontSize = _showScientificButtons ? 24.0 : 36.0;
 
     if (buttonText == 'AC') {
       gradientStart = colorScheme.error;
@@ -531,8 +712,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
       borderColor = colorScheme.primary.withValues(alpha: 0.24);
       shadowColor = colorScheme.primary;
     } else if (_secondaryOperators.contains(buttonText) ||
-        (_showScientificButtons &&
-            _scientificInputButtons.contains(buttonText))) {
+        _scientificInputButtons.contains(buttonText)) {
       gradientStart = colorScheme.secondaryContainer;
       gradientEnd = colorScheme.secondaryContainer.withValues(alpha: 0.9);
       textColor = colorScheme.onSecondaryContainer;
@@ -540,8 +720,16 @@ class _CalculatorPageState extends State<CalculatorPage> {
       shadowColor = colorScheme.secondary;
     }
 
-    if (buttonText == 'RAD/DEG_TOGGLE' || buttonText == 'Sci') {
+    if (buttonText == 'RAD/DEG_TOGGLE') {
       fontSize = 18.0;
+      gradientStart = colorScheme.primary;
+      gradientEnd = colorScheme.primary.withValues(alpha: 0.86);
+      textColor = colorScheme.onPrimary;
+      borderColor = colorScheme.primary.withValues(alpha: 0.24);
+      shadowColor = colorScheme.primary;
+    }
+
+    if (buttonText == 'Sci') {
       gradientStart = colorScheme.primary;
       gradientEnd = colorScheme.primary.withValues(alpha: 0.86);
       textColor = colorScheme.onPrimary;
@@ -562,7 +750,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
   void _onButtonPressed(String buttonText) {
     setState(() {
       if (buttonText == 'AC') {
-        _setExpression('', focusInput: true);
+        _setExpression('');
         _result = '0';
         _isResultMode = false;
         _expressionFontSize = _maxFontSize;
@@ -577,8 +765,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
         }
 
         _isResultMode = false;
-        _focusNode.requestFocus();
-
         _updateDisplayMetrics();
       } else if (buttonText == '=') {
         try {
@@ -592,7 +778,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
           final p = GrammarParser();
           final exp = p.parse(finalExpression);
           final cm = ContextModel();
-          cm.bindVariable(Variable('E'), Number(math.e));
+          cm.bindVariable(Variable('e'), Number(math.e));
           cm.bindVariable(Variable('pi'), Number(math.pi));
 
           final evaluationResult = exp.evaluate(EvaluationType.REAL, cm);
@@ -622,38 +808,29 @@ class _CalculatorPageState extends State<CalculatorPage> {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    final List<List<String>> buttonsLayout = _showScientificButtons
-        ? _scientificButtonsLayout
-        : _buttonsLayout;
+
+    final List<List<String>> buttonsLayout = [
+      if (_showScientificButtons) ..._scientificExtraRows,
+      ..._buttonsLayout,
+    ];
 
     Widget buildExpressionField() {
-      return TextField(
-        controller: _expressionController,
-        focusNode: _focusNode,
-        autofocus: true,
-        readOnly: true,
-        onTap: () {
-          WidgetsBinding.instance.addPostFrameCallback((_) {
-            if (!mounted) return;
-            setState(() {});
-          });
-        },
-        textAlign: TextAlign.right,
-        style: TextStyle(
-          fontSize: _expressionFontSize,
-          color: colorScheme.onSurface,
-          fontWeight: FontWeight.w300,
+      final latexExpression = _convertInputToLatex(_expressionController.text);
+
+      return SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        controller: _scrollController,
+        reverse: true,
+        padding: const EdgeInsets.symmetric(horizontal: 2.0, vertical: 2.0),
+        child: Math.tex(
+          latexExpression.isEmpty ? '0' : latexExpression,
+          textStyle: TextStyle(
+            fontSize: _expressionFontSize,
+            color: colorScheme.onSurface,
+            fontWeight: FontWeight.w300,
+          ),
+          mathStyle: MathStyle.display,
         ),
-        decoration: const InputDecoration(
-          border: InputBorder.none,
-          isDense: true,
-          contentPadding: EdgeInsets.zero,
-          hintText: '0',
-        ),
-        maxLines: 1,
-        showCursor: _shouldShowCursor,
-        cursorColor: colorScheme.primary,
-        scrollController: _scrollController,
       );
     }
 
@@ -680,46 +857,44 @@ class _CalculatorPageState extends State<CalculatorPage> {
               crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                if (_isResultMode)
+                if (_isResultMode) ...[
                   GestureDetector(
                     behavior: HitTestBehavior.opaque,
                     onTap: () {
                       setState(() {
                         _isResultMode = false;
-                        _expressionController.selection =
-                            TextSelection.collapsed(
-                              offset: _expressionController.text.length,
-                            );
-                        _focusNode.requestFocus();
                         _updateDisplayMetrics(animateScroll: false);
                       });
                     },
                     child: LayoutBuilder(
                       builder: (context, constraints) {
+                        final latexExpression = _convertInputToLatex(
+                          _expressionController.text,
+                        );
+
                         return SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           reverse: true,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 2.0,
+                            vertical: 2.0,
+                          ),
                           child: ConstrainedBox(
                             constraints: BoxConstraints(
                               minWidth: constraints.maxWidth,
                             ),
                             child: Align(
                               alignment: Alignment.centerRight,
-                              child: Text(
-                                _expressionController.text.isEmpty
-                                    ? '0'
-                                    : _expressionController.text,
-                                style: TextStyle(
+                              child: Math.tex(
+                                latexExpression.isEmpty ? '0' : latexExpression,
+                                textStyle: TextStyle(
                                   fontSize: 28,
                                   color: colorScheme.onSurface.withValues(
                                     alpha: 0.72,
                                   ),
                                   fontWeight: FontWeight.w300,
                                 ),
-                                maxLines: 1,
-                                softWrap: false,
-                                overflow: TextOverflow.visible,
-                                textAlign: TextAlign.right,
+                                mathStyle: MathStyle.display,
                               ),
                             ),
                           ),
@@ -727,6 +902,9 @@ class _CalculatorPageState extends State<CalculatorPage> {
                       },
                     ),
                   ),
+                  const SizedBox(height: 30),
+                ],
+
                 !_isResultMode
                     ? Align(
                         key: const ValueKey('input_mode'),
@@ -736,27 +914,21 @@ class _CalculatorPageState extends State<CalculatorPage> {
                     : Align(
                         key: const ValueKey('result_mode'),
                         alignment: Alignment.bottomRight,
-                        child: LayoutBuilder(
-                          builder: (context, constraints) {
-                            final double resultFontSize =
-                                _calculateAdaptiveFontSize(
-                                  _result,
-                                  constraints.maxWidth,
-                                );
-
-                            return Text(
-                              _result,
-                              maxLines: 1,
-                              style: TextStyle(
-                                fontSize: resultFontSize,
-                                color: colorScheme.onSurface,
-                                fontWeight: FontWeight.w300,
-                              ),
-                              textAlign: TextAlign.right,
-                            );
-                          },
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          alignment: Alignment.centerRight,
+                          child: Math.tex(
+                            _convertResultToLatex(_result),
+                            textStyle: TextStyle(
+                              fontSize: _maxFontSize,
+                              color: colorScheme.onSurface,
+                              fontWeight: FontWeight.w300,
+                            ),
+                          ),
                         ),
                       ),
+
+                const SizedBox(height: 20),
               ],
             ),
           ),
@@ -772,7 +944,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
             flex: 2,
             child: Container(
               padding: EdgeInsets.only(
-                bottom: 16.0,
+                bottom: 24.0,
                 left: 16.0,
                 right: 16.0,
                 top: MediaQuery.of(context).viewPadding.top + 70,
