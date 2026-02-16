@@ -98,6 +98,7 @@ class QuizService {
     List<String> categories, {
     String? difficolta,
     int? limit,
+    bool? excludeCalculation,
   }) {
     List<Quiz> allQuizzes = [];
 
@@ -110,6 +111,13 @@ class QuizService {
     if (difficolta != null && difficolta.isNotEmpty) {
       allQuizzes = allQuizzes
           .where((quiz) => quiz.difficolta == difficolta)
+          .toList();
+    }
+
+    // Filtra per escludere domande con calcoli se specificato
+    if (excludeCalculation == true) {
+      allQuizzes = allQuizzes
+          .where((quiz) => !quiz.richiedeCalcolo)
           .toList();
     }
 
