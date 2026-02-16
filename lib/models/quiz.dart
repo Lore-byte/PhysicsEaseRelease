@@ -11,6 +11,7 @@ class Quiz {
   final String spiegazione;
   final String difficolta;
   final List<String> paroleChiave;
+  final bool richiedeCalcolo;
 
   Quiz({
     required this.id,
@@ -22,6 +23,7 @@ class Quiz {
     required this.spiegazione,
     required this.difficolta,
     this.paroleChiave = const [],
+    this.richiedeCalcolo = false,
   });
 
   // --- helpers (robust JSON parsing) ---
@@ -63,6 +65,25 @@ class Quiz {
       final v = map[k];
       if (v == null) continue;
       if (v is List) return v.map((e) => e.toString()).toList();
+    }
+    return fallback;
+  }
+
+  static bool _readBool(
+    Map<String, dynamic> map,
+    List<String> keys, {
+    bool fallback = false,
+  }) {
+    for (final k in keys) {
+      final v = map[k];
+      if (v == null) continue;
+      if (v is bool) return v;
+      if (v is String) {
+        final lowerV = v.toLowerCase();
+        if (lowerV == 'true' || lowerV == '1') return true;
+        if (lowerV == 'false' || lowerV == '0') return false;
+      }
+      if (v is int) return v != 0;
     }
     return fallback;
   }
@@ -127,6 +148,13 @@ class Quiz {
         'keywords',
         'Keywords',
       ]),
+      richiedeCalcolo: _readBool(map, const [
+        'richiedeCalcolo',
+        'RichiedeCalcolo',
+        'richiede_calcolo',
+        'requiresCalculation',
+        'requires_calculation',
+      ]),
     );
   }
 
@@ -146,6 +174,7 @@ class Quiz {
       'spiegazione': spiegazione,
       'difficolta': difficolta,
       'paroleChiave': paroleChiave,
+      'richiedeCalcolo': richiedeCalcolo,
     };
   }
 

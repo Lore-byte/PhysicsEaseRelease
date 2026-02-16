@@ -28,6 +28,7 @@ class _QuizPageState extends State<QuizPage> {
   bool _isLoading = true;
   List<QuizSessionResult> _recentHistory = [];
   int _missedQuestionsCount = 0;
+  bool _excludeCalculation = false;
 
   late ValueNotifier<bool> _searchVisible;
   late TextEditingController _searchController;
@@ -158,6 +159,7 @@ class _QuizPageState extends State<QuizPage> {
       _selectedCategories.toList(),
       difficolta: difficulty,
       limit: _numberOfQuestions,
+      excludeCalculation: _excludeCalculation,
     );
 
     if (quizzes.isEmpty) {
@@ -246,6 +248,10 @@ class _QuizPageState extends State<QuizPage> {
       final quizzes = _quizService.getQuizzesByCategory(category);
       for (final quiz in quizzes) {
         if (pendingMissedIds.contains(quiz.id)) {
+          // Applica il filtro excludeCalculation se attivo
+          if (_excludeCalculation && quiz.richiedeCalcolo) {
+            continue;
+          }
           missedQuizzes.add(quiz);
         }
       }
@@ -587,6 +593,31 @@ class _QuizPageState extends State<QuizPage> {
                               _selectedDifficulty = newSelection.first;
                             });
                           },
+                        ),
+                        const SizedBox(height: 24),
+
+                        // Modalità No-Calculator
+                        Card(
+                          child: CheckboxListTile(
+                            value: _excludeCalculation,
+                            onChanged: (value) {
+                              setState(() {
+                                _excludeCalculation = value ?? false;
+                              });
+                            },
+                            title: const Text(
+                              'Modalità "No-Calculator"',
+                              style: TextStyle(fontWeight: FontWeight.w600),
+                            ),
+                            subtitle: const Text(
+                              'Escludi domande con calcoli complessi',
+                              style: TextStyle(fontSize: 13),
+                            ),
+                            secondary: Icon(
+                              Icons.calculate_outlined,
+                              color: colorScheme.primary,
+                            ),
+                          ),
                         ),
                         const SizedBox(height: 24),
 
