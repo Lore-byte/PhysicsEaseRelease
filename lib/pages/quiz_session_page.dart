@@ -190,7 +190,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 12),
 
                   Card(
                     color: colorScheme.primaryContainer,
@@ -206,7 +206,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 24),
+                  const SizedBox(height: 16),
 
                   ..._currentQuiz.opzioni.asMap().entries.map((entry) {
                     final index = entry.key;
@@ -309,7 +309,7 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                   }), //.toList(),
 
                   if (_showFeedback) ...[
-                    const SizedBox(height: 16),
+                    const SizedBox(height: 4),
                     Card(
                       color: colorScheme.tertiaryContainer,
                       child: Padding(
@@ -347,63 +347,50 @@ class _QuizSessionPageState extends State<QuizSessionPage> {
                         ),
                       ),
                     ),
+                    const SizedBox(height: 8),
                   ],
-                  const SizedBox(height: 24),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: colorScheme.surface,
-                      borderRadius: BorderRadius.circular(12),
-                      boxShadow: [
-                        BoxShadow(
-                          color: AppColors.black.withValues(alpha: 0.1),
-                          blurRadius: 8,
-                          offset: const Offset(0, -2),
+                  const SizedBox(height: 8),
+                  _showFeedback
+                  ? FilledButton.icon(
+                      onPressed: _nextQuestion,
+                      icon: Icon(
+                        _isLastQuestion
+                            ? Icons.check
+                            : Icons.arrow_forward,
+                      ),
+                      label: Text(
+                        _isLastQuestion
+                            ? 'Termina Quiz'
+                            : 'Prossima Domanda',
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
                         ),
-                      ],
+                      ),
+                      style: FilledButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(28),
+                        ),
+                      ),
+                    )
+                  : FilledButton.icon(
+                      onPressed: _confirmAnswer,
+                      icon: const Icon(Icons.check),
+                      label: const Text(
+                        'Conferma Risposta',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      style: FilledButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(28),
+                        ),
+                      ),
                     ),
-                    padding: const EdgeInsets.all(16),
-                    child: _showFeedback
-                        ? FilledButton.icon(
-                            onPressed: _nextQuestion,
-                            icon: Icon(
-                              _isLastQuestion
-                                  ? Icons.check
-                                  : Icons.arrow_forward,
-                            ),
-                            label: Text(
-                              _isLastQuestion
-                                  ? 'Termina Quiz'
-                                  : 'Prossima Domanda',
-                              style: const TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            style: FilledButton.styleFrom(
-                              padding: const EdgeInsets.symmetric(vertical: 14),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                            ),
-                          )
-                        : FilledButton.icon(
-                            onPressed: _confirmAnswer,
-                            icon: const Icon(Icons.check),
-                            label: const Text(
-                              'Conferma Risposta',
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            style: FilledButton.styleFrom(
-                              padding: const EdgeInsets.symmetric(vertical: 14),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                            ),
-                          ),
-                  ),
                 ],
               ),
             ),
