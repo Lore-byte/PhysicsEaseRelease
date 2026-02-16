@@ -1392,7 +1392,7 @@
       "spiegazione": "Serve $mg\\sin\\theta \\leq \\mu_s mg\\cos\\theta$ $\\Rightarrow$ $\\tan\\theta \\leq \\mu_s$.",
       "difficolta": "difficile",
       "paroleChiave": ["piano inclinato", "equilibrio", "tan", "mu_s"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_083",
@@ -1426,7 +1426,7 @@
       "spiegazione": "Senza attrito, la componente orizzontale della normale fornisce la centripeta e quella verticale bilancia il peso: $\\tan\\theta = v^2/(rg)$.",
       "difficolta": "difficile",
       "paroleChiave": ["banked", "curva", "tan", "centripeta"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_085",
@@ -1460,7 +1460,7 @@
       "spiegazione": "Serve una forza di attrito statico $mA$. Il massimo è $\\mu_s N = \\mu_s mg$. Quindi $mA \\leq \\mu_s mg$ $\\Rightarrow$ $\\mu_s \\geq A/g$.",
       "difficolta": "difficile",
       "paroleChiave": ["camion", "attrito statico", "riferimento accelerato", "A/g"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_087",
@@ -1477,7 +1477,7 @@
       "spiegazione": "La componente verticale bilancia il peso: $T\\cos\\alpha = mg$. La componente orizzontale è centripeta: $T\\sin\\alpha = m\\omega^2 r$.",
       "difficolta": "difficile",
       "paroleChiave": ["pendolo conico", "tensione", "omega", "componenti"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_088",
@@ -1494,7 +1494,7 @@
       "spiegazione": "Accelerazione nulla $\\Rightarrow$ risultante lungo il piano nulla: componente del peso $mg\\sin\\theta$ bilanciata dall'attrito dinamico $\\mu_d mg\\cos\\theta$.",
       "difficolta": "difficile",
       "paroleChiave": ["piano inclinato", "velocità costante", "attrito", "condizione"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_089",
@@ -1511,7 +1511,7 @@
       "spiegazione": "Forze esterne sul sistema lungo il moto: peso del blocco appeso $2mg$ meno attrito sul blocco sul tavolo ($\\mu_d N = \\mu_d mg$). Massa totale $3m$. Quindi $a = (2mg - \\mu_d mg)/(3m) = g(2 - \\mu_d)/3$.",
       "difficolta": "difficile",
       "paroleChiave": ["puleggia", "attrito", "sistema", "accelerazione"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_090",
@@ -1528,7 +1528,7 @@
       "spiegazione": "Serve $\\mu_s N \\geq mg$ e $N \\approx F$ $\\Rightarrow$ $\\mu_s F \\geq mg$ $\\Rightarrow$ $F \\geq mg/\\mu_s$.",
       "difficolta": "difficile",
       "paroleChiave": ["parete", "attrito statico", "forza minima", "mg/mu"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_091",
@@ -1800,7 +1800,7 @@
       "spiegazione": "Nel riferimento dell'ascensore (non inerziale), il corpo subisce una pseudo-forza $m(g - a)$ verso il basso. L'accelerazione apparente è $g - a$.",
       "difficolta": "difficile",
       "paroleChiave": ["ascensore", "caduta libera", "riferimento non inerziale", "pseudo-forza"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_107",
@@ -1851,7 +1851,7 @@
       "spiegazione": "La differenza sta nella normale. Su piano inclinato la componente parallela $mg \\sin\\theta$ non è controbilanciata. Su tavolo accelerante, se $\\mu_s$ è sufficiente, l'attrito può bilanciare $ma$.",
       "difficolta": "difficile",
       "paroleChiave": ["attrito", "piano inclinato", "accelerazione", "confronto"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_110",
@@ -1919,7 +1919,7 @@
       "spiegazione": "Durante la spinta, $F - mg = ma$. Una forza muscolare $F$ maggiore produce $a$ maggiore. La velocità di decollo è $v = a \\cdot t_{spinta}$. Altezza: $h = v^2 / (2g)$.",
       "difficolta": "medio",
       "paroleChiave": ["salto", "accelerazione", "spinta", "altezza"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_114",
@@ -2089,7 +2089,7 @@
       "spiegazione": "Nel riferimento del vagone (non inerziale, decelerante), su tutte le masse agisce una pseudo-forza in avanti $m \\cdot a_{freno}$. Il pendolo si inclina fino a quando la componente di tensione bilancia questa pseudo-forza.",
       "difficolta": "medio",
       "paroleChiave": ["pendolo", "vagone", "pseudo-forza", "riferimento non inerziale"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_124",
@@ -2259,7 +2259,7 @@
       "spiegazione": "Condizione di equilibrio: $mg \\sin\\theta \\leq f_{s,max} = \\mu_s mg \\cos\\theta$, quindi $\\tan\\theta \\leq \\mu_s$. Se $\\theta$ aumenta oltre $\\arctan(\\mu_s)$, l'equilibrio si rompe.",
       "difficolta": "medio",
       "paroleChiave": ["piano inclinato", "equilibrio", "attrito", "tan"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_134",
@@ -2276,7 +2276,7 @@
       "spiegazione": "La componente verticale $T \\sin\\theta$ agisce verso l'alto. Per equilibrio verticale: $N + T \\sin 30^\\circ = mg$, quindi $N = mg - T \\sin 30^\\circ$. La normale diminuisce.",
       "difficolta": "medio",
       "paroleChiave": ["corda inclinata", "normale", "componente verticale", "equilibrio"],
-      "richiedeCalcolo": true
+      "richiedeCalcolo": false
     },
     {
       "id": "din_135",
@@ -2586,7 +2586,7 @@
     },
     {
       "id": "din_153",
-      "veicolo": "veicolo di massa 800 kg viaggia a 15 m/s e frena fino a fermarsi in 50 m. Qual è la forza frenante medio?",
+      "domanda": "Un veicolo di massa 800 kg viaggia a 15 m/s e frena fino a fermarsi in 50 m. Qual è la forza frenante media?",
       "categoria": "Dinamica",
       "sottocategoria": "Lavoro e energia",
       "opzioni": [

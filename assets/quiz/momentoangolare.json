@@ -1032,7 +1032,7 @@
                 "asse",
                 "modulo"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "ang_048",
@@ -1054,7 +1054,7 @@
                 "perpendicolare",
                 "torque"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "ang_049",
@@ -1406,7 +1406,7 @@
                 "disco",
                 "asse fisso"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "ang_065",
@@ -1560,7 +1560,7 @@
                 "Iω",
                 "calcolo"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "ang_072",
@@ -2000,7 +2000,7 @@
                 "asse",
                 "r^2"
             ],
-            "richiedeCalcolo": true
+            "richiedeCalcolo": false
         },
         {
             "id": "ang_092",
