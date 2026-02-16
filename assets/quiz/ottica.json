@@ -19,7 +19,8 @@
                 "angolo",
                 "normale",
                 "specchio"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_002",
@@ -40,7 +41,8 @@
                 "perpendicolare",
                 "incidenza",
                 "angoli"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_003",
@@ -61,7 +63,8 @@
                 "rifrazione",
                 "seno",
                 "indici"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_004",
@@ -82,7 +85,8 @@
                 "normale",
                 "indice",
                 "Snell"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_005",
@@ -103,7 +107,8 @@
                 "indice",
                 "mezzi",
                 "condizione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_006",
@@ -124,7 +129,8 @@
                 "90",
                 "rifrazione",
                 "TIR"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_007",
@@ -145,7 +151,8 @@
                 "sin",
                 "n2/n1",
                 "TIR"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_008",
@@ -166,7 +173,8 @@
                 "equazione",
                 "focale",
                 "p q"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_009",
@@ -187,7 +195,8 @@
                 "potere",
                 "1/f",
                 "f metri"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_010",
@@ -208,7 +217,8 @@
                 "q/p",
                 "lente",
                 "immagine"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_011",
@@ -229,7 +239,8 @@
                 "indice",
                 "lunghezza d'onda",
                 "n(λ)"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_012",
@@ -250,7 +261,8 @@
                 "colori",
                 "dispersione",
                 "rifrazione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_013",
@@ -271,7 +283,8 @@
                 "polarizzazione",
                 "cos^2",
                 "intensità"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_014",
@@ -292,7 +305,8 @@
                 "metà",
                 "polarizzatore",
                 "I0/2"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_015",
@@ -313,7 +327,8 @@
                 "tan",
                 "n2/n1",
                 "polarizzazione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_016",
@@ -334,7 +349,8 @@
                 "punti coniugati",
                 "1/p+1/q",
                 "f"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_017",
@@ -355,7 +371,8 @@
                 "R/2",
                 "focale",
                 "curvatura"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_018",
@@ -376,7 +393,8 @@
                 "Snell",
                 "ottica",
                 "rifrazione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_019",
@@ -397,7 +415,8 @@
                 "doppia fenditura",
                 "massimi",
                 "kλ/d"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_020",
@@ -418,7 +437,8 @@
                 "fenditura",
                 "minimi",
                 "a sinθ"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_021",
@@ -439,7 +459,8 @@
                 "rifrazione",
                 "mezzi",
                 "Snell"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_022",
@@ -460,7 +481,8 @@
                 "TIR",
                 "guida",
                 "applicazioni"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_023",
@@ -481,7 +503,8 @@
                 "n1>n2",
                 "sin",
                 "TIR"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_024",
@@ -502,7 +525,8 @@
                 "Malus",
                 "cos^2",
                 "intensità"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_025",
@@ -523,7 +547,8 @@
                 "equazione",
                 "1/f",
                 "do di"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_026",
@@ -544,7 +569,8 @@
                 "coerenza",
                 "frange",
                 "interferenza"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_027",
@@ -565,7 +591,8 @@
                 "Snell",
                 "rifrazione",
                 "ottica"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_028",
@@ -586,7 +613,8 @@
                 "diottrie",
                 "1/f",
                 "lente"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_029",
@@ -607,7 +635,8 @@
                 "incrociati",
                 "Malus",
                 "zero"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_030",
@@ -628,7 +657,8 @@
                 "theta_c",
                 "maggiore",
                 "incidenza"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_031",
@@ -649,7 +679,8 @@
                 "d sinθ",
                 "kλ",
                 "Young"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_032",
@@ -670,7 +701,8 @@
                 "apertura",
                 "allargamento",
                 "minimi"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_033",
@@ -691,7 +723,8 @@
                 "indici",
                 "tan",
                 "mezzi"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_034",
@@ -712,7 +745,8 @@
                 "violetto",
                 "rosso",
                 "n(λ)"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_035",
@@ -733,7 +767,8 @@
                 "Snell",
                 "rifrazione",
                 "ottica"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_036",
@@ -754,7 +789,8 @@
                 "immagine reale",
                 "capovolta",
                 "q>0"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_037",
@@ -775,7 +811,8 @@
                 "sin",
                 "n2/n1",
                 "TIR"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_038",
@@ -796,7 +833,8 @@
                 "indici",
                 "seni",
                 "angoli"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_039",
@@ -817,7 +855,8 @@
                 "cromatica",
                 "indice",
                 "λ"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_040",
@@ -838,7 +877,8 @@
                 "analizzatore",
                 "cos^2",
                 "intensità"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_041",
@@ -859,7 +899,8 @@
                 "aria-vetro",
                 "rifrazione",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_042",
@@ -880,7 +921,8 @@
                 "arcsin",
                 "n2/n1",
                 "vetro-aria"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_043",
@@ -901,7 +943,8 @@
                 "1/p+1/q",
                 "f",
                 "q"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_044",
@@ -922,7 +965,8 @@
                 "1/f",
                 "calcolo",
                 "focale"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_045",
@@ -943,7 +987,8 @@
                 "q/p",
                 "m",
                 "lenti"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_046",
@@ -964,7 +1009,8 @@
                 "di",
                 "calcolo",
                 "punti coniugati"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_047",
@@ -985,7 +1031,8 @@
                 "cos^2",
                 "60 gradi",
                 "polarizzatori"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_048",
@@ -1006,7 +1053,8 @@
                 "Δy",
                 "calcolo",
                 "λL/d"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_049",
@@ -1027,7 +1075,8 @@
                 "primo minimo",
                 "λ/a",
                 "rad-gradi"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_050",
@@ -1048,7 +1097,8 @@
                 "theta_c",
                 "vetro-aria",
                 "50 gradi"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_051",
@@ -1069,7 +1119,8 @@
                 "arctan",
                 "1.5",
                 "polarizzazione"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_052",
@@ -1090,7 +1141,8 @@
                 "p",
                 "q",
                 "f"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_053",
@@ -1111,7 +1163,8 @@
                 "focale",
                 "1/D",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_054",
@@ -1132,7 +1185,8 @@
                 "di",
                 "calcolo",
                 "punti coniugati"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_055",
@@ -1153,7 +1207,8 @@
                 "Δy",
                 "inverso",
                 "d"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_056",
@@ -1174,7 +1229,8 @@
                 "λ/a",
                 "minimo",
                 "proporzionalità"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_057",
@@ -1195,7 +1251,8 @@
                 "theta_c",
                 "arcsin",
                 "TIR"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_058",
@@ -1216,7 +1273,8 @@
                 "polarizzatore",
                 "metà",
                 "intensità"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_059",
@@ -1237,7 +1295,8 @@
                 "45 gradi",
                 "cos^2",
                 "0.5"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_060",
@@ -1258,7 +1317,8 @@
                 "immagine",
                 "infinito",
                 "lente convergente"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_061",
@@ -1279,7 +1339,8 @@
                 "aria-acqua",
                 "45",
                 "rifrazione"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_062",
@@ -1300,7 +1361,8 @@
                 "lambda",
                 "Δy",
                 "proporzionale"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_063",
@@ -1321,7 +1383,8 @@
                 "R/2",
                 "f",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_064",
@@ -1342,7 +1405,8 @@
                 "virtuale",
                 "1/p+1/q",
                 "f"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_065",
@@ -1363,7 +1427,8 @@
                 "incidenza",
                 "riflessione",
                 "uguali"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_066",
@@ -1384,7 +1449,8 @@
                 "L",
                 "Δy",
                 "proporzionale"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_067",
@@ -1405,7 +1471,8 @@
                 "λ/a",
                 "primo minimo",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_068",
@@ -1426,7 +1493,8 @@
                 "tan",
                 "rapporto",
                 "aumenta"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_069",
@@ -1447,7 +1515,8 @@
                 "1/f",
                 "0.25",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_070",
@@ -1468,7 +1537,8 @@
                 "n2>n1",
                 "normale",
                 "Snell"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_071",
@@ -1489,7 +1559,8 @@
                 "f",
                 "do di",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_072",
@@ -1510,7 +1581,8 @@
                 "rapporto",
                 "cos^2",
                 "30 gradi"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_073",
@@ -1531,7 +1603,8 @@
                 "Δy",
                 "calcolo",
                 "λL/d"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_074",
@@ -1552,7 +1625,8 @@
                 "f",
                 "p q",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_075",
@@ -1573,7 +1647,8 @@
                 "sin",
                 "n2/n1",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_076",
@@ -1594,7 +1669,8 @@
                 "1/f",
                 "0.5m",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_077",
@@ -1615,7 +1691,8 @@
                 "calcolo",
                 "1/f",
                 "do di"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_078",
@@ -1636,7 +1713,8 @@
                 "30 gradi",
                 "0.75",
                 "cos^2"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_079",
@@ -1657,7 +1735,8 @@
                 "k",
                 "Young",
                 "sin"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_080",
@@ -1678,7 +1757,8 @@
                 "lambda",
                 "minimi",
                 "a sinθ"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_081",
@@ -1699,7 +1779,8 @@
                 "Snell",
                 "emergenza",
                 "angolo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_082",
@@ -1720,7 +1801,8 @@
                 "vetro-aria",
                 "angolo",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_083",
@@ -1741,7 +1823,8 @@
                 "theta_c",
                 "41.8",
                 "scelta"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_084",
@@ -1762,7 +1845,8 @@
                 "diottrie",
                 "f equivalente",
                 "somma poteri"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_085",
@@ -1783,7 +1867,8 @@
                 "q",
                 "1/p+1/q",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_086",
@@ -1804,7 +1889,8 @@
                 "di",
                 "calcolo",
                 "punti coniugati"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_087",
@@ -1825,7 +1911,8 @@
                 "I/2",
                 "Malus",
                 "I/8"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_088",
@@ -1840,13 +1927,14 @@
             ],
             "rispostaCorretta": 1,
             "spiegazione": "All'angolo di Brewster, nella derivazione si usa la condizione che i raggi riflesso e rifratto siano ortogonali ($\\theta_i + \\theta_t = 90^\\circ$). ",
-            "difficile": "difficile",
+            "difficolta": "difficile",
             "paroleChiave": [
                 "Brewster",
                 "ortogonali",
                 "90 gradi",
                 "riflesso rifratto"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_089",
@@ -1867,7 +1955,8 @@
                 "frange",
                 "λL/d",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_090",
@@ -1888,7 +1977,8 @@
                 "primo minimo",
                 "rad",
                 "λ/a"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_091",
@@ -1909,7 +1999,8 @@
                 "q",
                 "calcolo",
                 "1/p+1/q"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_092",
@@ -1930,7 +2021,8 @@
                 "altezza",
                 "m=q/p",
                 "immagine"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_093",
@@ -1951,7 +2043,8 @@
                 "di negativo",
                 "virtuale",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_094",
@@ -1972,7 +2065,8 @@
                 "theta_c",
                 "0.75",
                 "garantisce"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_095",
@@ -1993,7 +2087,8 @@
                 "Δy",
                 "λL/d",
                 "controllo parametri"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_096",
@@ -2014,7 +2109,8 @@
                 "scalare",
                 "lambda/a",
                 "minimo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_097",
@@ -2035,7 +2131,8 @@
                 "60 gradi",
                 "aria-vetro",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_098",
@@ -2056,7 +2153,8 @@
                 "acqua",
                 "arctan",
                 "53"
-            ]
+            ],
+            "richiedeCalcolo": true
         },
         {
             "id": "opt_099",
@@ -2077,7 +2175,8 @@
                 "q",
                 "vicino alla focale",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_100",
@@ -2098,7 +2197,8 @@
                 "altezza",
                 "m",
                 "q/p"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_101",
@@ -2119,7 +2219,8 @@
                 "di",
                 "virtuale",
                 "calcolo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_102",
@@ -2140,7 +2241,8 @@
                 "superficie",
                 "conversione",
                 "riflessione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_103",
@@ -2161,7 +2263,8 @@
                 "lambda",
                 "fattore",
                 "proporzionalità"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_104",
@@ -2182,7 +2285,8 @@
                 "rapporto",
                 "lambda",
                 "minimo"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_105",
@@ -2203,7 +2307,8 @@
                 "rapporto intensità",
                 "cos^2",
                 "30 60"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_106",
@@ -2224,7 +2329,8 @@
                 "n2/n1",
                 "dipendenza",
                 "TIR"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_107",
@@ -2245,7 +2351,8 @@
                 "monotonia",
                 "angoli",
                 "rifrazione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_108",
@@ -2266,7 +2373,8 @@
                 "tempo ottico",
                 "rifrazione",
                 "principio"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_109",
@@ -2287,7 +2395,8 @@
                 "velocità",
                 "c/v",
                 "rifrazione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_110",
@@ -2308,7 +2417,8 @@
                 "rifrazione",
                 "invarianza",
                 "mezzi"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_111",
@@ -2329,7 +2439,8 @@
                 "velocità",
                 "rifrazione",
                 "v=\\lambda f"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_112",
@@ -2350,7 +2461,8 @@
                 "immagine virtuale",
                 "simmetria",
                 "riflessione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_113",
@@ -2371,7 +2483,8 @@
                 "distanza",
                 "simmetria",
                 "immagine"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_114",
@@ -2392,7 +2505,8 @@
                 "specchio piano",
                 "destra-sinistra",
                 "riflessione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_115",
@@ -2413,7 +2527,8 @@
                 "2f",
                 "immagine reale",
                 "capovolta"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_116",
@@ -2434,7 +2549,8 @@
                 "f e 2f",
                 "ingrandita",
                 "reale"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_117",
@@ -2455,7 +2571,8 @@
                 "entro fuoco",
                 "immagine virtuale",
                 "ingrandita"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_118",
@@ -2476,7 +2593,8 @@
                 "virtuale",
                 "diritta",
                 "ridotta"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_119",
@@ -2497,7 +2615,8 @@
                 "segno",
                 "capovolta",
                 "lenti"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_120",
@@ -2518,7 +2637,8 @@
                 "centro curvatura",
                 "immagine reale",
                 "capovolta"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_121",
@@ -2539,7 +2659,8 @@
                 "F e C",
                 "ingrandita",
                 "reale"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_122",
@@ -2560,7 +2681,8 @@
                 "entro fuoco",
                 "virtuale",
                 "ingrandita"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_123",
@@ -2581,7 +2703,8 @@
                 "virtuale",
                 "diritta",
                 "ridotta"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_124",
@@ -2602,7 +2725,8 @@
                 "lente convergente",
                 "fuoco",
                 "asse"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_125",
@@ -2623,7 +2747,8 @@
                 "fuoco",
                 "parallelo",
                 "lente"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_126",
@@ -2644,7 +2769,8 @@
                 "lente sottile",
                 "raggi principali",
                 "paraxiale"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_127",
@@ -2665,7 +2791,8 @@
                 "fuoco",
                 "raggi principali",
                 "asse"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_128",
@@ -2686,7 +2813,8 @@
                 "fuoco",
                 "parallelo",
                 "raggi"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_129",
@@ -2707,7 +2835,8 @@
                 "specchio concavo",
                 "riflessione",
                 "raggi"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_130",
@@ -2728,7 +2857,8 @@
                 "normale",
                 "indice",
                 "Snell"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_131",
@@ -2749,7 +2879,8 @@
                 "normale",
                 "indice",
                 "Snell"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_132",
@@ -2770,7 +2901,8 @@
                 "n1>n2",
                 "TIR",
                 "condizione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_133",
@@ -2791,7 +2923,8 @@
                 "rifrazione",
                 "direzione",
                 "Snell"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_134",
@@ -2812,7 +2945,8 @@
                 "angolo critico",
                 "rifrazione",
                 "riflessione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_135",
@@ -2833,7 +2967,8 @@
                 "violetto",
                 "prisma",
                 "indice"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_136",
@@ -2854,7 +2989,8 @@
                 "indice",
                 "lambda",
                 "prisma"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_137",
@@ -2875,7 +3011,8 @@
                 "prisma",
                 "dispersione",
                 "invarianza"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_138",
@@ -2896,7 +3033,8 @@
                 "indice",
                 "c/v",
                 "rifrazione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_139",
@@ -2917,7 +3055,8 @@
                 "polarizzazione",
                 "riflessione",
                 "lineare"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_140",
@@ -2938,7 +3077,8 @@
                 "incrociati",
                 "Malus",
                 "intensità"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_141",
@@ -2959,7 +3099,8 @@
                 "assi paralleli",
                 "intensità",
                 "Malus"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_142",
@@ -2980,7 +3121,8 @@
                 "theta=0",
                 "intensità",
                 "polarizzazione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_143",
@@ -3001,7 +3143,8 @@
                 "polarizzatore",
                 "metà",
                 "intensità"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_144",
@@ -3022,7 +3165,8 @@
                 "fronti d'onda",
                 "diffrazione",
                 "onde"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_145",
@@ -3043,7 +3187,8 @@
                 "fenditura",
                 "apertura",
                 "allargamento"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_146",
@@ -3064,7 +3209,8 @@
                 "coerenza",
                 "frange",
                 "fase"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_147",
@@ -3085,7 +3231,8 @@
                 "cammino ottico",
                 "frange",
                 "fase"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_148",
@@ -3106,7 +3253,8 @@
                 "lambda",
                 "frange",
                 "spaziatura"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_149",
@@ -3127,7 +3275,8 @@
                 "distanza d",
                 "frange",
                 "spaziatura"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_150",
@@ -3148,7 +3297,8 @@
                 "massimo centrale",
                 "cammino",
                 "fase"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_151",
@@ -3169,7 +3319,8 @@
                 "interferenza",
                 "lambda",
                 "massimi"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_152",
@@ -3190,7 +3341,8 @@
                 "minimi",
                 "fase",
                 "lambda"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_153",
@@ -3211,7 +3363,8 @@
                 "massimo centrale",
                 "ordine",
                 "fenditura"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_154",
@@ -3232,7 +3385,8 @@
                 "massimo centrale",
                 "intensità",
                 "fenditura"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_155",
@@ -3253,7 +3407,8 @@
                 "diffrazione",
                 "telescopio",
                 "apertura"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_156",
@@ -3274,7 +3429,8 @@
                 "potere diottrico",
                 "somma",
                 "equivalente"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_157",
@@ -3295,7 +3451,8 @@
                 "deviazione",
                 "indice",
                 "dispersione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_158",
@@ -3316,7 +3473,8 @@
                 "TIR",
                 "indice",
                 "core"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_159",
@@ -3337,7 +3495,8 @@
                 "nL",
                 "Fermat",
                 "rifrazione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_160",
@@ -3358,7 +3517,8 @@
                 "indice",
                 "velocità",
                 "rifrazione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_161",
@@ -3379,7 +3539,8 @@
                 "convergenza",
                 "fuoco",
                 "raggi paralleli"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_162",
@@ -3400,7 +3561,8 @@
                 "divergenza",
                 "fuoco virtuale",
                 "raggi"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_163",
@@ -3421,7 +3583,8 @@
                 "approssimazione",
                 "lambda",
                 "dimensioni"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_164",
@@ -3442,7 +3605,8 @@
                 "dispersione",
                 "lenti",
                 "indice"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_165",
@@ -3463,7 +3627,8 @@
                 "aberrazione",
                 "dispersione",
                 "lenti"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_166",
@@ -3484,7 +3649,8 @@
                 "luce bianca",
                 "frange colorate",
                 "visibilità"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_167",
@@ -3505,7 +3671,8 @@
                 "riflessione",
                 "dielettrico",
                 "Brewster"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_168",
@@ -3526,7 +3693,8 @@
                 "n2/n1",
                 "rifrazione",
                 "definizione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_169",
@@ -3547,7 +3715,8 @@
                 "inversione laterale",
                 "destra-sinistra",
                 "immagine"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_170",
@@ -3568,7 +3737,8 @@
                 "immagine virtuale",
                 "schermo",
                 "lenti"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_171",
@@ -3589,7 +3759,8 @@
                 "immagine reale",
                 "fuoco",
                 "posizione oggetto"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_172",
@@ -3610,7 +3781,8 @@
                 "fuoco virtuale",
                 "convenzioni",
                 "ottica geometrica"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_173",
@@ -3631,7 +3803,8 @@
                 "rifrazione",
                 "spostamento laterale",
                 "Snell"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_174",
@@ -3652,7 +3825,8 @@
                 "indice variabile",
                 "rifrazione",
                 "aria calda"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_175",
@@ -3673,7 +3847,8 @@
                 "incrociati",
                 "Malus",
                 "intensità"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_176",
@@ -3694,7 +3869,8 @@
                 "massimi",
                 "lambda",
                 "Young"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_177",
@@ -3715,7 +3891,8 @@
                 "minimi",
                 "fase",
                 "lambda"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_178",
@@ -3736,7 +3913,8 @@
                 "centro curvatura",
                 "immagine reale",
                 "dimensione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_179",
@@ -3757,7 +3935,8 @@
                 "retrovisore",
                 "campo visivo",
                 "applicazioni"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_180",
@@ -3778,7 +3957,8 @@
                 "lente divergente",
                 "focale negativa",
                 "potere"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_181",
@@ -3799,7 +3979,8 @@
                 "lente convergente",
                 "focale positiva",
                 "potere"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_182",
@@ -3820,7 +4001,8 @@
                 "lunghezza d'onda",
                 "rifrazione",
                 "frequenza"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_183",
@@ -3841,7 +4023,8 @@
                 "dispersione",
                 "rifrazione",
                 "gocce"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_184",
@@ -3862,7 +4045,8 @@
                 "raggi",
                 "propagazione",
                 "Huygens"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_185",
@@ -3883,7 +4067,8 @@
                 "mezzo omogeneo",
                 "raggi",
                 "ottica geometrica"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_186",
@@ -3904,7 +4089,8 @@
                 "focale",
                 "inverso",
                 "lenti"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_187",
@@ -3925,7 +4111,8 @@
                 "immagine virtuale",
                 "focale",
                 "posizione oggetto"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_188",
@@ -3946,7 +4133,8 @@
                 "fuoco",
                 "immagine all'infinito",
                 "raggi paralleli"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_189",
@@ -3967,7 +4155,8 @@
                 "risoluzione",
                 "diffrazione",
                 "criterio"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_190",
@@ -3988,7 +4177,8 @@
                 "dispersione normale",
                 "lambda",
                 "deviazione"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_191",
@@ -4009,7 +4199,8 @@
                 "superficie liscia",
                 "lambda",
                 "ottica"
-            ]
+            ],
+            "richiedeCalcolo": false
         },
         {
             "id": "opt_192",
@@ -4030,7 +4221,8 @@
                 "superficie ruvida",
                 "lambda",
                 "ottica"
-            ]
+            ],
+            "richiedeCalcolo": false
         }
     ]
 }

@@ -19,7 +19,8 @@
         "ampere",
         "SI",
         "unità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_002",
@@ -39,7 +40,8 @@
         "tensione",
         "volt",
         "differenza di potenziale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_003",
@@ -59,7 +61,8 @@
         "amperometro",
         "corrente",
         "misura"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_004",
@@ -79,7 +82,8 @@
         "amperometro",
         "serie",
         "collegamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_005",
@@ -99,7 +103,8 @@
         "voltmetro",
         "tensione",
         "differenza di potenziale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_006",
@@ -119,7 +124,8 @@
         "voltmetro",
         "parallelo",
         "tensione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_007",
@@ -140,7 +146,8 @@
         "tensione",
         "corrente",
         "resistenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_008",
@@ -160,7 +167,8 @@
         "ohm",
         "V=RI",
         "formula"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_009",
@@ -180,7 +188,8 @@
         "ohm",
         "I=V/R",
         "proporzionalità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_010",
@@ -201,7 +210,8 @@
         "convenzionale",
         "verso",
         "polo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_011",
@@ -221,7 +231,8 @@
         "resistenze",
         "serie",
         "corrente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_012",
@@ -241,7 +252,8 @@
         "resistenze",
         "parallelo",
         "tensione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_013",
@@ -261,7 +273,8 @@
         "serie",
         "resistenza equivalente",
         "somma"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_014",
@@ -281,7 +294,8 @@
         "parallelo",
         "resistenza equivalente",
         "reciproci"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_015",
@@ -301,7 +315,8 @@
         "ohm",
         "resistenza",
         "unità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_016",
@@ -321,7 +336,8 @@
         "potenza",
         "P=VI",
         "DC"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_017",
@@ -342,7 +358,8 @@
         "potenza",
         "I2R",
         "resistore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_018",
@@ -362,7 +379,8 @@
         "potenza",
         "corrente nulla",
         "P=VI"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_019",
@@ -382,7 +400,8 @@
         "nodo",
         "rami",
         "connessione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_020",
@@ -403,7 +422,8 @@
         "KCL",
         "nodo",
         "correnti"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_021",
@@ -423,7 +443,8 @@
         "maglia",
         "percorso chiuso",
         "KVL"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_022",
@@ -444,7 +465,8 @@
         "KVL",
         "maglia",
         "tensioni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_023",
@@ -464,7 +486,8 @@
         "filo ideale",
         "caduta di tensione",
         "potenziale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_024",
@@ -475,7 +498,7 @@
         "La resistenza totale è molto grande",
         "La resistenza tra due punti è quasi nulla",
         "La corrente è sempre zero",
-        "La tensione è sempre massima"
+        "La tensione è always massima"
       ],
       "rispostaCorretta": 1,
       "spiegazione": "Nel cortocircuito la resistenza del percorso è molto piccola, quindi la corrente può diventare molto grande.",
@@ -484,7 +507,8 @@
         "cortocircuito",
         "resistenza bassa",
         "corrente alta"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_025",
@@ -505,7 +529,8 @@
         "grafico",
         "linearità",
         "V-I"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_026",
@@ -525,7 +550,8 @@
         "potenza",
         "watt",
         "unità"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_027",
@@ -546,7 +572,8 @@
         "V=RI",
         "tensione zero",
         "corrente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_028",
@@ -567,7 +594,8 @@
         "joule",
         "I2R",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_029",
@@ -588,7 +616,8 @@
         "Req",
         "somma",
         "aumento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_030",
@@ -608,7 +637,8 @@
         "parallelo",
         "Req",
         "diminuzione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_031",
@@ -627,7 +657,8 @@
       "paroleChiave": [
         "resistore",
         "limitare corrente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_032",
@@ -647,7 +678,8 @@
         "interruttore",
         "circuito aperto",
         "corrente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_033",
@@ -667,7 +699,8 @@
         "ohm",
         "proporzionalità",
         "raddoppio"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_034",
@@ -687,7 +720,8 @@
         "voltmetro",
         "resistenza interna",
         "ideale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_035",
@@ -707,7 +741,8 @@
         "amperometro",
         "resistenza interna",
         "ideale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_036",
@@ -727,7 +762,8 @@
         "serie",
         "lampadina",
         "circuito aperto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_037",
@@ -748,7 +784,8 @@
         "ripartizione",
         "KCL",
         "somma"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_038",
@@ -768,7 +805,8 @@
         "fili",
         "resistenza trascurabile",
         "modello"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_039",
@@ -788,7 +826,8 @@
         "resistenza zero",
         "cortocircuito",
         "limite"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_040",
@@ -808,7 +847,8 @@
         "circuito chiuso",
         "percorso",
         "corrente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_041",
@@ -828,7 +868,8 @@
         "ohm",
         "calcolo",
         "V=RI"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_042",
@@ -848,7 +889,8 @@
         "ohm",
         "R=V/I",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_043",
@@ -869,7 +911,8 @@
         "Req",
         "corrente",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_044",
@@ -890,7 +933,8 @@
         "Req",
         "reciproci",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cir_045",
@@ -911,7 +955,8 @@
         "Req",
         "corrente totale",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cir_046",
@@ -932,7 +977,8 @@
         "I2R",
         "joule",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_047",
@@ -952,7 +998,8 @@
         "potenza",
         "V2/R",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_048",
@@ -973,7 +1020,8 @@
         "uguali",
         "Req",
         "R/2"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_049",
@@ -994,7 +1042,8 @@
         "uguali",
         "Req",
         "3R"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_050",
@@ -1015,7 +1064,8 @@
         "tensione",
         "serie",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_051",
@@ -1035,7 +1085,8 @@
         "generatore reale",
         "resistenza interna",
         "modello"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_052",
@@ -1056,7 +1107,8 @@
         "resistenza interna",
         "corrente",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_053",
@@ -1076,7 +1128,8 @@
         "resistenza interna",
         "caduta",
         "V=Ir"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_054",
@@ -1097,7 +1150,8 @@
         "nodo",
         "correnti",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_055",
@@ -1117,7 +1171,8 @@
         "KVL",
         "maglia",
         "somma tensioni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_056",
@@ -1137,7 +1192,8 @@
         "parallelo",
         "calcolo",
         "equivalente"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cir_057",
@@ -1157,7 +1213,8 @@
         "serie-parallelo",
         "Req",
         "misto"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cir_058",
@@ -1177,7 +1234,8 @@
         "potenza",
         "V2/R",
         "totale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_059",
@@ -1198,7 +1256,8 @@
         "costante di tempo",
         "tau",
         "R*C"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_060",
@@ -1219,7 +1278,8 @@
         "carica",
         "63%",
         "costante di tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_061",
@@ -1240,7 +1300,8 @@
         "carica",
         "capacità",
         "Q=CV"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_062",
@@ -1261,7 +1322,8 @@
         "parallelo",
         "Ceq",
         "somma"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_063",
@@ -1281,7 +1343,8 @@
         "condensatori",
         "serie",
         "reciproci"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_064",
@@ -1302,7 +1365,8 @@
         "microfarad",
         "carica",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cir_065",
@@ -1323,7 +1387,8 @@
         "DC",
         "regime",
         "circuito aperto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_066",
@@ -1344,7 +1409,8 @@
         "DC",
         "regime",
         "corto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_067",
@@ -1364,7 +1430,8 @@
         "induttore",
         "variazione corrente",
         "tensione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_068",
@@ -1385,7 +1452,8 @@
         "costante di tempo",
         "tau",
         "L/R"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_069",
@@ -1405,7 +1473,8 @@
         "parallelo",
         "corrente ramo",
         "V/R"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_070",
@@ -1426,7 +1495,8 @@
         "tensione",
         "Req",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_071",
@@ -1446,7 +1516,8 @@
         "partitore",
         "tensione",
         "serie"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_072",
@@ -1467,7 +1538,8 @@
         "V2/R",
         "dipendenza",
         "resistenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_073",
@@ -1488,7 +1560,8 @@
         "I2R",
         "dipendenza",
         "resistenza"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_074",
@@ -1508,7 +1581,8 @@
         "ohm",
         "I=V/R",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_075",
@@ -1528,7 +1602,8 @@
         "KCL",
         "parallelo",
         "corrente totale"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_076",
@@ -1549,7 +1624,8 @@
         "parallelo",
         "Ceq",
         "somma"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_077",
@@ -1570,7 +1646,8 @@
         "serie",
         "reciproci",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cir_078",
@@ -1591,7 +1668,8 @@
         "mA",
         "conversione",
         "V=RI"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_079",
@@ -1612,7 +1690,8 @@
         "scarica",
         "37%",
         "costante di tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_080",
@@ -1632,7 +1711,8 @@
         "serie",
         "caduta tensione",
         "V=IR"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_081",
@@ -1653,7 +1733,8 @@
         "Req",
         "corrente",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_082",
@@ -1666,7 +1747,7 @@
         "7 $\\Omega$",
         "9 $\\Omega$"
       ],
-      "rispostaCorretta": 1,
+      "rispostaCorretta": 2,
       "spiegazione": "$R_{eq,par} = (6 \\cdot 12)/(6 + 12) = 72/18 = 4$ $\\Omega$; totale $= 3\\,\\Omega + 4\\,\\Omega = 7\\,\\Omega$.",
       "difficolta": "medio",
       "paroleChiave": [
@@ -1674,7 +1755,8 @@
         "parallelo",
         "serie",
         "Req"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cir_083",
@@ -1694,7 +1776,8 @@
         "potenza",
         "P=VI",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_084",
@@ -1715,7 +1798,8 @@
         "E=Pt",
         "joule",
         "tempo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_085",
@@ -1735,7 +1819,8 @@
         "ohm",
         "I=V/R",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_086",
@@ -1755,7 +1840,8 @@
         "parallelo",
         "I=V/R",
         "ripartizione"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_087",
@@ -1776,7 +1862,8 @@
         "serie",
         "resistenza alta",
         "errore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_088",
@@ -1797,7 +1884,8 @@
         "parallelo",
         "cortocircuito",
         "errore"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_089",
@@ -1817,7 +1905,8 @@
         "resistore",
         "dissipazione",
         "I2R"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_090",
@@ -1838,7 +1927,8 @@
         "tau",
         "calcolo",
         "R*C"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cir_091",
@@ -1859,7 +1949,8 @@
         "maglie",
         "sistema",
         "equazioni"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_092",
@@ -1880,7 +1971,8 @@
         "tensione",
         "serie",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_093",
@@ -1901,7 +1993,8 @@
         "nodo",
         "correnti",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_094",
@@ -1922,7 +2015,8 @@
         "parallelo",
         "serie",
         "corrente totale"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cir_095",
@@ -1942,7 +2036,8 @@
         "generatore reale",
         "resistenza interna",
         "tensione morsetti"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_096",
@@ -1963,7 +2058,8 @@
         "resistenza interna",
         "I2R",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_097",
@@ -1984,7 +2080,8 @@
         "63%",
         "tau",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cir_098",
@@ -2005,7 +2102,8 @@
         "tau",
         "L/R",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_099",
@@ -2026,7 +2124,8 @@
         "RMS",
         "valore efficace",
         "sinusoide"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_100",
@@ -2047,7 +2146,8 @@
         "reattanza capacitiva",
         "Xc",
         "1/(ωC)"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_101",
@@ -2068,7 +2168,8 @@
         "reattanza induttiva",
         "Xl",
         "ωL"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_102",
@@ -2089,7 +2190,8 @@
         "risonanza",
         "impedenza",
         "resistiva"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_103",
@@ -2110,7 +2212,8 @@
         "ωL",
         "1/(ωC)",
         "RLC"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_104",
@@ -2131,7 +2234,8 @@
         "fase",
         "resistivo",
         "sfasamento"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_105",
@@ -2152,7 +2256,8 @@
         "AC",
         "anticipo",
         "90 gradi"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_106",
@@ -2173,7 +2278,8 @@
         "AC",
         "ritardo",
         "90 gradi"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_107",
@@ -2193,7 +2299,8 @@
         "sovrapposizione",
         "reti lineari",
         "generatori"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_108",
@@ -2214,7 +2321,8 @@
         "equivalente",
         "Vth",
         "Rth"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_109",
@@ -2235,7 +2343,8 @@
         "equivalente",
         "corrente",
         "parallelo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_110",
@@ -2255,7 +2364,8 @@
         "thevenin",
         "norton",
         "resistenza equivalente"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_111",
@@ -2276,7 +2386,8 @@
         "spegnere sorgenti",
         "generatore tensione",
         "corto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_112",
@@ -2297,7 +2408,8 @@
         "spegnere sorgenti",
         "generatore corrente",
         "aperto"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_113",
@@ -2318,7 +2430,8 @@
         "V2/R",
         "scalabilità",
         "quadrato"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_114",
@@ -2339,7 +2452,8 @@
         "potenza",
         "I2R",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_115",
@@ -2360,7 +2474,8 @@
         "potenza totale",
         "V2/R",
         "Req"
-      ]
+      ],
+      "richiedeCalcolo": true
     },
     {
       "id": "cir_116",
@@ -2381,7 +2496,8 @@
         "continuità",
         "tensione",
         "transitorio"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_117",
@@ -2402,7 +2518,8 @@
         "continuità",
         "corrente",
         "transitorio"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_118",
@@ -2423,7 +2540,8 @@
         "scarica",
         "stime",
         "tau"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_119",
@@ -2444,7 +2562,8 @@
         "carico",
         "partitore",
         "calcolo"
-      ]
+      ],
+      "richiedeCalcolo": false
     },
     {
       "id": "cir_120",
@@ -2465,1332 +2584,1393 @@
         "potenza",
         "V2/R",
         "calcolo"
-      ]
-    }, 
+      ],
+      "richiedeCalcolo": false
+    },
     {
-    "id": "cir_121",
-    "domanda": "Perché la resistenza interna di una batteria reale causa una riduzione della tensione ai morsetti quando il circuito è sotto carico?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Batteria reale - concetto",
-    "opzioni": [
-      "Perché la batteria genera meno tensione quando viene usata",
-      "Perché la corrente che circola provoca una caduta di tensione sulla resistenza interna",
-      "Perché gli elettroni si fermano all'interno della batteria",
-      "Perché la resistenza esterna non riceve tutta la tensione"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Una batteria reale ha una resistenza interna $r$. La corrente $I$ che circola causa una caduta $V_r = I \\cdot r$ ai morsetti della batteria stessa. La tensione disponibile al carico è ridotta di questa quantità: $V_{carico} = f.e.m. - I \\cdot r$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "batteria reale",
-      "resistenza interna",
-      "caduta tensione",
-      "morsetti"
-    ]
-  },
-  {
-    "id": "cir_122",
-    "domanda": "Quale differenza concettuale fondamentale esiste tra uno schema con resistori in serie e uno con resistori in parallelo, dal punto di vista del percorso della corrente?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Concetto serie vs parallelo",
-    "opzioni": [
-      "In serie la corrente ha un solo percorso, in parallelo ha più percorsi alternativi",
-      "In serie la tensione è divisa, in parallelo la corrente è divisa",
-      "In parallelo c'è sempre più corrente che in serie",
-      "Non c'è differenza fondamentale nel comportamento della corrente"
-    ],
-    "rispostaCorretta": 0,
-    "spiegazione": "Il concetto chiave è il percorso della corrente. In serie c'è un unico percorso; in parallelo la corrente può dividersi in più rami alternativi. Questo spiega perché in serie la corrente è uguale ovunque, mentre in parallelo può essere diversa nei diversi rami.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "serie",
-      "parallelo",
-      "percorso corrente",
-      "concetto"
-    ]
-  },
-  {
-    "id": "cir_123",
-    "domanda": "Perché mettendo resistori in serie la resistenza equivalente aumenta, mentre mettendo resistori in parallelo diminuisce? Spiega il ragionamento fisico.",
-    "categoria": "Circuiti",
-    "sottocategoria": "Ragionamento serie-parallelo",
-    "opzioni": [
-      "In serie si bloccano più i portatori di carica; in parallelo ci sono più 'scorciatoie' per la corrente",
-      "In parallelo i resistori si annullano a vicenda",
-      "Dipende solo dal valore numerico dei resistori",
-      "In parallelo la tensione è più bassa, quindi la resistenza diminuisce"
-    ],
-    "rispostaCorretta": 0,
-    "spiegazione": "In serie, i resistori si oppongono uno dopo l'altro al passaggio della corrente, aumentando l'ostacolo totale ($R_{eq} = R_1 + R_2 + \\dots$). In parallelo, la corrente può scegliere il percorso più facile e dividersi tra i rami: questo riduce la resistenza totale vista dal generatore (più 'strade' disponibili).",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "serie",
-      "parallelo",
-      "resistenza equivalente",
-      "ostacolo corrente",
-      "ragionamento"
-    ]
-  },
-  {
-    "id": "cir_124",
-    "domanda": "In un circuito, quale osservazione aiuta a riconoscere se un voltmetro è stato collegato correttamente (in parallelo) anziché sconnesso?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Ragionamento misura",
-    "opzioni": [
-      "Un voltmetro correttamente collegato riduce la corrente totale del circuito se ha resistenza finita",
-      "Un voltmetro non influenza mai il circuito",
-      "Un voltmetro toglie carica dal circuito gradualmente",
-      "Un voltmetro fa sempre aumentare la tensione"
-    ],
-    "rispostaCorretta": 0,
-    "spiegazione": "Un voltmetro in parallelo assorbe una piccola corrente a causa della sua resistenza interna molto alta. Idealmente non dovrebbe influenzare il circuito, ma in realtà riduce leggermente la resistenza equivalente vista dai nodi, alterando di poco la corrente totale.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "voltmetro",
-      "parallelo",
-      "resistenza interna alta",
-      "osservazione",
-      "ragionamento"
-    ]
-  },
-  {
-    "id": "cir_125",
-    "domanda": "Perché è importante che un amperometro abbia una resistenza interna molto piccola?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Amperometro - ragionamento",
-    "opzioni": [
-      "Per non alterare la corrente che misura con una caduta di tensione significativa",
-      "Per evitare che si bruci",
-      "Perché così misura valori più alti",
-      "Per stare in parallelo con il circuito"
-    ],
-    "rispostaCorretta": 0,
-    "spiegazione": "L'amperometro è messo in serie. Se avesse resistenza alta, creerebbe una caduta di tensione che altererebbe significativamente la corrente del circuito. Con resistenza trascurabile, la caduta è negligibile e la misura è rappresentativa della corrente reale.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "amperometro",
-      "serie",
-      "resistenza interna",
-      "non alterare",
-      "ragionamento"
-    ]
-  },
-  {
-    "id": "cir_126",
-    "domanda": "Cosa significa fisicamente che la potenza dissipata su un resistore è proporzionale al quadrato della corrente ($P = I^2 R$)?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Interpretazione potenza",
-    "opzioni": [
-      "Se raddoppio la corrente, la potenza raddoppia",
-      "Se raddoppio la corrente, la potenza quadruplica perché gli effetti termici aumentano molto velocemente",
-      "Se raddoppio la corrente, la potenza rimane uguale",
-      "La potenza è indipendente dalla corrente"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La dipendenza da $I^2$ significa che piccoli aumenti di corrente causano grandi aumenti di potenza dissipata. Per esempio, raddoppiando $I$, $P$ quadruplica ($2^2 = 4$). Questo spiega il rapido surriscaldamento dei componenti.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "potenza",
-      "I^2R",
-      "dipendenza quadratica",
-      "calore",
-      "interpretazione"
-    ]
-  },
-  {
-    "id": "cir_127",
-    "domanda": "In una lampadina reale, quando aumenti la tensione fornisce più luce. Qual è il motivo fisico sottostante?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Applicazione concettuale",
-    "opzioni": [
-      "Aumenta la resistenza della lampadina",
-      "Aumenta la corrente, aumenta la potenza dissipata nel filamento, aumenta il calore e l'emissione luminosa",
-      "La resistenza diminuisce, quindi meno calore",
-      "Non c'è relazione tra tensione e luminosità"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Aumentando la tensione ai capi di una lampadina, per la legge di Ohm aumenta la corrente. Poiché $P = I^2 R$ (o $P = \frac{V^2}{R}$), l'aumento di tensione produce un aumento della potenza, quindi più calore nel filamento e più luce.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "lampadina",
-      "tensione",
-      "corrente",
-      "potenza",
-      "luminosità",
-      "filamento"
-    ]
-  },
-  {
-    "id": "cir_128",
-    "domanda": "Perché una batteria si scarica più velocemente se l'usiamo in un circuito ad alta corrente (bassa resistenza) rispetto a uno a bassa corrente (alta resistenza)?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Ragionamento scarica batteria",
-    "opzioni": [
-      "La batteria 'sa' se sta fornendo tanta o poca corrente e si scarica diversamente",
-      "A causa della resistenza interna della batteria: con alta corrente c'è maggior caduta ai morsetti e più energia dispersa internamente",
-      "Perché i circuiti ad alta corrente sono più efficienti",
-      "Le batterie non hanno resistenza interna"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Una batteria ha una resistenza interna $r$. Parte dell'energia è dissipata come calore in $r$ stessa. A corrente elevata, la potenza persa internamente ($P = I^2 r$) è maggiore, riducendo l'efficienza e accelerando il consumo dei reagenti chimici.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "batteria",
-      "scarica",
-      "resistenza interna",
-      "alta corrente",
-      "perdite",
-      "ragionamento"
-    ]
-  },
-  {
-    "id": "cir_129",
-    "domanda": "Cosa rappresenta fisicamente la 'costante di tempo' $\tau$ in un circuito RC?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Significato tau RC",
-    "opzioni": [
-      "Il momento esatto in cui il condensatore è completamente carico",
-      "Un tempo caratteristico che indica la 'velocità' dei processi transitori: dopo $\\tau$ il condensatore raggiunge $\\approx 63\\%$ del valore finale",
-      "La resistenza totale divisa per la capacità",
-      "L'intervallo di tempo dopo il quale il circuito non funziona più"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "$\\tau = R \\cdot C$ è una scala temporale. Rappresenta quanto velocemente cambiano le grandezze. Dopo un tempo $\\tau$, in fase di carica la tensione raggiunge circa il $63\\%$ del valore finale, mentre in scarica scende al $37\\\\%$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "RC",
-      "costante di tempo",
-      "tau",
-      "scala temporale",
-      "transitorio",
-      "significato"
-    ]
-  },
-  {
-    "id": "cir_130",
-    "domanda": "In un circuito RC, perché la corrente iniziale è massima (al momento dell'accensione) e poi diminuisce gradualmente durante la carica?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Transitorio RC - ragionamento",
-    "opzioni": [
-      "Perché la resistenza in serie sta aumentando",
-      "Perché il condensatore caricandosi accumula carica, sviluppa una controtensione che si oppone alla tensione applicata, riducendo la corrente netta",
-      "Perché la batteria si sta scaricando",
-      "Perché la temperatura del circuito aumenta gradualmente"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "All'inizio il condensatore è scarico ($V_C = 0$), quindi la tensione sulla resistenza è massima ($V_R = V_{gen}$) e $I_{max} = \frac{V_{gen}}{R}$. Caricandosi, $V_C$ aumenta e la tensione residua su $R$ diminuisce, riducendo la corrente fino a zero.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "RC",
-      "carica",
-      "corrente massima",
-      "controtensione",
-      "transitorio",
-      "ragionamento"
-    ]
-  },
-  {
-    "id": "cir_131",
-    "domanda": "Quale legge o principio consente di affermare che in un nodo la somma delle correnti entranti eguaglia la somma di quelle uscenti?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Fondamenti KCL",
-    "opzioni": [
-      "La legge dell'attrazione gravitazionale",
-      "La conservazione della carica: i portatori di carica non scompaiono in un nodo",
-      "La legge di Ohm",
-      "Il principio di energia"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La legge di Kirchhoff delle correnti (KCL) deriva dalla conservazione della carica. In regime stazionario, la carica non può accumularsi nel nodo: tanta carica entra, tanta deve uscire nell'unità di tempo.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "KCL",
-      "nodo",
-      "conservazione carica",
-      "fondamenti"
-    ]
-  },
-  {
-    "id": "cir_132",
-    "domanda": "Perché la legge delle maglie (KVL: somma delle tensioni attorno a una maglia $= 0$) è una conseguenza della conservazione dell'energia?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Fondamenti KVL",
-    "opzioni": [
-      "Perché la tensione è sempre positiva",
-      "Quando un portatore di carica percorre una maglia chiusa, guadagna e perde energia in modo da tornare al punto di partenza con la stessa energia: l'energia netta è zero",
-      "Perché il generatore fornisce sempre la stessa tensione",
-      "Perché la resistenza è costante"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Compiendo un percorso chiuso, il lavoro totale svolto dal campo elettrostatico su una carica deve essere nullo (il potenziale è una funzione di stato). Ciò implica che la somma algebrica delle differenze di potenziale sia $\\sum V = 0$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "KVL",
-      "maglia",
-      "conservazione energia",
-      "fondamenti",
-      "ragionamento"
-    ]
-  },
-  {
-    "id": "cir_133",
-    "domanda": "Cos'è il 'regime stazionario' in DC e perché è utile per semplificare l'analisi di circuiti con condensatori?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Regime stazionario",
-    "opzioni": [
-      "È quando tutte le grandezze cambiano costantemente nel tempo",
-      "È quando tutte le grandezze (correnti, tensioni) non cambiano più nel tempo: i componenti sono carichi e i transitori sono terminati",
-      "È quando il circuito non funziona",
-      "È quando la resistenza diventa zero"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "In regime stazionario DC i transitori si sono estinti. I condensatori sono carichi e agiscono come circuiti aperti ($I = 0$), mentre gli induttori agiscono come cortocircuiti ($V = 0$), semplificando drasticamente i calcoli.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "regime stazionario",
-      "DC",
-      "transitorio",
-      "condensatore",
-      "circuito aperto",
-      "semplificazione"
-    ]
-  },
-  {
-    "id": "cir_134",
-    "domanda": "Se collegassi due batterie in serie con polarità opposte (una al contrario dell'altra), cosa accadrebbe al circuito e perché?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Ragionamento collegamento batterie",
-    "opzioni": [
-      "Le tensioni si sommano e il circuito funziona normalmente",
-      "Le tensioni si sottraggono: la tensione netta è la differenza tra le f.e.m. La polarità netta è quella della batteria con f.e.m. maggiore",
-      "Nulla accade, le batterie si annullano completamente",
-      "Le correnti si bloccano e il circuito non funziona"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Le forze elettromotrici si sottraggono algebricamente. La tensione risultante è $|f.e.m._1 - f.e.m._2|$. Se sono identiche, la tensione totale è $0 \\text{ V}$ e non circola corrente.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "batterie",
-      "serie",
-      "polarità opposte",
-      "sottrazione",
-      "f.e.m.",
-      "ragionamento"
-    ]
-  },
-  {
-    "id": "cir_135",
-    "domanda": "Perché in un circuito con lampadine in serie, se una si brucia tutto il resto si spegne, mentre in un circuito in parallelo il resto rimane acceso?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Interpretazione serie vs parallelo",
-    "opzioni": [
-      "Perché in parallelo non circola corrente",
-      "In serie, un'interruzione in un punto interrompe il percorso unico della corrente in tutto il circuito; in parallelo, il guasto di un ramo non interrompe gli altri rami",
-      "Perché in parallelo le lampadine sono più forti",
-      "Non c'è nessuna differenza, sono solo costruzioni diverse"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "In serie c'è un solo cammino per le cariche. Se il filamento di una lampadina si rompe, il circuito diventa 'aperto' e la corrente cessa. In parallelo ogni ramo è indipendente e collegato direttamente al generatore.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "serie",
-      "parallelo",
-      "interruzione",
-      "percorsi",
-      "guasto",
-      "interpretazione"
-    ]
-  },
-  {
-    "id": "cir_136",
-    "domanda": "In un circuito, quale principio fisico spiega il fatto che i resistori dissipano energia sotto forma di calore anziché dare energia al circuito?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Ragionamento dissipazione",
-    "opzioni": [
-      "Perché i resistori accumulano carica",
-      "Perché gli urti degli elettroni con gli atomi del materiale convertono l'energia cinetica ordinata in energia termica disordinata (effetto Joule)",
-      "Perché i resistori hanno una memoria energetica",
-      "Perché la resistenza cancella l'energia dal circuito"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "L'effetto Joule è dovuto alle collisioni microscopiche tra portatori di carica e reticolo atomico. L'energia potenziale elettrica si trasforma in energia cinetica e poi, tramite urti, in calore (vibrazioni atomiche).",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "dissipazione",
-      "calore",
-      "resistore",
-      "effetto Joule",
-      "entropia",
-      "ragionamento"
-    ]
-  },
-  {
-    "id": "cir_137",
-    "domanda": "Quale osservazione sperimentale mostra che la tensione e la corrente in un resistore ohmico sono proporzionali (legge di Ohm)?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Origine empirica legge Ohm",
-    "opzioni": [
-      "Se misuri V e I per diversi resistori, il rapporto V/I è sempre costante",
-      "Se V aumenta, I diminuisce sempre",
-      "La potenza dissipata è sempre uguale",
-      "La temperatura del resistore non cambia"
-    ],
-    "rispostaCorretta": 0,
-    "spiegazione": "La legge di Ohm ($V = R \\cdot I$) è una relazione empirica. Sperimentalmente si osserva che, per molti materiali (conduttori ohmici), il grafico tensione-corrente è una retta passante per l'origine, il cui coefficiente angolare è $R = \\frac{V}{I}$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "legge di ohm",
-      "empirica",
-      "V/I",
-      "costante",
-      "resistore ohmico",
-      "osservazione"
-    ]
-  },
-  {
-    "id": "cir_138",
-    "domanda": "Perché una batteria reale non può fornire una corrente arbitrariamente grande, anche se la resistenza esterna tende a zero?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Limite corrente batteria",
-    "opzioni": [
-      "Perché il generatore ideale fornisce tensione infinita",
-      "Perché anche se la resistenza esterna va a zero, rimane la resistenza interna della batteria che limita la corrente massima",
-      "Perché le leggi di Kirchhoff proibiscono correnti molto alte",
-      "Perché la carica della batteria è finita"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "In caso di cortocircuito ($R_{ext} \\to 0$), la corrente è limitata dalla resistenza interna $r$: $I_{max} = \\frac{f.e.m.}{r}$. Questo valore è finito e rappresenta il limite fisico del generatore.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "batteria reale",
-      "resistenza interna",
-      "corrente massima",
-      "cortocircuito",
-      "limite"
-    ]
-  },
-  {
-    "id": "cir_139",
-    "domanda": "Qual è il vantaggio di usare un partitore di tensione per ottenere una tensione inferiore rispetto al semplice usare una resistenza più grande in serie al carico?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Partitore di tensione - ragionamento",
-    "opzioni": [
-      "Non ci sono vantaggi, sono equivalenti",
-      "Il partitore è preferibile perché fornisce una tensione più stabile al carico quando varia la corrente assorbita",
-      "Perché il partitore non consuma energia",
-      "Perché il partitore genera tensione"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "In un partitore, la tensione d'uscita è fissata dal rapporto tra due resistenze. Se il carico ha un'alta impedenza rispetto alle resistenze del partitore, la tensione rimane stabile. Una singola resistenza in serie causerebbe una caduta variabile in base alla corrente del carico.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "partitore",
-      "tensione",
-      "stabilità",
-      "carico variabile",
-      "ragionamento"
-    ]
-  },
-  {
-    "id": "cir_140",
-    "domanda": "In un circuito RLC in corrente alternata, cosa succede quando la frequenza raggiunge esattamente la frequenza di risonanza?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Risonanza interpretazione",
-    "opzioni": [
-      "La corrente diventa zero",
-      "L'impedenza è minima (solo resistiva) e la corrente è massima per quella tensione applicata",
-      "La tensione sul resistore svanisce",
-      "Il circuito si comporta come un circuito aperto"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Alla risonanza, la reattanza induttiva $\\omega L$ e quella capacitiva $\\frac{1}{\\omega C}$ si eguagliano e si annullano a vicenda ($X_L - X_C = 0$). L'impedenza $Z$ diventa pari alla sola resistenza $R$, permettendo alla corrente di raggiungere il picco massimo.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "RLC",
-      "AC",
-      "risonanza",
-      "impedenza minima",
-      "corrente massima",
-      "interpretazione"
-    ]
-  },
-  {
-    "id": "cir_141",
-    "domanda": "Come mai la potenza medio dissipata in un circuito AC con carico puramente reattivo (solo condensatore o solo induttore) è zero?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Potenza reattiva",
-    "opzioni": [
-      "Perché non circola corrente",
-      "Perché gli elementi reattivi accumulano e restituiscono l'energia nel ciclo, senza dissipazione netta",
-      "Perché la tensione è sempre nulla",
-      "Perché la potenza non esiste in AC"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "In carichi puramente reattivi lo sfasamento tra $V$ e $I$ è di $90^\\circ$ ($\\cos \\phi = 0$). L'energia fluisce dal generatore al componente e viceversa; la potenza istantanea oscilla ma il valore medio su un periodo è nullo.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "AC",
-      "potenza reattiva",
-      "condensatore",
-      "induttore",
-      "sfasamento 90 gradi",
-      "medio zero"
-    ]
-  },
-  {
-    "id": "cir_142",
-    "domanda": "Quale affermazione descrive meglio il concetto di 'impedenza' in corrente alternata?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Impedenza concetto",
-    "opzioni": [
-      "È la stessa cosa della resistenza, solo con un altro nome",
-      "È una generalizzazione della resistenza che include anche gli effetti reattivi: $Z = \\sqrt{R^2 + (X_L - X_C)^2}$",
-      "È la velocità della corrente alternata",
-      "È la potenza dissipata dal circuito"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "L'impedenza $Z$ estende il concetto di resistenza considerando sia l'opposizione dissipativa ($R$) sia quella legata ai campi elettrici e magnetici (reattanze $X$). Si misura in Ohm e lega i valori efficaci di tensione e corrente: $V = Z \\cdot I$.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "impedenza",
-      "AC",
-      "reattanza",
-      "resistenza",
-      "generalizzazione",
-      "concetto"
-    ]
-  },
-  {
-    "id": "cir_143",
-    "domanda": "Perché il fattore di potenza ($\\cos \\phi$) è importante per gli impianti elettrici industriali?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Fattore di potenza - significato",
-    "opzioni": [
-      "Perché determina il colore della luce",
-      "Perché un basso fattore di potenza significa che gran parte della corrente non fornisce potenza utile, sovraccaricando le linee",
-      "Perché la potenza apparente deve essere calcolata diversamente",
-      "Perché il costo dell'elettricità è proporzionale alla frequenza"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Il fattore di potenza indica l'efficienza: $\\cos \\phi = \\frac{P_{attiva}}{P_{apparente}}$. Se è basso, circola molta corrente 'reattiva' che non compie lavoro ma scalda i cavi e richiede trasformatori più grandi. Le aziende rifasano per ridurre queste perdite.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "fattore di potenza",
-      "cos phi",
-      "potenza reale",
-      "potenza apparente",
-      "rifasamento",
-      "significato"
-    ]
-  },
-  {
-    "id": "cir_144",
-    "domanda": "In un circuito RC in carica, dopo molto tempo ($t \\gg \\tau$), quale affermazione è vera sul condensatore?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Regime stazionario RC",
-    "opzioni": [
-      "Il condensatore continua a ricevere corrente costantemente",
-      "Il condensatore è carico e non passa più corrente: agisce come circuito aperto",
-      "Il condensatore si sta scaricando",
-      "La tensione sul condensatore decresce esponenzialmente"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Quando $V_C$ raggiunge $V_{gen}$, non c'è più differenza di potenziale sulla resistenza ($V_R = 0$). Di conseguenza la corrente si annulla ($I = 0$) e il condensatore blocca il flusso in DC.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "RC",
-      "carica",
-      "regime stazionario",
-      "circuito aperto",
-      "corrente nulla"
-    ]
-  },
-  {
-    "id": "cir_145",
-    "domanda": "Se l'illuminazione della tua casa è in parallelo, quale vantaggio pratico offre rispetto a una configurazione in serie?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Applicazione pratica parallelo",
-    "opzioni": [
-      "Usa meno energia in totale",
-      "Ciascuna lampadina riceve sempre la tensione di linea e può essere accesa/spenta indipendentemente",
-      "Le lampadine durano più a lungo",
-      "La corrente totale è minore"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "In parallelo tutti i dispositivi ricevono i $230 \text{ V}$ nominali. Inoltre, lo spegnimento o il guasto di un apparecchio non interrompe il circuito per gli altri, garantendo continuità di servizio.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "parallelo",
-      "illuminazione",
-      "applicazione pratica",
-      "interruttore",
-      "tensione costante"
-    ]
-  },
-  {
-    "id": "cir_146",
-    "domanda": "Spiega perché la potenza totale dissipata nei resistori eguaglia la potenza fornita da un generatore.",
-    "categoria": "Circuiti",
-    "sottocategoria": "Bilancio energetico",
-    "opzioni": [
-      "Perché l'energy scompare in nulla",
-      "Per conservazione dell'energia: la potenza $P = V \\cdot I$ fornita deve essere dissipata dai componenti resistivi in calore",
-      "Perché i resistori creano energia",
-      "Perché la tensione e la corrente si annullano"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "L'energia non si crea né si distrugge. In un circuito puramente resistivo stazionario, tutta l'energia elettrica prodotta dal generatore viene convertita in energia termica nei resistori.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "conservazione energia",
-      "potenza",
-      "bilancio",
-      "generatore",
-      "resistori",
-      "dissipazione"
-    ]
-  },
-  {
-    "id": "cir_147",
-    "domanda": "In un circuito dove applichi KVL attorno a una maglia, quale attenzione devi avere nel segno della tensione attorno a un generatore?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Segni KVL",
-    "opzioni": [
-      "Il segno è sempre positivo",
-      "Dipende dal verso di percorrenza: se entri dal polo negativo ed esci dal positivo, il contributo è $+f.e.m.$",
-      "Il segno dei generatori non importa in KVL",
-      "Tutti i generatori hanno sempre lo stesso segno in una maglia"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Il segno dipende dalla convenzione e dal verso scelto per la maglia. Se il verso 'sale' di potenziale (dal $-$ al $+$), la tensione è positiva; se 'scende' (dal $+$ al $-$), è negativa.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "KVL",
-      "segni",
-      "generatore",
-      "polo",
-      "direzione percorrenza"
-    ]
-  },
-  {
-    "id": "cir_148",
-    "domanda": "Se collegassi accidentalmente un voltmetro in serie al tuo circuito anziché in parallelo, cosa osserveresti?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Errore pratico",
-    "opzioni": [
-      "Il voltmetro funzionerebbe normalmente",
-      "La corrente del circuito crollerebbe quasi a zero e il voltmetro leggerebbe quasi tutta la tensione del generatore",
-      "Il voltmetro si brucerebbe immediotamente",
-      "Non succederebbe nulla di strano"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Un voltmetro ha una resistenza interna altissima ($M\\Omega$). In serie, agisce quasi come un interruttore aperto, limitando drasticamente la corrente. Poiché quasi tutta la tensione cade su di esso, segnerà il valore della $f.e.m.$ della batteria.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "voltmetro",
-      "serie",
-      "errore",
-      "resistenza alta",
-      "circuito aperto"
-    ]
-  },
-  {
-    "id": "cir_149",
-    "domanda": "Perché nella pratica, un condensatore reale non si comporta come ideale in frequenza molto bassa o molto alta?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Condensatore reale",
-    "opzioni": [
-      "Perché i condensatori ideali non esistono",
-      "Per la presenza di resistenze di perdita in parallelo (basse frequenze) e induttanze parassite in serie (alte frequenze)",
-      "Perché la capacità cambia con la frequenza",
-      "Perché il condensatore genera energia"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Un componente reale include effetti 'parassiti'. A basse frequenze, la resistenza d'isolamento del dielettrico permette piccole correnti di perdita. Ad alte frequenze, l'induttanza dei terminali ($L_{ESL}$) diventa rilevante e può portare il componente in risonanza.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "condensatore reale",
-      "perdite",
-      "resistenza dielettrico",
-      "induttanza parassita",
-      "frequenza"
-    ]
-  },
-  {
-    "id": "cir_150",
-    "domanda": "Quale affermazione è corretta riguardante il principio di sovrapposizione in circuiti lineari?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Sovrapposizione applicazione",
-    "opzioni": [
-      "Funziona solo per circuiti in serie",
-      "Permette di calcolare la risposta totale sommando le risposte dovute a ciascuna sorgente indipendente considerata singolarmente",
-      "Implica che la corrente totale è sempre il doppio della corrente con una sorgente",
-      "Non è utile nella pratica"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "In una rete lineare con più generatori, la corrente in un ramo (o la tensione tra due nodi) è la somma algebrica degli effetti prodotti da ogni generatore singolarmente, con gli altri 'spenti' (tensioni cortocircuitate, correnti aperte).",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "sovrapposizione",
-      "linearità",
-      "sorgenti indipendenti",
-      "superposizione"
-    ]
-  },
-  {
-    "id": "cir_151",
-    "domanda": "Se un circuito ha una resistenza molto grande, come influisce sulla corrente circolante a parità di tensione?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Effetto resistenza su corrente",
-    "opzioni": [
-      "La corrente aumenta",
-      "La corrente diminuisce molto, tendendo a zero",
-      "La corrente rimane costante",
-      "La corrente diventa negativa"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Dalla relazione $I = \frac{V}{R}$, si evince che corrente e resistenza sono inversamente proporzionali. Un'alta resistenza ostacola il flusso di cariche, riducendo l'intensità di corrente.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "resistenza grande",
-      "corrente piccola",
-      "I=V/R",
-      "ostacolo"
-    ]
-  },
-  {
-    "id": "cir_152",
-    "domanda": "Perché la corrente in un circuito in serie è la stessa in tutti i punti?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Proprietà serie - continuità",
-    "opzioni": [
-      "Perché le cariche vengono create e distrutte uniformemente",
-      "Per conservazione della carica: la corrente che entra in un componente deve uscire poiché non ci sono diramazioni",
-      "Perché la tensione deve essere uguale ovunque",
-      "Perché i resistori hanno tutti lo stesso valore"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Immaginando il circuito come un condotto d'acqua senza perdite, la quantità di liquido che passa in ogni sezione deve essere la stessa. Senza nodi (bivi), la carica non ha percorsi alternativi.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "serie",
-      "continuità corrente",
-      "conservazione carica",
-      "regime stazionario"
-    ]
-  },
-  {
-    "id": "cir_153",
-    "domanda": "Cosa succede alla tensione ai morsetti di un generatore reale quando aumenta la corrente assorbita?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Generatore reale - comportamento",
-    "opzioni": [
-      "Aumenta sempre",
-      "Diminuisce a causa della caduta di tensione sulla resistenza interna",
-      "Rimane costante",
-      "Diventa negativa"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Aumentando $I$, aumenta la quantità $V_{interna} = I \\cdot r$. Essendo $V_{morsetti} = f.e.m. - V_{interna}$, la tensione disponibile per l'esterno cala progressivamente.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "generatore reale",
-      "resistenza interna",   
-      "caduta tensione",
-      "V_morsetti",
-      "I·r"
-    ]
-  },
-  {
-    "id": "cir_154",
-    "domanda": "In un circuito AC con solo una resistenza, quale proprietà del segnale sinusoidale rimane invariata?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Resistore in AC",
-    "opzioni": [
-      "L'ampiezza cambia sempre",
-      "La frequenza rimane la stessa",
-      "La fase cambia di $90^\\circ$",
-      "Il segnale diventa rettangolare"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Un resistore è un componente lineare e non reattivo. Non introduce sfasamenti tra tensione e corrente (sono in fase) e non altera la frequenza del segnale d'ingresso.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "AC",
-      "resistore",
-      "sinusoide",
-      "frequenza",
-      "fase"
-    ]
-  },
-  {
-    "id": "cir_155",
-    "domanda": "Perché un induttore in regime DC stazionario si comporta come un cortocircuito?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Induttore in DC",
-    "opzioni": [
-      "Perché ha componenti che non offrono resistenza",
-      "Perché in DC la corrente è costante ($\\frac{dI}{dt} = 0$), e la tensione indotta $V = L \\cdot \\frac{dI}{dt}$ è nulla",  
-      "Perché l'induttanza è zero in DC",     
-      "Perché l'induttore genera energia"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "L'induttore si oppone alle variazioni di corrente. In DC stazionario la corrente non varia nel tempo, quindi non viene indotta alcuna forza elettromotrice contraria ($0 \text{ V}$ ai capi).",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "induttore",
-      "DC",
-      "regime stazionario",
-      "dI/dt",
-      "corto circuito"
-    ]
-  },
-  {
-    "id": "cir_156",
-    "domanda": "Quale principio fisico spiega perché un condensatore in regime DC stazionario si comporta come un circuito aperto?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Condensatore in DC",
-    "opzioni": [
-      "Perché il dielettrico blocca sempre la corrente",
-      "Perché il condensatore si carica finché la sua tensione eguaglia quella applicata, raggiungendo l'equilibrio",
-      "Perché il condensatore genera una controtensione infinita",
-      "Perché la capacità diventa zero"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Una volta che il condensatore ha accumulato la massima carica possibile per quella tensione ($Q = C \\cdot V$), il potenziale sulle armature bilancia quello del generatore e il flusso di cariche si interrompe.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "condensatore",
-      "DC",
-      "regime stazionario",
-      "equilibrio carica",
-      "circuito aperto"
-    ]
-  },
-  {
-    "id": "cir_157",
-    "domanda": "In un circuito RLC serie in risonanza, perché la tensione sul condensatore può essere molto più grande della tensione del generatore?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Sovra-tensione risonanza",
-    "opzioni": [
-      "Il condensatore crea energia",
-      "La corrente è massima; poiché $V_C = X_C \\cdot I$ e l'impedenza totale è piccola ($Z=R$), $V_C$ può superare $V_{gen}$ (fattore di merito $Q$)",
-      "La legge di Ohm non vale più",
-      "Tutte le tensioni devono essere uguali"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "In risonanza $X_L$ e $X_C$ si cancellano, lasciando scorrere una corrente elevata limitata solo da $R$. Questa corrente intensa, passando attraverso la reattanza del condensatore, genera una tensione elevata, proporzionale al fattore di merito $Q$.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "risonanza",
-      "RLC",
-      "sovra-tensione",
-      "fattore Q",
-      "amplificazione"
-    ]
-  },
-  {
-    "id": "cir_158",
-    "domanda": "Quale interpretazione fisica rappresenta meglio l'impedenza di un circuito AC?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Significato impedenza",
-    "opzioni": [
-      "È solo la somma di resistenza e reattanza",
-      "È l'opposizione totale che include sia la dissipazione energetica ($R$) che gli effetti di accumulo e rilascio di energia ($X$)",
-      "È una quantità senza significato fisico",
-      "È la potenza dissipata per unità di tensione"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "L'impedenza tiene conto di come i componenti resistivi 'bruciano' energia e di come i componenti reattivi 'immagazzinano' energia nei campi, causando anche sfasamenti temporali tra onda di tensione e di corrente.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "impedenza",
-      "AC",
-      "resistenza",
-      "reattanza",
-      "dissipazione",
-      "scalabilità"
-    ]
-  },
-  {
-    "id": "cir_159",
-    "domanda": "Perché il rifasamento (aggiungere condensatori) riduce la corrente di linea senza cambiare la potenza reale consumata?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Rifasamento",
-    "opzioni": [
-      "Perché i condensatori generano potenza",
-      "Perché i condensatori forniscono potenza reattiva che compensa quella degli induttori, riducendo la potenza apparente e la corrente totale",
-      "Perché i condensatori dissipano energia",
-      "Perché la tensione aumenta"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Molti motori sono induttivi e 'assorbono' potenza reattiva. I condensatori la 'forniscono' localmente. Così, la corrente reattiva non deve più viaggiare lungo le linee dalla centrale all'utente, riducendo il valore efficace della corrente totale.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "rifasamento",
-      "potenza reattiva",
-      "cos φ",
-      "capacitori",
-      "potenza apparente"
-    ]
-  },
-  {
-    "id": "cir_160",
-    "domanda": "In un trasformatore ideale, cosa significa che il rapporto di spire è $1:10$?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Trasformatore",
-    "opzioni": [
-      "La tensione di uscita è $10$ volte quella di ingresso, ma la corrente di uscita è $\frac{1}{10}$ di quella di ingresso",
-      "La potenza di ingresso è $10$ volte quella di uscita",
-      "Non c'è relazione tra ingresso e uscita",
-      "La resistenza aumenta di $10$ volte"
-    ],
-    "rispostaCorretta": 0,
-    "spiegazione": "Per la legge dell'induzione e la conservazione dell'energia ($P_1 = P_2$), se la tensione sale del fattore $k = \\frac{N_2}{N_1}$, la corrente deve scendere dello stesso fattore per mantenere costante il prodotto $V \\cdot I$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "trasformatore",
-      "rapporto spire",
-      "tensione amplificata",
-      "corrente ridotta",
-      "potenza conservata"
-    ]
-  },
-  {
-    "id": "cir_161",
-    "domanda": "Cosa rappresenta fisicamente il valore RMS (Root Mean Square) di una tensione sinusoidale?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Valore RMS significato",
-    "opzioni": [
-      "Il valore massimo del segnale",
-      "Il valore medio del segnale",
-      "Il valore equivalente in DC che dissiperebbe la stessa potenza medio in un resistore",
-      "Il valore alla frequenza di risonanza"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "Il valore RMS (o efficace) permette di confrontare segnali alternati e continui. Una tensione AC da $230 \\text{ V}_{RMS}$ scalda una resistenza esattamente quanto $230 \\text{ V}$ in DC. Per una sinusoide, $V_{RMS} = \\frac{V_{picco}}{\\sqrt{2}}$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "RMS",
-      "valore efficace",
-      "potenza medio",
-      "sinusoide",
-      "equivalente DC"
-    ]
-  },
-  {
-    "id": "cir_162",
-    "domanda": "In un circuito con batterie e resistenze in parallelo, perché tutte ricevono la stessa tensione?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Proprietà parallelo - tensione",
-    "opzioni": [
-      "Perché la corrente è uguale in tutti",
-      "Perché sono collegati tra gli stessi due nodi, condividendo la stessa differenza di potenziale",
-      "Perché le resistenze hanno lo stesso valore",
-      "Perché la corrente totale è zero"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La tensione è definita come differenza di potenziale tra due punti. Se più componenti sono 'attaccati' agli stessi due fili (nodi), la differenza di potenziale misurata ai loro capi deve essere identica.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "parallelo",
-      "tensione uguale",
-      "nodi",
-      "potenziale"
-    ]
-  },
-  {
-    "id": "cir_163",
-    "domanda": "In un circuito RC, dopo un tempo pari a $3\tau$, quale frazione del valore finale ha raggiunto la tensione sul condensatore?",
-    "categoria": "Circuiti",
-    "sottocategoria": "RC carica stima",
-    "opzioni": [
-      "Circa il $50\\%$ ",
-      "Circa il $63\\%$ ",
-      "Circa il $95\\%$ ",
-      "Circa il $100\\%$ "
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "L'equazione è $V(t) = V_{max}(1 - e^{-t/\\tau})$. Per $t = 3\\tau$, abbiamo $1 - e^{-3} \\approx 1 - 0.049 = 0.951$, ovvero circa il $95\\%$. Dopo $5\\tau$ si considera convenzionalmente la carica completa ($>99\\%$).",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "RC",
-      "carica",
-      "costante di tempo",
-      "stima percentuale",
-      "95%"
-    ]
-  },
-  {
-    "id": "cir_164",
-    "domanda": "Perché corrente e tensione sono in quadratura (sfasamento $90^\\circ$) in un condensatore ideale?", 
-    "categoria": "Circuiti",
-    "sottocategoria": "Sfasamento condensatore",
-    "opzioni": [
-      "Perché il condensatore dissipa energia",
-      "Perché la corrente è proporzionale a $\\frac{dV}{dt}$: il valore massimo di corrente si ha quando la tensione varia più velocemente (passaggio per lo zero)",
-      "Perché la tensione e la corrente hanno sempre la stessa fase",
-      "Perché l'impedenza è immaginaria pura"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La corrente è il flusso di cariche che 'vanno' a caricare le armature. Quando $V$ è massima, non sta cambiando e $I=0$. Quando $V$ attraversa lo zero, la sua pendenza è massima e la corrente è al picco. Matematicamente, la derivata di un seno è un coseno (sfasato di $90^\\circ$).",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "condensatore",
-      "sfasamento 90 gradi",
-      "corrente anticipata",
-      "derivata",
-      "sinusoide"
-    ]
-  },
-  {
-    "id": "cir_165",
-    "domanda": "Secondo la seconda legge di Ohm, se raddoppi la lunghezza di un filo mantenendone costante la sezione, come cambia la resistenza?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Resistenza filo properties",
-    "opzioni": [
-      "Si dimezza",
-      "Raddoppia",
-      "Rimane uguale",
-      "Quadruplica"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Dalla formula $R = \\rho \\cdot \\frac{L}{A}$, si vede che $R$ è direttamente proporzionale alla lunghezza $L$. Raddoppiando il percorso, gli elettroni incontrano il doppio degli ostacoli nel reticolo cristallino.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "resistenza filo",
-      "lunghezza",
-      "seconda legge Ohm",
-      "R=ρL/A"
-    ]
-  },
-  {
-    "id": "cir_166",
-    "domanda": "Perché un circuito RC in carica raggiunge asintoticamente il valore finale?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Carica graduale transitorio",
-    "opzioni": [
-      "Perché la batteria si scarica",
-      "Perché la corrente di carica è proporzionale alla differenza di tensione, che diminuisce man mano che il condensatore si carica",
-      "Perché il condensatore assorbe la carica in modo istantaneo",
-      "Perché la resistenza diventa zero"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La 'spinta' (differenza di potenziale) che fa muovere le cariche è $V_{gen} - V_C$. Man mano che $V_C$ aumenta, questa spinta diminuisce, la corrente cala e l'accumulo di ulteriore carica diventa sempre più lento.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "RC",
-      "carica",
-      "asintoto",
-      "esponenziale",
-      "corrente diminuisce"
-    ]
-  },
-  {
-    "id": "cir_167",
-    "domanda": "Se in un circuito DC la resistenza totale è troppo bassa (vicino a cortocircuito), quale pericolo corre il generatore?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Protezione circuito",
-    "opzioni": [
-      "Nessun pericolo, il generatore ideale fornisce potenza illimitata",
-      "La corrente diventa molto grande, causando il surriscaldamento della resistenza interna e danni strutturali",
-      "La tensione aumenta indefinitamente",
-      "Il circuito si spegne da solo"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "In cortocircuito l'energia viene dissipata quasi interamente dentro la batteria ($P = I^2 r$). L'eccessivo calore può far bollire gli elettroliti, sciogliere i contatti o causare esplosioni/incendi.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "cortocircuito",
-      "alta corrente",
-      "dissipazione interna",
-      "surriscaldamento",
-      "protezione"
-    ]
-  },
-  {
-    "id": "cir_168",
-    "domanda": "In un circuito AC, qual è il legame concettuale tra valore RMS e potenza medio dissipata?",
-    "categoria": "Circuiti",
-    "sottocategoria": "RMS e potenza medio",
-    "opzioni": [
-      "Non c'è legame diretto",
-      "La potenza medio su un carico resistivo è $P = V_{RMS} \\cdot I_{RMS}$, proprio come in DC",
-      "RMS è solo una medio geometrica",
-      "La potenza medio è sempre il massimo"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "I valori RMS sono stati definiti appositamente per poter utilizzare le formule della potenza DC ($P = V \\cdot I$) anche in AC sinusoidale, senza dover integrare ogni volta le funzioni trigonometriche nel tempo.",
-    "difficolta": "difficile",
-    "paroleChiave": [
-      "RMS",
-      "potenza medio",
-      "AC",
-      "fattore potenza",
-      "formula"
-    ]
-  },
-  {
-    "id": "cir_169",
-    "domanda": "In un condensatore, se aumenti la distanza tra le armature mantenendo costante la carica $Q$, come varia l'energia immagazzinata?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Condensatore energia dipendenze",
-    "opzioni": [
-      "Diminuisce",
-      "Aumenta",
-      "Rimane uguale",
-      "Diventa negativa"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Se la distanza $d$ aumenta, la capacità $C = \\epsilon \\cdot \\frac{A}{d}$ diminuisce. L'energia è $U = \\frac{Q^2}{2C}$. Poiché $C$ è al denominatore, se $C$ cala, $U$ aumenta. Il lavoro fatto per allontanare le armature (che si attraggono) si trasforma in energia del campo elettrico.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "condensatore",
-      "energia",
-      "distanza armature",
-      "capacità",
-      "carica costante"
-    ]
-  },
-  {
-    "id": "cir_170",
-    "domanda": "Perché in un circuito RC in scarica, il tempo per scaricarsi completamente è teoricamente infinito?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Scarica infinita",
-    "opzioni": [
-      "Perché la resistenza diventa infinita",
-      "Perché segue una funzione esponenziale $e^{-t/\tau}$ che tende a zero asintoticamente senza mai raggiungerlo",
-      "Perché il condensatore non si scarica mai",
-      "Perché la carica è infinita"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La velocità di scarica dipende dalla carica residua: meno carica c'è, meno corrente scorre, rendendo lo svuotamento finale sempre più lento. In pratica si considera scarico dopo $5\tau$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "RC",
-      "scarica",
-      "esponenziale",
-      "asintoto",
-      "tempo infinito"
-    ]
-  },
-  {
-    "id": "cir_171",
-    "domanda": "Come differisce un elemento reattivo da una resistenza in termini di energia?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Differenza energetica",
-    "opzioni": [
-      "Tutti e tre dissipano energia in calore allo stesso modo",
-      "La resistenza dissipa energia irreversibilmente; i reattivi la scambiano senza consumarla in medio",
-      "I reattivi dissipano più energia",
-      "La resistenza accumula energia"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La resistenza 'consuma' energia togliendola dal circuito (calore). Induttori e condensatori agiscono come 'serbatoi' temporanei che restituiscono l'energia al generatore in ogni ciclo di alternata.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "reattivo",
-      "resistenza",
-      "dissipazione",
-      "accumulo energia",
-      "reversibile"
-    ]
-  },
-  {
-    "id": "cir_172",
-    "domanda": "In una serie di tre resistori identici ($R$) alimentati con tensione $V$, quanta tensione cade sulla prima resistenza?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Partitore tensione serie",
-    "opzioni": [
-      "$\frac{1}{3}$ di $V$",
-      "$\frac{1}{9}$ di $V$",
-      "$\frac{2}{3}$ di $V$",
-      "V intera"
-    ],
-    "rispostaCorretta": 0,
-    "spiegazione": "Poiché i resistori sono uguali, l'ostacolo è diviso equamente. Per la legge di Kirchhoff, la somma delle cadute deve fare $V$. Quindi ogni resistore preleva $V_R = \frac{V}{3}$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "serie",
-      "partitore",
-      "tensione divisa",
-      "resistori identici"
-    ]
-  },
-  {
-    "id": "cir_173",
-    "domanda": "Quale differenza fondamentale esiste tra un condensatore in AC e in DC?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Condensatore AC vs DC",
-    "opzioni": [
-      "Non c'è differenza",
-      "In DC agisce come interruttore aperto; in AC permette il passaggio di corrente 'apparente' grazie ai continui cicli di carica/scarica",
-      "In AC la corrente è sempre zero",
-      "In DC circola sempre corrente infinita"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "In DC, una volta carico, le cariche si fermano. In AC, poiché la polarità cambia continuamente (es. $50 \text{ Hz}$), le cariche entrano ed escono continuamente dai fili per spostarsi tra le armature, creando una corrente misurabile.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "condensatore",
-      "DC",
-      "AC",
-      "corrente zero",
-      "corrente oscillante"
-    ]
-  },
-  {
-    "id": "cir_174",
-    "domanda": "Quale formula esprime la relazione tra forza elettromotrice ($f.e.m.$), lavoro ($W$) e carica ($Q$)?",
-    "categoria": "Circuiti",
-    "sottocategoria": "F.e.m. definizione",
-    "opzioni": [
-      "$f.e.m. = Q \\cdot W$",
-      "$f.e.m. = \\frac{W}{Q}$",
-      "$f.e.m. = \\frac{Q}{W}$",
-      "$f.e.m. = W + Q$"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "La $f.e.m.$ è il lavoro speso dal generatore per spostare una carica unitaria lungo il circuito. Si misura in Volt ($1 \text{ V} = 1 \text{ J} / 1 \text{ C}$).",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "f.e.m.",
-      "forza elettromotrice",
-      "lavoro",
-      "carica",
-      "W/Q"
-    ]
-  },
-  {
-    "id": "cir_175",
-    "domanda": "Quale condizione rende un generatore 'reale' diverso da uno 'ideale'?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Generatore reale proprietà",
-    "opzioni": [
-      "Has sempre tensione maggiore",
-      "Ha una resistenza interna $r$ non nulla che causa una caduta di tensione $V_r = I \\cdot r$",
-      "Genera meno carica",
-      "Non fornisce corrente"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Un generatore ideale mantiene $V$ costante. Quello reale perde parte della tensione internamente a causa degli urti microscopici nei materiali conduttori e chimici della batteria stessa.",
-    "difficolta": "facile",
-    "paroleChiave": [
-      "generatore reale",
-      "resistenza interna",
-      "caduta tensione",
-      "f.e.m"
-    ]
-  },
-  {
-    "id": "cir_176",
-    "domanda": "In un circuito AC, come si può aumentare la corrente attraverso un condensatore?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Condensatore AC frequenza",
-    "opzioni": [
-      "Diminuire la capacità",
-      "Aumentare la reattanza capacitiva $X_C$",
-      "Aumentare la frequenza (riducendo $X_C = \\frac{1}{\\omega C}$)",
-      "Nessuno dei precedenti"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "La reattanza capacitiva è l'ostacolo del condensatore in AC. Poiché $X_C = \\frac{1}{2\\pi f C}$, aumentando la frequenza $f$, l'ostacolo diminuisce e la corrente cresce a parità di tensione.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "condensatore",
-      "AC",
-      "reattanza capacitiva",
-      "frequenza",
-      "Xc"
-    ]
-  },
-  {
-    "id": "cir_177",
-    "domanda": "Quale affermazione descrive meglio la 'fase' tra tensione e corrente in AC?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Concetto fase",
-    "opzioni": [
-      "La fase è sempre zero",
-      "È il ritardo o anticipo temporale di un'onda rispetto all'altra, misurato in gradi o radianti",
-      "La fase è la frequenza divisa per la tensione",
-      "La fase non ha significato"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Rappresenta lo sfasamento tra i picchi delle due onde sinusoidali. In una resistenza è $0^\\circ$, in un induttore puro la tensione anticipa di $90^\\circ$, in un condensatore ritarda di $90^\\circ$.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "fase",
-      "AC",
-      "ritardo",
-      "anticipo",
-      "sinusoide"
-    ]
-  },
-  {
-    "id": "cir_178",
-    "domanda": "In un circuito RLC serie in risonanza, qual è la relazione tra $V_C$ e $V_L$?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Risonanza RLC serie proprietà",
-    "opzioni": [
-      "$V_C > V_L$ sempre",
-      "$V_C = V_L$ (le reattanze si eguagliano)",
-      "$V_C + V_L = 0$ (vettorialmente si annullano)",
-      "$V_C < V_L$ sempre"
-    ],
-    "rispostaCorretta": 2,
-    "spiegazione": "Vettorialmente, le tensioni su $L$ e $C$ sono sfasate di $180^\\circ$ tra loro. Poiché in risonanza i loro moduli sono identici ($I \\cdot X_L = I \\cdot X_C$), la loro somma algebrica istantanea è zero, lasciando tutta la tensione del generatore sulla resistenza.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "RLC serie",
-      "risonanza",
-      "condensatore",
-      "induttore",
-      "tensioni opposte"
-    ]
-  },
-  {
-    "id": "cir_179",
-    "domanda": "Perché la resistenza diminuisce all'aumentare della sezione trasversale del filo?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Resistenza fili",
-    "opzioni": [
-      "Non c'è motivo fisico",
-      "Perché una sezione maggiore offre più 'spazio' o percorsi paralleli al passaggio degli elettroni",
-      "Perché la corrente aumenta",
-      "Perché il materiale cambia"
-    ],
-    "rispostaCorretta": 1,
-    "spiegazione": "Si può immaginare come un'autostrada: più corsie ci sono (sezione), più veicoli (cariche) possono transitare contemporaneamente con meno intoppi, riducendo la resistenza globale del conduttore.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "resistenza filo",
-      "lunghezza",
-      "sezione",
-      "resistività",
-      "R=ρL/A"
-    ]
-  },
-  {
-    "id": "cir_180",
-    "domanda": "In un circuito AC con resistenza, qual è la caratteristica della potenza istantanea $P(t)$?",
-    "categoria": "Circuiti",
-    "sottocategoria": "Potenza medio AC",
-    "opzioni": [
-      "La potenza è sempre positiva (unidirezionale)",
-      "La potenza è sempre negativa",
-      "La potenza è in fase con la corrente",
-      "La potenza è in anticipo di $90^\\circ$"
-    ],
-    "rispostaCorretta": 0,
-    "spiegazione": "In una resistenza $P = V \\cdot I$. Poiché $V$ e $I$ cambiano segno insieme, il loro prodotto è sempre positivo. Ciò significa che l'energia fluisce sempre dal generatore verso la resistenza, dove viene trasformata irreversibilmente in calore.",
-    "difficolta": "medio",
-    "paroleChiave": [
-      "potenza medio",
-      "AC",
-      "resistore",
-      "dissipazione",
-      "I^2R"
-    ]
-  }
+      "id": "cir_121",
+      "domanda": "Perché la resistenza interna di una batteria reale causa una riduzione della tensione ai morsetti quando il circuito è sotto carico?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Batteria reale - concetto",
+      "opzioni": [
+        "Perché la batteria genera meno tensione quando viene usata",
+        "Perché la corrente che circola provoca una caduta di tensione sulla resistenza interna",
+        "Perché gli elettroni si fermano all'interno della batteria",
+        "Perché la resistenza esterna non riceve tutta la tensione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una batteria reale ha una resistenza interna $r$. La corrente $I$ che circola causa una caduta $V_r = I \\cdot r$ ai morsetti della batteria stessa. La tensione disponibile al carico è ridotta di questa quantità: $V_{carico} = f.e.m. - I \\cdot r$.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "batteria reale",
+        "resistenza interna",
+        "caduta tensione",
+        "morsetti"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_122",
+      "domanda": "Quale differenza concettuale fondamentale esiste tra uno schema con resistori in serie e uno con resistori in parallelo, dal punto di vista del percorso della corrente?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Concetto serie vs parallelo",
+      "opzioni": [
+        "In serie la corrente ha un solo percorso, in parallelo ha più percorsi alternativi",
+        "In serie la tensione è divisa, in parallelo la corrente è divisa",
+        "In parallelo c'è sempre più corrente che in serie",
+        "Non c'è differenza fondamentale nel comportamento della corrente"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Il concetto chiave è il percorso della corrente. In serie c'è un unico percorso; in parallelo la corrente può dividersi in più rami alternativi. Questo spiega perché in serie la corrente è uguale ovunque, mentre in parallelo può essere diversa nei diversi rami.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "serie",
+        "parallelo",
+        "percorso corrente",
+        "concetto"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_123",
+      "domanda": "Perché mettendo resistori in serie la resistenza equivalente aumenta, mentre mettendo resistori in parallelo diminuisce? Spiega il ragionamento fisico.",
+      "categoria": "Circuiti",
+      "sottocategoria": "Ragionamento serie-parallelo",
+      "opzioni": [
+        "In serie si bloccano più i portatori di carica; in parallelo ci sono più 'scorciatoie' per la corrente",
+        "In parallelo i resistori si annullano a vicenda",
+        "Dipende solo dal valore numerico dei resistori",
+        "In parallelo la tensione è più bassa, quindi la resistenza diminuisce"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In serie, i resistori si oppongono uno dopo l'altro al passaggio della corrente, aumentando l'ostacolo totale ($R_{eq} = R_1 + R_2 + \\dots$). In parallelo, la corrente può scegliere il percorso più facile e dividersi tra i rami: questo riduce la resistenza totale vista dal generatore (più 'strade' disponibili).",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "serie",
+        "parallelo",
+        "resistenza equivalente",
+        "ostacolo corrente",
+        "ragionamento"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_124",
+      "domanda": "In un circuito, quale osservazione aiuta a riconoscere se un voltmetro è stato collegato correttamente (in parallelo) anziché sconnesso?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Ragionamento misura",
+      "opzioni": [
+        "Un voltmetro correttamente collegato riduce la corrente totale del circuito se ha resistenza finita",
+        "Un voltmetro non influenza mai il circuito",
+        "Un voltmetro toglie carica dal circuito gradualmente",
+        "Un voltmetro fa sempre aumentare la tensione"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Un voltmetro in parallelo assorbe una piccola corrente a causa della sua resistenza interna molto alta. Idealmente non dovrebbe influenzare il circuito, ma in realtà riduce leggermente la resistenza equivalente vista dai nodi, alterando di poco la corrente totale.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "voltmetro",
+        "parallelo",
+        "resistenza interna alta",
+        "osservazione",
+        "ragionamento"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_125",
+      "domanda": "Perché è importante che un amperometro abbia una resistenza interna molto piccola?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Amperometro - ragionamento",
+      "opzioni": [
+        "Per non alterare la corrente che misura con una caduta di tensione significativa",
+        "Per evitare che si bruci",
+        "Perché così misura valori più alti",
+        "Per stare in parallelo con il circuito"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "L'amperometro è messo in serie. Se avesse resistenza alta, creerebbe una caduta di tensione che altererebbe significativamente la corrente del circuito. Con resistenza trascurabile, la caduta è negligibile e la misura è rappresentativa della corrente reale.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "amperometro",
+        "serie",
+        "resistenza interna",
+        "non alterare",
+        "ragionamento"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_126",
+      "domanda": "Cosa significa fisicamente che la potenza dissipata su un resistore è proporzionale al quadrato della corrente ($P = I^2 R$)?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Interpretazione potenza",
+      "opzioni": [
+        "Se raddoppio la corrente, la potenza raddoppia",
+        "Se raddoppio la corrente, la potenza quadruplica perché gli effetti termici aumentano molto velocemente",
+        "Se raddoppio la corrente, la potenza rimane uguale",
+        "La potenza è indipendente dalla corrente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La dipendenza da $I^2$ significa che piccoli aumenti di corrente causano grandi aumenti di potenza dissipata. Per esempio, raddoppiando $I$, $P$ quadruplica ($2^2 = 4$). Questo spiega il rapido surriscaldamento dei componenti.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "potenza",
+        "I^2R",
+        "dipendenza quadratica",
+        "calore",
+        "interpretazione"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_127",
+      "domanda": "In una lampadina reale, quando aumenti la tensione fornisce più luce. Qual è il motivo fisico sottostante?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Applicazione concettuale",
+      "opzioni": [
+        "Aumenta la resistenza della lampadina",
+        "Aumenta la corrente, aumenta la potenza dissipata nel filamento, aumenta il calore e l'emissione luminosa",
+        "La resistenza diminuisce, quindi meno calore",
+        "Non c'è relazione tra tensione e luminosità"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Aumentando la tensione ai capi di una lampadina, per la legge di Ohm aumenta la corrente. Poiché $P = I^2 R$ (o $P = \\frac{V^2}{R}$), l'aumento di tensione produce un aumento della potenza, quindi più calore nel filamento e più luce.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "lampadina",
+        "tensione",
+        "corrente",
+        "potenza",
+        "luminosità",
+        "filamento"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_128",
+      "domanda": "Perché una batteria si scarica più velocemente se l'usiamo in un circuito ad alta corrente (bassa resistenza) rispetto a uno a bassa corrente (alta resistenza)?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Ragionamento scarica batteria",
+      "opzioni": [
+        "La batteria 'sa' se sta fornendo tanta o poca corrente e si scarica diversamente",
+        "A causa della resistenza interna della batteria: con alta corrente c'è maggior caduta ai morsetti e più energia dispersa internamente",
+        "Perché i circuiti ad alta corrente sono più efficienti",
+        "Le batterie non hanno resistenza interna"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una batteria ha una resistenza interna $r$. Parte dell'energia è dissipata come calore in $r$ stessa. A corrente elevata, la potenza persa internamente ($P = I^2 r$) è maggiore, riducendo l'efficienza e accelerando il consumo dei reagenti chimici.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "batteria",
+        "scarica",
+        "resistenza interna",
+        "alta corrente",
+        "perdite",
+        "ragionamento"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_129",
+      "domanda": "Cosa rappresenta fisicamente la 'costante di tempo' $\\tau$ in un circuito RC?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Significato tau RC",
+      "opzioni": [
+        "Il momento esatto in cui il condensatore è completamente carico",
+        "Un tempo caratteristico che indica la 'velocità' dei processi transitori: dopo $\\tau$ il condensatore raggiunge $\\approx 63\\%$ del valore finale",
+        "La resistenza totale divisa per la capacità",
+        "L'intervallo di tempo dopo il quale il circuito non funziona più"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "$\\tau = R \\cdot C$ è una scala temporale. Rappresenta quanto velocemente cambiano le grandezze. Dopo un tempo $\\tau$, in fase di carica la tensione raggiunge circa il $63\\%$ del valore finale, mentre in scarica scende al $37\\\\%$.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "RC",
+        "costante di tempo",
+        "tau",
+        "scala temporale",
+        "transitorio",
+        "significato"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_130",
+      "domanda": "In un circuito RC, perché la corrente iniziale è massima (al momento dell'accensione) e poi diminuisce gradualmente durante la carica?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Transitorio RC - ragionamento",
+      "opzioni": [
+        "Perché la resistenza in serie sta aumentando",
+        "Perché il condensatore caricandosi accumula carica, sviluppa una controtensione che si oppone alla tensione applicata, riducendo la corrente netta",
+        "Perché la batteria si sta scaricando",
+        "Perché la temperatura del circuito aumenta gradualmente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "All'inizio il condensatore è scarico ($V_C = 0$), quindi la tensione sulla resistenza è massima ($V_R = V_{gen}$) e $I_{max} = \\frac{V_{gen}}{R}$. Caricandosi, $V_C$ aumenta e la tensione residua su $R$ diminuisce, riducendo la corrente fino a zero.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "RC",
+        "carica",
+        "corrente massima",
+        "controtensione",
+        "transitorio",
+        "ragionamento"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_131",
+      "domanda": "Quale legge o principio consente di affermare che in un nodo la somma delle correnti entranti eguaglia la somma di quelle uscenti?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Fondamenti KCL",
+      "opzioni": [
+        "La legge dell'attrazione gravitazionale",
+        "La conservazione della carica: i portatori di carica non scompaiono in un nodo",
+        "La legge di Ohm",
+        "Il principio di energia"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La legge di Kirchhoff delle correnti (KCL) deriva dalla conservazione della carica. In regime stazionario, la carica non può accumularsi nel nodo: tanta carica entra, tanta deve uscire nell'unità di tempo.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "KCL",
+        "nodo",
+        "conservazione carica",
+        "fondamenti"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_132",
+      "domanda": "Perché la legge delle maglie (KVL: somma delle tensioni attorno a una maglia $= 0$) è una conseguenza della conservazione dell'energia?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Fondamenti KVL",
+      "opzioni": [
+        "Perché la tensione è sempre positiva",
+        "Quando un portatore di carica percorre una maglia chiusa, guadagna e perde energia in modo da tornare al punto di partenza con la stessa energia: l'energia netta è zero",
+        "Perché il generatore fornisce sempre la stessa tensione",
+        "Perché la resistenza è costante"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Compiendo un percorso chiuso, il lavoro totale svolto dal campo elettrostatico su una carica deve essere nullo (il potenziale è una funzione di stato). Ciò implica che la somma algebrica delle differenze di potenziale sia $\\sum V = 0$.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "KVL",
+        "maglia",
+        "conservazione energia",
+        "fondamenti",
+        "ragionamento"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_133",
+      "domanda": "Cos'è il 'regime stazionario' in DC e perché è utile per semplificare l'analisi di circuiti con condensatori?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Regime stazionario",
+      "opzioni": [
+        "È quando tutte le grandezze cambiano costantemente nel tempo",
+        "È quando tutte le grandezze (correnti, tensioni) non cambiano più nel tempo: i componenti sono carichi e i transitori sono terminati",
+        "È quando il circuito non funziona",
+        "È quando la resistenza diventa zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In regime stazionario DC i transitori si sono estinti. I condensatori sono carichi e agiscono come circuiti aperti ($I = 0$), mentre gli induttori agiscono come cortocircuiti ($V = 0$), semplificando drasticamente i calcoli.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "regime stazionario",
+        "DC",
+        "transitorio",
+        "condensatore",
+        "circuito aperto",
+        "semplificazione"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_134",
+      "domanda": "Se collegassi due batterie in serie con polarità opposte (una al contrario dell'altra), cosa accadrebbe al circuito e perché?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Ragionamento collegamento batterie",
+      "opzioni": [
+        "Le tensioni si sommano e il circuito funziona normalmente",
+        "Le tensioni si sottraggono: la tensione netta è la differenza tra le f.e.m. La polarità netta è quella della batteria con f.e.m. maggiore",
+        "Nulla accade, le batterie si annullano completamente",
+        "Le correnti si bloccano e il circuito non funziona"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Le forze elettromotrici si sottraggono algebricamente. La tensione risultante è $|f.e.m._1 - f.e.m._2|$. Se sono identiche, la tensione totale è $0 \\text{ V}$ e non circola corrente.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "batterie",
+        "serie",
+        "polarità opposte",
+        "sottrazione",
+        "f.e.m.",
+        "ragionamento"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_135",
+      "domanda": "Perché in un circuito con lampadine in serie, se una si brucia tutto il resto si spegne, mentre in un circuito in parallelo il resto rimane acceso?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Interpretazione serie vs parallelo",
+      "opzioni": [
+        "Perché in parallelo non circola corrente",
+        "In serie, un'interruzione in un punto interrompe il percorso unico della corrente in tutto il circuito; in parallelo, il guasto di un ramo non interrompe gli altri rami",
+        "Perché in parallelo le lampadine sono più forti",
+        "Non c'è nessuna differenza, sono solo costruzioni diverse"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In serie c'è un solo cammino per le cariche. Se il filamento di una lampadina si rompe, il circuito diventa 'aperto' e la corrente cessa. In parallelo ogni ramo è indipendente e collegato direttamente al generatore.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "serie",
+        "parallelo",
+        "interruzione",
+        "percorsi",
+        "guasto",
+        "interpretazione"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_136",
+      "domanda": "In un circuito, quale principio fisico spiega il fatto che i resistori dissipano energia sotto forma di calore anziché dare energia al circuito?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Ragionamento dissipazione",
+      "opzioni": [
+        "Perché i resistori accumulano carica",
+        "Perché gli urti degli elettroni con gli atomi del materiale convertono l'energia cinetica ordinata in energia termica disordinata (effetto Joule)",
+        "Perché i resistori hanno una memoria energetica",
+        "Perché la resistenza cancella l'energia dal circuito"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'effetto Joule è dovuto alle collisioni microscopiche tra portatori di carica e reticolo atomico. L'energia potenziale elettrica si trasforma in energia cinetica e poi, tramite urti, in calore (vibrazioni atomiche).",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "dissipazione",
+        "calore",
+        "resistore",
+        "effetto Joule",
+        "entropia",
+        "ragionamento"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_137",
+      "domanda": "Quale osservazione sperimentale mostra che la tensione e la corrente in un resistore ohmico sono proporzionali (legge di Ohm)?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Origine empirica legge Ohm",
+      "opzioni": [
+        "Se misuri V e I per diversi resistori, il rapporto V/I è sempre costante",
+        "Se V aumenta, I diminuisce sempre",
+        "La potenza dissipata è sempre uguale",
+        "La temperatura del resistore non cambia"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "La legge di Ohm ($V = R \\cdot I$) è una relazione empirica. Sperimentalmente si osserva che, per molti materiali (conduttori ohmici), il grafico tensione-corrente è una retta passante per l'origine, il cui coefficiente angolare è $R = \\frac{V}{I}$.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "legge di ohm",
+        "empirica",
+        "V/I",
+        "costante",
+        "resistore ohmico",
+        "osservazione"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_138",
+      "domanda": "Perché una batteria reale non può fornire una corrente arbitrariamente grande, anche se la resistenza esterna tende a zero?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Limite corrente batteria",
+      "opzioni": [
+        "Perché il generatore ideale fornisce tensione infinita",
+        "Perché anche se la resistenza esterna va a zero, rimane la resistenza interna della batteria che limita la corrente massima",
+        "Perché le leggi di Kirchhoff proibiscono correnti molto alte",
+        "Perché la carica della batteria è finita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In caso di cortocircuito ($R_{ext} \\to 0$), la corrente è limitata dalla resistenza interna $r$: $I_{max} = \\frac{f.e.m.}{r}$. Questo valore è finito e rappresenta il limite fisico del generatore.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "batteria reale",
+        "resistenza interna",
+        "corrente massima",
+        "cortocircuito",
+        "limite"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_139",
+      "domanda": "Qual è il vantaggio di usare un partitore di tensione per ottenere una tensione inferiore rispetto al semplice usare una resistenza più grande in serie al carico?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Partitore di tensione - ragionamento",
+      "opzioni": [
+        "Non ci sono vantaggi, sono equivalenti",
+        "Il partitore è preferibile perché fornisce una tensione più stabile al carico quando varia la corrente assorbita",
+        "Perché il partitore non consuma energia",
+        "Perché il partitore genera tensione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In un partitore, la tensione d'uscita è fissata dal rapporto tra due resistenze. Se il carico ha un'alta impedenza rispetto alle resistenze del partitore, la tensione rimane stabile. Una singola resistenza in serie causerebbe una caduta variabile in base alla corrente del carico.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "partitore",
+        "tensione",
+        "stabilità",
+        "carico variabile",
+        "ragionamento"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_140",
+      "domanda": "In un circuito RLC in corrente alternata, cosa succede quando la frequenza raggiunge esattamente la frequenza di risonanza?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Risonanza interpretazione",
+      "opzioni": [
+        "La corrente diventa zero",
+        "L'impedenza è minima (solo resistiva) e la corrente è massima per quella tensione applicata",
+        "La tensione sul resistore svanisce",
+        "Il circuito si comporta come un circuito aperto"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Alla risonanza, la reattanza induttiva $\\omega L$ e quella capacitiva $\\frac{1}{\\omega C}$ si eguagliano e si annullano a vicenda ($X_L - X_C = 0$). L'impedenza $Z$ diventa pari alla sola resistenza $R$, permettendo alla corrente di raggiungere il picco massimo.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "RLC",
+        "AC",
+        "risonanza",
+        "impedenza minima",
+        "corrente massima",
+        "interpretazione"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_141",
+      "domanda": "Come mai la potenza medio dissipata in un circuito AC con carico puramente reattivo (solo condensatore o solo induttore) è zero?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Potenza reattiva",
+      "opzioni": [
+        "Perché non circola corrente",
+        "Perché gli elementi reattivi accumulano e restituiscono l'energia nel ciclo, senza dissipazione netta",
+        "Perché la tensione è sempre nulla",
+        "Perché la potenza non esiste in AC"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In carichi puramente reattivi lo sfasamento tra $V$ e $I$ è di $90^\\circ$ ($\\cos \\phi = 0$). L'energia fluisce dal generatore al componente e viceversa; la potenza istantanea oscilla ma il valore medio su un periodo è nullo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "AC",
+        "potenza reattiva",
+        "condensatore",
+        "induttore",
+        "sfasamento 90 gradi",
+        "medio zero"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_142",
+      "domanda": "Quale affermazione descrive meglio il concetto di 'impedenza' in corrente alternata?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Impedenza concetto",
+      "opzioni": [
+        "È la stessa cosa della resistenza, solo con un altro nome",
+        "È una generalizzazione della resistenza che include anche gli effetti reattivi: $Z = \\sqrt{R^2 + (X_L - X_C)^2}$",
+        "È la velocità della corrente alternata",
+        "È la potenza dissipata dal circuito"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'impedenza $Z$ estende il concetto di resistenza considerando sia l'opposizione dissipativa ($R$) sia quella legata ai campi elettrici e magnetici (reattanze $X$). Si misura in Ohm e lega i valori efficaci di tensione e corrente: $V = Z \\cdot I$.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "impedenza",
+        "AC",
+        "reattanza",
+        "resistenza",
+        "generalizzazione",
+        "concetto"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_143",
+      "domanda": "Perché il fattore di potenza ($\\cos \\phi$) è importante per gli impianti elettrici industriali?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Fattore di potenza - significato",
+      "opzioni": [
+        "Perché determina il colore della luce",
+        "Perché un basso fattore di potenza significa che gran parte della corrente non fornisce potenza utile, sovraccaricando le linee",
+        "Perché la potenza apparente deve essere calcolata diversamente",
+        "Perché il costo dell'elettricità è proporzionale alla frequenza"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il fattore di potenza indica l'efficienza: $\\cos \\phi = \\frac{P_{attiva}}{P_{apparente}}$. Se è basso, circola molta corrente 'reattiva' che non compie lavoro ma scalda i cavi e richiede trasformatori più grandi. Le aziende rifasano per ridurre queste perdite.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "fattore di potenza",
+        "cos phi",
+        "potenza reale",
+        "potenza apparente",
+        "rifasamento",
+        "significato"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_144",
+      "domanda": "In un circuito RC in carica, dopo molto tempo ($t \\gg \\tau$), quale affermazione è vera sul condensatore?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Regime stazionario RC",
+      "opzioni": [
+        "Il condensatore continua a ricevere corrente costantemente",
+        "Il condensatore è carico e non passa più corrente: agisce come circuito aperto",
+        "Il condensatore si sta scaricando",
+        "La tensione sul condensatore decresce esponenzialmente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Quando $V_C$ raggiunge $V_{gen}$, non c'è più differenza di potenziale sulla resistenza ($V_R = 0$). Di conseguenza la corrente si annulla ($I = 0$) e il condensatore blocca il flusso in DC.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "RC",
+        "carica",
+        "regime stazionario",
+        "circuito aperto",
+        "corrente nulla"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_145",
+      "domanda": "Se l'illuminazione della tua casa è in parallelo, quale vantaggio pratico offre rispetto a una configurazione in serie?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Applicazione pratica parallelo",
+      "opzioni": [
+        "Usa meno energia in totale",
+        "Ciascuna lampadina riceve sempre la tensione di linea e può essere accesa/spenta indipendentemente",
+        "Le lampadine durano più a lungo",
+        "La corrente totale è minore"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In parallelo tutti i dispositivi ricevono i $230 \text{ V}$ nominali. Inoltre, lo spegnimento o il guasto di un apparecchio non interrompe il circuito per gli altri, garantendo continuità di servizio.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "parallelo",
+        "illuminazione",
+        "applicatione pratica",
+        "interruttore",
+        "tensione costante"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_146",
+      "domanda": "Spiega perché la potenza totale dissipata nei resistori eguaglia la potenza fornita da un generatore.",
+      "categoria": "Circuiti",
+      "sottocategoria": "Bilancio energetico",
+      "opzioni": [
+        "Perché l'energy scompare in nulla",
+        "Per conservazione dell'energia: la potenza $P = V \\cdot I$ fornita deve essere dissipata dai componenti resistivi in calore",
+        "Perché i resistori creano energia",
+        "Perché la tensione e la corrente si annullano"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'energia non si crea né si distrugge. In un circuito puramente resistivo stazionario, tutta l'energia elettrica prodotta dal generatore viene convertita in energia termica nei resistori.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "conservazione energia",
+        "potenza",
+        "bilancio",
+        "generatore",
+        "resistori",
+        "dissipazione"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_147",
+      "domanda": "In un circuito dove applichi KVL attorno a una maglia, quale attenzione devi avere nel segno della tensione attorno a un generatore?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Segni KVL",
+      "opzioni": [
+        "Il segno è sempre positivo",
+        "Dipende dal verso di percorrenza: se entri dal polo negativo ed esci dal positivo, il contributo è $+f.e.m.$",
+        "Il segno dei generatori non importa in KVL",
+        "Tutti i generatori hanno sempre lo stesso segno in una maglia"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Il segno dipende dalla convenzione e dal verso scelto per la maglia. Se il verso 'sale' di potenziale (dal $-$ al $+$), la tensione è positiva; se 'scende' (dal $+$ al $-$), è negativa.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "KVL",
+        "segni",
+        "generatore",
+        "polo",
+        "direzione percorrenza"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_148",
+      "domanda": "Se collegassi accidentalmente un voltmetro in serie al tuo circuito anziché in parallelo, cosa osserveresti?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Errore pratico",
+      "opzioni": [
+        "Il voltmetro funzionerebbe normalmente",
+        "La corrente del circuito crollerebbe quasi a zero e il voltmetro leggerebbe quasi tutta la tensione del generatore",
+        "Il voltmetro si brucerebbe immediatamente",
+        "Non succederebbe nulla di strano"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un voltmetro ha una resistenza interna altissima ($M\\Omega$). In serie, agisce quasi come un interruttore aperto, limitando drasticamente la corrente. Poiché quasi tutta la tensione cade su di esso, segnerà il valore della $f.e.m.$ della batteria.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "voltmetro",
+        "serie",
+        "errore",
+        "resistenza alta",
+        "circuito aperto"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_149",
+      "domanda": "Perché nella pratica, un condensatore reale non si comporta come ideale in frequenza molto bassa o molto alta?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Condensatore reale",
+      "opzioni": [
+        "Perché i condensatori ideali non esistono",
+        "Per la presenza di resistenze di perdita in parallelo (basse frequenze) e induttanze parassite in serie (alte frequenze)",
+        "Perché la capacità cambia con la frequenza",
+        "Perché il condensatore genera energia"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un componente reale include effetti 'parassiti'. A basse frequenze, la resistenza d'isolamento del dielettrico permette piccole correnti di perdita. Ad alte frequenze, l'induttanza dei terminali ($L_{ESL}$) diventa rilevante e può portare il componente in risonanza.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "condensatore reale",
+        "perdite",
+        "resistenza dielettrico",
+        "induttanza parassita",
+        "frequenza"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_150",
+      "domanda": "Quale affermazione è corretta riguardante il principio di sovrapposizione in circuiti lineari?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Sovrapposizione applicazione",
+      "opzioni": [
+        "Funziona solo per circuiti in serie",
+        "Permette di calcolare la risposta totale sommando le risposte dovute a ciascuna sorgente indipendente considerata singolarmente",
+        "Implica che la corrente totale è sempre il doppio della corrente con una sorgente",
+        "Non è utile nella pratica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In una rete lineare con più generatori, la corrente in un ramo (o la tensione tra due nodi) è la somma algebrica degli effetti prodotti da ogni generatore singolarmente, con gli altri 'spenti' (tensioni cortocircuitate, correnti aperte).",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "sovrapposizione",
+        "linearità",
+        "sorgenti indipendenti",
+        "superposizione"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_151",
+      "domanda": "Se un circuito ha una resistenza molto grande, come influisce sulla corrente circolante a parità di tensione?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Effetto resistenza su corrente",
+      "opzioni": [
+        "La corrente aumenta",
+        "La corrente diminuisce molto, tendendo a zero",
+        "La corrente rimane costante",
+        "La corrente diventa negativa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Dalla relazione $I = \frac{V}{R}$, si evince che corrente e resistenza sono inversamente proporzionali. Un'alta resistenza ostacola il flusso di cariche, riducendo l'intensità di corrente.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "resistenza grande",
+        "corrente piccola",
+        "I=V/R",
+        "ostacolo"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_152",
+      "domanda": "Perché la corrente in un circuito in serie è la stessa in tutti i punti?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Proprietà serie - continuità",
+      "opzioni": [
+        "Perché le cariche vengono create e distrutte uniformemente",
+        "Per conservazione della carica: la corrente che entra in un componente deve uscire poiché non ci sono diramazioni",
+        "Perché la tensione deve essere uguale ovunque",
+        "Perché i resistori hanno tutti lo stesso valore"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Immaginando il circuito come un condotto d'acqua senza perdite, la quantità di liquido che passa in ogni sezione deve essere la stessa. Senza nodi (bivi), la carica non ha percorsi alternativi.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "serie",
+        "continuità corrente",
+        "conservazione carica",
+        "regime stazionario"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_153",
+      "domanda": "Cosa succede alla tensione ai morsetti di un generatore reale quando aumenta la corrente assorbita?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Generatore reale - comportamento",
+      "opzioni": [
+        "Aumenta sempre",
+        "Diminuisce a causa della caduta di tensione sulla resistenza interna",
+        "Rimane costante",
+        "Diventa negativa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Aumentando $I$, aumenta la quantità $V_{interna} = I \\cdot r$. Essendo $V_{morsetti} = f.e.m. - V_{interna}$, la tensione disponibile per l'esterno cala progressivamente.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "generatore reale",
+        "resistenza interna",
+        "caduta tensione",
+        "V_morsetti",
+        "I·r"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_154",
+      "domanda": "In un circuito AC con solo una resistenza, quale proprietà del segnale sinusoidale rimane invariata?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Resistore in AC",
+      "opzioni": [
+        "L'ampiezza cambia sempre",
+        "La frequenza rimane la stessa",
+        "La fase cambia di $90^\\circ$",
+        "Il segnale diventa rettangolare"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un resistore è un componente lineare e non reattivo. Non introduce sfasamenti tra tensione e corrente (sono in fase) e non altera la frequenza del segnale d'ingresso.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "AC",
+        "resistore",
+        "sinusoide",
+        "frequenza",
+        "fase"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_155",
+      "domanda": "Perché un induttore in regime DC stazionario si comporta come un cortocircuito?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Induttore in DC",
+      "opzioni": [
+        "Perché ha componenti che non offrono resistenza",
+        "Perché in DC la corrente è costante ($\\frac{dI}{dt} = 0$), e la tensione indotta $V = L \\cdot \\frac{dI}{dt}$ è nulla",
+        "Perché l'induttanza è zero in DC",
+        "Perché l'induttore genera energia"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'induttore si oppone alle variazioni di corrente. In DC stazionario la corrente non varia nel tempo, quindi non viene indotta alcuna forza elettromotrice contraria ($0 \text{ V}$ ai capi).",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "induttore",
+        "DC",
+        "regime stazionario",
+        "dI/dt",
+        "corto circuito"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_156",
+      "domanda": "Quale principio fisico spiega perché un condensatore in regime DC stazionario si comporta come un circuito aperto?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Condensatore in DC",
+      "opzioni": [
+        "Perché il dielettrico blocca sempre la corrente",
+        "Perché il condensatore si carica finché la sua tensione eguaglia quella applicata, raggiungendo l'equilibrio",
+        "Perché il condensatore genera una controtensione infinita",
+        "Perché la capacità diventa zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Una volta che il condensatore ha accumulato la massima carica possibile per quella tensione ($Q = C \\cdot V$), il potenziale sulle armature bilancia quello del generatore e il flusso di cariche si interrompe.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "condensatore",
+        "DC",
+        "regime stazionario",
+        "equilibrio carica",
+        "circuito aperto"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_157",
+      "domanda": "In un circuito RLC serie in risonanza, perché la tensione sul condensatore può essere molto più grande della tensione del generatore?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Sovra-tensione risonanza",
+      "opzioni": [
+        "Il condensatore crea energia",
+        "La corrente è massima; poiché $V_C = X_C \\cdot I$ e l'impedenza totale è piccola ($Z=R$), $V_C$ può superare $V_{gen}$ (fattore di merito $Q$)",
+        "La legge di Ohm non vale più",
+        "Tutte le tensioni devono essere uguali"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In risonanza $X_L$ e $X_C$ si cancellano, lasciando scorrere una corrente elevata limitata solo da $R$. Questa corrente intensa, passando attraverso la reattanza del condensatore, genera una tensione elevata, proporzionale al fattore di merito $Q$.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "risonanza",
+        "RLC",
+        "sovra-tensione",
+        "fattore Q",
+        "amplificazione"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_158",
+      "domanda": "Quale interpretazione fisica rappresenta meglio l'impedenza di un circuito AC?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Significato impedenza",
+      "opzioni": [
+        "È solo la somma di resistenza e reattanza",
+        "È l'opposizione totale che include sia la dissipazione energetica ($R$) che gli effetti di accumulo e rilascio di energia ($X$)",
+        "È una quantità senza significato fisico",
+        "È la potenza dissipata per unità di tensione"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "L'impedenza tiene conto di come i componenti resistivi 'bruciano' energia e di come i componenti reattivi 'immagazzinano' energia nei campi, causando anche sfasamenti temporali tra onda di tensione e di corrente.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "impedenza",
+        "AC",
+        "resistenza",
+        "reattanza",
+        "dissipazione",
+        "scalabilità"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_159",
+      "domanda": "Perché il rifasamento (aggiungere condensatori) riduce la corrente di linea senza cambiare la potenza reale consumata?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Rifasamento",
+      "opzioni": [
+        "Perché i condensatori generano potenza",
+        "Perché i condensatori forniscono potenza reattiva che compensa quella degli induttori, riducendo la potenza apparente e la corrente totale",
+        "Perché i condensatori dissipano energia",
+        "Perché la tensione aumenta"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Molti motori sono induttivi e 'assorbono' potenza reattiva. I condensatori la 'forniscono' localmente. Così, la corrente reattiva non deve più viaggiare lungo le linee dalla centrale all'utente, riducendo il valore efficace della corrente totale.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "rifasamento",
+        "potenza reattiva",
+        "cos φ",
+        "capacitori",
+        "potenza apparente"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_160",
+      "domanda": "In un trasformatore ideale, cosa significa che il rapporto di spire è $1:10$?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Trasformatore",
+      "opzioni": [
+        "La tensione di uscita è $10$ volte quella di ingresso, ma la corrente di uscita è $\\frac{1}{10}$ di quella di ingresso",
+        "La potenza di ingresso è $10$ volte quella di uscita",
+        "Non c'è relazione tra ingresso e uscita",
+        "La resistenza aumenta di $10$ volte"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Per la legge dell'induzione e la conservazione dell'energia ($P_1 = P_2$), se la tensione sale del fattore $k = \\frac{N_2}{N_1}$, la corrente deve scendere dello stesso fattore per mantenere costante il prodotto $V \\cdot I$.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "trasformatore",
+        "rapporto spire",
+        "tensione amplificata",
+        "corrente ridotta",
+        "potenza conservata"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_161",
+      "domanda": "Cosa rappresenta fisicamente il valore RMS (Root Mean Square) di una tensione sinusoidale?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Valore RMS significato",
+      "opzioni": [
+        "Il valore massimo del segnale",
+        "Il valore medio del segnale",
+        "Il valore equivalente in DC che dissiperebbe la stessa potenza medio in un resistore",
+        "Il valore alla frequenza di risonanza"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Il valore RMS (o efficace) permette di confrontare segnali alternati e continui. Una tensione AC da $230 \\text{ V}_{RMS}$ scalda una resistenza esattamente quanto $230 \\text{ V}$ in DC. Per una sinusoide, $V_{RMS} = \\frac{V_{picco}}{\\sqrt{2}}$.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "RMS",
+        "valore efficace",
+        "potenza medio",
+        "sinusoide",
+        "equivalente DC"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_162",
+      "domanda": "In un circuito con batterie e resistenze in parallelo, perché tutte ricevono la stessa tensione?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Proprietà parallelo - tensione",
+      "opzioni": [
+        "Perché la corrente è uguale in tutti",
+        "Perché sono collegati tra gli stessi due nodi, condividendo la stessa differenza di potenziale",
+        "Perché le resistenze hanno lo stesso valore",
+        "Perché la corrente totale è zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La tensione è definita come differenza di potenziale tra due punti. Se più componenti sono 'attaccati' agli stessi due fili (nodi), la differenza di potenziale misurata ai loro capi deve essere identica.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "parallelo",
+        "tensione uguale",
+        "nodi",
+        "potenziale"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_163",
+      "domanda": "In un circuito RC, dopo un tempo pari a $3\\tau$, quale frazione del valore finale ha raggiunto la tensione sul condensatore?",
+      "categoria": "Circuiti",
+      "sottocategoria": "RC carica stima",
+      "opzioni": [
+        "Circa il $50\\%$ ",
+        "Circa il $63\\%$ ",
+        "Circa il $95\\%$ ",
+        "Circa il $100\\%$ "
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "L'equazione è $V(t) = V_{max}(1 - e^{-t/\\tau})$. Per $t = 3\\tau$, abbiamo $1 - e^{-3} \\approx 1 - 0.049 = 0.951$, ovvero circa il $95\\%$. Dopo $5\\tau$ si considera convenzionalmente la carica completa ($>99\\%$).",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "RC",
+        "carica",
+        "costante di tempo",
+        "stima percentuale",
+        "95%"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_164",
+      "domanda": "Perché corrente e tensione sono in quadratura (sfasamento $90^\\circ$) in un condensatore ideale?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Sfasamento condensatore",
+      "opzioni": [
+        "Perché il condensatore dissipa energia",
+        "Perché la corrente è proporzionale a $\\frac{dV}{dt}$: il valore massimo di corrente si ha quando la tensione varia più velocemente (passaggio per lo zero)",
+        "Perché la tensione e la corrente hanno sempre la stessa fase",
+        "Perché l'impedenza è immaginaria pura"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La corrente è il flusso di cariche che 'vanno' a caricare le armature. Quando $V$ è massima, non sta cambiando e $I=0$. Quando $V$ attraversa lo zero, la sua pendenza è massima e la corrente è al picco. Matematicamente, la derivata di un seno è un coseno (sfasato di $90^\\circ$).",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "condensatore",
+        "sfasamento 90 gradi",
+        "corrente anticipata",
+        "derivata",
+        "sinusoide"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_165",
+      "domanda": "Secondo la seconda legge di Ohm, se raddoppi la lunghezza di un filo mantenendone costante la sezione, come cambia la resistenza?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Resistenza filo properties",
+      "opzioni": [
+        "Si dimezza",
+        "Raddoppia",
+        "Rimane uguale",
+        "Quadruplica"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Dalla formula $R = \\rho \\cdot \\frac{L}{A}$, si vede che $R$ è direttamente proporzionale alla lunghezza $L$. Raddoppiando il percorso, gli elettroni incontrano il doppio degli ostacoli nel reticolo cristallino.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "resistenza filo",
+        "lunghezza",
+        "seconda legge Ohm",
+        "R=ρL/A"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_166",
+      "domanda": "Perché un circuito RC in carica raggiunge asintoticamente il valore finale?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Carica graduale transitorio",
+      "opzioni": [
+        "Perché la batteria si scarica",
+        "Perché la corrente di carica è proporzionale alla differenza di tensione, che diminuisce man mano che il condensatore si carica",
+        "Perché il condensatore assorbe la carica in modo istantaneo",
+        "Perché la resistenza diventa zero"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La 'spinta' (differenza di potenziale) che fa muovere le cariche è $V_{gen} - V_C$. Man mano che $V_C$ aumenta, questa spinta diminuisce, la corrente cala e l'accumulo di ulteriore carica diventa sempre più lento.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "RC",
+        "carica",
+        "asintoto",
+        "esponenziale",
+        "corrente diminuisce"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_167",
+      "domanda": "Se in un circuito DC la resistenza totale è troppo bassa (vicino a cortocircuito), quale pericolo corre il generatore?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Protezione circuito",
+      "opzioni": [
+        "Nessun pericolo, il generatore ideale fornisce potenza illimitata",
+        "La corrente diventa molto grande, causando il surriscaldamento della resistenza interna e danni strutturali",
+        "La tensione aumenta indefinitamente",
+        "Il circuito si spegne da solo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In cortocircuito l'energia viene dissipata quasi interamente dentro la batteria ($P = I^2 r$). L'eccessivo calore può far bollire gli elettroliti, sciogliere i contatti o causare esplosioni/incendi.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "cortocircuito",
+        "alta corrente",
+        "dissipazione interna",
+        "surriscaldamento",
+        "protezione"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_168",
+      "domanda": "In un circuito AC, qual è il legame concettuale tra valore RMS e potenza medio dissipata?",
+      "categoria": "Circuiti",
+      "sottocategoria": "RMS e potenza medio",
+      "opzioni": [
+        "Non c'è legame diretto",
+        "La potenza medio su un carico resistivo è $P = V_{RMS} \\cdot I_{RMS}$, proprio come in DC",
+        "RMS è solo una medio geometrica",
+        "La potenza medio è sempre il massimo"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "I valori RMS sono stati definiti appositamente per poter utilizzare le formule della potenza DC ($P = V \\cdot I$) anche in AC sinusoidale, senza dover integrare ogni volta le funzioni trigonometriche nel tempo.",
+      "difficolta": "difficile",
+      "paroleChiave": [
+        "RMS",
+        "potenza medio",
+        "AC",
+        "fattore potenza",
+        "formula"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_169",
+      "domanda": "In un condensatore, se aumenti la distanza tra le armature mantenendo costante la carica $Q$, come varia l'energia immagazzinata?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Condensatore energia dipendenze",
+      "opzioni": [
+        "Diminuisce",
+        "Aumenta",
+        "Rimane uguale",
+        "Diventa negativa"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Se la distanza $d$ aumenta, la capacità $C = \\epsilon \\cdot \\frac{A}{d}$ diminuisce. L'energia è $U = \\frac{Q^2}{2C}$. Poiché $C$ è al denominatore, se $C$ cala, $U$ aumenta. Il lavoro fatto per allontanare le armature (che si attraggono) si trasforma in energia del campo elettrico.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "condensatore",
+        "energia",
+        "distanza armature",
+        "capacità",
+        "carica costante"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_170",
+      "domanda": "Perché in un circuito RC in scarica, il tempo per scaricarsi completamente è teoricamente infinito?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Scarica infinita",
+      "opzioni": [
+        "Perché la resistenza diventa infinita",
+        "Perché segue una funzione esponenziale $e^{-t/\\tau}$ che tende a zero asintoticamente senza mai raggiungerlo",
+        "Perché il condensatore non si scarica mai",
+        "Perché la carica è infinita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La velocità di scarica dipende dalla carica residua: meno carica c'è, meno corrente scorre, rendendo lo svuotamento finale sempre più lento. In pratica si considera scarico dopo $5\\tau$.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "RC",
+        "scarica",
+        "esponenziale",
+        "asintoto",
+        "tempo infinito"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_171",
+      "domanda": "Come differisce un elemento reattivo da una resistenza in termini di energia?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Differenza energetica",
+      "opzioni": [
+        "Tutti e tre dissipano energia in calore allo stesso modo",
+        "La resistenza dissipa energia irreversibilmente; i reattivi la scambiano senza consumarla in medio",
+        "I reattivi dissipano più energia",
+        "La resistenza accumula energia"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La resistenza 'consuma' energia togliendola dal circuito (calore). Induttori e condensatori agiscono come 'serbatoi' temporanei che restituiscono l'energia al generatore in ogni ciclo di alternata.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "reattivo",
+        "resistenza",
+        "dissipazione",
+        "accumulo energia",
+        "reversibile"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_172",
+      "domanda": "In una serie di tre resistori identici ($R$) alimentati con tensione $V$, quanta tensione cade sulla prima resistenza?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Partitore tensione serie",
+      "opzioni": [
+        "$\\frac{1}{3}$ di $V$",
+        "$\\frac{1}{9}$ di $V$",
+        "$\\frac{2}{3}$ di $V$",
+        "V intera"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "Poiché i resistori sono uguali, l'ostacolo è diviso equamente. Per la legge di Kirchhoff, la somma delle cadute deve fare $V$. Ogni resistore preleva $V_R = \\frac{V}{3}$.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "serie",
+        "partitore",
+        "tensione divisa",
+        "resistori identici"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_173",
+      "domanda": "Quale differenza fondamentale esiste tra un condensatore in AC e in DC?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Condensatore AC vs DC",
+      "opzioni": [
+        "Non c'è differenza",
+        "In DC agisce come interruttore aperto; in AC permette il passaggio di corrente 'apparente' grazie ai continui cicli di carica/scarica",
+        "In AC la corrente è sempre zero",
+        "In DC circola sempre corrente infinita"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "In DC, una volta carico, le cariche si fermano. In AC, poiché la polarità cambia continuamente (es. $50 \\text{ Hz}$), le cariche entrano ed escono continuamente dai fili per spostarsi tra le armature, creando una corrente misurabile.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "condensatore",
+        "DC",
+        "AC",
+        "corrente zero",
+        "corrente oscillante"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_174",
+      "domanda": "Quale formula esprime la relazione tra forza elettromotrice ($f.e.m.$), lavoro ($W$) e carica ($Q$)?",
+      "categoria": "Circuiti",
+      "sottocategoria": "F.e.m. definizione",
+      "opzioni": [
+        "$f.e.m. = Q \\cdot W$",
+        "$f.e.m. = \\frac{W}{Q}$",
+        "$f.e.m. = \\frac{Q}{W}$",
+        "$f.e.m. = W + Q$"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "La $f.e.m.$ è il lavoro speso dal generatore per spostare una carica unitaria lungo il circuito. Si misura in Volt ($1 \\text{ V} = 1 \\text{ J} / 1 \\text{ C}$).",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "f.e.m.",
+        "forza elettromotrice",
+        "lavoro",
+        "carica",
+        "W/Q"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_175",
+      "domanda": "Quale condizione rende un generatore 'reale' diverso da uno 'ideale'?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Generatore reale proprietà",
+      "opzioni": [
+        "Has sempre tensione maggiore",
+        "Ha una resistenza interna $r$ non nulla che causa una caduta di tensione $V_r = I \\cdot r$",
+        "Genera meno carica",
+        "Non fornisce corrente"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Un generatore ideale mantiene $V$ costante. Quello reale perde parte della tensione internamente a causa degli urti microscopici nei materiali conduttori e chimici della batteria stessa.",
+      "difficolta": "facile",
+      "paroleChiave": [
+        "generatore reale",
+        "resistenza interna",
+        "caduta tensione",
+        "f.e.m"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_176",
+      "domanda": "In un circuito AC, come si può aumentare la corrente attraverso un condensatore?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Condensatore AC frequenza",
+      "opzioni": [
+        "Diminuire la capacità",
+        "Aumentare la reattanza capacitiva $X_C$",
+        "Aumentare la frequenza (riducendo $X_C = \\frac{1}{\\omega C}$)",
+        "Nessuno dei precedenti"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "La reattanza capacitiva è l'ostacolo del condensatore in AC. Poiché $X_C = \\frac{1}{2\\pi f C}$, aumentando la frequenza $f$, l'ostacolo diminuisce e la corrente cresce a parità di tensione.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "condensatore",
+        "AC",
+        "reattanza capacitiva",
+        "frequenza",
+        "Xc"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_177",
+      "domanda": "Quale affermazione descrive meglio la 'fase' tra tensione e corrente in AC?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Concetto fase",
+      "opzioni": [
+        "La fase è sempre zero",
+        "È il ritardo o anticipo temporale di un'onda rispetto all'altra, misurato in gradi o radianti",
+        "La fase è la frequenza divisa per la tensione",
+        "La fase non ha significato"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Rappresenta lo sfasamento tra i picchi delle due onde sinusoidali. In una resistenza è $0^\\circ$, in un induttore puro la tensione anticipa di $90^\\circ$, in un condensatore ritarda di $90^\\circ$.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "fase",
+        "AC",
+        "ritardo",
+        "anticipo",
+        "sinusoide"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_178",
+      "domanda": "In un circuito RLC serie in risonanza, qual è la relazione tra $V_C$ e $V_L$?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Risonanza RLC serie proprietà",
+      "opzioni": [
+        "$V_C > V_L$ sempre",
+        "$V_C = V_L$ (le reattanze si eguagliano)",
+        "$V_C + V_L = 0$ (vettorialmente si annullano)",
+        "$V_C < V_L$ sempre"
+      ],
+      "rispostaCorretta": 2,
+      "spiegazione": "Vettorialmente, le tensioni su $L$ e $C$ sono sfasate di $180^\\circ$ tra loro. Poiché in risonanza i loro moduli sono identici ($I \\cdot X_L = I \\cdot X_C$), la loro somma algebrica istantanea è zero, lasciando tutta la tensione del generatore sulla resistenza.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "RLC serie",
+        "risonanza",
+        "condensatore",
+        "induttore",
+        "tensioni opposte"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_179",
+      "domanda": "Perché la resistenza diminuisce all'aumentare della sezione trasversale del filo?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Resistenza fili",
+      "opzioni": [
+        "Non c'è motivo fisico",
+        "Perché una sezione maggiore offre più 'spazio' o percorsi paralleli al passaggio degli elettroni",
+        "Perché la corrente aumenta",
+        "Perché il materiale cambia"
+      ],
+      "rispostaCorretta": 1,
+      "spiegazione": "Si può immaginare come un'autostrada: più corsie ci sono (sezione), più veicoli (cariche) possono transitare contemporaneamente con meno intoppi, riducendo la resistenza globale del conduttore.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "resistenza filo",
+        "lunghezza",
+        "sezione",
+        "resistività",
+        "R=ρL/A"
+      ],
+      "richiedeCalcolo": false
+    },
+    {
+      "id": "cir_180",
+      "domanda": "In un circuito AC con resistenza, qual è la caratteristica della potenza istantanea $P(t)$?",
+      "categoria": "Circuiti",
+      "sottocategoria": "Potenza medio AC",
+      "opzioni": [
+        "La potenza è sempre positiva (unidirezionale)",
+        "La potenza è sempre negativa",
+        "La potenza è in fase con la corrente",
+        "La potenza è in anticipo di $90^\\circ$"
+      ],
+      "rispostaCorretta": 0,
+      "spiegazione": "In una resistenza $P = V \\cdot I$. Poiché $V$ e $I$ cambiano segno insieme, il loro prodotto è sempre positivo. Ciò significa che l'energia fluisce sempre dal generatore verso la resistenza, dove viene trasformata irreversibilmente in calore.",
+      "difficolta": "medio",
+      "paroleChiave": [
+        "potenza medio",
+        "AC",
+        "resistore",
+        "dissipazione",
+        "I^2R"
+      ],
+      "richiedeCalcolo": false
+    }
   ]
 }
