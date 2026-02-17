@@ -13,8 +13,13 @@ import 'package:physics_ease_release/widgets/latex_text.dart';
 
 class QuizPage extends StatefulWidget {
   final void Function(bool) setGlobalAppBarVisibility;
+  final bool loadSavedSettings;
 
-  const QuizPage({super.key, required this.setGlobalAppBarVisibility});
+  const QuizPage({
+    super.key,
+    required this.setGlobalAppBarVisibility,
+    this.loadSavedSettings = false,
+  });
 
   @override
   State<QuizPage> createState() => _QuizPageState();
@@ -107,6 +112,10 @@ class _QuizPageState extends State<QuizPage> {
   Future<void> _loadData() async {
     await _loadQuizzes();
     await _loadRecentHistory();
+    // Se torno da un quiz completato prendo le impostazioni salvate, altrimenti lascio quelle di default
+    if (widget.loadSavedSettings) {
+      await _loadQuizSettings();
+    }
     await _updateMissedQuestionsCount();
   }
 
@@ -141,6 +150,39 @@ class _QuizPageState extends State<QuizPage> {
     }
   }
 
+  Future<void> _saveQuizSettings() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setStringList(
+      'quiz_settings_categories',
+      _selectedCategories.toList(),
+    );
+    await prefs.setStringList(
+      'quiz_settings_difficulties',
+      _selectedDifficulties.toList(),
+    );
+    await prefs.setBool('quiz_settings_exclude_calc', _excludeCalculation);
+    await prefs.setInt('quiz_settings_number_questions', _numberOfQuestions);
+  }
+
+  Future<void> _loadQuizSettings() async {
+    final prefs = await SharedPreferences.getInstance();
+    final categories = prefs.getStringList('quiz_settings_categories') ?? [];
+    final difficulties = prefs.getStringList('quiz_settings_difficulties') ?? [];
+    final excludeCalc = prefs.getBool('quiz_settings_exclude_calc') ?? false;
+    final numberOfQuestions = prefs.getInt('quiz_settings_number_questions') ?? 10;
+
+    if (mounted) {
+      setState(() {
+        _selectedCategories.clear();
+        _selectedCategories.addAll(categories);
+        _selectedDifficulties.clear();
+        _selectedDifficulties.addAll(difficulties);
+        _excludeCalculation = excludeCalc;
+        _numberOfQuestions = numberOfQuestions;
+      });
+    }
+  }
+
   void _startQuiz() async {
     if (_selectedCategories.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -151,6 +193,9 @@ class _QuizPageState extends State<QuizPage> {
       );
       return;
     }
+
+    // Salva le impostazioni attuali prima di avviare il quiz
+    await _saveQuizSettings();
 
     final difficulties = _selectedDifficulties.isNotEmpty
         ? _selectedDifficulties.toList()
@@ -290,6 +335,9 @@ class _QuizPageState extends State<QuizPage> {
       );
       return;
     }
+
+    // Salva le impostazioni attuali prima di avviare il quiz
+    await _saveQuizSettings();
 
     // Limita al numero di domande richiesto (o prendi tutte se sono meno)
     final quizzesToUse = missedQuizzes.take(_numberOfQuestions).toList();
