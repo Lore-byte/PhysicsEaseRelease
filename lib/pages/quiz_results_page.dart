@@ -384,6 +384,7 @@ class _QuizResultsPageState extends State<QuizResultsPage> {
                               builder: (ctx) => QuizPage(
                                 setGlobalAppBarVisibility:
                                     widget.setGlobalAppBarVisibility,
+                                loadSavedSettings: true,
                               ),
                             ),
                           );
