@@ -21,6 +21,7 @@ class QuizStatisticsPage extends StatefulWidget {
 class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
   List<QuizSessionResult> _quizHistory = [];
   bool _isLoading = true;
+  bool _isHistoryExpanded = false; 
   final QuizService _quizService = QuizService();
 
   @override
@@ -37,7 +38,6 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
   Future<void> _loadQuizHistory() async {
     setState(() => _isLoading = true);
 
-    // Assicuriamoci che i quiz siano caricati per avere i nomi corretti delle categorie
     await QuizService().loadAllQuizzes();
 
     try {
@@ -224,25 +224,19 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     };
   }
 
-  // Aggregatore interno per categoria (per-domanda, non per-quiz)
-  // (tenuto qui per evitare nuovi file)
-  // ignore: unused_element
   static const String _uncategorizedLabel = 'Senza categoria';
 
   String _normalizeCategory(String input) {
     final trimmed = input.trim();
     if (trimmed.isEmpty) return _uncategorizedLabel;
-    // Normalizza spazi multipli
     return trimmed.replaceAll(RegExp(r'\s+'), ' ');
   }
 
-  /// Helper per rendere i nomi delle categorie "belli" (es: "kinematica" -> "Cinematica")
   String _prettifyCategory(String raw) {
     if (raw.isEmpty) return raw;
     final trimmed = raw.trim();
     final lower = trimmed.toLowerCase();
 
-    // Mappatura manuale per correggere casi specifici visti nei dati
     if (lower == 'kin' || lower == 'kinematica') {
       return 'Cinematica';
     }
@@ -250,54 +244,45 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
       return 'Termodinamica';
     }
 
-    // Cerca nella mappa del servizio (chiavi minuscole, es: 'kinematica')
     if (QuizService.categoryNames.containsKey(lower)) {
       return QuizService.categoryNames[lower]!;
     }
 
-    // Fallback: se non è nella mappa, capitalizza la prima lettera
     if (trimmed.length > 1) {
       return trimmed[0].toUpperCase() + trimmed.substring(1);
     }
     return trimmed.toUpperCase();
   }
 
-  /// Helper per stringhe che possono contenere più categorie separate (es: "kinematica, dinamica")
   String _prettifyCategoriesString(String categories) {
     if (categories.isEmpty) return categories;
 
-    // Split basato su separatori comuni
     final parts = categories.split(RegExp(r'\s*(?:,|;|\+|•|\||/)\s*'));
 
     final prettyParts = parts
         .where((s) => s.trim().isNotEmpty)
         .map((s) => _prettifyCategory(s))
-        .toSet() // Rimuove duplicati
+        .toSet()
         .toList();
 
     if (prettyParts.isEmpty) return categories;
     return prettyParts.join(', ');
   }
 
-  /// Prova a ricavare la categoria dalla singola domanda.
-  /// Supporta formati tipici: "Dinamica_12", "Dinamica:12", "[Dinamica] 12", "Dinamica-12", "Dinamica/12".
   String? _extractCategoryFromQuestionId(String quizId) {
     final id = quizId.trim();
     if (id.isEmpty) return null;
 
-    // [Categoria]resto
     final bracket = RegExp(r'^\s*\[([^\]]+)\]\s*').firstMatch(id);
     if (bracket != null) {
       return _normalizeCategory(bracket.group(1) ?? '');
     }
 
-    // Categoria:resto  | Categoria/resto | Categoria-resto | Categoria_resto
     final sep = RegExp(r'^\s*([^:_/\-]+?)\s*[:_/\-]\s*.+$').firstMatch(id);
     if (sep != null) {
       return _normalizeCategory(sep.group(1) ?? '');
     }
 
-    // Categoria + spazio + numero (es "Dinamica 12")
     final spaceNum = RegExp(r'^\s*([^\d]+?)\s+\d+\s*$').firstMatch(id);
     if (spaceNum != null) {
       return _normalizeCategory(spaceNum.group(1) ?? '');
@@ -307,28 +292,21 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
   }
 
   Map<String, Map<String, dynamic>> _calculateCategoryStatistics() {
-    // Nuova logica: statistica per categoria basata sulle DOMANDE effettive.
-    // Evita il problema: quiz "Dinamica + Termodinamica" da 10 domande -> non deve contare 10 su entrambe.
     final Map<String, int> totalQuestionsByCategory = {};
     final Map<String, int> correctByCategory = {};
-    final Map<String, Set<DateTime>> sessionsByCategory =
-        {}; // per conteggiare "quiz" che contengono quella categoria
+    final Map<String, Set<DateTime>> sessionsByCategory = {};
 
     for (final quiz in _quizHistory) {
-      // NOTA: qui non usiamo più quiz.categorie per splittare e duplicare i contatori.
       for (final risultato in quiz.risultati) {
-        // Tenta di recuperare il nome ufficiale della categoria dal servizio (es. "Cinematica")
         String? category = QuizService().getCategoryNameByQuizId(
           risultato.quizId,
         );
 
-        // Se non trovato (es. quiz rimossi o vecchi), usa la logica di estrazione dall'ID come fallback
         if (category == null) {
           final rawCategory = _extractCategoryFromQuestionId(risultato.quizId);
           category = rawCategory ?? _uncategorizedLabel;
         }
 
-        // Applica sempre prettify per uniformare i nomi (es: "kinematica" -> "Cinematica", "cinematica" -> "Cinematica")
         category = _prettifyCategory(category);
 
         totalQuestionsByCategory[category] =
@@ -353,18 +331,13 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
           : (correctAnswers / totalQuestions) * 100;
 
       categoryStats[category] = {
-        // "quizCount" = numero di sessioni che includono almeno una domanda di quella categoria
         'quizCount': (sessionsByCategory[category]?.length ?? 0),
-        // "questionCount" = domande effettivamente svolte di quella categoria
         'questionCount': totalQuestions,
         'totalQuestions': totalQuestions,
         'correctAnswers': correctAnswers,
         'averageScore': averageScore,
       };
     }
-
-    // Opzionale: se non vuoi mostrare "Senza categoria", filtra qui.
-    // categoryStats.remove(_uncategorizedLabel);
 
     return categoryStats;
   }
@@ -418,7 +391,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     return mostMissed.take(limit).toList();
   }
 
-  List<Widget> _buildCategoryCards(
+  List<Widget> _buildCategoryRows(
     Map<String, Map<String, dynamic>> categoryStats,
     ColorScheme colorScheme,
   ) {
@@ -429,8 +402,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
         ),
       );
 
-    return sortedCategories.map((entry) {
-      // Applichiamo la formattazione corretta anche qui
+    final List<Widget> rows = [];
+    for (int i = 0; i < sortedCategories.length; i++) {
+      final entry = sortedCategories[i];
       final category = _prettifyCategory(entry.key);
       final stats = entry.value;
       final averageScore = stats['averageScore'] as double;
@@ -451,10 +425,9 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
       final wrong = totalQ - correct;
       final quizCount = stats['quizCount'] as int;
 
-      return Card(
-        margin: const EdgeInsets.only(bottom: 12),
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
+      rows.add(
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -553,7 +526,12 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
           ),
         ),
       );
-    }).toList();
+
+      if (i < sortedCategories.length - 1) {
+        rows.add(const Divider(height: 1, indent: 16, endIndent: 16));
+      }
+    }
+    return rows;
   }
 
   Widget _buildStatRow(
@@ -591,15 +569,14 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
     );
   }
 
-  Widget _buildQuizHistoryCard(
+  Widget _buildQuizHistoryRow(
     QuizSessionResult quiz,
     int index,
+    int total,
     ColorScheme colorScheme,
   ) {
     final dateFormat = DateFormat('dd/MM/yyyy HH:mm');
     final percentuale = quiz.percentuale;
-
-    // Converti la stringa categorie (che potrebbe essere "kinematica") in una forma leggibile ("Cinematica")
     final displayCategories = _prettifyCategoriesString(quiz.categorie);
 
     final correct = quiz.punteggio;
@@ -616,105 +593,98 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
       scoreColor = AppColors.red;
     }
 
-    return Card(
-      margin: const EdgeInsets.only(bottom: 12),
-      child: InkWell(
-        borderRadius: BorderRadius.circular(12),
-        onTap: () {
-          _showQuizDetails(quiz);
-        },
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    width: 60,
-                    height: 60,
-                    decoration: BoxDecoration(
-                      color: scoreColor.withValues(alpha: 0.1),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          '${quiz.punteggio}/${quiz.totale}',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: scoreColor,
-                          ),
-                        ),
-                        Text(
-                          '${percentuale.toStringAsFixed(0)}%',
-                          style: TextStyle(fontSize: 12, color: scoreColor),
-                        ),
-                      ],
-                    ),
+    return Column(
+      children: [
+        InkWell(
+          onTap: () => _showQuizDetails(quiz),
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Row(
+              children: [
+                Container(
+                  width: 60,
+                  height: 60,
+                  decoration: BoxDecoration(
+                    color: scoreColor.withValues(alpha: 0.1),
+                    borderRadius: BorderRadius.circular(12),
                   ),
-                  const SizedBox(width: 16),
-
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          displayCategories, // Usa la stringa processata
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        '${quiz.punteggio}/${quiz.totale}',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: scoreColor,
                         ),
-                        const SizedBox(height: 4),
-                        Text(
-                          dateFormat.format(quiz.dataCompletamento),
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: colorScheme.onSurface.withValues(alpha: 0.6),
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.check_circle,
-                              size: 16,
-                              color: AppColors.green,
-                            ),
-                            const SizedBox(width: 4),
-                            Text(
-                              '$correct',
-                              style: const TextStyle(fontSize: 14),
-                            ),
-                            const SizedBox(width: 12),
-                            Icon(Icons.cancel, size: 16, color: AppColors.red),
-                            const SizedBox(width: 4),
-                            Text(
-                              '$wrong',
-                              style: const TextStyle(fontSize: 14),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
+                      ),
+                      Text(
+                        '${percentuale.toStringAsFixed(0)}%',
+                        style: TextStyle(fontSize: 12, color: scoreColor),
+                      ),
+                    ],
                   ),
-
-                  IconButton(
-                    icon: const Icon(Icons.delete_outline),
-                    color: AppColors.red,
-                    onPressed: () => _deleteQuiz(index),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        displayCategories,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        dateFormat.format(quiz.dataCompletamento),
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: colorScheme.onSurface.withValues(alpha: 0.6),
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.check_circle,
+                            size: 16,
+                            color: AppColors.green,
+                          ),
+                          const SizedBox(width: 4),
+                          Text(
+                            '$correct',
+                            style: const TextStyle(fontSize: 14),
+                          ),
+                          const SizedBox(width: 12),
+                          Icon(Icons.cancel, size: 16, color: AppColors.red),
+                          const SizedBox(width: 4),
+                          Text(
+                            '$wrong',
+                            style: const TextStyle(fontSize: 14),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                ],
-              ),
-            ],
+                ),
+                IconButton(
+                  icon: const Icon(Icons.delete_outline),
+                  color: AppColors.red,
+                  onPressed: () => _deleteQuiz(index),
+                ),
+              ],
+            ),
           ),
         ),
-      ),
+        if (index < total - 1)
+          const Divider(height: 1, indent: 16, endIndent: 16),
+      ],
     );
   }
 
@@ -729,8 +699,6 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
         final colorScheme = Theme.of(context).colorScheme;
         final dateFormat = DateFormat('dd/MM/yyyy HH:mm');
         final percentuale = quiz.percentuale;
-
-        // Build lookup once for this sheet
         final quizMap = _buildQuizMap();
 
         return DraggableScrollableSheet(
@@ -795,7 +763,6 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                   ),
                 ),
                 const SizedBox(height: 24),
-
                 Text(
                   'Dettaglio Risposte',
                   style: Theme.of(
@@ -811,7 +778,6 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                   final questionQuiz = quizMap[result.quizId];
 
                   if (questionQuiz == null) {
-                    // Fallback per quiz/question non più presenti o non caricati
                     return Card(
                       margin: const EdgeInsets.only(bottom: 12),
                       color: isCorrect
@@ -1014,11 +980,7 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
 
   List<FlSpot> _getProgressChartData() {
     if (_quizHistory.isEmpty) return [];
-
-    // _quizHistory è ordinata: più recenti -> più vecchi
-    // Vogliamo i 10 più recenti (take 10) ma in ordine cronologico nel grafico.
     final recentQuizzes = _quizHistory.take(10).toList().reversed.toList();
-
     return recentQuizzes.asMap().entries.map((entry) {
       return FlSpot(entry.key.toDouble(), entry.value.percentuale);
     }).toList();
@@ -1239,61 +1201,92 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
                         const SizedBox(height: 24),
                         _buildMostMissedQuestionsCard(colorScheme),
                         if (categoryStats.isNotEmpty) ...[
-                          Row(
-                            children: [
-                              Icon(
+                          Card(
+                            margin: const EdgeInsets.only(bottom: 12),
+                            child: ExpansionTile(
+                              shape: const Border(),
+                              collapsedShape: const Border(),
+                              tilePadding: const EdgeInsets.symmetric(
+                                horizontal: 16.0,
+                                vertical: 8.0,
+                              ),
+                              childrenPadding: EdgeInsets.zero,
+                              leading: Icon(
                                 Icons.category,
                                 color: colorScheme.primary,
                                 size: 24,
                               ),
-                              const SizedBox(width: 12),
-                              Text(
+                              title: Text(
                                 'Statistiche per Categoria',
-                                style: Theme.of(context).textTheme.titleLarge
+                                style: Theme.of(context).textTheme.titleMedium
                                     ?.copyWith(fontWeight: FontWeight.bold),
                               ),
-                            ],
-                          ),
-                          const SizedBox(height: 12),
-                          ..._buildCategoryCards(categoryStats, colorScheme),
-                          const SizedBox(height: 24),
-                        ],
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Row(
                               children: [
-                                Icon(
-                                  Icons.history,
-                                  color: colorScheme.primary,
-                                  size: 24,
+                                ..._buildCategoryRows(
+                                  categoryStats,
+                                  colorScheme,
                                 ),
-                                const SizedBox(width: 12),
-                                Text(
-                                  'Storico Quiz',
-                                  style: Theme.of(context).textTheme.titleLarge
-                                      ?.copyWith(fontWeight: FontWeight.bold),
-                                ),
+                                const SizedBox(height: 12),
                               ],
                             ),
-                            IconButton(
-                              icon: const Icon(Icons.delete_forever),
-                              color: AppColors.red,
-                              onPressed: _deleteAllQuizzes,
-                              tooltip: 'Elimina tutto lo storico',
+                          ),
+                        ],
+                        const SizedBox(height: 16),
+                        Card(
+                          margin: const EdgeInsets.only(bottom: 12),
+                          child: ExpansionTile(
+                            shape: const Border(),
+                            collapsedShape: const Border(),
+                            tilePadding: const EdgeInsets.symmetric(
+                              horizontal: 16.0,
+                              vertical: 8.0,
                             ),
-                          ],
+                            childrenPadding: EdgeInsets.zero,
+                            onExpansionChanged: (expanded) {
+                              setState(() {
+                                _isHistoryExpanded = expanded;
+                              });
+                            },
+                            leading: Icon(
+                              Icons.history,
+                              color: colorScheme.primary,
+                              size: 24,
+                            ),
+                            title: Row(
+                              children: [
+                                Expanded(
+                                  child: Text(
+                                    'Storico Quiz',
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .titleMedium
+                                        ?.copyWith(fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                                if (_isHistoryExpanded)
+                                  IconButton(
+                                    icon: const Icon(Icons.delete_forever),
+                                    color: AppColors.red,
+                                    onPressed: _deleteAllQuizzes,
+                                    tooltip: 'Elimina tutto lo storico',
+                                  ),
+                              ],
+                            ),
+                            children: [
+                              ..._quizHistory.asMap().entries.map((entry) {
+                                final index = entry.key;
+                                final quiz = entry.value;
+                                return _buildQuizHistoryRow(
+                                  quiz,
+                                  index,
+                                  _quizHistory.length,
+                                  colorScheme,
+                                );
+                              }),
+                              const SizedBox(height: 12),
+                            ],
+                          ),
                         ),
-                        const SizedBox(height: 12),
-                        ..._quizHistory.asMap().entries.map((entry) {
-                          final index = entry.key;
-                          final quiz = entry.value;
-                          return _buildQuizHistoryCard(
-                            quiz,
-                            index,
-                            colorScheme,
-                          );
-                        }),
                       ],
                     ],
                   ),
@@ -1507,11 +1500,13 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
         Card(
           margin: const EdgeInsets.only(bottom: 12),
           child: ExpansionTile(
+            shape: const Border(),
+            collapsedShape: const Border(),
             tilePadding: const EdgeInsets.symmetric(
               horizontal: 16.0,
               vertical: 8.0,
             ),
-            childrenPadding: EdgeInsets.zero, // <-- remove gap under the header
+            childrenPadding: EdgeInsets.zero,
             leading: Icon(
               Icons.warning_amber,
               color: AppColors.orange,
@@ -1524,84 +1519,83 @@ class _QuizStatisticsPageState extends State<QuizStatisticsPage> {
               ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
             ),
             children: [
-              ListView.builder(
-                primary:
-                    false, // <-- avoid implicit MediaQuery padding behavior
-                padding: EdgeInsets.zero, // <-- remove ListView top padding
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                itemCount: mostMissedQuestions.length,
-                itemBuilder: (context, index) {
-                  final data = mostMissedQuestions[index];
-                  final quiz = data['quiz'] as Quiz;
-                  final errors = data['errors'] as int;
+              for (int i = 0; i < mostMissedQuestions.length; i++) ...[
+                Builder(
+                  builder: (context) {
+                    final data = mostMissedQuestions[i];
+                    final quiz = data['quiz'] as Quiz;
+                    final errors = data['errors'] as int;
 
-                  return InkWell(
-                    onTap: () {
-                      _showMissedQuestionDetails(quiz, errors, colorScheme);
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 16.0,
-                        vertical: 12.0,
-                      ),
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                LatexText(
-                                  quiz.domanda,
-                                  style: const TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
+                    return InkWell(
+                      onTap: () {
+                        _showMissedQuestionDetails(quiz, errors, colorScheme);
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 16.0,
+                          vertical: 12.0,
+                        ),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  LatexText(
+                                    quiz.domanda,
+                                    style: const TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                    maxLines: 2,
+                                    overflow: TextOverflow.ellipsis,
                                   ),
-                                  maxLines: 2,
-                                  overflow: TextOverflow.ellipsis,
-                                ),
-                                const SizedBox(height: 4),
-                                Text(
-                                  quiz.categoria,
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    color: colorScheme.onSurface.withValues(
-                                      alpha: 0.6,
+                                  const SizedBox(height: 4),
+                                  Text(
+                                    quiz.categoria,
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: colorScheme.onSurface.withValues(
+                                        alpha: 0.6,
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 12,
-                              vertical: 6,
-                            ),
-                            decoration: BoxDecoration(
-                              color: AppColors.red.withValues(alpha: 0.2),
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Text(
-                              '❌ $errors',
-                              style: const TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.bold,
-                                color: AppColors.red,
+                                ],
                               ),
                             ),
-                          ),
-                        ],
+                            const SizedBox(width: 12),
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 6,
+                              ),
+                              decoration: BoxDecoration(
+                                color: AppColors.red.withValues(alpha: 0.2),
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Text(
+                                '❌ $errors',
+                                style: const TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                  color: AppColors.red,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  );
-                },
-              ),
+                    );
+                  },
+                ),
+                if (i < mostMissedQuestions.length - 1)
+                  const Divider(height: 1, indent: 16, endIndent: 16),
+              ],
+              const SizedBox(height: 8),
             ],
           ),
         ),
-        const SizedBox(height: 24),
+        const SizedBox(height: 16),
       ],
     );
   }
