@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/theme/app_colors.dart';
-import 'dart:math';
+import 'dart:math' as math;
 import 'package:math_expressions/math_expressions.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
+import 'package:flutter_math_fork/flutter_math.dart';
 
 class GraphPage extends StatefulWidget {
   const GraphPage({super.key});
@@ -14,6 +15,7 @@ class GraphPage extends StatefulWidget {
 class _GraphPageState extends State<GraphPage> {
   final List<TextEditingController> _functionControllers = [];
   final List<FocusNode> _focusNodes = [];
+  final List<ScrollController> _fieldScrollControllers = [];
   final List<String> _currentFunctions = [];
   final List<String> _errorMessages = [];
   final List<Color> _functionColors = [];
@@ -21,8 +23,7 @@ class _GraphPageState extends State<GraphPage> {
   final List<bool> _showCursorAtIndex = [];
 
   TextEditingController? _focusedController;
-
-  bool _showScientificKeys = false;
+  final ScrollController _scrollController = ScrollController();
 
   final double xMin = -10.0;
   final double xMax = 10.0;
@@ -31,24 +32,6 @@ class _GraphPageState extends State<GraphPage> {
 
   GrammarParser p = GrammarParser();
   ContextModel cm = ContextModel();
-
-  final List<String> _basicKeypadKeys = [
-    '7','8','9','/',
-    '4','5','6','*',
-    '1','2','3','-',
-    '0','.','^','+',
-    '(',')','x','C',
-    'DL','Sci','',
-  ];
-
-  final List<String> _scientificKeypadKeys = [
-    'sin','cos','tan','log',
-    'ln','exp','sqrt','abs',
-    '(',')','^','/',
-    '*','-','+','π',
-    'e','!','x','C',
-    'DL','Basic','',
-  ];
 
   final List<Color> _predefinedColors = [
     AppColors.red.shade700,
@@ -64,34 +47,26 @@ class _GraphPageState extends State<GraphPage> {
 
   final List<String> _exampleFunctions = [
     'sin(x)',
+    'x^(2)',
+    'x^(2) - 4',
     'cos(x)',
-    'x^2',
-    'log10(x)',
-    'e^x',
-    'abs(x)',
-    'x^3 - 2*x',
-    'tan(x)',
-    'sqrt(x)',
+    'e^(x)',
+    '|x|',
+    'log(x)',
     'ln(x)',
-    '2*sin(x) + cos(2*x)',
-    '(x-1)^2 + 3',
+    '√(x)',
+    'x^3 - 6x^2 + 11x - 6',
   ];
-  final Random _random = Random();
+  final math.Random _random = math.Random();
 
-  //static const double _graphPreviewHeight = 220.0;
-
-  double _previewHorizontalMargin(double width) {
-    const double minMargin = 4.0;
-    const double maxMargin = 56.0;
-    const double minWidth = 320.0;
-    const double maxWidth = 1440.0;
-
-    if (width <= minWidth) return minMargin;
-    if (width >= maxWidth) return maxMargin;
-
-    final double t = (width - minWidth) / (maxWidth - minWidth);
-    return minMargin + (maxMargin - minMargin) * t;
-  }
+  static const List<List<String>> _keypadLayout = [
+    ['AC', 'DL', '√', '^', '|x|'],
+    ['sin', '7', '8', '9', '÷'],
+    ['cos', '4', '5', '6', '×'],
+    ['tan', '1', '2', '3', '-'],
+    ['ln', 'x', '0', '.', '+'],
+    ['log', '(', ')', 'e', 'π'],
+  ];
 
   @override
   void initState() {
@@ -103,6 +78,21 @@ class _GraphPageState extends State<GraphPage> {
     cm.bindVariable(Variable('x'), Number(0));
   }
 
+  @override
+  void dispose() {
+    for (var controller in _functionControllers) {
+      controller.dispose();
+    }
+    for (var focusNode in _focusNodes) {
+      focusNode.dispose();
+    }
+    for (var scrollCtrl in _fieldScrollControllers) {
+      scrollCtrl.dispose();
+    }
+    _scrollController.dispose();
+    super.dispose();
+  }
+
   void _addFunctionField({
     String initialText = '',
     bool isPlaceholder = false,
@@ -110,6 +100,7 @@ class _GraphPageState extends State<GraphPage> {
     setState(() {
       final newController = TextEditingController(text: initialText);
       final newFocusNode = FocusNode();
+      final newScrollController = ScrollController();
       final int newIndex = _functionControllers.length;
 
       newController.addListener(() => _updateFunction(newIndex));
@@ -123,6 +114,7 @@ class _GraphPageState extends State<GraphPage> {
       });
       _functionControllers.add(newController);
       _focusNodes.add(newFocusNode);
+      _fieldScrollControllers.add(newScrollController);
       _currentFunctions.add(initialText);
       _errorMessages.add('');
       _functionColors.add(
@@ -164,8 +156,10 @@ class _GraphPageState extends State<GraphPage> {
       setState(() {
         _functionControllers[index].dispose();
         _focusNodes[index].dispose();
+        _fieldScrollControllers[index].dispose();
         _functionControllers.removeAt(index);
         _focusNodes.removeAt(index);
+        _fieldScrollControllers.removeAt(index);
         _currentFunctions.removeAt(index);
         _errorMessages.removeAt(index);
         _functionColors.removeAt(index);
@@ -181,19 +175,19 @@ class _GraphPageState extends State<GraphPage> {
         } else {
           if (_focusedController == null ||
               !_functionControllers.contains(_focusedController)) {
-            _focusedController = _functionControllers.first;
+            _focusedController = _functionControllers.last;
             WidgetsBinding.instance.addPostFrameCallback((_) {
               if (!mounted || _focusNodes.isEmpty) return;
-              _focusNodes.first.requestFocus();
+              _focusNodes.last.requestFocus();
             });
           }
         }
-        _plotGraph();
       });
     }
   }
 
   void _updateFunction(int index) {
+    if (!mounted) return;
     setState(() {
       if (_isPlaceholder[index] &&
           _functionControllers[index].text != _currentFunctions[index]) {
@@ -204,307 +198,355 @@ class _GraphPageState extends State<GraphPage> {
     });
   }
 
-  String _preprocessFunction(String function) {
-    String processedFunction = function
-        .replaceAll('exp(', 'e^(')
-        .replaceAll('pi', pi.toString())
-        .replaceAll('e', e.toString())
-        .replaceAll('abs(', 'abs(')
-        .replaceAll('!', '!');
+  String _normalizeExpression(String expression) {
+    var normalized = expression;
 
-    processedFunction = processedFunction.replaceAllMapped(
-      RegExp(r'log10\(([^)]*)\)'),
-      (match) {
-        return 'ln(${match.group(1)})/ln(10)';
+    normalized = normalized.replaceAllMapped(
+      RegExp(r'(\d+(\.\d*)?)e([+-]?\d+)'),
+      (m) {
+        String exponent = m.group(3)!;
+        if (exponent.startsWith('+')) exponent = exponent.substring(1);
+        return '(${m.group(1)}*10^($exponent))';
       },
     );
 
-    processedFunction = processedFunction.replaceAllMapped(
+    normalized = normalized.replaceAll('÷', '/').replaceAll('×', '*');
+    normalized = normalized.replaceAll('π', 'pi');
+
+    normalized = normalized.replaceAllMapped(
+      RegExp(r'log\((.*?)\)'),
+      (match) => 'log(10,${match.group(1)})',
+    );
+    normalized = normalized.replaceAll('√', 'sqrt');
+
+    while (normalized.contains('|')) {
+      int firstPipe = normalized.indexOf('|');
+      int secondPipe = normalized.indexOf('|', firstPipe + 1);
+      if (secondPipe != -1) {
+        String content = normalized.substring(firstPipe + 1, secondPipe);
+        normalized = normalized.replaceRange(
+          firstPipe,
+          secondPipe + 1,
+          'abs($content)',
+        );
+      } else {
+        break;
+      }
+    }
+
+    normalized = normalized.replaceAllMapped(
       RegExp(r'(\d)([a-zA-Z(πe])'),
       (match) => '${match.group(1)}*${match.group(2)}',
     );
-    processedFunction = processedFunction.replaceAllMapped(
+    normalized = normalized.replaceAllMapped(
       RegExp(r'(\))([a-zAZ(πe])'),
       (match) => '${match.group(1)}*${match.group(2)}',
     );
-    processedFunction = processedFunction.replaceAllMapped(
-      RegExp(r'([xπe])(sin|cos|tan|ln|exp|sqrt|abs|\()'),
+    normalized = normalized.replaceAllMapped(
+      RegExp(r'([xπe])(sin|cos|tan|ln|sqrt|abs|log|\()'),
       (match) => '${match.group(1)}*${match.group(2)}',
     );
 
-    return processedFunction;
+    return normalized;
   }
 
   double? _evaluateFunction(String function, double xValue) {
-    if (function.trim().isEmpty) {
-      return null;
-    }
+    if (function.trim().isEmpty) return null;
     try {
       cm.bindVariable(Variable('x'), Number(xValue));
-      String processedFunction = _preprocessFunction(function);
-      Expression exp = p.parse(processedFunction);
+      cm.bindVariable(Variable('e'), Number(math.e));
+      cm.bindVariable(Variable('pi'), Number(math.pi));
+
+      String normalized = _normalizeExpression(function);
+      Expression exp = p.parse(normalized);
       double result = exp.evaluate(EvaluationType.REAL, cm);
-      if (result.isNaN || result.isInfinite) {
-        return null;
-      }
+      if (result.isNaN || result.isInfinite) return null;
       return result;
     } catch (e) {
       return null;
     }
   }
 
-  void _plotGraph() {
-    setState(() {
-      bool anyFunctionHasError = false;
-      for (int i = 0; i < _functionControllers.length; i++) {
-        _errorMessages[i] = '';
-        String functionText = _functionControllers[i].text.trim();
+  String _convertInputToLatex(String input) {
+    if (input.isEmpty) return '';
+    String latex = input;
 
-        if (functionText.isEmpty) {
-          _errorMessages[i] = 'Inserisci una funzione.';
-          continue;
-        }
+    latex = latex.replaceAll('÷', r'\div ');
+    latex = latex.replaceAll('×', r'\times ');
+    latex = latex.replaceAll('π', r'\pi');
+    latex = latex.replaceAll('log', r'\log_{10}');
+    latex = latex.replaceAll('ln', r'\ln');
 
-        try {
-          String processedFunction = _preprocessFunction(functionText);
-          p.parse(processedFunction);
-        } catch (e) {
-          String error = e
-              .toString()
-              .replaceAll('Exception: ', '')
-              .replaceAll('ParserException: ', '');
-          if (error.contains('Invalid syntax')) {
-            _errorMessages[i] =
-                'Errore di sintassi: Controlla il formato. Usa * per la moltiplicazione esplicita (es. 2*x, x*sin(x)).';
-          } else if (error.contains('Undefined variable')) {
-            _errorMessages[i] =
-                'Variabile non definita. Assicurati di usare solo \'x\'.';
-          } else if (error.contains('Undefined function')) {
-            _errorMessages[i] =
-                'Funzione non definita o formato errato (es. sin(x), ln(x), log10(x)).';
-          } else {
-            _errorMessages[i] = 'Errore nel formato della funzione: $error.';
-          }
-          anyFunctionHasError = true;
-        }
-      }
-      if (anyFunctionHasError) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text(
-              'Correggi gli errori nelle funzioni per visualizzare tutti i grafici.',
-            ),
-          ),
-        );
-      }
+    latex = latex.replaceAllMapped(RegExp(r'(sin|cos|tan)'), (match) {
+      return r'\' + match.group(1)!;
     });
+
+    while (latex.contains('^(')) {
+      int start = latex.indexOf('^(');
+      int openParens = 1;
+      int end = -1;
+      for (int i = start + 2; i < latex.length; i++) {
+        if (latex[i] == '(') openParens++;
+        if (latex[i] == ')') openParens--;
+        if (openParens == 0) {
+          end = i;
+          break;
+        }
+      }
+      if (end != -1) {
+        String content = latex.substring(start + 2, end);
+        latex = latex.replaceRange(start, end + 1, '^{$content}');
+      } else {
+        latex = latex.replaceFirst('^(', '^{');
+        latex += '}';
+      }
+    }
+
+    while (latex.contains('√(')) {
+      int start = latex.indexOf('√(');
+      int openParens = 1;
+      int end = -1;
+      for (int i = start + 2; i < latex.length; i++) {
+        if (latex[i] == '(') openParens++;
+        if (latex[i] == ')') openParens--;
+        if (openParens == 0) {
+          end = i;
+          break;
+        }
+      }
+      if (end != -1) {
+        String content = latex.substring(start + 2, end);
+        latex = latex.replaceRange(start, end + 1, r'\sqrt{(' + content + ')}');
+      } else {
+        latex = latex.replaceFirst('√(', r'\sqrt{(');
+        latex += '}';
+      }
+    }
+    latex = latex.replaceAll('√', r'\sqrt');
+
+    latex = latex.replaceAll('|', '|');
+
+    return latex;
   }
+
 
   void _onKeyPress(String key) {
     if (_focusedController == null) {
       final int focusedIndex = _focusNodes.indexWhere((node) => node.hasFocus);
       if (focusedIndex != -1) {
         _focusedController = _functionControllers[focusedIndex];
+      } else if (_functionControllers.isNotEmpty) {
+        _focusedController = _functionControllers.last;
+        _focusNodes.last.requestFocus();
+      } else {
+        return;
       }
-    }
-
-    if (_focusedController == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text(
-            'Seleziona una casella di testo per inserire la funzione.',
-          ),
-        ),
-      );
-      return;
     }
 
     final TextEditingController controller = _focusedController!;
-    final String currentText = controller.text;
-    final TextSelection selection = controller.selection;
+    final int idx = _functionControllers.indexOf(controller);
+
+    if (idx != -1 && !_focusNodes[idx].hasFocus) {
+      _focusNodes[idx].requestFocus();
+    }
+
+    if (idx != -1 && _isPlaceholder[idx]) {
+      controller.clear();
+      _isPlaceholder[idx] = false;
+      _updateFunction(idx);
+    }
+
+    final text = controller.text;
+    final selection = controller.selection;
     int start = selection.start;
     int end = selection.end;
+    if (start < 0) start = text.length;
+    if (end < 0) end = text.length;
 
-    if (start < 0) start = 0;
-    if (end < 0) end = 0;
-    if (start > currentText.length) start = currentText.length;
-    if (end > currentText.length) end = currentText.length;
+    if (key == 'AC') {
+      controller.clear();
+      _updateFunction(idx);
+      return;
+    }
 
-    setState(() {
-      String newText = currentText;
-      TextSelection newSelection = selection;
+    if (key == 'DL') {
+      if (text.isEmpty) return;
+      String newText = '';
+      int newOffset = 0;
 
-      final int focusedIndex = _functionControllers.indexOf(controller);
-
-      if (focusedIndex != -1 && _isPlaceholder[focusedIndex]) {
-        controller.text = '';
-        _isPlaceholder[focusedIndex] = false;
-        start = 0;
-        end = 0;
+      if (start != end) {
+        newText = text.replaceRange(start, end, '');
+        newOffset = start;
+      } else if (start > 0) {
+        newText = text.replaceRange(start - 1, start, '');
+        newOffset = start - 1;
+      } else {
+        return;
       }
-
-      switch (key) {
-        case 'C':
-          newText = '';
-          newSelection = TextSelection.collapsed(offset: 0);
-          break;
-        case 'DL':
-          if (start != end) {
-            newText = currentText.replaceRange(start, end, '');
-            newSelection = TextSelection.collapsed(offset: start);
-          } else if (start > 0) {
-            newText = currentText.replaceRange(start - 1, start, '');
-            newSelection = TextSelection.collapsed(offset: start - 1);
-          } else {
-            return;
-          }
-          break;
-        case 'Sci':
-          _showScientificKeys = true;
-          break;
-        case 'Basic':
-          _showScientificKeys = false;
-          break;
-        case 'log':
-          newText = currentText.replaceRange(start, end, 'log10(');
-          newSelection = TextSelection.collapsed(
-            offset: start + 'log10('.length,
-          );
-          break;
-        case 'exp':
-          newText = currentText.replaceRange(start, end, 'e^(');
-          newSelection = TextSelection.collapsed(offset: start + 'e^('.length);
-          break;
-        case 'ln':
-        case 'sqrt':
-        case 'sin':
-        case 'cos':
-        case 'tan':
-        case 'abs':
-          newText = currentText.replaceRange(start, end, '$key(');
-          newSelection = TextSelection.collapsed(
-            offset: start + '$key('.length,
-          );
-          break;
-        case 'π':
-          newText = currentText.replaceRange(start, end, 'pi');
-          newSelection = TextSelection.collapsed(offset: start + 'pi'.length);
-          break;
-        case 'e':
-          newText = currentText.replaceRange(start, end, 'e');
-          newSelection = TextSelection.collapsed(offset: start + 'e'.length);
-          break;
-        default:
-          newText = currentText.replaceRange(start, end, key);
-          newSelection = TextSelection.collapsed(offset: start + key.length);
-          break;
-      }
-
       controller.value = TextEditingValue(
         text: newText,
-        selection: newSelection,
+        selection: TextSelection.collapsed(offset: newOffset),
       );
-      if (focusedIndex != -1) {
-        final int caretOffset = controller.selection.baseOffset;
-        final int textLength = controller.text.length;
-        _showCursorAtIndex[focusedIndex] =
-            controller.text.isEmpty ||
-            (caretOffset >= 0 && caretOffset < textLength);
+      _updateFunction(idx);
+      _autoScrollToCursor(idx);
+      return;
+    }
+
+    String textToInsert = key;
+    int cursorMove = 0;
+
+    switch (key) {
+      case 'sin':
+      case 'cos':
+      case 'tan':
+      case 'log':
+      case 'ln':
+        textToInsert = '$key(';
+        break;
+      case '√':
+        textToInsert = '√(';
+        break;
+      case '^':
+        textToInsert = '^(';
+        break;
+      case '|x|':
+        textToInsert = '||';
+        cursorMove = -1;
+        break;
+      default:
+        textToInsert = key;
+    }
+
+    if (start > 0) {
+      final String prevChar = text[start - 1];
+      final bool isPrevDigit = RegExp(r'[0-9]').hasMatch(prevChar);
+      final bool isPrevMultiplicative = RegExp(r'[0-9eπx)%]').hasMatch(prevChar);
+
+      final bool isNextMultiplicativeStart =
+          RegExp(r'^[0-9eπx(sctl√]').hasMatch(textToInsert) ||
+          textToInsert.startsWith('|');
+
+      final bool isNextDigit = RegExp(r'^[0-9]+$').hasMatch(textToInsert);
+
+      if (isPrevMultiplicative && isNextMultiplicativeStart && !(isPrevDigit && isNextDigit)) {
       }
-      if (focusedIndex != -1) {
-        _updateFunction(focusedIndex);
+    }
+
+    String newText;
+    if (start >= text.length) {
+      newText = text + textToInsert;
+    } else {
+      newText = text.replaceRange(start, end, textToInsert);
+    }
+
+    int newSelectionIndex = start + textToInsert.length + cursorMove;
+
+    controller.value = TextEditingValue(
+      text: newText,
+      selection: TextSelection.collapsed(offset: newSelectionIndex),
+    );
+    _updateFunction(idx);
+    
+    _autoScrollToCursor(idx);
+  }
+
+  void _autoScrollToCursor(int index) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (index < _fieldScrollControllers.length && 
+          _fieldScrollControllers[index].hasClients) {
+        
+        final controller = _fieldScrollControllers[index];
+        final textController = _functionControllers[index];
+        
+        if (textController.selection.baseOffset >= textController.text.length) {
+           controller.jumpTo(controller.position.maxScrollExtent);
+        }
       }
     });
   }
 
-  Widget _buildKeypadButton(
-    String key,
-    ({
-      Color gradientStart,
-      Color gradientEnd,
-      Color textColor,
-      Color borderColor,
-      Color shadowColor,
-      double fontSize,
-    })
-    style,
-  ) {
-    return Padding(
-      padding: const EdgeInsets.all(5.0),
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(999),
-          border: Border.all(color: style.borderColor, width: 1.1),
-          gradient: LinearGradient(
-            colors: [style.gradientStart, style.gradientEnd],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: style.shadowColor.withValues(alpha: 0.22),
-              blurRadius: 18,
-              spreadRadius: 0.2,
-              offset: const Offset(0, 8),
-            ),
-          ],
+
+  Widget _buildButtonContent(String text, double fontSize, Color color) {
+    if (text == 'DL') {
+      return Icon(Icons.backspace_outlined, size: fontSize + 2, color: color);
+    }
+
+    String latex = text;
+    FontWeight fontWeight = FontWeight.w600;
+
+    switch (text) {
+      case '÷':
+        latex = r'\div';
+        break;
+      case '×':
+        latex = r'\times';
+        break;
+      case 'π':
+        latex = r'\pi';
+        break;
+      case '√':
+        latex = r'\sqrt{\square}';
+        break;
+      case '^':
+        latex = r'\square^n';
+        break;
+      case '|x|':
+        latex = r'|\square|';
+        break;
+      case 'log':
+        latex = r'\log';
+        break;
+      case 'ln':
+        latex = r'\ln';
+        break;
+      case 'sin':
+        latex = r'\sin';
+        break;
+      case 'cos':
+        latex = r'\cos';
+        break;
+      case 'tan':
+        latex = r'\tan';
+        break;
+      case 'x':
+        latex = 'x'; 
+        fontWeight = FontWeight.normal; 
+        break;
+    }
+
+    if (!['√', 'π', '÷', '×', '^', '|x|', 'log', 'ln', 'sin', 'cos', 'tan', 'x'].contains(text)) {
+       return Text(
+        text,
+        style: TextStyle(
+          fontSize: fontSize,
+          fontWeight: FontWeight.w600,
+          color: color,
         ),
-        child: ElevatedButton(
-          onPressed: () => _onKeyPress(key),
-          style: ButtonStyle(
-            backgroundColor: const WidgetStatePropertyAll(Colors.transparent),
-            foregroundColor: WidgetStatePropertyAll(style.textColor),
-            surfaceTintColor: const WidgetStatePropertyAll(Colors.transparent),
-            shadowColor: const WidgetStatePropertyAll(Colors.transparent),
-            elevation: const WidgetStatePropertyAll(0),
-            overlayColor: WidgetStateProperty.resolveWith((states) {
-              if (states.contains(WidgetState.pressed)) {
-                return style.textColor.withValues(alpha: 0.12);
-              }
-              if (states.contains(WidgetState.hovered)) {
-                return style.textColor.withValues(alpha: 0.07);
-              }
-              return null;
-            }),
-            shape: WidgetStatePropertyAll(
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(999)),
-            ),
-            padding: const WidgetStatePropertyAll(
-              EdgeInsets.symmetric(vertical: 14, horizontal: 8),
-            ),
-            textStyle: WidgetStatePropertyAll(
-              TextStyle(
-                fontSize: style.fontSize,
-                fontWeight: FontWeight.w700,
-                letterSpacing: 0.2,
-              ),
-            ),
-          ),
-          child: key == 'DL'
-              ? Icon(Icons.backspace_outlined, size: style.fontSize + 2)
-              : FittedBox(fit: BoxFit.scaleDown, child: Text(key)),
+      );
+    }
+
+    return FittedBox(
+      fit: BoxFit.scaleDown,
+      child: Math.tex(
+        latex,
+        textStyle: TextStyle(
+          fontSize: fontSize,
+          fontWeight: fontWeight, 
+          color: color,
         ),
       ),
     );
   }
 
-  ({
-    Color gradientStart,
-    Color gradientEnd,
-    Color textColor,
-    Color borderColor,
-    Color shadowColor,
-    double fontSize,
-  })
-  _keypadButtonStyle(String key, ColorScheme colorScheme) {
-    var gradientStart = colorScheme.surfaceContainerHighest;
-    var gradientEnd = colorScheme.surfaceContainerHigh;
-    var textColor = colorScheme.onSurface;
-    var borderColor = colorScheme.outlineVariant.withValues(alpha: 0.55);
-    var shadowColor = colorScheme.onSurface;
-    var fontSize = 20.0;
+  Widget _buildKeypadButton(String key, ColorScheme colorScheme) {
+    Color gradientStart = colorScheme.surfaceContainerHighest;
+    Color gradientEnd = colorScheme.surfaceContainerHigh;
+    Color textColor = colorScheme.onSurface;
+    Color borderColor = colorScheme.outlineVariant.withValues(alpha: 0.55);
+    Color shadowColor = colorScheme.onSurface;
+    double fontSize = 22.0;
 
-    if (key == 'C') {
+    if (key == 'AC') {
       gradientStart = colorScheme.error;
       gradientEnd = colorScheme.error.withValues(alpha: 0.85);
       textColor = colorScheme.onError;
@@ -516,403 +558,365 @@ class _GraphPageState extends State<GraphPage> {
       textColor = colorScheme.onErrorContainer;
       borderColor = colorScheme.error.withValues(alpha: 0.26);
       shadowColor = colorScheme.error;
-    } else if (['/', '*', '-', '+', '^', '(', ')'].contains(key) ||
-        (_showScientificKeys &&
-            [
-              'sin',
-              'cos',
-              'tan',
-              'log',
-              'ln',
-              'exp',
-              'sqrt',
-              'abs',
-              '!',
-              'π',
-              'e',
-            ].contains(key))) {
+    } else if (['÷', '×', '-', '+', '=', 'x^2', '^', '|x|', '√'].contains(key)) {
       gradientStart = colorScheme.secondaryContainer;
       gradientEnd = colorScheme.secondaryContainer.withValues(alpha: 0.9);
       textColor = colorScheme.onSecondaryContainer;
       borderColor = colorScheme.secondary.withValues(alpha: 0.22);
       shadowColor = colorScheme.secondary;
+    } else if (['sin', 'cos', 'tan', 'log', 'ln', 'e', 'π', '(', ')'].contains(key)) {
+      fontSize = 18.0;
     }
-
-    if (key == 'Sci' || key == 'Basic') {
-      fontSize = 16.0;
+    else if (key == 'x') {
       gradientStart = colorScheme.primary;
-      gradientEnd = colorScheme.primary.withValues(alpha: 0.86);
+      gradientEnd = colorScheme.primary.withValues(alpha: 0.85);
       textColor = colorScheme.onPrimary;
       borderColor = colorScheme.primary.withValues(alpha: 0.24);
       shadowColor = colorScheme.primary;
     }
 
-    return (
-      gradientStart: gradientStart,
-      gradientEnd: gradientEnd,
-      textColor: textColor,
-      borderColor: borderColor,
-      shadowColor: shadowColor,
-      fontSize: fontSize,
+    return Expanded(
+      child: Padding(
+        padding: const EdgeInsets.all(4.0),
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(999),
+            border: Border.all(color: borderColor, width: 1.1),
+            gradient: LinearGradient(
+              colors: [gradientStart, gradientEnd],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: shadowColor.withValues(alpha: 0.22),
+                blurRadius: 18,
+                spreadRadius: 0.2,
+                offset: const Offset(0, 8),
+              ),
+            ],
+          ),
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              borderRadius: BorderRadius.circular(16),
+              onTap: () => _onKeyPress(key),
+              overlayColor: WidgetStateProperty.all(textColor.withValues(alpha: 0.1)),
+              child: Center(
+                child: _buildButtonContent(key, fontSize, textColor),
+              ),
+            ),
+          ),
+        ),
+      ),
     );
-  }
-
-  @override
-  void dispose() {
-    for (var controller in _functionControllers) {
-      controller.dispose();
-    }
-    for (var focusNode in _focusNodes) {
-      focusNode.dispose();
-    }
-    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    final List<String> currentKeypadKeys = _showScientificKeys
-        ? _scientificKeypadKeys
-        : _basicKeypadKeys;
-    final screenWidth = MediaQuery.of(context).size.width;
-    final previewMargin = _previewHorizontalMargin(screenWidth);
 
     List<String> functionsToPlot = [];
     List<Color> colorsToPlot = [];
     for (int i = 0; i < _currentFunctions.length; i++) {
-      if (_currentFunctions[i].trim().isNotEmpty && _errorMessages[i].isEmpty) {
-        functionsToPlot.add(_currentFunctions[i]);
+      String fn = _currentFunctions[i].trim();
+      if (fn.isNotEmpty && _errorMessages[i].isEmpty) {
+        functionsToPlot.add(fn);
         colorsToPlot.add(_functionColors[i]);
       }
     }
 
-    final List<List<String>> keypadRows = [];
-    for (int i = 0; i < currentKeypadKeys.length; i += 4) {
-      keypadRows.add(
-        currentKeypadKeys.sublist(i, min(i + 4, currentKeypadKeys.length)),
-      );
-    }
-
     return Scaffold(
-      appBar: null,
-      body: Stack(
-        fit: StackFit.expand,
-        children: [
-          Column(
-            children: [
-              Expanded(
-                flex: 5,
-                child: CustomScrollView(
-                  slivers: [
-                    SliverToBoxAdapter(
-                      child: Padding(
-                        padding: EdgeInsets.only(
-                          left: 16,
-                          right: 16,
-                          top: MediaQuery.of(context).viewPadding.top + 70,
-                          bottom: 12, // un po' di spazio prima della preview
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            const SizedBox(height: 16),
-                            ..._functionControllers.asMap().entries.map((
-                              entry,
-                            ) {
-                              int idx = entry.key;
-                              TextEditingController controller = entry.value;
-                              return Padding(
-                                padding: const EdgeInsets.only(bottom: 12.0),
-                                child: Column(
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.stretch,
-                                  children: [
-                                    TextField(
-                                      controller: controller,
-                                      focusNode: _focusNodes[idx],
-                                      readOnly: true,
-                                      showCursor: _focusNodes[idx].hasFocus
-                                          ? _showCursorAtIndex[idx]
-                                          : false,
-                                      onTap: () {
-                                        setState(() {
-                                          _focusNodes[idx].requestFocus();
-                                          _focusedController = controller;
-                                          if (_isPlaceholder[idx]) {
-                                            controller.clear();
-                                            _isPlaceholder[idx] = false;
-                                            _updateFunction(idx);
-                                          }
-
-                                          final int caretOffset =
-                                              controller.selection.baseOffset;
-                                          final int textLength =
-                                              controller.text.length;
-                                          _showCursorAtIndex[idx] =
-                                              controller.text.isEmpty ||
-                                              (caretOffset >= 0 &&
-                                                  caretOffset < textLength);
-                                        });
-                                      },
-                                      decoration: InputDecoration(
-                                        labelText: 'f${idx + 1}(x)',
-                                        border: OutlineInputBorder(
-                                          borderRadius: BorderRadius.circular(
-                                            12,
-                                          ),
-                                          borderSide: BorderSide(
-                                            color: _focusNodes[idx].hasFocus
-                                                ? colorScheme.primary
-                                                : colorScheme.outline,
-                                            width: 2.0,
-                                          ),
-                                        ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderRadius: BorderRadius.circular(
-                                            12,
-                                          ),
-                                          borderSide: BorderSide(
-                                            color: colorScheme.primary,
-                                            width: 2.0,
-                                          ),
-                                        ),
-                                        prefixIcon: Icon(
-                                          Icons.show_chart,
-                                          color: _functionColors[idx],
-                                        ),
-                                        suffixIcon: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            if (idx ==
-                                                _functionControllers.length - 1)
-                                              IconButton(
-                                                icon: Icon(
-                                                  Icons.add,
-                                                  color: colorScheme.primary,
-                                                ),
-                                                onPressed: () =>
-                                                    _addFunctionField(
-                                                      initialText: '',
-                                                      isPlaceholder: false,
-                                                    ),
-                                                tooltip: 'Aggiungi funzione',
-                                              ),
-                                            if (_functionControllers.length > 1)
-                                              IconButton(
-                                                icon: Icon(
-                                                  Icons.close,
-                                                  color: colorScheme
-                                                      .onSurfaceVariant,
-                                                ),
-                                                onPressed: () =>
-                                                    _removeFunctionField(idx),
-                                                tooltip: 'Rimuovi funzione',
-                                              ),
-                                          ],
-                                        ),
-                                      ),
-                                      style: TextStyle(
-                                        color: colorScheme.onSurface,
-                                        fontSize: 20,
-                                      ),
-                                      textAlign: TextAlign.end,
-                                    ),
-                                    if (_errorMessages[idx].isNotEmpty)
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                          top: 8.0,
-                                        ),
-                                        child: Card(
-                                          color: colorScheme.errorContainer,
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(
-                                              8,
-                                            ),
-                                          ),
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Text(
-                                              _errorMessages[idx],
-                                              style: TextStyle(
-                                                color: colorScheme
-                                                    .onErrorContainer,
-                                                fontSize: 12,
-                                              ),
-                                              textAlign: TextAlign.center,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                  ],
-                                ),
-                              );
-                            }), //.toList(),
-                          ],
-                        ),
-                      ),
-                    ),
-
-                    // 2) La preview del grafico si espande fino al bordo superiore del tastierino
-                    SliverFillRemaining(
-                      hasScrollBody: false,
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: previewMargin,
-                        ).copyWith(bottom: 16),
-                        child: Container(
-                          constraints: const BoxConstraints(
-                            minHeight: 120,
-                          ), // fallback minimo
-                          decoration: BoxDecoration(
-                            color: colorScheme.surfaceContainerHighest,
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(
-                              color: colorScheme.outline,
-                              width: 1,
-                            ),
+      backgroundColor: colorScheme.surface,
+      body: GestureDetector(
+        onTap: () {
+          FocusScope.of(context).unfocus();
+          setState(() {
+            _focusedController = null;
+          });
+        },
+        behavior: HitTestBehavior.opaque,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            Column(
+              children: [
+                Expanded(
+                  flex: 4,
+                  child: CustomScrollView(
+                    controller: _scrollController,
+                    slivers: [
+                      SliverToBoxAdapter(
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                            left: 16,
+                            right: 16,
+                            top: MediaQuery.of(context).viewPadding.top + 70,
+                            bottom: 12,
                           ),
-                          child: Stack(
-                            alignment: Alignment.center,
+                          child: Column(
                             children: [
-                              Positioned.fill(
-                                child: GestureDetector(
-                                  onTap: () {
-                                    bool hasPlotableFunctions =
-                                        functionsToPlot.isNotEmpty;
-                                    if (hasPlotableFunctions) {
-                                      Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                          builder: (ctx) => FullScreenGraphPage(
-                                            functionStrings: functionsToPlot,
-                                            functionColors: colorsToPlot,
-                                            evaluateFunction: _evaluateFunction,
-                                            xMin: xMin,
-                                            xMax: xMax,
-                                            yMin: yMin,
-                                            yMax: yMax,
-                                          ),
-                                        ),
-                                      );
-                                    } else {
-                                      ScaffoldMessenger.of(
-                                        context,
-                                      ).showSnackBar(
-                                        const SnackBar(
-                                          content: Text(
-                                            'Inserisci almeno una funzione valida da visualizzare.',
-                                          ),
-                                        ),
-                                      );
-                                    }
-                                  },
-                                  child: CustomPaint(
-                                    painter: GraphPainter(
-                                      functionStrings: functionsToPlot,
-                                      evaluateFunction: _evaluateFunction,
-                                      xMin: xMin,
-                                      xMax: xMax,
-                                      yMin: yMin,
-                                      yMax: yMax,
-                                      axisColor: colorScheme.onSurfaceVariant,
-                                      lineColors: colorsToPlot,
-                                      gridColor:
-                                          Theme.of(context).brightness ==
-                                              Brightness.dark
-                                          ? AppColors.white.withValues(
-                                              alpha: 0.15,
-                                            )
-                                          : AppColors.black.withValues(
-                                              alpha: 0.15,
+                              ..._functionControllers.asMap().entries.map((entry) {
+                                int idx = entry.key;
+                                TextEditingController controller = entry.value;
+                                bool hasFocus = _focusNodes[idx].hasFocus;
+  
+                                String latexPreview = _convertInputToLatex(controller.text);
+  
+                                return Padding(
+                                  padding: const EdgeInsets.only(bottom: 8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                                    children: [
+                                      Row(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Container(
+                                            width: 40,
+                                            height: 40,
+                                            decoration: BoxDecoration(
+                                              color: _functionColors[idx].withValues(alpha: 0.15),
+                                              borderRadius: BorderRadius.circular(8),
+                                              border: Border.all(color: _functionColors[idx], width: 2),
                                             ),
-                                      textColor: colorScheme.onSurface,
-                                    ),
+                                            child: Center(
+                                              child: Text(
+                                                'f${idx + 1}',
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  color: _functionColors[idx],
+                                                  fontSize: 12,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          const SizedBox(width: 12),
+                                          Expanded(
+                                            child: TextField(
+                                              controller: controller,
+                                              focusNode: _focusNodes[idx],
+                                              scrollController: _fieldScrollControllers[idx],
+                                              readOnly: false,
+                                              keyboardType: TextInputType.none,
+                                              showCursor: true,
+                                              autocorrect: false,
+                                              enableSuggestions: false,
+                                              onTap: () {
+                                                setState(() {
+                                                  _focusNodes[idx].requestFocus();
+                                                  _focusedController = controller;
+                                                  if (_isPlaceholder[idx]) {
+                                                    controller.clear();
+                                                    _isPlaceholder[idx] = false;
+                                                    _updateFunction(idx);
+                                                  }
+                                                });
+                                              },
+                                              decoration: InputDecoration(
+                                                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                                                border: OutlineInputBorder(
+                                                  borderRadius: BorderRadius.circular(12),
+                                                  borderSide: BorderSide(color: colorScheme.outlineVariant),
+                                                ),
+                                                focusedBorder: OutlineInputBorder(
+                                                  borderRadius: BorderRadius.circular(12),
+                                                  borderSide: BorderSide(color: colorScheme.primary, width: 2),
+                                                ),
+                                                filled: true,
+                                                fillColor: hasFocus
+                                                    ? colorScheme.surfaceContainerHighest.withValues(alpha: 0.3)
+                                                    : Colors.transparent,
+                                                suffixIcon: Row(
+                                                  mainAxisSize: MainAxisSize.min,
+                                                  children: [
+                                                    if (idx == _functionControllers.length - 1)
+                                                      IconButton(
+                                                        icon: Icon(Icons.add, color: colorScheme.primary),
+                                                        onPressed: () => _addFunctionField(),
+                                                        tooltip: 'Nuova funzione',
+                                                      ),
+                                                    if (_functionControllers.length > 1)
+                                                      IconButton(
+                                                        icon: Icon(Icons.close, size: 20, color: colorScheme.outline),
+                                                        onPressed: () => _removeFunctionField(idx),
+                                                      ),
+                                                  ],
+                                                ),
+                                              ),
+                                              style: TextStyle(
+                                                color: colorScheme.onSurface,
+                                                fontSize: 18,
+                                                fontFamily: 'monospace',
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      if (controller.text.isNotEmpty)
+                                        Padding(
+                                          padding: const EdgeInsets.only(left: 8, top: 8),
+                                          child: Align(
+                                            alignment: Alignment.centerLeft,
+                                            child: SingleChildScrollView(
+                                              scrollDirection: Axis.horizontal,
+                                              child: Math.tex(
+                                                'f_{${idx + 1}}(x) = $latexPreview',
+                                                textStyle: TextStyle(
+                                                  fontSize: 18,
+                                                  color: colorScheme.onSurfaceVariant,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      if (_errorMessages[idx].isNotEmpty)
+                                        Padding(
+                                          padding: const EdgeInsets.only(left: 52, top: 4),
+                                          child: Text(
+                                            _errorMessages[idx],
+                                            style: TextStyle(color: colorScheme.error, fontSize: 12),
+                                          ),
+                                        ),
+                                    ],
                                   ),
-                                ),
-                              ),
-                              Positioned(
-                                bottom: 8,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 12,
-                                    vertical: 6,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: AppColors.black.withValues(
-                                      alpha: 0.5,
-                                    ),
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  child: const Text(
-                                    'Tocca il grafico per ingrandirlo',
-                                    style: TextStyle(
-                                      color: AppColors.white,
-                                      fontSize: 12,
-                                    ),
-                                  ),
-                                ),
-                              ),
+                                );
+                              }),
                             ],
                           ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              Divider(
-                height: 1,
-                color: colorScheme.outline.withValues(alpha: 0.5),
-              ),
-              Expanded(
-                flex: 5,
-                child: Container(
-                  color: colorScheme.surface,
-                  padding: EdgeInsets.only(
-                    bottom: MediaQuery.of(context).viewPadding.bottom + 98,
-                    left: 8.0,
-                    right: 8.0,
-                    top: 8.0,
-                  ),
-                  child: Column(
-                    children: keypadRows.map((row) {
-                      return Expanded(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            ...row.map((key) {
-                              final style = _keypadButtonStyle(
-                                key,
-                                colorScheme,
-                              );
-                              return Expanded(
-                                child: _buildKeypadButton(key, style),
-                              );
-                            }),
-                            if (row.length < 4)
-                              ...List.generate(
-                                4 - row.length,
-                                (_) => const Expanded(child: SizedBox.shrink()),
+                      SliverFillRemaining(
+                        hasScrollBody: false,
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                          child: Container(
+                            constraints: const BoxConstraints(minHeight: 180),
+                            decoration: BoxDecoration(
+                              color: colorScheme.surfaceContainerHighest,
+                              borderRadius: BorderRadius.circular(16),
+                              border: Border.all(color: colorScheme.outlineVariant),
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(16),
+                              child: Stack(
+                                children: [
+                                  Positioned.fill(
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        if (functionsToPlot.isNotEmpty) {
+                                          Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                              builder: (ctx) => FullScreenGraphPage(
+                                                functionStrings: functionsToPlot,
+                                                functionColors: colorsToPlot,
+                                                evaluateFunction: _evaluateFunction,
+                                                xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
+                                              ),
+                                            ),
+                                          );
+                                        } else {
+                                          ScaffoldMessenger.of(context).showSnackBar(
+                                            const SnackBar(content: Text('Inserisci una funzione valida.')),
+                                          );
+                                        }
+                                      },
+                                      child: CustomPaint(
+                                        painter: GraphPainter(
+                                          functionStrings: functionsToPlot,
+                                          evaluateFunction: _evaluateFunction,
+                                          xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
+                                          axisColor: colorScheme.onSurfaceVariant,
+                                          lineColors: colorsToPlot,
+                                          gridColor: colorScheme.onSurface.withValues(alpha: 0.1),
+                                          textColor: colorScheme.onSurface,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Positioned(
+                                    bottom: 8,
+                                    right: 8,
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                      decoration: BoxDecoration(
+                                        color: Colors.black45,
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                      child: const Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          Icon(Icons.fullscreen, color: Colors.white, size: 16),
+                                          SizedBox(width: 4),
+                                          Text('Tocca per ingrandire', style: TextStyle(color: Colors.white, fontSize: 10)),
+                                        ],
+                                      ),
+                                    ),
+                                  )
+                                ],
                               ),
-                          ],
+                            ),
+                          ),
                         ),
-                      );
-                    }).toList(),
+                      ),
+                    ],
                   ),
                 ),
-              ),
-            ],
-          ),
-          Positioned(
-            top: MediaQuery.of(context).viewPadding.top,
-            left: 16,
-            right: 16,
-            child: FloatingTopBar(
-              title: 'Visualizzatore Grafici',
-              leading: FloatingTopBarLeading.back,
-              onBackPressed: () => Navigator.of(context).maybePop(),
+                Expanded(
+                  flex: 5,
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.vertical(
+                        top: Radius.circular(28),
+                      ),
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          colorScheme.surfaceContainerLowest,
+                          colorScheme.surface,
+                        ],
+                      ),
+                      border: Border(
+                        top: BorderSide(
+                          color: colorScheme.outlineVariant.withValues(alpha: 0.28),
+                          width: 1,
+                        ),
+                      ),
+                    ),
+                    child: Container(
+                      padding: EdgeInsets.only(
+                        bottom: MediaQuery.of(context).viewPadding.bottom + 92,
+                        top: 10.0,
+                        left: 10.0,
+                        right: 10.0,
+                      ),
+                      child: Column(
+                        children: _keypadLayout.map((row) {
+                          return Expanded(
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: row.map((key) => _buildKeypadButton(key, colorScheme)).toList(),
+                            ),
+                          );
+                        }).toList(),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ),
-        ],
+            Positioned(
+              top: MediaQuery.of(context).viewPadding.top,
+              left: 16,
+              right: 16,
+              child: FloatingTopBar(
+                title: 'Grafici',
+                leading: FloatingTopBarLeading.back,
+                onBackPressed: () => Navigator.of(context).maybePop(),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -953,16 +957,12 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
     _xMax = widget.xMax;
     _yMin = widget.yMin;
     _yMax = widget.yMax;
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) {
-        _setProportionalYRange();
-      }
-    });
+    WidgetsBinding.instance.addPostFrameCallback((_) => _setProportionalYRange());
   }
 
   void _setProportionalYRange() {
     if (!mounted) return;
-    final Size screenSize = context.size!;
+    final Size screenSize = MediaQuery.of(context).size;
     final double aspectRatio = screenSize.height / screenSize.width;
     final double xRange = _xMax - _xMin;
     final double yRange = xRange * aspectRatio;
@@ -987,49 +987,16 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
     });
   }
 
-  void _zoomIn() {
+  void _zoom(double factor) {
     setState(() {
-      final currentWidth = _xMax - _xMin;
-      final currentHeight = _yMax - _yMin;
-      const zoomFactor = 0.8;
-
-      final newWidth = currentWidth * zoomFactor;
-      final newHeight = currentHeight * zoomFactor;
-      final deltaX = (currentWidth - newWidth) / 2;
-      final deltaY = (currentHeight - newHeight) / 2;
-
-      _xMin += deltaX;
-      _xMax -= deltaX;
-      _yMin += deltaY;
-      _yMax -= deltaY;
-    });
-  }
-
-  void _zoomOut() {
-    setState(() {
-      final currentWidth = _xMax - _xMin;
-      final currentHeight = _yMax - _yMin;
-      const zoomFactor = 1.2;
-
-      final newWidth = currentWidth * zoomFactor;
-      final newHeight = currentHeight * zoomFactor;
-      final deltaX = (newWidth - currentWidth) / 2;
-      final deltaY = (newHeight - currentHeight) / 2;
-
-      _xMin -= deltaX;
-      _xMax += deltaX;
-      _yMin -= deltaY;
-      _yMax += deltaY;
-    });
-  }
-
-  void _centerGraph() {
-    setState(() {
-      _xMin = _initialXMin;
-      _xMax = _initialXMax;
-      _yMin = _initialYMin;
-      _yMax = _initialYMax;
-      _setProportionalYRange();
+      final w = _xMax - _xMin;
+      final h = _yMax - _yMin;
+      final nw = w * factor;
+      final nh = h * factor;
+      final dx = (w - nw) / 2;
+      final dy = (h - nh) / 2;
+      _xMin += dx; _xMax -= dx;
+      _yMin += dy; _yMax -= dy;
     });
   }
 
@@ -1037,41 +1004,22 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
 
-    String titleText = 'Grafici: ';
-    List<String> validFunctions = widget.functionStrings
-        .where((f) => f.trim().isNotEmpty)
-        .toList();
-    if (validFunctions.isNotEmpty) {
-      titleText += validFunctions.map((f) => 'f(x) = $f').join(', ');
-      if (titleText.length > 50) {
-        titleText = 'Grafici Multipli';
-      }
-    } else {
-      titleText = 'Grafico';
-    }
-
     return Scaffold(
-      appBar: null,
       body: Stack(
         children: [
           SizedBox.expand(
             child: Container(
-              color: colorScheme.surfaceContainerHighest,
+              color: colorScheme.surface,
               child: GestureDetector(
                 onPanUpdate: _onPanUpdate,
                 child: CustomPaint(
                   painter: GraphPainter(
                     functionStrings: widget.functionStrings,
                     evaluateFunction: widget.evaluateFunction,
-                    xMin: _xMin,
-                    xMax: _xMax,
-                    yMin: _yMin,
-                    yMax: _yMax,
+                    xMin: _xMin, xMax: _xMax, yMin: _yMin, yMax: _yMax,
                     axisColor: colorScheme.onSurfaceVariant,
                     lineColors: widget.functionColors,
-                    gridColor: Theme.of(context).brightness == Brightness.dark
-                        ? AppColors.white.withValues(alpha: 0.15)
-                        : AppColors.black.withValues(alpha: 0.15),
+                    gridColor: colorScheme.onSurface.withValues(alpha: 0.2),
                     textColor: colorScheme.onSurface,
                   ),
                 ),
@@ -1079,34 +1027,35 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
             ),
           ),
           Positioned(
-            bottom: 120,
+            bottom: 130,
             right: 16,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 FloatingActionButton(
-                  heroTag: 'center_graph_button',
-                  onPressed: _centerGraph,
-                  backgroundColor: colorScheme.primary,
-                  child: Icon(
-                    Icons.center_focus_strong,
-                    color: colorScheme.onPrimary,
-                  ),
+                  heroTag: 'zoom_in',
+                  mini: true,
+                  onPressed: () => _zoom(0.8),
+                  child: const Icon(Icons.add),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 8),
                 FloatingActionButton(
-                  heroTag: 'zoom_in_button',
-                  onPressed: _zoomIn,
-                  backgroundColor: colorScheme.primary,
-                  child: Icon(Icons.zoom_in, color: colorScheme.onPrimary),
+                  heroTag: 'zoom_out',
+                  mini: true,
+                  onPressed: () => _zoom(1.25),
+                  child: const Icon(Icons.remove),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 8),
                 FloatingActionButton(
-                  heroTag: 'zoom_out_button',
-                  onPressed: _zoomOut,
-                  backgroundColor: colorScheme.primary,
-                  child: Icon(Icons.zoom_out, color: colorScheme.onPrimary),
+                  heroTag: 'center',
+                  mini: true,
+                  onPressed: () {
+                    setState(() {
+                      _xMin = _initialXMin; _xMax = _initialXMax;
+                      _yMin = _initialYMin; _yMax = _initialYMax;
+                      _setProportionalYRange();
+                    });
+                  },
+                  child: const Icon(Icons.center_focus_strong),
                 ),
               ],
             ),
@@ -1116,7 +1065,7 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
             left: 16,
             right: 16,
             child: FloatingTopBar(
-              title: titleText, // già calcolato sopra
+              title: 'Visualizzazione Intera',
               leading: FloatingTopBarLeading.back,
               onBackPressed: () => Navigator.of(context).maybePop(),
             ),
@@ -1151,129 +1100,74 @@ class GraphPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final Paint axisPaint = Paint()
-      ..color = axisColor
-      ..strokeWidth = 2.0;
-
-    final Paint gridPaint = Paint()
-      ..color = gridColor
-      ..strokeWidth = 0.5;
+    final Paint axisPaint = Paint()..color = axisColor..strokeWidth = 2.0;
+    final Paint gridPaint = Paint()..color = gridColor..strokeWidth = 1.0;
 
     double toCanvasX(double x) => (x - xMin) * size.width / (xMax - xMin);
-    double toCanvasY(double y) =>
-        size.height - ((y - yMin) * size.height / (yMax - yMin));
-
-    final double xAxisRange = xMax - xMin;
-    final double xAxisScale = size.width / xAxisRange;
-    final bool drawNumbersX = xAxisScale > 15;
-
-    final double yAxisRange = yMax - yMin;
-    final double yAxisScale = size.height / yAxisRange;
-    final bool drawNumbersY = yAxisScale > 15;
+    double toCanvasY(double y) => size.height - ((y - yMin) * size.height / (yMax - yMin));
 
     for (double i = xMin.ceilToDouble(); i <= xMax.floorToDouble(); i++) {
-      if (i != 0) {
-        canvas.drawLine(
-          Offset(toCanvasX(i), 0),
-          Offset(toCanvasX(i), size.height),
-          gridPaint,
-        );
-      }
+      if (i == 0) continue;
+      final x = toCanvasX(i);
+      if (x >= 0 && x <= size.width) canvas.drawLine(Offset(x, 0), Offset(x, size.height), gridPaint);
     }
     for (double i = yMin.ceilToDouble(); i <= yMax.floorToDouble(); i++) {
-      if (i != 0) {
-        canvas.drawLine(
-          Offset(0, toCanvasY(i)),
-          Offset(size.width, toCanvasY(i)),
-          gridPaint,
-        );
-      }
+      if (i == 0) continue;
+      final y = toCanvasY(i);
+      if (y >= 0 && y <= size.height) canvas.drawLine(Offset(0, y), Offset(size.width, y), gridPaint);
     }
 
-    canvas.drawLine(
-      Offset(toCanvasX(0), 0),
-      Offset(toCanvasX(0), size.height),
-      axisPaint,
-    );
-    canvas.drawLine(
-      Offset(0, toCanvasY(0)),
-      Offset(size.width, toCanvasY(0)),
-      axisPaint,
-    );
+    final zeroX = toCanvasX(0);
+    final zeroY = toCanvasY(0);
+    if (zeroX >= 0 && zeroX <= size.width) canvas.drawLine(Offset(zeroX, 0), Offset(zeroX, size.height), axisPaint);
+    if (zeroY >= 0 && zeroY <= size.height) canvas.drawLine(Offset(0, zeroY), Offset(size.width, zeroY), axisPaint);
 
     final textStyle = TextStyle(color: textColor, fontSize: 10);
-    void drawText(Canvas canvas, String text, Offset offset) {
-      final textSpan = TextSpan(text: text, style: textStyle);
-      final textPainter = TextPainter(
-        text: textSpan,
-        textDirection: TextDirection.ltr,
-      );
-      textPainter.layout();
-      textPainter.paint(canvas, offset);
-    }
+    final tp = TextPainter(textDirection: TextDirection.ltr);
 
-    if (drawNumbersX) {
-      for (double i = xMin.ceilToDouble(); i <= xMax.floorToDouble(); i += 1) {
-        if (i != 0) {
-          drawText(
-            canvas,
-            i.toInt().toString(),
-            Offset(toCanvasX(i) - 5, toCanvasY(0) + 5),
-          );
-        }
-      }
-    }
-
-    if (drawNumbersY) {
-      for (double i = yMin.ceilToDouble(); i <= yMax.floorToDouble(); i += 1) {
-        if (i != 0) {
-          drawText(
-            canvas,
-            i.toInt().toString(),
-            Offset(toCanvasX(0) + 5, toCanvasY(i) - 5),
-          );
-        }
+    if (size.width / (xMax - xMin) > 20) {
+      for (double i = xMin.ceilToDouble(); i <= xMax.floorToDouble(); i += 2) {
+        if (i == 0) continue;
+        tp.text = TextSpan(text: i.toInt().toString(), style: textStyle);
+        tp.layout();
+        tp.paint(canvas, Offset(toCanvasX(i) - tp.width / 2, zeroY + 4));
       }
     }
 
     for (int i = 0; i < functionStrings.length; i++) {
-      final String funcString = functionStrings[i];
-      final Color lineColor = lineColors[i % lineColors.length];
+      final paint = Paint()
+        ..color = lineColors[i % lineColors.length]
+        ..strokeWidth = 2.5
+        ..style = PaintingStyle.stroke
+        ..strokeJoin = StrokeJoin.round;
 
-      final Paint linePaint = Paint()
-        ..color = lineColor
-        ..strokeWidth = 3.0
-        ..style = PaintingStyle.stroke;
+      final path = Path();
+      bool isFirst = true;
+      final step = (xMax - xMin) / size.width;
 
-      final Path path = Path();
-      bool firstPoint = true;
-      for (double x = xMin; x <= xMax; x += (xMax - xMin) / size.width / 2) {
-        final y = evaluateFunction(funcString, x);
-        if (y != null && y >= yMin && y <= yMax) {
-          final px = toCanvasX(x);
-          final py = toCanvasY(y);
-          if (firstPoint) {
-            path.moveTo(px, py);
-            firstPoint = false;
+      for (double x = xMin; x <= xMax; x += step) {
+        final y = evaluateFunction(functionStrings[i], x);
+        if (y != null && y >= yMin * 2 && y <= yMax * 2) {
+          final cx = toCanvasX(x);
+          final cy = toCanvasY(y);
+          if (cy.isFinite) {
+            if (isFirst) {
+              path.moveTo(cx, cy);
+              isFirst = false;
+            } else {
+              path.lineTo(cx, cy);
+            }
           } else {
-            path.lineTo(px, py);
+            isFirst = true;
           }
         } else {
-          firstPoint = true;
+          isFirst = true;
         }
       }
-      canvas.drawPath(path, linePaint);
+      canvas.drawPath(path, paint);
     }
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    GraphPainter oldPainter = oldDelegate as GraphPainter;
-    return oldPainter.xMin != xMin ||
-        oldPainter.xMax != xMax ||
-        oldPainter.yMin != yMin ||
-        oldPainter.yMax != yMax ||
-        oldPainter.functionStrings.length != functionStrings.length ||
-        oldPainter.lineColors.length != lineColors.length;
-  }
+  bool shouldRepaint(covariant GraphPainter oldDelegate) => true;
 }
