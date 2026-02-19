@@ -217,7 +217,9 @@ class _CalculatorPageState extends State<CalculatorPage> {
       return Icon(Icons.backspace_outlined, size: fontSize + 2);
     }
 
-    if (['AC', 'Sci', 'RAD/DEG_TOGGLE'].contains(actionText)) {
+    final isNumberOrDot = RegExp(r'^[0-9.]$').hasMatch(actionText);
+
+    if (['AC', 'Sci', 'RAD/DEG_TOGGLE'].contains(actionText) || isNumberOrDot) {
       return Text(displayedText);
     }
 
