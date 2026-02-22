@@ -76,6 +76,24 @@ class _MyAppState extends State<MyApp> {
   // App theme mode (dark/light)
   ThemeMode _themeMode = ThemeMode.dark;
 
+  // Colori disponibili per il tema
+  static const Map<String, Color> _availableColors = {
+    'blue': Colors.blue,
+    //'lightBlue': Colors.lightBlue,
+    'green': Colors.green,
+    'yellow': Colors.yellow, 
+    'orange': Colors.orange,
+    'pink': Colors.pinkAccent,
+    'purple': Colors.deepPurpleAccent,
+    //'grey': Colors.blueGrey,
+  };
+
+  // Chiave del colore selezionato
+  String _selectedColorKey = 'blue';
+
+  Color get _currentSeedColor =>
+      _availableColors[_selectedColorKey] ?? Colors.blue;
+
   // Stores the IDs of favorite formulas
   Set<String> _favoriteIds = {};
 
@@ -119,8 +137,8 @@ class _MyAppState extends State<MyApp> {
   bool _showGlobalAppBar = true;
 
   ColorScheme get _currentColorScheme => _themeMode == ThemeMode.dark
-      ? AppTheme.darkColorScheme
-      : AppTheme.lightColorScheme;
+      ? AppTheme.getDarkColorScheme(_currentSeedColor)
+      : AppTheme.getLightColorScheme(_currentSeedColor);
 
   MaterialApp _buildRootApp({
     required Widget home,
@@ -131,8 +149,8 @@ class _MyAppState extends State<MyApp> {
       title: title,
       debugShowCheckedModeBanner: debugShowCheckedModeBanner,
       themeMode: _themeMode,
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
+      theme: AppTheme.getLightTheme(_currentSeedColor),
+      darkTheme: AppTheme.getDarkTheme(_currentSeedColor),
       home: home,
     );
   }
@@ -154,15 +172,17 @@ class _MyAppState extends State<MyApp> {
     _loadAllFormulasAndUserFormulas();
     _loadFavorites();
     _loadNotes();
-    _loadThemeMode();
+    _loadPreferences();
     _pages = _buildPages();
     _checkOnboardingStatus();
   }
 
-  // Loads the saved theme (dark/light) from SharedPreferences
-  Future<void> _loadThemeMode() async {
+  // Carica le preferenze (Tema scuro/chiaro e Colore principale)
+  Future<void> _loadPreferences() async {
     final prefs = await SharedPreferences.getInstance();
     final savedTheme = prefs.getString('themeMode');
+    final savedColor = prefs.getString('colorTheme') ?? 'blue';
+
     setState(() {
       if (savedTheme == 'light') {
         _themeMode = ThemeMode.light;
@@ -171,8 +191,39 @@ class _MyAppState extends State<MyApp> {
       } else {
         _themeMode = ThemeMode.dark;
       }
-      developer.log('Caricato tema: $_themeMode');
-      _updateTabPages(); // Refresh UI to apply theme
+
+      _selectedColorKey =
+          _availableColors.containsKey(savedColor) ? savedColor : 'blue';
+
+      developer.log('Caricato tema: $_themeMode, colore: $_selectedColorKey');
+      _updateTabPages(); // Refresh UI to apply theme and color
+    });
+  }
+
+  // Toggles tra modalità chiara e scura
+  void _toggleTheme() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _themeMode = (_themeMode == ThemeMode.light)
+          ? ThemeMode.dark
+          : ThemeMode.light;
+      prefs.setString(
+        'themeMode',
+        _themeMode == ThemeMode.dark ? 'dark' : 'light',
+      );
+      developer.log('Theme changed to: $_themeMode');
+      _updateTabPages();
+    });
+  }
+
+  // Cambia e salva il colore principale
+  void _changeColor(String colorKey) async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _selectedColorKey = colorKey;
+      prefs.setString('colorTheme', colorKey);
+      developer.log('Color changed to: $_selectedColorKey');
+      _updateTabPages();
     });
   }
 
@@ -374,17 +425,17 @@ class _MyAppState extends State<MyApp> {
     _updateTabPages();
   }
 
-  // Loads saved notes 
+  // Loads saved notes
   Future<void> _loadNotes() async {
     try {
       final formulasWithNotes = await NotesService.getFormulasWithNotes();
       final notesByFormula = <String, List<Note>>{};
-      
+
       for (final formulaId in formulasWithNotes) {
         final notes = await NotesService.loadNotes(formulaId);
         notesByFormula[formulaId] = notes;
       }
-      
+
       setState(() {
         _formulaNotes = notesByFormula;
         developer.log('Loaded notes for ${_formulaNotes.length} formulas');
@@ -407,22 +458,6 @@ class _MyAppState extends State<MyApp> {
         developer.log('Notes saved for formula: $formulaId');
       });
     }
-  }
-
-  // Toggles between light and dark mode
-  void _toggleTheme() async {
-    final prefs = await SharedPreferences.getInstance();
-    setState(() {
-      _themeMode = (_themeMode == ThemeMode.light)
-          ? ThemeMode.dark
-          : ThemeMode.light;
-      prefs.setString(
-        'themeMode',
-        _themeMode == ThemeMode.dark ? 'dark' : 'light',
-      );
-      developer.log('Theme changed to: $_themeMode');
-      _updateTabPages();
-    });
   }
 
   // Handles navigation bar taps
@@ -464,8 +499,6 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
-
-
   // Builds the entire app UI
   @override
   Widget build(BuildContext context) {
@@ -501,7 +534,7 @@ class _MyAppState extends State<MyApp> {
               ),
             ),
             child: ListView(
-              padding: EdgeInsets.zero,
+              padding: EdgeInsets.only(bottom: 36),
               children: [
                 // Drawer header with app title
                 Container(
@@ -546,11 +579,14 @@ class _MyAppState extends State<MyApp> {
                 ListTile(
                   contentPadding: const EdgeInsets.symmetric(horizontal: 28),
                   leading: Icon(
-                    Icons.palette_outlined,
+                    Icons.format_color_fill_outlined,
                     color: currentColorScheme.primary,
                     size: 28,
                   ),
-                  title: const Text('Tema', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500)),
+                  title: const Text(
+                    'Tema',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                  ),
                   trailing: Container(
                     decoration: BoxDecoration(
                       color: currentColorScheme.primaryContainer,
@@ -561,7 +597,7 @@ class _MyAppState extends State<MyApp> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Material(
-                          color: AppTheme.transparent,
+                          color: Colors.transparent,
                           borderRadius: BorderRadius.circular(24),
                           child: InkWell(
                             borderRadius: BorderRadius.circular(24),
@@ -576,7 +612,7 @@ class _MyAppState extends State<MyApp> {
                               decoration: BoxDecoration(
                                 color: !isDarkMode
                                     ? currentColorScheme.primary
-                                    : AppTheme.transparent,
+                                    : Colors.transparent,
                                 borderRadius: BorderRadius.circular(24),
                               ),
                               child: Icon(
@@ -590,7 +626,7 @@ class _MyAppState extends State<MyApp> {
                           ),
                         ),
                         Material(
-                          color: AppTheme.transparent,
+                          color: Colors.transparent,
                           borderRadius: BorderRadius.circular(24),
                           child: InkWell(
                             borderRadius: BorderRadius.circular(24),
@@ -605,7 +641,7 @@ class _MyAppState extends State<MyApp> {
                               decoration: BoxDecoration(
                                 color: isDarkMode
                                     ? currentColorScheme.primary
-                                    : AppTheme.transparent,
+                                    : Colors.transparent,
                                 borderRadius: BorderRadius.circular(24),
                               ),
                               child: Icon(
@@ -620,6 +656,69 @@ class _MyAppState extends State<MyApp> {
                         ),
                       ],
                     ),
+                  ),
+                ),
+
+                const SizedBox(height: 16),
+
+                // Color Picker
+                ListTile(
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 28),
+                  leading: Icon(
+                    Icons.color_lens_outlined,
+                    color: currentColorScheme.primary,
+                    size: 28,
+                  ),
+                  title: const Text(
+                    'Colore Principale',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                  ),
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.only(left: 18),
+                  child: Row(
+                    children: _availableColors.entries.map((entry) {
+                      final isSelected = entry.key == _selectedColorKey;
+                      return GestureDetector(
+                        onTap: () => _changeColor(entry.key),
+                        child: Container(
+                          margin: const EdgeInsets.only(
+                            right: 10,
+                            bottom: 8,
+                            top: 4,
+                          ),
+                          width: 36,
+                          height: 36,
+                          decoration: BoxDecoration(
+                            color: entry.value,
+                            shape: BoxShape.circle,
+                            border: isSelected
+                                ? Border.all(
+                                    color: currentColorScheme.onSurface,
+                                    width: 3,
+                                  )
+                                : null,
+                            boxShadow: isSelected
+                                ? [
+                                    BoxShadow(
+                                      color: entry.value.withValues(alpha: 0.4),
+                                      blurRadius: 8,
+                                      spreadRadius: 2,
+                                    ),
+                                  ]
+                                : null,
+                          ),
+                          child: isSelected
+                              ? const Icon(
+                                  Icons.check,
+                                  color: Colors.white,
+                                  size: 20,
+                                )
+                              : null,
+                        ),
+                      );
+                    }).toList(),
                   ),
                 ),
 
@@ -653,7 +752,10 @@ class _MyAppState extends State<MyApp> {
                   onTap: () async {
                     FocusScope.of(builderContext).unfocus();
                     Navigator.of(builderContext).pop();
-                    await Navigator.of(builderContext, rootNavigator: true).push(
+                    await Navigator.of(
+                      builderContext,
+                      rootNavigator: true,
+                    ).push(
                       MaterialPageRoute(
                         builder: (innerContext) => HelpPage(
                           themeMode: _themeMode,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:vector_math/vector_math_64.dart' show Vector3;
 import 'dart:math';
-import 'package:physics_ease_release/theme/app_theme.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 
 void main() {
@@ -16,8 +15,6 @@ class VectorCalculatorApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Calcolo Vettoriale',
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
       home: const VectorCalculatorPage(),
     );
@@ -39,13 +36,11 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
   final TextEditingController _y2Controller = TextEditingController();
   final TextEditingController _z2Controller = TextEditingController();
 
-  String _risultato = "";
+  String _risultato = "Inserisci valori validi.";
   dynamic _v1;
   dynamic _v2;
   dynamic _resultVector;
   String? _selectedOperation;
-  final TransformationController _transformationController =
-      TransformationController();
   bool _is3D = false;
 
   final List<String> _operations2D = [
@@ -127,16 +122,9 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
 
   void _onOperationSelected(String? operation) {
     if (operation == null) return;
-    _updateVectors();
     setState(() {
       _selectedOperation = operation;
     });
-
-    if (_is3D) {
-      _calcola3D(operation);
-    } else {
-      _calcola2D(operation);
-    }
   }
 
   void _calcola2D(String operation) {
@@ -268,6 +256,28 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
     });
   }
 
+  void _solveVectorOperation() {
+    _updateVectors();
+
+    if (_selectedOperation == null) {
+      setState(() {
+        _risultato = "Seleziona un'operazione per procedere.";
+      });
+      return;
+    }
+
+    if (_v1 == null || _v2 == null) {
+      _resetResult();
+      return;
+    }
+
+    if (_is3D) {
+      _calcola3D(_selectedOperation!);
+    } else {
+      _calcola2D(_selectedOperation!);
+    }
+  }
+
   void _clearFields() {
     _x1Controller.clear();
     _y1Controller.clear();
@@ -281,11 +291,12 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
     _risultato = "";
     _selectedOperation = null;
     _updateVectors();
+    _risultato = "Inserisci valori validi.";
   }
 
   @override
   Widget build(BuildContext context) {
-    //final colorScheme = Theme.of(context).colorScheme;
+    final colorScheme = Theme.of(context).colorScheme;
     return Scaffold(
       appBar: null,
       body: Stack(
@@ -317,20 +328,54 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
                   _is3D,
                   _updateVectors,
                 ),
-                const SizedBox(height: 16.0),
+                const SizedBox(height: 32.0),
+                _buildOperationDropdown(),
+                const SizedBox(height: 32.0),
                 Row(
                   children: [
                     Expanded(
-                      child: FilledButton.icon(
+                      child: ElevatedButton.icon(
+                        onPressed: _solveVectorOperation,
+                        icon: const Icon(Icons.check),
+                        label: const Text('Risolvi'),
+                        style: ElevatedButton.styleFrom(
+                          iconSize: 26,
+                          backgroundColor: colorScheme.primary,
+                          foregroundColor: colorScheme.onPrimary,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                          textStyle: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: ElevatedButton.icon(
                         onPressed: _clearFields,
-                        icon: const Icon(Icons.clear),
-                        label: const Text("Pulisci campi"),
+                        icon: const Icon(Icons.delete_sweep_outlined),
+                        label: const Text('Azzera'),
+                        style: ElevatedButton.styleFrom(
+                          iconSize: 26,
+                          backgroundColor: colorScheme.secondary,
+                          foregroundColor: colorScheme.onSecondary,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                          textStyle: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(height: 16.0),
-                _buildOperationDropdown(),
                 const SizedBox(height: 16.0),
                 _buildResultDisplay(),
                 const SizedBox(height: 24.0),
@@ -394,9 +439,11 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
                   decimal: true,
                   signed: true,
                 ),
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'Componente X',
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                 ),
                 onChanged: (_) => onChanged(),
               ),
@@ -409,9 +456,11 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
                   decimal: true,
                   signed: true,
                 ),
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'Componente Y',
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(16.0),
+                  ),
                 ),
                 onChanged: (_) => onChanged(),
               ),
@@ -425,9 +474,11 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
                     decimal: true,
                     signed: true,
                   ),
-                  decoration: const InputDecoration(
+                  decoration: InputDecoration(
                     labelText: 'Componente Z',
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                   ),
                   onChanged: (_) => onChanged(),
                 ),
@@ -441,17 +492,43 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
 
   Widget _buildOperationDropdown() {
     final operations = _is3D ? _operations3D : _operations2D;
-    return DropdownButtonFormField<String>(
-      decoration: const InputDecoration(
-        labelText: 'Seleziona operazione',
-        border: OutlineInputBorder(),
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 32.0),
+      child: DropdownButtonFormField<String>(
+        isExpanded: false,
+
+        borderRadius: BorderRadius.circular(28),
+
+        decoration: InputDecoration(
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 16,
+          ),
+          labelText: 'Seleziona operazione',
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(16),
+            borderSide: const BorderSide(color: Colors.grey),
+          ),
+        ),
+
+        value: _selectedOperation,
+        menuMaxHeight: 360,
+
+        alignment: AlignmentDirectional.centerStart,
+
+        items: operations.map((String value) {
+          return DropdownMenuItem<String>(
+            value: value,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Text(value),
+            ),
+          );
+        }).toList(),
+        onChanged: _onOperationSelected,
       ),
-      value: _selectedOperation,
-      menuMaxHeight: 350,
-      items: operations.map((String value) {
-        return DropdownMenuItem<String>(value: value, child: Text(value));
-      }).toList(),
-      onChanged: _onOperationSelected,
     );
   }
 
@@ -461,7 +538,7 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
       padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
         color: colorScheme.primaryContainer,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(16),
         border: Border.all(color: colorScheme.primary),
       ),
       child: Center(
@@ -485,13 +562,13 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
       },
       child: Card(
         elevation: 4,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(Icons.fullscreen, color: Theme.of(context).primaryColor),
+              Icon(Icons.fullscreen, color: Theme.of(context).colorScheme.onSurface),
               const SizedBox(width: 8),
               const Text(
                 'Visualizza Grafico',
@@ -505,71 +582,206 @@ class _VectorCalculatorPageState extends State<VectorCalculatorPage> {
   }
 
   void _showFullScreenGraph(BuildContext context) {
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _centerGraph();
-    });
-
     Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (BuildContext context) {
-          final colorScheme = Theme.of(context).colorScheme;
-          return Scaffold(
-            appBar: null,
-            body: Stack(
-              children: [
-                InteractiveViewer(
-                  transformationController: _transformationController,
-                  minScale: 0.1,
-                  maxScale: 4.0,
-                  constrained: false,
-                  boundaryMargin: const EdgeInsets.all(double.infinity),
-                  child: SizedBox(
-                    width: 4000,
-                    height: 4000,
-                    child: CustomPaint(
-                      painter: VectorPainter(
-                        v1: _v1,
-                        v2: _v2,
-                        resultVector: _resultVector,
-                        lastOperation: _selectedOperation ?? '',
-                        context: context,
-                      ),
-                    ),
-                  ),
-                ),
-
-                Positioned(
-                  top: MediaQuery.of(context).viewPadding.top,
-                  left: 16,
-                  right: 16,
-                  child: FloatingTopBar(
-                    title: 'Grafico',
-                    leading: FloatingTopBarLeading.back,
-                    onBackPressed: () => Navigator.of(context).maybePop(),
-                  ),
-                ),
-              ],
-            ),
-            floatingActionButton: Padding(
-              padding: EdgeInsets.only(bottom: 80),
-              child: FloatingActionButton(
-                onPressed: _centerGraph,
-                backgroundColor: colorScheme.primary,
-                foregroundColor: colorScheme.onPrimary,
-                child: const Icon(Icons.center_focus_strong),
-              ),
-            ),
+          return FullScreenVectorGraphPage(
+            v1: _v1,
+            v2: _v2,
+            resultVector: _resultVector,
+            lastOperation: _selectedOperation ?? '',
           );
         },
       ),
     );
   }
+}
 
-  void _centerGraph() {
-    final Size size = MediaQuery.of(context).size;
-    final Matrix4 matrix = Matrix4.identity();
-    matrix.translate(size.width / 2, size.height / 2);
-    _transformationController.value = matrix;
+class FullScreenVectorGraphPage extends StatefulWidget {
+  final Offset? v1;
+  final Offset? v2;
+  final Offset? resultVector;
+  final String lastOperation;
+
+  const FullScreenVectorGraphPage({
+    super.key,
+    required this.v1,
+    required this.v2,
+    required this.resultVector,
+    required this.lastOperation,
+  });
+
+  @override
+  State<FullScreenVectorGraphPage> createState() => _FullScreenVectorGraphPageState();
+}
+
+class _FullScreenVectorGraphPageState extends State<FullScreenVectorGraphPage> {
+  late double _xMin, _xMax, _yMin, _yMax;
+
+  @override
+  void initState() {
+    super.initState();
+    _adjustInitialRange();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _setProportionalYRange());
+  }
+
+  void _adjustInitialRange() {
+    double maxCoord = 10.0;
+    void checkOffset(Offset? v) {
+      if (v != null) {
+        if (v.dx.abs() > maxCoord) maxCoord = v.dx.abs();
+        if (v.dy.abs() > maxCoord) maxCoord = v.dy.abs();
+      }
+    }
+    checkOffset(widget.v1);
+    checkOffset(widget.v2);
+    checkOffset(widget.resultVector);
+    
+    maxCoord += 5.0; // padding extra
+    _xMin = -maxCoord;
+    _xMax = maxCoord;
+    _yMin = -maxCoord;
+    _yMax = maxCoord;
+  }
+
+  void _setProportionalYRange() {
+    if (!mounted) return;
+    final Size screenSize = MediaQuery.of(context).size;
+    final double aspectRatio = screenSize.height / screenSize.width;
+    final double xRange = _xMax - _xMin;
+    final double yRange = xRange * aspectRatio;
+
+    final double yCenter = (_yMin + _yMax) / 2;
+    setState(() {
+      _yMin = yCenter - yRange / 2;
+      _yMax = yCenter + yRange / 2;
+    });
+  }
+
+  void _onPanUpdate(DragUpdateDetails details) {
+    setState(() {
+      final double xRange = _xMax - _xMin;
+      final double yRange = _yMax - _yMin;
+      final panX = details.delta.dx / context.size!.width * xRange;
+      final panY = details.delta.dy / context.size!.height * yRange;
+      _xMin -= panX;
+      _xMax -= panX;
+      _yMin += panY;
+      _yMax += panY;
+    });
+  }
+
+  void _zoom(double factor) {
+    setState(() {
+      final w = _xMax - _xMin;
+      final h = _yMax - _yMin;
+      final nw = w * factor;
+      final nh = h * factor;
+      final dx = (w - nw) / 2;
+      final dy = (h - nh) / 2;
+      _xMin += dx; _xMax -= dx;
+      _yMin += dy; _yMax -= dy;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+    
+    final bool isZoomedOut = (_xMax - _xMin) > 150.0;
+    
+    final bgColor = isZoomedOut 
+        ? Colors.white 
+        : (Theme.of(context).brightness == Brightness.dark ? colorScheme.surface : colorScheme.onPrimary);
+        
+    final axisColor = isZoomedOut 
+        ? AppColors.black87 
+        : colorScheme.onSurfaceVariant;
+        
+    final textColor = isZoomedOut 
+        ? AppColors.black87 
+        : colorScheme.onSurface;
+
+    return Scaffold(
+      backgroundColor: bgColor,
+      body: Stack(
+        children: [
+          SizedBox.expand(
+            child: Container(
+              color: bgColor,
+              child: GestureDetector(
+                onPanUpdate: _onPanUpdate,
+                child: CustomPaint(
+                  painter: VectorPainter(
+                    v1: widget.v1,
+                    v2: widget.v2,
+                    resultVector: widget.resultVector,
+                    lastOperation: widget.lastOperation,
+                    xMin: _xMin,
+                    xMax: _xMax,
+                    yMin: _yMin,
+                    yMax: _yMax,
+                    axisColor: axisColor,
+                    gridColor: colorScheme.onSurface.withValues(alpha: 0.2),
+                    textColor: textColor,
+                    hideGridAndNumbers: isZoomedOut,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 130,
+            right: 16,
+            child: Column(
+              children: [
+                FloatingActionButton(
+                  backgroundColor: colorScheme.primary,
+                  foregroundColor: colorScheme.onPrimary,
+                  heroTag: 'zoom_in_vec',
+                  mini: true,
+                  onPressed: () => _zoom(0.8),
+                  child: const Icon(Icons.add),
+                ),
+                const SizedBox(height: 8),
+                FloatingActionButton(
+                  backgroundColor: colorScheme.primary,
+                  foregroundColor: colorScheme.onPrimary,
+                  heroTag: 'zoom_out_vec',
+                  mini: true,
+                  onPressed: () => _zoom(1.25),
+                  child: const Icon(Icons.remove),
+                ),
+                const SizedBox(height: 8),
+                FloatingActionButton(
+                  backgroundColor: colorScheme.primary,
+                  foregroundColor: colorScheme.onPrimary,
+                  heroTag: 'center_vec',
+                  mini: true,
+                  onPressed: () {
+                    setState(() {
+                      _adjustInitialRange();
+                      _setProportionalYRange();
+                    });
+                  },
+                  child: const Icon(Icons.center_focus_strong),
+                ),
+              ],
+            ),
+          ),
+          Positioned(
+            top: MediaQuery.of(context).viewPadding.top,
+            left: 16,
+            right: 16,
+            child: FloatingTopBar(
+              title: 'Grafico Vettoriale',
+              leading: FloatingTopBarLeading.back,
+              onBackPressed: () => Navigator.of(context).maybePop(),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -578,127 +790,144 @@ class VectorPainter extends CustomPainter {
   final Offset? v2;
   final Offset? resultVector;
   final String lastOperation;
-  final BuildContext context;
+  
+  final double xMin, xMax, yMin, yMax;
+  final Color axisColor;
+  final Color gridColor;
+  final Color textColor;
+  final bool hideGridAndNumbers;
 
   VectorPainter({
-    this.v1,
-    this.v2,
-    this.resultVector,
+    required this.v1,
+    required this.v2,
+    required this.resultVector,
     required this.lastOperation,
-    required this.context,
+    required this.xMin,
+    required this.xMax,
+    required this.yMin,
+    required this.yMax,
+    required this.axisColor,
+    required this.gridColor,
+    required this.textColor,
+    required this.hideGridAndNumbers,
   });
 
   @override
   void paint(Canvas canvas, Size size) {
-    final double gridStep = 40.0;
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final axisColor = isDark ? AppColors.white : AppColors.black;
-    final gridColor = isDark
-        ? AppColors.white.withValues(alpha: 0.2)
-        : AppColors.grey.withValues(alpha: 0.3);
+    final Paint axisPaint = Paint()..color = axisColor..strokeWidth = 2.0;
+    final Paint gridPaint = Paint()..color = gridColor..strokeWidth = 1.0;
 
-    final Paint gridPaint = Paint()
-      ..color = gridColor
-      ..strokeWidth = 1.0;
+    double toCanvasX(double x) => (x - xMin) * size.width / (xMax - xMin);
+    double toCanvasY(double y) => size.height - ((y - yMin) * size.height / (yMax - yMin));
 
-    for (double i = -2000; i <= 2000; i += gridStep) {
-      canvas.drawLine(Offset(i, -2000), Offset(i, 2000), gridPaint);
-      canvas.drawLine(Offset(-2000, i), Offset(2000, i), gridPaint);
+    final zeroX = toCanvasX(0);
+    final zeroY = toCanvasY(0);
+
+    final tickStyle = TextStyle(
+      color: textColor.withValues(alpha: 0.5), 
+      fontSize: 10,
+    );
+
+    double xRange = xMax - xMin;
+    double gridStep;
+    switch (xRange) {
+      case double n when n > 300:
+        gridStep = 50.0;
+        break;
+      case double n when n > 150:
+        gridStep = 20.0;
+        break;
+      case double n when n > 80:
+        gridStep = 10.0;
+        break;
+      case double n when n > 32:
+        gridStep = 5.0;
+        break;
+      case double n when n > 20:
+        gridStep = 2.0;
+        break;
+      default:
+        gridStep = 1.0;
     }
 
-    final Paint axisPaint = Paint()
-      ..color = axisColor
-      ..strokeWidth = 2.0;
+    if (!hideGridAndNumbers) {
+      double startX = (xMin / gridStep).ceil() * gridStep;
+      for (double i = startX; i <= xMax; i += gridStep) {
+        if (i == 0) continue; 
+        final x = toCanvasX(i);
+        canvas.drawLine(Offset(x, 0), Offset(x, size.height), gridPaint);
+      }
+      
+      double startY = (yMin / gridStep).ceil() * gridStep;
+      for (double i = startY; i <= yMax; i += gridStep) {
+        if (i == 0) continue;
+        final y = toCanvasY(i);
+        canvas.drawLine(Offset(0, y), Offset(size.width, y), gridPaint);
+      }
+    }
 
-    canvas.drawLine(const Offset(-2000, 0), const Offset(2000, 0), axisPaint);
-    canvas.drawLine(const Offset(0, -2000), const Offset(0, 2000), axisPaint);
+    if (zeroX >= 0 && zeroX <= size.width) {
+      canvas.drawLine(Offset(zeroX, 0), Offset(zeroX, size.height), axisPaint);
+    }
+    if (zeroY >= 0 && zeroY <= size.height) {
+      canvas.drawLine(Offset(0, zeroY), Offset(size.width, zeroY), axisPaint);
+    }
 
-    _drawArrowHead(
-      canvas,
-      const Offset(1950, 0),
-      const Offset(2000, 0),
-      axisPaint,
-    );
-    _drawArrowHead(
-      canvas,
-      const Offset(0, -1950),
-      const Offset(0, -2000),
-      axisPaint,
-    );
+    if (!hideGridAndNumbers) {
+      double startX = (xMin / gridStep).ceil() * gridStep;
+      for (double i = startX; i <= xMax; i += gridStep) {
+        if (i == 0) continue;
+        _drawText(canvas, i.toInt().toString(), Offset(toCanvasX(i) - 5, zeroY + 5), tickStyle);
+      }
 
-    final textStyle = TextStyle(color: axisColor, fontWeight: FontWeight.bold);
+      double startY = (yMin / gridStep).ceil() * gridStep;
+      for (double i = startY; i <= yMax; i += gridStep) {
+        if (i == 0) continue;
+        _drawText(canvas, i.toInt().toString(), Offset(zeroX + 5, toCanvasY(i) - 10), tickStyle);
+      }
+      
+      _drawText(canvas, "0", Offset(zeroX + 5, zeroY + 5), tickStyle);
+    }
 
-    final textPainterX = TextPainter(
-      text: TextSpan(text: 'X', style: textStyle),
-      textDirection: TextDirection.ltr,
-    )..layout();
-    textPainterX.paint(canvas, const Offset(1960, 10));
+    void drawVector(Offset? vector, Color color, String label) {
+      if (vector == null) return;
+      final endX = toCanvasX(vector.dx);
+      final endY = toCanvasY(vector.dy);
+      
+      final Paint vectorPaint = Paint()
+        ..color = color
+        ..strokeWidth = 2.5
+        ..strokeCap = StrokeCap.round;
 
-    final textPainterY = TextPainter(
-      text: TextSpan(text: 'Y', style: textStyle),
-      textDirection: TextDirection.ltr,
-    )..layout();
-    textPainterY.paint(canvas, const Offset(10, -1990));
+      canvas.drawLine(Offset(zeroX, zeroY), Offset(endX, endY), vectorPaint);
+      _drawArrowHead(canvas, Offset(zeroX, zeroY), Offset(endX, endY), vectorPaint);
 
-    _drawVector(canvas, v1, gridStep, AppColors.blue, 'V1');
-    _drawVector(canvas, v2, gridStep, AppColors.red, 'V2');
+      _drawText(
+        canvas, 
+        '$label (${vector.dx.toStringAsFixed(1)}, ${vector.dy.toStringAsFixed(1)})', 
+        Offset(endX + 8, endY - 10),
+        TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 14)
+      );
+    }
+
+    drawVector(v1, AppColors.blue, 'V1');
+    drawVector(v2, AppColors.red, 'V2');
 
     if (lastOperation == 'Somma' || lastOperation == 'Differenza') {
-      _drawVector(canvas, resultVector, gridStep, AppColors.green, 'Risultato');
+      drawVector(resultVector, AppColors.green, 'Risultato');
     }
   }
 
-  void _drawVector(
-    Canvas canvas,
-    Offset? vector,
-    double gridStep,
-    Color color,
-    String label,
-  ) {
-    if (vector == null) return;
-
-    final end = Offset(vector.dx * gridStep, -vector.dy * gridStep);
-
-    final Paint vectorPaint = Paint()
-      ..color = color
-      ..strokeWidth = 3.0
-      ..strokeCap = StrokeCap.round;
-
-    canvas.drawLine(Offset.zero, end, vectorPaint);
-
-    _drawArrowHead(canvas, Offset.zero, end, vectorPaint);
-
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-
-    final textPainter = TextPainter(
-      text: TextSpan(
-        text:
-            '$label\n(${vector.dx.toStringAsFixed(1)}, ${vector.dy.toStringAsFixed(1)})',
-        style: TextStyle(
-          color: isDark ? AppColors.white : color,
-          fontWeight: FontWeight.bold,
-          fontSize: 12,
-          shadows: [
-            Shadow(
-              blurRadius: 2.0,
-              color: isDark
-                  ? AppColors.black.withValues(alpha: 0.5)
-                  : AppColors.black.withValues(alpha: 0.5),
-              offset: const Offset(1, 1),
-            ),
-          ],
-        ),
-      ),
-      textAlign: TextAlign.center,
+  void _drawText(Canvas canvas, String text, Offset position, TextStyle style) {
+    final tp = TextPainter(
+      text: TextSpan(text: text, style: style),
       textDirection: TextDirection.ltr,
-    );
-    textPainter.layout();
-    final textOffset = Offset(end.dx + 5, end.dy - textPainter.height / 2);
-    textPainter.paint(canvas, textOffset);
+    )..layout();
+    tp.paint(canvas, position);
   }
 
   void _drawArrowHead(Canvas canvas, Offset start, Offset end, Paint paint) {
-    const double arrowSize = 10.0;
+    final double arrowSize = 10.0;
     final double angle = atan2(end.dy - start.dy, end.dx - start.dx);
     final path = Path();
     path.moveTo(end.dx, end.dy);
@@ -715,11 +944,5 @@ class VectorPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant VectorPainter oldDelegate) {
-    return oldDelegate.v1 != v1 ||
-        oldDelegate.v2 != v2 ||
-        oldDelegate.resultVector != resultVector ||
-        oldDelegate.lastOperation != lastOperation ||
-        oldDelegate.context != context;
-  }
+  bool shouldRepaint(covariant VectorPainter oldDelegate) => true;
 }
