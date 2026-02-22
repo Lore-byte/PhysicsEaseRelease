@@ -298,7 +298,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
     Color gradientEnd,
     Color textColor, {
     required Color borderColor,
-    required Color shadowColor,
     double fontSize = 24.0,
     int flex = 1,
   }) {
@@ -317,14 +316,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
-            boxShadow: [
-              BoxShadow(
-                color: shadowColor.withValues(alpha: 0.22),
-                blurRadius: 18,
-                spreadRadius: 0.2,
-                offset: const Offset(0, 8),
-              ),
-            ],
           ),
           child: ElevatedButton(
             style: ButtonStyle(
@@ -333,7 +324,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
               surfaceTintColor: const WidgetStatePropertyAll(
                 Colors.transparent,
               ),
-              shadowColor: const WidgetStatePropertyAll(Colors.transparent),
               elevation: const WidgetStatePropertyAll(0),
               overlayColor: WidgetStateProperty.resolveWith((states) {
                 if (states.contains(WidgetState.pressed)) {
@@ -678,7 +668,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
     Color gradientEnd,
     Color textColor,
     Color borderColor,
-    Color shadowColor,
     double fontSize,
   })
   _buttonStyle(String buttonText, ColorScheme colorScheme) {
@@ -686,7 +675,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
     var gradientEnd = colorScheme.surfaceContainerHigh;
     var textColor = colorScheme.onSurface;
     var borderColor = colorScheme.outlineVariant.withValues(alpha: 0.55);
-    var shadowColor = colorScheme.onSurface;
     var fontSize = _showScientificButtons ? 24.0 : 36.0;
 
     if (buttonText == 'AC') {
@@ -694,32 +682,27 @@ class _CalculatorPageState extends State<CalculatorPage> {
       gradientEnd = colorScheme.error.withValues(alpha: 0.85);
       textColor = colorScheme.onError;
       borderColor = colorScheme.error.withValues(alpha: 0.28);
-      shadowColor = colorScheme.error;
     } else if (buttonText == 'DL') {
       gradientStart = colorScheme.errorContainer;
       gradientEnd = colorScheme.errorContainer.withValues(alpha: 0.9);
       textColor = colorScheme.onErrorContainer;
       borderColor = colorScheme.error.withValues(alpha: 0.26);
-      shadowColor = colorScheme.error;
     } else if (_primaryOperators.contains(buttonText)) {
       gradientStart = colorScheme.secondaryContainer;
       gradientEnd = colorScheme.secondaryContainer.withValues(alpha: 0.9);
       textColor = colorScheme.onSecondaryContainer;
       borderColor = colorScheme.secondary.withValues(alpha: 0.22);
-      shadowColor = colorScheme.secondary;
     } else if (buttonText == '=') {
       gradientStart = colorScheme.primary;
       gradientEnd = colorScheme.primary.withValues(alpha: 0.85);
       textColor = colorScheme.onPrimary;
       borderColor = colorScheme.primary.withValues(alpha: 0.24);
-      shadowColor = colorScheme.primary;
     } else if (_secondaryOperators.contains(buttonText) ||
         _scientificInputButtons.contains(buttonText)) {
       gradientStart = colorScheme.secondaryContainer;
       gradientEnd = colorScheme.secondaryContainer.withValues(alpha: 0.9);
       textColor = colorScheme.onSecondaryContainer;
       borderColor = colorScheme.secondary.withValues(alpha: 0.22);
-      shadowColor = colorScheme.secondary;
     }
 
     if (buttonText == 'RAD/DEG_TOGGLE') {
@@ -728,7 +711,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
       gradientEnd = colorScheme.primary.withValues(alpha: 0.86);
       textColor = colorScheme.onPrimary;
       borderColor = colorScheme.primary.withValues(alpha: 0.24);
-      shadowColor = colorScheme.primary;
     }
 
     if (buttonText == 'Sci') {
@@ -736,7 +718,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
       gradientEnd = colorScheme.primary.withValues(alpha: 0.86);
       textColor = colorScheme.onPrimary;
       borderColor = colorScheme.primary.withValues(alpha: 0.24);
-      shadowColor = colorScheme.primary;
     }
 
     return (
@@ -744,7 +725,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
       gradientEnd: gradientEnd,
       textColor: textColor,
       borderColor: borderColor,
-      shadowColor: shadowColor,
       fontSize: fontSize,
     );
   }
@@ -939,7 +919,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
     }
 
     return Scaffold(
-      backgroundColor: colorScheme.surface,
+      backgroundColor: Theme.of(context).brightness == Brightness.dark ? colorScheme.surface : colorScheme.onPrimary,
       body: Column(
         children: [
           Expanded(
@@ -951,7 +931,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                 right: 16.0,
                 top: MediaQuery.of(context).viewPadding.top + 70,
               ),
-              color: colorScheme.surface,
+              color: Theme.of(context).brightness == Brightness.dark ? colorScheme.surface : colorScheme.onPrimary,
               child: buildDisplayArea(),
             ),
           ),
@@ -966,7 +946,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    colorScheme.surfaceContainerLowest,
+                    colorScheme.surfaceContainerLow,
                     colorScheme.surface,
                   ],
                 ),
@@ -1012,7 +992,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
                             style.gradientEnd,
                             style.textColor,
                             borderColor: style.borderColor,
-                            shadowColor: style.shadowColor,
                             fontSize: style.fontSize,
                             flex: flex,
                           );

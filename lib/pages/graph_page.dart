@@ -329,7 +329,6 @@ class _GraphPageState extends State<GraphPage> {
     return latex;
   }
 
-
   void _onKeyPress(String key) {
     if (_focusedController == null) {
       final int focusedIndex = _focusNodes.indexWhere((node) => node.hasFocus);
@@ -543,7 +542,6 @@ class _GraphPageState extends State<GraphPage> {
     Color gradientEnd = colorScheme.surfaceContainerHigh;
     Color textColor = colorScheme.onSurface;
     Color borderColor = colorScheme.outlineVariant.withValues(alpha: 0.55);
-    Color shadowColor = colorScheme.onSurface;
     double fontSize = 22.0;
 
     if (key == 'AC') {
@@ -551,19 +549,16 @@ class _GraphPageState extends State<GraphPage> {
       gradientEnd = colorScheme.error.withValues(alpha: 0.85);
       textColor = colorScheme.onError;
       borderColor = colorScheme.error.withValues(alpha: 0.28);
-      shadowColor = colorScheme.error;
     } else if (key == 'DL') {
       gradientStart = colorScheme.errorContainer;
       gradientEnd = colorScheme.errorContainer.withValues(alpha: 0.9);
       textColor = colorScheme.onErrorContainer;
       borderColor = colorScheme.error.withValues(alpha: 0.26);
-      shadowColor = colorScheme.error;
     } else if (['÷', '×', '-', '+', '=', 'x^2', '^', '|x|', '√'].contains(key)) {
       gradientStart = colorScheme.secondaryContainer;
       gradientEnd = colorScheme.secondaryContainer.withValues(alpha: 0.9);
       textColor = colorScheme.onSecondaryContainer;
       borderColor = colorScheme.secondary.withValues(alpha: 0.22);
-      shadowColor = colorScheme.secondary;
     } else if (['sin', 'cos', 'tan', 'log', 'ln', 'e', 'π', '(', ')'].contains(key)) {
       fontSize = 18.0;
     }
@@ -572,7 +567,6 @@ class _GraphPageState extends State<GraphPage> {
       gradientEnd = colorScheme.primary.withValues(alpha: 0.85);
       textColor = colorScheme.onPrimary;
       borderColor = colorScheme.primary.withValues(alpha: 0.24);
-      shadowColor = colorScheme.primary;
     }
 
     return Expanded(
@@ -587,14 +581,6 @@ class _GraphPageState extends State<GraphPage> {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
-            boxShadow: [
-              BoxShadow(
-                color: shadowColor.withValues(alpha: 0.22),
-                blurRadius: 18,
-                spreadRadius: 0.2,
-                offset: const Offset(0, 8),
-              ),
-            ],
           ),
           child: Material(
             color: Colors.transparent,
@@ -627,7 +613,7 @@ class _GraphPageState extends State<GraphPage> {
     }
 
     return Scaffold(
-      backgroundColor: colorScheme.surface,
+      backgroundColor: Theme.of(context).brightness == Brightness.dark ? colorScheme.surface : colorScheme.onPrimary,
       body: GestureDetector(
         onTap: () {
           FocusScope.of(context).unfocus();
@@ -792,9 +778,9 @@ class _GraphPageState extends State<GraphPage> {
                           child: Container(
                             constraints: const BoxConstraints(minHeight: 180),
                             decoration: BoxDecoration(
-                              color: colorScheme.surfaceContainerHighest,
+                              color: Theme.of(context).brightness == Brightness.dark ? colorScheme.surface : colorScheme.onPrimary,
                               borderRadius: BorderRadius.circular(16),
-                              border: Border.all(color: colorScheme.outlineVariant),
+                              border: Border.all(color: colorScheme.outline),
                             ),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(16),
@@ -827,8 +813,9 @@ class _GraphPageState extends State<GraphPage> {
                                           xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax,
                                           axisColor: colorScheme.onSurfaceVariant,
                                           lineColors: colorsToPlot,
-                                          gridColor: colorScheme.onSurface.withValues(alpha: 0.1),
+                                          gridColor: colorScheme.onSurface.withValues(alpha: 0.2),
                                           textColor: colorScheme.onSurface,
+                                          hideGridAndNumbers: false,
                                         ),
                                       ),
                                     ),
@@ -872,7 +859,7 @@ class _GraphPageState extends State<GraphPage> {
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                          colorScheme.surfaceContainerLowest,
+                          colorScheme.surfaceContainerLow,
                           colorScheme.surface,
                         ],
                       ),
@@ -1003,13 +990,21 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    
+    final bool isZoomedOut = (_xMax - _xMin) > 150.0;
+    
+    final bgColor = (Theme.of(context).brightness == Brightness.dark ? colorScheme.surface : colorScheme.onPrimary);
+        
+    final axisColor = colorScheme.onSurfaceVariant;
+        
+    final textColor = colorScheme.onSurface;
 
     return Scaffold(
       body: Stack(
         children: [
           SizedBox.expand(
             child: Container(
-              color: colorScheme.surface,
+              color: bgColor,
               child: GestureDetector(
                 onPanUpdate: _onPanUpdate,
                 child: CustomPaint(
@@ -1017,10 +1012,11 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
                     functionStrings: widget.functionStrings,
                     evaluateFunction: widget.evaluateFunction,
                     xMin: _xMin, xMax: _xMax, yMin: _yMin, yMax: _yMax,
-                    axisColor: colorScheme.onSurfaceVariant,
+                    axisColor: axisColor,
                     lineColors: widget.functionColors,
                     gridColor: colorScheme.onSurface.withValues(alpha: 0.2),
-                    textColor: colorScheme.onSurface,
+                    textColor: textColor,
+                    hideGridAndNumbers: isZoomedOut,
                   ),
                 ),
               ),
@@ -1032,6 +1028,8 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
             child: Column(
               children: [
                 FloatingActionButton(
+                  backgroundColor: colorScheme.primary,
+                  foregroundColor: colorScheme.onPrimary,
                   heroTag: 'zoom_in',
                   mini: true,
                   onPressed: () => _zoom(0.8),
@@ -1039,6 +1037,8 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
                 ),
                 const SizedBox(height: 8),
                 FloatingActionButton(
+                  backgroundColor: colorScheme.primary,
+                  foregroundColor: colorScheme.onPrimary,
                   heroTag: 'zoom_out',
                   mini: true,
                   onPressed: () => _zoom(1.25),
@@ -1046,6 +1046,8 @@ class _FullScreenGraphPageState extends State<FullScreenGraphPage> {
                 ),
                 const SizedBox(height: 8),
                 FloatingActionButton(
+                  backgroundColor: colorScheme.primary,
+                  foregroundColor: colorScheme.onPrimary,
                   heroTag: 'center',
                   mini: true,
                   onPressed: () {
@@ -1084,6 +1086,7 @@ class GraphPainter extends CustomPainter {
   final List<Color> lineColors;
   final Color gridColor;
   final Color textColor;
+  final bool hideGridAndNumbers;
 
   GraphPainter({
     required this.functionStrings,
@@ -1096,6 +1099,7 @@ class GraphPainter extends CustomPainter {
     required this.lineColors,
     required this.gridColor,
     required this.textColor,
+    required this.hideGridAndNumbers,
   });
 
   @override
@@ -1106,32 +1110,67 @@ class GraphPainter extends CustomPainter {
     double toCanvasX(double x) => (x - xMin) * size.width / (xMax - xMin);
     double toCanvasY(double y) => size.height - ((y - yMin) * size.height / (yMax - yMin));
 
-    for (double i = xMin.ceilToDouble(); i <= xMax.floorToDouble(); i++) {
-      if (i == 0) continue;
-      final x = toCanvasX(i);
-      if (x >= 0 && x <= size.width) canvas.drawLine(Offset(x, 0), Offset(x, size.height), gridPaint);
-    }
-    for (double i = yMin.ceilToDouble(); i <= yMax.floorToDouble(); i++) {
-      if (i == 0) continue;
-      final y = toCanvasY(i);
-      if (y >= 0 && y <= size.height) canvas.drawLine(Offset(0, y), Offset(size.width, y), gridPaint);
-    }
-
     final zeroX = toCanvasX(0);
     final zeroY = toCanvasY(0);
-    if (zeroX >= 0 && zeroX <= size.width) canvas.drawLine(Offset(zeroX, 0), Offset(zeroX, size.height), axisPaint);
-    if (zeroY >= 0 && zeroY <= size.height) canvas.drawLine(Offset(0, zeroY), Offset(size.width, zeroY), axisPaint);
 
-    final textStyle = TextStyle(color: textColor, fontSize: 10);
-    final tp = TextPainter(textDirection: TextDirection.ltr);
+    final tickStyle = TextStyle(
+      color: textColor.withValues(alpha: 0.5), 
+      fontSize: 10,
+    );
 
-    if (size.width / (xMax - xMin) > 20) {
-      for (double i = xMin.ceilToDouble(); i <= xMax.floorToDouble(); i += 2) {
+    double xRange = xMax - xMin;
+    double gridStep;
+    switch (xRange) {
+      case double n when n > 80:
+        gridStep = 10.0;
+        break;
+      case double n when n > 32:
+        gridStep = 5.0;
+        break;
+      case double n when n > 20:
+        gridStep = 2.0;
+        break;
+      default:
+        gridStep = 1.0;
+    }
+
+    if (!hideGridAndNumbers) {
+      double startX = (xMin / gridStep).ceil() * gridStep;
+      for (double i = startX; i <= xMax; i += gridStep) {
         if (i == 0) continue;
-        tp.text = TextSpan(text: i.toInt().toString(), style: textStyle);
-        tp.layout();
-        tp.paint(canvas, Offset(toCanvasX(i) - tp.width / 2, zeroY + 4));
+        final x = toCanvasX(i);
+        canvas.drawLine(Offset(x, 0), Offset(x, size.height), gridPaint);
       }
+      
+      double startY = (yMin / gridStep).ceil() * gridStep;
+      for (double i = startY; i <= yMax; i += gridStep) {
+        if (i == 0) continue;
+        final y = toCanvasY(i);
+        canvas.drawLine(Offset(0, y), Offset(size.width, y), gridPaint);
+      }
+    }
+
+    if (zeroX >= 0 && zeroX <= size.width) {
+      canvas.drawLine(Offset(zeroX, 0), Offset(zeroX, size.height), axisPaint);
+    }
+    if (zeroY >= 0 && zeroY <= size.height) {
+      canvas.drawLine(Offset(0, zeroY), Offset(size.width, zeroY), axisPaint);
+    }
+
+    if (!hideGridAndNumbers) {
+      double startX = (xMin / gridStep).ceil() * gridStep;
+      for (double i = startX; i <= xMax; i += gridStep) {
+        if (i == 0) continue;
+        _drawText(canvas, i.toInt().toString(), Offset(toCanvasX(i) - 5, zeroY + 5), tickStyle);
+      }
+
+      double startY = (yMin / gridStep).ceil() * gridStep;
+      for (double i = startY; i <= yMax; i += gridStep) {
+        if (i == 0) continue;
+        _drawText(canvas, i.toInt().toString(), Offset(zeroX + 5, toCanvasY(i) - 10), tickStyle);
+      }
+
+      _drawText(canvas, "0", Offset(zeroX + 5, zeroY + 5), tickStyle);
     }
 
     for (int i = 0; i < functionStrings.length; i++) {
@@ -1147,10 +1186,11 @@ class GraphPainter extends CustomPainter {
 
       for (double x = xMin; x <= xMax; x += step) {
         final y = evaluateFunction(functionStrings[i], x);
-        if (y != null && y >= yMin * 2 && y <= yMax * 2) {
+        if (y != null && y.isFinite) {
           final cx = toCanvasX(x);
           final cy = toCanvasY(y);
-          if (cy.isFinite) {
+
+          if (cy >= -size.height && cy <= size.height * 2) {
             if (isFirst) {
               path.moveTo(cx, cy);
               isFirst = false;
@@ -1166,6 +1206,14 @@ class GraphPainter extends CustomPainter {
       }
       canvas.drawPath(path, paint);
     }
+  }
+
+  void _drawText(Canvas canvas, String text, Offset position, TextStyle style) {
+    final tp = TextPainter(
+      text: TextSpan(text: text, style: style),
+      textDirection: TextDirection.ltr,
+    )..layout();
+    tp.paint(canvas, position);
   }
 
   @override

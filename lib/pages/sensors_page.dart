@@ -1,8 +1,10 @@
-// lib/pages/sensor_tool_page.dart
+// lib/pages/sensors_page.dart
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:async';
+import 'dart:math' as math; 
+import 'dart:ui'; // Necessario per FontFeature
 import 'package:fl_chart/fl_chart.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
@@ -23,18 +25,22 @@ class _SensorToolPageState extends State<SensorToolPage> {
   final List<FlSpot> _userAccelXSpots = [];
   final List<FlSpot> _userAccelYSpots = [];
   final List<FlSpot> _userAccelZSpots = [];
+  final List<FlSpot> _userAccelMSpots = []; 
 
   final List<FlSpot> _accelXSpots = [];
   final List<FlSpot> _accelYSpots = [];
   final List<FlSpot> _accelZSpots = [];
+  final List<FlSpot> _accelMSpots = []; 
 
   final List<FlSpot> _gyroXSpots = [];
   final List<FlSpot> _gyroYSpots = [];
   final List<FlSpot> _gyroZSpots = [];
+  final List<FlSpot> _gyroMSpots = []; 
 
   final List<FlSpot> _magXSpots = [];
   final List<FlSpot> _magYSpots = [];
   final List<FlSpot> _magZSpots = [];
+  final List<FlSpot> _magMSpots = []; 
 
   int _currentXIndex = 0;
   Timer? _xIndexTimer;
@@ -46,7 +52,6 @@ class _SensorToolPageState extends State<SensorToolPage> {
   @override
   void initState() {
     super.initState();
-
     _requestSensorPermissions();
   }
 
@@ -58,23 +63,13 @@ class _SensorToolPageState extends State<SensorToolPage> {
 
     if (status.isGranted || status.isLimited) {
       _initSensorStreams();
-    } /*else if (status.isPermanentlyDenied) {
-
-      /*_showErrorSnackBar(
-          'Permesso di rilevamento attività fisica negato permanentemente. Abilitalo dalle impostazioni dell\'app.'
-      );*/
-
-      /*if (await openAppSettings()) {
-        debugPrint('Impostazioni app aperte.');
-      }
-      _initSensorStreams();*/
-    }*/ else {
-      //va ancora tolto, andorid manifest è già stato modificato
-      //_showErrorSnackBar(
-      //'Impossibile ottenere il permesso di rilevamento attività fisica. Verifica le impostazioni.'
-      //);
+    } else {
       _initSensorStreams();
     }
+  }
+
+  double _calculateMagnitude(double x, double y, double z) {
+    return math.sqrt(x * x + y * y + z * z);
   }
 
   void _initSensorStreams() {
@@ -106,6 +101,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
             addSpot(_userAccelXSpots, event.x, _currentXIndex);
             addSpot(_userAccelYSpots, event.y, _currentXIndex);
             addSpot(_userAccelZSpots, event.z, _currentXIndex);
+            addSpot(_userAccelMSpots, _calculateMagnitude(event.x, event.y, event.z), _currentXIndex);
           });
         },
         onError: (e) {
@@ -126,6 +122,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
             addSpot(_accelXSpots, event.x, _currentXIndex);
             addSpot(_accelYSpots, event.y, _currentXIndex);
             addSpot(_accelZSpots, event.z, _currentXIndex);
+            addSpot(_accelMSpots, _calculateMagnitude(event.x, event.y, event.z), _currentXIndex);
           });
         },
         onError: (e) {
@@ -144,6 +141,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
             addSpot(_gyroXSpots, event.x, _currentXIndex);
             addSpot(_gyroYSpots, event.y, _currentXIndex);
             addSpot(_gyroZSpots, event.z, _currentXIndex);
+            addSpot(_gyroMSpots, _calculateMagnitude(event.x, event.y, event.z), _currentXIndex);
           });
         },
         onError: (e) {
@@ -162,6 +160,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
             addSpot(_magXSpots, event.x, _currentXIndex);
             addSpot(_magYSpots, event.y, _currentXIndex);
             addSpot(_magZSpots, event.z, _currentXIndex);
+            addSpot(_magMSpots, _calculateMagnitude(event.x, event.y, event.z), _currentXIndex);
           });
         },
         onError: (e) {
@@ -187,18 +186,27 @@ class _SensorToolPageState extends State<SensorToolPage> {
       subscription.cancel();
     }
     _xIndexTimer?.cancel();
+    
     _userAccelXSpots.clear();
     _userAccelYSpots.clear();
     _userAccelZSpots.clear();
+    _userAccelMSpots.clear();
+    
     _accelXSpots.clear();
     _accelYSpots.clear();
     _accelZSpots.clear();
+    _accelMSpots.clear();
+    
     _gyroXSpots.clear();
     _gyroYSpots.clear();
     _gyroZSpots.clear();
+    _gyroMSpots.clear();
+    
     _magXSpots.clear();
     _magYSpots.clear();
     _magZSpots.clear();
+    _magMSpots.clear();
+    
     _currentXIndex = 0;
     _sensorsInitialized = false;
     super.dispose();
@@ -206,89 +214,192 @@ class _SensorToolPageState extends State<SensorToolPage> {
 
   String _formatValue(double? value) {
     if (value == null) return 'N/A';
-    return value.toStringAsFixed(3);
+    // Formattazione a 3 decimali mantenendo un padding visivo se necessario, 
+    // ma la FontFeature.tabularFigures farà il lavoro grosso per evitare tremolii.
+    return value.toStringAsFixed(3).padLeft(7, ' ');
   }
 
-  Widget _buildSensorCard({
-    required Color cardColor,
-    required Color textColor,
+  // --- NUOVA GRAFICA CARD MODERNA ---
+  Widget _buildModernSensorCard({
     required String title,
-    required String xValue,
-    required String yValue,
-    required String zValue,
+    required IconData icon,
+    required String unit,
+    required Color accentColor,
+    required double? xVal,
+    required double? yVal,
+    required double? zVal,
+    required double? mVal,
   }) {
+    final colorScheme = Theme.of(context).colorScheme;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
-      color: cardColor,
-      elevation: 6,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+      elevation: 4,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(24),
+        //side: BorderSide(color: accentColor.withValues(alpha: 0.2), width: 1.5),
+      ),
+      color: colorScheme.surfaceContainer,
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              title,
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-                color: textColor,
+            // Header: Icona + Titolo + Unità
+            Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: accentColor.withValues(alpha: 0.15),
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                  child: Icon(icon, color: accentColor, size: 28),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        title,
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: colorScheme.onSurface,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: colorScheme.surfaceContainerHighest,
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        child: Text(
+                          unit,
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w600,
+                            color: colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            
+            const SizedBox(height: 24),
+            
+            // Valore Modulo centrale in evidenza
+            Center(
+              child: Column(
+                children: [
+                  Text(
+                    'MODULO TOTALE',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.2,
+                      color: colorScheme.onSurfaceVariant,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    _formatValue(mVal),
+                    style: TextStyle(
+                      fontSize: 42,
+                      fontWeight: FontWeight.w900,
+                      color: accentColor,
+                      fontFeatures: const [FontFeature.tabularFigures()],
+                    ),
+                  ),
+                ],
               ),
             ),
-            const SizedBox(height: 15),
-            _buildDataRow('X:', xValue, textColor),
-            _buildDataRow('Y:', yValue, textColor),
-            _buildDataRow('Z:', zValue, textColor),
+            
+            const SizedBox(height: 24),
+            
+            // Griglia Componenti X Y Z
+            Row(
+              children: [
+                Expanded(child: _buildAxisPill('X', xVal, AppColors.red, isDark)),
+                const SizedBox(width: 8),
+                Expanded(child: _buildAxisPill('Y', yVal, AppColors.green, isDark)),
+                const SizedBox(width: 8),
+                Expanded(child: _buildAxisPill('Z', zVal, AppColors.blue, isDark)),
+              ],
+            ),
           ],
         ),
       ),
     );
   }
 
-  Widget _buildDataRow(String label, String value, Color textColor) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  Widget _buildAxisPill(String label, double? value, MaterialColor baseColor, bool isDark) {
+    final bgColor = isDark ? baseColor.shade900.withValues(alpha: 0.3) : baseColor.shade100.withValues(alpha: 0.5);
+    final textColor = isDark ? baseColor.shade200 : baseColor.shade800;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+      decoration: BoxDecoration(
+        color: bgColor,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: baseColor.withValues(alpha: 0.3)),
+      ),
+      child: Column(
         children: [
           Text(
             label,
             style: TextStyle(
-              fontSize: 18,
-              color: textColor.withValues(alpha: 0.8),
-            ),
-          ),
-          Text(
-            value,
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w600,
+              fontSize: 14,
+              fontWeight: FontWeight.w900,
               color: textColor,
             ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            _formatValue(value),
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+              color: Theme.of(context).colorScheme.onSurface,
+              fontFeatures: const [FontFeature.tabularFigures()], // Evita il tremolio dei numeri
+            ),
+            textAlign: TextAlign.center,
           ),
         ],
       ),
     );
   }
 
-  Widget _buildLineChart({
+  // --- NUOVA GRAFICA GRAFICI MODERNI ---
+  Widget _buildModernLineChart({
     required String title,
+    required IconData icon,
+    required String unit,
+    required Color accentColor,
     required List<FlSpot> xSpots,
     required List<FlSpot> ySpots,
     required List<FlSpot> zSpots,
+    required List<FlSpot> mSpots,
     required Color lineColorX,
     required Color lineColorY,
     required Color lineColorZ,
-    required Color textColor,
-    required Color gridColor,
-    String? unit,
+    required Color lineColorM,
   }) {
+    final colorScheme = Theme.of(context).colorScheme;
+    
     double minY = 0, maxY = 0;
-    if (xSpots.isNotEmpty || ySpots.isNotEmpty || zSpots.isNotEmpty) {
+    if (xSpots.isNotEmpty || ySpots.isNotEmpty || zSpots.isNotEmpty || mSpots.isNotEmpty) {
       final allValues = [
         ...xSpots.map((s) => s.y),
         ...ySpots.map((s) => s.y),
         ...zSpots.map((s) => s.y),
+        ...mSpots.map((s) => s.y),
       ];
       minY = allValues.reduce((curr, next) => curr < next ? curr : next);
       maxY = allValues.reduce((curr, next) => curr > next ? curr : next);
@@ -316,38 +427,88 @@ class _SensorToolPageState extends State<SensorToolPage> {
 
     double intervalX = (_maxDataPoints / 5).floorToDouble();
 
+    // Helper per creare le linee con effetto area moderno
+    LineChartBarData createBarData(List<FlSpot> spots, Color color, {double width = 2.0}) {
+      return LineChartBarData(
+        spots: spots,
+        isCurved: true,
+        color: color,
+        barWidth: width,
+        isStrokeCapRound: true,
+        dotData: const FlDotData(show: false),
+      );
+    }
+
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
-      elevation: 6,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+      elevation: 4,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(24),
+        //side: BorderSide(color: accentColor.withValues(alpha: 0.2), width: 1.5),
+      ),
+      color: colorScheme.surfaceContainer,
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              '$title ${unit != null ? '($unit)' : ''}',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-                color: textColor,
-              ),
+             // Header: Icona + Titolo + Unità (Uguale alle card dei valori)
+            Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: accentColor.withValues(alpha: 0.15),
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                  child: Icon(icon, color: accentColor, size: 28),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        title,
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: colorScheme.onSurface,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: colorScheme.surfaceContainerHighest,
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        child: Text(
+                          unit,
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w600,
+                            color: colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 24),
             AspectRatio(
-              aspectRatio: 1.7,
+              aspectRatio: 1.5,
               child: LineChart(
                 LineChartData(
                   gridData: FlGridData(
                     show: true,
-                    drawVerticalLine: true,
+                    drawVerticalLine: false, // Rimuoviamo linee verticali per pulizia
                     getDrawingHorizontalLine: (value) => FlLine(
-                      color: gridColor.withValues(alpha: 0.1),
+                      color: colorScheme.outlineVariant.withValues(alpha: 0.3),
                       strokeWidth: 1,
-                    ),
-                    getDrawingVerticalLine: (value) => FlLine(
-                      color: gridColor.withValues(alpha: 0.1),
-                      strokeWidth: 1,
+                      dashArray: [5, 5], // Griglia tratteggiata elegante
                     ),
                   ),
                   titlesData: FlTitlesData(
@@ -369,8 +530,10 @@ class _SensorToolPageState extends State<SensorToolPage> {
                             child: Text(
                               value.toInt().toString(),
                               style: TextStyle(
-                                color: textColor.withValues(alpha: 0.7),
-                                fontSize: 12,
+                                color: colorScheme.onSurfaceVariant,
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                                fontFeatures: const [FontFeature.tabularFigures()],
                               ),
                             ),
                           );
@@ -380,15 +543,17 @@ class _SensorToolPageState extends State<SensorToolPage> {
                     leftTitles: AxisTitles(
                       sideTitles: SideTitles(
                         showTitles: true,
-                        reservedSize: 40,
+                        reservedSize: 42,
                         getTitlesWidget: (value, meta) {
                           return SideTitleWidget(
                             axisSide: meta.axisSide,
                             child: Text(
                               value.toStringAsFixed(1),
                               style: TextStyle(
-                                color: textColor.withValues(alpha: 0.7),
-                                fontSize: 12,
+                                color: colorScheme.onSurfaceVariant,
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                                fontFeatures: const [FontFeature.tabularFigures()],
                               ),
                             ),
                           );
@@ -396,56 +561,28 @@ class _SensorToolPageState extends State<SensorToolPage> {
                       ),
                     ),
                   ),
-                  borderData: FlBorderData(
-                    show: true,
-                    border: Border.all(
-                      color: gridColor.withValues(alpha: 0.3),
-                      width: 1,
-                    ),
-                  ),
+                  borderData: FlBorderData(show: false), // Rimuoviamo il bordo rigido del grafico
                   minX: chartMinX,
                   maxX: chartMaxX,
                   minY: minY,
                   maxY: maxY,
                   lineBarsData: [
-                    LineChartBarData(
-                      spots: xSpots,
-                      isCurved: true,
-                      color: lineColorX,
-                      barWidth: 2,
-                      isStrokeCapRound: true,
-                      dotData: const FlDotData(show: false),
-                      belowBarData: BarAreaData(show: false),
-                    ),
-                    LineChartBarData(
-                      spots: ySpots,
-                      isCurved: true,
-                      color: lineColorY,
-                      barWidth: 2,
-                      isStrokeCapRound: true,
-                      dotData: const FlDotData(show: false),
-                      belowBarData: BarAreaData(show: false),
-                    ),
-                    LineChartBarData(
-                      spots: zSpots,
-                      isCurved: true,
-                      color: lineColorZ,
-                      barWidth: 2,
-                      isStrokeCapRound: true,
-                      dotData: const FlDotData(show: false),
-                      belowBarData: BarAreaData(show: false),
-                    ),
+                    createBarData(xSpots, lineColorX),
+                    createBarData(ySpots, lineColorY),
+                    createBarData(zSpots, lineColorZ),
+                    createBarData(mSpots, lineColorM, width: 3.0), // Modulo più spesso
                   ],
                 ),
               ),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 16),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                _buildLegendItem('X', lineColorX),
-                _buildLegendItem('Y', lineColorY),
-                _buildLegendItem('Z', lineColorZ),
+                _buildModernLegendPill('X', lineColorX),
+                _buildModernLegendPill('Y', lineColorY),
+                _buildModernLegendPill('Z', lineColorZ),
+                _buildModernLegendPill('Modulo', lineColorM),
               ],
             ),
           ],
@@ -454,26 +591,36 @@ class _SensorToolPageState extends State<SensorToolPage> {
     );
   }
 
-  Widget _buildLegendItem(String label, Color color) {
-    return Row(
-      children: [
-        Container(
-          width: 16,
-          height: 16,
-          decoration: BoxDecoration(
-            color: color,
-            borderRadius: BorderRadius.circular(3),
+  Widget _buildModernLegendPill(String label, Color color) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: color.withValues(alpha: 0.3)),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            width: 10,
+            height: 10,
+            decoration: BoxDecoration(
+              color: color,
+              shape: BoxShape.circle,
+            ),
           ),
-        ),
-        const SizedBox(width: 6),
-        Text(
-          label,
-          style: TextStyle(
-            color: Theme.of(context).colorScheme.onSurface,
-            fontSize: 14,
+          const SizedBox(width: 6),
+          Text(
+            label,
+            style: TextStyle(
+              color: color,
+              fontWeight: FontWeight.bold,
+              fontSize: 12,
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 
@@ -488,104 +635,130 @@ class _SensorToolPageState extends State<SensorToolPage> {
           SingleChildScrollView(
             padding: EdgeInsets.only(
               bottom: MediaQuery.of(context).viewPadding.bottom + 98,
-              top: MediaQuery.of(context).viewPadding.top + 50,
+              top: MediaQuery.of(context).viewPadding.top + 70, // Aggiustato top padding
             ),
             child: Column(
               children: [
-                const SizedBox(height: 20),
+                const SizedBox(height: 10),
                 if (_showGraphs) ...[
-                  _buildLineChart(
+                  _buildModernLineChart(
                     title: 'Accelerometro Lineare',
+                    icon: Icons.directions_run_rounded,
+                    unit: 'm/s²',
+                    accentColor: AppColors.orange,
                     xSpots: _userAccelXSpots,
                     ySpots: _userAccelYSpots,
                     zSpots: _userAccelZSpots,
-                    lineColorX: AppColors.redAccent,
-                    lineColorY: AppColors.greenAccent,
-                    lineColorZ: AppColors.blueAccent,
-                    textColor: colorScheme.onSurface,
-                    gridColor: colorScheme.onSurface,
-                    unit: 'm/s²',
-                  ),
-                  _buildLineChart(
-                    title: 'Accelerometro (con gravità)',
-                    xSpots: _accelXSpots,
-                    ySpots: _accelYSpots,
-                    zSpots: _accelZSpots,
+                    mSpots: _userAccelMSpots,
                     lineColorX: AppColors.red,
                     lineColorY: AppColors.green,
                     lineColorZ: AppColors.blue,
-                    textColor: colorScheme.onSurface,
-                    gridColor: colorScheme.onSurface,
-                    unit: 'm/s²',
+                    lineColorM: AppColors.purple,
                   ),
-                  _buildLineChart(
+                  _buildModernLineChart(
+                    title: 'Accelerometro (con gravità)',
+                    icon: Icons.download_rounded,
+                    unit: 'm/s²',
+                    accentColor: AppColors.blue,
+                    xSpots: _accelXSpots,
+                    ySpots: _accelYSpots,
+                    zSpots: _accelZSpots,
+                    mSpots: _accelMSpots,
+                    lineColorX: AppColors.red,
+                    lineColorY: AppColors.green,
+                    lineColorZ: AppColors.blue,
+                    lineColorM: AppColors.purple,
+                  ),
+                  _buildModernLineChart(
                     title: 'Giroscopio',
+                    icon: Icons.threed_rotation_rounded,
+                    unit: 'rad/s',
+                    accentColor: AppColors.green,
                     xSpots: _gyroXSpots,
                     ySpots: _gyroYSpots,
                     zSpots: _gyroZSpots,
-                    lineColorX: AppColors.purpleAccent,
-                    lineColorY: AppColors.orangeAccent,
-                    lineColorZ: AppColors.cyanAccent,
-                    textColor: colorScheme.onSurface,
-                    gridColor: colorScheme.onSurface,
-                    unit: 'rad/s',
+                    mSpots: _gyroMSpots,
+                    lineColorX: AppColors.red,
+                    lineColorY: AppColors.green,
+                    lineColorZ: AppColors.blue,
+                    lineColorM: AppColors.purple,
                   ),
-                  _buildLineChart(
+                  _buildModernLineChart(
                     title: 'Magnetometro',
+                    icon: Icons.explore_rounded,
+                    unit: 'µT',
+                    accentColor: AppColors.purple,
                     xSpots: _magXSpots,
                     ySpots: _magYSpots,
                     zSpots: _magZSpots,
-                    lineColorX: AppColors.teal,
-                    lineColorY: AppColors.amber,
-                    lineColorZ: AppColors.indigo,
-                    textColor: colorScheme.onSurface,
-                    gridColor: colorScheme.onSurface,
-                    unit: 'µT',
+                    mSpots: _magMSpots,
+                    lineColorX: AppColors.red,
+                    lineColorY: AppColors.green,
+                    lineColorZ: AppColors.blue,
+                    lineColorM: AppColors.purple,
                   ),
                 ] else ...[
-                  _buildSensorCard(
-                    cardColor: colorScheme.tertiaryContainer,
-                    textColor: colorScheme.onTertiaryContainer,
+                  _buildModernSensorCard(
                     title: 'Accelerometro Lineare',
-                    xValue: _formatValue(_userAccelerometerEvent?.x),
-                    yValue: _formatValue(_userAccelerometerEvent?.y),
-                    zValue: _formatValue(_userAccelerometerEvent?.z),
+                    icon: Icons.directions_run_rounded,
+                    unit: 'm/s²',
+                    accentColor: AppColors.orange,
+                    xVal: _userAccelerometerEvent?.x,
+                    yVal: _userAccelerometerEvent?.y,
+                    zVal: _userAccelerometerEvent?.z,
+                    mVal: _userAccelerometerEvent != null 
+                        ? _calculateMagnitude(_userAccelerometerEvent!.x, _userAccelerometerEvent!.y, _userAccelerometerEvent!.z) 
+                        : null,
                   ),
-                  _buildSensorCard(
-                    cardColor: colorScheme.primaryContainer,
-                    textColor: colorScheme.onPrimaryContainer,
+                  _buildModernSensorCard(
                     title: 'Accelerometro (con gravità)',
-                    xValue: _formatValue(_accelerometerEvent?.x),
-                    yValue: _formatValue(_accelerometerEvent?.y),
-                    zValue: _formatValue(_accelerometerEvent?.z),
+                    icon: Icons.download_rounded,
+                    unit: 'm/s²',
+                    accentColor: AppColors.blue,
+                    xVal: _accelerometerEvent?.x,
+                    yVal: _accelerometerEvent?.y,
+                    zVal: _accelerometerEvent?.z,
+                    mVal: _accelerometerEvent != null 
+                        ? _calculateMagnitude(_accelerometerEvent!.x, _accelerometerEvent!.y, _accelerometerEvent!.z) 
+                        : null,
                   ),
-                  _buildSensorCard(
-                    cardColor: colorScheme.secondaryContainer,
-                    textColor: colorScheme.onSecondaryContainer,
-                    title: 'Giroscopio (rad/s)',
-                    xValue: _formatValue(_gyroscopeEvent?.x),
-                    yValue: _formatValue(_gyroscopeEvent?.y),
-                    zValue: _formatValue(_gyroscopeEvent?.z),
+                  _buildModernSensorCard(
+                    title: 'Giroscopio',
+                    icon: Icons.threed_rotation_rounded,
+                    unit: 'rad/s',
+                    accentColor: AppColors.green,
+                    xVal: _gyroscopeEvent?.x,
+                    yVal: _gyroscopeEvent?.y,
+                    zVal: _gyroscopeEvent?.z,
+                    mVal: _gyroscopeEvent != null 
+                        ? _calculateMagnitude(_gyroscopeEvent!.x, _gyroscopeEvent!.y, _gyroscopeEvent!.z) 
+                        : null,
                   ),
-                  _buildSensorCard(
-                    cardColor: colorScheme.errorContainer,
-                    textColor: colorScheme.onErrorContainer,
-                    title: 'Magnetometro (µT)',
-                    xValue: _formatValue(_magnetometerEvent?.x),
-                    yValue: _formatValue(_magnetometerEvent?.y),
-                    zValue: _formatValue(_magnetometerEvent?.z),
+                  _buildModernSensorCard(
+                    title: 'Magnetometro',
+                    icon: Icons.explore_rounded,
+                    unit: 'µT',
+                    accentColor: AppColors.purple,
+                    xVal: _magnetometerEvent?.x,
+                    yVal: _magnetometerEvent?.y,
+                    zVal: _magnetometerEvent?.z,
+                    mVal: _magnetometerEvent != null 
+                        ? _calculateMagnitude(_magnetometerEvent!.x, _magnetometerEvent!.y, _magnetometerEvent!.z) 
+                        : null,
                   ),
                 ],
                 const SizedBox(height: 20),
 
-                Text(
-                  //'Nota: Potrebbe essere necessario concedere il permesso "Riconoscimento attività fisica" dalle impostazioni dell\'app se i dati non vengono visualizzati.',
-                  'Nota: La disponibilità e la precisione dei sensori dipende dal dispositivo',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontStyle: FontStyle.italic,
-                    color: colorScheme.onSurfaceVariant,
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 32.0),
+                  child: Text(
+                    'Nota: La disponibilità e la precisione dei sensori dipendono dal dispositivo hardware.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontStyle: FontStyle.italic,
+                      color: colorScheme.onSurfaceVariant,
+                    ),
                   ),
                 ),
               ],

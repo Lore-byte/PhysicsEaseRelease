@@ -172,15 +172,7 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Text(
-                  'Seleziona il tipo di equazione e inserisci i coefficienti.',
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: colorScheme.onSurfaceVariant,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 16),
+                const SizedBox(height: 8),
                 Card(
                   color: colorScheme.surfaceContainerHighest,
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -262,15 +254,16 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
                       child: ElevatedButton.icon(
                         onPressed: _solveEquation,
                         icon: const Icon(Icons.check),
-                        label: const Text('Risolvi Equazione'),
+                        label: const Text('Risolvi'),
                         style: ElevatedButton.styleFrom(
+                          iconSize: 26,
                           backgroundColor: colorScheme.primary,
                           foregroundColor: colorScheme.onPrimary,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(16),
                           ),
-                          padding: const EdgeInsets.symmetric(vertical: 18),
-                          textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                          textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
@@ -278,15 +271,16 @@ class _EquationSolverPageState extends State<EquationSolverPage> {
                     Expanded(
                       child: ElevatedButton.icon(
                         onPressed: _clearAllFields,
-                        icon: const Icon(Icons.clear_all),
-                        label: const Text('Pulisci Campi'),
+                        icon: const Icon(Icons.delete_sweep_outlined),
+                        label: const Text('Azzera'),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: colorScheme.tertiary,
-                          foregroundColor: colorScheme.onTertiary,
+                          iconSize: 26,
+                          backgroundColor: colorScheme.secondary,
+                          foregroundColor: colorScheme.onSecondary,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(16),
                           ),
-                          padding: const EdgeInsets.symmetric(vertical: 18),
+                          padding: const EdgeInsets.symmetric(vertical: 14),
                           textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                         ),
                       ),
