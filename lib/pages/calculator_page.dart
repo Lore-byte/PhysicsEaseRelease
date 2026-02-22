@@ -112,7 +112,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
       if (end != -1) {
         String content = latex.substring(start + 2, end);
-        latex = latex.replaceRange(start, end + 1, r'\sqrt{(' + content + ')}');
+        latex = latex.replaceRange(start, end + 1, '\\sqrt{($content)}');
       } else {
         latex = latex.replaceFirst('√(', r'\sqrt{(');
         latex += '}';
@@ -136,7 +136,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
         latex = latex.replaceRange(
           start,
           end + 1,
-          r'\sqrt[3]{(' + content + ')}',
+          '\\sqrt[3]{($content)}'
         );
       } else {
         latex = latex.replaceFirst('³√(', r'\sqrt[3]{(');
@@ -161,7 +161,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
       if (end != -1) {
         String content = latex.substring(start + 2, end);
-        latex = latex.replaceRange(start, end + 1, r'^{(' + content + ')}');
+        latex = latex.replaceRange(start, end + 1, '^{($content)}');
       } else {
         latex = latex.replaceFirst('^(', r'^{(');
         latex += '}';

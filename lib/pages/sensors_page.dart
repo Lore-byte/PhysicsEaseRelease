@@ -4,7 +4,6 @@ import 'package:physics_ease_release/theme/app_colors.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:async';
 import 'dart:math' as math; 
-import 'dart:ui'; // Necessario per FontFeature
 import 'package:fl_chart/fl_chart.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';

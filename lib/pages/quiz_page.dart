@@ -208,6 +208,7 @@ class _QuizPageState extends State<QuizPage> {
     );
 
     if (quizzes.isEmpty) {
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Nessun quiz disponibile per la selezione corrente!'),
@@ -216,6 +217,8 @@ class _QuizPageState extends State<QuizPage> {
       );
       return;
     }
+
+    if (!mounted) return;
 
     await Navigator.push(
       context,
@@ -341,6 +344,8 @@ class _QuizPageState extends State<QuizPage> {
 
     // Limita al numero di domande richiesto (o prendi tutte se sono meno)
     final quizzesToUse = missedQuizzes.take(_numberOfQuestions).toList();
+
+    if (!mounted) return;
 
     await Navigator.push(
       context,

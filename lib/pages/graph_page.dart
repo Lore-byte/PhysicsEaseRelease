@@ -316,7 +316,7 @@ class _GraphPageState extends State<GraphPage> {
       }
       if (end != -1) {
         String content = latex.substring(start + 2, end);
-        latex = latex.replaceRange(start, end + 1, r'\sqrt{(' + content + ')}');
+        latex = latex.replaceRange(start, end + 1, '\\sqrt{($content)}');
       } else {
         latex = latex.replaceFirst('√(', r'\sqrt{(');
         latex += '}';
