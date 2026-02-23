@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:physics_ease_release/theme/app_colors.dart';
 import 'dart:math' as math;
-import 'package:math_expressions/math_expressions.dart';
+import 'package:math_expressions/math_expressions.dart' hide Stack;
 import 'package:physics_ease_release/widgets/floating_top_bar.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 

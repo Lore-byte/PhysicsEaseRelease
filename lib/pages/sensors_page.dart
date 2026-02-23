@@ -505,7 +505,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
                     show: true,
                     drawVerticalLine: false, // Rimuoviamo linee verticali per pulizia
                     getDrawingHorizontalLine: (value) => FlLine(
-                      color: colorScheme.outlineVariant.withValues(alpha: 0.3),
+                      color: colorScheme.outlineVariant,
                       strokeWidth: 1,
                       dashArray: [5, 5], // Griglia tratteggiata elegante
                     ),
@@ -525,7 +525,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
                         interval: intervalX,
                         getTitlesWidget: (value, meta) {
                           return SideTitleWidget(
-                            axisSide: meta.axisSide,
+                            meta: meta,
                             child: Text(
                               value.toInt().toString(),
                               style: TextStyle(
@@ -545,7 +545,7 @@ class _SensorToolPageState extends State<SensorToolPage> {
                         reservedSize: 42,
                         getTitlesWidget: (value, meta) {
                           return SideTitleWidget(
-                            axisSide: meta.axisSide,
+                            meta: meta,
                             child: Text(
                               value.toStringAsFixed(1),
                               style: TextStyle(
